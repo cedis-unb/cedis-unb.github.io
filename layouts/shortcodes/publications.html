@@ -1,0 +1,46 @@
+{{ $yearInput := .Get "year" }}
+{{ $keywordsInput := .Get "keywords" }}
+{{ $keywords := split $keywordsInput "," }}
+{{ $year := 0 }}
+{{ if ne $yearInput "" }}{{ $year = int $yearInput }}{{ end }}
+
+<ol class="publications-lncs">
+  {{ range $.Site.Data.publications.items }}
+    {{ $includePublication := true }}
+
+    <!-- Aplica o filtro de ano, se um ano foi especificado -->
+    {{ if and (gt $year 0) (ne .year $year) }}
+      {{ $includePublication = false }}
+    {{ end }}
+
+    <!-- Verifica se as keywords especificadas correspondem, se houver -->
+    {{ if and $includePublication (gt (len $keywords) 0) (ne (index $keywords 0) "") }}
+      {{ $keywordMatch := false }}
+      {{ range .keywords }}
+        {{ if in $keywords . }}
+          {{ $keywordMatch = true }}
+          {{ break }}
+        {{ end }}
+      {{ end }}
+      {{ if not $keywordMatch }}
+        {{ $includePublication = false }}
+      {{ end }}
+    {{ end }}
+
+    {{ if $includePublication }}
+      <li>
+        {{- range $index, $element := .authors -}}
+          {{- if $index }}, {{- end -}}
+          {{- $element -}}
+        {{- end -}},
+        "{{ .title }}"
+        {{- if eq .type "conference" -}}, in {{ .event }}{{- end -}}
+        {{- if eq .type "article" -}}, {{ .journal }}{{- end -}}
+        {{- if eq .type "book" -}}, {{ .publisher }}{{- end -}}
+        {{- if .year -}}, {{ .year }}.&nbsp;{{- end -}}
+        {{- if .url -}} <a href="{{ .url }}" target="_blank">Link</a>.{{- end -}}
+        {{- if .doi -}} DOI: <a href="https://doi.org/{{ .doi }}" target="_blank">{{ .doi }}</a>{{- end -}}
+      </li>
+    {{ end }}
+  {{ end }}
+</ol>
