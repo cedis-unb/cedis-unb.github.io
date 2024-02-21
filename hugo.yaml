@@ -1,0 +1,379 @@
+baseURL: 'https://cedis-unb.github.io/'
+publishDir : "docs"
+DefaultContentLanguage: pt
+languages:
+  pt:
+  # PORTUGUÊS
+    LanguageName: "> PT"
+    languageCode: "pt"
+    title: CEDIS
+    weight: 1
+    params:
+      color: blue
+      moto: "Bem vindo(a)!"  
+      description: "Descubra o futuro da Engenharia de Software, da Aprendizagem e da Inteligência Artificial. \n Desde 2013, o Centro de Estudos, Desenvolvimento e Inovação em Software tem liderado projetos inovadores de pesquisa, desenvolvimento e educação."
+      authorimage: "../assets/images/global/sample-logo.svg"
+      og_image: "/images/tailbliss-cover.png"
+      disable_theme_toggle: true
+      disable_stay_uptodate: true
+      p1:
+        heading: "Nossa Missão"
+        image: "images/pages/our-mission.png"
+        content:
+          - text: "Na vanguarda da inovação desde 2013, o CEDIS da Universidade de Brasília se dedica a moldar o futuro da Engenharia de Software, Aprendizagem e Inteligência Artificial. Unimos estudantes, pesquisadores e profissionais em uma jornada colaborativa de descoberta, desenvolvimento e aplicação de tecnologias transformadoras. Nosso compromisso é liderar pelo exemplo, promovendo soluções sustentáveis e capacitando as próximas gerações de inovadores."
+      p3:
+        heading: "Parcerias"
+        content:
+          - text: "Na execução das nossas pesquisas temos trabalhado em parceira com outras entidades, organizações e laboratórios de pesquisa."
+        links:
+          - text: "Conheça nossos parceiros"
+            url: "/parceiros/"
+        logos:
+          - identifier: "IBICT"
+            image: "images/global/ibict.svg"
+            alt: "IBICT"
+          - identifier: A3M
+            image: "images/global/A3M.png"
+            alt: "A3M"
+          - identifier: FAPDF
+            image: "images/global/FAP-DF.svg"
+            alt: "FAPDF"
+          - identifier: CanalCiencia
+            image: "images/global/cc.svg"
+            alt: "CanalCiencia"
+          - identifier: finatec
+            image: "images/global/finatec.svg"
+            alt: "finatec"
+          - identifier: labvista
+            image: "images/global/labvista.svg"
+            alt: "LabVista"
+      p4:
+        heading: "Últimas notícias"
+        content:
+          - text: "Mantenha-se atualizado sobre todas as novidades do CEDIS! Explore nossas atividades, projetos, publicações e muito mais. Descubra o que estamos fazendo para inovar e contribuir com nossa comunidade."
+      social_media:
+        github:
+          enabled: false
+        facebook:
+          enabled: false
+        instagram:
+          enabled: false
+        twitter:
+          enabled: false
+        youtube:
+          enabled: true
+          url: "@CedisUnB"
+
+    menu:
+      main:
+        - identifier: cedis
+          pre: complexdropdown
+          name: Saiba mais
+          weight: 10
+        - identifier: equipe
+          pre: dropdown
+          name: Pessoas
+          url: /pessoal/
+          weight: 20
+        - identifier: projetos
+          name: Projetos
+          url: /categories/project/
+          weight: 30
+        - identifier: dropdown
+          pre: complexdropdown
+          name: Produções
+          weight: 40
+        - identifier: oportunity
+          name: Oportunidades
+          url: /categories/oportunities/
+          weight: 50
+      cedis:
+        - identifier: areas
+          pre: stars
+          name: "Áreas de atuação"
+          post: "Pesquisa, desenvolvimento e capacitação"
+          url: /categories/knowledge_areas/
+          weight: 10
+        - identifier: infra
+          pre: piechart
+          name: Infraestrutura
+          post: "Equipamentos e instalações"
+          url: /infra/
+          weight: 20
+        - identifier: historia
+          pre: stars
+          name: História
+          post: "Nossa trajetória e conquistas"
+          url: /history/
+          weight: 30
+        - identifier: intranet
+          pre: piechart
+          name: Intranet
+          url: https://unbbr.sharepoint.com/sites/CEDIS
+          post: "Acesso restrito"
+          weight: 40
+      projetos:
+        - identifier: proj1
+          name: DFCris
+          url: /projetos/dfcris
+          weight: 10
+        - identifier: about
+          name: About
+          url: /about/
+          weight: 20
+      equipe:
+        - identifier: pesquisadores
+          name: Pesquisadores
+          url: /tags/researcher/
+          weight: 10
+        - identifier: colaboradores
+          name: Colaboradores
+          url: /people/colaboradores/
+          weight: 20
+      dropdown:
+        - identifier: publications
+          pre: stars # can be stars, comments or piechart
+          name: Publicações
+          post: "Artigos, livros e outros"
+          url: "/publications/"
+          weight: 10
+        - identifier: progrs
+          pre: comments # can be stars, comments or piechart
+          name: Aplicativos
+          post: "Programas, Aplicativos e outros"
+          url: "#"
+          weight: 20
+        - identifier: process
+          pre: piechart # can be stars, comments or piechart
+          name: Processos
+          post: "Processos, técnicas e outros"
+          url: "#"
+          weight: 30
+#        - identifier: prods
+#          pre: comments # can be stars, comments or piechart
+#          name: Produtos
+#          post: "Produtos tecnológicos e outros"
+#          url: "#"
+#          weight: 40
+      footer:
+        - identifier: about
+          name: About
+          url: /about/
+          weight: 10
+        - identifier: news
+          name: Notícias
+          url: /categories/news/
+          weight: 30
+        - identifier: contact
+          name: Contato
+          url: /contact/
+          weight: 50
+
+  en:
+  # ENGLISH
+    #baseURL: '/en/'
+    LanguageName: "> EN"
+    title: CEDIS
+    weight: 2
+    params:
+      color: blue
+      moto: "Welcome!"
+      description: "Discover the future of Software Engineering, Learning, and Artificial Intelligence. Since 2013, the Center for Studies, Development, and Innovation in Software has led innovative projects in research, development, and education."
+      authorimage: "../assets/images/global/sample-logo.svg"
+      og_image: "/images/tailbliss-cover.png"
+      disable_theme_toggle: true
+      disable_stay_uptodate: true
+      p1:
+        heading: "Our mission"
+        image: "images/pages/our-mission.png"
+        content:
+          - text: "At the forefront of innovation since 2013, the CEDIS from the University of Brasília is dedicated to shaping the future of Software Engineering, Learning, and Artificial Intelligence. We bring together students, researchers, and professionals on a collaborative journey of discovery, development, and application of transformative technologies. Our commitment is to lead by example, promoting sustainable solutions and empowering the next generations of innovators."
+      p3:
+        heading: "Partnerships"
+        content:
+          - text: "In conducting our research, we have worked in partnership with other entities, organizations, and research laboratories."
+        links:
+          - text: "Meet our partners"
+            url: "/en/parceiros/"
+        logos:
+          - identifier: "IBICT"
+            image: "images/global/ibict.svg"
+            alt: "IBICT"
+          - identifier: A3M
+            image: "images/global/A3M.png"
+            alt: "A3M"
+          - identifier: FAPDF
+            image: "images/global/FAP-DF.svg"
+            alt: "FAPDF"
+          - identifier: CanalCiencia
+            image: "images/global/cc.svg"
+            alt: "CanalCiencia"
+          - identifier: finatec
+            image: "images/global/finatec.svg"
+            alt: "finatec"
+          - identifier: labvista
+            image: "images/global/labvista.svg"
+            alt: "LabVista"
+      p4:
+        heading: "Latest News"
+        content:
+          - text: "Stay updated on all the news from CEDIS! Explore our activities, projects, publications, and much more. Find out what we're doing to innovate and contribute to our community."
+      social_media:
+        github:
+          enabled: false
+        facebook:
+          enabled: false
+        instagram:
+          enabled: false
+        twitter:
+          enabled: false
+        youtube:
+          enabled: true
+          url: "@CedisUnB"
+    menu:
+      main:
+        - identifier: cedis
+          pre: complexdropdown
+          name: About
+          weight: 10
+        - identifier: equipe
+          pre: dropdown
+          name: People
+          url: /staff/
+          weight: 20
+        - identifier: projetos
+          name: Projects
+          url: /categories/project/
+          weight: 30
+        - identifier: dropdown
+          pre: complexdropdown
+          name: Productions
+          weight: 40
+        - identifier: oportunity
+          name: Oportunities
+          url: /categories/oportunities/
+          weight: 50
+      cedis:
+        - identifier: areas
+          pre: stars
+          name: "Areas of expertise"
+          post: "Research, development, and training"
+          url: /categories/knowledge_areas/
+          weight: 10
+        - identifier: infra
+          pre: piechart
+          name: Infrastructure
+          post: "Equipment and facilities"
+          url: /infra/
+          weight: 20
+        - identifier: historia
+          pre: stars
+          name: History
+          post: "Our journey and achievements"
+          url: /history/
+          weight: 30
+        - identifier: intranet
+          pre: piechart
+          name: Intranet
+          url: https://unbbr.sharepoint.com/sites/CEDIS
+          post: "Restricted access"
+          weight: 40
+      projetos:
+        - identifier: proj1
+          name: DFCris
+          url: /projects/dfcris
+          weight: 10
+        - identifier: about
+          name: About
+          url: /about/
+          weight: 20
+      equipe:
+        - identifier: pesquisadores
+          name: Researchers
+          url: /tags/researcher/
+          weight: 10
+        - identifier: colaboradores
+          name: Collaborators
+          url: /people/colaboradores/
+          weight: 20
+      dropdown:
+        - identifier: publications
+          pre: stars # can be stars, comments or piechart
+          name: Publications
+          post: "Articles, books, and others"
+          url: "/publications/"
+          weight: 10
+        - identifier: progrs
+          pre: comments # can be stars, comments or piechart
+          name: Applications
+          post: "Programs, Applications, and others"
+          url: "#"
+          weight: 20
+        - identifier: process
+          pre: piechart # can be stars, comments or piechart
+          name: Processes
+          post: "Processes, techniques, and others"
+          url: "#"
+          weight: 30
+#        - identifier: prods
+#          pre: comments # can be stars, comments or piechart
+#          name: Products
+#         post: "Technological products and others"
+#          url: "#"
+#          weight: 40
+      footer:
+        - identifier: about
+          name: About
+          url: /about/
+          weight: 10
+        - identifier: news
+          name: News
+          url: /categories/news/
+          weight: 30
+        - identifier: contact
+          name: Contact
+          url: /contact/
+          weight: 50
+
+
+enableEmoji: false
+enableGitInfo: true
+enableRobotsTXT: true
+canonifyURLs: true
+paginate: 9
+darkmode_js:
+  - assets/js/darkmode.js
+enableInlineShortcodes: true
+
+markup:
+  goldmark:
+    extensions:
+      definitionList: true
+      footnote: true
+      linkify: true
+      linkifyProtocol: https
+      strikethrough: true
+      table: true
+      taskList: true
+      typographer:
+        apostrophe: '&rsquo;'
+        ellipsis: '&hellip;'
+        emDash: '&mdash;'
+        enDash: '&ndash;'
+        leftAngleQuote: '&laquo;'
+        leftDoubleQuote: '&ldquo;'
+        leftSingleQuote: '&lsquo;'
+        rightAngleQuote: '&raquo;'
+        rightDoubleQuote: '&rdquo;'
+        rightSingleQuote: '&rsquo;'
+    parser:
+      attribute:
+        block: false
+        title: true
+      autoHeadingID: true
+      autoHeadingIDType: github
+      wrapStandAloneImageWithinParagraph: true
+    renderer:
+      hardWraps: false
+      unsafe: true
+      xhtml: false

@@ -1,0 +1,126 @@
+{{ $tagsInput := .Get "tags" }}
+{{ $categoriesInput := .Get "categories" }}
+{{ $notagsInput := .Get "notags" }}  <!-- Novo parâmetro para 'não tags' -->
+{{ $tags := split $tagsInput "," }}
+{{ $categories := split $categoriesInput "," }}
+{{ $notags := split $notagsInput "," }}  <!-- Lista de 'não tags' -->
+{{ $caput := .Get "caput" | markdownify }}
+
+{{ $showSummary := .Get "showSummary" | default true }}
+{{ $showDescription := .Get "showDescription" | default true }}
+
+{{ $hasMatches := false }}
+{{ range sort $.Site.RegularPages "Title" }}
+  {{ $thisPage := . }}
+  {{ $match := true }}
+  
+  <!-- Verificação de Tags -->
+  {{ if and $tagsInput (ne $tagsInput "") }}
+    {{ $tagsMatch := true }}
+    {{ range $tags }}
+      {{ $currentTag := trim . " " }}
+      {{ if not (in $thisPage.Params.tags $currentTag) }}
+        {{ $tagsMatch = false }}
+        {{ break }}
+      {{ end }}
+    {{ end }}
+    {{ if not $tagsMatch }}
+      {{ $match = false }}
+    {{ end }}
+  {{ end }}
+
+  <!-- Verificação de Categorias -->
+  {{ if and $categoriesInput (ne $categoriesInput "") }}
+    {{ $categoriesMatch := true }}
+    {{ range $categories }}
+      {{ $currentCategory := trim . " " }}
+      {{ if not (in $thisPage.Params.categories $currentCategory) }}
+        {{ $categoriesMatch = false }}
+        {{ break }}
+      {{ end }}
+    {{ end }}
+    {{ if not $categoriesMatch }}
+      {{ $match = false }}
+    {{ end }}
+  {{ end }}
+
+  <!-- Verificação de 'Não Tags' -->
+  {{ if and $notagsInput (ne $notagsInput "") }}
+    {{ range $notags }}
+      {{ $currentNoTag := trim . " " }}
+      {{ if in $thisPage.Params.tags $currentNoTag }}
+        {{ $match = false }}
+        {{ break }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+
+  {{ if $match }}
+    {{ $hasMatches = true }}
+    {{ break }}
+  {{ end }}
+{{ end }}
+
+{{ if $hasMatches }}
+  {{ if $caput }}
+    <div class="caput">{{ $caput | markdownify }}</div>
+  {{ end }}
+  <ul>
+    {{ range sort $.Site.RegularPages "Title" }}
+      {{ $thisPage := . }}
+      {{ $match := true }}
+
+      <!-- Repetir lógica de filtragem para gerar a lista -->
+      <!-- Tags, Categorias, e 'Não Tags' -->
+      {{ if and $tagsInput (ne $tagsInput "") }}
+        {{ $tagsMatch := true }}
+        {{ range $tags }}
+          {{ $currentTag := trim . " " }}
+          {{ if not (in $thisPage.Params.tags $currentTag) }}
+            {{ $tagsMatch = false }}
+            {{ break }}
+          {{ end }}
+        {{ end }}
+        {{ if not $tagsMatch }}
+          {{ $match = false }}
+        {{ end }}
+      {{ end }}
+
+      {{ if and $categoriesInput (ne $categoriesInput "") }}
+        {{ $categoriesMatch := true }}
+        {{ range $categories }}
+          {{ $currentCategory := trim . " " }}
+          {{ if not (in $thisPage.Params.categories $currentCategory) }}
+            {{ $categoriesMatch = false }}
+            {{ break }}
+          {{ end }}
+        {{ end }}
+        {{ if not $categoriesMatch }}
+          {{ $match = false }}
+        {{ end }}
+      {{ end }}
+
+      {{ if and $notagsInput (ne $notagsInput "") }}
+        {{ range $notags }}
+          {{ $currentNoTag := trim . " " }}
+          {{ if in $thisPage.Params.tags $currentNoTag }}
+            {{ $match = false }}
+            {{ break }}
+          {{ end }}
+        {{ end }}
+      {{ end }}
+
+      {{ if $match }}
+        <li>
+          <span><strong><a href="{{ $thisPage.Permalink }}">{{ $thisPage.Title }}</a></strong></span>
+          {{ if and $showSummary $thisPage.Summary }}
+            <span> - {{ $thisPage.Summary }}</span>
+          {{ end }}
+          {{ if and $showDescription (isset $thisPage.Params "description") }}
+            <span> {{ $thisPage.Params.description }}</span>
+          {{ end }}
+        </li>
+      {{ end }}
+    {{ end }}
+  </ul>
+{{ end }}
