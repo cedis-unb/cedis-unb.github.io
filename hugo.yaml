@@ -1,4 +1,4 @@
-baseURL: 'https://cedis-unb.github.io/'
+baseURL: 'https://cedis.tec.br/'
 publishDir : "docs"
 DefaultContentLanguage: pt
 languages:
