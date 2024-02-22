@@ -136,19 +136,30 @@
                 </svg>
             </button>
             {{ end }}
-            <ul>
+            <div class="language-switcher">
+                {{ $baseURL := strings.TrimRight .Site.BaseURL "/" }}
+                {{ $currentURL := strings.TrimRight .Permalink "/" }}
+                {{ $currentLang := .Site.Language.Lang }}
+                {{ $path := strings.TrimPrefix $currentURL $baseURL }}
+            
+                <!-- Remove o prefixo do idioma atual do caminho, se houver -->
                 {{ range .Site.Languages }}
-                {{ if eq . $.Site.Language }}
-                <li><span aria-label="{{ i18n "ariaLanguage" }}{{ .LanguageName }}">{{ .LanguageName }}</span>
-                  {{ end }}
-                  {{ end }}
-                  <ul aria-labelledby="dropdown-title">
-                    {{ range $.Translations }}
-                    <li><a title="{{ .Language.LanguageName }}" href="{{ .Permalink }}" aria-label="{{ i18n "ariaTranslation" }}{{ .Language.LanguageName }}">{{ .Language.LanguageName }}</a></li>
-                  </ul>
+                    {{ $langCode := .Lang }}
+                    {{ if ne $langCode $currentLang }}
+                        {{ $prefix := printf "/%s/" $langCode }}
+                        {{ if strings.HasPrefix $path $prefix }}
+                            {{ $path = strings.TrimPrefix $path $prefix }}
+                        {{ end }}
                     {{ end }}
-                </li>
-              </ul>
+                {{ end }}
+            
+                <!-- Gera links para os idiomas disponíveis, exceto o idioma atual -->
+                {{ range .Site.Languages }}
+                    {{ if ne .Lang $currentLang }}
+                        <a href="{{ printf "/%s%s" .Lang $path | absURL }}" class="px-4 py-2 mt-2 text-sm font-semibold rounded-lg hover:text-white focus:text-white hover:bg-primary-600" mb-1>{{ .Lang | upper }}</a>
+                    {{ end }}
+                {{ end }}
+            </div>
         </nav>
     </div>
 </div>
