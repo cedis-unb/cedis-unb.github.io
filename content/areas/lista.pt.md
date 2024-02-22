@@ -12,25 +12,25 @@ categories:
 tags: [  ]
 ---
 ## Desenvolvimento e Engenharia de Software
-- [Arquitetura de Software](/areas/software_architecture)
-- [Engenharia de Requisitos](/areas/software_requirements)
-- [Verificação, Validação e Testes](/areas/verival)
-- [Engenharia de Linhas de Produto de Software](/areas/software_products)
-- [Green Software Development](/areas/green_software)
+- {{< link-interno "/areas/software_architecture" "Arquitetura de Software" >}}
+- {{< link-interno "/areas/software_requirements" "Engenharia de Requisitos" >}}
+- {{< link-interno "/areas/verival" "Verificação, Validação e Testes" >}}
+- {{< link-interno "/areas/software_products" "Engenharia de Linhas de Produto de Software" >}}
+- {{< link-interno "/areas/green_software" "Green Software Development" >}}
 ## Metodologias e Abordagens de Desenvolvimento
 - Abordagens de Desenvolvimento de Software (Ágeis, Dirigidas a Plano e Híbridas)
 - Formação e Capacitação de Equipes Ágeis
 ## Tecnologias Emergentes e Inovação
-- [Inteligência Artificial e Processamento de Linguagem Natural](/areas/ai_pln)
-- [Computação de alto desempenho e computação em nuvem](/areas/hpc)
-- [Transformação Digital](/areas/transformation)
+- {{< link-interno "/areas/ai_pln" "Inteligência Artificial e Processamento de Linguagem Natural" >}}
+- {{< link-interno "/areas/hpc" "Computação de alto desempenho e computação em nuvem" >}}
+- {{< link-interno "/areas/transformation" "Transformação Digital" >}}
 ## Aspectos Humanos e Gerenciais
-- [Trabalho em Equipe e Soft Skills](/areas/soft_skills)
+- {{< link-interno "/areas/soft_skills" "Trabalho em Equipe e Soft Skills" >}}
 - Aspectos Humanos na Engenharia de Software
 - Aspectos Humanos da Cybersegurança
 ## Educação e Aprendizagem
-- [Learning Analytics e gestão educacional](/areas/learning_analytics/)
-- [Metodologias ativas no Ensino Superior e Ciência da Aprendizagem](/areas/active_learning)
-- [Gamificação](/areas/gamification/)
+- {{< link-interno "/areas/learning_analytics/" "Learning Analytics e gestão educacional" >}}
+- {{< link-interno "/areas/active_learning" "Metodologias ativas no Ensino Superior e Ciência da Aprendizagem" >}}
+- {{< link-interno "/areas/gamification/" "Gamificação" >}}
 ## Pesquisa e Desenvolvimento em Produtos e Soluções de Software
 - Desenvolvimento, Pesquisa e Inovação em Produtos e Soluções de Software

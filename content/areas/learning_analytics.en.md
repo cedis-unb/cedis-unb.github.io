@@ -21,7 +21,7 @@ tags:
 
 **Prof. Sergio Antônio Andrade de Freitas**
 
-A researcher in the field of *Learning Analytics* and Educational Management, he is a Full Professor at the University of Brasília - UnB. In addition to being a faculty member in the Software Engineering course, he has played a significant role in various administrative functions within and outside UnB, including president of the National Forum of Undergraduate Deans (ForGRAD), Dean of Undergraduate Studies, and director of the Distance Education Center (CEAD). Currently, he is an active member of the faculty in the Postgraduate Program in Applied Computing (PPCA), dedicating himself intensely to research in [Active Methodologies](/areas/active_learning) in the fields of Engineering, Computing, and Learning Analytics. {{< link-interno "/people/sergio_freitas" "More information" >}}.
+A researcher in the field of *Learning Analytics* and Educational Management, he is a Full Professor at the University of Brasília - UnB. In addition to being a faculty member in the Software Engineering course, he has played a significant role in various administrative functions within and outside UnB, including president of the National Forum of Undergraduate Deans (ForGRAD), Dean of Undergraduate Studies, and director of the Distance Education Center (CEAD). Currently, he is an active member of the faculty in the Postgraduate Program in Applied Computing (PPCA), dedicating himself intensely to research in {{< link-interno "/areas/active_learning" "Active Methodologies" >}} in the fields of Engineering, Computing, and Learning Analytics. {{< link-interno "/people/sergio_freitas" "More information" >}}.
 
 **Profa. Cristiane Soares Ramos**
 

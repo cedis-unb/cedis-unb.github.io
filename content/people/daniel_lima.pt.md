@@ -15,7 +15,7 @@ tags:
 ---
 ## Perfil Acadêmico e Profissional
 - Posição Atual: Professor Adjunto da [Universidade de Brasília](https://www.unb.br/) (UnB), atuando no curso de graduação em [Engenharia de Software](http://software.unb.br/).
-- Áreas de Atuação: [Computação paralela](/areas/hpc/), [computação de alto desempenho](/areas/hpc/), unidades de processamento gráfico (GPU), sistemas distribuídos e bioinformática​​.
+- Áreas de Atuação: {{< link-interno "/areas/hpc/" "Computação paralela" >}}, {{< link-interno "/areas/hpc/" "computação de alto desempenho" >}}, unidades de processamento gráfico (GPU), sistemas distribuídos e bioinformática​​.
 ## Formação Acadêmica
 - Doutorado em Informática - Universidade de Brasília, com doutorado-sanduíche na Universidade de Copenhague (2013-2017).
 - Mestrado em Informática - Universidade de Brasília (2010-2012).
