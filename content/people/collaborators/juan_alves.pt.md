@@ -4,7 +4,7 @@ title: "Juan Mangeira Alves"
 date: 2024-02-17T00:50:20-03:00
 weight: 44
 language: pt
-featured_image: ../assets/images/featured/juan_alves.jpg
+featured_image: "../assets/images/featured/people_Juan Alves.png"
 summary: Graduando em Engenharia de Software, Universidade de Brasília 
 authorimage: ../assets/images/global/author.webp
 categories: 

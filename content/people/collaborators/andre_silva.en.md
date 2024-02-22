@@ -4,7 +4,7 @@ title: "André Corrêa da Silva"
 date: 2024-02-17T00:50:20-03:00
 weight: 44
 language: en
-featured_image: ../assets/images/featured/andre_silva.png
+featured_image: "../assets/images/featured/people_André Silva.png"
 summary: Undergraduate in Software Engineering, University of Brasília
 authorimage: ../assets/images/global/author.webp
 categories: 

@@ -4,7 +4,7 @@ title: "Ricardo Ajax Dias Kosloski"
 date: 2024-02-14T00:43:11-03:00
 weight: 20
 language: pt
-featured_image: ../assets/images/featured/Ricardo_Ajax.jpg
+featured_image: "../assets/images/featured/people_Ricardo Ajax.png"
 summary: Professor da Universidade de Brasília (UnB), atua no curso de graduação em Engenharia de Software. 
 authorimage: ../assets/images/global/author.webp
 categories:

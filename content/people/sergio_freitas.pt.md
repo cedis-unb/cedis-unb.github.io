@@ -4,7 +4,7 @@ title: "Sergio Antônio Andrade de Freitas"
 date: 2024-02-14T00:49:57-03:00
 weight: 20
 language: pt
-featured_image: ../assets/images/featured/Sergio_Freitas.jpg
+featured_image: "../assets/images/featured/people_Sergio Freitas.png"
 summary: Professor Titular da Universidade de Brasília (UnB), atua no curso de graduação em Engenharia de Software e no Programa de Pós-Graduação em Computação Aplicada.
 authorimage: ../assets/images/global/author.webp
 categories:

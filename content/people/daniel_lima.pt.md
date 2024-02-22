@@ -4,7 +4,7 @@ title: "Daniel Sundfeld Lima"
 date: 2024-02-14T00:46:38-03:00
 weight: 20
 language: en
-featured_image: ../assets/images/featured/Daniel_Sundfeld.jpg
+featured_image: "../assets/images/featured/people_Daniel Sundfeld.png"
 summary: Professor Adjunto da Universidade de Brasília (UnB), atuando no curso de graduação em Engenharia de Software.
 authorimage: ../assets/images/global/author.webp
 categories:

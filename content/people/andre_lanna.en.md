@@ -4,7 +4,7 @@ title: "André Luiz Peron Martins Lanna"
 date: 2024-02-14T00:50:20-03:00
 weight: 20
 language: en
-featured_image: ../assets/images/featured/Andre_lanna.jpg
+featured_image: "../assets/images/featured/people_André Lanna.png"
 summary: Associate Professor at the University of Brasília (UnB), working in the undergraduate Software Engineering program and the Graduate Program in Applied Computing.
 authorimage: ../assets/images/global/author.webp
 categories:

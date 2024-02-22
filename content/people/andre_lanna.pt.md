@@ -4,7 +4,7 @@ title: "André Luiz Peron Martins Lanna"
 date: 2024-02-14T00:50:20-03:00
 weight: 20
 language: pt
-featured_image: ../assets/images/featured/Andre_lanna.jpg
+featured_image: "../assets/images/featured/people_André Lanna.png"
 summary: Professor Adjunto da Universidade de Brasília (UnB), atua no curso de graduação em Engenharia de Software e no Programa de Pós-Graduação em Computação Aplicada. 
 authorimage: ../assets/images/global/author.webp
 categories:

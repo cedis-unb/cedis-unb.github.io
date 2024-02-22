@@ -4,7 +4,7 @@ title: "MAGRA"
 date: 2023-01-27T01:37:18-03:00
 language: en
 weight: 14
-featured_image: ../assets/images/featured/magra.png
+featured_image: "../assets/images/featured/produto_MAGRA.png"
 summary: The Undergraduate Analysis Model (MAGRA) enables the prediction of dropout rates in face-to-face undergraduate courses.
 authorimage: ../assets/images/global/author.webp
 categories:

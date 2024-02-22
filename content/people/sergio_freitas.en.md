@@ -4,7 +4,7 @@ title: "Sergio Antônio Andrade de Freitas"
 date: 2024-02-14T00:49:57-03:00
 weight: 20
 language: en
-featured_image: ../assets/images/featured/Sergio_Freitas.jpg
+featured_image: "../assets/images/featured/people_Sergio Freitas.png"
 summary: Full Professor at the University of Brasília (UnB), working in the undergraduate Software Engineering program and the Graduate Program in Applied Computing.
 authorimage: ../assets/images/global/author.webp
 categories:

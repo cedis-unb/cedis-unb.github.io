@@ -4,7 +4,7 @@ title: "Arthur Rocha Temporim de Lacerda"
 date: 2022-02-17T00:50:20-03:00
 weight: 36
 language: en
-featured_image: ../assets/images/featured/arthur_temporim.png
+featured_image: "../assets/images/featured/people_Arthur Temporim.png"
 summary: Master's student in Applied Computing at PPCA, University of Brasília.
 description: The project is to create the GCMP (Gamified Chatbot Development Process), a structured method for creating gamified chatbots.
 authorimage: ../assets/images/global/author.webp
