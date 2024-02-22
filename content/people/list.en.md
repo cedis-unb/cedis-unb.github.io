@@ -6,4 +6,5 @@ weight: 20
 language: pt
 ---
 
-{{< listPeople categories="master_student,tcc" tags="gamification" notags="inactive" >}}
+{{< listPeople categories="tcc" tags="gamification" notags="gamification" >}}
+
