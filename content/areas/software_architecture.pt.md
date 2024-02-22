@@ -21,7 +21,7 @@ A Arquitetura de Software é um campo fundamental na engenharia de sistemas que 
 ## Sobre o coordenador da área
 **Prof. André Lanna**
 
-Professor e pesquisador na área de Arquitetura de Software. Atualmente, desempenha o papel de professor adjunto na Universidade de Brasília, contribuindo significativamente para o curso de graduação em Engenharia de Software no campus Gama e para o Programa de Pós-Graduação em Computação Aplicada. [Conheça mais sobre sobre o coordenador aqui](#).
+Professor e pesquisador na área de Arquitetura de Software. Atualmente, desempenha o papel de professor adjunto na Universidade de Brasília, contribuindo significativamente para o curso de graduação em Engenharia de Software no campus Gama e para o Programa de Pós-Graduação em Computação Aplicada. Conheça mais sobre o coordenador {{< link-interno "/people/andre_lanna" "aqui" >}}.
 
 ## Projetos em andamento
 Uma visão geral dos projetos atuais, destacando as inovações e os objetivos desses projetos.

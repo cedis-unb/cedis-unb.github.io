@@ -22,16 +22,16 @@ tags:
 
 **Prof. Cristiane Soares Ramos**
 
-A distinguished academic in the field of Active Learning Methodologies, with a solid foundation in Software Engineering and Knowledge Management. Serving as a professor in the Software Engineering course at the University of Brasília, she has significantly contributed to the advancement of education and research in software. She is currently a member of the management committee of the Learning for the 3rd Millennium program (A3M). [More information](/en/people/cristiane_ramos).
+A distinguished academic in the field of Active Learning Methodologies, with a solid foundation in Software Engineering and Knowledge Management. Serving as a professor in the Software Engineering course at the University of Brasília, she has significantly contributed to the advancement of education and research in software. She is currently a member of the management committee of the Learning for the 3rd Millennium program (A3M). {{< link-interno "/people/cristiane_ramos" "More information" >}}.
 
 **Prof. Sergio Antônio Andrade de Freitas**
 
-An academic in the field of Active Learning Methodologies and a faculty member at the University of Brasília - UnB, he teaches in the Software Engineering course. Throughout his academic career, he has held significant administrative roles, including Dean of Undergraduate Studies and director of the Distance Education Center (CEAD). His dedication to advancing knowledge in Active Methodologies, both in Engineering and Computing, along with his contributions in Learning Analytics, highlight his expertise and commitment to educational innovation. He is currently the president of the management committee of the Learning for the 3rd Millennium program (A3M). [More information](/en/people/sergio_freitas).
+An academic in the field of Active Learning Methodologies and a faculty member at the University of Brasília - UnB, he teaches in the Software Engineering course. Throughout his academic career, he has held significant administrative roles, including Dean of Undergraduate Studies and director of the Distance Education Center (CEAD). His dedication to advancing knowledge in Active Methodologies, both in Engineering and Computing, along with his contributions in Learning Analytics, highlight his expertise and commitment to educational innovation. He is currently the president of the management committee of the Learning for the 3rd Millennium program (A3M). {{< link-interno "/people/sergio_freitas" "More information" >}}.
 
 ## Research Team
 
-- Ricardo Ajax Dias Kosloski, Professor in the Software Engineering course.
-- George Marsicano Côrrea, Professor in the Software Engineering course.
+- {{< link-interno "/people/ricardo_ajax" "Ricardo Ajax Dias Kosloski" >}}, Professor in the Software Engineering course.
+- {{< link-interno "/people/george_marsicano" "George Marsicano Côrrea" >}}, Professor in the Software Engineering course.
 
 ## Ongoing Projects
 
