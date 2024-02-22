@@ -3,7 +3,7 @@ author: CEDIS
 title: "SAGA"
 date: 2021-06-01T01:37:18-03:00
 language: en
-weight: 101
+weight: 14
 featured_image: ../assets/images/featured/saga.png
 summary: The Academic Management Support System - SAGA is a tool developed to assist academic managers in monitoring indicators for undergraduate courses.
 authorimage: ../assets/images/global/author.webp

@@ -3,7 +3,7 @@ author: CEDIS
 title: "SAGA"
 date: 2021-06-01T01:37:18-03:00
 language: pt
-weight: 101
+weight: 14
 featured_image: ../assets/images/featured/saga.png
 summary: O Sistema de Acompanhamento e Apoio à Gestão Acadêmica - SAGA é uma ferramenta desenvolvida para auxiliar gestores acadêmicos no monitoramento de indicadores de cursos de graduação.
 authorimage: ../assets/images/global/author.webp

@@ -140,7 +140,7 @@ languages:
         - identifier: prods
           pre: comments # can be stars, comments or piechart
           name: Produtos
-          post: "Aplicativos, Processos e outros"
+          post: "Aplicativos, processos e outros"
           url: "/categories/products"
           weight: 20
 #        - identifier: process
