@@ -4,7 +4,7 @@ title: "Transformação Digital"
 date: 2024-02-14T01:37:18-03:00
 language: pt
 weight: 5
-featured_image: ../assets/images/featured/digital_transformation.png
+featured_image: "../assets/images/featured/area_Transformação Digital.png"
 summary: Transformação Digital é a aplicação de tecnologias digitais para mudar modelos de negócio e criar novas oportunidades de valor. Envolve a reimaginação de operações e experiências do cliente, promovendo inovação e eficiência.
 authorimage: ../assets/images/global/author.webp
 categories:

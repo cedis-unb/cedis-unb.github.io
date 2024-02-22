@@ -4,7 +4,7 @@ title: "Metodologias de aprendizagem ativa"
 date: 2024-02-14T01:37:18-03:00
 language: pt
 weight: 5
-featured_image: ../assets/images/featured/active_learning.png
+featured_image: "../assets/images/featured/area_Aprendizagem Ativa.png"
 summary: As metodologias ativas no ensino superior têm ganhado crescente relevância no cenário educacional contemporâneo, em grande parte devido aos avanços na ciência da aprendizagem. Essas abordagens pedagógicas colocam o estudante como protagonista do processo de construção do conhecimento.
 authorimage: ../assets/images/global/author.webp
 categories:

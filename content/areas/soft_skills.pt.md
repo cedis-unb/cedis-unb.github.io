@@ -4,7 +4,7 @@ title: "Trabalho em equipe e Soft Skills"
 date: 2024-02-14T01:37:18-03:00
 language: pt
 weight: 5
-featured_image: ../assets/images/featured/teamwork_softskills.png
+featured_image: "../assets/images/featured/area_Team work and soft skills.png"
 summary: A área de Trabalho em Equipe e Soft Skills é um campo interdisciplinar na gestão de projetos e desenvolvimento de software, enfatizando a importância das habilidades interpessoais e comportamentais para o sucesso de equipes de TI.
 authorimage: ../assets/images/global/author.webp
 categories:

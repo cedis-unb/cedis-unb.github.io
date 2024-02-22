@@ -4,7 +4,7 @@ title: "Engenharia de Requisitos"
 date: 2024-02-14T00:43:11-03:00
 weight: 5
 language: pt
-featured_image: ../assets/images/featured/software_requirements.png
+featured_image: "../assets/images/featured/area_Engenharia de requisitos.png"
 summary: Engenharia de requisitos (ER) é uma área interdisciplinar da Engenharia de Software que visa realizar a mediação (ponte) entre os domínios do adquirente e do fornecedor ou desenvolvedor.
 authorimage: ../assets/images/global/author.webp
 categories:

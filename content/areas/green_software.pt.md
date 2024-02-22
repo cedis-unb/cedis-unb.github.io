@@ -4,7 +4,7 @@ title: "Green Software Development"
 date: 2024-02-14T00:43:11-03:00
 weight: 5
 language: pt
-featured_image: ../assets/images/featured/green_software.png
+featured_image: "../assets/images/featured/area_Green Software.png"
 summary: A área de Green Software Development, ou Desenvolvimento de Software Sustentável, é um campo emergente na engenharia de software que se concentra na criação de software com um impacto ambiental mínimo.  
 authorimage: ../assets/images/global/author.webp
 categories:

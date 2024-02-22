@@ -4,7 +4,7 @@ title: "Digital Transformation Project"
 date: 2024-02-14T02:59:29-03:00
 weight: 10
 language: en
-featured_image: ../assets/images/featured/project_td.webp
+featured_image: "../assets/images/featured/projeto_Transformação Digital.png"
 summary: The Brazilian Federal Government's Public Services Digital Transformation project involves research, development, and innovation in methodologies, models, and tools that promote the automation and digitalization of public services.
 authorimage: ../assets/images/global/author.webp
 categories: 
