@@ -4,7 +4,7 @@ title: "Portal Contextus"
 date: 2024-01-23T01:37:18-03:00
 language: pt
 weight: 14
-featured_image: ../assets/images/featured/contextus.png
+featured_image: "../assets/images/featured/produto_Contextus.png"
 summary: O aplicativo e portal Contextus redefine a análise científica com PLN e ML para uma interação direta com o conhecimento acadêmico.
 authorimage: ../assets/images/global/author.webp
 categories:

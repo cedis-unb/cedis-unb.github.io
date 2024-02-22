@@ -4,7 +4,7 @@ title: "Fabiana Freitas Mendes"
 date: 2024-02-14T00:47:27-03:00
 weight: 20
 language: en
-featured_image: ../assets/images/featured/Fabiana_Mendes.jpg
+featured_image: "../assets/images/featured/people_Fabiana Mendes.png"
 summary: Associate Professor at the University of Brasília (UnB), working in the undergraduate Software Engineering program.
 authorimage: ../assets/images/global/author.webp
 categories:

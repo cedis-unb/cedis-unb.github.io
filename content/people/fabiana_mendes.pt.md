@@ -4,7 +4,7 @@ title: "Fabiana Freitas Mendes"
 date: 2024-02-14T00:47:27-03:00
 weight: 20
 language: pt
-featured_image: ../assets/images/featured/Fabiana_Mendes.jpg
+featured_image: "../assets/images/featured/people_Fabiana Mendes.png"
 summary: Professora Adjunta da Universidade de Brasília (UnB), atuando no curso de graduação em Engenharia de Software. 
 authorimage: ../assets/images/global/author.webp
 categories:

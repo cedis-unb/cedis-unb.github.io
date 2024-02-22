@@ -4,7 +4,7 @@ title: "Cristiane Soares Ramos"
 date: 2024-02-14T00:44:02-03:00
 weight: 20
 language: en
-featured_image: ../assets/images/featured/Cristiane_Ramos.jpg
+featured_image: "../assets/images/featured/people_Cristiane Ramos.png"
 summary: Professor at the University of Brasília (UnB), working in the undergraduate Software Engineering program.
 authorimage: ../assets/images/global/author.webp
 categories:

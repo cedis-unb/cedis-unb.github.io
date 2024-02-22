@@ -4,7 +4,7 @@ title: "George Marsicano Correa"
 date: 2024-02-14T00:48:51-03:00
 weight: 20
 language: en
-featured_image: ../assets/images/featured/George_Marsicano.jpg
+featured_image: "../assets/images/featured/people_George Marsicano.png"
 summary: Associate Professor at the University of Brasília (UnB), working in the undergraduate Software Engineering program and the Graduate Program in Applied Computing.
 authorimage: ../assets/images/global/author.webp
 categories:
@@ -13,6 +13,7 @@ categories:
 tags: 
 - digital_transformation
 - software_requirements
+- project_td
 ---
 ## Academic and Professional Profile
 - Current Position: Associate Professor at the [University of Brasília](https://www.unb.br/) (UnB), engaged in the undergraduate [Software Engineering](http://software.unb.br/) program and the [Graduate Program in Applied Computing](https://ppca.unb.br/).
