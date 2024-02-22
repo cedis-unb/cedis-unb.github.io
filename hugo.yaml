@@ -1,6 +1,6 @@
 baseURL: 'https://cedis.tec.br/'
 publishDir : "docs"
-DefaultContentLanguage: pt
+DefaultContentLanguage: en
 languages:
   pt:
   # PORTUGUÊS
