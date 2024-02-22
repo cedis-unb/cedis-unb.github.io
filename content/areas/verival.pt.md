@@ -10,6 +10,7 @@ authorimage: ../assets/images/global/author.webp
 categories:
 - knowledge_areas
 - cristiane_ramos
+- ricardo_ajax
 tags: 
 - verification_validation_testing
 ---
