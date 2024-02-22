@@ -5,7 +5,7 @@ date: 2024-01-23T01:37:18-03:00
 language: en
 weight: 14
 featured_image: ../assets/images/featured/contextus.png
-summary: Contextus redefines scientific analysis with NLP and ML for direct interaction with academic knowledge.
+summary: The app and site Contextus redefines scientific analysis with NLP and ML for direct interaction with academic knowledge.
 authorimage: ../assets/images/global/author.webp
 categories:
 - products
