@@ -1,12 +1,11 @@
 ---
-title: "CEDIS and University of Évora's Lab Vista Establish International Partnership"
+title: "CEDIS Signs International Agreement"
 date: 2023-11-10T11:10:36+08:00
 draft: false
 weight: 500
 language: en
-featured_image: ../assets/images/posts/cedis_labvista.png
-summary: The agreement between Brazilian and Portuguese institutions aims to promote significant advances in technological and academic research.
-description: The agreement between Brazilian and Portuguese institutions aims to promote significant advances in technological and academic research.
+featured_image: "../assets/images/featured/acordoLabVista.png"
+summary: The agreement between CEDIS and LabVista (Portugal) aims to promote significant advances in technological and academic research.
 author: CEDIS
 authorimage: ../assets/images/global/author.webp
 categories: 

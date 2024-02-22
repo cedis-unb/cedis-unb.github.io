@@ -8,6 +8,8 @@ first: "Primeiro"
 last: "Último"
 read: "leitura"
 News: "Notícias"
+esw: "Curso de Graduação em Engenharia de Software"
+ppca: "Programa de Pós-Graduação em Computação Aplicada"
 
 # TAGS
 # Áreas de atuação
@@ -27,7 +29,6 @@ soft_skills: "Habilidades Sociais"
 active_learning: "Aprendizagem Ativa"
 education: "Educação"
 digital_transformation: "Transformação Digital"
-esw: "Engenharia de Software"
 
 #Tipos de participação
 researcher: "Pesquisadores"
@@ -39,6 +40,7 @@ specialization: "Especialização"
 scientific_initiation: "Iniciação Científica"
 tcc: "TCC"
 monitor: "Monitor"
+orientador: "Orientador"
 inactive: "Inativo"
 sergio_freitas: "Sergio Freitas"
 cristiane_ramos: "Cristiane Ramos"

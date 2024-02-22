@@ -4,7 +4,7 @@ date: 2023-11-29T11:10:36+08:00
 draft: false
 weight: 500
 language: en
-featured_image: ../assets/images/posts/premio.png
+featured_image: ../assets/images/posts/troféu.png
 summary: CEDIS professors stand out in teaching innovation with an honorable mention, in the enhancement of Learning Indicators.
 description: Contextus - An advanced AI, NLP, and ML platform at the heart of Scientific Analysis, led by CEDIS
 author: CEDIS

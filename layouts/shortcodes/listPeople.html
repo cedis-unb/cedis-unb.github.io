@@ -1,0 +1,49 @@
+{{ $categoriesParam := split (default "" (.Get "categories")) "," }}
+{{ $tagsParam := split (default "" (.Get "tags")) "," }}
+{{ $notagsParam := split (default "" (.Get "notags")) "," }}
+
+<ul>
+{{ range $.Site.Data.people.people }}
+  {{ $include := true }}
+  {{/* Lógica de filtragem... */}}
+
+  {{ if $include }}
+  <li>
+    <span><strong>{{ .name }}</strong></span>
+    {{ if .title }}: <span>{{ .title }}</span>{{ end }}
+    
+    {{/* Construção e exibição de categorias, excluindo 'people' */}}
+    {{ $categoriesList := slice }}
+    {{ range .categories }}
+      {{ if ne . "people" }}
+        {{ $categoryName := i18n . }}
+        {{ $categoriesList = $categoriesList | append $categoryName }}
+      {{ end }}
+    {{ end }}
+    {{ if gt (len $categoriesList) 0 }}
+      <span>{{ delimit $categoriesList ", " }}</span>
+    {{ end }}
+
+    {{ if .program }}
+      <span>, {{ i18n .program }}</span>
+    {{ end }}
+    {{ if .year }}
+    <span>({{ .year }})</span>
+    {{ end }}
+    {{ if .advisors }}
+      <span>, {{i18n "orientador"}}:
+      {{ range .advisors }}
+        {{ with index $.Site.Data.people.advisors . }}
+          <a href="{{ .link }}">{{ .name }}</a>
+        {{ end }}
+      {{ end }}
+      </span>
+    {{ end }}
+
+    {{ if .url }}
+      <span>, <a href="{{ .url }}">Link</a></span>
+    {{ end }}
+  </li>
+  {{ end }}
+{{ end }}
+</ul>

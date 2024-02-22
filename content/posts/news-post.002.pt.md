@@ -4,7 +4,7 @@ date: 2023-11-29T11:10:36+08:00
 draft: false
 weight: 500
 language: pt
-featured_image: ../assets/images/posts/premio.png
+featured_image: ../assets/images/posts/troféu.png
 summary: Professores do CEDIS são destaque em inovação no ensino com menção honrosa, no aprimoramento de Indicadores de Aprendizagem.
 description: Contextus - Uma plataforma avançada de IA, PLN e ML no coração da Análise Científica, liderada pelo CEDIS
 author: CEDIS
