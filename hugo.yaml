@@ -4,7 +4,7 @@ DefaultContentLanguage: en
 languages:
   pt:
   # PORTUGUÊS
-    LanguageName: "> PT"
+    LanguageName: "PT"
     languageCode: "pt"
     title: CEDIS
     weight: 1
@@ -172,7 +172,7 @@ languages:
   en:
   # ENGLISH
     #baseURL: '/en/'
-    LanguageName: "> EN"
+    LanguageName: "EN"
     title: CEDIS
     weight: 2
     params:
