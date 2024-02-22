@@ -45,14 +45,14 @@ tags:
 ### Atuais
 {{< postsByCategoriesTags caput="#### PhD" categories="phd_candidate,sergio_freitas" tags="" notags="inactive">}}
 {{< postsByCategoriesTags caput="#### Mestrado" categories="master_student,sergio_freitas" tags="" notags="inactive">}}
-{{< postsByCategoriesTags caput="#### Especializaçào" categories="specialization,sergio_freitas" tags="" notags="inactive">}}
+{{< postsByCategoriesTags caput="#### Especialização" categories="specialization,sergio_freitas" tags="" notags="inactive">}}
 {{< postsByCategoriesTags caput="#### Iniciação Científica" categories="scientific_initiation,sergio_freitas" tags="" notags="inactive">}}
 {{< postsByCategoriesTags caput="#### TCC" categories="tcc,sergio_freitas" tags="" notags="inactive">}}
 
 ### Anteriores
 {{< postsByCategoriesTags caput="#### PhD" categories="phd_candidate,sergio_freitas" tags="inactive" notags="">}}
 {{< postsByCategoriesTags caput="#### Mestrado" categories="master_student,sergio_freitas" tags="inactive" notags="">}}
-{{< postsByCategoriesTags caput="#### Especializaçào" categories="specialization,sergio_freitas" tags="inactive" notags="">}}
+{{< postsByCategoriesTags caput="#### Especialização" categories="specialization,sergio_freitas" tags="inactive" notags="">}}
 {{< postsByCategoriesTags caput="#### Iniciação Científica" categories="scientific_initiation,sergio_freitas" tags="inactive" notags="">}}
 {{< postsByCategoriesTags caput="#### TCC" categories="tcc,sergio_freitas" tags="inactive" notags="">}}
 

@@ -137,18 +137,18 @@ languages:
           post: "Artigos, livros e outros"
           url: "/publications/"
           weight: 10
-        - identifier: progrs
+        - identifier: prods
           pre: comments # can be stars, comments or piechart
-          name: Aplicativos
-          post: "Programas, Aplicativos e outros"
+          name: Produtos
+          post: "Aplicativos, Processos e outros"
           url: "/categories/products"
           weight: 20
-        - identifier: process
-          pre: piechart # can be stars, comments or piechart
-          name: Processos
-          post: "Processos, técnicas e outros"
-          url: "#"
-          weight: 30
+#        - identifier: process
+#          pre: piechart # can be stars, comments or piechart
+#          name: Processos
+#          post: "Processos, técnicas e outros"
+#          url: "#"
+#          weight: 30
 #        - identifier: prods
 #          pre: comments # can be stars, comments or piechart
 #          name: Produtos
@@ -300,21 +300,21 @@ languages:
         - identifier: publications
           pre: stars # can be stars, comments or piechart
           name: Publications
-          post: "Articles, books, and others"
+          post: "Articles, books and others"
           url: "/publications/"
           weight: 10
-        - identifier: progrs
+        - identifier: prods
           pre: comments # can be stars, comments or piechart
-          name: Applications
-          post: "Programs, Applications, and others"
-          url: "/categories/products/"
+          name: Products
+          post: "Applications, Processes and others"
+          url: "/categories/products"
           weight: 20
-        - identifier: process
-          pre: piechart # can be stars, comments or piechart
-          name: Processes
-          post: "Processes, techniques, and others"
-          url: "#"
-          weight: 30
+#        - identifier: process
+#          pre: piechart # can be stars, comments or piechart
+#          name: Processes
+#          post: "Processes, techniques, and others"
+#          url: "#"
+#          weight: 30
 #        - identifier: prods
 #          pre: comments # can be stars, comments or piechart
 #          name: Products
