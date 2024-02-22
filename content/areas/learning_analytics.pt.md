@@ -21,7 +21,7 @@ tags:
 
 **Prof. Sergio Antônio Andrade de Freitas**
 
-Pesquisador no campo da *Learning Analytics* e Gestão Educacional, é professor Titular da Universidade de Brasília - UnB. Além de ser docente no curso de Engenharia de Software, desempenhou um papel significativo em várias funções administrativas dentro e fora da UnB, incluindo presidente do Fórum Nacional de Pró-reitores de Graduação (ForGRAD), Decano (Pró-reitor) de Ensino de Graduação e diretor do Centro de Educação a Distância (CEAD). Atualmente, ele é membro ativo do corpo docente do Programa de Pós-graduação em Computação Aplicada (PPCA), dedicando-se intensamente à pesquisa em [Metodologias Ativas](/areas/active_learning) nas áreas de Engenharia, Computação e Learning Analytics​​. {{< link-interno "/people/sergio_freitas" "Mais informações" >}}.
+Pesquisador no campo da *Learning Analytics* e Gestão Educacional, é professor Titular da Universidade de Brasília - UnB. Além de ser docente no curso de Engenharia de Software, desempenhou um papel significativo em várias funções administrativas dentro e fora da UnB, incluindo presidente do Fórum Nacional de Pró-reitores de Graduação (ForGRAD), Decano (Pró-reitor) de Ensino de Graduação e diretor do Centro de Educação a Distância (CEAD). Atualmente, ele é membro ativo do corpo docente do Programa de Pós-graduação em Computação Aplicada (PPCA), dedicando-se intensamente à pesquisa em {{< link-interno "/areas/active_learning" "Metodologias Ativas" >}} nas áreas de Engenharia, Computação e Learning Analytics​​. {{< link-interno "/people/sergio_freitas" "Mais informações" >}}.
 
 **Profa. Cristiane Soares Ramos**
 

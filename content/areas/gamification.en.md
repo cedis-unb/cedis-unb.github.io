@@ -19,7 +19,7 @@ Gamification is a process that uses elements, techniques, and game design mechan
 ## About the area coordinator
 **Prof. Sergio Antônio Andrade de Freitas**
 
-Specialist in gamification and Full Professor at the University of Brasília - UnB. His experience spans both gamification in Education and the application of this methodology in other fields. He is recognized for integrating game design elements into educational and business contexts, aiming to increase user motivation, participation, and engagement. His dedication to research in Gamification and [Learning Analytics](/areas/learning_analytics) has contributed to innovation and the development of new teaching and learning strategies in the area of Software Engineering. {{< link-interno "/people/sergio_freitas" "More information about the coordinator" >}}.
+Specialist in gamification and Full Professor at the University of Brasília - UnB. His experience spans both gamification in Education and the application of this methodology in other fields. He is recognized for integrating game design elements into educational and business contexts, aiming to increase user motivation, participation, and engagement. His dedication to research in Gamification and {{< link-interno "/areas/learning_analytics" "Learning Analytics" >}} has contributed to innovation and the development of new teaching and learning strategies in the area of Software Engineering. {{< link-interno "/people/sergio_freitas" "More information about the coordinator" >}}.
 ## Research team:
 
 - Prof. Cristiane Soares Ramos, researcher for the Canal Ciência Project, specializes in integrating scientific methodologies into gamification strategies to improve research outcomes and public engagement.

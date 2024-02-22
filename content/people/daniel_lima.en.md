@@ -15,7 +15,7 @@ tags:
 ---
 ## Academic and Professional Profile
 - Current Position: Associate Professor at the [University of Brasília](https://www.unb.br/) (UnB), engaged in the undergraduate [Software Engineering](http://software.unb.br/) program.
-- Fields of Expertise: [Parallel computing](/en/areas/hpc/), [high-performance computing](/en/areas/hpc/), graphics processing units (GPU), distributed systems, and bioinformatics.
+- Fields of Expertise: {{< link-interno "/areas/hpc/" "Parallel computing" >}}, {{< link-interno "/areas/hpc/" "high-performance computing" >}}, graphics processing units (GPU), distributed systems, and bioinformatics.
 ## Academic Background
 - PhD in Computer Science - University of Brasília, with a research stay at the University of Copenhagen (2013-2017).
 - Master's in Computer Science - University of Brasília (2010-2012).
