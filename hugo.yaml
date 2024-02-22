@@ -1,6 +1,6 @@
 baseURL: 'https://cedis.tec.br/'
 publishDir : "docs"
-DefaultContentLanguage: en
+DefaultContentLanguage: pt
 languages:
   pt:
   # PORTUGUÊS
@@ -141,7 +141,7 @@ languages:
           pre: comments # can be stars, comments or piechart
           name: Aplicativos
           post: "Programas, Aplicativos e outros"
-          url: "#"
+          url: "/categories/products"
           weight: 20
         - identifier: process
           pre: piechart # can be stars, comments or piechart
@@ -307,7 +307,7 @@ languages:
           pre: comments # can be stars, comments or piechart
           name: Applications
           post: "Programs, Applications, and others"
-          url: "#"
+          url: "/categories/products/"
           weight: 20
         - identifier: process
           pre: piechart # can be stars, comments or piechart
