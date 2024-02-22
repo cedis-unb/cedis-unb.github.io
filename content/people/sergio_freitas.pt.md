@@ -9,8 +9,8 @@ summary: Professor Titular da Universidade de Brasília (UnB), atua no curso de 
 authorimage: ../assets/images/global/author.webp
 categories:
 - people
-tags: 
 - researcher
+tags: 
 - gamification
 - learning
 - ai

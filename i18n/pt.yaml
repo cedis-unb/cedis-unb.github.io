@@ -30,8 +30,8 @@ digital_transformation: "Transformação Digital"
 esw: "Engenharia de Software"
 
 #Tipos de participação
-researcher: "Pesquisador"
-collaborator: "Colaborador"
+researcher: "Pesquisadores"
+collaborator: "Colaboradores"
 visitor:  "Visitante"
 phd_candidate: "Doutorando"
 master_student: "Mestrando"

@@ -30,8 +30,8 @@ digital_transformation: "Digital Transformation"
 esw: "Software Engineering"
 
 # Participation Types
-researcher: "Researcher"
-collaborator: "Collaborator"
+researcher: "Researchers"
+collaborator: "Collaborators"
 visitor:  "Visitor"
 phd_candidate: "PhD Student"
 master_student: "Master Student"

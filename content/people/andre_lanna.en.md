@@ -9,9 +9,11 @@ summary: Associate Professor at the University of Brasília (UnB), working in th
 authorimage: ../assets/images/global/author.webp
 categories:
 - people
-tags: 
 - researcher
+tags: 
 - dfcris
+- software_architecture
+- software_product_line
 ---
 ## Academic and Professional Profile
 - Current Position: Associate Professor at the [University of Brasília](https://www.unb.br/) (UnB), engaged in the undergraduate [Software Engineering](http://software.unb.br/) program and the [Graduate Program in Applied Computing](https://ppca.unb.br/).

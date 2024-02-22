@@ -9,8 +9,8 @@ summary: Full Professor at the University of Brasília (UnB), working in the und
 authorimage: ../assets/images/global/author.webp
 categories:
 - people
-tags: 
 - researcher
+tags: 
 - gamification
 - learning
 - ai

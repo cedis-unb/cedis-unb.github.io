@@ -124,7 +124,7 @@ languages:
       equipe:
         - identifier: pesquisadores
           name: Pesquisadores
-          url: /tags/researcher/
+          url: /categories/researcher/
           weight: 10
         - identifier: colaboradores
           name: Colaboradores
@@ -290,7 +290,7 @@ languages:
       equipe:
         - identifier: pesquisadores
           name: Researchers
-          url: /tags/researcher/
+          url: /categories/researcher/
           weight: 10
         - identifier: colaboradores
           name: Collaborators
