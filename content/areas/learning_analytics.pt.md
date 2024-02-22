@@ -4,7 +4,7 @@ title: "Learning Analytics e Gestão Educacional"
 date: 2024-02-14T02:18:30-03:00
 weight: 5
 language: pt
-featured_image: ../assets/images/featured/learning.png
+featured_image: "../assets/images/featured/area_Learning Analytics.png"
 summary: Área interdisciplinar que une análise de dados, ciência da computação e psicologia educacional para melhorar a aprendizagem e os ambientes educacionais. Ao coletar, analisar e interpretar dados sobre os aprendizes e seus contextos, oferece insights para personalizar a educação, identificar alunos que precisam de mais apoio e melhorar os resultados educacionais. 
 authorimage: ../assets/images/global/author.webp
 categories:

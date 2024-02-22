@@ -4,7 +4,7 @@ title: "Computação de alto desempenho e computação em nuvem"
 date: 2024-02-14T01:37:18-03:00
 language: pt
 weight: 5
-featured_image: ../assets/images/featured/hpc.png
+featured_image: "../assets/images/featured/area_HPC.png"
 summary: Computação de Alto Desempenho e Computação em Nuvem é um campo dinâmico e essencial na ciência da computação, focado no desenvolvimento e na aplicação de sistemas computacionais avançados capazes de processar grandes quantidades de dados a velocidades extremamente altas.
 authorimage: ../assets/images/global/author.webp
 categories:

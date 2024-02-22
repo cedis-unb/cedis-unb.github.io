@@ -4,7 +4,7 @@ title: "Teamwork and Soft Skills"
 date: 2024-02-14T01:37:18-03:00
 language: en
 weight: 5
-featured_image: ../assets/images/featured/teamwork_softskills.png
+featured_image: "../assets/images/featured/area_Team work and soft skills.png"
 summary: The area of Teamwork and Soft Skills is an interdisciplinary field in project management and software development, emphasizing the importance of interpersonal and behavioral skills for the success of IT teams.
 authorimage: ../assets/images/global/author.webp
 categories:

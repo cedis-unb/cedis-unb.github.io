@@ -4,7 +4,7 @@ title: "Laguna Project"
 date: 2024-02-14T02:59:29-03:00
 weight: 10
 language: en
-featured_image: ../assets/images/featured/laguna.webp
+featured_image: "../assets/images/featured/projeto_Laguna.png"
 summary: This project aims to extend the massive processing of a data lake using a cloud architecture, utilizing Amazon Web Services (AWS) as the provider.
 authorimage: ../assets/images/global/author.webp
 categories: 

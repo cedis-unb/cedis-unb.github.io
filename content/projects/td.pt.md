@@ -4,7 +4,7 @@ title: "Projeto Transformação Digital"
 date: 2024-02-14T02:59:29-03:00
 weight: 10
 language: pt
-featured_image: ../assets/images/featured/project_td.webp
+featured_image: "../assets/images/featured/projeto_Transformação Digital.png"
 summary: O projeto de Transformação Digital de Serviços Públicos do Governo Federal Brasileiro envolve pesquisa, desenvolvimento e inovação em metodologias, modelos e ferramentas que promovam a automação e digitização de serviços públicos.
 authorimage: ../assets/images/global/author.webp
 categories: 

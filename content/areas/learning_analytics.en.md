@@ -4,7 +4,7 @@ title: "Learning Analytics and Educational Management"
 date: 2024-02-14T02:18:30-03:00
 weight: 5
 language: en
-featured_image: ../assets/images/featured/learning.png
+featured_image: "../assets/images/featured/area_Learning Analytics.png"
 summary: An interdisciplinary area that combines data analysis, computer science, and educational psychology to enhance learning and educational environments. By collecting, analyzing, and interpreting data about learners and their contexts, it provides insights to personalize education, identify students who need more support, and improve educational outcomes.
 authorimage: ../assets/images/global/author.webp
 categories:

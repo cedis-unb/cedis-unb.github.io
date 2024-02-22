@@ -4,7 +4,7 @@ title: "Artificial Intelligence and Natural Language Processing"
 date: 2024-02-14T01:37:18-03:00
 language: en
 weight: 5
-featured_image: ../assets/images/featured/ai_nlp.png
+featured_image: "../assets/images/featured/area_IA.png"
 summary: Artificial Intelligence (AI) is a branch of computer science that seeks to develop systems capable of mimicking and enhancing human abilities such as reasoning, learning, and perception. One of its most fascinating subareas is Natural Language Processing (NLP).
 authorimage: ../assets/images/global/author.webp
 categories:

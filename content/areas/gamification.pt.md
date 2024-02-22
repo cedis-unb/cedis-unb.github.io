@@ -4,7 +4,7 @@ title: "Gamificação"
 date: 2024-02-14T01:37:18-03:00
 language: pt
 weight: 5
-featured_image: ../assets/images/featured/gamificacao.png
+featured_image: "../assets/images/featured/area_Gamificação.png"
 summary: A gamificação é um processo que utiliza elementos, técnicas e mecânicas de design de jogos em contextos não relacionados a jogos, com o objetivo de aumentar a motivação, a participação e o engajamento dos usuários. A gamificação tem sido aplicada em diversas áreas, como educação, marketing, saúde e treinamento corporativo.
 authorimage: ../assets/images/global/author.webp
 categories:

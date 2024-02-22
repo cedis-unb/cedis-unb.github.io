@@ -4,7 +4,7 @@ title: "Canal Ciência Project"
 date: 2024-02-14T17:08:50-03:00
 weight: 10
 language: en
-featured_image: ../assets/images/featured/canal_ciencia.webp
+featured_image: "../assets/images/featured/projeto_Canal Ciência.png"
 summary: A research project in partnership with IBICT and funded by FINATEC, aimed at enhancing the user experience of the Canal Ciência through the use of gamification.
 authorimage: ../assets/images/global/author.webp
 categories: 

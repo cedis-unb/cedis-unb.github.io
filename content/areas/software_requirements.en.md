@@ -4,7 +4,7 @@ title: "Requirements Engineering"
 date: 2024-02-14T00:43:11-03:00
 weight: 5
 language: en
-featured_image: ../assets/images/featured/software_requirements.png
+featured_image: "../assets/images/featured/area_Engenharia de requisitos.png"
 summary: Requirements engineering (RE) is an interdisciplinary area of Software Engineering aimed at bridging the gap between the acquirer's and the supplier's or developer's domains.
 authorimage: ../assets/images/global/author.webp
 categories:

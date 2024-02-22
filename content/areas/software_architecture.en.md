@@ -4,7 +4,7 @@ title: "Software Architecture"
 date: 2024-02-14T01:37:18-03:00
 language: en
 weight: 5
-featured_image: ../assets/images/featured/software_architecture.png
+featured_image: "../assets/images/featured/area_Arquitetura de Software.png"
 summary: Software Architecture is a fundamental field in systems engineering involving the structural organization of software components, their interactions, and the guiding principles that define the design and evolution of systems. This area is crucial for ensuring the efficiency, scalability, and maintainability of software systems, directly impacting the quality and performance of applications.
 authorimage: ../assets/images/global/author.webp
 categories:

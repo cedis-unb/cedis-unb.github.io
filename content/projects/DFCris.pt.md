@@ -4,7 +4,7 @@ title: "Projeto DFCris"
 date: 2024-02-14T02:59:29-03:00
 weight: 10
 language: pt
-featured_image: ../assets/images/featured/DFCris.png
+featured_image: "../assets/images/featured/projeto_DFCris.png"
 summary: Projeto de pesquisa em parceria com o IBICT e financiado pela FAP/DF.
 authorimage: ../assets/images/global/author.webp
 categories: 

@@ -4,7 +4,7 @@ title: "Verification, Validation and Testing"
 date: 2024-02-14T00:43:11-03:00
 weight: 5
 language: en
-featured_image: ../assets/images/featured/verification_validation_testing.png
+featured_image: "../assets/images/featured/area_Verificação e Validação.png"
 summary: The area of Verification, Validation, and Testing is a critical discipline in software engineering, focused on ensuring that software products meet their specified requirements and function as expected.
 authorimage: ../assets/images/global/author.webp
 categories:

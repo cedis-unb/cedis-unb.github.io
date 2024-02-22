@@ -4,7 +4,7 @@ title: "Active Learning Methodologies"
 date: 2024-02-14T01:37:18-03:00
 language: en
 weight: 5
-featured_image: ../assets/images/featured/active_learning.png
+featured_image: "../assets/images/featured/area_Aprendizagem Ativa.png"
 summary: Active learning methodologies in higher education have been gaining increasing relevance in the contemporary educational landscape, largely due to advancements in the science of learning.
 authorimage: ../assets/images/global/author.webp
 categories:

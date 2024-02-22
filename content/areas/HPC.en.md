@@ -4,7 +4,7 @@ title: "High-Performance Computing and Cloud Computing"
 date: 2024-02-14T01:37:18-03:00
 language: en
 weight: 5
-featured_image: ../assets/images/featured/hpc.png
+featured_image: "../assets/images/featured/area_HPC.png"
 summary: High-Performance Computing and Cloud Computing is a dynamic and essential field in computer science, focused on the development and application of advanced computing systems capable of processing large amounts of data at extremely high speeds.
 authorimage: ../assets/images/global/author.webp
 categories:
