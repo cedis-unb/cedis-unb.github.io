@@ -9,10 +9,11 @@ summary: Professora da Universidade de Brasília (UnB), atua no curso de gradua�
 authorimage: ../assets/images/global/author.webp
 categories:
 - people
-tags: 
 - researcher
+tags: 
 - gamification
 - learning
+- verification_validation_testing
 - project_cc
 ---
 ## Perfil Acadêmico e Profissional

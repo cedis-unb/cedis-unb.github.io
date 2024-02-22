@@ -4,7 +4,7 @@ title: "Digital Transformation"
 date: 2024-02-14T01:37:18-03:00
 language: en
 weight: 5
-featured_image: ../assets/images/featured/digital_transformation.webp
+featured_image: ../assets/images/featured/digital_transformation.png
 summary: Digital Transformation is the application of digital technologies to change business models and create new value opportunities. It involves reimagining operations and customer experiences, promoting innovation and efficiency.
 authorimage: ../assets/images/global/author.webp
 categories:

@@ -9,8 +9,8 @@ summary: Associate Professor at the University of Brasília (UnB), working in th
 authorimage: ../assets/images/global/author.webp
 categories:
 - people
-tags: 
 - researcher
+tags: 
 - green_software
 - project_gsd
 ---

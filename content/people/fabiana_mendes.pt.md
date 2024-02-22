@@ -9,8 +9,8 @@ summary: Professora Adjunta da Universidade de Brasília (UnB), atuando no curso
 authorimage: ../assets/images/global/author.webp
 categories:
 - people
-tags: 
 - researcher
+tags: 
 - green_software
 - project_gsd
 ---

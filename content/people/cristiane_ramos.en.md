@@ -9,10 +9,11 @@ summary: Professor at the University of Brasília (UnB), working in the undergra
 authorimage: ../assets/images/global/author.webp
 categories:
 - people
-tags: 
 - researcher
+tags: 
 - gamification
 - learning
+- verification_validation_testing
 - project_cc
 ---
 ## Academic and Professional Profile

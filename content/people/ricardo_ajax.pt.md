@@ -9,8 +9,8 @@ summary: Professor da Universidade de Brasília (UnB), atua no curso de graduaç
 authorimage: ../assets/images/global/author.webp
 categories:
 - people
-tags: 
 - researcher
+tags: 
 - digital_transformation
 ---
 ## Perfil Acadêmico e Profissional

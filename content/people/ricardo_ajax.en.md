@@ -9,8 +9,8 @@ summary: Professor at the University of Brasília (UnB), working in the undergra
 authorimage: ../assets/images/global/author.webp
 categories:
 - people
-tags: 
 - researcher
+tags: 
 - digital_transformation
 ---
 ## Academic and Professional Profile
