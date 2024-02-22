@@ -27,7 +27,7 @@ languages:
           - text: "Na execução das nossas pesquisas temos trabalhado em parceira com outras entidades, organizações e laboratórios de pesquisa."
         links:
           - text: "Conheça nossos parceiros"
-            url: "/parceiros/"
+            url: "/pt/parceiros/"
         logos:
           - identifier: "IBICT"
             image: "images/global/ibict.svg"
@@ -194,7 +194,7 @@ languages:
           - text: "In conducting our research, we have worked in partnership with other entities, organizations, and research laboratories."
         links:
           - text: "Meet our partners"
-            url: "/en/parceiros/"
+            url: "/parceiros/"
         logos:
           - identifier: "IBICT"
             image: "images/global/ibict.svg"
