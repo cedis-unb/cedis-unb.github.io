@@ -18,7 +18,7 @@ tags:
 
 ## Descrição do projeto
 
-Sob a orientação dos pesquisadores [Sergio Freitas](/people/sergio_freitas) e [Cristiane Ramos](/people/cristiane_ramos), este projeto tem como objetivo aprimorar a experiência dos usuários do Canal Ciência. Empregando técnicas avançadas de gamificação, propomos uma abordagem mais engajadora e motivadora para a divulgação científica.
+Sob a orientação dos pesquisadores {{< link-interno "/people/sergio_freitas" "Sergio Freitas" >}} e {{< link-interno "/people/cristiane_ramos" "Cristiane Ramos" >}}, este projeto tem como objetivo aprimorar a experiência dos usuários do Canal Ciência. Empregando técnicas avançadas de gamificação, propomos uma abordagem mais engajadora e motivadora para a divulgação científica.
 ## Objetivos do projeto
 
 Os objetivos centrais deste projeto são múltiplos:

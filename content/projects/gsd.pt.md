@@ -60,7 +60,7 @@ Chamar a atenção para a necessidade de conhecermos essa área e, uma vez que p
 
 ## Integrantes
 
-- Profa. Dra. [Fabiana Freitas Mendes](/people/fabiana_mendes) (coordenadora do projeto)
+- Profa. Dra. {{< link-interno "/people/fabiana_mendes/" "Fabiana Freitas Mendes" >}} (coordenadora do projeto)
 - Ana Carolina Costa Cesar (bolsista PIBIC)
 - Gabriela da Gama Pivetta (bolsista PIBIC e aluna de TCC)
 

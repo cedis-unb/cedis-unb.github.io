@@ -23,17 +23,17 @@ As metodologias ativas no ensino superior têm ganhado crescente relevância no 
 
 Profa. Cristiane Soares Ramos
 
-Destacada acadêmica na área de Metodologias Ativas de Aprendizagem, com uma sólida base em Engenharia de Software e Gestão do Conhecimento. Atuando como professora no curso de Engenharia de Software da Universidade de Brasília, ela tem contribuído significativamente para o avanço da educação e pesquisa em software. Atualmente é membro da comissão gestora do programa [Aprendizagem para o 3º Milênio](http://a3m.unb.br/) (A3M). [Mais informações](/people/cristiane_ramos/).
+Destacada acadêmica na área de Metodologias Ativas de Aprendizagem, com uma sólida base em Engenharia de Software e Gestão do Conhecimento. Atuando como professora no curso de Engenharia de Software da Universidade de Brasília, ela tem contribuído significativamente para o avanço da educação e pesquisa em software. Atualmente é membro da comissão gestora do programa [Aprendizagem para o 3º Milênio](http://a3m.unb.br/) (A3M). {{< link-interno "/people/cristiane_ramos/" "Mais informações" >}}.
 
 Prof. Sergio Antônio Andrade de Freitas
 
-Acadêmico na área de Metodologias Ativas de Aprendizagem e membro do corpo docente da Universidade de Brasília - UnB, atua no curso de Engenharia de Software. Na sua carreira acadêmica, exerceu papéis administrativos significativos, incluindo Decano (Pró-reitor) de Ensino de Graduação e diretor do Centro de Educação a Distância (CEAD). Sua dedicação ao avanço do conhecimento em Metodologias Ativas, tanto em Engenharia quanto em Computação, junto com suas contribuições em [Learning Analytics](https://www.cedis.unb.br/o-cedis/%C3%A1reas-de-pesquisa/learning-analytics-e-gest%C3%A3o-educacional-baseada-em-indicadores), ressaltam sua expertise e compromisso com a inovação educacional​​. Atualmente é presidente da comissão gestora do programa [Aprendizagem para o 3º Milênio](http://a3m.unb.br/) (A3M). [Mais informações](/people/sergio_freitas/).
+Acadêmico na área de Metodologias Ativas de Aprendizagem e membro do corpo docente da Universidade de Brasília - UnB, atua no curso de Engenharia de Software. Na sua carreira acadêmica, exerceu papéis administrativos significativos, incluindo Decano (Pró-reitor) de Ensino de Graduação e diretor do Centro de Educação a Distância (CEAD). Sua dedicação ao avanço do conhecimento em Metodologias Ativas, tanto em Engenharia quanto em Computação, junto com suas contribuições em [Learning Analytics](/areas/learning_analytics), ressaltam sua expertise e compromisso com a inovação educacional​​. Atualmente é presidente da comissão gestora do programa [Aprendizagem para o 3º Milênio](http://a3m.unb.br/) (A3M). {{< link-interno "/people/sergio_freitas/" "Mais informações" >}}.
 
 ## Equipe de pesquisadores
 
-- [Ricardo Ajax Dias Kosloski](/areas/ricardo_ajax), Prof. do curso de Engenharia de Software.
+- {{< link-interno "/people/ricardo_ajax" "Ricardo Ajax Dias Kosloski" >}}, Prof. do curso de Engenharia de Software.
     
-- [George Marsicano Côrrea](/people/george_marsicano), Prof. do curso de Engenharia de Software.
+- {{< link-interno "/people/george_marsicano" "George Marsicano Côrrea" >}}, Prof. do curso de Engenharia de Software.
     
 
 ## Projetos em andamento
@@ -106,7 +106,7 @@ Acadêmico na área de Metodologias Ativas de Aprendizagem e membro do corpo doc
 
 1. FREITAS, Sergio. A. A. ; RAMOS, CRISTIANE SOARES ; MORTARI, Márcia. R. ; VIANA, Diane. M. ; BESSA, Eduardo. Oficina - Indicadores de Aprendizagem. 2022. (Curso de curta duração ministrado/Outra).
     
-2. Fundamentos de Arquitetura de Computadores, gamificada como "Batalha do conhecimento": A disciplina reestruturada como "Batalha do Conhecimento", uma experiência educacional gamificada. Este formato inovador, baseado nos conceitos de McGonigal e no framework Octalysis, transforma a sala de aula em um espaço interativo de aprendizado. Os alunos participam de duelos de conhecimento, respondendo perguntas sobre tópicos da disciplina, e ganham "patacas" baseadas na qualidade de suas respostas. Os conteúdos estão previamente disponibilidados através dos livros texto adotados na discplina, incentivando o estudo prévio. A gamificação mostrou-se eficaz em aumentar o engajamento e o prazer dos alunos no processo de aprendizagem​​​​. 2015. Autor: [Sergio Freitas](/people/sergio_freitas).  
+2. Fundamentos de Arquitetura de Computadores, gamificada como "Batalha do conhecimento": A disciplina reestruturada como "Batalha do Conhecimento", uma experiência educacional gamificada. Este formato inovador, baseado nos conceitos de McGonigal e no framework Octalysis, transforma a sala de aula em um espaço interativo de aprendizado. Os alunos participam de duelos de conhecimento, respondendo perguntas sobre tópicos da disciplina, e ganham "patacas" baseadas na qualidade de suas respostas. Os conteúdos estão previamente disponibilidados através dos livros texto adotados na discplina, incentivando o estudo prévio. A gamificação mostrou-se eficaz em aumentar o engajamento e o prazer dos alunos no processo de aprendizagem​​​​. 2015. Autor: {{< link-interno "/people/sergio_freitas" "Sergio Freitas" >}}.  
     Recursos disponíveis: Formulários padronizados para acompanhamento dos duelos e planilhas para identificação de perfis semelhantes de atuação dos jogadores. Início: 2015, encerrado em 2017.
     
 

@@ -59,7 +59,7 @@ To draw attention to the need to become familiar with this field and, once we ha
 
 ## Members
 
-- Prof. Dr. [Fabiana Freitas Mendes](en/people/fabiana_mendes) (project coordinator)
+- Prof. Dr. {{< link-interno "/people/fabiana_mendes/" "Fabiana Freitas Mendes" >}} (project coordinator)
 - Ana Carolina Costa Cesar (PIBIC scholarship holder)
 - Gabriela da Gama Pivetta (PIBIC scholarship holder and TCC student)
 

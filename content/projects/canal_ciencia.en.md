@@ -18,7 +18,7 @@ tags:
 
 ## Project Description
 
-Under the guidance of researchers [Sergio Freitas](/en/people/sergio_freitas) and [Cristiane Ramos](/en/people/cristiane_ramos), this project aims to enhance the user experience of Canal Ciência. By employing advanced gamification techniques, we propose a more engaging and motivating approach to scientific dissemination.
+Under the guidance of researchers {{< link-interno "/people/sergio_freitas" "Sergio Freitas" >}} and {{< link-interno "/people/cristiane_ramos" "Cristiane Ramos" >}}, this project aims to enhance the user experience of Canal Ciência. By employing advanced gamification techniques, we propose a more engaging and motivating approach to scientific dissemination.
 ## Project Objectives
 
 The core objectives of this project are multiple:
