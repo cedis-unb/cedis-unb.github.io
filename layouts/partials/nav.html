@@ -153,13 +153,16 @@
                     {{ end }}
                 {{ end }}
             
-                <!-- Gera links para os idiomas disponíveis, exceto o idioma atual -->
+                <!-- Gera botões para os idiomas disponíveis, exceto o idioma atual -->
                 {{ range .Site.Languages }}
                     {{ if ne .Lang $currentLang }}
-                        <a href="{{ printf "/%s%s" .Lang $path | absURL }}" class="px-4 py-2 mt-2 text-sm font-semibold rounded-lg hover:text-white focus:text-white hover:bg-primary-600" mb-1>{{ .Lang | upper }}</a>
+                        <button onclick="location.href='{{ printf "/%s%s" .Lang $path | absURL }}'" class="px-4 py-2 mt-2 text-sm font-semibold rounded-lg md:mt-0 md:ml-4 hover:text-white focus:text-white hover:bg-primary-600 focus:bg-primary-700 focus:outline-none focus:shadow-outline">
+                            {{ .Lang | upper }}
+                        </button>
                     {{ end }}
                 {{ end }}
             </div>
+            
         </nav>
     </div>
 </div>
