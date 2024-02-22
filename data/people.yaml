@@ -1,0 +1,461 @@
+advisors:
+  sergio_freitas:
+    name: "Sergio Freitas"
+    link: "/people/sergio_freitas"
+  cristiane_ramos:
+    name: "Cristiane Ramos"
+    link: "/people/cristiane_ramos"
+  andre_lanna:
+    name: "André Lanna"
+    link: "/people/andre_lanna"
+  george_marsicyear:
+    name: "George Marsicano"
+    link: "/people/george_marsicano"
+  fabiana_mendes:
+    name: "Fabiana Mendes"
+    link: "/people/fabiana_mendes"
+  ricardo_ajax:
+    name: "Ricardo Ajax"
+    link: "/people/ricardo_ajax"
+  daniel_sundfeld:
+    name: "Daniel Sundfeld"
+    link: "/people/daniel_sundfeld"
+
+#######################
+
+people:
+  - name: Weiller Fernandes Pereira
+    categories:
+      - people
+      - tcc
+    title: Revisão sistemática da literatura sobre o uso de frameworks na construção de uma gamificação na educação.
+    program: esw
+    advisors:
+      - sergio_freitas
+    tags:
+      - active
+      - gamification
+      - education
+    url: "https://www.bdm.unb.br/handle/10483/30628"
+    year: 2021
+
+  - name: Paulo Markes Rodrigues de Oliveira Calado
+    categories:
+      - people
+      - tcc
+    title: Estratégia para identificar oportunidades de melhoria em aplicações gamificadas.
+    program: esw
+    advisors:
+      - sergio_freitas
+    tags:
+      - active
+      - gamification
+      - software_requirements
+    url: "https://www.bdm.unb.br/handle/10483/21592"
+    year: 2018
+
+  - name: Tiago Ribeiro de Assunção
+    categories:
+      - people
+      - tcc
+    title: Aplicação da gamificação na Rede Social About.
+    program: esw
+    advisors:
+      - sergio_freitas
+    tags:
+      - active
+      - gamification
+      - social_networks
+    url: "https://www.bdm.unb.br/handle/10483/19801"
+    year: 2017
+
+  - name: Leandro Alves Ferreira Santos
+    categories:
+      - people
+      - tcc
+    title: Software gamificado para auxílio ao ensino e aprendizagem de matemática para crianças.
+    program: esw
+    advisors:
+      - sergio_freitas
+    tags:
+      - active
+      - gamification
+      - education
+      - active_learning
+    url: "https://www.bdm.unb.br/handle/10483/19791"
+    year: 2017
+
+  - name: Wilker Mesquita de Assunção
+    categories:
+      - people
+      - tcc
+    title: Ambiente de aprendizagem gamificado para ensino de algoritmos.
+    program: esw
+    advisors:
+      - sergio_freitas
+    tags:
+      - active
+      - gamification
+      - education
+    url: "https://www.bdm.unb.br/handle/10483/14870"
+    year: 2016
+
+  - name: Ludimila da Bela Cruz
+    categories:
+      - people
+      - tcc
+    title: Ferramenta de apoio a construção de projetos de gamificação.
+    program: esw
+    advisors:
+      - sergio_freitas
+    tags:
+      - active
+      - gamification
+      - software_development_tools
+    url: "https://www.bdm.unb.br/handle/10483/21591"
+    year: 2016
+
+  - name: Cristóvão de Lima Frinhani
+    categories:
+      - people
+      - tcc
+    title: Aplicação de processamento de linguagem natural - uma ferramenta de apoio à correção de questões dissertativas.
+    program: esw
+    advisors:
+      - sergio_freitas
+    tags:
+      - active
+      - nlp
+      - education_technology
+    url: "https://www.bdm.unb.br/handle/10483/14871"
+    year: 2016
+
+  - name: Arthur Rocha Temporim de Lacerda
+    categories:
+      - people
+      - master_student
+    title: Método estruturado para criar chatbots gamificados.
+    program: ppca
+    advisors:
+      - sergio_freitas
+    tags:
+      - active
+      - gamification
+    year: 2022
+
+  - name: Dione Ramos Canuto Moura
+    categories:
+      - people
+      - master_student
+    program: ppca
+    advisors:
+      - george_marsicano
+    tags:
+      - active
+      - software_architecture
+    year: 2022
+
+  - name: Éber Junio Borges Moreira
+    categories:
+      - people
+      - master_student
+    title: Revisão literária e seleção de metodologias ótimas para horários acadêmicos.
+    program: ppca
+    advisors:
+      - sergio_freitas
+    tags:
+      - active
+      - education
+    year: 2023
+
+  - name: Luciana Santos de Assis
+    categories:
+      - people
+      - master_student
+    title: Avaliação crítica e estudo de caso sobre a implementação de gamificação em contextos organizacionais.
+    program: ppca
+    advisors:
+      - sergio_freitas
+    tags:
+      - active
+      - gamification
+      - soft_skills
+    year: 2021
+
+  - name: Edmilson Cosme da Silva
+    categories:
+      - people
+      - master_student
+    title: Desenvolveu um modelo para prever a retenção de alunos utilizando dados acadêmicos em tempo real.
+    program: UnB
+    advisors:
+      - sergio_freitas
+    tags:
+      - inactive
+      - learning
+    year: 2023
+
+  - name: Ana Paula Magalhães Silva Santana
+    categories:
+      - people
+      - master_student
+    title: Avaliou a viabilidade técnica do ensino híbrido em cursos de graduação.
+    program: UnB
+    advisors:
+      - sergio_freitas
+    tags:
+      - inactive
+      - education
+      - digital_transformation
+    year: 2023
+
+  - name: Felipe Evangelista dos Santos
+    categories:
+      - people
+      - master_student
+    title: Trabalhou na integração do Barramento de Serviços da UnB com ferramentas de monitoramento.
+    program: UnB
+    advisors:
+      - sergio_freitas
+    tags:
+      - inactive
+      - software_architecture
+    year: 2023
+
+  - name: Ana Carolina Costa César
+    categories:
+      - people
+      - scientific_initiation
+    title: Projeto sobre Desenvolvimento de Software Verde.
+    program: ppca
+    advisors:
+      - fabiana_mendes
+    tags:
+      - active
+      - green_software
+    year: 2022
+
+  - name: Gabriela da Gama Piveta
+    categories:
+      - people
+      - tcc
+    title: Green Software Business Guide.
+    program: esw
+    advisors:
+      - fabiana_mendes
+    tags:
+      - active
+      - green_software
+    year: 2021
+
+  - name: João Vítor Lopes de Farias
+    categories:
+      - people
+      - tcc
+    title: Gamificação com tema RPG para a disciplina Interação Humano-Computador.
+    program: esw
+    advisors:
+      - sergio_freitas
+    tags:
+      - active
+      - gamification
+      - education
+    year: 2022
+
+  - name: Luiz Henrique Fernandes Zamprogno
+    categories:
+      - people
+      - tcc
+    title: Chatbot gamificado para consulta de informações acadêmicas.
+    program: esw
+    advisors:
+      - sergio_freitas
+    tags:
+      - active
+      - gamification
+      - ai
+    year: 2022
+
+  - name: Victor Eduardo Araujo Ribeiro
+    categories:
+      - people
+      - tcc
+    title: Chatbot gamificado para consulta de informações acadêmicas.
+    program: esw
+    advisors:
+      - sergio_freitas
+    tags:
+      - active
+      - gamification
+      - ai
+    year: 2022
+
+  - name: Marcelo Victor de Sousa Silva
+    categories:
+      - people
+      - tcc
+    title: FormsGeo - um aplicativo para pesquisas sociais com geolocalização.
+    program: esw
+    advisors:
+      - fabiana_mendes
+    tags:
+      - active
+      - software_requirements
+      - digital_transformation
+    year: 2023
+
+  - name: Amanda Emilly Muniz de Menezes
+    categories:
+      - people
+      - tcc
+    title: Identificação de fatores que afetam a Evasão no Ensino Superior.
+    program: esw
+    advisors:
+      - cristiane_ramos
+      - sergio_freitas
+    tags:
+      - active
+      - education
+      - learning
+    year: 2022
+
+  - name: Rafael Santos Teodosio
+    categories:
+      - people
+      - tcc
+    title: $tudy - um sistema gamificado de educação financeira.
+    program: esw
+    advisors:
+      - sergio_freitas
+    tags:
+      - active
+      - gamification
+      - education
+    year: 2022
+
+  - name: Érico Maximiano Bandeira
+    categories:
+      - people
+      - tcc
+    title: Pixel - uma ferramenta gamificada para aprendizagem de critérios de usabilidade.
+    program: esw
+    advisors:
+      - sergio_freitas
+    tags:
+      - active
+      - gamification
+      - software_requirements
+    year: 2022
+
+  - name: Bruno Contessotto Bragança Pinheiro
+    categories:
+      - people
+      - tcc
+    title: Active Gamification - A process for successful gamification.
+    program: esw
+    advisors:
+      - sergio_freitas
+    tags:
+      - active
+      - gamification
+    year: 2019
+
+  - name: Paulo Markes Rodrigues de Oliveira Calado
+    categories:
+      - people
+      - tcc
+    title: Estratégia para identificar oportunidades de melhoria em aplicações gamificadas.
+    program: esw
+    advisors:
+      - sergio_freitas
+    tags:
+      - active
+      - gamification
+      - software_requirements
+    year: 2018
+
+  - name: Tiago Ribeiro de Assunção
+    categories:
+      - people
+      - tcc
+    title: Aplicação da gamificação na Rede Social About.
+    program: esw
+    advisors:
+      - sergio_freitas
+    tags:
+      - active
+      - gamification
+      - social_networks
+    year: 2017
+
+  - name: Leandro Alves Ferreira Santos
+    categories:
+      - people
+      - tcc
+    title: Software gamificado para auxílio ao ensino e aprendizagem de matemática para crianças.
+    program: esw
+    advisors:
+      - sergio_freitas
+    tags:
+      - active
+      - gamification
+      - education
+      - active_learning
+    year: 2017
+
+  - name: Yeltsin Suares Gama
+    categories:
+      - people
+      - tcc
+    title: Sistema de apoio ao aprendizado.
+    program: esw
+    advisors:
+      - sergio_freitas
+    tags:
+      - active
+      - education
+      - learning
+    year: 2017
+
+  - name: Wilker Mesquita de Assunção
+    categories:
+      - people
+      - tcc
+    title: Ambiente de aprendizagem gamificado para ensino de algoritmos.
+    program: esw
+    advisors:
+      - sergio_freitas
+    tags:
+      - active
+      - gamification
+      - education
+    year: 2016
+
+  - name: Ludimila da Bela Cruz
+    categories:
+      - people
+      - tcc
+    title: Ferramenta de apoio a construção de projetos de gamificação.
+    program: esw
+    advisors:
+      - sergio_freitas
+    tags:
+      - active
+      - gamification
+      - software_development_tools
+    year: 2016
+
+  - name: Cristóvão de Lima Frinhani
+    categories:
+      - people
+      - tcc
+    title: Aplicação de processamento de linguagem natural - uma ferramenta de apoio à correção de questões dissertativas.
+    program: esw
+    advisors:
+      - sergio_freitas
+    tags:
+      - active
+      - nlp
+      - education_technology
+    year: 2016
+

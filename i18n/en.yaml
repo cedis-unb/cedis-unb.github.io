@@ -8,6 +8,8 @@ first: "First"
 last: "Last"
 read: "read"
 News: "News"
+esw: "Undergraduate Course in Software Engineering"
+ppca: ""
 
 # TAGS
 # Knowledge Areas
@@ -27,7 +29,7 @@ soft_skills: "Soft Skills"
 active_learning: "Active Learning"
 education: "Education"
 digital_transformation: "Digital Transformation"
-esw: "Software Engineering"
+
 
 # Participation Types
 researcher: "Researchers"
@@ -39,6 +41,7 @@ specialization: "Specialization Student"
 scientific_initiation: "Scientific Initiation"
 tcc: "TCC"
 monitor: "Course Assistant"
+orientador: "Advisor"
 inactive: "Inactive"
 sergio_freitas: "Sergio Freitas"
 cristiane_ramos: "Cristiane Ramos"

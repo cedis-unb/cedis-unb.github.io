@@ -4,7 +4,7 @@ date: 2024-01-23T11:10:36+08:00
 draft: false
 weight: 500
 language: pt
-featured_image: ../assets/images/featured/contextus.png
+featured_image: "../assets/images/featured/produto_Contextus.png"
 summary: Contextus - Uma plataforma avançada de IA, PLN e ML para análise científica.
 description: Contextus - Uma plataforma avançada de IA, PLN e ML no coração da Análise Científica, liderada pelo CEDIS
 author: CEDIS

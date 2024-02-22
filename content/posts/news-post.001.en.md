@@ -4,7 +4,7 @@ date: 2024-01-23T11:10:36+08:00
 draft: false
 weight: 500
 language: en
-featured_image: ../assets/images/featured/contextus.png
+featured_image: "../assets/images/featured/produto_Contextus.png"
 summary: Contextus - An advanced AI, NLP, and ML platform for scientific analysis.
 description: Contextus - An advanced AI, NLP, and ML platform at the heart of Scientific Analysis, led by CEDIS.
 author: CEDIS
