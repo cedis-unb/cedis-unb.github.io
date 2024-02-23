@@ -14,6 +14,7 @@ tags:
 - gamification
 - learning
 - verification_validation_testing
+- software_quality
 - project_cc
 ---
 ## Perfil Acadêmico e Profissional

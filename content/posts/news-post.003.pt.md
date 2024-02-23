@@ -4,7 +4,7 @@ date: 2023-11-10T11:10:36+08:00
 draft: false
 weight: 500
 language: pt
-featured_image: "../assets/images/featured/acordoLabVista.png"
+featured_image: "../assets/images/featured/acordo_LabVista.png"
 summary: Acordo entre o CEDIS e o LabVista (Portugal) visa promover avanços significativos em pesquisas tecnológicas e acadêmicas. 
 description: Acordo entre instituições brasileira e portuguesa visa promover avanços significativos em pesquisas tecnológicas e acadêmicas. 
 author: CEDIS

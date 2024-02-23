@@ -13,6 +13,7 @@ categories:
 tags: 
 - digital_transformation
 - verification_validation_testing
+- software_quality
 ---
 ## Perfil Acadêmico e Profissional
 - Posição Atual: Professor da [Universidade de Brasília](https://www.unb.br/) (UnB), atuando no curso de graduação em [Engenharia de Software](http://software.unb.br/). 
