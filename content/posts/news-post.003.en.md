@@ -4,7 +4,7 @@ date: 2023-11-10T11:10:36+08:00
 draft: false
 weight: 500
 language: en
-featured_image: "../assets/images/featured/acordoLabVista.png"
+featured_image: "../assets/images/featured/acordo_LabVista.png"
 summary: The agreement between CEDIS and LabVista (Portugal) aims to promote significant advances in technological and academic research.
 author: CEDIS
 authorimage: ../assets/images/global/author.webp
