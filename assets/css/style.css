@@ -929,42 +929,42 @@ video {
 }
 
 .prose {
-  --tw-prose-body: #27272a;
-  --tw-prose-headings: #18181b;
-  --tw-prose-lead: #3f3f46;
-  --tw-prose-links: #18181b;
-  --tw-prose-bold: #18181b;
-  --tw-prose-counters: #52525b;
-  --tw-prose-bullets: #a1a1aa;
-  --tw-prose-hr: #d4d4d8;
-  --tw-prose-quotes: #18181b;
-  --tw-prose-quote-borders: #d4d4d8;
-  --tw-prose-captions: #3f3f46;
+  --tw-prose-body: #374151;
+  --tw-prose-headings: #07243C;
+  --tw-prose-lead: #1C9699;
+  --tw-prose-links: #51C5CF;
+  --tw-prose-bold: #0E4A5B;
+  --tw-prose-counters: #D57818;
+  --tw-prose-bullets: #C1260A;
+  --tw-prose-hr: #e5e7eb;
+  --tw-prose-quotes: #91410C;
+  --tw-prose-quote-borders: #6BD6DF;
+  --tw-prose-captions: #6b7280;
   --tw-prose-kbd: #111827;
   --tw-prose-kbd-shadows: 17 24 39;
-  --tw-prose-code: #6366f1;
-  --tw-prose-pre-code: #a5b4fc;
-  --tw-prose-pre-bg: #111827;
-  --tw-prose-th-borders: #d4d4d8;
-  --tw-prose-td-borders: #e4e4e7;
-  --tw-prose-invert-body: #e4e4e7;
+  --tw-prose-code: #E82C0C;
+  --tw-prose-pre-code: #9A1F08;
+  --tw-prose-pre-bg: #1f2937;
+  --tw-prose-th-borders: #d1d5db;
+  --tw-prose-td-borders: #e5e7eb;
+  --tw-prose-invert-body: #d1d5db;
   --tw-prose-invert-headings: #fff;
-  --tw-prose-invert-lead: #d4d4d8;
-  --tw-prose-invert-links: #818cf8;
+  --tw-prose-invert-lead: #9ca3af;
+  --tw-prose-invert-links: #9DE4EA;
   --tw-prose-invert-bold: #fff;
-  --tw-prose-invert-counters: #a1a1aa;
-  --tw-prose-invert-bullets: #e4e4e7;
-  --tw-prose-invert-hr: #71717a;
-  --tw-prose-invert-quotes: #f4f4f5;
-  --tw-prose-invert-quote-borders: #3f3f46;
-  --tw-prose-invert-captions: #a1a1aa;
+  --tw-prose-invert-counters: #F8C35B;
+  --tw-prose-invert-bullets: #F2120E;
+  --tw-prose-invert-hr: #374151;
+  --tw-prose-invert-quotes: #FDECD2;
+  --tw-prose-invert-quote-borders: #51C5CF;
+  --tw-prose-invert-captions: #9ca3af;
   --tw-prose-invert-kbd: #fff;
   --tw-prose-invert-kbd-shadows: 255 255 255;
-  --tw-prose-invert-code: #818cf8;
-  --tw-prose-invert-pre-code: #a5b4fc;
-  --tw-prose-invert-pre-bg: #111827;
-  --tw-prose-invert-th-borders: #f4f4f5;
-  --tw-prose-invert-td-borders: #71717a;
+  --tw-prose-invert-code: #F54E4A;
+  --tw-prose-invert-pre-code: #E82C0C;
+  --tw-prose-invert-pre-bg: rgb(0 0 0 / 50%);
+  --tw-prose-invert-th-borders: #4b5563;
+  --tw-prose-invert-td-borders: #374151;
   font-size: 1rem;
   line-height: 1.75;
 }
@@ -3020,7 +3020,7 @@ video {
 
 .border-primary-300 {
   --tw-border-opacity: 1;
-  border-color: rgb(28 150 153 / var(--tw-border-opacity));
+  border-color: rgb(107 214 223 / var(--tw-border-opacity));
 }
 
 .border-transparent {
@@ -3053,7 +3053,7 @@ video {
 
 .bg-primary-500 {
   --tw-bg-opacity: 1;
-  background-color: rgb(28 150 153 / var(--tw-bg-opacity));
+  background-color: rgb(81 197 207 / var(--tw-bg-opacity));
 }
 
 .bg-primary-600 {
@@ -3372,17 +3372,17 @@ video {
 
 .text-primary-100 {
   --tw-text-opacity: 1;
-  color: rgb(28 150 153 / var(--tw-text-opacity));
+  color: rgb(207 242 245 / var(--tw-text-opacity));
 }
 
 .text-primary-400 {
   --tw-text-opacity: 1;
-  color: rgb(28 150 153 / var(--tw-text-opacity));
+  color: rgb(57 200 212 / var(--tw-text-opacity));
 }
 
 .text-primary-500 {
   --tw-text-opacity: 1;
-  color: rgb(28 150 153 / var(--tw-text-opacity));
+  color: rgb(81 197 207 / var(--tw-text-opacity));
 }
 
 .text-primary-600 {
@@ -3392,7 +3392,7 @@ video {
 
 .text-primary-900 {
   --tw-text-opacity: 1;
-  color: rgb(28 150 153 / var(--tw-text-opacity));
+  color: rgb(7 36 60 / var(--tw-text-opacity));
 }
 
 .text-white {
@@ -3449,11 +3449,6 @@ video {
   --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-.shadow-neutral-100\/20 {
-  --tw-shadow-color: rgb(194 197 204 / 0.2);
-  --tw-shadow: var(--tw-shadow-colored);
 }
 
 .ring-4 {
@@ -4076,7 +4071,7 @@ EmojiSymbols;
 
 .hover\:bg-primary-200:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(28 150 153 / var(--tw-bg-opacity));
+  background-color: rgb(157 228 234 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-primary-600:hover {
@@ -4086,7 +4081,7 @@ EmojiSymbols;
 
 .hover\:bg-primary-800:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(28 150 153 / var(--tw-bg-opacity));
+  background-color: rgb(14 74 91 / var(--tw-bg-opacity));
 }
 
 .hover\:text-black:hover {
@@ -4124,7 +4119,7 @@ EmojiSymbols;
 
 .focus\:bg-primary-700:focus {
   --tw-bg-opacity: 1;
-  background-color: rgb(28 150 153 / var(--tw-bg-opacity));
+  background-color: rgb(20 112 122 / var(--tw-bg-opacity));
 }
 
 .focus\:text-white:focus {
@@ -4156,7 +4151,7 @@ EmojiSymbols;
 
 .focus\:ring-primary-300:focus {
   --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(28 150 153 / var(--tw-ring-opacity));
+  --tw-ring-color: rgb(107 214 223 / var(--tw-ring-opacity));
 }
 
 .focus\:ring-white:focus {
@@ -4169,7 +4164,7 @@ EmojiSymbols;
 }
 
 .focus\:ring-offset-primary-500:focus {
-  --tw-ring-offset-color: #1C9699;
+  --tw-ring-offset-color: #51C5CF;
 }
 
 .group:hover .group-hover\:bg-gray-900 {
@@ -4251,17 +4246,17 @@ EmojiSymbols;
 
 :is(.dark .dark\:text-primary-100) {
   --tw-text-opacity: 1;
-  color: rgb(28 150 153 / var(--tw-text-opacity));
+  color: rgb(207 242 245 / var(--tw-text-opacity));
 }
 
 :is(.dark .dark\:text-primary-300) {
   --tw-text-opacity: 1;
-  color: rgb(28 150 153 / var(--tw-text-opacity));
+  color: rgb(107 214 223 / var(--tw-text-opacity));
 }
 
 :is(.dark .dark\:text-primary-400) {
   --tw-text-opacity: 1;
-  color: rgb(28 150 153 / var(--tw-text-opacity));
+  color: rgb(57 200 212 / var(--tw-text-opacity));
 }
 
 :is(.dark .dark\:text-white) {
@@ -4272,11 +4267,6 @@ EmojiSymbols;
 :is(.dark .dark\:text-zinc-200) {
   --tw-text-opacity: 1;
   color: rgb(228 228 231 / var(--tw-text-opacity));
-}
-
-:is(.dark .dark\:shadow-neutral-800\/40) {
-  --tw-shadow-color: rgb(30 32 36 / 0.4);
-  --tw-shadow: var(--tw-shadow-colored);
 }
 
 :is(.dark .dark\:ring-gray-900\/40) {
@@ -4295,7 +4285,7 @@ EmojiSymbols;
 
 :is(.dark .dark\:hover\:text-primary-500:hover) {
   --tw-text-opacity: 1;
-  color: rgb(28 150 153 / var(--tw-text-opacity));
+  color: rgb(81 197 207 / var(--tw-text-opacity));
 }
 
 :is(.dark .dark\:focus\:ring-gray-700:focus) {
@@ -4305,7 +4295,7 @@ EmojiSymbols;
 
 :is(.dark .dark\:focus\:ring-primary-900:focus) {
   --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(28 150 153 / var(--tw-ring-opacity));
+  --tw-ring-color: rgb(7 36 60 / var(--tw-ring-opacity));
 }
 
 @media (min-width: 640px) {
