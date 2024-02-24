@@ -25,10 +25,7 @@ advisors:
   edna_canedo:
     name: "Andrea Cabello"
 
-#######################
-
 people:
-
   - name: Paulo Markes Rodrigues de Oliveira Calado
     categories:
       - people
@@ -271,6 +268,7 @@ people:
     tags:
       - inactive
       - learning
+      - machine_learning
     year: 2023
     url: http://repositorio2.unb.br/jspui/handle/10482/47829
 

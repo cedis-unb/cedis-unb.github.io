@@ -139,7 +139,7 @@ languages:
           weight: 10
         - identifier: prods
           pre: comments # can be stars, comments or piechart
-          name: Produtos
+          name: Produtos digitais e processos
           post: "Aplicativos, processos e outros"
           url: "/categories/products"
           weight: 20
@@ -305,7 +305,7 @@ languages:
           weight: 10
         - identifier: prods
           pre: comments # can be stars, comments or piechart
-          name: Products
+          name: Digital Products and Processes
           post: "Applications, Processes and others"
           url: "/categories/products"
           weight: 20
