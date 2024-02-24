@@ -38,20 +38,30 @@ tags:
 - Digital transformation of Brazilian government public services (2020-2023).
 - HASE - Human Aspects in Software Engineering (2016-Present).
 - These projects involve research and innovation in methodologies, models, and tools to improve digital public services and human aspects in software engineering.
-## Guidance
-### Actual
-{{< postsByCategoriesTags caput="#### PhD" categories="phd_candidate,george_marsicano" tags="" notags="inactive">}}
-{{< postsByCategoriesTags caput="#### Master's degree" categories="master_student,george_marsicano" tags="" notags="inactive">}}
-{{< postsByCategoriesTags caput="#### Postgraduate Specialization" categories="specialization,george_marsicano" tags="" notags="inactive">}}
-{{< postsByCategoriesTags caput="#### Undergraduate Research" categories="scientific_initiation,george_marsicano" tags="" notags="inactive">}}
-{{< postsByCategoriesTags caput="#### Bachelor's Thesis" categories="tcc,george_marsicano" tags="" notags="inactive">}}
 
-### Previous
-{{< postsByCategoriesTags caput="#### PhD" categories="phd_candidate,george_marsicano" tags="inactive" notags="">}}
-{{< postsByCategoriesTags caput="#### Master's degree" categories="master_student,george_marsicano" tags="inactive" notags="">}}
-{{< postsByCategoriesTags caput="#### Postgraduate Specialization" categories="specialization,george_marsicano" tags="inactive" notags="">}}
-{{< postsByCategoriesTags caput="#### Undergraduate Research" categories="scientific_initiation,george_marsicano" tags="inactive" notags="">}}
-{{< postsByCategoriesTags caput="#### Bachelor's Thesis" categories="tcc,george_marsicano" tags="inactive" notags="">}}
+## Supervisory Experience
+### Current Supervisions
+{{< filterPeople caput="#### PhD" categories="phd_candidate" advisors="george_marsicano" tags="" notags="inactive">}}
+{{< filterPeople caput="#### Master's degree" categories="master_student" advisors="george_marsicano" tags="" notags="inactive">}}
+{{< filterPeople caput="#### Postgraduate Specialization" categories="specialization" advisors="george_marsicano" tags="" notags="inactive">}}
+{{< filterPeople caput="#### Undergraduate Research" categories="scientific_initiation" advisors="george_marsicano" tags="" notags="inactive">}}
+{{< filterPeople caput="#### Bachelor's Thesis" categories="tcc" advisors="george_marsicano" tags="" notags="inactive">}}
+
+<div id="previous-collaborators" x-data="{ showPrevious: false }">
+    <h2 id="former-collaborators-title" @click="showPrevious = !showPrevious" class="text-xl font-bold mb-2 cursor-pointer flex items-center text-primary-900">
+      Former Supervisions
+      <svg :class="{'rotate-0': !showPrevious, 'rotate-180': showPrevious}" class="ml-2 h-5 w-5 transform transition-transform duration-200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#51C5CF"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
+    </h2>
+    <div x-show="showPrevious" x-cloak>
+{{< filterPeople caput="#### PhD" categories="phd_candidate" advisors="george_marsicano" tags="inactive" notags="">}}
+{{< filterPeople caput="#### Master's degree" categories="master_student" advisors="george_marsicano" tags="inactive" notags="">}}
+{{< filterPeople caput="#### Postgraduate Specialization" categories="specialization" advisors="george_marsicano" tags="inactive" notags="">}}
+{{< filterPeople caput="#### Undergraduate Research" categories="scientific_initiation" advisors="george_marsicano" tags="inactive" notags="">}}
+{{< filterPeople caput="#### Bachelor's Thesis" categories="tcc" advisors="george_marsicano" tags="inactive" notags="">}}
+    </div>
+  </div>
+
+
 ## Specific Areas of Expertise
 - Specialties: Software Engineering, Project Management, Requirements Engineering, Ontological Coaching.
 ## Highlighted Publications

@@ -140,22 +140,6 @@ people:
     url: "https://www.bdm.unb.br/handle/10483/14871"
     year: 2016
 
-  - name: Arthur Rocha Temporim de Lacerda
-    categories:
-      - people
-      - master_student
-    title:
-      pt: Método estruturado para criar chatbots gamificados
-      en: Structured Method for Creating Gamified Chatbots
-    program: ppca
-    advisors:
-      - sergio_freitas
-    tags:
-      - active
-      - gamification
-      - software_architecture
-    year: 2022
-
   - name: Dione Ramos Canuto Moura
     categories:
       - people

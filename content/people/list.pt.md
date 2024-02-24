@@ -8,14 +8,14 @@ language: pt
 <div class="space-y-4">
   <!-- Seção de Colaboradores Atuais -->
   <div>
-    <h2 class="text-xl font-bold mb-2 text-primary-900">Colaboradores Atuais</h2>
+    <h2 class="text-xxl font-bold mb-2 text-primary-900">Colaboradores Atuais</h2>
     <p class="mb-4 text-neutral-700">Conheça a equipe que está contribuindo ativamente para nossos projetos e pesquisas.</p>
     <div>
-      {{< teste caput="## Doutorado" categories="phd_candidate" tags="" notags="inactive" >}}
-      {{< teste caput="## Mestrado" categories="master_student" tags="" notags="inactive" >}}
-      {{< teste caput="## Especialização Pós-Graduada" categories="specialization" tags="" notags="inactive" >}}
-      {{< teste caput="## Pesquisa de Graduação" categories="scientific_initiation" tags="" notags="inactive" >}}
-      {{< teste caput="## Trabalho de Conclusão de Curso" categories="tcc" tags="" notags="inactive" >}}
+      {{< filterPeople caput="### Doutorado" categories="phd_candidate" tags="" notags="inactive" >}}
+      {{< filterPeople caput="### Mestrado" categories="master_student" tags="" notags="inactive" >}}
+      {{< filterPeople caput="### Especialização Pós-Graduada" categories="specialization" tags="" notags="inactive" >}}
+      {{< filterPeople caput="### Iniciação Científica" categories="scientific_initiation" tags="" notags="inactive" >}}
+      {{< filterPeople caput="### Trabalho de Conclusão de Curso" categories="tcc" tags="" notags="inactive" >}}
     </div>
   </div>
   <div id="formers-section"></div>
@@ -27,11 +27,11 @@ language: pt
     </h2>
     <p x-show="showPrevious" x-cloak class="mb-4 text-neutral-700">Estes são os colaboradores que contribuíram para o nosso sucesso no passado. Somos gratos por seu esforço e dedicação.</p>
     <div x-show="showPrevious" x-cloak>
-      {{< teste caput="## Doutorado" categories="phd_candidate" tags="inactive" notags="" >}}
-      {{< teste caput="## Mestrado" categories="master_student" tags="inactive" notags="" >}}
-      {{< teste caput="## Especialização Pós-Graduada" categories="specialization" tags="inactive" notags="" >}}
-      {{< teste caput="## Pesquisa de Graduação" categories="scientific_initiation" tags="inactive" notags="" >}}
-      {{< teste caput="## Trabalho de Conclusão de Curso" categories="tcc" tags="inactive" notags="" >}}
+      {{< filterPeople caput="### Doutorado" categories="phd_candidate" tags="inactive" notags="" >}}
+      {{< filterPeople caput="### Mestrado" categories="master_student" tags="inactive" notags="" >}}
+      {{< filterPeople caput="### Especialização Pós-Graduada" categories="specialization" tags="inactive" notags="" >}}
+      {{< filterPeople caput="### Iniciação Científica" categories="scientific_initiation" tags="inactive" notags="" >}}
+      {{< filterPeople caput="### Trabalho de Conclusão de Curso" categories="tcc" tags="inactive" notags="" >}}
     </div>
   </div>
 </div>

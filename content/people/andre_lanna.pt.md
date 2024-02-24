@@ -30,20 +30,29 @@ tags:
 ## Projetos de Pesquisa
 {{< postsByCategoriesTags categories="project,andre_lanna" >}}
 - Laboratório Fábrica de Software: Projeto de pesquisa e desenvolvimento iniciado em 2018 na Universidade de Brasília.
-## Orientações
-### Atuais
-{{< postsByCategoriesTags caput="#### PhD" categories="phd_candidate,andre_lanna" tags="" notags="inactive">}}
-{{< postsByCategoriesTags caput="#### Mestrado" categories="master_student,andre_lanna" tags="" notags="inactive">}}
-{{< postsByCategoriesTags caput="#### Especializaçào" categories="specialization,andre_lanna" tags="" notags="inactive">}}
-{{< postsByCategoriesTags caput="#### Iniciação Científica" categories="scientific_initiation,andre_lanna" tags="" notags="inactive">}}
-{{< postsByCategoriesTags caput="#### TCC" categories="tcc,andre_lanna" tags="" notags="inactive">}}
 
-### Anteriores
-{{< postsByCategoriesTags caput="#### PhD" categories="phd_candidate,andre_lanna" tags="inactive" notags="">}}
-{{< postsByCategoriesTags caput="#### Mestrado" categories="master_student,andre_lanna" tags="inactive" notags="">}}
-{{< postsByCategoriesTags caput="#### Especializaçào" categories="specialization,andre_lanna" tags="inactive" notags="">}}
-{{< postsByCategoriesTags caput="#### Iniciação Científica" categories="scientific_initiation,andre_lanna" tags="inactive" notags="">}}
-{{< postsByCategoriesTags caput="#### TCC" categories="tcc,andre_lanna" tags="inactive" notags="">}}
+## Experiência em orientação
+### Orientações atuais
+{{< filterPeople caput="#### Doutorado" categories="phd_candidate" advisors="andre_lanna" tags="" notags="inactive">}}
+{{< filterPeople caput="#### Mestrado" categories="master_student" advisors="andre_lanna" tags="" notags="inactive">}}
+{{< filterPeople caput="#### Especialização Pós-Graduação" categories="specialization" advisors="andre_lanna" tags="" notags="inactive">}}
+{{< filterPeople caput="#### Iniciação Científica" categories="scientific_initiation" advisors="andre_lanna" tags="" notags="inactive">}}
+{{< filterPeople caput="#### Trabalho de Conclusão de Curso (TCC)" categories="tcc" advisors="andre_lanna" tags="" notags="inactive">}}
+<div id="previous-collaborators" x-data="{ showPrevious: false }">
+    <h2 id="former-collaborators-title" @click="showPrevious = !showPrevious" class="text-xl font-bold mb-2 cursor-pointer flex items-center text-primary-900">
+      Orientações anteriores
+      <svg :class="{'rotate-0': !showPrevious, 'rotate-180': showPrevious}" class="ml-2 h-5 w-5 transform transition-transform duration-200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#51C5CF"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
+    </h2>
+    <div x-show="showPrevious" x-cloak>
+{{< filterPeople caput="#### Doutorado" categories="phd_candidate" advisors="andre_lanna" tags="inactive" notags="">}}
+{{< filterPeople caput="#### Mestrado" categories="master_student" advisors="andre_lanna" tags="inactive" notags="">}}
+{{< filterPeople caput="#### Especialização Pós-Graduação" categories="specialization" advisors="andre_lanna" tags="inactive" notags="">}}
+{{< filterPeople caput="#### Iniciação Científica" categories="scientific_initiation" advisors="andre_lanna" tags="inactive" notags="">}}
+{{< filterPeople caput="#### Trabalho de Conclusão de Curso (TCC)" categories="tcc" advisors="andre_lanna" tags="inactive" notags="">}}
+    </div>
+  </div>
+
+
 ## Áreas de Atuação Específicas
 - Especialidades: Engenharia de Software, Linguagens de Programação, Sistemas de Informação​​.
 ## Prêmios e Reconhecimentos

@@ -11,6 +11,7 @@ authorimage: ../assets/images/global/author.webp
 categories: 
 - people
 - master_student
+advisors:
 - sergio_freitas
 tags: 
 - gamification

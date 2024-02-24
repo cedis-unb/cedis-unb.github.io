@@ -41,20 +41,28 @@ tags:
 ## Current Projects
 {{< postsByCategoriesTags categories="project,sergio_freitas" >}}
 
-## Guidance
-### Actual
-{{< postsByCategoriesTags caput="#### PhD" categories="phd_candidate,sergio_freitas" tags="" notags="inactive">}}
-{{< postsByCategoriesTags caput="#### Master's degree" categories="master_student,sergio_freitas" tags="" notags="inactive">}}
-{{< postsByCategoriesTags caput="#### Postgraduate Specialization" categories="specialization,sergio_freitas" tags="" notags="inactive">}}
-{{< postsByCategoriesTags caput="#### Undergraduate Research" categories="scientific_initiation,sergio_freitas" tags="" notags="inactive">}}
-{{< postsByCategoriesTags caput="#### Bachelor's Thesis" categories="tcc,sergio_freitas" tags="" notags="inactive">}}
+## Supervisory Experience
+### Current Supervisions
+{{< filterPeople caput="#### PhD" categories="phd_candidate" advisors="sergio_freitas" tags="" notags="inactive">}}
+{{< filterPeople caput="#### Master's degree" categories="master_student" advisors="sergio_freitas" tags="" notags="inactive">}}
+{{< filterPeople caput="#### Postgraduate Specialization" categories="specialization" advisors="sergio_freitas" tags="" notags="inactive">}}
+{{< filterPeople caput="#### Undergraduate Research" categories="scientific_initiation" advisors="sergio_freitas" tags="" notags="inactive">}}
+{{< filterPeople caput="#### Bachelor's Thesis" categories="tcc" advisors="sergio_freitas" tags="" notags="inactive">}}
 
-### Previous
-{{< postsByCategoriesTags caput="#### PhD" categories="phd_candidate,sergio_freitas" tags="inactive" notags="">}}
-{{< postsByCategoriesTags caput="#### Master's degree" categories="master_student,sergio_freitas" tags="inactive" notags="">}}
-{{< postsByCategoriesTags caput="#### Postgraduate Specialization" categories="specialization,sergio_freitas" tags="inactive" notags="">}}
-{{< postsByCategoriesTags caput="#### Undergraduate Research" categories="scientific_initiation,sergio_freitas" tags="inactive" notags="">}}
-{{< postsByCategoriesTags caput="#### Bachelor's Thesis" categories="tcc,sergio_freitas" tags="inactive" notags="">}}
+<div id="previous-collaborators" x-data="{ showPrevious: false }">
+    <h2 id="former-collaborators-title" @click="showPrevious = !showPrevious" class="text-xl font-bold mb-2 cursor-pointer flex items-center text-primary-900">
+      Former Supervisions
+      <svg :class="{'rotate-0': !showPrevious, 'rotate-180': showPrevious}" class="ml-2 h-5 w-5 transform transition-transform duration-200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#51C5CF"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
+    </h2>
+    <div x-show="showPrevious" x-cloak>
+{{< filterPeople caput="#### PhD" categories="phd_candidate" advisors="sergio_freitas" tags="inactive" notags="">}}
+{{< filterPeople caput="#### Master's degree" categories="master_student" advisors="sergio_freitas" tags="inactive" notags="">}}
+{{< filterPeople caput="#### Postgraduate Specialization" categories="specialization" advisors="sergio_freitas" tags="inactive" notags="">}}
+{{< filterPeople caput="#### Undergraduate Research" categories="scientific_initiation" advisors="sergio_freitas" tags="inactive" notags="">}}
+{{< filterPeople caput="#### Bachelor's Thesis" categories="tcc" advisors="sergio_freitas" tags="inactive" notags="">}}
+    </div>
+  </div>
+
 
 ## Contact
 - Professional Address:  

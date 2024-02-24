@@ -10,6 +10,7 @@ categories:
 - people
 - undergraduate
 - scientific_initiation
+advisors:
 - sergio_freitas
 tags: 
 - dfcris
