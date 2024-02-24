@@ -13,6 +13,7 @@ categories:
 tags: 
 - digital_transformation
 - software_requirements
+- software_architecture
 - project_td
 ---
 ## Perfil Acadêmico e Profissional

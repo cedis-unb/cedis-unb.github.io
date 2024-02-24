@@ -1,0 +1,114 @@
+<div>
+  {{ $caput := .Get "caput" }}
+  {{ if $caput }}
+      <div class="caput-content">
+          {{ $caput | markdownify }}
+      </div>
+  {{ end }}
+
+  <ul>
+    {{ $filterTags := delimit (split (.Get "tags") ",") "," }}
+    {{ $filterCategories := delimit (split (.Get "categories") ",") "," }}
+    {{ $filterAdvisors := delimit (split (.Get "advisors") ",") "," }}
+    {{ $excludeTags := delimit (split (.Get "notags") ",") "," }}
+
+    {{ range sort $.Site.Data.people.people "year" "desc" }}
+      {{ $include := true }}
+      {{ $person := . }}
+
+      <!-- Lógica de filtragem para tags -->
+      {{ if and $include (gt (len $filterTags) 0) }}
+        {{ $tagMatch := false }}
+        {{ range $tags := split $filterTags "," }}
+          {{ if in $person.tags $tags }}
+            {{ $tagMatch = true }}
+            {{ break }}
+          {{ end }}
+        {{ end }}
+        {{ if not $tagMatch }}
+          {{ $include = false }}
+        {{ end }}
+      {{ end }}
+
+      <!-- Lógica de filtragem para categories -->
+      {{ if and $include (gt (len $filterCategories) 0) }}
+        {{ $categoryMatch := false }}
+        {{ range $categories := split $filterCategories "," }}
+          {{ if in $person.categories $categories }}
+            {{ $categoryMatch = true }}
+            {{ break }}
+          {{ end }}
+        {{ end }}
+        {{ if not $categoryMatch }}
+          {{ $include = false }}
+        {{ end }}
+      {{ end }}
+
+      <!-- Lógica de filtragem para advisors -->
+      {{ if and $include (gt (len $filterAdvisors) 0) }}
+        {{ $advisorMatch := false }}
+        {{ range $advisors := split $filterAdvisors "," }}
+          {{ if in $person.advisors $advisors }}
+            {{ $advisorMatch = true }}
+            {{ break }}
+          {{ end }}
+        {{ end }}
+        {{ if not $advisorMatch }}
+          {{ $include = false }}
+        {{ end }}
+      {{ end }}
+
+      <!-- Lógica de filtragem para exclude tags -->
+      {{ if and $include (gt (len $excludeTags) 0) }}
+        {{ range $exTags := split $excludeTags "," }}
+          {{ if in $person.tags $exTags }}
+            {{ $include = false }}
+            {{ break }}
+          {{ end }}
+        {{ end }}
+      {{ end }}
+
+      {{ if $include }}
+        <li x-data="{ open: false }">
+          <span><strong>{{ .name }}</strong></span>.
+          <span>
+            {{ if .url }}<a href="{{ .url }}">{{ end }}
+              {{ index .title $.Site.Language.Lang }}
+            {{ if .url }}</a>{{ end }}
+          </span>
+          {{ if .program }}<span>{{ .program | i18n }}</span>{{ end }}
+          {{ if .year }} ({{ .year }}).{{ end }}
+
+          {{ i18n "orientador" }}:
+          {{ range .advisors }}
+            {{ with index $.Site.Data.people.advisors . }}
+              <a href="{{ .link | absLangURL }}">{{ .name }}</a>
+            {{ end }}
+          {{ end }}
+
+          . Tags:
+          {{ range .tags }}
+            {{ if and (ne . "active") (ne . "inactive") }}
+              {{ $tagLink := printf "/tags/%s" . | absLangURL }}
+              <span><a href="{{ $tagLink }}">{{ . | i18n }}</a></span>
+            {{ end }}
+          {{ end }}.
+
+          {{ if .summary }}
+            {{ $currentLangSummary := index .summary $.Site.Language.Lang }}
+            {{ if $currentLangSummary }}
+              <div>
+                <button @click="open = !open" class="bg-blue-500 text-white p-2 rounded cursor-pointer">
+                  {{ i18n "abstract" }}
+                </button>
+                <div x-show="open" class="mt-2 pl-4 font-serif" x-cloak>
+                  <span class="text-gray-600 text-sm">{{ $currentLangSummary }}</span>
+                </div>
+              </div>
+            {{ end }}
+          {{ end }}
+        </li>
+        {{ end }}
+      {{ end }}
+    </ul>
+  </div>

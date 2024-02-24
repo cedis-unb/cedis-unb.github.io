@@ -10,6 +10,7 @@ authorimage: ../assets/images/global/author.webp
 categories:
 - knowledge_areas
 - andre_lanna
+- george_marsicano
 tags: 
 - software_architecture
 ---

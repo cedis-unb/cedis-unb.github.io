@@ -1,13 +1,14 @@
-{{ $tagsInput := .Get "tags" }}
-{{ $categoriesInput := .Get "categories" }}
-{{ $notagsInput := .Get "notags" }}  <!-- Novo parâmetro para 'não tags' -->
-{{ $tags := split $tagsInput "," }}
-{{ $categories := split $categoriesInput "," }}
-{{ $notags := split $notagsInput "," }}  <!-- Lista de 'não tags' -->
+{{ $filterTags := .Get "tags" }}
+{{ $filterCategories := .Get "categories" }}
+{{ $excludeTags := .Get "notags" }}  <!-- Novo parâmetro para 'não tags' -->
 {{ $caput := .Get "caput" | markdownify }}
-
 {{ $showSummary := .Get "showSummary" | default true }}
 {{ $showDescription := .Get "showDescription" | default true }}
+
+{{ $tags := split $filterTags "," }}
+{{ $categories := split $filterCategories "," }}
+{{ $notags := split $excludeTags "," }}  <!-- Lista de 'não tags' -->
+
 
 {{ $hasMatches := false }}
 {{ range sort $.Site.RegularPages "Title" }}
@@ -15,7 +16,7 @@
   {{ $match := true }}
   
   <!-- Verificação de Tags -->
-  {{ if and $tagsInput (ne $tagsInput "") }}
+  {{ if and $filterTags (ne $filterTags "") }}
     {{ $tagsMatch := true }}
     {{ range $tags }}
       {{ $currentTag := trim . " " }}
@@ -30,7 +31,7 @@
   {{ end }}
 
   <!-- Verificação de Categorias -->
-  {{ if and $categoriesInput (ne $categoriesInput "") }}
+  {{ if and $filterCategories (ne $filterCategories "") }}
     {{ $categoriesMatch := true }}
     {{ range $categories }}
       {{ $currentCategory := trim . " " }}
@@ -45,7 +46,7 @@
   {{ end }}
 
   <!-- Verificação de 'Não Tags' -->
-  {{ if and $notagsInput (ne $notagsInput "") }}
+  {{ if and $excludeTags (ne $excludeTags "") }}
     {{ range $notags }}
       {{ $currentNoTag := trim . " " }}
       {{ if in $thisPage.Params.tags $currentNoTag }}
@@ -72,7 +73,7 @@
 
       <!-- Repetir lógica de filtragem para gerar a lista -->
       <!-- Tags, Categorias, e 'Não Tags' -->
-      {{ if and $tagsInput (ne $tagsInput "") }}
+      {{ if and $filterTags (ne $filterTags "") }}
         {{ $tagsMatch := true }}
         {{ range $tags }}
           {{ $currentTag := trim . " " }}
@@ -86,7 +87,7 @@
         {{ end }}
       {{ end }}
 
-      {{ if and $categoriesInput (ne $categoriesInput "") }}
+      {{ if and $filterCategories (ne $filterCategories "") }}
         {{ $categoriesMatch := true }}
         {{ range $categories }}
           {{ $currentCategory := trim . " " }}
@@ -100,7 +101,7 @@
         {{ end }}
       {{ end }}
 
-      {{ if and $notagsInput (ne $notagsInput "") }}
+      {{ if and $excludeTags (ne $excludeTags "") }}
         {{ range $notags }}
           {{ $currentNoTag := trim . " " }}
           {{ if in $thisPage.Params.tags $currentNoTag }}

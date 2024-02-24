@@ -1,0 +1,292 @@
+{{ $caput := .Get "caput" }}
+{{ $showSummary := .Get "showSummary" | default true }}
+{{ $showDescription := .Get "showDescription" | default true }}
+{{ $filterTags := split (.Get "tags") "," }}
+{{ $filterCategories := split (.Get "categories") "," }}
+{{ $excludeTags := split (.Get "notags") "," }} 
+{{ $filterAdvisors := split (.Get "advisors") "," }}
+
+{{ $hasMatches := false }}
+{{ range sort $.Site.Data.people.people "year" "desc" }}
+  {{ $include := true }}
+  {{ $person := . }}
+
+  
+  <!-- Lógica de filtragem para tags -->
+  {{ if and $include (gt (len $filterTags) 0) (ne (index $filterTags 0) "") }}
+    {{ $tagMatch := false }}
+    {{ range $filterTags }}
+      {{ if in $person.tags . }}
+        {{ $tagMatch = true }}
+        {{ break }}
+      {{ end }}
+    {{ end }}
+    {{ if not $tagMatch }}
+      {{ $include = false }}
+    {{ end }}
+  {{ end }}
+
+  <!-- Lógica de filtragem para categories -->
+  {{ if and $include (gt (len $filterCategories) 0) (ne (index $filterCategories 0) "") }}
+    {{ $categoryMatch := false }}
+    {{ range $filterCategories }}
+      {{ if in $person.categories . }}
+        {{ $categoryMatch = true }}
+        {{ break }}
+      {{ end }}
+    {{ end }}
+    {{ if not $categoryMatch }}
+      {{ $include = false }}
+    {{ end }}
+  {{ end }}
+
+  <!-- Lógica de filtragem para exclude tags -->
+  {{ if and $include (gt (len $excludeTags) 0) (ne (index $excludeTags 0) "") }}
+    {{ range $excludeTags }}
+      {{ if in $person.tags . }}
+        {{ $include = false }}
+        {{ break }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+
+  <!-- Lógica de filtragem para advisors -->
+  {{ if and $include (gt (len $filterAdvisors) 0) (ne (index $filterAdvisors 0) "") }}
+    {{ $advisorMatch := false }}
+    {{ range $filterAdvisors }}
+      {{ if in $person.advisors . }}
+        {{ $advisorMatch = true }}
+        {{ break }}
+      {{ end }}
+    {{ end }}
+    {{ if not $advisorMatch }}
+      {{ $include = false }}
+    {{ end }}
+  {{ end }}
+
+  {{ if $include }}
+    {{ $hasMatches = true }}
+    {{ break }}
+  {{ end }}
+{{ end }}
+
+<div>
+    {{ if $hasMatches }}
+      {{ if $caput }}
+        <div class="caput-content">
+            {{ $caput | markdownify }}
+        </div>
+      {{ end }}
+      <ul>
+        {{ range sort $.Site.Data.people.people "year" "desc" }}
+          {{ $include := true }}
+          {{ $person := . }}
+
+  <!-- Lógica de filtragem para tags -->
+  {{ if and $include (gt (len $filterTags) 0) (ne (index $filterTags 0) "") }}
+    {{ $tagMatch := false }}
+    {{ range $filterTags }}
+      {{ if in $person.tags . }}
+        {{ $tagMatch = true }}
+        {{ break }}
+      {{ end }}
+    {{ end }}
+    {{ if not $tagMatch }}
+      {{ $include = false }}
+    {{ end }}
+  {{ end }}
+
+  <!-- Lógica de filtragem para categories -->
+  {{ if and $include (gt (len $filterCategories) 0) (ne (index $filterCategories 0) "") }}
+    {{ $categoryMatch := false }}
+    {{ range $filterCategories }}
+      {{ if in $person.categories . }}
+        {{ $categoryMatch = true }}
+        {{ break }}
+      {{ end }}
+    {{ end }}
+    {{ if not $categoryMatch }}
+      {{ $include = false }}
+    {{ end }}
+  {{ end }}
+
+  <!-- Lógica de filtragem para exclude tags -->
+  {{ if and $include (gt (len $excludeTags) 0) (ne (index $excludeTags 0) "") }}
+    {{ range $excludeTags }}
+      {{ if in $person.tags . }}
+        {{ $include = false }}
+        {{ break }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+
+  <!-- Lógica de filtragem para advisors -->
+  {{ if and $include (gt (len $filterAdvisors) 0) (ne (index $filterAdvisors 0) "") }}
+    {{ $advisorMatch := false }}
+    {{ range $filterAdvisors }}
+      {{ if in $person.advisors . }}
+        {{ $advisorMatch = true }}
+        {{ break }}
+      {{ end }}
+    {{ end }}
+    {{ if not $advisorMatch }}
+      {{ $include = false }}
+    {{ end }}
+  {{ end }}
+
+  {{ if $include }}
+  <li x-data="{ open: false }">
+    <span><strong>{{ $person.name }}</strong></span>.
+    <span>
+        {{ if .url }}<a href="{{ .url }}">{{ end }}
+          {{ index .title $.Site.Language.Lang }}
+        {{ if .url }}</a>{{ end }}.</span>
+            {{ if $person.program }}<span>{{ $person.program | i18n }},</span>{{ end }}
+            {{ if $person.year }}<span>({{ $person.year }}).</span>{{ end }}
+
+            <!-- Exibição de advisors, tags, e o resumo com controle do Alpine.js -->
+            {{ i18n "orientador" }}:
+            {{ range .advisors }}
+              {{ with index $.Site.Data.people.advisors . }}
+                <a href="{{ .link | absLangURL }}">{{ .name }}</a>
+              {{ end }}
+            {{ end }}
+            . Tags:
+            {{ range .tags }}
+              {{ if and (ne . "active") (ne . "inactive") }}
+                {{ $tagLink := printf "/tags/%s" . | absLangURL }}
+                <span><a href="{{ $tagLink }}">{{ . | i18n }}</a></span>
+              {{ end }}
+            {{ end }}.
+
+            {{ if $person.summary }}
+              <button @click="open = !open" class="bg-blue-500 text-white p-2 rounded cursor-pointer">
+                {{ i18n "abstract" }}
+              </button>
+              <div x-show="open" class="mt-2 pl-4 font-serif" x-cloak>
+                <span class="text-gray-600 text-sm">{{ $person.summary }}</span>
+              </div>
+            {{ end }}
+        </li>
+        {{ end }}
+      {{ end }}
+    </ul>
+  {{ end }}
+</div>
+
+
+{{ $hasMatches2 := false }}
+{{ range sort $.Site.RegularPages "Title" }}
+    {{ $thisPage := . }}
+    {{ $match := true }}
+    
+    <!-- Verificação de Tags -->
+    {{ if and $filterTags (ne $filterTags "") }}
+    {{ $tagsMatch := true }}
+    {{ range $filterTags }}
+        {{ $currentTag := trim . " " }}
+        {{ if not (in $thisPage.Params.tags $currentTag) }}
+        {{ $tagsMatch = false }}
+        {{ break }}
+        {{ end }}
+    {{ end }}
+    {{ if not $tagsMatch }}
+        {{ $match = false }}
+    {{ end }}
+    {{ end }}
+
+    <!-- Verificação de Categorias -->
+    {{ if and $filterCategories (ne $filterCategories "") }}
+    {{ $categoriesMatch := true }}
+    {{ range $filterCategories }}
+        {{ $currentCategory := trim . " " }}
+        {{ if not (in $thisPage.Params.categories $currentCategory) }}
+        {{ $categoriesMatch = false }}
+        {{ break }}
+        {{ end }}
+    {{ end }}
+    {{ if not $categoriesMatch }}
+        {{ $match = false }}
+    {{ end }}
+    {{ end }}
+
+    <!-- Verificação de 'Não Tags' -->
+    {{ if and $excludeTags (ne $excludeTags "") }}
+    {{ range $excludeTags }}
+        {{ $currentNoTag := trim . " " }}
+        {{ if in $thisPage.Params.tags $currentNoTag }}
+        {{ $match = false }}
+        {{ break }}
+        {{ end }}
+    {{ end }}
+    {{ end }}
+
+    {{ if $match }}
+    {{ $hasMatches2 = true }}
+    {{ break }}
+    {{ end }}
+{{ end }}
+
+{{ if $hasMatches2  }}
+    {{ if and $caput (not $hasMatches) }}
+    <div class="caput">{{ $caput | markdownify }}</div>
+    {{ end }}
+    <ul>
+    {{ range sort $.Site.RegularPages "Title" }}
+        {{ $thisPage := . }}
+        {{ $match := true }}
+
+        <!-- Repetir lógica de filtragem para gerar a lista -->
+        <!-- Tags, Categorias, e 'Não Tags' -->
+        {{ if and $filterTags (ne $filterTags "") }}
+        {{ $tagsMatch := true }}
+        {{ range $filterTags }}
+            {{ $currentTag := trim . " " }}
+            {{ if not (in $thisPage.Params.tags $currentTag) }}
+            {{ $tagsMatch = false }}
+            {{ break }}
+            {{ end }}
+        {{ end }}
+        {{ if not $tagsMatch }}
+            {{ $match = false }}
+        {{ end }}
+        {{ end }}
+
+        {{ if and $filterCategories (ne $filterCategories "") }}
+        {{ $categoriesMatch := true }}
+        {{ range $filterCategories }}
+            {{ $currentCategory := trim . " " }}
+            {{ if not (in $thisPage.Params.categories $currentCategory) }}
+            {{ $categoriesMatch = false }}
+            {{ break }}
+            {{ end }}
+        {{ end }}
+        {{ if not $categoriesMatch }}
+            {{ $match = false }}
+        {{ end }}
+        {{ end }}
+
+        {{ if and $excludeTags (ne $excludeTags "") }}
+        {{ range $excludeTags }}
+            {{ $currentNoTag := trim . " " }}
+            {{ if in $thisPage.Params.tags $currentNoTag }}
+            {{ $match = false }}
+            {{ break }}
+            {{ end }}
+        {{ end }}
+        {{ end }}
+
+        {{ if $match }}
+        <li>
+            <span><strong><a href="{{ $thisPage.Permalink }}">{{ $thisPage.Title }}</a></strong></span>
+            {{ if and $showSummary $thisPage.Summary }}
+            <span> - {{ $thisPage.Summary }}</span>
+            {{ end }}
+            {{ if and $showDescription (isset $thisPage.Params "description") }}
+            <span> {{ $thisPage.Params.description }}</span>
+            {{ end }}
+        </li>
+        {{ end }}
+    {{ end }}
+    </ul>
+{{ end }}

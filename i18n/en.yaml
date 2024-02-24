@@ -8,8 +8,9 @@ first: "First"
 last: "Last"
 read: "read"
 News: "News"
-esw: "Undergraduate Course in Software Engineering"
-ppca: ""
+abstract: "Abstract"
+esw: "Undergraduate Course in Software Engineering, FGA/UnB"
+ppca: "Postgraduate Program in Applied Computing, UnB"
 
 # TAGS
 # Knowledge Areas
