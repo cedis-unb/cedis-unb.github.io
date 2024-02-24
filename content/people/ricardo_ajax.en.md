@@ -31,20 +31,30 @@ tags:
 - Development and Innovation for Public Service Automation within the scope of Service Transformation (2017-2020).
 - Research Project on Productive Capacity Sizing - Mathematical Modeling, Ministry of Planning (2017-2019).
 - Research and Development of the Individual Performance Management Model of the National Supply Company - CONAB (2016-2017).
-## Guidance
-### Actual
-{{< postsByCategoriesTags caput="#### PhD" categories="phd_candidate,ricardo_ajax" tags="" notags="inactive">}}
-{{< postsByCategoriesTags caput="#### Master's degree" categories="master_student,ricardo_ajax" tags="" notags="inactive">}}
-{{< postsByCategoriesTags caput="#### Postgraduate Specialization" categories="specialization,ricardo_ajax" tags="" notags="inactive">}}
-{{< postsByCategoriesTags caput="#### Undergraduate Research" categories="scientific_initiation,ricardo_ajax" tags="" notags="inactive">}}
-{{< postsByCategoriesTags caput="#### Bachelor's Thesis" categories="tcc,ricardo_ajax" tags="" notags="inactive">}}
 
-### Previous
-{{< postsByCategoriesTags caput="#### PhD" categories="phd_candidate,ricardo_ajax" tags="inactive" notags="">}}
-{{< postsByCategoriesTags caput="#### Master's degree" categories="master_student,ricardo_ajax" tags="inactive" notags="">}}
-{{< postsByCategoriesTags caput="#### Postgraduate Specialization" categories="specialization,ricardo_ajax" tags="inactive" notags="">}}
-{{< postsByCategoriesTags caput="#### Undergraduate Research" categories="scientific_initiation,ricardo_ajax" tags="inactive" notags="">}}
-{{< postsByCategoriesTags caput="#### Bachelor's Thesis" categories="tcc,ricardo_ajax" tags="inactive" notags="">}}
+## Supervisory Experience
+### Current Supervisions
+{{< filterPeople caput="#### PhD" categories="phd_candidate" advisors="ricardo_ajax" tags="" notags="inactive">}}
+{{< filterPeople caput="#### Master's degree" categories="master_student" advisors="ricardo_ajax" tags="" notags="inactive">}}
+{{< filterPeople caput="#### Postgraduate Specialization" categories="specialization" advisors="ricardo_ajax" tags="" notags="inactive">}}
+{{< filterPeople caput="#### Undergraduate Research" categories="scientific_initiation" advisors="ricardo_ajax" tags="" notags="inactive">}}
+{{< filterPeople caput="#### Bachelor's Thesis" categories="tcc" advisors="ricardo_ajax" tags="" notags="inactive">}}
+
+<div id="previous-collaborators" x-data="{ showPrevious: false }">
+    <h2 id="former-collaborators-title" @click="showPrevious = !showPrevious" class="text-xl font-bold mb-2 cursor-pointer flex items-center text-primary-900">
+      Former Supervisions
+      <svg :class="{'rotate-0': !showPrevious, 'rotate-180': showPrevious}" class="ml-2 h-5 w-5 transform transition-transform duration-200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#51C5CF"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
+    </h2>
+    <div x-show="showPrevious" x-cloak>
+{{< filterPeople caput="#### PhD" categories="phd_candidate" advisors="ricardo_ajax" tags="inactive" notags="">}}
+{{< filterPeople caput="#### Master's degree" categories="master_student" advisors="ricardo_ajax" tags="inactive" notags="">}}
+{{< filterPeople caput="#### Postgraduate Specialization" categories="specialization" advisors="ricardo_ajax" tags="inactive" notags="">}}
+{{< filterPeople caput="#### Undergraduate Research" categories="scientific_initiation" advisors="ricardo_ajax" tags="inactive" notags="">}}
+{{< filterPeople caput="#### Bachelor's Thesis" categories="tcc" advisors="ricardo_ajax" tags="inactive" notags="">}}
+    </div>
+  </div>
+
+
 ## Additional Training
 - Complementary training in areas such as SCAMPI, Balanced Scorecard, CMMI, FMEA, Project Management, among others.
 ## Awards and Recognitions

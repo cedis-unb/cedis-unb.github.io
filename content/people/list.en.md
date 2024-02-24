@@ -8,14 +8,14 @@ language: en
 <div class="space-y-4">
   <!-- Current Collaborators Section -->
   <div>
-    <h2 class="text-xl font-bold mb-2 text-primary-900">Current Collaborators</h2>
+    <h2 class="text-xxl font-bold mb-2 text-primary-900">Current Collaborators</h2>
     <p class="mb-4 text-neutral-700">Meet the team that is actively contributing to our projects and research.</p>
     <div>
-      {{< teste caput="## PhD" categories="phd_candidate" tags="" notags="inactive" >}}
-      {{< teste caput="## Master's degree" categories="master_student" tags="" notags="inactive" >}}
-      {{< teste caput="## Postgraduate Specialization" categories="specialization" tags="" notags="inactive" >}}
-      {{< teste caput="## Undergraduate Research" categories="scientific_initiation" tags="" notags="inactive" >}}
-      {{< teste caput="## Bachelor's Thesis" categories="tcc" tags="" notags="inactive" >}}
+      {{< filterPeople caput="### PhD" categories="phd_candidate" tags="" notags="inactive" >}}
+      {{< filterPeople caput="### Master's degree" categories="master_student" tags="" notags="inactive" >}}
+      {{< filterPeople caput="### Postgraduate Specialization" categories="specialization" tags="" notags="inactive" >}}
+      {{< filterPeople caput="### Undergraduate Research" categories="scientific_initiation" tags="" notags="inactive" >}}
+      {{< filterPeople caput="### Bachelor's Thesis" categories="tcc" tags="" notags="inactive" >}}
     </div>
   </div>
   <div id="formers-section"></div>
@@ -27,11 +27,11 @@ language: en
     </h2>
     <p x-show="showPrevious" x-cloak class="mb-4 text-neutral-700">These are the collaborators who contributed to our success in the past. We are grateful for their effort and dedication.</p>
     <div x-show="showPrevious" x-cloak>
-      {{< teste caput="## PhD" categories="phd_candidate" tags="inactive" notags="" >}}
-      {{< teste caput="## Master's degree" categories="master_student" tags="inactive" notags="" >}}
-      {{< teste caput="## Postgraduate Specialization" categories="specialization" tags="inactive" notags="" >}}
-      {{< teste caput="## Undergraduate Research" categories="scientific_initiation" tags="inactive" notags="" >}}
-      {{< teste caput="## Bachelor's Thesis" categories="tcc" tags="inactive" notags="" >}}
+      {{< filterPeople caput="### PhD" categories="phd_candidate" tags="inactive" notags="" >}}
+      {{< filterPeople caput="### Master's degree" categories="master_student" tags="inactive" notags="" >}}
+      {{< filterPeople caput="### Postgraduate Specialization" categories="specialization" tags="inactive" notags="" >}}
+      {{< filterPeople caput="### Undergraduate Research" categories="scientific_initiation" tags="inactive" notags="" >}}
+      {{< filterPeople caput="### Bachelor's Thesis" categories="tcc" tags="inactive" notags="" >}}
     </div>
   </div>
 </div>

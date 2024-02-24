@@ -34,20 +34,30 @@ tags:
 - Human factors in cybersecurity (2022-Present).
 - Creation and usability evaluation of an app on Parkinson's Disease (2020-Present).
 - These projects explore topics such as cybersecurity, digital health, and usability.
-## Guidance
-### Actual
-{{< postsByCategoriesTags caput="#### PhD" categories="phd_candidate,fabiana_mendes" tags="" notags="inactive">}}
-{{< postsByCategoriesTags caput="#### Master's degree" categories="master_student,fabiana_mendes" tags="" notags="inactive">}}
-{{< postsByCategoriesTags caput="#### Postgraduate Specialization" categories="specialization,fabiana_mendes" tags="" notags="inactive">}}
-{{< postsByCategoriesTags caput="#### Undergraduate Research" categories="scientific_initiation,fabiana_mendes" tags="" notags="inactive">}}
-{{< postsByCategoriesTags caput="#### Bachelor's Thesis" categories="tcc,fabiana_mendes" tags="" notags="inactive">}}
 
-### Previous
-{{< postsByCategoriesTags caput="#### PhD" categories="phd_candidate,fabiana_mendes" tags="inactive" notags="">}}
-{{< postsByCategoriesTags caput="#### Master's degree" categories="master_student,fabiana_mendes" tags="inactive" notags="">}}
-{{< postsByCategoriesTags caput="#### Postgraduate Specialization" categories="specialization,fabiana_mendes" tags="inactive" notags="">}}
-{{< postsByCategoriesTags caput="#### Undergraduate Research" categories="scientific_initiation,fabiana_mendes" tags="inactive" notags="">}}
-{{< postsByCategoriesTags caput="#### Bachelor's Thesis" categories="tcc,fabiana_mendes" tags="inactive" notags="">}}
+
+## Supervisory Experience
+### Current Supervisions
+{{< filterPeople caput="#### PhD" categories="phd_candidate" advisors="fabiana_mendes" tags="" notags="inactive">}}
+{{< filterPeople caput="#### Master's degree" categories="master_student" advisors="fabiana_mendes" tags="" notags="inactive">}}
+{{< filterPeople caput="#### Postgraduate Specialization" categories="specialization" advisors="fabiana_mendes" tags="" notags="inactive">}}
+{{< filterPeople caput="#### Undergraduate Research" categories="scientific_initiation" advisors="fabiana_mendes" tags="" notags="inactive">}}
+{{< filterPeople caput="#### Bachelor's Thesis" categories="tcc" advisors="fabiana_mendes" tags="" notags="inactive">}}
+
+<div id="previous-collaborators" x-data="{ showPrevious: false }">
+    <h2 id="former-collaborators-title" @click="showPrevious = !showPrevious" class="text-xl font-bold mb-2 cursor-pointer flex items-center text-primary-900">
+      Former Supervisions
+      <svg :class="{'rotate-0': !showPrevious, 'rotate-180': showPrevious}" class="ml-2 h-5 w-5 transform transition-transform duration-200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#51C5CF"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
+    </h2>
+    <div x-show="showPrevious" x-cloak>
+{{< filterPeople caput="#### PhD" categories="phd_candidate" advisors="fabiana_mendes" tags="inactive" notags="">}}
+{{< filterPeople caput="#### Master's degree" categories="master_student" advisors="fabiana_mendes" tags="inactive" notags="">}}
+{{< filterPeople caput="#### Postgraduate Specialization" categories="specialization" advisors="fabiana_mendes" tags="inactive" notags="">}}
+{{< filterPeople caput="#### Undergraduate Research" categories="scientific_initiation" advisors="fabiana_mendes" tags="inactive" notags="">}}
+{{< filterPeople caput="#### Bachelor's Thesis" categories="tcc" advisors="fabiana_mendes" tags="inactive" notags="">}}
+    </div>
+  </div>
+
 ## Languages
 - English: Understands Well, Speaks Well, Reads Well, Writes Well.
 - Spanish, German, and Finnish: Basic knowledge.

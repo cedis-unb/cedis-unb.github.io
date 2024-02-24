@@ -28,20 +28,30 @@ tags:
 {{< postsByCategoriesTags categories="project,daniel_sundfeld" >}}
 - Cloud IoT and Distributed Systems (2020-2022).
 - BioCloud - A Framework for the Execution of Biotechnology Applications on Several Platforms of the Amazon AWS Cloud (2020-2022).
-## Guidance
-### Actual
-{{< postsByCategoriesTags caput="#### PhD" categories="phd_candidate,daniel_sundfeld" tags="" notags="inactive">}}
-{{< postsByCategoriesTags caput="#### Master's degree" categories="master_student,daniel_sundfeld" tags="" notags="inactive">}}
-{{< postsByCategoriesTags caput="#### Postgraduate Specialization" categories="specialization,daniel_sundfeld" tags="" notags="inactive">}}
-{{< postsByCategoriesTags caput="#### Undergraduate Research" categories="scientific_initiation,daniel_sundfeld" tags="" notags="inactive">}}
-{{< postsByCategoriesTags caput="#### Bachelor's Thesis" categories="tcc,daniel_sundfeld" tags="" notags="inactive">}}
 
-### Previous
-{{< postsByCategoriesTags caput="#### PhD" categories="phd_candidate,daniel_sundfeld" tags="inactive" notags="">}}
-{{< postsByCategoriesTags caput="#### Master's degree" categories="master_student,daniel_sundfeld" tags="inactive" notags="">}}
-{{< postsByCategoriesTags caput="#### Postgraduate Specialization" categories="specialization,daniel_sundfeld" tags="inactive" notags="">}}
-{{< postsByCategoriesTags caput="#### Undergraduate Research" categories="scientific_initiation,daniel_sundfeld" tags="inactive" notags="">}}
-{{< postsByCategoriesTags caput="#### Bachelor's Thesis" categories="tcc,daniel_sundfeld" tags="inactive" notags="">}}
+## Supervisory Experience
+### Current Supervisions
+{{< filterPeople caput="#### PhD" categories="phd_candidate" advisors="daniel_sundfeld" tags="" notags="inactive">}}
+{{< filterPeople caput="#### Master's degree" categories="master_student" advisors="daniel_sundfeld" tags="" notags="inactive">}}
+{{< filterPeople caput="#### Postgraduate Specialization" categories="specialization" advisors="daniel_sundfeld" tags="" notags="inactive">}}
+{{< filterPeople caput="#### Undergraduate Research" categories="scientific_initiation" advisors="daniel_sundfeld" tags="" notags="inactive">}}
+{{< filterPeople caput="#### Bachelor's Thesis" categories="tcc" advisors="daniel_sundfeld" tags="" notags="inactive">}}
+
+<div id="previous-collaborators" x-data="{ showPrevious: false }">
+    <h2 id="former-collaborators-title" @click="showPrevious = !showPrevious" class="text-xl font-bold mb-2 cursor-pointer flex items-center text-primary-900">
+      Former Supervisions
+      <svg :class="{'rotate-0': !showPrevious, 'rotate-180': showPrevious}" class="ml-2 h-5 w-5 transform transition-transform duration-200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#51C5CF"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
+    </h2>
+    <div x-show="showPrevious" x-cloak>
+{{< filterPeople caput="#### PhD" categories="phd_candidate" advisors="daniel_sundfeld" tags="inactive" notags="">}}
+{{< filterPeople caput="#### Master's degree" categories="master_student" advisors="daniel_sundfeld" tags="inactive" notags="">}}
+{{< filterPeople caput="#### Postgraduate Specialization" categories="specialization" advisors="daniel_sundfeld" tags="inactive" notags="">}}
+{{< filterPeople caput="#### Undergraduate Research" categories="scientific_initiation" advisors="daniel_sundfeld" tags="inactive" notags="">}}
+{{< filterPeople caput="#### Bachelor's Thesis" categories="tcc" advisors="daniel_sundfeld" tags="inactive" notags="">}}
+    </div>
+  </div>
+
+
 ## Languages
 - English: Understands Well, Speaks Well, Reads Well, Writes Well.
 - Spanish: Understands Well, Speaks Fairly, Reads Fairly, Writes Little.

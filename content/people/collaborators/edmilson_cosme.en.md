@@ -11,6 +11,7 @@ categories:
 - people
 - graduate
 - master_student
+advisors:
 - sergio_freitas
 tags: 
 - master_student
