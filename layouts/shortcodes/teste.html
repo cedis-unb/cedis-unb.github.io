@@ -159,14 +159,19 @@
               {{ end }}
             {{ end }}.
 
-            {{ if $person.summary }}
-              <button @click="open = !open" class="bg-blue-500 text-white p-2 rounded cursor-pointer">
-                {{ i18n "abstract" }}
-              </button>
-              <div x-show="open" class="mt-2 pl-4 font-serif" x-cloak>
-                <span class="text-gray-600 text-sm">{{ $person.summary }}</span>
+            {{ if .summary }}
+            {{ $currentLangSummary := index .summary $.Site.Language.Lang }}
+            {{ if $currentLangSummary }}
+              <div>
+                <button @click="open = !open" class="bg-blue-500 text-white p-2 rounded cursor-pointer">
+                  {{ i18n "abstract" }}
+                </button>
+                <div x-show="open" class="mt-2 pl-4 font-serif" x-cloak>
+                  <span class="text-gray-600 text-sm">{{ $currentLangSummary }}</span>
+                </div>
               </div>
             {{ end }}
+          {{ end }}
         </li>
         {{ end }}
       {{ end }}
