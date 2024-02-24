@@ -178,7 +178,8 @@
                         {{ $taggedPages := where .Site.RegularPages "Params.tags" "intersect" (slice "News") }}
                         {{ $paginated := .Paginate ($taggedPages) 3 }}
                         {{ range $paginated.Pages }}
-                        <div class="flex flex-col overflow-hidden rounded-lg shadow-lg bg-gray-50 dark:bg-gray-900">                            <a href="{{.Permalink}}">
+                        <div class="flex flex-col overflow-hidden rounded-lg shadow-lg bg-gray-50 dark:bg-gray-900">
+                                <a href="{{.Permalink}}">
                                 {{ with .Params.featured_image }}
                                 {{ with resources.Get . }}
                                 {{ $postimage := (.Resize "500x webp q90").RelPermalink }}
@@ -198,10 +199,12 @@
                                 </div>
                                 <div class="flex pt-6 font-medium text-primary-600 dark:text-primary-100 text-md">
                                     <span class="pr-2 font-black">Tags:</span>
+                                    <span>
                                     {{ range $elem_index, $elem_val := (.GetTerms "tags") }}
                                     {{- if gt $elem_index 0 }}, {{ end -}}
-                                    <a href="{{ .Permalink }}" class="inline-flex items-center rounded-md bg-gray-300 hover:bg-primary-200 hover:text-black px-2.5 py-0.5 text-sm font-medium text-gray-900 ">{{i18n .LinkTitle }}</a>
+                                    <a href="{{ .Permalink }}" class="inline-flex items-center rounded-md bg-gray-300 hover:bg-primary-200 hover:text-black px-2.5 py-0.5 text-sm font-medium text-gray-900">{{i18n .Name }}</a>
                                     {{- end -}}
+                                    </span>
                                 </div>
                                 <div class="flex items-center mt-6">
                                     <div class="flex-shrink-0">
