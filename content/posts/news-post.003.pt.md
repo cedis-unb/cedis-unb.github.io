@@ -15,7 +15,6 @@ tags:
 - News
 - agreement
 - ai
-- esw
 ---
 Évora, 10 de novembro de 2023
 
