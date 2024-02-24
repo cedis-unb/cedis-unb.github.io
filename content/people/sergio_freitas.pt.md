@@ -12,10 +12,11 @@ categories:
 - researcher
 tags: 
 - gamification
-- learning
 - ai
 - nlp
 - machine_learning
+- active_learning
+- learning
 - dfcris
 - project_cc
 ---

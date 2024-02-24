@@ -128,7 +128,7 @@ languages:
           weight: 10
         - identifier: colaboradores
           name: Colaboradores
-          url: /people/colaboradores/
+          url: /people/list/
           weight: 20
       dropdown:
         - identifier: publications
@@ -294,7 +294,7 @@ languages:
           weight: 10
         - identifier: colaboradores
           name: Collaborators
-          url: /people/colaboradores/
+          url: /people/list/
           weight: 20
       dropdown:
         - identifier: publications

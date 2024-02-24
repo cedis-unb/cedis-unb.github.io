@@ -8,8 +8,9 @@ first: "Primeiro"
 last: "Último"
 read: "leitura"
 News: "Notícias"
-esw: "Curso de Graduação em Engenharia de Software"
-ppca: "Programa de Pós-Graduação em Computação Aplicada"
+abstract: "Resumo"
+esw: "Curso de Graduação em Engenharia de Software, FGA/UnB"
+ppca: "Programa de Pós-Graduação em Computação Aplicada, UnB"
 
 # TAGS
 # Áreas de atuação

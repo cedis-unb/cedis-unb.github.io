@@ -15,6 +15,7 @@ tags:
 - learning
 - verification_validation_testing
 - software_quality
+- active_learning
 - project_cc
 ---
 ## Academic and Professional Profile

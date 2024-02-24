@@ -16,6 +16,7 @@ tags: [  ]
 - {{< link-interno "/areas/software_requirements" "Engenharia de Requisitos" >}}
 - {{< link-interno "/areas/verival" "Verificação, Validação e Testes" >}}
 - {{< link-interno "/areas/software_products" "Engenharia de Linhas de Produto de Software" >}}
+- {{< link-interno "/areas/software_quality" "Qualidade de Software" >}}
 - {{< link-interno "/areas/green_software" "Green Software Development" >}}
 ## Metodologias e Abordagens de Desenvolvimento
 - Abordagens de Desenvolvimento de Software (Ágeis, Dirigidas a Plano e Híbridas)

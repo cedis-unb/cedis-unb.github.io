@@ -16,6 +16,7 @@ tags: [  ]
 - {{< link-interno "/areas/software_requirements" "Requirements Engineering" >}}
 - {{< link-interno "/areas/verival" "Verification, Validation and Testing" >}}
 - {{< link-interno "/areas/software_products" "Software Product Line Engineering" >}}
+- {{< link-interno "/areas/software_quality" "Software Quality" >}}
 - {{< link-interno "/areas/green_software" "Green Software Development" >}}
 
 ## Development Methodologies and Approaches
