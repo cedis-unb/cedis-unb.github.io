@@ -161,7 +161,7 @@ languages:
 #          url: /about/
 #          weight: 10
         - identifier: news
-          name: Notícias
+          name: Mais notícias
           url: /categories/news/
           weight: 30
         - identifier: contact
@@ -327,7 +327,7 @@ languages:
 #          url: /about/
 #          weight: 10
         - identifier: news
-          name: News
+          name: More News
           url: /categories/news/
           weight: 30
         - identifier: contact
