@@ -13,7 +13,7 @@ languages:
       moto: "Bem vindo(a)!"  
       description: "Descubra o futuro da Engenharia de Software, da Aprendizagem e da Inteligência Artificial. \n Desde 2013, o Centro de Estudos, Desenvolvimento e Inovação em Software tem liderado projetos inovadores de pesquisa, desenvolvimento e educação."
       authorimage: "../assets/images/global/sample-logo.svg"
-      og_image: "/images/tailbliss-cover.png"
+      og_image: "/images/cedis-cover.png"
       disable_theme_toggle: true
       disable_stay_uptodate: true
       p1:
@@ -180,7 +180,7 @@ languages:
       moto: "Welcome!"
       description: "Discover the future of Software Engineering, Learning, and Artificial Intelligence. Since 2013, the Center for Studies, Development, and Innovation in Software has led innovative projects in research, development, and education."
       authorimage: "../assets/images/global/sample-logo.svg"
-      og_image: "/images/tailbliss-cover.png"
+      og_image: "/images/cedis-cover.png"
       disable_theme_toggle: true
       disable_stay_uptodate: true
       p1:
