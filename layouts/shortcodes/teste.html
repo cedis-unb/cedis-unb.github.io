@@ -145,11 +145,11 @@
             <!-- Exibição de advisors, tags, e o resumo com controle do Alpine.js -->
             {{ i18n "orientador" }}:
             {{ range .advisors }}
-              {{ with index $.Site.Data.people.advisors . }}
+              {{ with index $.Site.Data.advisors.advisors . }}
                 <a href="{{ .link | absLangURL }}">{{ .name }}</a>
               {{ end }}
             {{ end }}
-            
+
             . Tags:
             {{ $filteredTags := slice }}
             {{ range .tags }}
