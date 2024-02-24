@@ -10,7 +10,6 @@
 {{ range sort $.Site.Data.people.people "year" "desc" }}
   {{ $include := true }}
   {{ $person := . }}
-
   
   <!-- Lógica de filtragem para tags -->
   {{ if and $include (gt (len $filterTags) 0) (ne (index $filterTags 0) "") }}
@@ -137,8 +136,7 @@
   {{ if $include }}
   <li x-data="{ open: false }">
     <span><strong>{{ $person.name }}</strong></span>.
-    <span>
-        {{ if .url }}<a href="{{ .url }}">{{ end }}
+    <span>{{ if .url }}<a href="{{ .url }}">{{ end }}
           {{ index .title $.Site.Language.Lang }}
         {{ if .url }}</a>{{ end }}.</span>
             {{ if $person.program }}<span>{{ $person.program | i18n }},</span>{{ end }}
@@ -151,23 +149,32 @@
                 <a href="{{ .link | absLangURL }}">{{ .name }}</a>
               {{ end }}
             {{ end }}
+            
             . Tags:
+            {{ $filteredTags := slice }}
             {{ range .tags }}
               {{ if and (ne . "active") (ne . "inactive") }}
-                {{ $tagLink := printf "/tags/%s" . | absLangURL }}
-                <span><a href="{{ $tagLink }}">{{ . | i18n }}</a></span>
+                {{ $filteredTags = $filteredTags | append . }}
               {{ end }}
+            {{ end }}
+            {{ $total := len $filteredTags }}
+            {{ range $index, $tag := $filteredTags }}
+              {{ $tagLink := printf "/tags/%s" $tag | absLangURL }}
+              <a href="{{ $tagLink }}">{{ $tag | i18n }}</a>{{ if lt $index (sub $total 1) }}, {{ end }}
             {{ end }}.
+            
 
             {{ if .summary }}
             {{ $currentLangSummary := index .summary $.Site.Language.Lang }}
             {{ if $currentLangSummary }}
               <div>
-                <button @click="open = !open" class="bg-blue-500 text-white p-2 rounded cursor-pointer">
+                <!-- Botão com a cor primária e texto em branco -->
+                <button @click="open = !open" class="bg-primary-500 text-white p-2 rounded cursor-pointer">
                   {{ i18n "abstract" }}
                 </button>
+                <!-- Div com texto usando uma cor neutra escura para melhor legibilidade -->
                 <div x-show="open" class="mt-2 pl-4 font-serif" x-cloak>
-                  <span class="text-gray-600 text-sm">{{ $currentLangSummary }}</span>
+                  <span class="text-neutral-700 text-sm">{{ $currentLangSummary }}</span>
                 </div>
               </div>
             {{ end }}
@@ -183,10 +190,10 @@
 {{ $hasMatches2 := false }}
 {{ range sort $.Site.RegularPages "Title" }}
     {{ $thisPage := . }}
-    {{ $match := true }}
+    {{ $include := true }}
     
     <!-- Verificação de Tags -->
-    {{ if and $filterTags (ne $filterTags "") }}
+    {{ if and $include (gt (len $filterTags) 0) (ne (index $filterTags 0) "") }}
     {{ $tagsMatch := true }}
     {{ range $filterTags }}
         {{ $currentTag := trim . " " }}
@@ -196,12 +203,12 @@
         {{ end }}
     {{ end }}
     {{ if not $tagsMatch }}
-        {{ $match = false }}
+        {{ $include = false }}
     {{ end }}
     {{ end }}
 
     <!-- Verificação de Categorias -->
-    {{ if and $filterCategories (ne $filterCategories "") }}
+    {{ if and $include (gt (len $filterCategories) 0) (ne (index $filterCategories 0) "") }}
     {{ $categoriesMatch := true }}
     {{ range $filterCategories }}
         {{ $currentCategory := trim . " " }}
@@ -211,22 +218,22 @@
         {{ end }}
     {{ end }}
     {{ if not $categoriesMatch }}
-        {{ $match = false }}
+        {{ $include = false }}
     {{ end }}
     {{ end }}
 
     <!-- Verificação de 'Não Tags' -->
-    {{ if and $excludeTags (ne $excludeTags "") }}
+    {{ if and $include (gt (len $excludeTags) 0) (ne (index $excludeTags 0) "") }}
     {{ range $excludeTags }}
         {{ $currentNoTag := trim . " " }}
         {{ if in $thisPage.Params.tags $currentNoTag }}
-        {{ $match = false }}
+        {{ $include = false }}
         {{ break }}
         {{ end }}
     {{ end }}
     {{ end }}
 
-    {{ if $match }}
+    {{ if $include }}
     {{ $hasMatches2 = true }}
     {{ break }}
     {{ end }}
@@ -239,11 +246,10 @@
     <ul>
     {{ range sort $.Site.RegularPages "Title" }}
         {{ $thisPage := . }}
-        {{ $match := true }}
+        {{ $include := true }}
 
-        <!-- Repetir lógica de filtragem para gerar a lista -->
         <!-- Tags, Categorias, e 'Não Tags' -->
-        {{ if and $filterTags (ne $filterTags "") }}
+        {{ if and $include (gt (len $filterTags) 0) (ne (index $filterTags 0) "") }}
         {{ $tagsMatch := true }}
         {{ range $filterTags }}
             {{ $currentTag := trim . " " }}
@@ -253,11 +259,11 @@
             {{ end }}
         {{ end }}
         {{ if not $tagsMatch }}
-            {{ $match = false }}
+            {{ $include = false }}
         {{ end }}
         {{ end }}
 
-        {{ if and $filterCategories (ne $filterCategories "") }}
+        {{ if and $include (gt (len $filterCategories) 0) (ne (index $filterCategories 0) "") }}
         {{ $categoriesMatch := true }}
         {{ range $filterCategories }}
             {{ $currentCategory := trim . " " }}
@@ -267,21 +273,21 @@
             {{ end }}
         {{ end }}
         {{ if not $categoriesMatch }}
-            {{ $match = false }}
+            {{ $include = false }}
         {{ end }}
         {{ end }}
 
-        {{ if and $excludeTags (ne $excludeTags "") }}
+        {{ if and $include (gt (len $excludeTags) 0) (ne (index $excludeTags 0) "") }}
         {{ range $excludeTags }}
             {{ $currentNoTag := trim . " " }}
             {{ if in $thisPage.Params.tags $currentNoTag }}
-            {{ $match = false }}
+            {{ $include = false }}
             {{ break }}
             {{ end }}
         {{ end }}
         {{ end }}
 
-        {{ if $match }}
+        {{ if $include }}
         <li>
             <span><strong><a href="{{ $thisPage.Permalink }}">{{ $thisPage.Title }}</a></strong></span>
             {{ if and $showSummary $thisPage.Summary }}
