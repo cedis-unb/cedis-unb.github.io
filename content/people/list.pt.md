@@ -4,6 +4,8 @@ title: "Colaboradores"
 date: 2024-02-14T00:48:51-03:00
 weight: 20
 language: pt
+featured_image: "../assets/images/featured/people_Collaborators.png"
+authorimage: ../assets/images/global/author.webp
 ---
 <div class="space-y-4">
   <!-- Seção de Colaboradores Atuais -->
