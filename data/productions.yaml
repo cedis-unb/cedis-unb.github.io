@@ -186,6 +186,7 @@ items:
   publisher: ''
   tags:
   - software_requirements
+  - digital_transformation
   - george_marsicano
   type: workshop
   program: ''
@@ -848,6 +849,7 @@ items:
   pages: e17572
   publisher: ''
   tags:
+  - software_quality
   - fabiana_mendes
   type: article
   program: ''
@@ -1032,6 +1034,8 @@ items:
   pages: 353-367
   publisher: ''
   tags:
+  - gamification
+  - digital_transformation
   - sergio_freitas
   type: conference
   program: ''
@@ -1060,6 +1064,7 @@ items:
   pages: '1'
   publisher: ''
   tags:
+  - green_software
   - fabiana_mendes
   type: conference
   program: ''
@@ -1085,6 +1090,7 @@ items:
   pages: 189-192
   publisher: ''
   tags:
+  - hpc
   - daniel_sundfeld
   type: workshop
   program: ''
@@ -1185,6 +1191,7 @@ items:
   pages: ''
   publisher: ''
   tags:
+  - digital_transformation
   - george_marsicano
   type: conference
   program: ''
@@ -1358,6 +1365,7 @@ items:
   pages: 256-279
   publisher: ''
   tags:
+  - software_architecture
   - fabiana_mendes
   type: article
   program: ''
@@ -1384,6 +1392,8 @@ items:
   pages: ''
   publisher: ''
   tags:
+  - digital_transformation
+  - soft_skills
   - george_marsicano
   type: conference
   program: ''
@@ -1407,6 +1417,8 @@ items:
   pages: ''
   publisher: ''
   tags:
+  - soft_skills
+  - teamwork
   - george_marsicano
   type: conference
   program: ''
@@ -1504,6 +1516,7 @@ items:
   pages: '1'
   publisher: ''
   tags:
+  - esw
   - fabiana_mendes
   type: article
   program: ''
@@ -1555,6 +1568,7 @@ items:
   pages: 13-16
   publisher: ''
   tags:
+  - soft_skills
   - fabiana_mendes
   type: workshop
   program: ''
@@ -1654,6 +1668,7 @@ items:
   pages: 207-216
   publisher: ''
   tags:
+  - gamification
   - fabiana_mendes
   type: article
   program: ''
@@ -1683,6 +1698,8 @@ items:
   pages: 446-460
   publisher: ''
   tags:
+  - learning
+  - education
   - sergio_freitas
   type: article
   program: ''
@@ -1713,6 +1730,7 @@ items:
   pages: '378'
   publisher: ''
   tags:
+  - soft_skills
   - fabiana_mendes
   type: conference
   program: ''
@@ -1761,6 +1779,7 @@ items:
   pages: 25-28
   publisher: ''
   tags:
+  - hpc
   - daniel_sundfeld
   type: conference
   program: ''
@@ -1827,6 +1846,7 @@ items:
   tags:
   - gamification
   - soft_skills
+  - digital_transformation
   type: dissertation
   program: curso_ppca
   advisors:
@@ -1857,6 +1877,7 @@ items:
   pages: 56-78
   publisher: ''
   tags:
+  - digital_transformation
   - ricardo_ajax
   type: article
   program: ''
@@ -1883,6 +1904,8 @@ items:
   pages: 210-239
   publisher: Editora UFPB
   tags:
+  - active_learning
+  - education
   - sergio_freitas
   type: book_section
   program: ''
@@ -1910,6 +1933,7 @@ items:
   pages: '106586'
   publisher: ''
   tags:
+  - soft_skills
   - fabiana_mendes
   type: article
   program: ''
@@ -2022,6 +2046,7 @@ items:
   pages: '41'
   publisher: ''
   tags:
+  - digital_transformation
   - fabiana_mendes
   type: conference
   program: ''
@@ -2050,6 +2075,7 @@ items:
   pages: ''
   publisher: ''
   tags:
+  - teamwork
   - george_marsicano
   type: conference
   program: ''
@@ -2075,6 +2101,7 @@ items:
   pages: ''
   publisher: ''
   tags:
+  - software_architecture
   - sergio_freitas
   type: conference
   program: ''
@@ -2126,6 +2153,7 @@ items:
   pages: 1-45
   publisher: ''
   tags:
+  - teamwork
   - george_marsicano
   type: article
   program: ''
@@ -2181,6 +2209,7 @@ items:
   pages: e5468
   publisher: ''
   tags:
+  - hpc
   - daniel_sundfeld
   type: article
   program: ''
@@ -2231,6 +2260,8 @@ items:
   type: tcc
   program: curso_esw
   advisors:
+  - gamification
+  - software_architecture
   - sergio_freitas
   url: ''
   year: 2019
@@ -2257,6 +2288,7 @@ items:
   pages: ''
   publisher: ''
   tags:
+  - learning
   - sergio_freitas
   type: conference
   program: ''
@@ -2314,6 +2346,7 @@ items:
   pages: ''
   publisher: ''
   tags:
+  - software_architecture
   - sergio_freitas
   type: conference
   program: ''
@@ -2390,6 +2423,8 @@ items:
   pages: ''
   publisher: ''
   tags:
+  - gamification
+  - active_learning
   - sergio_freitas
   type: conference
   program: ''
@@ -2441,6 +2476,7 @@ items:
   pages: 50-71
   publisher: ''
   tags:
+  - soft_skills
   - fabiana_mendes
   type: article
   program: ''
@@ -2494,6 +2530,8 @@ items:
   pages: ''
   publisher: ''
   tags:
+  - esw
+  - soft_skills
   - fabiana_mendes
   type: conference
   program: ''
@@ -2523,6 +2561,7 @@ items:
   pages: ''
   publisher: ''
   tags:
+  - software_quality
   - ricardo_ajax
   type: conference
   program: ''
@@ -2551,6 +2590,7 @@ items:
   pages: ''
   publisher: ''
   tags:
+  - teamwork
   - fabiana_mendes
   type: conference
   program: ''
@@ -2580,6 +2620,7 @@ items:
   pages: 116-160
   publisher: ''
   tags:
+  - software_product_line
   - andre_lanna
   type: article
   program: ''
@@ -2607,6 +2648,7 @@ items:
   pages: ''
   publisher: ''
   tags:
+  - learning
   - sergio_freitas
   type: conference
   program: ''
@@ -2658,6 +2700,7 @@ items:
   pages: 63-67
   publisher: TCU
   tags:
+  - digital_transformation
   - sergio_freitas
   type: book chapter
   program: ''
@@ -2683,6 +2726,7 @@ items:
   pages: 145-148
   publisher: TCU
   tags:
+  - digital_transformation
   - sergio_freitas
   type: book chapter
   program: ''
@@ -2707,6 +2751,7 @@ items:
   pages: ''
   publisher: TCU
   tags:
+  - digital_transformation
   - sergio_freitas
   type: book
   program: ''
@@ -2731,6 +2776,7 @@ items:
   pages: '1758'
   publisher: ''
   tags:
+  - learning
   - sergio_freitas
   type: article
   program: ''
@@ -2758,6 +2804,7 @@ items:
   pages: '248'
   publisher: ''
   tags:
+  - digital_transformation
   - sergio_freitas
   type: article
   program: ''
@@ -2785,6 +2832,7 @@ items:
   pages: 59-81
   publisher: ''
   tags:
+  - software_product_line
   - andre_lanna
   type: article
   program: ''
@@ -2811,6 +2859,8 @@ items:
   pages: ''
   publisher: ''
   tags:
+  - gamification
+  - software_architecture
   - sergio_freitas
   type: conference
   program: ''
@@ -2864,6 +2914,7 @@ items:
   pages: ''
   publisher: ''
   tags:
+  - soft_skills
   - george_marsicano
   type: conference
   program: ''
@@ -2887,6 +2938,7 @@ items:
   pages: 81-84
   publisher: TCU
   tags:
+  - digital_transformation
   - sergio_freitas
   type: book chapter
   program: ''
@@ -2938,6 +2990,7 @@ items:
   pages: ''
   publisher: ''
   tags:
+  - soft_skills
   - fabiana_mendes
   type: conference
   program: ''
@@ -3053,6 +3106,7 @@ items:
   pages: 69-72
   publisher: TCU
   tags:
+  - digital_transformation
   - sergio_freitas
   type: book chapter
   program: ''
@@ -3105,6 +3159,7 @@ items:
   pages: ''
   publisher: ''
   tags:
+  - software_architecture
   - sergio_freitas
   type: conference
   program: ''
@@ -3133,6 +3188,8 @@ items:
   pages: ''
   publisher: ''
   tags:
+  - software_architecture
+  - teamwork
   - sergio_freitas
   type: conference
   program: ''
@@ -3213,6 +3270,8 @@ items:
   pages: ''
   publisher: ''
   tags:
+  - machine_learning
+  - nlp
   - sergio_freitas
   type: conference
   program: ''
@@ -3321,6 +3380,7 @@ items:
   pages: ''
   publisher: ''
   tags:
+  - teamwork
   - george_marsicano
   type: conference
   program: ''
@@ -3377,6 +3437,7 @@ items:
   pages: ''
   publisher: ''
   tags:
+  - teamwork
   - george_marsicano
   type: conference
   program: ''
@@ -3437,7 +3498,7 @@ items:
   publisher: Biblioteca Central da Universidade de Brasília
   tags:
   - gamification
-  - social_networks
+  - soft_skills
   type: tcc
   program: curso_esw
   advisors:
@@ -3554,6 +3615,7 @@ items:
   pages: 275-300
   publisher: ''
   tags:
+  - digital_transformation
   - ricardo_ajax
   type: article
   program: ''
@@ -3618,7 +3680,8 @@ items:
   publisher: Biblioteca Central da Universidade de Brasília
   tags:
   - nlp
-  - education_technology
+  - ai
+  - machine_learning
   type: tcc
   program: curso_esw
   advisors:
@@ -3645,6 +3708,7 @@ items:
   pages: ''
   publisher: ''
   tags:
+  - digital_transformation
   - fabiana_mendes
   type: conference
   program: ''
@@ -3727,6 +3791,8 @@ items:
   pages: ''
   publisher: ''
   tags:
+  - ai
+  - education
   - sergio_freitas
   type: conference
   program: ''
@@ -3780,7 +3846,9 @@ items:
   pages: ''
   publisher: ''
   tags:
-  - active_learning
+  - ai
+  - machine_learning
+  - nlp
   - sergio_freitas
   type: conference
   program: ''
@@ -4027,7 +4095,7 @@ items:
   pages: ''
   publisher: ''
   tags:
-  - learning
+  - teamwork
   - sergio_freitas
   - fabiana_mendes
   type: conference
@@ -4153,6 +4221,7 @@ items:
   pages: '124'
   publisher: Novas Edições Acadêmicas
   tags:
+  - soft_skills
   - fabiana_mendes
   type: book
   program: ''
@@ -4182,6 +4251,7 @@ items:
   pages: 257-272
   publisher: ''
   tags:
+  - soft_skills
   - fabiana_mendes
   type: article
   program: ''
@@ -4233,6 +4303,7 @@ items:
   pages: '106'
   publisher: ''
   tags:
+  - ai
   - fabiana_mendes
   type: article
   program: ''
@@ -4259,6 +4330,7 @@ items:
   pages: 106-116
   publisher: Springer Berlin Heidelberg
   tags:
+  - ai
   - fabiana_mendes
   type: book chapter
   program: ''
@@ -4308,6 +4380,7 @@ items:
   pages: 79-93
   publisher: ''
   tags:
+  - software_architecture
   - cristiane_ramos
   type: conference
   program: ''
@@ -4337,6 +4410,7 @@ items:
   pages: ''
   publisher: ''
   tags:
+  - software_product_line
   - andre_lanna
   type: conference
   program: ''
@@ -4411,6 +4485,7 @@ items:
   pages: ''
   publisher: ''
   tags:
+  - software_architecture
   - sergio_freitas
   type: conference
   program: ''
@@ -4586,7 +4661,6 @@ items:
   publisher: Biblioteca Central da Universidade de Brasília
   tags:
   - digital_transformation
-  - software_architecture
   type: tcc
   program: curso_esw
   advisors:
