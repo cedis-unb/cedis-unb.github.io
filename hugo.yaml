@@ -1,5 +1,11 @@
 baseURL: 'https://cedis.tec.br/'
 publishDir : "docs"
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+    
 DefaultContentLanguage: en
 languages:
   pt:

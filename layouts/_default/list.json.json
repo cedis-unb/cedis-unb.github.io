@@ -1,0 +1,13 @@
+{
+  "data": [
+    {{- $pages := .Site.RegularPages -}}
+    {{- range $index, $element := $pages -}}
+    {
+      "title": {{ .Title | jsonify }},
+      "content": {{ .Plain | jsonify }},
+      "url": {{ .RelPermalink | jsonify }},
+      "language": {{ .Lang | jsonify }}
+    }{{ if ne $index (sub (len $pages) 1) }},{{ end }}
+    {{- end -}}
+  ]
+}

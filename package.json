@@ -43,6 +43,7 @@
   },
   "homepage": "https://github.com/nusserstudios/tailbliss",
   "dependencies": {
+    "flexsearch": "^0.7.43",
     "markdown-it-emoji": "^3.0.0"
   }
 }
