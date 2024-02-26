@@ -5,6 +5,20 @@ outputs:
     - HTML
     - RSS
     - JSON
+  page:
+    - HTML
+  searchindex:
+    - JSON
+
+outputFormats:
+  JSON:
+    mediaType: "application/json"
+  searchindex:
+    path: "/"
+    baseName: "index"
+    isPlainText: true
+    mediaType: "application/json"
+
     
 DefaultContentLanguage: en
 languages:
