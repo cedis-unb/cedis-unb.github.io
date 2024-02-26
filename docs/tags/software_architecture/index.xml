@@ -1,1 +1,33 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Software_architecture on CEDIS</title><link>https://cedis.tec.br/tags/software_architecture/</link><description>Recent content in Software_architecture on CEDIS</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 26 Feb 2024 11:32:46 -0300</lastBuildDate><atom:link href="https://cedis.tec.br/tags/software_architecture/index.xml" rel="self" type="application/rss+xml"/><item><title>Software Architecture</title><link>https://cedis.tec.br/areas/software_architecture/</link><pubDate>Wed, 14 Feb 2024 01:37:18 -0300</pubDate><guid>https://cedis.tec.br/areas/software_architecture/</guid><description>Software Architecture is a fundamental field in systems engineering involving the structural organization of software components, their interactions, and the guiding principles that define the design and evolution of systems. This area is crucial for ensuring the efficiency, scalability, and maintainability of software systems, directly impacting the quality and performance of applications.</description></item><item><title>André Luiz Peron Martins Lanna</title><link>https://cedis.tec.br/people/andre_lanna/</link><pubDate>Wed, 14 Feb 2024 00:50:20 -0300</pubDate><guid>https://cedis.tec.br/people/andre_lanna/</guid><description>Associate Professor at the University of Brasília (UnB), working in the undergraduate Software Engineering program and the Graduate Program in Applied Computing.</description></item><item><title>George Marsicano Correa</title><link>https://cedis.tec.br/people/george_marsicano/</link><pubDate>Wed, 14 Feb 2024 00:48:51 -0300</pubDate><guid>https://cedis.tec.br/people/george_marsicano/</guid><description>Associate Professor at the University of Brasília (UnB), working in the undergraduate Software Engineering program and the Graduate Program in Applied Computing.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Software_architecture on CEDIS</title>
+    <link>http://localhost:1313/tags/software_architecture/</link>
+    <description>Recent content in Software_architecture on CEDIS</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 26 Feb 2024 11:32:46 -0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/software_architecture/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Software Architecture</title>
+      <link>http://localhost:1313/areas/software_architecture/</link>
+      <pubDate>Wed, 14 Feb 2024 01:37:18 -0300</pubDate>
+      <guid>http://localhost:1313/areas/software_architecture/</guid>
+      <description>Software Architecture is a fundamental field in systems engineering involving the structural organization of software components, their interactions, and the guiding principles that define the design and evolution of systems. This area is crucial for ensuring the efficiency, scalability, and maintainability of software systems, directly impacting the quality and performance of applications.</description>
+    </item>
+    <item>
+      <title>André Luiz Peron Martins Lanna</title>
+      <link>http://localhost:1313/people/andre_lanna/</link>
+      <pubDate>Wed, 14 Feb 2024 00:50:20 -0300</pubDate>
+      <guid>http://localhost:1313/people/andre_lanna/</guid>
+      <description>Associate Professor at the University of Brasília (UnB), working in the undergraduate Software Engineering program and the Graduate Program in Applied Computing.</description>
+    </item>
+    <item>
+      <title>George Marsicano Correa</title>
+      <link>http://localhost:1313/people/george_marsicano/</link>
+      <pubDate>Wed, 14 Feb 2024 00:48:51 -0300</pubDate>
+      <guid>http://localhost:1313/people/george_marsicano/</guid>
+      <description>Associate Professor at the University of Brasília (UnB), working in the undergraduate Software Engineering program and the Graduate Program in Applied Computing.</description>
+    </item>
+  </channel>
+</rss>

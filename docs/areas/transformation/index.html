@@ -1,204 +1,7499 @@
-<!doctype html><html lang=en><head><meta http-equiv=Content-Type content="text/html" charset=UTF-8><meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1"><meta name=viewport content="width=device-width,initial-scale=1"><link rel=apple-touch-icon sizes=180x180 href=https://cedis.tec.br/favicon/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=https://cedis.tec.br/favicon/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=https://cedis.tec.br/favicon/favicon-16x16.png><link rel=manifest href=https://cedis.tec.br/favicon/site.webmanifest><link rel=mask-icon href=https://cedis.tec.br/favicon/safari-pinned-tab.svg color=#5bbad5><meta name=msapplication-TileColor content="#da532c"><meta name=theme-color content="#ffffff"><title itemprop=name>Digital Transformation | CEDIS
-</title><meta name=description content="Discover the future of Software Engineering, Learning, and Artificial Intelligence. Since 2013, the Center for Studies, Development, and Innovation in Software has led innovative projects in research, development, and education."><meta property="og:title" content="Digital Transformation | CEDIS"><meta name=twitter:title content="Digital Transformation | CEDIS"><meta itemprop=name content="Digital Transformation | CEDIS"><meta name=application-name content="Digital Transformation | CEDIS"><meta property="og:description" content="Discover the future of Software Engineering, Learning, and Artificial Intelligence. Since 2013, the Center for Studies, Development, and Innovation in Software has led innovative projects in research, development, and education."><meta property="og:site_name" content="CEDIS"><meta property="og:url" content="https://cedis.tec.br/areas/transformation/"><meta property="og:locale" content="en"><meta property="og:image" content="/../assets/images/featured/area_Transformação Digital.png"><meta property="og:image:secure_url" content="https://cedis.tec.br/assets/images/featured/area_Transforma%C3%A7%C3%A3o%20Digital.png"><meta property="og:type" content="article"><script>localStorage.getItem("color-theme")==="dark"||!("color-theme"in localStorage)&&window.matchMedia("(prefers-color-scheme: dark)").matches?document.documentElement.classList.add("dark"):document.documentElement.classList.remove("dark")</script><link rel=stylesheet href="/css/style.min.c96961ff2d27266a4943a30381afa5ee7a2d1685b57d139d552ba8a79d60d48b.css" integrity="sha256-yWlh/y0nJmpJQ6MDga+l7notFoW1fROdVSuop51g1Is="></head><body class="bg-zinc-100 dark:bg-gray-800"><div class="top-0 z-50 w-full text-gray-200 bg-gray-900 border-2 border-gray-900 md:sticky border-b-stone-200/10"><div x-data="{ open: false }" class="flex flex-col max-w-full px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8"><div class="flex flex-row items-center justify-between p-4"><a href=https://cedis.tec.br/ class="flex text-gray-100 transition duration-1000 ease-in-out group"><img src=https://cedis.tec.br/images/site-logo.svg class="transition-opacity h-9 w-24 group-hover:opacity-50 group-focus:opacity-70" alt="CEDIS Logo"><div class="mt-0 ml-3 text-3xl font-black tracking-tight text-gray-100 case transition-colors group-hover:text-gray-400/60">CEDIS</div></a><button class="rounded-lg md:hidden focus:outline-none focus:shadow-outline" @click="open = !open" role=navigation aria-expanded=false aria-label=Main aria-controls=menuItems><svg fill="currentcolor" viewBox="0 0 20 20" class="w-6 h-6"><path x-show="!open" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4A1 1 0 013 5zm0 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm6 5a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"/><path x-show="open" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414.0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"/></svg></button></div><nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow hidden pb-4 md:pb-0 md:flex md:justify-end md:flex-row"><div @click.away="open = false" class=relative x-data="{ open: false }"><button @click="open = !open" class="flex flex-row items-center w-full px-4 py-2 mt-2 text-sm font-semibold text-left bg-transparent rounded-lg dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:focus:bg-gray-600 dark-mode:hover:bg-gray-600 md:w-auto md:inline md:mt-0 md:ml-4 hover:text-white focus:text-white hover:bg-primary-600 focus:bg-primary-600 focus:outline-none focus:shadow-outline">
-<span>About</span><svg fill="currentcolor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}" class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414.0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414.0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/></svg></button><div x-show=open x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="absolute right-0 z-30 w-full mt-2 origin-top-right md:max-w-sm md:w-screen"><div class="px-2 pt-2 pb-4 bg-white rounded-md shadow-lg text-zinc-900"><div class="grid grid-cols-1 gap-4"><a class="flex items-start p-2 bg-transparent rounded-lg group row hover:text-white focus:text-white hover:bg-primary-600 focus:bg-primary-700 focus:outline-none focus:shadow-outline" href=https://cedis.tec.br/categories/knowledge_areas/><div class="p-3 text-white bg-primary-600 rounded-lg group-hover:bg-gray-900"><svg fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-4 h-4 md:h-6 md:w-6"><path d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16 2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg></div><div class=ml-3><p class=font-semibold>Areas of expertise</p><p class=text-sm>Research, development, and training</p></div></a><a class="flex items-start p-2 bg-transparent rounded-lg group row hover:text-white focus:text-white hover:bg-primary-600 focus:bg-primary-700 focus:outline-none focus:shadow-outline" href=https://cedis.tec.br/infra/><div class="p-3 text-white bg-primary-600 rounded-lg group-hover:bg-gray-900"><svg fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-4 h-4 md:h-6 md:w-6"><path d="M11 3.055A9.001 9.001.0 1020.945 13H11V3.055z"/><path d="M20.488 9H15V3.512A9.025 9.025.0 0120.488 9z"/></svg></div><div class=ml-3><p class=font-semibold>Infrastructure</p><p class=text-sm>Equipment and facilities</p></div></a><a class="flex items-start p-2 bg-transparent rounded-lg group row hover:text-white focus:text-white hover:bg-primary-600 focus:bg-primary-700 focus:outline-none focus:shadow-outline" href=https://cedis.tec.br/history/><div class="p-3 text-white bg-primary-600 rounded-lg group-hover:bg-gray-900"><svg fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-4 h-4 md:h-6 md:w-6"><path d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16 2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg></div><div class=ml-3><p class=font-semibold>History</p><p class=text-sm>Our journey and achievements</p></div></a><a class="flex items-start p-2 bg-transparent rounded-lg group row hover:text-white focus:text-white hover:bg-primary-600 focus:bg-primary-700 focus:outline-none focus:shadow-outline" href=https://unbbr.sharepoint.com/sites/CEDIS><div class="p-3 text-white bg-primary-600 rounded-lg group-hover:bg-gray-900"><svg fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-4 h-4 md:h-6 md:w-6"><path d="M11 3.055A9.001 9.001.0 1020.945 13H11V3.055z"/><path d="M20.488 9H15V3.512A9.025 9.025.0 0120.488 9z"/></svg></div><div class=ml-3><p class=font-semibold>Intranet</p><p class=text-sm>Restricted access</p></div></a></div></div></div></div><div @click.away="open = false" class=relative x-data="{ open: false }"><button @click="open = !open" class="flex flex-row items-center w-full px-4 py-2 mt-2 text-sm font-semibold text-left bg-transparent rounded-lg md:w-auto md:inline md:mt-0 md:ml-4 hover:text-white focus:text-white hover:bg-primary-600 focus:bg-primary-600 focus:outline-none focus:shadow-outline">
-<span>People</span><svg fill="currentcolor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}" class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414.0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414.0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/></svg></button><div x-show=open x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="absolute right-0 z-30 w-full mt-2 origin-top-right rounded-md shadow-lg md:w-48"><div class="px-2 py-2 text-primary-900 bg-white rounded-md shadow"><a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 hover:text-white focus:text-white hover:bg-primary-600 focus:bg-primary-600 focus:outline-none focus:shadow-outline" href=https://cedis.tec.br/categories/researcher/>Researchers</a>
-<a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 hover:text-white focus:text-white hover:bg-primary-600 focus:bg-primary-600 focus:outline-none focus:shadow-outline" href=https://cedis.tec.br/people/list/>Collaborators</a></div></div></div><a class="px-4 py-2 mt-2 text-sm font-semibold rounded-lg md:mt-0 md:ml-4 hover:text-white focus:text-white hover:bg-primary-600 focus:bg-primary-700 focus:outline-none focus:shadow-outline" href=https://cedis.tec.br/categories/project/ title=Projects>Projects</a><div @click.away="open = false" class=relative x-data="{ open: false }"><button @click="open = !open" class="flex flex-row items-center w-full px-4 py-2 mt-2 text-sm font-semibold text-left bg-transparent rounded-lg dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:focus:bg-gray-600 dark-mode:hover:bg-gray-600 md:w-auto md:inline md:mt-0 md:ml-4 hover:text-white focus:text-white hover:bg-primary-600 focus:bg-primary-600 focus:outline-none focus:shadow-outline">
-<span>Productions</span><svg fill="currentcolor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}" class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414.0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414.0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/></svg></button><div x-show=open x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="absolute right-0 z-30 w-full mt-2 origin-top-right md:max-w-sm md:w-screen"><div class="px-2 pt-2 pb-4 bg-white rounded-md shadow-lg text-zinc-900"><div class="grid grid-cols-1 gap-4"><a class="flex items-start p-2 bg-transparent rounded-lg group row hover:text-white focus:text-white hover:bg-primary-600 focus:bg-primary-700 focus:outline-none focus:shadow-outline" href=https://cedis.tec.br/publications/><div class="p-3 text-white bg-primary-600 rounded-lg group-hover:bg-gray-900"><svg fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-4 h-4 md:h-6 md:w-6"><path d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16 2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg></div><div class=ml-3><p class=font-semibold>Publications</p><p class=text-sm>Articles, books and others</p></div></a><a class="flex items-start p-2 bg-transparent rounded-lg group row hover:text-white focus:text-white hover:bg-primary-600 focus:bg-primary-700 focus:outline-none focus:shadow-outline" href=https://cedis.tec.br/categories/products><div class="p-3 text-white bg-primary-600 rounded-lg group-hover:bg-gray-900"><svg fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-4 h-4 md:h-6 md:w-6"><path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863.0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg></div><div class=ml-3><p class=font-semibold>Digital Products and Processes</p><p class=text-sm>Applications, Processes and others</p></div></a></div></div></div></div><a class="px-4 py-2 mt-2 text-sm font-semibold rounded-lg md:mt-0 md:ml-4 hover:text-white focus:text-white hover:bg-primary-600 focus:bg-primary-700 focus:outline-none focus:shadow-outline" href=https://cedis.tec.br/oportunidades/ title=Oportunities>Oportunities
-</a><button id=theme-toggle type=button class="p-2 text-sm text-gray-500 rounded-lg md: dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 md:ml-2 max-w-5 xs:hidden"><svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentcolor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001.0 1010.586 10.586z"/></svg><svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentcolor" viewBox="0 0 20 20" aria-label="Dark or Light Mode" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a1 1 0 011 1v1A1 1 0 119 4V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707A1 1 0 1113.536 5.05l.707-.707a1 1 0 011.414.0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707A1 1 0 004.343 5.757l.707.707zm1.414 8.486-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"/></svg></button><div class=language-switcher><ul><li><span class="px-4 py-2 mt-2 text-sm font-semibold rounded-lg md:mt-0 md:ml-4 hover:text-white focus:text-white hover:bg-primary-600 focus:bg-primary-700 focus:outline-none focus:shadow-outline" aria-label=EN>EN</span><ul aria-labelledby=dropdown-title><li><a title=PT href=https://cedis.tec.br/pt/areas/transformation/ class="px-4 py-2 mt-2 text-sm font-semibold rounded-lg md:mt-0 md:ml-4 hover:text-white focus:text-white hover:bg-primary-600 focus:bg-primary-700 focus:outline-none focus:shadow-outline" aria-label=PT>PT</a></li></ul></li></ul></div></nav></div></div><article><header class="mb-4 bg-primary-600"><span class=py-96><h1 class="py-16 text-5xl font-black text-center text-white">Digital Transformation</h1></span></header><div class="max-w-4xl mx-auto mt-8 mb-2"><div class=px-6><img src=https://cedis.tec.br/../assets/images/featured/area_Transforma%C3%A7%C3%A3o%20Digital_hu904663efef5b1ecc989585460ca836fa_2458020_1500x0_resize_q80_h2_box_3.webp srcset=", /../assets/images/featured/area_Transforma%C3%A7%C3%A3o%20Digital_hu904663efef5b1ecc989585460ca836fa_2458020_400x0_resize_q80_h2_box_3.webp 400w, /../assets/images/featured/area_Transforma%C3%A7%C3%A3o%20Digital_hu904663efef5b1ecc989585460ca836fa_2458020_550x0_resize_q80_h2_box_3.webp 550w, /../assets/images/featured/area_Transforma%C3%A7%C3%A3o%20Digital_hu904663efef5b1ecc989585460ca836fa_2458020_900x0_resize_q80_h2_box_3.webp 768w, /../assets/images/featured/area_Transforma%C3%A7%C3%A3o%20Digital_hu904663efef5b1ecc989585460ca836fa_2458020_1500x0_resize_q80_h2_box_3.webp 1100w" class="object-fill overflow-hidden rounded-lg shadow-lg ring-4 ring-zinc-300/40 dark:ring-gray-900/40 shadow-neutral-100/20 dark:shadow-neutral-800/40" width=30% alt></div></div><div class="max-w-2xl px-6 pt-6 pb-16 mx-auto prose dark:prose-invert dark:text-white"><p>The strong use of Information and Communication Technologies (ICT) originated in the 70s, became popular in the 90s, contributing to increased consumption, improved quality of life, and well-being of people in the information society, connected by various services of both commercial and governmental natures. In this context, terms such as electronic government, e-Government, and Digital Government emerged, along with concerns about the <em>Digital Divide</em>, reflecting on digital inclusion/exclusion as factors impacting the social inclusion of various populations. The impacts necessitate formulating digital transformation strategies for the involved organizations and institutions.</p><p>The Brazilian Federal Government&rsquo;s Digital Public Services Transformation project involves research, development, and innovation in methodologies, models, and tools that promote the automation and digitization of public services offered by the Ministry of Economy (ME), by the Special Secretariat for Debureaucratization, Management, and Digital Government (specifically by the Secretariat of Digital Government (SGD), aiming at the transformation of federal public services. The project was established between UnB (ITRAC Laboratory of the Faculty of Gama) and the ME.</p><h1 id=cedis-members>CEDIS Members:</h1><p><strong>Prof. Dr. George Marsicano</strong></p><p>Participation: Prof. Dr. George Marsicano collaborates individually with the Brazilian Federal Government&rsquo;s Digital Public Services Transformation project, alongside the ITRAC Laboratory, mainly in the areas of Agile Project Management, Software Requirements, Software Engineering, and Software Development Approaches.</p><p>As another initiative, the ongoing doctoral project of Prof. MSc Ricardo Kosloski, discussing the impact factors associated with the area of software quality, on the use of e-Gov services by elderly people, a population continuously growing worldwide, as well as in Brazil.</p><p>In the Brazilian context, after a population growth peak between the 50s/60s, improvements in medicine and hygiene minimized mortality rates. Subsequently, social phenomena such as family planning, urbanization, migration flows, and the participation of women in the workforce balanced mortality and fertility rates, resulting in more modest demographic growth and consequently in the aging of the Brazilian population, following a global trend. Moreover, involving specific populations in the digital transformation process aims to give them a voice and empowerment towards achieving an e-Democracy characteristic of the information society, according to international guidelines established by works like <em>Nothing about us, without us</em> (CHARLTON, 2004).</p><h2 id=publications-and-productions>Publications and Productions</h2><h3 id=publications>Publications</h3><ol class=publications-lncs><li x-data="{ open: false }">ERVEN, RICARDO CORDEIRO GALVÃO SANTANA VAN,DIAS, POLLYANNA C. O.,JUBÉ, DEMÉTRIUS DE ALMEIDA,CORRÊA, GEORGE MARSICANO,CANEDO, EDNA DIAS,
-<span>Avaliação de Conhecimento em Engenharia de Requisitos no Startup Gov.br
-</span>, 2023
-. DOI: <a href=https://doi.org/10.29327/1298356.26-11 target=_blank>10.29327/1298356.26-11</a>
-. Tags:
-<a href=https://cedis.tec.br/tags/software_requirements>Requirements Engineering</a>,
-<a href=https://cedis.tec.br/tags/digital_transformation>Digital Transformation</a>
-.</li><li x-data="{ open: false }">Fabiana Ribas,
-<span><a href=https://www.bdm.unb.br/handle/10483/33852>Accessibility Analysis for Elderly People in e-Gov Services - A Case Study
-</a></span><span>. Senior Project (Bachelor of Software Engineering) - University of Brasília (Brazil)</span>, 2023
-Advisor(s):
-<a href=https://cedis.tec.br/people/ricardo_ajax>Ricardo Ajax</a>
-. Tags:
-<a href=https://cedis.tec.br/tags/digital_transformation>Digital Transformation</a>
-.</li><li x-data="{ open: false }">Igor Veludo Byron Corrêa,
-<span><a href=https://www.bdm.unb.br/handle/10483/33850>An Evolution of the Agromart Project - Open Source, Payment Methods, and Co-Farmers Management
-</a></span><span>. Senior Project (Bachelor of Software Engineering) - University of Brasília (Brazil)</span>, 2023
-Advisor(s):
-<a href=https://cedis.tec.br/people/andre_lanna>André Lanna</a>
-. Tags:
-<a href=https://cedis.tec.br/tags/green_software>Green Software</a>,
-<a href=https://cedis.tec.br/tags/digital_transformation>Digital Transformation</a>
-.</li><li x-data="{ open: false }">João Rossi Paulo Rocha,
-<span><a href=https://www.bdm.unb.br/handle/10483/34027>Promoting Quality of Life at Work in the Public Sector - Proposal of a Web Tool to Support Data Collection for the Work-Life Quality Assessment Inventory (IA_QVT)
-</a></span><span>. Senior Project (Bachelor of Software Engineering) - University of Brasília (Brazil)</span>, 2023
-Advisor(s):
-<a href=https://cedis.tec.br/people/fabiana_mendes>Fabiana Mendes</a>
-. Tags:
-<a href=https://cedis.tec.br/tags/digital_transformation>Digital Transformation</a>
-.</li><li x-data="{ open: false }">Marcelo Victor de Sousa Silva,
-<span>FormsGeo - A Geolocation-Based App for Social Surveys
-</span><span>. Senior Project (Bachelor of Software Engineering) - University of Brasília (Brazil)</span>, 2023
-Advisor(s):
-<a href=https://cedis.tec.br/people/fabiana_mendes>Fabiana Mendes</a>
-. Tags:
-<a href=https://cedis.tec.br/tags/software_requirements>Requirements Engineering</a>,
-<a href=https://cedis.tec.br/tags/digital_transformation>Digital Transformation</a>
-.</li><li x-data="{ open: false }">MARSICANO, GEORGE,CANEDO, EDNA,PEDROSA, GLAUCO,RAMOS, CRISTIANE,FIGUEIREDO, REJANE,
-<span>Digital Transformation of Public Services from the Perception of ICT Practitioners in a Startup-Based Environment
-</span>, in 25th International Conference on Enterprise Information Systems
-, p490, 2023
-. DOI: <a href=https://doi.org/10.5220/0011826600003467 target=_blank>10.5220/0011826600003467</a>
-. Tags:
-<a href=https://cedis.tec.br/tags/digital_transformation>Digital Transformation</a>
-.</li><li x-data="{ open: false }">Pedro Cella André Freitas,
-<span><a href=https://www.bdm.unb.br/handle/10483/35945>An Evolution of the Agromart Project - Individualized and Automated Deployment of a CSA Environment
-</a></span><span>. Senior Project (Bachelor of Software Engineering) - University of Brasília (Brazil)</span>, 2023
-Advisor(s):
-<a href=https://cedis.tec.br/people/andre_lanna>André Lanna</a>
-. Tags:
-<a href=https://cedis.tec.br/tags/green_software>Green Software</a>,
-<a href=https://cedis.tec.br/tags/digital_transformation>Digital Transformation</a>
-.</li><li x-data="{ open: false }">CAVALCANTI, P. P.,FREITAS, S. A. A.,
-<span>Evaluation of the Change in the Quality of Reports with the Application of Gamification in a Corporative Institution
-</span>, in Proceedings of the 24th International Conference on Human-Computer Interaction
-, p353-367, 2022
-. DOI: <a href=https://doi.org/10.1007/978-3-031-05544-7_27 target=_blank>10.1007/978-3-031-05544-7_27</a>
-. Tags:
-<a href=https://cedis.tec.br/tags/gamification>Gamification</a>,
-<a href=https://cedis.tec.br/tags/digital_transformation>Digital Transformation</a>
-.</li><li x-data="{ open: false }">Filipe Silva,
-<span><a href=https://www.bdm.unb.br/handle/10483/30701>The State of Software Maintenance Practice in Early Stage Software Startups
-</a></span><span>. Senior Project (Bachelor of Software Engineering) - University of Brasília (Brazil)</span>, 2022
-Advisor(s):
-<a href=https://cedis.tec.br/people/cristiane_ramos>Cristiane Ramos</a>
-. Tags:
-<a href=https://cedis.tec.br/tags/software_architecture>Software Architecture</a>,
-<a href=https://cedis.tec.br/tags/digital_transformation>Digital Transformation</a>
-.</li><li x-data="{ open: false }">FURTADO, S. L.,MARSICANO, G. C.,
-<span>Identification and Applicability of Additional Security Factors on the GOV.BR Digital Identity Platform
-</span>, in 19th CONTECSI - International Conference on Information Systems and Technology Management
-, 2022
-. DOI: <a href=https://doi.org/10.5748/19CONTECSI/PSE/GOV/7034 target=_blank>10.5748/19CONTECSI/PSE/GOV/7034</a>
-. Tags:
-<a href=https://cedis.tec.br/tags/digital_transformation>Digital Transformation</a>
-.</li><li x-data="{ open: false }">MOURA, D. R. C.,MARSICANO, G. C.,
-<span>Proposição de Melhoria de Usabilidade da Interação entre Usuário e Sistema Corporativo
-</span>, in 19th CONTECSI - International Conference on Information Systems and Technology Management
-, 2022
-. DOI: <a href=https://doi.org/10.5748/19CONTECSI/PSE/ESD/7019 target=_blank>10.5748/19CONTECSI/PSE/ESD/7019</a>
-. Tags:
-<a href=https://cedis.tec.br/tags/digital_transformation>Digital Transformation</a>,
-<a href=https://cedis.tec.br/tags/soft_skills>Soft Skills</a>
-.</li><li x-data="{ open: false }">Luciana Santos de Assis,
-<span>Critical Evaluation and Case Study on the Implementation of Gamification in Organizational Contexts
-</span><span>. Master's Thesis in Applied Computing, University of Brasília (Brazil)</span>, 2023
-Advisor(s):
-<a href=https://cedis.tec.br/people/sergio_freitas>Sergio Freitas</a>
-. Tags:
-<a href=https://cedis.tec.br/tags/gamification>Gamification</a>,
-<a href=https://cedis.tec.br/tags/soft_skills>Soft Skills</a>,
-<a href=https://cedis.tec.br/tags/digital_transformation>Digital Transformation</a>
-.<div><button @click="open = !open" class="bg-primary-500 text-white p-2 rounded cursor-pointer">
-Abstract</button><div x-show=open class="mt-2 pl-4 font-serif" x-cloak><span class="text-neutral-700 text-sm">Gamification is a way to use game elements and apply them in real-world contexts to motivate people and create a more productive environment. Considered a tool aimed at increasing engagement, gamification can be applied across various areas, including organizational activities. This work proposes a Case Study at the Brazilian Agricultural Research Corporation (Embrapa), analyzing the effects of a gamification solution applied to the Innovation Macroprocess (MPI), which is responsible for managing research, development, and innovation solutions for the sustainability of the Brazilian agribusiness. The main goal is to evaluate the effectiveness of gamification in enhancing engagement, collaboration, and motivation of employees regarding the use of the Asset Management System (Gestec), a computational tool that implements part of the MPI. Initially, a study of the theoretical foundations of gamification was conducted, followed by a Systematic Literature Review (SLR) to investigate the main frameworks, techniques, and effects of gamification solutions in organizational environments. Subsequently, a Case Study was initiated with the identification of the motivational profile of the target audience and the development of a project that includes the application of sixteen gamification requirements. Of these, ten requirements were prioritized and implemented for the experimentation phase, which was made available to a group of twenty-seven participants to evaluate the effects of the proposed solution. Overall, the results indicated an improvement in the motivational perception regarding the use of the system.</span></div></div></li><li x-data="{ open: false }">MARIANI, C. B.,RAMOS, J. C. C.,RODRIGUES, L. S.,KOSLOSKI, R. A. D.,FECHINE, V. M. R.,
-<span><a href=https://periodicos.unb.br/index.php/revistadoceam/article/view/40826>Instrumento de ação pública: edital de inclusão digital para retomada das atividades acadêmicas dos estudantes da Universidade de Brasília, no contexto da pandemia da COVID-19
-</a></span>, REVISTA DO CEAM
-, 7(56-78), 2021
-. Tags:
-<a href=https://cedis.tec.br/tags/digital_transformation>Digital Transformation</a>
-.</li><li x-data="{ open: false }">YAMAUCHI, EDUARDO,MACIEL, CRISTIANO,MENDES, FABIANA,UEDA, GUSTAVO,PEREIRA, VINICIUS,
-<span>Digital Legacy Management Systems: Theoretical, Systemic and Users Perspective
-</span>, in 23rd International Conference on Enterprise Information Systems
-, p41, 2021
-. DOI: <a href=https://doi.org/10.5220/0010449800410053 target=_blank>10.5220/0010449800410053</a>
-. Tags:
-<a href=https://cedis.tec.br/tags/digital_transformation>Digital Transformation</a>
-.</li><li x-data="{ open: false }">Laércio Sousa Júnior,
-<span><a href=https://www.bdm.unb.br/handle/10483/23055>Determining the Authorship Rate Within a Project Using Git
-</a></span><span>. Senior Project (Bachelor of Software Engineering) - University of Brasília (Brazil)</span>, 2020
-Advisor(s):
-<a href=https://cedis.tec.br/people/andre_lanna>André Lanna</a>
-. Tags:
-<a href=https://cedis.tec.br/tags/software_architecture>Software Architecture</a>,
-<a href=https://cedis.tec.br/tags/digital_transformation>Digital Transformation</a>
-.</li><li x-data="{ open: false }">Luis Guimarães Jonathan Paiva,
-<span><a href=https://www.bdm.unb.br/handle/10483/21590>NotifiCar - App for Monitoring the Status of Cars in a City
-</a></span><span>. Senior Project (Bachelor of Software Engineering) - University of Brasília (Brazil)</span>, 2019
-Advisor(s):
-<a href=https://cedis.tec.br/people/andre_lanna>André Lanna</a>
-. Tags:
-<a href=https://cedis.tec.br/tags/software_architecture>Software Architecture</a>,
-<a href=https://cedis.tec.br/tags/digital_transformation>Digital Transformation</a>
-.</li><li x-data="{ open: false }">DANTAS, J. M.,FREITAS, S. A. A.,
-<span><a href=https://portal.tcu.gov.br/governanca-em-tecnologia-de-informacao-e-comunicacao-para-o-setor-publico.htm>Gestão de Continuidade de Serviços de TI: Site de Contingência
-</a></span>, 2018
-. DOI: <a href=https://doi.org/9788560365272 target=_blank>9788560365272</a>
-. Tags:
-<a href=https://cedis.tec.br/tags/digital_transformation>Digital Transformation</a>
-.</li><li x-data="{ open: false }">FELISDORIO, R. C. S.,FREITAS, S. A. A.,
-<span><a href=https://portal.tcu.gov.br/governanca-em-tecnologia-de-informacao-e-comunicacao-para-o-setor-publico.htm>Análise do processo de gestão de riscos na elaboração do plano diretor de tecnologia da informação  PDTI no setor público
-</a></span>, 2018
-. DOI: <a href=https://doi.org/9788560365272 target=_blank>9788560365272</a>
-. Tags:
-<a href=https://cedis.tec.br/tags/digital_transformation>Digital Transformation</a>
-.</li><li x-data="{ open: false }">FIGUEIREDO, R.M.C.,SANTOS, R.R.,FREITAS, S. A. A.,
-<span><a href=https://portal.tcu.gov.br/governanca-em-tecnologia-de-informacao-e-comunicacao-para-o-setor-publico.htm>Governança em tecnologia de informação e comunicação para o setor público
-</a></span>, TCU, 2018
-. DOI: <a href=https://doi.org/9788560365272 target=_blank>9788560365272</a>
-. Tags:
-<a href=https://cedis.tec.br/tags/digital_transformation>Digital Transformation</a>
-.</li><li x-data="{ open: false }">FREITAS, S. A. A.,CANEDO, EDNA,SANTOS FELISDÓRIO, RODRIGO,LEÃO, HELOISE,
-<span>Analysis of the Risk Management Process on the Development of the Public Sector Information Technology Master Plan
-</span>, INFORMATION
-, 9(248), 2018
-. DOI: <a href=https://doi.org/10.3390/info9100248 target=_blank>10.3390/info9100248</a>
-. Tags:
-<a href=https://cedis.tec.br/tags/digital_transformation>Digital Transformation</a>
-.</li><li x-data="{ open: false }">MARTINS, L. B.,FREITAS, S. A. A.,
-<span><a href=https://portal.tcu.gov.br/governanca-em-tecnologia-de-informacao-e-comunicacao-para-o-setor-publico.htm>Gestão de riscos e governança de TI aplicada à rede de comunicação governamental
-</a></span>, 2018
-. DOI: <a href=https://doi.org/9788560365272 target=_blank>9788560365272</a>
-. Tags:
-<a href=https://cedis.tec.br/tags/digital_transformation>Digital Transformation</a>
-.</li><li x-data="{ open: false }">POLETTO, J. A. R.,FREITAS, S. A. A.,
-<span><a href=https://portal.tcu.gov.br/governanca-em-tecnologia-de-informacao-e-comunicacao-para-o-setor-publico.htm>Identificação de riscos em fiscalizações de obras públicas realizadas pelo TCU e o papel da tecnologia da informação em mitigá-los
-</a></span>, 2018
-. DOI: <a href=https://doi.org/9788560365272 target=_blank>9788560365272</a>
-. Tags:
-<a href=https://cedis.tec.br/tags/digital_transformation>Digital Transformation</a>
-.</li><li x-data="{ open: false }">CALAZANS, ANGELICA TOFFANO SEIDEL,KOSLOSKI, Ricardo Ajax Dias,FERNANDO, G.,
-<span>Proposta de modelo de medições para contratação do gerenciamento de processo de negócio (Business Process Management - BPM)
-</span>, Revista de Gestão da Tecnologia e Sistemas de Informação
-, 13(275-300), 2016
-. DOI: <a href=https://doi.org/10.4301/S1807-17752016000200007 target=_blank>10.4301/S1807-17752016000200007</a>
-. Tags:
-<a href=https://cedis.tec.br/tags/digital_transformation>Digital Transformation</a>
-.</li><li x-data="{ open: false }">Endo, L,MENDES, F. F.,Canedo, E. D.,
-<span>Supportive metrics to estimate the effort to develop Business Intelligence system
-</span>, in 11th Iberian Conference on Information Systems and Technologies (CISTI)
-, 2016
-. DOI: <a href=https://doi.org/10.1109/CISTI.2016.7521476 target=_blank>10.1109/CISTI.2016.7521476</a>
-. Tags:
-<a href=https://cedis.tec.br/tags/digital_transformation>Digital Transformation</a>
-.</li><li x-data="{ open: false }">Igor Ramos,
-<span><a href=https://www.bdm.unb.br/handle/10483/11334>Proposal of a Methodology for Map Creation in Systematic Mapping Studies Based on Knowledge Related to Ontologies
-</a></span><span>. Senior Project (Bachelor of Software Engineering) - University of Brasília (Brazil)</span>, 2015
-Advisor(s):
-<a href=https://cedis.tec.br/people/fabiana_mendes>Fabiana Mendes</a>
-. Tags:
-<a href=https://cedis.tec.br/tags/digital_transformation>Digital Transformation</a>,
-<a href=https://cedis.tec.br/tags/ia></a>.</li><li x-data="{ open: false }">Thiago Honorato,
-<span><a href=https://www.bdm.unb.br/handle/10483/11322>A Proposal for a Selection Method for CMS Systems
-</a></span><span>. Senior Project (Bachelor of Software Engineering) - University of Brasília (Brazil)</span>, 2015
-Advisor(s):
-<a href=https://cedis.tec.br/people/ricardo_ajax>Ricardo Ajax</a>
-. Tags:
-<a href=https://cedis.tec.br/tags/software_requirements>Requirements Engineering</a>,
-<a href=https://cedis.tec.br/tags/digital_transformation>Digital Transformation</a>
-.</li><li x-data="{ open: false }">Rafael Ferreira dos Santos,
-<span><a href=https://www.bdm.unb.br/handle/10483/7965>Evaluation of the implementation of an ITIL v3-based Service Desk system - a case study in a public agency
-</a></span><span>. Senior Project (Bachelor of Software Engineering) - University of Brasília (Brazil)</span>, 2014
-Advisor(s):
-<a href=https://cedis.tec.br/people/sergio_freitas>Sergio Freitas</a>
-. Tags:
-<a href=https://cedis.tec.br/tags/digital_transformation>Digital Transformation</a>
-.<div><button @click="open = !open" class="bg-primary-500 text-white p-2 rounded cursor-pointer">
-Abstract</button><div x-show=open class="mt-2 pl-4 font-serif" x-cloak><span class="text-neutral-700 text-sm">This work aims to evaluate the deployment of a Service Desk tool for IT service management in a public organization, aligning with its strategic objectives, daily operations, organizational needs, and the ITIL v3 infrastructure library. IT services are crucial for organizational activities, with management applications being integral for client access to these services. In the public sector, the increasing demand for quality service delivery emphasizes the importance of effective IT management applications to adapt to constant IT changes. The study identifies the lack of proper IT service management or flawed management as a source of service availability issues, resource overallocation, and negative impacts on IT's reputation. It focuses on the Ministry "A" scenario, highlighting the necessity for an effective IT Service Management tool, OTRS, based on Incident Management processes to improve the IT Governance Index (iGovTI). This End Graduation Work seeks to assess the implementation process of OTRS and its potential to enhance IT Service Management governance.</span></div></div></li></ol></div></article><script defer src=https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js></script><script src=https://cedis.tec.br/js/darkmode.js defer></script><script src=https://cedis.tec.br/js/flexsearch.compact.min.js></script><footer class=bg-gray-900><div class="max-w-md px-4 py-12 mx-auto overflow-hidden sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8"><nav class="flex flex-wrap justify-center -mx-5 -my-2" aria-label=Footer><div class="px-5 py-2"><a href=https://cedis.tec.br/categories/news/ class="text-base text-gray-400 hover:text-gray-300">More News</a></div><div class="px-5 py-2"><a href=https://cedis.tec.br/contact/ class="text-base text-gray-400 hover:text-gray-300">Contact</a></div></nav><div class="flex justify-center mt-8 space-x-6"></div><div class=footer-container style=display:flex;justify-content:center;align-items:center;text-align:center;flex-wrap:wrap><div class=footer-text style=flex-grow:1><p class="mt-8 text-base text-gray-400">&copy; 2024
-CEDIS. Todos direitos reservados.</p></div><div class=footer-image style=margin-left:auto><a href=https://www.unb.br target=_blank rel="noopener noreferrer"><img src=https://cedis.tec.br/images/as_vert_neg.webp alt="Logo UnB" style=width:auto;height:50px></a></div></div></div></footer></body></html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="apple-touch-icon" sizes="180x180" href="http://localhost:1313/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon/favicon-16x16.png">
+<link rel="manifest" href="http://localhost:1313/favicon/site.webmanifest">
+<link rel="mask-icon" href="http://localhost:1313/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<title itemprop="name"> Digital Transformation | CEDIS 
+</title>
+<meta name="description" content="Discover the future of Software Engineering, Learning, and Artificial Intelligence. Since 2013, the Center for Studies, Development, and Innovation in Software has led innovative projects in research, development, and education." />
+<meta property="og:title" content="Digital Transformation | CEDIS" />
+<meta name="twitter:title" content="Digital Transformation | CEDIS" />
+<meta itemprop="name" content="Digital Transformation | CEDIS" />
+<meta name="application-name" content="Digital Transformation | CEDIS" />
+<meta property="og:description"
+      content="Discover the future of Software Engineering, Learning, and Artificial Intelligence. Since 2013, the Center for Studies, Development, and Innovation in Software has led innovative projects in research, development, and education." />
+<meta property="og:site_name" content="CEDIS" />
+<meta property="og:url" content="http://localhost:1313/areas/transformation/" />
+<meta property="og:locale" content="en">
+<meta property="og:image" content="/../assets/images/featured/area_Transformação Digital.png" />
+<meta property="og:image:secure_url" content="http://localhost:1313/assets/images/featured/area_Transforma%C3%A7%C3%A3o%20Digital.png" />
+<meta property="og:type" content="article" />
+
+<script>
+    
+    if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark');
+    } else {
+        document.documentElement.classList.remove('dark')
+    }
+</script>
+
+
+<link rel="stylesheet" href="http://localhost:1313/css/style.css" />
+
+</head>
+
+<body class="bg-zinc-100 dark:bg-gray-800">
+    <div class="top-0 z-50 w-full text-gray-200 bg-gray-900 border-2 border-gray-900 md:sticky border-b-stone-200/10">
+    <div x-data="{ open: false }"
+         class="flex flex-col max-w-full px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
+        <div class="flex flex-row items-center justify-between p-4">
+            <a href="http://localhost:1313/" class="flex text-gray-100 transition duration-1000 ease-in-out group">
+                <img src="http://localhost:1313/images/site-logo.svg"
+                     class="transition-opacity h-9 w-24 group-hover:opacity-50 group-focus:opacity-70"
+                     alt="CEDIS Logo" />
+                <div
+                     class="mt-0 ml-3 text-3xl font-black tracking-tight text-gray-100 case transition-colors group-hover:text-gray-400/60">
+                    CEDIS</div>
+            </a>
+            <button class="rounded-lg md:hidden focus:outline-none focus:shadow-outline" @click="open = !open" role="navigation" aria-expanded="false" aria-label="Main" aria-controls="menuItems">
+                <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+                    <path x-show="!open" fill-rule="evenodd"
+                          d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+                          clip-rule="evenodd"></path>
+                    <path x-show="open" fill-rule="evenodd"
+                          d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                          clip-rule="evenodd"></path>
+                </svg>
+            </button>
+        </div>
+        <nav :class="{'flex': open, 'hidden': !open}"
+             class="flex-col flex-grow hidden pb-4 md:pb-0 md:flex md:justify-end md:flex-row">
+            
+            
+            <div @click.away="open = false" class="relative" x-data="{ open: false }">
+                <button @click="open = !open"
+                        class="flex flex-row items-center w-full px-4 py-2 mt-2 text-sm font-semibold text-left bg-transparent rounded-lg dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:focus:bg-gray-600 dark-mode:hover:bg-gray-600 md:w-auto md:inline md:mt-0 md:ml-4 hover:text-white focus:text-white hover:bg-primary-600 focus:bg-primary-600 focus:outline-none focus:shadow-outline">
+                    <span>About</span>
+                    <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}"
+                         class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1">
+                        <path fill-rule="evenodd"
+                              d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                              clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+                <div x-show="open" x-transition:enter="transition ease-out duration-100"
+                     x-transition:enter-start="transform opacity-0 scale-95"
+                     x-transition:enter-end="transform opacity-100 scale-100"
+                     x-transition:leave="transition ease-in duration-75"
+                     x-transition:leave-start="transform opacity-100 scale-100"
+                     x-transition:leave-end="transform opacity-0 scale-95"
+                     class="absolute right-0 z-30 w-full mt-2 origin-top-right md:max-w-sm md:w-screen">
+                    <div class="px-2 pt-2 pb-4 bg-white rounded-md shadow-lg text-zinc-900">
+                        <div class="grid grid-cols-1 gap-4">
+                            
+                            <a class="flex items-start p-2 bg-transparent rounded-lg group row hover:text-white focus:text-white hover:bg-primary-600 focus:bg-primary-700 focus:outline-none focus:shadow-outline"
+                               href="http://localhost:1313/categories/knowledge_areas/">
+                                <div class="p-3 text-white bg-primary-600 rounded-lg group-hover:bg-gray-900">
+                                    
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round"
+                                         stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
+                                         class="w-4 h-4 md:h-6 md:w-6">
+                                        <path
+                                              d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z">
+                                        </path>
+                                    </svg>
+                                    
+                                    
+                                </div>
+                                <div class="ml-3">
+                                    <p class="font-semibold">Areas of expertise</p>
+                                    <p class="text-sm">Research, development, and training</p>
+                                </div>
+                            </a>
+                            
+                            <a class="flex items-start p-2 bg-transparent rounded-lg group row hover:text-white focus:text-white hover:bg-primary-600 focus:bg-primary-700 focus:outline-none focus:shadow-outline"
+                               href="http://localhost:1313/infra/">
+                                <div class="p-3 text-white bg-primary-600 rounded-lg group-hover:bg-gray-900">
+                                    
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round"
+                                         stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
+                                         class="w-4 h-4 md:h-6 md:w-6">
+                                        <path d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z">
+                                        </path>
+                                        <path d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z">
+                                        </path>
+                                    </svg>
+                                    
+                                    
+                                </div>
+                                <div class="ml-3">
+                                    <p class="font-semibold">Infrastructure</p>
+                                    <p class="text-sm">Equipment and facilities</p>
+                                </div>
+                            </a>
+                            
+                            <a class="flex items-start p-2 bg-transparent rounded-lg group row hover:text-white focus:text-white hover:bg-primary-600 focus:bg-primary-700 focus:outline-none focus:shadow-outline"
+                               href="http://localhost:1313/history/">
+                                <div class="p-3 text-white bg-primary-600 rounded-lg group-hover:bg-gray-900">
+                                    
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round"
+                                         stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
+                                         class="w-4 h-4 md:h-6 md:w-6">
+                                        <path
+                                              d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z">
+                                        </path>
+                                    </svg>
+                                    
+                                    
+                                </div>
+                                <div class="ml-3">
+                                    <p class="font-semibold">History</p>
+                                    <p class="text-sm">Our journey and achievements</p>
+                                </div>
+                            </a>
+                            
+                            <a class="flex items-start p-2 bg-transparent rounded-lg group row hover:text-white focus:text-white hover:bg-primary-600 focus:bg-primary-700 focus:outline-none focus:shadow-outline"
+                               href="https://unbbr.sharepoint.com/sites/CEDIS">
+                                <div class="p-3 text-white bg-primary-600 rounded-lg group-hover:bg-gray-900">
+                                    
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round"
+                                         stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
+                                         class="w-4 h-4 md:h-6 md:w-6">
+                                        <path d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z">
+                                        </path>
+                                        <path d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z">
+                                        </path>
+                                    </svg>
+                                    
+                                    
+                                </div>
+                                <div class="ml-3">
+                                    <p class="font-semibold">Intranet</p>
+                                    <p class="text-sm">Restricted access</p>
+                                </div>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+            <div @click.away="open = false" class="relative" x-data="{ open: false }">
+                <button @click="open = !open"
+                        class="flex flex-row items-center w-full px-4 py-2 mt-2 text-sm font-semibold text-left bg-transparent rounded-lg md:w-auto md:inline md:mt-0 md:ml-4 hover:text-white focus:text-white hover:bg-primary-600 focus:bg-primary-600 focus:outline-none focus:shadow-outline">
+                    <span>People</span>
+                    <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}"
+                         class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1">
+                        <path fill-rule="evenodd"
+                              d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                              clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+                <div x-show="open" x-transition:enter="transition ease-out duration-100"
+                     x-transition:enter-start="transform opacity-0 scale-95"
+                     x-transition:enter-end="transform opacity-100 scale-100"
+                     x-transition:leave="transition ease-in duration-75"
+                     x-transition:leave-start="transform opacity-100 scale-100"
+                     x-transition:leave-end="transform opacity-0 scale-95"
+                     class="absolute right-0 z-30 w-full mt-2 origin-top-right rounded-md shadow-lg md:w-48">
+                    <div class="px-2 py-2 text-primary-900 bg-white rounded-md shadow">
+                        
+                        <a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 hover:text-white focus:text-white hover:bg-primary-600 focus:bg-primary-600 focus:outline-none focus:shadow-outline"
+                           href="http://localhost:1313/categories/researcher/">Researchers</a>
+                        
+                        <a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 hover:text-white focus:text-white hover:bg-primary-600 focus:bg-primary-600 focus:outline-none focus:shadow-outline"
+                           href="http://localhost:1313/people/list/">Collaborators</a>
+                        
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+            <a class="px-4 py-2 mt-2 text-sm font-semibold rounded-lg md:mt-0 md:ml-4 hover:text-white focus:text-white hover:bg-primary-600 focus:bg-primary-700 focus:outline-none focus:shadow-outline"
+                href="http://localhost:1313/categories/project/" title="Projects">
+                Projects
+            </a>
+            
+            
+            
+            <div @click.away="open = false" class="relative" x-data="{ open: false }">
+                <button @click="open = !open"
+                        class="flex flex-row items-center w-full px-4 py-2 mt-2 text-sm font-semibold text-left bg-transparent rounded-lg dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:focus:bg-gray-600 dark-mode:hover:bg-gray-600 md:w-auto md:inline md:mt-0 md:ml-4 hover:text-white focus:text-white hover:bg-primary-600 focus:bg-primary-600 focus:outline-none focus:shadow-outline">
+                    <span>Productions</span>
+                    <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}"
+                         class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1">
+                        <path fill-rule="evenodd"
+                              d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                              clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+                <div x-show="open" x-transition:enter="transition ease-out duration-100"
+                     x-transition:enter-start="transform opacity-0 scale-95"
+                     x-transition:enter-end="transform opacity-100 scale-100"
+                     x-transition:leave="transition ease-in duration-75"
+                     x-transition:leave-start="transform opacity-100 scale-100"
+                     x-transition:leave-end="transform opacity-0 scale-95"
+                     class="absolute right-0 z-30 w-full mt-2 origin-top-right md:max-w-sm md:w-screen">
+                    <div class="px-2 pt-2 pb-4 bg-white rounded-md shadow-lg text-zinc-900">
+                        <div class="grid grid-cols-1 gap-4">
+                            
+                            <a class="flex items-start p-2 bg-transparent rounded-lg group row hover:text-white focus:text-white hover:bg-primary-600 focus:bg-primary-700 focus:outline-none focus:shadow-outline"
+                               href="http://localhost:1313/publications/">
+                                <div class="p-3 text-white bg-primary-600 rounded-lg group-hover:bg-gray-900">
+                                    
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round"
+                                         stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
+                                         class="w-4 h-4 md:h-6 md:w-6">
+                                        <path
+                                              d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z">
+                                        </path>
+                                    </svg>
+                                    
+                                    
+                                </div>
+                                <div class="ml-3">
+                                    <p class="font-semibold">Publications</p>
+                                    <p class="text-sm">Articles, books and others</p>
+                                </div>
+                            </a>
+                            
+                            <a class="flex items-start p-2 bg-transparent rounded-lg group row hover:text-white focus:text-white hover:bg-primary-600 focus:bg-primary-700 focus:outline-none focus:shadow-outline"
+                               href="http://localhost:1313/categories/products">
+                                <div class="p-3 text-white bg-primary-600 rounded-lg group-hover:bg-gray-900">
+                                    
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round"
+                                         stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
+                                         class="w-4 h-4 md:h-6 md:w-6">
+                                        <path
+                                              d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z">
+                                        </path>
+                                    </svg>
+                                    
+                                    
+                                </div>
+                                <div class="ml-3">
+                                    <p class="font-semibold">Digital Products and Processes</p>
+                                    <p class="text-sm">Applications, Processes and others</p>
+                                </div>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+            <a class="px-4 py-2 mt-2 text-sm font-semibold rounded-lg md:mt-0 md:ml-4 hover:text-white focus:text-white hover:bg-primary-600 focus:bg-primary-700 focus:outline-none focus:shadow-outline"
+                href="http://localhost:1313/oportunidades/" title="Oportunities">
+                Oportunities
+            </a>
+            
+            
+            
+            <button id="theme-toggle" type="button"
+                    class="p-2 text-sm text-gray-500 rounded-lg md: dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 md:ml-2 max-w-5 xs:hidden">
+                <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z">
+                    </path>
+                </svg>
+                <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                     aria-label="Dark or Light Mode" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                          fill-rule="evenodd" clip-rule="evenodd"></path>
+                </svg>
+            </button>
+            
+            <div class="language-switcher">
+            <ul>
+                
+                
+                  
+                
+                <li><span class="px-4 py-2 mt-2 text-sm font-semibold rounded-lg md:mt-0 md:ml-4 hover:text-white focus:text-white hover:bg-primary-600 focus:bg-primary-700 focus:outline-none focus:shadow-outline" aria-label="EN">EN</span>
+                  
+                  
+                  <ul aria-labelledby="dropdown-title">
+                    
+                    <li><a title="PT" href="http://localhost:1313/pt/areas/transformation/" class="px-4 py-2 mt-2 text-sm font-semibold rounded-lg md:mt-0 md:ml-4 hover:text-white focus:text-white hover:bg-primary-600 focus:bg-primary-700 focus:outline-none focus:shadow-outline" aria-label="PT">PT</a></li>
+                  </ul>
+                    
+                </li>
+              </ul>
+              </div>
+        </nav>
+    </div>
+</div>
+    
+<article>
+  <header class="mb-4 bg-primary-600">
+    <span class="py-96">
+      <h1 class="py-16 text-5xl font-black text-center text-white">
+        Digital Transformation
+      </h1>
+    </span>
+  </header>
+  <div class="max-w-4xl mx-auto mt-8 mb-2">
+    <div class="px-6">
+      
+      
+      
+      
+      
+      
+      <img src="http://localhost:1313/../assets/images/featured/area_Transforma%C3%A7%C3%A3o%20Digital_hu904663efef5b1ecc989585460ca836fa_2458020_1500x0_resize_q80_h2_box_3.webp" srcset=", /../assets/images/featured/area_Transforma%C3%A7%C3%A3o%20Digital_hu904663efef5b1ecc989585460ca836fa_2458020_400x0_resize_q80_h2_box_3.webp 400w, /../assets/images/featured/area_Transforma%C3%A7%C3%A3o%20Digital_hu904663efef5b1ecc989585460ca836fa_2458020_550x0_resize_q80_h2_box_3.webp 550w, /../assets/images/featured/area_Transforma%C3%A7%C3%A3o%20Digital_hu904663efef5b1ecc989585460ca836fa_2458020_900x0_resize_q80_h2_box_3.webp 768w, /../assets/images/featured/area_Transforma%C3%A7%C3%A3o%20Digital_hu904663efef5b1ecc989585460ca836fa_2458020_1500x0_resize_q80_h2_box_3.webp 1100w"
+           class="object-fill overflow-hidden rounded-lg shadow-lg ring-4 ring-zinc-300/40 dark:ring-gray-900/40 shadow-neutral-100/20 dark:shadow-neutral-800/40"
+           width="30%" alt="" />
+      
+      
+    </div>
+  </div>
+  
+  <div class="max-w-2xl px-6 pt-6 pb-16 mx-auto prose dark:prose-invert dark:text-white">
+    <p>The strong use of Information and Communication Technologies (ICT) originated in the 70s, became popular in the 90s, contributing to increased consumption, improved quality of life, and well-being of people in the information society, connected by various services of both commercial and governmental natures. In this context, terms such as electronic government, e-Government, and Digital Government emerged, along with concerns about the <em>Digital Divide</em>, reflecting on digital inclusion/exclusion as factors impacting the social inclusion of various populations. The impacts necessitate formulating digital transformation strategies for the involved organizations and institutions.</p>
+<p>The Brazilian Federal Government&rsquo;s Digital Public Services Transformation project involves research, development, and innovation in methodologies, models, and tools that promote the automation and digitization of public services offered by the Ministry of Economy (ME), by the Special Secretariat for Debureaucratization, Management, and Digital Government (specifically by the Secretariat of Digital Government (SGD), aiming at the transformation of federal public services. The project was established between UnB (ITRAC Laboratory of the Faculty of Gama) and the ME.</p>
+<h1 id="cedis-members">CEDIS Members:</h1>
+<p><strong>Prof. Dr. George Marsicano</strong></p>
+<p>Participation: Prof. Dr. George Marsicano collaborates individually with the Brazilian Federal Government&rsquo;s Digital Public Services Transformation project, alongside the ITRAC Laboratory, mainly in the areas of Agile Project Management, Software Requirements, Software Engineering, and Software Development Approaches.</p>
+<p>As another initiative, the ongoing doctoral project of Prof. MSc Ricardo Kosloski, discussing the impact factors associated with the area of software quality, on the use of e-Gov services by elderly people, a population continuously growing worldwide, as well as in Brazil.</p>
+<p>In the Brazilian context, after a population growth peak between the 50s/60s, improvements in medicine and hygiene minimized mortality rates. Subsequently, social phenomena such as family planning, urbanization, migration flows, and the participation of women in the workforce balanced mortality and fertility rates, resulting in more modest demographic growth and consequently in the aging of the Brazilian population, following a global trend. Moreover, involving specific populations in the digital transformation process aims to give them a voice and empowerment towards achieving an e-Democracy characteristic of the information society, according to international guidelines established by works like <em>Nothing about us, without us</em> (CHARLTON, 2004).</p>
+<h2 id="publications-and-productions">Publications and Productions</h2>
+<h3 id="publications">Publications</h3>
+
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+  
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+      
+    
+      
+    
+    
+      
+    
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+
+
+  
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+      
+    
+      
+    
+    
+      
+    
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+
+
+  
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+      
+    
+      
+    
+    
+      
+    
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+
+
+  
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+      
+    
+      
+    
+    
+      
+    
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+
+
+  
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+      
+    
+      
+    
+    
+      
+    
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+
+
+  
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+      
+    
+      
+        
+        
+    
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+    
+    
+
+
+  
+  <ol class="publications-lncs">
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+            
+            
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+        <li x-data="{ open: false }">ERVEN, RICARDO CORDEIRO GALVÃO SANTANA VAN,DIAS, POLLYANNA C. O.,JUBÉ, DEMÉTRIUS DE ALMEIDA,CORRÊA, GEORGE MARSICANO,CANEDO, EDNA DIAS,
+          <span>
+            Avaliação de Conhecimento em Engenharia de Requisitos no Startup Gov.br
+          </span>
+          , 2023
+          . DOI: <a href="https://doi.org/10.29327/1298356.26-11" target="_blank">10.29327/1298356.26-11</a>
+          
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+          
+          
+          
+            
+              
+            
+          
+            
+              
+            
+          
+            
+          
+          
+          
+          
+            . Tags:
+            
+              
+              <a href="http://localhost:1313/tags/software_requirements">Requirements Engineering</a>, 
+            
+              
+              <a href="http://localhost:1313/tags/digital_transformation">Digital Transformation</a>
+            
+          
+
+          .
+          
+          
+          
+        
+
+        </li>
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+            
+            
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+        <li x-data="{ open: false }">Fabiana Ribas,
+          <span><a href="https://www.bdm.unb.br/handle/10483/33852">
+            Accessibility Analysis for Elderly People in e-Gov Services - A Case Study
+          </a></span>
+          <span>. Senior Project (Bachelor of Software Engineering) - University of Brasília (Brazil)</span>, 2023
+          
+          Advisor(s):
+          
+          
+            
+              <a href="http://localhost:1313/people/ricardo_ajax">Ricardo Ajax</a>
+            
+          
+          
+          
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+          
+          
+          
+            
+              
+            
+          
+          
+          
+          
+            . Tags:
+            
+              
+              <a href="http://localhost:1313/tags/digital_transformation">Digital Transformation</a>
+            
+          
+
+          .
+          
+          
+          
+        
+
+        </li>
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+            
+            
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+        <li x-data="{ open: false }">Igor Veludo Byron Corrêa,
+          <span><a href="https://www.bdm.unb.br/handle/10483/33850">
+            An Evolution of the Agromart Project - Open Source, Payment Methods, and Co-Farmers Management
+          </a></span>
+          <span>. Senior Project (Bachelor of Software Engineering) - University of Brasília (Brazil)</span>, 2023
+          
+          Advisor(s):
+          
+          
+            
+              <a href="http://localhost:1313/people/andre_lanna">André Lanna</a>
+            
+          
+          
+          
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+          
+          
+          
+            
+              
+            
+          
+            
+              
+            
+          
+          
+          
+          
+            . Tags:
+            
+              
+              <a href="http://localhost:1313/tags/green_software">Green Software</a>, 
+            
+              
+              <a href="http://localhost:1313/tags/digital_transformation">Digital Transformation</a>
+            
+          
+
+          .
+          
+          
+          
+        
+
+        </li>
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+            
+            
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+        <li x-data="{ open: false }">João Rossi Paulo Rocha,
+          <span><a href="https://www.bdm.unb.br/handle/10483/34027">
+            Promoting Quality of Life at Work in the Public Sector - Proposal of a Web Tool to Support Data Collection for the Work-Life Quality Assessment Inventory (IA_QVT)
+          </a></span>
+          <span>. Senior Project (Bachelor of Software Engineering) - University of Brasília (Brazil)</span>, 2023
+          
+          Advisor(s):
+          
+          
+            
+              <a href="http://localhost:1313/people/fabiana_mendes">Fabiana Mendes</a>
+            
+          
+          
+          
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+          
+          
+          
+            
+              
+            
+          
+          
+          
+          
+            . Tags:
+            
+              
+              <a href="http://localhost:1313/tags/digital_transformation">Digital Transformation</a>
+            
+          
+
+          .
+          
+          
+          
+        
+
+        </li>
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+            
+            
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+        <li x-data="{ open: false }">Marcelo Victor de Sousa Silva,
+          <span>
+            FormsGeo - A Geolocation-Based App for Social Surveys
+          </span>
+          <span>. Senior Project (Bachelor of Software Engineering) - University of Brasília (Brazil)</span>, 2023
+          
+          Advisor(s):
+          
+          
+            
+              <a href="http://localhost:1313/people/fabiana_mendes">Fabiana Mendes</a>
+            
+          
+          
+          
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+          
+          
+          
+            
+              
+            
+          
+            
+              
+            
+          
+          
+          
+          
+            . Tags:
+            
+              
+              <a href="http://localhost:1313/tags/software_requirements">Requirements Engineering</a>, 
+            
+              
+              <a href="http://localhost:1313/tags/digital_transformation">Digital Transformation</a>
+            
+          
+
+          .
+          
+          
+          
+        
+
+        </li>
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+            
+            
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+        <li x-data="{ open: false }">MARSICANO, GEORGE,CANEDO, EDNA,PEDROSA, GLAUCO,RAMOS, CRISTIANE,FIGUEIREDO, REJANE,
+          <span>
+            Digital Transformation of Public Services from the Perception of ICT Practitioners in a Startup-Based Environment
+          </span>
+          , in 25th International Conference on Enterprise Information Systems
+            , p490, 2023
+          . DOI: <a href="https://doi.org/10.5220/0011826600003467" target="_blank">10.5220/0011826600003467</a>
+          
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+          
+          
+          
+            
+              
+            
+          
+            
+          
+            
+          
+          
+          
+          
+            . Tags:
+            
+              
+              <a href="http://localhost:1313/tags/digital_transformation">Digital Transformation</a>
+            
+          
+
+          .
+          
+          
+          
+        
+
+        </li>
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+            
+            
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+        <li x-data="{ open: false }">Pedro Cella André Freitas,
+          <span><a href="https://www.bdm.unb.br/handle/10483/35945">
+            An Evolution of the Agromart Project - Individualized and Automated Deployment of a CSA Environment
+          </a></span>
+          <span>. Senior Project (Bachelor of Software Engineering) - University of Brasília (Brazil)</span>, 2023
+          
+          Advisor(s):
+          
+          
+            
+              <a href="http://localhost:1313/people/andre_lanna">André Lanna</a>
+            
+          
+          
+          
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+          
+          
+          
+            
+              
+            
+          
+            
+              
+            
+          
+          
+          
+          
+            . Tags:
+            
+              
+              <a href="http://localhost:1313/tags/green_software">Green Software</a>, 
+            
+              
+              <a href="http://localhost:1313/tags/digital_transformation">Digital Transformation</a>
+            
+          
+
+          .
+          
+          
+          
+        
+
+        </li>
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+            
+            
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+        <li x-data="{ open: false }">CAVALCANTI, P. P.,FREITAS, S. A. A.,
+          <span>
+            Evaluation of the Change in the Quality of Reports with the Application of Gamification in a Corporative Institution
+          </span>
+          , in Proceedings of the 24th International Conference on Human-Computer Interaction
+            , p353-367, 2022
+          . DOI: <a href="https://doi.org/10.1007/978-3-031-05544-7_27" target="_blank">10.1007/978-3-031-05544-7_27</a>
+          
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+          
+          
+          
+            
+              
+            
+          
+            
+              
+            
+          
+            
+          
+          
+          
+          
+            . Tags:
+            
+              
+              <a href="http://localhost:1313/tags/gamification">Gamification</a>, 
+            
+              
+              <a href="http://localhost:1313/tags/digital_transformation">Digital Transformation</a>
+            
+          
+
+          .
+          
+          
+          
+        
+
+        </li>
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+            
+            
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+        <li x-data="{ open: false }">Filipe Silva,
+          <span><a href="https://www.bdm.unb.br/handle/10483/30701">
+            The State of Software Maintenance Practice in Early Stage Software Startups
+          </a></span>
+          <span>. Senior Project (Bachelor of Software Engineering) - University of Brasília (Brazil)</span>, 2022
+          
+          Advisor(s):
+          
+          
+            
+              <a href="http://localhost:1313/people/cristiane_ramos">Cristiane Ramos</a>
+            
+          
+          
+          
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+          
+          
+          
+            
+              
+            
+          
+            
+              
+            
+          
+          
+          
+          
+            . Tags:
+            
+              
+              <a href="http://localhost:1313/tags/software_architecture">Software Architecture</a>, 
+            
+              
+              <a href="http://localhost:1313/tags/digital_transformation">Digital Transformation</a>
+            
+          
+
+          .
+          
+          
+          
+        
+
+        </li>
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+            
+            
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+        <li x-data="{ open: false }">FURTADO, S. L.,MARSICANO, G. C.,
+          <span>
+            Identification and Applicability of Additional Security Factors on the GOV.BR Digital Identity Platform
+          </span>
+          , in 19th CONTECSI - International Conference on Information Systems and Technology Management
+            , 2022
+          . DOI: <a href="https://doi.org/10.5748/19CONTECSI/PSE/GOV/7034" target="_blank">10.5748/19CONTECSI/PSE/GOV/7034</a>
+          
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+          
+          
+          
+            
+              
+            
+          
+            
+          
+          
+          
+          
+            . Tags:
+            
+              
+              <a href="http://localhost:1313/tags/digital_transformation">Digital Transformation</a>
+            
+          
+
+          .
+          
+          
+          
+        
+
+        </li>
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+            
+            
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+        <li x-data="{ open: false }">MOURA, D. R. C.,MARSICANO, G. C.,
+          <span>
+            Proposição de Melhoria de Usabilidade da Interação entre Usuário e Sistema Corporativo
+          </span>
+          , in 19th CONTECSI - International Conference on Information Systems and Technology Management
+            , 2022
+          . DOI: <a href="https://doi.org/10.5748/19CONTECSI/PSE/ESD/7019" target="_blank">10.5748/19CONTECSI/PSE/ESD/7019</a>
+          
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+          
+          
+          
+            
+              
+            
+          
+            
+              
+            
+          
+            
+          
+          
+          
+          
+            . Tags:
+            
+              
+              <a href="http://localhost:1313/tags/digital_transformation">Digital Transformation</a>, 
+            
+              
+              <a href="http://localhost:1313/tags/soft_skills">Soft Skills</a>
+            
+          
+
+          .
+          
+          
+          
+        
+
+        </li>
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+          
+            
+            
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+        <li x-data="{ open: false }">Luciana Santos de Assis,
+          <span>
+            Critical Evaluation and Case Study on the Implementation of Gamification in Organizational Contexts
+          </span>
+          <span>. Master&#39;s Thesis in Applied Computing, University of Brasília (Brazil)</span>, 2023
+          
+          Advisor(s):
+          
+          
+            
+              <a href="http://localhost:1313/people/sergio_freitas">Sergio Freitas</a>
+            
+          
+          
+          
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+          
+          
+          
+            
+              
+            
+          
+            
+              
+            
+          
+            
+              
+            
+          
+          
+          
+          
+            . Tags:
+            
+              
+              <a href="http://localhost:1313/tags/gamification">Gamification</a>, 
+            
+              
+              <a href="http://localhost:1313/tags/soft_skills">Soft Skills</a>, 
+            
+              
+              <a href="http://localhost:1313/tags/digital_transformation">Digital Transformation</a>
+            
+          
+
+          .
+          
+          
+          
+            <div>
+              
+              <button @click="open = !open" class="bg-primary-500 text-white p-2 rounded cursor-pointer">
+                Abstract
+              </button>
+              
+              <div x-show="open" class="mt-2 pl-4 font-serif" x-cloak>
+                <span class="text-neutral-700 text-sm">Gamification is a way to use game elements and apply them in real-world contexts to motivate people and create a more productive environment. Considered a tool aimed at increasing engagement, gamification can be applied across various areas, including organizational activities. This work proposes a Case Study at the Brazilian Agricultural Research Corporation (Embrapa), analyzing the effects of a gamification solution applied to the Innovation Macroprocess (MPI), which is responsible for managing research, development, and innovation solutions for the sustainability of the Brazilian agribusiness. The main goal is to evaluate the effectiveness of gamification in enhancing engagement, collaboration, and motivation of employees regarding the use of the Asset Management System (Gestec), a computational tool that implements part of the MPI. Initially, a study of the theoretical foundations of gamification was conducted, followed by a Systematic Literature Review (SLR) to investigate the main frameworks, techniques, and effects of gamification solutions in organizational environments. Subsequently, a Case Study was initiated with the identification of the motivational profile of the target audience and the development of a project that includes the application of sixteen gamification requirements. Of these, ten requirements were prioritized and implemented for the experimentation phase, which was made available to a group of twenty-seven participants to evaluate the effects of the proposed solution. Overall, the results indicated an improvement in the motivational perception regarding the use of the system.</span>
+              </div>
+            </div>
+          
+        
+
+        </li>
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+            
+            
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+        <li x-data="{ open: false }">MARIANI, C. B.,RAMOS, J. C. C.,RODRIGUES, L. S.,KOSLOSKI, R. A. D.,FECHINE, V. M. R.,
+          <span><a href="https://periodicos.unb.br/index.php/revistadoceam/article/view/40826">
+            Instrumento de ação pública: edital de inclusão digital para retomada das atividades acadêmicas dos estudantes da Universidade de Brasília, no contexto da pandemia da COVID-19
+          </a></span>
+          , REVISTA DO CEAM 
+            , 7(56-78), 2021
+          
+          
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+          
+          
+          
+            
+              
+            
+          
+            
+          
+          
+          
+          
+            . Tags:
+            
+              
+              <a href="http://localhost:1313/tags/digital_transformation">Digital Transformation</a>
+            
+          
+
+          .
+          
+          
+          
+        
+
+        </li>
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+            
+            
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+        <li x-data="{ open: false }">YAMAUCHI, EDUARDO,MACIEL, CRISTIANO,MENDES, FABIANA,UEDA, GUSTAVO,PEREIRA, VINICIUS,
+          <span>
+            Digital Legacy Management Systems: Theoretical, Systemic and Users Perspective
+          </span>
+          , in 23rd International Conference on Enterprise Information Systems
+            , p41, 2021
+          . DOI: <a href="https://doi.org/10.5220/0010449800410053" target="_blank">10.5220/0010449800410053</a>
+          
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+          
+          
+          
+            
+              
+            
+          
+            
+          
+          
+          
+          
+            . Tags:
+            
+              
+              <a href="http://localhost:1313/tags/digital_transformation">Digital Transformation</a>
+            
+          
+
+          .
+          
+          
+          
+        
+
+        </li>
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+            
+            
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+        <li x-data="{ open: false }">Laércio Sousa Júnior,
+          <span><a href="https://www.bdm.unb.br/handle/10483/23055">
+            Determining the Authorship Rate Within a Project Using Git
+          </a></span>
+          <span>. Senior Project (Bachelor of Software Engineering) - University of Brasília (Brazil)</span>, 2020
+          
+          Advisor(s):
+          
+          
+            
+              <a href="http://localhost:1313/people/andre_lanna">André Lanna</a>
+            
+          
+          
+          
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+          
+          
+          
+            
+              
+            
+          
+            
+              
+            
+          
+          
+          
+          
+            . Tags:
+            
+              
+              <a href="http://localhost:1313/tags/software_architecture">Software Architecture</a>, 
+            
+              
+              <a href="http://localhost:1313/tags/digital_transformation">Digital Transformation</a>
+            
+          
+
+          .
+          
+          
+          
+        
+
+        </li>
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+            
+            
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+        <li x-data="{ open: false }">Luis Guimarães Jonathan Paiva,
+          <span><a href="https://www.bdm.unb.br/handle/10483/21590">
+            NotifiCar - App for Monitoring the Status of Cars in a City
+          </a></span>
+          <span>. Senior Project (Bachelor of Software Engineering) - University of Brasília (Brazil)</span>, 2019
+          
+          Advisor(s):
+          
+          
+            
+              <a href="http://localhost:1313/people/andre_lanna">André Lanna</a>
+            
+          
+          
+          
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+          
+          
+          
+            
+              
+            
+          
+            
+              
+            
+          
+          
+          
+          
+            . Tags:
+            
+              
+              <a href="http://localhost:1313/tags/software_architecture">Software Architecture</a>, 
+            
+              
+              <a href="http://localhost:1313/tags/digital_transformation">Digital Transformation</a>
+            
+          
+
+          .
+          
+          
+          
+        
+
+        </li>
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+            
+            
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+        <li x-data="{ open: false }">DANTAS, J. M.,FREITAS, S. A. A.,
+          <span><a href="https://portal.tcu.gov.br/governanca-em-tecnologia-de-informacao-e-comunicacao-para-o-setor-publico.htm">
+            Gestão de Continuidade de Serviços de TI: Site de Contingência
+          </a></span>
+          , 2018
+          . DOI: <a href="https://doi.org/9788560365272" target="_blank">9788560365272</a>
+          
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+          
+          
+          
+            
+              
+            
+          
+            
+          
+          
+          
+          
+            . Tags:
+            
+              
+              <a href="http://localhost:1313/tags/digital_transformation">Digital Transformation</a>
+            
+          
+
+          .
+          
+          
+          
+        
+
+        </li>
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+            
+            
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+        <li x-data="{ open: false }">FELISDORIO, R. C. S.,FREITAS, S. A. A.,
+          <span><a href="https://portal.tcu.gov.br/governanca-em-tecnologia-de-informacao-e-comunicacao-para-o-setor-publico.htm">
+            Análise do processo de gestão de riscos na elaboração do plano diretor de tecnologia da informação  PDTI no setor público
+          </a></span>
+          , 2018
+          . DOI: <a href="https://doi.org/9788560365272" target="_blank">9788560365272</a>
+          
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+          
+          
+          
+            
+              
+            
+          
+            
+          
+          
+          
+          
+            . Tags:
+            
+              
+              <a href="http://localhost:1313/tags/digital_transformation">Digital Transformation</a>
+            
+          
+
+          .
+          
+          
+          
+        
+
+        </li>
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+            
+            
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+        <li x-data="{ open: false }">FIGUEIREDO, R.M.C.,SANTOS, R.R.,FREITAS, S. A. A.,
+          <span><a href="https://portal.tcu.gov.br/governanca-em-tecnologia-de-informacao-e-comunicacao-para-o-setor-publico.htm">
+            Governança em tecnologia de informação e comunicação para o setor público
+          </a></span>
+          , TCU, 2018
+          . DOI: <a href="https://doi.org/9788560365272" target="_blank">9788560365272</a>
+          
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+          
+          
+          
+            
+              
+            
+          
+            
+          
+          
+          
+          
+            . Tags:
+            
+              
+              <a href="http://localhost:1313/tags/digital_transformation">Digital Transformation</a>
+            
+          
+
+          .
+          
+          
+          
+        
+
+        </li>
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+            
+            
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+        <li x-data="{ open: false }">FREITAS, S. A. A.,CANEDO, EDNA,SANTOS FELISDÓRIO, RODRIGO,LEÃO, HELOISE,
+          <span>
+            Analysis of the Risk Management Process on the Development of the Public Sector Information Technology Master Plan
+          </span>
+          , INFORMATION 
+            , 9(248), 2018
+          . DOI: <a href="https://doi.org/10.3390/info9100248" target="_blank">10.3390/info9100248</a>
+          
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+          
+          
+          
+            
+              
+            
+          
+            
+          
+          
+          
+          
+            . Tags:
+            
+              
+              <a href="http://localhost:1313/tags/digital_transformation">Digital Transformation</a>
+            
+          
+
+          .
+          
+          
+          
+        
+
+        </li>
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+            
+            
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+        <li x-data="{ open: false }">MARTINS, L. B.,FREITAS, S. A. A.,
+          <span><a href="https://portal.tcu.gov.br/governanca-em-tecnologia-de-informacao-e-comunicacao-para-o-setor-publico.htm">
+            Gestão de riscos e governança de TI aplicada à rede de comunicação governamental
+          </a></span>
+          , 2018
+          . DOI: <a href="https://doi.org/9788560365272" target="_blank">9788560365272</a>
+          
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+          
+          
+          
+            
+              
+            
+          
+            
+          
+          
+          
+          
+            . Tags:
+            
+              
+              <a href="http://localhost:1313/tags/digital_transformation">Digital Transformation</a>
+            
+          
+
+          .
+          
+          
+          
+        
+
+        </li>
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+            
+            
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+        <li x-data="{ open: false }">POLETTO, J. A. R.,FREITAS, S. A. A.,
+          <span><a href="https://portal.tcu.gov.br/governanca-em-tecnologia-de-informacao-e-comunicacao-para-o-setor-publico.htm">
+            Identificação de riscos em fiscalizações de obras públicas realizadas pelo TCU e o papel da tecnologia da informação em mitigá-los
+          </a></span>
+          , 2018
+          . DOI: <a href="https://doi.org/9788560365272" target="_blank">9788560365272</a>
+          
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+          
+          
+          
+            
+              
+            
+          
+            
+          
+          
+          
+          
+            . Tags:
+            
+              
+              <a href="http://localhost:1313/tags/digital_transformation">Digital Transformation</a>
+            
+          
+
+          .
+          
+          
+          
+        
+
+        </li>
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+            
+            
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+        <li x-data="{ open: false }">CALAZANS, ANGELICA TOFFANO SEIDEL,KOSLOSKI, Ricardo Ajax Dias,FERNANDO, G.,
+          <span>
+            Proposta de modelo de medições para contratação do gerenciamento de processo de negócio (Business Process Management - BPM)
+          </span>
+          , Revista de Gestão da Tecnologia e Sistemas de Informação 
+            , 13(275-300), 2016
+          . DOI: <a href="https://doi.org/10.4301/S1807-17752016000200007" target="_blank">10.4301/S1807-17752016000200007</a>
+          
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+          
+          
+          
+            
+              
+            
+          
+            
+          
+          
+          
+          
+            . Tags:
+            
+              
+              <a href="http://localhost:1313/tags/digital_transformation">Digital Transformation</a>
+            
+          
+
+          .
+          
+          
+          
+        
+
+        </li>
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+            
+            
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+        <li x-data="{ open: false }">Endo, L,MENDES, F. F.,Canedo, E. D.,
+          <span>
+            Supportive metrics to estimate the effort to develop Business Intelligence system
+          </span>
+          , in 11th Iberian Conference on Information Systems and Technologies (CISTI)
+            , 2016
+          . DOI: <a href="https://doi.org/10.1109/CISTI.2016.7521476" target="_blank">10.1109/CISTI.2016.7521476</a>
+          
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+          
+          
+          
+            
+              
+            
+          
+            
+          
+          
+          
+          
+            . Tags:
+            
+              
+              <a href="http://localhost:1313/tags/digital_transformation">Digital Transformation</a>
+            
+          
+
+          .
+          
+          
+          
+        
+
+        </li>
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+            
+            
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+        <li x-data="{ open: false }">Igor Ramos,
+          <span><a href="https://www.bdm.unb.br/handle/10483/11334">
+            Proposal of a Methodology for Map Creation in Systematic Mapping Studies Based on Knowledge Related to Ontologies
+          </a></span>
+          <span>. Senior Project (Bachelor of Software Engineering) - University of Brasília (Brazil)</span>, 2015
+          
+          Advisor(s):
+          
+          
+            
+              <a href="http://localhost:1313/people/fabiana_mendes">Fabiana Mendes</a>
+            
+          
+          
+          
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+          
+          
+          
+            
+              
+            
+          
+            
+              
+            
+          
+          
+          
+          
+            . Tags:
+            
+              
+              <a href="http://localhost:1313/tags/digital_transformation">Digital Transformation</a>, 
+            
+              
+              <a href="http://localhost:1313/tags/ia"></a>
+            
+          
+
+          .
+          
+          
+          
+        
+
+        </li>
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+            
+            
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+        <li x-data="{ open: false }">Thiago Honorato,
+          <span><a href="https://www.bdm.unb.br/handle/10483/11322">
+            A Proposal for a Selection Method for CMS Systems
+          </a></span>
+          <span>. Senior Project (Bachelor of Software Engineering) - University of Brasília (Brazil)</span>, 2015
+          
+          Advisor(s):
+          
+          
+            
+              <a href="http://localhost:1313/people/ricardo_ajax">Ricardo Ajax</a>
+            
+          
+          
+          
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+          
+          
+          
+            
+              
+            
+          
+            
+              
+            
+          
+          
+          
+          
+            . Tags:
+            
+              
+              <a href="http://localhost:1313/tags/software_requirements">Requirements Engineering</a>, 
+            
+              
+              <a href="http://localhost:1313/tags/digital_transformation">Digital Transformation</a>
+            
+          
+
+          .
+          
+          
+          
+        
+
+        </li>
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+            
+            
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+        <li x-data="{ open: false }">Rafael Ferreira dos Santos,
+          <span><a href="https://www.bdm.unb.br/handle/10483/7965">
+            Evaluation of the implementation of an ITIL v3-based Service Desk system - a case study in a public agency
+          </a></span>
+          <span>. Senior Project (Bachelor of Software Engineering) - University of Brasília (Brazil)</span>, 2014
+          
+          Advisor(s):
+          
+          
+            
+              <a href="http://localhost:1313/people/sergio_freitas">Sergio Freitas</a>
+            
+          
+          
+          
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+          
+          
+          
+            
+              
+            
+          
+          
+          
+          
+            . Tags:
+            
+              
+              <a href="http://localhost:1313/tags/digital_transformation">Digital Transformation</a>
+            
+          
+
+          .
+          
+          
+          
+            <div>
+              
+              <button @click="open = !open" class="bg-primary-500 text-white p-2 rounded cursor-pointer">
+                Abstract
+              </button>
+              
+              <div x-show="open" class="mt-2 pl-4 font-serif" x-cloak>
+                <span class="text-neutral-700 text-sm">This work aims to evaluate the deployment of a Service Desk tool for IT service management in a public organization, aligning with its strategic objectives, daily operations, organizational needs, and the ITIL v3 infrastructure library. IT services are crucial for organizational activities, with management applications being integral for client access to these services. In the public sector, the increasing demand for quality service delivery emphasizes the importance of effective IT management applications to adapt to constant IT changes. The study identifies the lack of proper IT service management or flawed management as a source of service availability issues, resource overallocation, and negative impacts on IT&#39;s reputation. It focuses on the Ministry &#34;A&#34; scenario, highlighting the necessity for an effective IT Service Management tool, OTRS, based on Incident Management processes to improve the IT Governance Index (iGovTI). This End Graduation Work seeks to assess the implementation process of OTRS and its potential to enhance IT Service Management governance.</span>
+              </div>
+            </div>
+          
+        
+
+        </li>
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+      
+
+      
+      
+
+      
+      
+
+      
+      
+        
+        
+          
+        
+          
+        
+        
+          
+        
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+
+      
+      
+    
+  </ol>
+
+
+  </div>
+</article>
+
+    
+<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+<script src="http://localhost:1313/js/darkmode.js" defer></script>
+
+<script src="https://cdn.jsdelivr.net/npm/flexsearch/dist/flexsearch.min.js"></script>
+<footer class="bg-gray-900">
+    <div class="max-w-md px-4 py-12 mx-auto overflow-hidden sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
+        <nav class="flex flex-wrap justify-center -mx-5 -my-2" aria-label="Footer">
+            
+            <div class="px-5 py-2">
+                <a href="http://localhost:1313/categories/news/" class="text-base text-gray-400 hover:text-gray-300">More News</a>
+            </div>
+            
+            <div class="px-5 py-2">
+                <a href="http://localhost:1313/contact/" class="text-base text-gray-400 hover:text-gray-300">Contact</a>
+            </div>
+            
+        </nav>
+        <div class="flex justify-center mt-8 space-x-6">
+            
+            
+            
+            
+        </div>
+        <div class="footer-container" style="display: flex; justify-content: center; align-items: center; text-align: center; flex-wrap: wrap;">
+            <div class="footer-text" style="flex-grow: 1;">
+                <p class="mt-8 text-base text-gray-400">&copy; 2024
+                    CEDIS. Todos direitos reservados.</p>
+            </div>
+            <div class="footer-image" style="margin-left: auto;">
+                <a href="https://www.unb.br" target="_blank" rel="noopener noreferrer">
+                    <img src="http://localhost:1313/images/as_vert_neg.webp" alt="Logo UnB" style="width: auto; height: 50px;">
+                </a>
+            </div>
+        </div>
+        
+    </div>
+</footer>
+
+</body>
+
+</html>
