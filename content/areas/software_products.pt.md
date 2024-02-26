@@ -23,3 +23,4 @@ No CEDIS, a Engenharia de Linhas de Produto de Software é uma área-chave de pe
 
 {{< publications year="" type="" notypes="" tags="software_product_line" notags="" >}}
 
+{{< tags >}}

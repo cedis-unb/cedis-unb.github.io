@@ -26,3 +26,4 @@ No CEDIS, a área de Trabalho em Equipe e Soft Skills são considerados fundamen
 ### Publicações
 
 {{< publications year="" type="" notypes="" tags="teamwork,soft_skills" notags="" >}}
+{{< tags >}}

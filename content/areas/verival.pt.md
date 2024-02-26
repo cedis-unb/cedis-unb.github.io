@@ -23,3 +23,5 @@ No CEDIS, a área de Verificação, Validação e Testes são considerados pilar
 ### Publicações
 
 {{< publications year="" type="" notypes="" tags="verification_validation_testing" notags="" >}}
+
+{{< tags >}}

@@ -74,3 +74,4 @@ Especialista em gamificação e professor Titular da Universidade de Brasíli
 1. Rumo a Marte - gamificação desenvolvida para a capacitação de equipe em metodologias agéis. Parte do projeto com o Ministério da Economia, via ITRAC. Desenvolvido integramente utilizando as ferramentas disponíveis na plataforma MS 365 (Sharepoint, Forms, Automate, etc), 2022.
 ## Contato e colaboração:
  E-mail para informações e contato com a equipe: [sergiofreitas@unb.br](mailto:sergiofreitas@unb.br).
+{{< tags >}}

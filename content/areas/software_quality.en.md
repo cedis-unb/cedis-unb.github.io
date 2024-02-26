@@ -29,3 +29,4 @@ In summary, software quality is not an attribute that can be added after develop
 ### Publications
 
 {{< publications year="" type="" notypes="" tags="software_quality" notags="" >}}
+{{< tags >}}

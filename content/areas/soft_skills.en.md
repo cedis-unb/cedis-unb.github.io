@@ -26,3 +26,5 @@ Under the coordination of Prof. George Marsicano, the research and development l
 ### Publications
 
 {{< publications year="" type="" notypes="" tags="teamwork,soft_skills" notags="" >}}
+
+{{< tags >}}

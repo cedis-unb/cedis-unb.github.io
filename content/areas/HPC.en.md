@@ -39,3 +39,4 @@ At CEDIS, the integration of High-Performance Computing and Cloud Computing is a
 
 ## Contact and collaboration:
  Email for information and contact with the team: [daniel.sundfeld@unb.br](mailto:daniel.sundfeld@unb.br)
+{{< tags >}}

@@ -68,3 +68,5 @@ Acadêmica na área de *Learning Analytics* e Gestão Educacional. Atua como p
 5. FREITAS, S. A. A. Sistema de Controle Acadêmico dos Cursos de Pós-Graduação da Universidade Federal do Espírito Santo (UFES). UFES, 2002.
 ## Contato e colaboração:
  E-mail para informações e contato com a equipe: [sergiofreitas@unb.br](mailto:sergiofreitas@unb.br) ou [cristanesramos@unb.br](mailto:cristanesramos@unb.br).
+
+{{< tags >}}

@@ -68,3 +68,5 @@ An academic in the area of *Learning Analytics* and Educational Management. She 
 5. FREITAS, S. A. A. Academic Management System for Postgraduate Courses at the Federal University of Espírito Santo (UFES). UFES, 2002.
 ## Contact and collaboration:
  Email for information and contact with the team: [sergiofreitas@unb.br](mailto:sergiofreitas@unb.br) or [cristanesramos@unb.br](mailto:cristanesramos@unb.br).
+
+ {{< tags >}}

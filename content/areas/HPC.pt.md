@@ -39,3 +39,5 @@ No CEDIS, a integração de Computação de Alto Desempenho e Computação em Nu
 
 ## Contato e colaboração:
  E-mail para informações e contato com a equipe: [daniel.sundfeld@unb.br](mailto:daniel.sundfeld@unb.br)
+
+{{< tags >}}

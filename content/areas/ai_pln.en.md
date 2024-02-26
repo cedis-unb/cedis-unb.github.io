@@ -71,3 +71,4 @@ Financiamento: FAP-DF, Início 2022, status: em andamento.
 
 ## Contact and Collaboration
 For information and contact with the team: [sergiofreitas@unb.br](mailto:sergiofreitas@unb.br).
+{{< tags >}}

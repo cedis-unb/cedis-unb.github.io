@@ -24,3 +24,5 @@ Esta linha de pesquisa é coordenada pelo Prof. George Marsicano e conta com uma
 ### Publicações
 
 {{< publications year="" type="" notypes="" tags="software_requirements" notags="" >}}
+
+{{< tags >}}

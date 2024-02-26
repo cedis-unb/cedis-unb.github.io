@@ -15,11 +15,15 @@ categories:
 tags: 
 - gamification
 ---
+
+
 Gamification is a process that uses elements, techniques, and game design mechanics in contexts not related to games, aiming to increase user motivation, participation, and engagement. Gamification has been applied in various fields, such as education, marketing, health, and corporate training, becoming a growing trend over the last decade.
 ## About the area coordinator
 **Prof. Sergio Antônio Andrade de Freitas**
 
 Specialist in gamification and Full Professor at the University of Brasília - UnB. His experience spans both gamification in Education and the application of this methodology in other fields. He is recognized for integrating game design elements into educational and business contexts, aiming to increase user motivation, participation, and engagement. His dedication to research in Gamification and {{< link-interno "/areas/learning_analytics" "Learning Analytics" >}} has contributed to innovation and the development of new teaching and learning strategies in the area of Software Engineering. {{< link-interno "/people/sergio_freitas" "More information about the coordinator" >}}.
+
+
 ## Research team:
 
 - Prof. Cristiane Soares Ramos, researcher for the Canal Ciência Project, specializes in integrating scientific methodologies into gamification strategies to improve research outcomes and public engagement.
@@ -34,6 +38,9 @@ Specialist in gamification and Full Professor at the University of Brasília - U
 - Victor Eduardo Araujo Ribeiro, Gamified chatbot for academic research assistance.
 - Vitor Diniz Pagani Vieira Ribeiro, App and guide for gamification of courses on Moodle.
 - Antonio Rangel Chaves, App and guide for gamification of courses on Moodle.
+
+
+
 ## Previous researchers
 - Públio Pastrolin Cavalcante worked in the area of gamification applied to intelligence reports in police activities, dedicating himself to researching ways to enhance information analysis and decision-making processes.
 - Ana Cláudia Alves Mendes Araújo focused on research and development of gamified processes for eliciting project requirements, with an emphasis on increasing collaboration and creativity in team environments.
@@ -74,3 +81,4 @@ Specialist in gamification and Full Professor at the University of Brasília - U
 1. Journey to Mars - gamification developed for team training in agile methodologies. Part of the project with the Ministry of Economy, via ITRAC. Developed entirely using the tools available on the MS 365 platform (Sharepoint, Forms, Automate, etc), 2022.
 ## Contact and collaboration:
  Email for information and contact with the team: [sergiofreitas@unb.br](mailto:sergiofreitas@unb.br).
+{{< tags >}}
