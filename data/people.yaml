@@ -6,10 +6,25 @@ people:
     title:
       pt: Projeto sobre Desenvolvimento de Software Verde
       en: Project on Green Software Development
-    program: ppca
+    program: curso_esw2
     advisors:
       - fabiana_mendes
     tags:
       - inactive
       - green_software
+    year: 2022
+
+  - name: Dione Ramos Canuto Moura
+    categories:
+      - people
+      - master_student
+    title:
+      pt: (não fornecido)
+      en: (not provided)
+    program: curso_ppca
+    advisors:
+      - george_marsicano
+    tags:
+      - active
+      - software_architecture
     year: 2022
