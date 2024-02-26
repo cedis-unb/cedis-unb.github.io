@@ -54,10 +54,6 @@ Financiamento: FAP-DF, Início 2022, status: em andamento.
 ### Publications
 
 {{< publications year="" type="" notypes="" tags="ai,nlp,machine_learning" notags="" >}}
-
-### Publications2
-- Frinhani, Cristóvão de Lima. Application of natural language processing: a support tool for the correction of essay questions. BSc thesis, UnB, 2016.
-- FRINHANI, CRISTOVAO LIMA ; DE FREITAS, SERGIO ANTONIO ANDRADE ; FERNANDES, MAURICIO VIDOTTI ; DIAS CANEDO, EDNA. An automatic essay correction for an active learning environment. 2016 IEEE/ACS 13th International Conference of Computer Systems and Applications (AICCSA), 2016.
 - Bossois, Débora Zupeli. Text categorization methodology from unlabeled documents using an anaphora resolution process. Master's thesis, UFES, 2010.
 - Pereira, F. S. C. ; Seibel, Hilário ; FREITAS, S. A. A. An Anaphora Based Information Retrieval model Extension. In: 2009 World Congress on Computer Science and Information Engineering, 2009, Los Angeles. Proceedings of the 2009 World Congress on Computer Science and Information Engineering, 2009. p. 330-334.
 - Pereira, Francisco Santiago do Carmo. A methodology for the use of natural language processing in the search for information in digital documents. Master's thesis, UFES, 2009.
