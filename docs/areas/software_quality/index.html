@@ -5,14 +5,14 @@
 <a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 hover:text-white focus:text-white hover:bg-primary-600 focus:bg-primary-600 focus:outline-none focus:shadow-outline" href=https://cedis.tec.br/people/list/>Collaborators</a></div></div></div><a class="px-4 py-2 mt-2 text-sm font-semibold rounded-lg md:mt-0 md:ml-4 hover:text-white focus:text-white hover:bg-primary-600 focus:bg-primary-700 focus:outline-none focus:shadow-outline" href=https://cedis.tec.br/categories/project/ title=Projects>Projects</a><div @click.away="open = false" class=relative x-data="{ open: false }"><button @click="open = !open" class="flex flex-row items-center w-full px-4 py-2 mt-2 text-sm font-semibold text-left bg-transparent rounded-lg dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:focus:bg-gray-600 dark-mode:hover:bg-gray-600 md:w-auto md:inline md:mt-0 md:ml-4 hover:text-white focus:text-white hover:bg-primary-600 focus:bg-primary-600 focus:outline-none focus:shadow-outline">
 <span>Productions</span><svg fill="currentcolor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}" class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414.0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414.0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/></svg></button><div x-show=open x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="absolute right-0 z-30 w-full mt-2 origin-top-right md:max-w-sm md:w-screen"><div class="px-2 pt-2 pb-4 bg-white rounded-md shadow-lg text-zinc-900"><div class="grid grid-cols-1 gap-4"><a class="flex items-start p-2 bg-transparent rounded-lg group row hover:text-white focus:text-white hover:bg-primary-600 focus:bg-primary-700 focus:outline-none focus:shadow-outline" href=https://cedis.tec.br/publications/><div class="p-3 text-white bg-primary-600 rounded-lg group-hover:bg-gray-900"><svg fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-4 h-4 md:h-6 md:w-6"><path d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16 2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg></div><div class=ml-3><p class=font-semibold>Publications</p><p class=text-sm>Articles, books and others</p></div></a><a class="flex items-start p-2 bg-transparent rounded-lg group row hover:text-white focus:text-white hover:bg-primary-600 focus:bg-primary-700 focus:outline-none focus:shadow-outline" href=https://cedis.tec.br/categories/products><div class="p-3 text-white bg-primary-600 rounded-lg group-hover:bg-gray-900"><svg fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-4 h-4 md:h-6 md:w-6"><path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863.0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg></div><div class=ml-3><p class=font-semibold>Digital Products and Processes</p><p class=text-sm>Applications, Processes and others</p></div></a></div></div></div></div><a class="px-4 py-2 mt-2 text-sm font-semibold rounded-lg md:mt-0 md:ml-4 hover:text-white focus:text-white hover:bg-primary-600 focus:bg-primary-700 focus:outline-none focus:shadow-outline" href=https://cedis.tec.br/oportunidades/ title=Oportunities>Oportunities
 </a><button id=theme-toggle type=button class="p-2 text-sm text-gray-500 rounded-lg md: dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 md:ml-2 max-w-5 xs:hidden"><svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentcolor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001.0 1010.586 10.586z"/></svg><svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentcolor" viewBox="0 0 20 20" aria-label="Dark or Light Mode" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a1 1 0 011 1v1A1 1 0 119 4V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707A1 1 0 1113.536 5.05l.707-.707a1 1 0 011.414.0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707A1 1 0 004.343 5.757l.707.707zm1.414 8.486-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"/></svg></button><div class=language-switcher><ul><li><span class="px-4 py-2 mt-2 text-sm font-semibold rounded-lg md:mt-0 md:ml-4 hover:text-white focus:text-white hover:bg-primary-600 focus:bg-primary-700 focus:outline-none focus:shadow-outline" aria-label=EN>EN</span><ul aria-labelledby=dropdown-title><li><a title=PT href=https://cedis.tec.br/pt/areas/software_quality/ class="px-4 py-2 mt-2 text-sm font-semibold rounded-lg md:mt-0 md:ml-4 hover:text-white focus:text-white hover:bg-primary-600 focus:bg-primary-700 focus:outline-none focus:shadow-outline" aria-label=PT>PT</a></li></ul></li></ul></div></nav></div></div><article><header class="mb-4 bg-primary-600"><span class=py-96><h1 class="py-16 text-5xl font-black text-center text-white">Software Quality</h1></span></header><div class="max-w-4xl mx-auto mt-8 mb-2"><div class=px-6><img src=https://cedis.tec.br/../assets/images/featured/area_Software%20Quality_hu32f5de9187a2649fde4106d68d35c6c8_1309107_1500x0_resize_q80_h2_box_3.webp srcset=", /../assets/images/featured/area_Software%20Quality_hu32f5de9187a2649fde4106d68d35c6c8_1309107_400x0_resize_q80_h2_box_3.webp 400w, /../assets/images/featured/area_Software%20Quality_hu32f5de9187a2649fde4106d68d35c6c8_1309107_550x0_resize_q80_h2_box_3.webp 550w, /../assets/images/featured/area_Software%20Quality_hu32f5de9187a2649fde4106d68d35c6c8_1309107_900x0_resize_q80_h2_box_3.webp 768w, /../assets/images/featured/area_Software%20Quality_hu32f5de9187a2649fde4106d68d35c6c8_1309107_1500x0_resize_q80_h2_box_3.webp 1100w" class="object-fill overflow-hidden rounded-lg shadow-lg ring-4 ring-zinc-300/40 dark:ring-gray-900/40 shadow-neutral-100/20 dark:shadow-neutral-800/40" width=30% alt></div></div><div class="max-w-2xl px-6 pt-6 pb-16 mx-auto prose dark:prose-invert dark:text-white"><p>Software Quality constitutes a fundamental pillar in software engineering, directly reflecting on user satisfaction, operational efficiency, and the sustainability of computer systems. This concept encompasses a range of attributes and criteria that determine how well software meets the needs and expectations of its users and stakeholders, in addition to adhering to pre-established development standards.</p><p>To understand Software Quality, it is essential to consider two aspects: internal quality and external quality. Internal quality refers to the inherent characteristics of the software&rsquo;s code and architecture, including its readability, reusability, modularity, and the ease with which it can be maintained and evolved. These attributes are critical for the developers and maintainers of the system. On the other hand, external quality relates to the user&rsquo;s experience when interacting with the software, covering aspects such as usability, performance, reliability, and security. External quality is often assessed through software testing and direct feedback from users.</p><p>Standards and models have been developed to assist in the evaluation and assurance of software quality, among which ISO/IEC 25010:2011, also known as SQuaRE (System and Software Quality Requirements and Evaluation), and CMMI (Capability Maturity Model Integration) stand out. The ISO/IEC 25010 model, for instance, defines a set of quality characteristics, subdivided into sub-characteristics, that provide a framework for software evaluation. Such characteristics include functionality, performance efficiency, compatibility, usability, reliability, security, maintainability, and portability.</p><p>The implementation of software quality assurance practices is a continuous process, starting in the early stages of software conception and extending throughout its life cycle. It involves the application of agile development methodologies, continuous integration, automated testing, code reviews, and other software engineering practices aimed at identifying and correcting defects early, improving development efficiency, and ensuring that the final product meets or exceeds user expectations.</p><p>In summary, software quality is not an attribute that can be added after development; it must be an intrinsic consideration at every stage of the software development process. A systematic approach to quality management is crucial for delivering software products that not only function as expected but also provide a satisfactory user experience, remain relevant and evolvable in the face of market demands and technological challenges.</p><h2 id=publications-and-productions>Publications and Productions</h2><h3 id=publications>Publications</h3><ol class=publications-lncs><li x-data="{ open: false }">Gabriel Carvalho,
-<span><a href=https://www.bdm.unb.br/handle/10483/33935>IA-QVT - A Tool for Collecting and Processing Data on Work-Life Quality, Focusing on Usability and Accessibility
+<span><a href=https://www.bdm.unb.br/handle/10483/33935 target=_blank>IA-QVT - A Tool for Collecting and Processing Data on Work-Life Quality, Focusing on Usability and Accessibility
 </a></span><span>. Senior Project (Bachelor of Software Engineering) - University of Brasília (Brazil)</span>, 2023
 Advisor(s):
 <a href=https://cedis.tec.br/people/fabiana_mendes>Fabiana Mendes</a>
 . Tags:
 <a href=https://cedis.tec.br/tags/software_quality>Software Quality</a>
 .</li><li x-data="{ open: false }">Ícaro Oliveira Augusto Silva,
-<span><a href=https://www.bdm.unb.br/handle/10483/36164>Usability Information Extraction from App Comments on the Play Store
+<span><a href=https://www.bdm.unb.br/handle/10483/36164 target=_blank>Usability Information Extraction from App Comments on the Play Store
 </a></span><span>. Senior Project (Bachelor of Software Engineering) - University of Brasília (Brazil)</span>, 2023
 Advisor(s):
 <a href=https://cedis.tec.br/people/cristiane_ramos>Cristiane Ramos</a>
@@ -20,7 +20,7 @@ Advisor(s):
 <a href=https://cedis.tec.br/tags/nlp>Nat Lang Processing</a>,
 <a href=https://cedis.tec.br/tags/software_quality>Software Quality</a>
 .</li><li x-data="{ open: false }">Lucas Naves Cauê Oliveira,
-<span><a href=https://www.bdm.unb.br/handle/10483/33859>University of Heuristics - A Game to Support Learning Nielsen's Heuristics
+<span><a href=https://www.bdm.unb.br/handle/10483/33859 target=_blank>University of Heuristics - A Game to Support Learning Nielsen's Heuristics
 </a></span><span>. Senior Project (Bachelor of Software Engineering) - University of Brasília (Brazil)</span>, 2023
 Advisor(s):
 <a href=https://cedis.tec.br/people/fabiana_mendes>Fabiana Mendes</a>
@@ -35,14 +35,14 @@ Advisor(s):
 . Tags:
 <a href=https://cedis.tec.br/tags/software_quality>Software Quality</a>
 .</li><li x-data="{ open: false }">Caio Beleza,
-<span><a href=https://www.bdm.unb.br/handle/10483/30367>Issues in Software Interfaces that Lead Users to Errors and How to Avoid Them
+<span><a href=https://www.bdm.unb.br/handle/10483/30367 target=_blank>Issues in Software Interfaces that Lead Users to Errors and How to Avoid Them
 </a></span><span>. Senior Project (Bachelor of Software Engineering) - University of Brasília (Brazil)</span>, 2022
 Advisor(s):
 <a href=https://cedis.tec.br/people/fabiana_mendes>Fabiana Mendes</a>
 . Tags:
 <a href=https://cedis.tec.br/tags/software_quality>Software Quality</a>
 .</li><li x-data="{ open: false }">Iolane Andrade,
-<span><a href=https://www.bdm.unb.br/handle/10483/30378>The Use of Exploratory Testing - A Practical Application
+<span><a href=https://www.bdm.unb.br/handle/10483/30378 target=_blank>The Use of Exploratory Testing - A Practical Application
 </a></span><span>. Senior Project (Bachelor of Software Engineering) - University of Brasília (Brazil)</span>, 2022
 Advisor(s):
 <a href=https://cedis.tec.br/people/ricardo_ajax>Ricardo Ajax</a>
@@ -50,14 +50,14 @@ Advisor(s):
 <a href=https://cedis.tec.br/tags/verification_validation_testing>Verification, Validation and Testing</a>,
 <a href=https://cedis.tec.br/tags/software_quality>Software Quality</a>
 .</li><li x-data="{ open: false }">Rafael Pinheiro,
-<span><a href=https://www.bdm.unb.br/handle/10483/30373>An Approach to Support the Initiation of Software Process Improvement Programs through the Prioritization of Benefit Expectations
+<span><a href=https://www.bdm.unb.br/handle/10483/30373 target=_blank>An Approach to Support the Initiation of Software Process Improvement Programs through the Prioritization of Benefit Expectations
 </a></span><span>. Senior Project (Bachelor of Software Engineering) - University of Brasília (Brazil)</span>, 2022
 Advisor(s):
 <a href=https://cedis.tec.br/people/ricardo_ajax>Ricardo Ajax</a>
 . Tags:
 <a href=https://cedis.tec.br/tags/software_quality>Software Quality</a>
 .</li><li x-data="{ open: false }">Iago Gonçalves,
-<span><a href=https://www.bdm.unb.br/handle/10483/21579>Support for Promoting Technical Debt Visibility
+<span><a href=https://www.bdm.unb.br/handle/10483/21579 target=_blank>Support for Promoting Technical Debt Visibility
 </a></span><span>. Senior Project (Bachelor of Software Engineering) - University of Brasília (Brazil)</span>, 2019
 Advisor(s):
 <a href=https://cedis.tec.br/people/andre_lanna>André Lanna</a>
@@ -72,13 +72,13 @@ Advisor(s):
 . Tags:
 <a href=https://cedis.tec.br/tags/software_quality>Software Quality</a>
 .</li><li x-data="{ open: false }">VALENCA, K. S.,CANEDO, E. D.,KOSLOSKI, R. A. D.,FREITAS, S. A. A.,
-<span><a href=https://personales.upv.es/thinkmind/ICSEA/ICSEA_2016/icsea_2016_12_30_10096.html>Proposed Data Model for a Historical Base Tool
+<span><a href=https://personales.upv.es/thinkmind/ICSEA/ICSEA_2016/icsea_2016_12_30_10096.html target=_blank>Proposed Data Model for a Historical Base Tool
 </a></span>, in 11th International Conference on Software Engineering Advances (ICSEA)
 , 2016
 . Tags:
 <a href=https://cedis.tec.br/tags/software_quality>Software Quality</a>
 .</li><li x-data="{ open: false }">Victor Carvalho,
-<span><a href=https://www.bdm.unb.br/handle/10483/11323>Impact Analysis of Programming Techniques on the Performance of AndroidTM Applications
+<span><a href=https://www.bdm.unb.br/handle/10483/11323 target=_blank>Impact Analysis of Programming Techniques on the Performance of AndroidTM Applications
 </a></span><span>. Senior Project (Bachelor of Software Engineering) - University of Brasília (Brazil)</span>, 2015
 Advisor(s):
 <a href=https://cedis.tec.br/people/fabiana_mendes>Fabiana Mendes</a>
@@ -86,14 +86,14 @@ Advisor(s):
 <a href=https://cedis.tec.br/tags/software_quality>Software Quality</a>,
 <a href=https://cedis.tec.br/tags/verification_validation_testing>Verification, Validation and Testing</a>
 .</li><li x-data="{ open: false }">Ramaiane Silva,
-<span><a href=https://www.bdm.unb.br/handle/10483/9278>Quality in Software Process Modeling
+<span><a href=https://www.bdm.unb.br/handle/10483/9278 target=_blank>Quality in Software Process Modeling
 </a></span><span>. Senior Project (Bachelor of Software Engineering) - University of Brasília (Brazil)</span>, 2014
 Advisor(s):
 <a href=https://cedis.tec.br/people/fabiana_mendes>Fabiana Mendes</a>
 . Tags:
 <a href=https://cedis.tec.br/tags/software_quality>Software Quality</a>
 .</li><li x-data="{ open: false }">Antonio Silva Júnior,
-<span><a href=https://www.bdm.unb.br/handle/10483/6610>Tool Support for the Quality Assurance Process - QUASAR  Software Quality and Results Evaluation
+<span><a href=https://www.bdm.unb.br/handle/10483/6610 target=_blank>Tool Support for the Quality Assurance Process - QUASAR  Software Quality and Results Evaluation
 </a></span><span>. Senior Project (Bachelor of Software Engineering) - University of Brasília (Brazil)</span>, 2013
 Advisor(s):
 <a href=https://cedis.tec.br/people/cristiane_ramos>Cristiane Ramos</a>
