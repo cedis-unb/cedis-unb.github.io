@@ -55,11 +55,11 @@ tags:
       <svg :class="{'rotate-0': !showPrevious, 'rotate-180': showPrevious}" class="ml-2 h-5 w-5 transform transition-transform duration-200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#51C5CF"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
     </h2>
     <div x-show="showPrevious" x-cloak>
-{{< filterPeople caput="#### PhD" categories="phd_candidate" advisors="sergio_freitas" tags="inactive" notags="">}}
-{{< filterPeople caput="#### Master's degree" categories="master_student" advisors="sergio_freitas" tags="inactive" notags="">}}
-{{< filterPeople caput="#### Postgraduate Specialization" categories="specialization" advisors="sergio_freitas" tags="inactive" notags="">}}
-{{< filterPeople caput="#### Undergraduate Research" categories="scientific_initiation" advisors="sergio_freitas" tags="inactive" notags="">}}
-{{< filterPeople caput="#### Bachelor's Thesis" categories="tcc" advisors="sergio_freitas" tags="inactive" notags="">}}
+    {{< publications caput="#### PhD" year="" types="phd" advisors="sergio_freitas" notypes="" tags="" notags="" >}}
+    {{< publications caput="#### Master's degree" year="" types="dissertation" advisors="sergio_freitas" notypes="" tags="" notags="" >}}
+    {{< publications caput="#### Postgraduate Specialization" year="" types="specialization" advisors="sergio_freitas" notypes="" tags="" notags="" >}}
+    {{< filterPeople caput="#### Undergraduate Research" categories="scientific_initiation" advisors="sergio_freitas" tags="inactive" notags="">}}
+    {{< publications caput="#### Bachelor's Thesis" year="" types="tcc" advisors="sergio_freitas" notypes="" tags="" notags="" >}}
     </div>
   </div>
 
@@ -72,5 +72,4 @@ tags:
 - Orcid ID: {{< link-interno "https://orcid.org/0000-0003-3996-4985" "Orcid Profile" >}}
 
 
-## Publications
-{{< publications year="" tags="sergio_freitas" notags="" >}}
+{{< publications caput="## Publicações" year="" types="" notypes="" tags="sergio_freitas" notags="" >}}

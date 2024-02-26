@@ -1854,6 +1854,30 @@ items:
   url: ''
   year: 2023
 - authors:
+  - Ana Cláudia Alves Mendes Araújo
+  title:
+    pt: REQGAME - Elicitação de Requisitos com Gamificação - um experimento em projetos de software em órgão público federal
+    en: REQGAME - Requirements Elicitation with Gamification - An Experiment in Software Projects in a Federal Public Agency
+  summary:
+    pt: O sucesso de um projeto de software está intrinsecamente ligado à clareza e à precisão com que os requisitos são definidos. Estes requisitos delineiam o escopo do projeto e estabelecem o funcionamento esperado do software. A fase de elicitação de requisitos é, portanto, um marco crítico no ciclo de vida do desenvolvimento de software, exigindo excelentes habilidades de comunicação, cooperação e motivação entre todos os envolvidos. Contudo, desafios como a colaboração efetiva e a coordenação de agendas podem comprometer o engajamento e a participação ativa neste processo. Para superar esses obstáculos e estimular a participação, a gamificação tem se mostrado uma estratégia eficaz, aplicando mecânicas de jogos em contextos não lúdicos. Dentro desse contexto, o Octalysis, um framework de gamificação desenvolvido por Yu-Kai Chou, oferece uma metodologia para adaptar e personalizar a gamificação de acordo com o perfil dos usuários envolvidos. Este estudo introduz o REQGame, um método inovador que integra gamificação ao processo de elicitação de requisitos, fundamentado no framework Octalysis. O objetivo é potencializar o envolvimento e o engajamento dos participantes, avaliando também os efeitos positivos que a implementação de técnicas de gamificação pode trazer para o processo.
+    en: The success of a software project is closely linked to the clarity and accuracy of its requirements. These requirements outline the project scope and establish the expected operation of the software. Thus, the requirement elicitation phase is a critical milestone in the software development lifecycle, demanding excellent communication, cooperation, and motivation skills among all stakeholders. However, challenges such as effective collaboration and scheduling coordination can compromise engagement and active participation in this process. To overcome these obstacles and stimulate participation, gamification has proven to be an effective strategy by applying game mechanics in non-game contexts. Within this framework, Octalysis, a gamification framework developed by Yu-Kai Chou, offers a methodology to tailor and customize gamification according to the user profiles involved. This study introduces REQGame, an innovative method that integrates gamification into the requirement elicitation process, based on the Octalysis framework. The aim is to enhance the involvement and engagement of participants, also evaluating the positive effects that the implementation of gamification techniques can bring to the process.
+  book_title: ''
+  volume: ''
+  doi_isbn: ''
+  journal_event: ''
+  location: ''
+  pages: ''
+  publisher: ''
+  tags:
+  - gamification
+  - software_requirements
+  type: dissertation
+  program: curso_ppca
+  advisors:
+  - sergio_freitas
+  url: ''
+  year: 2021
+- authors:
   - MARIANI, C. B.
   - RAMOS, J. C. C.
   - RODRIGUES, L. S.
