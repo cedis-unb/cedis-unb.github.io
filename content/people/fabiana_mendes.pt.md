@@ -70,4 +70,4 @@ tags:
 - Orcid iD: [Orcid Profile](https://orcid.org/0000-0002-1724-2044)
 
 ## Publicações
-{{< publications year="" keywords="fabiana_mendes" notags="" >}}
+{{< publications year="" tags="fabiana_mendes" notags="" >}}

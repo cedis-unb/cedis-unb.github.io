@@ -22,7 +22,7 @@ Brasília, 29 de novembro de 2023
 
 Professores do Centro de Estudos, Desenvolvimento e Inovação em Software (CEDIS) da Universidade de Brasília (UnB) alcançaram um marco notável no campo da educação ao receber uma Menção Honrosa na categoria "Melhoria de indicadores de aprendizagem", parte da primeira edição do Prêmio Anual de Inovação no Ensino de Graduação da UnB, de acordo com o Edital DEG N° 25/2023.
 
-Os professores homenageados são Cristiane Soares Ramos e Sergio Antônio Andrade de Freitas, em colaboração com os colegas Marcia Mortari, Eduardo Bessa e Dianne Magalhães, todos integrantes do Programa A3M ([Aprendizagem para o 3º Milênio](http://www.a3m.unb/)). Este grupo se destacou no cenário educacional pela sua contribuição significativa na melhoria dos processos de ensino-aprendizagem.
+Os professores homenageados são Cristiane Soares Ramos e Sergio Antônio Andrade de Freitas, em colaboração com os colegas Marcia Mortari, Eduardo Bessa e Dianne Magalhães, todos integrantes do Programa A3M ([Aprendizagem para o 3º Milênio](http://a3m.unb.br/)). Este grupo se destacou no cenário educacional pela sua contribuição significativa na melhoria dos processos de ensino-aprendizagem.
 
 Esta honraria é um reflexo do impacto do livro "Indicadores de Aprendizagem", uma obra coletiva desses professores, que está disponível no portal da UnB [aqui](https://livros.unb.br/index.php/portal/catalog/book/442). Este livro simboliza o empenho e a dedicação dos professores em desenvolver métodos inovadores de ensino, adaptados às necessidades contemporâneas do setor educacional.
 

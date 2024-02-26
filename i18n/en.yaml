@@ -10,8 +10,9 @@ read: "read"
 News: "News"
 backToTop: "Back to Top"
 abstract: "Abstract"
-esw: "Undergraduate Course in Software Engineering, FGA/UnB"
-ppca: "Postgraduate Program in Applied Computing, UnB"
+curso_esw: "Senior Project (Bachelor of Software Engineering) - University of Brasília (Brazil)"
+curso_ppca: "Master's Thesis in Applied Computing, University of Brasília (Brazil)"
+curso_unb: "University of Brasília"
 
 # TAGS
 # Knowledge Areas
@@ -32,6 +33,7 @@ active_learning: "Active Learning"
 education: "Education"
 digital_transformation: "Digital Transformation"
 software_quality: "Software Quality"
+esw: "Software Engineering"
 
 # Participation Types
 researcher: "Researchers"
@@ -43,15 +45,15 @@ specialization: "Specialization Student"
 scientific_initiation: "Scientific Initiation"
 tcc: "TCC"
 monitor: "Course Assistant"
-orientador: "Advisor"
+orientador: "Advisor(s)"
 inactive: "Inactive"
-sergio_freitas: "Sergio Freitas"
-cristiane_ramos: "Cristiane Ramos"
-andre_lanna: "André Lanna"
-george_marsicano: "George Marsicano"
-fabiana_mendes: "Fabiana Mendes"
-ricardo_ajax: "Ricardo Ajax"
-daniel_sundfeld: "Daniel Sundfeld"
+sergio_freitas: "Sergio Freitas (Tag)"
+cristiane_ramos: "Cristiane Ramos (Tag)"
+andre_lanna: "André Lanna (Tag)"
+george_marsicano: "George Marsicano (Tag)"
+fabiana_mendes: "Fabiana Mendes (Tag)"
+ricardo_ajax: "Ricardo Ajax (Tag)"
+daniel_sundfeld: "Daniel Sundfeld (Tag)"
 
 # Projects
 dfcris: "Project DFCris"
@@ -70,13 +72,7 @@ edital: "Editals and Calls"
 people: "People"
 undergraduate: "Undergraduate"
 graduate: "Graduate"
-sergio_freitas: "Sergio Freitas (Advisor)"
-andre_lanna: "André Lanna (Advisor)"
-george_marsicano: "George Marsicano (Advisor)"
-fabiana_mendes: "Fabiana Mendes (Advisor)"
-cristiane_ramos: "Cristiane Ramos (Advisor)"
-ricardos_ajax: "Ricardo Ajax (Advisor)"
-daniel_sundfeld: "Daniel Sundfeld (Advisor)"
+
 
 
 #PRODUTOS

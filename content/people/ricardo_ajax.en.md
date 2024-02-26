@@ -70,4 +70,4 @@ tags:
 - Lattes iD: [CV Lattes](http://lattes.cnpq.br/8309011123228244)
 
 ## Publications
-{{< publications year="" keywords="ricardo_ajax" notags="" >}}
+{{< publications year="" tags="ricardo_ajax" notags="" >}}

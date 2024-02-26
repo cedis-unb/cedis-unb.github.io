@@ -66,5 +66,5 @@ tags:
 - Orcid iD: [Orcid Profile](https://orcid.org/0000-0002-5147-3698)
 
 ## Publicações
-{{< publications year="" keywords="daniel_sundfeld" notags="" >}}
+{{< publications year="" tags="daniel_sundfeld" notags="" >}}
 

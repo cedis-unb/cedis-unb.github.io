@@ -73,4 +73,4 @@ tags:
 
 
 ## Publications
-{{< publications year="" keywords="sergio_freitas" notags="" >}}
+{{< publications year="" tags="sergio_freitas" notags="" >}}

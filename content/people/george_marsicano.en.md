@@ -72,4 +72,4 @@ tags:
 - Lattes: [CV Lattes](http://lattes.cnpq.br/2317804591146328)
 
 ## Publications
-{{< publications year="" keywords="george_marsicano" notags="" >}}
+{{< publications year="" tags="george_marsicano" notags="" >}}
