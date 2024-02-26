@@ -163,7 +163,7 @@
             {{- if $index }}, {{- end -}}
             {{- $element -}}
           {{- end -}},
-          <span>{{ if .url }}<a href="{{ .url }}">{{ end }}
+          <span>{{ if .url }}<a href="{{ .url }}" target="_blank">{{ end }}
             {{ index .title $.Site.Language.Lang }}
           {{ if .url }}</a>{{ end }}</span>
           {{ if .program }}<span>. {{ .program | i18n }}</span>{{ end }}
