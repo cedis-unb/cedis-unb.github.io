@@ -7,18 +7,17 @@ outputs:
     - JSON
   page:
     - HTML
-  searchindex:
-    - JSON
+#  searchindex:
+#    - JSON
 
-outputFormats:
-  JSON:
-    mediaType: "application/json"
-  searchindex:
-    path: "/"
-    baseName: "index"
-    isPlainText: true
-    mediaType: "application/json"
-
+#outputFormats:
+#  JSON:
+#    mediaType: "application/json"
+#  searchindex:
+#    path: "/"
+#    baseName: "index"
+#    isPlainText: true
+#    mediaType: "application/json"
     
 DefaultContentLanguage: en
 languages:
