@@ -28,11 +28,12 @@ At CEDIS, the integration of High-Performance Computing and Cloud Computing is a
 -
 
 ## Ongoing projects
-1. Laguna
+{{< postsByCategoriesTags categories="project,hpc" >}}
 
-## Publications and productions
-
+## Publications and Productions
 ### Publications
+
+{{< publications year="" type="" notypes="" tags="hpc" notags="" >}}
 
 ### Apps
 

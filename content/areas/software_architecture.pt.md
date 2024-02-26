@@ -27,8 +27,10 @@ Professor e pesquisador na área de Arquitetura de Software. Atualmente, desempe
 ## Projetos em andamento
 Uma visão geral dos projetos atuais, destacando as inovações e os objetivos desses projetos.
 
-## Publicações e pesquisas realizadas
-Lista de publicações e pesquisas concluídas, com links para artigos ou resumos.
+## Publicações e produções
+### Publicações
+
+{{< publications year="" type="" notypes="" tags="software_architecture" notags="" >}}
 
 ## Equipe de pesquisadores
 Apresentação dos membros da equipe, com uma breve descrição de suas especialidades e contribuições para a área.

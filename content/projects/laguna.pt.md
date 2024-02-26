@@ -10,6 +10,7 @@ authorimage: ../assets/images/global/author.webp
 categories: 
 - project
 - daniel_sundfeld
+- hpc
 tags:
 - hpc
 - project_laguna

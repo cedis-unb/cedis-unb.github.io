@@ -59,24 +59,9 @@ Especialista em gamificação e professor Titular da Universidade de Brasíli
 ## Publicações e produções
 
 ### Publicações
-1. ASSIS, L. S. ; FREITAS, S. A. A. [Gamification in Organizational Contexts: A Systematic Literature Review](http://dx.doi.org/10.1007/978-3-031-35969-9_23). In: 25th International Conference on Human-Computer Interaction, 2023, Copenhagen. Proceedings of the 25th International Conference on Human-Computer Interaction, 2023.
-2. ERVEN, R. V. ; JUBE, D. ; SANTOS, H. ; FREITAS, S. A. A. ; CANEDO, E. D. Gamification project to receive continuous feedback in the context of the evolution of public service for lawyers. In: 2023 IEEE ASEE Frontiers in Education, 2023, Texas. Procedings of the 2023 IEEE ASEE Frontiers in Education, 2023.
-3. CAVALCANTI, P. P. ; FREITAS, S. A. A. [Evaluation of the Change in the Quality of Reports with the Application of Gamification in a Corporative Institution](https://doi.org/10.1007/978-3-031-05544-7_27). Proceedings of the 24th International Conference on Human-Computer Interaction. 1ed.: , 2022, v. , p. 353-367.
-4. Guimarães, Ítalo Alves; Freitas, Sergio A. A. [Implementação de um aplicativo de apoio para a disciplina gamificada em IHC](https://www.bdm.unb.br/handle/10483/36833). Universidade de Brasília, 2023.
-5. Teodosio, Rafael Santos; Freitas, Sergio A. A. [$tudy -  gamificação para educação financeira de jovens](https://www.bdm.unb.br/handle/10483/34017). Universidade de Brasília, 2023.
-6. Bandeira, Érico Maximiano; Freitas, Sergio A. A. [Pixel - site gamificado para aprendizagem de critérios de usabilidade disciplina Interação Humano-Computador](https://www.bdm.unb.br/handle/10483/33847). Universidade de Brasília, 2022.
-7. Pereira, Weiller Fernandes; Freitas, Sergio A. A. [Revisão sistemática da literatura sobre o uso de frameworks na construção de uma gamificação na educação](https://www.bdm.unb.br/handle/10483/30628). Universidade de Brasília, 2022.
-8. LEMES, R. F. ; FREITAS, S. A. A. [Uso do algoritmo Apriori na avaliação da motivação em uma gamificação](https://doi.org/10.5753/cbie.sbie.2019.694). In: impósio Brasileiro de Informática na Educação (SBIE), 2019, Brasilia. Anais do SBIE 2019, 2019. p. 694-703.
-9. Calado, Paulo Markes Rodrigues de Oliveira; Freitas, Sergio A. A. [Estratégia para identificar oportunidades de melhoria em aplicações gamificadas](https://www.bdm.unb.br/handle/10483/21592). Universidade de Brasília, 2019.
-10. Cruz, Ludimila da Bela; Freitas, Sergio A. A. [Ferramenta de apoio a construção de projetos de gamificação](https://www.bdm.unb.br/handle/10483/21591). Universidade de Brasília, 2019.
-11. Santos, Leandro Alves Ferreira; Freitas, Sergio A. A. [Software gamificado para auxílio ao ensino e aprendizagem de matemática para crianças](https://www.bdm.unb.br/handle/10483/19791). Universidade de Brasília, 2018.
-12. LEAO, H. A. T. ; SOUZA, R. V. F. ; MACIEL, A. A. F. ; FREITAS, S. A. A. ; CANEDO, E. D. [Gamificação aplicada ao desenvolvimento de software: Análise e Projeto](https://ulbra-to.br/encoinfo/edicoes/2018/artigos/gamificacao-aplicada-ao-desenvolvimento-de-software-analise-projeto-e-implantacao/#:~:text=Esse%20trabalho%20apresenta%20um%20estudo%20de%20caso%20do,para%20apoiar%20na%20documenta%C3%A7%C3%A3o%20das%20tarefas%20com%20qualidade.). In: XX ENCOINFO, 2018, Palmas. Anais do XX ENCOINFO, 2018.
-13. CUNHA, G. C. A. ; BARRAQUI, L. P. ; FREITAS, S. A. A. [Evaluating the use of gamification in mathematics learning in primary school children](https://doi.org/10.1109/FIE.2018.8658950). In: 48th Annual Frontiers in Education (FIE), 2018, San Francisco. Proceedings of the 48th Annual Frontiers in Education (FIE), 2018.
-14. FREITAS, S. A. A.; LACERDA, ARTHUR R. T. ; CALADO, PAULO M. R. O. ; LIMA, THIAGO S. ; DIAS CANEDO, EDNA . [Gamification in education: A methodology to identify student's profile](https://doi.org/10.1109/FIE.2017.8190499). In: 2017 IEEE Frontiers in Education Conference (FIE), 2017, Indianapolis. 2017 IEEE Frontiers in Education Conference (FIE), 2017.
-15. CUNHA, GEOVÂNIA ; BARRAQUI, LUCIANA ; FREITAS, S. A. A. [Uso da gamificação nos anos iniciais do ensino fundamental brasileiro](https://doi.org/10.5753/cbie.sbie.2017.1742). In: XXVIII Simpósio Brasileiro de Informática na Educação SBIE (Brazilian Symposium on Computers in Education), 2017, Recife, 2017. p. 1742.
-16. NAYARA, BRUNA ; CRUZ, LUDIMILA DA BELA ; FREITAS, S. A. A. [Metodologia para avaliação da gamificação em jogos](http://dx.doi.org/10.5753/cbie.sbie.2016.510). In: XXVII Simpósio Brasileiro de Informática na Educação, 2016, Uberlandia, 2016. p. 510-519.
-17. FREITAS, S. A. A.; LIMA, THIAGO ; CANEDO, EDNA ; COSTA, RICARDO LOPES . [Gamificação e avaliação do engajamento dos estudantes em uma disciplina técnica de curso de graduação](http://dx.doi.org/10.5753/cbie.sbie.2016.370). In: XXVII Simpósio Brasileiro de Informática na Educação, 2016, Uberlandia, 2016. p. 370-379.
-18. Assunção, Wilker Mesquita de; Freitas, Sergio A. A. [Ambiente de aprendizagem gamificado para ensino de algoritmos](https://www.bdm.unb.br/handle/10483/14870). Universidade de Brasília, 2016.
+{{< publications year="" type="" notypes="" tags="gamification" notags="" >}}
+
+
 ### Aplicativos
 1. jornada IHC mobile - aplicativo de suporte para a disciplina gamificada Interação Humano-Computador ( jornada IHC), 2023.
 2. Teodosio, Rafael Santos; $tudy -  educação financeira de jovens, 2022.

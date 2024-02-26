@@ -9,6 +9,7 @@ summary: O projeto de Transformação Digital de Serviços Públicos do Governo 
 authorimage: ../assets/images/global/author.webp
 categories: 
 - project
+- project_td
 - george_marsicano
 tags:
 - digital_transformation
