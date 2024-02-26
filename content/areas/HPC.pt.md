@@ -28,11 +28,12 @@ No CEDIS, a integração de Computação de Alto Desempenho e Computação em Nu
 - 
 
 ## Projetos em andamento
-1. Laguna
+{{< postsByCategoriesTags categories="project,hpc" >}}
 
-## Publicações e produções
-
+## Publicações e produções
 ### Publicações
+
+{{< publications year="" type="" notypes="" tags="hpc" notags="" >}}
 
 ### Apps
 

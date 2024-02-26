@@ -11,6 +11,7 @@ categories:
 - project
 - sergio_freitas
 - andre_lanna
+- dfcris
 tags: 
 - machine_learning
 - nlp

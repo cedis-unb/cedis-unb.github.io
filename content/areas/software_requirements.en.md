@@ -19,3 +19,8 @@ Requirements engineering (RE) is an interdisciplinary area of Software Engineeri
 At CEDIS, Requirements Engineering is currently a research, development, and application area with a focus on plan-driven, agile, and hybrid software development approaches, in the processes and human relations to be built during the execution of RE, and in the use of artificial intelligence tools.
 
 This research line is coordinated by Prof. George Marsicano and has a team of dedicated researchers. The goal is to develop, identify, and establish processes, methods, and tools that make the RE process more efficient and innovative, both from a technical and human standpoint.
+
+## Publications and Productions
+### Publications
+
+{{< publications year="" type="" notypes="" tags="software_requirements" notags="" >}}

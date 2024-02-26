@@ -11,6 +11,7 @@ categories:
 - project
 - sergio_freitas
 - cristiane_ramos
+- project_cc
 tags: 
 - gamification
 - project_cc

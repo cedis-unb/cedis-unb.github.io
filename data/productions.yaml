@@ -266,7 +266,7 @@ items:
   advisors:
   - sergio_freitas
   url: http://repositorio2.unb.br/jspui/handle/10482/38687
-  year: 2023
+  year: 2020
 - authors:
   - FLAUSINO, CAIO GOMES
   - QUEIROZ, DIEGO CÉSAR FLORÊNCIO DE
@@ -501,7 +501,7 @@ items:
   advisors:
   - sergio_freitas
   url: http://repositorio2.unb.br/jspui/handle/10482/37835
-  year: 2023
+  year: 2019
 - authors:
   - João Rossi Paulo Rocha
   title:
@@ -1832,7 +1832,7 @@ items:
   advisors:
   - sergio_freitas
   url: ''
-  year: 2021
+  year: 2023
 - authors:
   - MARIANI, C. B.
   - RAMOS, J. C. C.
@@ -2153,6 +2153,7 @@ items:
   publisher: ''
   tags:
   - sergio_freitas
+  - active_learning
   type: workshop
   program: ''
   advisors: []
@@ -2285,6 +2286,7 @@ items:
   pages: '203'
   publisher: Clube dos autores
   tags:
+  - active_learning
   - cristiane_ramos
   - ricardo_ajax
   type: book
@@ -2363,6 +2365,7 @@ items:
   pages: ''
   publisher: ''
   tags:
+  - active_learning
   - ricardo_ajax
   - cristiane_ramos
   type: conference
@@ -2466,6 +2469,7 @@ items:
   pages: ''
   publisher: Atena Editora
   tags:
+  - active_learning
   - sergio_freitas
   type: book chapter
   program: ''
@@ -2629,6 +2633,8 @@ items:
   pages: ''
   publisher: ''
   tags:
+  - gamification
+  - active_learning
   - sergio_freitas
   type: conference
   program: ''
@@ -2831,6 +2837,8 @@ items:
   pages: '229'
   publisher: Novas Ediçoes Acadêmicas
   tags:
+  - active_learning
+  - software_requirements
   - george_marsicano
   type: book
   program: ''
@@ -2906,6 +2914,8 @@ items:
   pages: ''
   publisher: ''
   tags:
+  - active_learning
+  - education
   - sergio_freitas
   type: conference
   program: ''
@@ -2956,6 +2966,8 @@ items:
   pages: ''
   publisher: ''
   tags:
+  - active_learning
+  - education
   - sergio_freitas
   type: conference
   program: ''
@@ -3067,9 +3079,9 @@ items:
   pages: '289'
   publisher: ''
   tags:
+  - active_learning
   - cristiane_ramos
   - ricardo_ajax
-  - active_learning
   type: conference
   program: ''
   advisors: []
@@ -3145,6 +3157,9 @@ items:
   pages: ''
   publisher: ''
   tags:
+  - gamification
+  - education
+  - active_learning
   - sergio_freitas
   type: conference
   program: ''
@@ -3171,6 +3186,7 @@ items:
   pages: ''
   publisher: ''
   tags:
+  - active_learning
   - sergio_freitas
   type: conference
   program: ''
@@ -3223,6 +3239,8 @@ items:
   pages: ''
   publisher: ''
   tags:
+  - gamification
+  - active_learning
   - sergio_freitas
   type: conference
   program: ''
@@ -3331,6 +3349,8 @@ items:
   pages: ''
   publisher: ''
   tags:
+  - active_learning
+  - education
   - sergio_freitas
   type: conference
   program: ''
@@ -3652,6 +3672,8 @@ items:
   pages: ''
   publisher: ''
   tags:
+  - gamification
+  - active learning
   - sergio_freitas
   type: conference
   program: ''
@@ -3677,6 +3699,7 @@ items:
   pages: ''
   publisher: ''
   tags:
+  - learning
   - sergio_freitas
   type: conference
   program: ''
@@ -3729,6 +3752,7 @@ items:
   pages: ''
   publisher: ''
   tags:
+  - active_learning
   - sergio_freitas
   - george_marsicano
   type: conference
@@ -3756,6 +3780,7 @@ items:
   pages: ''
   publisher: ''
   tags:
+  - active_learning
   - sergio_freitas
   type: conference
   program: ''
@@ -3949,6 +3974,8 @@ items:
   pages: ''
   publisher: ''
   tags:
+  - active_learning
+  - software_requirements
   - george_marsicano
   - fabiana_mendes
   - sergio_freitas
@@ -3975,6 +4002,7 @@ items:
   pages: ''
   publisher: ''
   tags:
+  - gamification
   - sergio_freitas
   type: conference
   program: ''
@@ -3999,6 +4027,7 @@ items:
   pages: ''
   publisher: ''
   tags:
+  - learning
   - sergio_freitas
   - fabiana_mendes
   type: conference
@@ -4025,6 +4054,7 @@ items:
   pages: ''
   publisher: ''
   tags:
+  - software_quality
   - sergio_freitas
   - ricardo_ajax
   type: conference

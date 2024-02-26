@@ -19,3 +19,8 @@ Engenharia de requisitos (ER) é uma área interdisciplinar da Engenharia de Sof
 No CEDIS, atualmente, a Engenharia de Requisitos é uma área de pesquisa, desenvolvimento e aplicação com enfoque em abordagens de desenvolvimento de software dirigidas a plano, ágeis e híbridas, nos processos e relações humanas a serem construídas durante a execução da ER e, no uso de ferramentas de inteligência artificial. 
 
 Esta linha de pesquisa é coordenada pelo Prof. George Marsicano e conta com uma equipe de pesquisadores dedicados. O objetivo é desenvolver, identificar e estabelecer processos, métodos e ferramentas que tornem o processo de ER mais eficiente e inovador, tanto do ponto de vista técnico quanto humano.
+
+## Publicações e produções
+### Publicações
+
+{{< publications year="" type="" notypes="" tags="software_requirements" notags="" >}}

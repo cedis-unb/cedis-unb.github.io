@@ -41,9 +41,10 @@ Professor and researcher in the field of Artificial Intelligence (AI) and Natura
 - Hilário Seibel Júnior. Retrieval of relevant information in digital documents based on anaphora resolution.
 - Ayrton Monteiro Cristo Filho. Computational interpretation of the simple future perfect tense in narratives for Brazilian Portuguese.
 
-## Ongoing Projects
-DFCris - Categorization and search of CAPES area for scientific information documents
-Funding: FAP-DF, Start 2022, status: ongoing.
+## Ongoing projects
+{{< postsByCategoriesTags categories="project,ai,nlp,machine_learning" >}}
+DFCris - Categorização e busca de área CAPES para documentos de informação científica
+Financiamento: FAP-DF, Início 2022, status: em andamento.
 
 ## Publications and Productions
 ### Software
@@ -51,6 +52,10 @@ Funding: FAP-DF, Start 2022, status: ongoing.
 - FREITAS, S. A. A.; PEREIRA, J. G. L. ; QUARESMA, P. ; RODRIGUES, I. P. Engine for document retrieval of PGR opinions on the web, integrating morpho-syntactic knowledge of Portuguese. 1998.
 
 ### Publications
+
+{{< publications year="" type="" notypes="" tags="ai,nlp,machine_learning" notags="" >}}
+
+### Publications2
 - Frinhani, Cristóvão de Lima. Application of natural language processing: a support tool for the correction of essay questions. BSc thesis, UnB, 2016.
 - FRINHANI, CRISTOVAO LIMA ; DE FREITAS, SERGIO ANTONIO ANDRADE ; FERNANDES, MAURICIO VIDOTTI ; DIAS CANEDO, EDNA. An automatic essay correction for an active learning environment. 2016 IEEE/ACS 13th International Conference of Computer Systems and Applications (AICCSA), 2016.
 - Bossois, Débora Zupeli. Text categorization methodology from unlabeled documents using an anaphora resolution process. Master's thesis, UFES, 2010.
@@ -65,6 +70,8 @@ Funding: FAP-DF, Start 2022, status: ongoing.
 - FREITAS, S. A. A.; PEREIRA, J. G. L. ; MENEZES, C. S. Abducing Definite Descriptions Links. In: II TIL - Workshop on IT and Human Language, 2004, Salvador - BA. Proceedings of the SBC, 2004.
 - CRISTO FILHO, A. M. ; FREITAS, S. A. A. Interpretation of the Simple Future Perfect Tense in Narratives. In: 1st Workshop on Information Technology and Human Language, 2003, São Carlos - SP. Proceedings of TIL2003, 2003.
 - FREITAS, S. A. A.; PEREIRA, J. G. L. Improving Centering to Support a Discourse Segmentation. In: Workshop on Focus and Natural Language Processing, 1995. IBM Working Papers of the Institute for Logic and Linguistics: Focus and Natural Language Processing. v. 3.
+
+
 
 ## Contact and Collaboration
 For information and contact with the team: [sergiofreitas@unb.br](mailto:sergiofreitas@unb.br).

@@ -25,8 +25,10 @@ A professor and researcher in the field of Software Architecture. Currently, he 
 ## Ongoing Projects
 An overview of current projects, highlighting the innovations and goals of these projects.
 
-## Completed Research and Publications
-A list of completed research and publications, with links to articles or abstracts.
+## Publications and Productions
+### Publications
+
+{{< publications year="" type="" notypes="" tags="software_architecture" notags="" >}}
 
 ## Research Team
 Introduction of the research team members, with a brief description of their specialties and contributions to the field.
