@@ -20,6 +20,8 @@ tags:
 - dfcris
 - project_cc
 ---
+<div id="top"></div>
+
 ## Academic and Professional Profile
 
 - Current Position: Full Professor at the {{< link-interno "https://www.unb.br/" "University of Brasília" >}} (UnB), working in the undergraduate {{< link-interno "http://software.unb.br/" "Software Engineering" >}} program and the {{< link-interno "https://ppca.unb.br/" "Graduate Program in Applied Computing" >}}.
@@ -60,7 +62,9 @@ tags:
     {{< publications caput="#### Postgraduate Specialization" year="" types="specialization" advisors="sergio_freitas" notypes="" tags="" notags="" >}}
     {{< filterPeople caput="#### Undergraduate Research" categories="scientific_initiation" advisors="sergio_freitas" tags="inactive" notags="">}}
     {{< publications caput="#### Bachelor's Thesis" year="" types="tcc" advisors="sergio_freitas" notypes="" tags="" notags="" >}}
+    {{< backToTopBtn target="top" >}}
     </div>
+
   </div>
 
 
@@ -71,5 +75,5 @@ tags:
 - Lattes: {{< link-interno "http://lattes.cnpq.br/0395549254894676" "CV Lattes" >}}
 - Orcid ID: {{< link-interno "https://orcid.org/0000-0003-3996-4985" "Orcid Profile" >}}
 
-
 {{< publications caput="## Publicações" year="" types="" notypes="" tags="sergio_freitas" notags="" >}}
+{{< backToTopBtn target="top" >}}

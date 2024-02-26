@@ -20,6 +20,8 @@ tags:
 - dfcris
 - project_cc
 ---
+<div id="top"></div>
+
 ## Perfil Acadêmico e Profissional
 
 - Posição Atual: Professor Titular da {{< link-interno "https://www.unb.br/" "Universidade de Brasília" >}} (UnB), atuando no curso de graduação em {{< link-interno "http://software.unb.br/" "Engenharia de Software" >}} e no {{< link-interno "https://ppca.unb.br/" "Programa de Pós-Graduação em Computação Aplicada" >}}.
@@ -60,6 +62,7 @@ tags:
     {{< publications caput="#### Especialização" year="" types="specialization" advisors="sergio_freitas" notypes="" tags="" notags="" >}}
     {{< filterPeople caput="#### Iniciação Científica" categories="scientific_initiation" advisors="sergio_freitas" tags="inactive" notags="">}}
     {{< publications caput="#### Trabalho de Conclusão de Curso (TCC)" year="" types="tcc" advisors="sergio_freitas" notypes="" tags="" notags="" >}}
+    {{< backToTopBtn target="top" >}}
     </div>
   </div>
 
@@ -71,3 +74,4 @@ tags:
 - Orcid ID: {{< link-interno "https://orcid.org/0000-0003-3996-4985" "Orcid Profile​" >}}
 
 {{< publications caput="## Publicações" year="" types="" notypes="" tags="sergio_freitas" notags="" >}}
+{{< backToTopBtn target="top" >}}
