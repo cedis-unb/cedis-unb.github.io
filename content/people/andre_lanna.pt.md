@@ -66,4 +66,4 @@ tags:
 - Orcid ID: [Orcid Profile](https://orcid.org/0000-0003-4200-6569)
 
 ## Publicações
-{{< publications year="" keywords="andre_lanna" notags="" >}}
+{{< publications year="" tags="andre_lanna" notags="" >}}

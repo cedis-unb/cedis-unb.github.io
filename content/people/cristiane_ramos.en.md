@@ -77,4 +77,4 @@ tags:
 - Orcid ID: [Orcid Profile](https://orcid.org/0000-0002-6235-5590)
 
 ## Publications
-{{< publications year="" keywords="cristiane_ramos" notags="" >}}
+{{< publications year="" tags="cristiane_ramos" notags="" >}}

@@ -1,11 +1,14 @@
 {{ $yearInput := .Get "year" }}
-{{ $keywordsInput := .Get "keywords" }}
-{{ $keywords := split $keywordsInput "," }}
 {{ $year := 0 }}
 {{ if ne $yearInput "" }}{{ $year = int $yearInput }}{{ end }}
 
+{{ $tags := split (.Get "tags") "," }} 
+{{ $types := split (.Get "types") "," }} 
+{{ $excludeTags := split (.Get "notags") "," }} 
+{{ $excludeTypes := split (.Get "notypes") "," }} 
+
 <ol class="publications-lncs">
-  {{ range $.Site.Data.publications.items }}
+  {{ range $.Site.Data.productions.items }}
     {{ $includePublication := true }}
 
     <!-- Aplica o filtro de ano, se um ano foi especificado -->
@@ -13,11 +16,23 @@
       {{ $includePublication = false }}
     {{ end }}
 
-    <!-- Verifica se as keywords especificadas correspondem, se houver -->
-    {{ if and $includePublication (gt (len $keywords) 0) (ne (index $keywords 0) "") }}
+    <!-- Adiciona o filtro de tipo, se um tipo foi especificado -->
+    <!-- Adiciona o filtro de tipo, se tipos foram especificados -->
+    {{ if and $includePublication (gt (len $types) 0) (ne (index $types 0) "") }}
+      {{ $typeMatch := false }}
+      {{ if in $types .type }}
+        {{ $typeMatch = true }}
+      {{ end }}
+      {{ if not $typeMatch }}
+        {{ $includePublication = false }}
+      {{ end }}
+    {{ end }}
+
+    <!-- Verifica se as tags especificadas correspondem, se houver -->
+    {{ if and $includePublication (gt (len $tags) 0) (ne (index $tags 0) "") }}
       {{ $keywordMatch := false }}
-      {{ range .keywords }}
-        {{ if in $keywords . }}
+      {{ range .tags }}
+        {{ if in $tags . }}
           {{ $keywordMatch = true }}
           {{ break }}
         {{ end }}
@@ -27,19 +42,99 @@
       {{ end }}
     {{ end }}
 
+    {{/* Filtro de exclusão baseado em excludeTags */}}
+    {{ if and $includePublication (gt (len $excludeTags) 0) (ne (index $excludeTags 0) "") }}
+      {{ range .tags }}
+        {{ if in $excludeTags . }}
+          {{/* Se uma excludeTag for encontrada, a publicação não deve ser incluída */}}
+          {{ $includePublication = false }}
+          {{ break }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+
+    {{/* Filtro de exclusão baseado em excludeTypes */}}
+    {{ if and $includePublication (gt (len $excludeTypes) 0) (ne (index $excludeTypes 0) "") }}
+      {{ if in $excludeTypes .type }}
+        {{/* Se o type da publicação está na lista de excludeTypes, não deve ser incluída */}}
+        {{ $includePublication = false }}
+      {{ end }}
+    {{ end }}
+
+
+    <!-- Faça a impressão do que passou no filtro -->
     {{ if $includePublication }}
-      <li>
+      <li x-data="{ open: false }">
         {{- range $index, $element := .authors -}}
           {{- if $index }}, {{- end -}}
           {{- $element -}}
         {{- end -}},
-        "{{ .title }}"
-        {{- if eq .type "conference" -}}, in {{ .event }}{{- end -}}
-        {{- if eq .type "article" -}}, {{ .journal }}{{- end -}}
+        <span>{{ if .url }}<a href="{{ .url }}">{{ end }}
+          {{ index .title $.Site.Language.Lang }}
+        {{ if .url }}</a>{{ end }}</span>
+        {{ if .program }}<span>. {{ .program | i18n }}</span>{{ end }}
+        {{- if eq .type "conference" -}}, in {{ .journal_event }}
+          {{ if .pages }}, p{{.pages }}{{- end -}}
+        {{- end -}}
+        {{- if eq .type "article" -}}, {{ .journal_event }} 
+          {{ if .volume }}, {{.volume }}{{- end -}}
+          {{ if .pages }}({{.pages }}){{- end -}}
+        {{- end -}}
         {{- if eq .type "book" -}}, {{ .publisher }}{{- end -}}
-        {{- if .year -}}, {{ .year }}.&nbsp;{{- end -}}
-        {{- if .url -}} <a href="{{ .url }}" target="_blank">Link</a>.{{- end -}}
-        {{- if .doi -}} DOI: <a href="https://doi.org/{{ .doi }}" target="_blank">{{ .doi }}</a>{{- end -}}
+        {{- if .year -}}, {{ .year }}{{- end -}}
+
+        <!-- Exibição de advisors, tags, e o resumo com controle do Alpine.js -->
+        {{ if gt (len .advisors) 0 }}
+        {{ i18n "orientador" }}:
+        {{ $totalAdvisors := len .advisors }}
+        {{ range $index, $advisor := .advisors }}
+          {{ with index $.Site.Data.advisors.advisors $advisor }}
+            <a href="{{ .link | absLangURL }}">{{ .name }}</a>{{ if lt $index (sub $totalAdvisors 1) }},{{ end }}
+          {{ end }}
+        {{ end }}
+        {{ end }}
+
+        {{- if .doi_isbn -}}. DOI: <a href="https://doi.org/{{ .doi_isbn }}" target="_blank">{{ .doi_isbn }}</a>{{- end -}}
+
+        <!-- Exibição das tags, quando existirem -->
+        {{ $advisorsList := slice }}
+        {{ range $key, $value := $.Site.Data.advisors.advisors }}
+          {{ $advisorsList = $advisorsList | append $key }}
+        {{ end }}
+        
+        {{ $filteredTags := slice }}
+        {{ range .tags }}
+          {{ if and (not (in $advisorsList .)) (ne . "active") (ne . "inactive") }}
+            {{ $filteredTags = $filteredTags | append . }}
+          {{ end }}
+        {{ end }}
+        
+        {{ $total := len $filteredTags }}
+        {{ if gt $total 0 }}
+          . Tags:
+          {{ range $index, $tag := $filteredTags }}
+            {{ $tagLink := printf "/tags/%s" $tag | absLangURL }}
+            <a href="{{ $tagLink }}">{{ $tag | i18n }}</a>{{ if lt $index (sub $total 1) }}, {{ end }}
+          {{ end }}
+        {{ end }}
+
+        .
+        {{ if .summary }}
+        {{ $currentLangSummary := index .summary $.Site.Language.Lang }}
+        {{ if $currentLangSummary }}
+          <div>
+            <!-- Botão com a cor primária e texto em branco -->
+            <button @click="open = !open" class="bg-primary-500 text-white p-2 rounded cursor-pointer">
+              {{ i18n "abstract" }}
+            </button>
+            <!-- Div com texto usando uma cor neutra escura para melhor legibilidade -->
+            <div x-show="open" class="mt-2 pl-4 font-serif" x-cloak>
+              <span class="text-neutral-700 text-sm">{{ $currentLangSummary }}</span>
+            </div>
+          </div>
+        {{ end }}
+      {{ end }}
+
       </li>
     {{ end }}
   {{ end }}

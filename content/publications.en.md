@@ -10,37 +10,37 @@ authorimage: ../assets/images/global/author.webp
 <div id="top"></div>
 
 ## 2023
-{{< publications year="2023" keywords="" notags="" >}}
+{{< publications year="2023" types="" notypes="tcc" tags="" notags=""  >}}
 {{< backToTopBtn target="top" >}}
 
 ## 2022
-{{< publications year="2022" keywords="" notags="" >}}
+{{< publications year="2022" types="" notypes="tcc" tags="" notags="" >}}
 {{< backToTopBtn target="top" >}}
 
 ## 2021
-{{< publications year="2021" keywords="" notags="" >}}
+{{< publications year="2021" types="" notypes="tcc" tags="" notags="" >}}
 {{< backToTopBtn target="top" >}}
 
 ## 2020
-{{< publications year="2020" keywords="" notags="" >}}
+{{< publications year="2020" types="" notypes="tcc" tags="" notags="" >}}
 {{< backToTopBtn target="top" >}}
 
 ## 2019
-{{< publications year="2019" keywords="" notags="" >}}
+{{< publications year="2019" types="" notypes="tcc" tags="" notags="" >}}
 {{< backToTopBtn target="top" >}}
 
 ## 2018
-{{< publications year="2018" keywords="" notags="" >}}
+{{< publications year="2018" types="" notypes="tcc" tags="" notags="" >}}
 {{< backToTopBtn target="top" >}}
 
 ## 2017
-{{< publications year="2017" keywords="" notags="" >}}
+{{< publications year="2017" types="" notypes="tcc" tags="" notags="" >}}
 {{< backToTopBtn target="top" >}}
 
 ## 2016
-{{< publications year="2016" keywords="" notags="" >}}
+{{< publications year="2016" types="" notypes="tcc" tags="" notags="" >}}
 {{< backToTopBtn target="top" >}}
 
 ## 2015
-{{< publications year="2015" keywords="" notags="" >}}
+{{< publications year="2015" types="" notypes="tcc" tags="" notags="" >}}
 {{< backToTopBtn target="top" >}}
