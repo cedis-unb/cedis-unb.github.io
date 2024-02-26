@@ -22,3 +22,4 @@ At CEDIS, Green Software Development is a primary focus of research, development
 ### Publications
 
 {{< publications year="" type="" notypes="" tags="green_software" notags="" >}}
+{{< tags >}}

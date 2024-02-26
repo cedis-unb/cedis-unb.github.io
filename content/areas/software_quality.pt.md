@@ -29,3 +29,5 @@ Em suma, a qualidade de software não é um atributo que pode ser adicionado ap�
 ### Publicações
 
 {{< publications year="" type="" notypes="" tags="software_quality" notags="" >}}
+
+{{< tags >}}

@@ -69,3 +69,5 @@ E-mail para informações e contato com a equipe: [sergiofreitas@unb.br](mailto
 ## Links úteis e recursos
 
 1. Programa [Aprendizagem para o 3º Milênio](http://a3m.unb.br/) (A3M) da Universidade de Brasília.
+
+{{< tags >}}

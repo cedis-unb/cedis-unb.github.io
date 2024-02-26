@@ -40,3 +40,5 @@ Informações sobre como entrar em contato com a equipe, e oportunidades para co
 
 ## Links úteis e recursos
 Links para recursos externos, como blogs, artigos e conferências sobre Arquitetura de Software.
+
+{{< tags >}}

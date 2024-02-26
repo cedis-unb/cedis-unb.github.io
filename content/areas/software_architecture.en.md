@@ -38,3 +38,5 @@ Information on how to contact the team, and opportunities for external collabora
 
 ## Useful Links and Resources
 Links to external resources, such as blogs, articles, and conferences on Software Architecture.
+
+{{< tags >}}

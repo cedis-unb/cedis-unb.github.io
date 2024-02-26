@@ -32,3 +32,5 @@ No ambiente brasileiro, após um pico de crescimento populacional entre os anos 
 ### Publicações
 
 {{< publications year="" type="" notypes="" tags="digital_transformation" notags="" >}}
+
+{{< tags >}}

@@ -24,3 +24,5 @@ This research line is coordinated by Prof. George Marsicano and has a team of de
 ### Publications
 
 {{< publications year="" type="" notypes="" tags="software_requirements" notags="" >}}
+
+{{< tags >}}

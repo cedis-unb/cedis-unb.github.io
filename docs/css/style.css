@@ -3467,6 +3467,10 @@ video {
   --tw-text-opacity: 0.4;
 }
 
+.no-underline {
+  text-decoration-line: none;
+}
+
 .placeholder-gray-500::-moz-placeholder {
   --tw-placeholder-opacity: 1;
   color: rgb(107 114 128 / var(--tw-placeholder-opacity));

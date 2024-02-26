@@ -22,3 +22,4 @@ No CEDIS, o Green Software Development é um foco principal de pesquisa, desenvo
 ### Publicações
 
 {{< publications year="" type="" notypes="" tags="green_software" notags="" >}}
+{{< tags >}}

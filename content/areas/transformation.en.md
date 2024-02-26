@@ -32,3 +32,5 @@ In the Brazilian context, after a population growth peak between the 50s/60s, im
 ### Publications
 
 {{< publications year="" type="" notypes="" tags="digital_transformation" notags="" >}}
+
+{{< tags >}}
