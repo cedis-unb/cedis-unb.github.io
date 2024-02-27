@@ -1,1 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Project_cc on CEDIS</title><link>https://cedis.tec.br/pt/categories/project_cc/</link><description>Recent content in Project_cc on CEDIS</description><generator>Hugo -- gohugo.io</generator><language>pt</language><lastBuildDate>Mon, 26 Feb 2024 00:58:57 -0300</lastBuildDate><atom:link href="https://cedis.tec.br/pt/categories/project_cc/index.xml" rel="self" type="application/rss+xml"/><item><title>Projeto Canal Ciência</title><link>https://cedis.tec.br/pt/projects/canal_ciencia/</link><pubDate>Wed, 14 Feb 2024 17:08:50 -0300</pubDate><guid>https://cedis.tec.br/pt/projects/canal_ciencia/</guid><description>Projeto de pesquisa em parceria com o IBICT e financiado pela FINATEC, com objetivo de aprimorar a experiência dos usuários do Canal Ciência através do uso da gamificação.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Project_cc on CEDIS</title>
+    <link>http://localhost:1313/pt/categories/project_cc/</link>
+    <description>Recent content in Project_cc on CEDIS</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt</language>
+    <lastBuildDate>Mon, 26 Feb 2024 00:58:57 -0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/pt/categories/project_cc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Projeto Canal Ciência</title>
+      <link>http://localhost:1313/pt/projects/canal_ciencia/</link>
+      <pubDate>Wed, 14 Feb 2024 17:08:50 -0300</pubDate>
+      <guid>http://localhost:1313/pt/projects/canal_ciencia/</guid>
+      <description>Projeto de pesquisa em parceria com o IBICT e financiado pela FINATEC, com objetivo de aprimorar a experiência dos usuários do Canal Ciência através do uso da gamificação.</description>
+    </item>
+  </channel>
+</rss>
