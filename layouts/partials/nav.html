@@ -150,7 +150,12 @@
                     {{ end }}
                 </li>
               </ul>
-              </div>
+            </div>
+            <!-- Em layouts/partials/header.html ou similar -->
+            <div class="search-bar flex items-center">
+                <input type="search" id="pagefind-search-input" class="rounded border px-2 py-1 text-sm" placeholder="{{ i18n "searchPlaceholder" }}">
+                <div id="pagefind-search-results" class="absolute z-10 ..."></div>
+            </div>
         </nav>
     </div>
 </div>
