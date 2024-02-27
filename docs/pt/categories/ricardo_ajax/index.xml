@@ -1,1 +1,40 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ricardo_ajax on CEDIS</title><link>https://cedis.tec.br/pt/categories/ricardo_ajax/</link><description>Recent content in Ricardo_ajax on CEDIS</description><generator>Hugo -- gohugo.io</generator><language>pt</language><lastBuildDate>Mon, 26 Feb 2024 20:12:36 -0300</lastBuildDate><atom:link href="https://cedis.tec.br/pt/categories/ricardo_ajax/index.xml" rel="self" type="application/rss+xml"/><item><title>Metodologias de aprendizagem ativa</title><link>https://cedis.tec.br/pt/areas/active_learning/</link><pubDate>Wed, 14 Feb 2024 01:37:18 -0300</pubDate><guid>https://cedis.tec.br/pt/areas/active_learning/</guid><description>As metodologias ativas no ensino superior têm ganhado crescente relevância no cenário educacional contemporâneo, em grande parte devido aos avanços na ciência da aprendizagem. Essas abordagens pedagógicas colocam o estudante como protagonista do processo de construção do conhecimento.</description></item><item><title>Qualidade de Software</title><link>https://cedis.tec.br/pt/areas/software_quality/</link><pubDate>Wed, 14 Feb 2024 01:37:18 -0300</pubDate><guid>https://cedis.tec.br/pt/areas/software_quality/</guid><description>Um dos pilares fundamentais na engenharia de software, reflete diretamente na satisfação do usuário, na eficiência operacional e na sustentabilidade de sistemas computacionais.</description></item><item><title>Transformação Digital</title><link>https://cedis.tec.br/pt/areas/transformation/</link><pubDate>Wed, 14 Feb 2024 01:37:18 -0300</pubDate><guid>https://cedis.tec.br/pt/areas/transformation/</guid><description>Transformação Digital é a aplicação de tecnologias digitais para mudar modelos de negócio e criar novas oportunidades de valor. Envolve a reimaginação de operações e experiências do cliente, promovendo inovação e eficiência.</description></item><item><title>Verificação, Validação e Testes</title><link>https://cedis.tec.br/pt/areas/verival/</link><pubDate>Wed, 14 Feb 2024 00:43:11 -0300</pubDate><guid>https://cedis.tec.br/pt/areas/verival/</guid><description>A área de Verificação, Validação e Testes é uma disciplina crítica na engenharia de software, focada em garantir que os produtos de software atendam aos seus requisitos especificados e funcionem conforme esperado.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ricardo_ajax on CEDIS</title>
+    <link>http://localhost:1313/pt/categories/ricardo_ajax/</link>
+    <description>Recent content in Ricardo_ajax on CEDIS</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt</language>
+    <lastBuildDate>Mon, 26 Feb 2024 20:12:36 -0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/pt/categories/ricardo_ajax/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Metodologias de aprendizagem ativa</title>
+      <link>http://localhost:1313/pt/areas/active_learning/</link>
+      <pubDate>Wed, 14 Feb 2024 01:37:18 -0300</pubDate>
+      <guid>http://localhost:1313/pt/areas/active_learning/</guid>
+      <description>As metodologias ativas no ensino superior têm ganhado crescente relevância no cenário educacional contemporâneo, em grande parte devido aos avanços na ciência da aprendizagem. Essas abordagens pedagógicas colocam o estudante como protagonista do processo de construção do conhecimento.</description>
+    </item>
+    <item>
+      <title>Qualidade de Software</title>
+      <link>http://localhost:1313/pt/areas/software_quality/</link>
+      <pubDate>Wed, 14 Feb 2024 01:37:18 -0300</pubDate>
+      <guid>http://localhost:1313/pt/areas/software_quality/</guid>
+      <description>Um dos pilares fundamentais na engenharia de software, reflete diretamente na satisfação do usuário, na eficiência operacional e na sustentabilidade de sistemas computacionais.</description>
+    </item>
+    <item>
+      <title>Transformação Digital</title>
+      <link>http://localhost:1313/pt/areas/transformation/</link>
+      <pubDate>Wed, 14 Feb 2024 01:37:18 -0300</pubDate>
+      <guid>http://localhost:1313/pt/areas/transformation/</guid>
+      <description>Transformação Digital é a aplicação de tecnologias digitais para mudar modelos de negócio e criar novas oportunidades de valor. Envolve a reimaginação de operações e experiências do cliente, promovendo inovação e eficiência.</description>
+    </item>
+    <item>
+      <title>Verificação, Validação e Testes</title>
+      <link>http://localhost:1313/pt/areas/verival/</link>
+      <pubDate>Wed, 14 Feb 2024 00:43:11 -0300</pubDate>
+      <guid>http://localhost:1313/pt/areas/verival/</guid>
+      <description>A área de Verificação, Validação e Testes é uma disciplina crítica na engenharia de software, focada em garantir que os produtos de software atendam aos seus requisitos especificados e funcionem conforme esperado.</description>
+    </item>
+  </channel>
+</rss>

@@ -1,1 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hpc on CEDIS</title><link>https://cedis.tec.br/categories/hpc/</link><description>Recent content in Hpc on CEDIS</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 26 Feb 2024 00:58:57 -0300</lastBuildDate><atom:link href="https://cedis.tec.br/categories/hpc/index.xml" rel="self" type="application/rss+xml"/><item><title>Laguna Project</title><link>https://cedis.tec.br/projects/laguna/</link><pubDate>Wed, 14 Feb 2024 02:59:29 -0300</pubDate><guid>https://cedis.tec.br/projects/laguna/</guid><description>This project aims to extend the massive processing of a data lake using a cloud architecture, utilizing Amazon Web Services (AWS) as the provider.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hpc on CEDIS</title>
+    <link>http://localhost:1313/categories/hpc/</link>
+    <description>Recent content in Hpc on CEDIS</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 26 Feb 2024 00:58:57 -0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/hpc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Laguna Project</title>
+      <link>http://localhost:1313/projects/laguna/</link>
+      <pubDate>Wed, 14 Feb 2024 02:59:29 -0300</pubDate>
+      <guid>http://localhost:1313/projects/laguna/</guid>
+      <description>This project aims to extend the massive processing of a data lake using a cloud architecture, utilizing Amazon Web Services (AWS) as the provider.</description>
+    </item>
+  </channel>
+</rss>
