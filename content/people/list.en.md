@@ -29,11 +29,11 @@ authorimage: ../assets/images/global/author.webp
     </h2>
     <p x-show="showPrevious" x-cloak class="mb-4 text-neutral-700">These are the collaborators who contributed to our success in the past. We are grateful for their effort and dedication.</p>
     <div x-show="showPrevious" x-cloak>
-      {{< filterPeople caput="### PhD" categories="phd_candidate" tags="inactive" notags="" >}}
-      {{< filterPeople caput="### Master's degree" categories="master_student" tags="inactive" notags="" >}}
-      {{< filterPeople caput="### Postgraduate Specialization" categories="specialization" tags="inactive" notags="" >}}
-      {{< filterPeople caput="### Undergraduate Research" categories="scientific_initiation" tags="inactive" notags="" >}}
-      {{< filterPeople caput="### Bachelor's Thesis" categories="tcc" tags="inactive" notags="" >}}
+      {{< publications caput="#### PhD" year="" types="phd" advisors="" notypes="" tags="" notags="" >}}
+      {{< publications caput="#### Master's degree" year="" types="dissertation" advisors="" notypes="" tags="" notags="" >}}
+      {{< publications caput="#### Postgraduate Specialization" year="" types="specialization" advisors="" notypes="" tags="" notags="" >}}
+      {{< filterPeople caput="#### Undergraduate Research" categories="scientific_initiation" advisors="" tags="inactive" notags="">}}
+      {{< publications caput="#### Bachelor's Thesis" year="" types="tcc" advisors="" notypes="" tags="" notags="" >}}
     </div>
   </div>
 </div>
