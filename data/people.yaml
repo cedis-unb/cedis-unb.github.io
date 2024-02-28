@@ -19,8 +19,8 @@ people:
       - people
       - master_student
     title:
-      pt: (não fornecido)
-      en: (not provided)
+      pt: (Em definição)
+      en: (not defined)
     program: curso_ppca
     advisors:
       - george_marsicano
@@ -36,7 +36,7 @@ people:
     title:
       pt: Revisão literária e seleção de metodologias ótimas para horários acadêmicos
       en: Literary Review and Selection of Optimal Methodologies for Academic Scheduling
-    program: ppca
+    program: curso_ppca
     advisors:
       - sergio_freitas
     tags:
