@@ -121,6 +121,23 @@
             </a>
             {{ end }}
             {{ end }}
+
+            <div class="language-switcher">
+                <ul>
+                    {{ range .Site.Languages }}
+                    {{ if eq . $.Site.Language }}
+                    <li><span class="px-4 py-2 mt-2 text-sm font-semibold rounded-lg md:mt-0 md:ml-4 hover:text-white focus:text-white hover:bg-primary-600 focus:bg-primary-700 focus:outline-none focus:shadow-outline" aria-label="{{ i18n "ariaLanguage" }}{{ .LanguageName }}">{{ .LanguageName }}</span>
+                      {{ end }}
+                      {{ end }}
+                      <ul aria-labelledby="dropdown-title">
+                        {{ range $.Translations }}
+                        <li><a title="{{ .Language.LanguageName }}" href="{{ .Permalink }}" class="px-4 py-2 mt-2 text-sm font-semibold rounded-lg md:mt-0 md:ml-4 hover:text-white focus:text-white hover:bg-primary-600 focus:bg-primary-700 focus:outline-none focus:shadow-outline" aria-label="{{ i18n "ariaTranslation" }}{{ .Language.LanguageName }}">{{ .Language.LanguageName }}</a></li>
+                      </ul>
+                        {{ end }}
+                    </li>
+                  </ul>
+                </div>   
+
             {{ if not .Site.Params.Disable_theme_toggle }}
             <button id="theme-toggle" type="button"
                     class="p-2 text-sm text-gray-500 rounded-lg md: dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 md:ml-2 max-w-5 xs:hidden">
@@ -135,22 +152,19 @@
                           fill-rule="evenodd" clip-rule="evenodd"></path>
                 </svg>
             </button>
-            {{ end }}
-            <div class="language-switcher">
-            <ul>
-                {{ range .Site.Languages }}
-                {{ if eq . $.Site.Language }}
-                <li><span class="px-4 py-2 mt-2 text-sm font-semibold rounded-lg md:mt-0 md:ml-4 hover:text-white focus:text-white hover:bg-primary-600 focus:bg-primary-700 focus:outline-none focus:shadow-outline" aria-label="{{ i18n "ariaLanguage" }}{{ .LanguageName }}">{{ .LanguageName }}</span>
-                  {{ end }}
-                  {{ end }}
-                  <ul aria-labelledby="dropdown-title">
-                    {{ range $.Translations }}
-                    <li><a title="{{ .Language.LanguageName }}" href="{{ .Permalink }}" class="px-4 py-2 mt-2 text-sm font-semibold rounded-lg md:mt-0 md:ml-4 hover:text-white focus:text-white hover:bg-primary-600 focus:bg-primary-700 focus:outline-none focus:shadow-outline" aria-label="{{ i18n "ariaTranslation" }}{{ .Language.LanguageName }}">{{ .Language.LanguageName }}</a></li>
-                  </ul>
-                    {{ end }}
-                </li>
-              </ul>
+            {{ end }}   
+            <div class="flex items-center">
+                <div class="search">
+                    <a href="/search" class="flex items-center justify-center" title="Search"> <!-- Flex container para o link, garantindo centralização -->
+                        <!-- Ícone de lupa SVG -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="mx-2"> <!-- mx-2 para margem horizontal -->
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                    </a>
+                </div>
             </div>
+ 
         </nav>
     </div>
 </div>
