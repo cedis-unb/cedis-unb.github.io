@@ -1,0 +1,77 @@
+# Knowledge Areas
+- area: 
+  gamification:
+    en: "Gamification"
+    pt: "Gamificação"
+    researchers: 
+      - sergio_freitas
+      - george_marsicano
+      - cristiane_ramos
+  learning_analytics:
+    en: "Learning Analytics"
+    pt: "Análise da Aprendizagem"
+    researchers: []
+  machine_learning:
+    en: "Machine Learning"
+    pt: "Aprendizado de Máquina"
+    researchers: []
+  hpc:
+    en: "High Performance Computing"
+    pt: "Computação de Alto Desempenho"
+    researchers: []
+  software_architecture:
+    en: "Software Architecture"
+    pt: "Arquitetura de Software"
+    researchers: []
+  software_requirements:
+    en: "Requirements Engineering"
+    pt: "Engenharia de Requisitos"
+    researchers: []
+  verification_validation_testing:
+    en: "Verification, Validation and Testing"
+    pt: "Verificação, Validação e Testes"
+    researchers: []
+  software_product_line:
+    en: "Software Product Line"
+    pt: "Linha de Produto de Software"
+    researchers: []
+  green_software:
+    en: "Green Software"
+    pt: "Software Verde"
+    researchers: []
+  ai:
+    en: "Artificial Intelligence"
+    pt: "Inteligência Artificial"
+    researchers: []
+  nlp:
+    en: "Natural Language Processing"
+    pt: "Processamento de Linguagem Natural"
+    researchers: []
+  teamwork:
+    en: "Teamwork"
+    pt: "Trabalho em Equipe"
+    researchers: []
+  soft_skills:
+    en: "Soft Skills"
+    pt: "Habilidades Socioemocionais"
+    researchers: []
+  active_learning:
+    en: "Active Learning"
+    pt: "Aprendizagem Ativa"
+    researchers: []
+  education:
+    en: "Education"
+    pt: "Educação"
+    researchers: []
+  digital_transformation:
+    en: "Digital Transformation"
+    pt: "Transformação Digital"
+    researchers: []
+  software_quality:
+    en: "Software Quality"
+    pt: "Qualidade de Software"
+    researchers: []
+  esw:
+    en: "Software Engineering"
+    pt: "Engenharia de Software"
+    researchers: []
