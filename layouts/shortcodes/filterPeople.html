@@ -326,6 +326,13 @@
             {{ if and $showDescription (isset $thisPage.Params "description") }}
             <span> {{ $thisPage.Params.description }}</span>
             {{ end }}
+            <!-- Exibição de advisors, tags, e o resumo com controle do Alpine.js -->
+            {{ i18n "orientador" }}:
+            {{ range $thisPage.Params.advisors }}
+              {{ with index $.Site.Data.advisors.advisors . }}
+                <a href="{{ .link | absLangURL }}">{{ .name }}</a>
+              {{ end }}
+            {{ end }}
         </li>
         {{ end }}
     {{ end }}
