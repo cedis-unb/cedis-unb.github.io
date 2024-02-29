@@ -1,77 +1,139 @@
 # Knowledge Areas
-- area: 
-  gamification:
-    en: "Gamification"
-    pt: "Gamificação"
+areas:
+  - id: active_learning
+    name: 
+      en: "Active Learning"
+      pt: "Aprendizagem Ativa"
+    researchers:
+      - sergio_freitas
+      - cristiane_ramos
+      - george_marsicano
+      - ricardo_ajax
+
+  - id: ai
+    name: 
+      en: "Artificial Intelligence"
+      pt: "Inteligência Artificial"
     researchers: 
       - sergio_freitas
+
+  - id: digital_transformation
+    name: 
+      en: "Digital Transformation"
+      pt: "Transformação Digital"
+    researchers:
       - george_marsicano
+      - ricardo_ajax
+
+  - id: education
+    name: 
+      en: "Education"
+      pt: "Educação"
+    researchers: 
+      - sergio_freitas
       - cristiane_ramos
-  learning_analytics:
-    en: "Learning Analytics"
-    pt: "Análise da Aprendizagem"
+      - george_marsicano
+      - ricardo_ajax
+
+  - id: esw
+    name: 
+      en: "Software Engineering"
+      pt: "Engenharia de Software"
     researchers: []
-  machine_learning:
-    en: "Machine Learning"
-    pt: "Aprendizado de Máquina"
-    researchers: []
-  hpc:
-    en: "High Performance Computing"
-    pt: "Computação de Alto Desempenho"
-    researchers: []
-  software_architecture:
-    en: "Software Architecture"
-    pt: "Arquitetura de Software"
-    researchers: []
-  software_requirements:
-    en: "Requirements Engineering"
-    pt: "Engenharia de Requisitos"
-    researchers: []
-  verification_validation_testing:
-    en: "Verification, Validation and Testing"
-    pt: "Verificação, Validação e Testes"
-    researchers: []
-  software_product_line:
-    en: "Software Product Line"
-    pt: "Linha de Produto de Software"
-    researchers: []
-  green_software:
-    en: "Green Software"
-    pt: "Software Verde"
-    researchers: []
-  ai:
-    en: "Artificial Intelligence"
-    pt: "Inteligência Artificial"
-    researchers: []
-  nlp:
-    en: "Natural Language Processing"
-    pt: "Processamento de Linguagem Natural"
-    researchers: []
-  teamwork:
-    en: "Teamwork"
-    pt: "Trabalho em Equipe"
-    researchers: []
-  soft_skills:
-    en: "Soft Skills"
-    pt: "Habilidades Socioemocionais"
-    researchers: []
-  active_learning:
-    en: "Active Learning"
-    pt: "Aprendizagem Ativa"
-    researchers: []
-  education:
-    en: "Education"
-    pt: "Educação"
-    researchers: []
-  digital_transformation:
-    en: "Digital Transformation"
-    pt: "Transformação Digital"
-    researchers: []
-  software_quality:
-    en: "Software Quality"
-    pt: "Qualidade de Software"
-    researchers: []
-  esw:
-    en: "Software Engineering"
-    pt: "Engenharia de Software"
-    researchers: []
+
+  - id: gamification
+    name: 
+      en: "Gamification"
+      pt: "Gamificação"
+    researchers: 
+      - sergio_freitas
+      - cristiane_ramos
+      - george_marsicano
+
+  - id: green_software
+    name: 
+      en: "Green Software"
+      pt: "Software Verde"
+    researchers: 
+      - fabiana_mendes
+
+  - id: hpc
+    name: 
+      en: "High Performance Computing"
+      pt: "Computação de Alto Desempenho"
+    researchers: 
+      - daniel_sundfeld
+
+  - id: learning_analytics
+    name: 
+      en: "Learning Analytics"
+      pt: "Análise da Aprendizagem"
+    researchers: 
+      - sergio_freitas
+      - cristiane_ramos
+
+  - id: machine_learning
+    name: 
+      en: "Machine Learning"
+      pt: "Aprendizado de Máquina"
+    researchers: 
+      - sergio_freitas
+
+  - id: nlp
+    name: 
+      en: "Natural Language Processing"
+      pt: "Processamento de Linguagem Natural"
+    researchers:
+      - sergio_freitas
+
+  - id: soft_skills
+    name: 
+      en: "Soft Skills"
+      pt: "Habilidades Socioemocionais"
+    researchers: 
+      - george_marsicano
+
+  - id: software_architecture
+    name: 
+      en: "Software Architecture"
+      pt: "Arquitetura de Software"
+    researchers: 
+      - andre_lanna
+      - george_marsicano
+
+  - id: software_product_line
+    name: 
+      en: "Software Product Line"
+      pt: "Linha de Produto de Software"
+    researchers: 
+      - andre_lanna
+
+  - id: software_quality
+    name: 
+      en: "Software Quality"
+      pt: "Qualidade de Software"
+    researchers:
+      - cristiane_ramos
+      - ricardo_ajax
+
+  - id: software_requirements
+    name: 
+      en: "Requirements Engineering"
+      pt: "Engenharia de Requisitos"
+    researchers: 
+      - george_marsicano
+
+  - id: teamwork
+    name: 
+      en: "Teamwork"
+      pt: "Trabalho em Equipe"
+    researchers: 
+      - george_marsicano
+
+  - id: verification_validation_testing
+    name: 
+      en: "Verification, Validation and Testing"
+      pt: "Verificação, Validação e Testes"
+    researchers: 
+      - cristiane_ramos
+      - ricardo_ajax

@@ -2,27 +2,74 @@ advisors:
   sergio_freitas:
     name: "Sergio Freitas"
     link: "/people/sergio_freitas"
+    areas: 
+      - active_learning
+      - ai
+      - education
+      - gamification
+      - learning_analytics
+      - machine_learning
+      - nlp
+
   cristiane_ramos:
     name: "Cristiane Ramos"
     link: "/people/cristiane_ramos"
+    areas: 
+      - active_learning
+      - education
+      - gamification
+      - learning_analytics
+      - software_quality
+      - verification_validation_testing
+
   andre_lanna:
     name: "André Lanna"
     link: "/people/andre_lanna"
+    areas: 
+      - software_architecture
+      - software_product_line
+
   george_marsicano:
     name: "George Marsicano"
     link: "/people/george_marsicano"
+    areas: 
+      - active_learning
+      - digital_transformation
+      - education
+      - gamification
+      - soft_skills
+      - software_architecture
+      - software_requirements
+      - teamwork
+
   fabiana_mendes:
     name: "Fabiana Mendes"
     link: "/people/fabiana_mendes"
+    areas: 
+      - green_software
+
   ricardo_ajax:
     name: "Ricardo Ajax"
     link: "/people/ricardo_ajax"
+    areas: 
+      - active_learning
+      - digital_transformation
+      - education
+      - software_quality
+      - verification_validation_testing
+
   daniel_sundfeld:
     name: "Daniel Sundfeld"
     link: "/people/daniel_sundfeld"
+    areas: 
+      - hpc
+
   andrea_cabello:
     name: "Andrea Cabello"
-    link: http://lattes.cnpq.br/4731226594888669
+    link: "http://lattes.cnpq.br/4731226594888669"
+    areas: []
+
   edna_canedo:
     name: "Edna Canedo"
-    link: http://lattes.cnpq.br/9554285834432091
+    link: "http://lattes.cnpq.br/9554285834432091"
+    areas: []
