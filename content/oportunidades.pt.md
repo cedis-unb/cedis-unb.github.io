@@ -6,6 +6,7 @@ language: pt
 ---
 # 2024
 
+Em breve, novos editais.
 
 # 2023
 
