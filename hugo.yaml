@@ -65,7 +65,10 @@ languages:
           enabled: false
         youtube:
           enabled: true
-          url: "@CedisUnB"
+          url: "https://youtube.com/@CedisUnB"
+        email:
+          enabled: true
+          url: "mailto:cedis@unb.br"
 
     menu:
       main:
@@ -235,7 +238,10 @@ languages:
           enabled: false
         youtube:
           enabled: true
-          url: "@CedisUnB"
+          url: "https://youtube.com/@CedisUnB"
+        email:
+          enabled: true
+          url: "mailto:cedis@unb.br"
     menu:
       main:
         - identifier: cedis
