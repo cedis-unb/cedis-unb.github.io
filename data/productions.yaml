@@ -17,7 +17,7 @@ items:
   pages: ''
   publisher: Biblioteca Central da Universidade de Brasília
   tags:
-  - learning
+  - learning_analytics
   - education
   type: tcc
   program: curso_esw
@@ -128,7 +128,7 @@ items:
   pages: ''
   publisher: Biblioteca Central da Universidade de Brasília
   tags:
-  - learning
+  - learning_analytics
   - machine_learning
   type: dissertation
   program: curso_ppca
@@ -786,7 +786,7 @@ items:
   pages: '79'
   publisher: Biblioteca Central da Universidade de Brasília
   tags:
-  - learning
+  - learning_analytics
   - active_learning
   - sergio_freitas
   - cristiane_ramos
@@ -901,7 +901,7 @@ items:
   pages: ''
   publisher: ''
   tags:
-  - learning
+  - learning_analytics
   - sergio_freitas
   - cristiane_ramos
   type: conference
@@ -953,7 +953,7 @@ items:
   publisher: ''
   tags:
   - education
-  - learning
+  - learning_analytics
   type: tcc
   program: curso_esw
   advisors:
@@ -1008,7 +1008,7 @@ items:
   publisher: ''
   tags:
   - sergio_freitas
-  - learning
+  - learning_analytics
   type: article
   program: ''
   advisors: []
@@ -1313,7 +1313,7 @@ items:
   publisher: ''
   tags:
   - education
-  - learning
+  - learning_analytics
   type: tcc
   program: curso_esw
   advisors:
@@ -1721,7 +1721,7 @@ items:
   pages: 446-460
   publisher: ''
   tags:
-  - learning
+  - learning_analytics
   - education
   - sergio_freitas
   type: article
@@ -2335,7 +2335,7 @@ items:
   pages: ''
   publisher: ''
   tags:
-  - learning
+  - learning_analytics
   - sergio_freitas
   type: conference
   program: ''
@@ -2695,7 +2695,7 @@ items:
   pages: ''
   publisher: ''
   tags:
-  - learning
+  - learning_analytics
   - sergio_freitas
   type: conference
   program: ''
@@ -2823,7 +2823,7 @@ items:
   pages: '1758'
   publisher: ''
   tags:
-  - learning
+  - learning_analytics
   - sergio_freitas
   type: article
   program: ''
@@ -3569,7 +3569,7 @@ items:
   publisher: ''
   tags:
   - education
-  - learning
+  - learning_analytics
   type: tcc
   program: curso_esw
   advisors:
@@ -3810,7 +3810,7 @@ items:
   pages: ''
   publisher: ''
   tags:
-  - learning
+  - learning_analytics
   - sergio_freitas
   type: conference
   program: ''
