@@ -1,0 +1,89 @@
+{{ $yearInput := .Get "year" }}
+{{ $year := 0 }}
+{{ if ne $yearInput "" }}{{ $year = int $yearInput }}{{ end }}
+
+{{ $tags := split (.Get "tags") "," }}
+{{ $types := split (.Get "types") "," }}
+{{ $excludeTags := split (.Get "notags") "," }}
+{{ $excludeTypes := split (.Get "notypes") "," }}
+{{ $advisors := split (.Get "advisors") "," }}
+{{ $caput := .Get "caput" }}
+
+{{ $publicationCount := 0 }}
+{{ range $.Site.Data.productions.items }}
+  {{ $includePublication := true }}
+    <!-- Aplica o filtro de ano, se um ano foi especificado -->
+    {{ if and (gt $year 0) (ne .year $year) }}
+      {{ $includePublication = false }}
+    {{ end }}
+
+    <!-- Adiciona o filtro de tipo, se tipos foram especificados -->
+    {{ if and $includePublication (gt (len $types) 0) (ne (index $types 0) "") }}
+    {{ $typeMatch := false }}
+    {{ if in $types .type }}
+      {{ $typeMatch = true }}
+    {{ end }}
+    {{ if not $typeMatch }}
+      {{ $includePublication = false }}
+    {{ end }}
+    {{ end }}
+
+    <!-- Verifica se as tags especificadas correspondem, se houver -->
+    {{ if and $includePublication (gt (len $tags) 0) (ne (index $tags 0) "") }}
+    {{ $tagMatch := false }}
+    {{ range .tags }}
+      {{ if in $tags . }}
+        {{ $tagMatch = true }}
+        {{ break }}
+      {{ end }}
+    {{ end }}
+    {{ if not $tagMatch }}
+      {{ $includePublication = false }}
+    {{ end }}
+  {{ end }}
+
+  {{/*  Verifica se os advisors especificados correspondem, se houver */}}
+  {{ if and $includePublication (gt (len $advisors) 0) (ne (index $advisors 0) "") }}
+    {{ $tagAdvisor := false }}
+    {{ range .advisors }}
+      {{ if in $advisors . }}
+        {{ $tagAdvisor = true }}
+        {{ break }}
+      {{ end }}
+    {{ end }}
+    {{ if not $tagAdvisor }}
+      {{ $includePublication = false }}
+    {{ end }}
+  {{ end }}
+
+  {{/* Filtro de exclusão baseado em excludeTags */}}
+  {{ if and $includePublication (gt (len $excludeTags) 0) (ne (index $excludeTags 0) "") }}
+    {{ range .tags }}
+      {{ if in $excludeTags . }}
+        {{/* Se uma excludeTag for encontrada, a publicação não deve ser incluída */}}
+        {{ $includePublication = false }}
+        {{ break }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+
+  {{/* Filtro de exclusão baseado em excludeTypes */}}
+  {{ if and $includePublication (gt (len $excludeTypes) 0) (ne (index $excludeTypes 0) "") }}
+    {{ if in $excludeTypes .type }}
+      {{/* Se o type da publicação está na lista de excludeTypes, não deve ser incluída */}}
+      {{ $includePublication = false }}
+    {{ end }}
+  {{ end }}
+
+  {{ if $includePublication }}
+    {{ $publicationCount = add $publicationCount 1 }}
+  {{ end }}
+{{ end }}
+
+{{ if gt $publicationCount 0 }}
+  {{ if $caput }}
+    <div class="caput-content">
+        {{ $caput }} ({{ $publicationCount }})
+    </div>
+  {{ end }}
+{{ end }}
