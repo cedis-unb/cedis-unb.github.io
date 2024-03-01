@@ -29,6 +29,48 @@ people:
       - software_architecture
     year: 2022
 
+  - name: Lucas Kuniyoshi
+    categories:
+      - people
+      - master_student
+    title:
+      pt: (Em definição)
+      en: (not defined)
+    program: curso_ppca
+    advisors:
+      - andre_lanna
+    tags:
+      - active
+    year: 2021
+
+  - name: Suéllyn Schopping
+    categories:
+      - people
+      - master_student
+    title:
+      pt: (Em definição)
+      en: (not defined)
+    program: curso_ppca
+    advisors:
+      - andre_lanna
+    tags:
+      - active
+    year: 2021
+  - name: Sandro Leite Furtado
+    categories:
+      - people
+      - master_student
+    title:
+      pt: Proposição de Melhoria de Usabilidade da Interação entre Usuário e Sistema Corporativo do Exército Brasileiro
+      en: Proposal for Usability Improvement of the Interaction between User and the Brazilian Army Corporate System
+    program: curso_ppca
+    advisors:
+      - george_marsicano
+    tags:
+      - active
+      - software_quality
+    year: 2021
+
   - name: Éber Junio Borges Moreira
     categories:
       - people
