@@ -163,7 +163,7 @@
             {{- if $index }}, {{- end -}}
             {{- $element -}}
           {{- end -}},
-          <span>{{ if .url }}<a href="{{ .url }}" target="_blank">{{ end }}
+          <span>{{ if .url }}<a href="{{ .url }}" target="_blank" rel="noopener noreferrer">{{ end }}
             {{ index .title $.Site.Language.Lang }}
           {{ if .url }}</a>{{ end }}</span>
           {{ if .program }}<span>. {{ .program | i18n }}</span>{{ end }}
@@ -188,7 +188,7 @@
           {{ end }}
           {{ end }}
 
-          {{- if .doi_isbn -}}. DOI: <a href="https://doi.org/{{ .doi_isbn }}" target="_blank">{{ .doi_isbn }}</a>{{- end -}}
+          {{- if .doi_isbn -}}. DOI: <a href="https://doi.org/{{ .doi_isbn }}" target="_blank" rel="noopener noreferrer">{{ .doi_isbn }}</a>{{- end -}}
 
           <!-- Exibição das tags, quando existirem -->
           {{ $advisorsList := slice }}
