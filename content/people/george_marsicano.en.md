@@ -15,6 +15,7 @@ tags:
 - software_requirements
 - software_architecture
 - project_td
+nav_next: true
 ---
 ## Academic and Professional Profile
 - Current Position: Associate Professor at the [University of Brasília](https://www.unb.br/) (UnB), engaged in the undergraduate [Software Engineering](http://software.unb.br/) program and the [Graduate Program in Applied Computing](https://ppca.unb.br/).
