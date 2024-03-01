@@ -2,6 +2,9 @@ advisors:
   sergio_freitas:
     name: "Sergio Freitas"
     link: "/people/sergio_freitas"
+    lattes: http://lattes.cnpq.br/0395549254894676
+    orcid: https://orcid.org/0000-0003-3996-4985
+    email: sergiofreitas@unb.br
     areas: 
       - active_learning
       - ai
@@ -14,6 +17,7 @@ advisors:
   cristiane_ramos:
     name: "Cristiane Ramos"
     link: "/people/cristiane_ramos"
+    lattes:
     areas: 
       - active_learning
       - education
@@ -25,6 +29,9 @@ advisors:
   andre_lanna:
     name: "André Lanna"
     link: "/people/andre_lanna"
+    lattes: "http://lattes.cnpq.br/5685720614944773"
+    orcid: https://orcid.org/0000-0003-4200-6569
+    email: andrelanna@unb.br
     areas: 
       - software_architecture
       - software_product_line
@@ -32,6 +39,9 @@ advisors:
   george_marsicano:
     name: "George Marsicano"
     link: "/people/george_marsicano"
+    lattes: http://lattes.cnpq.br/2317804591146328
+    orcid:
+    email: georgemarsicano@unb.br
     areas: 
       - active_learning
       - digital_transformation
@@ -45,12 +55,18 @@ advisors:
   fabiana_mendes:
     name: "Fabiana Mendes"
     link: "/people/fabiana_mendes"
+    lattes: http://lattes.cnpq.br/7675506667619564
+    orcid: https://orcid.org/0000-0002-1724-2044
+    email:
     areas: 
       - green_software
 
   ricardo_ajax:
     name: "Ricardo Ajax"
     link: "/people/ricardo_ajax"
+    lattes: http://lattes.cnpq.br/8309011123228244
+    orcid:
+    email:
     areas: 
       - active_learning
       - digital_transformation
@@ -61,15 +77,20 @@ advisors:
   daniel_sundfeld:
     name: "Daniel Sundfeld"
     link: "/people/daniel_sundfeld"
+    lattes: http://lattes.cnpq.br/2619423058109475
+    orcid: https://orcid.org/0000-0002-5147-3698
+    email: daniel.sundfeld@unb.br
     areas: 
       - hpc
 
   andrea_cabello:
     name: "Andrea Cabello"
     link: "http://lattes.cnpq.br/4731226594888669"
+    lattes: "http://lattes.cnpq.br/4731226594888669"
     areas: []
 
   edna_canedo:
     name: "Edna Canedo"
     link: "http://lattes.cnpq.br/9554285834432091"
+    lattes: "http://lattes.cnpq.br/9554285834432091"
     areas: []

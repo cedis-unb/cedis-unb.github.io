@@ -12,7 +12,7 @@ categories:
 - researcher
 tags: 
 - gamification
-- learning
+- learning_analytics
 - verification_validation_testing
 - software_quality
 - active_learning

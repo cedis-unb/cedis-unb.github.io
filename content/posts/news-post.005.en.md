@@ -14,7 +14,7 @@ categories:
 tags: 
 - News
 - active_learning
-- learning
+- learning_analytics
 ---
 Brasília, July 20, 2023
 

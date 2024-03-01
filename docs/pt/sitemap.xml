@@ -393,7 +393,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/pt/people/collaborators/arthur_temporim/</loc>
-    <lastmod>2024-02-24T14:44:36-03:00</lastmod>
+    <lastmod>2024-02-29T18:36:19-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -588,7 +588,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/pt/categories/</loc>
-    <lastmod>2024-02-26T20:12:36-03:00</lastmod>
+    <lastmod>2024-02-29T18:36:19-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -601,7 +601,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/pt/</loc>
-    <lastmod>2024-02-29T11:43:08-03:00</lastmod>
+    <lastmod>2024-02-29T18:36:19-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -627,7 +627,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/pt/tags/gamification/</loc>
-    <lastmod>2024-02-26T20:12:36-03:00</lastmod>
+    <lastmod>2024-02-29T18:36:19-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -665,6 +665,19 @@
                 href="http://localhost:1313/pt/tags/inactive/"
                 />
   </url><url>
+    <loc>http://localhost:1313/pt/tags/learning_analytics/</loc>
+    <lastmod>2024-02-26T20:12:36-03:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/tags/learning_analytics/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="http://localhost:1313/pt/tags/learning_analytics/"
+                />
+  </url><url>
     <loc>http://localhost:1313/pt/tags/machine_learning/</loc>
     <lastmod>2024-02-26T20:12:36-03:00</lastmod>
     <xhtml:link
@@ -692,7 +705,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/pt/categories/master_student/</loc>
-    <lastmod>2024-02-24T14:44:36-03:00</lastmod>
+    <lastmod>2024-02-29T18:36:19-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -705,7 +718,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/pt/people/</loc>
-    <lastmod>2024-02-28T00:11:32-03:00</lastmod>
+    <lastmod>2024-02-29T18:36:19-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -718,7 +731,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/pt/categories/people/</loc>
-    <lastmod>2024-02-26T12:35:52-03:00</lastmod>
+    <lastmod>2024-02-29T18:36:19-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -770,7 +783,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/pt/tags/</loc>
-    <lastmod>2024-02-26T20:12:36-03:00</lastmod>
+    <lastmod>2024-02-29T18:36:19-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -1092,19 +1105,6 @@
                 rel="alternate"
                 hreflang="pt"
                 href="http://localhost:1313/pt/categories/knowledge_areas/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/pt/tags/learning/</loc>
-    <lastmod>2024-02-26T20:12:36-03:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/tags/learning/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt"
-                href="http://localhost:1313/pt/tags/learning/"
                 />
   </url><url>
     <loc>http://localhost:1313/pt/tags/active_learning/</loc>

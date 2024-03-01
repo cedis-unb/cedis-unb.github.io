@@ -16,6 +16,7 @@ advisors:
 tags: 
 - master_student
 - machine_learning
+- learning_analytics
 - inactive
 ---
 ## Perfil Acadêmico e Profissional
