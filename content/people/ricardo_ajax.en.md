@@ -14,6 +14,7 @@ tags:
 - digital_transformation
 - verification_validation_testing
 - software_quality
+nav_next: true
 ---
 ## Academic and Professional Profile
 - Current Position: Professor at the [University of Brasília](https://www.unb.br/) (UnB), engaged in the undergraduate [Software Engineering](http://software.unb.br/) program.

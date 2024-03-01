@@ -15,6 +15,7 @@ tags:
 - software_requirements
 - software_architecture
 - project_td
+nav_next: true
 ---
 ## Perfil Acadêmico e Profissional
 - Posição Atual: Professor Adjunto da [Universidade de Brasília](https://www.unb.br/) (UnB), atuando no curso de graduação em [Engenharia de Software](http://software.unb.br/) e no [Programa de Pós-Graduação em Computação Aplicada](https://ppca.unb.br/).
