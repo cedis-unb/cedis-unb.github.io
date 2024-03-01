@@ -43,21 +43,15 @@ DFCris - Categorização e busca de área CAPES para documentos de informação 
 Financiamento: FAP-DF, Início 2022, status: em andamento.
 
 ## Publicações e produções
-### Publicações
-
-{{< publications year="" type="" notypes="" tags="ai,nlp,machine_learning" notags="" >}}
-- Bossois, Débora Zupeli. Text categorization methodology from unlabeled documents using an anaphora resolution process. Master's thesis, UFES, 2010.
-- Pereira, F. S. C. ; Seibel, Hilário ; FREITAS, S. A. A. An Anaphora Based Information Retrieval model Extension. In: 2009 World Congress on Computer Science and Information Engineering, 2009, Los Angeles. Proceedings of the 2009 World Congress on Computer Science and Information Engineering, 2009. p. 330-334.
-- Pereira, Francisco Santiago do Carmo. A methodology for the use of natural language processing in the search for information in digital documents. Master's thesis, UFES, 2009.
-- Pereira, F. S. C. ; MORELLATO, L. ; de Freitas, Sergio Antônio Andrade. Evaluation of an information retrieval model based in anaphora resolution. In: IADIS International Conference on WWW/Internet, 2009, Rome. Proceedings of the IADIS International Conference on WWW/Internet, 2009. p. 334-339.
-- Seibel, Hilário ; FREITAS, S. A. A. Methodology for retrieval of relevant information in digital documents based on anaphora resolution. In: XXXIII Latin American Conference on Informatics CLEI 2007, 2007, San José - Costa Rica. Proceedings of the XXXIII Latin American Conference on Informatics CLEI 2007, 2007.
-- HEBER, ; FREITAS, S. A. A. Intrusion Detection Systems in Industrial Automation Networks. In: 6th International Congress on Automation, Systems and Instrumentation, 2006, São Paulo. Proceedings of the 6th International Congress on Automation, Systems and Instrumentation.
-- Morellato, Luana Vieira. Computational methodology for identification of nominal phrases in Portuguese. Master's thesis, UFES, 2008.
-- Hilário Seibel Júnior. Retrieval of relevant information in digital documents based on anaphora resolution. Master's thesis, UFES, 2007.
-- Freitas, Sergio A. A. Automated text interpretation: Anaphora Processing. Doctoral thesis, UFES, 2005.
-- FREITAS, S. A. A.; PEREIRA, J. G. L. ; MENEZES, C. S. Abducing Definite Descriptions Links. In: II TIL - Workshop on IT and Human Language, 2004, Salvador - BA. Proceedings of the SBC, 2004.
-- CRISTO FILHO, A. M. ; FREITAS, S. A. A. Interpretation of the Simple Future Perfect Tense in Narratives. In: 1st Workshop on Information Technology and Human Language, 2003, São Carlos - SP. Proceedings of TIL2003, 2003.
-- FREITAS, S. A. A.; PEREIRA, J. G. L. Improving Centering to Support a Discourse Segmentation. In: Workshop on Focus and Natural Language Processing, 1995. IBM Working Papers of the Institute for Logic and Linguistics: Focus and Natural Language Processing. v. 3.
+<div id="npublications-section" x-data="{ showPublications: false }">
+    <h2 id="npublications-title" @click="showPublications = !showPublications" class="text-xl font-bold mb-2 cursor-pointer flex items-center text-primary-900">
+      {{< npublications caput="Publicações" year="" types="" notypes="" tags="ai,nlp,machine_learning" notags="" >}}
+      <svg :class="{'rotate-0': !showPublications, 'rotate-180': showPublications}" class="ml-2 h-5 w-5 transform transition-transform duration-200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#51C5CF"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
+    </h2>
+    <div x-show="showPublications" x-cloak>
+      {{< publications caput="" year="" types="" notypes="" tags="ai,nlp,machine_learning" notags="" >}} 
+    </div>
+</div>
 
 ### Softwares
 - FREITAS, S. A. A.; SILVA, A. C.; SILVA; M. Fl; BATISTA, R. C.; Contextus - AI, NLP, and ML platform for Scientific Analysis. 2024.

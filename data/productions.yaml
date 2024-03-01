@@ -4866,3 +4866,262 @@ items:
   advisors: []
   url: 'https://library.iated.org/view/LOZZI2012INF'
   year: 2012
+
+- authors:
+  - Débora Zupeli Bossois
+  title:
+    pt: Metodologia de categorização de textos a partir de documentos não rotulados utilizando um processo de resolução de anáforas
+    en: Text categorization methodology from unlabeled documents using an anaphora resolution process
+  summary:
+    pt: A expansão do conteúdo digital exige métodos eficientes para organizar informações. Neste contexto, o processo de categorização de textos emerge como solução, dividindo informações em categorias temáticas. Enquanto a abordagem supervisionada é tradicional, demandando um conjunto de dados pré-classificados, as abordagens semi e não supervisionadas são alternativas viáveis que não necessitam de dados rotulados para treinamento. Todavia, essas técnicas geralmente ignoram nuances semânticas, como a anáfora - uso de termos variados para a mesma entidade. Este estudo propõe um método de categorização não supervisionado baseado na Estrutura Nominal do Discurso (END) para a resolução de anáforas, aplicando bootstrapping para gerar rotulações iniciais e desenvolver um modelo categorizador. A integração da resolução de anáforas mostrou-se benéfica para a precisão do sistema de categorização não supervisionada, conforme evidenciado pelos resultados das experimentações realizadas.
+    en: With the ongoing expansion of electronic textual content, there's a need to organize all this information in a manageable way. Hence, the process of text categorization was developed to ease the manipulation and retrieval of information by dividing it into thematic categories. There are various approaches to achieving an automatic text categorizer, among which the supervised paradigm is the most traditional. Although supervised methodology shows precision comparable to human experts, the requirement for a pre-classified corpus can be a limiting factor in some applications. In these cases, a semi or unsupervised solution, which doesn't demand a complete and well-formed training set for categorizer construction, can be applied; instead, unlabeled documents are provided to the method. Both supervised learning paradigms and semi or unsupervised paradigms typically build a representation of texts based solely on term occurrence, not considering semantic factors. However, many intrinsic characteristics of natural language can make the process ambiguous, one of which is the use of various terms to refer to an entity already mentioned in the text, a linguistic phenomenon known as anaphora. This dissertation proposes a method for the conception of an unsupervised categorizer, utilizing the Nominal Structure of Discourse (NSD), developed by Freitas for anaphora resolution, as a foundation. For this purpose, a bootstrapping technique for categorization is implemented, aiming to obtain initial labeling for documents, which is used to generate a categorization model through the supervised paradigm. Besides being based on the NSD, the methodology of this work benefits directly from the anaphora resolution process, using the identified antecedents for anaphoras during the final categorization phase. This work presents details about the proposed methodology, explaining the developed algorithms, as well as the experiments conducted for method evaluation. Results show that the use of the anaphora resolution process is beneficial for an unsupervised categorization system.
+  book_title: ''
+  volume: ''
+  doi_isbn: ''
+  journal_event: ''
+  location: ''
+  pages: ''
+  publisher: Biblioteca Central da Universidade Federal do Espirito Santo
+  tags:
+  - nlp
+  - ai
+  - machine_learning
+  type: dissertation
+  program: curso_ppgi
+  advisors:
+  - sergio_freitas
+  url: https://repositorio.ufes.br/items/eda76c07-6e59-4e86-b641-a027704ad767
+  year: 2010
+
+- authors:
+  - Pereira, F. S. C.
+  - Seibel, Hilário
+  - FREITAS, S. A. A.
+  title:
+    pt: An Anaphora Based Information Retrieval model Extension
+    en: An Anaphora Based Information Retrieval model Extension
+  summary:
+    pt: ''
+    en: ''
+  book_title: ''
+  volume: ''
+  doi_isbn: '10.1109/CSIE.2009.833'
+  journal_event: '2009 World Congress on Computer Science and Information Engineering, 2009, Los Angeles'
+  location: ''
+  pages: 'p. 330-334'
+  publisher: ''
+  tags:
+  - sergio_freitas
+  - nlp
+  - ai
+  type: conference
+  program: 
+  advisors: []
+  url: 
+  year: 2009
+
+- authors:
+  - Francisco Santiago do Carmo Pereira
+  title:
+    pt: A methodology for the use of natural language processing in the search for information in digital documents
+    en: A methodology for the use of natural language processing in the search for information in digital documents
+  summary:
+    pt: 
+    en: 
+  book_title: ''
+  volume: ''
+  doi_isbn: ''
+  journal_event: ''
+  location: ''
+  pages: ''
+  publisher: Biblioteca Central da Universidade Federal do Espirito Santo
+  tags:
+  - nlp
+  - ai
+  - machine_learning
+  type: dissertation
+  program: curso_ppgi
+  advisors:
+  - sergio_freitas
+  url: 
+  year: 2009
+
+- authors:
+  - Pereira, F. S. C.
+  - MORELLATO, L.
+  - FREITAS, S. A. A.
+  title:
+    pt: Evaluation of an information retrieval model based in anaphora resolution
+    en: Evaluation of an information retrieval model based in anaphora resolution
+  summary:
+    pt: ''
+    en: ''
+  book_title: ''
+  volume: ''
+  doi_isbn: ''
+  journal_event: 'IADIS International Conference on WWW/Internet, 2009, Roma'
+  location: ''
+  pages: 'p. 334-339'
+  publisher: ''
+  tags:
+  - sergio_freitas
+  - nlp
+  - ai
+  type: conference
+  program: 
+  advisors: []
+  url: https://iadisportal.org/digital-library/evaluation-of-an-information-retrieval-model-based-in-anaphora-resolution
+  year: 2009
+
+- authors:
+  - Seibel, Hilário
+  - FREITAS, S. A. A.
+  title:
+    pt: Methodology for retrieval of relevant information in digital documents based on anaphora resolution
+    en: Methodology for retrieval of relevant information in digital documents based on anaphora resolution
+  summary:
+    pt: ''
+    en: ''
+  book_title: ''
+  volume: ''
+  doi_isbn: ''
+  journal_event: 'XXXIII Latin American Conference on Informatics CLEI 2007, 2007, San José - Costa Rica'
+  location: ''
+  pages: ''
+  publisher: ''
+  tags:
+  - sergio_freitas
+  - nlp
+  - ai
+  type: conference
+  program: 
+  advisors: []
+  url: 
+  year: 2007
+
+- authors:
+  - Barbosa, H. A. 
+  - FREITAS, S. A. A.
+  title:
+    pt: Sistemas de Detecção de Invasão em Redes de Automação Industrial
+    en: Intrusion Detection Systems in Industrial Automation Networks
+  summary:
+    pt: ''
+    en: ''
+  book_title: ''
+  volume: ''
+  doi_isbn: ''
+  journal_event: '6th International Congress on Automation, Systems and Instrumentation, 2006, São Paulo'
+  location: ''
+  pages: ''
+  publisher: ''
+  tags:
+  - sergio_freitas
+  - ai
+  type: conference
+  program: 
+  advisors: []
+  url: 
+  year: 2006
+
+
+- authors:
+  - Luana Vieira Morellato
+  title:
+    pt: Metodologia computacional para identificação de sintagmas nominais da língua portuguesa
+    en: Computational methodology for identification of nominal phrases in Portuguese
+  summary:
+    pt: Sintagmas, unidades de sentido com funções sintáticas dentro de uma frase, são essenciais para a estruturação do conteúdo expresso nas sentenças, conforme destacado por Nicola (2008). As frases articulam seu conteúdo por meio dos elementos e das combinações que a linguagem disponibiliza, formando assim conjuntos e subconjuntos atuando como unidades sintáticas - os sintagmas, categorizados em nominais e verbais, com os nominais destacando-se pelo seu maior valor semântico. Eles são fundamentais em tarefas de Processamento de Linguagem Natural (PLN), como resolução de anáforas, construção de ontologias automáticas, análises em textos médicos para geração de resumos e vocabulário, ou como etapa preliminar em análises sintáticas. Em Recuperação de Informação (RI), os sintagmas aprimoram a criação de termos em sistemas de indexação e buscas, elevando a eficácia dos resultados. Esta dissertação introduz uma metodologia computacional para identificar sintagmas nominais em documentos digitais em português. Detalha-se a abordagem para identificar e extrair sintagmas nominais através do desenvolvimento do SISNOP - Sistema Identificador de Sintagmas Nominais em Português. O SISNOP, um sistema integrado por módulos e programas, analisa textos em linguagem natural, realizando análises morfológicas e sintáticas para recuperar sintagmas nominais, fornecendo também informações sintáticas, como gênero, número e grau das palavras nos sintagmas. Testado em corpora como CETENFolha e CETEMPúblico, o SISNOP alcançou reconhecimento de 98,12% e 94,59% das frases, identificando mais de 24 milhões de sintagmas. Seus módulos—Etiquetador Morfológico, Identificador de Sintagmas Nominais e Identificador de Gênero, Número e Grau—foram avaliados individualmente com um conjunto de dados menor devido à análise manual dos resultados, atingindo precisão de 82,45% e abrangência de 69,20%.
+    en: Phrases, or syntagms, are units of meaning with syntactic functions within a sentence, as described by Nicola (2008). Generally, the sentences in any statement express content through the elements and combinations thereof provided by the language. This process forms sets and subsets that act as syntactic units within the larger unit of the sentence—syntagms, which can be categorized into nominal and verbal. Among these, nominal syntagms are of particular interest due to their higher semantic value. They are employed in Natural Language Processing (NLP) tasks such as anaphora resolution, automatic ontology building, parsing in medical texts for summary generation and vocabulary creation, or as an initial step in syntactic analysis processes. In Information Retrieval (IR), syntagms can be used to create terms in document indexing and search systems, improving results. This dissertation presents a computational methodology for identifying nominal syntagms in Portuguese language digital documents. It outlines the methodology for identifying and extracting nominal syntagms through the development of SISNOP—System for Identifying Nominal Syntagms in Portuguese. SISNOP, comprising a set of modules and programs, interprets unrestricted texts in natural language through morphological and syntactic analyses to retrieve nominal syntagms, also providing syntactic information such as gender, number, and degree of words within the extracted syntagms. Tested on corpora like CETENFolha and CETEMPúblico, SISNOP recognized 98.12% and 94.59% of sentences, identifying over 24 million syntagms. Its modules—Morphological Tagger, Nominal Syntagms Identifier, and Gender, Number, and Degree Identifier—were individually tested using a smaller dataset due to manual result analysis, achieving a precision of 82.45% and coverage of 69.20%.
+  book_title: ''
+  volume: ''
+  doi_isbn: ''
+  journal_event: ''
+  location: ''
+  pages: ''
+  publisher: Biblioteca Central da Universidade Federal do Espirito Santo
+  tags:
+  - nlp
+  - ai
+  type: dissertation
+  program: curso_ppgi
+  advisors:
+  - sergio_freitas
+  url: https://repositorio.ufes.br/items/776acd30-998d-42de-97d4-465188e9fae9
+  year: 2010
+
+- authors:
+  - Hilário Seibel Júnior
+  title:
+    pt: Recuperação de informações relevantes em documentos digitais baseada na resolução de anáforas
+    en: Retrieval of relevant information in digital documents based on anaphora resolution
+  summary:
+    pt: Os métodos de recuperação de informação (RI) tradicionais se baseiam essencialmente na contagem da freqüência em que as palavras aparecem em um documento; sem apresentar soluções para que o conteúdo semântico do discurso seja interpretado [Van Rijsbergen 1979; Baeza-Yates e Ribeiro-Neto 1999]. Por não interpretarem o documento analisado; tais métodos podem deixar de considerar informações importantes a seu respeito. Uma solução para contornar esse problema; citada em [Salton e McGill 1986]; é utilizar o Processamento de Linguagem Natural (PLN) na recuperação de informação. Uma aplicação do PLN é o processamento de anáforas. Anáfora [Carter 1987; Beaver 2004] é um fenômeno lingüístico no qual uma entidade introduzida a priori é referenciada posteriormente em outra frase através de alguma expressão lingüística; tal como em "Valentina nasceu em São Paulo. A menina é do signo de Peixes.". A resolução das anáforas identifica que o termo menina presente na segunda frase do texto referencia a entidade introduzida no discurso pelo termo Valentina da primeira frase. Isso permite afirmar que Valentina é mais relevante em relação ao texto do que se tal referência não ocorresse. Freitas propõe em [Freitas 2005] um método para resolver as anáforas de um documento através da criação de uma estrutura que permite acompanhar as entidades que se mantêm em evidência ao longo do discurso. Essa estrutura armazena informações que podem ser aproveitadas por um método de recuperação de informação. Esta dissertação propõe uma metodologia computacional para recuperar informações relevantes a partir da resolução das anáforas de um documento; visando aumentar a qualidade dos resultados de uma query. A resolução de anáforas permite identificar exatamente a quantidade de vezes que cada entidade é referenciada em um discurso; expondo entidades e ligações que podiam estar obscuras no discurso original. Essa informação torna possível decidir se certa entidade é mais relevante que outra no documento; dando mais enfoque ao que o autor escreveu. Dessa forma; os documentos relevantes recuperados são classificados pela quantidade de informação que apresentam a respeito dos termos buscados; e não apenas pela localização e/ou quantidade de ocorrências de tais termos. Este trabalho também permite identificar; através da estrutura gerada pelo processamento de anáforas; os termos sinônimos (aqueles que referenciam uma mesma entidade). Se o documento indica que dois termos são sinônimos; a busca por um deles retorna o mesmo resultado que a busca pelo outro; aumentando ainda mais a qualidade dos resultados de uma query. Este trabalho apresenta os detalhes da metodologia proposta - as medidas utilizadas para calcular a relevância de um termo em relação ao documento interpretado pelo processamento de anáforas; os procedimentos necessários para a realização de uma query; o protótipo implementado e a análise de sua complexidade de tempo. Além disso; são avaliadas as características desta abordagem que a diferenciam dos métodos tradicionais em relação à qualidade dos resultados obtidos.
+    en: Traditional Information Retrieval (IR) methods are primarily based on counting the frequency of word occurrences in a document, without offering solutions for interpreting the semantic content of the discourse [Van Rijsbergen 1979; Baeza-Yates and Ribeiro-Neto 1999]. By not interpreting the analyzed document, such methods may overlook important information about it. A solution to overcome this issue, mentioned in [Salton and McGill 1986], is to use Natural Language Processing (NLP) in information retrieval. One application of NLP is the processing of anaphoras. Anaphora [Carter 1987; Beaver 2004] is a linguistic phenomenon where an entity introduced a priori is referenced later in another sentence through some linguistic expression, as in "Valentina was born in São Paulo. The girl is a Pisces." Anaphora resolution identifies that the term "girl" in the second sentence references the entity introduced in the discourse by the term "Valentina" from the first sentence. This allows us to assert that Valentina is more relevant to the text than if such reference had not occurred. Freitas proposes in [Freitas 2005] a method to resolve anaphoras in a document by creating a structure that allows tracking entities that remain prominent throughout the discourse. This structure stores information that can be leveraged by an information retrieval method. This dissertation proposes a computational methodology to retrieve relevant information from the resolution of anaphoras in a document, aiming to improve the quality of query results. Anaphora resolution enables precise identification of the number of times each entity is referenced in a discourse, revealing entities and connections that may have been obscured in the original discourse. This information makes it possible to decide whether a certain entity is more relevant than another in the document, focusing more on what the author wrote. Thus, the relevant documents retrieved are ranked by the amount of information they present regarding the searched terms, and not merely by the location and/or number of occurrences of such terms. This work also allows identifying, through the structure generated by anaphora processing, synonymous terms (those that reference the same entity). If the document indicates that two terms are synonymous, searching for one will return the same result as searching for the other, further increasing the quality of query results. This work presents the details of the proposed methodology - the measures used to calculate the relevance of a term in relation to the document interpreted through anaphora processing, the procedures necessary for conducting a query, the implemented prototype, and the analysis of its time complexity. Furthermore, the characteristics of this approach that differentiate it from traditional methods regarding the quality of the obtained results are evaluated.
+  book_title: ''
+  volume: ''
+  doi_isbn: ''
+  journal_event: ''
+  location: ''
+  pages: ''
+  publisher: Biblioteca Central da Universidade Federal do Espirito Santo
+  tags:
+  - nlp
+  - ai
+  type: dissertation
+  program: curso_ppgi
+  advisors:
+  - sergio_freitas
+  url: http://www.dominiopublico.gov.br/pesquisa/DetalheObraForm.do?select_action=&co_obra=104831
+  year: 2007
+
+- authors:
+  - Sergio Antônio Andrade de Freitas
+  title:
+    pt: Interpretação automatizada de textos - processamento de anáforas
+    en: Automated text interpretation - anaphora processing
+  summary:
+    pt: Esta tese apresenta uma solução para a interpretação de anáforas nominais definidas.Considere o seguinte texto- (1) a. Mariana comprou um carro novo. b. O motor veio danificado. A frase (1a) apresenta duas entidades- Mariana e um carro novo. Já a frase (1.2b) tem apenas uma entidade o motor. No processo de interpretação, humano ou computacional, a utilização do artigo de nido o é um indicativo de que a entidade já havia sido introduzida no discurso, i.e. apresenta um caráter anafórico. Resolver uma anáfora é, a priori, identicar a quem ou a que se refere esta anáfora. Mas no caso acima é mais do que isto sem dúvida o motor existe no texto por causa da existência de um carro, porém a interpretação do motor deve ir além disto e identi car como este motor está ligado com aquele carro. Isto é uma anáfora nominal de nida. A interpretação das anáforas nominais de nidas ou de qualquer fenômeno anafórico pode ser generalizada como um processo que atribui valores aos itens da seguinte equação- R(A, T ) (2) onde- A denota a entidade introduzida pela interpretação fora de contexto de um pronome, de uma elipse ou de um sintagma nominal de nido, T denota o seu antecedente e R é a relação existente entre A e T . O processo de resolução da equação, que é propriamente o processo de resolução de anáforas, consiste em descobrir T e R dado A. Nesta tese é proposta uma metodologia computacional que interpreta as anáforas nominais de nidas cuja relação R é uma dentre - parte de, membro de, subcategorizado por e coreferência. A obtenção das relações é feita por um conjunto de regras pragmáticas [Freitas, Lopes e Menezes 2004, Filho e Freitas 2003] (cap. 3). Caso seja constatado que A não seja anafórica então ela é acomodada no contexto. A metodologia computacional é construída sobre um ambiente de programação em lógica [Damásio, Nejdl e Pereira 1994] que permite raciocinar abdutivamente [Kakas, Kowalski e Toni 1992] sobre a representação semântica do texto [Kamp e Reyle 1993]. A partir da interpretação das entidades é construída a estrutura nominal do discurso [Lopes e Freitas 1994] (cap. 4), a qual permite - (1) fazer o acompanhamento das entidades mais salientes em cada frase [Freitas e Lopes 1994], (2) limitar o universo de escolha de possíveis antecedentes[Freitas e Lopes 1996] e (3) prover um resumo das entidades do discurso. O resultado é uma metodologia que permite, de forma integrada, resolver anáforas e elipses, sendo que a estrutura nominal do discurso pode ser usada na busca de informações.
+    en: This thesis presents a solution to the interpretation of de nite descriptions in Portuguese. For example, consider the following text- (1) a. Mariana bought a new car. b. The engine was damaged. The sentence (1a) introduces two entities- Mariana and a car which is new. The sentence (1b) introduces only one entity the engine. In a human or computer interpretation process, the use of the de nite article the preceeding a noun indicates that the introduced entity was already present at the discourse, i.e., it is an anaphoric entity. The resolution of an anaphora is a reference problem, but in the example (1) there is another problem- although the car is the entity that gives context to the engine, we can not say that the engine is the car (as for a pronominal anaphora). It also must be determined how the engine is related to the car. This is a de nite description problem. The interpretation of any kind of anaphora can be represented by the following equation- R(A, T ) (2) where A denotes an entity introduced by the context interpretation of a pronoun, an ellipsis or a de nite noun phrase, T denotes its antecedent and R is the relation between A and T . The equation's resolution process is summarized as- given A nd T and R. This thesis proposes a methodology to the de nite description interpretation that the relation R is of- part of, member of, subcategorized by and corefers. These relations are obtained by a set of pragmatic rules [Freitas, Lopes e Menezes 2004, Filho e Freitas 2003], which are here de ned (chapter 3). Also if A is not anaphoric then it is acommodated in the discourse context. The computational methodology is implemented in a logic programming system [Damásio, Nejdl e Pereira 1994] that permits an abductive reasoning [Kakas, Kowalski e Toni 1992] at the semantic representation of the discourse [Kamp e Reyle 1993]. The interpretation of the entities is the basis to the Discourse Nominal Structure [Lopes e Freitas 1994] (chapter 4), which allows- (1) to track the most salient entities at each sentence [Freitas e Lopes 1994], (2) to limit the number of possible antecedents [Freitas e Lopes 1996] and (3) to give a discourse entities summary. The result is an integrated metodology to solve anaphors and ellipses. Finally, the Nominal Structure of the Discourse can help the search/index of digital documents.
+  book_title: ''
+  volume: ''
+  doi_isbn: ''
+  journal_event: ''
+  location: ''
+  pages: ''
+  publisher: Biblioteca Central da Universidade Federal do Espirito Santo
+  tags:
+  - sergio_freitas
+  - nlp
+  - ai
+  type: phd
+  program: curso_ppgee
+  advisors: []
+  url: https://repositorio.ufes.br/items/0a851464-4e72-46fa-9dde-5b1995f16a91
+  year: 2005
+
+- authors:
+  - Cristo Filho, A. M.
+  - FREITAS, S. A. A.
+  title:
+    pt: Interpretação do Futuro do Pretérito em Narrativas
+    en: Interpretation of the Future of the Past in Narratives
+  summary:
+    pt: ''
+    en: ''
+  book_title: ''
+  volume: ''
+  doi_isbn: ''
+  journal_event: '1º Workshop em Tecnologia da Informação e da Linguagem Humana, 2003, São Carlos - SP'
+  location: ''
+  pages: ''
+  publisher: ''
+  tags:
+  - sergio_freitas
+  - ai
+  - nlp
+  type: conference
+  program: 
+  advisors: []
+  url: http://nilc.icmc.usp.br/til/til2003_English/oral/CristoFilho_Freitas_05.pdf
+  year: 2003
