@@ -1,7 +1,7 @@
 wordCount:
   other: "{{ .WordCount }} words"
 
-#TERMOS
+#TERMOS (NÃO APAGAR)
 next: "Next"
 previous: "Prev"
 first: "First"
@@ -18,7 +18,6 @@ curso_esw2: "Bachelor of Software Engineering - University of Brasília (Brazil)
 curso_ppca: "Master's Thesis in Applied Computing, University of Brasília (Brazil)"
 curso_unb: "University of Brasília"
 
-# TAGS
 # Knowledge Areas
 active_learning: "Active Learning"
 ai: "Artificial Intelligence"
