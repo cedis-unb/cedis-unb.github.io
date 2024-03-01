@@ -150,7 +150,7 @@
               {{ end }}
             {{ end }}
 
-            . Tags:
+            {{/* Tags */}}
             {{ $filteredTags := slice }}
             {{ range .tags }}
               {{ if and (ne . "active") (ne . "inactive") }}
@@ -158,11 +158,14 @@
               {{ end }}
             {{ end }}
             {{ $total := len $filteredTags }}
-            {{ range $index, $tag := $filteredTags }}
-              {{ $tagLink := printf "/tags/%s" $tag | absLangURL }}
-              <a href="{{ $tagLink }}">{{ $tag | i18n }}</a>{{ if lt $index (sub $total 1) }}, {{ end }}
-            {{ end }}.
-            
+            {{ if gt $total 0 }}
+              . Tags:
+              {{ range $index, $tag := $filteredTags }}
+                {{ $tagLink := printf "/tags/%s" $tag | absLangURL }}
+                <a href="{{ $tagLink }}">{{ $tag | i18n }}</a>{{ if lt $index (sub $total 1) }}, {{ end }}
+              {{ end }}.
+            {{ end }}
+
 
             {{ if .summary }}
             {{ $currentLangSummary := index .summary $.Site.Language.Lang }}
@@ -327,12 +330,16 @@
             <span> {{ $thisPage.Params.description }}</span>
             {{ end }}
             <!-- Exibição de advisors, tags, e o resumo com controle do Alpine.js -->
-            {{ i18n "orientador" }}:
-            {{ range $thisPage.Params.advisors }}
-              {{ with index $.Site.Data.advisors.advisors . }}
-                <a href="{{ .link | absLangURL }}">{{ .name }}</a>
+            {{ if gt (len $thisPage.Params.advisors) 0 }}
+              {{ i18n "orientador" }}:
+              {{ $totalAdvisors := len $thisPage.Params.advisors }}
+              {{ range $index, $advisor := $thisPage.Params.advisors }}
+                {{ with index $.Site.Data.advisors.advisors $advisor }}
+                  <a href="{{ .link | absLangURL }}">{{ .name }}</a>{{ if lt $index (sub $totalAdvisors 1) }},{{ end }}
+                {{ end }}
               {{ end }}
             {{ end }}
+            .
         </li>
         {{ end }}
     {{ end }}
