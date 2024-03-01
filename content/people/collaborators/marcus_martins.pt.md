@@ -1,7 +1,7 @@
 ---
 author: CEDIS
 title: "Marcus Vinicius Paiva Martins"
-date: 2024-02-17T00:50:20-03:00
+date: 2024-02-17T00:51:15-03:00
 weight: 44
 language: pt
 featured_image: "../assets/images/featured/people_Marcus Martins.png"
