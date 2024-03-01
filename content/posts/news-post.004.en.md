@@ -24,7 +24,7 @@ An ambitious gamification project is being launched on the Canal Ciência portal
 
 This innovative project primarily aims to enrich the user experience of the Canal Ciência. Through the use of advanced gamification techniques, the team seeks to offer a more engaging and motivating approach to scientific dissemination. The core objectives of the project include identifying the target audience of Canal Ciência, developing motivational profiles using the Octalysis tool, defining indicators to evaluate user satisfaction and motivation, and finally, implementing gamification in the portal.
 
-A crucial part of the project is the rigorous evaluation of the gamified version of Canal Ciência. The focus is on measuring the impact of this new approach on user experience and the effectiveness of scientific content dissemination. The use of gamification is seen as a potential strategy to increase user engagement and information retention.
+A important part of the project is the rigorous evaluation of the gamified version of Canal Ciência. The focus is on measuring the impact of this new approach on user experience and the effectiveness of scientific content dissemination. The use of gamification is seen as a potential strategy to increase user engagement and information retention.
 
 The collaboration between CEDIS and IBICT specialists under the coordination of Leda Sampson is a strong point of the project. Additionally, the project includes the active participation of Software Engineering students as Scientific Initiation scholarship holders, including Mylena Angelica Faria, Juan Mangeira Alves, and Marcus Vinicius Martins, providing them with a unique opportunity to apply their knowledge in a real and impactful context.
 

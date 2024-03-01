@@ -8,8 +8,9 @@
 {{ $excludeTypes := split (.Get "notypes") "," }} 
 {{ $advisors := split (.Get "advisors") "," }} 
 {{ $caput := .Get "caput"}} 
+{{ $noShow := .Get "noShow"}} 
 
-{{ $hasMatches := false }}
+{{ $hasMatches := 0 }}
 {{ range $.Site.Data.productions.items }}
   {{ $includePublication := true }}
     <!-- Aplica o filtro de ano, se um ano foi especificado -->
@@ -76,13 +77,12 @@
   {{ end }}
 
   {{ if $includePublication }}
-    {{ $hasMatches = true }}
-    {{ break }}
+    {{ $hasMatches = add $hasMatches 1 }}
   {{ end }}
 
 {{end}}
 
-{{ if $hasMatches }}
+{{ if and $hasMatches (not $noShow) }}
   {{ if $caput }}
     <div class="caput-content">
         {{ $caput | markdownify }}

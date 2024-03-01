@@ -15,7 +15,7 @@ tags:
 - learning_analytics
 ---
 
-*Learning Analytics* is an interdisciplinary field that integrates data analysis, computer science, and educational psychology to improve learning and educational environments. By collecting, analyzing, and interpreting data about learners and their contexts, it offers insights for personalizing education, identifying students in need of additional support, and enhancing educational outcomes. In educational management, it is crucial for providing significant data for decisions about resources and teaching strategies, helping to identify trends and future needs. Its integration represents a significant shift in education, making it more data-driven, responsive, and student-centered.
+*Learning Analytics* is an interdisciplinary field that integrates data analysis, computer science, and educational psychology to improve learning and educational environments. By collecting, analyzing, and interpreting data about learners and their contexts, it offers insights for personalizing education, identifying students in need of additional support, and enhancing educational outcomes. In educational management, it is important for providing significant data for decisions about resources and teaching strategies, helping to identify trends and future needs. Its integration represents a significant shift in education, making it more data-driven, responsive, and student-centered.
 
 ## About the Area Coordinators
 

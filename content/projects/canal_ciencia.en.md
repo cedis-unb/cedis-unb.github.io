@@ -27,7 +27,7 @@ The core objectives of this project are multiple:
 2. Develop motivational profiles with the help of the Octalisys tool;
 3. Establish indicators to evaluate user satisfaction and motivation; and
 4. Implement gamification on the Canal Ciência Portal.
-A crucial aspect is the rigorous evaluation of the gamified version of Canal Ciência, aiming to measure its impact on the user experience and the effectiveness of scientific content dissemination through the use of gamification.
+An important aspect is the rigorous evaluation of the gamified version of Canal Ciência, aiming to measure its impact on the user experience and the effectiveness of scientific content dissemination through the use of gamification.
 ## Methodology and Implementation
 
 The implementation of this initiative will take place on the WordPress platform, the current base of Canal Ciência. Gamification techniques will be carefully integrated, and their effectiveness monitored through specific indicators created by the CEDIS team. This will allow continuous adjustments and enhancements to the project.

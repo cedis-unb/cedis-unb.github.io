@@ -27,7 +27,7 @@ Os objetivos centrais deste projeto são múltiplos:
 2. Desenvolver perfis motivacionais com o auxílio da ferramenta Octalisys;
 3. Estabelecer indicadores para avaliar a satisfação e motivação dos usuários e
 4. Implementar a gamificação no Portal Canal Ciência. 
-Um aspecto crucial é a avaliação rigorosa da versão gamificada do Canal Ciência, visando mensurar seu impacto na experiência do usuário e na eficácia da disseminação de conteúdo científico através da utilização da gamificação.
+Um aspecto importante é a avaliação rigorosa da versão gamificada do Canal Ciência, visando mensurar seu impacto na experiência do usuário e na eficácia da disseminação de conteúdo científico através da utilização da gamificação.
 ## Metodologia e implementação
 
 A implementação desta iniciativa ocorrerá na plataforma WordPress, a base atual do Canal Ciência. As técnicas de gamificação serão integradas cuidadosamente e sua eficácia será monitorada através de indicadores específicos, criados pela equipe CEDIS. Isto permitirá ajustes contínuos com aprimoramento do projeto.

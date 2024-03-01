@@ -23,7 +23,7 @@ Standards and models have been developed to assist in the evaluation and assuran
 
 The implementation of software quality assurance practices is a continuous process, starting in the early stages of software conception and extending throughout its life cycle. It involves the application of agile development methodologies, continuous integration, automated testing, code reviews, and other software engineering practices aimed at identifying and correcting defects early, improving development efficiency, and ensuring that the final product meets or exceeds user expectations.
 
-In summary, software quality is not an attribute that can be added after development; it must be an intrinsic consideration at every stage of the software development process. A systematic approach to quality management is crucial for delivering software products that not only function as expected but also provide a satisfactory user experience, remain relevant and evolvable in the face of market demands and technological challenges.
+In summary, software quality is not an attribute that can be added after development; it must be an intrinsic consideration at every stage of the software development process. A systematic approach to quality management is important for delivering software products that not only function as expected but also provide a satisfactory user experience, remain relevant and evolvable in the face of market demands and technological challenges.
 
 ## Publications and Productions
 ### Publications
