@@ -1,0 +1,5 @@
+{{ if .Page.NextInSection }}
+    <a href="{{ .Page.NextInSection.RelPermalink }}" class="next-card-link text-primary-500 hover:text-primary-700 transition duration-150 ease-in-out" x-data="" @click="">
+        {{ .Page.NextInSection.Title }} →
+    </a>
+{{ end }}

@@ -16,7 +16,6 @@ tags:
 - gamification
 ---
 
-
 Gamification is a process that uses elements, techniques, and game design mechanics in contexts not related to games, aiming to increase user motivation, participation, and engagement. Gamification has been applied in various fields, such as education, marketing, health, and corporate training, becoming a growing trend over the last decade.
 ## About the area coordinator
 **Prof. Sergio Antônio Andrade de Freitas**
@@ -65,9 +64,15 @@ Specialist in gamification and Full Professor at the University of Brasília - U
 5. Gamification in Organizational Contexts, Start: 2021, status: ongoing.
 ## Publications and productions
 
-### Publications
-{{< publications year="" type="" notypes="" tags="gamification" notags="" >}}
-
+<div id="npublications-section" x-data="{ showPublications: false }">
+    <h2 id="npublications-title" @click="showPublications = !showPublications" class="text-xl font-bold mb-2 cursor-pointer flex items-center text-primary-900">
+      {{< npublications caput="Publications" year="" type="" notypes="" tags="gamification" notags="" >}}
+      <svg :class="{'rotate-0': !showPublications, 'rotate-180': showPublications}" class="ml-2 h-5 w-5 transform transition-transform duration-200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#51C5CF"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
+    </h2>
+    <div x-show="showPublications" x-cloak>
+      {{< publications year="" type="" notypes="" tags="gamification" notags="" >}} 
+    </div>
+</div>
 
 ### Apps
 1. HCI Journey mobile - support app for the gamified Human-Computer Interaction discipline (HCI Journey), 2023.
