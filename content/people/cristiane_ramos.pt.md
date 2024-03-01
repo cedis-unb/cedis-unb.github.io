@@ -74,5 +74,12 @@ tags:
 - Lattes: [CV Lattes](http://lattes.cnpq.br/9950213660160161)
 - ​​Orcid ID: [Orcid Profile](https://orcid.org/0000-0002-6235-5590)
 
-## Publicações
-{{< publications year="" tags="cristiane_ramos" notags="" >}}
+<div id="npublications-section" x-data="{ showPublications: false }">
+    <h2 id="npublications-title" @click="showPublications = !showPublications" class="text-xl font-bold mb-2 cursor-pointer flex items-center text-primary-900">
+      {{< npublications caput="Publicações" year="" types="" notypes="" tags="cristiane_ramos" notags="" >}}
+      <svg :class="{'rotate-0': !showPublications, 'rotate-180': showPublications}" class="ml-2 h-5 w-5 transform transition-transform duration-200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#51C5CF"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
+    </h2>
+    <div x-show="showPublications" x-cloak>
+      {{< publications caput="" year="" types="" notypes="" tags="cristiane_ramos" notags="" >}} 
+    </div>
+</div>
