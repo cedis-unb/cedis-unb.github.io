@@ -23,7 +23,7 @@ Normas e modelos têm sido desenvolvidos para auxiliar na avaliação e garantia
 
 A implementação de práticas de garantia de qualidade de software é um processo contínuo, que começa nas fases iniciais de concepção do software e se estende por todo o seu ciclo de vida. Envolve a aplicação de metodologias de desenvolvimento ágil, integração contínua, testes automatizados, revisões de código, e outras práticas de engenharia de software destinadas a identificar e corrigir defeitos precocemente, melhorar a eficiência do desenvolvimento, e assegurar que o produto final atenda ou supere as expectativas dos usuários.
 
-Em suma, a qualidade de software não é um atributo que pode ser adicionado após o desenvolvimento; ela deve ser uma consideração intrínseca em cada etapa do processo de desenvolvimento de software. Uma abordagem sistemática para a gestão da qualidade é crucial para a entrega de produtos de software que não apenas funcionem conforme o esperado, mas que também ofereçam uma experiência de usuário satisfatória, mantenham-se relevantes e evolutivos frente às demandas do mercado e desafios tecnológicos.
+Em suma, a qualidade de software não é um atributo que pode ser adicionado após o desenvolvimento; ela deve ser uma consideração intrínseca em cada etapa do processo de desenvolvimento de software. Uma abordagem sistemática para a gestão da qualidade é fundamental para a entrega de produtos de software que não apenas funcionem conforme o esperado, mas que também ofereçam uma experiência de usuário satisfatória, mantenham-se relevantes e evolutivos frente às demandas do mercado e desafios tecnológicos.
 
 ## Publicações e produções
 ### Publicações

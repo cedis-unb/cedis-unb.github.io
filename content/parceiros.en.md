@@ -8,7 +8,7 @@ CEDIS benefits from the support and collaboration of various research partners, 
 
 - **A3M - Learning for the Third Millennium Program**: An innovative program from the University of Brasília, aimed at integrating advanced technologies and methodologies in education, focusing on preparing for the challenges of the third millennium. More information can be accessed at [A3M UnB](http://a3m.unb.br).
 
-- **IBICT - Brazilian Institute of Information in Science and Technology**: A key institution for the development of information science in Brazil, operating under the Ministry of Science, Technology, and Innovations. IBICT plays a crucial role as an aggregator of scientific and technological information initiatives in the country. Additional details are available at [IBICT](https://www.gov.br/ibict/pt-br).
+- **IBICT - Brazilian Institute of Information in Science and Technology**: A key institution for the development of information science in Brazil, operating under the Ministry of Science, Technology, and Innovations. IBICT plays a important role as an aggregator of scientific and technological information initiatives in the country. Additional details are available at [IBICT](https://www.gov.br/ibict/pt-br).
 
 - **FAP-DF - Research Support Foundation of the Federal District**: Essential for fostering research, technology, and innovation in the region, supporting projects that boost scientific and technological development in the Federal District. Complementary information can be found at [FAP-DF](http://www.fap.df.gov.br/).
 

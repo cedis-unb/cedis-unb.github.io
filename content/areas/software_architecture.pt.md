@@ -5,7 +5,7 @@ date: 2024-02-14T01:37:18-03:00
 language: pt
 weight: 5
 featured_image: "../assets/images/featured/area_Arquitetura de Software.png"
-summary:  Arquitetura de Software é um campo fundamental na engenharia de sistemas que envolve a organização estrutural de componentes de software, suas interações e os princípios orientadores que definem o design e a evolução dos sistemas. Essa área é crucial para garantir a eficiência, a escalabilidade e a manutenção dos sistemas de software, impactando diretamente na qualidade e no desempenho das aplicações.
+summary:  Arquitetura de Software é um campo fundamental na engenharia de sistemas que envolve a organização estrutural de componentes de software, suas interações e os princípios orientadores que definem o design e a evolução dos sistemas. Essa área garante a eficiência, a escalabilidade e a manutenção dos sistemas de software, impactando diretamente na qualidade e no desempenho das aplicações.
 authorimage: ../assets/images/global/author.webp
 categories:
 - knowledge_areas
@@ -17,7 +17,7 @@ tags:
 # Arquitetura de Software
 
 ## Introdução
-A Arquitetura de Software é um campo fundamental na engenharia de sistemas que envolve a organização estrutural de componentes de software, suas interações e os princípios orientadores que definem o design e a evolução dos sistemas. Essa área é crucial para garantir a eficiência, a escalabilidade e a manutenção dos sistemas de software, impactando diretamente na qualidade e no desempenho das aplicações.
+A Arquitetura de Software é um campo fundamental na engenharia de sistemas que envolve a organização estrutural de componentes de software, suas interações e os princípios orientadores que definem o design e a evolução dos sistemas. Essa área é vital para garantir a eficiência, a escalabilidade e a manutenção dos sistemas de software, impactando diretamente na qualidade e no desempenho das aplicações.
 
 ## Sobre o coordenador da área
 **Prof. André Lanna**
