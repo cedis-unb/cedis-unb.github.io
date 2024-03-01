@@ -1,0 +1,5 @@
+{{ if .Page.PrevInSection }}
+    <a href="{{ .Page.PrevInSection.RelPermalink }}" class="prev-card-link text-primary-500 hover:text-primary-700 transition duration-150 ease-in-out" x-data="" @click="">
+        ← {{ .Page.PrevInSection.Title }}
+    </a>
+{{ end }}

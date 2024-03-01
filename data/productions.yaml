@@ -992,10 +992,8 @@ items:
   - FERREIRA, G. V.
   - FREITAS, SERGIO A. A.
   title:
-    pt: 'Escolha Estratégica em Processos Seletivos: análises da alteração de opção
-      inicial de candidatos no SISUnB, e seus efeitos na evasão'
-    en: 'Escolha Estratégica em Processos Seletivos: análises da alteração de opção
-      inicial de candidatos no SISUnB, e seus efeitos na evasão'
+    pt: 'Escolha Estratégica em Processos Seletivos: análises da alteração de opção inicial de candidatos no SISUnB, e seus efeitos na evasão'
+    en: 'Strategic Choice in Selective Processes: analyses of the alteration of initial option of candidates in SISUnB, and its effects on dropout'
   summary:
     pt: ''
     en: ''
@@ -1708,8 +1706,7 @@ items:
   title:
     pt: 'Formas de ingresso em perspectiva comparada: por que o SISU aumenta a evasão?
       O caso da UNB'
-    en: 'Formas de ingresso em perspectiva comparada: por que o SISU aumenta a evasão?
-      O caso da UNB'
+    en: 'Forms of admission in a comparative perspective: why does SISU increase dropout? The case of UNB'
   summary:
     pt: ''
     en: ''
@@ -2322,8 +2319,7 @@ items:
   title:
     pt: 'Formas de Ingresso em Perspectiva Comparada: Porque o Sisu aumenta a evasão
       - o caso da UnB'
-    en: 'Formas de Ingresso em Perspectiva Comparada: Porque o Sisu aumenta a evasão
-      - o caso da UnB'
+    en: 'Forms of Admission in Comparative Perspective: Sisu at UnB'
   summary:
     pt: ''
     en: ''
@@ -4842,3 +4838,31 @@ items:
   - sergio_freitas
   url: https://www.bdm.unb.br/handle/10483/6822
   year: 2013
+- authors:
+  - LOZZI, S.
+  - DINIZ, F. B.
+  - ALBURQUERQUE, P.
+  - REZENDE, M.
+  - FREITAS, S. A. A.
+  - COSTA, C.
+  title:
+    pt: Influence of Affirmative Action on the Academic Performance of Undergraduate Students from a Brazilian Public University
+    en: Influence of Affirmative Action on the Academic Performance of Undergraduate Students from a Brazilian Public University
+  summary:
+    pt: ''
+    en: ''
+  book_title: ''
+  volume: ''
+  doi_isbn: ''
+  journal_event: '5th International Conference of Education, Research and Innovations, 2012, Madrid - Spain'
+  location: ''
+  pages: 'p. 3017-3022'
+  publisher: ''
+  tags:
+  - sergio_freitas
+  - learning_analytics
+  type: conference
+  program: 
+  advisors: []
+  url: 'https://library.iated.org/view/LOZZI2012INF'
+  year: 2012
