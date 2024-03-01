@@ -12,6 +12,7 @@ categories:
 - daniel_sundfeld
 tags: 
 - hpc
+nav_next: true
 ---
 A área de Computação de Alto Desempenho e Computação em Nuvem é um campo dinâmico e essencial na ciência da computação, focado no desenvolvimento e na aplicação de sistemas computacionais avançados capazes de processar grandes quantidades de dados a velocidades extremamente altas. A Computação de Alto Desempenho (High-Performance Computing, HPC) envolve o uso de supercomputadores e sistemas de processamento paralelo para resolver problemas complexos e intensivos em termos de processamento. Já a Computação em Nuvem refere-se ao uso de recursos de computação (como servidores, armazenamento, bancos de dados, redes, software) sobre a internet, oferecendo escalabilidade, flexibilidade e eficiência de custos.
 

@@ -13,6 +13,7 @@ categories:
 - ricardo_ajax
 tags: 
 - software_quality
+nav_next: true
 ---
 
 A Qualidade de Software constitui um dos pilares fundamentais na engenharia de software, refletindo diretamente na satisfação do usuário, na eficiência operacional e na sustentabilidade de sistemas computacionais. Este conceito abrange uma gama de atributos e critérios que determinam o quão bem um software atende às necessidades e expectativas dos seus usuários e stakeholders, além de aderir a padrões de desenvolvimento pré-estabelecidos.

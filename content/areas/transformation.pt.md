@@ -13,6 +13,7 @@ categories:
 - ricardo_ajax
 tags: 
 - digital_transformation
+nav_next: true
 ---
 Um forte uso das (TIC) Tecnologias de Informação e Comunicação originam-se nos anos 70, se popularizam nos anos 90, contribuindo para o aumento do consumo, melhoria da qualidade de vida e bem-estar das pessoas na sociedade da informação, conectada por vários serviços tanto de naturezas comercias, quanto governamentais. Neste contexto surgem termos como governo eletrônico, e-Governo e Governo Digital, além de preocupações sobre _Digital Divide_ (ou brecha digital), com reflexos na inclusão/exclusão digital como fatores de impacto na inclusão social de populações de várias naturezas. Os impactos causam necessidades de formular estratégias de transformação digital para as organizações e instituições envolvidas.
 

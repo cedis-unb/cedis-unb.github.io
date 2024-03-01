@@ -16,6 +16,7 @@ categories:
 tags: 
 - active_learning
 - education
+nav_next: true
 ---
 As metodologias ativas no ensino superior têm ganhado crescente relevância no cenário educacional contemporâneo, em grande parte devido aos avanços na ciência da aprendizagem. Essas abordagens pedagógicas colocam o estudante como protagonista do processo de construção do conhecimento, promovendo maior engajamento e interação com os conteúdos e, consequentemente, uma aprendizagem mais efetiva e duradoura. Ao incorporar os princípios da ciência da aprendizagem, as metodologias ativas buscam aliar as mais recentes descobertas das neurociências e da psicologia cognitiva, fomentando a criação de ambientes de ensino que favoreçam a construção de conhecimentos sólidos e a formação de profissionais mais capacitados e adaptáveis às constantes transformações do mercado de trabalho.
 

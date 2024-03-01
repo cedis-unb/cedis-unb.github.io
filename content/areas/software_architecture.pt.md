@@ -13,6 +13,7 @@ categories:
 - george_marsicano
 tags: 
 - software_architecture
+nav_next: true
 ---
 # Arquitetura de Software
 

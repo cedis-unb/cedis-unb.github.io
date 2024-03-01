@@ -14,6 +14,7 @@ tags:
 - ai
 - nlp
 - machine_learning
+nav_next: true
 ---
 Artificial Intelligence (AI) is a branch of computer science that seeks to develop systems capable of mimicking and enhancing human abilities such as reasoning, learning, and perception. One of its most fascinating subareas is Natural Language Processing (NLP), dedicated to understanding and interpreting human language, allowing machines and programs to interact with people more efficiently and intuitively. NLP encompasses everything from syntactic and semantic analysis of words to the generation of coherent and meaningful text, enabling the creation of virtual assistants, automatic translation systems, and other applications that facilitate communication and information access in our daily lives.
 

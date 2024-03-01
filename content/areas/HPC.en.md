@@ -12,6 +12,7 @@ categories:
 - daniel_sundfeld
 tags: 
 - hpc
+nav_next: true
 ---
 The area of High-Performance Computing (HPC) and Cloud Computing is a dynamic and essential field in computer science, focused on the development and application of advanced computing systems capable of processing large amounts of data at extremely high speeds. High-Performance Computing involves the use of supercomputers and parallel processing systems to solve complex and processing-intensive problems. Meanwhile, Cloud Computing refers to the use of computing resources (such as servers, storage, databases, networks, software) over the internet, offering scalability, flexibility, and cost efficiency.
 

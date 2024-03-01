@@ -13,6 +13,7 @@ categories:
 tags: 
 - teamwork
 - soft_skills
+nav_next: true
 ---
 ## Introdução
 A área de Trabalho em Equipe e Soft Skills é um campo interdisciplinar na gestão de projetos e desenvolvimento de software, enfatizando a importância das habilidades interpessoais e comportamentais para o sucesso de equipes de TI. Esta disciplina reconhece que, além das competências técnicas, habilidades como comunicação eficaz, colaboração, resolução de conflitos, liderança e empatia são cruciais para o funcionamento eficiente de equipes de software. O foco em soft skills é essencial para melhorar a dinâmica de equipe, a satisfação no trabalho e, consequentemente, a produtividade e a qualidade do software desenvolvido.

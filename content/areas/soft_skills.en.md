@@ -13,6 +13,7 @@ categories:
 tags: 
 - teamwork
 - soft_skills
+nav_next: true
 ---
 ## Introduction
 The area of Teamwork and Soft Skills is an interdisciplinary field in project management and software development, emphasizing the importance of interpersonal and behavioral skills for the success of IT teams. This discipline recognizes that, in addition to technical competencies, skills such as effective communication, collaboration, conflict resolution, leadership, and empathy are fundamental for the efficient operation of software teams. Focusing on soft skills is essential for improving team dynamics, job satisfaction, and consequently, the productivity and quality of the developed software.

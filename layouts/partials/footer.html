@@ -3,6 +3,27 @@
 <script src="/pagefind/pagefind.js"></script>
 {{ $js := resources.Get "js/darkmode.js" | js.Build }}
 <script src="{{ $js.RelPermalink }}" defer></script>
+{{ if .Page.Params.nav_next }}
+<div class="mx-auto bg-primary-50 border border-primary-200 rounded-lg p-4 my-8 max-w-4xl w-full">
+    <div class="flex justify-between items-center">
+        {{ if .Page.PrevInSection }}
+        <a href="{{ .Page.PrevInSection.RelPermalink }}" class="prev-card-link text-primary-500 hover:text-primary-700 transition duration-150 ease-in-out">
+            ← {{ delimit (first 4 (split .Page.PrevInSection.Title " ")) " " }}
+        </a>
+        {{ else }}
+        <span></span> <!-- Mantém o layout alinhado corretamente quando não há seção anterior -->
+        {{ end }}
+        {{ if .Page.NextInSection }}
+        <a href="{{ .Page.NextInSection.RelPermalink }}" class="next-card-link text-primary-500 hover:text-primary-700 transition duration-150 ease-in-out">
+            {{ delimit (first 4 (split .Page.NextInSection.Title " ")) " " }} →
+        </a>
+        {{ else }}
+        <span></span> <!-- Mantém o layout alinhado corretamente quando não há próxima seção -->
+        {{ end }}
+    </div>
+</div>
+{{ end }}
+
 <footer class="bg-gray-900">
     <div class="max-w-md px-4 py-12 mx-auto overflow-hidden sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
         <nav class="flex flex-wrap justify-center -mx-5 -my-2" aria-label="Footer">
