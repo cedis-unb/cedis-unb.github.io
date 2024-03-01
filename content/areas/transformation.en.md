@@ -13,6 +13,7 @@ categories:
 - ricardo_ajax
 tags: 
 - digital_transformation
+nav_next: true
 ---
 The strong use of Information and Communication Technologies (ICT) originated in the 70s, became popular in the 90s, contributing to increased consumption, improved quality of life, and well-being of people in the information society, connected by various services of both commercial and governmental natures. In this context, terms such as electronic government, e-Government, and Digital Government emerged, along with concerns about the _Digital Divide_, reflecting on digital inclusion/exclusion as factors impacting the social inclusion of various populations. The impacts necessitate formulating digital transformation strategies for the involved organizations and institutions.
 

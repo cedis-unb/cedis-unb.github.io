@@ -13,6 +13,7 @@ categories:
 - cristiane_ramos
 tags: 
 - learning_analytics
+nav_next: true
 ---
 
 *Learning Analytics* é uma área interdisciplinar que une análise de dados, ciência da computação e psicologia educacional para melhorar a aprendizagem e os ambientes educacionais. Ao coletar, analisar e interpretar dados sobre os aprendizes e seus contextos, oferece insights para personalizar a educação, identificar alunos que precisam de mais apoio e melhorar os resultados educacionais. Na gestão educacional, é essencial para fornecer dados importantes para decisões sobre recursos e estratégias de ensino, ajudando a identificar tendências e necessidades futuras. Sua integração representa uma mudança significativa na educação, tornando-a mais orientada a dados, responsiva e centrada no estudante.

@@ -12,6 +12,7 @@ categories:
 - fabiana_mendes
 tags: 
 - green_software
+nav_next: true
 ---
 ## Introduction
 Green Software Development, or Sustainable Software Development, is an emerging field in software engineering focused on creating software with minimal environmental impact. This discipline involves practices and strategies for developing software in an environmentally responsible manner, reducing energy and resource consumption, and minimizing the carbon footprint associated with the software lifecycle, from design to maintenance and disposal.

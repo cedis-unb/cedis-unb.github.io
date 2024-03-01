@@ -13,6 +13,7 @@ categories:
 - ricardo_ajax
 tags: 
 - verification_validation_testing
+nav_next: true
 ---
 ## Introdução
 A área de Verificação, Validação e Testes é uma disciplina crítica na engenharia de software, focada em garantir que os produtos de software atendam aos seus requisitos especificados e funcionem conforme esperado. Esta área abrange uma ampla gama de atividades, incluindo a verificação de que o software atende a todas as especificações de design e desenvolvimento, a validação de que o software atende às necessidades e expectativas do usuário final, e a realização de testes sistemáticos para identificar e corrigir defeitos.

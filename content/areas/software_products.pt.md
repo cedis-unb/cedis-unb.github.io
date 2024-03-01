@@ -12,6 +12,7 @@ categories:
 - andre_lanna
 tags: 
 - software_product_line
+nav_next: true
 ---
 ## Introdução
 A Engenharia de Linhas de Produto de Software é uma área especializada na engenharia de software, que se concentra no desenvolvimento eficiente de uma família de produtos de software relacionados. Esta disciplina envolve a criação de uma arquitetura comum e um conjunto de componentes compartilhados, permitindo a customização e a geração de múltiplas variantes de produtos de software a partir de uma base comum. Este campo é essencial para melhorar a reutilização de software, reduzir custos e tempo de desenvolvimento, e aumentar a qualidade e a consistência entre os produtos de software.

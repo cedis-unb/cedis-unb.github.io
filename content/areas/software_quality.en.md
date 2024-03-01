@@ -13,6 +13,7 @@ categories:
 - ricardo_ajax
 tags: 
 - software_quality
+nav_next: true
 ---
 
 Software Quality constitutes a fundamental pillar in software engineering, directly reflecting on user satisfaction, operational efficiency, and the sustainability of computer systems. This concept encompasses a range of attributes and criteria that determine how well software meets the needs and expectations of its users and stakeholders, in addition to adhering to pre-established development standards.

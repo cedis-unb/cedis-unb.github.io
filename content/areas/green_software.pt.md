@@ -12,6 +12,7 @@ categories:
 - fabiana_mendes
 tags: 
 - green_software
+nav_next: true
 ---
 ## Introdução
 A área de Green Software Development, ou Desenvolvimento de Software Sustentável, é um campo emergente na engenharia de software que se concentra na criação de software com um impacto ambiental mínimo. Esta disciplina envolve práticas e estratégias para desenvolver software de maneira ecologicamente responsável, reduzindo o consumo de energia e recursos, e minimizando a pegada de carbono associada ao ciclo de vida do software, desde o design até a manutenção e a disposição.
