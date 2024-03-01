@@ -1,0 +1,38 @@
+# Knowledge Areas
+projects:
+  - id: dfcris
+    name: 
+      en: "Project DFCris"
+      pt: "Projeto DFCris"
+    researchers:
+      - sergio_freitas
+      - andre_lanna
+
+  - id: project_cc
+    name: 
+      en: "Project Canal Ciência"
+      pt: "Projeto Canal Ciência"
+    researchers: 
+      - sergio_freitas
+      - cristiane_ramos
+
+  - id: project_gsd
+    name: 
+      en: "Project Green SD"
+      pt: "Projeto Green SD"
+    researchers:
+      - fabiana_mendes
+
+  - id: project_laguna
+    name: 
+      en: "Project Laguna"
+      pt: "Projeto Laguna"
+    researchers: 
+      - daniel_sundfeld
+
+  - id: project_td
+    name: 
+      en: "Project Digital Transformation"
+      pt: "Projeto Transformação Digital"
+    researchers: 
+      - george_marsicano

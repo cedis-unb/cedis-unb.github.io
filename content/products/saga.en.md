@@ -15,7 +15,7 @@ categories:
 tags: 
 - app
 - machine_learning
-- learning
+- learning_analytics
 ---
 Brasília, June 2021.
 

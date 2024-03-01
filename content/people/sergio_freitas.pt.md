@@ -16,7 +16,7 @@ tags:
 - nlp
 - machine_learning
 - active_learning
-- learning
+- learning_analytics
 - dfcris
 - project_cc
 ---
