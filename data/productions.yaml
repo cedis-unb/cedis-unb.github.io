@@ -4926,8 +4926,8 @@ items:
     pt: A methodology for the use of natural language processing in the search for information in digital documents
     en: A methodology for the use of natural language processing in the search for information in digital documents
   summary:
-    pt: 
-    en: 
+    pt: Esta dissertação apresenta uma nova metodologia para busca em textos digitais, fundamentada na Estrutura Nominal do Discurso (END), que aprimora a resolução de anáforas conforme proposto por Freitas. Diferentemente dos modelos tradicionais de Recuperação de Informação (RI), como o vetoriano e o LSI, que se baseiam em termos para representar e buscar documentos, esta abordagem considera a estrutura textual e o uso de anáforas, superando limitações dos modelos clássicos ao lidar com referências variadas ou omissões de entidades principais. A metodologia, inspirada no trabalho de Seibel Júnior, utiliza a END para criar a Estrutura Nominal do Discurso para Buscas (ENDB), focando em elementos centrais das frases para a representação de textos. Este processo não só permite uma representação textual mais fiel mas também melhora os resultados das buscas ao incluir todas as entidades textuais identificadas. O documento detalha a implementação da metodologia e os resultados experimentais, oferecendo uma contribuição significativa para a área de RI.
+    en: This dissertation presents a novel digital text search methodology grounded in the Nominal Structure of Discourse, expanding on anaphora resolution techniques proposed by Freitas [2005]. It employs these techniques to reveal the textual structure designed by authors, offering a unique approach to Information Retrieval (IR). Traditional IR models, like the vector space model and Latent Semantic Indexing, primarily use document terms for representation and search, often failing to account for the nuances of natural language, such as the use of anaphoras. These linguistic features can diminish the representational efficacy of classical models by complicating the identification of key entities within texts. To address these limitations, an alternative structural model that incorporates anaphora resolution into its computational representation of documents is introduced, based on Seibel Júnior's work [Seibel Júnior and Freitas, 2007]. This model, which focuses on the Discourse Nominal Structure for Searches (DNSS), aims to improve upon existing IR methodologies by ensuring a more nuanced and effective representation of documents. It does so by identifying and utilizing the central elements, or focuses, of text sentences, while also considering additional information provided by the Nominal Structure of Discourse (NSD). The dissertation elaborates on the development of this search structure, detailing the anaphora resolution process and its impact on enhancing the representation and search result quality of documents. Through the exploration of algorithms and experimentation, the study underscores the potential of this new methodology in advancing the field of Information Retrieval.
   book_title: ''
   volume: ''
   doi_isbn: ''
@@ -4943,7 +4943,7 @@ items:
   program: curso_ppgi
   advisors:
   - sergio_freitas
-  url: 
+  url: https://repositorio.ufes.br/server/api/core/bitstreams/2e7d36e2-7f29-4cca-8be4-ca4b3a7cd012/content
   year: 2009
 
 - authors:
@@ -5125,3 +5125,29 @@ items:
   advisors: []
   url: http://nilc.icmc.usp.br/til/til2003_English/oral/CristoFilho_Freitas_05.pdf
   year: 2003
+
+- authors:
+  - Ayrton Monteiro Cristo Filho
+  title:
+    pt: Interpretação computacional do futuro do pretérito simples em narrativas para o Português do Brasil
+    en: Computational interpretation of the simple future perfect tense in narratives for Brazilian Portuguese
+  summary:
+    pt: 
+    en: 
+  book_title: ''
+  volume: ''
+  doi_isbn: ''
+  journal_event: ''
+  location: ''
+  pages: ''
+  publisher: Biblioteca Central da Universidade Federal do Espirito Santo
+  tags:
+  - nlp
+  - ai
+  type: dissertation
+  program: curso_ppgi
+  advisors:
+  - berilhes_garcia
+  - sergio_freitas
+  url: http://www.dominiopublico.gov.br/pesquisa/DetalheObraForm.do?select_action=&co_obra=104831
+  year: 2004
