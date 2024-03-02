@@ -16,7 +16,8 @@ curso_esw: "Senior Project (Bachelor of Software Engineering) - University of Br
   (Brazil)"
 curso_esw2: "Bachelor of Software Engineering - University of Brasília (Brazil)"
 curso_ppca: "Master's Thesis in Applied Computing, University of Brasília (Brazil)"
-curso_ppgi: "Master's Thesis in Informatics, Federal University of Espirito Santo (Brazil)"
+curso_ppgi: "Master's Thesis in Informatics, Federal University of Espirito Santo
+  (Brazil)"
 curso_ppgee: "PhD Thesis, Federal University of Espirito Santo (Brazil)"
 curso_unb: "University of Brasília"
 
@@ -87,3 +88,4 @@ app: "App"
 #TAGS importadas automaticamente de data/*
 andrea_cabello: "Andrea Cabello"
 edna_canedo: "Edna Canedo"
+berilhes_garcia: "Berilhes Borges Garcia"
