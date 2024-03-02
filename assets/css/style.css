@@ -2780,6 +2780,14 @@ video {
   height: 100%;
 }
 
+.h-1 {
+  height: 0.25rem;
+}
+
+.h-12 {
+  height: 3rem;
+}
+
 .max-h-12 {
   max-height: 3rem;
 }
@@ -2814,6 +2822,10 @@ video {
 
 .w-screen {
   width: 100vw;
+}
+
+.w-10 {
+  width: 2.5rem;
 }
 
 .min-w-0 {
