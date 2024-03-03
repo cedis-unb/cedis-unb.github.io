@@ -16,6 +16,7 @@ tags:
 - dfcris
 - scientific_initiation
 - machine_learning
+- active
 ---
 ## Perfil Acadêmico e Profissional
 - Posição Atual: Graduando em Ciência da Computação, Instituto Federal de Educação Ciência e Tecnologia do Ceará.

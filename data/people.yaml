@@ -86,3 +86,35 @@ people:
       - learning_analytics
       - machine_learning
     year: 2023
+
+  - name: Luis Guilherme Gaboardi Lins
+    categories:
+      - people
+      - tcc
+    title:
+      pt: Use of LLMs in labor law dialogues.
+      en: Use of LLMs in labor law dialogues.
+    program: curso_esw2
+    advisors:
+      - sergio_freitas
+    tags:
+      - active
+      - machine_learning
+      - ai
+    year: 2024
+
+  - name: Alvaro Henrique de Sousa Gouvea
+    categories:
+      - people
+      - tcc
+    title:
+      pt: Use of LLMs in labor law dialogues.
+      en: Use of LLMs in labor law dialogues.
+    program: curso_esw2
+    advisors:
+      - sergio_freitas
+    tags:
+      - active
+      - machine_learning
+      - ai
+    year: 2024

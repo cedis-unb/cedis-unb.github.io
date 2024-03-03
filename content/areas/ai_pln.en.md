@@ -24,26 +24,31 @@ Artificial Intelligence (AI) is a branch of computer science that seeks to devel
 Professor and researcher in the field of Artificial Intelligence (AI) and Natural Language Processing (NLP), he holds a tenure position at the University of Brasília - UnB. Some of his contributions to the field of NLP include the automated interpretation of anaphoras, a pioneering study that deepened the understanding of how machines can process and interpret human text, contributing to the resolution of anaphoras and advancements in computational text comprehension. Moreover, his research in AI explores the integration of advanced computational methods to develop more intelligent and intuitive systems, enhancing human-computer interaction and promoting technological innovations in the field. Currently, he is a faculty member of the Software Engineering course and an active member of the Graduate Program in Applied Computing (PPCA). {{< link-interno "/people/sergio_freitas" "More information" >}}.
 
 ## Research Team
-- Luis Guilherme Gaboardi Lins, Use of LLMs in labor law dialogues.
-- Alvaro Henrique de Sousa Gouvea, Use of LLMs in labor law dialogues.
-- André Côrrea da Silva. Use of the LDA algorithm in identifying research themes. Project DFCris, start: 2022, status: ongoing.
-- Milena de Faria Silva. Dashboards for data visualization. Project DFCris, start: 2022, status: ongoing.
-- Renan Carneiro Batista. Identification of research area from titles and abstracts. Project DFCris, start: 2022, status: ongoing.
+{{< filterPeople caput="#### PhD" categories="phd_candidate" advisors="" tags="ai,nlp,machine_learning" notags="inactive">}}
+{{< filterPeople caput="#### Master's degree" categories="master_student" advisors="" tags="ai,nlp,machine_learning" notags="inactive">}}
+{{< filterPeople caput="#### Postgraduate Specialization" categories="specialization" advisors="" tags="ai,nlp,machine_learning" notags="inactive">}}
+{{< filterPeople caput="#### Undergraduate Research" categories="scientific_initiation" advisors="" tags="ai,nlp,machine_learning" notags="inactive">}}
+{{< filterPeople caput="#### Bachelor's Thesis" categories="tcc" advisors="" tags="ai,nlp,machine_learning" notags="inactive">}}
 
-## Previous Researchers
-- Edmilson Cosme da Silva. Prediction of dropout in face-to-face undergraduate courses at UnB using continuous flow academic data.
-- Leticia Karla Soares Rodrigues de Araujo. Identification of factors affecting dropout in Higher Education.
-- Amanda Emilly Muniz de Menezes. Identification of factors affecting dropout in Higher Education.
-- Cristovão de Lima Frinhani. Application of natural language processing: A support tool for the correction of essay questions.
-- Yeltsin Suares Gama. Intelligent learning support system.
-- Débora Zupeli Bossois. Text categorization methodology from unlabeled documents using an anaphora resolution process.
-- Francisco Santiago do Carmo Pereira. A methodology for the use of Natural Language Processing in the search for information in digital documents.
-- Luana Vieira Morellato. Computational Methodology for Identification of Nominal Phrases in Portuguese.
-- Hilário Seibel Júnior. Retrieval of relevant information in digital documents based on anaphora resolution.
-- Ayrton Monteiro Cristo Filho. Computational interpretation of the simple future perfect tense in narratives for Brazilian Portuguese.
+<div id="previous-collaborators" x-data="{ showPrevious: false }">
+    <h2 id="former-collaborators-title" @click="showPrevious = !showPrevious" class="text-xl font-bold mb-2 cursor-pointer flex items-center text-primary-900">
+      Previous Researchers
+      <svg :class="{'rotate-0': !showPrevious, 'rotate-180': showPrevious}" class="ml-2 h-5 w-5 transform transition-transform duration-200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#51C5CF"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
+    </h2>
+    <div x-show="showPrevious" x-cloak>
+    {{< publications caput="#### PhD" year="" types="phd" advisors="" notypes="" tags="ai,nlp,machine_learning" notags="active,sergio_freitas" >}}
+    {{< publications caput="#### Master's degree" year="" types="dissertation" advisors="" notypes="" tags="ai,nlp,machine_learning" notags="active" >}}
+    {{< publications caput="#### Postgraduate Specialization" year="" types="specialization" advisors="" notypes="" tags="ai,nlp,machine_learning" notags="active" >}}
+    {{< filterPeople caput="#### Undergraduate Research" categories="scientific_initiation" advisors="" tags="ai,nlp,machine_learning,inactive" notags="active">}}
+    {{< publications caput="#### Bachelor's Thesis" year="" types="tcc" advisors="" notypes="" tags="ai,nlp,machine_learning" notags="active" >}}
+    {{< backToTopBtn target="top" >}}
+    </div>
+
+  </div>
 
 ## Ongoing projects
 {{< postsByCategoriesTags categories="project,ai,nlp,machine_learning" >}}
+
 DFCris - Categorização e busca de área CAPES para documentos de informação científica
 Financiamento: FAP-DF, Início 2022, status: em andamento.
 

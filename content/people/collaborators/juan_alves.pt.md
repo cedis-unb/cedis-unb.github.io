@@ -18,6 +18,7 @@ tags:
 - project_cc
 - scientific_initiation
 - gamification
+- active
 ---
 ## Perfil Acadêmico e Profissional
 - Posição Atual: Graduando em Engenharia de Software, Universidade de Brasília. Iniciação científica em projeto de pesquisa.

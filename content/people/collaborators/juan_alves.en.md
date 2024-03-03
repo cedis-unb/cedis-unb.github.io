@@ -18,6 +18,7 @@ tags:
 - project_cc
 - scientific_initiation
 - gamification
+- active
 ---
 ## Academic and Professional Profile
 - Current Position: Undergraduate in Software Engineering, University of Brasília. Scientific initiation in a research project.

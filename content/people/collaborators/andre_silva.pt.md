@@ -16,6 +16,7 @@ tags:
 - dfcris
 - scientific_initiation
 - machine_learning
+- active
 ---
 ## Perfil Acadêmico e Profissional
 - Posição Atual: Graduando em Engenharia de Software, Universidade de Brasília. Iniciação científica em projeto de pesquisa.

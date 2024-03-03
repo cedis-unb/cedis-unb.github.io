@@ -24,18 +24,28 @@ A Inteligência Artificial (IA) é um ramo da ciência da computação que busca
 Professor e pesquisador na área de Inteligência Artificial (IA) e Processamento de Linguagem Natural (PLN), é professor Titular na Universidade de Brasília - UnB. Algumas de suas contribuições para o campo do PLN são a interpretação automatizada de anáforas, um estudo pioneiro que aprofundou a compreensão de como máquinas podem processar e interpretar texto humano, contribuindo para a resolução de anáforas e avanços na compreensão textual computacional. Além disso, suas pesquisas em IA exploram a integração de métodos computacionais avançados para desenvolver sistemas mais inteligentes e intuitivos, reforçando a interação humana-computador e promovendo inovações tecnológicas no campo. Atualmente, ele é docente do curso de Engenharia de Software e membro ativo do corpo docente do Programa de Pós-graduação em Computação Aplicada (PPCA). {{< link-interno "/people/sergio_freitas" "Mais informações" >}}.
 
 ## Equipe de Pesquisadores
-- Luis Guilherme Gaboardi Lins, Uso de LLMs em diálogos sobre direito trabalhista.
-- Alvaro Henrique de Sousa Gouvea, Uso de LLMs em diálogos sobre direito trabalhista.
-- André Côrrea da Silva. Uso do algoritmo LDA na identificação de temas de pesquisa. Projeto DFCris, início: 2022, status: em andamento.
-- Milena de Faria Silva. Dashboards para visualização de dados. Projeto DFCris, início: 2022, status: em andamento.
-- Renan Carneiro Batista. Identificação de área de pesquisa a partir de títulos e resumos. Projeto DFCris, início: 2022, status: em andamento.
+{{< filterPeople caput="#### PhD" categories="phd_candidate" advisors="" tags="ai,nlp,machine_learning" notags="inactive">}}
+{{< filterPeople caput="#### Master's degree" categories="master_student" advisors="" tags="ai,nlp,machine_learning" notags="inactive">}}
+{{< filterPeople caput="#### Postgraduate Specialization" categories="specialization" advisors="" tags="ai,nlp,machine_learning" notags="inactive">}}
+{{< filterPeople caput="#### Undergraduate Research" categories="scientific_initiation" advisors="" tags="ai,nlp,machine_learning" notags="inactive">}}
+{{< filterPeople caput="#### Bachelor's Thesis" categories="tcc" advisors="" tags="ai,nlp,machine_learning" notags="inactive">}}
 
-## Pesquisadores Anteriores
-- Edmilson Cosme da Silva. Previsão de evasão nos cursos de graduação presencial da UnB usando dados acadêmicos de fluxo contínuo.
-- Leticia Karla Soares Rodrigues de Araujo. Identificação de fatores que afetam a Evasão no Ensino Superior.
-- Amanda Emilly Muniz de Menezes. Identificação de fatores que afetam a Evasão no Ensino Superior.
-- Cristovão de Lima Frinhani. Aplicação de processamento de linguagem natural: Uma ferramenta de apoio à correção de questões dissertativas.
-- Yeltsin Suares Gama. Sistema inteligente de apoio ao aprendizado.
+<div id="previous-collaborators" x-data="{ showPrevious: false }">
+    <h2 id="former-collaborators-title" @click="showPrevious = !showPrevious" class="text-xl font-bold mb-2 cursor-pointer flex items-center text-primary-900">
+      Pesquisadores Anteriores
+      <svg :class="{'rotate-0': !showPrevious, 'rotate-180': showPrevious}" class="ml-2 h-5 w-5 transform transition-transform duration-200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#51C5CF"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
+    </h2>
+    <div x-show="showPrevious" x-cloak>
+    {{< publications caput="#### PhD" year="" types="phd" advisors="" notypes="" tags="ai,nlp,machine_learning" notags="active,sergio_freitas" >}}
+    {{< publications caput="#### Master's degree" year="" types="dissertation" advisors="" notypes="" tags="ai,nlp,machine_learning" notags="active" >}}
+    {{< publications caput="#### Postgraduate Specialization" year="" types="specialization" advisors="" notypes="" tags="ai,nlp,machine_learning" notags="active" >}}
+    {{< filterPeople caput="#### Undergraduate Research" categories="scientific_initiation" advisors="" tags="ai,nlp,machine_learning,inactive" notags="active">}}
+    {{< publications caput="#### Bachelor's Thesis" year="" types="tcc" advisors="" notypes="" tags="ai,nlp,machine_learning" notags="active" >}}
+    {{< backToTopBtn target="top" >}}
+    </div>
+
+  </div>
+
 
 ## Projetos em Andamento
 {{< postsByCategoriesTags categories="project,ai,nlp,machine_learning" >}}

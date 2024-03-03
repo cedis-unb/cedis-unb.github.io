@@ -197,11 +197,11 @@
     
     <!-- Verificação de Tags -->
     {{ if and $include (gt (len $filterTags) 0) (ne (index $filterTags 0) "") }}
-    {{ $tagsMatch := true }}
+    {{ $tagsMatch := false }}
     {{ range $filterTags }}
         {{ $currentTag := trim . " " }}
         {{ if not (in $thisPage.Params.tags $currentTag) }}
-        {{ $tagsMatch = false }}
+        {{ $tagsMatch = true }}
         {{ break }}
         {{ end }}
     {{ end }}
@@ -266,13 +266,13 @@
         {{ $thisPage := . }}
         {{ $include := true }}
 
-        <!-- Tags, Categorias, e 'Não Tags' -->
+        <!-- Verificação de Tags -->
         {{ if and $include (gt (len $filterTags) 0) (ne (index $filterTags 0) "") }}
-        {{ $tagsMatch := true }}
+        {{ $tagsMatch := false }}
         {{ range $filterTags }}
             {{ $currentTag := trim . " " }}
             {{ if not (in $thisPage.Params.tags $currentTag) }}
-            {{ $tagsMatch = false }}
+            {{ $tagsMatch = true }}
             {{ break }}
             {{ end }}
         {{ end }}
@@ -330,7 +330,7 @@
             <span> {{ $thisPage.Params.description }}</span>
             {{ end }}
             <!-- Exibição de advisors, tags, e o resumo com controle do Alpine.js -->
-            {{ if gt (len $thisPage.Params.advisors) 0 }}
+            {{ if and $thisPage.Params.advisors (gt (len $thisPage.Params.advisors) 0) }}
               {{ i18n "orientador" }}:
               {{ $totalAdvisors := len $thisPage.Params.advisors }}
               {{ range $index, $advisor := $thisPage.Params.advisors }}

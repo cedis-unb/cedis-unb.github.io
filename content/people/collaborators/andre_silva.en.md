@@ -17,6 +17,7 @@ tags:
 - dfcris
 - scientific_initiation
 - machine_learning
+- active
 ---
 ## Academic and Professional Profile
 - Current Position: Undergraduate in Software Engineering, University of Brasília. Engaged in scientific initiation in a research project. 
