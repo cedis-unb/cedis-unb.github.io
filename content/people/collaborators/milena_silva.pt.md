@@ -17,6 +17,7 @@ tags:
 - dfcris
 - scientific_initiation
 - machine_learning
+- active
 ---
 ## Perfil Acadêmico e Profissional
 - Posição Atual: Graduanda em Computação, Instituto Federal de Educação, Ciência e Tecnologia do Sul de Minas Gerais.

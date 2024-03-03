@@ -1244,30 +1244,6 @@ items:
   url: https://www.bdm.unb.br/handle/10483/30378
   year: 2022
 - authors:
-  - João Vítor Lopes de Farias
-  title:
-    pt: Gamificação com tema RPG para a disciplina Interação Humano-Computador
-    en: RPG-Themed Gamification for the Human-Computer Interaction Course
-  summary:
-    pt: ''
-    en: ''
-  book_title: ''
-  volume: ''
-  doi_isbn: ''
-  journal_event: ''
-  location: ''
-  pages: ''
-  publisher: ''
-  tags:
-  - gamification
-  - education
-  type: tcc
-  program: curso_esw
-  advisors:
-  - sergio_freitas
-  url: ''
-  year: 2022
-- authors:
   - Letícia Karla Soares Rodrigues de Araújo
   title:
     pt: Identificação de fatores que afetam a Evasão no Ensino Superior
@@ -3564,8 +3540,8 @@ items:
   pages: ''
   publisher: ''
   tags:
-  - education
   - learning_analytics
+  - ai
   type: tcc
   program: curso_esw
   advisors:
@@ -5151,3 +5127,28 @@ items:
   - sergio_freitas
   url: http://www.dominiopublico.gov.br/pesquisa/DetalheObraForm.do?select_action=&co_obra=104831
   year: 2004
+
+- authors:
+  - Sergio Antônio Andrade de Freitas
+  title:
+    pt: Deíticos e anáforas pronominais em diálogos
+    en: Deixis and pronominal anaphora in dialogs
+  summary:
+    pt: A proposta deste trabalho é implementar um conjunto de elementos do diálogo a decorrer entre dois agentes humanos. As anáforas pronominais e certos pronomes déiticos (eu, você, sua, seu, meu, minha), que eventualmente surgirem durante o diálogo, são resolvidas. Basicamente, este trabalho está dividido em quatro partes - 1. Estudo introdutório da Discourse Representation Theory (DRT) [KAM88, KAM90]. A DRT é um formalismo para a representação do discurso que utiliza modelos na avaliação semântica.
+    en: The proposal of this work is to implement a set of dialog elements expressed by two human agents. The pronominal anaphora and some deixis pronoums (in portuguese I, you, your, my) that eventually appear during the dialog are resolved. Basically, this work is divided in four parts - 1. An introdutory study of the Discourse Representation Theory (DRT) [KAM88, KAM90]. The DRT is a formalism for discourse representation that uses models for semantic evaluation of the representation structures. 
+  book_title: ''
+  volume: ''
+  doi_isbn: ''
+  journal_event: ''
+  location: ''
+  pages: ''
+  publisher: Biblioteca Central da Universidade Federal do Rio Grande do Sul
+  tags:
+  - sergio_freitas
+  - nlp
+  - ai
+  type: dissertation
+  program: curso_ppgi_ufrgs
+  advisors: []
+  url: https://www.lume.ufrgs.br/handle/10183/25178
+  year: 1993

@@ -1,1 +1,61 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cristiane_ramos on CEDIS</title><link>https://cedis.tec.br/pt/categories/cristiane_ramos/</link><description>Recent content in Cristiane_ramos on CEDIS</description><generator>Hugo -- gohugo.io</generator><language>pt</language><lastBuildDate>Fri, 01 Mar 2024 18:06:08 -0300</lastBuildDate><atom:link href="https://cedis.tec.br/pt/categories/cristiane_ramos/index.xml" rel="self" type="application/rss+xml"/><item><title>Learning Analytics e Gestão Educacional</title><link>https://cedis.tec.br/pt/areas/learning_analytics/</link><pubDate>Wed, 14 Feb 2024 02:18:30 -0300</pubDate><guid>https://cedis.tec.br/pt/areas/learning_analytics/</guid><description>Área interdisciplinar que une análise de dados, ciência da computação e psicologia educacional para melhorar a aprendizagem e os ambientes educacionais. Ao coletar, analisar e interpretar dados sobre os aprendizes e seus contextos, oferece insights para personalizar a educação, identificar alunos que precisam de mais apoio e melhorar os resultados educacionais.</description></item><item><title>Gamificação</title><link>https://cedis.tec.br/pt/areas/gamification/</link><pubDate>Wed, 14 Feb 2024 01:37:18 -0300</pubDate><guid>https://cedis.tec.br/pt/areas/gamification/</guid><description>A gamificação é um processo que utiliza elementos, técnicas e mecânicas de design de jogos em contextos não relacionados a jogos, com o objetivo de aumentar a motivação, a participação e o engajamento dos usuários. A gamificação tem sido aplicada em diversas áreas, como educação, marketing, saúde e treinamento corporativo.</description></item><item><title>Metodologias de aprendizagem ativa</title><link>https://cedis.tec.br/pt/areas/active_learning/</link><pubDate>Wed, 14 Feb 2024 01:37:18 -0300</pubDate><guid>https://cedis.tec.br/pt/areas/active_learning/</guid><description>As metodologias ativas no ensino superior têm ganhado crescente relevância no cenário educacional contemporâneo, em grande parte devido aos avanços na ciência da aprendizagem. Essas abordagens pedagógicas colocam o estudante como protagonista do processo de construção do conhecimento.</description></item><item><title>Qualidade de Software</title><link>https://cedis.tec.br/pt/areas/software_quality/</link><pubDate>Wed, 14 Feb 2024 01:37:18 -0300</pubDate><guid>https://cedis.tec.br/pt/areas/software_quality/</guid><description>Um dos pilares fundamentais na engenharia de software, reflete diretamente na satisfação do usuário, na eficiência operacional e na sustentabilidade de sistemas computacionais.</description></item><item><title>Verificação, Validação e Testes</title><link>https://cedis.tec.br/pt/areas/verival/</link><pubDate>Wed, 14 Feb 2024 00:43:11 -0300</pubDate><guid>https://cedis.tec.br/pt/areas/verival/</guid><description>A área de Verificação, Validação e Testes é uma disciplina crítica na engenharia de software, focada em garantir que os produtos de software atendam aos seus requisitos especificados e funcionem conforme esperado.</description></item><item><title>Projeto Canal Ciência</title><link>https://cedis.tec.br/pt/projects/canal_ciencia/</link><pubDate>Wed, 14 Feb 2024 17:08:50 -0300</pubDate><guid>https://cedis.tec.br/pt/projects/canal_ciencia/</guid><description>Projeto de pesquisa em parceria com o IBICT e financiado pela FINATEC, com objetivo de aprimorar a experiência dos usuários do Canal Ciência através do uso da gamificação.</description></item><item><title>SAGA</title><link>https://cedis.tec.br/pt/products/saga/</link><pubDate>Tue, 01 Jun 2021 01:37:18 -0300</pubDate><guid>https://cedis.tec.br/pt/products/saga/</guid><description>O Sistema de Acompanhamento e Apoio à Gestão Acadêmica - SAGA é uma ferramenta desenvolvida para auxiliar gestores acadêmicos no monitoramento de indicadores de cursos de graduação.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cristiane_ramos on CEDIS</title>
+    <link>http://localhost:1313/pt/categories/cristiane_ramos/</link>
+    <description>Recent content in Cristiane_ramos on CEDIS</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt</language>
+    <lastBuildDate>Fri, 01 Mar 2024 18:06:08 -0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/pt/categories/cristiane_ramos/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Learning Analytics e Gestão Educacional</title>
+      <link>http://localhost:1313/pt/areas/learning_analytics/</link>
+      <pubDate>Wed, 14 Feb 2024 02:18:30 -0300</pubDate>
+      <guid>http://localhost:1313/pt/areas/learning_analytics/</guid>
+      <description>Área interdisciplinar que une análise de dados, ciência da computação e psicologia educacional para melhorar a aprendizagem e os ambientes educacionais. Ao coletar, analisar e interpretar dados sobre os aprendizes e seus contextos, oferece insights para personalizar a educação, identificar alunos que precisam de mais apoio e melhorar os resultados educacionais.</description>
+    </item>
+    <item>
+      <title>Gamificação</title>
+      <link>http://localhost:1313/pt/areas/gamification/</link>
+      <pubDate>Wed, 14 Feb 2024 01:37:18 -0300</pubDate>
+      <guid>http://localhost:1313/pt/areas/gamification/</guid>
+      <description>A gamificação é um processo que utiliza elementos, técnicas e mecânicas de design de jogos em contextos não relacionados a jogos, com o objetivo de aumentar a motivação, a participação e o engajamento dos usuários. A gamificação tem sido aplicada em diversas áreas, como educação, marketing, saúde e treinamento corporativo.</description>
+    </item>
+    <item>
+      <title>Metodologias de aprendizagem ativa</title>
+      <link>http://localhost:1313/pt/areas/active_learning/</link>
+      <pubDate>Wed, 14 Feb 2024 01:37:18 -0300</pubDate>
+      <guid>http://localhost:1313/pt/areas/active_learning/</guid>
+      <description>As metodologias ativas no ensino superior têm ganhado crescente relevância no cenário educacional contemporâneo, em grande parte devido aos avanços na ciência da aprendizagem. Essas abordagens pedagógicas colocam o estudante como protagonista do processo de construção do conhecimento.</description>
+    </item>
+    <item>
+      <title>Qualidade de Software</title>
+      <link>http://localhost:1313/pt/areas/software_quality/</link>
+      <pubDate>Wed, 14 Feb 2024 01:37:18 -0300</pubDate>
+      <guid>http://localhost:1313/pt/areas/software_quality/</guid>
+      <description>Um dos pilares fundamentais na engenharia de software, reflete diretamente na satisfação do usuário, na eficiência operacional e na sustentabilidade de sistemas computacionais.</description>
+    </item>
+    <item>
+      <title>Verificação, Validação e Testes</title>
+      <link>http://localhost:1313/pt/areas/verival/</link>
+      <pubDate>Wed, 14 Feb 2024 00:43:11 -0300</pubDate>
+      <guid>http://localhost:1313/pt/areas/verival/</guid>
+      <description>A área de Verificação, Validação e Testes é uma disciplina crítica na engenharia de software, focada em garantir que os produtos de software atendam aos seus requisitos especificados e funcionem conforme esperado.</description>
+    </item>
+    <item>
+      <title>Projeto Canal Ciência</title>
+      <link>http://localhost:1313/pt/projects/canal_ciencia/</link>
+      <pubDate>Wed, 14 Feb 2024 17:08:50 -0300</pubDate>
+      <guid>http://localhost:1313/pt/projects/canal_ciencia/</guid>
+      <description>Projeto de pesquisa em parceria com o IBICT e financiado pela FINATEC, com objetivo de aprimorar a experiência dos usuários do Canal Ciência através do uso da gamificação.</description>
+    </item>
+    <item>
+      <title>SAGA</title>
+      <link>http://localhost:1313/pt/products/saga/</link>
+      <pubDate>Tue, 01 Jun 2021 01:37:18 -0300</pubDate>
+      <guid>http://localhost:1313/pt/products/saga/</guid>
+      <description>O Sistema de Acompanhamento e Apoio à Gestão Acadêmica - SAGA é uma ferramenta desenvolvida para auxiliar gestores acadêmicos no monitoramento de indicadores de cursos de graduação.</description>
+    </item>
+  </channel>
+</rss>
