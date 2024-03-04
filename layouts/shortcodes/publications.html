@@ -9,7 +9,7 @@
 {{ $advisors := split (.Get "advisors") "," }} 
 {{ $caput := .Get "caput"}}
 {{ $caputKey := .Get "caputKey" }}
-{{ $noShow := .Get "noShow"}} 
+{{ $countOnly := .Get "countOnly"}} 
 
 {{ $hasMatches := 0 }}
 {{ range $.Site.Data.productions.items }}
@@ -81,170 +81,183 @@
     {{ $hasMatches = add $hasMatches 1 }}
   {{ end }}
 
-{{end}}
+{{end}} 
 
-{{ if and $hasMatches (not $noShow) }}
-<div class="caput">
+{{ if $hasMatches }}
+
+  {{ $combined := "" }}
+
   {{/* Se apenas $caput existir */}}
   {{ if and $caput (not $caputKey) }}
-    {{ $caput | markdownify }}
+    {{ $combined = print $caput }}
   {{ end }}
-  
+
   {{/* Se apenas $caputKey existir */}}
   {{ if and $caputKey (not $caput) }}
-    {{ i18n $caputKey | markdownify }}
+    {{ $combined = print ($caputKey | i18n) }}
   {{ end }}
-  
+
   {{/* Se ambos existirem */}}
   {{ if and $caput $caputKey }}
-    {{ $combined := print ($caput) " " ($caputKey | i18n ) }}
-    {{ $combined | markdownify }}  
+    {{ $combined = print $caput " " ($caputKey | i18n) }}
   {{ end }}
-  </div>
 
-  <ol class="publications-lncs">
-    {{ range $.Site.Data.productions.items }}
-      {{ $includePublication := true }}
-
-      <!-- Aplica o filtro de ano, se um ano foi especificado -->
-      {{ if and (gt $year 0) (ne .year $year) }}
-        {{ $includePublication = false }}
-      {{ end }}
-
-      <!-- Adiciona o filtro de tipo, se tipos foram especificados -->
-      {{ if and $includePublication (gt (len $types) 0) (ne (index $types 0) "") }}
-        {{ $typeMatch := false }}
-        {{ if in $types .type }}
-          {{ $typeMatch = true }}
-        {{ end }}
-        {{ if not $typeMatch }}
-          {{ $includePublication = false }}
-        {{ end }}
-      {{ end }}
-
-      <!-- Verifica se as tags especificadas correspondem, se houver -->
-      {{ if and $includePublication (gt (len $tags) 0) (ne (index $tags 0) "") }}
-        {{ $tagMatch := false }}
-        {{ range .tags }}
-          {{ if in $tags . }}
-            {{ $tagMatch = true }}
-            {{ break }}
-          {{ end }}
-        {{ end }}
-        {{ if not $tagMatch }}
-          {{ $includePublication = false }}
-        {{ end }}
-      {{ end }}
-
-      {{/*  Verifica se os advisors especificados correspondem, se houver */}}
-      {{ if and $includePublication (gt (len $advisors) 0) (ne (index $advisors 0) "") }}
-        {{ $tagAdvisor := false }}
-        {{ range .advisors }}
-          {{ if in $advisors . }}
-            {{ $tagAdvisor = true }}
-            {{ break }}
-          {{ end }}
-        {{ end }}
-        {{ if not $tagAdvisor }}
-          {{ $includePublication = false }}
-        {{ end }}
-      {{ end }}
-
-      {{/* Filtro de exclusão baseado em excludeTags */}}
-      {{ if and $includePublication (gt (len $excludeTags) 0) (ne (index $excludeTags 0) "") }}
-        {{ range .tags }}
-          {{ if in $excludeTags . }}
-            {{/* Se uma excludeTag for encontrada, a publicação não deve ser incluída */}}
-            {{ $includePublication = false }}
-            {{ break }}
-          {{ end }}
-        {{ end }}
-      {{ end }}
-
-      {{/* Filtro de exclusão baseado em excludeTypes */}}
-      {{ if and $includePublication (gt (len $excludeTypes) 0) (ne (index $excludeTypes 0) "") }}
-        {{ if in $excludeTypes .type }}
-          {{/* Se o type da publicação está na lista de excludeTypes, não deve ser incluída */}}
-          {{ $includePublication = false }}
-        {{ end }}
-      {{ end }}
-
-
-      <!-- Faça a impressão do que passou no filtro -->
-      {{ if $includePublication }}
-        <li x-data="{ open: false }">
-          {{- range $index, $element := .authors -}}
-            {{- if $index }}, {{- end -}}
-            {{- $element -}}
-          {{- end -}},
-          <span>{{ if .url }}<a href="{{ .url }}" target="_blank" rel="noopener noreferrer">{{ end }}
-            {{ index .title $.Site.Language.Lang }}
-          {{ if .url }}</a>{{ end }}</span>
-          {{ if .program }}<span>. {{ .program | i18n }}</span>{{ end }}
-          {{- if eq .type "conference" -}}, in {{ .journal_event }}
-            {{ if .pages }}, p{{.pages }}{{- end -}}
-          {{- end -}}
-          {{- if eq .type "article" -}}, {{ .journal_event }} 
-            {{ if .volume }}, {{.volume }}{{- end -}}
-            {{ if .pages }}({{.pages }}){{- end -}}
-          {{- end -}}
-          {{- if eq .type "book" -}}, {{ .publisher }}{{- end -}}
-          {{- if .year -}}, {{ .year }}{{- end -}}
-
-          <!-- Exibição de advisors, tags, e o resumo com controle do Alpine.js -->
-          {{ if gt (len .advisors) 0 }}
-          {{ i18n "orientador" }}:
-          {{ $totalAdvisors := len .advisors }}
-          {{ range $index, $advisor := .advisors }}
-            {{ with index $.Site.Data.advisors.advisors $advisor }}
-              <a href="{{ .link | absLangURL }}">{{ .name }}</a>{{ if lt $index (sub $totalAdvisors 1) }},{{ end }}
-            {{ end }}
-          {{ end }}
-          {{ end }}
-
-          {{- if .doi_isbn -}}. DOI: <a href="https://doi.org/{{ .doi_isbn }}" target="_blank" rel="noopener noreferrer">{{ .doi_isbn }}</a>{{- end -}}
-
-          <!-- Exibição das tags, quando existirem -->
-          {{ $advisorsList := slice }}
-          {{ range $key, $value := $.Site.Data.advisors.advisors }}
-            {{ $advisorsList = $advisorsList | append $key }}
-          {{ end }}
-          
-          {{ $filteredTags := slice }}
-          {{ range .tags }}
-            {{ if and (not (in $advisorsList .)) (ne . "active") (ne . "inactive") }}
-              {{ $filteredTags = $filteredTags | append . }}
-            {{ end }}
-          {{ end }}
-          
-          {{ $total := len $filteredTags }}
-          {{ if gt $total 0 }}
-            . Tags:
-            {{ range $index, $tag := $filteredTags }}
-              {{ $tagLink := printf "/tags/%s" $tag | absLangURL }}
-              <a href="{{ $tagLink }}">{{ $tag | i18n }}</a>{{ if lt $index (sub $total 1) }}, {{ end }}
-            {{ end }}
-          {{ end }}
-
-          .
-          {{ if .summary }}
-          {{ $currentLangSummary := index .summary $.Site.Language.Lang }}
-          {{ if $currentLangSummary }}
-            <div>
-              <!-- Botão com a cor primária e texto em branco -->
-              <button @click="open = !open" class="bg-primary-500 text-white p-2 rounded cursor-pointer">
-                {{ i18n "abstract" }}
-              </button>
-              <!-- Div com texto usando uma cor neutra escura para melhor legibilidade -->
-              <div x-show="open" class="mt-2 pl-4 font-serif" x-cloak>
-                <span class="text-neutral-700 text-sm">{{ $currentLangSummary }}</span>
-              </div>
-            </div>
-          {{ end }}
-        {{ end }}
-
-        </li>
-      {{ end }}
+  {{/* Checando se $combined não está vazio para imprimir */}}
+  {{ if ne $combined "" }}
+    {{ if $countOnly }}
+      {{ $combined = print $combined " (" $hasMatches ")" }}
     {{ end }}
-  </ol>
+    <div class="caput">
+      {{ $combined | markdownify }}
+    </div>
+  {{ end }}
+
+
+  {{ if not ($countOnly) }}
+    <ol class="publications-lncs">
+      {{ range $.Site.Data.productions.items }}
+        {{ $includePublication := true }}
+
+        <!-- Aplica o filtro de ano, se um ano foi especificado -->
+        {{ if and (gt $year 0) (ne .year $year) }}
+          {{ $includePublication = false }}
+        {{ end }}
+
+        <!-- Adiciona o filtro de tipo, se tipos foram especificados -->
+        {{ if and $includePublication (gt (len $types) 0) (ne (index $types 0) "") }}
+          {{ $typeMatch := false }}
+          {{ if in $types .type }}
+            {{ $typeMatch = true }}
+          {{ end }}
+          {{ if not $typeMatch }}
+            {{ $includePublication = false }}
+          {{ end }}
+        {{ end }}
+
+        <!-- Verifica se as tags especificadas correspondem, se houver -->
+        {{ if and $includePublication (gt (len $tags) 0) (ne (index $tags 0) "") }}
+          {{ $tagMatch := false }}
+          {{ range .tags }}
+            {{ if in $tags . }}
+              {{ $tagMatch = true }}
+              {{ break }}
+            {{ end }}
+          {{ end }}
+          {{ if not $tagMatch }}
+            {{ $includePublication = false }}
+          {{ end }}
+        {{ end }}
+
+        {{/*  Verifica se os advisors especificados correspondem, se houver */}}
+        {{ if and $includePublication (gt (len $advisors) 0) (ne (index $advisors 0) "") }}
+          {{ $tagAdvisor := false }}
+          {{ range .advisors }}
+            {{ if in $advisors . }}
+              {{ $tagAdvisor = true }}
+              {{ break }}
+            {{ end }}
+          {{ end }}
+          {{ if not $tagAdvisor }}
+            {{ $includePublication = false }}
+          {{ end }}
+        {{ end }}
+
+        {{/* Filtro de exclusão baseado em excludeTags */}}
+        {{ if and $includePublication (gt (len $excludeTags) 0) (ne (index $excludeTags 0) "") }}
+          {{ range .tags }}
+            {{ if in $excludeTags . }}
+              {{/* Se uma excludeTag for encontrada, a publicação não deve ser incluída */}}
+              {{ $includePublication = false }}
+              {{ break }}
+            {{ end }}
+          {{ end }}
+        {{ end }}
+
+        {{/* Filtro de exclusão baseado em excludeTypes */}}
+        {{ if and $includePublication (gt (len $excludeTypes) 0) (ne (index $excludeTypes 0) "") }}
+          {{ if in $excludeTypes .type }}
+            {{/* Se o type da publicação está na lista de excludeTypes, não deve ser incluída */}}
+            {{ $includePublication = false }}
+          {{ end }}
+        {{ end }}
+
+
+        <!-- Faça a impressão do que passou no filtro -->
+        {{ if $includePublication }}
+          <li x-data="{ open: false }">
+            {{- range $index, $element := .authors -}}
+              {{- if $index }}, {{- end -}}
+              {{- $element -}}
+            {{- end -}},
+            <span>{{ if .url }}<a href="{{ .url }}" target="_blank" rel="noopener noreferrer">{{ end }}
+              {{ index .title $.Site.Language.Lang }}
+            {{ if .url }}</a>{{ end }}</span>
+            {{ if .program }}<span>. {{ .program | i18n }}</span>{{ end }}
+            {{- if eq .type "conference" -}}, in {{ .journal_event }}
+              {{ if .pages }}, p{{.pages }}{{- end -}}
+            {{- end -}}
+            {{- if eq .type "article" -}}, {{ .journal_event }} 
+              {{ if .volume }}, {{.volume }}{{- end -}}
+              {{ if .pages }}({{.pages }}){{- end -}}
+            {{- end -}}
+            {{- if eq .type "book" -}}, {{ .publisher }}{{- end -}}
+            {{- if .year -}}, {{ .year }}{{- end -}}
+
+            <!-- Exibição de advisors, tags, e o resumo com controle do Alpine.js -->
+            {{ if gt (len .advisors) 0 }}
+            {{ i18n "orientador" }}:
+            {{ $totalAdvisors := len .advisors }}
+            {{ range $index, $advisor := .advisors }}
+              {{ with index $.Site.Data.advisors.advisors $advisor }}
+                <a href="{{ .link | absLangURL }}">{{ .name }}</a>{{ if lt $index (sub $totalAdvisors 1) }},{{ end }}
+              {{ end }}
+            {{ end }}
+            {{ end }}
+
+            {{- if .doi_isbn -}}. DOI: <a href="https://doi.org/{{ .doi_isbn }}" target="_blank" rel="noopener noreferrer">{{ .doi_isbn }}</a>{{- end -}}
+
+            <!-- Exibição das tags, quando existirem -->
+            {{ $advisorsList := slice }}
+            {{ range $key, $value := $.Site.Data.advisors.advisors }}
+              {{ $advisorsList = $advisorsList | append $key }}
+            {{ end }}
+            
+            {{ $filteredTags := slice }}
+            {{ range .tags }}
+              {{ if and (not (in $advisorsList .)) (ne . "active") (ne . "inactive") }}
+                {{ $filteredTags = $filteredTags | append . }}
+              {{ end }}
+            {{ end }}
+            
+            {{ $total := len $filteredTags }}
+            {{ if gt $total 0 }}
+              . Tags:
+              {{ range $index, $tag := $filteredTags }}
+                {{ $tagLink := printf "/tags/%s" $tag | absLangURL }}
+                <a href="{{ $tagLink }}">{{ $tag | i18n }}</a>{{ if lt $index (sub $total 1) }}, {{ end }}
+              {{ end }}
+            {{ end }}
+
+            .
+            {{ if .summary }}
+            {{ $currentLangSummary := index .summary $.Site.Language.Lang }}
+            {{ if $currentLangSummary }}
+              <div>
+                <!-- Botão com a cor primária e texto em branco -->
+                <button @click="open = !open" class="bg-primary-500 text-white p-2 rounded cursor-pointer">
+                  {{ i18n "abstract" }}
+                </button>
+                <!-- Div com texto usando uma cor neutra escura para melhor legibilidade -->
+                <div x-show="open" class="mt-2 pl-4 font-serif" x-cloak>
+                  <span class="text-neutral-700 text-sm">{{ $currentLangSummary }}</span>
+                </div>
+              </div>
+            {{ end }}
+          {{ end }}
+
+          </li>
+        {{ end }}
+      {{ end }}
+    </ol>
+  {{ end }}
 {{ end }}

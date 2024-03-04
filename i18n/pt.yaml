@@ -12,6 +12,9 @@ backToTop: "Voltar ao Topo"
 seemore: "Veja mais sobre"
 abstract: "Resumo"
 searchPlaceholder: "Procurar"
+publications: "Publicações"
+
+# Cursos
 curso_esw: "Trabalho de Conclusão de Curso (Bacharelado em Engenharia de Software)
   - UnB"
 curso_esw2: "Bacharelado em Engenharia de Software - UnB"
@@ -40,6 +43,20 @@ software_requirements: "Engenharia de Requisitos"
 soft_skills: "Habilidades Socioemocionais"
 teamwork: "Trabalho em Equipe"
 verification_validation_testing: "Verificação, Validação e Testes"
+
+# Areas topic sections
+area_coordinator: "Sobre o coordenador da área"
+area_coordinators: "Sobre os coordenadores da área"
+area_more_about: "Mais sobre o coordenador"
+area_more_about_a: "Mais sobre a coordenadora"
+area_research_team: "Equipe de pesquisa"
+area_previous_researchers: "Pesquisadores anteriores"
+area_ongoing_projets: "Projetos em andamento"
+area_publications_productions: "Publicações e produções"
+area_publications: "Publicações"
+area_course_and_classes: "Cursos e aulas"
+area_useful_link: "Links e recursos úteis"
+area_contact: "Contato e colaboração"
 
 #Tipos de participação
 researcher: "Pesquisadores"

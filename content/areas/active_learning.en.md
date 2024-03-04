@@ -18,18 +18,28 @@ tags:
 - education
 nav_next: true
 ---
+<div id="top"></div>
 
-## About the Area Coordinators
+Active learning methodologies in higher education have gained increasing relevance in the contemporary educational landscape, largely due to advances in the science of learning. These pedagogical approaches position the student as the protagonist of the knowledge construction process, promoting greater engagement and interaction with the content and, consequently, more effective and lasting learning. By incorporating the principles of the science of learning, active methodologies aim to align with the latest discoveries in neuroscience and cognitive psychology, fostering the creation of teaching environments that favor the construction of solid knowledge and the training of professionals more capable and adaptable to the constant transformations of the job market.
+
+## {{< i18n "area_coordinators" >}}
 
 **Prof. Cristiane Soares Ramos**
-
-A distinguished academic in the field of Active Learning Methodologies, with a solid foundation in Software Engineering and Knowledge Management. Serving as a professor in the Software Engineering course at the University of Brasília, she has significantly contributed to the advancement of education and research in software. She is currently a member of the management committee of the Learning for the 3rd Millennium program (A3M). {{< link-interno "/people/cristiane_ramos" "More information" >}}.
+<div style="margin-left: 20px;">
+A distinguished academic in the field of Active Learning Methodologies, with a solid foundation in Software Engineering and Knowledge Management. Serving as a professor in the Software Engineering course at the University of Brasília, she has significantly contributed to the advancement of education and research in software. She is currently a member of the management committee of the Learning for the 3rd Millennium program (A3M). 
+<br>
+{{< link-interno "/people/cristiane_ramos" "More about the coordinator" >}}
+</div>
 
 **Prof. Sergio Antônio Andrade de Freitas**
+<div style="margin-left: 20px;">
+An academic in the field of Active Learning Methodologies and a faculty member at the University of Brasília - UnB, he teaches in the Software Engineering course. Throughout his academic career, he has held significant administrative roles, including Dean of Undergraduate Studies and director of the Distance Education Center (CEAD). His dedication to advancing knowledge in Active Methodologies, both in Engineering and Computing, along with his contributions in Learning Analytics, highlight his expertise and commitment to educational innovation. He is currently the president of the management committee of the Learning for the 3rd Millennium program (A3M). 
+<br>
+{{< link-interno "/people/sergio_freitas" "More about the coordinator" >}}
+</div>
 
-An academic in the field of Active Learning Methodologies and a faculty member at the University of Brasília - UnB, he teaches in the Software Engineering course. Throughout his academic career, he has held significant administrative roles, including Dean of Undergraduate Studies and director of the Distance Education Center (CEAD). His dedication to advancing knowledge in Active Methodologies, both in Engineering and Computing, along with his contributions in Learning Analytics, highlight his expertise and commitment to educational innovation. He is currently the president of the management committee of the Learning for the 3rd Millennium program (A3M). {{< link-interno "/people/sergio_freitas" "More information" >}}.
+## {{< i18n "area_research_team" >}}
 
-## Research Team
 {{< filterPeople caput="#### " caputKey="researcher" categories="researcher" advisors="" tags="active_learning,education" notags="inactive" nocats="cristiane_ramos,sergio_freitas">}}
 {{< filterPeople caput="#### " caputKey="phd_candidate" categories="phd_candidate" advisors="" tags="active_learning,education" notags="inactive">}}
 {{< filterPeople caput="#### " caputKey="master_student" categories="master_student" advisors="" tags="active_learning,education" notags="inactive">}}
@@ -39,7 +49,7 @@ An academic in the field of Active Learning Methodologies and a faculty member a
 
 <div id="previous-collaborators" x-data="{ showPrevious: false }">
     <h2 id="former-collaborators-title" @click="showPrevious = !showPrevious" class="text-xl font-bold mb-2 cursor-pointer flex items-center text-primary-900">
-      {{< i18n "previous_researchers" >}}
+      {{< i18n "area_previous_researchers" >}}
       <svg :class="{'rotate-0': !showPrevious, 'rotate-180': showPrevious}" class="ml-2 h-5 w-5 transform transition-transform duration-200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#51C5CF"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
     </h2>
     <div x-show="showPrevious" x-cloak>
@@ -53,7 +63,7 @@ An academic in the field of Active Learning Methodologies and a faculty member a
   </div>
 
 
-## Ongoing Projects
+## {{< i18n "area_ongoing_projets" >}}
 
 - **Teaching Project, "Software Development" Course, Prof. Sérgio Freitas:** Revitalized through gamification "Dawn Feudal" and inspired by a feudal scenario and based on the Octalysis model, this approach transforms learning into an interactive journey, where students face practical software development challenges, promoting skills like critical thinking and collaboration. The playful experience not only engages students but also prepares them for real-world software challenges.
 Available resources: MS Power Apps mobile app, SharePoint site, Power BI dashboards, and a thematic player's guide, all integrated into the Microsoft 365 platform.
@@ -63,29 +73,29 @@ Start: 2021, status: ongoing.
 Available resources: MS Power Apps mobile app, SharePoint site, and a thematic player's guide, all integrated into the Microsoft 365 platform.
 Start: 2022, status: ongoing.
 
-## Publications and Productions
+## {{< i18n "area_publications_productions" >}}
 
 <div id="npublications-section" x-data="{ showPublications: false }">
     <h2 id="npublications-title" @click="showPublications = !showPublications" class="text-xl font-bold mb-2 cursor-pointer flex items-center text-primary-900">
-      {{< npublications caput="Publications" year="" type="" notypes="" tags="active_learning,education" notags="" >}}
+      {{< publications countOnly=true caputKey="publications" year="" type="" notypes="" tags="active_learning,education" notags="" >}}
       <svg :class="{'rotate-0': !showPublications, 'rotate-180': showPublications}" class="ml-2 h-5 w-5 transform transition-transform duration-200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#51C5CF"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
     </h2>
     <div x-show="showPublications" x-cloak>
       {{< publications year="" type="" notypes="" tags="active_learning,education" notags="" >}} 
+      {{< backToTopBtn target="top" >}}
     </div>
 </div>
 
-### Courses / Classes
+### {{< i18n "area_course_and_classes" >}}
 
 1. FREITAS, Sergio A. A.; RAMOS, CRISTIANE SOARES; MORTARI, Márcia R.; VIANA, Diane M.; BESSA, Eduardo. *Workshop - Learning Indicators*, 2022. (Short course/Other).
 
 2. *Fundamentals of Computer Architecture, Gamified as "Knowledge Battle"*: The course restructured as "Knowledge Battle", a gamified educational experience. This innovative format, based on the concepts of McGonigal and the Octalysis framework, transforms the classroom into an interactive learning space. Students participate in knowledge duels, answering questions about topics from the discipline, and earn "coins" based on the quality of their responses. The contents are previously available through the textbooks adopted in the discipline, encouraging prior study. Gamification proved effective in increasing student engagement and enjoyment in the learning process. 2015. Author: Sergio Freitas. Resources available: Standardized forms for monitoring duels and spreadsheets for identifying similar performance profiles. Start: 2015, concluded in 2017.
 
-### Contact and Collaboration
+### {{< i18n "area_useful_link" >}}
+- [Learning for the 3rd Millennium Program (A3M)](http://a3m.unb.br/) at the University of Brasília.
 
-- Email for information and team contact: sergiofreitas@unb.br or cristanesramos@unb.br.
+## {{< i18n "area_contact" >}}
+- Email for information and team contact: [cristanesramos@unb.br](cristanesramos@unb.br) or [sergiofreitas@unb.br](sergiofreitas@unb.br).
 
-### Useful Links and Resources
-
-- *Learning for the 3rd Millennium Program (A3M)* at the University of Brasília.
 {{< tags >}}
