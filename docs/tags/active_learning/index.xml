@@ -6,7 +6,7 @@
     <description>Recent content in Active_learning on CEDIS</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 01 Mar 2024 18:17:14 -0300</lastBuildDate>
+    <lastBuildDate>Sun, 03 Mar 2024 21:55:12 -0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/active_learning/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Active Learning Methodologies</title>
@@ -23,10 +23,24 @@
       <description>Full Professor at the University of Brasília (UnB), working in the undergraduate Software Engineering program and the Graduate Program in Applied Computing.</description>
     </item>
     <item>
+      <title>George Marsicano Correa</title>
+      <link>http://localhost:1313/people/george_marsicano/</link>
+      <pubDate>Wed, 14 Feb 2024 00:48:51 -0300</pubDate>
+      <guid>http://localhost:1313/people/george_marsicano/</guid>
+      <description>Associate Professor at the University of Brasília (UnB), working in the undergraduate Software Engineering program and the Graduate Program in Applied Computing.</description>
+    </item>
+    <item>
       <title>Cristiane Soares Ramos</title>
       <link>http://localhost:1313/people/cristiane_ramos/</link>
       <pubDate>Wed, 14 Feb 2024 00:44:02 -0300</pubDate>
       <guid>http://localhost:1313/people/cristiane_ramos/</guid>
+      <description>Professor at the University of Brasília (UnB), working in the undergraduate Software Engineering program.</description>
+    </item>
+    <item>
+      <title>Ricardo Ajax Dias Kosloski</title>
+      <link>http://localhost:1313/people/ricardo_ajax/</link>
+      <pubDate>Wed, 14 Feb 2024 00:43:11 -0300</pubDate>
+      <guid>http://localhost:1313/people/ricardo_ajax/</guid>
       <description>Professor at the University of Brasília (UnB), working in the undergraduate Software Engineering program.</description>
     </item>
     <item>
