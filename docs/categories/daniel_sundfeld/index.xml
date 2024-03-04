@@ -6,7 +6,7 @@
     <description>Recent content in Daniel_sundfeld on CEDIS</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 01 Mar 2024 18:06:08 -0300</lastBuildDate>
+    <lastBuildDate>Sun, 03 Mar 2024 21:55:12 -0300</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/daniel_sundfeld/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>High-Performance Computing and Cloud Computing</title>
@@ -21,6 +21,13 @@
       <pubDate>Wed, 14 Feb 2024 02:59:29 -0300</pubDate>
       <guid>http://localhost:1313/projects/laguna/</guid>
       <description>This project aims to extend the massive processing of a data lake using a cloud architecture, utilizing Amazon Web Services (AWS) as the provider.</description>
+    </item>
+    <item>
+      <title>Daniel Sundfeld Lima</title>
+      <link>http://localhost:1313/people/daniel_lima/</link>
+      <pubDate>Wed, 14 Feb 2024 00:46:38 -0300</pubDate>
+      <guid>http://localhost:1313/people/daniel_lima/</guid>
+      <description>Associate Professor at the University of Brasília (UnB), working in the undergraduate Software Engineering program.</description>
     </item>
   </channel>
 </rss>

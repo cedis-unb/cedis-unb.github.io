@@ -6,7 +6,7 @@
     <description>Recent content in Cristiane_ramos on CEDIS</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt</language>
-    <lastBuildDate>Sun, 03 Mar 2024 19:10:52 -0300</lastBuildDate>
+    <lastBuildDate>Sun, 03 Mar 2024 21:55:12 -0300</lastBuildDate>
     <atom:link href="http://localhost:1313/pt/categories/cristiane_ramos/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Learning Analytics e Gestão Educacional</title>
@@ -56,6 +56,13 @@
       <pubDate>Tue, 01 Jun 2021 01:37:18 -0300</pubDate>
       <guid>http://localhost:1313/pt/products/saga/</guid>
       <description>O Sistema de Acompanhamento e Apoio à Gestão Acadêmica - SAGA é uma ferramenta desenvolvida para auxiliar gestores acadêmicos no monitoramento de indicadores de cursos de graduação.</description>
+    </item>
+    <item>
+      <title>Cristiane Soares Ramos</title>
+      <link>http://localhost:1313/pt/people/cristiane_ramos/</link>
+      <pubDate>Wed, 14 Feb 2024 00:44:02 -0300</pubDate>
+      <guid>http://localhost:1313/pt/people/cristiane_ramos/</guid>
+      <description>Professora da Universidade de Brasília (UnB), atua no curso de graduação em Engenharia de Software​​.</description>
     </item>
   </channel>
 </rss>

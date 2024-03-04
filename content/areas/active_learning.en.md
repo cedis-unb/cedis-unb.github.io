@@ -30,24 +30,24 @@ A distinguished academic in the field of Active Learning Methodologies, with a s
 An academic in the field of Active Learning Methodologies and a faculty member at the University of Brasília - UnB, he teaches in the Software Engineering course. Throughout his academic career, he has held significant administrative roles, including Dean of Undergraduate Studies and director of the Distance Education Center (CEAD). His dedication to advancing knowledge in Active Methodologies, both in Engineering and Computing, along with his contributions in Learning Analytics, highlight his expertise and commitment to educational innovation. He is currently the president of the management committee of the Learning for the 3rd Millennium program (A3M). {{< link-interno "/people/sergio_freitas" "More information" >}}.
 
 ## Research Team
-{{< filterPeople caput="#### Researchers" categories="researcher" advisors="" tags="active_learning,education" notags="inactive" nocats="cristiane_ramos,sergio_freitas">}}
-{{< filterPeople caput="#### PhD" categories="phd_candidate" advisors="" tags="active_learning,education" notags="inactive">}}
-{{< filterPeople caput="#### Master's degree" categories="master_student" advisors="" tags="active_learning,education" notags="inactive">}}
-{{< filterPeople caput="#### Postgraduate Specialization" categories="specialization" advisors="" tags="active_learning,education" notags="inactive">}}
-{{< filterPeople caput="#### Undergraduate Research" categories="scientific_initiation" advisors="" tags="active_learning,education" notags="inactive">}}
-{{< filterPeople caput="#### Bachelor's Thesis" categories="tcc" advisors="" tags="active_learning,education" notags="inactive">}}
+{{< filterPeople caput="#### " caputKey="researcher" categories="researcher" advisors="" tags="active_learning,education" notags="inactive" nocats="cristiane_ramos,sergio_freitas">}}
+{{< filterPeople caput="#### " caputKey="phd_candidate" categories="phd_candidate" advisors="" tags="active_learning,education" notags="inactive">}}
+{{< filterPeople caput="#### " caputKey="master_student" categories="master_student" advisors="" tags="active_learning,education" notags="inactive">}}
+{{< filterPeople caput="#### " caputKey="specialization" categories="specialization" advisors="" tags="active_learning,education" notags="inactive">}}
+{{< filterPeople caput="#### " caputKey="scientific_initiation" categories="scientific_initiation" advisors="" tags="active_learning,education" notags="inactive">}}
+{{< filterPeople caput="#### " caputKey="tcc" categories="tcc" advisors="" tags="active_learning,education" notags="inactive">}}
 
 <div id="previous-collaborators" x-data="{ showPrevious: false }">
     <h2 id="former-collaborators-title" @click="showPrevious = !showPrevious" class="text-xl font-bold mb-2 cursor-pointer flex items-center text-primary-900">
-      Previous Researchers
+      {{< i18n "previous_researchers" >}}
       <svg :class="{'rotate-0': !showPrevious, 'rotate-180': showPrevious}" class="ml-2 h-5 w-5 transform transition-transform duration-200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#51C5CF"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
     </h2>
     <div x-show="showPrevious" x-cloak>
-    {{< publications caput="#### PhD" year="" types="phd" advisors="" notypes="" tags="active_learning,education" notags="active,sergio_freitas" >}}
-    {{< publications caput="#### Master's degree" year="" types="dissertation" advisors="" notypes="" tags="active_learning,education" notags="active,sergio_freitas" >}}
-    {{< publications caput="#### Postgraduate Specialization" year="" types="specialization" advisors="" notypes="" tags="active_learning,education" notags="active" >}}
-    {{< filterPeople caput="#### Undergraduate Research" categories="scientific_initiation" advisors="" tags="active_learning,education,inactive" notags="active">}}
-    {{< publications caput="#### Bachelor's Thesis" year="" types="tcc" advisors="" notypes="" tags="active_learning,education" notags="active" >}}
+    {{< publications caput="#### " caputKey="phd_candidate"  year="" types="phd" advisors="" notypes="" tags="active_learning,education" notags="active,sergio_freitas" >}}
+    {{< publications caput="#### " caputKey="master_student" year="" types="dissertation" advisors="" notypes="" tags="active_learning,education" notags="active,sergio_freitas" >}}
+    {{< publications caput="#### " caputKey="specialization" year="" types="specialization" advisors="" notypes="" tags="active_learning,education" notags="active" >}}
+    {{< filterPeople caput="#### " caputKey="scientific_initiation" categories="scientific_initiation" advisors="" tags="active_learning,education,inactive" notags="active">}}
+    {{< publications caput="#### " caputKey="tcc" year="" types="tcc" advisors="" notypes="" tags="active_learning,education" notags="active" >}}
     {{< backToTopBtn target="top" >}}
     </div>
   </div>

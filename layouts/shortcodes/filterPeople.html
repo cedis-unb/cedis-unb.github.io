@@ -1,4 +1,5 @@
 {{ $caput := .Get "caput" }}
+{{ $caputKey := .Get "caputKey" }}
 {{ $showSummary := .Get "showSummary" | default true }}
 {{ $showDescription := .Get "showDescription" | default true }}
 {{ $filterTags := split (.Get "tags") "," }}
@@ -82,11 +83,24 @@
 
 <div>
   {{ if $hasMatches }}
-    {{ if $caput }}
-      <div class="caput-content">
-          {{ $caput | markdownify }}
-      </div>
+    <div class="caput">
+    {{/* Se apenas $caput existir */}}
+    {{ if and $caput (not $caputKey) }}
+      {{ $caput | markdownify }}
     {{ end }}
+    
+    {{/* Se apenas $caputKey existir */}}
+    {{ if and $caputKey (not $caput) }}
+      {{ i18n $caputKey | markdownify }}
+    {{ end }}
+    
+    {{/* Se ambos existirem */}}
+    {{ if and $caput $caputKey }}
+      {{ $combined := print ($caput) " " ($caputKey | i18n ) }}
+      {{ $combined | markdownify }}     
+    {{ end }}
+    </div>
+
     <ul>
     {{ range sort $.Site.Data.people.people "year" "desc" }}
       {{ $include := true }}
@@ -291,8 +305,24 @@
 {{ end }}
 
 {{ if $hasMatches2  }}
-  {{ if and $caput (not $hasMatches) }}
-    <div class="caput">{{ $caput | markdownify }}</div>
+  {{ if not $hasMatches }}
+    <div class="caput">
+      {{/* Se apenas $caput existir */}}
+      {{ if and $caput (not $caputKey) }}
+        {{ $caput | markdownify }}
+      {{ end }}
+      
+      {{/* Se apenas $caputKey existir */}}
+      {{ if and $caputKey (not $caput) }}
+        {{ i18n $caputKey | markdownify }}
+      {{ end }}
+      
+      {{/* Se ambos existirem */}}
+      {{ if and $caput $caputKey }}
+        {{ $combined := print ($caput) " " ($caputKey | i18n ) }}
+        {{ $combined | markdownify }}      
+      {{ end }}
+    </div>
   {{ end }}
   <ul>
   {{ $currentPageKey := $.Page.TranslationKey }}

@@ -6,7 +6,7 @@
     <description>Recent content in Sergio_freitas on CEDIS</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 03 Mar 2024 19:10:52 -0300</lastBuildDate>
+    <lastBuildDate>Sun, 03 Mar 2024 22:10:52 -0300</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/sergio_freitas/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Learning Analytics and Educational Management</title>
@@ -70,6 +70,13 @@
       <pubDate>Tue, 01 Jun 2021 01:37:18 -0300</pubDate>
       <guid>http://localhost:1313/products/saga/</guid>
       <description>The Academic Management Support System - SAGA is a tool developed to assist academic managers in monitoring indicators for undergraduate courses.</description>
+    </item>
+    <item>
+      <title>Sergio Antônio Andrade de Freitas</title>
+      <link>http://localhost:1313/people/sergio_freitas/</link>
+      <pubDate>Wed, 14 Feb 2024 00:49:57 -0300</pubDate>
+      <guid>http://localhost:1313/people/sergio_freitas/</guid>
+      <description>Full Professor at the University of Brasília (UnB), working in the undergraduate Software Engineering program and the Graduate Program in Applied Computing.</description>
     </item>
   </channel>
 </rss>

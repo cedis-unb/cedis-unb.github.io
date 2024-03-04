@@ -7,7 +7,8 @@
 {{ $excludeTags := split (.Get "notags") "," }} 
 {{ $excludeTypes := split (.Get "notypes") "," }} 
 {{ $advisors := split (.Get "advisors") "," }} 
-{{ $caput := .Get "caput"}} 
+{{ $caput := .Get "caput"}}
+{{ $caputKey := .Get "caputKey" }}
 {{ $noShow := .Get "noShow"}} 
 
 {{ $hasMatches := 0 }}
@@ -83,11 +84,24 @@
 {{end}}
 
 {{ if and $hasMatches (not $noShow) }}
-  {{ if $caput }}
-    <div class="caput-content">
-        {{ $caput | markdownify }}
-    </div>
+<div class="caput">
+  {{/* Se apenas $caput existir */}}
+  {{ if and $caput (not $caputKey) }}
+    {{ $caput | markdownify }}
   {{ end }}
+  
+  {{/* Se apenas $caputKey existir */}}
+  {{ if and $caputKey (not $caput) }}
+    {{ i18n $caputKey | markdownify }}
+  {{ end }}
+  
+  {{/* Se ambos existirem */}}
+  {{ if and $caput $caputKey }}
+    {{ $combined := print ($caput) " " ($caputKey | i18n ) }}
+    {{ $combined | markdownify }}  
+  {{ end }}
+  </div>
+
   <ol class="publications-lncs">
     {{ range $.Site.Data.productions.items }}
       {{ $includePublication := true }}
