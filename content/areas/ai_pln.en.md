@@ -20,8 +20,11 @@ Artificial Intelligence (AI) is a branch of computer science that seeks to devel
 
 ## About the Coordinator
 **Prof. Sergio Antônio Andrade de Freitas**
-
-Professor and researcher in the field of Artificial Intelligence (AI) and Natural Language Processing (NLP), he holds a tenure position at the University of Brasília - UnB. Some of his contributions to the field of NLP include the automated interpretation of anaphoras, a pioneering study that deepened the understanding of how machines can process and interpret human text, contributing to the resolution of anaphoras and advancements in computational text comprehension. Moreover, his research in AI explores the integration of advanced computational methods to develop more intelligent and intuitive systems, enhancing human-computer interaction and promoting technological innovations in the field. Currently, he is a faculty member of the Software Engineering course and an active member of the Graduate Program in Applied Computing (PPCA). {{< link-interno "/people/sergio_freitas" "More information" >}}.
+<div style="margin-left: 20px;">
+Professor and researcher in the field of Artificial Intelligence (AI) and Natural Language Processing (NLP), he holds a tenure position at the University of Brasília - UnB. Some of his contributions to the field of NLP include the automated interpretation of anaphoras, a pioneering study that deepened the understanding of how machines can process and interpret human text, contributing to the resolution of anaphoras and advancements in computational text comprehension. Moreover, his research in AI explores the integration of advanced computational methods to develop more intelligent and intuitive systems, enhancing human-computer interaction and promoting technological innovations in the field. Currently, he is a faculty member of the Software Engineering course and an active member of the Graduate Program in Applied Computing (PPCA).
+<br>
+{{< link-interno "/people/sergio_freitas" "More about the coordinator" >}}
+</div>
 
 ## Research Team
 {{< filterPeople caput="#### Researchers" categories="researcher" advisors="" tags="ai,nlp,machine_learning" notags="inactive" nocats="sergio_freitas">}}
