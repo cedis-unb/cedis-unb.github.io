@@ -19,9 +19,13 @@ nav_next: true
 A Inteligência Artificial (IA) é um ramo da ciência da computação que busca desenvolver sistemas capazes de imitar e aprimorar habilidades humanas, como o raciocínio, aprendizado e percepção. Uma de suas subáreas mais fascinantes é o Processamento de Linguagem Natural (PLN), que se dedica a compreender e interpretar a linguagem humana, permitindo que máquinas e programas interajam com as pessoas de maneira mais eficiente e intuitiva. O PLN engloba desde a análise sintática e semântica das palavras até a geração de texto coerente e significativo, possibilitando a criação de assistentes virtuais, sistemas de tradução automática e outras aplicações que facilitam a comunicação e o acesso à informação em nosso cotidiano.
 
 ## Sobre o Coordenador da Área
-**Prof. Sergio Antônio Andrade de Freitas**
 
-Professor e pesquisador na área de Inteligência Artificial (IA) e Processamento de Linguagem Natural (PLN), é professor Titular na Universidade de Brasília - UnB. Algumas de suas contribuições para o campo do PLN são a interpretação automatizada de anáforas, um estudo pioneiro que aprofundou a compreensão de como máquinas podem processar e interpretar texto humano, contribuindo para a resolução de anáforas e avanços na compreensão textual computacional. Além disso, suas pesquisas em IA exploram a integração de métodos computacionais avançados para desenvolver sistemas mais inteligentes e intuitivos, reforçando a interação humana-computador e promovendo inovações tecnológicas no campo. Atualmente, ele é docente do curso de Engenharia de Software e membro ativo do corpo docente do Programa de Pós-graduação em Computação Aplicada (PPCA). {{< link-interno "/people/sergio_freitas" "Mais informações" >}}.
+**Prof. Sergio Antônio Andrade de Freitas**
+<div style="margin-left: 20px;">
+Professor e pesquisador na área de Inteligência Artificial (IA) e Processamento de Linguagem Natural (PLN), é professor Titular na Universidade de Brasília - UnB. Algumas de suas contribuições para o campo do PLN são a interpretação automatizada de anáforas, um estudo pioneiro que aprofundou a compreensão de como máquinas podem processar e interpretar texto humano, contribuindo para a resolução de anáforas e avanços na compreensão textual computacional. Além disso, suas pesquisas em IA exploram a integração de métodos computacionais avançados para desenvolver sistemas mais inteligentes e intuitivos, reforçando a interação humana-computador e promovendo inovações tecnológicas no campo. Atualmente, ele é docente do curso de Engenharia de Software e membro ativo do corpo docente do Programa de Pós-graduação em Computação Aplicada (PPCA).
+<br>
+{{< link-interno "/people/sergio_freitas" "Mais sobre o coordenador" >}}
+</div>
 
 ## Equipe de pesquisadores
 {{< filterPeople caput="#### Pesquisadores" categories="researcher" advisors="" tags="ai,nlp,machine_learning" notags="inactive" nocats="cristiane_ramos,sergio_freitas">}}
