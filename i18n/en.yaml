@@ -12,6 +12,9 @@ backToTop: "Back to Top"
 seemore: "See more about"
 abstract: "Abstract"
 searchPlaceholder: "Search"
+publications: "Publications"
+
+# Cursos
 curso_esw: "Senior Project (Bachelor of Software Engineering) - University of Brasília
   (Brazil)"
 curso_esw2: "Bachelor of Software Engineering - University of Brasília (Brazil)"
@@ -40,6 +43,21 @@ software_requirements: "Requirements Engineering"
 soft_skills: "Soft Skills"
 teamwork: "Teamwork"
 verification_validation_testing: "Verification, Validation and Testing"
+
+# Areas topic sections
+area_coordinator: "About the Area Coordinator"
+area_coordinators: "About the Area Coordinators"
+area_more_about: "More About the Coordinator"
+area_more_about_a: "More About the Coordinator"
+area_research_team: "Research Team"
+area_previous_researchers: "Previous Researchers"
+area_ongoing_projets: "Current Projects"
+area_publications_productions: "Publications and Productions"
+area_publications: "Publications"
+area_course_and_classes: "Courses & Classes"
+area_useful_link: "Resources & Useful Links"
+area_contact: "Contact & Collaboration"
+
 
 # Participation Types
 researcher: "Researchers"
