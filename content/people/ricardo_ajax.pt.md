@@ -10,10 +10,12 @@ authorimage: ../assets/images/global/author.webp
 categories:
 - people
 - researcher
+- ricardo_ajax
 tags: 
 - digital_transformation
 - verification_validation_testing
 - software_quality
+- active_learning
 nav_next: true
 ---
 ## Perfil Acadêmico e Profissional

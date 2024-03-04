@@ -23,12 +23,13 @@ A Inteligência Artificial (IA) é um ramo da ciência da computação que busca
 
 Professor e pesquisador na área de Inteligência Artificial (IA) e Processamento de Linguagem Natural (PLN), é professor Titular na Universidade de Brasília - UnB. Algumas de suas contribuições para o campo do PLN são a interpretação automatizada de anáforas, um estudo pioneiro que aprofundou a compreensão de como máquinas podem processar e interpretar texto humano, contribuindo para a resolução de anáforas e avanços na compreensão textual computacional. Além disso, suas pesquisas em IA exploram a integração de métodos computacionais avançados para desenvolver sistemas mais inteligentes e intuitivos, reforçando a interação humana-computador e promovendo inovações tecnológicas no campo. Atualmente, ele é docente do curso de Engenharia de Software e membro ativo do corpo docente do Programa de Pós-graduação em Computação Aplicada (PPCA). {{< link-interno "/people/sergio_freitas" "Mais informações" >}}.
 
-## Equipe de Pesquisadores
+## Equipe de pesquisadores
+{{< filterPeople caput="#### Pesquisadores" categories="researcher" advisors="" tags="ai,nlp,machine_learning" notags="inactive" nocats="cristiane_ramos,sergio_freitas">}}
 {{< filterPeople caput="#### PhD" categories="phd_candidate" advisors="" tags="ai,nlp,machine_learning" notags="inactive">}}
-{{< filterPeople caput="#### Master's degree" categories="master_student" advisors="" tags="ai,nlp,machine_learning" notags="inactive">}}
-{{< filterPeople caput="#### Postgraduate Specialization" categories="specialization" advisors="" tags="ai,nlp,machine_learning" notags="inactive">}}
-{{< filterPeople caput="#### Undergraduate Research" categories="scientific_initiation" advisors="" tags="ai,nlp,machine_learning" notags="inactive">}}
-{{< filterPeople caput="#### Bachelor's Thesis" categories="tcc" advisors="" tags="ai,nlp,machine_learning" notags="inactive">}}
+{{< filterPeople caput="#### Mestrado" categories="master_student" advisors="" tags="ai,nlp,machine_learning" notags="inactive">}}
+{{< filterPeople caput="#### Especialização" categories="specialization" advisors="" tags="ai,nlp,machine_learning" notags="inactive">}}
+{{< filterPeople caput="#### Iniciação Científica" categories="scientific_initiation" advisors="" tags="ai,nlp,machine_learning" notags="inactive">}}
+{{< filterPeople caput="#### TCC" categories="tcc" advisors="" tags="ai,nlp,machine_learning" notags="inactive">}}
 
 <div id="previous-collaborators" x-data="{ showPrevious: false }">
     <h2 id="former-collaborators-title" @click="showPrevious = !showPrevious" class="text-xl font-bold mb-2 cursor-pointer flex items-center text-primary-900">
@@ -37,14 +38,13 @@ Professor e pesquisador na área de Inteligência Artificial (IA) e Processament
     </h2>
     <div x-show="showPrevious" x-cloak>
     {{< publications caput="#### PhD" year="" types="phd" advisors="" notypes="" tags="ai,nlp,machine_learning" notags="active,sergio_freitas" >}}
-    {{< publications caput="#### Master's degree" year="" types="dissertation" advisors="" notypes="" tags="ai,nlp,machine_learning" notags="active" >}}
-    {{< publications caput="#### Postgraduate Specialization" year="" types="specialization" advisors="" notypes="" tags="ai,nlp,machine_learning" notags="active" >}}
-    {{< filterPeople caput="#### Undergraduate Research" categories="scientific_initiation" advisors="" tags="ai,nlp,machine_learning,inactive" notags="active">}}
-    {{< publications caput="#### Bachelor's Thesis" year="" types="tcc" advisors="" notypes="" tags="ai,nlp,machine_learning" notags="active" >}}
+    {{< publications caput="#### Mestrado" year="" types="dissertation" advisors="" notypes="" tags="ai,nlp,machine_learning" notags="active,sergio_freitas" >}}
+    {{< publications caput="#### Especialização" year="" types="specialization" advisors="" notypes="" tags="ai,nlp,machine_learning" notags="active" >}}
+    {{< filterPeople caput="#### Iniciação Científica" categories="scientific_initiation" advisors="" tags="ai,nlp,machine_learning,inactive" notags="active">}}
+    {{< publications caput="#### TCC" year="" types="tcc" advisors="" notypes="" tags="ai,nlp,machine_learning" notags="active" >}}
     {{< backToTopBtn target="top" >}}
     </div>
-
-  </div>
+  </div>  
 
 
 ## Projetos em Andamento

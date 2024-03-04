@@ -2,8 +2,9 @@
 {{ $showSummary := .Get "showSummary" | default true }}
 {{ $showDescription := .Get "showDescription" | default true }}
 {{ $filterTags := split (.Get "tags") "," }}
-{{ $filterCategories := split (.Get "categories") "," }}
 {{ $excludeTags := split (.Get "notags") "," }} 
+{{ $filterCategories := split (.Get "categories") "," }}
+{{ $excludeCategories := split (.Get "nocats") "," }} 
 {{ $filterAdvisors := split (.Get "advisors") "," }}
 
 {{ $hasMatches := false }}
@@ -49,6 +50,16 @@
     {{ end }}
   {{ end }}
 
+  <!-- Lógica de filtragem para exclude categories -->
+  {{ if and $include (gt (len $excludeCategories) 0) (ne (index $excludeCategories 0) "") }}
+    {{ range $excludeCategories }}
+      {{ if in $person.categories . }}
+        {{ $include = false }}
+        {{ break }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+
   <!-- Lógica de filtragem para advisors -->
   {{ if and $include (gt (len $filterAdvisors) 0) (ne (index $filterAdvisors 0) "") }}
     {{ $advisorMatch := false }}
@@ -70,278 +81,320 @@
 {{ end }}
 
 <div>
-    {{ if $hasMatches }}
-      {{ if $caput }}
-        <div class="caput-content">
-            {{ $caput | markdownify }}
-        </div>
-      {{ end }}
-      <ul>
-        {{ range sort $.Site.Data.people.people "year" "desc" }}
-          {{ $include := true }}
-          {{ $person := . }}
-
-  <!-- Lógica de filtragem para tags -->
-  {{ if and $include (gt (len $filterTags) 0) (ne (index $filterTags 0) "") }}
-    {{ $tagMatch := false }}
-    {{ range $filterTags }}
-      {{ if in $person.tags . }}
-        {{ $tagMatch = true }}
-        {{ break }}
-      {{ end }}
+  {{ if $hasMatches }}
+    {{ if $caput }}
+      <div class="caput-content">
+          {{ $caput | markdownify }}
+      </div>
     {{ end }}
-    {{ if not $tagMatch }}
-      {{ $include = false }}
-    {{ end }}
-  {{ end }}
+    <ul>
+    {{ range sort $.Site.Data.people.people "year" "desc" }}
+      {{ $include := true }}
+      {{ $person := . }}
 
-  <!-- Lógica de filtragem para categories -->
-  {{ if and $include (gt (len $filterCategories) 0) (ne (index $filterCategories 0) "") }}
-    {{ $categoryMatch := false }}
-    {{ range $filterCategories }}
-      {{ if in $person.categories . }}
-        {{ $categoryMatch = true }}
-        {{ break }}
-      {{ end }}
-    {{ end }}
-    {{ if not $categoryMatch }}
-      {{ $include = false }}
-    {{ end }}
-  {{ end }}
-
-  <!-- Lógica de filtragem para exclude tags -->
-  {{ if and $include (gt (len $excludeTags) 0) (ne (index $excludeTags 0) "") }}
-    {{ range $excludeTags }}
-      {{ if in $person.tags . }}
-        {{ $include = false }}
-        {{ break }}
-      {{ end }}
-    {{ end }}
-  {{ end }}
-
-  <!-- Lógica de filtragem para advisors -->
-  {{ if and $include (gt (len $filterAdvisors) 0) (ne (index $filterAdvisors 0) "") }}
-    {{ $advisorMatch := false }}
-    {{ range $filterAdvisors }}
-      {{ if in $person.advisors . }}
-        {{ $advisorMatch = true }}
-        {{ break }}
-      {{ end }}
-    {{ end }}
-    {{ if not $advisorMatch }}
-      {{ $include = false }}
-    {{ end }}
-  {{ end }}
-
-  {{ if $include }}
-  <li x-data="{ open: false }">
-    <span><strong>{{ $person.name }}</strong></span>.
-    <span>{{ if .url }}<a href="{{ .url }}">{{ end }}
-          {{ index .title $.Site.Language.Lang }}
-        {{ if .url }}</a>{{ end }}.</span>
-            {{ if $person.program }}<span>{{ $person.program | i18n }},</span>{{ end }}
-            {{ if $person.year }}<span>({{ $person.year }}).</span>{{ end }}
-
-            <!-- Exibição de advisors, tags, e o resumo com controle do Alpine.js -->
-            {{ i18n "orientador" }}:
-            {{ range .advisors }}
-              {{ with index $.Site.Data.advisors.advisors . }}
-                <a href="{{ .link | absLangURL }}">{{ .name }}</a>
-              {{ end }}
-            {{ end }}
-
-            {{/* Tags */}}
-            {{ $filteredTags := slice }}
-            {{ range .tags }}
-              {{ if and (ne . "active") (ne . "inactive") }}
-                {{ $filteredTags = $filteredTags | append . }}
-              {{ end }}
-            {{ end }}
-            {{ $total := len $filteredTags }}
-            {{ if gt $total 0 }}
-              . Tags:
-              {{ range $index, $tag := $filteredTags }}
-                {{ $tagLink := printf "/tags/%s" $tag | absLangURL }}
-                <a href="{{ $tagLink }}">{{ $tag | i18n }}</a>{{ if lt $index (sub $total 1) }}, {{ end }}
-              {{ end }}.
-            {{ end }}
-
-
-            {{ if .summary }}
-            {{ $currentLangSummary := index .summary $.Site.Language.Lang }}
-            {{ if $currentLangSummary }}
-              <div>
-                <!-- Botão com a cor primária e texto em branco -->
-                <button @click="open = !open" class="bg-primary-500 text-white p-2 rounded cursor-pointer">
-                  {{ i18n "abstract" }}
-                </button>
-                <!-- Div com texto usando uma cor neutra escura para melhor legibilidade -->
-                <div x-show="open" class="mt-2 pl-4 font-serif" x-cloak>
-                  <span class="text-neutral-700 text-sm">{{ $currentLangSummary }}</span>
-                </div>
-              </div>
-            {{ end }}
+      <!-- Lógica de filtragem para tags -->
+      {{ if and $include (gt (len $filterTags) 0) (ne (index $filterTags 0) "") }}
+        {{ $tagMatch := false }}
+        {{ range $filterTags }}
+          {{ if in $person.tags . }}
+            {{ $tagMatch = true }}
+            {{ break }}
           {{ end }}
-        </li>
+        {{ end }}
+        {{ if not $tagMatch }}
+          {{ $include = false }}
         {{ end }}
       {{ end }}
+
+      <!-- Lógica de filtragem para categories -->
+      {{ if and $include (gt (len $filterCategories) 0) (ne (index $filterCategories 0) "") }}
+        {{ $categoryMatch := false }}
+        {{ range $filterCategories }}
+          {{ if in $person.categories . }}
+            {{ $categoryMatch = true }}
+            {{ break }}
+          {{ end }}
+        {{ end }}
+        {{ if not $categoryMatch }}
+          {{ $include = false }}
+        {{ end }}
+      {{ end }}
+
+      <!-- Lógica de filtragem para exclude tags -->
+      {{ if and $include (gt (len $excludeTags) 0) (ne (index $excludeTags 0) "") }}
+        {{ range $excludeTags }}
+          {{ if in $person.tags . }}
+            {{ $include = false }}
+            {{ break }}
+          {{ end }}
+        {{ end }}
+      {{ end }}
+
+      <!-- Lógica de filtragem para exclude categories -->
+      {{ if and $include (gt (len $excludeCategories) 0) (ne (index $excludeCategories 0) "") }}
+        {{ range $excludeCategories }}
+          {{ if in $person.categories . }}
+            {{ $include = false }}
+            {{ break }}
+          {{ end }}
+        {{ end }}
+      {{ end }}
+
+      <!-- Lógica de filtragem para advisors -->
+      {{ if and $include (gt (len $filterAdvisors) 0) (ne (index $filterAdvisors 0) "") }}
+        {{ $advisorMatch := false }}
+        {{ range $filterAdvisors }}
+          {{ if in $person.advisors . }}
+            {{ $advisorMatch = true }}
+            {{ break }}
+          {{ end }}
+        {{ end }}
+        {{ if not $advisorMatch }}
+          {{ $include = false }}
+        {{ end }}
+      {{ end }}
+
+      {{ if $include }}
+        <li x-data="{ open: false }">
+        <span><strong>{{ $person.name }}</strong></span>.
+        <span>{{ if .url }}<a href="{{ .url }}">{{ end }}
+        {{ index .title $.Site.Language.Lang }}
+        {{ if .url }}</a>{{ end }}.</span>
+        {{ if $person.program }}<span>{{ $person.program | i18n }},</span>{{ end }}
+        {{ if $person.year }}<span>({{ $person.year }}).</span>{{ end }}
+
+        <!-- Exibição de advisors, tags, e o resumo com controle do Alpine.js -->
+        {{ i18n "orientador" }}:
+        {{ range .advisors }}
+          {{ with index $.Site.Data.advisors.advisors . }}
+            <a href="{{ .link | absLangURL }}">{{ .name }}</a>
+          {{ end }}
+        {{ end }}
+
+        {{/* Tags */}}
+        {{ $filteredTags := slice }}
+        {{ range .tags }}
+          {{ if and (ne . "active") (ne . "inactive") }}
+            {{ $filteredTags = $filteredTags | append . }}
+          {{ end }}
+        {{ end }}
+        {{ $total := len $filteredTags }}
+        {{ if gt $total 0 }}
+          . Tags:
+          {{ range $index, $tag := $filteredTags }}
+            {{ $tagLink := printf "/tags/%s" $tag | absLangURL }}
+            <a href="{{ $tagLink }}">{{ $tag | i18n }}</a>{{ if lt $index (sub $total 1) }}, {{ end }}
+          {{ end }}.
+        {{ end }}
+
+        {{ if .summary }}
+          {{ $currentLangSummary := index .summary $.Site.Language.Lang }}
+          {{ if $currentLangSummary }}
+            <div>
+              <!-- Botão com a cor primária e texto em branco -->
+              <button @click="open = !open" class="bg-primary-500 text-white p-2 rounded cursor-pointer">
+                {{ i18n "abstract" }}
+              </button>
+              <!-- Div com texto usando uma cor neutra escura para melhor legibilidade -->
+              <div x-show="open" class="mt-2 pl-4 font-serif" x-cloak>
+                <span class="text-neutral-700 text-sm">{{ $currentLangSummary }}</span>
+              </div>
+            </div>
+          {{ end }}
+        {{ end }}
+        </li>
+      {{ end }}
+    {{ end }}
     </ul>
   {{ end }}
 </div>
 
-
 {{ $hasMatches2 := false }}
-{{ range sort $.Site.RegularPages "Title" }}
+{{ $currentPageKey := $.Page.TranslationKey }}
+{{ range sort (where $.Site.RegularPages.ByTitle ".Params.categories" "intersect" (slice "people")) "Title" }}
+  {{ if ne .TranslationKey $currentPageKey }}
     {{ $thisPage := . }}
     {{ $include := true }}
     
     <!-- Verificação de Tags -->
     {{ if and $include (gt (len $filterTags) 0) (ne (index $filterTags 0) "") }}
-    {{ $tagsMatch := false }}
-    {{ range $filterTags }}
+      {{ $tagsMatch := false }}
+      {{ range $filterTags }}
         {{ $currentTag := trim . " " }}
-        {{ if not (in $thisPage.Params.tags $currentTag) }}
-        {{ $tagsMatch = true }}
-        {{ break }}
+        {{ if (in $thisPage.Params.tags $currentTag) }}
+          {{ $tagsMatch = true }}
+          {{ break }}
         {{ end }}
-    {{ end }}
-    {{ if not $tagsMatch }}
-        {{ $include = false }}
-    {{ end }}
+      {{ end }}
+      {{ if not $tagsMatch }}
+          {{ $include = false }}
+      {{ end }}
     {{ end }}
 
     <!-- Verificação de Categorias -->
     {{ if and $include (gt (len $filterCategories) 0) (ne (index $filterCategories 0) "") }}
-    {{ $categoriesMatch := true }}
-    {{ range $filterCategories }}
+      {{ $categoriesMatch := true }}
+      {{ range $filterCategories }}
         {{ $currentCategory := trim . " " }}
         {{ if not (in $thisPage.Params.categories $currentCategory) }}
-        {{ $categoriesMatch = false }}
-        {{ break }}
+          {{ $categoriesMatch = false }}
+          {{ break }}
         {{ end }}
-    {{ end }}
-    {{ if not $categoriesMatch }}
-        {{ $include = false }}
-    {{ end }}
+      {{ end }}
+      {{ if not $categoriesMatch }}
+          {{ $include = false }}
+      {{ end }}
     {{ end }}
 
     <!-- Verificação de Advisors -->
     {{ if and $include (gt (len $filterAdvisors) 0) (ne (index $filterAdvisors 0) "") }}
-    {{ $advisorsMatch := true }}
-    {{ range $filterAdvisors }}
+      {{ $advisorsMatch := true }}
+      {{ range $filterAdvisors }}
         {{ $currentAdvisors := trim . " " }}
         {{ if not (in $thisPage.Params.advisors $currentAdvisors) }}
-        {{ $advisorsMatch = false }}
-        {{ break }}
+          {{ $advisorsMatch = false }}
+          {{ break }}
         {{ end }}
-    {{ end }}
-    {{ if not $advisorsMatch }}
-        {{ $include = false }}
-    {{ end }}
+      {{ end }}
+      {{ if not $advisorsMatch }}
+          {{ $include = false }}
+      {{ end }}
     {{ end }}
 
     <!-- Verificação de 'Não Tags' -->
     {{ if and $include (gt (len $excludeTags) 0) (ne (index $excludeTags 0) "") }}
-    {{ range $excludeTags }}
-        {{ $currentNoTag := trim . " " }}
-        {{ if in $thisPage.Params.tags $currentNoTag }}
-        {{ $include = false }}
-        {{ break }}
-        {{ end }}
+      {{ range $excludeTags }}
+          {{ $currentNoTag := trim . " " }}
+          {{ if in $thisPage.Params.tags $currentNoTag }}
+            {{ $include = false }}
+            {{ break }}
+          {{ end }}
+      {{ end }}
     {{ end }}
+
+    <!-- Verificação de 'Não Categorias' -->
+    {{ if and $include (gt (len $excludeCategories) 0) (ne (index $excludeCategories 0) "") }}
+      {{ range $excludeCategories }}
+          {{ $currentNoCat := trim . " " }}
+          {{ if in $thisPage.Params.categories $currentNoCat }}
+            {{ $include = false }}
+            {{ break }}
+          {{ end }}
+      {{ end }}
     {{ end }}
 
     {{ if $include }}
-    {{ $hasMatches2 = true }}
-    {{ break }}
+      {{ $hasMatches2 = true }}
+      {{ break }}
     {{ end }}
+  {{ end }}
 {{ end }}
 
 {{ if $hasMatches2  }}
-    {{ if and $caput (not $hasMatches) }}
+  {{ if and $caput (not $hasMatches) }}
     <div class="caput">{{ $caput | markdownify }}</div>
-    {{ end }}
-    <ul>
-    {{ range sort $.Site.RegularPages "Title" }}
-        {{ $thisPage := . }}
-        {{ $include := true }}
+  {{ end }}
+  <ul>
+  {{ $currentPageKey := $.Page.TranslationKey }}
+  {{ range sort (where $.Site.RegularPages.ByTitle ".Params.categories" "intersect" (slice "people")) "Title" }}
+    {{ if ne .TranslationKey $currentPageKey }}
+      {{ $thisPage := . }}
+      {{ $include := true }}
 
-        <!-- Verificação de Tags -->
-        {{ if and $include (gt (len $filterTags) 0) (ne (index $filterTags 0) "") }}
+      <!-- Verificação de Tags -->
+      {{ if and $include (gt (len $filterTags) 0) (ne (index $filterTags 0) "") }}
         {{ $tagsMatch := false }}
         {{ range $filterTags }}
-            {{ $currentTag := trim . " " }}
-            {{ if not (in $thisPage.Params.tags $currentTag) }}
+          {{ $currentTag := trim . " " }}
+          {{ if (in $thisPage.Params.tags $currentTag) }}
             {{ $tagsMatch = true }}
             {{ break }}
-            {{ end }}
+        {{ end }}
         {{ end }}
         {{ if not $tagsMatch }}
             {{ $include = false }}
         {{ end }}
-        {{ end }}
+      {{ end }}
 
-        {{ if and $include (gt (len $filterCategories) 0) (ne (index $filterCategories 0) "") }}
+      {{ if and $include (gt (len $filterCategories) 0) (ne (index $filterCategories 0) "") }}
         {{ $categoriesMatch := true }}
         {{ range $filterCategories }}
-            {{ $currentCategory := trim . " " }}
-            {{ if not (in $thisPage.Params.categories $currentCategory) }}
+          {{ $currentCategory := trim . " " }}
+          {{ if not (in $thisPage.Params.categories $currentCategory) }}
             {{ $categoriesMatch = false }}
             {{ break }}
-            {{ end }}
+          {{ end }}
         {{ end }}
         {{ if not $categoriesMatch }}
             {{ $include = false }}
         {{ end }}
-        {{ end }}
+      {{ end }}
 
-        <!-- Verificação de Advisors -->
-        {{ if and $include (gt (len $filterAdvisors) 0) (ne (index $filterAdvisors 0) "") }}
+      <!-- Verificação de Advisors -->
+      {{ if and $include (gt (len $filterAdvisors) 0) (ne (index $filterAdvisors 0) "") }}
         {{ $advisorsMatch := true }}
         {{ range $filterAdvisors }}
-            {{ $currentAdvisors := trim . " " }}
-            {{ if not (in $thisPage.Params.advisors $currentAdvisors) }}
+          {{ $currentAdvisors := trim . " " }}
+          {{ if not (in $thisPage.Params.advisors $currentAdvisors) }}
             {{ $advisorsMatch = false }}
             {{ break }}
-            {{ end }}
+          {{ end }}
         {{ end }}
         {{ if not $advisorsMatch }}
             {{ $include = false }}
         {{ end }}
-        {{ end }}
+      {{ end }}
 
-        {{ if and $include (gt (len $excludeTags) 0) (ne (index $excludeTags 0) "") }}
+      <!-- Verificação de 'Não Tags' -->
+      {{ if and $include (gt (len $excludeTags) 0) (ne (index $excludeTags 0) "") }}
         {{ range $excludeTags }}
-            {{ $currentNoTag := trim . " " }}
-            {{ if in $thisPage.Params.tags $currentNoTag }}
+          {{ $currentNoTag := trim . " " }}
+          {{ if in $thisPage.Params.tags $currentNoTag }}
             {{ $include = false }}
             {{ break }}
+          {{ end }}
+        {{ end }}
+      {{ end }}
+
+      <!-- Verificação de 'Não Categorias' -->
+      {{ if and $include (gt (len $excludeCategories) 0) (ne (index $excludeCategories 0) "") }}
+        {{ range $excludeCategories }}
+            {{ $currentNoCat := trim . " " }}
+            {{ if in $thisPage.Params.categories $currentNoCat }}
+              {{ $include = false }}
+              {{ break }}
             {{ end }}
         {{ end }}
+      {{ end }}
+
+      {{ if $include }}
+        <li>
+        <span><strong><a href="{{ $thisPage.Permalink }}">{{ $thisPage.Title }}</a></strong></span>
+        {{ if and $showSummary (isset $thisPage.Params "summary") }}
+          <span> - {{ $thisPage.Params.summary }}</span>
         {{ end }}
 
-        {{ if $include }}
-        <li>
-            <span><strong><a href="{{ $thisPage.Permalink }}">{{ $thisPage.Title }}</a></strong></span>
-            {{ if and $showSummary $thisPage.Summary }}
-            <span> - {{ $thisPage.Summary }}</span>
-            {{ end }}
-            {{ if and $showDescription (isset $thisPage.Params "description") }}
-            <span> {{ $thisPage.Params.description }}</span>
-            {{ end }}
-            <!-- Exibição de advisors, tags, e o resumo com controle do Alpine.js -->
-            {{ if and $thisPage.Params.advisors (gt (len $thisPage.Params.advisors) 0) }}
-              {{ i18n "orientador" }}:
-              {{ $totalAdvisors := len $thisPage.Params.advisors }}
-              {{ range $index, $advisor := $thisPage.Params.advisors }}
-                {{ with index $.Site.Data.advisors.advisors $advisor }}
-                  <a href="{{ .link | absLangURL }}">{{ .name }}</a>{{ if lt $index (sub $totalAdvisors 1) }},{{ end }}
-                {{ end }}
-              {{ end }}
-            {{ end }}
-            .
-        </li>
+        {{ if and $showDescription (isset $thisPage.Params "description") }}
+          <span> {{ $thisPage.Params.description }}</span>
         {{ end }}
-    {{ end }}
-    </ul>
+
+        <!-- Exibição de advisors, tags, e o resumo com controle do Alpine.js -->
+        {{ if and $thisPage.Params.advisors (gt (len $thisPage.Params.advisors) 0) }}
+          {{ i18n "orientador" }}:
+          {{ $totalAdvisors := len $thisPage.Params.advisors }}
+          {{ range $index, $advisor := $thisPage.Params.advisors }}
+            {{ with index $.Site.Data.advisors.advisors $advisor }}
+              <a href="{{ .link | absLangURL }}">{{ .name }}</a>{{ if lt $index (sub $totalAdvisors 1) }},{{ end }}
+            {{ end }}
+          {{ end }}
+        {{ end }}
+          .
+        </li>
+      {{ end }}
+
+    {{ end }} 
+    
+  {{ end }}
+
+  </ul>
 {{ end }}

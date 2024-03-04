@@ -68,7 +68,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/pt/areas/ai_pln/</loc>
-    <lastmod>2024-03-01T19:28:58-03:00</lastmod>
+    <lastmod>2024-03-03T19:10:52-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -81,7 +81,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/pt/areas/active_learning/</loc>
-    <lastmod>2024-03-01T18:06:08-03:00</lastmod>
+    <lastmod>2024-03-03T19:10:52-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -393,7 +393,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/pt/people/collaborators/arthur_temporim/</loc>
-    <lastmod>2024-02-29T18:36:19-03:00</lastmod>
+    <lastmod>2024-03-03T19:10:52-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -419,7 +419,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/pt/people/collaborators/mylena_faria/</loc>
-    <lastmod>2024-03-01T10:47:03-03:00</lastmod>
+    <lastmod>2024-03-03T19:10:52-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -432,7 +432,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/pt/people/collaborators/marcus_martins/</loc>
-    <lastmod>2024-03-01T10:47:03-03:00</lastmod>
+    <lastmod>2024-03-03T19:10:52-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -445,7 +445,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/pt/people/collaborators/andre_silva/</loc>
-    <lastmod>2024-02-24T14:44:36-03:00</lastmod>
+    <lastmod>2024-03-03T19:10:52-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -458,7 +458,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/pt/people/collaborators/juan_alves/</loc>
-    <lastmod>2024-02-24T14:44:36-03:00</lastmod>
+    <lastmod>2024-03-03T19:10:52-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -471,7 +471,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/pt/people/collaborators/milena_silva/</loc>
-    <lastmod>2024-02-24T14:44:36-03:00</lastmod>
+    <lastmod>2024-03-03T19:10:52-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -484,7 +484,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/pt/people/collaborators/renan_batista/</loc>
-    <lastmod>2024-02-24T14:44:36-03:00</lastmod>
+    <lastmod>2024-03-03T19:10:52-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -588,7 +588,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/pt/tags/active/</loc>
-    <lastmod>2024-03-01T10:47:03-03:00</lastmod>
+    <lastmod>2024-03-03T19:10:52-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -601,7 +601,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/pt/categories/</loc>
-    <lastmod>2024-03-01T19:28:58-03:00</lastmod>
+    <lastmod>2024-03-03T19:10:52-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -614,7 +614,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/pt/</loc>
-    <lastmod>2024-03-01T19:28:58-03:00</lastmod>
+    <lastmod>2024-03-03T19:10:52-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -627,7 +627,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/pt/tags/gamification/</loc>
-    <lastmod>2024-03-01T18:17:14-03:00</lastmod>
+    <lastmod>2024-03-03T19:10:52-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -640,7 +640,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/pt/people/</loc>
-    <lastmod>2024-03-01T18:17:14-03:00</lastmod>
+    <lastmod>2024-03-03T19:10:52-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -653,7 +653,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/pt/categories/people/</loc>
-    <lastmod>2024-03-01T18:17:14-03:00</lastmod>
+    <lastmod>2024-03-03T19:10:52-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -666,7 +666,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/pt/tags/project_cc/</loc>
-    <lastmod>2024-03-01T18:17:14-03:00</lastmod>
+    <lastmod>2024-03-03T19:10:52-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -679,7 +679,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/pt/tags/scientific_initiation/</loc>
-    <lastmod>2024-03-01T10:47:03-03:00</lastmod>
+    <lastmod>2024-03-03T19:10:52-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -692,7 +692,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/pt/categories/scientific_initiation/</loc>
-    <lastmod>2024-03-01T10:47:03-03:00</lastmod>
+    <lastmod>2024-03-03T19:10:52-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -705,7 +705,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/pt/tags/</loc>
-    <lastmod>2024-03-01T19:28:58-03:00</lastmod>
+    <lastmod>2024-03-03T19:10:52-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -718,7 +718,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/pt/categories/undergraduate/</loc>
-    <lastmod>2024-03-01T10:47:03-03:00</lastmod>
+    <lastmod>2024-03-03T19:10:52-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -731,7 +731,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/pt/tags/dfcris/</loc>
-    <lastmod>2024-03-01T18:17:14-03:00</lastmod>
+    <lastmod>2024-03-03T19:10:52-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -783,7 +783,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/pt/tags/machine_learning/</loc>
-    <lastmod>2024-03-01T19:28:58-03:00</lastmod>
+    <lastmod>2024-03-03T19:10:52-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -809,7 +809,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/pt/categories/master_student/</loc>
-    <lastmod>2024-02-29T23:42:31-03:00</lastmod>
+    <lastmod>2024-03-03T19:10:52-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -822,7 +822,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/pt/categories/cristiane_ramos/</loc>
-    <lastmod>2024-03-01T18:06:08-03:00</lastmod>
+    <lastmod>2024-03-03T19:10:52-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -926,7 +926,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/pt/categories/sergio_freitas/</loc>
-    <lastmod>2024-03-01T19:28:58-03:00</lastmod>
+    <lastmod>2024-03-03T19:10:52-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -939,7 +939,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/pt/tags/ai/</loc>
-    <lastmod>2024-03-01T19:28:58-03:00</lastmod>
+    <lastmod>2024-03-03T19:10:52-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -1004,7 +1004,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/pt/categories/george_marsicano/</loc>
-    <lastmod>2024-03-01T18:06:08-03:00</lastmod>
+    <lastmod>2024-03-03T19:10:52-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -1043,7 +1043,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/pt/tags/nlp/</loc>
-    <lastmod>2024-03-01T19:28:58-03:00</lastmod>
+    <lastmod>2024-03-03T19:10:52-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -1095,7 +1095,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/pt/areas/</loc>
-    <lastmod>2024-03-01T19:28:58-03:00</lastmod>
+    <lastmod>2024-03-03T19:10:52-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -1108,7 +1108,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/pt/categories/knowledge_areas/</loc>
-    <lastmod>2024-03-01T19:28:58-03:00</lastmod>
+    <lastmod>2024-03-03T19:10:52-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -1121,7 +1121,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/pt/tags/active_learning/</loc>
-    <lastmod>2024-03-01T18:17:14-03:00</lastmod>
+    <lastmod>2024-03-03T19:10:52-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -1134,7 +1134,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/pt/tags/education/</loc>
-    <lastmod>2024-03-01T18:06:08-03:00</lastmod>
+    <lastmod>2024-03-03T19:10:52-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -1147,7 +1147,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/pt/categories/ricardo_ajax/</loc>
-    <lastmod>2024-03-01T18:06:08-03:00</lastmod>
+    <lastmod>2024-03-03T19:10:52-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"

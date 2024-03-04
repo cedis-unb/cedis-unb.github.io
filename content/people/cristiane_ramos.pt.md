@@ -10,6 +10,7 @@ authorimage: ../assets/images/global/author.webp
 categories:
 - people
 - researcher
+- cristiane_ramos
 tags: 
 - gamification
 - learning_analytics

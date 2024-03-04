@@ -10,6 +10,7 @@ authorimage: ../assets/images/global/author.webp
 categories:
 - people
 - researcher
+- daniel_sundfeld
 tags: 
 - hpc
 nav_next: true
