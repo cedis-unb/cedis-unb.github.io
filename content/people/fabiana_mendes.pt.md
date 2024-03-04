@@ -10,6 +10,7 @@ authorimage: ../assets/images/global/author.webp
 categories:
 - people
 - researcher
+- fabiana_mendes
 tags: 
 - green_software
 - project_gsd

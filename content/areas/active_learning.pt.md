@@ -22,25 +22,21 @@ As metodologias ativas no ensino superior têm ganhado crescente relevância no 
 
 ## Sobre os coordenadores da área
 
-Profa. Cristiane Soares Ramos
+**Profa. Cristiane Soares Ramos**
 
 Destacada acadêmica na área de Metodologias Ativas de Aprendizagem, com uma sólida base em Engenharia de Software e Gestão do Conhecimento. Atuando como professora no curso de Engenharia de Software da Universidade de Brasília, ela tem contribuído significativamente para o avanço da educação e pesquisa em software. Atualmente é membro da comissão gestora do programa [Aprendizagem para o 3º Milênio](http://a3m.unb.br/) (A3M). {{< link-interno "/people/cristiane_ramos/" "Mais informações" >}}.
 
-Prof. Sergio Antônio Andrade de Freitas
+**Prof. Sergio Antônio Andrade de Freitas**
 
 Acadêmico na área de Metodologias Ativas de Aprendizagem e membro do corpo docente da Universidade de Brasília - UnB, atua no curso de Engenharia de Software. Na sua carreira acadêmica, exerceu papéis administrativos significativos, incluindo Decano (Pró-reitor) de Ensino de Graduação e diretor do Centro de Educação a Distância (CEAD). Sua dedicação ao avanço do conhecimento em Metodologias Ativas, tanto em Engenharia quanto em Computação, junto com suas contribuições em {{< link-interno "/areas/learning_analytics" "Learning Analytics" >}}, ressaltam sua expertise e compromisso com a inovação educacional​​. Atualmente é presidente da comissão gestora do programa [Aprendizagem para o 3º Milênio](http://a3m.unb.br/) (A3M). {{< link-interno "/people/sergio_freitas/" "Mais informações" >}}.
 
 ## Equipe de pesquisadores
-
-- {{< link-interno "/people/ricardo_ajax" "Ricardo Ajax Dias Kosloski" >}}, Prof. do curso de Engenharia de Software.
-    
-- {{< link-interno "/people/george_marsicano" "George Marsicano Côrrea" >}}, Prof. do curso de Engenharia de Software.
-
+{{< filterPeople caput="#### Pesquisadores" categories="researcher" advisors="" tags="active_learning,education" notags="inactive" nocats="cristiane_ramos,sergio_freitas">}}
 {{< filterPeople caput="#### PhD" categories="phd_candidate" advisors="" tags="active_learning,education" notags="inactive">}}
-{{< filterPeople caput="#### Master's degree" categories="master_student" advisors="" tags="active_learning,education" notags="inactive">}}
-{{< filterPeople caput="#### Postgraduate Specialization" categories="specialization" advisors="" tags="active_learning,education" notags="inactive">}}
-{{< filterPeople caput="#### Undergraduate Research" categories="scientific_initiation" advisors="" tags="active_learning,education" notags="inactive">}}
-{{< filterPeople caput="#### Bachelor's Thesis" categories="tcc" advisors="" tags="active_learning,education" notags="inactive">}}
+{{< filterPeople caput="#### Mestrado" categories="master_student" advisors="" tags="active_learning,education" notags="inactive">}}
+{{< filterPeople caput="#### Especialização" categories="specialization" advisors="" tags="active_learning,education" notags="inactive">}}
+{{< filterPeople caput="#### Inicação Científica" categories="scientific_initiation" advisors="" tags="active_learning,education" notags="inactive">}}
+{{< filterPeople caput="#### TCC" categories="tcc" advisors="" tags="active_learning,education" notags="inactive">}}
 
 <div id="previous-collaborators" x-data="{ showPrevious: false }">
     <h2 id="former-collaborators-title" @click="showPrevious = !showPrevious" class="text-xl font-bold mb-2 cursor-pointer flex items-center text-primary-900">
@@ -48,16 +44,14 @@ Acadêmico na área de Metodologias Ativas de Aprendizagem e membro do corpo doc
       <svg :class="{'rotate-0': !showPrevious, 'rotate-180': showPrevious}" class="ml-2 h-5 w-5 transform transition-transform duration-200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#51C5CF"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
     </h2>
     <div x-show="showPrevious" x-cloak>
-    {{< publications caput="#### PhD" year="" types="phd" advisors="" notypes="" tags="active_learning,education" notags="active" >}}
-    {{< publications caput="#### Master's degree" year="" types="dissertation" advisors="" notypes="" tags="active_learning,education" notags="active" >}}
-    {{< publications caput="#### Postgraduate Specialization" year="" types="specialization" advisors="" notypes="" tags="active_learning,education" notags="active" >}}
-    {{< filterPeople caput="#### Undergraduate Research" categories="scientific_initiation" advisors="" tags="active_learning,education,inactive" notags="active">}}
-    {{< publications caput="#### Bachelor's Thesis" year="" types="tcc" advisors="" notypes="" tags="active_learning,education" notags="active" >}}
+    {{< publications caput="#### PhD" year="" types="phd" advisors="" notypes="" tags="active_learning,education" notags="active,sergio_freitas" >}}
+    {{< publications caput="#### Mestrado" year="" types="dissertation" advisors="" notypes="" tags="active_learning,education" notags="active,sergio_freitas" >}}
+    {{< publications caput="#### Especialização" year="" types="specialization" advisors="" notypes="" tags="active_learning,education" notags="active" >}}
+    {{< filterPeople caput="#### Iniciação Científica" categories="scientific_initiation" advisors="" tags="active_learning,education,inactive" notags="active">}}
+    {{< publications caput="#### TCC" year="" types="tcc" advisors="" notypes="" tags="active_learning,education" notags="active" >}}
     {{< backToTopBtn target="top" >}}
     </div>
-
-  </div>
-    
+  </div>  
 
 ## Projetos em andamento
 

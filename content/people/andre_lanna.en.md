@@ -10,6 +10,7 @@ authorimage: ../assets/images/global/author.webp
 categories:
 - people
 - researcher
+- andre_lanna
 tags: 
 - dfcris
 - software_architecture

@@ -10,6 +10,7 @@ authorimage: ../assets/images/global/author.webp
 categories:
 - people
 - researcher
+- sergio_freitas
 tags: 
 - gamification
 - ai

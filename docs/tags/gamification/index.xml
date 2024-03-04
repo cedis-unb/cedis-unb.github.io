@@ -6,7 +6,7 @@
     <description>Recent content in Gamification on CEDIS</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 01 Mar 2024 18:17:14 -0300</lastBuildDate>
+    <lastBuildDate>Sun, 03 Mar 2024 19:10:52 -0300</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/gamification/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Gamification</title>
@@ -28,6 +28,13 @@
       <pubDate>Wed, 14 Feb 2024 00:49:57 -0300</pubDate>
       <guid>http://localhost:1313/people/sergio_freitas/</guid>
       <description>Full Professor at the University of Brasília (UnB), working in the undergraduate Software Engineering program and the Graduate Program in Applied Computing.</description>
+    </item>
+    <item>
+      <title>George Marsicano Correa</title>
+      <link>http://localhost:1313/people/george_marsicano/</link>
+      <pubDate>Wed, 14 Feb 2024 00:48:51 -0300</pubDate>
+      <guid>http://localhost:1313/people/george_marsicano/</guid>
+      <description>Associate Professor at the University of Brasília (UnB), working in the undergraduate Software Engineering program and the Graduate Program in Applied Computing.</description>
     </item>
     <item>
       <title>Cristiane Soares Ramos</title>

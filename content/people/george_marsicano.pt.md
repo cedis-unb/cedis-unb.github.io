@@ -10,10 +10,13 @@ authorimage: ../assets/images/global/author.webp
 categories:
 - people
 - researcher
+- george_marsicano
 tags: 
 - digital_transformation
 - software_requirements
 - software_architecture
+- gamification
+- active_learning
 - project_td
 nav_next: true
 ---
