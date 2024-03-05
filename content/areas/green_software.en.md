@@ -69,6 +69,6 @@ Coordinated by Prof. Fabiana Mendes, the research line's goal is to promote soft
 </div>
 
 ## {{< i18n "area_contact" >}}
-- Email for information and team contact: [fabianamendes@unb.br](fabianamendes@unb.br).
+- Email for information and team contact: [fabianamendes@unb.br](mailto:fabianamendes@unb.br).
 
 {{< tags >}}

@@ -69,6 +69,6 @@ At CEDIS, Requirements Engineering is currently a research, development, and app
 </div>
 
 ## {{< i18n "area_contact" >}}
-- Email for information and team contact: [georgemarsicano@unb.br](georgemarsicano@unb.br).
+- Email for information and team contact: [georgemarsicano@unb.br](mailto:georgemarsicano@unb.br).
 
 {{< tags >}}

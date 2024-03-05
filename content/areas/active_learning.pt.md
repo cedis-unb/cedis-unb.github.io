@@ -67,11 +67,11 @@ Acadêmico na área de Metodologias Ativas de Aprendizagem e membro do corpo doc
 
 {{< postsByCategoriesTags categories="project" tags="active_learning,education" >}}
 
-1. Projeto de ensino, disciplina "Desenvolvimento de Software", Prof. Sérgio Freitas: Revitalizada pela gamificação "Alvorecer Feudal" e inspirada em um cenário feudal e baseada no modelo Octalysis, esta abordagem transforma o aprendizado em uma jornada interativa, onde os alunos enfrentam desafios práticos do desenvolvimento de software, promovendo habilidades como pensamento crítico e colaboração. A experiência lúdica não só engaja os estudantes, mas também os prepara para desafios reais na área de software.  
+- **Projeto de ensino, disciplina "Desenvolvimento de Software", Prof. Sérgio Freitas:** Revitalizada pela gamificação "Alvorecer Feudal" e inspirada em um cenário feudal e baseada no modelo Octalysis, esta abordagem transforma o aprendizado em uma jornada interativa, onde os alunos enfrentam desafios práticos do desenvolvimento de software, promovendo habilidades como pensamento crítico e colaboração. A experiência lúdica não só engaja os estudantes, mas também os prepara para desafios reais na área de software.  
     Recursos disponíveis: Aplicativo mobile MS Power Apps, site Sharepoint, dashboards no Power BI e um guia temático do jogador, todos integrados à plataforma Microsoft 365.  
     Início: 2021, status: em andamento.
     
-2. Projeto de ensino, disciplina "Interação Humano-Computador", Prof. Sérgio Freitas: oferecida no curso de Engenharia de Software da Universidade de Brasília, adotou uma abordagem pedagógica inovadora através da implementação de uma gamificação no formato de RPG Feudal, baseada no modelo Octalysis e chamada de "Jornada IHC". Esta metodologia tem como finalidade enriquecer o processo de aprendizado, tornando-o mais atraente e eficiente para os alunos. Integrando elementos de jogos de RPG, como batalhas, quests e missões, ao currículo acadêmico, a gamificação busca facilitar o entendimento dos conceitos fundamentais da disciplina, ao mesmo tempo em que estimula o engajamento e a motivação dos estudantes ao longo do semestre.  
+- **Projeto de ensino, disciplina "Interação Humano-Computador", Prof. Sérgio Freitas:** oferecida no curso de Engenharia de Software da Universidade de Brasília, adotou uma abordagem pedagógica inovadora através da implementação de uma gamificação no formato de RPG Feudal, baseada no modelo Octalysis e chamada de "Jornada IHC". Esta metodologia tem como finalidade enriquecer o processo de aprendizado, tornando-o mais atraente e eficiente para os alunos. Integrando elementos de jogos de RPG, como batalhas, quests e missões, ao currículo acadêmico, a gamificação busca facilitar o entendimento dos conceitos fundamentais da disciplina, ao mesmo tempo em que estimula o engajamento e a motivação dos estudantes ao longo do semestre.  
     Recursos disponíveis: Aplicativo mobile MS Power Apps, site Sharepoint e um guia temático do jogador, todos integrados à plataforma Microsoft 365.   
     Início: 2022, status: em andamento.
 
@@ -90,15 +90,15 @@ Acadêmico na área de Metodologias Ativas de Aprendizagem e membro do corpo doc
 
 ### {{< i18n "area_course_and_classes" >}}
 
-1. FREITAS, Sergio. A. A. ; RAMOS, CRISTIANE SOARES ; MORTARI, Márcia. R. ; VIANA, Diane. M. ; BESSA, Eduardo. Oficina - Indicadores de Aprendizagem. 2022. (Curso de curta duração ministrado/Outra).
+- FREITAS, Sergio. A. A. ; RAMOS, CRISTIANE SOARES ; MORTARI, Márcia. R. ; VIANA, Diane. M. ; BESSA, Eduardo. Oficina - Indicadores de Aprendizagem. 2022. (Curso de curta duração ministrado/Outra).
     
-2. Fundamentos de Arquitetura de Computadores, gamificada como "Batalha do conhecimento": A disciplina reestruturada como "Batalha do Conhecimento", uma experiência educacional gamificada. Este formato inovador, baseado nos conceitos de McGonigal e no framework Octalysis, transforma a sala de aula em um espaço interativo de aprendizado. Os alunos participam de duelos de conhecimento, respondendo perguntas sobre tópicos da disciplina, e ganham "patacas" baseadas na qualidade de suas respostas. Os conteúdos estão previamente disponibilidados através dos livros texto adotados na discplina, incentivando o estudo prévio. A gamificação mostrou-se eficaz em aumentar o engajamento e o prazer dos alunos no processo de aprendizagem​​​​. 2015. Autor: {{< link-interno "/people/sergio_freitas" "Sergio Freitas" >}}.  
+- Fundamentos de Arquitetura de Computadores, gamificada como "Batalha do conhecimento": A disciplina reestruturada como "Batalha do Conhecimento", uma experiência educacional gamificada. Este formato inovador, baseado nos conceitos de McGonigal e no framework Octalysis, transforma a sala de aula em um espaço interativo de aprendizado. Os alunos participam de duelos de conhecimento, respondendo perguntas sobre tópicos da disciplina, e ganham "patacas" baseadas na qualidade de suas respostas. Os conteúdos estão previamente disponibilidados através dos livros texto adotados na discplina, incentivando o estudo prévio. A gamificação mostrou-se eficaz em aumentar o engajamento e o prazer dos alunos no processo de aprendizagem​​​​. 2015. Autor: {{< link-interno "/people/sergio_freitas" "Sergio Freitas" >}}.  
     Recursos disponíveis: Formulários padronizados para acompanhamento dos duelos e planilhas para identificação de perfis semelhantes de atuação dos jogadores. Início: 2015, encerrado em 2017.
 
 ### {{< i18n "area_useful_link" >}}
 - Programa [Aprendizagem para o 3º Milênio](http://a3m.unb.br/) (A3M) da Universidade de Brasília.
 
 ## {{< i18n "area_contact" >}}
-- E-mail para informações e contato com a equipe: [cristanesramos@unb.br](cristanesramos@unb.br) or [sergiofreitas@unb.br](sergiofreitas@unb.br).
+- E-mail para informações e contato com a equipe: [cristanesramos@unb.br](mailto:cristanesramos@unb.br) or [sergiofreitas@unb.br](mailto:sergiofreitas@unb.br).
 
 {{< tags >}}

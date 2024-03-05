@@ -22,7 +22,8 @@ Software Architecture is a key field in systems engineering that encompasses the
 ## {{< i18n "area_coordinator" >}}
 **Prof. André Lanna**
 <div style="margin-left: 20px;">
-A professor and researcher in the field of Software Architecture. Currently, he serves as an associate professor at the University of Brasília, significantly contributing to the undergraduate Software Engineering program at the Gama campus and the Graduate Program in Applied Computing. <br>
+A professor and researcher in the field of Software Architecture. Currently, he serves as an associate professor at the University of Brasília, significantly contributing to the undergraduate Software Engineering program at the Gama campus and the Graduate Program in Applied Computing. 
+<br>
 {{< link-interno "/people/andre_lanna" "area_more_about" >}}
 </div>
 
@@ -68,6 +69,6 @@ A professor and researcher in the field of Software Architecture. Currently, he 
 </div>
 
 ## {{< i18n "area_contact" >}}
-- Email for information and team contact: [andrelanna@unb.br](andrelanna@unb.br).
+- Email for information and team contact: [andrelanna@unb.br](mailto:andrelanna@unb.br).
 
 {{< tags >}}

@@ -69,6 +69,6 @@ At CEDIS, Software Product Line Engineering is a key area of research, developme
 </div>
 
 ## {{< i18n "area_contact" >}}
-- Email for information and team contact: [andrelanna@unb.br](andrelanna@unb.br).
+- Email for information and team contact: [andrelanna@unb.br](mailto:andrelanna@unb.br).
 
 {{< tags >}}

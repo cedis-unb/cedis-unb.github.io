@@ -76,6 +76,6 @@ In the Brazilian context, after a population growth peak between the 50s/60s, im
 </div>
 
 ## {{< i18n "area_contact" >}}
-- Email for information and team contact: [georgemarsicano@unb.br](georgemarsicano@unb.br).
+- Email for information and team contact: [georgemarsicano@unb.br](mailto:georgemarsicano@unb.br).
 
 {{< tags >}}

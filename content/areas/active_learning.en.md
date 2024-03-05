@@ -90,14 +90,14 @@ Start: 2022, status: ongoing.
 
 ### {{< i18n "area_course_and_classes" >}}
 
-1. FREITAS, Sergio A. A.; RAMOS, CRISTIANE SOARES; MORTARI, Márcia R.; VIANA, Diane M.; BESSA, Eduardo. *Workshop - Learning Indicators*, 2022. (Short course/Other).
+- FREITAS, Sergio A. A.; RAMOS, CRISTIANE SOARES; MORTARI, Márcia R.; VIANA, Diane M.; BESSA, Eduardo. *Workshop - Learning Indicators*, 2022. (Short course/Other).
 
-2. *Fundamentals of Computer Architecture, Gamified as "Knowledge Battle"*: The course restructured as "Knowledge Battle", a gamified educational experience. This innovative format, based on the concepts of McGonigal and the Octalysis framework, transforms the classroom into an interactive learning space. Students participate in knowledge duels, answering questions about topics from the discipline, and earn "coins" based on the quality of their responses. The contents are previously available through the textbooks adopted in the discipline, encouraging prior study. Gamification proved effective in increasing student engagement and enjoyment in the learning process. 2015. Author: Sergio Freitas. Resources available: Standardized forms for monitoring duels and spreadsheets for identifying similar performance profiles. Start: 2015, concluded in 2017.
+- *Fundamentals of Computer Architecture, Gamified as "Knowledge Battle"*: The course restructured as "Knowledge Battle", a gamified educational experience. This innovative format, based on the concepts of McGonigal and the Octalysis framework, transforms the classroom into an interactive learning space. Students participate in knowledge duels, answering questions about topics from the discipline, and earn "coins" based on the quality of their responses. The contents are previously available through the textbooks adopted in the discipline, encouraging prior study. Gamification proved effective in increasing student engagement and enjoyment in the learning process. 2015. Author: Sergio Freitas. Resources available: Standardized forms for monitoring duels and spreadsheets for identifying similar performance profiles. Start: 2015, concluded in 2017.
 
 ### {{< i18n "area_useful_link" >}}
 - [Learning for the 3rd Millennium Program (A3M)](http://a3m.unb.br/) at the University of Brasília.
 
 ## {{< i18n "area_contact" >}}
-- Email for information and team contact: [cristanesramos@unb.br](cristanesramos@unb.br) or [sergiofreitas@unb.br](sergiofreitas@unb.br).
+- Email for information and team contact: [cristanesramos@unb.br](mailto:cristanesramos@unb.br) or [sergiofreitas@unb.br](mailto:sergiofreitas@unb.br).
 
 {{< tags >}}
