@@ -52,9 +52,7 @@ Professor e pesquisador na área de Inteligência Artificial (IA) e Processament
 
 
 ## Projetos em Andamento
-{{< postsByCategoriesTags categories="project,ai,nlp,machine_learning" >}}
-DFCris - Categorização e busca de área CAPES para documentos de informação científica
-Financiamento: FAP-DF, Início 2022, status: em andamento.
+{{< postsByCategoriesTags categories="project" tags="ai,nlp,machine_learning" >}}
 
 ## Publicações e produções
 <div id="npublications-section" x-data="{ showPublications: false }">

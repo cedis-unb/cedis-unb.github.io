@@ -28,14 +28,14 @@ As metodologias ativas no ensino superior têm ganhado crescente relevância no 
 <div style="margin-left: 20px;">
 Destacada acadêmica na área de Metodologias Ativas de Aprendizagem, com uma sólida base em Engenharia de Software e Gestão do Conhecimento. Atuando como professora no curso de Engenharia de Software da Universidade de Brasília, ela tem contribuído significativamente para o avanço da educação e pesquisa em software. Atualmente é membro da comissão gestora do programa <a href="http://a3m.unb.br/" target="_blank" rel="noopener noreferrer">Aprendizagem para o 3º Milênio</a> (A3M).
 <br>
-{{< link-interno "/people/cristiane_ramos" "Mais sobre a coordenadora" >}}
+{{< link-interno "/people/cristiane_ramos" "area_more_about_a" >}}
 </div>
 
 **Prof. Sergio Antônio Andrade de Freitas**
 <div style="margin-left: 20px;">
 Acadêmico na área de Metodologias Ativas de Aprendizagem e membro do corpo docente da Universidade de Brasília - UnB, atua no curso de Engenharia de Software. Na sua carreira acadêmica, exerceu papéis administrativos significativos, incluindo Decano (Pró-reitor) de Ensino de Graduação e diretor do Centro de Educação a Distância (CEAD). Sua dedicação ao avanço do conhecimento em Metodologias Ativas, tanto em Engenharia quanto em Computação, junto com suas contribuições em {{< link-interno "/areas/learning_analytics" "Learning Analytics" >}}, ressaltam sua expertise e compromisso com a inovação educacional​​. Atualmente é presidente da comissão gestora do programa <a href="http://a3m.unb.br/" target="_blank" rel="noopener noreferrer">Aprendizagem para o 3º Milênio</a> (A3M).
 <br>
-{{< link-interno "/people/sergio_freitas" "Mais sobre o coordenador" >}}
+{{< link-interno "/people/sergio_freitas" "area_more_about" >}}
 </div>
 
 ## {{< i18n "area_research_team" >}}
@@ -64,6 +64,8 @@ Acadêmico na área de Metodologias Ativas de Aprendizagem e membro do corpo doc
 
 
 ## {{< i18n "area_ongoing_projets" >}}
+
+{{< postsByCategoriesTags categories="project" tags="active_learning,education" >}}
 
 1. Projeto de ensino, disciplina "Desenvolvimento de Software", Prof. Sérgio Freitas: Revitalizada pela gamificação "Alvorecer Feudal" e inspirada em um cenário feudal e baseada no modelo Octalysis, esta abordagem transforma o aprendizado em uma jornada interativa, onde os alunos enfrentam desafios práticos do desenvolvimento de software, promovendo habilidades como pensamento crítico e colaboração. A experiência lúdica não só engaja os estudantes, mas também os prepara para desafios reais na área de software.  
     Recursos disponíveis: Aplicativo mobile MS Power Apps, site Sharepoint, dashboards no Power BI e um guia temático do jogador, todos integrados à plataforma Microsoft 365.  
