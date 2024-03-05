@@ -30,7 +30,7 @@ Pesquisador no campo da <i>Learning Analytics</i> e Gestão Educacional, é prof
 
 **Profa. Cristiane Soares Ramos**
 <div style="margin-left: 20px;">
-Acadêmica na área de *Learning Analytics* e Gestão Educacional. Atua como professora no curso de Engenharia de Software da Universidade de Brasília, onde se destaca por sua abordagem inovadora e compromisso com a qualidade de ensino e pesquisa. Sua especialização em Gestão do Conhecimento e Tecnologia da Informação, com foco na qualidade de software, a posiciona na vanguarda da integração de tecnologias educacionais e análise de dados no processo de aprendizagem. 
+Acadêmica na área de <i>Learning Analytics</i> e Gestão Educacional. Atua como professora no curso de Engenharia de Software da Universidade de Brasília, onde se destaca por sua abordagem inovadora e compromisso com a qualidade de ensino e pesquisa. Sua especialização em Gestão do Conhecimento e Tecnologia da Informação, com foco na qualidade de software, a posiciona na vanguarda da integração de tecnologias educacionais e análise de dados no processo de aprendizagem. 
 <br>
 {{< link-interno "/people/cristiane_soares" "area_more_about_a" >}}
 </div>
