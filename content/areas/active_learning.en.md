@@ -28,14 +28,14 @@ Active learning methodologies in higher education have gained increasing relevan
 <div style="margin-left: 20px;">
 A distinguished academic in the field of Active Learning Methodologies, with a solid foundation in Software Engineering and Knowledge Management. Serving as a professor in the Software Engineering course at the University of Brasília, she has significantly contributed to the advancement of education and research in software. She is currently a member of the management committee of the Learning for the 3rd Millennium program (A3M). 
 <br>
-{{< link-interno "/people/cristiane_ramos" "More about the coordinator" >}}
+{{< link-interno "/people/cristiane_ramos" "area_more_about_a" >}}
 </div>
 
 **Prof. Sergio Antônio Andrade de Freitas**
 <div style="margin-left: 20px;">
 An academic in the field of Active Learning Methodologies and a faculty member at the University of Brasília - UnB, he teaches in the Software Engineering course. Throughout his academic career, he has held significant administrative roles, including Dean of Undergraduate Studies and director of the Distance Education Center (CEAD). His dedication to advancing knowledge in Active Methodologies, both in Engineering and Computing, along with his contributions in Learning Analytics, highlight his expertise and commitment to educational innovation. He is currently the president of the management committee of the Learning for the 3rd Millennium program (A3M). 
 <br>
-{{< link-interno "/people/sergio_freitas" "More about the coordinator" >}}
+{{< link-interno "/people/sergio_freitas" "area_more_about" >}}
 </div>
 
 ## {{< i18n "area_research_team" >}}
@@ -53,10 +53,10 @@ An academic in the field of Active Learning Methodologies and a faculty member a
       <svg :class="{'rotate-0': !showPrevious, 'rotate-180': showPrevious}" class="ml-2 h-5 w-5 transform transition-transform duration-200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#51C5CF"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
     </h2>
     <div x-show="showPrevious" x-cloak>
-    {{< publications caput="#### " caputKey="phd_candidate"  year="" types="phd" advisors="" notypes="" tags="active_learning,education" notags="active,sergio_freitas" >}}
-    {{< publications caput="#### " caputKey="master_student" year="" types="dissertation" advisors="" notypes="" tags="active_learning,education" notags="active,sergio_freitas" >}}
+    {{< publications caput="#### " caputKey="phd_candidate"  year="" types="phd" advisors="" notypes="" tags="active_learning,education" notags="active" >}}
+    {{< publications caput="#### " caputKey="master_student" year="" types="dissertation" advisors="" notypes="" tags="active_learning,education" notags="active" >}}
     {{< publications caput="#### " caputKey="specialization" year="" types="specialization" advisors="" notypes="" tags="active_learning,education" notags="active" >}}
-    {{< filterPeople caput="#### " caputKey="scientific_initiation" categories="scientific_initiation" advisors="" tags="active_learning,education,inactive" notags="active">}}
+    {{< filterPeople caput="#### " caputKey="scientific_initiation" categories="scientific_initiation" advisors="" tags="active_learning,education" notags="active">}}
     {{< publications caput="#### " caputKey="tcc" year="" types="tcc" advisors="" notypes="" tags="active_learning,education" notags="active" >}}
     {{< backToTopBtn target="top" >}}
     </div>
@@ -64,6 +64,8 @@ An academic in the field of Active Learning Methodologies and a faculty member a
 
 
 ## {{< i18n "area_ongoing_projets" >}}
+
+{{< postsByCategoriesTags categories="project" tags="active_learning,education" >}}
 
 - **Teaching Project, "Software Development" Course, Prof. Sérgio Freitas:** Revitalized through gamification "Dawn Feudal" and inspired by a feudal scenario and based on the Octalysis model, this approach transforms learning into an interactive journey, where students face practical software development challenges, promoting skills like critical thinking and collaboration. The playful experience not only engages students but also prepares them for real-world software challenges.
 Available resources: MS Power Apps mobile app, SharePoint site, Power BI dashboards, and a thematic player's guide, all integrated into the Microsoft 365 platform.

@@ -1,2 +1,19 @@
-<!-- layouts/shortcodes/link-interno.html -->
-<a href="{{ .Get 0 | absLangURL }}">{{ .Get 1 }}</a>
+{{ $url := .Get 0 }}
+{{ $text := .Get 1 }}
+{{ $translation := i18n $text }}
+
+<a href="{{ $url }}" class="internal-link" style="display: inline-flex; align-items: center; text-decoration: none;">
+  {{ if eq $translation "" }}
+    {{/* Se o termo traduzido for igual ao texto fornecido, assume-se que a tradução não existe. */}}
+    {{ $text }}
+  {{ else }}
+    {{/* Se forem diferentes, uma tradução foi encontrada. */}}
+    {{ $translation }}
+  {{ end }}
+  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <g transform="rotate(-45 12 12)">
+      <line x1="6" y1="12" x2="18" y2="12"></line>
+      <polyline points="12 6 18 12 12 18"></polyline>
+    </g>
+  </svg>
+</a>
