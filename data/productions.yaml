@@ -4863,7 +4863,7 @@ items:
       \ de consultas em motores de busca open source. Avaliaremos qual algoritmo oferece\
       \ maior precisão, utilizando métricas de precisão x recall, quais permitem um\
       \ grau de personalização nas consultas, incluindo perfis de usuários das quatro\
-      \ engenharias da Universidade de Brasília \x96 Faculdade do Gama, e como a engenharia\
+      \ engenharias da Universidade de Brasília - Faculdade do Gama, e como a engenharia\
       \ de software pode aprimorar a ordenação e recuperação de informações."
     en: "The quest for information originated from libraries, where it was possible\
       \ to retrieve necessary data through consultations using catalog cards, organizing\
@@ -4879,7 +4879,7 @@ items:
       \ search engines. We will evaluate which algorithm offers greater accuracy,\
       \ using precision x recall metrics, which allow for a degree of customization\
       \ in queries, including user profiles from the four engineering courses at the\
-      \ University of Brasília \x96 Faculdade do Gama, and how software engineering\
+      \ University of Brasília - Faculdade do Gama, and how software engineering\
       \ can enhance the sorting and retrieval of information."
   book_title: ''
   volume: ''
