@@ -61,6 +61,17 @@ area_apps: "Apps and programs"
 area_useful_link: "Resources & Useful Links"
 area_contact: "Contact & Collaboration"
 
+# People topic sections
+people_profile: "Academic and Professional Profile"
+people_background: "Academic Background"
+people_research_areas: "Research Areas"
+people_contributions: "Contributions and Acknowledgments"
+people_current_projects: "Current Projects"
+people_supervisory_experience: "Supervisory Experience"
+people_current_supervisions: "Current Supervisions"
+people_former_supervisions: "Former Supervisions"
+people_contact: "Contact"
+people_contact_professional: "Professional Address"
 
 # Participation Types
 researcher: "Researchers"
