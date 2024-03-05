@@ -75,4 +75,5 @@ Professor and researcher in the field of Artificial Intelligence (AI) and Natura
 
 ## {{< i18n "area_contact" >}}
 For information and contact with the team: [sergiofreitas@unb.br](mailto:sergiofreitas@unb.br).
+
 {{< tags >}}

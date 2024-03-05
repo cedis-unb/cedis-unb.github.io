@@ -32,7 +32,7 @@ In summary, software quality is not an attribute that can be added after develop
 **Prof. Ricardo Ajax**
 <div style="margin-left: 20px;">
 <br>
-{{< link-interno "/people/ricardo_ajax" "area_more_about_a" >}}
+{{< link-interno "/people/ricardo_ajax" "area_more_about" >}}
 </div>
 
 ## {{< i18n "area_research_team" >}}
@@ -78,6 +78,6 @@ In summary, software quality is not an attribute that can be added after develop
 </div>
 
 ## {{< i18n "area_contact" >}}
-- Email for information and team contact: [ricardoajax@unb.br](ricardoajax@unb.br).
+- Email for information and team contact: [ricardoajax@unb.br](mailto:ricardoajax@unb.br).
 
 {{< tags >}}

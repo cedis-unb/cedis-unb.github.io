@@ -71,6 +71,6 @@ At CEDIS, Verification, Validation, and Testing are considered fundamental pilla
 </div>
 
 ## {{< i18n "area_contact" >}}
-- Email for information and team contact: [cristianesramos@unb.br](cristianesramos@unb.br).
+- Email for information and team contact: [cristianesramos@unb.br](mailto:cristianesramos@unb.br).
 
 {{< tags >}}
