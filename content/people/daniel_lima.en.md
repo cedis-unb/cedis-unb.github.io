@@ -13,6 +13,7 @@ categories:
 - daniel_sundfeld
 tags: 
 - hpc
+- project_laguna
 nav_next: true
 ---
 <div id="top"></div>
