@@ -12,9 +12,9 @@ categories:
 - researcher
 - andre_lanna
 tags: 
-- dfcris
 - software_architecture
 - software_product_line
+- dfcris
 nav_next: true
 ---
 <div id="top"></div>
