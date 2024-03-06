@@ -15,7 +15,7 @@ languages:
       moto: "Bem vindo(a)!"  
       description: "Descubra o futuro da Engenharia de Software, da Aprendizagem e da Inteligência Artificial. \n Desde 2013, o Centro de Estudos, Desenvolvimento e Inovação em Software tem liderado projetos inovadores de pesquisa, desenvolvimento e educação."
       seemore: 
-        text: "Explore o CEDIS"
+        text: "Conheça o CEDIS"
         link: /categories/knowledge_areas/
       authorimage: "../assets/images/global/sample-logo.svg"
       og_image: "/images/cedis-cover.png"
