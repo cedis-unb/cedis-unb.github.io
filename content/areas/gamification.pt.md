@@ -55,9 +55,6 @@ Especialista em gamificação e professor Titular da Universidade de Brasíli
 ## {{< i18n "area_ongoing_projets" >}}
 
 {{< postsByCategoriesTags categories="project" tags="gamification" >}}
-
-- Projeto de ensino, disciplina "Desenvolvimento de Software": Revitalizada pela gamificação "Alvorecer Feudal" e inspirada em um cenário feudal e baseada no modelo Octalysis, esta abordagem transforma o aprendizado em uma jornada interativa, onde os alunos enfrentam desafios práticos do desenvolvimento de software, promovendo habilidades como pensamento crítico e colaboração. A experiência lúdica não só engaja os estudantes, mas também os prepara para desafios reais na área de software.  
-    Recursos disponíveis: Aplicativo mobile MS Power Apps, site Sharepoint, dashboards no Power BI e um guia temático do jogador, todos integrados à plataforma Microsoft 365. Início: 2021, status: em andamento.
 - Projeto de ensino, disciplina "Interação Humano-Computador": oferecida no curso de Engenharia de Software da Universidade de Brasília, adotou uma abordagem pedagógica inovadora através da implementação de uma gamificação no formato de RPG Feudal, baseada no modelo Octalysis e chamada de "Jornada IHC". Esta metodologia tem como finalidade enriquecer o processo de aprendizado, tornando-o mais atraente e eficiente para os alunos. Integrando elementos de jogos de RPG, como batalhas, quests e missões, ao currículo acadêmico, a gamificação busca facilitar o entendimento dos conceitos fundamentais da disciplina, ao mesmo tempo em que estimula o engajamento e a motivação dos estudantes ao longo do semestre.  
     Recursos disponíveis: Aplicativo mobile MS Power Apps, site Sharepoint e um guia temático do jogador, todos integrados à plataforma Microsoft 365. Início: 2022, status: em andamento.
 

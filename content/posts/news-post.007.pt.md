@@ -15,6 +15,7 @@ tags:
 - News
 - active_learning
 - gamification
+- project_jornada
 ---
 Brasília, 1 de março de 2023
 

@@ -43,3 +43,10 @@ projects:
       pt: "Projeto Alvorecer Feudal"
     researchers:
       - sergio_freitas
+
+  - id: project_jornada
+    name: 
+      en: "HCI Journey Project"
+      pt: "Projeto Jornada IHC"
+    researchers:
+      - sergio_freitas
