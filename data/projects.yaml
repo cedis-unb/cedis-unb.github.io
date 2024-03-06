@@ -36,3 +36,10 @@ projects:
       pt: "Projeto Transformação Digital"
     researchers: 
       - george_marsicano
+
+  - id: project_alvorecer
+    name: 
+      en: "Project Alvorecer Feudal"
+      pt: "Projeto Alvorecer Feudal"
+    researchers:
+      - sergio_freitas
