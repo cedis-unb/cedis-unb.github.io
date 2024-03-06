@@ -5,9 +5,9 @@ date: 2024-03-04T17:08:50-03:00
 weight: 10
 language: pt
 featured_image: "../assets/images/featured/gamification_Alvorecer Feudal.png"
-summary: Projeto de ensino, uma inovação educacional promovida pelo CEDIS na Universidade de Brasília. 
+summary: Projeto de ensino, disciplina "Desenvolvimento de Software", uma inovação educacional promovida pelo CEDIS na Universidade de Brasília. 
 authorimage: ../assets/images/global/author.webp
-categories: 
+categories:
 - project
 - sergio_freitas
 - project_alvorecer

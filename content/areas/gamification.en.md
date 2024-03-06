@@ -56,8 +56,6 @@ Specialist in gamification and Full Professor at the University of Brasília - U
 
 {{< postsByCategoriesTags categories="project" tags="gamification" >}}
 
-- Teaching project, "Software Development" course: Revitalized by the "Feudal Dawn" gamification and inspired by a feudal scenario and based on the Octalysis model, this approach transforms learning into an interactive journey, where students face practical challenges of software development, promoting skills such as critical thinking and collaboration. The playful experience not only engages students but also prepares them for real challenges in the software field.  
-    Available resources: MS Power Apps mobile app, Sharepoint site, Power BI dashboards, and a thematic player's guide, all integrated into the Microsoft 365 platform. Start: 2021, status: ongoing.
 - Teaching project, "Human-Computer Interaction" course: offered in the Software Engineering course at the University of Brasília, adopted an innovative pedagogical approach through the implementation of a gamification in the form of Feudal RPG, based on the Octalysis model and called "HCI Journey". This methodology aims to enrich the learning process, making it more attractive and efficient for students. Integrating RPG game elements, such as battles, quests, and missions, into the academic curriculum, the gamification seeks to facilitate the understanding of fundamental concepts of the discipline, while stimulating student engagement and motivation throughout the semester.  
     Available resources: MS Power Apps mobile app, Sharepoint site, and a thematic player's guide, all integrated into the Microsoft 365 platform. Start: 2022, status: ongoing.
 

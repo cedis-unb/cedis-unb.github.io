@@ -12,26 +12,26 @@ categories:
 tags: [  ]
 ---
 ## Desenvolvimento e Engenharia de Software
-- {{< link-interno "/areas/software_architecture" "Arquitetura de Software" >}}
-- {{< link-interno "/areas/software_requirements" "Engenharia de Requisitos" >}}
-- {{< link-interno "/areas/verival" "Verificação, Validação e Testes" >}}
-- {{< link-interno "/areas/software_products" "Engenharia de Linhas de Produto de Software" >}}
-- {{< link-interno "/areas/software_quality" "Qualidade de Software" >}}
-- {{< link-interno "/areas/green_software" "Green Software Development" >}}
+{{< link-interno "/areas/software_architecture" "Arquitetura de Software" >}}<br>
+{{< link-interno "/areas/software_requirements" "Engenharia de Requisitos" >}}<br>
+{{< link-interno "/areas/verival" "Verificação, Validação e Testes" >}}<br>
+{{< link-interno "/areas/software_products" "Engenharia de Linhas de Produto de Software" >}}<br>
+{{< link-interno "/areas/software_quality" "Qualidade de Software" >}}<br>
+{{< link-interno "/areas/green_software" "Green Software Development" >}}
 ## Metodologias e Abordagens de Desenvolvimento
 - Abordagens de Desenvolvimento de Software (Ágeis, Dirigidas a Plano e Híbridas)
 - Formação e Capacitação de Equipes Ágeis
 ## Tecnologias Emergentes e Inovação
-- {{< link-interno "/areas/ai_pln" "Inteligência Artificial e Processamento de Linguagem Natural" >}}
-- {{< link-interno "/areas/hpc" "Computação de alto desempenho e computação em nuvem" >}}
-- {{< link-interno "/areas/transformation" "Transformação Digital" >}}
+{{< link-interno "/areas/ai_pln" "Inteligência Artificial e Processamento de Linguagem Natural" >}}<br>
+{{< link-interno "/areas/hpc" "Computação de alto desempenho e computação em nuvem" >}}<br>
+{{< link-interno "/areas/transformation" "Transformação Digital" >}}
 ## Aspectos Humanos e Gerenciais
-- {{< link-interno "/areas/soft_skills" "Trabalho em Equipe e Soft Skills" >}}
+- {{< link-interno "/areas/soft_skills" "Trabalho em Equipe e Soft Skills" >}}<br>
 - Aspectos Humanos na Engenharia de Software
 - Aspectos Humanos da Cybersegurança
 ## Educação e Aprendizagem
-- {{< link-interno "/areas/learning_analytics/" "Learning Analytics e gestão educacional" >}}
-- {{< link-interno "/areas/active_learning" "Metodologias ativas no Ensino Superior e Ciência da Aprendizagem" >}}
-- {{< link-interno "/areas/gamification/" "Gamificação" >}}
+{{< link-interno "/areas/learning_analytics/" "Learning Analytics e gestão educacional" >}}<br>
+{{< link-interno "/areas/active_learning" "Metodologias ativas no Ensino Superior e Ciência da Aprendizagem" >}}<br>
+{{< link-interno "/areas/gamification/" "Gamificação" >}}
 ## Pesquisa e Desenvolvimento em Produtos e Soluções de Software
 - Desenvolvimento, Pesquisa e Inovação em Produtos e Soluções de Software

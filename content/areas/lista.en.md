@@ -12,31 +12,31 @@ categories:
 tags: [  ]
 ---
 ## Software Development and Engineering
-- {{< link-interno "/areas/software_architecture" "Software Architecture" >}}
-- {{< link-interno "/areas/software_requirements" "Requirements Engineering" >}}
-- {{< link-interno "/areas/verival" "Verification, Validation and Testing" >}}
-- {{< link-interno "/areas/software_products" "Software Product Line Engineering" >}}
-- {{< link-interno "/areas/software_quality" "Software Quality" >}}
-- {{< link-interno "/areas/green_software" "Green Software Development" >}}
+{{< link-interno "/areas/software_architecture" "Software Architecture" >}}<br>
+{{< link-interno "/areas/software_requirements" "Requirements Engineering" >}}<br>
+{{< link-interno "/areas/verival" "Verification, Validation and Testing" >}}<br>
+{{< link-interno "/areas/software_products" "Software Product Line Engineering" >}}<br>
+{{< link-interno "/areas/software_quality" "Software Quality" >}}<br>
+{{< link-interno "/areas/green_software" "Green Software Development" >}}
 
 ## Development Methodologies and Approaches
 - Software Development Approaches (Agile, Plan-Driven and Hybrid)
 - Formation and Training of Agile Teams
 
 ## Emerging Technologies and Innovation
-- {{< link-interno "/areas/ai_pln" "Artificial Intelligence and Natural Language Processing" >}}
-- {{< link-interno "/areas/hpc" "High-Performance Computing and Cloud Computing" >}}
-- {{< link-interno "/areas/transformation" "Digital Transformation" >}}
+{{< link-interno "/areas/ai_pln" "Artificial Intelligence and Natural Language Processing" >}}<br>
+{{< link-interno "/areas/hpc" "High-Performance Computing and Cloud Computing" >}}<br>
+{{< link-interno "/areas/transformation" "Digital Transformation" >}}
 
 ## Human and Managerial Aspects
-- {{< link-interno "/areas/soft_skills" "Teamwork and Soft Skills" >}}
+- {{< link-interno "/areas/soft_skills" "Teamwork and Soft Skills" >}}<br>
 - Human Aspects in Software Engineering
 - Human Aspects of Cybersecurity
 
 ## Education and Learning
-- {{< link-interno "/areas/learning_analytics" "Learning Analytics and Educational Management" >}}
-- {{< link-interno "/areas/active_learning" "Active Learning Methodologies in Higher Education and Learning Science" >}}
-- {{< link-interno "/areas/gamification" "Gamification" >}}
+{{< link-interno "/areas/learning_analytics" "Learning Analytics and Educational Management" >}}<br>
+{{< link-interno "/areas/active_learning" "Active Learning Methodologies in Higher Education and Learning Science" >}}<br>
+{{< link-interno "/areas/gamification" "Gamification" >}}
 
 ## Research and Development in Software Products and Solutions
 - Development, Research, and Innovation in Software Products and Solutions
