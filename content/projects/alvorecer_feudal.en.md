@@ -1,11 +1,11 @@
 ---
 author: CEDIS
-title: "Projeto Alvorecer Feudal"
-date: 2024-03-06T17:08:50-03:00
+title: "Project Alvorecer Feudal"
+date: 2024-03-04T17:08:50-03:00
 weight: 10
 language: en
-featured_image: "../assets/images/featured/projeto_Canal Ciência.png"
-summary: Bem-vindo ao Alvorecer Feudal, uma inovação educacional promovida pelo CEDIS na Universidade de Brasília.
+featured_image: "../assets/images/featured/gamification_Alvorecer Feudal.png"
+summary: Teaching project, an educational innovation promoted by CEDIS at the University of Brasília.
 authorimage: ../assets/images/global/author.webp
 categories: 
 - project
@@ -15,27 +15,17 @@ tags:
 - gamification
 - project_alvorecer
 ---
+# Project Introduction
+Welcome to the Dawn of Feudalism, an educational innovation by CEDIS at the University of Brasília. Led by Professor Sergio Freitas, this teaching project transforms the Software Development course into a gamified journey, inspired by the richness and challenges of a feudal scenario. Using the Octalysis model to create a highly immersive experience, Dawn of Feudalism engages students with practical software challenges and fosters critical thinking and collaboration skills. In an environment where education blends with adventure, every student becomes a key part of an evolving narrative, preparing them not only for academic challenges but also for success in their future software engineering careers.
 
-**Introdução ao Projeto**: 
-Bem-vindo ao Alvorecer Feudal, uma inovação educacional promovida pelo CEDIS na Universidade de Brasília. Sob a liderança do professor Sergio Freitas, este projeto de ensino transforma a disciplina de Desenvolvimento de Software em uma jornada gamificada, inspirada na riqueza e desafios de um cenário feudal. Utilizando o modelo Octalysis para criar uma experiência altamente imersiva, o Alvorecer Feudal não apenas engaja os alunos através de desafios práticos de software, mas também cultiva habilidades vitais como pensamento crítico e colaboração. Em um ambiente onde a educação se mescla com a aventura, cada aluno se torna parte essencial de uma narrativa evolutiva, preparando-os não somente para enfrentar os desafios acadêmicos, mas também para prosperar em suas futuras carreiras na engenharia de software.
+# About the Project
+"Dawn of Feudalism" is a pioneering teaching project within the Software Development course, led by Dr. Sergio Freitas at the University of Brasília. Embracing a Project-Based Learning (PBL) approach, it incorporates gamification to make education an interactive and engaging experience. Students dive into a feudal-era inspired scenario, assuming dynamic roles such as dukes and knights, to tackle practical software development challenges. This methodology enhances technical learning and essential skills like critical thinking, teamwork, and decision-making. Through this playful experience, students are uniquely prepared for real-world challenges in software, deepening engagement and practical application of theoretical knowledge.
 
-**Sobre o Projeto**: 
-"Alvorecer Feudal" é um projeto inovador de ensino dentro da disciplina de Desenvolvimento de Software, conduzido pelo Dr. Sergio Freitas na Universidade de Brasília. Utilizando uma abordagem Project Based Learning (PBL), este projeto incorpora gamificação para transformar a educação em uma experiência altamente interativa e engajadora. Os alunos são imersos em um cenário inspirado na era feudal, assumindo papéis dinâmicos dentro do jogo, como duques e cavaleiros, para enfrentar desafios práticos de desenvolvimento de software. Essa metodologia promove não apenas o aprendizado técnico, mas também habilidades essenciais como pensamento crítico, trabalho em equipe e tomada de decisão. Por meio desta experiência lúdica, os estudantes são preparados de forma única para os desafios do mundo real na área de software, estimulando o engajamento profundo e a aplicação prática de conhecimentos teóricos.
+# Available Resources
+The "Dawn of Feudalism" project offers a range of advanced technological resources to enhance students' learning experiences. It includes a mobile app developed in MS Power Apps, acting as the game's main interface for interacting with the feudal scenario and managing fiefdoms. A SharePoint site centralizes information, educational resources, and student support. Power BI dashboards provide detailed analyses of player progress and fiefdoms. Additionally, a thematic player guide helps navigate the game, with all these resources integrated into the Microsoft 365 platform, ensuring a seamless learning experience.
 
-**Recursos Disponíveis**
+# Objectives and Benefits
+"Dawn of Feudalism" aims to provide an immersive learning experience, using gamification to teach software development in a practical and engaging way. Objectives include developing technical programming skills, fostering critical thinking, promoting effective teamwork, and improving decision-making ability. The benefits for students are significant: increased engagement with content, preparation for real-world software industry challenges, and a dynamic learning experience that encourages creativity and problem-solving.
 
-O projeto "Alvorecer Feudal" disponibiliza uma gama de recursos tecnológicos avançados, projetados para enriquecer a experiência de aprendizado dos alunos. Inclui um aplicativo mobile desenvolvido no MS Power Apps, que serve como a principal interface do jogo, permitindo a interação com o cenário feudal e a gestão dos feudos. Um site Sharepoint centraliza informações, recursos didáticos e suporte ao aluno. Dashboards no Power BI oferecem análises detalhadas do progresso dos jogadores e dos feudos. Adicionalmente, um guia temático do jogador é fornecido para auxiliar na navegação do jogo, todos esses recursos são integrados à plataforma Microsoft 365, garantindo uma experiência de aprendizado fluida e integrada.
-
-**Objetivos e Benefícios**
-
-O projeto "Alvorecer Feudal" visa proporcionar uma experiência de aprendizado imersiva, utilizando a gamificação para ensinar desenvolvimento de software de forma prática e engajadora. Seus objetivos incluem o desenvolvimento de habilidades técnicas em programação, o fomento do pensamento crítico, a promoção de trabalho em equipe eficaz, e a melhoria na capacidade de tomada de decisão. Os benefícios para os alunos são significativos: maior engajamento com o conteúdo, preparação para desafios reais na indústria de software, e uma experiência de aprendizado dinâmica que estimula a criatividade e a solução de problemas.
-
-**Depoimentos e Resultados**: 
-
-
-**Galeria de Mídias**: 
-
-
-**Como Participar/Contribuir**
-
-Para se envolver no projeto "Alvorecer Feudal", seja como aluno interessado em aprimorar suas habilidades em desenvolvimento de software, como docente buscando inovar em metodologias de ensino, ou como parceiro externo disposto a contribuir com recursos ou expertise, o principal ponto de contato é o Professor Sergio Freitas. Encorajamos a comunidade acadêmica e profissionais da área a contribuir para a evolução deste projeto transformador. Para participar ou oferecer sua colaboração, envie um e-mail para [sergiofreitas@unb.br](mailto:sergiofreitas@unb.br), expressando seu interesse e como deseja contribuir para o "Alvorecer Feudal".
+# How to Participate/Contribute
+To get involved in the "Dawn of Feudalism" project, whether as a student looking to enhance your software development skills, a teacher interested in innovative teaching methodologies, or an external partner willing to contribute resources or expertise, the main point of contact is Professor Sergio Freitas. We encourage the academic community and industry professionals to contribute to the growth of this transformative project. To participate or offer your collaboration, email sergiofreitas@unb.br, expressing your interest and how you wish to contribute to "Dawn of Feudalism".
