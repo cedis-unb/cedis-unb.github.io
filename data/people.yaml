@@ -118,3 +118,31 @@ people:
       - machine_learning
       - ai
     year: 2024
+
+  - name: Antonio Rangel Chaves
+    categories:
+      - people
+      - tcc
+    title:
+      pt: 'Gamificação no Ambiente Virtual de Aprendizagem Moodle: Guia e Ferramenta para Criadores de Conteúdo'
+      en: 'Gamification in the Moodle Virtual Learning Environment: Guide and Tool for Content Creators'
+    program: curso_esw2
+    advisors:
+      - sergio_freitas
+    tags:
+      - gamification
+    year: 2023
+
+  - name: Vitor Diniz Pagani Vieira Ribeiro
+    categories:
+      - people
+      - tcc
+    title:
+      pt: 'Gamificação no Ambiente Virtual de Aprendizagem Moodle: Guia e Ferramenta para Criadores de Conteúdo'
+      en: 'Gamification in the Moodle Virtual Learning Environment: Guide and Tool for Content Creators'
+    program: curso_esw2
+    advisors:
+      - sergio_freitas
+    tags:
+      - gamification
+    year: 2023
