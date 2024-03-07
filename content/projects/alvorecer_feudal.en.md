@@ -2,7 +2,7 @@
 author: CEDIS
 title: "Feudal Dawn Project"
 date: 2024-03-04T17:08:50-03:00
-weight: 10
+weight: 11
 language: en
 featured_image: "../assets/images/featured/gamification_Alvorecer Feudal.png"
 summary: Teaching project, "Software Development" course, an educational innovation promoted by CEDIS at the University of Brasília.

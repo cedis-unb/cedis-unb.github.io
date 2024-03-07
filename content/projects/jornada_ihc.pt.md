@@ -2,7 +2,7 @@
 author: CEDIS
 title: "Projeto Jornada IHC"
 date: 2024-03-04T18:08:50-03:00
-weight: 10
+weight: 11
 language: pt
 featured_image: "../assets/images/featured/gamification_Jornada IHC.png"
 summary: Projeto de ensino, disciplina "Interação Humano-computador", uma inovação educacional promovida pelo CEDIS no curso de Engenharia de Software da Universidade de Brasília 
