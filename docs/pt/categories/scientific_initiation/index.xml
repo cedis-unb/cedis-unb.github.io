@@ -1,1 +1,54 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Scientific_initiation on CEDIS</title><link>https://cedis.tec.br/pt/categories/scientific_initiation/</link><description>Recent content in Scientific_initiation on CEDIS</description><generator>Hugo -- gohugo.io</generator><language>pt</language><lastBuildDate>Sun, 03 Mar 2024 19:10:52 -0300</lastBuildDate><atom:link href="https://cedis.tec.br/pt/categories/scientific_initiation/index.xml" rel="self" type="application/rss+xml"/><item><title>Mylena Angelica Silva Faria</title><link>https://cedis.tec.br/pt/people/collaborators/mylena_faria/</link><pubDate>Sat, 17 Feb 2024 00:52:20 -0300</pubDate><guid>https://cedis.tec.br/pt/people/collaborators/mylena_faria/</guid><description>Graduanda em Engenharia de Software, Universidade de Brasília</description></item><item><title>Marcus Vinicius Paiva Martins</title><link>https://cedis.tec.br/pt/people/collaborators/marcus_martins/</link><pubDate>Sat, 17 Feb 2024 00:51:15 -0300</pubDate><guid>https://cedis.tec.br/pt/people/collaborators/marcus_martins/</guid><description>Graduando em Engenharia de Software, Universidade de Brasília</description></item><item><title>André Corrêa da Silva</title><link>https://cedis.tec.br/pt/people/collaborators/andre_silva/</link><pubDate>Sat, 17 Feb 2024 00:50:20 -0300</pubDate><guid>https://cedis.tec.br/pt/people/collaborators/andre_silva/</guid><description>Graduando em Engenharia de Software, Universidade de Brasília</description></item><item><title>Juan Mangeira Alves</title><link>https://cedis.tec.br/pt/people/collaborators/juan_alves/</link><pubDate>Sat, 17 Feb 2024 00:50:20 -0300</pubDate><guid>https://cedis.tec.br/pt/people/collaborators/juan_alves/</guid><description>Graduando em Engenharia de Software, Universidade de Brasília</description></item><item><title>Milena de Faria Silva</title><link>https://cedis.tec.br/pt/people/collaborators/milena_silva/</link><pubDate>Sat, 17 Feb 2024 00:50:20 -0300</pubDate><guid>https://cedis.tec.br/pt/people/collaborators/milena_silva/</guid><description>Graduanda em Computação, Instituto Federal de Educação, Ciência e Tecnologia do Sul de Minas Gerais</description></item><item><title>Renan Carneiro Batista</title><link>https://cedis.tec.br/pt/people/collaborators/renan_batista/</link><pubDate>Sat, 17 Feb 2024 00:50:20 -0300</pubDate><guid>https://cedis.tec.br/pt/people/collaborators/renan_batista/</guid><description>Graduando em Ciência da Computação, Instituto Federal de Educação Ciência e Tecnologia do Ceará</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Scientific_initiation on CEDIS</title>
+    <link>http://localhost:1313/pt/categories/scientific_initiation/</link>
+    <description>Recent content in Scientific_initiation on CEDIS</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt</language>
+    <lastBuildDate>Sun, 03 Mar 2024 19:10:52 -0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/pt/categories/scientific_initiation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mylena Angelica Silva Faria</title>
+      <link>http://localhost:1313/pt/people/collaborators/mylena_faria/</link>
+      <pubDate>Sat, 17 Feb 2024 00:52:20 -0300</pubDate>
+      <guid>http://localhost:1313/pt/people/collaborators/mylena_faria/</guid>
+      <description>Graduanda em Engenharia de Software, Universidade de Brasília</description>
+    </item>
+    <item>
+      <title>Marcus Vinicius Paiva Martins</title>
+      <link>http://localhost:1313/pt/people/collaborators/marcus_martins/</link>
+      <pubDate>Sat, 17 Feb 2024 00:51:15 -0300</pubDate>
+      <guid>http://localhost:1313/pt/people/collaborators/marcus_martins/</guid>
+      <description>Graduando em Engenharia de Software, Universidade de Brasília</description>
+    </item>
+    <item>
+      <title>André Corrêa da Silva</title>
+      <link>http://localhost:1313/pt/people/collaborators/andre_silva/</link>
+      <pubDate>Sat, 17 Feb 2024 00:50:20 -0300</pubDate>
+      <guid>http://localhost:1313/pt/people/collaborators/andre_silva/</guid>
+      <description>Graduando em Engenharia de Software, Universidade de Brasília</description>
+    </item>
+    <item>
+      <title>Juan Mangeira Alves</title>
+      <link>http://localhost:1313/pt/people/collaborators/juan_alves/</link>
+      <pubDate>Sat, 17 Feb 2024 00:50:20 -0300</pubDate>
+      <guid>http://localhost:1313/pt/people/collaborators/juan_alves/</guid>
+      <description>Graduando em Engenharia de Software, Universidade de Brasília</description>
+    </item>
+    <item>
+      <title>Milena de Faria Silva</title>
+      <link>http://localhost:1313/pt/people/collaborators/milena_silva/</link>
+      <pubDate>Sat, 17 Feb 2024 00:50:20 -0300</pubDate>
+      <guid>http://localhost:1313/pt/people/collaborators/milena_silva/</guid>
+      <description>Graduanda em Computação, Instituto Federal de Educação, Ciência e Tecnologia do Sul de Minas Gerais</description>
+    </item>
+    <item>
+      <title>Renan Carneiro Batista</title>
+      <link>http://localhost:1313/pt/people/collaborators/renan_batista/</link>
+      <pubDate>Sat, 17 Feb 2024 00:50:20 -0300</pubDate>
+      <guid>http://localhost:1313/pt/people/collaborators/renan_batista/</guid>
+      <description>Graduando em Ciência da Computação, Instituto Federal de Educação Ciência e Tecnologia do Ceará</description>
+    </item>
+  </channel>
+</rss>
