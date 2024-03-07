@@ -2,7 +2,7 @@
 author: CEDIS
 title: "HCI Journey Project"
 date: 2024-03-04T18:08:50-03:00
-weight: 10
+weight: 11
 language: en
 featured_image: "../assets/images/featured/gamification_Jornada IHC.png"
 summary: Teaching project, "Human-Computer Interaction" course, an educational innovation promoted by CEDIS in the Software Engineering course at the University of Brasília
