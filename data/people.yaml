@@ -146,3 +146,35 @@ people:
     tags:
       - gamification
     year: 2023
+
+  - name: Bruno Marquete da Silva
+    categories:
+      - people
+      - master_student
+    title:
+      pt: Em definição
+      en: Topic under development
+    program: curso_ppca
+    advisors:
+      - sergio_freitas
+    tags:
+      - active
+      - gamification
+      - machine_learning
+    year: 2024
+
+  - name: Bruno Mello Andrade
+    categories:
+      - people
+      - master_student
+    title:
+      pt: Em definição
+      en: Topic under development
+    program: curso_ppca
+    advisors:
+      - sergio_freitas
+    tags:
+      - active
+      - gamification
+      - machine_learning
+    year: 2024
