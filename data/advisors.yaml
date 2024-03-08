@@ -89,14 +89,20 @@ advisors:
     lattes: "http://lattes.cnpq.br/4731226594888669"
     areas: []
 
+  berilhes_garcia:
+    name: "Berilhes Borges Garcia"
+    link: ""
+    lattes: ""
+    areas: []
+
   edna_canedo:
     name: "Edna Canedo"
     link: "http://lattes.cnpq.br/9554285834432091"
     lattes: "http://lattes.cnpq.br/9554285834432091"
     areas: []
 
-  berilhes_garcia:
-    name: "Berilhes Borges Garcia"
-    link: ""
-    lattes: ""
+  marilia_miranda:
+    name: "Marilia Miranda Forte Gomes"
+    link: "http://lattes.cnpq.br/9169095482512290"
+    lattes: "http://lattes.cnpq.br/9169095482512290"
     areas: []

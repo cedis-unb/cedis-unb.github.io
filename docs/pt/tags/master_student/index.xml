@@ -1,1 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Master_student on CEDIS</title><link>https://cedis.unb.br/pt/tags/master_student/</link><description>Recent content in Master_student on CEDIS</description><generator>Hugo -- gohugo.io</generator><language>pt</language><lastBuildDate>Thu, 29 Feb 2024 23:42:31 -0300</lastBuildDate><atom:link href="https://cedis.unb.br/pt/tags/master_student/index.xml" rel="self" type="application/rss+xml"/><item><title>Edmilson Cosme da Silva</title><link>https://cedis.unb.br/pt/people/collaborators/edmilson_cosme/</link><pubDate>Sat, 17 Feb 2024 00:50:20 -0300</pubDate><guid>https://cedis.unb.br/pt/people/collaborators/edmilson_cosme/</guid><description>Mestre em Computação Aplicada, Universidade de Brasília</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Master_student on CEDIS</title>
+    <link>//localhost:1313/pt/tags/master_student/</link>
+    <description>Recent content in Master_student on CEDIS</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt</language>
+    <lastBuildDate>Thu, 29 Feb 2024 23:42:31 -0300</lastBuildDate>
+    <atom:link href="//localhost:1313/pt/tags/master_student/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Edmilson Cosme da Silva</title>
+      <link>//localhost:1313/pt/people/collaborators/edmilson_cosme/</link>
+      <pubDate>Sat, 17 Feb 2024 00:50:20 -0300</pubDate>
+      <guid>//localhost:1313/pt/people/collaborators/edmilson_cosme/</guid>
+      <description>Mestre em Computação Aplicada, Universidade de Brasília</description>
+    </item>
+  </channel>
+</rss>

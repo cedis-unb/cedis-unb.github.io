@@ -1,1 +1,82 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Machine_learning on CEDIS</title><link>https://cedis.unb.br/tags/machine_learning/</link><description>Recent content in Machine_learning on CEDIS</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 06 Mar 2024 14:39:05 -0300</lastBuildDate><atom:link href="https://cedis.unb.br/tags/machine_learning/index.xml" rel="self" type="application/rss+xml"/><item><title>Artificial Intelligence and Natural Language Processing</title><link>https://cedis.unb.br/areas/ai_pln/</link><pubDate>Wed, 14 Feb 2024 01:37:18 -0300</pubDate><guid>https://cedis.unb.br/areas/ai_pln/</guid><description>Artificial Intelligence (AI) is a branch of computer science that seeks to develop systems capable of mimicking and enhancing human abilities such as reasoning, learning, and perception. One of its most fascinating subareas is Natural Language Processing (NLP).</description></item><item><title>Project DFCris</title><link>https://cedis.unb.br/projects/dfcris/</link><pubDate>Wed, 14 Feb 2024 02:59:29 -0300</pubDate><guid>https://cedis.unb.br/projects/dfcris/</guid><description>A research project in partnership with IBICT and funded by FAP/DF.</description></item><item><title>Contextus Portal</title><link>https://cedis.unb.br/products/contextus/</link><pubDate>Tue, 23 Jan 2024 01:37:18 -0300</pubDate><guid>https://cedis.unb.br/products/contextus/</guid><description>The app and site Contextus redefines scientific analysis with NLP and ML for direct interaction with academic knowledge.</description></item><item><title>MAGRA</title><link>https://cedis.unb.br/products/magra/</link><pubDate>Fri, 27 Jan 2023 01:37:18 -0300</pubDate><guid>https://cedis.unb.br/products/magra/</guid><description>The Undergraduate Analysis Model (MAGRA) enables the prediction of dropout rates in face-to-face undergraduate courses.</description></item><item><title>SAGA</title><link>https://cedis.unb.br/products/saga/</link><pubDate>Tue, 01 Jun 2021 01:37:18 -0300</pubDate><guid>https://cedis.unb.br/products/saga/</guid><description>The Academic Management Support System - SAGA is a tool developed to assist academic managers in monitoring indicators for undergraduate courses.</description></item><item><title>Sergio Antônio Andrade de Freitas</title><link>https://cedis.unb.br/people/sergio_freitas/</link><pubDate>Wed, 14 Feb 2024 00:49:57 -0300</pubDate><guid>https://cedis.unb.br/people/sergio_freitas/</guid><description>Full Professor at the University of Brasília (UnB), working in the undergraduate Software Engineering program and the Graduate Program in Applied Computing.</description></item><item><title>Edmilson Cosme da Silva</title><link>https://cedis.unb.br/people/collaborators/edmilson_cosme/</link><pubDate>Sat, 17 Feb 2024 00:50:20 -0300</pubDate><guid>https://cedis.unb.br/people/collaborators/edmilson_cosme/</guid><description>Master in Applied Computing, University of Brasília</description></item><item><title>André Corrêa da Silva</title><link>https://cedis.unb.br/people/collaborators/andre_silva/</link><pubDate>Sat, 17 Feb 2024 00:50:20 -0300</pubDate><guid>https://cedis.unb.br/people/collaborators/andre_silva/</guid><description>Undergraduate in Software Engineering, University of Brasília</description></item><item><title>Milena de Faria Silva</title><link>https://cedis.unb.br/people/collaborators/milena_silva/</link><pubDate>Sat, 17 Feb 2024 00:50:20 -0300</pubDate><guid>https://cedis.unb.br/people/collaborators/milena_silva/</guid><description>Undergraduate in Computing, Federal Institute of Education, Science, and Technology of Southern Minas Gerais</description></item><item><title>Renan Carneiro Batista</title><link>https://cedis.unb.br/people/collaborators/renan_batista/</link><pubDate>Sat, 17 Feb 2024 00:50:20 -0300</pubDate><guid>https://cedis.unb.br/people/collaborators/renan_batista/</guid><description>Undergraduate in Computer Science, Federal Institute of Education, Science, and Technology of Ceará</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Machine_learning on CEDIS</title>
+    <link>//localhost:1313/tags/machine_learning/</link>
+    <description>Recent content in Machine_learning on CEDIS</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 07 Mar 2024 22:37:15 -0300</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/machine_learning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Artificial Intelligence and Natural Language Processing</title>
+      <link>//localhost:1313/areas/ai_pln/</link>
+      <pubDate>Wed, 14 Feb 2024 01:37:18 -0300</pubDate>
+      <guid>//localhost:1313/areas/ai_pln/</guid>
+      <description>Artificial Intelligence (AI) is a branch of computer science that seeks to develop systems capable of mimicking and enhancing human abilities such as reasoning, learning, and perception. One of its most fascinating subareas is Natural Language Processing (NLP).</description>
+    </item>
+    <item>
+      <title>Project DFCris</title>
+      <link>//localhost:1313/projects/dfcris/</link>
+      <pubDate>Wed, 14 Feb 2024 02:59:29 -0300</pubDate>
+      <guid>//localhost:1313/projects/dfcris/</guid>
+      <description>A research project in partnership with IBICT and funded by FAP/DF.</description>
+    </item>
+    <item>
+      <title>Contextus Portal</title>
+      <link>//localhost:1313/products/contextus/</link>
+      <pubDate>Tue, 23 Jan 2024 01:37:18 -0300</pubDate>
+      <guid>//localhost:1313/products/contextus/</guid>
+      <description>The app and site Contextus redefines scientific analysis with NLP and ML for direct interaction with academic knowledge.</description>
+    </item>
+    <item>
+      <title>MAGRA</title>
+      <link>//localhost:1313/products/magra/</link>
+      <pubDate>Fri, 27 Jan 2023 01:37:18 -0300</pubDate>
+      <guid>//localhost:1313/products/magra/</guid>
+      <description>The Undergraduate Analysis Model (MAGRA) enables the prediction of dropout rates in face-to-face undergraduate courses.</description>
+    </item>
+    <item>
+      <title>SAGA</title>
+      <link>//localhost:1313/products/saga/</link>
+      <pubDate>Tue, 01 Jun 2021 01:37:18 -0300</pubDate>
+      <guid>//localhost:1313/products/saga/</guid>
+      <description>The Academic Management Support System - SAGA is a tool developed to assist academic managers in monitoring indicators for undergraduate courses.</description>
+    </item>
+    <item>
+      <title>Sergio Antônio Andrade de Freitas</title>
+      <link>//localhost:1313/people/sergio_freitas/</link>
+      <pubDate>Wed, 14 Feb 2024 00:49:57 -0300</pubDate>
+      <guid>//localhost:1313/people/sergio_freitas/</guid>
+      <description>Full Professor at the University of Brasília (UnB), working in the undergraduate Software Engineering program and the Graduate Program in Applied Computing.</description>
+    </item>
+    <item>
+      <title>Edmilson Cosme da Silva</title>
+      <link>//localhost:1313/people/collaborators/edmilson_cosme/</link>
+      <pubDate>Sat, 17 Feb 2024 00:50:20 -0300</pubDate>
+      <guid>//localhost:1313/people/collaborators/edmilson_cosme/</guid>
+      <description>Master in Applied Computing, University of Brasília</description>
+    </item>
+    <item>
+      <title>André Corrêa da Silva</title>
+      <link>//localhost:1313/people/collaborators/andre_silva/</link>
+      <pubDate>Sat, 17 Feb 2024 00:50:20 -0300</pubDate>
+      <guid>//localhost:1313/people/collaborators/andre_silva/</guid>
+      <description>Undergraduate in Software Engineering, University of Brasília</description>
+    </item>
+    <item>
+      <title>Milena de Faria Silva</title>
+      <link>//localhost:1313/people/collaborators/milena_silva/</link>
+      <pubDate>Sat, 17 Feb 2024 00:50:20 -0300</pubDate>
+      <guid>//localhost:1313/people/collaborators/milena_silva/</guid>
+      <description>Undergraduate in Computing, Federal Institute of Education, Science, and Technology of Southern Minas Gerais</description>
+    </item>
+    <item>
+      <title>Renan Carneiro Batista</title>
+      <link>//localhost:1313/people/collaborators/renan_batista/</link>
+      <pubDate>Sat, 17 Feb 2024 00:50:20 -0300</pubDate>
+      <guid>//localhost:1313/people/collaborators/renan_batista/</guid>
+      <description>Undergraduate in Computer Science, Federal Institute of Education, Science, and Technology of Ceará</description>
+    </item>
+  </channel>
+</rss>
