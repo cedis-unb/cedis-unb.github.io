@@ -5528,3 +5528,128 @@ items:
   advisors: []
   url: https://www.lume.ufrgs.br/handle/10183/25178
   year: 1993
+
+- authors:
+  - Giulia Lobo Barros
+  title:
+    pt: 'Melhoria de um processo de engenharia de requisitos de software'
+    en: 'Improvement of a software requirements engineering process'
+  summary:
+    pt: ''
+    en: ''
+  book_title: ''
+  volume: ''
+  doi_isbn: ''
+  journal_event: ''
+  location: ''
+  pages: ''
+  publisher: Biblioteca Central da Universidade de Brasília
+  tags:
+  - software_requirements
+  type: tcc
+  program: curso_esw2
+  advisors:
+  - cristiane_ramos
+  - ricardo_ajax
+  url: 
+  year: 2023
+
+- authors:
+  - Guilherme Daniel Fernandes da Silva
+  title:
+    pt: 'Qualidade de software e envelhecimento populacional: uma análise com base nos dados da TIC Domicílios'
+    en: 'Software quality and population aging: an analysis based on ICT Household data'
+  summary:
+    pt: ''
+    en: ''
+  book_title: ''
+  volume: ''
+  doi_isbn: ''
+  journal_event: ''
+  location: ''
+  pages: ''
+  publisher: Biblioteca Central da Universidade de Brasília
+  tags:
+    - software_quality
+  type: tcc
+  program: curso_esw2
+  advisors:
+    - marilia_miranda
+    - ricardo_ajax
+  url: 
+  year: 2023
+
+- authors:
+  - Lorrayne Alves Cardozo
+  title:
+    pt: 'Qualidade de software e envelhecimento populacional: uma análise com base nos dados da TIC Domicílios'
+    en: 'Software quality and population aging: an analysis based on ICT Household data'
+  summary:
+    pt: ''
+    en: ''
+  book_title: ''
+  volume: ''
+  doi_isbn: ''
+  journal_event: ''
+  location: ''
+  pages: ''
+  publisher: Biblioteca Central da Universidade de Brasília
+  tags:
+    - software_quality
+  type: tcc
+  program: curso_esw2
+  advisors:
+    - marília_miranda
+    - ricardo_ajax
+  url: 
+  year: 2023
+
+- authors:
+  - Ricardo de Castro Loureiro
+  title:
+    pt: 'Tecnologias para a inclusão: Métricas para avaliação da acessibilidade de páginas web para pessoas com deficiência visual'
+    en: 'Technologies for inclusion: Metrics for evaluating web page accessibility for visually impaired people'
+  summary:
+    pt: ''
+    en: ''
+  book_title: ''
+  volume: ''
+  doi_isbn: ''
+  journal_event: ''
+  location: ''
+  pages: ''
+  publisher: Biblioteca Central da Universidade de Brasília
+  tags:
+  - software_quality
+  type: tcc
+  program: curso_esw2
+  advisors:
+  - cristiane_ramos
+  -  ricardo_ajax
+  url: 
+  year: 2023
+
+- authors:
+  - Nathalia Lorena Cardoso Dias
+  title:
+    pt: 'Por que processos de melhoria de software já definidos não estão sendo utilizados pelas empresas? Uma revisão da literatura'
+    en: 'Why are already defined software improvement processes not being used by companies? A literature review'
+  summary:
+    pt: ''
+    en: ''
+  book_title: ''
+  volume: ''
+  doi_isbn: ''
+  journal_event: ''
+  location: ''
+  pages: ''
+  publisher: Biblioteca Central da Universidade de Brasília
+  tags:
+  - software_quality
+  type: tcc
+  program: curso_esw2
+  advisors:
+  - cristiane_ramos
+  - fabiana_mendes
+  url: 
+  year: 2024
