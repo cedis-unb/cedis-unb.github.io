@@ -29,8 +29,8 @@ authorimage: ../assets/images/global/author.webp
     </h2>
     <p x-show="showPrevious" x-cloak class="mb-4 text-neutral-700">Estes são os colaboradores que contribuíram para o nosso sucesso no passado. Somos gratos pelo esforço e dedicação deles.</p>
     <div x-show="showPrevious" x-cloak>
-    {{< publications caput="#### Doutorado" year="" types="phd" advisors="" notypes="" tags="" notags="" >}}
-    {{< publications caput="#### Mestrado" year="" types="dissertation" advisors="" notypes="" tags="" notags="" >}}
+    {{< publications caput="#### Doutorado" year="" types="phd" advisors="" notypes="" tags="" notags="sergio_freitas" >}}
+    {{< publications caput="#### Mestrado" year="" types="dissertation" advisors="" notypes="" tags="" notags="sergio_freitas" >}}
     {{< publications caput="#### Especialização" year="" types="specialization" advisors="" notypes="" tags="" notags="" >}}
     {{< filterPeople caput="#### Iniciação Científica" categories="scientific_initiation" advisors="" tags="inactive" notags="">}}
     {{< publications caput="#### Trabalho de Conclusão de Curso (TCC)" year="" types="tcc" advisors="" notypes="" tags="" notags="" >}}
