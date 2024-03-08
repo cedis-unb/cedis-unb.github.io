@@ -1,1 +1,61 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Active on CEDIS</title><link>https://cedis.unb.br/tags/active/</link><description>Recent content in Active on CEDIS</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 03 Mar 2024 19:10:52 -0300</lastBuildDate><atom:link href="https://cedis.unb.br/tags/active/index.xml" rel="self" type="application/rss+xml"/><item><title>Arthur Rocha Temporim de Lacerda</title><link>https://cedis.unb.br/people/collaborators/arthur_temporim/</link><pubDate>Thu, 17 Feb 2022 00:50:20 -0300</pubDate><guid>https://cedis.unb.br/people/collaborators/arthur_temporim/</guid><description>Master&amp;rsquo;s student in Applied Computing at PPCA, University of Brasília.</description></item><item><title>Mylena Angelica Silva Faria</title><link>https://cedis.unb.br/people/collaborators/mylena_faria/</link><pubDate>Sat, 17 Feb 2024 00:52:20 -0300</pubDate><guid>https://cedis.unb.br/people/collaborators/mylena_faria/</guid><description>Undergraduate in Software Engineering, University of Brasília</description></item><item><title>Marcus Vinicius Paiva Martins</title><link>https://cedis.unb.br/people/collaborators/marcus_martins/</link><pubDate>Sat, 17 Feb 2024 00:51:15 -0300</pubDate><guid>https://cedis.unb.br/people/collaborators/marcus_martins/</guid><description>Undergraduate in Software Engineering, University of Brasília</description></item><item><title>André Corrêa da Silva</title><link>https://cedis.unb.br/people/collaborators/andre_silva/</link><pubDate>Sat, 17 Feb 2024 00:50:20 -0300</pubDate><guid>https://cedis.unb.br/people/collaborators/andre_silva/</guid><description>Undergraduate in Software Engineering, University of Brasília</description></item><item><title>Juan Mangeira Alves</title><link>https://cedis.unb.br/people/collaborators/juan_alves/</link><pubDate>Sat, 17 Feb 2024 00:50:20 -0300</pubDate><guid>https://cedis.unb.br/people/collaborators/juan_alves/</guid><description>Undergraduate in Software Engineering, University of Brasília</description></item><item><title>Milena de Faria Silva</title><link>https://cedis.unb.br/people/collaborators/milena_silva/</link><pubDate>Sat, 17 Feb 2024 00:50:20 -0300</pubDate><guid>https://cedis.unb.br/people/collaborators/milena_silva/</guid><description>Undergraduate in Computing, Federal Institute of Education, Science, and Technology of Southern Minas Gerais</description></item><item><title>Renan Carneiro Batista</title><link>https://cedis.unb.br/people/collaborators/renan_batista/</link><pubDate>Sat, 17 Feb 2024 00:50:20 -0300</pubDate><guid>https://cedis.unb.br/people/collaborators/renan_batista/</guid><description>Undergraduate in Computer Science, Federal Institute of Education, Science, and Technology of Ceará</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Active on CEDIS</title>
+    <link>//localhost:1313/tags/active/</link>
+    <description>Recent content in Active on CEDIS</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 03 Mar 2024 19:10:52 -0300</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/active/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Arthur Rocha Temporim de Lacerda</title>
+      <link>//localhost:1313/people/collaborators/arthur_temporim/</link>
+      <pubDate>Thu, 17 Feb 2022 00:50:20 -0300</pubDate>
+      <guid>//localhost:1313/people/collaborators/arthur_temporim/</guid>
+      <description>Master&amp;rsquo;s student in Applied Computing at PPCA, University of Brasília.</description>
+    </item>
+    <item>
+      <title>Mylena Angelica Silva Faria</title>
+      <link>//localhost:1313/people/collaborators/mylena_faria/</link>
+      <pubDate>Sat, 17 Feb 2024 00:52:20 -0300</pubDate>
+      <guid>//localhost:1313/people/collaborators/mylena_faria/</guid>
+      <description>Undergraduate in Software Engineering, University of Brasília</description>
+    </item>
+    <item>
+      <title>Marcus Vinicius Paiva Martins</title>
+      <link>//localhost:1313/people/collaborators/marcus_martins/</link>
+      <pubDate>Sat, 17 Feb 2024 00:51:15 -0300</pubDate>
+      <guid>//localhost:1313/people/collaborators/marcus_martins/</guid>
+      <description>Undergraduate in Software Engineering, University of Brasília</description>
+    </item>
+    <item>
+      <title>André Corrêa da Silva</title>
+      <link>//localhost:1313/people/collaborators/andre_silva/</link>
+      <pubDate>Sat, 17 Feb 2024 00:50:20 -0300</pubDate>
+      <guid>//localhost:1313/people/collaborators/andre_silva/</guid>
+      <description>Undergraduate in Software Engineering, University of Brasília</description>
+    </item>
+    <item>
+      <title>Juan Mangeira Alves</title>
+      <link>//localhost:1313/people/collaborators/juan_alves/</link>
+      <pubDate>Sat, 17 Feb 2024 00:50:20 -0300</pubDate>
+      <guid>//localhost:1313/people/collaborators/juan_alves/</guid>
+      <description>Undergraduate in Software Engineering, University of Brasília</description>
+    </item>
+    <item>
+      <title>Milena de Faria Silva</title>
+      <link>//localhost:1313/people/collaborators/milena_silva/</link>
+      <pubDate>Sat, 17 Feb 2024 00:50:20 -0300</pubDate>
+      <guid>//localhost:1313/people/collaborators/milena_silva/</guid>
+      <description>Undergraduate in Computing, Federal Institute of Education, Science, and Technology of Southern Minas Gerais</description>
+    </item>
+    <item>
+      <title>Renan Carneiro Batista</title>
+      <link>//localhost:1313/people/collaborators/renan_batista/</link>
+      <pubDate>Sat, 17 Feb 2024 00:50:20 -0300</pubDate>
+      <guid>//localhost:1313/people/collaborators/renan_batista/</guid>
+      <description>Undergraduate in Computer Science, Federal Institute of Education, Science, and Technology of Ceará</description>
+    </item>
+  </channel>
+</rss>

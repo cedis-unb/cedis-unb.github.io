@@ -178,3 +178,197 @@ people:
       - gamification
       - machine_learning
     year: 2024
+
+  - name: Giulia Lobo Barros
+    categories:
+      - people
+      - tcc
+    title:
+      pt: 'Melhoria de um processo de engenharia de requisitos de software'
+      en: 'Improvement of a software requirements engineering process'
+    program: curso_esw2
+    advisors:
+      - cristiane_ramos
+      - ricardo_ajax
+    tags:
+      - inactive
+      - software_requirements
+    year: 2023
+  
+  - name: Daniel Barcelos Moreira
+    categories:
+      - people
+      - tcc
+    title:
+      pt: 'Ferramentas de avaliação de acessibilidade de sites web utilizados por pessoas idosas: Guia de apoio à escolha'
+      en: 'Web accessibility evaluation tools for elderly people: A support guide for choosing'
+    program: curso_esw2
+    advisors:
+      - cristiane_ramos
+      - ricardo_ajax
+    tags:
+      - software_quality
+      - active
+    year: 2024
+  
+  - name: Juliana Pereira Valle Gonçalves
+    categories:
+      - people
+      - tcc
+    title:
+      pt: 'Ferramentas de avaliação de acessibilidade de sites web utilizados por pessoas idosas: Guia de apoio à escolha'
+      en: 'Web accessibility evaluation tools for elderly people: A support guide for choosing'
+    program: curso_esw2
+    advisors:
+      - cristiane_ramos
+      - ricardo_ajax
+    tags:
+      - software_quality
+      - active
+    year: 2024
+
+  - name: Guilherme Daniel Fernandes da Silva
+    categories:
+      - people
+      - tcc
+    title:
+      pt: 'Qualidade de software e envelhecimento populacional: uma análise com base nos dados da TIC Domicílios'
+      en: 'Software quality and population aging: an analysis based on ICT Household data'
+    program: curso_esw2
+    advisors:
+      - marilia_miranda
+      - ricardo_ajax
+    tags:
+      - inactive
+      - software_quality
+    year: 2023
+
+  - name: Lorrayne Alves Cardozo
+    categories:
+      - people
+      - tcc
+    title:
+      pt: 'Qualidade de software e envelhecimento populacional: uma análise com base nos dados da TIC Domicílios'
+      en: 'Software quality and population aging: an analysis based on ICT Household data'
+    program: curso_esw2
+    advisors:
+      - marília_miranda
+      - ricardo_ajax
+    tags:
+      - software_quality
+      - inactive
+    year: 2023
+
+  - name: Ricardo de Castro Loureiro
+    categories:
+      - people
+      - tcc
+    title:
+      pt: 'Tecnologias para a inclusão: Métricas para avaliação da acessibilidade de páginas web para pessoas com deficiência visual'
+      en: 'Technologies for inclusion: Metrics for evaluating web page accessibility for visually impaired people'
+    program: curso_esw2
+    advisors:
+      - cristiane_ramos
+      - ricardo_ajax
+    tags:
+      - software_quality
+      - inactive
+    year: 2023
+
+  - name: Ana Carolina Rodrigues Leite
+    categories:
+      - people
+      - tcc
+    title:
+      pt: 'Ética no uso de IA por estudantes de ESW (provisório)'
+      en: 'Ethics in the use of AI by ESW students (provisional)'
+    program: curso_esw2
+    advisors:
+      - cristiane_ramos
+      - ricardo_ajax
+    tags:
+      - ai
+      - education
+      - active
+    year: 2024
+
+  - name: Amanda Jeniffer Pereira Nobre
+    categories:
+      - people
+      - tcc
+    title:
+      pt: 'Ética no uso de IA por estudantes de ESW (provisório)'
+      en: 'Ethics in the use of AI by ESW students (provisional)'
+    program: curso_esw2
+    advisors:
+      - cristiane_ramos
+      - ricardo_ajax
+    tags:
+      - ai
+      - education
+      - active
+    year: 2024
+
+  - name: Edvan Barreira Gomes Junior
+    categories:
+      - people
+      - tcc
+    title:
+      pt: 'Maturidade de metodologias ativas (provisório)'
+      en: 'Maturity of active methodologies (provisional)'
+    program: curso_esw2
+    advisors:
+      - cristiane_ramos
+      - ricardo_ajax
+    tags:
+      - active_learning
+      - education
+      - active
+    year: 2024
+
+  - name: Luiza Esteves dos Santos
+    categories:
+      - people
+      - tcc
+    title:
+      pt: 'Aplicativo para apoio à organização de conteúdo de disciplinas (provisório)'
+      en: 'Application to support the organization of course content (provisional)'
+    program: curso_esw2
+    advisors:
+      - ricardo_ajax
+    tags:
+      - education
+      - software_architecture
+      - active
+    year: 2024
+
+  - name: Artur de Souza Vieira
+    categories:
+      - people
+      - tcc
+    title:
+      pt: 'Aplicativo para apoio à organização de conteúdo de disciplinas (provisório)'
+      en: 'Application to support the organization of course content (provisional)'
+    program: curso_esw2
+    advisors:
+      - ricardo_ajax
+    tags:
+      - education
+      - software_architecture
+      - active
+    year: 2024
+
+  - name: Nathalia Lorena Cardoso Dias
+    categories:
+      - people
+      - tcc
+    title:
+      pt: 'Por que processos de melhoria de software já definidos não estão sendo utilizados pelas empresas? Uma revisão da literatura'
+      en: 'Why are already defined software improvement processes not being used by companies? A literature review'
+    program: curso_esw2
+    advisors:
+      - cristiane_ramos
+    tags:
+      - software_quality
+      - inactive
+    year: 2024
