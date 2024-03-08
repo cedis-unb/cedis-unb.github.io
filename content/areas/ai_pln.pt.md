@@ -20,7 +20,7 @@ nav_next: true
 
 A Inteligência Artificial (IA) é um ramo da ciência da computação que busca desenvolver sistemas capazes de imitar e aprimorar habilidades humanas, como o raciocínio, aprendizado e percepção. Uma de suas subáreas mais fascinantes é o Processamento de Linguagem Natural (PLN), que se dedica a compreender e interpretar a linguagem humana, permitindo que máquinas e programas interajam com as pessoas de maneira mais eficiente e intuitiva. O PLN engloba desde a análise sintática e semântica das palavras até a geração de texto coerente e significativo, possibilitando a criação de assistentes virtuais, sistemas de tradução automática e outras aplicações que facilitam a comunicação e o acesso à informação em nosso cotidiano.
 
-## {{< i18n "area_coordinators" >}}
+## {{< i18n "area_coordinator" >}}
 
 **Prof. Sergio Antônio Andrade de Freitas**
 <div style="margin-left: 20px;">
