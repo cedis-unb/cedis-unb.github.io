@@ -20,7 +20,7 @@ nav_next: true
 
 A gamificação é um processo que utiliza elementos, técnicas e mecânicas de design de jogos em contextos não relacionados a jogos, com o objetivo de aumentar a motivação, a participação e o engajamento dos usuários. A gamificação tem sido aplicada em diversas áreas, como educação, marketing, saúde e treinamento corporativo, tornando-se uma tendência crescente na última década.
 
-## {{< i18n "area_coordinators" >}}
+## {{< i18n "area_coordinator" >}}
 **Prof. Sergio Antônio Andrade de Freitas**
 <div style="margin-left: 20px;">
 Especialista em gamificação e professor Titular da Universidade de Brasília - UnB. Sua experiência abrange tanto a gamificação na Educação quanto a aplicação desta metodologia em outros campos. Ele é reconhecido por integrar elementos de design de jogos em contextos educacionais e empresariais, visando aumentar a motivação, participação e engajamento dos usuários. Sua dedicação à pesquisa em Gamificação e {{< link-interno "/areas/learning_analytics" "Learning Analytics" >}} tem contribuído para a inovação e o desenvolvimento de novas estratégias de ensino e aprendizagem na área de Engenharia de Software. <br>
