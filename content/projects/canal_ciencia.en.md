@@ -34,6 +34,7 @@ The implementation of this initiative will take place on the WordPress platform,
 ## Team
 
 This project benefits from the collaboration between CEDIS and IBICT experts, coordinated by Leda Sampson (IBICT). It also includes the participation of Software Engineering students as Undergraduate Research Fellows:
-- Mylena Angelica Faria
-- Juan Mangeira Alves
-- Marcus Vinicius Martins
+
+{{< link-interno "/people/collaborators/mylena_faria" "Mylena Angelica Faria" >}}<br>
+{{< link-interno "/people/collaborators/juan_alves" "Juan Mangeira Alves" >}}<br>
+{{< link-interno "/people/collaborators/marcus_martins" "Marcus Vinicius Martins" >}}
