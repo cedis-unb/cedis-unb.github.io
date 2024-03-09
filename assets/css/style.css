@@ -3596,6 +3596,10 @@ video {
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
+.\[mailto\:sergiofreitas\@unb\.br\] {
+  mailto: sergiofreitas@unb.br;
+}
+
 font-family: ui-sans-serif,
 system-ui,
 -apple-system,
