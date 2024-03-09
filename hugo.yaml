@@ -156,6 +156,12 @@ languages:
           post: "Aplicativos, processos e outros"
           url: "/categories/products"
           weight: 20
+        - identifier: cursos
+          pre: stars # can be stars, comments, piechart, products, people, publications
+          name: Cursos e treinamentos
+          post: "Cursos, oficinas, palestras e outros"
+          url: "/courses"
+          weight: 30
 #        - identifier: process
 #          pre: piechart # can be stars, comments or piechart
 #          name: Processos
@@ -332,6 +338,12 @@ languages:
           post: "Applications, Processes and others"
           url: "/categories/products"
           weight: 20
+        - identifier: cursos
+          pre: stars # can be stars, comments, piechart, products, people, publications
+          name: Training Programs
+          post: "Courses, Workshops, Lectures and others"
+          url: "/courses"
+          weight: 30
 #        - identifier: process
 #          pre: piechart # can be stars, comments or piechart
 #          name: Processes
