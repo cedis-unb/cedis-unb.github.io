@@ -1,6 +1,6 @@
 CbaseURL: 'https://cedis.unb.br/'
 publishDir : "docs"  
-DefaultContentLanguage: en
+DefaultContentLanguage: pt
 params:
   googleAnalytics: "G-ENMST48SB3"
 
