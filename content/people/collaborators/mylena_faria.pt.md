@@ -1,6 +1,6 @@
 ---
 author: CEDIS
-title: "Mylena Angelica Silva Faria"
+title: "Mylena Angélica Silva Farias"
 date: 2024-02-17T00:52:20-03:00
 weight: 44
 language: pt
