@@ -8,7 +8,7 @@ env: production
 languages:
   pt:
   # PORTUGUÊS
-    LanguageName: "PT"
+    LanguageName: "Português"
     languageCode: "pt"
     title: CEDIS
     weight: 1
@@ -191,7 +191,7 @@ languages:
   en:
   # ENGLISH
     #baseURL: '/en/'
-    LanguageName: "EN"
+    LanguageName: "English"
     title: CEDIS
     weight: 2
     params:
