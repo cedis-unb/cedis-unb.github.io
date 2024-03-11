@@ -1,10 +1,10 @@
-CbaseURL: 'https://cedis.unb.br'
+baseURL: 'https://cedis.unb.br/'
 publishDir : "docs"  
 DefaultContentLanguage: en
 params:
   googleAnalytics: "G-ENMST48SB3"
 
-#env: production
+env: production
 languages:
   pt:
   # PORTUGUÊS
