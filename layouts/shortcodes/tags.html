@@ -4,7 +4,8 @@
     <span class="pr-2 font-black">{{ i18n "seemore" }}</span>
     <span>
         {{ range $index, $tag := .Page.Params.tags }}
-        <a href="{{ printf "/tags/%s" ($tag | urlize) | absLangURL }}" class="inline-flex items-center rounded-md bg-gray-300 hover:bg-primary-200 hover:text-black px-2.5 py-0.5 text-sm font-medium text-gray-900 no-underline">
+        <!-- Aqui foi removido o prefixo do idioma do caminho, pois absLangURL cuidará disso -->
+        <a href="{{ printf "/tags/%s" ($tag | urlize) }}" class="inline-flex items-center rounded-md bg-gray-300 hover:bg-primary-200 hover:text-black px-2.5 py-0.5 text-sm font-medium text-gray-900 no-underline" | absLangURL }}>
             {{ i18n $tag }}
         </a>{{ if ne $index (sub (len $.Page.Params.tags) 1) }}, {{ end }}
         {{ end }}
