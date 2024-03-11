@@ -157,37 +157,36 @@
             {{ end }}
             {{ end }}
 
-            <!-- Início do seletor de idioma ajustado -->
+            <!-- Início do seletor de idioma -->
             <div class="ml-4 flex items-center">
                 <div class="language-switcher">
                     <ul>
-                        {{ $currentPage := . }}
-                        {{ $defaultLang := .Site.Language.Lang }}
-                        <!-- Verifica e exibe apenas a língua não ativa como opção clicável -->
+                        <!-- Exibe o idioma atual como item não clicável 
                         {{ range .Site.Languages }}
-                            {{ if ne .Lang $currentPage.Site.Language.Lang }}
+                            {{ if eq . $.Site.Language }}
                                 <li>
-                                    <!-- Ajusta o URL para o idioma correto -->
-                                    {{ $baseURLTrimmed := strings.TrimRight $currentPage.Site.BaseURL "/" }}
-                                    {{ $url := strings.Replace $currentPage.Permalink $baseURLTrimmed "" 1 }}
-                                    {{ $url = strings.TrimPrefix $url (printf "/%s/" $currentPage.Site.Language.Lang) }}
-                                    {{ $url = strings.TrimPrefix $url "/" }}
-                                    {{ if ne .Lang $defaultLang }}
-                                        {{ $url = printf "/%s/%s" .Lang $url }}
-                                    {{ else }}
-                                        {{ $url = printf "/%s" $url }}
-                                    {{ end }}
-
-                                    <a href="{{ $baseURLTrimmed }}{{ $url }}" class="px-4 py-2 mt-2 text-sm font-semibold rounded-lg md:mt-0 md:ml-4 hover:text-white focus:text-white hover:bg-primary-600 focus:bg-primary-700 focus:outline-none focus:shadow-outline" aria-label="{{ .LanguageName }}">
+                                    <span class="px-4 py-2 mt-2 text-sm font-semibold rounded-lg md:mt-0 md:ml-4 hover:text-white focus:text-white hover:bg-primary-600 focus:bg-primary-700 focus:outline-none focus:shadow-outline" aria-current="page">
                                         {{ .LanguageName }}
-                                    </a>
+                                    </span>
                                 </li>
                             {{ end }}
-                        {{ end }}
+                        {{ end }} -->
+                        <!-- Dropdown para outros idiomas disponíveis -->
+                        <li>
+                            <ul aria-labelledby="dropdown-title">
+                                {{ range $.Page.Translations }}
+                                    <li>
+                                        <a title="{{ .Language.LanguageName }}" href="{{ .Permalink }}" class="px-4 py-2 mt-2 text-sm font-semibold rounded-lg md:mt-0 md:ml-4 hover:text-white focus:text-white hover:bg-primary-600 focus:bg-primary-700 focus:outline-none focus:shadow-outline">
+                                            {{ .Language.LanguageName }}
+                                        </a>
+                                    </li>
+                                {{ end }}
+                            </ul>
+                        </li>
                     </ul>
                 </div>
             </div>
-            <!-- Fim do seletor de idioma ajustado -->
+            <!-- Fim do seletor de idioma -->
 
             {{ if not .Site.Params.Disable_theme_toggle }}
             <button id="theme-toggle" type="button"
