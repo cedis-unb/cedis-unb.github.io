@@ -4,7 +4,7 @@ DefaultContentLanguage: en
 params:
   googleAnalytics: "G-ENMST48SB3"
 
-env: production
+#env: production
 languages:
   pt:
   # PORTUGUÊS
