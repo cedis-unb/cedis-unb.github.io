@@ -157,21 +157,36 @@
             {{ end }}
             {{ end }}
 
-            <div class="language-switcher">
-                <ul>
-                    {{ range .Site.Languages }}
-                    {{ if eq . $.Site.Language }}
-                    <li><span class="px-4 py-2 mt-2 text-sm font-semibold rounded-lg md:mt-0 md:ml-4 hover:text-white focus:text-white hover:bg-primary-600 focus:bg-primary-700 focus:outline-none focus:shadow-outline" aria-label="{{ i18n "ariaLanguage" }}{{ .LanguageName }}">{{ .LanguageName }}</span>
-                      {{ end }}
-                      {{ end }}
-                      <ul aria-labelledby="dropdown-title">
-                        {{ range $.Translations }}
-                        <li><a title="{{ .Language.LanguageName }}" href="{{ .Permalink }}" class="px-4 py-2 mt-2 text-sm font-semibold rounded-lg md:mt-0 md:ml-4 hover:text-white focus:text-white hover:bg-primary-600 focus:bg-primary-700 focus:outline-none focus:shadow-outline" aria-label="{{ i18n "ariaTranslation" }}{{ .Language.LanguageName }}">{{ .Language.LanguageName }}</a></li>
-                      </ul>
+            <!-- Início do seletor de idioma -->
+            <div class="ml-4 flex items-center">
+                <div class="language-switcher">
+                    <ul>
+                        <!-- Exibe o idioma atual como item não clicável -->
+                        {{ range .Site.Languages }}
+                            {{ if eq . $.Site.Language }}
+                                <li>
+                                    <span class="px-4 py-2 mt-2 text-sm font-semibold rounded-lg md:mt-0 md:ml-4 hover:text-white focus:text-white hover:bg-primary-600 focus:bg-primary-700 focus:outline-none focus:shadow-outline" aria-current="page">
+                                        {{ .LanguageName }}
+                                    </span>
+                                </li>
+                            {{ end }}
                         {{ end }}
-                    </li>
-                  </ul>
-                </div>   
+                        <!-- Dropdown para outros idiomas disponíveis -->
+                        <li>
+                            <ul aria-labelledby="dropdown-title">
+                                {{ range $.Page.Translations }}
+                                    <li>
+                                        <a title="{{ .Language.LanguageName }}" href="{{ .Permalink }}" class="px-4 py-2 mt-2 text-sm font-semibold rounded-lg md:mt-0 md:ml-4 hover:text-white focus:text-white hover:bg-primary-600 focus:bg-primary-700 focus:outline-none focus:shadow-outline">
+                                            {{ .Language.LanguageName }}
+                                        </a>
+                                    </li>
+                                {{ end }}
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Fim do seletor de idioma -->
 
             {{ if not .Site.Params.Disable_theme_toggle }}
             <button id="theme-toggle" type="button"
