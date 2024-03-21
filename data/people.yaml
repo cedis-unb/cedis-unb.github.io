@@ -372,3 +372,171 @@ people:
       - software_quality
       - inactive
     year: 2024
+
+
+  - name: Brenno Oliveira Silva
+    categories:
+      - people
+      - tcc
+    title:
+      pt: 'Desenvolvimento de Solução para a Gamificação da Disciplina de ER'
+      en: 'Development of a Solution for the Gamification of the RE Course'
+    program: curso_esw2
+    advisors:
+      - george_marsicano
+    tags:
+      - gamification
+      - software_requirements
+      - mobile_application
+    year: 2024
+
+  - name: Paulo Vitor Silva Abi Acl
+    categories:
+      - people
+      - tcc
+    title:
+      pt: 'Desenvolvimento de Solução para a Gamificação da Disciplina de ER'
+      en: 'Development of a Solution for the Gamification of the RE Course'
+    program: curso_esw2
+    advisors:
+      - george_marsicano
+    tags:
+      - gamification
+      - software_requirements
+      - mobile_application
+    year: 2024
+
+  - name: Geraldo Victor Alves Barbosa
+    categories:
+      - people
+      - tcc
+    title:
+      pt: 'Investigação da utilização de IA no processo de engenharia de requisitos: um estudo de caso'
+      en: 'Investigation of the Use of AI in the Requirements Engineering Process: A Case Study'
+    program: curso_esw2
+    advisors:
+      - george_marsicano
+    tags:
+      - software_requirements
+      - ai
+    year: 2024
+
+  - name: João Victor Oliveira Matos
+    categories:
+      - people
+      - tcc
+    title:
+      pt: 'Investigação da utilização de IA no processo de engenharia de requisitos: um estudo de caso'
+      en: 'Investigation of the Use of AI in the Requirements Engineering Process: A Case Study'
+    program: curso_esw2
+    advisors:
+      - george_marsicano
+    tags:
+      - software_requirements
+      - ai
+    year: 2024
+
+  - name: Daniela Soares de Oliveira
+    categories:
+      - people
+      - tcc
+    title:
+      pt: 'Plataforma de Tradução de Libras'
+      en: 'Brazilian Sign Language Translation Platform'
+    program: curso_esw2
+    advisors:
+      - george_marsicano
+    tags:
+      - education
+      - machine_learning
+    year: 2024
+
+  - name: Danilo Domingo Vitoriano Silva
+    categories:
+      - people
+      - tcc
+    title:
+      pt: 'Plataforma de Tradução de Libras'
+      en: 'Brazilian Sign Language Translation Platform'
+    program: curso_esw2
+    advisors:
+      - george_marsicano
+    tags:
+      - education
+      - machine_learning
+    year: 2024
+
+  - name: Caio César Oliveira
+    categories:
+      - people
+      - tcc
+    title:
+      pt: 'Desenvolvimento de uma Inteligência Artificial para Aprimoramento da Avaliação Individual em Disciplinas de Software na Universidade de Brasília'
+      en: 'Development of an Artificial Intelligence for the Improvement of Individual Assessment in Software Courses at the University of Brasília'
+    program: curso_esw2
+    advisors:
+      - george_marsicano
+    tags:
+      - ai
+      - education
+      - software_quality
+    year: 2024
+
+  - name: Vitor Eduardo Kühl Rodrigues
+    categories:
+      - people
+      - tcc
+    title:
+      pt: 'Desenvolvimento de uma Inteligência Artificial para Aprimoramento da Avaliação Individual em Disciplinas de Software na Universidade de Brasília'
+      en: 'Development of an Artificial Intelligence for the Improvement of Individual Assessment in Software Courses at the University of Brasília'
+    program: curso_esw2
+    advisors:
+      - george_marsicano
+    tags:
+      - ai
+      - education
+      - software_quality
+    year: 2024
+
+  - name: Iago Ribeiro
+    categories:
+      - people
+      - tcc
+    title:
+      pt: 'Desenvolvimento da Solução Professor, para o SUPER-R'
+      en: 'Development of the Teacher Solution for SUPER-R'
+    program: curso_esw2
+    advisors:
+      - george_marsicano
+    tags:
+      - gamification
+    year: 2024
+
+  - name: Yuri Alves
+    categories:
+      - people
+      - tcc
+    title:
+      pt: 'Engenharia de Requisitos Suportada por Inteligência Artificial'
+      en: 'Requirements Engineering Supported by Artificial Intelligence'
+    program: curso_esw2
+    advisors:
+      - george_marsicano
+    tags:
+      - software_requirements
+      - ai
+    year: 2024
+
+  - name: Victor Yukio
+    categories:
+      - people
+      - tcc
+    title:
+      pt: 'Desenvolvimento da Solução Estudantes, para o SUPER-R'
+      en: 'Development of the Student Solution for SUPER-R'
+    program: curso_esw2
+    advisors:
+      - george_marsicano
+    tags:
+      - gamification
+    year: 2024
