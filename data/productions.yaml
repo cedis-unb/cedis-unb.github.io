@@ -5653,3 +5653,77 @@ items:
   - fabiana_mendes
   url: 
   year: 2024
+
+- authors:
+  - Júlia Farias Sousa
+  title:
+    pt: 'Análise sobre a percepção dos discentes quanto a utilização de EaD no curso de Engenharia de Software, FGA/UnB'
+    en: 'Análise sobre a percepção dos discentes quanto a utilização de EaD no curso de Engenharia de Software, FGA/UnB'
+  summary:
+    pt: ''
+    en: ''
+  book_title: ''
+  volume: ''
+  doi_isbn: ''
+  journal_event: ''
+  location: ''
+  pages: ''
+  publisher: Biblioteca Central da Universidade de Brasília
+  tags:
+  - education
+  - esw
+  type: tcc
+  program: curso_esw2
+  advisors:
+  - george_marsicano
+  url: 
+  year: 2023
+
+- authors:
+  - Rafael Berto Pereira
+  title:
+    pt: 'Da definição de orientações de engenharia de software ao uso complementar do ChatGPT: um Estudo de Caso das startups no Governo Federal'
+    en: 'Da definição de orientações de engenharia de software ao uso complementar do ChatGPT: um Estudo de Caso das startups no Governo Federal'
+  summary:
+    pt: ''
+    en: ''
+  book_title: ''
+  volume: ''
+  doi_isbn: ''
+  journal_event: ''
+  location: ''
+  pages: ''
+  publisher: Biblioteca Central da Universidade de Brasília
+  tags:
+  - digital_transformation
+  - esw
+  type: tcc
+  program: curso_esw2
+  advisors:
+  - george_marsicano
+  url: 
+  year: 2023
+
+- authors:
+  - Luis Bruno Fidelis Gomes
+  title:
+    pt: 'Business Intelligence aplicada à saúde: painéis de monitoramento para profissionais de saúde da Rede de Atenção Psicossocial'
+    en: 'Business Intelligence aplicada à saúde: painéis de monitoramento para profissionais de saúde da Rede de Atenção Psicossocial'
+  summary:
+    pt: ''
+    en: ''
+  book_title: ''
+  volume: ''
+  doi_isbn: ''
+  journal_event: ''
+  location: ''
+  pages: ''
+  publisher: Biblioteca Central da Universidade de Brasília
+  tags:
+  - ai
+  type: tcc
+  program: curso_esw2
+  advisors:
+  - george_marsicano
+  url: 
+  year: 2023
