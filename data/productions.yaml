@@ -1,5 +1,33 @@
 items:
 - authors:
+  - Cristiane S. Ramos
+  - Dianne M. Viana
+  - Eduardo Bessa
+  - Márcia R. Mortari
+  - Sergio Antônio Andrade Freitas
+  title:
+    pt: 'Learning Indicators as Tools for Continuous Improvement in the Educational Environment'
+    en: 'Learning Indicators as Tools for Continuous Improvement in the Educational Environment'
+  summary:
+    pt: ''
+    en: ''
+  book_title: ''
+  volume: ''
+  doi_isbn: 
+  journal_event: PAEE/ALE 2024 - International Conference on Active Learning in Engineering Education
+  location: San Andrés Islas - Colombia
+  pages: 'To appear'
+  publisher: ''
+  tags:
+  - sergio_freitas
+  - cristiane_soares
+  - active_learning
+  type: conference
+  program: ''
+  advisors: []
+  url: ''
+  year: 2024
+- authors:
   - LACERDA, A. R. T.
   - FREITAS, S. A. A.
   - RAMOS, C. S.
