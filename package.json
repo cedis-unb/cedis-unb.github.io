@@ -45,6 +45,7 @@
   "homepage": "https://github.com/nusserstudios/tailbliss",
   "dependencies": {
     "markdown-it-emoji": "^3.0.0",
+    "npm": "^10.7.0",
     "pagefind": "^1.0.4"
   }
 }
