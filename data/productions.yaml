@@ -1,6 +1,36 @@
 items:
 - authors:
   - Cristiane S. Ramos
+  - Mylena Angélica S. Farias
+  - Sergio Antônio Andrade Freitas
+  - Marcus Vinícius Paiva Martins
+  - Juan Mangueira Alves
+  - Leda Cardoso S. Pinto
+  title:
+    pt: 'A process to identify players motivational profiles for designing a gamification project'
+    en: 'A process to identify players motivational profiles for designing a gamification project'
+  summary:
+    pt: ''
+    en: ''
+  book_title: ''
+  volume: ''
+  doi_isbn: 
+  journal_event: '24th International Conference on Computational Science and Its Applications - ICCSA 2024'
+  location: Hanoi, Vietnam
+  pages: 'To appear'
+  publisher: ''
+  tags:
+  - sergio_freitas
+  - cristiane_ramos
+  - active_learning
+  - gamification
+  type: conference
+  program: ''
+  advisors: []
+  url: ''
+  year: 2024
+- authors:
+  - Cristiane S. Ramos
   - Dianne M. Viana
   - Eduardo Bessa
   - Márcia R. Mortari
