@@ -18,3 +18,5 @@ tags:
 {{< link-interno "/pdf/Edital bolsista 01.2024.pdf" "Edital de lançamento​" >}}
 
 [Formulário de inscrição](https://forms.office.com/r/E8hJ37HUwy) (rede UnB)
+
+{{< link-interno "/posts/editais/blog-post-2.1" "Candidatos convocados para Entrevista Individual (etapa 3)​" >}}.
