@@ -20,3 +20,5 @@ tags:
 [Formulário de inscrição](https://forms.office.com/r/E8hJ37HUwy) (rede UnB)
 
 {{< link-interno "/posts/editais/blog-post-2.1" "Candidatos convocados para Entrevista Individual (etapa 3)​" >}}.
+
+{{< link-interno "/posts/editais/blog-post-2.2" "Resultado final​" >}}
