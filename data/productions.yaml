@@ -7,17 +7,17 @@ items:
   - Juan Mangueira Alves
   - Leda Cardoso S. Pinto
   title:
-    pt: 'A process to identify players motivational profiles for designing a gamification project'
-    en: 'A process to identify players motivational profiles for designing a gamification project'
+    pt: "A Process to Identify Players’ Motivational Profiles for Designing a Gamification Project"
+    en: "A Process to Identify Players’ Motivational Profiles for Designing a Gamification Project"
   summary:
-    pt: ''
-    en: ''
+    pt: "Este artigo apresenta um processo inovador para identificar os perfis motivacionais de um público-alvo específico utilizando três estratégias distintas: avaliação por juízes, aplicação de dinâmicas de jogo e o questionário Intrinsic Motivation Inventory (IMI). Cada estratégia visa alinhar-se com o framework Octalysis, enfatizando a importância da personalização e adaptabilidade na gamificação. O processo é testado em um projeto de gamificação dentro de um portal do governo brasileiro para disseminação científica, com foco em engajar estudantes brasileiros na ciência. A análise revela diferenças nos resultados das estratégias, destacando a necessidade de uma abordagem multifacetada para capturar com precisão os perfis motivacionais do público-alvo e melhorar a eficácia da gamificação."
+    en: "This article presents an innovative process for identifying the motivational profiles of a specific target audience using three distinct strategies: assessment by judges, application of game dynamics, and the Intrinsic Motivation Inventory (IMI) questionnaire. Each strategy aims to align with the Octalysis framework, emphasizing the importance of personalization and adaptability in gamification. The process is tested on a gamification project within a Brazilian government portal for scientific dissemination, focusing on engaging Brazilian students in science. The analysis reveals differences in strategy outcomes, highlighting the requirement of a multifaceted approach to accurately capture the target audience’s motivational profiles and improve gamification effectiveness."
   book_title: ''
   volume: ''
-  doi_isbn: 
+  doi_isbn: '10.1007/978-3-031-64608-9_4'
   journal_event: '24th International Conference on Computational Science and Its Applications - ICCSA 2024'
   location: Hanoi, Vietnam
-  pages: 'To appear'
+  pages: '49-67'
   publisher: ''
   tags:
   - sergio_freitas
@@ -39,14 +39,26 @@ items:
     pt: 'Learning Indicators as Tools for Continuous Improvement in the Educational Environment'
     en: 'Learning Indicators as Tools for Continuous Improvement in the Educational Environment'
   summary:
-    pt: ''
-    en: ''
-  book_title: ''
+    pt: "No mundo acelerado de hoje, caracterizado pela rápida evolução do conhecimento e pela crescente valorização da informação, o setor educacional enfrenta desafios sem precedentes. Esses desafios exigem um compromisso contínuo com a avaliação e aprimoramento das práticas pedagógicas, adaptando-as às necessidades e desafios emergentes. Nesse contexto, os indicadores de aprendizagem emergem como instrumentos fundamentais, oferecendo insights detalhados sobre a eficiência dos métodos e estratégias de aprendizagem ativa e o progresso dos estudantes no desenvolvimento de competências essenciais. Este artigo é dedicado a explorar a implementação de dois indicadores chave no ambiente educacional, visando otimizar a qualidade do ensino e aprendizagem nas disciplinas de cursos de engenharia. O primeiro indicador analisado foca na identificação do conhecimento prévio dos estudantes e na assimilação de novos conceitos, fundamentais para a aprendizagem significativa. O segundo indicador busca avaliar a consolidação de engramas, isto é, a formação e reforço de memórias relacionadas aos conceitos aprendidos, permitindo a identificação de lacunas no processo de ensino-aprendizagem. Argumenta-se que a adoção desses indicadores, entre outros, é necessária para uma gestão educacional eficaz, permitindo não apenas o monitoramento e avaliação das práticas pedagógicas, mas também o planejamento de intervenções precisas e bem fundamentadas para estabelecer um ambiente de aprendizagem inclusivo, eficiente e motivador."
+    en: "In today's fast-paced world characterized by rapid knowledge evolution and increasing information valuation, the 
+education sector faces unprecedented challenges. These challenges require a continuous commitment to the evaluation 
+and enhancement of pedagogical practices, adapting them to emerging needs and challenges. In this context, learning 
+indicators emerge as fundamental instruments, offering detailed insights into the efficiency of active learning methods and 
+strategies, and student progress in the development of essential competencies. This article is dedicated to exploring the 
+implementation of two key indicators in the educational environment, aiming at optimizing the quality of teaching and 
+learning in engineering course disciplines. The first indicator analyzed focuses on identifying students' prior knowledge 
+and assimilating new concepts, fundamental for meaningful learning. The second indicator seeks to evaluate the 
+consolidation of engrams, that is, the formation and reinforcement of memories related to learned concepts, allowing the 
+identification of gaps in the teaching-learning process. It is argued that the adoption of these indicators, among others, is 
+necessary for effective educational management, allowing not only the monitoring and evaluation of pedagogical practices 
+but also the planning of precise and well-founded interventions to establish an inclusive, efficient, and motivating learning 
+environment."
+  book_title: 'Proceedings of the PAEE/ALE’2024, International Conference on Active Learning in Engineering Education'
   volume: ''
-  doi_isbn: 
+  doi_isbn: '2183-1378'
   journal_event: PAEE/ALE 2024 - International Conference on Active Learning in Engineering Education
   location: San Andrés Islas - Colombia
-  pages: 'To appear'
+  pages: '245-254'
   publisher: ''
   tags:
   - sergio_freitas
@@ -65,8 +77,17 @@ items:
     pt: 'Gamified Chatbot Management Process: A way to build gamified chatbots'
     en: 'Gamified Chatbot Management Process: A way to build gamified chatbots'
   summary:
-    pt: ''
-    en: ''
+    pt: "Este artigo propõe a incorporação de gamificação com aprendizado de máquina para o desenvolvimento de chatbots. O Processo de Desenvolvimento de Chatbots Gamificados (GCMP) é um processo para o desenvolvimento de chatbots gamificados, compreendendo oito atividades, organizadas em quatro etapas, com ênfase na implementação da gamificação. Este processo inclui planejamento da gamificação, gestão da gamificação, atualização do conteúdo do chatbot, implementação do comportamento do chatbot, validação do comportamento do chatbot, análise do comportamento do chatbot, entrega do chatbot e análise do uso do chatbot. O GCMP fornece um guia claro e estruturado, permitindo flexibilidade para acomodar os requisitos específicos de cada projeto. Este artigo descreve a metodologia empregada, que inclui a aplicação de um experimento com estudantes de engenharia de software. O experimento é conduzido por meio do fornecimento de documentos, realização de reuniões semanais e coleta de dados pertinentes. A aplicabilidade do GCMP em projetos de chatbots gamificados é examinada, e uma nova versão do processo é proposta para resolver as lacunas encontradas, com conclusões baseadas nos experimentos realizados."
+    en: "This paper proposes the incorporation of gamification with machine learning for the development of chatbots. The Gamified Chatbot Development Process (GCMP), is a process for the development of gamified chatbots, it comprises eight activities, arranged into four steps,
+emphasizing gamification implementation. This process includes gamification planning, gamification management, updating chatbot content,
+chatbot behavior implementation, chatbot behavior validation, chatbot
+behavior analysis, chatbot delivery, and chatbot usage analysis. GCMP
+provides a clear and structured guide, allowing flexibility to accommodate each project’s specific requirements. This article describes the
+methodology employed, which includes the application of an experiment
+with software engineering students. The experiment is conducted by
+providing documents, holding weekly meetings, and collecting pertinent
+data. The applicability of GCMP in gamified chatbot projects is examined, and a new version of the process is proposed to resolve the gaps
+found, and conclusions are drawn based on experiments."
   book_title: ''
   volume: ''
   doi_isbn: 
@@ -78,6 +99,7 @@ items:
   - sergio_freitas
   - cristiane_ramos
   - gamification
+  - machine_learning
   type: conference
   program: ''
   advisors: []
