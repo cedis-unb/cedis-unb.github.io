@@ -1,5 +1,65 @@
 items:
 - authors:
+  - Sergio Antônio Andrade Freitas
+  - Cristiane S. Ramos
+  - Eduardo Bessa Pereira da Silva
+  - Marcia Renata Mortari
+  - Dianne Magalhaes Viana
+  title:
+    pt: "Implementing Neuroscientific Principles in Gamified Software Engineering Courses"
+    en: "Implementing Neuroscientific Principles in Gamified Software Engineering Courses"
+  summary:
+    pt: ""
+    en: ""
+  book_title: ''
+  volume: ''
+  doi_isbn: ''
+  journal_event: 'Frontiers in Education 2024'
+  location: Washington DC, USA
+  pages: 'To appear'
+  publisher: ''
+  tags:
+  - sergio_freitas
+  - cristiane_ramos
+  - active_learning
+  - learning_analytics
+  - gamification
+  type: conference
+  program: ''
+  advisors: []
+  url: ''
+  year: 2024
+- authors:
+  - Sergio Antônio Andrade Freitas
+  - Mylena Angélica S. Farias
+  - Cristiane S. Ramos
+  - Marcus Vinícius Paiva Martins
+  - Juan Mangueira Alves
+  - Leda Cardoso S. Pinto
+  title:
+    pt: "Crafting Personalized Learning Environments Through Motivational Profiling"
+    en: "Crafting Personalized Learning Environments Through Motivational Profiling"
+  summary:
+    pt: ""
+    en: ""
+  book_title: ''
+  volume: ''
+  doi_isbn: ''
+  journal_event: 'Frontiers in Education 2024'
+  location: Washington DC, USA
+  pages: 'To appear'
+  publisher: ''
+  tags:
+  - sergio_freitas
+  - cristiane_ramos
+  - active_learning
+  - gamification
+  type: conference
+  program: ''
+  advisors: []
+  url: ''
+  year: 2024
+- authors:
   - Cristiane S. Ramos
   - Mylena Angélica S. Farias
   - Sergio Antônio Andrade Freitas
