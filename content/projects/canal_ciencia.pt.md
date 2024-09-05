@@ -36,5 +36,5 @@ A implementação desta iniciativa ocorrerá na plataforma WordPress, a base atu
 Este projeto beneficia-se da colaboração entre os especialistas do CEDIS e do IBICT, sob a coordenação de Leda Sampson (IBICT). Inclui também a participação de estudantes de Engenharia de Software, como bolsistas de Iniciação Científica:
 
 {{< link-interno "/people/collaborators/mylena_faria" "Mylena Angélica Silva Farias" >}}<br>
-{{< link-interno "/people/collaborators/juan_alves" "Juan Mangeira Alves" >}}<br>
-{{< link-interno "/people/collaborators/marcus_martins" "Marcus Vinicius Martins" >}}
+{{< link-interno "/people/collaborators/marcus_martins" "Marcus Vinicius Martins" >}}<br>
+{{< link-interno "/people/collaborators/wildemberg_sales" "Wildemberg Sales" >}}
