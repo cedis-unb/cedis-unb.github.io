@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>People on CEDIS</title><link>https://cedis.unb.br/people/</link><description>Recent content in People on CEDIS</description><generator>Hugo</generator><language>en</language><lastBuildDate>Mon, 11 Mar 2024 15:09:49 -0300</lastBuildDate><atom:link href="https://cedis.unb.br/people/index.xml" rel="self" type="application/rss+xml"/><item><title>André Luiz Peron Martins Lanna</title><link>https://cedis.unb.br/people/andre_lanna/</link><pubDate>Wed, 14 Feb 2024 00:50:20 -0300</pubDate><guid>https://cedis.unb.br/people/andre_lanna/</guid><description>Associate Professor at the University of Brasília (UnB), working in the undergraduate Software Engineering program and the Graduate Program in Applied Computing.</description></item><item><title>Sergio Antônio Andrade de Freitas</title><link>https://cedis.unb.br/people/sergio_freitas/</link><pubDate>Wed, 14 Feb 2024 00:49:57 -0300</pubDate><guid>https://cedis.unb.br/people/sergio_freitas/</guid><description>Full Professor at the University of Brasília (UnB), working in the undergraduate Software Engineering program and the Graduate Program in Applied Computing.</description></item><item><title>Collaborators</title><link>https://cedis.unb.br/people/all/</link><pubDate>Wed, 14 Feb 2024 00:48:51 -0300</pubDate><guid>https://cedis.unb.br/people/all/</guid><description>&lt;div class="space-y-4">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>People on CEDIS</title><link>https://cedis.unb.br/people/</link><description>Recent content in People on CEDIS</description><generator>Hugo</generator><language>en</language><lastBuildDate>Mon, 01 Jul 2024 00:50:20 -0300</lastBuildDate><atom:link href="https://cedis.unb.br/people/index.xml" rel="self" type="application/rss+xml"/><item><title>André Luiz Peron Martins Lanna</title><link>https://cedis.unb.br/people/andre_lanna/</link><pubDate>Wed, 14 Feb 2024 00:50:20 -0300</pubDate><guid>https://cedis.unb.br/people/andre_lanna/</guid><description>Associate Professor at the University of Brasília (UnB), working in the undergraduate Software Engineering program and the Graduate Program in Applied Computing.</description></item><item><title>Sergio Antônio Andrade de Freitas</title><link>https://cedis.unb.br/people/sergio_freitas/</link><pubDate>Wed, 14 Feb 2024 00:49:57 -0300</pubDate><guid>https://cedis.unb.br/people/sergio_freitas/</guid><description>Full Professor at the University of Brasília (UnB), working in the undergraduate Software Engineering program and the Graduate Program in Applied Computing.</description></item><item><title>Collaborators</title><link>https://cedis.unb.br/people/all/</link><pubDate>Wed, 14 Feb 2024 00:48:51 -0300</pubDate><guid>https://cedis.unb.br/people/all/</guid><description>&lt;div class="space-y-4">
  &lt;!-- Current Collaborators Section -->
  &lt;div>
  &lt;h2 class="text-xxl font-bold mb-2 text-primary-900">Current Collaborators&lt;/h2>
@@ -1000,6 +1000,38 @@
  &lt;div>
  
  &lt;/div>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  
  
  
@@ -2974,7 +3006,6 @@
  
  
  
- &lt;ul>
  
  
  
@@ -3074,28 +3105,20 @@
  
  
  
- &lt;li>
- &lt;span>&lt;strong>&lt;a href="https://cedis.unb.br/people/collaborators/arthur_temporim/">Arthur Rocha Temporim de Lacerda&lt;/a>&lt;/strong>&lt;/span>
  
- &lt;span> - Master&amp;#39;s student in Applied Computing at PPCA, University of Brasília.&lt;/span>
  
  
  
- &lt;span> The project is to create the GCMP (Gamified Chatbot Development Process), a structured method for developing gamified chatbots.&lt;/span>
  
  
  
  
- Advisor(s):
  
  
  
- &lt;a href="https://cedis.unb.br/people/sergio_freitas">Sergio Freitas&lt;/a>
  
  
  
- .
- &lt;/li>
  
  
  
@@ -3401,107 +3424,6 @@
  
  
  
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- &lt;/ul>
 
  
  
@@ -4984,6 +4906,38 @@
  
  
  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 
  
  
@@ -5985,6 +5939,300 @@
  &lt;div>
  
  &lt;/div>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  
  
  
@@ -6074,26 +6322,19 @@
  
  
  
- &lt;li>
- &lt;span>&lt;strong>&lt;a href="https://cedis.unb.br/people/collaborators/andre_silva/">André Corrêa da Silva&lt;/a>&lt;/strong>&lt;/span>
  
- &lt;span> - Undergraduate in Software Engineering, University of Brasília&lt;/span>
  
  
  
  
  
  
- Advisor(s):
  
  
  
- &lt;a href="https://cedis.unb.br/people/sergio_freitas">Sergio Freitas&lt;/a>
  
  
  
- .
- &lt;/li>
  
  
  
@@ -6348,43 +6589,6 @@
  
  
  
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- &lt;li>
- &lt;span>&lt;strong>&lt;a href="https://cedis.unb.br/people/collaborators/juan_alves/">Juan Mangeira Alves&lt;/a>&lt;/strong>&lt;/span>
- 
- &lt;span> - Undergraduate in Software Engineering, University of Brasília&lt;/span>
- 
- 
- 
- 
- 
- 
- Advisor(s):
- 
- 
- 
- &lt;a href="https://cedis.unb.br/people/sergio_freitas">Sergio Freitas&lt;/a>,
- 
- 
- 
- &lt;a href="https://cedis.unb.br/people/cristiane_ramos">Cristiane Ramos&lt;/a>
- 
- 
- 
- .
- &lt;/li>
  
  
  
@@ -6481,26 +6685,6 @@
  
  
  
- &lt;li>
- &lt;span>&lt;strong>&lt;a href="https://cedis.unb.br/people/collaborators/milena_silva/">Milena de Faria Silva&lt;/a>&lt;/strong>&lt;/span>
- 
- &lt;span> - Undergraduate in Computing, Federal Institute of Education, Science, and Technology of Southern Minas Gerais&lt;/span>
- 
- 
- 
- 
- 
- 
- Advisor(s):
- 
- 
- 
- &lt;a href="https://cedis.unb.br/people/sergio_freitas">Sergio Freitas&lt;/a>
- 
- 
- 
- .
- &lt;/li>
  
  
  
@@ -6597,10 +6781,112 @@
  
  
  
- &lt;li>
- &lt;span>&lt;strong>&lt;a href="https://cedis.unb.br/people/collaborators/renan_batista/">Renan Carneiro Batista&lt;/a>&lt;/strong>&lt;/span>
  
- &lt;span> - Undergraduate in Computer Science, Federal Institute of Education, Science, and Technology of Ceará&lt;/span>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;li>
+ &lt;span>&lt;strong>&lt;a href="https://cedis.unb.br/people/collaborators/wildemberg_sales/">Wildbemberg Sales&lt;/a>&lt;/strong>&lt;/span>
+ 
+ &lt;span> - Undergraduate in Software Engineering, University of Brasília&lt;/span>
  
  
  
@@ -6611,78 +6897,16 @@
  
  
  
- &lt;a href="https://cedis.unb.br/people/sergio_freitas">Sergio Freitas&lt;/a>
+ &lt;a href="https://cedis.unb.br/people/sergio_freitas">Sergio Freitas&lt;/a>,
+ 
+ 
+ 
+ &lt;a href="https://cedis.unb.br/people/cristiane_ramos">Cristiane Ramos&lt;/a>
  
  
  
  .
  &lt;/li>
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
  
  
  
@@ -9256,6 +9480,38 @@
  
  
  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 
  &lt;/div>
  &lt;/div>
@@ -9266,4 +9522,4 @@
  Former Collaborators
  &lt;svg :class="{'rotate-0': !showPrevious, 'rotate-180': showPrevious}" class="ml-2 h-5 w-5 transform transition-transform duration-200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#51C5CF">&lt;path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />&lt;/svg>
  &lt;/h2>
- &lt;p x-show="showPrevious" x-cloak class="mb-4 text-neutral-700">These are the collaborators who contributed to our success in the past. We are grateful for their effort and dedication.&lt;/p></description></item><item><title>George Marsicano Correa</title><link>https://cedis.unb.br/people/george_marsicano/</link><pubDate>Wed, 14 Feb 2024 00:48:51 -0300</pubDate><guid>https://cedis.unb.br/people/george_marsicano/</guid><description>Associate Professor at the University of Brasília (UnB), working in the undergraduate Software Engineering program and the Graduate Program in Applied Computing.</description></item><item><title>Fabiana Freitas Mendes</title><link>https://cedis.unb.br/people/fabiana_mendes/</link><pubDate>Wed, 14 Feb 2024 00:47:27 -0300</pubDate><guid>https://cedis.unb.br/people/fabiana_mendes/</guid><description>Associate Professor at the University of Brasília (UnB), working in the undergraduate Software Engineering program.</description></item><item><title>Daniel Sundfeld Lima</title><link>https://cedis.unb.br/people/daniel_lima/</link><pubDate>Wed, 14 Feb 2024 00:46:38 -0300</pubDate><guid>https://cedis.unb.br/people/daniel_lima/</guid><description>Associate Professor at the University of Brasília (UnB), working in the undergraduate Software Engineering program.</description></item><item><title>Cristiane Soares Ramos</title><link>https://cedis.unb.br/people/cristiane_ramos/</link><pubDate>Wed, 14 Feb 2024 00:44:02 -0300</pubDate><guid>https://cedis.unb.br/people/cristiane_ramos/</guid><description>Professor at the University of Brasília (UnB), working in the undergraduate Software Engineering program.</description></item><item><title>Ricardo Ajax Dias Kosloski</title><link>https://cedis.unb.br/people/ricardo_ajax/</link><pubDate>Wed, 14 Feb 2024 00:43:11 -0300</pubDate><guid>https://cedis.unb.br/people/ricardo_ajax/</guid><description>Professor at the University of Brasília (UnB), working in the undergraduate Software Engineering program.</description></item><item><title>Arthur Rocha Temporim de Lacerda</title><link>https://cedis.unb.br/people/collaborators/arthur_temporim/</link><pubDate>Thu, 17 Feb 2022 00:50:20 -0300</pubDate><guid>https://cedis.unb.br/people/collaborators/arthur_temporim/</guid><description>Master&amp;rsquo;s student in Applied Computing at PPCA, University of Brasília.</description></item><item><title>Edmilson Cosme da Silva</title><link>https://cedis.unb.br/people/collaborators/edmilson_cosme/</link><pubDate>Sat, 17 Feb 2024 00:50:20 -0300</pubDate><guid>https://cedis.unb.br/people/collaborators/edmilson_cosme/</guid><description>Master in Applied Computing, University of Brasília</description></item><item><title>Mylena Angélica Silva Farias</title><link>https://cedis.unb.br/people/collaborators/mylena_faria/</link><pubDate>Sat, 17 Feb 2024 00:52:20 -0300</pubDate><guid>https://cedis.unb.br/people/collaborators/mylena_faria/</guid><description>Undergraduate in Software Engineering, University of Brasília</description></item><item><title>Marcus Vinicius Paiva Martins</title><link>https://cedis.unb.br/people/collaborators/marcus_martins/</link><pubDate>Sat, 17 Feb 2024 00:51:15 -0300</pubDate><guid>https://cedis.unb.br/people/collaborators/marcus_martins/</guid><description>Undergraduate in Software Engineering, University of Brasília</description></item><item><title>André Corrêa da Silva</title><link>https://cedis.unb.br/people/collaborators/andre_silva/</link><pubDate>Sat, 17 Feb 2024 00:50:20 -0300</pubDate><guid>https://cedis.unb.br/people/collaborators/andre_silva/</guid><description>Undergraduate in Software Engineering, University of Brasília</description></item><item><title>Juan Mangeira Alves</title><link>https://cedis.unb.br/people/collaborators/juan_alves/</link><pubDate>Sat, 17 Feb 2024 00:50:20 -0300</pubDate><guid>https://cedis.unb.br/people/collaborators/juan_alves/</guid><description>Undergraduate in Software Engineering, University of Brasília</description></item><item><title>Milena de Faria Silva</title><link>https://cedis.unb.br/people/collaborators/milena_silva/</link><pubDate>Sat, 17 Feb 2024 00:50:20 -0300</pubDate><guid>https://cedis.unb.br/people/collaborators/milena_silva/</guid><description>Undergraduate in Computing, Federal Institute of Education, Science, and Technology of Southern Minas Gerais</description></item><item><title>Renan Carneiro Batista</title><link>https://cedis.unb.br/people/collaborators/renan_batista/</link><pubDate>Sat, 17 Feb 2024 00:50:20 -0300</pubDate><guid>https://cedis.unb.br/people/collaborators/renan_batista/</guid><description>Undergraduate in Computer Science, Federal Institute of Education, Science, and Technology of Ceará</description></item></channel></rss>
+ &lt;p x-show="showPrevious" x-cloak class="mb-4 text-neutral-700">These are the collaborators who contributed to our success in the past. We are grateful for their effort and dedication.&lt;/p></description></item><item><title>George Marsicano Correa</title><link>https://cedis.unb.br/people/george_marsicano/</link><pubDate>Wed, 14 Feb 2024 00:48:51 -0300</pubDate><guid>https://cedis.unb.br/people/george_marsicano/</guid><description>Associate Professor at the University of Brasília (UnB), working in the undergraduate Software Engineering program and the Graduate Program in Applied Computing.</description></item><item><title>Fabiana Freitas Mendes</title><link>https://cedis.unb.br/people/fabiana_mendes/</link><pubDate>Wed, 14 Feb 2024 00:47:27 -0300</pubDate><guid>https://cedis.unb.br/people/fabiana_mendes/</guid><description>Associate Professor at the University of Brasília (UnB), working in the undergraduate Software Engineering program.</description></item><item><title>Daniel Sundfeld Lima</title><link>https://cedis.unb.br/people/daniel_lima/</link><pubDate>Wed, 14 Feb 2024 00:46:38 -0300</pubDate><guid>https://cedis.unb.br/people/daniel_lima/</guid><description>Associate Professor at the University of Brasília (UnB), working in the undergraduate Software Engineering program.</description></item><item><title>Cristiane Soares Ramos</title><link>https://cedis.unb.br/people/cristiane_ramos/</link><pubDate>Wed, 14 Feb 2024 00:44:02 -0300</pubDate><guid>https://cedis.unb.br/people/cristiane_ramos/</guid><description>Professor at the University of Brasília (UnB), working in the undergraduate Software Engineering program.</description></item><item><title>Ricardo Ajax Dias Kosloski</title><link>https://cedis.unb.br/people/ricardo_ajax/</link><pubDate>Wed, 14 Feb 2024 00:43:11 -0300</pubDate><guid>https://cedis.unb.br/people/ricardo_ajax/</guid><description>Professor at the University of Brasília (UnB), working in the undergraduate Software Engineering program.</description></item><item><title>Arthur Rocha Temporim de Lacerda</title><link>https://cedis.unb.br/people/collaborators/arthur_temporim/</link><pubDate>Thu, 17 Feb 2022 00:50:20 -0300</pubDate><guid>https://cedis.unb.br/people/collaborators/arthur_temporim/</guid><description>Master&amp;rsquo;s student in Applied Computing at PPCA, University of Brasília.</description></item><item><title>Edmilson Cosme da Silva</title><link>https://cedis.unb.br/people/collaborators/edmilson_cosme/</link><pubDate>Sat, 17 Feb 2024 00:50:20 -0300</pubDate><guid>https://cedis.unb.br/people/collaborators/edmilson_cosme/</guid><description>Master in Applied Computing, University of Brasília</description></item><item><title>Wildbemberg Sales</title><link>https://cedis.unb.br/people/collaborators/wildemberg_sales/</link><pubDate>Mon, 01 Jul 2024 00:50:20 -0300</pubDate><guid>https://cedis.unb.br/people/collaborators/wildemberg_sales/</guid><description>Undergraduate in Software Engineering, University of Brasília</description></item><item><title>Mylena Angélica Silva Farias</title><link>https://cedis.unb.br/people/collaborators/mylena_faria/</link><pubDate>Sat, 17 Feb 2024 00:52:20 -0300</pubDate><guid>https://cedis.unb.br/people/collaborators/mylena_faria/</guid><description>Undergraduate in Software Engineering, University of Brasília</description></item><item><title>Marcus Vinicius Paiva Martins</title><link>https://cedis.unb.br/people/collaborators/marcus_martins/</link><pubDate>Sat, 17 Feb 2024 00:51:15 -0300</pubDate><guid>https://cedis.unb.br/people/collaborators/marcus_martins/</guid><description>Undergraduate in Software Engineering, University of Brasília</description></item><item><title>André Corrêa da Silva</title><link>https://cedis.unb.br/people/collaborators/andre_silva/</link><pubDate>Sat, 17 Feb 2024 00:50:20 -0300</pubDate><guid>https://cedis.unb.br/people/collaborators/andre_silva/</guid><description>Undergraduate in Software Engineering, University of Brasília</description></item><item><title>Juan Mangeira Alves</title><link>https://cedis.unb.br/people/collaborators/juan_alves/</link><pubDate>Sat, 17 Feb 2024 00:50:20 -0300</pubDate><guid>https://cedis.unb.br/people/collaborators/juan_alves/</guid><description>Undergraduate in Software Engineering, University of Brasília</description></item><item><title>Milena de Faria Silva</title><link>https://cedis.unb.br/people/collaborators/milena_silva/</link><pubDate>Sat, 17 Feb 2024 00:50:20 -0300</pubDate><guid>https://cedis.unb.br/people/collaborators/milena_silva/</guid><description>Undergraduate in Computing, Federal Institute of Education, Science, and Technology of Southern Minas Gerais</description></item><item><title>Renan Carneiro Batista</title><link>https://cedis.unb.br/people/collaborators/renan_batista/</link><pubDate>Sat, 17 Feb 2024 00:50:20 -0300</pubDate><guid>https://cedis.unb.br/people/collaborators/renan_batista/</guid><description>Undergraduate in Computer Science, Federal Institute of Education, Science, and Technology of Ceará</description></item></channel></rss>
