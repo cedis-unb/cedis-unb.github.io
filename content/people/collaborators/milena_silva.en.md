@@ -17,7 +17,7 @@ tags:
 - dfcris
 - scientific_initiation
 - machine_learning
-- active
+- inactive
 ---
 ## Academic and Professional Profile
 - Current Position: Undergraduate in Computing, Federal Institute of Education, Science, and Technology of Southern Minas Gerais.
