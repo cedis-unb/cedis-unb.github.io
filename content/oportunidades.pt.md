@@ -6,8 +6,8 @@ language: pt
 ---
 # 2024
 
-Em breve, novos editais.
+- {{< link-interno "/posts/blog-post-2" "Edital n. 01/2024 - Seleção de bolsista para projeto de gamificação​" >}} (**NOVO**)
 
 # 2023
 
-- {{< link-interno "/posts/blog-post-1" "Edital n. 01/2023 - Seleção de bolsistas para projeto de gamificação​" >}} (**ENCERRADO**)
+- {{< link-interno "/posts/blog-post-1" "Edital n. 01/2023 - Seleção de bolsistas para projeto de gamificação​" >}} (ENCERRADO)

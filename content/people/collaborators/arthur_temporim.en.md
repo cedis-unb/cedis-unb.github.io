@@ -15,7 +15,7 @@ advisors:
 - sergio_freitas
 tags: 
 - gamification
-- active
+- inactive
 ---
 ## Academic and Professional Profile
 - Current Position: Master's student in Applied Computing at PPCA, University of Brasília.
