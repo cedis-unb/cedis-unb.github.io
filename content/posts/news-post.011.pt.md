@@ -22,7 +22,7 @@ Brasília, 6 de setembro de 2024
 
 O artigo, que é parte da dissertação de mestrado de Arthur, defendida no início deste ano, descreve o _Gamified Chatbot Management Process_ (GCMP), um processo que integra gamificação e aprendizado de máquina no desenvolvimento de chatbots. O trabalho aborda as etapas de planejamento, implementação e análise de chatbots gamificados, propondo uma metodologia que pode ser adaptada a diferentes requisitos de projetos.
 
-O estudo contou com a orientação do Prof. Sergio Antonio Andrade de Freitas e a colaboração da Profa. Cristiane Soares Ramos, ambos do Centro de Desenvolvimento de Sistemas (CEDIS) da UnB.
+O estudo contou com a orientação do Prof. Sergio Antonio Andrade de Freitas e a colaboração da Profa. Cristiane Soares Ramos, ambos do CEDIS da UnB.
 
 O artigo foi apresentado no 10º Congresso Internacional sobre Sistemas Inteligentes (IntelliSys 2024) e é um dos resultados da dissertação de Arthur, que tem foco na combinação de técnicas de gamificação e IA para criar soluções interativas e engajadoras.
 
