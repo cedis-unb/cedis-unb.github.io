@@ -3006,6 +3006,7 @@
  
  
  
+ &lt;ul>
  
  
  
@@ -3105,20 +3106,28 @@
  
  
  
+ &lt;li>
+ &lt;span>&lt;strong>&lt;a href="https://cedis.unb.br/pt/people/collaborators/arthur_temporim/">Arthur Rocha Temporim de Lacerda&lt;/a>&lt;/strong>&lt;/span>
  
+ &lt;span> - Mestrando em Computação Aplicada no PPCA da Universidade de Brasília.&lt;/span>
  
  
  
+ &lt;span> O projeto de Mestrado é criar o GCMP (Gamified Chatbot Development Process), um método estruturado para desenvolver chatbots gamificados.&lt;/span>
  
  
  
  
+ Orientador(es):
  
  
  
+ &lt;a href="https://cedis.unb.br/pt/people/sergio_freitas">Sergio Freitas&lt;/a>
  
  
  
+ .
+ &lt;/li>
  
  
  
@@ -3424,6 +3433,140 @@
  
  
  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;/ul>
 
  
  
@@ -9572,7 +9715,12 @@
 &lt;h3 id="equipamentos">Equipamentos:&lt;/h3>
 &lt;ul>
 &lt;li>
-&lt;p>Blade com 16 servidores em Rack;&lt;/p></description></item><item><title>Oportunidades no CEDIS</title><link>https://cedis.unb.br/pt/oportunidades/</link><pubDate>Sat, 18 Dec 2021 11:10:36 +0800</pubDate><guid>https://cedis.unb.br/pt/oportunidades/</guid><description>&lt;h1 id="2024">2024&lt;/h1>
+&lt;p>Blade com 16 servidores em Rack;&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Storage de 30 TB com fiber channel.&lt;/p>
+&lt;/li>
+&lt;/ul></description></item><item><title>Oportunidades no CEDIS</title><link>https://cedis.unb.br/pt/oportunidades/</link><pubDate>Sat, 18 Dec 2021 11:10:36 +0800</pubDate><guid>https://cedis.unb.br/pt/oportunidades/</guid><description>&lt;h1 id="2024">2024&lt;/h1>
 &lt;ul>
 &lt;li>
 
@@ -9586,7 +9734,30 @@
  &lt;svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
  &lt;g transform="rotate(-45 12 12)">
  &lt;line x1="6" y1="12" x2="18" y2="12">&lt;/line>
- &lt;polyline points="12 6 18 12 12 18">&lt;/po</description></item><item><title>Publicações</title><link>https://cedis.unb.br/pt/publications/</link><pubDate>Sat, 18 Dec 2021 03:10:36 +0000</pubDate><guid>https://cedis.unb.br/pt/publications/</guid><description>&lt;div id="top">&lt;/div>
+ &lt;polyline points="12 6 18 12 12 18">&lt;/polyline>
+ &lt;/g>
+ &lt;/svg>
+&lt;/a> (&lt;strong>NOVO&lt;/strong>)&lt;/li>
+&lt;/ul>
+&lt;h1 id="2023">2023&lt;/h1>
+&lt;ul>
+&lt;li>
+
+
+
+&lt;a href="https://cedis.unb.br/pt/posts/blog-post-1" class="internal-link" style="display: inline-flex; align-items: center; text-decoration: none;">
+ 
+ 
+ Edital n. 01/2023 - Seleção de bolsistas para projeto de gamificação​
+ 
+ &lt;svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+ &lt;g transform="rotate(-45 12 12)">
+ &lt;line x1="6" y1="12" x2="18" y2="12">&lt;/line>
+ &lt;polyline points="12 6 18 12 12 18">&lt;/polyline>
+ &lt;/g>
+ &lt;/svg>
+&lt;/a> (ENCERRADO)&lt;/li>
+&lt;/ul></description></item><item><title>Publicações</title><link>https://cedis.unb.br/pt/publications/</link><pubDate>Sat, 18 Dec 2021 03:10:36 +0000</pubDate><guid>https://cedis.unb.br/pt/publications/</guid><description>&lt;div id="top">&lt;/div>
 &lt;h2 id="2024">2024&lt;/h2>
 &lt;p>
 
