@@ -15,7 +15,6 @@ advisors:
 - sergio_freitas
 tags: 
 - gamification
-- inactive
 ---
 ## Perfil Acadêmico e Profissional
 - Posição Atual: Mestrando em Computação Aplicada no PPCA da Universidade de Brasília. 

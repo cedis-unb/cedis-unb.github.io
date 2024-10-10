@@ -3006,6 +3006,7 @@
  
  
  
+ &lt;ul>
  
  
  
@@ -3105,20 +3106,28 @@
  
  
  
+ &lt;li>
+ &lt;span>&lt;strong>&lt;a href="https://cedis.unb.br/people/collaborators/arthur_temporim/">Arthur Rocha Temporim de Lacerda&lt;/a>&lt;/strong>&lt;/span>
  
+ &lt;span> - Master&amp;#39;s student in Applied Computing at PPCA, University of Brasília.&lt;/span>
  
  
  
+ &lt;span> The project is to create the GCMP (Gamified Chatbot Development Process), a structured method for developing gamified chatbots.&lt;/span>
  
  
  
  
+ Advisor(s):
  
  
  
+ &lt;a href="https://cedis.unb.br/people/sergio_freitas">Sergio Freitas&lt;/a>
  
  
  
+ .
+ &lt;/li>
  
  
  
@@ -3424,6 +3433,140 @@
  
  
  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;/ul>
 
  
  
@@ -9542,7 +9685,14 @@
 &lt;p>!!!!!! ???? ,, &amp;ndash; &amp;mdash;&lt;/p>
 &lt;p>&amp;ldquo;Smartypants, double quotes&amp;rdquo; and &amp;lsquo;single quotes&amp;rsquo;&lt;/p>
 &lt;h2 id="emphasis">Emphasis&lt;/h2>
-&lt;p>&lt;strong>This is bold text&lt;/strong>&lt;/p></description></item><item><title>CEDIS Infrastructure</title><link>https://cedis.unb.br/infra/</link><pubDate>Sat, 18 Dec 2021 11:10:36 +0800</pubDate><guid>https://cedis.unb.br/infra/</guid><description>&lt;p>CEDIS has two spaces for conducting its activities:&lt;/p>
+&lt;p>&lt;strong>This is bold text&lt;/strong>&lt;/p>
+&lt;p>&lt;strong>This is bold text&lt;/strong>&lt;/p>
+&lt;p>&lt;em>This is italic text&lt;/em>&lt;/p>
+&lt;p>&lt;em>This is italic text&lt;/em>&lt;/p>
+&lt;p>&lt;del>Strikethrough&lt;/del>&lt;/p>
+&lt;h2 id="blockquotes">Blockquotes&lt;/h2>
+&lt;blockquote>
+&lt;p>Blockquotes can also be nested&amp;hellip;&lt;/p></description></item><item><title>CEDIS Infrastructure</title><link>https://cedis.unb.br/infra/</link><pubDate>Sat, 18 Dec 2021 11:10:36 +0800</pubDate><guid>https://cedis.unb.br/infra/</guid><description>&lt;p>CEDIS has two spaces for conducting its activities:&lt;/p>
 &lt;h3 id="container-19">Container 19:&lt;/h3>
 &lt;ul>
 &lt;li>
@@ -9562,7 +9712,12 @@
 &lt;h3 id="equipment">Equipment:&lt;/h3>
 &lt;ul>
 &lt;li>
-&lt;p>A blade with 16 servers in a rack;&lt;/p></description></item><item><title>Contact</title><link>https://cedis.unb.br/contact/</link><pubDate>Sat, 18 Dec 2021 03:10:36 +0000</pubDate><guid>https://cedis.unb.br/contact/</guid><description>&lt;p>The Center for Studies, Development, and Innovation in Software (CEDIS) is located at the &lt;a href="https://fga.unb.br/">Gama Faculty (FGA)&lt;/a> of the &lt;a href="https://www.unb.br/">University of Brasília (UnB)&lt;/a>:&lt;/p>
+&lt;p>A blade with 16 servers in a rack;&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>A 30 TB storage with fiber channel.&lt;/p>
+&lt;/li>
+&lt;/ul></description></item><item><title>Contact</title><link>https://cedis.unb.br/contact/</link><pubDate>Sat, 18 Dec 2021 03:10:36 +0000</pubDate><guid>https://cedis.unb.br/contact/</guid><description>&lt;p>The Center for Studies, Development, and Innovation in Software (CEDIS) is located at the &lt;a href="https://fga.unb.br/">Gama Faculty (FGA)&lt;/a> of the &lt;a href="https://www.unb.br/">University of Brasília (UnB)&lt;/a>:&lt;/p>
 &lt;table>
  &lt;thead>
  &lt;tr>
@@ -9597,7 +9752,8 @@
 &lt;pre tabindex="0">&lt;code>&amp;lt;article class=&amp;#34;prose lg:prose-xl&amp;#34;&amp;gt;
  {{ markdown }}
 &amp;lt;/article&amp;gt;
-&lt;/code>&lt;/pr</description></item><item><title>Publications</title><link>https://cedis.unb.br/publications/</link><pubDate>Sat, 18 Dec 2021 03:10:36 +0000</pubDate><guid>https://cedis.unb.br/publications/</guid><description>&lt;div id="top">&lt;/div>
+&lt;/code>&lt;/pre>&lt;p>To see what it looks like in action, check out our &lt;a href="https://play.tailwindcss.com/uj1vGACRJA?layout=preview">live demo&lt;/a> on Tailwind Play.
+​&lt;/p></description></item><item><title>Publications</title><link>https://cedis.unb.br/publications/</link><pubDate>Sat, 18 Dec 2021 03:10:36 +0000</pubDate><guid>https://cedis.unb.br/publications/</guid><description>&lt;div id="top">&lt;/div>
 &lt;h2 id="2024">2024&lt;/h2>
 &lt;p>
 
