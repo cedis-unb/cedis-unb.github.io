@@ -1,5 +1,58 @@
 items:
 - authors:
+  - MARSICANO, G. C.
+  - CANEDO, EDNA
+  - RAMOS, C. S.
+  - FIGUEIREDO, R. M. C.
+  - PEDROSA, G. V.
+  title:
+    pt: "Digital Transformation of Public Services in a Startup-Based Environment: Job Perceptions, Relationships, Potentialities and Restrictions"
+    en: "Digital Transformation of Public Services in a Startup-Based Environment: Job Perceptions, Relationships, Potentialities and Restrictions"
+  summary:
+    pt: ""
+    en: ""
+  book_title: ''
+  volume: '30(6)'
+  doi_isbn: '10.3897/jucs.106979'
+  journal_event: 'JOURNAL OF UNIVERSAL COMPUTER SCIENCE'
+  location: ''
+  pages: '720-757'
+  publisher: ''
+  tags:
+  - george_marsicano
+  - cristiane_ramos
+  - digital_transformation
+  type: article
+  program: ''
+  advisors: []
+  url: ''
+  year: 2024
+- authors:
+  - Éber Júnio Borges Moreira
+  - Sergio Antônio Andrade Freitas
+  title:
+    pt: "A CP-SAT Approach for Academic Resource Timetabling in Higher Education Institutions: A Case Study at a Major Public University"
+    en: "A CP-SAT Approach for Academic Resource Timetabling in Higher Education Institutions: A Case Study at a Major Public University"
+  summary:
+    pt: ""
+    en: ""
+  book_title: ''
+  volume: ''
+  doi_isbn: ''
+  journal_event: 'IEEE International Conference on IT in Higher Education and Training (ITHET 2024)'
+  location: Paris, France
+  pages: 'To appear'
+  publisher: ''
+  tags:
+  - sergio_freitas
+  - machine_learning
+  - learning_analytics
+  type: conference
+  program: ''
+  advisors: []
+  url: ''
+  year: 2024
+- authors:
   - Sergio Antônio Andrade Freitas
   - Cristiane S. Ramos
   - Eduardo Bessa Pereira da Silva
