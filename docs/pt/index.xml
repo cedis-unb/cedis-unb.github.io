@@ -9529,26 +9529,26 @@
 &lt;table>
  &lt;thead>
  &lt;tr>
- &lt;th style="text-align: left">&lt;/th>
- &lt;th style="text-align: left">&lt;/th>
+ &lt;th>&lt;/th>
+ &lt;th>&lt;/th>
  &lt;/tr>
  &lt;/thead>
  &lt;tbody>
  &lt;tr>
- &lt;td style="text-align: left">&lt;iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3835.4538195603573!2d-48.04773692434829!3d-15.989874284678214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a2bbaadeb6d13%3A0xe0748f0318cbbc3e!2sCEDIS%20-%20Centro%20de%20Estudos%2C%20Desenvolvimento%20e%20Inova%C3%A7%C3%A3o%20em%20Software!5e0!3m2!1spt-BR!2sbr!4v1708488897088!5m2!1spt-BR!2sbr" width="300" height="225" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">&lt;/iframe>&lt;/td>
- &lt;td style="text-align: left">&lt;/td>
+ &lt;td>&lt;iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3835.4538195603573!2d-48.04773692434829!3d-15.989874284678214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a2bbaadeb6d13%3A0xe0748f0318cbbc3e!2sCEDIS%20-%20Centro%20de%20Estudos%2C%20Desenvolvimento%20e%20Inova%C3%A7%C3%A3o%20em%20Software!5e0!3m2!1spt-BR!2sbr!4v1708488897088!5m2!1spt-BR!2sbr" width="300" height="225" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">&lt;/iframe>&lt;/td>
+ &lt;td>&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">&lt;strong>Endereço&lt;/strong>: Contêiner 19, Faculdade UnB Gama - FGA.  Universidade de Brasília - UnB. Área Especial de Indústria Projeção A. Setor Leste. Gama. CEP: 72.444-240. &lt;/td>
- &lt;td style="text-align: left">&lt;/td>
+ &lt;td>&lt;strong>Endereço&lt;/strong>: Contêiner 19, Faculdade UnB Gama - FGA.  Universidade de Brasília - UnB. Área Especial de Indústria Projeção A. Setor Leste. Gama. CEP: 72.444-240. &lt;/td>
+ &lt;td>&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">&lt;strong>Email&lt;/strong>: &lt;a href="mailto:cedis@unb.br">cedis@unb.br&lt;/a>&lt;/td>
- &lt;td style="text-align: left">&lt;a href="https://youtube.com/@CedisUnB">https://youtube.com/@CedisUnB&lt;/a>&lt;/td>
+ &lt;td>&lt;strong>Email&lt;/strong>: &lt;a href="mailto:cedis@unb.br">cedis@unb.br&lt;/a>&lt;/td>
+ &lt;td>&lt;a href="https://youtube.com/@CedisUnB">https://youtube.com/@CedisUnB&lt;/a>&lt;/td>
  &lt;/tr>
  &lt;tr>
- &lt;td style="text-align: left">&lt;a href="http://dgp.cnpq.br/dgp/espelhogrupo/5911823414046318">Grupo de pesquisa CNPq&lt;/a>&lt;/td>
- &lt;td style="text-align: left">&lt;/td>
+ &lt;td>&lt;a href="http://dgp.cnpq.br/dgp/espelhogrupo/5911823414046318">Grupo de pesquisa CNPq&lt;/a>&lt;/td>
+ &lt;td>&lt;/td>
  &lt;/tr>
  &lt;/tbody>
 &lt;/table></description></item><item><title>História do CEDIS</title><link>https://cedis.unb.br/pt/history/</link><pubDate>Sat, 18 Dec 2021 11:10:36 +0800</pubDate><guid>https://cedis.unb.br/pt/history/</guid><description>&lt;p>&lt;strong>2013&lt;/strong> - Criação do Laboratório Fábrica de Software (lab FSw)&lt;/p>
@@ -9629,6 +9629,58 @@
 
  
 
+
+
+ 
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
 
 
  
@@ -14086,6 +14138,184 @@
 
  
  &lt;ol class="publications-lncs">
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ &lt;li x-data="{ open: false }">NEUBERT, PATRICIA DA SILVA,CANTO, FÁBIOLORENSI DO,PINTO, ADILSON LUIZ,LIMA, Daniel Sundfeld,SILVA, FLÁVIO ROBERTO CRUZ,
+ &lt;span>
+ OpenAlex como fonte de dados para sistemas nacionais de informação científica: a experiência do projeto Laguna
+ &lt;/span>
+ , in VII Workshop de Informação, Dados e Tecnologia WIDaT
+ , 2024
+ . DOI: &lt;a href="https://doi.org/10.22477/vii.widat.184" target="_blank" rel="noopener noreferrer">10.22477/vii.widat.184&lt;/a>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ . Tags:
+ 
+ 
+ &lt;a href="https://cedis.unb.br/pt/tags/daniel_lima">&lt;/a>, 
+ 
+ 
+ &lt;a href="https://cedis.unb.br/pt/tags/hpc">Computação de Alto Desempenho&lt;/a>
+ 
+ 
+
+ .
+ 
+ 
+ 
+ 
+
+ &lt;/li>
+ 
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ &lt;li x-data="{ open: false }">CARVALHO SEGUNDO, WASHINGTON LUÍS RIBEIRO DE,CANTO, FABIO LORENSI DO,PINTO, ADILSON LUIZ,SUNDFELD, Daniel Lima,
+ &lt;span>
+ Atração entre periódicos brasileiros de medicina análise a partir de dados de citação do OpenAlex
+ &lt;/span>
+ , in 9º Encontro Brasileiro de Bibliometria e Cientometria EBBC
+ , 2024
+ . DOI: &lt;a href="https://doi.org/10.22477/ix.ebbc.378" target="_blank" rel="noopener noreferrer">10.22477/ix.ebbc.378&lt;/a>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ . Tags:
+ 
+ 
+ &lt;a href="https://cedis.unb.br/pt/tags/daniel_lima">&lt;/a>, 
+ 
+ 
+ &lt;a href="https://cedis.unb.br/pt/tags/hpc">Computação de Alto Desempenho&lt;/a>
+ 
+ 
+
+ .
+ 
+ 
+ 
+ 
+
+ &lt;/li>
+ 
  
  
 

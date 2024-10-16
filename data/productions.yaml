@@ -1,5 +1,58 @@
 items:
 - authors:
+  - NEUBERT, PATRICIA DA SILVA
+  - CANTO, FÁBIOLORENSI DO
+  - PINTO, ADILSON LUIZ
+  - LIMA, Daniel Sundfeld
+  - SILVA, FLÁVIO ROBERTO CRUZ 
+  title:
+    pt: "OpenAlex como fonte de dados para sistemas nacionais de informação científica: a experiência do projeto Laguna"
+    en: "OpenAlex como fonte de dados para sistemas nacionais de informação científica: a experiência do projeto Laguna"
+  summary:
+    pt: ""
+    en: ""
+  book_title: 'Anais do VII Workshop de Informação, Dados e Tecnologia'
+  volume: ''
+  doi_isbn: '10.22477/vii.widat.184'
+  journal_event: 'VII Workshop de Informação, Dados e Tecnologia WIDaT'
+  location: ''
+  pages: ''
+  publisher: ''
+  tags:
+  - daniel_lima
+  - hpc
+  type: conference
+  program: ''
+  advisors: []
+  url: ''
+  year: 2024
+- authors:
+  - CARVALHO SEGUNDO, WASHINGTON LUÍS RIBEIRO DE
+  - CANTO, FABIO LORENSI DO
+  - PINTO, ADILSON LUIZ
+  - SUNDFELD, Daniel Lima
+  title:
+    pt: "Atração entre periódicos brasileiros de medicina análise a partir de dados de citação do OpenAlex"
+    en: "Atração entre periódicos brasileiros de medicina análise a partir de dados de citação do OpenAlex"
+  summary:
+    pt: ""
+    en: ""
+  book_title: 'Anais do 9º Encontro Brasileiro de Bibliometria e Cientometria - EBBC'
+  volume: ''
+  doi_isbn: '10.22477/ix.ebbc.378'
+  journal_event: '9º Encontro Brasileiro de Bibliometria e Cientometria EBBC'
+  location: ''
+  pages: ''
+  publisher: ''
+  tags:
+  - daniel_lima
+  - hpc
+  type: conference
+  program: ''
+  advisors: []
+  url: ''
+  year: 2024
+- authors:
   - MARSICANO, G. C.
   - CANEDO, EDNA
   - RAMOS, C. S.
