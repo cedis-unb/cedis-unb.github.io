@@ -44,8 +44,9 @@ Os resultados deste projeto levaram à publicação de importantes trabalhos aca
 ## Notícias e Atualizações
 
 Fique informado sobre o desenvolvimento do projeto através dos seguintes artigos de notícias:
-- [CEDIS News - Post 010](https://cedis.unb.br/posts/news-post.010/): "Projeto Canal Ciência: Disseminação Científica Aprimorada com Gamificação"
-- [CEDIS News - Post 009](https://cedis.unb.br/posts/news-post.009/): "Melhorando a Experiência do Usuário Através da Gamificação no Canal Ciência"
+- [Projeto Canal Ciência recebe prêmio de melhor artigo em conferência internacional](https://cedis.unb.br/posts/news-post.010/): O projeto foi reconhecido com o prêmio de melhor artigo na ICCSA 2024, destacando o uso inovador de gamificação para engajar estudantes brasileiros na ciência.
+- [Estudante de engenharia de software apresenta artigo na ICCSA 2024](https://cedis.unb.br/posts/news-post.009/): Mylena Faria, bolsista do CEDIS, apresentou as inovações do projeto Canal Ciência em conferência internacional no Vietnã.
+
 
 ## Lançamento da Gamificação
 
