@@ -51,8 +51,8 @@ Fique informado sobre o desenvolvimento do projeto através dos seguintes artigo
 ## Lançamento da Gamificação
 
 O projeto de gamificação culminou no lançamento da *Jornada Galáctica*. Explore-o aqui:
-- [Jornada Galáctica no CEDIS](https://cedis.unb.br/products/jornada_galactica/): Uma jornada educacional interativa através de tópicos científicos, projetada para engajar alunos de diversas faixas etárias.
 - [Jornada Galáctica no Canal Ciência](https://canalciencia.ibict.br/jornada-galactica/): Voltada a tornar o conteúdo científico mais acessível e envolvente por meio de experiências de aprendizado gamificadas.
+- [Jornada Galáctica no CEDIS](https://cedis.unb.br/products/jornada_galactica/): Uma jornada educacional interativa através de tópicos científicos, projetada para engajar alunos de diversas faixas etárias.
 
 ## Equipe
 
