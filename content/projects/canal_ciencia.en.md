@@ -43,9 +43,10 @@ The results of this project have led to the publication of key academic works:
 
 ## News and Updates
 
-Stay informed about project developments through the following news articles:
-- [CEDIS News - Post 010](https://cedis.unb.br/posts/news-post.010/): "Canal Ciência Project: Scientific Dissemination Enhanced by Gamification"
-- [CEDIS News - Post 009](https://cedis.unb.br/posts/news-post.009/): "Improving User Experience Through Gamification in Canal Ciência"
+Stay informed about the project's developments through the following news articles:
+- [Canal Ciência Project wins best paper award at an international conference](https://cedis.unb.br/posts/news-post.010/): The project was awarded best paper at ICCSA 2024 for its innovative use of gamification to engage Brazilian students in science.
+- [Software engineering student presents paper at ICCSA 2024](https://cedis.unb.br/posts/news-post.009/): Mylena Faria, a CEDIS fellow, presented the Canal Ciência project's innovations at an international conference in Vietnam.
+
 
 ## Gamification Launch
 
