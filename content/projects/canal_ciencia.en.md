@@ -51,8 +51,8 @@ Stay informed about the project's developments through the following news articl
 ## Gamification Launch
 
 The gamification project has culminated in the launch of the *Jornada Galáctica*. Explore it here:
-- [Jornada Galáctica on CEDIS](https://cedis.unb.br/products/jornada_galactica/): An interactive, educational journey through scientific topics, designed to engage students of various age groups.
 - [Jornada Galáctica on Canal Ciência](https://canalciencia.ibict.br/jornada-galactica/): Aimed at making scientific content more accessible and engaging through gamified learning experiences.
+- [Jornada Galáctica on CEDIS](https://cedis.unb.br/products/jornada_galactica/): An interactive, educational journey through scientific topics, designed to engage students of various age groups.
 
 ## Team
 
