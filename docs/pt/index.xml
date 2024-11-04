@@ -997,6 +997,34 @@
  
  
  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  &lt;div>
  
  &lt;/div>
@@ -1800,6 +1828,81 @@
  
  &lt;li x-data="{ open: false }">
  &lt;span>&lt;strong>Bruno Mello Andrade&lt;/strong>&lt;/span>.
+ &lt;span>
+ Em definição
+ .&lt;/span>
+ &lt;span>Dissertação (Mestrado Profissional em Computação Aplicada) - UnB,&lt;/span>
+ &lt;span>(2024).&lt;/span>
+ 
+ 
+ Orientador(es):
+ 
+ 
+ &lt;a href="https://cedis.unb.br/pt/people/sergio_freitas">Sergio Freitas&lt;/a>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ . Tags:
+ 
+ 
+ &lt;a href="https://cedis.unb.br/pt/tags/gamification">Gamificação&lt;/a>, 
+ 
+ 
+ &lt;a href="https://cedis.unb.br/pt/tags/machine_learning">Aprendizado de Máquina&lt;/a>
+ .
+ 
+ 
+ 
+ &lt;/li>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;li x-data="{ open: false }">
+ &lt;span>&lt;strong>Lucas Pereira Gomes Linard&lt;/strong>&lt;/span>.
  &lt;span>
  Em definição
  .&lt;/span>
@@ -4418,6 +4521,34 @@
  
  
  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  &lt;div>
  
  &lt;/div>
@@ -4939,6 +5070,34 @@
  
  
 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  
  
  
@@ -7126,6 +7285,34 @@
  
  
  &lt;/li>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  
  
  
