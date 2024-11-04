@@ -997,6 +997,34 @@
  
  
  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  &lt;div>
  
  &lt;/div>
@@ -1800,6 +1828,81 @@
  
  &lt;li x-data="{ open: false }">
  &lt;span>&lt;strong>Bruno Mello Andrade&lt;/strong>&lt;/span>.
+ &lt;span>
+ Topic under development
+ .&lt;/span>
+ &lt;span>Master&amp;#39;s Thesis in Applied Computing, University of Brasília (Brazil),&lt;/span>
+ &lt;span>(2024).&lt;/span>
+ 
+ 
+ Advisor(s):
+ 
+ 
+ &lt;a href="https://cedis.unb.br/people/sergio_freitas">Sergio Freitas&lt;/a>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ . Tags:
+ 
+ 
+ &lt;a href="https://cedis.unb.br/tags/gamification">Gamification&lt;/a>, 
+ 
+ 
+ &lt;a href="https://cedis.unb.br/tags/machine_learning">Machine Learning&lt;/a>
+ .
+ 
+ 
+ 
+ &lt;/li>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;li x-data="{ open: false }">
+ &lt;span>&lt;strong>Lucas Pereira Gomes Linard&lt;/strong>&lt;/span>.
  &lt;span>
  Topic under development
  .&lt;/span>
@@ -4418,6 +4521,34 @@
  
  
  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  &lt;div>
  
  &lt;/div>
@@ -4939,6 +5070,34 @@
  
  
 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  
  
  
@@ -7126,6 +7285,34 @@
  
  
  &lt;/li>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  
  
  
