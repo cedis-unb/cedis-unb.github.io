@@ -47,7 +47,7 @@
     "braces": "^3.0.3",
     "cross-spawn": "^7.0.6",
     "markdown-it-emoji": "^3.0.0",
-    "npm": "^10.9.0",
+    "npm": "^10.9.2",
     "pagefind": "^1.0.4"
   },
   "overrides": {
