@@ -23,7 +23,7 @@ nav_next: true
 <div id="top"></div>
 
 ## {{< i18n "people_profile" >}}
-- Posição Atual: Professora da [Universidade de Brasília](https://www.unb.br/) (UnB), atuando no curso de graduação em [Engenharia de Software](http://software.unb.br/)​​.
+- Posição Atual: Professora Adjunta da [Universidade de Brasília](https://www.unb.br/) (UnB), atuando no curso de graduação em [Engenharia de Software](http://software.unb.br/)​​.
 - Áreas de Atuação: Engenharia de Software, Qualidade de Software, Governança em TIC e Governo Digital​​.
 
 ## {{< i18n "people_background" >}}
