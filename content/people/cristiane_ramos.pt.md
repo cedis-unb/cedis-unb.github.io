@@ -5,7 +5,7 @@ date: 2024-02-14T00:44:02-03:00
 weight: 20
 language: pt
 featured_image: "../assets/images/featured/people_Cristiane Ramos.png"
-summary: Professora da Universidade de Brasília (UnB), atua no curso de graduação em Engenharia de Software​​.
+summary: Professora Adjunta da Universidade de Brasília (UnB), atua no curso de graduação em Engenharia de Software​​.
 authorimage: ../assets/images/global/author.webp
 categories:
 - people
