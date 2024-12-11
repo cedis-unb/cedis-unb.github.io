@@ -5,7 +5,7 @@ date: 2024-02-14T00:49:57-03:00
 weight: 20
 language: en
 featured_image: "../assets/images/featured/people_Sergio Freitas.png"
-summary: Full Professor at the University of Brasília (UnB), working in the undergraduate Software Engineering program and the Graduate Program in Applied Computing.
+summary: Chair Professor at the University of Brasília (UnB), working in the undergraduate Software Engineering program and the Graduate Program in Applied Computing.
 authorimage: ../assets/images/global/author.webp
 categories:
 - people
@@ -28,7 +28,7 @@ nav_next: true
 
 ## {{< i18n "people_profile" >}}
 
-- Current Position: Full Professor at the {{< link-interno "https://www.unb.br/" "University of Brasília" >}} (UnB), working in the undergraduate {{< link-interno "http://software.unb.br/" "Software Engineering" >}} program and the {{< link-interno "https://ppca.unb.br/" "Graduate Program in Applied Computing" >}}.
+- Current Position: Chair Professor at the {{< link-interno "https://www.unb.br/" "University of Brasília" >}} (UnB), working in the undergraduate {{< link-interno "http://software.unb.br/" "Software Engineering" >}} program and the {{< link-interno "https://ppca.unb.br/" "Graduate Program in Applied Computing" >}}.
 - Previous Experience: 
     - **at UnB:** President of the National Forum of Undergraduate Deans (ForGRAD), Dean of Undergraduate Studies (UnB), Director of the Distance Education Center (CEAD/UnB), Technical Director of Undergraduate Education (DEG/UnB), Director of Distance Undergraduate Studies (DEG/UnB).
     - **at UFES:** Professor in the {{< link-interno "https://informatica.ufes.br/" "Department of Computer Science" >}} at the {{< link-interno "https://www.ufes.br/" "UFES" >}}, Director of Research and Graduate Studies at the Office of Research and Graduate Studies (UFES), General Director of the Data Processing Center (UFES), Administrative Coordinator of PoP-ES / RNP, Coordinator of the Undergraduate Program in Computer Engineering (UFES) and permanent member of the Graduate Program in Computer Science (PPGI/UFES).
