@@ -30,7 +30,8 @@ nav_next: true
 
 - Current Position: Chair Professor at the {{< link-interno "https://www.unb.br/" "University of Brasília" >}} (UnB), working in the undergraduate {{< link-interno "http://software.unb.br/" "Software Engineering" >}} program and the {{< link-interno "https://ppca.unb.br/" "Graduate Program in Applied Computing" >}}.
 - Previous Experience: 
-    - **at UnB:** President of the National Forum of Undergraduate Deans (ForGRAD), Dean of Undergraduate Studies (UnB), Director of the Distance Education Center (CEAD/UnB), Technical Director of Undergraduate Education (DEG/UnB), Director of Distance Undergraduate Studies (DEG/UnB).
+    - **at UnB:** Dean of Undergraduate Studies (UnB), Director of the Distance Education Center (CEAD/UnB), Technical Director of Undergraduate Education (DEG/UnB), Director of Distance Undergraduate Studies (DEG/UnB).
+    - **at ForGRAD:** President of the National Forum of Undergraduate Provosts (ForGRAD) during the 2019/2020 and 2020/2021 terms.
     - **at UFES:** Professor in the {{< link-interno "https://informatica.ufes.br/" "Department of Computer Science" >}} at the {{< link-interno "https://www.ufes.br/" "UFES" >}}, Director of Research and Graduate Studies at the Office of Research and Graduate Studies (UFES), General Director of the Data Processing Center (UFES), Administrative Coordinator of PoP-ES / RNP, Coordinator of the Undergraduate Program in Computer Engineering (UFES) and permanent member of the Graduate Program in Computer Science (PPGI/UFES).
     - **at INEP:** Course evaluator for INEP/MEC from 2006 to 2020.
 
