@@ -73,6 +73,9 @@ languages:
         email:
           enabled: true
           url: "mailto:cedis@unb.br"
+        linkedin:
+          enabled: true
+          url: "https://www.linkedin.com/company/cedis-unb"
 
     menu:
       main:
@@ -255,6 +258,9 @@ languages:
         email:
           enabled: true
           url: "mailto:cedis@unb.br"
+        linkedin:
+          enabled: true
+          url: "https://www.linkedin.com/company/cedis-unb"
     menu:
       main:
         - identifier: cedis
