@@ -997,34 +997,6 @@
  
  
  
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
  &lt;div>
  
  &lt;/div>
@@ -2476,81 +2448,6 @@
  
  
  
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- &lt;li x-data="{ open: false }">
- &lt;span>&lt;strong>Éber Junio Borges Moreira&lt;/strong>&lt;/span>.
- &lt;span>
- Literary Review and Selection of Optimal Methodologies for Academic Scheduling
- .&lt;/span>
- &lt;span>Master&amp;#39;s Thesis in Applied Computing, University of Brasília (Brazil),&lt;/span>
- &lt;span>(2023).&lt;/span>
- 
- 
- Advisor(s):
- 
- 
- &lt;a href="https://cedis.unb.br/people/sergio_freitas">Sergio Freitas&lt;/a>
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- . Tags:
- 
- 
- &lt;a href="https://cedis.unb.br/tags/learning_analytics">Learning Analytics&lt;/a>, 
- 
- 
- &lt;a href="https://cedis.unb.br/tags/machine_learning">Machine Learning&lt;/a>
- .
- 
- 
- 
- &lt;/li>
  
  
  
@@ -4521,34 +4418,6 @@
  
  
  
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
  &lt;div>
  
  &lt;/div>
@@ -5070,34 +4939,6 @@
  
  
 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
  
  
  
@@ -8781,34 +8622,6 @@
  
  
  
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
  &lt;li x-data="{ open: false }">
  &lt;span>&lt;strong>Antonio Rangel Chaves&lt;/strong>&lt;/span>.
  &lt;span>
@@ -10243,30 +10056,6 @@
  
  
  
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
-
-
- 
- 
- 
 
  
  
@@ -10287,6 +10076,56 @@
 
  
  
+ 
+
+
+ 
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
  
 
 
@@ -15377,8 +15216,6 @@
 
  
  
- 
- 
 
  
  
@@ -15394,9 +15231,92 @@
 
  
  
+ 
+ 
 
 
  
+ 
+ &lt;li x-data="{ open: false }">Éber Junio Borges Moreira,
+ &lt;span>
+ Scheduling of Academic Resources in Higher Education Institutions: A Case Study at the University of Brasília
+ &lt;/span>
+ &lt;span>. Master&amp;#39;s Thesis in Applied Computing, University of Brasília (Brazil)&lt;/span>, 2024
+ 
+ Advisor(s):
+ 
+ 
+ 
+ &lt;a href="https://cedis.unb.br/people/sergio_freitas">Sergio Freitas&lt;/a>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ . Tags:
+ 
+ 
+ &lt;a href="https://cedis.unb.br/tags/learning_analytics">Learning Analytics&lt;/a>, 
+ 
+ 
+ &lt;a href="https://cedis.unb.br/tags/machine_learning">Machine Learning&lt;/a>
+ 
+ 
+
+ .
+ 
+ 
+ 
+ &lt;div>
+ 
+ &lt;button @click="open = !open" class="bg-primary-500 text-white p-2 rounded cursor-pointer">
+ Abstract
+ &lt;/button>
+ 
+ &lt;div x-show="open" class="mt-2 pl-4 font-serif" x-cloak>
+ &lt;span class="text-neutral-700 text-sm">The scheduling of academic resources in higher education institutions is a highly complex problem, involving the allocation of classes, professors, time slots, and physical spaces to meet multiple institutional constraints and preferences. This paper presents the SARA model (Academic Resource Scheduling System), designed to offer flexibility and adaptability to the specific needs of higher education institutions. The research was conducted in two main stages: a systematic literature review and the proposal of the SARA model. The systematic review enabled the mapping of widely used strategies, algorithms, and constraints in the literature, providing theoretical foundations for the model&amp;#39;s development. The SARA proposal integrates features such as customization, integration with academic systems, and the application of optimization algorithms, promoting a comprehensive and adaptable approach to scheduling in university environments. The model was validated through a case study at the University of Brasília (UnB), in a large-scale and highly complex environment. Preliminary results demonstrated the model&amp;#39;s feasibility and effectiveness in meeting the institution&amp;#39;s specific demands, highlighting its potential applicability in various institutional contexts. The research contributes to theoretical and practical advancements in academic management, presenting a solution that combines methodological rigor with practical applicability.&lt;/span>
+ &lt;/div>
+ &lt;/div>
+ 
+ 
+
+ &lt;/li>
  
  
  
@@ -15504,6 +15424,32 @@
  
 
  &lt;/li>
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+
+ 
  
  
  

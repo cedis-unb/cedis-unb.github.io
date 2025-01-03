@@ -997,34 +997,6 @@
  
  
  
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
  &lt;div>
  
  &lt;/div>
@@ -2476,81 +2448,6 @@
  
  
  
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- &lt;li x-data="{ open: false }">
- &lt;span>&lt;strong>Éber Junio Borges Moreira&lt;/strong>&lt;/span>.
- &lt;span>
- Revisão literária e seleção de metodologias ótimas para horários acadêmicos
- .&lt;/span>
- &lt;span>Dissertação (Mestrado Profissional em Computação Aplicada) - UnB,&lt;/span>
- &lt;span>(2023).&lt;/span>
- 
- 
- Orientador(es):
- 
- 
- &lt;a href="https://cedis.unb.br/pt/people/sergio_freitas">Sergio Freitas&lt;/a>
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- . Tags:
- 
- 
- &lt;a href="https://cedis.unb.br/pt/tags/learning_analytics">Análise da Aprendizagem&lt;/a>, 
- 
- 
- &lt;a href="https://cedis.unb.br/pt/tags/machine_learning">Aprendizado de Máquina&lt;/a>
- .
- 
- 
- 
- &lt;/li>
  
  
  
@@ -4521,34 +4418,6 @@
  
  
  
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
  &lt;div>
  
  &lt;/div>
@@ -5070,34 +4939,6 @@
  
  
 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
  
  
  
@@ -8781,34 +8622,6 @@
  
  
  
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
  &lt;li x-data="{ open: false }">
  &lt;span>&lt;strong>Antonio Rangel Chaves&lt;/strong>&lt;/span>.
  &lt;span>
@@ -10247,30 +10060,6 @@
  
  
  
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
- 
-
- 
-
-
- 
- 
- 
 
  
  
@@ -10291,6 +10080,56 @@
 
  
  
+ 
+
+
+ 
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
  
 
 
@@ -15381,8 +15220,6 @@
 
  
  
- 
- 
 
  
  
@@ -15398,9 +15235,92 @@
 
  
  
+ 
+ 
 
 
  
+ 
+ &lt;li x-data="{ open: false }">Éber Junio Borges Moreira,
+ &lt;span>
+ Agendamento de recursos acadêmicos em Instituições de Ensino Superior: Estudo de caso na Universidade de Brasília
+ &lt;/span>
+ &lt;span>. Dissertação (Mestrado Profissional em Computação Aplicada) - UnB&lt;/span>, 2024
+ 
+ Orientador(es):
+ 
+ 
+ 
+ &lt;a href="https://cedis.unb.br/pt/people/sergio_freitas">Sergio Freitas&lt;/a>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ . Tags:
+ 
+ 
+ &lt;a href="https://cedis.unb.br/pt/tags/learning_analytics">Análise da Aprendizagem&lt;/a>, 
+ 
+ 
+ &lt;a href="https://cedis.unb.br/pt/tags/machine_learning">Aprendizado de Máquina&lt;/a>
+ 
+ 
+
+ .
+ 
+ 
+ 
+ &lt;div>
+ 
+ &lt;button @click="open = !open" class="bg-primary-500 text-white p-2 rounded cursor-pointer">
+ Resumo
+ &lt;/button>
+ 
+ &lt;div x-show="open" class="mt-2 pl-4 font-serif" x-cloak>
+ &lt;span class="text-neutral-700 text-sm">O agendamento de recursos acadêmicos em instituições de ensino superior configura-se como um problema de elevada complexidade, envolvendo a alocação de turmas, professores, horários e espaços físicos, de modo a atender a múltiplas restrições e preferências institucionais. Este trabalho apresenta o modelo SARA (Sistema de Agendamento de Recursos Acadêmicos), concebido para oferecer flexibilidade e adaptabilidade às particularidades das instituições de ensino superior. A pesquisa foi conduzida em duas etapas principais: a realização de uma revisão sistemática da literatura e a proposição do modelo SARA. A revisão sistemática possibilitou o mapeamento de estratégias, algoritmos e restrições amplamente utilizados na literatura, fornecendo subsídios teóricos para a concepção do modelo. A proposta do SARA integra características como personalização, integração com sistemas acadêmicos e a aplicação de algoritmos de otimização, promovendo uma abordagem abrangente e adaptável para a criação de agendamentos em ambientes universitários. A validação do modelo foi realizada por meio de um estudo de caso na Universidade de Brasília (UnB), em um ambiente de grande porte e alta complexidade. Os resultados preliminares demonstraram a viabilidade e a eficácia do modelo em atender às demandas específicas da instituição, evidenciando seu potencial de aplicação em diferentes contextos institucionais. A pesquisa contribui para o avanço teórico e prático no campo da gestão acadêmica, apresentando uma solução que combina rigor metodológico com aplicabilidade prática.&lt;/span>
+ &lt;/div>
+ &lt;/div>
+ 
+ 
+
+ &lt;/li>
  
  
  
@@ -15508,6 +15428,32 @@
  
 
  &lt;/li>
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+
+ 
  
  
  
