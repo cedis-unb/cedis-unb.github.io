@@ -481,55 +481,40 @@ items:
   advisors: []
   url: https://hdl.handle.net/10125/102787
   year: 2023
+
 - authors:
-  - Edmilson Cosme da Silva
+  - Éber Junio Borges Moreira
   title:
-    pt: Previsão da evasão acadêmica no ensino superior - o caso dos cursos de graduação
-      presencial da Universidade de Brasília
-    en: Prediction of academic dropout in higher education - the case of face-to-face
-      undergraduate courses at the University of Brasília
+    pt: "Agendamento de recursos acadêmicos em Instituições de Ensino Superior: Estudo de caso na Universidade de Brasília"
+    en: "Scheduling of Academic Resources in Higher Education Institutions: A Case Study at the University of Brasília"
   summary:
-    pt: Pesquisadores têm investigado a evasão no ensino superior, identificando duas
-      categorias - alunos que deixam a universidade e aqueles que abandonam o ensino
-      superior, afetando negativamente instituições, estudantes e sociedade. Desde
-      1995, no Brasil, a criação da ANDIFES intensificou estudos sobre diplomação,
-      retenção e evasão em universidades brasileiras, focando na evasão institucional,
-      caracterizada pela desistência do aluno do curso original. A Universidade de
-      Brasília (UnB) implementou estratégias para aumentar a permanência estudantil.
-      Este trabalho visou desenvolver e testar um modelo de análise para prever a
-      evasão em cursos presenciais, através de uma Revisão Sistemática da Literatura
-      para identificar fatores de impacto e definir indicadores extraídos de sistemas
-      acadêmicos da UnB. O modelo, denominado MAGRA, combina indicadores com algoritmos
-      de aprendizado de máquina, visando identificar alunos em risco de evasão. Testes
-      realizados na Faculdade do Gama (FGA) e na UnB indicaram que a frequência de
-      matrícula em disciplinas pode prever dificuldades de conclusão. A pesquisa sugere
-      que para aprimorar a identificação de alunos em risco, são necessários ajustes
-      nos mecanismos de feedback, inclusão de novos sistemas, melhoria na qualidade
-      dos dados e nos parâmetros dos algoritmos.
-    en: Researchers have been investigating attrition in higher education, identifying
-      two categories - students who leave the university and those who abandon higher
-      education altogether, negatively affecting institutions, students, and society.
-      Since 1995, in Brazil, the creation of ANDIFES has led to more frequent studies
-      on graduation, retention, and attrition in Brazilian universities, focusing
-      on institutional attrition, characterized by a student's departure from their
-      original course. The University of Brasília (UnB) has implemented strategies
-      to increase student retention in undergraduate courses. This work aimed to develop
-      and test an analysis model to predict attrition in face-to-face courses, through
-      a Systematic Literature Review to identify impact factors and define indicators
-      extracted from UnB's academic systems. The model, named MAGRA, combines indicators
-      with machine learning algorithms to identify students at risk of dropping out.
-      Tests conducted at the Faculdade do Gama (FGA) and UnB indicated that enrollment
-      frequency in subjects could predict completion difficulties. The research suggests
-      that to improve the early identification of at-risk students, adjustments in
-      feedback mechanisms, the inclusion of new systems, improvement in data quality,
-      and adjustments in algorithm parameters are necessary.
+    pt: "O agendamento de recursos acadêmicos em instituições de ensino superior configura-se
+ como um problema de elevada complexidade, envolvendo a alocação de turmas, professores, horários e espaços físicos, de modo a atender a múltiplas restrições e preferências
+ institucionais. Este trabalho apresenta o modelo SARA (Sistema de Agendamento de
+ Recursos Acadêmicos), concebido para oferecer flexibilidade e adaptabilidade às particularidades das instituições de ensino superior.
+ A pesquisa foi conduzida em duas etapas principais: a realização de uma revisão sistemática da literatura e a proposição do modelo SARA. A revisão sistemática possibilitou
+ o mapeamento de estratégias, algoritmos e restrições amplamente utilizados na literatura,
+ fornecendo subsídios teóricos para a concepção do modelo. A proposta do SARA integra
+ características como personalização, integração com sistemas acadêmicos e a aplicação de
+ algoritmos de otimização, promovendo uma abordagem abrangente e adaptável para a
+ criação de agendamentos em ambientes universitários.
+ A validação do modelo foi realizada por meio de um estudo de caso na Universidade
+ de Brasília (UnB), em um ambiente de grande porte e alta complexidade. Os resultados
+ preliminares demonstraram a viabilidade e a eficácia do modelo em atender às demandas
+ específicas da instituição, evidenciando seu potencial de aplicação em diferentes contextos
+ institucionais. A pesquisa contribui para o avanço teórico e prático no campo da gestão
+ acadêmica, apresentando uma solução que combina rigor metodológico com aplicabilidade
+ prática."
+    en: "The scheduling of academic resources in higher education institutions is a highly complex problem, involving the allocation of classes, professors, time slots, and physical spaces to meet multiple institutional constraints and preferences. This paper presents the SARA model (Academic Resource Scheduling System), designed to offer flexibility and adaptability to the specific needs of higher education institutions.
+The research was conducted in two main stages: a systematic literature review and the proposal of the SARA model. The systematic review enabled the mapping of widely used strategies, algorithms, and constraints in the literature, providing theoretical foundations for the model's development. The SARA proposal integrates features such as customization, integration with academic systems, and the application of optimization algorithms, promoting a comprehensive and adaptable approach to scheduling in university environments.
+The model was validated through a case study at the University of Brasília (UnB), in a large-scale and highly complex environment. Preliminary results demonstrated the model's feasibility and effectiveness in meeting the institution's specific demands, highlighting its potential applicability in various institutional contexts. The research contributes to theoretical and practical advancements in academic management, presenting a solution that combines methodological rigor with practical applicability."
   book_title: ''
   volume: ''
   doi_isbn: ''
   journal_event: ''
   location: ''
   pages: ''
-  publisher: Biblioteca Central da Universidade de Brasília
+  publisher: ''
   tags:
   - learning_analytics
   - machine_learning
@@ -537,8 +522,9 @@ items:
   program: curso_ppca
   advisors:
   - sergio_freitas
-  url: http://repositorio2.unb.br/jspui/handle/10482/47829
-  year: 2023
+  url: ''
+  year: 2024
+
 - authors:
   - Arthur Rocha Temporim de Lacerda
   title:
@@ -630,6 +616,65 @@ items:
   advisors:
   - sergio_freitas
   url: ''
+  year: 2023
+
+- authors:
+  - Edmilson Cosme da Silva
+  title:
+    pt: Previsão da evasão acadêmica no ensino superior - o caso dos cursos de graduação
+      presencial da Universidade de Brasília
+    en: Prediction of academic dropout in higher education - the case of face-to-face
+      undergraduate courses at the University of Brasília
+  summary:
+    pt: Pesquisadores têm investigado a evasão no ensino superior, identificando duas
+      categorias - alunos que deixam a universidade e aqueles que abandonam o ensino
+      superior, afetando negativamente instituições, estudantes e sociedade. Desde
+      1995, no Brasil, a criação da ANDIFES intensificou estudos sobre diplomação,
+      retenção e evasão em universidades brasileiras, focando na evasão institucional,
+      caracterizada pela desistência do aluno do curso original. A Universidade de
+      Brasília (UnB) implementou estratégias para aumentar a permanência estudantil.
+      Este trabalho visou desenvolver e testar um modelo de análise para prever a
+      evasão em cursos presenciais, através de uma Revisão Sistemática da Literatura
+      para identificar fatores de impacto e definir indicadores extraídos de sistemas
+      acadêmicos da UnB. O modelo, denominado MAGRA, combina indicadores com algoritmos
+      de aprendizado de máquina, visando identificar alunos em risco de evasão. Testes
+      realizados na Faculdade do Gama (FGA) e na UnB indicaram que a frequência de
+      matrícula em disciplinas pode prever dificuldades de conclusão. A pesquisa sugere
+      que para aprimorar a identificação de alunos em risco, são necessários ajustes
+      nos mecanismos de feedback, inclusão de novos sistemas, melhoria na qualidade
+      dos dados e nos parâmetros dos algoritmos.
+    en: Researchers have been investigating attrition in higher education, identifying
+      two categories - students who leave the university and those who abandon higher
+      education altogether, negatively affecting institutions, students, and society.
+      Since 1995, in Brazil, the creation of ANDIFES has led to more frequent studies
+      on graduation, retention, and attrition in Brazilian universities, focusing
+      on institutional attrition, characterized by a student's departure from their
+      original course. The University of Brasília (UnB) has implemented strategies
+      to increase student retention in undergraduate courses. This work aimed to develop
+      and test an analysis model to predict attrition in face-to-face courses, through
+      a Systematic Literature Review to identify impact factors and define indicators
+      extracted from UnB's academic systems. The model, named MAGRA, combines indicators
+      with machine learning algorithms to identify students at risk of dropping out.
+      Tests conducted at the Faculdade do Gama (FGA) and UnB indicated that enrollment
+      frequency in subjects could predict completion difficulties. The research suggests
+      that to improve the early identification of at-risk students, adjustments in
+      feedback mechanisms, the inclusion of new systems, improvement in data quality,
+      and adjustments in algorithm parameters are necessary.
+  book_title: ''
+  volume: ''
+  doi_isbn: ''
+  journal_event: ''
+  location: ''
+  pages: ''
+  publisher: Biblioteca Central da Universidade de Brasília
+  tags:
+  - learning_analytics
+  - machine_learning
+  type: dissertation
+  program: curso_ppca
+  advisors:
+  - sergio_freitas
+  url: http://repositorio2.unb.br/jspui/handle/10482/47829
   year: 2023
 - authors:
   - Públio Pastrolin Cavalcante

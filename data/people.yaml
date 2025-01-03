@@ -71,22 +71,6 @@ people:
       - software_quality
     year: 2021
 
-  - name: Éber Junio Borges Moreira
-    categories:
-      - people
-      - master_student
-    title:
-      pt: Revisão literária e seleção de metodologias ótimas para horários acadêmicos
-      en: Literary Review and Selection of Optimal Methodologies for Academic Scheduling
-    program: curso_ppca
-    advisors:
-      - sergio_freitas
-    tags:
-      - active
-      - learning_analytics
-      - machine_learning
-    year: 2023
-
   - name: Luis Guilherme Gaboardi Lins
     categories:
       - people
