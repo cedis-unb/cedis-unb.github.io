@@ -91,6 +91,19 @@
             </a>
             {{ end }}
 
+            {{ if .Site.Params.Social_media.Zenodo.Enabled }}
+            <a href="{{ .Site.Params.Social_media.Zenodo.url | absLangURL}}" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-gray-300">
+                <span class="sr-only">Zenodo</span>
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 64 64" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M48.5,27.5c-3.9,0-7,3.1-7,7s3.1,7,7,7s7-3.1,7-7S52.4,27.5,48.5,27.5z M48.5,39.5c-2.8,0-5-2.2-5-5s2.2-5,5-5
+                        s5,2.2,5,5S51.3,39.5,48.5,39.5z"/>
+                    <path d="M32,0C14.3,0,0,14.3,0,32s14.3,32,32,32s32-14.3,32-32S49.7,0,32,0z M32,58C17.7,58,6,46.3,6,32S17.7,6,32,6
+                        s26,11.7,26,26S46.3,58,32,58z"/>
+                    <path d="M28.5,27.5c-3.9,0-7,3.1-7,7v13h2v-13c0-2.8,2.2-5,5-5s5,2.2,5,5v13h2v-13C35.5,30.6,32.4,27.5,28.5,27.5z"/>
+                </svg>
+            </a>
+            {{ end }}
+
             {{ if .Site.Params.Social_media.Linkedin.Enabled }}
                 <a href="{{ .Site.Params.Social_media.Linkedin.url | absLangURL }}" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-gray-300">
                     <span class="sr-only">LinkedIn</span>

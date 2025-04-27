@@ -60,7 +60,11 @@ languages:
           - text: "Mantenha-se atualizado sobre todas as novidades do CEDIS!"
       social_media:
         github:
-          enabled: false
+          enabled: enable
+          url: "https://github.com/cedis-unb"
+        Zenodo:
+          enabled: enable
+          url: "https://zenodo.org/communities/cedis-unb"
         facebook:
           enabled: false
         instagram:
@@ -159,6 +163,12 @@ languages:
           post: "Aplicativos, processos e outros"
           url: "/categories/products"
           weight: 20
+        - identifier: repos
+          pre: products # can be stars, comments, piechart, products, people, publications
+          name: Zenodo
+          post: "Materiais registrados"
+          url: "https://zenodo.org/communities/cedis-unb"
+          weight: 25
         - identifier: cursos
           pre: stars # can be stars, comments, piechart, products, people, publications
           name: Cursos e treinamentos
@@ -245,7 +255,11 @@ languages:
           - text: "Stay updated on all the news from CEDIS!"
       social_media:
         github:
-          enabled: false
+          enabled: enable
+          url: "https://github.com/cedis-unb"
+        Zenodo:
+          enabled: enable
+          url: "https://zenodo.org/communities/cedis-unb"
         facebook:
           enabled: false
         instagram:
@@ -344,6 +358,12 @@ languages:
           post: "Applications, Processes and others"
           url: "/categories/products"
           weight: 20
+        - identifier: repos
+          pre: products # can be stars, comments, piechart, products, people, publications
+          name: Zenodo
+          post: "Registered materials"
+          url: "https://zenodo.org/communities/cedis-unb"
+          weight: 25
         - identifier: cursos
           pre: stars # can be stars, comments, piechart, products, people, publications
           name: Training Programs
