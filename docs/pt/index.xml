@@ -15242,9 +15242,9 @@
  
  
  &lt;li x-data="{ open: false }">Éber Junio Borges Moreira,
- &lt;span>
+ &lt;span>&lt;a href="http://repositorio2.unb.br/handle/10482/52048" target="_blank" rel="noopener noreferrer">
  Agendamento de recursos acadêmicos em Instituições de Ensino Superior: Estudo de caso na Universidade de Brasília
- &lt;/span>
+ &lt;/a>&lt;/span>
  &lt;span>. Dissertação (Mestrado Profissional em Computação Aplicada) - UnB&lt;/span>, 2024
  
  Orientador(es):
