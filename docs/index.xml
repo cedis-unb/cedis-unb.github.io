@@ -15238,9 +15238,9 @@
  
  
  &lt;li x-data="{ open: false }">Éber Junio Borges Moreira,
- &lt;span>
+ &lt;span>&lt;a href="http://repositorio2.unb.br/handle/10482/52048" target="_blank" rel="noopener noreferrer">
  Scheduling of Academic Resources in Higher Education Institutions: A Case Study at the University of Brasília
- &lt;/span>
+ &lt;/a>&lt;/span>
  &lt;span>. Master&amp;#39;s Thesis in Applied Computing, University of Brasília (Brazil)&lt;/span>, 2024
  
  Advisor(s):
