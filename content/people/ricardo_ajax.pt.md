@@ -12,6 +12,7 @@ categories:
 - researcher
 - ricardo_ajax
 tags: 
+- social_software
 - digital_transformation
 - verification_validation_testing
 - software_quality

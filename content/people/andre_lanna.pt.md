@@ -5,7 +5,7 @@ date: 2024-02-14T00:50:20-03:00
 weight: 20
 language: pt
 featured_image: "../assets/images/featured/people_André Lanna.png"
-summary: Professor Adjunto da Universidade de Brasília (UnB), atua no curso de graduação em Engenharia de Software e no Programa de Pós-Graduação em Computação Aplicada. 
+summary: Professor Associado da Universidade de Brasília (UnB), atua no curso de graduação em Engenharia de Software e no Programa de Pós-Graduação em Computação Aplicada. 
 authorimage: ../assets/images/global/author.webp
 categories:
 - people
@@ -20,7 +20,7 @@ nav_next: true
 <div id="top"></div>
 
 ## {{< i18n "people_profile" >}}
-- Posição Atual: Professor Adjunto da [Universidade de Brasília](https://www.unb.br/) (UnB), atuando no curso de graduação em [Engenharia de Software](http://software.unb.br/) e no [Programa de Pós-Graduação em Computação Aplicada](https://ppca.unb.br/). 
+- Posição Atual: Professor Associado da [Universidade de Brasília](https://www.unb.br/) (UnB), atuando no curso de graduação em [Engenharia de Software](http://software.unb.br/) e no [Programa de Pós-Graduação em Computação Aplicada](https://ppca.unb.br/). 
 - Áreas de Atuação: Ciência da Computação com ênfase em Engenharia de Software, atuando em temas como arquitetura de software, reuso de software, e linhas de produto de software​​.
 
 ## {{< i18n "people_background" >}}

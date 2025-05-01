@@ -5,25 +5,26 @@ date: 2024-02-14T00:48:51-03:00
 weight: 20
 language: en
 featured_image: "../assets/images/featured/people_George Marsicano.png"
-summary: Full Professor at the University of Brasília (UnB), working in the undergraduate Software Engineering program and the Graduate Program in Applied Computing.
+summary: Associate Professor at the University of Brasília (UnB), working in the undergraduate Software Engineering program and the Graduate Program in Applied Computing.
 authorimage: ../assets/images/global/author.webp
 categories:
 - people
 - researcher
 - george_marsicano
 tags: 
-- digital_transformation
 - software_requirements
-- software_architecture
+- social_software
+- digital_transformation
 - gamification
 - active_learning
+- soft_skills
 - project_td
 nav_next: true
 ---
 <div id="top"></div>
 
 ## {{< i18n "people_profile" >}}
-- Current Position: Full Professor at the [University of Brasília](https://www.unb.br/) (UnB), engaged in the undergraduate [Software Engineering](http://software.unb.br/) program and the [Graduate Program in Applied Computing](https://ppca.unb.br/).
+- Current Position: Associate Professor at the [University of Brasília](https://www.unb.br/) (UnB), engaged in the undergraduate [Software Engineering](http://software.unb.br/) program and the [Graduate Program in Applied Computing](https://ppca.unb.br/).
 - Fields of Expertise: Software Engineering, Requirements Engineering, Artificial Intelligence, Team Effectiveness Models, Human Aspects in Software Engineering, Software Engineering Education.
 
 ## {{< i18n "people_background" >}}

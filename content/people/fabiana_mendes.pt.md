@@ -5,7 +5,7 @@ date: 2024-02-14T00:47:27-03:00
 weight: 20
 language: pt
 featured_image: "../assets/images/featured/people_Fabiana Mendes.png"
-summary: Professora Adjunta da Universidade de Brasília (UnB), atuando no curso de graduação em Engenharia de Software. 
+summary: Professora Associada da Universidade de Brasília (UnB), atuando no curso de graduação em Engenharia de Software. 
 authorimage: ../assets/images/global/author.webp
 categories:
 - people
@@ -19,7 +19,7 @@ nav_next: true
 <div id="top"></div>
 
 ## {{< i18n "people_profile" >}}
-- Posição Atual: Professora Adjunta da [Universidade de Brasília](https://www.unb.br/) (UnB), atuando no curso de graduação em [Engenharia de Software](http://software.unb.br/).
+- Posição Atual: Professora Associada da [Universidade de Brasília](https://www.unb.br/) (UnB), atuando no curso de graduação em [Engenharia de Software](http://software.unb.br/).
 - Áreas de Atuação:  Tomada de decisão, personalidade, aspectos humanos da engenharia de software, qualidade de software e melhoria de processos de software​.
 
 ## {{< i18n "people_background" >}}

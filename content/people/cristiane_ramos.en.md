@@ -5,7 +5,7 @@ date: 2024-02-14T00:44:02-03:00
 weight: 20
 language: en
 featured_image: "../assets/images/featured/people_Cristiane Ramos.png"
-summary: Associate Professor at the University of Brasília (UnB), working in the undergraduate Software Engineering program.
+summary: Associative Professor at the University of Brasília (UnB), working in the undergraduate Software Engineering program.
 authorimage: ../assets/images/global/author.webp
 categories:
 - people
@@ -23,7 +23,7 @@ nav_next: true
 <div id="top"></div>
 
 ## {{< i18n "people_profile" >}}
-- Current Position: Associate Professor at the [University of Brasília](https://www.unb.br/) (UnB), engaged in the undergraduate [Software Engineering](http://software.unb.br/) program.
+- Current Position: Associative Professor at the [University of Brasília](https://www.unb.br/) (UnB), engaged in the undergraduate [Software Engineering](http://software.unb.br/) program.
 - Fields of Expertise: Software Engineering, Software Quality, ICT Governance, and Digital Government.
 
 ## {{< i18n "people_background" >}}
