@@ -99,7 +99,14 @@ areas:
       pt: "Arquitetura de Software"
     researchers: 
       - andre_lanna
+
+  - id: social_software
+    name: 
+      en: "Social Software"
+      pt: "Software Social"
+    researchers: 
       - george_marsicano
+      - ricardo_ajax
 
   - id: software_product_line
     name: 

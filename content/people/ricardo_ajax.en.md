@@ -5,13 +5,14 @@ date: 2024-02-14T00:43:11-03:00
 weight: 20
 language: en
 featured_image: "../assets/images/featured/people_Ricardo Ajax.png"
-summary: Associate Professor at the University of Brasília (UnB), working in the undergraduate Software Engineering program.
+summary: Associative Professor at the University of Brasília (UnB), working in the undergraduate Software Engineering program.
 authorimage: ../assets/images/global/author.webp
 categories:
 - people
 - researcher
 - ricardo_ajax
 tags: 
+- social_software
 - digital_transformation
 - verification_validation_testing
 - software_quality
@@ -21,7 +22,7 @@ nav_next: true
 <div id="top"></div>
 
 ## {{< i18n "people_profile" >}}
-- Current Position: Associate Professor at the [University of Brasília](https://www.unb.br/) (UnB), engaged in the undergraduate [Software Engineering](http://software.unb.br/) program.
+- Current Position: Associative Professor at the [University of Brasília](https://www.unb.br/) (UnB), engaged in the undergraduate [Software Engineering](http://software.unb.br/) program.
 
 ## {{< i18n "people_background" >}}
 - PhD in progress - Development, Society and International Cooperation, University of Brasília (2020-Present).
