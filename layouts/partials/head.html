@@ -33,3 +33,11 @@
 {{ $styles := $styles | minify | fingerprint | resources.PostProcess }}
 <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" />
 {{ end }}
+{{/* adiciona o arquivo de overrides por último */}}
+{{ $over := resources.Get "css/overrides.css" | postCSS }}
+{{ if hugo.IsServer }}
+  <link rel="stylesheet" href="{{ $over.RelPermalink }}" />
+{{ else }}
+  {{ $over := $over | minify | fingerprint | resources.PostProcess }}
+  <link rel="stylesheet" href="{{ $over.RelPermalink }}" integrity="{{ $over.Data.Integrity }}" />
+{{ end }}

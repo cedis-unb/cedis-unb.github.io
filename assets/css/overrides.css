@@ -1,0 +1,18 @@
+.publication-links {
+    /* garante que as tags fiquem no fluxo de texto */
+    display: inline;
+  }
+  
+  .social-icon {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 0.2em; /* espaçamento entre ícones e texto anterior */
+    color: #1DB954;    /* igual ao fill do Spotify */
+  }
+  
+  .social-icon svg {
+    display: inline-block;
+    vertical-align: middle;
+    width: 1.3em;  /* aumenta tamanho conforme desejado */
+    height: 1.3em;
+  }
