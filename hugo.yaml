@@ -65,6 +65,9 @@ languages:
         Zenodo:
           enabled: enable
           url: "https://zenodo.org/communities/cedis-unb"
+        Spotify:
+          enabled: enable
+          url: "https://open.spotify.com/show/4UH74yDMT5187cJCTVd09N?si=TVNyYu_DRPGuuv2XtWmgpA"
         facebook:
           enabled: false
         instagram:

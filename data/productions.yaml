@@ -91,10 +91,10 @@ items:
     en: ""
   book_title: ''
   volume: ''
-  doi_isbn: ''
+  doi_isbn: '10.1109/ITHET61869.2024.10837617'
   journal_event: 'IEEE International Conference on IT in Higher Education and Training (ITHET 2024)'
   location: Paris, France
-  pages: 'To appear'
+  pages: ''
   publisher: ''
   tags:
   - sergio_freitas
@@ -119,10 +119,10 @@ items:
     en: ""
   book_title: ''
   volume: ''
-  doi_isbn: ''
+  doi_isbn: '10.1109/FIE61694.2024.10893484'
   journal_event: 'Frontiers in Education 2024'
   location: Washington DC, USA
-  pages: 'To appear'
+  pages: ''
   publisher: ''
   tags:
   - sergio_freitas
@@ -150,10 +150,10 @@ items:
     en: ""
   book_title: ''
   volume: ''
-  doi_isbn: ''
+  doi_isbn: '10.1109/FIE61694.2024.10893473'
   journal_event: 'Frontiers in Education 2024'
   location: Washington DC, USA
-  pages: 'To appear'
+  pages: ''
   publisher: ''
   tags:
   - sergio_freitas
