@@ -50,3 +50,18 @@ projects:
       pt: "Projeto Jornada IHC"
     researchers:
       - sergio_freitas
+
+  - id: project_super_r
+    name: 
+      en: "Super-R"
+      pt: "Super-R"
+    researchers:
+      - george_marsicano
+
+  - id: project_software_bem
+    name: 
+      en: "Software for Good"
+      pt: "Software para o Bem"
+    researchers:
+      - george_marsicano
+      

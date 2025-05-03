@@ -19,6 +19,8 @@ tags:
 - active_learning
 - soft_skills
 - project_td
+- project_software_bem
+- project_super_r
 nav_next: true
 ---
 <div id="top"></div>
