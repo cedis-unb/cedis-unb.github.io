@@ -1,7 +1,7 @@
 ---
 author: CEDIS
 title: "Cristiane Soares Ramos"
-date: 2024-02-14T00:44:02-03:00
+date: 2024-02-14T00:47:02-03:00
 weight: 20
 language: en
 featured_image: "../assets/images/featured/people_Cristiane Ramos.png"
