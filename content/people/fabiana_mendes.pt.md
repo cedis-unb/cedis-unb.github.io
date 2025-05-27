@@ -1,7 +1,7 @@
 ---
 author: CEDIS
 title: "Fabiana Freitas Mendes"
-date: 2024-02-14T00:47:27-03:00
+date: 2024-02-14T00:42:27-03:00
 weight: 20
 language: pt
 featured_image: "../assets/images/featured/people_Fabiana Mendes.png"
