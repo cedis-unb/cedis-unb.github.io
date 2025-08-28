@@ -1,25 +1,28 @@
 ---
-title: "Chamada voluntária para atuação no CEDIS – Inscrições abertas"
-date: 2025-08-28T09:00:00-03:00
+title: "Projeto do CEDIS reconhecido com Menção Honrosa no Prêmio Anual de Inovação no Ensino de Graduação da UnB"
+date: 2025-08-29T08:00:00-03:00
 draft: false
 weight: 500
 language: pt
-featured_image: "../assets/images/featured/CEDIS.png"
-summary: 'O CEDIS abre inscrições para estudantes voluntários interessados em atuar em projetos de pesquisa e atividades acadêmicas.'
+featured_image: ../assets/images/posts/troféu.png
+summary: 'O projeto “Alvorecer Feudal”, do professor Sergio Freitas, recebe Menção Honrosa no Prêmio Anual de Inovação no Ensino de Graduação da UnB.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp
 categories:
 - News
 tags:
 - News
+- gamification
+- active_learning
+- learning_analytics
 ---
 
-Brasília, 28 de agosto de 2025  
+Brasília, 29 de agosto de 2025  
 
-**O Centro de Estudos, Desenvolvimento e Inovação em Software (CEDIS/UnB) abre chamada para estudantes voluntários interessados em atuar em projetos, pesquisas e atividades acadêmicas, ao lado dos professores do centro.**  
+O **Decanato de Ensino de Graduação (DEG/UnB)** realizará amanhã, durante a **Feira de Oportunidades – Vem pra UnB**, a cerimônia de premiação do **Prêmio Anual de Inovação no Ensino de Graduação**, conforme Edital DEG nº 16/2024.  
 
-As inscrições estão abertas de **28/08/2025 a 05/09/2025 (até 23h59)**. A participação é voluntária e não envolve vínculo empregatício ou remuneração, sendo uma oportunidade de aprendizagem prática, contato com professores e vivência acadêmica em áreas como desenvolvimento, inteligência artificial, gamificação, qualidade de software e muito mais.  
+Na ocasião, o projeto **“Alvorecer Feudal: Inovação Tecnológica e Didática no Ensino de Desenvolvimento de Software”**, desenvolvido pelo professor **Sergio Antonio Andrade de Freitas** (CEDIS/UnB), será reconhecido com **Menção Honrosa** na categoria *Uso de recursos tecnológicos / Produção de material didático inovador*.  
 
-🔗 Formulário de inscrição: [Clique aqui para se inscrever](https://forms.office.com/r/nBxweLW95H)  
+A cerimônia acontecerá no dia **30/08/2025, às 17h, no Anfiteatro 9 do ICC Sul**, como parte da programação oficial da feira.  
 
-Esta iniciativa reforça o compromisso do CEDIS com a formação de estudantes e o fortalecimento da pesquisa e inovação na Universidade de Brasília.  
+O reconhecimento reforça o compromisso do CEDIS e da Universidade de Brasília com a **inovação no ensino de graduação**, valorizando práticas pedagógicas que unem tecnologia, criatividade e formação crítica dos estudantes.  
