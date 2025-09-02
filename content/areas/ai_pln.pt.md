@@ -1,7 +1,7 @@
 ---
 author: CEDIS
 title: "Inteligência Artificial e Processamento de Linguagem Natural"
-date: 2024-02-14T01:37:18-03:00
+date: 2025-08-02T01:37:18-03:00
 language: pt
 weight: 5
 featured_image: "../assets/images/featured/area_IA.png"
