@@ -47,6 +47,7 @@ software_requirements: "Requirements Engineering"
 soft_skills: "Soft Skills"
 teamwork: "Teamwork"
 verification_validation_testing: "Verification, Validation and Testing"
+security: "Cybersecurity"
 
 # Areas topic sections
 area_coordinator: "About the Area Coordinator"
@@ -92,7 +93,7 @@ inactive: "Inactive"
 closed: "Closed"
 
 # Advisors
-sergio_freitas: "Sergio Freitas"
+sergio_freitas: "Sergio A. A. Freitas"
 cristiane_ramos: "Cristiane Ramos"
 andre_lanna: "André Lanna"
 george_marsicano: "George Marsicano"

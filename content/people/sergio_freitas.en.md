@@ -18,6 +18,7 @@ tags:
 - machine_learning
 - active_learning
 - learning_analytics
+- security
 - dfcris
 - project_cc
 - project_alvorecer

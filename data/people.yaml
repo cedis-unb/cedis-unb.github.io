@@ -82,7 +82,7 @@ people:
     advisors:
       - sergio_freitas
     tags:
-      - active
+      - inactive
       - machine_learning
       - ai
     year: 2024
@@ -98,7 +98,7 @@ people:
     advisors:
       - sergio_freitas
     tags:
-      - active
+      - inactive
       - machine_learning
       - ai
     year: 2024
@@ -115,6 +115,7 @@ people:
       - sergio_freitas
     tags:
       - gamification
+      - inactive
     year: 2023
 
   - name: Vitor Diniz Pagani Vieira Ribeiro
@@ -129,6 +130,7 @@ people:
       - sergio_freitas
     tags:
       - gamification
+      - inactive
     year: 2023
 
   - name: Bruno Marquete da Silva
@@ -540,3 +542,186 @@ people:
     tags:
       - gamification
     year: 2024
+
+  - name: Mylena Angélica Silva Farias
+    categories:
+      - people
+      - scientific_initiation
+    title:
+      pt: 'Framework preditivo de engajamento e desempenho discente em ambientes de aprendizagem gamificados com base em Octalysis, indicadores neurocientíficos e machine learning'
+      en: 'Predictive Framework for Student Engagement and Performance in Gamified Learning Environments Based on Octalysis, Neuroscientific Indicators, and Machine Learning'
+    program: curso_esw2
+    advisors:
+      - sergio_freitas
+    tags:
+      - active
+      - gamification
+      - machine_learning
+      - ai
+    year: 2025
+
+  - name: Daniel Rodrigues da Rocha
+    categories:
+      - people
+      - scientific_initiation
+    title:
+      pt: 'Framework preditivo de engajamento e desempenho discente em ambientes de aprendizagem gamificados com base em Octalysis, indicadores neurocientíficos e machine learning'
+      en: 'Predictive Framework for Student Engagement and Performance in Gamified Learning Environments Based on Octalysis, Neuroscientific Indicators, and Machine Learning'
+    program: curso_esw2
+    advisors:
+      - sergio_freitas
+    tags:
+      - active
+      - gamification
+      - machine_learning
+      - ai
+    year: 2025
+
+  - name: Davi Rodrigues da Rocha
+    categories:
+      - people
+      - scientific_initiation
+    title:
+      pt: 'Framework preditivo de engajamento e desempenho discente em ambientes de aprendizagem gamificados com base em Octalysis, indicadores neurocientíficos e machine learning'
+      en: 'Predictive Framework for Student Engagement and Performance in Gamified Learning Environments Based on Octalysis, Neuroscientific Indicators, and Machine Learning'
+    program: curso_esw2
+    advisors:
+      - sergio_freitas
+    tags:
+      - active
+      - gamification
+      - machine_learning
+      - ai
+    year: 2025
+
+  - name: Alexia Naara da Silva Cardoso
+    categories:
+      - people
+      - tcc
+    title:
+      pt: 'Aplicativo tradutor de línguas indígenas: Munduruku'
+      en: 'Indigenous Language Translator App: Munduruku'
+    program: curso_esw2
+    advisors:
+      - sergio_freitas
+    tags:
+      - active
+      - nlp
+      - ai
+      - social_software
+    year: 2025
+
+  - name: Beatriz Vieira Nascimento
+    categories:
+      - people
+      - tcc
+    title:
+      pt: 'Ferramenta gamificada de apoio à gestão ágil: Uma aplicação web para gestão de tarefas'
+      en: 'Gamified Tool for Agile Management: A Web Application for Task Management'
+    program: curso_esw2
+    advisors:
+      - sergio_freitas
+    tags:
+      - active
+      - gamification
+      - active_learning
+    year: 2025
+
+  - name: Ana Beatriz Norberto da Silva
+    categories:
+      - people
+      - tcc
+    title:
+      pt: 'Ferramenta gamificada de apoio à gestão ágil: Uma aplicação web para gestão de tarefas'
+      en: 'Gamified Tool for Agile Management: A Web Application for Task Management'
+    program: curso_esw2
+    advisors:
+      - sergio_freitas
+    tags:
+      - active
+      - gamification
+      - active_learning
+    year: 2025
+    
+  - name: Luciano Ricardo da Silva Junior
+    categories:
+      - people
+      - tcc
+    title:
+      pt: 'Gamificação e Code smells'
+      en: 'Gamification and Code Smells'
+    program: curso_esw2
+    advisors:
+      - sergio_freitas
+    tags:
+      - active
+      - gamification
+      - software_architecture
+    year: 2025
+     
+  - name: Miguel Matos Costa de Frias Barbosa
+    categories:
+      - people
+      - tcc
+    title:
+      pt: 'Sistema de apoio à análise de processos organizacionais: Uma abordagem com inteligência artificial e controle de contexto'
+      en: 'Support System for Organizational Process Analysis: An Approach with Artificial Intelligence and Context Control'
+    program: curso_esw2
+    advisors:
+      - sergio_freitas
+    tags:
+      - active
+      - ai
+      - machine_learning
+      - digital_transformation
+    year: 2025
+
+  - name: Mylena Angélica Silva Farias
+    categories:
+      - people
+      - tcc
+    title:
+      pt: 'Visualização Interativa de Estruturas de Dados com Realidade Aumentada para Apoio ao Ensino de Algoritmos: Uma abordagem gamificada para engajamento e aprendizagem ativa'
+      en: 'Interactive Visualization of Data Structures with Augmented Reality to Support Algorithm Teaching: A Gamified Approach for Engagement and Active Learning'
+    program: curso_esw2
+    advisors:
+      - sergio_freitas
+    tags:
+      - active
+      - gamification
+      - active_learning
+      - social_software
+    year: 2025
+
+  - name: Geovanna Maciel Avelino da Costa
+    categories:
+      - people
+      - tcc
+    title:
+      pt: 'Visualização Interativa de Estruturas de Dados com Realidade Aumentada para Apoio ao Ensino de Algoritmos: Uma abordagem gamificada para engajamento e aprendizagem ativa'
+      en: 'Interactive Visualization of Data Structures with Augmented Reality to Support Algorithm Teaching: A Gamified Approach for Engagement and Active Learning'
+    program: curso_esw2
+    advisors:
+      - sergio_freitas
+    tags:
+      - active
+      - gamification
+      - active_learning
+      - social_software
+    year: 2025
+
+  - name: Marina Marcia Costa de Souza
+    categories:
+      - people
+      - tcc
+    title:
+      pt: 'Machine learning aplicado a identificação de vulnerabilidades de segurança'
+      en: 'Machine Learning Applied to Security Vulnerability Identification'
+    program: curso_esw2
+    advisors:
+      - sergio_freitas
+    tags:
+      - active
+      - machine_learning
+      - security
+    year: 2025
