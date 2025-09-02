@@ -86,6 +86,14 @@ areas:
     researchers:
       - sergio_freitas
 
+  - id: security
+    name: 
+      en: "Security"
+      pt: "Segurança cibernética"
+    researchers: 
+      - sergio_freitas
+      - george_marsicano
+
   - id: soft_skills
     name: 
       en: "Soft Skills"

@@ -45,6 +45,7 @@ software_requirements: "Engenharia de Requisitos"
 soft_skills: "Habilidades Socioemocionais"
 teamwork: "Trabalho em Equipe"
 verification_validation_testing: "Verificação, Validação e Testes"
+security: "Segurança cibernética"
 
 # Areas topic sections
 area_coordinator: "Sobre o coordenador da área"
@@ -90,7 +91,7 @@ inactive: "Inativo"
 closed: "Concluído"
 
 # Orientadores
-sergio_freitas: "Sergio Freitas"
+sergio_freitas: "Sergio A. A. Freitas"
 cristiane_ramos: "Cristiane Ramos"
 andre_lanna: "André Lanna"
 george_marsicano: "George Marsicano"
