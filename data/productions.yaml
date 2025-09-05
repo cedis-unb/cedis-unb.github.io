@@ -6076,3 +6076,292 @@ The model was validated through a case study at the University of Brasília (UnB
   - george_marsicano
   url: 
   year: 2023
+
+
+- authors:
+  - Maicon Dal Moro
+  title:
+    pt: "Simulação de IDS para Ambientes de Automação Industrial"
+    en: "Simulation of IDS for Industrial Automation Environments"
+  summary:
+    pt: ''
+    en: ''
+  book_title: ''
+  volume: ''
+  doi_isbn: ''
+  journal_event: ''
+  location: ''
+  pages: ''
+  publisher: Universidade Federal do Espírito Santo
+  tags:
+  - security
+  type: tcc
+  program: curso_cc
+  advisors:
+  - sergio_freitas
+  url:
+  year: 2007
+
+- authors:
+  - Raphael de Oliveira Santos
+  title:
+    pt: "Implementação de protocolos para automação industrial num IDS"
+    en: "Implementation of Protocols for Industrial Automation in an IDS"
+  summary:
+    pt: ''
+    en: ''
+  book_title: ''
+  volume: ''
+  doi_isbn: ''
+  journal_event: ''
+  location: ''
+  pages: ''
+  publisher: Universidade Federal do Espírito Santo
+  tags:
+  - security
+  type: tcc
+  program: curso_cc
+  advisors:
+  - sergio_freitas
+  url:
+  year: 2006
+
+- authors:
+  - Bruno Oliveira Silvestre
+  title:
+    pt: "Proposta de um agente de reação para segurança de redes de computadores"
+    en: "Proposal for a Reaction Agent for Computer Network Security"
+  summary:
+    pt: ''
+    en: ''
+  book_title: ''
+  volume: ''
+  doi_isbn: ''
+  journal_event: ''
+  location: ''
+  pages: ''
+  publisher: Universidade Federal do Espírito Santo
+  tags:
+  - security
+  type: tcc
+  program: curso_cc
+  advisors:
+  - sergio_freitas
+  url:
+  year: 2003
+
+- authors:
+  - Arthur Cypriano Monteiro Costa
+  title:
+    pt: "Proposta de um modelo para estruturação de vulnerabilidades e falhas"
+    en: "Proposal for a Model for Structuring Vulnerabilities and Failures"
+  summary:
+    pt: ''
+    en: ''
+  book_title: ''
+  volume: ''
+  doi_isbn: ''
+  journal_event: ''
+  location: ''
+  pages: ''
+  publisher: Universidade Federal do Espírito Santo
+  tags:
+  - security
+  type: tcc
+  program: curso_cc
+  advisors:
+  - sergio_freitas
+  url:
+  year: 2003
+
+- authors:
+  - Luiz Celso Gomes Junior
+  title:
+    pt: "Segurança de Redes: um agente distribuido de reação à invasões"
+    en: "Network Security: A Distributed Agent for Intrusion Reaction"
+  summary:
+    pt: ''
+    en: ''
+  book_title: ''
+  volume: ''
+  doi_isbn: ''
+  journal_event: ''
+  location: ''
+  pages: ''
+  publisher: Universidade Federal do Espírito Santo
+  tags:
+  - security
+  type: tcc
+  program: curso_cc
+  advisors:
+  - sergio_freitas
+  url:
+  year: 2003
+
+- authors:
+  - Bruno Fardin Fáe
+  title:
+    pt: "ACEL: Um modelo de ambiente para o desenvolvimento de sistemas multi-agentes baseado numa organização em células"
+    en: "ACEL: A Framework for the Development of Multi-Agent Systems Based on a Cell Organization"
+  summary:
+    pt: ''
+    en: ''
+  book_title: ''
+  volume: ''
+  doi_isbn: ''
+  journal_event: ''
+  location: ''
+  pages: ''
+  publisher: Universidade Federal do Espírito Santo
+  tags:
+  - security
+  type: tcc
+  program: curso_cc
+  advisors:
+  - sergio_freitas
+  url:
+  year: 2003
+
+- authors:
+  - Kassiano Castiglioni Rossmann
+  title:
+    pt: "Um estudo sobre redes virtuais privadas: sua implementação e teste sobre a rede UFES"
+    en: "A Study on Virtual Private Networks: Implementation and Testing on the UFES Network"
+  summary:
+    pt: ''
+    en: ''
+  book_title: ''
+  volume: ''
+  doi_isbn: ''
+  journal_event: ''
+  location: ''
+  pages: ''
+  publisher: Universidade Federal do Espírito Santo
+  tags:
+  - security
+  type: tcc
+  program: curso_cc
+  advisors:
+  - sergio_freitas
+  url:
+  year: 2003
+
+- authors:
+  - Marcio Pereira Machado
+  title:
+    pt: "Análise e estudo de segurança de corporações utilizando firewalls"
+    en: "Analysis and Study of Corporate Security Using Firewalls"
+  summary:
+    pt: ''
+    en: ''
+  book_title: ''
+  volume: ''
+  doi_isbn: ''
+  journal_event: ''
+  location: ''
+  pages: ''
+  publisher: Universidade Federal do Espírito Santo
+  tags:
+  - security
+  type: tcc
+  program: curso_cc
+  advisors:
+  - sergio_freitas
+  url:
+  year: 2002
+
+- authors:
+  - Walmir Pereira de Amorim Júnior
+  title:
+    pt: "Criptografia e autenticação: um protocolo de autenticação utilizando os algoritimos IDEA, RSA e SHA-1"
+    en: "Cryptography and Authentication: An Authentication Protocol Using IDEA, RSA, and SHA-1 Algorithms"
+  summary:
+    pt: ''
+    en: ''
+  book_title: ''
+  volume: ''
+  doi_isbn: ''
+  journal_event: ''
+  location: ''
+  pages: ''
+  publisher: Universidade Federal do Espírito Santo
+  tags:
+  - security
+  type: tcc
+  program: curso_cc
+  advisors:
+  - sergio_freitas
+  url:
+  year: 2002
+
+- authors:
+  - Hélder Bergamin Pimentel Dias
+  title:
+    pt: "Uma Proposta de Agente de Detecção de Intrusão"
+    en: "A Proposal for an Intrusion Detection Agent"
+  summary:
+    pt: ''
+    en: ''
+  book_title: ''
+  volume: ''
+  doi_isbn: ''
+  journal_event: ''
+  location: ''
+  pages: ''
+  publisher: Universidade Federal do Espírito Santo
+  tags:
+  - security
+  type: tcc
+  program: curso_cc
+  advisors:
+  - sergio_freitas
+  url:
+  year: 2002
+
+- authors:
+  - Rui Sant'Ana Junior
+  title:
+    pt: "Proposta de um Agente de Reconfiguração Remota de Serviços"
+    en: "Proposal for a Remote Service Reconfiguration Agent"
+  summary:
+    pt: ''
+    en: ''
+  book_title: ''
+  volume: ''
+  doi_isbn: ''
+  journal_event: ''
+  location: ''
+  pages: ''
+  publisher: Universidade Federal do Espírito Santo
+  tags:
+  - security
+  type: tcc
+  program: curso_cc
+  advisors:
+  - sergio_freitas
+  url:
+  year: 2002
+
+- authors:
+  - Eduardo Venturin Linhalis
+  title:
+    pt: "Avaliação da Segurança Interna de uma Rede Corporativa"
+    en: "Evaluation of Internal Security in a Corporate Network"
+  summary:
+    pt: ''
+    en: ''
+  book_title: ''
+  volume: ''
+  doi_isbn: ''
+  journal_event: ''
+  location: ''
+  pages: ''
+  publisher: Universidade Federal do Espírito Santo
+  tags:
+  - security
+  type: tcc
+  program: curso_cc
+  advisors:
+  - sergio_freitas
+  url:
+  year: 2000
