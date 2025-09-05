@@ -13,7 +13,6 @@ categories:
 tags:
 - News
 - gamification
-- ensino_superior
 ---
 
 Brasília, 1 de setembro de 2025  

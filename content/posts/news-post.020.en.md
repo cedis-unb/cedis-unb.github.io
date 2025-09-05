@@ -13,7 +13,6 @@ categories:
 tags:
 - News
 - gamification
-- higher_education
 ---
 
 Brasília, September 1, 2025  
