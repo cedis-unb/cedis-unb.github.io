@@ -1,27 +1,32 @@
 ---
-title: "Banco do Brasil delivers lecture on gamification at UnB"
-date: 2025-09-01T17:00:00-03:00
+title: "CEDIS at UnB: recognition and innovation"
+date: 2025-08-29T17:00:00-03:00
 draft: false
 weight: 500
 language: en
-featured_image: "../assets/images/posts/Gamificacao BB UnB2025.png"
-summary: 'The Gamification Team from Banco do Brasil delivered a lecture in the Introduction to Gamification course at UnB, sharing projects, products, and inviting the academic community to explore the Gamifica BB Portal.'
+featured_image: "../assets/images/posts/Prêmio Inovação 2025.png"
+summary: 'CEDIS celebrates the achievement of Professor Sergio Freitas, who received an Honorable Mention in the Annual Undergraduate Teaching Innovation Award (DEG/UnB), in the category Use of technological resources and production of innovative teaching material.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp
 categories:
 - News
 tags:
 - News
+- active_learning
 - gamification
-- higher_education
 ---
 
-Brasília, September 1, 2025  
+Brasília, August 29, 2025  
 
-The **Introduction to Gamification** course welcomed, on **September 1, 2025**, the **Gamification Team from Banco do Brasil**, who delivered a lecture open to the entire class.  
+**CEDIS** celebrates the achievement of Professor **Sergio Antonio Andrade de Freitas**, who received an **Honorable Mention** in the **Annual Undergraduate Teaching Innovation Award (DEG/UnB)**, in the category **Use of technological resources / Production of innovative teaching material**, with the project *“Feudal Dawn: Technological and Didactic Innovation in Teaching Software Development”*.  
 
-During the session, the speakers presented the **various gamification projects and products** developed by the Bank’s team, highlighting experiences applied in different organizational contexts. In addition, they invited all participants to explore the **[Gamifica BB Portal](https://gamifica.apps.bb.com.br)**, which brings together information, practices, and initiatives focused on the strategic use of gamification.  
+The award ceremony took place during the **VEM pra UnB Opportunity Fair** and brought together important academic leaders.  
 
-In the photo (captured during the lecture): members of Banco do Brasil’s Gamification Team alongside Professor Sergio and Professor Cristiane.  
+In the photo (from left to right):  
+- Prof. Tiago Coelho (Dean of Undergraduate Studies)  
+- Prof. Sergio Freitas (CEDIS/UnB)  
+- Prof. Marcio Muniz (Vice-Rector)  
+- Prof. Juliana Dias (Director DIEG/DEG)  
+- Prof. Renata Aquino (Dean of Research and Innovation)  
 
-The activity was considered highly relevant for the students, bridging the theory discussed in class with practices applied in one of the largest banks in the country.  
+This recognition reinforces CEDIS’s mission to integrate pedagogical innovation, technology, and social impact in the teaching of Software Engineering.  
