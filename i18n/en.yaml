@@ -26,7 +26,11 @@ curso_ppgee: "PhD Thesis, Federal University of Espirito Santo (Brazil)"
 curso_ppgi_ufrgs: "Master's Thesis in Informatics, Federal University of Rio Grande
   do Sul (Brazil)"
 curso_unb: "University of Brasília"
-curso_cc: "Computer Science, UFES"
+curso_cc: "Bachelor of Computer Science, UFES"
+curso_espufes: "Specialization in Computer Networks, UFES"
+curso_espunb: "Specialization in Information Technology Management, UnB"
+curso_espunb2: "Specialization in IT Governance and Communication for the Public Sector, UnB"
+curso_espunb3: "Specialization in Information Security and Communications Management, UnB"
 
 # Knowledge Areas
 active_learning: "Active Learning"

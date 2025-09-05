@@ -2533,6 +2533,7 @@ The model was validated through a case study at the University of Brasília (UnB
   publisher: ''
   tags:
   - software_architecture
+  - security
   - sergio_freitas
   type: conference
   program: ''
@@ -2584,6 +2585,7 @@ The model was validated through a case study at the University of Brasília (UnB
   publisher: Biblioteca Central da Universidade de Brasília
   tags:
   - software_architecture
+  - security
   type: dissertation
   program: curso_ppca
   advisors:
@@ -2773,6 +2775,7 @@ The model was validated through a case study at the University of Brasília (UnB
   publisher: ''
   tags:
   - software_architecture
+  - security
   - sergio_freitas
   type: conference
   program: ''
@@ -2906,6 +2909,7 @@ The model was validated through a case study at the University of Brasília (UnB
   publisher: Biblioteca Central da Universidade de Brasília
   tags:
   - software_architecture
+  - security
   type: dissertation
   program: curso_ppca
   advisors:
@@ -3145,6 +3149,7 @@ The model was validated through a case study at the University of Brasília (UnB
   publisher: ''
   tags:
   - digital_transformation
+  - security
   - sergio_freitas
   type: article
   program: ''
@@ -3477,6 +3482,7 @@ The model was validated through a case study at the University of Brasília (UnB
   publisher: ''
   tags:
   - software_architecture
+  - security
   - sergio_freitas
   type: conference
   program: ''
@@ -5697,6 +5703,7 @@ The model was validated through a case study at the University of Brasília (UnB
   publisher: ''
   tags:
   - sergio_freitas
+  - security
   - ai
   type: conference
   program: null
@@ -6077,6 +6084,269 @@ The model was validated through a case study at the University of Brasília (UnB
   url: 
   year: 2023
 
+- authors:
+  - José Augusto da Fonseca
+  title:
+    pt: "Padronização de procedimentos no uso de documentos e informações com base na análise e avaliação de riscos: Estudo de Caso na Seção de Inspeção do Trabalho em Sergipe"
+    en: "Standardization of Procedures for the Use of Documents and Information Based on Risk Analysis and Assessment: A Case Study in the Labor Inspection Section of Sergipe"
+  summary:
+    pt: ''
+    en: ''
+  book_title: ''
+  volume: ''
+  doi_isbn: ''
+  journal_event: ''
+  location: ''
+  pages: ''
+  publisher: Universidade de Brasília
+  tags:
+  - security
+  type: specialization
+  program: curso_espunb3
+  advisors:
+  - sergio_freitas
+  url:
+  year: 2014
+
+- authors:
+  - Wilbert Carpi Silva
+  title:
+    pt: "Proposta de Modelo para Infraestrutura de Rede e Tratamento de Incidentes de Segurança em Redes de Computadores da APF"
+    en: "Proposal for a Model for Network Infrastructure and Security Incident Handling in APF Computer Networks"
+  summary:
+    pt: ''
+    en: ''
+  book_title: ''
+  volume: ''
+  doi_isbn: ''
+  journal_event: ''
+  location: ''
+  pages: ''
+  publisher: Universidade de Brasília
+  tags:
+  - security
+  type: specialization
+  program: curso_espunb3
+  advisors:
+  - sergio_freitas
+  url:
+  year: 2014
+
+- authors:
+  - Adevanei de Sant'Anna Barreto
+  title:
+    pt: "Controle de acesso lógico:um estudo sobre o caso da TI na Faculdade UnB Gama"
+    en: "Logical Access Control: A Study on the Case of IT at UnB Gama"
+  summary:
+    pt: ''
+    en: ''
+  book_title: ''
+  volume: ''
+  doi_isbn: ''
+  journal_event: ''
+  location: ''
+  pages: ''
+  publisher: Universidade de Brasília
+  tags:
+  - security
+  type: specialization
+  program: curso_espunb3
+  advisors:
+  - sergio_freitas
+  url:
+  year: 2012
+
+- authors:
+  - Jobson Magalhães Dantas
+  title:
+    pt: "Gestão de Continuidade de Serviços de TI: Site de Contingência"
+    en: "IT Service Continuity Management: Contingency Site"
+  summary:
+    pt: ''
+    en: ''
+  book_title: ''
+  volume: ''
+  doi_isbn: ''
+  journal_event: ''
+  location: ''
+  pages: ''
+  publisher: Universidade de Brasília
+  tags:
+  - security
+  type: specialization
+  program: curso_espunb2
+  advisors:
+  - sergio_freitas
+  url:
+  year: 2013
+
+- authors:
+  - Leandro Barbosa Martins
+  title:
+    pt: "Gestão de Riscos e Governança de TI Aplicada à Rede de Comunicação Governamental"
+    en: "Risk Management and IT Governance Applied to the Government Communication Network"
+  summary:
+    pt: ''
+    en: ''
+  book_title: ''
+  volume: ''
+  doi_isbn: ''
+  journal_event: ''
+  location: ''
+  pages: ''
+  publisher: Universidade de Brasília
+  tags:
+  - security
+  type: specialization
+  program: curso_espunb2
+  advisors:
+  - sergio_freitas
+  url:
+  year: 2012
+
+- authors:
+  - Leandro Barbosa Martins
+  title:
+    pt: "Gestão de Riscos e Governança de TI Aplicada à Rede de Comunicação Governamental"
+    en: "Risk Management and IT Governance Applied to the Government Communication Network"
+  summary:
+    pt: ''
+    en: ''
+  book_title: ''
+  volume: ''
+  doi_isbn: ''
+  journal_event: ''
+  location: ''
+  pages: ''
+  publisher: Universidade de Brasília
+  tags:
+  - security
+  type: specialization
+  program: curso_espunb2
+  advisors:
+  - sergio_freitas
+  url:
+  year: 2012
+
+- authors:
+  - Rodrigo César Santos Felisdório
+  title:
+    pt: "Análise de risco nos planos diretores de Tecnologia da Informação do setor público"
+    en: "Risk Analysis in Public Sector Information Technology Master Plans"
+  summary:
+    pt: ''
+    en: ''
+  book_title: ''
+  volume: ''
+  doi_isbn: ''
+  journal_event: ''
+  location: ''
+  pages: ''
+  publisher: Universidade de Brasília
+  tags:
+  - security
+  type: specialization
+  program: curso_espunb2
+  advisors:
+  - sergio_freitas
+  url:
+  year: 2012
+
+- authors:
+  - Fernando Marinho do Nascimento
+  title:
+    pt: "Plano de contingência para ferramentos de desenvolvimento de software"
+    en: "Contingency Plan for Software Development Tools"
+  summary:
+    pt: ''
+    en: ''
+  book_title: ''
+  volume: ''
+  doi_isbn: ''
+  journal_event: ''
+  location: ''
+  pages: ''
+  publisher: Universidade de Brasília
+  tags:
+  - security
+  type: specialization
+  program: curso_espunb2
+  advisors:
+  - sergio_freitas
+  url:
+  year: 2012
+
+- authors:
+  - Einstein Oliveira
+  title:
+    pt: "Computação em Nuvem: Redução de custos e Segurança da Informação"
+    en: "Cloud Computing: Cost Reduction and Information Security"
+  summary:
+    pt: ''
+    en: ''
+  book_title: ''
+  volume: ''
+  doi_isbn: ''
+  journal_event: ''
+  location: ''
+  pages: ''
+  publisher: Universidade de Brasília
+  tags:
+  - security
+  type: specialization
+  program: curso_espunb
+  advisors:
+  - sergio_freitas
+  url:
+  year: 2011
+
+- authors:
+  - Marcianne Ribeiro Antunes Lima
+  title:
+    pt: "Autenticação em Redes Mistas"
+    en: "Authentication in Mixed Networks"
+  summary:
+    pt: ''
+    en: ''
+  book_title: ''
+  volume: ''
+  doi_isbn: ''
+  journal_event: ''
+  location: ''
+  pages: ''
+  publisher: Universidade Federal do Espírito Santo
+  tags:
+  - security
+  type: specialization
+  program: curso_espufes
+  advisors:
+  - sergio_freitas
+  url:
+  year: 2006
+
+- authors:
+  - Heber Almeida Barbosa
+  title:
+    pt: "Detecção de Intrusão em Redes de Automação Industrial"
+    en: "Intrusion Detection in Industrial Automation Networks"
+  summary:
+    pt: ''
+    en: ''
+  book_title: ''
+  volume: ''
+  doi_isbn: ''
+  journal_event: ''
+  location: ''
+  pages: ''
+  publisher: Universidade Federal do Espírito Santo
+  tags:
+  - security
+  type: specialization
+  program: curso_espufes
+  advisors:
+  - sergio_freitas
+  url:
+  year: 2006
 
 - authors:
   - Maicon Dal Moro
@@ -6365,3 +6635,4 @@ The model was validated through a case study at the University of Brasília (UnB
   - sergio_freitas
   url:
   year: 2000
+
