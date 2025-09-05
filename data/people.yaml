@@ -725,3 +725,215 @@ people:
       - machine_learning
       - security
     year: 2025
+
+  - name: Maicon Dal Moro
+    categories:
+      - people
+      - tcc
+    title:
+      pt: 'Simulação de IDS para Ambientes de Automação Industrial'
+      en: 'Simulation of IDS for Industrial Automation Environments'
+    program: curso_cc
+    advisors:
+      - sergio_freitas
+    tags:
+      - inactive
+      - security
+    year: 2007
+
+  - name: Raphael de Oliveira Santos
+    categories:
+      - people
+      - tcc
+    title:
+      pt: 'Implementação de protocolos para automação industrial num IDS'
+      en: 'Implementation of Protocols for Industrial Automation in an IDS'
+    program: curso_cc
+    advisors:
+      - sergio_freitas
+    tags:
+      - inactive
+      - security
+    year: 2006
+
+  - name: Bruno Oliveira Silvestre
+    categories:
+      - people
+      - tcc
+    title:
+      pt: 'Proposta de um agente de reação para segurança de redes de computadores'
+      en: 'Proposal for a Reaction Agent for Computer Network Security'
+    program: curso_cc
+    advisors:
+      - sergio_freitas
+    tags:
+      - inactive
+      - security
+    year: 2003
+
+  - name: Arthur Cypriano Monteiro Costa
+    categories:
+      - people
+      - tcc
+    title:
+      pt: 'Proposta de um modelo para estruturação de vulnerabilidades e falhas'
+      en: 'Proposal for a Model for Structuring Vulnerabilities and Failures'
+    program: curso_cc
+    advisors:
+      - sergio_freitas
+    tags:
+      - inactive
+      - security
+    year: 2003
+
+  - name: Luiz Celso Gomes Junior
+    categories:
+      - people
+      - tcc
+    title:
+      pt: 'Segurança de Redes: um agente distribuido de reação à invasões'
+      en: 'Network Security: A Distributed Agent for Intrusion Reaction'
+    program: curso_cc
+    advisors:
+      - sergio_freitas
+    tags:
+      - inactive
+      - security
+    year: 2003
+
+  - name: Bruno Fardin Fáe
+    categories:
+      - people
+      - tcc
+    title:
+      pt: 'ACEL: Um modelo de ambiente para o desenvolvimento de sistemas multi-agentes baseado numa organização em células'
+      en: 'ACEL: A Framework for the Development of Multi-Agent Systems Based on a Cell Organization'
+    program: curso_cc
+    advisors:
+      - sergio_freitas
+    tags:
+      - inactive
+      - security
+    year: 2003
+
+  - name: Kassiano Castiglioni Rossmann
+    categories:
+      - people
+      - tcc
+    title:
+      pt: 'Um estudo sobre redes virtuais privadas: sua implementação e teste sobre a rede UFES'
+      en: 'A Study on Virtual Private Networks: Implementation and Testing on the UFES Network'
+    program: curso_cc
+    advisors:
+      - sergio_freitas
+    tags:
+      - inactive
+      - security
+    year: 2003
+
+  - name: Marcio Pereira Machado
+    categories:
+      - people
+      - tcc
+    title:
+      pt: 'Análise e estudo de segurança de corporações utilizando firewalls'
+      en: 'Analysis and Study of Corporate Security Using Firewalls'
+    program: curso_cc
+    advisors:
+      - sergio_freitas
+    tags:
+      - inactive
+      - security
+    year: 2002
+
+  - name: Walmir Pereira de Amorim Júnior
+    categories:
+      - people
+      - tcc
+    title:
+      pt: 'Criptografia e autenticação: um protocolo de autenticação utilizando os algoritimos IDEA, RSA e SHA-1'
+      en: 'Cryptography and Authentication: An Authentication Protocol Using IDEA, RSA, and SHA-1 Algorithms'
+    program: curso_cc
+    advisors:
+      - sergio_freitas
+    tags:
+      - inactive
+      - security
+    year: 2002
+
+  - name: Hélder Bergamin Pimentel Dias
+    categories:
+      - people
+      - tcc
+    title:
+      pt: 'Uma Proposta de Agente de Detecção de Intrusão'
+      en: 'A Proposal for an Intrusion Detection Agent'
+    program: curso_cc
+    advisors:
+      - sergio_freitas
+    tags:
+      - inactive
+      - security
+    year: 2002
+
+  - name: Rui Sant'Ana Junior
+    categories:
+      - people
+      - tcc
+    title:
+      pt: 'Proposta de um Agente de Reconfiguração Remota de Serviços'
+      en: 'Proposal for a Remote Service Reconfiguration Agent'
+    program: curso_cc
+    advisors:
+      - sergio_freitas
+    tags:
+      - inactive
+      - security
+    year: 2002
+
+  - name: Eduardo Venturin Linhalis
+    categories:
+      - people
+      - tcc
+    title:
+      pt: 'Avaliação da Segurança Interna de uma Rede Corporativa'
+      en: 'Evaluation of Internal Security in a Corporate Network'
+    program: curso_cc
+    advisors:
+      - sergio_freitas
+    tags:
+      - inactive
+      - security
+    year: 2000
+
+
+  - name: Bruno Oliveira Silvestre
+    categories:
+      - people
+      - scientific_initiation
+    title:
+      pt: 'Implementação de um agente para planejamento de contra-ações de uma rede sob ataque'
+      en: 'Implementation of an Agent for Planning Countermeasures in an Attacked Network'
+    program: curso_cc
+    advisors:
+      - sergio_freitas
+    tags:
+      - inactive
+      - security
+    year: 2002
+
+
+  - name: Arthur Cypriano Monteiro Costa
+    categories:
+      - people
+      - scientific_initiation
+    title:
+      pt: 'Implementação de um modelo genérico para representação de vulnerabilidades e invasões'
+      en: 'Implementation of a Generic Model for Representing Vulnerabilities and Attacks'
+    program: curso_cc
+    advisors:
+      - sergio_freitas
+    tags:
+      - inactive
+      - security
+    year: 2002

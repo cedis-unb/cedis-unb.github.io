@@ -24,6 +24,7 @@ curso_ppgi: "Dissertação de Mestrado em Informática - UFES"
 curso_ppgee: "Tese de Doutorado, Universidade Federal do Espirito Santo"
 curso_ppgi_ufrgs: "Dissertação de Mestrado em Informática - UFRGS"
 curso_unb: "Universidade de Brasília"
+curso_cc: "Ciência da Computação, UFES"
 
 # Áreas de atuação
 active_learning: "Aprendizagem Ativa"

@@ -26,6 +26,7 @@ curso_ppgee: "PhD Thesis, Federal University of Espirito Santo (Brazil)"
 curso_ppgi_ufrgs: "Master's Thesis in Informatics, Federal University of Rio Grande
   do Sul (Brazil)"
 curso_unb: "University of Brasília"
+curso_cc: "Computer Science, UFES"
 
 # Knowledge Areas
 active_learning: "Active Learning"
