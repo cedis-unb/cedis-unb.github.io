@@ -7,6 +7,8 @@
     "@tailwindcss/typography": "^0.5.10",
     "alpinejs": "^3.14.0",
     "autoprefixer": "^10.4.19",
+    "browserslist": "^4.25.4",
+    "caniuse-lite": "^1.0.30001741",
     "concurrently": "^8.2.2",
     "postcss": "^8.4.38",
     "postcss-cli": "^11.0.0",
@@ -47,7 +49,7 @@
     "braces": ">=3.0.3",
     "cross-spawn": "^7.0.6",
     "markdown-it-emoji": "^3.0.0",
-    "npm": "^11.0.0",
+    "npm": "^11.6.0",
     "pagefind": ">=1.1.1"
   },
   "overrides": {
