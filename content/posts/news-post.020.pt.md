@@ -5,7 +5,7 @@ draft: false
 weight: 500
 language: pt
 featured_image: "../assets/images/posts/Gamificacao BB UnB2025.png"
-summary: 'A equipe de Gamificação do Banco do Brasil apresentou palestra na disciplina de Introdução à Gamificação da UnB, compartilhando projetos, produtos e convidando a comunidade acadêmica para conhecer o Portal Gamifica BB.'
+summary: 'A equipe de Gamificação do Banco do Brasil apresentou palestra na disciplina de Introdução à Gamificação da UnB, compartilhando projetos e produtos e convidando a comunidade acadêmica para conhecer o Portal Gamifica BB.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp
 categories:
@@ -17,10 +17,15 @@ tags:
 
 Brasília, 1 de setembro de 2025  
 
-A disciplina **Introdução à Gamificação** recebeu, no último dia **1 de setembro de 2025**, a visita da **equipe de Gamificação do Banco do Brasil**, que ministrou uma palestra aberta a toda a turma.  
+A disciplina **Introdução à Gamificação** recebeu, em **1 de setembro de 2025**, a **equipe de Gamificação do Banco do Brasil**, que ministrou palestra aberta à turma.  
 
-Durante o encontro, os palestrantes apresentaram os **diversos trabalhos e produtos em gamificação** desenvolvidos pela equipe do Banco, destacando experiências aplicadas em diferentes contextos organizacionais. Além disso, convidaram todos os presentes a explorarem o **[Portal Gamifica BB](https://gamifica.apps.bb.com.br)**, que reúne informações, práticas e iniciativas voltadas ao uso estratégico da gamificação.  
+Durante o encontro, os palestrantes apresentaram **trabalhos e produtos em gamificação** desenvolvidos pela equipe do Banco. Também convidaram os participantes a explorar o **[Portal Gamifica BB](https://gamifica.apps.bb.com.br)**, que reúne informações, práticas e iniciativas voltadas ao uso estratégico da gamificação.  
 
-Na foto (registro do momento da palestra): integrantes da equipe de Gamificação do Banco do Brasil ao lado do professor Sérgio e da professora Cristiane.  
+Na foto (da esquerda para a direita):  
+- Prof. Sergio Freitas  
+- Maurílio Fernandes  
+- Roberto Garrones  
+- André Corrêa  
+- Profa. Cristiane Ramos  
 
-A atividade foi considerada de grande relevância para os estudantes, aproximando a teoria discutida em sala de aula das práticas aplicadas em um dos maiores bancos do país.  
+A atividade aproximou a teoria discutida em sala das práticas aplicadas em uma organização de grande porte no país.  
