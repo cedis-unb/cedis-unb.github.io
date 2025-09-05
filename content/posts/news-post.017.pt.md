@@ -1,7 +1,7 @@
 ---
 title: "Projeto do CEDIS reconhecido com Menção Honrosa no Prêmio Anual de Inovação no Ensino de Graduação da UnB"
 date: 2025-08-28T08:00:00-03:00
-draft: false
+draft: true
 weight: 500
 language: en
 featured_image: "../assets/images/posts/troféu.png"
