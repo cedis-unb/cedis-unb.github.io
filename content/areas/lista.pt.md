@@ -7,6 +7,7 @@ language: pt
 featured_image: ../assets/images/featured/CEDIS.png
 summary: Desenvolvimento e Engenharia de Software; Metodologias e Abordagens de Desenvolvimento; Tecnologias Emergentes e Inovação; Aspectos Humanos e Gerenciais; Educação e Aprendizagem; Pesquisa e Desenvolvimento em Produtos e Soluções de Software. Conheça mais.
 authorimage: ../assets/images/global/author.webp
+draft: true
 categories:
 - knowledge_areas
 tags: [  ]

@@ -7,6 +7,7 @@ language: en
 featured_image: ../assets/images/featured/CEDIS.png
 summary: Software Development and Engineering; Development Methodologies and Approaches; Emerging Technologies and Innovation; Human and Managerial Aspects; Education and Learning; Research and Development in Software Products and Solutions. Learn more.
 authorimage: ../assets/images/global/author.webp
+draft: true
 categories:
 - knowledge_areas
 tags: [  ]
