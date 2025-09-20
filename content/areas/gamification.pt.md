@@ -20,7 +20,7 @@ nav_next: true
 
 *Gamification* é um processo que utiliza elementos, técnicas e mecânicas de design de jogos em contextos não relacionados a jogos. O objetivo é aumentar a motivação, a participação e o engajamento dos usuários. A *gamification* tem sido aplicada em áreas como educação, marketing, saúde e treinamento corporativo. Observou-se crescimento ao longo da última década. Recentemente, o grupo lançou o site [Gamification.org](https://gamificacao.org), que reúne recursos, projetos e discussões sobre o tema, promovendo um ambiente colaborativo para pesquisadores, educadores e profissionais interessados.
 
-[![Logo do Gamification.org](https://gamificacao.org/images/logo%20gamifica%C3%A7%C3%A3o%20org.svg)](https://gamificacao.org)
+[![Logo do Gamification.org](/images/logo%20gamifica%C3%A7%C3%A3o%20org.svg)](https://gamificacao.org)
 
 
 ## {{< i18n "area_coordinator" >}}
