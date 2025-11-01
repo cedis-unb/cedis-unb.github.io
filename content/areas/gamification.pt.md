@@ -34,8 +34,8 @@ Especialista em gamificação e professor Titular da Universidade de Brasíli
 {{< filterPeople caput="#### " caputKey="master_student" categories="master_student" advisors="" tags="gamification" notags="inactive">}}
 {{< filterPeople caput="#### " caputKey="specialization" categories="specialization" advisors="" tags="gamification" notags="inactive">}}
 {{< filterPeople caput="#### " caputKey="scientific_initiation" categories="scientific_initiation" advisors="" tags="gamification" notags="inactive">}}
-{{< filterPeople caput="#### " caputKey="volunteer" categories="volunteer" advisors="" tags="gamification" notags="inactive">}}
 {{< filterPeople caput="#### " caputKey="tcc" categories="tcc" advisors="" tags="gamification" notags="inactive">}}
+{{< filterPeople caput="#### " caputKey="volunteer" categories="volunteer" advisors="" tags="gamification" notags="inactive">}}
 
 <div id="previous-collaborators" x-data="{ showPrevious: false }">
     <h2 id="former-collaborators-title" @click="showPrevious = !showPrevious" class="text-xl font-bold mb-2 cursor-pointer flex items-center text-primary-900">

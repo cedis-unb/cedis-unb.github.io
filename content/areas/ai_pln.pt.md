@@ -40,8 +40,8 @@ Professor e pesquisador na área de Inteligência Artificial (IA) e Processament
 {{< filterPeople caput="#### " caputKey="master_student" categories="master_student" advisors="" tags="ai,nlp,machine_learning" notags="inactive">}}
 {{< filterPeople caput="#### " caputKey="specialization" categories="specialization" advisors="" tags="ai,nlp,machine_learning" notags="inactive">}}
 {{< filterPeople caput="#### " caputKey="scientific_initiation" categories="scientific_initiation" advisors="" tags="ai,nlp,machine_learning" notags="inactive">}}
-{{< filterPeople caput="#### " caputKey="volunteer" categories="volunteer" advisors="" tags="ai,nlp,machine_learning" notags="inactive">}}
 {{< filterPeople caput="#### " caputKey="tcc" categories="tcc" advisors="" tags="ai,nlp,machine_learning" notags="inactive">}}
+{{< filterPeople caput="#### " caputKey="volunteer" categories="volunteer" advisors="" tags="ai,nlp,machine_learning" notags="inactive">}}
 
 <div id="previous-collaborators" x-data="{ showPrevious: false }">
     <h2 id="former-collaborators-title" @click="showPrevious = !showPrevious" class="text-xl font-bold mb-2 cursor-pointer flex items-center text-primary-900">
