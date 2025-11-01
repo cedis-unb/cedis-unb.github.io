@@ -1,1 +1,26 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Soft_skills on CEDIS</title><link>https://cedis.unb.br/pt/tags/soft_skills/</link><description>Recent content in Soft_skills on CEDIS</description><generator>Hugo</generator><language>pt</language><lastBuildDate>Tue, 02 Sep 2025 15:55:01 -0300</lastBuildDate><atom:link href="https://cedis.unb.br/pt/tags/soft_skills/index.xml" rel="self" type="application/rss+xml"/><item><title>Trabalho em equipe e Soft Skills</title><link>https://cedis.unb.br/pt/areas/soft_skills/</link><pubDate>Wed, 14 Feb 2024 01:37:18 -0300</pubDate><guid>https://cedis.unb.br/pt/areas/soft_skills/</guid><description>A área de Trabalho em Equipe e Soft Skills é um campo interdisciplinar na gestão de projetos e desenvolvimento de software, enfatizando a importância das habilidades interpessoais e comportamentais para o sucesso de equipes de TI.</description></item><item><title>George Marsicano Côrrea</title><link>https://cedis.unb.br/pt/people/george_marsicano/</link><pubDate>Wed, 14 Feb 2024 00:48:51 -0300</pubDate><guid>https://cedis.unb.br/pt/people/george_marsicano/</guid><description>Professor Associado da Universidade de Brasília (UnB), atua no curso de graduação em Engenharia de Software e no Programa de Pós-Graduação em Computação Aplicada.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Soft_skills on CEDIS</title>
+    <link>http://localhost:1313/pt/tags/soft_skills/</link>
+    <description>Recent content in Soft_skills on CEDIS</description>
+    <generator>Hugo</generator>
+    <language>pt</language>
+    <lastBuildDate>Tue, 02 Sep 2025 15:55:01 -0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/pt/tags/soft_skills/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Trabalho em equipe e Soft Skills</title>
+      <link>http://localhost:1313/pt/areas/soft_skills/</link>
+      <pubDate>Wed, 14 Feb 2024 01:37:18 -0300</pubDate>
+      <guid>http://localhost:1313/pt/areas/soft_skills/</guid>
+      <description>A área de Trabalho em Equipe e Soft Skills é um campo interdisciplinar na gestão de projetos e desenvolvimento de software, enfatizando a importância das habilidades interpessoais e comportamentais para o sucesso de equipes de TI.</description>
+    </item>
+    <item>
+      <title>George Marsicano Côrrea</title>
+      <link>http://localhost:1313/pt/people/george_marsicano/</link>
+      <pubDate>Wed, 14 Feb 2024 00:48:51 -0300</pubDate>
+      <guid>http://localhost:1313/pt/people/george_marsicano/</guid>
+      <description>Professor Associado da Universidade de Brasília (UnB), atua no curso de graduação em Engenharia de Software e no Programa de Pós-Graduação em Computação Aplicada.</description>
+    </item>
+  </channel>
+</rss>

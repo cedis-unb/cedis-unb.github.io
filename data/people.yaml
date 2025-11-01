@@ -1,4 +1,182 @@
 people:
+  - name: Danielle Soares Da Silva
+    categories:
+      - people
+      - volunteer
+    title:
+      pt: 'Desenvolvimento de soluções com base em IA'
+      en: 'Development of AI-based solutions'
+    program: curso_esw2
+    advisors:
+      - andre_lanna
+      - sergio_freitas
+    tags:
+      - active
+      - ai
+      - machine_learning
+  - name: Danilo de Melo Ribeiro
+    categories:
+      - people
+      - volunteer
+    title:
+      pt: 'Desenvolvimento de soluções com base em IA'
+      en: 'Development of AI-based solutions'
+    program: curso_esw2
+    advisors:
+      - andre_lanna
+      - sergio_freitas
+    tags:
+      - active
+      - ai
+      - machine_learning  
+  - name: Edson Pereira Roldao Filho
+    categories:
+      - people
+      - volunteer
+    title:
+      pt: 'Desenvolvimento de soluções com base em IA'
+      en: 'Development of AI-based solutions'
+    program: curso_esw2
+    advisors:
+      - andre_lanna
+      - sergio_freitas
+    tags:
+      - active
+      - ai
+      - machine_learning  
+  - name: Kaleb de Souza Macedo
+    categories:
+      - people
+      - volunteer
+    title:
+      pt: 'Desenvolvimento de soluções com base em IA'
+      en: 'Development of AI-based solutions'
+    program: curso_esw2
+    advisors:
+      - andre_lanna
+      - sergio_freitas
+    tags:
+      - active
+      - ai
+      - machine_learning  
+  - name: Matheus de Alcantara Da Silva Campos
+    categories:
+      - people
+      - volunteer
+    title:
+      pt: 'Desenvolvimento de soluções com base em IA'
+      en: 'Development of AI-based solutions'
+    program: curso_esw2
+    advisors:
+      - andre_lanna
+      - sergio_freitas
+    tags:
+      - active
+      - ai
+      - machine_learning  
+  - name: Yuri Souza de Andrade Castro Silva
+    categories:
+      - people
+      - volunteer
+    title:
+      pt: 'Desenvolvimento de soluções com base em IA'
+      en: 'Development of AI-based solutions'
+    program: curso_esw2
+    advisors:
+      - andre_lanna
+      - sergio_freitas
+    tags:
+      - active
+      - ai
+      - machine_learning  
+
+  - name: Pedro Henrique Martins Silva
+    categories:
+      - people
+      - volunteer
+    title:
+      pt: 'Aplicativo tradutor de línguas indígenas: Munduruku'
+      en: 'Indigenous Language Translator App: Munduruku'
+    program: curso_esw2
+    advisors:
+      - sergio_freitas
+      - celia_higawa
+    tags:
+      - active
+      - social_software
+
+    year: 2025
+  - name: Carlos Eduardo Mendes de Mesquita
+    categories:
+      - people
+      - volunteer
+    title:
+      pt: 'Projeto levantamento bibliográfico sobre Gamificação'
+      en: 'Project on Gamification Literature Review'
+    program: curso_esw2
+    advisors:
+      - sergio_freitas
+    tags:
+      - active
+      - gamification
+    year: 2025
+  - name: Diogo Oliveira Ferreira
+    categories:
+      - people
+      - volunteer
+    title:
+      pt: 'Projeto levantamento bibliográfico sobre Gamificação'
+      en: 'Project on Gamification Literature Review'
+    program: curso_esw2
+    advisors:
+      - sergio_freitas
+    tags:
+      - active
+      - gamification
+    year: 2025
+  - name: Gabriel Santos Pinto
+    categories:
+      - people
+      - volunteer
+    title:
+      pt: 'Projeto levantamento bibliográfico sobre Gamificação'
+      en: 'Project on Gamification Literature Review'
+    program: curso_esw2
+    advisors:
+      - sergio_freitas
+    tags:
+      - active
+      - gamification
+    year: 2025
+  - name: Maciel Ferreira Custódio Junior
+    categories:
+      - people
+      - volunteer
+    title:
+      pt: 'Projeto levantamento bibliográfico sobre Gamificação'
+      en: 'Project on Gamification Literature Review'
+    program: curso_esw2
+    advisors:
+      - sergio_freitas
+    tags:
+      - active
+      - gamification
+    year: 2025
+  - name: Pietro Calegari Visentin  
+    categories:
+      - people
+      - volunteer
+    title:
+      pt: 'Projeto levantamento bibliográfico sobre Gamificação'
+      en: 'Project on Gamification Literature Review'
+    program: curso_esw2
+    advisors:
+      - sergio_freitas
+    tags:
+      - active
+      - gamification
+    year: 2025
+
   - name: Ana Carolina Costa César
     categories:
       - people
@@ -604,6 +782,7 @@ people:
     program: curso_esw2
     advisors:
       - sergio_freitas
+      - celia_higawa
     tags:
       - active
       - nlp
@@ -693,7 +872,7 @@ people:
       - social_software
     year: 2025
 
-  - name: Geovanna Maciel Avelino da Costa
+  - name: Geovanna Maciel Avelino da CostaBeatriz Vieira Nascimento
     categories:
       - people
       - tcc

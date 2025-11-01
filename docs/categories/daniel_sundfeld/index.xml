@@ -1,1 +1,33 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Daniel_sundfeld on CEDIS</title><link>https://cedis.unb.br/categories/daniel_sundfeld/</link><description>Recent content in Daniel_sundfeld on CEDIS</description><generator>Hugo</generator><language>en</language><lastBuildDate>Thu, 04 Sep 2025 11:47:23 -0300</lastBuildDate><atom:link href="https://cedis.unb.br/categories/daniel_sundfeld/index.xml" rel="self" type="application/rss+xml"/><item><title>High-Performance Computing and Cloud Computing</title><link>https://cedis.unb.br/areas/hpc/</link><pubDate>Tue, 01 Apr 2025 01:37:18 -0300</pubDate><guid>https://cedis.unb.br/areas/hpc/</guid><description>High-Performance Computing and Cloud Computing is a dynamic and essential field in computer science, focused on the development and application of advanced computing systems capable of processing large amounts of data at extremely high speeds.</description></item><item><title>Laguna Project</title><link>https://cedis.unb.br/projects/laguna/</link><pubDate>Wed, 14 Feb 2024 02:59:29 -0300</pubDate><guid>https://cedis.unb.br/projects/laguna/</guid><description>This project aims to extend the massive processing of a data lake using a cloud architecture, utilizing Amazon Web Services (AWS) as the provider.</description></item><item><title>Daniel Sundfeld Lima</title><link>https://cedis.unb.br/people/daniel_lima/</link><pubDate>Wed, 14 Feb 2024 00:46:38 -0300</pubDate><guid>https://cedis.unb.br/people/daniel_lima/</guid><description>Associate Professor at the University of Brasília (UnB), working in the undergraduate Software Engineering program.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Daniel_sundfeld on CEDIS</title>
+    <link>http://localhost:1313/categories/daniel_sundfeld/</link>
+    <description>Recent content in Daniel_sundfeld on CEDIS</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 04 Sep 2025 11:47:23 -0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/daniel_sundfeld/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>High-Performance Computing and Cloud Computing</title>
+      <link>http://localhost:1313/areas/hpc/</link>
+      <pubDate>Tue, 01 Apr 2025 01:37:18 -0300</pubDate>
+      <guid>http://localhost:1313/areas/hpc/</guid>
+      <description>High-Performance Computing and Cloud Computing is a dynamic and essential field in computer science, focused on the development and application of advanced computing systems capable of processing large amounts of data at extremely high speeds.</description>
+    </item>
+    <item>
+      <title>Laguna Project</title>
+      <link>http://localhost:1313/projects/laguna/</link>
+      <pubDate>Wed, 14 Feb 2024 02:59:29 -0300</pubDate>
+      <guid>http://localhost:1313/projects/laguna/</guid>
+      <description>This project aims to extend the massive processing of a data lake using a cloud architecture, utilizing Amazon Web Services (AWS) as the provider.</description>
+    </item>
+    <item>
+      <title>Daniel Sundfeld Lima</title>
+      <link>http://localhost:1313/people/daniel_lima/</link>
+      <pubDate>Wed, 14 Feb 2024 00:46:38 -0300</pubDate>
+      <guid>http://localhost:1313/people/daniel_lima/</guid>
+      <description>Associate Professor at the University of Brasília (UnB), working in the undergraduate Software Engineering program.</description>
+    </item>
+  </channel>
+</rss>
