@@ -16,11 +16,11 @@ tags:
 - machine_learning
 nav_next: true
 ---
-<div id="top"></div>
+<div id="top"></div> 
 
 Artificial Intelligence (AI) is a branch of computer science that seeks to develop systems capable of mimicking and enhancing human abilities such as reasoning, learning, and perception. One of its most fascinating subareas is Natural Language Processing (NLP), dedicated to understanding and interpreting human language, allowing machines and programs to interact with people more efficiently and intuitively. NLP encompasses everything from syntactic and semantic analysis of words to the generation of coherent and meaningful text, enabling the creation of virtual assistants, automatic translation systems, and other applications that facilitate communication and information access in our daily lives.
 
-## {{< i18n "area_coordinator" >}}
+## {{< i18n "area_coordinators" >}}
 
 **Prof. Sergio Antônio Andrade de Freitas**
 <div style="margin-left: 20px;">
@@ -28,6 +28,11 @@ Professor and researcher in the field of Artificial Intelligence (AI) and Natura
 <br>
 {{< link-interno "/people/sergio_freitas" "area_more_about" >}}
 </div>
+
+**Prof. André Luiz Peron Martins Lanna**
+
+<div style="margin-left: 20px;"> Associate professor at the University of Brasília (UnB). He teaches in the undergraduate Software Engineering program (Gama campus) and in the Graduate Program in Applied Computing (PPCA). His research areas include software architecture, software reuse, artificial intelligence, and software product line engineering, with leadership roles at CEDIS. He has experience in projects such as DFCris (in partnership with IBICT, supported by FAP/DF) and the Software Factory Laboratory (LFS). <br> {{< link-interno "/people/andre_lanna" "area_more_about" >}} </div>
+
 
 ## {{< i18n "area_research_team" >}}
 {{< filterPeople caput="#### " caputKey="researcher" categories="researcher" advisors="" tags="ai,nlp,machine_learning" notags="inactive" nocats="sergio_freitas">}}
