@@ -18,6 +18,7 @@ authorimage: ../assets/images/global/author.webp
       {{< filterPeople caput="### Especialização" categories="specialization" tags="" notags="inactive" >}}
       {{< filterPeople caput="### Iniciação científica" categories="scientific_initiation" tags="" notags="inactive" >}}
       {{< filterPeople caput="### TCC" categories="tcc" tags="" notags="inactive" >}}
+      {{< filterPeople caput="### Voluntário CEDIS" categories="volunteer" tags="" notags="inactive" >}}
     </div>
   </div>
   <div id="formers-section"></div>
@@ -34,6 +35,7 @@ authorimage: ../assets/images/global/author.webp
     {{< publications caput="#### Especialização" year="" types="specialization" advisors="" notypes="" tags="" notags="" >}}
     {{< filterPeople caput="#### Iniciação Científica" categories="scientific_initiation" advisors="" tags="inactive" notags="">}}
     {{< publications caput="#### Trabalho de Conclusão de Curso (TCC)" year="" types="tcc" advisors="" notypes="" tags="" notags="" >}}
+    {{< publications caput="#### Voluntário CEDIS" year="" types="volunteer" advisors="" notypes="" tags="" notags="" >}}
     {{< backToTopBtn target="top" >}}
     </div>
   </div>

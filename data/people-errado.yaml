@@ -1,0 +1,746 @@
+people:
+  # === year: 2025 ===
+  # --- advisor: andre_lanna ---
+  - name: Danielle Soares Da Silva
+    categories:
+    - people
+    - volunteer
+    title:
+      pt: Desenvolvimento de soluções com base em IA
+      en: Development of AI-based solutions
+    program: curso_esw2
+    advisors:
+    - andre_lanna
+    - sergio_freitas
+    tags:
+    - active
+    - ai
+    - machine_learning
+    year: 2025
+
+  - name: Danilo de Melo Ribeiro
+    categories:
+    - people
+    - volunteer
+    title:
+      pt: Desenvolvimento de soluções com base em IA
+      en: Development of AI-based solutions
+    program: curso_esw2
+    advisors:
+    - andre_lanna
+    - sergio_freitas
+    tags:
+    - active
+    - ai
+    - machine_learning
+    year: 2025
+
+  # --- advisor: cristiane_ramos ---
+  - name: Denniel William Roriz Lima
+    categories:
+    - people
+    - tcc
+    title:
+      pt: "Explorando a gamificação no desenvolvimento ágil de software: um estudo sobre desafios, abordagens e diretrizes para implementação"
+      en: "Exploring gamification in agile software development: a study on challenges, approaches and implementation guidelines"
+    program: curso_esw2
+    advisors:
+    - cristiane_ramos
+    tags:
+    - inactive
+    - gamification
+    - software_quality
+    year: 2025
+
+  - name: Luana Souza Silva Torres
+    categories:
+    - people
+    - tcc
+    title:
+      pt: "Processo de desenvolvimento para projetos colaborativos: a experiência do Agromart"
+      en: "Development process for collaborative projects: the Agromart experience"
+    program: curso_esw2
+    advisors:
+    - cristiane_ramos
+    tags:
+    - inactive
+    - social_software
+    - teamwork
+    year: 2025
+
+  # --- advisor: daniel_sundfeld ---
+  - name: Mateus Cunha Maia
+    categories:
+    - people
+    - tcc
+    title:
+      pt: Acelerando a distância de edição para múltiplas sequências curtas
+      en: Accelerating edit distance for multiple short sequences
+    program: curso_esw2
+    advisors:
+    - daniel_sundfeld
+    tags:
+    - active
+    - hpc
+    year: 2025
+
+  - name: Marcus Vinicius P. Martins
+    categories:
+    - people
+    - tcc
+    title:
+      pt: "OpenBatch: serviço de processamento em lote para nuvem privada"
+      en: "OpenBatch: batch processing service for private cloud"
+    program: curso_esw2
+    advisors:
+    - daniel_sundfeld
+    tags:
+    - active
+    - hpc
+    year: 2025
+
+  - name: João Pedro Elias de Moura
+    categories:
+    - people
+    - tcc
+    title:
+      pt: "SmartPayment: sistema de automação de contratos inteligentes para avaliação e pagamento em desenvolvimento de software"
+      en: "SmartPayment: smart contract automation system for assessment and payment in software development"
+    program: curso_esw2
+    advisors:
+    - daniel_sundfeld
+    tags:
+    - inactive
+    - software_architecture
+    year: 2025
+
+  - name: Erick Giffoni Felicissimo
+    categories:
+    - people
+    - tcc
+    title:
+      pt: "Projeto e desenvolvimento do software TROPA: teatro de operações de airsoft"
+      en: "Design and development of the TROPA software: airsoft operations theater"
+    program: curso_esw2
+    advisors:
+    - daniel_sundfeld
+    tags:
+    - inactive
+    - software_architecture
+    year: 2025
+
+  # === year: 2024 ===
+  # --- advisor: andre_lanna ---
+  - name: Thiago Siqueira Gomes
+    categories:
+    - people
+    - tcc
+    title:
+      pt: "Agromart: integração e publicação do aplicativo para agricultura familiar"
+      en: "Agromart: integration and publication of the application for family farming"
+    program: curso_esw2
+    advisors:
+    - andre_lanna
+    tags:
+    - inactive
+    - software_architecture
+    - digital_transformation
+    year: 2024
+
+  - name: Christian Fleury Alencar Siqueira
+    categories:
+    - people
+    - tcc
+    title:
+      pt: "Agromart: integração e publicação do aplicativo para agricultura familiar"
+      en: "Agromart: integration and publication of the application for family farming"
+    program: curso_esw2
+    advisors:
+    - andre_lanna
+    tags:
+    - inactive
+    - software_architecture
+    - digital_transformation
+    year: 2024
+
+  # --- advisor: cristiane_ramos ---
+  - name: Daniel Barcelos Moreira
+    categories:
+    - people
+    - tcc
+    title:
+      pt: "Ferramentas de avaliação de acessibilidade de sites web utilizados por pessoas idosas: guia de apoio à escolha"
+      en: "Accessibility evaluation tools for websites used by older adults: a selection guide"
+    program: curso_esw2
+    advisors:
+    - cristiane_ramos
+    tags:
+    - inactive
+    - software_quality
+    - education
+    year: 2024
+
+  - name: Juliana Pereira Valle Gonçalves
+    categories:
+    - people
+    - tcc
+    title:
+      pt: "Ferramentas de avaliação de acessibilidade de sites web utilizados por pessoas idosas: guia de apoio à escolha"
+      en: "Accessibility evaluation tools for websites used by older adults: a selection guide"
+    program: curso_esw2
+    advisors:
+    - cristiane_ramos
+    tags:
+    - inactive
+    - software_quality
+    - education
+    year: 2024
+
+  - name: Eduardo Miranda Roriz
+    categories:
+    - people
+    - tcc
+    title:
+      pt: "Qualidade de dados em ambiente de big data: um mapeamento sistemático"
+      en: "Data quality in a big data environment: a systematic mapping"
+    program: curso_esw2
+    advisors:
+    - cristiane_ramos
+    tags:
+    - inactive
+    - software_quality
+    - machine_learning
+    year: 2024
+
+  - name: Ian Pereira de Souza Rocha
+    categories:
+    - people
+    - tcc
+    title:
+      pt: "Qualidade de dados em ambiente de big data: um mapeamento sistemático"
+      en: "Data quality in a big data environment: a systematic mapping"
+    program: curso_esw2
+    advisors:
+    - cristiane_ramos
+    tags:
+    - inactive
+    - software_quality
+    - machine_learning
+    year: 2024
+
+  # --- advisor: daniel_sundfeld ---
+  - name: Itallo Cavalcante Gravina
+    categories:
+    - people
+    - tcc
+    title:
+      pt: Portal de visualização e análise de dados de produção científica pela OpenAlex
+      en: Portal for visualization and analysis of scientific production data via OpenAlex
+    program: curso_esw2
+    advisors:
+    - daniel_sundfeld
+    tags:
+    - active
+    - learning_analytics
+    year: 2024
+
+  # === year: 2023 ===
+  # --- advisor: andre_lanna ---
+  - name: Abner Filipe Cunha Ribeiro
+    categories:
+    - people
+    - tcc
+    title:
+      pt: Associação para aplicações Agromart de uma CSA em cloud
+      en: Association for Agromart applications of a CSA in cloud
+    program: curso_esw2
+    advisors:
+    - andre_lanna
+    tags:
+    - inactive
+    - software_architecture
+    - digital_transformation
+    year: 2023
+
+  - name: Rafael Leão Teixeira de Magalhães
+    categories:
+    - people
+    - tcc
+    title:
+      pt: Associação para aplicações Agromart de uma CSA em cloud
+      en: Association for Agromart applications of a CSA in cloud
+    program: curso_esw2
+    advisors:
+    - andre_lanna
+    tags:
+    - inactive
+    - software_architecture
+    - digital_transformation
+    year: 2023
+
+  # --- advisor: cristiane_ramos ---
+  - name: Ricardo de Castro Loureiro
+    categories:
+    - people
+    - tcc
+    title:
+      pt: "Tecnologias para a inclusão: métricas para avaliação da acessibilidade de páginas web para pessoas com deficiência visual"
+      en: "Technologies for inclusion: metrics to evaluate web accessibility for people with visual impairment"
+    program: curso_esw2
+    advisors:
+    - cristiane_ramos
+    tags:
+    - inactive
+    - software_quality
+    year: 2023
+
+  - name: Giulia Lobo Barros
+    categories:
+    - people
+    - tcc
+    title:
+      pt: Melhoria de um processo de engenharia de requisitos de software
+      en: Improvement of a software requirements engineering process
+    program: curso_esw2
+    advisors:
+    - cristiane_ramos
+    tags:
+    - inactive
+    - software_requirements
+    year: 2023
+
+  # === year: 2022 ===
+  # --- advisor: andre_lanna ---
+  - name: André Aben-Athar de Freitas
+    categories:
+    - people
+    - tcc
+    title:
+      pt: "Uma evolução do projeto Agromart: implantação individualizada e automatizada de um ambiente de CSA"
+      en: "An evolution of the Agromart project: individualized and automated deployment of a CSA environment"
+    program: curso_esw2
+    advisors:
+    - andre_lanna
+    tags:
+    - inactive
+    - software_architecture
+    - digital_transformation
+    year: 2022
+
+  - name: Pedro Vitor de Salles Cella
+    categories:
+    - people
+    - tcc
+    title:
+      pt: "Uma evolução do projeto Agromart: implantação individualizada e automatizada de um ambiente de CSA"
+      en: "An evolution of the Agromart project: individualized and automated deployment of a CSA environment"
+    program: curso_esw2
+    advisors:
+    - andre_lanna
+    tags:
+    - inactive
+    - software_architecture
+    - digital_transformation
+    year: 2022
+
+  - name: Felipe Boccardi Silva Agustini
+    categories:
+    - people
+    - tcc
+    title:
+      pt: Módulo de integração de pagamento e manutenção do software Agromart
+      en: Payment integration module and maintenance for the Agromart software
+    program: curso_esw2
+    advisors:
+    - andre_lanna
+    tags:
+    - inactive
+    - software_architecture
+    - digital_transformation
+    year: 2022
+
+  - name: Giovanna Borges Bottino
+    categories:
+    - people
+    - tcc
+    title:
+      pt: Módulo de integração de pagamento e manutenção do software Agromart
+      en: Payment integration module and maintenance for the Agromart software
+    program: curso_esw2
+    advisors:
+    - andre_lanna
+    tags:
+    - inactive
+    - software_architecture
+    - digital_transformation
+    year: 2022
+
+  # --- advisor: cristiane_ramos ---
+  - name: Fabiana Luiza Ribas Vaconcelos Pfeilsticker Ribas
+    categories:
+    - people
+    - tcc
+    title:
+      pt: Análise de acessibilidade para idosos em recursos de e-Gov
+      en: Accessibility analysis for older adults in e-Gov resources
+    program: curso_esw2
+    advisors:
+    - cristiane_ramos
+    tags:
+    - inactive
+    - software_quality
+    - digital_transformation
+    year: 2022
+
+  - name: Letícia Karla S. R. de Araújo
+    categories:
+    - people
+    - tcc
+    title:
+      pt: Previsão de evasão no ensino superior
+      en: Predicting higher education dropout
+    program: curso_esw2
+    advisors:
+    - cristiane_ramos
+    - sergio_freitas
+    tags:
+    - inactive
+    - learning_analytics
+    - education
+    year: 2022
+
+  - name: Amanda Emily M. de Menezes
+    categories:
+    - people
+    - tcc
+    title:
+      pt: Previsão de evasão no ensino superior
+      en: Predicting higher education dropout
+    program: curso_esw2
+    advisors:
+    - cristiane_ramos
+    - sergio_freitas
+    tags:
+    - inactive
+    - learning_analytics
+    - education
+    year: 2022
+
+  - name: Helena Bretas Goulart
+    categories:
+    - people
+    - tcc
+    title:
+      pt: Identificação de requisitos não funcionais para jogos sérios com foco nas necessidades especiais das crianças com TDAH
+      en: Identification of non-functional requirements for serious games focused on special needs of children with ADHD
+    program: curso_esw2
+    advisors:
+    - cristiane_ramos
+    tags:
+    - inactive
+    - software_requirements
+    - gamification
+    year: 2022
+
+  - name: Gabriel Batista Albino Silva
+    categories:
+    - people
+    - tcc
+    title:
+      pt: Identificação de requisitos não funcionais para jogos sérios com foco nas necessidades especiais das crianças com TDAH
+      en: Identification of non-functional requirements for serious games focused on special needs of children with ADHD
+    program: curso_esw2
+    advisors:
+    - cristiane_ramos
+    tags:
+    - inactive
+    - software_requirements
+    - gamification
+    year: 2022
+
+  - name: Allan Jefrey Pereira Nobre
+    categories:
+    - people
+    - tcc
+    title:
+      pt: Utilização de learning analytics e educational data mining no apoio a decisões pedagógicas durante a aplicação da metodologia TBL
+      en: Use of learning analytics and educational data mining to support pedagogical decisions during the application of the TBL methodology
+    program: curso_esw2
+    advisors:
+    - cristiane_ramos
+    tags:
+    - inactive
+    - learning_analytics
+    - active_learning
+    year: 2021
+
+  - name: Ateldy Borges Brasil Filho
+    categories:
+    - people
+    - tcc
+    title:
+      pt: "Avaliação de gamificação: uma aplicação prática em uma empresa júnior"
+      en: "Gamification evaluation: a practical application in a junior enterprise"
+    program: curso_esw2
+    advisors:
+    - cristiane_ramos
+    tags:
+    - inactive
+    - gamification
+    year: 2021
+
+  # === year: 2021 ===
+  # --- advisor: andre_lanna ---
+  - name: Byron Kamal Barreto Correa
+    categories:
+    - people
+    - tcc
+    title:
+      pt: "Uma evolução do projeto Agromart: open source, meios de pagamento e gestão de co-agricultores"
+      en: "An evolution of the Agromart project: open source, payment methods and co-farmer management"
+    program: curso_esw2
+    advisors:
+    - andre_lanna
+    tags:
+    - inactive
+    - software_architecture
+    - digital_transformation
+    year: 2021
+
+  - name: Igor Guimaraes Veludo
+    categories:
+    - people
+    - tcc
+    title:
+      pt: "Uma evolução do projeto Agromart: open source, meios de pagamento e gestão de co-agricultores"
+      en: "An evolution of the Agromart project: open source, payment methods and co-farmer management"
+    program: curso_esw2
+    advisors:
+    - andre_lanna
+    tags:
+    - inactive
+    - software_architecture
+    - digital_transformation
+    year: 2021
+
+  # --- advisor: daniel_sundfeld ---
+  - name: Levi Alves de Freitas Júnior
+    categories:
+    - people
+    - tcc
+    title:
+      pt: Sistema de notificação de quedas através da computação em nuvem
+      en: Fall notification system through cloud computing
+    program: curso_esw2
+    advisors:
+    - daniel_sundfeld
+    tags:
+    - inactive
+    - software_architecture
+    year: 2021
+
+  # === year: 2020 ===
+  # --- advisor: cristiane_ramos ---
+  - name: Gustavo Vieira Braz Gonçalves
+    categories:
+    - people
+    - tcc
+    title:
+      pt: Desenvolvimento de uma solução de software para gestão de frotas, uma aplicação prática
+      en: Development of a software solution for fleet management, a practical application
+    program: curso_esw2
+    advisors:
+    - cristiane_ramos
+    tags:
+    - inactive
+    - software_architecture
+    year: 2020
+
+  - name: Luiz Guilherme S. da Silva
+    categories:
+    - people
+    - tcc
+    title:
+      pt: Desenvolvimento de uma solução de software para gestão de frotas, uma aplicação prática
+      en: Development of a software solution for fleet management, a practical application
+    program: curso_esw2
+    advisors:
+    - cristiane_ramos
+    tags:
+    - inactive
+    - software_architecture
+    year: 2020
+
+  - name: Lucas Gomes Pereira
+    categories:
+    - people
+    - tcc
+    title:
+      pt: "Aplicação de técnicas de gamificação na metodologia Team-Based Learning: aplicando o Octalysis na fase 1 do TBL"
+      en: "Applying gamification techniques to the Team-Based Learning methodology: applying Octalysis in TBL phase 1"
+    program: curso_esw2
+    advisors:
+    - cristiane_ramos
+    tags:
+    - inactive
+    - gamification
+    - active_learning
+    year: 2020
+
+  - name: Sannya Santana de Arvelos
+    categories:
+    - people
+    - tcc
+    title:
+      pt: Planejamento de melhoria de processo de software baseado em análise de issues
+      en: Planning software process improvement based on issues analysis
+    program: curso_esw2
+    advisors:
+    - cristiane_ramos
+    tags:
+    - inactive
+    - software_quality
+    year: 2020
+
+  # --- advisor: daniel_sundfeld ---
+  - name: Rodrigo Rocha Gomes
+    categories:
+    - people
+    - tcc
+    title:
+      pt: "CUDA-Sankoff-Web: uma ferramenta web para cálculo do alinhamento secundário estrutural"
+      en: "CUDA-Sankoff-Web: a web tool for structural secondary alignment calculation"
+    program: curso_esw2
+    advisors:
+    - daniel_sundfeld
+    tags:
+    - inactive
+    - hpc
+    year: 2020
+
+  - name: Eneias Paulo de Oliveira
+    categories:
+    - people
+    - tcc
+    title:
+      pt: "PA-Star-Web: uma arquitetura em nuvem para obtenção do alinhamento múltiplo ótimo de sequências biológicas"
+      en: "PA-Star-Web: a cloud architecture for obtaining optimal multiple alignment of biological sequences"
+    program: curso_esw2
+    advisors:
+    - daniel_sundfeld
+    tags:
+    - inactive
+    - hpc
+    year: 2020
+
+  - name: Leonardo Campos Muniz
+    categories:
+    - people
+    - tcc
+    title:
+      pt: Sistema de controle de presença de alunos
+      en: Student attendance control system
+    program: curso_esw2
+    advisors:
+    - daniel_sundfeld
+    tags:
+    - inactive
+    - education
+    year: 2020
+
+  # === year: 2019 ===
+  # --- advisor: andre_lanna ---
+  - name: Ronyell Henrique dos Santos
+    categories:
+    - people
+    - tcc
+    title:
+      pt: Utilização de algoritmos de otimização para extração de variabilidade em sistemas de software
+      en: Use of optimization algorithms for variability extraction in software systems
+    program: curso_esw2
+    advisors:
+    - andre_lanna
+    tags:
+    - inactive
+    - software_product_line
+    - software_quality
+    year: 2019
+
+  - name: Taylor Rodrigues Lopes
+    categories:
+    - people
+    - masters
+    title:
+      pt: Método de migração de sistemas monolíticos legados para a arquitetura de microsserviços
+      en: Method for migrating legacy monolithic systems to microservices architecture
+    program: posgraduacao
+    advisors:
+    - andre_lanna
+    tags:
+    - inactive
+    - software_architecture
+    year: 2019
+
+  # --- advisor: cristiane_ramos ---
+  - name: Victor Hugo Arnaud Deon
+    categories:
+    - people
+    - tcc
+    title:
+      pt: "PGTBL: plataforma de gerenciamento de Team-Based Learning"
+      en: "PGTBL: platform for managing Team-Based Learning"
+    program: curso_esw2
+    advisors:
+    - cristiane_ramos
+    tags:
+    - inactive
+    - gamification
+    - active_learning
+    year: 2019
+
+  # === iniciação científica (anos variados) ===
+  # --- advisor: cristiane_ramos ---
+  - name: Matheus Afonso de Souza
+    categories:
+    - people
+    - iniciacao_cientifica
+    title:
+      pt: Apoiar as atividades de teste de aplicativos e de pesquisa
+      en: Supporting testing activities for apps and research
+    program: iniciacao_cientifica
+    advisors:
+    - cristiane_ramos
+    tags:
+    - inactive
+    - verification_validation_testing
+    year: 2021
+
+  - name: Mariana de Souza Mendes
+    categories:
+    - people
+    - iniciacao_cientifica
+    title:
+      pt: Apoio às atividades de testes de aplicativos
+      en: Supporting activities for app testing
+    program: iniciacao_cientifica
+    advisors:
+    - cristiane_ramos
+    tags:
+    - inactive
+    - verification_validation_testing
+    year: 2020
+
+  - name: Natália Maria Rodrigues Queiroz
+    categories:
+    - people
+    - iniciacao_cientifica
+    title:
+      pt: Relatórios dos serviços digitalizados via teste manual
+      en: Reports of digitized services via manual testing
+    program: iniciacao_cientifica
+    advisors:
+    - cristiane_ramos
+    tags:
+    - inactive
+    - verification_validation_testing
+    year: 2018
