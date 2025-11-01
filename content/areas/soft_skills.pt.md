@@ -35,6 +35,7 @@ Sob a coordenação do Prof. George Marsicano, a linha de pesquisa e desenvolvim
 {{< filterPeople caput="#### " caputKey="specialization" categories="specialization" advisors="" tags="soft_skills" notags="inactive">}}
 {{< filterPeople caput="#### " caputKey="scientific_initiation" categories="scientific_initiation" advisors="" tags="soft_skills" notags="inactive">}}
 {{< filterPeople caput="#### " caputKey="tcc" categories="tcc" advisors="" tags="soft_skills" notags="inactive">}}
+{{< filterPeople caput="#### " caputKey="volunteer" categories="volunteer" advisors="" tags="soft_skills" notags="inactive">}}
 
 <div id="previous-collaborators" x-data="{ showPrevious: false }">
     <h2 id="former-collaborators-title" @click="showPrevious = !showPrevious" class="text-xl font-bold mb-2 cursor-pointer flex items-center text-primary-900">

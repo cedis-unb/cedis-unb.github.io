@@ -34,6 +34,7 @@ Professor titular da Universidade de Brasília (UnB) e pesquisador em Engenharia
 {{< filterPeople caput="#### " caputKey="specialization" categories="specialization" advisors="" tags="security" notags="inactive">}}
 {{< filterPeople caput="#### " caputKey="scientific_initiation" categories="scientific_initiation" advisors="" tags="security" notags="inactive">}}
 {{< filterPeople caput="#### " caputKey="tcc" categories="tcc" advisors="" tags="security" notags="inactive">}}
+{{< filterPeople caput="#### " caputKey="volunteer" categories="volunteer" advisors="" tags="security" notags="inactive">}}
 
 <div id="previous-collaborators" x-data="{ showPrevious: false }">
     <h2 id="former-collaborators-title" @click="showPrevious = !showPrevious" class="text-xl font-bold mb-2 cursor-pointer flex items-center text-primary-900">
