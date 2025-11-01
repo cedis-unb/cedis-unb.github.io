@@ -20,7 +20,7 @@ nav_next: true
 
 A Inteligência Artificial (IA) é um ramo da ciência da computação que busca desenvolver sistemas capazes de imitar e aprimorar habilidades humanas, como o raciocínio, aprendizado e percepção. Uma de suas subáreas mais fascinantes é o Processamento de Linguagem Natural (PLN), que se dedica a compreender e interpretar a linguagem humana, permitindo que máquinas e programas interajam com as pessoas de maneira mais eficiente e intuitiva. O PLN engloba desde a análise sintática e semântica das palavras até a geração de texto coerente e significativo, possibilitando a criação de assistentes virtuais, sistemas de tradução automática e outras aplicações que facilitam a comunicação e o acesso à informação em nosso cotidiano.
 
-## {{< i18n "area_coordinator" >}}
+## {{< i18n "area_coordinators" >}}
 
 **Prof. Sergio Antônio Andrade de Freitas**
 <div style="margin-left: 20px;">
@@ -28,6 +28,10 @@ Professor e pesquisador na área de Inteligência Artificial (IA) e Processament
 <br>
 {{< link-interno "/people/sergio_freitas" "area_more_about" >}}
 </div>
+
+**Prof. André Luiz Peron Martins Lanna**
+
+<div style="margin-left: 20px;"> Professor associado da Universidade de Brasília (UnB). Atua na graduação em Engenharia de Software (campus Gama) e no Programa de Pós-Graduação em Computação Aplicada (PPCA). Suas áreas de pesquisa incluem arquitetura de software, reuso de software, Inteligência Artificial e engenharia de linhas de produto de software, com coordenação de frentes no CEDIS. Experiência em projetos como o DFCris (parceria com o IBICT, apoio FAP/DF) e o Laboratório Fábrica de Software (LFS).  <br> {{< link-interno "/people/andre_lanna" "area_more_about" >}} </div>
 
 ## {{< i18n "area_research_team" >}}
 {{< filterPeople caput="#### " caputKey="researcher" categories="researcher" advisors="" tags="ai,nlp,machine_learning" notags="inactive" nocats="sergio_freitas">}}
