@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>And on CEDIS</title>
+    <link>http://localhost:1313/pt/categories/and/</link>
+    <description>Recent content in And on CEDIS</description>
+    <generator>Hugo</generator>
+    <language>pt</language>
+    <lastBuildDate>Sat, 01 Nov 2025 15:51:30 -0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/pt/categories/and/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Inteligência Artificial e Processamento de Linguagem Natural</title>
+      <link>http://localhost:1313/pt/areas/ai_pln/</link>
+      <pubDate>Sat, 02 Aug 2025 01:37:18 -0300</pubDate>
+      <guid>http://localhost:1313/pt/areas/ai_pln/</guid>
+      <description>A Inteligência Artificial (IA) é um ramo da ciência da computação que busca desenvolver sistemas capazes de imitar e aprimorar habilidades humanas, como o raciocínio, aprendizado e percepção. Uma de suas subáreas mais fascinantes é o Processamento de Linguagem Natural (PLN).</description>
+    </item>
+  </channel>
+</rss>
