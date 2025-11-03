@@ -1,4 +1,5 @@
 baseURL: 'https://cedis.unb.br/'
+#baseURL: 'https://cedis.cloud/'
 publishDir : "docs"  
 DefaultContentLanguage: en
 params:
