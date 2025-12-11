@@ -4,15 +4,15 @@
   "description": "Hugo + Alpine.js + TailwindCSS",
   "main": "index.js",
   "devDependencies": {
-    "@tailwindcss/typography": "^0.5.10",
-    "alpinejs": "^3.14.0",
-    "autoprefixer": "^10.4.19",
-    "browserslist": "^4.25.4",
-    "caniuse-lite": "^1.0.30001741",
+    "@tailwindcss/typography": "^0.5.19",
+    "alpinejs": "^3.15.2",
+    "autoprefixer": "^10.4.22",
+    "browserslist": "^4.28.1",
+    "caniuse-lite": "^1.0.30001760",
     "concurrently": "^8.2.2",
-    "postcss": "^8.4.38",
-    "postcss-cli": "^11.0.0",
-    "tailwindcss": "^3.4.3"
+    "postcss": "^8.5.6",
+    "postcss-cli": "^11.0.1",
+    "tailwindcss": "^3.4.19"
   },
   "scripts": {
     "update-i18n": "python3 scripts/update_i18n.py",
@@ -50,7 +50,7 @@
     "cross-spawn": "^7.0.6",
     "markdown-it-emoji": "^3.0.0",
     "npm": "^11.6.0",
-    "pagefind": ">=1.1.1"
+    "pagefind": "^1.4.0"
   },
   "overrides": {
     "cross-spawn": "^7.0.6"
