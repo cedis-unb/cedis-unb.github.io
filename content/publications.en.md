@@ -9,6 +9,10 @@ authorimage: ../assets/images/global/author.webp
 ---
 <div id="top"></div>
 
+## 2026
+{{< publications year="2026" types="" notypes="tcc" tags="" notags=""  >}}
+{{< backToTopBtn target="top" >}}
+
 ## 2025
 {{< publications year="2025" types="" notypes="tcc" tags="" notags=""  >}}
 {{< backToTopBtn target="top" >}}
