@@ -3,9 +3,9 @@ author: CEDIS
 title: "Evidentia Review"
 date: 2026-03-09T18:00:00-03:00
 language: pt
-weight: 14
+weight: 1
 featured_image: "../assets/images/featured/produto_EVIDENTIA.png"
-summary: O Evidentia Review é um sistema online do CEDIS para planejar, conduzir e relatar revisões sistemáticas da literatura com rastreabilidade e relatórios reproduzíveis.
+summary: Projeto do CEDIS voltado ao planejamento, condução e relato de revisões sistemáticas da literatura com rastreabilidade, colaboração e relatórios reproduzíveis.
 authorimage: ../assets/images/global/author.webp
 categories:
 - products
@@ -17,10 +17,30 @@ tags:
 - ai
 - machine_learning
 ---
-Brasília, março de 2026.
+## Descrição do Projeto
 
-O **Evidentia Review** é um sistema online desenvolvido pelo **Centro de Estudos, Desenvolvimento e Inovação em Software (CEDIS)** para apoiar pesquisadores na execução ponta a ponta de **revisões sistemáticas da literatura**. A plataforma, acessível em [https://evidentia.cedis.tec.br/](https://evidentia.cedis.tec.br/), foi projetada para apoiar equipes distribuídas em atividades de planejamento, condução e relato de revisões baseadas em evidências.
+O **Evidentia Review** é um projeto do **Centro de Estudos, Desenvolvimento e Inovação em Software (CEDIS)** materializado em uma plataforma web para apoiar a execução ponta a ponta de **revisões sistemáticas da literatura**. A iniciativa foi concebida para atender equipes distribuídas de pesquisa que precisam registrar protocolos, organizar critérios de seleção, acompanhar decisões e produzir relatórios consistentes ao longo de todo o processo de revisão.
 
-Entre seus principais recursos estão o apoio à definição de protocolos, perguntas de pesquisa, critérios de inclusão e exclusão e formulários de extração. O sistema também oferece suporte às etapas de triagem de títulos e resumos e de texto completo, acompanhamento de conflitos e consenso entre revisores, além de assistência por **Machine Learning** para priorização e apoio à decisão durante a revisão.
+A plataforma está disponível em [https://evidentia.cedis.tec.br/](https://evidentia.cedis.tec.br/) e reúne funcionalidades que fortalecem a pesquisa baseada em evidências, com ênfase em colaboração, rastreabilidade e reprodutibilidade.
 
-Um diferencial do **Evidentia Review** é seu foco em **transparência**, **rastreabilidade** e **reprodutibilidade**. A plataforma mantém trilhas de auditoria completas, disponibiliza modelos de síntese versionados e permite gerar relatórios e documentos reproduzíveis, incluindo saídas compatíveis com o **PRISMA 2020**. Dessa forma, o software amplia a capacidade do CEDIS de oferecer soluções digitais voltadas à pesquisa científica e à tomada de decisão baseada em evidências.
+## Objetivos do Projeto
+
+O projeto tem como principais objetivos:
+
+- apoiar o planejamento de revisões sistemáticas, desde a definição de perguntas de pesquisa até a modelagem de formulários de extração;
+- dar suporte ao trabalho colaborativo entre revisores durante as etapas de triagem e consenso;
+- ampliar a transparência e a rastreabilidade das decisões tomadas ao longo da revisão; e
+- facilitar a geração de relatórios e documentos reproduzíveis, incluindo saídas alinhadas ao **PRISMA 2020**.
+
+## Recursos e Funcionalidades
+
+Entre os recursos do **Evidentia Review** estão o cadastro de protocolos, o gerenciamento de critérios de inclusão e exclusão, a triagem de títulos e resumos e de texto completo, o acompanhamento de conflitos entre revisores, modelos de síntese versionados e mecanismos de auditoria da extração de dados. O sistema também incorpora apoio por **Machine Learning** para priorização e suporte à decisão, preservando trilhas de auditoria completas em todas as etapas.
+
+## Integrantes Associados no CEDIS
+
+- Prof. {{< link-interno "/people/sergio_freitas" "Sergio Freitas" >}}
+- Prof. {{< link-interno "/people/george_marsicano" "George Marsicano Corrêa" >}}
+
+## Acesso
+
+O sistema pode ser acessado em [Evidentia Review](https://evidentia.cedis.tec.br/).
