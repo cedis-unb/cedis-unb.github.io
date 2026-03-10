@@ -100,8 +100,8 @@ people:
   - people
   - tcc
   title:
-    pt: "Explorando a gamificação no desenvolvimento ágil de software: um estudo sobre desafios, abordagens e diretrizes para implementação"
-    en: "Exploring gamification in agile software development: a study on challenges, approaches and implementation guidelines"
+    pt: 'Explorando a gamificação no desenvolvimento ágil de software : Um estudo sobre desafios, abordagens e diretrizes para implementação'
+    en: 'Exploring gamification in agile software development: a study on challenges, approaches, and guidelines for implementation'
   program: curso_esw2
   advisors:
   - cristiane_ramos
@@ -130,8 +130,8 @@ people:
   - people
   - tcc
   title:
-    pt: "Projeto e desenvolvimento do software TROPA: teatro de operações de airsoft"
-    en: "Design and development of the TROPA software: airsoft operations theater"
+    pt: 'Projeto e Desenvolvimento do software TROPA : Teatro de Operações de Airsof'
+    en: 'Design and development of the TROPA software: airsoft operations theater'
   program: curso_esw2
   advisors:
   - daniel_sundfeld
@@ -144,8 +144,8 @@ people:
   - people
   - tcc
   title:
-    pt: "SmartPayment: sistema de automação de contratos inteligentes para avaliação e pagamento em desenvolvimento de software"
-    en: "SmartPayment: smart contract automation system for assessment and payment in software development"
+    pt: 'SmartPayment : Sistema de Automação de Contratos Inteligentes para Avaliação e Pagamento em Desenvolvimento de Software'
+    en: 'SmartPayment: smart contract automation system for assessment and payment in software development'
   program: curso_esw2
   advisors:
   - daniel_sundfeld
@@ -461,49 +461,45 @@ people:
   - people
   - tcc
   title:
-    pt: "Ética no uso de IA por estudantes de ESW (provisório)"
-    en: "Ethics in the use of AI by ESW students (provisional)"
+    pt: 'Desafios Éticos Associados aos Vieses em Algoritmos de Inteligência Artificial : Um Mapeamento Sistemático da Literatura'
+    en: 'Ethical challenges associated with biases in artificial intelligence algorithms: a systematic mapping of the literature'
   program: curso_esw2
   advisors:
-  - cristiane_ramos
-  - ricardo_ajax
+  - andre_lanna
   tags:
+  - inactive
   - ai
-  - education
-  - active
-  year: 2024
+  - machine_learning
+  year: 2025
 - name: Ana Carolina Rodrigues Leite
   categories:
   - people
   - tcc
   title:
-    pt: "Ética no uso de IA por estudantes de ESW (provisório)"
-    en: "Ethics in the use of AI by ESW students (provisional)"
+    pt: 'Desafios Éticos Associados aos Vieses em Algoritmos de Inteligência Artificial : Um Mapeamento Sistemático da Literatura'
+    en: 'Ethical challenges associated with biases in artificial intelligence algorithms: a systematic mapping of the literature'
   program: curso_esw2
   advisors:
-  - cristiane_ramos
-  - ricardo_ajax
+  - andre_lanna
   tags:
+  - inactive
   - ai
-  - education
-  - active
-  year: 2024
+  - machine_learning
+  year: 2025
 - name: Daniel Barcelos Moreira
   categories:
   - people
   - tcc
   title:
-    pt: "Ferramentas de avaliação de acessibilidade de sites web utilizados por pessoas idosas: guia de apoio à escolha"
-    en: "Accessibility evaluation tools for websites used by older adults: a selection guide"
+    pt: 'Ferramentas de avaliação de acessibilidade de sites web utilizados por pessoas idosas : diretrizes de apoio à escolha'
+    en: 'Accessibility evaluation tools for websites used by older adults: guidelines to support selection'
   program: curso_esw2
   advisors:
   - cristiane_ramos
-  - ricardo_ajax
   tags:
   - inactive
   - software_quality
   - education
-  - active
   year: 2024
 - name: Eduardo Miranda Roriz
   categories:
@@ -556,32 +552,30 @@ people:
   - people
   - tcc
   title:
-    pt: "Ferramentas de avaliação de acessibilidade de sites web utilizados por pessoas idosas: guia de apoio à escolha"
-    en: "Accessibility evaluation tools for websites used by older adults: a selection guide"
+    pt: 'Ferramentas de avaliação de acessibilidade de sites web utilizados por pessoas idosas : diretrizes de apoio à escolha'
+    en: 'Accessibility evaluation tools for websites used by older adults: guidelines to support selection'
   program: curso_esw2
   advisors:
   - cristiane_ramos
-  - ricardo_ajax
   tags:
   - inactive
   - software_quality
   - education
-  - active
   year: 2024
 - name: Nathalia Lorena Cardoso Dias
   categories:
   - people
   - tcc
   title:
-    pt: "Por que processos de melhoria de software já definidos não estão sendo utilizados pelas empresas? Uma revisão da literatura"
-    en: "Why are already defined software improvement processes not being used by companies? A literature review"
+    pt: '"Por que processos de melhoria de software já definidos não estão sendo utilizados pelas empresas? : uma revisão da literatura'
+    en: Why are already defined software improvement processes not being used by companies? A literature review
   program: curso_esw2
   advisors:
-  - cristiane_ramos
+  - fabiana_mendes
   tags:
-  - software_quality
   - inactive
-  year: 2024
+  - software_quality
+  year: 2023
 - name: Itallo Cavalcante Gravina
   categories:
   - people
@@ -631,12 +625,13 @@ people:
   - people
   - tcc
   title:
-    pt: "Plataforma de Tradução de Libras"
-    en: "Brazilian Sign Language Translation Platform"
+    pt: Modelo de IA de tradução de Libras
+    en: AI model for Brazilian Sign Language translation
   program: curso_esw2
   advisors:
   - george_marsicano
   tags:
+  - inactive
   - education
   - machine_learning
   year: 2024
@@ -645,12 +640,13 @@ people:
   - people
   - tcc
   title:
-    pt: "Plataforma de Tradução de Libras"
-    en: "Brazilian Sign Language Translation Platform"
+    pt: Modelo de IA de tradução de Libras
+    en: AI model for Brazilian Sign Language translation
   program: curso_esw2
   advisors:
   - george_marsicano
   tags:
+  - inactive
   - education
   - machine_learning
   year: 2024
@@ -659,15 +655,16 @@ people:
   - people
   - tcc
   title:
-    pt: "Investigação da utilização de IA no processo de engenharia de requisitos: um estudo de caso"
-    en: "Investigation of the Use of AI in the Requirements Engineering Process: A Case Study"
+    pt: 'Investigação da utilização do ChatGPT-4o no processo de elicitação, descoberta e declaração de requisitos : um estudo de caso'
+    en: 'Investigation of the use of ChatGPT-4o in the process of eliciting, discovering, and specifying requirements: a case study'
   program: curso_esw2
   advisors:
   - george_marsicano
   tags:
+  - inactive
   - software_requirements
   - ai
-  year: 2024
+  year: 2025
 - name: Iago Ribeiro
   categories:
   - people
@@ -738,50 +735,50 @@ people:
   - software_requirements
   - ai
   year: 2024
-- name: Artur de Souza Vieira
+- name: Artur de Sousa Vieira
   categories:
   - people
   - tcc
   title:
-    pt: "Aplicativo para apoio à organização de conteúdo de disciplinas (provisório)"
-    en: "Application to support the organization of course content (provisional)"
+    pt: 'OMA: organizador multimídia acadêmico para auxiliar no aprendizado de estudantes de graduação de engenharias da FCTE'
+    en: 'OMA: academic multimedia organizer to support the learning of undergraduate engineering students at FCTE'
   program: curso_esw2
   advisors:
   - ricardo_ajax
   tags:
+  - inactive
   - education
   - software_architecture
-  - active
-  year: 2024
-- name: Luiza Esteves dos Santos
+  year: 2025
+- name: Luíza Esteves dos Santos
   categories:
   - people
   - tcc
   title:
-    pt: "Aplicativo para apoio à organização de conteúdo de disciplinas (provisório)"
-    en: "Application to support the organization of course content (provisional)"
+    pt: 'OMA: organizador multimídia acadêmico para auxiliar no aprendizado de estudantes de graduação de engenharias da FCTE'
+    en: 'OMA: academic multimedia organizer to support the learning of undergraduate engineering students at FCTE'
   program: curso_esw2
   advisors:
   - ricardo_ajax
   tags:
+  - inactive
   - education
   - software_architecture
-  - active
-  year: 2024
-- name: Alvaro Henrique de Sousa Gouvea
+  year: 2025
+- name: Álvaro Henrique de Sousa Gouvea
   categories:
   - people
   - tcc
   title:
-    pt: "Uso de LLMs em diálogos sobre direito do trabalho"
-    en: "Use of LLMs in labor law dialogues"
+    pt: Utilização de Large Language Models no desenvolvimento de um chatbot multimodal para consultoria jurídico-trabalhista
+    en: Use of Large Language Models in the development of a multimodal chatbot for labor-law consulting
   program: curso_esw2
   advisors:
   - sergio_freitas
   tags:
   - inactive
-  - machine_learning
   - ai
+  - machine_learning
   year: 2024
 - name: Bruno Marquete da Silva
   categories:
@@ -828,20 +825,20 @@ people:
   - gamification
   - machine_learning
   year: 2024
-- name: Luis Guilherme Gaboardi Lins
+- name: Luís Guilherme Gaboardi Lins
   categories:
   - people
   - tcc
   title:
-    pt: "Uso de LLMs em diálogos sobre direito do trabalho"
-    en: "Use of LLMs in labor law dialogues"
+    pt: Utilização de Large Language Models no desenvolvimento de um chatbot multimodal para consultoria jurídico-trabalhista
+    en: Use of Large Language Models in the development of a multimodal chatbot for labor-law consulting
   program: curso_esw2
   advisors:
   - sergio_freitas
   tags:
   - inactive
-  - machine_learning
   - ai
+  - machine_learning
   year: 2024
 - name: Abner Filipe Cunha Ribeiro
   categories:
@@ -966,8 +963,8 @@ people:
   - people
   - tcc
   title:
-    pt: "Uma evolução do projeto Agromart: implantação individualizada e automatizada de um ambiente de CSA"
-    en: "An evolution of the Agromart project: individualized and automated deployment of a CSA environment"
+    pt: 'Uma evolução do projeto Agromart: implantação individualizada e automatizada de um ambiente de CSA'
+    en: 'An evolution of the Agromart project: individualized and automated deployment of a CSA environment'
   program: curso_esw2
   advisors:
   - andre_lanna
@@ -975,14 +972,14 @@ people:
   - inactive
   - software_architecture
   - digital_transformation
-  year: 2022
+  year: 2023
 - name: Felipe Boccardi Silva Agustini
   categories:
   - people
   - tcc
   title:
-    pt: "Módulo de integração de pagamento e manutenção do software Agromart"
-    en: "Payment integration module and maintenance for the Agromart software"
+    pt: Módulo de integração de pagamento e manutenção do software Agromart
+    en: Payment integration module and maintenance for the Agromart software
   program: curso_esw2
   advisors:
   - andre_lanna
@@ -990,14 +987,14 @@ people:
   - inactive
   - software_architecture
   - digital_transformation
-  year: 2022
+  year: 2023
 - name: Giovanna Borges Bottino
   categories:
   - people
   - tcc
   title:
-    pt: "Módulo de integração de pagamento e manutenção do software Agromart"
-    en: "Payment integration module and maintenance for the Agromart software"
+    pt: Módulo de integração de pagamento e manutenção do software Agromart
+    en: Payment integration module and maintenance for the Agromart software
   program: curso_esw2
   advisors:
   - andre_lanna
@@ -1005,14 +1002,14 @@ people:
   - inactive
   - software_architecture
   - digital_transformation
-  year: 2022
+  year: 2023
 - name: Pedro Vitor de Salles Cella
   categories:
   - people
   - tcc
   title:
-    pt: "Uma evolução do projeto Agromart: implantação individualizada e automatizada de um ambiente de CSA"
-    en: "An evolution of the Agromart project: individualized and automated deployment of a CSA environment"
+    pt: 'Uma evolução do projeto Agromart: implantação individualizada e automatizada de um ambiente de CSA'
+    en: 'An evolution of the Agromart project: individualized and automated deployment of a CSA environment'
   program: curso_esw2
   advisors:
   - andre_lanna
@@ -1020,33 +1017,33 @@ people:
   - inactive
   - software_architecture
   - digital_transformation
-  year: 2022
-- name: Amanda Emily M. de Menezes
+  year: 2023
+- name: Amanda Emilly Muniz de Menezes
   categories:
   - people
   - tcc
   title:
-    pt: "Previsão de evasão no ensino superior"
-    en: "Predicting higher education dropout"
+    pt: Identificação de fatores que afetam a evasão no ensino superior
+    en: Identification of factors affecting dropout in higher education
   program: curso_esw2
   advisors:
   - cristiane_ramos
   - sergio_freitas
   tags:
   - inactive
-  - learning_analytics
   - education
+  - learning_analytics
   year: 2022
-- name: Fabiana Luiza Ribas Vaconcelos Pfeilsticker Ribas
+- name: Fabiana Luiza Vasconcelos Pfeilsticker Ribas
   categories:
   - people
   - tcc
   title:
-    pt: "Análise de acessibilidade para idosos em recursos de e-Gov"
-    en: "Accessibility analysis for older adults in e-Gov resources"
+    pt: Análise da acessibilidade para pessoas idosas em serviços e-Gov - um estudo de caso
+    en: Accessibility analysis for older adults in e-Gov services - a case study
   program: curso_esw2
   advisors:
-  - cristiane_ramos
+  - ricardo_ajax
   tags:
   - inactive
   - software_quality
@@ -1057,46 +1054,46 @@ people:
   - people
   - tcc
   title:
-    pt: "Identificação de requisitos não funcionais para jogos sérios com foco nas necessidades especiais das crianças com TDAH"
-    en: "Identification of non-functional requirements for serious games focused on special needs of children with ADHD"
+    pt: Requisitos não-funcionais no desenvolvimento de jogos sérios para pessoas com TDAH
+    en: Non-functional requirements in the development of serious games for people with ADHD
   program: curso_esw2
   advisors:
   - cristiane_ramos
   tags:
   - inactive
   - software_requirements
-  - gamification
+  - education
   year: 2022
-- name: Helena Bretas Goulart
+- name: Helena Bretas Gourlat
   categories:
   - people
   - tcc
   title:
-    pt: "Identificação de requisitos não funcionais para jogos sérios com foco nas necessidades especiais das crianças com TDAH"
-    en: "Identification of non-functional requirements for serious games focused on special needs of children with ADHD"
+    pt: Requisitos não-funcionais no desenvolvimento de jogos sérios para pessoas com TDAH
+    en: Non-functional requirements in the development of serious games for people with ADHD
   program: curso_esw2
   advisors:
   - cristiane_ramos
   tags:
   - inactive
   - software_requirements
-  - gamification
+  - education
   year: 2022
-- name: Letícia Karla S. R. de Araújo
+- name: Letícia Karla Soares Rodrigues de Araújo
   categories:
   - people
   - tcc
   title:
-    pt: "Previsão de evasão no ensino superior"
-    en: "Predicting higher education dropout"
+    pt: Identificação de fatores que afetam a evasão no ensino superior
+    en: Identification of factors affecting dropout in higher education
   program: curso_esw2
   advisors:
   - cristiane_ramos
   - sergio_freitas
   tags:
   - inactive
-  - learning_analytics
   - education
+  - learning_analytics
   year: 2022
 - name: Ana Carolina Costa César
   categories:
@@ -1131,8 +1128,8 @@ people:
   - people
   - tcc
   title:
-    pt: "Uma evolução do projeto Agromart: open source, meios de pagamento e gestão de co-agricultores"
-    en: "An evolution of the Agromart project: open source, payment methods and co-farmer management"
+    pt: 'Uma evolução do projeto Agromart: open source, meios de pagamento e gestão de co-agricultores'
+    en: 'An evolution of the Agromart project: open source, payment methods and co-farmer management'
   program: curso_esw2
   advisors:
   - andre_lanna
@@ -1140,14 +1137,14 @@ people:
   - inactive
   - software_architecture
   - digital_transformation
-  year: 2021
+  year: 2022
 - name: Igor Guimaraes Veludo
   categories:
   - people
   - tcc
   title:
-    pt: "Uma evolução do projeto Agromart: open source, meios de pagamento e gestão de co-agricultores"
-    en: "An evolution of the Agromart project: open source, payment methods and co-farmer management"
+    pt: 'Uma evolução do projeto Agromart: open source, meios de pagamento e gestão de co-agricultores'
+    en: 'An evolution of the Agromart project: open source, payment methods and co-farmer management'
   program: curso_esw2
   advisors:
   - andre_lanna
@@ -1155,7 +1152,7 @@ people:
   - inactive
   - software_architecture
   - digital_transformation
-  year: 2021
+  year: 2022
 - name: Lucas Kuniyoshi
   categories:
   - people
@@ -1371,16 +1368,16 @@ people:
   - people
   - tcc
   title:
-    pt: "Utilização de algoritmos de otimização para extração de variabilidade em sistemas de software"
-    en: "Use of optimization algorithms for variability extraction in software systems"
+    pt: Utilização de operações de refatoração para aprimoramento de variabilidade em sistemas de software
+    en: Using refactoring operations to improve variability in software systems
   program: curso_esw2
   advisors:
   - andre_lanna
   tags:
   - inactive
-  - software_product_line
-  - software_quality
-  year: 2019
+  - software_requirements
+  - verification_validation_testing
+  year: 2020
 - name: Taylor Rodrigues Lopes
   categories:
   - people
@@ -1594,3 +1591,1098 @@ people:
   - inactive
   - security
   year: 2000
+- name: Iago Rodrigues Gonçalves
+  categories:
+  - people
+  - tcc
+  title:
+    pt: Apoio a promoção da visibilidade da dívida técnica
+    en: Support for promoting the visibility of technical debt
+  program: curso_esw2
+  advisors:
+  - andre_lanna
+  tags:
+  - inactive
+  - software_quality
+  - verification_validation_testing
+  year: 2018
+- name: Laércio Silva de Sousa Júnior
+  categories:
+  - people
+  - tcc
+  title:
+    pt: Determinando a taxa de autoria dentro de um projeto usando Git
+    en: Determining the authorship rate within a project using Git
+  program: curso_esw2
+  advisors:
+  - andre_lanna
+  tags:
+  - inactive
+  - software_architecture
+  - digital_transformation
+  year: 2018
+- name: Jonathan Nogueira Rufino Batista Paiva
+  categories:
+  - people
+  - tcc
+  title:
+    pt: NotifiCar - aplicativo para monitoramento da situação dos automóveis de uma cidade
+    en: NotifiCar - app for monitoring the status of cars in a city
+  program: curso_esw2
+  advisors:
+  - andre_lanna
+  tags:
+  - inactive
+  - software_architecture
+  - digital_transformation
+  year: 2018
+- name: Luis Henrique Nunes Guimarães
+  categories:
+  - people
+  - tcc
+  title:
+    pt: NotifiCar - aplicativo para monitoramento da situação dos automóveis de uma cidade
+    en: NotifiCar - app for monitoring the status of cars in a city
+  program: curso_esw2
+  advisors:
+  - andre_lanna
+  tags:
+  - inactive
+  - software_architecture
+  - digital_transformation
+  year: 2018
+- name: Lucas Pereira de Andrade Macêdo
+  categories:
+  - people
+  - tcc
+  title:
+    pt: Inovações tecnológicas na agricultura familiar - Agromart
+    en: Technological innovations in family farming - Agromart
+  program: curso_esw2
+  advisors:
+  - andre_lanna
+  tags:
+  - inactive
+  - software_architecture
+  - digital_transformation
+  year: 2021
+- name: Lucas Siqueira Rodrigues
+  categories:
+  - people
+  - tcc
+  title:
+    pt: Inovações tecnológicas na agricultura familiar - Agromart
+    en: Technological innovations in family farming - Agromart
+  program: curso_esw2
+  advisors:
+  - andre_lanna
+  tags:
+  - inactive
+  - software_architecture
+  - digital_transformation
+  year: 2021
+- name: Guilherme Rogelin Vial
+  categories:
+  - people
+  - tcc
+  title:
+    pt: Modelagem de fluxos de uma aplicação voltada para a educação jurídica
+    en: Modeling flows for an application aimed at legal education
+  program: curso_esw2
+  advisors:
+  - andre_lanna
+  tags:
+  - inactive
+  - software_architecture
+  - digital_transformation
+  year: 2024
+- name: Lucas Braun Vieira Xavier
+  categories:
+  - people
+  - tcc
+  title:
+    pt: Modelagem de fluxos de uma aplicação voltada para a educação jurídica
+    en: Modeling flows for an application aimed at legal education
+  program: curso_esw2
+  advisors:
+  - andre_lanna
+  tags:
+  - inactive
+  - software_architecture
+  - digital_transformation
+  year: 2024
+- name: João Pedro Alves Machado
+  categories:
+  - people
+  - tcc
+  title:
+    pt: Renderização de Fluxos de uma Aplicação de Educação Jurídica em Dispositivos Mobile
+    en: Rendering flows of a legal education application on mobile devices
+  program: curso_esw2
+  advisors:
+  - andre_lanna
+  tags:
+  - inactive
+  - software_architecture
+  - digital_transformation
+  year: 2024
+- name: Júlio César Martins França
+  categories:
+  - people
+  - tcc
+  title:
+    pt: Renderização de Fluxos de uma Aplicação de Educação Jurídica em Dispositivos Mobile
+    en: Rendering flows of a legal education application on mobile devices
+  program: curso_esw2
+  advisors:
+  - andre_lanna
+  tags:
+  - inactive
+  - software_architecture
+  - digital_transformation
+  year: 2024
+- name: Kalebe Lopes da Cunha
+  categories:
+  - people
+  - tcc
+  title:
+    pt: 'Da análise à implementação: migração da infraestrutura de IaaS para FaaS com foco na redução de custos no AgroMart'
+    en: 'From analysis to implementation: migrating infrastructure from IaaS to FaaS with a focus on reducing costs in AgroMart'
+  program: curso_esw2
+  advisors:
+  - andre_lanna
+  tags:
+  - inactive
+  - software_architecture
+  - digital_transformation
+  year: 2025
+- name: Murilo Schiler Lopes Santana
+  categories:
+  - people
+  - tcc
+  title:
+    pt: 'Da análise à implementação: migração da infraestrutura de IaaS para FaaS com foco na redução de custos no AgroMart'
+    en: 'From analysis to implementation: migrating infrastructure from IaaS to FaaS with a focus on reducing costs in AgroMart'
+  program: curso_esw2
+  advisors:
+  - andre_lanna
+  tags:
+  - inactive
+  - software_architecture
+  - digital_transformation
+  year: 2025
+- name: Leonardo Milomes Vitoriano
+  categories:
+  - people
+  - tcc
+  title:
+    pt: 'Three Filters : analisador de informações científicas'
+    en: 'Three Filters: analyzer of scientific information'
+  program: curso_esw2
+  advisors:
+  - andre_lanna
+  tags:
+  - inactive
+  - ai
+  - machine_learning
+  year: 2025
+- name: Mateus de Almeida Dias
+  categories:
+  - people
+  - tcc
+  title:
+    pt: 'Three Filters : analisador de informações científicas'
+    en: 'Three Filters: analyzer of scientific information'
+  program: curso_esw2
+  advisors:
+  - andre_lanna
+  tags:
+  - inactive
+  - ai
+  - machine_learning
+  year: 2025
+- name: Filipe Toyoshima Silva
+  categories:
+  - people
+  - tcc
+  title:
+    pt: Estado da prática da manutenção de software no contexto de startups de software em early stage
+    en: State of practice of software maintenance in the context of early-stage software startups
+  program: curso_esw2
+  advisors:
+  - cristiane_ramos
+  tags:
+  - inactive
+  - software_architecture
+  - digital_transformation
+  year: 2021
+- name: Augusto Moreno Vilarins Cardoso da Silva
+  categories:
+  - people
+  - tcc
+  title:
+    pt: Extração de informações sobre usabilidade a partir de comentários dos aplicativos feitos na Play Store
+    en: Usability information extraction from app comments on the Play Store
+  program: curso_esw2
+  advisors:
+  - cristiane_ramos
+  tags:
+  - inactive
+  - nlp
+  - software_quality
+  year: 2021
+- name: Ícaro Pereira de Oliveira
+  categories:
+  - people
+  - tcc
+  title:
+    pt: Extração de informações sobre usabilidade a partir de comentários dos aplicativos feitos na Play Store
+    en: Usability information extraction from app comments on the Play Store
+  program: curso_esw2
+  advisors:
+  - cristiane_ramos
+  tags:
+  - inactive
+  - nlp
+  - software_quality
+  year: 2021
+- name: Antonio Bezerra da Silva Júnior
+  categories:
+  - people
+  - tcc
+  title:
+    pt: 'Apoio ferramental ao processo de garantia da qualidade : QUASAR - Qualidade de Software e Avaliação de Resultados'
+    en: 'Tool support for the quality assurance process: QUASAR - Software Quality and Results Assessment'
+  program: curso_esw2
+  advisors:
+  - cristiane_ramos
+  tags:
+  - inactive
+  - software_quality
+  - verification_validation_testing
+  year: 2013
+- name: Delziron Braz de Lima
+  categories:
+  - people
+  - tcc
+  title:
+    pt: Aplicativo de suporte a promoção a saúde mental e bem-estar dentro do ambiente universitário
+    en: Support application for promoting mental health and well-being within the university environment
+  program: curso_esw2
+  advisors:
+  - george_marsicano
+  tags:
+  - inactive
+  - education
+  - social_software
+  year: 2025
+- name: Fellipe Pereira da Costa Silva
+  categories:
+  - people
+  - tcc
+  title:
+    pt: Aplicativo de suporte a promoção a saúde mental e bem-estar dentro do ambiente universitário
+    en: Support application for promoting mental health and well-being within the university environment
+  program: curso_esw2
+  advisors:
+  - george_marsicano
+  tags:
+  - inactive
+  - education
+  - social_software
+  year: 2025
+- name: João Victor de Oliveira Matos
+  categories:
+  - people
+  - tcc
+  title:
+    pt: 'Investigação da utilização do ChatGPT-4o no processo de elicitação, descoberta e declaração de requisitos : um estudo de caso'
+    en: 'Investigation of the use of ChatGPT-4o in the process of eliciting, discovering, and specifying requirements: a case study'
+  program: curso_esw2
+  advisors:
+  - george_marsicano
+  tags:
+  - inactive
+  - software_requirements
+  - ai
+  year: 2025
+- name: Lucas Ganda Carvalho
+  categories:
+  - people
+  - tcc
+  title:
+    pt: Predição de custo de execução de código em funções Lambda
+    en: Prediction of code execution cost in Lambda functions
+  program: curso_esw2
+  advisors:
+  - daniel_sundfeld
+  tags:
+  - inactive
+  - hpc
+  year: 2023
+- name: Wictor Bastos Girardi
+  categories:
+  - people
+  - tcc
+  title:
+    pt: Predição de custo de execução de código em funções Lambda
+    en: Prediction of code execution cost in Lambda functions
+  program: curso_esw2
+  advisors:
+  - daniel_sundfeld
+  tags:
+  - inactive
+  - hpc
+  year: 2023
+- name: Rafael Contessotto Bragança Pinheiro
+  categories:
+  - people
+  - tcc
+  title:
+    pt: Uma abordagem para apoiar a inicialização de programas de melhoria de processo de software a partir da priorização das expectativas de benefícios
+    en: An approach to support the initiation of software process improvement programs from the prioritization of expected benefits
+  program: curso_esw2
+  advisors:
+  - ricardo_ajax
+  tags:
+  - inactive
+  - software_quality
+  year: 2020
+- name: Iolane Caroline Alves de Andrade
+  categories:
+  - people
+  - tcc
+  title:
+    pt: O uso de testes exploratórios - uma aplicação prática
+    en: 'The use of exploratory testing: a practical application'
+  program: curso_esw2
+  advisors:
+  - ricardo_ajax
+  tags:
+  - inactive
+  - verification_validation_testing
+  - software_quality
+  year: 2020
+- name: Thiago Silveira Honorato
+  categories:
+  - people
+  - tcc
+  title:
+    pt: Uma proposta de método de escolha para sistemas CMSs
+    en: A proposed selection method for CMS systems
+  program: curso_esw2
+  advisors:
+  - ricardo_ajax
+  tags:
+  - inactive
+  - software_requirements
+  - digital_transformation
+  year: 2015
+- name: Felipe Direito Corrieri de Macedo
+  categories:
+  - people
+  - tcc
+  title:
+    pt: 'FTV Scout: sistema para notação e análise de desempenho no futevôlei'
+    en: 'FTV Scout: system for notation and performance analysis in footvolley'
+  program: curso_esw2
+  advisors:
+  - ricardo_ajax
+  tags:
+  - inactive
+  - digital_transformation
+  year: 2025
+- name: Victor Hugo Alves de Carvalho
+  categories:
+  - people
+  - tcc
+  title:
+    pt: Análise de impacto do uso de técnicas de programação no desempenho de aplicações AndroidTM
+    en: Impact analysis of the use of programming techniques on the performance of AndroidTM applications
+  program: curso_esw2
+  advisors:
+  - fabiana_mendes
+  tags:
+  - inactive
+  - software_quality
+  - verification_validation_testing
+  year: 2015
+- name: Francisco Heronildo Sousa Santos
+  categories:
+  - people
+  - tcc
+  title:
+    pt: Avaliação e melhoria de aplicação web utilizando mecanismos de usabilidade
+    en: Evaluation and improvement of a web application using usability mechanisms
+  program: curso_esw2
+  advisors:
+  - fabiana_mendes
+  tags:
+  - inactive
+  - software_quality
+  year: 2024
+- name: João Vitor Ferreira Alves
+  categories:
+  - people
+  - tcc
+  title:
+    pt: Avaliação e melhoria de aplicação web utilizando mecanismos de usabilidade
+    en: Evaluation and improvement of a web application using usability mechanisms
+  program: curso_esw2
+  advisors:
+  - fabiana_mendes
+  tags:
+  - inactive
+  - software_quality
+  year: 2024
+- name: Vítor Cardoso Xoteslem
+  categories:
+  - people
+  - tcc
+  title:
+    pt: Elaboração de estratégia de testes em equipe de voluntários geograficamente distribuída
+    en: Elaboration of a testing strategy in a geographically distributed volunteer team
+  program: curso_esw2
+  advisors:
+  - fabiana_mendes
+  tags:
+  - inactive
+  - verification_validation_testing
+  - teamwork
+  year: 2021
+- name: Renan Cristyan Araujo Pinheiro
+  categories:
+  - people
+  - tcc
+  title:
+    pt: Estudo de caso da melhoria do processo de verificação e validação de software em um órgão do setor público
+    en: Case study on improving the software verification and validation process in a public sector agency
+  program: curso_esw2
+  advisors:
+  - fabiana_mendes
+  tags:
+  - inactive
+  - verification_validation_testing
+  year: 2022
+- name: Marcelo Victor de Sousa Silva
+  categories:
+  - people
+  - tcc
+  title:
+    pt: FormsGeo - um aplicativo para pesquisas sociais com geolocalização
+    en: FormsGeo - an application for social surveys with geolocation
+  program: curso_esw2
+  advisors:
+  - fabiana_mendes
+  tags:
+  - inactive
+  - software_requirements
+  - digital_transformation
+  year: 2023
+- name: Washington Bispo Arishita Júnior
+  categories:
+  - people
+  - tcc
+  title:
+    pt: FormsGeo - um aplicativo para pesquisas sociais com geolocalização
+    en: FormsGeo - an application for social surveys with geolocation
+  program: curso_esw2
+  advisors:
+  - fabiana_mendes
+  tags:
+  - inactive
+  - software_requirements
+  - digital_transformation
+  year: 2023
+- name: Gabriel de Jesus Carvalho
+  categories:
+  - people
+  - tcc
+  title:
+    pt: IA-QVT - ferramenta para coleta e tratamento de dados sobre qualidade de vida no trabalho, com foco em usabilidade e acessibilidade
+    en: IA-QVT - tool for collecting and processing data on quality of work life, focused on usability and accessibility
+  program: curso_esw2
+  advisors:
+  - fabiana_mendes
+  tags:
+  - inactive
+  - software_quality
+  year: 2022
+- name: Lucas Lopes Xavier
+  categories:
+  - people
+  - tcc
+  title:
+    pt: Implementação de requisitos de privacidade da LGPD e ISO 29100 em aplicativos de saúde
+    en: Implementation of LGPD and ISO 29100 privacy requirements in health applications
+  program: curso_esw2
+  advisors:
+  - fabiana_mendes
+  tags:
+  - inactive
+  - software_quality
+  year: 2023
+- name: Luciano Hideaky de Macedo Endo
+  categories:
+  - people
+  - tcc
+  title:
+    pt: Métricas de apoio a estimativa de esforço para o desenvolvimento de sistemas de Business Intelligence
+    en: Metrics to support effort estimation for the development of Business Intelligence systems
+  program: curso_esw2
+  advisors:
+  - fabiana_mendes
+  tags:
+  - inactive
+  - software_architecture
+  year: 2014
+- name: Caio César de Almeida Beleza
+  categories:
+  - people
+  - tcc
+  title:
+    pt: Problemas em interfaces de software que induzem usuários ao erro e como evitá-los
+    en: Problems in software interfaces that lead users to error and how to avoid them
+  program: curso_esw2
+  advisors:
+  - fabiana_mendes
+  tags:
+  - inactive
+  - software_quality
+  year: 2021
+- name: Paulo Vitor Coelho da Rocha
+  categories:
+  - people
+  - tcc
+  title:
+    pt: Promoção da qualidade de vida no trabalho no setor público - proposta de uma ferramenta web para apoiar a coleta de dados do inventário de avaliação de qualidade de vida no trabalho (IA_QVT)
+    en: Promoting quality of work life in the public sector - proposal of a web tool to support data collection for the quality of work life assessment inventory (IA_QVT)
+  program: curso_esw2
+  advisors:
+  - fabiana_mendes
+  tags:
+  - inactive
+  - digital_transformation
+  year: 2022
+- name: João Gabriel Rossi
+  categories:
+  - people
+  - tcc
+  title:
+    pt: Promoção da qualidade de vida no trabalho no setor público - proposta de uma ferramenta web para apoiar a coleta de dados do inventário de avaliação de qualidade de vida no trabalho (IA_QVT)
+    en: Promoting quality of work life in the public sector - proposal of a web tool to support data collection for the quality of work life assessment inventory (IA_QVT)
+  program: curso_esw2
+  advisors:
+  - fabiana_mendes
+  tags:
+  - inactive
+  - digital_transformation
+  year: 2022
+- name: Igor de Araújo Ramos
+  categories:
+  - people
+  - tcc
+  title:
+    pt: Proposta de metodologia para criação de mapas em estudos de mapeamento sistemático baseada em conhecimentos relacionados à ontologias
+    en: Proposed methodology for creating maps in systematic mapping studies based on ontology-related knowledge
+  program: curso_esw2
+  advisors:
+  - fabiana_mendes
+  tags:
+  - inactive
+  - digital_transformation
+  - ai
+  year: 2015
+- name: Ramaiane Medeiros da Silva
+  categories:
+  - people
+  - tcc
+  title:
+    pt: Qualidade na modelagem de processos de software
+    en: Quality in software process modeling
+  program: curso_esw2
+  advisors:
+  - fabiana_mendes
+  tags:
+  - inactive
+  - software_quality
+  year: 2014
+- name: Breno Dantas Cruz
+  categories:
+  - people
+  - tcc
+  title:
+    pt: Um mapeamento sistemático de métricas para metodologias ágeis Scrum, Kanban e XP
+    en: A systematic mapping of metrics for agile methodologies Scrum, Kanban, and XP
+  program: curso_esw2
+  advisors:
+  - fabiana_mendes
+  tags:
+  - inactive
+  - software_architecture
+  year: 2013
+- name: Cauê Mateus Oliveira
+  categories:
+  - people
+  - tcc
+  title:
+    pt: Universidade das Heurísticas - um jogo para o apoio a aprendizagem das heurísticas de Nielsen
+    en: University of Heuristics - a game to support learning Nielsen's heuristics
+  program: curso_esw2
+  advisors:
+  - fabiana_mendes
+  tags:
+  - inactive
+  - gamification
+  - software_quality
+  year: 2022
+- name: Lucas Midlhey Cardoso Naves
+  categories:
+  - people
+  - tcc
+  title:
+    pt: Universidade das Heurísticas - um jogo para o apoio a aprendizagem das heurísticas de Nielsen
+    en: University of Heuristics - a game to support learning Nielsen's heuristics
+  program: curso_esw2
+  advisors:
+  - fabiana_mendes
+  tags:
+  - inactive
+  - gamification
+  - software_quality
+  year: 2022
+- name: João Vitor Lopes de Farias
+  categories:
+  - people
+  - tcc
+  title:
+    pt: Jornada - o uso de RPG em um processo de aprendizagem
+    en: Journey - the use of RPG in a learning process
+  program: curso_esw2
+  advisors:
+  - sergio_freitas
+  tags:
+  - inactive
+  - gamification
+  - active_learning
+  year: 2023
+- name: Ítalo Alves Guimarães
+  categories:
+  - people
+  - tcc
+  title:
+    pt: Implementação de um aplicativo de apoio para a disciplina gamificada em IHC
+    en: Implementation of a support application for the gamified HCI course
+  program: curso_esw2
+  advisors:
+  - sergio_freitas
+  tags:
+  - inactive
+  - gamification
+  - active_learning
+  year: 2023
+- name: Luiz Henrique Fernandes Zamprogno
+  categories:
+  - people
+  - tcc
+  title:
+    pt: Latte - Um Chatbot Gamificado para Apoio na Produção de Artigos Científicos
+    en: Latte - a gamified chatbot to support scientific article writing
+  program: curso_esw2
+  advisors:
+  - sergio_freitas
+  tags:
+  - inactive
+  - gamification
+  - ai
+  - nlp
+  year: 2023
+- name: Victor Eduardo Araújo Ribeiro
+  categories:
+  - people
+  - tcc
+  title:
+    pt: Latte - Um Chatbot Gamificado para Apoio na Produção de Artigos Científicos
+    en: Latte - a gamified chatbot to support scientific article writing
+  program: curso_esw2
+  advisors:
+  - sergio_freitas
+  tags:
+  - inactive
+  - gamification
+  - ai
+  - nlp
+  year: 2023
+- name: Rafael Santos Teodosio
+  categories:
+  - people
+  - tcc
+  title:
+    pt: $tudy - um sistema gamificado de educação financeira
+    en: $tudy - a gamified financial education system
+  program: curso_esw2
+  advisors:
+  - sergio_freitas
+  tags:
+  - inactive
+  - gamification
+  - education
+  year: 2022
+- name: Érico Maximiano Bandeira
+  categories:
+  - people
+  - tcc
+  title:
+    pt: Pixel - uma ferramenta gamificada para aprendizagem de critérios de usabilidade
+    en: Pixel - a gamified tool for learning usability criteria
+  program: curso_esw2
+  advisors:
+  - sergio_freitas
+  tags:
+  - inactive
+  - gamification
+  - active_learning
+  year: 2022
+- name: Weiller Fernandes Pereira
+  categories:
+  - people
+  - tcc
+  title:
+    pt: Revisão sistemática da literatura sobre o uso de frameworks na construção de uma gamificação na educação
+    en: Systematic literature review on the use of frameworks in the construction of gamification in education
+  program: curso_esw2
+  advisors:
+  - sergio_freitas
+  tags:
+  - inactive
+  - gamification
+  - education
+  year: 2021
+- name: Paulo Markes Rodrigues de Oliveira Calado
+  categories:
+  - people
+  - tcc
+  title:
+    pt: Estratégia para identificar oportunidades de melhoria em aplicações gamificadas
+    en: Strategy to identify improvement opportunities in gamified applications
+  program: curso_esw2
+  advisors:
+  - sergio_freitas
+  tags:
+  - inactive
+  - gamification
+  - software_requirements
+  year: 2018
+- name: Leandro Alves Ferreira Santos
+  categories:
+  - people
+  - tcc
+  title:
+    pt: Software gamificado para auxílio ao ensino e aprendizagem de matemática para crianças
+    en: Gamified software to support teaching and learning mathematics for children
+  program: curso_esw2
+  advisors:
+  - sergio_freitas
+  tags:
+  - inactive
+  - gamification
+  - education
+  - active_learning
+  year: 2017
+- name: Tiago Ribeiro de Assunção
+  categories:
+  - people
+  - tcc
+  title:
+    pt: Aplicação da gamificação na Rede Social About
+    en: Application of gamification in the About social network
+  program: curso_esw2
+  advisors:
+  - sergio_freitas
+  tags:
+  - inactive
+  - gamification
+  - soft_skills
+  year: 2017
+- name: Attany Nathaly Lima Araújo
+  categories:
+  - people
+  - tcc
+  title:
+    pt: Processo de construção de uma base de experiências para laboratórios de P&D
+    en: Process for building an experience base for R&D laboratories
+  program: curso_esw2
+  advisors:
+  - sergio_freitas
+  tags:
+  - inactive
+  - soft_skills
+  - teamwork
+  year: 2016
+- name: Cristóvão de Lima Frinhani
+  categories:
+  - people
+  - tcc
+  title:
+    pt: Aplicação de processamento de linguagem natural - uma ferramenta de apoio à correção de questões dissertativas
+    en: Natural language processing application - a tool to support the grading of essay questions
+  program: curso_esw2
+  advisors:
+  - sergio_freitas
+  tags:
+  - inactive
+  - nlp
+  - ai
+  - machine_learning
+  year: 2016
+- name: João Vitor de Moura Rosa Silva
+  categories:
+  - people
+  - tcc
+  title:
+    pt: SAMI - Sistema para análise de métricas de indicadores de aprendizagem
+    en: SAMI - system for analyzing learning indicator metrics
+  program: curso_esw2
+  advisors:
+  - sergio_freitas
+  tags:
+  - inactive
+  - gamification
+  - active_learning
+  year: 2023
+- name: Ludimila da Bela Cruz
+  categories:
+  - people
+  - tcc
+  title:
+    pt: Ferramenta de apoio a construção de projetos de gamificação
+    en: Tool to support the construction of gamification projects
+  program: curso_esw2
+  advisors:
+  - sergio_freitas
+  tags:
+  - inactive
+  - gamification
+  - software_development_tools
+  year: 2016
+- name: Wilker Mesquita de Assunção
+  categories:
+  - people
+  - tcc
+  title:
+    pt: Ambiente de aprendizagem gamificado para ensino de algoritmos
+    en: Gamified learning environment for teaching algorithms
+  program: curso_esw2
+  advisors:
+  - sergio_freitas
+  tags:
+  - inactive
+  - gamification
+  - education
+  year: 2016
+- name: Guilherme Fay Vergara
+  categories:
+  - people
+  - tcc
+  title:
+    pt: Implantação de softwares como serviço em uma nuvem privada para a fábrica de software da FGA
+    en: Deployment of software as a service in a private cloud for the FGA software factory
+  program: curso_esw2
+  advisors:
+  - sergio_freitas
+  tags:
+  - inactive
+  - software_architecture
+  year: 2014
+- name: Rafael Ferreira dos Santos
+  categories:
+  - people
+  - tcc
+  title:
+    pt: Avaliação da implantação de um sistema de Service Desk baseado em ITIL v3 - estudo de caso em um órgão público
+    en: Evaluation of the deployment of a Service Desk system based on ITIL v3 - case study in a public agency
+  program: curso_esw2
+  advisors:
+  - sergio_freitas
+  tags:
+  - inactive
+  - digital_transformation
+  year: 2014
+- name: Greg Ouyama Martins
+  categories:
+  - people
+  - tcc
+  title:
+    pt: Avaliação de algoritmos para ordenação de documentos digitais recuperados em busca
+    en: Evaluation of algorithms for ordering digital documents retrieved in search
+  program: curso_esw2
+  advisors:
+  - sergio_freitas
+  tags:
+  - inactive
+  - ai
+  - nlp
+  year: 2013
+- name: Pedro Henrique Potiguara Carvalho
+  categories:
+  - people
+  - tcc
+  title:
+    pt: Sistema de buscas em ambiente virtual de aprendizagem baseada em perfis
+    en: Search system in a virtual learning environment based on profiles
+  program: curso_esw2
+  advisors:
+  - sergio_freitas
+  tags:
+  - inactive
+  - gamification
+  - education
+  year: 2014
+- name: Leandro Veloso Rodrigues
+  categories:
+  - people
+  - tcc
+  title:
+    pt: Um estudo sobre a contribuição do Programa Ciências Sem Fronteiras para o desenvolvimento de competências comportamentais da engenheira de software
+    en: A study on the contribution of the Science Without Borders Program to the development of behavioral competencies in software engineering
+  program: curso_esw2
+  advisors:
+  - sergio_freitas
+  - fabiana_mendes
+  tags:
+  - inactive
+  - soft_skills
+  year: 2016
+- name: Tiago Querubim
+  categories:
+  - people
+  - tcc
+  title:
+    pt: Proposta de um conjunto de competências para um Scrum Master
+    en: Proposal of a set of competencies for a Scrum Master
+  program: curso_esw2
+  advisors:
+  - george_marsicano
+  tags:
+  - inactive
+  - soft_skills
+  - teamwork
+  year: 2015
+- name: Giancarllo Soares
+  categories:
+  - people
+  - tcc
+  title:
+    pt: Proposta de um conjunto de competências para um time ágil
+    en: Proposal of a set of competencies for an agile team
+  program: curso_esw2
+  advisors:
+  - george_marsicano
+  tags:
+  - inactive
+  - soft_skills
+  - teamwork
+  year: 2014
+- name: Vinicius Brito
+  categories:
+  - people
+  - tcc
+  title:
+    pt: Proposta de um conjunto de competências para um Product Owner
+    en: Proposal of a set of competencies for a Product Owner
+  program: curso_esw2
+  advisors:
+  - george_marsicano
+  tags:
+  - inactive
+  - soft_skills
+  - teamwork
+  year: 2014
+- name: Gabriela da Gama Piveta
+  categories:
+  - people
+  - tcc
+  title:
+    pt: Green Software Business Guide
+    en: Green Software Business Guide
+  program: curso_esw2
+  advisors:
+  - fabiana_mendes
+  tags:
+  - inactive
+  - green_software
+  year: 2021
+- name: Bruno Contessotto Bragança Pinheiro
+  categories:
+  - people
+  - tcc
+  title:
+    pt: Active Gamification - A process for successful gamification
+    en: Active Gamification - A Process for Successful Gamification
+  program: curso_esw2
+  advisors:
+  - sergio_freitas
+  tags:
+  - inactive
+  - gamification
+  - software_architecture
+  year: 2019
+- name: Yeltsin Suares Gama
+  categories:
+  - people
+  - tcc
+  title:
+    pt: Sistema de apoio ao aprendizado.
+    en: Learning support system.
+  program: curso_esw2
+  advisors:
+  - sergio_freitas
+  tags:
+  - inactive
+  - learning_analytics
+  - ai
+  year: 2017
+- name: Júlia Farias Sousa
+  categories:
+  - people
+  - tcc
+  title:
+    pt: Análise sobre a percepção dos discentes quanto a utilização de EaD no curso de Engenharia de Software, FGA/UnB
+    en: Analysis of students perceptions on the use of distance learning in the Software Engineering course, FGA/UnB
+  program: curso_esw2
+  advisors:
+  - george_marsicano
+  tags:
+  - inactive
+  - education
+  - esw
+  year: 2023
+- name: Rafael Berto Pereira
+  categories:
+  - people
+  - tcc
+  title:
+    pt: 'Da definição de orientações de engenharia de software ao uso complementar do ChatGPT: um Estudo de Caso das startups no Governo Federal'
+    en: 'From defining software engineering guidelines to the complementary use of ChatGPT: a case study of startups in the Federal Government'
+  program: curso_esw2
+  advisors:
+  - george_marsicano
+  tags:
+  - inactive
+  - digital_transformation
+  - esw
+  year: 2023
+- name: Luis Bruno Fidelis Gomes
+  categories:
+  - people
+  - tcc
+  title:
+    pt: 'Business Intelligence aplicada à saúde: painéis de monitoramento para profissionais de saúde da Rede de Atenção Psicossocial'
+    en: 'Business Intelligence applied to health: monitoring dashboards for professionals in the Psychosocial Care Network'
+  program: curso_esw2
+  advisors:
+  - george_marsicano
+  tags:
+  - inactive
+  - ai
+  year: 2023
