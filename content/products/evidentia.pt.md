@@ -39,7 +39,7 @@ Entre os recursos do **Evidentia Review** estão o cadastro de protocolos, o ger
 
 ## Integrantes Associados no CEDIS
 
-- Prof. {{< link-interno "/people/sergio_freitas" "Sergio Freitas" >}}
+- Prof. {{< link-interno "/people/sergio_freitas" "Sergio Freitas" >}} (coordenador do projeto)
 - Prof. {{< link-interno "/people/george_marsicano" "George Marsicano Corrêa" >}}
 - Graduando em Engenharia de Software {{< link-interno "/people/collaborators/lucas_freitas" "Lucas Monteiro Freitas" >}}
 

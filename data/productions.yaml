@@ -1,5 +1,43 @@
 items:
 - authors:
+  - Sergio Antônio Andrade de Freitas
+  - André Corrêa da Silva
+  - Milena de Faria Silva
+  - Renan Carneiro Batista
+  title:
+    pt: 'Certificado de registro de programa de computador: Contextus'
+    en: 'Computer program registration certificate: Contextus'
+  summary:
+    pt: 'Registro de programa de computador concedido pelo INPI sob o processo BR512026000889-1, com certificado expedido em 18 de fevereiro de 2026.'
+    en: 'Computer program registration granted by INPI under process BR512026000889-1, with the certificate issued on February 18, 2026.'
+  book_title: ''
+  volume: ''
+  doi_isbn: ''
+  journal_event: ''
+  location: Brasília, DF, Brasil
+  pages: ''
+  publisher: Instituto Nacional da Propriedade Industrial (INPI)
+  tags:
+  - dfcris
+  - contextus
+  - ai
+  - machine_learning
+  - sergio_freitas
+  type: book
+  program: ''
+  advisors: []
+  url: /files/certificado_Contextus.pdf
+  spotify_podcast:
+    pt: ''
+    en: ''
+  github_repo:
+    pt: ''
+    en: ''
+  zenodo_record:
+    pt: ''
+    en: ''
+  year: 2026
+- authors:
   - Amanda Jeniffer Pereira Nobre
   - Ana Carolina Rodrigues Leite
   title:
