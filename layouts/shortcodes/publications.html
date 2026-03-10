@@ -10,8 +10,10 @@
 {{ $caput := .Get "caput"}}
 {{ $caputKey := .Get "caputKey" }}
 {{ $countOnly := .Get "countOnly"}} 
+{{ $sortMode := .Get "sort" | default "" }}
+{{ $typeOrder := dict "phd" 1 "dissertation" 2 "specialization" 3 "tcc" 4 "volunteer" 5 }}
 
-{{ $hasMatches := 0 }}
+{{ $filteredPublications := slice }}
 {{ range $.Site.Data.productions.items }}
   {{ $includePublication := true }}
     <!-- Aplica o filtro de ano, se um ano foi especificado -->
@@ -78,12 +80,35 @@
   {{ end }}
 
   {{ if $includePublication }}
-    {{ $hasMatches = add $hasMatches 1 }}
+    {{ $yearText := printf "%v" .year }}
+    {{ $baseYear := 0 }}
+    {{ if gt (len (findRE "^[0-9]{4}" $yearText)) 0 }}
+      {{ $baseYear = int (replaceRE "^([0-9]{4}).*$" "$1" $yearText) }}
+    {{ end }}
+    {{ $semester := 0 }}
+    {{ if gt (len (findRE "^[0-9]{4}/[0-9]+$" $yearText)) 0 }}
+      {{ $semester = int (replaceRE "^[0-9]{4}/([0-9]+)$" "$1" $yearText) }}
+    {{ end }}
+    {{ $alphaSource := index .title $.Site.Language.Lang }}
+    {{ if gt (len .authors) 0 }}
+      {{ $alphaSource = delimit .authors ", " }}
+    {{ end }}
+    {{ $typeRank := 99 }}
+    {{ with index $typeOrder .type }}
+      {{ $typeRank = . }}
+    {{ end }}
+    {{ $sortKey := printf "%02d_%04d_%02d_%s_%s" $typeRank (sub 9999 $baseYear) (sub 99 $semester) (lower $alphaSource) (lower (index .title $.Site.Language.Lang)) }}
+    {{ $filteredPublications = $filteredPublications | append (dict "item" . "sortKey" $sortKey) }}
   {{ end }}
 
 {{end}} 
 
-{{ if $hasMatches }}
+{{ $publicationsToRender := $filteredPublications }}
+{{ if eq $sortMode "supervision" }}
+  {{ $publicationsToRender = sort $filteredPublications "sortKey" "asc" }}
+{{ end }}
+
+{{ if gt (len $filteredPublications) 0 }}
 
   {{ $combined := "" }}
 
@@ -105,7 +130,7 @@
   {{/* Checando se $combined não está vazio para imprimir */}}
   {{ if ne $combined "" }}
     {{ if $countOnly }}
-      {{ $combined = print $combined " (" $hasMatches ")" }}
+      {{ $combined = print $combined " (" (len $filteredPublications) ")" }}
     {{ end }}
     <div class="caput">
       {{ $combined | markdownify }}
@@ -115,79 +140,9 @@
 
   {{ if not ($countOnly) }}
     <ol class="publications-lncs">
-      {{ range $.Site.Data.productions.items }}
-        {{ $includePublication := true }}
-
-        <!-- Aplica o filtro de ano, se um ano foi especificado -->
-        {{ if and (gt $year 0) (ne .year $year) }}
-          {{ $includePublication = false }}
-        {{ end }}
-
-        <!-- Adiciona o filtro de tipo, se tipos foram especificados -->
-        {{ if and $includePublication (gt (len $types) 0) (ne (index $types 0) "") }}
-          {{ $typeMatch := false }}
-          {{ if in $types .type }}
-            {{ $typeMatch = true }}
-          {{ end }}
-          {{ if not $typeMatch }}
-            {{ $includePublication = false }}
-          {{ end }}
-        {{ end }}
-
-        <!-- Verifica se as tags especificadas correspondem, se houver -->
-        {{ if and $includePublication (gt (len $tags) 0) (ne (index $tags 0) "") }}
-          {{ $tagMatch := false }}
-          {{ range .tags }}
-            {{ if in $tags . }}
-              {{ $tagMatch = true }}
-              {{ break }}
-            {{ end }}
-          {{ end }}
-          {{ if not $tagMatch }}
-            {{ $includePublication = false }}
-          {{ end }}
-        {{ end }}
-
-        {{/*  Verifica se os advisors especificados correspondem, se houver */}}
-        {{ if and $includePublication (gt (len $advisors) 0) (ne (index $advisors 0) "") }}
-          {{ $tagAdvisor := false }}
-          {{ range .advisors }}
-            {{ if in $advisors . }}
-              {{ $tagAdvisor = true }}
-              {{ break }}
-            {{ end }}
-          {{ end }}
-          {{ if not $tagAdvisor }}
-            {{ $includePublication = false }}
-          {{ end }}
-        {{ end }}
-
-        {{/* Filtro de exclusão baseado em excludeTags */}}
-        {{ if and $includePublication (gt (len $excludeTags) 0) (ne (index $excludeTags 0) "") }}
-          {{ range .tags }}
-            {{ if in $excludeTags . }}
-              {{/* Se uma excludeTag for encontrada, a publicação não deve ser incluída */}}
-              {{ $includePublication = false }}
-              {{ break }}
-            {{ end }}
-          {{ end }}
-        {{ end }}
-
-        {{/* Filtro de exclusão baseado em excludeTypes */}}
-        {{ if and $includePublication (gt (len $excludeTypes) 0) (ne (index $excludeTypes 0) "") }}
-          {{ if in $excludeTypes .type }}
-            {{/* Se o type da publicação está na lista de excludeTypes, não deve ser incluída */}}
-            {{ $includePublication = false }}
-          {{ end }}
-        {{ end }}
-
-
-        <!-- Faça a impressão do que passou no filtro -->
-        {{ if $includePublication }}
-
+      {{ range $publicationsToRender }}
+        {{ with .item }}
         {{ $podcast := index .spotify_podcast $.Site.Language.Lang }}
-
-
           <li x-data="{ open: false }">
             {{ $podcast := index .spotify_podcast $.Site.Language.Lang }}
             {{ if and $podcast (ne $podcast "") }}
