@@ -25,7 +25,7 @@ nav_next: true
 - Current Position: Associative Professor at the [University of Brasília](https://www.unb.br/) (UnB), engaged in the undergraduate [Software Engineering](http://software.unb.br/) program.
 
 ## {{< i18n "people_background" >}}
-- PhD in progress - Development, Society and International Cooperation, University of Brasília (2020-Present).
+- PhD - Development, Society and International Cooperation, University of Brasília.
 - Professional Master's - Knowledge Management and Information Technology, Catholic University of Brasília (2003-2005).
 - Specializations: Software Engineering, Systems Analysis.
 - Bachelor’s in Electrical Engineering - University of Brasília (1977-1981).

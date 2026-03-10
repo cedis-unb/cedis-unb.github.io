@@ -25,7 +25,7 @@ nav_next: true
 - Posição Atual: Professor Adjunto da [Universidade de Brasília](https://www.unb.br/) (UnB), atuando no curso de graduação em [Engenharia de Software](http://software.unb.br/). 
 
 ## {{< i18n "people_background" >}}
-- Doutorado em andamento - Desenvolvimento, Sociedade e Cooperação Internacional, Universidade de Brasília (2020-Presente).
+- Doutorado - Desenvolvimento, Sociedade e Cooperação Internacional, Universidade de Brasília.
 - Mestrado Profissional - Gestão do Conhecimento e Tecnologia da Informação, Universidade Católica de Brasília (2003-2005).
 - Especializações: Engenharia de Software, Análise de Sistemas.
 - Graduação em Engenharia Elétrica - Universidade de Brasília (1977-1981)​​.
