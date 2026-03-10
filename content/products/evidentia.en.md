@@ -16,6 +16,7 @@ tags:
 - app
 - ai
 - machine_learning
+- evidentia
 ---
 ## Project Description
 
@@ -40,6 +41,7 @@ Among the resources offered by **Evidentia Review** are protocol registration, m
 
 - Prof. {{< link-interno "/people/sergio_freitas" "Sergio Freitas" >}}
 - Prof. {{< link-interno "/people/george_marsicano" "George Marsicano Corrêa" >}}
+- Undergraduate in Software Engineering {{< link-interno "/people/collaborators/lucas_freitas" "Lucas Monteiro Freitas" >}}
 
 ## Access
 
