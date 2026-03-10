@@ -164,7 +164,7 @@ people:
   advisors:
   - daniel_sundfeld
   tags:
-  - active
+  - inactive
   - hpc
   year: 2025
 - name: Mateus Cunha Maia
@@ -172,8 +172,8 @@ people:
   - people
   - tcc
   title:
-    pt: "Acelerando a distância de edição para múltiplas sequências curtas"
-    en: "Accelerating edit distance for multiple short sequences"
+    pt: "Estratégias de Paralelização em CPU para a Otimização de Algoritmos de Comparação de Sequências Biológicas"
+    en: "CPU Parallelization Strategies for the Optimization of Biological Sequence Comparison Algorithms"
   program: curso_esw2
   advisors:
   - daniel_sundfeld
@@ -530,7 +530,7 @@ people:
   tags:
   - active_learning
   - education
-  - active
+  - inactive
   year: 2024
 - name: Ian Pereira de Souza Rocha
   categories:
@@ -587,7 +587,7 @@ people:
   advisors:
   - daniel_sundfeld
   tags:
-  - active
+  - inactive
   - learning_analytics
   year: 2024
 - name: Brenno Oliveira Silva
@@ -595,16 +595,17 @@ people:
   - people
   - tcc
   title:
-    pt: "Desenvolvimento de Solução para a Gamificação da Disciplina de ER"
-    en: "Development of a Solution for the Gamification of the RE Course"
+    pt: "SUPER-R: Desenvolvimento de uma Solução Gamificada para a Disciplina de Engenharia de Requisitos"
+    en: "SUPER-R: Development of a Gamified Solution for the Requirements Engineering Course"
   program: curso_esw2
   advisors:
   - george_marsicano
   tags:
+  - inactive
   - gamification
   - software_requirements
   - mobile_application
-  year: 2024
+  year: 2025
 - name: Caio César Oliveira
   categories:
   - people
@@ -616,6 +617,7 @@ people:
   advisors:
   - george_marsicano
   tags:
+  - inactive
   - ai
   - education
   - software_quality
@@ -676,6 +678,7 @@ people:
   advisors:
   - george_marsicano
   tags:
+  - inactive
   - gamification
   year: 2024
 - name: Paulo Vitor Silva Abi Acl
@@ -683,16 +686,17 @@ people:
   - people
   - tcc
   title:
-    pt: "Desenvolvimento de Solução para a Gamificação da Disciplina de ER"
-    en: "Development of a Solution for the Gamification of the RE Course"
+    pt: "SUPER-R: Desenvolvimento de uma Solução Gamificada para a Disciplina de Engenharia de Requisitos"
+    en: "SUPER-R: Development of a Gamified Solution for the Requirements Engineering Course"
   program: curso_esw2
   advisors:
   - george_marsicano
   tags:
+  - inactive
   - gamification
   - software_requirements
   - mobile_application
-  year: 2024
+  year: 2025
 - name: Victor Yukio
   categories:
   - people
@@ -704,6 +708,7 @@ people:
   advisors:
   - george_marsicano
   tags:
+  - inactive
   - gamification
   year: 2024
 - name: Vitor Eduardo Kühl Rodrigues
@@ -717,24 +722,26 @@ people:
   advisors:
   - george_marsicano
   tags:
+  - inactive
   - ai
   - education
   - software_quality
   year: 2024
-- name: Yuri Alves
+- name: Yuri Alves Bacarias
   categories:
   - people
   - tcc
   title:
-    pt: "Engenharia de Requisitos Suportada por Inteligência Artificial"
-    en: "Requirements Engineering Supported by Artificial Intelligence"
+    pt: "Processo de Validação e Verificação de requisitos suportados por Modelos de Linguagem de Grande Escala"
+    en: "Requirements Validation and Verification Process Supported by Large Language Models"
   program: curso_esw2
   advisors:
   - george_marsicano
   tags:
+  - inactive
   - software_requirements
   - ai
-  year: 2024
+  year: 2025
 - name: Artur de Sousa Vieira
   categories:
   - people
@@ -1039,11 +1046,11 @@ people:
   - people
   - tcc
   title:
-    pt: Análise da acessibilidade para pessoas idosas em serviços e-Gov - um estudo de caso
-    en: Accessibility analysis for older adults in e-Gov services - a case study
+    pt: Análise de acessibilidade para idosos em serviços e-Gov
+    en: Accessibility analysis for older adults in e-Gov services
   program: curso_esw2
   advisors:
-  - ricardo_ajax
+  - cristiane_ramos
   tags:
   - inactive
   - software_quality
@@ -1054,8 +1061,8 @@ people:
   - people
   - tcc
   title:
-    pt: Requisitos não-funcionais no desenvolvimento de jogos sérios para pessoas com TDAH
-    en: Non-functional requirements in the development of serious games for people with ADHD
+    pt: Identificação de requisitos não-funcionais para jogos sérios com foco nas necessidades especiais das crianças com TDAH
+    en: Identification of non-functional requirements for serious games focused on the special needs of children with ADHD
   program: curso_esw2
   advisors:
   - cristiane_ramos
@@ -1064,13 +1071,13 @@ people:
   - software_requirements
   - education
   year: 2022
-- name: Helena Bretas Gourlat
+- name: Helena Bretas Goulart
   categories:
   - people
   - tcc
   title:
-    pt: Requisitos não-funcionais no desenvolvimento de jogos sérios para pessoas com TDAH
-    en: Non-functional requirements in the development of serious games for people with ADHD
+    pt: Identificação de requisitos não-funcionais para jogos sérios com foco nas necessidades especiais das crianças com TDAH
+    en: Identification of non-functional requirements for serious games focused on the special needs of children with ADHD
   program: curso_esw2
   advisors:
   - cristiane_ramos
@@ -1084,12 +1091,26 @@ people:
   - people
   - tcc
   title:
-    pt: Identificação de fatores que afetam a evasão no ensino superior
-    en: Identification of factors affecting dropout in higher education
+    pt: Previsão de evasão no ensino superior
+    en: Prediction of dropout in higher education
   program: curso_esw2
   advisors:
   - cristiane_ramos
-  - sergio_freitas
+  tags:
+  - inactive
+  - education
+  - learning_analytics
+  year: 2022
+- name: Amanda Emily M. de Menezes
+  categories:
+  - people
+  - tcc
+  title:
+    pt: Previsão de evasão no ensino superior
+    en: Prediction of dropout in higher education
+  program: curso_esw2
+  advisors:
+  - cristiane_ramos
   tags:
   - inactive
   - education
@@ -1114,8 +1135,8 @@ people:
   - people
   - master_student
   title:
-    pt: "Usabilidade do SICAPEX: um estudo sobre a interação entre usuários e o sistema de cadastramento do Exército Brasileiro"
-    en: "Usability of SICAPEX: a study on the interaction between users and the Brazilian Army registration system"
+    pt: "Proposição de Melhoria de Usabilidade da Interação entre Usuário e Sistema Corporativo do Exército Brasileiro"
+    en: "Proposal for Improving the Usability of the Interaction Between User and Corporate System of the Brazilian Army"
   program: curso_ppca
   advisors:
   - george_marsicano
@@ -1211,11 +1232,11 @@ people:
 - name: Matheus Afonso de Souza
   categories:
   - people
-  - iniciacao_cientifica
+  - scientific_initiation
   title:
     pt: "Apoiar as atividades de teste de aplicativos e de pesquisa"
     en: "Supporting testing activities for apps and research"
-  program: iniciacao_cientifica
+  program: scientific_initiation
   advisors:
   - cristiane_ramos
   tags:
@@ -1241,15 +1262,16 @@ people:
   - people
   - master_student
   title:
-    pt: "Proposição de Melhoria de Usabilidade da Interação entre Usuário e Sistema Corporativo do Exército Brasileiro"
-    en: "Proposal for Usability Improvement of the Interaction between User and the Brazilian Army Corporate System"
+    pt: "Identificação de fatores adicionais de segurança e sua aplicabilidade na identidade gov.br"
+    en: "Identification of additional security factors and their applicability in the gov.br identity"
   program: curso_ppca
   advisors:
   - george_marsicano
   tags:
-  - active
-  - software_quality
-  year: 2021
+  - inactive
+  - security
+  - digital_transformation
+  year: 2025
 - name: Gustavo Vieira Braz Gonçalves
   categories:
   - people
@@ -1279,7 +1301,7 @@ people:
   - gamification
   - active_learning
   year: 2020
-- name: Luiz Guilherme S. da Silva
+- name: Luiz Guilherme S da Silva
   categories:
   - people
   - tcc
@@ -1296,11 +1318,11 @@ people:
 - name: Mariana de Souza Mendes
   categories:
   - people
-  - iniciacao_cientifica
+  - scientific_initiation
   title:
     pt: "Apoio às atividades de testes de aplicativos"
     en: "Supporting activities for app testing"
-  program: iniciacao_cientifica
+  program: scientific_initiation
   advisors:
   - cristiane_ramos
   tags:
@@ -1410,11 +1432,11 @@ people:
 - name: Natália Maria Rodrigues Queiroz
   categories:
   - people
-  - iniciacao_cientifica
+  - scientific_initiation
   title:
     pt: "Relatórios dos serviços digitalizados via teste manual"
     en: "Reports of digitized services via manual testing"
-  program: iniciacao_cientifica
+  program: scientific_initiation
   advisors:
   - cristiane_ramos
   tags:
@@ -1866,13 +1888,13 @@ people:
   - people
   - tcc
   title:
-    pt: Aplicativo de suporte a promoção a saúde mental e bem-estar dentro do ambiente universitário
-    en: Support application for promoting mental health and well-being within the university environment
+    pt: Aplicativo de suporte ao humor e bem-estar mental
+    en: Application to support mood and mental well-being
   program: curso_esw2
   advisors:
   - george_marsicano
   tags:
-  - inactive
+  - active
   - education
   - social_software
   year: 2025
@@ -1881,13 +1903,13 @@ people:
   - people
   - tcc
   title:
-    pt: Aplicativo de suporte a promoção a saúde mental e bem-estar dentro do ambiente universitário
-    en: Support application for promoting mental health and well-being within the university environment
+    pt: Aplicativo de suporte ao humor e bem-estar mental
+    en: Application to support mood and mental well-being
   program: curso_esw2
   advisors:
   - george_marsicano
   tags:
-  - inactive
+  - active
   - education
   - social_software
   year: 2025
@@ -2682,6 +2704,388 @@ people:
   program: curso_esw2
   advisors:
   - george_marsicano
+  tags:
+  - inactive
+  - ai
+  year: 2023
+- name: Adriano Nunes Soares
+  categories:
+  - people
+  - master_student
+  title:
+    pt: "Análise Postmortem do Ateliê de Software do Ministério das Relações Exteriores"
+    en: "Postmortem Analysis of the Ministry of Foreign Affairs Software Atelier"
+  program: curso_ppca
+  advisors:
+  - george_marsicano
+  tags:
+  - active
+  - digital_transformation
+  year: 2025
+- name: Emanuel Galhardo de Oliveira
+  categories:
+  - people
+  - master_student
+  title:
+    pt: "Avaliação da Maturidade DevOps em Soluções de Nuvem no Setor Financeiro"
+    en: "Assessment of DevOps Maturity in Cloud Solutions in the Financial Sector"
+  program: curso_ppca
+  advisors:
+  - george_marsicano
+  tags:
+  - active
+  - software_architecture
+  year: 2025
+- name: Breno Henrique de Souza
+  categories:
+  - people
+  - tcc
+  title:
+    pt: "A centralização de informações como apoio no desenvolvimento estudantil no ensino superior da FCTE"
+    en: "Centralization of information as support for student development in higher education at FCTE"
+  program: curso_esw2
+  advisors:
+  - george_marsicano
+  tags:
+  - active
+  - education
+  year: 2025
+- name: Giulia Domingues de Alcantara
+  categories:
+  - people
+  - tcc
+  title:
+    pt: "A centralização de informações como apoio no desenvolvimento estudantil no ensino superior da FCTE"
+    en: "Centralization of information as support for student development in higher education at FCTE"
+  program: curso_esw2
+  advisors:
+  - george_marsicano
+  tags:
+  - active
+  - education
+  year: 2025
+- name: Maria Eduarda D Santos Abritta F
+  categories:
+  - people
+  - tcc
+  title:
+    pt: "Aplicação de Aprendizado de Máquina na Predição Não-Invasiva de Euploidia em Embriões Humanos com Base em Dados Morfocinéticos"
+    en: "Application of Machine Learning to the Non-Invasive Prediction of Euploidy in Human Embryos Based on Morphokinetic Data"
+  program: curso_esw2
+  advisors:
+  - george_marsicano
+  tags:
+  - active
+  - ai
+  - machine_learning
+  year: 2025
+- name: Sabrina Caldas Berna
+  categories:
+  - people
+  - tcc
+  title:
+    pt: "Aplicação de Aprendizado de Máquina na Predição Não-Invasiva de Euploidia em Embriões Humanos com Base em Dados Morfocinéticos"
+    en: "Application of Machine Learning to the Non-Invasive Prediction of Euploidy in Human Embryos Based on Morphokinetic Data"
+  program: curso_esw2
+  advisors:
+  - george_marsicano
+  tags:
+  - active
+  - ai
+  - machine_learning
+  year: 2025
+- name: Luis Eduardo Carneiro Miranda
+  categories:
+  - people
+  - tcc
+  title:
+    pt: "Gerenciador de Estoque Inteligente"
+    en: "Smart Inventory Manager"
+  program: curso_esw2
+  advisors:
+  - daniel_sundfeld
+  tags:
+  - active
+  - software_architecture
+  year: 2025
+- name: Vinícius Mendes Martins
+  categories:
+  - people
+  - tcc
+  title:
+    pt: "Gerenciador de Estoque Inteligente"
+    en: "Smart Inventory Manager"
+  program: curso_esw2
+  advisors:
+  - daniel_sundfeld
+  tags:
+  - active
+  - software_architecture
+  year: 2025
+- name: Leonardo Gonçalves Machado
+  categories:
+  - people
+  - tcc
+  title:
+    pt: "Soluções Ótimas Paralelas para Slidding Puzzle e Cubo Mágico"
+    en: "Parallel Optimal Solutions for Sliding Puzzle and Rubik's Cube"
+  program: curso_esw2
+  advisors:
+  - daniel_sundfeld
+  tags:
+  - active
+  - hpc
+  year: 2025
+- name: Victorio Lázaro Rocha de Morais
+  categories:
+  - people
+  - tcc
+  title:
+    pt: "Pipeline para Análise de Biomoléculas Brasileiras com Arquitetura Baseada em Microsserviços e GPUs"
+    en: "Pipeline for the Analysis of Brazilian Biomolecules with an Architecture Based on Microservices and GPUs"
+  program: curso_esw2
+  advisors:
+  - daniel_sundfeld
+  tags:
+  - active
+  - hpc
+  year: 2025
+- name: Maurício Ferreira de Araújo
+  categories:
+  - people
+  - scientific_initiation
+  title:
+    pt: "Acelerando PIC com GPU"
+    en: "Accelerating PIC with GPU"
+  program: scientific_initiation
+  advisors:
+  - daniel_sundfeld
+  tags:
+  - active
+  - hpc
+  year: 2025
+- name: Caio Gomes Flausino
+  categories:
+  - people
+  - scientific_initiation
+  title:
+    pt: "Sistemas Web aplicados à Bioinformática"
+    en: "Web Systems Applied to Bioinformatics"
+  program: scientific_initiation
+  advisors:
+  - daniel_sundfeld
+  tags:
+  - inactive
+  - hpc
+  year: 2021
+- name: Laís Alves Corrêa
+  categories:
+  - people
+  - scientific_initiation
+  title:
+    pt: "Arquitetura em nuvem para HPC"
+    en: "Cloud Architecture for HPC"
+  program: scientific_initiation
+  advisors:
+  - daniel_sundfeld
+  tags:
+  - inactive
+  - hpc
+  year: 2020
+- name: Rodrigo Rocha Gomes
+  categories:
+  - people
+  - scientific_initiation
+  title:
+    pt: "Sistemas Web aplicados à Bioinformática"
+    en: "Web Systems Applied to Bioinformatics"
+  program: scientific_initiation
+  advisors:
+  - daniel_sundfeld
+  tags:
+  - inactive
+  - hpc
+  year: 2019
+- name: Ana Carolina Costa César
+  categories:
+  - people
+  - scientific_initiation
+  title:
+    pt: "Solução para permitir doações de recursos financeiros por meio do DOARTI"
+    en: "Solution to enable financial donations through DOARTI"
+  program: scientific_initiation
+  advisors:
+  - george_marsicano
+  tags:
+  - inactive
+  - social_software
+  - digital_transformation
+  year: 2021
+- name: Priscila Yukie Yamada
+  categories:
+  - people
+  - scientific_initiation
+  title:
+    pt: "Diagnósticos e modelagem de serviços dos órgãos"
+    en: "Diagnostics and service modeling for government agencies"
+  program: scientific_initiation
+  advisors:
+  - cristiane_ramos
+  tags:
+  - inactive
+  - digital_transformation
+  year: 2018
+- name: Shayane Marques Alcantara
+  categories:
+  - people
+  - scientific_initiation
+  title:
+    pt: "Identificação, modelagem e prototipação de serviços"
+    en: "Identification, modeling, and prototyping of services"
+  program: scientific_initiation
+  advisors:
+  - cristiane_ramos
+  tags:
+  - inactive
+  - digital_transformation
+  year: 2018
+- name: Victor Hugo Arnaud Deon
+  categories:
+  - people
+  - scientific_initiation
+  title:
+    pt: "Desenvolvimento de ferramentas para automação de serviços"
+    en: "Development of tools for service automation"
+  program: scientific_initiation
+  advisors:
+  - cristiane_ramos
+  tags:
+  - inactive
+  - digital_transformation
+  year: 2018
+- name: Ronyell Henrique dos Santos
+  categories:
+  - people
+  - scientific_initiation
+  title:
+    pt: "Atividades de sustentação e automação de testes"
+    en: "Maintenance and test automation activities"
+  program: scientific_initiation
+  advisors:
+  - cristiane_ramos
+  tags:
+  - inactive
+  - verification_validation_testing
+  year: 2018
+- name: Ramy da Silva Alcântara
+  categories:
+  - people
+  - scientific_initiation
+  title:
+    pt: "Melhoria do processo de desenvolvimento de software embarcado"
+    en: "Improvement of the embedded software development process"
+  program: scientific_initiation
+  advisors:
+  - cristiane_ramos
+  tags:
+  - inactive
+  - software_quality
+  year: 2011
+- name: Wagner Jerônimo Santos
+  categories:
+  - people
+  - scientific_initiation
+  title:
+    pt: "Definição de um processo de garantia da qualidade baseada em uma arquitetura de componentes de processo"
+    en: "Definition of a quality assurance process based on a process component architecture"
+  program: scientific_initiation
+  advisors:
+  - cristiane_ramos
+  tags:
+  - inactive
+  - software_quality
+  - verification_validation_testing
+  year: 2011
+- name: Henrique Santos
+  categories:
+  - people
+  - scientific_initiation
+  title:
+    pt: "Análise comparativa entre modelos de processo de aquisição de software e a Instrução Normativa nº 04"
+    en: "Comparative analysis between software acquisition process models and Normative Instruction No. 04"
+  program: scientific_initiation
+  advisors:
+  - cristiane_ramos
+  tags:
+  - inactive
+  - digital_transformation
+  year: 2010
+- name: Guilherme B. Rêgo
+  categories:
+  - people
+  - scientific_initiation
+  title:
+    pt: "Análise comparativa de modelos de processo de aquisição de software embarcados, críticos e seguros no contexto da indústria automobilística"
+    en: "Comparative analysis of embedded, critical, and safe software acquisition process models in the automotive industry context"
+  program: scientific_initiation
+  advisors:
+  - cristiane_ramos
+  tags:
+  - inactive
+  - software_quality
+  year: 2010
+- name: Almir José Malheiros Franco
+  categories:
+  - people
+  - tcc
+  title:
+    pt: "Sistema para apoio e acompanhamento de trabalhos de conclusão de curso"
+    en: "System to support and track final course projects"
+  program: curso_esw2
+  advisors:
+  - daniel_sundfeld
+  tags:
+  - inactive
+  - software_architecture
+  year: 2022
+- name: Guilherme Jesus Nunes
+  categories:
+  - people
+  - tcc
+  title:
+    pt: "Sistema para apoio e acompanhamento de trabalhos de conclusão de curso"
+    en: "System to support and track final course projects"
+  program: curso_esw2
+  advisors:
+  - daniel_sundfeld
+  tags:
+  - inactive
+  - software_architecture
+  year: 2022
+- name: Francisca de Fátima Araújo Lucena
+  categories:
+  - people
+  - tcc
+  title:
+    pt: "Detecção de fake news relacionadas à COVID-19 no Brasil"
+    en: "Detection of fake news related to COVID-19 in Brazil"
+  program: curso_esw2
+  advisors:
+  - daniel_sundfeld
+  tags:
+  - inactive
+  - ai
+  year: 2023
+- name: Mariana Guedes da Silva
+  categories:
+  - people
+  - tcc
+  title:
+    pt: "Detecção de fake news relacionadas à COVID-19 no Brasil"
+    en: "Detection of fake news related to COVID-19 in Brazil"
+  program: curso_esw2
+  advisors:
+  - daniel_sundfeld
   tags:
   - inactive
   - ai
