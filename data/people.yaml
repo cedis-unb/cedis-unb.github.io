@@ -193,7 +193,7 @@ people:
   - sergio_freitas
   - celia_higawa
   tags:
-  - active
+  - inactive
   - nlp
   - ai
   - social_software
@@ -243,6 +243,22 @@ people:
   - gamification
   year: 2025
 - name: Daniel Rodrigues da Rocha
+  categories:
+  - people
+  - scientific_initiation
+  title:
+    pt: "Framework preditivo de engajamento e desempenho discente em ambientes de aprendizagem gamificados com base em Octalysis, indicadores neurocientíficos e machine learning"
+    en: "Predictive Framework for Student Engagement and Performance in Gamified Learning Environments Based on Octalysis, Neuroscientific Indicators, and Machine Learning"
+  program: curso_esw2
+  advisors:
+  - sergio_freitas
+  tags:
+  - active
+  - gamification
+  - machine_learning
+  - ai
+  year: 2025
+- name: Davi Rodrigues da Rocha
   categories:
   - people
   - scientific_initiation
@@ -357,7 +373,7 @@ people:
   advisors:
   - sergio_freitas
   tags:
-  - active
+  - inactive
   - ai
   - machine_learning
   - digital_transformation
@@ -930,7 +946,7 @@ people:
   tags:
   - gamification
   - inactive
-  year: 2023
+  year: 2024
 - name: Vitor Diniz Pagani Vieira Ribeiro
   categories:
   - people
@@ -944,7 +960,7 @@ people:
   tags:
   - gamification
   - inactive
-  year: 2023
+  year: 2024
 - name: André Aben-Athar de Freitas
   categories:
   - people

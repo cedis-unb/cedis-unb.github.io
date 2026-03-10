@@ -1,9 +1,37 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>People on CEDIS</title><link>https://cedis.unb.br/pt/people/</link><description>Recent content in People on CEDIS</description><generator>Hugo</generator><language>pt</language><lastBuildDate>Mon, 09 Mar 2026 19:00:00 -0300</lastBuildDate><atom:link href="https://cedis.unb.br/pt/people/index.xml" rel="self" type="application/rss+xml"/><item><title>André Luiz Peron Martins Lanna</title><link>https://cedis.unb.br/pt/people/andre_lanna/</link><pubDate>Wed, 14 Feb 2024 00:50:20 -0300</pubDate><guid>https://cedis.unb.br/pt/people/andre_lanna/</guid><description>Professor Associado da Universidade de Brasília (UnB), atua no curso de graduação em Engenharia de Software e no Programa de Pós-Graduação em Computação Aplicada.</description></item><item><title>Sergio Antônio Andrade de Freitas</title><link>https://cedis.unb.br/pt/people/sergio_freitas/</link><pubDate>Wed, 14 Feb 2024 00:49:57 -0300</pubDate><guid>https://cedis.unb.br/pt/people/sergio_freitas/</guid><description>Professor Titular da Universidade de Brasília (UnB), atua no curso de graduação em Engenharia de Software e no Programa de Pós-Graduação em Computação Aplicada.</description></item><item><title>Colaboradores</title><link>https://cedis.unb.br/pt/people/all/</link><pubDate>Wed, 14 Feb 2024 00:48:51 -0300</pubDate><guid>https://cedis.unb.br/pt/people/all/</guid><description>&lt;div class="space-y-4"&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>People on CEDIS</title><link>https://cedis.unb.br/pt/people/</link><description>Recent content in People on CEDIS</description><generator>Hugo</generator><language>pt</language><lastBuildDate>Mon, 09 Mar 2026 22:39:19 -0300</lastBuildDate><atom:link href="https://cedis.unb.br/pt/people/index.xml" rel="self" type="application/rss+xml"/><item><title>André Luiz Peron Martins Lanna</title><link>https://cedis.unb.br/pt/people/andre_lanna/</link><pubDate>Wed, 14 Feb 2024 00:50:20 -0300</pubDate><guid>https://cedis.unb.br/pt/people/andre_lanna/</guid><description>Professor Associado da Universidade de Brasília (UnB), atua no curso de graduação em Engenharia de Software e no Programa de Pós-Graduação em Computação Aplicada.</description></item><item><title>Sergio Antônio Andrade de Freitas</title><link>https://cedis.unb.br/pt/people/sergio_freitas/</link><pubDate>Wed, 14 Feb 2024 00:49:57 -0300</pubDate><guid>https://cedis.unb.br/pt/people/sergio_freitas/</guid><description>Professor Titular da Universidade de Brasília (UnB), atua no curso de graduação em Engenharia de Software e no Programa de Pós-Graduação em Computação Aplicada.</description></item><item><title>Colaboradores</title><link>https://cedis.unb.br/pt/people/all/</link><pubDate>Wed, 14 Feb 2024 00:48:51 -0300</pubDate><guid>https://cedis.unb.br/pt/people/all/</guid><description>&lt;div class="space-y-4"&gt;
  &lt;!-- Current Collaborators Section --&gt;
  &lt;div&gt;
  &lt;h2 class="text-xxl font-bold mb-2 text-primary-900"&gt;Colaboradores atuais&lt;/h2&gt;
  &lt;p class="mb-4 text-neutral-700"&gt;Conheça a equipe que está contribuindo ativamente para nossos projetos e pesquisas.&lt;/p&gt;
  &lt;div&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  
  
  
@@ -5071,6 +5099,34 @@
  
  
  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  &lt;div&gt;
  
  &lt;div class="caput"&gt;
@@ -5088,6 +5144,34 @@
  &lt;/div&gt;
  
  &lt;ul&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  
  
  
@@ -11898,6 +11982,34 @@
  
  
  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  &lt;div&gt;
  
  &lt;/div&gt;
@@ -13442,6 +13554,88 @@
  
  &lt;li x-data="{ open: false }"&gt;
  &lt;span&gt;&lt;strong&gt;Daniel Rodrigues da Rocha&lt;/strong&gt;&lt;/span&gt;.
+ &lt;span&gt;
+ Framework preditivo de engajamento e desempenho discente em ambientes de aprendizagem gamificados com base em Octalysis, indicadores neurocientíficos e machine learning
+ .&lt;/span&gt;
+ &lt;span&gt;Bacharelado em Engenharia de Software - UnB,&lt;/span&gt;
+ &lt;span&gt;(2025).&lt;/span&gt;
+ 
+ 
+ Orientador(es):
+ 
+ 
+ &lt;a href="https://cedis.unb.br/pt/people/sergio_freitas"&gt;Sergio Freitas&lt;/a&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ . Tags:
+ 
+ 
+ &lt;a href="https://cedis.unb.br/pt/tags/gamification"&gt;Gamificação&lt;/a&gt;, 
+ 
+ 
+ &lt;a href="https://cedis.unb.br/pt/tags/machine_learning"&gt;Aprendizado de Máquina&lt;/a&gt;, 
+ 
+ 
+ &lt;a href="https://cedis.unb.br/pt/tags/ai"&gt;Inteligência Artificial&lt;/a&gt;
+ .
+ 
+ 
+ 
+ &lt;/li&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;li x-data="{ open: false }"&gt;
+ &lt;span&gt;&lt;strong&gt;Davi Rodrigues da Rocha&lt;/strong&gt;&lt;/span&gt;.
  &lt;span&gt;
  Framework preditivo de engajamento e desempenho discente em ambientes de aprendizagem gamificados com base em Octalysis, indicadores neurocientíficos e machine learning
  .&lt;/span&gt;
@@ -17864,60 +18058,6 @@
  
  
  
- &lt;li x-data="{ open: false }"&gt;
- &lt;span&gt;&lt;strong&gt;Alexia Naara da Silva Cardoso&lt;/strong&gt;&lt;/span&gt;.
- &lt;span&gt;
- Aplicativo tradutor de línguas indígenas: Munduruku
- .&lt;/span&gt;
- &lt;span&gt;Bacharelado em Engenharia de Software - UnB,&lt;/span&gt;
- &lt;span&gt;(2025).&lt;/span&gt;
- 
- 
- Orientador(es):
- 
- 
- &lt;a href="https://cedis.unb.br/pt/people/sergio_freitas"&gt;Sergio Freitas&lt;/a&gt;
- 
- 
- 
- &lt;a href="http://lattes.cnpq.br/2977168844333740"&gt;Célia Kinuko Matsunaga Higawa&lt;/a&gt;
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- . Tags:
- 
- 
- &lt;a href="https://cedis.unb.br/pt/tags/nlp"&gt;Processamento de Linguagem Natural&lt;/a&gt;, 
- 
- 
- &lt;a href="https://cedis.unb.br/pt/tags/ai"&gt;Inteligência Artificial&lt;/a&gt;, 
- 
- 
- &lt;a href="https://cedis.unb.br/pt/tags/social_software"&gt;Software Social&lt;/a&gt;
- .
- 
- 
- 
- &lt;/li&gt;
  
  
  
@@ -18068,6 +18208,34 @@
  
  
  &lt;/li&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  
  
  
@@ -18472,56 +18640,6 @@
  
  
  
- &lt;li x-data="{ open: false }"&gt;
- &lt;span&gt;&lt;strong&gt;Miguel Matos Costa de Frias Barbosa&lt;/strong&gt;&lt;/span&gt;.
- &lt;span&gt;
- Sistema de apoio à análise de processos organizacionais: Uma abordagem com inteligência artificial e controle de contexto
- .&lt;/span&gt;
- &lt;span&gt;Bacharelado em Engenharia de Software - UnB,&lt;/span&gt;
- &lt;span&gt;(2025).&lt;/span&gt;
- 
- 
- Orientador(es):
- 
- 
- &lt;a href="https://cedis.unb.br/pt/people/sergio_freitas"&gt;Sergio Freitas&lt;/a&gt;
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- . Tags:
- 
- 
- &lt;a href="https://cedis.unb.br/pt/tags/ai"&gt;Inteligência Artificial&lt;/a&gt;, 
- 
- 
- &lt;a href="https://cedis.unb.br/pt/tags/machine_learning"&gt;Aprendizado de Máquina&lt;/a&gt;, 
- 
- 
- &lt;a href="https://cedis.unb.br/pt/tags/digital_transformation"&gt;Transformação Digital&lt;/a&gt;
- .
- 
- 
- 
- &lt;/li&gt;
  
  
  
@@ -23283,6 +23401,34 @@
  
  
  &lt;/li&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  
  
  
