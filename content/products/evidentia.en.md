@@ -9,6 +9,9 @@ summary: Evidentia Review is a CEDIS online system for planning, conducting, and
 authorimage: ../assets/images/global/author.webp
 categories:
 - products
+- project
+- sergio_freitas
+- george_marsicano
 tags:
 - app
 - ai
