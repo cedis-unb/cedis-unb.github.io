@@ -1765,9 +1765,10 @@ administrative and operational activities of the Brazilian Army."
   year: 2022
 - authors:
   - Luiz Henrique Fernandes Zamprogno
+  - Victor Eduardo Araújo Ribeiro
   title:
-    pt: Chatbot gamificado para consulta de informações acadêmicas
-    en: Gamified Chatbot for Academic Information Inquiry
+    pt: "Latte - Um Chatbot Gamificado para Apoio na Produção de Artigos Científicos"
+    en: "Latte - A Gamified Chatbot to Support Scientific Article Writing"
   summary:
     pt: ''
     en: ''
@@ -1777,16 +1778,17 @@ administrative and operational activities of the Brazilian Army."
   journal_event: ''
   location: ''
   pages: ''
-  publisher: ''
+  publisher: Biblioteca Central da Universidade de Brasília
   tags:
   - gamification
   - ai
+  - nlp
   type: tcc
   program: curso_esw
   advisors:
   - sergio_freitas
-  url: ''
-  year: 2022
+  url: https://bdm.unb.br/handle/10483/43473
+  year: 2023
 - authors:
   - Rafael Pinheiro
   title:
@@ -6753,6 +6755,83 @@ administrative and operational activities of the Brazilian Army."
   - sergio_freitas
   url: https://bdm.unb.br/handle/10483/40493
   year: 2024
+- authors:
+  - Antonio Rangel Chaves
+  - Vitor Diniz Pagani Vieira Ribeiro
+  title:
+    pt: "Gamificação no ambiente virtual de aprendizagem Moodle: guia e ferramenta para criadores de conteúdo"
+    en: "Gamification in the Moodle virtual learning environment: guide and tool for content creators"
+  summary:
+    pt: ''
+    en: ''
+  book_title: ''
+  volume: ''
+  doi_isbn: ''
+  journal_event: ''
+  location: ''
+  pages: ''
+  publisher: Biblioteca Central da Universidade de Brasília
+  tags:
+  - gamification
+  - education
+  - active_learning
+  type: tcc
+  program: curso_esw
+  advisors:
+  - sergio_freitas
+  url: https://bdm.unb.br/handle/10483/43543
+  year: 2024
+- authors:
+  - Alexia Naara da Silva Cardoso
+  title:
+    pt: "Aplicativo tradutor de línguas indígenas: Munduruku"
+    en: "Indigenous Language Translator App: Munduruku"
+  summary:
+    pt: ''
+    en: ''
+  book_title: ''
+  volume: ''
+  doi_isbn: ''
+  journal_event: ''
+  location: ''
+  pages: ''
+  publisher: Biblioteca Central da Universidade de Brasília
+  tags:
+  - nlp
+  - ai
+  - social_software
+  type: tcc
+  program: curso_esw
+  advisors:
+  - sergio_freitas
+  - celia_higawa
+  url: ''
+  year: '2025/2'
+- authors:
+  - Miguel Matos Costa de Frias Barbosa
+  title:
+    pt: "Sistema de apoio à análise de processos organizacionais: Uma abordagem com inteligência artificial e controle de contexto"
+    en: "Support System for Organizational Process Analysis: An Approach with Artificial Intelligence and Context Control"
+  summary:
+    pt: ''
+    en: ''
+  book_title: ''
+  volume: ''
+  doi_isbn: ''
+  journal_event: ''
+  location: ''
+  pages: ''
+  publisher: Biblioteca Central da Universidade de Brasília
+  tags:
+  - ai
+  - machine_learning
+  - digital_transformation
+  type: tcc
+  program: curso_esw
+  advisors:
+  - sergio_freitas
+  url: ''
+  year: '2025/2'
 - authors:
   - Ana Júlia Mendes Santos
   - Maria Clara Oleari de Araújo
