@@ -1,0 +1,68 @@
+{{ define "main" }}
+{{ $isPt := eq .Site.Language.Lang "pt" }}
+{{ $content := .Content }}
+{{ $intro := .Params.description | default (cond $isPt "Espacos, ambientes e recursos organizados para apoiar atividades do CEDIS." "Spaces and facilities organized to support CEDIS activities.") }}
+{{ $eyebrow := .Params.eyebrow | default (cond $isPt "Infraestrutura" "Infrastructure") }}
+{{ $parts := split $content `<h2 id="` }}
+{{ $prefix := index $parts 0 | strings.TrimSpace }}
+{{ $sections := slice }}
+
+{{ range after 1 $parts }}
+  {{ $block := printf `<h2 id="%s` . }}
+  {{ $anchor := replaceRE `(?s)^<h2 id="([^"]+)".*` `${1}` $block }}
+  {{ $title := replaceRE `(?s)^<h2 id="([^"]+)"[^>]*>(.*?)</h2>.*` `${2}` $block | plainify | htmlUnescape | strings.TrimSpace }}
+  {{ $body := replaceRE `(?s)^<h2 id="([^"]+)"[^>]*>.*?</h2>(.*)$` `${2}` $block | strings.TrimSpace }}
+  {{ if $title }}
+    {{ $sections = $sections | append (dict "anchor" $anchor "title" $title "body" $body) }}
+  {{ end }}
+{{ end }}
+
+<main class="bg-[linear-gradient(180deg,_#f5f5f4_0%,_#ffffff_22%,_#f8fafc_100%)] text-gray-950 dark:bg-[linear-gradient(180deg,_#0f172a_0%,_#111827_58%,_#0b1120_100%)] dark:text-gray-100">
+  <section class="border-b border-black/5 bg-[radial-gradient(circle_at_top_left,_rgba(197,39,47,0.14),_transparent_30%),linear-gradient(180deg,_#111827_0%,_#0f172a_100%)] text-white dark:border-white/10">
+    <div class="mx-auto grid max-w-screen-xl gap-8 px-4 py-12 md:px-6 lg:grid-cols-[minmax(0,1.05fr)_minmax(18rem,0.95fr)] lg:items-center lg:px-8 lg:py-14">
+      <div>
+        <span class="inline-flex rounded-full border border-white/15 bg-white/10 px-4 py-1 text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-white/72">{{ $eyebrow }}</span>
+        <h1 class="mt-5 max-w-3xl text-4xl font-black tracking-tight md:text-5xl">{{ .Title }}</h1>
+        <p class="mt-4 max-w-2xl text-base leading-7 text-white/72 md:text-lg">{{ $intro }}</p>
+        {{ if $prefix }}
+        <div class="mt-6 max-w-2xl text-sm leading-7 text-white/68 [&_p]:m-0">{{ $prefix | safeHTML }}</div>
+        {{ end }}
+        {{ if gt (len $sections) 0 }}
+        <div class="mt-8 flex flex-wrap gap-2">
+          {{ range $sections }}
+          <a href="#{{ .anchor }}" class="inline-flex rounded-full border border-white/12 bg-white/[0.06] px-4 py-2 text-sm font-semibold text-white/84 transition-colors hover:bg-white/12 hover:text-white">{{ .title }}</a>
+          {{ end }}
+        </div>
+        {{ end }}
+      </div>
+
+      {{ with .Params.featured_image }}
+      {{ $featuredPath := replace . "../assets/" "" }}
+      {{ with resources.Get $featuredPath }}
+      {{ $image := .Fit "1200x900 webp q88" }}
+      <div class="overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.06] p-4 shadow-[0_24px_70px_rgba(0,0,0,0.22)] backdrop-blur md:p-5">
+        <div class="overflow-hidden rounded-[1.5rem] bg-[linear-gradient(180deg,_rgba(255,255,255,0.08),_rgba(255,255,255,0.02))] p-4">
+          <img src="{{ $image.RelPermalink }}" alt="{{ $.Title }}" class="h-auto w-full rounded-[1.1rem] object-contain">
+        </div>
+      </div>
+      {{ end }}
+      {{ end }}
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-screen-xl px-4 py-10 md:px-6 lg:px-8 lg:py-12">
+    {{ if gt (len $sections) 0 }}
+    <div class="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+      {{ range $sections }}
+      <section id="{{ .anchor }}" class="rounded-[1.75rem] border border-black/5 bg-white/90 p-6 shadow-[0_18px_60px_rgba(15,23,42,0.08)] dark:border-white/10 dark:bg-white/[0.04]">
+        <h2 class="text-2xl font-black tracking-tight text-gray-950 dark:text-white">{{ .title }}</h2>
+        <div class="mt-4 text-base leading-7 text-gray-600 dark:text-white/72 [&_ul]:m-0 [&_ul]:space-y-3 [&_ul]:pl-5 [&_li]:pl-1 [&_p]:m-0">{{ .body | safeHTML }}</div>
+      </section>
+      {{ end }}
+    </div>
+    {{ else }}
+    <div class="rounded-[1.75rem] border border-black/5 bg-white/90 p-6 shadow-[0_18px_60px_rgba(15,23,42,0.08)] dark:border-white/10 dark:bg-white/[0.04]">{{ $content | safeHTML }}</div>
+    {{ end }}
+  </section>
+</main>
+{{ end }}
