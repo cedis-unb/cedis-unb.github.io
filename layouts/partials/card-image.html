@@ -1,0 +1,25 @@
+{{- $resource := .resource -}}
+{{- $title := .title -}}
+{{- $fit := .fit | default "960x640 webp q88" -}}
+{{- $containerClass := .containerClass | default "h-64" -}}
+{{- $variant := .variant | default "grid" -}}
+{{- $processed := $resource.Fit $fit -}}
+{{- $isPortrait := gt $resource.Height $resource.Width -}}
+{{- $frameTone := cond $isPortrait "bg-[radial-gradient(circle_at_top,_rgba(255,255,255,0.98),_rgba(226,232,240,0.74))] dark:bg-[radial-gradient(circle_at_top,_rgba(51,65,85,0.84),_rgba(15,23,42,0.94))]" "bg-[linear-gradient(180deg,_rgba(248,250,252,0.92),_rgba(226,232,240,0.56))] dark:bg-[linear-gradient(180deg,_rgba(30,41,59,0.82),_rgba(15,23,42,0.9))]" -}}
+{{- $paddingClass := cond $isPortrait "p-3 sm:p-4" "p-2 sm:p-3" -}}
+{{- $portraitWidthClass := "max-w-[70%]" -}}
+{{- if eq $variant "wide" -}}
+    {{- $portraitWidthClass = "max-w-[58%]" -}}
+{{- end -}}
+{{- $imageClass := cond $isPortrait (printf "max-h-full w-auto %s object-contain" $portraitWidthClass) "max-h-full w-auto max-w-full object-contain" -}}
+{{- $portraitFrameClass := "rounded-[1.5rem] border border-white/60 bg-white/55 p-2 shadow-[0_18px_45px_rgba(15,23,42,0.18)] backdrop-blur-sm dark:border-white/10 dark:bg-slate-950/35" -}}
+
+<div class="relative flex {{ $containerClass }} items-center justify-center overflow-hidden {{ $frameTone }} {{ $paddingClass }}">
+    {{ if $isPortrait }}
+    <div class="{{ $portraitFrameClass }}">
+        <img src="{{ $processed.RelPermalink }}" class="{{ $imageClass }} transition-transform duration-500 ease-out group-hover:scale-[1.03]" loading="lazy" alt="{{ $title }}" />
+    </div>
+    {{ else }}
+    <img src="{{ $processed.RelPermalink }}" class="{{ $imageClass }} transition-transform duration-500 ease-out group-hover:scale-[1.03]" loading="lazy" alt="{{ $title }}" />
+    {{ end }}
+</div>

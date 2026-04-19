@@ -111,7 +111,9 @@
                             </div>
                             <div class="overflow-hidden rounded-[1.5rem] bg-[linear-gradient(180deg,_rgba(255,255,255,0.7),_rgba(226,232,240,0.92))] p-4 dark:bg-[linear-gradient(180deg,_rgba(15,23,42,0.72),_rgba(2,6,23,0.96))]">
                                 <div class="overflow-hidden rounded-[1.1rem] aspect-[4/5] md:aspect-[6/5] lg:aspect-[16/10]">
-                                    <img src="/images/pages/media-CEDIS.png" width="{{ $hero.Width }}" height="{{ $hero.Height }}" alt="CEDIS" class="h-full w-full object-cover object-[42%_58%]" loading="eager" decoding="async" />
+                                    {{ with $hero }}
+                                    <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="CEDIS" class="h-full w-full object-cover object-[42%_58%]" loading="eager" decoding="async" />
+                                    {{ end }}
                                 </div>
                             </div>
                         </div>
@@ -285,10 +287,7 @@
                             {{ with $page.Params.featured_image }}
                             {{ $featuredPath := replace . "../assets/" "" }}
                             {{ with resources.Get $featuredPath }}
-                            {{ $postimage := (.Resize "900x webp q90").RelPermalink }}
-                            <div class="aspect-[16/9] overflow-hidden">
-                                <img src="{{ $postimage }}" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]" width="100%" height="" loading="lazy" alt="{{ $page.Title }}" />
-                            </div>
+                            {{ partial "card-image.html" (dict "resource" . "title" $page.Title "fit" "900x640 webp q90" "containerClass" "aspect-[16/9]" "variant" "wide") }}
                             {{ end }}
                             {{ end }}
                         </a>
@@ -306,7 +305,7 @@
                                 <span class="font-semibold uppercase tracking-[0.18em] text-slate-500 dark:text-slate-400">{{ $newsTagsLabel }}</span>
                                 {{ range $elem_index, $elem_val := ($page.GetTerms "tags") }}
                                 <a href="{{ .RelPermalink }}" class="inline-flex items-center rounded-full border border-slate-200/80 bg-slate-100 px-3 py-1 text-xs font-medium text-slate-700 transition-colors hover:border-primary-200 hover:bg-primary-100 hover:text-slate-950 dark:border-white/10 dark:bg-white/[0.05] dark:text-slate-200 dark:hover:border-primary-400/30 dark:hover:bg-primary-500/10">
-                                    {{ or (i18n .Name) .LinkTitle .Name }}
+                                    {{ partial "translated-label.html" (dict "page" .) }}
                                 </a>
                                 {{ end }}
                             </div>
@@ -350,10 +349,7 @@
                             {{ with $page.Params.featured_image }}
                             {{ $featuredPath := replace . "../assets/" "" }}
                             {{ with resources.Get $featuredPath }}
-                            {{ $postimage := (.Resize "700x webp q90").RelPermalink }}
-                            <div class="aspect-[16/9] overflow-hidden">
-                                <img src="{{ $postimage }}" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]" width="100%" height="" loading="lazy" alt="{{ $page.Title }}" />
-                            </div>
+                            {{ partial "card-image.html" (dict "resource" . "title" $page.Title "fit" "700x520 webp q90" "containerClass" "aspect-[16/9]" "variant" "wide") }}
                             {{ end }}
                             {{ end }}
                         </a>
@@ -367,7 +363,7 @@
                             <div class="mt-4 flex flex-wrap gap-2">
                                 {{ range first 3 ($page.GetTerms "tags") }}
                                 <a href="{{ .RelPermalink }}" class="inline-flex items-center rounded-full border border-slate-200/80 bg-slate-100 px-2.5 py-1 text-[0.72rem] font-medium text-slate-700 transition-colors hover:border-primary-200 hover:bg-primary-100 hover:text-slate-950 dark:border-white/10 dark:bg-white/[0.05] dark:text-slate-200 dark:hover:border-primary-400/30 dark:hover:bg-primary-500/10">
-                                    {{ or (i18n .Name) .LinkTitle .Name }}
+                                    {{ partial "translated-label.html" (dict "page" .) }}
                                 </a>
                                 {{ end }}
                             </div>

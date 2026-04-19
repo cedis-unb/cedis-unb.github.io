@@ -113,7 +113,7 @@
 
       {{ if $match }}
         <li>
-          <span><strong><a href="{{ $thisPage.Permalink }}">{{ $thisPage.Title }}</a></strong></span>
+          <span><strong><a href="{{ $thisPage.RelPermalink }}">{{ $thisPage.Title }}</a></strong></span>
           {{ if and $showSummary $thisPage.Summary }}
             <span> - {{ $thisPage.Summary }}</span>
           {{ end }}

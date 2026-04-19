@@ -1,8 +1,9 @@
 {{ $url := .Get 0 }}
 {{ $text := .Get 1 }}
 {{ $translation := i18n $text }}
+{{ $href := cond (hasPrefix $url "/") ($url | relLangURL) $url }}
 
-<a href="{{ $url | absLangURL }}" class="internal-link" style="display: inline-flex; align-items: center; text-decoration: none;">
+<a href="{{ $href }}" class="internal-link" style="display: inline-flex; align-items: center; text-decoration: none;">
   {{ if eq $translation "" }}
     {{/* Se o termo traduzido for igual ao texto fornecido, assume-se que a tradução não existe. */}}
     {{ $text }}

@@ -8,6 +8,14 @@
 {{ $excludeCategories := split (.Get "nocats") "," }} 
 {{ $filterAdvisors := split (.Get "advisors") "," }}
 {{ $sortMode := .Get "sort" | default "" }}
+{{ $topicsLabel := cond (eq $.Site.Language.Lang "pt") "Temas" "Topics" }}
+{{ $headingClass := "mb-3 px-1 [&>h3]:m-0 [&>h3]:text-2xl [&>h3]:font-black [&>h3]:tracking-tight [&>h3]:text-gray-950 dark:[&>h3]:text-white" }}
+{{ $listClass := "m-0 list-none space-y-4 p-0" }}
+{{ $cardClass := "list-none rounded-[1.5rem] border border-black/5 bg-white/80 px-5 py-5 text-gray-700 shadow-[0_16px_50px_rgba(15,23,42,0.08)] backdrop-blur dark:border-white/10 dark:bg-white/[0.04] dark:text-white/78" }}
+{{ $metaLabelClass := "text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-gray-400 dark:text-white/45" }}
+{{ $pillClass := "inline-flex rounded-full border border-black/10 bg-stone-50 px-3 py-1 text-sm font-medium text-gray-700 transition-colors hover:border-primary-500 hover:text-primary-600 dark:border-white/10 dark:bg-white/[0.05] dark:text-white/78 dark:hover:border-primary-300 dark:hover:text-primary-200" }}
+{{ $summaryButtonClass := "inline-flex items-center rounded-full bg-primary-600 px-4 py-2 text-sm font-semibold text-white shadow-lg shadow-primary-600/20 transition-colors hover:bg-primary-500" }}
+{{ $summaryPanelClass := "mt-3 rounded-[1.25rem] border border-primary-100 bg-primary-50/70 px-4 py-4 text-sm leading-6 text-gray-700 dark:border-primary-400/20 dark:bg-primary-500/10 dark:text-white/75" }}
 
 {{ $filteredDataPeople := slice }}
 {{ range sort hugo.Data.people.people "year" "desc" }}
@@ -97,9 +105,9 @@
 {{ end }}
 {{ $hasMatches := gt (len $filteredDataPeople) 0 }}
 
-<div>
+<div class="space-y-4">
   {{ if $hasMatches }}
-    <div class="caput">
+    <div class="caput {{ $headingClass }}">
     {{/* Se apenas $caput existir */}}
     {{ if and $caput (not $caputKey) }}
       {{ $caput | markdownify }}
@@ -117,56 +125,71 @@
     {{ end }}
     </div>
 
-    <ul>
+    <ul class="{{ $listClass }}">
     {{ range $dataPeopleToRender }}
       {{ with .person }}
-        <li x-data="{ open: false }">
-        <span><strong>{{ .name }}</strong></span>.
-        <span>{{ if .url }}<a href="{{ .url }}">{{ end }}
-        {{ index .title $.Site.Language.Lang }}
-        {{ if .url }}</a>{{ end }}.</span>
-        {{ if .program }}<span>{{ .program | i18n }},</span>{{ end }}
-        {{ if .year }}<span>({{ .year }}).</span>{{ end }}
+        <li x-data="{ open: false }" class="{{ $cardClass }}">
+          <div class="flex flex-col gap-4">
+            <div class="space-y-2">
+              <p class="m-0 text-xl font-black leading-tight text-gray-950 dark:text-white">{{ .name }}</p>
+              <p class="m-0 text-base leading-7 text-gray-600 dark:text-white/72">
+                {{ if .url }}<a href="{{ .url }}" class="font-semibold text-primary-700 transition-colors hover:text-primary-600 dark:text-primary-200 dark:hover:text-primary-100">{{ end }}
+                {{ index .title $.Site.Language.Lang }}
+                {{ if .url }}</a>{{ end }}
+              </p>
+              {{ if or .program .year }}
+              <p class="m-0 text-sm leading-6 text-gray-500 dark:text-white/60">
+                {{ if .program }}{{ .program | i18n }}{{ end }}{{ if and .program .year }}<span class="mx-2 text-gray-300 dark:text-white/20">&bull;</span>{{ end }}{{ if .year }}{{ .year }}{{ end }}
+              </p>
+              {{ end }}
+            </div>
 
-        <!-- Exibição de advisors, tags, e o resumo com controle do Alpine.js -->
-        {{ i18n "orientador" }}:
-        {{ range .advisors }}
-          {{ with index hugo.Data.advisors.advisors . }}
-            <a href="{{ .link | absLangURL }}">{{ .name }}</a>
-          {{ end }}
-        {{ end }}
-
-        {{/* Tags */}}
-        {{ $filteredTags := slice }}
-        {{ range .tags }}
-          {{ if and (ne . "active") (ne . "inactive") }}
-            {{ $filteredTags = $filteredTags | append . }}
-          {{ end }}
-        {{ end }}
-        {{ $total := len $filteredTags }}
-        {{ if gt $total 0 }}
-          . Tags:
-          {{ range $index, $tag := $filteredTags }}
-            {{ $tagLink := printf "/tags/%s" $tag | absLangURL }}
-            <a href="{{ $tagLink }}">{{ $tag | i18n }}</a>{{ if lt $index (sub $total 1) }}, {{ end }}
-          {{ end }}.
-        {{ end }}
-
-        {{ if .summary }}
-          {{ $currentLangSummary := index .summary $.Site.Language.Lang }}
-          {{ if $currentLangSummary }}
+            {{ if gt (len .advisors) 0 }}
             <div>
-              <!-- Botão com a cor primária e texto em branco -->
-              <button @click="open = !open" class="bg-primary-500 text-white p-2 rounded cursor-pointer">
-                {{ i18n "abstract" }}
-              </button>
-              <!-- Div com texto usando uma cor neutra escura para melhor legibilidade -->
-              <div x-show="open" class="mt-2 pl-4 font-serif" x-cloak>
-                <span class="text-neutral-700 text-sm">{{ $currentLangSummary }}</span>
+              <div class="{{ $metaLabelClass }}">{{ i18n "orientador" }}</div>
+              <div class="mt-2 flex flex-wrap gap-2">
+                {{ range .advisors }}
+                  {{ with index hugo.Data.advisors.advisors . }}
+                    <a href="{{ if hasPrefix .link "/" }}{{ .link | relLangURL }}{{ else }}{{ .link }}{{ end }}" class="{{ $pillClass }}">{{ .name }}</a>
+                  {{ end }}
+                {{ end }}
               </div>
             </div>
-          {{ end }}
-        {{ end }}
+            {{ end }}
+
+            {{ $filteredTags := slice }}
+            {{ range .tags }}
+              {{ if and (ne . "active") (ne . "inactive") }}
+                {{ $filteredTags = $filteredTags | append . }}
+              {{ end }}
+            {{ end }}
+            {{ $total := len $filteredTags }}
+            {{ if gt $total 0 }}
+            <div>
+              <div class="{{ $metaLabelClass }}">{{ $topicsLabel }}</div>
+              <div class="mt-2 flex flex-wrap gap-2">
+                {{ range $filteredTags }}
+                  {{ $tagLink := printf "/tags/%s" (. | urlize) | relLangURL }}
+                  <a href="{{ $tagLink }}" class="{{ $pillClass }}">{{ . | i18n }}</a>
+                {{ end }}
+              </div>
+            </div>
+            {{ end }}
+
+            {{ if .summary }}
+              {{ $currentLangSummary := index .summary $.Site.Language.Lang }}
+              {{ if $currentLangSummary }}
+                <div>
+                  <button @click="open = !open" class="{{ $summaryButtonClass }}">
+                    {{ i18n "abstract" }}
+                  </button>
+                  <div x-show="open" class="{{ $summaryPanelClass }}" x-cloak>
+                    <span>{{ $currentLangSummary }}</span>
+                  </div>
+                </div>
+              {{ end }}
+            {{ end }}
+          </div>
         </li>
       {{ end }}
     {{ end }}
@@ -257,7 +280,7 @@
 
 {{ if $hasMatches2  }}
   {{ if not $hasMatches }}
-    <div class="caput">
+    <div class="caput {{ $headingClass }}">
       {{/* Se apenas $caput existir */}}
       {{ if and $caput (not $caputKey) }}
         {{ $caput | markdownify }}
@@ -275,7 +298,7 @@
       {{ end }}
     </div>
   {{ end }}
-  <ul>
+  <ul class="{{ $listClass }}">
   {{ $currentPageKey := $.Page.TranslationKey }}
   {{ range sort (where $.Site.RegularPages.ByTitle ".Params.categories" "intersect" (slice "people")) "Title" }}
     {{ if ne .TranslationKey $currentPageKey }}
@@ -349,27 +372,53 @@
       {{ end }}
 
       {{ if $include }}
-        <li>
-        <span><strong><a href="{{ $thisPage.Permalink }}">{{ $thisPage.Title }}</a></strong></span>
-        {{ if and $showSummary (isset $thisPage.Params "summary") }}
-          <span> - {{ $thisPage.Params.summary }}</span>
-        {{ end }}
+        <li class="{{ $cardClass }}">
+          <div class="flex flex-col gap-4">
+            <div class="space-y-2">
+              <p class="m-0 text-xl font-black leading-tight text-gray-950 dark:text-white">
+                <a href="{{ $thisPage.RelPermalink }}" class="transition-colors hover:text-primary-600 dark:hover:text-primary-200">{{ $thisPage.Title }}</a>
+              </p>
+              {{ if and $showSummary (isset $thisPage.Params "summary") }}
+                <p class="m-0 text-base leading-7 text-gray-600 dark:text-white/72">{{ $thisPage.Params.summary }}</p>
+              {{ end }}
+              {{ if and $showDescription (isset $thisPage.Params "description") }}
+                <p class="m-0 text-sm leading-6 text-gray-500 dark:text-white/60">{{ $thisPage.Params.description }}</p>
+              {{ end }}
+            </div>
 
-        {{ if and $showDescription (isset $thisPage.Params "description") }}
-          <span> {{ $thisPage.Params.description }}</span>
-        {{ end }}
-
-        <!-- Exibição de advisors, tags, e o resumo com controle do Alpine.js -->
-        {{ if and $thisPage.Params.advisors (gt (len $thisPage.Params.advisors) 0) }}
-          {{ i18n "orientador" }}:
-          {{ $totalAdvisors := len $thisPage.Params.advisors }}
-          {{ range $index, $advisor := $thisPage.Params.advisors }}
-            {{ with index hugo.Data.advisors.advisors $advisor }}
-              <a href="{{ .link | absLangURL }}">{{ .name }}</a>{{ if lt $index (sub $totalAdvisors 1) }},{{ end }}
+            {{ if and $thisPage.Params.advisors (gt (len $thisPage.Params.advisors) 0) }}
+              <div>
+                <div class="{{ $metaLabelClass }}">{{ i18n "orientador" }}</div>
+                <div class="mt-2 flex flex-wrap gap-2">
+                  {{ range $thisPage.Params.advisors }}
+                    {{ with index hugo.Data.advisors.advisors . }}
+                      <a href="{{ if hasPrefix .link "/" }}{{ .link | relLangURL }}{{ else }}{{ .link }}{{ end }}" class="{{ $pillClass }}">{{ .name }}</a>
+                    {{ end }}
+                  {{ end }}
+                </div>
+              </div>
             {{ end }}
-          {{ end }}
-        {{ end }}
-          .
+
+            {{ if and (isset $thisPage.Params "tags") (gt (len $thisPage.Params.tags) 0) }}
+              {{ $pageTags := slice }}
+              {{ range $thisPage.Params.tags }}
+                {{ if and (ne . "active") (ne . "inactive") }}
+                  {{ $pageTags = $pageTags | append . }}
+                {{ end }}
+              {{ end }}
+              {{ if gt (len $pageTags) 0 }}
+              <div>
+                <div class="{{ $metaLabelClass }}">{{ $topicsLabel }}</div>
+                <div class="mt-2 flex flex-wrap gap-2">
+                  {{ range $pageTags }}
+                    {{ $tagLink := printf "/tags/%s" (. | urlize) | relLangURL }}
+                    <a href="{{ $tagLink }}" class="{{ $pillClass }}">{{ . | i18n }}</a>
+                  {{ end }}
+                </div>
+              </div>
+              {{ end }}
+            {{ end }}
+          </div>
         </li>
       {{ end }}
 
