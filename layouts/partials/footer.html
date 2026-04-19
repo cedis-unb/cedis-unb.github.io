@@ -24,123 +24,113 @@
 </div>
 {{ end }}
 
-<footer class="bg-gray-900">
-    <div class="max-w-md px-4 py-12 mx-auto overflow-hidden sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
-        <nav class="flex flex-wrap justify-center -mx-5 -my-2" aria-label="Footer">
-            {{ range site.Menus.footer }}
-            <div class="px-5 py-2">
-                <a href="{{ .URL | absLangURL }}" class="text-base text-gray-400 hover:text-gray-300">{{ .Name }}</a>
+{{ $isPt := eq .Site.Language.Lang "pt" }}
+{{ $footerKicker := cond $isPt "Universidade de Brasília" "University of Brasilia" }}
+{{ $footerLead := cond $isPt "Pesquisa, desenvolvimento e inovação em software com foco em formação, colaboração e impacto público." "Research, development, and software innovation focused on education, collaboration, and public impact." }}
+{{ $footerNavTitle := cond $isPt "Navegação" "Navigation" }}
+{{ $footerConnectTitle := cond $isPt "Conecte-se" "Connect" }}
+{{ $footerConnectLead := cond $isPt "Acompanhe publicações, notícias e canais institucionais do CEDIS." "Follow CEDIS across publications, news, and institutional channels." }}
+
+<footer class="relative overflow-hidden border-t border-slate-200/80 bg-[linear-gradient(180deg,_#0f172a_0%,_#111827_100%)] text-slate-200 dark:border-white/10">
+    <div aria-hidden="true" class="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(56,189,248,0.14),_transparent_28%),radial-gradient(circle_at_bottom_right,_rgba(249,115,22,0.14),_transparent_24%)]"></div>
+    <div class="relative mx-auto max-w-screen-xl px-4 py-14 md:px-6 lg:px-8 lg:py-16">
+        <div class="grid gap-8 lg:grid-cols-[minmax(0,1.3fr)_minmax(0,0.8fr)_minmax(0,1fr)]">
+            <div class="rounded-[1.75rem] border border-white/10 bg-white/[0.04] p-6 shadow-[0_24px_80px_rgba(0,0,0,0.22)] backdrop-blur">
+                <div class="text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-slate-400">{{ $footerKicker }}</div>
+                <div class="mt-4 flex items-center gap-4">
+                    <img src="/images/site-logo.svg" alt="CEDIS Logo" class="h-10 w-28 object-contain opacity-95">
+                    <div class="h-10 w-px bg-white/10"></div>
+                    <div class="text-sm font-medium uppercase tracking-[0.2em] text-slate-400">Research, Software, AI</div>
+                </div>
+                <p class="mt-5 max-w-xl text-base leading-7 text-slate-300">
+                    {{ $footerLead }}
+                </p>
             </div>
-            {{ end }}
-        </nav>
-        <div class="flex justify-center mt-8 space-x-6">
-            {{ if .Site.Params.Social_media.Email.Enabled }} 
-            <a href="{{ .Site.Params.Social_media.Email.url | absLangURL}}" class="text-gray-400 hover:text-gray-300">
-                <span class="sr-only">E-mail</span>
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                    <path d="M20,4H4C2.897,4,2,4.897,2,6v12c0,1.103,0.897,2,2,2h16c1.103,0,2-0.897,2-2V6C22,4.897,21.103,4,20,4z M20,6v0.511l-8,6.223
-                    l-8-6.223V6H20z M4,18V9.044l7.386,5.745C11.566,14.93,11.783,15,12,15s0.434-0.07,0.614-0.211L20,9.044L20.002,18H4z"/>
-                </svg>                
-            </a>
-            {{ end }}
-            {{ if .Site.Params.Social_media.Facebook.Enabled }} 
-            <a href="{{ .Site.Params.Social_media.Facebook.url | absLangURL}}" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-gray-300">
-                <span class="sr-only">Facebook</span>
-                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                    <path fill-rule="evenodd"
-                          d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
-                          clip-rule="evenodd" />
-                </svg>
-            </a>
-            {{ end }}
-            {{ if .Site.Params.Social_media.Instagram.Enabled }} 
-            <a href="{{ .Site.Params.Social_media.Instagram.url | absLangURL}}" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-gray-300">
-                <span class="sr-only">Instagram</span>
-                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                    <path fill-rule="evenodd"
-                          d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
-                          clip-rule="evenodd" />
-                </svg>
-            </a>
-            {{ end }}
-            {{ if .Site.Params.Social_media.YouTube.Enabled }} 
-            <a href="{{ .Site.Params.Social_media.YouTube.url | absLangURL}}" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-gray-300">
-                <span class="sr-only">YouTube</span>
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                    <path d="M21.8,8.001c0,0-0.195-1.378-0.795-1.985C20.202,5.164,19.2,5.159,18.615,5.126c-2.577-0.2-6.439-0.204-6.439-0.204h-0.006c0,0-3.862,0.004-6.439,0.204C4.801,5.159,3.798,5.164,3.196,6.016C2.595,6.623,2.4,8.001,2.4,8.001S2.201,9.765,2.201,11.529v1.945c0,1.762,0.199,3.528,0.199,3.528s0.195,1.378,0.795,1.985c0.602,0.852,1.393,0.867,1.748,0.96c1.267,0.123,5.396,0.201,5.396,0.201s3.871-0.008,6.451-0.213c0.816-0.065,1.818-0.072,2.42-0.924c0.6-0.607,0.795-1.985,0.795-1.985s0.199-1.766,0.199-3.528v-1.945C22,9.765,21.8,8.001,21.8,8.001z M9.935,14.565v-5.131l4.954,2.566L9.935,14.565z"/>
-                  </svg>                  
-            </a>
-            {{ end }}
-            {{ if .Site.Params.Social_media.Twitter.Enabled }}
-            <a href="{{ .Site.Params.Social_media.Twitter.url | absLangURL}}" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-gray-300">
-                <span class="sr-only">Twitter</span>
-                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                    <path
-                          d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
-                </svg>
-            </a>
-            {{ end }}
-            {{ if .Site.Params.Social_media.Github.Enabled }}
-            <a href="{{ .Site.Params.Social_media.Github.url | absLangURL}}" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-gray-300">
-                <span class="sr-only">GitHub</span>
-                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                    <path fill-rule="evenodd"
-                          d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
-                          clip-rule="evenodd" />
-                </svg>
-            </a>
-            {{ end }}
 
-            {{ if .Site.Params.Social_media.Spotify.Enabled }}
-            <a href="{{ .Site.Params.Social_media.Spotify.url | absLangURL }}" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-gray-300">
-                <span class="sr-only">Spotify</span>
-                <!-- Ícone SVG do Spotify -->
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" viewBox="0 0 186.845 186.845" aria-hidden="true">
-                    <path d="M128.875,120.962c-31.094-14.37-74.616-8.014-76.453-7.737c-4.096,0.619-6.915,4.44-6.296,8.536 c0.619,4.096,4.443,6.912,8.536,6.296c0.406-0.062,40.867-5.982,67.92,6.521c1.018,0.471,2.089,0.694,3.142,0.694 c2.834-0.001,5.546-1.614,6.813-4.355C134.274,127.157,132.635,122.7,128.875,120.962z"/>
-                    <path d="M137.614,93.953c-35.313-16.319-84.833-9.087-86.924-8.772c-4.094,0.619-6.911,4.438-6.294,8.532 c0.616,4.095,4.438,6.916,8.531,6.301c0.468-0.071,47.206-6.857,78.394,7.556c1.02,0.471,2.089,0.694,3.142,0.694 c2.834-0.001,5.546-1.614,6.814-4.356C143.014,100.148,141.374,95.691,137.614,93.953z"/>
-                    <path d="M143.49,65.736c-39.006-18.027-93.79-10.028-96.103-9.679c-4.094,0.619-6.911,4.438-6.294,8.532s4.44,6.919,8.531,6.3 c0.523-0.079,52.691-7.657,87.573,8.463c1.018,0.471,2.089,0.694,3.142,0.694c2.834,0,5.546-1.614,6.813-4.355 C148.89,71.93,147.25,67.474,143.49,65.736z"/>
-                    <path d="M93.423,0.001C41.909,0.001,0,41.909,0,93.42c0,51.514,41.909,93.424,93.423,93.424c51.513,0,93.422-41.91,93.422-93.424 C186.845,41.909,144.936,0.001,93.423,0.001z M93.423,171.844C50.18,171.844,15,136.664,15,93.42 c0-43.241,35.18-78.42,78.423-78.42c43.242,0,78.422,35.179,78.422,78.42C171.845,136.664,136.665,171.844,93.423,171.844z"/>
-                </svg>
-            </a>
-            {{ end }}
+            <div class="rounded-[1.75rem] border border-white/10 bg-white/[0.03] p-6">
+                <div class="text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-slate-400">{{ $footerNavTitle }}</div>
+                <nav class="mt-5 grid gap-3" aria-label="Footer">
+                    {{ range site.Menus.footer }}
+                    <a href="{{ if hasPrefix .URL "/" }}{{ .URL | relLangURL }}{{ else }}{{ .URL }}{{ end }}" class="inline-flex items-center justify-between rounded-2xl border border-white/8 bg-white/[0.03] px-4 py-3 text-sm font-medium text-slate-200 transition-colors hover:border-primary-400/40 hover:bg-primary-500/10 hover:text-white">
+                        <span>{{ .Name }}</span>
+                        <span aria-hidden="true" class="text-slate-500">&rarr;</span>
+                    </a>
+                    {{ end }}
+                </nav>
+            </div>
 
-            {{ if .Site.Params.Social_media.Zenodo.Enabled }}
-            <a href="{{ .Site.Params.Social_media.Zenodo.url | absLangURL}}" target="_blank" rel="noopener noreferrer" class="ml-2 text-gray-400 hover:text-gray-300"> <span class="sr-only">Zenodo</span>
-                <svg class="w-6 h-6" viewBox="0 0 24 24" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor">
-                    {/* Borda arredondada (contorno) */}
-                    <rect x="1.5" y="1.5" width="21" height="21" rx="4" stroke-width="2"/>
-                    {/* Texto "Ze" centralizado (cor do texto = currentColor) */}
-                    <text x="12" y="12.5" font-family="sans-serif" font-size="12" font-weight="bold" text-anchor="middle" dominant-baseline="central" fill="currentColor" stroke="none">
-                        Ze
-                    </text>
-                </svg>
-            </a>
-        {{ end }}
-
-            {{ if .Site.Params.Social_media.Linkedin.Enabled }}
-                <a href="{{ .Site.Params.Social_media.Linkedin.url | absLangURL }}" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-gray-300">
-                    <span class="sr-only">LinkedIn</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                        <path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.28c-1.03 0-1.87-.84-1.87-1.87s.84-1.87 1.87-1.87c1.03 0 1.87.84 1.87 1.87s-.84 1.87-1.87 1.87zm13.5 11.28h-3v-5.6c0-1.34-.02-3.06-1.87-3.06s-2.16 1.46-2.16 2.96v5.7h-3v-10h2.88v1.36h.04c.4-.76 1.36-1.56 2.8-1.56 3 0 3.56 1.97 3.56 4.54v5.66z" />
-                    </svg>
-                </a>
-            {{ end }}
+            <div class="rounded-[1.75rem] border border-white/10 bg-white/[0.03] p-6">
+                <div class="text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-slate-400">{{ $footerConnectTitle }}</div>
+                <p class="mt-4 text-sm leading-6 text-slate-300">{{ $footerConnectLead }}</p>
+                <div class="mt-6 flex flex-wrap gap-3">
+                    {{ if .Site.Params.Social_media.Email.Enabled }} 
+                    <a href="{{ .Site.Params.Social_media.Email.url }}" class="inline-flex h-11 w-11 items-center justify-center rounded-2xl border border-white/10 bg-white/[0.05] text-slate-300 transition-colors hover:border-primary-400/40 hover:bg-primary-500/10 hover:text-white">
+                        <span class="sr-only">E-mail</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M20,4H4C2.897,4,2,4.897,2,6v12c0,1.103,0.897,2,2,2h16c1.103,0,2-0.897,2-2V6C22,4.897,21.103,4,20,4z M20,6v0.511l-8,6.223l-8-6.223V6H20z M4,18V9.044l7.386,5.745C11.566,14.93,11.783,15,12,15s0.434-0.07,0.614-0.211L20,9.044L20.002,18H4z"/>
+                        </svg>
+                    </a>
+                    {{ end }}
+                    {{ if .Site.Params.Social_media.YouTube.Enabled }} 
+                    <a href="{{ .Site.Params.Social_media.YouTube.url }}" target="_blank" rel="noopener noreferrer" class="inline-flex h-11 w-11 items-center justify-center rounded-2xl border border-white/10 bg-white/[0.05] text-slate-300 transition-colors hover:border-primary-400/40 hover:bg-primary-500/10 hover:text-white">
+                        <span class="sr-only">YouTube</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M21.8,8.001c0,0-0.195-1.378-0.795-1.985C20.202,5.164,19.2,5.159,18.615,5.126c-2.577-0.2-6.439-0.204-6.439-0.204h-0.006c0,0-3.862,0.004-6.439,0.204C4.801,5.159,3.798,5.164,3.196,6.016C2.595,6.623,2.4,8.001,2.4,8.001S2.201,9.765,2.201,11.529v1.945c0,1.762,0.199,3.528,0.199,3.528s0.195,1.378,0.795,1.985c0.602,0.852,1.393,0.867,1.748,0.96c1.267,0.123,5.396,0.201,5.396,0.201s3.871-0.008,6.451-0.213c0.816-0.065,1.818-0.072,2.42-0.924c0.6-0.607,0.795-1.985,0.795-1.985s0.199-1.766,0.199-3.528v-1.945C22,9.765,21.8,8.001,21.8,8.001z M9.935,14.565v-5.131l4.954,2.566L9.935,14.565z"/>
+                        </svg>
+                    </a>
+                    {{ end }}
+                    {{ if .Site.Params.Social_media.Github.Enabled }}
+                    <a href="{{ .Site.Params.Social_media.Github.url }}" target="_blank" rel="noopener noreferrer" class="inline-flex h-11 w-11 items-center justify-center rounded-2xl border border-white/10 bg-white/[0.05] text-slate-300 transition-colors hover:border-primary-400/40 hover:bg-primary-500/10 hover:text-white">
+                        <span class="sr-only">GitHub</span>
+                        <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                    {{ end }}
+                    {{ if .Site.Params.Social_media.Spotify.Enabled }}
+                    <a href="{{ .Site.Params.Social_media.Spotify.url }}" target="_blank" rel="noopener noreferrer" class="inline-flex h-11 w-11 items-center justify-center rounded-2xl border border-white/10 bg-white/[0.05] text-slate-300 transition-colors hover:border-primary-400/40 hover:bg-primary-500/10 hover:text-white">
+                        <span class="sr-only">Spotify</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 186.845 186.845" aria-hidden="true">
+                            <path d="M128.875,120.962c-31.094-14.37-74.616-8.014-76.453-7.737c-4.096,0.619-6.915,4.44-6.296,8.536 c0.619,4.096,4.443,6.912,8.536,6.296c0.406-0.062,40.867-5.982,67.92,6.521c1.018,0.471,2.089,0.694,3.142,0.694 c2.834-0.001,5.546-1.614,6.813-4.355C134.274,127.157,132.635,122.7,128.875,120.962z"/>
+                            <path d="M137.614,93.953c-35.313-16.319-84.833-9.087-86.924-8.772c-4.094,0.619-6.911,4.438-6.294,8.532 c0.616,4.095,4.438,6.916,8.531,6.301c0.468-0.071,47.206-6.857,78.394,7.556c1.02,0.471,2.089,0.694,3.142,0.694 c2.834-0.001,5.546-1.614,6.814-4.356C143.014,100.148,141.374,95.691,137.614,93.953z"/>
+                            <path d="M143.49,65.736c-39.006-18.027-93.79-10.028-96.103-9.679c-4.094,0.619-6.911,4.438-6.294,8.532s4.44,6.919,8.531,6.3 c0.523-0.079,52.691-7.657,87.573,8.463c1.018,0.471,2.089,0.694,3.142,0.694c2.834,0,5.546-1.614,6.813-4.355 C148.89,71.93,147.25,67.474,143.49,65.736z"/>
+                            <path d="M93.423,0.001C41.909,0.001,0,41.909,0,93.42c0,51.514,41.909,93.424,93.423,93.424c51.513,0,93.422-41.91,93.422-93.424 C186.845,41.909,144.936,0.001,93.423,0.001z M93.423,171.844C50.18,171.844,15,136.664,15,93.42 c0-43.241,35.18-78.42,78.423-78.42c43.242,0,78.422,35.179,78.422,78.42C171.845,136.664,136.665,171.844,93.423,171.844z"/>
+                        </svg>
+                    </a>
+                    {{ end }}
+                    {{ if .Site.Params.Social_media.Zenodo.Enabled }}
+                    <a href="{{ .Site.Params.Social_media.Zenodo.url }}" target="_blank" rel="noopener noreferrer" class="inline-flex h-11 w-11 items-center justify-center rounded-2xl border border-white/10 bg-white/[0.05] text-slate-300 transition-colors hover:border-primary-400/40 hover:bg-primary-500/10 hover:text-white">
+                        <span class="sr-only">Zenodo</span>
+                        <svg class="h-5 w-5" viewBox="0 0 24 24" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor">
+                            <rect x="1.5" y="1.5" width="21" height="21" rx="4" stroke-width="2"/>
+                            <text x="12" y="12.5" font-family="sans-serif" font-size="12" font-weight="bold" text-anchor="middle" dominant-baseline="central" fill="currentColor" stroke="none">Ze</text>
+                        </svg>
+                    </a>
+                    {{ end }}
+                    {{ if .Site.Params.Social_media.Linkedin.Enabled }}
+                    <a href="{{ .Site.Params.Social_media.Linkedin.url }}" target="_blank" rel="noopener noreferrer" class="inline-flex h-11 w-11 items-center justify-center rounded-2xl border border-white/10 bg-white/[0.05] text-slate-300 transition-colors hover:border-primary-400/40 hover:bg-primary-500/10 hover:text-white">
+                        <span class="sr-only">LinkedIn</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.28c-1.03 0-1.87-.84-1.87-1.87s.84-1.87 1.87-1.87c1.03 0 1.87.84 1.87 1.87s-.84 1.87-1.87 1.87zm13.5 11.28h-3v-5.6c0-1.34-.02-3.06-1.87-3.06s-2.16 1.46-2.16 2.96v5.7h-3v-10h2.88v1.36h.04c.4-.76 1.36-1.56 2.8-1.56 3 0 3.56 1.97 3.56 4.54v5.66z" />
+                        </svg>
+                    </a>
+                    {{ end }}
+                </div>
+            </div>
         </div>
-        <div class="footer-container" style="display: flex; justify-content: center; align-items: center; text-align: center; flex-wrap: wrap;">
-            <div class="footer-image" style="margin-right: auto;">
-                <a href="https://fga.unb.br" target="_blank" rel="noopener noreferrer">
-                    <img src="/images/logoFGA.png" alt="Logo FGA" style="width: auto; height: 50px;">
+
+        <div class="mt-8 flex flex-col gap-5 border-t border-white/10 pt-6 lg:flex-row lg:items-center lg:justify-between">
+            <div class="flex flex-wrap items-center gap-4 sm:gap-5">
+                <a href="https://fga.unb.br" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center rounded-2xl border border-white/10 bg-white/[0.04] px-4 py-3 transition-colors hover:bg-white/[0.08]">
+                    <img src="/images/logoFGA.png" alt="Logo FGA" class="h-10 w-auto object-contain opacity-95">
+                </a>
+                <a href="https://unb.br" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center rounded-2xl border border-white/10 bg-white/[0.04] px-4 py-3 transition-colors hover:bg-white/[0.08]">
+                    <img src="/images/as_vert_neg.webp" alt="Logo UnB" class="h-10 w-auto object-contain opacity-95">
                 </a>
             </div>
-            <div class="footer-text" style="flex-grow: 1;">
-                <p class="mt-8 text-base text-gray-400">&copy; {{ now.Format "2006" }}
-                     Centro de Estudos, Desenvolvimento e Inovação em Software. {{ i18n "rights" }}</p>
-            </div>
-            <div class="footer-image" style="margin-left: auto;">
-                <a href="https://unb.br" target="_blank" rel="noopener noreferrer">
-                    <img src="/images/as_vert_neg.webp" alt="Logo UnB" style="width: auto; height: 50px;">
-                </a>
-            </div>
+            <p class="text-sm leading-6 text-slate-400">
+                &copy; {{ now.Format "2006" }} Centro de Estudos, Desenvolvimento e Inovação em Software. {{ i18n "rights" }}
+            </p>
         </div>
     </div>
 </footer>

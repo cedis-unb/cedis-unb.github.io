@@ -104,10 +104,6 @@ languages:
           pre: complexdropdown
           name: Produções
           weight: 40
-        - identifier: oportunity
-          name: Oportunidades
-          url: /oportunidades/
-          weight: 50
       cedis:
         - identifier: areas
           pre: stars
@@ -127,6 +123,10 @@ languages:
           post: "Nossa trajetória e conquistas"
           url: /history/
           weight: 30
+        - identifier: oportunity
+          name: Oportunidades
+          url: /oportunidades/
+          weight: 35
         - identifier: intranet
           pre: intranet
           name: Intranet
@@ -301,10 +301,6 @@ languages:
           pre: complexdropdown
           name: Productions
           weight: 40
-        - identifier: oportunity
-          name: Oportunities
-          url: /oportunidades/
-          weight: 50
       cedis:
         - identifier: areas
           pre: stars
@@ -324,6 +320,10 @@ languages:
           post: "Our journey and achievements"
           url: /history/
           weight: 30
+        - identifier: oportunity
+          name: Oportunities
+          url: /oportunidades/
+          weight: 35
         - identifier: intranet
           pre: intranet
           name: Intranet
@@ -407,7 +407,7 @@ languages:
 enableEmoji: false
 enableGitInfo: true
 enableRobotsTXT: true
-canonifyURLs: true
+canonifyURLs: false
 pagination:
   pagerSize: 12
 darkmode_js:
