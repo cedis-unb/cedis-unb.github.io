@@ -14,7 +14,7 @@
 {{ $typeOrder := dict "phd" 1 "dissertation" 2 "specialization" 3 "tcc" 4 "volunteer" 5 }}
 
 {{ $filteredPublications := slice }}
-{{ range $.Site.Data.productions.items }}
+{{ range hugo.Data.productions.items }}
   {{ $includePublication := true }}
     <!-- Aplica o filtro de ano, se um ano foi especificado -->
     {{ if and (gt $year 0) (ne .year $year) }}
@@ -192,7 +192,7 @@
             {{ i18n "orientador" }}:
             {{ $totalAdvisors := len .advisors }}
             {{ range $index, $advisor := .advisors }}
-              {{ with index $.Site.Data.advisors.advisors $advisor }}
+              {{ with index hugo.Data.advisors.advisors $advisor }}
                 <a href="{{ .link | absLangURL }}">{{ .name }}</a>{{ if lt $index (sub $totalAdvisors 1) }},{{ end }}
               {{ end }}
             {{ end }}
@@ -202,7 +202,7 @@
 
             <!-- Exibição das tags, quando existirem -->
             {{ $advisorsList := slice }}
-            {{ range $key, $value := $.Site.Data.advisors.advisors }}
+            {{ range $key, $value := hugo.Data.advisors.advisors }}
               {{ $advisorsList = $advisorsList | append $key }}
             {{ end }}
             

@@ -1,1 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Contextus on CEDIS</title><link>https://cedis.unb.br/pt/tags/contextus/</link><description>Recent content in Contextus on CEDIS</description><generator>Hugo</generator><language>pt</language><lastBuildDate>Tue, 10 Mar 2026 14:18:56 -0300</lastBuildDate><atom:link href="https://cedis.unb.br/pt/tags/contextus/index.xml" rel="self" type="application/rss+xml"/><item><title>Registro de software Contextus é concedido pelo INPI</title><link>https://cedis.unb.br/pt/posts/news-post.023/</link><pubDate>Thu, 19 Feb 2026 09:00:00 -0300</pubDate><guid>https://cedis.unb.br/pt/posts/news-post.023/</guid><description>O software Contextus recebeu certificado de registro de programa de computador concedido pelo INPI, referente ao processo BR512026000889-1.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Contextus on CEDIS</title>
+    <link>http://localhost:1313/pt/tags/contextus/</link>
+    <description>Recent content in Contextus on CEDIS</description>
+    <generator>Hugo</generator>
+    <language>pt</language>
+    <lastBuildDate>Tue, 10 Mar 2026 14:18:56 -0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/pt/tags/contextus/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Registro de software Contextus é concedido pelo INPI</title>
+      <link>http://localhost:1313/pt/posts/news-post.023/</link>
+      <pubDate>Thu, 19 Feb 2026 09:00:00 -0300</pubDate>
+      <guid>http://localhost:1313/pt/posts/news-post.023/</guid>
+      <description>O software Contextus recebeu certificado de registro de programa de computador concedido pelo INPI, referente ao processo BR512026000889-1.</description>
+    </item>
+  </channel>
+</rss>
