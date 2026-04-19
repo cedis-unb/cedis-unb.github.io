@@ -1,0 +1,53 @@
+{{ define "main" }}
+{{ $isPt := eq .Site.Language.Lang "pt" }}
+{{ $content := .Content }}
+{{ $intro := .Params.description | default (cond $isPt "Linha do tempo com os principais marcos institucionais do CEDIS." "Timeline with the main institutional milestones of CEDIS.") }}
+{{ $eyebrow := .Params.eyebrow | default (cond $isPt "Linha do tempo" "Timeline") }}
+{{ $parts := split $content `<h2 id="` }}
+{{ $events := slice }}
+
+{{ range after 1 $parts }}
+  {{ $block := printf `<h2 id="%s` . }}
+  {{ $anchor := replaceRE `(?s)^<h2 id="([^"]+)".*` `${1}` $block }}
+  {{ $year := replaceRE `(?s)^<h2 id="([^"]+)"[^>]*>(.*?)</h2>.*` `${2}` $block | plainify | htmlUnescape | strings.TrimSpace }}
+  {{ $body := replaceRE `(?s)^<h2 id="([^"]+)"[^>]*>.*?</h2>(.*)$` `${2}` $block | strings.TrimSpace }}
+  {{ if $year }}
+    {{ $events = $events | append (dict "anchor" $anchor "year" $year "body" $body) }}
+  {{ end }}
+{{ end }}
+
+<main class="bg-[linear-gradient(180deg,_#f8fafc_0%,_#ffffff_28%,_#f8fafc_100%)] text-gray-950 dark:bg-[linear-gradient(180deg,_#0f172a_0%,_#111827_58%,_#0b1120_100%)] dark:text-gray-100">
+  <section class="border-b border-black/5 bg-[radial-gradient(circle_at_top,_rgba(197,39,47,0.12),_transparent_34%),linear-gradient(180deg,_#ffffff_0%,_#f8fafc_100%)] dark:border-white/10 dark:bg-[radial-gradient(circle_at_top,_rgba(197,39,47,0.18),_transparent_34%),linear-gradient(180deg,_#111827_0%,_#0f172a_100%)]">
+    <div class="mx-auto max-w-screen-lg px-4 py-12 text-center md:px-6 lg:px-8 lg:py-14">
+      <span class="inline-flex rounded-full border border-black/10 bg-white px-4 py-1 text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-gray-500 dark:border-white/10 dark:bg-white/[0.05] dark:text-white/55">{{ $eyebrow }}</span>
+      <h1 class="mt-5 text-4xl font-black tracking-tight text-gray-950 dark:text-white md:text-5xl">{{ .Title }}</h1>
+      <p class="mx-auto mt-4 max-w-3xl text-base leading-8 text-gray-600 dark:text-white/72 md:text-lg">{{ $intro }}</p>
+      {{ if gt (len $events) 0 }}
+      <div class="mt-8 flex flex-wrap justify-center gap-2">
+        {{ range $events }}
+        <a href="#{{ .anchor }}" class="inline-flex rounded-full border border-black/10 bg-white px-4 py-2 text-sm font-semibold text-gray-700 transition-colors hover:border-primary-400 hover:text-primary-700 dark:border-white/10 dark:bg-white/[0.04] dark:text-white/78 dark:hover:border-primary-300 dark:hover:text-primary-100">{{ .year }}</a>
+        {{ end }}
+      </div>
+      {{ end }}
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-screen-lg px-4 py-10 md:px-6 lg:px-8 lg:py-12">
+    {{ if gt (len $events) 0 }}
+    <div class="relative ml-3 border-l border-primary-200 pl-8 dark:border-primary-400/25 md:ml-6 md:pl-10">
+      {{ range $events }}
+      <section id="{{ .anchor }}" class="relative pb-10 last:pb-0">
+        <span class="absolute -left-[2.35rem] top-2 h-4 w-4 rounded-full border-4 border-white bg-primary-600 shadow-[0_0_0_6px_rgba(197,39,47,0.12)] dark:border-gray-950 md:-left-[2.85rem]"></span>
+        <div class="rounded-[1.5rem] border border-black/5 bg-white/92 p-6 shadow-[0_18px_60px_rgba(15,23,42,0.08)] dark:border-white/10 dark:bg-white/[0.04]">
+          <div class="text-sm font-semibold uppercase tracking-[0.24em] text-primary-700 dark:text-primary-200">{{ .year }}</div>
+          <div class="mt-3 text-base leading-8 text-gray-600 dark:text-white/72 [&_p]:m-0">{{ .body | safeHTML }}</div>
+        </div>
+      </section>
+      {{ end }}
+    </div>
+    {{ else }}
+    <div class="rounded-[1.75rem] border border-black/5 bg-white/90 p-6 shadow-[0_18px_60px_rgba(15,23,42,0.08)] dark:border-white/10 dark:bg-white/[0.04]">{{ $content | safeHTML }}</div>
+    {{ end }}
+  </section>
+</main>
+{{ end }}

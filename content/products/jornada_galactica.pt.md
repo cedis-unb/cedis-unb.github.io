@@ -2,7 +2,8 @@
 author: CEDIS
 title: "Gamificação Jornada Galáctica"
 date: 2024-10-14T01:37:18-03:00
-language: en
+language: pt
+product_language: pt
 weight: 14
 featured_image: "../assets/images/featured/projetoCC - Jornada Galáctica.png"
 summary: Jornada Galáctica, uma gamificação para o portal Canal Ciência. 

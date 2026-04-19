@@ -3,6 +3,7 @@ author: CEDIS
 title: "Evidentia Review"
 date: 2026-03-09T18:00:00-03:00
 language: pt
+product_language: pt/en
 weight: 1
 featured_image: "../assets/images/featured/produto_EVIDENTIA.png"
 summary: Projeto do CEDIS voltado ao planejamento, condução e relato de revisões sistemáticas da literatura com rastreabilidade, colaboração e relatórios reproduzíveis.

@@ -3,6 +3,7 @@ author: CEDIS
 title: "OctaAnalysis"
 date: 2026-03-10T09:00:00-03:00
 language: pt
+product_language: pt/en
 weight: 2
 featured_image: "../assets/images/featured/octaanalysis-dashboard.png"
 summary: Plataforma do CEDIS criada para apoiar o design, a gestão e a análise de experiências educacionais e colaborativas gamificadas.
