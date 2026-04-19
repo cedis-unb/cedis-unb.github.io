@@ -1,4 +1,103 @@
 people:
+- name: Cristiane Soares Ramos
+  categories:
+  - people
+  - phd_candidate
+  title:
+    pt: "Efeitos dos fatores humanos no Desenvolvimento de Software seguro"
+    en: "Effects of human factors on secure software development"
+  url: /people/cristiane_ramos
+  program: curso_ppca_doutorado
+  advisors:
+  - sergio_freitas
+  tags:
+  - active
+  - security
+  - soft_skills
+  year: 2026
+- name: Ian Lucca Soares Mesquita
+  categories:
+  - people
+  - tcc
+  title:
+    pt: "Impacto do uso de IA em curso de Engenharia de Software"
+    en: "Impact of the use of AI in a Software Engineering course"
+  program: curso_esw2
+  advisors:
+  - sergio_freitas
+  tags:
+  - active
+  - ai
+  - education
+  year: 2026
+- name: André Lopes de Sousa
+  categories:
+  - people
+  - tcc
+  title:
+    pt: "Inteligência artificial e direito"
+    en: "Artificial intelligence and law"
+  program: curso_esw2
+  advisors:
+  - sergio_freitas
+  tags:
+  - active
+  - ai
+  year: 2026
+- name: Israel Thalles Dutra dos Santos
+  categories:
+  - people
+  - tcc
+  title:
+    pt: "Tema em definição"
+    en: "Topic under development"
+  program: curso_esw2
+  advisors:
+  - sergio_freitas
+  tags:
+  - active
+  year: 2026
+- name: Christian Hirsch Santos
+  categories:
+  - people
+  - tcc
+  title:
+    pt: "Impacto do uso de IA em curso de Engenharia de Software"
+    en: "Impact of the use of AI in a Software Engineering course"
+  program: curso_esw2
+  advisors:
+  - sergio_freitas
+  tags:
+  - active
+  - ai
+  - education
+  year: 2026
+- name: Henrique Azevedo Batalha
+  categories:
+  - people
+  - tcc
+  title:
+    pt: "Tema em definição"
+    en: "Topic under development"
+  program: curso_esw2
+  advisors:
+  - sergio_freitas
+  tags:
+  - active
+  year: 2026
+- name: Marina Marcia Costa de Souza
+  categories:
+  - people
+  - tcc
+  title:
+    pt: "Tema em definição"
+    en: "Topic under development"
+  program: curso_esw2
+  advisors:
+  - sergio_freitas
+  tags:
+  - active
+  year: 2026
 - name: Danielle Soares Da Silva
   categories:
   - people
@@ -302,7 +401,7 @@ people:
   - active
   - gamification
   year: 2025
-- name: Geovanna Maciel Avelino da CostaBeatriz Vieira Nascimento
+- name: Geovanna Maciel Avelino da Costa
   categories:
   - people
   - tcc
@@ -347,21 +446,6 @@ people:
   - active
   - gamification
   year: 2025
-- name: Marina Marcia Costa de Souza
-  categories:
-  - people
-  - tcc
-  title:
-    pt: "Machine learning aplicado a identificação de vulnerabilidades de segurança"
-    en: "Machine Learning Applied to Security Vulnerability Identification"
-  program: curso_esw2
-  advisors:
-  - sergio_freitas
-  tags:
-  - active
-  - machine_learning
-  - security
-  year: 2025
 - name: Miguel Matos Costa de Frias Barbosa
   categories:
   - people
@@ -381,19 +465,16 @@ people:
 - name: Mylena Angélica Silva Farias
   categories:
   - people
-  - scientific_initiation
   - tcc
   title:
     pt: "Visualização Interativa de Estruturas de Dados com Realidade Aumentada para Apoio ao Ensino de Algoritmos: Uma abordagem gamificada para engajamento e aprendizagem ativa"
-    en: "Predictive Framework for Student Engagement and Performance in Gamified Learning Environments Based on Octalysis, Neuroscientific Indicators, and Machine Learning"
+    en: "Interactive Visualization of Data Structures with Augmented Reality to Support Algorithm Teaching: A Gamified Approach for Engagement and Active Learning"
   program: curso_esw2
   advisors:
   - sergio_freitas
   tags:
   - active
   - gamification
-  - machine_learning
-  - ai
   - active_learning
   - social_software
   year: 2025

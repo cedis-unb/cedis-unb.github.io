@@ -5902,7 +5902,252 @@
  
  
  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  &lt;div&gt;
+ 
+ &lt;div class="caput"&gt;
+ 
+ 
+ &lt;h3 id="phd"&gt;PhD&lt;/h3&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;/div&gt;
+ 
+ &lt;ul&gt;
+ 
+ 
+ &lt;li x-data="{ open: false }"&gt;
+ &lt;span&gt;&lt;strong&gt;Cristiane Soares Ramos&lt;/strong&gt;&lt;/span&gt;.
+ &lt;span&gt;&lt;a href="https://cedis.unb.br/people/cristiane_ramos"&gt;
+ Effects of human factors on secure software development
+ &lt;/a&gt;.&lt;/span&gt;
+ &lt;span&gt;PhD Thesis in Applied Computing, University of Brasília (Brazil),&lt;/span&gt;
+ &lt;span&gt;(2026).&lt;/span&gt;
+ 
+ 
+ Advisor(s):
+ 
+ 
+ &lt;a href="https://cedis.unb.br/people/sergio_freitas"&gt;Sergio Freitas&lt;/a&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ . Tags:
+ 
+ 
+ &lt;a href="https://cedis.unb.br/tags/security"&gt;Cybersecurity&lt;/a&gt;, 
+ 
+ 
+ &lt;a href="https://cedis.unb.br/tags/soft_skills"&gt;Soft Skills&lt;/a&gt;
+ .
+ 
+ 
+ 
+ &lt;/li&gt;
+ 
+ 
+ &lt;/ul&gt;
  
  &lt;/div&gt;
  
@@ -6456,6 +6701,174 @@
  
  
 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  
  
  
@@ -19203,6 +19616,174 @@
  
  
  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  &lt;div&gt;
  
  &lt;/div&gt;
@@ -25779,6 +26360,161 @@
  
  
  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  &lt;div&gt;
  
  &lt;div class="caput"&gt;
@@ -25896,73 +26632,6 @@
  
  
  &lt;a href="https://cedis.unb.br/tags/ai"&gt;Artificial Intelligence&lt;/a&gt;
- .
- 
- 
- 
- &lt;/li&gt;
- 
- 
- 
- &lt;li x-data="{ open: false }"&gt;
- &lt;span&gt;&lt;strong&gt;Mylena Angélica Silva Farias&lt;/strong&gt;&lt;/span&gt;.
- &lt;span&gt;
- Predictive Framework for Student Engagement and Performance in Gamified Learning Environments Based on Octalysis, Neuroscientific Indicators, and Machine Learning
- .&lt;/span&gt;
- &lt;span&gt;Bachelor of Software Engineering - University of Brasília (Brazil),&lt;/span&gt;
- &lt;span&gt;(2025).&lt;/span&gt;
- 
- 
- Advisor(s):
- 
- 
- &lt;a href="https://cedis.unb.br/people/sergio_freitas"&gt;Sergio Freitas&lt;/a&gt;
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- . Tags:
- 
- 
- &lt;a href="https://cedis.unb.br/tags/gamification"&gt;Gamification&lt;/a&gt;, 
- 
- 
- &lt;a href="https://cedis.unb.br/tags/machine_learning"&gt;Machine Learning&lt;/a&gt;, 
- 
- 
- &lt;a href="https://cedis.unb.br/tags/ai"&gt;Artificial Intelligence&lt;/a&gt;, 
- 
- 
- &lt;a href="https://cedis.unb.br/tags/active_learning"&gt;Active Learning&lt;/a&gt;, 
- 
- 
- &lt;a href="https://cedis.unb.br/tags/social_software"&gt;Social Software&lt;/a&gt;
  .
  
  
@@ -33688,6 +34357,239 @@
  
  
  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  &lt;div&gt;
  
  &lt;div class="caput"&gt;
@@ -33705,6 +34607,224 @@
  &lt;/div&gt;
  
  &lt;ul&gt;
+ 
+ 
+ &lt;li x-data="{ open: false }"&gt;
+ &lt;span&gt;&lt;strong&gt;Ian Lucca Soares Mesquita&lt;/strong&gt;&lt;/span&gt;.
+ &lt;span&gt;
+ Impact of the use of AI in a Software Engineering course
+ .&lt;/span&gt;
+ &lt;span&gt;Bachelor of Software Engineering - University of Brasília (Brazil),&lt;/span&gt;
+ &lt;span&gt;(2026).&lt;/span&gt;
+ 
+ 
+ Advisor(s):
+ 
+ 
+ &lt;a href="https://cedis.unb.br/people/sergio_freitas"&gt;Sergio Freitas&lt;/a&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ . Tags:
+ 
+ 
+ &lt;a href="https://cedis.unb.br/tags/ai"&gt;Artificial Intelligence&lt;/a&gt;, 
+ 
+ 
+ &lt;a href="https://cedis.unb.br/tags/education"&gt;Education&lt;/a&gt;
+ .
+ 
+ 
+ 
+ &lt;/li&gt;
+ 
+ 
+ 
+ &lt;li x-data="{ open: false }"&gt;
+ &lt;span&gt;&lt;strong&gt;André Lopes de Sousa&lt;/strong&gt;&lt;/span&gt;.
+ &lt;span&gt;
+ Artificial intelligence and law
+ .&lt;/span&gt;
+ &lt;span&gt;Bachelor of Software Engineering - University of Brasília (Brazil),&lt;/span&gt;
+ &lt;span&gt;(2026).&lt;/span&gt;
+ 
+ 
+ Advisor(s):
+ 
+ 
+ &lt;a href="https://cedis.unb.br/people/sergio_freitas"&gt;Sergio Freitas&lt;/a&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ . Tags:
+ 
+ 
+ &lt;a href="https://cedis.unb.br/tags/ai"&gt;Artificial Intelligence&lt;/a&gt;
+ .
+ 
+ 
+ 
+ &lt;/li&gt;
+ 
+ 
+ 
+ &lt;li x-data="{ open: false }"&gt;
+ &lt;span&gt;&lt;strong&gt;Israel Thalles Dutra dos Santos&lt;/strong&gt;&lt;/span&gt;.
+ &lt;span&gt;
+ Topic under development
+ .&lt;/span&gt;
+ &lt;span&gt;Bachelor of Software Engineering - University of Brasília (Brazil),&lt;/span&gt;
+ &lt;span&gt;(2026).&lt;/span&gt;
+ 
+ 
+ Advisor(s):
+ 
+ 
+ &lt;a href="https://cedis.unb.br/people/sergio_freitas"&gt;Sergio Freitas&lt;/a&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;/li&gt;
+ 
+ 
+ 
+ &lt;li x-data="{ open: false }"&gt;
+ &lt;span&gt;&lt;strong&gt;Christian Hirsch Santos&lt;/strong&gt;&lt;/span&gt;.
+ &lt;span&gt;
+ Impact of the use of AI in a Software Engineering course
+ .&lt;/span&gt;
+ &lt;span&gt;Bachelor of Software Engineering - University of Brasília (Brazil),&lt;/span&gt;
+ &lt;span&gt;(2026).&lt;/span&gt;
+ 
+ 
+ Advisor(s):
+ 
+ 
+ &lt;a href="https://cedis.unb.br/people/sergio_freitas"&gt;Sergio Freitas&lt;/a&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ . Tags:
+ 
+ 
+ &lt;a href="https://cedis.unb.br/tags/ai"&gt;Artificial Intelligence&lt;/a&gt;, 
+ 
+ 
+ &lt;a href="https://cedis.unb.br/tags/education"&gt;Education&lt;/a&gt;
+ .
+ 
+ 
+ 
+ &lt;/li&gt;
+ 
+ 
+ 
+ &lt;li x-data="{ open: false }"&gt;
+ &lt;span&gt;&lt;strong&gt;Henrique Azevedo Batalha&lt;/strong&gt;&lt;/span&gt;.
+ &lt;span&gt;
+ Topic under development
+ .&lt;/span&gt;
+ &lt;span&gt;Bachelor of Software Engineering - University of Brasília (Brazil),&lt;/span&gt;
+ &lt;span&gt;(2026).&lt;/span&gt;
+ 
+ 
+ Advisor(s):
+ 
+ 
+ &lt;a href="https://cedis.unb.br/people/sergio_freitas"&gt;Sergio Freitas&lt;/a&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;/li&gt;
+ 
+ 
+ 
+ &lt;li x-data="{ open: false }"&gt;
+ &lt;span&gt;&lt;strong&gt;Marina Marcia Costa de Souza&lt;/strong&gt;&lt;/span&gt;.
+ &lt;span&gt;
+ Topic under development
+ .&lt;/span&gt;
+ &lt;span&gt;Bachelor of Software Engineering - University of Brasília (Brazil),&lt;/span&gt;
+ &lt;span&gt;(2026).&lt;/span&gt;
+ 
+ 
+ Advisor(s):
+ 
+ 
+ &lt;a href="https://cedis.unb.br/people/sergio_freitas"&gt;Sergio Freitas&lt;/a&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;/li&gt;
+ 
  
  
  &lt;li x-data="{ open: false }"&gt;
@@ -33839,7 +34959,7 @@
  
  
  &lt;li x-data="{ open: false }"&gt;
- &lt;span&gt;&lt;strong&gt;Geovanna Maciel Avelino da CostaBeatriz Vieira Nascimento&lt;/strong&gt;&lt;/span&gt;.
+ &lt;span&gt;&lt;strong&gt;Geovanna Maciel Avelino da Costa&lt;/strong&gt;&lt;/span&gt;.
  &lt;span&gt;
  Interactive Visualization of Data Structures with Augmented Reality to Support Algorithm Teaching: A Gamified Approach for Engagement and Active Learning
  .&lt;/span&gt;
@@ -33938,55 +35058,9 @@
  
  
  &lt;li x-data="{ open: false }"&gt;
- &lt;span&gt;&lt;strong&gt;Marina Marcia Costa de Souza&lt;/strong&gt;&lt;/span&gt;.
- &lt;span&gt;
- Machine Learning Applied to Security Vulnerability Identification
- .&lt;/span&gt;
- &lt;span&gt;Bachelor of Software Engineering - University of Brasília (Brazil),&lt;/span&gt;
- &lt;span&gt;(2025).&lt;/span&gt;
- 
- 
- Advisor(s):
- 
- 
- &lt;a href="https://cedis.unb.br/people/sergio_freitas"&gt;Sergio Freitas&lt;/a&gt;
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- . Tags:
- 
- 
- &lt;a href="https://cedis.unb.br/tags/machine_learning"&gt;Machine Learning&lt;/a&gt;, 
- 
- 
- &lt;a href="https://cedis.unb.br/tags/security"&gt;Cybersecurity&lt;/a&gt;
- .
- 
- 
- 
- &lt;/li&gt;
- 
- 
- 
- &lt;li x-data="{ open: false }"&gt;
  &lt;span&gt;&lt;strong&gt;Mylena Angélica Silva Farias&lt;/strong&gt;&lt;/span&gt;.
  &lt;span&gt;
- Predictive Framework for Student Engagement and Performance in Gamified Learning Environments Based on Octalysis, Neuroscientific Indicators, and Machine Learning
+ Interactive Visualization of Data Structures with Augmented Reality to Support Algorithm Teaching: A Gamified Approach for Engagement and Active Learning
  .&lt;/span&gt;
  &lt;span&gt;Bachelor of Software Engineering - University of Brasília (Brazil),&lt;/span&gt;
  &lt;span&gt;(2025).&lt;/span&gt;
@@ -33996,14 +35070,6 @@
  
  
  &lt;a href="https://cedis.unb.br/people/sergio_freitas"&gt;Sergio Freitas&lt;/a&gt;
- 
- 
- 
- 
- 
- 
- 
- 
  
  
  
@@ -34030,12 +35096,6 @@
  
  
  &lt;a href="https://cedis.unb.br/tags/gamification"&gt;Gamification&lt;/a&gt;, 
- 
- 
- &lt;a href="https://cedis.unb.br/tags/machine_learning"&gt;Machine Learning&lt;/a&gt;, 
- 
- 
- &lt;a href="https://cedis.unb.br/tags/ai"&gt;Artificial Intelligence&lt;/a&gt;, 
  
  
  &lt;a href="https://cedis.unb.br/tags/active_learning"&gt;Active Learning&lt;/a&gt;, 
@@ -35021,6 +36081,174 @@
  
  
 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  
  
  

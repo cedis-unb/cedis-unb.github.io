@@ -5902,7 +5902,252 @@
  
  
  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  &lt;div&gt;
+ 
+ &lt;div class="caput"&gt;
+ 
+ 
+ &lt;h3 id="phd"&gt;PhD&lt;/h3&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;/div&gt;
+ 
+ &lt;ul&gt;
+ 
+ 
+ &lt;li x-data="{ open: false }"&gt;
+ &lt;span&gt;&lt;strong&gt;Cristiane Soares Ramos&lt;/strong&gt;&lt;/span&gt;.
+ &lt;span&gt;&lt;a href="https://cedis.unb.br/people/cristiane_ramos"&gt;
+ Efeitos dos fatores humanos no Desenvolvimento de Software seguro
+ &lt;/a&gt;.&lt;/span&gt;
+ &lt;span&gt;Tese (Doutorado em Computação Aplicada) - Universidade de Brasília,&lt;/span&gt;
+ &lt;span&gt;(2026).&lt;/span&gt;
+ 
+ 
+ Orientador(es):
+ 
+ 
+ &lt;a href="https://cedis.unb.br/pt/people/sergio_freitas"&gt;Sergio Freitas&lt;/a&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ . Tags:
+ 
+ 
+ &lt;a href="https://cedis.unb.br/pt/tags/security"&gt;Segurança cibernética&lt;/a&gt;, 
+ 
+ 
+ &lt;a href="https://cedis.unb.br/pt/tags/soft_skills"&gt;Habilidades Socioemocionais&lt;/a&gt;
+ .
+ 
+ 
+ 
+ &lt;/li&gt;
+ 
+ 
+ &lt;/ul&gt;
  
  &lt;/div&gt;
  
@@ -6456,6 +6701,174 @@
  
  
 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  
  
  
@@ -19203,6 +19616,174 @@
  
  
  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  &lt;div&gt;
  
  &lt;/div&gt;
@@ -25779,6 +26360,161 @@
  
  
  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  &lt;div&gt;
  
  &lt;div class="caput"&gt;
@@ -25896,73 +26632,6 @@
  
  
  &lt;a href="https://cedis.unb.br/pt/tags/ai"&gt;Inteligência Artificial&lt;/a&gt;
- .
- 
- 
- 
- &lt;/li&gt;
- 
- 
- 
- &lt;li x-data="{ open: false }"&gt;
- &lt;span&gt;&lt;strong&gt;Mylena Angélica Silva Farias&lt;/strong&gt;&lt;/span&gt;.
- &lt;span&gt;
- Visualização Interativa de Estruturas de Dados com Realidade Aumentada para Apoio ao Ensino de Algoritmos: Uma abordagem gamificada para engajamento e aprendizagem ativa
- .&lt;/span&gt;
- &lt;span&gt;Bacharelado em Engenharia de Software - UnB,&lt;/span&gt;
- &lt;span&gt;(2025).&lt;/span&gt;
- 
- 
- Orientador(es):
- 
- 
- &lt;a href="https://cedis.unb.br/pt/people/sergio_freitas"&gt;Sergio Freitas&lt;/a&gt;
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- . Tags:
- 
- 
- &lt;a href="https://cedis.unb.br/pt/tags/gamification"&gt;Gamificação&lt;/a&gt;, 
- 
- 
- &lt;a href="https://cedis.unb.br/pt/tags/machine_learning"&gt;Aprendizado de Máquina&lt;/a&gt;, 
- 
- 
- &lt;a href="https://cedis.unb.br/pt/tags/ai"&gt;Inteligência Artificial&lt;/a&gt;, 
- 
- 
- &lt;a href="https://cedis.unb.br/pt/tags/active_learning"&gt;Aprendizagem Ativa&lt;/a&gt;, 
- 
- 
- &lt;a href="https://cedis.unb.br/pt/tags/social_software"&gt;Software Social&lt;/a&gt;
  .
  
  
@@ -33688,6 +34357,239 @@
  
  
  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  &lt;div&gt;
  
  &lt;div class="caput"&gt;
@@ -33705,6 +34607,224 @@
  &lt;/div&gt;
  
  &lt;ul&gt;
+ 
+ 
+ &lt;li x-data="{ open: false }"&gt;
+ &lt;span&gt;&lt;strong&gt;Ian Lucca Soares Mesquita&lt;/strong&gt;&lt;/span&gt;.
+ &lt;span&gt;
+ Impacto do uso de IA em curso de Engenharia de Software
+ .&lt;/span&gt;
+ &lt;span&gt;Bacharelado em Engenharia de Software - UnB,&lt;/span&gt;
+ &lt;span&gt;(2026).&lt;/span&gt;
+ 
+ 
+ Orientador(es):
+ 
+ 
+ &lt;a href="https://cedis.unb.br/pt/people/sergio_freitas"&gt;Sergio Freitas&lt;/a&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ . Tags:
+ 
+ 
+ &lt;a href="https://cedis.unb.br/pt/tags/ai"&gt;Inteligência Artificial&lt;/a&gt;, 
+ 
+ 
+ &lt;a href="https://cedis.unb.br/pt/tags/education"&gt;Educação&lt;/a&gt;
+ .
+ 
+ 
+ 
+ &lt;/li&gt;
+ 
+ 
+ 
+ &lt;li x-data="{ open: false }"&gt;
+ &lt;span&gt;&lt;strong&gt;André Lopes de Sousa&lt;/strong&gt;&lt;/span&gt;.
+ &lt;span&gt;
+ Inteligência artificial e direito
+ .&lt;/span&gt;
+ &lt;span&gt;Bacharelado em Engenharia de Software - UnB,&lt;/span&gt;
+ &lt;span&gt;(2026).&lt;/span&gt;
+ 
+ 
+ Orientador(es):
+ 
+ 
+ &lt;a href="https://cedis.unb.br/pt/people/sergio_freitas"&gt;Sergio Freitas&lt;/a&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ . Tags:
+ 
+ 
+ &lt;a href="https://cedis.unb.br/pt/tags/ai"&gt;Inteligência Artificial&lt;/a&gt;
+ .
+ 
+ 
+ 
+ &lt;/li&gt;
+ 
+ 
+ 
+ &lt;li x-data="{ open: false }"&gt;
+ &lt;span&gt;&lt;strong&gt;Israel Thalles Dutra dos Santos&lt;/strong&gt;&lt;/span&gt;.
+ &lt;span&gt;
+ Tema em definição
+ .&lt;/span&gt;
+ &lt;span&gt;Bacharelado em Engenharia de Software - UnB,&lt;/span&gt;
+ &lt;span&gt;(2026).&lt;/span&gt;
+ 
+ 
+ Orientador(es):
+ 
+ 
+ &lt;a href="https://cedis.unb.br/pt/people/sergio_freitas"&gt;Sergio Freitas&lt;/a&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;/li&gt;
+ 
+ 
+ 
+ &lt;li x-data="{ open: false }"&gt;
+ &lt;span&gt;&lt;strong&gt;Christian Hirsch Santos&lt;/strong&gt;&lt;/span&gt;.
+ &lt;span&gt;
+ Impacto do uso de IA em curso de Engenharia de Software
+ .&lt;/span&gt;
+ &lt;span&gt;Bacharelado em Engenharia de Software - UnB,&lt;/span&gt;
+ &lt;span&gt;(2026).&lt;/span&gt;
+ 
+ 
+ Orientador(es):
+ 
+ 
+ &lt;a href="https://cedis.unb.br/pt/people/sergio_freitas"&gt;Sergio Freitas&lt;/a&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ . Tags:
+ 
+ 
+ &lt;a href="https://cedis.unb.br/pt/tags/ai"&gt;Inteligência Artificial&lt;/a&gt;, 
+ 
+ 
+ &lt;a href="https://cedis.unb.br/pt/tags/education"&gt;Educação&lt;/a&gt;
+ .
+ 
+ 
+ 
+ &lt;/li&gt;
+ 
+ 
+ 
+ &lt;li x-data="{ open: false }"&gt;
+ &lt;span&gt;&lt;strong&gt;Henrique Azevedo Batalha&lt;/strong&gt;&lt;/span&gt;.
+ &lt;span&gt;
+ Tema em definição
+ .&lt;/span&gt;
+ &lt;span&gt;Bacharelado em Engenharia de Software - UnB,&lt;/span&gt;
+ &lt;span&gt;(2026).&lt;/span&gt;
+ 
+ 
+ Orientador(es):
+ 
+ 
+ &lt;a href="https://cedis.unb.br/pt/people/sergio_freitas"&gt;Sergio Freitas&lt;/a&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;/li&gt;
+ 
+ 
+ 
+ &lt;li x-data="{ open: false }"&gt;
+ &lt;span&gt;&lt;strong&gt;Marina Marcia Costa de Souza&lt;/strong&gt;&lt;/span&gt;.
+ &lt;span&gt;
+ Tema em definição
+ .&lt;/span&gt;
+ &lt;span&gt;Bacharelado em Engenharia de Software - UnB,&lt;/span&gt;
+ &lt;span&gt;(2026).&lt;/span&gt;
+ 
+ 
+ Orientador(es):
+ 
+ 
+ &lt;a href="https://cedis.unb.br/pt/people/sergio_freitas"&gt;Sergio Freitas&lt;/a&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;/li&gt;
+ 
  
  
  &lt;li x-data="{ open: false }"&gt;
@@ -33839,7 +34959,7 @@
  
  
  &lt;li x-data="{ open: false }"&gt;
- &lt;span&gt;&lt;strong&gt;Geovanna Maciel Avelino da CostaBeatriz Vieira Nascimento&lt;/strong&gt;&lt;/span&gt;.
+ &lt;span&gt;&lt;strong&gt;Geovanna Maciel Avelino da Costa&lt;/strong&gt;&lt;/span&gt;.
  &lt;span&gt;
  Visualização Interativa de Estruturas de Dados com Realidade Aumentada para Apoio ao Ensino de Algoritmos: Uma abordagem gamificada para engajamento e aprendizagem ativa
  .&lt;/span&gt;
@@ -33938,52 +35058,6 @@
  
  
  &lt;li x-data="{ open: false }"&gt;
- &lt;span&gt;&lt;strong&gt;Marina Marcia Costa de Souza&lt;/strong&gt;&lt;/span&gt;.
- &lt;span&gt;
- Machine learning aplicado a identificação de vulnerabilidades de segurança
- .&lt;/span&gt;
- &lt;span&gt;Bacharelado em Engenharia de Software - UnB,&lt;/span&gt;
- &lt;span&gt;(2025).&lt;/span&gt;
- 
- 
- Orientador(es):
- 
- 
- &lt;a href="https://cedis.unb.br/pt/people/sergio_freitas"&gt;Sergio Freitas&lt;/a&gt;
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- . Tags:
- 
- 
- &lt;a href="https://cedis.unb.br/pt/tags/machine_learning"&gt;Aprendizado de Máquina&lt;/a&gt;, 
- 
- 
- &lt;a href="https://cedis.unb.br/pt/tags/security"&gt;Segurança cibernética&lt;/a&gt;
- .
- 
- 
- 
- &lt;/li&gt;
- 
- 
- 
- &lt;li x-data="{ open: false }"&gt;
  &lt;span&gt;&lt;strong&gt;Mylena Angélica Silva Farias&lt;/strong&gt;&lt;/span&gt;.
  &lt;span&gt;
  Visualização Interativa de Estruturas de Dados com Realidade Aumentada para Apoio ao Ensino de Algoritmos: Uma abordagem gamificada para engajamento e aprendizagem ativa
@@ -34018,24 +35092,10 @@
  
  
  
- 
- 
- 
- 
- 
- 
- 
- 
  . Tags:
  
  
  &lt;a href="https://cedis.unb.br/pt/tags/gamification"&gt;Gamificação&lt;/a&gt;, 
- 
- 
- &lt;a href="https://cedis.unb.br/pt/tags/machine_learning"&gt;Aprendizado de Máquina&lt;/a&gt;, 
- 
- 
- &lt;a href="https://cedis.unb.br/pt/tags/ai"&gt;Inteligência Artificial&lt;/a&gt;, 
  
  
  &lt;a href="https://cedis.unb.br/pt/tags/active_learning"&gt;Aprendizagem Ativa&lt;/a&gt;, 
@@ -35021,6 +36081,174 @@
  
  
 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  
  
  
