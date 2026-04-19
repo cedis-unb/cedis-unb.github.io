@@ -6083,6 +6083,34 @@
  
  
  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  &lt;div&gt;
  
  &lt;div class="caput"&gt;
@@ -12866,6 +12894,34 @@
  
  
  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  &lt;div&gt;
  
  &lt;div class="caput"&gt;
@@ -12883,6 +12939,35 @@
  &lt;/div&gt;
  
  &lt;ul&gt;
+ 
+ 
+ &lt;li x-data="{ open: false }"&gt;
+ &lt;span&gt;&lt;strong&gt;Gilson de Araújo Borges&lt;/strong&gt;&lt;/span&gt;.
+ &lt;span&gt;
+ Micro serviços, em definição
+ .&lt;/span&gt;
+ &lt;span&gt;Dissertação (Mestrado Profissional em Computação Aplicada) - UnB,&lt;/span&gt;
+ &lt;span&gt;(2026).&lt;/span&gt;
+ 
+ 
+ Orientador(es):
+ 
+ 
+ &lt;a href="https://cedis.unb.br/pt/people/sergio_freitas"&gt;Sergio Freitas&lt;/a&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;/li&gt;
+ 
  
  
  &lt;li x-data="{ open: false }"&gt;
@@ -12964,9 +13049,9 @@
  
  
  &lt;li x-data="{ open: false }"&gt;
- &lt;span&gt;&lt;strong&gt;Bruno Marquete da Silva&lt;/strong&gt;&lt;/span&gt;.
+ &lt;span&gt;&lt;strong&gt;Lucas Pereira Gomes Linard&lt;/strong&gt;&lt;/span&gt;.
  &lt;span&gt;
- Em definição
+ Avaliação da gamificação na qualidade de código de software
  .&lt;/span&gt;
  &lt;span&gt;Dissertação (Mestrado Profissional em Computação Aplicada) - UnB,&lt;/span&gt;
  &lt;span&gt;(2024).&lt;/span&gt;
@@ -13012,56 +13097,10 @@
  &lt;li x-data="{ open: false }"&gt;
  &lt;span&gt;&lt;strong&gt;Bruno Mello Andrade&lt;/strong&gt;&lt;/span&gt;.
  &lt;span&gt;
- Em definição
+ Gamificação na Engenharia de Software: Avaliação do engajamento em equipes de Tecnologia da Informação em Fábrica de Software
  .&lt;/span&gt;
  &lt;span&gt;Dissertação (Mestrado Profissional em Computação Aplicada) - UnB,&lt;/span&gt;
- &lt;span&gt;(2024).&lt;/span&gt;
- 
- 
- Orientador(es):
- 
- 
- &lt;a href="https://cedis.unb.br/pt/people/sergio_freitas"&gt;Sergio Freitas&lt;/a&gt;
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- . Tags:
- 
- 
- &lt;a href="https://cedis.unb.br/pt/tags/gamification"&gt;Gamificação&lt;/a&gt;, 
- 
- 
- &lt;a href="https://cedis.unb.br/pt/tags/machine_learning"&gt;Aprendizado de Máquina&lt;/a&gt;
- .
- 
- 
- 
- &lt;/li&gt;
- 
- 
- 
- &lt;li x-data="{ open: false }"&gt;
- &lt;span&gt;&lt;strong&gt;Lucas Pereira Gomes Linard&lt;/strong&gt;&lt;/span&gt;.
- &lt;span&gt;
- Em definição
- .&lt;/span&gt;
- &lt;span&gt;Dissertação (Mestrado Profissional em Computação Aplicada) - UnB,&lt;/span&gt;
- &lt;span&gt;(2024).&lt;/span&gt;
+ &lt;span&gt;(2023).&lt;/span&gt;
  
  
  Orientador(es):
@@ -19784,6 +19823,34 @@
  
  
  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  &lt;div&gt;
  
  &lt;/div&gt;
@@ -20338,6 +20405,47 @@
  
  
 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  
  
  
@@ -26641,6 +26749,59 @@
  
  
  &lt;li x-data="{ open: false }"&gt;
+ &lt;span&gt;&lt;strong&gt;Mylena Angélica Silva Farias&lt;/strong&gt;&lt;/span&gt;.
+ &lt;span&gt;
+ Framework preditivo de engajamento e desempenho discente em ambientes de aprendizagem gamificados com base em Octalysis, indicadores neurocientíficos e machine learning
+ .&lt;/span&gt;
+ &lt;span&gt;Bacharelado em Engenharia de Software - UnB,&lt;/span&gt;
+ &lt;span&gt;(2025).&lt;/span&gt;
+ 
+ 
+ Orientador(es):
+ 
+ 
+ &lt;a href="https://cedis.unb.br/pt/people/sergio_freitas"&gt;Sergio Freitas&lt;/a&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ . Tags:
+ 
+ 
+ &lt;a href="https://cedis.unb.br/pt/tags/gamification"&gt;Gamificação&lt;/a&gt;, 
+ 
+ 
+ &lt;a href="https://cedis.unb.br/pt/tags/machine_learning"&gt;Aprendizado de Máquina&lt;/a&gt;, 
+ 
+ 
+ &lt;a href="https://cedis.unb.br/pt/tags/ai"&gt;Inteligência Artificial&lt;/a&gt;
+ .
+ 
+ 
+ 
+ &lt;/li&gt;
+ 
+ 
+ 
+ &lt;li x-data="{ open: false }"&gt;
  &lt;span&gt;&lt;strong&gt;Maurício Ferreira de Araújo&lt;/strong&gt;&lt;/span&gt;.
  &lt;span&gt;
  Acelerando PIC com GPU
@@ -27630,6 +27791,34 @@
  &lt;/ul&gt;
  
 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  
  
  
@@ -36081,6 +36270,34 @@
  
  
 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  
  
  

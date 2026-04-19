@@ -6083,6 +6083,34 @@
  
  
  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  &lt;div&gt;
  
  &lt;div class="caput"&gt;
@@ -12866,6 +12894,34 @@
  
  
  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  &lt;div&gt;
  
  &lt;div class="caput"&gt;
@@ -12883,6 +12939,35 @@
  &lt;/div&gt;
  
  &lt;ul&gt;
+ 
+ 
+ &lt;li x-data="{ open: false }"&gt;
+ &lt;span&gt;&lt;strong&gt;Gilson de Araújo Borges&lt;/strong&gt;&lt;/span&gt;.
+ &lt;span&gt;
+ Microservices, under development
+ .&lt;/span&gt;
+ &lt;span&gt;Master&amp;#39;s Thesis in Applied Computing, University of Brasília (Brazil),&lt;/span&gt;
+ &lt;span&gt;(2026).&lt;/span&gt;
+ 
+ 
+ Advisor(s):
+ 
+ 
+ &lt;a href="https://cedis.unb.br/people/sergio_freitas"&gt;Sergio Freitas&lt;/a&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;/li&gt;
+ 
  
  
  &lt;li x-data="{ open: false }"&gt;
@@ -12964,9 +13049,9 @@
  
  
  &lt;li x-data="{ open: false }"&gt;
- &lt;span&gt;&lt;strong&gt;Bruno Marquete da Silva&lt;/strong&gt;&lt;/span&gt;.
+ &lt;span&gt;&lt;strong&gt;Lucas Pereira Gomes Linard&lt;/strong&gt;&lt;/span&gt;.
  &lt;span&gt;
- Topic under development
+ Evaluation of gamification in software code quality
  .&lt;/span&gt;
  &lt;span&gt;Master&amp;#39;s Thesis in Applied Computing, University of Brasília (Brazil),&lt;/span&gt;
  &lt;span&gt;(2024).&lt;/span&gt;
@@ -13012,56 +13097,10 @@
  &lt;li x-data="{ open: false }"&gt;
  &lt;span&gt;&lt;strong&gt;Bruno Mello Andrade&lt;/strong&gt;&lt;/span&gt;.
  &lt;span&gt;
- Topic under development
+ Gamification in Software Engineering: Evaluation of engagement in Information Technology teams in a Software Factory
  .&lt;/span&gt;
  &lt;span&gt;Master&amp;#39;s Thesis in Applied Computing, University of Brasília (Brazil),&lt;/span&gt;
- &lt;span&gt;(2024).&lt;/span&gt;
- 
- 
- Advisor(s):
- 
- 
- &lt;a href="https://cedis.unb.br/people/sergio_freitas"&gt;Sergio Freitas&lt;/a&gt;
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- . Tags:
- 
- 
- &lt;a href="https://cedis.unb.br/tags/gamification"&gt;Gamification&lt;/a&gt;, 
- 
- 
- &lt;a href="https://cedis.unb.br/tags/machine_learning"&gt;Machine Learning&lt;/a&gt;
- .
- 
- 
- 
- &lt;/li&gt;
- 
- 
- 
- &lt;li x-data="{ open: false }"&gt;
- &lt;span&gt;&lt;strong&gt;Lucas Pereira Gomes Linard&lt;/strong&gt;&lt;/span&gt;.
- &lt;span&gt;
- Topic under development
- .&lt;/span&gt;
- &lt;span&gt;Master&amp;#39;s Thesis in Applied Computing, University of Brasília (Brazil),&lt;/span&gt;
- &lt;span&gt;(2024).&lt;/span&gt;
+ &lt;span&gt;(2023).&lt;/span&gt;
  
  
  Advisor(s):
@@ -19784,6 +19823,34 @@
  
  
  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  &lt;div&gt;
  
  &lt;/div&gt;
@@ -20338,6 +20405,47 @@
  
  
 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  
  
  
@@ -26641,6 +26749,59 @@
  
  
  &lt;li x-data="{ open: false }"&gt;
+ &lt;span&gt;&lt;strong&gt;Mylena Angélica Silva Farias&lt;/strong&gt;&lt;/span&gt;.
+ &lt;span&gt;
+ Predictive Framework for Student Engagement and Performance in Gamified Learning Environments Based on Octalysis, Neuroscientific Indicators, and Machine Learning
+ .&lt;/span&gt;
+ &lt;span&gt;Bachelor of Software Engineering - University of Brasília (Brazil),&lt;/span&gt;
+ &lt;span&gt;(2025).&lt;/span&gt;
+ 
+ 
+ Advisor(s):
+ 
+ 
+ &lt;a href="https://cedis.unb.br/people/sergio_freitas"&gt;Sergio Freitas&lt;/a&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ . Tags:
+ 
+ 
+ &lt;a href="https://cedis.unb.br/tags/gamification"&gt;Gamification&lt;/a&gt;, 
+ 
+ 
+ &lt;a href="https://cedis.unb.br/tags/machine_learning"&gt;Machine Learning&lt;/a&gt;, 
+ 
+ 
+ &lt;a href="https://cedis.unb.br/tags/ai"&gt;Artificial Intelligence&lt;/a&gt;
+ .
+ 
+ 
+ 
+ &lt;/li&gt;
+ 
+ 
+ 
+ &lt;li x-data="{ open: false }"&gt;
  &lt;span&gt;&lt;strong&gt;Maurício Ferreira de Araújo&lt;/strong&gt;&lt;/span&gt;.
  &lt;span&gt;
  Accelerating PIC with GPU
@@ -27630,6 +27791,34 @@
  &lt;/ul&gt;
  
 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  
  
  
@@ -36081,6 +36270,34 @@
  
  
 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  
  
  

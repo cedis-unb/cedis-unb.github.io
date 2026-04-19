@@ -465,6 +465,22 @@ people:
 - name: Mylena Angélica Silva Farias
   categories:
   - people
+  - scientific_initiation
+  title:
+    pt: "Framework preditivo de engajamento e desempenho discente em ambientes de aprendizagem gamificados com base em Octalysis, indicadores neurocientíficos e machine learning"
+    en: "Predictive Framework for Student Engagement and Performance in Gamified Learning Environments Based on Octalysis, Neuroscientific Indicators, and Machine Learning"
+  program: curso_esw2
+  advisors:
+  - sergio_freitas
+  tags:
+  - active
+  - gamification
+  - machine_learning
+  - ai
+  year: 2025
+- name: Mylena Angélica Silva Farias
+  categories:
+  - people
   - tcc
   title:
     pt: "Visualização Interativa de Estruturas de Dados com Realidade Aumentada para Apoio ao Ensino de Algoritmos: Uma abordagem gamificada para engajamento e aprendizagem ativa"
@@ -868,28 +884,26 @@ people:
   - ai
   - machine_learning
   year: 2024
-- name: Bruno Marquete da Silva
+- name: Gilson de Araújo Borges
   categories:
   - people
   - master_student
   title:
-    pt: "Em definição"
-    en: "Topic under development"
+    pt: "Micro serviços, em definição"
+    en: "Microservices, under development"
   program: curso_ppca
   advisors:
   - sergio_freitas
   tags:
   - active
-  - gamification
-  - machine_learning
-  year: 2024
+  year: 2026
 - name: Bruno Mello Andrade
   categories:
   - people
   - master_student
   title:
-    pt: "Em definição"
-    en: "Topic under development"
+    pt: "Gamificação na Engenharia de Software: Avaliação do engajamento em equipes de Tecnologia da Informação em Fábrica de Software"
+    en: "Gamification in Software Engineering: Evaluation of engagement in Information Technology teams in a Software Factory"
   program: curso_ppca
   advisors:
   - sergio_freitas
@@ -897,14 +911,14 @@ people:
   - active
   - gamification
   - machine_learning
-  year: 2024
+  year: 2023
 - name: Lucas Pereira Gomes Linard
   categories:
   - people
   - master_student
   title:
-    pt: "Em definição"
-    en: "Topic under development"
+    pt: "Avaliação da gamificação na qualidade de código de software"
+    en: "Evaluation of gamification in software code quality"
   program: curso_ppca
   advisors:
   - sergio_freitas
