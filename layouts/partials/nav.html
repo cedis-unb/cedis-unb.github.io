@@ -161,16 +161,6 @@
             <div class="ml-4 flex items-center">
                 <div class="language-switcher">
                     <ul>
-                        <!-- Exibe o idioma atual como item não clicável 
-                        {{ range .Site.Languages }}
-                            {{ if eq . $.Site.Language }}
-                                <li>
-                                    <span class="px-4 py-2 mt-2 text-sm font-semibold rounded-lg md:mt-0 md:ml-4 hover:text-white focus:text-white hover:bg-primary-600 focus:bg-primary-700 focus:outline-none focus:shadow-outline" aria-current="page">
-                                        {{ .LanguageName }}
-                                    </span>
-                                </li>
-                            {{ end }}
-                        {{ end }} -->
                         <!-- Dropdown para outros idiomas disponíveis -->
                         <li>
                             <ul aria-labelledby="dropdown-title">
@@ -212,6 +202,9 @@
                         </svg>
                     </a>
                 </div>
+                <a href="https://unb.br" target="_blank" rel="noopener noreferrer" class="hidden md:flex items-center justify-center ml-2" title="Universidade de Brasilia">
+                    <img src="/images/as_vert_neg.webp" alt="Logo UnB" class="h-9 w-24 object-contain">
+                </a>
             </div>
  
         </nav>

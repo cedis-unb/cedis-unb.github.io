@@ -1,1 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Project_super_r on CEDIS</title><link>https://cedis.unb.br/categories/project_super_r/</link><description>Recent content in Project_super_r on CEDIS</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sat, 03 May 2025 17:45:50 -0300</lastBuildDate><atom:link href="https://cedis.unb.br/categories/project_super_r/index.xml" rel="self" type="application/rss+xml"/><item><title>Super-R</title><link>https://cedis.unb.br/projects/super_r/</link><pubDate>Sat, 03 May 2025 17:08:50 -0300</pubDate><guid>https://cedis.unb.br/projects/super_r/</guid><description>Educational project, part of the &amp;lsquo;Software Requirements&amp;rsquo; course, an educational innovation developed by CEDIS at the University of Brasília.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Project_super_r on CEDIS</title>
+    <link>http://localhost:1313/categories/project_super_r/</link>
+    <description>Recent content in Project_super_r on CEDIS</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 03 May 2025 17:45:50 -0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/project_super_r/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Super-R</title>
+      <link>http://localhost:1313/projects/super_r/</link>
+      <pubDate>Sat, 03 May 2025 17:08:50 -0300</pubDate>
+      <guid>http://localhost:1313/projects/super_r/</guid>
+      <description>Educational project, part of the &amp;lsquo;Software Requirements&amp;rsquo; course, an educational innovation developed by CEDIS at the University of Brasília.</description>
+    </item>
+  </channel>
+</rss>
