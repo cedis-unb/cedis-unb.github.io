@@ -1,0 +1,42 @@
+{{- $isHome := .IsHome -}}
+{{- $isPt := eq .Site.Language.Lang "pt" -}}
+{{- $pageTitle := partial "translated-label.html" (dict "page" . "value" .Title) -}}
+{{- $channelTitle := cond $isHome .Site.Title (cond $isPt (printf "%s em %s" $pageTitle .Site.Title) (printf "%s on %s" $pageTitle .Site.Title)) -}}
+{{- $channelDescription := "" -}}
+{{- if $isHome -}}
+    {{- $channelDescription = .Site.Params.description -}}
+{{- else -}}
+    {{- with .Description -}}
+        {{- $channelDescription = . -}}
+    {{- else -}}
+        {{- $channelDescription = cond $isPt (printf "Conteudo recente em %s em %s" $pageTitle .Site.Title) (printf "Recent content in %s on %s" $pageTitle .Site.Title) -}}
+    {{- end -}}
+{{- end -}}
+{{- printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>{{ $channelTitle }}</title>
+    <link>{{ .Permalink }}</link>
+    <description>{{ $channelDescription }}</description>
+    <generator>Hugo</generator>
+    <language>{{ .Site.Language.Lang }}</language>
+    {{- with .Lastmod }}
+    <lastBuildDate>{{ .Format "Mon, 02 Jan 2006 15:04:05 -0700" }}</lastBuildDate>
+    {{- end }}
+    {{- with .OutputFormats.Get "RSS" }}
+    <atom:link href="{{ .Permalink }}" rel="self" type="{{ .MediaType.Type }}" />
+    {{- end }}
+    {{- range .Pages }}
+    {{- $itemTitle := partial "translated-label.html" (dict "page" . "value" .Title) }}
+    <item>
+      <title>{{ $itemTitle }}</title>
+      <link>{{ .Permalink }}</link>
+      {{- with .Date }}
+      <pubDate>{{ .Format "Mon, 02 Jan 2006 15:04:05 -0700" }}</pubDate>
+      {{- end }}
+      <guid>{{ .Permalink }}</guid>
+      <description>{{ with .Description }}{{ . }}{{ else }}{{ with .Summary }}{{ . | plainify }}{{ end }}{{ end }}</description>
+    </item>
+    {{- end }}
+  </channel>
+</rss>

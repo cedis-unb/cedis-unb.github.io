@@ -1,0 +1,48 @@
+{{- $values := slice -}}
+{{- with .page }}
+    {{- with .Data.Term }}{{- $values = $values | append . -}}{{- end -}}
+{{- end -}}
+{{- with .value }}{{- $values = $values | append . -}}{{- end -}}
+{{- with .page -}}
+    {{- with .LinkTitle }}{{- $values = $values | append . -}}{{- end -}}
+    {{- with .Title }}{{- $values = $values | append . -}}{{- end -}}
+    {{- with .Name }}{{- $values = $values | append . -}}{{- end -}}
+    {{- with .Type }}{{- $values = $values | append . -}}{{- end -}}
+    {{- with .Data.Plural }}{{- $values = $values | append . -}}{{- end -}}
+    {{- with .Data.Singular }}{{- $values = $values | append . -}}{{- end -}}
+{{- end -}}
+
+{{- $fallback := "" -}}
+{{- $keys := slice -}}
+{{- range $values -}}
+    {{- $candidate := printf "%v" . | strings.TrimSpace -}}
+    {{- if and (eq $fallback "") (ne $candidate "") -}}
+        {{- $fallback = $candidate -}}
+    {{- end -}}
+    {{- if ne $candidate "" -}}
+        {{- $lower := lower $candidate -}}
+        {{- $urlized := $candidate | urlize -}}
+        {{- $underscored := replace $lower " " "_" -}}
+        {{- $slugKey := replace $urlized "-" "_" -}}
+        {{- $keys = $keys | append $candidate $lower $urlized $underscored $slugKey -}}
+    {{- end -}}
+{{- end -}}
+
+{{- $translation := "" -}}
+{{- range $keys -}}
+    {{- if eq $translation "" -}}
+        {{- with i18n . -}}
+            {{- $translation = . -}}
+        {{- end -}}
+    {{- end -}}
+{{- end -}}
+
+{{- if ne $translation "" -}}
+    {{- $translation -}}
+{{- else -}}
+    {{- $display := $fallback -}}
+    {{- if and (ne $display "") (or (in $display "_") (in $display "-")) -}}
+        {{- $display = replaceRE "[-_]+" " " $display | humanize -}}
+    {{- end -}}
+    {{- $display -}}
+{{- end -}}

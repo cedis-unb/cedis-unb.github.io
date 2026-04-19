@@ -2,55 +2,53 @@
 {{ if gt $pag.TotalPages 1 }}
 {{ $.Scratch.Set "dot_rendered" false }}
 
-<nav class="flex items-center justify-center px-4 sm:px-0">
-    <div class="flex flex-1 w-0">
-        <div class="mx-auto border-t-2 border-primary-300">
-            <!-- Don't show on 1st and 2nd page -->
-            {{ if and (ne $pag.PageNumber 1) (ne $pag.PageNumber 2) }}
-            <a href="{{ $pag.First.URL }}" rel="first"
-                class="inline-flex items-center px-4 pt-4 text-lg font-black text-primary-600 dark:text-primary-400">«
-                {{i18n "first"}}</a>
-            {{ end }}
+<nav class="flex flex-col items-center justify-between gap-5 rounded-[2rem] border border-black/5 bg-white px-5 py-5 shadow-[0_18px_60px_rgba(15,23,42,0.08)] dark:border-white/10 dark:bg-white/[0.04] md:flex-row">
+        <div class="flex flex-wrap items-center gap-3">
+                {{ if and (ne $pag.PageNumber 1) (ne $pag.PageNumber 2) }}
+                <a href="{{ $pag.First.URL }}" rel="first" class="inline-flex items-center rounded-full border border-black/10 px-4 py-2 text-sm font-semibold text-gray-700 transition-colors hover:border-primary-500 hover:text-primary-600 dark:border-white/10 dark:text-white/75 dark:hover:border-primary-300 dark:hover:text-primary-200">
+                        « {{ i18n "first" }}
+                </a>
+                {{ end }}
 
-            {{ if $pag.HasPrev  }}
-            <a href="{{ $pag.Prev.URL }}" rel="prev"
-                class="inline-flex items-center px-4 pt-4 text-lg font-black text-primary-600 dark:text-primary-400">‹
-                {{i18n "previous"}}</a>
-            {{ end }}
+                {{ if $pag.HasPrev }}
+                <a href="{{ $pag.Prev.URL }}" rel="prev" class="inline-flex items-center rounded-full border border-black/10 px-4 py-2 text-sm font-semibold text-gray-700 transition-colors hover:border-primary-500 hover:text-primary-600 dark:border-white/10 dark:text-white/75 dark:hover:border-primary-300 dark:hover:text-primary-200">
+                        ‹ {{ i18n "previous" }}
+                </a>
+                {{ end }}
+        </div>
 
-            {{ range $pag.Pagers }}
-            {{ if eq . $pag }}
-            <!-- Current Page -->
-            <a class="font-black page-item active"><a href="{{ .URL }}"
-                    class="inline-flex items-center px-4 pt-4 text-lg font-medium text-primary-600 dark:text-primary-400">{{ .PageNumber }}</a>
-            </a>
-            {{ else if and (ge .PageNumber (sub $pag.PageNumber 2)) (le .PageNumber (add $pag.PageNumber 2)) }}
-            {{ $.Scratch.Set "dot_rendered" false }}
-            <!-- Render prev 2 page and next 2 pages -->
-            <a class="page-item"><a href="{{ .URL }}"
-                    class="inline-flex items-center px-4 pt-4 text-lg font-medium text-primary-600 dark:text-primary-400">{{ .PageNumber }}</a>
-            </a>
-            {{ else if eq ($.Scratch.Get "dot_rendered") false }}
-            <!-- render skip pages -->
-            {{ $.Scratch.Set "dot_rendered" true }}
-            <a class="page-item disabled"><a
-                    class="inline-flex items-center px-4 pt-4 text-lg font-medium text-primary-600 dark:text-primary-400">...</a>
-            </a>
-            {{ end }}
-            {{ end }}
+        <div class="flex flex-wrap items-center justify-center gap-2">
+                {{ range $pag.Pagers }}
+                {{ if eq . $pag }}
+                <span class="inline-flex h-11 min-w-11 items-center justify-center rounded-full bg-primary-600 px-4 text-sm font-black text-white shadow-lg shadow-primary-600/25">
+                        {{ .PageNumber }}
+                </span>
+                {{ else if and (ge .PageNumber (sub $pag.PageNumber 2)) (le .PageNumber (add $pag.PageNumber 2)) }}
+                {{ $.Scratch.Set "dot_rendered" false }}
+                <a href="{{ .URL }}" class="inline-flex h-11 min-w-11 items-center justify-center rounded-full border border-black/10 px-4 text-sm font-semibold text-gray-700 transition-colors hover:border-primary-500 hover:text-primary-600 dark:border-white/10 dark:text-white/75 dark:hover:border-primary-300 dark:hover:text-primary-200">
+                        {{ .PageNumber }}
+                </a>
+                {{ else if eq ($.Scratch.Get "dot_rendered") false }}
+                {{ $.Scratch.Set "dot_rendered" true }}
+                <span class="inline-flex h-11 min-w-11 items-center justify-center rounded-full border border-dashed border-black/10 px-4 text-sm font-semibold text-gray-400 dark:border-white/10 dark:text-white/45">
+                        ...
+                </span>
+                {{ end }}
+                {{ end }}
+        </div>
 
-            {{ if $pag.HasNext }}
-            <a class="page-item"><a href="{{ $pag.Next.URL }}" rel="next"
-                    class="inline-flex items-center px-4 pt-4 text-lg font-black text-primary-600 dark:text-primary-400"> {{i18n "next"}}
-                    ›</a></a>
-            {{ end }}
+        <div class="flex flex-wrap items-center gap-3">
+                {{ if $pag.HasNext }}
+                <a href="{{ $pag.Next.URL }}" rel="next" class="inline-flex items-center rounded-full border border-black/10 px-4 py-2 text-sm font-semibold text-gray-700 transition-colors hover:border-primary-500 hover:text-primary-600 dark:border-white/10 dark:text-white/75 dark:hover:border-primary-300 dark:hover:text-primary-200">
+                        {{ i18n "next" }} ›
+                </a>
+                {{ end }}
 
-            <!-- Don't show on last and 2nd last page -->
-            {{ if and (ne $pag.PageNumber $pag.TotalPages) ((ne $pag.PageNumber (sub $pag.TotalPages 1))) }}
-            <a class="page-item"><a href="{{ $pag.Last.URL }}" rel="last"
-                    class="inline-flex items-center px-4 pt-4 text-lg font-black text-primary-600 dark:text-primary-400">{{i18n "last"}}
-                    »</a></a>
-            {{ end }}
+                {{ if and (ne $pag.PageNumber $pag.TotalPages) (ne $pag.PageNumber (sub $pag.TotalPages 1)) }}
+                <a href="{{ $pag.Last.URL }}" rel="last" class="inline-flex items-center rounded-full border border-black/10 px-4 py-2 text-sm font-semibold text-gray-700 transition-colors hover:border-primary-500 hover:text-primary-600 dark:border-white/10 dark:text-white/75 dark:hover:border-primary-300 dark:hover:text-primary-200">
+                        {{ i18n "last" }} »
+                </a>
+                {{ end }}
         </div>
 </nav>
 {{ end }}

@@ -44,14 +44,14 @@ Os resultados deste projeto levaram à publicação de importantes trabalhos aca
 ## Notícias e Atualizações
 
 Fique informado sobre o desenvolvimento do projeto através dos seguintes artigos de notícias:
-- [Projeto Canal Ciência recebe prêmio de melhor artigo em conferência internacional](https://cedis.unb.br/posts/news-post.010/): O projeto foi reconhecido com o prêmio de melhor artigo na ICCSA 2024, destacando o uso inovador de gamificação para engajar estudantes brasileiros na ciência.
-- [Estudante de engenharia de software apresenta artigo na ICCSA 2024](https://cedis.unb.br/posts/news-post.009/): Mylena Faria, bolsista do CEDIS, apresentou as inovações do projeto Canal Ciência em conferência internacional no Vietnã.
+- [Projeto Canal Ciência recebe prêmio de melhor artigo em conferência internacional]({{< relref "/posts/news-post.010" >}}): O projeto foi reconhecido com o prêmio de melhor artigo na ICCSA 2024, destacando o uso inovador de gamificação para engajar estudantes brasileiros na ciência.
+- [Estudante de engenharia de software apresenta artigo na ICCSA 2024]({{< relref "/posts/news-post.009" >}}): Mylena Faria, bolsista do CEDIS, apresentou as inovações do projeto Canal Ciência em conferência internacional no Vietnã.
 
 ## Lançamento da Gamificação
 
 O projeto de gamificação culminou no lançamento da *Jornada Galáctica*. Explore-o aqui:
 - [Jornada Galáctica no Canal Ciência](https://canalciencia.ibict.br/jornada-galactica/): Voltada a tornar o conteúdo científico mais acessível e envolvente por meio de experiências de aprendizado gamificadas.
-- [Jornada Galáctica no CEDIS](https://cedis.unb.br/products/jornada_galactica/): Uma jornada educacional interativa através de tópicos científicos, projetada para engajar alunos de diversas faixas etárias.
+- [Jornada Galáctica no CEDIS]({{< relref "/products/jornada_galactica" >}}): Uma jornada educacional interativa através de tópicos científicos, projetada para engajar alunos de diversas faixas etárias.
 
 ## Equipe
 

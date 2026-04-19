@@ -44,14 +44,14 @@ The results of this project led to the publication of significant academic works
 ## News and Updates
 
 Stay informed about the project developments through the following news articles:
-- [Canal Ciência Project wins best paper award at an international conference](https://cedis.unb.br/posts/news-post.010/): The project was awarded best paper at ICCSA 2024, highlighting the innovative use of gamification to engage Brazilian students in science.
-- [Software engineering student presents paper at ICCSA 2024](https://cedis.unb.br/posts/news-post.009/): Mylena Faria, a CEDIS fellow, presented the innovations of the Canal Ciência project at an international conference in Vietnam.
+- [Canal Ciência Project wins best paper award at an international conference]({{< relref "/posts/news-post.010" >}}): The project was awarded best paper at ICCSA 2024, highlighting the innovative use of gamification to engage Brazilian students in science.
+- [Software engineering student presents paper at ICCSA 2024]({{< relref "/posts/news-post.009" >}}): Mylena Faria, a CEDIS fellow, presented the innovations of the Canal Ciência project at an international conference in Vietnam.
 
 ## Gamification Launch
 
 The gamification project culminated in the launch of the *Jornada Galáctica*. Explore it here:
 - [Jornada Galáctica on Canal Ciência](https://canalciencia.ibict.br/jornada-galactica/): Aimed at making scientific content more accessible and engaging through gamified learning experiences.
-- [Jornada Galáctica on CEDIS](https://cedis.unb.br/products/jornada_galactica/): An interactive educational journey through scientific topics, designed to engage students of various age groups.
+- [Jornada Galáctica on CEDIS]({{< relref "/products/jornada_galactica" >}}): An interactive educational journey through scientific topics, designed to engage students of various age groups.
 
 ## Team
 
