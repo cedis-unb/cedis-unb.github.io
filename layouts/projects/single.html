@@ -15,7 +15,7 @@
 {{ $catalogLabel := cond $isPortuguese "Ver projetos" "Browse projects" }}
 
 {{ $projectData := dict }}
-{{ range site.Data.projects.projects }}
+{{ range hugo.Data.projects.projects }}
   {{ if or (in $.Params.categories .id) (in $.Params.tags .id) }}
     {{ $projectData = . }}
   {{ end }}

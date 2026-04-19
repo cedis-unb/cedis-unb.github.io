@@ -2891,6 +2891,10 @@ video {
   max-height: 100%;
 }
 
+.min-h-\[14rem\] {
+  min-height: 14rem;
+}
+
 .min-h-\[18rem\] {
   min-height: 18rem;
 }
@@ -3344,6 +3348,11 @@ video {
   border-color: rgb(203 213 225 / 0.8);
 }
 
+.border-slate-900 {
+  --tw-border-opacity: 1;
+  border-color: rgb(15 23 42 / var(--tw-border-opacity, 1));
+}
+
 .border-transparent {
   border-color: transparent;
 }
@@ -3383,6 +3392,10 @@ video {
 
 .bg-black\/20 {
   background-color: rgb(0 0 0 / 0.2);
+}
+
+.bg-emerald-300\/25 {
+  background-color: rgb(110 231 183 / 0.25);
 }
 
 .bg-emerald-400\/90 {
@@ -3443,6 +3456,10 @@ video {
   background-color: rgb(28 150 153 / var(--tw-bg-opacity, 1));
 }
 
+.bg-rose-300\/25 {
+  background-color: rgb(253 164 175 / 0.25);
+}
+
 .bg-rose-400\/90 {
   background-color: rgb(251 113 133 / 0.9);
 }
@@ -3471,6 +3488,11 @@ video {
 
 .bg-slate-50\/90 {
   background-color: rgb(248 250 252 / 0.9);
+}
+
+.bg-slate-900 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(15 23 42 / var(--tw-bg-opacity, 1));
 }
 
 .bg-slate-950 {
@@ -3578,6 +3600,10 @@ video {
   background-image: linear-gradient(180deg, #f8fafc 0%, #ffffff 28%, #f8fafc 100%);
 }
 
+.bg-\[linear-gradient\(180deg\2c _\#fff8f2_0\%\2c _\#f8fafc_24\%\2c _\#f8fafc_100\%\)\] {
+  background-image: linear-gradient(180deg, #fff8f2 0%, #f8fafc 24%, #f8fafc 100%);
+}
+
 .bg-\[linear-gradient\(180deg\2c _\#fffaf1_0\%\2c _\#f8fafc_24\%\2c _\#f8fafc_100\%\)\] {
   background-image: linear-gradient(180deg, #fffaf1 0%, #f8fafc 24%, #f8fafc 100%);
 }
@@ -3648,6 +3674,10 @@ video {
 
 .bg-\[radial-gradient\(circle_at_top_left\2c _rgba\(197\2c 39\2c 47\2c 0\.14\)\2c _transparent_30\%\)\2c linear-gradient\(180deg\2c _\#111827_0\%\2c _\#0f172a_100\%\)\] {
   background-image: radial-gradient(circle at top left, rgba(197,39,47,0.14), transparent 30%),linear-gradient(180deg, #111827 0%, #0f172a 100%);
+}
+
+.bg-\[radial-gradient\(circle_at_top_left\2c _rgba\(197\2c 39\2c 47\2c 0\.16\)\2c _transparent_30\%\)\2c radial-gradient\(circle_at_84\%_14\%\2c _rgba\(16\2c 185\2c 129\2c 0\.16\)\2c _transparent_24\%\)\2c linear-gradient\(180deg\2c _\#fffdf9_0\%\2c _\#f8fafc_100\%\)\] {
+  background-image: radial-gradient(circle at top left, rgba(197,39,47,0.16), transparent 30%),radial-gradient(circle at 84% 14%, rgba(16,185,129,0.16), transparent 24%),linear-gradient(180deg, #fffdf9 0%, #f8fafc 100%);
 }
 
 .bg-\[radial-gradient\(circle_at_top_left\2c _rgba\(249\2c 115\2c 22\2c 0\.18\)\2c _transparent_28\%\)\2c linear-gradient\(180deg\2c _\#eef2ff_0\%\2c _\#f5f6fa_48\%\2c _\#ffffff_100\%\)\] {
@@ -5060,6 +5090,11 @@ EmojiSymbols;
   border-color: rgb(81 197 207 / var(--tw-border-opacity, 1));
 }
 
+.hover\:border-slate-300:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(203 213 225 / var(--tw-border-opacity, 1));
+}
+
 .hover\:border-slate-400:hover {
   --tw-border-opacity: 1;
   border-color: rgb(148 163 184 / var(--tw-border-opacity, 1));
@@ -5404,12 +5439,21 @@ EmojiSymbols;
   border-color: rgb(81 197 207 / 0.3);
 }
 
+.dark\:border-white:is(.dark *) {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity, 1));
+}
+
 .dark\:border-white\/10:is(.dark *) {
   border-color: rgb(255 255 255 / 0.1);
 }
 
 .dark\:bg-amber-400\/10:is(.dark *) {
   background-color: rgb(251 191 36 / 0.1);
+}
+
+.dark\:bg-emerald-400\/10:is(.dark *) {
+  background-color: rgb(52 211 153 / 0.1);
 }
 
 .dark\:bg-gray-800:is(.dark *) {
@@ -5428,6 +5472,10 @@ EmojiSymbols;
 
 .dark\:bg-primary-500\/15:is(.dark *) {
   background-color: rgb(81 197 207 / 0.15);
+}
+
+.dark\:bg-rose-500\/10:is(.dark *) {
+  background-color: rgb(244 63 94 / 0.1);
 }
 
 .dark\:bg-sky-400\/10:is(.dark *) {
@@ -5513,6 +5561,10 @@ EmojiSymbols;
 
 .dark\:bg-\[radial-gradient\(circle_at_top\2c _rgba\(51\2c 65\2c 85\2c 0\.84\)\2c _rgba\(15\2c 23\2c 42\2c 0\.94\)\)\]:is(.dark *) {
   background-image: radial-gradient(circle at top, rgba(51,65,85,0.84), rgba(15,23,42,0.94));
+}
+
+.dark\:bg-\[radial-gradient\(circle_at_top_left\2c _rgba\(197\2c 39\2c 47\2c 0\.18\)\2c _transparent_28\%\)\2c radial-gradient\(circle_at_84\%_14\%\2c _rgba\(16\2c 185\2c 129\2c 0\.12\)\2c _transparent_22\%\)\2c linear-gradient\(180deg\2c _\#0f172a_0\%\2c _\#111827_100\%\)\]:is(.dark *) {
+  background-image: radial-gradient(circle at top left, rgba(197,39,47,0.18), transparent 28%),radial-gradient(circle at 84% 14%, rgba(16,185,129,0.12), transparent 22%),linear-gradient(180deg, #0f172a 0%, #111827 100%);
 }
 
 .dark\:bg-\[radial-gradient\(circle_at_top_left\2c _rgba\(249\2c 115\2c 22\2c 0\.12\)\2c _transparent_24\%\)\2c linear-gradient\(180deg\2c _\#0f172a_0\%\2c _\#111827_58\%\2c _\#0b1120_100\%\)\]:is(.dark *) {
@@ -5905,6 +5957,10 @@ EmojiSymbols;
 
   .md\:h-6 {
     height: 1.5rem;
+  }
+
+  .md\:min-h-\[18rem\] {
+    min-height: 18rem;
   }
 
   .md\:min-h-\[23rem\] {

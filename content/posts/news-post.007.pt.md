@@ -31,4 +31,4 @@ Esta abordagem gamificada não apenas aumenta o engajamento dos estudantes, mas 
 
 O sucesso da "Jornada IHC" é evidente na adesão e no entusiasmo dos estudantes, que relatam uma experiência de aprendizado mais dinâmica e imersiva. Esta inovação pedagógica do Prof. Freitas não só enriquece o currículo da Faculdade do Gama, mas também serve como um modelo inspirador para outras instituições de ensino que buscam métodos mais eficazes e atraentes de ensino.
 
-Para conhecer mais sobre a gamificação, contate o Prof. Sergio Freitas em: [sergiofreitas@unb.br](sergiofreitas@unb.br).
+Para conhecer mais sobre a gamificação, contate o Prof. Sergio Freitas em: [sergiofreitas@unb.br](mailto:sergiofreitas@unb.br).

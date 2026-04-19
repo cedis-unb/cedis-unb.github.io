@@ -26,7 +26,7 @@
 
 {{ $isPt := eq .Site.Language.Lang "pt" }}
 {{ $footerKicker := cond $isPt "Universidade de Brasília" "University of Brasilia" }}
-{{ $footerLead := cond $isPt "Pesquisa, desenvolvimento e inovação em software com foco em formação, colaboração e impacto público." "Research, development, and software innovation focused on education, collaboration, and public impact." }}
+{{ $footerLead := cond $isPt "Pesquisa, desenvolvimento e inovação em software com foco em formação, colaboração e impacto social." "Research, development, and software innovation focused on education, collaboration, and social impact." }}
 {{ $footerNavTitle := cond $isPt "Navegação" "Navigation" }}
 {{ $footerConnectTitle := cond $isPt "Conecte-se" "Connect" }}
 {{ $footerConnectLead := cond $isPt "Acompanhe publicações, notícias e canais institucionais do CEDIS." "Follow CEDIS across publications, news, and institutional channels." }}
@@ -40,7 +40,7 @@
                 <div class="mt-4 flex items-center gap-4">
                     <img src="/images/site-logo.svg" alt="CEDIS Logo" class="h-10 w-28 object-contain opacity-95">
                     <div class="h-10 w-px bg-white/10"></div>
-                    <div class="text-sm font-medium uppercase tracking-[0.2em] text-slate-400">Research, Software, AI</div>
+                    <div class="text-sm font-medium uppercase tracking-[0.2em] text-slate-400">CEDIS</div>
                 </div>
                 <p class="mt-5 max-w-xl text-base leading-7 text-slate-300">
                     {{ $footerLead }}

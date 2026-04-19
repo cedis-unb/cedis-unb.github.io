@@ -1,17 +1,32 @@
 {{- $pageTitle := partial "translated-label.html" (dict "page" . "value" .Title) -}}
+{{- $description := .Description | default .Site.Params.description -}}
+{{- $ogLocale := cond (eq .Site.Language.Lang "pt") "pt_BR" "en_US" -}}
+{{- $ogImage := .Site.Params.og_image | relURL -}}
+{{- $ogImageAbs := .Site.Params.og_image | absURL -}}
+{{- with .Params.featured_image -}}
+    {{- $featuredPath := replace . "../assets/" "" -}}
+    {{- with resources.Get $featuredPath -}}
+        {{- $image := .Fit "1200x630 webp q88" -}}
+        {{- $ogImage = $image.RelPermalink -}}
+        {{- $ogImageAbs = $image.Permalink -}}
+    {{- else -}}
+        {{- $ogImage = . | relURL -}}
+        {{- $ogImageAbs = . | absURL -}}
+    {{- end -}}
+{{- end -}}
 <title itemprop="name">{{if .IsHome}} {{ $.Site.Params.description }} | {{ $pageTitle }}
     {{else}} {{ $pageTitle }} | {{ .Site.Title }} {{end}}
 </title>
-<meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
+<meta name="description" content="{{ $description }}" />
 <meta property="og:title" content="{{ $pageTitle }} | {{ .Site.Title }}" />
 <meta name="twitter:title" content="{{ $pageTitle }} | {{ .Site.Title }}" />
 <meta itemprop="name" content="{{ $pageTitle }} | {{ .Site.Title }}" />
 <meta name="application-name" content="{{ $pageTitle }} | {{ .Site.Title }}" />
 <meta property="og:description"
-      content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
+            content="{{ $description }}" />
 <meta property="og:site_name" content="{{ .Site.Title }}" />
 <meta property="og:url" content="{{ .Permalink }}" />
-<meta property="og:locale" content="en">
-<meta property="og:image" content="{{ if .Params.featured_image }}{{ .Params.featured_image | relURL }}{{ else }}{{ .Site.Params.og_image | relURL }}{{ end }}" />
-<meta property="og:image:secure_url" content="{{ if .Params.featured_image }}{{ .Params.featured_image | absURL }}{{ else }}{{ .Site.Params.og_image | absURL }}{{ end }}" />
+<meta property="og:locale" content="{{ $ogLocale }}">
+<meta property="og:image" content="{{ $ogImage }}" />
+<meta property="og:image:secure_url" content="{{ $ogImageAbs }}" />
 <meta property="og:type" content="{{if .IsHome}}website{{else}}article{{end}}" />
