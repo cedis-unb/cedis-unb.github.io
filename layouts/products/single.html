@@ -11,6 +11,7 @@
 {{ $detailsLabel := cond $isPortuguese "Visão rápida" "At a glance" }}
 {{ $languageLabel := cond $isPortuguese "Idioma do produto" "Product language" }}
 {{ $summaryLabel := cond $isPortuguese "Resumo" "Summary" }}
+{{ $dateFormat := cond $isPortuguese "02/01/2006" "02 Jan 2006" }}
 {{ $productLanguageCode := .Params.product_language | default .Site.Language.Lang }}
 {{ $productLanguageDisplay := $productLanguageCode | upper }}
 {{ if eq $productLanguageCode "pt" }}
@@ -74,7 +75,7 @@
         <div class="mt-8 flex flex-wrap items-center gap-3 text-sm text-slate-600 dark:text-slate-300">
           <div class="inline-flex items-center rounded-2xl border border-slate-200 bg-white/85 px-4 py-2 shadow-sm dark:border-white/10 dark:bg-white/5">
             <span class="font-semibold text-slate-900 dark:text-white">{{ $dateLabel }}:</span>
-            <span class="ml-2">{{ .Date.Format "02 Jan 2006" }}</span>
+            <span class="ml-2">{{ .Date.Format $dateFormat }}</span>
           </div>
           <div class="inline-flex items-center rounded-2xl border border-slate-200 bg-white/85 px-4 py-2 shadow-sm dark:border-white/10 dark:bg-white/5">
             <span class="font-semibold text-slate-900 dark:text-white">{{ $languageLabel }}:</span>
@@ -130,7 +131,7 @@
         <dl class="mt-5 space-y-4 text-sm">
           <div>
             <dt class="font-semibold text-slate-900 dark:text-white">{{ $dateLabel }}</dt>
-            <dd class="mt-1 text-slate-600 dark:text-slate-300">{{ .Date.Format "02 Jan 2006" }}</dd>
+            <dd class="mt-1 text-slate-600 dark:text-slate-300">{{ .Date.Format $dateFormat }}</dd>
           </div>
           <div>
             <dt class="font-semibold text-slate-900 dark:text-white">{{ $languageLabel }}</dt>

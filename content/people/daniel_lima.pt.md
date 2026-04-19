@@ -4,6 +4,8 @@ title: "Daniel Sundfeld Lima"
 date: 2024-02-14T00:46:38-03:00
 weight: 20
 language: pt
+aliases:
+- /pt/people/daniel_sundfeld/
 featured_image: "../assets/images/featured/people_Daniel Sundfeld.png"
 summary: Professor Adjunto da Universidade de Brasília (UnB), atua no curso de Engenharia de Software com foco em computação paralela, alto desempenho, GPU, nuvem e bioinformática.
 authorimage: ../assets/images/global/author.webp

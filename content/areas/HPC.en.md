@@ -23,7 +23,7 @@ The area of High-Performance Computing (HPC) and Cloud Computing is a dynamic an
 <div style="margin-left: 20px;">
 At CEDIS, the integration of High-Performance Computing and Cloud Computing is a research and development area of great interest. Coordinated by Prof. Daniel Sundfeld, this research line explores how these two technologies can be combined to offer more powerful and efficient solutions. The research team, comprised of experts in system architecture, computer networks, and software engineering, investigates topics such as algorithm optimization for HPC, the development of scalable cloud infrastructures, security in cloud computing environments, and the integration of cloud services with high-performance capabilities. The goal is to develop new approaches and technologies that fully leverage the large-scale processing capabilities of high-performance computing, along with the flexibility and accessibility of cloud computing, paving the way for innovations across various fields, from big data analysis to the modeling of complex systems.
 <br>
-{{< link-interno "/people/daniel_sundfeld" "area_more_about" >}}
+{{< link-interno "/people/daniel_lima" "area_more_about" >}}
 </div>
 
 ## {{< i18n "area_research_team" >}}

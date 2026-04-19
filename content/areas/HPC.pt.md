@@ -23,7 +23,7 @@ A área de Computação de Alto Desempenho e Computação em Nuvem é um campo d
 <div style="margin-left: 20px;">
 No CEDIS, a integração de Computação de Alto Desempenho e Computação em Nuvem é uma área de pesquisa e desenvolvimento de grande interesse. Coordenada pelo Prof. Daniel Sundfeld, a linha de pesquisa explora como essas duas tecnologias podem ser combinadas para oferecer soluções mais potentes e eficientes. A equipe de pesquisa, formada por especialistas em arquitetura de sistemas, redes de computadores e engenharia de software, investiga temas como a otimização de algoritmos para HPC, o desenvolvimento de infraestruturas de nuvem escaláveis, a segurança em ambientes de computação em nuvem e a integração de serviços de nuvem com capacidades de alto desempenho. O objetivo é desenvolver novas abordagens e tecnologias que permitam aproveitar ao máximo as capacidades de processamento em larga escala da computação de alto desempenho, juntamente com a flexibilidade e a acessibilidade da computação em nuvem, abrindo caminho para inovações em diversos campos, desde a análise de big data até a modelagem de sistemas complexos.
 <br>
-{{< link-interno "/people/daniel_sundfeld" "area_more_about" >}}
+{{< link-interno "/people/daniel_lima" "area_more_about" >}}
 </div>
 
 ## {{< i18n "area_research_team" >}}

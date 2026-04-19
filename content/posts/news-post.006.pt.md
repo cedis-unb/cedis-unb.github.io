@@ -33,4 +33,4 @@ Desde sua introdução no semestre letivo de 2021/2, a disciplina tem mostrado u
 
 "Alvorecer Feudal" não é apenas um método de ensino; é um indicativo da evolução no ensino de engenharia A disciplina é um verdadeiro exemplo de como a inovação e a tecnologia podem transformar a educação, promovendo um aprendizado mais eficaz, envolvente e adaptado às necessidades dos alunos de hoje.
 
-Para conhecer mais sobre a gamificação, contate o Prof. Sergio Freitas em: [sergiofreitas@unb.br](sergiofreitas@unb.br).
+Para conhecer mais sobre a gamificação, contate o Prof. Sergio Freitas em: [sergiofreitas@unb.br](mailto:sergiofreitas@unb.br).

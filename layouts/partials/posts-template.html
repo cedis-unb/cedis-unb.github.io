@@ -4,6 +4,7 @@
 {{ $openLabel := cond $isPt "Abrir coleção" "Open collection" }}
 {{ $itemsLabel := cond $isPt "itens" "items" }}
 {{ $termSummary := cond $isPt "Explore as páginas agrupadas por este termo." "Explore the pages grouped under this term." }}
+{{ $defaultDateFormat := cond $isPt "02/01/2006" "02 Jan 2006" }}
 
 <div class="not-prose">
     {{ if $isTaxonomy }}
@@ -53,12 +54,9 @@
             {{ end }}
         {{ end }}
         {{ $formattedDate := "" }}
+        {{ $dateFormat := $defaultDateFormat }}
         {{ if not .Date.IsZero }}
-            {{ if $isPt }}
-                {{ $formattedDate = .Date.Format "02/01/2006" }}
-            {{ else }}
-                {{ $formattedDate = .Date.Format "01/02/2006" }}
-            {{ end }}
+            {{ $formattedDate = .Date.Format $dateFormat }}
         {{ end }}
         <article class="group flex h-full flex-col overflow-hidden rounded-[2rem] border border-black/5 bg-white text-gray-900 shadow-[0_18px_60px_rgba(15,23,42,0.08)] transition duration-300 ease-out hover:-translate-y-1 hover:shadow-[0_28px_90px_rgba(197,39,47,0.16)] dark:border-white/10 dark:bg-white/[0.04] dark:text-white">
             <a href="{{ .RelPermalink }}" class="block">

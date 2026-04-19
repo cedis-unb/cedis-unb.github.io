@@ -70,9 +70,9 @@
           {{ with .Params.featured_image }}
           {{ $featuredPath := replace . "../assets/" "" }}
           {{ with resources.Get $featuredPath }}
-          {{ $image := .Fit "1200x1200 webp q88" }}
-          <div class="flex min-h-[18rem] items-center justify-center overflow-hidden rounded-[1.5rem] bg-[linear-gradient(180deg,_rgba(15,23,42,0.32),_rgba(15,23,42,0.08))] p-4 md:min-h-[23rem] md:p-6">
-            <img src="{{ $image.RelPermalink }}" alt="{{ $.Title }}" class="max-h-full w-auto max-w-full object-contain" loading="eager">
+          {{ $image := .Fit "960x720 webp q88" }}
+          <div class="flex min-h-[14rem] items-center justify-center overflow-hidden rounded-[1.5rem] bg-[linear-gradient(180deg,_rgba(15,23,42,0.32),_rgba(15,23,42,0.08))] p-4 md:min-h-[18rem] md:p-6">
+            <img src="{{ $image.RelPermalink }}" alt="{{ $.Title }}" class="h-auto w-auto max-w-full object-contain" loading="eager" style="max-height: clamp(14rem, 30vw, 18rem);">
           </div>
           {{ end }}
           {{ end }}

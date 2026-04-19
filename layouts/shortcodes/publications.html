@@ -249,7 +249,15 @@
               {{ if $hasResources }}
               <div class="flex flex-wrap gap-2">
                 {{ if .doi_isbn }}
-                  <a href="https://doi.org/{{ .doi_isbn }}" target="_blank" rel="noopener noreferrer" class="{{ $resourceLinkClass }}">DOI: {{ .doi_isbn }}</a>
+                  {{ $identifier := printf "%v" .doi_isbn }}
+                  {{ $isDoi := and (hasPrefix $identifier "10.") (in $identifier "/") }}
+                  {{ $isIssn := and (not $isDoi) (eq (len $identifier) 9) (eq (substr $identifier 4 1) "-") }}
+                  {{ $label := cond $isDoi "DOI" (cond $isIssn "ISSN" "ISBN") }}
+                  {{ if $isDoi }}
+                    <a href="https://doi.org/{{ $identifier }}" target="_blank" rel="noopener noreferrer" class="{{ $resourceLinkClass }}">{{ $label }}: {{ $identifier }}</a>
+                  {{ else }}
+                    <span class="{{ $resourceLinkClass }}">{{ $label }}: {{ $identifier }}</span>
+                  {{ end }}
                 {{ end }}
                 {{ if $hasPodcast }}
                   <a href="{{ $podcast }}" target="_blank" rel="noopener noreferrer" class="{{ $resourceLinkClass }}" aria-label="Spotify podcast">
