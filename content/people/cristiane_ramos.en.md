@@ -50,7 +50,7 @@ nav_next: true
 {{< postsByCategoriesTags caput="" categories="knowledge_areas,cristiane_ramos" >}}
 
 ## {{< i18n "people_current_projects" >}}
-{{< postsByCategoriesTags categories="project,cristiane_ramos" >}}
+{{< postsByCategoriesTags section="projects" categories="project,cristiane_ramos" notags="inactive,closed" >}}
 - Studies for gamifying the Science and Technology Popularization and Dissemination Platform (2023-2024).
 - Digital Transformation of public services in the Brazilian government (2021-2022).
 - Public Service Automation within the Service Transformation initiative, in partnership between UnB and the Ministry of Planning (2017-2020).

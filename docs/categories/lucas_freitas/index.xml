@@ -1,1 +1,26 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Categories on CEDIS</title><link>https://cedis.unb.br/categories/lucas_freitas/</link><description>Recent content in Categories on CEDIS</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sun, 19 Apr 2026 21:26:34 -0300</lastBuildDate><atom:link href="https://cedis.unb.br/categories/lucas_freitas/index.xml" rel="self" type="application/rss+xml"/><item><title>Products</title><link>https://cedis.unb.br/products/evidentia/</link><pubDate>Mon, 09 Mar 2026 18:00:00 -0300</pubDate><guid>https://cedis.unb.br/products/evidentia/</guid><description>Already available digital product by CEDIS/UnB for planning, screening, extraction, and reporting of systematic literature reviews with traceability, collaboration, and reproducible outputs.</description></item><item><title>Evidentia Review Project</title><link>https://cedis.unb.br/projects/evidentia/</link><pubDate>Wed, 01 Oct 2025 00:00:00 -0300</pubDate><guid>https://cedis.unb.br/projects/evidentia/</guid><description>Ongoing CEDIS project focused on the continuous research, evolution, and validation of methods, workflows, and capabilities for systematic reviews, with Evidentia Review as its resulting product.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on CEDIS</title>
+    <link>https://cedis.unb.br/categories/lucas_freitas/</link>
+    <description>Recent content in Categories on CEDIS</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 19 Apr 2026 21:26:34 -0300</lastBuildDate>
+    <atom:link href="https://cedis.unb.br/categories/lucas_freitas/index.xml" rel="self" type="application/rss&#43;xml" />
+    <item>
+      <title>Products</title>
+      <link>https://cedis.unb.br/products/evidentia/</link>
+      <pubDate>Mon, 09 Mar 2026 18:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/products/evidentia/</guid>
+      <description>Already available digital product by CEDIS/UnB for planning, screening, extraction, and reporting of systematic literature reviews with traceability, collaboration, and reproducible outputs.</description>
+    </item>
+    <item>
+      <title>Evidentia Review Project</title>
+      <link>https://cedis.unb.br/projects/evidentia/</link>
+      <pubDate>Wed, 01 Oct 2025 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/projects/evidentia/</guid>
+      <description>Ongoing CEDIS project focused on the continuous research, evolution, and validation of methods, workflows, and capabilities for systematic reviews, with Evidentia Review as its resulting product.</description>
+    </item>
+  </channel>
+</rss>

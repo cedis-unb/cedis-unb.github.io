@@ -37,7 +37,7 @@ nav_next: true
 - Courses Taught: Experimental Software Engineering, Mathematical Structures for Computing, Fundamentals of Software Quality, Software Process Improvement, among others.
 
 ## {{< i18n "people_current_projects" >}}
-{{< postsByCategoriesTags categories="project,fabiana_mendes" >}}
+{{< postsByCategoriesTags section="projects" categories="project,fabiana_mendes" notags="inactive,closed" >}}
 - Human factors in cybersecurity (2022-Present).
 - Creation and usability evaluation of an app on Parkinson's Disease (2020-Present).
 - These projects explore topics such as cybersecurity, digital health, and usability.

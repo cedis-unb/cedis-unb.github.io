@@ -1,22 +1,37 @@
 {{ $filterTags := .Get "tags" }}
 {{ $filterCategories := .Get "categories" }}
-{{ $excludeTags := .Get "notags" }}  <!-- Novo parâmetro para 'não tags' -->
+{{ $excludeTags := .Get "notags" }}
+{{ $filterSection := .Get "section" }}
 {{ $caput := .Get "caput" | markdownify }}
 {{ $showSummary := .Get "showSummary" | default true }}
 {{ $showDescription := .Get "showDescription" | default true }}
+{{ $isPt := eq $.Site.Language.Lang "pt" }}
 
-{{ $tags := split $filterTags "," }}
-{{ $categories := split $filterCategories "," }}
-{{ $notags := split $excludeTags "," }}  <!-- Lista de 'não tags' --> 
+{{ $tags := slice }}
+{{ if and $filterTags (ne $filterTags "") }}
+  {{ $tags = split $filterTags "," }}
+{{ end }}
 
+{{ $categories := slice }}
+{{ if and $filterCategories (ne $filterCategories "") }}
+  {{ $categories = split $filterCategories "," }}
+{{ end }}
 
-{{ $hasMatches := false }}
+{{ $notags := slice }}
+{{ if and $excludeTags (ne $excludeTags "") }}
+  {{ $notags = split $excludeTags "," }}
+{{ end }}
+
+{{ $matches := slice }}
 {{ range sort $.Site.RegularPages "Title" }}
   {{ $thisPage := . }}
   {{ $match := true }}
-  
-  <!-- Verificação de Tags -->
-  {{ if and $filterTags (ne $filterTags "") }}
+
+  {{ if and $match $filterSection (ne $filterSection "") (ne $thisPage.Section $filterSection) }}
+    {{ $match = false }}
+  {{ end }}
+
+  {{ if and $match $filterTags (ne $filterTags "") }}
     {{ $tagsMatch := true }}
     {{ range $tags }}
       {{ $currentTag := trim . " " }}
@@ -30,8 +45,7 @@
     {{ end }}
   {{ end }}
 
-  <!-- Verificação de Categorias -->
-  {{ if and $filterCategories (ne $filterCategories "") }}
+  {{ if and $match $filterCategories (ne $filterCategories "") }}
     {{ $categoriesMatch := true }}
     {{ range $categories }}
       {{ $currentCategory := trim . " " }}
@@ -45,8 +59,7 @@
     {{ end }}
   {{ end }}
 
-  <!-- Verificação de 'Não Tags' -->
-  {{ if and $excludeTags (ne $excludeTags "") }}
+  {{ if and $match $excludeTags (ne $excludeTags "") }}
     {{ range $notags }}
       {{ $currentNoTag := trim . " " }}
       {{ if in $thisPage.Params.tags $currentNoTag }}
@@ -57,71 +70,96 @@
   {{ end }}
 
   {{ if $match }}
-    {{ $hasMatches = true }}
-    {{ break }}
+    {{ $matches = $matches | append $thisPage }}
   {{ end }}
 {{ end }}
 
-{{ if $hasMatches }}
+{{ $isKnowledgeAreasView := false }}
+{{ if and $filterSection (eq $filterSection "areas") }}
+  {{ $isKnowledgeAreasView = true }}
+{{ end }}
+{{ if not $isKnowledgeAreasView }}
+  {{ range $categories }}
+    {{ if eq (trim . " ") "knowledge_areas" }}
+      {{ $isKnowledgeAreasView = true }}
+      {{ break }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{ $areaOpenLabel := cond $isPt "Ver área" "Open area" }}
+
+{{ if gt (len $matches) 0 }}
   {{ if $caput }}
     <div class="caput">{{ $caput | markdownify }}</div>
   {{ end }}
-  <ul>
-    {{ range sort $.Site.RegularPages "Title" }}
-      {{ $thisPage := . }}
-      {{ $match := true }}
 
-      <!-- Repetir lógica de filtragem para gerar a lista -->
-      <!-- Tags, Categorias, e 'Não Tags' -->
-      {{ if and $filterTags (ne $filterTags "") }}
-        {{ $tagsMatch := true }}
-        {{ range $tags }}
-          {{ $currentTag := trim . " " }}
-          {{ if not (in $thisPage.Params.tags $currentTag) }}
-            {{ $tagsMatch = false }}
-            {{ break }}
-          {{ end }}
+  {{ if $isKnowledgeAreasView }}
+    <div class="not-prose mt-6 grid gap-5 md:grid-cols-2">
+      {{ range $matches }}
+        {{ $cardPage := . }}
+        {{ $summary := .Params.summary | default (.Summary | plainify | htmlUnescape | strings.TrimSpace) }}
+        {{ $description := "" }}
+        {{ if and $showDescription (isset .Params "description") }}
+          {{ $description = .Params.description | plainify | htmlUnescape | strings.TrimSpace }}
         {{ end }}
-        {{ if not $tagsMatch }}
-          {{ $match = false }}
+        {{ $textParts := slice }}
+        {{ with $summary }}
+          {{ $textParts = $textParts | append . }}
         {{ end }}
+        {{ if and $description (ne $description $summary) }}
+          {{ $textParts = $textParts | append $description }}
+        {{ end }}
+        {{ $leadText := delimit $textParts " " }}
+
+        <article class="group flex h-full flex-col overflow-hidden rounded-[2rem] border border-black/5 bg-white text-gray-900 shadow-[0_18px_60px_rgba(15,23,42,0.08)] transition duration-300 ease-out hover:-translate-y-1 hover:shadow-[0_28px_90px_rgba(197,39,47,0.16)] dark:border-white/10 dark:bg-white/[0.04] dark:text-white">
+          <a href="{{ .RelPermalink }}" class="block">
+            {{ with .Params.featured_image }}
+              {{ $featuredPath := replace . "../assets/" "" }}
+              {{ with resources.Get $featuredPath }}
+                {{ partial "card-image.html" (dict "resource" . "title" $cardPage.Title "fit" "960x520 webp q88" "containerClass" "h-52" "variant" "wide") }}
+              {{ end }}
+            {{ else }}
+              <div class="flex h-52 items-end bg-[linear-gradient(135deg,_rgba(197,39,47,0.16),_rgba(15,23,42,0.9))] p-6">
+                <span class="max-w-[15rem] text-3xl font-black tracking-tight text-white">{{ $cardPage.Title }}</span>
+              </div>
+            {{ end }}
+          </a>
+
+          <div class="flex h-full flex-col p-6">
+            <a href="{{ .RelPermalink }}" class="block text-2xl font-black leading-tight tracking-tight text-gray-950 transition-colors group-hover:text-primary-600 dark:text-white dark:group-hover:text-primary-300">
+              {{ .Title }}
+            </a>
+
+            {{ with $leadText }}
+              <p class="mt-4 text-base leading-7 text-gray-600 dark:text-white/70">
+                {{ . | truncate 190 }}
+              </p>
+            {{ end }}
+
+            <div class="mt-auto pt-6">
+              <a href="{{ .RelPermalink }}" class="inline-flex items-center gap-2 text-sm font-semibold text-primary-700 transition-colors hover:text-primary-600 dark:text-primary-200 dark:hover:text-primary-100" aria-label="{{ $areaOpenLabel }}: {{ .Title }}">
+                <span>{{ $areaOpenLabel }}</span>
+                <span aria-hidden="true">→</span>
+              </a>
+            </div>
+          </div>
+        </article>
       {{ end }}
-
-      {{ if and $filterCategories (ne $filterCategories "") }}
-        {{ $categoriesMatch := true }}
-        {{ range $categories }}
-          {{ $currentCategory := trim . " " }}
-          {{ if not (in $thisPage.Params.categories $currentCategory) }}
-            {{ $categoriesMatch = false }}
-            {{ break }}
-          {{ end }}
-        {{ end }}
-        {{ if not $categoriesMatch }}
-          {{ $match = false }}
-        {{ end }}
-      {{ end }}
-
-      {{ if and $excludeTags (ne $excludeTags "") }}
-        {{ range $notags }}
-          {{ $currentNoTag := trim . " " }}
-          {{ if in $thisPage.Params.tags $currentNoTag }}
-            {{ $match = false }}
-            {{ break }}
-          {{ end }}
-        {{ end }}
-      {{ end }}
-
-      {{ if $match }}
+    </div>
+  {{ else }}
+    <ul>
+      {{ range $matches }}
         <li>
-          <span><strong><a href="{{ $thisPage.RelPermalink }}">{{ $thisPage.Title }}</a></strong></span>
-          {{ if and $showSummary $thisPage.Summary }}
-            <span> - {{ $thisPage.Summary }}</span>
+          <span><strong><a href="{{ .RelPermalink }}">{{ .Title }}</a></strong></span>
+          {{ if and $showSummary .Summary }}
+            <span> - {{ .Summary }}</span>
           {{ end }}
-          {{ if and $showDescription (isset $thisPage.Params "description") }}
-            <span> {{ $thisPage.Params.description }}</span>
+          {{ if and $showDescription (isset .Params "description") }}
+            <span> {{ .Params.description }}</span>
           {{ end }}
         </li>
       {{ end }}
-    {{ end }}
-  </ul>
+    </ul>
+  {{ end }}
 {{ end }}

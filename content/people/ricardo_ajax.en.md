@@ -47,7 +47,7 @@ nav_next: true
 - First place at Politec's IT meeting for works on software size measurement and the use of metrics in software projects (2001 and 2002).
 
 ## {{< i18n "people_current_projects" >}}
-{{< postsByCategoriesTags categories="project,ricardo_ajax" >}}
+{{< postsByCategoriesTags section="projects" categories="project,ricardo_ajax" notags="inactive,closed" >}}
 - Research, Development, and Innovation Project for Public Service Automation within Service Transformation (2017-2020).
 - Research Project on Productive Capacity Sizing - Mathematical Modeling, Ministry of Planning (2017-2019).
 - Research and Development of the Individual Performance Management Model of the National Supply Company - CONAB (2016-2017).

@@ -10,7 +10,6 @@ summary: Web platform developed as a bachelor's thesis at the University of Bras
 authorimage: ../assets/images/global/author.webp
 categories:
 - products
-- project
 - sergio_freitas
 tags:
 - app

@@ -17,6 +17,7 @@ tags:
 - nlp
 - ai
 - dfcris 
+- inactive
 ---
 ## Overview
 DFCris is a 24-month project carried out in partnership between the [Brazilian Institute of Information in Science and Technology - IBICT](http://www.ibict.br/) and CEDIS, funded by [FAP/DF](https://www.fap.df.gov.br/).

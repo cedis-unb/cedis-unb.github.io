@@ -10,7 +10,6 @@ summary: Aplicação web desenvolvida em TCC com apoio acadêmico do CEDIS para 
 authorimage: ../assets/images/global/author.webp
 categories:
 - products
-- project
 - sergio_freitas
 tags:
 - app

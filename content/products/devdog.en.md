@@ -10,7 +10,6 @@ summary: Web application developed as a bachelor's thesis with academic support 
 authorimage: ../assets/images/global/author.webp
 categories:
 - products
-- project
 - sergio_freitas
 tags:
 - app
