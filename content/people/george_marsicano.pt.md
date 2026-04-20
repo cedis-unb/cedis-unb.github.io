@@ -55,7 +55,7 @@ nav_next: true
 - Experiência em iniciativas de transformação digital de serviços públicos, design de soluções colaborativas e estudos sobre aspectos humanos de equipes de software.
 
 ## {{< i18n "people_current_projects" >}}
-{{< postsByCategoriesTags categories="project,george_marsicano" >}}
+{{< postsByCategoriesTags section="projects" categories="project,george_marsicano" notags="inactive,closed" >}}
 - Metodologia Colaborativa de Transformação Digital para a SPU com base em Design de Serviços e Experiência do Usuário - SPUX (2025-Atual).
 - Melhoria do Serviço Público Digital para o Cidadão (2023-2025).
 - Projeto SUPER-R (2023-2024).

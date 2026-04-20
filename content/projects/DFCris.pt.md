@@ -17,6 +17,7 @@ tags:
 - nlp
 - ai
 - dfcris 
+- inactive
 ---
 ## Visão Geral
 DFCris é um projeto de 24 meses realizado em parceria entre o [Instituto Brasileiro de Informação em Ciência e Tecnologia - IBICT](http://www.ibict.br/) e o CEDIS, financiado pela [FAP/DF](https://www.fap.df.gov.br/).

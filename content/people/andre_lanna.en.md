@@ -40,7 +40,7 @@ nav_next: true
 - CTDQS 2010 - Thesis and Dissertation Contest in Software Quality by the Brazilian Computer Society (2010).
 
 ## {{< i18n "people_current_projects" >}}
-{{< postsByCategoriesTags categories="project,andre_lanna" >}}
+{{< postsByCategoriesTags section="projects" categories="project,andre_lanna" notags="inactive,closed" >}}
 - Software Factory Laboratory: Research and development project initiated in 2018 at the University of Brasília.
 
 ## {{< i18n "people_supervisory_experience" >}}

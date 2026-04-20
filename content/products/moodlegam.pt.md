@@ -10,7 +10,6 @@ summary: Plataforma web desenvolvida em TCC na UnB para apoiar a gamificação d
 authorimage: ../assets/images/global/author.webp
 categories:
 - products
-- project
 - sergio_freitas
 tags:
 - app

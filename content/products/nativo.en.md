@@ -10,7 +10,6 @@ summary: Mobile application developed as a bachelor's thesis at the University o
 authorimage: ../assets/images/global/author.webp
 categories:
 - products
-- project
 - sergio_freitas
 tags:
 - app

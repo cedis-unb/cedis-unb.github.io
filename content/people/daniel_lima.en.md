@@ -48,7 +48,7 @@ nav_next: true
 {{< postsByCategoriesTags caput="" categories="knowledge_areas,daniel_sundfeld" >}}
 
 ## {{< i18n "people_current_projects" >}}
-{{< postsByCategoriesTags categories="project,daniel_sundfeld" >}}
+{{< postsByCategoriesTags section="projects" categories="project,daniel_sundfeld" notags="inactive,closed" >}}
 - Informational management support system for the Ministry of Science, Technology and Innovation - MCTI (2026-Present).
 - Serviços PI: innovation and efficiency in the retrieval of intellectual property information at INPI (2025-Present).
 - Laguna - Open Informational Infrastructure and Data Lake (2022-2025).

@@ -47,7 +47,7 @@ nav_next: true
 {{< postsByCategoriesTags caput="" categories="knowledge_areas,ricardo_ajax" >}}
 
 ## {{< i18n "people_current_projects" >}}
-{{< postsByCategoriesTags categories="project,ricardo_ajax" >}}
+{{< postsByCategoriesTags section="projects" categories="project,ricardo_ajax" notags="inactive,closed" >}}
 - Projeto de Pesquisa, Desenvolvimento e Inovação para a Automação de Serviços Públicos no âmbito da Transformação dos Serviços (2017-2020).
 - Projeto de Pesquisa em Dimensionamento da Capacidade Produtiva - Modelagem Matemática, Ministério do Planejamento (2017-2019).
 - Pesquisa e Desenvolvimento do Modelo de Gestão do Desempenho Individual da Companhia Nacional de Abastecimento - CONAB (2016-2017).

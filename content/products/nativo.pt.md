@@ -10,7 +10,6 @@ summary: Aplicativo móvel desenvolvido em TCC na UnB para apoiar a preservaçã
 authorimage: ../assets/images/global/author.webp
 categories:
 - products
-- project
 - sergio_freitas
 tags:
 - app

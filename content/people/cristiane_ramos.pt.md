@@ -50,7 +50,7 @@ nav_next: true
 {{< postsByCategoriesTags caput="" categories="knowledge_areas,cristiane_ramos" >}}
 
 ## {{< i18n "people_current_projects" >}}
-{{< postsByCategoriesTags categories="project,cristiane_ramos" >}}
+{{< postsByCategoriesTags section="projects" categories="project,cristiane_ramos" notags="inactive,closed" >}}
 - Estudos para gamificação da Plataforma de Popularização e Divulgação da Ciência e Tecnologia (2023-2024).
 - Transformação Digital de serviços públicos do Governo Brasileiro (2021-2022).
 - Automação de Serviços Públicos no âmbito da Transformação dos Serviços, em parceria entre UnB e Ministério do Planejamento (2017-2020).

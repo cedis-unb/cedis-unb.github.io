@@ -48,7 +48,7 @@ nav_next: true
 {{< postsByCategoriesTags caput="" categories="knowledge_areas,daniel_sundfeld" >}}
 
 ## {{< i18n "people_current_projects" >}}
-{{< postsByCategoriesTags categories="project,daniel_sundfeld" >}}
+{{< postsByCategoriesTags section="projects" categories="project,daniel_sundfeld" notags="inactive,closed" >}}
 - Sistema de apoio de gestão informacional do Ministério da Ciência, Tecnologia e Inovação - MCTI (2026-Atual).
 - Serviços PI: inovação e eficiência na recuperação de informações de propriedade intelectual do INPI (2025-Atual).
 - Laguna - Infraestrutura Informacional Aberta e Lago de Dados (2022-2025).

@@ -37,7 +37,7 @@ nav_next: true
 - Disciplinas Ministradas: Engenharia de Software Experimental, Estruturas Matemáticas para Computação, Fundamentos de Qualidade de Software, Melhoria de Processos de Software, entre outras​​.
 
 ## {{< i18n "people_current_projects" >}}
-{{< postsByCategoriesTags categories="project,fabiana_mendes" >}}
+{{< postsByCategoriesTags section="projects" categories="project,fabiana_mendes" notags="inactive,closed" >}}
 - Fatores humanos na segurança cibernética (2022-Atual).
 - Criação e avaliação da usabilidade de um aplicativo sobre Doença de Parkinson (2020-Atual).
 - Esses projetos exploram temas como segurança cibernética, saúde digital e usabilidade​​.

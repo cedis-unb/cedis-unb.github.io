@@ -49,7 +49,7 @@ nav_next: true
 - Publicações: Autor e coautor de diversos artigos científicos e livros, com reconhecimento em plataformas como Web of Science e SCOPUS​​.
 
 ## {{< i18n "people_current_projects" >}}
-{{< postsByCategoriesTags categories="project,sergio_freitas" >}}
+{{< postsByCategoriesTags section="projects" categories="project,sergio_freitas" notags="inactive,closed" >}}
 
 ## {{< i18n "people_supervisory_experience" >}}
 ### {{< i18n "people_current_supervisions" >}}

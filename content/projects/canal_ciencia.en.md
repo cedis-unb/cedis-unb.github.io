@@ -15,6 +15,7 @@ categories:
 tags: 
 - gamification
 - project_cc
+- inactive
 ---
 
 ## Project Description

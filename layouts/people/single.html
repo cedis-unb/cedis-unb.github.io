@@ -44,10 +44,34 @@
   {{ end }}
 {{ end }}
 
+{{ $projectIds := slice }}
+{{ range hugo.Data.projects.projects }}
+  {{ $projectIds = $projectIds | append .id }}
+{{ end }}
+
 {{ $displayTags := slice }}
+{{ $displayTagSeen := newScratch }}
 {{ range .Params.tags }}
-  {{ if and (not (hasPrefix . "project_")) (ne . "active") (ne . "inactive") }}
+  {{ if and (not (in $projectIds .)) (ne . "active") (ne . "inactive") (not ($displayTagSeen.Get .)) }}
     {{ $displayTags = $displayTags | append . }}
+    {{ $displayTagSeen.Set . true }}
+  {{ end }}
+{{ end }}
+
+{{ range $.Site.RegularPages.ByTitle }}
+  {{ if and (eq .Section "projects") (eq .Lang $.Site.Language.Lang) (not (in .Params.tags "inactive")) (not (in .Params.tags "closed")) (or (in .Params.categories $personKey) (in .Params.tags $personKey)) }}
+    {{ $projectPage := . }}
+    {{ $projectTag := "" }}
+    {{ range $projectIds }}
+      {{ if or (in $projectPage.Params.categories .) (in $projectPage.Params.tags .) }}
+        {{ $projectTag = . }}
+        {{ break }}
+      {{ end }}
+    {{ end }}
+    {{ if and $projectTag (not ($displayTagSeen.Get $projectTag)) }}
+      {{ $displayTags = $displayTags | append $projectTag }}
+      {{ $displayTagSeen.Set $projectTag true }}
+    {{ end }}
   {{ end }}
 {{ end }}
 
@@ -67,7 +91,7 @@
 
 {{ $projectCount := 0 }}
 {{ range .Site.RegularPages }}
-  {{ if and (eq .Section "projects") (or (in .Params.categories $personKey) (in .Params.tags $personKey)) }}
+  {{ if and (eq .Section "projects") (not (in .Params.tags "inactive")) (not (in .Params.tags "closed")) (or (in .Params.categories $personKey) (in .Params.tags $personKey)) }}
     {{ $projectCount = add $projectCount 1 }}
   {{ end }}
 {{ end }}
@@ -98,7 +122,7 @@
 
 <main class="bg-[radial-gradient(circle_at_top,_rgba(197,39,47,0.12),_transparent_24%),linear-gradient(180deg,_#f5f5f4_0%,_#ffffff_30%,_#f5f5f4_100%)] text-gray-950 dark:bg-gray-900 dark:text-gray-100">
   <section class="border-b border-black/5 bg-gray-950 text-white">
-    <div class="mx-auto grid max-w-screen-xl gap-10 px-4 py-12 md:px-6 md:py-16 lg:grid-cols-[minmax(0,1.1fr)_minmax(20rem,0.9fr)] lg:items-center lg:px-8 lg:py-20">
+    <div class="mx-auto grid max-w-screen-xl gap-10 px-4 py-12 md:px-6 md:py-16 lg:grid-cols-[minmax(0,1.18fr)_minmax(18rem,0.82fr)] lg:items-center lg:px-8 lg:py-20">
       <div>
         <div class="inline-flex flex-wrap items-center gap-3">
           <span class="inline-flex rounded-full border border-white/15 bg-white/10 px-4 py-1 text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-white/72">
@@ -147,8 +171,8 @@
           {{ $featuredPath := replace . "../assets/" "" }}
           {{ with resources.Get $featuredPath }}
           {{ $image := .Fit "1200x1200 webp q88" }}
-          <div class="flex min-h-[18rem] items-center justify-center overflow-hidden rounded-[1.5rem] bg-[linear-gradient(180deg,_rgba(15,23,42,0.32),_rgba(15,23,42,0.08))] p-4 md:min-h-[23rem] md:p-6">
-            <img src="{{ $image.RelPermalink }}" alt="{{ $.Title }}" class="max-h-full w-auto max-w-full object-contain" loading="eager">
+          <div class="flex min-h-[14rem] items-center justify-center overflow-hidden rounded-[1.5rem] bg-[linear-gradient(180deg,_rgba(15,23,42,0.32),_rgba(15,23,42,0.08))] p-4 md:min-h-[18rem] md:p-5">
+            <img src="{{ $image.RelPermalink }}" alt="{{ $.Title }}" class="max-h-[14rem] w-auto max-w-[82%] object-contain md:max-h-[18rem] md:max-w-[78%]" loading="eager">
           </div>
           {{ end }}
           {{ end }}

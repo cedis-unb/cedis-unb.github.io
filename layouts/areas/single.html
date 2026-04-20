@@ -1,0 +1,332 @@
+{{ define "main" }}
+{{ $isPt := eq .Site.Language.Lang "pt" }}
+{{ $summary := .Params.summary | default .Description }}
+{{ $content := .Content }}
+{{ $catalogURL := "areas/" | relLangURL }}
+{{ $areaLabel := cond $isPt "Área de atuação" "Area of expertise" }}
+{{ $detailsLabel := cond $isPt "Visão rápida" "At a glance" }}
+{{ $researchersLabel := cond $isPt "Pesquisadores vinculados" "Associated researchers" }}
+{{ $researchersCountLabel := cond $isPt "Pesquisadores" "Researchers" }}
+{{ $projectsCountLabel := cond $isPt "Projetos ativos" "Active projects" }}
+{{ $publicationsCountLabel := cond $isPt "Publicações relacionadas" "Related publications" }}
+{{ $tagsLabel := cond $isPt "Temas" "Themes" }}
+{{ $sectionsLabel := cond $isPt "Navegação" "Sections" }}
+{{ $contentLabel := cond $isPt "Explorar área" "Explore area" }}
+{{ $catalogLabel := cond $isPt "Ver áreas" "Browse areas" }}
+{{ $supportLabel := cond $isPt "Pesquisa, formação, projetos e produção conectados nesta frente." "Research, training, projects, and publications connected in this area." }}
+{{ $detailsIntro := cond $isPt "Números da área" "Numbers of the area" }}
+{{ $studentsBreakdownLabel := cond $isPt "Estudantes por modalidade" "Students by category" }}
+{{ $studentCategoryOrder := slice "phd_candidate" "master_student" "specialization" "scientific_initiation" "tcc" "volunteer" }}
+
+{{ $tocEntries := slice }}
+{{ $anchorCounts := newScratch }}
+{{ range findRE `(?s)<h([2-4]) id="([^"]+)"[^>]*>(.*?)</h[2-4]>` $content }}
+  {{ $entry := . }}
+  {{ $level := replaceRE `(?s)<h([2-4]) id="([^"]+)"[^>]*>(.*?)</h[2-4]>` `${1}` $entry | int }}
+  {{ $anchor := replaceRE `(?s)<h([2-4]) id="([^"]+)"[^>]*>(.*?)</h[2-4]>` `${2}` $entry }}
+  {{ $label := replaceRE `(?s)<h([2-4]) id="([^"]+)"[^>]*>(.*?)</h[2-4]>` `${3}` $entry | plainify | htmlUnescape | strings.TrimSpace }}
+  {{ if and $label (ne $anchor "top") }}
+    {{ $baseAnchor := $anchor }}
+    {{ if findRE `^hahahugoshortcode[0-9]+s[0-9]+hbhb$` $anchor }}
+      {{ $baseAnchor = $label | anchorize }}
+    {{ end }}
+    {{ $anchorSeen := $anchorCounts.Get $baseAnchor | default 0 }}
+    {{ $resolvedAnchor := $baseAnchor }}
+    {{ if gt $anchorSeen 0 }}
+      {{ $resolvedAnchor = printf "%s-%d" $baseAnchor (add $anchorSeen 1) }}
+    {{ end }}
+    {{ $anchorCounts.Set $baseAnchor (add $anchorSeen 1) }}
+    {{ $content = replaceRE (printf `id="%s"` $anchor) (printf `id="%s"` $resolvedAnchor) $content 1 }}
+    {{ $tocEntries = $tocEntries | append (dict "level" $level "anchor" $resolvedAnchor "label" $label) }}
+  {{ end }}
+{{ end }}
+
+{{ $researcherIDs := slice }}
+{{ range .Params.categories }}
+  {{ if ne . "knowledge_areas" }}
+    {{ $researcherIDs = $researcherIDs | append . }}
+  {{ end }}
+{{ end }}
+
+{{ $researcherItems := slice }}
+{{ range $researcherIDs }}
+  {{ $personID := . }}
+  {{ $fallbackLabel := replaceRE "[-_]+" " " $personID | humanize }}
+  {{ with $.Site.GetPage (printf "/people/%s" $personID) }}
+    {{ $researcherItems = $researcherItems | append (dict "title" .Title "url" .RelPermalink) }}
+  {{ else }}
+    {{ with $.Site.GetPage (printf "/people/collaborators/%s" $personID) }}
+      {{ $researcherItems = $researcherItems | append (dict "title" .Title "url" .RelPermalink) }}
+    {{ else }}
+      {{ $researcherItems = $researcherItems | append (dict "title" $fallbackLabel "url" "") }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{ $displayTags := .Params.tags | default (slice) }}
+
+{{ $relatedProjectItems := slice }}
+{{ range .Site.RegularPages.ByTitle }}
+  {{ $projectPage := . }}
+  {{ if and (eq .Section "projects") (eq .Lang $.Site.Language.Lang) (not (in .Params.tags "inactive")) (not (in .Params.tags "closed")) }}
+    {{ $projectMatchesArea := false }}
+    {{ range $displayTags }}
+      {{ if or (in $projectPage.Params.tags .) (in $projectPage.Params.categories .) }}
+        {{ $projectMatchesArea = true }}
+        {{ break }}
+      {{ end }}
+    {{ end }}
+    {{ if $projectMatchesArea }}
+      {{ $relatedProjectItems = $relatedProjectItems | append (dict "title" .Title "url" .RelPermalink) }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{ $relatedPublicationCount := 0 }}
+{{ range hugo.Data.productions.items }}
+  {{ $production := . }}
+  {{ $publicationMatchesArea := false }}
+  {{ range $displayTags }}
+    {{ if in $production.tags . }}
+      {{ $publicationMatchesArea = true }}
+      {{ break }}
+    {{ end }}
+  {{ end }}
+  {{ if $publicationMatchesArea }}
+    {{ $relatedPublicationCount = add $relatedPublicationCount 1 }}
+  {{ end }}
+{{ end }}
+
+{{ $studentCounts := newScratch }}
+{{ range $studentCategoryOrder }}
+  {{ $studentCounts.Set . 0 }}
+{{ end }}
+{{ range hugo.Data.people.people }}
+  {{ $person := . }}
+  {{ $matchesArea := false }}
+  {{ range $displayTags }}
+    {{ if in $person.tags . }}
+      {{ $matchesArea = true }}
+      {{ break }}
+    {{ end }}
+  {{ end }}
+  {{ if $matchesArea }}
+    {{ range $studentCategoryOrder }}
+      {{ if in $person.categories . }}
+        {{ $studentCounts.Set . (add ($studentCounts.Get . | default 0) 1) }}
+        {{ break }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{ $featuredPath := "" }}
+{{ $featuredSmall := "" }}
+{{ $featuredMedium := "" }}
+{{ $featuredLarge := "" }}
+{{ $featuredXLarge := "" }}
+{{ with .Params.featured_image }}
+  {{ $featuredPath = replace . "../assets/" "" }}
+  {{ with resources.Get $featuredPath }}
+    {{ $featuredSmall = (.Resize "640x webp q85").RelPermalink }}
+    {{ $featuredMedium = (.Resize "960x webp q85").RelPermalink }}
+    {{ $featuredLarge = (.Resize "1280x webp q85").RelPermalink }}
+    {{ $featuredXLarge = (.Resize "1680x webp q85").RelPermalink }}
+  {{ end }}
+{{ end }}
+
+{{ $hasTOC := gt (len $tocEntries) 0 }}
+
+<article class="bg-[linear-gradient(180deg,_#fffaf5_0%,_#f8fafc_22%,_#f8fafc_100%)] text-slate-900 dark:bg-gray-800 dark:text-white">
+  <section class="relative overflow-hidden border-b border-slate-200/80 bg-[radial-gradient(circle_at_top_left,_rgba(197,39,47,0.15),_transparent_30%),radial-gradient(circle_at_84%_16%,_rgba(14,165,233,0.14),_transparent_22%),linear-gradient(180deg,_#fffdfb_0%,_#f8fafc_100%)] dark:border-white/10 dark:bg-[radial-gradient(circle_at_top_left,_rgba(197,39,47,0.16),_transparent_28%),radial-gradient(circle_at_84%_16%,_rgba(14,165,233,0.12),_transparent_22%),linear-gradient(180deg,_#0f172a_0%,_#111827_100%)]">
+    <div aria-hidden="true" class="absolute left-0 top-0 h-40 w-40 rounded-full bg-rose-300/20 blur-3xl dark:bg-rose-500/10"></div>
+    <div aria-hidden="true" class="absolute right-0 top-16 h-56 w-56 rounded-full bg-sky-300/20 blur-3xl dark:bg-sky-400/10"></div>
+    <div class="relative mx-auto grid max-w-screen-xl gap-10 px-4 py-14 md:px-6 lg:grid-cols-[minmax(0,1.05fr)_minmax(320px,0.95fr)] lg:px-8 lg:py-20">
+      <div class="min-w-0">
+        <div class="inline-flex items-center rounded-full border border-slate-300/70 bg-white/80 px-4 py-2 text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-slate-700 shadow-sm backdrop-blur dark:border-white/10 dark:bg-white/5 dark:text-slate-300">
+          {{ $areaLabel }}
+        </div>
+        <h1 class="mt-5 max-w-4xl text-4xl font-black leading-tight text-slate-950 md:text-5xl lg:text-6xl dark:text-white">
+          {{ .Title }}
+        </h1>
+        {{ with $summary }}
+        <p class="mt-5 max-w-3xl text-lg leading-8 text-slate-600 md:text-xl dark:text-slate-300">
+          {{ . }}
+        </p>
+        {{ end }}
+
+        <div class="mt-8 grid gap-3 sm:grid-cols-3">
+          <div class="rounded-[1.25rem] border border-slate-200 bg-white/85 px-4 py-4 shadow-sm dark:border-white/10 dark:bg-white/5">
+            <div class="text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-slate-500 dark:text-slate-400">{{ $researchersCountLabel }}</div>
+            <div class="mt-2 text-3xl font-black text-slate-950 dark:text-white">{{ len $researcherItems }}</div>
+          </div>
+          <div class="rounded-[1.25rem] border border-slate-200 bg-white/85 px-4 py-4 shadow-sm dark:border-white/10 dark:bg-white/5">
+            <div class="text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-slate-500 dark:text-slate-400">{{ $projectsCountLabel }}</div>
+            <div class="mt-2 text-3xl font-black text-slate-950 dark:text-white">{{ len $relatedProjectItems }}</div>
+          </div>
+          <div class="rounded-[1.25rem] border border-slate-200 bg-white/85 px-4 py-4 shadow-sm dark:border-white/10 dark:bg-white/5">
+            <div class="text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-slate-500 dark:text-slate-400">{{ $publicationsCountLabel }}</div>
+            <div class="mt-2 text-3xl font-black text-slate-950 dark:text-white">{{ $relatedPublicationCount }}</div>
+          </div>
+        </div>
+
+        {{ with $displayTags }}
+        <div class="mt-8 flex flex-wrap gap-2">
+          {{ range . }}
+          <span class="inline-flex rounded-full border border-slate-200 bg-white/80 px-3 py-1.5 text-sm font-semibold text-slate-700 shadow-sm dark:border-white/10 dark:bg-white/5 dark:text-slate-300">
+            {{ partial "translated-label.html" (dict "value" .) }}
+          </span>
+          {{ end }}
+        </div>
+        {{ end }}
+
+        <div class="mt-8 flex flex-wrap gap-4">
+          <a href="#area-content" class="inline-flex items-center justify-center rounded-2xl bg-slate-950 px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-slate-800 dark:bg-white dark:text-slate-950 dark:hover:bg-slate-200">
+            {{ $contentLabel }}
+          </a>
+          <a href="{{ $catalogURL }}" class="inline-flex items-center justify-center rounded-2xl border border-slate-300 bg-white/80 px-5 py-3 text-sm font-semibold text-slate-900 transition-colors hover:border-slate-400 hover:bg-white dark:border-white/10 dark:bg-white/5 dark:text-white dark:hover:bg-white/10">
+            {{ $catalogLabel }}
+          </a>
+        </div>
+      </div>
+
+      <div class="min-w-0">
+        <div class="relative overflow-hidden rounded-[2rem] border border-white/70 bg-white/80 p-3 shadow-[0_30px_80px_rgba(15,23,42,0.16)] backdrop-blur dark:border-white/10 dark:bg-white/[0.04] dark:shadow-[0_30px_80px_rgba(0,0,0,0.35)]">
+          <div class="mb-3 flex items-center gap-2 px-2 pt-2 text-slate-400 dark:text-slate-500">
+            <span class="h-2.5 w-2.5 rounded-full bg-rose-400/90"></span>
+            <span class="h-2.5 w-2.5 rounded-full bg-amber-400/90"></span>
+            <span class="h-2.5 w-2.5 rounded-full bg-sky-400/90"></span>
+          </div>
+          {{ if $featuredXLarge }}
+          <img
+            src="{{ $featuredXLarge }}"
+            srcset="{{ $featuredSmall }} 640w, {{ $featuredMedium }} 960w, {{ $featuredLarge }} 1280w, {{ $featuredXLarge }} 1680w"
+            sizes="(min-width: 1024px) 42vw, 100vw"
+            alt="{{ .Title }}"
+            class="aspect-[16/10] w-full rounded-[1.35rem] border border-slate-200/80 bg-white object-contain p-3 shadow-sm dark:border-white/10 dark:bg-slate-950/40"
+          >
+          {{ else }}
+          <div class="flex aspect-[16/10] items-center justify-center rounded-[1.35rem] border border-dashed border-slate-300 bg-slate-50 text-sm text-slate-500 dark:border-white/10 dark:bg-slate-950/30 dark:text-slate-400">
+            {{ .Title }}
+          </div>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="mx-auto grid max-w-screen-xl gap-8 px-4 py-12 md:px-6 lg:grid-cols-[minmax(0,1fr)_300px] lg:px-8 lg:py-16">
+    <div class="min-w-0 overflow-hidden rounded-[2rem] border border-slate-200/80 bg-white p-6 shadow-[0_20px_60px_rgba(15,23,42,0.08)] dark:border-white/10 dark:bg-slate-900/40 dark:shadow-[0_20px_60px_rgba(0,0,0,0.25)] md:p-8 lg:p-10">
+      <div id="area-content" class="prose prose-zinc max-w-none prose-headings:scroll-mt-28 prose-headings:font-black prose-headings:text-slate-950 prose-h2:mt-14 prose-h2:border-t prose-h2:border-slate-200 prose-h2:pt-8 prose-h2:text-2xl prose-h3:text-xl prose-p:leading-8 prose-a:text-sky-700 prose-a:no-underline hover:prose-a:text-sky-800 hover:prose-a:underline prose-strong:text-slate-950 prose-li:leading-7 dark:prose-invert dark:prose-headings:text-white dark:prose-h2:border-white/10 dark:prose-a:text-sky-300 dark:hover:prose-a:text-sky-200 dark:prose-strong:text-white">
+        {{ $content | safeHTML }}
+      </div>
+    </div>
+
+    <aside class="space-y-6 lg:sticky lg:top-28 lg:self-start">
+      <div class="rounded-[1.75rem] border border-slate-200/80 bg-white p-6 shadow-[0_18px_48px_rgba(15,23,42,0.08)] dark:border-white/10 dark:bg-slate-900/40 dark:shadow-[0_18px_48px_rgba(0,0,0,0.22)]">
+        <div class="text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-slate-500 dark:text-slate-400">{{ $detailsLabel }}</div>
+        <p class="mt-4 text-sm leading-6 text-slate-600 dark:text-slate-300">{{ $detailsIntro }}</p>
+        <div class="mt-5 grid gap-3 sm:grid-cols-2">
+          <div class="rounded-[1.1rem] border border-slate-200/80 bg-slate-50 px-4 py-4 dark:border-white/10 dark:bg-white/5">
+            <div class="text-[0.65rem] font-semibold uppercase tracking-[0.18em] text-slate-500 dark:text-slate-400">{{ $researchersCountLabel }}</div>
+            <div class="mt-2 text-2xl font-black text-slate-950 dark:text-white">{{ len $researcherItems }}</div>
+          </div>
+          <div class="rounded-[1.1rem] border border-slate-200/80 bg-slate-50 px-4 py-4 dark:border-white/10 dark:bg-white/5">
+            <div class="text-[0.65rem] font-semibold uppercase tracking-[0.18em] text-slate-500 dark:text-slate-400">{{ $projectsCountLabel }}</div>
+            <div class="mt-2 text-2xl font-black text-slate-950 dark:text-white">{{ len $relatedProjectItems }}</div>
+          </div>
+          <div class="rounded-[1.1rem] border border-slate-200/80 bg-slate-50 px-4 py-4 dark:border-white/10 dark:bg-white/5">
+            <div class="text-[0.65rem] font-semibold uppercase tracking-[0.18em] text-slate-500 dark:text-slate-400">{{ $publicationsCountLabel }}</div>
+            <div class="mt-2 text-2xl font-black text-slate-950 dark:text-white">{{ $relatedPublicationCount }}</div>
+          </div>
+          <div class="rounded-[1.1rem] border border-slate-200/80 bg-slate-50 px-4 py-4 dark:border-white/10 dark:bg-white/5">
+            <div class="text-[0.65rem] font-semibold uppercase tracking-[0.18em] text-slate-500 dark:text-slate-400">{{ $tagsLabel }}</div>
+            <div class="mt-2 text-2xl font-black text-slate-950 dark:text-white">{{ len $displayTags }}</div>
+          </div>
+        </div>
+        {{ $studentBreakdownHtml := slice }}
+        {{ range $studentCategoryOrder }}
+          {{ $count := $studentCounts.Get . | default 0 }}
+          {{ if gt $count 0 }}
+            {{ $studentBreakdownHtml = $studentBreakdownHtml | append (printf `<div class="rounded-[1rem] border border-slate-200/80 bg-slate-50 px-3 py-3 dark:border-white/10 dark:bg-white/5"><div class="text-[0.62rem] font-semibold uppercase tracking-[0.16em] text-slate-500 dark:text-slate-400">%s</div><div class="mt-1 text-xl font-black text-slate-950 dark:text-white">%d</div></div>` (i18n .) $count) }}
+          {{ end }}
+        {{ end }}
+        {{ if gt (len $studentBreakdownHtml) 0 }}
+        <div class="mt-5 border-t border-slate-200/80 pt-5 dark:border-white/10">
+          <div class="text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-slate-500 dark:text-slate-400">{{ $studentsBreakdownLabel }}</div>
+          <div class="mt-3 grid gap-3 sm:grid-cols-2">
+            {{ range $studentBreakdownHtml }}
+            {{ . | safeHTML }}
+            {{ end }}
+          </div>
+        </div>
+        {{ end }}
+      </div>
+
+      {{ if gt (len $researcherItems) 0 }}
+      <div class="rounded-[1.75rem] border border-slate-200/80 bg-white p-6 shadow-[0_18px_48px_rgba(15,23,42,0.08)] dark:border-white/10 dark:bg-slate-900/40 dark:shadow-[0_18px_48px_rgba(0,0,0,0.22)]">
+        <div class="text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-slate-500 dark:text-slate-400">{{ $researchersLabel }}</div>
+        <div class="mt-5 space-y-2 text-sm">
+          {{ range $researcherItems }}
+            {{ if .url }}
+            <a href="{{ .url }}" class="block rounded-xl border border-slate-200/80 bg-slate-50 px-4 py-3 font-semibold text-slate-900 transition-colors hover:border-slate-300 hover:bg-white dark:border-white/10 dark:bg-white/5 dark:text-white dark:hover:bg-white/10">
+              {{ .title }}
+            </a>
+            {{ else }}
+            <div class="rounded-xl border border-slate-200/80 bg-slate-50 px-4 py-3 font-semibold text-slate-900 dark:border-white/10 dark:bg-white/5 dark:text-white">
+              {{ .title }}
+            </div>
+            {{ end }}
+          {{ end }}
+        </div>
+      </div>
+      {{ end }}
+
+      {{ if gt (len $relatedProjectItems) 0 }}
+      <div class="rounded-[1.75rem] border border-slate-200/80 bg-white p-6 shadow-[0_18px_48px_rgba(15,23,42,0.08)] dark:border-white/10 dark:bg-slate-900/40 dark:shadow-[0_18px_48px_rgba(0,0,0,0.22)]">
+        <div class="text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-slate-500 dark:text-slate-400">{{ $projectsCountLabel }}</div>
+        <p class="mt-4 text-sm leading-6 text-slate-600 dark:text-slate-300">{{ $supportLabel }}</p>
+        <div class="mt-4 space-y-2 text-sm">
+          {{ range first 4 $relatedProjectItems }}
+          <a href="{{ .url }}" class="block rounded-xl border border-slate-200/80 bg-slate-50 px-4 py-3 font-semibold text-slate-900 transition-colors hover:border-slate-300 hover:bg-white dark:border-white/10 dark:bg-white/5 dark:text-white dark:hover:bg-white/10">
+            {{ .title }}
+          </a>
+          {{ end }}
+        </div>
+      </div>
+      {{ end }}
+
+      {{ with $displayTags }}
+      <div class="rounded-[1.75rem] border border-slate-200/80 bg-white p-6 shadow-[0_18px_48px_rgba(15,23,42,0.08)] dark:border-white/10 dark:bg-slate-900/40 dark:shadow-[0_18px_48px_rgba(0,0,0,0.22)]">
+        <div class="text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-slate-500 dark:text-slate-400">{{ $tagsLabel }}</div>
+        <div class="mt-5 flex flex-wrap gap-2">
+          {{ range . }}
+          <span class="inline-flex items-center rounded-full border border-slate-200 bg-slate-50 px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.16em] text-slate-700 dark:border-white/10 dark:bg-white/5 dark:text-slate-300">
+            {{ partial "translated-label.html" (dict "value" .) }}
+          </span>
+          {{ end }}
+        </div>
+      </div>
+      {{ end }}
+
+      {{ if $hasTOC }}
+      <div class="rounded-[1.75rem] border border-slate-200/80 bg-white p-6 shadow-[0_18px_48px_rgba(15,23,42,0.08)] dark:border-white/10 dark:bg-slate-900/40 dark:shadow-[0_18px_48px_rgba(0,0,0,0.22)]">
+        <div class="text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-slate-500 dark:text-slate-400">{{ $sectionsLabel }}</div>
+        <nav class="mt-5">
+          <ul class="m-0 list-none space-y-2 p-0">
+            {{ range $tocEntries }}
+            {{ $paddingClass := cond (eq .level 2) "pl-0" (cond (eq .level 3) "pl-3" "pl-6") }}
+            <li class="m-0 p-0 {{ $paddingClass }}">
+              <a href="#{{ .anchor }}" class="block rounded-xl px-3 py-2 text-sm font-medium text-slate-700 transition-colors hover:bg-sky-50 hover:text-sky-700 dark:text-slate-300 dark:hover:bg-white/5 dark:hover:text-white">
+                {{ .label }}
+              </a>
+            </li>
+            {{ end }}
+          </ul>
+        </nav>
+      </div>
+      {{ end }}
+    </aside>
+  </section>
+</article>
+{{ end }}
