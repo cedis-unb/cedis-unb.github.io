@@ -5,7 +5,7 @@ date: 2024-02-14T00:50:20-03:00
 weight: 20
 language: en
 featured_image: "../assets/images/featured/people_André Lanna.png"
-summary: Associate Professor at the University of Brasília (UnB), working in the undergraduate Software Engineering program and the Graduate Program in Applied Computing.
+summary: Adjunct Professor at the University of Brasília (UnB), working in the undergraduate Software Engineering program and the Graduate Program in Applied Computing.
 authorimage: ../assets/images/global/author.webp
 categories:
 - people
@@ -20,7 +20,7 @@ nav_next: true
 <div id="top"></div>
 
 ## {{< i18n "people_profile" >}}
-- Current Position: Associate Professor at the [University of Brasília](https://www.unb.br/) (UnB), engaged in the undergraduate [Software Engineering](http://software.unb.br/) program and the [Graduate Program in Applied Computing](https://ppca.unb.br/).
+- Current Position: Adjunct Professor at the [University of Brasília](https://www.unb.br/) (UnB), engaged in the undergraduate [Software Engineering](http://software.unb.br/) program and the [Graduate Program in Applied Computing](https://ppca.unb.br/).
 - Fields of Expertise: Computer Science with an emphasis on Software Engineering, focusing on software architecture, software reuse, and software product lines.
 
 ## {{< i18n "people_background" >}}
@@ -29,7 +29,7 @@ nav_next: true
 - Bachelor’s in Computer Science - Pontifical Catholic University of Minas Gerais (2001-2006).
 
 ## {{< i18n "people_professional_activities" >}}
-- Associate Professor at the University of Brasília since 2011.
+- Adjunct Professor at the University of Brasília since 2011.
 - Courses Taught: Requirements Engineering, Verification Validation and Software Testing, Software Design, Introduction to Computer Science, Advanced Software Development, Object Orientation, Programming Techniques on Emerging Platforms.
 
 ## {{< i18n "people_research_areas" >}}
