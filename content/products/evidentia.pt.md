@@ -5,45 +5,56 @@ date: 2026-03-09T18:00:00-03:00
 language: pt
 product_language: pt/en
 weight: 1
-featured_image: "../assets/images/featured/produto_EVIDENTIA.png"
-summary: Projeto do CEDIS voltado ao planejamento, condução e relato de revisões sistemáticas da literatura com rastreabilidade, colaboração e relatórios reproduzíveis.
+featured_image: "../assets/images/featured/evidentia-logo.png"
+summary: Produto digital já disponível do CEDIS/UnB para planejamento, triagem, extração e relato de revisões sistemáticas da literatura com rastreabilidade, colaboração e relatórios reproduzíveis.
 authorimage: ../assets/images/global/author.webp
 categories:
 - products
-- project
 - sergio_freitas
 - george_marsicano
+- lucas_freitas
 tags:
 - app
 - ai
 - machine_learning
 - evidentia
 ---
-## Descrição do Projeto
+## Descrição do Produto
 
-O **Evidentia Review** é um projeto do **Centro de Estudos, Desenvolvimento e Inovação em Software (CEDIS)** materializado em uma plataforma web para apoiar a execução ponta a ponta de **revisões sistemáticas da literatura**. A iniciativa foi concebida para atender equipes distribuídas de pesquisa que precisam registrar protocolos, organizar critérios de seleção, acompanhar decisões e produzir relatórios consistentes ao longo de todo o processo de revisão.
+O **Evidentia Review** é o **produto digital já disponibilizado** pelo **CEDIS/UnB** para executar **revisões sistemáticas da literatura** de ponta a ponta. A plataforma está disponível em [https://evidentia.cedis.tec.br/](https://evidentia.cedis.tec.br/) e foi desenhada para equipes distribuídas que precisam planejar protocolos, conduzir triagens, registrar decisões e gerar relatórios reproduzíveis com rastreabilidade completa.
 
-A plataforma está disponível em [https://evidentia.cedis.tec.br/](https://evidentia.cedis.tec.br/) e reúne funcionalidades que fortalecem a pesquisa baseada em evidências, com ênfase em colaboração, rastreabilidade e reprodutibilidade.
+Diferentemente da página de projeto, que descreve a frente contínua de pesquisa e evolução, esta página trata do **software entregue para uso**. O Evidentia organiza o fluxo completo em um único ambiente: planejamento, triagem, extração, síntese e geração de artefatos finais. Com isso, o produto apoia tanto pesquisas acadêmicas quanto processos institucionais que exigem transparência metodológica, colaboração entre revisores e histórico auditável.
 
-## Objetivos do Projeto
+## O que o produto oferece
 
-O projeto tem como principais objetivos:
+Entre os principais recursos do **Evidentia Review** estão:
 
-- apoiar o planejamento de revisões sistemáticas, desde a definição de perguntas de pesquisa até a modelagem de formulários de extração;
-- dar suporte ao trabalho colaborativo entre revisores durante as etapas de triagem e consenso;
-- ampliar a transparência e a rastreabilidade das decisões tomadas ao longo da revisão; e
-- facilitar a geração de relatórios e documentos reproduzíveis, incluindo saídas alinhadas ao **PRISMA 2020**.
+- cadastro e gestão de protocolos, perguntas de pesquisa, critérios de inclusão e exclusão e formulários de extração;
+- modelagem de **templates de síntese versionados**, para padronizar a produção de relatórios e documentos ao longo da revisão;
+- triagem de títulos e resumos (**TIAB**) e de texto completo (**FTS**) com atribuição de revisores, histórico das decisões, acompanhamento de conflitos e apoio ao consenso;
+- modo colaborativo com trilhas de auditoria completas para decisões, ajustes e justificativas;
+- apoio por **Machine Learning** para priorização de itens e assistência à decisão durante a triagem; e
+- geração de relatórios reproduzíveis, documentos estruturados e artefatos alinhados ao **PRISMA 2020**.
 
-## Recursos e Funcionalidades
+## Fluxo apoiado pelo sistema
 
-Entre os recursos do **Evidentia Review** estão o cadastro de protocolos, o gerenciamento de critérios de inclusão e exclusão, a triagem de títulos e resumos e de texto completo, o acompanhamento de conflitos entre revisores, modelos de síntese versionados e mecanismos de auditoria da extração de dados. O sistema também incorpora apoio por **Machine Learning** para priorização e suporte à decisão, preservando trilhas de auditoria completas em todas as etapas.
+O produto foi estruturado para sustentar um fluxo de trabalho real de revisões sistemáticas:
 
-## Integrantes Associados no CEDIS
+- **planejar com consistência**, registrando protocolo, estratégia de busca, critérios e instrumentos de coleta;
+- **triagem colaborativa**, distribuindo artigos entre revisores, registrando divergências e preservando histórico completo;
+- **extração com auditoria**, acompanhando inconsistências, problemas e ajustes necessários nos dados coletados; e
+- **relatar com transparência**, produzindo saídas reproduzíveis e prontas para compartilhamento com orientadores, equipes e avaliadores.
 
-- Prof. {{< link-interno "/people/sergio_freitas" "Sergio Freitas" >}} (coordenador do projeto)
-- Prof. {{< link-interno "/people/george_marsicano" "George Marsicano Corrêa" >}}
-- Graduando em Engenharia de Software {{< link-interno "/people/collaborators/lucas_freitas" "Lucas Monteiro Freitas" >}}
+## Autoria
 
-## Acesso
+O produto tem autoria atribuída a:
 
-O sistema pode ser acessado em [Evidentia Review](https://evidentia.cedis.tec.br/).
+- Prof. {{< link-interno "/people/sergio_freitas" "Sergio Antônio Andrade de Freitas" >}}
+- Prof. {{< link-interno "/people/george_marsicano" "George Correia Marsicano" >}}
+- {{< link-interno "/people/collaborators/lucas_freitas" "Lucas Monteiro Freitas" >}}
+
+Todos vinculados ao **CEDIS/Universidade de Brasília**.
+
+## Disponibilidade
+
+O produto pode ser acessado em [Evidentia Review](https://evidentia.cedis.tec.br/).

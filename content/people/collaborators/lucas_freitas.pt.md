@@ -16,8 +16,8 @@ advisors:
 - sergio_freitas
 tags:
 - active
-- scientific_initiation
 - evidentia
+- ai
 ---
 ## Perfil Acadêmico e Profissional
 - Posição Atual: Graduando em Engenharia de Software, Universidade de Brasília. Atua em iniciação científica no projeto {{< link-interno "/products/evidentia/" "Evidentia Review" >}}, sob orientação do Prof. {{< link-interno "/people/sergio_freitas" "Sergio Freitas" >}}.

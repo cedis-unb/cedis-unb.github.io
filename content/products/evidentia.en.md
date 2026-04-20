@@ -5,45 +5,56 @@ date: 2026-03-09T18:00:00-03:00
 language: en
 product_language: pt/en
 weight: 1
-featured_image: "../assets/images/featured/produto_EVIDENTIA.png"
-summary: CEDIS project focused on planning, conducting, and reporting systematic literature reviews with traceability, collaboration, and reproducible reports.
+featured_image: "../assets/images/featured/evidentia-logo.png"
+summary: Already available digital product by CEDIS/UnB for planning, screening, extraction, and reporting of systematic literature reviews with traceability, collaboration, and reproducible outputs.
 authorimage: ../assets/images/global/author.webp
 categories:
 - products
-- project
 - sergio_freitas
 - george_marsicano
+- lucas_freitas
 tags:
 - app
 - ai
 - machine_learning
 - evidentia
 ---
-## Project Description
+## Product Description
 
-**Evidentia Review** is a project of the **Center for Studies, Development, and Innovation in Software (CEDIS)** materialized as a web platform to support **systematic literature reviews** end to end. The initiative was designed for distributed research teams that need to register protocols, organize selection criteria, track decisions, and produce consistent reports throughout the full review process.
+**Evidentia Review** is the **already available digital product** delivered by **CEDIS/UnB** to run **systematic literature reviews** end to end. The platform is available at [https://evidentia.cedis.tec.br/](https://evidentia.cedis.tec.br/) and was built for distributed teams that need to plan protocols, conduct screening, register decisions, and generate reproducible reports with full traceability.
 
-The platform is available at [https://evidentia.cedis.tec.br/](https://evidentia.cedis.tec.br/) and brings together features that strengthen evidence-based research, with a strong focus on collaboration, traceability, and reproducibility.
+Unlike the project page, which describes the ongoing research and evolution front, this page focuses on the **software that has already been delivered for use**. Evidentia organizes the full workflow in one environment: planning, screening, extraction, synthesis, and reporting. This makes the product suitable for academic research groups and institutional review processes that require methodological transparency, reviewer collaboration, and auditable history.
 
-## Project Objectives
+## What the Product Offers
 
-The main objectives of the project are:
+The main **Evidentia Review** capabilities include:
 
-- to support the planning of systematic reviews, from research questions to extraction form design;
-- to enable collaborative reviewer work during screening and consensus activities;
-- to increase transparency and traceability of review decisions; and
-- to facilitate the generation of reproducible reports and documents, including outputs aligned with **PRISMA 2020**.
+- protocol registration and management of research questions, inclusion and exclusion criteria, and extraction forms;
+- **versioned synthesis templates** to standardize reports and review documents over time;
+- title and abstract (**TIAB**) and full-text (**FTS**) screening with reviewer assignment, decision history, conflict tracking, and consensus support;
+- collaborative work with complete audit trails for decisions, updates, and justifications;
+- **Machine Learning** support for prioritization and decision assistance during screening; and
+- generation of reproducible reports, structured documents, and outputs aligned with **PRISMA 2020**.
 
-## Resources and Features
+## Workflow Supported by the System
 
-Among the resources offered by **Evidentia Review** are protocol registration, management of inclusion and exclusion criteria, title/abstract and full-text screening, reviewer conflict tracking, versioned synthesis templates, and data extraction audit mechanisms. The platform also includes **Machine Learning** support for prioritization and decision assistance, while preserving full audit trails across all stages.
+The product was designed to support a real systematic review workflow:
 
-## Associated CEDIS Members
+- **plan with confidence** by registering protocol details, search strategy, criteria, and data collection instruments;
+- **screen collaboratively** by distributing studies among reviewers, handling disagreements, and preserving a full decision history;
+- **audit extraction work** by tracking issues, inconsistencies, and required fixes in collected data; and
+- **report transparently** through reproducible outputs ready to be shared with supervisors, teams, and stakeholders.
 
-- Prof. {{< link-interno "/people/sergio_freitas" "Sergio Freitas" >}} (project coordinator)
-- Prof. {{< link-interno "/people/george_marsicano" "George Marsicano Corrêa" >}}
-- Undergraduate in Software Engineering {{< link-interno "/people/collaborators/lucas_freitas" "Lucas Monteiro Freitas" >}}
+## Authorship
 
-## Access
+The product authorship is attributed to:
 
-The system is available at [Evidentia Review](https://evidentia.cedis.tec.br/).
+- Prof. {{< link-interno "/people/sergio_freitas" "Sergio Antônio Andrade de Freitas" >}}
+- Prof. {{< link-interno "/people/george_marsicano" "George Correia Marsicano" >}}
+- {{< link-interno "/people/collaborators/lucas_freitas" "Lucas Monteiro Freitas" >}}
+
+All affiliated with **CEDIS/University of Brasília**.
+
+## Availability
+
+The product is available at [Evidentia Review](https://evidentia.cedis.tec.br/).

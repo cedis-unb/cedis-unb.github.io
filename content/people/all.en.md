@@ -33,12 +33,12 @@ authorimage: ../assets/images/global/author.webp
 </div>
 </section>
 <section class="space-y-6">
-{{< filterPeople caput="### PhD" categories="phd_candidate" tags="" notags="inactive" >}}
-{{< filterPeople caput="### Master's degree" categories="master_student" tags="" notags="inactive" >}}
-{{< filterPeople caput="### Postgraduate Specialization" categories="specialization" tags="" notags="inactive" >}}
-{{< filterPeople caput="### Undergraduate Research" categories="scientific_initiation" tags="" notags="inactive" >}}
-{{< filterPeople caput="### Bachelor's Thesis" categories="tcc" tags="" notags="inactive" >}}
-{{< filterPeople caput="### CEDIS volunteer" categories="volunteer" tags="" notags="inactive" >}}
+{{< filterPeople caput="### PhD" categories="phd_candidate" tags="" notags="inactive" grid="true" sort="alpha" >}}
+{{< filterPeople caput="### Master's degree" categories="master_student" tags="" notags="inactive" grid="true" sort="alpha" >}}
+{{< filterPeople caput="### Postgraduate Specialization" categories="specialization" tags="" notags="inactive" grid="true" sort="alpha" >}}
+{{< filterPeople caput="### Undergraduate Research" categories="scientific_initiation" tags="" notags="inactive" grid="true" sort="alpha" >}}
+{{< filterPeople caput="### Bachelor's Thesis" categories="tcc" tags="" notags="inactive" grid="true" sort="alpha" >}}
+{{< filterPeople caput="### CEDIS volunteer" categories="volunteer" tags="" notags="inactive" grid="true" sort="alpha" >}}
 </section>
 <div id="formers-section"></div>
 <section id="previous-collaborators" x-data="{ showPrevious: false }" class="overflow-hidden rounded-[2rem] border border-black/5 bg-white/80 shadow-[0_20px_70px_rgba(15,23,42,0.08)] backdrop-blur dark:border-white/10 dark:bg-white/[0.04]">
@@ -51,12 +51,12 @@ authorimage: ../assets/images/global/author.webp
 </button>
 <div x-show="showPrevious" x-cloak class="space-y-6 border-t border-black/5 px-6 py-6 dark:border-white/10 md:px-8 md:py-8">
 <p class="m-0 max-w-3xl text-base leading-7 text-gray-600 dark:text-white/72">This section preserves completed supervisions, alumni, and contributions that helped shape the CEDIS trajectory. It keeps the academic and institutional memory of the collaboration network accessible.</p>
-{{< publications caput="#### PhD" year="" types="phd" advisors="" notypes="" tags="" notags="sergio_freitas" >}}
-{{< publications caput="#### Master's degree" year="" types="dissertation" advisors="" notypes="" tags="" notags="sergio_freitas" >}}
-{{< publications caput="#### Postgraduate Specialization" year="" types="specialization" advisors="" notypes="" tags="" notags="" >}}
-{{< filterPeople caput="#### Undergraduate Research" categories="scientific_initiation" advisors="" tags="inactive" notags="">}}
-{{< publications caput="#### Bachelor's Thesis" year="" types="tcc" advisors="" notypes="" tags="" notags="" >}}
-{{< publications caput="#### CEDIS volunteer" year="" types="volunteer" advisors="" notypes="" tags="" notags="" >}}
+{{< publications caput="#### PhD" year="" types="phd" advisors="" notypes="" tags="" notags="sergio_freitas" sort="year_alpha" grid="true" >}}
+{{< publications caput="#### Master's degree" year="" types="dissertation" advisors="" notypes="" tags="" notags="sergio_freitas" sort="year_alpha" grid="true" >}}
+{{< publications caput="#### Postgraduate Specialization" year="" types="specialization" advisors="" notypes="" tags="" notags="" sort="year_alpha" grid="true" >}}
+{{< filterPeople caput="#### Undergraduate Research" categories="scientific_initiation" advisors="" tags="inactive" notags="" sort="year_alpha" grid="true" >}}
+{{< publications caput="#### Bachelor's Thesis" year="" types="tcc" advisors="" notypes="" tags="" notags="" sort="year_alpha" grid="true" >}}
+{{< publications caput="#### CEDIS volunteer" year="" types="volunteer" advisors="" notypes="" tags="" notags="" sort="year_alpha" grid="true" >}}
 {{< backToTopBtn target="top" >}}
 </div>
 </section>

@@ -6,11 +6,10 @@ language: en
 product_language: pt/en
 weight: 2
 featured_image: "../assets/images/featured/octaanalysis-dashboard.png"
-summary: CEDIS platform created to support the design, management, and analysis of gamified educational and collaborative experiences.
+summary: Already available digital product by CEDIS/UnB to support the design, management, and analysis of gamified educational and collaborative experiences with integrated analytics.
 authorimage: ../assets/images/global/author.webp
 categories:
 - products
-- project
 - sergio_freitas
 - cristiane_ramos
 tags:
@@ -19,32 +18,40 @@ tags:
 - learning_analytics
 - octaanalysis
 ---
-## Project Description
+## Product Description
 
-**OctaAnalysis** is a platform developed by the **Center for Studies, Development, and Innovation in Software (CEDIS)** to support the design, management, and analysis of gamified educational and collaborative experiences. Inspired by the **Octalysis** framework, the system organizes classes, teams, projects, evaluations, and communication flows in a single integrated digital environment.
+**OctaAnalysis** is the **already available digital product** delivered by **CEDIS/UnB** to support the design, management, and analysis of **gamified educational and collaborative experiences**. The platform is available at [https://octaanalysis.cedis.tec.br/](https://octaanalysis.cedis.tec.br/) and was built for educators, researchers, managers, and teams that need to organize activities, monitor engagement, and interpret behavioral and performance indicators in a single environment.
 
-The platform is available at [https://octaanalysis.cedis.tec.br/](https://octaanalysis.cedis.tec.br/) and was designed for educators, researchers, managers, and teams that need to structure activities, monitor engagement, and interpret behavioral and performance indicators over time.
+Unlike the project page, which describes the ongoing research and evolution front, this page focuses on the **software that has already been delivered for use**. OctaAnalysis brings together operational and analytical resources to support gamified experiences with structured monitoring, integrated visualizations, and consolidated historical records.
 
-## Project Objectives
+## What the Product Offers
 
-The main objectives of the project are:
+The main **OctaAnalysis** capabilities include:
 
-- to support the planning and execution of gamified learning and collaboration experiences;
-- to integrate the management of classes, enrollments, teams, projects, forms, content, and meetings in a single platform;
-- to provide evaluations, historical records, and analytical views that support pedagogical and managerial decisions; and
-- to offer a digital foundation for experimentation, learning design, and applied research in gamification and analytics.
+- management of classes, enrollments, teams, projects, questionnaires, meetings, and communication flows in one integrated platform;
+- radar-based evaluations, progress snapshots, and lifecycle monitoring for continuous reading of the experiences;
+- dashboards and analytical views that support pedagogical, managerial, and monitoring decisions;
+- notifications, file uploads, administrative roles, and workflows oriented toward coordination and privacy; and
+- centralized organization of data and records to support monitoring and continuous improvement.
 
-## Resources and Features
+## Workflow Supported by the System
 
-Among the features offered by **OctaAnalysis** are class, enrollment, team, and project management, questionnaires, progress snapshots, radar-based evaluations, lifecycle tracking, meeting support, and integrated communication modules. The system also includes dashboards, notifications, file uploads, administrative roles, and privacy-oriented workflows, forming a unified experience for monitoring and continuous improvement.
+The product was designed to support a real workflow for gamified experiences:
 
-More than an operational tool, OctaAnalysis was structured to turn interaction data into meaningful information about participation, motivation, and development, strengthening the use of evidence in educational and organizational experiences.
+- **organize the experience** with classes, teams, projects, forms, and meetings in one environment;
+- **monitor progress** through snapshots, historical records, and analytical views;
+- **interpret engagement and participation** with structured evaluations and dashboards; and
+- **support improvement decisions** based on consolidated evidence about behavior, progress, and performance.
 
-## Associated CEDIS Members
+## Authorship
 
-- Prof. {{< link-interno "/people/sergio_freitas" "Sergio Freitas" >}} (project coordinator)
+The product authorship is attributed to:
+
+- Prof. {{< link-interno "/people/sergio_freitas" "Sergio Freitas" >}}
 - Prof. {{< link-interno "/people/cristiane_ramos" "Cristiane Ramos" >}}
 
-## Access
+All affiliated with **CEDIS/University of Brasília**.
 
-The system is available at [OctaAnalysis](https://octaanalysis.cedis.tec.br/).
+## Availability
+
+The product is available at [OctaAnalysis](https://octaanalysis.cedis.tec.br/).

@@ -1,66 +1,14 @@
 {{ define "main" }}
-{{ $isPt := eq .Site.Language.Lang "pt" }}
-{{ $eyebrow := cond $isPt "Pessoas / Rede de colaboração" "People / Collaboration network" }}
-{{ $intro := cond $isPt "Conheça a rede de pesquisadores, estudantes e voluntários que movem os projetos do CEDIS. A página reúne a equipe em atividade e preserva a trajetória de quem já contribuiu para o grupo." "Meet the network of researchers, students, and volunteers behind CEDIS projects. This page brings together the active team and preserves the trajectory of everyone who has already contributed to the group." }}
-{{ $activeCta := cond $isPt "Ver equipe em atividade" "See active team" }}
-{{ $archiveCta := cond $isPt "Explorar histórico" "Explore legacy" }}
-
 <main class="bg-[radial-gradient(circle_at_top,_rgba(197,39,47,0.14),_transparent_26%),linear-gradient(180deg,_#f5f5f4_0%,_#ffffff_34%,_#f5f5f4_100%)] text-gray-950 dark:bg-gray-900 dark:text-gray-100">
   <div id="top"></div>
 
-  <section class="border-b border-black/5 bg-gray-950 text-white">
-    <div class="mx-auto grid max-w-screen-xl gap-10 px-4 py-12 md:px-6 md:py-16 lg:grid-cols-[minmax(0,1.1fr)_minmax(22rem,0.9fr)] lg:items-center lg:px-8 lg:py-20">
-      <div>
-        <span class="inline-flex rounded-full border border-white/15 bg-white/10 px-4 py-1 text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-white/72">
-          {{ $eyebrow }}
-        </span>
-        <h1 class="mt-6 max-w-4xl text-4xl font-black tracking-tight text-white md:text-6xl">
-          {{ .Title }}
-        </h1>
-        <p class="mt-5 max-w-2xl text-base leading-7 text-white/72 md:text-lg">
-          {{ with .Description }}{{ . }}{{ else }}{{ $intro }}{{ end }}
-        </p>
-        <div class="mt-8 flex flex-wrap gap-3">
-          <a href="#current-collaborators" class="inline-flex items-center rounded-full bg-primary-600 px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-primary-600/25 transition-colors hover:bg-primary-500">
-            {{ $activeCta }}
-          </a>
-          <a href="#previous-collaborators" class="inline-flex items-center rounded-full border border-white/15 bg-white/[0.06] px-5 py-3 text-sm font-semibold text-white/86 transition-colors hover:bg-white/10 hover:text-white">
-            {{ $archiveCta }}
-          </a>
-        </div>
-      </div>
-
-      <div class="relative">
-        <div class="absolute inset-0 rounded-[2rem] bg-[radial-gradient(circle_at_top,_rgba(255,255,255,0.16),_transparent_58%)]"></div>
-        <div class="relative overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.06] p-4 shadow-[0_24px_80px_rgba(0,0,0,0.28)] backdrop-blur md:p-6">
-          {{ with .Params.featured_image }}
-          {{ $featuredPath := replace . "../assets/" "" }}
-          {{ with resources.Get $featuredPath }}
-          {{ $image := .Fit "1200x900 webp q88" }}
-          <div class="flex min-h-[18rem] items-center justify-center overflow-hidden rounded-[1.5rem] bg-[linear-gradient(180deg,_rgba(15,23,42,0.3),_rgba(15,23,42,0.08))] p-4 md:min-h-[24rem] md:p-6">
-            <img src="{{ $image.RelPermalink }}" alt="{{ $.Title }}" class="max-h-full w-auto max-w-full object-contain" loading="eager">
-          </div>
-          {{ end }}
-          {{ end }}
-
-          <div class="mt-4 grid gap-3 sm:grid-cols-2">
-            <div class="rounded-[1.25rem] border border-white/10 bg-black/20 px-4 py-4">
-              <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-white/45">
-                {{ cond $isPt "Atuação" "Coverage" }}
-              </div>
-              <p class="mt-2 text-sm leading-6 text-white/72">
-                {{ cond $isPt "Doutorado, mestrado, especialização, iniciação científica, TCC e voluntariado." "PhD, master's, specialization, undergraduate research, capstone work, and volunteer collaboration." }}
-              </p>
-            </div>
-            <div class="rounded-[1.25rem] border border-white/10 bg-black/20 px-4 py-4">
-              <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-white/45">
-                {{ cond $isPt "Leitura rápida" "Quick reading" }}
-              </div>
-              <p class="mt-2 text-sm leading-6 text-white/72">
-                {{ cond $isPt "A equipe atual aparece por etapa de formação, e o histórico fica reunido em um único bloco expansível." "The active team is organized by training stage, and the historical record stays grouped in a single expandable block." }}
-              </p>
-            </div>
-          </div>
+  <section class="border-b border-black/5 bg-transparent text-white">
+    <div class="mx-auto max-w-screen-xl px-4 py-10 md:px-6 md:py-12 lg:px-8">
+      <div class="flex justify-center text-center">
+        <div class="w-full max-w-3xl rounded-[2rem] border border-white/10 bg-gray-950 px-5 py-7 shadow-[0_22px_70px_rgba(15,23,42,0.2)] md:px-8 md:py-8">
+          <h1 class="text-4xl font-black tracking-tight text-white md:text-6xl">
+            {{ .Title }}
+          </h1>
         </div>
       </div>
     </div>

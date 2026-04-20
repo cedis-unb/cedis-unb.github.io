@@ -98,7 +98,7 @@ languages:
           weight: 20
         - identifier: projetos
           name: Projetos
-          url: /categories/project/
+          url: /projects/
           weight: 30
         - identifier: dropdown
           pre: complexdropdown
@@ -295,7 +295,7 @@ languages:
           weight: 20
         - identifier: projetos
           name: Projects
-          url: /categories/project/
+          url: /projects/
           weight: 30
         - identifier: dropdown
           pre: complexdropdown
