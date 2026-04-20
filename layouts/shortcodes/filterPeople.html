@@ -2,6 +2,7 @@
 {{ $caputKey := .Get "caputKey" }}
 {{ $showSummary := .Get "showSummary" | default true }}
 {{ $showDescription := .Get "showDescription" | default true }}
+{{ $collapsibleDetails := eq (printf "%v" (.Get "collapsibleDetails" | default false)) "true" }}
 {{ $filterTags := split (.Get "tags") "," }}
 {{ $excludeTags := split (.Get "notags") "," }} 
 {{ $filterCategories := split (.Get "categories") "," }}
@@ -17,6 +18,7 @@
 {{ $pillClass := "inline-flex rounded-full border border-black/10 bg-stone-50 px-3 py-1 text-sm font-medium text-gray-700 transition-colors hover:border-primary-500 hover:text-primary-600 dark:border-white/10 dark:bg-white/[0.05] dark:text-white/78 dark:hover:border-primary-300 dark:hover:text-primary-200" }}
 {{ $summaryButtonClass := "inline-flex items-center rounded-full bg-primary-600 px-4 py-2 text-sm font-semibold text-white shadow-lg shadow-primary-600/20 transition-colors hover:bg-primary-500" }}
 {{ $summaryPanelClass := "mt-3 rounded-[1.25rem] border border-primary-100 bg-primary-50/70 px-4 py-4 text-sm leading-6 text-gray-700 dark:border-primary-400/20 dark:bg-primary-500/10 dark:text-white/75" }}
+{{ $toggleButtonClass := "mt-1 inline-flex w-full items-center justify-between rounded-[1rem] border border-black/10 bg-stone-50 px-4 py-3 text-sm font-semibold text-gray-700 transition-colors hover:border-primary-500 hover:text-primary-600 dark:border-white/10 dark:bg-white/[0.03] dark:text-white/78 dark:hover:border-primary-300 dark:hover:text-primary-200" }}
 
 {{ $filteredDataPeople := slice }}
 {{ range sort hugo.Data.people.people "year" "desc" }}
@@ -132,6 +134,22 @@
     <ul class="{{ $listClass }}">
     {{ range $dataPeopleToRender }}
       {{ with .person }}
+        {{ $filteredTags := slice }}
+        {{ range .tags }}
+          {{ if and (ne . "active") (ne . "inactive") }}
+            {{ $filteredTags = $filteredTags | append . }}
+          {{ end }}
+        {{ end }}
+        {{ $currentLangSummary := "" }}
+        {{ if .summary }}
+          {{ $currentLangSummary = index .summary $.Site.Language.Lang }}
+        {{ end }}
+        {{ $hasHiddenDetails := false }}
+        {{ if $collapsibleDetails }}
+          {{ if or .program .year (gt (len .advisors) 0) $currentLangSummary }}
+            {{ $hasHiddenDetails = true }}
+          {{ end }}
+        {{ end }}
         <li x-data="{ open: false }" class="{{ $cardClass }}">
           <div class="flex flex-col gap-4">
             <div class="space-y-2">
@@ -141,14 +159,17 @@
                 {{ index .title $.Site.Language.Lang }}
                 {{ if .url }}</a>{{ end }}
               </p>
+            </div>
+
+            {{ if not $collapsibleDetails }}
               {{ if or .program .year }}
               <p class="m-0 text-sm leading-6 text-gray-500 dark:text-white/60">
                 {{ if .program }}{{ .program | i18n }}{{ end }}{{ if and .program .year }}<span class="mx-2 text-gray-300 dark:text-white/20">&bull;</span>{{ end }}{{ if .year }}{{ .year }}{{ end }}
               </p>
               {{ end }}
-            </div>
+            {{ end }}
 
-            {{ if gt (len .advisors) 0 }}
+            {{ if and (not $collapsibleDetails) (gt (len .advisors) 0) }}
             <div>
               <div class="{{ $metaLabelClass }}">{{ i18n "orientador" }}</div>
               <div class="mt-2 flex flex-wrap gap-2">
@@ -161,12 +182,6 @@
             </div>
             {{ end }}
 
-            {{ $filteredTags := slice }}
-            {{ range .tags }}
-              {{ if and (ne . "active") (ne . "inactive") }}
-                {{ $filteredTags = $filteredTags | append . }}
-              {{ end }}
-            {{ end }}
             {{ $total := len $filteredTags }}
             {{ if gt $total 0 }}
             <div>
@@ -180,8 +195,42 @@
             </div>
             {{ end }}
 
-            {{ if .summary }}
-              {{ $currentLangSummary := index .summary $.Site.Language.Lang }}
+            {{ if and $collapsibleDetails $hasHiddenDetails }}
+              <div x-show="open" x-cloak class="space-y-4">
+                {{ if or .program .year }}
+                <p class="m-0 text-sm leading-6 text-gray-500 dark:text-white/60">
+                  {{ if .program }}{{ .program | i18n }}{{ end }}{{ if and .program .year }}<span class="mx-2 text-gray-300 dark:text-white/20">&bull;</span>{{ end }}{{ if .year }}{{ .year }}{{ end }}
+                </p>
+                {{ end }}
+
+                {{ if gt (len .advisors) 0 }}
+                <div>
+                  <div class="{{ $metaLabelClass }}">{{ i18n "orientador" }}</div>
+                  <div class="mt-2 flex flex-wrap gap-2">
+                    {{ range .advisors }}
+                      {{ with index hugo.Data.advisors.advisors . }}
+                        <a href="{{ if hasPrefix .link "/" }}{{ .link | relLangURL }}{{ else }}{{ .link }}{{ end }}" class="{{ $pillClass }}">{{ .name }}</a>
+                      {{ end }}
+                    {{ end }}
+                  </div>
+                </div>
+                {{ end }}
+
+                {{ if $currentLangSummary }}
+                <div class="{{ $summaryPanelClass }}">
+                  <span>{{ $currentLangSummary }}</span>
+                </div>
+                {{ end }}
+              </div>
+
+              <button @click="open = !open" class="{{ $toggleButtonClass }}" type="button" :aria-expanded="open.toString()">
+                <span x-show="!open">{{ i18n "people_show_more" }}</span>
+                <span x-show="open" x-cloak>{{ i18n "people_show_less" }}</span>
+                <svg class="h-4 w-4 transform transition-transform duration-200" :class="{ 'rotate-180': open }" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                </svg>
+              </button>
+            {{ else if .summary }}
               {{ if $currentLangSummary }}
                 <div>
                   <button @click="open = !open" class="{{ $summaryButtonClass }}">
@@ -376,21 +425,35 @@
       {{ end }}
 
       {{ if $include }}
+        {{ $pageTags := slice }}
+        {{ if and (isset $thisPage.Params "tags") (gt (len $thisPage.Params.tags) 0) }}
+          {{ range $thisPage.Params.tags }}
+            {{ if and (ne . "active") (ne . "inactive") }}
+              {{ $pageTags = $pageTags | append . }}
+            {{ end }}
+          {{ end }}
+        {{ end }}
+        {{ $hasPageHiddenDetails := false }}
+        {{ if $collapsibleDetails }}
+          {{ if or (and $showSummary (isset $thisPage.Params "summary")) (and $showDescription (isset $thisPage.Params "description")) (and $thisPage.Params.advisors (gt (len $thisPage.Params.advisors) 0)) }}
+            {{ $hasPageHiddenDetails = true }}
+          {{ end }}
+        {{ end }}
         <li class="{{ $cardClass }}">
-          <div class="flex flex-col gap-4">
+          <div x-data="{ open: false }" class="flex flex-col gap-4">
             <div class="space-y-2">
               <p class="m-0 text-xl font-black leading-tight text-gray-950 dark:text-white">
                 <a href="{{ $thisPage.RelPermalink }}" class="transition-colors hover:text-primary-600 dark:hover:text-primary-200">{{ $thisPage.Title }}</a>
               </p>
-              {{ if and $showSummary (isset $thisPage.Params "summary") }}
+              {{ if and (not $collapsibleDetails) $showSummary (isset $thisPage.Params "summary") }}
                 <p class="m-0 text-base leading-7 text-gray-600 dark:text-white/72">{{ $thisPage.Params.summary }}</p>
               {{ end }}
-              {{ if and $showDescription (isset $thisPage.Params "description") }}
+              {{ if and (not $collapsibleDetails) $showDescription (isset $thisPage.Params "description") }}
                 <p class="m-0 text-sm leading-6 text-gray-500 dark:text-white/60">{{ $thisPage.Params.description }}</p>
               {{ end }}
             </div>
 
-            {{ if and $thisPage.Params.advisors (gt (len $thisPage.Params.advisors) 0) }}
+            {{ if and (not $collapsibleDetails) $thisPage.Params.advisors (gt (len $thisPage.Params.advisors) 0) }}
               <div>
                 <div class="{{ $metaLabelClass }}">{{ i18n "orientador" }}</div>
                 <div class="mt-2 flex flex-wrap gap-2">
@@ -403,24 +466,47 @@
               </div>
             {{ end }}
 
-            {{ if and (isset $thisPage.Params "tags") (gt (len $thisPage.Params.tags) 0) }}
-              {{ $pageTags := slice }}
-              {{ range $thisPage.Params.tags }}
-                {{ if and (ne . "active") (ne . "inactive") }}
-                  {{ $pageTags = $pageTags | append . }}
+            {{ if gt (len $pageTags) 0 }}
+            <div>
+              <div class="{{ $metaLabelClass }}">{{ $topicsLabel }}</div>
+              <div class="mt-2 flex flex-wrap gap-2">
+                {{ range $pageTags }}
+                  {{ $tagLink := printf "/tags/%s" (. | urlize) | relLangURL }}
+                  <a href="{{ $tagLink }}" class="{{ $pillClass }}">{{ . | i18n }}</a>
                 {{ end }}
-              {{ end }}
-              {{ if gt (len $pageTags) 0 }}
-              <div>
-                <div class="{{ $metaLabelClass }}">{{ $topicsLabel }}</div>
-                <div class="mt-2 flex flex-wrap gap-2">
-                  {{ range $pageTags }}
-                    {{ $tagLink := printf "/tags/%s" (. | urlize) | relLangURL }}
-                    <a href="{{ $tagLink }}" class="{{ $pillClass }}">{{ . | i18n }}</a>
-                  {{ end }}
-                </div>
               </div>
-              {{ end }}
+            </div>
+            {{ end }}
+
+            {{ if and $collapsibleDetails $hasPageHiddenDetails }}
+              <div x-show="open" x-cloak class="space-y-4">
+                {{ if and $showSummary (isset $thisPage.Params "summary") }}
+                  <p class="m-0 text-base leading-7 text-gray-600 dark:text-white/72">{{ $thisPage.Params.summary }}</p>
+                {{ end }}
+                {{ if and $showDescription (isset $thisPage.Params "description") }}
+                  <p class="m-0 text-sm leading-6 text-gray-500 dark:text-white/60">{{ $thisPage.Params.description }}</p>
+                {{ end }}
+                {{ if and $thisPage.Params.advisors (gt (len $thisPage.Params.advisors) 0) }}
+                  <div>
+                    <div class="{{ $metaLabelClass }}">{{ i18n "orientador" }}</div>
+                    <div class="mt-2 flex flex-wrap gap-2">
+                      {{ range $thisPage.Params.advisors }}
+                        {{ with index hugo.Data.advisors.advisors . }}
+                          <a href="{{ if hasPrefix .link "/" }}{{ .link | relLangURL }}{{ else }}{{ .link }}{{ end }}" class="{{ $pillClass }}">{{ .name }}</a>
+                        {{ end }}
+                      {{ end }}
+                    </div>
+                  </div>
+                {{ end }}
+              </div>
+
+              <button @click="open = !open" class="{{ $toggleButtonClass }}" type="button" :aria-expanded="open.toString()">
+                <span x-show="!open">{{ i18n "people_show_more" }}</span>
+                <span x-show="open" x-cloak>{{ i18n "people_show_less" }}</span>
+                <svg class="h-4 w-4 transform transition-transform duration-200" :class="{ 'rotate-180': open }" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                </svg>
+              </button>
             {{ end }}
           </div>
         </li>
