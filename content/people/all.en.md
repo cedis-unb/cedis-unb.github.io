@@ -33,12 +33,12 @@ authorimage: ../assets/images/global/author.webp
 </div>
 </section>
 <section class="space-y-6">
-{{< filterPeople caput="### PhD" categories="phd_candidate" tags="" notags="inactive" grid="true" sort="alpha" >}}
-{{< filterPeople caput="### Master's degree" categories="master_student" tags="" notags="inactive" grid="true" sort="alpha" >}}
-{{< filterPeople caput="### Postgraduate Specialization" categories="specialization" tags="" notags="inactive" grid="true" sort="alpha" >}}
-{{< filterPeople caput="### Undergraduate Research" categories="scientific_initiation" tags="" notags="inactive" grid="true" sort="alpha" >}}
-{{< filterPeople caput="### Bachelor's Thesis" categories="tcc" tags="" notags="inactive" grid="true" sort="alpha" >}}
-{{< filterPeople caput="### CEDIS volunteer" categories="volunteer" tags="" notags="inactive" grid="true" sort="alpha" >}}
+{{< filterPeople caput="### PhD" categories="phd_candidate" tags="" notags="inactive" sort="alpha" grid="true">}}
+{{< filterPeople caput="### Master's degree" categories="master_student" tags="" notags="inactive" sort="alpha" grid="true">}}
+{{< filterPeople caput="### Postgraduate Specialization" categories="specialization" tags="" notags="inactive" sort="alpha" grid="true">}}
+{{< filterPeople caput="### Undergraduate Research" categories="scientific_initiation" tags="" notags="inactive" sort="alpha" grid="true">}}
+{{< filterPeople caput="### Bachelor's Thesis" categories="tcc" tags="" notags="inactive" sort="alpha" grid="true">}}
+{{< filterPeople caput="### CEDIS volunteer" categories="volunteer" tags="" notags="inactive" sort="alpha" grid="true">}}
 </section>
 <div id="formers-section"></div>
 <section id="previous-collaborators" x-data="{ showPrevious: false }" class="overflow-hidden rounded-[2rem] border border-black/5 bg-white/80 shadow-[0_20px_70px_rgba(15,23,42,0.08)] backdrop-blur dark:border-white/10 dark:bg-white/[0.04]">
