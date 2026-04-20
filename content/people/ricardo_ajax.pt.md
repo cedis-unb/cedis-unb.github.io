@@ -5,7 +5,7 @@ date: 2024-02-14T00:43:11-03:00
 weight: 20
 language: pt
 featured_image: "../assets/images/featured/people_Ricardo Ajax.png"
-summary: Professor Assistente II da Universidade de Brasília (UnB), atua no curso de graduação em Engenharia de Software em temas como engenharia de software, métricas, testes e qualidade de software.
+summary: Professor Adjunto da Universidade de Brasília (UnB), atua no curso de graduação em Engenharia de Software em temas como engenharia de software, métricas, testes e qualidade de software.
 authorimage: ../assets/images/global/author.webp
 categories:
 - people
@@ -22,7 +22,7 @@ nav_next: true
 <div id="top"></div>
 
 ## {{< i18n "people_profile" >}}
-- Posição Atual: Professor Assistente II da [Universidade de Brasília](https://www.unb.br/) (UnB) desde 2011, atuando no curso de graduação em [Engenharia de Software](http://software.unb.br/).
+- Posição Atual: Professor Adjunto da [Universidade de Brasília](https://www.unb.br/) (UnB) desde 2011, atuando no curso de graduação em [Engenharia de Software](http://software.unb.br/).
 - Áreas de Atuação: Engenharia de Software, métricas e estimativas de software, testes e verificação/validação, qualidade e produtividade em desenvolvimento de software, metodologias ativas no ensino de graduação e serviços digitais/e-Gov voltados à cidadania e ao envelhecimento.
 
 ## {{< i18n "people_background" >}}

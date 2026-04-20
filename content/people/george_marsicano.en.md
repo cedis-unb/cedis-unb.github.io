@@ -5,7 +5,7 @@ date: 2024-02-14T00:48:51-03:00
 weight: 20
 language: en
 featured_image: "../assets/images/featured/people_George Marsicano.png"
-summary: Professor at the University of Brasília (UnB), working in the Software Engineering undergraduate program and the Graduate Program in Applied Computing with a focus on requirements, human aspects, and software engineering education.
+summary: Associate Professor at the University of Brasília (UnB), working in the Software Engineering undergraduate program and the Graduate Program in Applied Computing with a focus on requirements, human aspects, and software engineering education.
 authorimage: ../assets/images/global/author.webp
 categories:
 - people
@@ -27,7 +27,7 @@ nav_next: true
 <div id="top"></div>
 
 ## {{< i18n "people_profile" >}}
-- Current Position: Professor at the [University of Brasília](https://www.unb.br/) (UnB), engaged in the undergraduate [Software Engineering](http://software.unb.br/) program since 2011 and in the [Graduate Program in Applied Computing](https://ppca.unb.br/) since 2020.
+- Current Position: Associate Professor at the [University of Brasília](https://www.unb.br/) (UnB), engaged in the undergraduate [Software Engineering](http://software.unb.br/) program since 2011 and in the [Graduate Program in Applied Computing](https://ppca.unb.br/) since 2020.
 - Fields of Expertise: Software Engineering, Requirements Engineering, Artificial Intelligence, team effectiveness models, human aspects in software engineering, and software engineering education.
 - Institutional Role: Researcher at the Center for Software Studies, Development, and Innovation (CEDIS/UnB).
 

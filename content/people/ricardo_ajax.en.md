@@ -5,7 +5,7 @@ date: 2024-02-14T00:43:11-03:00
 weight: 20
 language: en
 featured_image: "../assets/images/featured/people_Ricardo Ajax.png"
-summary: Assistant Professor II at the University of Brasília (UnB), working in the undergraduate Software Engineering program on software engineering, software metrics, testing, and software quality.
+summary: Adjunct Professor at the University of Brasília (UnB), working in the undergraduate Software Engineering program on software engineering, software metrics, testing, and software quality.
 authorimage: ../assets/images/global/author.webp
 categories:
 - people
@@ -22,7 +22,7 @@ nav_next: true
 <div id="top"></div>
 
 ## {{< i18n "people_profile" >}}
-- Current Position: Assistant Professor II at the [University of Brasília](https://www.unb.br/) (UnB) since 2011, engaged in the undergraduate [Software Engineering](http://software.unb.br/) program.
+- Current Position: Adjunct Professor at the [University of Brasília](https://www.unb.br/) (UnB) since 2011, engaged in the undergraduate [Software Engineering](http://software.unb.br/) program.
 - Areas of Activity: Software Engineering, software metrics and estimation, testing and verification/validation, software quality and productivity, active learning in undergraduate education, and digital services/e-government focused on citizenship and aging.
 
 ## {{< i18n "people_background" >}}
