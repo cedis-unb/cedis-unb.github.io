@@ -124,7 +124,9 @@ languages:
           url: /history/
           weight: 30
         - identifier: oportunity
+          pre: comments
           name: Oportunidades
+          post: "Editais, bolsas e chamadas"
           url: /oportunidades/
           weight: 35
         - identifier: intranet
@@ -144,9 +146,10 @@ languages:
           weight: 20
       equipe:
         - identifier: pesquisadores
-          pre: people
+          pre: researcher
           name: Pesquisadores
           url: /categories/researcher/
+          post: "Docentes pesquisadores"
           weight: 10
         - identifier: colaboradores
           pre: people
@@ -168,13 +171,13 @@ languages:
           url: "/categories/products"
           weight: 20
         - identifier: repos
-          pre: products # can be stars, comments, piechart, products, people, publications
+          pre: publications # can be stars, comments, piechart, products, people, publications
           name: Zenodo
           post: "Materiais registrados"
           url: "https://zenodo.org/communities/cedis-unb"
           weight: 25
         - identifier: cursos
-          pre: stars # can be stars, comments, piechart, products, people, publications
+          pre: courses # can be stars, comments, piechart, products, people, publications, courses
           name: Cursos e treinamentos
           post: "Cursos, oficinas, palestras e outros"
           url: "/courses"
@@ -321,7 +324,9 @@ languages:
           url: /history/
           weight: 30
         - identifier: oportunity
-          name: Oportunities
+          pre: comments
+          name: Opportunities
+          post: "Calls, grants, and openings"
           url: /oportunidades/
           weight: 35
         - identifier: intranet
@@ -341,7 +346,7 @@ languages:
           weight: 20
       equipe:
         - identifier: pesquisadores
-          pre: people
+          pre: researcher
           name: Researchers
           url: /categories/researcher/
           post: "Principal Investigators"
@@ -366,13 +371,13 @@ languages:
           url: "/categories/products"
           weight: 20
         - identifier: repos
-          pre: products # can be stars, comments, piechart, products, people, publications
+          pre: publications # can be stars, comments, piechart, products, people, publications
           name: Zenodo
           post: "Registered materials"
           url: "https://zenodo.org/communities/cedis-unb"
           weight: 25
         - identifier: cursos
-          pre: stars # can be stars, comments, piechart, products, people, publications
+          pre: courses # can be stars, comments, piechart, products, people, publications, courses
           name: Training Programs
           post: "Courses, Workshops, Lectures and others"
           url: "/courses"

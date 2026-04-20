@@ -65,6 +65,7 @@ nav_next: true
 {{< filterPeople caput="#### " caputKey="specialization" categories="specialization" advisors="cristiane_ramos" tags="" notags="inactive" sort="alpha" grid="true">}}
 {{< filterPeople caput="#### " caputKey="scientific_initiation" categories="scientific_initiation" advisors="cristiane_ramos" tags="" notags="inactive" sort="alpha" grid="true">}}
 {{< filterPeople caput="#### " caputKey="tcc" categories="tcc" advisors="cristiane_ramos" tags="" notags="inactive" sort="alpha" grid="true">}}
+{{< filterPeople caput="#### " caputKey="volunteer" categories="volunteer" advisors="cristiane_ramos" tags="" notags="inactive" sort="alpha" grid="true">}}
 <div id="previous-collaborators" x-data="{ showPrevious: false }">
     <h2 id="former-collaborators-title" @click="showPrevious = !showPrevious" class="text-xl font-bold mb-2 cursor-pointer flex items-center text-primary-900">
       {{< i18n "people_former_supervisions" >}}
