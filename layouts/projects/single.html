@@ -1,7 +1,7 @@
 {{ define "main" }}
 {{ $isPortuguese := eq .Site.Language.Lang "pt" }}
 {{ $summary := .Params.summary | default .Description }}
-{{ $catalogURL := "categories/project/" | relLangURL }}
+{{ $catalogURL := "projects/" | relLangURL }}
 {{ $dateLabel := cond $isPortuguese "Data" "Date" }}
 {{ $dateFormat := cond $isPortuguese "02/01/2006" "02 Jan 2006" }}
 {{ $projectLabel := cond $isPortuguese "Projeto CEDIS" "CEDIS project" }}

@@ -16,8 +16,8 @@ advisors:
 - sergio_freitas
 tags:
 - active
-- scientific_initiation
 - evidentia
+- ai
 ---
 ## Academic and Professional Profile
 - Current Position: Undergraduate in Software Engineering, University of Brasília. Engaged in undergraduate research in the {{< link-interno "/products/evidentia/" "Evidentia Review" >}} project under the supervision of Prof. {{< link-interno "/people/sergio_freitas" "Sergio Freitas" >}}.

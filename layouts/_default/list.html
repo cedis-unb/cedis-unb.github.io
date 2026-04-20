@@ -3,6 +3,24 @@
 {{ $isTaxonomy := eq .Kind "taxonomy" }}
 {{ $isTerm := eq .Kind "term" }}
 {{ $title := partial "translated-label.html" (dict "page" . "value" .Title) }}
+{{ $termKey := "" }}
+{{ with .Data.Term }}
+    {{ $termKey = lower . }}
+{{ end }}
+{{ $isProjectsList := and (not $isTaxonomy) (not $isTerm) (eq .Section "projects") }}
+{{ $isProductsList := and (not $isTaxonomy) (not $isTerm) (eq .Section "products") }}
+{{ $isAreasList := and (not $isTaxonomy) (not $isTerm) (eq .Section "areas") }}
+{{ $isPeopleList := and (not $isTaxonomy) (not $isTerm) (eq .Section "people") }}
+{{ $isResearchersList := and $isTerm (eq .Data.Plural "categories") (eq $termKey "researcher") }}
+{{ $isAreasTerm := and $isTerm (eq .Data.Plural "categories") (eq $termKey "knowledge_areas") }}
+{{ $isProductsTerm := and $isTerm (eq .Data.Plural "categories") (eq $termKey "products") }}
+{{ $isPeopleTerm := and $isTerm (eq .Data.Plural "categories") (eq $termKey "people") }}
+{{ $isShowcaseList := or $isProjectsList $isProductsList $isAreasList $isPeopleList $isResearchersList $isAreasTerm $isProductsTerm $isPeopleTerm }}
+{{ if $isProjectsList }}
+    {{ $title = cond $isPt "Projetos" "Projects" }}
+{{ else if or $isAreasList $isAreasTerm }}
+    {{ $title = cond $isPt "Áreas de atuação" "Areas of Expertise" }}
+{{ end }}
 {{ $collectionLabel := cond $isPt "Coleção" "Collection" }}
 {{ $resultsLabel := cond $isPt "Resultados" "Results" }}
 {{ $pageLabel := cond $isPt "Página" "Page" }}
@@ -29,11 +47,11 @@
 {{ end }}
 
 <main class="bg-[radial-gradient(circle_at_top,_rgba(197,39,47,0.16),_transparent_28%),linear-gradient(180deg,_#f5f5f4_0%,_#ffffff_38%,_#f5f5f4_100%)] text-gray-950 dark:bg-gray-900 dark:text-gray-100">
-    <section class="border-b border-black/5 bg-gray-950 text-white">
-        <div class="mx-auto max-w-screen-xl px-4 {{ if $isCompactTerm }}py-10 md:py-12{{ else }}py-16 md:py-20{{ end }} md:px-6 lg:px-8">
-            {{ if $isCompactTerm }}
+    <section class="border-b border-black/5 {{ if $isShowcaseList }}bg-transparent{{ else }}bg-gray-950{{ end }} text-white">
+        <div class="mx-auto max-w-screen-xl px-4 {{ if or $isCompactTerm $isShowcaseList }}py-10 md:py-12{{ else }}py-16 md:py-20{{ end }} md:px-6 lg:px-8">
+            {{ if or $isCompactTerm $isShowcaseList }}
             <div class="flex justify-center text-center">
-                <div class="max-w-4xl">
+                <div class="{{ if $isShowcaseList }}w-full max-w-3xl rounded-[2rem] border border-white/10 bg-gray-950 px-5 py-7 shadow-[0_22px_70px_rgba(15,23,42,0.2)] md:px-8 md:py-8{{ else }}max-w-4xl{{ end }}">
                     <h1 class="text-4xl font-black tracking-tight text-white md:text-6xl">
                         {{ $title }}
                     </h1>

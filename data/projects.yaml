@@ -64,4 +64,21 @@ projects:
       pt: "Software para o Bem"
     researchers:
       - george_marsicano
+
+  - id: evidentia
+    name:
+      en: "Evidentia Review Project"
+      pt: "Projeto Evidentia Review"
+    researchers:
+      - sergio_freitas
+      - george_marsicano
+      - lucas_freitas
+
+  - id: octaanalysis
+    name:
+      en: "OctaAnalysis Project"
+      pt: "Projeto OctaAnalysis"
+    researchers:
+      - sergio_freitas
+      - cristiane_ramos
       

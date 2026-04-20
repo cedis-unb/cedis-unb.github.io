@@ -10,7 +10,8 @@
 {{ $sortMode := .Get "sort" | default "" }}
 {{ $topicsLabel := cond (eq $.Site.Language.Lang "pt") "Temas" "Topics" }}
 {{ $headingClass := "mb-3 px-1 [&>h3]:m-0 [&>h3]:text-2xl [&>h3]:font-black [&>h3]:tracking-tight [&>h3]:text-gray-950 dark:[&>h3]:text-white" }}
-{{ $listClass := "m-0 list-none space-y-4 p-0" }}
+{{ $gridMode := .Get "grid" | default false }}
+{{ $listClass := cond (eq (printf "%v" $gridMode) "true") "m-0 list-none p-0 grid gap-4 md:grid-cols-2 lg:grid-cols-3" "m-0 list-none space-y-4 p-0" }}
 {{ $cardClass := "list-none rounded-[1.5rem] border border-black/5 bg-white/80 px-5 py-5 text-gray-700 shadow-[0_16px_50px_rgba(15,23,42,0.08)] backdrop-blur dark:border-white/10 dark:bg-white/[0.04] dark:text-white/78" }}
 {{ $metaLabelClass := "text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-gray-400 dark:text-white/45" }}
 {{ $pillClass := "inline-flex rounded-full border border-black/10 bg-stone-50 px-3 py-1 text-sm font-medium text-gray-700 transition-colors hover:border-primary-500 hover:text-primary-600 dark:border-white/10 dark:bg-white/[0.05] dark:text-white/78 dark:hover:border-primary-300 dark:hover:text-primary-200" }}
@@ -95,12 +96,15 @@
       {{ $semester = int (replaceRE "^[0-9]{4}/([0-9]+)$" "$1" $yearText) }}
     {{ end }}
     {{ $sortKey := printf "%04d_%02d_%s" (sub 9999 $baseYear) (sub 99 $semester) (lower $person.name) }}
-    {{ $filteredDataPeople = $filteredDataPeople | append (dict "person" $person "sortKey" $sortKey) }}
+    {{ $alphaSortKey := lower $person.name }}
+    {{ $filteredDataPeople = $filteredDataPeople | append (dict "person" $person "sortKey" $sortKey "alphaSortKey" $alphaSortKey) }}
   {{ end }}
 {{ end }}
 
 {{ $dataPeopleToRender := $filteredDataPeople }}
-{{ if eq $sortMode "supervision" }}
+{{ if eq $sortMode "alpha" }}
+  {{ $dataPeopleToRender = sort $filteredDataPeople "alphaSortKey" "asc" }}
+{{ else if or (eq $sortMode "supervision") (eq $sortMode "year_alpha") }}
   {{ $dataPeopleToRender = sort $filteredDataPeople "sortKey" "asc" }}
 {{ end }}
 {{ $hasMatches := gt (len $filteredDataPeople) 0 }}
