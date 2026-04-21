@@ -47,6 +47,10 @@
         {{ range .Paginator.Pages }}
         {{ $summary := .Params.summary | default (.Summary | plainify | htmlUnescape | strings.TrimSpace) }}
         {{ $cardTitle := .Title }}
+        {{ $cardImageMode := "fit" }}
+        {{ if in .Params.tags "News" }}
+            {{ $cardImageMode = "resize" }}
+        {{ end }}
         {{ $primaryLabel := partial "translated-label.html" (dict "value" .Type) }}
         {{ with .GetTerms "categories" }}
             {{ with index . 0 }}
@@ -63,7 +67,7 @@
                 {{ with .Params.featured_image }}
                 {{ $featuredPath := replace . "../assets/" "" }}
                 {{ with resources.Get $featuredPath }}
-                {{ partial "card-image.html" (dict "resource" . "title" $cardTitle "fit" "960x640 webp q88" "containerClass" "h-64" "variant" "grid") }}
+                {{ partial "card-image.html" (dict "resource" . "title" $cardTitle "fit" "960x640 webp q88" "mode" $cardImageMode "containerClass" "h-64" "variant" "grid") }}
                 {{ end }}
                 {{ else }}
                 <div class="flex h-64 items-end bg-[linear-gradient(135deg,_rgba(197,39,47,0.18),_rgba(15,23,42,0.9))] p-6">

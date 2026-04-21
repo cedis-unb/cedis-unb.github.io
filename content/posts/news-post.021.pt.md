@@ -4,7 +4,7 @@ date: 2026-03-09T18:00:00-03:00
 draft: false
 weight: 500
 language: pt
-featured_image: "../assets/images/featured/produto_EVIDENTIA.png"
+featured_image: "../assets/images/featured/evidentia-logo.png"
 summary: "O Evidentia Review, software desenvolvido pelo CEDIS, apoia equipes de pesquisa no planejamento, condução e relato de revisões sistemáticas da literatura, com trilhas de auditoria e relatórios reproduzíveis."
 description: "O Evidentia Review é um software do CEDIS voltado à condução ponta a ponta de revisões sistemáticas da literatura."
 author: CEDIS

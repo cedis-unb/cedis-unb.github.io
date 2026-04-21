@@ -15,8 +15,9 @@
 {{ $catalogLabel := cond $isPt "Ver áreas" "Browse areas" }}
 {{ $supportLabel := cond $isPt "Pesquisa, formação, projetos e produção conectados nesta frente." "Research, training, projects, and publications connected in this area." }}
 {{ $detailsIntro := cond $isPt "Números da área" "Numbers of the area" }}
-{{ $studentsBreakdownLabel := cond $isPt "Estudantes por modalidade" "Students by category" }}
+{{ $studentsBreakdownLabel := cond $isPt "Colaboradores e ex-colaboradores" "Collaborators and former collaborators" }}
 {{ $studentCategoryOrder := slice "phd_candidate" "master_student" "specialization" "scientific_initiation" "tcc" "volunteer" }}
+{{ $productionTypeToStudentCategory := dict "phd" "phd_candidate" "dissertation" "master_student" "specialization" "specialization" "tcc" "tcc" "volunteer" "volunteer" }}
 
 {{ $tocEntries := slice }}
 {{ $anchorCounts := newScratch }}
@@ -101,6 +102,8 @@
 {{ range $studentCategoryOrder }}
   {{ $studentCounts.Set . 0 }}
 {{ end }}
+
+{{/* Current and former collaborators registered in data/people */}}
 {{ range hugo.Data.people.people }}
   {{ $person := . }}
   {{ $matchesArea := false }}
@@ -116,6 +119,24 @@
         {{ $studentCounts.Set . (add ($studentCounts.Get . | default 0) 1) }}
         {{ break }}
       {{ end }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{/* Former supervisions registered in productions (phd/dissertation/specialization/tcc/volunteer) */}}
+{{ range hugo.Data.productions.items }}
+  {{ $production := . }}
+  {{ $mappedCategory := index $productionTypeToStudentCategory $production.type }}
+  {{ if and $mappedCategory (in $studentCategoryOrder $mappedCategory) }}
+    {{ $matchesArea := false }}
+    {{ range $displayTags }}
+      {{ if in $production.tags . }}
+        {{ $matchesArea = true }}
+        {{ break }}
+      {{ end }}
+    {{ end }}
+    {{ if $matchesArea }}
+      {{ $studentCounts.Set $mappedCategory (add ($studentCounts.Get $mappedCategory | default 0) 1) }}
     {{ end }}
   {{ end }}
 {{ end }}

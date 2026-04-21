@@ -4,7 +4,7 @@ date: 2026-03-09T18:00:00-03:00
 draft: false
 weight: 500
 language: en
-featured_image: "../assets/images/featured/produto_EVIDENTIA.png"
+featured_image: "../assets/images/featured/evidentia-logo.png"
 summary: "Evidentia Review, software developed by CEDIS, helps research teams plan, conduct, and report systematic literature reviews with audit trails and reproducible reports."
 description: "Evidentia Review is a CEDIS software platform designed for end-to-end systematic literature reviews."
 author: CEDIS
