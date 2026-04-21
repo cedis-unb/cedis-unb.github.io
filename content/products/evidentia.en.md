@@ -6,7 +6,7 @@ language: en
 product_language: pt/en
 weight: 1
 featured_image: "../assets/images/featured/evidentia-logo.png"
-summary: Already available digital product by CEDIS/UnB for planning, screening, extraction, and reporting of systematic literature reviews with traceability, collaboration, and reproducible outputs.
+summary: Digital platform by CEDIS/UnB for planning, screening, extraction, and reporting of systematic literature reviews with traceability, collaboration, and reproducible outputs.
 authorimage: ../assets/images/global/author.webp
 categories:
 - products
@@ -21,7 +21,7 @@ tags:
 ---
 ## Product Description
 
-**Evidentia Review** is the **already available digital product** delivered by **CEDIS/UnB** to run **systematic literature reviews** end to end. The platform is available at [https://evidentia.cedis.tec.br/](https://evidentia.cedis.tec.br/) and was built for distributed teams that need to plan protocols, conduct screening, register decisions, and generate reproducible reports with full traceability.
+**Evidentia Review** is a digital platform by **CEDIS/UnB** designed to run **systematic literature reviews** end to end. Available at [https://evidentia.cedis.tec.br/](https://evidentia.cedis.tec.br/), it was built for distributed teams that need to plan protocols, conduct screening, register decisions, and generate reproducible reports with full traceability.
 
 Unlike the project page, which describes the ongoing research and evolution front, this page focuses on the **software that has already been delivered for use**. Evidentia organizes the full workflow in one environment: planning, screening, extraction, synthesis, and reporting. This makes the product suitable for academic research groups and institutional review processes that require methodological transparency, reviewer collaboration, and auditable history.
 

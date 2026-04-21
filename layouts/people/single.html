@@ -97,9 +97,29 @@
 {{ end }}
 
 {{ $researchProducts := slice }}
+{{ $seenProductPermalinks := dict }}
 {{ range .Site.RegularPages.ByTitle }}
-  {{ if and (eq .Section "products") (eq .Lang $.Site.Language.Lang) (or (in .Params.categories $personKey) (in .Params.tags $personKey) (in .Params.advisors $personKey) (in .Params.creators $personKey)) }}
-    {{ $researchProducts = $researchProducts | append . }}
+  {{ if eq .Section "products" }}
+    {{ $hasPersonAssociation := or (in .Params.categories $personKey) (in .Params.tags $personKey) (in .Params.advisors $personKey) (in .Params.creators $personKey) }}
+    {{ if not $hasPersonAssociation }}
+      {{ range .AllTranslations }}
+        {{ if or (in .Params.categories $personKey) (in .Params.tags $personKey) (in .Params.advisors $personKey) (in .Params.creators $personKey) }}
+          {{ $hasPersonAssociation = true }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+    {{ if $hasPersonAssociation }}
+    {{ $matchingVariant := . }}
+    {{ range .AllTranslations }}
+      {{ if eq .Lang $.Site.Language.Lang }}
+        {{ $matchingVariant = . }}
+      {{ end }}
+    {{ end }}
+    {{ if not (isset $seenProductPermalinks $matchingVariant.RelPermalink) }}
+      {{ $seenProductPermalinks = merge $seenProductPermalinks (dict $matchingVariant.RelPermalink true) }}
+      {{ $researchProducts = $researchProducts | append $matchingVariant }}
+    {{ end }}
+    {{ end }}
   {{ end }}
 {{ end }}
 {{ $productCount := len $researchProducts }}
@@ -115,7 +135,7 @@
 {{ $productsListHtml := delimit $productsItemsHtml "" }}
 {{ $productsContentHtml := cond (gt $productCount 0) (printf `<div class="mt-4 grid gap-3 md:grid-cols-2 xl:grid-cols-3">%s</div>` $productsListHtml) (printf `<p class="m-0 mt-4 text-sm leading-6 text-gray-600 dark:text-white/70">%s</p>` $productsEmptyLabel) }}
 {{ $productsBlockHtml := printf `<div id="researcher-products" class="mt-6 rounded-[1.5rem] border border-black/5 bg-white/80 p-5 shadow-[0_12px_45px_rgba(15,23,42,0.06)] dark:border-white/10 dark:bg-white/[0.02]"><h3 class="m-0 text-2xl font-black tracking-tight text-gray-950 dark:text-white">%s</h3><p class="m-0 mt-3 text-sm leading-6 text-gray-600 dark:text-white/70">%s</p>%s</div>` $productsSectionTitle $productsSectionIntro $productsContentHtml }}
-{{ $content = replaceRE `(?s)(<h2 id=(?:")?(?:research-areas|areas-de-pesquisa)(?:")?[^>]*>.*?</h2>)(.*?)(<h2 id=)` (printf `${1}${2}%s${3}` $productsBlockHtml) $content 1 }}
+{{ $content = replaceRE `(?s)(<h2 id=(?:")?(?:research-areas|areas-de-pesquisa|áreas-de-pesquisa)(?:")?[^>]*>.*?</h2>)(.*?)(<h2 id=)` (printf `${1}${2}%s${3}` $productsBlockHtml) $content 1 }}
 {{ $tocEntries = $tocEntries | append (dict "level" 2 "anchor" "researcher-products" "label" $productsSectionTitle) }}
 
 {{ $hasToc := gt (len $tocEntries) 0 }}

@@ -6,7 +6,7 @@ language: pt
 product_language: pt/en
 weight: 2
 featured_image: "../assets/images/featured/octaanalysis-dashboard.png"
-summary: Produto digital já disponível do CEDIS/UnB para apoiar o desenho, a gestão e a análise de experiências educacionais e colaborativas gamificadas com acompanhamento analítico integrado.
+summary: Plataforma digital do CEDIS/UnB para apoiar o desenho, a gestão e a análise de experiências educacionais e colaborativas gamificadas com acompanhamento analítico integrado.
 authorimage: ../assets/images/global/author.webp
 categories:
 - products
@@ -20,7 +20,7 @@ tags:
 ---
 ## Descrição do Produto
 
-O **OctaAnalysis** é o **produto digital já disponibilizado** pelo **CEDIS/UnB** para apoiar o desenho, a gestão e a análise de **experiências educacionais e colaborativas gamificadas**. A plataforma está disponível em [https://octaanalysis.cedis.tec.br/](https://octaanalysis.cedis.tec.br/) e foi estruturada para docentes, pesquisadores, gestores e equipes que precisam organizar atividades, acompanhar engajamento e interpretar indicadores comportamentais e de desempenho em um único ambiente.
+O **OctaAnalysis** é uma plataforma digital do **CEDIS/UnB** para apoiar o desenho, a gestão e a análise de **experiências educacionais e colaborativas gamificadas**. Disponível em [https://octaanalysis.cedis.tec.br/](https://octaanalysis.cedis.tec.br/), foi estruturada para docentes, pesquisadores, gestores e equipes que precisam organizar atividades, acompanhar engajamento e interpretar indicadores comportamentais e de desempenho em um único ambiente.
 
 Diferentemente da página de projeto, que descreve a frente contínua de pesquisa e evolução, esta página trata do **software entregue para uso**. O OctaAnalysis reúne recursos operacionais e analíticos para sustentar experiências gamificadas com acompanhamento estruturado, visualizações integradas e histórico consolidado.
 

@@ -1,0 +1,98 @@
+{{ define "main" }}
+{{ $isPt := eq .Site.Language.Lang "pt" }}
+{{ $backLabel := cond $isPt "Ver todas as noticias" "View all news" }}
+{{ $newsLabel := cond $isPt "Noticia" "News" }}
+{{ $metaLabel := cond $isPt "Publicado em" "Published on" }}
+{{ $readLabel := cond $isPt "min de leitura" "min read" }}
+{{ $authorLabel := cond $isPt "Por" "By" }}
+{{ $formattedDate := .Date.Format (cond $isPt "02/01/2006" "02 Jan 2006") }}
+{{ $readMinutes := math.Max 1 (math.Round (div (countwords .Content) 220.0)) }}
+
+{{ $featuredSmall := "" }}
+{{ $featuredLarge := "" }}
+{{ with .Params.featured_image }}
+  {{ $featuredPath := replace . "../assets/" "" }}
+  {{ with resources.Get $featuredPath }}
+    {{ $featuredSmall = (.Resize "800x webp q86").RelPermalink }}
+    {{ $featuredLarge = (.Resize "1600x webp q88").RelPermalink }}
+  {{ end }}
+{{ end }}
+
+<article class="bg-[radial-gradient(circle_at_top,_rgba(197,39,47,0.12),_transparent_24%),linear-gradient(180deg,_#fafaf9_0%,_#ffffff_28%,_#f5f5f4_100%)] text-slate-900 dark:bg-[linear-gradient(180deg,_#0f172a_0%,_#111827_100%)] dark:text-white">
+  <section class="border-b border-black/5 bg-gray-950 text-white dark:border-white/10">
+    <div class="mx-auto max-w-screen-xl px-4 py-10 md:px-6 md:py-14 lg:px-8">
+      <a href="{{ "/categories/news/" | relLangURL }}" class="inline-flex items-center rounded-full border border-white/20 bg-white/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-white/85 transition-colors hover:bg-white/15 hover:text-white">
+        {{ $backLabel }}
+      </a>
+
+      <div class="mt-6 flex flex-wrap items-center gap-3 text-xs font-semibold uppercase tracking-[0.2em] text-white/70">
+        <span class="inline-flex rounded-full border border-primary-300/30 bg-primary-500/20 px-3 py-1 text-primary-100">{{ $newsLabel }}</span>
+        <span>{{ $metaLabel }} {{ $formattedDate }}</span>
+        <span aria-hidden="true">&bull;</span>
+        <span>{{ $readMinutes }} {{ $readLabel }}</span>
+      </div>
+
+      <h1 class="mt-5 max-w-5xl text-4xl font-black tracking-tight text-white sm:text-5xl lg:text-6xl">
+        {{ .Title }}
+      </h1>
+
+      {{ with (.Params.summary | default .Description) }}
+      <p class="mt-5 max-w-3xl text-lg leading-8 text-white/78 sm:text-xl">
+        {{ . }}
+      </p>
+      {{ end }}
+
+      <div class="mt-6 flex items-center gap-3 text-sm text-white/70">
+        <span class="font-semibold">{{ $authorLabel }} {{ .Params.author | default "CEDIS" }}</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-screen-xl px-4 py-6 md:px-6 lg:px-8 lg:py-8">
+    {{ if ne $featuredLarge "" }}
+    <div class="mx-auto max-w-4xl overflow-hidden rounded-[1.5rem] border border-black/5 bg-[linear-gradient(180deg,_rgba(248,250,252,0.92),_rgba(226,232,240,0.55))] p-2 shadow-[0_20px_60px_rgba(15,23,42,0.12)] dark:border-white/10 dark:bg-[linear-gradient(180deg,_rgba(30,41,59,0.7),_rgba(15,23,42,0.8))]">
+      <div class="flex max-h-[24rem] items-center justify-center overflow-hidden rounded-[1.1rem] border border-white/70 bg-white/65 p-2 dark:border-white/10 dark:bg-slate-950/45">
+        <img
+          src="{{ $featuredLarge }}"
+          {{ if $featuredSmall }}srcset="{{ $featuredSmall }} 800w, {{ $featuredLarge }} 1600w" sizes="(min-width: 1280px) 1120px, (min-width: 768px) calc(100vw - 64px), calc(100vw - 32px)"{{ end }}
+          alt="{{ .Title }}"
+          class="max-h-[22rem] w-auto max-w-full object-contain"
+          loading="eager"
+          decoding="async"
+        >
+      </div>
+    </div>
+    {{ end }}
+  </section>
+
+  <section class="mx-auto max-w-screen-xl px-4 pb-16 md:px-6 lg:px-8 lg:pb-20">
+    <div class="grid gap-8 lg:grid-cols-[minmax(0,1fr)_18rem]">
+      <div class="min-w-0 rounded-[1.8rem] border border-black/5 bg-white/88 px-6 py-8 shadow-[0_20px_60px_rgba(15,23,42,0.08)] backdrop-blur dark:border-white/10 dark:bg-white/[0.04] md:px-8 md:py-10">
+        <div class="prose prose-zinc max-w-none prose-headings:font-black prose-headings:tracking-tight prose-h2:mt-12 prose-h2:text-3xl prose-h3:text-2xl prose-p:leading-8 prose-li:leading-8 prose-a:text-primary-700 hover:prose-a:text-primary-600 dark:prose-invert dark:prose-a:text-primary-200 dark:hover:prose-a:text-primary-100">
+          {{ .Content }}
+        </div>
+      </div>
+
+      <aside class="space-y-4 lg:sticky lg:top-24 lg:self-start">
+        <div class="rounded-[1.5rem] border border-black/5 bg-white/88 p-5 shadow-[0_18px_50px_rgba(15,23,42,0.08)] backdrop-blur dark:border-white/10 dark:bg-white/[0.04]">
+          <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-slate-500 dark:text-white/45">{{ cond $isPt "Resumo rapido" "Quick facts" }}</div>
+          <dl class="mt-4 space-y-3 text-sm">
+            <div>
+              <dt class="font-semibold text-slate-700 dark:text-white/72">{{ cond $isPt "Data" "Date" }}</dt>
+              <dd class="text-slate-600 dark:text-white/60">{{ $formattedDate }}</dd>
+            </div>
+            <div>
+              <dt class="font-semibold text-slate-700 dark:text-white/72">{{ cond $isPt "Leitura" "Reading" }}</dt>
+              <dd class="text-slate-600 dark:text-white/60">{{ $readMinutes }} {{ $readLabel }}</dd>
+            </div>
+            <div>
+              <dt class="font-semibold text-slate-700 dark:text-white/72">{{ cond $isPt "Autor" "Author" }}</dt>
+              <dd class="text-slate-600 dark:text-white/60">{{ .Params.author | default "CEDIS" }}</dd>
+            </div>
+          </dl>
+        </div>
+      </aside>
+    </div>
+  </section>
+</article>
+{{ end }}

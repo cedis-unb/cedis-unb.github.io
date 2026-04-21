@@ -287,7 +287,7 @@
                             {{ with $page.Params.featured_image }}
                             {{ $featuredPath := replace . "../assets/" "" }}
                             {{ with resources.Get $featuredPath }}
-                            {{ partial "card-image.html" (dict "resource" . "title" $page.Title "fit" "900x640 webp q90" "containerClass" "aspect-[16/9]" "variant" "wide") }}
+                            {{ partial "card-image.html" (dict "resource" . "title" $page.Title "fit" "900x640 webp q90" "mode" "resize" "containerClass" "aspect-[16/9]" "variant" "wide") }}
                             {{ end }}
                             {{ end }}
                         </a>
@@ -349,7 +349,7 @@
                             {{ with $page.Params.featured_image }}
                             {{ $featuredPath := replace . "../assets/" "" }}
                             {{ with resources.Get $featuredPath }}
-                            {{ partial "card-image.html" (dict "resource" . "title" $page.Title "fit" "700x520 webp q90" "containerClass" "aspect-[16/9]" "variant" "wide") }}
+                            {{ partial "card-image.html" (dict "resource" . "title" $page.Title "fit" "700x520 webp q90" "mode" "resize" "containerClass" "aspect-[16/9]" "variant" "wide") }}
                             {{ end }}
                             {{ end }}
                         </a>
