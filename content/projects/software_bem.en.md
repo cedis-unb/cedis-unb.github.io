@@ -54,6 +54,13 @@ Emerging in the context of the pandemic, DOARTI created a digital platform for m
 ### LEPIC
 Focused on education, LEPIC aims to develop a tool for assessing and monitoring children's reading fluency. The project is a result of a partnership between UnB (FCTE and FCTS) and UFMG, and it supports public literacy policies based on accessible technology and scientific evidence.
 
+### Technological products recorded in 2025
+In 2025, new initiatives connected to the social-impact software line were recorded as technological products:
+
+- {{< link-interno "/products/prevencao_abuso_infantil" "Child Sexual Abuse Prevention" >}}
+- {{< link-interno "/products/prevencao_violencia_infancia" "Childhood Violence Prevention" >}}
+- {{< link-interno "/products/bem_estar_universitario" "University Well-being" >}}
+
 ## Benefits and sustainability
 
 SpB provides significant benefits both to society and to the university. Society gains from free digital solutions that directly improve quality of life, education, and inclusion. The university strengthens its outreach mission by enabling students to participate in real, interdisciplinary projects with public relevance—generating publications, internships, and transformative practical experiences.

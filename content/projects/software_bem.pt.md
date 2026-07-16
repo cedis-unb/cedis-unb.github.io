@@ -53,6 +53,13 @@ Surgido no contexto da pandemia, o DOARTI criou uma plataforma digital de mapeam
 ### LEPIC
 Com foco em educação, o LEPIC tem como objetivo criar uma ferramenta para avaliação e monitoramento da fluência leitora de crianças. A proposta é fruto de uma parceria entre a UnB (FCTE e FCTS) e a UFMG, e visa apoiar políticas públicas de alfabetização com base em evidências e tecnologia acessível.
 
+### Produtos tecnológicos registrados em 2025
+Em 2025, novas iniciativas associadas à linha de software de impacto social foram registradas como produtos tecnológicos:
+
+- {{< link-interno "/products/prevencao_abuso_infantil" "Prevenção ao Abuso Sexual Infantil" >}}
+- {{< link-interno "/products/prevencao_violencia_infancia" "Prevenção da Violência na Infância" >}}
+- {{< link-interno "/products/bem_estar_universitario" "Bem-Estar Universitário" >}}
+
 ## Benefícios e Sustentabilidade
 
 O SpB proporciona ganhos significativos tanto para a sociedade quanto para a universidade. A sociedade é beneficiada com soluções digitais gratuitas que atuam diretamente na melhoria da qualidade de vida, educação e inclusão. A universidade fortalece sua missão extensionista ao oferecer aos seus estudantes a possibilidade de atuar em projetos reais, interdisciplinares e com relevância pública — além de gerar publicações, estágios e experiências práticas transformadoras.

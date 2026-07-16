@@ -23,3 +23,10 @@ Integrantes do CEDIS:
 prof Dr. George Marsicano
 
 Participação: o prof Dr. George Marsicano colabora, individualmente, com o projeto Transformação Digital de Serviços Públicos do Governo Federal 	Brasileiro, junto ao [Laboratório ITRAC](https://itrac.unb.br), principalmente, nas áreas de Gestão de Projetos Ágeis, Requisitos de Software, Engenharia de Software e 	Abordagens de Desenvolvimento de Software.
+
+## Produtos tecnológicos relacionados
+
+Achados recentes do Currículo Lattes registram produtos tecnológicos de 2025 conectados às frentes de transformação digital, apoio estudantil, inteligência artificial e engenharia de requisitos:
+
+- {{< link-interno "/products/apoio_estudantil_fcte" "Apoio Estudantil FCTE" >}}
+- {{< link-interno "/products/chatbot_requisitos" "Chatbot para Engenharia de Requisitos" >}}

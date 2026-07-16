@@ -1,7 +1,7 @@
 ---
 author: CEDIS
 title: "André Luiz Peron Martins Lanna"
-date: 2024-02-14T00:50:20-03:00
+date: 2014-06-01T00:00:00-03:00
 weight: 20
 language: pt
 featured_image: "../assets/images/featured/people_André Lanna.png"
