@@ -1,7 +1,7 @@
 ---
 author: CEDIS
 title: "Ricardo Ajax Dias Kosloski"
-date: 2024-02-14T00:43:11-03:00
+date: 2014-11-01T00:00:00-03:00
 weight: 20
 language: en
 featured_image: "../assets/images/featured/people_Ricardo Ajax.png"

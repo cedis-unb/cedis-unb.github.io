@@ -23,3 +23,10 @@ CEDIS Members:
 prof Dr. George Marsicano
 
 Participation: prof Dr. George Marsicano collaborates individually with the Digital Transformation of Public Services of the Brazilian Federal Government project, with the [ITRAC Laboratory](https://itrac.unb.br), mainly in the areas of Agile Project Management, Software Requirements, Software Engineering, and Software Development Approaches.
+
+## Related Technological Products
+
+Recent findings from the Lattes CV record 2025 technological products connected to digital transformation, student support, artificial intelligence, and requirements engineering:
+
+- {{< link-interno "/products/apoio_estudantil_fcte" "FCTE Student Support" >}}
+- {{< link-interno "/products/chatbot_requisitos" "Requirements Engineering Chatbot" >}}
