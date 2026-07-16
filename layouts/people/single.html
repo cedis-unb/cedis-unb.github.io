@@ -45,7 +45,7 @@
 {{ end }}
 
 {{ $projectIds := slice }}
-{{ range $.Site.Data.projects.projects }}
+{{ range hugo.Data.projects.projects }}
   {{ $projectIds = $projectIds | append .id }}
 {{ end }}
 
@@ -76,14 +76,14 @@
 {{ end }}
 
 {{ $activeSupervisions := 0 }}
-{{ range $.Site.Data.people.people }}
+{{ range hugo.Data.people.people }}
   {{ if and .advisors (in .advisors $personKey) (not (in .tags "inactive")) }}
     {{ $activeSupervisions = add $activeSupervisions 1 }}
   {{ end }}
 {{ end }}
 
 {{ $publicationCount := 0 }}
-{{ range $.Site.Data.productions.items }}
+{{ range hugo.Data.productions.items }}
   {{ if in .tags $personKey }}
     {{ $publicationCount = add $publicationCount 1 }}
   {{ end }}

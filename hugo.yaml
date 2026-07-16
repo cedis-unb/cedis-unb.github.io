@@ -9,8 +9,8 @@ env: production
 languages:
   pt:
   # PORTUGUÊS
-    LanguageName: "Português"
-    languageCode: "pt"
+    label: "Português"
+    locale: "pt"
     title: CEDIS
     weight: 1
     params:
@@ -180,7 +180,7 @@ languages:
           pre: courses # can be stars, comments, piechart, products, people, publications, courses
           name: Cursos e treinamentos
           post: "Cursos, oficinas, palestras e outros"
-          url: "/courses"
+          url: "https://slides.cedis.tec.br"
           weight: 30
 #        - identifier: process
 #          pre: piechart # can be stars, comments or piechart
@@ -211,7 +211,7 @@ languages:
   en:
   # ENGLISH
     #baseURL: '/en/'
-    LanguageName: "English"
+    label: "English"
     title: CEDIS
     weight: 2
     params:
@@ -380,7 +380,7 @@ languages:
           pre: courses # can be stars, comments, piechart, products, people, publications, courses
           name: Training Programs
           post: "Courses, Workshops, Lectures and others"
-          url: "/courses"
+          url: "https://slides.cedis.tec.br"
           weight: 30
 #        - identifier: process
 #          pre: piechart # can be stars, comments or piechart

@@ -2,7 +2,7 @@
 author: CEDIS
 title: "Cristiane Soares Ramos"
 date: 2021-04-01T00:00:00-03:00
-weight: 20
+weight: 60
 language: en
 featured_image: "../assets/images/featured/people_Cristiane Ramos.png"
 summary: Professor at the University of Brasília (UnB), working in the Software Engineering undergraduate program on software quality, digital government, and software engineering education.

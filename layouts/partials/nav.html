@@ -177,7 +177,7 @@
                     </a>
 
                     {{ range $.Page.Translations }}
-                    <a title="{{ .Language.LanguageName }}" href="{{ .RelPermalink }}" class="rounded-full px-3 py-2 text-sm font-semibold tracking-wide text-gray-200 transition-colors hover:bg-white/10 hover:text-white focus:bg-primary-700 focus:text-white focus:outline-none">
+                    <a title="{{ .Language.Label }}" href="{{ .RelPermalink }}" class="rounded-full px-3 py-2 text-sm font-semibold tracking-wide text-gray-200 transition-colors hover:bg-white/10 hover:text-white focus:bg-primary-700 focus:text-white focus:outline-none">
                         {{ upper .Language.Lang }}
                     </a>
                     {{ end }}
@@ -357,7 +357,7 @@
                 </a>
 
                 {{ range $.Page.Translations }}
-                <a title="{{ .Language.LanguageName }}" href="{{ .RelPermalink }}" class="rounded-full px-3 py-2 text-sm font-semibold tracking-wide text-gray-200 transition-colors hover:bg-white/10 hover:text-white focus:bg-primary-700 focus:text-white focus:outline-none">
+                <a title="{{ .Language.Label }}" href="{{ .RelPermalink }}" class="rounded-full px-3 py-2 text-sm font-semibold tracking-wide text-gray-200 transition-colors hover:bg-white/10 hover:text-white focus:bg-primary-700 focus:text-white focus:outline-none">
                     {{ upper .Language.Lang }}
                 </a>
                 {{ end }}
