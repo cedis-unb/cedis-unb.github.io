@@ -5,7 +5,7 @@ date: 2026-07-16T09:00:00-03:00
 language: pt
 product_language: pt
 weight: 10
-featured_image: "../assets/images/featured/featured-img-placeholder.png"
+featured_image: "../assets/images/featured/edutrack-logo.png"
 summary: API de inteligência artificial para predição de desempenho acadêmico em ambientes gamificados, complementar à plataforma EduTrack, com apoio acadêmico do CEDIS.
 authorimage: ../assets/images/global/author.webp
 categories:

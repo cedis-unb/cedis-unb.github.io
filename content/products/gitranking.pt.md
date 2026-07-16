@@ -5,7 +5,7 @@ date: 2026-07-16T09:00:00-03:00
 language: pt
 product_language: pt
 weight: 7
-featured_image: "../assets/images/featured/featured-img-placeholder.png"
+featured_image: "../assets/images/featured/gitranking-logo.png"
 summary: Aplicação gamificada desenvolvida em TCC com apoio acadêmico do CEDIS para gestão e motivação de equipes ágeis, integrada ao GitHub como um GitHub App com dashboard de métricas, badges e feedback social.
 authorimage: ../assets/images/global/author.webp
 categories:
