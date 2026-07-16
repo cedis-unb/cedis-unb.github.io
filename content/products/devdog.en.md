@@ -43,7 +43,12 @@ The system also provides **hints** that consume treats, such as the number of sm
 
 - Luciano Ricardo da Silva Junior (product development as part of the bachelor's thesis)
 - Prof. {{< link-interno "/people/sergio_freitas" "Sergio Freitas" >}} (academic supervision)
+- Prof. André Luiz Peron Martins Lanna (academic co-supervision)
 - CEDIS (institutional and academic support)
+
+## Related Scientific Output
+
+The work behind DevDog had a paper accepted at the **Tools Track of the 40th Brazilian Symposium on Software Engineering (SBES 2026)**, titled _DevDog: A Gamified Web Platform for Teaching Code Smell Identification_, authored by Luciano Ricardo da Silva Junior, Prof. {{< link-interno "/people/sergio_freitas" "Sergio Freitas" >}}, and Prof. André Luiz Peron Martins Lanna.
 
 ## Access
 

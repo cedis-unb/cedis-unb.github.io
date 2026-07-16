@@ -27,7 +27,7 @@
 {{ $toggleButtonClass := "mt-1 inline-flex w-full items-center justify-between rounded-[1rem] border border-black/10 bg-stone-50 px-4 py-3 text-sm font-semibold text-gray-700 transition-colors hover:border-primary-500 hover:text-primary-600 dark:border-white/10 dark:bg-white/[0.03] dark:text-white/78 dark:hover:border-primary-300 dark:hover:text-primary-200" }}
 
 {{ $filteredDataPeople := slice }}
-{{ range sort hugo.Data.people.people "year" "desc" }}
+{{ range sort $.Site.Data.people.people "year" "desc" }}
   {{ $include := true }}
   {{ $person := . }}
   
@@ -180,7 +180,7 @@
               <div class="{{ $metaLabelClass }}">{{ i18n "orientador" }}</div>
               <div class="mt-2 flex flex-wrap gap-2">
                 {{ range .advisors }}
-                  {{ with index hugo.Data.advisors.advisors . }}
+                  {{ with index $.Site.Data.advisors.advisors . }}
                     <a href="{{ if hasPrefix .link "/" }}{{ .link | relLangURL }}{{ else }}{{ .link }}{{ end }}" class="{{ $pillClass }}">{{ .name }}</a>
                   {{ end }}
                 {{ end }}
@@ -214,7 +214,7 @@
                   <div class="{{ $metaLabelClass }}">{{ i18n "orientador" }}</div>
                   <div class="mt-2 flex flex-wrap gap-2">
                     {{ range .advisors }}
-                      {{ with index hugo.Data.advisors.advisors . }}
+                      {{ with index $.Site.Data.advisors.advisors . }}
                         <a href="{{ if hasPrefix .link "/" }}{{ .link | relLangURL }}{{ else }}{{ .link }}{{ end }}" class="{{ $pillClass }}">{{ .name }}</a>
                       {{ end }}
                     {{ end }}
@@ -464,7 +464,7 @@
                 <div class="{{ $metaLabelClass }}">{{ i18n "orientador" }}</div>
                 <div class="mt-2 flex flex-wrap gap-2">
                   {{ range $thisPage.Params.advisors }}
-                    {{ with index hugo.Data.advisors.advisors . }}
+                    {{ with index $.Site.Data.advisors.advisors . }}
                       <a href="{{ if hasPrefix .link "/" }}{{ .link | relLangURL }}{{ else }}{{ .link }}{{ end }}" class="{{ $pillClass }}">{{ .name }}</a>
                     {{ end }}
                   {{ end }}
@@ -497,7 +497,7 @@
                     <div class="{{ $metaLabelClass }}">{{ i18n "orientador" }}</div>
                     <div class="mt-2 flex flex-wrap gap-2">
                       {{ range $thisPage.Params.advisors }}
-                        {{ with index hugo.Data.advisors.advisors . }}
+                        {{ with index $.Site.Data.advisors.advisors . }}
                           <a href="{{ if hasPrefix .link "/" }}{{ .link | relLangURL }}{{ else }}{{ .link }}{{ end }}" class="{{ $pillClass }}">{{ .name }}</a>
                         {{ end }}
                       {{ end }}

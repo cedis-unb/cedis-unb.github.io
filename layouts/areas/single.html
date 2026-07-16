@@ -84,7 +84,7 @@
 {{ end }}
 
 {{ $relatedPublicationCount := 0 }}
-{{ range hugo.Data.productions.items }}
+{{ range $.Site.Data.productions.items }}
   {{ $production := . }}
   {{ $publicationMatchesArea := false }}
   {{ range $displayTags }}
@@ -104,7 +104,7 @@
 {{ end }}
 
 {{/* Current and former collaborators registered in data/people */}}
-{{ range hugo.Data.people.people }}
+{{ range $.Site.Data.people.people }}
   {{ $person := . }}
   {{ $matchesArea := false }}
   {{ range $displayTags }}
@@ -124,7 +124,7 @@
 {{ end }}
 
 {{/* Former supervisions registered in productions (phd/dissertation/specialization/tcc/volunteer) */}}
-{{ range hugo.Data.productions.items }}
+{{ range $.Site.Data.productions.items }}
   {{ $production := . }}
   {{ $mappedCategory := index $productionTypeToStudentCategory $production.type }}
   {{ if and $mappedCategory (in $studentCategoryOrder $mappedCategory) }}

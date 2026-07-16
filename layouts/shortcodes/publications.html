@@ -26,7 +26,7 @@
 {{ $topicsLabel := cond (eq $.Site.Language.Lang "pt") "Temas" "Topics" }}
 
 {{ $filteredPublications := slice }}
-{{ range hugo.Data.productions.items }}
+{{ range $.Site.Data.productions.items }}
   {{ $includePublication := true }}
     <!-- Aplica o filtro de ano, se um ano foi especificado -->
     {{ if and (gt $year 0) (ne .year $year) }}
@@ -196,7 +196,7 @@
           {{ $detailParts = $detailParts | append .location }}
         {{ end }}
         {{ $advisorsList := slice }}
-        {{ range $key, $value := hugo.Data.advisors.advisors }}
+        {{ range $key, $value := $.Site.Data.advisors.advisors }}
           {{ $advisorsList = $advisorsList | append $key }}
         {{ end }}
         {{ $filteredTags := slice }}
@@ -227,7 +227,7 @@
                 <div class="{{ $metaLabelClass }}">{{ i18n "orientador" }}</div>
                 <div class="mt-2 flex flex-wrap gap-2">
                   {{ range .advisors }}
-                    {{ with index hugo.Data.advisors.advisors . }}
+                    {{ with index $.Site.Data.advisors.advisors . }}
                       <a href="{{ if hasPrefix .link "/" }}{{ .link | relLangURL }}{{ else }}{{ .link }}{{ end }}" class="{{ $pillClass }}">{{ .name }}</a>
                     {{ end }}
                   {{ end }}

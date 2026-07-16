@@ -22,7 +22,7 @@
 {{ end }}
 
 {{ $publicationCount := 0 }}
-{{ range hugo.Data.productions.items }}
+{{ range $.Site.Data.productions.items }}
   {{ if ne .type "tcc" }}
     {{ $publicationCount = add $publicationCount 1 }}
   {{ end }}

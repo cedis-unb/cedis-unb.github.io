@@ -31,7 +31,7 @@ A researcher in the field of Learning Analytics and Educational Management, he i
 <div style="margin-left: 20px;">
 An academic in the area of Learning Analytics and Educational Management. She serves as a professor in the Software Engineering course at the University of Brasília, where she is distinguished by her innovative approach and commitment to teaching and research quality. Her specialization in Knowledge Management and Information Technology, with a focus on software quality, positions her at the forefront of integrating educational technologies and data analysis into the learning process. 
 <br>
-{{< link-interno "/people/cristiane_soares" "area_more_about_a" >}}
+{{< link-interno "/people/cristiane_ramos" "area_more_about_a" >}}
 </div>
 
 ## {{< i18n "area_research_team" >}}
