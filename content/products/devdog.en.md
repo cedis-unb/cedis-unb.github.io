@@ -52,4 +52,4 @@ The work behind DevDog had a paper accepted at the **Tools Track of the 40th Bra
 
 ## Access
 
-The system is available at [DevDog](https://devdog.cedis.tec.br/).
+The system is available at [DevDog](https://devdog.cedis.tec.br/). The source code is available on [GitHub](https://github.com/CedisUnB/CodeSmellGamification) under the MIT License, and a demo video can be found on [Zenodo](https://zenodo.org/records/20298757).

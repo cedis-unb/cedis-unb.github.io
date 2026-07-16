@@ -52,4 +52,4 @@ O trabalho decorrente do DevDog teve artigo aceito na **Trilha de Ferramentas do
 
 ## Acesso
 
-O sistema pode ser acessado em [DevDog](https://devdog.cedis.tec.br/).
+O sistema pode ser acessado em [DevDog](https://devdog.cedis.tec.br/). O código-fonte está disponível em [GitHub](https://github.com/CedisUnB/CodeSmellGamification) sob licença MIT, e um vídeo de demonstração pode ser encontrado no [Zenodo](https://zenodo.org/records/20298757).

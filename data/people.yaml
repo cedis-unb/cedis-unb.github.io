@@ -2605,6 +2605,21 @@ people:
   - gamification
   - education
   year: 2016
+- name: Wildemberg Sales da Silva Junior
+  categories:
+  - people
+  - scientific_initiation
+  title:
+    pt: "Estudos para gamificação da Plataforma de Popularização e Divulgação da Ciência e Tecnologia: modelagem da gamificação e tratamento dos indicadores motivacionais"
+    en: "Studies for the Gamification of the Science and Technology Popularization and Dissemination Platform: Gamification Modeling and Treatment of Motivational Indicators"
+  program: curso_esw2
+  advisors:
+  - sergio_freitas
+  tags:
+  - inactive
+  - gamification
+  - digital_transformation
+  year: 2025
 - name: Guilherme Fay Vergara
   categories:
   - people
