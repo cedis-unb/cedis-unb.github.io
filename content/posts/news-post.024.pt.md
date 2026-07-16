@@ -4,7 +4,7 @@ date: 2026-07-07T09:00:00-03:00
 draft: false
 weight: 500
 language: pt
-featured_image: "../assets/images/featured/featured-img-placeholder.png"
+featured_image: "../assets/images/featured/atloria-logo.png"
 summary: "Geovanna Maciel Avelino da Costa e Mylena Angélica Silva Farias defenderam o TCC que deu origem ao Atloria, aplicativo Android que usa realidade aumentada e gamificação para o ensino de estruturas de dados."
 description: "Trabalho de conclusão de curso orientado pelo Prof. Sergio Freitas resultou no Atloria, aplicativo educacional em realidade aumentada."
 author: CEDIS
