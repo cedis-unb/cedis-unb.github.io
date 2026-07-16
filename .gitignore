@@ -1,6 +1,8 @@
 node_modules/
 resources/
 public/
+tmp/
+.claude/
 .hugo_build.lock
 .hugo-server/
 .vercel

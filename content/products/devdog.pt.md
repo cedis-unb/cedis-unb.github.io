@@ -43,7 +43,12 @@ O sistema também oferece um conjunto de **dicas** consumindo petiscos, como qua
 
 - Luciano Ricardo da Silva Junior (desenvolvimento do produto no TCC)
 - Prof. {{< link-interno "/people/sergio_freitas" "Sergio Freitas" >}} (orientação acadêmica)
+- Prof. André Luiz Peron Martins Lanna (coorientação acadêmica)
 - CEDIS (apoio institucional e acadêmico)
+
+## Produção Científica Relacionada
+
+O trabalho decorrente do DevDog teve artigo aceito na **Trilha de Ferramentas do 40º Simpósio Brasileiro de Engenharia de Software (SBES 2026)**, sob o título _DevDog: A Gamified Web Platform for Teaching Code Smell Identification_, de autoria de Luciano Ricardo da Silva Junior, Prof. {{< link-interno "/people/sergio_freitas" "Sergio Freitas" >}} e Prof. André Luiz Peron Martins Lanna.
 
 ## Acesso
 
