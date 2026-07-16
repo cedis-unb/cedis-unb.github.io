@@ -9033,13 +9033,13 @@ administrative and operational activities of the Brazilian Army."
     pt: "DevDog: A Gamified Web Platform for Teaching Code Smell Identification"
     en: "DevDog: A Gamified Web Platform for Teaching Code Smell Identification"
   summary:
-    pt: 'Artigo aceito na Trilha de Ferramentas do 40º Simpósio Brasileiro de Engenharia de Software (SBES 2026), apresentando o DevDog, plataforma web gamificada para ensino de identificação de code smells.'
-    en: 'Paper accepted at the Tools Track of the 40th Brazilian Symposium on Software Engineering (SBES 2026), presenting DevDog, a gamified web platform for teaching code smell identification.'
+    pt: 'Artigo aceito na Trilha de Ferramentas do 40º Simpósio Brasileiro de Engenharia de Software (SBES 2026), apresentando o DevDog, plataforma web gamificada com guias teóricos, exercícios contextualizados, marcação de code smells por linha, feedback imediato, petiscos, dicas progressivas e estatísticas da comunidade. Implementado com React, Vite, Tailwind CSS, Express, Prisma e PostgreSQL, com catálogo de 19 tipos de smells inspirado no catálogo de Fowler.'
+    en: 'Paper accepted at the Tools Track of the 40th Brazilian Symposium on Software Engineering (SBES 2026), presenting DevDog, a deployed gamified web platform with theory guides, contextualized exercises, line-level smell marking, immediate feedback, collectible treats (petiscos), progressive hints, and community statistics. Implemented with React, Vite, Tailwind CSS, Express, Prisma, and PostgreSQL, covering a catalog of 19 smell types inspired by Fowler''s catalog.'
   book_title: ''
   volume: ''
   doi_isbn: ''
-  journal_event: '40th Brazilian Symposium on Software Engineering (SBES 2026) - Tools Track'
-  location: Brasil
+  journal_event: '40th Brazilian Symposium on Software Engineering (SBES 2026) - Tools Track, September 8-11, 2026'
+  location: São Paulo, SP, Brazil
   pages: ''
   publisher: ''
   tags:
@@ -9053,6 +9053,152 @@ administrative and operational activities of the Brazilian Army."
   advisors: []
   url: 'https://cbsoft.sbc.org.br/2026/en/symposiums/sbes/tools'
   github_repo:
-    pt: 'https://devdog.cedis.tec.br/'
-    en: 'https://devdog.cedis.tec.br/'
+    pt: 'https://github.com/CedisUnB/CodeSmellGamification'
+    en: 'https://github.com/CedisUnB/CodeSmellGamification'
+  zenodo_record:
+    pt: 'https://zenodo.org/records/20298757'
+    en: 'https://zenodo.org/records/20298757'
+  year: 2026
+
+- authors:
+  - Cristiane Soares Ramos
+  - Sergio Antônio Andrade de Freitas
+  - Mylena Angélica Silva Farias
+  - Wildemberg Sales da Silva Junior
+  - Marcus Vinícius Paiva Martins
+  - Leda Cardoso S. Pinto
+  title:
+    pt: "Gamifying Science Communication: An Experience Report of Jornada Galáctica at Canal Ciência"
+    en: "Gamifying Science Communication: An Experience Report of Jornada Galáctica at Canal Ciência"
+  summary:
+    pt: ''
+    en: ''
+  book_title: ''
+  volume: '3'
+  doi_isbn: ''
+  journal_event: 'The 26th International Conference on Computational Science and Its Applications (ICCSA 2026)'
+  location: Braga, Portugal
+  pages: '3-20'
+  publisher: ''
+  tags:
+  - gamification
+  - digital_transformation
+  - sergio_freitas
+  - cristiane_ramos
+  type: conference
+  program: ''
+  advisors: []
+  url: ''
+  year: 2026
+
+- authors:
+  - Sergio Antônio Andrade de Freitas
+  - André Corrêa da Silva
+  - Milena de Faria Silva
+  - Renan Carneiro Batista
+  - Washington Luís Ribeiro de Carvalho Segundo
+  title:
+    pt: "A Heterogeneous Ensemble Meta-Model for Large-Scale Categorization of Portuguese Scientific Records in OasisBR"
+    en: "A Heterogeneous Ensemble Meta-Model for Large-Scale Categorization of Portuguese Scientific Records in OasisBR"
+  summary:
+    pt: ''
+    en: ''
+  book_title: ''
+  volume: '3'
+  doi_isbn: ''
+  journal_event: 'The 26th International Conference on Computational Science and Its Applications (ICCSA 2026)'
+  location: Braga, Portugal
+  pages: '228-242'
+  publisher: ''
+  tags:
+  - dfcris
+  - contextus
+  - ai
+  - machine_learning
+  - sergio_freitas
+  type: conference
+  program: ''
+  advisors: []
+  url: ''
+  year: 2026
+
+- authors:
+  - Bruno Mello Andrade
+  - Sergio Antônio Andrade de Freitas
+  title:
+    pt: "Adaptive Gamification as a Software Process Analytics Instrument: An Industrial Case Study in a High-Maturity Environment"
+    en: "Adaptive Gamification as a Software Process Analytics Instrument: An Industrial Case Study in a High-Maturity Environment"
+  summary:
+    pt: ''
+    en: ''
+  book_title: ''
+  volume: '1'
+  doi_isbn: ''
+  journal_event: '19th International Conference on the Quality of Information and Communications Technology (QUATIC 2026)'
+  location: Genova, Italy
+  pages: ''
+  publisher: ''
+  tags:
+  - gamification
+  - software_quality
+  - sergio_freitas
+  type: conference
+  program: ''
+  advisors: []
+  url: ''
+  year: 2026
+
+- authors:
+  - Éber Júnio Borges Moreira
+  - Sergio Antônio Andrade de Freitas
+  title:
+    pt: "Fast University Timetabling via Room-wise CP-SAT Decomposition and Incremental Repair"
+    en: "Fast University Timetabling via Room-wise CP-SAT Decomposition and Incremental Repair"
+  summary:
+    pt: ''
+    en: ''
+  book_title: ''
+  volume: '1'
+  doi_isbn: ''
+  journal_event: '53º Seminário Integrado de Software e Hardware (SEMISH 2026)'
+  location: Gramado, RS, Brasil
+  pages: ''
+  publisher: ''
+  tags:
+  - sergio_freitas
+  - machine_learning
+  - learning_analytics
+  type: conference
+  program: ''
+  advisors: []
+  url: ''
+  year: 2026
+
+- authors:
+  - Sergio Antônio Andrade de Freitas
+  - Daniel Rodrigues da Rocha
+  - Davi Rodrigues da Rocha
+  - Mylena Angélica Silva Farias
+  title:
+    pt: "A Motivation-Aware Diagnostic Instrument for Personalized and Gamified Computing Education"
+    en: "A Motivation-Aware Diagnostic Instrument for Personalized and Gamified Computing Education"
+  summary:
+    pt: 'Artigo aceito no XXXVII Simpósio Brasileiro de Informática na Educação (SBIE 2026, submissão #27258), apresentando um instrumento diagnóstico de início de semestre para personalização e gamificação no ensino de computação, avaliado em três disciplinas de graduação (245 respostas válidas), com bom nível de consistência interna (α = 0.880). O instrumento fundamenta os produtos EduTrack e EduTrack AI.'
+    en: 'Paper accepted at the XXXVII Brazilian Symposium on Computers in Education (SBIE 2026, submission #27258), presenting a semester-start diagnostic instrument for personalized and gamified computing education, evaluated across three undergraduate courses (245 valid responses) with good internal consistency (α = 0.880). The instrument underpins the EduTrack and EduTrack AI products.'
+  book_title: ''
+  volume: ''
+  doi_isbn: ''
+  journal_event: 'XXXVII Simpósio Brasileiro de Informática na Educação (SBIE 2026)'
+  location: Brasil
+  pages: ''
+  publisher: ''
+  tags:
+  - gamification
+  - learning_analytics
+  - active_learning
+  - sergio_freitas
+  type: conference
+  program: ''
+  advisors: []
+  url: ''
   year: 2026
