@@ -8935,3 +8935,124 @@ administrative and operational activities of the Brazilian Army."
   - cristiane_ramos
   url: ''
   year: 2006
+
+- authors:
+  - Ana Beatriz Norberto da Silva
+  - Beatriz Vieira Nascimento
+  title:
+    pt: "Git Ranking: Desenvolvimento de uma aplicação gamificada de gestão e motivação de equipes ágeis para o GitHub App"
+    en: "Git Ranking: Developing a Gamified Application for Managing and Motivating Agile Teams as a GitHub App"
+  summary:
+    pt: ''
+    en: ''
+  book_title: ''
+  volume: ''
+  doi_isbn: ''
+  journal_event: ''
+  location: Brasília, DF
+  pages: ''
+  publisher: Universidade de Brasília
+  tags:
+  - gamification
+  - active_learning
+  type: tcc
+  program: curso_esw2
+  advisors:
+  - sergio_freitas
+  url: ''
+  github_repo:
+    pt: 'https://github.com/CedisUnB/GitRanking'
+    en: 'https://github.com/CedisUnB/GitRanking'
+  year: '2025/2'
+
+- authors:
+  - Geovanna Maciel Avelino da Costa
+  - Mylena Angélica Silva Farias
+  title:
+    pt: "Atloria: Uma plataforma gamificada para visualização de estrutura de dados em realidade aumentada"
+    en: "Atloria: A Gamified Platform for Data Structure Visualization in Augmented Reality"
+  summary:
+    pt: ''
+    en: ''
+  book_title: ''
+  volume: ''
+  doi_isbn: ''
+  journal_event: ''
+  location: Brasília, DF
+  pages: ''
+  publisher: Universidade de Brasília
+  tags:
+  - gamification
+  - active_learning
+  - social_software
+  type: tcc
+  program: curso_esw2
+  advisors:
+  - sergio_freitas
+  url: ''
+  github_repo:
+    pt: 'https://github.com/CedisUnB/Atloria'
+    en: 'https://github.com/CedisUnB/Atloria'
+  zenodo_record:
+    pt: 'https://zenodo.org/records/20832755'
+    en: 'https://zenodo.org/records/20832755'
+  year: '2026/1'
+
+- authors:
+  - Luciano Ricardo da Silva Junior
+  title:
+    pt: "Gamificação como estratégia de ensino da identificação de code smells"
+    en: "Gamification as a Teaching Strategy for Code Smell Identification"
+  summary:
+    pt: ''
+    en: ''
+  book_title: ''
+  volume: ''
+  doi_isbn: ''
+  journal_event: ''
+  location: Brasília, DF
+  pages: ''
+  publisher: Universidade de Brasília
+  tags:
+  - gamification
+  - software_architecture
+  - software_quality
+  type: tcc
+  program: curso_esw2
+  advisors:
+  - sergio_freitas
+  - andre_lanna
+  url: ''
+  year: '2026/1'
+
+- authors:
+  - Luciano Ricardo da Silva Junior
+  - Sergio Antônio Andrade de Freitas
+  - André Luiz Peron Martins Lanna
+  title:
+    pt: "DevDog: A Gamified Web Platform for Teaching Code Smell Identification"
+    en: "DevDog: A Gamified Web Platform for Teaching Code Smell Identification"
+  summary:
+    pt: 'Artigo aceito na Trilha de Ferramentas do 40º Simpósio Brasileiro de Engenharia de Software (SBES 2026), apresentando o DevDog, plataforma web gamificada para ensino de identificação de code smells.'
+    en: 'Paper accepted at the Tools Track of the 40th Brazilian Symposium on Software Engineering (SBES 2026), presenting DevDog, a gamified web platform for teaching code smell identification.'
+  book_title: ''
+  volume: ''
+  doi_isbn: ''
+  journal_event: '40th Brazilian Symposium on Software Engineering (SBES 2026) - Tools Track'
+  location: Brasil
+  pages: ''
+  publisher: ''
+  tags:
+  - gamification
+  - software_quality
+  - software_architecture
+  - sergio_freitas
+  - andre_lanna
+  type: conference
+  program: ''
+  advisors: []
+  url: 'https://cbsoft.sbc.org.br/2026/en/symposiums/sbes/tools'
+  github_repo:
+    pt: 'https://devdog.cedis.tec.br/'
+    en: 'https://devdog.cedis.tec.br/'
+  year: 2026

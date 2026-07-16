@@ -303,13 +303,13 @@ people:
   - people
   - tcc
   title:
-    pt: "Ferramenta gamificada de apoio à gestão ágil: Uma aplicação web para gestão de tarefas"
-    en: "Gamified Tool for Agile Management: A Web Application for Task Management"
+    pt: "Git Ranking: Desenvolvimento de uma aplicação gamificada de gestão e motivação de equipes ágeis para o GitHub App"
+    en: "Git Ranking: Developing a Gamified Application for Managing and Motivating Agile Teams as a GitHub App"
   program: curso_esw2
   advisors:
   - sergio_freitas
   tags:
-  - active
+  - inactive
   - gamification
   - active_learning
   year: 2025
@@ -318,13 +318,13 @@ people:
   - people
   - tcc
   title:
-    pt: "Ferramenta gamificada de apoio à gestão ágil: Uma aplicação web para gestão de tarefas"
-    en: "Gamified Tool for Agile Management: A Web Application for Task Management"
+    pt: "Git Ranking: Desenvolvimento de uma aplicação gamificada de gestão e motivação de equipes ágeis para o GitHub App"
+    en: "Git Ranking: Developing a Gamified Application for Managing and Motivating Agile Teams as a GitHub App"
   program: curso_esw2
   advisors:
   - sergio_freitas
   tags:
-  - active
+  - inactive
   - gamification
   - active_learning
   year: 2025
@@ -410,13 +410,13 @@ people:
   - people
   - tcc
   title:
-    pt: "Visualização Interativa de Estruturas de Dados com Realidade Aumentada para Apoio ao Ensino de Algoritmos: Uma abordagem gamificada para engajamento e aprendizagem ativa"
-    en: "Interactive Visualization of Data Structures with Augmented Reality to Support Algorithm Teaching: A Gamified Approach for Engagement and Active Learning"
+    pt: "Atloria: Uma plataforma gamificada para visualização de estrutura de dados em realidade aumentada"
+    en: "Atloria: A Gamified Platform for Data Structure Visualization in Augmented Reality"
   program: curso_esw2
   advisors:
   - sergio_freitas
   tags:
-  - active
+  - inactive
   - gamification
   - active_learning
   - social_software
@@ -426,15 +426,17 @@ people:
   - people
   - tcc
   title:
-    pt: "Gamificação e Code smells"
-    en: "Gamification and Code Smells"
+    pt: "Gamificação como estratégia de ensino da identificação de code smells"
+    en: "Gamification as a Teaching Strategy for Code Smell Identification"
   program: curso_esw2
   advisors:
   - sergio_freitas
+  - andre_lanna
   tags:
-  - active
+  - inactive
   - gamification
   - software_architecture
+  - software_quality
   year: 2025
 - name: Maciel Ferreira Custódio Junior
   categories:
@@ -488,13 +490,13 @@ people:
   - people
   - tcc
   title:
-    pt: "Visualização Interativa de Estruturas de Dados com Realidade Aumentada para Apoio ao Ensino de Algoritmos: Uma abordagem gamificada para engajamento e aprendizagem ativa"
-    en: "Interactive Visualization of Data Structures with Augmented Reality to Support Algorithm Teaching: A Gamified Approach for Engagement and Active Learning"
+    pt: "Atloria: Uma plataforma gamificada para visualização de estrutura de dados em realidade aumentada"
+    en: "Atloria: A Gamified Platform for Data Structure Visualization in Augmented Reality"
   program: curso_esw2
   advisors:
   - sergio_freitas
   tags:
-  - active
+  - inactive
   - gamification
   - active_learning
   - social_software
