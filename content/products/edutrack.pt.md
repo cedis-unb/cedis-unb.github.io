@@ -5,7 +5,7 @@ date: 2026-07-16T09:00:00-03:00
 language: pt
 product_language: pt
 weight: 9
-featured_image: "../assets/images/featured/featured-img-placeholder.png"
+featured_image: "../assets/images/featured/edutrack-logo.png"
 summary: Plataforma educacional para acompanhamento, análise e gamificação de turmas, com apoio acadêmico do CEDIS, fundamentada em um instrumento diagnóstico de início de semestre validado em disciplinas de graduação.
 authorimage: ../assets/images/global/author.webp
 categories:

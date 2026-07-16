@@ -5,7 +5,7 @@ date: 2026-07-16T09:00:00-03:00
 language: en
 product_language: pt
 weight: 6
-featured_image: "../assets/images/featured/featured-img-placeholder.png"
+featured_image: "../assets/images/featured/atloria-logo.png"
 summary: Android mobile app developed as a bachelor's thesis with academic support from CEDIS for teaching data structures through augmented reality and gamification, featuring themed rooms, mini missions, and an achievement passport.
 authorimage: ../assets/images/global/author.webp
 categories:
