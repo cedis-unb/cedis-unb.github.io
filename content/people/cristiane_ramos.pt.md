@@ -2,7 +2,7 @@
 author: CEDIS
 title: "Cristiane Soares Ramos"
 date: 2021-04-01T00:00:00-03:00
-weight: 20
+weight: 60
 language: pt
 featured_image: "../assets/images/featured/people_Cristiane Ramos.png"
 summary: Professora Adjunta da Universidade de Brasília (UnB), atua no curso de Engenharia de Software em temas como qualidade de software, governo digital e educação em engenharia de software.

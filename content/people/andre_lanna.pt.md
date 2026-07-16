@@ -2,7 +2,7 @@
 author: CEDIS
 title: "André Luiz Peron Martins Lanna"
 date: 2014-06-01T00:00:00-03:00
-weight: 20
+weight: 30
 language: pt
 featured_image: "../assets/images/featured/people_André Lanna.png"
 summary: Professor Adjunto da Universidade de Brasília (UnB), atua no curso de graduação em Engenharia de Software e no Programa de Pós-Graduação em Computação Aplicada. 

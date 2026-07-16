@@ -2,7 +2,7 @@
 author: CEDIS
 title: "Daniel Sundfeld Lima"
 date: 2023-05-01T00:00:00-03:00
-weight: 20
+weight: 70
 language: en
 aliases:
 - /people/daniel_sundfeld/

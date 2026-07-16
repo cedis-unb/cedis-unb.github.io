@@ -2,7 +2,7 @@
 author: CEDIS
 title: "Sergio Antônio Andrade de Freitas"
 date: 2013-09-01T00:00:00-03:00
-weight: 20
+weight: 10
 language: pt
 featured_image: "../assets/images/featured/people_Sergio Freitas.png"
 summary: Professor Titular da Universidade de Brasília (UnB), atua no curso de graduação em Engenharia de Software e no Programa de Pós-Graduação em Computação Aplicada.
