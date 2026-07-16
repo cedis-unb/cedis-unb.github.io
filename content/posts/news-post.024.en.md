@@ -4,7 +4,7 @@ date: 2026-07-07T09:00:00-03:00
 draft: false
 weight: 500
 language: en
-featured_image: "../assets/images/featured/featured-img-placeholder.png"
+featured_image: "../assets/images/featured/atloria-logo.png"
 summary: "Geovanna Maciel Avelino da Costa and Mylena Angélica Silva Farias defended the bachelor's thesis behind Atloria, an Android app that uses augmented reality and gamification to teach data structures."
 description: "A bachelor's thesis supervised by Prof. Sergio Freitas resulted in Atloria, an educational augmented reality app."
 author: CEDIS

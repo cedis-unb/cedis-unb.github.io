@@ -4,7 +4,7 @@ date: 2026-07-16T09:00:00-03:00
 draft: false
 weight: 500
 language: pt
-featured_image: "../assets/images/featured/featured-img-placeholder.png"
+featured_image: "../assets/images/featured/edutrack-logo.png"
 summary: "O artigo A Motivation-Aware Diagnostic Instrument for Personalized and Gamified Computing Education, que fundamenta o EduTrack e o EduTrack AI, foi aceito no XXXVII Simpósio Brasileiro de Informática na Educação (SBIE 2026)."
 description: "Artigo (submissão #27258) de autoria de Sergio Freitas, Daniel Rodrigues da Rocha, Davi Rodrigues da Rocha e Mylena Angélica Silva Farias foi aceito no SBIE 2026."
 author: CEDIS

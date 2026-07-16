@@ -4,7 +4,7 @@ date: 2025-12-01T09:00:00-03:00
 draft: false
 weight: 500
 language: en
-featured_image: "../assets/images/featured/featured-img-placeholder.png"
+featured_image: "../assets/images/featured/gitranking-logo.png"
 summary: "Ana Beatriz Norberto da Silva and Beatriz Vieira Nascimento defended the bachelor's thesis behind Git Ranking, a gamified GitHub App for managing and motivating agile teams."
 description: "A bachelor's thesis supervised by Prof. Sergio Freitas resulted in Git Ranking, a gamified application integrated with GitHub."
 author: CEDIS

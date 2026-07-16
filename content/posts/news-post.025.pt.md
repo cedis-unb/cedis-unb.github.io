@@ -4,7 +4,7 @@ date: 2025-12-01T09:00:00-03:00
 draft: false
 weight: 500
 language: pt
-featured_image: "../assets/images/featured/featured-img-placeholder.png"
+featured_image: "../assets/images/featured/gitranking-logo.png"
 summary: "Ana Beatriz Norberto da Silva e Beatriz Vieira Nascimento defenderam o TCC que deu origem ao Git Ranking, GitHub App gamificado para gestão e motivação de equipes ágeis."
 description: "Trabalho de conclusão de curso orientado pelo Prof. Sergio Freitas resultou no Git Ranking, aplicação gamificada integrada ao GitHub."
 author: CEDIS
