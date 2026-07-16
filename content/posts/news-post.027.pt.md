@@ -4,7 +4,7 @@ date: 2026-07-16T09:00:00-03:00
 draft: false
 weight: 500
 language: pt
-featured_image: "../assets/images/featured/featured-img-placeholder.png"
+featured_image: "../assets/images/featured/deckmanager-logo.png"
 summary: "O CEDIS Deck Manager permite publicar apresentações interativas em HTML, controlar quando elas aceitam respostas e acompanhar o engajamento da turma em tempo real, com anonimização por padrão e conformidade com a LGPD."
 description: "Nova plataforma do CEDIS para apresentações interativas, disponível em slides.cedis.tec.br e deck.cedis.tec.br."
 author: CEDIS
