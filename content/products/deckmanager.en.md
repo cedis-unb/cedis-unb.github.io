@@ -5,7 +5,7 @@ date: 2026-07-16T09:00:00-03:00
 language: en
 product_language: pt
 weight: 8
-featured_image: "../assets/images/featured/featured-img-placeholder.png"
+featured_image: "../assets/images/featured/deckmanager-logo.png"
 summary: A CEDIS platform for publishing interactive HTML presentations, controlling when and for whom they accept responses, and tracking engagement in real time, with privacy-by-design anonymization and LGPD compliance.
 authorimage: ../assets/images/global/author.webp
 categories:

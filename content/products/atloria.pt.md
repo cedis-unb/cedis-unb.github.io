@@ -5,7 +5,7 @@ date: 2026-07-16T09:00:00-03:00
 language: pt
 product_language: pt
 weight: 6
-featured_image: "../assets/images/featured/featured-img-placeholder.png"
+featured_image: "../assets/images/featured/atloria-logo.png"
 summary: Aplicativo móvel Android desenvolvido em TCC com apoio acadêmico do CEDIS para o ensino de estruturas de dados por meio de realidade aumentada e gamificação, com salas temáticas, mini missões e passaporte de conquistas.
 authorimage: ../assets/images/global/author.webp
 categories:
