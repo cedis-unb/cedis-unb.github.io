@@ -10,7 +10,7 @@
 {{ $caput := .Get "caput" }}
 
 {{ $publicationCount := 0 }}
-{{ range $.Site.Data.productions.items }}
+{{ range hugo.Data.productions.items }}
   {{ $includePublication := true }}
     <!-- Aplica o filtro de ano, se um ano foi especificado -->
     {{ if and (gt $year 0) (ne .year $year) }}

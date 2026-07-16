@@ -2,7 +2,7 @@
 author: CEDIS
 title: "Fabiana Freitas Mendes"
 date: 2018-03-01T00:00:00-03:00
-weight: 20
+weight: 50
 language: en
 featured_image: "../assets/images/featured/people_Fabiana Mendes.png"
 summary: Associate Professor at the University of Brasília (UnB), working in the undergraduate Software Engineering program.

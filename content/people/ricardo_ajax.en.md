@@ -2,7 +2,7 @@
 author: CEDIS
 title: "Ricardo Ajax Dias Kosloski"
 date: 2014-11-01T00:00:00-03:00
-weight: 20
+weight: 40
 language: en
 featured_image: "../assets/images/featured/people_Ricardo Ajax.png"
 summary: Adjunct Professor at the University of Brasília (UnB), working in the undergraduate Software Engineering program on software engineering, software metrics, testing, and software quality.
