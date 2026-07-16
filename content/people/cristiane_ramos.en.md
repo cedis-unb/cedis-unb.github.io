@@ -1,7 +1,7 @@
 ---
 author: CEDIS
 title: "Cristiane Soares Ramos"
-date: 2024-02-14T00:47:02-03:00
+date: 2021-04-01T00:00:00-03:00
 weight: 20
 language: en
 featured_image: "../assets/images/featured/people_Cristiane Ramos.png"
@@ -41,6 +41,7 @@ nav_next: true
 
 ## {{< i18n "people_contributions" >}}
 - Best Paper Award at ICCSA for the work "A process to identify player's motivational profiles for designing a gamification project" (2024).
+- Organizer of the 1st Graduate Studies Meeting at UnB Gama (2025).
 - Class patron of the Software Engineering graduating class at UnB (2021/1).
 - MPS.Br Evaluator - SOFTEX (2007).
 - MPS.Br Implementer - SOFTEX (2006).

@@ -1,7 +1,7 @@
 ---
 author: CEDIS
 title: "Sergio Antônio Andrade de Freitas"
-date: 2024-02-14T00:49:57-03:00
+date: 2013-09-01T00:00:00-03:00
 weight: 20
 language: pt
 featured_image: "../assets/images/featured/people_Sergio Freitas.png"

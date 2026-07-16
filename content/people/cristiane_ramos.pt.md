@@ -1,7 +1,7 @@
 ---
 author: CEDIS
 title: "Cristiane Soares Ramos"
-date: 2024-02-14T00:47:02-03:00
+date: 2021-04-01T00:00:00-03:00
 weight: 20
 language: pt
 featured_image: "../assets/images/featured/people_Cristiane Ramos.png"
@@ -41,6 +41,7 @@ nav_next: true
 
 ## {{< i18n "people_contributions" >}}
 - Prêmio de Melhor Artigo no ICCSA pelo trabalho "A process to identify player's motivational profiles for designing a gamification project" (2024).
+- Organização do I Encontro de Pós-graduação na UnB Gama (2025).
 - Paraninfa da turma de formandos do curso de Engenharia de Software da UnB (2021/1).
 - Avaliadora MPS.Br - SOFTEX (2007).
 - Implementadora MPS.Br - SOFTEX (2006).
