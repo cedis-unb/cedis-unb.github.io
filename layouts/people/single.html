@@ -44,6 +44,17 @@
   {{ end }}
 {{ end }}
 
+{{ $advisorInfo := index (index hugo.Data.advisors "advisors") $personKey }}
+{{ $contactEmail := "" }}
+{{ $contactLattes := "" }}
+{{ $contactOrcid := "" }}
+{{ if $advisorInfo }}
+  {{ with $advisorInfo.email }}{{ $contactEmail = . }}{{ end }}
+  {{ with $advisorInfo.lattes }}{{ $contactLattes = . }}{{ end }}
+  {{ with $advisorInfo.orcid }}{{ $contactOrcid = . }}{{ end }}
+{{ end }}
+{{ $hasContact := or $contactEmail $contactLattes $contactOrcid }}
+
 {{ $projectIds := slice }}
 {{ range hugo.Data.projects.projects }}
   {{ $projectIds = $projectIds | append .id }}
@@ -256,6 +267,28 @@
         <div id="profile-content" class="[&_h2]:mt-12 [&_h2]:border-t [&_h2]:border-black/5 [&_h2]:pt-10 [&_h2]:text-3xl [&_h2]:font-black [&_h2]:tracking-tight [&_h2]:text-gray-950 dark:[&_h2]:border-white/10 dark:[&_h2]:text-white [&_h3]:mt-8 [&_h3]:text-2xl [&_h3]:font-black [&_h3]:tracking-tight [&_h3]:text-gray-950 dark:[&_h3]:text-white [&_h4]:mt-6 [&_h4]:text-xl [&_h4]:font-black [&_h4]:tracking-tight [&_h4]:text-gray-950 dark:[&_h4]:text-white [&_p]:my-5 [&_p]:text-base [&_p]:leading-7 [&_p]:text-gray-600 dark:[&_p]:text-white/72 [&_ul]:my-5 [&_ul]:list-disc [&_ul]:space-y-2 [&_ul]:pl-5 [&_ul]:text-gray-700 dark:[&_ul]:text-white/78 [&_ol]:my-5 [&_ol]:list-decimal [&_ol]:space-y-2 [&_ol]:pl-5 [&_ol]:text-gray-700 dark:[&_ol]:text-white/78 [&_li]:leading-7 [&_li>ul]:mt-2 [&_li>ol]:mt-2 [&_a]:font-semibold [&_a]:text-primary-700 [&_a]:transition-colors hover:[&_a]:text-primary-600 dark:[&_a]:text-primary-200 dark:hover:[&_a]:text-primary-100 [&_.caput]:mt-10">
           {{ $content | safeHTML }}
         </div>
+
+        {{ if $isResearcher }}
+        <div class="mt-12 rounded-[1.75rem] border border-primary-200/70 bg-[linear-gradient(180deg,_rgba(255,247,237,0.95),_rgba(255,255,255,0.9))] p-6 shadow-[0_16px_60px_rgba(197,39,47,0.08)] dark:border-primary-400/25 dark:bg-[linear-gradient(180deg,_rgba(76,29,29,0.35),_rgba(15,23,42,0.5))] md:p-8">
+          <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-primary-700 dark:text-primary-200">{{ i18n "people_cta_supervision_eyebrow" }}</div>
+          <h2 class="mt-3 text-2xl font-black tracking-tight text-gray-950 dark:text-white md:text-3xl">{{ i18n "people_cta_supervision_heading" }}</h2>
+          <p class="mt-3 max-w-2xl text-base leading-7 text-gray-700 dark:text-white/78">{{ i18n "people_cta_supervision_body" }}</p>
+          <div class="mt-6 flex flex-wrap gap-3">
+            <a href="{{ "/oportunidades/" | relLangURL }}" class="inline-flex items-center rounded-full bg-primary-600 px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-primary-600/25 transition-colors hover:bg-primary-500">
+              {{ i18n "people_cta_opportunities" }}
+              <span class="ml-2" aria-hidden="true">&rarr;</span>
+            </a>
+            {{ if $contactEmail }}
+            <a href="mailto:{{ $contactEmail }}?subject={{ i18n "people_cta_email_subject" }}" class="inline-flex items-center rounded-full border border-primary-300 bg-white px-5 py-3 text-sm font-semibold text-primary-700 transition-colors hover:border-primary-500 hover:bg-primary-50 dark:border-primary-400/40 dark:bg-white/[0.06] dark:text-primary-100 dark:hover:bg-primary-500/10">
+              {{ i18n "people_cta_email" }}
+            </a>
+            {{ end }}
+            <a href="{{ "/contact/" | relLangURL }}" class="inline-flex items-center rounded-full border border-black/10 bg-white px-5 py-3 text-sm font-semibold text-gray-700 transition-colors hover:border-gray-400 hover:text-gray-950 dark:border-white/10 dark:bg-white/[0.06] dark:text-white/78 dark:hover:border-white/30 dark:hover:text-white">
+              {{ i18n "people_cta_contact" }}
+            </a>
+          </div>
+        </div>
+        {{ end }}
       </div>
     </article>
 
@@ -285,6 +318,44 @@
           </div>
         </div>
       </div>
+
+      {{ if $hasContact }}
+      <div class="rounded-[1.75rem] border border-black/5 bg-white/85 p-5 shadow-[0_18px_60px_rgba(15,23,42,0.08)] backdrop-blur dark:border-white/10 dark:bg-white/[0.04]">
+        <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-gray-400 dark:text-white/72">{{ i18n "people_contact" }}</div>
+        <ul class="m-0 mt-4 list-none space-y-3 p-0">
+          {{ if $contactEmail }}
+          <li class="m-0 flex items-center gap-3 rounded-[1.25rem] border border-black/5 bg-stone-50 px-4 py-3 dark:border-white/10 dark:bg-white/[0.04]" x-data="{ copied: false }">
+            <svg class="h-5 w-5 flex-shrink-0 text-primary-600 dark:text-primary-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
+              <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+            </svg>
+            <div class="min-w-0 flex-1">
+              <a href="mailto:{{ $contactEmail }}" class="block truncate text-sm font-semibold text-primary-700 hover:text-primary-600 dark:text-primary-200 dark:hover:text-primary-100">{{ $contactEmail }}</a>
+            </div>
+            <button
+              type="button"
+              @click="navigator.clipboard.writeText('{{ $contactEmail }}').then(() => { copied=true; setTimeout(()=>copied=false, 2000) })"
+              :aria-label="copied ? '{{ i18n "ui_copy_email_copied" }}' : '{{ i18n "ui_copy_email" }}'"
+              class="inline-flex flex-shrink-0 items-center rounded-full border border-black/10 bg-white px-2.5 py-1 text-[0.7rem] font-semibold uppercase tracking-[0.14em] text-gray-700 transition-colors hover:border-primary-300 hover:text-primary-700 focus:outline-none focus:ring-2 focus:ring-primary-400 focus:ring-offset-2 dark:border-white/10 dark:bg-white/[0.06] dark:text-white/78 dark:hover:border-primary-300/60 dark:hover:text-primary-100 dark:focus:ring-offset-gray-900">
+              <span x-text="copied ? 'OK' : '{{ i18n "ui_copy_email" }}'"></span>
+            </button>
+          </li>
+          {{ end }}
+          {{ if $contactLattes }}
+          <li class="m-0 flex items-center gap-3 rounded-[1.25rem] border border-black/5 bg-stone-50 px-4 py-3 dark:border-white/10 dark:bg-white/[0.04]">
+            <span class="inline-flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-md bg-primary-600 text-[0.6rem] font-black uppercase tracking-tight text-white dark:bg-primary-500">L</span>
+            <a href="{{ $contactLattes }}" target="_blank" rel="noopener noreferrer" class="min-w-0 flex-1 truncate text-sm font-semibold text-primary-700 hover:text-primary-600 dark:text-primary-200 dark:hover:text-primary-100">{{ i18n "people_lattes" }}</a>
+          </li>
+          {{ end }}
+          {{ if $contactOrcid }}
+          <li class="m-0 flex items-center gap-3 rounded-[1.25rem] border border-black/5 bg-stone-50 px-4 py-3 dark:border-white/10 dark:bg-white/[0.04]">
+            <span class="inline-flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-[#A6CE39] text-[0.55rem] font-black text-white">iD</span>
+            <a href="{{ $contactOrcid }}" target="_blank" rel="noopener noreferrer" class="min-w-0 flex-1 truncate text-sm font-semibold text-primary-700 hover:text-primary-600 dark:text-primary-200 dark:hover:text-primary-100">ORCID</a>
+          </li>
+          {{ end }}
+        </ul>
+      </div>
+      {{ end }}
 
       {{ if $hasToc }}
       <div id="profile-navigation" class="rounded-[1.75rem] border border-black/5 bg-white/85 p-5 shadow-[0_18px_60px_rgba(15,23,42,0.08)] backdrop-blur dark:border-white/10 dark:bg-white/[0.04]">

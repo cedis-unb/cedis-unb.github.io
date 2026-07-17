@@ -276,6 +276,18 @@ ui_alt_area_visual: "Ilustração da área"
 ui_bibtex_copy: "Copiar citação BibTeX"
 ui_bibtex_copied: "BibTeX copiado para a área de transferência"
 
+# Perfil — contato e CTAs
+people_lattes: "Currículo Lattes"
+ui_copy_email: "Copiar email"
+ui_copy_email_copied: "Email copiado"
+people_cta_supervision_eyebrow: "Próximo passo"
+people_cta_supervision_heading: "Interessado(a) em orientação ou colaboração?"
+people_cta_supervision_body: "Se você quer pesquisar com este professor, propor parceria ou tirar dúvidas sobre editais e vagas, aqui estão os caminhos rápidos."
+people_cta_opportunities: "Ver oportunidades"
+people_cta_email: "Enviar email"
+people_cta_contact: "Falar com o CEDIS"
+people_cta_email_subject: "Interesse em orientação/colaboração — CEDIS"
+
 # Metricas de impacto
 ui_impact_eyebrow: "CEDIS em números"
 ui_impact_heading: "Uma década construindo software e conhecimento"
