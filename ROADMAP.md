@@ -108,20 +108,20 @@ Após o ciclo de correções técnicas de 2026-07, o site do CEDIS está com bas
 ### Eixo D — Interatividade e curiosidade
 > Ativa personas: 1, 2
 
-- [ ] **D1** — Mapa visual das áreas de atuação — grafo ou mapa em D3.js ligando áreas, pesquisadores e projetos. Alto engagement.
-  <!-- > Nota: -->
+- [x] **D1** — Mapa visual das áreas de atuação — grafo ou mapa em D3.js ligando áreas, pesquisadores e projetos. Alto engagement.
+  > Nota (2026-07-17): página nova `/mapa/` (PT) e `/map/` (EN) com grafo force-directed em D3.js v7 (CDN). Nodes coloridos por tipo (áreas azul, pesquisadores vermelho, projetos verde), com drag + zoom + click-para-abrir. Filtro Alpine.js por tipo. Sidebar mostra contagem e detalhes do nó selecionado. Dados JSON gerados a partir de `data/areas.yaml`, `data/advisors.yaml`, `data/projects.yaml`. Adicionado no menu About/CEDIS entre "História" e "Oportunidades".
 
-- [ ] **D2** — Timeline interativa da história — anos como pontos clicáveis, cada um expandindo em conquistas do ano. Substituir Markdown atual.
-  <!-- > Nota: -->
+- [x] **D2** — Timeline interativa da história — anos como pontos clicáveis, cada um expandindo em conquistas do ano. Substituir Markdown atual.
+  > Nota (2026-07-17): `layouts/_default/history.html` reescrito com Alpine.js. Botões de ano pinçam/focam o card correspondente e aplicam scroll suave. Cada card colapsa/expande independente (por padrão só o mais recente aberto). Botões "Expandir tudo" / "Recolher tudo". Marcador do dot muda de intensidade quando o card está aberto. i18n `ui_timeline_*` novos.
 
 - [ ] **D3** — Quiz "Qual área do CEDIS combina comigo?" — 5–6 perguntas para aspirantes descobrirem qual grupo/orientador se alinha.
   <!-- > Nota: -->
 
-- [ ] **D4** — Gráfico de "temas em alta" — nuvem de tags dimensionada por frequência nas publicações recentes.
-  <!-- > Nota: -->
+- [x] **D4** — Gráfico de "temas em alta" — nuvem de tags dimensionada por frequência nas publicações recentes.
+  > Nota (2026-07-17): seção "Temas em alta" na home (`layouts/index.html`), logo após "CEDIS em números". Agrega tags de `data/productions.yaml` dos últimos 4 anos (2023-2026), exclui pesquisadores e marcas active/inactive. Top 20 renderizadas como cloud com font-size proporcional (0.85rem–2.45rem) e opacidade proporcional à frequência. Cada tag linka para `/tags/{tag}/`. i18n `ui_trending_*` novos.
 
-- [ ] **D5** — Filtro nas publicações por área/ano/tipo com sliders (Alpine.js). Hoje é lista rolante.
-  <!-- > Nota: -->
+- [x] **D5** — Filtro nas publicações por área/ano/tipo com sliders (Alpine.js). Hoje é lista rolante.
+  > Nota (2026-07-17): filtro no topo da página `/publications/` em `layouts/_default/publications.html` com 3 selects (Ano, Tipo, Tema). Alpine.js aplica `x-show` em cada `<li>` do shortcode (data-attrs `data-pub-year/type/topics`) e esconde `<h2>` de ano sem itens visíveis. Contador "total → filtrado" e botão Limpar. Sem sliders (selects mais eficientes com o volume de dados). i18n `ui_filter_*` e `pub_type_*` novos.
 
 
 ### Eixo E — Conversão
@@ -226,7 +226,7 @@ Meta: criar rotina editorial e amplificar alcance.
 - [ ] C3 — meta descriptions únicas
 
 ### Backlog — trimestre 2
-- D1 — mapa visual das áreas (projeto de IC)
+- ~~D1 — mapa visual das áreas~~ ✓ adiantado em 2026-07-17 (D3.js force graph em `/mapa/`)
 - D3 — quiz "qual área combina" (projeto de TCC)
 - B2 — vídeos de depoimento (projeto de extensão)
 - C1 — pillar pages por área
@@ -254,6 +254,7 @@ Evitar:
 |------|---------|---------|
 | 2026-07-17 | Sergio Freitas + assistente | Criação inicial pós-ciclo técnico. Marcados C5 e F2 como concluídos (implementados no ciclo). |
 | 2026-07-17 | Sergio Freitas + assistente | Sprint 1 concluído: A1 (métricas na página de história), A5 (voz humana no p1), B4 (números na home), E1 (CTA final nos perfis de pesquisador), E4 (card contato com Copiar email + Lattes + ORCID). Link "Cursos e treinamentos" atualizado para `https://slides.cedis.tec.br/programas-de-formacao`. Novos i18n `people_cta_*`, `people_lattes`, `ui_copy_email*` em pt/en. |
+| 2026-07-17 | Sergio Freitas + assistente | Eixo D em massa: D5 (filtro Alpine.js em /publications/), D2 (timeline interativa com colapso por ano), D4 (nuvem "Temas em alta" na home, top 20 tags dos últimos 4 anos), D1 (grafo D3.js em nova página /mapa/ conectando áreas ↔ pesquisadores ↔ projetos, com drag/zoom/filter/sidebar). Menu de navegação ganha "Mapa de conhecimento" sob About/CEDIS. |
 
 <!-- Modelo de nova entrada:
 | YYYY-MM-DD | Nome | Descrição breve da mudança |

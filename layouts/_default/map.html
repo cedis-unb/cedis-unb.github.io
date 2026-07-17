@@ -1,0 +1,287 @@
+{{ define "main" }}
+{{ $isPt := eq .Site.Language.Lang "pt" }}
+{{ $siteLang := .Site.Language.Lang }}
+
+{{ $nodes := slice }}
+{{ $links := slice }}
+
+{{ range hugo.Data.areas.areas }}
+  {{ $areaId := .id }}
+  {{ $label := index .name $siteLang }}
+  {{ if not $label }}{{ $label = index .name "en" }}{{ end }}
+  {{ $nodes = $nodes | append (dict
+    "id" (printf "area:%s" $areaId)
+    "type" "area"
+    "label" $label
+    "raw" $areaId
+    "url" (printf "/tags/%s" ($areaId | urlize) | relLangURL)
+    "count" (len .researchers)
+  ) }}
+  {{ range .researchers }}
+    {{ $links = $links | append (dict
+      "source" (printf "area:%s" $areaId)
+      "target" (printf "researcher:%s" .)
+      "kind" "area-researcher"
+    ) }}
+  {{ end }}
+{{ end }}
+
+{{ range $key, $adv := hugo.Data.advisors.advisors }}
+  {{ if $adv.areas }}
+    {{ $link := printf "/people/%s" $key | relLangURL }}
+    {{ with $adv.link }}
+      {{ if hasPrefix . "/" }}
+        {{ $link = . | relLangURL }}
+      {{ else }}
+        {{ $link = . }}
+      {{ end }}
+    {{ end }}
+    {{ $nodes = $nodes | append (dict
+      "id" (printf "researcher:%s" $key)
+      "type" "researcher"
+      "label" $adv.name
+      "raw" $key
+      "url" $link
+      "count" (len $adv.areas)
+    ) }}
+  {{ end }}
+{{ end }}
+
+{{ range hugo.Data.projects.projects }}
+  {{ $projectId := .id }}
+  {{ $label := index .name $siteLang }}
+  {{ if not $label }}{{ $label = index .name "en" }}{{ end }}
+  {{ $nodes = $nodes | append (dict
+    "id" (printf "project:%s" $projectId)
+    "type" "project"
+    "label" $label
+    "raw" $projectId
+    "url" (printf "/tags/%s" ($projectId | urlize) | relLangURL)
+    "count" (len .researchers)
+  ) }}
+  {{ range .researchers }}
+    {{ $links = $links | append (dict
+      "source" (printf "project:%s" $projectId)
+      "target" (printf "researcher:%s" .)
+      "kind" "project-researcher"
+    ) }}
+  {{ end }}
+{{ end }}
+
+{{ $existingNodeIds := dict }}
+{{ range $nodes }}{{ $existingNodeIds = merge $existingNodeIds (dict .id true) }}{{ end }}
+{{ $filteredLinks := slice }}
+{{ range $links }}
+  {{ if and (index $existingNodeIds .source) (index $existingNodeIds .target) }}
+    {{ $filteredLinks = $filteredLinks | append . }}
+  {{ end }}
+{{ end }}
+
+{{ $graphData := dict "nodes" $nodes "links" $filteredLinks }}
+
+{{ $intro := .Params.description | default (i18n "ui_map_lead") }}
+{{ $eyebrow := .Params.eyebrow | default (i18n "ui_map_eyebrow") }}
+
+<main class="bg-[linear-gradient(180deg,_#f8fafc_0%,_#ffffff_28%,_#f8fafc_100%)] text-gray-950 dark:bg-[linear-gradient(180deg,_#0f172a_0%,_#111827_58%,_#0b1120_100%)] dark:text-gray-100">
+  <section class="border-b border-black/5 bg-[radial-gradient(circle_at_top,_rgba(197,39,47,0.12),_transparent_34%),linear-gradient(180deg,_#ffffff_0%,_#f8fafc_100%)] dark:border-white/10 dark:bg-[radial-gradient(circle_at_top,_rgba(197,39,47,0.18),_transparent_34%),linear-gradient(180deg,_#111827_0%,_#0f172a_100%)]">
+    <div class="mx-auto max-w-screen-xl px-4 py-12 md:px-6 lg:px-8 lg:py-14">
+      {{ partial "breadcrumbs.html" . }}
+      <span class="mt-4 inline-flex rounded-full border border-black/10 bg-white px-4 py-1 text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-gray-500 dark:border-white/10 dark:bg-white/[0.06] dark:text-white/55">{{ $eyebrow }}</span>
+      <h1 class="mt-5 max-w-4xl text-4xl font-black tracking-tight text-gray-950 dark:text-white md:text-5xl">{{ .Title }}</h1>
+      <p class="mt-4 max-w-3xl text-base leading-8 text-gray-600 dark:text-white/72 md:text-lg">{{ $intro }}</p>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-screen-xl px-4 py-8 md:px-6 lg:px-8 lg:py-12"
+           x-data="cedisAreasMap()"
+           x-init="init()">
+    <div class="grid gap-6 lg:grid-cols-[minmax(0,1fr)_18rem]">
+      <div>
+        <div class="mb-4 flex flex-wrap gap-2">
+          <button type="button" @click="setFilter('all')"
+                  :class="filter==='all' ? 'border-primary-500 bg-primary-500 text-white' : 'border-black/10 bg-white text-gray-700 hover:border-primary-400 hover:text-primary-700 dark:border-white/10 dark:bg-white/[0.04] dark:text-white/78'"
+                  class="rounded-full border px-4 py-1.5 text-sm font-semibold transition-colors">{{ i18n "ui_map_filter_all" }}</button>
+          <button type="button" @click="setFilter('area')"
+                  :class="filter==='area' ? 'border-blue-500 bg-blue-500 text-white' : 'border-black/10 bg-white text-gray-700 hover:border-blue-400 hover:text-blue-700 dark:border-white/10 dark:bg-white/[0.04] dark:text-white/78'"
+                  class="rounded-full border px-4 py-1.5 text-sm font-semibold transition-colors">
+            <span class="inline-block h-2 w-2 rounded-full bg-blue-500 mr-1.5"></span>{{ i18n "ui_map_filter_areas" }}
+          </button>
+          <button type="button" @click="setFilter('researcher')"
+                  :class="filter==='researcher' ? 'border-primary-500 bg-primary-500 text-white' : 'border-black/10 bg-white text-gray-700 hover:border-primary-400 hover:text-primary-700 dark:border-white/10 dark:bg-white/[0.04] dark:text-white/78'"
+                  class="rounded-full border px-4 py-1.5 text-sm font-semibold transition-colors">
+            <span class="inline-block h-2 w-2 rounded-full bg-primary-500 mr-1.5"></span>{{ i18n "ui_map_filter_researchers" }}
+          </button>
+          <button type="button" @click="setFilter('project')"
+                  :class="filter==='project' ? 'border-emerald-500 bg-emerald-500 text-white' : 'border-black/10 bg-white text-gray-700 hover:border-emerald-400 hover:text-emerald-700 dark:border-white/10 dark:bg-white/[0.04] dark:text-white/78'"
+                  class="rounded-full border px-4 py-1.5 text-sm font-semibold transition-colors">
+            <span class="inline-block h-2 w-2 rounded-full bg-emerald-500 mr-1.5"></span>{{ i18n "ui_map_filter_projects" }}
+          </button>
+        </div>
+        <div class="relative overflow-hidden rounded-[2rem] border border-black/5 bg-white/90 shadow-[0_18px_60px_rgba(15,23,42,0.08)] dark:border-white/10 dark:bg-white/[0.04]">
+          <svg id="areas-map-svg" class="block w-full" viewBox="0 0 900 640" role="img" aria-label="{{ i18n "ui_map_svg_alt" }}"></svg>
+          <div class="pointer-events-none absolute right-3 top-3 rounded-full border border-black/10 bg-white/90 px-3 py-1 text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-gray-500 dark:border-white/10 dark:bg-white/[0.04] dark:text-white/72" x-show="loading">
+            {{ i18n "ui_map_loading" }}
+          </div>
+        </div>
+        <p class="mt-3 text-xs text-gray-500 dark:text-white/55">{{ i18n "ui_map_tip" }}</p>
+      </div>
+
+      <aside class="space-y-4 lg:sticky lg:top-24">
+        <div class="rounded-[1.5rem] border border-black/5 bg-white/90 p-5 shadow-[0_18px_60px_rgba(15,23,42,0.08)] dark:border-white/10 dark:bg-white/[0.04]">
+          <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-gray-500 dark:text-white/72">{{ i18n "ui_map_stats" }}</div>
+          <ul class="mt-3 space-y-2 text-sm">
+            <li class="flex items-center justify-between"><span class="text-gray-700 dark:text-white/78"><span class="inline-block h-2 w-2 rounded-full bg-blue-500 mr-2"></span>{{ i18n "ui_map_filter_areas" }}</span><span class="font-bold text-gray-900 dark:text-white" x-text="counts.area"></span></li>
+            <li class="flex items-center justify-between"><span class="text-gray-700 dark:text-white/78"><span class="inline-block h-2 w-2 rounded-full bg-primary-500 mr-2"></span>{{ i18n "ui_map_filter_researchers" }}</span><span class="font-bold text-gray-900 dark:text-white" x-text="counts.researcher"></span></li>
+            <li class="flex items-center justify-between"><span class="text-gray-700 dark:text-white/78"><span class="inline-block h-2 w-2 rounded-full bg-emerald-500 mr-2"></span>{{ i18n "ui_map_filter_projects" }}</span><span class="font-bold text-gray-900 dark:text-white" x-text="counts.project"></span></li>
+          </ul>
+        </div>
+        <div class="rounded-[1.5rem] border border-black/5 bg-white/90 p-5 shadow-[0_18px_60px_rgba(15,23,42,0.08)] dark:border-white/10 dark:bg-white/[0.04]" x-show="selected" x-cloak>
+          <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-gray-500 dark:text-white/72" x-text="selected ? selected.typeLabel : ''"></div>
+          <div class="mt-2 text-lg font-black tracking-tight text-gray-900 dark:text-white" x-text="selected ? selected.label : ''"></div>
+          <div class="mt-1 text-xs text-gray-500 dark:text-white/60" x-show="selected && selected.count > 0"><span x-text="selected ? selected.count : 0"></span> {{ i18n "ui_map_connections" }}</div>
+          <template x-if="selected && selected.url">
+            <a :href="selected.url" class="mt-4 inline-flex items-center rounded-full bg-primary-600 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-primary-500">
+              {{ i18n "ui_map_open" }}<span class="ml-2" aria-hidden="true">&rarr;</span>
+            </a>
+          </template>
+        </div>
+        <div class="rounded-[1.5rem] border border-black/5 bg-white/90 p-5 shadow-[0_18px_60px_rgba(15,23,42,0.08)] dark:border-white/10 dark:bg-white/[0.04]">
+          <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-gray-500 dark:text-white/72">{{ i18n "ui_map_legend" }}</div>
+          <ul class="mt-3 space-y-2 text-xs text-gray-600 dark:text-white/72">
+            <li><span class="inline-block h-2.5 w-2.5 rounded-full bg-blue-500 mr-2 align-middle"></span>{{ i18n "ui_map_legend_area" }}</li>
+            <li><span class="inline-block h-2.5 w-2.5 rounded-full bg-primary-500 mr-2 align-middle"></span>{{ i18n "ui_map_legend_researcher" }}</li>
+            <li><span class="inline-block h-2.5 w-2.5 rounded-full bg-emerald-500 mr-2 align-middle"></span>{{ i18n "ui_map_legend_project" }}</li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </section>
+</main>
+
+<script id="cedis-map-data" type="application/json">{{ $graphData | jsonify | safeJS }}</script>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js" defer></script>
+<script>
+function cedisAreasMap() {
+  return {
+    filter: 'all',
+    loading: true,
+    counts: { area: 0, researcher: 0, project: 0 },
+    selected: null,
+    _sim: null,
+    _all: null,
+    _svg: null,
+    _labels: {
+      area: {{ i18n "ui_map_filter_areas" | jsonify | safeJS }},
+      researcher: {{ i18n "ui_map_filter_researchers" | jsonify | safeJS }},
+      project: {{ i18n "ui_map_filter_projects" | jsonify | safeJS }}
+    },
+    init() {
+      const raw = document.getElementById('cedis-map-data').textContent;
+      this._all = JSON.parse(raw);
+      this.counts.area = this._all.nodes.filter(n => n.type === 'area').length;
+      this.counts.researcher = this._all.nodes.filter(n => n.type === 'researcher').length;
+      this.counts.project = this._all.nodes.filter(n => n.type === 'project').length;
+      const check = () => {
+        if (window.d3) { this.render(); }
+        else setTimeout(check, 80);
+      };
+      check();
+    },
+    setFilter(kind) {
+      this.filter = kind;
+      this.render();
+    },
+    render() {
+      const container = document.getElementById('areas-map-svg');
+      if (!container || !window.d3) return;
+      this.loading = false;
+
+      const d3 = window.d3;
+      const width = 900, height = 640;
+      let nodes = this._all.nodes.map(n => Object.assign({}, n));
+      let links = this._all.links.map(l => Object.assign({}, l));
+      if (this.filter !== 'all') {
+        const keepIds = new Set(nodes.filter(n => n.type === this.filter).map(n => n.id));
+        const secondary = new Set();
+        links.forEach(l => {
+          if (keepIds.has(l.source) || keepIds.has(l.target)) {
+            secondary.add(l.source); secondary.add(l.target);
+          }
+        });
+        nodes = nodes.filter(n => keepIds.has(n.id) || secondary.has(n.id));
+        const nodeIds = new Set(nodes.map(n => n.id));
+        links = links.filter(l => nodeIds.has(l.source) && nodeIds.has(l.target));
+      }
+
+      const color = { area: '#3b82f6', researcher: '#c5272f', project: '#10b981' };
+      const radius = { area: 12, researcher: 16, project: 10 };
+
+      const svg = d3.select(container);
+      svg.selectAll('*').remove();
+      svg.attr('viewBox', `0 0 ${width} ${height}`);
+
+      const g = svg.append('g');
+      const zoom = d3.zoom().scaleExtent([0.3, 3]).on('zoom', (e) => g.attr('transform', e.transform));
+      svg.call(zoom);
+
+      const linkG = g.append('g').attr('stroke', '#94a3b8').attr('stroke-opacity', 0.35);
+      const linkSel = linkG.selectAll('line').data(links).join('line').attr('stroke-width', 1);
+
+      const nodeG = g.append('g');
+      const nodeSel = nodeG.selectAll('g').data(nodes, d => d.id).join('g').style('cursor', 'pointer');
+
+      nodeSel.append('circle')
+        .attr('r', d => radius[d.type])
+        .attr('fill', d => color[d.type])
+        .attr('stroke', '#fff')
+        .attr('stroke-width', 2);
+
+      nodeSel.append('text')
+        .attr('dy', d => radius[d.type] + 14)
+        .attr('text-anchor', 'middle')
+        .attr('font-size', d => d.type === 'researcher' ? 12 : 10)
+        .attr('font-weight', d => d.type === 'researcher' ? 700 : 500)
+        .attr('fill', '#1f2937')
+        .attr('paint-order', 'stroke')
+        .attr('stroke', 'rgba(255,255,255,0.9)')
+        .attr('stroke-width', 3)
+        .text(d => d.label.length > 22 ? d.label.slice(0, 20) + '…' : d.label);
+
+      nodeSel.on('click', (event, d) => {
+        this.selected = {
+          label: d.label,
+          typeLabel: this._labels[d.type] || d.type,
+          count: d.count,
+          url: d.url
+        };
+      });
+
+      nodeSel.on('mouseenter', function() { d3.select(this).select('circle').transition().duration(120).attr('stroke-width', 4); });
+      nodeSel.on('mouseleave', function() { d3.select(this).select('circle').transition().duration(120).attr('stroke-width', 2); });
+
+      const sim = d3.forceSimulation(nodes)
+        .force('link', d3.forceLink(links).id(d => d.id).distance(90).strength(0.6))
+        .force('charge', d3.forceManyBody().strength(-260))
+        .force('center', d3.forceCenter(width / 2, height / 2))
+        .force('collide', d3.forceCollide().radius(d => radius[d.type] + 8));
+
+      sim.on('tick', () => {
+        linkSel
+          .attr('x1', d => d.source.x).attr('y1', d => d.source.y)
+          .attr('x2', d => d.target.x).attr('y2', d => d.target.y);
+        nodeSel.attr('transform', d => `translate(${d.x},${d.y})`);
+      });
+
+      const drag = d3.drag()
+        .on('start', (e, d) => { if (!e.active) sim.alphaTarget(0.3).restart(); d.fx = d.x; d.fy = d.y; })
+        .on('drag', (e, d) => { d.fx = e.x; d.fy = e.y; })
+        .on('end', (e, d) => { if (!e.active) sim.alphaTarget(0); d.fx = null; d.fy = null; });
+      nodeSel.call(drag);
+
+      if (this._sim) this._sim.stop();
+      this._sim = sim;
+    }
+  };
+}
+</script>
+{{ end }}
