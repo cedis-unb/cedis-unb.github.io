@@ -1,0 +1,155 @@
+{{- $isPt := eq .Site.Language.Lang "pt" -}}
+{{- $yearsCount := sub now.Year 2013 -}}
+{{- $researcherCount := 0 -}}
+{{- range where .Site.RegularPages "Section" "people" -}}
+  {{- if in .Params.categories "researcher" -}}{{- $researcherCount = add $researcherCount 1 -}}{{- end -}}
+{{- end -}}
+{{- $publicationCount := len hugo.Data.productions.items -}}
+{{- $productCount := 0 -}}
+{{- range where .Site.RegularPages "Section" "products" -}}{{- $productCount = add $productCount 1 -}}{{- end -}}
+{{- $supervisionCount := len hugo.Data.people.people -}}
+
+{{- /* Breakdown por tipo de publicação */ -}}
+{{- $pubByType := dict -}}
+{{- range hugo.Data.productions.items -}}
+  {{- $t := .type | default "outros" -}}
+  {{- $pubByType = merge $pubByType (dict $t (add (index $pubByType $t | default 0) 1)) -}}
+{{- end -}}
+
+{{- /* Breakdown de orientandos por categoria */ -}}
+{{- $studentCatOrder := slice "phd_candidate" "master_student" "specialization" "scientific_initiation" "tcc" "volunteer" -}}
+{{- $studentByCat := dict -}}
+{{- range hugo.Data.people.people -}}
+  {{- $person := . -}}
+  {{- range $studentCatOrder -}}
+    {{- if in $person.categories . -}}
+      {{- $studentByCat = merge $studentByCat (dict . (add (index $studentByCat . | default 0) 1)) -}}
+      {{- break -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- /* Contagem de áreas de atuação */ -}}
+{{- $areasCount := 0 -}}
+{{- range where .Site.RegularPages "Section" "areas" -}}{{- $areasCount = add $areasCount 1 -}}{{- end -}}
+
+{{- /* Contagem de projetos ativos */ -}}
+{{- $activeProjectCount := 0 -}}
+{{- range where .Site.RegularPages "Section" "projects" -}}
+  {{- if and (not (in .Params.tags "inactive")) (not (in .Params.tags "closed")) -}}
+    {{- $activeProjectCount = add $activeProjectCount 1 -}}
+  {{- end -}}
+{{- end -}}
+
+<div class="not-prose space-y-10">
+
+  <section aria-labelledby="metrics-headline">
+    <h2 id="metrics-headline" class="text-2xl font-black tracking-tight text-gray-950 dark:text-white md:text-3xl">
+      {{ i18n "ui_impact_page_overview_title" }}
+    </h2>
+    <ul class="mt-6 grid grid-cols-2 gap-3 md:grid-cols-3 md:gap-4 lg:grid-cols-6">
+      <li class="rounded-2xl border border-emerald-200 bg-white/85 px-4 py-5 shadow-sm shadow-emerald-500/10 dark:border-emerald-500/30 dark:bg-white/[0.04]">
+        <div class="text-3xl font-black tracking-tight text-emerald-700 dark:text-emerald-300 md:text-4xl">{{ $yearsCount }}</div>
+        <div class="mt-2 text-sm font-semibold text-slate-900 dark:text-white">{{ i18n "ui_metric_years" }}</div>
+        <div class="mt-1 text-xs text-slate-500 dark:text-slate-400">{{ i18n "ui_metric_years_note" }}</div>
+      </li>
+      <li class="rounded-2xl border border-violet-200 bg-white/85 px-4 py-5 shadow-sm shadow-violet-500/10 dark:border-violet-500/30 dark:bg-white/[0.04]">
+        <div class="text-3xl font-black tracking-tight text-violet-700 dark:text-violet-300 md:text-4xl">{{ $researcherCount }}</div>
+        <div class="mt-2 text-sm font-semibold text-slate-900 dark:text-white">{{ i18n "ui_metric_researchers" }}</div>
+        <div class="mt-1 text-xs text-slate-500 dark:text-slate-400">{{ i18n "ui_metric_researchers_note" }}</div>
+      </li>
+      <li class="rounded-2xl border border-blue-200 bg-white/85 px-4 py-5 shadow-sm shadow-blue-500/10 dark:border-blue-500/30 dark:bg-white/[0.04]">
+        <div class="text-3xl font-black tracking-tight text-blue-700 dark:text-blue-300 md:text-4xl">{{ $publicationCount }}</div>
+        <div class="mt-2 text-sm font-semibold text-slate-900 dark:text-white">{{ i18n "ui_metric_publications" }}</div>
+        <div class="mt-1 text-xs text-slate-500 dark:text-slate-400">{{ i18n "ui_metric_publications_note" }}</div>
+      </li>
+      <li class="rounded-2xl border border-rose-200 bg-white/85 px-4 py-5 shadow-sm shadow-rose-500/10 dark:border-rose-500/30 dark:bg-white/[0.04]">
+        <div class="text-3xl font-black tracking-tight text-rose-700 dark:text-rose-300 md:text-4xl">{{ $productCount }}</div>
+        <div class="mt-2 text-sm font-semibold text-slate-900 dark:text-white">{{ i18n "ui_metric_products" }}</div>
+        <div class="mt-1 text-xs text-slate-500 dark:text-slate-400">{{ i18n "ui_metric_products_note" }}</div>
+      </li>
+      <li class="rounded-2xl border border-teal-200 bg-white/85 px-4 py-5 shadow-sm shadow-teal-500/10 dark:border-teal-500/30 dark:bg-white/[0.04]">
+        <div class="text-3xl font-black tracking-tight text-teal-700 dark:text-teal-300 md:text-4xl">{{ $supervisionCount }}</div>
+        <div class="mt-2 text-sm font-semibold text-slate-900 dark:text-white">{{ i18n "ui_metric_supervisions" }}</div>
+        <div class="mt-1 text-xs text-slate-500 dark:text-slate-400">{{ i18n "ui_metric_supervisions_note" }}</div>
+      </li>
+      <li class="rounded-2xl border border-amber-200 bg-white/85 px-4 py-5 shadow-sm shadow-amber-500/10 dark:border-amber-500/30 dark:bg-white/[0.04]">
+        <div class="text-3xl font-black tracking-tight text-amber-700 dark:text-amber-300 md:text-4xl">{{ $areasCount }}</div>
+        <div class="mt-2 text-sm font-semibold text-slate-900 dark:text-white">{{ i18n "ui_metric_areas" }}</div>
+        <div class="mt-1 text-xs text-slate-500 dark:text-slate-400">{{ i18n "ui_metric_areas_note" }}</div>
+      </li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="metrics-publications">
+    <h2 id="metrics-publications" class="text-2xl font-black tracking-tight text-gray-950 dark:text-white md:text-3xl">
+      {{ i18n "ui_impact_pub_breakdown_title" }}
+    </h2>
+    <p class="mt-3 max-w-2xl text-base leading-7 text-gray-600 dark:text-white/72">
+      {{ i18n "ui_impact_pub_breakdown_lead" }}
+    </p>
+    <div class="mt-6 overflow-hidden rounded-2xl border border-black/5 bg-white/85 shadow-[0_18px_50px_rgba(15,23,42,0.06)] dark:border-white/10 dark:bg-white/[0.04]">
+      <table class="w-full text-left">
+        <thead class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-gray-500 dark:text-white/72">
+          <tr>
+            <th class="px-5 py-3">{{ i18n "ui_impact_pub_type" }}</th>
+            <th class="px-5 py-3 text-right">{{ i18n "ui_impact_pub_count" }}</th>
+          </tr>
+        </thead>
+        <tbody class="text-sm text-gray-700 dark:text-white/78">
+          {{ range $type, $count := $pubByType }}
+          <tr class="border-t border-black/5 dark:border-white/10">
+            <td class="px-5 py-3">
+              {{ if eq $type "article" }}{{ i18n "ui_pub_article" }}{{ else if eq $type "conference" }}{{ i18n "ui_pub_conference" }}{{ else if eq $type "workshop" }}{{ i18n "ui_pub_workshop" }}{{ else if eq $type "book" }}{{ i18n "ui_pub_book" }}{{ else if eq $type "chapter" }}{{ i18n "ui_pub_chapter" }}{{ else if eq $type "phd" }}{{ i18n "ui_pub_phd" }}{{ else if eq $type "dissertation" }}{{ i18n "ui_pub_dissertation" }}{{ else if eq $type "specialization" }}{{ i18n "ui_pub_specialization" }}{{ else if eq $type "tcc" }}{{ i18n "ui_pub_tcc" }}{{ else }}{{ $type | humanize }}{{ end }}
+            </td>
+            <td class="px-5 py-3 text-right font-semibold tabular-nums">{{ $count }}</td>
+          </tr>
+          {{ end }}
+          <tr class="border-t border-black/5 bg-stone-50/70 font-semibold dark:border-white/10 dark:bg-white/[0.04]">
+            <td class="px-5 py-3">{{ i18n "ui_impact_total" }}</td>
+            <td class="px-5 py-3 text-right tabular-nums">{{ $publicationCount }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section aria-labelledby="metrics-supervisions">
+    <h2 id="metrics-supervisions" class="text-2xl font-black tracking-tight text-gray-950 dark:text-white md:text-3xl">
+      {{ i18n "ui_impact_supervision_title" }}
+    </h2>
+    <p class="mt-3 max-w-2xl text-base leading-7 text-gray-600 dark:text-white/72">
+      {{ i18n "ui_impact_supervision_lead" }}
+    </p>
+    <div class="mt-6 grid grid-cols-2 gap-3 md:grid-cols-3 md:gap-4">
+      {{ range $studentCatOrder }}
+      {{ $count := index $studentByCat . | default 0 }}
+      {{ if gt $count 0 }}
+      <div class="rounded-2xl border border-black/5 bg-white/85 px-4 py-5 shadow-sm dark:border-white/10 dark:bg-white/[0.04]">
+        <div class="text-2xl font-black tracking-tight text-gray-950 dark:text-white md:text-3xl">{{ $count }}</div>
+        <div class="mt-2 text-sm font-semibold text-slate-700 dark:text-white/72">{{ . | i18n }}</div>
+      </div>
+      {{ end }}
+      {{ end }}
+    </div>
+  </section>
+
+  <section aria-labelledby="metrics-projects" class="rounded-2xl border border-primary-200/70 bg-primary-50/60 px-6 py-6 dark:border-primary-400/20 dark:bg-primary-500/10">
+    <h2 id="metrics-projects" class="text-2xl font-black tracking-tight text-primary-900 dark:text-primary-100">
+      {{ i18n "ui_impact_projects_title" }}
+    </h2>
+    <p class="mt-3 max-w-2xl text-base leading-7 text-primary-800 dark:text-primary-100/80">
+      {{ i18n "ui_impact_projects_lead" }}
+    </p>
+    <div class="mt-4 flex flex-wrap items-center gap-3">
+      <span class="inline-flex items-center rounded-full bg-primary-600 px-4 py-1 text-lg font-black text-white shadow">{{ $activeProjectCount }}</span>
+      <span class="text-sm font-semibold text-primary-900 dark:text-primary-100">{{ i18n "ui_impact_projects_label" }}</span>
+      <a href="{{ "/projects/" | relLangURL }}" class="ml-auto inline-flex items-center rounded-full border border-primary-400/40 bg-white/70 px-4 py-1.5 text-sm font-semibold text-primary-700 transition-colors hover:bg-primary-600 hover:text-white dark:bg-white/[0.06] dark:text-primary-200 dark:hover:bg-primary-500 dark:hover:text-white">
+        {{ i18n "ui_impact_projects_cta" }} →
+      </a>
+    </div>
+  </section>
+
+  <p class="text-xs italic text-slate-500 dark:text-slate-400">{{ i18n "ui_impact_footnote" }}</p>
+
+</div>
