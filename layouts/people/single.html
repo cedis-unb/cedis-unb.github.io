@@ -2,23 +2,23 @@
 {{ $isPt := eq .Site.Language.Lang "pt" }}
 {{ $personKey := .File.TranslationBaseName }}
 {{ $isResearcher := in .Params.categories "researcher" }}
-{{ $eyebrow := cond $isResearcher (cond $isPt "Pessoas / Pesquisadores" "People / Researchers") (cond $isPt "Pessoas / Perfis" "People / Profiles") }}
-{{ $roleLabel := cond $isResearcher (cond $isPt "Perfil de pesquisador" "Research profile") (cond $isPt "Perfil individual" "Individual profile") }}
-{{ $introFallback := cond $isPt "Conheça a trajetória acadêmica, as áreas de atuação, os projetos e as orientações que compõem este perfil no CEDIS." "Explore the academic trajectory, focus areas, projects, and supervisions that shape this CEDIS profile." }}
+{{ $eyebrow := cond $isResearcher (i18n "ui_people_researchers") (i18n "ui_people_profiles") }}
+{{ $roleLabel := cond $isResearcher (i18n "ui_research_profile") (i18n "ui_individual_profile") }}
+{{ $introFallback := i18n "ui_explore_the_academic_trajectory_focus" }}
 {{ $intro := .Params.summary | default $introFallback }}
-{{ $jumpContent := cond $isPt "Explorar perfil" "Explore profile" }}
-{{ $jumpNavigation := cond $isPt "Ver seções" "See sections" }}
-{{ $focusLabel := cond $isPt "Temas de atuação" "Focus areas" }}
-{{ $statsTitle := cond $isPt "Visão rápida" "At a glance" }}
-{{ $navTitle := cond $isPt "Navegação da página" "On this page" }}
-{{ $summaryTitle := cond $isPt "Resumo" "Overview" }}
-{{ $activeSupervisionsLabel := cond $isPt "Orientações ativas" "Active supervisions" }}
-{{ $publicationsLabel := cond $isPt "Publicações" "Publications" }}
-{{ $projectsLabel := cond $isPt "Projetos atuais" "Current projects" }}
-{{ $productsLabel := cond $isPt "Produtos" "Products" }}
-{{ $productsSectionTitle := cond $isPt "Produtos" "Products" }}
-{{ $productsSectionIntro := cond $isPt "Produtos criados com participação deste pesquisador (criador, supervisor ou colaborador listado nos metadados)." "Products created with this researcher participation (creator, supervisor, or collaborator listed in metadata)." }}
-{{ $productsEmptyLabel := cond $isPt "Nenhum produto relacionado foi encontrado." "No related products were found." }}
+{{ $jumpContent := i18n "ui_explore_profile" }}
+{{ $jumpNavigation := i18n "ui_see_sections" }}
+{{ $focusLabel := i18n "ui_focus_areas" }}
+{{ $statsTitle := i18n "ui_at_a_glance" }}
+{{ $navTitle := i18n "ui_on_this_page_2" }}
+{{ $summaryTitle := i18n "ui_overview_2" }}
+{{ $activeSupervisionsLabel := i18n "ui_active_supervisions" }}
+{{ $publicationsLabel := i18n "ui_publications" }}
+{{ $projectsLabel := i18n "ui_current_projects" }}
+{{ $productsLabel := i18n "ui_products" }}
+{{ $productsSectionTitle := i18n "ui_products" }}
+{{ $productsSectionIntro := i18n "ui_products_created_with_this_researcher" }}
+{{ $productsEmptyLabel := i18n "ui_no_related_products_were_found" }}
 {{ $content := .Content }}
 
 {{ $tocEntries := slice }}
@@ -181,6 +181,7 @@
   <section class="border-b border-black/5 bg-gray-950 text-white">
     <div class="mx-auto grid max-w-screen-xl gap-10 px-4 py-12 md:px-6 md:py-16 lg:grid-cols-[minmax(0,1.18fr)_minmax(18rem,0.82fr)] lg:items-center lg:px-8 lg:py-20">
       <div>
+        {{ partial "breadcrumbs.html" . }}
         <div class="inline-flex flex-wrap items-center gap-3">
           <span class="inline-flex rounded-full border border-white/15 bg-white/10 px-4 py-1 text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-white/72">
             {{ $eyebrow }}
@@ -237,11 +238,11 @@
           <div class="mt-4 grid gap-3 sm:grid-cols-2">
             <div class="rounded-[1.25rem] border border-white/10 bg-black/20 px-4 py-4">
               <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-white/72">{{ $focusLabel }}</div>
-              <p class="mt-2 text-sm leading-6 text-white/72">{{ len $displayTags }} {{ cond $isPt "tema(s) mapeado(s) no perfil." "mapped topic(s) in this profile." }}</p>
+              <p class="mt-2 text-sm leading-6 text-white/72">{{ len $displayTags }} {{ i18n "ui_mapped_topics_in_this_profile" }}</p>
             </div>
             <div class="rounded-[1.25rem] border border-white/10 bg-black/20 px-4 py-4">
               <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-white/72">{{ $summaryTitle }}</div>
-              <p class="mt-2 text-sm leading-6 text-white/72">{{ cond $isPt "Projetos, orientações e produção acadêmica reunidos em um fluxo único de leitura." "Projects, supervisions, and academic production arranged in a single reading flow." }}</p>
+              <p class="mt-2 text-sm leading-6 text-white/72">{{ i18n "ui_projects_supervisions_and_academic_production" }}</p>
             </div>
           </div>
         </div>

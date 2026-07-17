@@ -324,7 +324,7 @@
                                     {{ with resources.Get $authorPath }}
                                     {{ $authorimage := (.Resize "400x webp").RelPermalink }}
                                     <div class="flex h-9 w-9 items-center justify-center overflow-hidden rounded-lg border border-slate-200/80 bg-slate-50 p-1.5 dark:border-white/10 dark:bg-white/[0.04]">
-                                        <img class="max-h-full w-full object-contain" src="{{ $authorimage }}" alt="{{ $page.Params.author }}">
+                                        <img class="max-h-full w-full object-contain" src="{{ $authorimage }}" alt="{{ $page.Params.author }}" loading="lazy" decoding="async">
                                     </div>
                                     {{ end }}
                                     {{ end }}

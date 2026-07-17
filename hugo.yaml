@@ -135,15 +135,6 @@ languages:
           url: https://unbbr.sharepoint.com/sites/CEDIS
           post: "Acesso restrito"
           weight: 40
-      projetos:
-        - identifier: proj1
-          name: DFCris
-          url: /projetos/dfcris
-          weight: 10
-        - identifier: about
-          name: About
-          url: /about/
-          weight: 20
       equipe:
         - identifier: pesquisadores
           pre: researcher
@@ -171,7 +162,7 @@ languages:
           url: "/categories/products"
           weight: 20
         - identifier: repos
-          pre: publications # can be stars, comments, piechart, products, people, publications
+          pre: zenodo # ícone dedicado (archive-box), diferente de publications
           name: Zenodo
           post: "Materiais registrados"
           url: "https://zenodo.org/communities/cedis-unb"
@@ -335,15 +326,6 @@ languages:
           url: https://unbbr.sharepoint.com/sites/CEDIS
           post: "Restricted access"
           weight: 40
-      projetos:
-        - identifier: proj1
-          name: DFCris
-          url: /projects/dfcris
-          weight: 10
-        - identifier: about
-          name: About
-          url: /about/
-          weight: 20
       equipe:
         - identifier: pesquisadores
           pre: researcher
@@ -371,7 +353,7 @@ languages:
           url: "/categories/products"
           weight: 20
         - identifier: repos
-          pre: publications # can be stars, comments, piechart, products, people, publications
+          pre: zenodo # ícone dedicado (archive-box), diferente de publications
           name: Zenodo
           post: "Registered materials"
           url: "https://zenodo.org/communities/cedis-unb"

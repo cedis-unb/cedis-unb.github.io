@@ -1,8 +1,8 @@
 {{ define "main" }}
 {{ $isPt := eq .Site.Language.Lang "pt" }}
 {{ $content := .Content }}
-{{ $intro := .Params.description | default (cond $isPt "Espacos, ambientes e recursos organizados para apoiar atividades do CEDIS." "Spaces and facilities organized to support CEDIS activities.") }}
-{{ $eyebrow := .Params.eyebrow | default (cond $isPt "Infraestrutura" "Infrastructure") }}
+{{ $intro := .Params.description | default (i18n "ui_spaces_and_facilities_organized_to") }}
+{{ $eyebrow := .Params.eyebrow | default (i18n "ui_infrastructure") }}
 {{ $parts := split $content `<h2 id="` }}
 {{ $prefix := index $parts 0 | strings.TrimSpace }}
 {{ $sections := slice }}
@@ -42,7 +42,7 @@
       {{ $image := .Fit "1200x900 webp q88" }}
       <div class="overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.06] p-4 shadow-[0_24px_70px_rgba(0,0,0,0.22)] backdrop-blur md:p-5">
         <div class="overflow-hidden rounded-[1.5rem] bg-[linear-gradient(180deg,_rgba(255,255,255,0.08),_rgba(255,255,255,0.02))] p-4">
-          <img src="{{ $image.RelPermalink }}" alt="{{ $.Title }}" class="h-auto w-full rounded-[1.1rem] object-contain">
+          <img src="{{ $image.RelPermalink }}" alt="{{ $.Title }}" class="h-auto w-full rounded-[1.1rem] object-contain" loading="lazy" decoding="async">
         </div>
       </div>
       {{ end }}
