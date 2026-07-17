@@ -31,6 +31,35 @@
 {{ $yearCount := len $yearEntries }}
 {{ $hasYearNav := gt $yearCount 0 }}
 
+{{ $siteLang := .Site.Language.Lang }}
+{{ $typeMap := dict "book" "Book" "chapter" "Chapter" "article" "ScholarlyArticle" "journal" "ScholarlyArticle" "conference" "ScholarlyArticle" "workshop" "ScholarlyArticle" "tcc" "Thesis" "dissertation" "Thesis" "specialization" "Thesis" "phd" "Thesis" }}
+{{ $graph := slice }}
+{{ range hugo.Data.productions.items }}
+  {{ $title := "" }}
+  {{ with .title }}
+    {{ $title = index . $siteLang }}
+    {{ if not $title }}{{ $title = index . "en" }}{{ end }}
+    {{ if not $title }}{{ $title = index . "pt" }}{{ end }}
+  {{ end }}
+  {{ if $title }}
+    {{ $schemaType := index $typeMap .type | default "CreativeWork" }}
+    {{ $authors := slice }}
+    {{ range .authors }}
+      {{ $authors = $authors | append (dict "@type" "Person" "name" .) }}
+    {{ end }}
+    {{ $entry := dict "@type" $schemaType "name" $title "inLanguage" $siteLang }}
+    {{ with .year }}{{ $entry = merge $entry (dict "datePublished" (printf "%d" .)) }}{{ end }}
+    {{ if gt (len $authors) 0 }}{{ $entry = merge $entry (dict "author" $authors) }}{{ end }}
+    {{ with .publisher }}{{ if . }}{{ $entry = merge $entry (dict "publisher" (dict "@type" "Organization" "name" .)) }}{{ end }}{{ end }}
+    {{ with .journal_event }}{{ if . }}{{ $entry = merge $entry (dict "isPartOf" (dict "@type" "CreativeWork" "name" .)) }}{{ end }}{{ end }}
+    {{ with .doi_isbn }}{{ if . }}{{ $entry = merge $entry (dict "identifier" .) }}{{ end }}{{ end }}
+    {{ $graph = $graph | append $entry }}
+  {{ end }}
+{{ end }}
+{{ if gt (len $graph) 0 }}
+<script type="application/ld+json">{{ dict "@context" "https://schema.org" "@graph" $graph | jsonify | safeJS }}</script>
+{{ end }}
+
 <main class="bg-[radial-gradient(circle_at_top,_rgba(197,39,47,0.12),_transparent_24%),linear-gradient(180deg,_#f5f5f4_0%,_#ffffff_30%,_#f5f5f4_100%)] text-gray-950 dark:bg-gray-900 dark:text-gray-100">
   <section class="border-b border-black/5 bg-gray-950 text-white">
     <div class="mx-auto grid max-w-screen-xl gap-10 px-4 py-12 md:px-6 md:py-16 lg:grid-cols-[minmax(0,1.1fr)_minmax(20rem,0.9fr)] lg:items-center lg:px-8 lg:py-20">

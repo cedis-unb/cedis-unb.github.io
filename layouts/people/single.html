@@ -140,6 +140,43 @@
 
 {{ $hasToc := gt (len $tocEntries) 0 }}
 
+{{ if $isResearcher }}
+  {{ $personImage := "" }}
+  {{ with .Params.featured_image }}
+    {{ $featuredPath := replace . "../assets/" "" }}
+    {{ with resources.Get $featuredPath }}
+      {{ $img := .Fit "800x800 webp q88" }}
+      {{ $personImage = $img.Permalink }}
+    {{ end }}
+  {{ end }}
+  {{ $sameAs := slice }}
+  {{ range .AllTranslations }}
+    {{ if ne .Language.Lang $.Language.Lang }}
+      {{ $sameAs = $sameAs | append .Permalink }}
+    {{ end }}
+  {{ end }}
+  {{ $person := dict
+    "@context" "https://schema.org"
+    "@type" "Person"
+    "name" .Title
+    "url" .Permalink
+    "description" (.Params.summary | default $intro | plainify)
+    "worksFor" (dict
+      "@type" "Organization"
+      "name" "CEDIS - Centro de Estudos, Desenvolvimento e Inovação em Software"
+      "url" "https://cedis.unb.br/"
+    )
+    "affiliation" (dict
+      "@type" "CollegeOrUniversity"
+      "name" "Universidade de Brasília"
+      "url" "https://www.unb.br/"
+    )
+  }}
+  {{ if $personImage }}{{ $person = merge $person (dict "image" $personImage) }}{{ end }}
+  {{ if gt (len $sameAs) 0 }}{{ $person = merge $person (dict "sameAs" $sameAs) }}{{ end }}
+<script type="application/ld+json">{{ $person | jsonify | safeJS }}</script>
+{{ end }}
+
 <main class="bg-[radial-gradient(circle_at_top,_rgba(197,39,47,0.12),_transparent_24%),linear-gradient(180deg,_#f5f5f4_0%,_#ffffff_30%,_#f5f5f4_100%)] text-gray-950 dark:bg-gray-900 dark:text-gray-100">
   <section class="border-b border-black/5 bg-gray-950 text-white">
     <div class="mx-auto grid max-w-screen-xl gap-10 px-4 py-12 md:px-6 md:py-16 lg:grid-cols-[minmax(0,1.18fr)_minmax(18rem,0.82fr)] lg:items-center lg:px-8 lg:py-20">

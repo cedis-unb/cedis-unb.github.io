@@ -2999,6 +2999,10 @@ video {
   min-width: 2.75rem;
 }
 
+.min-w-\[2\.5rem\] {
+  min-width: 2.5rem;
+}
+
 .max-w-2xl {
   max-width: 42rem;
 }
@@ -3176,6 +3180,10 @@ video {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.gap-0\.5 {
+  gap: 0.125rem;
 }
 
 .gap-1 {
@@ -3830,6 +3838,10 @@ video {
 
 .p-0 {
   padding: 0px;
+}
+
+.p-0\.5 {
+  padding: 0.125rem;
 }
 
 .p-1\.5 {
@@ -5908,10 +5920,6 @@ EmojiSymbols;
 
 .dark\:text-white\/20:is(.dark *) {
   color: rgb(255 255 255 / 0.2);
-}
-
-.dark\:text-white\/45:is(.dark *) {
-  color: rgb(255 255 255 / 0.45);
 }
 
 .dark\:text-white\/55:is(.dark *) {
