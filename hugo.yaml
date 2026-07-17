@@ -159,6 +159,12 @@ languages:
           url: /alumni/
           post: "Onde estão nossos ex-alunos"
           weight: 40
+        - identifier: quiz
+          pre: comments
+          name: Qual área combina comigo?
+          url: /quiz/
+          post: "Quiz de 5 perguntas para descobrir"
+          weight: 25
       dropdown:
         - identifier: publications
           pre: publications # can be stars, comments or piechart
@@ -239,7 +245,7 @@ languages:
           - text: "In conducting our research, we have worked in partnership with other entities, organizations, and research laboratories."
         links:
           - text: "Meet our partners"
-            url: "/parceiros/"
+            url: "/partners/"
         logos:
           - identifier: "IBICT"
             image: "images/global/ibict.svg"
@@ -361,6 +367,12 @@ languages:
           url: /alumni/
           post: "Where our alumni are now"
           weight: 40
+        - identifier: quiz
+          pre: comments
+          name: Which area fits me?
+          url: /quiz/
+          post: "5-question quiz to find out"
+          weight: 25
       dropdown:
         - identifier: publications
           pre: publications # can be stars, comments or piechart
