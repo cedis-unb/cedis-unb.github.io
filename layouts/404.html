@@ -1,4 +1,24 @@
 {{ define "main"}}
+<script>
+    // Recovery: if the URL contains stray quote/whitespace chars from bad copy-paste,
+    // try again with a cleaned path. Handles cases like /quiz/"/pt/quiz/" → /quiz/
+    (function () {
+        try {
+            var raw = location.pathname;
+            if (/["'<>\s]|%22|%27/.test(raw)) {
+                var cleaned = decodeURIComponent(raw).replace(/["'<>\s].*$/, '').replace(/\/+$/, '/');
+                if (cleaned && cleaned !== raw && cleaned.length > 1) {
+                    location.replace(cleaned);
+                    return;
+                }
+            }
+            // Also: /categoria/ → /categories/ common typo
+            if (/^\/categoria\//.test(raw)) {
+                location.replace(raw.replace('/categoria/', '/categories/'));
+            }
+        } catch (e) { /* ignore */ }
+    })();
+</script>
 <main class="bg-zinc-100 dark:bg-gray-800">
     <div class="max-w-screen-xl px-4 py-8 mx-auto lg:py-16 lg:px-6">
         <div class="max-w-screen-sm mx-auto text-center">
