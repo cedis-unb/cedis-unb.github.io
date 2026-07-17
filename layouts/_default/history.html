@@ -36,13 +36,6 @@
       <span class="inline-flex rounded-full border border-black/10 bg-white px-4 py-1 text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-gray-500 dark:border-white/10 dark:bg-white/[0.06] dark:text-white/55">{{ $eyebrow }}</span>
       <h1 class="mt-5 text-4xl font-black tracking-tight text-gray-950 dark:text-white md:text-5xl">{{ .Title }}</h1>
       <p class="mx-auto mt-4 max-w-3xl text-base leading-8 text-gray-600 dark:text-white/72 md:text-lg">{{ $intro }}</p>
-      {{ if gt (len $events) 0 }}
-      <div class="mt-8 flex flex-wrap justify-center gap-2">
-        {{ range $events }}
-        <a href="#{{ .anchor }}" class="inline-flex rounded-full border border-black/10 bg-white px-4 py-2 text-sm font-semibold text-gray-700 transition-colors hover:border-primary-400 hover:text-primary-700 dark:border-white/10 dark:bg-white/[0.04] dark:text-white/78 dark:hover:border-primary-300 dark:hover:text-primary-100">{{ .year }}</a>
-        {{ end }}
-      </div>
-      {{ end }}
     </div>
   </section>
 
@@ -84,22 +77,72 @@
     </div>
   </section>
 
-  <section class="mx-auto max-w-screen-lg px-4 py-10 md:px-6 lg:px-8 lg:py-12">
-    {{ if gt (len $events) 0 }}
+  {{ if gt (len $events) 0 }}
+  {{ $lastAnchor := (index $events (sub (len $events) 1)).anchor }}
+  <section class="mx-auto max-w-screen-lg px-4 py-10 md:px-6 lg:px-8 lg:py-12"
+           x-data="{
+             expanded: { '{{ $lastAnchor }}': true },
+             expandAll() { {{ range $events }}this.expanded['{{ .anchor }}'] = true;{{ end }} },
+             collapseAll() { this.expanded = {}; },
+             toggle(k) { this.expanded[k] = !this.expanded[k]; },
+             focus(k) {
+               this.expanded[k] = true;
+               this.$nextTick(() => {
+                 const el = document.getElementById(k);
+                 if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+               });
+             }
+           }">
+    <div class="mb-8 flex flex-col gap-4 rounded-[1.75rem] border border-black/5 bg-white/90 p-5 shadow-[0_18px_60px_rgba(15,23,42,0.08)] backdrop-blur dark:border-white/10 dark:bg-white/[0.04] md:p-6">
+      <div class="flex flex-wrap items-center justify-between gap-3">
+        <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-gray-500 dark:text-white/72">{{ i18n "ui_timeline_navigate" }}</div>
+        <div class="flex gap-2">
+          <button type="button" @click="expandAll()" class="rounded-full border border-black/10 bg-white px-3 py-1 text-xs font-semibold text-gray-700 transition-colors hover:border-primary-400 hover:text-primary-700 dark:border-white/10 dark:bg-white/[0.06] dark:text-white/78 dark:hover:border-primary-300 dark:hover:text-primary-100">{{ i18n "ui_timeline_expand_all" }}</button>
+          <button type="button" @click="collapseAll()" class="rounded-full border border-black/10 bg-white px-3 py-1 text-xs font-semibold text-gray-700 transition-colors hover:border-primary-400 hover:text-primary-700 dark:border-white/10 dark:bg-white/[0.06] dark:text-white/78 dark:hover:border-primary-300 dark:hover:text-primary-100">{{ i18n "ui_timeline_collapse_all" }}</button>
+        </div>
+      </div>
+      <div class="relative -mx-2 flex flex-wrap gap-2 overflow-x-auto px-2 pb-1">
+        {{ range $events }}
+        <button type="button" @click="focus('{{ .anchor }}')"
+                :class="expanded['{{ .anchor }}'] ? 'border-primary-500 bg-primary-500 text-white shadow-md shadow-primary-500/20' : 'border-black/10 bg-white text-gray-700 hover:border-primary-400 hover:text-primary-700 dark:border-white/10 dark:bg-white/[0.04] dark:text-white/78 dark:hover:border-primary-300 dark:hover:text-primary-100'"
+                class="inline-flex whitespace-nowrap items-center rounded-full border px-4 py-2 text-sm font-semibold transition-colors">
+          {{ .year }}
+        </button>
+        {{ end }}
+      </div>
+    </div>
+
     <div class="relative ml-3 border-l border-primary-200 pl-8 dark:border-primary-400/25 md:ml-6 md:pl-10">
       {{ range $events }}
-      <section id="{{ .anchor }}" class="relative pb-10 last:pb-0">
-        <span class="absolute -left-[2.35rem] top-2 h-4 w-4 rounded-full border-4 border-white bg-primary-600 shadow-[0_0_0_6px_rgba(197,39,47,0.12)] dark:border-gray-950 md:-left-[2.85rem]"></span>
-        <div class="rounded-[1.5rem] border border-black/5 bg-white/92 p-6 shadow-[0_18px_60px_rgba(15,23,42,0.08)] dark:border-white/10 dark:bg-white/[0.04]">
-          <div class="text-sm font-semibold uppercase tracking-[0.24em] text-primary-700 dark:text-primary-200">{{ .year }}</div>
-          <div class="mt-3 text-base leading-8 text-gray-600 dark:text-white/72 [&_p]:m-0">{{ .body | safeHTML }}</div>
+      <section id="{{ .anchor }}" class="relative pb-10 last:pb-0 scroll-mt-24">
+        <span :class="expanded['{{ .anchor }}'] ? 'bg-primary-600 shadow-[0_0_0_6px_rgba(197,39,47,0.16)]' : 'bg-primary-300 shadow-[0_0_0_6px_rgba(197,39,47,0.08)]'"
+              class="absolute -left-[2.35rem] top-2 h-4 w-4 rounded-full border-4 border-white transition-all dark:border-gray-950 md:-left-[2.85rem]"></span>
+        <div class="rounded-[1.5rem] border border-black/5 bg-white/92 shadow-[0_18px_60px_rgba(15,23,42,0.08)] transition-all dark:border-white/10 dark:bg-white/[0.04]"
+             :class="expanded['{{ .anchor }}'] ? 'ring-1 ring-primary-200 dark:ring-primary-400/25' : ''">
+          <button type="button" @click="toggle('{{ .anchor }}')"
+                  :aria-expanded="expanded['{{ .anchor }}'] ? 'true' : 'false'"
+                  class="flex w-full items-center justify-between gap-4 rounded-[1.5rem] p-6 text-left focus:outline-none focus:ring-2 focus:ring-primary-400 focus:ring-offset-2 dark:focus:ring-offset-gray-950">
+            <span class="text-sm font-semibold uppercase tracking-[0.24em] text-primary-700 dark:text-primary-200">{{ .year }}</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                 :class="expanded['{{ .anchor }}'] ? 'rotate-180' : ''"
+                 class="h-5 w-5 flex-shrink-0 text-gray-400 transition-transform dark:text-white/60" aria-hidden="true">
+              <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+            </svg>
+          </button>
+          <div x-show="expanded['{{ .anchor }}']"
+               x-transition:enter="transition ease-out duration-200"
+               x-transition:enter-start="opacity-0 -translate-y-1"
+               x-transition:enter-end="opacity-100 translate-y-0"
+               x-cloak class="px-6 pb-6 text-base leading-8 text-gray-600 dark:text-white/72 [&_p]:m-0 [&_p+p]:mt-4">{{ .body | safeHTML }}</div>
         </div>
       </section>
       {{ end }}
     </div>
-    {{ else }}
-    <div class="rounded-[1.75rem] border border-black/5 bg-white/90 p-6 shadow-[0_18px_60px_rgba(15,23,42,0.08)] dark:border-white/10 dark:bg-white/[0.04]">{{ $content | safeHTML }}</div>
-    {{ end }}
   </section>
+  {{ else }}
+  <section class="mx-auto max-w-screen-lg px-4 py-10 md:px-6 lg:px-8 lg:py-12">
+    <div class="rounded-[1.75rem] border border-black/5 bg-white/90 p-6 shadow-[0_18px_60px_rgba(15,23,42,0.08)] dark:border-white/10 dark:bg-white/[0.04]">{{ $content | safeHTML }}</div>
+  </section>
+  {{ end }}
 </main>
 {{ end }}

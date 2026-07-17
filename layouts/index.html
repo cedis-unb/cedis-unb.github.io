@@ -182,6 +182,72 @@
       </div>
     </div>
 
+    <!-- Trending topics tag cloud (D4) -->
+    {{ $advisorKeys := slice }}
+    {{ range $key, $value := hugo.Data.advisors.advisors }}
+      {{ $advisorKeys = $advisorKeys | append $key }}
+    {{ end }}
+    {{ $tagCounts := dict }}
+    {{ $currentYear := now.Year }}
+    {{ $minYear := sub $currentYear 3 }}
+    {{ range hugo.Data.productions.items }}
+      {{ $itemYear := 0 }}
+      {{ with .year }}
+        {{ $yearStr := printf "%v" . }}
+        {{ if gt (len (findRE "^[0-9]{4}" $yearStr)) 0 }}
+          {{ $itemYear = int (replaceRE "^([0-9]{4}).*$" "$1" $yearStr) }}
+        {{ end }}
+      {{ end }}
+      {{ if ge $itemYear $minYear }}
+        {{ range .tags }}
+          {{ if and (not (in $advisorKeys .)) (ne . "active") (ne . "inactive") }}
+            {{ $prev := index $tagCounts . | default 0 }}
+            {{ $tagCounts = merge $tagCounts (dict . (add $prev 1)) }}
+          {{ end }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+    {{ $tagsList := slice }}
+    {{ range $tag, $count := $tagCounts }}
+      {{ $tagsList = $tagsList | append (dict "tag" $tag "count" $count) }}
+    {{ end }}
+    {{ $tagsList = sort $tagsList "count" "desc" }}
+    {{ $topTags := first 20 $tagsList }}
+    {{ if gt (len $topTags) 0 }}
+    {{ $maxCount := (index $topTags 0).count }}
+    <div class="relative py-8 sm:py-10 lg:py-12">
+      <div class="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-slate-300/70 to-transparent dark:via-white/10"></div>
+      <div class="mx-auto max-w-screen-xl px-4 md:px-6 lg:px-8">
+        <div class="max-w-3xl">
+          <div class="inline-flex items-center rounded-full border border-primary-300/60 bg-primary-50/80 px-3 py-1 text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-primary-700 dark:border-primary-400/20 dark:bg-primary-500/10 dark:text-primary-200">
+            {{ i18n "ui_trending_eyebrow" }}
+          </div>
+          <h2 class="mt-4 text-3xl font-black tracking-tight text-slate-950 sm:text-4xl dark:text-white">
+            {{ i18n "ui_trending_heading" }}
+          </h2>
+          <p class="mt-4 max-w-2xl text-base leading-8 text-slate-700 dark:text-slate-200 sm:text-lg">
+            {{ printf (i18n "ui_trending_lead") $minYear $currentYear }}
+          </p>
+        </div>
+        <div class="mt-8 flex flex-wrap items-center gap-x-3 gap-y-4">
+          {{ range $topTags }}
+          {{ $ratio := div (float .count) (float $maxCount) }}
+          {{ $fontRem := add 0.85 (mul $ratio 1.6) }}
+          {{ $opacity := add 0.6 (mul $ratio 0.4) }}
+          {{ $tagLink := printf "/tags/%s" (.tag | urlize) | relLangURL }}
+          <a href="{{ $tagLink }}"
+             style="font-size: {{ printf "%.2frem" $fontRem }}; opacity: {{ printf "%.2f" $opacity }};"
+             class="inline-flex items-center gap-2 font-black tracking-tight text-slate-800 transition-colors hover:text-primary-600 dark:text-slate-100 dark:hover:text-primary-300">
+            {{ .tag | i18n }}
+            <span class="text-xs font-medium text-slate-400 dark:text-slate-500">·{{ .count }}</span>
+          </a>
+          {{ end }}
+        </div>
+        <p class="mt-6 text-xs text-slate-500 dark:text-slate-400">{{ i18n "ui_trending_footnote" }}</p>
+      </div>
+    </div>
+    {{ end }}
+
     <!-- Our mission section -->
     <div class="relative py-8 sm:py-10 lg:py-14">
         <div class="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-slate-300/70 to-transparent dark:via-white/10"></div>
