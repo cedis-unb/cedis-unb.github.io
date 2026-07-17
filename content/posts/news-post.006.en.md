@@ -1,5 +1,5 @@
 ---
-title: "CEDIS Gamification Revolutionizes Software Teaching at FGA"
+title: "CEDIS Gamification Revolutionizes Software Teaching at FCTE"
 date: 2023-03-01T11:10:36+08:00
 draft: false
 weight: 500
@@ -21,7 +21,7 @@ Brasília, March 1, 2023
 
 **Innovative gamification by Prof. Sergio Freitas engages Software Engineering students with a playful and effective approach.**
 
-The Software Development course at the Faculdade do Gama (FGA) of the University of Brasília (UnB) is causing quite a stir with its innovative teaching approach, thanks to the introduction of the gamification "Feudal Dawn" by Prof. {{< link-interno "/people/sergio_freitas" "Sergio Freitas" >}}.
+The Software Development course at the Faculty of Sciences and Technologies in Engineering (FCTE) of the University of Brasília (UnB) is causing quite a stir with its innovative teaching approach, thanks to the introduction of the gamification "Feudal Dawn" by Prof. {{< link-interno "/people/sergio_freitas" "Sergio Freitas" >}}.
 
 Aimed at students from the ABI Engineering up to the third period as well as Software Engineering students, the course now stands out with a pioneering and highly effective teaching methodology. "Feudal Dawn" is not just a game; it is a pedagogical transformation that places the student at the center of the learning process, making it more engaging and motivating.
 

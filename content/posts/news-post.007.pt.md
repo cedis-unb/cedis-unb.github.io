@@ -1,5 +1,5 @@
 ---
-title: "Gamificação do CEDIS inova o ensino de IHC na FGA"
+title: "Gamificação do CEDIS inova o ensino de IHC na FCTE"
 date: 2023-03-01T11:10:36+08:00
 draft: false
 weight: 500
@@ -29,6 +29,6 @@ As regras do jogo incluem a montagem de equipes, onde cada estudante escolhe um 
 
 Esta abordagem gamificada não apenas aumenta o engajamento dos estudantes, mas também promove a autonomia e a colaboração, elementos essenciais no desenvolvimento de habilidades relevantes na área de Engenharia de Software. Além disso, a progressão dos personagens e o sistema de recompensas em moedas e pontos de experiência incentivam a participação ativa e contínua dos alunos ao longo do semestre.
 
-O sucesso da "Jornada IHC" é evidente na adesão e no entusiasmo dos estudantes, que relatam uma experiência de aprendizado mais dinâmica e imersiva. Esta inovação pedagógica do Prof. Freitas não só enriquece o currículo da Faculdade do Gama, mas também serve como um modelo inspirador para outras instituições de ensino que buscam métodos mais eficazes e atraentes de ensino.
+O sucesso da "Jornada IHC" é evidente na adesão e no entusiasmo dos estudantes, que relatam uma experiência de aprendizado mais dinâmica e imersiva. Esta inovação pedagógica do Prof. Freitas não só enriquece o currículo da FCTE, mas também serve como um modelo inspirador para outras instituições de ensino que buscam métodos mais eficazes e atraentes de ensino.
 
 Para conhecer mais sobre a gamificação, contate o Prof. Sergio Freitas em: [sergiofreitas@unb.br](mailto:sergiofreitas@unb.br).

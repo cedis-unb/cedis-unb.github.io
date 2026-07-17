@@ -1,5 +1,5 @@
 ---
-title: "CEDIS Gamification Innovates HCI Teaching at FGA"
+title: "CEDIS Gamification Innovates HCI Teaching at FCTE"
 date: 2023-03-01T11:10:36+08:00
 draft: false
 weight: 500
@@ -29,6 +29,6 @@ The game's rules include forming teams, where each student chooses a character a
 
 This gamified approach not only increases student engagement but also promotes autonomy and collaboration, essential elements in the development of relevant skills in the Software Engineering field. Moreover, character progression and the reward system in coins and experience points encourage active and continuous participation from students throughout the semester.
 
-The success of the "IHC Journey" is evident in the adoption and enthusiasm of the students, who report a more dynamic and immersive learning experience. This pedagogical innovation by Prof. Freitas not only enriches the curriculum at the Faculdade do Gama but also serves as an inspiring model for other educational institutions seeking more effective and appealing teaching methods.
+The success of the "IHC Journey" is evident in the adoption and enthusiasm of the students, who report a more dynamic and immersive learning experience. This pedagogical innovation by Prof. Freitas not only enriches the curriculum at FCTE but also serves as an inspiring model for other educational institutions seeking more effective and appealing teaching methods.
 
 To learn more about the gamification, contact Prof. Sergio Freitas at: [sergiofreitas@unb.br](mailto:sergiofreitas@unb.br).

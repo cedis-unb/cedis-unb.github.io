@@ -30,7 +30,7 @@ Conforme item 7.5 do edital, estão convocados para entrevistas os seguintes can
 
 Conforme item 9.5 do edital:
 
-A ETAPA 3 – Entrevista será realizada presencialmente no CEDIS (Contêiner 19) na Faculdade UnB Gama - FGA. Universidade de Brasília - UnB. Área Especial de Indústria Projeção A. Setor Leste. Gama. CEP: 72.444-240.
+A ETAPA 3 – Entrevista será realizada presencialmente no CEDIS (Contêiner 05) na Faculdade de Ciências e Tecnologias em Engenharia (FCTE) da Universidade de Brasília - UnB. Área Especial de Indústria Projeção A. Setor Leste. Gama. CEP: 72.444-240.
 
 Atenciosamente,
 

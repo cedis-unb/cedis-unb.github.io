@@ -16,7 +16,7 @@ tags:
 - project_td
 ---
 
-The Brazilian Federal Government's Public Services Digital Transformation project involves research, development, and innovation in methodologies, models, and tools that promote the automation and digitalization of public services offered by the Ministry of Economy (ME), by the Special Secretariat for De-bureaucratization, Management, and Digital Government (specifically by the Digital Government Secretariat (SGD)), aiming at the transformation of federal public services. The project was established between UnB ([ITRAC Laboratory](https://itrac.unb.br) of the Gama Faculty) and the ME.
+The Brazilian Federal Government's Public Services Digital Transformation project involves research, development, and innovation in methodologies, models, and tools that promote the automation and digitalization of public services offered by the Ministry of Economy (ME), by the Special Secretariat for De-bureaucratization, Management, and Digital Government (specifically by the Digital Government Secretariat (SGD)), aiming at the transformation of federal public services. The project was established between UnB ([ITRAC Laboratory](https://itrac.unb.br) of the Faculty of Sciences and Technologies in Engineering — FCTE) and the ME.
 
 CEDIS Members:
 
