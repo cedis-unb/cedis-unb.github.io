@@ -276,6 +276,49 @@ ui_alt_area_visual: "Ilustração da área"
 ui_bibtex_copy: "Copiar citação BibTeX"
 ui_bibtex_copied: "BibTeX copiado para a área de transferência"
 
+# Junte-se ao CEDIS (E3)
+ui_join_eyebrow: "Portas de entrada"
+ui_join_lead: "Se você quer pesquisar, ser orientado(a) ou colaborar com o CEDIS, escolha o caminho que combina com você."
+ui_join_paths_quick: "Trilhas"
+ui_join_stuck: "Não sabe por onde começar?"
+ui_join_stuck_heading: "Fale com o CEDIS diretamente"
+ui_join_stuck_body: "Nenhuma dessas trilhas encaixou? Escreva pra gente contando o que você busca — resposta em até 5 dias úteis."
+ui_join_stuck_cta: "Enviar mensagem"
+ui_join_stuck_researchers: "Ver pesquisadores"
+
+# Parceiros com histórias (B1)
+ui_partners_eyebrow: "Rede de colaboração"
+ui_partners_lead: "Cada parceiro do CEDIS representa uma história concreta — não só um logo. Aqui contamos o que fizemos junto e o que veio disso."
+ui_partners_count_label: "Parceiros em destaque"
+ui_partners_count_lead: "Instituições e laboratórios com colaboração ativa nos últimos ciclos."
+ui_partners_since: "desde"
+ui_partners_outcomes: "Resultados concretos"
+ui_partners_visit: "Site do parceiro"
+
+# Reconhecimentos (B3)
+ui_awards_eyebrow: "Prêmios e conquistas"
+ui_awards_lead: "Reconhecimentos, prêmios em conferência, menções e marcos institucionais que o CEDIS acumulou ao longo dos anos."
+ui_awards_count_label: "Reconhecimentos registrados"
+ui_awards_count_lead: "Prêmios, menções e marcos institucionais."
+ui_awards_kind_conference_award: "Prêmio em conferência"
+ui_awards_kind_grant: "Edital aprovado"
+ui_awards_kind_milestone: "Marco institucional"
+ui_awards_kind_media_mention: "Menção na imprensa"
+ui_awards_kind_thesis_award: "Prêmio de tese/dissertação"
+ui_awards_see_project: "Ver projeto"
+ui_awards_navigate_years: "Ir para o ano"
+ui_awards_empty: "Ainda não há reconhecimentos cadastrados."
+
+# Alumni (A4)
+ui_alumni_eyebrow: "Alumni CEDIS"
+ui_alumni_lead: "Pessoas que passaram pelo CEDIS e seguiram em pesquisa, indústria, empreendedorismo ou ensino. A rede continua depois da defesa."
+ui_alumni_count_label: "Alumni cadastrados"
+ui_alumni_count_lead: "Ex-orientandos e ex-membros que aceitaram aparecer nesta página."
+ui_alumni_now: "Hoje"
+ui_alumni_empty_eyebrow: "Página em construção"
+ui_alumni_empty_heading: "Estamos coletando as histórias dos nossos ex-alunos"
+ui_alumni_empty_cta: "Quero aparecer"
+
 # Mapa de conhecimento (D1)
 ui_map_eyebrow: "Grafo interativo"
 ui_map_lead: "Explore como áreas de atuação, pesquisadores e projetos do CEDIS se conectam. Arraste os nós, use o mouse para dar zoom, clique para abrir a página."
