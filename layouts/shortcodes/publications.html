@@ -17,10 +17,10 @@
 {{ $listClass := cond (eq (printf "%v" $gridMode) "true") "m-0 list-none p-0 grid gap-4 md:grid-cols-2 lg:grid-cols-3" "m-0 list-none space-y-4 p-0" }}
 {{ $itemCardClass := "list-none rounded-[1.5rem] border border-black/5 bg-white/80 px-5 py-5 text-base leading-7 text-gray-700 shadow-[0_16px_50px_rgba(15,23,42,0.08)] backdrop-blur dark:border-white/10 dark:bg-white/[0.04] dark:text-white/78" }}
 {{ $metaLabelClass := "text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-gray-400 dark:text-white/72" }}
-{{ $pillClass := "inline-flex rounded-full border border-black/10 bg-stone-50 px-3 py-1 text-sm font-medium text-gray-700 transition-colors hover:border-primary-500 hover:text-primary-600 dark:border-white/10 dark:bg-white/[0.05] dark:text-white/78 dark:hover:border-primary-300 dark:hover:text-primary-200" }}
+{{ $pillClass := "inline-flex rounded-full border border-black/10 bg-stone-50 px-3 py-1 text-sm font-medium text-gray-700 transition-colors hover:border-primary-500 hover:text-primary-600 dark:border-white/10 dark:bg-white/[0.06] dark:text-white/78 dark:hover:border-primary-300 dark:hover:text-primary-200" }}
 {{ $yearBadgeClass := "inline-flex items-center rounded-full border border-primary-200 bg-primary-50 px-3 py-1 text-sm font-semibold text-primary-700 dark:border-primary-400/30 dark:bg-primary-500/10 dark:text-primary-200" }}
 {{ $titleLinkClass := "font-semibold text-primary-700 transition-colors hover:text-primary-600 dark:text-primary-200 dark:hover:text-primary-100" }}
-{{ $resourceLinkClass := "inline-flex items-center gap-2 rounded-full border border-black/10 bg-white px-3 py-1.5 text-sm font-medium text-gray-700 transition-colors hover:border-primary-500 hover:text-primary-600 dark:border-white/10 dark:bg-white/[0.05] dark:text-white/78 dark:hover:border-primary-300 dark:hover:text-primary-200" }}
+{{ $resourceLinkClass := "inline-flex items-center gap-2 rounded-full border border-black/10 bg-white px-3 py-1.5 text-sm font-medium text-gray-700 transition-colors hover:border-primary-500 hover:text-primary-600 dark:border-white/10 dark:bg-white/[0.06] dark:text-white/78 dark:hover:border-primary-300 dark:hover:text-primary-200" }}
 {{ $summaryButtonClass := "inline-flex items-center rounded-full bg-primary-600 px-4 py-2 text-sm font-semibold text-white shadow-lg shadow-primary-600/20 transition-colors hover:bg-primary-500" }}
 {{ $summaryPanelClass := "mt-3 rounded-[1.25rem] border border-primary-100 bg-primary-50/70 px-4 py-4 text-sm leading-6 text-gray-700 dark:border-primary-400/20 dark:bg-primary-500/10 dark:text-white/75" }}
 {{ $topicsLabel := cond (eq $.Site.Language.Lang "pt") "Temas" "Topics" }}
@@ -160,7 +160,7 @@
         {{ $hasGithub := and $github (ne $github "") }}
         {{ $zenodo := index .zenodo_record $.Site.Language.Lang }}
         {{ $hasZenodo := and $zenodo (ne $zenodo "") }}
-        {{ $hasResources := or .doi_isbn $hasPodcast $hasGithub $hasZenodo }}
+        {{ $hasResources := true }}{{/* BibTeX button aparece sempre; DOI/podcast/github/zenodo aparecem se existem */}}
         {{ $authorsText := delimit .authors ", " }}
         {{ $detailParts := slice }}
         {{ if .program }}
@@ -205,7 +205,37 @@
             {{ $filteredTags = $filteredTags | append . }}
           {{ end }}
         {{ end }}
-          <li x-data="{ open: false }" class="{{ $itemCardClass }}">
+          {{/* BibTeX generation */}}
+          {{ $bibtype := "misc" }}
+          {{ if eq .type "article" }}{{ $bibtype = "article" }}{{ end }}
+          {{ if or (eq .type "conference") (eq .type "workshop") }}{{ $bibtype = "inproceedings" }}{{ end }}
+          {{ if eq .type "book" }}{{ $bibtype = "book" }}{{ end }}
+          {{ if eq .type "chapter" }}{{ $bibtype = "incollection" }}{{ end }}
+          {{ if or (eq .type "phd") (eq .type "dissertation") }}{{ $bibtype = "phdthesis" }}{{ end }}
+          {{ if or (eq .type "specialization") (eq .type "tcc") }}{{ $bibtype = "mastersthesis" }}{{ end }}
+          {{ $bibAuthors := delimit .authors " and " }}
+          {{ $bibTitle := index .title $.Site.Language.Lang }}
+          {{ $bibLastname := "cedis" }}
+          {{ if gt (len .authors) 0 }}
+            {{ $parts := split (index .authors 0) " " }}
+            {{ $bibLastname = index $parts (sub (len $parts) 1) | lower }}
+            {{ $bibLastname = replaceRE `[^a-z]` "" $bibLastname }}
+          {{ end }}
+          {{ $bibKey := printf "%s%v" $bibLastname .year }}
+          {{ $bibFields := slice }}
+          {{ if $bibAuthors }}{{ $bibFields = $bibFields | append (printf "  author = {%s}" $bibAuthors) }}{{ end }}
+          {{ $bibFields = $bibFields | append (printf "  title = {%s}" $bibTitle) }}
+          {{ with .year }}{{ $bibFields = $bibFields | append (printf "  year = {%v}" .) }}{{ end }}
+          {{ if or (eq .type "conference") (eq .type "workshop") }}{{ with .journal_event }}{{ if . }}{{ $bibFields = $bibFields | append (printf "  booktitle = {%s}" .) }}{{ end }}{{ end }}{{ end }}
+          {{ if eq .type "article" }}{{ with .journal_event }}{{ if . }}{{ $bibFields = $bibFields | append (printf "  journal = {%s}" .) }}{{ end }}{{ end }}{{ end }}
+          {{ if eq .type "incollection" }}{{ with .book_title }}{{ if . }}{{ $bibFields = $bibFields | append (printf "  booktitle = {%s}" .) }}{{ end }}{{ end }}{{ end }}
+          {{ with .volume }}{{ if . }}{{ $bibFields = $bibFields | append (printf "  volume = {%v}" .) }}{{ end }}{{ end }}
+          {{ with .pages }}{{ if . }}{{ $bibFields = $bibFields | append (printf "  pages = {%v}" .) }}{{ end }}{{ end }}
+          {{ with .publisher }}{{ if . }}{{ $bibFields = $bibFields | append (printf "  publisher = {%s}" .) }}{{ end }}{{ end }}
+          {{ with .location }}{{ if . }}{{ $bibFields = $bibFields | append (printf "  address = {%s}" .) }}{{ end }}{{ end }}
+          {{ with .doi_isbn }}{{ if . }}{{ $identifier := printf "%v" . }}{{ if and (hasPrefix $identifier "10.") (in $identifier "/") }}{{ $bibFields = $bibFields | append (printf "  doi = {%s}" $identifier) }}{{ else }}{{ $bibFields = $bibFields | append (printf "  isbn = {%s}" $identifier) }}{{ end }}{{ end }}{{ end }}
+          {{ $bibtex := printf "@%s{%s,\n%s\n}" $bibtype $bibKey (delimit $bibFields ",\n") }}
+          <li x-data="{ open: false, copied: false }" class="{{ $itemCardClass }}">
             <div class="flex flex-col gap-5">
               <div class="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
                 <div class="space-y-3">
@@ -308,8 +338,19 @@
                   Zenodo
                 </a>
               {{ end }}
+              <button
+                type="button"
+                @click="navigator.clipboard.writeText($refs.bibtex.textContent.trim()).then(() => { copied=true; setTimeout(()=>copied=false, 2000) })"
+                :aria-label="copied ? '{{ i18n "ui_bibtex_copied" }}' : '{{ i18n "ui_bibtex_copy" }}'"
+                class="{{ $resourceLinkClass }}">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" class="h-4 w-4" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0 0 13.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 0 1-.75.75H9a.75.75 0 0 1-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 0 1-2.25 2.25H6.75A2.25 2.25 0 0 1 4.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 0 1 1.927-.184" />
+                </svg>
+                <span x-text="copied ? 'OK' : 'BibTeX'"></span>
+              </button>
               </div>
               {{ end }}
+              <script type="application/x-bibtex" x-ref="bibtex">{{ $bibtex }}</script>
 
               {{ if .summary }}
               {{ $currentLangSummary := index .summary $.Site.Language.Lang }}

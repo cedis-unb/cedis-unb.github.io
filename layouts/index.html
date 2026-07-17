@@ -43,7 +43,7 @@
                         </p>
                     </div>
                     <div class="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:flex-wrap lg:items-center lg:justify-start">
-                        <a href="{{ .Site.Params.seemore.link | relLangURL }}" class="group inline-flex items-center justify-center rounded-full bg-primary-500 px-6 py-3 text-sm font-semibold uppercase tracking-[0.18em] text-white shadow-lg shadow-primary-900/20 transition duration-300 ease-in-out hover:bg-primary-600 hover:shadow-xl focus:outline-none">
+                        <a href="{{ .Site.Params.seemore.link | relLangURL }}" class="group inline-flex items-center justify-center rounded-full bg-primary-500 px-6 py-3 text-sm font-semibold uppercase tracking-[0.18em] text-white shadow-lg shadow-primary-900/20 transition duration-300 ease-in-out hover:bg-primary-600 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-primary-300 focus:ring-offset-2 focus:ring-offset-gray-950">
                             {{ .Site.Params.seemore.text }}
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="ml-2 inline-block h-5 w-5 transform -rotate-90 text-white transition-transform duration-300 ease-in-out group-hover:translate-x-1.5">
                                 <path fill-rule="evenodd" d="M3.293 9.707a1 1 0 011.414 0L10 15l5.293-5.293a1 1 0 111.414 1.414l-6 6a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414z" clip-rule="evenodd" />
@@ -311,7 +311,7 @@
                             </p>
                             <div class="mt-4 flex flex-wrap gap-2">
                                 {{ range first 2 ($page.GetTerms "tags") }}
-                                <a href="{{ .RelPermalink }}" class="inline-flex items-center rounded-full border border-slate-200/80 bg-slate-100 px-2.5 py-1 text-[0.72rem] font-medium text-slate-700 transition-colors hover:border-primary-200 hover:bg-primary-100 hover:text-slate-950 dark:border-white/10 dark:bg-white/[0.05] dark:text-slate-200 dark:hover:border-primary-400/30 dark:hover:bg-primary-500/10">
+                                <a href="{{ .RelPermalink }}" class="inline-flex items-center rounded-full border border-slate-200/80 bg-slate-100 px-2.5 py-1 text-[0.72rem] font-medium text-slate-700 transition-colors hover:border-primary-200 hover:bg-primary-100 hover:text-slate-950 dark:border-white/10 dark:bg-white/[0.06] dark:text-slate-200 dark:hover:border-primary-400/30 dark:hover:bg-primary-500/10">
                                     {{ partial "translated-label.html" (dict "page" .) }}
                                 </a>
                                 {{ end }}
