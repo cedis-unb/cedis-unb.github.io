@@ -51,8 +51,8 @@ Após o ciclo de correções técnicas de 2026-07, o site do CEDIS está com bas
 ### Eixo A — Storytelling e conteúdo editorial
 > Ativa personas: 1, 2, 6, 8
 
-- [ ] **A1** — Página "História em números" com métricas agregadas automáticas (12 anos, N publicações, N orientações, N produtos). Renderizar a partir dos `data/*.yaml`.
-  <!-- > Nota: -->
+- [x] **A1** — Página "História em números" com métricas agregadas automáticas (12 anos, N publicações, N orientações, N produtos). Renderizar a partir dos `data/*.yaml`.
+  > Nota (2026-07-17): bloco "CEDIS em números" adicionado no topo de `layouts/_default/history.html`, puxando anos (desde 2013), pesquisadores ativos, publicações (`hugo.Data.productions.items`), produtos e orientações (`hugo.Data.people.people`). Reusa i18n `ui_impact_*` e o mesmo cálculo da home.
 
 - [ ] **A2** — Série "Histórias do CEDIS" — 5–8 posts contando origem de cada produto/projeto marcante (Contextus, Alvorecer, DFCris) com fotos, tensões, decisões, resultado. Formato: 800–1200 palavras + 3–5 imagens.
   <!-- > Nota: -->
@@ -63,8 +63,8 @@ Após o ciclo de correções técnicas de 2026-07, o site do CEDIS está com bas
 - [ ] **A4** — "Onde estão nossos ex-alunos" — página com 15–20 cards de alumni: onde trabalham hoje, o que fazem, breve depoimento.
   <!-- > Nota: -->
 
-- [ ] **A5** — Reescrever `about.md` (ou seção equivalente) com voz humana. Substituir "Somos um centro que promove excelência…" por "Desde 2013 estudamos como o software é feito, como as pessoas o fazem, e como ensinar isso melhor. Somos 7 professores, ~40 orientandos e 12 anos de história".
-  <!-- > Nota: -->
+- [x] **A5** — Reescrever `about.md` (ou seção equivalente) com voz humana. Substituir "Somos um centro que promove excelência…" por "Desde 2013 estudamos como o software é feito, como as pessoas o fazem, e como ensinar isso melhor. Somos 7 professores, ~40 orientandos e 12 anos de história".
+  > Nota (2026-07-17): `hugo.yaml` params `p1.content` (PT e EN) já reescritos com a voz humana ("Desde 2013 estudamos como o software é feito — e como as pessoas o fazem. Somos 7 pesquisadores, dezenas de orientandos..."). Renderiza em `layouts/index.html` na seção mission. Não existe `about.md` isolado — conteúdo vive nos params do site.
 
 
 ### Eixo B — Prova social e sinais de confiança
@@ -79,8 +79,8 @@ Após o ciclo de correções técnicas de 2026-07, o site do CEDIS está com bas
 - [ ] **B3** — "Reconhecimentos" — página agregando prêmios recebidos, menções honrosas, editais aprovados (hoje dispersos nos perfis).
   <!-- > Nota: -->
 
-- [ ] **B4** — Números de impacto visíveis na home: "311 publicações • 8 produtos registrados • 12 anos de história". Contadores animados, atualizados via `data/`.
-  <!-- > Nota: -->
+- [x] **B4** — Números de impacto visíveis na home: "311 publicações • 8 produtos registrados • 12 anos de história". Contadores animados, atualizados via `data/`.
+  > Nota (2026-07-17): seção "CEDIS em números" ativa em `layouts/index.html:126-183` com 5 cards (anos, pesquisadores, publicações, produtos, orientações) atualizados via `hugo.Data.productions.items`, `hugo.Data.people.people` e contagem de páginas. Contadores estáticos (não animados) — animação pode ser upgrade futuro.
 
 - [ ] **B5** — Página de "clipping" com menções na imprensa, entrevistas, participações em eventos.
   <!-- > Nota: -->
@@ -127,8 +127,8 @@ Após o ciclo de correções técnicas de 2026-07, o site do CEDIS está com bas
 ### Eixo E — Conversão
 > Ativa personas: 1, 2, 4
 
-- [ ] **E1** — CTA final em cada perfil de pesquisador — bloco padronizado no fim: "Interesse em orientação? [Ver processo] [Enviar email]".
-  <!-- > Nota: -->
+- [x] **E1** — CTA final em cada perfil de pesquisador — bloco padronizado no fim: "Interesse em orientação? [Ver processo] [Enviar email]".
+  > Nota (2026-07-17): bloco CTA "Interessado(a) em orientação ou colaboração?" adicionado ao fim de `layouts/people/single.html` (só quando `$isResearcher`). Três botões: Ver oportunidades (`/oportunidades/`), Enviar email (mailto com subject preenchido), Falar com o CEDIS (`/contact/`). i18n `people_cta_*` novos em pt/en.
 
 - [ ] **E2** — Formulário de contato multi-caminho — escolher tipo (orientação, parceria, imprensa, extensão), formulário adapta campos e destinatário.
   <!-- > Nota: -->
@@ -136,8 +136,8 @@ Após o ciclo de correções técnicas de 2026-07, o site do CEDIS está com bas
 - [ ] **E3** — Página `/junte-se/` (Join us) — landing para todas as portas de entrada (IC, TCC, Mestrado, Doutorado, Extensão, Voluntário). Cada rota com passos claros e datas.
   <!-- > Nota: -->
 
-- [ ] **E4** — Botões "Copiar email" e "Ver Lattes" nos perfis, além do link visual.
-  <!-- > Nota: -->
+- [x] **E4** — Botões "Copiar email" e "Ver Lattes" nos perfis, além do link visual.
+  > Nota (2026-07-17): card "Contato" no sidebar do perfil (`layouts/people/single.html`) exibe email + botão Copiar (Alpine.js `navigator.clipboard`), link Lattes e link ORCID. Dados vêm de `hugo.Data.advisors.advisors[$personKey]`. Cada item condicional — Fabiana só aparece Lattes; Cristiane não aparece nada porque campos vazios.
 
 - [ ] **E5** — Cronograma anual visível — próximas datas: PPCA, eventos, palestras. Formato compacto na home.
   <!-- > Nota: -->
@@ -205,11 +205,11 @@ Recomendação de tracking mínimo:
 
 ### Sprint 1 (mês 1) — Quick wins de storytelling
 Meta: reforçar percepção de vitalidade + rosto humano com esforço baixo.
-- [ ] A5 — reescrever about com voz humana
-- [ ] B4 — números de impacto na home
-- [ ] E1 — CTA final nos perfis
-- [ ] E4 — botões copiar email + Lattes
-- [ ] A1 — página "história em números"
+- [x] A5 — reescrever about com voz humana
+- [x] B4 — números de impacto na home
+- [x] E1 — CTA final nos perfis
+- [x] E4 — botões copiar email + Lattes
+- [x] A1 — página "história em números"
 
 ### Sprint 2 (mês 2) — Conversão e prova social
 Meta: transformar visitas em contatos e reforçar credibilidade.
@@ -253,6 +253,7 @@ Evitar:
 | Data | Revisor | Mudança |
 |------|---------|---------|
 | 2026-07-17 | Sergio Freitas + assistente | Criação inicial pós-ciclo técnico. Marcados C5 e F2 como concluídos (implementados no ciclo). |
+| 2026-07-17 | Sergio Freitas + assistente | Sprint 1 concluído: A1 (métricas na página de história), A5 (voz humana no p1), B4 (números na home), E1 (CTA final nos perfis de pesquisador), E4 (card contato com Copiar email + Lattes + ORCID). Link "Cursos e treinamentos" atualizado para `https://slides.cedis.tec.br/programas-de-formacao`. Novos i18n `people_cta_*`, `people_lattes`, `ui_copy_email*` em pt/en. |
 
 <!-- Modelo de nova entrada:
 | YYYY-MM-DD | Nome | Descrição breve da mudança |
