@@ -17,21 +17,21 @@
 {{ $isPeopleTerm := and $isTerm (eq .Data.Plural "categories") (eq $termKey "people") }}
 {{ $isShowcaseList := or $isProjectsList $isProductsList $isAreasList $isPeopleList $isResearchersList $isAreasTerm $isProductsTerm $isPeopleTerm }}
 {{ if $isProjectsList }}
-    {{ $title = cond $isPt "Projetos" "Projects" }}
+    {{ $title = i18n "ui_projects" }}
 {{ else if or $isAreasList $isAreasTerm }}
-    {{ $title = cond $isPt "Áreas de atuação" "Areas of Expertise" }}
+    {{ $title = i18n "ui_areas_of_expertise" }}
 {{ end }}
-{{ $collectionLabel := cond $isPt "Coleção" "Collection" }}
-{{ $resultsLabel := cond $isPt "Resultados" "Results" }}
-{{ $pageLabel := cond $isPt "Página" "Page" }}
-{{ $termTypeLabel := cond $isPt "Taxonomia" "Taxonomy" }}
-{{ $archiveTypeLabel := cond $isPt "Arquivo" "Archive" }}
-{{ $contentItemsLabel := cond $isPt "conteúdos" "entries" }}
-{{ $intro := cond $isPt "Explore publicações, projetos, pessoas e iniciativas relacionadas a esta curadoria." "Explore publications, projects, people, and initiatives connected to this curated collection." }}
+{{ $collectionLabel := i18n "ui_collection" }}
+{{ $resultsLabel := i18n "ui_results" }}
+{{ $pageLabel := i18n "ui_page" }}
+{{ $termTypeLabel := i18n "ui_taxonomy" }}
+{{ $archiveTypeLabel := i18n "ui_archive" }}
+{{ $contentItemsLabel := i18n "ui_entries" }}
+{{ $intro := i18n "ui_explore_publications_projects_people_and" }}
 {{ if $isTaxonomy }}
-    {{ $intro = cond $isPt "Navegue por todos os termos disponíveis e entre nas coleções que organizam o conteúdo do site." "Browse every available term and jump into the collections that organize the site's content." }}
+    {{ $intro = i18n "ui_browse_every_available_term_and" }}
 {{ else if $isTerm }}
-    {{ $intro = cond $isPt "Uma seleção de páginas relacionadas a este tema, com acesso rápido aos itens mais relevantes." "A selection of pages related to this topic, with fast access to the most relevant entries." }}
+    {{ $intro = i18n "ui_a_selection_of_pages_related" }}
 {{ end }}
 {{ $taxonomyName := "" }}
 {{ with .Data.Plural }}
@@ -85,8 +85,8 @@
                     </div>
                     <div class="rounded-3xl border border-white/10 bg-white/[0.06] p-5 shadow-[0_18px_60px_rgba(0,0,0,0.24)] backdrop-blur">
                         <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-white/72">{{ $collectionLabel }}</div>
-                        <div class="mt-2 text-2xl font-black text-white">{{ with $taxonomyName }}{{ . }}{{ else }}{{ cond $isPt "Conteúdo" "Content" }}{{ end }}</div>
-                        <div class="mt-2 text-sm text-white/58">{{ cond $isPt "Navegação editorial" "Editorial navigation" }}</div>
+                        <div class="mt-2 text-2xl font-black text-white">{{ with $taxonomyName }}{{ . }}{{ else }}{{ i18n "ui_content" }}{{ end }}</div>
+                        <div class="mt-2 text-sm text-white/58">{{ i18n "ui_editorial_navigation" }}</div>
                     </div>
                 </div>
             </div>

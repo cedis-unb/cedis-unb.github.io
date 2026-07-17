@@ -1,8 +1,8 @@
 {{ define "main" }}
 {{ $isPt := eq .Site.Language.Lang "pt" }}
 {{ $content := .Content }}
-{{ $intro := .Params.description | default (cond $isPt "Linha do tempo com os principais marcos institucionais do CEDIS." "Timeline with the main institutional milestones of CEDIS.") }}
-{{ $eyebrow := .Params.eyebrow | default (cond $isPt "Linha do tempo" "Timeline") }}
+{{ $intro := .Params.description | default (i18n "ui_timeline_with_the_main_institutional") }}
+{{ $eyebrow := .Params.eyebrow | default (i18n "ui_timeline") }}
 {{ $parts := split $content `<h2 id="` }}
 {{ $events := slice }}
 

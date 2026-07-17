@@ -1,9 +1,9 @@
 {{ $isPt := eq .Site.Language.Lang "pt" }}
 {{ $isTaxonomy := eq .Kind "taxonomy" }}
-{{ $readLabel := cond $isPt "min de leitura" (printf "min %s" (i18n "read")) }}
-{{ $openLabel := cond $isPt "Abrir coleção" "Open collection" }}
-{{ $itemsLabel := cond $isPt "itens" "items" }}
-{{ $termSummary := cond $isPt "Explore as páginas agrupadas por este termo." "Explore the pages grouped under this term." }}
+{{ $readLabel := i18n "ui_min_read" }}
+{{ $openLabel := i18n "ui_open_collection" }}
+{{ $itemsLabel := i18n "ui_items" }}
+{{ $termSummary := i18n "ui_explore_the_pages_grouped_under" }}
 {{ $defaultDateFormat := cond $isPt "02/01/2006" "02 Jan 2006" }}
 
 <div class="not-prose">
@@ -16,7 +16,7 @@
             <div>
                 <div class="flex items-center justify-between gap-4">
                     <span class="inline-flex rounded-full border border-primary-200 bg-primary-50 px-3 py-1 text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-primary-700 dark:border-primary-500/30 dark:bg-primary-500/10 dark:text-primary-100">
-                        {{ cond $isPt "Termo" "Term" }}
+                        {{ i18n "ui_term" }}
                     </span>
                     <span class="text-sm font-semibold text-gray-400 transition-colors group-hover:text-primary-500 dark:text-white/72">
                         {{ $openLabel }}
@@ -31,7 +31,7 @@
             </div>
             <div class="mt-10 flex items-end justify-between border-t border-black/5 pt-5 dark:border-white/10">
                 <div>
-                    <div class="text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-gray-400 dark:text-white/72">{{ cond $isPt "Volume" "Volume" }}</div>
+                    <div class="text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-gray-400 dark:text-white/72">{{ i18n "ui_volume" }}</div>
                     <div class="mt-2 text-3xl font-black text-gray-950 dark:text-white">{{ $termCount }}</div>
                     <div class="mt-1 text-sm text-gray-500 dark:text-white/60">{{ $itemsLabel }}</div>
                 </div>
@@ -107,7 +107,7 @@
                         {{ with .Params.author }}
                         <p class="text-sm font-semibold text-gray-900 dark:text-white">{{ . }}</p>
                         {{ else }}
-                        <p class="text-sm font-semibold text-gray-900 dark:text-white">{{ cond $isPt "Equipe CEDIS" "CEDIS Team" }}</p>
+                        <p class="text-sm font-semibold text-gray-900 dark:text-white">{{ i18n "ui_cedis_team" }}</p>
                         {{ end }}
                         {{ if gt (countwords .Content) 0 }}
                         <p class="mt-1 text-sm text-gray-500 dark:text-white/60">{{ math.Max 1 (math.Round (div (countwords .Content) 220.0)) }} {{ $readLabel }}</p>

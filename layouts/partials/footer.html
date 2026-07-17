@@ -25,11 +25,11 @@
 {{ end }}
 
 {{ $isPt := eq .Site.Language.Lang "pt" }}
-{{ $footerKicker := cond $isPt "Universidade de Brasília" "University of Brasilia" }}
-{{ $footerLead := cond $isPt "Pesquisa, desenvolvimento e inovação em software com foco em formação, colaboração e impacto social." "Research, development, and software innovation focused on education, collaboration, and social impact." }}
-{{ $footerNavTitle := cond $isPt "Navegação" "Navigation" }}
-{{ $footerConnectTitle := cond $isPt "Conecte-se" "Connect" }}
-{{ $footerConnectLead := cond $isPt "Acompanhe publicações, notícias e canais institucionais do CEDIS." "Follow CEDIS across publications, news, and institutional channels." }}
+{{ $footerKicker := i18n "ui_university_of_brasilia" }}
+{{ $footerLead := i18n "ui_research_development_and_software_innovation" }}
+{{ $footerNavTitle := i18n "ui_navigation" }}
+{{ $footerConnectTitle := i18n "ui_connect" }}
+{{ $footerConnectLead := i18n "ui_follow_cedis_across_publications_news" }}
 
 <footer class="relative overflow-hidden border-t border-slate-200/80 bg-[linear-gradient(180deg,_#0f172a_0%,_#111827_100%)] text-slate-200 dark:border-white/10">
     <div aria-hidden="true" class="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(56,189,248,0.14),_transparent_28%),radial-gradient(circle_at_bottom_right,_rgba(249,115,22,0.14),_transparent_24%)]"></div>
@@ -38,7 +38,7 @@
             <div class="rounded-[1.75rem] border border-white/10 bg-white/[0.04] p-6 shadow-[0_24px_80px_rgba(0,0,0,0.22)] backdrop-blur">
                 <div class="text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-slate-400">{{ $footerKicker }}</div>
                 <div class="mt-4 flex items-center gap-4">
-                    <img src="/images/site-logo.svg" alt="CEDIS Logo" class="h-10 w-28 object-contain opacity-95">
+                    <img src="/images/site-logo.svg" alt="CEDIS Logo" class="h-10 w-28 object-contain opacity-95" loading="lazy" decoding="async">
                     <div class="h-10 w-px bg-white/10"></div>
                     <div class="text-sm font-medium uppercase tracking-[0.2em] text-slate-400">CEDIS</div>
                 </div>
@@ -122,10 +122,10 @@
         <div class="mt-8 flex flex-col gap-5 border-t border-white/10 pt-6 lg:flex-row lg:items-center lg:justify-between">
             <div class="flex flex-wrap items-center gap-4 sm:gap-5">
                 <a href="https://fcte.unb.br" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center rounded-2xl border border-white/10 bg-white/[0.04] px-4 py-3 transition-colors hover:bg-white/[0.08]">
-                    <img src="/images/logoFGA.png" alt="Logo FCTE" class="h-10 w-auto object-contain opacity-95">
+                    <img src="/images/logoFGA.png" alt="Logo FCTE" class="h-10 w-auto object-contain opacity-95" loading="lazy" decoding="async">
                 </a>
                 <a href="https://unb.br" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center rounded-2xl border border-white/10 bg-white/[0.04] px-4 py-3 transition-colors hover:bg-white/[0.08]">
-                    <img src="/images/as_vert_neg.webp" alt="Logo UnB" class="h-10 w-auto object-contain opacity-95">
+                    <img src="/images/as_vert_neg.webp" alt="Logo UnB" class="h-10 w-auto object-contain opacity-95" loading="lazy" decoding="async">
                 </a>
             </div>
             <p class="text-sm leading-6 text-slate-400">

@@ -1,12 +1,12 @@
 {{ define "main" }}
 {{ $isPt := eq .Site.Language.Lang "pt" }}
-{{ $intro := cond $isPt "Navegue rapidamente pela produção do CEDIS por ano e chegue direto ao período desejado." "Browse CEDIS publications by year and jump straight to the period you need." }}
-{{ $jumpContent := cond $isPt "Explorar publicações" "Explore publications" }}
-{{ $jumpYears := cond $isPt "Ir para os anos" "Jump to years" }}
-{{ $eyebrow := cond $isPt "Produção científica / Acervo" "Scientific output / Archive" }}
-{{ $roleLabel := cond $isPt "Arquivo anual" "Yearly archive" }}
-{{ $statsTitle := cond $isPt "Visão rápida" "At a glance" }}
-{{ $yearsTitle := cond $isPt "Anos" "Years" }}
+{{ $intro := i18n "ui_browse_cedis_publications_by_year" }}
+{{ $jumpContent := i18n "ui_explore_publications" }}
+{{ $jumpYears := i18n "ui_jump_to_years" }}
+{{ $eyebrow := i18n "ui_scientific_output_archive" }}
+{{ $roleLabel := i18n "ui_yearly_archive" }}
+{{ $statsTitle := i18n "ui_at_a_glance" }}
+{{ $yearsTitle := i18n "ui_years" }}
 {{ $content := .Content }}
 
 {{ $yearEntries := slice }}
@@ -109,11 +109,11 @@
           <div class="mt-4 grid gap-3 sm:grid-cols-2">
             <div class="rounded-[1.25rem] border border-white/10 bg-black/20 px-4 py-4">
               <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-white/72">{{ $yearsTitle }}</div>
-              <p class="mt-2 text-sm leading-6 text-white/72">{{ $yearCount }} {{ cond $isPt "período(s) publicados nesta página." "published period(s) listed on this page." }}</p>
+              <p class="mt-2 text-sm leading-6 text-white/72">{{ $yearCount }} {{ i18n "ui_published_periods_listed_on_this" }}</p>
             </div>
             <div class="rounded-[1.25rem] border border-white/10 bg-black/20 px-4 py-4">
-              <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-white/72">{{ if $isPt }}Acervo{{ else }}Archive{{ end }}</div>
-              <p class="mt-2 text-sm leading-6 text-white/72">{{ $publicationCount }} {{ cond $isPt "publicação(ões) catalogadas, exceto TCCs." "catalogued publication(s), excluding undergraduate theses." }}</p>
+              <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-white/72">{{ i18n "ui_archive" }}</div>
+              <p class="mt-2 text-sm leading-6 text-white/72">{{ $publicationCount }} {{ i18n "ui_catalogued_publications_excluding_undergraduate_theses" }}</p>
             </div>
           </div>
         </div>
@@ -140,7 +140,7 @@
           </div>
           <div class="rounded-[1.25rem] border border-black/5 bg-stone-50 px-4 py-4 dark:border-white/10 dark:bg-white/[0.03]">
             <div class="text-3xl font-black tracking-tight text-gray-950 dark:text-white">{{ $publicationCount }}</div>
-            <div class="mt-1 text-sm leading-6 text-gray-600 dark:text-white/72">{{ if $isPt }}Publicações indexadas{{ else }}Indexed publications{{ end }}</div>
+            <div class="mt-1 text-sm leading-6 text-gray-600 dark:text-white/72">{{ i18n "ui_indexed_publications" }}</div>
           </div>
         </div>
       </div>
