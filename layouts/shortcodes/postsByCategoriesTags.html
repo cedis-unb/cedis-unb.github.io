@@ -87,7 +87,7 @@
   {{ end }}
 {{ end }}
 
-{{ $areaOpenLabel := cond $isPt "Ver área" "Open area" }}
+{{ $areaOpenLabel := i18n "ui_open_area" }}
 
 {{ if gt (len $matches) 0 }}
   {{ if $caput }}

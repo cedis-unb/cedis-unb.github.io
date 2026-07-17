@@ -1,0 +1,65 @@
+{{- $ctx := . -}}
+{{- $page := $ctx -}}
+{{- $variant := "dark" -}}
+{{- if reflect.IsMap $ctx -}}
+  {{- $page = $ctx.page -}}
+  {{- with $ctx.variant -}}{{- $variant = . -}}{{- end -}}
+{{- end -}}
+
+{{- $sectionKey := $page.Section -}}
+{{- $sectionUrlMap := dict
+  "people" "/people/"
+  "projects" "/projects/"
+  "areas" "/categories/knowledge_areas/"
+  "posts" "/categories/news/"
+  "products" "/categories/products/"
+-}}
+{{- $sectionLabelKey := printf "breadcrumb_%s" $sectionKey -}}
+{{- $sectionUrl := index $sectionUrlMap $sectionKey | default (printf "/%s/" $sectionKey) -}}
+{{- $sectionLabel := i18n $sectionLabelKey | default (humanize $sectionKey) -}}
+
+{{- $items := slice
+  (dict "url" (relLangURL "/") "label" (i18n "breadcrumb_home") "current" false)
+  (dict "url" (relLangURL $sectionUrl) "label" $sectionLabel "current" false)
+  (dict "url" $page.RelPermalink "label" $page.Title "current" true)
+-}}
+
+{{- $listClass := "flex flex-wrap items-center gap-x-2 gap-y-1 text-[0.7rem] font-semibold uppercase tracking-[0.22em]" -}}
+{{- $linkClass := "" -}}
+{{- $currentClass := "" -}}
+{{- $sepClass := "" -}}
+{{- if eq $variant "light" -}}
+  {{- $listClass = printf "%s text-slate-500 dark:text-white/72" $listClass -}}
+  {{- $linkClass = "rounded transition-colors hover:text-slate-900 focus:text-slate-900 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 focus:ring-offset-white dark:hover:text-white dark:focus:text-white dark:focus:ring-primary-300 dark:focus:ring-offset-gray-900" -}}
+  {{- $currentClass = "text-slate-900 dark:text-white" -}}
+  {{- $sepClass = "text-slate-300 dark:text-white/30" -}}
+{{- else -}}
+  {{- $listClass = printf "%s text-white/72" $listClass -}}
+  {{- $linkClass = "rounded transition-colors hover:text-white focus:text-white focus:outline-none focus:ring-2 focus:ring-primary-300 focus:ring-offset-2 focus:ring-offset-gray-950" -}}
+  {{- $currentClass = "text-white" -}}
+  {{- $sepClass = "text-white/30" -}}
+{{- end -}}
+
+<nav aria-label="{{ i18n "breadcrumb_nav" }}" class="mb-6">
+  <ol class="{{ $listClass }}">
+    {{- range $i, $item := $items -}}
+      {{- if gt $i 0 -}}
+      <li aria-hidden="true" class="{{ $sepClass }}">›</li>
+      {{- end -}}
+      <li{{ if $item.current }} aria-current="page" class="max-w-[20rem] truncate {{ $currentClass }}"{{ end }}>
+        {{- if $item.current -}}
+          <span title="{{ $item.label }}">{{ $item.label }}</span>
+        {{- else -}}
+          <a href="{{ $item.url }}" class="{{ $linkClass }}">{{ $item.label }}</a>
+        {{- end -}}
+      </li>
+    {{- end -}}
+  </ol>
+</nav>
+
+{{- $breadcrumbList := slice -}}
+{{- range $i, $item := $items -}}
+  {{- $entry := dict "@type" "ListItem" "position" (add $i 1) "name" $item.label "item" ($item.url | absURL) -}}
+  {{- $breadcrumbList = $breadcrumbList | append $entry -}}
+{{- end -}}
+<script type="application/ld+json">{{ dict "@context" "https://schema.org" "@type" "BreadcrumbList" "itemListElement" $breadcrumbList | jsonify | safeJS }}</script>
