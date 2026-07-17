@@ -1,0 +1,46 @@
+{{- printf `<?xml version="1.0" encoding="utf-8" standalone="yes"?>` | safeHTML }}
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  {{- range .Data.Pages -}}
+    {{- if not .Params.private -}}
+      {{- $priority := "0.5" -}}
+      {{- $changefreq := "monthly" -}}
+      {{- if .IsHome -}}
+        {{- $priority = "1.0" -}}
+        {{- $changefreq = "weekly" -}}
+      {{- else if eq .Section "people" -}}
+        {{- $priority = "0.9" -}}
+        {{- $changefreq = "monthly" -}}
+      {{- else if eq .Kind "section" -}}
+        {{- $priority = "0.8" -}}
+        {{- $changefreq = "weekly" -}}
+      {{- else if eq .Section "projects" -}}
+        {{- $priority = "0.8" -}}
+        {{- $changefreq = "monthly" -}}
+      {{- else if eq .Section "areas" -}}
+        {{- $priority = "0.8" -}}
+        {{- $changefreq = "monthly" -}}
+      {{- else if eq .Section "products" -}}
+        {{- $priority = "0.7" -}}
+        {{- $changefreq = "monthly" -}}
+      {{- else if eq .Section "posts" -}}
+        {{- $priority = "0.7" -}}
+        {{- $changefreq = "monthly" -}}
+      {{- else if eq .Kind "taxonomy" -}}
+        {{- $priority = "0.3" -}}
+        {{- $changefreq = "weekly" -}}
+      {{- else if eq .Kind "term" -}}
+        {{- $priority = "0.4" -}}
+        {{- $changefreq = "weekly" -}}
+      {{- end -}}
+  <url>
+    <loc>{{ .Permalink }}</loc>{{ if not .Lastmod.IsZero }}
+    <lastmod>{{ safeHTML ( .Lastmod.Format "2006-01-02T15:04:05-07:00" ) }}</lastmod>{{ end }}
+    <changefreq>{{ $changefreq }}</changefreq>
+    <priority>{{ $priority }}</priority>{{ range .Translations }}
+    <xhtml:link rel="alternate" hreflang="{{ if eq .Language.Lang "pt" }}pt-BR{{ else }}en{{ end }}" href="{{ .Permalink }}" />{{ end }}{{ if .Translations }}
+    <xhtml:link rel="alternate" hreflang="{{ if eq .Language.Lang "pt" }}pt-BR{{ else }}en{{ end }}" href="{{ .Permalink }}" />{{ end }}
+  </url>
+    {{- end -}}
+  {{- end -}}
+</urlset>

@@ -263,3 +263,15 @@ ui_volume: "Volume"
 ui_yearly_archive: "Arquivo anual"
 ui_years: "Anos"
 ui_indexed_publications: "Publicações indexadas"
+
+ui_rss_news: "Feed RSS de notícias"
+
+# Alt text semanticos
+ui_alt_profile_photo: "Foto do perfil"
+ui_alt_product_visual: "Ilustração do produto"
+ui_alt_project_visual: "Ilustração do projeto"
+ui_alt_area_visual: "Ilustração da área"
+
+# BibTeX
+ui_bibtex_copy: "Copiar citação BibTeX"
+ui_bibtex_copied: "BibTeX copiado para a área de transferência"

@@ -42,7 +42,7 @@
       {{ $image := .Fit "1200x900 webp q88" }}
       <div class="overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.06] p-4 shadow-[0_24px_70px_rgba(0,0,0,0.22)] backdrop-blur md:p-5">
         <div class="overflow-hidden rounded-[1.5rem] bg-[linear-gradient(180deg,_rgba(255,255,255,0.08),_rgba(255,255,255,0.02))] p-4">
-          <img src="{{ $image.RelPermalink }}" alt="{{ $.Title }}" class="h-auto w-full rounded-[1.1rem] object-contain" loading="lazy" decoding="async">
+          <img src="{{ $image.RelPermalink }}" alt="" class="h-auto w-full rounded-[1.1rem] object-contain" loading="lazy" decoding="async">
         </div>
       </div>
       {{ end }}
