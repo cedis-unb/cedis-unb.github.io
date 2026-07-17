@@ -3,6 +3,7 @@ wordCount:
 
 # Accessibility
 skip_to_content: "Skip to main content"
+language_switcher: "Choose language"
 
 # 404 page
 not_found_title: "Page not found"
