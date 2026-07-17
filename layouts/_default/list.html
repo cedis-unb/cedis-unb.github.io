@@ -74,17 +74,17 @@
 
                 <div class="grid gap-3 sm:grid-cols-3 lg:min-w-[30rem] lg:max-w-xl lg:flex-1">
                     <div class="rounded-3xl border border-white/10 bg-white/[0.06] p-5 shadow-[0_18px_60px_rgba(0,0,0,0.24)] backdrop-blur">
-                        <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-white/45">{{ $resultsLabel }}</div>
+                        <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-white/72">{{ $resultsLabel }}</div>
                         <div class="mt-2 text-3xl font-black text-white">{{ $totalResults }}</div>
                         <div class="mt-2 text-sm text-white/58">{{ $contentItemsLabel }}</div>
                     </div>
                     <div class="rounded-3xl border border-white/10 bg-white/[0.06] p-5 shadow-[0_18px_60px_rgba(0,0,0,0.24)] backdrop-blur">
-                        <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-white/45">{{ $pageLabel }}</div>
+                        <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-white/72">{{ $pageLabel }}</div>
                         <div class="mt-2 text-3xl font-black text-white">{{ $currentPage }}</div>
                         <div class="mt-2 text-sm text-white/58">{{ cond $isPt (printf "de %d" $totalPages) (printf "of %d" $totalPages) }}</div>
                     </div>
                     <div class="rounded-3xl border border-white/10 bg-white/[0.06] p-5 shadow-[0_18px_60px_rgba(0,0,0,0.24)] backdrop-blur">
-                        <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-white/45">{{ $collectionLabel }}</div>
+                        <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-white/72">{{ $collectionLabel }}</div>
                         <div class="mt-2 text-2xl font-black text-white">{{ with $taxonomyName }}{{ . }}{{ else }}{{ cond $isPt "Conteúdo" "Content" }}{{ end }}</div>
                         <div class="mt-2 text-sm text-white/58">{{ cond $isPt "Navegação editorial" "Editorial navigation" }}</div>
                     </div>

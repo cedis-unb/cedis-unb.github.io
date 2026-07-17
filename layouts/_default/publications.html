@@ -79,11 +79,11 @@
 
           <div class="mt-4 grid gap-3 sm:grid-cols-2">
             <div class="rounded-[1.25rem] border border-white/10 bg-black/20 px-4 py-4">
-              <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-white/45">{{ $yearsTitle }}</div>
+              <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-white/72">{{ $yearsTitle }}</div>
               <p class="mt-2 text-sm leading-6 text-white/72">{{ $yearCount }} {{ cond $isPt "período(s) publicados nesta página." "published period(s) listed on this page." }}</p>
             </div>
             <div class="rounded-[1.25rem] border border-white/10 bg-black/20 px-4 py-4">
-              <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-white/45">{{ if $isPt }}Acervo{{ else }}Archive{{ end }}</div>
+              <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-white/72">{{ if $isPt }}Acervo{{ else }}Archive{{ end }}</div>
               <p class="mt-2 text-sm leading-6 text-white/72">{{ $publicationCount }} {{ cond $isPt "publicação(ões) catalogadas, exceto TCCs." "catalogued publication(s), excluding undergraduate theses." }}</p>
             </div>
           </div>
@@ -103,7 +103,7 @@
 
     <aside class="order-1 space-y-5 lg:order-2 lg:sticky lg:top-24">
       <div class="rounded-[1.75rem] border border-black/5 bg-white/85 p-5 shadow-[0_18px_60px_rgba(15,23,42,0.08)] backdrop-blur dark:border-white/10 dark:bg-white/[0.04]">
-        <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-gray-400 dark:text-white/45">{{ $statsTitle }}</div>
+        <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-gray-400 dark:text-white/72">{{ $statsTitle }}</div>
         <div class="mt-4 grid gap-3">
           <div class="rounded-[1.25rem] border border-black/5 bg-stone-50 px-4 py-4 dark:border-white/10 dark:bg-white/[0.03]">
             <div class="text-3xl font-black tracking-tight text-gray-950 dark:text-white">{{ $yearCount }}</div>
@@ -118,7 +118,7 @@
 
       {{ if $hasYearNav }}
       <div id="years-navigation" class="rounded-[1.75rem] border border-black/5 bg-white/85 p-5 shadow-[0_18px_60px_rgba(15,23,42,0.08)] backdrop-blur dark:border-white/10 dark:bg-white/[0.04]">
-        <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-gray-400 dark:text-white/45">{{ $yearsTitle }}</div>
+        <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-gray-400 dark:text-white/72">{{ $yearsTitle }}</div>
         <nav class="mt-4">
           <ul class="m-0 grid list-none gap-2 p-0">
             {{ range $yearEntries }}
