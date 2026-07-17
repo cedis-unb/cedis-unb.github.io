@@ -25,10 +25,11 @@ languages:
       disable_theme_toggle: false
       disable_stay_uptodate: true
       p1:
-        heading: "Nossa Missão"
+        heading: "O que fazemos"
         image: "images/pages/our-mission.png"
         content:
-          - text: "Na vanguarda da inovação desde 2013, o CEDIS da Universidade de Brasília se dedica a moldar o futuro da Engenharia de Software, Aprendizagem e Inteligência Artificial. Unimos estudantes, pesquisadores e profissionais em uma jornada colaborativa de descoberta, desenvolvimento e aplicação de tecnologias transformadoras. Nosso compromisso é liderar pelo exemplo, promovendo soluções sustentáveis e capacitando as próximas gerações de inovadores."
+          - text: "Desde 2013 estudamos como o software é feito — e como as pessoas o fazem. Somos 7 pesquisadores, dezenas de orientandos e mais de uma década de projetos que atravessam engenharia de software, aprendizagem e inteligência artificial."
+          - text: "Nosso trabalho vive em três frentes: pesquisa científica com produção contínua, desenvolvimento de produtos usados por parceiros reais, e formação de pessoas que carregam esse jeito de trabalhar para além da universidade."
       p3:
         heading: "Parcerias"
         content:
@@ -217,10 +218,11 @@ languages:
       disable_theme_toggle: false
       disable_stay_uptodate: true
       p1:
-        heading: "Our mission"
+        heading: "What we do"
         image: "images/pages/our-mission.png"
         content:
-          - text: "At the forefront of innovation since 2013, the CEDIS from the University of Brasília is dedicated to shaping the future of Software Engineering, Learning, and Artificial Intelligence. We bring together students, researchers, and professionals on a collaborative journey of discovery, development, and application of transformative technologies. Our commitment is to lead by example, promoting sustainable solutions and empowering the next generations of innovators."
+          - text: "Since 2013 we've studied how software gets built — and who builds it. We are 7 researchers, dozens of students, and more than a decade of projects across software engineering, learning, and artificial intelligence."
+          - text: "Our work runs on three fronts: scientific research with a steady output, product development used by real partners, and educating people who carry this way of working beyond the university."
       p3:
         heading: "Partnerships"
         content:

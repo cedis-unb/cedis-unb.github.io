@@ -123,7 +123,64 @@
         </div>
     </div>
 
-    <!-- More main page content here... -->
+    <!-- CEDIS in numbers section (B4) -->
+    {{ $yearsCount := sub now.Year 2013 }}
+    {{ $researcherCount := 0 }}
+    {{ range where .Site.RegularPages "Section" "people" }}
+      {{ if in .Params.categories "researcher" }}
+        {{ $researcherCount = add $researcherCount 1 }}
+      {{ end }}
+    {{ end }}
+    {{ $publicationCount := len hugo.Data.productions.items }}
+    {{ $productCount := 0 }}
+    {{ range where .Site.RegularPages "Section" "products" }}
+      {{ $productCount = add $productCount 1 }}
+    {{ end }}
+    {{ $supervisionCount := len hugo.Data.people.people }}
+    <div class="relative py-8 sm:py-10 lg:py-12">
+      <div class="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-slate-300/70 to-transparent dark:via-white/10"></div>
+      <div class="mx-auto max-w-screen-xl px-4 md:px-6 lg:px-8">
+        <div class="max-w-3xl">
+          <div class="inline-flex items-center rounded-full border border-primary-300/60 bg-primary-50/80 px-3 py-1 text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-primary-700 dark:border-primary-400/20 dark:bg-primary-500/10 dark:text-primary-200">
+            {{ i18n "ui_impact_eyebrow" }}
+          </div>
+          <h2 class="mt-4 text-3xl font-black tracking-tight text-slate-950 sm:text-4xl dark:text-white">
+            {{ i18n "ui_impact_heading" }}
+          </h2>
+          <p class="mt-4 max-w-2xl text-base leading-8 text-slate-700 dark:text-slate-200 sm:text-lg">
+            {{ i18n "ui_impact_lead" }}
+          </p>
+        </div>
+        <ul class="mt-8 grid grid-cols-2 gap-3 md:grid-cols-5 md:gap-4">
+          <li class="rounded-2xl border border-emerald-200 bg-white/85 px-4 py-5 shadow-sm shadow-emerald-500/10 dark:border-emerald-500/30 dark:bg-white/[0.04]">
+            <div class="text-3xl font-black tracking-tight text-emerald-700 dark:text-emerald-300 md:text-4xl">{{ $yearsCount }}</div>
+            <div class="mt-2 text-sm font-semibold text-slate-900 dark:text-white">{{ i18n "ui_metric_years" }}</div>
+            <div class="mt-1 text-xs text-slate-500 dark:text-slate-400">{{ i18n "ui_metric_years_note" }}</div>
+          </li>
+          <li class="rounded-2xl border border-violet-200 bg-white/85 px-4 py-5 shadow-sm shadow-violet-500/10 dark:border-violet-500/30 dark:bg-white/[0.04]">
+            <div class="text-3xl font-black tracking-tight text-violet-700 dark:text-violet-300 md:text-4xl">{{ $researcherCount }}</div>
+            <div class="mt-2 text-sm font-semibold text-slate-900 dark:text-white">{{ i18n "ui_metric_researchers" }}</div>
+            <div class="mt-1 text-xs text-slate-500 dark:text-slate-400">{{ i18n "ui_metric_researchers_note" }}</div>
+          </li>
+          <li class="rounded-2xl border border-blue-200 bg-white/85 px-4 py-5 shadow-sm shadow-blue-500/10 dark:border-blue-500/30 dark:bg-white/[0.04]">
+            <div class="text-3xl font-black tracking-tight text-blue-700 dark:text-blue-300 md:text-4xl">{{ $publicationCount }}</div>
+            <div class="mt-2 text-sm font-semibold text-slate-900 dark:text-white">{{ i18n "ui_metric_publications" }}</div>
+            <div class="mt-1 text-xs text-slate-500 dark:text-slate-400">{{ i18n "ui_metric_publications_note" }}</div>
+          </li>
+          <li class="rounded-2xl border border-rose-200 bg-white/85 px-4 py-5 shadow-sm shadow-rose-500/10 dark:border-rose-500/30 dark:bg-white/[0.04]">
+            <div class="text-3xl font-black tracking-tight text-rose-700 dark:text-rose-300 md:text-4xl">{{ $productCount }}</div>
+            <div class="mt-2 text-sm font-semibold text-slate-900 dark:text-white">{{ i18n "ui_metric_products" }}</div>
+            <div class="mt-1 text-xs text-slate-500 dark:text-slate-400">{{ i18n "ui_metric_products_note" }}</div>
+          </li>
+          <li class="col-span-2 rounded-2xl border border-teal-200 bg-white/85 px-4 py-5 shadow-sm shadow-teal-500/10 dark:border-teal-500/30 dark:bg-white/[0.04] md:col-span-1">
+            <div class="text-3xl font-black tracking-tight text-teal-700 dark:text-teal-300 md:text-4xl">{{ $supervisionCount }}</div>
+            <div class="mt-2 text-sm font-semibold text-slate-900 dark:text-white">{{ i18n "ui_metric_supervisions" }}</div>
+            <div class="mt-1 text-xs text-slate-500 dark:text-slate-400">{{ i18n "ui_metric_supervisions_note" }}</div>
+          </li>
+        </ul>
+        <p class="mt-4 text-xs text-slate-500 dark:text-slate-400">{{ i18n "ui_impact_footnote" }}</p>
+      </div>
+    </div>
 
     <!-- Our mission section -->
     <div class="relative py-8 sm:py-10 lg:py-14">
