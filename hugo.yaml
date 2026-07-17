@@ -124,6 +124,12 @@ languages:
           post: "Nossa trajetória e conquistas"
           url: /history/
           weight: 30
+        - identifier: mapa
+          pre: stars
+          name: Mapa de conhecimento
+          post: "Grafo interativo de áreas, pesquisadores e projetos"
+          url: /mapa/
+          weight: 32
         - identifier: oportunity
           pre: comments
           name: Oportunidades
@@ -316,6 +322,12 @@ languages:
           post: "Our journey and achievements"
           url: /history/
           weight: 30
+        - identifier: mapa
+          pre: stars
+          name: Knowledge map
+          post: "Interactive graph of areas, researchers, and projects"
+          url: /map/
+          weight: 32
         - identifier: oportunity
           pre: comments
           name: Opportunities

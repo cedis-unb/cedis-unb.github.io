@@ -235,7 +235,16 @@
           {{ with .location }}{{ if . }}{{ $bibFields = $bibFields | append (printf "  address = {%s}" .) }}{{ end }}{{ end }}
           {{ with .doi_isbn }}{{ if . }}{{ $identifier := printf "%v" . }}{{ if and (hasPrefix $identifier "10.") (in $identifier "/") }}{{ $bibFields = $bibFields | append (printf "  doi = {%s}" $identifier) }}{{ else }}{{ $bibFields = $bibFields | append (printf "  isbn = {%s}" $identifier) }}{{ end }}{{ end }}{{ end }}
           {{ $bibtex := printf "@%s{%s,\n%s\n}" $bibtype $bibKey (delimit $bibFields ",\n") }}
-          <li x-data="{ open: false, copied: false }" class="{{ $itemCardClass }}">
+          {{ $filterYear := printf "%v" .year }}
+          {{ $filterType := .type | default "" }}
+          {{ $filterTagsJoin := delimit $filteredTags "|" }}
+          <li x-data="{ open: false, copied: false }"
+              data-pub-item
+              data-pub-year="{{ $filterYear }}"
+              data-pub-type="{{ $filterType }}"
+              data-pub-topics="|{{ $filterTagsJoin }}|"
+              x-show="!$root.filters || (($root.filters.year === '' || $root.filters.year === '{{ $filterYear }}') && ($root.filters.type === '' || $root.filters.type === '{{ $filterType }}') && ($root.filters.topic === '' || ($el.dataset.pubTopics || '').includes('|' + $root.filters.topic + '|')))"
+              class="{{ $itemCardClass }}">
             <div class="flex flex-col gap-5">
               <div class="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
                 <div class="space-y-3">
