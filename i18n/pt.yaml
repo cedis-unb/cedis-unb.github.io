@@ -1,6 +1,15 @@
 wordCount:
   other: "{{ .WordCount }} palavras"
 
+# Acessibilidade
+skip_to_content: "Pular para o conteúdo"
+
+# Página 404
+not_found_title: "Página não encontrada"
+not_found_message: "Ops, essa página não existe ou foi movida."
+not_found_help: "Explore o restante do site pela página inicial ou use a busca no menu."
+back_to_home: "Voltar para a página inicial"
+
 #TERMOS (NÃO APAGAR)
 next: "Próximo"
 previous: "Anterior"

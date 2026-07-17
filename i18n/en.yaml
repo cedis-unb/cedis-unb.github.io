@@ -1,6 +1,15 @@
 wordCount:
   other: "{{ .WordCount }} words"
 
+# Accessibility
+skip_to_content: "Skip to main content"
+
+# 404 page
+not_found_title: "Page not found"
+not_found_message: "Ooops, this page doesn't exist or has moved."
+not_found_help: "Explore the rest of the site from the home page or use search in the menu."
+back_to_home: "Back to home page"
+
 #TERMOS (NÃO APAGAR)
 next: "Next"
 previous: "Prev"
