@@ -243,7 +243,7 @@
               data-pub-year="{{ $filterYear }}"
               data-pub-type="{{ $filterType }}"
               data-pub-topics="|{{ $filterTagsJoin }}|"
-              x-show="!$root.filters || (($root.filters.year === '' || $root.filters.year === '{{ $filterYear }}') && ($root.filters.type === '' || $root.filters.type === '{{ $filterType }}') && ($root.filters.topic === '' || ($el.dataset.pubTopics || '').includes('|' + $root.filters.topic + '|')))"
+              x-show="typeof filters === 'undefined' || ((filters.year === '' || filters.year === '{{ $filterYear }}') && (filters.type === '' || filters.type === '{{ $filterType }}') && (filters.topic === '' || ('|{{ $filterTagsJoin }}|').includes('|' + filters.topic + '|')))"
               class="{{ $itemCardClass }}">
             <div class="flex flex-col gap-5">
               <div class="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
