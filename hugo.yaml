@@ -172,7 +172,7 @@ languages:
           pre: courses # can be stars, comments, piechart, products, people, publications, courses
           name: Cursos e treinamentos
           post: "Cursos, oficinas, palestras e outros"
-          url: "https://slides.cedis.tec.br"
+          url: "https://slides.cedis.tec.br/programas-de-formacao"
           weight: 30
 #        - identifier: process
 #          pre: piechart # can be stars, comments or piechart
@@ -364,7 +364,7 @@ languages:
           pre: courses # can be stars, comments, piechart, products, people, publications, courses
           name: Training Programs
           post: "Courses, Workshops, Lectures and others"
-          url: "https://slides.cedis.tec.br"
+          url: "https://slides.cedis.tec.br/programas-de-formacao"
           weight: 30
 #        - identifier: process
 #          pre: piechart # can be stars, comments or piechart
