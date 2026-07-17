@@ -1,0 +1,30 @@
+{{- $page := .page -}}
+{{- $context := .context | default "desktop" -}}
+{{- $currentLang := $page.Site.Language.Lang -}}
+{{- $isMobile := eq $context "mobile" -}}
+{{- $wrapperClass := cond $isMobile "inline-flex items-center gap-0.5 rounded-full border border-white/10 bg-white/[0.05] p-0.5" "inline-flex items-center gap-0.5 rounded-full border border-white/10 bg-white/[0.04] p-0.5" -}}
+{{- $activeClass := cond $isMobile "inline-flex min-w-[2.5rem] items-center justify-center rounded-full bg-primary-600 px-3 py-1.5 text-xs font-bold tracking-wide text-white shadow-sm" "inline-flex min-w-[2.5rem] items-center justify-center rounded-full bg-primary-600 px-3 py-1 text-xs font-bold tracking-wide text-white shadow-sm" -}}
+{{- $inactiveClass := cond $isMobile "inline-flex min-w-[2.5rem] items-center justify-center rounded-full px-3 py-1.5 text-xs font-bold tracking-wide text-gray-300 transition-colors hover:bg-white/10 hover:text-white focus:bg-primary-700 focus:text-white focus:outline-none focus:ring-2 focus:ring-primary-300" "inline-flex min-w-[2.5rem] items-center justify-center rounded-full px-3 py-1 text-xs font-bold tracking-wide text-gray-300 transition-colors hover:bg-white/10 hover:text-white focus:bg-primary-700 focus:text-white focus:outline-none focus:ring-2 focus:ring-primary-300" -}}
+<div class="{{ $wrapperClass }}" role="group" aria-label="{{ i18n "language_switcher" }}">
+{{- range hugo.Sites -}}
+  {{- $lang := .Language -}}
+  {{- $code := upper .Language.Lang -}}
+  {{- $isCurrent := eq .Language.Lang $currentLang -}}
+  {{- if $isCurrent -}}
+    <span class="{{ $activeClass }}" aria-current="true" lang="{{ .Language.Lang }}">{{ $code }}</span>
+  {{- else -}}
+    {{- $target := "" -}}
+    {{- range $page.AllTranslations -}}
+      {{- if eq .Language.Lang $lang.Lang -}}
+        {{- $target = .RelPermalink -}}
+      {{- end -}}
+    {{- end -}}
+    {{- if not $target -}}
+      {{- with index (where $page.Site.Home.AllTranslations "Language.Lang" $lang.Lang) 0 -}}
+        {{- $target = .RelPermalink -}}
+      {{- end -}}
+    {{- end -}}
+    <a href="{{ $target | default "/" }}" hreflang="{{ .Language.Lang }}" lang="{{ .Language.Lang }}" title="{{ .Language.Label }}" class="{{ $inactiveClass }}">{{ $code }}</a>
+  {{- end -}}
+{{- end -}}
+</div>
