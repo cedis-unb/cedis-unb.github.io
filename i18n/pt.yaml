@@ -336,6 +336,8 @@ ui_map_connections: "conexões no grafo"
 ui_map_open: "Abrir página"
 ui_map_loading: "Carregando…"
 ui_map_tip: "Dica: use o scroll para zoom, arraste os nós para reorganizar, clique para focar."
+ui_areas_map_teaser: "Veja como as áreas se conectam a pesquisadores e projetos"
+ui_areas_map_cta: "Abrir mapa"
 
 # Temas em alta (D4)
 ui_trending_eyebrow: "Temas em alta"

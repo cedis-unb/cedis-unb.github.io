@@ -1,13 +1,15 @@
 ---
 author: CEDIS
-title: "Partners"
+title: "Partners & recognitions"
 date: 2024-02-13T23:13:19-03:00
 draft: false
 language: en
 url: /partners/
 layout: partners
-description: "Institutions and labs CEDIS works with. Each partnership became a concrete project, product, or publication."
-eyebrow: "Collaboration network"
+aliases:
+  - /recognitions/
+description: "Institutions and labs CEDIS works with, awards received, and institutional milestones."
+eyebrow: "Collaboration network and milestones"
 partners:
   - id: ibict
     name: "IBICT"
@@ -86,4 +88,37 @@ partners:
       - "Bidirectional academic mobility"
       - "CEDIS presence at European conferences"
     url: "https://www.uevora.pt/investigar/unidades-id/vista-lab"
+
+awards_heading: "Awards and institutional milestones"
+awards_lead: "Recognitions, conference awards, mentions, and milestones CEDIS has accumulated over the years."
+awards:
+  - year: 2024
+    title: "Best paper — ICCSA 2024 (Vietnam)"
+    kind: "conference_award"
+    recipients:
+      - "Canal Ciência Project"
+    detail: "Paper on the Canal Ciência portal receives an award at the 24th International Conference on Computational Science and Its Applications in Hanoi."
+    linked_project: "project_cc"
+
+  - year: 2024
+    title: "Fellow presents at ICCSA 2024"
+    kind: "milestone"
+    recipients:
+      - "CEDIS fellow"
+    detail: "First international presentation by a CEDIS fellow at an ICCSA conference, marking the group's growing presence in European-Asian venues."
+
+  - year: 2020
+    title: "Launch of Software for Good — 20th UnB University Week"
+    kind: "milestone"
+    recipients:
+      - "Software for Good program"
+    detail: "The outreach program SpB is launched during University Week. It starts receiving concrete social demands and organizing student teams around them."
+    linked_project: "project_software_bem"
+
+  - year: 2019
+    title: "Renaming to CEDIS"
+    kind: "milestone"
+    recipients:
+      - "Institutional group"
+    detail: "The Software Factory Lab is renamed Center for Studies, Development, and Innovation in Software (CEDIS), reflecting a broadened scope and the group's maturation."
 ---

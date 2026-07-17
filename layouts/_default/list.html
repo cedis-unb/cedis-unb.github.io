@@ -94,6 +94,30 @@
         </div>
     </section>
 
+    {{ if or $isAreasTerm $isAreasList }}
+    <section class="mx-auto max-w-screen-xl px-4 pt-8 md:px-6 lg:px-8">
+        <a href="{{ "/mapa/" | relLangURL }}" class="group flex flex-wrap items-center justify-between gap-4 rounded-[1.75rem] border border-primary-200/70 bg-[linear-gradient(120deg,_rgba(255,247,237,0.95),_rgba(255,255,255,0.85))] px-6 py-5 shadow-[0_16px_50px_rgba(197,39,47,0.08)] transition-transform hover:-translate-y-0.5 dark:border-primary-400/25 dark:bg-[linear-gradient(120deg,_rgba(76,29,29,0.35),_rgba(15,23,42,0.5))] md:px-8">
+            <div class="flex items-center gap-4">
+                <div class="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-2xl bg-primary-600 text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-6 w-6" aria-hidden="true">
+                        <circle cx="6" cy="6" r="2.5"></circle>
+                        <circle cx="18" cy="6" r="2.5"></circle>
+                        <circle cx="12" cy="18" r="2.5"></circle>
+                        <path stroke-linecap="round" d="M7.7 7.4l3.4 8.6M16.3 7.4l-3.4 8.6M8.5 6h7"></path>
+                    </svg>
+                </div>
+                <div>
+                    <div class="text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-primary-700 dark:text-primary-200">{{ i18n "ui_map_eyebrow" }}</div>
+                    <div class="mt-1 text-lg font-black tracking-tight text-gray-950 dark:text-white">{{ i18n "ui_areas_map_teaser" }}</div>
+                </div>
+            </div>
+            <span class="inline-flex items-center rounded-full border border-primary-300 bg-white px-4 py-2 text-sm font-semibold text-primary-700 transition-colors group-hover:border-primary-500 group-hover:bg-primary-50 dark:border-primary-400/40 dark:bg-white/[0.06] dark:text-primary-100">
+                {{ i18n "ui_areas_map_cta" }}<span class="ml-2" aria-hidden="true">&rarr;</span>
+            </span>
+        </a>
+    </section>
+    {{ end }}
+
     <section class="mx-auto max-w-screen-xl px-4 py-10 md:px-6 md:py-12 lg:px-8">
         {{ with .Content }}
         <div class="mb-12 rounded-[2rem] border border-black/5 bg-white/80 p-6 shadow-[0_20px_70px_rgba(15,23,42,0.08)] backdrop-blur dark:border-white/10 dark:bg-white/[0.04] md:p-8">

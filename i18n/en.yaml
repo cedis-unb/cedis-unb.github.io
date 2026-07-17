@@ -338,6 +338,8 @@ ui_map_connections: "connections in graph"
 ui_map_open: "Open page"
 ui_map_loading: "Loading…"
 ui_map_tip: "Tip: scroll to zoom, drag nodes to rearrange, click to focus."
+ui_areas_map_teaser: "See how areas connect to researchers and projects"
+ui_areas_map_cta: "Open map"
 
 # Trending themes (D4)
 ui_trending_eyebrow: "Trending themes"
