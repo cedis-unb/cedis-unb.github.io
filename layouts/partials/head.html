@@ -18,6 +18,32 @@
   gtag('config', 'G-ENMST48SB3');
 </script>
 {{ partial "meta" . }}
+{{- with index (where .AllTranslations "Language.Lang" "pt") 0 -}}
+<script>window.__cedisPtURL = {{ .RelPermalink | jsonify }};</script>
+{{- end }}
+<script>
+    // Language auto-detect: redirect BR users from EN pages to /pt/ equivalent.
+    // Respects explicit user choice (localStorage cedisLang), bots, and existing redirect state.
+    (function () {
+        try {
+            var path = location.pathname;
+            if (path.indexOf('/pt/') === 0) return;
+            var stored = null;
+            try { stored = localStorage.getItem('cedisLang'); } catch (e) {}
+            if (stored === 'en') return;
+            if (sessionStorage.getItem('cedisLangRedirected')) return;
+            var ua = (navigator.userAgent || '').toLowerCase();
+            if (/bot|crawl|spider|slurp|preview|facebookexternalhit|whatsapp/i.test(ua)) return;
+            var browserLang = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
+            var wantsPT = stored === 'pt' || browserLang.indexOf('pt') === 0;
+            if (!wantsPT) return;
+            var target = window.__cedisPtURL;
+            if (!target || target === path) return;
+            sessionStorage.setItem('cedisLangRedirected', '1');
+            location.replace(target);
+        } catch (e) { /* ignore */ }
+    })();
+</script>
 <script>
     // On page load or when changing themes, best to add inline in `head` to avoid FOUC
     if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
