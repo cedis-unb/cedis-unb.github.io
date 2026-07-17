@@ -101,6 +101,10 @@ languages:
           name: Projetos
           url: /projects/
           weight: 30
+        - identifier: oportunidades
+          name: Oportunidades
+          url: /oportunidades/
+          weight: 35
         - identifier: dropdown
           pre: complexdropdown
           name: Produções
@@ -112,47 +116,23 @@ languages:
           post: "Pesquisa, desenvolvimento e capacitação"
           url: /categories/knowledge_areas/
           weight: 10
-        - identifier: infra
-          pre: infrastructure
-          name: Infraestrutura
-          post: "Equipamentos e instalações"
-          url: /infra/
-          weight: 20
         - identifier: historia
           pre: piechart
           name: História
           post: "Nossa trajetória e conquistas"
           url: /history/
-          weight: 30
-        - identifier: mapa
-          pre: stars
-          name: Mapa de conhecimento
-          post: "Grafo interativo de áreas, pesquisadores e projetos"
-          url: /mapa/
-          weight: 32
+          weight: 20
         - identifier: parceiros
           pre: people
-          name: Parceiros
-          post: "Instituições e laboratórios com quem trabalhamos"
+          name: Parceiros e reconhecimentos
+          post: "Instituições, laboratórios, prêmios e marcos"
           url: /parceiros/
-          weight: 33
-        - identifier: reconhecimentos
-          pre: stars
-          name: Reconhecimentos
-          post: "Prêmios, menções e marcos institucionais"
-          url: /reconhecimentos/
-          weight: 34
-        - identifier: oportunity
-          pre: comments
-          name: Oportunidades
-          post: "Editais, bolsas e chamadas"
-          url: /oportunidades/
-          weight: 35
-        - identifier: intranet
-          pre: intranet
-          name: Intranet
-          url: https://unbbr.sharepoint.com/sites/CEDIS
-          post: "Acesso restrito"
+          weight: 30
+        - identifier: infra
+          pre: infrastructure
+          name: Infraestrutura
+          post: "Equipamentos e instalações"
+          url: /infra/
           weight: 40
       equipe:
         - identifier: pesquisadores
@@ -217,10 +197,6 @@ languages:
 #          url: "#"
 #          weight: 40
       footer:
-#        - identifier: about
-#          name: About
-#          url: /about/
-#          weight: 10
         - identifier: news
           name: Mais notícias
           url: /categories/news/
@@ -229,6 +205,10 @@ languages:
           name: Contato
           url: /contact/
           weight: 50
+        - identifier: intranet
+          name: Intranet (membros)
+          url: https://unbbr.sharepoint.com/sites/CEDIS
+          weight: 90
 
   en:
   # ENGLISH
@@ -323,6 +303,10 @@ languages:
           name: Projects
           url: /projects/
           weight: 30
+        - identifier: oportunidades
+          name: Opportunities
+          url: /oportunidades/
+          weight: 35
         - identifier: dropdown
           pre: complexdropdown
           name: Productions
@@ -334,47 +318,23 @@ languages:
           post: "Research, development, and training"
           url: /categories/knowledge_areas/
           weight: 10
-        - identifier: infra
-          pre: infrastructure
-          name: Infrastructure
-          post: "Equipment and facilities"
-          url: /infra/
-          weight: 20
         - identifier: historia
           pre: piechart
           name: History
           post: "Our journey and achievements"
           url: /history/
-          weight: 30
-        - identifier: mapa
-          pre: stars
-          name: Knowledge map
-          post: "Interactive graph of areas, researchers, and projects"
-          url: /map/
-          weight: 32
+          weight: 20
         - identifier: parceiros
           pre: people
-          name: Partners
-          post: "Institutions and labs we work with"
+          name: Partners & recognitions
+          post: "Institutions, labs, awards, and milestones"
           url: /partners/
-          weight: 33
-        - identifier: reconhecimentos
-          pre: stars
-          name: Recognitions
-          post: "Awards, mentions, and institutional milestones"
-          url: /recognitions/
-          weight: 34
-        - identifier: oportunity
-          pre: comments
-          name: Opportunities
-          post: "Calls, grants, and openings"
-          url: /oportunidades/
-          weight: 35
-        - identifier: intranet
-          pre: intranet
-          name: Intranet
-          url: https://unbbr.sharepoint.com/sites/CEDIS
-          post: "Restricted access"
+          weight: 30
+        - identifier: infra
+          pre: infrastructure
+          name: Infrastructure
+          post: "Equipment and facilities"
+          url: /infra/
           weight: 40
       equipe:
         - identifier: pesquisadores
@@ -439,10 +399,6 @@ languages:
 #          url: "#"
 #          weight: 40
       footer:
-#        - identifier: about
-#          name: About
-#          url: /about/
-#          weight: 10
         - identifier: news
           name: More News
           url: /categories/news/
@@ -451,6 +407,10 @@ languages:
           name: Contact
           url: /contact/
           weight: 50
+        - identifier: intranet
+          name: Intranet (members)
+          url: https://unbbr.sharepoint.com/sites/CEDIS
+          weight: 90
 
 
 enableEmoji: false
