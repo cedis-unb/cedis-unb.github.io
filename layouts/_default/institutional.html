@@ -68,7 +68,7 @@
           {{ with resources.Get $featuredPath }}
           {{ $image := .Fit "1200x1200 webp q88" }}
           <div class="flex min-h-[18rem] items-center justify-center overflow-hidden rounded-[1.5rem] bg-[linear-gradient(180deg,_rgba(15,23,42,0.32),_rgba(15,23,42,0.08))] p-4 md:min-h-[23rem] md:p-6">
-            <img src="{{ $image.RelPermalink }}" alt="{{ $.Title }}" class="max-h-full w-auto max-w-full object-contain" loading="eager">
+            <img src="{{ $image.RelPermalink }}" alt="" class="max-h-full w-auto max-w-full object-contain" loading="eager">
           </div>
           {{ end }}
           {{ else }}
@@ -122,7 +122,7 @@
           <ul class="m-0 grid list-none gap-2 p-0">
             {{ range $sectionEntries }}
             <li class="m-0 p-0">
-              <a href="#{{ .anchor }}" class="block rounded-xl border border-black/5 bg-stone-50 px-4 py-3 text-sm font-semibold text-gray-700 transition-colors hover:border-primary-400 hover:bg-primary-50 hover:text-primary-700 dark:border-white/10 dark:bg-white/[0.03] dark:text-white/78 dark:hover:border-primary-300 dark:hover:bg-primary-500/10 dark:hover:text-primary-100">
+              <a href="#{{ .anchor }}" class="block rounded-xl border border-black/5 bg-stone-50 px-4 py-3 text-sm font-semibold text-gray-700 transition-colors hover:border-primary-400 hover:bg-primary-50 hover:text-primary-700 dark:border-white/10 dark:bg-white/[0.04] dark:text-white/78 dark:hover:border-primary-300 dark:hover:bg-primary-500/10 dark:hover:text-primary-100">
                 {{ .label }}
               </a>
             </li>

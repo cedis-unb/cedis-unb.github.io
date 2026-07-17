@@ -224,7 +224,7 @@
             src="{{ $featuredXLarge }}"
             srcset="{{ $featuredSmall }} 640w, {{ $featuredMedium }} 960w, {{ $featuredLarge }} 1280w, {{ $featuredXLarge }} 1680w"
             sizes="(min-width: 1024px) 42vw, 100vw"
-            alt="{{ .Title }}"
+            alt="{{ printf "%s: %s" (i18n "ui_alt_area_visual") .Title }}"
             class="aspect-[16/10] w-full rounded-[1.35rem] border border-slate-200/80 bg-white object-contain p-3 shadow-sm dark:border-white/10 dark:bg-slate-950/40"
           >
           {{ else }}
