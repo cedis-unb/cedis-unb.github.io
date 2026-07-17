@@ -1,5 +1,15 @@
 {{- $pageTitle := partial "translated-label.html" (dict "page" . "value" .Title) -}}
-{{- $description := .Description | default .Site.Params.description -}}
+{{- /* Description fallback chain: page description → frontmatter summary → auto-generated summary → site default. Truncated to 160 chars for SEO. */ -}}
+{{- $description := "" -}}
+{{- with .Params.description -}}{{- $description = . -}}{{- end -}}
+{{- if not $description -}}{{- with .Params.summary -}}{{- $description = . -}}{{- end -}}{{- end -}}
+{{- if not $description -}}{{- with .Summary -}}{{- $description = . | plainify -}}{{- end -}}{{- end -}}
+{{- if not $description -}}{{- $description = .Site.Params.description -}}{{- end -}}
+{{- $description = $description | plainify | strings.TrimSpace -}}
+{{- $description = replaceRE `\s+` " " $description -}}
+{{- if gt (len $description) 160 -}}
+    {{- $description = printf "%s…" (strings.TrimRight " ,;:" (substr $description 0 159)) -}}
+{{- end -}}
 {{- $ogLocale := cond (eq .Site.Language.Lang "pt") "pt_BR" "en_US" -}}
 {{- $ogImage := .Site.Params.og_image | relURL -}}
 {{- $ogImageAbs := .Site.Params.og_image | absURL -}}
