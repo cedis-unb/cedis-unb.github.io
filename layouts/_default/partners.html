@@ -75,5 +75,74 @@
     </div>
   </section>
   {{ end }}
+
+  {{ $awards := .Params.awards }}
+  {{ if gt (len $awards) 0 }}
+  {{ $awardsHeading := .Params.awards_heading | default (i18n "ui_awards_eyebrow") }}
+  {{ $awardsLead := .Params.awards_lead | default (i18n "ui_awards_lead") }}
+  {{ $years := slice }}
+  {{ $yearsSeen := dict }}
+  {{ range $awards }}
+    {{ $y := printf "%v" .year }}
+    {{ if not (index $yearsSeen $y) }}
+      {{ $yearsSeen = merge $yearsSeen (dict $y true) }}
+      {{ $years = $years | append $y }}
+    {{ end }}
+  {{ end }}
+  {{ $years = sort $years "value" "desc" }}
+
+  <section id="reconhecimentos" class="mx-auto max-w-screen-xl px-4 pb-14 md:px-6 lg:px-8">
+    <div class="rounded-[2rem] border border-amber-200/70 bg-[linear-gradient(180deg,_rgba(255,251,235,0.9),_rgba(255,255,255,0.9))] p-6 shadow-[0_18px_60px_rgba(217,119,6,0.08)] dark:border-amber-500/25 dark:bg-[linear-gradient(180deg,_rgba(120,53,15,0.24),_rgba(15,23,42,0.5))] md:p-8">
+      <div class="flex flex-wrap items-end justify-between gap-4">
+        <div class="max-w-2xl">
+          <span class="inline-flex rounded-full border border-amber-300/60 bg-amber-100/70 px-3 py-1 text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-amber-800 dark:border-amber-500/30 dark:bg-amber-500/10 dark:text-amber-200">{{ i18n "ui_awards_eyebrow" }}</span>
+          <h2 class="mt-3 text-2xl font-black tracking-tight text-gray-950 dark:text-white md:text-3xl">{{ $awardsHeading }}</h2>
+          <p class="mt-3 text-base leading-7 text-gray-700 dark:text-white/78">{{ $awardsLead }}</p>
+        </div>
+        <div class="flex flex-wrap gap-2">
+          {{ range $years }}
+          <a href="#award-{{ . }}" class="inline-flex rounded-full border border-amber-300/60 bg-white/90 px-3 py-1 text-xs font-semibold text-amber-800 transition-colors hover:border-amber-500 hover:text-amber-900 dark:border-amber-500/30 dark:bg-white/[0.06] dark:text-amber-200">{{ . }}</a>
+          {{ end }}
+        </div>
+      </div>
+
+      <div class="mt-6 space-y-6">
+        {{ range $year := $years }}
+        <section id="award-{{ $year }}" class="scroll-mt-24">
+          <div class="mb-3 flex items-center gap-3">
+            <h3 class="text-lg font-black tracking-tight text-gray-950 dark:text-white">{{ $year }}</h3>
+            <div class="h-px flex-1 bg-amber-200 dark:bg-amber-500/25"></div>
+          </div>
+          <ul class="m-0 list-none space-y-3 p-0">
+            {{ range where $awards "year" (int $year) }}
+            <li class="rounded-[1.25rem] border border-black/5 bg-white/95 p-5 shadow-[0_10px_35px_rgba(15,23,42,0.06)] dark:border-white/10 dark:bg-white/[0.04]">
+              <div class="flex flex-wrap items-start justify-between gap-3">
+                <div class="min-w-0">
+                  <div class="text-base font-black tracking-tight text-gray-950 dark:text-white">{{ .title }}</div>
+                  {{ if .recipients }}
+                  <p class="mt-1 text-sm text-gray-500 dark:text-white/60">{{ delimit .recipients " · " }}</p>
+                  {{ end }}
+                </div>
+                {{ if .kind }}
+                <span class="inline-flex rounded-full border border-amber-200 bg-amber-50 px-3 py-1 text-xs font-semibold text-amber-800 dark:border-amber-500/30 dark:bg-amber-500/10 dark:text-amber-200">{{ i18n (printf "ui_awards_kind_%s" .kind) | default .kind }}</span>
+                {{ end }}
+              </div>
+              {{ if .detail }}
+              <p class="mt-3 text-sm leading-6 text-gray-700 dark:text-white/78">{{ .detail }}</p>
+              {{ end }}
+              {{ if .linked_project }}
+              <a href="{{ printf "/tags/%s" (.linked_project | urlize) | relLangURL }}" class="mt-3 inline-flex items-center text-xs font-semibold text-primary-700 hover:text-primary-600 dark:text-primary-200 dark:hover:text-primary-100">
+                {{ i18n "ui_awards_see_project" }}<span class="ml-2" aria-hidden="true">&rarr;</span>
+              </a>
+              {{ end }}
+            </li>
+            {{ end }}
+          </ul>
+        </section>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  {{ end }}
 </main>
 {{ end }}

@@ -1,12 +1,14 @@
 ---
 author: CEDIS
-title: "Parceiros"
+title: "Parceiros e reconhecimentos"
 date: 2024-02-13T23:13:19-03:00
 draft: false
 language: pt
 layout: partners
-description: "Instituições e laboratórios com quem o CEDIS trabalha. Cada parceria virou projeto, produto ou publicação concreta."
-eyebrow: "Rede de colaboração"
+aliases:
+  - /reconhecimentos/
+description: "Instituições e laboratórios com quem o CEDIS trabalha, prêmios recebidos e marcos institucionais."
+eyebrow: "Rede de colaboração e conquistas"
 partners:
   - id: ibict
     name: "IBICT"
@@ -85,4 +87,37 @@ partners:
       - "Mobilidade acadêmica bidirecional"
       - "Presença do CEDIS em conferências europeias"
     url: "https://www.uevora.pt/investigar/unidades-id/vista-lab"
+
+awards_heading: "Prêmios e marcos institucionais"
+awards_lead: "Reconhecimentos, prêmios em conferência, menções e marcos que o CEDIS acumulou ao longo dos anos."
+awards:
+  - year: 2024
+    title: "Melhor artigo — ICCSA 2024 (Vietnã)"
+    kind: "conference_award"
+    recipients:
+      - "Projeto Canal Ciência"
+    detail: "Artigo sobre o portal Canal Ciência recebe prêmio na 24ª International Conference on Computational Science and Its Applications, realizada em Hanoi."
+    linked_project: "project_cc"
+
+  - year: 2024
+    title: "Bolsista apresenta na ICCSA 2024"
+    kind: "milestone"
+    recipients:
+      - "Bolsista CEDIS"
+    detail: "Primeira apresentação internacional de um(a) bolsista do CEDIS em conferência da ICCSA, marcando a expansão da presença do grupo em fóruns europeu-asiáticos."
+
+  - year: 2020
+    title: "Lançamento do Software para o Bem — 20ª Semana Universitária UnB"
+    kind: "milestone"
+    recipients:
+      - "Programa Software para o Bem"
+    detail: "O programa de extensão SpB é lançado durante a Semana Universitária. Passa a receber demandas concretas da sociedade e a organizar equipes de alunos ao redor delas."
+    linked_project: "project_software_bem"
+
+  - year: 2019
+    title: "Renomeação como CEDIS"
+    kind: "milestone"
+    recipients:
+      - "Grupo institucional"
+    detail: "O Laboratório Fábrica de Software passa a se chamar Centro de Estudos, Desenvolvimento e Inovação em Software (CEDIS), refletindo a ampliação de atuação e o amadurecimento do grupo."
 ---
