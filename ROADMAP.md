@@ -60,8 +60,8 @@ Após o ciclo de correções técnicas de 2026-07, o site do CEDIS está com bas
 - [ ] **A3** — "Um dia no lab" — post-vídeo mensal mostrando rotina de um pesquisador ou orientando. Baixa produção, alta autenticidade.
   <!-- > Nota: -->
 
-- [ ] **A4** — "Onde estão nossos ex-alunos" — página com 15–20 cards de alumni: onde trabalham hoje, o que fazem, breve depoimento.
-  <!-- > Nota: -->
+- [x] **A4** — "Onde estão nossos ex-alunos" — página com 15–20 cards de alumni: onde trabalham hoje, o que fazem, breve depoimento.
+  > Nota (2026-07-17): página `/alumni/` (PT) e `/alumni/` (EN) criada com layout `alumni.html` e schema completo de frontmatter (name, program, year_end, advisor, current_role, current_org, location, linkedin, story, tags). Estado inicial vazio com CTA "Quero aparecer" chamando o formulário de contato. Basta o Sergio popular a lista `alumni:` no frontmatter conforme coleta os depoimentos.
 
 - [x] **A5** — Reescrever `about.md` (ou seção equivalente) com voz humana. Substituir "Somos um centro que promove excelência…" por "Desde 2013 estudamos como o software é feito, como as pessoas o fazem, e como ensinar isso melhor. Somos 7 professores, ~40 orientandos e 12 anos de história".
   > Nota (2026-07-17): `hugo.yaml` params `p1.content` (PT e EN) já reescritos com a voz humana ("Desde 2013 estudamos como o software é feito — e como as pessoas o fazem. Somos 7 pesquisadores, dezenas de orientandos..."). Renderiza em `layouts/index.html` na seção mission. Não existe `about.md` isolado — conteúdo vive nos params do site.
@@ -70,14 +70,14 @@ Após o ciclo de correções técnicas de 2026-07, o site do CEDIS está com bas
 ### Eixo B — Prova social e sinais de confiança
 > Ativa personas: 3, 4, 5
 
-- [ ] **B1** — Página de parceiros com **histórias**, não só logos. "Com o MCTI construímos o sistema X que hoje atende Y".
-  <!-- > Nota: -->
+- [x] **B1** — Página de parceiros com **histórias**, não só logos. "Com o MCTI construímos o sistema X que hoje atende Y".
+  > Nota (2026-07-17): `content/parceiros.pt.md` e `.en.md` reescritos com schema `partners:` estruturado (name, full_name, logo, since, story, outcomes, url). Layout `partners.html` renderiza cards com logo + 2-3 frases de história + bullets de resultados concretos. 6 parceiros: IBICT, A3M, FAP-DF, Finatec, Canal Ciência, VISTA Lab. Também corrigido erro no texto antigo que dizia "Centro de Estudos em Direito e Sociedade". EN publicada em `/partners/`.
 
 - [ ] **B2** — Depoimentos em vídeo (30–60s) de 3–5 parceiros externos, alumni ou orientandos.
   <!-- > Nota: -->
 
-- [ ] **B3** — "Reconhecimentos" — página agregando prêmios recebidos, menções honrosas, editais aprovados (hoje dispersos nos perfis).
-  <!-- > Nota: -->
+- [x] **B3** — "Reconhecimentos" — página agregando prêmios recebidos, menções honrosas, editais aprovados (hoje dispersos nos perfis).
+  > Nota (2026-07-17): página `/reconhecimentos/` (PT) e `/recognitions/` (EN) com layout `awards.html`. Schema por item (year, title, kind, recipients, detail, linked_project). 5 tipos suportados via i18n: conference_award, grant, milestone, media_mention, thesis_award. Ordena por ano decrescente e agrupa. Sidebar com nav "Ir para o ano". 4 marcos iniciais registrados (ICCSA 2024, SpB 2020, renomeação 2019); expansível.
 
 - [x] **B4** — Números de impacto visíveis na home: "311 publicações • 8 produtos registrados • 12 anos de história". Contadores animados, atualizados via `data/`.
   > Nota (2026-07-17): seção "CEDIS em números" ativa em `layouts/index.html:126-183` com 5 cards (anos, pesquisadores, publicações, produtos, orientações) atualizados via `hugo.Data.productions.items`, `hugo.Data.people.people` e contagem de páginas. Contadores estáticos (não animados) — animação pode ser upgrade futuro.
@@ -133,8 +133,8 @@ Após o ciclo de correções técnicas de 2026-07, o site do CEDIS está com bas
 - [ ] **E2** — Formulário de contato multi-caminho — escolher tipo (orientação, parceria, imprensa, extensão), formulário adapta campos e destinatário.
   <!-- > Nota: -->
 
-- [ ] **E3** — Página `/junte-se/` (Join us) — landing para todas as portas de entrada (IC, TCC, Mestrado, Doutorado, Extensão, Voluntário). Cada rota com passos claros e datas.
-  <!-- > Nota: -->
+- [x] **E3** — Página `/junte-se/` (Join us) — landing para todas as portas de entrada (IC, TCC, Mestrado, Doutorado, Extensão, Voluntário). Cada rota com passos claros e datas.
+  > Nota (2026-07-17): página `/junte-se/` (PT) e `/join/` (EN) com layout `join.html`. 6 trilhas (IC, TCC-ES, Mestrado PPCA, Doutorado PPCA, Extensão, Voluntário CEDIS), cada uma com audience, duration, 3-4 steps numerados e CTAs primário/secundário. Card "Não sabe por onde começar" no rodapé chama /contact/. i18n `ui_join_*` completo. Adicionada ao menu People/Equipe entre Colaboradores e Alumni.
 
 - [x] **E4** — Botões "Copiar email" e "Ver Lattes" nos perfis, além do link visual.
   > Nota (2026-07-17): card "Contato" no sidebar do perfil (`layouts/people/single.html`) exibe email + botão Copiar (Alpine.js `navigator.clipboard`), link Lattes e link ORCID. Dados vêm de `hugo.Data.advisors.advisors[$personKey]`. Cada item condicional — Fabiana só aparece Lattes; Cristiane não aparece nada porque campos vazios.
@@ -213,10 +213,10 @@ Meta: reforçar percepção de vitalidade + rosto humano com esforço baixo.
 
 ### Sprint 2 (mês 2) — Conversão e prova social
 Meta: transformar visitas em contatos e reforçar credibilidade.
-- [ ] E3 — página /junte-se/
-- [ ] B1 — parceiros com histórias
-- [ ] B3 — página de reconhecimentos
-- [ ] A4 — alumni (coleta inicial, 5–10 nomes)
+- [x] E3 — página /junte-se/
+- [x] B1 — parceiros com histórias
+- [x] B3 — página de reconhecimentos
+- [x] A4 — alumni (estrutura pronta, coleta inicial pendente)
 
 ### Sprint 3 (mês 3) — Descoberta e retenção
 Meta: criar rotina editorial e amplificar alcance.
@@ -255,6 +255,7 @@ Evitar:
 | 2026-07-17 | Sergio Freitas + assistente | Criação inicial pós-ciclo técnico. Marcados C5 e F2 como concluídos (implementados no ciclo). |
 | 2026-07-17 | Sergio Freitas + assistente | Sprint 1 concluído: A1 (métricas na página de história), A5 (voz humana no p1), B4 (números na home), E1 (CTA final nos perfis de pesquisador), E4 (card contato com Copiar email + Lattes + ORCID). Link "Cursos e treinamentos" atualizado para `https://slides.cedis.tec.br/programas-de-formacao`. Novos i18n `people_cta_*`, `people_lattes`, `ui_copy_email*` em pt/en. |
 | 2026-07-17 | Sergio Freitas + assistente | Eixo D em massa: D5 (filtro Alpine.js em /publications/), D2 (timeline interativa com colapso por ano), D4 (nuvem "Temas em alta" na home, top 20 tags dos últimos 4 anos), D1 (grafo D3.js em nova página /mapa/ conectando áreas ↔ pesquisadores ↔ projetos, com drag/zoom/filter/sidebar). Menu de navegação ganha "Mapa de conhecimento" sob About/CEDIS. |
+| 2026-07-17 | Sergio Freitas + assistente | Sprint 2 concluído: E3 (`/junte-se/` com 6 trilhas), B1 (parceiros com histórias — 6 parceiros com outcomes concretos e correção do texto genérico anterior), B3 (`/reconhecimentos/` com 4 marcos e schema expansível), A4 (`/alumni/` com layout pronto e estado vazio + CTA "Quero aparecer"). Menu ganha Junte-se e Alumni em People/Equipe e Parceiros/Reconhecimentos em About/CEDIS. |
 
 <!-- Modelo de nova entrada:
 | YYYY-MM-DD | Nome | Descrição breve da mudança |

@@ -130,6 +130,18 @@ languages:
           post: "Grafo interativo de áreas, pesquisadores e projetos"
           url: /mapa/
           weight: 32
+        - identifier: parceiros
+          pre: people
+          name: Parceiros
+          post: "Instituições e laboratórios com quem trabalhamos"
+          url: /parceiros/
+          weight: 33
+        - identifier: reconhecimentos
+          pre: stars
+          name: Reconhecimentos
+          post: "Prêmios, menções e marcos institucionais"
+          url: /reconhecimentos/
+          weight: 34
         - identifier: oportunity
           pre: comments
           name: Oportunidades
@@ -155,6 +167,18 @@ languages:
           url: /people/all/
           post: "Equipe de pesquisa"
           weight: 20
+        - identifier: junte-se
+          pre: comments
+          name: Junte-se ao CEDIS
+          url: /junte-se/
+          post: "Trilhas: IC, TCC, Mestrado, Doutorado, Extensão, Voluntário"
+          weight: 30
+        - identifier: alumni
+          pre: people
+          name: Alumni
+          url: /alumni/
+          post: "Onde estão nossos ex-alunos"
+          weight: 40
       dropdown:
         - identifier: publications
           pre: publications # can be stars, comments or piechart
@@ -328,6 +352,18 @@ languages:
           post: "Interactive graph of areas, researchers, and projects"
           url: /map/
           weight: 32
+        - identifier: parceiros
+          pre: people
+          name: Partners
+          post: "Institutions and labs we work with"
+          url: /partners/
+          weight: 33
+        - identifier: reconhecimentos
+          pre: stars
+          name: Recognitions
+          post: "Awards, mentions, and institutional milestones"
+          url: /recognitions/
+          weight: 34
         - identifier: oportunity
           pre: comments
           name: Opportunities
@@ -353,6 +389,18 @@ languages:
           url: /people/all/
           post: "Research Team"
           weight: 20
+        - identifier: junte-se
+          pre: comments
+          name: Join CEDIS
+          url: /join/
+          post: "Paths: Undergrad, Thesis, Master's, PhD, Outreach, Volunteer"
+          weight: 30
+        - identifier: alumni
+          pre: people
+          name: Alumni
+          url: /alumni/
+          post: "Where our alumni are now"
+          weight: 40
       dropdown:
         - identifier: publications
           pre: publications # can be stars, comments or piechart
