@@ -94,7 +94,7 @@ languages:
         - identifier: equipe
           pre: complexdropdown
           name: Pessoas
-          url: /pessoal/
+          url: /people/
           weight: 20
         - identifier: projetos
           name: Projetos
@@ -294,7 +294,7 @@ languages:
         - identifier: equipe
           pre: complexdropdown
           name: People
-          url: /staff/
+          url: /people/
           weight: 20
         - identifier: projetos
           name: Projects
