@@ -166,34 +166,29 @@
       <div class="rounded-[2rem] border border-black/5 bg-white/85 px-6 py-8 shadow-[0_20px_70px_rgba(15,23,42,0.08)] backdrop-blur dark:border-white/10 dark:bg-white/[0.04] md:px-8 md:py-10"
            x-data="{
              filters: { year: '', type: '', topic: '' },
-             visibleCount: 0,
-             init() { this.$nextTick(() => this.applyFilters()); },
+             visibleCount: {{ $publicationCount }},
              clear() { this.filters.year=''; this.filters.type=''; this.filters.topic=''; },
              applyFilters() {
-               this.visibleCount = this.$root.querySelectorAll('[data-pub-item]:not([style*=&quot;display: none&quot;])').length;
-               const items = Array.from(this.$root.querySelectorAll('[data-pub-item]'));
+               const items = this.$root.querySelectorAll('[data-pub-item]');
                const visibleByYear = {};
+               let total = 0;
                items.forEach(el => {
-                 const visible = el.offsetParent !== null || el.style.display !== 'none';
                  const y = el.dataset.pubYear;
                  if (!(y in visibleByYear)) visibleByYear[y] = 0;
-                 if (visible) visibleByYear[y]++;
+                 if (el.style.display !== 'none') { visibleByYear[y]++; total++; }
                });
+               this.visibleCount = total;
+               const anyFilter = this.filters.year !== '' || this.filters.type !== '' || this.filters.topic !== '';
                this.$root.querySelectorAll('#publications-content h2').forEach(h => {
                  const year = h.textContent.trim();
-                 if (this.filters.year !== '' && visibleByYear[year] !== undefined && visibleByYear[year] === 0) {
-                   h.style.display = 'none';
-                   const next = h.nextElementSibling;
-                   if (next && next.tagName === 'OL') next.style.display = 'none';
-                 } else {
-                   h.style.display = '';
-                   const next = h.nextElementSibling;
-                   if (next && next.tagName === 'OL') next.style.display = '';
-                 }
+                 const shouldHide = anyFilter && year in visibleByYear && visibleByYear[year] === 0;
+                 h.style.display = shouldHide ? 'none' : '';
+                 const next = h.nextElementSibling;
+                 if (next && next.tagName === 'OL') next.style.display = shouldHide ? 'none' : '';
                });
              }
            }"
-           x-effect="filters.year, filters.type, filters.topic; $nextTick(() => applyFilters())">
+           x-effect="filters.year; filters.type; filters.topic; $nextTick(() => applyFilters())">
         <div class="mb-8 rounded-[1.5rem] border border-black/5 bg-stone-50 p-5 dark:border-white/10 dark:bg-white/[0.04]">
           <div class="flex flex-wrap items-end gap-4">
             <div class="min-w-0 flex-1">
