@@ -34,7 +34,7 @@ nav_next: true
 - Complementary training in software quality, metrics and measurement, MPS.Br, CMMI, scientific methodology, distance education, neuroscience in teaching, and active learning strategies.
 
 ## {{< i18n "people_professional_activities" >}}
-- Professor at UnB/FGA since 2010, working in teaching, research, and extension within the Software Engineering program.
+- Professor at UnB/FCTE since 2010, working in teaching, research, and extension within the Software Engineering program.
 - She has taught courses such as Introduction to Computer Science, Introduction to Engineering, Measurement and Analysis, Software Quality, Special Topics in Software Engineering, Software Verification and Validation, and Software Requirements.
 - Her research work covers software quality, digital government, software engineering education, and gamification, including activities within CEDIS and institutional initiatives such as the Learning for the Third Millennium Program.
 - Previous experience includes software process improvement and quality work at Politec and LinkNet, as well as graduate teaching at UCB, IESB, and UniCESP.
@@ -96,7 +96,7 @@ nav_next: true
 ## {{< i18n "people_contact" >}}
 - {{< i18n "people_contact_professional" >}}: University of Brasília, Gama Campus, Area Especial 2 Lote 14, Setor Central, Gama, Brasília - DF, Brazil.
 - Phone: (61) 3484-3443
-- Homepage: [FGA/UnB](https://www.fga.unb.br)
+- Homepage: [FCTE/UnB](https://fcte.unb.br/)
 - Lattes iD: [CV Lattes](http://lattes.cnpq.br/9950213660160161)
 - Orcid ID: [Orcid Profile](https://orcid.org/0000-0002-6235-5590)
 

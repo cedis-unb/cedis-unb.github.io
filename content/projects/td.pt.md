@@ -16,7 +16,7 @@ tags:
 - project_td
 ---
 
-O projeto de Transformação Digital de Serviços Públicos do Governo Federal Brasileiro envolve pesquisa, desenvolvimento e inovação em metodologias, modelos e ferramentas que promovam a automação e digitização de serviços públicos oferecidos pelo Ministério da Economia (ME), pela Secretaria Especial de Desburocratização, Gestão e Governo Digital (especificamente pela Secretaria de Governo Digital (SGD), visando a transformação dos serviços públicos federais. O projeto foi firmado entre UnB ([Laboratório ITRAC](https://itrac.unb.br) da Faculdade do Gama) e o ME.
+O projeto de Transformação Digital de Serviços Públicos do Governo Federal Brasileiro envolve pesquisa, desenvolvimento e inovação em metodologias, modelos e ferramentas que promovam a automação e digitização de serviços públicos oferecidos pelo Ministério da Economia (ME), pela Secretaria Especial de Desburocratização, Gestão e Governo Digital (especificamente pela Secretaria de Governo Digital (SGD), visando a transformação dos serviços públicos federais. O projeto foi firmado entre UnB ([Laboratório ITRAC](https://itrac.unb.br) da Faculdade de Ciências e Tecnologias em Engenharia — FCTE) e o ME.
 
 Integrantes do CEDIS:
 

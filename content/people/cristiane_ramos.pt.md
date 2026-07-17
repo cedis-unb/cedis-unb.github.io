@@ -34,7 +34,7 @@ nav_next: true
 - Formação complementar em qualidade de software, métricas e medição, MPS.Br, CMMI, metodologia científica, educação a distância, neurociência na docência e estratégias de aprendizagem ativa.
 
 ## {{< i18n "people_professional_activities" >}}
-- Professora na UnB/FGA desde 2010, com atuação em ensino, pesquisa e extensão no curso de Engenharia de Software.
+- Professora na UnB/FCTE desde 2010, com atuação em ensino, pesquisa e extensão no curso de Engenharia de Software.
 - Ministrou disciplinas como Introdução à Ciência da Computação, Introdução às Engenharias, Medição e Análise, Qualidade de Software, Tópicos Especiais em Engenharia de Software, Verificação e Validação de Software e Requisitos de Software.
 - Desenvolve pesquisas em qualidade de software, governo digital, educação em engenharia de software e gamificação, com atuação no CEDIS e em iniciativas institucionais como o Programa Aprendizagem para o Terceiro Milênio.
 - Experiência anterior em melhoria de processos e qualidade de software na Politec e na LinkNet, além de docência em pós-graduação na UCB, no IESB e no UniCESP.
@@ -96,7 +96,7 @@ nav_next: true
 ## {{< i18n "people_contact" >}}
 - {{< i18n "people_contact_professional" >}}: Universidade de Brasília, Campus Gama, Área Especial 2 Lote 14, Setor Central, Gama, Brasília - DF, Brasil.
 - Telefone: (61) 3484-3443
-- Homepage: [FGA/UnB](https://www.fga.unb.br)
+- Homepage: [FCTE/UnB](https://fcte.unb.br/)
 - Lattes iD: [CV Lattes](http://lattes.cnpq.br/9950213660160161)
 - Orcid ID: [Orcid Profile](https://orcid.org/0000-0002-6235-5590)
 
