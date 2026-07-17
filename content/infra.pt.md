@@ -10,7 +10,7 @@ eyebrow: "Espacos e recursos"
 ---
 O CEDIS conta com dois espaços para execução de sua atividade:
 
-## Conteiner 5
+## Contêiner 05
 
 - Sala para reuniões de até 10 pessoas, com mobiliário e equipamentos;
     

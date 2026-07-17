@@ -1,5 +1,5 @@
 ---
-title: "Gamificação do CEDIS revoluciona o ensino de Software na FGA"
+title: "Gamificação do CEDIS revoluciona o ensino de Software na FCTE"
 date: 2023-03-01T11:10:36+08:00
 draft: false
 weight: 500
@@ -21,7 +21,7 @@ Brasília, 1 de março de 2023
 
 **Gamificação inovadora do Prof. Sergio Freitas engaja estudantes de Engenharia de Software com uma abordagem lúdica e eficaz.** 
 
-A disciplina de Desenvolvimento de Software na Faculdade do Gama (FGA) da Universidade de Brasília (UnB) está causando um verdadeiro alvoroço com sua abordagem inovadora de ensino, graças à introdução da gamificação "Alvorecer Feudal" pelo Prof. {{< link-interno "/people/sergio_freitas" "Sergio Freitas" >}}.
+A disciplina de Desenvolvimento de Software na Faculdade de Ciências e Tecnologias em Engenharia (FCTE) da Universidade de Brasília (UnB) está causando um verdadeiro alvoroço com sua abordagem inovadora de ensino, graças à introdução da gamificação "Alvorecer Feudal" pelo Prof. {{< link-interno "/people/sergio_freitas" "Sergio Freitas" >}}.
 
 Direcionada tanto para alunos da ABI Engenharias até o terceiro período quanto para estudantes de Engenharia de Software, a disciplina agora se destaca com uma metodologia de ensino pioneira e altamente eficaz. "Alvorecer Feudal" não é apenas um jogo; é uma transformação pedagógica que coloca o aluno no centro do processo de aprendizado, tornando-o mais envolvente e motivador.
 

@@ -34,7 +34,7 @@ nav_next: true
 - Formação complementar em medição e análise, análise de pontos de função, CMMI, MPS.Br, SCAMPI, gestão de projetos e melhoria de processos.
 
 ## {{< i18n "people_professional_activities" >}}
-- Professor na UnB/FGA desde 2011, ministrando disciplinas como Melhoria de Processo de Software, Técnicas de Medição Funcional e Estimativas de Software, Verificação e Validação de Software, Medição e Análise e Projeto Integrador entre Engenharias.
+- Professor na UnB/FCTE desde 2011, ministrando disciplinas como Melhoria de Processo de Software, Técnicas de Medição Funcional e Estimativas de Software, Verificação e Validação de Software, Medição e Análise e Projeto Integrador entre Engenharias.
 - Atua e pesquisou em temas ligados a métricas, estimativas, produtividade, melhoria de processos e qualidade de software, com experiência anterior em organizações como Politec, CTIS, TI Métricas, UCB, UniCEUB e IESB.
 - Participou de projetos de pesquisa e desenvolvimento envolvendo governo digital, transformação de serviços públicos e modelagem para gestão pública, incluindo iniciativas com o MCTIC (2012-2013), o Ministério do Planejamento (2017-2019) e a CONAB (2016-2017).
 
@@ -90,7 +90,7 @@ nav_next: true
 ## {{< i18n "people_contact" >}}
 - {{< i18n "people_contact_professional" >}}: Universidade de Brasília, Campus Gama, Área Especial de Indústria Projeção A, Prédio UED, Sala 21, Setor Leste (Gama), Brasília - DF, Brasil.
 - Telefone: (61) 3107-8901
-- Homepage: [FGA/UnB](https://www.fga.unb.br)
+- Homepage: [FCTE/UnB](https://fcte.unb.br/)
 - Lattes iD: [CV Lattes](http://lattes.cnpq.br/8309011123228244)
 
 {{< backToTopBtn target="top" >}}

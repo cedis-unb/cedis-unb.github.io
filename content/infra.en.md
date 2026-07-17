@@ -10,7 +10,7 @@ eyebrow: "Facilities and resources"
 ---
 CEDIS has two spaces for conducting its activities:
 
-## Container 5
+## Container 05
 
 - A meeting room for up to 10 people, furnished and equipped;
 
