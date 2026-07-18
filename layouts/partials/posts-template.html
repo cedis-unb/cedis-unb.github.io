@@ -5,6 +5,11 @@
 {{ $itemsLabel := i18n "ui_items" }}
 {{ $termSummary := i18n "ui_explore_the_pages_grouped_under" }}
 {{ $defaultDateFormat := cond $isPt "02/01/2006" "02 Jan 2006" }}
+{{ $termKey := "" }}
+{{ with .Data.Term }}
+    {{ $termKey = lower . }}
+{{ end }}
+{{ $isResearchersTerm := and (eq .Kind "term") (eq .Data.Plural "categories") (eq $termKey "researcher") }}
 
 <div class="not-prose">
     {{ if $isTaxonomy }}
@@ -43,7 +48,7 @@
         {{ end }}
     </div>
     {{ else }}
-    <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+    <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3"{{ if $isResearchersTerm }} data-randomize-researchers{{ end }}>
         {{ range .Paginator.Pages }}
         {{ $summary := .Params.summary | default (.Summary | plainify | htmlUnescape | strings.TrimSpace) }}
         {{ $cardTitle := .Title }}
@@ -62,7 +67,7 @@
         {{ if not .Date.IsZero }}
             {{ $formattedDate = .Date.Format $dateFormat }}
         {{ end }}
-        <article class="group flex h-full flex-col overflow-hidden rounded-[2rem] border border-black/5 bg-white text-gray-900 shadow-[0_18px_60px_rgba(15,23,42,0.08)] transition duration-300 ease-out hover:-translate-y-1 hover:shadow-[0_28px_90px_rgba(197,39,47,0.16)] dark:border-white/10 dark:bg-white/[0.04] dark:text-white">
+        <article class="group flex h-full flex-col overflow-hidden rounded-[2rem] border border-black/5 bg-white text-gray-900 shadow-[0_18px_60px_rgba(15,23,42,0.08)] transition duration-300 ease-out hover:-translate-y-1 hover:shadow-[0_28px_90px_rgba(197,39,47,0.16)] dark:border-white/10 dark:bg-white/[0.04] dark:text-white"{{ if $isResearchersTerm }} data-randomize-card{{ end }}>
             <a href="{{ .RelPermalink }}" class="block">
                 {{ with .Params.featured_image }}
                 {{ $featuredPath := replace . "../assets/" "" }}
@@ -121,5 +126,33 @@
         </article>
         {{ end }}
     </div>
+    {{ if $isResearchersTerm }}
+    <script>
+        (function () {
+            function shuffle(container) {
+                var cards = Array.prototype.slice.call(container.querySelectorAll("[data-randomize-card]"));
+                for (var i = cards.length - 1; i > 0; i--) {
+                    var j = Math.floor(Math.random() * (i + 1));
+                    var temp = cards[i];
+                    cards[i] = cards[j];
+                    cards[j] = temp;
+                }
+                cards.forEach(function (card) {
+                    container.appendChild(card);
+                });
+            }
+
+            function randomizeResearchers() {
+                document.querySelectorAll("[data-randomize-researchers]").forEach(shuffle);
+            }
+
+            if (document.readyState === "loading") {
+                document.addEventListener("DOMContentLoaded", randomizeResearchers, { once: true });
+            } else {
+                randomizeResearchers();
+            }
+        })();
+    </script>
+    {{ end }}
     {{ end }}
 </div>
