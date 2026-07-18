@@ -2639,6 +2639,11 @@ video {
   background-color: rgb(244 244 245 / var(--tw-bg-opacity, 1));
 }
 
+.bg-fuchsia-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(250 232 255 / var(--tw-bg-opacity, 1));
+}
+
 .bg-\[linear-gradient\(120deg\2c _rgba\(255\2c 247\2c 237\2c 0\.95\)\2c _rgba\(255\2c 255\2c 255\2c 0\.85\)\)\] {
   background-image: linear-gradient(120deg, rgba(255,247,237,0.95), rgba(255,255,255,0.85));
 }
@@ -3514,6 +3519,11 @@ video {
 .text-zinc-900 {
   --tw-text-opacity: 1;
   color: rgb(24 24 27 / var(--tw-text-opacity, 1));
+}
+
+.text-fuchsia-700 {
+  --tw-text-opacity: 1;
+  color: rgb(162 28 175 / var(--tw-text-opacity, 1));
 }
 
 .text-opacity-40 {
@@ -4797,6 +4807,10 @@ EmojiSymbols;
   background-color: rgb(255 255 255 / 0.06);
 }
 
+.dark\:bg-fuchsia-500\/15:is(.dark *) {
+  background-color: rgb(217 70 239 / 0.15);
+}
+
 .dark\:bg-\[linear-gradient\(120deg\2c _rgba\(76\2c 29\2c 29\2c 0\.35\)\2c _rgba\(15\2c 23\2c 42\2c 0\.5\)\)\]:is(.dark *) {
   background-image: linear-gradient(120deg, rgba(76,29,29,0.35), rgba(15,23,42,0.5));
 }
@@ -5034,6 +5048,11 @@ EmojiSymbols;
 
 .dark\:text-white\/80:is(.dark *) {
   color: rgb(255 255 255 / 0.8);
+}
+
+.dark\:text-fuchsia-200:is(.dark *) {
+  --tw-text-opacity: 1;
+  color: rgb(245 208 254 / var(--tw-text-opacity, 1));
 }
 
 .dark\:shadow-\[0_18px_48px_rgba\(0\2c 0\2c 0\2c 0\.22\)\]:is(.dark *) {

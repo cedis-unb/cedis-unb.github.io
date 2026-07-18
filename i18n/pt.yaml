@@ -395,6 +395,7 @@ pub_type_dissertation: "Dissertação"
 pub_type_specialization: "Especialização"
 pub_type_phd: "Tese"
 pub_type_tcc: "TCC"
+pub_type_registro: "Registro de programa"
 
 # Hero home — trilhas por persona
 ui_persona_study_label: "Quero pesquisar aqui"
@@ -420,6 +421,7 @@ ui_pulse_type_news: "Notícia"
 ui_pulse_type_publication: "Publicação"
 ui_pulse_type_defense: "Defesa"
 ui_pulse_type_product: "Produto"
+ui_pulse_type_registration: "Registro"
 ui_pulse_read_more: "Ler mais"
 
 # Perfil — contato e CTAs

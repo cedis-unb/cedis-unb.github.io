@@ -71,6 +71,7 @@
         {{ if gt $yr 0 }}
             {{ $tt := "publication" }}
             {{ if in $defenseTypes .type }}{{ $tt = "defense" }}{{ end }}
+            {{ if eq .type "registro" }}{{ $tt = "registration" }}{{ end }}
             {{ $title := "" }}
             {{ with .title }}
                 {{ $title = index . $lang }}
@@ -275,6 +276,7 @@
     {{ end }}
     {{ $pubsThisYear := 0 }}
     {{ $defensesThisYear := 0 }}
+    {{ $registrationsThisYear := 0 }}
     {{ range hugo.Data.productions.items }}
       {{ $yr := 0 }}
       {{ with .year }}
@@ -284,7 +286,9 @@
         {{ end }}
       {{ end }}
       {{ if eq $yr $currentYearNum }}
-        {{ if in $defenseTypes .type }}
+        {{ if eq .type "registro" }}
+          {{ $registrationsThisYear = add $registrationsThisYear 1 }}
+        {{ else if in $defenseTypes .type }}
           {{ $defensesThisYear = add $defensesThisYear 1 }}
         {{ else }}
           {{ $pubsThisYear = add $pubsThisYear 1 }}
@@ -342,7 +346,7 @@
             <div class="mt-1 text-xs text-slate-500 dark:text-slate-400">{{ i18n "ui_metric_researchers_note" }}</div>
           </li>
         </ul>
-        {{ if or $lastNewsItem $lastPubItem }}
+        {{ if or $lastNewsItem $lastPubItem (gt $registrationsThisYear 0) }}
         <div class="mt-6 flex flex-wrap items-center gap-x-6 gap-y-2 text-xs text-slate-500 dark:text-slate-400">
           {{ with $lastNewsItem }}
           <div class="inline-flex items-center gap-2">
@@ -358,6 +362,12 @@
             <span class="font-semibold uppercase tracking-wider text-slate-600 dark:text-slate-300">{{ i18n "ui_pulse_last_pub" }}</span>
             <span aria-hidden="true">·</span>
             <span>{{ partial "relative-date.html" (dict "item" .) }}</span>
+          </div>
+          {{ end }}
+          {{ if gt $registrationsThisYear 0 }}
+          <div class="inline-flex items-center gap-2">
+            <span class="rounded-full bg-fuchsia-100 px-2 py-0.5 text-[0.62rem] font-bold uppercase tracking-wider text-fuchsia-700 dark:bg-fuchsia-500/15 dark:text-fuchsia-200">{{ i18n "ui_pulse_type_registration" }}</span>
+            <span>{{ $registrationsThisYear }} {{ cond (eq $registrationsThisYear 1) (cond $isPortuguese "registro em" "registration in") (cond $isPortuguese "registros em" "registrations in") }} {{ $currentYearNum }}</span>
           </div>
           {{ end }}
         </div>
