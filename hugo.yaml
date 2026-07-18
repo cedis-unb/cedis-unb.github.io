@@ -209,14 +209,38 @@ languages:
 #          url: "#"
 #          weight: 40
       footer:
+        - identifier: home
+          name: Início
+          url: /
+          weight: 10
+        - identifier: about
+          name: Sobre
+          url: /about/
+          weight: 20
+        - identifier: products
+          name: Produtos digitais
+          url: /categories/products/
+          weight: 30
+        - identifier: projects
+          name: Projetos
+          url: /projects/
+          weight: 40
+        - identifier: people
+          name: Pessoas
+          url: /people/
+          weight: 50
+        - identifier: partners
+          name: Parceiros
+          url: /parceiros/
+          weight: 60
         - identifier: news
           name: Mais notícias
           url: /categories/news/
-          weight: 30
+          weight: 70
         - identifier: contact
           name: Contato
           url: /contact/
-          weight: 50
+          weight: 80
         - identifier: intranet
           name: Intranet (membros)
           url: https://unbbr.sharepoint.com/sites/CEDIS
@@ -423,14 +447,38 @@ languages:
 #          url: "#"
 #          weight: 40
       footer:
+        - identifier: home
+          name: Home
+          url: /
+          weight: 10
+        - identifier: about
+          name: About
+          url: /about/
+          weight: 20
+        - identifier: products
+          name: Digital Products
+          url: /categories/products/
+          weight: 30
+        - identifier: projects
+          name: Projects
+          url: /projects/
+          weight: 40
+        - identifier: people
+          name: People
+          url: /people/
+          weight: 50
+        - identifier: partners
+          name: Partners
+          url: /partners/
+          weight: 60
         - identifier: news
           name: More News
           url: /categories/news/
-          weight: 30
+          weight: 70
         - identifier: contact
           name: Contact
           url: /contact/
-          weight: 50
+          weight: 80
         - identifier: intranet
           name: Intranet (members)
           url: https://unbbr.sharepoint.com/sites/CEDIS

@@ -47,13 +47,14 @@
                 </p>
             </div>
 
-            <div class="rounded-[1.75rem] border border-white/10 bg-white/[0.04] p-6">
+            <div class="rounded-lg border border-white/10 bg-white/[0.04] p-6">
                 <div class="text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-slate-400">{{ $footerNavTitle }}</div>
-                <nav class="mt-5 grid gap-3" aria-label="Footer">
+                <nav class="mt-5 grid grid-cols-1 gap-x-6 gap-y-3 sm:grid-cols-2" aria-label="Footer">
                     {{ range site.Menus.footer }}
-                    <a href="{{ if hasPrefix .URL "/" }}{{ .URL | relLangURL }}{{ else }}{{ .URL }}{{ end }}" class="inline-flex items-center justify-between rounded-2xl border border-white/8 bg-white/[0.04] px-4 py-3 text-sm font-medium text-slate-200 transition-colors hover:border-primary-400/40 hover:bg-primary-500/10 hover:text-white">
-                        <span>{{ .Name }}</span>
-                        <span aria-hidden="true" class="text-slate-500">&rarr;</span>
+                    {{ $isExternal := or (hasPrefix .URL "http://") (hasPrefix .URL "https://") }}
+                    <a href="{{ if hasPrefix .URL "/" }}{{ .URL | relLangURL }}{{ else }}{{ .URL }}{{ end }}" {{ if $isExternal }}target="_blank" rel="noopener noreferrer"{{ end }} class="group inline-flex min-h-6 items-center gap-2 text-sm font-medium text-slate-300 transition-colors hover:text-white">
+                        <span aria-hidden="true" class="h-1.5 w-1.5 rounded-full bg-slate-500 transition-colors group-hover:bg-primary-300"></span>
+                        <span class="leading-6">{{ .Name }}</span>
                     </a>
                     {{ end }}
                 </nav>
