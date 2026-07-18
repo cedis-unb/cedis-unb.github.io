@@ -190,40 +190,40 @@
            }"
            x-effect="filters.year; filters.type; filters.topic; $nextTick(() => applyFilters())">
         <div class="mb-8 rounded-[1.5rem] border border-black/5 bg-stone-50 p-5 dark:border-white/10 dark:bg-white/[0.04]">
-          <div class="flex flex-wrap items-end gap-4">
-            <div class="min-w-0 flex-1">
-              <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-gray-500 dark:text-white/72">{{ $filterHeading }}</div>
-              <p class="mt-1 text-xs text-gray-500 dark:text-white/55" x-text="'{{ $publicationCount }} → ' + visibleCount"></p>
+          <div class="flex flex-col gap-5">
+            <div class="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
+              <div class="min-w-0 text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-gray-500 dark:text-white/72">{{ $filterHeading }}</div>
+              <p class="text-sm font-semibold text-gray-600 dark:text-white/65" x-text="'{{ $publicationCount }} → ' + visibleCount"></p>
             </div>
-            <div class="flex flex-wrap gap-3">
-              <label class="flex flex-col gap-1 text-xs font-semibold text-gray-700 dark:text-white/78">
+            <div class="grid gap-3" style="grid-template-columns: repeat(auto-fit, minmax(min(100%, 10rem), 1fr)); align-items: end;">
+              <label class="flex min-w-0 flex-col gap-1 text-xs font-semibold text-gray-700 dark:text-white/78">
                 <span>{{ $filterYearLabel }}</span>
-                <select x-model="filters.year" class="min-w-[7rem] rounded-lg border border-black/10 bg-white px-3 py-2 text-sm font-medium text-gray-900 focus:border-primary-500 focus:outline-none focus:ring-2 focus:ring-primary-200 dark:border-white/10 dark:bg-gray-900 dark:text-white dark:focus:ring-primary-500/30">
+                <select x-model="filters.year" class="w-full min-w-0 rounded-lg border border-black/10 bg-white px-3 py-2 text-sm font-medium text-gray-900 focus:border-primary-500 focus:outline-none focus:ring-2 focus:ring-primary-200 dark:border-white/10 dark:bg-gray-900 dark:text-white dark:focus:ring-primary-500/30">
                   <option value="">{{ $filterAllLabel }}</option>
                   {{ range $filterYears }}
                   <option value="{{ . }}">{{ . }}</option>
                   {{ end }}
                 </select>
               </label>
-              <label class="flex flex-col gap-1 text-xs font-semibold text-gray-700 dark:text-white/78">
+              <label class="flex min-w-0 flex-col gap-1 text-xs font-semibold text-gray-700 dark:text-white/78">
                 <span>{{ $filterTypeLabel }}</span>
-                <select x-model="filters.type" class="min-w-[9rem] rounded-lg border border-black/10 bg-white px-3 py-2 text-sm font-medium text-gray-900 focus:border-primary-500 focus:outline-none focus:ring-2 focus:ring-primary-200 dark:border-white/10 dark:bg-gray-900 dark:text-white dark:focus:ring-primary-500/30">
+                <select x-model="filters.type" class="w-full min-w-0 rounded-lg border border-black/10 bg-white px-3 py-2 text-sm font-medium text-gray-900 focus:border-primary-500 focus:outline-none focus:ring-2 focus:ring-primary-200 dark:border-white/10 dark:bg-gray-900 dark:text-white dark:focus:ring-primary-500/30">
                   <option value="">{{ $filterAllLabel }}</option>
                   {{ range $filterTypes }}
                   <option value="{{ . }}">{{ i18n (printf "pub_type_%s" .) | default . }}</option>
                   {{ end }}
                 </select>
               </label>
-              <label class="flex flex-col gap-1 text-xs font-semibold text-gray-700 dark:text-white/78">
+              <label class="flex min-w-0 flex-col gap-1 text-xs font-semibold text-gray-700 dark:text-white/78">
                 <span>{{ $filterTopicLabel }}</span>
-                <select x-model="filters.topic" class="min-w-[10rem] rounded-lg border border-black/10 bg-white px-3 py-2 text-sm font-medium text-gray-900 focus:border-primary-500 focus:outline-none focus:ring-2 focus:ring-primary-200 dark:border-white/10 dark:bg-gray-900 dark:text-white dark:focus:ring-primary-500/30">
+                <select x-model="filters.topic" class="w-full min-w-0 rounded-lg border border-black/10 bg-white px-3 py-2 text-sm font-medium text-gray-900 focus:border-primary-500 focus:outline-none focus:ring-2 focus:ring-primary-200 dark:border-white/10 dark:bg-gray-900 dark:text-white dark:focus:ring-primary-500/30">
                   <option value="">{{ $filterAllLabel }}</option>
                   {{ range $filterTopics }}
                   <option value="{{ . }}">{{ . | i18n }}</option>
                   {{ end }}
                 </select>
               </label>
-              <button type="button" @click="clear()" class="self-end rounded-full border border-black/10 bg-white px-4 py-2 text-sm font-semibold text-gray-700 transition-colors hover:border-primary-400 hover:text-primary-700 dark:border-white/10 dark:bg-white/[0.06] dark:text-white/78 dark:hover:border-primary-300 dark:hover:text-primary-100">
+              <button type="button" @click="clear()" class="w-full rounded-full border border-black/10 bg-white px-4 py-2 text-sm font-semibold text-gray-700 transition-colors hover:border-primary-400 hover:text-primary-700 dark:border-white/10 dark:bg-white/[0.06] dark:text-white/78 dark:hover:border-primary-300 dark:hover:text-primary-100">
                 {{ $filterClearLabel }}
               </button>
             </div>
