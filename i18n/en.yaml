@@ -397,6 +397,7 @@ pub_type_dissertation: "Master's dissertation"
 pub_type_specialization: "Specialization"
 pub_type_phd: "PhD thesis"
 pub_type_tcc: "Undergraduate thesis"
+pub_type_registro: "Software/patent registration"
 
 # Home hero — persona tracks
 ui_persona_study_label: "Study with us"
@@ -422,6 +423,7 @@ ui_pulse_type_news: "News"
 ui_pulse_type_publication: "Publication"
 ui_pulse_type_defense: "Defense"
 ui_pulse_type_product: "Product"
+ui_pulse_type_registration: "Registration"
 ui_pulse_read_more: "Read more"
 
 # Profile — contact and CTAs
