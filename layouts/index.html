@@ -272,7 +272,9 @@
     {{ end }}
     {{ $productCount := 0 }}
     {{ range where .Site.RegularPages "Section" "products" }}
-      {{ $productCount = add $productCount 1 }}
+      {{ if eq .Date.Year $currentYearNum }}
+        {{ $productCount = add $productCount 1 }}
+      {{ end }}
     {{ end }}
     {{ $pubsThisYear := 0 }}
     {{ $defensesThisYear := 0 }}
@@ -342,7 +344,7 @@
           </li>
           <li class="rounded-2xl border border-rose-200 bg-white/85 px-4 py-5 shadow-sm shadow-rose-500/10 dark:border-rose-500/30 dark:bg-white/[0.04]">
             <div class="text-3xl font-black tracking-tight text-rose-700 dark:text-rose-300 lg:text-4xl">{{ $productCount }}</div>
-            <div class="mt-2 text-sm font-semibold text-slate-900 dark:text-white">{{ i18n "ui_metric_products" }}</div>
+            <div class="mt-2 text-sm font-semibold text-slate-900 dark:text-white">{{ printf (i18n "ui_metric_products_this_year") $currentYearNum }}</div>
             <div class="mt-1 text-xs text-slate-500 dark:text-slate-400">{{ i18n "ui_metric_products_note" }}</div>
           </li>
           <li class="rounded-2xl border border-violet-200 bg-white/85 px-4 py-5 shadow-sm shadow-violet-500/10 dark:border-violet-500/30 dark:bg-white/[0.04]">
