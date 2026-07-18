@@ -1,0 +1,22 @@
+{{- $item := .item -}}
+{{- if $item.hasFullDate -}}
+    {{- $sec := sub now.Unix $item.date.Unix -}}
+    {{- $days := div $sec 86400 -}}
+    {{- if le $days 0 -}}
+        {{- i18n "ui_pulse_ago_today" -}}
+    {{- else if eq $days 1 -}}
+        {{- i18n "ui_pulse_ago_day" -}}
+    {{- else if lt $days 7 -}}
+        {{- printf (i18n "ui_pulse_ago_days") $days -}}
+    {{- else if lt $days 14 -}}
+        {{- i18n "ui_pulse_ago_week" -}}
+    {{- else if lt $days 60 -}}
+        {{- printf (i18n "ui_pulse_ago_weeks") (div $days 7) -}}
+    {{- else if lt $days 365 -}}
+        {{- printf (i18n "ui_pulse_ago_months") (div $days 30) -}}
+    {{- else -}}
+        {{- printf (i18n "ui_pulse_ago_year") $item.year -}}
+    {{- end -}}
+{{- else -}}
+    {{- printf (i18n "ui_pulse_ago_year") $item.year -}}
+{{- end -}}

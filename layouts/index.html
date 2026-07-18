@@ -23,100 +23,237 @@
     {{ $newsFeaturedLabel := cond $isPortuguese "Destaque" "Featured" }}
     {{ $newsMoreLabel := cond $isPortuguese "Ver todas as notícias" "View all news" }}
     {{ $newsReadLabel := cond $isPortuguese "min de leitura" (printf "min %s" (i18n "read")) }}
+    {{/* ====== HERO — identity + live pulse feed ====== */}}
+    {{ $studyURL := cond $isPortuguese "/pt/junte-se/" "/join/" }}
+    {{ $exploreURL := cond $isPortuguese "/pt/categories/knowledge_areas/" "/categories/knowledge_areas/" }}
+    {{ $partnerURL := cond $isPortuguese "/pt/contact/" "/contact/" }}
+    {{ $aboutURL := cond $isPortuguese "/pt/about/" "/about/" }}
+    {{ $newsAllURL := cond $isPortuguese "/pt/categories/news/" "/categories/news/" }}
+
+    {{/* Aggregate items from all sources */}}
+    {{ $lang := .Site.Language.Lang }}
+    {{ $defenseTypes := slice "phd" "dissertation" "tcc" "specialization" }}
+    {{ $pulseItems := slice }}
+    {{ range where (where .Site.RegularPages "Section" "posts") "Params.tags" "intersect" (slice "News") }}
+        {{ if lt .Date now }}
+        {{ $pulseItems = $pulseItems | append (dict
+            "type" "news"
+            "title" .Title
+            "url" .RelPermalink
+            "date" .Date
+            "hasFullDate" true
+            "year" .Date.Year
+            "summary" (or .Params.summary "")
+        ) }}
+        {{ end }}
+    {{ end }}
+    {{ range where .Site.RegularPages "Section" "products" }}
+        {{ if lt .Date now }}
+        {{ $pulseItems = $pulseItems | append (dict
+            "type" "product"
+            "title" .Title
+            "url" .RelPermalink
+            "date" .Date
+            "hasFullDate" true
+            "year" .Date.Year
+            "summary" (or .Params.summary "")
+        ) }}
+        {{ end }}
+    {{ end }}
+    {{ range hugo.Data.productions.items }}
+        {{ $yr := 0 }}
+        {{ with .year }}
+            {{ $ys := printf "%v" . }}
+            {{ if gt (len (findRE "^[0-9]{4}" $ys)) 0 }}
+                {{ $yr = int (replaceRE "^([0-9]{4}).*$" "$1" $ys) }}
+            {{ end }}
+        {{ end }}
+        {{ if gt $yr 0 }}
+            {{ $tt := "publication" }}
+            {{ if in $defenseTypes .type }}{{ $tt = "defense" }}{{ end }}
+            {{ $title := "" }}
+            {{ with .title }}
+                {{ $title = index . $lang }}
+                {{ if not $title }}{{ $title = index . "pt" }}{{ end }}
+            {{ end }}
+            {{ $sm := "" }}
+            {{ with .summary }}
+                {{ $sm = index . $lang }}
+                {{ if not $sm }}{{ $sm = "" }}{{ end }}
+            {{ end }}
+            {{ $url := printf "%s#%d" ("/publications/" | relLangURL) $yr }}
+            {{ with .url }}{{ $url = . }}{{ end }}
+            {{ if $title }}
+            {{ $pulseItems = $pulseItems | append (dict
+                "type" $tt
+                "title" $title
+                "url" $url
+                "date" (time (printf "%04d-07-01T00:00:00Z" $yr))
+                "hasFullDate" false
+                "year" $yr
+                "summary" $sm
+            ) }}
+            {{ end }}
+        {{ end }}
+    {{ end }}
+    {{ $pulseItems = sort $pulseItems "date" "desc" }}
+    {{ $pulseTop := "" }}
+    {{ $pulseRest := slice }}
+    {{ if gt (len $pulseItems) 0 }}
+        {{ $pulseTop = index $pulseItems 0 }}
+        {{ $pulseRest = first 4 (after 1 $pulseItems) }}
+    {{ end }}
+
     <div class="relative overflow-hidden bg-[radial-gradient(circle_at_top_left,_rgba(249,115,22,0.18),_transparent_28%),linear-gradient(180deg,_#eef2ff_0%,_#f5f6fa_48%,_#ffffff_100%)] dark:bg-[radial-gradient(circle_at_top_left,_rgba(249,115,22,0.12),_transparent_24%),linear-gradient(180deg,_#0f172a_0%,_#111827_58%,_#0b1120_100%)]">
         <div class="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-primary-400/40 to-transparent"></div>
-        <div class="relative mx-auto max-w-screen-xl px-4 py-8 md:px-6 lg:px-8 lg:py-14">
-            <div class="grid items-center gap-8 lg:grid-cols-12 lg:gap-10 xl:gap-12">
-                <div class="lg:col-span-7 lg:pr-6 xl:pr-10">
+        <div class="relative mx-auto max-w-screen-xl px-4 py-8 md:px-6 lg:px-8 lg:py-12">
+            <div class="grid gap-8 lg:grid-cols-12 lg:gap-10">
+                {{/* LEFT — identity + persona CTAs */}}
+                <div class="lg:col-span-5">
                     <div class="inline-flex items-center rounded-full border border-primary-300/60 bg-white/80 px-3 py-1 text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-primary-700 shadow-sm backdrop-blur dark:border-primary-400/20 dark:bg-white/5 dark:text-primary-200">
                         {{ $cedisMeaning }}
                     </div>
-                    <div class="mt-5 max-w-2xl text-center lg:text-left">
-                        <h1 class="text-4xl font-black leading-none tracking-tight text-slate-950 md:text-5xl xl:text-6xl dark:text-white">
-                            {{ .Site.Title }}
-                        </h1>
-                        <h2 class="mt-3 text-3xl font-light leading-tight text-slate-700 md:text-4xl dark:text-slate-300">
-                            {{ .Site.Params.Moto }}
-                        </h2>
-                        <p class="mt-6 max-w-2xl text-base leading-8 text-slate-700 md:text-lg xl:text-xl dark:text-slate-200">
-                            {{ .Site.Params.Description}}
-                        </p>
-                    </div>
-                    <div class="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:flex-wrap lg:items-center lg:justify-start">
-                        <a href="{{ .Site.Params.seemore.link | relLangURL }}" class="group inline-flex items-center justify-center rounded-full bg-primary-500 px-6 py-3 text-sm font-semibold uppercase tracking-[0.18em] text-white shadow-lg shadow-primary-900/20 transition duration-300 ease-in-out hover:bg-primary-600 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-primary-300 focus:ring-offset-2 focus:ring-offset-gray-950">
-                            {{ .Site.Params.seemore.text }}
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="ml-2 inline-block h-5 w-5 transform -rotate-90 text-white transition-transform duration-300 ease-in-out group-hover:translate-x-1.5">
-                                <path fill-rule="evenodd" d="M3.293 9.707a1 1 0 011.414 0L10 15l5.293-5.293a1 1 0 111.414 1.414l-6 6a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414z" clip-rule="evenodd" />
-                                <path fill-rule="evenodd" d="M3.293 4.293a1 1 0 011.414 0L10 9.586l5.293-5.293a1 1 0 011.414 1.414l-6 6a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414z" clip-rule="evenodd" />
-                            </svg>
+                    <h1 class="mt-5 text-4xl font-black leading-none tracking-tight text-slate-950 md:text-5xl xl:text-6xl dark:text-white">
+                        {{ .Site.Title }}
+                    </h1>
+                    <h2 class="mt-3 text-2xl font-light leading-tight text-slate-700 md:text-3xl dark:text-slate-300">
+                        {{ .Site.Params.Moto }}
+                    </h2>
+
+                    <div class="mt-8 space-y-3">
+                        <a href="{{ $studyURL }}" class="group flex items-center gap-4 rounded-2xl border border-slate-200/80 bg-white/85 px-4 py-3.5 shadow-sm backdrop-blur transition-all hover:-translate-y-0.5 hover:border-primary-300 hover:shadow-md dark:border-white/10 dark:bg-white/[0.04] dark:hover:border-primary-400/40">
+                            <span aria-hidden="true" class="flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-xl bg-primary-100 text-primary-700 dark:bg-primary-500/15 dark:text-primary-200">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6"><path d="M12 3 1 9l11 6 9-4.909V17a1 1 0 0 0 2 0V9L12 3zm0 8.201L5.803 8 12 5l6.196 3L12 11.201zM7 13.545V16.5c0 1.746 3.15 3.5 5 3.5s5-1.754 5-3.5v-2.955l-5 2.727-5-2.727z"/></svg>
+                            </span>
+                            <span class="flex-1 min-w-0">
+                                <span class="block text-sm font-bold text-slate-900 group-hover:text-primary-700 dark:text-white dark:group-hover:text-primary-200">{{ i18n "ui_persona_study_label" }}</span>
+                                <span class="mt-0.5 block text-xs text-slate-500 dark:text-slate-400">{{ i18n "ui_persona_study_desc" }}</span>
+                            </span>
+                            <span aria-hidden="true" class="text-slate-400 transition-transform group-hover:translate-x-1 group-hover:text-primary-500">&rarr;</span>
                         </a>
-                        <div class="flex items-center gap-2 rounded-full border border-slate-200/80 bg-white/75 px-3 py-2 shadow-sm backdrop-blur dark:border-white/10 dark:bg-white/5">
-                            <span class="px-2 text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-slate-500 dark:text-slate-400">{{ $connectLabel }}</span>
-                            {{ if .Site.Params.Social_media.Linkedin.Enabled }}
-                                <a href="{{ .Site.Params.Social_media.Linkedin.url }}" target="_blank" rel="noopener noreferrer" class="rounded-full p-2 text-slate-500 transition-colors hover:bg-slate-900 hover:text-white dark:text-slate-300 dark:hover:bg-white dark:hover:text-slate-900">
-                                    <span class="sr-only">LinkedIn</span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                        <path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.28c-1.03 0-1.87-.84-1.87-1.87s.84-1.87 1.87-1.87c1.03 0 1.87.84 1.87 1.87s-.84 1.87-1.87 1.87zm13.5 11.28h-3v-5.6c0-1.34-.02-3.06-1.87-3.06s-2.16 1.46-2.16 2.96v5.7h-3v-10h2.88v1.36h.04c.4-.76 1.36-1.56 2.8-1.56 3 0 3.56 1.97 3.56 4.54v5.66z" />
-                                    </svg>
-                                </a>
-                            {{ end }}
-                            {{ if .Site.Params.Social_media.Github.Enabled }}
-                                <a href="{{ .Site.Params.Social_media.Github.url }}" target="_blank" rel="noopener noreferrer" class="rounded-full p-2 text-slate-500 transition-colors hover:bg-slate-900 hover:text-white dark:text-slate-300 dark:hover:bg-white dark:hover:text-slate-900">
-                                    <span class="sr-only">GitHub</span>
-                                    <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                        <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" />
-                                    </svg>
-                                </a>
-                            {{ end }}
-                            {{ if .Site.Params.Social_media.Spotify.Enabled }}
-                                <a href="{{ .Site.Params.Social_media.Spotify.url }}" target="_blank" rel="noopener noreferrer" class="rounded-full p-2 text-slate-500 transition-colors hover:bg-slate-900 hover:text-white dark:text-slate-300 dark:hover:bg-white dark:hover:text-slate-900">
-                                    <span class="sr-only">Spotify</span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 186.845 186.845" aria-hidden="true">
-                                        <path d="M128.875,120.962c-31.094-14.37-74.616-8.014-76.453-7.737c-4.096,0.619-6.915,4.44-6.296,8.536 c0.619,4.096,4.443,6.912,8.536,6.296c0.406-0.062,40.867-5.982,67.92,6.521c1.018,0.471,2.089,0.694,3.142,0.694 c2.834-0.001,5.546-1.614,6.813-4.355C134.274,127.157,132.635,122.7,128.875,120.962z"/>
-                                        <path d="M137.614,93.953c-35.313-16.319-84.833-9.087-86.924-8.772c-4.094,0.619-6.911,4.438-6.294,8.532 c0.616,4.095,4.438,6.916,8.531,6.301c0.468-0.071,47.206-6.857,78.394,7.556c1.02,0.471,2.089,0.694,3.142,0.694 c2.834-0.001,5.546-1.614,6.814-4.356C143.014,100.148,141.374,95.691,137.614,93.953z"/>
-                                        <path d="M143.49,65.736c-39.006-18.027-93.79-10.028-96.103-9.679c-4.094,0.619-6.911,4.438-6.294,8.532s4.44,6.919,8.531,6.3 c0.523-0.079,52.691-7.657,87.573,8.463c1.018,0.471,2.089,0.694,3.142,0.694c2.834,0,5.546-1.614,6.813-4.355 C148.89,71.93,147.25,67.474,143.49,65.736z"/>
-                                        <path d="M93.423,0.001C41.909,0.001,0,41.909,0,93.42c0,51.514,41.909,93.424,93.423,93.424c51.513,0,93.422-41.91,93.422-93.424 C186.845,41.909,144.936,0.001,93.423,0.001z M93.423,171.844C50.18,171.844,15,136.664,15,93.42 c0-43.241,35.18-78.42,78.423-78.42c43.242,0,78.422,35.179,78.422,78.42C171.845,136.664,136.665,171.844,93.423,171.844z"/>
-                                    </svg>
-                                </a>
-                            {{ end }}
-                            {{ if .Site.Params.Social_media.Zenodo.Enabled }}
-                                <a href="{{ .Site.Params.Social_media.Zenodo.url }}" target="_blank" rel="noopener noreferrer" class="rounded-full p-2 text-slate-500 transition-colors hover:bg-slate-900 hover:text-white dark:text-slate-300 dark:hover:bg-white dark:hover:text-slate-900">
-                                    <span class="sr-only">Zenodo</span>
-                                    <svg class="h-5 w-5" viewBox="0 0 24 24" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor">
-                                        <rect x="1.5" y="1.5" width="21" height="21" rx="4" stroke-width="2"/>
-                                        <text x="12" y="12.5" font-family="sans-serif" font-size="12" font-weight="bold" text-anchor="middle" dominant-baseline="central" fill="currentColor" stroke="none">
-                                            Ze
-                                        </text>
-                                    </svg>
-                                </a>
-                            {{ end }}
-                        </div>
+                        <a href="{{ $exploreURL }}" class="group flex items-center gap-4 rounded-2xl border border-slate-200/80 bg-white/85 px-4 py-3.5 shadow-sm backdrop-blur transition-all hover:-translate-y-0.5 hover:border-primary-300 hover:shadow-md dark:border-white/10 dark:bg-white/[0.04] dark:hover:border-primary-400/40">
+                            <span aria-hidden="true" class="flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-xl bg-sky-100 text-sky-700 dark:bg-sky-500/15 dark:text-sky-200">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+                            </span>
+                            <span class="flex-1 min-w-0">
+                                <span class="block text-sm font-bold text-slate-900 group-hover:text-primary-700 dark:text-white dark:group-hover:text-primary-200">{{ i18n "ui_persona_explore_label" }}</span>
+                                <span class="mt-0.5 block text-xs text-slate-500 dark:text-slate-400">{{ i18n "ui_persona_explore_desc" }}</span>
+                            </span>
+                            <span aria-hidden="true" class="text-slate-400 transition-transform group-hover:translate-x-1 group-hover:text-primary-500">&rarr;</span>
+                        </a>
+                        <a href="{{ $partnerURL }}" class="group flex items-center gap-4 rounded-2xl border border-slate-200/80 bg-white/85 px-4 py-3.5 shadow-sm backdrop-blur transition-all hover:-translate-y-0.5 hover:border-primary-300 hover:shadow-md dark:border-white/10 dark:bg-white/[0.04] dark:hover:border-primary-400/40">
+                            <span aria-hidden="true" class="flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-xl bg-emerald-100 text-emerald-700 dark:bg-emerald-500/15 dark:text-emerald-200">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                            </span>
+                            <span class="flex-1 min-w-0">
+                                <span class="block text-sm font-bold text-slate-900 group-hover:text-primary-700 dark:text-white dark:group-hover:text-primary-200">{{ i18n "ui_persona_partner_label" }}</span>
+                                <span class="mt-0.5 block text-xs text-slate-500 dark:text-slate-400">{{ i18n "ui_persona_partner_desc" }}</span>
+                            </span>
+                            <span aria-hidden="true" class="text-slate-400 transition-transform group-hover:translate-x-1 group-hover:text-primary-500">&rarr;</span>
+                        </a>
                     </div>
-                    <div class="mt-8 flex flex-wrap items-center justify-center gap-2 lg:justify-start">
-                        <span class="rounded-full border border-slate-300/80 bg-white/70 px-3 py-1 text-xs font-medium text-slate-700 backdrop-blur dark:border-white/10 dark:bg-white/5 dark:text-slate-200">{{ $tagSoftware }}</span>
-                        <span class="rounded-full border border-slate-300/80 bg-white/70 px-3 py-1 text-xs font-medium text-slate-700 backdrop-blur dark:border-white/10 dark:bg-white/5 dark:text-slate-200">{{ $tagLearning }}</span>
-                        <span class="rounded-full border border-slate-300/80 bg-white/70 px-3 py-1 text-xs font-medium text-slate-700 backdrop-blur dark:border-white/10 dark:bg-white/5 dark:text-slate-200">{{ $tagAI }}</span>
+
+                    <div class="mt-6 flex flex-wrap items-center gap-2">
+                        <a href="{{ $aboutURL }}" class="inline-flex items-center rounded-full border border-slate-300/70 bg-white/70 px-3 py-1.5 text-xs font-semibold text-slate-700 backdrop-blur transition-colors hover:border-primary-300 hover:text-primary-700 dark:border-white/10 dark:bg-white/5 dark:text-slate-200 dark:hover:border-primary-400/30 dark:hover:text-primary-200">
+                            {{ cond $isPortuguese "Sobre o CEDIS" "About CEDIS" }}
+                            <span aria-hidden="true" class="ml-1.5">&rarr;</span>
+                        </a>
+                        <span class="rounded-full border border-slate-300/60 bg-white/50 px-3 py-1 text-[0.68rem] font-medium text-slate-600 backdrop-blur dark:border-white/10 dark:bg-white/5 dark:text-slate-300">{{ $tagSoftware }}</span>
+                        <span class="rounded-full border border-slate-300/60 bg-white/50 px-3 py-1 text-[0.68rem] font-medium text-slate-600 backdrop-blur dark:border-white/10 dark:bg-white/5 dark:text-slate-300">{{ $tagLearning }}</span>
+                        <span class="rounded-full border border-slate-300/60 bg-white/50 px-3 py-1 text-[0.68rem] font-medium text-slate-600 backdrop-blur dark:border-white/10 dark:bg-white/5 dark:text-slate-300">{{ $tagAI }}</span>
+                    </div>
+
+                    <div class="mt-5 flex items-center gap-2">
+                        <span class="text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-slate-500 dark:text-slate-400">{{ $connectLabel }}</span>
+                        {{ if .Site.Params.Social_media.Github.Enabled }}
+                        <a href="{{ .Site.Params.Social_media.Github.url }}" target="_blank" rel="noopener noreferrer" class="rounded-full p-1.5 text-slate-500 transition-colors hover:bg-slate-900 hover:text-white dark:text-slate-300 dark:hover:bg-white dark:hover:text-slate-900">
+                            <span class="sr-only">GitHub</span>
+                            <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" /></svg>
+                        </a>
+                        {{ end }}
+                        {{ if .Site.Params.Social_media.Spotify.Enabled }}
+                        <a href="{{ .Site.Params.Social_media.Spotify.url }}" target="_blank" rel="noopener noreferrer" class="rounded-full p-1.5 text-slate-500 transition-colors hover:bg-slate-900 hover:text-white dark:text-slate-300 dark:hover:bg-white dark:hover:text-slate-900">
+                            <span class="sr-only">Spotify</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="currentColor" viewBox="0 0 186.845 186.845" aria-hidden="true"><path d="M128.875 120.962c-31.094-14.37-74.616-8.014-76.453-7.737-4.096.619-6.915 4.44-6.296 8.536.619 4.096 4.443 6.912 8.536 6.296.406-.062 40.867-5.982 67.92 6.521 1.018.471 2.089.694 3.142.694 2.834-.001 5.546-1.614 6.813-4.355 1.737-3.76.098-8.217-3.662-9.955zM137.614 93.953c-35.313-16.319-84.833-9.087-86.924-8.772-4.094.619-6.911 4.438-6.294 8.532.616 4.095 4.438 6.916 8.531 6.301.468-.071 47.206-6.857 78.394 7.556 1.02.471 2.089.694 3.142.694 2.834-.001 5.546-1.614 6.814-4.356 1.737-3.76.098-8.217-3.663-9.955zM143.49 65.736c-39.006-18.027-93.79-10.028-96.103-9.679-4.094.619-6.911 4.438-6.294 8.532s4.44 6.919 8.531 6.3c.523-.079 52.691-7.657 87.573 8.463 1.018.471 2.089.694 3.142.694 2.834 0 5.546-1.614 6.813-4.355 1.737-3.761.098-8.217-3.662-9.955zM93.423.001C41.909.001 0 41.909 0 93.42c0 51.514 41.909 93.424 93.423 93.424 51.513 0 93.422-41.91 93.422-93.424C186.845 41.909 144.936.001 93.423.001zm0 171.843C50.18 171.844 15 136.664 15 93.42c0-43.241 35.18-78.42 78.423-78.42 43.242 0 78.422 35.179 78.422 78.42 0 43.244-35.18 78.424-78.422 78.424z"/></svg>
+                        </a>
+                        {{ end }}
+                        {{ if .Site.Params.Social_media.Zenodo.Enabled }}
+                        <a href="{{ .Site.Params.Social_media.Zenodo.url }}" target="_blank" rel="noopener noreferrer" class="rounded-full p-1.5 text-slate-500 transition-colors hover:bg-slate-900 hover:text-white dark:text-slate-300 dark:hover:bg-white dark:hover:text-slate-900">
+                            <span class="sr-only">Zenodo</span>
+                            <svg class="h-4 w-4" viewBox="0 0 24 24" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor"><rect x="1.5" y="1.5" width="21" height="21" rx="4" stroke-width="2"/><text x="12" y="12.5" font-family="sans-serif" font-size="12" font-weight="bold" text-anchor="middle" dominant-baseline="central" fill="currentColor" stroke="none">Ze</text></svg>
+                        </a>
+                        {{ end }}
                     </div>
                 </div>
-                <div class="lg:col-span-5 lg:pl-2 xl:pl-4">
-                    {{ $hero := resources.GetMatch "images/pages/media-CEDIS.png" }}
 
-                    <div class="relative mx-auto max-w-xl lg:ml-auto xl:max-w-2xl">
-                        <div class="absolute -left-6 top-8 hidden h-24 w-24 rounded-full bg-primary-400/20 blur-2xl md:block dark:bg-primary-500/15"></div>
-                        <div class="absolute -bottom-6 right-0 hidden h-28 w-28 rounded-full bg-sky-400/20 blur-2xl md:block dark:bg-sky-400/10"></div>
-                        <div class="relative overflow-hidden rounded-[2rem] border border-white/70 bg-white/70 p-3 shadow-[0_24px_80px_rgba(15,23,42,0.18)] backdrop-blur dark:border-white/10 dark:bg-white/[0.04] dark:shadow-[0_24px_80px_rgba(0,0,0,0.35)] sm:p-4">
-                            <div class="mb-3 flex items-center justify-between rounded-2xl border border-slate-200/80 bg-slate-50/90 px-4 py-3 text-xs font-semibold uppercase tracking-[0.2em] text-slate-500 dark:border-white/10 dark:bg-slate-950/40 dark:text-slate-300">
-                                <span>{{ $researchHubLabel }}</span>
-                                <span>UnB</span>
+                {{/* RIGHT — live pulse card */}}
+                <div class="lg:col-span-7">
+                    <div class="relative overflow-hidden rounded-[2rem] border border-white/70 bg-white/85 p-5 shadow-[0_24px_80px_rgba(15,23,42,0.10)] backdrop-blur dark:border-white/10 dark:bg-white/[0.04] dark:shadow-[0_24px_80px_rgba(0,0,0,0.32)] sm:p-6">
+                        <div aria-hidden="true" class="absolute -right-10 -top-10 h-32 w-32 rounded-full bg-primary-300/20 blur-3xl dark:bg-primary-500/10"></div>
+                        <div aria-hidden="true" class="absolute -bottom-16 -left-10 h-32 w-32 rounded-full bg-sky-300/20 blur-3xl dark:bg-sky-500/10"></div>
+
+                        <div class="relative flex items-center justify-between gap-4 border-b border-slate-200/70 pb-4 dark:border-white/10">
+                            <div class="flex items-center gap-2.5">
+                                <span aria-hidden="true" class="relative flex h-2.5 w-2.5">
+                                    <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-70"></span>
+                                    <span class="relative inline-flex h-2.5 w-2.5 rounded-full bg-emerald-500"></span>
+                                </span>
+                                <span class="text-[0.68rem] font-bold uppercase tracking-[0.22em] text-slate-600 dark:text-slate-300">{{ i18n "ui_pulse_eyebrow" }}</span>
                             </div>
-                            <div class="overflow-hidden rounded-[1.5rem] bg-[linear-gradient(180deg,_rgba(255,255,255,0.7),_rgba(226,232,240,0.92))] p-4 dark:bg-[linear-gradient(180deg,_rgba(15,23,42,0.72),_rgba(2,6,23,0.96))]">
-                                <div class="overflow-hidden rounded-[1.1rem] aspect-[4/5] md:aspect-[6/5] lg:aspect-[16/10]">
-                                    {{ with $hero }}
-                                    <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="CEDIS" class="h-full w-full object-cover object-[42%_58%]" loading="eager" decoding="async" />
-                                    {{ end }}
-                                </div>
-                            </div>
+                            <a href="{{ $newsAllURL }}" class="text-xs font-semibold text-primary-700 hover:text-primary-800 dark:text-primary-300 dark:hover:text-primary-200">
+                                {{ i18n "ui_pulse_view_all" }} &rarr;
+                            </a>
                         </div>
+
+                        {{ if $pulseTop }}
+                        <a href="{{ $pulseTop.url }}" class="relative mt-5 block group rounded-2xl border border-slate-200/70 bg-white/70 p-5 transition-all hover:border-primary-300 hover:bg-white hover:shadow-md dark:border-white/10 dark:bg-white/[0.04] dark:hover:border-primary-400/30 dark:hover:bg-white/[0.08]">
+                            <div class="flex flex-wrap items-center gap-2 text-[0.68rem] font-semibold uppercase tracking-[0.16em]">
+                                <span class="rounded-full bg-primary-500 px-2.5 py-1 text-white">{{ i18n "ui_pulse_new_badge" }}</span>
+                                <span class="rounded-full border border-slate-300/80 bg-white px-2.5 py-1 text-slate-700 dark:border-white/10 dark:bg-slate-900/70 dark:text-slate-200">{{ i18n (printf "ui_pulse_type_%s" $pulseTop.type) }}</span>
+                                <span class="text-slate-500 dark:text-slate-400 normal-case tracking-normal">·&nbsp;{{ partial "relative-date.html" (dict "item" $pulseTop) }}</span>
+                            </div>
+                            <h3 class="mt-3 text-xl font-black leading-tight text-slate-950 [display:-webkit-box] [-webkit-box-orient:vertical] [-webkit-line-clamp:2] overflow-hidden group-hover:text-primary-700 dark:text-white dark:group-hover:text-primary-200 md:text-2xl">
+                                {{ $pulseTop.title }}
+                            </h3>
+                            {{ with $pulseTop.summary }}
+                            <p class="mt-2 text-sm leading-6 text-slate-600 [display:-webkit-box] [-webkit-box-orient:vertical] [-webkit-line-clamp:3] overflow-hidden dark:text-slate-300">
+                                {{ . }}
+                            </p>
+                            {{ end }}
+                            <span class="mt-3 inline-flex items-center gap-1 text-xs font-semibold text-primary-700 dark:text-primary-300">
+                                {{ i18n "ui_pulse_read_more" }}
+                                <span aria-hidden="true" class="transition-transform group-hover:translate-x-1">&rarr;</span>
+                            </span>
+                        </a>
+
+                        {{ if gt (len $pulseRest) 0 }}
+                        <ol class="relative mt-4 space-y-1">
+                            {{ range $pulseRest }}
+                            <li>
+                                <a href="{{ .url }}" class="flex items-start gap-3 rounded-xl px-3 py-2.5 transition-colors hover:bg-slate-100/70 dark:hover:bg-white/[0.06]">
+                                    <span class="w-20 flex-shrink-0 pt-0.5 text-[0.68rem] font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400">
+                                        {{ partial "relative-date.html" (dict "item" .) }}
+                                    </span>
+                                    <span class="inline-flex flex-shrink-0 items-center rounded-full border border-slate-300/70 bg-white px-2 py-0.5 text-[0.6rem] font-semibold uppercase tracking-wider text-slate-600 dark:border-white/10 dark:bg-slate-900/70 dark:text-slate-300">
+                                        {{ i18n (printf "ui_pulse_type_%s" .type) }}
+                                    </span>
+                                    <span class="flex-1 text-sm leading-snug text-slate-800 [display:-webkit-box] [-webkit-box-orient:vertical] [-webkit-line-clamp:2] overflow-hidden dark:text-slate-200">
+                                        {{ .title }}
+                                    </span>
+                                </a>
+                            </li>
+                            {{ end }}
+                        </ol>
+                        {{ end }}
+                        {{ else }}
+                        {{/* Fallback when there are no items: keep the original static hero image */}}
+                        {{ $hero := resources.GetMatch "images/pages/media-CEDIS.png" }}
+                        <div class="relative mt-4 overflow-hidden rounded-2xl">
+                            {{ with $hero }}
+                            <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="CEDIS" class="h-full w-full object-cover" loading="eager" decoding="async" />
+                            {{ end }}
+                        </div>
+                        {{ end }}
                     </div>
                 </div>
             </div>
@@ -396,68 +533,6 @@
       </div>
     </div>
     {{ end }}
-
-    <!-- Our mission section -->
-    <div class="relative py-8 sm:py-10 lg:py-14">
-        <div class="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-slate-300/70 to-transparent dark:via-white/10"></div>
-        <div class="mx-auto max-w-screen-xl px-4 md:px-6 lg:px-8">
-            <div class="relative overflow-hidden rounded-[2rem] border border-slate-200/80 bg-[linear-gradient(180deg,_rgba(255,255,255,0.96),_rgba(241,245,249,0.86))] px-5 py-6 shadow-[0_28px_90px_rgba(15,23,42,0.08)] dark:border-white/10 dark:bg-[linear-gradient(180deg,_rgba(15,23,42,0.72),_rgba(2,6,23,0.92))] sm:px-6 sm:py-8 lg:px-8 lg:py-10">
-                <div aria-hidden="true" class="absolute -right-16 top-0 h-40 w-40 rounded-full bg-primary-300/20 blur-3xl dark:bg-primary-500/10"></div>
-                <div aria-hidden="true" class="absolute bottom-0 left-0 h-36 w-36 rounded-full bg-sky-300/20 blur-3xl dark:bg-sky-500/10"></div>
-                <div class="relative grid items-center gap-8 lg:grid-cols-12 lg:gap-10">
-                    <div class="lg:col-span-5">
-                        <div class="overflow-hidden rounded-[1.75rem] border border-white/70 bg-white/75 p-3 shadow-lg backdrop-blur dark:border-white/10 dark:bg-white/[0.04]">
-                            <div class="mb-3 inline-flex items-center rounded-full border border-slate-200/80 bg-slate-50/90 px-3 py-1 text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-slate-500 dark:border-white/10 dark:bg-slate-950/40 dark:text-slate-300">
-                                {{ $missionImageLabel }}
-                            </div>
-                            <div class="overflow-hidden rounded-[1.35rem]">
-                                {{ $p1image := resources.Get .Site.Params.P1.Image }}
-                                {{ with $p1image }}
-                                {{ with .Resize (printf "%dx%d webp q90" .Width .Height) }}
-                                <img imgh src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" class="h-full w-full object-cover" alt="P1" loading="lazy" />
-                                {{ end }}
-                                {{ end }}
-                            </div>
-                        </div>
-                    </div>
-                    <div class="lg:col-span-7 lg:pl-4">
-                        <div class="max-w-3xl">
-                            <div class="inline-flex items-center rounded-full border border-primary-300/50 bg-primary-50/80 px-3 py-1 text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-primary-700 dark:border-primary-400/20 dark:bg-primary-500/10 dark:text-primary-200">
-                                {{ $missionEyebrow }}
-                            </div>
-                            <h2 class="mt-5 text-3xl font-black tracking-tight text-slate-950 sm:text-4xl dark:text-white">
-                                {{ .Site.Params.P1.Heading }}
-                            </h2>
-                            <p class="mt-4 max-w-2xl text-lg font-medium leading-8 text-slate-700 dark:text-slate-200">
-                                {{ $missionLead }}
-                            </p>
-                            <div class="mt-6 space-y-5 text-base leading-8 text-slate-700 dark:text-slate-200 sm:text-lg">
-                                {{ range .Site.Params.P1.Content }}
-                                <p>
-                                    {{ .text }}
-                                </p>
-                                {{ end }}
-                            </div>
-                            <div class="mt-8 grid gap-3 sm:grid-cols-3">
-                                <div class="rounded-2xl border border-slate-200/80 bg-white/80 px-4 py-4 shadow-sm dark:border-white/10 dark:bg-white/[0.04]">
-                                    <div class="text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-slate-500 dark:text-slate-400">CEDIS</div>
-                                    <div class="mt-2 text-sm font-semibold text-slate-900 dark:text-white">{{ $missionStatPeriod }}</div>
-                                </div>
-                                <div class="rounded-2xl border border-slate-200/80 bg-white/80 px-4 py-4 shadow-sm dark:border-white/10 dark:bg-white/[0.04]">
-                                    <div class="text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-slate-500 dark:text-slate-400">UnB</div>
-                                    <div class="mt-2 text-sm font-semibold text-slate-900 dark:text-white">{{ $missionStatInstitution }}</div>
-                                </div>
-                                <div class="rounded-2xl border border-slate-200/80 bg-white/80 px-4 py-4 shadow-sm dark:border-white/10 dark:bg-white/[0.04]">
-                                    <div class="text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-slate-500 dark:text-slate-400">{{ $missionStatFocusLabel }}</div>
-                                    <div class="mt-2 text-sm font-semibold text-slate-900 dark:text-white">{{ $missionStatFocus }}</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!-- Sponsors section -->
     <div class="relative py-8 sm:py-10 lg:py-16">
