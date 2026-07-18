@@ -5,6 +5,9 @@ date: 2026-07-16T09:00:00-03:00
 language: en
 product_language: pt
 weight: 7
+featured_home: true
+featured_home_order: 3
+featured_home_url: "https://gitranking.cedis.tec.br/"
 featured_image: "../assets/images/featured/gitranking-logo.png"
 summary: Gamified application developed as a bachelor's thesis with academic support from CEDIS for managing and motivating agile teams, integrated with GitHub as a GitHub App with a metrics dashboard, badges, and social feedback.
 authorimage: ../assets/images/global/author.webp
