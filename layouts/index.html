@@ -260,29 +260,56 @@
         </div>
     </div>
 
-    <!-- CEDIS in numbers section (B4) -->
+    {{/* ====== Living pulse metrics (Bloco 2) ====== */}}
     {{ $yearsCount := sub now.Year 2013 }}
+    {{ $currentYearNum := now.Year }}
     {{ $researcherCount := 0 }}
     {{ range where .Site.RegularPages "Section" "people" }}
       {{ if in .Params.categories "researcher" }}
         {{ $researcherCount = add $researcherCount 1 }}
       {{ end }}
     {{ end }}
-    {{ $publicationCount := len hugo.Data.productions.items }}
     {{ $productCount := 0 }}
     {{ range where .Site.RegularPages "Section" "products" }}
       {{ $productCount = add $productCount 1 }}
     {{ end }}
-    {{ $supervisionCount := len hugo.Data.people.people }}
+    {{ $pubsThisYear := 0 }}
+    {{ $defensesThisYear := 0 }}
+    {{ range hugo.Data.productions.items }}
+      {{ $yr := 0 }}
+      {{ with .year }}
+        {{ $ys := printf "%v" . }}
+        {{ if gt (len (findRE "^[0-9]{4}" $ys)) 0 }}
+          {{ $yr = int (replaceRE "^([0-9]{4}).*$" "$1" $ys) }}
+        {{ end }}
+      {{ end }}
+      {{ if eq $yr $currentYearNum }}
+        {{ if in $defenseTypes .type }}
+          {{ $defensesThisYear = add $defensesThisYear 1 }}
+        {{ else }}
+          {{ $pubsThisYear = add $pubsThisYear 1 }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+    {{ $lastNewsItem := "" }}
+    {{ $lastPubItem := "" }}
+    {{ range $pulseItems }}
+      {{ if and (eq .type "news") (not $lastNewsItem) }}{{ $lastNewsItem = . }}{{ end }}
+      {{ if and (or (eq .type "publication") (eq .type "defense")) (not $lastPubItem) }}{{ $lastPubItem = . }}{{ end }}
+    {{ end }}
     <div class="relative py-8 sm:py-10 lg:py-12">
       <div class="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-slate-300/70 to-transparent dark:via-white/10"></div>
       <div class="mx-auto max-w-screen-xl px-4 md:px-6 lg:px-8">
         <div class="max-w-3xl">
-          <div class="inline-flex items-center rounded-full border border-primary-300/60 bg-primary-50/80 px-3 py-1 text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-primary-700 dark:border-primary-400/20 dark:bg-primary-500/10 dark:text-primary-200">
+          <div class="inline-flex items-center gap-2 rounded-full border border-primary-300/60 bg-primary-50/80 px-3 py-1 text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-primary-700 dark:border-primary-400/20 dark:bg-primary-500/10 dark:text-primary-200">
+            <span aria-hidden="true" class="relative flex h-2 w-2">
+                <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary-400 opacity-60"></span>
+                <span class="relative inline-flex h-2 w-2 rounded-full bg-primary-500"></span>
+            </span>
             {{ i18n "ui_impact_eyebrow" }}
           </div>
           <h2 class="mt-4 text-3xl font-black tracking-tight text-slate-950 sm:text-4xl dark:text-white">
-            {{ i18n "ui_impact_heading" }}
+            {{ printf (i18n "ui_impact_heading") $currentYearNum }}
           </h2>
           <p class="mt-4 max-w-2xl text-base leading-8 text-slate-700 dark:text-slate-200 sm:text-lg">
             {{ i18n "ui_impact_lead" }}
@@ -294,32 +321,52 @@
             <div class="mt-2 text-sm font-semibold text-slate-900 dark:text-white">{{ i18n "ui_metric_years" }}</div>
             <div class="mt-1 text-xs text-slate-500 dark:text-slate-400">{{ i18n "ui_metric_years_note" }}</div>
           </li>
-          <li class="rounded-2xl border border-violet-200 bg-white/85 px-4 py-5 shadow-sm shadow-violet-500/10 dark:border-violet-500/30 dark:bg-white/[0.04]">
-            <div class="text-3xl font-black tracking-tight text-violet-700 dark:text-violet-300 md:text-4xl">{{ $researcherCount }}</div>
-            <div class="mt-2 text-sm font-semibold text-slate-900 dark:text-white">{{ i18n "ui_metric_researchers" }}</div>
-            <div class="mt-1 text-xs text-slate-500 dark:text-slate-400">{{ i18n "ui_metric_researchers_note" }}</div>
-          </li>
           <li class="rounded-2xl border border-blue-200 bg-white/85 px-4 py-5 shadow-sm shadow-blue-500/10 dark:border-blue-500/30 dark:bg-white/[0.04]">
-            <div class="text-3xl font-black tracking-tight text-blue-700 dark:text-blue-300 md:text-4xl">{{ $publicationCount }}</div>
-            <div class="mt-2 text-sm font-semibold text-slate-900 dark:text-white">{{ i18n "ui_metric_publications" }}</div>
-            <div class="mt-1 text-xs text-slate-500 dark:text-slate-400">{{ i18n "ui_metric_publications_note" }}</div>
+            <div class="text-3xl font-black tracking-tight text-blue-700 dark:text-blue-300 md:text-4xl">{{ $pubsThisYear }}</div>
+            <div class="mt-2 text-sm font-semibold text-slate-900 dark:text-white">{{ printf (i18n "ui_metric_pubs_this_year") $currentYearNum }}</div>
+            <div class="mt-1 text-xs text-slate-500 dark:text-slate-400">{{ i18n "ui_metric_pubs_this_year_note" }}</div>
+          </li>
+          <li class="rounded-2xl border border-amber-200 bg-white/85 px-4 py-5 shadow-sm shadow-amber-500/10 dark:border-amber-500/30 dark:bg-white/[0.04]">
+            <div class="text-3xl font-black tracking-tight text-amber-700 dark:text-amber-300 md:text-4xl">{{ $defensesThisYear }}</div>
+            <div class="mt-2 text-sm font-semibold text-slate-900 dark:text-white">{{ printf (i18n "ui_metric_defenses_this_year") $currentYearNum }}</div>
+            <div class="mt-1 text-xs text-slate-500 dark:text-slate-400">{{ i18n "ui_metric_defenses_this_year_note" }}</div>
           </li>
           <li class="rounded-2xl border border-rose-200 bg-white/85 px-4 py-5 shadow-sm shadow-rose-500/10 dark:border-rose-500/30 dark:bg-white/[0.04]">
             <div class="text-3xl font-black tracking-tight text-rose-700 dark:text-rose-300 md:text-4xl">{{ $productCount }}</div>
             <div class="mt-2 text-sm font-semibold text-slate-900 dark:text-white">{{ i18n "ui_metric_products" }}</div>
             <div class="mt-1 text-xs text-slate-500 dark:text-slate-400">{{ i18n "ui_metric_products_note" }}</div>
           </li>
-          <li class="col-span-2 rounded-2xl border border-teal-200 bg-white/85 px-4 py-5 shadow-sm shadow-teal-500/10 dark:border-teal-500/30 dark:bg-white/[0.04] md:col-span-1">
-            <div class="text-3xl font-black tracking-tight text-teal-700 dark:text-teal-300 md:text-4xl">{{ $supervisionCount }}</div>
-            <div class="mt-2 text-sm font-semibold text-slate-900 dark:text-white">{{ i18n "ui_metric_supervisions" }}</div>
-            <div class="mt-1 text-xs text-slate-500 dark:text-slate-400">{{ i18n "ui_metric_supervisions_note" }}</div>
+          <li class="col-span-2 rounded-2xl border border-violet-200 bg-white/85 px-4 py-5 shadow-sm shadow-violet-500/10 dark:border-violet-500/30 dark:bg-white/[0.04] md:col-span-1">
+            <div class="text-3xl font-black tracking-tight text-violet-700 dark:text-violet-300 md:text-4xl">{{ $researcherCount }}</div>
+            <div class="mt-2 text-sm font-semibold text-slate-900 dark:text-white">{{ i18n "ui_metric_researchers" }}</div>
+            <div class="mt-1 text-xs text-slate-500 dark:text-slate-400">{{ i18n "ui_metric_researchers_note" }}</div>
           </li>
         </ul>
+        {{ if or $lastNewsItem $lastPubItem }}
+        <div class="mt-6 flex flex-wrap items-center gap-x-6 gap-y-2 text-xs text-slate-500 dark:text-slate-400">
+          {{ with $lastNewsItem }}
+          <div class="inline-flex items-center gap-2">
+            <span class="font-semibold uppercase tracking-wider text-slate-600 dark:text-slate-300">{{ i18n "ui_pulse_last_news" }}</span>
+            <span aria-hidden="true">·</span>
+            <span>{{ partial "relative-date.html" (dict "item" .) }}</span>
+            <span aria-hidden="true">·</span>
+            <a href="{{ .url }}" class="text-primary-700 hover:text-primary-800 dark:text-primary-300 dark:hover:text-primary-200 [display:-webkit-box] [-webkit-box-orient:vertical] [-webkit-line-clamp:1] overflow-hidden max-w-md">{{ .title }}</a>
+          </div>
+          {{ end }}
+          {{ with $lastPubItem }}
+          <div class="inline-flex items-center gap-2">
+            <span class="font-semibold uppercase tracking-wider text-slate-600 dark:text-slate-300">{{ i18n "ui_pulse_last_pub" }}</span>
+            <span aria-hidden="true">·</span>
+            <span>{{ partial "relative-date.html" (dict "item" .) }}</span>
+          </div>
+          {{ end }}
+        </div>
+        {{ end }}
         <p class="mt-4 text-xs text-slate-500 dark:text-slate-400">{{ i18n "ui_impact_footnote" }}</p>
       </div>
     </div>
 
-    <!-- Trending topics tag cloud (D4) -->
+    {{/* ====== Áreas + Trending consolidados (Bloco 4) ====== */}}
     {{ $advisorKeys := slice }}
     {{ range $key, $value := hugo.Data.advisors.advisors }}
       {{ $advisorKeys = $advisorKeys | append $key }}
@@ -349,41 +396,94 @@
       {{ $tagsList = $tagsList | append (dict "tag" $tag "count" $count) }}
     {{ end }}
     {{ $tagsList = sort $tagsList "count" "desc" }}
-    {{ $topTags := first 20 $tagsList }}
-    {{ if gt (len $topTags) 0 }}
-    {{ $maxCount := (index $topTags 0).count }}
+    {{ $topTags := first 15 $tagsList }}
+    {{ $areaPages := where .Site.RegularPages "Section" "areas" }}
+    {{ $areaPages = where $areaPages "File.BaseFileName" "ne" "lista" }}
+    {{ $areaPages = sort $areaPages "Params.weight" "asc" }}
+
     <div class="relative py-8 sm:py-10 lg:py-12">
       <div class="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-slate-300/70 to-transparent dark:via-white/10"></div>
       <div class="mx-auto max-w-screen-xl px-4 md:px-6 lg:px-8">
-        <div class="max-w-3xl">
-          <div class="inline-flex items-center rounded-full border border-primary-300/60 bg-primary-50/80 px-3 py-1 text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-primary-700 dark:border-primary-400/20 dark:bg-primary-500/10 dark:text-primary-200">
-            {{ i18n "ui_trending_eyebrow" }}
+        <div class="grid gap-8 lg:grid-cols-12 lg:gap-10">
+          {{/* LEFT — Areas grid */}}
+          <div class="lg:col-span-8">
+            <div class="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+              <div>
+                <div class="inline-flex items-center rounded-full border border-primary-300/60 bg-primary-50/80 px-3 py-1 text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-primary-700 dark:border-primary-400/20 dark:bg-primary-500/10 dark:text-primary-200">
+                  {{ i18n "ui_areas_grid_eyebrow" }}
+                </div>
+                <h2 class="mt-3 text-3xl font-black tracking-tight text-slate-950 sm:text-4xl dark:text-white">
+                  {{ i18n "ui_areas_grid_heading" }}
+                </h2>
+                <p class="mt-3 max-w-2xl text-sm leading-6 text-slate-700 dark:text-slate-200 sm:text-base sm:leading-7">
+                  {{ i18n "ui_areas_grid_lead" }}
+                </p>
+              </div>
+              <a href="{{ "/areas/" | relLangURL }}" class="inline-flex flex-shrink-0 items-center gap-1 rounded-full border border-slate-300/70 bg-white/70 px-4 py-2 text-xs font-semibold uppercase tracking-[0.16em] text-slate-700 shadow-sm backdrop-blur transition-colors hover:border-primary-300 hover:text-primary-700 dark:border-white/10 dark:bg-white/[0.04] dark:text-slate-200 dark:hover:border-primary-400/30 dark:hover:text-primary-200">
+                {{ i18n "ui_areas_grid_view_all" }}
+                <span aria-hidden="true">&rarr;</span>
+              </a>
+            </div>
+
+            <ul class="mt-6 grid grid-cols-2 gap-3 md:grid-cols-3">
+              {{ range $areaPages }}
+              <li>
+                <a href="{{ .RelPermalink }}" class="group flex h-full flex-col rounded-xl border border-slate-200/80 bg-white/85 px-3.5 py-3 shadow-sm backdrop-blur transition-all hover:-translate-y-0.5 hover:border-primary-300 hover:shadow-md dark:border-white/10 dark:bg-white/[0.04] dark:hover:border-primary-400/40">
+                  <div class="flex items-center gap-2.5">
+                    {{ with .Params.featured_image }}
+                      {{ $imgPath := replace . "../assets/" "" }}
+                      {{ with resources.Get $imgPath }}
+                        {{ with .Resize "80x80 webp q80" }}
+                        <span class="flex h-9 w-9 flex-shrink-0 items-center justify-center overflow-hidden rounded-lg border border-slate-200/70 bg-white p-1 dark:border-white/10 dark:bg-white/[0.04]">
+                          <img src="{{ .RelPermalink }}" alt="" class="max-h-full max-w-full object-contain" loading="lazy" />
+                        </span>
+                        {{ end }}
+                      {{ end }}
+                    {{ end }}
+                    <span class="text-sm font-bold leading-tight text-slate-900 group-hover:text-primary-700 dark:text-white dark:group-hover:text-primary-200">
+                      {{ .Title }}
+                    </span>
+                  </div>
+                </a>
+              </li>
+              {{ end }}
+            </ul>
           </div>
-          <h2 class="mt-4 text-3xl font-black tracking-tight text-slate-950 sm:text-4xl dark:text-white">
-            {{ i18n "ui_trending_heading" }}
-          </h2>
-          <p class="mt-4 max-w-2xl text-base leading-8 text-slate-700 dark:text-slate-200 sm:text-lg">
-            {{ printf (i18n "ui_trending_lead") $minYear $currentYear }}
-          </p>
-        </div>
-        <div class="mt-8 flex flex-wrap items-center gap-x-3 gap-y-4">
-          {{ range $topTags }}
-          {{ $ratio := div (float .count) (float $maxCount) }}
-          {{ $fontRem := add 0.85 (mul $ratio 1.6) }}
-          {{ $opacity := add 0.6 (mul $ratio 0.4) }}
-          {{ $tagLink := printf "/tags/%s" (.tag | urlize) | relLangURL }}
-          <a href="{{ $tagLink }}"
-             style="font-size: {{ printf "%.2frem" $fontRem }}; opacity: {{ printf "%.2f" $opacity }};"
-             class="inline-flex items-center gap-2 font-black tracking-tight text-slate-800 transition-colors hover:text-primary-600 dark:text-slate-100 dark:hover:text-primary-300">
-            {{ .tag | i18n }}
-            <span class="text-xs font-medium text-slate-400 dark:text-slate-500">·{{ .count }}</span>
-          </a>
+
+          {{/* RIGHT — Trending tags compact */}}
+          {{ if gt (len $topTags) 0 }}
+          {{ $maxCount := (index $topTags 0).count }}
+          <div class="lg:col-span-4">
+            <div class="rounded-2xl border border-slate-200/80 bg-white/85 p-5 shadow-sm backdrop-blur dark:border-white/10 dark:bg-white/[0.04]">
+              <div class="inline-flex items-center rounded-full border border-primary-300/60 bg-primary-50/80 px-3 py-1 text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-primary-700 dark:border-primary-400/20 dark:bg-primary-500/10 dark:text-primary-200">
+                {{ i18n "ui_trending_eyebrow" }}
+              </div>
+              <h3 class="mt-3 text-lg font-black leading-tight text-slate-950 dark:text-white">
+                {{ i18n "ui_trending_heading" }}
+              </h3>
+              <p class="mt-2 text-xs leading-5 text-slate-500 dark:text-slate-400">
+                {{ printf (i18n "ui_trending_lead") $minYear $currentYear }}
+              </p>
+
+              <div class="mt-5 flex flex-wrap items-center gap-x-2 gap-y-2">
+                {{ range $topTags }}
+                {{ $ratio := div (float .count) (float $maxCount) }}
+                {{ $fontRem := add 0.75 (mul $ratio 0.9) }}
+                {{ $tagLink := printf "/tags/%s" (.tag | urlize) | relLangURL }}
+                <a href="{{ $tagLink }}"
+                   style="font-size: {{ printf "%.2frem" $fontRem }};"
+                   class="inline-flex items-center gap-1 font-bold tracking-tight text-slate-800 transition-colors hover:text-primary-600 dark:text-slate-100 dark:hover:text-primary-300">
+                  {{ .tag | i18n }}
+                  <span class="text-[0.6rem] font-medium text-slate-400 dark:text-slate-500">·{{ .count }}</span>
+                </a>
+                {{ end }}
+              </div>
+            </div>
+          </div>
           {{ end }}
         </div>
-        <p class="mt-6 text-xs text-slate-500 dark:text-slate-400">{{ i18n "ui_trending_footnote" }}</p>
       </div>
     </div>
-    {{ end }}
 
     <!-- Featured products carousel -->
     {{ $featuredProducts := where (where .Site.RegularPages "Section" "products") "Params.featured_home" true }}
@@ -534,66 +634,61 @@
     </div>
     {{ end }}
 
-    <!-- Sponsors section -->
-    <div class="relative py-8 sm:py-10 lg:py-16">
+    {{/* ====== Sponsors — horizontal marquee (Bloco 5) ====== */}}
+    {{ $partnersLink := "" }}
+    {{ range .Site.Params.P3.Links }}{{ $partnersLink = .url }}{{ end }}
+    <div class="relative py-8 sm:py-10 lg:py-12">
+        <div class="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-slate-300/70 to-transparent dark:via-white/10"></div>
         <div class="mx-auto max-w-screen-xl px-4 md:px-6 lg:px-8">
-            <div class="grid items-start gap-8 lg:grid-cols-12 lg:gap-10">
-                <div class="lg:col-span-4 lg:sticky lg:top-24">
+            <div class="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+                <div class="max-w-2xl">
                     <div class="inline-flex items-center rounded-full border border-slate-300/70 bg-white/80 px-3 py-1 text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-slate-600 shadow-sm backdrop-blur dark:border-white/10 dark:bg-white/[0.04] dark:text-slate-300">
                         {{ $partnersEyebrow }}
                     </div>
-                    <h2 class="mt-5 text-3xl font-black tracking-tight text-slate-950 sm:text-4xl dark:text-white">
+                    <h2 class="mt-3 text-2xl font-black tracking-tight text-slate-950 sm:text-3xl dark:text-white">
                         {{ .Site.Params.P3.Heading }}
                     </h2>
-                    <p class="mt-4 max-w-xl text-lg leading-8 text-slate-700 dark:text-slate-200">
+                    <p class="mt-2 text-sm leading-6 text-slate-600 dark:text-slate-300 sm:text-base">
                         {{ $partnersLead }}
                     </p>
-                    {{ range .Site.Params.P3.Content }}
-                    <p class="mt-4 max-w-xl text-base leading-7 text-slate-600 dark:text-slate-300 sm:text-lg">
-                        {{ .text }}
-                    </p>
-                    {{ end }}
-                    <div class="mt-6 inline-flex items-baseline gap-3 rounded-2xl border border-slate-200/80 bg-white/80 px-4 py-3 shadow-sm dark:border-white/10 dark:bg-white/[0.04]">
-                        <span class="text-2xl font-black tracking-tight text-slate-950 dark:text-white">{{ len .Site.Params.P3.Logos }}</span>
-                        <span class="text-sm font-medium text-slate-600 dark:text-slate-300">{{ $partnersCountLabel }}</span>
-                    </div>
-                    {{ range .Site.Params.P3.Links }}
-                    <div class="mt-6">
-                        <a href="{{ .url }}" class="inline-flex items-center justify-center rounded-full bg-slate-950 px-5 py-3 text-sm font-semibold uppercase tracking-[0.18em] text-white transition-colors hover:bg-slate-800 dark:bg-white dark:text-slate-950 dark:hover:bg-slate-200">
-                            {{ .text }}
-                            <span class="ml-2">&rarr;</span>
-                        </a>
-                    </div>
-                    {{ end }}
                 </div>
-                <div class="lg:col-span-8">
-                    <div class="relative overflow-hidden rounded-[2rem] border border-slate-200/80 bg-[linear-gradient(180deg,_rgba(255,255,255,0.96),_rgba(241,245,249,0.88))] p-5 shadow-[0_24px_80px_rgba(15,23,42,0.08)] dark:border-white/10 dark:bg-[linear-gradient(180deg,_rgba(15,23,42,0.72),_rgba(2,6,23,0.92))] sm:p-6">
-                        <div aria-hidden="true" class="absolute -right-10 top-0 h-28 w-28 rounded-full bg-primary-300/20 blur-3xl dark:bg-primary-500/10"></div>
-                        <div class="relative flex items-center justify-between gap-4 border-b border-slate-200/80 pb-4 dark:border-white/10">
-                            <div>
-                                <div class="text-xs font-semibold uppercase tracking-[0.22em] text-slate-500 dark:text-slate-400">{{ $partnersPanelLabel }}</div>
-                                <div class="mt-2 text-lg font-semibold text-slate-900 dark:text-white">{{ .Site.Params.P3.Heading }}</div>
-                            </div>
-                        </div>
-                        <div class="relative mt-5 grid grid-cols-2 gap-4 md:grid-cols-3">
-                            {{ range .Site.Params.P3.Logos }}
-                            <div class="group flex min-h-[9rem] flex-col justify-between rounded-[1.5rem] border border-slate-200/80 bg-white/90 px-4 py-4 shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-md dark:border-white/10 dark:bg-white/[0.04]">
-                                <div class="flex min-h-[4.5rem] items-center justify-center rounded-2xl bg-slate-50/90 px-4 py-3 dark:bg-slate-950/40">
-                                    {{ if .image }}
-                                    {{ $sponsor := resources.Get .image }}
-                                    <img src="{{ $sponsor.RelPermalink }}" class="max-h-12 w-auto object-contain dark:invert" alt="{{ .alt }}" loading="lazy" />
-                                    {{ else }}
-                                    {{ $sponsor := resources.Get "images/global/sample-logo.svg" }}
-                                    <img src="{{ $sponsor.RelPermalink }}" class="max-h-12 w-auto object-contain dark:invert" alt="{{ .alt }}" loading="lazy" />
-                                    {{ end }}
-                                </div>
-                                <div class="mt-4 text-center text-sm font-semibold tracking-wide text-slate-700 dark:text-slate-200">{{ .identifier }}</div>
-                            </div>
-                            {{ end }}
-                        </div>
+                {{ if $partnersLink }}
+                <a href="{{ $partnersLink }}" class="inline-flex flex-shrink-0 items-center gap-1 self-start rounded-full border border-slate-300/70 bg-white/70 px-4 py-2 text-xs font-semibold uppercase tracking-[0.16em] text-slate-700 shadow-sm backdrop-blur transition-colors hover:border-primary-300 hover:text-primary-700 dark:border-white/10 dark:bg-white/[0.04] dark:text-slate-200 dark:hover:border-primary-400/30 dark:hover:text-primary-200">
+                    {{ range .Site.Params.P3.Links }}{{ .text }}{{ end }}
+                    <span aria-hidden="true">&rarr;</span>
+                </a>
+                {{ end }}
+            </div>
+
+            <div class="group relative mt-6 overflow-hidden rounded-2xl border border-slate-200/70 bg-white/60 py-6 backdrop-blur dark:border-white/10 dark:bg-white/[0.03]">
+                <div aria-hidden="true" class="pointer-events-none absolute inset-y-0 left-0 z-10 w-12 bg-gradient-to-r from-white to-transparent dark:from-slate-950"></div>
+                <div aria-hidden="true" class="pointer-events-none absolute inset-y-0 right-0 z-10 w-12 bg-gradient-to-l from-white to-transparent dark:from-slate-950"></div>
+                <div class="flex w-max animate-marquee items-center gap-12 pl-12 group-hover:[animation-play-state:paused]">
+                    {{ range .Site.Params.P3.Logos }}
+                    <div class="flex flex-shrink-0 flex-col items-center gap-2">
+                        {{ if .image }}
+                        {{ $sponsor := resources.Get .image }}
+                        <img src="{{ $sponsor.RelPermalink }}" class="h-10 w-auto max-w-[8rem] object-contain opacity-70 grayscale transition-all group-hover:opacity-100 group-hover:grayscale-0 dark:invert" alt="{{ .alt }}" loading="lazy" />
+                        {{ else }}
+                        {{ $sponsor := resources.Get "images/global/sample-logo.svg" }}
+                        <img src="{{ $sponsor.RelPermalink }}" class="h-10 w-auto max-w-[8rem] object-contain opacity-70 grayscale transition-all group-hover:opacity-100 group-hover:grayscale-0 dark:invert" alt="{{ .alt }}" loading="lazy" />
+                        {{ end }}
+                        <span class="text-[0.6rem] font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400">{{ .identifier }}</span>
                     </div>
+                    {{ end }}
+                    {{/* Duplicate for seamless loop */}}
+                    {{ range .Site.Params.P3.Logos }}
+                    <div aria-hidden="true" class="flex flex-shrink-0 flex-col items-center gap-2">
+                        {{ if .image }}
+                        {{ $sponsor := resources.Get .image }}
+                        <img src="{{ $sponsor.RelPermalink }}" class="h-10 w-auto max-w-[8rem] object-contain opacity-70 grayscale transition-all group-hover:opacity-100 group-hover:grayscale-0 dark:invert" alt="" loading="lazy" />
+                        {{ end }}
+                        <span class="text-[0.6rem] font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400">{{ .identifier }}</span>
+                    </div>
+                    {{ end }}
                 </div>
             </div>
+            <p class="mt-3 text-center text-xs text-slate-500 dark:text-slate-400">{{ i18n "ui_partners_marquee_note" }}</p>
         </div>
     </div>
 
