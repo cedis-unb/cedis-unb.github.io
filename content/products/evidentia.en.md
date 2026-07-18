@@ -5,6 +5,9 @@ date: 2026-03-09T18:00:00-03:00
 language: en
 product_language: pt/en
 weight: 1
+featured_home: true
+featured_home_order: 1
+featured_home_url: "https://evidentia.cedis.tec.br/"
 featured_image: "../assets/images/featured/evidentia-logo.png"
 summary: Digital platform by CEDIS/UnB for planning, screening, extraction, and reporting of systematic literature reviews with traceability, collaboration, and reproducible outputs.
 authorimage: ../assets/images/global/author.webp

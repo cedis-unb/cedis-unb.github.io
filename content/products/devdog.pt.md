@@ -5,6 +5,9 @@ date: 2026-04-19T12:00:00-03:00
 language: pt
 product_language: pt
 weight: 3
+featured_home: true
+featured_home_order: 2
+featured_home_url: "https://devdog.cedis.tec.br/"
 featured_image: "../assets/images/featured/devdog-logo.png"
 summary: Aplicação web desenvolvida em TCC com apoio acadêmico do CEDIS para aprendizagem gamificada de code smells, com guias conceituais, exercícios interativos, dicas, petiscos, estatísticas e progressão.
 authorimage: ../assets/images/global/author.webp

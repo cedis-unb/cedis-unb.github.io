@@ -363,6 +363,17 @@ ui_trending_heading: "What we are researching now"
 ui_trending_lead: "Most frequent keywords in publications from %d to %d. Tag size reflects how many works cover each topic."
 ui_trending_footnote: "Based on the tags of publications registered in data/productions.yaml."
 
+# Featured products carousel
+ui_featured_products_eyebrow: "Featured products"
+ui_featured_products_heading: "Software and experiences shipped by CEDIS"
+ui_featured_products_lead: "A curated selection of digital products built by our researchers, students, and partners — in use today at the University of Brasília and beyond."
+ui_featured_products_cta: "Learn about the product"
+ui_featured_products_external: "Open the platform"
+ui_featured_products_previous: "Previous product"
+ui_featured_products_next: "Next product"
+ui_featured_products_goto: "Go to product %d"
+ui_featured_products_all: "See all products"
+
 # Interactive timeline (D2)
 ui_timeline_navigate: "Navigate the timeline"
 ui_timeline_expand_all: "Expand all"
