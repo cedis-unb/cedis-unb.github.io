@@ -5,9 +5,6 @@ date: 2025-12-16T09:00:00-03:00
 language: pt
 product_language: pt
 weight: 4
-featured_home: true
-featured_home_order: 3
-featured_home_url: "https://github.com/CedisUnB/Nativo"
 featured_image: "../assets/images/featured/nativo-logo.png"
 summary: Aplicativo móvel desenvolvido em TCC na UnB para apoiar a preservação e o ensino de línguas indígenas brasileiras, com foco inicial na língua Munduruku, por meio de consultas, histórico e curadoria colaborativa de traduções.
 authorimage: ../assets/images/global/author.webp
