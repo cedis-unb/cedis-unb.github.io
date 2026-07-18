@@ -19,7 +19,7 @@
 </script>
 {{ partial "meta" . }}
 {{- with index (where .AllTranslations "Language.Lang" "pt") 0 -}}
-<script>window.__cedisPtURL = {{ .RelPermalink | jsonify }};</script>
+<script>window.__cedisPtURL = {{ .RelPermalink | jsonify | safeJS }};</script>
 {{- end }}
 <script>
     // Language auto-detect: redirect BR users from EN pages to /pt/ equivalent.
@@ -31,16 +31,21 @@
             var stored = null;
             try { stored = localStorage.getItem('cedisLang'); } catch (e) {}
             if (stored === 'en') return;
-            if (sessionStorage.getItem('cedisLangRedirected')) return;
+            var redirectKey = 'cedisLangRedirected:' + path;
+            if (stored !== 'pt' && sessionStorage.getItem(redirectKey)) return;
             var ua = (navigator.userAgent || '').toLowerCase();
             if (/bot|crawl|spider|slurp|preview|facebookexternalhit|whatsapp/i.test(ua)) return;
-            var browserLang = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
-            var wantsPT = stored === 'pt' || browserLang.indexOf('pt') === 0;
+            var browserLangs = navigator.languages && navigator.languages.length
+                ? navigator.languages
+                : [navigator.language || navigator.userLanguage || 'en'];
+            var wantsPT = stored === 'pt' || browserLangs.some(function (lang) {
+                return String(lang).toLowerCase().indexOf('pt') === 0;
+            });
             if (!wantsPT) return;
             var target = window.__cedisPtURL;
             if (!target || target === path) return;
-            sessionStorage.setItem('cedisLangRedirected', '1');
-            location.replace(target);
+            sessionStorage.setItem(redirectKey, '1');
+            location.replace(target + location.search + location.hash);
         } catch (e) { /* ignore */ }
     })();
 </script>
