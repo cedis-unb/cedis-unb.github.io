@@ -454,6 +454,7 @@ ui_metric_defenses_this_year: "defenses in %d"
 ui_metric_defenses_this_year_note: "undergrad, master's, PhD"
 ui_metric_registrations_this_year: "registrations in %d"
 ui_metric_registrations_this_year_note: "software, patents, INPI"
+ui_metric_products_this_year: "digital products in %d"
 
 # Totals metrics (history page)
 ui_history_metrics_eyebrow: "CEDIS in numbers"
