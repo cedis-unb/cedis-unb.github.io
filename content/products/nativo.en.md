@@ -5,6 +5,9 @@ date: 2025-12-16T09:00:00-03:00
 language: en
 product_language: pt
 weight: 4
+featured_home: true
+featured_home_order: 3
+featured_home_url: "https://github.com/CedisUnB/Nativo"
 featured_image: "../assets/images/featured/nativo-logo.png"
 summary: Mobile application developed as a bachelor's thesis at the University of Brasilia to support the preservation and teaching of Brazilian Indigenous languages, initially focused on Munduruku, through translation lookup, history, and collaborative curation.
 authorimage: ../assets/images/global/author.webp

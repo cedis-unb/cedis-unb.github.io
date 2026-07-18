@@ -5,6 +5,9 @@ date: 2026-04-19T12:00:00-03:00
 language: en
 product_language: pt
 weight: 3
+featured_home: true
+featured_home_order: 2
+featured_home_url: "https://devdog.cedis.tec.br/"
 featured_image: "../assets/images/featured/devdog-logo.png"
 summary: Web application developed as a bachelor's thesis with academic support from CEDIS for gamified learning about code smells, combining conceptual guides, interactive exercises, hints, treats, statistics, and progression.
 authorimage: ../assets/images/global/author.webp
