@@ -5,6 +5,9 @@ date: 2026-03-09T18:00:00-03:00
 language: pt
 product_language: pt/en
 weight: 1
+featured_home: true
+featured_home_order: 1
+featured_home_url: "https://evidentia.cedis.tec.br/"
 featured_image: "../assets/images/featured/evidentia-logo.png"
 summary: Plataforma digital do CEDIS/UnB para planejamento, triagem, extração e relato de revisões sistemáticas da literatura, com rastreabilidade, colaboração e relatórios reproduzíveis.
 authorimage: ../assets/images/global/author.webp
