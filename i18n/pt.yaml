@@ -452,6 +452,7 @@ ui_metric_defenses_this_year: "defesas em %d"
 ui_metric_defenses_this_year_note: "TCC, mestrado e doutorado"
 ui_metric_registrations_this_year: "registros em %d"
 ui_metric_registrations_this_year_note: "software, patentes, INPI"
+ui_metric_products_this_year: "produtos digitais em %d"
 
 # Métricas totais (página de história)
 ui_history_metrics_eyebrow: "CEDIS em números"
