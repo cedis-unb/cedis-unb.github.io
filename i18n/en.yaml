@@ -398,6 +398,32 @@ pub_type_specialization: "Specialization"
 pub_type_phd: "PhD thesis"
 pub_type_tcc: "Undergraduate thesis"
 
+# Home hero — persona tracks
+ui_persona_study_label: "Study with us"
+ui_persona_study_desc: "Undergraduate thesis, master's, PhD"
+ui_persona_explore_label: "See our work"
+ui_persona_explore_desc: "Areas, projects, products"
+ui_persona_partner_label: "Partner and press"
+ui_persona_partner_desc: "Contact, calls, press kit"
+
+# Home hero — "this week" pulse
+ui_pulse_eyebrow: "This week at CEDIS"
+ui_pulse_new_badge: "NEW"
+ui_pulse_view_all: "See all updates"
+ui_pulse_ago_days: "%d days ago"
+ui_pulse_ago_day: "yesterday"
+ui_pulse_ago_today: "today"
+ui_pulse_ago_weeks: "%d weeks ago"
+ui_pulse_ago_week: "1 week ago"
+ui_pulse_ago_months: "%d months ago"
+ui_pulse_ago_month: "1 month ago"
+ui_pulse_ago_year: "in %d"
+ui_pulse_type_news: "News"
+ui_pulse_type_publication: "Publication"
+ui_pulse_type_defense: "Defense"
+ui_pulse_type_product: "Product"
+ui_pulse_read_more: "Read more"
+
 # Profile — contact and CTAs
 people_lattes: "Lattes CV"
 ui_copy_email: "Copy email"
