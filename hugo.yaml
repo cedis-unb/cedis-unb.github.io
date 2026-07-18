@@ -110,6 +110,12 @@ languages:
           name: Produções
           weight: 40
       cedis:
+        - identifier: about
+          pre: piechart
+          name: "Sobre o CEDIS"
+          post: "O que fazemos, quem somos e para onde vamos"
+          url: /about/
+          weight: 5
         - identifier: areas
           pre: stars
           name: "Áreas de atuação"
@@ -318,6 +324,12 @@ languages:
           name: Productions
           weight: 40
       cedis:
+        - identifier: about
+          pre: piechart
+          name: "About CEDIS"
+          post: "What we do, who we are, where we're going"
+          url: /about/
+          weight: 5
         - identifier: areas
           pre: stars
           name: "Areas of expertise"

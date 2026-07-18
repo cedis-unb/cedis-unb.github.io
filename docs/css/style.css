@@ -2201,6 +2201,11 @@ video {
   border-color: rgb(16 185 129 / var(--tw-border-opacity, 1));
 }
 
+.border-fuchsia-200 {
+  --tw-border-opacity: 1;
+  border-color: rgb(245 208 254 / var(--tw-border-opacity, 1));
+}
+
 .border-gray-200\/80 {
   border-color: rgb(229 231 235 / 0.8);
 }
@@ -2323,11 +2328,6 @@ video {
   border-color: rgb(255 255 255 / 0.7);
 }
 
-.border-fuchsia-200 {
-  --tw-border-opacity: 1;
-  border-color: rgb(245 208 254 / var(--tw-border-opacity, 1));
-}
-
 .bg-\[\#A6CE39\] {
   --tw-bg-opacity: 1;
   background-color: rgb(166 206 57 / var(--tw-bg-opacity, 1));
@@ -2395,11 +2395,6 @@ video {
 .bg-emerald-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(16 185 129 / var(--tw-bg-opacity, 1));
-}
-
-.bg-fuchsia-100 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(250 232 255 / var(--tw-bg-opacity, 1));
 }
 
 .bg-fuchsia-500 {
@@ -3826,6 +3821,11 @@ video {
   --tw-shadow: var(--tw-shadow-colored);
 }
 
+.shadow-fuchsia-500\/10 {
+  --tw-shadow-color: rgb(217 70 239 / 0.1);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
 .shadow-fuchsia-500\/30 {
   --tw-shadow-color: rgb(217 70 239 / 0.3);
   --tw-shadow: var(--tw-shadow-colored);
@@ -3893,11 +3893,6 @@ video {
 
 .shadow-violet-500\/30 {
   --tw-shadow-color: rgb(139 92 246 / 0.3);
-  --tw-shadow: var(--tw-shadow-colored);
-}
-
-.shadow-fuchsia-500\/10 {
-  --tw-shadow-color: rgb(217 70 239 / 0.1);
   --tw-shadow: var(--tw-shadow-colored);
 }
 
@@ -4639,6 +4634,10 @@ EmojiSymbols;
   border-color: rgb(16 185 129 / 0.3);
 }
 
+.dark\:border-fuchsia-500\/30:is(.dark *) {
+  border-color: rgb(217 70 239 / 0.3);
+}
+
 .dark\:border-gray-950:is(.dark *) {
   --tw-border-opacity: 1;
   border-color: rgb(3 7 18 / var(--tw-border-opacity, 1));
@@ -4684,10 +4683,6 @@ EmojiSymbols;
   border-color: rgb(255 255 255 / 0.1);
 }
 
-.dark\:border-fuchsia-500\/30:is(.dark *) {
-  border-color: rgb(217 70 239 / 0.3);
-}
-
 .dark\:bg-amber-400\/10:is(.dark *) {
   background-color: rgb(251 191 36 / 0.1);
 }
@@ -4706,10 +4701,6 @@ EmojiSymbols;
 
 .dark\:bg-emerald-500\/15:is(.dark *) {
   background-color: rgb(16 185 129 / 0.15);
-}
-
-.dark\:bg-fuchsia-500\/15:is(.dark *) {
-  background-color: rgb(217 70 239 / 0.15);
 }
 
 .dark\:bg-gray-800:is(.dark *) {
@@ -4952,9 +4943,9 @@ EmojiSymbols;
   color: rgb(110 231 183 / var(--tw-text-opacity, 1));
 }
 
-.dark\:text-fuchsia-200:is(.dark *) {
+.dark\:text-fuchsia-300:is(.dark *) {
   --tw-text-opacity: 1;
-  color: rgb(245 208 254 / var(--tw-text-opacity, 1));
+  color: rgb(240 171 252 / var(--tw-text-opacity, 1));
 }
 
 .dark\:text-gray-100:is(.dark *) {
@@ -5067,11 +5058,6 @@ EmojiSymbols;
 
 .dark\:text-white\/80:is(.dark *) {
   color: rgb(255 255 255 / 0.8);
-}
-
-.dark\:text-fuchsia-300:is(.dark *) {
-  --tw-text-opacity: 1;
-  color: rgb(240 171 252 / var(--tw-text-opacity, 1));
 }
 
 .dark\:shadow-\[0_18px_48px_rgba\(0\2c 0\2c 0\2c 0\.22\)\]:is(.dark *) {
@@ -5841,6 +5827,11 @@ EmojiSymbols;
     padding-top: 2.5rem;
   }
 
+  .lg\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
   .lg\:text-6xl {
     font-size: 3.75rem;
     line-height: 1;
@@ -5849,11 +5840,6 @@ EmojiSymbols;
   .lg\:text-7xl {
     font-size: 4.5rem;
     line-height: 1;
-  }
-
-  .lg\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
   }
 }
 
