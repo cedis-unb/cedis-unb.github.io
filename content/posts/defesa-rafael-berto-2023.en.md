@@ -5,7 +5,7 @@ draft: false
 weight: 500
 language: en
 featured_image: "../assets/images/featured/area_Transformação Digital.png"
-summary: 'Rafael Berto Pereira defended at UnB Gama an undergraduate thesis investigating the complementary use of ChatGPT in software engineering processes — through a case study with previously defined guidelines.'
+summary: 'Rafael Berto Pereira defended at FCTE/UnB an undergraduate thesis investigating the complementary use of ChatGPT in software engineering processes — through a case study with previously defined guidelines.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp
 categories:

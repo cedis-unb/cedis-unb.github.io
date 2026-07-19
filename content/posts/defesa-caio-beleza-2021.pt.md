@@ -5,7 +5,7 @@ draft: false
 weight: 500
 language: pt
 featured_image: "../assets/images/featured/area_Software Quality.png"
-summary: 'Caio César de Almeida Beleza defendeu na UnB Gama um TCC que analisa problemas em interfaces de software que empurram usuários para o erro e sistematiza recomendações para evitá-los.'
+summary: 'Caio César de Almeida Beleza defendeu na FCTE/UnB um TCC que analisa problemas em interfaces de software que empurram usuários para o erro e sistematiza recomendações para evitá-los.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp
 categories:
@@ -17,7 +17,7 @@ tags:
 ---
 Brasília, 19 de maio de 2021
 
-Culpar o usuário é a saída fácil. Mas boa parte dos erros que aparecem no rastro de um sistema é induzida por escolhas de design que passaram pela equipe sem qualquer contestação. **É esse ponto cego que Caio César de Almeida Beleza põe sob observação em seu TCC**, defendido em maio de 2021 na Faculdade UnB Gama, orientado pela Prof.ª {{< link-interno "/people/fabiana_mendes" "Fabiana Freitas Mendes" >}}.
+Culpar o usuário é a saída fácil. Mas boa parte dos erros que aparecem no rastro de um sistema é induzida por escolhas de design que passaram pela equipe sem qualquer contestação. **É esse ponto cego que Caio César de Almeida Beleza põe sob observação em seu TCC**, defendido em maio de 2021 na Faculdade de Ciências e Tecnologias em Engenharia (FCTE), orientado pela Prof.ª {{< link-interno "/people/fabiana_mendes" "Fabiana Freitas Mendes" >}}.
 
 O trabalho parte de uma premissa da interação humano-computador que já é lugar-comum entre pesquisadores: a efetividade do uso depende tanto da qualidade do sistema quanto do modo como as pessoas o operam. Erros humanos, sob esse enquadramento, não são falhas isoladas de operação — são sintomas frequentes de uma interface que emitiu sinais ambíguos, escondeu opções críticas ou pediu decisões em contexto inadequado.
 

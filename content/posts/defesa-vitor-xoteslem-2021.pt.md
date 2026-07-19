@@ -5,7 +5,7 @@ draft: false
 weight: 500
 language: pt
 featured_image: "../assets/images/featured/area_Verificação e Validação.png"
-summary: 'Vítor Cardoso Xoteslem defendeu na UnB Gama um TCC que elabora estratégia de testes para o app Doarti — mantido por uma equipe de voluntários distribuída geograficamente e em regime de trabalho remoto forçado pela pandemia.'
+summary: 'Vítor Cardoso Xoteslem defendeu na FCTE/UnB um TCC que elabora estratégia de testes para o app Doarti — mantido por uma equipe de voluntários distribuída geograficamente e em regime de trabalho remoto forçado pela pandemia.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp
 categories:
@@ -18,7 +18,7 @@ tags:
 ---
 Brasília, 25 de outubro de 2021
 
-Testar software sozinho já é difícil. Testar em equipe que só existe no Slack, em fuso horário variável e composta inteiramente por voluntários é outro nível de problema — o tipo de problema que a pandemia empurrou para o centro do dia. **É esse cenário que Vítor Cardoso Xoteslem enfrenta em seu TCC**, defendido em outubro de 2021 na Faculdade UnB Gama e orientado pela Prof.ª {{< link-interno "/people/fabiana_mendes" "Fabiana Freitas Mendes" >}}.
+Testar software sozinho já é difícil. Testar em equipe que só existe no Slack, em fuso horário variável e composta inteiramente por voluntários é outro nível de problema — o tipo de problema que a pandemia empurrou para o centro do dia. **É esse cenário que Vítor Cardoso Xoteslem enfrenta em seu TCC**, defendido em outubro de 2021 na Faculdade de Ciências e Tecnologias em Engenharia (FCTE) e orientado pela Prof.ª {{< link-interno "/people/fabiana_mendes" "Fabiana Freitas Mendes" >}}.
 
 O Doarti é um aplicativo que aproxima instituições beneficentes e doadores — um projeto social mantido por voluntários. Com o distanciamento imposto pela COVID-19, a equipe passou a operar de forma assíncrona e distribuída, e a garantia de qualidade virou um desafio de coordenação tanto quanto de técnica. A pergunta que orienta o TCC é: como estruturar testes sem uma equipe co-localizada e sem tempo dedicado uniforme?
 

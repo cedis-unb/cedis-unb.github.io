@@ -5,7 +5,7 @@ draft: false
 weight: 500
 language: en
 featured_image: "../assets/images/featured/area_IA.png"
-summary: 'Luis Bruno Fidelis Gomes defended at UnB Gama an undergraduate thesis developing Business Intelligence dashboards for monitoring by professionals of Brazil’s Psychosocial Care Network.'
+summary: 'Luis Bruno Fidelis Gomes defended at FCTE/UnB an undergraduate thesis developing Business Intelligence dashboards for monitoring by professionals of Brazil’s Psychosocial Care Network.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp
 categories:

@@ -27,7 +27,7 @@ paths:
 
   - id: tcc
     label: "Undergraduate Thesis"
-    audience: "Software Engineering students (UnB Gama)"
+    audience: "Software Engineering students (FCTE)"
     duration: "2 semesters (TCC1 + TCC2)"
     icon: "publications"
     intro: "Write your undergraduate thesis linked to active CEDIS projects, across two semesters (TCC1 and TCC2)."

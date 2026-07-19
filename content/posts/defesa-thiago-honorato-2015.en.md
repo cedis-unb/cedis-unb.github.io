@@ -18,7 +18,7 @@ tags:
 ---
 Brasília, 2015
 
-Publishing content on the web is not just a coding matter: it is a tool-selection matter. For many teams, that selection still happens by inertia — they use whichever CMS the last hire happens to know. **The undergraduate thesis defended by Thiago Silveira Honorato in 2015 at UnB Gama proposes a different path**, under the advising of Prof. {{< link-interno "/people/ricardo_ajax" "Ricardo Ajax Dias Kosloski" >}}: a structured selection method for Content Management Systems.
+Publishing content on the web is not just a coding matter: it is a tool-selection matter. For many teams, that selection still happens by inertia — they use whichever CMS the last hire happens to know. **The undergraduate thesis defended by Thiago Silveira Honorato in 2015 at FCTE/UnB proposes a different path**, under the advising of Prof. {{< link-interno "/people/ricardo_ajax" "Ricardo Ajax Dias Kosloski" >}}: a structured selection method for Content Management Systems.
 
 The work builds on a simple observation: requiring coding skills just to publish content raises barriers many initiatives — especially small ones without dedicated tech teams — cannot cross. CMSs exist precisely to lower that barrier. But the market offers dozens of alternatives with different trade-offs, and the decision itself becomes an additional headache.
 

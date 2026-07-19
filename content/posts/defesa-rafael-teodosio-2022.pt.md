@@ -5,7 +5,7 @@ draft: false
 weight: 500
 language: pt
 featured_image: "../assets/images/featured/area_Gamificação.png"
-summary: 'Rafael Santos Teodosio defendeu na UnB Gama um TCC que projeta e implementa $tudy — sistema gamificado que se propõe a apoiar a educação financeira de jovens.'
+summary: 'Rafael Santos Teodosio defendeu na FCTE/UnB um TCC que projeta e implementa $tudy — sistema gamificado que se propõe a apoiar a educação financeira de jovens.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp
 categories:

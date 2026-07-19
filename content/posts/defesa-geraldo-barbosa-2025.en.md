@@ -5,7 +5,7 @@ draft: false
 weight: 500
 language: en
 featured_image: "../assets/images/featured/area_Engenharia de requisitos.png"
-summary: 'Geraldo Victor Alves Barbosa and João Victor de Oliveira Matos defended at UnB Gama an undergraduate thesis investigating the use of ChatGPT-4o in the requirements elicitation, discovery, and specification process.'
+summary: 'Geraldo Victor Alves Barbosa and João Victor de Oliveira Matos defended at FCTE/UnB an undergraduate thesis investigating the use of ChatGPT-4o in the requirements elicitation, discovery, and specification process.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp
 categories:

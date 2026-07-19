@@ -5,7 +5,7 @@ draft: false
 weight: 500
 language: en
 featured_image: "../assets/images/featured/area_Transformação Digital.png"
-summary: 'Fabiana Luiza Vasconcelos Pfeilsticker Ribas defended at UnB Gama an undergraduate thesis analyzing the accessibility of Brazilian digital public services for elderly people — an agenda that gained urgency with the accelerated digitalization during the pandemic.'
+summary: 'Fabiana Luiza Vasconcelos Pfeilsticker Ribas defended at FCTE/UnB an undergraduate thesis analyzing the accessibility of Brazilian digital public services for elderly people — an agenda that gained urgency with the accelerated digitalization during the pandemic.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp
 categories:

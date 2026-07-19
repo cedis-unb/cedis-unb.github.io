@@ -5,7 +5,7 @@ draft: false
 weight: 500
 language: pt
 featured_image: "../assets/images/featured/area_Software Quality.png"
-summary: 'Gabriel de Jesus Carvalho defendeu na UnB Gama um TCC que desenvolve o IA-QVT — ferramenta para coleta e tratamento de dados sobre qualidade de vida no trabalho, com atenção especial à acessibilidade.'
+summary: 'Gabriel de Jesus Carvalho defendeu na FCTE/UnB um TCC que desenvolve o IA-QVT — ferramenta para coleta e tratamento de dados sobre qualidade de vida no trabalho, com atenção especial à acessibilidade.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp
 categories:
@@ -17,7 +17,7 @@ tags:
 ---
 Brasília, 5 de outubro de 2022
 
-Falar em qualidade de vida no trabalho parece consenso — até o momento em que alguém pergunta como medir. **O TCC defendido em outubro de 2022 por Gabriel de Jesus Carvalho na Faculdade UnB Gama enfrenta essa distância entre discurso e instrumento, e responde com o IA-QVT** — orientado pela Prof.ª {{< link-interno "/people/fabiana_mendes" "Fabiana Freitas Mendes" >}}.
+Falar em qualidade de vida no trabalho parece consenso — até o momento em que alguém pergunta como medir. **O TCC defendido em outubro de 2022 por Gabriel de Jesus Carvalho na Faculdade de Ciências e Tecnologias em Engenharia (FCTE) enfrenta essa distância entre discurso e instrumento, e responde com o IA-QVT** — orientado pela Prof.ª {{< link-interno "/people/fabiana_mendes" "Fabiana Freitas Mendes" >}}.
 
 Os últimos anos trouxeram ao centro do debate os efeitos das dinâmicas contemporâneas de trabalho sobre a saúde física e mental de quem produz software (e não só). Enquanto conceitos como Ergonomia de Atividade se consolidam nas ciências do trabalho, os instrumentos para operacionalizá-los na prática costumam ser dispersos e pouco acessíveis. O IA-QVT surge para ocupar esse vazio: uma ferramenta que apoia a coleta e o tratamento de dados sobre QVT, com atenção especial à inclusão de pessoas com diferentes níveis de familiaridade tecnológica.
 

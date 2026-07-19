@@ -88,7 +88,7 @@ nav_next: true
 
 ## {{< i18n "people_contact" >}}
 - {{< i18n "people_contact_professional" >}}:  
-    Universidade de Brasília, Campus UnB Gama, Brasília - DF, Brasil.
+    Universidade de Brasília, Campus Gama (FCTE), Brasília - DF, Brasil.
 - E-mail: [sergiofreitas@unb.br](mailto:sergiofreitas@unb.br)
 - Lattes: [CV Lattes](http://lattes.cnpq.br/0395549254894676)
 - Orcid:  [Orcid Profile](https://orcid.org/0000-0003-3996-4985)

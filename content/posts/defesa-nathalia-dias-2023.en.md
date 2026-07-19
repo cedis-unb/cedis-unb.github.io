@@ -5,7 +5,7 @@ draft: false
 weight: 500
 language: en
 featured_image: "../assets/images/featured/area_Software Quality.png"
-summary: 'Nathalia Lorena Cardoso Dias defended at UnB Gama an undergraduate thesis using a systematic literature review to investigate why formally defined software improvement processes are frequently unused in practice.'
+summary: 'Nathalia Lorena Cardoso Dias defended at FCTE/UnB an undergraduate thesis using a systematic literature review to investigate why formally defined software improvement processes are frequently unused in practice.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp
 categories:

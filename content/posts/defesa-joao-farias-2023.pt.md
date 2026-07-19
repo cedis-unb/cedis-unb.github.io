@@ -5,7 +5,7 @@ draft: false
 weight: 500
 language: pt
 featured_image: "../assets/images/featured/area_Gamificação.png"
-summary: 'João Vitor Lopes de Farias defendeu na UnB Gama um TCC que examina o uso de RPG como espinha dorsal de um processo de aprendizagem — combinando narrativa, papéis e desafios com objetivos pedagógicos claros.'
+summary: 'João Vitor Lopes de Farias defendeu na FCTE/UnB um TCC que examina o uso de RPG como espinha dorsal de um processo de aprendizagem — combinando narrativa, papéis e desafios com objetivos pedagógicos claros.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp
 categories:

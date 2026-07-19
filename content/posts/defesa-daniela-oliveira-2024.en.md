@@ -5,7 +5,7 @@ draft: false
 weight: 500
 language: en
 featured_image: "../assets/images/featured/area_IA.png"
-summary: 'Daniela Soares de Oliveira and Danilo Domingo Vitoriano Silva defended at UnB Gama an undergraduate thesis building an AI model for Brazilian Sign Language translation — a technical response to a communication barrier affecting more than 2.3 million Brazilians.'
+summary: 'Daniela Soares de Oliveira and Danilo Domingo Vitoriano Silva defended at FCTE/UnB an undergraduate thesis building an AI model for Brazilian Sign Language translation — a technical response to a communication barrier affecting more than 2.3 million Brazilians.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp
 categories:

@@ -5,7 +5,7 @@ draft: false
 weight: 500
 language: en
 featured_image: "../assets/images/featured/area_Team work and soft skills.png"
-summary: 'Leandro Veloso Rodrigues defended at UnB Gama an undergraduate thesis investigating the impact of Brazil’s Ciência sem Fronteiras program on the soft skills of future software engineers.'
+summary: 'Leandro Veloso Rodrigues defended at FCTE/UnB an undergraduate thesis investigating the impact of Brazil’s Ciência sem Fronteiras program on the soft skills of future software engineers.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp
 categories:
@@ -17,7 +17,7 @@ tags:
 ---
 Brasília, July 7, 2016
 
-The Ciência sem Fronteiras program was, in the early 2010s, one of Brazil’s largest bets on academic internationalization. **Five years after the program’s peak, Leandro Veloso Rodrigues defended an undergraduate thesis that asked what actually remained** — not in terms of transcripts, but in terms of behavioral competencies developed by returning scholarship holders in UnB Gama’s Software Engineering program. The research was advised by Prof. {{< link-interno "/people/sergio_freitas" "Sergio Antônio Andrade de Freitas" >}} and co-advised by Prof. {{< link-interno "/people/fabiana_mendes" "Fabiana Freitas Mendes" >}}.
+The Ciência sem Fronteiras program was, in the early 2010s, one of Brazil’s largest bets on academic internationalization. **Five years after the program’s peak, Leandro Veloso Rodrigues defended an undergraduate thesis that asked what actually remained** — not in terms of transcripts, but in terms of behavioral competencies developed by returning scholarship holders in FCTE/UnB’s Software Engineering program. The research was advised by Prof. {{< link-interno "/people/sergio_freitas" "Sergio Antônio Andrade de Freitas" >}} and co-advised by Prof. {{< link-interno "/people/fabiana_mendes" "Fabiana Freitas Mendes" >}}.
 
 The starting point is a claim the field has been repeating tirelessly: in software projects, soft skills — social, personal, and cognitive — carry as much weight as technical competencies. They are cultivated through exposure to new contexts, different colleagues, and challenges that force readaptation. A stint abroad seems, at first glance, the perfect recipe.
 

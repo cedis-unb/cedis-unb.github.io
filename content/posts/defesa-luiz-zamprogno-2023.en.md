@@ -5,7 +5,7 @@ draft: false
 weight: 500
 language: en
 featured_image: "../assets/images/featured/area_IA.png"
-summary: 'Luiz Henrique Fernandes Zamprogno and Victor Eduardo Araújo Ribeiro defended at UnB Gama an undergraduate thesis introducing Latte — a gamified chatbot to support the production of scientific articles.'
+summary: 'Luiz Henrique Fernandes Zamprogno and Victor Eduardo Araújo Ribeiro defended at FCTE/UnB an undergraduate thesis introducing Latte — a gamified chatbot to support the production of scientific articles.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp
 categories:

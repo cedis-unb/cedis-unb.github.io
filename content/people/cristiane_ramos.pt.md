@@ -41,7 +41,7 @@ nav_next: true
 
 ## {{< i18n "people_contributions" >}}
 - Prêmio de Melhor Artigo no ICCSA pelo trabalho "A process to identify player's motivational profiles for designing a gamification project" (2024).
-- Organização do I Encontro de Pós-graduação na UnB Gama (2025).
+- Organização do I Encontro de Pós-graduação na FCTE/UnB (2025).
 - Paraninfa da turma de formandos do curso de Engenharia de Software da UnB (2021/1).
 - Avaliadora MPS.Br - SOFTEX (2007).
 - Implementadora MPS.Br - SOFTEX (2006).

@@ -5,7 +5,7 @@ draft: false
 weight: 500
 language: pt
 featured_image: "../assets/images/featured/area_Gamificação.png"
-summary: 'Wilker Mesquita de Assunção defendeu na UnB Gama um TCC que adapta um ambiente virtual de aprendizado para o ensino de algoritmos usando técnicas de gamificação.'
+summary: 'Wilker Mesquita de Assunção defendeu na FCTE/UnB um TCC que adapta um ambiente virtual de aprendizado para o ensino de algoritmos usando técnicas de gamificação.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp
 categories:
@@ -18,7 +18,7 @@ tags:
 ---
 Brasília, 2016
 
-Ensinar algoritmos é ensinar rigor. O problema é que rigor, sem contrapeso, cansa; sem engajamento, o aluno solta a mão do problema no primeiro obstáculo. **É esse desequilíbrio que o TCC defendido por Wilker Mesquita de Assunção em 2016, na UnB Gama, tenta corrigir** — orientado pelo Prof. {{< link-interno "/people/sergio_freitas" "Sergio Antônio Andrade de Freitas" >}}.
+Ensinar algoritmos é ensinar rigor. O problema é que rigor, sem contrapeso, cansa; sem engajamento, o aluno solta a mão do problema no primeiro obstáculo. **É esse desequilíbrio que o TCC defendido por Wilker Mesquita de Assunção em 2016, na FCTE/UnB, tenta corrigir** — orientado pelo Prof. {{< link-interno "/people/sergio_freitas" "Sergio Antônio Andrade de Freitas" >}}.
 
 O trabalho parte de uma escolha metodológica: em vez de propor um novo ambiente, adaptar um ambiente virtual de aprendizado já em uso, incorporando técnicas de gamificação como camada de motivação. A ideia é aproveitar a infraestrutura pedagógica existente e nela apoiar mecânicas que estimulam persistência — pontos, distintivos, missões — sem substituir o conteúdo pelo enfeite.
 

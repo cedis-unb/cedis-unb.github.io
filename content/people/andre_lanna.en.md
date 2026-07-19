@@ -78,7 +78,7 @@ nav_next: true
 </div>
 
 ## {{< i18n "people_contact" >}}
-- {{< i18n "people_contact_professional" >}}: University of Brasília, UnB Gama Campus, Brasília - DF, Brazil.
+- {{< i18n "people_contact_professional" >}}: University of Brasília, Gama Campus (FCTE), Brasília - DF, Brazil.
 - Lattes: [CV Lattes](http://lattes.cnpq.br/5685720614944773)
 - Orcid ID: [Orcid Profile](https://orcid.org/0000-0003-4200-6569)
 

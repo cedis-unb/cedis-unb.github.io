@@ -24,7 +24,7 @@ O trabalho propõe automatizar a identificação de processos elementares — a 
 
 Os resultados relatados alcançam variação média de 17% em relação à contagem manual, próxima ao patamar de 15% considerado aceitável na medição feita por humanos. É uma contribuição concreta para {{< link-interno "/areas/software_requirements/" "engenharia de requisitos" >}} e {{< link-interno "/areas/ai_pln/" "aprendizado de máquina aplicado" >}}: um caminho para tirar do fluxo aquilo que costuma paralisar a adoção do SFP.
 
-A qualificação aconteceu em 23 de outubro de 2025 em Brasília. A banca foi presidida pelo orientador, Prof. Dr. André Luiz Peron Martins Lanna (FGA/UnB), e composta pela Prof.ª Dr.ª Monalessa Perini Barcellos (PPGI/UFES) e pelo Prof. Dr. Sérgio Antônio Andrade de Freitas (FGA/UnB). A Prof.ª Dr.ª Edna Dias Canedo, coordenadora do PPCA, também acompanhou a sessão.
+A qualificação aconteceu em 23 de outubro de 2025 em Brasília. A banca foi presidida pelo orientador, Prof. Dr. André Luiz Peron Martins Lanna (FCTE/UnB), e composta pela Prof.ª Dr.ª Monalessa Perini Barcellos (PPGI/UFES) e pelo Prof. Dr. Sérgio Antônio Andrade de Freitas (FCTE/UnB). A Prof.ª Dr.ª Edna Dias Canedo, coordenadora do PPCA, também acompanhou a sessão.
 
 O trabalho está disponível no [Repositório Institucional da UnB](https://repositorio.unb.br/handle/10482/54552).
 

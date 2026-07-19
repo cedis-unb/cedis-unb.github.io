@@ -5,7 +5,7 @@ draft: false
 weight: 500
 language: en
 featured_image: "../assets/images/featured/area_Gamificação.png"
-summary: 'Rafael Santos Teodosio defended at UnB Gama an undergraduate thesis designing and implementing $tudy — a gamified system aimed at supporting the financial education of young people.'
+summary: 'Rafael Santos Teodosio defended at FCTE/UnB an undergraduate thesis designing and implementing $tudy — a gamified system aimed at supporting the financial education of young people.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp
 categories:

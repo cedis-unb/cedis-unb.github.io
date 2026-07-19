@@ -5,7 +5,7 @@ draft: false
 weight: 500
 language: pt
 featured_image: "../assets/images/featured/area_Gamificação.png"
-summary: 'Cauê Mateus Oliveira e Lucas Midlhey Cardoso Naves defenderam na UnB Gama um TCC que transforma o aprendizado das heurísticas de Nielsen em um jogo — a Universidade das Heurísticas.'
+summary: 'Cauê Mateus Oliveira e Lucas Midlhey Cardoso Naves defenderam na FCTE/UnB um TCC que transforma o aprendizado das heurísticas de Nielsen em um jogo — a Universidade das Heurísticas.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp
 categories:
@@ -18,7 +18,7 @@ tags:
 ---
 Brasília, 9 de junho de 2022
 
-As dez heurísticas de Nielsen são o abecedário da avaliação de usabilidade. E são exatamente por isso que costumam entrar na cabeça do aluno em ritmo de decoreba — sem que os conceitos se consolidem em uma capacidade real de olhar para uma interface e reconhecer o que está errado. **É a esse hábito acadêmico que Cauê Mateus Oliveira e Lucas Midlhey Cardoso Naves respondem com um jogo educativo**, defendido em junho de 2022 na Faculdade UnB Gama sob orientação da Prof.ª {{< link-interno "/people/fabiana_mendes" "Fabiana Freitas Mendes" >}}.
+As dez heurísticas de Nielsen são o abecedário da avaliação de usabilidade. E são exatamente por isso que costumam entrar na cabeça do aluno em ritmo de decoreba — sem que os conceitos se consolidem em uma capacidade real de olhar para uma interface e reconhecer o que está errado. **É a esse hábito acadêmico que Cauê Mateus Oliveira e Lucas Midlhey Cardoso Naves respondem com um jogo educativo**, defendido em junho de 2022 na Faculdade de Ciências e Tecnologias em Engenharia (FCTE) sob orientação da Prof.ª {{< link-interno "/people/fabiana_mendes" "Fabiana Freitas Mendes" >}}.
 
 A Universidade das Heurísticas coloca o jogador em cenários onde precisa identificar violações concretas em interfaces fictícias — e reforça o aprendizado por meio de feedback imediato. É a diferença entre ler sobre "consistência e padronização" e ver essa consistência falhando de forma tangível, com todas as consequências que isso traz para o usuário representado no jogo.
 

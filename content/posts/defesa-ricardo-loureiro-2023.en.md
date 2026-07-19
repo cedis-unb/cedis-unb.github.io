@@ -5,7 +5,7 @@ draft: false
 weight: 500
 language: en
 featured_image: "../assets/images/featured/area_Software Quality.png"
-summary: 'Ricardo de Castro Loureiro defended at UnB Gama an undergraduate thesis proposing metrics to evaluate the accessibility of web pages for people with visual impairment — a direct step toward more objective audit practices.'
+summary: 'Ricardo de Castro Loureiro defended at FCTE/UnB an undergraduate thesis proposing metrics to evaluate the accessibility of web pages for people with visual impairment — a direct step toward more objective audit practices.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp
 categories:

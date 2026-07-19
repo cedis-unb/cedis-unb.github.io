@@ -5,7 +5,7 @@ draft: false
 weight: 500
 language: en
 featured_image: "../assets/images/featured/area_Software Quality.png"
-summary: 'Iago Rodrigues Gonçalves defended at UnB Gama an undergraduate thesis investigating how to identify, measure and communicate technical debt — a problem that gains weight in agile methodologies focused on continuous delivery.'
+summary: 'Iago Rodrigues Gonçalves defended at FCTE/UnB an undergraduate thesis investigating how to identify, measure and communicate technical debt — a problem that gains weight in agile methodologies focused on continuous delivery.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp
 categories:
@@ -18,7 +18,7 @@ tags:
 ---
 Brasília, July 6, 2018
 
-Every development team pays, sooner or later, the price of decisions made in a hurry. **The core question of the undergraduate thesis defended by Iago Rodrigues Gonçalves in July 2018 at UnB Gama is how to make that bill visible to those who need to decide on it** — advised by Prof. {{< link-interno "/people/andre_lanna" "André Luiz Peron Martins Lanna" >}}.
+Every development team pays, sooner or later, the price of decisions made in a hurry. **The core question of the undergraduate thesis defended by Iago Rodrigues Gonçalves in July 2018 at FCTE/UnB is how to make that bill visible to those who need to decide on it** — advised by Prof. {{< link-interno "/people/andre_lanna" "André Luiz Peron Martins Lanna" >}}.
 
 The term *technical debt* was born as a useful metaphor: the quality loss accumulated in a codebase works like a loan an organization takes to accelerate delivery — with interest that shows up as reduced productivity in the long run. In agile methodologies, with their emphasis on short cycles and continuous functional delivery, the metaphor becomes even more relevant. But the problem, the author argues, is that debt only becomes actionable when stakeholders can actually see it.
 

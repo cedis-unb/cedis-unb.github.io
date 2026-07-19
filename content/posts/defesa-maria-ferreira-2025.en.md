@@ -5,7 +5,7 @@ draft: false
 weight: 500
 language: en
 featured_image: "../assets/images/featured/area_IA.png"
-summary: 'Maria Eduarda dos Santos Abritta Ferreira and Sabrina Caldas Berno defended at UnB Gama an undergraduate thesis applying machine learning to the non-invasive prediction of euploidy in human embryos, based on morphokinetic data.'
+summary: 'Maria Eduarda dos Santos Abritta Ferreira and Sabrina Caldas Berno defended at FCTE/UnB an undergraduate thesis applying machine learning to the non-invasive prediction of euploidy in human embryos, based on morphokinetic data.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp
 categories:

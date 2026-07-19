@@ -5,7 +5,7 @@ draft: false
 weight: 500
 language: en
 featured_image: "../assets/images/featured/area_Engenharia de requisitos.png"
-summary: 'Marcelo Victor de Sousa Silva and Washington Bispo Arishita Júnior defended at UnB Gama an undergraduate thesis introducing FormsGeo — an app for social surveys with built-in geolocation.'
+summary: 'Marcelo Victor de Sousa Silva and Washington Bispo Arishita Júnior defended at FCTE/UnB an undergraduate thesis introducing FormsGeo — an app for social surveys with built-in geolocation.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp
 categories:

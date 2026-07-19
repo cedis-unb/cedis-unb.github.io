@@ -5,7 +5,7 @@ draft: false
 weight: 500
 language: pt
 featured_image: "../assets/images/featured/area_Software Quality.png"
-summary: 'Nathalia Lorena Cardoso Dias defendeu na UnB Gama um TCC que investiga, com revisão sistemática da literatura, por que processos de melhoria de software já formalmente definidos frequentemente não são utilizados na prática.'
+summary: 'Nathalia Lorena Cardoso Dias defendeu na FCTE/UnB um TCC que investiga, com revisão sistemática da literatura, por que processos de melhoria de software já formalmente definidos frequentemente não são utilizados na prática.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp
 categories:

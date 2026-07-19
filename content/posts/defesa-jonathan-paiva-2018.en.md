@@ -5,7 +5,7 @@ draft: false
 weight: 500
 language: en
 featured_image: "../assets/images/featured/area_Arquitetura de Software.png"
-summary: 'Jonathan Paiva and Luis Henrique Guimarães defended at UnB Gama an undergraduate thesis replacing sensors and cameras with human collaboration to monitor cars across a city — the NotifiCar app.'
+summary: 'Jonathan Paiva and Luis Henrique Guimarães defended at FCTE/UnB an undergraduate thesis replacing sensors and cameras with human collaboration to monitor cars across a city — the NotifiCar app.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp
 categories:
@@ -18,7 +18,7 @@ tags:
 ---
 Brasília, July 6, 2018
 
-Monitoring the status of cars in a city — parked illegally, involved in accidents, mechanically stalled — usually requires expensive instrumentation: digital sensors, cameras, image processing. **Jonathan Nogueira Rufino Batista Paiva and Luis Henrique Nunes Guimarães proposed a different path in the undergraduate thesis defended in July 2018 at UnB Gama**, under the advising of Prof. {{< link-interno "/people/andre_lanna" "André Luiz Peron Martins Lanna" >}}: the driver herself, armed with an app, becomes the sensor.
+Monitoring the status of cars in a city — parked illegally, involved in accidents, mechanically stalled — usually requires expensive instrumentation: digital sensors, cameras, image processing. **Jonathan Nogueira Rufino Batista Paiva and Luis Henrique Nunes Guimarães proposed a different path in the undergraduate thesis defended in July 2018 at FCTE/UnB**, under the advising of Prof. {{< link-interno "/people/andre_lanna" "André Luiz Peron Martins Lanna" >}}: the driver herself, armed with an app, becomes the sensor.
 
 The NotifiCar project is a cross-platform mobile application designed to receive, via collaborative notification, what digital sensors would provide at much higher cost. The authors face typical challenges of applications of this kind — cross-platform sync, identity management, validation mechanisms — but the conceptual merit lies in the inversion: instead of instrumenting the city, instrument those who already inhabit it, with incentives to report in real time.
 

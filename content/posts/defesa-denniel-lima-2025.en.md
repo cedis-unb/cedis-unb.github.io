@@ -5,7 +5,7 @@ draft: false
 weight: 500
 language: en
 featured_image: "../assets/images/featured/area_Gamificação.png"
-summary: 'Denniel Roriz Lima defended at UnB Gama an undergraduate thesis running a bibliometric and thematic review on the use of gamification in agile processes with Scrum, and proposing practical guidelines for implementation.'
+summary: 'Denniel Roriz Lima defended at FCTE/UnB an undergraduate thesis running a bibliometric and thematic review on the use of gamification in agile processes with Scrum, and proposing practical guidelines for implementation.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp
 categories:
@@ -18,7 +18,7 @@ tags:
 ---
 Brasília, July 22, 2025
 
-There is a topic that, despite its recurrence on corporate shelves and academic pages, still lacks systematization: the marriage between gamification and agile software development. **This is the territory that Denniel William Roriz Lima’s undergraduate thesis, defended in July 2025 at UnB Gama, sets out to map** — advised by Prof. {{< link-interno "/people/cristiane_ramos" "Cristiane Soares Ramos" >}} and co-advised by Prof. {{< link-interno "/people/ricardo_ajax" "Ricardo Ajax Dias Kosloski" >}}.
+There is a topic that, despite its recurrence on corporate shelves and academic pages, still lacks systematization: the marriage between gamification and agile software development. **This is the territory that Denniel William Roriz Lima’s undergraduate thesis, defended in July 2025 at FCTE/UnB, sets out to map** — advised by Prof. {{< link-interno "/people/cristiane_ramos" "Cristiane Soares Ramos" >}} and co-advised by Prof. {{< link-interno "/people/ricardo_ajax" "Ricardo Ajax Dias Kosloski" >}}.
 
 Instead of proposing a ready system or a prototype, the author chose a narrative, bibliometric, and thematic review — a methodological choice that privileges the wide lens over the pinpoint zoom. The move is useful precisely because the field is recent and scattered: publications grow at a fast pace but with little consolidation on which gamification elements work, for which Scrum practices, and under what conditions.
 

@@ -5,7 +5,7 @@ draft: false
 weight: 500
 language: pt
 featured_image: "../assets/images/featured/area_Arquitetura de Software.png"
-summary: 'Guilherme Rogelin Vial e Lucas Braun Vieira Xavier defenderam na UnB Gama um TCC que usa o Google Forms como interface para modelar e distribuir fluxos de navegação voltados à educação jurídica.'
+summary: 'Guilherme Rogelin Vial e Lucas Braun Vieira Xavier defenderam na FCTE/UnB um TCC que usa o Google Forms como interface para modelar e distribuir fluxos de navegação voltados à educação jurídica.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp
 categories:

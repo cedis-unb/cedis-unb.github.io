@@ -5,7 +5,7 @@ draft: false
 weight: 500
 language: pt
 featured_image: "../assets/images/featured/area_Green Software.png"
-summary: 'André Aben-Athar de Freitas e Pedro Vitor de Salles Cella defenderam na UnB Gama um TCC que automatiza o processo de implantação individualizada do AgroMart — permitindo que cada CSA opere sua própria instância.'
+summary: 'André Aben-Athar de Freitas e Pedro Vitor de Salles Cella defenderam na FCTE/UnB um TCC que automatiza o processo de implantação individualizada do AgroMart — permitindo que cada CSA opere sua própria instância.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp
 categories:

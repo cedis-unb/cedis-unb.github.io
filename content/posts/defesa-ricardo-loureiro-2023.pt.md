@@ -5,7 +5,7 @@ draft: false
 weight: 500
 language: pt
 featured_image: "../assets/images/featured/area_Software Quality.png"
-summary: 'Ricardo de Castro Loureiro defendeu na UnB Gama um TCC que propõe métricas para avaliação da acessibilidade de páginas web voltadas a pessoas com deficiência visual — passo direto rumo a uma prática de auditoria mais objetiva.'
+summary: 'Ricardo de Castro Loureiro defendeu na FCTE/UnB um TCC que propõe métricas para avaliação da acessibilidade de páginas web voltadas a pessoas com deficiência visual — passo direto rumo a uma prática de auditoria mais objetiva.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp
 categories:

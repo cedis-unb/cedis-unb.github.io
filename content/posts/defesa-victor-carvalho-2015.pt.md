@@ -5,7 +5,7 @@ draft: false
 weight: 500
 language: pt
 featured_image: "../assets/images/featured/area_Software Quality.png"
-summary: 'Victor Hugo Alves de Carvalho defendeu em 2015, na UnB Gama, um TCC empírico que compara técnicas de programação em Android e mede o efeito de cada uma sobre desempenho e responsividade dos aplicativos.'
+summary: 'Victor Hugo Alves de Carvalho defendeu em 2015, na FCTE/UnB, um TCC empírico que compara técnicas de programação em Android e mede o efeito de cada uma sobre desempenho e responsividade dos aplicativos.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp
 categories:
@@ -18,7 +18,7 @@ tags:
 ---
 Brasília, 2015
 
-Quando um app trava por dois segundos, o usuário responde com um gesto: fecha, desinstala, deixa uma nota ruim. **É essa cadeia de causa e efeito que o TCC defendido por Victor Hugo Alves de Carvalho em 2015 na Faculdade UnB Gama coloca sob observação**, orientado pela Prof.ª {{< link-interno "/people/fabiana_mendes" "Fabiana Freitas Mendes" >}}.
+Quando um app trava por dois segundos, o usuário responde com um gesto: fecha, desinstala, deixa uma nota ruim. **É essa cadeia de causa e efeito que o TCC defendido por Victor Hugo Alves de Carvalho em 2015 na Faculdade de Ciências e Tecnologias em Engenharia (FCTE) coloca sob observação**, orientado pela Prof.ª {{< link-interno "/people/fabiana_mendes" "Fabiana Freitas Mendes" >}}.
 
 A pesquisa parte de um dado da década: o Android havia se tornado a plataforma dominante, e a facilidade de programar sobre ela atraiu tanto times pequenos quanto empresas de base tecnológica. A contrapartida — pouco discutida — é o custo de manter os aplicativos rápidos em uma matriz gigante de dispositivos, versões e cenários de uso. Sem instrumentos claros para decidir entre alternativas de implementação, muita otimização vira folclore.
 

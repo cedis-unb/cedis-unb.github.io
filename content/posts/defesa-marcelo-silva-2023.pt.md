@@ -5,7 +5,7 @@ draft: false
 weight: 500
 language: pt
 featured_image: "../assets/images/featured/area_Engenharia de requisitos.png"
-summary: 'Marcelo Victor de Sousa Silva e Washington Bispo Arishita Júnior defenderam na UnB Gama um TCC que apresenta o FormsGeo — aplicativo para pesquisas sociais com geolocalização integrada.'
+summary: 'Marcelo Victor de Sousa Silva e Washington Bispo Arishita Júnior defenderam na FCTE/UnB um TCC que apresenta o FormsGeo — aplicativo para pesquisas sociais com geolocalização integrada.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp
 categories:

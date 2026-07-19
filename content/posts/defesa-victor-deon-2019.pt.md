@@ -5,7 +5,7 @@ draft: false
 weight: 500
 language: pt
 featured_image: "../assets/images/featured/area_Team work and soft skills.png"
-summary: 'Victor Hugo Arnaud Deon defendeu na UnB Gama um TCC que desenvolve a PGTBL — uma plataforma livre para gerenciar atividades de Team-Based Learning em cursos universitários.'
+summary: 'Victor Hugo Arnaud Deon defendeu na FCTE/UnB um TCC que desenvolve a PGTBL — uma plataforma livre para gerenciar atividades de Team-Based Learning em cursos universitários.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp
 categories:
@@ -18,7 +18,7 @@ tags:
 ---
 Brasília, 12 de julho de 2019
 
-Trabalho em equipe, análise de dados e resolução de problemas reais — três competências que o mercado cobra e que a sala de aula tradicional entrega pela metade. **A metodologia Team-Based Learning (TBL) tem sido apontada como um caminho para essa lacuna, e é justamente ao redor dela que Victor Hugo Arnaud Deon construiu seu TCC**, defendido em julho de 2019 na Faculdade UnB Gama sob orientação da Prof.ª {{< link-interno "/people/cristiane_ramos" "Cristiane Soares Ramos" >}}.
+Trabalho em equipe, análise de dados e resolução de problemas reais — três competências que o mercado cobra e que a sala de aula tradicional entrega pela metade. **A metodologia Team-Based Learning (TBL) tem sido apontada como um caminho para essa lacuna, e é justamente ao redor dela que Victor Hugo Arnaud Deon construiu seu TCC**, defendido em julho de 2019 na Faculdade de Ciências e Tecnologias em Engenharia (FCTE) sob orientação da Prof.ª {{< link-interno "/people/cristiane_ramos" "Cristiane Soares Ramos" >}}.
 
 O trabalho apresenta a PGTBL — Plataforma de Gerenciamento de Team-Based Learning —, um software livre que operacionaliza as etapas da metodologia: formação de equipes, aplicações individuais e coletivas, discussão em grupo e feedback. A escolha por software livre é deliberada e importa: cursos de instituições públicas e privadas podem adotar, adaptar e evoluir a ferramenta sem os travamentos comuns de plataformas proprietárias.
 

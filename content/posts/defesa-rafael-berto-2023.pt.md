@@ -5,7 +5,7 @@ draft: false
 weight: 500
 language: pt
 featured_image: "../assets/images/featured/area_Transformação Digital.png"
-summary: 'Rafael Berto Pereira defendeu na UnB Gama um TCC que investiga o uso complementar do ChatGPT em processos de engenharia de software — a partir de um estudo de caso com orientações definidas.'
+summary: 'Rafael Berto Pereira defendeu na FCTE/UnB um TCC que investiga o uso complementar do ChatGPT em processos de engenharia de software — a partir de um estudo de caso com orientações definidas.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp
 categories:

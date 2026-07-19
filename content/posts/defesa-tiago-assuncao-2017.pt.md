@@ -5,7 +5,7 @@ draft: false
 weight: 500
 language: pt
 featured_image: "../assets/images/featured/area_Gamificação.png"
-summary: 'Tiago Ribeiro de Assunção defendeu na UnB Gama um TCC que aplica gamificação à Rede Social About para atacar seu ponto fraco: a rede atrai novos usuários com facilidade, mas não consegue mantê-los ativos.'
+summary: 'Tiago Ribeiro de Assunção defendeu na FCTE/UnB um TCC que aplica gamificação à Rede Social About para atacar seu ponto fraco: a rede atrai novos usuários com facilidade, mas não consegue mantê-los ativos.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp
 categories:

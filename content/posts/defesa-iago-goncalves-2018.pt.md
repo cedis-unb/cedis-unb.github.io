@@ -5,7 +5,7 @@ draft: false
 weight: 500
 language: pt
 featured_image: "../assets/images/featured/area_Software Quality.png"
-summary: 'Iago Rodrigues Gonçalves defendeu na UnB Gama um TCC que investiga formas de identificar, medir e comunicar a dívida técnica — um problema que ganha peso em metodologias ágeis focadas em entrega contínua.'
+summary: 'Iago Rodrigues Gonçalves defendeu na FCTE/UnB um TCC que investiga formas de identificar, medir e comunicar a dívida técnica — um problema que ganha peso em metodologias ágeis focadas em entrega contínua.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp
 categories:
@@ -18,7 +18,7 @@ tags:
 ---
 Brasília, 6 de julho de 2018
 
-Toda equipe de desenvolvimento paga, cedo ou tarde, o preço de decisões tomadas às pressas. **A pergunta central do TCC defendido por Iago Rodrigues Gonçalves em julho de 2018, na Faculdade UnB Gama, é como tornar essa conta visível a quem precisa decidir sobre ela** — sob orientação do Prof. {{< link-interno "/people/andre_lanna" "André Luiz Peron Martins Lanna" >}}.
+Toda equipe de desenvolvimento paga, cedo ou tarde, o preço de decisões tomadas às pressas. **A pergunta central do TCC defendido por Iago Rodrigues Gonçalves em julho de 2018, na Faculdade de Ciências e Tecnologias em Engenharia (FCTE), é como tornar essa conta visível a quem precisa decidir sobre ela** — sob orientação do Prof. {{< link-interno "/people/andre_lanna" "André Luiz Peron Martins Lanna" >}}.
 
 O termo *dívida técnica* nasceu como metáfora útil: perda de qualidade acumulada no código funciona como um empréstimo que a organização pega para acelerar entregas — e cujos juros aparecem em produtividade menor no longo prazo. Em metodologias ágeis, com sua ênfase em ciclos curtos e entrega funcional contínua, a metáfora ganha ainda mais aderência. Mas o problema, aponta o autor, é que a dívida só se torna acionável quando as partes interessadas conseguem enxergá-la.
 

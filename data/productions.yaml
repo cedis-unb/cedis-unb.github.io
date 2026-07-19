@@ -1724,7 +1724,7 @@ administrative and operational activities of the Brazilian Army."
       para identificar fatores de impacto e definir indicadores extraídos de sistemas
       acadêmicos da UnB. O modelo, denominado MAGRA, combina indicadores com algoritmos
       de aprendizado de máquina, visando identificar alunos em risco de evasão. Testes
-      realizados na Faculdade do Gama (FGA) e na UnB indicaram que a frequência de
+      realizados na Faculdade de Ciências e Tecnologias em Engenharia (FCTE) e na UnB indicaram que a frequência de
       matrícula em disciplinas pode prever dificuldades de conclusão. A pesquisa sugere
       que para aprimorar a identificação de alunos em risco, são necessários ajustes
       nos mecanismos de feedback, inclusão de novos sistemas, melhoria na qualidade
@@ -1741,7 +1741,7 @@ administrative and operational activities of the Brazilian Army."
       a Systematic Literature Review to identify impact factors and define indicators
       extracted from UnB's academic systems. The model, named MAGRA, combines indicators
       with machine learning algorithms to identify students at risk of dropping out.
-      Tests conducted at the Faculdade do Gama (FGA) and UnB indicated that enrollment
+      Tests conducted at the Faculdade de Ciências e Tecnologias em Engenharia (FCTE) and UnB indicated that enrollment
       frequency in subjects could predict completion difficulties. The research suggests
       that to improve the early identification of at-risk students, adjustments in
       feedback mechanisms, the inclusion of new systems, improvement in data quality,
@@ -5645,7 +5645,7 @@ administrative and operational activities of the Brazilian Army."
       ES e verificar como a experiência proporcionada pelo CsF as afetam. Para o alcance
       deste objetivo, um protocolo de revisão sistemática foi adaptado possibilitando
       a obtenção de um conjunto de competências. A verificação de como os egressos
-      do programa, oriundos dos cursos de ES da UnB Gama, perceberam o desenvolvimento
+      do programa, oriundos dos cursos de ES da FCTE/UnB, perceberam o desenvolvimento
       deste conjunto de competências foi obtido por meio da aplicação de um survey.
       De acordo com a execução deste trabalho, os estudantes acreditam que se comunicam
       melhor, não apenas em português, detêm uma maior capacidade de agir criticamente
@@ -5667,7 +5667,7 @@ administrative and operational activities of the Brazilian Army."
       \ in CSF academic exchange project? The present document aims to answer this\
       \ question by mapping the essential behavioral competencies for Software Engineering\
       \ students and verifying how the CsF affects them. The verification of how former\
-      \ FGA\x91s Software Engineering students observe the development of these type\
+      \ FCTE\x91s Software Engineering students observe the development of these type\
       \ of competencies was obtained by a survey. According to the results of this\
       \ project, the students believe that not only do they communicate better in\
       \ portuguese, but also in different languages, they\x92ve acquired a better\
@@ -6184,8 +6184,8 @@ administrative and operational activities of the Brazilian Army."
   - Guilherme Fay Vergara
   title:
     pt: Implantação de softwares como serviço em uma nuvem privada para a fábrica
-      de software da FGA
-    en: Deployment of software as a service on a private cloud for the FGA software
+      de software da FCTE
+    en: Deployment of software as a service on a private cloud for the FCTE software
       factory
   summary:
     pt: O objetivo deste trabalho é trazer ao leitor primeiramente o estado da arte
@@ -6377,7 +6377,7 @@ administrative and operational activities of the Brazilian Army."
       \ de consultas em motores de busca open source. Avaliaremos qual algoritmo oferece\
       \ maior precisão, utilizando métricas de precisão x recall, quais permitem um\
       \ grau de personalização nas consultas, incluindo perfis de usuários das quatro\
-      \ engenharias da Universidade de Brasília - Faculdade do Gama, e como a engenharia\
+      \ engenharias da Universidade de Brasília - Faculdade de Ciências e Tecnologias em Engenharia (FCTE), e como a engenharia\
       \ de software pode aprimorar a ordenação e recuperação de informações."
     en: "The quest for information originated from libraries, where it was possible\
       \ to retrieve necessary data through consultations using catalog cards, organizing\
@@ -6393,7 +6393,7 @@ administrative and operational activities of the Brazilian Army."
       \ search engines. We will evaluate which algorithm offers greater accuracy,\
       \ using precision x recall metrics, which allow for a degree of customization\
       \ in queries, including user profiles from the four engineering courses at the\
-      \ University of Brasília - Faculdade do Gama, and how software engineering\
+      \ University of Brasília - Faculdade de Ciências e Tecnologias em Engenharia (FCTE), and how software engineering\
       \ can enhance the sorting and retrieval of information."
   book_title: ''
   volume: ''
@@ -7127,8 +7127,8 @@ administrative and operational activities of the Brazilian Army."
 - authors:
   - Júlia Farias Sousa
   title:
-    pt: Análise sobre a percepção dos discentes quanto a utilização de EaD no curso de Engenharia de Software, FGA/UnB
-    en: Analysis of students perceptions on the use of distance learning in the Software Engineering course, FGA/UnB
+    pt: Análise sobre a percepção dos discentes quanto a utilização de EaD no curso de Engenharia de Software, FCTE/UnB
+    en: Analysis of students perceptions on the use of distance learning in the Software Engineering course, FCTE/UnB
   summary:
     pt: ''
     en: ''
@@ -7249,8 +7249,8 @@ administrative and operational activities of the Brazilian Army."
 - authors:
   - Adevanei de Sant'Anna Barreto
   title:
-    pt: "Controle de acesso lógico:um estudo sobre o caso da TI na Faculdade UnB Gama"
-    en: "Logical Access Control: A Study on the Case of IT at UnB Gama"
+    pt: "Controle de acesso lógico:um estudo sobre o caso da TI na Faculdade de Ciências e Tecnologias em Engenharia (FCTE)"
+    en: "Logical Access Control: A Study on the Case of IT at FCTE/UnB"
   summary:
     pt: ''
     en: ''

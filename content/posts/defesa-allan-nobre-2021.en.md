@@ -5,7 +5,7 @@ draft: false
 weight: 500
 language: en
 featured_image: "../assets/images/featured/area_Learning Analytics.png"
-summary: 'Allan Jefrey Pereira Nobre defended at UnB Gama an undergraduate thesis applying Learning Analytics and Educational Data Mining to support pedagogical decisions in Team-Based Learning courses.'
+summary: 'Allan Jefrey Pereira Nobre defended at FCTE/UnB an undergraduate thesis applying Learning Analytics and Educational Data Mining to support pedagogical decisions in Team-Based Learning courses.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp
 categories:

@@ -5,7 +5,7 @@ draft: false
 weight: 500
 language: en
 featured_image: "../assets/images/featured/area_IA.png"
-summary: 'Álvaro Henrique de Sousa Gouvea and Luís Guilherme Gaboardi Lins defended at UnB Gama an undergraduate thesis using Large Language Models to build a multimodal chatbot for legal-labor consultation.'
+summary: 'Álvaro Henrique de Sousa Gouvea and Luís Guilherme Gaboardi Lins defended at FCTE/UnB an undergraduate thesis using Large Language Models to build a multimodal chatbot for legal-labor consultation.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp
 categories:

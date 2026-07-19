@@ -5,7 +5,7 @@ draft: false
 weight: 500
 language: pt
 featured_image: "../assets/images/featured/area_Arquitetura de Software.png"
-summary: 'Christian Fleury Alencar Siqueira e Thiago Siqueira Gomes defenderam na UnB Gama um TCC que atravessa o último quilômetro do AgroMart: integrar módulos, ajustar deploy e publicar o aplicativo para uso público.'
+summary: 'Christian Fleury Alencar Siqueira e Thiago Siqueira Gomes defenderam na FCTE/UnB um TCC que atravessa o último quilômetro do AgroMart: integrar módulos, ajustar deploy e publicar o aplicativo para uso público.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp
 categories:
