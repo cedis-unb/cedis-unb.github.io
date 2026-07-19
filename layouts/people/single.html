@@ -101,10 +101,12 @@
 {{ end }}
 
 {{ $publicationCount := 0 }}
+{{ $personPublications := slice }}
 {{ $formerSupervisionCount := 0 }}
 {{ range hugo.Data.productions.items }}
   {{ if in .tags $personKey }}
     {{ $publicationCount = add $publicationCount 1 }}
+    {{ $personPublications = $personPublications | append . }}
   {{ end }}
   {{ if and .advisors (in .advisors $personKey) (in (slice "phd" "dissertation" "specialization" "tcc") .type) (not (in .tags "active")) }}
     {{ $formerSupervisionCount = add $formerSupervisionCount 1 }}
@@ -117,6 +119,11 @@
   {{ if and $isPreviousPerson $isNonProductionSupervision }}
     {{ $formerSupervisionCount = add $formerSupervisionCount 1 }}
   {{ end }}
+{{ end }}
+
+{{ if and $isResearcher (in $content `id="former-collaborators-title"`) }}
+  {{ $formerSupervisionCountBadge := printf `<span class="ml-2 inline-flex items-center rounded-full border border-primary-200 bg-primary-50 px-2.5 py-1 text-sm font-black text-primary-700 dark:border-primary-400/25 dark:bg-primary-500/10 dark:text-primary-100">%d</span>` $formerSupervisionCount }}
+  {{ $content = replaceRE `(?s)(<h2 id="former-collaborators-title"[^>]*>.*?)(<svg)` (printf `${1}%s${2}` $formerSupervisionCountBadge) $content 1 }}
 {{ end }}
 
 {{ $projectCount := 0 }}
@@ -167,6 +174,42 @@
 {{ $productsBlockHtml := printf `<div id="researcher-products" class="mt-6 rounded-[1.5rem] border border-black/5 bg-white/80 p-5 shadow-[0_12px_45px_rgba(15,23,42,0.06)] dark:border-white/10 dark:bg-white/[0.02]"><h3 class="m-0 text-2xl font-black tracking-tight text-gray-950 dark:text-white">%s</h3><p class="m-0 mt-3 text-sm leading-6 text-gray-600 dark:text-white/70">%s</p>%s</div>` $productsSectionTitle $productsSectionIntro $productsContentHtml }}
 {{ $content = replaceRE `(?s)(<h2 id=(?:")?(?:research-areas|areas-de-pesquisa|áreas-de-pesquisa)(?:")?[^>]*>.*?</h2>)(.*?)(<h2 id=)` (printf `${1}${2}%s${3}` $productsBlockHtml) $content 1 }}
 {{ $tocEntries = $tocEntries | append (dict "level" 2 "anchor" "researcher-products" "label" $productsSectionTitle) }}
+
+{{ $hasManualPublicationsSection := or (in $content `id="npublications-section"`) (in $content `id="publicações"`) (in $content `id="publications"`) }}
+{{ if and (gt $publicationCount 0) (not $hasManualPublicationsSection) }}
+  {{ $publicationItemsHtml := slice }}
+  {{ range $personPublications }}
+    {{ $pubTitle := "" }}
+    {{ with .title }}
+      {{ $pubTitle = index . $.Site.Language.Lang | default (index . "pt") | default (index . "en") }}
+    {{ end }}
+    {{ if $pubTitle }}
+      {{ $pubTitle = $pubTitle | plainify | htmlEscape }}
+      {{ $pubAuthors := delimit .authors ", " | plainify | htmlEscape }}
+      {{ $pubYear := printf "%v" .year | htmlEscape }}
+      {{ $pubType := i18n (printf "pub_type_%s" .type) | default .type | plainify | htmlEscape }}
+      {{ $pubDetail := delimit (slice $pubType $pubYear) " • " }}
+      {{ $pubUrl := .url | default "" }}
+      {{ $pubTitleHtml := $pubTitle }}
+      {{ if $pubUrl }}
+        {{ $linkAttrs := cond (hasPrefix $pubUrl "/") "" ` target="_blank" rel="noopener noreferrer"` }}
+        {{ $pubTitleHtml = printf `<a href="%s"%s class="font-semibold text-primary-700 transition-colors hover:text-primary-600 dark:text-primary-200 dark:hover:text-primary-100">%s</a>` $pubUrl $linkAttrs $pubTitle }}
+      {{ end }}
+      {{ $publicationItemsHtml = $publicationItemsHtml | append (printf `<li class="list-none rounded-[1.25rem] border border-black/5 bg-white/80 px-5 py-4 shadow-[0_10px_35px_rgba(15,23,42,0.06)] dark:border-white/10 dark:bg-white/[0.04]"><p class="m-0 text-sm font-semibold leading-6 text-gray-500 dark:text-white/60">%s</p><p class="m-0 mt-2 text-base leading-7 text-gray-700 dark:text-white/78">%s</p><p class="m-0 mt-2 text-sm leading-6 text-gray-500 dark:text-white/60">%s</p></li>` $pubAuthors $pubTitleHtml $pubDetail) }}
+    {{ end }}
+  {{ end }}
+  {{ if gt (len $publicationItemsHtml) 0 }}
+    {{ $publicationBlockHtml := printf `<div id="npublications-section" x-data="{ showPublications: false }"><h2 id="npublications-title" @click="showPublications = !showPublications" class="text-xl font-bold mb-2 cursor-pointer flex items-center text-primary-900">%s <span class="ml-2 inline-flex items-center rounded-full border border-primary-200 bg-primary-50 px-2.5 py-1 text-sm font-black text-primary-700 dark:border-primary-400/25 dark:bg-primary-500/10 dark:text-primary-100">%d</span><svg :class="{'rotate-0': !showPublications, 'rotate-180': showPublications}" class="ml-2 h-5 w-5 transform transition-transform duration-200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#51C5CF"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" /></svg></h2><div x-show="showPublications" x-cloak><ol class="m-0 list-none space-y-3 p-0">%s</ol></div></div>` $publicationsLabel $publicationCount (delimit $publicationItemsHtml "") }}
+    {{ if in $content `id="contato"` }}
+      {{ $content = replaceRE `(?s)(<h2 id="contato"[^>]*>)` (printf `%s${1}` $publicationBlockHtml) $content 1 }}
+    {{ else if in $content `id="contact"` }}
+      {{ $content = replaceRE `(?s)(<h2 id="contact"[^>]*>)` (printf `%s${1}` $publicationBlockHtml) $content 1 }}
+    {{ else }}
+      {{ $content = printf "%s%s" $content $publicationBlockHtml }}
+    {{ end }}
+    {{ $tocEntries = $tocEntries | append (dict "level" 2 "anchor" "npublications-title" "label" $publicationsLabel) }}
+  {{ end }}
+{{ end }}
 
 {{ $hasToc := gt (len $tocEntries) 0 }}
 

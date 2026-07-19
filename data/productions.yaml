@@ -23,6 +23,9 @@ items:
   - ai
   - machine_learning
   - sergio_freitas
+  - andre_silva
+  - milena_silva
+  - renan_batista
   type: registro
   program: ''
   advisors: []
@@ -1140,6 +1143,9 @@ items:
   - cristiane_ramos
   - active_learning
   - gamification
+  - mylena_faria
+  - marcus_martins
+  - juan_alves
   type: conference
   program: ''
   advisors: []
@@ -1179,6 +1185,9 @@ items:
   - cristiane_ramos
   - active_learning
   - gamification
+  - mylena_faria
+  - marcus_martins
+  - juan_alves
   type: conference
   program: ''
   advisors: []
@@ -1243,6 +1252,7 @@ items:
   - cristiane_ramos
   - gamification
   - machine_learning
+  - arthur_temporim
   type: conference
   program: ''
   advisors: []
@@ -1492,6 +1502,7 @@ items:
   - machine_learning
   - sergio_freitas
   - cristiane_ramos
+  - edmilson_cosme
   type: conference
   program: ''
   advisors: []
@@ -1629,6 +1640,7 @@ administrative and operational activities of the Brazilian Army."
   tags:
   - gamification
   - machine_learning
+  - arthur_temporim
   type: dissertation
   program: curso_ppca
   advisors:
@@ -1758,6 +1770,7 @@ administrative and operational activities of the Brazilian Army."
   tags:
   - learning_analytics
   - machine_learning
+  - edmilson_cosme
   type: dissertation
   program: curso_ppca
   advisors:
@@ -9342,6 +9355,7 @@ administrative and operational activities of the Brazilian Army."
   - gamification
   - active_learning
   - social_software
+  - mylena_faria
   type: tcc
   program: curso_esw2
   advisors:
@@ -9443,6 +9457,9 @@ administrative and operational activities of the Brazilian Army."
   - digital_transformation
   - sergio_freitas
   - cristiane_ramos
+  - mylena_faria
+  - wildemberg_sales
+  - marcus_martins
   type: conference
   program: ''
   advisors: []
@@ -9677,6 +9694,9 @@ administrative and operational activities of the Brazilian Army."
   - ai
   - machine_learning
   - sergio_freitas
+  - andre_silva
+  - milena_silva
+  - renan_batista
   type: conference
   program: ''
   advisors: []
@@ -9758,6 +9778,7 @@ administrative and operational activities of the Brazilian Army."
   - learning_analytics
   - active_learning
   - sergio_freitas
+  - mylena_faria
   type: conference
   program: ''
   advisors: []
