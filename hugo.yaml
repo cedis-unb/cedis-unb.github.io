@@ -11,7 +11,7 @@ languages:
   # PORTUGUÊS
     label: "Português"
     locale: "pt"
-    title: CEDIS
+    title: CEDIS / UnB
     weight: 1
     params:
       color: blue
@@ -250,7 +250,7 @@ languages:
   # ENGLISH
     #baseURL: '/en/'
     label: "English"
-    title: CEDIS
+    title: CEDIS / UnB
     weight: 2
     params:
       color: blue
