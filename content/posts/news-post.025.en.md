@@ -1,5 +1,5 @@
 ---
-title: "CEDIS students' thesis gives rise to Git Ranking, a gamified application for agile teams on GitHub"
+title: "Software Engineering students' thesis gives rise to Git Ranking, a gamified application for agile teams on GitHub"
 date: 2026-07-14T09:00:00-03:00
 draft: false
 weight: 500

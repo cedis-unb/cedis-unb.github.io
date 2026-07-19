@@ -1,5 +1,5 @@
 ---
-title: "TCC de estudantes do CEDIS dá origem ao Atloria, aplicativo de realidade aumentada para ensino de estruturas de dados"
+title: "TCC de estudantes de Engenharia de Software dá origem ao Atloria, aplicativo de realidade aumentada para ensino de estruturas de dados"
 date: 2026-07-07T09:00:00-03:00
 draft: false
 weight: 500
