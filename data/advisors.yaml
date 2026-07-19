@@ -2,7 +2,7 @@ advisors:
   sergio_freitas:
     name: "Sergio Freitas"
     link: "/people/sergio_freitas"
-    lattes: http://lattes.cnpq.br/0395549254894676
+    lattes: https://lattes.cnpq.br/0395549254894676
     orcid: https://orcid.org/0000-0003-3996-4985
     email: sergiofreitas@unb.br
     areas: 
@@ -17,8 +17,10 @@ advisors:
   cristiane_ramos:
     name: "Cristiane Ramos"
     link: "/people/cristiane_ramos"
-    lattes:
-    areas: 
+    lattes: https://lattes.cnpq.br/9950213660160161
+    orcid: https://orcid.org/0000-0002-6235-5590
+    email: cristianeramos@unb.br
+    areas:
       - active_learning
       - education
       - gamification
@@ -29,7 +31,7 @@ advisors:
   andre_lanna:
     name: "André Lanna"
     link: "/people/andre_lanna"
-    lattes: "http://lattes.cnpq.br/5685720614944773"
+    lattes: "https://lattes.cnpq.br/5685720614944773"
     orcid: https://orcid.org/0000-0003-4200-6569
     email: andrelanna@unb.br
     areas: 
@@ -41,7 +43,7 @@ advisors:
   george_marsicano:
     name: "George Marsicano"
     link: "/people/george_marsicano"
-    lattes: http://lattes.cnpq.br/2317804591146328
+    lattes: https://lattes.cnpq.br/2317804591146328
     orcid:
     email: georgemarsicano@unb.br
     areas: 
@@ -57,18 +59,21 @@ advisors:
   fabiana_mendes:
     name: "Fabiana Mendes"
     link: "/people/fabiana_mendes"
-    lattes: http://lattes.cnpq.br/7675506667619564
+    lattes: https://lattes.cnpq.br/7675506667619564
     orcid: https://orcid.org/0000-0002-1724-2044
-    email:
-    areas: 
+    email: fabianamendes@unb.br
+    areas:
       - green_software
+      - software_quality
+      - verification_validation_testing
+      - security
 
   ricardo_ajax:
     name: "Ricardo Ajax"
     link: "/people/ricardo_ajax"
-    lattes: http://lattes.cnpq.br/8309011123228244
+    lattes: https://lattes.cnpq.br/8309011123228244
     orcid: https://orcid.org/0000-0003-0156-0205
-    email:
+    email: ricardoajax@unb.br
     areas: 
       - active_learning
       - digital_transformation
@@ -78,8 +83,8 @@ advisors:
 
   daniel_sundfeld:
     name: "Daniel Sundfeld"
-    link: "/people/daniel_sundfeld"
-    lattes: http://lattes.cnpq.br/2619423058109475
+    link: "/people/daniel_lima"
+    lattes: https://lattes.cnpq.br/2619423058109475
     orcid: https://orcid.org/0000-0002-5147-3698
     email: daniel.sundfeld@unb.br
     areas: 

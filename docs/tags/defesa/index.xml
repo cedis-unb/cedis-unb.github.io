@@ -142,6 +142,13 @@
       <description>Dione Ramos Canuto Moura defended at UnB’s Applied Computing graduate program a dissertation analyzing the usability of SiCaPEx — the Brazilian Army personnel registration system — combining SUS, Nielsen’s heuristics, and implemented improvement proposals.</description>
     </item>
     <item>
+      <title>Rooms, timeslots, lecturers: a dissertation proposes an adaptive model to schedule academic resources at UnB</title>
+      <link>https://cedis.unb.br/posts/defesa-eber-moreira-2024/</link>
+      <pubDate>Tue, 17 Dec 2024 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/posts/defesa-eber-moreira-2024/</guid>
+      <description>Éber Junio Borges Moreira defended at UnB’s PPCA a dissertation tackling academic resource scheduling in higher education institutions, with a case study on UnB itself.</description>
+    </item>
+    <item>
       <title>Labor law in your pocket: a PWA brings legal flowcharts to mobile devices</title>
       <link>https://cedis.unb.br/posts/defesa-joao-machado-2024/</link>
       <pubDate>Mon, 28 Oct 2024 00:00:00 -0300</pubDate>
@@ -196,6 +203,13 @@
       <pubDate>Thu, 08 Aug 2024 00:00:00 -0300</pubDate>
       <guid>https://cedis.unb.br/posts/defesa-antonio-chaves-2024/</guid>
       <description>Antonio Rangel Chaves and Vitor Diniz Pagani Vieira Ribeiro defended at FCTE/UnB an undergraduate thesis lowering the entry barrier for teachers who want to gamify Moodle courses — with a guide and a practical tool.</description>
+    </item>
+    <item>
+      <title>GCMP: a dissertation systematizes how to build gamified chatbots</title>
+      <link>https://cedis.unb.br/posts/defesa-arthur-temporim-2024/</link>
+      <pubDate>Tue, 28 May 2024 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/posts/defesa-arthur-temporim-2024/</guid>
+      <description>Arthur Rocha Temporim de Lacerda defended at UnB’s Applied Computing graduate program a dissertation proposing GCMP — the Gamified Chatbot Management Process — a method to orchestrate the end-to-end development of gamified chatbots.</description>
     </item>
     <item>
       <title>Continuous improvement focused on usability: an undergraduate thesis applies established mechanisms in a web app</title>
@@ -296,11 +310,25 @@
       <description>João Vitor Lopes de Farias defended at FCTE/UnB an undergraduate thesis examining the use of RPGs as the backbone of a learning process — combining narrative, roles and challenges with clear pedagogical goals.</description>
     </item>
     <item>
+      <title>Dropout at UnB under the machine learning lens: a dissertation predicts who is at risk</title>
+      <link>https://cedis.unb.br/posts/defesa-edmilson-silva-2023/</link>
+      <pubDate>Mon, 03 Jul 2023 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/posts/defesa-edmilson-silva-2023/</guid>
+      <description>Edmilson Cosme da Silva defended at UnB’s PPCA a dissertation applying machine learning to predict academic dropout in UnB’s on-campus undergraduate programs.</description>
+    </item>
+    <item>
       <title>Software quality and an ageing Brazil: an undergraduate thesis reads TIC Household data</title>
       <link>https://cedis.unb.br/posts/defesa-guilherme-silva-2023/</link>
       <pubDate>Thu, 15 Jun 2023 00:00:00 -0300</pubDate>
       <guid>https://cedis.unb.br/posts/defesa-guilherme-silva-2023/</guid>
       <description>Guilherme Daniel Fernandes da Silva and Lorrayne Alves Cardozo defended at FCTE/UnB an undergraduate thesis analyzing the relationship between software quality and population ageing using data from Brazil’s TIC Household survey.</description>
+    </item>
+    <item>
+      <title>Police intelligence reports under the gamification lens: a dissertation measures what changes</title>
+      <link>https://cedis.unb.br/posts/defesa-publio-cavalcante-2023/</link>
+      <pubDate>Thu, 23 Mar 2023 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/posts/defesa-publio-cavalcante-2023/</guid>
+      <description>Públio Pastrolin Cavalcante defended at UnB’s PPCA a dissertation evaluating how gamification applied to police intelligence activities affects the quality of reports produced.</description>
     </item>
     <item>
       <title>Why don&#39;t companies use processes they already paid to define?</title>
@@ -429,6 +457,13 @@
       <description>Vítor Cardoso Xoteslem defended at FCTE/UnB an undergraduate thesis crafting a testing strategy for the Doarti app — maintained by a geographically distributed volunteer team under pandemic-forced remote work.</description>
     </item>
     <item>
+      <title>REQGAME: a dissertation tests gamification for requirements elicitation in a federal public agency</title>
+      <link>https://cedis.unb.br/posts/defesa-ana-araujo-2021/</link>
+      <pubDate>Tue, 15 Jun 2021 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/posts/defesa-ana-araujo-2021/</guid>
+      <description>Ana Cláudia Alves Mendes Araújo defended at UnB’s PPCA a dissertation applying gamification to the requirements elicitation process in software projects run at a federal public agency.</description>
+    </item>
+    <item>
       <title>Analytics inside the classroom: an undergraduate thesis uses data mining to decide where to tune TBL</title>
       <link>https://cedis.unb.br/posts/defesa-allan-nobre-2021/</link>
       <pubDate>Fri, 28 May 2021 00:00:00 -0300</pubDate>
@@ -483,6 +518,20 @@
       <pubDate>Fri, 28 Feb 2020 00:00:00 -0300</pubDate>
       <guid>https://cedis.unb.br/posts/defesa-ronyell-santos-2020/</guid>
       <description>Ronyell Henrique dos Santos defended at FCTE/UnB an undergraduate thesis applying refactoring operations to improve software system variability — reducing maintenance costs over the lifecycle.</description>
+    </item>
+    <item>
+      <title>UnB&#39;s Service Bus gains monitoring: a dissertation instruments the university&#39;s digital backbone</title>
+      <link>https://cedis.unb.br/posts/defesa-felipe-evangelista-2020/</link>
+      <pubDate>Tue, 11 Feb 2020 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/posts/defesa-felipe-evangelista-2020/</guid>
+      <description>Felipe Evangelista dos Santos defended at UnB’s PPCA a dissertation integrating monitoring tools into UnB’s Service Bus — critical infrastructure for communication between academic systems.</description>
+    </item>
+    <item>
+      <title>SOA, agile, and QA in the same case study: a dissertation documents where three cultures actually meet</title>
+      <link>https://cedis.unb.br/posts/defesa-james-chaves-2019/</link>
+      <pubDate>Wed, 17 Jul 2019 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/posts/defesa-james-chaves-2019/</guid>
+      <description>James Taylor Faria Chaves defended at UnB’s PPCA a dissertation analyzing, through a case study, the encounter between Service-Oriented Architecture (SOA), agile development methods, and Quality Assurance practices.</description>
     </item>
     <item>
       <title>Team based learning gets a platform undergraduate thesis moves the methodology from the classroom to the cloud</title>

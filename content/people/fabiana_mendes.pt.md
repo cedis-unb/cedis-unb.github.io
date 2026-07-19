@@ -76,8 +76,7 @@ nav_next: true
 </div>
 
 ## {{< i18n "people_contact" >}}
-- {{< i18n "people_contact_professional" >}}: Universidade de Brasília, Campus Gama (FCTE), Brasília - DF, Brasil.
-- Lattes iD: [CV Lattes](http://lattes.cnpq.br/7675506667619564)
-- Orcid iD: [Orcid Profile](https://orcid.org/0000-0002-1724-2044)
+- {{< i18n "people_contact_professional" >}}: Universidade de Brasília, Faculdade de Ciências e Tecnologias em Engenharia (FCTE), Campus Gama, Área Especial de Indústria Projeção A, Setor Leste (Gama), Brasília - DF, Brasil. CEP 72.444-240.
+- Homepage institucional: [FCTE/UnB](https://fcte.unb.br/)
 
 {{< backToTopBtn target="top" >}}
