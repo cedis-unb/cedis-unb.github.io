@@ -27,6 +27,8 @@ A ideia é elegante por combinar {{< link-interno "/areas/ai_pln/" "processament
 
 O TCC foi orientado dentro da linha de pesquisa em {{< link-interno "/areas/active_learning/" "aprendizagem ativa" >}} e tecnologias educacionais que sempre marcou a atuação do Prof. Sergio Freitas no CEDIS, e antecipa, em contexto acadêmico, questões que a comunidade voltaria a discutir com força a partir de 2022 com a popularização dos grandes modelos de linguagem: como calibrar avaliações automáticas em contextos onde erros são pedagogicamente custosos.
 
+A pesquisa também se desdobrou em dois artigos com Cristóvão entre os autores: [_An automatic essay correction for an active learning environment_](https://doi.org/10.1109/AICCSA.2016.7945769), publicado em 2016, e [_Evaluation of an Automatic Essay Correction System Used as an Assessment Tool_](https://doi.org/10.1007/978-3-319-58700-4_18), publicado nos anais da 19th International Conference on Human-Computer Interaction em 2017. Os artigos levam a proposta de correção automática para o formato científico.
+
 O trabalho, defendido na Faculdade de Ciências e Tecnologias em Engenharia (FCTE), está disponível na [Biblioteca Digital da Produção Intelectual Discente da UnB](https://bdm.unb.br/handle/10483/14871).
 
 ---

@@ -312,7 +312,7 @@ bastam). Preserve titulação (Prof. Dr., Prof.ª Dr.ª) e vínculo
 ## 4. Perfis de pesquisadores (`content/people/*.md`)
 
 - Campo `Lattes iD` sempre com HTTPS: `https://lattes.cnpq.br/<id>`.
-- Campo `Homepage` do professor aponta para a página oficial da FCTE:
+- Campo `Site institucional` do professor aponta para a página oficial da FCTE:
   `[FCTE/UnB](https://fcte.unb.br/)`.
 - Endereço em contato: `Universidade de Brasília, Campus Gama, ...`.
 

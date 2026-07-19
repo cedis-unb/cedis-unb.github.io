@@ -25,7 +25,7 @@ O trabalho toma os cursos de graduação presencial da própria UnB como recorte
 
 Ao articular {{< link-interno "/areas/learning_analytics/" "Learning Analytics" >}} com {{< link-interno "/areas/ai_pln/" "aprendizagem de máquina" >}} aplicada a políticas educacionais, o trabalho oferece à UnB — e a instituições parecidas — insumo para redesenhar sistemas de acompanhamento discente. É o tipo de contribuição que precisa migrar do PDF para o painel de coordenação para gerar impacto.
 
-A pesquisa também resultou no artigo [_A systematic review of the factors that impact the prediction of retention and dropout in higher education_](https://hdl.handle.net/10125/102787), publicado na 56th Hawaii International Conference on System Sciences. O artigo organiza a literatura que embasa a leitura preditiva explorada na dissertação.
+A pesquisa também resultou no artigo [_A Systematic Review of the Factors that Impact the Prediction of Retention and Dropout in Higher Education_](https://hdl.handle.net/10125/102787), publicado na 56th Hawaii International Conference on System Sciences. O artigo organiza a literatura que embasa a leitura preditiva explorada na dissertação.
 
 A defesa aconteceu em 3 de julho de 2023 em Brasília. A banca foi presidida pelo orientador, Prof. Dr. Sergio Antônio Andrade de Freitas (FCTE/UnB), e composta pelo Prof. Dr. Rafael Ferreira Leite de Mello (UFRPE) e pela Prof.ª Dr.ª Andrea Felippe Cabello (FACE/UnB). O Prof. Dr. Gladston Luiz da Silva, coordenador do PPCA, também acompanhou a sessão.
 
