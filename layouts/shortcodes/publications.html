@@ -109,14 +109,15 @@
     {{ with index $typeOrder .type }}
       {{ $typeRank = . }}
     {{ end }}
+    {{ $yearSortKey := printf "%04d_%02d_%02d_%s_%s" (sub 9999 $baseYear) (sub 99 $semester) $typeRank (lower $alphaSource) (lower (index .title $.Site.Language.Lang)) }}
     {{ $sortKey := printf "%02d_%04d_%02d_%s_%s" $typeRank (sub 9999 $baseYear) (sub 99 $semester) (lower $alphaSource) (lower (index .title $.Site.Language.Lang)) }}
-    {{ $filteredPublications = $filteredPublications | append (dict "item" . "sortKey" $sortKey) }}
+    {{ $filteredPublications = $filteredPublications | append (dict "item" . "sortKey" $sortKey "yearSortKey" $yearSortKey) }}
   {{ end }}
 
 {{end}} 
 
-{{ $publicationsToRender := $filteredPublications }}
-{{ if or (eq $sortMode "supervision") (eq $sortMode "year_alpha") }}
+{{ $publicationsToRender := sort $filteredPublications "yearSortKey" "asc" }}
+{{ if eq $sortMode "type_year_alpha" }}
   {{ $publicationsToRender = sort $filteredPublications "sortKey" "asc" }}
 {{ end }}
 

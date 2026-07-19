@@ -37,8 +37,14 @@
 {{ $highlightsPublicationsLabel := i18n "people_highlights_publications" }}
 {{ $highlightsNoProducts := i18n "people_highlights_no_products" }}
 {{ $highlightsNoProjects := i18n "people_highlights_no_projects" }}
+{{ $profileIntro := i18n "people_profile_intro" }}
+{{ $backgroundIntro := i18n "people_background_intro" }}
+{{ $professionalActivitiesIntro := i18n "people_professional_activities_intro" }}
+{{ $contributionsIntro := i18n "people_contributions_intro" }}
 {{ $researchAreasIntro := i18n "people_research_areas_intro" }}
+{{ $projectsIntro := i18n "people_projects_intro" }}
 {{ $supervisionsIntro := i18n "people_supervisions_intro" }}
+{{ $contactIntro := i18n "people_contact_intro" }}
 {{ $featuredPublicationsTitle := i18n "people_featured_publications_title" }}
 {{ $featuredPublicationsLead := i18n "people_featured_publications_lead" }}
 {{ $allPublicationsHint := i18n "people_all_publications_hint" }}
@@ -242,9 +248,21 @@
     {{ end }}
   {{ end }}
   {{ $researchAreasIntroHtml := printf `<p class="section-context">%s</p>` $researchAreasIntro }}
+  {{ $profileIntroHtml := printf `<p class="section-context">%s</p>` $profileIntro }}
+  {{ $backgroundIntroHtml := printf `<p class="section-context">%s</p>` $backgroundIntro }}
+  {{ $professionalActivitiesIntroHtml := printf `<p class="section-context">%s</p>` $professionalActivitiesIntro }}
+  {{ $contributionsIntroHtml := printf `<p class="section-context">%s</p>` $contributionsIntro }}
+  {{ $projectsIntroHtml := printf `<p class="section-context">%s</p>` $projectsIntro }}
   {{ $supervisionsIntroHtml := printf `<p class="section-context">%s</p>` $supervisionsIntro }}
+  {{ $contactIntroHtml := printf `<p class="section-context">%s</p>` $contactIntro }}
+  {{ $content = replaceRE `(?s)(<h2 id="(?:perfil-acadêmico-e-profissional|academic-and-professional-profile)"[^>]*>.*?</h2>)` (printf `${1}%s` $profileIntroHtml) $content 1 }}
+  {{ $content = replaceRE `(?s)(<h2 id="(?:formação-acadêmica|academic-background)"[^>]*>.*?</h2>)` (printf `${1}%s` $backgroundIntroHtml) $content 1 }}
+  {{ $content = replaceRE `(?s)(<h2 id="(?:atividades-profissionais-e-de-ensino|professional-activities-and-teaching)"[^>]*>.*?</h2>)` (printf `${1}%s` $professionalActivitiesIntroHtml) $content 1 }}
+  {{ $content = replaceRE `(?s)(<h2 id="(?:contribuições-e-prêmios|contributions-and-acknowledgments)"[^>]*>.*?</h2>)` (printf `${1}%s` $contributionsIntroHtml) $content 1 }}
   {{ $content = replaceRE `(?s)(<h2 id="(?:research-areas|areas-de-pesquisa|áreas-de-pesquisa)"[^>]*>.*?</h2>)` (printf `${1}%s` $researchAreasIntroHtml) $content 1 }}
+  {{ $content = replaceRE `(?s)(<h2 id="(?:projetos-atuais|current-projects)"[^>]*>.*?</h2>)` (printf `${1}%s` $projectsIntroHtml) $content 1 }}
   {{ $content = replaceRE `(?s)(<h2 id="(?:supervisory-experience|experiência-em-orientação|experiencia-em-orientacao)"[^>]*>.*?</h2>)` (printf `${1}%s` $supervisionsIntroHtml) $content 1 }}
+  {{ $content = replaceRE `(?s)(<h2 id="(?:contato|contact)"[^>]*>.*?</h2>)` (printf `${1}%s` $contactIntroHtml) $content 1 }}
 {{ end }}
 
 {{ $productsItemsHtml := slice }}
@@ -512,14 +530,13 @@
   </section>
 
   <section class="mx-auto grid max-w-screen-xl gap-8 px-4 py-10 md:px-6 md:py-12 lg:grid-cols-[minmax(0,1fr)_20rem] lg:items-start lg:px-8">
-    <article class="order-2 lg:order-1">
-      <div class="rounded-[2rem] border border-black/5 bg-white/85 px-6 py-8 shadow-[0_20px_70px_rgba(15,23,42,0.08)] backdrop-blur dark:border-white/10 dark:bg-white/[0.04] md:px-8 md:py-10">
-        <div id="profile-content" class="[&_h2]:mt-12 [&_h2]:border-t [&_h2]:border-black/5 [&_h2]:pt-10 [&_h2]:text-3xl [&_h2]:font-black [&_h2]:tracking-tight [&_h2]:text-gray-950 dark:[&_h2]:border-white/10 dark:[&_h2]:text-white [&_h3]:mt-8 [&_h3]:text-2xl [&_h3]:font-black [&_h3]:tracking-tight [&_h3]:text-gray-950 dark:[&_h3]:text-white [&_h4]:mt-6 [&_h4]:text-xl [&_h4]:font-black [&_h4]:tracking-tight [&_h4]:text-gray-950 dark:[&_h4]:text-white [&_p]:my-5 [&_p]:text-base [&_p]:leading-7 [&_p]:text-gray-600 dark:[&_p]:text-white/72 [&_ul]:my-5 [&_ul]:list-disc [&_ul]:space-y-2 [&_ul]:pl-5 [&_ul]:text-gray-700 dark:[&_ul]:text-white/78 [&_ol]:my-5 [&_ol]:list-decimal [&_ol]:space-y-2 [&_ol]:pl-5 [&_ol]:text-gray-700 dark:[&_ol]:text-white/78 [&_li]:leading-7 [&_li>ul]:mt-2 [&_li>ol]:mt-2 [&_a]:font-semibold [&_a]:text-primary-700 [&_a]:transition-colors hover:[&_a]:text-primary-600 dark:[&_a]:text-primary-200 dark:hover:[&_a]:text-primary-100 [&_.caput]:mt-10">
+    <article class="order-2 space-y-8 lg:order-1">
+        <div id="profile-content" class="researcher-profile-content">
           {{ $content | safeHTML }}
         </div>
 
         {{ if $isResearcher }}
-        <div class="mt-12 rounded-[1.75rem] border border-primary-200/70 bg-[linear-gradient(180deg,_rgba(255,247,237,0.95),_rgba(255,255,255,0.9))] p-6 shadow-[0_16px_60px_rgba(197,39,47,0.08)] dark:border-primary-400/25 dark:bg-[linear-gradient(180deg,_rgba(76,29,29,0.35),_rgba(15,23,42,0.5))] md:p-8">
+        <div class="rounded-[1.75rem] border border-primary-200/70 bg-[linear-gradient(180deg,_rgba(255,247,237,0.95),_rgba(255,255,255,0.9))] p-6 shadow-[0_16px_60px_rgba(197,39,47,0.08)] dark:border-primary-400/25 dark:bg-[linear-gradient(180deg,_rgba(76,29,29,0.35),_rgba(15,23,42,0.5))] md:p-8">
           <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-primary-700 dark:text-primary-200">{{ i18n "people_cta_supervision_eyebrow" }}</div>
           <h2 class="mt-3 text-2xl font-black tracking-tight text-gray-950 dark:text-white md:text-3xl">{{ i18n "people_cta_supervision_heading" }}</h2>
           <p class="mt-3 max-w-2xl text-base leading-7 text-gray-700 dark:text-white/78">{{ i18n "people_cta_supervision_body" }}</p>
@@ -539,7 +556,6 @@
           </div>
         </div>
         {{ end }}
-      </div>
     </article>
 
     <aside class="order-1 space-y-5 lg:order-2 lg:sticky lg:top-24">

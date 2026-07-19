@@ -225,6 +225,17 @@ Recortes específicos já adotados:
 - Publicações de Ricardo Ajax Dias Kosloski no CEDIS devem considerar
   **2014 em diante**.
 
+### 2.9 Ordenação de listas
+
+Listas de publicações, produções e orientações geradas a partir de
+`data/productions.yaml` devem aparecer sempre por ano, do mais recente
+para o mais antigo. Dentro do mesmo ano, use semestre mais recente
+primeiro quando houver ano no formato `YYYY/S`.
+
+Regra prática: não dependa da posição do item no YAML para definir a
+ordem de exibição. O shortcode de publicações deve ordenar os itens
+filtrados antes de renderizar.
+
 ---
 
 ## 3. Notícias de defesa (`content/posts/defesa-*.md`)
@@ -403,8 +414,8 @@ acadêmico antes do currículo formal.
 
 Ordem recomendada:
 
-1. Perfil acadêmico/profissional.
-2. Bloco automático **Atuação em destaque**.
+1. Bloco automático **Atuação em destaque**.
+2. Perfil acadêmico/profissional.
 3. Áreas de pesquisa.
 4. Produtos vinculados, quando houver.
 5. Projetos atuais.
@@ -415,8 +426,17 @@ Ordem recomendada:
 
 Regras de layout:
 
+- Os perfis não devem voltar ao formato de currículo em lista crua.
+  Listas diretas de "Perfil", "Formação", "Atividades",
+  "Contribuições" e "Contato" devem ser tratadas visualmente como
+  blocos editoriais/timeline pelo template e CSS.
+- Cada seção principal deve ter uma frase curta de contexto quando
+  renderizada no perfil do pesquisador, para orientar a leitura sem
+  depender de texto longo no Markdown.
 - "Áreas de pesquisa" devem ser compactas; esconder descrições longas
   e imagens quando o contexto for a página do pesquisador.
+- "Projetos atuais" deve usar cards compactos com imagem, resumo curto
+  e chamada para abrir o projeto, não uma lista textual simples.
 - "Produtos" deve seguir o mesmo padrão de orientações/publicações:
   bloco colapsável, contador à direita, lista rolável quando houver
   muitos itens.
