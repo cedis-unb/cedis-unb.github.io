@@ -29,7 +29,6 @@
 {{ $productsEmptyLabel := i18n "ui_no_related_products_were_found" }}
 {{ $highlightsEyebrow := i18n "people_highlights_eyebrow" }}
 {{ $highlightsHeading := i18n "people_highlights_heading" }}
-{{ $highlightsLead := i18n "people_highlights_lead" }}
 {{ $highlightsFocusLabel := i18n "people_highlights_focus" }}
 {{ $highlightsProductsLabel := i18n "people_highlights_products" }}
 {{ $highlightsProjectsLabel := i18n "people_highlights_projects" }}
@@ -37,18 +36,7 @@
 {{ $highlightsPublicationsLabel := i18n "people_highlights_publications" }}
 {{ $highlightsNoProducts := i18n "people_highlights_no_products" }}
 {{ $highlightsNoProjects := i18n "people_highlights_no_projects" }}
-{{ $profileIntro := i18n "people_profile_intro" }}
-{{ $backgroundIntro := i18n "people_background_intro" }}
-{{ $professionalActivitiesIntro := i18n "people_professional_activities_intro" }}
-{{ $contributionsIntro := i18n "people_contributions_intro" }}
-{{ $researchAreasIntro := i18n "people_research_areas_intro" }}
-{{ $projectsIntro := i18n "people_projects_intro" }}
-{{ $supervisionsIntro := i18n "people_supervisions_intro" }}
-{{ $contactIntro := i18n "people_contact_intro" }}
 {{ $featuredPublicationsTitle := i18n "people_featured_publications_title" }}
-{{ $featuredPublicationsLead := i18n "people_featured_publications_lead" }}
-{{ $allPublicationsHint := i18n "people_all_publications_hint" }}
-{{ $productsIntroStrong := i18n "people_products_intro_strong" }}
 {{ $content := .Content }}
 
 {{ $tocEntries := slice }}
@@ -240,29 +228,14 @@
     {{ $highlightCardsHtml = $highlightCardsHtml | append (printf `<article><span>%s</span><strong>%s</strong></article>` $highlightsPublicationsLabel $highlightPublicationsText) }}
   {{ end }}
   {{ if gt (len $highlightCardsHtml) 0 }}
-    {{ $highlightBlockHtml := printf `<section id="researcher-highlights" class="researcher-highlights not-prose"><div class="researcher-highlights__intro"><p class="researcher-highlights__eyebrow">%s</p><h2 id="researcher-highlights-title">%s</h2><p>%s</p></div><div class="researcher-highlights__grid">%s</div></section>` $highlightsEyebrow $highlightsHeading $highlightsLead (delimit $highlightCardsHtml "") }}
+    {{ $highlightBlockHtml := printf `<section id="researcher-highlights" class="researcher-highlights not-prose"><div class="researcher-highlights__intro"><p class="researcher-highlights__eyebrow">%s</p><h2 id="researcher-highlights-title">%s</h2></div><div class="researcher-highlights__grid">%s</div></section>` $highlightsEyebrow $highlightsHeading (delimit $highlightCardsHtml "") }}
     {{ if and (in $content `id="top"`) (not (in $content `id="researcher-highlights"`)) }}
       {{ $content = replaceRE `(<div id="top"></div>)` (printf `${1}%s` $highlightBlockHtml) $content 1 }}
     {{ else if not (in $content `id="researcher-highlights"`) }}
       {{ $content = printf "%s%s" $highlightBlockHtml $content }}
     {{ end }}
   {{ end }}
-  {{ $researchAreasIntroHtml := printf `<p class="section-context">%s</p>` $researchAreasIntro }}
-  {{ $profileIntroHtml := printf `<p class="section-context">%s</p>` $profileIntro }}
-  {{ $backgroundIntroHtml := printf `<p class="section-context">%s</p>` $backgroundIntro }}
-  {{ $professionalActivitiesIntroHtml := printf `<p class="section-context">%s</p>` $professionalActivitiesIntro }}
-  {{ $contributionsIntroHtml := printf `<p class="section-context">%s</p>` $contributionsIntro }}
-  {{ $projectsIntroHtml := printf `<p class="section-context">%s</p>` $projectsIntro }}
-  {{ $supervisionsIntroHtml := printf `<p class="section-context">%s</p>` $supervisionsIntro }}
-  {{ $contactIntroHtml := printf `<p class="section-context">%s</p>` $contactIntro }}
-  {{ $content = replaceRE `(?s)(<h2 id="(?:perfil-acadêmico-e-profissional|academic-and-professional-profile)"[^>]*>.*?</h2>)` (printf `${1}%s` $profileIntroHtml) $content 1 }}
-  {{ $content = replaceRE `(?s)(<h2 id="(?:formação-acadêmica|academic-background)"[^>]*>.*?</h2>)` (printf `${1}%s` $backgroundIntroHtml) $content 1 }}
-  {{ $content = replaceRE `(?s)(<h2 id="(?:atividades-profissionais-e-de-ensino|professional-activities-and-teaching)"[^>]*>.*?</h2>)` (printf `${1}%s` $professionalActivitiesIntroHtml) $content 1 }}
-  {{ $content = replaceRE `(?s)(<h2 id="(?:contribuições-e-prêmios|contributions-and-acknowledgments)"[^>]*>.*?</h2>)` (printf `${1}%s` $contributionsIntroHtml) $content 1 }}
-  {{ $content = replaceRE `(?s)(<h2 id="(?:research-areas|areas-de-pesquisa|áreas-de-pesquisa)"[^>]*>.*?</h2>)` (printf `${1}%s` $researchAreasIntroHtml) $content 1 }}
-  {{ $content = replaceRE `(?s)(<h2 id="(?:projetos-atuais|current-projects)"[^>]*>.*?</h2>)` (printf `${1}%s` $projectsIntroHtml) $content 1 }}
-  {{ $content = replaceRE `(?s)(<h2 id="(?:supervisory-experience|experiência-em-orientação|experiencia-em-orientacao)"[^>]*>.*?</h2>)` (printf `${1}%s` $supervisionsIntroHtml) $content 1 }}
-  {{ $content = replaceRE `(?s)(<h2 id="(?:contato|contact)"[^>]*>.*?</h2>)` (printf `${1}%s` $contactIntroHtml) $content 1 }}
+  {{ $content = replaceRE `(?s)<h2 id="(?:projetos-atuais|current-projects)"[^>]*>.*?</h2>` "" $content 1 }}
 {{ end }}
 
 {{ $productsItemsHtml := slice }}
@@ -276,8 +249,12 @@
 {{ if gt $productCount 0 }}
   {{ $productsListHtml := delimit $productsItemsHtml "" }}
   {{ $productsContentHtml := printf `<ol class="m-0 grid list-none gap-3 p-0 md:grid-cols-2">%s</ol>` $productsListHtml }}
-  {{ $productsBlockHtml := printf `<div id="researcher-products" x-data="{ showProducts: false }"><h2 id="researcher-products-title" @click="showProducts = !showProducts" class="text-xl font-bold mb-2 cursor-pointer flex items-center text-primary-900">%s <span class="ml-2 inline-flex items-center rounded-full border border-primary-200 bg-primary-50 px-2.5 py-1 text-sm font-black text-primary-700 dark:border-primary-400/25 dark:bg-primary-500/10 dark:text-primary-100">%d</span><svg :class="{'rotate-0': !showProducts, 'rotate-180': showProducts}" class="ml-2 h-5 w-5 transform transition-transform duration-200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#51C5CF"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" /></svg></h2><div x-show="showProducts" x-cloak><p class="m-0 mb-3 text-sm leading-6 text-gray-600 dark:text-white/70">%s</p>%s</div></div>` $productsSectionTitle $productCount $productsIntroStrong $productsContentHtml }}
-  {{ $content = replaceRE `(?s)(<h2 id=(?:")?(?:research-areas|areas-de-pesquisa|áreas-de-pesquisa)(?:")?[^>]*>.*?</h2>)(.*?)(<h2 id=)` (printf `${1}${2}%s${3}` $productsBlockHtml) $content 1 }}
+  {{ $productsBlockHtml := printf `<div id="researcher-products" x-data="{ showProducts: false }"><h2 id="researcher-products-title" @click="showProducts = !showProducts" class="text-xl font-bold mb-2 cursor-pointer flex items-center text-primary-900">%s <span class="ml-2 inline-flex items-center rounded-full border border-primary-200 bg-primary-50 px-2.5 py-1 text-sm font-black text-primary-700 dark:border-primary-400/25 dark:bg-primary-500/10 dark:text-primary-100">%d</span><svg :class="{'rotate-0': !showProducts, 'rotate-180': showProducts}" class="ml-2 h-5 w-5 transform transition-transform duration-200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#51C5CF"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" /></svg></h2><div x-show="showProducts" x-cloak>%s</div></div>` $productsSectionTitle $productCount $productsContentHtml }}
+  {{ if in $content `id="researcher-projects"` }}
+    {{ $content = replaceRE `(?s)(<div id="researcher-projects")` (printf `%s${1}` $productsBlockHtml) $content 1 }}
+  {{ else }}
+    {{ $content = replaceRE `(?s)(<h2 id=(?:")?(?:research-areas|areas-de-pesquisa|áreas-de-pesquisa)(?:")?[^>]*>.*?</h2>)(.*?)(<h2 id=)` (printf `${1}${2}%s${3}` $productsBlockHtml) $content 1 }}
+  {{ end }}
   {{ $tocEntries = $tocEntries | append (dict "level" 2 "anchor" "researcher-products" "label" $productsSectionTitle) }}
 {{ end }}
 
@@ -312,14 +289,10 @@
     {{ end }}
   {{ end }}
   {{ if gt (len $featuredPublicationItemsHtml) 0 }}
-    {{ $featuredPublicationsHtml = printf `<section id="featured-publications" class="featured-publications not-prose"><div><p class="featured-publications__eyebrow">%s</p><h2 id="featured-publications-title">%s</h2><p>%s</p></div><ol>%s</ol></section>` $highlightsPublicationsLabel $featuredPublicationsTitle $featuredPublicationsLead (delimit $featuredPublicationItemsHtml "") }}
+    {{ $featuredPublicationsHtml = printf `<section id="featured-publications" class="featured-publications not-prose"><div><p class="featured-publications__eyebrow">%s</p><h2 id="featured-publications-title">%s</h2></div><ol>%s</ol></section>` $highlightsPublicationsLabel $featuredPublicationsTitle (delimit $featuredPublicationItemsHtml "") }}
   {{ end }}
   {{ if and $featuredPublicationsHtml (in $content `id="npublications-section"`) (not (in $content `id="featured-publications"`)) }}
     {{ $content = replaceRE `(?s)(<div id="npublications-section")` (printf `%s${1}` $featuredPublicationsHtml) $content 1 }}
-  {{ end }}
-  {{ if and (gt $publicationCount 0) (in $content `id="npublications-section"`) (not (in $content `class="publications-context"`)) }}
-    {{ $publicationsHintHtml := printf `<p class="section-context publications-context">%s</p>` $allPublicationsHint }}
-    {{ $content = replaceRE `(?s)(<div id="npublications-section"[^>]*>.*?</h2>)` (printf `${1}%s` $publicationsHintHtml) $content 1 }}
   {{ end }}
 {{ end }}
 
@@ -347,8 +320,7 @@
     {{ end }}
   {{ end }}
   {{ if gt (len $publicationItemsHtml) 0 }}
-    {{ $publicationsHintHtml := printf `<p class="section-context publications-context">%s</p>` $allPublicationsHint }}
-    {{ $publicationBlockHtml := printf `%s<div id="npublications-section" x-data="{ showPublications: false }"><h2 id="npublications-title" @click="showPublications = !showPublications" class="text-xl font-bold mb-2 cursor-pointer flex items-center text-primary-900">%s <span class="ml-2 inline-flex items-center rounded-full border border-primary-200 bg-primary-50 px-2.5 py-1 text-sm font-black text-primary-700 dark:border-primary-400/25 dark:bg-primary-500/10 dark:text-primary-100">%d</span><svg :class="{'rotate-0': !showPublications, 'rotate-180': showPublications}" class="ml-2 h-5 w-5 transform transition-transform duration-200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#51C5CF"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" /></svg></h2>%s<div x-show="showPublications" x-cloak><ol class="m-0 list-none space-y-3 p-0">%s</ol></div></div>` $featuredPublicationsHtml $publicationsLabel $publicationCount $publicationsHintHtml (delimit $publicationItemsHtml "") }}
+    {{ $publicationBlockHtml := printf `%s<div id="npublications-section" x-data="{ showPublications: false }"><h2 id="npublications-title" @click="showPublications = !showPublications" class="text-xl font-bold mb-2 cursor-pointer flex items-center text-primary-900">%s <span class="ml-2 inline-flex items-center rounded-full border border-primary-200 bg-primary-50 px-2.5 py-1 text-sm font-black text-primary-700 dark:border-primary-400/25 dark:bg-primary-500/10 dark:text-primary-100">%d</span><svg :class="{'rotate-0': !showPublications, 'rotate-180': showPublications}" class="ml-2 h-5 w-5 transform transition-transform duration-200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#51C5CF"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" /></svg></h2><div x-show="showPublications" x-cloak><ol class="m-0 list-none space-y-3 p-0">%s</ol></div></div>` $featuredPublicationsHtml $publicationsLabel $publicationCount (delimit $publicationItemsHtml "") }}
     {{ if in $content `id="contato"` }}
       {{ $content = replaceRE `(?s)(<h2 id="contato"[^>]*>)` (printf `%s${1}` $publicationBlockHtml) $content 1 }}
     {{ else if in $content `id="contact"` }}
@@ -401,6 +373,9 @@
   {{ if eq $anchor "researcher-highlights-title" }}
     {{ $anchor = "researcher-highlights" }}
     {{ $label = $highlightsHeading }}
+  {{ else if eq $anchor "researcher-projects-title" }}
+    {{ $anchor = "researcher-projects" }}
+    {{ $label = $projectsLabel }}
   {{ else if eq $anchor "researcher-products-title" }}
     {{ $anchor = "researcher-products" }}
     {{ $label = $productsSectionTitle }}
@@ -606,9 +581,9 @@
       {{ if $hasContact }}
       <div class="rounded-[1.75rem] border border-black/5 bg-white/85 p-5 shadow-[0_18px_60px_rgba(15,23,42,0.08)] backdrop-blur dark:border-white/10 dark:bg-white/[0.04]">
         <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-gray-400 dark:text-white/72">{{ i18n "people_contact" }}</div>
-        <ul class="m-0 mt-4 list-none space-y-3 p-0">
+        <div class="mt-4 divide-y divide-black/5 overflow-hidden rounded-[1.25rem] border border-black/5 bg-stone-50 dark:divide-white/10 dark:border-white/10 dark:bg-white/[0.04]">
           {{ if $contactEmail }}
-          <li class="m-0 flex items-center gap-3 rounded-[1.25rem] border border-black/5 bg-stone-50 px-4 py-3 dark:border-white/10 dark:bg-white/[0.04]" x-data="{ copied: false }">
+          <div class="flex items-center gap-3 px-4 py-3" x-data="{ copied: false }">
             <svg class="h-5 w-5 flex-shrink-0 text-primary-600 dark:text-primary-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
               <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
               <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
@@ -623,21 +598,21 @@
               class="inline-flex flex-shrink-0 items-center rounded-full border border-black/10 bg-white px-2.5 py-1 text-[0.7rem] font-semibold uppercase tracking-[0.14em] text-gray-700 transition-colors hover:border-primary-300 hover:text-primary-700 focus:outline-none focus:ring-2 focus:ring-primary-400 focus:ring-offset-2 dark:border-white/10 dark:bg-white/[0.06] dark:text-white/78 dark:hover:border-primary-300/60 dark:hover:text-primary-100 dark:focus:ring-offset-gray-900">
               <span x-text="copied ? 'OK' : '{{ i18n "ui_copy_email" }}'"></span>
             </button>
-          </li>
+          </div>
           {{ end }}
           {{ if $contactLattes }}
-          <li class="m-0 flex items-center gap-3 rounded-[1.25rem] border border-black/5 bg-stone-50 px-4 py-3 dark:border-white/10 dark:bg-white/[0.04]">
+          <div class="flex items-center gap-3 px-4 py-3">
             <span class="inline-flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-md bg-primary-600 text-[0.6rem] font-black uppercase tracking-tight text-white dark:bg-primary-500">L</span>
             <a href="{{ $contactLattes }}" target="_blank" rel="noopener noreferrer" class="min-w-0 flex-1 truncate text-sm font-semibold text-primary-700 hover:text-primary-600 dark:text-primary-200 dark:hover:text-primary-100">{{ i18n "people_lattes" }}</a>
-          </li>
+          </div>
           {{ end }}
           {{ if $contactOrcid }}
-          <li class="m-0 flex items-center gap-3 rounded-[1.25rem] border border-black/5 bg-stone-50 px-4 py-3 dark:border-white/10 dark:bg-white/[0.04]">
+          <div class="flex items-center gap-3 px-4 py-3">
             <span class="inline-flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-[#A6CE39] text-[0.55rem] font-black text-white">iD</span>
             <a href="{{ $contactOrcid }}" target="_blank" rel="noopener noreferrer" class="min-w-0 flex-1 truncate text-sm font-semibold text-primary-700 hover:text-primary-600 dark:text-primary-200 dark:hover:text-primary-100">ORCID</a>
-          </li>
+          </div>
           {{ end }}
-        </ul>
+        </div>
       </div>
       {{ end }}
 
