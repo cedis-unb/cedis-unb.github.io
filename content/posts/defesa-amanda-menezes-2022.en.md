@@ -24,6 +24,8 @@ The work begins with a systematic literature review to identify which factors �
 
 The finding matters for {{< link-interno "/areas/learning_analytics/" "Learning Analytics" >}} and institutional policy: aligning pedagogical decisions with risk evidence enables targeted interventions — instead of generic campaigns, whose impact is never measured. It is a work that signals a clear direction for universities willing to take data seriously.
 
+The undergraduate thesis is also connected to the paper [_A Systematic Review of the Factors that Impact the Prediction of Retention and Dropout in Higher Education_](https://hdl.handle.net/10125/102787), published at the 56th Hawaii International Conference on System Sciences in 2023, with Amanda and Letícia among the authors. The paper systematizes the literature behind the work's predictive stage.
+
 The full text — written in Portuguese — is available at the [UnB Undergraduate Theses Digital Library](https://bdm.unb.br/handle/10483/34952).
 
 ---

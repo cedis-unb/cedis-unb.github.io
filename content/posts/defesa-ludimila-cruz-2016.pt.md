@@ -23,6 +23,8 @@ O trabalho começa por uma reflexão sobre motivação — o que faz uma pessoa 
 
 Ao aliar tecnologia a design motivacional, a autora contribui para ampliar o alcance da {{< link-interno "/areas/gamification/" "gamificação" >}} para além de projetos de nicho — em uma linha de trabalho que se tornaria uma marca do CEDIS ao longo da década.
 
+O TCC também está ligado ao artigo [_Metodologia para avaliação da gamificação em jogos_](https://doi.org/10.5753/cbie.sbie.2016.510), publicado no XXVII Simpósio Brasileiro de Informática na Educação, em Uberlândia, em 2016, nas páginas 510-519, com Ludimila entre as autoras. O artigo formaliza uma metodologia para avaliar projetos gamificados.
+
 O TCC pode ser consultado na [Biblioteca Digital da Produção Intelectual Discente da UnB](https://www.bdm.unb.br/handle/10483/21591).
 
 ---

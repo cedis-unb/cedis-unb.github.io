@@ -29,7 +29,7 @@ tags:
 - {{< link-interno "/products/magra/" "Projeto Magra" >}}
 
 ## Publicações
-- COSME, EDMILSON; FREITAS, S. A. A. ; RAMOS, C. S. ; MENEZES, A. E. M. ; ARAUJO, L. K. S. R. . A systematic review of the factors that impact the prediction of retention and dropout in higher education. Hawaii International Conference on System Sciences (HCISS), 2023.
+- COSME, EDMILSON; FREITAS, S. A. A. ; RAMOS, C. S. ; MENEZES, A. E. M. ; ARAUJO, L. K. S. R. . A Systematic Review of the Factors that Impact the Prediction of Retention and Dropout in Higher Education. Hawaii International Conference on System Sciences (HCISS), 2023.
 
 ## Contato
 - Endereço Profissional: STI, Universidade de Brasília, Brasília - DF, Brasil.

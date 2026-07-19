@@ -23,6 +23,8 @@ The work opens with a reflection on motivation — what drives a person toward a
 
 By pairing technology with motivational design, the author contributes to widening the reach of {{< link-interno "/areas/gamification/" "gamification" >}} beyond niche projects — along a line of work that would become a hallmark of CEDIS over the decade.
 
+The undergraduate thesis is also connected to the paper [_Metodologia para avaliação da gamificação em jogos_](https://doi.org/10.5753/cbie.sbie.2016.510), published at the XXVII Brazilian Symposium on Computers in Education, in Uberlândia, in 2016, on pages 510-519, with Ludimila among the authors. The paper formalizes a methodology for evaluating gamified projects.
+
 The full text — written in Portuguese — is available at the [UnB Undergraduate Theses Digital Library](https://www.bdm.unb.br/handle/10483/21591).
 
 ---

@@ -2590,6 +2590,21 @@ people:
   - gamification
   - software_development_tools
   year: 2016
+- name: Bruna Nayara Lima
+  categories:
+  - people
+  - tcc
+  title:
+    pt: 'Framework for Evaluating Educational Games: Motivational and Learning Aspects'
+    en: 'Framework for Evaluating Educational Games: Motivational and Learning Aspects'
+  program: curso_esw2
+  advisors:
+  - sergio_freitas
+  tags:
+  - inactive
+  - gamification
+  - education
+  year: 2016
 - name: Wilker Mesquita de Assunção
   categories:
   - people
