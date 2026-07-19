@@ -23,6 +23,7 @@
 {{ $formerSupervisionsLabel := i18n "people_former_supervisions" }}
 {{ $publicationsLabel := i18n "ui_publications" }}
 {{ $projectsLabel := i18n "ui_current_projects" }}
+{{ $previousProjectsLabel := i18n "ui_previous_projects" }}
 {{ $productsLabel := i18n "ui_products" }}
 {{ $productsSectionTitle := i18n "ui_products" }}
 {{ $productsSectionIntro := i18n "ui_products_created_with_this_researcher" }}
@@ -69,12 +70,14 @@
 {{ $contactEmail := "" }}
 {{ $contactLattes := "" }}
 {{ $contactOrcid := "" }}
+{{ $institutionalWebsite := "https://fcte.unb.br/" }}
+{{ $institutionalWebsiteLabel := i18n "ui_institutional_affiliation" }}
 {{ if $advisorInfo }}
   {{ with $advisorInfo.email }}{{ $contactEmail = . }}{{ end }}
   {{ with $advisorInfo.lattes }}{{ $contactLattes = . }}{{ end }}
   {{ with $advisorInfo.orcid }}{{ $contactOrcid = . }}{{ end }}
 {{ end }}
-{{ $hasContact := or $contactEmail $contactLattes $contactOrcid }}
+{{ $hasContact := or $contactEmail $contactLattes $contactOrcid $isResearcher }}
 
 {{ $projectIds := slice }}
 {{ range hugo.Data.projects.projects }}
@@ -168,6 +171,16 @@
 {{ end }}
 {{ $projectCount := len $researchProjects }}
 
+{{ $previousResearchProjects := slice }}
+{{ range .Site.RegularPages.ByTitle }}
+  {{ $isClosedProject := or (eq .Params.status "closed") (in .Params.tags "closed") (in .Params.tags "inactive") }}
+  {{ if and (eq .Section "projects") (eq .Lang $.Site.Language.Lang) $isClosedProject (or (in .Params.categories $personKey) (in .Params.tags $personKey)) }}
+    {{ $previousResearchProjects = $previousResearchProjects | append . }}
+  {{ end }}
+{{ end }}
+{{ $previousResearchProjects = sort $previousResearchProjects "Params.end_date" "desc" }}
+{{ $previousProjectCount := len $previousResearchProjects }}
+
 {{ $researchProducts := slice }}
 {{ $seenProductPermalinks := dict }}
 {{ range .Site.RegularPages.ByTitle }}
@@ -236,6 +249,36 @@
     {{ end }}
   {{ end }}
   {{ $content = replaceRE `(?s)<h2 id="(?:projetos-atuais|current-projects)"[^>]*>.*?</h2>` "" $content 1 }}
+{{ end }}
+
+{{ if and $isResearcher (gt $previousProjectCount 0) }}
+  {{ $previousProjectItemsHtml := slice }}
+  {{ range $previousResearchProjects }}
+    {{ $projectTitle := .Title | plainify | htmlEscape }}
+    {{ $projectSummary := (.Params.summary | default "") | plainify | htmlEscape }}
+    {{ $startValue := printf "%v" (.Params.start_date | default "") }}
+    {{ $endValue := printf "%v" (.Params.end_date | default "") }}
+    {{ $startYear := "" }}
+    {{ $endYear := "" }}
+    {{ if $startValue }}{{ $startYear = replaceRE `^([0-9]{4}).*$` `$1` $startValue }}{{ end }}
+    {{ if $endValue }}{{ $endYear = replaceRE `^([0-9]{4}).*$` `$1` $endValue }}{{ end }}
+    {{ if not $startYear }}{{ $startYear = .Date.Format "2006" }}{{ end }}
+    {{ $periodLabel := $startYear }}
+    {{ if and $endYear (ne $endYear $startYear) }}
+      {{ $periodLabel = printf "%s-%s" $startYear $endYear }}
+    {{ end }}
+    {{ $itemHtml := printf `<article class="profile-project-card"><a href="%s" class="profile-project-card__media" aria-label="%s: %s"><span>%s</span></a><div class="profile-project-card__body"><p class="profile-project-card__meta">%s · %s</p><h3><a href="%s">%s</a></h3>%s<a href="%s" class="profile-project-card__link"><span>%s</span><span aria-hidden="true">→</span></a></div></article>` .RelPermalink (i18n "ui_awards_see_project") $projectTitle $projectTitle (i18n "closed") $periodLabel .RelPermalink $projectTitle (cond (ne $projectSummary "") (printf `<p>%s</p>` $projectSummary) "") .RelPermalink (i18n "ui_awards_see_project") }}
+    {{ $previousProjectItemsHtml = $previousProjectItemsHtml | append $itemHtml }}
+  {{ end }}
+  {{ $previousProjectsBlockHtml := printf `<div id="researcher-previous-projects" x-data="{ showPreviousProjects: false }"><h2 id="researcher-previous-projects-title" @click="showPreviousProjects = !showPreviousProjects" class="text-xl font-bold mb-2 cursor-pointer flex items-center text-primary-900">%s <span class="ml-2 inline-flex items-center rounded-full border border-primary-200 bg-primary-50 px-2.5 py-1 text-sm font-black text-primary-700 dark:border-primary-400/25 dark:bg-primary-500/10 dark:text-primary-100">%d</span><svg :class="{'rotate-0': !showPreviousProjects, 'rotate-180': showPreviousProjects}" class="ml-2 h-5 w-5 transform transition-transform duration-200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#51C5CF"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" /></svg></h2><div x-show="showPreviousProjects" x-cloak><div class="not-prose profile-projects-grid">%s</div></div></div>` $previousProjectsLabel $previousProjectCount (delimit $previousProjectItemsHtml "") }}
+  {{ if or (in $content `id="experiência-em-orientação"`) (in $content `id="supervisory-experience"`) }}
+    {{ $content = replaceRE `(?s)(<h2 id="(?:experiência-em-orientação|supervisory-experience)"[^>]*>)` (printf `%s${1}` $previousProjectsBlockHtml) $content 1 }}
+  {{ else if in $content `id="current-supervisions-section"` }}
+    {{ $content = replaceRE `(?s)(<div id="current-supervisions-section")` (printf `%s${1}` $previousProjectsBlockHtml) $content 1 }}
+  {{ else }}
+    {{ $content = printf "%s%s" $content $previousProjectsBlockHtml }}
+  {{ end }}
+  {{ $tocEntries = $tocEntries | append (dict "level" 2 "anchor" "researcher-previous-projects" "label" $previousProjectsLabel) }}
 {{ end }}
 
 {{ $productsItemsHtml := slice }}
@@ -376,6 +419,9 @@
   {{ else if eq $anchor "researcher-projects-title" }}
     {{ $anchor = "researcher-projects" }}
     {{ $label = $projectsLabel }}
+  {{ else if eq $anchor "researcher-previous-projects-title" }}
+    {{ $anchor = "researcher-previous-projects" }}
+    {{ $label = $previousProjectsLabel }}
   {{ else if eq $anchor "researcher-products-title" }}
     {{ $anchor = "researcher-products" }}
     {{ $label = $productsSectionTitle }}
@@ -534,7 +580,7 @@
     </article>
 
     <aside class="order-1 space-y-5 lg:order-2 lg:sticky lg:top-24">
-      {{ if or (gt (len $displayTags) 0) (gt $activeSupervisions 0) (gt $formerSupervisionCount 0) (gt $projectCount 0) (gt $productCount 0) (gt $publicationCount 0) }}
+      {{ if or (gt (len $displayTags) 0) (gt $activeSupervisions 0) (gt $formerSupervisionCount 0) (gt $projectCount 0) (gt $previousProjectCount 0) (gt $productCount 0) (gt $publicationCount 0) }}
       <div class="rounded-[1.75rem] border border-black/5 bg-white/85 p-5 shadow-[0_18px_60px_rgba(15,23,42,0.08)] backdrop-blur dark:border-white/10 dark:bg-white/[0.04]">
         <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-gray-400 dark:text-white/72">{{ $statsTitle }}</div>
         <div class="mt-4 grid gap-3">
@@ -560,6 +606,12 @@
           <div class="rounded-[1.25rem] border border-black/5 bg-stone-50 px-4 py-4 dark:border-white/10 dark:bg-white/[0.04]">
             <div class="text-3xl font-black tracking-tight text-gray-950 dark:text-white">{{ $projectCount }}</div>
             <div class="mt-1 text-sm leading-6 text-gray-600 dark:text-white/72">{{ $projectsLabel }}</div>
+          </div>
+          {{ end }}
+          {{ if gt $previousProjectCount 0 }}
+          <div class="rounded-[1.25rem] border border-black/5 bg-stone-50 px-4 py-4 dark:border-white/10 dark:bg-white/[0.04]">
+            <div class="text-3xl font-black tracking-tight text-gray-950 dark:text-white">{{ $previousProjectCount }}</div>
+            <div class="mt-1 text-sm leading-6 text-gray-600 dark:text-white/72">{{ $previousProjectsLabel }}</div>
           </div>
           {{ end }}
           {{ if gt $productCount 0 }}
@@ -610,6 +662,12 @@
           <div class="flex items-center gap-3 px-4 py-3">
             <span class="inline-flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-[#A6CE39] text-[0.55rem] font-black text-white">iD</span>
             <a href="{{ $contactOrcid }}" target="_blank" rel="noopener noreferrer" class="min-w-0 flex-1 truncate text-sm font-semibold text-primary-700 hover:text-primary-600 dark:text-primary-200 dark:hover:text-primary-100">ORCID</a>
+          </div>
+          {{ end }}
+          {{ if $isResearcher }}
+          <div class="flex items-center gap-3 px-4 py-3">
+            <span class="inline-flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-md bg-gray-900 text-[0.55rem] font-black uppercase tracking-tight text-white dark:bg-white dark:text-gray-950">F</span>
+            <a href="{{ $institutionalWebsite }}" target="_blank" rel="noopener noreferrer" class="min-w-0 flex-1 truncate text-sm font-semibold text-primary-700 hover:text-primary-600 dark:text-primary-200 dark:hover:text-primary-100">{{ $institutionalWebsiteLabel }}</a>
           </div>
           {{ end }}
         </div>

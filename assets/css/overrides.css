@@ -502,6 +502,7 @@
 #profile-content #previous-collaborators,
 #profile-content #npublications-section,
 #profile-content #researcher-projects,
+#profile-content #researcher-previous-projects,
 #profile-content #researcher-products {
   margin-top: 2.25rem;
   border: 1px solid rgba(15, 23, 42, 0.08);
@@ -514,6 +515,7 @@
 #profile-content #previous-collaborators > h2,
 #profile-content #npublications-section > h2,
 #profile-content #researcher-projects > h2,
+#profile-content #researcher-previous-projects > h2,
 #profile-content #researcher-products > h2 {
   margin: 0 !important;
   border-top: 0 !important;
@@ -535,6 +537,7 @@
 #profile-content #previous-collaborators > h2:hover,
 #profile-content #npublications-section > h2:hover,
 #profile-content #researcher-projects > h2:hover,
+#profile-content #researcher-previous-projects > h2:hover,
 #profile-content #researcher-products > h2:hover {
   color: #c5272f;
 }
@@ -543,6 +546,7 @@
 #profile-content #previous-collaborators > h2 svg,
 #profile-content #npublications-section > h2 svg,
 #profile-content #researcher-projects > h2 svg,
+#profile-content #researcher-previous-projects > h2 svg,
 #profile-content #researcher-products > h2 svg {
   flex: 0 0 auto;
 }
@@ -551,6 +555,7 @@
 #profile-content #previous-collaborators > h2 > span:first-of-type,
 #profile-content #npublications-section > h2 > span:first-of-type,
 #profile-content #researcher-projects > h2 > span:first-of-type,
+#profile-content #researcher-previous-projects > h2 > span:first-of-type,
 #profile-content #researcher-products > h2 > span:first-of-type {
   margin-left: auto;
 }
@@ -559,6 +564,7 @@
 #profile-content #previous-collaborators > div[x-show],
 #profile-content #npublications-section > div[x-show],
 #profile-content #researcher-projects > div[x-show],
+#profile-content #researcher-previous-projects > div[x-show],
 #profile-content #researcher-products > div[x-show] {
   margin-top: 1rem;
   max-height: min(72vh, 52rem);
@@ -606,6 +612,8 @@
 #profile-content #npublications-section ol,
 #profile-content #researcher-projects ul,
 #profile-content #researcher-projects ol,
+#profile-content #researcher-previous-projects ul,
+#profile-content #researcher-previous-projects ol,
 #profile-content #researcher-products ul,
 #profile-content #researcher-products ol {
   gap: 0.75rem;
@@ -681,6 +689,7 @@
 #profile-content #previous-collaborators,
 #profile-content #npublications-section,
 #profile-content #researcher-projects,
+#profile-content #researcher-previous-projects,
 #profile-content #researcher-products {
   padding: 0.7rem;
 }
@@ -689,6 +698,7 @@
 #profile-content #previous-collaborators > h2,
 #profile-content #npublications-section > h2,
 #profile-content #researcher-projects > h2,
+#profile-content #researcher-previous-projects > h2,
 #profile-content #researcher-products > h2 {
   align-items: center;
   font-size: 1.15rem !important;
@@ -700,6 +710,7 @@
 #profile-content #previous-collaborators > div[x-show],
 #profile-content #npublications-section > div[x-show],
 #profile-content #researcher-projects > div[x-show],
+#profile-content #researcher-previous-projects > div[x-show],
 #profile-content #researcher-products > div[x-show] {
   max-height: 68vh;
 }
@@ -802,6 +813,7 @@
 .dark #profile-content #previous-collaborators,
 .dark #profile-content #npublications-section,
 .dark #profile-content #researcher-projects,
+.dark #profile-content #researcher-previous-projects,
 .dark #profile-content #researcher-products {
   border-color: rgba(255, 255, 255, 0.1);
   background: rgba(255, 255, 255, 0.035);
@@ -811,6 +823,7 @@
 .dark #profile-content #previous-collaborators > h2,
 .dark #profile-content #npublications-section > h2,
 .dark #profile-content #researcher-projects > h2,
+.dark #profile-content #researcher-previous-projects > h2,
 .dark #profile-content #researcher-products > h2 {
   background: rgba(255, 255, 255, 0.06);
   color: #fff;
@@ -821,6 +834,7 @@
 .dark #profile-content #previous-collaborators > h2:hover,
 .dark #profile-content #npublications-section > h2:hover,
 .dark #profile-content #researcher-projects > h2:hover,
+.dark #profile-content #researcher-previous-projects > h2:hover,
 .dark #profile-content #researcher-products > h2:hover {
   color: #fecaca;
 }

@@ -38,9 +38,6 @@ nav_next: true
 
 ## {{< i18n "people_current_projects" >}}
 {{< postsByCategoriesTags section="projects" categories="project,fabiana_mendes" notags="inactive,closed" >}}
-- Human factors in cybersecurity (2022-Present).
-- Creation and usability evaluation of an app on Parkinson's Disease (2020-Present).
-- These projects explore topics such as cybersecurity, digital health, and usability.
 
 ## {{< i18n "people_supervisory_experience" >}}
 ### {{< i18n "people_current_supervisions" >}}
@@ -75,8 +72,5 @@ nav_next: true
     </div>
 </div>
 
-## {{< i18n "people_contact" >}}
-- {{< i18n "people_contact_professional" >}}: University of Brasília, Faculty of Sciences and Technologies in Engineering (FCTE), Gama Campus, Área Especial de Indústria Projeção A, Setor Leste (Gama), Brasília - DF, Brazil. Postal code 72.444-240.
-- Institutional website: [FCTE/UnB](https://fcte.unb.br/)
 
 {{< backToTopBtn target="top" >}}

@@ -48,10 +48,6 @@ nav_next: true
 
 ## {{< i18n "people_current_projects" >}}
 {{< postsByCategoriesTags section="projects" categories="project,ricardo_ajax" notags="inactive,closed" >}}
-- Projeto de Pesquisa, Desenvolvimento e Inovação para a Automação de Serviços Públicos no âmbito da Transformação dos Serviços (2017-2020).
-- Projeto de Pesquisa em Dimensionamento da Capacidade Produtiva - Modelagem Matemática, Ministério do Planejamento (2017-2019).
-- Pesquisa e Desenvolvimento do Modelo de Gestão do Desempenho Individual da Companhia Nacional de Abastecimento - CONAB (2016-2017).
-- Framework de Soluções de TI para o Ministério das Comunicações (2015-2018).
 
 
 ## {{< i18n "people_supervisory_experience" >}}
@@ -87,9 +83,5 @@ nav_next: true
     </div>
 </div>
 
-## {{< i18n "people_contact" >}}
-- {{< i18n "people_contact_professional" >}}: Universidade de Brasília, Faculdade de Ciências e Tecnologias em Engenharia (FCTE), Campus Gama, Área Especial de Indústria Projeção A, Setor Leste (Gama), Brasília - DF, Brasil. CEP 72.444-240.
-- Site institucional: [FCTE/UnB](https://fcte.unb.br/)
-- Telefone: (61) 3107-8901
 
 {{< backToTopBtn target="top" >}}

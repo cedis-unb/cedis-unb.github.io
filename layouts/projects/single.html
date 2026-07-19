@@ -5,6 +5,10 @@
 {{ $dateLabel := cond $isPortuguese "Data" "Date" }}
 {{ $dateFormat := cond $isPortuguese "02/01/2006" "02 Jan 2006" }}
 {{ $projectLabel := cond $isPortuguese "Projeto CEDIS" "CEDIS project" }}
+{{ $statusLabel := cond $isPortuguese "Status" "Status" }}
+{{ $periodLabel := cond $isPortuguese "Período" "Period" }}
+{{ $activeProjectLabel := cond $isPortuguese "Projeto em andamento" "Ongoing project" }}
+{{ $closedProjectLabel := cond $isPortuguese "Projeto encerrado" "Closed project" }}
 {{ $detailsLabel := cond $isPortuguese "Visão rápida" "At a glance" }}
 {{ $summaryLabel := cond $isPortuguese "Resumo" "Summary" }}
 {{ $membersLabel := cond $isPortuguese "Equipe principal" "Core team" }}
@@ -25,6 +29,13 @@
 {{ with $projectData }}
   {{ with .researchers }}
     {{ $memberIDs = . }}
+  {{ end }}
+  {{ with .students }}
+    {{ range . }}
+      {{ if not (in $memberIDs .) }}
+        {{ $memberIDs = $memberIDs | append . }}
+      {{ end }}
+    {{ end }}
   {{ end }}
 {{ end }}
 {{ if eq (len $memberIDs) 0 }}
@@ -52,9 +63,32 @@
 
 {{ $displayTags := slice }}
 {{ range .Params.tags }}
-  {{ if not (hasPrefix . "project_") }}
+  {{ if and (not (hasPrefix . "project_")) (not (in (slice "active" "inactive" "closed") .)) }}
     {{ $displayTags = $displayTags | append . }}
   {{ end }}
+{{ end }}
+
+{{ $projectStatus := .Params.status | default "" }}
+{{ if not $projectStatus }}
+  {{ if or (in .Params.tags "closed") (in .Params.tags "inactive") }}
+    {{ $projectStatus = "closed" }}
+  {{ else }}
+    {{ $projectStatus = "active" }}
+  {{ end }}
+{{ end }}
+{{ $projectStatusText := cond (eq $projectStatus "closed") $closedProjectLabel $activeProjectLabel }}
+{{ $startValue := printf "%v" (.Params.start_date | default "") }}
+{{ $endValue := printf "%v" (.Params.end_date | default "") }}
+{{ $startYear := "" }}
+{{ $endYear := "" }}
+{{ if $startValue }}{{ $startYear = replaceRE `^([0-9]{4}).*$` `$1` $startValue }}{{ end }}
+{{ if $endValue }}{{ $endYear = replaceRE `^([0-9]{4}).*$` `$1` $endValue }}{{ end }}
+{{ if not $startYear }}{{ $startYear = .Date.Format "2006" }}{{ end }}
+{{ $projectPeriod := $startYear }}
+{{ if eq $projectStatus "active" }}
+  {{ $projectPeriod = cond $isPortuguese (printf "%s-Atual" $startYear) (printf "%s-Present" $startYear) }}
+{{ else if and $endYear (ne $endYear $startYear) }}
+  {{ $projectPeriod = printf "%s-%s" $startYear $endYear }}
 {{ end }}
 
 {{ $featuredPath := "" }}
@@ -85,6 +119,9 @@
         <div class="inline-flex items-center rounded-full border border-slate-300/70 bg-white/80 px-4 py-2 text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-slate-700 shadow-sm backdrop-blur dark:border-white/10 dark:bg-white/5 dark:text-slate-300">
           {{ $projectLabel }}
         </div>
+        <div class="ml-2 inline-flex items-center rounded-full border px-4 py-2 text-[0.68rem] font-semibold uppercase tracking-[0.22em] shadow-sm backdrop-blur {{ if eq $projectStatus "closed" }}border-amber-300/70 bg-amber-50 text-amber-800 dark:border-amber-300/20 dark:bg-amber-300/10 dark:text-amber-100{{ else }}border-emerald-300/70 bg-emerald-50 text-emerald-800 dark:border-emerald-300/20 dark:bg-emerald-300/10 dark:text-emerald-100{{ end }}">
+          {{ $projectStatusText }}
+        </div>
         <h1 class="mt-5 max-w-4xl text-4xl font-black leading-tight text-slate-950 md:text-5xl lg:text-6xl dark:text-white">
           {{ .Title }}
         </h1>
@@ -97,6 +134,10 @@
           <div class="inline-flex items-center rounded-2xl border border-slate-200 bg-white/85 px-4 py-2 shadow-sm dark:border-white/10 dark:bg-white/5">
             <span class="font-semibold text-slate-900 dark:text-white">{{ $dateLabel }}:</span>
             <span class="ml-2">{{ .Date.Format $dateFormat }}</span>
+          </div>
+          <div class="inline-flex items-center rounded-2xl border border-slate-200 bg-white/85 px-4 py-2 shadow-sm dark:border-white/10 dark:bg-white/5">
+            <span class="font-semibold text-slate-900 dark:text-white">{{ $periodLabel }}:</span>
+            <span class="ml-2">{{ $projectPeriod }}</span>
           </div>
           {{ if gt (len $memberItems) 0 }}
           <div class="inline-flex items-center rounded-2xl border border-slate-200 bg-white/85 px-4 py-2 shadow-sm dark:border-white/10 dark:bg-white/5">
@@ -160,6 +201,14 @@
           <div>
             <dt class="font-semibold text-slate-900 dark:text-white">{{ $dateLabel }}</dt>
             <dd class="mt-1 text-slate-600 dark:text-slate-300">{{ .Date.Format $dateFormat }}</dd>
+          </div>
+          <div>
+            <dt class="font-semibold text-slate-900 dark:text-white">{{ $statusLabel }}</dt>
+            <dd class="mt-1 text-slate-600 dark:text-slate-300">{{ $projectStatusText }}</dd>
+          </div>
+          <div>
+            <dt class="font-semibold text-slate-900 dark:text-white">{{ $periodLabel }}</dt>
+            <dd class="mt-1 text-slate-600 dark:text-slate-300">{{ $projectPeriod }}</dd>
           </div>
           {{ if gt (len $memberItems) 0 }}
           <div>

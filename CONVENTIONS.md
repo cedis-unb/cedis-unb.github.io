@@ -400,12 +400,12 @@ Regras:
 ## 4. Perfis de pesquisadores (`content/people/*.md`)
 
 - Campo `Lattes iD` sempre com HTTPS: `https://lattes.cnpq.br/<id>`.
-- Campo `Site institucional` do professor aponta para a página oficial da FCTE:
-  `[FCTE/UnB](https://fcte.unb.br/)`.
-- Endereço em contato: `Universidade de Brasília, Campus Gama, ...`.
-- Em português, use **"Site institucional"**; evite "Homepage
-  institucional". Em inglês, prefira **"Institutional website"** em vez
-  de "Institutional homepage".
+- Não registrar telefone institucional da FCTE como telefone pessoal de
+  pesquisador. Se não houver telefone pessoal real e autorizado, omitir.
+- Não repetir `Site institucional` / `Institutional website` no Markdown
+  individual do pesquisador quando o destino for sempre a FCTE. O
+  template deve exibir esse vínculo de forma padronizada como
+  **Vínculo institucional: FCTE/UnB**.
 
 ### 4.1 Estrutura editorial dos perfis
 
@@ -438,6 +438,18 @@ Regras de layout:
 - "Projetos atuais" deve seguir o mesmo padrão de produtos,
   orientações e publicações: bloco colapsável, fechado por padrão,
   contador à direita e lista rolável quando houver muitos itens.
+- Projetos escritos manualmente como bullets dentro do perfil do
+  pesquisador devem ser convertidos em páginas em `content/projects/`.
+  Não manter listas ad hoc de projetos no Markdown do perfil.
+- Projetos encerrados usam `status: closed`, `start_date`, `end_date`
+  quando conhecida e a tag `closed`; devem aparecer automaticamente no
+  perfil do pesquisador em **Projetos anteriores**, com layout
+  colapsável equivalente ao de Projetos atuais.
+- Projetos em andamento usam `status: active` e `start_date`, sem tag
+  `closed`; devem aparecer automaticamente em **Projetos atuais**.
+- Quando só houver anos publicados para abertura/encerramento, registrar
+  datas ISO com precisão anual (`YYYY-01-01` e `YYYY-12-31`) e tratar a
+  exibição pública como ano/intervalo de anos.
 - "Produtos" deve seguir o mesmo padrão de orientações/publicações:
   bloco colapsável, contador à direita, lista rolável quando houver
   muitos itens.
@@ -596,8 +608,23 @@ Card | Cálculo | Fonte
 **Orientações atuais** | entradas em `data/people.yaml` com `advisors` contendo o slug e sem tag `inactive` | `data/people.yaml`
 **Orientações anteriores** | itens `phd`, `dissertation`, `specialization`, `tcc` em `productions.yaml` com `advisors` contendo o slug e sem tag `active`, mais pessoas inativas de `scientific_initiation`, `volunteer` e `monitor` | `data/productions.yaml` + `data/people.yaml`
 **Publicações** | itens em `productions.yaml` com o slug em `tags:` | `data/productions.yaml`
-**Projetos** | páginas ativas em `content/projects/` com o slug em `categories:` ou `tags:` | `content/projects/*.md`
+**Projetos atuais** | páginas em `content/projects/` com o slug em `categories:` ou `tags:`, `status: active` e sem tag `closed`/`inactive` | `content/projects/*.md`
+**Projetos anteriores** | páginas em `content/projects/` com o slug em `categories:` ou `tags:` e `status: closed`, tag `closed` ou tag `inactive` | `content/projects/*.md`
 **Produtos** | páginas em `content/products/` com o slug em `categories:`, `tags:`, `advisors:` ou `creators:` | `content/products/*.md`
+
+Regras de cadastro de projetos:
+
+- Criar página bilíngue em `content/projects/<slug>.pt.md` e
+  `content/projects/<slug>.en.md`.
+- Registrar o projeto também em `data/projects.yaml`, com `id`, nome PT/EN,
+  `status`, `start_date`, `end_date` quando houver encerramento,
+  `researchers` e `students` quando os estudantes forem conhecidos.
+- O `id` do projeto deve aparecer em `categories:` e `tags:` da página.
+- Projetos encerrados devem ter `status: closed` e tag `closed`.
+- Projetos em andamento devem ter `status: active` e não devem ter tag
+  `closed`.
+- Perfis de pesquisadores não devem listar projetos em bullets manuais:
+  o vínculo deve vir da página do projeto e dos metadados.
 
 Observações:
 

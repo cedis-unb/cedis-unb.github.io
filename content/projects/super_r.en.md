@@ -4,6 +4,9 @@ title: "Super-R"
 date: 2025-05-03T17:08:50-03:00
 weight: 10
 language: en
+status: closed
+start_date: 2023-01-01
+end_date: 2024-12-31
 featured_image: "../assets/images/featured/projeto_SuperR.png"
 summary: Educational project, part of the 'Software Requirements' course, an educational innovation developed by CEDIS at the University of Brasília. 
 authorimage: ../assets/images/global/author.webp
@@ -14,6 +17,7 @@ categories:
 tags: 
 - gamification
 - project_super_r
+- closed
 ---
 
 ## Welcome to the “SUPER-R” project, an innovation by CEDIS at the University of Brasília

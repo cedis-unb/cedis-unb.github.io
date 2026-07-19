@@ -4,6 +4,9 @@ title: "Projeto Transformação Digital"
 date: 2024-02-14T02:59:29-03:00
 weight: 10
 language: pt
+status: closed
+start_date: 2020-01-01
+end_date: 2023-12-31
 featured_image: "../assets/images/featured/projeto_Transformação Digital.png"
 summary: O projeto de Transformação Digital de Serviços Públicos do Governo Federal Brasileiro envolve pesquisa, desenvolvimento e inovação em metodologias, modelos e ferramentas que promovam a automação e digitização de serviços públicos.
 authorimage: ../assets/images/global/author.webp
@@ -14,6 +17,7 @@ categories:
 tags:
 - digital_transformation
 - project_td
+- closed
 ---
 
 O projeto de Transformação Digital de Serviços Públicos do Governo Federal Brasileiro envolve pesquisa, desenvolvimento e inovação em metodologias, modelos e ferramentas que promovam a automação e digitização de serviços públicos oferecidos pelo Ministério da Economia (ME), pela Secretaria Especial de Desburocratização, Gestão e Governo Digital (especificamente pela Secretaria de Governo Digital (SGD), visando a transformação dos serviços públicos federais. O projeto foi firmado entre UnB ([Laboratório ITRAC](https://itrac.unb.br) da Faculdade de Ciências e Tecnologias em Engenharia — FCTE) e o ME.

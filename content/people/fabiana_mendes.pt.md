@@ -38,9 +38,6 @@ nav_next: true
 
 ## {{< i18n "people_current_projects" >}}
 {{< postsByCategoriesTags section="projects" categories="project,fabiana_mendes" notags="inactive,closed" >}}
-- Fatores humanos na segurança cibernética (2022-Atual).
-- Criação e avaliação da usabilidade de um aplicativo sobre Doença de Parkinson (2020-Atual).
-- Esses projetos exploram temas como segurança cibernética, saúde digital e usabilidade​​.
 
 ## {{< i18n "people_supervisory_experience" >}}
 ### {{< i18n "people_current_supervisions" >}}
@@ -75,8 +72,5 @@ nav_next: true
     </div>
 </div>
 
-## {{< i18n "people_contact" >}}
-- {{< i18n "people_contact_professional" >}}: Universidade de Brasília, Faculdade de Ciências e Tecnologias em Engenharia (FCTE), Campus Gama, Área Especial de Indústria Projeção A, Setor Leste (Gama), Brasília - DF, Brasil. CEP 72.444-240.
-- Site institucional: [FCTE/UnB](https://fcte.unb.br/)
 
 {{< backToTopBtn target="top" >}}
