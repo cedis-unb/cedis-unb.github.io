@@ -4,6 +4,9 @@ title: "Projeto Canal Ciência"
 date: 2024-02-14T17:08:50-03:00
 weight: 10
 language: pt
+status: closed
+start_date: 2023-01-01
+end_date: 2024-12-31
 featured_image: "../assets/images/featured/projeto_Canal Ciência.png"
 summary: Projeto de pesquisa em parceria com o IBICT e financiado pela FINATEC, com objetivo de aprimorar a experiência dos usuários do Canal Ciência através do uso da gamificação. 
 authorimage: ../assets/images/global/author.webp
@@ -16,6 +19,7 @@ tags:
 - gamification
 - project_cc
 - inactive
+- closed
 ---
 
 ## Descrição do Projeto

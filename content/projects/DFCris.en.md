@@ -4,6 +4,9 @@ title: "Project DFCris"
 date: 2024-02-14T02:59:29-03:00
 weight: 10
 language: en
+status: closed
+start_date: 2024-02-14
+end_date: 2026-02-13
 featured_image: "../assets/images/featured/projeto_DFCris.png"
 summary: A research project in partnership with IBICT and funded by FAP/DF.
 authorimage: ../assets/images/global/author.webp
@@ -18,6 +21,7 @@ tags:
 - ai
 - dfcris 
 - inactive
+- closed
 ---
 ## Overview
 DFCris is a 24-month project carried out in partnership between the [Brazilian Institute of Information in Science and Technology - IBICT](http://www.ibict.br/) and CEDIS, funded by [FAP/DF](https://www.fap.df.gov.br/).
@@ -25,7 +29,7 @@ The project's goal is the expansion and enhancement of the Cris model for the re
 ## Members
 ### Researchers
 Prof. {{< link-interno "/people/sergio_freitas" "andre_lanna" >}} (CEDIS)<br>
-Prof. {{< link-interno "/people/sergio_freitas" "sergio_freitas" >}} (CEDIS)
+Prof. {{< link-interno "/people/sergio_freitas" "Sergio Freitas" >}} (CEDIS)
 ### Undergraduate Research Students
 {{< link-interno "/people/collaborators/andre_silva" "André Corrêa da Silva" >}}. Undergraduate in Software Engineering, University of Brasília, Advisor: Prof. Sergio A. A. Freitas.<br>
 {{< link-interno "/people/collaborators/milena_silva" "Milena de Faria Silva" >}}. Undergraduate in Computing, Federal Institute of Education, Science and Technology of Southern Minas Gerais, Advisor: Prof. Sergio A. A. Freitas.<br>

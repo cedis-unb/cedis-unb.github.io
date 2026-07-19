@@ -15,7 +15,7 @@ tags:
 - gamification
 - project_alvorecer
 ---
-Welcome to the "Feudal Dawn" project, a pedagogical innovation from CEDIS at the University of Brasília. Led by Professor {{< link-interno "/people/sergio_freitas" "sergio_freitas" >}}, this gamified initiative in the Software Development discipline proposes learning based on challenges from the feudal scenario. Employing the Octalysis model, it creates an engaging experience that not only captivates students with real software problems but also develops crucial skills like strategic thinking and cooperation, preparing them for professional success in software engineering.
+Welcome to the "Feudal Dawn" project, a pedagogical innovation from CEDIS at the University of Brasília. Led by Professor {{< link-interno "/people/sergio_freitas" "Sergio Freitas" >}}, this gamified initiative in the Software Development discipline proposes learning based on challenges from the feudal scenario. Employing the Octalysis model, it creates an engaging experience that not only captivates students with real software problems but also develops crucial skills like strategic thinking and cooperation, preparing them for professional success in software engineering.
 
 # About the Project
 "Feudal Dawn" represents a revolutionary pedagogical approach in the Software Development discipline, under the guidance of Dr. Sergio Freitas. Using a Project-Based Learning (PBL) strategy and gamification elements, the project immerses students in a feudal context, where they assume strategic roles to overcome software challenges. This method not only enhances technical skills but also stimulates critical thinking, collaborative work, and decision-making capacity, uniquely preparing students for the job market.

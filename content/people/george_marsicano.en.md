@@ -56,12 +56,6 @@ nav_next: true
 
 ## {{< i18n "people_current_projects" >}}
 {{< postsByCategoriesTags section="projects" categories="project,george_marsicano" notags="inactive,closed" >}}
-- Collaborative Digital Transformation Methodology for SPU based on Service Design and User Experience - SPUX (2025-Present).
-- Improving Digital Public Service for Citizens (2023-2025).
-- SUPER-R Project (2023-2024).
-- Digital transformation of Brazilian government public services (2020-2023).
-- HASE - Human Aspects in Software Engineering (2016-Present).
-- Doarti Project: development of a technological solution to improve the donation process in the Federal District (2020-Present).
 
 ## {{< i18n "people_supervisory_experience" >}}
 ### {{< i18n "people_current_supervisions" >}}
@@ -96,8 +90,5 @@ nav_next: true
     </div>
 </div>
 
-## {{< i18n "people_contact" >}}
-- {{< i18n "people_contact_professional" >}}: University of Brasília, Faculty of Sciences and Technologies in Engineering (FCTE), Gama Campus, Área Especial de Indústria Projeção A, Setor Leste (Gama), Brasília - DF, Brazil. Postal code 72.444-240.
-- Institutional website: [FCTE/UnB](https://fcte.unb.br/)
 
 {{< backToTopBtn target="top" >}}
