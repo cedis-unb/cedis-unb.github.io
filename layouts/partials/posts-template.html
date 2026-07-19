@@ -67,6 +67,32 @@
         {{ if not .Date.IsZero }}
             {{ $formattedDate = .Date.Format $dateFormat }}
         {{ end }}
+        {{ $researcherPublicationCount := 0 }}
+        {{ $researcherFormerSupervisionCount := 0 }}
+        {{ if $isResearchersTerm }}
+            {{ $personKey := .File.TranslationBaseName }}
+            {{ range .Params.categories }}
+                {{ if isset hugo.Data.advisors.advisors . }}
+                    {{ $personKey = . }}
+                    {{ break }}
+                {{ end }}
+            {{ end }}
+            {{ range hugo.Data.productions.items }}
+                {{ if in .tags $personKey }}
+                    {{ $researcherPublicationCount = add $researcherPublicationCount 1 }}
+                {{ end }}
+                {{ if and .advisors (in .advisors $personKey) (in (slice "phd" "dissertation" "specialization" "tcc") .type) (not (in .tags "active")) }}
+                    {{ $researcherFormerSupervisionCount = add $researcherFormerSupervisionCount 1 }}
+                {{ end }}
+            {{ end }}
+            {{ range hugo.Data.people.people }}
+                {{ $isPreviousPerson := and .advisors (in .advisors $personKey) (in .tags "inactive") }}
+                {{ $isNonProductionSupervision := or (in .categories "scientific_initiation") (in .categories "volunteer") (in .categories "monitor") }}
+                {{ if and $isPreviousPerson $isNonProductionSupervision }}
+                    {{ $researcherFormerSupervisionCount = add $researcherFormerSupervisionCount 1 }}
+                {{ end }}
+            {{ end }}
+        {{ end }}
         <article class="group flex h-full flex-col overflow-hidden rounded-[2rem] border border-black/5 bg-white text-gray-900 shadow-[0_18px_60px_rgba(15,23,42,0.08)] transition duration-300 ease-out hover:-translate-y-1 hover:shadow-[0_28px_90px_rgba(197,39,47,0.16)] dark:border-white/10 dark:bg-white/[0.04] dark:text-white"{{ if $isResearchersTerm }} data-randomize-card{{ end }}>
             <a href="{{ .RelPermalink }}" class="block">
                 {{ with .Params.featured_image }}
@@ -95,6 +121,19 @@
                 <p class="mt-4 text-base leading-7 text-gray-600 dark:text-white/70">
                     {{ . | truncate 180 }}
                 </p>
+                {{ end }}
+
+                {{ if $isResearchersTerm }}
+                <div class="mt-5 grid grid-cols-2 gap-3">
+                    <div class="rounded-2xl border border-black/5 bg-stone-50 px-4 py-3 dark:border-white/10 dark:bg-white/[0.04]">
+                        <div class="text-2xl font-black tracking-tight text-gray-950 dark:text-white">{{ $researcherPublicationCount }}</div>
+                        <div class="mt-1 text-xs font-semibold uppercase tracking-[0.16em] text-gray-500 dark:text-white/60">{{ i18n "ui_publications" }}</div>
+                    </div>
+                    <div class="rounded-2xl border border-black/5 bg-stone-50 px-4 py-3 dark:border-white/10 dark:bg-white/[0.04]">
+                        <div class="text-2xl font-black tracking-tight text-gray-950 dark:text-white">{{ $researcherFormerSupervisionCount }}</div>
+                        <div class="mt-1 text-xs font-semibold uppercase tracking-[0.16em] text-gray-500 dark:text-white/60">{{ i18n "people_former_supervisions" }}</div>
+                    </div>
+                </div>
                 {{ end }}
 
                 {{ with .GetTerms "tags" }}
