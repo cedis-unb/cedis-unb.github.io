@@ -1,7 +1,7 @@
 ---
 author: CEDIS
 title: "Git Ranking"
-date: 2026-07-16T09:00:00-03:00
+date: 2026-07-14T09:00:00-03:00
 language: pt
 product_language: pt
 weight: 7

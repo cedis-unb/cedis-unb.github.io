@@ -98,11 +98,15 @@
         {{ end }}
     {{ end }}
     {{ $pulseItems = sort $pulseItems "date" "desc" }}
+    {{ $pulseDisplayItems := where $pulseItems "type" "news" }}
+    {{ if eq (len $pulseDisplayItems) 0 }}
+        {{ $pulseDisplayItems = $pulseItems }}
+    {{ end }}
     {{ $pulseTop := "" }}
     {{ $pulseRest := slice }}
-    {{ if gt (len $pulseItems) 0 }}
-        {{ $pulseTop = index $pulseItems 0 }}
-        {{ $pulseRest = first 4 (after 1 $pulseItems) }}
+    {{ if gt (len $pulseDisplayItems) 0 }}
+        {{ $pulseTop = index $pulseDisplayItems 0 }}
+        {{ $pulseRest = first 4 (after 1 $pulseDisplayItems) }}
     {{ end }}
 
     <div class="relative overflow-hidden bg-[radial-gradient(circle_at_top_left,_rgba(249,115,22,0.18),_transparent_28%),linear-gradient(180deg,_#eef2ff_0%,_#f5f6fa_48%,_#ffffff_100%)] dark:bg-[radial-gradient(circle_at_top_left,_rgba(249,115,22,0.12),_transparent_24%),linear-gradient(180deg,_#0f172a_0%,_#111827_58%,_#0b1120_100%)]">
