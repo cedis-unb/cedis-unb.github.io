@@ -24,6 +24,8 @@ O trabalho traz um modelo adaptativo de agendamento de recursos acadêmicos e o 
 
 Ao articular {{< link-interno "/areas/software_architecture/" "arquitetura de software" >}} com preocupações de {{< link-interno "/areas/transformation/" "transformação digital" >}} de sistemas de gestão acadêmica, o autor entrega uma peça que interessa não apenas à UnB, mas a qualquer instituição que precise reduzir a fricção do início de semestre — momento em que o custo de uma alocação ruim se propaga por meses.
 
+O trabalho também se conecta a duas publicações de Éber com o CEDIS: [_A CP-SAT Approach for Academic Resource Timetabling in Higher Education Institutions: A Case Study at a Major Public University_](https://doi.org/10.1109/ITHET61869.2024.10837617), apresentado no IEEE ITHET 2024, e _Fast University Timetabling via Room-wise CP-SAT Decomposition and Incremental Repair_, publicado no SEMISH 2026 como desdobramento da mesma agenda de pesquisa.
+
 A defesa aconteceu em 17 de dezembro de 2024 em Brasília. A banca foi presidida pelo orientador, Prof. Dr. Sergio Antônio Andrade de Freitas (UnB), e composta pela Prof.ª Dr.ª Irene Pimenta Rodrigues (Universidade de Évora, Portugal) e pela Prof.ª Dr.ª Andrea Felippe Cabello (UnB). A Prof.ª Dr.ª Edna Dias Canedo, coordenadora do PPCA, também acompanhou a sessão.
 
 A dissertação está disponível no [Repositório Institucional da UnB](https://repositorio.unb.br/handle/10482/52048).

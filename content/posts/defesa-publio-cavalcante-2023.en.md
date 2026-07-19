@@ -24,6 +24,8 @@ The work does not ask whether gamification "works" in police intelligence activi
 
 By tying {{< link-interno "/areas/gamification/" "gamification" >}} to {{< link-interno "/areas/software_quality/" "quality" >}} applied to critical document production, the author delivers evidence scarce in Brazilian literature: gamification evaluated in a real institutional setting, with comparable metrics and discussion of the intervention’s limits.
 
+The dissertation is linked to the paper [_Evaluation of the Change in the Quality of Reports with the Application of Gamification in a Corporative Institution_](https://doi.org/10.1007/978-3-031-05544-7_27), published in the proceedings of the 24th International Conference on Human-Computer Interaction. The paper presents the empirical evaluation of the gamified intervention in the corporate context studied.
+
 The defense took place on March 23, 2023 in Brasília. The examining committee was chaired by the advisor, Prof. Dr. Sergio Antônio Andrade de Freitas (CIC/UnB), and composed of Prof. Dr. Charles Andryê Galvão Madeira (IMD/UFRN), Prof. Dr. {{< link-interno "/people/george_marsicano" "George Marsicano Corrêa" >}} (UnB), and Prof. Dr. {{< link-interno "/people/andre_lanna" "André Luiz Peron Martins Lanna" >}} (UnB). Prof. Dr. Gladston Luiz da Silva, PPCA program coordinator, also attended the session.
 
 The full text — written in Portuguese — is available at the [UnB Institutional Repository](https://repositorio.unb.br/handle/10482/47822).

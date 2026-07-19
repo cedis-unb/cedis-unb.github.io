@@ -24,6 +24,8 @@ O trabalho não pergunta se gamificação funciona em atividades de inteligênci
 
 Ao articular {{< link-interno "/areas/gamification/" "gamificação" >}} com {{< link-interno "/areas/software_quality/" "qualidade" >}} aplicada a produção documental crítica, o autor entrega evidência escassa na literatura brasileira: gamificação avaliada em ambiente institucional real, com métricas comparáveis e discussão dos limites da intervenção.
 
+A dissertação está ligada ao artigo [_Evaluation of the Change in the Quality of Reports with the Application of Gamification in a Corporative Institution_](https://doi.org/10.1007/978-3-031-05544-7_27), publicado nos anais da 24th International Conference on Human-Computer Interaction. O artigo apresenta a avaliação empírica da intervenção gamificada no contexto corporativo estudado.
+
 A defesa aconteceu em 23 de março de 2023 em Brasília. A banca foi presidida pelo orientador, Prof. Dr. Sergio Antônio Andrade de Freitas (CIC/UnB), e composta pelo Prof. Dr. Charles Andryê Galvão Madeira (IMD/UFRN), pelo Prof. Dr. {{< link-interno "/people/george_marsicano" "George Marsicano Corrêa" >}} (UnB) e pelo Prof. Dr. {{< link-interno "/people/andre_lanna" "André Luiz Peron Martins Lanna" >}} (UnB). O Prof. Dr. Gladston Luiz da Silva, coordenador do PPCA, também acompanhou a sessão.
 
 A dissertação está disponível no [Repositório Institucional da UnB](https://repositorio.unb.br/handle/10482/47822).

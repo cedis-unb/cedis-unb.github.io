@@ -24,6 +24,8 @@ O trabalho não busca prescrever a receita ideal para casar arquitetura orientad
 
 Ao articular {{< link-interno "/areas/software_architecture/" "arquitetura de software" >}} com {{< link-interno "/areas/software_quality/" "qualidade de software" >}}, o trabalho contribui com evidência para uma discussão que costuma se dar por manifestos: quais concessões precisam ser negociadas quando essas três culturas ocupam o mesmo time.
 
+A dissertação está ligada a duas publicações de James com o CEDIS: [_A Systematic Literature Review for Service-oriented Architecture and Agile Development_](https://doi.org/10.1007/978-3-030-24308-1_11), publicada no ICCSA 2019, e [_NatVi - A Framework for Agile Software Development, Service-oriented Architecture and Quality Assurance_](https://doi.org/10.1007/978-3-030-58817-5_33), publicada no ICCSA 2020. Juntas, elas cobrem a base de revisão e a proposta de framework consolidada na dissertação.
+
 A defesa aconteceu em 17 de julho de 2019 em Brasília. A banca foi presidida pelo orientador, Prof. Dr. Sergio Antônio Andrade de Freitas (CIC/UnB), e composta pela Prof.ª Dr.ª Monalessa Perini Barcellos (Departamento de Informática/UFES) e pela Prof.ª Dr.ª Edna Dias Canedo (CIC/UnB). A Prof.ª Dr.ª Aletéia Patrícia Favacho de Araújo, coordenadora do PPCA, também acompanhou a sessão.
 
 A dissertação está disponível no [Repositório Institucional da UnB](https://repositorio.unb.br/handle/10482/37835).
