@@ -24,6 +24,8 @@ The work begins with an uncomfortable fact: adoption of a new technology happens
 
 The work speaks directly to {{< link-interno "/areas/gamification/" "gamification" >}} and to {{< link-interno "/areas/software_requirements/" "requirements engineering" >}}, articulating what is rarely discussed jointly: how to turn usage feedback into concrete design decisions across the product lifecycle.
 
+Part of the research trajectory sustaining this thesis appears in the paper [_Gamification in education: A methodology to identify student's profile_](https://doi.org/10.1109/fie.2017.8190499), published at 2017 IEEE Frontiers in Education Conference (FIE 2017, Indianapolis). The paper introduces the motivational profiling methodology that anchors the analysis carried out in the thesis.
+
 The full text — written in Portuguese — is available at the [UnB Undergraduate Theses Digital Library](https://www.bdm.unb.br/handle/10483/21592).
 
 ---

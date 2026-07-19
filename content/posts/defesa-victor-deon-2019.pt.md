@@ -24,6 +24,8 @@ O trabalho apresenta a PGTBL — Plataforma de Gerenciamento de Team-Based Learn
 
 Ao conectar {{< link-interno "/areas/soft_skills/" "trabalho em equipe" >}} com {{< link-interno "/areas/active_learning/" "metodologias ativas de aprendizagem" >}}, o TCC oferece uma peça de infraestrutura para professores dispostos a experimentar TBL sem ter que reinventar toda a instrumentação de gestão de atividades — o que costuma ser o principal fator de desistência quando se tenta migrar da aula expositiva.
 
+Um dos frutos publicados dessa linha de pesquisa é o artigo [_TBL as an active learning-teaching methodology for software engineering courses_](https://doi.org/10.1145/3266237.3266253), apresentado no XXXII Simpósio Brasileiro de Engenharia de Software (SBES 2018, São Carlos). Victor Deon figura entre os autores ao lado de Cristiane Ramos, Ricardo Ajax, Elaine Venson e Rejane Figueiredo — evidência de que a plataforma PGTBL nasce ancorada em avaliação empírica da metodologia.
+
 O TCC pode ser lido na [Biblioteca Digital da Produção Intelectual Discente da UnB](https://www.bdm.unb.br/handle/10483/23047).
 
 ---

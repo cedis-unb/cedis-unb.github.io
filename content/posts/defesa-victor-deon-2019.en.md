@@ -24,6 +24,8 @@ The work introduces PGTBL — Team-Based Learning Management Platform —, an op
 
 By connecting {{< link-interno "/areas/soft_skills/" "teamwork" >}} with {{< link-interno "/areas/active_learning/" "active learning methodologies" >}}, the thesis offers a piece of infrastructure for instructors willing to experiment with TBL without having to reinvent the whole activity-management scaffolding — often the primary reason people give up when trying to move away from lecture-based teaching.
 
+One published fruit of this research line is the paper [_TBL as an active learning-teaching methodology for software engineering courses_](https://doi.org/10.1145/3266237.3266253), presented at the XXXII Brazilian Symposium on Software Engineering (SBES 2018, São Carlos). Victor Deon appears among the authors alongside Cristiane Ramos, Ricardo Ajax, Elaine Venson and Rejane Figueiredo — evidence that the PGTBL platform emerges anchored in empirical evaluation of the methodology.
+
 The full text — written in Portuguese — is available at the [UnB Undergraduate Theses Digital Library](https://www.bdm.unb.br/handle/10483/23047).
 
 ---
