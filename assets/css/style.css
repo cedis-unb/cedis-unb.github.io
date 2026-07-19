@@ -1165,6 +1165,10 @@ video {
   visibility: visible;
 }
 
+.invisible {
+  visibility: hidden;
+}
+
 .static {
   position: static;
 }
@@ -1581,6 +1585,10 @@ video {
   max-height: 100%;
 }
 
+.min-h-6 {
+  min-height: 1.5rem;
+}
+
 .min-h-\[14rem\] {
   min-height: 14rem;
 }
@@ -1690,20 +1698,8 @@ video {
   min-width: 2.75rem;
 }
 
-.min-w-\[10rem\] {
-  min-width: 10rem;
-}
-
 .min-w-\[2\.5rem\] {
   min-width: 2.5rem;
-}
-
-.min-w-\[7rem\] {
-  min-width: 7rem;
-}
-
-.min-w-\[9rem\] {
-  min-width: 9rem;
 }
 
 .max-w-2xl {
@@ -1798,8 +1794,16 @@ video {
   flex-shrink: 0;
 }
 
+.shrink {
+  flex-shrink: 1;
+}
+
 .shrink-0 {
   flex-shrink: 0;
+}
+
+.grow {
+  flex-grow: 1;
 }
 
 .origin-top-right {
@@ -1994,6 +1998,10 @@ video {
   row-gap: 0.5rem;
 }
 
+.gap-y-3 {
+  row-gap: 0.75rem;
+}
+
 .space-y-1 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
@@ -2044,10 +2052,6 @@ video {
 
 .self-start {
   align-self: flex-start;
-}
-
-.self-end {
-  align-self: flex-end;
 }
 
 .overflow-hidden {
@@ -2538,6 +2542,11 @@ video {
 .bg-slate-50 {
   --tw-bg-opacity: 1;
   background-color: rgb(248 250 252 / var(--tw-bg-opacity, 1));
+}
+
+.bg-slate-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(100 116 139 / var(--tw-bg-opacity, 1));
 }
 
 .bg-slate-600 {
@@ -4466,6 +4475,11 @@ EmojiSymbols;
   background-color: rgb(17 24 39 / var(--tw-bg-opacity, 1));
 }
 
+.group:hover .group-hover\:bg-primary-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(107 214 223 / var(--tw-bg-opacity, 1));
+}
+
 .group:hover .group-hover\:bg-primary-50 {
   --tw-bg-opacity: 1;
   background-color: rgb(230 248 250 / var(--tw-bg-opacity, 1));
@@ -5044,6 +5058,10 @@ EmojiSymbols;
   color: rgb(255 255 255 / 0.6);
 }
 
+.dark\:text-white\/65:is(.dark *) {
+  color: rgb(255 255 255 / 0.65);
+}
+
 .dark\:text-white\/70:is(.dark *) {
   color: rgb(255 255 255 / 0.7);
 }
@@ -5314,6 +5332,10 @@ EmojiSymbols;
 
   .sm\:items-end {
     align-items: flex-end;
+  }
+
+  .sm\:items-baseline {
+    align-items: baseline;
   }
 
   .sm\:justify-between {

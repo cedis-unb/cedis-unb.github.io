@@ -38,6 +38,280 @@ items:
     en: ''
   year: 2026
 - authors:
+  - Ricardo Ajax Dias Kosloski
+  - Leides Barroso de Azevedo Moura
+  - Marília Miranda Forte Gomes
+  title:
+    pt: 'Cidadania Digital e Mediação Informacional no Uso de Serviços de e-Gov por Pessoas Idosas: um estudo no Distrito Federal'
+    en: 'Digital citizenship and information mediation in the use of e-Gov services by older adults: a study in the Federal District'
+  summary:
+    pt: ''
+    en: ''
+  book_title: ''
+  volume: '20'
+  doi_isbn: 10.36311/1981-1640.2026.v20.e026010
+  journal_event: 'Brazilian Journal of Information Science: research trends'
+  location: ''
+  pages: e026010
+  publisher: ''
+  tags:
+  - digital_transformation
+  - software_quality
+  - ricardo_ajax
+  type: article
+  program: ''
+  advisors: []
+  url: https://doi.org/10.36311/1981-1640.2026.v20.e026010
+  year: 2026
+- authors:
+  - Mateus Cunha Maia
+  title:
+    pt: 'Estratégias de Paralelização em CPU para a Otimização de Algoritmos de Comparação de Sequências Biológicas'
+    en: 'CPU parallelization strategies for optimizing biological sequence comparison algorithms'
+  summary:
+    pt: ''
+    en: ''
+  book_title: ''
+  volume: ''
+  doi_isbn: ''
+  journal_event: ''
+  location: ''
+  pages: ''
+  publisher: Biblioteca Central da Universidade de Brasília
+  tags:
+  - hpc
+  type: tcc
+  program: curso_esw
+  advisors:
+  - daniel_sundfeld
+  url: ''
+  year: 2026
+- authors:
+  - Leonardo Gonçalves Machado
+  title:
+    pt: 'Soluções Ótimas Paralelas para Sliding Puzzle e Cubo Mágico'
+    en: 'Parallel optimal solutions for Sliding Puzzle and Rubiks Cube'
+  summary:
+    pt: ''
+    en: ''
+  book_title: ''
+  volume: ''
+  doi_isbn: ''
+  journal_event: ''
+  location: ''
+  pages: ''
+  publisher: Biblioteca Central da Universidade de Brasília
+  tags:
+  - hpc
+  type: tcc
+  program: curso_esw
+  advisors:
+  - daniel_sundfeld
+  url: ''
+  year: 2026
+- authors:
+  - Victorio Lázaro Rocha de Morais
+  title:
+    pt: 'Pipeline para Análise de Biomoléculas Brasileiras com Arquitetura Baseada em Microsserviços e GPUs'
+    en: 'Pipeline for the analysis of Brazilian biomolecules with an architecture based on microservices and GPUs'
+  summary:
+    pt: ''
+    en: ''
+  book_title: ''
+  volume: ''
+  doi_isbn: ''
+  journal_event: ''
+  location: ''
+  pages: ''
+  publisher: Biblioteca Central da Universidade de Brasília
+  tags:
+  - hpc
+  - software_architecture
+  type: tcc
+  program: curso_esw
+  advisors:
+  - daniel_sundfeld
+  url: ''
+  year: 2026
+- authors:
+  - Luis Eduardo Carneiro Miranda
+  - Vinícius Mendes Martins
+  title:
+    pt: 'EstocAI : Gerenciador de Estoque Inteligente'
+    en: 'EstocAI: intelligent inventory manager'
+  summary:
+    pt: ''
+    en: ''
+  book_title: ''
+  volume: ''
+  doi_isbn: ''
+  journal_event: ''
+  location: ''
+  pages: ''
+  publisher: Biblioteca Central da Universidade de Brasília
+  tags:
+  - ai
+  - software_architecture
+  type: tcc
+  program: curso_esw
+  advisors:
+  - daniel_sundfeld
+  url: ''
+  year: 2026
+- authors:
+  - Diego Emanuel Ferreira da Rocha
+  title:
+    pt: 'Identificação automatizada de processos elementares a partir da análise de requisições HTTP'
+    en: 'Automated identification of elementary processes through HTTP request analysis'
+  summary:
+    pt: ''
+    en: ''
+  book_title: ''
+  volume: ''
+  doi_isbn: ''
+  journal_event: ''
+  location: ''
+  pages: ''
+  publisher: ''
+  tags:
+  - software_requirements
+  - machine_learning
+  type: dissertation
+  program: curso_ppca
+  advisors:
+  - andre_lanna
+  url: https://repositorio.unb.br/handle/10482/54552
+  defense_date: 2025-10-23
+  year: 2025
+- authors:
+  - Emanuel Galhardo de Oliveira
+  title:
+    pt: 'Modelo de avaliação DevOps em ambientes de nuvem com métricas DORA: um estudo no setor financeiro'
+    en: 'DevOps assessment model in cloud environments with DORA metrics: a study in the financial sector'
+  summary:
+    pt: ''
+    en: ''
+  book_title: ''
+  volume: ''
+  doi_isbn: ''
+  journal_event: ''
+  location: ''
+  pages: ''
+  publisher: ''
+  tags:
+  - software_architecture
+  - digital_transformation
+  type: dissertation
+  program: curso_ppca
+  advisors:
+  - george_marsicano
+  url: https://repositorio.unb.br/handle/10482/54557
+  defense_date: 2025-12-03
+  year: 2025
+- authors:
+  - Delziron Braz de Lima
+  - Fellipe Pereira da Costa Silva
+  title:
+    pt: 'Aplicativo de suporte à promoção à saúde mental e bem-estar dentro do ambiente universitário'
+    en: 'Application to support the promotion of mental health and well-being in the university environment'
+  summary:
+    pt: ''
+    en: ''
+  book_title: ''
+  volume: ''
+  doi_isbn: ''
+  journal_event: ''
+  location: ''
+  pages: ''
+  publisher: Biblioteca Central da Universidade de Brasília
+  tags:
+  - ihc
+  - active_learning
+  type: tcc
+  program: curso_esw
+  advisors:
+  - george_marsicano
+  url: https://bdm.unb.br/handle/10483/42493
+  defense_date: 2025-07-17
+  year: 2025
+- authors:
+  - Maria Eduarda dos Santos Abritta Ferreira
+  - Sabrina Caldas Berno
+  title:
+    pt: 'Aplicação de Aprendizado de Máquina na Predição Não-Invasiva de Euploidia em Embriões Humanos com Base em Dados Morfocinéticos'
+    en: 'Application of Machine Learning for Non-Invasive Prediction of Euploidy in Human Embryos Based on Morphokinetic Data'
+  summary:
+    pt: ''
+    en: ''
+  book_title: ''
+  volume: ''
+  doi_isbn: ''
+  journal_event: ''
+  location: ''
+  pages: ''
+  publisher: Biblioteca Central da Universidade de Brasília
+  tags:
+  - ai
+  - machine_learning
+  type: tcc
+  program: curso_esw
+  advisors:
+  - george_marsicano
+  url: https://bdm.unb.br/handle/10483/42616
+  defense_date: 2025-07-17
+  year: 2025
+- authors:
+  - Breno Henrique de Souza
+  - Giulia Domingues de Alcantara
+  title:
+    pt: 'Centralização de Informações Administrativas como Suporte ao Desenvolvimento Estudantil na FCTE: Uma Abordagem com Chatbot e Inteligência Artificial'
+    en: 'Centralization of administrative information to support student development at FCTE: a chatbot and artificial intelligence approach'
+  summary:
+    pt: ''
+    en: ''
+  book_title: ''
+  volume: ''
+  doi_isbn: ''
+  journal_event: ''
+  location: ''
+  pages: ''
+  publisher: Biblioteca Central da Universidade de Brasília
+  tags:
+  - ai
+  - education
+  type: tcc
+  program: curso_esw
+  advisors:
+  - george_marsicano
+  url: https://bdm.unb.br/handle/10483/42443
+  defense_date: 2025-07-23
+  year: 2025
+- authors:
+  - Tássio Correia da Silva
+  title:
+    pt: '3SW: um modelo adaptado do CIS Controls v8.1 para mitigação de ameaças a servidores Web'
+    en: '3SW: an adapted CIS Controls v8.1 model for mitigating threats to Web servers'
+  summary:
+    pt: ''
+    en: ''
+  book_title: ''
+  volume: ''
+  doi_isbn: ''
+  journal_event: ''
+  location: ''
+  pages: ''
+  publisher: ''
+  tags:
+  - security
+  - software_architecture
+  type: dissertation
+  program: curso_ppgee
+  advisors:
+  - fabiana_mendes
+  url: https://repositorio.unb.br/handle/10482/53499
+  defense_date: 2025-08-26
+  year: 2025
+- authors:
   - Amanda Jeniffer Pereira Nobre
   - Ana Carolina Rodrigues Leite
   title:
@@ -61,6 +335,7 @@ items:
   advisors:
   - andre_lanna
   url: https://www.bdm.unb.br/handle/10483/42354
+  defense_date: 2025-07-21
   year: 2025
 - authors:
   - Denniel William Roriz Lima
@@ -85,6 +360,7 @@ items:
   advisors:
   - cristiane_ramos
   url: https://www.bdm.unb.br/handle/10483/42494
+  defense_date: 2025-07-22
   year: 2025
 - authors:
   - Erick Giffoni Felicissimo
@@ -108,6 +384,7 @@ items:
   advisors:
   - daniel_sundfeld
   url: https://www.bdm.unb.br/handle/10483/42544
+  defense_date: 2025-07-15
   year: 2025
 - authors:
   - João Pedro Elias de Moura
@@ -131,6 +408,7 @@ items:
   advisors:
   - daniel_sundfeld
   url: https://www.bdm.unb.br/handle/10483/42614
+  defense_date: 2025-07-11
   year: 2025
 - authors:
   - Leonardo Milomes Vitoriano
@@ -156,6 +434,7 @@ items:
   advisors:
   - andre_lanna
   url: https://www.bdm.unb.br/handle/10483/42615
+  defense_date: 2025-07-28
   year: 2025
 - authors:
   - Artur de Sousa Vieira
@@ -181,6 +460,7 @@ items:
   advisors:
   - ricardo_ajax
   url: https://www.bdm.unb.br/handle/10483/43564
+  defense_date: 2025-02-18
   year: 2025
 - authors:
   - Kalebe Lopes da Cunha
@@ -206,6 +486,7 @@ items:
   advisors:
   - andre_lanna
   url: https://www.bdm.unb.br/handle/10483/43566
+  defense_date: 2025-02-25
   year: 2025
 - authors:
   - Geraldo Victor Alves Barbosa
@@ -231,6 +512,7 @@ items:
   advisors:
   - george_marsicano
   url: https://www.bdm.unb.br/handle/10483/43573
+  defense_date: 2025-02-19
   year: 2025
 - authors:
   - Felipe Direito Corrieri de Macedo
@@ -254,12 +536,16 @@ items:
   advisors:
   - ricardo_ajax
   url: https://www.bdm.unb.br/handle/10483/43576
+  defense_date: 2025-12-02
   year: 2025
 - authors:
   - Wander Cleber Maria Pereira da Silva
-  - CANEDO, EDNA DIAS
-  - MARSICANO, GEORGE
-  - FIGUEIREDO, REJANE
+  - Edna Dias Canedo
+  - George Marsicano Correa
+  - Henrique Gomes de Moura
+  - Paula Emilyn Deodato Franco
+  - Giovanna Galvão Novaes Santana
+  - Rejane Maria da Costa Figueiredo
   title:
     pt: 'Fast Track for Collaborative Solutions: A Methodology for Public Service Design Workshops Supported by LLMs'
     en: 'Fast Track for Collaborative Solutions: A Methodology for Public Service Design Workshops Supported by LLMs'
@@ -267,8 +553,8 @@ items:
     pt: ''
     en: ''
   book_title: ''
-  volume: ''
-  doi_isbn: ''
+  volume: '26'
+  doi_isbn: 10.59490/dgo.2025.1061
   journal_event: '26th Annual International Conference on Digital Government Research (dg.o 2025)'
   location: Porto Alegre
   pages: ''
@@ -279,15 +565,15 @@ items:
   type: conference
   program: ''
   advisors: []
-  url: ''
+  url: https://doi.org/10.59490/dgo.2025.1061
   year: 2025
 - authors:
-  - Elaine VENSON
-  - SOUZA, J.
-  - CAMPOS, S.
-  - FIGUEIREDO, REJANE
-  - MARSICANO, GEORGE
-  - Wander Cleber Maria Pereira da Silva
+  - Elaine Venson
+  - Julia de Souza
+  - Sara Campos
+  - Rejane Figueiredo
+  - George Marsicano
+  - Wander Pereira Silva
   title:
     pt: 'Reflections on Collaborative Design: Lessons from Creating a Digital Public Service App'
     en: 'Reflections on Collaborative Design: Lessons from Creating a Digital Public Service App'
@@ -295,8 +581,8 @@ items:
     pt: ''
     en: ''
   book_title: ''
-  volume: ''
-  doi_isbn: ''
+  volume: '26'
+  doi_isbn: 10.59490/dgo.2025.1044
   journal_event: '26th Annual International Conference on Digital Government Research (dg.o 2025)'
   location: Porto Alegre
   pages: ''
@@ -307,7 +593,7 @@ items:
   type: conference
   program: ''
   advisors: []
-  url: ''
+  url: https://doi.org/10.59490/dgo.2025.1044
   year: 2025
 - authors:
   - CANTO, FABIO LORENSI DO
@@ -386,21 +672,21 @@ items:
   url: ''
   year: 2025
 - authors:
-  - KOSLOSKI, RICARDO AJAX DIAS
-  - MOURA, L.
-  - GOMES, M. M. F.
+  - Ricardo Ajax Dias Kosloski
+  - Leides Barroso de Azevedo Moura
+  - Marília Miranda Forte Gomes
   title:
     pt: 'ASPÉCTOS DE QUALIDADE DE PRODUTO DE SOFTWARE NO USO DE E-GOV: UMA ANÁLISE BASEADA NAS PERSPECTIVAS DE PESSOAS IDOSAS EM UMA CIDADE NO BRASIL'
     en: 'ASPÉCTOS DE QUALIDADE DE PRODUTO DE SOFTWARE NO USO DE E-GOV: UMA ANÁLISE BASEADA NAS PERSPECTIVAS DE PESSOAS IDOSAS EM UMA CIDADE NO BRASIL'
   summary:
-    pt: Artigo aceito para publicação.
-    en: Article accepted for publication.
+    pt: ''
+    en: ''
   book_title: ''
-  volume: ''
-  doi_isbn: ''
-  journal_event: 'ARACÊ - DIREITOS HUMANOS EM REVISTA'
+  volume: '7'
+  doi_isbn: 10.56238/arev7n3-023
+  journal_event: 'ARACÊ'
   location: ''
-  pages: ''
+  pages: 10487-10504
   publisher: ''
   tags:
   - digital_transformation
@@ -409,7 +695,7 @@ items:
   type: article
   program: ''
   advisors: []
-  url: ''
+  url: https://periodicos.newsciencepubl.com/arace/article/view/3658
   year: 2025
 - authors:
   - Christian Fleury Alencar Siqueira
@@ -435,6 +721,7 @@ items:
   advisors:
   - andre_lanna
   url: https://www.bdm.unb.br/handle/10483/40098
+  defense_date: 2024-09-17
   year: 2024
 - authors:
   - Daniel Barcelos Moreira
@@ -460,6 +747,7 @@ items:
   advisors:
   - cristiane_ramos
   url: https://www.bdm.unb.br/handle/10483/40116
+  defense_date: 2024-09-16
   year: 2024
 - authors:
   - Guilherme Rogelin Vial
@@ -485,6 +773,7 @@ items:
   advisors:
   - andre_lanna
   url: https://www.bdm.unb.br/handle/10483/40136
+  defense_date: 2024-09-18
   year: 2024
 - authors:
   - João Pedro Alves Machado
@@ -510,6 +799,7 @@ items:
   advisors:
   - andre_lanna
   url: https://www.bdm.unb.br/handle/10483/42301
+  defense_date: 2024-10-28
   year: 2024
 - authors:
   - Daniela Soares de Oliveira
@@ -535,6 +825,7 @@ items:
   advisors:
   - george_marsicano
   url: https://www.bdm.unb.br/handle/10483/43572
+  defense_date: 2024-09-12
   year: 2024
 - authors:
   - Francisco Heronildo Sousa Santos
@@ -559,6 +850,7 @@ items:
   advisors:
   - fabiana_mendes
   url: https://www.bdm.unb.br/handle/10483/39807
+  defense_date: 2024-03-11
   year: 2024
 - authors:
   - PAULINO, GABRIEL R. SCHEIDT
@@ -618,29 +910,56 @@ items:
   url: ''
   year: 2024
 - authors:
-  - KOSLOSKI, RICARDO AJAX DIAS
-  - MOURA, L.
-  - GOMES, M. M. F.
+  - Ricardo Ajax Dias Kosloski
+  - Leides Barroso de Azevedo Moura
+  - Marília Miranda Forte Gomes
   title:
-    pt: 'INCLUSÃO PARTICIPATIVA DE PESSOAS IDOSAS USANDO E-GOV NO BRASIL: UM MAPEAMENTO SISTEMÁTICO DE LITERATURA'
-    en: 'INCLUSÃO PARTICIPATIVA DE PESSOAS IDOSAS USANDO E-GOV NO BRASIL: UM MAPEAMENTO SISTEMÁTICO DE LITERATURA'
+    pt: 'Inclusão participativa de pessoas idosas usando e-Gov no Brasil: um mapeamento sistemático de literatura'
+    en: 'Participatory inclusion of older adults using e-Gov in Brazil: a systematic literature mapping'
   summary:
-    pt: Artigo aceito para publicação.
-    en: Article accepted for publication.
+    pt: ''
+    en: ''
   book_title: ''
-  volume: ''
-  doi_isbn: ''
-  journal_event: 'REVISTA DO SERVICO PUBLICO (ONLINE)'
+  volume: '75'
+  doi_isbn: 10.21874/rsp.v75i3.10457
+  journal_event: 'Revista do Serviço Público'
   location: ''
-  pages: ''
-  publisher: ''
+  pages: 461-483
+  publisher: Escola Nacional de Administração Pública (ENAP)
   tags:
   - digital_transformation
   - ricardo_ajax
   type: article
   program: ''
   advisors: []
-  url: ''
+  url: https://repositorio.enap.gov.br/handle/1/8053
+  year: 2024
+- authors:
+  - Ricardo Ajax Dias Kosloski
+  - Marília Miranda Forte Gomes
+  - Leides Barroso de Azevedo Moura
+  - Simone Bezerra Franco
+  title:
+    pt: 'A importância das TICS e do letramento digital para pessoas idosas: aplicabilidade no e-Gov e na qualidade do desenvolvimento de software'
+    en: 'The importance of ICTs and digital literacy for older adults: applicability in e-Gov and software development quality'
+  summary:
+    pt: ''
+    en: ''
+  book_title: 'Anais do VI Seminário Internacional de Informação, Tecnologia e Inovação'
+  volume: '6'
+  doi_isbn: ''
+  journal_event: 'Seminário Internacional de Informação, Tecnologia e Inovação'
+  location: Maceió, AL, Brasil
+  pages: e194
+  publisher: Universidade Federal de Alagoas
+  tags:
+  - digital_transformation
+  - software_quality
+  - ricardo_ajax
+  type: conference
+  program: ''
+  advisors: []
+  url: https://observinter.al.org.br/index.php/siti/article/view/194
   year: 2024
 - authors:
   - NEUBERT, PATRICIA DA SILVA
@@ -1287,7 +1606,8 @@ administrative and operational activities of the Brazilian Army."
   program: curso_ppca
   advisors:
   - george_marsicano
-  url: 
+  url: https://repositorio.unb.br/handle/10482/52669
+  defense_date: 2025-01-10
   year: 2025
 
 - authors:
@@ -1381,6 +1701,7 @@ administrative and operational activities of the Brazilian Army."
   advisors:
   - sergio_freitas
   url: 'https://repositorio.unb.br/handle/10482/48525'
+  defense_date: 2023-12-21
   year: 2023
 
 - authors:
@@ -1522,6 +1843,7 @@ administrative and operational activities of the Brazilian Army."
   advisors:
   - andre_lanna
   url: https://www.bdm.unb.br/handle/10483/39809
+  defense_date: 2023-12-22
   year: 2023
 - authors:
   - Lucas Ganda Carvalho
@@ -1546,6 +1868,7 @@ administrative and operational activities of the Brazilian Army."
   advisors:
   - daniel_sundfeld
   url: https://www.bdm.unb.br/handle/10483/39151
+  defense_date: 2023-07-27
   year: 2022
 - authors:
   - Lucas Lopes Xavier
@@ -1569,6 +1892,7 @@ administrative and operational activities of the Brazilian Army."
   advisors:
   - fabiana_mendes
   url: https://www.bdm.unb.br/handle/10483/39153
+  defense_date: 2023-07-25
   year: 2023
 - authors:
   - Felipe Boccardi Silva Agustini
@@ -1594,6 +1918,7 @@ administrative and operational activities of the Brazilian Army."
   advisors:
   - andre_lanna
   url: https://www.bdm.unb.br/handle/10483/39189
+  defense_date: 2023-07-28
   year: 2023
 - authors:
   - Nathalia Lorena Cardoso Dias
@@ -1617,6 +1942,7 @@ administrative and operational activities of the Brazilian Army."
   advisors:
   - fabiana_mendes
   url: https://www.bdm.unb.br/handle/10483/38582
+  defense_date: 2023-03-04
   year: 2023
 - authors:
   - Allan Jefrey Pereira Nobre
@@ -1641,6 +1967,7 @@ administrative and operational activities of the Brazilian Army."
   advisors:
   - cristiane_ramos
   url: https://www.bdm.unb.br/handle/10483/33678
+  defense_date: 2021-05-28
   year: 2021
 - authors:
   - Fabiana Luiza Vasconcelos Pfeilsticker Ribas
@@ -1664,6 +1991,7 @@ administrative and operational activities of the Brazilian Army."
   advisors:
   - ricardo_ajax
   url: https://www.bdm.unb.br/handle/10483/33852
+  defense_date: 2022-09-27
   year: 2022
 - authors:
   - Gabriel de Jesus Carvalho
@@ -1687,6 +2015,7 @@ administrative and operational activities of the Brazilian Army."
   advisors:
   - fabiana_mendes
   url: https://www.bdm.unb.br/handle/10483/33935
+  defense_date: 2022-10-05
   year: 2022
 - authors:
   - Gabriel Batista Albino Silva
@@ -1712,6 +2041,7 @@ administrative and operational activities of the Brazilian Army."
   advisors:
   - cristiane_ramos
   url: https://www.bdm.unb.br/handle/10483/33941
+  defense_date: 2022-09-23
   year: 2022
 - authors:
   - Byron Kamal Barreto Correa
@@ -1737,6 +2067,7 @@ administrative and operational activities of the Brazilian Army."
   advisors:
   - andre_lanna
   url: https://www.bdm.unb.br/handle/10483/33850
+  defense_date: 2022-05-09
   year: 2022
 - authors:
   - João Gabriel Rossi
@@ -1761,6 +2092,7 @@ administrative and operational activities of the Brazilian Army."
   advisors:
   - fabiana_mendes
   url: https://www.bdm.unb.br/handle/10483/34027
+  defense_date: 2022-09-26
   year: 2022
 - authors:
   - João Vitor Lopes de Farias
@@ -1812,6 +2144,7 @@ administrative and operational activities of the Brazilian Army."
   advisors:
   - sergio_freitas
   url: https://www.bdm.unb.br/handle/10483/36942
+  defense_date: 2023-07-24
   year: 2023
 - authors:
   - Cauê Mateus Oliveira
@@ -1837,6 +2170,7 @@ administrative and operational activities of the Brazilian Army."
   advisors:
   - fabiana_mendes
   url: https://www.bdm.unb.br/handle/10483/33859
+  defense_date: 2022-06-09
   year: 2022
 - authors:
   - Marcelo Victor de Sousa Silva
@@ -1861,7 +2195,8 @@ administrative and operational activities of the Brazilian Army."
   program: curso_esw
   advisors:
   - fabiana_mendes
-  url: ''
+  url: https://bdm.unb.br/handle/10483/39194
+  defense_date: 2023-02-13
   year: 2023
 - authors:
   - André Aben-Athar de Freitas
@@ -1887,6 +2222,7 @@ administrative and operational activities of the Brazilian Army."
   advisors:
   - andre_lanna
   url: https://www.bdm.unb.br/handle/10483/35945
+  defense_date: 2023-02-14
   year: 2023
 - authors:
   - Renan Cristyan Araujo Pinheiro
@@ -1910,6 +2246,7 @@ administrative and operational activities of the Brazilian Army."
   advisors:
   - fabiana_mendes
   url: https://www.bdm.unb.br/handle/10483/34509
+  defense_date: 2022
   year: 2022
 - authors:
   - Augusto Moreno Vilarins Cardoso da Silva
@@ -1935,6 +2272,7 @@ administrative and operational activities of the Brazilian Army."
   advisors:
   - cristiane_ramos
   url: https://www.bdm.unb.br/handle/10483/36164
+  defense_date: 2021-11-16
   year: 2021
 - authors:
   - Ítalo Alves Guimarães
@@ -1990,6 +2328,7 @@ administrative and operational activities of the Brazilian Army."
   advisors:
   - sergio_freitas
   url: https://www.bdm.unb.br/handle/10483/36833
+  defense_date: 2023-07-24
   year: 2023
 - authors:
   - ERVEN, RICARDO CORDEIRO GALVÃO SANTANA VAN
@@ -2292,152 +2631,6 @@ administrative and operational activities of the Brazilian Army."
   year: 2022
 - authors:
   - Amanda Emilly Muniz de Menezes
-  title:
-    pt: Identificação de fatores que afetam a Evasão no Ensino Superior
-    en: Identifying Factors Affecting Dropout in Higher Education
-  summary:
-    pt: A identificação de fatores que influenciam a evasão acadêmica é vital para
-      que as coordenações possam tomar medidas preventivas contra a desistência estudantil.
-      Esta monografia tem como objetivo explorar o estado atual da pesquisa na área,
-      buscando compreender os principais fatores associados à evasão acadêmica e sua
-      aplicabilidade em modelos preditivos de evasão. Realizou-se uma pesquisa quantitativa,
-      exploratória e explicativa de caráter aplicado, utilizando técnicas de estudo
-      de caso e revisão bibliográfica. A análise sistemática da literatura indicou
-      que a evasão pode ser prevista por meio de fatores acadêmicos, demográficos
-      e de aprendizagem. Utilizando esses fatores, modelos preditivos foram desenvolvidos
-      com o auxílio de algoritmos de aprendizado de máquina, cujas previsões se mostraram
-      sensíveis às alterações no fluxo dos cursos. Conclui-se que os fatores acadêmicos,
-      demográficos e de aprendizagem são eficazes na predição de evasão, sendo importante
-      a seleção e o modo de aplicação desses fatores para alcançar resultados preditivos
-      precisos. Além disso, a aplicação de fatores acadêmicos em modelos preditivos
-      exige consideração do contexto específico dos dados analisados.
-    en: Identifying factors that influence academic dropout is crucial for coordinators
-      to take preventive actions against student desertion. This thesis aims to explore
-      the current state of research in the field, seeking to understand the main factors
-      associated with academic dropout and how they can be applied in predictive models
-      of dropout. A quantitative, exploratory, and explanatory applied research was
-      conducted, using case study techniques and bibliographic research. The systematic
-      literature review indicated that dropout could be predicted by academic, demographic,
-      and learning factors. Using these factors, predictive models were developed
-      with the help of machine learning algorithms, whose predictions proved sensitive
-      to changes in course flows. It concludes that academic, demographic, and learning
-      factors are effective in predicting dropout, with the selection and application
-      method of these factors being crucial for achieving accurate predictive results.
-      Moreover, the application of academic factors in predictive models requires
-      consideration of the specific context of the analyzed data.
-  book_title: ''
-  volume: ''
-  doi_isbn: ''
-  journal_event: ''
-  location: ''
-  pages: ''
-  publisher: ''
-  tags:
-  - education
-  - learning_analytics
-  type: tcc
-  program: curso_esw
-  advisors:
-  - cristiane_ramos
-  - sergio_freitas
-  url: ''
-  year: 2022
-- authors:
-  - Ateldy Borges Brasil Filho
-  title:
-    pt: 'Avaliação de gamificação : uma aplicação prática em uma empresa júnior'
-    en: 'Gamification evaluation: a practical application in a junior enterprise'
-  summary:
-    pt: ''
-    en: ''
-  book_title: ''
-  volume: ''
-  doi_isbn: ''
-  journal_event: ''
-  location: ''
-  pages: ''
-  publisher: Biblioteca Central da Universidade de Brasília
-  tags:
-  - gamification
-  - education
-  type: tcc
-  program: curso_esw
-  advisors:
-  - cristiane_ramos
-  url: https://www.bdm.unb.br/handle/10483/30633
-  year: 2021
-- authors:
-  - Caio César de Almeida Beleza
-  title:
-    pt: Problemas em interfaces de software que induzem usuários ao erro e como evitá-los
-    en: Issues in software interfaces that lead users to errors and how to avoid them
-  summary:
-    pt: ''
-    en: ''
-  book_title: ''
-  volume: ''
-  doi_isbn: ''
-  journal_event: ''
-  location: ''
-  pages: ''
-  publisher: Biblioteca Central da Universidade de Brasília
-  tags:
-  - software_quality
-  type: tcc
-  program: curso_esw
-  advisors:
-  - fabiana_mendes
-  url: https://www.bdm.unb.br/handle/10483/30367
-  year: 2021
-- authors:
-  - Filipe Toyoshima Silva
-  title:
-    pt: Estado da prática da manutenção de software no contexto de startups de software em early stage
-    en: State of practice of software maintenance in the context of early-stage software startups
-  summary:
-    pt: ''
-    en: ''
-  book_title: ''
-  volume: ''
-  doi_isbn: ''
-  journal_event: ''
-  location: ''
-  pages: ''
-  publisher: Biblioteca Central da Universidade de Brasília
-  tags:
-  - software_architecture
-  - digital_transformation
-  type: tcc
-  program: curso_esw
-  advisors:
-  - cristiane_ramos
-  url: https://www.bdm.unb.br/handle/10483/30701
-  year: 2021
-- authors:
-  - Iolane Caroline Alves de Andrade
-  title:
-    pt: O uso de testes exploratórios - uma aplicação prática
-    en: The use of exploratory testing - a practical application
-  summary:
-    pt: ''
-    en: ''
-  book_title: ''
-  volume: ''
-  doi_isbn: ''
-  journal_event: ''
-  location: ''
-  pages: ''
-  publisher: Biblioteca Central da Universidade de Brasília
-  tags:
-  - verification_validation_testing
-  - software_quality
-  type: tcc
-  program: curso_esw
-  advisors:
-  - ricardo_ajax
-  url: https://www.bdm.unb.br/handle/10483/30378
-  year: 2020
-- authors:
   - Letícia Karla Soares Rodrigues de Araújo
   title:
     pt: Identificação de fatores que afetam a Evasão no Ensino Superior
@@ -2487,8 +2680,108 @@ administrative and operational activities of the Brazilian Army."
   advisors:
   - cristiane_ramos
   - sergio_freitas
-  url: ''
+  url: https://bdm.unb.br/handle/10483/34952
+  defense_date: 2022-09-26
   year: 2022
+- authors:
+  - Ateldy Borges Brasil Filho
+  title:
+    pt: 'Avaliação de gamificação : uma aplicação prática em uma empresa júnior'
+    en: 'Gamification evaluation: a practical application in a junior enterprise'
+  summary:
+    pt: ''
+    en: ''
+  book_title: ''
+  volume: ''
+  doi_isbn: ''
+  journal_event: ''
+  location: ''
+  pages: ''
+  publisher: Biblioteca Central da Universidade de Brasília
+  tags:
+  - gamification
+  - education
+  type: tcc
+  program: curso_esw
+  advisors:
+  - cristiane_ramos
+  url: https://www.bdm.unb.br/handle/10483/30633
+  defense_date: 2021-05-20
+  year: 2021
+- authors:
+  - Caio César de Almeida Beleza
+  title:
+    pt: Problemas em interfaces de software que induzem usuários ao erro e como evitá-los
+    en: Issues in software interfaces that lead users to errors and how to avoid them
+  summary:
+    pt: ''
+    en: ''
+  book_title: ''
+  volume: ''
+  doi_isbn: ''
+  journal_event: ''
+  location: ''
+  pages: ''
+  publisher: Biblioteca Central da Universidade de Brasília
+  tags:
+  - software_quality
+  type: tcc
+  program: curso_esw
+  advisors:
+  - fabiana_mendes
+  url: https://www.bdm.unb.br/handle/10483/30367
+  defense_date: 2021-05-19
+  year: 2021
+- authors:
+  - Filipe Toyoshima Silva
+  title:
+    pt: Estado da prática da manutenção de software no contexto de startups de software em early stage
+    en: State of practice of software maintenance in the context of early-stage software startups
+  summary:
+    pt: ''
+    en: ''
+  book_title: ''
+  volume: ''
+  doi_isbn: ''
+  journal_event: ''
+  location: ''
+  pages: ''
+  publisher: Biblioteca Central da Universidade de Brasília
+  tags:
+  - software_architecture
+  - digital_transformation
+  type: tcc
+  program: curso_esw
+  advisors:
+  - cristiane_ramos
+  url: https://www.bdm.unb.br/handle/10483/30701
+  defense_date: 2021-11-18
+  year: 2021
+- authors:
+  - Iolane Caroline Alves de Andrade
+  title:
+    pt: O uso de testes exploratórios - uma aplicação prática
+    en: The use of exploratory testing - a practical application
+  summary:
+    pt: ''
+    en: ''
+  book_title: ''
+  volume: ''
+  doi_isbn: ''
+  journal_event: ''
+  location: ''
+  pages: ''
+  publisher: Biblioteca Central da Universidade de Brasília
+  tags:
+  - verification_validation_testing
+  - software_quality
+  type: tcc
+  program: curso_esw
+  advisors:
+  - ricardo_ajax
+  url: https://www.bdm.unb.br/handle/10483/30378
+  defense_date: 2020-12-15
+  year: 2020
 - authors:
   - Lucas Pereira de Andrade Macêdo
   - Lucas Siqueira Rodrigues
@@ -2513,6 +2806,7 @@ administrative and operational activities of the Brazilian Army."
   advisors:
   - andre_lanna
   url: https://www.bdm.unb.br/handle/10483/30718
+  defense_date: 2021-05-27
   year: 2021
 - authors:
   - Luiz Henrique Fernandes Zamprogno
@@ -2539,6 +2833,7 @@ administrative and operational activities of the Brazilian Army."
   advisors:
   - sergio_freitas
   url: https://bdm.unb.br/handle/10483/43473
+  defense_date: 2023-12-20
   year: 2023
 - authors:
   - Rafael Contessotto Bragança Pinheiro
@@ -2562,6 +2857,7 @@ administrative and operational activities of the Brazilian Army."
   advisors:
   - ricardo_ajax
   url: https://www.bdm.unb.br/handle/10483/30373
+  defense_date: 2020-12-16
   year: 2020
 - authors:
   - Rafael Santos Teodosio
@@ -2607,6 +2903,7 @@ administrative and operational activities of the Brazilian Army."
   advisors:
   - sergio_freitas
   url: https://www.bdm.unb.br/handle/10483/34017
+  defense_date: 2022-09-28
   year: 2022
 - authors:
   - Sannya Santana de Arvelos
@@ -2631,6 +2928,7 @@ administrative and operational activities of the Brazilian Army."
   advisors:
   - cristiane_ramos
   url: https://www.bdm.unb.br/handle/10483/30204
+  defense_date: 2020-12-17
   year: 2020
 - authors:
   - Victor Eduardo Araújo Ribeiro
@@ -2679,6 +2977,7 @@ administrative and operational activities of the Brazilian Army."
   advisors:
   - fabiana_mendes
   url: https://www.bdm.unb.br/handle/10483/30626
+  defense_date: 2021-10-25
   year: 2021
 - authors:
   - Érico Maximiano Bandeira
@@ -2728,6 +3027,7 @@ administrative and operational activities of the Brazilian Army."
   advisors:
   - sergio_freitas
   url: https://www.bdm.unb.br/handle/10483/33847
+  defense_date: 2022-05-05
   year: 2022
 - authors:
   - DE OLIVEIRA, ENÉIAS PAULO
@@ -3154,6 +3454,7 @@ administrative and operational activities of the Brazilian Army."
   advisors:
   - andre_lanna
   url: https://www.bdm.unb.br/handle/10483/26362
+  defense_date: 2020-02-28
   year: 2020
 - authors:
   - Weiller Fernandes Pereira
@@ -3215,6 +3516,7 @@ administrative and operational activities of the Brazilian Army."
   advisors:
   - sergio_freitas
   url: https://www.bdm.unb.br/handle/10483/30628
+  defense_date: 2021-11-11
   year: 2021
 - authors:
   - MELO, L. V. S. E.
@@ -3432,6 +3734,7 @@ administrative and operational activities of the Brazilian Army."
   advisors:
   - andre_lanna
   url: https://www.bdm.unb.br/handle/10483/23055
+  defense_date: 2018-12-11
   year: 2018
 - authors:
   - Victor Hugo Arnaud Deon
@@ -3456,6 +3759,7 @@ administrative and operational activities of the Brazilian Army."
   advisors:
   - cristiane_ramos
   url: https://www.bdm.unb.br/handle/10483/23047
+  defense_date: 2019-07-12
   year: 2019
 - authors:
   - MOTA, V. F. S.
@@ -3780,6 +4084,7 @@ administrative and operational activities of the Brazilian Army."
   advisors:
   - andre_lanna
   url: https://www.bdm.unb.br/handle/10483/21579
+  defense_date: 2018-07-06
   year: 2018
 - authors:
   - Jonathan Nogueira Rufino Batista Paiva
@@ -3805,6 +4110,7 @@ administrative and operational activities of the Brazilian Army."
   advisors:
   - andre_lanna
   url: https://www.bdm.unb.br/handle/10483/21590
+  defense_date: 2018-07-06
   year: 2018
 - authors:
   - Nogueira, Teresinha de Jesus Araújo Magalhães
@@ -4364,6 +4670,7 @@ administrative and operational activities of the Brazilian Army."
   advisors:
   - sergio_freitas
   url: https://www.bdm.unb.br/handle/10483/21592
+  defense_date: 2018-08
   year: 2018
 - authors:
   - DANTAS, J. M.
@@ -4742,6 +5049,7 @@ administrative and operational activities of the Brazilian Army."
   advisors:
   - sergio_freitas
   url: https://www.bdm.unb.br/handle/10483/19791
+  defense_date: 2017-12-08
   year: 2017
 - authors:
   - Tiago Ribeiro de Assunção
@@ -4803,6 +5111,7 @@ administrative and operational activities of the Brazilian Army."
   advisors:
   - sergio_freitas
   url: https://www.bdm.unb.br/handle/10483/19801
+  defense_date: 2017-12-21
   year: 2017
 - authors:
   - Yeltsin Suares Gama
@@ -5197,6 +5506,7 @@ administrative and operational activities of the Brazilian Army."
   advisors:
   - sergio_freitas
   url: https://www.bdm.unb.br/handle/10483/19802
+  defense_date: 2016-12-07
   year: 2016
 - authors:
   - Cristóvão de Lima Frinhani
@@ -5263,6 +5573,7 @@ administrative and operational activities of the Brazilian Army."
   advisors:
   - sergio_freitas
   url: https://www.bdm.unb.br/handle/10483/14871
+  defense_date: 2016-07-01
   year: 2016
 - authors:
   - João Vitor de Moura Rosa Silva
@@ -5307,6 +5618,7 @@ administrative and operational activities of the Brazilian Army."
   advisors:
   - sergio_freitas
   url: https://www.bdm.unb.br/handle/10483/35949
+  defense_date: 2023-02-14
   year: 2023
 - authors:
   - Leandro Veloso Rodrigues
@@ -5378,6 +5690,7 @@ administrative and operational activities of the Brazilian Army."
   - sergio_freitas
   - fabiana_mendes
   url: https://www.bdm.unb.br/handle/10483/14867
+  defense_date: 2016-07-07
   year: 2016
 - authors:
   - Ludimila da Bela Cruz
@@ -5428,6 +5741,7 @@ administrative and operational activities of the Brazilian Army."
   advisors:
   - sergio_freitas
   url: https://www.bdm.unb.br/handle/10483/21591
+  defense_date: 2016-07-02
   year: 2016
 - authors:
   - Wilker Mesquita de Assunção
@@ -5475,6 +5789,7 @@ administrative and operational activities of the Brazilian Army."
   advisors:
   - sergio_freitas
   url: https://www.bdm.unb.br/handle/10483/14870
+  defense_date: 2016
   year: 2016
 - authors:
   - LOJA, L. F. B.
@@ -5688,6 +6003,7 @@ administrative and operational activities of the Brazilian Army."
   advisors:
   - fabiana_mendes
   url: https://www.bdm.unb.br/handle/10483/11334
+  defense_date: 2015
   year: 2015
 - authors:
   - Luciano Hideaky de Macedo Endo
@@ -5711,6 +6027,7 @@ administrative and operational activities of the Brazilian Army."
   advisors:
   - fabiana_mendes
   url: https://www.bdm.unb.br/handle/10483/9489
+  defense_date: 2014-11-27
   year: 2014
 - authors:
   - Thiago Silveira Honorato
@@ -5735,6 +6052,7 @@ administrative and operational activities of the Brazilian Army."
   advisors:
   - ricardo_ajax
   url: https://www.bdm.unb.br/handle/10483/11322
+  defense_date: 2015
   year: 2015
 - authors:
   - Tiago Querubim
@@ -5759,6 +6077,7 @@ administrative and operational activities of the Brazilian Army."
   advisors:
   - george_marsicano
   url: https://www.bdm.unb.br/handle/10483/9547
+  defense_date: 2014-11-27
   year: 2015
 - authors:
   - Victor Hugo Alves de Carvalho
@@ -5783,6 +6102,7 @@ administrative and operational activities of the Brazilian Army."
   advisors:
   - fabiana_mendes
   url: https://www.bdm.unb.br/handle/10483/11323
+  defense_date: 2015
   year: 2015
 - authors:
   - MACIEL, CRISTIANO
@@ -5833,6 +6153,7 @@ administrative and operational activities of the Brazilian Army."
   advisors:
   - fabiana_mendes
   url: https://www.bdm.unb.br/handle/10483/7027
+  defense_date: 2013-12-11
   year: 2013
 - authors:
   - Giancarllo Soares
@@ -5857,6 +6178,7 @@ administrative and operational activities of the Brazilian Army."
   advisors:
   - george_marsicano
   url: https://www.bdm.unb.br/handle/10483/8215
+  defense_date: 2014-06-24
   year: 2014
 - authors:
   - Guilherme Fay Vergara
@@ -5902,6 +6224,7 @@ administrative and operational activities of the Brazilian Army."
   - sergio_freitas
   - edna_canedo
   url: https://www.bdm.unb.br/handle/10483/8094
+  defense_date: 2014-06-25
   year: 2014
 - authors:
   - Rafael Ferreira dos Santos
@@ -5957,6 +6280,7 @@ administrative and operational activities of the Brazilian Army."
   advisors:
   - sergio_freitas
   url: https://www.bdm.unb.br/handle/10483/7965
+  defense_date: 2014-06-25
   year: 2014
 - authors:
   - Ramaiane Medeiros da Silva
@@ -5980,6 +6304,7 @@ administrative and operational activities of the Brazilian Army."
   advisors:
   - fabiana_mendes
   url: https://www.bdm.unb.br/handle/10483/9278
+  defense_date: 2014-11-27
   year: 2014
 - authors:
   - Vinicius Brito
@@ -6004,6 +6329,7 @@ administrative and operational activities of the Brazilian Army."
   advisors:
   - george_marsicano
   url: https://www.bdm.unb.br/handle/10483/7964
+  defense_date: 2014-06-24
   year: 2014
 - authors:
   - Antonio Bezerra da Silva Júnior
@@ -6028,6 +6354,7 @@ administrative and operational activities of the Brazilian Army."
   advisors:
   - cristiane_ramos
   url: https://www.bdm.unb.br/handle/10483/6610
+  defense_date: 2013-07-23
   year: 2013
 - authors:
   - Greg Ouyama Martins
@@ -6083,6 +6410,7 @@ administrative and operational activities of the Brazilian Army."
   advisors:
   - sergio_freitas
   url: https://www.bdm.unb.br/handle/10483/6822
+  defense_date: 2013-12-19
   year: 2013
 - authors:
   - LOZZI, S.
@@ -6177,7 +6505,7 @@ administrative and operational activities of the Brazilian Army."
   program: curso_ppgi
   advisors:
   - sergio_freitas
-  url: https://repositorio.ufes.br/items/eda76c07-6e59-4e86-b641-a027704ad767
+  url: https://repositorio.ufes.br/handle/10/4220
   year: 2010
 - authors:
   - Luana Vieira Morellato
@@ -6247,7 +6575,7 @@ administrative and operational activities of the Brazilian Army."
   program: curso_ppgi
   advisors:
   - sergio_freitas
-  url: https://repositorio.ufes.br/items/776acd30-998d-42de-97d4-465188e9fae9
+  url: https://repositorio.ufes.br/handle/10/4217
   year: 2010
 - authors:
   - Pereira, F. S. C.
@@ -6361,7 +6689,7 @@ administrative and operational activities of the Brazilian Army."
   program: curso_ppgi
   advisors:
   - sergio_freitas
-  url: https://repositorio.ufes.br/server/api/core/bitstreams/2e7d36e2-7f29-4cca-8be4-ca4b3a7cd012/content
+  url: https://repositorio.ufes.br/handle/10/6380
   year: 2009
 - authors:
   - Seibel, Hilário
@@ -6713,11 +7041,13 @@ administrative and operational activities of the Brazilian Army."
   advisors:
   - cristiane_ramos
   - ricardo_ajax
-  url: 
+  url: https://bdm.unb.br/handle/10483/38579
+  defense_date: 2023-12-21
   year: 2023
 
 - authors:
   - Guilherme Daniel Fernandes da Silva
+  - Lorrayne Alves Cardozo
   title:
     pt: 'Qualidade de software e envelhecimento populacional: uma análise com base nos dados da TIC Domicílios'
     en: 'Software quality and population aging: an analysis based on ICT Household data'
@@ -6738,32 +7068,8 @@ administrative and operational activities of the Brazilian Army."
   advisors:
     - marilia_miranda
     - ricardo_ajax
-  url: 
-  year: 2023
-
-- authors:
-  - Lorrayne Alves Cardozo
-  title:
-    pt: 'Qualidade de software e envelhecimento populacional: uma análise com base nos dados da TIC Domicílios'
-    en: 'Software quality and population aging: an analysis based on ICT Household data'
-  summary:
-    pt: ''
-    en: ''
-  book_title: ''
-  volume: ''
-  doi_isbn: ''
-  journal_event: ''
-  location: ''
-  pages: ''
-  publisher: Biblioteca Central da Universidade de Brasília
-  tags:
-    - software_quality
-  type: tcc
-  program: curso_esw2
-  advisors:
-    - marília_miranda
-    - ricardo_ajax
-  url: 
+  url: https://bdm.unb.br/handle/10483/38580
+  defense_date: 2023
   year: 2023
 
 - authors:
@@ -6788,7 +7094,8 @@ administrative and operational activities of the Brazilian Army."
   advisors:
   - cristiane_ramos
   -  ricardo_ajax
-  url: 
+  url: https://bdm.unb.br/handle/10483/39358
+  defense_date: 2023-12-21
   year: 2023
 
 - authors:
@@ -6813,7 +7120,8 @@ administrative and operational activities of the Brazilian Army."
   advisors:
   - cristiane_ramos
   - fabiana_mendes
-  url: 
+  url: https://bdm.unb.br/handle/10483/38582
+  defense_date: 2023-03-04
   year: 2024
 
 - authors:
@@ -6838,7 +7146,8 @@ administrative and operational activities of the Brazilian Army."
   program: curso_esw
   advisors:
   - george_marsicano
-  url: ''
+  url: https://bdm.unb.br/handle/10483/40073
+  defense_date: 2023-12-15
   year: 2023
 - authors:
   - Rafael Berto Pereira
@@ -6862,7 +7171,8 @@ administrative and operational activities of the Brazilian Army."
   program: curso_esw
   advisors:
   - george_marsicano
-  url: ''
+  url: https://bdm.unb.br/handle/10483/39356
+  defense_date: 2023-12-15
   year: 2023
 - authors:
   - Luis Bruno Fidelis Gomes
@@ -6885,7 +7195,8 @@ administrative and operational activities of the Brazilian Army."
   program: curso_esw
   advisors:
   - george_marsicano
-  url: ''
+  url: https://bdm.unb.br/handle/10483/39350
+  defense_date: 2023-12-11
   year: 2023
 - authors:
   - José Augusto da Fonseca
@@ -7461,6 +7772,7 @@ administrative and operational activities of the Brazilian Army."
   advisors:
   - sergio_freitas
   url: https://bdm.unb.br/handle/10483/9273
+  defense_date: 2014-11-17
   year: 2014
 - authors:
   - Álvaro Henrique de Sousa Gouvea
@@ -7487,6 +7799,7 @@ administrative and operational activities of the Brazilian Army."
   advisors:
   - sergio_freitas
   url: https://bdm.unb.br/handle/10483/40493
+  defense_date: 2024-09-11
   year: 2024
 - authors:
   - Antonio Rangel Chaves
@@ -7513,6 +7826,7 @@ administrative and operational activities of the Brazilian Army."
   advisors:
   - sergio_freitas
   url: https://bdm.unb.br/handle/10483/43543
+  defense_date: 2024-08-08
   year: 2024
 - authors:
   - Alexia Naara da Silva Cardoso
@@ -7639,7 +7953,8 @@ administrative and operational activities of the Brazilian Army."
   program: curso_ppca
   advisors:
   - george_marsicano
-  url: ''
+  url: https://repositorio.unb.br/handle/10482/52683
+  defense_date: 2025-02-18
   year: 2025
 
 - authors:
@@ -7740,7 +8055,8 @@ administrative and operational activities of the Brazilian Army."
   program: curso_esw
   advisors:
   - george_marsicano
-  url: ''
+  url: https://bdm.unb.br/handle/10483/40076
+  defense_date: 2024-09-12
   year: 2024
 
 - authors:
@@ -7865,33 +8181,8 @@ administrative and operational activities of the Brazilian Army."
   program: curso_esw
   advisors:
   - cristiane_ramos
-  url: ''
-  year: 2022
-
-- authors:
-  - Letícia Karla Soares Rodrigues de Araújo
-  - Amanda Emily M. de Menezes
-  title:
-    pt: "Previsão de evasão no ensino superior"
-    en: "Prediction of dropout in higher education"
-  summary:
-    pt: ''
-    en: ''
-  book_title: ''
-  volume: ''
-  doi_isbn: ''
-  journal_event: ''
-  location: ''
-  pages: ''
-  publisher: Biblioteca Central da Universidade de Brasília
-  tags:
-  - education
-  - learning_analytics
-  type: tcc
-  program: curso_esw
-  advisors:
-  - cristiane_ramos
-  url: ''
+  url: https://bdm.unb.br/handle/10483/33852
+  defense_date: 2022-09-27
   year: 2022
 
 - authors:
@@ -8038,7 +8329,8 @@ administrative and operational activities of the Brazilian Army."
   program: curso_esw
   advisors:
   - george_marsicano
-  url: ''
+  url: https://bdm.unb.br/handle/10483/7964
+  defense_date: 2014-06-24
   year: 2014
 
 - authors:
@@ -8062,7 +8354,8 @@ administrative and operational activities of the Brazilian Army."
   program: curso_esw
   advisors:
   - george_marsicano
-  url: ''
+  url: https://bdm.unb.br/handle/10483/8215
+  defense_date: 2014-06-24
   year: 2014
 
 - authors:
@@ -8086,7 +8379,8 @@ administrative and operational activities of the Brazilian Army."
   program: curso_esw
   advisors:
   - george_marsicano
-  url: ''
+  url: https://bdm.unb.br/handle/10483/9547
+  defense_date: 2014-11-27
   year: 2014
 
 - authors:
@@ -8110,7 +8404,8 @@ administrative and operational activities of the Brazilian Army."
   program: curso_esw
   advisors:
   - george_marsicano
-  url: ''
+  url: https://bdm.unb.br/handle/10483/6967
+  defense_date: 2014-01-28
   year: 2013
 
 - authors:
@@ -8963,6 +9258,7 @@ administrative and operational activities of the Brazilian Army."
   github_repo:
     pt: 'https://github.com/CedisUnB/GitRanking'
     en: 'https://github.com/CedisUnB/GitRanking'
+  defense_date: 2026-07-14
   year: '2025/2'
 
 - authors:
@@ -9023,6 +9319,7 @@ administrative and operational activities of the Brazilian Army."
   - sergio_freitas
   - andre_lanna
   url: ''
+  defense_date: 2026-06-11
   year: '2026/1'
 
 - authors:
@@ -9090,6 +9387,337 @@ administrative and operational activities of the Brazilian Army."
   advisors: []
   url: ''
   year: 2026
+
+- authors:
+  - Glauco Vitor Pedrosa
+  - Ricardo Ajax Dias Kosloski
+  - Vitor Gomes Menezes
+  - Gabriela Yukari Iwama
+  - Wander Cleber Maria Pereira da Silva
+  - Rejane Maria da Costa Figueiredo
+  title:
+    pt: 'A Systematic Review of Indicators for Evaluating the Effectiveness of Digital Public Services'
+    en: 'A Systematic Review of Indicators for Evaluating the Effectiveness of Digital Public Services'
+  summary:
+    pt: ''
+    en: ''
+  book_title: ''
+  volume: '11'
+  doi_isbn: 10.3390/info11100472
+  journal_event: Information
+  location: ''
+  pages: '472'
+  publisher: MDPI
+  tags:
+  - digital_transformation
+  - ricardo_ajax
+  type: article
+  program: ''
+  advisors: []
+  url: https://doi.org/10.3390/info11100472
+  year: 2020
+
+- authors:
+  - Hugo Ferreira Martins
+  - Antônio Carvalho de Oliveira Junior
+  - Edna Dias Canedo
+  - Ricardo Ajax Dias Kosloski
+  - Roberto Ávila Paldês
+  - Edgard Costa Oliveira
+  title:
+    pt: 'Design Thinking: Challenges for Software Requirements Elicitation'
+    en: 'Design Thinking: Challenges for Software Requirements Elicitation'
+  summary:
+    pt: ''
+    en: ''
+  book_title: ''
+  volume: '10'
+  doi_isbn: 10.3390/info10120371
+  journal_event: Information
+  location: ''
+  pages: '371'
+  publisher: MDPI
+  tags:
+  - software_requirements
+  - digital_transformation
+  - ricardo_ajax
+  type: article
+  program: ''
+  advisors: []
+  url: https://doi.org/10.3390/info10120371
+  year: 2019
+
+- authors:
+  - Angélica Toffano Seidel Calazans
+  - Roberto Ávila Paldês
+  - Edna Dias Canedo
+  - Eloisa Toffano Seidel Masson
+  - Fernando de Albuquerque Guimarães
+  - Kiane Mabel Fialho Rezende
+  - Emeli Braosi
+  - Ricardo Ajax Dias Kosloski
+  title:
+    pt: 'Quality Requirements: Analysis of Utilization in the Systems of a Financial Institution'
+    en: 'Quality Requirements: Analysis of Utilization in the Systems of a Financial Institution'
+  summary:
+    pt: ''
+    en: ''
+  book_title: ''
+  volume: ''
+  doi_isbn: 10.1109/ESEM.2019.8870151
+  journal_event: '2019 ACM/IEEE International Symposium on Empirical Software Engineering and Measurement (ESEM)'
+  location: Porto de Galinhas, Recife, Brasil
+  pages: 1-6
+  publisher: IEEE
+  tags:
+  - software_requirements
+  - software_quality
+  - ricardo_ajax
+  type: conference
+  program: ''
+  advisors: []
+  url: https://doi.org/10.1109/ESEM.2019.8870151
+  year: 2019
+
+- authors:
+  - Thatiany Lima de Sousa
+  - Elaine Venson
+  - Rejane Maria da Costa Figueiredo
+  - Ricardo Ajax Dias Kosloski
+  - Luiz Carlos Miyadaira Ribeiro Júnior
+  title:
+    pt: 'Using Scrum in Outsourced Government Projects: An Action Research'
+    en: 'Using Scrum in Outsourced Government Projects: An Action Research'
+  summary:
+    pt: ''
+    en: ''
+  book_title: ''
+  volume: ''
+  doi_isbn: 10.1109/HICSS.2016.672
+  journal_event: '49th Hawaii International Conference on System Sciences (HICSS 2016)'
+  location: Koloa, HI, USA
+  pages: 5447-5456
+  publisher: IEEE Computer Society
+  tags:
+  - digital_transformation
+  - software_quality
+  - ricardo_ajax
+  type: conference
+  program: ''
+  advisors: []
+  url: https://doi.org/10.1109/HICSS.2016.672
+  year: 2016
+
+- authors:
+  - Karine Santos Valença
+  - Edna Dias Canedo
+  - Ricardo Ajax Dias Kosloski
+  title:
+    pt: 'Metamodeling applied to a measurement system'
+    en: 'Metamodeling applied to a measurement system'
+  summary:
+    pt: ''
+    en: ''
+  book_title: ''
+  volume: ''
+  doi_isbn: ''
+  journal_event: '11th Iberian Conference on Information Systems and Technologies (CISTI)'
+  location: Gran Canaria, Spain
+  pages: '1'
+  publisher: ''
+  tags:
+  - software_quality
+  - ricardo_ajax
+  type: conference
+  program: ''
+  advisors: []
+  url: ''
+  year: 2016
+
+- authors:
+  - Thatiany Lima de Sousa
+  - Elaine Venson
+  - Rejane Maria da Costa Figueiredo
+  - Ricardo Ajax Dias Kosloski
+  - Luiz Carlos Miyadaira Ribeiro Júnior
+  title:
+    pt: 'A Aplicação do Framework Ágil Scrum em um Processo de Gestão de Projetos de Desenvolvimento de Software por Terceiros em um Órgão Público Federal Brasileiro'
+    en: 'Application of the Scrum Agile Framework to the Management Process of Software Development Outsourcing in a Brazilian Government Agency'
+  summary:
+    pt: ''
+    en: ''
+  book_title: ''
+  volume: ''
+  doi_isbn: ''
+  journal_event: '12th International Conference on Information Systems and Technology Management (CONTECSI)'
+  location: São Paulo, SP, Brasil
+  pages: ''
+  publisher: ''
+  tags:
+  - digital_transformation
+  - software_quality
+  - ricardo_ajax
+  type: conference
+  program: ''
+  advisors: []
+  url: https://www.tecsi.org/contecsi/index.php/contecsi/12CONTECSI/search/titles
+  year: 2015
+
+- authors:
+  - Thatiany Lima de Sousa
+  - Rejane Maria da Costa Figueiredo
+  - Elaine Venson
+  - Ricardo Ajax Dias Kosloski
+  title:
+    pt: 'Experiência no Projeto Framework de Soluções de TI'
+    en: 'Experience in the IT Solutions Framework Project'
+  summary:
+    pt: ''
+    en: ''
+  book_title: ''
+  volume: '2'
+  doi_isbn: ''
+  journal_event: 'CBSoft - VII Fórum de Educação em Engenharia de Software (FEES)'
+  location: Maceió, AL, Brasil
+  pages: 90-93
+  publisher: ''
+  tags:
+  - digital_transformation
+  - software_quality
+  - ricardo_ajax
+  type: conference
+  program: ''
+  advisors: []
+  url: ''
+  year: 2014
+
+- authors:
+  - Angélica Toffano Seidel Calazans
+  - Ricardo Ajax Dias Kosloski
+  - Luiz Carlos Miyadaira Ribeiro Júnior
+  title:
+    pt: 'Proposal for a measurement model for software tests with a focus on the management of outsourced services'
+    en: 'Proposal for a measurement model for software tests with a focus on the management of outsourced services'
+  summary:
+    pt: ''
+    en: ''
+  book_title: ''
+  volume: '9'
+  doi_isbn: 10.4301/S1807-17752012000200004
+  journal_event: Journal of Information Systems and Technology Management
+  location: ''
+  pages: 265-284
+  publisher: ''
+  tags:
+  - verification_validation_testing
+  - software_quality
+  - ricardo_ajax
+  type: article
+  program: ''
+  advisors: []
+  url: https://revistas.usp.br/jistem/pt_BR/article/view/45598
+  year: 2012
+
+- authors:
+  - Angélica Toffano Seidel Calazans
+  - Ricardo Ajax Dias Kosloski
+  title:
+    pt: 'O gerenciamento da alteração de escopo na contratação externa de serviços de desenvolvimento/manutenção de software'
+    en: 'Scope change management in external contracting of software development and maintenance services'
+  summary:
+    pt: ''
+    en: ''
+  book_title: 'Proceedings of ASSE 2012 Argentine Symposium on Software Engineering'
+  volume: ''
+  doi_isbn: ''
+  journal_event: 'XIII Argentine Symposium on Software Engineering (ASSE 2012)'
+  location: La Plata, Argentina
+  pages: 75-90
+  publisher: Sociedad Argentina de Informática e Investigación Operativa
+  tags:
+  - software_requirements
+  - software_quality
+  - ricardo_ajax
+  type: conference
+  program: ''
+  advisors: []
+  url: https://sedici.unlp.edu.ar/handle/10915/123882
+  year: 2012
+
+- authors:
+  - Ricardo Ajax Dias Kosloski
+  - Káthia Marçal de Oliveira
+  title:
+    pt: 'Melhoria Contínua de Estimativa de Esforço para o Desenvolvimento de Software'
+    en: 'Continuous improvement of effort estimation for software development'
+  summary:
+    pt: ''
+    en: ''
+  book_title: ''
+  volume: ''
+  doi_isbn: 10.5753/sbqs.2006.15628
+  journal_event: '5th Brazilian Symposium on Software Quality (SBQS 2006)'
+  location: Vila Velha, ES, Brasil
+  pages: 409-423
+  publisher: SBC
+  tags:
+  - software_quality
+  - ricardo_ajax
+  type: conference
+  program: ''
+  advisors: []
+  url: https://doi.org/10.5753/sbqs.2006.15628
+  year: 2006
+
+- authors:
+  - Ricardo Ajax Dias Kosloski
+  - Káthia Marçal de Oliveira
+  title:
+    pt: 'An Experience Factory to Improve Software Development Effort Estimates'
+    en: 'An Experience Factory to Improve Software Development Effort Estimates'
+  summary:
+    pt: ''
+    en: ''
+  book_title: 'Product Focused Software Process Improvement'
+  volume: '3547'
+  doi_isbn: 10.1007/11497455_43
+  journal_event: '6th International Conference on Product Focused Software Process Improvement (PROFES 2005)'
+  location: Oulu, Finland
+  pages: 560-573
+  publisher: Springer
+  tags:
+  - software_quality
+  - ricardo_ajax
+  type: conference
+  program: ''
+  advisors: []
+  url: https://doi.org/10.1007/11497455_43
+  year: 2005
+
+- authors:
+  - Ricardo Ajax Dias Kosloski
+  - Káthia Marçal de Oliveira
+  title:
+    pt: 'Melhoria Contínua de Estimativa de Esforço para o Desenvolvimento de Software'
+    en: 'Continuous improvement of effort estimation for software development'
+  summary:
+    pt: ''
+    en: ''
+  book_title: ''
+  volume: ''
+  doi_isbn: 10.5753/sbqs.2005.16156
+  journal_event: '4th Brazilian Symposium on Software Quality (SBQS 2005)'
+  location: Porto Alegre, RS, Brasil
+  pages: 87-101
+  publisher: SBC
+  tags:
+  - software_quality
+  - ricardo_ajax
+  type: conference
+  program: ''
+  advisors: []
+  url: https://doi.org/10.5753/sbqs.2005.16156
+  year: 2005
 
 - authors:
   - Sergio Antônio Andrade de Freitas

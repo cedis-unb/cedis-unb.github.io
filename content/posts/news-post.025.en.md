@@ -1,6 +1,6 @@
 ---
 title: "CEDIS students' thesis gives rise to Git Ranking, a gamified application for agile teams on GitHub"
-date: 2025-12-01T09:00:00-03:00
+date: 2026-07-14T09:00:00-03:00
 draft: false
 weight: 500
 language: en
@@ -13,11 +13,12 @@ categories:
 - News
 tags:
 - News
+- defesa
 - gamification
 - active_learning
 ---
 
-Brasília, December 1, 2025
+Brasília, July 14, 2026
 
 **Ana Beatriz Norberto da Silva and Beatriz Vieira Nascimento defended the bachelor's thesis that gave rise to Git Ranking, a gamified application for managing and motivating agile teams integrated with GitHub.**
 
