@@ -52,12 +52,6 @@ nav_next: true
 
 ## {{< i18n "people_current_projects" >}}
 {{< postsByCategoriesTags section="projects" categories="project,cristiane_ramos" notags="inactive,closed" >}}
-- Estudos para gamificação da Plataforma de Popularização e Divulgação da Ciência e Tecnologia (2023-2024).
-- Transformação Digital de serviços públicos do Governo Brasileiro (2021-2022).
-- Automação de Serviços Públicos no âmbito da Transformação dos Serviços, em parceria entre UnB e Ministério do Planejamento (2017-2020).
-- Aprimoramento do Framework de Soluções de Tecnologia da Informação para o Ministério das Comunicações (2017).
-- Programa Aprendizagem para o Terceiro Milênio - A3M (2021-2024).
-- Métricas de Software para apoio à gestão em empresas (2002-2005).
 
 ## {{< i18n "people_supervisory_experience" >}}
 ### {{< i18n "people_current_supervisions" >}}
@@ -93,9 +87,5 @@ nav_next: true
     </div>
 </div>
 
-## {{< i18n "people_contact" >}}
-- {{< i18n "people_contact_professional" >}}: Universidade de Brasília, Faculdade de Ciências e Tecnologias em Engenharia (FCTE), Campus Gama, Área Especial de Indústria Projeção A, Setor Leste (Gama), Brasília - DF, Brasil. CEP 72.444-240.
-- Site institucional: [FCTE/UnB](https://fcte.unb.br/)
-- Telefone: (61) 3484-3443
 
 {{< backToTopBtn target="top" >}}

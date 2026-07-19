@@ -4,17 +4,31 @@ projects:
     name: 
       en: "Project DFCris"
       pt: "Projeto DFCris"
+    status: closed
+    start_date: 2024-02-14
+    end_date: 2026-02-13
     researchers:
       - sergio_freitas
       - andre_lanna
+    students:
+      - andre_silva
+      - milena_silva
+      - renan_batista
 
   - id: project_cc
     name: 
       en: "Project Canal Ciência"
       pt: "Projeto Canal Ciência"
+    status: closed
+    start_date: 2023-01-01
+    end_date: 2024-12-31
     researchers: 
       - sergio_freitas
       - cristiane_ramos
+    students:
+      - mylena_faria
+      - marcus_martins
+      - wildemberg_sales
 
   - id: project_gsd
     name: 
@@ -27,6 +41,9 @@ projects:
     name: 
       en: "Project Laguna"
       pt: "Projeto Laguna"
+    status: closed
+    start_date: 2022-01-01
+    end_date: 2025-12-31
     researchers: 
       - daniel_sundfeld
 
@@ -34,6 +51,9 @@ projects:
     name: 
       en: "Project Digital Transformation"
       pt: "Projeto Transformação Digital"
+    status: closed
+    start_date: 2020-01-01
+    end_date: 2023-12-31
     researchers: 
       - george_marsicano
 
@@ -55,8 +75,16 @@ projects:
     name: 
       en: "Super-R"
       pt: "Super-R"
+    status: closed
+    start_date: 2023-01-01
+    end_date: 2024-12-31
     researchers:
       - george_marsicano
+    students:
+      - Brenno Oliveira Silva
+      - Iago Ribeiro
+      - Paulo Vitor Silva Abi Acl
+      - Victor Yukio
 
   - id: project_software_bem
     name: 
@@ -81,4 +109,187 @@ projects:
     researchers:
       - sergio_freitas
       - cristiane_ramos
-      
+
+  - id: project_lfs
+    name:
+      en: "Software Factory Laboratory"
+      pt: "Laboratório Fábrica de Software"
+    status: closed
+    start_date: 2018-01-01
+    researchers:
+      - andre_lanna
+
+  - id: project_td_2021
+    name:
+      en: "Digital Transformation of Brazilian Government Public Services"
+      pt: "Transformação Digital de serviços públicos do Governo Brasileiro"
+    status: closed
+    start_date: 2021-01-01
+    end_date: 2022-12-31
+    researchers:
+      - cristiane_ramos
+
+  - id: project_automacao_servicos
+    name:
+      en: "Public Service Automation within Service Transformation"
+      pt: "Automação de Serviços Públicos no âmbito da Transformação dos Serviços"
+    status: closed
+    start_date: 2017-01-01
+    end_date: 2020-12-31
+    researchers:
+      - cristiane_ramos
+      - ricardo_ajax
+
+  - id: project_framework_mcom
+    name:
+      en: "IT Solutions Framework for the Ministry of Communications"
+      pt: "Framework de Soluções de TI para o Ministério das Comunicações"
+    status: closed
+    start_date: 2015-01-01
+    end_date: 2018-12-31
+    researchers:
+      - cristiane_ramos
+      - ricardo_ajax
+
+  - id: project_a3m
+    name:
+      en: "Learning for the Third Millennium Program - A3M"
+      pt: "Programa Aprendizagem para o Terceiro Milênio - A3M"
+    status: closed
+    start_date: 2021-01-01
+    end_date: 2024-12-31
+    researchers:
+      - cristiane_ramos
+
+  - id: project_metricas_software
+    name:
+      en: "Software Metrics to Support Management in Companies"
+      pt: "Métricas de Software para apoio à gestão em empresas"
+    status: closed
+    start_date: 2002-01-01
+    end_date: 2005-12-31
+    researchers:
+      - cristiane_ramos
+
+  - id: project_mcti_gestao
+    name:
+      en: "Informational Management Support System for MCTI"
+      pt: "Sistema de apoio à gestão informacional do MCTI"
+    status: active
+    start_date: 2026-01-01
+    researchers:
+      - daniel_sundfeld
+
+  - id: project_servicos_pi
+    name:
+      en: "Serviços PI"
+      pt: "Serviços PI"
+    status: active
+    start_date: 2025-01-01
+    researchers:
+      - daniel_sundfeld
+
+  - id: project_nimbus
+    name:
+      en: "Nimbus"
+      pt: "Nimbus"
+    status: closed
+    start_date: 2023-01-01
+    end_date: 2024-12-31
+    researchers:
+      - daniel_sundfeld
+
+  - id: project_cloud_iot
+    name:
+      en: "Cloud, IoT and Distributed Systems"
+      pt: "Cloud, IoT e Sistemas Distribuídos"
+    status: closed
+    start_date: 2020-01-01
+    end_date: 2022-12-31
+    researchers:
+      - daniel_sundfeld
+
+  - id: project_biocloud
+    name:
+      en: "BioCloud"
+      pt: "BioCloud"
+    status: closed
+    start_date: 2020-01-01
+    end_date: 2025-12-31
+    researchers:
+      - daniel_sundfeld
+
+  - id: project_human_factors_cybersecurity
+    name:
+      en: "Human Factors in Cybersecurity"
+      pt: "Fatores humanos na segurança cibernética"
+    status: active
+    start_date: 2022-01-01
+    researchers:
+      - fabiana_mendes
+
+  - id: project_app_parkinson
+    name:
+      en: "App on Parkinson's Disease"
+      pt: "Aplicativo sobre Doença de Parkinson"
+    status: active
+    start_date: 2020-01-01
+    researchers:
+      - fabiana_mendes
+
+  - id: project_spux
+    name:
+      en: "Collaborative Digital Transformation Methodology for SPU"
+      pt: "Metodologia Colaborativa de Transformação Digital para a SPU"
+    status: active
+    start_date: 2025-01-01
+    researchers:
+      - george_marsicano
+
+  - id: project_melhoria_servico_publico
+    name:
+      en: "Improving Digital Public Service for Citizens"
+      pt: "Melhoria do Serviço Público Digital para o Cidadão"
+    status: closed
+    start_date: 2023-01-01
+    end_date: 2025-12-31
+    researchers:
+      - george_marsicano
+
+  - id: project_hase
+    name:
+      en: "HASE - Human Aspects in Software Engineering"
+      pt: "HASE - Human Aspects in Software Engineering"
+    status: active
+    start_date: 2016-01-01
+    researchers:
+      - george_marsicano
+
+  - id: project_doarti
+    name:
+      en: "Doarti"
+      pt: "Doarti"
+    status: active
+    start_date: 2020-01-01
+    researchers:
+      - george_marsicano
+
+  - id: project_capacidade_produtiva
+    name:
+      en: "Productive Capacity Sizing"
+      pt: "Dimensionamento da Capacidade Produtiva"
+    status: closed
+    start_date: 2017-01-01
+    end_date: 2019-12-31
+    researchers:
+      - ricardo_ajax
+
+  - id: project_conab_desempenho
+    name:
+      en: "CONAB Individual Performance Management Model"
+      pt: "Modelo de Gestão do Desempenho Individual da CONAB"
+    status: closed
+    start_date: 2016-01-01
+    end_date: 2017-12-31
+    researchers:
+      - ricardo_ajax

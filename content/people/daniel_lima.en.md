@@ -49,12 +49,6 @@ nav_next: true
 
 ## {{< i18n "people_current_projects" >}}
 {{< postsByCategoriesTags section="projects" categories="project,daniel_sundfeld" notags="inactive,closed" >}}
-- Informational management support system for the Ministry of Science, Technology and Innovation - MCTI (2026-Present).
-- Serviços PI: innovation and efficiency in the retrieval of intellectual property information at INPI (2025-Present).
-- Laguna - Open Informational Infrastructure and Data Lake (2022-2025).
-- Nimbus: a serverless cloud architecture for automatic code grading (2023-2024).
-- Cloud, IoT and Distributed Systems (2020-2022).
-- BioCloud - A Framework for the Execution of Biotechnology Applications on Several Platforms of the Amazon AWS Cloud (2020-2025).
 
 ## {{< i18n "people_supervisory_experience" >}}
 ### {{< i18n "people_current_supervisions" >}}
@@ -89,9 +83,5 @@ nav_next: true
     </div>
 </div>
 
-## {{< i18n "people_contact" >}}
-- {{< i18n "people_contact_professional" >}}: University of Brasília, Faculty of Sciences and Technologies in Engineering (FCTE), Gama Campus, Área Especial de Indústria Projeção A, Setor Leste (Gama), Brasília - DF, Brazil. Postal code 72.444-240.
-- Institutional website: [FCTE/UnB](https://fcte.unb.br/)
-- Phone: (61) 3107-8901
 
 {{< backToTopBtn target="top" >}}

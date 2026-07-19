@@ -4,6 +4,9 @@ title: "Laguna Project"
 date: 2024-02-14T02:59:29-03:00
 weight: 10
 language: en
+status: closed
+start_date: 2022-01-01
+end_date: 2025-12-31
 featured_image: "../assets/images/featured/projeto_Laguna.png"
 summary: This project aims to extend the massive processing of a data lake using a cloud architecture, utilizing Amazon Web Services (AWS) as the provider.
 authorimage: ../assets/images/global/author.webp
@@ -14,6 +17,7 @@ categories:
 tags:
 - hpc
 - project_laguna
+- closed
 ---
 
 This project aims to extend the massive processing of a data lake using a cloud architecture, utilizing Amazon Web Services (AWS) as the provider. To achieve this, storage and processing will be migrated from the local infrastructure to the cloud, ensuring elasticity and scalability to securely and reliably store a large amount of data.

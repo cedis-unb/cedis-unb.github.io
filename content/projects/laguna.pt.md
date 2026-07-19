@@ -4,6 +4,9 @@ title: "Projeto Laguna"
 date: 2024-02-14T02:59:29-03:00
 weight: 10
 language: pt
+status: closed
+start_date: 2022-01-01
+end_date: 2025-12-31
 featured_image: "../assets/images/featured/projeto_Laguna.png"
 summary: Este projeto visa estender o processamento massivo de um lago de dados utilizando uma arquitetura em nuvem, utilizando a Amazon Web Services (AWS) como provedor.
 authorimage: ../assets/images/global/author.webp
@@ -14,6 +17,7 @@ categories:
 tags:
 - hpc
 - project_laguna
+- closed
 ---
 
 Este projeto visa estender o processamento massivo de um lago de dados utilizando uma arquitetura em nuvem, utilizando a Amazon Web Services (AWS) como provedor. Para isso, o armazenamento e o processamento serão migrados da infraestrutura local para a nuvem, garantindo elasticidade e escalabilidade para armazenar uma grande quantidade de dados de maneira segura e confiável. 

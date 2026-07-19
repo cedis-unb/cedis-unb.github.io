@@ -48,10 +48,6 @@ nav_next: true
 
 ## {{< i18n "people_current_projects" >}}
 {{< postsByCategoriesTags section="projects" categories="project,ricardo_ajax" notags="inactive,closed" >}}
-- Research, Development, and Innovation Project for Public Service Automation within Service Transformation (2017-2020).
-- Research Project on Productive Capacity Sizing - Mathematical Modeling, Ministry of Planning (2017-2019).
-- Research and Development of the Individual Performance Management Model of the National Supply Company - CONAB (2016-2017).
-- IT Solutions Framework for the Ministry of Communications (2015-2018).
 
 ## {{< i18n "people_supervisory_experience" >}}
 ### {{< i18n "people_current_supervisions" >}}
@@ -86,9 +82,5 @@ nav_next: true
     </div>
 </div>
 
-## {{< i18n "people_contact" >}}
-- {{< i18n "people_contact_professional" >}}: University of Brasília, Faculty of Sciences and Technologies in Engineering (FCTE), Gama Campus, Área Especial de Indústria Projeção A, Setor Leste (Gama), Brasília - DF, Brazil. Postal code 72.444-240.
-- Institutional website: [FCTE/UnB](https://fcte.unb.br/)
-- Phone: (61) 3107-8901
 
 {{< backToTopBtn target="top" >}}
