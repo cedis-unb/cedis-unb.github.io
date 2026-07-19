@@ -19,6 +19,7 @@
 {{ $navTitle := i18n "ui_on_this_page_2" }}
 {{ $summaryTitle := i18n "ui_overview_2" }}
 {{ $activeSupervisionsLabel := i18n "ui_active_supervisions" }}
+{{ $currentSupervisionsLabel := i18n "people_current_supervisions" }}
 {{ $formerSupervisionsLabel := i18n "people_former_supervisions" }}
 {{ $publicationsLabel := i18n "ui_publications" }}
 {{ $projectsLabel := i18n "ui_current_projects" }}
@@ -130,6 +131,9 @@
 {{ end }}
 
 {{ if and $isResearcher (or (in $content `id="orientações-atuais"`) (in $content `id="current-supervisions"`)) (in $content `id="previous-collaborators"`) (not (in $content `id="current-supervisions-section"`)) }}
+  {{ $currentSupervisionCountBadge := printf `<span class="ml-2 inline-flex items-center rounded-full border border-primary-200 bg-primary-50 px-2.5 py-1 text-sm font-black text-primary-700 dark:border-primary-400/25 dark:bg-primary-500/10 dark:text-primary-100">%d</span>` $activeSupervisions }}
+  {{ $currentSupervisionHeading := printf `%s %s` $currentSupervisionsLabel $currentSupervisionCountBadge }}
+  {{ $content = replaceRE `(?s)(<h3 id="(?:orientações-atuais|current-supervisions)"[^>]*>).*?(</h3>)` (printf `${1}%s${2}` $currentSupervisionHeading) $content 1 }}
   {{ $content = replaceRE `(?s)(<h3 id="(?:orientações-atuais|current-supervisions)"[^>]*>.*?</h3>)(.*?)(<div id="previous-collaborators")` `<div id="current-supervisions-section">${1}<div class="current-supervisions-scroll">${2}</div></div>${3}` $content 1 }}
 {{ end }}
 
