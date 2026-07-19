@@ -78,8 +78,7 @@ nav_next: true
 </div>
 
 ## {{< i18n "people_contact" >}}
-- {{< i18n "people_contact_professional" >}}: University of Brasília, Gama Campus (FCTE), Brasília - DF, Brazil.
-- Lattes: [CV Lattes](http://lattes.cnpq.br/5685720614944773)
-- Orcid ID: [Orcid Profile](https://orcid.org/0000-0003-4200-6569)
+- {{< i18n "people_contact_professional" >}}: University of Brasília, Faculty of Sciences and Technologies in Engineering (FCTE), Gama Campus, Área Especial de Indústria Projeção A, Setor Leste (Gama), Brasília - DF, Brazil. Postal code 72.444-240.
+- Institutional homepage: [FCTE/UnB](https://fcte.unb.br/)
 
 {{< backToTopBtn target="top" >}}

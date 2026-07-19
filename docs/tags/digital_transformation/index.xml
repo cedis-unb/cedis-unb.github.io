@@ -86,6 +86,13 @@
       <description>Sandro Leite Furtado defended at UnB’s Applied Computing graduate program a dissertation identifying and evaluating additional security factors for the gov.br identity, implementing and testing Risk-Based Authentication (RBA) as a complementary layer.</description>
     </item>
     <item>
+      <title>Rooms, timeslots, lecturers: a dissertation proposes an adaptive model to schedule academic resources at UnB</title>
+      <link>https://cedis.unb.br/posts/defesa-eber-moreira-2024/</link>
+      <pubDate>Tue, 17 Dec 2024 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/posts/defesa-eber-moreira-2024/</guid>
+      <description>Éber Junio Borges Moreira defended at UnB’s PPCA a dissertation tackling academic resource scheduling in higher education institutions, with a case study on UnB itself.</description>
+    </item>
+    <item>
       <title>Labor law in your pocket: a PWA brings legal flowcharts to mobile devices</title>
       <link>https://cedis.unb.br/posts/defesa-joao-machado-2024/</link>
       <pubDate>Mon, 28 Oct 2024 00:00:00 -0300</pubDate>
@@ -175,6 +182,13 @@
       <pubDate>Thu, 18 Nov 2021 00:00:00 -0300</pubDate>
       <guid>https://cedis.unb.br/posts/defesa-filipe-silva-2021/</guid>
       <description>Filipe Toyoshima Silva defended at FCTE/UnB an undergraduate thesis mapping how early-stage startups handle software maintenance — a phase dominated by scarce resources and high change volume.</description>
+    </item>
+    <item>
+      <title>UnB&#39;s Service Bus gains monitoring: a dissertation instruments the university&#39;s digital backbone</title>
+      <link>https://cedis.unb.br/posts/defesa-felipe-evangelista-2020/</link>
+      <pubDate>Tue, 11 Feb 2020 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/posts/defesa-felipe-evangelista-2020/</guid>
+      <description>Felipe Evangelista dos Santos defended at UnB’s PPCA a dissertation integrating monitoring tools into UnB’s Service Bus — critical infrastructure for communication between academic systems.</description>
     </item>
     <item>
       <title>Who wrote that commit? An undergraduate thesis computes authorship rates inside Git projects</title>

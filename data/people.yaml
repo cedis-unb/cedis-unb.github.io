@@ -3257,3 +3257,201 @@ people:
   - security
   - software_architecture
   year: 2025
+- name: Arthur Rocha Temporim de Lacerda
+  categories:
+  - people
+  - master_student
+  title:
+    pt: "Gamified Chatbot Management Process: A way to build gamified chatbots"
+    en: "Gamified Chatbot Management Process: A way to build gamified chatbots"
+  program: curso_ppca
+  advisors:
+  - sergio_freitas
+  tags:
+  - inactive
+  - gamification
+  - ai
+  - nlp
+  year: 2024
+- name: Éber Junio Borges Moreira
+  categories:
+  - people
+  - master_student
+  title:
+    pt: "Agendamento de recursos acadêmicos em Instituições de Ensino Superior: Estudo de caso na Universidade de Brasília"
+    en: "Scheduling of academic resources in Higher Education Institutions: a case study at the University of Brasília"
+  program: curso_ppca
+  advisors:
+  - sergio_freitas
+  tags:
+  - inactive
+  - digital_transformation
+  - software_architecture
+  year: 2024
+- name: Públio Pastrolin Cavalcante
+  categories:
+  - people
+  - master_student
+  title:
+    pt: "Avaliação da mudança na qualidade dos relatórios com a aplicação da gamificação em atividades de inteligência policial"
+    en: "Evaluating changes in report quality with the application of gamification in police intelligence activities"
+  program: curso_ppca
+  advisors:
+  - sergio_freitas
+  tags:
+  - inactive
+  - gamification
+  - software_quality
+  year: 2023
+- name: Edmilson Cosme da Silva
+  categories:
+  - people
+  - master_student
+  title:
+    pt: "Previsão da evasão acadêmica no ensino superior: o caso dos cursos de graduação presencial da Universidade de Brasília"
+    en: "Predicting academic dropout in higher education: the case of on-campus undergraduate programs at the University of Brasília"
+  program: curso_ppca
+  advisors:
+  - sergio_freitas
+  tags:
+  - inactive
+  - learning_analytics
+  - education
+  - machine_learning
+  year: 2023
+- name: Ana Cláudia Alves Mendes Araújo
+  categories:
+  - people
+  - master_student
+  title:
+    pt: "REQGAME - Elicitação de Requisitos com Gamificação: um experimento em projetos de software em órgão público federal"
+    en: "REQGAME - Requirements Elicitation with Gamification: an experiment in software projects at a federal public agency"
+  program: curso_ppca
+  advisors:
+  - sergio_freitas
+  tags:
+  - inactive
+  - gamification
+  - software_requirements
+  year: 2021
+- name: Felipe Evangelista dos Santos
+  categories:
+  - people
+  - master_student
+  title:
+    pt: "Implementação da integração do Barramento de Serviços da UnB com ferramentas de monitoramento"
+    en: "Implementation of the integration of UnB's Service Bus with monitoring tools"
+  program: curso_ppca
+  advisors:
+  - sergio_freitas
+  tags:
+  - inactive
+  - software_architecture
+  - digital_transformation
+  year: 2020
+- name: James Taylor Faria Chaves
+  categories:
+  - people
+  - master_student
+  title:
+    pt: "Service-Oriented Architecture (SOA), Agile Development Methods and Quality Assurance (QA): A case study"
+    en: "Service-Oriented Architecture (SOA), Agile Development Methods and Quality Assurance (QA): A case study"
+  program: curso_ppca
+  advisors:
+  - sergio_freitas
+  tags:
+  - inactive
+  - software_architecture
+  - software_quality
+  year: 2019
+- name: Débora Zupeli Bossois
+  categories:
+  - people
+  - master_student
+  title:
+    pt: "Metodologia de categorização de textos a partir de documentos não rotulados utilizando um processo de resolução de anáforas"
+    en: "Text categorization methodology from unlabeled documents using an anaphora resolution process"
+  program: curso_ppgi
+  advisors:
+  - sergio_freitas
+  tags:
+  - inactive
+  - nlp
+  - ai
+  - machine_learning
+  year: 2010
+- name: Luana Vieira Morellato
+  categories:
+  - people
+  - master_student
+  title:
+    pt: "Metodologia Computacional para Identificação de Sintagmas Nominais da Língua Portuguesa"
+    en: "Computational Methodology for Identifying Nominal Syntagmas in Portuguese"
+  program: curso_ppgi
+  advisors:
+  - sergio_freitas
+  tags:
+  - inactive
+  - nlp
+  - ai
+  year: 2010
+- name: Francisco Santiago do Carmo Pereira
+  categories:
+  - people
+  - master_student
+  title:
+    pt: "Uma metodologia para a utilização do processamento de Linguagem Natural na busca de informações em documentos digitais"
+    en: "A methodology for the use of natural language processing in searching information in digital documents"
+  program: curso_ppgi
+  advisors:
+  - sergio_freitas
+  tags:
+  - inactive
+  - nlp
+  - ai
+  year: 2009
+- name: Hilário Seibel Júnior
+  categories:
+  - people
+  - master_student
+  title:
+    pt: "Recuperação de informações relevantes em documentos digitais baseada na resolução de anáforas"
+    en: "Retrieval of relevant information in digital documents based on anaphora resolution"
+  program: curso_ppgi
+  advisors:
+  - sergio_freitas
+  tags:
+  - inactive
+  - nlp
+  - ai
+  year: 2007
+- name: Eduardo Zambon
+  categories:
+  - people
+  - master_student
+  title:
+    pt: "Otimização de índices de confiabilidade em redes de distribuição de energia elétrica"
+    en: "Optimization of reliability indices in electric power distribution networks"
+  program: curso_ppgi
+  advisors:
+  - berilhes_garcia
+  - sergio_freitas
+  tags:
+  - inactive
+  - software_architecture
+  year: 2006
+- name: Ayrton Monteiro Cristo Filho
+  categories:
+  - people
+  - master_student
+  title:
+    pt: "Interpretação computacional do futuro do pretérito simples em narrativas para o Português do Brasil"
+    en: "Computational interpretation of the simple future perfect in narratives for Brazilian Portuguese"
+  program: curso_ppgi
+  advisors:
+  - sergio_freitas
+  tags:
+  - inactive
+  - nlp
+  - ai
+  year: 2004
