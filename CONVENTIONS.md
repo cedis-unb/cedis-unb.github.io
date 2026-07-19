@@ -430,19 +430,23 @@ Regras de layout:
   Listas diretas de "Perfil", "Formação", "Atividades",
   "Contribuições" e "Contato" devem ser tratadas visualmente como
   blocos editoriais/timeline pelo template e CSS.
-- Cada seção principal deve ter uma frase curta de contexto quando
-  renderizada no perfil do pesquisador, para orientar a leitura sem
-  depender de texto longo no Markdown.
+- Não inserir frases explicativas óbvias abaixo dos títulos de seção
+  dos perfis. O layout deve organizar a leitura sem repetir o que o
+  próprio título já comunica.
 - "Áreas de pesquisa" devem ser compactas; esconder descrições longas
   e imagens quando o contexto for a página do pesquisador.
-- "Projetos atuais" deve usar cards compactos com imagem, resumo curto
-  e chamada para abrir o projeto, não uma lista textual simples.
+- "Projetos atuais" deve seguir o mesmo padrão de produtos,
+  orientações e publicações: bloco colapsável, fechado por padrão,
+  contador à direita e lista rolável quando houver muitos itens.
 - "Produtos" deve seguir o mesmo padrão de orientações/publicações:
   bloco colapsável, contador à direita, lista rolável quando houver
   muitos itens.
 - "Orientações atuais", "Orientações anteriores", "Produtos" e
   "Publicações" começam fechados por padrão.
 - Contadores desses blocos ficam alinhados à direita do título.
+- O bloco lateral de contato deve ser um único cartão com linhas
+  internas para email, Lattes e ORCID; não usar cartões separados para
+  cada canal.
 - Se a contagem de qualquer indicador for **0**, não exibir o item nem
   o zero. Isso vale para cards laterais, resumo executivo, badges e
   blocos automáticos.
