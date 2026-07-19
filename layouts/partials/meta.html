@@ -1,4 +1,9 @@
-{{- $pageTitle := partial "translated-label.html" (dict "page" . "value" .Title) -}}
+{{- $pageTitle := .Title -}}
+{{- if ne .Kind "page" -}}
+    {{- $pageTitle = partial "translated-label.html" (dict "page" . "value" .Title) -}}
+{{- end -}}
+{{- $siteTitle := .Site.Title -}}
+{{- $documentTitle := cond .IsHome $siteTitle (printf "%s | %s" $pageTitle $siteTitle) -}}
 {{- /* Description fallback chain: page description → frontmatter summary → auto-generated summary → site default. Truncated to 160 chars for SEO. */ -}}
 {{- $description := "" -}}
 {{- with .Params.description -}}{{- $description = . -}}{{- end -}}
@@ -24,14 +29,12 @@
         {{- $ogImageAbs = . | absURL -}}
     {{- end -}}
 {{- end -}}
-<title itemprop="name">{{if .IsHome}} {{ $.Site.Params.description }} | {{ $pageTitle }}
-    {{else}} {{ $pageTitle }} | {{ .Site.Title }} {{end}}
-</title>
+<title itemprop="name">{{ $documentTitle }}</title>
 <meta name="description" content="{{ $description }}" />
-<meta property="og:title" content="{{ $pageTitle }} | {{ .Site.Title }}" />
-<meta name="twitter:title" content="{{ $pageTitle }} | {{ .Site.Title }}" />
-<meta itemprop="name" content="{{ $pageTitle }} | {{ .Site.Title }}" />
-<meta name="application-name" content="{{ $pageTitle }} | {{ .Site.Title }}" />
+<meta property="og:title" content="{{ $documentTitle }}" />
+<meta name="twitter:title" content="{{ $documentTitle }}" />
+<meta itemprop="name" content="{{ $documentTitle }}" />
+<meta name="application-name" content="{{ $siteTitle }}" />
 <meta property="og:description"
             content="{{ $description }}" />
 <meta property="og:site_name" content="{{ .Site.Title }}" />
