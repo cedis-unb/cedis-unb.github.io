@@ -88,10 +88,8 @@ nav_next: true
 </div>
 
 ## {{< i18n "people_contact" >}}
-- {{< i18n "people_contact_professional" >}}: Universidade de Brasília, Campus Gama, Área Especial de Indústria Projeção A, Prédio UED, Sala 21, Setor Leste (Gama), Brasília - DF, Brasil.
+- {{< i18n "people_contact_professional" >}}: Universidade de Brasília, Faculdade de Ciências e Tecnologias em Engenharia (FCTE), Campus Gama, Área Especial de Indústria Projeção A, Setor Leste (Gama), Brasília - DF, Brasil. CEP 72.444-240.
+- Homepage institucional: [FCTE/UnB](https://fcte.unb.br/)
 - Telefone: (61) 3107-8901
-- Homepage: [FCTE/UnB](https://fcte.unb.br/)
-- Lattes iD: [CV Lattes](http://lattes.cnpq.br/8309011123228244)
-- Orcid iD: [Orcid Profile](https://orcid.org/0000-0003-0156-0205)
 
 {{< backToTopBtn target="top" >}}

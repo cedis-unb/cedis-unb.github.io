@@ -1538,7 +1538,8 @@ The model was validated through a case study at the University of Brasília (UnB
   program: curso_ppca
   advisors:
   - sergio_freitas
-  url: 'http://repositorio2.unb.br/handle/10482/52048'
+  url: https://repositorio.unb.br/handle/10482/52048
+  defense_date: 2024-12-17
   year: 2024
 
 - authors:
@@ -1632,7 +1633,8 @@ administrative and operational activities of the Brazilian Army."
   program: curso_ppca
   advisors:
   - sergio_freitas
-  url: 'http://repositorio2.unb.br/handle/10482/52050'
+  url: https://repositorio.unb.br/handle/10482/52050
+  defense_date: 2024-05-28
   year: 2024
 
 - authors:
@@ -1760,7 +1762,8 @@ administrative and operational activities of the Brazilian Army."
   program: curso_ppca
   advisors:
   - sergio_freitas
-  url: http://repositorio2.unb.br/handle/10482/47829
+  url: https://repositorio.unb.br/handle/10482/47829
+  defense_date: 2023-07-03
   year: 2023
 - authors:
   - Públio Pastrolin Cavalcante
@@ -1817,7 +1820,8 @@ administrative and operational activities of the Brazilian Army."
   program: curso_ppca
   advisors:
   - sergio_freitas
-  url: 'http://repositorio2.unb.br/handle/10482/47822'
+  url: https://repositorio.unb.br/handle/10482/47822
+  defense_date: 2023-03-23
   year: 2023
 - authors:
   - Abner Filipe Cunha Ribeiro
@@ -3338,6 +3342,7 @@ administrative and operational activities of the Brazilian Army."
   advisors:
   - sergio_freitas
   url: ''
+  defense_date: 2021
   year: 2021
 - authors:
   - Taylor Rodrigues Lopes
@@ -3709,7 +3714,8 @@ administrative and operational activities of the Brazilian Army."
   program: curso_ppca
   advisors:
   - sergio_freitas
-  url: http://repositorio2.unb.br/jspui/handle/10482/38687
+  url: https://repositorio.unb.br/handle/10482/38687
+  defense_date: 2020-02-11
   year: 2020
 - authors:
   - Laércio Silva de Sousa Júnior
@@ -4035,7 +4041,8 @@ administrative and operational activities of the Brazilian Army."
   program: curso_ppca
   advisors:
   - sergio_freitas
-  url: http://repositorio2.unb.br/jspui/handle/10482/37835
+  url: https://repositorio.unb.br/handle/10482/37835
+  defense_date: 2019-07-17
   year: 2019
 - authors:
   - Bruno Contessotto Bragança Pinheiro
@@ -6506,7 +6513,33 @@ administrative and operational activities of the Brazilian Army."
   advisors:
   - sergio_freitas
   url: https://repositorio.ufes.br/handle/10/4220
+  defense_date: 2010
   year: 2010
+- authors:
+  - Eduardo Zambon
+  title:
+    pt: 'Otimização de índices de confiabilidade em redes de distribuição de energia elétrica'
+    en: 'Optimization of reliability indices in electric power distribution networks'
+  summary:
+    pt: ''
+    en: ''
+  book_title: ''
+  volume: ''
+  doi_isbn: ''
+  journal_event: ''
+  location: ''
+  pages: ''
+  publisher: Biblioteca Central da Universidade Federal do Espirito Santo
+  tags:
+  - software_architecture
+  type: dissertation
+  program: curso_ppgi
+  advisors:
+  - berilhes_garcia
+  - sergio_freitas
+  url: https://repositorio.ufes.br/handle/10/6352
+  defense_date: 2006-12-04
+  year: 2006
 - authors:
   - Luana Vieira Morellato
   title:
@@ -6576,6 +6609,7 @@ administrative and operational activities of the Brazilian Army."
   advisors:
   - sergio_freitas
   url: https://repositorio.ufes.br/handle/10/4217
+  defense_date: 2010
   year: 2010
 - authors:
   - Pereira, F. S. C.
@@ -6690,6 +6724,7 @@ administrative and operational activities of the Brazilian Army."
   advisors:
   - sergio_freitas
   url: https://repositorio.ufes.br/handle/10/6380
+  defense_date: 2009
   year: 2009
 - authors:
   - Seibel, Hilário
@@ -6817,6 +6852,7 @@ administrative and operational activities of the Brazilian Army."
   advisors:
   - sergio_freitas
   url: http://www.dominiopublico.gov.br/pesquisa/DetalheObraForm.do?select_action=&co_obra=104831
+  defense_date: 2007
   year: 2007
 - authors:
   - Barbosa, H. A.
@@ -6955,6 +6991,7 @@ administrative and operational activities of the Brazilian Army."
   - berilhes_garcia
   - sergio_freitas
   url: http://www.dominiopublico.gov.br/pesquisa/DetalheObraForm.do?select_action=&co_obra=104831
+  defense_date: 2004
   year: 2004
 - authors:
   - Cristo Filho, A. M.
