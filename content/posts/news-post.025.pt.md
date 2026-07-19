@@ -1,6 +1,6 @@
 ---
 title: "TCC de estudantes do CEDIS dá origem ao Git Ranking, aplicação gamificada para equipes ágeis no GitHub"
-date: 2025-12-01T09:00:00-03:00
+date: 2026-07-14T09:00:00-03:00
 draft: false
 weight: 500
 language: pt
@@ -13,11 +13,12 @@ categories:
 - News
 tags:
 - News
+- defesa
 - gamification
 - active_learning
 ---
 
-Brasília, 1 de dezembro de 2025
+Brasília, 14 de julho de 2026
 
 **Ana Beatriz Norberto da Silva e Beatriz Vieira Nascimento defenderam o trabalho de conclusão de curso que deu origem ao Git Ranking, aplicação gamificada de gestão e motivação de equipes ágeis integrada ao GitHub.**
 

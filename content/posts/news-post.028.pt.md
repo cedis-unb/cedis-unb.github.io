@@ -1,6 +1,6 @@
 ---
 title: "Artigo sobre instrumento diagnóstico do EduTrack é aceito no SBIE 2026"
-date: 2026-07-16T09:00:00-03:00
+date: 2026-07-10T09:00:00-03:00
 draft: false
 weight: 500
 language: pt
@@ -18,7 +18,7 @@ tags:
 - active_learning
 ---
 
-Brasília, 16 de julho de 2026
+Brasília, 10 de julho de 2026
 
 **O artigo _A Motivation-Aware Diagnostic Instrument for Personalized and Gamified Computing Education_ foi aceito no XXXVII Simpósio Brasileiro de Informática na Educação (SBIE 2026, submissão #27258).**
 
