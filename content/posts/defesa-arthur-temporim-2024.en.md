@@ -25,6 +25,8 @@ The work introduces the **GCMP — Gamified Chatbot Management Process**, orches
 
 By articulating {{< link-interno "/areas/gamification/" "gamification" >}} with {{< link-interno "/areas/ai_pln/" "AI and NLP" >}}, the author delivers not only a method but a reference teams can consult. The work anticipates the debate that gained volume in 2025 on integrating LLMs into conversational processes — GCMP does not depend on any specific language technology, but provides the backbone in which such technologies fit.
 
+The master's work also led to the paper [_Gamified Chatbot Management Process: A way to build gamified chatbots_](https://doi.org/10.1007/978-3-031-66428-1_2), presented at the 10th Intelligent Systems Conference in Amsterdam. That paper follows an earlier publication by Arthur during his undergraduate trajectory, [_Gamification in education: A methodology to identify student's profile_](https://doi.org/10.1109/FIE.2017.8190499), published at the IEEE Frontiers in Education Conference.
+
 The defense took place on May 28, 2024 in Brasília. The examining committee was chaired by the advisor, Prof. Dr. Sergio Antônio Andrade de Freitas (UnB), and composed of Prof. Dr. Giovanni Almeida Santos (UnB) and Prof. Dr. Charles Andryê Galvão Madeira (IMD/UFRN). Prof. Dr. Gladston Luiz da Silva, then PPCA program coordinator, also attended the session.
 
 The full text is available at the [UnB Institutional Repository](https://repositorio.unb.br/handle/10482/52050).

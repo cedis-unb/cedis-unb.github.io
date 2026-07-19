@@ -25,6 +25,8 @@ The defense took place in January 2025 in Brasília. The examining committee was
 
 By pairing {{< link-interno "/areas/software_architecture/" "software architecture" >}} with concrete usability-improvement practice in a state corporate system, the dissertation offers a replicable path for other systems that suffer from the same time-driven stiffening.
 
+Part of the results was also published in the paper [_Proposição de Melhoria de Usabilidade da Interação entre Usuário e Sistema Corporativo_](https://doi.org/10.5748/19CONTECSI/PSE/ESD/7019), presented at the 19th CONTECSI. The paper records the scientific version of the diagnosis and usability improvements applied to the corporate system.
+
 The full text — written in Portuguese — is available at the [UnB Institutional Repository](https://repositorio.unb.br/handle/10482/52669).
 
 ---

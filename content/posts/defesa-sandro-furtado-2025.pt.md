@@ -26,6 +26,8 @@ A defesa aconteceu em 18 de fevereiro de 2025 em Brasília. A banca examinadora 
 
 Ao articular {{< link-interno "/areas/security/" "cibersegurança" >}} com {{< link-interno "/areas/transformation/" "transformação digital" >}} do Estado brasileiro, a dissertação oferece base concreta para decisões arquiteturais que afetam diretamente milhões de cidadãos — precisamente onde a comunidade de segurança precisa levar sua pesquisa para gerar impacto.
 
+A agenda da dissertação também aparece no artigo [_Identification and Applicability of Additional Security Factors on the GOV.BR Digital Identity Platform_](https://doi.org/10.5748/19CONTECSI/PSE/GOV/7034), apresentado no 19th CONTECSI. O artigo consolida a discussão sobre fatores adicionais de autenticação aplicáveis à identidade digital brasileira.
+
 O texto integral está disponível no [Repositório Institucional da UnB](https://repositorio.unb.br/handle/10482/52683).
 
 ---

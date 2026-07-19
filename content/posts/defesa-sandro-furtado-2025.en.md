@@ -26,6 +26,8 @@ The defense took place on February 18, 2025 in Brasília. The examining committe
 
 By pairing {{< link-interno "/areas/security/" "cybersecurity" >}} with {{< link-interno "/areas/transformation/" "digital transformation" >}} of the Brazilian State, the dissertation offers a concrete basis for architectural decisions that directly affect millions of citizens — precisely where the security research community must carry its work to generate impact.
 
+The dissertation agenda also appears in the paper [_Identification and Applicability of Additional Security Factors on the GOV.BR Digital Identity Platform_](https://doi.org/10.5748/19CONTECSI/PSE/GOV/7034), presented at the 19th CONTECSI. The paper consolidates the discussion on additional authentication factors applicable to Brazil's digital identity.
+
 The full text — written in Portuguese — is available at the [UnB Institutional Repository](https://repositorio.unb.br/handle/10482/52683).
 
 ---
