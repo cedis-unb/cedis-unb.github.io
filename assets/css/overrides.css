@@ -21,6 +21,7 @@
 /* ============================================================
    Perfil de pesquisador — blocos expansíveis longos
    ============================================================ */
+#profile-content #current-supervisions-section,
 #profile-content #previous-collaborators,
 #profile-content #npublications-section {
   margin-top: 2.25rem;
@@ -30,6 +31,7 @@
   padding: 0.95rem;
 }
 
+#profile-content #current-supervisions-section > h3,
 #profile-content #previous-collaborators > h2,
 #profile-content #npublications-section > h2 {
   margin: 0 !important;
@@ -43,6 +45,10 @@
   justify-content: space-between;
 }
 
+#profile-content #current-supervisions-section > h3 {
+  font-size: 1.25rem !important;
+}
+
 #profile-content #previous-collaborators > h2:hover,
 #profile-content #npublications-section > h2:hover {
   color: #c5272f;
@@ -53,6 +59,7 @@
   flex: 0 0 auto;
 }
 
+#profile-content #current-supervisions-section > .current-supervisions-scroll,
 #profile-content #previous-collaborators > div[x-show],
 #profile-content #npublications-section > div[x-show] {
   margin-top: 1rem;
@@ -63,6 +70,7 @@
   scrollbar-gutter: stable;
 }
 
+#profile-content #current-supervisions-section .caput,
 #profile-content #previous-collaborators .caput,
 #profile-content #npublications-section .caput {
   position: sticky;
@@ -76,11 +84,14 @@
   backdrop-filter: blur(8px);
 }
 
+#profile-content #current-supervisions-section .caput:first-child,
 #profile-content #previous-collaborators .caput:first-child,
 #profile-content #npublications-section .caput:first-child {
   margin-top: 0 !important;
 }
 
+#profile-content #current-supervisions-section ul,
+#profile-content #current-supervisions-section ol,
 #profile-content #previous-collaborators ul,
 #profile-content #previous-collaborators ol,
 #profile-content #npublications-section ul,
@@ -88,6 +99,7 @@
   gap: 0.75rem;
 }
 
+#profile-content #current-supervisions-section li,
 #profile-content #previous-collaborators li,
 #profile-content #npublications-section li {
   border-radius: 1rem;
@@ -95,11 +107,13 @@
 }
 
 @media (max-width: 640px) {
+  #profile-content #current-supervisions-section,
   #profile-content #previous-collaborators,
   #profile-content #npublications-section {
     padding: 0.7rem;
   }
 
+  #profile-content #current-supervisions-section > h3,
   #profile-content #previous-collaborators > h2,
   #profile-content #npublications-section > h2 {
     align-items: center;
@@ -108,18 +122,21 @@
     padding: 0.9rem !important;
   }
 
+  #profile-content #current-supervisions-section > .current-supervisions-scroll,
   #profile-content #previous-collaborators > div[x-show],
   #profile-content #npublications-section > div[x-show] {
     max-height: 68vh;
   }
 }
 
+.dark #profile-content #current-supervisions-section,
 .dark #profile-content #previous-collaborators,
 .dark #profile-content #npublications-section {
   border-color: rgba(255, 255, 255, 0.1);
   background: rgba(255, 255, 255, 0.035);
 }
 
+.dark #profile-content #current-supervisions-section > h3,
 .dark #profile-content #previous-collaborators > h2,
 .dark #profile-content #npublications-section > h2 {
   background: rgba(255, 255, 255, 0.06);
@@ -132,6 +149,7 @@
   color: #fecaca;
 }
 
+.dark #profile-content #current-supervisions-section .caput,
 .dark #profile-content #previous-collaborators .caput,
 .dark #profile-content #npublications-section .caput {
   border-bottom-color: rgba(255, 255, 255, 0.1);
