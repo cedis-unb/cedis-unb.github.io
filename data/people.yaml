@@ -1991,13 +1991,13 @@ people:
   - people
   - tcc
   title:
-    pt: Aplicativo de suporte ao humor e bem-estar mental
-    en: Application to support mood and mental well-being
+    pt: Aplicativo de suporte à promoção à saúde mental e bem-estar dentro do ambiente universitário
+    en: Application to support the promotion of mental health and well-being in the university environment
   program: curso_esw2
   advisors:
   - george_marsicano
   tags:
-  - active
+  - inactive
   - education
   - social_software
   year: 2025
@@ -2006,13 +2006,13 @@ people:
   - people
   - tcc
   title:
-    pt: Aplicativo de suporte ao humor e bem-estar mental
-    en: Application to support mood and mental well-being
+    pt: Aplicativo de suporte à promoção à saúde mental e bem-estar dentro do ambiente universitário
+    en: Application to support the promotion of mental health and well-being in the university environment
   program: curso_esw2
   advisors:
   - george_marsicano
   tags:
-  - active
+  - inactive
   - education
   - social_software
   year: 2025
@@ -2845,27 +2845,29 @@ people:
   - people
   - master_student
   title:
-    pt: "Avaliação da Maturidade DevOps em Soluções de Nuvem no Setor Financeiro"
-    en: "Assessment of DevOps Maturity in Cloud Solutions in the Financial Sector"
+    pt: "Modelo de avaliação DevOps em ambientes de nuvem com métricas DORA: um estudo no setor financeiro"
+    en: "DevOps assessment model in cloud environments with DORA metrics: a study in the financial sector"
   program: curso_ppca
   advisors:
   - george_marsicano
   tags:
-  - active
+  - inactive
   - software_architecture
+  - digital_transformation
   year: 2025
 - name: Breno Henrique de Souza
   categories:
   - people
   - tcc
   title:
-    pt: "A centralização de informações como apoio no desenvolvimento estudantil no ensino superior da FCTE"
-    en: "Centralization of information as support for student development in higher education at FCTE"
+    pt: "Centralização de Informações Administrativas como Suporte ao Desenvolvimento Estudantil na FCTE: Uma Abordagem com Chatbot e Inteligência Artificial"
+    en: "Centralization of administrative information to support student development at FCTE: a chatbot and artificial intelligence approach"
   program: curso_esw2
   advisors:
   - george_marsicano
   tags:
-  - active
+  - inactive
+  - ai
   - education
   year: 2025
 - name: Giulia Domingues de Alcantara
@@ -2873,16 +2875,17 @@ people:
   - people
   - tcc
   title:
-    pt: "A centralização de informações como apoio no desenvolvimento estudantil no ensino superior da FCTE"
-    en: "Centralization of information as support for student development in higher education at FCTE"
+    pt: "Centralização de Informações Administrativas como Suporte ao Desenvolvimento Estudantil na FCTE: Uma Abordagem com Chatbot e Inteligência Artificial"
+    en: "Centralization of administrative information to support student development at FCTE: a chatbot and artificial intelligence approach"
   program: curso_esw2
   advisors:
   - george_marsicano
   tags:
-  - active
+  - inactive
+  - ai
   - education
   year: 2025
-- name: Maria Eduarda D Santos Abritta F
+- name: Maria Eduarda dos Santos Abritta Ferreira
   categories:
   - people
   - tcc
@@ -2893,11 +2896,11 @@ people:
   advisors:
   - george_marsicano
   tags:
-  - active
+  - inactive
   - ai
   - machine_learning
   year: 2025
-- name: Sabrina Caldas Berna
+- name: Sabrina Caldas Berno
   categories:
   - people
   - tcc
@@ -2908,7 +2911,7 @@ people:
   advisors:
   - george_marsicano
   tags:
-  - active
+  - inactive
   - ai
   - machine_learning
   year: 2025
@@ -3208,3 +3211,49 @@ people:
   - inactive
   - ai
   year: 2023
+- name: Diego Emanuel Ferreira da Rocha
+  categories:
+  - people
+  - master_student
+  title:
+    pt: "Identificação automatizada de processos elementares a partir da análise de requisições HTTP"
+    en: "Automated identification of elementary processes through HTTP request analysis"
+  program: curso_ppca
+  advisors:
+  - andre_lanna
+  tags:
+  - inactive
+  - software_requirements
+  - machine_learning
+  year: 2025
+- name: Luciana Santos de Assis
+  categories:
+  - people
+  - master_student
+  title:
+    pt: "Gamificação em Ambientes Organizacionais: Um Estudo de Caso em uma Empresa Pública"
+    en: "Gamification in Organizational Environments: A Case Study in a Public Enterprise"
+  program: curso_ppca
+  advisors:
+  - sergio_freitas
+  tags:
+  - inactive
+  - gamification
+  - soft_skills
+  - digital_transformation
+  year: 2023
+- name: Tássio Correia da Silva
+  categories:
+  - people
+  - master_student
+  title:
+    pt: "3SW: um modelo adaptado do CIS Controls v8.1 para mitigação de ameaças a servidores Web"
+    en: "3SW: an adapted CIS Controls v8.1 model for mitigating threats to Web servers"
+  program: curso_ppgee
+  advisors:
+  - fabiana_mendes
+  tags:
+  - inactive
+  - security
+  - software_architecture
+  year: 2025
