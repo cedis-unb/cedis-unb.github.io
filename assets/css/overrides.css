@@ -19,8 +19,54 @@
   }
 
 /* ============================================================
-   Perfil de pesquisador — blocos expansíveis longos
+   Perfil de pesquisador — escala tipográfica e blocos longos
    ============================================================ */
+#profile-content {
+  font-size: 1rem;
+  line-height: 1.72;
+}
+
+#profile-content > h2 {
+  font-size: clamp(1.55rem, 1.1rem + 1.2vw, 2rem) !important;
+  line-height: 1.18 !important;
+  letter-spacing: 0 !important;
+}
+
+#profile-content h3 {
+  font-size: 1.25rem !important;
+  line-height: 1.28 !important;
+  letter-spacing: 0 !important;
+}
+
+#profile-content h4 {
+  font-size: 1.06rem !important;
+  line-height: 1.35 !important;
+  letter-spacing: 0 !important;
+}
+
+#profile-content p,
+#profile-content li {
+  font-size: 1rem;
+}
+
+#profile-content .not-prose article > div a.block,
+#profile-content #researcher-products > h3 {
+  font-size: 1.15rem !important;
+  line-height: 1.35 !important;
+  letter-spacing: 0 !important;
+}
+
+#profile-content .not-prose article p,
+#profile-content #researcher-products p {
+  font-size: 0.95rem !important;
+  line-height: 1.6 !important;
+}
+
+#profile-content .not-prose article .text-sm,
+#profile-content #researcher-products .text-sm {
+  font-size: 0.875rem !important;
+}
+
 #profile-content #current-supervisions-section,
 #profile-content #previous-collaborators,
 #profile-content #npublications-section {
@@ -45,10 +91,9 @@
   align-items: center;
   gap: 0.8rem;
   justify-content: space-between;
-}
-
-#profile-content #current-supervisions-section > h3 {
   font-size: 1.25rem !important;
+  line-height: 1.25 !important;
+  letter-spacing: 0 !important;
 }
 
 #profile-content #current-supervisions-section > h3:hover,
@@ -94,6 +139,16 @@
   backdrop-filter: blur(8px);
 }
 
+#profile-content #current-supervisions-section .caput h3,
+#profile-content #current-supervisions-section .caput h4,
+#profile-content #previous-collaborators .caput h3,
+#profile-content #previous-collaborators .caput h4,
+#profile-content #npublications-section .caput h3,
+#profile-content #npublications-section .caput h4 {
+  font-size: 1rem !important;
+  line-height: 1.35 !important;
+}
+
 #profile-content #current-supervisions-section .caput:first-child,
 #profile-content #previous-collaborators .caput:first-child,
 #profile-content #npublications-section .caput:first-child {
@@ -116,6 +171,26 @@
   box-shadow: 0 8px 26px rgba(15, 23, 42, 0.06);
 }
 
+#profile-content #current-supervisions-section li p:first-child,
+#profile-content #previous-collaborators li p:first-child,
+#profile-content #npublications-section li p:first-child {
+  font-size: 1rem !important;
+  line-height: 1.45 !important;
+}
+
+#profile-content #current-supervisions-section li p,
+#profile-content #previous-collaborators li p,
+#profile-content #npublications-section li p {
+  font-size: 0.95rem !important;
+  line-height: 1.58 !important;
+}
+
+#profile-content #current-supervisions-section [class*="text-[0.68rem]"],
+#profile-content #previous-collaborators [class*="text-[0.68rem]"],
+#profile-content #npublications-section [class*="text-[0.68rem]"] {
+  font-size: 0.68rem !important;
+}
+
 @media (max-width: 640px) {
   #profile-content #current-supervisions-section,
   #profile-content #previous-collaborators,
@@ -127,7 +202,7 @@
   #profile-content #previous-collaborators > h2,
   #profile-content #npublications-section > h2 {
     align-items: center;
-    font-size: 1.35rem !important;
+    font-size: 1.15rem !important;
     line-height: 1.2;
     padding: 0.9rem !important;
   }
