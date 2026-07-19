@@ -44,7 +44,7 @@ advisors:
     name: "George Marsicano"
     link: "/people/george_marsicano"
     lattes: https://lattes.cnpq.br/2317804591146328
-    orcid:
+    orcid: https://orcid.org/0000-0001-9212-9124
     email: georgemarsicano@unb.br
     areas: 
       - active_learning
