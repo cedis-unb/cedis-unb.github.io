@@ -3,7 +3,8 @@
     {{- $pageTitle = partial "translated-label.html" (dict "page" . "value" .Title) -}}
 {{- end -}}
 {{- $siteTitle := .Site.Title -}}
-{{- $documentTitle := cond .IsHome $siteTitle (printf "%s | %s" $pageTitle $siteTitle) -}}
+{{- $tabBrand := "CEDIS" -}}
+{{- $documentTitle := cond .IsHome $tabBrand (printf "%s | %s" $pageTitle $tabBrand) -}}
 {{- /* Description fallback chain: page description → frontmatter summary → auto-generated summary → site default. Truncated to 160 chars for SEO. */ -}}
 {{- $description := "" -}}
 {{- with .Params.description -}}{{- $description = . -}}{{- end -}}
