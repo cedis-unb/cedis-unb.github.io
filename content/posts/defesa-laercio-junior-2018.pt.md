@@ -5,7 +5,7 @@ draft: false
 weight: 500
 language: pt
 featured_image: "../assets/images/featured/area_Arquitetura de Software.png"
-summary: 'Laércio Silva de Sousa Júnior defendeu na UnB Gama um TCC que investiga formas de calcular a taxa de autoria de desenvolvedores dentro de projetos versionados em Git.'
+summary: 'Laércio Silva de Sousa Júnior defendeu na FCTE/UnB um TCC que investiga formas de calcular a taxa de autoria de desenvolvedores dentro de projetos versionados em Git.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp
 categories:
@@ -18,7 +18,7 @@ tags:
 ---
 Brasília, 11 de dezembro de 2018
 
-Contar linhas de código adicionadas por cada desenvolvedor parece um problema banal. Mas basta um projeto de tamanho médio para a soma virar armadilha: refatorações mudam autoria aparente, merges reescrevem responsabilidades, e um bom desenvolvedor pode remover mais código do que produzir. **É a esse quebra-cabeça que Laércio Silva de Sousa Júnior dedica seu TCC**, defendido em dezembro de 2018 na Faculdade UnB Gama sob orientação do Prof. {{< link-interno "/people/andre_lanna" "André Luiz Peron Martins Lanna" >}}.
+Contar linhas de código adicionadas por cada desenvolvedor parece um problema banal. Mas basta um projeto de tamanho médio para a soma virar armadilha: refatorações mudam autoria aparente, merges reescrevem responsabilidades, e um bom desenvolvedor pode remover mais código do que produzir. **É a esse quebra-cabeça que Laércio Silva de Sousa Júnior dedica seu TCC**, defendido em dezembro de 2018 na Faculdade de Ciências e Tecnologias em Engenharia (FCTE) sob orientação do Prof. {{< link-interno "/people/andre_lanna" "André Luiz Peron Martins Lanna" >}}.
 
 O trabalho parte de uma métrica ingênua — o *diff* como proxy de esforço — e revela por que ela produz retratos distorcidos de equipes reais. A proposta é substituir a soma bruta por uma taxa de autoria calculada a partir da história do Git, sensível ao contexto: código que sobrevive, refatorações relevantes, participação em blocos críticos. O resultado é uma leitura mais honesta de contribuição, útil tanto para retrospectivas de equipe quanto para instrumentos de {{< link-interno "/areas/software_architecture/" "análise arquitetural" >}} e {{< link-interno "/areas/transformation/" "governança de código" >}}.
 

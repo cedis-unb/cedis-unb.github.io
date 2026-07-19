@@ -5,7 +5,7 @@ draft: false
 weight: 500
 language: en
 featured_image: "../assets/images/featured/area_Gamificação.png"
-summary: 'Weiller Fernandes Pereira defended at UnB Gama an undergraduate thesis carrying out a systematic literature review on the use of frameworks in building education-oriented gamification projects.'
+summary: 'Weiller Fernandes Pereira defended at FCTE/UnB an undergraduate thesis carrying out a systematic literature review on the use of frameworks in building education-oriented gamification projects.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp
 categories:
@@ -18,7 +18,7 @@ tags:
 ---
 Brasília, November 11, 2021
 
-Over the past two decades, gamification has become a frequent recipe for the classroom — and the literature has kept pace. **The problem, as Weiller Fernandes Pereira’s thesis puts on the table, is that gamifying is not simply sprinkling points and rewards: without a framework, projects turn brittle**. The defense took place in November 2021 at UnB Gama, advised by Prof. {{< link-interno "/people/sergio_freitas" "Sergio Antônio Andrade de Freitas" >}}.
+Over the past two decades, gamification has become a frequent recipe for the classroom — and the literature has kept pace. **The problem, as Weiller Fernandes Pereira’s thesis puts on the table, is that gamifying is not simply sprinkling points and rewards: without a framework, projects turn brittle**. The defense took place in November 2021 at FCTE/UnB, advised by Prof. {{< link-interno "/people/sergio_freitas" "Sergio Antônio Andrade de Freitas" >}}.
 
 The research is a systematic literature review focused on a practical question: which frameworks have actually been used to structure gamified projects in education? The answer reveals a heterogeneous landscape — solutions that combine game design elements, motivational theories, and adaptations to specific teaching modalities and levels.
 

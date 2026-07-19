@@ -5,7 +5,7 @@ draft: false
 weight: 500
 language: pt
 featured_image: "../assets/images/featured/area_Green Software.png"
-summary: 'Byron Kamal Barreto Correa e Igor Guimaraes Veludo defenderam na UnB Gama uma etapa importante da história do AgroMart: abrir o código do projeto, integrar meios de pagamento e desenhar a gestão de co-agricultores.'
+summary: 'Byron Kamal Barreto Correa e Igor Guimaraes Veludo defenderam na FCTE/UnB uma etapa importante da história do AgroMart: abrir o código do projeto, integrar meios de pagamento e desenhar a gestão de co-agricultores.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp
 categories:
@@ -18,7 +18,7 @@ tags:
 ---
 Brasília, 9 de maio de 2022
 
-O AgroMart nasceu em um hackathon da Faculdade do Gama com um propósito claro: aproximar agricultores familiares dos consumidores. **Um ano depois da primeira versão, Byron Kamal Barreto Correa e Igor Guimaraes Veludo defenderam em maio de 2022 um TCC que dá ao projeto três empurrões ao mesmo tempo** — sob orientação do Prof. {{< link-interno "/people/andre_lanna" "André Luiz Peron Martins Lanna" >}}.
+O AgroMart nasceu em um hackathon da Faculdade de Ciências e Tecnologias em Engenharia (FCTE) com um propósito claro: aproximar agricultores familiares dos consumidores. **Um ano depois da primeira versão, Byron Kamal Barreto Correa e Igor Guimaraes Veludo defenderam em maio de 2022 um TCC que dá ao projeto três empurrões ao mesmo tempo** — sob orientação do Prof. {{< link-interno "/people/andre_lanna" "André Luiz Peron Martins Lanna" >}}.
 
 O primeiro empurrão é a abertura do código. Transformar o AgroMart em software livre não é apenas um gesto simbólico: é o que permite que outras iniciativas — universitárias, comunitárias, de extensão rural — adaptem a solução para seus contextos sem depender dos autores originais. O segundo é a integração de meios de pagamento, condição sem a qual a plataforma segue sendo demonstração e não instrumento. O terceiro é a gestão de co-agricultores, funcionalidade que dá conta de arranjos coletivos típicos da agricultura familiar — onde a produção divide caminhos, e o software precisa acompanhar.
 

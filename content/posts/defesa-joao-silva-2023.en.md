@@ -5,7 +5,7 @@ draft: false
 weight: 500
 language: en
 featured_image: "../assets/images/featured/area_Learning Analytics.png"
-summary: 'João Vitor de Moura Rosa Silva defended at UnB Gama an undergraduate thesis building SAMI — a system for analyzing learning indicator metrics in active-methodology courses.'
+summary: 'João Vitor de Moura Rosa Silva defended at FCTE/UnB an undergraduate thesis building SAMI — a system for analyzing learning indicator metrics in active-methodology courses.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp
 categories:

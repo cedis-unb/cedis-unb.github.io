@@ -5,7 +5,7 @@ draft: false
 weight: 500
 language: pt
 featured_image: "../assets/images/featured/area_Transformação Digital.png"
-summary: 'Igor de Araújo Ramos defendeu na UnB Gama um TCC que propõe usar ontologias para apoiar a etapa mais espinhosa dos mapeamentos sistemáticos: transformar dados coletados em um mapa de conhecimento realmente utilizável.'
+summary: 'Igor de Araújo Ramos defendeu na FCTE/UnB um TCC que propõe usar ontologias para apoiar a etapa mais espinhosa dos mapeamentos sistemáticos: transformar dados coletados em um mapa de conhecimento realmente utilizável.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp
 categories:
@@ -18,7 +18,7 @@ tags:
 ---
 Brasília, 2015
 
-Todo pesquisador que já tentou consolidar centenas de artigos em uma síntese útil conhece o ponto onde a coisa emperra: quando é preciso transformar o material coletado em um mapa que sirva de referência. **Foi esse gargalo que Igor de Araújo Ramos escolheu enfrentar no TCC defendido em 2015 na Faculdade UnB Gama**, sob orientação da Prof.ª {{< link-interno "/people/fabiana_mendes" "Fabiana Freitas Mendes" >}}.
+Todo pesquisador que já tentou consolidar centenas de artigos em uma síntese útil conhece o ponto onde a coisa emperra: quando é preciso transformar o material coletado em um mapa que sirva de referência. **Foi esse gargalo que Igor de Araújo Ramos escolheu enfrentar no TCC defendido em 2015 na Faculdade de Ciências e Tecnologias em Engenharia (FCTE)**, sob orientação da Prof.ª {{< link-interno "/people/fabiana_mendes" "Fabiana Freitas Mendes" >}}.
 
 O trabalho parte de um diagnóstico da comunidade de Engenharia de Software Baseada em Evidência: o mapeamento sistemático é hoje uma das metodologias mais adotadas para revisões estruturadas — e é justamente a etapa de criação do mapa representativo do conhecimento que sofre com a ausência de processo claro e de ferramentas de apoio. O resultado é conhecido: mapas construídos artesanalmente, com critérios pouco reprodutíveis e difícil comparabilidade entre estudos.
 

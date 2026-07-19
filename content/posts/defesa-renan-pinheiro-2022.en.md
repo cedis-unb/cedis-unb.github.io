@@ -5,7 +5,7 @@ draft: false
 weight: 500
 language: en
 featured_image: "../assets/images/featured/area_Verificação e Validação.png"
-summary: 'Renan Cristyan Araujo Pinheiro defended at UnB Gama an undergraduate thesis presenting a case study on improving software verification and validation processes in a public sector agency.'
+summary: 'Renan Cristyan Araujo Pinheiro defended at FCTE/UnB an undergraduate thesis presenting a case study on improving software verification and validation processes in a public sector agency.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp
 categories:

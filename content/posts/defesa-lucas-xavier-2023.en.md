@@ -5,7 +5,7 @@ draft: false
 weight: 500
 language: en
 featured_image: "../assets/images/featured/area_Software Quality.png"
-summary: 'Lucas Lopes Xavier defended at UnB Gama an undergraduate thesis translating LGPD and ISO 29100 requirements into implementable specifications for applications — shortening the distance between legal norms and engineering practice.'
+summary: 'Lucas Lopes Xavier defended at FCTE/UnB an undergraduate thesis translating LGPD and ISO 29100 requirements into implementable specifications for applications — shortening the distance between legal norms and engineering practice.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp
 categories:

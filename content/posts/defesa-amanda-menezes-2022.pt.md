@@ -5,7 +5,7 @@ draft: false
 weight: 500
 language: pt
 featured_image: "../assets/images/featured/area_Learning Analytics.png"
-summary: 'Amanda Emilly Muniz de Menezes e Letícia Karla Soares Rodrigues de Araújo defenderam na UnB Gama um TCC que identifica fatores acadêmicos, demográficos e de aprendizagem associados à evasão no ensino superior — e testa modelos preditivos.'
+summary: 'Amanda Emilly Muniz de Menezes e Letícia Karla Soares Rodrigues de Araújo defenderam na FCTE/UnB um TCC que identifica fatores acadêmicos, demográficos e de aprendizagem associados à evasão no ensino superior — e testa modelos preditivos.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp
 categories:
@@ -18,7 +18,7 @@ tags:
 ---
 Brasília, 26 de setembro de 2022
 
-A evasão no ensino superior é um dos indicadores mais custosos para universidades e para os próprios alunos — e um dos menos observados com granularidade suficiente para ação coordenada. **É a esse gargalo que Amanda Emilly Muniz de Menezes e Letícia Karla Soares Rodrigues de Araújo dedicaram seu TCC**, defendido em setembro de 2022 na Faculdade UnB Gama, sob orientação da Prof.ª {{< link-interno "/people/cristiane_ramos" "Cristiane Soares Ramos" >}} e do Prof. {{< link-interno "/people/sergio_freitas" "Sergio Antônio Andrade de Freitas" >}}.
+A evasão no ensino superior é um dos indicadores mais custosos para universidades e para os próprios alunos — e um dos menos observados com granularidade suficiente para ação coordenada. **É a esse gargalo que Amanda Emilly Muniz de Menezes e Letícia Karla Soares Rodrigues de Araújo dedicaram seu TCC**, defendido em setembro de 2022 na Faculdade de Ciências e Tecnologias em Engenharia (FCTE), sob orientação da Prof.ª {{< link-interno "/people/cristiane_ramos" "Cristiane Soares Ramos" >}} e do Prof. {{< link-interno "/people/sergio_freitas" "Sergio Antônio Andrade de Freitas" >}}.
 
 O trabalho parte de uma revisão sistemática da literatura para identificar quais fatores — acadêmicos, demográficos, de aprendizagem — aparecem consistentemente associados à saída antecipada de estudantes. Com essa base, a dupla desenvolve modelos preditivos usando algoritmos de aprendizado de máquina e mostra que as previsões respondem de forma sensível a alterações nos fluxos de curso: mudanças na organização das disciplinas, por exemplo, alteram o risco de evasão de coortes específicas.
 

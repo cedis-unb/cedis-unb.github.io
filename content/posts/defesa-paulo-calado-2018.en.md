@@ -5,7 +5,7 @@ draft: false
 weight: 500
 language: en
 featured_image: "../assets/images/featured/area_Gamificação.png"
-summary: 'Paulo Markes Rodrigues de Oliveira Calado defended at UnB Gama an undergraduate thesis developing a strategy to identify improvement opportunities in gamified applications — tackling the problem that the initial shine does not always translate into prolonged use.'
+summary: 'Paulo Markes Rodrigues de Oliveira Calado defended at FCTE/UnB an undergraduate thesis developing a strategy to identify improvement opportunities in gamified applications — tackling the problem that the initial shine does not always translate into prolonged use.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp
 categories:
@@ -18,7 +18,7 @@ tags:
 ---
 Brasília, August 2018
 
-Every gamified product opens with a promise: to keep the user’s attention amid the barrage of notifications competing for their seconds. Delivering that promise is another story — and it is that gap between design and practice that motivates the undergraduate thesis defended by Paulo Markes Rodrigues de Oliveira Calado in August 2018 at UnB Gama, under the advising of Prof. {{< link-interno "/people/sergio_freitas" "Sergio Antônio Andrade de Freitas" >}}.
+Every gamified product opens with a promise: to keep the user’s attention amid the barrage of notifications competing for their seconds. Delivering that promise is another story — and it is that gap between design and practice that motivates the undergraduate thesis defended by Paulo Markes Rodrigues de Oliveira Calado in August 2018 at FCTE/UnB, under the advising of Prof. {{< link-interno "/people/sergio_freitas" "Sergio Antônio Andrade de Freitas" >}}.
 
 The work begins with an uncomfortable fact: adoption of a new technology happens as fast as its abandonment. Without instruments to observe what is or is not working in a gamified application, product teams navigate in the dark. The author’s proposal offers a systematic strategy to identify these improvement opportunities — combining measurable indicators, behavior analysis, and alignment with the original gamification goals.
 

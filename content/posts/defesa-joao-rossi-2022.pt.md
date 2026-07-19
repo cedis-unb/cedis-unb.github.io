@@ -5,7 +5,7 @@ draft: false
 weight: 500
 language: pt
 featured_image: "../assets/images/featured/area_Transformação Digital.png"
-summary: 'João Gabriel Rossi e Paulo Vitor Coelho da Rocha defenderam na UnB Gama um TCC que desenvolve uma ferramenta web para apoiar a promoção da qualidade de vida no trabalho em órgãos do setor público.'
+summary: 'João Gabriel Rossi e Paulo Vitor Coelho da Rocha defenderam na FCTE/UnB um TCC que desenvolve uma ferramenta web para apoiar a promoção da qualidade de vida no trabalho em órgãos do setor público.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp
 categories:

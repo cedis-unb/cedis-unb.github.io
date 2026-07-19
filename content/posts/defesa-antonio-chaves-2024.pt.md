@@ -5,7 +5,7 @@ draft: false
 weight: 500
 language: pt
 featured_image: "../assets/images/featured/area_Gamificação.png"
-summary: 'Antonio Rangel Chaves e Vitor Diniz Pagani Vieira Ribeiro defenderam na UnB Gama um TCC que reduz a barreira de entrada para professores gamificarem disciplinas no Moodle — com guia e ferramenta prática.'
+summary: 'Antonio Rangel Chaves e Vitor Diniz Pagani Vieira Ribeiro defenderam na FCTE/UnB um TCC que reduz a barreira de entrada para professores gamificarem disciplinas no Moodle — com guia e ferramenta prática.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp
 categories:

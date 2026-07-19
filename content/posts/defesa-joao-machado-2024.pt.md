@@ -5,7 +5,7 @@ draft: false
 weight: 500
 language: pt
 featured_image: "../assets/images/featured/area_Arquitetura de Software.png"
-summary: 'João Pedro Alves Machado e Júlio César Martins França defenderam na UnB Gama um TCC que constrói uma PWA para navegação em fluxogramas de educação jurídica sobre direitos trabalhistas.'
+summary: 'João Pedro Alves Machado e Júlio César Martins França defenderam na FCTE/UnB um TCC que constrói uma PWA para navegação em fluxogramas de educação jurídica sobre direitos trabalhistas.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp
 categories:

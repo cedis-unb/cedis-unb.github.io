@@ -5,7 +5,7 @@ draft: false
 weight: 500
 language: en
 featured_image: "../assets/images/featured/area_Software Quality.png"
-summary: 'Victor Hugo Alves de Carvalho defended in 2015 at UnB Gama an empirical undergraduate thesis comparing programming techniques on Android and measuring the effect of each on app performance and responsiveness.'
+summary: 'Victor Hugo Alves de Carvalho defended in 2015 at FCTE/UnB an empirical undergraduate thesis comparing programming techniques on Android and measuring the effect of each on app performance and responsiveness.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp
 categories:
@@ -18,7 +18,7 @@ tags:
 ---
 Brasília, 2015
 
-When an app freezes for two seconds, the user responds with a single gesture: closes it, uninstalls it, leaves a poor review. **It is that chain of cause and effect that the undergraduate thesis defended by Victor Hugo Alves de Carvalho in 2015 at UnB Gama places under the microscope**, advised by Prof. {{< link-interno "/people/fabiana_mendes" "Fabiana Freitas Mendes" >}}.
+When an app freezes for two seconds, the user responds with a single gesture: closes it, uninstalls it, leaves a poor review. **It is that chain of cause and effect that the undergraduate thesis defended by Victor Hugo Alves de Carvalho in 2015 at FCTE/UnB places under the microscope**, advised by Prof. {{< link-interno "/people/fabiana_mendes" "Fabiana Freitas Mendes" >}}.
 
 The work builds on a defining fact of that decade: Android had become the dominant platform, and the ease of programming for it attracted both small teams and technology-driven companies. The trade-off — rarely discussed — is the cost of keeping apps fast across an enormous matrix of devices, versions, and usage scenarios. Without clear instruments to choose between implementation alternatives, much of the optimization work becomes folklore.
 

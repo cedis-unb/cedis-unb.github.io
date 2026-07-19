@@ -5,7 +5,7 @@ draft: false
 weight: 500
 language: pt
 featured_image: "../assets/images/featured/area_Arquitetura de Software.png"
-summary: 'Filipe Toyoshima Silva defendeu na UnB Gama um TCC que mapeia como startups em fase inicial lidam com manutenção de software — uma etapa dominada por escassez de recursos e volume alto de mudanças.'
+summary: 'Filipe Toyoshima Silva defendeu na FCTE/UnB um TCC que mapeia como startups em fase inicial lidam com manutenção de software — uma etapa dominada por escassez de recursos e volume alto de mudanças.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp
 categories:

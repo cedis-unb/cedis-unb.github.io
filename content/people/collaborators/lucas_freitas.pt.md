@@ -31,4 +31,4 @@ tags:
 - {{< link-interno "/products/evidentia/" "Projeto Evidentia Review" >}}
 
 ## Contato
-- Endereço Profissional: Universidade de Brasília, Campus UnB Gama, Brasília - DF, Brasil.
+- Endereço Profissional: Universidade de Brasília, Campus Gama (FCTE), Brasília - DF, Brasil.

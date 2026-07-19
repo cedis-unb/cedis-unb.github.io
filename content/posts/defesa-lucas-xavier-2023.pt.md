@@ -5,7 +5,7 @@ draft: false
 weight: 500
 language: pt
 featured_image: "../assets/images/featured/area_Software Quality.png"
-summary: 'Lucas Lopes Xavier defendeu na UnB Gama um TCC que traduz exigências da LGPD e da ISO 29100 em requisitos implementáveis em aplicativos — reduzindo a distância entre norma jurídica e prática de engenharia.'
+summary: 'Lucas Lopes Xavier defendeu na FCTE/UnB um TCC que traduz exigências da LGPD e da ISO 29100 em requisitos implementáveis em aplicativos — reduzindo a distância entre norma jurídica e prática de engenharia.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp
 categories:

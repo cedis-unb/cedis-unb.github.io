@@ -29,5 +29,5 @@ tags:
 - GCMP (Gamified Chatbot Development Process) is a structured method for creating gamified chatbots, combining software engineering techniques with game elements. This process aims to improve the efficacy and interactivity of chatbots, integrating software development practices with gamification mechanics to create more engaging and efficient user experiences.
 
 ## Contact
-- Professional Address: University of Brasília, UnB Gama Campus, Brasília - DF, Brazil.
+- Professional Address: University of Brasília, Gama Campus (FCTE), Brasília - DF, Brazil.
 - Lattes: [CV Lattes](http://lattes.cnpq.br/7822013233737547)

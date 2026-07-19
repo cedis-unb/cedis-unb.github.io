@@ -5,7 +5,7 @@ draft: false
 weight: 500
 language: pt
 featured_image: "../assets/images/featured/area_Gamificação.png"
-summary: 'Paulo Markes Rodrigues de Oliveira Calado defendeu na UnB Gama um TCC que desenvolve uma estratégia para identificar oportunidades de melhoria em aplicações gamificadas — atacando o problema de que o brilho inicial nem sempre se converte em uso prolongado.'
+summary: 'Paulo Markes Rodrigues de Oliveira Calado defendeu na FCTE/UnB um TCC que desenvolve uma estratégia para identificar oportunidades de melhoria em aplicações gamificadas — atacando o problema de que o brilho inicial nem sempre se converte em uso prolongado.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp
 categories:
@@ -18,7 +18,7 @@ tags:
 ---
 Brasília, agosto de 2018
 
-Todo produto gamificado começa com uma promessa: a de manter a atenção do usuário em meio ao bombardeio de notificações que compete pelos seus segundos. Cumprir essa promessa é outra história — e é essa distância entre projeto e prática que interessa ao TCC defendido por Paulo Markes Rodrigues de Oliveira Calado em agosto de 2018, na Faculdade UnB Gama, sob orientação do Prof. {{< link-interno "/people/sergio_freitas" "Sergio Antônio Andrade de Freitas" >}}.
+Todo produto gamificado começa com uma promessa: a de manter a atenção do usuário em meio ao bombardeio de notificações que compete pelos seus segundos. Cumprir essa promessa é outra história — e é essa distância entre projeto e prática que interessa ao TCC defendido por Paulo Markes Rodrigues de Oliveira Calado em agosto de 2018, na Faculdade de Ciências e Tecnologias em Engenharia (FCTE), sob orientação do Prof. {{< link-interno "/people/sergio_freitas" "Sergio Antônio Andrade de Freitas" >}}.
 
 O trabalho parte de um dado incômodo: a adesão a uma tecnologia é tão rápida quanto o esquecimento dela. Sem instrumentos para observar o que está funcionando (ou deixando de funcionar) em uma aplicação gamificada, o time de produto navega no escuro. A proposta do autor é oferecer uma estratégia sistemática para identificar essas oportunidades de melhoria — combinando indicadores mensuráveis, análise de comportamento e alinhamento com os objetivos originais da gamificação.
 

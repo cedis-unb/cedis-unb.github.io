@@ -5,7 +5,7 @@ draft: false
 weight: 500
 language: en
 featured_image: "../assets/images/featured/area_Software Quality.png"
-summary: 'Francisco Heronildo Sousa Santos and João Vitor Ferreira Alves defended at UnB Gama an undergraduate thesis applying established usability mechanisms in an evaluation-and-improvement cycle on a web application.'
+summary: 'Francisco Heronildo Sousa Santos and João Vitor Ferreira Alves defended at FCTE/UnB an undergraduate thesis applying established usability mechanisms in an evaluation-and-improvement cycle on a web application.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp
 categories:

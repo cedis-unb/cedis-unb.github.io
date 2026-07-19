@@ -29,5 +29,5 @@ tags:
 - {{< link-interno "/projects/dfcris/" "DFCris Project" >}}
 
 ## Contact
-- Professional Address: University of Brasília, UnB Gama Campus, Brasília - DF, Brazil.
+- Professional Address: University of Brasília, Gama Campus (FCTE), Brasília - DF, Brazil.
 - Lattes: [CV Lattes](http://lattes.cnpq.br/0834465625018073)

@@ -5,7 +5,7 @@ draft: false
 weight: 500
 language: pt
 featured_image: "../assets/images/featured/area_Arquitetura de Software.png"
-summary: 'Abner Filipe Cunha Ribeiro e Rafael Leão Teixeira de Magalhães defenderam na UnB Gama um TCC que expande o AgroMart para articular associações de CSAs em cloud — um passo importante na consolidação da plataforma.'
+summary: 'Abner Filipe Cunha Ribeiro e Rafael Leão Teixeira de Magalhães defenderam na FCTE/UnB um TCC que expande o AgroMart para articular associações de CSAs em cloud — um passo importante na consolidação da plataforma.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp
 categories:

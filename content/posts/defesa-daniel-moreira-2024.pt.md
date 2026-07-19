@@ -5,7 +5,7 @@ draft: false
 weight: 500
 language: pt
 featured_image: "../assets/images/featured/area_Software Quality.png"
-summary: 'Daniel Barcelos Moreira e Juliana Pereira Valle Gonçalves defenderam na UnB Gama um TCC que avalia ferramentas usadas para medir a acessibilidade de sites web utilizados por pessoas idosas.'
+summary: 'Daniel Barcelos Moreira e Juliana Pereira Valle Gonçalves defenderam na FCTE/UnB um TCC que avalia ferramentas usadas para medir a acessibilidade de sites web utilizados por pessoas idosas.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp
 categories:

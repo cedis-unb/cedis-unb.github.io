@@ -5,7 +5,7 @@ draft: false
 weight: 500
 language: pt
 featured_image: "../assets/images/featured/area_IA.png"
-summary: 'Leonardo Milomes Vitoriano e Mateus de Almeida Dias defenderam na UnB Gama um TCC que apresenta o Three Filters — sistema para assegurar qualidade e integridade de metadados científicos em JSON.'
+summary: 'Leonardo Milomes Vitoriano e Mateus de Almeida Dias defenderam na FCTE/UnB um TCC que apresenta o Three Filters — sistema para assegurar qualidade e integridade de metadados científicos em JSON.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp
 categories:

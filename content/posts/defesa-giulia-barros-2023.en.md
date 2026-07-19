@@ -5,7 +5,7 @@ draft: false
 weight: 500
 language: en
 featured_image: "../assets/images/featured/area_Engenharia de requisitos.png"
-summary: 'Giulia Lobo Barros defended at UnB Gama an undergraduate thesis investigating improvement of the software requirements engineering process — under joint advising of Cristiane Ramos and Ricardo Ajax.'
+summary: 'Giulia Lobo Barros defended at FCTE/UnB an undergraduate thesis investigating improvement of the software requirements engineering process — under joint advising of Cristiane Ramos and Ricardo Ajax.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp
 categories:

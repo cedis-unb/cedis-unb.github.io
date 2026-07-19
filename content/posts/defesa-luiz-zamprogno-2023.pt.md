@@ -5,7 +5,7 @@ draft: false
 weight: 500
 language: pt
 featured_image: "../assets/images/featured/area_IA.png"
-summary: 'Luiz Henrique Fernandes Zamprogno e Victor Eduardo Araújo Ribeiro defenderam na UnB Gama um TCC que apresenta o Latte — chatbot gamificado voltado a apoiar a produção de artigos científicos.'
+summary: 'Luiz Henrique Fernandes Zamprogno e Victor Eduardo Araújo Ribeiro defenderam na FCTE/UnB um TCC que apresenta o Latte — chatbot gamificado voltado a apoiar a produção de artigos científicos.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp
 categories:

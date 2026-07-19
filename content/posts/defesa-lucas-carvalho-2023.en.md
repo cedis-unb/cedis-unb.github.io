@@ -5,7 +5,7 @@ draft: false
 weight: 500
 language: en
 featured_image: "../assets/images/featured/area_HPC.png"
-summary: 'Lucas Ganda Carvalho and Wíctor Bastos Girardi defended at UnB Gama an undergraduate thesis investigating execution-time prediction for AWS Lambda functions — a key input for cost estimation in serverless environments.'
+summary: 'Lucas Ganda Carvalho and Wíctor Bastos Girardi defended at FCTE/UnB an undergraduate thesis investigating execution-time prediction for AWS Lambda functions — a key input for cost estimation in serverless environments.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp
 categories:

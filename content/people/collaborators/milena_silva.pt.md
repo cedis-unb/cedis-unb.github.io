@@ -30,5 +30,5 @@ tags:
 - {{< link-interno "/projects/dfcris/" "Projeto DFCris" >}}
 
 ## Contato
-- Endereço Profissional: Universidade de Brasília, Campus UnB Gama, Brasília - DF, Brasil.
+- Endereço Profissional: Universidade de Brasília, Campus Gama (FCTE), Brasília - DF, Brasil.
 - Lattes: [CV Lattes](http://lattes.cnpq.br/3773267134438950)

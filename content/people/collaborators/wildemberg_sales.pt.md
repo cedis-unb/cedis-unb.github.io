@@ -31,4 +31,4 @@ tags:
 - [Gamificação Canal Ciência](/projects/canal_ciencia)
 
 ## Contato
-- Endereço Profissional: Universidade de Brasília, Campus UnB Gama, Brasília - DF, Brasil.
+- Endereço Profissional: Universidade de Brasília, Campus Gama (FCTE), Brasília - DF, Brasil.

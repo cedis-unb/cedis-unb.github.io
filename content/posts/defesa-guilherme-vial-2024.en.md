@@ -5,7 +5,7 @@ draft: false
 weight: 500
 language: en
 featured_image: "../assets/images/featured/area_Arquitetura de Software.png"
-summary: 'Guilherme Rogelin Vial and Lucas Braun Vieira Xavier defended at UnB Gama an undergraduate thesis using Google Forms as the interface to model and distribute navigation flows for legal education.'
+summary: 'Guilherme Rogelin Vial and Lucas Braun Vieira Xavier defended at FCTE/UnB an undergraduate thesis using Google Forms as the interface to model and distribute navigation flows for legal education.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp
 categories:

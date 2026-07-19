@@ -5,7 +5,7 @@ draft: false
 weight: 500
 language: en
 featured_image: "../assets/images/featured/area_Verificação e Validação.png"
-summary: 'Vítor Cardoso Xoteslem defended at UnB Gama an undergraduate thesis crafting a testing strategy for the Doarti app — maintained by a geographically distributed volunteer team under pandemic-forced remote work.'
+summary: 'Vítor Cardoso Xoteslem defended at FCTE/UnB an undergraduate thesis crafting a testing strategy for the Doarti app — maintained by a geographically distributed volunteer team under pandemic-forced remote work.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp
 categories:
@@ -18,7 +18,7 @@ tags:
 ---
 Brasília, October 25, 2021
 
-Testing software alone is hard enough. Testing with a team that only exists on Slack, spread across time zones, and made entirely of volunteers is another level of problem — the kind of problem the pandemic pushed to center stage. **This is the scenario Vítor Cardoso Xoteslem addresses in his undergraduate thesis**, defended in October 2021 at UnB Gama and advised by Prof. {{< link-interno "/people/fabiana_mendes" "Fabiana Freitas Mendes" >}}.
+Testing software alone is hard enough. Testing with a team that only exists on Slack, spread across time zones, and made entirely of volunteers is another level of problem — the kind of problem the pandemic pushed to center stage. **This is the scenario Vítor Cardoso Xoteslem addresses in his undergraduate thesis**, defended in October 2021 at FCTE/UnB and advised by Prof. {{< link-interno "/people/fabiana_mendes" "Fabiana Freitas Mendes" >}}.
 
 Doarti is an application that brings together charities and donors — a social project maintained by volunteers. With the physical distancing imposed by COVID-19, the team started operating asynchronously and remotely, and quality assurance became a coordination challenge as much as a technical one. The question guiding the thesis is: how to structure testing without a co-located team and without uniformly dedicated time?
 

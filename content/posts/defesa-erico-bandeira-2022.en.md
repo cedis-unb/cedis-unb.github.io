@@ -5,7 +5,7 @@ draft: false
 weight: 500
 language: en
 featured_image: "../assets/images/featured/area_Gamificação.png"
-summary: 'Érico Maximiano Bandeira defended at UnB Gama an undergraduate thesis introducing Pixel — a gamified tool for learning usability criteria during interface evaluation.'
+summary: 'Érico Maximiano Bandeira defended at FCTE/UnB an undergraduate thesis introducing Pixel — a gamified tool for learning usability criteria during interface evaluation.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp
 categories:

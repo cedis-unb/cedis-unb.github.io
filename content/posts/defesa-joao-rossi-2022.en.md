@@ -5,7 +5,7 @@ draft: false
 weight: 500
 language: en
 featured_image: "../assets/images/featured/area_Transformação Digital.png"
-summary: 'João Gabriel Rossi and Paulo Vitor Coelho da Rocha defended at UnB Gama an undergraduate thesis developing a web tool to support quality of work life promotion in public sector agencies.'
+summary: 'João Gabriel Rossi and Paulo Vitor Coelho da Rocha defended at FCTE/UnB an undergraduate thesis developing a web tool to support quality of work life promotion in public sector agencies.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp
 categories:

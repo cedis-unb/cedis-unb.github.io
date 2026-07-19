@@ -5,7 +5,7 @@ draft: false
 weight: 500
 language: pt
 featured_image: "../assets/images/featured/area_IA.png"
-summary: 'Maria Eduarda dos Santos Abritta Ferreira e Sabrina Caldas Berno defenderam na UnB Gama um TCC que aplica aprendizado de máquina à predição não-invasiva de euploidia em embriões humanos a partir de dados morfocinéticos.'
+summary: 'Maria Eduarda dos Santos Abritta Ferreira e Sabrina Caldas Berno defenderam na FCTE/UnB um TCC que aplica aprendizado de máquina à predição não-invasiva de euploidia em embriões humanos a partir de dados morfocinéticos.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp
 categories:

@@ -5,7 +5,7 @@ draft: false
 weight: 500
 language: pt
 featured_image: "../assets/images/featured/area_Engenharia de requisitos.png"
-summary: 'Giulia Lobo Barros defendeu na UnB Gama um TCC que investiga a melhoria do processo de engenharia de requisitos de software — sob orientação conjunta de Cristiane Ramos e Ricardo Ajax.'
+summary: 'Giulia Lobo Barros defendeu na FCTE/UnB um TCC que investiga a melhoria do processo de engenharia de requisitos de software — sob orientação conjunta de Cristiane Ramos e Ricardo Ajax.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp
 categories:

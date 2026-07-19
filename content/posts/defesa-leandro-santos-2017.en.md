@@ -5,7 +5,7 @@ draft: false
 weight: 500
 language: en
 featured_image: "../assets/images/featured/area_Gamificação.png"
-summary: 'Leandro Alves Ferreira Santos defended at UnB Gama an undergraduate thesis developing gamified software to support math teaching for children — a territory poorly served by edtech products.'
+summary: 'Leandro Alves Ferreira Santos defended at FCTE/UnB an undergraduate thesis developing gamified software to support math teaching for children — a territory poorly served by edtech products.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp
 categories:

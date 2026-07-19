@@ -5,7 +5,7 @@ draft: false
 weight: 500
 language: pt
 featured_image: "../assets/images/featured/area_Gamificação.png"
-summary: 'Leandro Alves Ferreira Santos defendeu na UnB Gama um TCC que desenvolve um software gamificado para apoiar o ensino de matemática ao público infantil — território pouco atendido pelas soluções edtech.'
+summary: 'Leandro Alves Ferreira Santos defendeu na FCTE/UnB um TCC que desenvolve um software gamificado para apoiar o ensino de matemática ao público infantil — território pouco atendido pelas soluções edtech.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp
 categories:

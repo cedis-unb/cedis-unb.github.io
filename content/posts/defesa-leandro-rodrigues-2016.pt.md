@@ -5,7 +5,7 @@ draft: false
 weight: 500
 language: pt
 featured_image: "../assets/images/featured/area_Team work and soft skills.png"
-summary: 'Leandro Veloso Rodrigues defendeu na UnB Gama um TCC que investiga o impacto do Programa Ciência sem Fronteiras no desenvolvimento de competências comportamentais dos futuros engenheiros de software.'
+summary: 'Leandro Veloso Rodrigues defendeu na FCTE/UnB um TCC que investiga o impacto do Programa Ciência sem Fronteiras no desenvolvimento de competências comportamentais dos futuros engenheiros de software.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp
 categories:
@@ -17,7 +17,7 @@ tags:
 ---
 Brasília, 7 de julho de 2016
 
-O Programa Ciência sem Fronteiras foi, no início da década, uma das maiores apostas brasileiras em internacionalização acadêmica. **Cinco anos depois do auge do programa, Leandro Veloso Rodrigues defendeu um TCC que se perguntou pelo que ficou** — não em termos de currículos, mas de competências comportamentais desenvolvidas pelos ex-bolsistas ao voltarem para os cursos de Engenharia de Software da UnB Gama. A pesquisa foi orientada pelo Prof. {{< link-interno "/people/sergio_freitas" "Sergio Antônio Andrade de Freitas" >}} e coorientada pela Prof.ª {{< link-interno "/people/fabiana_mendes" "Fabiana Freitas Mendes" >}}.
+O Programa Ciência sem Fronteiras foi, no início da década, uma das maiores apostas brasileiras em internacionalização acadêmica. **Cinco anos depois do auge do programa, Leandro Veloso Rodrigues defendeu um TCC que se perguntou pelo que ficou** — não em termos de currículos, mas de competências comportamentais desenvolvidas pelos ex-bolsistas ao voltarem para os cursos de Engenharia de Software da FCTE/UnB. A pesquisa foi orientada pelo Prof. {{< link-interno "/people/sergio_freitas" "Sergio Antônio Andrade de Freitas" >}} e coorientada pela Prof.ª {{< link-interno "/people/fabiana_mendes" "Fabiana Freitas Mendes" >}}.
 
 O ponto de partida é uma tese que a área vem repetindo sem descanso: em projetos de software, competências comportamentais — social, pessoal e cognitiva — pesam tanto quanto as competências técnicas. Elas se cultivam pela exposição a contextos novos, colegas diferentes e desafios que forçam readaptação. Um período no exterior parece, à primeira vista, a receita perfeita.
 

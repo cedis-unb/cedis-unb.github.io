@@ -5,7 +5,7 @@ draft: false
 weight: 500
 language: pt
 featured_image: "../assets/images/featured/area_Arquitetura de Software.png"
-summary: 'Jonathan Paiva e Luis Henrique Guimarães defenderam na UnB Gama um TCC que substitui sensores e câmeras por colaboração humana para monitorar a situação dos automóveis em uma cidade — o app NotifiCar.'
+summary: 'Jonathan Paiva e Luis Henrique Guimarães defenderam na FCTE/UnB um TCC que substitui sensores e câmeras por colaboração humana para monitorar a situação dos automóveis em uma cidade — o app NotifiCar.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp
 categories:
@@ -18,7 +18,7 @@ tags:
 ---
 Brasília, 6 de julho de 2018
 
-Monitorar a situação dos carros de uma cidade — se estão parados em local irregular, envolvidos em acidente, com problema mecânico — costuma exigir instrumentos caros: sensores digitais, câmeras, processamento de imagem. **Jonathan Nogueira Rufino Batista Paiva e Luis Henrique Nunes Guimarães propuseram um caminho diferente no TCC defendido em julho de 2018 na Faculdade UnB Gama**, sob orientação do Prof. {{< link-interno "/people/andre_lanna" "André Luiz Peron Martins Lanna" >}}: o próprio motorista, com um app, vira o sensor.
+Monitorar a situação dos carros de uma cidade — se estão parados em local irregular, envolvidos em acidente, com problema mecânico — costuma exigir instrumentos caros: sensores digitais, câmeras, processamento de imagem. **Jonathan Nogueira Rufino Batista Paiva e Luis Henrique Nunes Guimarães propuseram um caminho diferente no TCC defendido em julho de 2018 na Faculdade de Ciências e Tecnologias em Engenharia (FCTE)**, sob orientação do Prof. {{< link-interno "/people/andre_lanna" "André Luiz Peron Martins Lanna" >}}: o próprio motorista, com um app, vira o sensor.
 
 O projeto NotifiCar é uma aplicação mobile multiplataforma pensada para receber, por notificação colaborativa, o que sensores digitais forneceriam a custo muito maior. Os autores enfrentam desafios típicos de aplicações desse gênero — sincronização entre plataformas, gestão de identidade, mecanismos de validação — mas o mérito conceitual está na inversão: em vez de instrumentalizar a cidade, instrumentalizar quem já a habita, com incentivos para reportar em tempo real.
 
