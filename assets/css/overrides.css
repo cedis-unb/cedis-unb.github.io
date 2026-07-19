@@ -51,14 +51,22 @@
   font-size: 1.25rem !important;
 }
 
+#profile-content #current-supervisions-section > h3:hover,
 #profile-content #previous-collaborators > h2:hover,
 #profile-content #npublications-section > h2:hover {
   color: #c5272f;
 }
 
+#profile-content #current-supervisions-section > h3 svg,
 #profile-content #previous-collaborators > h2 svg,
 #profile-content #npublications-section > h2 svg {
   flex: 0 0 auto;
+}
+
+#profile-content #current-supervisions-section > h3 > span:first-of-type,
+#profile-content #previous-collaborators > h2 > span:first-of-type,
+#profile-content #npublications-section > h2 > span:first-of-type {
+  margin-left: auto;
 }
 
 #profile-content #current-supervisions-section > .current-supervisions-scroll,
@@ -146,6 +154,7 @@
   box-shadow: none;
 }
 
+.dark #profile-content #current-supervisions-section > h3:hover,
 .dark #profile-content #previous-collaborators > h2:hover,
 .dark #profile-content #npublications-section > h2:hover {
   color: #fecaca;
