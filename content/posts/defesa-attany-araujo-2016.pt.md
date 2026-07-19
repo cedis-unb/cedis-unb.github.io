@@ -24,6 +24,8 @@ A pesquisa retoma a ideia da Fábrica de Experiências — iniciativa de gestão
 
 O tema conversa com {{< link-interno "/areas/soft_skills/" "soft skills e trabalho em equipe" >}} porque, no fim das contas, gestão de conhecimento não é problema de tecnologia: é problema de cultura. Ferramentas ajudam, mas o gesto de contribuir, revisar e reutilizar experiência é o que sustenta a base viva.
 
+A pesquisa também resultou no artigo [_Experience and Innovation Factory: Adaptation of an Experience Factory Model for a Research and Development Laboratory_](https://aisel.aisnet.org/amcis2017/ITAgility/Presentations/1/), publicado em 2017. O artigo apresenta a adaptação do modelo de Fábrica de Experiências para o contexto de laboratório de pesquisa e desenvolvimento.
+
 O TCC pode ser lido na [Biblioteca Digital da Produção Intelectual Discente da UnB](https://www.bdm.unb.br/handle/10483/19802).
 
 ---

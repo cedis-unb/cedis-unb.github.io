@@ -24,6 +24,8 @@ The research revisits the Experience Factory idea — a knowledge management ini
 
 The theme speaks to {{< link-interno "/areas/soft_skills/" "soft skills and teamwork" >}} because, in the end, knowledge management is not a technology problem — it is a culture problem. Tools help, but the gestures of contributing, reviewing, and reusing experience are what sustain a living knowledge base.
 
+The research also led to the paper [_Experience and Innovation Factory: Adaptation of an Experience Factory Model for a Research and Development Laboratory_](https://aisel.aisnet.org/amcis2017/ITAgility/Presentations/1/), published in 2017. The paper presents the adaptation of the Experience Factory model to a research and development laboratory context.
+
 The full text — written in Portuguese — is available at the [UnB Undergraduate Theses Digital Library](https://www.bdm.unb.br/handle/10483/19802).
 
 ---

@@ -25,7 +25,7 @@ The work takes UnB’s on-campus undergraduate programs as scope and uses machin
 
 By linking {{< link-interno "/areas/learning_analytics/" "Learning Analytics" >}} to {{< link-interno "/areas/ai_pln/" "applied machine learning" >}} in educational policy, the work offers UnB — and similar institutions — input to redesign student support systems. It is the kind of contribution that must migrate from PDF to the coordinator’s dashboard to generate impact.
 
-The research also led to the paper [_A systematic review of the factors that impact the prediction of retention and dropout in higher education_](https://hdl.handle.net/10125/102787), published at the 56th Hawaii International Conference on System Sciences. The paper organizes the literature behind the predictive reading explored in the dissertation.
+The research also led to the paper [_A Systematic Review of the Factors that Impact the Prediction of Retention and Dropout in Higher Education_](https://hdl.handle.net/10125/102787), published at the 56th Hawaii International Conference on System Sciences. The paper organizes the literature behind the predictive reading explored in the dissertation.
 
 The defense took place on July 3, 2023 in Brasília. The examining committee was chaired by the advisor, Prof. Dr. Sergio Antônio Andrade de Freitas (FCTE/UnB), and composed of Prof. Dr. Rafael Ferreira Leite de Mello (UFRPE) and Prof. Dr. Andrea Felippe Cabello (FACE/UnB). Prof. Dr. Gladston Luiz da Silva, PPCA program coordinator, also attended the session.
 

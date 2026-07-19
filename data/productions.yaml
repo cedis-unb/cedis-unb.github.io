@@ -1473,10 +1473,10 @@ items:
   - MENEZES, A. E. M.
   - ARAUJO, L. K. S. R.
   title:
-    pt: A systematic review of the factors that impact the prediction of retention
-      and dropout in higher education
-    en: A systematic review of the factors that impact the prediction of retention
-      and dropout in higher education
+    pt: A Systematic Review of the Factors that Impact the Prediction of Retention
+      and Dropout in Higher Education
+    en: A Systematic Review of the Factors that Impact the Prediction of Retention
+      and Dropout in Higher Education
   summary:
     pt: ''
     en: ''
@@ -5216,7 +5216,7 @@ administrative and operational activities of the Brazilian Army."
   doi_isbn: 10.5753/cbie.sbie.2016.370
   journal_event: XXVII Simpósio Brasileiro de Informática na Educação
   location: Uberlandia
-  pages: ''
+  pages: 370-379
   publisher: ''
   tags:
   - gamification
@@ -5385,7 +5385,7 @@ administrative and operational activities of the Brazilian Army."
   doi_isbn: 10.5753/cbie.sbie.2016.510
   journal_event: XXVII Simpósio Brasileiro de Informática na Educação
   location: Uberlandia
-  pages: ''
+  pages: 510-519
   publisher: ''
   tags:
   - gamification
@@ -5410,7 +5410,7 @@ administrative and operational activities of the Brazilian Army."
   doi_isbn: 10.5753/cbie.sbie.2016.159
   journal_event: XXVII Simpósio Brasileiro de Informática na Educação
   location: Uberlandia
-  pages: ''
+  pages: 159-168
   publisher: ''
   tags:
   - teamwork
@@ -5749,6 +5749,30 @@ administrative and operational activities of the Brazilian Army."
   - sergio_freitas
   url: https://www.bdm.unb.br/handle/10483/21591
   defense_date: 2016-07-02
+  year: 2016
+- authors:
+  - Bruna Nayara Lima
+  title:
+    pt: 'Framework for Evaluating Educational Games: Motivational and Learning Aspects'
+    en: 'Framework for Evaluating Educational Games: Motivational and Learning Aspects'
+  summary:
+    pt: ''
+    en: ''
+  book_title: ''
+  volume: ''
+  doi_isbn: ''
+  journal_event: ''
+  location: ''
+  pages: ''
+  publisher: Biblioteca Central da Universidade de Brasília
+  tags:
+  - gamification
+  - education
+  type: tcc
+  program: curso_esw
+  advisors:
+  - sergio_freitas
+  url: ''
   year: 2016
 - authors:
   - Wilker Mesquita de Assunção

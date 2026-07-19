@@ -91,7 +91,7 @@ nav_next: true
 
 ## {{< i18n "people_contact" >}}
 - {{< i18n "people_contact_professional" >}}: Universidade de Brasília, Faculdade de Ciências e Tecnologias em Engenharia (FCTE), Campus Gama, Área Especial de Indústria Projeção A, Setor Leste (Gama), Brasília - DF, Brasil. CEP 72.444-240.
-- Homepage institucional: [FCTE/UnB](https://fcte.unb.br/)
+- Site institucional: [FCTE/UnB](https://fcte.unb.br/)
 - Telefone: (61) 3107-8901
 
 {{< backToTopBtn target="top" >}}

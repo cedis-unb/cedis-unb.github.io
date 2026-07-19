@@ -23,6 +23,8 @@ O ponto de partida é uma tese que a área vem repetindo sem descanso: em projet
 
 O TCC investiga se essa promessa se cumpre. Em vez de tratar o programa como monumento intocado, o trabalho leva a sério a pergunta empírica: quais habilidades comportamentais foram efetivamente desenvolvidas, e como esse desenvolvimento aparece no cotidiano acadêmico dos alunos que retornaram. É um exercício de {{< link-interno "/areas/soft_skills/" "soft skills" >}} raro na literatura brasileira, e que ganha valor de documento à medida que o Ciência sem Fronteiras é discutido em novos moldes.
 
+O trabalho também resultou no artigo [_Um estudo sobre o perfil das equipes de desenvolvimento de softwares educacionais_](https://doi.org/10.5753/cbie.sbie.2016.159), publicado no XXVII Simpósio Brasileiro de Informática na Educação, em Uberlândia, em 2016, nas páginas 159-168. O artigo registra Leandro entre os autores e amplia a discussão sobre perfis de equipe em softwares educacionais.
+
 O TCC está disponível na [Biblioteca Digital da Produção Intelectual Discente da UnB](https://www.bdm.unb.br/handle/10483/14867).
 
 ---

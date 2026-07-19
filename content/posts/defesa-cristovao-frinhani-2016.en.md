@@ -27,6 +27,8 @@ The idea is elegant because it combines {{< link-interno "/areas/ai_pln/" "natur
 
 The thesis was advised inside the research line on {{< link-interno "/areas/active_learning/" "active learning" >}} and educational technologies that has long marked Prof. Sergio Freitas’s work at CEDIS, and anticipates — in an academic setting — questions the community would revisit with force after 2022 as large language models became mainstream: how to calibrate automated assessments in contexts where errors are pedagogically costly.
 
+The research also led to two papers with Cristóvão among the authors: [_An automatic essay correction for an active learning environment_](https://doi.org/10.1109/AICCSA.2016.7945769), published in 2016, and [_Evaluation of an Automatic Essay Correction System Used as an Assessment Tool_](https://doi.org/10.1007/978-3-319-58700-4_18), published in the proceedings of the 19th International Conference on Human-Computer Interaction in 2017. The papers bring the automatic-grading proposal into scientific article form.
+
 The work, defended at the FCTE/UnB and written in Portuguese, is available at the [UnB Undergraduate Theses Digital Library](https://bdm.unb.br/handle/10483/14871).
 
 ---

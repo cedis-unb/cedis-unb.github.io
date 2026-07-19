@@ -24,6 +24,8 @@ O trabalho parte de uma revisão sistemática da literatura para identificar qua
 
 O achado tem valor para {{< link-interno "/areas/learning_analytics/" "Learning Analytics" >}} e para políticas institucionais: coordenar decisões pedagógicas com evidências de risco permite intervenções direcionadas — em vez de campanhas genéricas, cujo efeito nunca se sabe medir. É um trabalho que sinaliza uma direção clara para universidades dispostas a levar dados a sério.
 
+O TCC também se conecta ao artigo [_A Systematic Review of the Factors that Impact the Prediction of Retention and Dropout in Higher Education_](https://hdl.handle.net/10125/102787), publicado na 56th Hawaii International Conference on System Sciences em 2023, com Amanda e Letícia entre as autoras. O artigo sistematiza a literatura que embasa a etapa preditiva do trabalho.
+
 O TCC pode ser lido na [Biblioteca Digital da Produção Intelectual Discente da UnB](https://bdm.unb.br/handle/10483/34952).
 
 ---
