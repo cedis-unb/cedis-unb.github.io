@@ -93,7 +93,7 @@ nav_next: true
 - {{< i18n "people_contact_professional" >}}: Universidade de Brasília, Campus Gama, Área Especial de Indústria Projeção A - UnB, Setor Leste (Gama), Brasília - DF, Brasil.
 - Telefone: (61) 3107-8901
 - Homepage: [FCTE/UnB](https://fcte.unb.br/)
-- Lattes iD: [CV Lattes](http://lattes.cnpq.br/2619423058109475)
+- Lattes iD: [CV Lattes](https://lattes.cnpq.br/2619423058109475)
 - Orcid iD: [Orcid Profile](https://orcid.org/0000-0002-5147-3698)
 
 {{< backToTopBtn target="top" >}}

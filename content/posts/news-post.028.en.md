@@ -1,6 +1,6 @@
 ---
 title: "Paper on EduTrack's diagnostic instrument accepted at SBIE 2026"
-date: 2026-07-16T09:00:00-03:00
+date: 2026-07-10T09:00:00-03:00
 draft: false
 weight: 500
 language: en
@@ -18,7 +18,7 @@ tags:
 - active_learning
 ---
 
-Brasília, July 16, 2026
+Brasília, July 10, 2026
 
 **The paper _A Motivation-Aware Diagnostic Instrument for Personalized and Gamified Computing Education_ has been accepted at the XXXVII Brazilian Symposium on Computers in Education (SBIE 2026, submission #27258).**
 
