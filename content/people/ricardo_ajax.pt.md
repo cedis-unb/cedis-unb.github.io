@@ -92,5 +92,6 @@ nav_next: true
 - Telefone: (61) 3107-8901
 - Homepage: [FCTE/UnB](https://fcte.unb.br/)
 - Lattes iD: [CV Lattes](http://lattes.cnpq.br/8309011123228244)
+- Orcid iD: [Orcid Profile](https://orcid.org/0000-0003-0156-0205)
 
 {{< backToTopBtn target="top" >}}
