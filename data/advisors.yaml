@@ -67,7 +67,7 @@ advisors:
     name: "Ricardo Ajax"
     link: "/people/ricardo_ajax"
     lattes: http://lattes.cnpq.br/8309011123228244
-    orcid:
+    orcid: https://orcid.org/0000-0003-0156-0205
     email:
     areas: 
       - active_learning
