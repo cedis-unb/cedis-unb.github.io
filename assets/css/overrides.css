@@ -67,9 +67,43 @@
   font-size: 0.875rem !important;
 }
 
+#profile-content > h2[id="áreas-de-pesquisa"] + .not-prose,
+#profile-content > h2[id="research-areas"] + .not-prose {
+  margin-top: 1rem !important;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr)) !important;
+  gap: 0.75rem !important;
+}
+
+#profile-content > h2[id="áreas-de-pesquisa"] + .not-prose article,
+#profile-content > h2[id="research-areas"] + .not-prose article {
+  border-radius: 1rem !important;
+  box-shadow: 0 8px 26px rgba(15, 23, 42, 0.06) !important;
+}
+
+#profile-content > h2[id="áreas-de-pesquisa"] + .not-prose article > a:first-child,
+#profile-content > h2[id="research-areas"] + .not-prose article > a:first-child,
+#profile-content > h2[id="áreas-de-pesquisa"] + .not-prose article p,
+#profile-content > h2[id="research-areas"] + .not-prose article p,
+#profile-content > h2[id="áreas-de-pesquisa"] + .not-prose article [class*="mt-auto"],
+#profile-content > h2[id="research-areas"] + .not-prose article [class*="mt-auto"] {
+  display: none !important;
+}
+
+#profile-content > h2[id="áreas-de-pesquisa"] + .not-prose article > div,
+#profile-content > h2[id="research-areas"] + .not-prose article > div {
+  padding: 0.95rem 1rem !important;
+}
+
+#profile-content > h2[id="áreas-de-pesquisa"] + .not-prose article > div > a,
+#profile-content > h2[id="research-areas"] + .not-prose article > div > a {
+  font-size: 0.98rem !important;
+  line-height: 1.35 !important;
+}
+
 #profile-content #current-supervisions-section,
 #profile-content #previous-collaborators,
-#profile-content #npublications-section {
+#profile-content #npublications-section,
+#profile-content #researcher-products {
   margin-top: 2.25rem;
   border: 1px solid rgba(15, 23, 42, 0.08);
   border-radius: 1.35rem;
@@ -79,7 +113,8 @@
 
 #profile-content #current-supervisions-section > h3,
 #profile-content #previous-collaborators > h2,
-#profile-content #npublications-section > h2 {
+#profile-content #npublications-section > h2,
+#profile-content #researcher-products > h2 {
   margin: 0 !important;
   border-top: 0 !important;
   border-radius: 1rem;
@@ -98,25 +133,29 @@
 
 #profile-content #current-supervisions-section > h3:hover,
 #profile-content #previous-collaborators > h2:hover,
-#profile-content #npublications-section > h2:hover {
+#profile-content #npublications-section > h2:hover,
+#profile-content #researcher-products > h2:hover {
   color: #c5272f;
 }
 
 #profile-content #current-supervisions-section > h3 svg,
 #profile-content #previous-collaborators > h2 svg,
-#profile-content #npublications-section > h2 svg {
+#profile-content #npublications-section > h2 svg,
+#profile-content #researcher-products > h2 svg {
   flex: 0 0 auto;
 }
 
 #profile-content #current-supervisions-section > h3 > span:first-of-type,
 #profile-content #previous-collaborators > h2 > span:first-of-type,
-#profile-content #npublications-section > h2 > span:first-of-type {
+#profile-content #npublications-section > h2 > span:first-of-type,
+#profile-content #researcher-products > h2 > span:first-of-type {
   margin-left: auto;
 }
 
 #profile-content #current-supervisions-section > .current-supervisions-scroll,
 #profile-content #previous-collaborators > div[x-show],
-#profile-content #npublications-section > div[x-show] {
+#profile-content #npublications-section > div[x-show],
+#profile-content #researcher-products > div[x-show] {
   margin-top: 1rem;
   max-height: min(72vh, 52rem);
   overflow-y: auto;
@@ -160,13 +199,16 @@
 #profile-content #previous-collaborators ul,
 #profile-content #previous-collaborators ol,
 #profile-content #npublications-section ul,
-#profile-content #npublications-section ol {
+#profile-content #npublications-section ol,
+#profile-content #researcher-products ul,
+#profile-content #researcher-products ol {
   gap: 0.75rem;
 }
 
 #profile-content #current-supervisions-section li,
 #profile-content #previous-collaborators li,
-#profile-content #npublications-section li {
+#profile-content #npublications-section li,
+#profile-content #researcher-products li {
   border-radius: 1rem;
   box-shadow: 0 8px 26px rgba(15, 23, 42, 0.06);
 }
@@ -180,7 +222,8 @@
 
 #profile-content #current-supervisions-section li p,
 #profile-content #previous-collaborators li p,
-#profile-content #npublications-section li p {
+#profile-content #npublications-section li p,
+#profile-content #researcher-products li p {
   font-size: 0.95rem !important;
   line-height: 1.58 !important;
 }
@@ -194,13 +237,15 @@
 @media (max-width: 640px) {
   #profile-content #current-supervisions-section,
   #profile-content #previous-collaborators,
-  #profile-content #npublications-section {
+  #profile-content #npublications-section,
+  #profile-content #researcher-products {
     padding: 0.7rem;
   }
 
   #profile-content #current-supervisions-section > h3,
   #profile-content #previous-collaborators > h2,
-  #profile-content #npublications-section > h2 {
+  #profile-content #npublications-section > h2,
+  #profile-content #researcher-products > h2 {
     align-items: center;
     font-size: 1.15rem !important;
     line-height: 1.2;
@@ -209,21 +254,24 @@
 
   #profile-content #current-supervisions-section > .current-supervisions-scroll,
   #profile-content #previous-collaborators > div[x-show],
-  #profile-content #npublications-section > div[x-show] {
+  #profile-content #npublications-section > div[x-show],
+  #profile-content #researcher-products > div[x-show] {
     max-height: 68vh;
   }
 }
 
 .dark #profile-content #current-supervisions-section,
 .dark #profile-content #previous-collaborators,
-.dark #profile-content #npublications-section {
+.dark #profile-content #npublications-section,
+.dark #profile-content #researcher-products {
   border-color: rgba(255, 255, 255, 0.1);
   background: rgba(255, 255, 255, 0.035);
 }
 
 .dark #profile-content #current-supervisions-section > h3,
 .dark #profile-content #previous-collaborators > h2,
-.dark #profile-content #npublications-section > h2 {
+.dark #profile-content #npublications-section > h2,
+.dark #profile-content #researcher-products > h2 {
   background: rgba(255, 255, 255, 0.06);
   color: #fff;
   box-shadow: none;
@@ -231,7 +279,8 @@
 
 .dark #profile-content #current-supervisions-section > h3:hover,
 .dark #profile-content #previous-collaborators > h2:hover,
-.dark #profile-content #npublications-section > h2:hover {
+.dark #profile-content #npublications-section > h2:hover,
+.dark #profile-content #researcher-products > h2:hover {
   color: #fecaca;
 }
 
