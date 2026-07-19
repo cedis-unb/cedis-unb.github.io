@@ -89,6 +89,7 @@
 
 {{ $areaOpenLabel := i18n "ui_open_area" }}
 {{ $projectOpenLabel := i18n "ui_awards_see_project" }}
+{{ $projectsLabel := i18n "ui_current_projects" }}
 {{ $isProjectsView := and $filterSection (eq $filterSection "projects") }}
 
 {{ if gt (len $matches) 0 }}
@@ -150,43 +151,52 @@
       {{ end }}
     </div>
   {{ else if $isProjectsView }}
-    <div class="not-prose profile-projects-grid">
-      {{ range $matches }}
-        {{ $cardPage := . }}
-        {{ $summary := .Params.summary | default (.Summary | plainify | htmlUnescape | strings.TrimSpace) }}
-        {{ $dateLabel := "" }}
-        {{ with .Date }}
-          {{ $dateLabel = .Format "2006" }}
-        {{ end }}
-        <article class="profile-project-card">
-          <a href="{{ .RelPermalink }}" class="profile-project-card__media" aria-label="{{ $projectOpenLabel }}: {{ .Title }}">
-            {{ with .Params.featured_image }}
-              {{ $featuredPath := replace . "../assets/" "" }}
-              {{ with resources.Get $featuredPath }}
-                {{ $image := .Fill "720x420 webp q88" }}
-                <img src="{{ $image.RelPermalink }}" alt="{{ printf "%s: %s" (i18n "ui_alt_project_visual") $cardPage.Title }}" loading="lazy">
-              {{ else }}
-                <span>{{ $cardPage.Title }}</span>
-              {{ end }}
-            {{ else }}
-              <span>{{ $cardPage.Title }}</span>
+    <div id="researcher-projects" x-data="{ showProjects: false }">
+      <h2 id="researcher-projects-title" @click="showProjects = !showProjects" class="text-xl font-bold mb-2 cursor-pointer flex items-center text-primary-900">
+        {{ $projectsLabel }}
+        <span class="ml-2 inline-flex items-center rounded-full border border-primary-200 bg-primary-50 px-2.5 py-1 text-sm font-black text-primary-700 dark:border-primary-400/25 dark:bg-primary-500/10 dark:text-primary-100">{{ len $matches }}</span>
+        <svg :class="{'rotate-0': !showProjects, 'rotate-180': showProjects}" class="ml-2 h-5 w-5 transform transition-transform duration-200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#51C5CF"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
+      </h2>
+      <div x-show="showProjects" x-cloak>
+        <div class="not-prose profile-projects-grid">
+          {{ range $matches }}
+            {{ $cardPage := . }}
+            {{ $summary := .Params.summary | default (.Summary | plainify | htmlUnescape | strings.TrimSpace) }}
+            {{ $dateLabel := "" }}
+            {{ with .Date }}
+              {{ $dateLabel = .Format "2006" }}
             {{ end }}
-          </a>
-          <div class="profile-project-card__body">
-            {{ if $dateLabel }}
-              <p class="profile-project-card__meta">{{ $dateLabel }}</p>
-            {{ end }}
-            <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
-            {{ with $summary }}
-              <p>{{ . | truncate 150 }}</p>
-            {{ end }}
-            <a href="{{ .RelPermalink }}" class="profile-project-card__link">
-              <span>{{ $projectOpenLabel }}</span>
-              <span aria-hidden="true">→</span>
-            </a>
-          </div>
-        </article>
-      {{ end }}
+            <article class="profile-project-card">
+              <a href="{{ .RelPermalink }}" class="profile-project-card__media" aria-label="{{ $projectOpenLabel }}: {{ .Title }}">
+                {{ with .Params.featured_image }}
+                  {{ $featuredPath := replace . "../assets/" "" }}
+                  {{ with resources.Get $featuredPath }}
+                    {{ $image := .Fill "720x420 webp q88" }}
+                    <img src="{{ $image.RelPermalink }}" alt="{{ printf "%s: %s" (i18n "ui_alt_project_visual") $cardPage.Title }}" loading="lazy">
+                  {{ else }}
+                    <span>{{ $cardPage.Title }}</span>
+                  {{ end }}
+                {{ else }}
+                  <span>{{ $cardPage.Title }}</span>
+                {{ end }}
+              </a>
+              <div class="profile-project-card__body">
+                {{ if $dateLabel }}
+                  <p class="profile-project-card__meta">{{ $dateLabel }}</p>
+                {{ end }}
+                <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+                {{ with $summary }}
+                  <p>{{ . | truncate 150 }}</p>
+                {{ end }}
+                <a href="{{ .RelPermalink }}" class="profile-project-card__link">
+                  <span>{{ $projectOpenLabel }}</span>
+                  <span aria-hidden="true">→</span>
+                </a>
+              </div>
+            </article>
+          {{ end }}
+        </div>
+      </div>
     </div>
   {{ else }}
     <ul>
