@@ -1,5 +1,5 @@
 ---
-title: "TCC de estudantes do CEDIS dá origem ao Git Ranking, aplicação gamificada para equipes ágeis no GitHub"
+title: "TCC de estudantes de Engenharia de Software dá origem ao Git Ranking, aplicação gamificada para equipes ágeis no GitHub"
 date: 2026-07-14T09:00:00-03:00
 draft: false
 weight: 500

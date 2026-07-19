@@ -1,1 +1,54 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Green Software on CEDIS</title><link>https://cedis.unb.br/tags/green_software/</link><description>Recent content in Green Software on CEDIS</description><generator>Hugo</generator><language>en</language><lastBuildDate>Thu, 16 Jul 2026 16:18:54 -0300</lastBuildDate><atom:link href="https://cedis.unb.br/tags/green_software/index.xml" rel="self" type="application/rss+xml"/><item><title>Green Software Development</title><link>https://cedis.unb.br/areas/green_software/</link><pubDate>Wed, 14 Feb 2024 00:43:11 -0300</pubDate><guid>https://cedis.unb.br/areas/green_software/</guid><description>The area of Green Software Development, or Sustainable Software Development, is an emerging field in software engineering focused on creating software with minimal environmental impact.</description></item><item><title>Green Software Development Project</title><link>https://cedis.unb.br/projects/gsd/</link><pubDate>Wed, 14 Feb 2024 17:08:50 -0300</pubDate><guid>https://cedis.unb.br/projects/gsd/</guid><description>This project aims to highlight the importance of understanding the field of Green Software Development and bringing it into companies.</description></item><item><title>People</title><link>https://cedis.unb.br/people/fabiana_mendes/</link><pubDate>Thu, 01 Mar 2018 00:00:00 -0300</pubDate><guid>https://cedis.unb.br/people/fabiana_mendes/</guid><description>Associate Professor at the University of Brasília (UnB), working in the undergraduate Software Engineering program.</description></item><item><title>Tailored deploy: an undergraduate thesis automates individualized AgroMart deployments</title><link>https://cedis.unb.br/posts/defesa-andre-freitas-2023/</link><pubDate>Tue, 14 Feb 2023 00:00:00 -0300</pubDate><guid>https://cedis.unb.br/posts/defesa-andre-freitas-2023/</guid><description>André Aben-Athar de Freitas and Pedro Vitor de Salles Cella defended at UnB Gama an undergraduate thesis automating the individualized deployment process of AgroMart — allowing each CSA to run its own instance.</description></item><item><title>Agro mart evolves an undergraduate thesis opens the source, adds payments, and manages co farmers</title><link>https://cedis.unb.br/posts/defesa-byron-correa-2022/</link><pubDate>Mon, 09 May 2022 00:00:00 -0300</pubDate><guid>https://cedis.unb.br/posts/defesa-byron-correa-2022/</guid><description>Byron Kamal Barreto Correa and Igor Guimaraes Veludo defended at UnB Gama an important step in AgroMart’s story: open-sourcing the codebase, integrating payment methods, and designing the co-farmer management module.</description></item><item><title>AgroMart is born: a duo introduces a platform for family farming in a 2021 undergraduate thesis</title><link>https://cedis.unb.br/posts/defesa-lucas-macedo-2021/</link><pubDate>Thu, 27 May 2021 00:00:00 -0300</pubDate><guid>https://cedis.unb.br/posts/defesa-lucas-macedo-2021/</guid><description>Lucas Pereira de Andrade Macêdo and Lucas Siqueira Rodrigues defended at UnB Gama the undergraduate thesis that gives birth to AgroMart — a platform to bring small farmers closer to consumers of organic and artisanal products.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Green Software on CEDIS</title>
+    <link>https://cedis.unb.br/tags/green_software/</link>
+    <description>Recent content in Green Software on CEDIS</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 19 Jul 2026 09:58:21 -0300</lastBuildDate>
+    <atom:link href="https://cedis.unb.br/tags/green_software/index.xml" rel="self" type="application/rss&#43;xml" />
+    <item>
+      <title>Green Software Development</title>
+      <link>https://cedis.unb.br/areas/green_software/</link>
+      <pubDate>Wed, 14 Feb 2024 00:43:11 -0300</pubDate>
+      <guid>https://cedis.unb.br/areas/green_software/</guid>
+      <description>The area of Green Software Development, or Sustainable Software Development, is an emerging field in software engineering focused on creating software with minimal environmental impact.</description>
+    </item>
+    <item>
+      <title>Green Software Development Project</title>
+      <link>https://cedis.unb.br/projects/gsd/</link>
+      <pubDate>Wed, 14 Feb 2024 17:08:50 -0300</pubDate>
+      <guid>https://cedis.unb.br/projects/gsd/</guid>
+      <description>This project aims to highlight the importance of understanding the field of Green Software Development and bringing it into companies.</description>
+    </item>
+    <item>
+      <title>People</title>
+      <link>https://cedis.unb.br/people/fabiana_mendes/</link>
+      <pubDate>Thu, 01 Mar 2018 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/people/fabiana_mendes/</guid>
+      <description>Associate Professor at the University of Brasília (UnB), working in the undergraduate Software Engineering program.</description>
+    </item>
+    <item>
+      <title>Tailored deploy: an undergraduate thesis automates individualized AgroMart deployments</title>
+      <link>https://cedis.unb.br/posts/defesa-andre-freitas-2023/</link>
+      <pubDate>Tue, 14 Feb 2023 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/posts/defesa-andre-freitas-2023/</guid>
+      <description>André Aben-Athar de Freitas and Pedro Vitor de Salles Cella defended at UnB Gama an undergraduate thesis automating the individualized deployment process of AgroMart — allowing each CSA to run its own instance.</description>
+    </item>
+    <item>
+      <title>Agro mart evolves an undergraduate thesis opens the source, adds payments, and manages co farmers</title>
+      <link>https://cedis.unb.br/posts/defesa-byron-correa-2022/</link>
+      <pubDate>Mon, 09 May 2022 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/posts/defesa-byron-correa-2022/</guid>
+      <description>Byron Kamal Barreto Correa and Igor Guimaraes Veludo defended at UnB Gama an important step in AgroMart’s story: open-sourcing the codebase, integrating payment methods, and designing the co-farmer management module.</description>
+    </item>
+    <item>
+      <title>AgroMart is born: a duo introduces a platform for family farming in a 2021 undergraduate thesis</title>
+      <link>https://cedis.unb.br/posts/defesa-lucas-macedo-2021/</link>
+      <pubDate>Thu, 27 May 2021 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/posts/defesa-lucas-macedo-2021/</guid>
+      <description>Lucas Pereira de Andrade Macêdo and Lucas Siqueira Rodrigues defended at UnB Gama the undergraduate thesis that gives birth to AgroMart — a platform to bring small farmers closer to consumers of organic and artisanal products.</description>
+    </item>
+  </channel>
+</rss>

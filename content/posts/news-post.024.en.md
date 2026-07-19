@@ -1,5 +1,5 @@
 ---
-title: "CEDIS students' thesis gives rise to Atloria, an augmented reality app for teaching data structures"
+title: "Software Engineering students' thesis gives rise to Atloria, an augmented reality app for teaching data structures"
 date: 2026-07-07T09:00:00-03:00
 draft: false
 weight: 500
