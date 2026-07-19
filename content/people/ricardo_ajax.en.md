@@ -88,7 +88,7 @@ nav_next: true
 
 ## {{< i18n "people_contact" >}}
 - {{< i18n "people_contact_professional" >}}: University of Brasília, Faculty of Sciences and Technologies in Engineering (FCTE), Gama Campus, Área Especial de Indústria Projeção A, Setor Leste (Gama), Brasília - DF, Brazil. Postal code 72.444-240.
-- Institutional homepage: [FCTE/UnB](https://fcte.unb.br/)
+- Institutional website: [FCTE/UnB](https://fcte.unb.br/)
 - Phone: (61) 3107-8901
 
 {{< backToTopBtn target="top" >}}

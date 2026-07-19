@@ -88,6 +88,8 @@
 {{ end }}
 
 {{ $areaOpenLabel := i18n "ui_open_area" }}
+{{ $projectOpenLabel := i18n "ui_awards_see_project" }}
+{{ $isProjectsView := and $filterSection (eq $filterSection "projects") }}
 
 {{ if gt (len $matches) 0 }}
   {{ if $caput }}
@@ -143,6 +145,45 @@
                 <span aria-hidden="true">→</span>
               </a>
             </div>
+          </div>
+        </article>
+      {{ end }}
+    </div>
+  {{ else if $isProjectsView }}
+    <div class="not-prose profile-projects-grid">
+      {{ range $matches }}
+        {{ $cardPage := . }}
+        {{ $summary := .Params.summary | default (.Summary | plainify | htmlUnescape | strings.TrimSpace) }}
+        {{ $dateLabel := "" }}
+        {{ with .Date }}
+          {{ $dateLabel = .Format "2006" }}
+        {{ end }}
+        <article class="profile-project-card">
+          <a href="{{ .RelPermalink }}" class="profile-project-card__media" aria-label="{{ $projectOpenLabel }}: {{ .Title }}">
+            {{ with .Params.featured_image }}
+              {{ $featuredPath := replace . "../assets/" "" }}
+              {{ with resources.Get $featuredPath }}
+                {{ $image := .Fill "720x420 webp q88" }}
+                <img src="{{ $image.RelPermalink }}" alt="{{ printf "%s: %s" (i18n "ui_alt_project_visual") $cardPage.Title }}" loading="lazy">
+              {{ else }}
+                <span>{{ $cardPage.Title }}</span>
+              {{ end }}
+            {{ else }}
+              <span>{{ $cardPage.Title }}</span>
+            {{ end }}
+          </a>
+          <div class="profile-project-card__body">
+            {{ if $dateLabel }}
+              <p class="profile-project-card__meta">{{ $dateLabel }}</p>
+            {{ end }}
+            <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+            {{ with $summary }}
+              <p>{{ . | truncate 150 }}</p>
+            {{ end }}
+            <a href="{{ .RelPermalink }}" class="profile-project-card__link">
+              <span>{{ $projectOpenLabel }}</span>
+              <span aria-hidden="true">→</span>
+            </a>
           </div>
         </article>
       {{ end }}
