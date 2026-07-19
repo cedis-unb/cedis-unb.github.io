@@ -110,6 +110,7 @@ mas a página de perfil está em `/people/daniel_lima`.
 | `article` | Artigo em periódico |
 | `book` | Livro |
 | `book_section` | Capítulo de livro |
+| `book chapter` | Capítulo de livro (variante legada; preferir `book_section` em novos itens) |
 | `conference` | Trabalho completo em anais |
 | `workshop` | Resumo expandido / trabalho em workshop |
 | `tcc` | Trabalho de Conclusão de Curso (graduação) |
@@ -166,6 +167,63 @@ handle. Ao inserir novo TCC de dupla:
 1. Verifique se algum dos autores já está no `productions.yaml`.
 2. Se sim, adicione o coautor à entrada existente.
 3. Nunca crie linha nova apontando para handle já registrado.
+
+### 2.7 Tags de pesquisador em publicações
+
+Toda produção científica, defesa, registro ou produto acadêmico que
+deva aparecer no perfil de um pesquisador precisa ter o slug do
+pesquisador em `tags:` e, quando for orientação, também em
+`advisors:`.
+
+Exemplo:
+
+```yaml
+tags:
+- gamification
+- software_quality
+- sergio_freitas
+advisors:
+- sergio_freitas
+```
+
+Regras:
+
+- `advisors:` define vínculo de orientação.
+- `tags:` define indexação temática e associação com páginas de
+  pesquisador, categorias e listas de publicações.
+- Se o autor CEDIS participa de um artigo mas não é orientador, ainda
+  assim inclua o slug em `tags:`.
+- Ao revisar publicações de um pesquisador, conferir se todas as
+  entradas esperadas têm o slug correto; ausência do slug é a causa
+  mais comum de publicação não aparecer no perfil.
+
+### 2.8 Publicações científicas vs. orientações
+
+Use "publicações científicas" apenas para produção acadêmica publicada:
+
+- `article`
+- `conference`
+- `workshop`
+- `book`
+- `book_section`
+- `book chapter` (legado)
+
+Não trate como "artigo científico":
+
+- `tcc`
+- `dissertation`
+- `phd`
+- `specialization`
+- `registro`
+
+Esses itens contam como produção/orientação/registro conforme o
+contexto, mas não devem entrar em vitrines de "publicações em destaque"
+quando a intenção for exibir artigos científicos recentes.
+
+Recortes específicos já adotados:
+
+- Publicações de Ricardo Ajax Dias Kosloski no CEDIS devem considerar
+  **2014 em diante**.
 
 ---
 
@@ -307,6 +365,25 @@ Extraia banca via `pdfplumber` (as 5 primeiras páginas geralmente
 bastam). Preserve titulação (Prof. Dr., Prof.ª Dr.ª) e vínculo
 (CIC/UnB, FCTE/UnB, PPCA, PPEE, IMD/UFRN, PPGI/PUC-PR, etc.).
 
+### 3.8 Vínculo entre defesa e artigo publicado
+
+Algumas defesas de TCC, mestrado ou doutorado geram artigo científico
+com o aluno como autor. Quando isso acontecer, a notícia da defesa deve
+mencionar a ligação com o(s) artigo(s) publicado(s).
+
+Regras:
+
+- Procurar o nome do aluno em `data/productions.yaml` antes de concluir
+  a notícia.
+- Vincular na notícia todos os artigos científicos claramente
+  relacionados ao trabalho defendido.
+- Usar link direto quando houver `url` ou DOI no item de produção.
+- Não vincular automaticamente artigos antigos ou de outro ciclo de
+  formação apenas porque o aluno tem o mesmo nome.
+- Cuidado especial: **Arthur Temporim** tem artigo anterior ligado à
+  graduação e outro ligado ao mestrado; em notícias do mestrado, não
+  confundir os dois.
+
 ---
 
 ## 4. Perfis de pesquisadores (`content/people/*.md`)
@@ -315,6 +392,57 @@ bastam). Preserve titulação (Prof. Dr., Prof.ª Dr.ª) e vínculo
 - Campo `Site institucional` do professor aponta para a página oficial da FCTE:
   `[FCTE/UnB](https://fcte.unb.br/)`.
 - Endereço em contato: `Universidade de Brasília, Campus Gama, ...`.
+- Em português, use **"Site institucional"**; evite "Homepage
+  institucional". Em inglês, prefira **"Institutional website"** em vez
+  de "Institutional homepage".
+
+### 4.1 Estrutura editorial dos perfis
+
+As páginas de pesquisadores devem priorizar leitura rápida e valor
+acadêmico antes do currículo formal.
+
+Ordem recomendada:
+
+1. Perfil acadêmico/profissional.
+2. Bloco automático **Atuação em destaque**.
+3. Áreas de pesquisa.
+4. Produtos vinculados, quando houver.
+5. Projetos atuais.
+6. Orientações atuais e anteriores.
+7. Publicações em destaque e lista completa de publicações.
+8. Formação acadêmica.
+9. Contato.
+
+Regras de layout:
+
+- "Áreas de pesquisa" devem ser compactas; esconder descrições longas
+  e imagens quando o contexto for a página do pesquisador.
+- "Produtos" deve seguir o mesmo padrão de orientações/publicações:
+  bloco colapsável, contador à direita, lista rolável quando houver
+  muitos itens.
+- "Orientações atuais", "Orientações anteriores", "Produtos" e
+  "Publicações" começam fechados por padrão.
+- Contadores desses blocos ficam alinhados à direita do título.
+- Se a contagem de qualquer indicador for **0**, não exibir o item nem
+  o zero. Isso vale para cards laterais, resumo executivo, badges e
+  blocos automáticos.
+- A tipografia dos perfis deve ser normalizada via
+  `assets/css/overrides.css`; evitar tamanhos avulsos em Markdown.
+
+### 4.2 Publicações nos perfis de pesquisadores
+
+O perfil do pesquisador depende do vínculo correto em
+`data/productions.yaml`:
+
+- Para aparecer na lista completa do pesquisador, o item deve conter o
+  slug do pesquisador em `tags:`.
+- Para contar como orientação anterior, o item de defesa deve conter o
+  slug em `advisors:`.
+- O bloco "Publicações em destaque" deve selecionar apenas tipos
+  científicos (§2.8), preferindo itens recentes.
+- Se um pesquisador tem número esperado de publicações diferente do
+  exibido, verifique primeiro os slugs em `tags:` antes de alterar
+  templates.
 
 ---
 
@@ -436,6 +564,23 @@ Card | Cálculo | Fonte
 **Produtos** | páginas em `content/products/` | `content/products/`
 **Pesquisadores** | páginas em `content/people/` com categoria `researcher` | `content/people/*.md`
 **Orientações** | **`len(hugo.Data.people.people)`** — total de entradas em `people.yaml` (ativas + inativas) | `data/people.yaml`
+
+### Página de pesquisador (`/people/<slug>/`)
+
+Card | Cálculo | Fonte
+---|---|---
+**Orientações atuais** | entradas em `data/people.yaml` com `advisors` contendo o slug e sem tag `inactive` | `data/people.yaml`
+**Orientações anteriores** | itens `phd`, `dissertation`, `specialization`, `tcc` em `productions.yaml` com `advisors` contendo o slug e sem tag `active`, mais pessoas inativas de `scientific_initiation`, `volunteer` e `monitor` | `data/productions.yaml` + `data/people.yaml`
+**Publicações** | itens em `productions.yaml` com o slug em `tags:` | `data/productions.yaml`
+**Projetos** | páginas ativas em `content/projects/` com o slug em `categories:` ou `tags:` | `content/projects/*.md`
+**Produtos** | páginas em `content/products/` com o slug em `categories:`, `tags:`, `advisors:` ou `creators:` | `content/products/*.md`
+
+Observações:
+
+- **Especializações contam como orientações anteriores** quando
+  registradas em `productions.yaml` com `type: specialization`.
+- Itens com contagem **0** não devem aparecer como card, badge ou linha
+  do resumo executivo.
 
 ### Consequências operacionais
 
@@ -598,9 +743,13 @@ Diretório: `content/areas/`. Cada área tem `.pt.md` e `.en.md`.
 - [ ] `url` canônica HTTPS
 - [ ] Advisors com slugs válidos (§1.3)
 - [ ] Tags temáticas escolhidas (mapeáveis para áreas — §3.4)
+- [ ] Slugs dos pesquisadores CEDIS incluídos em `tags:` quando a
+      produção deve aparecer no perfil (§2.7)
 - [ ] Notícia de defesa em PT (§3)
 - [ ] Notícia de defesa em EN (§3), com sinalização de idioma se
       trabalho estiver em português (§3.6)
+- [ ] Se a defesa gerou artigo científico com o aluno como autor, a
+      notícia menciona e linka esse artigo (§3.8)
 - [ ] Para mestrado/doutorado: banca extraída do PDF (§3.7)
 - [ ] Link ao BDM/Repositório em ambas notícias (§3.5)
 - [ ] Referências a "Faculdade" usando FCTE (§1.2)
@@ -610,5 +759,7 @@ Diretório: `content/areas/`. Cada área tem `.pt.md` e `.en.md`.
       `inactive`
 - [ ] Nomes coerentes entre `productions.yaml`, `people.yaml` e
       notícias (§4.A.3)
+- [ ] Perfis de pesquisadores não exibem cards, badges ou linhas com
+      contagem zero (§4.1, §4.B)
 - [ ] `hugo` roda sem erros
 - [ ] Commit + push
