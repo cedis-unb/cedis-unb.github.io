@@ -35,6 +35,9 @@
   {{ $level := replaceRE `(?s)<h([2-4]) id="([^"]+)"[^>]*>(.*?)</h[2-4]>` `${1}` $entry | int }}
   {{ $anchor := replaceRE `(?s)<h([2-4]) id="([^"]+)"[^>]*>(.*?)</h[2-4]>` `${2}` $entry }}
   {{ $label := replaceRE `(?s)<h([2-4]) id="([^"]+)"[^>]*>(.*?)</h[2-4]>` `${3}` $entry | plainify | htmlUnescape | strings.TrimSpace }}
+  {{ if eq $anchor "npublications-title" }}
+    {{ $label = $publicationsLabel }}
+  {{ end }}
   {{ if and $label (ne $anchor "top") }}
     {{ $baseAnchor := $anchor }}
     {{ if findRE `^hahahugoshortcode[0-9]+s[0-9]+hbhb$` $anchor }}
@@ -124,6 +127,12 @@
 {{ if and $isResearcher (in $content `id="former-collaborators-title"`) }}
   {{ $formerSupervisionCountBadge := printf `<span class="ml-2 inline-flex items-center rounded-full border border-primary-200 bg-primary-50 px-2.5 py-1 text-sm font-black text-primary-700 dark:border-primary-400/25 dark:bg-primary-500/10 dark:text-primary-100">%d</span>` $formerSupervisionCount }}
   {{ $content = replaceRE `(?s)(<h2 id="former-collaborators-title"[^>]*>.*?)(<svg)` (printf `${1}%s${2}` $formerSupervisionCountBadge) $content 1 }}
+{{ end }}
+
+{{ if or (in $content `id="npublications-title"`) (in $content `id=npublications-title`) }}
+  {{ $publicationCountBadge := printf `<span class="ml-2 inline-flex items-center rounded-full border border-primary-200 bg-primary-50 px-2.5 py-1 text-sm font-black text-primary-700 dark:border-primary-400/25 dark:bg-primary-500/10 dark:text-primary-100">%d</span>` $publicationCount }}
+  {{ $publicationHeading := printf `%s %s` $publicationsLabel $publicationCountBadge }}
+  {{ $content = replaceRE `(?s)(<h2[^>]*npublications-title[^>]*>).*?(<svg)` (printf `${1}%s${2}` $publicationHeading) $content 1 }}
 {{ end }}
 
 {{ $projectCount := 0 }}
