@@ -25,6 +25,8 @@ A defesa aconteceu em janeiro de 2025 em Brasília. A banca examinadora foi pres
 
 Ao articular {{< link-interno "/areas/software_architecture/" "arquitetura de software" >}} com práticas concretas de melhoria de usabilidade em sistema corporativo estatal, a dissertação oferece um caminho replicável para outros sistemas que sofrem do mesmo enrijecimento pelo tempo.
 
+Parte dos resultados também foi publicada no artigo [_Proposição de Melhoria de Usabilidade da Interação entre Usuário e Sistema Corporativo_](https://doi.org/10.5748/19CONTECSI/PSE/ESD/7019), apresentado no 19th CONTECSI. O artigo registra a versão científica do diagnóstico e das melhorias de usabilidade aplicadas ao sistema corporativo.
+
 O texto integral está disponível no [Repositório Institucional da UnB](https://repositorio.unb.br/handle/10482/52669).
 
 ---

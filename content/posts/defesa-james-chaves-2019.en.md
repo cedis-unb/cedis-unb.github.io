@@ -24,6 +24,8 @@ The work does not aim to prescribe the ideal recipe for wedding SOA with agile m
 
 By articulating {{< link-interno "/areas/software_architecture/" "software architecture" >}} with {{< link-interno "/areas/software_quality/" "software quality" >}}, the work contributes evidence to a discussion usually conducted through manifestos: which concessions must be negotiated when these three cultures occupy the same team.
 
+The dissertation is linked to two publications by James with CEDIS: [_A Systematic Literature Review for Service-oriented Architecture and Agile Development_](https://doi.org/10.1007/978-3-030-24308-1_11), published at ICCSA 2019, and [_NatVi - A Framework for Agile Software Development, Service-oriented Architecture and Quality Assurance_](https://doi.org/10.1007/978-3-030-58817-5_33), published at ICCSA 2020. Together, they cover the review base and the framework proposal consolidated in the dissertation.
+
 The defense took place on July 17, 2019 in Brasília. The examining committee was chaired by the advisor, Prof. Dr. Sergio Antônio Andrade de Freitas (CIC/UnB), and composed of Prof. Dr. Monalessa Perini Barcellos (Informatics Department/UFES) and Prof. Dr. Edna Dias Canedo (CIC/UnB). Prof. Dr. Aletéia Patrícia Favacho de Araújo, PPCA program coordinator, also attended the session.
 
 The full text is available at the [UnB Institutional Repository](https://repositorio.unb.br/handle/10482/37835).

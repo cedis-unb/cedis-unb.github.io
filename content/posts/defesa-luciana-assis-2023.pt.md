@@ -23,6 +23,8 @@ Gamificação corporativa costuma ser tratada como remédio de amplo espectro: p
 
 A pesquisa articula um estudo de caso em uma empresa pública brasileira e cruza três eixos: {{< link-interno "/areas/gamification/" "gamificação" >}} como estratégia, perfis motivacionais dos colaboradores e engajamento observado ao longo do tempo. O trabalho parte de uma constatação da literatura — a heterogeneidade dos resultados reportados — e faz o exercício raro de examinar, no chão da organização, por que essa variabilidade acontece. O resultado é uma leitura que evita tanto o entusiasmo genérico quanto o ceticismo defensivo, oferecendo em vez disso um diagnóstico do que precisa ser observado antes, durante e depois da adoção.
 
+A dissertação se articula ao artigo [_Gamification in Organizational Contexts: A Systematic Literature Review_](https://doi.org/10.1007/978-3-031-35969-9_23), publicado nos anais da 25th International Conference on Human-Computer Interaction. O artigo sistematiza a literatura que sustenta o recorte empírico desenvolvido na defesa.
+
 A defesa aconteceu em 27 de dezembro de 2023 em Brasília. A banca examinadora foi presidida pelo orientador, Prof. Dr. Sergio Antônio Andrade de Freitas (CIC/UnB), e composta pelo Prof. Dr. Charles Andryê Galvão Madeira (IMD/UFRN) e pelo Dr. Tiago Barros Pontes e Silva (IDA/UnB). O Prof. Dr. Gladston Luiz da Silva, à época coordenador do PPCA, também assinou a folha final.
 
 A dissertação está disponível na íntegra no [Repositório Institucional da UnB](https://repositorio.unb.br/handle/10482/48525).

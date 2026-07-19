@@ -26,6 +26,8 @@ O trabalho ataca essa lacuna a partir de um estudo de caso conduzido em uma gran
 
 Os resultados apontam convergências consistentes entre o que as métricas mostram e o que as equipes percebem: gargalos operacionais, limitações tecnológicas e capacidades reais aparecem em ambos os polos da análise. A dissertação conclui que a aplicação integrada das métricas DORA permite caracterizar de forma objetiva o estágio de evolução das práticas DevOps, oferecendo insumos concretos para decisões de melhoria contínua — sem, contudo, ignorar limitações inerentes à amplitude tecnológica do setor.
 
+A trajetória de pesquisa de Emanuel também inclui o artigo [_Behavior-Driven Development applied in Agile Teams of a Financial Institution_](https://doi.org/10.5753/cbsoft_estendido.2022.226260), publicado no CBSoft 2022. O trabalho antecipa o interesse do autor por práticas de engenharia em equipes ágeis no setor financeiro, que depois amadurece na dissertação sobre maturidade DevOps.
+
 A defesa ocorreu em 11 de dezembro de 2025 em Brasília. A banca examinadora foi composta pelo orientador, Prof. Dr. George Marsicano Corrêa (CIC/UnB); pelo Prof. Dr. Laerte Peotta de Melo (CIC/PPCA/UnB); e pelo Prof. Dr. Milton Vinicius Morais de Lima (CISSA/CESAR). A Prof.ª Dr.ª Edna Dias Canedo, coordenadora do PPCA e co-orientadora do trabalho, também acompanhou a defesa.
 
 O trabalho está disponível na íntegra no [Repositório Institucional da UnB](https://repositorio.unb.br/handle/10482/54557).
