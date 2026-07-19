@@ -5,7 +5,7 @@ draft: false
 weight: 500
 language: pt
 featured_image: "../assets/images/featured/area_IA.png"
-summary: 'Daniela Soares de Oliveira e Danilo Domingo Vitoriano Silva defenderam na UnB Gama um TCC que constrói um modelo de IA para tradução de Libras — resposta técnica a uma barreira comunicacional que afeta mais de 2,3 milhões de brasileiros.'
+summary: 'Daniela Soares de Oliveira e Danilo Domingo Vitoriano Silva defenderam na FCTE/UnB um TCC que constrói um modelo de IA para tradução de Libras — resposta técnica a uma barreira comunicacional que afeta mais de 2,3 milhões de brasileiros.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp
 categories:

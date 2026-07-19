@@ -5,7 +5,7 @@ draft: false
 weight: 500
 language: pt
 featured_image: "../assets/images/featured/area_Aprendizagem Ativa.png"
-summary: 'Delziron Braz de Lima e Fellipe Pereira da Costa Silva defenderam na UnB Gama um TCC que desenvolve um aplicativo de suporte à saúde mental e bem-estar de estudantes do Campus Gama.'
+summary: 'Delziron Braz de Lima e Fellipe Pereira da Costa Silva defenderam na FCTE/UnB um TCC que desenvolve um aplicativo de suporte à saúde mental e bem-estar de estudantes do Campus Gama.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp
 categories:

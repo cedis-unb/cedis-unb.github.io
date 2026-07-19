@@ -5,7 +5,7 @@ draft: false
 weight: 500
 language: en
 featured_image: "../assets/images/featured/area_Transformação Digital.png"
-summary: 'Felipe Direito Corrieri de Macedo defended at UnB Gama an undergraduate thesis introducing FTV Scout — a system for notation and performance analysis of footvolley athletes and teams.'
+summary: 'Felipe Direito Corrieri de Macedo defended at FCTE/UnB an undergraduate thesis introducing FTV Scout — a system for notation and performance analysis of footvolley athletes and teams.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp
 categories:

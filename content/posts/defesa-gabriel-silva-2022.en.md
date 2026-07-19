@@ -5,7 +5,7 @@ draft: false
 weight: 500
 language: en
 featured_image: "../assets/images/featured/area_Engenharia de requisitos.png"
-summary: 'Gabriel Batista Albino Silva and Helena Bretas Goulart defended at UnB Gama an undergraduate thesis identifying non-functional requirements for serious games aimed at children with Attention-Deficit / Hyperactivity Disorder (ADHD).'
+summary: 'Gabriel Batista Albino Silva and Helena Bretas Goulart defended at FCTE/UnB an undergraduate thesis identifying non-functional requirements for serious games aimed at children with Attention-Deficit / Hyperactivity Disorder (ADHD).'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp
 categories:

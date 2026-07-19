@@ -5,7 +5,7 @@ draft: false
 weight: 500
 language: en
 featured_image: "../assets/images/featured/area_Software Quality.png"
-summary: 'Daniel Barcelos Moreira and Juliana Pereira Valle Gonçalves defended at UnB Gama an undergraduate thesis evaluating tools used to measure the accessibility of web sites used by elderly people.'
+summary: 'Daniel Barcelos Moreira and Juliana Pereira Valle Gonçalves defended at FCTE/UnB an undergraduate thesis evaluating tools used to measure the accessibility of web sites used by elderly people.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp
 categories:

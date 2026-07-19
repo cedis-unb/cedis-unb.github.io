@@ -5,7 +5,7 @@ draft: false
 weight: 500
 language: en
 featured_image: "../assets/images/featured/area_Verificação e Validação.png"
-summary: 'Iolane Caroline Alves de Andrade defended at UnB Gama an undergraduate thesis applying exploratory testing alongside traditional testing, highlighting the learning gain that exploratory testing brings to the process.'
+summary: 'Iolane Caroline Alves de Andrade defended at FCTE/UnB an undergraduate thesis applying exploratory testing alongside traditional testing, highlighting the learning gain that exploratory testing brings to the process.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp
 categories:

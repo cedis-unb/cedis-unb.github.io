@@ -5,7 +5,7 @@ draft: false
 weight: 500
 language: en
 featured_image: "../assets/images/featured/area_Green Software.png"
-summary: 'Byron Kamal Barreto Correa and Igor Guimaraes Veludo defended at UnB Gama an important step in AgroMart’s story: open-sourcing the codebase, integrating payment methods, and designing the co-farmer management module.'
+summary: 'Byron Kamal Barreto Correa and Igor Guimaraes Veludo defended at FCTE/UnB an important step in AgroMart’s story: open-sourcing the codebase, integrating payment methods, and designing the co-farmer management module.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp
 categories:
@@ -18,7 +18,7 @@ tags:
 ---
 Brasília, May 9, 2022
 
-AgroMart was born in a hackathon at the Gama Faculty with a clear purpose: bringing family farmers closer to consumers. **A year after the first version, Byron Kamal Barreto Correa and Igor Guimaraes Veludo defended in May 2022 an undergraduate thesis that pushes the project on three fronts at once** — advised by Prof. {{< link-interno "/people/andre_lanna" "André Luiz Peron Martins Lanna" >}}.
+AgroMart was born in a hackathon at FCTE/UnB with a clear purpose: bringing family farmers closer to consumers. **A year after the first version, Byron Kamal Barreto Correa and Igor Guimaraes Veludo defended in May 2022 an undergraduate thesis that pushes the project on three fronts at once** — advised by Prof. {{< link-interno "/people/andre_lanna" "André Luiz Peron Martins Lanna" >}}.
 
 The first push is open-sourcing. Turning AgroMart into free software is not merely symbolic: it is what allows other initiatives — university, community, rural extension — to adapt the solution to their contexts without depending on the original authors. The second is payment integration, without which the platform remains a demo rather than a tool. The third is co-farmer management, a feature that copes with the collective arrangements typical of family farming — where production splits paths and the software has to follow along.
 

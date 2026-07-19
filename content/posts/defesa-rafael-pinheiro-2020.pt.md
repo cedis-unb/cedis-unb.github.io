@@ -5,7 +5,7 @@ draft: false
 weight: 500
 language: pt
 featured_image: "../assets/images/featured/area_Software Quality.png"
-summary: 'Rafael Contessotto Bragança Pinheiro defendeu na UnB Gama um TCC que propõe uma abordagem para ajudar organizações a iniciar programas de melhoria de processo de software — o passo mais difícil quando quase tudo pede atenção.'
+summary: 'Rafael Contessotto Bragança Pinheiro defendeu na FCTE/UnB um TCC que propõe uma abordagem para ajudar organizações a iniciar programas de melhoria de processo de software — o passo mais difícil quando quase tudo pede atenção.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp
 categories:

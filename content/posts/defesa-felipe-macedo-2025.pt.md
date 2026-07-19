@@ -5,7 +5,7 @@ draft: false
 weight: 500
 language: pt
 featured_image: "../assets/images/featured/area_Transformação Digital.png"
-summary: 'Felipe Direito Corrieri de Macedo defendeu na UnB Gama um TCC que apresenta o FTV Scout — sistema para notação e análise de desempenho de atletas e equipes de futevôlei.'
+summary: 'Felipe Direito Corrieri de Macedo defendeu na FCTE/UnB um TCC que apresenta o FTV Scout — sistema para notação e análise de desempenho de atletas e equipes de futevôlei.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp
 categories:

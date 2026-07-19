@@ -97,7 +97,7 @@ nav_next: true
 </div>
 
 ## {{< i18n "people_contact" >}}
-- {{< i18n "people_contact_professional" >}}: University of Brasília, UnB Gama Campus, Brasília - DF, Brazil.
+- {{< i18n "people_contact_professional" >}}: University of Brasília, Gama Campus (FCTE), Brasília - DF, Brazil.
 - Lattes iD: [CV Lattes](http://lattes.cnpq.br/2317804591146328)
 
 {{< backToTopBtn target="top" >}}

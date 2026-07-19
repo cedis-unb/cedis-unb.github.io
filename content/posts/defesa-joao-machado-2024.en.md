@@ -5,7 +5,7 @@ draft: false
 weight: 500
 language: en
 featured_image: "../assets/images/featured/area_Arquitetura de Software.png"
-summary: 'João Pedro Alves Machado and Júlio César Martins França defended at UnB Gama an undergraduate thesis building a Progressive Web App to navigate legal-education flowcharts on labor rights.'
+summary: 'João Pedro Alves Machado and Júlio César Martins França defended at FCTE/UnB an undergraduate thesis building a Progressive Web App to navigate legal-education flowcharts on labor rights.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp
 categories:

@@ -5,7 +5,7 @@ draft: false
 weight: 500
 language: pt
 featured_image: "../assets/images/featured/area_IA.png"
-summary: 'Álvaro Henrique de Sousa Gouvea e Luís Guilherme Gaboardi Lins defenderam na UnB Gama um TCC que utiliza Large Language Models no desenvolvimento de um chatbot multimodal voltado à consultoria jurídico-trabalhista.'
+summary: 'Álvaro Henrique de Sousa Gouvea e Luís Guilherme Gaboardi Lins defenderam na FCTE/UnB um TCC que utiliza Large Language Models no desenvolvimento de um chatbot multimodal voltado à consultoria jurídico-trabalhista.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp
 categories:

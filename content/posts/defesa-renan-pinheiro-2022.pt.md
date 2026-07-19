@@ -5,7 +5,7 @@ draft: false
 weight: 500
 language: pt
 featured_image: "../assets/images/featured/area_Verificação e Validação.png"
-summary: 'Renan Cristyan Araujo Pinheiro defendeu na UnB Gama um TCC que apresenta estudo de caso de melhoria do processo de verificação e validação de software em um órgão do setor público.'
+summary: 'Renan Cristyan Araujo Pinheiro defendeu na FCTE/UnB um TCC que apresenta estudo de caso de melhoria do processo de verificação e validação de software em um órgão do setor público.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp
 categories:

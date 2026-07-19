@@ -5,7 +5,7 @@ draft: false
 weight: 500
 language: pt
 featured_image: "../assets/images/featured/area_Software Quality.png"
-summary: 'Ronyell Henrique dos Santos defendeu na UnB Gama um TCC que aplica operações de refatoração para aprimorar a variabilidade de sistemas de software — reduzindo o custo da manutenção ao longo do ciclo de vida.'
+summary: 'Ronyell Henrique dos Santos defendeu na FCTE/UnB um TCC que aplica operações de refatoração para aprimorar a variabilidade de sistemas de software — reduzindo o custo da manutenção ao longo do ciclo de vida.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp
 categories:

@@ -26,7 +26,7 @@ paths:
 
   - id: tcc
     label: "TCC — Engenharia de Software"
-    audience: "Alunos do curso de Engenharia de Software (UnB Gama)"
+    audience: "Alunos do curso de Engenharia de Software (FCTE)"
     duration: "2 semestres (TCC1 + TCC2)"
     icon: "publications"
     intro: "Faça seu Trabalho de Conclusão de Curso vinculado a projetos ativos do CEDIS, ao longo de TCC1 e TCC2."

@@ -5,7 +5,7 @@ draft: false
 weight: 500
 language: pt
 featured_image: "../assets/images/featured/area_Gamificação.png"
-summary: 'Ludimila da Bela Cruz defendeu na UnB Gama um TCC que propõe uma ferramenta para apoiar equipes na construção de projetos de gamificação, ancorando o processo em elementos motivacionais estruturados.'
+summary: 'Ludimila da Bela Cruz defendeu na FCTE/UnB um TCC que propõe uma ferramenta para apoiar equipes na construção de projetos de gamificação, ancorando o processo em elementos motivacionais estruturados.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp
 categories:

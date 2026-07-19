@@ -5,7 +5,7 @@ draft: false
 weight: 500
 language: en
 featured_image: "../assets/images/featured/area_Software Quality.png"
-summary: 'Rafael Contessotto Bragança Pinheiro defended at UnB Gama an undergraduate thesis proposing an approach to help organizations kick off software process improvement programs — the hardest step when almost everything demands attention.'
+summary: 'Rafael Contessotto Bragança Pinheiro defended at FCTE/UnB an undergraduate thesis proposing an approach to help organizations kick off software process improvement programs — the hardest step when almost everything demands attention.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp
 categories:

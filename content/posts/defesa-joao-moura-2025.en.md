@@ -5,7 +5,7 @@ draft: false
 weight: 500
 language: en
 featured_image: "../assets/images/featured/area_Arquitetura de Software.png"
-summary: 'João Pedro Elias de Moura defended at UnB Gama an undergraduate thesis designing SmartPayment — a smart-contract-based system to automate assessment and payment in software development.'
+summary: 'João Pedro Elias de Moura defended at FCTE/UnB an undergraduate thesis designing SmartPayment — a smart-contract-based system to automate assessment and payment in software development.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp
 categories:

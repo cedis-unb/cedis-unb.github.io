@@ -5,7 +5,7 @@ draft: false
 weight: 500
 language: en
 featured_image: "../assets/images/featured/area_Software Quality.png"
-summary: 'Gabriel de Jesus Carvalho defended at UnB Gama an undergraduate thesis developing IA-QVT — a tool to collect and process data on quality of work life, with strong attention to accessibility.'
+summary: 'Gabriel de Jesus Carvalho defended at FCTE/UnB an undergraduate thesis developing IA-QVT — a tool to collect and process data on quality of work life, with strong attention to accessibility.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp
 categories:
@@ -17,7 +17,7 @@ tags:
 ---
 Brasília, October 5, 2022
 
-Talking about quality of work life sounds like consensus — until someone asks how to measure it. **The undergraduate thesis defended in October 2022 by Gabriel de Jesus Carvalho at UnB Gama tackles that distance between discourse and instrument, and answers with IA-QVT** — advised by Prof. {{< link-interno "/people/fabiana_mendes" "Fabiana Freitas Mendes" >}}.
+Talking about quality of work life sounds like consensus — until someone asks how to measure it. **The undergraduate thesis defended in October 2022 by Gabriel de Jesus Carvalho at FCTE/UnB tackles that distance between discourse and instrument, and answers with IA-QVT** — advised by Prof. {{< link-interno "/people/fabiana_mendes" "Fabiana Freitas Mendes" >}}.
 
 Recent years pushed to the center of debate the effects of contemporary work dynamics on the physical and mental health of software workers (and not only them). While concepts such as Activity Ergonomics consolidate in the labor sciences, the instruments to operationalize them in practice tend to be dispersed and poorly accessible. IA-QVT emerges to fill that gap: a tool that supports collection and processing of QVT data, with special attention to including people at different levels of technological familiarity.
 

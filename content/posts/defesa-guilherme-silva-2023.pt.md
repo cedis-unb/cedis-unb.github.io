@@ -5,7 +5,7 @@ draft: false
 weight: 500
 language: pt
 featured_image: "../assets/images/featured/area_Software Quality.png"
-summary: 'Guilherme Daniel Fernandes da Silva e Lorrayne Alves Cardozo defenderam na UnB Gama um TCC que analisa a relação entre qualidade de software e envelhecimento populacional a partir dos dados da TIC Domicílios.'
+summary: 'Guilherme Daniel Fernandes da Silva e Lorrayne Alves Cardozo defenderam na FCTE/UnB um TCC que analisa a relação entre qualidade de software e envelhecimento populacional a partir dos dados da TIC Domicílios.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp
 categories:

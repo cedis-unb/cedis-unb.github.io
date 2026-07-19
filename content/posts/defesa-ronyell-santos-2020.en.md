@@ -5,7 +5,7 @@ draft: false
 weight: 500
 language: en
 featured_image: "../assets/images/featured/area_Software Quality.png"
-summary: 'Ronyell Henrique dos Santos defended at UnB Gama an undergraduate thesis applying refactoring operations to improve software system variability — reducing maintenance costs over the lifecycle.'
+summary: 'Ronyell Henrique dos Santos defended at FCTE/UnB an undergraduate thesis applying refactoring operations to improve software system variability — reducing maintenance costs over the lifecycle.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp
 categories:

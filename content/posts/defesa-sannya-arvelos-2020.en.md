@@ -5,7 +5,7 @@ draft: false
 weight: 500
 language: en
 featured_image: "../assets/images/featured/area_Software Quality.png"
-summary: 'Sannya Santana de Arvelos defended at UnB Gama an undergraduate thesis proposing the use of issue analysis as the basis for identifying software process improvement opportunities.'
+summary: 'Sannya Santana de Arvelos defended at FCTE/UnB an undergraduate thesis proposing the use of issue analysis as the basis for identifying software process improvement opportunities.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp
 categories:
@@ -18,7 +18,7 @@ tags:
 ---
 Brasília, December 17, 2020
 
-Where do process improvement opportunities live in a development workflow? In many organizations, they sit silently in the trail of bugs, complaints, and questions logged in issue-tracking tools — data rarely looked at systematically. **This underused archive is what Sannya Santana de Arvelos places at the center of the undergraduate thesis defended in December 2020 at UnB Gama**, advised by Prof. {{< link-interno "/people/cristiane_ramos" "Cristiane Soares Ramos" >}}.
+Where do process improvement opportunities live in a development workflow? In many organizations, they sit silently in the trail of bugs, complaints, and questions logged in issue-tracking tools — data rarely looked at systematically. **This underused archive is what Sannya Santana de Arvelos places at the center of the undergraduate thesis defended in December 2020 at FCTE/UnB**, advised by Prof. {{< link-interno "/people/cristiane_ramos" "Cristiane Soares Ramos" >}}.
 
 The work departs from the premise that improving the quality of a software product requires instruments — not intuition. Systematic analysis of issues (recurrence patterns, defect categories, phase-level bottlenecks) allows mapping where the process is paying the highest price. From there, the author proposes an approach to convert that map into an action plan: interventions targeting the heaviest causes, with metrics to verify that the change is working.
 

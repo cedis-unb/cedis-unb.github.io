@@ -5,7 +5,7 @@ draft: false
 weight: 500
 language: pt
 featured_image: "../assets/images/featured/area_Arquitetura de Software.png"
-summary: 'Erick Giffoni Felicissimo defendeu na UnB Gama um TCC que projeta e desenvolve o software TROPA — Teatro de Operações de Airsoft — para apoiar a organização de partidas do esporte no Brasil.'
+summary: 'Erick Giffoni Felicissimo defendeu na FCTE/UnB um TCC que projeta e desenvolve o software TROPA — Teatro de Operações de Airsoft — para apoiar a organização de partidas do esporte no Brasil.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp
 categories:

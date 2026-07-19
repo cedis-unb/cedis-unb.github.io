@@ -31,4 +31,4 @@ tags:
 - {{< link-interno "/products/evidentia/" "Evidentia Review Project" >}}
 
 ## Contact
-- Professional Address: University of Brasília, UnB Gama Campus, Brasília - DF, Brazil.
+- Professional Address: University of Brasília, Gama Campus (FCTE), Brasília - DF, Brazil.

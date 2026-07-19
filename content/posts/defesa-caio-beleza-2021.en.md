@@ -5,7 +5,7 @@ draft: false
 weight: 500
 language: en
 featured_image: "../assets/images/featured/area_Software Quality.png"
-summary: 'Caio César de Almeida Beleza defended at UnB Gama an undergraduate thesis analyzing software interface problems that push users toward error and systematizing recommendations to avoid them.'
+summary: 'Caio César de Almeida Beleza defended at FCTE/UnB an undergraduate thesis analyzing software interface problems that push users toward error and systematizing recommendations to avoid them.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp
 categories:
@@ -17,7 +17,7 @@ tags:
 ---
 Brasília, May 19, 2021
 
-Blaming the user is the easy way out. But much of the error trail that appears in system logs is triggered by design choices that made it through the team without any pushback. **This blind spot is what Caio César de Almeida Beleza brings under scrutiny in his undergraduate thesis**, defended in May 2021 at UnB Gama, advised by Prof. {{< link-interno "/people/fabiana_mendes" "Fabiana Freitas Mendes" >}}.
+Blaming the user is the easy way out. But much of the error trail that appears in system logs is triggered by design choices that made it through the team without any pushback. **This blind spot is what Caio César de Almeida Beleza brings under scrutiny in his undergraduate thesis**, defended in May 2021 at FCTE/UnB, advised by Prof. {{< link-interno "/people/fabiana_mendes" "Fabiana Freitas Mendes" >}}.
 
 The work builds on a premise that is now common ground for HCI researchers: interaction effectiveness depends both on system quality and on how people operate it. Human errors, under this framing, are not isolated operational failures — they are frequent symptoms of an interface that emitted ambiguous signals, hid critical options, or asked for decisions in the wrong context.
 

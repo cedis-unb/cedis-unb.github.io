@@ -31,4 +31,4 @@ tags:
 - {{< link-interno "/projects/canal_ciencia" "Gamification Science Channel" >}}
 
 ## Contact
-- Professional Address: University of Brasília, UnB Gama Campus, Brasília - DF, Brazil.
+- Professional Address: University of Brasília, Gama Campus (FCTE), Brasília - DF, Brazil.
