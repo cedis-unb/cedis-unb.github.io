@@ -1,7 +1,7 @@
 ---
 author: CEDIS
 title: "Atloria"
-date: 2026-07-16T09:00:00-03:00
+date: 2026-07-07T09:00:00-03:00
 language: en
 product_language: pt
 weight: 6
