@@ -1,1 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tags em CEDIS</title><link>https://cedis.unb.br/pt/tags/project_a3m/</link><description>Conteudo recente em Tags em CEDIS</description><generator>Hugo</generator><language>pt</language><lastBuildDate>Sun, 19 Jul 2026 18:16:34 -0300</lastBuildDate><atom:link href="https://cedis.unb.br/pt/tags/project_a3m/index.xml" rel="self" type="application/rss+xml"/><item><title>Programa aprendizagem para o terceiro milênio a3 m</title><link>https://cedis.unb.br/pt/projects/programa_a3m/</link><pubDate>Fri, 01 Jan 2021 00:00:00 -0300</pubDate><guid>https://cedis.unb.br/pt/projects/programa_a3m/</guid><description>Participação em programa institucional de inovação pedagógica e aprendizagem ativa na Universidade de Brasília.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags em CEDIS</title>
+    <link>https://cedis.unb.br/pt/tags/project_a3m/</link>
+    <description>Conteudo recente em Tags em CEDIS</description>
+    <generator>Hugo</generator>
+    <language>pt</language>
+    <lastBuildDate>Sun, 19 Jul 2026 18:16:34 -0300</lastBuildDate>
+    <atom:link href="https://cedis.unb.br/pt/tags/project_a3m/index.xml" rel="self" type="application/rss&#43;xml" />
+    <item>
+      <title>Programa aprendizagem para o terceiro milênio a3 m</title>
+      <link>https://cedis.unb.br/pt/projects/programa_a3m/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/pt/projects/programa_a3m/</guid>
+      <description>Participação em programa institucional de inovação pedagógica e aprendizagem ativa na Universidade de Brasília.</description>
+    </item>
+  </channel>
+</rss>

@@ -24,6 +24,8 @@ The work starts from a clinical premise: children with ADHD present symptoms suc
 
 The thesis contributes to {{< link-interno "/areas/software_requirements/" "requirements engineering" >}} by bringing into the design process a set of demands that only surfaces if designers listen to specialists and families. It is a border-crossing work between software engineering and care — the kind of conversation technical curricula rarely teach.
 
+Helena Bretas Goulart also co-authors the paper [_Project-based learning applied to an Engineering Integration course: challenges and benefits_](https://doi.org/10.5753/cbie.sbie.2019.89), published at the XXX Brazilian Symposium on Computers in Education (SBIE 2019, Brasília) alongside Ricardo Ajax, Cristiane Ramos and Edna Canedo. The paper documents part of the active-learning experience in Software Engineering that also underpins the thesis.
+
 The full text — written in Portuguese — is available at the [UnB Undergraduate Theses Digital Library](https://www.bdm.unb.br/handle/10483/33941).
 
 ---

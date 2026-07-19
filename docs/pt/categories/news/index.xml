@@ -1,1 +1,810 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Notícias em CEDIS</title><link>https://cedis.unb.br/pt/categories/news/</link><description>Conteudo recente em Notícias em CEDIS</description><generator>Hugo</generator><language>pt</language><lastBuildDate>Sun, 19 Jul 2026 16:36:39 -0300</lastBuildDate><atom:link href="https://cedis.unb.br/pt/categories/news/index.xml" rel="self" type="application/rss+xml"/><item><title>CEDIS lança o Deck Manager, plataforma de apresentações interativas com privacidade por design</title><link>https://cedis.unb.br/pt/posts/news-post.027/</link><pubDate>Thu, 16 Jul 2026 09:00:00 -0300</pubDate><guid>https://cedis.unb.br/pt/posts/news-post.027/</guid><description>Nova plataforma do CEDIS para apresentações interativas, disponível em slides.cedis.tec.br e deck.cedis.tec.br.</description></item><item><title>TCC de estudantes de Engenharia de Software dá origem ao Git Ranking, aplicação gamificada para equipes ágeis no GitHub</title><link>https://cedis.unb.br/pt/posts/news-post.025/</link><pubDate>Tue, 14 Jul 2026 09:00:00 -0300</pubDate><guid>https://cedis.unb.br/pt/posts/news-post.025/</guid><description>Trabalho de conclusão de curso orientado pelo Prof. Sergio Freitas resultou no Git Ranking, aplicação gamificada integrada ao GitHub.</description></item><item><title>Artigo sobre instrumento diagnóstico do EduTrack é aceito no SBIE 2026</title><link>https://cedis.unb.br/pt/posts/news-post.028/</link><pubDate>Fri, 10 Jul 2026 09:00:00 -0300</pubDate><guid>https://cedis.unb.br/pt/posts/news-post.028/</guid><description>Artigo (submissão #27258) de autoria de Sergio Freitas, Daniel Rodrigues da Rocha, Davi Rodrigues da Rocha e Mylena Angélica Silva Farias foi aceito no SBIE 2026.</description></item><item><title>Artigo sobre o DevDog é aceito na Trilha de Ferramentas do SBES 2026</title><link>https://cedis.unb.br/pt/posts/news-post.026/</link><pubDate>Wed, 08 Jul 2026 09:00:00 -0300</pubDate><guid>https://cedis.unb.br/pt/posts/news-post.026/</guid><description>Artigo decorrente do TCC de Luciano Ricardo da Silva Junior foi aceito no SBES 2026, com orientação do Prof. Sergio Freitas e coorientação do Prof. André Lanna.</description></item><item><title>TCC de estudantes de Engenharia de Software dá origem ao Atloria, aplicativo de realidade aumentada para ensino de estruturas de dados</title><link>https://cedis.unb.br/pt/posts/news-post.024/</link><pubDate>Tue, 07 Jul 2026 09:00:00 -0300</pubDate><guid>https://cedis.unb.br/pt/posts/news-post.024/</guid><description>Trabalho de conclusão de curso orientado pelo Prof. Sergio Freitas resultou no Atloria, aplicativo educacional em realidade aumentada.</description></item><item><title>DevDog: TCC transforma code smells em aprendizagem gamificada</title><link>https://cedis.unb.br/pt/posts/defesa-luciano-silva-2026/</link><pubDate>Thu, 11 Jun 2026 00:00:00 -0300</pubDate><guid>https://cedis.unb.br/pt/posts/defesa-luciano-silva-2026/</guid><description>Luciano Ricardo da Silva Junior defendeu na FCTE/UnB um TCC que originou o DevDog, aplicação web gamificada para apoiar o ensino da identificação de code smells.</description></item><item><title>Plataforma OctaAnalysis amplia o portfólio de inovação digital do CEDIS</title><link>https://cedis.unb.br/pt/posts/news-post.022/</link><pubDate>Tue, 10 Mar 2026 09:00:00 -0300</pubDate><guid>https://cedis.unb.br/pt/posts/news-post.022/</guid><description>O OctaAnalysis é uma plataforma do CEDIS voltada ao design, gerenciamento e acompanhamento analítico de experiências gamificadas.</description></item><item><title>CEDIS apresenta o Evidentia Review para revisões sistemáticas da literatura</title><link>https://cedis.unb.br/pt/posts/news-post.021/</link><pubDate>Mon, 09 Mar 2026 18:00:00 -0300</pubDate><guid>https://cedis.unb.br/pt/posts/news-post.021/</guid><description>O Evidentia Review é um software do CEDIS voltado à condução ponta a ponta de revisões sistemáticas da literatura.</description></item><item><title>Registro de software Contextus é concedido pelo INPI</title><link>https://cedis.unb.br/pt/posts/news-post.023/</link><pubDate>Thu, 19 Feb 2026 09:00:00 -0300</pubDate><guid>https://cedis.unb.br/pt/posts/news-post.023/</guid><description>O certificado do Contextus foi expedido em 18 de fevereiro de 2026 e formaliza a proteção jurídica do software junto ao INPI.</description></item><item><title>DevOps sob a régua das métricas DORA: um retrato do setor financeiro</title><link>https://cedis.unb.br/pt/posts/defesa-emanuel-oliveira-2025/</link><pubDate>Wed, 03 Dec 2025 00:00:00 -0300</pubDate><guid>https://cedis.unb.br/pt/posts/defesa-emanuel-oliveira-2025/</guid><description>Dissertação defendida no PPCA/UnB propõe modelo para avaliar a maturidade DevOps de times bancários combinando métricas DORA, análise documental e triangulação sociotécnica.</description></item><item><title>FTV Scout: TCC leva análise de desempenho ao futevôlei</title><link>https://cedis.unb.br/pt/posts/defesa-felipe-macedo-2025/</link><pubDate>Tue, 02 Dec 2025 00:00:00 -0300</pubDate><guid>https://cedis.unb.br/pt/posts/defesa-felipe-macedo-2025/</guid><description>Felipe Direito Corrieri de Macedo defendeu na FCTE/UnB um TCC que apresenta o FTV Scout — sistema para notação e análise de desempenho de atletas e equipes de futevôlei.</description></item><item><title>Contar pontos de função sem gente contando: dissertação lê requisições HTTP para automatizar SFP</title><link>https://cedis.unb.br/pt/posts/defesa-diego-rocha-2025/</link><pubDate>Thu, 23 Oct 2025 00:00:00 -0300</pubDate><guid>https://cedis.unb.br/pt/posts/defesa-diego-rocha-2025/</guid><description>Diego Emanuel Ferreira da Rocha defendeu no PPCA/UnB a etapa de qualificação da dissertação que automatiza a identificação de processos elementares a partir da análise de requisições HTTP — reduzindo a fricção do Simple Function Points.</description></item><item><title>Curso de Engenharia de Software da UnB recebe equipe de Gamificação do Banco do Brasil</title><link>https://cedis.unb.br/pt/posts/news-post.020/</link><pubDate>Wed, 03 Sep 2025 17:00:00 -0300</pubDate><guid>https://cedis.unb.br/pt/posts/news-post.020/</guid><description>O curso de Engenharia de Software da UnB recebeu a equipe de Gamificação do Banco do Brasil para uma palestra sobre história, metodologia e ética da gamificação.</description></item><item><title>CEDIS na UnB: reconhecimento e inovação</title><link>https://cedis.unb.br/pt/posts/news-post.019/</link><pubDate>Fri, 29 Aug 2025 17:00:00 -0300</pubDate><guid>https://cedis.unb.br/pt/posts/news-post.019/</guid><description>O CEDIS celebra a conquista do professor Sergio Freitas, que recebeu Menção Honrosa no Prêmio Anual de Inovação no Ensino de Graduação (DEG/UnB), na categoria Uso de recursos tecnológicos e produção de material didático inovador.</description></item><item><title>Chamada voluntária para atuação no CEDIS – Inscrições abertas</title><link>https://cedis.unb.br/pt/posts/news-post.016/</link><pubDate>Thu, 28 Aug 2025 09:00:00 -0300</pubDate><guid>https://cedis.unb.br/pt/posts/news-post.016/</guid><description>O CEDIS abre inscrições para estudantes voluntários interessados em atuar em projetos de pesquisa e atividades acadêmicas.</description></item><item><title>3SW: mestrado propõe adaptar o CIS Controls v8.1 à realidade da administração pública</title><link>https://cedis.unb.br/pt/posts/defesa-tassio-silva-2025/</link><pubDate>Tue, 26 Aug 2025 00:00:00 -0300</pubDate><guid>https://cedis.unb.br/pt/posts/defesa-tassio-silva-2025/</guid><description>Tássio Correia da Silva defendeu no PPEE/UnB uma dissertação de mestrado profissional que adapta o CIS Controls v8.1 para mitigação de ameaças a servidores web em contexto de administração pública.</description></item><item><title>Prof. Sergio Freitas ministra formação pedagógica na UFES com grande participação</title><link>https://cedis.unb.br/pt/posts/news-post.018/</link><pubDate>Wed, 13 Aug 2025 07:00:00 -0300</pubDate><guid>https://cedis.unb.br/pt/posts/news-post.018/</guid><description>O professor Sergio Freitas ministrou curso de formação pedagógica na UFES para docentes das áreas de Exatas e Engenharias, com ampla participação e aplicação prática dos conteúdos abordados.</description></item><item><title>Three Filters: TCC filtra metadados científicos em três camadas</title><link>https://cedis.unb.br/pt/posts/defesa-leonardo-vitoriano-2025/</link><pubDate>Mon, 28 Jul 2025 00:00:00 -0300</pubDate><guid>https://cedis.unb.br/pt/posts/defesa-leonardo-vitoriano-2025/</guid><description>Leonardo Milomes Vitoriano e Mateus de Almeida Dias defenderam na FCTE/UnB um TCC que apresenta o Three Filters — sistema para assegurar qualidade e integridade de metadados científicos em JSON.</description></item><item><title>Chatbot para a FCTE: TCC centraliza informações administrativas para o estudante</title><link>https://cedis.unb.br/pt/posts/defesa-breno-souza-2025/</link><pubDate>Wed, 23 Jul 2025 00:00:00 -0300</pubDate><guid>https://cedis.unb.br/pt/posts/defesa-breno-souza-2025/</guid><description>Breno Henrique de Souza e Giulia Domingues de Alcantara defenderam na FCTE/UnB um TCC que centraliza informações administrativas da FCTE em um chatbot com apoio de inteligência artificial.</description></item><item><title>Gamificar o Scrum: TCC mapeia a literatura e desenha diretrizes para o campo</title><link>https://cedis.unb.br/pt/posts/defesa-denniel-lima-2025/</link><pubDate>Tue, 22 Jul 2025 00:00:00 -0300</pubDate><guid>https://cedis.unb.br/pt/posts/defesa-denniel-lima-2025/</guid><description>Denniel Roriz Lima defendeu na FCTE/UnB um TCC que faz uma revisão bibliométrica e temática sobre o uso de gamificação em processos ágeis com Scrum e propõe diretrizes práticas para implementação.</description></item><item><title>Vieses algorítmicos: TCC faz mapeamento sistemático dos desafios éticos</title><link>https://cedis.unb.br/pt/posts/defesa-amanda-nobre-2025/</link><pubDate>Mon, 21 Jul 2025 00:00:00 -0300</pubDate><guid>https://cedis.unb.br/pt/posts/defesa-amanda-nobre-2025/</guid><description>Amanda Jeniffer Pereira Nobre e Ana Carolina Rodrigues Leite defenderam na FCTE/UnB um TCC que faz mapeamento sistemático da literatura sobre desafios éticos associados aos vieses em algoritmos de inteligência artificial.</description></item><item><title>Aplicativo para saúde mental no Campus Gama: TCC entrega ferramenta pensada com estudantes</title><link>https://cedis.unb.br/pt/posts/defesa-delziron-lima-2025/</link><pubDate>Thu, 17 Jul 2025 00:00:00 -0300</pubDate><guid>https://cedis.unb.br/pt/posts/defesa-delziron-lima-2025/</guid><description>Delziron Braz de Lima e Fellipe Pereira da Costa Silva defenderam na FCTE/UnB um TCC que desenvolve um aplicativo de suporte à saúde mental e bem-estar de estudantes do Campus Gama.</description></item><item><title>Prever euploidia sem tocar no embrião: TCC leva aprendizado de máquina à fertilização in vitro</title><link>https://cedis.unb.br/pt/posts/defesa-maria-ferreira-2025/</link><pubDate>Thu, 17 Jul 2025 00:00:00 -0300</pubDate><guid>https://cedis.unb.br/pt/posts/defesa-maria-ferreira-2025/</guid><description>Maria Eduarda dos Santos Abritta Ferreira e Sabrina Caldas Berno defenderam na FCTE/UnB um TCC que aplica aprendizado de máquina à predição não-invasiva de euploidia em embriões humanos a partir de dados morfocinéticos.</description></item><item><title>TROPA: TCC projeta software para orquestrar operações de airsoft</title><link>https://cedis.unb.br/pt/posts/defesa-erick-felicissimo-2025/</link><pubDate>Tue, 15 Jul 2025 00:00:00 -0300</pubDate><guid>https://cedis.unb.br/pt/posts/defesa-erick-felicissimo-2025/</guid><description>Erick Giffoni Felicissimo defendeu na FCTE/UnB um TCC que projeta e desenvolve o software TROPA — Teatro de Operações de Airsoft — para apoiar a organização de partidas do esporte no Brasil.</description></item><item><title>SmartPayment: TCC leva contratos inteligentes à avaliação de desenvolvedores</title><link>https://cedis.unb.br/pt/posts/defesa-joao-moura-2025/</link><pubDate>Fri, 11 Jul 2025 00:00:00 -0300</pubDate><guid>https://cedis.unb.br/pt/posts/defesa-joao-moura-2025/</guid><description>João Pedro Elias de Moura defendeu na FCTE/UnB um TCC que projeta o SmartPayment — sistema baseado em contratos inteligentes para automatizar avaliação e pagamento em desenvolvimento de software.</description></item><item><title>AgroMart migra de IaaS para serverless: dupla mostra que produtor rural pode ficar dentro do free tier</title><link>https://cedis.unb.br/pt/posts/defesa-kalebe-murilo-2025/</link><pubDate>Tue, 25 Feb 2025 00:00:00 -0300</pubDate><guid>https://cedis.unb.br/pt/posts/defesa-kalebe-murilo-2025/</guid><description>Kalebe Cunha e Murilo Santana defenderam em fevereiro de 2025, na FCTE/UnB, um TCC que migra o AgroMart do modelo IaaS para AWS Lambda e testa a viabilidade de operar dentro do free tier — reduzindo o custo do agricultor.</description></item><item><title>Chat gpt 4o na elicitação de requisitos tcc faz o estudo de caso que a comunidade precisava</title><link>https://cedis.unb.br/pt/posts/defesa-geraldo-barbosa-2025/</link><pubDate>Wed, 19 Feb 2025 00:00:00 -0300</pubDate><guid>https://cedis.unb.br/pt/posts/defesa-geraldo-barbosa-2025/</guid><description>Geraldo Victor Alves Barbosa e João Victor de Oliveira Matos defenderam na FCTE/UnB um TCC que investiga o uso do ChatGPT-4o no processo de elicitação, descoberta e declaração de requisitos.</description></item><item><title>OMA: dupla desenvolve organizador multimídia para estudantes de engenharia</title><link>https://cedis.unb.br/pt/posts/defesa-artur-vieira-2025/</link><pubDate>Tue, 18 Feb 2025 00:00:00 -0300</pubDate><guid>https://cedis.unb.br/pt/posts/defesa-artur-vieira-2025/</guid><description>Artur de Sousa Vieira e Luíza Esteves dos Santos defenderam na FCTE/UnB um TCC que apresenta o OMA — Organizador Multimídia Acadêmico — voltado a estudantes de engenharia do Campus Gama.</description></item><item><title>Segurança da gov.br: dissertação avalia fatores adicionais de autenticação para a identidade digital</title><link>https://cedis.unb.br/pt/posts/defesa-sandro-furtado-2025/</link><pubDate>Tue, 18 Feb 2025 00:00:00 -0300</pubDate><guid>https://cedis.unb.br/pt/posts/defesa-sandro-furtado-2025/</guid><description>Sandro Leite Furtado defendeu no PPCA/UnB uma dissertação que identifica e avalia fatores adicionais de segurança para a Identidade gov.br, implementando e testando o RBA (Risk-Based Authentication) como camada complementar.</description></item><item><title>SiCaPEx: dissertação faz auditoria de usabilidade em sistema de pessoal do Exército Brasileiro</title><link>https://cedis.unb.br/pt/posts/defesa-dione-moura-2025/</link><pubDate>Fri, 10 Jan 2025 00:00:00 -0300</pubDate><guid>https://cedis.unb.br/pt/posts/defesa-dione-moura-2025/</guid><description>Dione Ramos Canuto Moura defendeu no PPCA/UnB uma dissertação que analisa a usabilidade do SiCaPEx — sistema de cadastramento de pessoal do Exército Brasileiro — combinando SUS, heurísticas de Nielsen e propostas de melhoria implementadas.</description></item><item><title>Salas, horários, professores: dissertação propõe modelo adaptativo para agendar recursos acadêmicos na UnB</title><link>https://cedis.unb.br/pt/posts/defesa-eber-moreira-2024/</link><pubDate>Tue, 17 Dec 2024 00:00:00 -0300</pubDate><guid>https://cedis.unb.br/pt/posts/defesa-eber-moreira-2024/</guid><description>Éber Junio Borges Moreira defendeu no PPCA/UnB uma dissertação que ataca o problema do agendamento de recursos acadêmicos em instituições de ensino superior, com estudo de caso na própria UnB.</description></item><item><title>Artigo premiado como melhor paper na ITHET 2024</title><link>https://cedis.unb.br/pt/posts/news-post.013/</link><pubDate>Mon, 11 Nov 2024 11:10:36 +0800</pubDate><guid>https://cedis.unb.br/pt/posts/news-post.013/</guid><description>Artigo apresentado no IEEE ITHET 2024 em Paris recebe prêmio de melhor paper.</description></item><item><title>Direito do trabalho no bolso: PWA leva fluxogramas jurídicos ao celular</title><link>https://cedis.unb.br/pt/posts/defesa-joao-machado-2024/</link><pubDate>Mon, 28 Oct 2024 00:00:00 -0300</pubDate><guid>https://cedis.unb.br/pt/posts/defesa-joao-machado-2024/</guid><description>João Pedro Alves Machado e Júlio César Martins França defenderam na FCTE/UnB um TCC que constrói uma PWA para navegação em fluxogramas de educação jurídica sobre direitos trabalhistas.</description></item><item><title>Formulários que ensinam Direito: TCC modela fluxos jurídicos no Google Forms</title><link>https://cedis.unb.br/pt/posts/defesa-guilherme-vial-2024/</link><pubDate>Wed, 18 Sep 2024 00:00:00 -0300</pubDate><guid>https://cedis.unb.br/pt/posts/defesa-guilherme-vial-2024/</guid><description>Guilherme Rogelin Vial e Lucas Braun Vieira Xavier defenderam na FCTE/UnB um TCC que usa o Google Forms como interface para modelar e distribuir fluxos de navegação voltados à educação jurídica.</description></item><item><title>AgroMart chega à publicação: dupla integra e liga o aplicativo ao público final</title><link>https://cedis.unb.br/pt/posts/defesa-christian-siqueira-2024/</link><pubDate>Tue, 17 Sep 2024 00:00:00 -0300</pubDate><guid>https://cedis.unb.br/pt/posts/defesa-christian-siqueira-2024/</guid><description>Christian Fleury Alencar Siqueira e Thiago Siqueira Gomes defenderam na FCTE/UnB um TCC que atravessa o último quilômetro do AgroMart: integrar módulos, ajustar deploy e publicar o aplicativo para uso público.</description></item><item><title>Ferramentas de acessibilidade e o Brasil que envelhece: TCC compara o que existe no mercado</title><link>https://cedis.unb.br/pt/posts/defesa-daniel-moreira-2024/</link><pubDate>Mon, 16 Sep 2024 00:00:00 -0300</pubDate><guid>https://cedis.unb.br/pt/posts/defesa-daniel-moreira-2024/</guid><description>Daniel Barcelos Moreira e Juliana Pereira Valle Gonçalves defenderam na FCTE/UnB um TCC que avalia ferramentas usadas para medir a acessibilidade de sites web utilizados por pessoas idosas.</description></item><item><title>IA na avaliação de disciplinas de software: TCC piloto testa apoio a docentes</title><link>https://cedis.unb.br/pt/posts/defesa-caio-oliveira-2024/</link><pubDate>Thu, 12 Sep 2024 00:00:00 -0300</pubDate><guid>https://cedis.unb.br/pt/posts/defesa-caio-oliveira-2024/</guid><description>Caio César Oliveira defendeu na FCTE/UnB um TCC que desenvolve inteligência artificial para aprimorar avaliações individuais em disciplinas de Engenharia de Software.</description></item><item><title>Modelo de IA para Libras: TCC atravessa a barreira de comunicação com a comunidade surda</title><link>https://cedis.unb.br/pt/posts/defesa-daniela-oliveira-2024/</link><pubDate>Thu, 12 Sep 2024 00:00:00 -0300</pubDate><guid>https://cedis.unb.br/pt/posts/defesa-daniela-oliveira-2024/</guid><description>Daniela Soares de Oliveira e Danilo Domingo Vitoriano Silva defenderam na FCTE/UnB um TCC que constrói um modelo de IA para tradução de Libras — resposta técnica a uma barreira comunicacional que afeta mais de 2,3 milhões de brasileiros.</description></item><item><title>Llms para consultoria jurídico trabalhista tcc apresenta chatbot multimodal</title><link>https://cedis.unb.br/pt/posts/defesa-alvaro-gouvea-2024/</link><pubDate>Wed, 11 Sep 2024 00:00:00 -0300</pubDate><guid>https://cedis.unb.br/pt/posts/defesa-alvaro-gouvea-2024/</guid><description>Álvaro Henrique de Sousa Gouvea e Luís Guilherme Gaboardi Lins defenderam na FCTE/UnB um TCC que utiliza Large Language Models no desenvolvimento de um chatbot multimodal voltado à consultoria jurídico-trabalhista.</description></item><item><title>Artigo sobre processo de desenvolvimento de chatbots gamificados é apresentado em conferência internacional</title><link>https://cedis.unb.br/pt/posts/news-post.011/</link><pubDate>Fri, 06 Sep 2024 11:10:36 +0800</pubDate><guid>https://cedis.unb.br/pt/posts/news-post.011/</guid><description>Artigo foi apresentado no IntelliSys 2024, em Amsterdam, Países Baixos.</description></item><item><title>CEDIS é representado no Fórum RNP 2024</title><link>https://cedis.unb.br/pt/posts/news-post.012/</link><pubDate>Tue, 27 Aug 2024 11:10:36 +0800</pubDate><guid>https://cedis.unb.br/pt/posts/news-post.012/</guid><description>Prof. Daniel Sundfeld apresentou o projeto Laguna no Fórum RNP 2024.</description></item><item><title>Gamificar no Moodle sem virar programador: TCC entrega guia e ferramenta a docentes</title><link>https://cedis.unb.br/pt/posts/defesa-antonio-chaves-2024/</link><pubDate>Thu, 08 Aug 2024 00:00:00 -0300</pubDate><guid>https://cedis.unb.br/pt/posts/defesa-antonio-chaves-2024/</guid><description>Antonio Rangel Chaves e Vitor Diniz Pagani Vieira Ribeiro defenderam na FCTE/UnB um TCC que reduz a barreira de entrada para professores gamificarem disciplinas no Moodle — com guia e ferramenta prática.</description></item><item><title>Projeto Canal Ciência ganha prêmio de melhor artigo em conferência internacional</title><link>https://cedis.unb.br/pt/posts/news-post.010/</link><pubDate>Tue, 02 Jul 2024 11:10:36 +0800</pubDate><guid>https://cedis.unb.br/pt/posts/news-post.010/</guid><description>Artigo foi apresentado no 24th ICCSA em Hanoi, Vietnã.</description></item><item><title>Estudante de Software e bolsista do CEDIS apresenta artigo em congresso internacional</title><link>https://cedis.unb.br/pt/posts/news-post.009/</link><pubDate>Mon, 01 Jul 2024 11:10:36 +0800</pubDate><guid>https://cedis.unb.br/pt/posts/news-post.009/</guid><description>Artigo foi apresentado no 24 ICCSA em Hanoi no Vietna.</description></item><item><title>GCMP: dissertação sistematiza como construir chatbots gamificados</title><link>https://cedis.unb.br/pt/posts/defesa-arthur-temporim-2024/</link><pubDate>Tue, 28 May 2024 00:00:00 -0300</pubDate><guid>https://cedis.unb.br/pt/posts/defesa-arthur-temporim-2024/</guid><description>Arthur Rocha Temporim de Lacerda defendeu no PPCA/UnB uma dissertação que propõe o GCMP — Gamified Chatbot Management Process — método para orquestrar o desenvolvimento de chatbots gamificados de ponta a ponta.</description></item><item><title>Melhoria contínua com foco em usabilidade: TCC aplica mecanismos consagrados em aplicação web</title><link>https://cedis.unb.br/pt/posts/defesa-francisco-santos-2024/</link><pubDate>Mon, 11 Mar 2024 00:00:00 -0300</pubDate><guid>https://cedis.unb.br/pt/posts/defesa-francisco-santos-2024/</guid><description>Francisco Heronildo Sousa Santos e João Vitor Ferreira Alves defenderam na FCTE/UnB um TCC que aplica mecanismos consagrados de usabilidade em ciclo de avaliação e melhoria em uma aplicação web.</description></item><item><title>Estudante da UFPA realiza internato no CEDIS</title><link>https://cedis.unb.br/pt/posts/news-post.008/</link><pubDate>Wed, 06 Mar 2024 11:10:36 +0800</pubDate><guid>https://cedis.unb.br/pt/posts/news-post.008/</guid><description>Estudante da UFPA realiza internato no CEDIS com foco em gamificação para alfabetização</description></item><item><title>CEDIS lança software Contextus</title><link>https://cedis.unb.br/pt/posts/news-post.001/</link><pubDate>Tue, 23 Jan 2024 11:10:36 +0800</pubDate><guid>https://cedis.unb.br/pt/posts/news-post.001/</guid><description>Contextus - Uma plataforma avançada de IA, PLN e ML no coração da Análise Científica, liderada pelo CEDIS</description></item><item><title>Associação de CSAs em nuvem: AgroMart ganha peça para articular comunidades</title><link>https://cedis.unb.br/pt/posts/defesa-abner-ribeiro-2023/</link><pubDate>Fri, 22 Dec 2023 00:00:00 -0300</pubDate><guid>https://cedis.unb.br/pt/posts/defesa-abner-ribeiro-2023/</guid><description>Abner Filipe Cunha Ribeiro e Rafael Leão Teixeira de Magalhães defenderam na FCTE/UnB um TCC que expande o AgroMart para articular associações de CSAs em cloud — um passo importante na consolidação da plataforma.</description></item><item><title>Gamificar uma empresa pública: dissertação estuda como e por que a estratégia (às vezes) engaja</title><link>https://cedis.unb.br/pt/posts/defesa-luciana-assis-2023/</link><pubDate>Thu, 21 Dec 2023 00:00:00 -0300</pubDate><guid>https://cedis.unb.br/pt/posts/defesa-luciana-assis-2023/</guid><description>Luciana Santos de Assis defendeu no PPCA/UnB uma dissertação que analisa criticamente a implementação de gamificação em contextos organizacionais — estudando o caso de uma empresa pública brasileira.</description></item><item><title>Melhoria de processo de requisitos: TCC leva rigor ao ciclo mais volátil do desenvolvimento</title><link>https://cedis.unb.br/pt/posts/defesa-giulia-barros-2023/</link><pubDate>Thu, 21 Dec 2023 00:00:00 -0300</pubDate><guid>https://cedis.unb.br/pt/posts/defesa-giulia-barros-2023/</guid><description>Giulia Lobo Barros defendeu na FCTE/UnB um TCC que investiga a melhoria do processo de engenharia de requisitos de software — sob orientação conjunta de Cristiane Ramos e Ricardo Ajax.</description></item><item><title>Métricas de acessibilidade para pessoas com deficiência visual: TCC destila prática de auditoria</title><link>https://cedis.unb.br/pt/posts/defesa-ricardo-loureiro-2023/</link><pubDate>Thu, 21 Dec 2023 00:00:00 -0300</pubDate><guid>https://cedis.unb.br/pt/posts/defesa-ricardo-loureiro-2023/</guid><description>Ricardo de Castro Loureiro defendeu na FCTE/UnB um TCC que propõe métricas para avaliação da acessibilidade de páginas web voltadas a pessoas com deficiência visual — passo direto rumo a uma prática de auditoria mais objetiva.</description></item><item><title>Latte: dupla treina chatbot gamificado para ajudar a escrever artigo científico</title><link>https://cedis.unb.br/pt/posts/defesa-luiz-zamprogno-2023/</link><pubDate>Wed, 20 Dec 2023 00:00:00 -0300</pubDate><guid>https://cedis.unb.br/pt/posts/defesa-luiz-zamprogno-2023/</guid><description>Luiz Henrique Fernandes Zamprogno e Victor Eduardo Araújo Ribeiro defenderam na FCTE/UnB um TCC que apresenta o Latte — chatbot gamificado voltado a apoiar a produção de artigos científicos.</description></item><item><title>Da orientação à conversa: TCC estuda ChatGPT como complemento na engenharia de software</title><link>https://cedis.unb.br/pt/posts/defesa-rafael-berto-2023/</link><pubDate>Fri, 15 Dec 2023 00:00:00 -0300</pubDate><guid>https://cedis.unb.br/pt/posts/defesa-rafael-berto-2023/</guid><description>Rafael Berto Pereira defendeu na FCTE/UnB um TCC que investiga o uso complementar do ChatGPT em processos de engenharia de software — a partir de um estudo de caso com orientações definidas.</description></item><item><title>EaD em Engenharia de Software: TCC ouve os discentes e mede a percepção real</title><link>https://cedis.unb.br/pt/posts/defesa-julia-sousa-2023/</link><pubDate>Fri, 15 Dec 2023 00:00:00 -0300</pubDate><guid>https://cedis.unb.br/pt/posts/defesa-julia-sousa-2023/</guid><description>Júlia Farias Sousa defendeu na FCTE/UnB um TCC que analisa a percepção dos discentes sobre o uso de Ensino a Distância no curso de Engenharia de Software da FCTE/UnB.</description></item><item><title>BI para saúde mental: TCC constrói painéis para a Rede de Atenção Psicossocial</title><link>https://cedis.unb.br/pt/posts/defesa-luis-gomes-2023/</link><pubDate>Mon, 11 Dec 2023 00:00:00 -0300</pubDate><guid>https://cedis.unb.br/pt/posts/defesa-luis-gomes-2023/</guid><description>Luis Bruno Fidelis Gomes defendeu na FCTE/UnB um TCC que desenvolve painéis de Business Intelligence para monitoramento por profissionais da Rede de Atenção Psicossocial.</description></item><item><title>Professores do CEDIS recebem menção honrosa</title><link>https://cedis.unb.br/pt/posts/news-post.002/</link><pubDate>Wed, 29 Nov 2023 11:10:36 +0800</pubDate><guid>https://cedis.unb.br/pt/posts/news-post.002/</guid><description>Contextus - Uma plataforma avançada de IA, PLN e ML no coração da Análise Científica, liderada pelo CEDIS</description></item><item><title>CEDIS firma acordo internacional</title><link>https://cedis.unb.br/pt/posts/news-post.003/</link><pubDate>Fri, 10 Nov 2023 11:10:36 +0800</pubDate><guid>https://cedis.unb.br/pt/posts/news-post.003/</guid><description>Acordo entre instituições brasileira e portuguesa visa promover avanços significativos em pesquisas tecnológicas e acadêmicas.</description></item><item><title>Módulo de pagamento no AgroMart: dupla resolve a fricção que separa produtor e consumidor</title><link>https://cedis.unb.br/pt/posts/defesa-felipe-agustini-2023/</link><pubDate>Fri, 28 Jul 2023 00:00:00 -0300</pubDate><guid>https://cedis.unb.br/pt/posts/defesa-felipe-agustini-2023/</guid><description>Felipe Boccardi Silva Agustini e Giovanna Borges Bottino defenderam na FCTE/UnB um TCC que integra um módulo de pagamento ao AgroMart e assume, no processo, o encargo da manutenção evolutiva da plataforma.</description></item><item><title>Quanto vai custar essa Lambda? TCC prevê tempo de execução em serverless</title><link>https://cedis.unb.br/pt/posts/defesa-lucas-carvalho-2023/</link><pubDate>Thu, 27 Jul 2023 00:00:00 -0300</pubDate><guid>https://cedis.unb.br/pt/posts/defesa-lucas-carvalho-2023/</guid><description>Lucas Ganda Carvalho e Wíctor Bastos Girardi defenderam na FCTE/UnB um TCC que investiga a predição do tempo de execução de código em funções AWS Lambda — informação chave para estimar custo em ambientes serverless.</description></item><item><title>LGPD dentro do app: TCC operacionaliza requisitos de privacidade em código</title><link>https://cedis.unb.br/pt/posts/defesa-lucas-xavier-2023/</link><pubDate>Tue, 25 Jul 2023 00:00:00 -0300</pubDate><guid>https://cedis.unb.br/pt/posts/defesa-lucas-xavier-2023/</guid><description>Lucas Lopes Xavier defendeu na FCTE/UnB um TCC que traduz exigências da LGPD e da ISO 29100 em requisitos implementáveis em aplicativos — reduzindo a distância entre norma jurídica e prática de engenharia.</description></item><item><title>Aplicativo apoia disciplina gamificada de IHC: TCC entrega instrumento para a sala real</title><link>https://cedis.unb.br/pt/posts/defesa-italo-guimaraes-2023/</link><pubDate>Mon, 24 Jul 2023 00:00:00 -0300</pubDate><guid>https://cedis.unb.br/pt/posts/defesa-italo-guimaraes-2023/</guid><description>Ítalo Alves Guimarães defendeu na FCTE/UnB um TCC que implementa um aplicativo de apoio à disciplina gamificada de Interação Humano-Computador — uma peça pedida pelo próprio uso em sala.</description></item><item><title>Jornada: RPG entra na sala de aula como processo de aprendizagem</title><link>https://cedis.unb.br/pt/posts/defesa-joao-farias-2023/</link><pubDate>Mon, 24 Jul 2023 00:00:00 -0300</pubDate><guid>https://cedis.unb.br/pt/posts/defesa-joao-farias-2023/</guid><description>João Vitor Lopes de Farias defendeu na FCTE/UnB um TCC que examina o uso de RPG como espinha dorsal de um processo de aprendizagem — combinando narrativa, papéis e desafios com objetivos pedagógicos claros.</description></item><item><title>Pesquisadores do CEDIS lançam livro</title><link>https://cedis.unb.br/pt/posts/news-post.005/</link><pubDate>Thu, 20 Jul 2023 11:10:36 +0800</pubDate><guid>https://cedis.unb.br/pt/posts/news-post.005/</guid><description>Lançado livro de Indicadores de Aprendizagem com participação de pesquisadores do CEDIS.</description></item><item><title>Evasão na UnB sob a lupa da aprendizagem de máquina: dissertação prevê quem está em risco</title><link>https://cedis.unb.br/pt/posts/defesa-edmilson-silva-2023/</link><pubDate>Mon, 03 Jul 2023 00:00:00 -0300</pubDate><guid>https://cedis.unb.br/pt/posts/defesa-edmilson-silva-2023/</guid><description>Edmilson Cosme da Silva defendeu no PPCA/UnB uma dissertação que aplica algoritmos de aprendizado de máquina para prever evasão acadêmica nos cursos de graduação presencial da UnB.</description></item><item><title>Qualidade de software e o Brasil que envelhece: TCC cruza dados TIC Domicílios</title><link>https://cedis.unb.br/pt/posts/defesa-guilherme-silva-2023/</link><pubDate>Thu, 15 Jun 2023 00:00:00 -0300</pubDate><guid>https://cedis.unb.br/pt/posts/defesa-guilherme-silva-2023/</guid><description>Guilherme Daniel Fernandes da Silva e Lorrayne Alves Cardozo defenderam na FCTE/UnB um TCC que analisa a relação entre qualidade de software e envelhecimento populacional a partir dos dados da TIC Domicílios.</description></item><item><title>CEDIS participa projeto de gamificação</title><link>https://cedis.unb.br/pt/posts/news-post.004/</link><pubDate>Tue, 02 May 2023 11:10:36 +0800</pubDate><guid>https://cedis.unb.br/pt/posts/news-post.004/</guid><description>Parceria entre CEDIS e IBICT lança projeto de gamificação inovador do portal Canal Ciência</description></item><item><title>Relatório de inteligência policial sob a lente da gamificação: dissertação mede o que muda</title><link>https://cedis.unb.br/pt/posts/defesa-publio-cavalcante-2023/</link><pubDate>Thu, 23 Mar 2023 00:00:00 -0300</pubDate><guid>https://cedis.unb.br/pt/posts/defesa-publio-cavalcante-2023/</guid><description>Públio Pastrolin Cavalcante defendeu no PPCA/UnB uma dissertação que avalia como a aplicação de gamificação em atividades de inteligência policial altera a qualidade dos relatórios produzidos.</description></item><item><title>Por que empresas não usam processos que já pagaram para definir?</title><link>https://cedis.unb.br/pt/posts/defesa-nathalia-dias-2023/</link><pubDate>Sat, 04 Mar 2023 00:00:00 -0300</pubDate><guid>https://cedis.unb.br/pt/posts/defesa-nathalia-dias-2023/</guid><description>Nathalia Lorena Cardoso Dias defendeu na FCTE/UnB um TCC que investiga, com revisão sistemática da literatura, por que processos de melhoria de software já formalmente definidos frequentemente não são utilizados na prática.</description></item><item><title>Gamificação do CEDIS inova o ensino de IHC na FCTE</title><link>https://cedis.unb.br/pt/posts/news-post.007/</link><pubDate>Wed, 01 Mar 2023 11:10:36 +0800</pubDate><guid>https://cedis.unb.br/pt/posts/news-post.007/</guid><description>Jornada IHC - Uma aventura RPG na Aprendizagem da disciplina de Interação Humano-Computador.</description></item><item><title>Gamificação do CEDIS revoluciona o ensino de Software na FCTE</title><link>https://cedis.unb.br/pt/posts/news-post.006/</link><pubDate>Wed, 01 Mar 2023 11:10:36 +0800</pubDate><guid>https://cedis.unb.br/pt/posts/news-post.006/</guid><description>Gamificação inovadora do Prof. Sergio Freitas engaja estudantes de Engenharia de Software com uma abordagem lúdica e eficaz.</description></item><item><title>Deploy sob medida: TCC automatiza implantação individualizada no AgroMart</title><link>https://cedis.unb.br/pt/posts/defesa-andre-freitas-2023/</link><pubDate>Tue, 14 Feb 2023 00:00:00 -0300</pubDate><guid>https://cedis.unb.br/pt/posts/defesa-andre-freitas-2023/</guid><description>André Aben-Athar de Freitas e Pedro Vitor de Salles Cella defenderam na FCTE/UnB um TCC que automatiza o processo de implantação individualizada do AgroMart — permitindo que cada CSA opere sua própria instância.</description></item><item><title>SAMI: TCC cria sistema para análise de métricas de aprendizagem</title><link>https://cedis.unb.br/pt/posts/defesa-joao-silva-2023/</link><pubDate>Tue, 14 Feb 2023 00:00:00 -0300</pubDate><guid>https://cedis.unb.br/pt/posts/defesa-joao-silva-2023/</guid><description>João Vitor de Moura Rosa Silva defendeu na FCTE/UnB um TCC que constrói o SAMI — sistema para análise de métricas de indicadores de aprendizagem em disciplinas com metodologias ativas.</description></item><item><title>FormsGeo: TCC dá geolocalização a pesquisas sociais e devolve contexto a quem responde</title><link>https://cedis.unb.br/pt/posts/defesa-marcelo-silva-2023/</link><pubDate>Mon, 13 Feb 2023 00:00:00 -0300</pubDate><guid>https://cedis.unb.br/pt/posts/defesa-marcelo-silva-2023/</guid><description>Marcelo Victor de Sousa Silva e Washington Bispo Arishita Júnior defenderam na FCTE/UnB um TCC que apresenta o FormsGeo — aplicativo para pesquisas sociais com geolocalização integrada.</description></item><item><title>Ia qvt ferramenta acessível para medir qualidade de vida no trabalho</title><link>https://cedis.unb.br/pt/posts/defesa-gabriel-carvalho-2022/</link><pubDate>Wed, 05 Oct 2022 00:00:00 -0300</pubDate><guid>https://cedis.unb.br/pt/posts/defesa-gabriel-carvalho-2022/</guid><description>Gabriel de Jesus Carvalho defendeu na FCTE/UnB um TCC que desenvolve o IA-QVT — ferramenta para coleta e tratamento de dados sobre qualidade de vida no trabalho, com atenção especial à acessibilidade.</description></item><item><title>$tudy: TCC leva educação financeira para um sistema gamificado</title><link>https://cedis.unb.br/pt/posts/defesa-rafael-teodosio-2022/</link><pubDate>Wed, 28 Sep 2022 00:00:00 -0300</pubDate><guid>https://cedis.unb.br/pt/posts/defesa-rafael-teodosio-2022/</guid><description>Rafael Santos Teodosio defendeu na FCTE/UnB um TCC que projeta e implementa $tudy — sistema gamificado que se propõe a apoiar a educação financeira de jovens.</description></item><item><title>E gov e a fila para o idoso tcc estuda barreiras de acessibilidade em serviços públicos digitais</title><link>https://cedis.unb.br/pt/posts/defesa-fabiana-ribas-2022/</link><pubDate>Tue, 27 Sep 2022 00:00:00 -0300</pubDate><guid>https://cedis.unb.br/pt/posts/defesa-fabiana-ribas-2022/</guid><description>Fabiana Luiza Vasconcelos Pfeilsticker Ribas defendeu na FCTE/UnB um TCC que analisa a acessibilidade de serviços públicos digitais brasileiros para pessoas idosas — pauta que ganhou urgência com a digitalização acelerada durante a pandemia.</description></item><item><title>Fatores que empurram alunos para a saída: TCC em dupla estuda evasão no ensino superior</title><link>https://cedis.unb.br/pt/posts/defesa-amanda-menezes-2022/</link><pubDate>Mon, 26 Sep 2022 00:00:00 -0300</pubDate><guid>https://cedis.unb.br/pt/posts/defesa-amanda-menezes-2022/</guid><description>Amanda Emilly Muniz de Menezes e Letícia Karla Soares Rodrigues de Araújo defenderam na FCTE/UnB um TCC que identifica fatores acadêmicos, demográficos e de aprendizagem associados à evasão no ensino superior — e testa modelos preditivos.</description></item><item><title>QVT no setor público: TCC propõe ferramenta web para monitorar qualidade de vida no trabalho</title><link>https://cedis.unb.br/pt/posts/defesa-joao-rossi-2022/</link><pubDate>Mon, 26 Sep 2022 00:00:00 -0300</pubDate><guid>https://cedis.unb.br/pt/posts/defesa-joao-rossi-2022/</guid><description>João Gabriel Rossi e Paulo Vitor Coelho da Rocha defenderam na FCTE/UnB um TCC que desenvolve uma ferramenta web para apoiar a promoção da qualidade de vida no trabalho em órgãos do setor público.</description></item><item><title>Jogos sérios para TDAH: TCC descobre requisitos que passam batido na literatura</title><link>https://cedis.unb.br/pt/posts/defesa-gabriel-silva-2022/</link><pubDate>Fri, 23 Sep 2022 00:00:00 -0300</pubDate><guid>https://cedis.unb.br/pt/posts/defesa-gabriel-silva-2022/</guid><description>Gabriel Batista Albino Silva e Helena Bretas Goulart defenderam na FCTE/UnB um TCC que identifica requisitos não-funcionais para jogos sérios voltados a crianças com Transtorno de Déficit de Atenção com Hiperatividade (TDAH).</description></item><item><title>V&amp;V no serviço público: TCC documenta melhoria de processo em fábrica de software estatal</title><link>https://cedis.unb.br/pt/posts/defesa-renan-pinheiro-2022/</link><pubDate>Wed, 15 Jun 2022 00:00:00 -0300</pubDate><guid>https://cedis.unb.br/pt/posts/defesa-renan-pinheiro-2022/</guid><description>Renan Cristyan Araujo Pinheiro defendeu na FCTE/UnB um TCC que apresenta estudo de caso de melhoria do processo de verificação e validação de software em um órgão do setor público.</description></item><item><title>Universidade das Heurísticas: TCC vira o ensino de IHC em jogo educativo</title><link>https://cedis.unb.br/pt/posts/defesa-caue-oliveira-2022/</link><pubDate>Thu, 09 Jun 2022 00:00:00 -0300</pubDate><guid>https://cedis.unb.br/pt/posts/defesa-caue-oliveira-2022/</guid><description>Cauê Mateus Oliveira e Lucas Midlhey Cardoso Naves defenderam na FCTE/UnB um TCC que transforma o aprendizado das heurísticas de Nielsen em um jogo — a Universidade das Heurísticas.</description></item><item><title>Agro mart em evolução tcc abre o código, adiciona pagamentos e gestão de co agricultores</title><link>https://cedis.unb.br/pt/posts/defesa-byron-correa-2022/</link><pubDate>Mon, 09 May 2022 00:00:00 -0300</pubDate><guid>https://cedis.unb.br/pt/posts/defesa-byron-correa-2022/</guid><description>Byron Kamal Barreto Correa e Igor Guimaraes Veludo defenderam na FCTE/UnB uma etapa importante da história do AgroMart: abrir o código do projeto, integrar meios de pagamento e desenhar a gestão de co-agricultores.</description></item><item><title>Pixel: TCC gamifica o aprendizado de critérios de usabilidade</title><link>https://cedis.unb.br/pt/posts/defesa-erico-bandeira-2022/</link><pubDate>Thu, 05 May 2022 00:00:00 -0300</pubDate><guid>https://cedis.unb.br/pt/posts/defesa-erico-bandeira-2022/</guid><description>Érico Maximiano Bandeira defendeu na FCTE/UnB um TCC que apresenta o Pixel — ferramenta gamificada voltada ao aprendizado de critérios de usabilidade em avaliações de interface.</description></item><item><title>Startup em early stage e manutenção de software: TCC documenta o estado da prática</title><link>https://cedis.unb.br/pt/posts/defesa-filipe-silva-2021/</link><pubDate>Thu, 18 Nov 2021 00:00:00 -0300</pubDate><guid>https://cedis.unb.br/pt/posts/defesa-filipe-silva-2021/</guid><description>Filipe Toyoshima Silva defendeu na FCTE/UnB um TCC que mapeia como startups em fase inicial lidam com manutenção de software — uma etapa dominada por escassez de recursos e volume alto de mudanças.</description></item><item><title>O que os usuários dizem quando ninguém pergunta: TCC extrai usabilidade de reviews da Play Store</title><link>https://cedis.unb.br/pt/posts/defesa-augusto-silva-2021/</link><pubDate>Tue, 16 Nov 2021 00:00:00 -0300</pubDate><guid>https://cedis.unb.br/pt/posts/defesa-augusto-silva-2021/</guid><description>Augusto Moreno Vilarins Cardoso da Silva e Ícaro Pereira de Oliveira defenderam na FCTE/UnB um TCC que desenha um processo semi-automatizado para extrair sinais de usabilidade a partir dos comentários de usuários na Google Play Store.</description></item><item><title>Que framework usar para gamificar uma disciplina? Revisão sistemática dá o mapa</title><link>https://cedis.unb.br/pt/posts/defesa-weiller-pereira-2021/</link><pubDate>Thu, 11 Nov 2021 00:00:00 -0300</pubDate><guid>https://cedis.unb.br/pt/posts/defesa-weiller-pereira-2021/</guid><description>Weiller Fernandes Pereira defendeu na FCTE/UnB um TCC que faz revisão sistemática da literatura sobre o uso de frameworks na construção de gamificações voltadas para a educação.</description></item><item><title>Time voluntário, testes assíncronos: TCC monta estratégia de QA em pandemia</title><link>https://cedis.unb.br/pt/posts/defesa-vitor-xoteslem-2021/</link><pubDate>Mon, 25 Oct 2021 00:00:00 -0300</pubDate><guid>https://cedis.unb.br/pt/posts/defesa-vitor-xoteslem-2021/</guid><description>Vítor Cardoso Xoteslem defendeu na FCTE/UnB um TCC que elabora estratégia de testes para o app Doarti — mantido por uma equipe de voluntários distribuída geograficamente e em regime de trabalho remoto forçado pela pandemia.</description></item><item><title>REQGAME: dissertação testa gamificação para elicitar requisitos em órgão público federal</title><link>https://cedis.unb.br/pt/posts/defesa-ana-araujo-2021/</link><pubDate>Tue, 15 Jun 2021 00:00:00 -0300</pubDate><guid>https://cedis.unb.br/pt/posts/defesa-ana-araujo-2021/</guid><description>Ana Cláudia Alves Mendes Araújo defendeu no PPCA/UnB uma dissertação que aplica gamificação ao processo de elicitação de requisitos em projetos de software conduzidos em órgão público federal.</description></item><item><title>Analytics para dentro da sala: TCC usa mineração de dados para decidir por onde ajustar o TBL</title><link>https://cedis.unb.br/pt/posts/defesa-allan-nobre-2021/</link><pubDate>Fri, 28 May 2021 00:00:00 -0300</pubDate><guid>https://cedis.unb.br/pt/posts/defesa-allan-nobre-2021/</guid><description>Allan Jefrey Pereira Nobre defendeu na FCTE/UnB um TCC que aplica Learning Analytics e Educational Data Mining para apoiar decisões pedagógicas em disciplinas conduzidas com Team-Based Learning.</description></item><item><title>Nasce o AgroMart: dupla apresenta plataforma para agricultura familiar em TCC de 2021</title><link>https://cedis.unb.br/pt/posts/defesa-lucas-macedo-2021/</link><pubDate>Thu, 27 May 2021 00:00:00 -0300</pubDate><guid>https://cedis.unb.br/pt/posts/defesa-lucas-macedo-2021/</guid><description>Lucas Pereira de Andrade Macêdo e Lucas Siqueira Rodrigues defenderam na FCTE/UnB o TCC que dá origem ao AgroMart — plataforma para aproximar pequenos agricultores e consumidores de produtos orgânicos e artesanais.</description></item><item><title>Uma empresa júnior, um experimento vivo: TCC avalia gamificação aplicada in loco</title><link>https://cedis.unb.br/pt/posts/defesa-ateldy-filho-2021/</link><pubDate>Thu, 20 May 2021 00:00:00 -0300</pubDate><guid>https://cedis.unb.br/pt/posts/defesa-ateldy-filho-2021/</guid><description>Ateldy Borges Brasil Filho defendeu na FCTE/UnB um TCC que avalia gamificação aplicada em uma empresa júnior — organização com equipe rotativa, ciclos curtos e alta motivação inicial.</description></item><item><title>Interfaces que induzem ao erro tcc cataloga armadilhas comuns — e como evitá las</title><link>https://cedis.unb.br/pt/posts/defesa-caio-beleza-2021/</link><pubDate>Wed, 19 May 2021 00:00:00 -0300</pubDate><guid>https://cedis.unb.br/pt/posts/defesa-caio-beleza-2021/</guid><description>Caio César de Almeida Beleza defendeu na FCTE/UnB um TCC que analisa problemas em interfaces de software que empurram usuários para o erro e sistematiza recomendações para evitá-los.</description></item><item><title>Ler o que já está registrado: TCC propõe planejar melhorias de processo a partir de issues</title><link>https://cedis.unb.br/pt/posts/defesa-sannya-arvelos-2020/</link><pubDate>Thu, 17 Dec 2020 00:00:00 -0300</pubDate><guid>https://cedis.unb.br/pt/posts/defesa-sannya-arvelos-2020/</guid><description>Sannya Santana de Arvelos defendeu na FCTE/UnB um TCC que propõe usar a análise de issues como base para identificar oportunidades de melhoria de processo de software.</description></item><item><title>Melhoria de processo de software: por onde começar quando tudo parece caótico?</title><link>https://cedis.unb.br/pt/posts/defesa-rafael-pinheiro-2020/</link><pubDate>Wed, 16 Dec 2020 00:00:00 -0300</pubDate><guid>https://cedis.unb.br/pt/posts/defesa-rafael-pinheiro-2020/</guid><description>Rafael Contessotto Bragança Pinheiro defendeu na FCTE/UnB um TCC que propõe uma abordagem para ajudar organizações a iniciar programas de melhoria de processo de software — o passo mais difícil quando quase tudo pede atenção.</description></item><item><title>Teste exploratório em ação: TCC combina abordagem estruturada e livre para avaliar software</title><link>https://cedis.unb.br/pt/posts/defesa-iolane-andrade-2020/</link><pubDate>Tue, 15 Dec 2020 00:00:00 -0300</pubDate><guid>https://cedis.unb.br/pt/posts/defesa-iolane-andrade-2020/</guid><description>Iolane Caroline Alves de Andrade defendeu na FCTE/UnB um TCC que aplica testes exploratórios ao lado de testes tradicionais, mostrando o ganho de aprendizagem que o teste exploratório traz ao processo.</description></item><item><title>Refatoração como alavanca: TCC mostra como reescrever código para ganhar variabilidade</title><link>https://cedis.unb.br/pt/posts/defesa-ronyell-santos-2020/</link><pubDate>Fri, 28 Feb 2020 00:00:00 -0300</pubDate><guid>https://cedis.unb.br/pt/posts/defesa-ronyell-santos-2020/</guid><description>Ronyell Henrique dos Santos defendeu na FCTE/UnB um TCC que aplica operações de refatoração para aprimorar a variabilidade de sistemas de software — reduzindo o custo da manutenção ao longo do ciclo de vida.</description></item><item><title>Barramento de Serviços da UnB ganha monitoramento: dissertação instrumenta a espinha dorsal digital da universidade</title><link>https://cedis.unb.br/pt/posts/defesa-felipe-evangelista-2020/</link><pubDate>Tue, 11 Feb 2020 00:00:00 -0300</pubDate><guid>https://cedis.unb.br/pt/posts/defesa-felipe-evangelista-2020/</guid><description>Felipe Evangelista dos Santos defendeu no PPCA/UnB uma dissertação que integra ferramentas de monitoramento ao Barramento de Serviços da UnB — infraestrutura crítica para a comunicação entre sistemas acadêmicos.</description></item><item><title>SOA, ágil e QA no mesmo estudo de caso: dissertação documenta o encontro real de três culturas</title><link>https://cedis.unb.br/pt/posts/defesa-james-chaves-2019/</link><pubDate>Wed, 17 Jul 2019 00:00:00 -0300</pubDate><guid>https://cedis.unb.br/pt/posts/defesa-james-chaves-2019/</guid><description>James Taylor Faria Chaves defendeu no PPCA/UnB uma dissertação que analisa, em estudo de caso, o encontro entre arquitetura orientada a serviços (SOA), métodos ágeis de desenvolvimento e práticas de Quality Assurance.</description></item><item><title>Team based learning ganha plataforma tcc leva a metodologia da sala para a nuvem</title><link>https://cedis.unb.br/pt/posts/defesa-victor-deon-2019/</link><pubDate>Fri, 12 Jul 2019 00:00:00 -0300</pubDate><guid>https://cedis.unb.br/pt/posts/defesa-victor-deon-2019/</guid><description>Victor Hugo Arnaud Deon defendeu na FCTE/UnB um TCC que desenvolve a PGTBL — uma plataforma livre para gerenciar atividades de Team-Based Learning em cursos universitários.</description></item><item><title>Quem escreveu esse commit? TCC calcula taxa de autoria dentro de projetos Git</title><link>https://cedis.unb.br/pt/posts/defesa-laercio-junior-2018/</link><pubDate>Tue, 11 Dec 2018 00:00:00 -0300</pubDate><guid>https://cedis.unb.br/pt/posts/defesa-laercio-junior-2018/</guid><description>Laércio Silva de Sousa Júnior defendeu na FCTE/UnB um TCC que investiga formas de calcular a taxa de autoria de desenvolvedores dentro de projetos versionados em Git.</description></item><item><title>Medir para engajar: TCC propõe estratégia para melhorar aplicações gamificadas</title><link>https://cedis.unb.br/pt/posts/defesa-paulo-calado-2018/</link><pubDate>Wed, 15 Aug 2018 00:00:00 -0300</pubDate><guid>https://cedis.unb.br/pt/posts/defesa-paulo-calado-2018/</guid><description>Paulo Markes Rodrigues de Oliveira Calado defendeu na FCTE/UnB um TCC que desenvolve uma estratégia para identificar oportunidades de melhoria em aplicações gamificadas — atacando o problema de que o brilho inicial nem sempre se converte em uso prolongado.</description></item><item><title>Motoristas como sensores: TCC propõe app colaborativo para monitorar frota urbana</title><link>https://cedis.unb.br/pt/posts/defesa-jonathan-paiva-2018/</link><pubDate>Fri, 06 Jul 2018 00:00:00 -0300</pubDate><guid>https://cedis.unb.br/pt/posts/defesa-jonathan-paiva-2018/</guid><description>Jonathan Paiva e Luis Henrique Guimarães defenderam na FCTE/UnB um TCC que substitui sensores e câmeras por colaboração humana para monitorar a situação dos automóveis em uma cidade — o app NotifiCar.</description></item><item><title>Tornar visível o invisível: TCC propõe método para expor a dívida técnica em times ágeis</title><link>https://cedis.unb.br/pt/posts/defesa-iago-goncalves-2018/</link><pubDate>Fri, 06 Jul 2018 00:00:00 -0300</pubDate><guid>https://cedis.unb.br/pt/posts/defesa-iago-goncalves-2018/</guid><description>Iago Rodrigues Gonçalves defendeu na FCTE/UnB um TCC que investiga formas de identificar, medir e comunicar a dívida técnica — um problema que ganha peso em metodologias ágeis focadas em entrega contínua.</description></item><item><title>Atrair é fácil, reter é gamificação: TCC ataca curva de abandono em rede social acadêmica</title><link>https://cedis.unb.br/pt/posts/defesa-tiago-assuncao-2017/</link><pubDate>Thu, 21 Dec 2017 00:00:00 -0300</pubDate><guid>https://cedis.unb.br/pt/posts/defesa-tiago-assuncao-2017/</guid><description>Tiago Ribeiro de Assunção defendeu na FCTE/UnB um TCC que aplica gamificação à Rede Social About para atacar seu ponto fraco: a rede atrai novos usuários com facilidade, mas não consegue mantê-los ativos.</description></item><item><title>Matemática, criança e vitória digital: o software que quer transformar a aula em uma missão</title><link>https://cedis.unb.br/pt/posts/defesa-leandro-santos-2017/</link><pubDate>Fri, 08 Dec 2017 00:00:00 -0300</pubDate><guid>https://cedis.unb.br/pt/posts/defesa-leandro-santos-2017/</guid><description>Leandro Alves Ferreira Santos defendeu na FCTE/UnB um TCC que desenvolve um software gamificado para apoiar o ensino de matemática ao público infantil — território pouco atendido pelas soluções edtech.</description></item><item><title>Bases de experiência: o que fazer com o conhecimento que passa pela porta dos laboratórios de P&amp;D</title><link>https://cedis.unb.br/pt/posts/defesa-attany-araujo-2016/</link><pubDate>Wed, 07 Dec 2016 00:00:00 -0300</pubDate><guid>https://cedis.unb.br/pt/posts/defesa-attany-araujo-2016/</guid><description>Attany Nathaly Lima Araújo defendeu na FCTE/UnB um TCC que desenha um processo de construção de bases de experiências para laboratórios de P&amp;D — tema clássico da gestão do conhecimento aplicada à engenharia de software.</description></item><item><title>Ciências Sem Fronteiras sob a lente da engenharia: o que os alunos trouxeram além do inglês</title><link>https://cedis.unb.br/pt/posts/defesa-leandro-rodrigues-2016/</link><pubDate>Thu, 07 Jul 2016 00:00:00 -0300</pubDate><guid>https://cedis.unb.br/pt/posts/defesa-leandro-rodrigues-2016/</guid><description>Leandro Veloso Rodrigues defendeu na FCTE/UnB um TCC que investiga o impacto do Programa Ciência sem Fronteiras no desenvolvimento de competências comportamentais dos futuros engenheiros de software.</description></item><item><title>Ferramenta ajuda times a construir projetos de gamificação sem partir do zero</title><link>https://cedis.unb.br/pt/posts/defesa-ludimila-cruz-2016/</link><pubDate>Sat, 02 Jul 2016 00:00:00 -0300</pubDate><guid>https://cedis.unb.br/pt/posts/defesa-ludimila-cruz-2016/</guid><description>Ludimila da Bela Cruz defendeu na FCTE/UnB um TCC que propõe uma ferramenta para apoiar equipes na construção de projetos de gamificação, ancorando o processo em elementos motivacionais estruturados.</description></item><item><title>Antes do boom da IA generativa, um TCC já ensinava a máquina a corrigir dissertativas</title><link>https://cedis.unb.br/pt/posts/defesa-cristovao-frinhani-2016/</link><pubDate>Fri, 01 Jul 2016 00:00:00 -0300</pubDate><guid>https://cedis.unb.br/pt/posts/defesa-cristovao-frinhani-2016/</guid><description>Em 2016, muito antes do frenesi dos LLMs, Cristóvão Frinhani defendeu na FCTE/UnB um TCC que usa similaridade semântica e aprendizado de máquina para auxiliar tutores de EAD na correção de questões dissertativas.</description></item><item><title>Algoritmos com pontos: TCC adapta ambiente virtual ao ensino gamificado de programação</title><link>https://cedis.unb.br/pt/posts/defesa-wilker-assuncao-2016/</link><pubDate>Wed, 15 Jun 2016 00:00:00 -0300</pubDate><guid>https://cedis.unb.br/pt/posts/defesa-wilker-assuncao-2016/</guid><description>Wilker Mesquita de Assunção defendeu na FCTE/UnB um TCC que adapta um ambiente virtual de aprendizado para o ensino de algoritmos usando técnicas de gamificação.</description></item><item><title>Como escolher um CMS sem depender do 'porque é o que estamos usando'</title><link>https://cedis.unb.br/pt/posts/defesa-thiago-honorato-2015/</link><pubDate>Mon, 15 Jun 2015 00:00:00 -0300</pubDate><guid>https://cedis.unb.br/pt/posts/defesa-thiago-honorato-2015/</guid><description>Thiago Silveira Honorato defendeu um TCC que propõe um método de escolha racional entre Content Management Systems para diferentes cenários — reduzindo a dependência de decisões baseadas apenas em familiaridade da equipe.</description></item><item><title>Milissegundos importam: TCC mede o impacto de escolhas de código no Android</title><link>https://cedis.unb.br/pt/posts/defesa-victor-carvalho-2015/</link><pubDate>Mon, 15 Jun 2015 00:00:00 -0300</pubDate><guid>https://cedis.unb.br/pt/posts/defesa-victor-carvalho-2015/</guid><description>Victor Hugo Alves de Carvalho defendeu em 2015, na FCTE/UnB, um TCC empírico que compara técnicas de programação em Android e mede o efeito de cada uma sobre desempenho e responsividade dos aplicativos.</description></item><item><title>Ontologias para dar mapa a quem estuda: TCC organiza etapa mais difícil do mapeamento sistemático</title><link>https://cedis.unb.br/pt/posts/defesa-igor-ramos-2015/</link><pubDate>Mon, 15 Jun 2015 00:00:00 -0300</pubDate><guid>https://cedis.unb.br/pt/posts/defesa-igor-ramos-2015/</guid><description>Igor de Araújo Ramos defendeu na FCTE/UnB um TCC que propõe usar ontologias para apoiar a etapa mais espinhosa dos mapeamentos sistemáticos: transformar dados coletados em um mapa de conhecimento realmente utilizável.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Notícias em CEDIS</title>
+    <link>https://cedis.unb.br/pt/categories/news/</link>
+    <description>Conteudo recente em Notícias em CEDIS</description>
+    <generator>Hugo</generator>
+    <language>pt</language>
+    <lastBuildDate>Sun, 19 Jul 2026 16:36:39 -0300</lastBuildDate>
+    <atom:link href="https://cedis.unb.br/pt/categories/news/index.xml" rel="self" type="application/rss&#43;xml" />
+    <item>
+      <title>CEDIS lança o Deck Manager, plataforma de apresentações interativas com privacidade por design</title>
+      <link>https://cedis.unb.br/pt/posts/news-post.027/</link>
+      <pubDate>Thu, 16 Jul 2026 09:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/news-post.027/</guid>
+      <description>Nova plataforma do CEDIS para apresentações interativas, disponível em slides.cedis.tec.br e deck.cedis.tec.br.</description>
+    </item>
+    <item>
+      <title>TCC de estudantes de Engenharia de Software dá origem ao Git Ranking, aplicação gamificada para equipes ágeis no GitHub</title>
+      <link>https://cedis.unb.br/pt/posts/news-post.025/</link>
+      <pubDate>Tue, 14 Jul 2026 09:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/news-post.025/</guid>
+      <description>Trabalho de conclusão de curso orientado pelo Prof. Sergio Freitas resultou no Git Ranking, aplicação gamificada integrada ao GitHub.</description>
+    </item>
+    <item>
+      <title>Artigo sobre instrumento diagnóstico do EduTrack é aceito no SBIE 2026</title>
+      <link>https://cedis.unb.br/pt/posts/news-post.028/</link>
+      <pubDate>Fri, 10 Jul 2026 09:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/news-post.028/</guid>
+      <description>Artigo (submissão #27258) de autoria de Sergio Freitas, Daniel Rodrigues da Rocha, Davi Rodrigues da Rocha e Mylena Angélica Silva Farias foi aceito no SBIE 2026.</description>
+    </item>
+    <item>
+      <title>Artigo sobre o DevDog é aceito na Trilha de Ferramentas do SBES 2026</title>
+      <link>https://cedis.unb.br/pt/posts/news-post.026/</link>
+      <pubDate>Wed, 08 Jul 2026 09:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/news-post.026/</guid>
+      <description>Artigo decorrente do TCC de Luciano Ricardo da Silva Junior foi aceito no SBES 2026, com orientação do Prof. Sergio Freitas e coorientação do Prof. André Lanna.</description>
+    </item>
+    <item>
+      <title>TCC de estudantes de Engenharia de Software dá origem ao Atloria, aplicativo de realidade aumentada para ensino de estruturas de dados</title>
+      <link>https://cedis.unb.br/pt/posts/news-post.024/</link>
+      <pubDate>Tue, 07 Jul 2026 09:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/news-post.024/</guid>
+      <description>Trabalho de conclusão de curso orientado pelo Prof. Sergio Freitas resultou no Atloria, aplicativo educacional em realidade aumentada.</description>
+    </item>
+    <item>
+      <title>DevDog: TCC transforma code smells em aprendizagem gamificada</title>
+      <link>https://cedis.unb.br/pt/posts/defesa-luciano-silva-2026/</link>
+      <pubDate>Thu, 11 Jun 2026 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/defesa-luciano-silva-2026/</guid>
+      <description>Luciano Ricardo da Silva Junior defendeu na FCTE/UnB um TCC que originou o DevDog, aplicação web gamificada para apoiar o ensino da identificação de code smells.</description>
+    </item>
+    <item>
+      <title>Plataforma OctaAnalysis amplia o portfólio de inovação digital do CEDIS</title>
+      <link>https://cedis.unb.br/pt/posts/news-post.022/</link>
+      <pubDate>Tue, 10 Mar 2026 09:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/news-post.022/</guid>
+      <description>O OctaAnalysis é uma plataforma do CEDIS voltada ao design, gerenciamento e acompanhamento analítico de experiências gamificadas.</description>
+    </item>
+    <item>
+      <title>CEDIS apresenta o Evidentia Review para revisões sistemáticas da literatura</title>
+      <link>https://cedis.unb.br/pt/posts/news-post.021/</link>
+      <pubDate>Mon, 09 Mar 2026 18:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/news-post.021/</guid>
+      <description>O Evidentia Review é um software do CEDIS voltado à condução ponta a ponta de revisões sistemáticas da literatura.</description>
+    </item>
+    <item>
+      <title>Registro de software Contextus é concedido pelo INPI</title>
+      <link>https://cedis.unb.br/pt/posts/news-post.023/</link>
+      <pubDate>Thu, 19 Feb 2026 09:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/news-post.023/</guid>
+      <description>O certificado do Contextus foi expedido em 18 de fevereiro de 2026 e formaliza a proteção jurídica do software junto ao INPI.</description>
+    </item>
+    <item>
+      <title>DevOps sob a régua das métricas DORA: um retrato do setor financeiro</title>
+      <link>https://cedis.unb.br/pt/posts/defesa-emanuel-oliveira-2025/</link>
+      <pubDate>Wed, 03 Dec 2025 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/defesa-emanuel-oliveira-2025/</guid>
+      <description>Dissertação defendida no PPCA/UnB propõe modelo para avaliar a maturidade DevOps de times bancários combinando métricas DORA, análise documental e triangulação sociotécnica.</description>
+    </item>
+    <item>
+      <title>FTV Scout: TCC leva análise de desempenho ao futevôlei</title>
+      <link>https://cedis.unb.br/pt/posts/defesa-felipe-macedo-2025/</link>
+      <pubDate>Tue, 02 Dec 2025 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/defesa-felipe-macedo-2025/</guid>
+      <description>Felipe Direito Corrieri de Macedo defendeu na FCTE/UnB um TCC que apresenta o FTV Scout — sistema para notação e análise de desempenho de atletas e equipes de futevôlei.</description>
+    </item>
+    <item>
+      <title>Contar pontos de função sem gente contando: dissertação lê requisições HTTP para automatizar SFP</title>
+      <link>https://cedis.unb.br/pt/posts/defesa-diego-rocha-2025/</link>
+      <pubDate>Thu, 23 Oct 2025 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/defesa-diego-rocha-2025/</guid>
+      <description>Diego Emanuel Ferreira da Rocha defendeu no PPCA/UnB a etapa de qualificação da dissertação que automatiza a identificação de processos elementares a partir da análise de requisições HTTP — reduzindo a fricção do Simple Function Points.</description>
+    </item>
+    <item>
+      <title>Curso de Engenharia de Software da UnB recebe equipe de Gamificação do Banco do Brasil</title>
+      <link>https://cedis.unb.br/pt/posts/news-post.020/</link>
+      <pubDate>Wed, 03 Sep 2025 17:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/news-post.020/</guid>
+      <description>O curso de Engenharia de Software da UnB recebeu a equipe de Gamificação do Banco do Brasil para uma palestra sobre história, metodologia e ética da gamificação.</description>
+    </item>
+    <item>
+      <title>CEDIS na UnB: reconhecimento e inovação</title>
+      <link>https://cedis.unb.br/pt/posts/news-post.019/</link>
+      <pubDate>Fri, 29 Aug 2025 17:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/news-post.019/</guid>
+      <description>O CEDIS celebra a conquista do professor Sergio Freitas, que recebeu Menção Honrosa no Prêmio Anual de Inovação no Ensino de Graduação (DEG/UnB), na categoria Uso de recursos tecnológicos e produção de material didático inovador.</description>
+    </item>
+    <item>
+      <title>Chamada voluntária para atuação no CEDIS – Inscrições abertas</title>
+      <link>https://cedis.unb.br/pt/posts/news-post.016/</link>
+      <pubDate>Thu, 28 Aug 2025 09:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/news-post.016/</guid>
+      <description>O CEDIS abre inscrições para estudantes voluntários interessados em atuar em projetos de pesquisa e atividades acadêmicas.</description>
+    </item>
+    <item>
+      <title>3SW: mestrado propõe adaptar o CIS Controls v8.1 à realidade da administração pública</title>
+      <link>https://cedis.unb.br/pt/posts/defesa-tassio-silva-2025/</link>
+      <pubDate>Tue, 26 Aug 2025 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/defesa-tassio-silva-2025/</guid>
+      <description>Tássio Correia da Silva defendeu no PPEE/UnB uma dissertação de mestrado profissional que adapta o CIS Controls v8.1 para mitigação de ameaças a servidores web em contexto de administração pública.</description>
+    </item>
+    <item>
+      <title>Prof. Sergio Freitas ministra formação pedagógica na UFES com grande participação</title>
+      <link>https://cedis.unb.br/pt/posts/news-post.018/</link>
+      <pubDate>Wed, 13 Aug 2025 07:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/news-post.018/</guid>
+      <description>O professor Sergio Freitas ministrou curso de formação pedagógica na UFES para docentes das áreas de Exatas e Engenharias, com ampla participação e aplicação prática dos conteúdos abordados.</description>
+    </item>
+    <item>
+      <title>Three Filters: TCC filtra metadados científicos em três camadas</title>
+      <link>https://cedis.unb.br/pt/posts/defesa-leonardo-vitoriano-2025/</link>
+      <pubDate>Mon, 28 Jul 2025 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/defesa-leonardo-vitoriano-2025/</guid>
+      <description>Leonardo Milomes Vitoriano e Mateus de Almeida Dias defenderam na FCTE/UnB um TCC que apresenta o Three Filters — sistema para assegurar qualidade e integridade de metadados científicos em JSON.</description>
+    </item>
+    <item>
+      <title>Chatbot para a FCTE: TCC centraliza informações administrativas para o estudante</title>
+      <link>https://cedis.unb.br/pt/posts/defesa-breno-souza-2025/</link>
+      <pubDate>Wed, 23 Jul 2025 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/defesa-breno-souza-2025/</guid>
+      <description>Breno Henrique de Souza e Giulia Domingues de Alcantara defenderam na FCTE/UnB um TCC que centraliza informações administrativas da FCTE em um chatbot com apoio de inteligência artificial.</description>
+    </item>
+    <item>
+      <title>Gamificar o Scrum: TCC mapeia a literatura e desenha diretrizes para o campo</title>
+      <link>https://cedis.unb.br/pt/posts/defesa-denniel-lima-2025/</link>
+      <pubDate>Tue, 22 Jul 2025 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/defesa-denniel-lima-2025/</guid>
+      <description>Denniel Roriz Lima defendeu na FCTE/UnB um TCC que faz uma revisão bibliométrica e temática sobre o uso de gamificação em processos ágeis com Scrum e propõe diretrizes práticas para implementação.</description>
+    </item>
+    <item>
+      <title>Vieses algorítmicos: TCC faz mapeamento sistemático dos desafios éticos</title>
+      <link>https://cedis.unb.br/pt/posts/defesa-amanda-nobre-2025/</link>
+      <pubDate>Mon, 21 Jul 2025 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/defesa-amanda-nobre-2025/</guid>
+      <description>Amanda Jeniffer Pereira Nobre e Ana Carolina Rodrigues Leite defenderam na FCTE/UnB um TCC que faz mapeamento sistemático da literatura sobre desafios éticos associados aos vieses em algoritmos de inteligência artificial.</description>
+    </item>
+    <item>
+      <title>Aplicativo para saúde mental no Campus Gama: TCC entrega ferramenta pensada com estudantes</title>
+      <link>https://cedis.unb.br/pt/posts/defesa-delziron-lima-2025/</link>
+      <pubDate>Thu, 17 Jul 2025 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/defesa-delziron-lima-2025/</guid>
+      <description>Delziron Braz de Lima e Fellipe Pereira da Costa Silva defenderam na FCTE/UnB um TCC que desenvolve um aplicativo de suporte à saúde mental e bem-estar de estudantes do Campus Gama.</description>
+    </item>
+    <item>
+      <title>Prever euploidia sem tocar no embrião: TCC leva aprendizado de máquina à fertilização in vitro</title>
+      <link>https://cedis.unb.br/pt/posts/defesa-maria-ferreira-2025/</link>
+      <pubDate>Thu, 17 Jul 2025 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/defesa-maria-ferreira-2025/</guid>
+      <description>Maria Eduarda dos Santos Abritta Ferreira e Sabrina Caldas Berno defenderam na FCTE/UnB um TCC que aplica aprendizado de máquina à predição não-invasiva de euploidia em embriões humanos a partir de dados morfocinéticos.</description>
+    </item>
+    <item>
+      <title>TROPA: TCC projeta software para orquestrar operações de airsoft</title>
+      <link>https://cedis.unb.br/pt/posts/defesa-erick-felicissimo-2025/</link>
+      <pubDate>Tue, 15 Jul 2025 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/defesa-erick-felicissimo-2025/</guid>
+      <description>Erick Giffoni Felicissimo defendeu na FCTE/UnB um TCC que projeta e desenvolve o software TROPA — Teatro de Operações de Airsoft — para apoiar a organização de partidas do esporte no Brasil.</description>
+    </item>
+    <item>
+      <title>SmartPayment: TCC leva contratos inteligentes à avaliação de desenvolvedores</title>
+      <link>https://cedis.unb.br/pt/posts/defesa-joao-moura-2025/</link>
+      <pubDate>Fri, 11 Jul 2025 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/defesa-joao-moura-2025/</guid>
+      <description>João Pedro Elias de Moura defendeu na FCTE/UnB um TCC que projeta o SmartPayment — sistema baseado em contratos inteligentes para automatizar avaliação e pagamento em desenvolvimento de software.</description>
+    </item>
+    <item>
+      <title>AgroMart migra de IaaS para serverless: dupla mostra que produtor rural pode ficar dentro do free tier</title>
+      <link>https://cedis.unb.br/pt/posts/defesa-kalebe-murilo-2025/</link>
+      <pubDate>Tue, 25 Feb 2025 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/defesa-kalebe-murilo-2025/</guid>
+      <description>Kalebe Cunha e Murilo Santana defenderam em fevereiro de 2025, na FCTE/UnB, um TCC que migra o AgroMart do modelo IaaS para AWS Lambda e testa a viabilidade de operar dentro do free tier — reduzindo o custo do agricultor.</description>
+    </item>
+    <item>
+      <title>Chat gpt 4o na elicitação de requisitos tcc faz o estudo de caso que a comunidade precisava</title>
+      <link>https://cedis.unb.br/pt/posts/defesa-geraldo-barbosa-2025/</link>
+      <pubDate>Wed, 19 Feb 2025 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/defesa-geraldo-barbosa-2025/</guid>
+      <description>Geraldo Victor Alves Barbosa e João Victor de Oliveira Matos defenderam na FCTE/UnB um TCC que investiga o uso do ChatGPT-4o no processo de elicitação, descoberta e declaração de requisitos.</description>
+    </item>
+    <item>
+      <title>OMA: dupla desenvolve organizador multimídia para estudantes de engenharia</title>
+      <link>https://cedis.unb.br/pt/posts/defesa-artur-vieira-2025/</link>
+      <pubDate>Tue, 18 Feb 2025 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/defesa-artur-vieira-2025/</guid>
+      <description>Artur de Sousa Vieira e Luíza Esteves dos Santos defenderam na FCTE/UnB um TCC que apresenta o OMA — Organizador Multimídia Acadêmico — voltado a estudantes de engenharia do Campus Gama.</description>
+    </item>
+    <item>
+      <title>Segurança da gov.br: dissertação avalia fatores adicionais de autenticação para a identidade digital</title>
+      <link>https://cedis.unb.br/pt/posts/defesa-sandro-furtado-2025/</link>
+      <pubDate>Tue, 18 Feb 2025 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/defesa-sandro-furtado-2025/</guid>
+      <description>Sandro Leite Furtado defendeu no PPCA/UnB uma dissertação que identifica e avalia fatores adicionais de segurança para a Identidade gov.br, implementando e testando o RBA (Risk-Based Authentication) como camada complementar.</description>
+    </item>
+    <item>
+      <title>SiCaPEx: dissertação faz auditoria de usabilidade em sistema de pessoal do Exército Brasileiro</title>
+      <link>https://cedis.unb.br/pt/posts/defesa-dione-moura-2025/</link>
+      <pubDate>Fri, 10 Jan 2025 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/defesa-dione-moura-2025/</guid>
+      <description>Dione Ramos Canuto Moura defendeu no PPCA/UnB uma dissertação que analisa a usabilidade do SiCaPEx — sistema de cadastramento de pessoal do Exército Brasileiro — combinando SUS, heurísticas de Nielsen e propostas de melhoria implementadas.</description>
+    </item>
+    <item>
+      <title>Salas, horários, professores: dissertação propõe modelo adaptativo para agendar recursos acadêmicos na UnB</title>
+      <link>https://cedis.unb.br/pt/posts/defesa-eber-moreira-2024/</link>
+      <pubDate>Tue, 17 Dec 2024 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/defesa-eber-moreira-2024/</guid>
+      <description>Éber Junio Borges Moreira defendeu no PPCA/UnB uma dissertação que ataca o problema do agendamento de recursos acadêmicos em instituições de ensino superior, com estudo de caso na própria UnB.</description>
+    </item>
+    <item>
+      <title>Artigo premiado como melhor paper na ITHET 2024</title>
+      <link>https://cedis.unb.br/pt/posts/news-post.013/</link>
+      <pubDate>Mon, 11 Nov 2024 11:10:36 &#43;0800</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/news-post.013/</guid>
+      <description>Artigo apresentado no IEEE ITHET 2024 em Paris recebe prêmio de melhor paper.</description>
+    </item>
+    <item>
+      <title>Direito do trabalho no bolso: PWA leva fluxogramas jurídicos ao celular</title>
+      <link>https://cedis.unb.br/pt/posts/defesa-joao-machado-2024/</link>
+      <pubDate>Mon, 28 Oct 2024 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/defesa-joao-machado-2024/</guid>
+      <description>João Pedro Alves Machado e Júlio César Martins França defenderam na FCTE/UnB um TCC que constrói uma PWA para navegação em fluxogramas de educação jurídica sobre direitos trabalhistas.</description>
+    </item>
+    <item>
+      <title>Formulários que ensinam Direito: TCC modela fluxos jurídicos no Google Forms</title>
+      <link>https://cedis.unb.br/pt/posts/defesa-guilherme-vial-2024/</link>
+      <pubDate>Wed, 18 Sep 2024 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/defesa-guilherme-vial-2024/</guid>
+      <description>Guilherme Rogelin Vial e Lucas Braun Vieira Xavier defenderam na FCTE/UnB um TCC que usa o Google Forms como interface para modelar e distribuir fluxos de navegação voltados à educação jurídica.</description>
+    </item>
+    <item>
+      <title>AgroMart chega à publicação: dupla integra e liga o aplicativo ao público final</title>
+      <link>https://cedis.unb.br/pt/posts/defesa-christian-siqueira-2024/</link>
+      <pubDate>Tue, 17 Sep 2024 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/defesa-christian-siqueira-2024/</guid>
+      <description>Christian Fleury Alencar Siqueira e Thiago Siqueira Gomes defenderam na FCTE/UnB um TCC que atravessa o último quilômetro do AgroMart: integrar módulos, ajustar deploy e publicar o aplicativo para uso público.</description>
+    </item>
+    <item>
+      <title>Ferramentas de acessibilidade e o Brasil que envelhece: TCC compara o que existe no mercado</title>
+      <link>https://cedis.unb.br/pt/posts/defesa-daniel-moreira-2024/</link>
+      <pubDate>Mon, 16 Sep 2024 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/defesa-daniel-moreira-2024/</guid>
+      <description>Daniel Barcelos Moreira e Juliana Pereira Valle Gonçalves defenderam na FCTE/UnB um TCC que avalia ferramentas usadas para medir a acessibilidade de sites web utilizados por pessoas idosas.</description>
+    </item>
+    <item>
+      <title>IA na avaliação de disciplinas de software: TCC piloto testa apoio a docentes</title>
+      <link>https://cedis.unb.br/pt/posts/defesa-caio-oliveira-2024/</link>
+      <pubDate>Thu, 12 Sep 2024 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/defesa-caio-oliveira-2024/</guid>
+      <description>Caio César Oliveira defendeu na FCTE/UnB um TCC que desenvolve inteligência artificial para aprimorar avaliações individuais em disciplinas de Engenharia de Software.</description>
+    </item>
+    <item>
+      <title>Modelo de IA para Libras: TCC atravessa a barreira de comunicação com a comunidade surda</title>
+      <link>https://cedis.unb.br/pt/posts/defesa-daniela-oliveira-2024/</link>
+      <pubDate>Thu, 12 Sep 2024 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/defesa-daniela-oliveira-2024/</guid>
+      <description>Daniela Soares de Oliveira e Danilo Domingo Vitoriano Silva defenderam na FCTE/UnB um TCC que constrói um modelo de IA para tradução de Libras — resposta técnica a uma barreira comunicacional que afeta mais de 2,3 milhões de brasileiros.</description>
+    </item>
+    <item>
+      <title>Llms para consultoria jurídico trabalhista tcc apresenta chatbot multimodal</title>
+      <link>https://cedis.unb.br/pt/posts/defesa-alvaro-gouvea-2024/</link>
+      <pubDate>Wed, 11 Sep 2024 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/defesa-alvaro-gouvea-2024/</guid>
+      <description>Álvaro Henrique de Sousa Gouvea e Luís Guilherme Gaboardi Lins defenderam na FCTE/UnB um TCC que utiliza Large Language Models no desenvolvimento de um chatbot multimodal voltado à consultoria jurídico-trabalhista.</description>
+    </item>
+    <item>
+      <title>Artigo sobre processo de desenvolvimento de chatbots gamificados é apresentado em conferência internacional</title>
+      <link>https://cedis.unb.br/pt/posts/news-post.011/</link>
+      <pubDate>Fri, 06 Sep 2024 11:10:36 &#43;0800</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/news-post.011/</guid>
+      <description>Artigo foi apresentado no IntelliSys 2024, em Amsterdam, Países Baixos.</description>
+    </item>
+    <item>
+      <title>CEDIS é representado no Fórum RNP 2024</title>
+      <link>https://cedis.unb.br/pt/posts/news-post.012/</link>
+      <pubDate>Tue, 27 Aug 2024 11:10:36 &#43;0800</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/news-post.012/</guid>
+      <description>Prof. Daniel Sundfeld apresentou o projeto Laguna no Fórum RNP 2024.</description>
+    </item>
+    <item>
+      <title>Gamificar no Moodle sem virar programador: TCC entrega guia e ferramenta a docentes</title>
+      <link>https://cedis.unb.br/pt/posts/defesa-antonio-chaves-2024/</link>
+      <pubDate>Thu, 08 Aug 2024 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/defesa-antonio-chaves-2024/</guid>
+      <description>Antonio Rangel Chaves e Vitor Diniz Pagani Vieira Ribeiro defenderam na FCTE/UnB um TCC que reduz a barreira de entrada para professores gamificarem disciplinas no Moodle — com guia e ferramenta prática.</description>
+    </item>
+    <item>
+      <title>Projeto Canal Ciência ganha prêmio de melhor artigo em conferência internacional</title>
+      <link>https://cedis.unb.br/pt/posts/news-post.010/</link>
+      <pubDate>Tue, 02 Jul 2024 11:10:36 &#43;0800</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/news-post.010/</guid>
+      <description>Artigo foi apresentado no 24th ICCSA em Hanoi, Vietnã.</description>
+    </item>
+    <item>
+      <title>Estudante de Software e bolsista do CEDIS apresenta artigo em congresso internacional</title>
+      <link>https://cedis.unb.br/pt/posts/news-post.009/</link>
+      <pubDate>Mon, 01 Jul 2024 11:10:36 &#43;0800</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/news-post.009/</guid>
+      <description>Artigo foi apresentado no 24 ICCSA em Hanoi no Vietna.</description>
+    </item>
+    <item>
+      <title>GCMP: dissertação sistematiza como construir chatbots gamificados</title>
+      <link>https://cedis.unb.br/pt/posts/defesa-arthur-temporim-2024/</link>
+      <pubDate>Tue, 28 May 2024 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/defesa-arthur-temporim-2024/</guid>
+      <description>Arthur Rocha Temporim de Lacerda defendeu no PPCA/UnB uma dissertação que propõe o GCMP — Gamified Chatbot Management Process — método para orquestrar o desenvolvimento de chatbots gamificados de ponta a ponta.</description>
+    </item>
+    <item>
+      <title>Melhoria contínua com foco em usabilidade: TCC aplica mecanismos consagrados em aplicação web</title>
+      <link>https://cedis.unb.br/pt/posts/defesa-francisco-santos-2024/</link>
+      <pubDate>Mon, 11 Mar 2024 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/defesa-francisco-santos-2024/</guid>
+      <description>Francisco Heronildo Sousa Santos e João Vitor Ferreira Alves defenderam na FCTE/UnB um TCC que aplica mecanismos consagrados de usabilidade em ciclo de avaliação e melhoria em uma aplicação web.</description>
+    </item>
+    <item>
+      <title>Estudante da UFPA realiza internato no CEDIS</title>
+      <link>https://cedis.unb.br/pt/posts/news-post.008/</link>
+      <pubDate>Wed, 06 Mar 2024 11:10:36 &#43;0800</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/news-post.008/</guid>
+      <description>Estudante da UFPA realiza internato no CEDIS com foco em gamificação para alfabetização</description>
+    </item>
+    <item>
+      <title>CEDIS lança software Contextus</title>
+      <link>https://cedis.unb.br/pt/posts/news-post.001/</link>
+      <pubDate>Tue, 23 Jan 2024 11:10:36 &#43;0800</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/news-post.001/</guid>
+      <description>Contextus - Uma plataforma avançada de IA, PLN e ML no coração da Análise Científica, liderada pelo CEDIS</description>
+    </item>
+    <item>
+      <title>Associação de CSAs em nuvem: AgroMart ganha peça para articular comunidades</title>
+      <link>https://cedis.unb.br/pt/posts/defesa-abner-ribeiro-2023/</link>
+      <pubDate>Fri, 22 Dec 2023 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/defesa-abner-ribeiro-2023/</guid>
+      <description>Abner Filipe Cunha Ribeiro e Rafael Leão Teixeira de Magalhães defenderam na FCTE/UnB um TCC que expande o AgroMart para articular associações de CSAs em cloud — um passo importante na consolidação da plataforma.</description>
+    </item>
+    <item>
+      <title>Gamificar uma empresa pública: dissertação estuda como e por que a estratégia (às vezes) engaja</title>
+      <link>https://cedis.unb.br/pt/posts/defesa-luciana-assis-2023/</link>
+      <pubDate>Thu, 21 Dec 2023 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/defesa-luciana-assis-2023/</guid>
+      <description>Luciana Santos de Assis defendeu no PPCA/UnB uma dissertação que analisa criticamente a implementação de gamificação em contextos organizacionais — estudando o caso de uma empresa pública brasileira.</description>
+    </item>
+    <item>
+      <title>Melhoria de processo de requisitos: TCC leva rigor ao ciclo mais volátil do desenvolvimento</title>
+      <link>https://cedis.unb.br/pt/posts/defesa-giulia-barros-2023/</link>
+      <pubDate>Thu, 21 Dec 2023 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/defesa-giulia-barros-2023/</guid>
+      <description>Giulia Lobo Barros defendeu na FCTE/UnB um TCC que investiga a melhoria do processo de engenharia de requisitos de software — sob orientação conjunta de Cristiane Ramos e Ricardo Ajax.</description>
+    </item>
+    <item>
+      <title>Métricas de acessibilidade para pessoas com deficiência visual: TCC destila prática de auditoria</title>
+      <link>https://cedis.unb.br/pt/posts/defesa-ricardo-loureiro-2023/</link>
+      <pubDate>Thu, 21 Dec 2023 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/defesa-ricardo-loureiro-2023/</guid>
+      <description>Ricardo de Castro Loureiro defendeu na FCTE/UnB um TCC que propõe métricas para avaliação da acessibilidade de páginas web voltadas a pessoas com deficiência visual — passo direto rumo a uma prática de auditoria mais objetiva.</description>
+    </item>
+    <item>
+      <title>Latte: dupla treina chatbot gamificado para ajudar a escrever artigo científico</title>
+      <link>https://cedis.unb.br/pt/posts/defesa-luiz-zamprogno-2023/</link>
+      <pubDate>Wed, 20 Dec 2023 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/defesa-luiz-zamprogno-2023/</guid>
+      <description>Luiz Henrique Fernandes Zamprogno e Victor Eduardo Araújo Ribeiro defenderam na FCTE/UnB um TCC que apresenta o Latte — chatbot gamificado voltado a apoiar a produção de artigos científicos.</description>
+    </item>
+    <item>
+      <title>Da orientação à conversa: TCC estuda ChatGPT como complemento na engenharia de software</title>
+      <link>https://cedis.unb.br/pt/posts/defesa-rafael-berto-2023/</link>
+      <pubDate>Fri, 15 Dec 2023 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/defesa-rafael-berto-2023/</guid>
+      <description>Rafael Berto Pereira defendeu na FCTE/UnB um TCC que investiga o uso complementar do ChatGPT em processos de engenharia de software — a partir de um estudo de caso com orientações definidas.</description>
+    </item>
+    <item>
+      <title>EaD em Engenharia de Software: TCC ouve os discentes e mede a percepção real</title>
+      <link>https://cedis.unb.br/pt/posts/defesa-julia-sousa-2023/</link>
+      <pubDate>Fri, 15 Dec 2023 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/defesa-julia-sousa-2023/</guid>
+      <description>Júlia Farias Sousa defendeu na FCTE/UnB um TCC que analisa a percepção dos discentes sobre o uso de Ensino a Distância no curso de Engenharia de Software da FCTE/UnB.</description>
+    </item>
+    <item>
+      <title>BI para saúde mental: TCC constrói painéis para a Rede de Atenção Psicossocial</title>
+      <link>https://cedis.unb.br/pt/posts/defesa-luis-gomes-2023/</link>
+      <pubDate>Mon, 11 Dec 2023 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/defesa-luis-gomes-2023/</guid>
+      <description>Luis Bruno Fidelis Gomes defendeu na FCTE/UnB um TCC que desenvolve painéis de Business Intelligence para monitoramento por profissionais da Rede de Atenção Psicossocial.</description>
+    </item>
+    <item>
+      <title>Professores do CEDIS recebem menção honrosa</title>
+      <link>https://cedis.unb.br/pt/posts/news-post.002/</link>
+      <pubDate>Wed, 29 Nov 2023 11:10:36 &#43;0800</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/news-post.002/</guid>
+      <description>Contextus - Uma plataforma avançada de IA, PLN e ML no coração da Análise Científica, liderada pelo CEDIS</description>
+    </item>
+    <item>
+      <title>CEDIS firma acordo internacional</title>
+      <link>https://cedis.unb.br/pt/posts/news-post.003/</link>
+      <pubDate>Fri, 10 Nov 2023 11:10:36 &#43;0800</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/news-post.003/</guid>
+      <description>Acordo entre instituições brasileira e portuguesa visa promover avanços significativos em pesquisas tecnológicas e acadêmicas.</description>
+    </item>
+    <item>
+      <title>Módulo de pagamento no AgroMart: dupla resolve a fricção que separa produtor e consumidor</title>
+      <link>https://cedis.unb.br/pt/posts/defesa-felipe-agustini-2023/</link>
+      <pubDate>Fri, 28 Jul 2023 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/defesa-felipe-agustini-2023/</guid>
+      <description>Felipe Boccardi Silva Agustini e Giovanna Borges Bottino defenderam na FCTE/UnB um TCC que integra um módulo de pagamento ao AgroMart e assume, no processo, o encargo da manutenção evolutiva da plataforma.</description>
+    </item>
+    <item>
+      <title>Quanto vai custar essa Lambda? TCC prevê tempo de execução em serverless</title>
+      <link>https://cedis.unb.br/pt/posts/defesa-lucas-carvalho-2023/</link>
+      <pubDate>Thu, 27 Jul 2023 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/defesa-lucas-carvalho-2023/</guid>
+      <description>Lucas Ganda Carvalho e Wíctor Bastos Girardi defenderam na FCTE/UnB um TCC que investiga a predição do tempo de execução de código em funções AWS Lambda — informação chave para estimar custo em ambientes serverless.</description>
+    </item>
+    <item>
+      <title>LGPD dentro do app: TCC operacionaliza requisitos de privacidade em código</title>
+      <link>https://cedis.unb.br/pt/posts/defesa-lucas-xavier-2023/</link>
+      <pubDate>Tue, 25 Jul 2023 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/defesa-lucas-xavier-2023/</guid>
+      <description>Lucas Lopes Xavier defendeu na FCTE/UnB um TCC que traduz exigências da LGPD e da ISO 29100 em requisitos implementáveis em aplicativos — reduzindo a distância entre norma jurídica e prática de engenharia.</description>
+    </item>
+    <item>
+      <title>Aplicativo apoia disciplina gamificada de IHC: TCC entrega instrumento para a sala real</title>
+      <link>https://cedis.unb.br/pt/posts/defesa-italo-guimaraes-2023/</link>
+      <pubDate>Mon, 24 Jul 2023 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/defesa-italo-guimaraes-2023/</guid>
+      <description>Ítalo Alves Guimarães defendeu na FCTE/UnB um TCC que implementa um aplicativo de apoio à disciplina gamificada de Interação Humano-Computador — uma peça pedida pelo próprio uso em sala.</description>
+    </item>
+    <item>
+      <title>Jornada: RPG entra na sala de aula como processo de aprendizagem</title>
+      <link>https://cedis.unb.br/pt/posts/defesa-joao-farias-2023/</link>
+      <pubDate>Mon, 24 Jul 2023 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/defesa-joao-farias-2023/</guid>
+      <description>João Vitor Lopes de Farias defendeu na FCTE/UnB um TCC que examina o uso de RPG como espinha dorsal de um processo de aprendizagem — combinando narrativa, papéis e desafios com objetivos pedagógicos claros.</description>
+    </item>
+    <item>
+      <title>Pesquisadores do CEDIS lançam livro</title>
+      <link>https://cedis.unb.br/pt/posts/news-post.005/</link>
+      <pubDate>Thu, 20 Jul 2023 11:10:36 &#43;0800</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/news-post.005/</guid>
+      <description>Lançado livro de Indicadores de Aprendizagem com participação de pesquisadores do CEDIS.</description>
+    </item>
+    <item>
+      <title>Evasão na UnB sob a lupa da aprendizagem de máquina: dissertação prevê quem está em risco</title>
+      <link>https://cedis.unb.br/pt/posts/defesa-edmilson-silva-2023/</link>
+      <pubDate>Mon, 03 Jul 2023 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/defesa-edmilson-silva-2023/</guid>
+      <description>Edmilson Cosme da Silva defendeu no PPCA/UnB uma dissertação que aplica algoritmos de aprendizado de máquina para prever evasão acadêmica nos cursos de graduação presencial da UnB.</description>
+    </item>
+    <item>
+      <title>Qualidade de software e o Brasil que envelhece: TCC cruza dados TIC Domicílios</title>
+      <link>https://cedis.unb.br/pt/posts/defesa-guilherme-silva-2023/</link>
+      <pubDate>Thu, 15 Jun 2023 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/defesa-guilherme-silva-2023/</guid>
+      <description>Guilherme Daniel Fernandes da Silva e Lorrayne Alves Cardozo defenderam na FCTE/UnB um TCC que analisa a relação entre qualidade de software e envelhecimento populacional a partir dos dados da TIC Domicílios.</description>
+    </item>
+    <item>
+      <title>CEDIS participa projeto de gamificação</title>
+      <link>https://cedis.unb.br/pt/posts/news-post.004/</link>
+      <pubDate>Tue, 02 May 2023 11:10:36 &#43;0800</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/news-post.004/</guid>
+      <description>Parceria entre CEDIS e IBICT lança projeto de gamificação inovador do portal Canal Ciência</description>
+    </item>
+    <item>
+      <title>Relatório de inteligência policial sob a lente da gamificação: dissertação mede o que muda</title>
+      <link>https://cedis.unb.br/pt/posts/defesa-publio-cavalcante-2023/</link>
+      <pubDate>Thu, 23 Mar 2023 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/defesa-publio-cavalcante-2023/</guid>
+      <description>Públio Pastrolin Cavalcante defendeu no PPCA/UnB uma dissertação que avalia como a aplicação de gamificação em atividades de inteligência policial altera a qualidade dos relatórios produzidos.</description>
+    </item>
+    <item>
+      <title>Por que empresas não usam processos que já pagaram para definir?</title>
+      <link>https://cedis.unb.br/pt/posts/defesa-nathalia-dias-2023/</link>
+      <pubDate>Sat, 04 Mar 2023 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/defesa-nathalia-dias-2023/</guid>
+      <description>Nathalia Lorena Cardoso Dias defendeu na FCTE/UnB um TCC que investiga, com revisão sistemática da literatura, por que processos de melhoria de software já formalmente definidos frequentemente não são utilizados na prática.</description>
+    </item>
+    <item>
+      <title>Gamificação do CEDIS inova o ensino de IHC na FCTE</title>
+      <link>https://cedis.unb.br/pt/posts/news-post.007/</link>
+      <pubDate>Wed, 01 Mar 2023 11:10:36 &#43;0800</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/news-post.007/</guid>
+      <description>Jornada IHC - Uma aventura RPG na Aprendizagem da disciplina de Interação Humano-Computador.</description>
+    </item>
+    <item>
+      <title>Gamificação do CEDIS revoluciona o ensino de Software na FCTE</title>
+      <link>https://cedis.unb.br/pt/posts/news-post.006/</link>
+      <pubDate>Wed, 01 Mar 2023 11:10:36 &#43;0800</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/news-post.006/</guid>
+      <description>Gamificação inovadora do Prof. Sergio Freitas engaja estudantes de Engenharia de Software com uma abordagem lúdica e eficaz.</description>
+    </item>
+    <item>
+      <title>Deploy sob medida: TCC automatiza implantação individualizada no AgroMart</title>
+      <link>https://cedis.unb.br/pt/posts/defesa-andre-freitas-2023/</link>
+      <pubDate>Tue, 14 Feb 2023 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/defesa-andre-freitas-2023/</guid>
+      <description>André Aben-Athar de Freitas e Pedro Vitor de Salles Cella defenderam na FCTE/UnB um TCC que automatiza o processo de implantação individualizada do AgroMart — permitindo que cada CSA opere sua própria instância.</description>
+    </item>
+    <item>
+      <title>SAMI: TCC cria sistema para análise de métricas de aprendizagem</title>
+      <link>https://cedis.unb.br/pt/posts/defesa-joao-silva-2023/</link>
+      <pubDate>Tue, 14 Feb 2023 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/defesa-joao-silva-2023/</guid>
+      <description>João Vitor de Moura Rosa Silva defendeu na FCTE/UnB um TCC que constrói o SAMI — sistema para análise de métricas de indicadores de aprendizagem em disciplinas com metodologias ativas.</description>
+    </item>
+    <item>
+      <title>FormsGeo: TCC dá geolocalização a pesquisas sociais e devolve contexto a quem responde</title>
+      <link>https://cedis.unb.br/pt/posts/defesa-marcelo-silva-2023/</link>
+      <pubDate>Mon, 13 Feb 2023 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/defesa-marcelo-silva-2023/</guid>
+      <description>Marcelo Victor de Sousa Silva e Washington Bispo Arishita Júnior defenderam na FCTE/UnB um TCC que apresenta o FormsGeo — aplicativo para pesquisas sociais com geolocalização integrada.</description>
+    </item>
+    <item>
+      <title>Ia qvt ferramenta acessível para medir qualidade de vida no trabalho</title>
+      <link>https://cedis.unb.br/pt/posts/defesa-gabriel-carvalho-2022/</link>
+      <pubDate>Wed, 05 Oct 2022 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/defesa-gabriel-carvalho-2022/</guid>
+      <description>Gabriel de Jesus Carvalho defendeu na FCTE/UnB um TCC que desenvolve o IA-QVT — ferramenta para coleta e tratamento de dados sobre qualidade de vida no trabalho, com atenção especial à acessibilidade.</description>
+    </item>
+    <item>
+      <title>$tudy: TCC leva educação financeira para um sistema gamificado</title>
+      <link>https://cedis.unb.br/pt/posts/defesa-rafael-teodosio-2022/</link>
+      <pubDate>Wed, 28 Sep 2022 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/defesa-rafael-teodosio-2022/</guid>
+      <description>Rafael Santos Teodosio defendeu na FCTE/UnB um TCC que projeta e implementa $tudy — sistema gamificado que se propõe a apoiar a educação financeira de jovens.</description>
+    </item>
+    <item>
+      <title>E gov e a fila para o idoso tcc estuda barreiras de acessibilidade em serviços públicos digitais</title>
+      <link>https://cedis.unb.br/pt/posts/defesa-fabiana-ribas-2022/</link>
+      <pubDate>Tue, 27 Sep 2022 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/defesa-fabiana-ribas-2022/</guid>
+      <description>Fabiana Luiza Vasconcelos Pfeilsticker Ribas defendeu na FCTE/UnB um TCC que analisa a acessibilidade de serviços públicos digitais brasileiros para pessoas idosas — pauta que ganhou urgência com a digitalização acelerada durante a pandemia.</description>
+    </item>
+    <item>
+      <title>Fatores que empurram alunos para a saída: TCC em dupla estuda evasão no ensino superior</title>
+      <link>https://cedis.unb.br/pt/posts/defesa-amanda-menezes-2022/</link>
+      <pubDate>Mon, 26 Sep 2022 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/defesa-amanda-menezes-2022/</guid>
+      <description>Amanda Emilly Muniz de Menezes e Letícia Karla Soares Rodrigues de Araújo defenderam na FCTE/UnB um TCC que identifica fatores acadêmicos, demográficos e de aprendizagem associados à evasão no ensino superior — e testa modelos preditivos.</description>
+    </item>
+    <item>
+      <title>QVT no setor público: TCC propõe ferramenta web para monitorar qualidade de vida no trabalho</title>
+      <link>https://cedis.unb.br/pt/posts/defesa-joao-rossi-2022/</link>
+      <pubDate>Mon, 26 Sep 2022 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/defesa-joao-rossi-2022/</guid>
+      <description>João Gabriel Rossi e Paulo Vitor Coelho da Rocha defenderam na FCTE/UnB um TCC que desenvolve uma ferramenta web para apoiar a promoção da qualidade de vida no trabalho em órgãos do setor público.</description>
+    </item>
+    <item>
+      <title>Jogos sérios para TDAH: TCC descobre requisitos que passam batido na literatura</title>
+      <link>https://cedis.unb.br/pt/posts/defesa-gabriel-silva-2022/</link>
+      <pubDate>Fri, 23 Sep 2022 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/defesa-gabriel-silva-2022/</guid>
+      <description>Gabriel Batista Albino Silva e Helena Bretas Goulart defenderam na FCTE/UnB um TCC que identifica requisitos não-funcionais para jogos sérios voltados a crianças com Transtorno de Déficit de Atenção com Hiperatividade (TDAH).</description>
+    </item>
+    <item>
+      <title>V&amp;V no serviço público: TCC documenta melhoria de processo em fábrica de software estatal</title>
+      <link>https://cedis.unb.br/pt/posts/defesa-renan-pinheiro-2022/</link>
+      <pubDate>Wed, 15 Jun 2022 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/defesa-renan-pinheiro-2022/</guid>
+      <description>Renan Cristyan Araujo Pinheiro defendeu na FCTE/UnB um TCC que apresenta estudo de caso de melhoria do processo de verificação e validação de software em um órgão do setor público.</description>
+    </item>
+    <item>
+      <title>Universidade das Heurísticas: TCC vira o ensino de IHC em jogo educativo</title>
+      <link>https://cedis.unb.br/pt/posts/defesa-caue-oliveira-2022/</link>
+      <pubDate>Thu, 09 Jun 2022 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/defesa-caue-oliveira-2022/</guid>
+      <description>Cauê Mateus Oliveira e Lucas Midlhey Cardoso Naves defenderam na FCTE/UnB um TCC que transforma o aprendizado das heurísticas de Nielsen em um jogo — a Universidade das Heurísticas.</description>
+    </item>
+    <item>
+      <title>Agro mart em evolução tcc abre o código, adiciona pagamentos e gestão de co agricultores</title>
+      <link>https://cedis.unb.br/pt/posts/defesa-byron-correa-2022/</link>
+      <pubDate>Mon, 09 May 2022 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/defesa-byron-correa-2022/</guid>
+      <description>Byron Kamal Barreto Correa e Igor Guimaraes Veludo defenderam na FCTE/UnB uma etapa importante da história do AgroMart: abrir o código do projeto, integrar meios de pagamento e desenhar a gestão de co-agricultores.</description>
+    </item>
+    <item>
+      <title>Pixel: TCC gamifica o aprendizado de critérios de usabilidade</title>
+      <link>https://cedis.unb.br/pt/posts/defesa-erico-bandeira-2022/</link>
+      <pubDate>Thu, 05 May 2022 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/defesa-erico-bandeira-2022/</guid>
+      <description>Érico Maximiano Bandeira defendeu na FCTE/UnB um TCC que apresenta o Pixel — ferramenta gamificada voltada ao aprendizado de critérios de usabilidade em avaliações de interface.</description>
+    </item>
+    <item>
+      <title>Startup em early stage e manutenção de software: TCC documenta o estado da prática</title>
+      <link>https://cedis.unb.br/pt/posts/defesa-filipe-silva-2021/</link>
+      <pubDate>Thu, 18 Nov 2021 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/defesa-filipe-silva-2021/</guid>
+      <description>Filipe Toyoshima Silva defendeu na FCTE/UnB um TCC que mapeia como startups em fase inicial lidam com manutenção de software — uma etapa dominada por escassez de recursos e volume alto de mudanças.</description>
+    </item>
+    <item>
+      <title>O que os usuários dizem quando ninguém pergunta: TCC extrai usabilidade de reviews da Play Store</title>
+      <link>https://cedis.unb.br/pt/posts/defesa-augusto-silva-2021/</link>
+      <pubDate>Tue, 16 Nov 2021 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/defesa-augusto-silva-2021/</guid>
+      <description>Augusto Moreno Vilarins Cardoso da Silva e Ícaro Pereira de Oliveira defenderam na FCTE/UnB um TCC que desenha um processo semi-automatizado para extrair sinais de usabilidade a partir dos comentários de usuários na Google Play Store.</description>
+    </item>
+    <item>
+      <title>Que framework usar para gamificar uma disciplina? Revisão sistemática dá o mapa</title>
+      <link>https://cedis.unb.br/pt/posts/defesa-weiller-pereira-2021/</link>
+      <pubDate>Thu, 11 Nov 2021 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/defesa-weiller-pereira-2021/</guid>
+      <description>Weiller Fernandes Pereira defendeu na FCTE/UnB um TCC que faz revisão sistemática da literatura sobre o uso de frameworks na construção de gamificações voltadas para a educação.</description>
+    </item>
+    <item>
+      <title>Time voluntário, testes assíncronos: TCC monta estratégia de QA em pandemia</title>
+      <link>https://cedis.unb.br/pt/posts/defesa-vitor-xoteslem-2021/</link>
+      <pubDate>Mon, 25 Oct 2021 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/defesa-vitor-xoteslem-2021/</guid>
+      <description>Vítor Cardoso Xoteslem defendeu na FCTE/UnB um TCC que elabora estratégia de testes para o app Doarti — mantido por uma equipe de voluntários distribuída geograficamente e em regime de trabalho remoto forçado pela pandemia.</description>
+    </item>
+    <item>
+      <title>REQGAME: dissertação testa gamificação para elicitar requisitos em órgão público federal</title>
+      <link>https://cedis.unb.br/pt/posts/defesa-ana-araujo-2021/</link>
+      <pubDate>Tue, 15 Jun 2021 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/defesa-ana-araujo-2021/</guid>
+      <description>Ana Cláudia Alves Mendes Araújo defendeu no PPCA/UnB uma dissertação que aplica gamificação ao processo de elicitação de requisitos em projetos de software conduzidos em órgão público federal.</description>
+    </item>
+    <item>
+      <title>Analytics para dentro da sala: TCC usa mineração de dados para decidir por onde ajustar o TBL</title>
+      <link>https://cedis.unb.br/pt/posts/defesa-allan-nobre-2021/</link>
+      <pubDate>Fri, 28 May 2021 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/defesa-allan-nobre-2021/</guid>
+      <description>Allan Jefrey Pereira Nobre defendeu na FCTE/UnB um TCC que aplica Learning Analytics e Educational Data Mining para apoiar decisões pedagógicas em disciplinas conduzidas com Team-Based Learning.</description>
+    </item>
+    <item>
+      <title>Nasce o AgroMart: dupla apresenta plataforma para agricultura familiar em TCC de 2021</title>
+      <link>https://cedis.unb.br/pt/posts/defesa-lucas-macedo-2021/</link>
+      <pubDate>Thu, 27 May 2021 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/defesa-lucas-macedo-2021/</guid>
+      <description>Lucas Pereira de Andrade Macêdo e Lucas Siqueira Rodrigues defenderam na FCTE/UnB o TCC que dá origem ao AgroMart — plataforma para aproximar pequenos agricultores e consumidores de produtos orgânicos e artesanais.</description>
+    </item>
+    <item>
+      <title>Uma empresa júnior, um experimento vivo: TCC avalia gamificação aplicada in loco</title>
+      <link>https://cedis.unb.br/pt/posts/defesa-ateldy-filho-2021/</link>
+      <pubDate>Thu, 20 May 2021 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/defesa-ateldy-filho-2021/</guid>
+      <description>Ateldy Borges Brasil Filho defendeu na FCTE/UnB um TCC que avalia gamificação aplicada em uma empresa júnior — organização com equipe rotativa, ciclos curtos e alta motivação inicial.</description>
+    </item>
+    <item>
+      <title>Interfaces que induzem ao erro tcc cataloga armadilhas comuns — e como evitá las</title>
+      <link>https://cedis.unb.br/pt/posts/defesa-caio-beleza-2021/</link>
+      <pubDate>Wed, 19 May 2021 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/defesa-caio-beleza-2021/</guid>
+      <description>Caio César de Almeida Beleza defendeu na FCTE/UnB um TCC que analisa problemas em interfaces de software que empurram usuários para o erro e sistematiza recomendações para evitá-los.</description>
+    </item>
+    <item>
+      <title>Ler o que já está registrado: TCC propõe planejar melhorias de processo a partir de issues</title>
+      <link>https://cedis.unb.br/pt/posts/defesa-sannya-arvelos-2020/</link>
+      <pubDate>Thu, 17 Dec 2020 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/defesa-sannya-arvelos-2020/</guid>
+      <description>Sannya Santana de Arvelos defendeu na FCTE/UnB um TCC que propõe usar a análise de issues como base para identificar oportunidades de melhoria de processo de software.</description>
+    </item>
+    <item>
+      <title>Melhoria de processo de software: por onde começar quando tudo parece caótico?</title>
+      <link>https://cedis.unb.br/pt/posts/defesa-rafael-pinheiro-2020/</link>
+      <pubDate>Wed, 16 Dec 2020 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/defesa-rafael-pinheiro-2020/</guid>
+      <description>Rafael Contessotto Bragança Pinheiro defendeu na FCTE/UnB um TCC que propõe uma abordagem para ajudar organizações a iniciar programas de melhoria de processo de software — o passo mais difícil quando quase tudo pede atenção.</description>
+    </item>
+    <item>
+      <title>Teste exploratório em ação: TCC combina abordagem estruturada e livre para avaliar software</title>
+      <link>https://cedis.unb.br/pt/posts/defesa-iolane-andrade-2020/</link>
+      <pubDate>Tue, 15 Dec 2020 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/defesa-iolane-andrade-2020/</guid>
+      <description>Iolane Caroline Alves de Andrade defendeu na FCTE/UnB um TCC que aplica testes exploratórios ao lado de testes tradicionais, mostrando o ganho de aprendizagem que o teste exploratório traz ao processo.</description>
+    </item>
+    <item>
+      <title>Refatoração como alavanca: TCC mostra como reescrever código para ganhar variabilidade</title>
+      <link>https://cedis.unb.br/pt/posts/defesa-ronyell-santos-2020/</link>
+      <pubDate>Fri, 28 Feb 2020 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/defesa-ronyell-santos-2020/</guid>
+      <description>Ronyell Henrique dos Santos defendeu na FCTE/UnB um TCC que aplica operações de refatoração para aprimorar a variabilidade de sistemas de software — reduzindo o custo da manutenção ao longo do ciclo de vida.</description>
+    </item>
+    <item>
+      <title>Barramento de Serviços da UnB ganha monitoramento: dissertação instrumenta a espinha dorsal digital da universidade</title>
+      <link>https://cedis.unb.br/pt/posts/defesa-felipe-evangelista-2020/</link>
+      <pubDate>Tue, 11 Feb 2020 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/defesa-felipe-evangelista-2020/</guid>
+      <description>Felipe Evangelista dos Santos defendeu no PPCA/UnB uma dissertação que integra ferramentas de monitoramento ao Barramento de Serviços da UnB — infraestrutura crítica para a comunicação entre sistemas acadêmicos.</description>
+    </item>
+    <item>
+      <title>SOA, ágil e QA no mesmo estudo de caso: dissertação documenta o encontro real de três culturas</title>
+      <link>https://cedis.unb.br/pt/posts/defesa-james-chaves-2019/</link>
+      <pubDate>Wed, 17 Jul 2019 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/defesa-james-chaves-2019/</guid>
+      <description>James Taylor Faria Chaves defendeu no PPCA/UnB uma dissertação que analisa, em estudo de caso, o encontro entre arquitetura orientada a serviços (SOA), métodos ágeis de desenvolvimento e práticas de Quality Assurance.</description>
+    </item>
+    <item>
+      <title>Team based learning ganha plataforma tcc leva a metodologia da sala para a nuvem</title>
+      <link>https://cedis.unb.br/pt/posts/defesa-victor-deon-2019/</link>
+      <pubDate>Fri, 12 Jul 2019 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/defesa-victor-deon-2019/</guid>
+      <description>Victor Hugo Arnaud Deon defendeu na FCTE/UnB um TCC que desenvolve a PGTBL — uma plataforma livre para gerenciar atividades de Team-Based Learning em cursos universitários.</description>
+    </item>
+    <item>
+      <title>Quem escreveu esse commit? TCC calcula taxa de autoria dentro de projetos Git</title>
+      <link>https://cedis.unb.br/pt/posts/defesa-laercio-junior-2018/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/defesa-laercio-junior-2018/</guid>
+      <description>Laércio Silva de Sousa Júnior defendeu na FCTE/UnB um TCC que investiga formas de calcular a taxa de autoria de desenvolvedores dentro de projetos versionados em Git.</description>
+    </item>
+    <item>
+      <title>Medir para engajar: TCC propõe estratégia para melhorar aplicações gamificadas</title>
+      <link>https://cedis.unb.br/pt/posts/defesa-paulo-calado-2018/</link>
+      <pubDate>Wed, 15 Aug 2018 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/defesa-paulo-calado-2018/</guid>
+      <description>Paulo Markes Rodrigues de Oliveira Calado defendeu na FCTE/UnB um TCC que desenvolve uma estratégia para identificar oportunidades de melhoria em aplicações gamificadas — atacando o problema de que o brilho inicial nem sempre se converte em uso prolongado.</description>
+    </item>
+    <item>
+      <title>Motoristas como sensores: TCC propõe app colaborativo para monitorar frota urbana</title>
+      <link>https://cedis.unb.br/pt/posts/defesa-jonathan-paiva-2018/</link>
+      <pubDate>Fri, 06 Jul 2018 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/defesa-jonathan-paiva-2018/</guid>
+      <description>Jonathan Paiva e Luis Henrique Guimarães defenderam na FCTE/UnB um TCC que substitui sensores e câmeras por colaboração humana para monitorar a situação dos automóveis em uma cidade — o app NotifiCar.</description>
+    </item>
+    <item>
+      <title>Tornar visível o invisível: TCC propõe método para expor a dívida técnica em times ágeis</title>
+      <link>https://cedis.unb.br/pt/posts/defesa-iago-goncalves-2018/</link>
+      <pubDate>Fri, 06 Jul 2018 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/defesa-iago-goncalves-2018/</guid>
+      <description>Iago Rodrigues Gonçalves defendeu na FCTE/UnB um TCC que investiga formas de identificar, medir e comunicar a dívida técnica — um problema que ganha peso em metodologias ágeis focadas em entrega contínua.</description>
+    </item>
+    <item>
+      <title>Atrair é fácil, reter é gamificação: TCC ataca curva de abandono em rede social acadêmica</title>
+      <link>https://cedis.unb.br/pt/posts/defesa-tiago-assuncao-2017/</link>
+      <pubDate>Thu, 21 Dec 2017 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/defesa-tiago-assuncao-2017/</guid>
+      <description>Tiago Ribeiro de Assunção defendeu na FCTE/UnB um TCC que aplica gamificação à Rede Social About para atacar seu ponto fraco: a rede atrai novos usuários com facilidade, mas não consegue mantê-los ativos.</description>
+    </item>
+    <item>
+      <title>Matemática, criança e vitória digital: o software que quer transformar a aula em uma missão</title>
+      <link>https://cedis.unb.br/pt/posts/defesa-leandro-santos-2017/</link>
+      <pubDate>Fri, 08 Dec 2017 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/defesa-leandro-santos-2017/</guid>
+      <description>Leandro Alves Ferreira Santos defendeu na FCTE/UnB um TCC que desenvolve um software gamificado para apoiar o ensino de matemática ao público infantil — território pouco atendido pelas soluções edtech.</description>
+    </item>
+    <item>
+      <title>Bases de experiência: o que fazer com o conhecimento que passa pela porta dos laboratórios de P&amp;D</title>
+      <link>https://cedis.unb.br/pt/posts/defesa-attany-araujo-2016/</link>
+      <pubDate>Wed, 07 Dec 2016 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/defesa-attany-araujo-2016/</guid>
+      <description>Attany Nathaly Lima Araújo defendeu na FCTE/UnB um TCC que desenha um processo de construção de bases de experiências para laboratórios de P&amp;D — tema clássico da gestão do conhecimento aplicada à engenharia de software.</description>
+    </item>
+    <item>
+      <title>Ciências Sem Fronteiras sob a lente da engenharia: o que os alunos trouxeram além do inglês</title>
+      <link>https://cedis.unb.br/pt/posts/defesa-leandro-rodrigues-2016/</link>
+      <pubDate>Thu, 07 Jul 2016 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/defesa-leandro-rodrigues-2016/</guid>
+      <description>Leandro Veloso Rodrigues defendeu na FCTE/UnB um TCC que investiga o impacto do Programa Ciência sem Fronteiras no desenvolvimento de competências comportamentais dos futuros engenheiros de software.</description>
+    </item>
+    <item>
+      <title>Ferramenta ajuda times a construir projetos de gamificação sem partir do zero</title>
+      <link>https://cedis.unb.br/pt/posts/defesa-ludimila-cruz-2016/</link>
+      <pubDate>Sat, 02 Jul 2016 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/defesa-ludimila-cruz-2016/</guid>
+      <description>Ludimila da Bela Cruz defendeu na FCTE/UnB um TCC que propõe uma ferramenta para apoiar equipes na construção de projetos de gamificação, ancorando o processo em elementos motivacionais estruturados.</description>
+    </item>
+    <item>
+      <title>Antes do boom da IA generativa, um TCC já ensinava a máquina a corrigir dissertativas</title>
+      <link>https://cedis.unb.br/pt/posts/defesa-cristovao-frinhani-2016/</link>
+      <pubDate>Fri, 01 Jul 2016 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/defesa-cristovao-frinhani-2016/</guid>
+      <description>Em 2016, muito antes do frenesi dos LLMs, Cristóvão Frinhani defendeu na FCTE/UnB um TCC que usa similaridade semântica e aprendizado de máquina para auxiliar tutores de EAD na correção de questões dissertativas.</description>
+    </item>
+    <item>
+      <title>Algoritmos com pontos: TCC adapta ambiente virtual ao ensino gamificado de programação</title>
+      <link>https://cedis.unb.br/pt/posts/defesa-wilker-assuncao-2016/</link>
+      <pubDate>Wed, 15 Jun 2016 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/defesa-wilker-assuncao-2016/</guid>
+      <description>Wilker Mesquita de Assunção defendeu na FCTE/UnB um TCC que adapta um ambiente virtual de aprendizado para o ensino de algoritmos usando técnicas de gamificação.</description>
+    </item>
+    <item>
+      <title>Como escolher um CMS sem depender do &#39;porque é o que estamos usando&#39;</title>
+      <link>https://cedis.unb.br/pt/posts/defesa-thiago-honorato-2015/</link>
+      <pubDate>Mon, 15 Jun 2015 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/defesa-thiago-honorato-2015/</guid>
+      <description>Thiago Silveira Honorato defendeu um TCC que propõe um método de escolha racional entre Content Management Systems para diferentes cenários — reduzindo a dependência de decisões baseadas apenas em familiaridade da equipe.</description>
+    </item>
+    <item>
+      <title>Milissegundos importam: TCC mede o impacto de escolhas de código no Android</title>
+      <link>https://cedis.unb.br/pt/posts/defesa-victor-carvalho-2015/</link>
+      <pubDate>Mon, 15 Jun 2015 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/defesa-victor-carvalho-2015/</guid>
+      <description>Victor Hugo Alves de Carvalho defendeu em 2015, na FCTE/UnB, um TCC empírico que compara técnicas de programação em Android e mede o efeito de cada uma sobre desempenho e responsividade dos aplicativos.</description>
+    </item>
+    <item>
+      <title>Ontologias para dar mapa a quem estuda: TCC organiza etapa mais difícil do mapeamento sistemático</title>
+      <link>https://cedis.unb.br/pt/posts/defesa-igor-ramos-2015/</link>
+      <pubDate>Mon, 15 Jun 2015 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/pt/posts/defesa-igor-ramos-2015/</guid>
+      <description>Igor de Araújo Ramos defendeu na FCTE/UnB um TCC que propõe usar ontologias para apoiar a etapa mais espinhosa dos mapeamentos sistemáticos: transformar dados coletados em um mapa de conhecimento realmente utilizável.</description>
+    </item>
+  </channel>
+</rss>

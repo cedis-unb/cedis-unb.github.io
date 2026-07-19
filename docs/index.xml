@@ -1,1 +1,130 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CEDIS</title><link>https://cedis.unb.br/</link><description>Discover the future of Software Engineering, Learning, and Artificial Intelligence. Since 2013, the Center for Studies, Development, and Innovation in Software has led innovative projects in research, development, and education.</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sun, 19 Jul 2026 18:16:34 -0300</lastBuildDate><atom:link href="https://cedis.unb.br/index.xml" rel="self" type="application/rss+xml"/><item><title>Join CEDIS</title><link>https://cedis.unb.br/join/</link><pubDate>Fri, 17 Jul 2026 00:00:00 -0300</pubDate><guid>https://cedis.unb.br/join/</guid><description>Entry paths for research, supervision, and collaboration at CEDIS/UnB.</description></item><item><title>Knowledge map</title><link>https://cedis.unb.br/map/</link><pubDate>Fri, 17 Jul 2026 00:00:00 -0300</pubDate><guid>https://cedis.unb.br/map/</guid><description>Interactive graph connecting CEDIS areas of expertise, researchers, and projects.</description></item><item><title>Where our alumni are</title><link>https://cedis.unb.br/alumni/</link><pubDate>Fri, 17 Jul 2026 00:00:00 -0300</pubDate><guid>https://cedis.unb.br/alumni/</guid><description>Former advisees and members of CEDIS who moved on to research, industry, entrepreneurship, and teaching careers.</description></item><item><title>Which CEDIS area fits you?</title><link>https://cedis.unb.br/quiz/</link><pubDate>Fri, 17 Jul 2026 00:00:00 -0300</pubDate><guid>https://cedis.unb.br/quiz/</guid><description>5 quick questions to discover which CEDIS area and researchers align best with your profile.</description></item><item><title>Posts</title><link>https://cedis.unb.br/posts/</link><pubDate>Thu, 16 Jul 2026 09:00:00 -0300</pubDate><guid>https://cedis.unb.br/posts/</guid><description/></item><item><title>Products</title><link>https://cedis.unb.br/products/</link><pubDate>Thu, 16 Jul 2026 09:00:00 -0300</pubDate><guid>https://cedis.unb.br/products/</guid><description/></item><item><title>People</title><link>https://cedis.unb.br/people/</link><pubDate>Mon, 09 Mar 2026 19:00:00 -0300</pubDate><guid>https://cedis.unb.br/people/</guid><description/></item><item><title>Projects</title><link>https://cedis.unb.br/projects/</link><pubDate>Thu, 01 Jan 2026 00:00:00 -0300</pubDate><guid>https://cedis.unb.br/projects/</guid><description/></item><item><title>Areas</title><link>https://cedis.unb.br/areas/</link><pubDate>Tue, 02 Sep 2025 01:37:18 -0300</pubDate><guid>https://cedis.unb.br/areas/</guid><description/></item><item><title>Contact</title><link>https://cedis.unb.br/contact/</link><pubDate>Sat, 03 May 2025 03:10:36 +0000</pubDate><guid>https://cedis.unb.br/contact/</guid><description>Contact information for CEDIS including address, email, and social media links.</description></item><item><title>Partners &amp; recognitions</title><link>https://cedis.unb.br/partners/</link><pubDate>Tue, 13 Feb 2024 23:13:19 -0300</pubDate><guid>https://cedis.unb.br/partners/</guid><description>Institutions and labs CEDIS works with, awards received, and institutional milestones.</description></item><item><title>CEDIS History</title><link>https://cedis.unb.br/history/</link><pubDate>Sat, 18 Dec 2021 11:10:36 +0800</pubDate><guid>https://cedis.unb.br/history/</guid><description>From its origin as the Software Factory Laboratory to a center with partnerships, projects, and research platforms with visible impact.</description></item><item><title>CEDIS Infrastructure</title><link>https://cedis.unb.br/infra/</link><pubDate>Sat, 18 Dec 2021 11:10:36 +0800</pubDate><guid>https://cedis.unb.br/infra/</guid><description>Spaces, facilities, and computing resources available to support CEDIS research, meetings, and development activities.</description></item><item><title>Opportunities at CEDIS</title><link>https://cedis.unb.br/oportunidades/</link><pubDate>Sat, 18 Dec 2021 11:10:36 +0800</pubDate><guid>https://cedis.unb.br/oportunidades/</guid><description>Open calls, opportunities, and selection notices related to activities and projects at CEDIS.</description></item><item><title>Publications</title><link>https://cedis.unb.br/publications/</link><pubDate>Sat, 18 Dec 2021 03:10:36 +0000</pubDate><guid>https://cedis.unb.br/publications/</guid><description>Publications of CEDIS</description></item><item><title>About CEDIS</title><link>https://cedis.unb.br/about/</link><pubDate>Tue, 01 Jan 2013 00:00:00 -0300</pubDate><guid>https://cedis.unb.br/about/</guid><description>CEDIS is the Center for Studies, Development and Innovation in Software at the University of Brasilia. Since 2013 we've studied how software gets built — and who builds it.</description></item><item><title>Search the site</title><link>https://cedis.unb.br/search/</link><guid>https://cedis.unb.br/search/</guid><description>Search across all CEDIS content — researchers, projects, publications, and news.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CEDIS</title>
+    <link>https://cedis.unb.br/</link>
+    <description>Discover the future of Software Engineering, Learning, and Artificial Intelligence. Since 2013, the Center for Studies, Development, and Innovation in Software has led innovative projects in research, development, and education.</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 19 Jul 2026 18:16:34 -0300</lastBuildDate>
+    <atom:link href="https://cedis.unb.br/index.xml" rel="self" type="application/rss&#43;xml" />
+    <item>
+      <title>Join CEDIS</title>
+      <link>https://cedis.unb.br/join/</link>
+      <pubDate>Fri, 17 Jul 2026 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/join/</guid>
+      <description>Entry paths for research, supervision, and collaboration at CEDIS/UnB.</description>
+    </item>
+    <item>
+      <title>Knowledge map</title>
+      <link>https://cedis.unb.br/map/</link>
+      <pubDate>Fri, 17 Jul 2026 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/map/</guid>
+      <description>Interactive graph connecting CEDIS areas of expertise, researchers, and projects.</description>
+    </item>
+    <item>
+      <title>Where our alumni are</title>
+      <link>https://cedis.unb.br/alumni/</link>
+      <pubDate>Fri, 17 Jul 2026 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/alumni/</guid>
+      <description>Former advisees and members of CEDIS who moved on to research, industry, entrepreneurship, and teaching careers.</description>
+    </item>
+    <item>
+      <title>Which CEDIS area fits you?</title>
+      <link>https://cedis.unb.br/quiz/</link>
+      <pubDate>Fri, 17 Jul 2026 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/quiz/</guid>
+      <description>5 quick questions to discover which CEDIS area and researchers align best with your profile.</description>
+    </item>
+    <item>
+      <title>Posts</title>
+      <link>https://cedis.unb.br/posts/</link>
+      <pubDate>Thu, 16 Jul 2026 09:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/posts/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Products</title>
+      <link>https://cedis.unb.br/products/</link>
+      <pubDate>Thu, 16 Jul 2026 09:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/products/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>People</title>
+      <link>https://cedis.unb.br/people/</link>
+      <pubDate>Mon, 09 Mar 2026 19:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/people/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Projects</title>
+      <link>https://cedis.unb.br/projects/</link>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/projects/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Areas</title>
+      <link>https://cedis.unb.br/areas/</link>
+      <pubDate>Tue, 02 Sep 2025 01:37:18 -0300</pubDate>
+      <guid>https://cedis.unb.br/areas/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Contact</title>
+      <link>https://cedis.unb.br/contact/</link>
+      <pubDate>Sat, 03 May 2025 03:10:36 &#43;0000</pubDate>
+      <guid>https://cedis.unb.br/contact/</guid>
+      <description>Contact information for CEDIS including address, email, and social media links.</description>
+    </item>
+    <item>
+      <title>Partners &amp; recognitions</title>
+      <link>https://cedis.unb.br/partners/</link>
+      <pubDate>Tue, 13 Feb 2024 23:13:19 -0300</pubDate>
+      <guid>https://cedis.unb.br/partners/</guid>
+      <description>Institutions and labs CEDIS works with, awards received, and institutional milestones.</description>
+    </item>
+    <item>
+      <title>CEDIS History</title>
+      <link>https://cedis.unb.br/history/</link>
+      <pubDate>Sat, 18 Dec 2021 11:10:36 &#43;0800</pubDate>
+      <guid>https://cedis.unb.br/history/</guid>
+      <description>From its origin as the Software Factory Laboratory to a center with partnerships, projects, and research platforms with visible impact.</description>
+    </item>
+    <item>
+      <title>CEDIS Infrastructure</title>
+      <link>https://cedis.unb.br/infra/</link>
+      <pubDate>Sat, 18 Dec 2021 11:10:36 &#43;0800</pubDate>
+      <guid>https://cedis.unb.br/infra/</guid>
+      <description>Spaces, facilities, and computing resources available to support CEDIS research, meetings, and development activities.</description>
+    </item>
+    <item>
+      <title>Opportunities at CEDIS</title>
+      <link>https://cedis.unb.br/oportunidades/</link>
+      <pubDate>Sat, 18 Dec 2021 11:10:36 &#43;0800</pubDate>
+      <guid>https://cedis.unb.br/oportunidades/</guid>
+      <description>Open calls, opportunities, and selection notices related to activities and projects at CEDIS.</description>
+    </item>
+    <item>
+      <title>Publications</title>
+      <link>https://cedis.unb.br/publications/</link>
+      <pubDate>Sat, 18 Dec 2021 03:10:36 &#43;0000</pubDate>
+      <guid>https://cedis.unb.br/publications/</guid>
+      <description>Publications of CEDIS</description>
+    </item>
+    <item>
+      <title>About CEDIS</title>
+      <link>https://cedis.unb.br/about/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 -0300</pubDate>
+      <guid>https://cedis.unb.br/about/</guid>
+      <description>CEDIS is the Center for Studies, Development and Innovation in Software at the University of Brasilia. Since 2013 we&#39;ve studied how software gets built — and who builds it.</description>
+    </item>
+    <item>
+      <title>Search the site</title>
+      <link>https://cedis.unb.br/search/</link>
+      <guid>https://cedis.unb.br/search/</guid>
+      <description>Search across all CEDIS content — researchers, projects, publications, and news.</description>
+    </item>
+  </channel>
+</rss>

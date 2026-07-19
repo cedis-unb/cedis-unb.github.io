@@ -24,6 +24,8 @@ O trabalho parte de uma premissa clínica: crianças com TDAH apresentam sintoma
 
 O TCC contribui para {{< link-interno "/areas/software_requirements/" "engenharia de requisitos" >}} ao trazer para dentro do processo de design um conjunto de exigências que só aparece se o projetista escuta profissionais da área e famílias. É um trabalho de fronteira entre engenharia de software e cuidado — o tipo de conversa que os cursos técnicos raramente ensinam a ter.
 
+Helena Bretas Goulart figura como coautora do artigo [_Aprendizagem baseada em projetos aplicada em uma disciplina de integração de Engenharias: desafios e benefícios_](https://doi.org/10.5753/cbie.sbie.2019.89), publicado no XXX Simpósio Brasileiro de Informática na Educação (SBIE 2019, Brasília) ao lado de Ricardo Ajax, Cristiane Ramos e Edna Canedo. O artigo documenta parte da experiência de metodologias ativas na Engenharia de Software que também sustenta o TCC.
+
 O TCC pode ser lido na [Biblioteca Digital da Produção Intelectual Discente da UnB](https://www.bdm.unb.br/handle/10483/33941).
 
 ---

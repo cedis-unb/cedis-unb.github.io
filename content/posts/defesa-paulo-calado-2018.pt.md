@@ -24,6 +24,8 @@ O trabalho parte de um dado incômodo: a adesão a uma tecnologia é tão rápid
 
 O trabalho conversa diretamente com {{< link-interno "/areas/gamification/" "gamificação" >}} e com {{< link-interno "/areas/software_requirements/" "engenharia de requisitos" >}}, propondo o que raramente se discute em conjunto: como transformar o feedback de uso em decisões concretas de projeto ao longo do ciclo de vida do produto.
 
+Parte da trajetória de pesquisa que sustenta esse TCC aparece no artigo [_Gamification in education: A methodology to identify student's profile_](https://doi.org/10.1109/fie.2017.8190499), publicado na 2017 IEEE Frontiers in Education Conference (FIE 2017, Indianapolis). O artigo apresenta a metodologia de perfilamento motivacional que ancora a análise conduzida no TCC.
+
 O TCC pode ser consultado na [Biblioteca Digital da Produção Intelectual Discente da UnB](https://www.bdm.unb.br/handle/10483/21592).
 
 ---
