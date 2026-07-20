@@ -26,11 +26,17 @@ Em 2020, o CEDIS amplia sua presença em impacto social com o lançamento do Sof
 
 O marco reforça uma vocação que passa a definir o centro: usar software, colaboração multidisciplinar e extensão para responder a demandas reais da sociedade.
 
-## 2024
+No mesmo ano, o centro contribui pela primeira vez para a infraestrutura digital da própria UnB: uma dissertação instrumenta o Barramento de Serviços da UnB com monitoramento, dando visibilidade à espinha dorsal que conecta os sistemas acadêmicos. Iniciam-se ainda os projetos BioCloud, DOARTI, App Parkinson e a linha de Cloud/IoT/Sistemas Distribuídos — abrindo frentes em bioinformática, terceiro setor e computação distribuída.
 
-Em 2024, o CEDIS aparece no repositório como um centro já consolidado em projetos cooperativos, com destaque para DFCris e Canal Ciência, em parceria com o IBICT.
+## 2021
 
-No mesmo ciclo, a equipe conquista projeção internacional: uma bolsista do CEDIS apresenta trabalho na ICCSA 2024, no Vietnã, e o projeto Canal Ciência recebe o prêmio de melhor artigo da conferência.
+O centro publica o [SAGA]({{< relref "/products/saga" >}}), Sistema de Acompanhamento e Apoio à Gestão Acadêmica — seu primeiro produto próprio disponibilizado publicamente no portal. É um passo simbólico: o CEDIS passa a assinar não apenas pesquisa, mas também plataformas em produção.
+
+No mesmo ciclo, o centro adere ao Programa A3M de inovação pedagógica e aprendizagem ativa e inicia o projeto de Transformação Digital de Serviços Públicos, ampliando a interface entre pesquisa aplicada e a Administração Pública.
+
+## 2023
+
+Em 2023, o CEDIS consolida sua projeção internacional com o primeiro acordo de cooperação firmado em Portugal, em novembro. No mesmo ano, o centro lança o produto [MAGRA]({{< relref "/products/magra" >}}), voltado à previsão de evasão na graduação, e publica o livro "Indicadores de Aprendizagem" — trabalho que rende, ainda em novembro, menção honrosa em inovação no ensino aos professores envolvidos.
 
 ## Ecossistema internacional
 
@@ -38,12 +44,30 @@ Além das parcerias nacionais, o repositório registra a conexão do CEDIS com o
 
 Essa articulação amplia a presença internacional do centro e reforça sua capacidade de dialogar com redes externas de pesquisa e inovação.
 
-## 2025 - 2026
+## 2024
 
-Entre 2025 e 2026, o CEDIS entra em uma fase de consolidação tecnológica ainda mais visível. O [Contextus]({{< relref "/products/contextus" >}}) avança como um dos marcos desse ciclo, fortalecendo o reconhecimento institucional da produção do centro.
+Em 2024, o CEDIS aparece no repositório como um centro já consolidado em projetos cooperativos, com destaque para DFCris e Canal Ciência, em parceria com o IBICT.
 
-No mesmo intervalo, o [Evidentia Review]({{< relref "/products/evidentia" >}}) reforça a atuação do CEDIS em pesquisa baseada em evidências, com uma plataforma voltada ao planejamento, condução e relato de revisões sistemáticas com colaboração e rastreabilidade.
+No mesmo ciclo, a equipe conquista projeção internacional: uma bolsista do CEDIS apresenta trabalho na ICCSA 2024, no Vietnã, e o projeto Canal Ciência recebe o prêmio de melhor artigo da conferência.
+
+O ano também marca o lançamento do [Contextus]({{< relref "/products/contextus" >}}) em janeiro e do [MoodleGam]({{< relref "/products/moodlegam" >}}) em agosto, e traz mais um reconhecimento internacional: prêmio de melhor paper no IEEE ITHET 2024, em Paris.
+
+## 2025
+
+Em 2025, o projeto Alvorecer Feudal recebe Menção Honrosa no Prêmio Anual de Inovação no Ensino de Graduação da UnB (DEG/UnB) — primeiro reconhecimento institucional interno de peso. O centro publica os produtos [Super R]({{< relref "/products/super_r" >}}), voltado à disciplina de Requisitos de Software, e [Nativo]({{< relref "/products/nativo" >}}), aplicativo dedicado à preservação linguística indígena.
+
+Ainda em 2025, Evidentia e OctaAnalysis são formalizados como projetos de pesquisa dedicados, preparando o terreno para os lançamentos do ciclo seguinte, e o curso de Engenharia de Software da UnB recebe a equipe de Gamificação do Banco do Brasil — ponto simbólico de conexão com a indústria.
+
+O CEDIS entra em uma fase de consolidação tecnológica ainda mais visível. O [Contextus]({{< relref "/products/contextus" >}}) avança como um dos marcos desse ciclo, fortalecendo o reconhecimento institucional da produção do centro.
+
+## 2026
+
+Em fevereiro, o INPI concede ao [Contextus]({{< relref "/products/contextus" >}}) o primeiro registro formal de programa de computador do CEDIS (processo BR512026000889-1) — marco na proteção da propriedade intelectual do centro.
+
+Em março, o [Evidentia Review]({{< relref "/products/evidentia" >}}) reforça a atuação do CEDIS em pesquisa baseada em evidências, com uma plataforma voltada ao planejamento, condução e relato de revisões sistemáticas com colaboração e rastreabilidade.
 
 Já o [OctaAnalysis]({{< relref "/products/octaanalysis" >}}) projeta a atuação do centro em gamificação e learning analytics, oferecendo uma base digital própria para desenhar, acompanhar e analisar experiências educacionais e colaborativas.
+
+Uma nova onda de produtos derivados de TCCs e pesquisas amplia o portfólio: [DevDog]({{< relref "/products/devdog" >}}), [Atloria]({{< relref "/products/atloria" >}}), [EduTrack]({{< relref "/products/edutrack" >}}), [Git Ranking]({{< relref "/products/gitranking" >}}) e o [Deck Manager]({{< relref "/products/deckmanager" >}}) — este último, primeiro produto do CEDIS com política de privacidade por design em conformidade com a LGPD. O reconhecimento pela comunidade brasileira de pesquisa vem com o aceite de artigos no SBES 2026 (DevDog) e no SBIE 2026 (EduTrack), e o centro inicia um novo projeto com o MCTI voltado à gestão informacional do Ministério da Ciência, Tecnologia e Inovação.
 
 Juntos, Contextus, Evidentia Review e OctaAnalysis mostram um CEDIS maduro, com ativos próprios em inteligência aplicada, colaboração científica, gamificação e suporte avançado à pesquisa.
