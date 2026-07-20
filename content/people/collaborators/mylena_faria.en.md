@@ -16,18 +16,23 @@ advisors:
 - cristiane_ramos
 tags: 
 - project_cc
+- project_framework_preditivo_engajamento
 - scientific_initiation
 - gamification
-- inactive
+- learning_analytics
+- machine_learning
+- active
 ---
 ## Academic and Professional Profile
 - Current Position: Undergraduate in Software Engineering, University of Brasília. Scientific initiation in research project.
 
 ## Research Lines
 - Gamification
-- CMS: WordPress
+- Learning analytics
+- Machine learning applied to education
 
 ## Research Projects
+- {{< link-interno "/projects/framework_preditivo_engajamento" "Predictive framework for student engagement and performance" >}}
 - {{< link-interno "/projects/canal_ciencia" "Gamification Science Channel" >}}
 
 ## Contact

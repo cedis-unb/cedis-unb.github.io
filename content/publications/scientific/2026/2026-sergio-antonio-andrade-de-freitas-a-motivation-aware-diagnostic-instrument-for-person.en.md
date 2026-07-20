@@ -32,6 +32,8 @@ tags:
 - active_learning
 - sergio_freitas
 - mylena_faria
+- project_framework_preditivo_engajamento
+- project_alvorecer
 advisors: []
 doi_isbn: ''
 source_title: XXXVII Simpósio Brasileiro de Informática na Educação (SBIE 2026)
@@ -60,3 +62,5 @@ aliases:
 ## Abstract
 
 Paper accepted at the XXXVII Brazilian Symposium on Computers in Education (SBIE 2026, submission #27258), presenting a semester-start diagnostic instrument for personalized and gamified computing education, evaluated across three undergraduate courses (245 valid responses) with good internal consistency (α = 0.880). The instrument underpins the EduTrack and EduTrack AI products.
+
+This result derives from the **Feudal Dawn** gamification experience and is now part of the outputs linked to the 2025-2026 PIBIC project on a predictive framework for student engagement and performance in gamified learning environments.

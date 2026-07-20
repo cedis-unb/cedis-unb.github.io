@@ -19,7 +19,6 @@ tags:
 - active_learning
 - soft_skills
 - security
-- project_td
 - project_software_bem
 - project_super_r
 nav_next: true
