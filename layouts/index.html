@@ -98,7 +98,12 @@
         {{ end }}
     {{ end }}
     {{ $pulseItems = sort $pulseItems "date" "desc" }}
-    {{ $pulseDisplayItems := where $pulseItems "type" "news" }}
+    {{/* "Esta semana" pulse: only real-dated items from the last 60 days, any type */}}
+    {{ $pulseCutoff := now.AddDate 0 0 -60 }}
+    {{ $pulseDisplayItems := where (where $pulseItems "hasFullDate" true) "date" ">=" $pulseCutoff }}
+    {{ if eq (len $pulseDisplayItems) 0 }}
+        {{ $pulseDisplayItems = where $pulseItems "type" "news" }}
+    {{ end }}
     {{ if eq (len $pulseDisplayItems) 0 }}
         {{ $pulseDisplayItems = $pulseItems }}
     {{ end }}
