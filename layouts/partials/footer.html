@@ -27,7 +27,8 @@
 {{ $isPt := eq .Site.Language.Lang "pt" }}
 {{ $footerKicker := i18n "ui_university_of_brasilia" }}
 {{ $footerLead := i18n "ui_research_development_and_software_innovation" }}
-{{ $footerNavTitle := i18n "ui_navigation" }}
+{{ $footerExploreTitle := i18n "ui_footer_explore" }}
+{{ $footerInstitutionalTitle := i18n "ui_footer_institutional" }}
 {{ $footerConnectTitle := i18n "ui_connect" }}
 {{ $footerConnectLead := i18n "ui_follow_cedis_across_publications_news" }}
 
@@ -48,15 +49,35 @@
             </div>
 
             <div class="rounded-lg border border-white/10 bg-white/[0.04] p-6">
-                <div class="text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-slate-400">{{ $footerNavTitle }}</div>
-                <nav class="mt-5 grid grid-cols-1 gap-x-6 gap-y-3 sm:grid-cols-2" aria-label="Footer">
-                    {{ range site.Menus.footer }}
-                    {{ $isExternal := or (hasPrefix .URL "http://") (hasPrefix .URL "https://") }}
-                    <a href="{{ if hasPrefix .URL "/" }}{{ .URL | relLangURL }}{{ else }}{{ .URL }}{{ end }}" {{ if $isExternal }}target="_blank" rel="noopener noreferrer"{{ end }} class="group inline-flex min-h-6 items-center gap-2 text-sm font-medium text-slate-300 transition-colors hover:text-white">
-                        <span aria-hidden="true" class="h-1.5 w-1.5 rounded-full bg-slate-500 transition-colors group-hover:bg-primary-300"></span>
-                        <span class="leading-6">{{ .Name }}</span>
-                    </a>
-                    {{ end }}
+                <nav class="grid grid-cols-1 gap-6 sm:grid-cols-2" aria-label="Footer">
+                    <div>
+                        <div class="text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-slate-400">{{ $footerExploreTitle }}</div>
+                        <ul class="mt-5 space-y-3">
+                            {{ range site.Menus.footer_explore }}
+                            {{ $isExternal := or (hasPrefix .URL "http://") (hasPrefix .URL "https://") }}
+                            <li>
+                                <a href="{{ if hasPrefix .URL "/" }}{{ .URL | relLangURL }}{{ else }}{{ .URL }}{{ end }}" {{ if $isExternal }}target="_blank" rel="noopener noreferrer"{{ end }} class="group inline-flex min-h-6 items-center gap-2 text-sm font-medium text-slate-300 transition-colors hover:text-white">
+                                    <span aria-hidden="true" class="h-1.5 w-1.5 rounded-full bg-slate-500 transition-colors group-hover:bg-primary-300"></span>
+                                    <span class="leading-6">{{ .Name }}</span>
+                                </a>
+                            </li>
+                            {{ end }}
+                        </ul>
+                    </div>
+                    <div>
+                        <div class="text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-slate-400">{{ $footerInstitutionalTitle }}</div>
+                        <ul class="mt-5 space-y-3">
+                            {{ range site.Menus.footer_institutional }}
+                            {{ $isExternal := or (hasPrefix .URL "http://") (hasPrefix .URL "https://") }}
+                            <li>
+                                <a href="{{ if hasPrefix .URL "/" }}{{ .URL | relLangURL }}{{ else }}{{ .URL }}{{ end }}" {{ if $isExternal }}target="_blank" rel="noopener noreferrer"{{ end }} class="group inline-flex min-h-6 items-center gap-2 text-sm font-medium text-slate-300 transition-colors hover:text-white">
+                                    <span aria-hidden="true" class="h-1.5 w-1.5 rounded-full bg-slate-500 transition-colors group-hover:bg-primary-300"></span>
+                                    <span class="leading-6">{{ .Name }}</span>
+                                </a>
+                            </li>
+                            {{ end }}
+                        </ul>
+                    </div>
                 </nav>
             </div>
 
