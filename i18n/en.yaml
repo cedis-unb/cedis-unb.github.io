@@ -11,6 +11,7 @@ breadcrumb_projects: "Projects"
 breadcrumb_areas: "Areas of expertise"
 breadcrumb_posts: "News"
 breadcrumb_products: "Products"
+breadcrumb_categories: "Categories"
 
 # 404 page
 not_found_title: "Page not found"

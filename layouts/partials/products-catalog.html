@@ -1,0 +1,175 @@
+{{ $isPt := eq .Site.Language.Lang "pt" }}
+{{ $dateFormat := cond $isPt "02/01/2006" "02 Jan 2006" }}
+{{ $activeLabel := cond $isPt "Ativos" "Active" }}
+{{ $otherLabel := cond $isPt "Outros estados" "Other statuses" }}
+{{ $productsLabel := cond $isPt "Produtos digitais" "Digital products" }}
+{{ $projectLabel := cond $isPt "Projeto de origem" "Origin project" }}
+{{ $languageLabel := cond $isPt "Idioma" "Language" }}
+{{ $orderLabel := cond $isPt "Ordenação" "Ordering" }}
+{{ $orderText := cond $isPt "Produtos ativos primeiro; dentro de cada grupo, data de lançamento mais recente." "Active products first; within each group, newest launch date first." }}
+{{ $viewLabel := cond $isPt "Ver produto" "View product" }}
+{{ $featuredLabel := cond $isPt "Lançamentos recentes" "Recent launches" }}
+{{ $linkedProjectsLabel := cond $isPt "projetos de origem" "origin projects" }}
+{{ $catalogText := cond $isPt "Catálogo de plataformas, aplicativos e sistemas associados a projetos e frentes de pesquisa do CEDIS." "Catalog of platforms, applications, and systems associated with CEDIS projects and research fronts." }}
+{{ $items := slice }}
+{{ $projectSet := dict }}
+{{ range where .Site.RegularPages "Section" "products" }}
+  {{ if eq .Lang $.Site.Language.Lang }}
+    {{ $status := .Params.status | default "active" }}
+    {{ $isActive := or (eq $status "active") (eq $status "beta") (eq $status "prototype") }}
+    {{ $sortKey := .Date.Format "2006-01-02T15:04:05" }}
+    {{ $productID := .Params.id | default .File.TranslationBaseName }}
+    {{ $originProjectID := .Params.project | default "" }}
+    {{ $project := false }}
+    {{ if $originProjectID }}
+      {{ range where $.Site.RegularPages "Section" "projects" }}
+        {{ if eq .Lang $.Site.Language.Lang }}
+          {{ $projectID := .Params.id | default .File.TranslationBaseName }}
+          {{ if eq $originProjectID $projectID }}{{ $project = . }}{{ end }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+    {{ if not $project }}
+      {{ range where $.Site.RegularPages "Section" "projects" }}
+        {{ if eq .Lang $.Site.Language.Lang }}
+          {{ $inverseMatch := and .Params.products (in .Params.products $productID) }}
+          {{ if $inverseMatch }}{{ $project = . }}{{ end }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+    {{ with $project }}{{ $projectSet = merge $projectSet (dict .RelPermalink true) }}{{ end }}
+    {{ $items = $items | append (dict "page" . "status" $status "isActive" $isActive "sortKey" $sortKey "project" $project) }}
+  {{ end }}
+{{ end }}
+{{ $activeItems := slice }}
+{{ $otherItems := slice }}
+{{ range $items }}
+  {{ if .isActive }}{{ $activeItems = $activeItems | append . }}{{ else }}{{ $otherItems = $otherItems | append . }}{{ end }}
+{{ end }}
+{{ $activeItems = sort $activeItems "sortKey" "desc" }}
+{{ $otherItems = sort $otherItems "sortKey" "desc" }}
+{{ $featuredItems := first 4 $activeItems }}
+{{ $title := partial "translated-label.html" (dict "page" . "value" .Title) }}
+{{ if eq .Section "products" }}{{ $title = .Title }}{{ end }}
+
+<main class="bg-[linear-gradient(180deg,_#f8fafc_0%,_#ffffff_34%,_#f1f5f9_100%)] text-slate-950 dark:bg-[linear-gradient(180deg,_#020617_0%,_#0f172a_56%,_#111827_100%)] dark:text-white">
+  <section class="relative overflow-hidden border-b border-slate-200 bg-slate-950 text-white dark:border-white/10">
+    <div class="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-sky-300/70 to-transparent"></div>
+    <div class="absolute inset-0 bg-[linear-gradient(135deg,_rgba(14,165,233,0.2)_0%,_rgba(15,23,42,0)_42%),linear-gradient(225deg,_rgba(249,115,22,0.13)_0%,_rgba(15,23,42,0)_38%)]"></div>
+    <div class="relative mx-auto grid max-w-screen-xl gap-8 px-4 py-12 md:px-6 lg:grid-cols-[minmax(0,1.05fr)_minmax(340px,0.95fr)] lg:px-8 lg:py-16">
+      <div>
+        {{ partial "breadcrumbs.html" . }}
+        <span class="inline-flex rounded-md border border-white/15 bg-white/10 px-3 py-1 text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-white/72">{{ $productsLabel }}</span>
+        <h1 class="mt-5 max-w-4xl text-4xl font-black leading-tight tracking-tight md:text-6xl">{{ $title }}</h1>
+        <p class="mt-5 max-w-2xl text-base leading-7 text-white/72 md:text-lg">{{ with .Description }}{{ . }}{{ else }}{{ $catalogText }}{{ end }}</p>
+        <div class="mt-8 grid gap-3 sm:grid-cols-3">
+          <div class="rounded-lg border border-white/10 bg-white/[0.07] p-5"><div class="text-3xl font-black">{{ len $items }}</div><div class="mt-1 text-sm text-white/70">{{ cond $isPt "produtos" "products" }}</div></div>
+          <div class="rounded-lg border border-white/10 bg-white/[0.07] p-5"><div class="text-3xl font-black">{{ len $activeItems }}</div><div class="mt-1 text-sm text-white/70">{{ cond $isPt "ativos" "active" }}</div></div>
+          <div class="rounded-lg border border-white/10 bg-white/[0.07] p-5"><div class="text-3xl font-black">{{ len $projectSet }}</div><div class="mt-1 text-sm text-white/70">{{ $linkedProjectsLabel }}</div></div>
+        </div>
+      </div>
+
+      {{ if gt (len $featuredItems) 0 }}
+      <div class="rounded-xl border border-white/10 bg-white/[0.07] p-4 shadow-[0_24px_80px_rgba(0,0,0,0.28)] backdrop-blur">
+        <div class="mb-3 flex items-center justify-between gap-4">
+          <div class="text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-white/66">{{ $featuredLabel }}</div>
+          <div class="text-xs font-semibold text-white/54">{{ $orderLabel }}</div>
+        </div>
+        <div class="space-y-3">
+          {{ range $featuredItems }}
+          {{ $page := .page }}
+          <a href="{{ $page.RelPermalink }}" class="group grid grid-cols-[72px_minmax(0,1fr)] gap-4 rounded-lg border border-white/10 bg-white/[0.06] p-3 transition-colors hover:border-sky-300/50 hover:bg-white/[0.1]">
+            {{ with $page.Params.featured_image }}
+              {{ $featuredPath := replace . "../assets/" "" }}
+              {{ with resources.Get $featuredPath }}
+                {{ $thumb := .Fit "180x120 webp q82" }}
+                <span class="flex h-16 w-[72px] items-center justify-center overflow-hidden rounded-md bg-white/90 p-1"><img src="{{ $thumb.RelPermalink }}" alt="{{ $page.Title }}" class="max-h-full w-auto object-contain" loading="lazy"></span>
+              {{ end }}
+            {{ else }}
+              <span class="flex h-16 w-[72px] items-center justify-center rounded-md bg-slate-800 text-xs font-black text-white">{{ $page.Title | truncate 10 }}</span>
+            {{ end }}
+            <span class="min-w-0">
+              <span class="block truncate text-sm font-black text-white transition-colors group-hover:text-sky-100">{{ $page.Title }}</span>
+              <span class="mt-1 block text-xs text-white/62">{{ $page.Date.Format $dateFormat }}</span>
+              {{ with .project }}<span class="mt-1 block truncate text-xs text-white/72">{{ .Title }}</span>{{ end }}
+            </span>
+          </a>
+          {{ end }}
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-screen-xl px-4 py-10 md:px-6 lg:px-8 lg:py-14">
+    <div class="mb-8 flex flex-col gap-3 rounded-lg border border-slate-200 bg-white p-5 shadow-sm dark:border-white/10 dark:bg-white/[0.04] md:flex-row md:items-center md:justify-between">
+      <p class="text-sm leading-6 text-slate-600 dark:text-white/72"><strong class="text-slate-950 dark:text-white">{{ $orderLabel }}:</strong> {{ $orderText }}</p>
+      <div class="flex flex-wrap gap-2">
+        <a href="#active-products" class="rounded-md border border-slate-200 px-3 py-2 text-sm font-semibold text-slate-700 hover:border-sky-300 hover:text-sky-700 dark:border-white/10 dark:text-white/72 dark:hover:text-sky-200">{{ $activeLabel }}</a>
+        {{ if gt (len $otherItems) 0 }}<a href="#other-products" class="rounded-md border border-slate-200 px-3 py-2 text-sm font-semibold text-slate-700 hover:border-sky-300 hover:text-sky-700 dark:border-white/10 dark:text-white/72 dark:hover:text-sky-200">{{ $otherLabel }}</a>{{ end }}
+      </div>
+    </div>
+
+    {{ range $index, $group := slice (dict "id" "active-products" "title" $activeLabel "items" $activeItems) (dict "id" "other-products" "title" $otherLabel "items" $otherItems) }}
+      {{ if gt (len $group.items) 0 }}
+      <div id="{{ $group.id }}" class="mb-12 scroll-mt-28">
+        <div class="mb-5 flex items-center justify-between gap-4">
+          <h2 class="text-2xl font-black tracking-tight text-slate-950 dark:text-white">{{ $group.title }}</h2>
+          <span class="rounded-md border border-slate-200 bg-white px-3 py-1 text-sm font-semibold text-slate-600 dark:border-white/10 dark:bg-white/[0.04] dark:text-white/70">{{ len $group.items }}</span>
+        </div>
+        <div class="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+          {{ range $group.items }}
+          {{ $page := .page }}
+          {{ $summary := $page.Params.summary | default ($page.Summary | plainify | htmlUnescape | strings.TrimSpace) }}
+          {{ $productLanguage := $page.Params.product_language | default $page.Lang }}
+          {{ $productLanguageLabel := $productLanguage | upper }}
+          {{ if eq $productLanguage "pt" }}{{ $productLanguageLabel = cond $isPt "Português" "Portuguese" }}{{ end }}
+          {{ if eq $productLanguage "en" }}{{ $productLanguageLabel = cond $isPt "Inglês" "English" }}{{ end }}
+          {{ if eq $productLanguage "pt/en" }}{{ $productLanguageLabel = cond $isPt "Português/Inglês" "Portuguese/English" }}{{ end }}
+          <article class="group flex h-full flex-col overflow-hidden rounded-xl border border-slate-200 bg-white text-slate-950 shadow-sm transition duration-200 hover:-translate-y-0.5 hover:border-sky-300 hover:shadow-[0_20px_60px_rgba(14,165,233,0.14)] dark:border-white/10 dark:bg-white/[0.04] dark:text-white">
+            <a href="{{ $page.RelPermalink }}" class="block border-b border-slate-200/80 dark:border-white/10">
+              {{ with $page.Params.featured_image }}
+                {{ $featuredPath := replace . "../assets/" "" }}
+                {{ with resources.Get $featuredPath }}
+                  {{ partial "card-image.html" (dict "resource" . "title" $page.Title "fit" "960x640 webp q88" "mode" "fit" "containerClass" "h-48" "variant" "grid") }}
+                {{ end }}
+              {{ else }}
+                <div class="flex h-48 items-end bg-slate-900 p-5 text-white"><span class="text-2xl font-black">{{ $page.Title }}</span></div>
+              {{ end }}
+            </a>
+            <div class="flex flex-1 flex-col p-5">
+              <div class="flex flex-wrap items-center gap-2 text-xs font-semibold uppercase tracking-[0.14em]">
+                <span class="rounded-md bg-sky-50 px-2.5 py-1 text-sky-800 dark:bg-sky-300/10 dark:text-sky-100">{{ partial "translated-label.html" (dict "value" .status) }}</span>
+                <span class="text-slate-500 dark:text-white/58">{{ $page.Date.Format $dateFormat }}</span>
+              </div>
+              <h3 class="mt-4 text-xl font-black leading-tight tracking-tight"><a href="{{ $page.RelPermalink }}" class="transition-colors group-hover:text-sky-700 dark:group-hover:text-sky-200">{{ $page.Title }}</a></h3>
+              {{ with $summary }}<p class="mt-3 text-sm leading-6 text-slate-600 dark:text-white/70">{{ . | truncate 180 }}</p>{{ end }}
+              <dl class="mt-5 grid gap-3 text-sm">
+                <div class="rounded-lg bg-slate-50 p-3 dark:bg-white/[0.05]">
+                  <dt class="text-xs font-semibold uppercase tracking-[0.14em] text-slate-500 dark:text-white/58">{{ $projectLabel }}</dt>
+                  <dd class="mt-1 font-semibold text-slate-900 dark:text-white">
+                    {{ with .project }}<a href="{{ .RelPermalink }}" class="hover:text-sky-700 dark:hover:text-sky-200">{{ .Title }}</a>{{ else }}{{ cond $isPt "Não mapeado" "Not mapped" }}{{ end }}
+                  </dd>
+                </div>
+                <div class="rounded-lg bg-slate-50 p-3 dark:bg-white/[0.05]">
+                  <dt class="text-xs font-semibold uppercase tracking-[0.14em] text-slate-500 dark:text-white/58">{{ $languageLabel }}</dt>
+                  <dd class="mt-1 font-semibold text-slate-900 dark:text-white">{{ $productLanguageLabel }}</dd>
+                </div>
+              </dl>
+              {{ with $page.Params.areas }}
+              <div class="mt-5 flex flex-wrap gap-2">
+                {{ range first 4 . }}<span class="rounded-md border border-slate-200 px-2.5 py-1 text-xs font-semibold text-slate-600 dark:border-white/10 dark:text-white/70">{{ partial "translated-label.html" (dict "value" .) }}</span>{{ end }}
+              </div>
+              {{ end }}
+              <div class="mt-auto pt-5">
+                <a href="{{ $page.RelPermalink }}" class="inline-flex items-center gap-2 text-sm font-bold text-sky-700 transition-colors hover:text-sky-600 dark:text-sky-200 dark:hover:text-sky-100">{{ $viewLabel }}<span aria-hidden="true">→</span></a>
+              </div>
+            </div>
+          </article>
+          {{ end }}
+        </div>
+      </div>
+      {{ end }}
+    {{ end }}
+  </section>
+</main>
