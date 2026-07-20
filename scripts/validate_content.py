@@ -428,6 +428,64 @@ def validate_product_pages(
             warn("i18n", f"content/products::{pid}", f"par de idioma incompleto: {sorted(langs)}")
 
 
+def validate_opportunity_pages(
+    opportunity_entries: list[tuple[Path, dict]],
+    person_ids: set[str],
+    project_ids: set[str],
+) -> None:
+    by_key: dict[str, set[str]] = defaultdict(set)
+    for path, fm in opportunity_entries:
+        rel = path.relative_to(ROOT).as_posix()
+        if path.name.startswith("_index."):
+            continue
+        oid = str(fm.get("id") or page_id(path, fm))
+        by_key[oid].add(str(fm.get("language")))
+        status = fm.get("status")
+        if status not in {"open", "closed", "expired"}:
+            warn("enum", rel, f"status de oportunidade inválido: '{status}'")
+        if not parse_iso_date(fm.get("deadline")):
+            warn("date", rel, "deadline ausente ou inválido")
+        project_id = fm.get("project")
+        if project_id and project_id not in project_ids:
+            warn("xref", rel, f"project '{project_id}' não existe em content/projects")
+        for responsible_id in as_list(fm.get("responsible")):
+            if responsible_id not in person_ids and responsible_id not in TRANSITIONAL_EXCEPTIONS["advisor_alias"]:
+                warn("xref", rel, f"responsible '{responsible_id}' não existe em advisors.yaml nem content/people")
+    for oid, langs in by_key.items():
+        if langs != {"pt", "en"}:
+            warn("i18n", f"content/opportunities::{oid}", f"par de idioma incompleto: {sorted(langs)}")
+
+
+def validate_generated_publication_pages() -> list[tuple[Path, dict]]:
+    entries: list[tuple[Path, dict]] = []
+    section_dir = CONTENT_DIR / "publications"
+    if not section_dir.exists():
+        return entries
+    by_key: dict[str, set[str]] = defaultdict(set)
+    required = ("title", "date", "language", "translationKey")
+    page_required = ("id", "year", "authors", "publication_group", "publication_type")
+    for md_path in sorted(section_dir.rglob("*.md")):
+        fm = parse_frontmatter(md_path)
+        if fm is None:
+            continue
+        rel = md_path.relative_to(ROOT).as_posix()
+        for req in required:
+            if req not in fm:
+                warn("schema", rel, f"campo obrigatório ausente: '{req}'")
+        if not md_path.name.startswith("_index."):
+            for req in page_required:
+                if req not in fm:
+                    warn("schema", rel, f"campo obrigatório ausente: '{req}'")
+            if fm.get("publication_type") not in {"article", "book", "book chapter", "book_section", "conference", "didactic", "dissertation", "phd", "registro", "specialization", "tcc", "workshop"}:
+                warn("enum", rel, f"publication_type inválido: '{fm.get('publication_type')}'")
+        by_key[str(fm.get("translationKey") or page_id(md_path, fm))].add(str(fm.get("language")))
+        entries.append((md_path, fm))
+    for key, langs in by_key.items():
+        if langs != {"pt", "en"}:
+            warn("i18n", f"content/publications::{key}", f"par de idioma incompleto: {sorted(langs)}")
+    return entries
+
+
 def validate_structural_page(path: Path, schema_name: str) -> list[tuple[Path, dict]]:
     fm = parse_frontmatter(path)
     if fm is None:
@@ -508,12 +566,15 @@ def main() -> int:
     product_ids = collect_content_ids(product_entries)
     validate_project_pages(project_entries, person_ids, area_ids, project_ids, product_ids)
     validate_product_pages(product_entries, advisor_ids, area_ids, project_ids)
+    all_fms.extend(validate_generated_publication_pages())
+
+    opportunity_entries = validate_content_section("opportunities", "opportunity", advisor_ids, area_ids)
+    all_fms.extend(opportunity_entries)
+    validate_opportunity_pages(opportunity_entries, person_ids, project_ids)
 
     for path, schema_name in (
         (CONTENT_DIR / "parceiros.pt.md", "partner"),
         (CONTENT_DIR / "parceiros.en.md", "partner"),
-        (CONTENT_DIR / "oportunidades.pt.md", "opportunity"),
-        (CONTENT_DIR / "oportunidades.en.md", "opportunity"),
         (CONTENT_DIR / "reconhecimentos.pt.md", "recognition"),
         (CONTENT_DIR / "reconhecimentos.en.md", "recognition"),
     ):

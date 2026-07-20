@@ -3,6 +3,7 @@ title: "História do CEDIS"
 date: 2021-12-18T11:10:36+08:00
 draft: false
 language: pt
+translationKey: history
 layout: history
 description: Da origem como Laboratorio Fabrica de Software a um centro com parcerias, projetos e plataformas de impacto em pesquisa e inovacao.
 featured_image: "../assets/images/featured/CEDIS.png"

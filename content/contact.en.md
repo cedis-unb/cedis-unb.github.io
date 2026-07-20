@@ -3,6 +3,7 @@ title: Contact
 date: 2025-05-03T03:10:36.000Z
 draft: false
 language: en
+translationKey: contact
 description: Contact information for CEDIS including address, email, and social media links.
 ---
 

@@ -16,6 +16,11 @@ tags:
 - gamification
 - learning_analytics
 - octaanalysis
+related_ids:
+- octaanalysis
+- project_inovacao_digital_gamificacao
+- sergio_freitas
+- cristiane_ramos
 ---
 
 Brasília, 10 de março de 2026  

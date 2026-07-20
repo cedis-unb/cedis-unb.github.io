@@ -70,6 +70,53 @@ compatibilidade visual e de taxonomia.
 consumidores legados e deve ser tratado como espelho transitório. Novas
 relações devem ser adicionadas primeiro nas páginas em `content/`.
 
+### Publicações geradas
+
+As páginas em `content/publications/` são geradas a partir de
+`data/productions.yaml` por `scripts/build_publications.py`. Não edite
+essas páginas manualmente; corrija a fonte em `data/productions.yaml` e
+rode o gerador.
+
+O gerador cria uma página PT e EN para cada item, URLs por tipo e ano,
+índices por agrupamento (`scientific`, `tcc`, `thesis`,
+`specialization`, `registrations`, `zenodo`, `didactic`), BibTeX e
+JSON-LD. Links externos de publicação devem continuar no campo `url:` da
+fonte YAML; nas páginas geradas eles aparecem como `external_url` para
+não conflitar com o campo reservado `url` do Hugo.
+
+### Oportunidades e trilhas Participe
+
+Oportunidades ficam em `content/opportunities/`, com pares PT/EN e
+campos `status`, `deadline`, `audience`, `project` e `responsible`
+quando aplicável. As chamadas encerradas devem ter `status: expired` ou
+`closed` e `noindex: true`.
+
+Em julho/2026, todos os editais cadastrados estão encerrados; não há
+oportunidades abertas. Não marque uma oportunidade como `open` sem uma
+chamada vigente, prazo futuro e texto revisado.
+
+As trilhas permanentes de participação ficam em `content/junte-se/`:
+`iniciacao-cientifica`, `tcc`, `mestrado`, `doutorado`, `extensao`,
+`parcerias` e `proponha-projeto`.
+
+### Notícias relacionadas
+
+Posts podem declarar `related_ids:` com IDs de projeto, produto ou
+pessoa. O partial `layouts/partials/related-news.html` usa esse campo,
+além de `tags` e `categories`, para renderizar notícias relacionadas em
+páginas de projetos, produtos e perfis.
+
+Use IDs estáveis já declarados no front matter das entidades, como
+`contextus`, `dfcris`, `project_inovacao_digital_gamificacao` ou
+`sergio_freitas`.
+
+### Paridade PT/EN
+
+Páginas institucionais, oportunidades, trilhas e índices estruturantes
+devem ter par PT/EN com o mesmo `translationKey`. Rode
+`python3 scripts/validate_i18n.py` antes de publicar alterações de
+conteúdo bilíngue.
+
 ---
 
 ## 1. Atribuição institucional
@@ -176,6 +223,7 @@ mas a página de perfil está em `/people/daniel_lima`.
 | `book chapter` | Capítulo de livro (variante legada; preferir `book_section` em novos itens) |
 | `conference` | Trabalho completo em anais |
 | `workshop` | Resumo expandido / trabalho em workshop |
+| `didactic` | Curso, oficina ou material didático |
 | `tcc` | Trabalho de Conclusão de Curso (graduação) |
 | `dissertation` | Dissertação de mestrado |
 | `phd` | Tese de doutorado |

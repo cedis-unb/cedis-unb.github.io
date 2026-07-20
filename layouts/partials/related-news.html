@@ -1,0 +1,48 @@
+{{ $page := .page }}
+{{ $ids := .ids | default slice }}
+{{ $isPt := eq $page.Site.Language.Lang "pt" }}
+{{ $label := .label | default (cond $isPt "Últimas notícias relacionadas" "Related news") }}
+{{ $matches := slice }}
+{{ $seen := dict }}
+{{ range $candidate := $page.Site.RegularPages.ByDate.Reverse }}
+  {{ if and (eq $candidate.Section "posts") (eq $candidate.Lang $page.Site.Language.Lang) }}
+    {{ $matched := false }}
+    {{ range $ids }}
+      {{ $id := . }}
+      {{ if or (in ($candidate.Params.related_ids | default slice) $id) (in ($candidate.Params.tags | default slice) $id) (in ($candidate.Params.categories | default slice) $id) }}
+        {{ $matched = true }}
+      {{ end }}
+    {{ end }}
+    {{ if and $matched (not (isset $seen $candidate.RelPermalink)) }}
+      {{ $seen = merge $seen (dict $candidate.RelPermalink true) }}
+      {{ $matches = $matches | append $candidate }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{ if gt (len $matches) 0 }}
+<section class="mx-auto max-w-screen-xl px-4 pb-12 md:px-6 lg:px-8 lg:pb-16">
+  <div class="rounded-[1.75rem] border border-slate-200/80 bg-white/92 p-6 shadow-[0_18px_60px_rgba(15,23,42,0.08)] dark:border-white/10 dark:bg-white/[0.04] md:p-7">
+    <div class="flex flex-wrap items-end justify-between gap-4">
+      <div>
+        <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-slate-500 dark:text-white/60">{{ cond $isPt "Notícias" "News" }}</div>
+        <h2 class="mt-2 text-2xl font-black tracking-tight text-slate-950 dark:text-white">{{ $label }}</h2>
+      </div>
+      <a href="{{ "/categories/news/" | relLangURL }}" class="rounded-full border border-slate-300 bg-white px-4 py-2 text-sm font-semibold text-slate-700 transition-colors hover:border-primary-400 hover:text-primary-700 dark:border-white/10 dark:bg-white/[0.06] dark:text-white/78">{{ cond $isPt "Ver arquivo" "Browse archive" }}</a>
+    </div>
+    <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+      {{ range first 5 $matches }}
+      <article class="rounded-[1.25rem] border border-slate-200 bg-slate-50 p-4 dark:border-white/10 dark:bg-slate-950/30">
+        <div class="text-xs font-semibold uppercase tracking-[0.16em] text-slate-500 dark:text-white/56">{{ .Date.Format (cond $isPt "02/01/2006" "02 Jan 2006") }}</div>
+        <h3 class="mt-2 text-base font-black leading-snug text-slate-950 dark:text-white">
+          <a href="{{ .RelPermalink }}" class="transition-colors hover:text-primary-700 dark:hover:text-primary-200">{{ .Title }}</a>
+        </h3>
+        {{ with (.Params.summary | default .Description) }}
+        <p class="mt-2 line-clamp-3 text-sm leading-6 text-slate-600 dark:text-white/64">{{ . }}</p>
+        {{ end }}
+      </article>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}

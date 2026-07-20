@@ -41,6 +41,16 @@
         "pattern": "^[a-z0-9_]+$"
       }
     },
+    "project": {
+      "type": "string"
+    },
+    "responsible": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9_]+$"
+      }
+    },
     "translationKey": {
       "type": "string"
     }

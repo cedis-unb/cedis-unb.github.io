@@ -15,6 +15,10 @@ tags:
 - gamification
 - active_learning
 - learning_analytics
+related_ids:
+- project_alvorecer
+- project_inovacao_digital_gamificacao
+- sergio_freitas
 ---
 
 Brasília, August 29, 2025  

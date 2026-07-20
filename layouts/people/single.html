@@ -718,5 +718,6 @@
       {{ end }}
     </aside>
   </section>
+  {{ partial "related-news.html" (dict "page" . "ids" (slice $personKey) "label" (cond $isPt "Últimas notícias sobre este perfil" "Latest news about this profile")) }}
 </main>
 {{ end }}

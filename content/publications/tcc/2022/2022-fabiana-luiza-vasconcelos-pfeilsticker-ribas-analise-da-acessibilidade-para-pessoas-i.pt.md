@@ -1,0 +1,41 @@
+---
+title: Análise da acessibilidade para pessoas idosas em serviços e-Gov - um estudo
+  de caso
+date: '2022-01-01T00:00:00-03:00'
+draft: false
+language: pt
+translationKey: publication_2022_fabiana_luiza_vasconcelos_pfeilsticker_ribas_analise_da_acessibilidade_para_pessoas_i
+id: publication_2022_fabiana_luiza_vasconcelos_pfeilsticker_ribas_analise_da_acessibilidade_para_pessoas_i
+publication_index: 66
+publication_group: tcc
+publication_type: tcc
+schema_type: Thesis
+year: 2022
+authors:
+- Fabiana Luiza Vasconcelos Pfeilsticker Ribas
+authors_structured:
+- name: Fabiana Luiza Vasconcelos Pfeilsticker Ribas
+  id: fabiana_luiza_vasconcelos_pfeilsticker_ribas
+tags:
+- digital_transformation
+advisors:
+- ricardo_ajax
+doi_isbn: ''
+source_title: ''
+publisher: Biblioteca Central da Universidade de Brasília
+location: ''
+pages: ''
+volume: ''
+external_url: https://www.bdm.unb.br/handle/10483/33852
+spotify_podcast: ''
+github_repo: ''
+zenodo_record: ''
+summary: Tcc de Fabiana Luiza Vasconcelos Pfeilsticker Ribas (2022).
+bibtex: "@mastersthesis{2022-fabiana-luiza-vasconcelos-pfeilsticker-ribas-analise-da-acessibilidade-para-pessoas-i,\n\
+  \  author = {Fabiana Luiza Vasconcelos Pfeilsticker Ribas},\n  title = {Análise\
+  \ da acessibilidade para pessoas idosas em serviços e-Gov - um estudo de caso},\n\
+  \  year = {2022},\n  publisher = {Biblioteca Central da Universidade de Brasília}\n\
+  }"
+aliases:
+- /publications/2022-fabiana-luiza-vasconcelos-pfeilsticker-ribas-analise-da-acessibilidade-para-pessoas-i/
+---

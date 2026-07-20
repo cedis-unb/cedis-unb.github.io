@@ -59,7 +59,7 @@ Fase 0 — Preparação                        ✅ CONCLUÍDA   (I11, I05)
 Fase 1 — Correções + fundação CI           ✅ CONCLUÍDA   (I04, I06, I01)
 Fase 2 — Arquitetura de navegação          (2-3 sem)      I13, I15, I16
 Fase 3 — Modelo de dados canônico          (3-5 sem)      I02 → I03
-Fase 4 — Reestruturação de conteúdo        (5-9 sem)      I07, I09, I14, I08
+Fase 4 — Reestruturação de conteúdo        ✅ CONCLUÍDA   I07, I09, I14, I08
 Fase 5 — Qualidade e política              (contínuo)     I10, I12
 ```
 
@@ -168,9 +168,11 @@ Concluída em `9756046cf` e commits anteriores.
 
 ---
 
-## Fase 4 — Reestruturação de conteúdo
+## Fase 4 — Reestruturação de conteúdo ✅ CONCLUÍDA
 
-### I07 — Publicações como páginas canônicas (ajuste v2)
+Concluída em julho/2026 com geração canônica de publicações, oportunidades estruturadas sem chamadas abertas no momento, trilhas "Participe", notícias relacionadas em páginas de projeto/produto/pesquisador e validação PT/EN no CI.
+
+### I07 — Publicações como páginas canônicas (ajuste v2) ✅
 - **Prioridade:** alta · **Esforço:** L · **Depende de:** I02
 - **Ajuste v2:** o menu "Publicações" (I13) espera sub-itens por tipo — a geração precisa oferecer listagens filtráveis e URLs limpas por tipo:
   - `/publications/scientific/` (article, book, book chapter)
@@ -188,7 +190,7 @@ Concluída em `9756046cf` e commits anteriores.
 - **Verificação:** cada publicação tem URL própria (`curl -I` retorna 200); sitemap cresce proporcionalmente; Pagefind indexa individualmente; menu "Publicações" leva a cada sub-listagem.
 - **Arquivos:** `scripts/build_publications.py`, `layouts/publications/`, `content/publications/` (gerado).
 
-### I09 — Oportunidades estruturadas + trilhas "Participe" (ajuste v2)
+### I09 — Oportunidades estruturadas + trilhas "Participe" (ajuste v2) ✅
 - **Prioridade:** alta · **Esforço:** M · **Depende de:** I02
 - **Ajuste v2:** o antigo "Oportunidades" passa a ser **um dos itens do menu "Participe"** (I13). Trilhas por público (IC/TCC/Mestrado/Doutorado/Extensão/Parcerias/Proponha) já existem parcialmente em `content/junte-se/` — devem ser formalizadas e alinhadas.
 - **Entregáveis:**
@@ -199,7 +201,7 @@ Concluída em `9756046cf` e commits anteriores.
 - **Verificação:** ao mudar `deadline` para uma data passada, a oportunidade some da listagem principal sem editar `status` manualmente; menu "Participe" (I13) leva a cada trilha.
 - **Arquivos:** `content/opportunities/`, `content/junte-se/*/`, `layouts/opportunities/`, `layouts/_default/list.html`.
 
-### I14 — Notícias como camada transversal
+### I14 — Notícias como camada transversal ✅
 - **Prioridade:** alta · **Esforço:** M · **Depende de:** I03
 - **Contexto:** como Notícias saiu do menu principal, sua descobribilidade agora depende de: (a) destaque na home ✅ (já entregue), (b) blocos "notícias relacionadas" em páginas de projeto/produto/pesquisador, (c) arquivo completo em `/categories/news/` linkado do rodapé ✅ (já entregue via I15).
 - **Entregáveis:**
@@ -210,7 +212,7 @@ Concluída em `9756046cf` e commits anteriores.
 - **Verificação:** amostragem — em `content/products/contextus.pt.md`, o bloco de notícias deve mostrar Contextus lançamento, registro INPI, produtos derivados; em `content/people/sergio_freitas.pt.md`, ver as notícias que o citam.
 - **Arquivos:** `layouts/partials/related-news.html`, `layouts/projects/single.html`, `layouts/products/single.html`, `layouts/people/single.html`, `content/posts/*.md` (adição de `related_ids`).
 
-### I08 — Paridade PT/EN
+### I08 — Paridade PT/EN ✅
 - **Prioridade:** alta · **Esforço:** M · **Depende de:** *front matter* padronizado (I02)
 - **Entregáveis:**
   1. Toda página institucional obrigatória (lista em `CONVENTIONS.md`) declara `translationKey`.
@@ -300,13 +302,13 @@ O plano é bem-sucedido quando:
 | I04 | ✅ | `content/projects/DFCris.*.md`, `content/areas/security.*.md`, assets renomeados |
 | I05 | ✅ | `data/*.yaml` (removidos) |
 | I06 | ✅ | `layouts/partials/meta.html`, `layouts/robots.txt` |
-| I07 | ⏳ | `scripts/build_publications.py`, `layouts/publications/`, `content/publications/` |
-| I08 | ⏳ | `scripts/validate_i18n.py`, `.github/workflows/site-ci.yml` |
-| I09 | ⏳ | `content/opportunities/`, `content/junte-se/*/`, `layouts/opportunities/` |
+| I07 | ✅ | `scripts/build_publications.py`, `layouts/publications/`, `content/publications/` |
+| I08 | ✅ | `scripts/validate_i18n.py`, `.github/workflows/site-ci.yml` |
+| I09 | ✅ | `content/opportunities/`, `content/junte-se/*/`, `layouts/opportunities/` |
 | I10 | ⏳ | `lighthouserc.json`, `.pa11yci.json`, `.github/workflows/site-ci.yml` |
 | I11 | ✅ | `README.md`, `package.json`, `.tool-versions` |
 | I12 | ⏳ | `hugo.yaml`, `content/privacy/`, `layouts/partials/footer.html` |
 | **I13** | ⏳ | `hugo.yaml`, `layouts/partials/header.html`, `i18n/*.yaml` |
-| **I14** | ⏳ | `layouts/partials/related-news.html`, `layouts/{projects,products,people}/single.html` |
+| **I14** | ✅ | `layouts/partials/related-news.html`, `layouts/{projects,products,people}/single.html` |
 | **I15** | ⏳ | `layouts/partials/footer.html`, `i18n/*.yaml` |
 | **I16** | ⏳ | `content/reconhecimentos/`, `content/infra/`, `content/indicadores/`, `content/contact/`, `content/imprensa/`, `content/privacy/`, `content/accessibility/` |

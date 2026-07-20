@@ -12,6 +12,11 @@ categories: Blog
 tags: 
 - project_cc
 - gamification
+related_ids:
+- edital_gamificacao_2024
+- project_cc
+- sergio_freitas
+- cristiane_ramos
 ---
 ## Edital n. 01/2024 - Seleção de bolsista para projeto de gamificação
 

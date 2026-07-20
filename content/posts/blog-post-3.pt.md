@@ -12,6 +12,10 @@ categories: Blog
 tags: 
 - project_cc
 - gamification
+related_ids:
+- chamada_voluntaria_2025
+- project_cc
+- project_inovacao_digital_gamificacao
 ---
 # Chamada voluntária para atuação no CEDIS – Cadastro de alunos 2025
 
