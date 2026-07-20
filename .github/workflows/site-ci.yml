@@ -1,0 +1,99 @@
+name: site-ci
+
+# Executa a construção do site e validações leves em todo push para main
+# e em todo pull request. Fase 1 do PLANO-AUDITORIA-2026 (issue I01).
+#
+# Não faz deploy. O deploy segue via docs/ versionado no commit até que
+# essa etapa também seja movida para o CI (previsto em fase posterior).
+
+on:
+  push:
+    branches: [main]
+    # Ignora commits que apenas regeneram docs/ ou modificam docs de
+    # metadados (evita jobs redundantes).
+    paths-ignore:
+      - 'docs/**'
+      - '**.md'
+      - '.tool-versions'
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+# Cancela execuções antigas de uma mesma branch se houver push novo.
+concurrency:
+  group: site-ci-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+env:
+  HUGO_VERSION: '0.164.0'
+  NODE_VERSION: '24'
+  HUGO_ENV: production
+
+jobs:
+  build:
+    name: build + validate
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          # Necessário porque hugo.yaml tem enableGitInfo: true.
+          fetch-depth: 0
+          submodules: recursive
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+
+      - name: Setup Hugo Extended
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: ${{ env.HUGO_VERSION }}
+          extended: true
+
+      - name: Install Node dependencies
+        run: npm ci
+
+      - name: Build site (Hugo)
+        run: hugo --gc --minify --destination public
+
+      - name: Build Pagefind index
+        run: npx --no-install pagefind --site public
+
+      - name: Install lychee (link checker)
+        uses: lycheeverse/lychee-action@v2
+        with:
+          # Roda apenas contra os arquivos gerados; assim links relativos
+          # são resolvidos pelo próprio HTML.
+          args: >-
+            --config lychee.toml
+            --no-progress
+            --base public
+            public/**/*.html
+          fail: true
+          # Salva relatório para inspeção mesmo em falha.
+          output: lychee-report.md
+
+      - name: Upload lychee report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: lychee-report
+          path: lychee-report.md
+          if-no-files-found: ignore
+          retention-days: 14
+
+      - name: Upload built site
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: site-public
+          path: public
+          retention-days: 7
