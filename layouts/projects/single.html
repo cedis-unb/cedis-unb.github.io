@@ -102,7 +102,7 @@
 {{ if $endValue }}{{ $endYear = replaceRE `^([0-9]{4}).*$` `$1` $endValue }}{{ end }}
 {{ if not $startYear }}{{ $startYear = .Date.Format "2006" }}{{ end }}
 {{ $projectPeriod := $startYear }}
-{{ if eq $projectStatus "active" }}
+{{ if or (eq $projectStatus "active") (eq $projectStatus "ongoing") }}
   {{ $projectPeriod = cond $isPortuguese (printf "%s-Atual" $startYear) (printf "%s-Present" $startYear) }}
 {{ else if and $endYear (ne $endYear $startYear) }}
   {{ $projectPeriod = printf "%s-%s" $startYear $endYear }}

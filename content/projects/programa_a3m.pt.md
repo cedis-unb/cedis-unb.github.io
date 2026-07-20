@@ -1,13 +1,13 @@
 ---
 author: CEDIS
-title: "Programa Aprendizagem para o Terceiro Milênio - A3M"
-date: 2021-01-01T00:00:00-03:00
+title: "A3M: Inovação educacional com metodologias ativas"
+date: 2017-01-01T00:00:00-03:00
 language: pt
-status: closed
-start_date: 2021-01-01
-end_date: 2024-12-31
+status: ongoing
+start_date: 2017-01-01
 id: project_a3m
 researchers:
+- sergio_freitas
 - cristiane_ramos
 areas:
 - active_learning
@@ -15,12 +15,18 @@ areas:
 - learning_analytics
 partners: []
 funding_agencies: []
-products: []
-publications: []
-summary: "Participação em programa institucional de inovação pedagógica e aprendizagem ativa na Universidade de Brasília."
+products:
+- saga
+- edutrack
+- edutrackai
+publications:
+- 2183-1378
+- indicadores_de_aprendizagem
+summary: "Projeto em andamento associado ao Programa Aprendizagem para o Terceiro Milênio, com foco em inovação educacional, metodologias ativas e indicadores de aprendizagem na Universidade de Brasília."
 authorimage: ../assets/images/global/author.webp
 categories:
 - project
+- sergio_freitas
 - cristiane_ramos
 - project_a3m
 tags:
@@ -28,14 +34,36 @@ tags:
 - education
 - learning_analytics
 - project_a3m
-- closed
+- active
 ---
 ## Visão geral
 
-**Projeto encerrado.** Período: 2021-2024.
+**Projeto em andamento.** Período: 2017-Atual.
 
-O A3M reuniu ações pedagógicas inovadoras, indicadores de aprendizagem e práticas de formação voltadas à institucionalização de metodologias ativas na Universidade de Brasília.
+O projeto **A3M: Inovação educacional com metodologias ativas** registra a atuação do CEDIS no Programa Aprendizagem para o Terceiro Milênio da Universidade de Brasília. A iniciativa articula inovação pedagógica, metodologias ativas, indicadores de aprendizagem e produtos digitais voltados ao acompanhamento de práticas educacionais.
+
+No contexto do CEDIS, o A3M conecta pesquisa aplicada, formação docente, análise de indicadores e desenvolvimento de soluções para apoiar disciplinas, cursos e gestores acadêmicos em decisões orientadas por evidências.
+
+## Objetivos
+
+O projeto tem como objetivos principais:
+
+- desenvolver e sistematizar práticas de inovação educacional com metodologias ativas;
+- produzir indicadores que apoiem avaliação, acompanhamento e melhoria contínua de experiências de aprendizagem;
+- transformar resultados de pesquisa em publicações, materiais formativos e produtos digitais; e
+- apoiar a institucionalização de práticas pedagógicas inovadoras na Universidade de Brasília.
 
 ## Equipe
 
-- {{< link-interno "/people/cristiane_ramos" "Cristiane Ramos" >}}
+- Prof. {{< link-interno "/people/sergio_freitas" "Sergio Freitas" >}} (coordenador)
+- Profa. {{< link-interno "/people/cristiane_ramos" "Cristiane Ramos" >}}
+- Profa. Dianne Magalhães Viana
+- Prof. Eduardo Bessa
+- Profa. Márcia Mortari
+
+## Produções e produtos relacionados
+
+- Livro e trabalhos sobre indicadores de aprendizagem vinculados ao Programa A3M.
+- {{< link-interno "/products/saga" "SAGA" >}}
+- {{< link-interno "/products/edutrack" "EduTrack" >}}
+- {{< link-interno "/products/edutrackai" "EduTrack AI" >}}
