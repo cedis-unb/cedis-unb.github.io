@@ -9,6 +9,28 @@ manter conformidade com o padrão atual.
 
 ---
 
+## Fontes canônicas em `data/`
+
+Todo arquivo `.yaml` no diretório `data/` é carregado automaticamente pelo
+Hugo. Para evitar edição da fonte incorreta, o repositório mantém apenas
+as fontes canônicas listadas abaixo. Cópias históricas, versões
+"antigas" e ensaios devem ficar **fora do repositório** (backup local,
+gist privado, branch efêmera) — nunca em `data/`.
+
+| Arquivo | Papel canônico |
+|---|---|
+| `data/advisors.yaml` | Orientadores e áreas primárias por pesquisador. |
+| `data/areas.yaml` | Áreas de atuação do CEDIS. |
+| `data/people.yaml` | Pessoas do CEDIS (pesquisadores, orientandos ativos, alumni). |
+| `data/productions.yaml` | Produção científica (artigos, defesas, registros). |
+| `data/projects.yaml` | Projetos (metadados agregados; a fonte de longo prazo será a página em `content/projects/`, ver issue I03 do `PLANO-AUDITORIA-2026.md`). |
+
+Não crie arquivos como `people-old.yaml`, `productions copy.yaml`, ou
+sufixos `-v2`, `-backup`, `-errado`. Se precisar experimentar uma
+alteração de estrutura, use uma branch e um PR.
+
+---
+
 ## 1. Atribuição institucional
 
 ### 1.1 CEDIS vs. programas de ensino
