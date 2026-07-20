@@ -43,8 +43,5 @@ exclude = [
   "^https?://(www\\.)?bdtd\\.ibict\\.br/",
 ]
 
-# Ignora URLs com padrões conhecidos que não são de fato links.
-exclude_mail = true
-
-# Não checa localhost / IPs privados / .local
-exclude_all_private = true
+# Nota: exclusão de mailto: e IPs privados usa os defaults do lychee
+# (mailtos ignorados por padrão; endereços privados também).
