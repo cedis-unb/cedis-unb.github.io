@@ -7,6 +7,10 @@
 {{ with .Data.Term }}
     {{ $termKey = lower . }}
 {{ end }}
+{{ $isNewsTerm := and $isTerm (eq .Data.Plural "categories") (eq $termKey "news") }}
+{{ if $isNewsTerm }}
+    {{ partial "news-term.html" . }}
+{{ else }}
 {{ $isProjectsList := and (not $isTaxonomy) (not $isTerm) (eq .Section "projects") }}
 {{ $isProductsList := and (not $isTaxonomy) (not $isTerm) (eq .Section "products") }}
 {{ $isAreasList := and (not $isTaxonomy) (not $isTerm) (eq .Section "areas") }}
@@ -135,4 +139,5 @@
         </div>
     </section>
 </main>
+{{ end }}
 {{ end }}

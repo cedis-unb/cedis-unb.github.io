@@ -268,6 +268,20 @@ ui_indexed_publications: "Publicações indexadas"
 
 ui_rss_news: "Feed RSS de notícias"
 
+# Sala de imprensa (listagem /categories/news/)
+ui_newsroom_eyebrow: "Sala de imprensa"
+ui_newsroom_lead: "Coberturas, defesas, produtos e marcos institucionais do CEDIS — publicados semanalmente pela equipe de comunicação."
+ui_newsroom_featured_label: "Manchete"
+ui_newsroom_secondary_label: "Também em destaque"
+ui_newsroom_archive_heading: "Arquivo de notícias"
+ui_newsroom_archive_lead: "Todas as coberturas anteriores, em ordem cronológica."
+ui_newsroom_filter_topic_heading: "Filtrar por tema"
+ui_newsroom_filter_all: "Todos os temas"
+ui_newsroom_stat_total: "Notícias publicadas"
+ui_newsroom_stat_latest: "Última publicação"
+ui_newsroom_stat_this_year: "Neste ano"
+ui_newsroom_rss_cta: "Assinar RSS"
+
 # Alt text semanticos
 ui_alt_profile_photo: "Foto do perfil"
 ui_alt_product_visual: "Ilustração do produto"
