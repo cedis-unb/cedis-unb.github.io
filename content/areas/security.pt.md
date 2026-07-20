@@ -4,7 +4,7 @@ title: "Cibersegurança"
 date: 2025-09-02T01:37:18-03:00
 language: pt-br
 weight: 5
-featured_image: "../assets/images/featured/area_Cibersecurity.png"
+featured_image: "../assets/images/featured/area_Cybersecurity.png"
 summary: 'Cibersegurança consiste em um conjunto de práticas, tecnologias e metodologias voltadas para proteger sistemas, redes e dados contra acessos não autorizados, ciberataques, ameaças persistentes e falhas de segurança. Seu objetivo central é garantir a confidencialidade, a integridade e a disponibilidade da informação, especialmente em ambientes digitais cada vez mais complexos e interconectados.'
 authorimage: ../assets/images/global/author.webp
 categories:

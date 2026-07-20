@@ -28,7 +28,7 @@ DFCris é um projeto de 24 meses realizado em parceria entre o [Instituto Brasil
 O objetivo do projeto é a expansão e o aprimoramento do modelo Cris para o ambiente de pesquisa do Distrito Federal (DF).
 ## Membros
 ### Pesquisadores
-Prof. {{< link-interno "/people/sergio_freitas" "andre_lanna" >}} (CEDIS)<br>
+Prof. {{< link-interno "/people/andre_lanna" "André Lanna" >}} (CEDIS)<br>
 Prof. {{< link-interno "/people/sergio_freitas" "Sergio Freitas" >}} (CEDIS)
 ### Estudantes de Pesquisa de Graduação
 {{< link-interno "/people/collaborators/andre_silva" "André Corrêa da Silva" >}}. Graduando em Engenharia de Software, Universidade de Brasília, Orientador: Prof. Sergio A. A. Freitas.<br>
