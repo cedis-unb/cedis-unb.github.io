@@ -1,7 +1,7 @@
 {{ define "main" }}
 {{ $isPortuguese := eq .Site.Language.Lang "pt" }}
 {{ $summary := .Params.summary | default .Description }}
-{{ $catalogURL := "categories/products/" | relLangURL }}
+{{ $catalogURL := "products/" | relLangURL }}
 {{ $dateLabel := cond $isPortuguese "Lançamento" "Launch" }}
 {{ $tagsLabel := cond $isPortuguese "Temas" "Themes" }}
 {{ $sectionsLabel := cond $isPortuguese "Navegação" "Sections" }}

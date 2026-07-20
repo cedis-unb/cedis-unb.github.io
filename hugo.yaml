@@ -191,7 +191,7 @@ languages:
           pre: products
           name: "Produtos digitais"
           post: "Plataformas, aplicativos e sistemas"
-          url: /categories/products/
+          url: /products/
           weight: 20
         - identifier: pp-parceiros
           pre: people
@@ -252,8 +252,8 @@ languages:
       participe:
         - identifier: part-oportunidades
           pre: comments
-          name: "Oportunidades abertas"
-          post: "Editais, bolsas e vagas"
+          name: "Oportunidades"
+          post: "Chamadas encerradas e novas seleções quando houver"
           url: /oportunidades/
           weight: 10
         - identifier: part-trilhas
@@ -488,7 +488,7 @@ languages:
           pre: products
           name: "Digital products"
           post: "Platforms, applications and systems"
-          url: /categories/products/
+          url: /products/
           weight: 20
         - identifier: pp-parceiros
           pre: people
@@ -549,8 +549,8 @@ languages:
       participe:
         - identifier: part-oportunidades
           pre: comments
-          name: "Open opportunities"
-          post: "Calls, scholarships and openings"
+          name: "Opportunities"
+          post: "Closed calls and future selections when available"
           url: /oportunidades/
           weight: 10
         - identifier: part-trilhas
@@ -652,7 +652,7 @@ privacy:
   googleAnalytics:
     anonymizeIP: true
     disable: false
-    respectDoNotTrack: false
+    respectDoNotTrack: true
     useSessionStorage: false
   instagram:
     disable: false
