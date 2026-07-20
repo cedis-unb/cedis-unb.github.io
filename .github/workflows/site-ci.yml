@@ -80,6 +80,26 @@ jobs:
       - name: Build Pagefind index
         run: npx --no-install pagefind --site public
 
+      - name: Start local audit server
+        run: python3 -m http.server 4173 --directory public > /tmp/cedis-site-ci-http.log 2>&1 &
+
+      - name: Wait for local audit server
+        run: |
+          for i in {1..30}; do
+            curl -fsS http://127.0.0.1:4173/ >/dev/null && exit 0
+            sleep 1
+          done
+          cat /tmp/cedis-site-ci-http.log || true
+          exit 1
+
+      - name: Accessibility audit (pa11y-ci)
+        run: npx --no-install pa11y-ci --config .pa11yci.json --json > pa11y-report.json
+        env:
+          PUPPETEER_EXECUTABLE_PATH: /usr/bin/google-chrome
+
+      - name: Lighthouse CI
+        run: npx --no-install lhci autorun --config=lighthouserc.json
+
       - name: Install lychee (link checker)
         uses: lycheeverse/lychee-action@v2
         with:
@@ -100,6 +120,24 @@ jobs:
         with:
           name: lychee-report
           path: lychee-report.md
+          if-no-files-found: ignore
+          retention-days: 14
+
+      - name: Upload pa11y report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pa11y-report
+          path: pa11y-report.json
+          if-no-files-found: ignore
+          retention-days: 14
+
+      - name: Upload Lighthouse report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: lhci-report
+          path: lhci-report
           if-no-files-found: ignore
           retention-days: 14
 
