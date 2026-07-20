@@ -8,8 +8,11 @@
     {{ $termKey = lower . }}
 {{ end }}
 {{ $isNewsTerm := and $isTerm (eq .Data.Plural "categories") (eq $termKey "news") }}
+{{ $isProductsTerm := and $isTerm (eq .Data.Plural "categories") (eq $termKey "products") }}
 {{ if $isNewsTerm }}
     {{ partial "news-term.html" . }}
+{{ else if $isProductsTerm }}
+    {{ partial "products-catalog.html" . }}
 {{ else }}
 {{ $isProjectsList := and (not $isTaxonomy) (not $isTerm) (eq .Section "projects") }}
 {{ $isProductsList := and (not $isTaxonomy) (not $isTerm) (eq .Section "products") }}
@@ -17,7 +20,6 @@
 {{ $isPeopleList := and (not $isTaxonomy) (not $isTerm) (eq .Section "people") }}
 {{ $isResearchersList := and $isTerm (eq .Data.Plural "categories") (eq $termKey "researcher") }}
 {{ $isAreasTerm := and $isTerm (eq .Data.Plural "categories") (eq $termKey "knowledge_areas") }}
-{{ $isProductsTerm := and $isTerm (eq .Data.Plural "categories") (eq $termKey "products") }}
 {{ $isPeopleTerm := and $isTerm (eq .Data.Plural "categories") (eq $termKey "people") }}
 {{ $isShowcaseList := or $isProjectsList $isProductsList $isAreasList $isPeopleList $isResearchersList $isAreasTerm $isProductsTerm $isPeopleTerm }}
 {{ if $isProjectsList }}

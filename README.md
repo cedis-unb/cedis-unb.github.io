@@ -127,7 +127,7 @@ Antes de contribuir, leia:
 - **[`PLANO-AUDITORIA-2026.md`](PLANO-AUDITORIA-2026.md)** — plano técnico de execução das 12 issues da auditoria integrada 2026 (CI, modelo de dados, publicações canônicas, i18n, a11y, LGPD).
 - **[`SECURITY.md`](SECURITY.md)** — política de reporte de vulnerabilidades.
 
-**Regra central de arquitetura de dados** (em consolidação, ver I03 do plano): relações inversas nunca são registradas à mão. Se o projeto declara seus pesquisadores, o perfil do pesquisador deriva os projetos automaticamente — não se mantém a mesma lista em dois lugares.
+**Regra central de arquitetura de dados:** relações inversas nunca são registradas à mão. Se o projeto declara seus pesquisadores, o perfil do pesquisador deriva os projetos automaticamente — não se mantém a mesma lista em dois lugares.
 
 ## Publicação
 

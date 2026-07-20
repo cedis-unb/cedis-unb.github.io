@@ -17,11 +17,15 @@
 {{- $sectionLabelKey := printf "breadcrumb_%s" $sectionKey -}}
 {{- $sectionUrl := index $sectionUrlMap $sectionKey | default (printf "/%s/" $sectionKey) -}}
 {{- $sectionLabel := i18n $sectionLabelKey | default (humanize $sectionKey) -}}
+{{- $currentLabel := $page.Title -}}
+{{- if or (eq $page.Kind "term") (eq $page.Kind "taxonomy") -}}
+  {{- $currentLabel = partial "translated-label.html" (dict "page" $page "value" $page.Title) -}}
+{{- end -}}
 
 {{- $items := slice
   (dict "url" (relLangURL "/") "label" (i18n "breadcrumb_home") "current" false)
   (dict "url" (relLangURL $sectionUrl) "label" $sectionLabel "current" false)
-  (dict "url" $page.RelPermalink "label" $page.Title "current" true)
+  (dict "url" $page.RelPermalink "label" $currentLabel "current" true)
 -}}
 
 {{- $listClass := "flex flex-wrap items-center gap-x-2 gap-y-1 text-[0.7rem] font-semibold uppercase tracking-[0.22em]" -}}
