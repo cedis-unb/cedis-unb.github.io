@@ -493,6 +493,12 @@ ui_metric_products: "digital products"
 ui_metric_products_note: "applications and tools"
 ui_metric_supervisions: "supervisions recorded"
 ui_metric_supervisions_note: "completed and ongoing"
+ui_metric_projects: "projects"
+ui_metric_projects_note: "ongoing and completed"
+
+# Footer — semantic groups
+ui_footer_explore: "Explore"
+ui_footer_institutional: "Institutional"
 ui_pulse_last_news: "Latest news"
 ui_pulse_last_pub: "Latest recorded publication"
 ui_impact_footnote: "Numbers updated automatically from the site database."
