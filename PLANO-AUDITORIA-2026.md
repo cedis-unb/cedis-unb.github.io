@@ -57,10 +57,10 @@ Rótulos usados: `crítica` `alta` `média` para prioridade; `S` `M` `L` `XL` pa
 ```
 Fase 0 — Preparação                        ✅ CONCLUÍDA   (I11, I05)
 Fase 1 — Correções + fundação CI           ✅ CONCLUÍDA   (I04, I06, I01)
-Fase 2 — Arquitetura de navegação          (2-3 sem)      I13, I15, I16
-Fase 3 — Modelo de dados canônico          (3-5 sem)      I02 → I03
+Fase 2 — Arquitetura de navegação          ✅ CONCLUÍDA   I13, I15, I16
+Fase 3 — Modelo de dados canônico          ✅ CONCLUÍDA   I02 → I03
 Fase 4 — Reestruturação de conteúdo        ✅ CONCLUÍDA   I07, I09, I14, I08
-Fase 5 — Qualidade e política              (contínuo)     I10, I12
+Fase 5 — Qualidade e política              ✅ CONCLUÍDA   I10, I12
 ```
 
 **Regras de sequenciamento:**
@@ -305,10 +305,10 @@ O plano é bem-sucedido quando:
 | I07 | ✅ | `scripts/build_publications.py`, `layouts/publications/`, `content/publications/` |
 | I08 | ✅ | `scripts/validate_i18n.py`, `.github/workflows/site-ci.yml` |
 | I09 | ✅ | `content/opportunities/`, `content/junte-se/*/`, `layouts/opportunities/` |
-| I10 | ⏳ | `lighthouserc.json`, `.pa11yci.json`, `.github/workflows/site-ci.yml` |
+| I10 | ✅ | `lighthouserc.json`, `.pa11yci.json`, `.github/workflows/site-ci.yml` |
 | I11 | ✅ | `README.md`, `package.json`, `.tool-versions` |
-| I12 | ⏳ | `hugo.yaml`, `content/privacy/`, `layouts/partials/footer.html` |
-| **I13** | ⏳ | `hugo.yaml`, `layouts/partials/header.html`, `i18n/*.yaml` |
+| I12 | ✅ | `hugo.yaml`, `content/privacy/`, `layouts/partials/head.html`, `docs-src/privacy-decisions.md` |
+| **I13** | ✅ | `hugo.yaml`, `layouts/partials/nav.html`, `i18n/*.yaml` |
 | **I14** | ✅ | `layouts/partials/related-news.html`, `layouts/{projects,products,people}/single.html` |
-| **I15** | ⏳ | `layouts/partials/footer.html`, `i18n/*.yaml` |
-| **I16** | ⏳ | `content/reconhecimentos/`, `content/infra/`, `content/indicadores/`, `content/contact/`, `content/imprensa/`, `content/privacy/`, `content/accessibility/` |
+| **I15** | ✅ | `layouts/partials/footer.html`, `i18n/*.yaml` |
+| **I16** | ✅ | `content/reconhecimentos/`, `content/infra/`, `content/indicadores/`, `content/contact/`, `content/imprensa/`, `content/privacy/`, `content/accessibility/` |

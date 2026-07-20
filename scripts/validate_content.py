@@ -335,6 +335,8 @@ def validate_content_section(section: str, schema_name: str, advisor_ids: set[st
     if not section_dir.exists():
         return results
     for md_path in sorted(section_dir.rglob("*.md")):
+        if md_path.name.startswith("_index."):
+            continue
         fm = parse_frontmatter(md_path)
         if fm is None:
             continue

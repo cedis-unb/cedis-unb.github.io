@@ -1,0 +1,30 @@
+{
+  "defaults": {
+    "standard": "WCAG2AA",
+    "timeout": 45000,
+    "wait": 750,
+    "chromeLaunchConfig": {
+      "args": [
+        "--no-sandbox",
+        "--disable-dev-shm-usage"
+      ]
+    }
+  },
+  "urls": [
+    "http://127.0.0.1:4173/",
+    "http://127.0.0.1:4173/pt/",
+    "http://127.0.0.1:4173/about/",
+    "http://127.0.0.1:4173/pt/history/",
+    "http://127.0.0.1:4173/categories/knowledge_areas/",
+    "http://127.0.0.1:4173/projects/",
+    "http://127.0.0.1:4173/pt/projects/",
+    "http://127.0.0.1:4173/products/",
+    "http://127.0.0.1:4173/pt/products/",
+    "http://127.0.0.1:4173/people/sergio_freitas/",
+    "http://127.0.0.1:4173/projects/framework_preditivo_engajamento/",
+    "http://127.0.0.1:4173/products/edutrack/",
+    "http://127.0.0.1:4173/publications/scientific/2026/2026-sergio-antonio-andrade-de-freitas-a-motivation-aware-diagnostic-instrument-for-person/",
+    "http://127.0.0.1:4173/oportunidades/",
+    "http://127.0.0.1:4173/categories/news/"
+  ]
+}

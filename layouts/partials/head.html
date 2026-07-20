@@ -8,15 +8,25 @@
 <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="theme-color" content="#ffffff">
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-ENMST48SB3"></script>
+{{ with .Site.Params.googleAnalytics }}
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    (function () {
+        var doNotTrack = navigator.doNotTrack === "1" || window.doNotTrack === "1" || navigator.msDoNotTrack === "1";
+        var globalPrivacyControl = navigator.globalPrivacyControl === true;
+        if (doNotTrack || globalPrivacyControl) return;
 
-  gtag('config', 'G-ENMST48SB3');
+        window.dataLayer = window.dataLayer || [];
+        window.gtag = window.gtag || function () { dataLayer.push(arguments); };
+        gtag("js", new Date());
+        gtag("config", "{{ . }}", { "anonymize_ip": true });
+
+        var script = document.createElement("script");
+        script.async = true;
+        script.src = "https://www.googletagmanager.com/gtag/js?id={{ . }}";
+        document.head.appendChild(script);
+    })();
 </script>
+{{ end }}
 {{ partial "meta" . }}
 {{- with index (where .AllTranslations "Language.Lang" "pt") 0 -}}
 <script>window.__cedisPtURL = {{ .RelPermalink | jsonify | safeJS }};</script>

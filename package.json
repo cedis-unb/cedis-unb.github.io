@@ -5,12 +5,14 @@
   "private": true,
   "main": "index.js",
   "devDependencies": {
+    "@lhci/cli": "^0.15.1",
     "@tailwindcss/typography": "^0.5.19",
     "alpinejs": "^3.15.11",
     "autoprefixer": "^10.4.22",
     "browserslist": "^4.28.2",
     "caniuse-lite": "^1.0.30001791",
     "concurrently": "^9.2.1",
+    "pa11y-ci": "^4.1.1",
     "postcss": "^8.5.6",
     "postcss-cli": "^11.0.1",
     "tailwindcss": "^3.4.19"
@@ -21,6 +23,8 @@
     "watch:tw": "tailwindcss -i ./assets/css/main.css -o ./assets/css/style.css --watch",
     "watch:hugo": "hugo server -d .hugo-server --disableFastRender",
     "build": "hugo --minify --cleanDestinationDir && pagefind --site docs",
+    "audit:a11y": "pa11y-ci --config .pa11yci.json",
+    "audit:lighthouse": "lhci autorun --config=lighthouserc.json",
     "test": "echo \"No automated tests yet — see PLANO-AUDITORIA-2026.md issue I01.\" && exit 0"
   },
   "repository": {
