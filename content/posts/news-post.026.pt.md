@@ -16,6 +16,11 @@ tags:
 - gamification
 - software_quality
 - software_architecture
+related_ids:
+- devdog
+- project_inovacao_digital_gamificacao
+- sergio_freitas
+- andre_lanna
 ---
 
 Brasília, 8 de julho de 2026

@@ -1,0 +1,42 @@
+---
+title: Uso do algoritmo Apriori na avaliação da motivação em uma gamificação
+date: '2019-01-01T00:00:00-03:00'
+draft: false
+language: pt
+translationKey: publication_2019_lemes_r_f_uso_do_algoritmo_apriori_na_avaliacao_da_motivacao_em_uma_gamificacao
+id: publication_2019_lemes_r_f_uso_do_algoritmo_apriori_na_avaliacao_da_motivacao_em_uma_gamificacao
+publication_index: 130
+publication_group: scientific
+publication_type: conference
+schema_type: ScholarlyArticle
+year: 2019
+authors:
+- LEMES, R. F.
+- FREITAS, S. A. A.
+authors_structured:
+- name: LEMES, R. F.
+- name: FREITAS, S. A. A.
+tags:
+- gamification
+- active_learning
+- sergio_freitas
+advisors: []
+doi_isbn: 10.5753/cbie.sbie.2019.694
+source_title: Simpósio Brasileiro de Informática na Educação (SBIE)
+publisher: ''
+location: Brasilia
+pages: ''
+volume: ''
+external_url: ''
+spotify_podcast: ''
+github_repo: ''
+zenodo_record: ''
+summary: Conference de LEMES, R. F., FREITAS, S. A. A. (2019).
+bibtex: "@inproceedings{2019-lemes-r-f-uso-do-algoritmo-apriori-na-avaliacao-da-motivacao-em-uma-gamificacao,\n\
+  \  author = {LEMES, R. F. and FREITAS, S. A. A.},\n  title = {Uso do algoritmo Apriori\
+  \ na avaliação da motivação em uma gamificação},\n  year = {2019},\n  booktitle\
+  \ = {Simpósio Brasileiro de Informática na Educação (SBIE)},\n  address = {Brasilia},\n\
+  \  doi = {10.5753/cbie.sbie.2019.694}\n}"
+aliases:
+- /publications/2019-lemes-r-f-uso-do-algoritmo-apriori-na-avaliacao-da-motivacao-em-uma-gamificacao/
+---

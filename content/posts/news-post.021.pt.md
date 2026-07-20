@@ -16,6 +16,11 @@ tags:
 - ai
 - machine_learning
 - evidentia
+related_ids:
+- evidentia
+- project_ia_dados_transformacao_digital
+- sergio_freitas
+- george_marsicano
 ---
 
 Brasília, 9 de março de 2026  

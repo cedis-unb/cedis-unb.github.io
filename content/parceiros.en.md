@@ -4,6 +4,7 @@ title: "Partners & recognitions"
 date: 2024-02-13T23:13:19-03:00
 draft: false
 language: en
+translationKey: parceiros
 url: /partners/
 layout: partners
 aliases:

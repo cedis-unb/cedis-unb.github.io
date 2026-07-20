@@ -69,6 +69,11 @@ jobs:
         env:
           CEDIS_VALIDATE_REPORT: content-validation-report.md
 
+      - name: Validate PT/EN parity
+        run: python3 scripts/validate_i18n.py
+        env:
+          CEDIS_I18N_REPORT: i18n-validation-report.md
+
       - name: Build site (Hugo)
         run: hugo --gc --minify --destination public
 
@@ -104,6 +109,15 @@ jobs:
         with:
           name: content-validation-report
           path: content-validation-report.md
+          if-no-files-found: ignore
+          retention-days: 14
+
+      - name: Upload i18n validation report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: i18n-validation-report
+          path: i18n-validation-report.md
           if-no-files-found: ignore
           retention-days: 14
 

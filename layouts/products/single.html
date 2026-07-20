@@ -204,5 +204,6 @@
       {{ end }}
     </aside>
   </section>
+  {{ partial "related-news.html" (dict "page" . "ids" (slice $productID $originProjectID) "label" (cond $isPortuguese "Últimas notícias sobre este produto" "Latest news about this product")) }}
 </article>
 {{ end }}
