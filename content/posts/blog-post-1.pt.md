@@ -2,7 +2,7 @@
 title: "Edital para seleção de bolsistas"
 date: 2023-05-12T11:10:36+08:00
 draft: false
-language: en
+language: pt
 featured_image: "../assets/images/featured/projeto_Canal Ciência.png"
 summary: Edital n. 01/2023 - Seleção de bolsistas para projeto de gamificação.
 description: Edital n. 01/2023 - Seleção de bolsistas para projeto de gamificação.
@@ -12,6 +12,11 @@ categories: Blog
 tags: 
 - project_cc
 - gamification
+related_ids:
+- edital_gamificacao_2023
+- project_cc
+- sergio_freitas
+- cristiane_ramos
 ---
 ## Edital n. 01/2023 - Seleção de bolsistas para projeto de gamificação
 

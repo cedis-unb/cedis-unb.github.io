@@ -3,6 +3,7 @@ title: "CEDIS History"
 date: 2021-12-18T11:10:36+08:00
 draft: false
 language: en
+translationKey: history
 layout: history
 description: From its origin as the Software Factory Laboratory to a center with partnerships, projects, and research platforms with visible impact.
 featured_image: "../assets/images/featured/CEDIS.png"

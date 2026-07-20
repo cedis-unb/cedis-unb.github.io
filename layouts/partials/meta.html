@@ -55,6 +55,9 @@
 <meta property="og:image" content="{{ $ogImage }}" />
 <meta property="og:image:secure_url" content="{{ $ogImageAbs }}" />
 <meta property="og:type" content="{{ $ogType }}" />
+{{- if .Params.noindex }}
+<meta name="robots" content="noindex,follow" />
+{{- end }}
 <link rel="canonical" href="{{ .Permalink }}" />
 {{- range .AllTranslations }}
 <link rel="alternate" hreflang="{{ if eq .Language.Lang "pt" }}pt-BR{{ else }}en{{ end }}" href="{{ .Permalink }}" />

@@ -16,6 +16,11 @@ tags:
 - dfcris
 - contextus
 - ai
+related_ids:
+- dfcris
+- contextus
+- sergio_freitas
+- andre_lanna
 ---
 
 Brasilia, February 19, 2026  

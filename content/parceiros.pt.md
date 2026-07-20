@@ -4,6 +4,7 @@ title: "Parceiros e reconhecimentos"
 date: 2024-02-13T23:13:19-03:00
 draft: false
 language: pt
+translationKey: parceiros
 layout: partners
 aliases:
   - /reconhecimentos/

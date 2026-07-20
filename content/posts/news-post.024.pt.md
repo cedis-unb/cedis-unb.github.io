@@ -16,6 +16,10 @@ tags:
 - gamification
 - active_learning
 - social_software
+related_ids:
+- atloria
+- project_inovacao_digital_gamificacao
+- sergio_freitas
 ---
 
 Brasília, 7 de julho de 2026

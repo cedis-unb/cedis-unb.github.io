@@ -1,0 +1,42 @@
+---
+title: Detection of fake news related to COVID-19 in Brazil
+date: '2023-01-01T00:00:00-03:00'
+draft: false
+language: en
+translationKey: publication_2023_francisca_de_fatima_araujo_lucena_deteccao_de_fake_news_relacionadas_a_covid_19_no_br
+id: publication_2023_francisca_de_fatima_araujo_lucena_deteccao_de_fake_news_relacionadas_a_covid_19_no_br
+publication_index: 267
+publication_group: tcc
+publication_type: tcc
+schema_type: Thesis
+year: 2023
+authors:
+- Francisca de Fátima Araújo Lucena
+- Mariana Guedes da Silva
+authors_structured:
+- name: Francisca de Fátima Araújo Lucena
+  id: francisca_de_fatima_araujo_lucena
+- name: Mariana Guedes da Silva
+  id: mariana_guedes_da_silva
+tags:
+- ai
+advisors:
+- daniel_sundfeld
+doi_isbn: ''
+source_title: ''
+publisher: Instituto Federal de Brasília
+location: ''
+pages: ''
+volume: ''
+external_url: ''
+spotify_podcast: ''
+github_repo: ''
+zenodo_record: ''
+summary: Tcc by Francisca de Fátima Araújo Lucena, Mariana Guedes da Silva (2023).
+bibtex: "@mastersthesis{2023-francisca-de-fatima-araujo-lucena-deteccao-de-fake-news-relacionadas-a-covid-19-no-br,\n\
+  \  author = {Francisca de Fátima Araújo Lucena and Mariana Guedes da Silva},\n \
+  \ title = {Detection of fake news related to COVID-19 in Brazil},\n  year = {2023},\n\
+  \  publisher = {Instituto Federal de Brasília}\n}"
+aliases:
+- /publications/2023-francisca-de-fatima-araujo-lucena-deteccao-de-fake-news-relacionadas-a-covid-19-no-br/
+---

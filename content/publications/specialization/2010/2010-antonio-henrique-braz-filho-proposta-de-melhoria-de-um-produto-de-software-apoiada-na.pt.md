@@ -1,0 +1,39 @@
+---
+title: Proposta de melhoria de um produto de software apoiada na avaliação de características
+  de qualidade
+date: '2010-01-01T00:00:00-03:00'
+draft: false
+language: pt
+translationKey: publication_2010_antonio_henrique_braz_filho_proposta_de_melhoria_de_um_produto_de_software_apoiada_na
+id: publication_2010_antonio_henrique_braz_filho_proposta_de_melhoria_de_um_produto_de_software_apoiada_na
+publication_index: 299
+publication_group: specialization
+publication_type: specialization
+schema_type: Thesis
+year: 2010
+authors:
+- Antônio Henrique Braz Filho
+authors_structured:
+- name: Antônio Henrique Braz Filho
+tags:
+- software_quality
+advisors:
+- cristiane_ramos
+doi_isbn: ''
+source_title: ''
+publisher: Universidade Católica de Brasília
+location: ''
+pages: ''
+volume: ''
+external_url: ''
+spotify_podcast: ''
+github_repo: ''
+zenodo_record: ''
+summary: Specialization de Antônio Henrique Braz Filho (2010).
+bibtex: "@mastersthesis{2010-antonio-henrique-braz-filho-proposta-de-melhoria-de-um-produto-de-software-apoiada-na,\n\
+  \  author = {Antônio Henrique Braz Filho},\n  title = {Proposta de melhoria de um\
+  \ produto de software apoiada na avaliação de características de qualidade},\n \
+  \ year = {2010},\n  publisher = {Universidade Católica de Brasília}\n}"
+aliases:
+- /publications/2010-antonio-henrique-braz-filho-proposta-de-melhoria-de-um-produto-de-software-apoiada-na/
+---

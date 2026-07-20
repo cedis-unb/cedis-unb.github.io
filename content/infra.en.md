@@ -3,6 +3,7 @@ title: "CEDIS Infrastructure"
 date: 2021-12-18T11:10:36+08:00
 draft: false
 language: en
+translationKey: infra
 layout: infrastructure
 description: Spaces, facilities, and computing resources available to support CEDIS research, meetings, and development activities.
 featured_image: "../assets/images/pages/conteiner-cedis.png"

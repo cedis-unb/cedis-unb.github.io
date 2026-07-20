@@ -2,7 +2,8 @@
 title: Contato
 date: 2025-05-03T03:10:36.000Z
 draft: false
-language: pt 
+language: pt
+translationKey: contact
 description: Informações de contato do CEDIS incluindo endereço, email e links de redes sociais.
 ---
 
