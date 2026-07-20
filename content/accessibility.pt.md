@@ -21,13 +21,12 @@ O CEDIS trabalha para que o conteúdo deste site seja utilizável por pessoas co
 - Estrutura semântica com hierarquia adequada de títulos.
 - Suporte a redução de movimento (`prefers-reduced-motion`).
 
-## Em consolidação (issue I10)
+## Validação contínua
 
-- Validação automatizada com axe/Pa11y integrada ao CI.
-- Auditoria com Lighthouse (meta: score ≥ 90).
-- Testes com leitor de tela em fluxos críticos.
-- Verificação de contraste no modo escuro em todas as combinações.
-- Comportamento com zoom de 200% e 400%.
+- Validação automatizada com Pa11y integrada ao CI para páginas críticas.
+- Auditoria com Lighthouse CI, com metas mínimas de acessibilidade, SEO e boas práticas em 90 pontos.
+- Relatórios de acessibilidade e Lighthouse anexados aos artefatos do workflow.
+- Revisões manuais complementares em fluxos críticos com leitor de tela, navegação por teclado, modo escuro e zoom de 200% e 400%.
 
 ## Reportar uma barreira
 

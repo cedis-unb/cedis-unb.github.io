@@ -21,13 +21,12 @@ CEDIS works to make this site usable by people with different types of disabilit
 - Semantic structure with proper heading hierarchy.
 - Support for reduced motion (`prefers-reduced-motion`).
 
-## Under consolidation (issue I10)
+## Continuous validation
 
-- Automated validation with axe/Pa11y integrated into CI.
-- Lighthouse audit (target: score ≥ 90).
-- Screen reader testing on critical flows.
-- Dark mode contrast verification across all combinations.
-- Behavior with 200% and 400% zoom.
+- Automated validation with Pa11y integrated into CI for critical pages.
+- Lighthouse CI audit with minimum targets of 90 points for accessibility, SEO, and best practices.
+- Accessibility and Lighthouse reports attached as workflow artifacts.
+- Complementary manual reviews on critical flows with screen readers, keyboard navigation, dark mode, and 200% and 400% zoom.
 
 ## Report a barrier
 
