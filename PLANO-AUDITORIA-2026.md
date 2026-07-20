@@ -68,7 +68,7 @@ Fase 5 — Qualidade e política              ✅ CONCLUÍDA   I10, I12
 - I02 é pré-requisito de I03, I07, I09 e I14 (relações estruturadas dependem de schema).
 - I13 depende de I16 (estrutura de páginas institucionais precisa existir antes do menu apontar para elas).
 - I01 é pré-requisito de I10.
-- Fase 2 pode começar com placeholders enquanto Fase 3 amadurece — o menu não precisa esperar o modelo de dados.
+- Fase 2 podia começar com conteúdo mínimo enquanto Fase 3 amadurecia — o menu não precisava esperar o modelo de dados.
 
 ---
 
@@ -105,7 +105,7 @@ Concluída em `9756046cf` e commits anteriores.
 - **Prioridade:** crítica · **Esforço:** M · **Depende de:** I16 (páginas-alvo devem existir; podem ser stubs)
 - **Precondições:**
   1. Confirmar rota para cada sub-item (algumas já existem: `/history/`, `/parceiros/`, `/categories/knowledge_areas/`, `/people/`, `/projects/`, `/products/`, `/publications/`, `/oportunidades/`, `/junte-se/`, `/infra/`).
-  2. Stubs criados em I16 para páginas ainda inexistentes.
+  2. Páginas-base criadas em I16 para todos os destinos do menu.
 - **Entregáveis:**
   1. Reescrever `hugo.yaml` bloco `menu.main` para **6 itens** (PT e EN):
      `Sobre · Pesquisa · Projetos e produtos · Pessoas · Publicações · Participe`.
@@ -129,14 +129,14 @@ Concluída em `9756046cf` e commits anteriores.
 
 ### I16 — Páginas institucionais estruturantes
 - **Prioridade:** alta · **Esforço:** M · **Depende de:** —
-- **Precondições:** decidir conteúdo mínimo de cada página (mesmo que placeholder de curto prazo).
+- **Precondições:** decidir conteúdo mínimo publicável de cada página.
 - **Entregáveis:**
   1. **Reconhecimentos** — `content/reconhecimentos/index.{pt,en}.md`: página que agrega prêmios e menções honrosas do CEDIS (dados já dispersos em `content/posts/news-post.002,013,017,019.*.md` e outros). Renderizada com título, ano, contexto, link para a notícia original.
   2. **Infraestrutura** — expandir `content/infra/index.{pt,en}.md` (existe hoje) com blocos de servidores, laboratórios físicos, licenças de software, serviços em nuvem.
   3. **Indicadores** — `content/indicadores/index.{pt,en}.md`: página pública com números-síntese (anos, pesquisadores, publicações, defesas, produtos, registros). Reutilizar métricas já geradas em `layouts/_default/history.html`.
   4. **Contato** — normalizar `content/contact/index.{pt,en}.md` (existe hoje) com endereço postal, coordenação, e-mail institucional, mapa.
   5. **Imprensa** — `content/imprensa/index.{pt,en}.md`: guia para jornalistas (kit de imprensa, releases, contato, últimas notícias).
-  6. **Política de privacidade** e **Acessibilidade** — stubs em `content/privacy/index.{pt,en}.md` e `content/accessibility/index.{pt,en}.md` (conteúdo detalhado fica com I12 e I10 respectivamente).
+  6. **Política de privacidade** e **Acessibilidade** — páginas-base em `content/privacy/index.{pt,en}.md` e `content/accessibility/index.{pt,en}.md`, posteriormente detalhadas nas fases de política e qualidade.
 - **Verificação:** cada URL responde 200 em PT e EN; título e descrição adequados para SEO; links no menu (I13) e rodapé (I15) resolvem.
 - **Arquivos:** `content/reconhecimentos/`, `content/infra/`, `content/indicadores/`, `content/contact/`, `content/imprensa/`, `content/privacy/`, `content/accessibility/`.
 
@@ -237,7 +237,7 @@ Concluída em julho/2026 com geração canônica de publicações, oportunidades
 ### I12 — Privacidade e uso do Analytics
 - **Prioridade:** alta · **Esforço:** M · **Depende de:** orientação institucional UnB/LGPD
 - **Entregáveis:**
-  1. Página de política de privacidade em `content/privacy/` (stub criado em I16, agora expandido) cobrindo finalidade, retenção, controlador, contato do encarregado.
+  1. Página de política de privacidade em `content/privacy/` cobrindo finalidade, retenção, controlador, contato do encarregado.
   2. Ativar `privacy.googleAnalytics.respectDoNotTrack: true` em `hugo.yaml`.
   3. Decisão registrada em `docs-src/privacy-decisions.md`: se GA é carregado antes ou depois de consentimento, se GPC é honrado, se há banner.
   4. Inventário de formulários e integrações externas com dado pessoal.
