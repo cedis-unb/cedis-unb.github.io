@@ -61,6 +61,14 @@ jobs:
       - name: Install Node dependencies
         run: npm ci
 
+      - name: Install Python validation dependencies
+        run: python3 -m pip install --upgrade pyyaml jsonschema
+
+      - name: Validate content data
+        run: python3 scripts/validate_content.py
+        env:
+          CEDIS_VALIDATE_REPORT: content-validation-report.md
+
       - name: Build site (Hugo)
         run: hugo --gc --minify --destination public
 
@@ -87,6 +95,15 @@ jobs:
         with:
           name: lychee-report
           path: lychee-report.md
+          if-no-files-found: ignore
+          retention-days: 14
+
+      - name: Upload content validation report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: content-validation-report
+          path: content-validation-report.md
           if-no-files-found: ignore
           retention-days: 14
 

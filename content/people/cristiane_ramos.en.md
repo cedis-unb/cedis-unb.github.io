@@ -50,8 +50,6 @@ nav_next: true
 ## {{< i18n "people_research_areas" >}}
 {{< postsByCategoriesTags caput="" categories="knowledge_areas,cristiane_ramos" >}}
 
-## {{< i18n "people_current_projects" >}}
-{{< postsByCategoriesTags section="projects" categories="project,cristiane_ramos" notags="inactive,closed" >}}
 
 ## {{< i18n "people_supervisory_experience" >}}
 ### {{< i18n "people_current_supervisions" >}}

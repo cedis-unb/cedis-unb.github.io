@@ -4,6 +4,15 @@ title: "Atloria"
 date: 2026-07-07T09:00:00-03:00
 language: en
 product_language: pt
+id: atloria
+status: active
+areas:
+- gamification
+- active_learning
+- social_software
+responsible:
+- sergio_freitas
+publications: []
 weight: 6
 featured_image: "../assets/images/featured/atloria-logo.png"
 summary: Android mobile app developed as a bachelor's thesis with academic support from CEDIS for teaching data structures through augmented reality and gamification, featuring themed rooms, mini missions, and an achievement passport.

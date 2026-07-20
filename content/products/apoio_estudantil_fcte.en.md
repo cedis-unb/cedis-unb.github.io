@@ -4,6 +4,15 @@ title: "FCTE Student Support"
 date: 2025-12-31T09:00:00-03:00
 language: en
 product_language: pt
+id: apoio_estudantil_fcte
+status: active
+areas:
+- ai
+- education
+- digital_transformation
+responsible:
+- george_marsicano
+publications: []
 weight: 33
 featured_image: "../assets/images/featured/projeto_Transformação Digital.png"
 summary: 2025 technological product for centralizing administrative information to support student development at FCTE, using a chatbot and artificial intelligence.

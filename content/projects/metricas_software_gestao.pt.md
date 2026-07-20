@@ -6,6 +6,15 @@ language: pt
 status: closed
 start_date: 2002-01-01
 end_date: 2005-12-31
+id: project_metricas_software
+researchers:
+- cristiane_ramos
+areas:
+- software_quality
+partners: []
+funding_agencies: []
+products: []
+publications: []
 summary: "Projeto encerrado sobre uso de métricas de software como suporte à gestão em organizações."
 authorimage: ../assets/images/global/author.webp
 categories:

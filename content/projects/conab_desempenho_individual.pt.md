@@ -6,6 +6,16 @@ language: pt
 status: closed
 start_date: 2016-01-01
 end_date: 2017-12-31
+id: project_conab_desempenho
+researchers:
+- ricardo_ajax
+areas:
+- software_quality
+- digital_transformation
+partners: []
+funding_agencies: []
+products: []
+publications: []
 summary: "Projeto encerrado de pesquisa e desenvolvimento do modelo de gestão do desempenho individual da CONAB."
 authorimage: ../assets/images/global/author.webp
 categories:

@@ -10,8 +10,12 @@
 {{ $productLabel := cond $isPortuguese "Produto digital" "Digital product" }}
 {{ $detailsLabel := cond $isPortuguese "Visão rápida" "At a glance" }}
 {{ $languageLabel := cond $isPortuguese "Idioma do produto" "Product language" }}
+{{ $originProjectsLabel := cond $isPortuguese "Projeto de origem" "Origin project" }}
+{{ $originProjectsEmptyLabel := cond $isPortuguese "Nenhum projeto de origem mapeado." "No origin project mapped." }}
 {{ $summaryLabel := cond $isPortuguese "Resumo" "Summary" }}
 {{ $dateFormat := cond $isPortuguese "02/01/2006" "02 Jan 2006" }}
+{{ $productID := .Params.id | default .File.TranslationBaseName }}
+{{ $originProjectID := .Params.project | default "" }}
 {{ $productLanguageCode := .Params.product_language | default .Site.Language.Lang }}
 {{ $productLanguageDisplay := $productLanguageCode | upper }}
 {{ if eq $productLanguageCode "pt" }}
@@ -53,6 +57,19 @@
 {{ $primaryLink := "" }}
 {{ if gt (len $externalLinks) 0 }}
   {{ $primaryLink = replaceRE `^href="|"$` "" (index $externalLinks 0) }}
+{{ end }}
+{{ $originProjects := slice }}
+{{ $seenProjectPermalinks := dict }}
+{{ range .Site.RegularPages.ByTitle }}
+  {{ if and (eq .Section "projects") (eq .Lang $.Site.Language.Lang) }}
+    {{ $projectID := .Params.id | default .File.TranslationBaseName }}
+    {{ $matchesDirect := and $originProjectID (eq $projectID $originProjectID) }}
+    {{ $matchesInverse := and .Params.products (in .Params.products $productID) }}
+    {{ if and (or $matchesDirect $matchesInverse) (not (isset $seenProjectPermalinks .RelPermalink)) }}
+      {{ $seenProjectPermalinks = merge $seenProjectPermalinks (dict .RelPermalink true) }}
+      {{ $originProjects = $originProjects | append . }}
+    {{ end }}
+  {{ end }}
 {{ end }}
 
 <article class="bg-[linear-gradient(180deg,_#fffaf1_0%,_#f8fafc_24%,_#f8fafc_100%)] text-slate-900 dark:bg-gray-800 dark:text-white">
@@ -145,6 +162,24 @@
           {{ end }}
         </dl>
       </div>
+
+      {{ if gt (len $originProjects) 0 }}
+      <div class="rounded-[1.75rem] border border-slate-200/80 bg-white p-6 shadow-[0_18px_48px_rgba(15,23,42,0.08)] dark:border-white/10 dark:bg-slate-900/40 dark:shadow-[0_18px_48px_rgba(0,0,0,0.22)]">
+        <div class="text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-slate-500 dark:text-slate-400">{{ $originProjectsLabel }}</div>
+        <div class="mt-5 space-y-2 text-sm">
+          {{ range $originProjects }}
+          <a href="{{ .RelPermalink }}" class="block rounded-xl border border-slate-200/80 bg-slate-50 px-4 py-3 font-semibold text-slate-900 transition-colors hover:border-slate-300 hover:bg-white dark:border-white/10 dark:bg-white/5 dark:text-white dark:hover:bg-white/10">
+            {{ .Title }}
+          </a>
+          {{ end }}
+        </div>
+      </div>
+      {{ else }}
+      <div class="rounded-[1.75rem] border border-slate-200/80 bg-white p-6 shadow-[0_18px_48px_rgba(15,23,42,0.08)] dark:border-white/10 dark:bg-slate-900/40 dark:shadow-[0_18px_48px_rgba(0,0,0,0.22)]">
+        <div class="text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-slate-500 dark:text-slate-400">{{ $originProjectsLabel }}</div>
+        <p class="mt-4 text-sm leading-6 text-slate-600 dark:text-slate-300">{{ $originProjectsEmptyLabel }}</p>
+      </div>
+      {{ end }}
 
       {{ with .Params.tags }}
       <div class="rounded-[1.75rem] border border-slate-200/80 bg-white p-6 shadow-[0_18px_48px_rgba(15,23,42,0.08)] dark:border-white/10 dark:bg-slate-900/40 dark:shadow-[0_18px_48px_rgba(0,0,0,0.22)]">

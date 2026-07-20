@@ -54,8 +54,6 @@ nav_next: true
 - Publicação do questionário TPA para avaliação de antecedentes de processos de trabalho em equipe em desenvolvimento de software, na revista *Empirical Software Engineering* (2020).
 - Experiência em iniciativas de transformação digital de serviços públicos, design de soluções colaborativas e estudos sobre aspectos humanos de equipes de software.
 
-## {{< i18n "people_current_projects" >}}
-{{< postsByCategoriesTags section="projects" categories="project,george_marsicano" notags="inactive,closed" >}}
 
 ## {{< i18n "people_supervisory_experience" >}}
 ### {{< i18n "people_current_supervisions" >}}

@@ -5,6 +5,16 @@ date: 2018-01-01T00:00:00-03:00
 language: pt
 status: closed
 start_date: 2018-01-01
+id: project_lfs
+researchers:
+- andre_lanna
+areas:
+- software_architecture
+- software_product_line
+partners: []
+funding_agencies: []
+products: []
+publications: []
 summary: "Projeto de pesquisa e desenvolvimento iniciado em 2018 na Universidade de Brasília, voltado à integração entre formação, pesquisa aplicada e desenvolvimento de software."
 authorimage: ../assets/images/global/author.webp
 categories:

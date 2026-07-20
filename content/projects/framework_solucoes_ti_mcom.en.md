@@ -6,6 +6,18 @@ language: en
 status: closed
 start_date: 2015-01-01
 end_date: 2018-12-31
+id: project_framework_mcom
+researchers:
+- cristiane_ramos
+- ricardo_ajax
+areas:
+- software_architecture
+- software_quality
+- digital_transformation
+partners: []
+funding_agencies: []
+products: []
+publications: []
 summary: "Closed project focused on improving an information technology solutions framework for the Ministry of Communications."
 authorimage: ../assets/images/global/author.webp
 categories:

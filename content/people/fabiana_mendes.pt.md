@@ -36,8 +36,6 @@ nav_next: true
 - Vínculo Institucional: Universidade de Brasília (UnB) desde 2011.
 - Disciplinas Ministradas: Engenharia de Software Experimental, Estruturas Matemáticas para Computação, Fundamentos de Qualidade de Software, Melhoria de Processos de Software, entre outras​​.
 
-## {{< i18n "people_current_projects" >}}
-{{< postsByCategoriesTags section="projects" categories="project,fabiana_mendes" notags="inactive,closed" >}}
 
 ## {{< i18n "people_supervisory_experience" >}}
 ### {{< i18n "people_current_supervisions" >}}

@@ -4,6 +4,16 @@ title: "SAGA"
 date: 2021-06-01T01:37:18-03:00
 language: pt
 product_language: pt
+id: saga
+status: active
+areas:
+- machine_learning
+- learning_analytics
+responsible:
+- sergio_freitas
+- cristiane_ramos
+- george_marsicano
+publications: []
 weight: 14
 featured_image: "../assets/images/featured/produto_SAGA.png"
 summary: O Sistema de Acompanhamento e Apoio à Gestão Acadêmica - SAGA é uma ferramenta desenvolvida para auxiliar gestores acadêmicos no monitoramento de indicadores de cursos de graduação.

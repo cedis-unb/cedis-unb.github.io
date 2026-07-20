@@ -46,8 +46,6 @@ nav_next: true
 ## {{< i18n "people_research_areas" >}}
 {{< postsByCategoriesTags caput="" categories="knowledge_areas,ricardo_ajax" >}}
 
-## {{< i18n "people_current_projects" >}}
-{{< postsByCategoriesTags section="projects" categories="project,ricardo_ajax" notags="inactive,closed" >}}
 
 
 ## {{< i18n "people_supervisory_experience" >}}

@@ -47,8 +47,6 @@ nav_next: true
 ## {{< i18n "people_research_areas" >}}
 {{< postsByCategoriesTags caput="" categories="knowledge_areas,daniel_sundfeld" >}}
 
-## {{< i18n "people_current_projects" >}}
-{{< postsByCategoriesTags section="projects" categories="project,daniel_sundfeld" notags="inactive,closed" >}}
 
 ## {{< i18n "people_supervisory_experience" >}}
 ### {{< i18n "people_current_supervisions" >}}

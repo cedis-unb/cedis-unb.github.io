@@ -3,8 +3,19 @@ author: CEDIS
 title: "Doarti"
 date: 2020-01-01T00:00:00-03:00
 language: en
-status: active
+status: ongoing
 start_date: 2020-01-01
+id: project_doarti
+researchers:
+- george_marsicano
+areas:
+- social_software
+- software_quality
+- verification_validation_testing
+partners: []
+funding_agencies: []
+products: []
+publications: []
 summary: "Project for a technological solution to strengthen donation processes in the Federal District."
 authorimage: ../assets/images/global/author.webp
 categories:

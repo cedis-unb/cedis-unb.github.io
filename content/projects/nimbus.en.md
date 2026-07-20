@@ -6,6 +6,15 @@ language: en
 status: closed
 start_date: 2023-01-01
 end_date: 2024-12-31
+id: project_nimbus
+researchers:
+- daniel_sundfeld
+areas:
+- hpc
+partners: []
+funding_agencies: []
+products: []
+publications: []
 summary: "Serverless cloud architecture for automatic code grading."
 authorimage: ../assets/images/global/author.webp
 categories:

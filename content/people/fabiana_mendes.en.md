@@ -36,8 +36,6 @@ nav_next: true
 - Institutional Affiliation: University of Brasília (UnB) since 2011.
 - Courses Taught: Experimental Software Engineering, Mathematical Structures for Computing, Fundamentals of Software Quality, Software Process Improvement, among others.
 
-## {{< i18n "people_current_projects" >}}
-{{< postsByCategoriesTags section="projects" categories="project,fabiana_mendes" notags="inactive,closed" >}}
 
 ## {{< i18n "people_supervisory_experience" >}}
 ### {{< i18n "people_current_supervisions" >}}

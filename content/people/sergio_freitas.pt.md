@@ -48,8 +48,6 @@ nav_next: true
 - Prêmios: Múltiplas vezes homenageado e patrono de turmas na UnB e UFES​​.
 - Publicações: Autor e coautor de diversos artigos científicos e livros, com reconhecimento em plataformas como Web of Science e SCOPUS​​.
 
-## {{< i18n "people_current_projects" >}}
-{{< postsByCategoriesTags section="projects" categories="project,sergio_freitas" notags="inactive,closed" >}}
 
 ## {{< i18n "people_supervisory_experience" >}}
 ### {{< i18n "people_current_supervisions" >}}

@@ -4,6 +4,16 @@ title: "OctaAnalysis"
 date: 2026-03-10T09:00:00-03:00
 language: en
 product_language: pt/en
+id: octaanalysis
+status: active
+areas:
+- gamification
+- learning_analytics
+responsible:
+- sergio_freitas
+- cristiane_ramos
+project: octaanalysis
+publications: []
 weight: 2
 featured_image: "../assets/images/featured/octaanalysis-dashboard.png"
 summary: Digital platform by CEDIS/UnB to support the design, management, and analysis of gamified educational and collaborative experiences with integrated analytics.

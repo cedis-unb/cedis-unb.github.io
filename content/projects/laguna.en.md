@@ -7,6 +7,15 @@ language: en
 status: closed
 start_date: 2022-01-01
 end_date: 2025-12-31
+id: project_laguna
+researchers:
+- daniel_sundfeld
+areas:
+- hpc
+partners: []
+funding_agencies: []
+products: []
+publications: []
 featured_image: "../assets/images/featured/projeto_Laguna.png"
 summary: This project aims to extend the massive processing of a data lake using a cloud architecture, utilizing Amazon Web Services (AWS) as the provider.
 authorimage: ../assets/images/global/author.webp

@@ -4,6 +4,15 @@ title: "CEDIS Deck Manager"
 date: 2026-07-16T09:00:00-03:00
 language: pt
 product_language: pt
+id: deckmanager
+status: active
+areas:
+- learning_analytics
+- active_learning
+- digital_transformation
+responsible:
+- sergio_freitas
+publications: []
 weight: 8
 featured_image: "../assets/images/featured/deckmanager-logo.png"
 summary: Plataforma do CEDIS para publicar apresentações interativas em HTML, controlar quando e para quem elas aceitam respostas e acompanhar o engajamento em tempo real, com anonimização por padrão e conformidade com a LGPD.

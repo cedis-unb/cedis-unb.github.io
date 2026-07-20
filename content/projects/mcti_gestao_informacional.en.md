@@ -3,8 +3,19 @@ author: CEDIS
 title: "Informational Management Support System for MCTI"
 date: 2026-01-01T00:00:00-03:00
 language: en
-status: active
+status: ongoing
 start_date: 2026-01-01
+id: project_mcti_gestao
+researchers:
+- daniel_sundfeld
+areas:
+- hpc
+- ai
+- machine_learning
+partners: []
+funding_agencies: []
+products: []
+publications: []
 summary: "Ongoing project focused on supporting informational management at the Ministry of Science, Technology and Innovation."
 authorimage: ../assets/images/global/author.webp
 categories:

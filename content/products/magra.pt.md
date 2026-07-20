@@ -4,6 +4,14 @@ title: "MAGRA"
 date: 2023-01-27T01:37:18-03:00
 language: pt
 product_language: pt
+id: magra
+status: active
+areas:
+- machine_learning
+- learning_analytics
+responsible:
+- sergio_freitas
+publications: []
 weight: 14
 featured_image: "../assets/images/featured/produto_MAGRA.png"
 summary: O Modelo de Análise na Graduação (MAGRA) permite a previsão de evasão em cursos de graduação presencial.

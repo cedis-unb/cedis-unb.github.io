@@ -7,6 +7,19 @@ language: en
 status: closed
 start_date: 2024-02-14
 end_date: 2026-02-13
+id: dfcris
+researchers:
+- sergio_freitas
+- andre_lanna
+areas:
+- machine_learning
+- nlp
+- ai
+partners: []
+funding_agencies: []
+products:
+- contextus
+publications: []
 featured_image: "../assets/images/featured/projeto_DFCris.png"
 summary: A research project in partnership with IBICT and funded by FAP/DF.
 authorimage: ../assets/images/global/author.webp

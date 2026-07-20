@@ -6,6 +6,16 @@ language: en
 status: closed
 start_date: 2021-01-01
 end_date: 2022-12-31
+id: project_td_2021
+researchers:
+- cristiane_ramos
+areas:
+- digital_transformation
+- software_requirements
+partners: []
+funding_agencies: []
+products: []
+publications: []
 summary: "Closed research and development project on digital transformation of Brazilian Government public services."
 authorimage: ../assets/images/global/author.webp
 categories:

@@ -6,6 +6,15 @@ language: pt
 status: closed
 start_date: 2020-01-01
 end_date: 2025-12-31
+id: project_biocloud
+researchers:
+- daniel_sundfeld
+areas:
+- hpc
+partners: []
+funding_agencies: []
+products: []
+publications: []
 summary: "Framework para execução de aplicações de biotecnologia em múltiplas plataformas da nuvem AWS."
 authorimage: ../assets/images/global/author.webp
 categories:

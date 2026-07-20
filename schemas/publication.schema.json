@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cedis.unb.br/schemas/publication.schema.json",
+  "title": "Publicação — item de data/productions.yaml::items[]",
+  "type": "object",
+  "required": ["type", "year", "title", "authors"],
+  "additionalProperties": true,
+  "properties": {
+    "type": {
+      "enum": [
+        "article",
+        "book",
+        "book chapter",
+        "book_section",
+        "conference",
+        "dissertation",
+        "phd",
+        "registro",
+        "specialization",
+        "tcc",
+        "workshop"
+      ]
+    },
+    "year": {
+      "anyOf": [
+        {"type": "integer", "minimum": 1990, "maximum": 2035},
+        {"type": "string", "pattern": "^[0-9]{4}(/[12])?$"}
+      ]
+    },
+    "title": {
+      "type": "object",
+      "required": ["pt", "en"],
+      "properties": {
+        "pt": {"type": "string", "minLength": 3},
+        "en": {"type": "string", "minLength": 3}
+      }
+    },
+    "authors": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"type": "string", "minLength": 3}
+    },
+    "advisors": {
+      "type": "array",
+      "items": {"type": "string"}
+    },
+    "tags": {
+      "type": "array",
+      "items": {"type": "string"}
+    },
+    "doi_isbn": {"type": "string"},
+    "url": {"type": ["string", "null"]}
+  }
+}

@@ -4,6 +4,17 @@ title: "Projeto Jornada IHC"
 date: 2024-03-04T18:08:50-03:00
 weight: 11
 language: pt
+id: project_jornada
+status: ongoing
+start_date: 2024-03-04
+researchers:
+- sergio_freitas
+areas:
+- gamification
+partners: []
+funding_agencies: []
+products: []
+publications: []
 featured_image: "../assets/images/featured/gamification_Jornada IHC.png"
 summary: Projeto de ensino, disciplina "Interação Humano-computador", uma inovação educacional promovida pelo CEDIS no curso de Engenharia de Software da Universidade de Brasília 
 authorimage: ../assets/images/global/author.webp

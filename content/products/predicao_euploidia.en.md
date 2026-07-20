@@ -4,6 +4,14 @@ title: "Euploidy Prediction"
 date: 2025-12-31T09:00:00-03:00
 language: en
 product_language: pt
+id: predicao_euploidia
+status: active
+areas:
+- ai
+- machine_learning
+responsible:
+- george_marsicano
+publications: []
 weight: 35
 featured_image: "../assets/images/featured/area_IA.png"
 summary: 2025 technological product applying machine learning to non-invasive prediction of euploidy in human embryos based on morphokinetic data.
