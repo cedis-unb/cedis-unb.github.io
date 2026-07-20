@@ -1,7 +1,8 @@
 {
-  "name": "TailBliss",
-  "version": "0.1.1",
-  "description": "Hugo + Alpine.js + TailwindCSS",
+  "name": "cedis-unb.github.io",
+  "version": "1.0.0",
+  "description": "Site institucional do CEDIS — Centro de Estudos, Desenvolvimento e Inovação em Software, Universidade de Brasília. Construído com Hugo, Tailwind CSS, Alpine.js e Pagefind. Baseado no tema TailBliss.",
+  "private": true,
   "main": "index.js",
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.19",
@@ -20,31 +21,29 @@
     "watch:tw": "tailwindcss -i ./assets/css/main.css -o ./assets/css/style.css --watch",
     "watch:hugo": "hugo server -d .hugo-server --disableFastRender",
     "build": "hugo --minify --cleanDestinationDir && pagefind --site docs",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"No automated tests yet — see PLANO-AUDITORIA-2026.md issue I01.\" && exit 0"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nusserstudios/tailbliss.git"
+    "url": "git+https://github.com/cedis-unb/cedis-unb.github.io.git"
   },
   "keywords": [
     "cedis",
+    "unb",
+    "universidade-de-brasilia",
+    "software-engineering",
+    "research-center",
     "hugo",
-    "tailwind",
     "tailwindcss",
     "alpinejs",
-    "minimal",
-    "responsive",
-    "light mode",
-    "dark mode",
-    "categories",
-    "tags"
+    "pagefind"
   ],
-  "author": "NusserStudios",
+  "author": "CEDIS — Centro de Estudos, Desenvolvimento e Inovação em Software (UnB)",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/nusserstudios/tailbliss/issues"
+    "url": "https://github.com/cedis-unb/cedis-unb.github.io/issues"
   },
-  "homepage": "https://github.com/nusserstudios/tailbliss",
+  "homepage": "https://cedis.unb.br/",
   "dependencies": {
     "braces": ">=3.0.3",
     "cross-spawn": "^7.0.6",
