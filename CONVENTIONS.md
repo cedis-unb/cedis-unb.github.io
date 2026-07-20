@@ -29,6 +29,25 @@ Não crie arquivos como `people-old.yaml`, `productions copy.yaml`, ou
 sufixos `-v2`, `-backup`, `-errado`. Se precisar experimentar uma
 alteração de estrutura, use uma branch e um PR.
 
+### Identificadores de pessoa: slug vs. tag/advisor
+
+O identificador usado em `categories`, `tags` e `advisors` deve **casar
+com o slug da URL do perfil** (`content/people/<slug>.md`). Exceção
+transitória documentada:
+
+- **Daniel Sundfeld Lima** — slug de URL é `daniel_lima` (nome do
+  arquivo), mas a *tag* e o *advisor* usam `daniel_sundfeld` em todo o
+  conteúdo. O perfil declara `aliases: [/people/daniel_sundfeld/]` para
+  manter compatibilidade de URL. Toda referência agregadora (shortcodes
+  `filterPeople`, `publications`, `postsByCategoriesTags`) deve
+  continuar usando `daniel_sundfeld` até que I03 do
+  [`PLANO-AUDITORIA-2026.md`](PLANO-AUDITORIA-2026.md) unifique o
+  modelo. Ao adicionar novo conteúdo relacionado a esse pesquisador,
+  reproduza esse padrão.
+
+Novos pesquisadores devem usar o mesmo string tanto como slug do
+arquivo quanto como identificador em tags/advisors — sem exceções.
+
 ---
 
 ## 1. Atribuição institucional

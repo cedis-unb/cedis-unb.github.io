@@ -4,7 +4,7 @@ date: 2025-02-18T00:00:00-03:00
 draft: false
 weight: 500
 language: en
-featured_image: "../assets/images/featured/area_Cibersecurity.png"
+featured_image: "../assets/images/featured/area_Cybersecurity.png"
 summary: 'Sandro Leite Furtado defended at UnB’s Applied Computing graduate program a dissertation identifying and evaluating additional security factors for the gov.br identity, implementing and testing Risk-Based Authentication (RBA) as a complementary layer.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

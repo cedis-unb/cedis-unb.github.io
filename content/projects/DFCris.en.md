@@ -28,7 +28,7 @@ DFCris is a 24-month project carried out in partnership between the [Brazilian I
 The project's goal is the expansion and enhancement of the Cris model for the research environment of the Federal District (DF).
 ## Members
 ### Researchers
-Prof. {{< link-interno "/people/sergio_freitas" "andre_lanna" >}} (CEDIS)<br>
+Prof. {{< link-interno "/people/andre_lanna" "André Lanna" >}} (CEDIS)<br>
 Prof. {{< link-interno "/people/sergio_freitas" "Sergio Freitas" >}} (CEDIS)
 ### Undergraduate Research Students
 {{< link-interno "/people/collaborators/andre_silva" "André Corrêa da Silva" >}}. Undergraduate in Software Engineering, University of Brasília, Advisor: Prof. Sergio A. A. Freitas.<br>
