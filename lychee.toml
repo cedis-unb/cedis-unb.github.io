@@ -1,0 +1,50 @@
+# Configuração do lychee para o CI do site CEDIS.
+# Docs: https://lychee.cli.rs/usage/config/
+
+# Timeout por requisição HTTP (segundos).
+timeout = 20
+
+# Retry
+max_retries = 2
+retry_wait_time = 2
+
+# Ser gentil com hosts externos.
+max_concurrency = 8
+
+# Cache local para reduzir tráfego entre execuções.
+cache = true
+max_cache_age = "1d"
+
+# Códigos aceitos (429 = rate limit, permitido para não quebrar CI por
+# rate-limit transitório).
+accept = [200, 201, 202, 204, 206, 301, 302, 304, 307, 308, 429]
+
+# Exclusões — hosts hostis a bots ou que exigem autenticação e que
+# tratamos como "supomos que estão vivos".
+exclude = [
+  # O próprio domínio: canonical e hreflang são absolutos e apontam para
+  # cedis.unb.br. Sem excluir, um PR que introduz página nova sempre
+  # falha (a página ainda não existe em produção). Links internos
+  # relativos (href="/pt/foo") continuam sendo verificados.
+  "^https?://cedis\\.unb\\.br/",
+
+  # Redes sociais e mecanismos anti-bot.
+  "^https?://(www\\.)?linkedin\\.com/",
+  "^https?://scholar\\.google\\.com/",
+  "^https?://(www\\.)?facebook\\.com/",
+  "^https?://(www\\.)?instagram\\.com/",
+  "^https?://(www\\.)?twitter\\.com/",
+  "^https?://(www\\.)?x\\.com/",
+
+  # Repositórios acadêmicos brasileiros com renderização lenta ou
+  # anti-bot agressivo — podem passar a ser incluídos gradualmente.
+  "^https?://www\\.bdm\\.unb\\.br/",
+  "^https?://repositorio\\.unb\\.br/",
+  "^https?://(www\\.)?bdtd\\.ibict\\.br/",
+]
+
+# Ignora URLs com padrões conhecidos que não são de fato links.
+exclude_mail = true
+
+# Não checa localhost / IPs privados / .local
+exclude_all_private = true
