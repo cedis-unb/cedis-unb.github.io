@@ -66,6 +66,22 @@ STRICT = os.environ.get("CEDIS_VALIDATE_STRICT", "").lower() in ("1", "true", "y
 REPORT_PATH = os.environ.get("CEDIS_VALIDATE_REPORT")
 PROJECT_STATUSES = {"ongoing", "closed"}
 PRODUCT_STATUSES = {"active", "prototype", "archived", "beta"}
+EXCLUDED_PROJECT_IDS = {
+    # Projetos externos ou institucionais de terceiros em que integrantes do
+    # CEDIS participaram, mas que não devem compor o rol de projetos CEDIS.
+    "project_app_parkinson",
+    "project_automacao_servicos",
+    "project_biocloud",
+    "project_capacidade_produtiva",
+    "project_cloud_iot",
+    "project_conab_desempenho",
+    "project_framework_mcom",
+    "project_hase",
+    "project_human_factors_cybersecurity",
+    "project_metricas_software",
+    "project_td",
+    "project_td_2021",
+}
 STRUCTURAL_TAGS = {
     "active",
     "inactive",
@@ -298,6 +314,8 @@ def validate_data_projects(projects_data: dict, person_ids: set[str]) -> None:
             continue
         pid = project.get("id", "<no-id>")
         location = f"data/projects.yaml::{pid}"
+        if pid in EXCLUDED_PROJECT_IDS:
+            error("projects", location, "projeto excluído do rol CEDIS não deve aparecer em data/projects.yaml")
         if pid in seen:
             error("projects", location, "id duplicado")
         seen.add(pid)
@@ -370,6 +388,8 @@ def validate_project_pages(
     for path, fm in project_entries:
         rel = path.relative_to(ROOT).as_posix()
         pid = project_id_from_page(path, fm, project_ids)
+        if pid in EXCLUDED_PROJECT_IDS:
+            error("projects", rel, "projeto excluído do rol CEDIS não deve existir em content/projects")
         lang = fm.get("language")
         by_lang[pid].add(str(lang))
         if fm.get("id") != pid:
@@ -414,6 +434,8 @@ def validate_product_pages(
         if status not in PRODUCT_STATUSES:
             warn("enum", rel, f"status de produto inválido: '{status}'")
         project_id = fm.get("project")
+        if project_id in EXCLUDED_PROJECT_IDS:
+            error("xref", rel, f"project '{project_id}' foi excluído do rol CEDIS")
         if project_id and project_id not in project_ids:
             warn("xref", rel, f"project '{project_id}' não existe em content/projects")
         for researcher_id in as_list(fm.get("responsible")):
@@ -446,6 +468,8 @@ def validate_opportunity_pages(
         if not parse_iso_date(fm.get("deadline")):
             warn("date", rel, "deadline ausente ou inválido")
         project_id = fm.get("project")
+        if project_id in EXCLUDED_PROJECT_IDS:
+            error("xref", rel, f"project '{project_id}' foi excluído do rol CEDIS")
         if project_id and project_id not in project_ids:
             warn("xref", rel, f"project '{project_id}' não existe em content/projects")
         for responsible_id in as_list(fm.get("responsible")):
@@ -511,6 +535,25 @@ def validate_translation_keys(all_frontmatters: list[tuple[Path, dict]]) -> None
         if "en" not in langs:
             for path, _ in entries:
                 warn("i18n", str(path.relative_to(ROOT)), f"translationKey '{key}' sem versão en")
+
+
+def validate_excluded_project_references() -> None:
+    """Bloqueia reintrodução de projetos externos no rol CEDIS."""
+    fields = ("id", "project")
+    list_fields = ("categories", "tags", "related_ids", "projects")
+    for md_path in sorted(CONTENT_DIR.rglob("*.md")):
+        fm = parse_frontmatter(md_path)
+        if fm is None:
+            continue
+        rel = md_path.relative_to(ROOT).as_posix()
+        for field in fields:
+            value = fm.get(field)
+            if value in EXCLUDED_PROJECT_IDS:
+                error("projects", rel, f"{field} referencia projeto excluído do rol CEDIS: '{value}'")
+        for field in list_fields:
+            for value in as_list(fm.get(field)):
+                if value in EXCLUDED_PROJECT_IDS:
+                    error("projects", rel, f"{field} contém projeto excluído do rol CEDIS: '{value}'")
 
 
 def write_report() -> None:
@@ -597,6 +640,7 @@ def main() -> int:
             all_fms.append((md_path, fm))
 
     validate_translation_keys(all_fms)
+    validate_excluded_project_references()
 
     # Relatório
     errors = [i for i in ISSUES if i.severity == "error"]

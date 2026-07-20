@@ -12,7 +12,9 @@ areas:
 - active_learning
 responsible:
 - sergio_freitas
-publications: []
+project: project_framework_preditivo_engajamento
+publications:
+- publication_2026_sergio_antonio_andrade_de_freitas_a_motivation_aware_diagnostic_instrument_for_person
 weight: 9
 featured_image: "../assets/images/featured/edutrack-logo.png"
 summary: An educational platform for tracking, analyzing, and gamifying classes, with academic support from CEDIS, grounded in a semester-start diagnostic instrument validated across undergraduate courses.
@@ -48,6 +50,8 @@ EduTrack applies a diagnostic questionnaire that combines course-specific prior-
 The platform organizes these indicators to support ongoing tracking and gamification of classes throughout the semester, connecting to **{{< link-interno "/products/edutrackai" "EduTrack AI" >}}** to incorporate academic performance prediction based on the same indicators.
 
 ## Academic Link
+
+The product is linked to the {{< link-interno "/projects/framework_preditivo_engajamento" "2025-2026 PIBIC project on a predictive framework for student engagement and performance" >}}.
 
 - Daniel Rodrigues da Rocha (product development as part of undergraduate research)
 - Davi Rodrigues da Rocha (product development as part of undergraduate research)

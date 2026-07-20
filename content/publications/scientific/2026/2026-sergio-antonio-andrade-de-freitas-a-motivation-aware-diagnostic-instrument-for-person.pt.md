@@ -32,6 +32,8 @@ tags:
 - active_learning
 - sergio_freitas
 - mylena_faria
+- project_framework_preditivo_engajamento
+- project_alvorecer
 advisors: []
 doi_isbn: ''
 source_title: XXXVII Simpósio Brasileiro de Informática na Educação (SBIE 2026)
@@ -60,3 +62,5 @@ aliases:
 ## Resumo
 
 Artigo aceito no XXXVII Simpósio Brasileiro de Informática na Educação (SBIE 2026, submissão #27258), apresentando um instrumento diagnóstico de início de semestre para personalização e gamificação no ensino de computação, avaliado em três disciplinas de graduação (245 respostas válidas), com bom nível de consistência interna (α = 0.880). O instrumento fundamenta os produtos EduTrack e EduTrack AI.
+
+Este resultado deriva da experiência de gamificação **Alvorecer Feudal** e passa a compor a produção vinculada ao projeto PIBIC 2025-2026 sobre framework preditivo de engajamento e desempenho discente em ambientes de aprendizagem gamificados.
