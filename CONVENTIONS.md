@@ -48,6 +48,28 @@ transitória documentada:
 Novos pesquisadores devem usar o mesmo string tanto como slug do
 arquivo quanto como identificador em tags/advisors — sem exceções.
 
+### Relações estruturadas entre projetos, produtos e pessoas
+
+A partir da Fase 3 do plano de auditoria, a fonte canônica de relações
+entre projetos, produtos e perfis fica no *front matter* das páginas:
+
+- `content/projects/*.md`: `id`, `status`, `researchers`, `areas`,
+  `partners`, `funding_agencies`, `products`, `publications`.
+- `content/products/*.md`: `id`, `status`, `areas`, `responsible`,
+  `project` quando houver projeto de origem claro, `publications`.
+
+Relações inversas nunca devem ser editadas manualmente. Se um projeto
+declara `products: [contextus]`, a página do produto e os templates
+podem derivar o vínculo; se um produto declara `project: dfcris`, a
+página do projeto também pode encontrá-lo. Perfis de pesquisadores
+derivam projetos por `Params.researchers` e produtos por
+`Params.responsible`, mantendo categorias e tags apenas como camada de
+compatibilidade visual e de taxonomia.
+
+`data/projects.yaml` permanece no repositório como compatibilidade para
+consumidores legados e deve ser tratado como espelho transitório. Novas
+relações devem ser adicionadas primeiro nas páginas em `content/`.
+
 ---
 
 ## 1. Atribuição institucional

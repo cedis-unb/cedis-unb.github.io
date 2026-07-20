@@ -4,6 +4,15 @@ title: "Apoio Estudantil FCTE"
 date: 2025-12-31T09:00:00-03:00
 language: pt
 product_language: pt
+id: apoio_estudantil_fcte
+status: active
+areas:
+- ai
+- education
+- digital_transformation
+responsible:
+- george_marsicano
+publications: []
 weight: 33
 featured_image: "../assets/images/featured/projeto_Transformação Digital.png"
 summary: Produto tecnológico de 2025 para centralização de informações administrativas como suporte ao desenvolvimento estudantil na FCTE, com chatbot e inteligência artificial.

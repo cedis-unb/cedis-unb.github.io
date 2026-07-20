@@ -4,6 +4,20 @@ title: "Projeto OctaAnalysis"
 date: 2025-10-15T00:00:00-03:00
 weight: 8
 language: pt
+id: octaanalysis
+status: ongoing
+start_date: 2025-10-15
+researchers:
+- sergio_freitas
+- cristiane_ramos
+areas:
+- gamification
+- learning_analytics
+partners: []
+funding_agencies: []
+products:
+- octaanalysis
+publications: []
 featured_image: "../assets/images/featured/octaanalysis-evaluations.png"
 summary: Projeto em andamento no CEDIS voltado à pesquisa, ao desenho, à validação e à evolução contínua de métodos e infraestruturas para gamificação e learning analytics, tendo o OctaAnalysis como produto resultante.
 authorimage: ../assets/images/global/author.webp

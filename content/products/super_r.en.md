@@ -4,6 +4,15 @@ title: "SUPER-R"
 date: 2025-05-03T17:08:50-03:00
 language: en
 product_language: pt
+id: super_r
+status: active
+areas:
+- gamification
+- active_learning
+responsible:
+- george_marsicano
+project: project_super_r
+publications: []
 weight: 5
 featured_home: true
 featured_home_order: 5

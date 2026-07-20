@@ -3,8 +3,19 @@ author: CEDIS
 title: "Collaborative Digital Transformation Methodology for SPU"
 date: 2025-01-01T00:00:00-03:00
 language: en
-status: active
+status: ongoing
 start_date: 2025-01-01
+id: project_spux
+researchers:
+- george_marsicano
+areas:
+- digital_transformation
+- software_requirements
+- social_software
+partners: []
+funding_agencies: []
+products: []
+publications: []
 summary: "Ongoing project based on service design and user experience for digital transformation at SPU."
 authorimage: ../assets/images/global/author.webp
 categories:

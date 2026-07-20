@@ -6,6 +6,16 @@ language: en
 status: closed
 start_date: 2016-01-01
 end_date: 2017-12-31
+id: project_conab_desempenho
+researchers:
+- ricardo_ajax
+areas:
+- software_quality
+- digital_transformation
+partners: []
+funding_agencies: []
+products: []
+publications: []
 summary: "Closed research and development project for CONAB's individual performance management model."
 authorimage: ../assets/images/global/author.webp
 categories:

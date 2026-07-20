@@ -4,6 +4,15 @@ title: "University Well-being"
 date: 2025-12-31T09:00:00-03:00
 language: en
 product_language: pt
+id: bem_estar_universitario
+status: active
+areas:
+- social_software
+- education
+responsible:
+- george_marsicano
+project: project_software_bem
+publications: []
 weight: 34
 featured_image: "../assets/images/featured/projeto_Software_Bem.png"
 summary: 2025 technological product focused on supporting mood, mental health, and well-being in the university environment.

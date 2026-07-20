@@ -4,6 +4,14 @@ title: "Requirements Engineering Chatbot"
 date: 2025-12-31T09:00:00-03:00
 language: en
 product_language: pt
+id: chatbot_requisitos
+status: active
+areas:
+- ai
+- software_requirements
+responsible:
+- george_marsicano
+publications: []
 weight: 32
 featured_image: "../assets/images/featured/projeto_SuperR.png"
 summary: 2025 technological product proposing a chatbot as a support tool for Requirements Engineering.

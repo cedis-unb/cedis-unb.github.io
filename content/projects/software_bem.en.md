@@ -4,6 +4,20 @@ title: "Software for Good"
 date: 2025-05-03T17:08:50-03:00
 weight: 10
 language: en
+id: project_software_bem
+status: ongoing
+start_date: 2025-05-03
+researchers:
+- george_marsicano
+areas:
+- gamification
+partners: []
+funding_agencies: []
+products:
+- bem_estar_universitario
+- prevencao_abuso_infantil
+- prevencao_violencia_infancia
+publications: []
 featured_image: "../assets/images/featured/projeto_Software_Bem.png"
 summary: Software for Good (SpB) is a collective—a community of people and organizations, meanings, actions, solutions, feelings, and energies aligned to generate good through the use of software.
 authorimage: ../assets/images/global/author.webp

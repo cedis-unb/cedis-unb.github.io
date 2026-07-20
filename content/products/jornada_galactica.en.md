@@ -4,6 +4,15 @@ title: "Gamificaction Galactic Journey"
 date: 2024-10-14T01:37:18-03:00
 language: en
 product_language: pt
+id: jornada_galactica
+status: active
+areas:
+- gamification
+responsible:
+- sergio_freitas
+- cristiane_ramos
+project: project_cc
+publications: []
 weight: 14
 featured_image: "../assets/images/featured/projetoCC - Jornada Galáctica.png"
 summary: Galactic Journey, a Gamification for the Canal Ciência Portal.

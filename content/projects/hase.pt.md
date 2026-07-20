@@ -3,8 +3,19 @@ author: CEDIS
 title: "HASE - Human Aspects in Software Engineering"
 date: 2016-01-01T00:00:00-03:00
 language: pt
-status: active
+status: ongoing
 start_date: 2016-01-01
+id: project_hase
+researchers:
+- george_marsicano
+areas:
+- soft_skills
+- teamwork
+- software_requirements
+partners: []
+funding_agencies: []
+products: []
+publications: []
 summary: "Projeto em andamento sobre aspectos humanos na engenharia de software."
 authorimage: ../assets/images/global/author.webp
 categories:

@@ -4,6 +4,15 @@ title: "Prevenção ao Abuso Sexual Infantil"
 date: 2025-12-31T09:00:00-03:00
 language: pt
 product_language: pt
+id: prevencao_abuso_infantil
+status: active
+areas:
+- gamification
+- social_software
+responsible:
+- george_marsicano
+project: project_software_bem
+publications: []
 weight: 30
 featured_image: "../assets/images/featured/projeto_Software_Bem.png"
 summary: Produto tecnológico registrado em 2025 para prevenção ao abuso sexual infantil por meio de gamificação e desenvolvimento de aplicativo educativo para crianças.

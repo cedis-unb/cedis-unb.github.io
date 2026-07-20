@@ -4,6 +4,14 @@ title: "Nativo"
 date: 2025-12-16T09:00:00-03:00
 language: en
 product_language: pt
+id: nativo
+status: active
+areas:
+- active_learning
+- social_software
+responsible:
+- sergio_freitas
+publications: []
 weight: 4
 featured_image: "../assets/images/featured/nativo-logo.png"
 summary: Mobile application developed as a bachelor's thesis at the University of Brasilia to support the preservation and teaching of Brazilian Indigenous languages, initially focused on Munduruku, through translation lookup, history, and collaborative curation.

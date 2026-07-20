@@ -4,6 +4,15 @@ title: "EduTrack"
 date: 2026-07-10T09:00:00-03:00
 language: en
 product_language: pt
+id: edutrack
+status: active
+areas:
+- gamification
+- learning_analytics
+- active_learning
+responsible:
+- sergio_freitas
+publications: []
 weight: 9
 featured_image: "../assets/images/featured/edutrack-logo.png"
 summary: An educational platform for tracking, analyzing, and gamifying classes, with academic support from CEDIS, grounded in a semester-start diagnostic instrument validated across undergraduate courses.

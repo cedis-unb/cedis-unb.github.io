@@ -7,6 +7,17 @@ language: pt
 status: closed
 start_date: 2023-01-01
 end_date: 2024-12-31
+id: project_cc
+researchers:
+- sergio_freitas
+- cristiane_ramos
+areas:
+- gamification
+partners: []
+funding_agencies: []
+products:
+- jornada_galactica
+publications: []
 featured_image: "../assets/images/featured/projeto_Canal Ciência.png"
 summary: Projeto de pesquisa em parceria com o IBICT e financiado pela FINATEC, com objetivo de aprimorar a experiência dos usuários do Canal Ciência através do uso da gamificação. 
 authorimage: ../assets/images/global/author.webp

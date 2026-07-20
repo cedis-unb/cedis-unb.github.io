@@ -4,6 +4,14 @@ title: "Git Ranking"
 date: 2026-07-14T09:00:00-03:00
 language: pt
 product_language: pt
+id: gitranking
+status: active
+areas:
+- gamification
+- active_learning
+responsible:
+- sergio_freitas
+publications: []
 weight: 7
 featured_home: true
 featured_home_order: 3

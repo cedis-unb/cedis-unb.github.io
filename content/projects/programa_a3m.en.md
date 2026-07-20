@@ -6,6 +6,17 @@ language: en
 status: closed
 start_date: 2021-01-01
 end_date: 2024-12-31
+id: project_a3m
+researchers:
+- cristiane_ramos
+areas:
+- active_learning
+- education
+- learning_analytics
+partners: []
+funding_agencies: []
+products: []
+publications: []
 summary: "Participation in an institutional program for pedagogical innovation and active learning at the University of Brasília."
 authorimage: ../assets/images/global/author.webp
 categories:

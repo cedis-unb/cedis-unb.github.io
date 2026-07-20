@@ -94,7 +94,7 @@
 {{ end }}
 
 {{ range $.Site.RegularPages.ByTitle }}
-  {{ if and (eq .Section "projects") (eq .Lang $.Site.Language.Lang) (not (in .Params.tags "inactive")) (not (in .Params.tags "closed")) (or (in .Params.categories $personKey) (in .Params.tags $personKey)) }}
+  {{ if and (eq .Section "projects") (eq .Lang $.Site.Language.Lang) (not (in .Params.tags "inactive")) (not (in .Params.tags "closed")) (or (and .Params.researchers (in .Params.researchers $personKey)) (in .Params.categories $personKey) (in .Params.tags $personKey)) }}
     {{ $projectPage := . }}
     {{ $projectTag := "" }}
     {{ range $projectIds }}
@@ -165,7 +165,7 @@
 
 {{ $researchProjects := slice }}
 {{ range .Site.RegularPages.ByTitle }}
-  {{ if and (eq .Section "projects") (eq .Lang $.Site.Language.Lang) (not (in .Params.tags "inactive")) (not (in .Params.tags "closed")) (or (in .Params.categories $personKey) (in .Params.tags $personKey)) }}
+  {{ if and (eq .Section "projects") (eq .Lang $.Site.Language.Lang) (not (in .Params.tags "inactive")) (not (in .Params.tags "closed")) (or (and .Params.researchers (in .Params.researchers $personKey)) (in .Params.categories $personKey) (in .Params.tags $personKey)) }}
     {{ $researchProjects = $researchProjects | append . }}
   {{ end }}
 {{ end }}
@@ -174,7 +174,7 @@
 {{ $previousResearchProjects := slice }}
 {{ range .Site.RegularPages.ByTitle }}
   {{ $isClosedProject := or (eq .Params.status "closed") (in .Params.tags "closed") (in .Params.tags "inactive") }}
-  {{ if and (eq .Section "projects") (eq .Lang $.Site.Language.Lang) $isClosedProject (or (in .Params.categories $personKey) (in .Params.tags $personKey)) }}
+  {{ if and (eq .Section "projects") (eq .Lang $.Site.Language.Lang) $isClosedProject (or (and .Params.researchers (in .Params.researchers $personKey)) (in .Params.categories $personKey) (in .Params.tags $personKey)) }}
     {{ $previousResearchProjects = $previousResearchProjects | append . }}
   {{ end }}
 {{ end }}
@@ -185,10 +185,10 @@
 {{ $seenProductPermalinks := dict }}
 {{ range .Site.RegularPages.ByTitle }}
   {{ if eq .Section "products" }}
-    {{ $hasPersonAssociation := or (in .Params.categories $personKey) (in .Params.tags $personKey) (in .Params.advisors $personKey) (in .Params.creators $personKey) }}
+    {{ $hasPersonAssociation := or (and .Params.responsible (in .Params.responsible $personKey)) (in .Params.categories $personKey) (in .Params.tags $personKey) (in .Params.advisors $personKey) (in .Params.creators $personKey) }}
     {{ if not $hasPersonAssociation }}
       {{ range .AllTranslations }}
-        {{ if or (in .Params.categories $personKey) (in .Params.tags $personKey) (in .Params.advisors $personKey) (in .Params.creators $personKey) }}
+        {{ if or (and .Params.responsible (in .Params.responsible $personKey)) (in .Params.categories $personKey) (in .Params.tags $personKey) (in .Params.advisors $personKey) (in .Params.creators $personKey) }}
           {{ $hasPersonAssociation = true }}
         {{ end }}
       {{ end }}
@@ -279,6 +279,31 @@
     {{ $content = printf "%s%s" $content $previousProjectsBlockHtml }}
   {{ end }}
   {{ $tocEntries = $tocEntries | append (dict "level" 2 "anchor" "researcher-previous-projects" "label" $previousProjectsLabel) }}
+{{ end }}
+
+{{ if and $isResearcher (gt $projectCount 0) (not (in $content `id="researcher-projects"`)) }}
+  {{ $projectItemsHtml := slice }}
+  {{ range $researchProjects }}
+    {{ $projectTitle := .Title | plainify | htmlEscape }}
+    {{ $projectSummary := (.Params.summary | default "") | plainify | htmlEscape }}
+    {{ $startValue := printf "%v" (.Params.start_date | default "") }}
+    {{ $startYear := "" }}
+    {{ if $startValue }}{{ $startYear = replaceRE `^([0-9]{4}).*$` `$1` $startValue }}{{ end }}
+    {{ if not $startYear }}{{ $startYear = .Date.Format "2006" }}{{ end }}
+    {{ $itemHtml := printf `<article class="profile-project-card"><a href="%s" class="profile-project-card__media" aria-label="%s: %s"><span>%s</span></a><div class="profile-project-card__body"><p class="profile-project-card__meta">%s</p><h3><a href="%s">%s</a></h3>%s<a href="%s" class="profile-project-card__link"><span>%s</span><span aria-hidden="true">→</span></a></div></article>` .RelPermalink (i18n "ui_awards_see_project") $projectTitle $projectTitle $startYear .RelPermalink $projectTitle (cond (ne $projectSummary "") (printf `<p>%s</p>` $projectSummary) "") .RelPermalink (i18n "ui_awards_see_project") }}
+    {{ $projectItemsHtml = $projectItemsHtml | append $itemHtml }}
+  {{ end }}
+  {{ $projectsBlockHtml := printf `<div id="researcher-projects" x-data="{ showProjects: false }"><h2 id="researcher-projects-title" @click="showProjects = !showProjects" class="text-xl font-bold mb-2 cursor-pointer flex items-center text-primary-900">%s <span class="ml-2 inline-flex items-center rounded-full border border-primary-200 bg-primary-50 px-2.5 py-1 text-sm font-black text-primary-700 dark:border-primary-400/25 dark:bg-primary-500/10 dark:text-primary-100">%d</span><svg :class="{'rotate-0': !showProjects, 'rotate-180': showProjects}" class="ml-2 h-5 w-5 transform transition-transform duration-200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#51C5CF"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" /></svg></h2><div x-show="showProjects" x-cloak><div class="not-prose profile-projects-grid">%s</div></div></div>` $projectsLabel $projectCount (delimit $projectItemsHtml "") }}
+  {{ if in $content `id="current-supervisions-section"` }}
+    {{ $content = replaceRE `(?s)(<div id="current-supervisions-section")` (printf `%s${1}` $projectsBlockHtml) $content 1 }}
+  {{ else if in $content `id="previous-collaborators"` }}
+    {{ $content = replaceRE `(?s)(<div id="previous-collaborators")` (printf `%s${1}` $projectsBlockHtml) $content 1 }}
+  {{ else if in $content `id="npublications-section"` }}
+    {{ $content = replaceRE `(?s)(<div id="npublications-section")` (printf `%s${1}` $projectsBlockHtml) $content 1 }}
+  {{ else }}
+    {{ $content = printf "%s%s" $content $projectsBlockHtml }}
+  {{ end }}
+  {{ $tocEntries = $tocEntries | append (dict "level" 2 "anchor" "researcher-projects" "label" $projectsLabel) }}
 {{ end }}
 
 {{ $productsItemsHtml := slice }}

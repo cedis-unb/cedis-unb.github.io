@@ -4,6 +4,16 @@ title: "Prevenção da Violência na Infância"
 date: 2025-12-31T09:00:00-03:00
 language: pt
 product_language: pt
+id: prevencao_violencia_infancia
+status: active
+areas:
+- gamification
+- education
+- social_software
+responsible:
+- george_marsicano
+project: project_software_bem
+publications: []
 weight: 31
 featured_image: "../assets/images/featured/projeto_Software_Bem.png"
 summary: Produto tecnológico de 2025 voltado à prevenção da violência na infância, com aplicativo gamificado para apoio a pais e educadores.

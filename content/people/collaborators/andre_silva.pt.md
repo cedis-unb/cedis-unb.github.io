@@ -2,6 +2,7 @@
 author: CEDIS
 title: "André Corrêa da Silva"
 date: 2024-02-17T00:50:20-03:00
+language: pt
 weight: 44
 featured_image: "../assets/images/featured/people_André Silva.png"
 summary: Graduando em Engenharia de Software, Universidade de Brasília 
