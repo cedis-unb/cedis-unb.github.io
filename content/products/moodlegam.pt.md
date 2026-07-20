@@ -4,6 +4,14 @@ title: "MoodleGam"
 date: 2024-08-02T09:00:00-03:00
 language: pt
 product_language: pt
+id: moodlegam
+status: active
+areas:
+- gamification
+- active_learning
+responsible:
+- sergio_freitas
+publications: []
 weight: 5
 featured_image: "../assets/images/featured/moodlegam-logo.png"
 summary: Plataforma web desenvolvida em TCC na UnB para apoiar a gamificação de disciplinas no Moodle, combinando análise de perfis motivacionais, recomendação de técnicas, catálogo de plugins e conteúdos explicativos sobre gamificação, Octalysis e a plataforma Moodle.

@@ -4,6 +4,21 @@ title: "Projeto Evidentia Review"
 date: 2025-10-01T00:00:00-03:00
 weight: 9
 language: pt
+id: evidentia
+status: ongoing
+start_date: 2025-10-01
+researchers:
+- sergio_freitas
+- george_marsicano
+- lucas_freitas
+areas:
+- ai
+- machine_learning
+partners: []
+funding_agencies: []
+products:
+- evidentia
+publications: []
 featured_image: "../assets/images/featured/evidentia-logo.png"
 summary: Projeto em andamento no CEDIS voltado à pesquisa, evolução e validação contínua de métodos, fluxos e funcionalidades para revisões sistemáticas, tendo o Evidentia Review como produto resultante.
 authorimage: ../assets/images/global/author.webp

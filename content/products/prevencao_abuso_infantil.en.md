@@ -4,6 +4,15 @@ title: "Child Sexual Abuse Prevention"
 date: 2025-12-31T09:00:00-03:00
 language: en
 product_language: pt
+id: prevencao_abuso_infantil
+status: active
+areas:
+- gamification
+- social_software
+responsible:
+- george_marsicano
+project: project_software_bem
+publications: []
 weight: 30
 featured_image: "../assets/images/featured/projeto_Software_Bem.png"
 summary: Technological product recorded in 2025 for child sexual abuse prevention through gamification and an educational application for children.

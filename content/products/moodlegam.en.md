@@ -4,6 +4,14 @@ title: "MoodleGam"
 date: 2024-08-02T09:00:00-03:00
 language: en
 product_language: pt
+id: moodlegam
+status: active
+areas:
+- gamification
+- active_learning
+responsible:
+- sergio_freitas
+publications: []
 weight: 5
 featured_image: "../assets/images/featured/moodlegam-logo.png"
 summary: Web platform developed as a bachelor's thesis at the University of Brasilia to support the gamification of Moodle-based courses, combining motivational-profile analysis, technique guidance, plugin cataloguing, and explanatory content about gamification, Octalysis, and Moodle.

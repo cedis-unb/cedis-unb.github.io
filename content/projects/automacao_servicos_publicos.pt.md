@@ -6,6 +6,17 @@ language: pt
 status: closed
 start_date: 2017-01-01
 end_date: 2020-12-31
+id: project_automacao_servicos
+researchers:
+- cristiane_ramos
+- ricardo_ajax
+areas:
+- digital_transformation
+- software_requirements
+partners: []
+funding_agencies: []
+products: []
+publications: []
 summary: "Projeto encerrado de PD&I em automação de serviços públicos, em parceria entre UnB e Ministério do Planejamento."
 authorimage: ../assets/images/global/author.webp
 categories:

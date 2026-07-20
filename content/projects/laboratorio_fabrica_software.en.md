@@ -5,6 +5,16 @@ date: 2018-01-01T00:00:00-03:00
 language: en
 status: closed
 start_date: 2018-01-01
+id: project_lfs
+researchers:
+- andre_lanna
+areas:
+- software_architecture
+- software_product_line
+partners: []
+funding_agencies: []
+products: []
+publications: []
 summary: "Research and development project started in 2018 at the University of Brasília, focused on integrating training, applied research, and software development."
 authorimage: ../assets/images/global/author.webp
 categories:

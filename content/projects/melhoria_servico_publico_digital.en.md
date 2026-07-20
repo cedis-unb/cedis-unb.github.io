@@ -6,6 +6,17 @@ language: en
 status: closed
 start_date: 2023-01-01
 end_date: 2025-12-31
+id: project_melhoria_servico_publico
+researchers:
+- george_marsicano
+areas:
+- digital_transformation
+- security
+- software_requirements
+partners: []
+funding_agencies: []
+products: []
+publications: []
 summary: "Closed project focused on improving digital public services for citizens."
 authorimage: ../assets/images/global/author.webp
 categories:

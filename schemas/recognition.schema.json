@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cedis.unb.br/schemas/recognition.schema.json",
+  "title": "Reconhecimento — frontmatter ou item estruturado futuro",
+  "description": "Modelo permissivo para content/reconhecimentos.*.md e futura migração de reconhecimentos para dados estruturados.",
+  "type": "object",
+  "required": ["title"],
+  "additionalProperties": true,
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9_]+$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 2
+    },
+    "date": {
+      "type": "string"
+    },
+    "language": {
+      "enum": ["pt", "en"]
+    },
+    "year": {
+      "anyOf": [
+        {
+          "type": "integer",
+          "minimum": 1990,
+          "maximum": 2035
+        },
+        {
+          "type": "string",
+          "pattern": "^[0-9]{4}$"
+        }
+      ]
+    },
+    "context": {
+      "type": "string"
+    },
+    "link_to_post": {
+      "type": "string"
+    },
+    "projects": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9_]+$"
+      }
+    },
+    "products": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9_]+$"
+      }
+    },
+    "translationKey": {
+      "type": "string"
+    }
+  }
+}

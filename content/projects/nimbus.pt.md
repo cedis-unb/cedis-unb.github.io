@@ -6,6 +6,15 @@ language: pt
 status: closed
 start_date: 2023-01-01
 end_date: 2024-12-31
+id: project_nimbus
+researchers:
+- daniel_sundfeld
+areas:
+- hpc
+partners: []
+funding_agencies: []
+products: []
+publications: []
 summary: "Arquitetura serverless em nuvem para correção automática de códigos."
 authorimage: ../assets/images/global/author.webp
 categories:

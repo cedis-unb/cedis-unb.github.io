@@ -6,6 +6,15 @@ language: en
 status: closed
 start_date: 2020-01-01
 end_date: 2022-12-31
+id: project_cloud_iot
+researchers:
+- daniel_sundfeld
+areas:
+- hpc
+partners: []
+funding_agencies: []
+products: []
+publications: []
 summary: "Closed project on cloud computing, internet of things, and distributed systems."
 authorimage: ../assets/images/global/author.webp
 categories:

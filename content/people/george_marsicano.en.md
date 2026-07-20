@@ -54,8 +54,6 @@ nav_next: true
 - Publication of the TPA questionnaire for assessing teamwork process antecedents in software development in the journal *Empirical Software Engineering* (2020).
 - Experience in initiatives focused on digital transformation of public services, collaborative solution design, and studies on human aspects of software teams.
 
-## {{< i18n "people_current_projects" >}}
-{{< postsByCategoriesTags section="projects" categories="project,george_marsicano" notags="inactive,closed" >}}
 
 ## {{< i18n "people_supervisory_experience" >}}
 ### {{< i18n "people_current_supervisions" >}}

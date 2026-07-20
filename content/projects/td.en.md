@@ -7,6 +7,15 @@ language: en
 status: closed
 start_date: 2020-01-01
 end_date: 2023-12-31
+id: project_td
+researchers:
+- george_marsicano
+areas:
+- digital_transformation
+partners: []
+funding_agencies: []
+products: []
+publications: []
 featured_image: "../assets/images/featured/projeto_Transformação Digital.png"
 summary: The Brazilian Federal Government's Public Services Digital Transformation project involves research, development, and innovation in methodologies, models, and tools that promote the automation and digitalization of public services.
 authorimage: ../assets/images/global/author.webp

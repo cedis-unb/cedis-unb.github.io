@@ -1,0 +1,70 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cedis.unb.br/schemas/project.schema.json",
+  "title": "Projeto — frontmatter de content/projects/*.md",
+  "description": "Frontmatter canônico de content/projects/*.md após I03.",
+  "type": "object",
+  "required": [
+    "title",
+    "date",
+    "language",
+    "summary",
+    "id",
+    "status",
+    "researchers",
+    "areas",
+    "partners",
+    "funding_agencies",
+    "products",
+    "publications"
+  ],
+  "additionalProperties": true,
+  "properties": {
+    "title": {"type": "string", "minLength": 2},
+    "date": {"type": "string"},
+    "language": {"enum": ["pt", "en"]},
+    "summary": {"type": "string"},
+    "status": {"enum": ["ongoing", "closed"]},
+    "start_date": {"type": "string"},
+    "end_date": {"type": "string"},
+    "categories": {
+      "type": "array",
+      "items": {"type": "string"}
+    },
+    "tags": {
+      "type": "array",
+      "items": {"type": "string"}
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9_]+$"
+    },
+    "researchers": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"type": "string", "pattern": "^[a-z0-9_]+$"}
+    },
+    "areas": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"type": "string", "pattern": "^[a-z0-9_]+$"}
+    },
+    "partners": {
+      "type": "array",
+      "items": {"type": "string"}
+    },
+    "funding_agencies": {
+      "type": "array",
+      "items": {"type": "string"}
+    },
+    "products": {
+      "type": "array",
+      "items": {"type": "string", "pattern": "^[a-z0-9_]+$"}
+    },
+    "publications": {
+      "type": "array",
+      "items": {"type": "string"}
+    },
+    "translationKey": {"type": "string"}
+  }
+}

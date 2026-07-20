@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cedis.unb.br/schemas/opportunity.schema.json",
+  "title": "Oportunidade — frontmatter ou item estruturado futuro",
+  "description": "Modelo permissivo para content/oportunidades.*.md enquanto I09 não migra oportunidades para itens estruturados.",
+  "type": "object",
+  "required": ["title"],
+  "additionalProperties": true,
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9_]+$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 2
+    },
+    "date": {
+      "type": "string"
+    },
+    "language": {
+      "enum": ["pt", "en"]
+    },
+    "status": {
+      "enum": ["open", "closed", "expired"]
+    },
+    "deadline": {
+      "type": "string"
+    },
+    "audience": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9_]+$"
+      }
+    },
+    "projects": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9_]+$"
+      }
+    },
+    "translationKey": {
+      "type": "string"
+    }
+  }
+}

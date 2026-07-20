@@ -295,8 +295,8 @@ O plano é bem-sucedido quando:
 | Issue | Status | Arquivos-chave |
 |---|---|---|
 | I01 | ✅ | `.github/workflows/site-ci.yml`, `package.json`, `lychee.toml` |
-| I02 | ⏳ | `schemas/`, `scripts/validate_content.py`, `docs-src/data-model.md` |
-| I03 | ⏳ | `content/projects/`, `content/products/`, `layouts/people/single.html`, `data/projects.yaml`, `CONVENTIONS.md` |
+| I02 | ✅ | `schemas/`, `scripts/validate_content.py`, `docs-src/data-model.md`, `.github/workflows/site-ci.yml` |
+| I03 | ✅ | `content/projects/`, `content/products/`, `layouts/people/single.html`, `layouts/projects/single.html`, `layouts/products/single.html`, `CONVENTIONS.md` |
 | I04 | ✅ | `content/projects/DFCris.*.md`, `content/areas/security.*.md`, assets renomeados |
 | I05 | ✅ | `data/*.yaml` (removidos) |
 | I06 | ✅ | `layouts/partials/meta.html`, `layouts/robots.txt` |

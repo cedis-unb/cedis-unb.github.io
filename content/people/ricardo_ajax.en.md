@@ -46,8 +46,6 @@ nav_next: true
 - Best Master's Dissertation at SBQS - Brazilian Symposium on Software Quality (2006).
 - First place at Politec's IT meeting for works on software size measurement and the use of metrics in software projects (2001 and 2002).
 
-## {{< i18n "people_current_projects" >}}
-{{< postsByCategoriesTags section="projects" categories="project,ricardo_ajax" notags="inactive,closed" >}}
 
 ## {{< i18n "people_supervisory_experience" >}}
 ### {{< i18n "people_current_supervisions" >}}

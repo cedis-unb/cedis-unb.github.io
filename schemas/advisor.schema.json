@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cedis.unb.br/schemas/advisor.schema.json",
+  "title": "Advisor (docente CEDIS)",
+  "description": "Entrada única em data/advisors.yaml — indexada por id (kebab_case em snake_case).",
+  "type": "object",
+  "required": ["name", "link", "areas"],
+  "additionalProperties": true,
+  "properties": {
+    "name": {
+      "type": "string",
+      "minLength": 3
+    },
+    "link": {
+      "type": "string"
+    },
+    "lattes": {
+      "type": "string",
+      "pattern": "^(|https?://lattes\\.cnpq\\.br/[0-9]+/?)$"
+    },
+    "orcid": {
+      "type": "string",
+      "pattern": "^https?://orcid\\.org/[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{3}[0-9X]$"
+    },
+    "email": {
+      "type": "string",
+      "format": "email"
+    },
+    "areas": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9_]+$"
+      }
+    }
+  }
+}

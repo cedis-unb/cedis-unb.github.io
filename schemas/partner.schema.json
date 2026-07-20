@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cedis.unb.br/schemas/partner.schema.json",
+  "title": "Parceiro — frontmatter ou item estruturado futuro",
+  "description": "Modelo permissivo para a página textual atual e para futura migração de parceiros para dados estruturados.",
+  "type": "object",
+  "required": ["title"],
+  "additionalProperties": true,
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9_]+$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 2
+    },
+    "date": {
+      "type": "string"
+    },
+    "language": {
+      "enum": ["pt", "en"]
+    },
+    "url": {
+      "type": "string"
+    },
+    "type": {
+      "enum": ["institution", "company", "lab", "funding_agency", "government", "other"]
+    },
+    "projects": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9_]+$"
+      }
+    },
+    "translationKey": {
+      "type": "string"
+    }
+  }
+}

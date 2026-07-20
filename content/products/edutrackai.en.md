@@ -4,6 +4,16 @@ title: "EduTrack AI"
 date: 2026-07-10T09:00:00-03:00
 language: en
 product_language: pt
+id: edutrackai
+status: active
+areas:
+- ai
+- machine_learning
+- gamification
+- learning_analytics
+responsible:
+- sergio_freitas
+publications: []
 weight: 10
 featured_image: "../assets/images/featured/edutrack-logo.png"
 summary: An AI API for academic performance prediction in gamified environments, complementing the EduTrack platform, with academic support from CEDIS.

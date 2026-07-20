@@ -4,6 +4,16 @@ title: "DevDog"
 date: 2026-04-19T12:00:00-03:00
 language: en
 product_language: pt
+id: devdog
+status: active
+areas:
+- gamification
+- software_quality
+- software_architecture
+- active_learning
+responsible:
+- sergio_freitas
+publications: []
 weight: 3
 featured_home: true
 featured_home_order: 2

@@ -4,6 +4,17 @@ title: "HCI Journey Project"
 date: 2024-03-04T18:08:50-03:00
 weight: 11
 language: en
+id: project_jornada
+status: ongoing
+start_date: 2024-03-04
+researchers:
+- sergio_freitas
+areas:
+- gamification
+partners: []
+funding_agencies: []
+products: []
+publications: []
 featured_image: "../assets/images/featured/gamification_Jornada IHC.png"
 summary: Teaching project, "Human-Computer Interaction" course, an educational innovation promoted by CEDIS in the Software Engineering course at the University of Brasília
 authorimage: ../assets/images/global/author.webp

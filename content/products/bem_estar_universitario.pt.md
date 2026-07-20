@@ -4,6 +4,15 @@ title: "Bem-Estar Universitário"
 date: 2025-12-31T09:00:00-03:00
 language: pt
 product_language: pt
+id: bem_estar_universitario
+status: active
+areas:
+- social_software
+- education
+responsible:
+- george_marsicano
+project: project_software_bem
+publications: []
 weight: 34
 featured_image: "../assets/images/featured/projeto_Software_Bem.png"
 summary: Produto tecnológico de 2025 voltado ao suporte ao humor, à saúde mental e ao bem-estar no ambiente universitário.

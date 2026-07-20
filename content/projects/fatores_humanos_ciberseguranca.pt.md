@@ -3,8 +3,18 @@ author: CEDIS
 title: "Fatores humanos na segurança cibernética"
 date: 2022-01-01T00:00:00-03:00
 language: pt
-status: active
+status: ongoing
 start_date: 2022-01-01
+id: project_human_factors_cybersecurity
+researchers:
+- fabiana_mendes
+areas:
+- security
+- software_quality
+partners: []
+funding_agencies: []
+products: []
+publications: []
 summary: "Projeto em andamento sobre fatores humanos associados à segurança cibernética."
 authorimage: ../assets/images/global/author.webp
 categories:

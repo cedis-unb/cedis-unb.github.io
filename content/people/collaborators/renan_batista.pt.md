@@ -2,6 +2,7 @@
 author: CEDIS
 title: "Renan Carneiro Batista"
 date: 2024-02-17T00:50:20-03:00
+language: pt
 weight: 44
 featured_image: "../assets/images/featured/people_Renan Batista.png"
 summary: Graduando em Ciência da Computação, Instituto Federal de Educação Ciência e Tecnologia do Ceará

@@ -6,6 +6,16 @@ language: pt
 status: closed
 start_date: 2017-01-01
 end_date: 2019-12-31
+id: project_capacidade_produtiva
+researchers:
+- ricardo_ajax
+areas:
+- software_quality
+- digital_transformation
+partners: []
+funding_agencies: []
+products: []
+publications: []
 summary: "Projeto encerrado de modelagem matemática para dimensionamento da capacidade produtiva no Ministério do Planejamento."
 authorimage: ../assets/images/global/author.webp
 categories:

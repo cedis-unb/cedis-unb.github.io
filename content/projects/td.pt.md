@@ -7,6 +7,15 @@ language: pt
 status: closed
 start_date: 2020-01-01
 end_date: 2023-12-31
+id: project_td
+researchers:
+- george_marsicano
+areas:
+- digital_transformation
+partners: []
+funding_agencies: []
+products: []
+publications: []
 featured_image: "../assets/images/featured/projeto_Transformação Digital.png"
 summary: O projeto de Transformação Digital de Serviços Públicos do Governo Federal Brasileiro envolve pesquisa, desenvolvimento e inovação em metodologias, modelos e ferramentas que promovam a automação e digitização de serviços públicos.
 authorimage: ../assets/images/global/author.webp

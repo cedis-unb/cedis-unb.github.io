@@ -39,8 +39,6 @@ nav_next: true
 - Menção Honrosa no Computer on the Beach (2011).
 - CTDQS 2010 - Concurso de Teses e Dissertações em Qualidade de Software pela Sociedade Brasileira de Computação (2010).
 
-## {{< i18n "people_current_projects" >}}
-{{< postsByCategoriesTags section="projects" categories="project,andre_lanna" notags="inactive,closed" >}}
 
 ## {{< i18n "people_supervisory_experience" >}}
 ### {{< i18n "people_current_supervisions" >}}

@@ -3,8 +3,19 @@ author: CEDIS
 title: "Serviços PI"
 date: 2025-01-01T00:00:00-03:00
 language: en
-status: active
+status: ongoing
 start_date: 2025-01-01
+id: project_servicos_pi
+researchers:
+- daniel_sundfeld
+areas:
+- hpc
+- ai
+- machine_learning
+partners: []
+funding_agencies: []
+products: []
+publications: []
 summary: "Ongoing project on innovation and efficiency in retrieving intellectual property information at INPI."
 authorimage: ../assets/images/global/author.webp
 categories:

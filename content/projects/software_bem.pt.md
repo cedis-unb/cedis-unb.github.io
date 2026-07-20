@@ -4,6 +4,20 @@ title: "Software para o Bem"
 date: 2025-05-03T17:08:50-03:00
 weight: 10
 language: pt
+id: project_software_bem
+status: ongoing
+start_date: 2025-05-03
+researchers:
+- george_marsicano
+areas:
+- gamification
+partners: []
+funding_agencies: []
+products:
+- bem_estar_universitario
+- prevencao_abuso_infantil
+- prevencao_violencia_infancia
+publications: []
 featured_image: "../assets/images/featured/projeto_Software_Bem.png"
 summary: O Software para o Bem (SpB) é um coletivo, uma comunidade de pessoas e Organizações, significados, ações, soluções, sentimentos e energias sintonizadas para gerar o bem, por meio do uso de software.  
 authorimage: ../assets/images/global/author.webp

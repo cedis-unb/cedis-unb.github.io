@@ -4,6 +4,16 @@ title: "Evidentia Review"
 date: 2026-03-09T18:00:00-03:00
 language: pt
 product_language: pt/en
+id: evidentia
+status: active
+areas:
+- ai
+- machine_learning
+responsible:
+- sergio_freitas
+- george_marsicano
+project: evidentia
+publications: []
 weight: 1
 featured_home: true
 featured_home_order: 1

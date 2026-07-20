@@ -4,6 +4,15 @@ title: "Atloria"
 date: 2026-07-07T09:00:00-03:00
 language: pt
 product_language: pt
+id: atloria
+status: active
+areas:
+- gamification
+- active_learning
+- social_software
+responsible:
+- sergio_freitas
+publications: []
 weight: 6
 featured_image: "../assets/images/featured/atloria-logo.png"
 summary: Aplicativo móvel Android desenvolvido em TCC com apoio acadêmico do CEDIS para o ensino de estruturas de dados por meio de realidade aumentada e gamificação, com salas temáticas, mini missões e passaporte de conquistas.
