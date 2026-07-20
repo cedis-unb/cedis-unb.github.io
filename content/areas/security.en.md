@@ -1,10 +1,10 @@
 ---
 author: CEDIS
-title: "Cibersecurity"
+title: "Cybersecurity"
 date: 2025-09-02T01:37:18-03:00
 language: en
 weight: 5
-featured_image: "../assets/images/featured/area_Cibersecurity.png"
+featured_image: "../assets/images/featured/area_Cybersecurity.png"
 summary: 'Cybersecurity consists of a set of practices, technologies, and methodologies aimed at protecting systems, networks, and data against unauthorized access, cyberattacks, persistent threats, and security failures. Its central goal is to ensure the confidentiality, integrity, and availability of information, especially in increasingly complex and interconnected digital environments.'
 authorimage: ../assets/images/global/author.webp
 categories:

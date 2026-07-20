@@ -4,7 +4,7 @@ date: 2025-08-26T00:00:00-03:00
 draft: false
 weight: 500
 language: pt
-featured_image: "../assets/images/featured/area_Cibersecurity.png"
+featured_image: "../assets/images/featured/area_Cybersecurity.png"
 summary: 'Tássio Correia da Silva defendeu no PPEE/UnB uma dissertação de mestrado profissional que adapta o CIS Controls v8.1 para mitigação de ameaças a servidores web em contexto de administração pública.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

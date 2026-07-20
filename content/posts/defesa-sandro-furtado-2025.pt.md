@@ -4,7 +4,7 @@ date: 2025-02-18T00:00:00-03:00
 draft: false
 weight: 500
 language: pt
-featured_image: "../assets/images/featured/area_Cibersecurity.png"
+featured_image: "../assets/images/featured/area_Cybersecurity.png"
 summary: 'Sandro Leite Furtado defendeu no PPCA/UnB uma dissertação que identifica e avalia fatores adicionais de segurança para a Identidade gov.br, implementando e testando o RBA (Risk-Based Authentication) como camada complementar.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

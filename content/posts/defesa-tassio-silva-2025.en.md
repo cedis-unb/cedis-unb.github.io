@@ -4,7 +4,7 @@ date: 2025-08-26T00:00:00-03:00
 draft: false
 weight: 500
 language: en
-featured_image: "../assets/images/featured/area_Cibersecurity.png"
+featured_image: "../assets/images/featured/area_Cybersecurity.png"
 summary: 'Tássio Correia da Silva defended at UnB’s Electrical Engineering graduate program a professional master’s dissertation adapting the CIS Controls v8.1 model to mitigate threats to Web servers in the Brazilian public administration.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp
