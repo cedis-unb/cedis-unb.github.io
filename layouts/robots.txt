@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+# Pagefind assets and search UI have no long-term SEO value.
+Disallow: /pagefind/
+Disallow: /search/
+Disallow: /pt/search/
+
+# Hugo server internals (should not appear in production, but defensive).
+Disallow: /.hugo-server/
+
+Sitemap: {{ "sitemap.xml" | absURL }}
