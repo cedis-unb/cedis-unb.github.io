@@ -491,6 +491,12 @@ ui_metric_products: "produtos digitais"
 ui_metric_products_note: "aplicações e ferramentas"
 ui_metric_supervisions: "orientações registradas"
 ui_metric_supervisions_note: "concluídas e em andamento"
+ui_metric_projects: "projetos"
+ui_metric_projects_note: "em andamento e concluídos"
+
+# Rodapé — grupos semânticos
+ui_footer_explore: "Explorar"
+ui_footer_institutional: "Institucional"
 ui_pulse_last_news: "Última notícia"
 ui_pulse_last_pub: "Última publicação registrada"
 ui_impact_footnote: "Números atualizados automaticamente a partir da base de dados do site."

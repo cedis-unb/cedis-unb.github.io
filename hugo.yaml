@@ -88,163 +88,222 @@ languages:
 
     menu:
       main:
-        - identifier: cedis
+        - identifier: sobre
           pre: complexdropdown
-          name: Saiba mais
+          name: Sobre
           weight: 10
-        - identifier: equipe
+        - identifier: pesquisa
+          pre: complexdropdown
+          name: Pesquisa
+          weight: 20
+        - identifier: projetos_produtos
+          pre: complexdropdown
+          name: Projetos e produtos
+          weight: 30
+        - identifier: pessoas
           pre: complexdropdown
           name: Pessoas
-          url: /people/
-          weight: 20
-        - identifier: projetos
-          name: Projetos
-          url: /projects/
-          weight: 30
-        - identifier: oportunidades
-          name: Oportunidades
-          url: /oportunidades/
-          weight: 35
-        - identifier: dropdown
-          pre: complexdropdown
-          name: Produções
           weight: 40
-      cedis:
-        - identifier: about
+        - identifier: publicacoes
+          pre: complexdropdown
+          name: Publicações
+          weight: 50
+        - identifier: participe
+          pre: complexdropdown
+          name: Participe
+          weight: 60
+      sobre:
+        - identifier: sobre-cedis
           pre: piechart
-          name: "Sobre o CEDIS"
+          name: "O CEDIS"
           post: "O que fazemos, quem somos e para onde vamos"
           url: /about/
-          weight: 5
-        - identifier: areas
-          pre: stars
-          name: "Áreas de atuação"
-          post: "Pesquisa, desenvolvimento e capacitação"
-          url: /categories/knowledge_areas/
           weight: 10
-        - identifier: historia
+        - identifier: sobre-historia
           pre: piechart
           name: História
           post: "Nossa trajetória e conquistas"
           url: /history/
           weight: 20
-        - identifier: parceiros
+        - identifier: sobre-parceiros
           pre: people
-          name: Parceiros e reconhecimentos
-          post: "Instituições, laboratórios, prêmios e marcos"
+          name: Parceiros
+          post: "Instituições e laboratórios que caminham conosco"
           url: /parceiros/
           weight: 30
-        - identifier: infra
+        - identifier: sobre-reconhecimentos
+          pre: stars
+          name: Reconhecimentos
+          post: "Prêmios e menções honrosas"
+          url: /reconhecimentos/
+          weight: 40
+        - identifier: sobre-infra
           pre: infrastructure
           name: Infraestrutura
-          post: "Equipamentos e instalações"
+          post: "Espaços e recursos"
+          url: /infra/
+          weight: 50
+        - identifier: sobre-indicadores
+          pre: piechart
+          name: Indicadores
+          post: "O CEDIS em números"
+          url: /indicadores/
+          weight: 60
+        - identifier: sobre-contato
+          pre: comments
+          name: Contato
+          post: "Fale com o CEDIS"
+          url: /contact/
+          weight: 70
+      pesquisa:
+        - identifier: pesquisa-areas
+          pre: stars
+          name: "Áreas de pesquisa"
+          post: "Linhas e temas do centro"
+          url: /categories/knowledge_areas/
+          weight: 10
+        - identifier: pesquisa-mapa
+          pre: piechart
+          name: "Mapa de competências"
+          post: "Como áreas, pessoas e projetos se conectam"
+          url: /mapa/
+          weight: 20
+        - identifier: pesquisa-pesquisadores
+          pre: researcher
+          name: "Por pesquisador"
+          post: "Explorar publicações e projetos por PI"
+          url: /categories/researcher/
+          weight: 30
+        - identifier: pesquisa-infra
+          pre: infrastructure
+          name: "Infraestrutura científica"
+          post: "Servidores, storage e equipamentos"
           url: /infra/
           weight: 40
-      equipe:
-        - identifier: pesquisadores
+      projetos_produtos:
+        - identifier: pp-projetos
+          pre: piechart
+          name: Projetos
+          post: "Pesquisas em andamento e concluídas"
+          url: /projects/
+          weight: 10
+        - identifier: pp-produtos
+          pre: products
+          name: "Produtos digitais"
+          post: "Plataformas, aplicativos e sistemas"
+          url: /categories/products/
+          weight: 20
+        - identifier: pp-parceiros
+          pre: people
+          name: "Projetos por parceiro"
+          post: "Iniciativas com IBICT, FAP-DF e outros"
+          url: /parceiros/
+          weight: 30
+        - identifier: pp-zenodo
+          pre: zenodo
+          name: "Materiais no Zenodo"
+          post: "Datasets e código-fonte registrados"
+          url: https://zenodo.org/communities/cedis-unb
+          weight: 40
+      pessoas:
+        - identifier: pes-pesquisadores
           pre: researcher
           name: Pesquisadores
+          post: "Docentes com produção contínua"
           url: /categories/researcher/
-          post: "Docentes pesquisadores"
           weight: 10
-        - identifier: colaboradores
+        - identifier: pes-colaboradores
           pre: people
           name: Colaboradores
+          post: "Equipe de pesquisa e desenvolvimento"
           url: /people/all/
-          post: "Equipe de pesquisa"
           weight: 20
-        - identifier: junte-se
-          pre: comments
-          name: Junte-se ao CEDIS
-          url: /junte-se/
-          post: "Trilhas: IC, TCC, Mestrado, Doutorado, Extensão, Voluntário"
-          weight: 30
-        - identifier: alumni
+        - identifier: pes-alumni
           pre: people
           name: Alumni
+          post: "Onde estão os ex-alunos"
           url: /alumni/
-          post: "Onde estão nossos ex-alunos"
-          weight: 40
-        - identifier: quiz
+          weight: 30
+        - identifier: pes-quiz
           pre: comments
-          name: Qual área combina comigo?
+          name: "Qual área combina comigo?"
+          post: "Quiz de 5 perguntas"
           url: /quiz/
-          post: "Quiz de 5 perguntas para descobrir"
-          weight: 25
-      dropdown:
-        - identifier: publications
-          pre: publications # can be stars, comments or piechart
-          name: Publicações
-          post: "Artigos, livros e outros"
-          url: "/publications/"
-          weight: 10
-        - identifier: prods
-          pre: products # can be stars, comments or piechart
-          name: Produtos digitais
-          post: "Aplicativos, processos e outros"
-          url: "/categories/products"
-          weight: 20
-        - identifier: repos
-          pre: zenodo # ícone dedicado (archive-box), diferente de publications
-          name: Zenodo
-          post: "Materiais registrados"
-          url: "https://zenodo.org/communities/cedis-unb"
-          weight: 25
-        - identifier: cursos
-          pre: courses # can be stars, comments, piechart, products, people, publications, courses
-          name: Cursos e treinamentos
-          post: "Cursos, oficinas, palestras e outros"
-          url: "https://slides.cedis.tec.br/programas-de-formacao"
-          weight: 30
-#        - identifier: process
-#          pre: piechart # can be stars, comments or piechart
-#          name: Processos
-#          post: "Processos, técnicas e outros"
-#          url: "#"
-#          weight: 30
-#        - identifier: prods
-#          pre: comments # can be stars, comments or piechart
-#          name: Produtos
-#          post: "Produtos tecnológicos e outros"
-#          url: "#"
-#          weight: 40
-      footer:
-        - identifier: home
-          name: Início
-          url: /
-          weight: 10
-        - identifier: about
-          name: Sobre
-          url: /about/
-          weight: 20
-        - identifier: products
-          name: Produtos digitais
-          url: /categories/products/
-          weight: 30
-        - identifier: projects
-          name: Projetos
-          url: /projects/
           weight: 40
-        - identifier: people
-          name: Pessoas
-          url: /people/
-          weight: 50
-        - identifier: partners
-          name: Parceiros
+      publicacoes:
+        - identifier: pub-cientificas
+          pre: publications
+          name: "Publicações científicas"
+          post: "Artigos, livros, teses, dissertações e TCCs"
+          url: /publications/
+          weight: 10
+        - identifier: pub-zenodo
+          pre: zenodo
+          name: "Materiais no Zenodo"
+          post: "Datasets, código e materiais registrados"
+          url: https://zenodo.org/communities/cedis-unb
+          weight: 20
+        - identifier: pub-cursos
+          pre: courses
+          name: "Cursos e materiais didáticos"
+          post: "Programas de formação e materiais abertos"
+          url: https://slides.cedis.tec.br/programas-de-formacao
+          weight: 30
+      participe:
+        - identifier: part-oportunidades
+          pre: comments
+          name: "Oportunidades abertas"
+          post: "Editais, bolsas e vagas"
+          url: /oportunidades/
+          weight: 10
+        - identifier: part-trilhas
+          pre: comments
+          name: "Junte-se ao CEDIS"
+          post: "IC, TCC, Mestrado, Doutorado, Extensão, Voluntário"
+          url: /junte-se/
+          weight: 20
+        - identifier: part-parcerias
+          pre: people
+          name: "Parcerias institucionais"
+          post: "Órgãos públicos, empresas e universidades"
           url: /parceiros/
-          weight: 60
-        - identifier: news
-          name: Mais notícias
-          url: /categories/news/
-          weight: 70
-        - identifier: contact
-          name: Contato
+          weight: 30
+        - identifier: part-proponha
+          pre: comments
+          name: "Proponha um projeto"
+          post: "Escreva para o CEDIS"
           url: /contact/
-          weight: 80
-        - identifier: intranet
+          weight: 40
+      footer_explore:
+        - identifier: fx-noticias
+          name: Notícias
+          url: /categories/news/
+          weight: 10
+        - identifier: fx-zenodo
+          name: Zenodo
+          url: https://zenodo.org/communities/cedis-unb
+          weight: 20
+        - identifier: fx-intranet
           name: Intranet (membros)
           url: https://unbbr.sharepoint.com/sites/CEDIS
-          weight: 90
+          weight: 30
+      footer_institutional:
+        - identifier: fi-contato
+          name: Contato
+          url: /contact/
+          weight: 10
+        - identifier: fi-imprensa
+          name: Imprensa
+          url: /imprensa/
+          weight: 20
+        - identifier: fi-privacidade
+          name: Privacidade
+          url: /privacy/
+          weight: 30
+        - identifier: fi-acessibilidade
+          name: Acessibilidade
+          url: /accessibility/
+          weight: 40
 
   en:
   # ENGLISH
@@ -326,163 +385,222 @@ languages:
           url: "https://www.linkedin.com/company/cedis-unb"
     menu:
       main:
-        - identifier: cedis
+        - identifier: sobre
           pre: complexdropdown
           name: About
           weight: 10
-        - identifier: equipe
+        - identifier: pesquisa
+          pre: complexdropdown
+          name: Research
+          weight: 20
+        - identifier: projetos_produtos
+          pre: complexdropdown
+          name: "Projects & products"
+          weight: 30
+        - identifier: pessoas
           pre: complexdropdown
           name: People
-          url: /people/
-          weight: 20
-        - identifier: projetos
-          name: Projects
-          url: /projects/
-          weight: 30
-        - identifier: oportunidades
-          name: Opportunities
-          url: /oportunidades/
-          weight: 35
-        - identifier: dropdown
-          pre: complexdropdown
-          name: Productions
           weight: 40
-      cedis:
-        - identifier: about
+        - identifier: publicacoes
+          pre: complexdropdown
+          name: Publications
+          weight: 50
+        - identifier: participe
+          pre: complexdropdown
+          name: "Get involved"
+          weight: 60
+      sobre:
+        - identifier: sobre-cedis
           pre: piechart
           name: "About CEDIS"
           post: "What we do, who we are, where we're going"
           url: /about/
-          weight: 5
-        - identifier: areas
-          pre: stars
-          name: "Areas of expertise"
-          post: "Research, development, and training"
-          url: /categories/knowledge_areas/
           weight: 10
-        - identifier: historia
+        - identifier: sobre-historia
           pre: piechart
           name: History
           post: "Our journey and achievements"
           url: /history/
           weight: 20
-        - identifier: parceiros
+        - identifier: sobre-parceiros
           pre: people
-          name: Partners & recognitions
-          post: "Institutions, labs, awards, and milestones"
-          url: /partners/
+          name: Partners
+          post: "Institutions and labs walking with us"
+          url: /parceiros/
           weight: 30
-        - identifier: infra
+        - identifier: sobre-reconhecimentos
+          pre: stars
+          name: "Awards & recognitions"
+          post: "Prizes and honorable mentions"
+          url: /reconhecimentos/
+          weight: 40
+        - identifier: sobre-infra
           pre: infrastructure
           name: Infrastructure
-          post: "Equipment and facilities"
+          post: "Spaces and resources"
+          url: /infra/
+          weight: 50
+        - identifier: sobre-indicadores
+          pre: piechart
+          name: Indicators
+          post: "CEDIS in numbers"
+          url: /indicadores/
+          weight: 60
+        - identifier: sobre-contato
+          pre: comments
+          name: Contact
+          post: "Reach out to CEDIS"
+          url: /contact/
+          weight: 70
+      pesquisa:
+        - identifier: pesquisa-areas
+          pre: stars
+          name: "Research areas"
+          post: "Lines and topics of the center"
+          url: /categories/knowledge_areas/
+          weight: 10
+        - identifier: pesquisa-mapa
+          pre: piechart
+          name: "Competency map"
+          post: "How areas, people and projects connect"
+          url: /mapa/
+          weight: 20
+        - identifier: pesquisa-pesquisadores
+          pre: researcher
+          name: "By researcher"
+          post: "Browse publications and projects per PI"
+          url: /categories/researcher/
+          weight: 30
+        - identifier: pesquisa-infra
+          pre: infrastructure
+          name: "Scientific infrastructure"
+          post: "Servers, storage and equipment"
           url: /infra/
           weight: 40
-      equipe:
-        - identifier: pesquisadores
+      projetos_produtos:
+        - identifier: pp-projetos
+          pre: piechart
+          name: Projects
+          post: "Ongoing and completed research"
+          url: /projects/
+          weight: 10
+        - identifier: pp-produtos
+          pre: products
+          name: "Digital products"
+          post: "Platforms, applications and systems"
+          url: /categories/products/
+          weight: 20
+        - identifier: pp-parceiros
+          pre: people
+          name: "Projects by partner"
+          post: "Initiatives with IBICT, FAP-DF and others"
+          url: /parceiros/
+          weight: 30
+        - identifier: pp-zenodo
+          pre: zenodo
+          name: "Materials on Zenodo"
+          post: "Registered datasets and source code"
+          url: https://zenodo.org/communities/cedis-unb
+          weight: 40
+      pessoas:
+        - identifier: pes-pesquisadores
           pre: researcher
           name: Researchers
+          post: "Principal investigators with continuous output"
           url: /categories/researcher/
-          post: "Principal Investigators"
           weight: 10
-        - identifier: colaboradores
+        - identifier: pes-colaboradores
           pre: people
           name: Collaborators
+          post: "Research and development team"
           url: /people/all/
-          post: "Research Team"
           weight: 20
-        - identifier: junte-se
-          pre: comments
-          name: Join CEDIS
-          url: /join/
-          post: "Paths: Undergrad, Thesis, Master's, PhD, Outreach, Volunteer"
-          weight: 30
-        - identifier: alumni
+        - identifier: pes-alumni
           pre: people
           name: Alumni
+          post: "Where our alumni are"
           url: /alumni/
-          post: "Where our alumni are now"
-          weight: 40
-        - identifier: quiz
+          weight: 30
+        - identifier: pes-quiz
           pre: comments
-          name: Which area fits me?
+          name: "Which area fits me?"
+          post: "5-question quiz"
           url: /quiz/
-          post: "5-question quiz to find out"
-          weight: 25
-      dropdown:
-        - identifier: publications
-          pre: publications # can be stars, comments or piechart
-          name: Publications
-          post: "Articles, books and others"
-          url: "/publications/"
-          weight: 10
-        - identifier: prods
-          pre: products # can be stars, comments, piechart, products, people, publications
-          name: Digital Products
-          post: "Applications, Processes and others"
-          url: "/categories/products"
-          weight: 20
-        - identifier: repos
-          pre: zenodo # ícone dedicado (archive-box), diferente de publications
-          name: Zenodo
-          post: "Registered materials"
-          url: "https://zenodo.org/communities/cedis-unb"
-          weight: 25
-        - identifier: cursos
-          pre: courses # can be stars, comments, piechart, products, people, publications, courses
-          name: Training Programs
-          post: "Courses, Workshops, Lectures and others"
-          url: "https://slides.cedis.tec.br/programas-de-formacao"
-          weight: 30
-#        - identifier: process
-#          pre: piechart # can be stars, comments or piechart
-#          name: Processes
-#          post: "Processes, techniques, and others"
-#          url: "#"
-#          weight: 30
-#        - identifier: prods
-#          pre: comments # can be stars, comments or piechart
-#          name: Products
-#         post: "Technological products and others"
-#          url: "#"
-#          weight: 40
-      footer:
-        - identifier: home
-          name: Home
-          url: /
-          weight: 10
-        - identifier: about
-          name: About
-          url: /about/
-          weight: 20
-        - identifier: products
-          name: Digital Products
-          url: /categories/products/
-          weight: 30
-        - identifier: projects
-          name: Projects
-          url: /projects/
           weight: 40
-        - identifier: people
-          name: People
-          url: /people/
-          weight: 50
-        - identifier: partners
-          name: Partners
-          url: /partners/
-          weight: 60
-        - identifier: news
-          name: More News
-          url: /categories/news/
-          weight: 70
-        - identifier: contact
-          name: Contact
+      publicacoes:
+        - identifier: pub-cientificas
+          pre: publications
+          name: "Scientific publications"
+          post: "Articles, books, theses, dissertations and undergrad theses"
+          url: /publications/
+          weight: 10
+        - identifier: pub-zenodo
+          pre: zenodo
+          name: "Materials on Zenodo"
+          post: "Datasets, code and registered materials"
+          url: https://zenodo.org/communities/cedis-unb
+          weight: 20
+        - identifier: pub-cursos
+          pre: courses
+          name: "Courses and teaching materials"
+          post: "Training programs and open materials"
+          url: https://slides.cedis.tec.br/programas-de-formacao
+          weight: 30
+      participe:
+        - identifier: part-oportunidades
+          pre: comments
+          name: "Open opportunities"
+          post: "Calls, scholarships and openings"
+          url: /oportunidades/
+          weight: 10
+        - identifier: part-trilhas
+          pre: comments
+          name: "Join CEDIS"
+          post: "Undergrad, thesis, master's, PhD, outreach, volunteer"
+          url: /junte-se/
+          weight: 20
+        - identifier: part-parcerias
+          pre: people
+          name: "Institutional partnerships"
+          post: "Public agencies, companies and universities"
+          url: /parceiros/
+          weight: 30
+        - identifier: part-proponha
+          pre: comments
+          name: "Propose a project"
+          post: "Write to CEDIS"
           url: /contact/
-          weight: 80
-        - identifier: intranet
+          weight: 40
+      footer_explore:
+        - identifier: fx-news
+          name: News
+          url: /categories/news/
+          weight: 10
+        - identifier: fx-zenodo
+          name: Zenodo
+          url: https://zenodo.org/communities/cedis-unb
+          weight: 20
+        - identifier: fx-intranet
           name: Intranet (members)
           url: https://unbbr.sharepoint.com/sites/CEDIS
-          weight: 90
+          weight: 30
+      footer_institutional:
+        - identifier: fi-contact
+          name: Contact
+          url: /contact/
+          weight: 10
+        - identifier: fi-press
+          name: Press
+          url: /imprensa/
+          weight: 20
+        - identifier: fi-privacy
+          name: Privacy
+          url: /privacy/
+          weight: 30
+        - identifier: fi-accessibility
+          name: Accessibility
+          url: /accessibility/
+          weight: 40
 
 
 enableEmoji: false
