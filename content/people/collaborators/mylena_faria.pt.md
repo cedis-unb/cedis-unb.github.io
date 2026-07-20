@@ -16,18 +16,23 @@ advisors:
 - cristiane_ramos
 tags: 
 - project_cc
+- project_framework_preditivo_engajamento
 - scientific_initiation
 - gamification
-- inactive
+- learning_analytics
+- machine_learning
+- active
 ---
 ## Perfil Acadêmico e Profissional
 - Posição Atual: Graduanda em Engenharia de Software, Universidade de Brasília. Iniciação científica em projeto de pesquisa.
 
 ## Linhas de Pesquisa
 - Gamificação
-- CMS: WordPress
+- Learning analytics
+- Aprendizado de máquina aplicado à educação
 
 ## Projetos de Pesquisa
+- {{< link-interno "/projects/framework_preditivo_engajamento" "Framework preditivo de engajamento e desempenho discente" >}}
 - {{< link-interno "/projects/canal_ciencia" "Gamificação Canal Ciência" >}}
 
 ## Contato

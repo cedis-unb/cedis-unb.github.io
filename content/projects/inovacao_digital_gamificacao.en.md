@@ -30,6 +30,7 @@ publications:
 - 10.1109/FIE61694.2024.10893484
 - 10.1109/FIE61694.2024.10893473
 - 10.1007/978-3-031-64608-9_4
+featured_image: "../assets/images/featured/project_inovacao_digital_gamificacao.png"
 summary: "Ongoing umbrella project focused on research and development of digital strategies, gamification, indicators, and educational products for teaching, science outreach, and software engineering."
 authorimage: ../assets/images/global/author.webp
 categories:
@@ -56,6 +57,20 @@ This project brings together research, development, and applied work on **digita
 
 At CEDIS, this line connects Software Engineering courses, undergraduate research, educational products, and science outreach experiences, while keeping a strong relationship with active learning, learning analytics, gamification, and software engineering.
 
+## General data
+
+| Field | Information |
+|---|---|
+| Status | Ongoing |
+| Start year | 2021 |
+| End year | Ongoing |
+| Coordination | Prof. {{< link-interno "/people/sergio_freitas" "Sergio Antonio Andrade de Freitas" >}} |
+| Nature | Research, development, and innovation in educational software, gamification, and software engineering |
+| Executing institution | University of Brasilia |
+| Unit | Faculty of Sciences and Technologies in Engineering |
+| Research institution-company cooperation | Not informed in the project record |
+| Innovation potential | Evidenced by software, processes, techniques, gamified experiences, and supporting materials for teaching and science outreach |
+
 ## Objectives
 
 The main objectives are to:
@@ -74,12 +89,14 @@ Connected fronts include:
 - products supporting software engineering education, including {{< link-interno "/products/devdog" "DevDog" >}}, {{< link-interno "/products/gitranking" "Git Ranking" >}}, and {{< link-interno "/products/moodlegam" "MoodleGam" >}}; and
 - studies on motivational profiling, learning indicators, and personalization of educational environments.
 
-## Associated team
+## Team
 
-- Prof. {{< link-interno "/people/sergio_freitas" "Sergio Freitas" >}} (coordinator)
-- Prof. {{< link-interno "/people/george_marsicano" "George Marsicano" >}}
-- Prof. {{< link-interno "/people/ricardo_ajax" "Ricardo Ajax" >}}
-- Prof. {{< link-interno "/people/cristiane_ramos" "Cristiane Ramos" >}}
+| Researcher | Role |
+|---|---|
+| {{< link-interno "/people/sergio_freitas" "Sergio Antonio Andrade de Freitas" >}} | Coordinator |
+| {{< link-interno "/people/george_marsicano" "George Marsicano" >}} | Researcher |
+| {{< link-interno "/people/ricardo_ajax" "Ricardo Ajax Dias Kosloski" >}} | Researcher |
+| {{< link-interno "/people/cristiane_ramos" "Cristiane Soares Ramos" >}} | Researcher |
 
 ## Related outputs and products
 
@@ -89,3 +106,40 @@ Connected fronts include:
 - {{< link-interno "/products/edutrack" "EduTrack" >}}
 - {{< link-interno "/products/gitranking" "Git Ranking" >}}
 - {{< link-interno "/products/moodlegam" "MoodleGam" >}}
+
+## Linked C&T production
+
+| Year | Output | Type |
+|---|---|---|
+| 2024 | Implementing Neuroscientific Principles in Gamified Software Engineering Courses | Conference paper |
+| 2024 | Crafting Personalized Learning Environments Through Motivational Profiling | Conference paper |
+| 2024 | A Process to Identify Players' Motivational Profiles for Designing a Gamification Project | Book or book chapter |
+| 2024 | Gamified Chatbot Management Process: A Way to Build Gamified Chatbots | Book or book chapter |
+| 2024 | MoodleGam - Support system for creating gamifications in Moodle | Software |
+| 2024 | "Galactic Journey" gamification for IBICT's Canal Ciencia portal | Software |
+| 2024 | Gamified Chatbot Management Process (GCMP) | Process or technique |
+| 2023 | Gamification Project to Receive Continuous Feedback in the Context of the Evolution of Public Service for Lawyers | Conference paper |
+| 2023 | Gamification in Organizational Contexts: A Systematic Literature Review | Book or book chapter |
+| 2023 | Latte: A Gamified Chatbot to Support Scientific Article Writing | Software |
+| 2023 | Jornada: using RPG in a learning process | Process or technique |
+| 2022 | Evaluation of the Change in the Quality of Reports with the Application of Gamification in a Corporative Institution | Book or book chapter |
+| 2022 | Introduction to using gamification in the classroom | Short course taught |
+| 2022 | PIXEL: a gamified tool for learning usability criteria | Software |
+| 2022 | $tudy: Gamified financial education system | Software |
+| 2022 | Gamified Asset Management System (MPI) for Embrapa | Software |
+
+## Linked supervision
+
+| Year | Supervision | Type |
+|---|---|---|
+| 2024 | Evaluation of gamification in software code quality | Ongoing supervision |
+| 2024 | Gamification on Chatbots: how to build | Master's thesis |
+| 2024 | Gamification in the Moodle Virtual Learning Environment: Guide and Tool for Content Creators | Undergraduate capstone project |
+| 2023 | Gamification in Software Engineering: Assessment of engagement in Information Technology teams in a Software Factory | Ongoing supervision |
+| 2023 | Evaluation of changes in report quality with the application of gamification in police intelligence activities | Master's thesis |
+| 2023 | Gamification in Organizational Environments: A Case Study in a Public Company | Master's thesis |
+| 2023 | Latte: A Gamified Chatbot to Support Scientific Article Writing | Undergraduate capstone project |
+| 2023 | Jornada: Using RPG in a learning process | Undergraduate capstone project |
+| 2023 | Project: Studies for gamification of the Science and Technology Popularization and Outreach Platform | Undergraduate research |
+| 2022 | Pixel: A gamified tool for learning usability criteria | Undergraduate capstone project |
+| 2022 | $tudy - a gamified financial education system | Undergraduate capstone project |

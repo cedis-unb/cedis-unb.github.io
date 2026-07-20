@@ -13,7 +13,9 @@ areas:
 - learning_analytics
 responsible:
 - sergio_freitas
-publications: []
+project: project_framework_preditivo_engajamento
+publications:
+- publication_2026_sergio_antonio_andrade_de_freitas_a_motivation_aware_diagnostic_instrument_for_person
 weight: 10
 featured_image: "../assets/images/featured/edutrack-logo.png"
 summary: API de inteligência artificial para predição de desempenho acadêmico em ambientes gamificados, complementar à plataforma EduTrack, com apoio acadêmico do CEDIS.
@@ -48,6 +50,8 @@ O projeto tem como principais objetivos:
 O EduTrack AI expõe uma API que recebe os indicadores diagnósticos coletados pelo EduTrack e retorna predições de desempenho acadêmico, permitindo que a plataforma sinalize, de forma proativa, turmas ou estudantes que podem se beneficiar de intervenções pedagógicas ou estratégias de gamificação mais direcionadas.
 
 ## Vinculação Acadêmica
+
+O produto está vinculado ao {{< link-interno "/projects/framework_preditivo_engajamento" "projeto PIBIC 2025-2026 sobre framework preditivo de engajamento e desempenho discente" >}}.
 
 - Daniel Rodrigues da Rocha (desenvolvimento do produto em iniciação científica)
 - Davi Rodrigues da Rocha (desenvolvimento do produto em iniciação científica)

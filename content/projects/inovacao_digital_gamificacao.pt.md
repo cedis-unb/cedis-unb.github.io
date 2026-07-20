@@ -30,6 +30,7 @@ publications:
 - 10.1109/FIE61694.2024.10893484
 - 10.1109/FIE61694.2024.10893473
 - 10.1007/978-3-031-64608-9_4
+featured_image: "../assets/images/featured/project_inovacao_digital_gamificacao.png"
 summary: "Projeto guarda-chuva em andamento voltado à pesquisa e ao desenvolvimento de estratégias digitais, gamificação, indicadores e produtos educacionais para ensino, divulgação científica e engenharia de software."
 authorimage: ../assets/images/global/author.webp
 categories:
@@ -56,6 +57,20 @@ Este projeto reúne frentes de pesquisa, desenvolvimento e aplicação de **inov
 
 No CEDIS, a linha conecta ações em disciplinas de Engenharia de Software, projetos de iniciação científica, produtos educacionais e experiências de divulgação científica, mantendo articulação com áreas como metodologias ativas, learning analytics, gamificação e engenharia de software.
 
+## Dados gerais
+
+| Campo | Informação |
+|---|---|
+| Situação | Em andamento |
+| Ano de início | 2021 |
+| Ano de fim | Em andamento |
+| Coordenação | Prof. {{< link-interno "/people/sergio_freitas" "Sergio Antonio Andrade de Freitas" >}} |
+| Natureza | Pesquisa, desenvolvimento e inovação em software educacional, gamificação e engenharia de software |
+| Instituição de execução | Universidade de Brasília |
+| Órgão/Unidade | Faculdade de Ciências e Tecnologias em Engenharia |
+| Cooperação instituição de pesquisa e empresa | Não informada no cadastro do projeto |
+| Potencial de inovação | Evidenciado por softwares, processos, técnicas, experiências gamificadas e materiais de apoio ao ensino e à divulgação científica |
+
 ## Objetivos
 
 O projeto tem como objetivos principais:
@@ -74,12 +89,14 @@ Entre as frentes conectadas a este projeto estão:
 - produtos de apoio ao ensino de engenharia de software, incluindo {{< link-interno "/products/devdog" "DevDog" >}}, {{< link-interno "/products/gitranking" "Git Ranking" >}} e {{< link-interno "/products/moodlegam" "MoodleGam" >}}; e
 - estudos sobre perfis motivacionais, indicadores de aprendizagem e personalização de ambientes educacionais.
 
-## Equipe associada
+## Equipe
 
-- Prof. {{< link-interno "/people/sergio_freitas" "Sergio Freitas" >}} (coordenador)
-- Prof. {{< link-interno "/people/george_marsicano" "George Marsicano" >}}
-- Prof. {{< link-interno "/people/ricardo_ajax" "Ricardo Ajax" >}}
-- Profa. {{< link-interno "/people/cristiane_ramos" "Cristiane Ramos" >}}
+| Pesquisador | Papel |
+|---|---|
+| {{< link-interno "/people/sergio_freitas" "Sergio Antonio Andrade de Freitas" >}} | Coordenador |
+| {{< link-interno "/people/george_marsicano" "George Marsicano" >}} | Pesquisador |
+| {{< link-interno "/people/ricardo_ajax" "Ricardo Ajax Dias Kosloski" >}} | Pesquisador |
+| {{< link-interno "/people/cristiane_ramos" "Cristiane Soares Ramos" >}} | Pesquisadora |
 
 ## Produções e produtos relacionados
 
@@ -89,3 +106,40 @@ Entre as frentes conectadas a este projeto estão:
 - {{< link-interno "/products/edutrack" "EduTrack" >}}
 - {{< link-interno "/products/gitranking" "Git Ranking" >}}
 - {{< link-interno "/products/moodlegam" "MoodleGam" >}}
+
+## Produção C&T vinculada
+
+| Ano | Produção | Tipo |
+|---|---|---|
+| 2024 | Implementing Neuroscientific Principles in Gamified Software Engineering Courses | Trabalho publicado em anais de evento |
+| 2024 | Crafting Personalized Learning Environments Through Motivational Profiling | Trabalho publicado em anais de evento |
+| 2024 | A Process to Identify Players' Motivational Profiles for Designing a Gamification Project | Livro ou capítulo de livro |
+| 2024 | Gamified Chatbot Management Process: A Way to Build Gamified Chatbots | Livro ou capítulo de livro |
+| 2024 | MoodleGam - Sistema para apoio à criação de gamificações no Moodle | Software |
+| 2024 | Gamificação 'Jornada Galáctica' do Portal Canal Ciência do IBICT | Software |
+| 2024 | Processo de desenvolvimento para chatbots gamificados (GCMP) | Processo ou técnica |
+| 2023 | Gamification Project to Receive Continuous Feedback in the Context of the Evolution of Public Service for Lawyers | Trabalho publicado em anais de evento |
+| 2023 | Gamification in Organizational Contexts: A Systematic Literature Review | Livro ou capítulo de livro |
+| 2023 | Latte: Um Chatbot Gamificado para apoio na produção de artigos científicos | Software |
+| 2023 | Jornada: o uso de RPG em um processo de aprendizagem | Processo ou técnica |
+| 2022 | Evaluation of the Change in the Quality of Reports with the Application of Gamification in a Corporative Institution | Livro ou capítulo de livro |
+| 2022 | Introdução ao uso da Gamificação em sala de aula | Curso de curta duração ministrado |
+| 2022 | PIXEL: uma ferramenta gamificada para aprendizagem de critérios de usabilidade | Software |
+| 2022 | $tudy: Sistema gamificado de educação financeira | Software |
+| 2022 | Sistema Gamificado de Gestão de Ativos (MPI) da Embrapa | Software |
+
+## Orientações vinculadas
+
+| Ano | Orientação | Tipo |
+|---|---|---|
+| 2024 | Avaliação da gamificação na qualidade de código de software | Orientação em andamento |
+| 2024 | Gamification on Chatbots: how to build | Dissertação de mestrado |
+| 2024 | Gamificação no Ambiente Virtual de Aprendizagem Moodle: Guia e Ferramenta para Criadores de Conteúdo | Trabalho de conclusão de curso de graduação |
+| 2023 | Gamificação na Engenharia de Software: Avaliação do engajamento em equipes de Tecnologia da Informação em Fábrica de Software | Orientação em andamento |
+| 2023 | Avaliação da mudança na qualidade dos relatórios com a aplicação da gamificação em atividades de inteligência policial | Dissertação de mestrado |
+| 2023 | Gamificação em Ambientes Organizacionais: Um Estudo de Caso em uma Empresa Pública | Dissertação de mestrado |
+| 2023 | Latte: Um Chatbot Gamificado para Apoio na Produção de Artigos Científicos | Trabalho de conclusão de curso de graduação |
+| 2023 | Jornada: O uso de RPG em um processo de aprendizagem | Trabalho de conclusão de curso de graduação |
+| 2023 | Projeto: Estudos para gamificação da Plataforma de Popularização e Divulgação da Ciência e Tecnologia | Iniciação científica |
+| 2022 | Pixel: Uma ferramenta gamificada para aprendizagem de critérios de usabilidade | Trabalho de conclusão de curso de graduação |
+| 2022 | $tudy - um sistema gamificado de educação financeira | Trabalho de conclusão de curso de graduação |
