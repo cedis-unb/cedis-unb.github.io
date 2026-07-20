@@ -270,6 +270,20 @@ ui_indexed_publications: "Indexed publications"
 
 ui_rss_news: "News RSS feed"
 
+# Newsroom (listing /categories/news/)
+ui_newsroom_eyebrow: "Newsroom"
+ui_newsroom_lead: "Coverage, thesis defenses, products, and institutional milestones from CEDIS — published weekly by the communications team."
+ui_newsroom_featured_label: "Top story"
+ui_newsroom_secondary_label: "Also in focus"
+ui_newsroom_archive_heading: "News archive"
+ui_newsroom_archive_lead: "All previous coverage, in chronological order."
+ui_newsroom_filter_topic_heading: "Filter by topic"
+ui_newsroom_filter_all: "All topics"
+ui_newsroom_stat_total: "News published"
+ui_newsroom_stat_latest: "Latest post"
+ui_newsroom_stat_this_year: "This year"
+ui_newsroom_rss_cta: "Subscribe via RSS"
+
 # Semantic alt text
 ui_alt_profile_photo: "Profile photo"
 ui_alt_product_visual: "Product illustration"
