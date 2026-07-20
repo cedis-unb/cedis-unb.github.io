@@ -71,6 +71,29 @@ projects:
     researchers:
       - sergio_freitas
 
+  - id: project_inovacao_digital_gamificacao
+    name:
+      en: "Digital innovation and gamification for teaching, outreach, and software engineering"
+      pt: "Inovação digital e gamificação para o ensino, divulgação e engenharia de software"
+    status: ongoing
+    start_date: 2021-01-01
+    researchers:
+      - sergio_freitas
+      - george_marsicano
+      - ricardo_ajax
+      - cristiane_ramos
+
+  - id: project_ia_dados_transformacao_digital
+    name:
+      en: "Artificial intelligence and data analysis for digital transformation"
+      pt: "Inteligência artificial e análise de dados para a transformação digital"
+    status: ongoing
+    start_date: 2021-01-01
+    researchers:
+      - sergio_freitas
+      - george_marsicano
+      - andre_lanna
+
   - id: project_super_r
     name: 
       en: "Super-R"
@@ -153,12 +176,12 @@ projects:
 
   - id: project_a3m
     name:
-      en: "Learning for the Third Millennium Program - A3M"
-      pt: "Programa Aprendizagem para o Terceiro Milênio - A3M"
-    status: closed
-    start_date: 2021-01-01
-    end_date: 2024-12-31
+      en: "A3M: Educational innovation with active methodologies"
+      pt: "A3M: Inovação educacional com metodologias ativas"
+    status: ongoing
+    start_date: 2017-01-01
     researchers:
+      - sergio_freitas
       - cristiane_ramos
 
   - id: project_metricas_software
