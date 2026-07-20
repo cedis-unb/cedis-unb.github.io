@@ -17,6 +17,17 @@
     {{- $description = printf "%s…" (strings.TrimRight " ,;:" (substr $description 0 159)) -}}
 {{- end -}}
 {{- $ogLocale := cond (eq .Site.Language.Lang "pt") "pt_BR" "en_US" -}}
+{{- /* og:type mapping by section — falls back to article for content pages, website for taxonomy/list. */ -}}
+{{- $ogType := "article" -}}
+{{- if .IsHome -}}
+    {{- $ogType = "website" -}}
+{{- else if or (eq .Kind "taxonomy") (eq .Kind "term") (eq .Kind "section") -}}
+    {{- $ogType = "website" -}}
+{{- else if eq .Section "people" -}}
+    {{- $ogType = "profile" -}}
+{{- else if eq .Section "products" -}}
+    {{- $ogType = "product" -}}
+{{- end -}}
 {{- $ogImage := .Site.Params.og_image | relURL -}}
 {{- $ogImageAbs := .Site.Params.og_image | absURL -}}
 {{- with .Params.featured_image -}}
@@ -43,7 +54,8 @@
 <meta property="og:locale" content="{{ $ogLocale }}">
 <meta property="og:image" content="{{ $ogImage }}" />
 <meta property="og:image:secure_url" content="{{ $ogImageAbs }}" />
-<meta property="og:type" content="{{if .IsHome}}website{{else}}article{{end}}" />
+<meta property="og:type" content="{{ $ogType }}" />
+<link rel="canonical" href="{{ .Permalink }}" />
 {{- range .AllTranslations }}
 <link rel="alternate" hreflang="{{ if eq .Language.Lang "pt" }}pt-BR{{ else }}en{{ end }}" href="{{ .Permalink }}" />
 {{- end }}
