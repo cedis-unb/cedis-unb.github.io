@@ -70,12 +70,12 @@ jobs:
       - name: Install lychee (link checker)
         uses: lycheeverse/lychee-action@v2
         with:
-          # Roda apenas contra os arquivos gerados; assim links relativos
-          # são resolvidos pelo próprio HTML.
+          # --root-dir resolve links absolutos root-relative (href="/pt/foo")
+          # contra o diretório local do build. Precisa ser caminho absoluto.
           args: >-
             --config lychee.toml
             --no-progress
-            --base public
+            --root-dir ${{ github.workspace }}/public
             public/**/*.html
           fail: true
           # Salva relatório para inspeção mesmo em falha.
