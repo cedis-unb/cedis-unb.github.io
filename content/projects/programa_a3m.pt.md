@@ -23,6 +23,7 @@ publications:
 - 2183-1378
 - indicadores_de_aprendizagem
 summary: "Projeto em andamento associado ao Programa Aprendizagem para o Terceiro Milênio, com foco em inovação educacional, metodologias ativas e indicadores de aprendizagem na Universidade de Brasília."
+featured_image: "../assets/images/featured/a3m-logo.png"
 authorimage: ../assets/images/global/author.webp
 categories:
 - project

@@ -15,6 +15,7 @@ areas:
 partners: []
 funding_agencies: []
 products:
+- chatbot_requisitos
 - super_r
 publications: []
 featured_image: "../assets/images/featured/projeto_SuperR.png"

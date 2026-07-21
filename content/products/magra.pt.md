@@ -6,6 +6,7 @@ language: pt
 product_language: pt
 id: magra
 status: active
+project: project_ia_dados_transformacao_digital
 areas:
 - machine_learning
 - learning_analytics
@@ -19,10 +20,12 @@ authorimage: ../assets/images/global/author.webp
 categories:
 - products
 - sergio_freitas
+- project_ia_dados_transformacao_digital
 tags: 
 - app
 - machine_learning
 - learning_analytics
+- project_ia_dados_transformacao_digital
 ---
 Brasília, Janeiro de 2023.
 

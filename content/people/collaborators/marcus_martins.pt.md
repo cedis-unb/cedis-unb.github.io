@@ -5,14 +5,13 @@ date: 2024-02-17T00:51:15-03:00
 weight: 44
 language: pt
 featured_image: "../assets/images/featured/people_Marcus Martins.png"
-summary: Graduando em Engenharia de Software, Universidade de Brasília 
+summary: Graduando em Engenharia de Software na Universidade de Brasília; orientando PIBIC da Profa. Cristiane Ramos no Projeto Canal Ciência.
 authorimage: ../assets/images/global/author.webp
 categories: 
 - people
 - undergraduate
 - scientific_initiation
 advisors:
-- sergio_freitas
 - cristiane_ramos
 tags: 
 - project_cc
@@ -21,7 +20,8 @@ tags:
 - inactive
 ---
 ## Perfil Acadêmico e Profissional
-- Posição Atual: Graduando em Engenharia de Software, Universidade de Brasília. Iniciação científica em projeto de pesquisa.
+- Posição Atual: Graduando em Engenharia de Software, Universidade de Brasília.
+- Participação CEDIS: orientando PIBIC da Profa. {{< link-interno "/people/cristiane_ramos" "Cristiane Ramos" >}} no {{< link-interno "/projects/canal_ciencia" "Projeto Canal Ciência" >}}.
 
 ## Linhas de Pesquisa
 - Gamificação

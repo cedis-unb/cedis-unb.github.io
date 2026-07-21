@@ -10,12 +10,13 @@
 {{ $productLabel := cond $isPortuguese "Produto digital" "Digital product" }}
 {{ $detailsLabel := cond $isPortuguese "Visão rápida" "At a glance" }}
 {{ $languageLabel := cond $isPortuguese "Idioma do produto" "Product language" }}
-{{ $originProjectsLabel := cond $isPortuguese "Projeto de origem" "Origin project" }}
+{{ $originProjectsLabel := cond $isPortuguese "Projetos de origem" "Origin projects" }}
 {{ $originProjectsEmptyLabel := cond $isPortuguese "Nenhum projeto de origem mapeado." "No origin project mapped." }}
 {{ $summaryLabel := cond $isPortuguese "Resumo" "Summary" }}
 {{ $dateFormat := cond $isPortuguese "02/01/2006" "02 Jan 2006" }}
 {{ $productID := .Params.id | default .File.TranslationBaseName }}
 {{ $originProjectID := .Params.project | default "" }}
+{{ $secondaryProjectIDs := .Params.secondary_projects | default slice }}
 {{ $productLanguageCode := .Params.product_language | default .Site.Language.Lang }}
 {{ $productLanguageDisplay := $productLanguageCode | upper }}
 {{ if eq $productLanguageCode "pt" }}
@@ -64,8 +65,9 @@
   {{ if and (eq .Section "projects") (eq .Lang $.Site.Language.Lang) }}
     {{ $projectID := .Params.id | default .File.TranslationBaseName }}
     {{ $matchesDirect := and $originProjectID (eq $projectID $originProjectID) }}
+    {{ $matchesSecondary := in $secondaryProjectIDs $projectID }}
     {{ $matchesInverse := and .Params.products (in .Params.products $productID) }}
-    {{ if and (or $matchesDirect $matchesInverse) (not (isset $seenProjectPermalinks .RelPermalink)) }}
+    {{ if and (or $matchesDirect $matchesSecondary $matchesInverse) (not (isset $seenProjectPermalinks .RelPermalink)) }}
       {{ $seenProjectPermalinks = merge $seenProjectPermalinks (dict .RelPermalink true) }}
       {{ $originProjects = $originProjects | append . }}
     {{ end }}

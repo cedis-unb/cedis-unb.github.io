@@ -5,8 +5,9 @@ date: 2025-05-03T17:08:50-03:00
 weight: 10
 language: en
 id: project_software_bem
+project_type: umbrella
 status: ongoing
-start_date: 2025-05-03
+start_date: 2020-09-23
 researchers:
 - george_marsicano
 areas:
@@ -15,11 +16,12 @@ partners: []
 funding_agencies: []
 products:
 - bem_estar_universitario
+- nativo
 - prevencao_abuso_infantil
 - prevencao_violencia_infancia
 publications: []
 featured_image: "../assets/images/featured/projeto_Software_Bem.png"
-summary: Software for Good (SpB) is a collective—a community of people and organizations, meanings, actions, solutions, feelings, and energies aligned to generate good through the use of software.
+summary: Software for Good (SpB) is a social-impact macro project that brings together people, organizations, actions, and digital solutions oriented toward generating good through software.
 authorimage: ../assets/images/global/author.webp
 categories: 
 - project
@@ -32,13 +34,13 @@ tags:
 
 ## Welcome to “Software for Good (SpB),” a social impact initiative at the University of Brasília
 
-Launched on September 23, 2020, during the 20th University Week at the University of Brasília (UnB), Software for Good (SpB) is a proposal to establish a collective—a community of people and organizations, meanings, actions, solutions, feelings, and energies aligned to generate good through digital technology (specifically, software). Anchored at the Center for Studies, Development, and Innovation in Software (CEDIS) of the School of Sciences and Engineering Technologies (FCTE/UnB) and coordinated by professor George Marsicano, SpB’s mission is to develop digital solutions with positive social impact, at no cost to the end user, integrating areas such as software engineering, health, education, advertising, and social services.
+Launched on September 23, 2020, during the 20th University Week at the University of Brasília (UnB), Software for Good (SpB) is a social-impact macro project and a proposal to establish a collective: a community of people and organizations, meanings, actions, solutions, feelings, and energies aligned to generate good through digital technology, especially software. Anchored at the Center for Studies, Development, and Innovation in Software (CEDIS) of the School of Sciences and Engineering Technologies (FCTE/UnB) and coordinated by professor George Marsicano, SpB’s mission is to develop digital solutions with positive social impact, at no cost to the end user, integrating areas such as software engineering, health, education, advertising, and social services.
 
 Through the articulation of diverse forms of knowledge and collaborative work with public and private institutions, the program aims to promote citizenship, empowerment, and social transformation through technology.
 
 ## About the program
 
-SpB emerges as a response to the need to connect technological innovation with real social demands. Inspired by practical experiences such as the DOARTI project—developed during the COVID-19 pandemic—the program proposes the creation of an ecosystem for developing social software, supported by multidisciplinary teams and a network of internal and external partnerships at the University of Brasília.
+SpB emerges as a response to the need to connect technological innovation with real social demands. As a macro project, it organizes and gives continuity to linked initiatives such as the {{< link-interno "/projects/doarti" "DOARTI project" >}}, developed during the COVID-19 pandemic. The program proposes the creation of an ecosystem for developing social software, supported by multidisciplinary teams and a network of internal and external partnerships at the University of Brasília.
 
 ### Its mission is:
 - To align and inspire people and organizations to do good.
@@ -63,7 +65,7 @@ SpB emerges as a response to the need to connect technological innovation with r
 ## Associated projects
 
 ### DOARTI
-Emerging in the context of the pandemic, DOARTI created a digital platform for mapping and connecting charitable organizations with potential donors in the Federal District. With an app and website already in operation, the project supports 21 social initiatives and strengthens solidarity networks. It is developed entirely by volunteers and involves students and professionals from various fields.
+Emerging in the context of the pandemic, {{< link-interno "/projects/doarti" "DOARTI" >}} is a project linked to Software for Good. It created a digital platform for mapping and connecting charitable organizations with potential donors in the Federal District. With an app and website already in operation, the project supports 21 social initiatives and strengthens solidarity networks. It is developed entirely by volunteers and involves students and professionals from various fields.
 
 ### LEPIC
 Focused on education, LEPIC aims to develop a tool for assessing and monitoring children's reading fluency. The project is a result of a partnership between UnB (FCTE and FCTS) and UFMG, and it supports public literacy policies based on accessible technology and scientific evidence.

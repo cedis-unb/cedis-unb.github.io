@@ -20,12 +20,12 @@ areas:
 partners: []
 funding_agencies: []
 products:
-- octaanalysis
-- jornada_galactica
+- atloria
+- deckmanager
 - devdog
-- edutrack
 - gitranking
 - moodlegam
+- nativo
 publications:
 - 10.1109/FIE61694.2024.10893484
 - 10.1109/FIE61694.2024.10893473
@@ -84,9 +84,9 @@ O projeto tem como objetivos principais:
 
 Entre as frentes conectadas a este projeto estão:
 
-- experiências gamificadas para divulgação científica, incluindo a {{< link-interno "/products/jornada_galactica" "Jornada Galáctica" >}};
-- plataformas e métodos para acompanhamento, desenho e análise de experiências gamificadas, como {{< link-interno "/products/octaanalysis" "OctaAnalysis" >}} e {{< link-interno "/products/edutrack" "EduTrack" >}};
-- produtos de apoio ao ensino de engenharia de software, incluindo {{< link-interno "/products/devdog" "DevDog" >}}, {{< link-interno "/products/gitranking" "Git Ranking" >}} e {{< link-interno "/products/moodlegam" "MoodleGam" >}}; e
+- produtos de apoio ao ensino de engenharia de software, incluindo {{< link-interno "/products/devdog" "DevDog" >}}, {{< link-interno "/products/gitranking" "Git Ranking" >}} e {{< link-interno "/products/moodlegam" "MoodleGam" >}};
+- experiências digitais de aprendizagem ativa, visualização e apresentação interativa, incluindo {{< link-interno "/products/atloria" "Atloria" >}} e {{< link-interno "/products/deckmanager" "CEDIS Deck Manager" >}};
+- soluções digitais com impacto educacional e social, como {{< link-interno "/products/nativo" "Nativo" >}}; e
 - estudos sobre perfis motivacionais, indicadores de aprendizagem e personalização de ambientes educacionais.
 
 ## Equipe
@@ -100,12 +100,12 @@ Entre as frentes conectadas a este projeto estão:
 
 ## Produções e produtos relacionados
 
-- {{< link-interno "/products/octaanalysis" "OctaAnalysis" >}}
-- {{< link-interno "/products/jornada_galactica" "Jornada Galáctica" >}}
+- {{< link-interno "/products/atloria" "Atloria" >}}
+- {{< link-interno "/products/deckmanager" "CEDIS Deck Manager" >}}
 - {{< link-interno "/products/devdog" "DevDog" >}}
-- {{< link-interno "/products/edutrack" "EduTrack" >}}
 - {{< link-interno "/products/gitranking" "Git Ranking" >}}
 - {{< link-interno "/products/moodlegam" "MoodleGam" >}}
+- {{< link-interno "/products/nativo" "Nativo" >}}
 
 ## Produção C&T vinculada
 

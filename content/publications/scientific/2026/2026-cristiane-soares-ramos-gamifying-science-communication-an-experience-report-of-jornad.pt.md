@@ -35,6 +35,7 @@ authors_structured:
 tags:
 - gamification
 - digital_transformation
+- project_cc
 - sergio_freitas
 - cristiane_ramos
 - mylena_faria

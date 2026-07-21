@@ -15,13 +15,15 @@ areas:
 - machine_learning
 - nlp
 - ai
-partners: []
-funding_agencies: []
+partners:
+- ibict
+funding_agencies:
+- fapdf
 products:
 - contextus
 publications: []
 featured_image: "../assets/images/featured/projeto_DFCris.png"
-summary: A research project in partnership with IBICT and funded by FAP/DF.
+summary: A research project in partnership with IBICT and funded by FAP-DF.
 authorimage: ../assets/images/global/author.webp
 categories: 
 - project
@@ -37,7 +39,7 @@ tags:
 - closed
 ---
 ## Overview
-DFCris is a 24-month project carried out in partnership between the [Brazilian Institute of Information in Science and Technology - IBICT](http://www.ibict.br/) and CEDIS, funded by [FAP/DF](https://www.fap.df.gov.br/).
+DFCris is a 24-month project carried out in partnership between the [Brazilian Institute of Information in Science and Technology - IBICT](http://www.ibict.br/) and CEDIS, funded by [FAP-DF](https://www.fap.df.gov.br/).
 The project's goal is the expansion and enhancement of the Cris model for the research environment of the Federal District (DF).
 ## Members
 ### Researchers
