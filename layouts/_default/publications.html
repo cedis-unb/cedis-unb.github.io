@@ -7,25 +7,69 @@
 {{ $roleLabel := i18n "ui_yearly_archive" }}
 {{ $statsTitle := i18n "ui_at_a_glance" }}
 {{ $yearsTitle := i18n "ui_years" }}
-{{ $content := .Content }}
-
-{{ $yearEntries := slice }}
-{{ range findRE `(?s)<h2 id="([^"]+)"[^>]*>(.*?)</h2>` $content }}
-  {{ $entry := . }}
-  {{ $anchor := replaceRE `(?s)<h2 id="([^"]+)"[^>]*>(.*?)</h2>` `${1}` $entry }}
-  {{ $label := replaceRE `(?s)<h2 id="([^"]+)"[^>]*>(.*?)</h2>` `${2}` $entry | plainify | htmlUnescape | strings.TrimSpace }}
-  {{ if gt (len (findRE `^[0-9]{4}$` $label)) 0 }}
-    {{ $resolvedAnchor := $label | anchorize }}
-    {{ $content = replaceRE (printf `id="%s"` $anchor) (printf `id="%s"` $resolvedAnchor) $content 1 }}
-    {{ $yearEntries = $yearEntries | append (dict "label" $label "anchor" $resolvedAnchor) }}
+{{ $filter := .Params.publication_filter | default "" }}
+{{ $scientificTypes := slice "article" "conference" "workshop" "book" "book_section" "book chapter" "chapter" }}
+{{ $typeOrder := dict "article" 1 "conference" 2 "workshop" 3 "book" 4 "book_section" 5 "book chapter" 5 "chapter" 6 "registro" 7 "phd" 8 "dissertation" 9 "specialization" 10 "tcc" 11 }}
+{{ $publicationEntries := slice }}
+{{ $yearLabelsSet := dict }}
+{{ range hugo.Data.productions.items }}
+  {{ $yearText := printf "%v" .year }}
+  {{ $yearLabel := $yearText }}
+  {{ $baseYear := 0 }}
+  {{ if gt (len (findRE "^[0-9]{4}" $yearText)) 0 }}
+    {{ $yearLabel = replaceRE "^([0-9]{4}).*$" "$1" $yearText }}
+    {{ $baseYear = int $yearLabel }}
+  {{ end }}
+  {{ $semester := 0 }}
+  {{ if gt (len (findRE "^[0-9]{4}/[0-9]+$" $yearText)) 0 }}
+    {{ $semester = int (replaceRE "^[0-9]{4}/([0-9]+)$" "$1" $yearText) }}
+  {{ end }}
+  {{ $includePublication := false }}
+  {{ if eq $filter "" }}
+    {{ $includePublication = ne .type "tcc" }}
+  {{ else if eq $filter "tcc" }}
+    {{ $includePublication = eq .type "tcc" }}
+  {{ else if eq $filter "thesis" }}
+    {{ $includePublication = or (eq .type "phd") (eq .type "dissertation") }}
+  {{ else if eq $filter "specialization" }}
+    {{ $includePublication = eq .type "specialization" }}
+  {{ else if eq $filter "registrations" }}
+    {{ $includePublication = eq .type "registro" }}
+  {{ else if eq $filter "scientific" }}
+    {{ $includePublication = in $scientificTypes .type }}
+  {{ else if eq $filter "zenodo" }}
+    {{ with .zenodo_record }}
+      {{ $currentRecord := index . $.Site.Language.Lang | default "" }}
+      {{ $ptRecord := index . "pt" | default "" }}
+      {{ $enRecord := index . "en" | default "" }}
+      {{ $includePublication = or (ne $currentRecord "") (ne $ptRecord "") (ne $enRecord "") }}
+    {{ end }}
+  {{ else if eq $filter "didactic" }}
+    {{ $includePublication = or (in (.tags | default slice) "didactic") (in (.tags | default slice) "teaching_material") }}
+  {{ end }}
+  {{ $includePublication = and $includePublication (ge $baseYear 2013) }}
+  {{ if $includePublication }}
+    {{ $title := index .title $.Site.Language.Lang }}
+    {{ if not $title }}{{ $title = index .title "pt" }}{{ end }}
+    {{ if not $title }}{{ $title = index .title "en" }}{{ end }}
+    {{ $typeRank := 99 }}
+    {{ with index $typeOrder .type }}{{ $typeRank = . }}{{ end }}
+    {{ $authorsText := delimit .authors ", " }}
+    {{ $sortSource := print $authorsText " " $title }}
+    {{ $sortKey := printf "%04d_%02d_%02d_%s" (sub 9999 $baseYear) (sub 99 $semester) $typeRank (lower $sortSource) }}
+    {{ $publicationEntries = $publicationEntries | append (dict "item" . "title" $title "yearText" $yearText "yearLabel" $yearLabel "sortKey" $sortKey) }}
+    {{ $yearLabelsSet = merge $yearLabelsSet (dict $yearLabel true) }}
   {{ end }}
 {{ end }}
+{{ $publicationEntries = sort $publicationEntries "sortKey" "asc" }}
+{{ $publicationCount := len $publicationEntries }}
 
-{{ $publicationCount := 0 }}
-{{ range hugo.Data.productions.items }}
-  {{ if ne .type "tcc" }}
-    {{ $publicationCount = add $publicationCount 1 }}
-  {{ end }}
+{{ $yearLabels := slice }}
+{{ range $key, $_ := $yearLabelsSet }}{{ $yearLabels = $yearLabels | append $key }}{{ end }}
+{{ $yearLabels = sort $yearLabels "value" "desc" }}
+{{ $yearEntries := slice }}
+{{ range $yearLabels }}
+  {{ $yearEntries = $yearEntries | append (dict "label" . "anchor" (. | anchorize)) }}
 {{ end }}
 
 {{ $yearCount := len $yearEntries }}
@@ -38,18 +82,15 @@
 {{ $filterYearsSet := dict }}
 {{ $filterTypesSet := dict }}
 {{ $filterTopicsSet := dict }}
-{{ range hugo.Data.productions.items }}
-  {{ if ne .type "tcc" }}
-    {{ if .year }}
-      {{ $filterYearsSet = merge $filterYearsSet (dict (printf "%v" .year) true) }}
-    {{ end }}
-    {{ if .type }}
-      {{ $filterTypesSet = merge $filterTypesSet (dict .type true) }}
-    {{ end }}
-    {{ range .tags }}
-      {{ if and (not (in $advisorKeys .)) (ne . "active") (ne . "inactive") }}
-        {{ $filterTopicsSet = merge $filterTopicsSet (dict . true) }}
-      {{ end }}
+{{ range $publicationEntries }}
+  {{ $item := .item }}
+  {{ $filterYearsSet = merge $filterYearsSet (dict .yearLabel true) }}
+  {{ if $item.type }}
+    {{ $filterTypesSet = merge $filterTypesSet (dict $item.type true) }}
+  {{ end }}
+  {{ range $item.tags }}
+    {{ if and (not (in $advisorKeys .)) (ne . "active") (ne . "inactive") }}
+      {{ $filterTopicsSet = merge $filterTopicsSet (dict . true) }}
     {{ end }}
   {{ end }}
 {{ end }}
@@ -72,27 +113,23 @@
 {{ $filterNoResultsLabel := i18n "ui_filter_no_results" }}
 
 {{ $siteLang := .Site.Language.Lang }}
-{{ $typeMap := dict "book" "Book" "chapter" "Chapter" "article" "ScholarlyArticle" "journal" "ScholarlyArticle" "conference" "ScholarlyArticle" "workshop" "ScholarlyArticle" "tcc" "Thesis" "dissertation" "Thesis" "specialization" "Thesis" "phd" "Thesis" }}
+{{ $typeMap := dict "book" "Book" "book_section" "Chapter" "book chapter" "Chapter" "chapter" "Chapter" "article" "ScholarlyArticle" "journal" "ScholarlyArticle" "conference" "ScholarlyArticle" "workshop" "ScholarlyArticle" "registro" "SoftwareSourceCode" "tcc" "Thesis" "dissertation" "Thesis" "specialization" "Thesis" "phd" "Thesis" }}
 {{ $graph := slice }}
-{{ range hugo.Data.productions.items }}
-  {{ $title := "" }}
-  {{ with .title }}
-    {{ $title = index . $siteLang }}
-    {{ if not $title }}{{ $title = index . "en" }}{{ end }}
-    {{ if not $title }}{{ $title = index . "pt" }}{{ end }}
-  {{ end }}
+{{ range $publicationEntries }}
+  {{ $title := .title }}
+  {{ $pub := .item }}
   {{ if $title }}
-    {{ $schemaType := index $typeMap .type | default "CreativeWork" }}
+    {{ $schemaType := index $typeMap $pub.type | default "CreativeWork" }}
     {{ $authors := slice }}
-    {{ range .authors }}
+    {{ range $pub.authors }}
       {{ $authors = $authors | append (dict "@type" "Person" "name" .) }}
     {{ end }}
     {{ $entry := dict "@type" $schemaType "name" $title "inLanguage" $siteLang }}
-    {{ with .year }}{{ $entry = merge $entry (dict "datePublished" (printf "%d" .)) }}{{ end }}
+    {{ with $pub.year }}{{ $entry = merge $entry (dict "datePublished" (printf "%v" .)) }}{{ end }}
     {{ if gt (len $authors) 0 }}{{ $entry = merge $entry (dict "author" $authors) }}{{ end }}
-    {{ with .publisher }}{{ if . }}{{ $entry = merge $entry (dict "publisher" (dict "@type" "Organization" "name" .)) }}{{ end }}{{ end }}
-    {{ with .journal_event }}{{ if . }}{{ $entry = merge $entry (dict "isPartOf" (dict "@type" "CreativeWork" "name" .)) }}{{ end }}{{ end }}
-    {{ with .doi_isbn }}{{ if . }}{{ $entry = merge $entry (dict "identifier" .) }}{{ end }}{{ end }}
+    {{ with $pub.publisher }}{{ if . }}{{ $entry = merge $entry (dict "publisher" (dict "@type" "Organization" "name" .)) }}{{ end }}{{ end }}
+    {{ with $pub.journal_event }}{{ if . }}{{ $entry = merge $entry (dict "isPartOf" (dict "@type" "CreativeWork" "name" .)) }}{{ end }}{{ end }}
+    {{ with $pub.doi_isbn }}{{ if . }}{{ $entry = merge $entry (dict "identifier" .) }}{{ end }}{{ end }}
     {{ $graph = $graph | append $entry }}
   {{ end }}
 {{ end }}
@@ -233,7 +270,179 @@
           </p>
         </div>
         <div id="publications-content" class="[&_h2]:mt-14 [&_h2]:scroll-mt-28 [&_h2]:border-t [&_h2]:border-black/5 [&_h2]:pt-10 [&_h2]:text-4xl [&_h2]:font-black [&_h2]:tracking-tight [&_h2]:text-gray-950 dark:[&_h2]:border-white/10 dark:[&_h2]:text-white [&_ol]:my-5 [&_ol]:list-none [&_ol]:pl-0 [&_ul]:my-5 [&_ul]:pl-5 [&_p]:my-5 [&_p]:text-base [&_p]:leading-7 [&_p]:text-gray-600 dark:[&_p]:text-white/72 [&_a]:font-semibold [&_a]:text-primary-700 [&_a]:transition-colors hover:[&_a]:text-primary-600 dark:[&_a]:text-primary-200 dark:hover:[&_a]:text-primary-100 [&_.caput]:mt-10 [&_.caput]:mb-4">
-          {{ $content | safeHTML }}
+          {{ $currentYear := "" }}
+          {{ $advisorsList := slice }}
+          {{ range $key, $_ := hugo.Data.advisors.advisors }}
+            {{ $advisorsList = $advisorsList | append $key }}
+          {{ end }}
+          {{ range $publicationEntries }}
+            {{ $entry := . }}
+            {{ $pub := .item }}
+            {{ if ne $entry.yearLabel $currentYear }}
+              {{ if ne $currentYear "" }}</ol>{{ end }}
+              {{ $currentYear = $entry.yearLabel }}
+              <h2 id="{{ $currentYear | anchorize }}">{{ $currentYear }}</h2>
+              <ol class="publications-lncs m-0 list-none space-y-4 p-0">
+            {{ end }}
+
+            {{ $authorsText := delimit $pub.authors ", " }}
+            {{ $detailParts := slice }}
+            {{ with $pub.program }}{{ if . }}{{ $detailParts = $detailParts | append (. | i18n) }}{{ end }}{{ end }}
+            {{ if or (eq $pub.type "conference") (eq $pub.type "workshop") }}
+              {{ $conferenceDetail := $pub.journal_event }}
+              {{ with $pub.pages }}{{ if . }}{{ $conferenceDetail = print $conferenceDetail ", p" . }}{{ end }}{{ end }}
+              {{ if ne $conferenceDetail "" }}{{ $detailParts = $detailParts | append $conferenceDetail }}{{ end }}
+            {{ end }}
+            {{ if eq $pub.type "article" }}
+              {{ $articleDetail := $pub.journal_event }}
+              {{ with $pub.volume }}{{ if . }}{{ $articleDetail = print $articleDetail ", " . }}{{ end }}{{ end }}
+              {{ with $pub.pages }}{{ if . }}{{ $articleDetail = print $articleDetail " (" . ")" }}{{ end }}{{ end }}
+              {{ if ne $articleDetail "" }}{{ $detailParts = $detailParts | append $articleDetail }}{{ end }}
+            {{ end }}
+            {{ if or (eq $pub.type "book_section") (eq $pub.type "chapter") }}
+              {{ with $pub.book_title }}{{ if . }}{{ $detailParts = $detailParts | append . }}{{ end }}{{ end }}
+            {{ end }}
+            {{ if eq $pub.type "book" }}
+              {{ with $pub.publisher }}{{ if . }}{{ $detailParts = $detailParts | append . }}{{ end }}{{ end }}
+            {{ end }}
+            {{ with $pub.location }}{{ if . }}{{ $detailParts = $detailParts | append . }}{{ end }}{{ end }}
+
+            {{ $filteredTags := slice }}
+            {{ range $pub.tags }}
+              {{ if and (not (in $advisorsList .)) (ne . "active") (ne . "inactive") }}
+                {{ $filteredTags = $filteredTags | append . }}
+              {{ end }}
+            {{ end }}
+            {{ $filterTagsJoin := delimit $filteredTags "|" }}
+            {{ $filterType := $pub.type | default "" }}
+
+            {{ $podcast := "" }}
+            {{ with $pub.spotify_podcast }}{{ $podcast = index . $.Site.Language.Lang | default "" }}{{ end }}
+            {{ $github := "" }}
+            {{ with $pub.github_repo }}{{ $github = index . $.Site.Language.Lang | default "" }}{{ end }}
+            {{ $zenodo := "" }}
+            {{ with $pub.zenodo_record }}{{ $zenodo = index . $.Site.Language.Lang | default "" }}{{ end }}
+
+            {{ $bibtype := "misc" }}
+            {{ if eq $pub.type "article" }}{{ $bibtype = "article" }}{{ end }}
+            {{ if or (eq $pub.type "conference") (eq $pub.type "workshop") }}{{ $bibtype = "inproceedings" }}{{ end }}
+            {{ if eq $pub.type "book" }}{{ $bibtype = "book" }}{{ end }}
+            {{ if or (eq $pub.type "book_section") (eq $pub.type "chapter") }}{{ $bibtype = "incollection" }}{{ end }}
+            {{ if or (eq $pub.type "phd") (eq $pub.type "dissertation") }}{{ $bibtype = "phdthesis" }}{{ end }}
+            {{ if eq $pub.type "specialization" }}{{ $bibtype = "mastersthesis" }}{{ end }}
+            {{ $bibLastname := "cedis" }}
+            {{ if gt (len $pub.authors) 0 }}
+              {{ $parts := split (index $pub.authors 0) " " }}
+              {{ $bibLastname = index $parts (sub (len $parts) 1) | lower | replaceRE `[^a-z]` "" }}
+            {{ end }}
+            {{ $bibKey := printf "%s%v" $bibLastname $pub.year }}
+            {{ $bibFields := slice }}
+            {{ if $authorsText }}{{ $bibFields = $bibFields | append (printf "  author = {%s}" (delimit $pub.authors " and ")) }}{{ end }}
+            {{ $bibFields = $bibFields | append (printf "  title = {%s}" $entry.title) }}
+            {{ with $pub.year }}{{ $bibFields = $bibFields | append (printf "  year = {%v}" .) }}{{ end }}
+            {{ if or (eq $pub.type "conference") (eq $pub.type "workshop") }}{{ with $pub.journal_event }}{{ if . }}{{ $bibFields = $bibFields | append (printf "  booktitle = {%s}" .) }}{{ end }}{{ end }}{{ end }}
+            {{ if eq $pub.type "article" }}{{ with $pub.journal_event }}{{ if . }}{{ $bibFields = $bibFields | append (printf "  journal = {%s}" .) }}{{ end }}{{ end }}{{ end }}
+            {{ if or (eq $pub.type "book_section") (eq $pub.type "chapter") }}{{ with $pub.book_title }}{{ if . }}{{ $bibFields = $bibFields | append (printf "  booktitle = {%s}" .) }}{{ end }}{{ end }}{{ end }}
+            {{ with $pub.volume }}{{ if . }}{{ $bibFields = $bibFields | append (printf "  volume = {%v}" .) }}{{ end }}{{ end }}
+            {{ with $pub.pages }}{{ if . }}{{ $bibFields = $bibFields | append (printf "  pages = {%v}" .) }}{{ end }}{{ end }}
+            {{ with $pub.publisher }}{{ if . }}{{ $bibFields = $bibFields | append (printf "  publisher = {%s}" .) }}{{ end }}{{ end }}
+            {{ with $pub.location }}{{ if . }}{{ $bibFields = $bibFields | append (printf "  address = {%s}" .) }}{{ end }}{{ end }}
+            {{ with $pub.doi_isbn }}{{ if . }}{{ $identifier := printf "%v" . }}{{ if and (hasPrefix $identifier "10.") (in $identifier "/") }}{{ $bibFields = $bibFields | append (printf "  doi = {%s}" $identifier) }}{{ else }}{{ $bibFields = $bibFields | append (printf "  isbn = {%s}" $identifier) }}{{ end }}{{ end }}{{ end }}
+            {{ $bibtex := printf "@%s{%s,\n%s\n}" $bibtype $bibKey (delimit $bibFields ",\n") }}
+
+            <li x-data="{ open: false, copied: false }"
+                data-pub-item
+                data-pub-year="{{ $entry.yearLabel }}"
+                data-pub-type="{{ $filterType }}"
+                data-pub-topics="|{{ $filterTagsJoin }}|"
+                x-show="(filters.year === '' || filters.year === '{{ $entry.yearLabel }}') && (filters.type === '' || filters.type === '{{ $filterType }}') && (filters.topic === '' || ('|{{ $filterTagsJoin }}|').includes('|' + filters.topic + '|'))"
+                class="list-none rounded-[1.5rem] border border-black/5 bg-white/80 px-5 py-5 text-base leading-7 text-gray-700 shadow-[0_16px_50px_rgba(15,23,42,0.08)] backdrop-blur dark:border-white/10 dark:bg-white/[0.04] dark:text-white/78">
+              <div class="flex flex-col gap-5">
+                <div class="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
+                  <div class="space-y-3">
+                    {{ if ne $authorsText "" }}
+                    <p class="m-0 text-xl font-black leading-tight text-gray-950 dark:text-white">{{ $authorsText }}</p>
+                    {{ end }}
+                    <p class="m-0 text-base leading-7 text-gray-600 dark:text-white/72">
+                      {{ if $pub.url }}<a href="{{ $pub.url }}" {{ if or (hasPrefix $pub.url "http://") (hasPrefix $pub.url "https://") }}target="_blank" rel="noopener noreferrer"{{ end }} class="font-semibold text-primary-700 transition-colors hover:text-primary-600 dark:text-primary-200 dark:hover:text-primary-100">{{ end }}{{ $entry.title }}{{ if $pub.url }}</a>{{ end }}
+                    </p>
+                    {{ if gt (len $detailParts) 0 }}
+                    <p class="m-0 text-sm leading-6 text-gray-500 dark:text-white/60">{{ delimit $detailParts " &middot; " | safeHTML }}</p>
+                    {{ end }}
+                  </div>
+                  {{ if $pub.year }}
+                  <span class="inline-flex items-center rounded-full border border-primary-200 bg-primary-50 px-3 py-1 text-sm font-semibold text-primary-700 dark:border-primary-400/30 dark:bg-primary-500/10 dark:text-primary-200">{{ $pub.year }}</span>
+                  {{ end }}
+                </div>
+
+                {{ if gt (len $pub.advisors) 0 }}
+                <div>
+                  <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-gray-400 dark:text-white/72">{{ i18n "orientador" }}</div>
+                  <div class="mt-2 flex flex-wrap gap-2">
+                    {{ range $pub.advisors }}
+                      {{ with index hugo.Data.advisors.advisors . }}
+                        <a href="{{ if hasPrefix .link "/" }}{{ .link | relLangURL }}{{ else }}{{ .link }}{{ end }}" class="inline-flex rounded-full border border-black/10 bg-stone-50 px-3 py-1 text-sm font-medium text-gray-700 transition-colors hover:border-primary-500 hover:text-primary-600 dark:border-white/10 dark:bg-white/[0.06] dark:text-white/78 dark:hover:border-primary-300 dark:hover:text-primary-200">{{ .name }}</a>
+                      {{ end }}
+                    {{ end }}
+                  </div>
+                </div>
+                {{ end }}
+
+                {{ if gt (len $filteredTags) 0 }}
+                <div>
+                  <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-gray-400 dark:text-white/72">{{ cond $isPt "Temas" "Topics" }}</div>
+                  <div class="mt-2 flex flex-wrap gap-2">
+                    {{ range $filteredTags }}
+                      <a href="{{ printf "/tags/%s" (. | urlize) | relLangURL }}" class="inline-flex rounded-full border border-black/10 bg-stone-50 px-3 py-1 text-sm font-medium text-gray-700 transition-colors hover:border-primary-500 hover:text-primary-600 dark:border-white/10 dark:bg-white/[0.06] dark:text-white/78 dark:hover:border-primary-300 dark:hover:text-primary-200">{{ . | i18n }}</a>
+                    {{ end }}
+                  </div>
+                </div>
+                {{ end }}
+
+                <div class="flex flex-wrap gap-2">
+                  {{ with $pub.doi_isbn }}
+                    {{ if . }}
+                      {{ $identifier := printf "%v" . }}
+                      {{ $isDoi := and (hasPrefix $identifier "10.") (in $identifier "/") }}
+                      {{ $label := cond $isDoi "DOI" "ISBN" }}
+                      {{ if $isDoi }}
+                      <a href="https://doi.org/{{ $identifier }}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-full border border-black/10 bg-white px-3 py-1.5 text-sm font-medium text-gray-700 transition-colors hover:border-primary-500 hover:text-primary-600 dark:border-white/10 dark:bg-white/[0.06] dark:text-white/78 dark:hover:border-primary-300 dark:hover:text-primary-200">{{ $label }}: {{ $identifier }}</a>
+                      {{ else }}
+                      <span class="inline-flex items-center gap-2 rounded-full border border-black/10 bg-white px-3 py-1.5 text-sm font-medium text-gray-700 dark:border-white/10 dark:bg-white/[0.06] dark:text-white/78">{{ $label }}: {{ $identifier }}</span>
+                      {{ end }}
+                    {{ end }}
+                  {{ end }}
+                  {{ if $podcast }}
+                  <a href="{{ $podcast }}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-full border border-black/10 bg-white px-3 py-1.5 text-sm font-medium text-gray-700 transition-colors hover:border-primary-500 hover:text-primary-600 dark:border-white/10 dark:bg-white/[0.06] dark:text-white/78 dark:hover:border-primary-300 dark:hover:text-primary-200">Spotify</a>
+                  {{ end }}
+                  {{ if $github }}
+                  <a href="{{ $github }}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-full border border-black/10 bg-white px-3 py-1.5 text-sm font-medium text-gray-700 transition-colors hover:border-primary-500 hover:text-primary-600 dark:border-white/10 dark:bg-white/[0.06] dark:text-white/78 dark:hover:border-primary-300 dark:hover:text-primary-200">GitHub</a>
+                  {{ end }}
+                  {{ if $zenodo }}
+                  <a href="{{ $zenodo }}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-full border border-black/10 bg-white px-3 py-1.5 text-sm font-medium text-gray-700 transition-colors hover:border-primary-500 hover:text-primary-600 dark:border-white/10 dark:bg-white/[0.06] dark:text-white/78 dark:hover:border-primary-300 dark:hover:text-primary-200">Zenodo</a>
+                  {{ end }}
+                  <button type="button"
+                          @click="navigator.clipboard.writeText($refs.bibtex.textContent.trim()).then(() => { copied=true; setTimeout(()=>copied=false, 2000) })"
+                          :aria-label="copied ? '{{ i18n "ui_bibtex_copied" }}' : '{{ i18n "ui_bibtex_copy" }}'"
+                          class="inline-flex items-center gap-2 rounded-full border border-black/10 bg-white px-3 py-1.5 text-sm font-medium text-gray-700 transition-colors hover:border-primary-500 hover:text-primary-600 dark:border-white/10 dark:bg-white/[0.06] dark:text-white/78 dark:hover:border-primary-300 dark:hover:text-primary-200">
+                    <span x-text="copied ? 'OK' : 'BibTeX'"></span>
+                  </button>
+                </div>
+                <script type="application/x-bibtex" x-ref="bibtex">{{ $bibtex }}</script>
+
+                {{ with $pub.summary }}
+                  {{ $summary := index . $.Site.Language.Lang }}
+                  {{ if $summary }}
+                  <div>
+                    <button type="button" @click="open = !open" class="inline-flex items-center rounded-full bg-primary-600 px-4 py-2 text-sm font-semibold text-white shadow-lg shadow-primary-600/20 transition-colors hover:bg-primary-500">{{ i18n "abstract" }}</button>
+                    <div x-show="open" x-cloak class="mt-3 rounded-[1.25rem] border border-primary-100 bg-primary-50/70 px-4 py-4 text-sm leading-6 text-gray-700 dark:border-primary-400/20 dark:bg-primary-500/10 dark:text-white/75">{{ $summary }}</div>
+                  </div>
+                  {{ end }}
+                {{ end }}
+              </div>
+            </li>
+          {{ end }}
+          {{ if ne $currentYear "" }}</ol>{{ end }}
         </div>
       </div>
     </article>
