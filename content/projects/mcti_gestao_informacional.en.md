@@ -17,6 +17,7 @@ funding_agencies: []
 products: []
 publications: []
 summary: "Ongoing project focused on supporting informational management at the Ministry of Science, Technology and Innovation."
+featured_image: "../assets/images/featured/project_mcti_gestao.png"
 authorimage: ../assets/images/global/author.webp
 categories:
 - project
