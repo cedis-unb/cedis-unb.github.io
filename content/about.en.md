@@ -21,9 +21,9 @@ Our work runs on three fronts:
 
 ## Learn more
 
-- {{< link-interno "/people" "Who makes CEDIS" >}} — researchers, students, collaborators, and alumni
 - {{< link-interno "/history" "Our history" >}} — timeline since 2013
+- {{< link-interno "/partners" "Partners & recognitions" >}} — institutions that walk with us, awards, and institutional milestones
 - {{< link-interno "/infra" "Infrastructure" >}} — where we work and with what resources
-- {{< link-interno "/partners" "Partners" >}} — institutions that walk with us
+- {{< link-interno "/indicadores" "Indicators" >}} — consolidated numbers for people, projects, products, and publications
 - {{< link-interno "/map" "Knowledge map" >}} — visualization of areas, people, and projects
 - {{< link-interno "/contact" "Contact" >}} — how to reach us

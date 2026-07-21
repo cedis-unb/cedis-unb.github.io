@@ -17,6 +17,7 @@ funding_agencies: []
 products: []
 publications: []
 summary: "Projeto em andamento voltado a apoiar a gestão informacional do Ministério da Ciência, Tecnologia e Inovação."
+featured_image: "../assets/images/featured/project_mcti_gestao.png"
 authorimage: ../assets/images/global/author.webp
 categories:
 - project

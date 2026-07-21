@@ -127,34 +127,16 @@ languages:
           weight: 20
         - identifier: sobre-parceiros
           pre: people
-          name: Parceiros
-          post: "Instituições e laboratórios que caminham conosco"
+          name: "Parceiros e reconhecimentos"
+          post: "Instituições, prêmios e marcos institucionais"
           url: /parceiros/
           weight: 30
-        - identifier: sobre-reconhecimentos
-          pre: stars
-          name: Reconhecimentos
-          post: "Prêmios e menções honrosas"
-          url: /reconhecimentos/
-          weight: 40
         - identifier: sobre-infra
           pre: infrastructure
           name: Infraestrutura
           post: "Espaços e recursos"
           url: /infra/
-          weight: 50
-        - identifier: sobre-indicadores
-          pre: piechart
-          name: Indicadores
-          post: "O CEDIS em números"
-          url: /indicadores/
-          weight: 60
-        - identifier: sobre-contato
-          pre: comments
-          name: Contato
-          post: "Fale com o CEDIS"
-          url: /contact/
-          weight: 70
+          weight: 40
       pesquisa:
         - identifier: pesquisa-areas
           pre: stars
@@ -168,18 +150,12 @@ languages:
           post: "Como áreas, pessoas e projetos se conectam"
           url: /mapa/
           weight: 20
-        - identifier: pesquisa-pesquisadores
-          pre: researcher
-          name: "Por pesquisador"
-          post: "Explorar publicações e projetos por PI"
-          url: /categories/researcher/
-          weight: 30
         - identifier: pesquisa-infra
           pre: infrastructure
           name: "Infraestrutura científica"
           post: "Servidores, storage e equipamentos"
           url: /infra/
-          weight: 40
+          weight: 30
       projetos_produtos:
         - identifier: pp-projetos
           pre: piechart
@@ -199,12 +175,6 @@ languages:
           post: "Iniciativas com IBICT, FAP-DF e outros"
           url: /parceiros/
           weight: 30
-        - identifier: pp-zenodo
-          pre: zenodo
-          name: "Materiais no Zenodo"
-          post: "Datasets e código-fonte registrados"
-          url: https://zenodo.org/communities/cedis-unb
-          weight: 40
       pessoas:
         - identifier: pes-pesquisadores
           pre: researcher
@@ -237,17 +207,17 @@ languages:
           post: "Artigos, livros, teses, dissertações e TCCs"
           url: /publications/
           weight: 10
-        - identifier: pub-zenodo
-          pre: zenodo
-          name: "Materiais no Zenodo"
-          post: "Datasets, código e materiais registrados"
-          url: https://zenodo.org/communities/cedis-unb
-          weight: 20
         - identifier: pub-cursos
           pre: courses
           name: "Cursos e materiais didáticos"
           post: "Programas de formação e materiais abertos"
           url: https://slides.cedis.tec.br/programas-de-formacao
+          weight: 20
+        - identifier: pub-zenodo
+          pre: zenodo
+          name: "Materiais no Zenodo"
+          post: "Datasets, código e materiais registrados"
+          url: /publications/zenodo/
           weight: 30
       participe:
         - identifier: part-oportunidades
@@ -424,34 +394,16 @@ languages:
           weight: 20
         - identifier: sobre-parceiros
           pre: people
-          name: Partners
-          post: "Institutions and labs walking with us"
-          url: /parceiros/
+          name: "Partners & recognitions"
+          post: "Institutions, awards, and institutional milestones"
+          url: /partners/
           weight: 30
-        - identifier: sobre-reconhecimentos
-          pre: stars
-          name: "Awards & recognitions"
-          post: "Prizes and honorable mentions"
-          url: /reconhecimentos/
-          weight: 40
         - identifier: sobre-infra
           pre: infrastructure
           name: Infrastructure
           post: "Spaces and resources"
           url: /infra/
-          weight: 50
-        - identifier: sobre-indicadores
-          pre: piechart
-          name: Indicators
-          post: "CEDIS in numbers"
-          url: /indicadores/
-          weight: 60
-        - identifier: sobre-contato
-          pre: comments
-          name: Contact
-          post: "Reach out to CEDIS"
-          url: /contact/
-          weight: 70
+          weight: 40
       pesquisa:
         - identifier: pesquisa-areas
           pre: stars
@@ -465,18 +417,12 @@ languages:
           post: "How areas, people and projects connect"
           url: /mapa/
           weight: 20
-        - identifier: pesquisa-pesquisadores
-          pre: researcher
-          name: "By researcher"
-          post: "Browse publications and projects per PI"
-          url: /categories/researcher/
-          weight: 30
         - identifier: pesquisa-infra
           pre: infrastructure
           name: "Scientific infrastructure"
           post: "Servers, storage and equipment"
           url: /infra/
-          weight: 40
+          weight: 30
       projetos_produtos:
         - identifier: pp-projetos
           pre: piechart
@@ -494,14 +440,8 @@ languages:
           pre: people
           name: "Projects by partner"
           post: "Initiatives with IBICT, FAP-DF and others"
-          url: /parceiros/
+          url: /partners/
           weight: 30
-        - identifier: pp-zenodo
-          pre: zenodo
-          name: "Materials on Zenodo"
-          post: "Registered datasets and source code"
-          url: https://zenodo.org/communities/cedis-unb
-          weight: 40
       pessoas:
         - identifier: pes-pesquisadores
           pre: researcher
@@ -534,17 +474,17 @@ languages:
           post: "Articles, books, theses, dissertations and undergrad theses"
           url: /publications/
           weight: 10
-        - identifier: pub-zenodo
-          pre: zenodo
-          name: "Materials on Zenodo"
-          post: "Datasets, code and registered materials"
-          url: https://zenodo.org/communities/cedis-unb
-          weight: 20
         - identifier: pub-cursos
           pre: courses
           name: "Courses and teaching materials"
           post: "Training programs and open materials"
           url: https://slides.cedis.tec.br/programas-de-formacao
+          weight: 20
+        - identifier: pub-zenodo
+          pre: zenodo
+          name: "Materials on Zenodo"
+          post: "Datasets, code, and registered materials"
+          url: /publications/zenodo/
           weight: 30
       participe:
         - identifier: part-oportunidades
@@ -563,7 +503,7 @@ languages:
           pre: people
           name: "Institutional partnerships"
           post: "Public agencies, companies and universities"
-          url: /parceiros/
+          url: /partners/
           weight: 30
         - identifier: part-proponha
           pre: comments
