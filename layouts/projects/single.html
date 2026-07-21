@@ -13,18 +13,98 @@
 {{ $summaryLabel := cond $isPortuguese "Resumo" "Summary" }}
 {{ $membersLabel := cond $isPortuguese "Equipe principal" "Core team" }}
 {{ $membersCountLabel := cond $isPortuguese "Pessoas envolvidas" "People involved" }}
+{{ $coreTeamCountLabel := cond $isPortuguese "Equipe principal" "Core team" }}
+{{ $extendedPeopleLabel := cond $isPortuguese "Rede ampliada" "Extended network" }}
+{{ $extendedPeopleHelp := cond $isPortuguese "Pessoas que participaram por meio de subprojetos, produtos, artigos, TCCs, mestrados e outras produções ligadas a este macroprojeto." "People who contributed through linked subprojects, products, papers, theses, and other outputs connected to this umbrella project." }}
 {{ $tagsLabel := cond $isPortuguese "Temas" "Themes" }}
 {{ $derivedProductsLabel := cond $isPortuguese "Produtos derivados" "Derived products" }}
 {{ $derivedProductsEmptyLabel := cond $isPortuguese "Nenhum produto derivado mapeado." "No derived products mapped." }}
 {{ $sectionsLabel := cond $isPortuguese "Navegação" "Sections" }}
 {{ $contentLabel := cond $isPortuguese "Explorar projeto" "Explore project" }}
 {{ $catalogLabel := cond $isPortuguese "Ver projetos" "Browse projects" }}
+{{ $umbrellaLabel := cond $isPortuguese "Frente estratégica" "Strategic front" }}
+{{ $partOfLabel := cond $isPortuguese "Parte de" "Part of" }}
+{{ $linkedProjectsLabel := cond $isPortuguese "Projetos vinculados" "Linked projects" }}
+{{ $relatedInFrontLabel := cond $isPortuguese "Outros nesta frente" "More in this front" }}
+{{ $platformProjectLabel := cond $isPortuguese "Projeto-plataforma" "Platform project" }}
+{{ $projectTypeLabel := cond $isPortuguese "Projeto" "Project" }}
+{{ $openProjectLabel := cond $isPortuguese "Abrir" "Open" }}
 {{ $projectID := .Params.id | default "" }}
 
-{{ $projectData := dict }}
+{{ $projectPagesByID := dict }}
+{{ range .Site.RegularPages }}
+  {{ if and (eq .Section "projects") (eq .Lang $.Site.Language.Lang) }}
+    {{ $id := .Params.id | default .File.TranslationBaseName }}
+    {{ $projectPagesByID = merge $projectPagesByID (dict $id .) }}
+  {{ end }}
+{{ end }}
+
+{{ $personPagesByID := dict }}
+{{ range .Site.RegularPages }}
+  {{ if and (eq .Section "people") (eq .Lang $.Site.Language.Lang) }}
+    {{ $id := .Params.id | default .File.TranslationBaseName }}
+    {{ $personPagesByID = merge $personPagesByID (dict $id .) }}
+  {{ end }}
+{{ end }}
+
+{{ $projectsByID := dict }}
 {{ range hugo.Data.projects.projects }}
-  {{ if or (in $.Params.categories .id) (in $.Params.tags .id) }}
-    {{ $projectData = . }}
+  {{ $projectsByID = merge $projectsByID (dict .id .) }}
+{{ end }}
+
+{{ $projectData := dict }}
+{{ with index $projectsByID $projectID }}
+  {{ $projectData = . }}
+{{ end }}
+{{ if eq (len $projectData) 0 }}
+  {{ range hugo.Data.projects.projects }}
+    {{ if or (in $.Params.categories .id) (in $.Params.tags .id) }}
+      {{ $projectData = . }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{ $projectKind := "project" }}
+{{ $umbrellaIDs := slice }}
+{{ with $projectData }}
+  {{ $projectKind = .project_type | default "project" }}
+  {{ with .umbrella_projects }}{{ $umbrellaIDs = . }}{{ end }}
+{{ end }}
+
+{{ $umbrellaItems := slice }}
+{{ range $umbrellaIDs }}
+  {{ $umbrellaData := index $projectsByID . }}
+  {{ if $umbrellaData }}
+    {{ $umbrellaName := index $umbrellaData.name $.Site.Language.Lang }}
+    {{ if not $umbrellaName }}{{ $umbrellaName = index $umbrellaData.name "en" }}{{ end }}
+    {{ $umbrellaItems = $umbrellaItems | append (dict "id" . "name" $umbrellaName "page" (index $projectPagesByID .)) }}
+  {{ end }}
+{{ end }}
+
+{{ $childProjectItems := slice }}
+{{ if eq $projectKind "umbrella" }}
+  {{ range hugo.Data.projects.projects }}
+    {{ if and (ne .id $projectID) (in (.umbrella_projects | default slice) $projectID) }}
+      {{ $childName := index .name $.Site.Language.Lang }}
+      {{ if not $childName }}{{ $childName = index .name "en" }}{{ end }}
+      {{ $childProjectItems = $childProjectItems | append (dict "id" .id "name" $childName "type" (.project_type | default "project") "page" (index $projectPagesByID .id)) }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{ $siblingProjectItems := slice }}
+{{ range hugo.Data.projects.projects }}
+  {{ $candidate := . }}
+  {{ if and (ne $candidate.id $projectID) ($candidate.umbrella_projects) }}
+    {{ $matchesFront := false }}
+    {{ range $umbrellaIDs }}
+      {{ if in $candidate.umbrella_projects . }}{{ $matchesFront = true }}{{ end }}
+    {{ end }}
+    {{ if $matchesFront }}
+      {{ $siblingName := index $candidate.name $.Site.Language.Lang }}
+      {{ if not $siblingName }}{{ $siblingName = index $candidate.name "en" }}{{ end }}
+      {{ $siblingProjectItems = $siblingProjectItems | append (dict "id" $candidate.id "name" $siblingName "type" ($candidate.project_type | default "project") "page" (index $projectPagesByID $candidate.id)) }}
+    {{ end }}
   {{ end }}
 {{ end }}
 
@@ -34,7 +114,11 @@
   {{ if and (eq .Section "products") (eq .Lang $.Site.Language.Lang) }}
     {{ $productID := .Params.id | default .File.TranslationBaseName }}
     {{ $matchesForward := and $.Params.products (in $.Params.products $productID) }}
-    {{ $matchesInverse := and $projectID (or (eq .Params.project $projectID) (in .Params.tags $projectID) (in .Params.categories $projectID)) }}
+    {{ $matchesSecondary := false }}
+    {{ range (.Params.secondary_projects | default slice) }}
+      {{ if eq . $projectID }}{{ $matchesSecondary = true }}{{ end }}
+    {{ end }}
+    {{ $matchesInverse := and $projectID (or (eq .Params.project $projectID) $matchesSecondary (in (.Params.tags | default slice) $projectID) (in (.Params.categories | default slice) $projectID)) }}
     {{ if and (or $matchesForward $matchesInverse) (not (isset $seenProductPermalinks .RelPermalink)) }}
       {{ $seenProductPermalinks = merge $seenProductPermalinks (dict .RelPermalink true) }}
       {{ $derivedProducts = $derivedProducts | append . }}
@@ -74,6 +158,256 @@
       {{ $memberItems = $memberItems | append (dict "title" .Title "url" .RelPermalink) }}
     {{ else }}
       {{ $memberItems = $memberItems | append (dict "title" $fallbackLabel "url" "") }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{ $corePersonKeys := dict }}
+{{ range $memberIDs }}
+  {{ $personID := . }}
+  {{ $corePersonKeys = merge $corePersonKeys (dict ($personID | anchorize) true) }}
+  {{ with index $personPagesByID $personID }}
+    {{ $corePersonKeys = merge $corePersonKeys (dict (.Title | anchorize) true) }}
+  {{ end }}
+{{ end }}
+{{ range $memberItems }}
+  {{ $corePersonKeys = merge $corePersonKeys (dict (.title | anchorize) true) }}
+{{ end }}
+
+{{ $scopeProjectIDs := slice }}
+{{ if $projectID }}{{ $scopeProjectIDs = $scopeProjectIDs | append $projectID }}{{ end }}
+{{ if eq $projectKind "umbrella" }}
+  {{ range $childProjectItems }}
+    {{ if and .id (not (in $scopeProjectIDs .id)) }}
+      {{ $scopeProjectIDs = $scopeProjectIDs | append .id }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{ $scopeProductIDs := slice }}
+{{ $scopePublicationIDs := slice }}
+{{ if eq $projectKind "umbrella" }}
+  {{ range $scopeProjectIDs }}
+    {{ with index $projectPagesByID . }}
+      {{ range (.Params.products | default slice) }}
+        {{ if not (in $scopeProductIDs .) }}{{ $scopeProductIDs = $scopeProductIDs | append . }}{{ end }}
+      {{ end }}
+      {{ range (.Params.publications | default slice) }}
+        {{ if not (in $scopePublicationIDs .) }}{{ $scopePublicationIDs = $scopePublicationIDs | append . }}{{ end }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+  {{ range .Site.RegularPages.ByTitle }}
+    {{ if and (eq .Section "products") (eq .Lang $.Site.Language.Lang) }}
+      {{ $productID := .Params.id | default .File.TranslationBaseName }}
+      {{ $productMatchesScope := false }}
+      {{ with .Params.project }}
+        {{ if in $scopeProjectIDs . }}{{ $productMatchesScope = true }}{{ end }}
+      {{ end }}
+      {{ range (.Params.secondary_projects | default slice) }}
+        {{ if in $scopeProjectIDs . }}{{ $productMatchesScope = true }}{{ end }}
+      {{ end }}
+      {{ range (.Params.tags | default slice) }}
+        {{ if in $scopeProjectIDs . }}{{ $productMatchesScope = true }}{{ end }}
+      {{ end }}
+      {{ range (.Params.categories | default slice) }}
+        {{ if in $scopeProjectIDs . }}{{ $productMatchesScope = true }}{{ end }}
+      {{ end }}
+      {{ if and $productMatchesScope (not (in $scopeProductIDs $productID)) }}
+        {{ $scopeProductIDs = $scopeProductIDs | append $productID }}
+      {{ end }}
+      {{ if $productMatchesScope }}
+        {{ range (.Params.publications | default slice) }}
+          {{ if not (in $scopePublicationIDs .) }}{{ $scopePublicationIDs = $scopePublicationIDs | append . }}{{ end }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{ $extendedPeopleByKey := dict }}
+{{ if eq $projectKind "umbrella" }}
+  {{ range $childProjectItems }}
+    {{ with index $projectsByID .id }}
+      {{ range (.researchers | default slice) }}
+        {{ $personID := . }}
+        {{ $personKey := $personID | anchorize }}
+        {{ $personName := replaceRE "[-_]+" " " $personID | title }}
+        {{ with index $personPagesByID $personID }}
+          {{ $personKey = .Title | anchorize }}
+          {{ $personName = .Title }}
+        {{ end }}
+        {{ if and $personKey (not (isset $corePersonKeys $personKey)) }}
+          {{ $extendedPeopleByKey = merge $extendedPeopleByKey (dict $personKey $personName) }}
+        {{ end }}
+      {{ end }}
+      {{ range (.students | default slice) }}
+        {{ $personID := . }}
+        {{ $personKey := $personID | anchorize }}
+        {{ $personName := replaceRE "[-_]+" " " $personID | title }}
+        {{ with index $personPagesByID $personID }}
+          {{ $personKey = .Title | anchorize }}
+          {{ $personName = .Title }}
+        {{ end }}
+        {{ if and $personKey (not (isset $corePersonKeys $personKey)) }}
+          {{ $extendedPeopleByKey = merge $extendedPeopleByKey (dict $personKey $personName) }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+
+  {{ range .Site.RegularPages.ByTitle }}
+    {{ if and (eq .Section "people") (eq .Lang $.Site.Language.Lang) }}
+      {{ $personMatchesScope := false }}
+      {{ range (.Params.tags | default slice) }}
+        {{ if or (in $scopeProjectIDs .) (in $scopeProductIDs .) }}{{ $personMatchesScope = true }}{{ end }}
+      {{ end }}
+      {{ range (.Params.categories | default slice) }}
+        {{ if or (in $scopeProjectIDs .) (in $scopeProductIDs .) }}{{ $personMatchesScope = true }}{{ end }}
+      {{ end }}
+      {{ if $personMatchesScope }}
+        {{ $personKey := .Title | anchorize }}
+        {{ if and $personKey (not (isset $corePersonKeys $personKey)) }}
+          {{ $extendedPeopleByKey = merge $extendedPeopleByKey (dict $personKey .Title) }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+
+  {{ range hugo.Data.people.people }}
+    {{ $recordMatchesScope := false }}
+    {{ range (.tags | default slice) }}
+      {{ if or (in $scopeProjectIDs .) (in $scopeProductIDs .) }}{{ $recordMatchesScope = true }}{{ end }}
+    {{ end }}
+    {{ range (.categories | default slice) }}
+      {{ if or (in $scopeProjectIDs .) (in $scopeProductIDs .) }}{{ $recordMatchesScope = true }}{{ end }}
+    {{ end }}
+    {{ if $recordMatchesScope }}
+      {{ $personKey := .name | anchorize }}
+      {{ if and $personKey (not (isset $corePersonKeys $personKey)) }}
+        {{ $extendedPeopleByKey = merge $extendedPeopleByKey (dict $personKey .name) }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+
+  {{ range .Site.RegularPages.ByTitle }}
+    {{ if and (eq .Section "products") (eq .Lang $.Site.Language.Lang) }}
+      {{ $productID := .Params.id | default .File.TranslationBaseName }}
+      {{ if in $scopeProductIDs $productID }}
+        {{ range (.Params.responsible | default slice) }}
+          {{ $personID := . }}
+          {{ $personKey := $personID | anchorize }}
+          {{ $personName := replaceRE "[-_]+" " " $personID | title }}
+          {{ with index $personPagesByID $personID }}
+            {{ $personKey = .Title | anchorize }}
+            {{ $personName = .Title }}
+          {{ end }}
+          {{ if and $personKey (not (isset $corePersonKeys $personKey)) }}
+            {{ $extendedPeopleByKey = merge $extendedPeopleByKey (dict $personKey $personName) }}
+          {{ end }}
+        {{ end }}
+        {{ range union (.Params.tags | default slice) (.Params.categories | default slice) }}
+          {{ $personID := . }}
+          {{ with index $personPagesByID $personID }}
+            {{ $personKey := .Title | anchorize }}
+            {{ if and $personKey (not (isset $corePersonKeys $personKey)) }}
+              {{ $extendedPeopleByKey = merge $extendedPeopleByKey (dict $personKey .Title) }}
+            {{ end }}
+          {{ end }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+
+  {{ range .Site.RegularPages.ByTitle }}
+    {{ if and (eq .Section "publications") (eq .Lang $.Site.Language.Lang) }}
+      {{ $publicationID := .Params.id | default .File.TranslationBaseName }}
+      {{ $publicationMatchesScope := in $scopePublicationIDs $publicationID }}
+      {{ range (.Params.tags | default slice) }}
+        {{ if or (in $scopeProjectIDs .) (in $scopeProductIDs .) }}{{ $publicationMatchesScope = true }}{{ end }}
+      {{ end }}
+      {{ range (.Params.categories | default slice) }}
+        {{ if or (in $scopeProjectIDs .) (in $scopeProductIDs .) }}{{ $publicationMatchesScope = true }}{{ end }}
+      {{ end }}
+      {{ if $publicationMatchesScope }}
+        {{ $publicationPersonNameKeys := dict }}
+        {{ range union (.Params.tags | default slice) (.Params.categories | default slice) }}
+          {{ $personID := . }}
+          {{ with index $personPagesByID $personID }}
+            {{ $personKey := .Title | anchorize }}
+            {{ $publicationPersonNameKeys = merge $publicationPersonNameKeys (dict $personKey true) }}
+            {{ if and $personKey (not (isset $corePersonKeys $personKey)) }}
+              {{ $extendedPeopleByKey = merge $extendedPeopleByKey (dict $personKey .Title) }}
+            {{ end }}
+          {{ end }}
+        {{ end }}
+        {{ if .Params.authors_structured }}
+          {{ range .Params.authors_structured }}
+            {{ $authorName := .name | default "" }}
+            {{ $authorID := .id | default "" }}
+            {{ $authorKey := $authorName | anchorize }}
+            {{ if and $authorID (index $personPagesByID $authorID) }}
+              {{ with index $personPagesByID $authorID }}
+                {{ $authorName = .Title }}
+                {{ $authorKey = .Title | anchorize }}
+              {{ end }}
+            {{ end }}
+            {{ if and $authorName $authorKey (not (isset $publicationPersonNameKeys $authorKey)) (not (isset $corePersonKeys $authorKey)) }}
+              {{ $extendedPeopleByKey = merge $extendedPeopleByKey (dict $authorKey $authorName) }}
+            {{ end }}
+          {{ end }}
+        {{ else }}
+          {{ range (.Params.authors | default slice) }}
+            {{ $authorName := . }}
+            {{ $authorKey := $authorName | anchorize }}
+            {{ if and $authorName $authorKey (not (isset $publicationPersonNameKeys $authorKey)) (not (isset $corePersonKeys $authorKey)) }}
+              {{ $extendedPeopleByKey = merge $extendedPeopleByKey (dict $authorKey $authorName) }}
+            {{ end }}
+          {{ end }}
+        {{ end }}
+        {{ range (.Params.advisors | default slice) }}
+          {{ $personID := . }}
+          {{ $personKey := $personID | anchorize }}
+          {{ $personName := replaceRE "[-_]+" " " $personID | title }}
+          {{ with index $personPagesByID $personID }}
+            {{ $personKey = .Title | anchorize }}
+            {{ $personName = .Title }}
+          {{ end }}
+          {{ if and $personKey (not (isset $corePersonKeys $personKey)) }}
+            {{ $extendedPeopleByKey = merge $extendedPeopleByKey (dict $personKey $personName) }}
+          {{ end }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+
+  {{ range hugo.Data.productions.items }}
+    {{ $productionMatchesScope := false }}
+    {{ range (.tags | default slice) }}
+      {{ if or (in $scopeProjectIDs .) (in $scopeProductIDs .) }}{{ $productionMatchesScope = true }}{{ end }}
+    {{ end }}
+    {{ if $productionMatchesScope }}
+      {{ range union (.tags | default slice) (.categories | default slice) }}
+        {{ $personID := . }}
+        {{ with index $personPagesByID $personID }}
+          {{ $personKey := .Title | anchorize }}
+          {{ if and $personKey (not (isset $corePersonKeys $personKey)) }}
+            {{ $extendedPeopleByKey = merge $extendedPeopleByKey (dict $personKey .Title) }}
+          {{ end }}
+        {{ end }}
+      {{ end }}
+      {{ range (.advisors | default slice) }}
+        {{ $personID := . }}
+        {{ $personKey := $personID | anchorize }}
+        {{ $personName := replaceRE "[-_]+" " " $personID | title }}
+        {{ with index $personPagesByID $personID }}
+          {{ $personKey = .Title | anchorize }}
+          {{ $personName = .Title }}
+        {{ end }}
+        {{ if and $personKey (not (isset $corePersonKeys $personKey)) }}
+          {{ $extendedPeopleByKey = merge $extendedPeopleByKey (dict $personKey $personName) }}
+        {{ end }}
+      {{ end }}
     {{ end }}
   {{ end }}
 {{ end }}
@@ -158,8 +492,14 @@
           </div>
           {{ if gt (len $memberItems) 0 }}
           <div class="inline-flex items-center rounded-2xl border border-slate-200 bg-white/85 px-4 py-2 shadow-sm dark:border-white/10 dark:bg-white/5">
-            <span class="font-semibold text-slate-900 dark:text-white">{{ $membersCountLabel }}:</span>
+            <span class="font-semibold text-slate-900 dark:text-white">{{ cond (eq $projectKind "umbrella") $coreTeamCountLabel $membersCountLabel }}:</span>
             <span class="ml-2">{{ len $memberItems }}</span>
+          </div>
+          {{ end }}
+          {{ if and (eq $projectKind "umbrella") (gt (len $extendedPeopleByKey) 0) }}
+          <div class="inline-flex items-center rounded-2xl border border-slate-200 bg-white/85 px-4 py-2 shadow-sm dark:border-white/10 dark:bg-white/5">
+            <span class="font-semibold text-slate-900 dark:text-white">{{ $extendedPeopleLabel }}:</span>
+            <span class="ml-2">{{ len $extendedPeopleByKey }}</span>
           </div>
           {{ end }}
           {{ if gt (len $displayTags) 0 }}
@@ -229,8 +569,14 @@
           </div>
           {{ if gt (len $memberItems) 0 }}
           <div>
-            <dt class="font-semibold text-slate-900 dark:text-white">{{ $membersCountLabel }}</dt>
+            <dt class="font-semibold text-slate-900 dark:text-white">{{ cond (eq $projectKind "umbrella") $coreTeamCountLabel $membersCountLabel }}</dt>
             <dd class="mt-1 text-slate-600 dark:text-slate-300">{{ len $memberItems }}</dd>
+          </div>
+          {{ end }}
+          {{ if and (eq $projectKind "umbrella") (gt (len $extendedPeopleByKey) 0) }}
+          <div>
+            <dt class="font-semibold text-slate-900 dark:text-white">{{ $extendedPeopleLabel }}</dt>
+            <dd class="mt-1 text-slate-600 dark:text-slate-300">{{ len $extendedPeopleByKey }}</dd>
           </div>
           {{ end }}
           {{ with $summary }}
@@ -241,6 +587,77 @@
           {{ end }}
         </dl>
       </div>
+
+      {{ if gt (len $umbrellaItems) 0 }}
+      <div class="rounded-[1.75rem] border border-primary-200/80 bg-primary-50/70 p-6 shadow-[0_18px_48px_rgba(197,39,47,0.08)] dark:border-primary-400/20 dark:bg-primary-500/10">
+        <div class="text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-primary-700 dark:text-primary-100">{{ $partOfLabel }}</div>
+        <div class="mt-5 space-y-2 text-sm">
+          {{ range $umbrellaItems }}
+            {{ with .page }}
+            <a href="{{ .RelPermalink }}" class="block rounded-xl border border-primary-200 bg-white/80 px-4 py-3 font-semibold text-primary-900 transition-colors hover:border-primary-400 hover:bg-white dark:border-primary-300/20 dark:bg-white/[0.06] dark:text-primary-100 dark:hover:bg-white/10">
+              {{ .Title }}
+            </a>
+            {{ else }}
+            <div class="rounded-xl border border-primary-200 bg-white/80 px-4 py-3 font-semibold text-primary-900 dark:border-primary-300/20 dark:bg-white/[0.06] dark:text-primary-100">
+              {{ .name }}
+            </div>
+            {{ end }}
+          {{ end }}
+        </div>
+      </div>
+      {{ end }}
+
+      {{ if gt (len $childProjectItems) 0 }}
+      <div class="rounded-[1.75rem] border border-emerald-200/80 bg-emerald-50/70 p-6 shadow-[0_18px_48px_rgba(16,185,129,0.08)] dark:border-emerald-400/20 dark:bg-emerald-500/10">
+        <div class="text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-emerald-700 dark:text-emerald-100">{{ $linkedProjectsLabel }}</div>
+        <div class="mt-5 space-y-2 text-sm">
+          {{ range $childProjectItems }}
+          {{ $typeText := cond (eq .type "platform_project") $platformProjectLabel $projectTypeLabel }}
+          {{ if .page }}
+          <a href="{{ .page.RelPermalink }}" class="block rounded-xl border border-emerald-200 bg-white/80 px-4 py-3 transition-colors hover:border-emerald-400 hover:bg-white dark:border-emerald-300/20 dark:bg-white/[0.06] dark:hover:bg-white/10">
+            <span class="block font-semibold text-emerald-950 dark:text-emerald-100">{{ .name }}</span>
+            <span class="mt-1 block text-xs font-semibold uppercase tracking-[0.14em] text-emerald-700/80 dark:text-emerald-100/70">{{ $typeText }}</span>
+          </a>
+          {{ else }}
+          <div class="rounded-xl border border-emerald-200 bg-white/80 px-4 py-3 dark:border-emerald-300/20 dark:bg-white/[0.06]">
+            <span class="block font-semibold text-emerald-950 dark:text-emerald-100">{{ .name }}</span>
+            <span class="mt-1 block text-xs font-semibold uppercase tracking-[0.14em] text-emerald-700/80 dark:text-emerald-100/70">{{ $typeText }}</span>
+          </div>
+          {{ end }}
+          {{ end }}
+        </div>
+      </div>
+      {{ end }}
+
+      {{ if and (gt (len $siblingProjectItems) 0) (ne $projectKind "umbrella") }}
+      <div class="rounded-[1.75rem] border border-slate-200/80 bg-white p-6 shadow-[0_18px_48px_rgba(15,23,42,0.08)] dark:border-white/10 dark:bg-slate-900/40 dark:shadow-[0_18px_48px_rgba(0,0,0,0.22)]">
+        <div class="text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-slate-500 dark:text-slate-400">{{ $relatedInFrontLabel }}</div>
+        <div class="mt-5 space-y-2 text-sm">
+          {{ range first 6 $siblingProjectItems }}
+          {{ if .page }}
+          <a href="{{ .page.RelPermalink }}" class="block rounded-xl border border-slate-200/80 bg-slate-50 px-4 py-3 font-semibold text-slate-900 transition-colors hover:border-slate-300 hover:bg-white dark:border-white/10 dark:bg-white/5 dark:text-white dark:hover:bg-white/10">
+            {{ .name }}
+          </a>
+          {{ else }}
+          <div class="rounded-xl border border-slate-200/80 bg-slate-50 px-4 py-3 font-semibold text-slate-900 dark:border-white/10 dark:bg-white/5 dark:text-white">
+            {{ .name }}
+          </div>
+          {{ end }}
+          {{ end }}
+        </div>
+      </div>
+      {{ end }}
+
+      {{ if and (eq $projectKind "umbrella") (gt (len $extendedPeopleByKey) 0) }}
+      <div class="rounded-[1.75rem] border border-sky-200/80 bg-sky-50/70 p-6 shadow-[0_18px_48px_rgba(14,165,233,0.08)] dark:border-sky-400/20 dark:bg-sky-500/10">
+        <div class="text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-sky-700 dark:text-sky-100">{{ $extendedPeopleLabel }}</div>
+        <div class="mt-5 flex items-end gap-3">
+          <div class="text-4xl font-black leading-none text-sky-950 dark:text-sky-50">{{ len $extendedPeopleByKey }}</div>
+          <div class="pb-1 text-sm font-semibold text-sky-800 dark:text-sky-100">{{ cond $isPortuguese "pessoas" "people" }}</div>
+        </div>
+        <p class="mt-4 text-sm leading-6 text-sky-900/80 dark:text-sky-50/75">{{ $extendedPeopleHelp }}</p>
+      </div>
+      {{ end }}
 
       {{ if gt (len $memberItems) 0 }}
       <div class="rounded-[1.75rem] border border-slate-200/80 bg-white p-6 shadow-[0_18px_48px_rgba(15,23,42,0.08)] dark:border-white/10 dark:bg-slate-900/40 dark:shadow-[0_18px_48px_rgba(0,0,0,0.22)]">

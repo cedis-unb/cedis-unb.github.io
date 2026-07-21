@@ -18,11 +18,10 @@ areas:
 partners: []
 funding_agencies: []
 products:
-- evidentia
-- contextus
+- apoio_estudantil_fcte
 - saga
 - magra
-- edutrackai
+- predicao_euploidia
 publications: []
 featured_image: "../assets/images/featured/project_ia_dados_transformacao_digital.png"
 summary: "Ongoing umbrella project focused on applying artificial intelligence, machine learning, natural language processing, and data analysis to digital transformation initiatives."
@@ -76,10 +75,9 @@ The main objectives are to:
 
 Connected fronts include:
 
-- software-supported systematic literature reviews, materialized in {{< link-interno "/products/evidentia" "Evidentia Review" >}};
-- categorization and analysis of scientific information, as in {{< link-interno "/products/contextus" "Contextus Portal" >}};
-- academic monitoring and institutional indicators, including {{< link-interno "/products/saga" "SAGA" >}} and {{< link-interno "/products/magra" "MAGRA" >}}; and
-- academic performance prediction and AI integration into educational environments, as in {{< link-interno "/products/edutrackai" "EduTrack AI" >}}.
+- academic monitoring and institutional indicators, including {{< link-interno "/products/saga" "SAGA" >}}, {{< link-interno "/products/magra" "MAGRA" >}}, and {{< link-interno "/products/apoio_estudantil_fcte" "Apoio Estudantil FCTE" >}};
+- prediction and analytical support with machine learning, as in {{< link-interno "/products/predicao_euploidia" "Euploidy Prediction" >}}; and
+- automation, classification, prediction, and decision support in academic, institutional, and specialized contexts.
 
 ## Team
 
@@ -91,11 +89,10 @@ Connected fronts include:
 
 ## Related outputs and products
 
-- {{< link-interno "/products/evidentia" "Evidentia Review" >}}
-- {{< link-interno "/products/contextus" "Contextus Portal" >}}
+- {{< link-interno "/products/apoio_estudantil_fcte" "Apoio Estudantil FCTE" >}}
 - {{< link-interno "/products/saga" "SAGA" >}}
 - {{< link-interno "/products/magra" "MAGRA" >}}
-- {{< link-interno "/products/edutrackai" "EduTrack AI" >}}
+- {{< link-interno "/products/predicao_euploidia" "Euploidy Prediction" >}}
 
 ## Linked C&T production
 

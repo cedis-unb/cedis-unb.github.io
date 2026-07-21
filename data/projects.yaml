@@ -4,12 +4,19 @@ projects:
     name: 
       en: "Project DFCris"
       pt: "Projeto DFCris"
+    project_type: project
+    umbrella_projects:
+      - project_ia_dados_transformacao_digital
     status: closed
     start_date: 2024-02-14
     end_date: 2026-02-13
     researchers:
       - sergio_freitas
       - andre_lanna
+    partners:
+      - ibict
+    funding_agencies:
+      - fapdf
     students:
       - andre_silva
       - milena_silva
@@ -19,16 +26,24 @@ projects:
     name: 
       en: "Project Canal Ciência"
       pt: "Projeto Canal Ciência"
+    project_type: project
+    umbrella_projects:
+      - project_inovacao_digital_gamificacao
     status: closed
     start_date: 2023-01-01
     end_date: 2024-12-31
     researchers: 
       - sergio_freitas
       - cristiane_ramos
+    partners:
+      - ibict
+    funding_agencies:
+      - finatec
     students:
       - mylena_faria
       - marcus_martins
       - wildemberg_sales
+      - juan_alves
 
   - id: project_gsd
     name: 
@@ -51,6 +66,9 @@ projects:
     name: 
       en: "Feudal Dawn Project"
       pt: "Projeto Alvorecer Feudal"
+    project_type: project
+    umbrella_projects:
+      - project_inovacao_digital_gamificacao
     researchers:
       - sergio_freitas
 
@@ -58,6 +76,9 @@ projects:
     name: 
       en: "HCI Journey Project"
       pt: "Projeto Jornada IHC"
+    project_type: project
+    umbrella_projects:
+      - project_inovacao_digital_gamificacao
     researchers:
       - sergio_freitas
 
@@ -65,6 +86,7 @@ projects:
     name:
       en: "Digital innovation and gamification for teaching, outreach, and software engineering"
       pt: "Inovação digital e gamificação para o ensino, divulgação e engenharia de software"
+    project_type: umbrella
     status: ongoing
     start_date: 2021-01-01
     researchers:
@@ -77,6 +99,7 @@ projects:
     name:
       en: "Artificial intelligence and data analysis for digital transformation"
       pt: "Inteligência artificial e análise de dados para a transformação digital"
+    project_type: umbrella
     status: ongoing
     start_date: 2021-01-01
     researchers:
@@ -88,6 +111,10 @@ projects:
     name:
       en: "Predictive framework for student engagement and performance in gamified learning environments"
       pt: "Framework preditivo de engajamento e desempenho discente em ambientes de aprendizagem gamificados"
+    project_type: project
+    umbrella_projects:
+      - project_inovacao_digital_gamificacao
+      - project_ia_dados_transformacao_digital
     status: ongoing
     start_date: 2025-01-01
     end_date: 2026-12-31
@@ -103,6 +130,9 @@ projects:
     name: 
       en: "Super-R"
       pt: "Super-R"
+    project_type: project
+    umbrella_projects:
+      - project_inovacao_digital_gamificacao
     status: closed
     start_date: 2023-01-01
     end_date: 2024-12-31
@@ -118,6 +148,9 @@ projects:
     name: 
       en: "Software for Good"
       pt: "Software para o Bem"
+    project_type: umbrella
+    status: ongoing
+    start_date: 2020-09-23
     researchers:
       - george_marsicano
 
@@ -125,6 +158,9 @@ projects:
     name:
       en: "Evidentia Review Project"
       pt: "Projeto Evidentia Review"
+    project_type: platform_project
+    umbrella_projects:
+      - project_ia_dados_transformacao_digital
     researchers:
       - sergio_freitas
       - george_marsicano
@@ -134,6 +170,9 @@ projects:
     name:
       en: "OctaAnalysis Project"
       pt: "Projeto OctaAnalysis"
+    project_type: platform_project
+    umbrella_projects:
+      - project_inovacao_digital_gamificacao
     researchers:
       - sergio_freitas
       - cristiane_ramos
@@ -208,6 +247,9 @@ projects:
     name:
       en: "Doarti"
       pt: "Doarti"
+    project_type: project
+    umbrella_projects:
+      - project_software_bem
     status: active
     start_date: 2020-01-01
     researchers:

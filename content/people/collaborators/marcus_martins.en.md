@@ -5,14 +5,13 @@ date: 2024-02-17T00:51:15-03:00
 weight: 44
 language: en
 featured_image: "../assets/images/featured/people_Marcus Martins.png"
-summary: Undergraduate in Software Engineering, University of Brasília
+summary: Undergraduate in Software Engineering at the University of Brasília; PIBIC undergraduate research advisee of Prof. Cristiane Ramos in the Canal Ciência Project.
 authorimage: ../assets/images/global/author.webp
 categories: 
 - people
 - undergraduate
 - scientific_initiation
 advisors:
-- sergio_freitas
 - cristiane_ramos
 tags: 
 - project_cc
@@ -21,7 +20,8 @@ tags:
 - inactive
 ---
 ## Academic and Professional Profile
-- Current Position: Undergraduate in Software Engineering, University of Brasília. Scientific initiation in research project.
+- Current Position: Undergraduate in Software Engineering, University of Brasília.
+- CEDIS Participation: PIBIC undergraduate research advisee of Prof. {{< link-interno "/people/cristiane_ramos" "Cristiane Ramos" >}} in the {{< link-interno "/projects/canal_ciencia" "Canal Ciência Project" >}}.
 
 ## Research Lines
 - Gamification

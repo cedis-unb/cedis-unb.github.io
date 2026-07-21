@@ -6,6 +6,7 @@ language: en
 product_language: pt
 id: atloria
 status: active
+project: project_inovacao_digital_gamificacao
 areas:
 - gamification
 - active_learning
@@ -20,11 +21,13 @@ authorimage: ../assets/images/global/author.webp
 categories:
 - products
 - sergio_freitas
+- project_inovacao_digital_gamificacao
 tags:
 - app
 - gamification
 - active_learning
 - social_software
+- project_inovacao_digital_gamificacao
 ---
 ## Project Description
 

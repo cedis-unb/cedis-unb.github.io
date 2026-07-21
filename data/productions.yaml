@@ -1134,22 +1134,23 @@ items:
   book_title: ''
   volume: ''
   doi_isbn: '10.1109/FIE61694.2024.10893473'
-  journal_event: 'Frontiers in Education 2024'
-  location: Washington DC, USA
-  pages: ''
-  publisher: ''
+  journal_event: '2024 IEEE Frontiers in Education Conference (FIE)'
+  location: Washington, DC, USA
+  pages: '1-9'
+  publisher: IEEE
   tags:
   - sergio_freitas
   - cristiane_ramos
   - active_learning
   - gamification
+  - project_cc
   - mylena_faria
   - marcus_martins
   - juan_alves
   type: conference
   program: ''
   advisors: []
-  url: ''
+  url: 'https://ieeexplore.ieee.org/document/10893473'
   spotify_podcast: 
     pt: 'https://open.spotify.com/episode/13t9RnyuKrvadtBiEzfxUN?si=01ex4jq1SPmq_9Vqc0ZWzA'
     en: 'https://open.spotify.com/episode/13t9RnyuKrvadtBiEzfxUN?si=01ex4jq1SPmq_9Vqc0ZWzA'
@@ -9455,6 +9456,7 @@ administrative and operational activities of the Brazilian Army."
   tags:
   - gamification
   - digital_transformation
+  - project_cc
   - sergio_freitas
   - cristiane_ramos
   - mylena_faria

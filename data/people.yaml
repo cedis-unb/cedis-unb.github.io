@@ -267,6 +267,22 @@ people:
   - inactive
   - hpc
   year: 2025
+- name: Marcus Vinicius Paiva Martins
+  categories:
+  - people
+  - scientific_initiation
+  title:
+    pt: "Gamificação do Portal Canal Ciência: Jornada Galáctica e perfis motivacionais"
+    en: "Gamification of the Canal Ciência Portal: Jornada Galáctica and motivational profiles"
+  program: curso_esw2
+  advisors:
+  - cristiane_ramos
+  tags:
+  - inactive
+  - gamification
+  - digital_transformation
+  - project_cc
+  year: 2024
 - name: Mateus Cunha Maia
   categories:
   - people
@@ -491,6 +507,22 @@ people:
   - learning_analytics
   - project_framework_preditivo_engajamento
   year: 2025
+- name: Mylena Angélica Silva Farias
+  categories:
+  - people
+  - scientific_initiation
+  title:
+    pt: "Gamificação do Portal Canal Ciência: Jornada Galáctica e perfis motivacionais"
+    en: "Gamification of the Canal Ciência Portal: Jornada Galáctica and motivational profiles"
+  program: curso_esw2
+  advisors:
+  - sergio_freitas
+  tags:
+  - inactive
+  - gamification
+  - digital_transformation
+  - project_cc
+  year: 2024
 - name: Mylena Angélica Silva Farias
   categories:
   - people
@@ -2635,11 +2667,12 @@ people:
     en: "Studies for the Gamification of the Science and Technology Popularization and Dissemination Platform: Gamification Modeling and Treatment of Motivational Indicators"
   program: curso_esw2
   advisors:
-  - sergio_freitas
+  - cristiane_ramos
   tags:
   - inactive
   - gamification
   - digital_transformation
+  - project_cc
   year: 2025
 - name: Guilherme Fay Vergara
   categories:

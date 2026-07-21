@@ -6,6 +6,7 @@ language: pt
 product_language: pt
 id: predicao_euploidia
 status: active
+project: project_ia_dados_transformacao_digital
 areas:
 - ai
 - machine_learning
@@ -19,11 +20,13 @@ authorimage: ../assets/images/global/author.webp
 categories:
 - products
 - george_marsicano
+- project_ia_dados_transformacao_digital
 tags:
 - app
 - ai
 - machine_learning
 - software_products
+- project_ia_dados_transformacao_digital
 ---
 ## Descrição do Produto
 
@@ -36,4 +39,3 @@ O produto amplia a atuação do CEDIS em inteligência artificial aplicada, expl
 - Maria Eduarda D Santos Abritta F (desenvolvimento do produto)
 - Sabrina Caldas Berna (desenvolvimento do produto)
 - Prof. {{< link-interno "/people/george_marsicano" "George Marsicano Corrêa" >}} (orientação e acompanhamento acadêmico)
-

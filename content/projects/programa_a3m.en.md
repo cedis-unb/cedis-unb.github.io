@@ -23,6 +23,7 @@ publications:
 - 2183-1378
 - indicadores_de_aprendizagem
 summary: "Ongoing project associated with the Learning for the Third Millennium Program, focused on educational innovation, active methodologies, and learning indicators at the University of Brasília."
+featured_image: "../assets/images/featured/a3m-logo.png"
 authorimage: ../assets/images/global/author.webp
 categories:
 - project

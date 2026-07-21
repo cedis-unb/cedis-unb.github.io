@@ -6,6 +6,7 @@ language: pt
 product_language: pt
 id: apoio_estudantil_fcte
 status: active
+project: project_ia_dados_transformacao_digital
 areas:
 - ai
 - education
@@ -20,11 +21,13 @@ authorimage: ../assets/images/global/author.webp
 categories:
 - products
 - george_marsicano
+- project_ia_dados_transformacao_digital
 tags:
 - app
 - ai
 - education
 - digital_transformation
+- project_ia_dados_transformacao_digital
 ---
 ## Descrição do Produto
 
@@ -37,5 +40,4 @@ O produto se relaciona à transformação digital de serviços e à melhoria da 
 - Giulia Domingues de Alcantara (desenvolvimento do produto)
 - Breno Henrique de Souza (desenvolvimento do produto)
 - Prof. {{< link-interno "/people/george_marsicano" "George Marsicano Corrêa" >}} (orientação e acompanhamento acadêmico)
-- {{< link-interno "/projects/td" "Projeto Transformação Digital" >}} (linha institucional relacionada)
-
+- {{< link-interno "/projects/ia_dados_transformacao_digital" "Inteligência artificial e análise de dados para a transformação digital" >}} (projeto de origem)

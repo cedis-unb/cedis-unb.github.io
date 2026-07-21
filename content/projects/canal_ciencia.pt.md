@@ -13,11 +13,15 @@ researchers:
 - cristiane_ramos
 areas:
 - gamification
-partners: []
-funding_agencies: []
+partners:
+- ibict
+funding_agencies:
+- finatec
 products:
 - jornada_galactica
-publications: []
+publications:
+- publication_2024_sergio_antonio_andrade_freitas_crafting_personalized_learning_environments_through_mo
+- publication_2026_cristiane_soares_ramos_gamifying_science_communication_an_experience_report_of_jornad
 featured_image: "../assets/images/featured/projeto_Canal Ciência.png"
 summary: Projeto de pesquisa em parceria com o IBICT e financiado pela FINATEC, com objetivo de aprimorar a experiência dos usuários do Canal Ciência através do uso da gamificação. 
 authorimage: ../assets/images/global/author.webp
@@ -35,7 +39,7 @@ tags:
 
 ## Descrição do Projeto
 
-Sob a orientação dos pesquisadores {{< link-interno "/people/sergio_freitas" "Sergio Freitas" >}} e {{< link-interno "/people/cristiane_ramos" "Cristiane Ramos" >}}, o projeto aprimorou a experiência do usuário do Canal Ciência. Ao empregar técnicas avançadas de gamificação, foi proposta uma abordagem mais envolvente e motivadora para a disseminação científica.
+Sob a orientação dos pesquisadores {{< link-interno "/people/sergio_freitas" "Sergio Freitas" >}} e {{< link-interno "/people/cristiane_ramos" "Cristiane Ramos" >}}, o projeto aprimorou a experiência do usuário do Canal Ciência. A iniciativa foi realizada em parceria com o IBICT, com financiamento operacionalizado pela Finatec. Ao empregar técnicas avançadas de gamificação, foi proposta uma abordagem mais envolvente e motivadora para a disseminação científica.
 
 ## Objetivos do Projeto
 
@@ -55,7 +59,8 @@ A implementação ocorreu na plataforma WordPress, a base atual do Canal Ciênci
 
 Os resultados deste projeto levaram à publicação de importantes trabalhos acadêmicos:
 1. **Um Processo para Identificar Perfis Motivacionais de Jogadores para Projetos de Gamificação**: Este artigo apresentou um novo processo para definir perfis motivacionais, utilizando três estratégias — avaliação por juízes, dinâmicas de jogos e o questionário Intrinsic Motivation Inventory (IMI). O processo foi aplicado ao Canal Ciência para engajar estudantes brasileiros em ciência. [DOI: 10.1007/978-3-031-64608-9_4](https://doi.org/10.1007/978-3-031-64608-9_4).
-2. **Criando Ambientes de Aprendizagem Personalizados Através de Perfis Motivacionais**: Este estudo explorou como perfis motivacionais, ajustados para diferentes faixas etárias, podem personalizar ambientes de aprendizagem, melhorando o engajamento e os resultados educacionais. A pesquisa envolveu mais de 580 participantes e analisou como as estratégias de gamificação foram adaptadas para atender às necessidades dos usuários. (A ser publicado, 2024).
+2. **{{< link-interno "/publications/2024-sergio-antonio-andrade-freitas-crafting-personalized-learning-environments-through-mo" "Crafting Personalized Learning Environments Through Motivational Profiling" >}}**: Artigo publicado no 2024 IEEE Frontiers in Education Conference (FIE), com DOI [10.1109/FIE61694.2024.10893473](https://doi.org/10.1109/FIE61694.2024.10893473), sobre personalização de ambientes de aprendizagem por perfis motivacionais a partir da experiência do Canal Ciência.
+3. **{{< link-interno "/publications/2026-cristiane-soares-ramos-gamifying-science-communication-an-experience-report-of-jornad" "Gamifying Science Communication: An Experience Report of Jornada Galáctica at Canal Ciência" >}}**: Trabalho derivado da experiência da Jornada Galáctica no Canal Ciência, apresentado na ICCSA 2026 em Braga, Portugal.
 
 ## Notícias e Atualizações
 
@@ -71,8 +76,9 @@ O projeto de gamificação culminou no lançamento da *Jornada Galáctica*. Expl
 
 ## Equipe
 
-Este projeto contou com a colaboração de especialistas do CEDIS e do IBICT, coordenados por Leda Sampson (IBICT). Também incluiu a participação de alunos de Engenharia de Software como Bolsistas de Iniciação Científica:
+Este projeto contou com a colaboração de especialistas do CEDIS e do IBICT, coordenados por Leda Sampson (IBICT), com financiamento pela Finatec. Também incluiu a participação de alunos de Engenharia de Software como bolsistas e orientandos de Iniciação Científica:
 
-{{< link-interno "/people/collaborators/mylena_faria" "Mylena Angélica Silva Farias" >}}<br>
-{{< link-interno "/people/collaborators/marcus_martins" "Marcus Vinicius Martins" >}}<br>
-{{< link-interno "/people/collaborators/wildemberg_sales" "Wildemberg Sales" >}}
+{{< link-interno "/people/collaborators/mylena_faria" "Mylena Angélica Silva Farias" >}} — orientanda PIBIC do Prof. Sergio Freitas.<br>
+{{< link-interno "/people/collaborators/marcus_martins" "Marcus Vinicius Martins" >}} — orientando PIBIC da Profa. Cristiane Ramos.<br>
+{{< link-interno "/people/collaborators/wildemberg_sales" "Wildemberg Sales" >}} — orientando PIBIC da Profa. Cristiane Ramos.<br>
+{{< link-interno "/people/collaborators/juan_alves" "Juan Mangueira Alves" >}} — orientando PIBIC do Prof. Sergio Freitas; participou por seis dos 18 meses do projeto e é coautor do artigo *Crafting Personalized Learning Environments Through Motivational Profiling*.

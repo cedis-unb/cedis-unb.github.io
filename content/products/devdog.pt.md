@@ -6,6 +6,7 @@ language: pt
 product_language: pt
 id: devdog
 status: active
+project: project_inovacao_digital_gamificacao
 areas:
 - gamification
 - software_quality
@@ -24,12 +25,14 @@ authorimage: ../assets/images/global/author.webp
 categories:
 - products
 - sergio_freitas
+- project_inovacao_digital_gamificacao
 tags:
 - app
 - gamification
 - software_quality
 - software_architecture
 - active_learning
+- project_inovacao_digital_gamificacao
 ---
 ## Descrição do Projeto
 

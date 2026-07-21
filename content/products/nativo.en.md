@@ -6,6 +6,9 @@ language: en
 product_language: pt
 id: nativo
 status: active
+project: project_inovacao_digital_gamificacao
+secondary_projects:
+- project_software_bem
 areas:
 - active_learning
 - social_software
@@ -19,11 +22,15 @@ authorimage: ../assets/images/global/author.webp
 categories:
 - products
 - sergio_freitas
+- project_inovacao_digital_gamificacao
+- project_software_bem
 tags:
 - app
 - active_learning
 - social_software
 - software_products
+- project_inovacao_digital_gamificacao
+- project_software_bem
 ---
 ## Project Description
 
