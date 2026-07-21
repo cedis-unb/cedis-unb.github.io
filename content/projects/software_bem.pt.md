@@ -5,8 +5,9 @@ date: 2025-05-03T17:08:50-03:00
 weight: 10
 language: pt
 id: project_software_bem
+project_type: umbrella
 status: ongoing
-start_date: 2025-05-03
+start_date: 2020-09-23
 researchers:
 - george_marsicano
 areas:
@@ -15,11 +16,12 @@ partners: []
 funding_agencies: []
 products:
 - bem_estar_universitario
+- nativo
 - prevencao_abuso_infantil
 - prevencao_violencia_infancia
 publications: []
 featured_image: "../assets/images/featured/projeto_Software_Bem.png"
-summary: O Software para o Bem (SpB) é um coletivo, uma comunidade de pessoas e Organizações, significados, ações, soluções, sentimentos e energias sintonizadas para gerar o bem, por meio do uso de software.  
+summary: O Software para o Bem (SpB) é um macroprojeto de impacto social que reúne pessoas, organizações, ações e soluções digitais orientadas a gerar o bem por meio do uso de software.
 authorimage: ../assets/images/global/author.webp
 categories: 
 - project
@@ -32,13 +34,13 @@ tags:
 
 ## Bem-vindo ao “Software para o Bem (SpB)”, uma iniciativa de impacto social da Universidade de Brasília
 
-Lançado em 23 de setembro de 2020, durante a 20ª Semana Universitária da Universidade de Brasília (UnB), o Software para o Bem (SpB) é uma proposta de criação de um coletivo, uma comunidade de pessoas e Organizações, significados, ações, soluções, sentimentos e energias sintonizadas para gerar o bem, via tecnologia digital (especificamente, software). Ancorado no Centro de Estudos, Desenvolvimento e Inovação em Software (CEDIS) da Faculdade de Ciências e Tecnologias em Engenharias (FCTE/UnB). Coordenado pelo professor George Marsicano, o SpB tem como missão desenvolver soluções digitais de impacto social positivo, sem custo para o usuário final, integrando áreas como engenharia de software, saúde, educação, publicidade e serviço social.
+Lançado em 23 de setembro de 2020, durante a 20ª Semana Universitária da Universidade de Brasília (UnB), o Software para o Bem (SpB) é um macroprojeto de impacto social e uma proposta de criação de um coletivo: uma comunidade de pessoas e organizações, significados, ações, soluções, sentimentos e energias sintonizadas para gerar o bem por meio de tecnologia digital, especialmente software. Ancorado no Centro de Estudos, Desenvolvimento e Inovação em Software (CEDIS) da Faculdade de Ciências e Tecnologias em Engenharias (FCTE/UnB). Coordenado pelo professor George Marsicano, o SpB tem como missão desenvolver soluções digitais de impacto social positivo, sem custo para o usuário final, integrando áreas como engenharia de software, saúde, educação, publicidade e serviço social.
 
 Por meio da articulação entre saberes diversos e do trabalho colaborativo com instituições públicas e privadas, o programa visa fomentar cidadania, empoderamento e transformação social através da tecnologia.
 
 ## Sobre o Programa
 
-O SpB nasce como resposta à necessidade de conectar a inovação tecnológica com demandas sociais reais. Inspirado em experiências concretas como o projeto DOARTI, desenvolvido durante a pandemia da COVID-19, o programa propõe a criação de um ecossistema de desenvolvimento de softwares sociais, sustentado por equipes multidisciplinares e por uma rede de parcerias internas e externas à Universidade de Brasília.
+O SpB nasce como resposta à necessidade de conectar a inovação tecnológica com demandas sociais reais. Como macroprojeto, organiza e dá continuidade a iniciativas vinculadas, como o {{< link-interno "/projects/doarti" "projeto DOARTI" >}}, desenvolvido durante a pandemia da COVID-19. O programa propõe a criação de um ecossistema de desenvolvimento de softwares sociais, sustentado por equipes multidisciplinares e por uma rede de parcerias internas e externas à Universidade de Brasília.
 
 ### Sua Missão é
 - Sintonizar e inspirar pessoas e Organizações a fazer o bem.
@@ -62,7 +64,7 @@ O SpB nasce como resposta à necessidade de conectar a inovação tecnológica c
 ## Projetos Associados
 
 ### DOARTI
-Surgido no contexto da pandemia, o DOARTI criou uma plataforma digital de mapeamento e conexão entre entidades beneficentes e potenciais doadores no Distrito Federal. Com aplicativo e site já em operação, o projeto oferece suporte a 21 iniciativas sociais, fortalecendo redes de solidariedade. Seu desenvolvimento é 100% voluntário e integra estudantes e profissionais de diferentes áreas.
+Surgido no contexto da pandemia, o {{< link-interno "/projects/doarti" "DOARTI" >}} é um projeto vinculado ao Software para o Bem. Criou uma plataforma digital de mapeamento e conexão entre entidades beneficentes e potenciais doadores no Distrito Federal. Com aplicativo e site já em operação, o projeto oferece suporte a 21 iniciativas sociais, fortalecendo redes de solidariedade. Seu desenvolvimento é 100% voluntário e integra estudantes e profissionais de diferentes áreas.
 
 ### LEPIC
 Com foco em educação, o LEPIC tem como objetivo criar uma ferramenta para avaliação e monitoramento da fluência leitora de crianças. A proposta é fruto de uma parceria entre a UnB (FCTE e FCTS) e a UFMG, e visa apoiar políticas públicas de alfabetização com base em evidências e tecnologia acessível.

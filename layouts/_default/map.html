@@ -51,19 +51,35 @@
   {{ $projectId := .id }}
   {{ $label := index .name $siteLang }}
   {{ if not $label }}{{ $label = index .name "en" }}{{ end }}
+  {{ $nodeType := cond (eq (.project_type | default "project") "umbrella") "umbrella" "project" }}
+  {{ $childCount := 0 }}
+  {{ if eq $nodeType "umbrella" }}
+    {{ range hugo.Data.projects.projects }}
+      {{ if in (.umbrella_projects | default slice) $projectId }}
+        {{ $childCount = add $childCount 1 }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
   {{ $nodes = $nodes | append (dict
     "id" (printf "project:%s" $projectId)
-    "type" "project"
+    "type" $nodeType
     "label" $label
     "raw" $projectId
     "url" (printf "/tags/%s" ($projectId | urlize) | relLangURL)
-    "count" (len .researchers)
+    "count" (cond (eq $nodeType "umbrella") $childCount (len .researchers))
   ) }}
   {{ range .researchers }}
     {{ $links = $links | append (dict
       "source" (printf "project:%s" $projectId)
       "target" (printf "researcher:%s" .)
       "kind" "project-researcher"
+    ) }}
+  {{ end }}
+  {{ range .umbrella_projects }}
+    {{ $links = $links | append (dict
+      "source" (printf "project:%s" $projectId)
+      "target" (printf "project:%s" .)
+      "kind" "project-umbrella"
     ) }}
   {{ end }}
 {{ end }}
@@ -116,6 +132,11 @@
                   class="rounded-full border px-4 py-1.5 text-sm font-semibold transition-colors">
             <span class="inline-block h-2 w-2 rounded-full bg-emerald-500 mr-1.5"></span>{{ i18n "ui_map_filter_projects" }}
           </button>
+          <button type="button" @click="setFilter('umbrella')"
+                  :class="filter==='umbrella' ? 'border-violet-500 bg-violet-500 text-white' : 'border-black/10 bg-white text-gray-700 hover:border-violet-400 hover:text-violet-700 dark:border-white/10 dark:bg-white/[0.04] dark:text-white/78'"
+                  class="rounded-full border px-4 py-1.5 text-sm font-semibold transition-colors">
+            <span class="inline-block h-2 w-2 rounded-full bg-violet-500 mr-1.5"></span>{{ cond $isPt "Frentes" "Fronts" }}
+          </button>
         </div>
         <div class="relative overflow-hidden rounded-[2rem] border border-black/5 bg-white/90 shadow-[0_18px_60px_rgba(15,23,42,0.08)] dark:border-white/10 dark:bg-white/[0.04]">
           <svg id="areas-map-svg" class="block w-full" viewBox="0 0 900 640" role="img" aria-label="{{ i18n "ui_map_svg_alt" }}"></svg>
@@ -133,6 +154,7 @@
             <li class="flex items-center justify-between"><span class="text-gray-700 dark:text-white/78"><span class="inline-block h-2 w-2 rounded-full bg-blue-500 mr-2"></span>{{ i18n "ui_map_filter_areas" }}</span><span class="font-bold text-gray-900 dark:text-white" x-text="counts.area"></span></li>
             <li class="flex items-center justify-between"><span class="text-gray-700 dark:text-white/78"><span class="inline-block h-2 w-2 rounded-full bg-primary-500 mr-2"></span>{{ i18n "ui_map_filter_researchers" }}</span><span class="font-bold text-gray-900 dark:text-white" x-text="counts.researcher"></span></li>
             <li class="flex items-center justify-between"><span class="text-gray-700 dark:text-white/78"><span class="inline-block h-2 w-2 rounded-full bg-emerald-500 mr-2"></span>{{ i18n "ui_map_filter_projects" }}</span><span class="font-bold text-gray-900 dark:text-white" x-text="counts.project"></span></li>
+            <li class="flex items-center justify-between"><span class="text-gray-700 dark:text-white/78"><span class="inline-block h-2 w-2 rounded-full bg-violet-500 mr-2"></span>{{ cond $isPt "Frentes" "Fronts" }}</span><span class="font-bold text-gray-900 dark:text-white" x-text="counts.umbrella"></span></li>
           </ul>
         </div>
         <div class="rounded-[1.5rem] border border-black/5 bg-white/90 p-5 shadow-[0_18px_60px_rgba(15,23,42,0.08)] dark:border-white/10 dark:bg-white/[0.04]" x-show="selected" x-cloak>
@@ -151,6 +173,7 @@
             <li><span class="inline-block h-2.5 w-2.5 rounded-full bg-blue-500 mr-2 align-middle"></span>{{ i18n "ui_map_legend_area" }}</li>
             <li><span class="inline-block h-2.5 w-2.5 rounded-full bg-primary-500 mr-2 align-middle"></span>{{ i18n "ui_map_legend_researcher" }}</li>
             <li><span class="inline-block h-2.5 w-2.5 rounded-full bg-emerald-500 mr-2 align-middle"></span>{{ i18n "ui_map_legend_project" }}</li>
+            <li><span class="inline-block h-2.5 w-2.5 rounded-full bg-violet-500 mr-2 align-middle"></span>{{ cond $isPt "Frente estratégica (conecta subprojetos)" "Strategic front (connects subprojects)" }}</li>
           </ul>
         </div>
       </aside>
@@ -165,7 +188,7 @@ function cedisAreasMap() {
   return {
     filter: 'all',
     loading: true,
-    counts: { area: 0, researcher: 0, project: 0 },
+    counts: { area: 0, researcher: 0, project: 0, umbrella: 0 },
     selected: null,
     _sim: null,
     _all: null,
@@ -173,7 +196,8 @@ function cedisAreasMap() {
     _labels: {
       area: {{ i18n "ui_map_filter_areas" | jsonify | safeJS }},
       researcher: {{ i18n "ui_map_filter_researchers" | jsonify | safeJS }},
-      project: {{ i18n "ui_map_filter_projects" | jsonify | safeJS }}
+      project: {{ i18n "ui_map_filter_projects" | jsonify | safeJS }},
+      umbrella: {{ cond $isPt "Frentes" "Fronts" | jsonify | safeJS }}
     },
     init() {
       const raw = document.getElementById('cedis-map-data').textContent;
@@ -181,6 +205,7 @@ function cedisAreasMap() {
       this.counts.area = this._all.nodes.filter(n => n.type === 'area').length;
       this.counts.researcher = this._all.nodes.filter(n => n.type === 'researcher').length;
       this.counts.project = this._all.nodes.filter(n => n.type === 'project').length;
+      this.counts.umbrella = this._all.nodes.filter(n => n.type === 'umbrella').length;
       const check = () => {
         if (window.d3) { this.render(); }
         else setTimeout(check, 80);
@@ -213,8 +238,8 @@ function cedisAreasMap() {
         links = links.filter(l => nodeIds.has(l.source) && nodeIds.has(l.target));
       }
 
-      const color = { area: '#3b82f6', researcher: '#c5272f', project: '#10b981' };
-      const radius = { area: 12, researcher: 16, project: 10 };
+      const color = { area: '#3b82f6', researcher: '#c5272f', project: '#10b981', umbrella: '#8b5cf6' };
+      const radius = { area: 12, researcher: 16, project: 10, umbrella: 19 };
 
       const svg = d3.select(container);
       svg.selectAll('*').remove();
@@ -239,8 +264,8 @@ function cedisAreasMap() {
       nodeSel.append('text')
         .attr('dy', d => radius[d.type] + 14)
         .attr('text-anchor', 'middle')
-        .attr('font-size', d => d.type === 'researcher' ? 12 : 10)
-        .attr('font-weight', d => d.type === 'researcher' ? 700 : 500)
+        .attr('font-size', d => d.type === 'umbrella' ? 12 : (d.type === 'researcher' ? 12 : 10))
+        .attr('font-weight', d => d.type === 'umbrella' || d.type === 'researcher' ? 700 : 500)
         .attr('fill', '#1f2937')
         .attr('paint-order', 'stroke')
         .attr('stroke', 'rgba(255,255,255,0.9)')

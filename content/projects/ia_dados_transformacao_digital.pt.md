@@ -18,11 +18,10 @@ areas:
 partners: []
 funding_agencies: []
 products:
-- evidentia
-- contextus
+- apoio_estudantil_fcte
 - saga
 - magra
-- edutrackai
+- predicao_euploidia
 publications: []
 featured_image: "../assets/images/featured/project_ia_dados_transformacao_digital.png"
 summary: "Projeto guarda-chuva em andamento voltado à aplicação de inteligência artificial, aprendizado de máquina, processamento de linguagem natural e análise de dados em iniciativas de transformação digital."
@@ -76,10 +75,9 @@ O projeto tem como objetivos principais:
 
 Entre as frentes conectadas a este projeto estão:
 
-- revisão sistemática da literatura apoiada por software, materializada no {{< link-interno "/products/evidentia" "Evidentia Review" >}};
-- categorização e análise de informação científica, como no {{< link-interno "/products/contextus" "Portal Contextus" >}};
-- acompanhamento acadêmico e indicadores institucionais, incluindo {{< link-interno "/products/saga" "SAGA" >}} e {{< link-interno "/products/magra" "MAGRA" >}}; e
-- predição de desempenho acadêmico e integração de IA a ambientes educacionais, como no {{< link-interno "/products/edutrackai" "EduTrack AI" >}}.
+- acompanhamento acadêmico e indicadores institucionais, incluindo {{< link-interno "/products/saga" "SAGA" >}}, {{< link-interno "/products/magra" "MAGRA" >}} e {{< link-interno "/products/apoio_estudantil_fcte" "Apoio Estudantil FCTE" >}};
+- predição e apoio analítico com aprendizado de máquina, como em {{< link-interno "/products/predicao_euploidia" "Predição de Euploidia" >}}; e
+- automação, classificação, predição e apoio à decisão em contextos acadêmicos, institucionais e especializados.
 
 ## Equipe
 
@@ -91,11 +89,10 @@ Entre as frentes conectadas a este projeto estão:
 
 ## Produções e produtos relacionados
 
-- {{< link-interno "/products/evidentia" "Evidentia Review" >}}
-- {{< link-interno "/products/contextus" "Portal Contextus" >}}
+- {{< link-interno "/products/apoio_estudantil_fcte" "Apoio Estudantil FCTE" >}}
 - {{< link-interno "/products/saga" "SAGA" >}}
 - {{< link-interno "/products/magra" "MAGRA" >}}
-- {{< link-interno "/products/edutrackai" "EduTrack AI" >}}
+- {{< link-interno "/products/predicao_euploidia" "Predição de Euploidia" >}}
 
 ## Produção C&T vinculada
 

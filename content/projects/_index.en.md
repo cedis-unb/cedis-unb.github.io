@@ -7,5 +7,3 @@ description: "CEDIS research, development, and innovation projects, sorted by st
 featured_image: "../assets/images/pages/media-CEDIS.png"
 translationKey: projects
 ---
-
-CEDIS projects in software research, development, innovation, learning, gamification, artificial intelligence, open science, and digital transformation.

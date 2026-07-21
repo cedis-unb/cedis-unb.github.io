@@ -6,6 +6,7 @@ language: pt
 product_language: pt
 id: saga
 status: active
+project: project_ia_dados_transformacao_digital
 areas:
 - machine_learning
 - learning_analytics
@@ -23,10 +24,12 @@ categories:
 - sergio_freitas
 - cristiane_ramos
 - george_marsicano
+- project_ia_dados_transformacao_digital
 tags: 
 - app
 - machine_learning
 - learning_analytics
+- project_ia_dados_transformacao_digital
 ---
 Brasília, Junho de 2021.
 

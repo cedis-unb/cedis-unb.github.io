@@ -6,6 +6,7 @@ language: en
 product_language: pt
 id: deckmanager
 status: active
+project: project_inovacao_digital_gamificacao
 areas:
 - learning_analytics
 - active_learning
@@ -20,11 +21,13 @@ authorimage: ../assets/images/global/author.webp
 categories:
 - products
 - sergio_freitas
+- project_inovacao_digital_gamificacao
 tags:
 - app
 - learning_analytics
 - active_learning
 - digital_transformation
+- project_inovacao_digital_gamificacao
 ---
 ## Project Description
 

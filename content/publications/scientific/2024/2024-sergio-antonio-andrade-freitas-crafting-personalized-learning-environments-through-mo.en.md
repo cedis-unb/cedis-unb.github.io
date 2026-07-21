@@ -1,6 +1,6 @@
 ---
 title: Crafting Personalized Learning Environments Through Motivational Profiling
-date: '2024-01-01T00:00:00-03:00'
+date: '2024-10-13T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2024_sergio_antonio_andrade_freitas_crafting_personalized_learning_environments_through_mo
@@ -35,17 +35,18 @@ tags:
 - cristiane_ramos
 - active_learning
 - gamification
+- project_cc
 - mylena_faria
 - marcus_martins
 - juan_alves
 advisors: []
 doi_isbn: 10.1109/FIE61694.2024.10893473
-source_title: Frontiers in Education 2024
-publisher: ''
-location: Washington DC, USA
-pages: ''
+source_title: 2024 IEEE Frontiers in Education Conference (FIE)
+publisher: IEEE
+location: Washington, DC, USA
+pages: 1-9
 volume: ''
-external_url: ''
+external_url: https://ieeexplore.ieee.org/document/10893473
 spotify_podcast: https://open.spotify.com/episode/13t9RnyuKrvadtBiEzfxUN?si=01ex4jq1SPmq_9Vqc0ZWzA
 github_repo: ''
 zenodo_record: ''
@@ -56,8 +57,9 @@ bibtex: "@inproceedings{2024-sergio-antonio-andrade-freitas-crafting-personalize
   \  author = {Sergio Antônio Andrade Freitas and Mylena Angélica S. Farias and Cristiane\
   \ S. Ramos and Marcus Vinícius Paiva Martins and Juan Mangueira Alves and Leda Cardoso\
   \ S. Pinto},\n  title = {Crafting Personalized Learning Environments Through Motivational\
-  \ Profiling},\n  year = {2024},\n  booktitle = {Frontiers in Education 2024},\n\
-  \  address = {Washington DC, USA},\n  doi = {10.1109/FIE61694.2024.10893473}\n}"
+  \ Profiling},\n  year = {2024},\n  booktitle = {2024 IEEE Frontiers in Education\
+  \ Conference (FIE)},\n  pages = {1-9},\n  address = {Washington, DC, USA},\n  publisher\
+  \ = {IEEE},\n  doi = {10.1109/FIE61694.2024.10893473}\n}"
 aliases:
 - /publications/2024-sergio-antonio-andrade-freitas-crafting-personalized-learning-environments-through-mo/
 ---

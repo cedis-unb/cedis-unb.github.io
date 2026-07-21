@@ -6,6 +6,7 @@ language: en
 product_language: pt
 id: chatbot_requisitos
 status: active
+project: project_super_r
 areas:
 - ai
 - software_requirements
@@ -19,10 +20,12 @@ authorimage: ../assets/images/global/author.webp
 categories:
 - products
 - george_marsicano
+- project_super_r
 tags:
 - app
 - ai
 - software_requirements
+- project_super_r
 ---
 ## Product Description
 
@@ -35,4 +38,3 @@ The product is aligned with CEDIS research on software requirements, applied art
 - A. C. M. Lustosa Junior (product development)
 - P. H. M. Oliveira (product development)
 - Prof. {{< link-interno "/people/george_marsicano" "George Marsicano Corrêa" >}} (academic supervision and guidance)
-

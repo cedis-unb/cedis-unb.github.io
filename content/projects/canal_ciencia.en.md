@@ -13,11 +13,15 @@ researchers:
 - cristiane_ramos
 areas:
 - gamification
-partners: []
-funding_agencies: []
+partners:
+- ibict
+funding_agencies:
+- finatec
 products:
 - jornada_galactica
-publications: []
+publications:
+- publication_2024_sergio_antonio_andrade_freitas_crafting_personalized_learning_environments_through_mo
+- publication_2026_cristiane_soares_ramos_gamifying_science_communication_an_experience_report_of_jornad
 featured_image: "../assets/images/featured/projeto_Canal Ciência.png"
 summary: A research project in partnership with IBICT and funded by FINATEC, aimed at enhancing the user experience of the Canal Ciência through the use of gamification.
 authorimage: ../assets/images/global/author.webp
@@ -35,7 +39,7 @@ tags:
 
 ## Project Description
 
-Under the guidance of researchers {{< link-interno "/people/sergio_freitas" "Sergio Freitas" >}} and {{< link-interno "/people/cristiane_ramos" "Cristiane Ramos" >}}, the project enhanced the user experience of Canal Ciência. By employing advanced gamification techniques, a more engaging and motivating approach to scientific dissemination was proposed.
+Under the guidance of researchers {{< link-interno "/people/sergio_freitas" "Sergio Freitas" >}} and {{< link-interno "/people/cristiane_ramos" "Cristiane Ramos" >}}, the project enhanced the user experience of Canal Ciência. The initiative was carried out in partnership with IBICT, with funding operationalized by Finatec. By employing advanced gamification techniques, a more engaging and motivating approach to scientific dissemination was proposed.
 
 ## Project Objectives
 
@@ -55,7 +59,8 @@ The implementation took place on the WordPress platform, the current base of Can
 
 The results of this project led to the publication of significant academic works:
 1. **A Process to Identify Players’ Motivational Profiles for Gamification Projects**: This paper presented a new process to define motivational profiles, using three strategies—evaluation by judges, game dynamics, and the Intrinsic Motivation Inventory (IMI). The process was applied to Canal Ciência to engage Brazilian students in science. [DOI: 10.1007/978-3-031-64608-9_4](https://doi.org/10.1007/978-3-031-64608-9_4).
-2. **Crafting Personalized Learning Environments Through Motivational Profiling**: This study explored how motivational profiles, adjusted for different age groups, can personalize learning environments, improving engagement and educational outcomes. The research involved over 580 participants and analyzed how gamification strategies were adapted to meet user needs. (To appear, 2024).
+2. **{{< link-interno "/publications/2024-sergio-antonio-andrade-freitas-crafting-personalized-learning-environments-through-mo" "Crafting Personalized Learning Environments Through Motivational Profiling" >}}**: Paper published in the 2024 IEEE Frontiers in Education Conference (FIE), DOI [10.1109/FIE61694.2024.10893473](https://doi.org/10.1109/FIE61694.2024.10893473), on personalizing learning environments through motivational profiling based on the Canal Ciência experience.
+3. **{{< link-interno "/publications/2026-cristiane-soares-ramos-gamifying-science-communication-an-experience-report-of-jornad" "Gamifying Science Communication: An Experience Report of Jornada Galáctica at Canal Ciência" >}}**: Work derived from the Jornada Galáctica experience at Canal Ciência, presented at ICCSA 2026 in Braga, Portugal.
 
 ## News and Updates
 
@@ -71,8 +76,9 @@ The gamification project culminated in the launch of the *Jornada Galáctica*. E
 
 ## Team
 
-This project involved collaboration between experts from CEDIS and IBICT, coordinated by Leda Sampson (IBICT). It also included the participation of Software Engineering students as Undergraduate Research Fellows:
+This project involved collaboration between experts from CEDIS and IBICT, coordinated by Leda Sampson (IBICT), with funding by Finatec. It also included the participation of Software Engineering students as undergraduate research fellows and advisees:
 
-{{< link-interno "/people/collaborators/mylena_faria" "Mylena Angélica Silva Farias" >}}<br>
-{{< link-interno "/people/collaborators/marcus_martins" "Marcus Vinicius Martins" >}}<br>
-{{< link-interno "/people/collaborators/wildemberg_sales" "Wildemberg Sales" >}}
+{{< link-interno "/people/collaborators/mylena_faria" "Mylena Angélica Silva Farias" >}} — PIBIC undergraduate research advisee of Prof. Sergio Freitas.<br>
+{{< link-interno "/people/collaborators/marcus_martins" "Marcus Vinicius Martins" >}} — PIBIC undergraduate research advisee of Prof. Cristiane Ramos.<br>
+{{< link-interno "/people/collaborators/wildemberg_sales" "Wildemberg Sales" >}} — PIBIC undergraduate research advisee of Prof. Cristiane Ramos.<br>
+{{< link-interno "/people/collaborators/juan_alves" "Juan Mangueira Alves" >}} — PIBIC undergraduate research advisee of Prof. Sergio Freitas; participated for six of the project's 18 months and co-authored the paper *Crafting Personalized Learning Environments Through Motivational Profiling*.

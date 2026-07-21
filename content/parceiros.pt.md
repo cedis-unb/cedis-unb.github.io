@@ -16,11 +16,11 @@ partners:
     full_name: "Instituto Brasileiro de Informação em Ciência e Tecnologia"
     logo: "images/global/ibict.svg"
     logo_alt: "IBICT"
-    since: "2013"
-    story: "Parceria mais longeva do CEDIS. Do IBICT nasceu o Canal Ciência e, mais recentemente, o DFCris — sistema de indexação de produção científica com PLN e machine learning. Trabalho conjunto atravessa 12 anos de projetos cooperativos e publicações."
+    since: "2021"
+    story: "Parceria institucional do CEDIS. Primeiro veio o DFCris — sistema de indexação de produção científica com PLN e machine learning — e depois a Jornada Galáctica, gamificação do portal Canal Ciência. Trabalho conjunto atravessa projetos cooperativos e publicações."
     outcomes:
-      - "Canal Ciência (portal de divulgação científica)"
       - "DFCris (indexação com PLN + ML)"
+      - "Jornada Galáctica (gamificação do Canal Ciência)"
       - "Prêmio de melhor artigo na ICCSA 2024 (Vietnã)"
     url: "https://www.gov.br/ibict/pt-br"
 
@@ -29,7 +29,7 @@ partners:
     full_name: "Programa Aprendizagem para o Terceiro Milênio"
     logo: "images/global/A3M.png"
     logo_alt: "A3M"
-    since: "2015"
+    since: "2020"
     story: "Programa institucional da UnB para inovação pedagógica. O CEDIS entra com engenharia de software educacional — desde gamificação até learning analytics — para transformar disciplinas em experiências mensuráveis."
     outcomes:
       - "Metodologias ativas em disciplinas de ES"
@@ -68,12 +68,12 @@ partners:
     full_name: "Canal Ciência (IBICT)"
     logo: "images/global/cc.svg"
     logo_alt: "Canal Ciência"
-    since: "2019"
-    story: "Portal de divulgação científica desenvolvido em parceria com o IBICT. O CEDIS foi responsável por arquitetura, integração e evolução da plataforma — publicando também sobre governança de dados e usabilidade científica."
+    since: "2023"
+    story: "A colaboração do CEDIS no Canal Ciência ocorreu por meio da Jornada Galáctica, uma experiência gamificada de divulgação científica no portal do IBICT. A equipe atuou na concepção da gamificação, nos perfis motivacionais, na implementação e na avaliação da experiência."
     outcomes:
-      - "Plataforma web ativa em produção"
-      - "Publicações sobre governança e UX"
-      - "Formação de estudantes em projetos reais"
+      - "Jornada Galáctica no portal Canal Ciência"
+      - "Perfis motivacionais e indicadores de engajamento"
+      - "Prêmio de melhor artigo na ICCSA 2024 (Vietnã)"
     url: "http://www.canalciencia.ibict.br/"
 
   - id: labvista
@@ -81,7 +81,7 @@ partners:
     full_name: "Laboratório VISTA — Universidade de Évora (Portugal)"
     logo: "images/global/labvista.svg"
     logo_alt: "VISTA Lab"
-    since: "2021"
+    since: "2023"
     story: "Cooperação internacional em visualização, interação e sistemas aplicados. Abriu mobilidade acadêmica, coautoria em conferências europeias e mentoria cruzada entre orientandos das duas instituições."
     outcomes:
       - "Coautoria em publicações internacionais"
@@ -92,6 +92,22 @@ partners:
 awards_heading: "Prêmios e marcos institucionais"
 awards_lead: "Reconhecimentos, prêmios em conferência, menções e marcos que o CEDIS acumulou ao longo dos anos."
 awards:
+  - year: 2025
+    title: "Menção honrosa — Prêmio Anual de Inovação no Ensino de Graduação da UnB"
+    kind: "milestone"
+    recipients:
+      - "Sergio Antonio Andrade de Freitas"
+    detail: "O projeto Alvorecer Feudal recebeu menção honrosa na categoria Uso de recursos tecnológicos / Produção de material didático inovador."
+    linked_project: "project_alvorecer"
+
+  - year: 2024
+    title: "Terceiro melhor artigo — IEEE ITHET 2024 (Paris)"
+    kind: "conference_award"
+    recipients:
+      - "Éber Junio Borges Moreira"
+      - "Sergio Antonio Andrade de Freitas"
+    detail: "O artigo sobre agendamento de recursos acadêmicos com CP-SAT foi premiado na IEEE International Conference on Information Technology Based Higher Education and Training."
+
   - year: 2024
     title: "Melhor artigo — ICCSA 2024 (Vietnã)"
     kind: "conference_award"
@@ -106,6 +122,16 @@ awards:
     recipients:
       - "Bolsista CEDIS"
     detail: "Primeira apresentação internacional de um(a) bolsista do CEDIS em conferência da ICCSA, marcando a expansão da presença do grupo em fóruns europeu-asiáticos."
+
+  - year: 2023
+    title: "Menção honrosa — Prêmio Anual de Inovação no Ensino de Graduação da UnB"
+    kind: "milestone"
+    recipients:
+      - "Cristiane Soares Ramos"
+      - "Sergio Antônio Andrade de Freitas"
+      - "Equipe A3M"
+    detail: "Reconhecimento na categoria Melhoria de indicadores de aprendizagem, associado ao livro Indicadores de Aprendizagem e ao Programa A3M."
+    linked_project: "project_a3m"
 
   - year: 2020
     title: "Lançamento do Software para o Bem — 20ª Semana Universitária UnB"
