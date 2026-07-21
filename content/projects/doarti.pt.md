@@ -17,6 +17,7 @@ funding_agencies: []
 products: []
 publications: []
 summary: "Projeto de solução tecnológica para potencializar o processo de doações no Distrito Federal."
+featured_image: "../assets/images/featured/project_doarti.png"
 authorimage: ../assets/images/global/author.webp
 categories:
 - project

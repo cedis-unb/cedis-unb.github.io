@@ -17,6 +17,7 @@ funding_agencies: []
 products: []
 publications: []
 summary: "Ongoing project based on service design and user experience for digital transformation at SPU."
+featured_image: "../assets/images/featured/project_spux.png"
 authorimage: ../assets/images/global/author.webp
 categories:
 - project

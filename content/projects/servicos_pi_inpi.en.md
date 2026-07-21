@@ -17,6 +17,7 @@ funding_agencies: []
 products: []
 publications: []
 summary: "Ongoing project on innovation and efficiency in retrieving intellectual property information at INPI."
+featured_image: "../assets/images/featured/project_servicos_pi.png"
 authorimage: ../assets/images/global/author.webp
 categories:
 - project

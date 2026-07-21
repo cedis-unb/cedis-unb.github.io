@@ -21,9 +21,9 @@ Nosso trabalho vive em três frentes:
 
 ## Para saber mais
 
-- {{< link-interno "/people" "Quem faz o CEDIS" >}} — pesquisadores, orientandos, colaboradores e alumni
 - {{< link-interno "/history" "Nossa história" >}} — linha do tempo desde 2013
+- {{< link-interno "/parceiros" "Parceiros e reconhecimentos" >}} — instituições que caminham conosco, prêmios e marcos institucionais
 - {{< link-interno "/infra" "Infraestrutura" >}} — onde funcionamos e com que recursos
-- {{< link-interno "/parceiros" "Parcerias" >}} — instituições que caminham conosco
+- {{< link-interno "/indicadores" "Indicadores" >}} — números consolidados de pessoas, projetos, produtos e publicações
 - {{< link-interno "/mapa" "Mapa do conhecimento" >}} — visualização das áreas, pessoas e projetos
 - {{< link-interno "/contact" "Contato" >}} — como falar com a gente
