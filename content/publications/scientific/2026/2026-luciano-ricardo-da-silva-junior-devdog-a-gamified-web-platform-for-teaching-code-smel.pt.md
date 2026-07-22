@@ -29,6 +29,7 @@ tags:
 - software_architecture
 - sergio_freitas
 - andre_lanna
+- project_inovacao_digital_gamificacao
 advisors: []
 doi_isbn: ''
 source_title: 40th Brazilian Symposium on Software Engineering (SBES 2026) - Tools

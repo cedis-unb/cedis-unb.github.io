@@ -28,6 +28,7 @@ authors_structured:
 tags:
 - daniel_sundfeld
 - hpc
+- project_laguna
 advisors: []
 doi_isbn: 10.22477/vii.widat.184
 source_title: VII Workshop de Informação, Dados e Tecnologia WIDaT

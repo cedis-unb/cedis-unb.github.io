@@ -22,6 +22,7 @@ authors_structured:
 tags:
 - ai
 - education
+- project_ia_dados_transformacao_digital
 advisors:
 - george_marsicano
 doi_isbn: ''

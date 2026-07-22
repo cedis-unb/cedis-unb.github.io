@@ -17,6 +17,7 @@ authors_structured:
   id: gabriela_da_gama_piveta
 tags:
 - green_software
+- project_gsd
 advisors:
 - fabiana_mendes
 doi_isbn: ''

@@ -39,6 +39,7 @@ tags:
 - mylena_faria
 - marcus_martins
 - juan_alves
+- project_cc
 advisors: []
 doi_isbn: 10.1007/978-3-031-64608-9_4
 source_title: 24th International Conference on Computational Science and Its Applications
