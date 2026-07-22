@@ -205,6 +205,97 @@ o ID de projeto correto em `tags:`, rodar `scripts/build_publications.py`
 com um ambiente Python que tenha PyYAML, revisar diffs colaterais do
 gerador e executar `npm run build`.
 
+#### Plano para automação completa dos vínculos de projetos
+
+O objetivo da automação é fazer Hugo renderizar, sem tabelas manuais,
+os vínculos entre macroprojetos, projetos individuais, produtos,
+produção C&T, orientações e pessoas. A automação deve ser determinística:
+Hugo só deve aplicar relações explicitamente registradas nos metadados.
+Quando o vínculo depender de interpretação histórica, semântica ou
+contextual, a etapa de curadoria por pessoa ou IA ainda será necessária
+antes do build.
+
+Para chegar ao estado automatizado, seguir este plano:
+
+1. **Padronizar projetos.**
+   Todo projeto deve ter `id`, `project_type`, `researchers`,
+   `students` quando aplicável e `umbrella_projects` quando fizer parte
+   de macroprojeto. Macroprojetos devem usar `project_type: umbrella`.
+   Projetos individuais devem usar `project_type: project` ou omitir o
+   campo quando o padrão for projeto individual.
+
+2. **Padronizar produtos.**
+   Todo produto em `content/products/*.md` deve declarar `id` e, sempre
+   que conhecido, `project`, `secondary_projects` e `publications`.
+   Produtos diretos de macroprojeto devem usar o ID do macroprojeto em
+   `project`. Produtos com vínculo secundário devem usar
+   `secondary_projects`, sem duplicar o vínculo principal.
+
+3. **Padronizar produções.**
+   Todo item em `data/productions.yaml` deve declarar `type`, `year`,
+   `title` e `tags` com IDs de projeto quando houver vínculo conhecido.
+   Orientações devem ter `advisors` e, quando possível, orientando em ID
+   consistente. A automação de Hugo não deve inferir vínculo apenas por
+   palavras do título.
+
+4. **Criar um escopo de projeto reutilizável.**
+   Implementar um partial ou bloco comum em Hugo que, dado o ID do
+   projeto atual, retorne:
+   - o próprio projeto;
+   - subprojetos, quando o projeto atual for macroprojeto;
+   - macroprojetos, quando o projeto atual for individual;
+   - produtos diretos e secundários do escopo;
+   - publicações declaradas em projetos e produtos do escopo.
+
+5. **Automatizar as tabelas de produção.**
+   Substituir as tabelas manuais "Produção C&T vinculada" e "Orientações
+   vinculadas" por shortcodes ou seções automáticas do template de
+   projeto. A tabela deve usar o escopo calculado, percorrer
+   `hugo.Data.productions.items`, filtrar por `tags` e por publicações
+   declaradas em produtos/projetos, ordenar por ano decrescente e título,
+   e separar produção C&T de orientações conforme a regra de tipos
+   definida acima.
+
+6. **Automatizar links internos.**
+   A renderização deve procurar a página correspondente em
+   `content/publications/` e linkar somente o título quando a página
+   existir. Para produtos, deve linkar `content/products/`. Itens sem
+   página própria devem aparecer como texto simples.
+
+7. **Automatizar rede ampliada.**
+   Para macroprojetos, Hugo deve calcular "Rede ampliada" a partir de
+   subprojetos, produtos, produções, orientações e pessoas declaradas nos
+   metadados. A contagem deve remover duplicações por ID ou, quando não
+   houver ID, por nome normalizado. A interface deve continuar usando
+   linguagem humana, não termos técnicos.
+
+8. **Remover duplicação manual.**
+   Depois que o template estiver validado, remover dos arquivos
+   `content/projects/*.md` as tabelas manuais equivalentes. O Markdown do
+   projeto deve manter texto curatorial, objetivos, contexto, dados gerais
+   e narrativa; os blocos relacionais devem ser derivados por Hugo.
+
+9. **Adicionar validações.**
+   Criar checagens de consistência para IDs inexistentes, produtos sem
+   projeto, publicações com tag de projeto inexistente, páginas geradas
+   sem fonte em `data/productions.yaml` e orientações sem `advisors`.
+   Essas validações podem ser scripts auxiliares executados antes de
+   `npm run build`.
+
+10. **Definir o papel residual da IA.**
+    Depois da automação, IA não deve ser necessária para renderizar o
+    portal. Ela pode continuar útil para sugerir vínculos novos, revisar
+    casos ambíguos, enriquecer metadados e transformar evidências
+    textuais em IDs estruturados. A decisão final deve virar dado
+    explícito antes do build.
+
+Critério de conclusão: uma alteração em `data/productions.yaml`,
+`data/projects.yaml` ou no front matter de `content/products/*.md` deve
+ser suficiente para que `npm run build` atualize automaticamente as
+páginas de projeto, as contagens, os links, as produções vinculadas, as
+orientações vinculadas e a rede ampliada, sem edição manual das tabelas
+em Markdown.
+
 ### Publicações geradas
 
 As páginas em `content/publications/` são geradas a partir de
