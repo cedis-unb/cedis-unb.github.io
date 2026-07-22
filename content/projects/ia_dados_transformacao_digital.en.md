@@ -100,24 +100,24 @@ Connected fronts include:
 |---|---|---|
 | 2024 | The impact of artificial intelligence on science | Event participation |
 | 2024 | Panel on Techniques and Tools for Scientific Information Analysis and Treatment | Event participation |
-| 2024 | Learning Indicators as Tools for Continuous Improvement in the Educational Environment | Conference paper |
-| 2024 | A CP-SAT Approach for Academic Resource Timetabling in Higher Education Institutions: A Case Study at a Major Public University | Conference paper |
+| 2024 | {{< link-interno "/publications/2024-cristiane-s-ramos-learning-indicators-as-tools-for-continuous-improvement-in-the-educ" "Learning Indicators as Tools for Continuous Improvement in the Educational Environment" >}} | Conference paper |
+| 2024 | {{< link-interno "/publications/2024-eber-junio-borges-moreira-a-cp-sat-approach-for-academic-resource-timetabling-in-high" "A CP-SAT Approach for Academic Resource Timetabling in Higher Education Institutions: A Case Study at a Major Public University" >}} | Conference paper |
 | 2024 | Academic Resource Scheduling System (SARA) | Software |
 | 2024 | AI-dvogado - Multimodal chatbot system for labor-law consulting | Software |
-| 2024 | Contextus - System for automated categorization of scientific texts | Software |
-| 2023 | A Systematic Review of the Factors that Impact the Prediction of Retention and Dropout in Higher Education | Conference paper |
-| 2023 | Undergraduate Analysis Model (MAGRA) | Software |
-| 2021 | Academic Monitoring and Management Support System - SAGA | Software |
+| 2024 | {{< link-interno "/products/contextus" "Contextus - System for automated categorization of scientific texts" >}} | Software |
+| 2023 | {{< link-interno "/publications/2023-silva-e-c-a-systematic-review-of-the-factors-that-impact-the-prediction-of-retention" "A Systematic Review of the Factors that Impact the Prediction of Retention and Dropout in Higher Education" >}} | Conference paper |
+| 2023 | {{< link-interno "/products/magra" "Undergraduate Analysis Model (MAGRA)" >}} | Software |
+| 2021 | {{< link-interno "/products/saga" "Academic Monitoring and Management Support System - SAGA" >}} | Software |
 
 ## Linked supervision
 
 | Year | Supervision | Type |
 |---|---|---|
-| 2024 | Academic resource scheduling in Higher Education Institutions: Case study at the University of Brasilia | Master's thesis |
-| 2024 | Use of Large Language Models in the development of a multimodal chatbot for labor-law consulting | Undergraduate capstone project |
-| 2023 | Prediction of academic dropout in higher education: The case of in-person undergraduate programs at the University of Brasilia | Master's thesis |
-| 2023 | SAMI: System for analysis of learning indicator metrics | Undergraduate capstone project |
-| 2023 | Latte: A Gamified Chatbot to Support Scientific Article Writing | Undergraduate capstone project |
-| 2022 | Identification of factors affecting dropout in Higher Education | Undergraduate capstone project |
+| 2024 | {{< link-interno "/publications/2024-eber-junio-borges-moreira-agendamento-de-recursos-academicos-em-instituicoes-de-ensin" "Academic resource scheduling in Higher Education Institutions: Case study at the University of Brasilia" >}} | Master's thesis |
+| 2024 | {{< link-interno "/publications/2024-alvaro-henrique-de-sousa-gouvea-utilizacao-de-large-language-models-no-desenvolviment" "Use of Large Language Models in the development of a multimodal chatbot for labor-law consulting" >}} | Undergraduate capstone project |
+| 2023 | {{< link-interno "/publications/2023-edmilson-cosme-da-silva-previsao-da-evasao-academica-no-ensino-superior-o-caso-dos-cu" "Prediction of academic dropout in higher education: The case of in-person undergraduate programs at the University of Brasilia" >}} | Master's thesis |
+| 2023 | {{< link-interno "/publications/2023-joao-vitor-de-moura-rosa-silva-sami-sistema-para-analise-de-metricas-de-indicadores-d" "SAMI: System for analysis of learning indicator metrics" >}} | Undergraduate capstone project |
+| 2023 | {{< link-interno "/publications/2023-luiz-henrique-fernandes-zamprogno-latte-um-chatbot-gamificado-para-apoio-na-producao" "Latte: A Gamified Chatbot to Support Scientific Article Writing" >}} | Undergraduate capstone project |
+| 2022 | {{< link-interno "/publications/2022-amanda-emilly-muniz-de-menezes-identificacao-de-fatores-que-afetam-a-evasao-no-ensino" "Identification of factors affecting dropout in Higher Education" >}} | Undergraduate capstone project |
 | 2022 | BRCris Project: Dashboards for data visualization | Undergraduate research |
 | 2022 | BRCris Project: Using the LDA algorithm to identify research topics | Undergraduate research |

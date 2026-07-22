@@ -24,6 +24,7 @@ tags:
 - gamification
 - machine_learning
 - arthur_temporim
+- project_inovacao_digital_gamificacao
 advisors: []
 doi_isbn: 10.1007/978-3-031-66428-1_2
 source_title: 10th Intelligent Systems Conference

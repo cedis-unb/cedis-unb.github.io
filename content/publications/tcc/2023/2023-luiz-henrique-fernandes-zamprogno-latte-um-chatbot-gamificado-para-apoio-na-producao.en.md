@@ -22,6 +22,7 @@ tags:
 - gamification
 - ai
 - nlp
+- project_inovacao_digital_gamificacao
 advisors:
 - sergio_freitas
 doi_isbn: ''

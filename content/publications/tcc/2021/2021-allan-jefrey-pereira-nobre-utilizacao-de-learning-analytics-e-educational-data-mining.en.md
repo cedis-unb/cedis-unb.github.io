@@ -19,6 +19,7 @@ authors_structured:
 tags:
 - learning_analytics
 - education
+- project_a3m
 advisors:
 - cristiane_ramos
 doi_isbn: ''

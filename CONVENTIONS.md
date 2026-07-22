@@ -70,6 +70,141 @@ compatibilidade visual e de taxonomia.
 consumidores legados e deve ser tratado como espelho transitório. Novas
 relações devem ser adicionadas primeiro nas páginas em `content/`.
 
+### Macroprojetos, subprojetos e vínculos de produção
+
+O portal distingue três níveis de vínculo entre produções, produtos e
+projetos:
+
+| Nível | Quando usar | Como registrar hoje |
+|---|---|---|
+| Projeto individual | Existe um projeto específico que explica diretamente a produção, produto, TCC, dissertação ou artigo. | Adicionar o ID do projeto individual em `tags:` de `data/productions.yaml` ou em `project:`/`secondary_projects:` de `content/products/*.md`. |
+| Macroprojeto direto | A produção/produto pertence à frente estratégica, mas não há projeto individual mais específico cadastrado. | Adicionar o ID do macroprojeto em `tags:` da produção ou `project:` do produto. |
+| Sem vínculo claro | O tema é próximo, mas não há evidência suficiente de relação com projeto ou macroprojeto. | Não adicionar tag de projeto. Registrar como sugestão pendente, se necessário. |
+
+A regra de decisão é sempre do mais específico para o mais amplo:
+
+1. Procurar primeiro um projeto individual já existente.
+2. Se não houver projeto individual, verificar se a produção é produto
+   direto de um macroprojeto.
+3. Se houver apenas semelhança temática, manter sem vínculo.
+4. Não duplicar em macroprojeto uma produção que já está vinculada a
+   projeto individual apenas porque esse projeto pertence ao macro. O
+   template deve conseguir agregar por relação guarda-chuva.
+
+Macroprojetos atuais:
+
+| ID | Nome |
+|---|---|
+| `project_ia_dados_transformacao_digital` | Artificial intelligence and data analysis for digital transformation |
+| `project_inovacao_digital_gamificacao` | Digital innovation and gamification for teaching, outreach, and software engineering |
+| `project_software_bem` | Software para o Bem |
+
+Projetos individuais podem declarar `umbrella_projects:` em
+`data/projects.yaml` e/ou no front matter futuro das páginas de projeto.
+Exemplos já usados:
+
+| Projeto individual | Macroprojeto |
+|---|---|
+| `dfcris` | `project_ia_dados_transformacao_digital` |
+| `project_cc` | `project_inovacao_digital_gamificacao` |
+| `project_alvorecer` | `project_inovacao_digital_gamificacao` |
+| `project_jornada` | `project_inovacao_digital_gamificacao` |
+| `project_framework_preditivo_engajamento` | `project_inovacao_digital_gamificacao`, `project_ia_dados_transformacao_digital` |
+| `project_super_r` | `project_inovacao_digital_gamificacao` |
+| `evidentia` | `project_ia_dados_transformacao_digital` |
+| `octaanalysis` | `project_inovacao_digital_gamificacao` |
+| `project_doarti` | `project_software_bem` |
+
+Produtos também podem ser produtos diretos de macroprojeto quando não
+há projeto individual intermediário. Exemplos: `atloria`,
+`deckmanager`, `devdog`, `gitranking`, `moodlegam` e `nativo` pertencem
+ao macroprojeto de inovação/gamificação; `apoio_estudantil_fcte`,
+`magra`, `predicao_euploidia` e `saga` pertencem ao macroprojeto de IA
+e dados; `bem_estar_universitario`, `prevencao_abuso_infantil` e
+`prevencao_violencia_infancia` pertencem ao macroprojeto Software para
+o Bem.
+
+#### Produções e orientações vinculadas
+
+As produções vinculadas a projetos são registradas hoje por meio de IDs
+de projeto em `tags:` dentro de `data/productions.yaml`. Isso vale para
+artigos, livros, capítulos, TCCs, dissertações, teses, registros,
+materiais e produções técnicas.
+
+Para decidir se uma produção entra como "Produção C&T vinculada" ou
+"Orientação vinculada":
+
+- `type: article`, `conference`, `book`, `book chapter`,
+  `book_section`, `workshop`, `registro`, `didactic` e softwares
+  registrados contam como produção C&T.
+- `type: tcc`, `dissertation`, `phd`, `specialization` contam como
+  orientação quando há orientador CEDIS em `advisors:`.
+- Uma dissertação ou TCC pode também gerar produto ou artigo. Nesse
+  caso, todos os itens podem ter o mesmo ID de projeto, mas não devem
+  ser duplicados como se fossem a mesma produção.
+- Se o mesmo resultado aparece como TCC e artigo, vincular os dois
+  quando ambos existem em `data/productions.yaml`, pois eles representam
+  produtos acadêmicos distintos.
+
+Os títulos nas tabelas "Produção C&T vinculada" e "Orientações
+vinculadas" devem ser linkados apenas quando houver página específica
+em `content/publications/` ou `content/products/`. Não criar link para
+página genérica de tag/projeto apenas para "ter link". Em tabelas
+densas, o link deve ser discreto: linkar somente o título, sem adicionar
+coluna "link", botão, CTA ou texto auxiliar.
+
+#### Equipe principal e rede ampliada
+
+Macroprojetos exibem dois conceitos distintos:
+
+- **Equipe principal/Core team**: pesquisadores centrais declarados no
+  próprio macroprojeto.
+- **Rede ampliada/Extended network**: pessoas que participaram por meio
+  de subprojetos, produtos, artigos, TCCs, mestrados, registros e outras
+  produções ligadas ao macroprojeto.
+
+A contagem da rede ampliada deve ser deduplicada por pessoa, mas a
+interface não deve usar termos técnicos como "deduplicate count" ou
+"other linked people". Use linguagem humana: "Rede ampliada" em PT e
+"Extended network" em EN.
+
+#### Automação desejada em Hugo
+
+O estado ideal é não manter manualmente as tabelas "Produção C&T
+vinculada" e "Orientações vinculadas" em `content/projects/*.md`.
+Templates ou shortcodes Hugo devem derivar essas listas assim:
+
+1. Ler o ID do projeto atual (`.Params.id`).
+2. Se for macroprojeto, montar o escopo com:
+   - o próprio ID do macroprojeto;
+   - todos os projetos individuais cujo `umbrella_projects` contenha o
+     macroprojeto;
+   - produtos cujo `project`, `secondary_projects`, `tags` ou
+     `categories` contenham algum ID do escopo;
+   - publicações declaradas em produtos ou projetos do escopo.
+3. Percorrer `hugo.Data.productions.items`.
+4. Incluir uma produção quando:
+   - `tags` contém o ID do projeto atual; ou
+   - `tags` contém algum projeto individual do escopo do macroprojeto; ou
+   - a produção corresponde a publicação declarada em produto/projeto do
+     escopo.
+5. Separar a renderização por tipo:
+   - produção C&T: artigos, capítulos, livros, registros, software,
+     materiais e eventos;
+   - orientação: TCC, dissertação, tese, especialização e IC/voluntariado
+     quando modelados.
+6. Ordenar por ano decrescente e, dentro do ano, por título.
+7. Linkar automaticamente para a página gerada em `content/publications`
+   quando existir. Para produtos, linkar para `content/products`.
+8. Exibir só o título como link dentro da tabela; sem botão ou coluna
+   extra.
+
+Até essa automação existir, uma IA deve seguir o mesmo algoritmo de
+forma manual: localizar o item em `data/productions.yaml`, acrescentar
+o ID de projeto correto em `tags:`, rodar `scripts/build_publications.py`
+com um ambiente Python que tenha PyYAML, revisar diffs colaterais do
+gerador e executar `npm run build`.
+
 ### Publicações geradas
 
 As páginas em `content/publications/` são geradas a partir de

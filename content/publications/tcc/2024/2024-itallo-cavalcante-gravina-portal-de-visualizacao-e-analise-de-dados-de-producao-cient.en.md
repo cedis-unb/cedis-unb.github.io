@@ -17,6 +17,7 @@ authors_structured:
   id: itallo_cavalcante_gravina
 tags:
 - learning_analytics
+- project_laguna
 advisors:
 - daniel_sundfeld
 doi_isbn: ''

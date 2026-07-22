@@ -26,6 +26,7 @@ authors_structured:
 tags:
 - active_learning
 - sergio_freitas
+- project_a3m
 advisors: []
 doi_isbn: 10.1007/978-3-030-24308-1_11
 source_title: Redes de Aprendizagem na EaD

@@ -26,6 +26,7 @@ authors_structured:
 tags:
 - daniel_sundfeld
 - hpc
+- project_laguna
 advisors: []
 doi_isbn: 10.22477/ix.ebbc.378
 source_title: 9º Encontro Brasileiro de Bibliometria e Cientometria EBBC
