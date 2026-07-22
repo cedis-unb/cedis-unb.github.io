@@ -100,24 +100,24 @@ Entre as frentes conectadas a este projeto estão:
 |---|---|---|
 | 2024 | O impacto da inteligência artificial na ciência | Participação em evento |
 | 2024 | Painel de Técnicas e Ferramentas para Análise e Tratamento da Informação Científica | Participação em evento |
-| 2024 | Learning Indicators as Tools for Continuous Improvement in the Educational Environment | Trabalho publicado em anais de evento |
-| 2024 | A CP-SAT Approach for Academic Resource Timetabling in Higher Education Institutions: A Case Study at a Major Public University | Trabalho publicado em anais de evento |
+| 2024 | {{< link-interno "/publications/2024-cristiane-s-ramos-learning-indicators-as-tools-for-continuous-improvement-in-the-educ" "Learning Indicators as Tools for Continuous Improvement in the Educational Environment" >}} | Trabalho publicado em anais de evento |
+| 2024 | {{< link-interno "/publications/2024-eber-junio-borges-moreira-a-cp-sat-approach-for-academic-resource-timetabling-in-high" "A CP-SAT Approach for Academic Resource Timetabling in Higher Education Institutions: A Case Study at a Major Public University" >}} | Trabalho publicado em anais de evento |
 | 2024 | Sistema de Agendamento de Recursos Acadêmicos (SARA) | Software |
 | 2024 | AI-dvogado - Sistema chatbot multimodal para consultoria jurídico-trabalhista | Software |
-| 2024 | Contextus - Sistema para automatização da categorização de textos científicos | Software |
-| 2023 | A Systematic Review of the Factors that Impact the Prediction of Retention and Dropout in Higher Education | Trabalho publicado em anais de evento |
-| 2023 | Modelo de Análise na Graduação (MAGRA) | Software |
-| 2021 | Sistema de Acompanhamento e Apoio à Gestão Acadêmica - SAGA | Software |
+| 2024 | {{< link-interno "/products/contextus" "Contextus - Sistema para automatização da categorização de textos científicos" >}} | Software |
+| 2023 | {{< link-interno "/publications/2023-silva-e-c-a-systematic-review-of-the-factors-that-impact-the-prediction-of-retention" "A Systematic Review of the Factors that Impact the Prediction of Retention and Dropout in Higher Education" >}} | Trabalho publicado em anais de evento |
+| 2023 | {{< link-interno "/products/magra" "Modelo de Análise na Graduação (MAGRA)" >}} | Software |
+| 2021 | {{< link-interno "/products/saga" "Sistema de Acompanhamento e Apoio à Gestão Acadêmica - SAGA" >}} | Software |
 
 ## Orientações vinculadas
 
 | Ano | Orientação | Tipo |
 |---|---|---|
-| 2024 | Agendamento de recursos acadêmicos em Instituições de Ensino Superior: Estudo de caso na Universidade de Brasília | Dissertação de mestrado |
-| 2024 | Utilização de Large Language Models no desenvolvimento de um chatbot multimodal para consultoria jurídico-trabalhista | Trabalho de conclusão de curso de graduação |
-| 2023 | Previsão da evasão acadêmica no ensino superior: O caso dos cursos de graduação presencial da Universidade de Brasília | Dissertação de mestrado |
-| 2023 | SAMI: Sistema para análise de métricas de indicadores de aprendizagem | Trabalho de conclusão de curso de graduação |
-| 2023 | Latte: Um Chatbot Gamificado para Apoio na Produção de Artigos Científicos | Trabalho de conclusão de curso de graduação |
-| 2022 | Identificação de fatores que afetam a Evasão no Ensino Superior | Trabalho de conclusão de curso de graduação |
+| 2024 | {{< link-interno "/publications/2024-eber-junio-borges-moreira-agendamento-de-recursos-academicos-em-instituicoes-de-ensin" "Agendamento de recursos acadêmicos em Instituições de Ensino Superior: Estudo de caso na Universidade de Brasília" >}} | Dissertação de mestrado |
+| 2024 | {{< link-interno "/publications/2024-alvaro-henrique-de-sousa-gouvea-utilizacao-de-large-language-models-no-desenvolviment" "Utilização de Large Language Models no desenvolvimento de um chatbot multimodal para consultoria jurídico-trabalhista" >}} | Trabalho de conclusão de curso de graduação |
+| 2023 | {{< link-interno "/publications/2023-edmilson-cosme-da-silva-previsao-da-evasao-academica-no-ensino-superior-o-caso-dos-cu" "Previsão da evasão acadêmica no ensino superior: O caso dos cursos de graduação presencial da Universidade de Brasília" >}} | Dissertação de mestrado |
+| 2023 | {{< link-interno "/publications/2023-joao-vitor-de-moura-rosa-silva-sami-sistema-para-analise-de-metricas-de-indicadores-d" "SAMI: Sistema para análise de métricas de indicadores de aprendizagem" >}} | Trabalho de conclusão de curso de graduação |
+| 2023 | {{< link-interno "/publications/2023-luiz-henrique-fernandes-zamprogno-latte-um-chatbot-gamificado-para-apoio-na-producao" "Latte: Um Chatbot Gamificado para Apoio na Produção de Artigos Científicos" >}} | Trabalho de conclusão de curso de graduação |
+| 2022 | {{< link-interno "/publications/2022-amanda-emilly-muniz-de-menezes-identificacao-de-fatores-que-afetam-a-evasao-no-ensino" "Identificação de fatores que afetam a Evasão no Ensino Superior" >}} | Trabalho de conclusão de curso de graduação |
 | 2022 | Projeto BRCris: Dashboads para visualização de dados | Iniciação científica |
 | 2022 | Projeto BRCris: Uso do algoritmo LDA na identificação de temas de pesquisa | Iniciação científica |

@@ -18,6 +18,7 @@ authors_structured:
 tags:
 - gamification
 - active_learning
+- project_jornada
 advisors:
 - sergio_freitas
 doi_isbn: ''

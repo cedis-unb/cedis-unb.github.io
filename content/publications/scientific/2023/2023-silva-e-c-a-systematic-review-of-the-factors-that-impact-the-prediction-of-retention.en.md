@@ -29,6 +29,7 @@ tags:
 - sergio_freitas
 - cristiane_ramos
 - edmilson_cosme
+- project_framework_preditivo_engajamento
 advisors: []
 doi_isbn: ''
 source_title: 56th Hawaii International Conference on System Science

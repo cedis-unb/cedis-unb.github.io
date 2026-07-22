@@ -34,6 +34,7 @@ authors_structured:
 tags:
 - digital_transformation
 - george_marsicano
+- project_spux
 advisors: []
 doi_isbn: 10.59490/dgo.2025.1061
 source_title: 26th Annual International Conference on Digital Government Research

@@ -31,6 +31,8 @@ tags:
 - sergio_freitas
 - cristiane_ramos
 - active_learning
+- project_a3m
+- project_framework_preditivo_engajamento
 advisors: []
 doi_isbn: 2183-1378
 source_title: PAEE/ALE 2024 - International Conference on Active Learning in Engineering

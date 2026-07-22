@@ -19,6 +19,7 @@ tags:
 - gamification
 - machine_learning
 - arthur_temporim
+- project_inovacao_digital_gamificacao
 advisors:
 - sergio_freitas
 doi_isbn: ''

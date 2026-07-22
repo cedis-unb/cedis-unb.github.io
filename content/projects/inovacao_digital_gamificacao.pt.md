@@ -111,21 +111,21 @@ Entre as frentes conectadas a este projeto estão:
 
 | Ano | Produção | Tipo |
 |---|---|---|
-| 2024 | Implementing Neuroscientific Principles in Gamified Software Engineering Courses | Trabalho publicado em anais de evento |
-| 2024 | Crafting Personalized Learning Environments Through Motivational Profiling | Trabalho publicado em anais de evento |
-| 2024 | A Process to Identify Players' Motivational Profiles for Designing a Gamification Project | Livro ou capítulo de livro |
-| 2024 | Gamified Chatbot Management Process: A Way to Build Gamified Chatbots | Livro ou capítulo de livro |
-| 2024 | MoodleGam - Sistema para apoio à criação de gamificações no Moodle | Software |
-| 2024 | Gamificação 'Jornada Galáctica' do Portal Canal Ciência do IBICT | Software |
-| 2024 | Processo de desenvolvimento para chatbots gamificados (GCMP) | Processo ou técnica |
-| 2023 | Gamification Project to Receive Continuous Feedback in the Context of the Evolution of Public Service for Lawyers | Trabalho publicado em anais de evento |
-| 2023 | Gamification in Organizational Contexts: A Systematic Literature Review | Livro ou capítulo de livro |
-| 2023 | Latte: Um Chatbot Gamificado para apoio na produção de artigos científicos | Software |
-| 2023 | Jornada: o uso de RPG em um processo de aprendizagem | Processo ou técnica |
-| 2022 | Evaluation of the Change in the Quality of Reports with the Application of Gamification in a Corporative Institution | Livro ou capítulo de livro |
+| 2024 | {{< link-interno "/publications/2024-sergio-antonio-andrade-freitas-implementing-neuroscientific-principles-in-gamified-so" "Implementing Neuroscientific Principles in Gamified Software Engineering Courses" >}} | Trabalho publicado em anais de evento |
+| 2024 | {{< link-interno "/publications/2024-sergio-antonio-andrade-freitas-crafting-personalized-learning-environments-through-mo" "Crafting Personalized Learning Environments Through Motivational Profiling" >}} | Trabalho publicado em anais de evento |
+| 2024 | {{< link-interno "/publications/2024-cristiane-s-ramos-a-process-to-identify-players-motivational-profiles-for-designing-a" "A Process to Identify Players' Motivational Profiles for Designing a Gamification Project" >}} | Livro ou capítulo de livro |
+| 2024 | {{< link-interno "/publications/2024-lacerda-a-r-t-gamified-chatbot-management-process-a-way-to-build-gamified-chatbots" "Gamified Chatbot Management Process: A Way to Build Gamified Chatbots" >}} | Livro ou capítulo de livro |
+| 2024 | {{< link-interno "/products/moodlegam" "MoodleGam - Sistema para apoio à criação de gamificações no Moodle" >}} | Software |
+| 2024 | {{< link-interno "/products/jornada_galactica" "Gamificação 'Jornada Galáctica' do Portal Canal Ciência do IBICT" >}} | Software |
+| 2024 | {{< link-interno "/publications/2024-lacerda-a-r-t-gamified-chatbot-management-process-a-way-to-build-gamified-chatbots" "Processo de desenvolvimento para chatbots gamificados (GCMP)" >}} | Processo ou técnica |
+| 2023 | {{< link-interno "/publications/2023-erven-r-v-gamification-project-to-receive-continuous-feedback-in-the-context-of-the-e" "Gamification Project to Receive Continuous Feedback in the Context of the Evolution of Public Service for Lawyers" >}} | Trabalho publicado em anais de evento |
+| 2023 | {{< link-interno "/publications/2023-assis-l-s-gamification-in-organizational-contexts-a-systematic-literature-review" "Gamification in Organizational Contexts: A Systematic Literature Review" >}} | Livro ou capítulo de livro |
+| 2023 | {{< link-interno "/publications/2023-luiz-henrique-fernandes-zamprogno-latte-um-chatbot-gamificado-para-apoio-na-producao" "Latte: Um Chatbot Gamificado para apoio na produção de artigos científicos" >}} | Software |
+| 2023 | {{< link-interno "/publications/2023-joao-vitor-lopes-de-farias-jornada-o-uso-de-rpg-em-um-processo-de-aprendizagem" "Jornada: o uso de RPG em um processo de aprendizagem" >}} | Processo ou técnica |
+| 2022 | {{< link-interno "/publications/2022-cavalcanti-p-p-evaluation-of-the-change-in-the-quality-of-reports-with-the-applicatio" "Evaluation of the Change in the Quality of Reports with the Application of Gamification in a Corporative Institution" >}} | Livro ou capítulo de livro |
 | 2022 | Introdução ao uso da Gamificação em sala de aula | Curso de curta duração ministrado |
-| 2022 | PIXEL: uma ferramenta gamificada para aprendizagem de critérios de usabilidade | Software |
-| 2022 | $tudy: Sistema gamificado de educação financeira | Software |
+| 2022 | {{< link-interno "/publications/2022-erico-maximiano-bandeira-pixel-uma-ferramenta-gamificada-para-aprendizagem-de-criteri" "PIXEL: uma ferramenta gamificada para aprendizagem de critérios de usabilidade" >}} | Software |
+| 2022 | {{< link-interno "/publications/2022-rafael-santos-teodosio-tudy-um-sistema-gamificado-de-educacao-financeira" "$tudy: Sistema gamificado de educação financeira" >}} | Software |
 | 2022 | Sistema Gamificado de Gestão de Ativos (MPI) da Embrapa | Software |
 
 ## Orientações vinculadas
@@ -133,13 +133,13 @@ Entre as frentes conectadas a este projeto estão:
 | Ano | Orientação | Tipo |
 |---|---|---|
 | 2024 | Avaliação da gamificação na qualidade de código de software | Orientação em andamento |
-| 2024 | Gamification on Chatbots: how to build | Dissertação de mestrado |
-| 2024 | Gamificação no Ambiente Virtual de Aprendizagem Moodle: Guia e Ferramenta para Criadores de Conteúdo | Trabalho de conclusão de curso de graduação |
+| 2024 | {{< link-interno "/publications/2024-arthur-rocha-temporim-de-lacerda-gamified-chatbot-management-process-a-way-to-build-g" "Gamification on Chatbots: how to build" >}} | Dissertação de mestrado |
+| 2024 | {{< link-interno "/publications/2024-antonio-rangel-chaves-gamificacao-no-ambiente-virtual-de-aprendizagem-moodle-guia-e-f" "Gamificação no Ambiente Virtual de Aprendizagem Moodle: Guia e Ferramenta para Criadores de Conteúdo" >}} | Trabalho de conclusão de curso de graduação |
 | 2023 | Gamificação na Engenharia de Software: Avaliação do engajamento em equipes de Tecnologia da Informação em Fábrica de Software | Orientação em andamento |
-| 2023 | Avaliação da mudança na qualidade dos relatórios com a aplicação da gamificação em atividades de inteligência policial | Dissertação de mestrado |
-| 2023 | Gamificação em Ambientes Organizacionais: Um Estudo de Caso em uma Empresa Pública | Dissertação de mestrado |
-| 2023 | Latte: Um Chatbot Gamificado para Apoio na Produção de Artigos Científicos | Trabalho de conclusão de curso de graduação |
-| 2023 | Jornada: O uso de RPG em um processo de aprendizagem | Trabalho de conclusão de curso de graduação |
+| 2023 | {{< link-interno "/publications/2023-publio-pastrolin-cavalcante-avaliacao-da-mudanca-na-qualidade-dos-relatorios-com-a-ap" "Avaliação da mudança na qualidade dos relatórios com a aplicação da gamificação em atividades de inteligência policial" >}} | Dissertação de mestrado |
+| 2023 | {{< link-interno "/publications/2023-luciana-santos-de-assis-avaliacao-critica-e-estudo-de-caso-sobre-a-implementacao-de-g" "Gamificação em Ambientes Organizacionais: Um Estudo de Caso em uma Empresa Pública" >}} | Dissertação de mestrado |
+| 2023 | {{< link-interno "/publications/2023-luiz-henrique-fernandes-zamprogno-latte-um-chatbot-gamificado-para-apoio-na-producao" "Latte: Um Chatbot Gamificado para Apoio na Produção de Artigos Científicos" >}} | Trabalho de conclusão de curso de graduação |
+| 2023 | {{< link-interno "/publications/2023-joao-vitor-lopes-de-farias-jornada-o-uso-de-rpg-em-um-processo-de-aprendizagem" "Jornada: O uso de RPG em um processo de aprendizagem" >}} | Trabalho de conclusão de curso de graduação |
 | 2023 | Projeto: Estudos para gamificação da Plataforma de Popularização e Divulgação da Ciência e Tecnologia | Iniciação científica |
-| 2022 | Pixel: Uma ferramenta gamificada para aprendizagem de critérios de usabilidade | Trabalho de conclusão de curso de graduação |
-| 2022 | $tudy - um sistema gamificado de educação financeira | Trabalho de conclusão de curso de graduação |
+| 2022 | {{< link-interno "/publications/2022-erico-maximiano-bandeira-pixel-uma-ferramenta-gamificada-para-aprendizagem-de-criteri" "Pixel: Uma ferramenta gamificada para aprendizagem de critérios de usabilidade" >}} | Trabalho de conclusão de curso de graduação |
+| 2022 | {{< link-interno "/publications/2022-rafael-santos-teodosio-tudy-um-sistema-gamificado-de-educacao-financeira" "$tudy - um sistema gamificado de educação financeira" >}} | Trabalho de conclusão de curso de graduação |

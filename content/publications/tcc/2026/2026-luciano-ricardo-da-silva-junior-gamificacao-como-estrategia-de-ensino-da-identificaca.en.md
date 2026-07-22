@@ -19,6 +19,7 @@ tags:
 - gamification
 - software_architecture
 - software_quality
+- project_inovacao_digital_gamificacao
 advisors:
 - sergio_freitas
 - andre_lanna

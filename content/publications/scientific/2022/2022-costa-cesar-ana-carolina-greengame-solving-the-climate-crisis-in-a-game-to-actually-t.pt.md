@@ -25,6 +25,7 @@ authors_structured:
 tags:
 - green_software
 - fabiana_mendes
+- project_gsd
 advisors: []
 doi_isbn: 10.1109/ISPA-BDCloud-SocialCom-SustainCom57177.2022.00039
 source_title: 2022 IEEE Intl Conf on Parallel & Distributed Processing with Applications,

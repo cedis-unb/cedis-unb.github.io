@@ -22,6 +22,7 @@ authors_structured:
 tags:
 - gamification
 - active_learning
+- project_inovacao_digital_gamificacao
 advisors:
 - sergio_freitas
 doi_isbn: ''

@@ -30,6 +30,7 @@ tags:
 - gamification
 - ihc
 - sergio_freitas
+- project_jornada
 advisors: []
 doi_isbn: 10.1007/978-3-032-05008-3_55
 source_title: Human-Computer Interaction – INTERACT 2025
