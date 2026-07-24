@@ -180,6 +180,10 @@ berilhes_garcia: "Berilhes Borges Garcia"
 project_alvorecer: "Feudal Dawn Project"
 project_jornada: "HCI Journey Project"
 marilia_miranda: "Marilia Miranda Forte Gomes"
+defesa: "Thesis Defense"
+ihc: "Human-Computer Interaction"
+software_development_tools: "Software Development Tools"
+software_products: "Software Products"
 
 # --- refactor cond $isPt strings ---
 ui_a_selection_of_pages_related: "A selection of pages related to this topic, with fast access to the most relevant entries."

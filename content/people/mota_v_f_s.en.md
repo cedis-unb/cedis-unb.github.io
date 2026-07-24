@@ -1,0 +1,23 @@
+---
+author: CEDIS
+title: MOTA, V. F. S.
+profile_level: derived
+layout: derived
+slug: mota_v_f_s
+language: en
+summary: Co-author cited in 1 publication by CEDIS.
+authorimage: ../assets/images/global/author.webp
+aliases_authors:
+- MOTA, V. F. S.
+matched_productions:
+- title: 'Internet das Coisas como Plataforma Multidisciplinar de Aprendizagem: Projetos Integradores Hardware/Software'
+  year: 2020
+  type: workshop
+---
+
+Cited as co-author in **1 publication** by CEDIS.
+
+Detailed profile not yet available — the information below was
+automatically derived from the works where this name appears.
+
+Is that you and want a full profile? [Contact CEDIS](/join/).

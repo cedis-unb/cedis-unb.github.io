@@ -1,0 +1,27 @@
+---
+author: CEDIS
+title: PEREIRA, V. C.
+profile_level: derived
+layout: derived
+slug: pereira_v_c
+language: en
+summary: Co-author cited in 2 publications by CEDIS.
+authorimage: ../assets/images/global/author.webp
+aliases_authors:
+- PEREIRA, V. C.
+- PEREIRA, VINICIUS
+matched_productions:
+- title: Defining Digital Legacy Management Systems' Requirements
+  year: 2022
+  type: article
+- title: "Digital Legacy Management Systems: Theoretical, Systemic and User\x92s Perspective"
+  year: 2021
+  type: conference
+---
+
+Cited as co-author in **2 publications** by CEDIS.
+
+Detailed profile not yet available — the information below was
+automatically derived from the works where this name appears.
+
+Is that you and want a full profile? [Contact CEDIS](/join/).

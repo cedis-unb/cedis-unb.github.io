@@ -1,6 +1,7 @@
 ---
 author: CEDIS
 title: "André Luiz Peron Martins Lanna"
+profile_level: researcher
 date: 2014-06-01T00:00:00-03:00
 weight: 30
 language: pt

@@ -178,6 +178,10 @@ berilhes_garcia: "Berilhes Borges Garcia"
 project_alvorecer: "Projeto Alvorecer Feudal"
 project_jornada: "Projeto Jornada IHC"
 marilia_miranda: "Marilia Miranda Forte Gomes"
+defesa: "Defesa de Tese"
+ihc: "Interação Humano-Computador"
+software_development_tools: "Ferramentas de Desenvolvimento de Software"
+software_products: "Produtos de Software"
 
 # --- refactor cond $isPt strings ---
 ui_a_selection_of_pages_related: "Uma seleção de páginas relacionadas a este tema, com acesso rápido aos itens mais relevantes."

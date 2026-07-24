@@ -1,0 +1,40 @@
+{{/*
+  people-lookup — consulta o índice global e retorna a entrada de um slug.
+
+  Aceita:
+    - Uma string (slug direto): {{ partial "people-lookup" "sergio_freitas" }}
+    - Um dict com chave "slug":  {{ partial "people-lookup" (dict "slug" "sergio_freitas") }}
+
+  Retorna: dict com os campos documentados em people-index.html.
+    Se o slug não existe, retorna um dict "vazio" com found=false — nunca nil,
+    para permitir uso seguro com `with` sem quebrar templates.
+
+  IMPORTANTE: internamente usa `partialCached` para o índice global —
+  o custo é pago uma vez por build, não uma vez por chamada.
+*/}}
+
+{{ $slug := . }}
+{{ if reflect.IsMap . }}{{ $slug = .slug }}{{ end }}
+
+{{ $index := partialCached "people-index" "global" }}
+{{ $entry := index $index $slug }}
+
+{{ if not $entry }}
+  {{ $entry = dict
+    "slug" ($slug | default "")
+    "found" false
+    "name" ""
+    "profile_level" ""
+    "sources" (slice)
+    "page" nil
+    "page_url" ""
+    "advisor" nil
+    "data_entry" nil
+    "supervisions" (slice)
+    "supervisions_count" 0
+    "publications" (slice)
+    "publications_count" 0
+  }}
+{{ end }}
+
+{{ return $entry }}

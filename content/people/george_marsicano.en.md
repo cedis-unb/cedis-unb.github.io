@@ -1,6 +1,7 @@
 ---
 author: CEDIS
 title: "George Marsicano Corrêa"
+profile_level: researcher
 date: 2013-11-01T00:00:00-03:00
 weight: 20
 language: en
