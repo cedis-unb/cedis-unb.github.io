@@ -5,7 +5,7 @@ date: 2024-02-14T00:48:51-03:00
 weight: 20
 language: pt
 layout: collaborators
-description: "Corpo docente, rede ativa e memória institucional do CEDIS — de pesquisadores permanentes a orientandos e autores citados nas produções do grupo."
+description: "Rede ativa e memória institucional do CEDIS — orientandos, colaboradores, alumni e autores externos em produções do grupo."
 featured_image: "../assets/images/featured/people_Collaborators.png"
 authorimage: ../assets/images/global/author.webp
 ---
@@ -16,15 +16,14 @@ authorimage: ../assets/images/global/author.webp
 <div>
 <span class="inline-flex rounded-full border border-primary-200 bg-primary-50 px-3 py-1 text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-primary-700 dark:border-primary-400/30 dark:bg-primary-500/10 dark:text-primary-200">Rede CEDIS</span>
 <h2 id="current-collaborators" class="mt-4 text-3xl font-black tracking-tight text-gray-950 dark:text-white md:text-4xl">Colaboradores</h2>
-<p class="mt-4 max-w-3xl text-base leading-7 text-gray-600 dark:text-white/72">Do corpo docente permanente aos orientandos em formação, esta é a rede humana que produz o conhecimento do CEDIS — organizada por trajetória acadêmica para facilitar a leitura.</p>
+<p class="mt-4 max-w-3xl text-base leading-7 text-gray-600 dark:text-white/72">Orientandos em formação, colaboradores, alumni e autores externos compõem a rede humana que produz o conhecimento do CEDIS — organizada por trajetória acadêmica para facilitar a leitura.</p>
 <div class="mt-6 flex flex-wrap gap-2">
-<span class="inline-flex items-center gap-2 rounded-full border border-primary-200 bg-primary-50 px-3 py-1 text-sm font-semibold text-primary-700 dark:border-primary-400/25 dark:bg-primary-500/10 dark:text-primary-100"><strong>{{< peopleCount level="researcher" >}}</strong> pesquisadores</span>
+<span class="inline-flex items-center gap-2 rounded-full border border-primary-200 bg-primary-50 px-3 py-1 text-sm font-semibold text-primary-700 dark:border-primary-400/25 dark:bg-primary-500/10 dark:text-primary-100"><a href="/pt/categories/researcher/" class="hover:text-primary-600 dark:hover:text-primary-200"><strong>{{< peopleCount level="researcher" >}}</strong> pesquisadores</a></span>
 <span class="inline-flex items-center gap-2 rounded-full border border-black/10 bg-white px-3 py-1 text-sm font-semibold text-gray-700 dark:border-white/10 dark:bg-white/[0.03] dark:text-white/78"><strong>{{< peopleCount status="active" >}}</strong> rede ativa</span>
 <span class="inline-flex items-center gap-2 rounded-full border border-black/10 bg-white px-3 py-1 text-sm font-semibold text-gray-700 dark:border-white/10 dark:bg-white/[0.03] dark:text-white/78"><strong>{{< peopleCount status="inactive" >}}</strong> alumni</span>
-<span class="inline-flex items-center gap-2 rounded-full border border-black/10 bg-white px-3 py-1 text-sm font-semibold text-gray-700 dark:border-white/10 dark:bg-white/[0.03] dark:text-white/78"><a href="#cited-authors" class="hover:text-primary-600 dark:hover:text-primary-200"><strong>{{< peopleCount level="derived" >}}</strong> autores citados</a></span>
+<span class="inline-flex items-center gap-2 rounded-full border border-black/10 bg-white px-3 py-1 text-sm font-semibold text-gray-700 dark:border-white/10 dark:bg-white/[0.03] dark:text-white/78"><a href="#cited-authors" class="hover:text-primary-600 dark:hover:text-primary-200"><strong>{{< peopleCount level="derived" >}}</strong> autores externos</a></span>
 </div>
 <div class="mt-4 flex flex-wrap gap-3">
-<a href="#researchers" class="inline-flex items-center rounded-full border border-black/10 bg-white px-4 py-2 text-sm font-semibold text-gray-700 transition-colors hover:border-primary-500 hover:text-primary-600 dark:border-white/10 dark:bg-white/[0.03] dark:text-white/80 dark:hover:border-primary-300 dark:hover:text-primary-200">Corpo docente</a>
 <a href="#active-network" class="inline-flex items-center rounded-full border border-black/10 bg-white px-4 py-2 text-sm font-semibold text-gray-700 transition-colors hover:border-primary-500 hover:text-primary-600 dark:border-white/10 dark:bg-white/[0.03] dark:text-white/80 dark:hover:border-primary-300 dark:hover:text-primary-200">Rede ativa</a>
 <a href="#previous-collaborators" class="inline-flex items-center rounded-full border border-black/10 bg-white px-4 py-2 text-sm font-semibold text-gray-700 transition-colors hover:border-primary-500 hover:text-primary-600 dark:border-white/10 dark:bg-white/[0.03] dark:text-white/80 dark:hover:border-primary-300 dark:hover:text-primary-200">Alumni</a>
 </div>
@@ -40,15 +39,6 @@ authorimage: ../assets/images/global/author.webp
 </div>
 </div>
 </div>
-</section>
-
-<section id="researchers" class="space-y-6">
-<div class="flex items-baseline justify-between gap-4">
-<h2 class="m-0 text-2xl font-black tracking-tight text-gray-950 dark:text-white md:text-3xl">Corpo docente</h2>
-<span class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-gray-400 dark:text-white/72">Pesquisadores permanentes</span>
-</div>
-<p class="max-w-3xl text-base leading-7 text-gray-600 dark:text-white/72">Docentes que sustentam as linhas de pesquisa, orientam trabalhos e coordenam os projetos do CEDIS.</p>
-{{< filterPeople categories="researcher" sort="alpha" grid="true" >}}
 </section>
 
 <section id="active-network" class="space-y-6">
@@ -91,14 +81,14 @@ authorimage: ../assets/images/global/author.webp
 <button type="button" @click="showCited = !showCited" class="flex w-full items-start gap-3 text-left transition-colors hover:bg-primary-50/30 dark:hover:bg-primary-500/5">
 <span class="mt-1 inline-flex h-8 w-8 items-center justify-center rounded-full bg-primary-100 text-primary-700 dark:bg-primary-500/20 dark:text-primary-200">✨</span>
 <div class="flex-1">
-<h2 class="m-0 text-xl font-black tracking-tight text-gray-950 dark:text-white md:text-2xl">Autores citados sem perfil próprio</h2>
-<p class="mt-3 max-w-3xl text-sm leading-6 text-gray-600 dark:text-white/72">Coautores de artigos, capítulos e trabalhos técnicos do CEDIS que ainda não têm um perfil individual publicado. Cada nome linka para uma página derivada com a lista de produções onde aparece.</p>
+<h2 class="m-0 text-xl font-black tracking-tight text-gray-950 dark:text-white md:text-2xl">Autores externos em produções do CEDIS</h2>
+<p class="mt-3 max-w-3xl text-sm leading-6 text-gray-600 dark:text-white/72">Pesquisadores e profissionais externos que aparecem como autores em artigos, capítulos e trabalhos técnicos do CEDIS. Cada nome linka para a lista de produções em que aparece.</p>
 </div>
 <svg :class="{'rotate-180': showCited, 'rotate-0': !showCited}" class="mt-2 h-5 w-5 shrink-0 transform text-primary-600 transition-transform duration-200 dark:text-primary-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
 </button>
 <div x-show="showCited" x-cloak class="mt-6 border-t border-primary-200/50 pt-6 dark:border-primary-400/25">
 {{< derivedPeople >}}
-<p class="mt-4 text-xs italic text-gray-500 dark:text-white/60">É você e quer um perfil completo? <a href="/junte-se/" class="text-primary-600 hover:underline dark:text-primary-200">Contate o CEDIS</a>.</p>
+<p class="mt-4 text-xs italic text-gray-500 dark:text-white/60">Quer atualizar seus dados ou complementar esta lista? <a href="/junte-se/" class="text-primary-600 hover:underline dark:text-primary-200">Contate o CEDIS</a>.</p>
 </div>
 </section>
 

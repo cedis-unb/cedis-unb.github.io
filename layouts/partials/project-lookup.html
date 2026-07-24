@@ -1,0 +1,34 @@
+{{/*
+  project-lookup — consulta project-index por id e retorna entrada segura.
+
+  Aceita string ou dict com chave "id".
+*/}}
+
+{{ $id := . }}
+{{ if reflect.IsMap . }}{{ $id = .id }}{{ end }}
+
+{{ $index := partialCached "project-index" "global" site.Language.Lang }}
+{{ $entry := index $index $id }}
+
+{{ if not $entry }}
+  {{ $entry = dict
+    "id" ($id | default "")
+    "found" false
+    "name" ""
+    "label" ""
+    "data" nil
+    "page" nil
+    "page_url" ""
+    "link" ""
+    "project_type" ""
+    "status" ""
+    "umbrella_projects" (slice)
+    "researchers" (slice)
+    "students" (slice)
+    "products" (slice)
+    "child_ids" (slice)
+    "children_count" 0
+  }}
+{{ end }}
+
+{{ return $entry }}

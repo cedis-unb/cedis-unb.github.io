@@ -20,8 +20,8 @@ import yaml
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA_FILE = ROOT / "data" / "productions.yaml"
-ADVISORS_FILE = ROOT / "data" / "advisors.yaml"
 PEOPLE_FILE = ROOT / "data" / "people.yaml"
+PEOPLE_DIR = ROOT / "content" / "people"
 OUT_DIR = ROOT / "content" / "publications"
 
 LANGS = ("pt", "en")
@@ -174,21 +174,39 @@ def normalize_name(value: str) -> str:
     return re.sub(r"[^a-z0-9]+", " ", value).strip()
 
 
+def parse_frontmatter(path: Path) -> dict[str, Any]:
+    text_value = path.read_text(encoding="utf-8")
+    if not text_value.startswith("---"):
+        return {}
+    parts = text_value.split("---", 2)
+    if len(parts) < 3:
+        return {}
+    data = yaml.safe_load(parts[1])
+    return data if isinstance(data, dict) else {}
+
+
 def load_people_index() -> list[dict[str, str]]:
     people: list[dict[str, str]] = []
-    advisors = yaml.safe_load(ADVISORS_FILE.read_text(encoding="utf-8")).get("advisors", {})
-    for pid, item in advisors.items():
-        name = text(item.get("name"))
+
+    seen: set[str] = set()
+    for path in sorted(PEOPLE_DIR.glob("*.pt.md")):
+        pid = path.name.removesuffix(".pt.md")
+        if pid == "all":
+            continue
+        item = parse_frontmatter(path)
+        name = text(item.get("title"))
         if name:
-            people.append({"id": pid, "name": name, "url": text(item.get("link") or f"/people/{pid}")})
+            people.append({"id": pid, "name": name, "url": f"/people/{pid}"})
+            seen.add(pid)
 
     data = yaml.safe_load(PEOPLE_FILE.read_text(encoding="utf-8")).get("people", [])
     for item in data:
         name = text(item.get("name"))
-        if not name:
+        pid = text(item.get("slug")) or ascii_slug(name).replace("-", "_")
+        if not name or pid in seen:
             continue
-        pid = ascii_slug(name).replace("-", "_")
         people.append({"id": pid, "name": name, "url": ""})
+        seen.add(pid)
     return people
 
 
@@ -207,7 +225,7 @@ def match_person(author: str, people_index: list[dict[str, str]], ids_in_item: s
 
 
 def structured_authors(item: dict[str, Any], people_index: list[dict[str, str]]) -> list[dict[str, str]]:
-    ids_in_item = set(item.get("tags") or []) | set(item.get("advisors") or [])
+    ids_in_item = set(item.get("people") or []) | set(item.get("tags") or []) | set(item.get("advisors") or [])
     authors = []
     for author in item.get("authors") or []:
         entry = {"name": text(author)}

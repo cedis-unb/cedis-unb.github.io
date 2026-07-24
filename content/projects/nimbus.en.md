@@ -34,4 +34,4 @@ Nimbus investigated a serverless architecture to support automatic code grading,
 
 ## Team
 
-- {{< link-interno "/people/daniel_lima" "Daniel Sundfeld" >}}
+- {{< link-interno "/people/daniel_sundfeld" "Daniel Sundfeld" >}}

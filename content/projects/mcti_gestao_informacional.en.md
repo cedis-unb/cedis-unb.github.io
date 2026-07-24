@@ -37,4 +37,4 @@ The initiative works on infrastructure, integration, and information organizatio
 
 ## Team
 
-- {{< link-interno "/people/daniel_lima" "Daniel Sundfeld" >}}
+- {{< link-interno "/people/daniel_sundfeld" "Daniel Sundfeld" >}}

@@ -1,13 +1,8 @@
 {{ define "main" }}
 {{ $isPt := eq .Site.Language.Lang "pt" }}
 {{ $personKey := .File.TranslationBaseName }}
-{{ range .Params.categories }}
-  {{ if isset hugo.Data.advisors.advisors . }}
-    {{ $personKey = . }}
-    {{ break }}
-  {{ end }}
-{{ end }}
-{{ $isResearcher := in .Params.categories "researcher" }}
+{{ $profileLevel := .Params.profile_level | default "" }}
+{{ $isResearcher := or (eq $profileLevel "researcher") (in .Params.categories "researcher") }}
 {{ $eyebrow := cond $isResearcher (i18n "ui_people_researchers") (i18n "ui_people_profiles") }}
 {{ $roleLabel := cond $isResearcher (i18n "ui_research_profile") (i18n "ui_individual_profile") }}
 {{ $introFallback := i18n "ui_explore_the_academic_trajectory_focus" }}
@@ -66,26 +61,33 @@
   {{ end }}
 {{ end }}
 
-{{ $advisorInfo := index (index hugo.Data.advisors "advisors") $personKey }}
+{{/* Contato via people-lookup (frontmatter .md como fonte canônica). */}}
+{{ $personEntry := partial "people-lookup" $personKey }}
 {{ $contactEmail := "" }}
 {{ $contactLattes := "" }}
 {{ $contactOrcid := "" }}
 {{ $institutionalWebsite := "https://fcte.unb.br/" }}
 {{ $institutionalWebsiteLabel := i18n "ui_institutional_affiliation" }}
-{{ if $advisorInfo }}
-  {{ with $advisorInfo.email }}{{ $contactEmail = . }}{{ end }}
-  {{ with $advisorInfo.lattes }}{{ $contactLattes = . }}{{ end }}
-  {{ with $advisorInfo.orcid }}{{ $contactOrcid = . }}{{ end }}
+{{ with $personEntry.contact }}
+  {{ with .email }}{{ $contactEmail = . }}{{ end }}
+  {{ with .lattes }}{{ $contactLattes = . }}{{ end }}
+  {{ with .orcid }}{{ $contactOrcid = . }}{{ end }}
 {{ end }}
 {{ $hasContact := or $contactEmail $contactLattes $contactOrcid $isResearcher }}
 
 {{ $projectIds := slice }}
-{{ range hugo.Data.projects.projects }}
-  {{ $projectIds = $projectIds | append .id }}
+{{ range $id, $_ := (partialCached "project-index" "global" site.Language.Lang) }}
+  {{ $projectIds = $projectIds | append $id }}
 {{ end }}
 
 {{ $displayTags := slice }}
 {{ $displayTagSeen := newScratch }}
+{{ range .Params.areas }}
+  {{ if and (not ($displayTagSeen.Get .)) }}
+    {{ $displayTags = $displayTags | append . }}
+    {{ $displayTagSeen.Set . true }}
+  {{ end }}
+{{ end }}
 {{ range .Params.tags }}
   {{ if and (not (in $projectIds .)) (ne . "active") (ne . "inactive") (not ($displayTagSeen.Get .)) }}
     {{ $displayTags = $displayTags | append . }}
@@ -121,7 +123,8 @@
 {{ $personPublications := slice }}
 {{ $formerSupervisionCount := 0 }}
 {{ range hugo.Data.productions.items }}
-  {{ if in .tags $personKey }}
+  {{/* passo 10: pessoa em .people (canônico) OU .tags (legado, até migração completa) */}}
+  {{ if or (in .people $personKey) (in .tags $personKey) }}
     {{ $publicationCount = add $publicationCount 1 }}
     {{ $personPublications = $personPublications | append . }}
   {{ end }}
@@ -538,7 +541,7 @@
           {{ range $displayTags }}
             {{ $tagLink := printf "/tags/%s" (. | urlize) | relLangURL }}
             <a href="{{ $tagLink }}" class="inline-flex rounded-full border border-white/12 bg-white/[0.08] px-3 py-1 text-sm font-medium text-white/82 transition-colors hover:border-primary-300/60 hover:bg-primary-500/15 hover:text-white">
-              {{ . | i18n }}
+              {{ partial "translated-label.html" (dict "value" .) }}
             </a>
           {{ end }}
         </div>

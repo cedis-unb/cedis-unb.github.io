@@ -1,0 +1,28 @@
+{{/*
+  area-lookup — consulta area-index por id e retorna entrada segura.
+
+  Aceita string ou dict com chave "id".
+*/}}
+
+{{ $id := . }}
+{{ if reflect.IsMap . }}{{ $id = .id }}{{ end }}
+
+{{ $index := partialCached "area-index" "global" site.Language.Lang }}
+{{ $entry := index $index $id }}
+{{ if and (not $entry) $id }}{{ $entry = index $index (lower $id) }}{{ end }}
+
+{{ if not $entry }}
+  {{ $entry = dict
+    "id" ($id | default "")
+    "found" false
+    "name" ""
+    "label" ""
+    "data" nil
+    "page" nil
+    "page_url" ""
+    "link" ""
+    "researchers" (slice)
+  }}
+{{ end }}
+
+{{ return $entry }}

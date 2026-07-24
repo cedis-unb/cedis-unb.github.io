@@ -7,18 +7,23 @@ weight: 10
 language: en
 featured_image: "../assets/images/featured/people_Sergio Freitas.png"
 summary: Full Professor at the University of Brasília (UnB), working in the undergraduate Software Engineering program and the Graduate Program in Applied Computing.
+contact:
+  email: sergiofreitas@unb.br
+  lattes: https://lattes.cnpq.br/0395549254894676
+  orcid: https://orcid.org/0000-0003-3996-4985
+areas:
+- active_learning
+- ai
+- education
+- gamification
+- learning_analytics
+- machine_learning
+- nlp
 authorimage: ../assets/images/global/author.webp
 categories:
 - people
 - researcher
-- sergio_freitas
 tags: 
-- gamification
-- ai
-- nlp
-- machine_learning
-- active_learning
-- learning_analytics
 - security
 - dfcris
 - project_cc

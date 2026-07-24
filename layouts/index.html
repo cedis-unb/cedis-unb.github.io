@@ -393,9 +393,12 @@
     </div>
 
     {{/* ====== Áreas + Trending consolidados (Bloco 4) ====== */}}
+    {{/* Gap #1: advisor keys via people-index */}}
     {{ $advisorKeys := slice }}
-    {{ range $key, $value := hugo.Data.advisors.advisors }}
-      {{ $advisorKeys = $advisorKeys | append $key }}
+    {{ range $slug, $entry := (partialCached "people-index" "global") }}
+      {{ if or (eq $entry.profile_level "researcher") (eq $entry.profile_level "advisor_only") }}
+        {{ $advisorKeys = $advisorKeys | append $slug }}
+      {{ end }}
     {{ end }}
     {{ $tagCounts := dict }}
     {{ $currentYear := now.Year }}
@@ -499,7 +502,7 @@
                 <a href="{{ $tagLink }}"
                    style="font-size: {{ printf "%.2frem" $fontRem }};"
                    class="inline-flex items-center gap-1 font-bold tracking-tight text-slate-800 transition-colors hover:text-primary-600 dark:text-slate-100 dark:hover:text-primary-300">
-                  {{ .tag | i18n }}
+                  {{ partial "translated-label.html" (dict "value" .tag) }}
                   <span class="text-[0.6rem] font-medium text-slate-400 dark:text-slate-500">·{{ .count }}</span>
                 </a>
                 {{ end }}

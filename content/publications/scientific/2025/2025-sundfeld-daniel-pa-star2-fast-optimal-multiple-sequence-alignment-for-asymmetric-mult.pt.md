@@ -18,7 +18,7 @@ authors:
 authors_structured:
 - name: Sundfeld, Daniel
   id: daniel_sundfeld
-  url: /people/daniel_lima
+  url: /people/daniel_sundfeld
 - name: TEODORO, GEORGE
 - name: Melo, Alba C. M. A.
 tags:

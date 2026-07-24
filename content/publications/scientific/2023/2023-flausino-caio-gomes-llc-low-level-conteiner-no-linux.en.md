@@ -20,7 +20,7 @@ authors_structured:
 - name: QUEIROZ, DIEGO CÉSAR FLORÊNCIO DE
 - name: Sundfeld, Daniel
   id: daniel_sundfeld
-  url: /people/daniel_lima
+  url: /people/daniel_sundfeld
 tags:
 - hpc
 - daniel_sundfeld

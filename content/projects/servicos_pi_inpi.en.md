@@ -37,4 +37,4 @@ The project investigates and develops solutions to improve the retrieval, organi
 
 ## Team
 
-- {{< link-interno "/people/daniel_lima" "Daniel Sundfeld" >}}
+- {{< link-interno "/people/daniel_sundfeld" "Daniel Sundfeld" >}}

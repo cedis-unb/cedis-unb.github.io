@@ -8,11 +8,35 @@
 
 - **+I13** menu principal com 6 itens (Sobre · Pesquisa · Projetos e produtos · Pessoas · Publicações · Participe).
 - **+I14** notícias como camada transversal (home, projetos, produtos, perfis; sem primeiro nível de menu).
-- **+I15** rodapé enriquecido (Notícias · Contato · Imprensa · Zenodo · GitHub · LinkedIn · YouTube · Intranet · Privacidade · Acessibilidade).
-- **+I16** páginas institucionais estruturantes (Reconhecimentos, Infraestrutura, Indicadores, Contato, Imprensa).
+- **+I15** rodapé enriquecido (Notícias · Contato · Divulgação científica · Zenodo · GitHub · LinkedIn · YouTube · Intranet · Privacidade · Acessibilidade).
+- **+I16** páginas institucionais estruturantes (Reconhecimentos, Infraestrutura, Indicadores, Contato, Divulgação científica).
 - **Ajuste I07** — Publicações passa a se subdividir por tipo (Publicações científicas · TCCs · Dissertações e teses · Registros de software · Materiais no Zenodo · Cursos e materiais didáticos) para alimentar o menu de "Publicações".
 - **Ajuste I09** — Oportunidades vira parte de "Participe" no menu, ao lado das trilhas por público (IC, TCC, Mestrado, Doutorado, Extensão, Parcerias, Proponha um projeto).
 - **Reordenação de fases:** IA/nav (I13/I15/I16) sobe para Fase 2; modelo de dados (I02/I03) vai para Fase 3; reestruturação de conteúdo (I07/I09/I14/I08) vira Fase 4; qualidade+política (I10/I12) segue como Fase 5.
+
+## Atualização de modelo de dados — 2026-07-24
+
+O ciclo de refactor de 2026-07-24 consolidou a meta operacional do portal:
+informação entra em uma fonte canônica e se propaga pelos templates.
+
+Estado vigente:
+
+- `data/advisors.yaml` foi removido. Contato, Lattes, ORCID, áreas e nível de perfil de docentes agora vivem no frontmatter de `content/people/<slug>.{pt,en}.md`.
+- `layouts/partials/people-index.html` e `people-lookup.html` são a camada central para leitura de pessoas. Templates novos não devem consultar `hugo.Data.people` ou `content/people` diretamente quando precisam resolver uma pessoa por slug.
+- `data/productions.yaml` separa pessoas e tópicos: `people[]` guarda slugs canônicos; `tags[]` guarda áreas, temas, projetos e estados.
+- `layouts/partials/translated-label.html` resolve rótulos em cascata: i18n manual → `project-lookup` → `area-lookup` → `people-lookup` → `humanize`.
+- `data/people.yaml` exige `slug:` explícito em toda entrada; `scripts/validate_content.py` valida essa regra.
+- Frontmatter de perfis usa `profile_level` como tipo principal (`researcher`, `card_with_page`, `advisor_only`, `derived`). `categories` fica restrito a marcações taxonômicas legadas/necessárias, sem repetir o slug do próprio arquivo.
+
+Backlog técnico pós-refactor:
+
+- Normalizar definitivamente publicações geradas em `content/publications/**` versus `data/productions.yaml` como fonte única.
+- Avaliar migração futura de `authors[]` textual para objetos `{slug, cited_as}` quando houver tempo para curadoria.
+- `layouts/partials/project-index.html`, `project-list.html`, `project-lookup.html`,
+  `area-index.html`, `area-list.html` e `area-lookup.html` centralizam o
+  acesso a `data/projects.yaml` e `data/areas.yaml`. Templates novos não devem
+  iterar `hugo.Data.projects`/`hugo.Data.areas` diretamente fora desses
+  partials.
 
 ## Impacto em Fases 0 e 1 (concluídas)
 
@@ -22,7 +46,7 @@ Todas as entregas de Fase 0 (I11, I05) e Fase 1 (I04, I06, I01) **permanecem vá
 - **I01 (CI)** — valida build/links independentemente da IA. Nenhum ajuste.
 - **I04 (correções factuais)** e **I05 (limpeza de `data/`)** — pré-requisitos permanentes, não tocam navegação.
 - **I11 (README + metadados)** — descreve estrutura do repo, não menu. Sem impacto.
-- **Layout de "Sala de imprensa" em `/categories/news/`** (entregue fora do plano em fase anterior) — sob a nova IA, essa URL passa a ser o **arquivo de notícias linkado do rodapé** (I15). O template editorial continua servindo perfeitamente a esse papel. Nenhuma edição de layout.
+- **Layout de arquivo de notícias em `/categories/news/`** (entregue fora do plano em fase anterior) — sob a nova IA, essa URL passa a ser o **arquivo de notícias linkado do rodapé** (I15). O template editorial continua servindo perfeitamente a esse papel. Nenhuma edição de layout.
 - **Bloco "Esta semana no CEDIS" na home** — sob a nova IA, continua sendo o destaque transversal de notícias na home. Sem alteração.
 
 ## Como ler este plano
@@ -46,7 +70,7 @@ Rótulos usados: `crítica` `alta` `média` para prioridade; `S` `M` `L` `XL` pa
 
 **Fora da navegação conceitual (cabeçalho):** busca, seletor de idioma, alternância claro/escuro.
 
-**Rodapé:** Notícias · Contato · Imprensa · Zenodo · GitHub · LinkedIn · YouTube · Intranet · Privacidade · Acessibilidade.
+**Rodapé:** Notícias · Contato · Divulgação científica · Zenodo · GitHub · LinkedIn · YouTube · Intranet · Privacidade · Acessibilidade.
 
 **Notícias** ficam explicitamente fora do menu principal — servidas por (a) destaque na home, (b) blocos "notícias relacionadas" em páginas de projeto/produto/pesquisador, (c) arquivo completo em `/categories/news/` acessível pelo rodapé.
 
@@ -117,10 +141,10 @@ Concluída em `9756046cf` e commits anteriores.
 - **Arquivos:** `hugo.yaml`, `layouts/partials/header.html`, `i18n/pt.yaml`, `i18n/en.yaml`.
 
 ### I15 — Rodapé institucional
-- **Prioridade:** alta · **Esforço:** S · **Depende de:** I16 (páginas de Contato/Imprensa/Privacidade/Acessibilidade devem existir)
+- **Prioridade:** alta · **Esforço:** S · **Depende de:** I16 (páginas de Contato/Divulgação científica/Privacidade/Acessibilidade devem existir)
 - **Precondições:** decidir se Intranet é link externo (autenticado) ou página institucional.
 - **Entregáveis:**
-  1. Reorganizar `layouts/partials/footer.html` em duas colunas semânticas: **Explorar** (Notícias, Zenodo, Intranet) e **Institucional** (Contato, Imprensa, Privacidade, Acessibilidade).
+  1. Reorganizar `layouts/partials/footer.html` em duas colunas semânticas: **Explorar** (Notícias, Zenodo, Intranet) e **Institucional** (Contato, Divulgação científica, Privacidade, Acessibilidade).
   2. Ícones sociais (GitHub, LinkedIn, YouTube) permanecem em bloco dedicado; adicionar YouTube se ainda não existir.
   3. Link "Notícias" do rodapé aponta para `/categories/news/` (arquivo já reformulado em fase anterior).
   4. Testes de contraste em modo claro e escuro (validação leve; validação plena vem em I10).
@@ -135,10 +159,10 @@ Concluída em `9756046cf` e commits anteriores.
   2. **Infraestrutura** — expandir `content/infra/index.{pt,en}.md` (existe hoje) com blocos de servidores, laboratórios físicos, licenças de software, serviços em nuvem.
   3. **Indicadores** — `content/indicadores/index.{pt,en}.md`: página pública com números-síntese (anos, pesquisadores, publicações, defesas, produtos, registros). Reutilizar métricas já geradas em `layouts/_default/history.html`.
   4. **Contato** — normalizar `content/contact/index.{pt,en}.md` (existe hoje) com endereço postal, coordenação, e-mail institucional, mapa.
-  5. **Imprensa** — `content/imprensa/index.{pt,en}.md`: guia para jornalistas (kit de imprensa, releases, contato, últimas notícias).
+  5. **Divulgação científica** — `content/divulgacao-cientifica.{pt,en}.md`: materiais institucionais, contato para consulta pública, notícias e áreas de expertise.
   6. **Política de privacidade** e **Acessibilidade** — páginas-base em `content/privacy/index.{pt,en}.md` e `content/accessibility/index.{pt,en}.md`, posteriormente detalhadas nas fases de política e qualidade.
 - **Verificação:** cada URL responde 200 em PT e EN; título e descrição adequados para SEO; links no menu (I13) e rodapé (I15) resolvem.
-- **Arquivos:** `content/reconhecimentos/`, `content/infra/`, `content/indicadores/`, `content/contact/`, `content/imprensa/`, `content/privacy/`, `content/accessibility/`.
+- **Arquivos:** `content/reconhecimentos/`, `content/infra/`, `content/indicadores/`, `content/contact/`, `content/divulgacao-cientifica.*.md`, `content/privacy/`, `content/accessibility/`.
 
 ---
 
@@ -154,6 +178,11 @@ Concluída em `9756046cf` e commits anteriores.
 - **Verificação:** dados atuais devem passar; PR de teste inserindo referência inexistente deve falhar.
 - **Arquivos:** `schemas/`, `scripts/validate_content.py`, `.github/workflows/site-ci.yml`, `docs-src/data-model.md`.
 
+> Nota (2026-07-24): I02 foi atualizado para o modelo sem `data/advisors.yaml`.
+> O validador agora cruza pessoas por `content/people/*.md` + `data/people.yaml`,
+> exige `slug:` em `data/people.yaml`, valida `people[]` em publicações e aceita
+> entradas consolidadas com `supervisions[]`.
+
 ### I03 — Unificação de projetos, produtos e relações
 - **Prioridade:** crítica · **Esforço:** L · **Depende de:** I02
 - **Entregáveis:**
@@ -165,6 +194,12 @@ Concluída em `9756046cf` e commits anteriores.
   6. Regra explicitada em `CONVENTIONS.md`: **relações inversas nunca são registradas à mão**.
 - **Verificação:** validador (I02) reporta zero referências manuais duplicadas; visual diff das páginas de projeto/produto/perfil deve ser mínimo antes/depois; cada projeto lista seus produtos e vice-versa sem edição manual.
 - **Arquivos:** `content/projects/*`, `content/products/*`, `layouts/people/single.html`, `layouts/projects/single.html`, `layouts/products/single.html`, `data/projects.yaml`, `CONVENTIONS.md`.
+
+> Nota (2026-07-24): parte da unificação foi concluída pelo `people-index`,
+> pela remoção de `data/advisors.yaml`, pela separação `people[]`/`tags[]` em
+> publicações e pela cascata i18n. `data/projects.yaml` permanece como fonte
+> canônica de metadados agregados de projetos; eliminar ou gerar esse arquivo
+> a partir de `content/projects/*` fica como decisão futura.
 
 ---
 
@@ -279,7 +314,7 @@ Concluída em julho/2026 com geração canônica de publicações, oportunidades
 O plano é bem-sucedido quando:
 
 1. **Menu de 6 itens vivo em PT e EN**, com todos os sub-itens resolvendo 200 (I13).
-2. **Rodapé enriquecido** com Notícias/Contato/Imprensa/Zenodo/GitHub/LinkedIn/YouTube/Intranet/Privacidade/Acessibilidade presentes e funcionais (I15).
+2. **Rodapé enriquecido** com Notícias/Contato/Divulgação científica/Zenodo/GitHub/LinkedIn/YouTube/Intranet/Privacidade/Acessibilidade presentes e funcionais (I15).
 3. **Páginas institucionais estruturantes** existentes com conteúdo mínimo (I16).
 4. **Zero fonte-de-verdade duplicada:** relações entre pessoas, projetos, produtos e publicações declaradas em um único lugar (I03, I07).
 5. **CI protege o `main`:** nenhum PR entra sem build verde, links válidos, dados validados, i18n conferido e a11y sem regressão grave (I01✅, I02, I08, I10).
@@ -311,4 +346,4 @@ O plano é bem-sucedido quando:
 | **I13** | ✅ | `hugo.yaml`, `layouts/partials/nav.html`, `i18n/*.yaml` |
 | **I14** | ✅ | `layouts/partials/related-news.html`, `layouts/{projects,products,people}/single.html` |
 | **I15** | ✅ | `layouts/partials/footer.html`, `i18n/*.yaml` |
-| **I16** | ✅ | `content/reconhecimentos/`, `content/infra/`, `content/indicadores/`, `content/contact/`, `content/imprensa/`, `content/privacy/`, `content/accessibility/` |
+| **I16** | ✅ | `content/reconhecimentos/`, `content/infra/`, `content/indicadores/`, `content/contact/`, `content/divulgacao-cientifica.*.md`, `content/privacy/`, `content/accessibility/` |

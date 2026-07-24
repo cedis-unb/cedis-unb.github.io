@@ -21,7 +21,7 @@ authors_structured:
 - name: ROCHA, JOHAN M. G. DA
 - name: LIMA, Daniel Sundfeld
   id: daniel_sundfeld
-  url: /people/daniel_lima
+  url: /people/daniel_sundfeld
 tags:
 - hpc
 - daniel_sundfeld

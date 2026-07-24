@@ -7,17 +7,19 @@
 {{ $questions := .Params.questions }}
 
 {{ $areasInfo := dict }}
-{{ range hugo.Data.areas.areas }}
-  {{ $label := index .name $siteLang }}
-  {{ if not $label }}{{ $label = index .name "en" }}{{ end }}
-  {{ $areasInfo = merge $areasInfo (dict .id (dict "id" .id "name" $label "researchers" .researchers)) }}
+{{ range partialCached "area-list" "global" site.Language.Lang }}
+  {{ $area := . }}
+  {{ $areaId := $area.id }}
+  {{ $areasInfo = merge $areasInfo (dict $areaId (dict "id" $areaId "name" $area.name "researchers" $area.researchers)) }}
 {{ end }}
 
+{{/* Gap #1: usa people-index (researcher + advisor_only) */}}
 {{ $advisorsInfo := dict }}
-{{ range $key, $adv := hugo.Data.advisors.advisors }}
-  {{ if $adv.areas }}
-    {{ $link := printf "/people/%s" $key | relLangURL }}
-    {{ $advisorsInfo = merge $advisorsInfo (dict $key (dict "name" $adv.name "url" $link)) }}
+{{ range $key, $entry := (partialCached "people-index" "global") }}
+  {{ if and (or (eq $entry.profile_level "researcher") (eq $entry.profile_level "advisor_only")) (gt (len $entry.areas) 0) }}
+    {{ $link := $entry.link }}
+    {{ if not $link }}{{ $link = printf "/people/%s" $key | relLangURL }}{{ end }}
+    {{ $advisorsInfo = merge $advisorsInfo (dict $key (dict "name" $entry.name "url" $link)) }}
   {{ end }}
 {{ end }}
 

@@ -28,13 +28,16 @@
     {{ end }}
     {{ end }}
 
-    <!-- Verifica se as tags especificadas correspondem, se houver -->
+    <!-- Verifica se as tags especificadas correspondem, se houver.
+         Gap #10: checa também .people[] -->
     {{ if and $includePublication (gt (len $tags) 0) (ne (index $tags 0) "") }}
     {{ $tagMatch := false }}
     {{ range .tags }}
-      {{ if in $tags . }}
-        {{ $tagMatch = true }}
-        {{ break }}
+      {{ if in $tags . }}{{ $tagMatch = true }}{{ break }}{{ end }}
+    {{ end }}
+    {{ if not $tagMatch }}
+      {{ range .people }}
+        {{ if in $tags . }}{{ $tagMatch = true }}{{ break }}{{ end }}
       {{ end }}
     {{ end }}
     {{ if not $tagMatch }}
@@ -56,13 +59,15 @@
     {{ end }}
   {{ end }}
 
-  {{/* Filtro de exclusão baseado em excludeTags */}}
+  {{/* Filtro de exclusão baseado em excludeTags.
+       Gap #10: checa também .people[] */}}
   {{ if and $includePublication (gt (len $excludeTags) 0) (ne (index $excludeTags 0) "") }}
     {{ range .tags }}
-      {{ if in $excludeTags . }}
-        {{/* Se uma excludeTag for encontrada, a publicação não deve ser incluída */}}
-        {{ $includePublication = false }}
-        {{ break }}
+      {{ if in $excludeTags . }}{{ $includePublication = false }}{{ break }}{{ end }}
+    {{ end }}
+    {{ if $includePublication }}
+      {{ range .people }}
+        {{ if in $excludeTags . }}{{ $includePublication = false }}{{ break }}{{ end }}
       {{ end }}
     {{ end }}
   {{ end }}

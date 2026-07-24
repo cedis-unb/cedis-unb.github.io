@@ -7,14 +7,20 @@ weight: 30
 language: pt
 featured_image: "../assets/images/featured/people_André Lanna.png"
 summary: Professor Adjunto da Universidade de Brasília (UnB), atua no curso de graduação em Engenharia de Software e no Programa de Pós-Graduação em Computação Aplicada. 
+contact:
+  email: andrelanna@unb.br
+  lattes: https://lattes.cnpq.br/5685720614944773
+  orcid: https://orcid.org/0000-0003-4200-6569
+areas:
+- software_architecture
+- software_product_line
+- ai
+- machine_learning
 authorimage: ../assets/images/global/author.webp
 categories:
 - people
 - researcher
-- andre_lanna
 tags: 
-- software_architecture
-- software_product_line
 - dfcris
 nav_next: true
 ---
