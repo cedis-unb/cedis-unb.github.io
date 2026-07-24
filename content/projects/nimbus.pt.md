@@ -34,4 +34,4 @@ Nimbus investigou uma arquitetura serverless para apoiar correção automática 
 
 ## Equipe
 
-- {{< link-interno "/people/daniel_lima" "Daniel Sundfeld" >}}
+- {{< link-interno "/people/daniel_sundfeld" "Daniel Sundfeld" >}}

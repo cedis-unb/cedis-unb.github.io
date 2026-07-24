@@ -19,7 +19,7 @@ authors_structured:
   id: rodrigo_rocha_gomes
 - name: Sundfeld, Daniel
   id: daniel_sundfeld
-  url: /people/daniel_lima
+  url: /people/daniel_sundfeld
 tags:
 - hpc
 - daniel_sundfeld

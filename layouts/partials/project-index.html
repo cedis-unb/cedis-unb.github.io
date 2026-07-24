@@ -1,0 +1,98 @@
+{{/*
+  project-index — dicionário global id → info consolidada de projeto.
+
+  Fonte canônica atual:
+    · data/projects.yaml
+    · content/projects/<id>.md (página rica opcional)
+
+  Uso:
+    {{ $projects := partialCached "project-index" "global" site.Language.Lang }}
+    {{ $project := index $projects "project_nimbus" }}
+
+  Retorna entradas com:
+    id, found, name, label, data, page, page_url, link,
+    project_type, status, umbrella_projects, researchers, students, products,
+    child_ids, children_count
+*/}}
+
+{{ $lang := site.Language.Lang }}
+{{ $index := dict }}
+
+{{ $pagesByID := dict }}
+{{ range site.RegularPages }}
+  {{ if and (eq .Section "projects") (eq .Lang site.Language.Lang) }}
+    {{ $id := .Params.id | default .File.TranslationBaseName }}
+    {{ $pagesByID = merge $pagesByID (dict $id .) }}
+  {{ end }}
+{{ end }}
+
+{{ range hugo.Data.projects.projects }}
+  {{ $project := . }}
+  {{ $id := $project.id }}
+  {{ $page := index $pagesByID $id }}
+  {{ $name := "" }}
+  {{ with $project.name }}
+    {{ $name = index . $lang | default (index . "en") | default (index . "pt") }}
+  {{ end }}
+  {{ if not $name }}{{ with $page }}{{ $name = .Title }}{{ end }}{{ end }}
+  {{ if not $name }}{{ $name = replaceRE "[-_]+" " " $id | title }}{{ end }}
+
+  {{ $pageURL := "" }}
+  {{ with $page }}{{ $pageURL = .RelPermalink }}{{ end }}
+  {{ $link := $pageURL }}
+  {{ if not $link }}{{ $link = printf "/tags/%s" ($id | urlize) | relLangURL }}{{ end }}
+
+  {{ $childIDs := slice }}
+  {{ range hugo.Data.projects.projects }}
+    {{ if and (ne .id $id) (in (.umbrella_projects | default slice) $id) }}
+      {{ $childIDs = $childIDs | append .id }}
+    {{ end }}
+  {{ end }}
+
+  {{ $entry := dict
+    "id" $id
+    "found" true
+    "name" $name
+    "label" $name
+    "data" $project
+    "page" $page
+    "page_url" $pageURL
+    "link" $link
+    "project_type" ($project.project_type | default "project")
+    "status" ($project.status | default "")
+    "umbrella_projects" ($project.umbrella_projects | default (slice))
+    "researchers" ($project.researchers | default (slice))
+    "students" ($project.students | default (slice))
+    "products" ($project.products | default (slice))
+    "child_ids" $childIDs
+    "children_count" (len $childIDs)
+  }}
+  {{ $index = merge $index (dict $id $entry) }}
+{{ end }}
+
+{{/* Fallback: páginas de projeto ainda sem entrada em data/projects.yaml. */}}
+{{ range $id, $page := $pagesByID }}
+  {{ if not (index $index $id) }}
+    {{ $entry := dict
+      "id" $id
+      "found" true
+      "name" $page.Title
+      "label" $page.Title
+      "data" nil
+      "page" $page
+      "page_url" $page.RelPermalink
+      "link" $page.RelPermalink
+      "project_type" ($page.Params.project_type | default "project")
+      "status" ($page.Params.status | default "")
+      "umbrella_projects" ($page.Params.umbrella_projects | default (slice))
+      "researchers" ($page.Params.researchers | default (slice))
+      "students" ($page.Params.students | default (slice))
+      "products" ($page.Params.products | default (slice))
+      "child_ids" (slice)
+      "children_count" 0
+    }}
+    {{ $index = merge $index (dict $id $entry) }}
+  {{ end }}
+{{ end }}
+
+{{ return $index }}

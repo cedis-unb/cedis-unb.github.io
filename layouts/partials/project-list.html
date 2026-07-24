@@ -1,0 +1,15 @@
+{{/*
+  project-list — lista de projetos na ordem de data/projects.yaml.
+  Cada item é uma entrada de project-index.
+*/}}
+
+{{ $index := partialCached "project-index" "global" site.Language.Lang }}
+{{ $items := slice }}
+
+{{ range hugo.Data.projects.projects }}
+  {{ with index $index .id }}
+    {{ $items = $items | append . }}
+  {{ end }}
+{{ end }}
+
+{{ return $items }}

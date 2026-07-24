@@ -1,16 +1,43 @@
+{{/*
+  translated-label — resolve o rótulo de exibição de um slug/termo via
+  cascata de fontes. Nunca retorna vazio nem "Tags" fallback do Hugo.
+
+  Referência: Gap #2 da análise de "distância ao ideal".
+
+  Uso original (compat):
+    {{ partial "translated-label.html" (dict "value" .) }}
+    {{ partial "translated-label.html" (dict "page" .) }}
+
+  Cascata (para no primeiro hit):
+    1. i18n (variações do slug: original, lower, urlized, underscored, slug)
+    2. project-lookup <slug>.name
+    3. area-lookup <slug>.name
+    4. people-lookup <slug>.name
+    5. humanize(slug)
+*/}}
+{{/*
+  Coleta valores candidatos com priorização:
+  - .Data.Term é o slug real do term de taxonomia (ex.: "andre_silva")
+  - .value é o valor passado explicitamente pelo caller
+  - .Title / .LinkTitle podem ser "Tags" fallback do Hugo — vão só ao FIM
+    para não sequestrar a resolução i18n com i18n("tags")="Tags".
+*/}}
 {{- $values := slice -}}
 {{- with .page }}
     {{- with .Data.Term }}{{- $values = $values | append . -}}{{- end -}}
 {{- end -}}
 {{- with .value }}{{- $values = $values | append . -}}{{- end -}}
+{{- $fallbackValues := slice -}}
 {{- with .page -}}
-    {{- with .LinkTitle }}{{- $values = $values | append . -}}{{- end -}}
-    {{- with .Title }}{{- $values = $values | append . -}}{{- end -}}
-    {{- with .Name }}{{- $values = $values | append . -}}{{- end -}}
-    {{- with .Type }}{{- $values = $values | append . -}}{{- end -}}
-    {{- with .Data.Plural }}{{- $values = $values | append . -}}{{- end -}}
-    {{- with .Data.Singular }}{{- $values = $values | append . -}}{{- end -}}
+    {{- with .LinkTitle }}{{- $fallbackValues = $fallbackValues | append . -}}{{- end -}}
+    {{- with .Title }}{{- $fallbackValues = $fallbackValues | append . -}}{{- end -}}
+    {{- with .Name }}{{- $fallbackValues = $fallbackValues | append . -}}{{- end -}}
+    {{- with .Type }}{{- $fallbackValues = $fallbackValues | append . -}}{{- end -}}
+    {{- with .Data.Plural }}{{- $fallbackValues = $fallbackValues | append . -}}{{- end -}}
+    {{- with .Data.Singular }}{{- $fallbackValues = $fallbackValues | append . -}}{{- end -}}
 {{- end -}}
+
+{{- $lang := site.Language.Lang -}}
 
 {{- $fallback := "" -}}
 {{- $keys := slice -}}
@@ -29,10 +56,64 @@
 {{- end -}}
 
 {{- $translation := "" -}}
+
+{{/* Cascata 1 — i18n com $keys (slug real) */}}
 {{- range $keys -}}
     {{- if eq $translation "" -}}
         {{- with i18n . -}}
             {{- $translation = . -}}
+        {{- end -}}
+    {{- end -}}
+{{- end -}}
+
+{{/* Cascata 2 — project-lookup por id */}}
+{{- if eq $translation "" -}}
+    {{- range $keys -}}
+        {{- $slug := . -}}
+        {{- if eq $translation "" -}}
+            {{- $project := partial "project-lookup" $slug -}}
+            {{- if $project.found -}}{{- $translation = $project.name -}}{{- end -}}
+        {{- end -}}
+    {{- end -}}
+{{- end -}}
+
+{{/* Cascata 3 — area-lookup por id */}}
+{{- if eq $translation "" -}}
+    {{- range $keys -}}
+        {{- $slug := . -}}
+        {{- if eq $translation "" -}}
+            {{- $area := partial "area-lookup" $slug -}}
+            {{- if $area.found -}}{{- $translation = $area.name -}}{{- end -}}
+        {{- end -}}
+    {{- end -}}
+{{- end -}}
+
+{{/* Cascata 4 — people-lookup por slug */}}
+{{- if eq $translation "" -}}
+    {{- range $keys -}}
+        {{- $slug := . -}}
+        {{- if eq $translation "" -}}
+            {{- $p := partial "people-lookup" $slug -}}
+            {{- if $p.found -}}{{- $translation = $p.name -}}{{- end -}}
+        {{- end -}}
+    {{- end -}}
+{{- end -}}
+
+{{/* Cascata 5 — i18n usando $fallbackValues (só depois de esgotar as
+     fontes ricas). Isso permite que .Title/.Data.Plural sirvam de
+     último recurso para termos genéricos, sem sequestrar slugs reais. */}}
+{{- if eq $translation "" -}}
+    {{- $fallbackKeys := slice -}}
+    {{- range $fallbackValues -}}
+        {{- $c := printf "%v" . | strings.TrimSpace -}}
+        {{- if ne $c "" -}}
+            {{- if and (eq $fallback "") -}}{{- $fallback = $c -}}{{- end -}}
+            {{- $fallbackKeys = $fallbackKeys | append $c (lower $c) (urlize $c) -}}
+        {{- end -}}
+    {{- end -}}
+    {{- range $fallbackKeys -}}
+        {{- if eq $translation "" -}}
+            {{- with i18n . -}}{{- $translation = . -}}{{- end -}}
         {{- end -}}
     {{- end -}}
 {{- end -}}

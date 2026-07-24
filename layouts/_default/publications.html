@@ -75,9 +75,12 @@
 {{ $yearCount := len $yearEntries }}
 {{ $hasYearNav := gt $yearCount 0 }}
 
+{{/* Gap #1: advisor keys via people-index */}}
 {{ $advisorKeys := slice }}
-{{ range $key, $value := hugo.Data.advisors.advisors }}
-  {{ $advisorKeys = $advisorKeys | append $key }}
+{{ range $slug, $entry := (partialCached "people-index" "global") }}
+  {{ if or (eq $entry.profile_level "researcher") (eq $entry.profile_level "advisor_only") }}
+    {{ $advisorKeys = $advisorKeys | append $slug }}
+  {{ end }}
 {{ end }}
 {{ $filterYearsSet := dict }}
 {{ $filterTypesSet := dict }}
@@ -271,9 +274,12 @@
         </div>
         <div id="publications-content" class="[&_h2]:mt-14 [&_h2]:scroll-mt-28 [&_h2]:border-t [&_h2]:border-black/5 [&_h2]:pt-10 [&_h2]:text-4xl [&_h2]:font-black [&_h2]:tracking-tight [&_h2]:text-gray-950 dark:[&_h2]:border-white/10 dark:[&_h2]:text-white [&_ol]:my-5 [&_ol]:list-none [&_ol]:pl-0 [&_ul]:my-5 [&_ul]:pl-5 [&_p]:my-5 [&_p]:text-base [&_p]:leading-7 [&_p]:text-gray-600 dark:[&_p]:text-white/72 [&_a]:font-semibold [&_a]:text-primary-700 [&_a]:transition-colors hover:[&_a]:text-primary-600 dark:[&_a]:text-primary-200 dark:hover:[&_a]:text-primary-100 [&_.caput]:mt-10 [&_.caput]:mb-4">
           {{ $currentYear := "" }}
+          {{/* Gap #1: advisor keys via people-index */}}
           {{ $advisorsList := slice }}
-          {{ range $key, $_ := hugo.Data.advisors.advisors }}
-            {{ $advisorsList = $advisorsList | append $key }}
+          {{ range $slug, $entry := (partialCached "people-index" "global") }}
+            {{ if or (eq $entry.profile_level "researcher") (eq $entry.profile_level "advisor_only") }}
+              {{ $advisorsList = $advisorsList | append $slug }}
+            {{ end }}
           {{ end }}
           {{ range $publicationEntries }}
             {{ $entry := . }}
@@ -380,8 +386,9 @@
                   <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-gray-400 dark:text-white/72">{{ i18n "orientador" }}</div>
                   <div class="mt-2 flex flex-wrap gap-2">
                     {{ range $pub.advisors }}
-                      {{ with index hugo.Data.advisors.advisors . }}
-                        <a href="{{ if hasPrefix .link "/" }}{{ .link | relLangURL }}{{ else }}{{ .link }}{{ end }}" class="inline-flex rounded-full border border-black/10 bg-stone-50 px-3 py-1 text-sm font-medium text-gray-700 transition-colors hover:border-primary-500 hover:text-primary-600 dark:border-white/10 dark:bg-white/[0.06] dark:text-white/78 dark:hover:border-primary-300 dark:hover:text-primary-200">{{ .name }}</a>
+                      {{ $adv := partial "people-lookup" . }}
+                      {{ if $adv.found }}
+                        <a href="{{ if hasPrefix $adv.link "/" }}{{ $adv.link | relLangURL }}{{ else }}{{ $adv.link }}{{ end }}" class="inline-flex rounded-full border border-black/10 bg-stone-50 px-3 py-1 text-sm font-medium text-gray-700 transition-colors hover:border-primary-500 hover:text-primary-600 dark:border-white/10 dark:bg-white/[0.06] dark:text-white/78 dark:hover:border-primary-300 dark:hover:text-primary-200">{{ $adv.name }}</a>
                       {{ end }}
                     {{ end }}
                   </div>
@@ -393,7 +400,7 @@
                   <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-gray-400 dark:text-white/72">{{ cond $isPt "Temas" "Topics" }}</div>
                   <div class="mt-2 flex flex-wrap gap-2">
                     {{ range $filteredTags }}
-                      <a href="{{ printf "/tags/%s" (. | urlize) | relLangURL }}" class="inline-flex rounded-full border border-black/10 bg-stone-50 px-3 py-1 text-sm font-medium text-gray-700 transition-colors hover:border-primary-500 hover:text-primary-600 dark:border-white/10 dark:bg-white/[0.06] dark:text-white/78 dark:hover:border-primary-300 dark:hover:text-primary-200">{{ . | i18n }}</a>
+                      <a href="{{ printf "/tags/%s" (. | urlize) | relLangURL }}" class="inline-flex rounded-full border border-black/10 bg-stone-50 px-3 py-1 text-sm font-medium text-gray-700 transition-colors hover:border-primary-500 hover:text-primary-600 dark:border-white/10 dark:bg-white/[0.06] dark:text-white/78 dark:hover:border-primary-300 dark:hover:text-primary-200">{{ partial "translated-label.html" (dict "value" .) }}</a>
                     {{ end }}
                   </div>
                 </div>

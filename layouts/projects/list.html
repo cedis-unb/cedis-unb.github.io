@@ -1,18 +1,11 @@
 {{ define "main" }}
 {{ $isPt := eq .Site.Language.Lang "pt" }}
 {{ $siteLang := .Site.Language.Lang }}
-{{ $pagesByID := dict }}
-{{ range .Pages }}
-  {{ if eq .Lang $.Site.Language.Lang }}
-    {{ $id := .Params.id | default .File.TranslationBaseName }}
-    {{ $pagesByID = merge $pagesByID (dict $id .) }}
-  {{ end }}
-{{ end }}
-
+{{ $projectList := partialCached "project-list" "global" site.Language.Lang }}
 {{ $umbrellaProjects := slice }}
 {{ $linkedProjects := slice }}
 {{ $unmappedProjects := slice }}
-{{ range hugo.Data.projects.projects }}
+{{ range $projectList }}
   {{ if eq (.project_type | default "project") "umbrella" }}
     {{ $umbrellaProjects = $umbrellaProjects | append . }}
   {{ else if .umbrella_projects }}
@@ -77,11 +70,10 @@
     <div class="space-y-12">
       {{ range $umbrellaProjects }}
         {{ $umbrella := . }}
-        {{ $umbrellaPage := index $pagesByID $umbrella.id }}
-        {{ $umbrellaName := index $umbrella.name $siteLang }}
-        {{ if not $umbrellaName }}{{ $umbrellaName = index $umbrella.name "en" }}{{ end }}
+        {{ $umbrellaPage := $umbrella.page }}
+        {{ $umbrellaName := $umbrella.name }}
         {{ $children := slice }}
-        {{ range hugo.Data.projects.projects }}
+        {{ range $projectList }}
           {{ if and (ne .id $umbrella.id) (in (.umbrella_projects | default slice) $umbrella.id) }}
             {{ $children = $children | append . }}
           {{ end }}
@@ -89,7 +81,7 @@
         {{ $umbrellaProducts := 0 }}
         {{ with $umbrellaPage }}{{ $umbrellaProducts = len (.Params.products | default slice) }}{{ end }}
         {{ range $children }}
-          {{ with index $pagesByID .id }}{{ $umbrellaProducts = add $umbrellaProducts (len (.Params.products | default slice)) }}{{ end }}
+          {{ with .page }}{{ $umbrellaProducts = add $umbrellaProducts (len (.Params.products | default slice)) }}{{ end }}
         {{ end }}
 
         <section class="scroll-mt-24 border-t border-slate-200 pt-8 dark:border-white/10" id="{{ $umbrella.id | urlize }}">
@@ -115,9 +107,8 @@
             <div class="grid gap-4 md:grid-cols-2">
               {{ range $children }}
                 {{ $child := . }}
-                {{ $childPage := index $pagesByID $child.id }}
-                {{ $childName := index $child.name $siteLang }}
-                {{ if not $childName }}{{ $childName = index $child.name "en" }}{{ end }}
+                {{ $childPage := $child.page }}
+                {{ $childName := $child.name }}
                 {{ $childType := $child.project_type | default "project" }}
                 {{ $childStatus := $child.status | default "" }}
                 {{ with $childPage }}{{ if not $childStatus }}{{ $childStatus = .Params.status | default "" }}{{ end }}{{ end }}
@@ -156,9 +147,8 @@
       <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
         {{ range $unmappedProjects }}
           {{ $item := . }}
-          {{ $itemPage := index $pagesByID $item.id }}
-          {{ $itemName := index $item.name $siteLang }}
-          {{ if not $itemName }}{{ $itemName = index $item.name "en" }}{{ end }}
+          {{ $itemPage := $item.page }}
+          {{ $itemName := $item.name }}
           <article class="rounded-[1.25rem] border border-slate-200 bg-white p-5 shadow-sm dark:border-white/10 dark:bg-white/[0.04]">
             <h3 class="text-base font-black text-slate-950 dark:text-white">{{ $itemName }}</h3>
             <p class="mt-2 text-xs font-semibold uppercase tracking-[0.16em] text-slate-500 dark:text-white/55">{{ len ($item.researchers | default slice) }} {{ $teamLabel }}</p>

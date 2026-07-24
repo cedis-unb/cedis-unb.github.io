@@ -71,14 +71,17 @@
         {{ $researcherFormerSupervisionCount := 0 }}
         {{ if $isResearchersTerm }}
             {{ $personKey := .File.TranslationBaseName }}
+            {{ $indexAll := partialCached "people-index" "global" }}
             {{ range .Params.categories }}
-                {{ if isset hugo.Data.advisors.advisors . }}
+                {{ $entry := index $indexAll . }}
+                {{ if and $entry (or (eq $entry.profile_level "researcher") (eq $entry.profile_level "advisor_only")) }}
                     {{ $personKey = . }}
                     {{ break }}
                 {{ end }}
             {{ end }}
             {{ range hugo.Data.productions.items }}
-                {{ if in .tags $personKey }}
+                {{/* Gap #10: pessoa em .people (canônico) OU .tags (legado) */}}
+                {{ if or (in .people $personKey) (in .tags $personKey) }}
                     {{ $researcherPublicationCount = add $researcherPublicationCount 1 }}
                 {{ end }}
                 {{ if and .advisors (in .advisors $personKey) (in (slice "phd" "dissertation" "specialization" "tcc") .type) (not (in .tags "active")) }}

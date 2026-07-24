@@ -1,10 +1,9 @@
 {{/*
   people-index — dicionário global slug → info consolidado da pessoa.
 
-  Este partial constrói UM dicionário unificando as 3 fontes canônicas:
+  Este partial constrói UM dicionário unificando as 2 fontes canônicas:
     · content/people/<slug>.md (page rica)
     · data/people.yaml (orientações — flat ou com supervisions[])
-    · data/advisors.yaml (contato de professores)
 
   Uso (SEMPRE via partialCached para evitar reconstrução por chamada):
 
@@ -15,16 +14,16 @@
   Estrutura de cada entrada retornada:
 
     slug                 string
-    name                 string   (do .md > data > advisor > slug humanized)
+    name                 string   (do .md > data > slug humanized)
     profile_level        string   ("researcher" | "card_with_page" | "card" | "derived")
-    sources              slice    (["page", "data", "advisor"] — quais fontes têm registro)
+    sources              slice    (["page", "data"] — quais fontes têm registro)
     page                 Page ou nil
     page_url             string   (RelPermalink se page, "" senão)
-    advisor              dict ou nil  (nome, email, lattes, orcid, areas, link)
+    advisor              string  (compatibilidade; sempre vazio após remoção de advisors.yaml)
     data_entry           dict ou nil  (a entrada de data/people.yaml)
     supervisions         slice    (normalizadas — sempre lista, mesmo com 1 item)
     supervisions_count   int
-    publications         slice    (items de productions.yaml com slug em .tags)
+    publications         slice    (items de productions.yaml com slug em .people, fallback .tags)
     publications_count   int
 
   Este partial é read-only: não muta nada; apenas monta uma view.
@@ -32,7 +31,7 @@
 
 {{ $index := dict }}
 
-{{/* Passo 1 — coleta pré-lista de slugs conhecidos a partir das 3 fontes */}}
+{{/* Passo 1 — coleta pré-lista de slugs conhecidos a partir das fontes canônicas */}}
 {{ $knownSlugs := slice }}
 {{ range site.RegularPages }}
   {{ if eq .Section "people" }}
@@ -48,11 +47,7 @@
     {{ $knownSlugs = $knownSlugs | append $s }}
   {{ end }}
 {{ end }}
-{{ range $s, $info := hugo.Data.advisors.advisors }}
-  {{ if not (in $knownSlugs $s) }}
-    {{ $knownSlugs = $knownSlugs | append $s }}
-  {{ end }}
-{{ end }}
+{{/* data/advisors.yaml foi removido; advisors externos têm stubs .md. */}}
 
 {{/* Passo 2 — pré-indexa entradas de data/people.yaml por slug */}}
 {{ $dataBySlug := dict }}
@@ -63,15 +58,27 @@
   {{ end }}
 {{ end }}
 
-{{/* Passo 3 — pré-indexa publicações por slug (iterando productions UMA vez) */}}
+{{/* Passo 3 — pré-indexa publicações por slug (iterando productions UMA vez).
+     Passo 10: prefere .people (canônico); mantém .tags como fallback pra
+     productions antigas ainda não migradas. */}}
 {{ $pubsBySlug := dict }}
 {{ range hugo.Data.productions.items }}
   {{ $prod := . }}
+  {{ $seenSlugs := dict }}
+  {{ range .people }}
+    {{ $s := . }}
+    {{ if and (in $knownSlugs $s) (not (isset $seenSlugs $s)) }}
+      {{ $seenSlugs = merge $seenSlugs (dict $s true) }}
+      {{ $existing := index $pubsBySlug $s | default (slice) }}
+      {{ $pubsBySlug = merge $pubsBySlug (dict $s ($existing | append $prod)) }}
+    {{ end }}
+  {{ end }}
   {{ range .tags }}
-    {{ $tag := . }}
-    {{ if in $knownSlugs $tag }}
-      {{ $existing := index $pubsBySlug $tag | default (slice) }}
-      {{ $pubsBySlug = merge $pubsBySlug (dict $tag ($existing | append $prod)) }}
+    {{ $s := . }}
+    {{ if and (in $knownSlugs $s) (not (isset $seenSlugs $s)) }}
+      {{ $seenSlugs = merge $seenSlugs (dict $s true) }}
+      {{ $existing := index $pubsBySlug $s | default (slice) }}
+      {{ $pubsBySlug = merge $pubsBySlug (dict $s ($existing | append $prod)) }}
     {{ end }}
   {{ end }}
 {{ end }}
@@ -83,7 +90,7 @@
   {{/* Fontes */}}
   {{ $page := site.GetPage (printf "/people/%s" $slug) }}
   {{ $dataEntry := index $dataBySlug $slug }}
-  {{ $advisor := index hugo.Data.advisors.advisors $slug }}
+  {{ $advisor := "" }}{{/* mantido por compat — sempre "" após remoção de advisors.yaml */}}
 
   {{/* Sources tags */}}
   {{ $sources := slice }}
@@ -125,9 +132,34 @@
   {{/* Publicações — já pré-indexadas */}}
   {{ $publications := index $pubsBySlug $slug | default (slice) }}
 
-  {{/* URL da página (RelPermalink), vazio se não tem */}}
+  {{/* URL da página — RelPermalink do .md se existir. Templates devem
+       preferir .link sobre .page_url para preservar fallback futuro. */}}
   {{ $pageURL := "" }}
   {{ with $page }}{{ $pageURL = .RelPermalink }}{{ end }}
+  {{ $link := $pageURL }}
+  {{ if not $link }}
+    {{ with $advisor }}{{ with .link }}{{ $link = . }}{{ end }}{{ end }}
+  {{ end }}
+
+  {{/* Contato e áreas — fonte atual: page frontmatter. */}}
+  {{ $contact := dict }}
+  {{ $areas := slice }}
+  {{ with $advisor }}
+    {{ $c := dict }}
+    {{ with .email }}{{ $c = merge $c (dict "email" .) }}{{ end }}
+    {{ with .lattes }}{{ $c = merge $c (dict "lattes" .) }}{{ end }}
+    {{ with .orcid }}{{ $c = merge $c (dict "orcid" .) }}{{ end }}
+    {{ $contact = $c }}
+    {{ with .areas }}{{ $areas = . }}{{ end }}
+  {{ end }}
+  {{ with $page }}
+    {{ with .Params.contact }}
+      {{ $contact = merge $contact . }}
+    {{ end }}
+    {{ with .Params.areas }}
+      {{ $areas = . }}
+    {{ end }}
+  {{ end }}
 
   {{ $found := or $page $dataEntry $advisor (gt (len $publications) 0) }}
 
@@ -139,12 +171,15 @@
     "sources" $sources
     "page" $page
     "page_url" $pageURL
+    "link" $link
     "advisor" $advisor
     "data_entry" $dataEntry
     "supervisions" $supervisions
     "supervisions_count" (len $supervisions)
     "publications" $publications
     "publications_count" (len $publications)
+    "contact" $contact
+    "areas" $areas
   }}
 
   {{ $index = merge $index (dict $slug $entry) }}

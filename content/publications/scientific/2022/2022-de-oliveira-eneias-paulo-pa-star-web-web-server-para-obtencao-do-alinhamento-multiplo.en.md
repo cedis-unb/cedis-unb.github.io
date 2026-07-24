@@ -19,7 +19,7 @@ authors_structured:
   id: eneias_paulo_de_oliveira
 - name: Sundfeld, Daniel
   id: daniel_sundfeld
-  url: /people/daniel_lima
+  url: /people/daniel_sundfeld
 tags:
 - hpc
 - daniel_sundfeld

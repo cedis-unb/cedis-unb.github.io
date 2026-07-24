@@ -17,7 +17,7 @@ tags:
 ---
 Brasília, 27 de julho de 2023
 
-Em serverless, o custo é função direta do tempo. Uma função que roda em 200ms paga uma tarifa; a mesma função que roda em 800ms paga quatro vezes mais. E, no entanto, prever esse tempo antes de rodar é uma disciplina pouco desenvolvida — o mercado costuma decidir por benchmarks isolados e otimismo. **É esse espaço vazio que o TCC defendido em julho de 2023 por Lucas Ganda Carvalho e Wíctor Bastos Girardi ocupa**, sob orientação do Prof. {{< link-interno "/people/daniel_lima" "Daniel Sundfeld Lima" >}}.
+Em serverless, o custo é função direta do tempo. Uma função que roda em 200ms paga uma tarifa; a mesma função que roda em 800ms paga quatro vezes mais. E, no entanto, prever esse tempo antes de rodar é uma disciplina pouco desenvolvida — o mercado costuma decidir por benchmarks isolados e otimismo. **É esse espaço vazio que o TCC defendido em julho de 2023 por Lucas Ganda Carvalho e Wíctor Bastos Girardi ocupa**, sob orientação do Prof. {{< link-interno "/people/daniel_sundfeld" "Daniel Sundfeld Lima" >}}.
 
 O trabalho encara o problema com instrumento: em vez de estimar tempo por analogia, propõe uma abordagem preditiva para funções Lambda que combine características do código com dados observados em execuções controladas. Prever com precisão importa por duas razões práticas: quando o custo é bem estimado, a arquitetura ganha grau de liberdade para escolher entre opções serverless e opções tradicionais; quando é mal estimado, o time descobre o preço só depois de encerrado o ciclo de faturamento.
 

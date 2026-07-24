@@ -22,7 +22,7 @@ authors_structured:
 - name: PINTO, ADILSON LUIZ
 - name: SUNDFELD, Daniel Lima
   id: daniel_sundfeld
-  url: /people/daniel_lima
+  url: /people/daniel_sundfeld
 tags:
 - daniel_sundfeld
 - hpc

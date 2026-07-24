@@ -13,7 +13,7 @@ Executa duas classes de verificação:
      em schemas/. Usa jsonschema se disponível; cai em validação manual
      mínima se o pacote não estiver instalado.
   2. Integridade referencial — checa que IDs citados em relações
-     existam nas fontes canônicas (advisors.yaml, areas.yaml).
+     existam nas fontes canônicas (content/people, people.yaml, areas.yaml).
 
 Uso:
     python3 scripts/validate_content.py                    # warn
@@ -53,18 +53,9 @@ DATA_DIR = ROOT / "data"
 CONTENT_DIR = ROOT / "content"
 SCHEMAS_DIR = ROOT / "schemas"
 
-# Exceções transitórias explicitamente aceitas. Cada entrada precisa ter
-# uma nota em CONVENTIONS.md ou no plano de auditoria explicando o porquê.
-TRANSITIONAL_EXCEPTIONS = {
-    # id que aparece em tags/advisors mas cuja URL/slug é diferente.
-    # Slug de URL: daniel_lima. Tag/advisor: daniel_sundfeld.
-    # Documentado em CONVENTIONS.md — a ser unificado em I03.
-    "advisor_alias": {"daniel_sundfeld": "daniel_lima"},
-}
-
 STRICT = os.environ.get("CEDIS_VALIDATE_STRICT", "").lower() in ("1", "true", "yes")
 REPORT_PATH = os.environ.get("CEDIS_VALIDATE_REPORT")
-PROJECT_STATUSES = {"ongoing", "closed"}
+PROJECT_STATUSES = {"active", "ongoing", "closed"}
 PRODUCT_STATUSES = {"active", "prototype", "archived", "beta"}
 EXCLUDED_PROJECT_IDS = {
     # Projetos externos ou institucionais de terceiros em que integrantes do
@@ -168,6 +159,14 @@ def as_list(value: object) -> list:
     return [value]
 
 
+def validate_language_id(fm: dict, location: str) -> None:
+    lang = fm.get("language")
+    if lang is None:
+        return
+    if lang not in {"pt", "en"}:
+        warn("language", location, f"language inválido: '{lang}' (use 'pt' ou 'en'; 'pt' representa pt-BR)")
+
+
 def page_id(path: Path, fm: dict) -> str:
     if fm.get("id"):
         return str(fm["id"]).strip()
@@ -223,11 +222,6 @@ def parse_frontmatter(md_path: Path) -> dict | None:
     return fm if isinstance(fm, dict) else None
 
 
-def collect_advisor_ids(advisors_data: dict) -> set[str]:
-    entries = advisors_data.get("advisors", {}) if isinstance(advisors_data, dict) else {}
-    return set(entries.keys())
-
-
 def collect_area_ids(areas_data: dict) -> set[str]:
     areas = areas_data.get("areas", []) if isinstance(areas_data, dict) else []
     return {a["id"] for a in areas if isinstance(a, dict) and "id" in a}
@@ -238,20 +232,7 @@ def collect_data_project_ids(projects_data: dict) -> set[str]:
     return {p["id"] for p in projects if isinstance(p, dict) and "id" in p}
 
 
-def validate_advisors(advisors_data: dict) -> None:
-    schema = load_schema("advisor")
-    entries = advisors_data.get("advisors", {})
-    if not isinstance(entries, dict):
-        error("advisors", "data/advisors.yaml", "'advisors' deve ser um mapa")
-        return
-    for adv_id, adv in entries.items():
-        location = f"data/advisors.yaml::{adv_id}"
-        if not re.match(r"^[a-z0-9_]+$", adv_id):
-            warn("advisors", location, f"id fora do padrão snake_case: '{adv_id}'")
-        validate_against_schema(adv, schema, location)
-
-
-def validate_areas(areas_data: dict, advisor_ids: set[str]) -> None:
+def validate_areas(areas_data: dict, person_ids: set[str]) -> None:
     schema = load_schema("area")
     areas = areas_data.get("areas", [])
     seen: set[str] = set()
@@ -265,8 +246,8 @@ def validate_areas(areas_data: dict, advisor_ids: set[str]) -> None:
         seen.add(aid)
         validate_against_schema(area, schema, location)
         for researcher_id in area.get("researchers", []) or []:
-            if researcher_id not in advisor_ids and researcher_id not in TRANSITIONAL_EXCEPTIONS["advisor_alias"]:
-                warn("xref", location, f"researcher '{researcher_id}' não existe em advisors.yaml")
+            if researcher_id not in person_ids:
+                warn("xref", location, f"researcher '{researcher_id}' não existe em content/people nem data/people.yaml")
 
 
 def validate_people(people_data: dict, advisor_ids: set[str]) -> None:
@@ -275,17 +256,37 @@ def validate_people(people_data: dict, advisor_ids: set[str]) -> None:
     if not isinstance(people, list):
         error("people", "data/people.yaml", "'people' deve ser lista")
         return
+    seen_slugs: set[str] = set()
     for i, person in enumerate(people):
         if not isinstance(person, dict):
             continue
         location = f"data/people.yaml::[{i}] {person.get('name', '?')}"
         validate_against_schema(person, schema, location)
-        for adv_id in person.get("advisors", []) or []:
-            if adv_id not in advisor_ids and adv_id not in TRANSITIONAL_EXCEPTIONS["advisor_alias"]:
-                warn("xref", location, f"advisor '{adv_id}' não existe em advisors.yaml")
+        slug = person.get("slug")
+        if not isinstance(slug, str) or not slug.strip():
+            error("people", location, "campo obrigatório ausente: 'slug'")
+        elif not re.match(r"^[a-z0-9_]+$", slug):
+            error("people", location, f"slug fora do padrão snake_case: '{slug}'")
+        elif slug in seen_slugs:
+            error("people", location, f"slug duplicado em data/people.yaml: '{slug}'")
+        else:
+            seen_slugs.add(slug)
+
+        supervision_units = person.get("supervisions")
+        if isinstance(supervision_units, list) and supervision_units:
+            units = supervision_units
+        else:
+            units = [person]
+        for unit_idx, unit in enumerate(units):
+            if not isinstance(unit, dict):
+                continue
+            unit_location = location if unit is person else f"{location}.supervisions[{unit_idx}]"
+            for adv_id in unit.get("advisors", []) or []:
+                if adv_id not in advisor_ids:
+                    warn("xref", unit_location, f"advisor '{adv_id}' não existe como researcher/advisor_only em content/people")
 
 
-def validate_productions(prod_data: dict, advisor_ids: set[str]) -> None:
+def validate_productions(prod_data: dict, advisor_ids: set[str], person_ids: set[str]) -> None:
     schema = load_schema("publication")
     items = prod_data.get("items", [])
     if not isinstance(items, list):
@@ -299,8 +300,11 @@ def validate_productions(prod_data: dict, advisor_ids: set[str]) -> None:
         location = f"data/productions.yaml::[{i}] {title_short}"
         validate_against_schema(item, schema, location)
         for adv_id in item.get("advisors", []) or []:
-            if adv_id not in advisor_ids and adv_id not in TRANSITIONAL_EXCEPTIONS["advisor_alias"]:
-                warn("xref", location, f"advisor '{adv_id}' não existe em advisors.yaml")
+            if adv_id not in advisor_ids:
+                warn("xref", location, f"advisor '{adv_id}' não existe como researcher/advisor_only em content/people")
+        for person_id in item.get("people", []) or []:
+            if person_id not in person_ids:
+                warn("xref", location, f"people '{person_id}' não existe em content/people nem data/people.yaml")
 
 
 def validate_data_projects(projects_data: dict, person_ids: set[str]) -> None:
@@ -323,11 +327,11 @@ def validate_data_projects(projects_data: dict, person_ids: set[str]) -> None:
         if status and status not in PROJECT_STATUSES and status != "active":
             warn("enum", location, f"status legado inválido: '{status}'")
         for researcher_id in project.get("researchers", []) or []:
-            if researcher_id not in person_ids and researcher_id not in TRANSITIONAL_EXCEPTIONS["advisor_alias"]:
-                warn("xref", location, f"researcher '{researcher_id}' não existe em advisors.yaml nem content/people")
+            if researcher_id not in person_ids:
+                warn("xref", location, f"researcher '{researcher_id}' não existe em content/people nem data/people.yaml")
 
 
-def validate_content_section(section: str, schema_name: str, advisor_ids: set[str], area_ids: set[str]) -> list[tuple[Path, dict]]:
+def validate_content_section(section: str, schema_name: str) -> list[tuple[Path, dict]]:
     """Valida todos os .md em content/<section>/. Retorna lista de (path, frontmatter)."""
     schema = load_schema(schema_name)
     section_dir = CONTENT_DIR / section
@@ -341,13 +345,8 @@ def validate_content_section(section: str, schema_name: str, advisor_ids: set[st
         if fm is None:
             continue
         rel = md_path.relative_to(ROOT).as_posix()
+        validate_language_id(fm, rel)
         validate_against_schema(fm, schema, rel)
-        # Referências transversais em categories/tags
-        for cat in fm.get("categories", []) or []:
-            if cat in advisor_ids or cat in TRANSITIONAL_EXCEPTIONS["advisor_alias"]:
-                continue
-            # Categorias "estruturais" (people, project, product, knowledge_areas, researcher etc.)
-            # não são pesquisadores/áreas, então não geram warning aqui.
         for tag in fm.get("tags", []) or []:
             if not isinstance(tag, str):
                 warn("tags", rel, f"tag não-string: {tag!r}")
@@ -379,6 +378,29 @@ def collect_people_page_ids() -> set[str]:
     return ids
 
 
+def collect_data_people_slugs(people_data: dict) -> set[str]:
+    people = people_data.get("people", []) if isinstance(people_data, dict) else []
+    return {
+        str(person["slug"]).strip()
+        for person in people
+        if isinstance(person, dict) and isinstance(person.get("slug"), str) and person.get("slug").strip()
+    }
+
+
+def collect_advisor_page_ids() -> set[str]:
+    ids: set[str] = set()
+    people_dir = CONTENT_DIR / "people"
+    if not people_dir.exists():
+        return ids
+    for md_path in people_dir.rglob("*.md"):
+        fm = parse_frontmatter(md_path) or {}
+        profile_level = fm.get("profile_level")
+        categories = set(as_list(fm.get("categories")))
+        if profile_level in {"researcher", "advisor_only"} or "researcher" in categories:
+            ids.add(page_id(md_path, fm))
+    return ids
+
+
 def validate_project_pages(
     project_entries: list[tuple[Path, dict]],
     person_ids: set[str],
@@ -404,8 +426,8 @@ def validate_project_pages(
         if start_date and end_date and start_date > end_date:
             error("date", rel, "start_date é posterior a end_date")
         for researcher_id in as_list(fm.get("researchers")):
-            if researcher_id not in person_ids and researcher_id not in TRANSITIONAL_EXCEPTIONS["advisor_alias"]:
-                warn("xref", rel, f"researcher '{researcher_id}' não existe em advisors.yaml nem content/people")
+            if researcher_id not in person_ids:
+                warn("xref", rel, f"researcher '{researcher_id}' não existe em content/people nem data/people.yaml")
         for area_id in as_list(fm.get("areas")):
             if area_id not in area_ids:
                 warn("xref", rel, f"area '{area_id}' não existe em areas.yaml")
@@ -420,7 +442,7 @@ def validate_project_pages(
 
 def validate_product_pages(
     product_entries: list[tuple[Path, dict]],
-    advisor_ids: set[str],
+    person_ids: set[str],
     area_ids: set[str],
     project_ids: set[str],
 ) -> None:
@@ -441,8 +463,8 @@ def validate_product_pages(
         if project_id and project_id not in project_ids:
             warn("xref", rel, f"project '{project_id}' não existe em content/projects")
         for researcher_id in as_list(fm.get("responsible")):
-            if researcher_id not in advisor_ids and researcher_id not in TRANSITIONAL_EXCEPTIONS["advisor_alias"]:
-                warn("xref", rel, f"responsible '{researcher_id}' não existe em advisors.yaml")
+            if researcher_id not in person_ids:
+                warn("xref", rel, f"responsible '{researcher_id}' não existe em content/people nem data/people.yaml")
         for area_id in as_list(fm.get("areas")):
             if area_id not in area_ids:
                 warn("xref", rel, f"area '{area_id}' não existe em areas.yaml")
@@ -475,8 +497,8 @@ def validate_opportunity_pages(
         if project_id and project_id not in project_ids:
             warn("xref", rel, f"project '{project_id}' não existe em content/projects")
         for responsible_id in as_list(fm.get("responsible")):
-            if responsible_id not in person_ids and responsible_id not in TRANSITIONAL_EXCEPTIONS["advisor_alias"]:
-                warn("xref", rel, f"responsible '{responsible_id}' não existe em advisors.yaml nem content/people")
+            if responsible_id not in person_ids:
+                warn("xref", rel, f"responsible '{responsible_id}' não existe em content/people nem data/people.yaml")
     for oid, langs in by_key.items():
         if langs != {"pt", "en"}:
             warn("i18n", f"content/opportunities::{oid}", f"par de idioma incompleto: {sorted(langs)}")
@@ -576,21 +598,19 @@ def write_report() -> None:
 
 
 def main() -> int:
-    advisors_data = load_yaml(DATA_DIR / "advisors.yaml") or {}
     areas_data = load_yaml(DATA_DIR / "areas.yaml") or {}
     people_data = load_yaml(DATA_DIR / "people.yaml") or {}
     prod_data = load_yaml(DATA_DIR / "productions.yaml") or {}
     projects_data = load_yaml(DATA_DIR / "projects.yaml") or {}
 
-    advisor_ids = collect_advisor_ids(advisors_data)
     area_ids = collect_area_ids(areas_data)
     data_project_ids = collect_data_project_ids(projects_data)
-    person_ids = advisor_ids | collect_people_page_ids()
+    person_ids = collect_people_page_ids() | collect_data_people_slugs(people_data)
+    advisor_ids = collect_advisor_page_ids()
 
-    validate_advisors(advisors_data)
-    validate_areas(areas_data, advisor_ids)
+    validate_areas(areas_data, person_ids)
     validate_people(people_data, advisor_ids)
-    validate_productions(prod_data, advisor_ids)
+    validate_productions(prod_data, advisor_ids, person_ids)
     validate_data_projects(projects_data, person_ids)
 
     all_fms: list[tuple[Path, dict]] = []
@@ -600,7 +620,7 @@ def main() -> int:
         ("projects", "project"),
         ("products", "product"),
     ):
-        entries = validate_content_section(section, schema_name, advisor_ids, area_ids)
+        entries = validate_content_section(section, schema_name)
         all_fms.extend(entries)
         if section == "projects":
             project_entries = entries
@@ -610,10 +630,10 @@ def main() -> int:
     project_ids = data_project_ids | collect_content_ids(project_entries, data_project_ids)
     product_ids = collect_content_ids(product_entries)
     validate_project_pages(project_entries, person_ids, area_ids, project_ids, product_ids)
-    validate_product_pages(product_entries, advisor_ids, area_ids, project_ids)
+    validate_product_pages(product_entries, person_ids, area_ids, project_ids)
     all_fms.extend(validate_generated_publication_pages())
 
-    opportunity_entries = validate_content_section("opportunities", "opportunity", advisor_ids, area_ids)
+    opportunity_entries = validate_content_section("opportunities", "opportunity")
     all_fms.extend(opportunity_entries)
     validate_opportunity_pages(opportunity_entries, person_ids, project_ids)
 
@@ -625,15 +645,19 @@ def main() -> int:
     ):
         if path.exists():
             all_fms.extend(validate_structural_page(path, schema_name))
-    # Pessoas e áreas: valida frontmatter contra schema mínimo (reusa project schema
-    # como fallback permissivo — só checa presença de title/date/language).
+    # Pessoas e áreas: valida frontmatter contra schema mínimo. Perfis derivados
+    # e orientadores externos são stubs técnicos; não têm data editorial própria.
     for section in ("people", "areas"):
         for md_path in sorted((CONTENT_DIR / section).rglob("*.md")):
             fm = parse_frontmatter(md_path)
             if fm is None:
                 continue
             rel = md_path.relative_to(ROOT).as_posix()
-            for req in ("title", "date", "language"):
+            validate_language_id(fm, rel)
+            required = ["title", "language"]
+            if section != "people" or fm.get("profile_level") not in {"derived", "advisor_only"}:
+                required.append("date")
+            for req in required:
                 if req not in fm:
                     warn("schema", rel, f"campo obrigatório ausente: '{req}'")
             for tag in fm.get("tags", []) or []:

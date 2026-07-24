@@ -7,18 +7,24 @@ weight: 20
 language: en
 featured_image: "../assets/images/featured/people_George Marsicano.png"
 summary: Associate Professor at the University of Brasília (UnB), working in the Software Engineering undergraduate program and the Graduate Program in Applied Computing with a focus on requirements, human aspects, and software engineering education.
+contact:
+  email: georgemarsicano@unb.br
+  lattes: https://lattes.cnpq.br/2317804591146328
+  orcid: https://orcid.org/0000-0001-9212-9124
+areas:
+- active_learning
+- digital_transformation
+- education
+- gamification
+- soft_skills
+- social_software
+- software_requirements
+- teamwork
 authorimage: ../assets/images/global/author.webp
 categories:
 - people
 - researcher
-- george_marsicano
 tags:
-- software_requirements
-- social_software
-- digital_transformation
-- gamification
-- active_learning
-- soft_skills
 - security
 - project_software_bem
 - project_super_r

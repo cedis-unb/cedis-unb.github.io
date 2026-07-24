@@ -31,14 +31,6 @@
 {{ $openProjectLabel := cond $isPortuguese "Abrir" "Open" }}
 {{ $projectID := .Params.id | default "" }}
 
-{{ $projectPagesByID := dict }}
-{{ range .Site.RegularPages }}
-  {{ if and (eq .Section "projects") (eq .Lang $.Site.Language.Lang) }}
-    {{ $id := .Params.id | default .File.TranslationBaseName }}
-    {{ $projectPagesByID = merge $projectPagesByID (dict $id .) }}
-  {{ end }}
-{{ end }}
-
 {{ $personPagesByID := dict }}
 {{ range .Site.RegularPages }}
   {{ if and (eq .Section "people") (eq .Lang $.Site.Language.Lang) }}
@@ -47,17 +39,12 @@
   {{ end }}
 {{ end }}
 
-{{ $projectsByID := dict }}
-{{ range hugo.Data.projects.projects }}
-  {{ $projectsByID = merge $projectsByID (dict .id .) }}
-{{ end }}
+{{ $projectIndex := partialCached "project-index" "global" site.Language.Lang }}
+{{ $projectList := partialCached "project-list" "global" site.Language.Lang }}
 
-{{ $projectData := dict }}
-{{ with index $projectsByID $projectID }}
-  {{ $projectData = . }}
-{{ end }}
-{{ if eq (len $projectData) 0 }}
-  {{ range hugo.Data.projects.projects }}
+{{ $projectData := partial "project-lookup" $projectID }}
+{{ if not $projectData.found }}
+  {{ range $projectList }}
     {{ if or (in $.Params.categories .id) (in $.Params.tags .id) }}
       {{ $projectData = . }}
     {{ end }}
@@ -66,34 +53,30 @@
 
 {{ $projectKind := "project" }}
 {{ $umbrellaIDs := slice }}
-{{ with $projectData }}
-  {{ $projectKind = .project_type | default "project" }}
-  {{ with .umbrella_projects }}{{ $umbrellaIDs = . }}{{ end }}
+{{ if $projectData.found }}
+  {{ $projectKind = $projectData.project_type | default "project" }}
+  {{ with $projectData.umbrella_projects }}{{ $umbrellaIDs = . }}{{ end }}
 {{ end }}
 
 {{ $umbrellaItems := slice }}
 {{ range $umbrellaIDs }}
-  {{ $umbrellaData := index $projectsByID . }}
+  {{ $umbrellaData := index $projectIndex . }}
   {{ if $umbrellaData }}
-    {{ $umbrellaName := index $umbrellaData.name $.Site.Language.Lang }}
-    {{ if not $umbrellaName }}{{ $umbrellaName = index $umbrellaData.name "en" }}{{ end }}
-    {{ $umbrellaItems = $umbrellaItems | append (dict "id" . "name" $umbrellaName "page" (index $projectPagesByID .)) }}
+    {{ $umbrellaItems = $umbrellaItems | append (dict "id" . "name" $umbrellaData.name "page" $umbrellaData.page) }}
   {{ end }}
 {{ end }}
 
 {{ $childProjectItems := slice }}
 {{ if eq $projectKind "umbrella" }}
-  {{ range hugo.Data.projects.projects }}
+  {{ range $projectList }}
     {{ if and (ne .id $projectID) (in (.umbrella_projects | default slice) $projectID) }}
-      {{ $childName := index .name $.Site.Language.Lang }}
-      {{ if not $childName }}{{ $childName = index .name "en" }}{{ end }}
-      {{ $childProjectItems = $childProjectItems | append (dict "id" .id "name" $childName "type" (.project_type | default "project") "page" (index $projectPagesByID .id)) }}
+      {{ $childProjectItems = $childProjectItems | append (dict "id" .id "name" .name "type" (.project_type | default "project") "page" .page) }}
     {{ end }}
   {{ end }}
 {{ end }}
 
 {{ $siblingProjectItems := slice }}
-{{ range hugo.Data.projects.projects }}
+{{ range $projectList }}
   {{ $candidate := . }}
   {{ if and (ne $candidate.id $projectID) ($candidate.umbrella_projects) }}
     {{ $matchesFront := false }}
@@ -101,9 +84,7 @@
       {{ if in $candidate.umbrella_projects . }}{{ $matchesFront = true }}{{ end }}
     {{ end }}
     {{ if $matchesFront }}
-      {{ $siblingName := index $candidate.name $.Site.Language.Lang }}
-      {{ if not $siblingName }}{{ $siblingName = index $candidate.name "en" }}{{ end }}
-      {{ $siblingProjectItems = $siblingProjectItems | append (dict "id" $candidate.id "name" $siblingName "type" ($candidate.project_type | default "project") "page" (index $projectPagesByID $candidate.id)) }}
+      {{ $siblingProjectItems = $siblingProjectItems | append (dict "id" $candidate.id "name" $candidate.name "type" ($candidate.project_type | default "project") "page" $candidate.page) }}
     {{ end }}
   {{ end }}
 {{ end }}
@@ -127,11 +108,11 @@
 {{ end }}
 
 {{ $memberIDs := slice }}
-{{ with $projectData }}
-  {{ with .researchers }}
+{{ if $projectData.found }}
+  {{ with $projectData.researchers }}
     {{ $memberIDs = . }}
   {{ end }}
-  {{ with .students }}
+  {{ with $projectData.students }}
     {{ range . }}
       {{ if not (in $memberIDs .) }}
         {{ $memberIDs = $memberIDs | append . }}
@@ -188,7 +169,8 @@
 {{ $scopePublicationIDs := slice }}
 {{ if eq $projectKind "umbrella" }}
   {{ range $scopeProjectIDs }}
-    {{ with index $projectPagesByID . }}
+    {{ $scopedProject := index $projectIndex . }}
+    {{ with $scopedProject.page }}
       {{ range (.Params.products | default slice) }}
         {{ if not (in $scopeProductIDs .) }}{{ $scopeProductIDs = $scopeProductIDs | append . }}{{ end }}
       {{ end }}
@@ -228,7 +210,7 @@
 {{ $extendedPeopleByKey := dict }}
 {{ if eq $projectKind "umbrella" }}
   {{ range $childProjectItems }}
-    {{ with index $projectsByID .id }}
+    {{ with index $projectIndex .id }}
       {{ range (.researchers | default slice) }}
         {{ $personID := . }}
         {{ $personKey := $personID | anchorize }}
@@ -387,7 +369,8 @@
       {{ if or (in $scopeProjectIDs .) (in $scopeProductIDs .) }}{{ $productionMatchesScope = true }}{{ end }}
     {{ end }}
     {{ if $productionMatchesScope }}
-      {{ range union (.tags | default slice) (.categories | default slice) }}
+      {{/* Gap #10: pessoa pode estar em .people (canônico), .tags (legado), .categories (legado) */}}
+      {{ range union (union (.tags | default slice) (.categories | default slice)) (.people | default slice) }}
         {{ $personID := . }}
         {{ with index $personPagesByID $personID }}
           {{ $personKey := .Title | anchorize }}

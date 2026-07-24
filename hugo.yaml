@@ -10,10 +10,11 @@ languages:
   pt:
   # PORTUGUÊS
     label: "Português"
-    locale: "pt"
+    locale: "pt-BR"
     title: CEDIS
     weight: 1
     params:
+      data_lang: pt
       color: blue
       moto: "Bem vindo(a)!"  
       description: "Descubra o futuro da Engenharia de Software, da Aprendizagem e da Inteligência Artificial. \n Desde 2013, o Centro de Estudos, Desenvolvimento e Inovação em Software tem liderado projetos inovadores de pesquisa, desenvolvimento e educação."
@@ -262,9 +263,9 @@ languages:
           name: Contato
           url: /contact/
           weight: 10
-        - identifier: fi-imprensa
-          name: Imprensa
-          url: /imprensa/
+        - identifier: fi-divulgacao
+          name: "Divulgação científica"
+          url: /divulgacao-cientifica/
           weight: 20
         - identifier: fi-privacidade
           name: Privacidade
@@ -279,9 +280,11 @@ languages:
   # ENGLISH
     #baseURL: '/en/'
     label: "English"
+    locale: "en"
     title: CEDIS
     weight: 2
     params:
+      data_lang: en
       color: blue
       moto: "Welcome!"
       description: "Discover the future of Software Engineering, Learning, and Artificial Intelligence. Since 2013, the Center for Studies, Development, and Innovation in Software has led innovative projects in research, development, and education."
@@ -529,9 +532,9 @@ languages:
           name: Contact
           url: /contact/
           weight: 10
-        - identifier: fi-press
-          name: Press
-          url: /imprensa/
+        - identifier: fi-outreach
+          name: "Research outreach"
+          url: /research-outreach/
           weight: 20
         - identifier: fi-privacy
           name: Privacy

@@ -21,7 +21,7 @@ Accessibility remains, for many development teams, an uncomfortable conversation
 
 The work begins with the observation that WCAG and good practices are widely known — yet frequently applied with uneven outcomes, because the distance between "we are following the guide" and "the user completes the task" is wide. The author proposes a set of measurable metrics that capture that gap, allowing pages to be compared, regressions to be identified, and improvements to be demanded on numeric grounds rather than impression.
 
-By tying {{< link-interno "/areas/software_quality/" "software quality" >}} to concrete accessibility concerns, the thesis produces practical input for audits — an activity in clear expansion as legislation and civil society press the sector for better responses.
+By tying {{< link-interno "/areas/software_quality/" "software quality" >}} to concrete accessibility concerns, the thesis produces practical input for audits — an activity in clear expansion as legislation and civil society push the sector for better responses.
 
 The full text — written in Portuguese — is available at the [UnB Undergraduate Theses Digital Library](https://bdm.unb.br/handle/10483/39358).
 

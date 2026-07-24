@@ -82,7 +82,7 @@ Após o ciclo de correções técnicas de 2026-07, o site do CEDIS está com bas
 - [x] **B4** — Números de impacto visíveis na home: "311 publicações • 8 produtos registrados • 12 anos de história". Contadores animados, atualizados via `data/`.
   > Nota (2026-07-17): seção "CEDIS em números" ativa em `layouts/index.html:126-183` com 5 cards (anos, pesquisadores, publicações, produtos, orientações) atualizados via `hugo.Data.productions.items`, `hugo.Data.people.people` e contagem de páginas. Contadores estáticos (não animados) — animação pode ser upgrade futuro.
 
-- [ ] **B5** — Página de "clipping" com menções na imprensa, entrevistas, participações em eventos.
+- [ ] **B5** — Página de menções públicas, entrevistas acadêmicas, participação em eventos e circulação institucional.
   <!-- > Nota: -->
 
 
@@ -109,7 +109,7 @@ Após o ciclo de correções técnicas de 2026-07, o site do CEDIS está com bas
 > Ativa personas: 1, 2
 
 - [x] **D1** — Mapa visual das áreas de atuação — grafo ou mapa em D3.js ligando áreas, pesquisadores e projetos. Alto engagement.
-  > Nota (2026-07-17): página nova `/mapa/` (PT) e `/map/` (EN) com grafo force-directed em D3.js v7 (CDN). Nodes coloridos por tipo (áreas azul, pesquisadores vermelho, projetos verde), com drag + zoom + click-para-abrir. Filtro Alpine.js por tipo. Sidebar mostra contagem e detalhes do nó selecionado. Dados JSON gerados a partir de `data/areas.yaml`, `data/advisors.yaml`, `data/projects.yaml`. Adicionado no menu About/CEDIS entre "História" e "Oportunidades".
+  > Nota (2026-07-17; atualizado em 2026-07-24): página nova `/mapa/` (PT) e `/map/` (EN) com grafo force-directed em D3.js v7 (CDN). Nodes coloridos por tipo (áreas azul, pesquisadores vermelho, projetos verde), com drag + zoom + click-para-abrir. Filtro Alpine.js por tipo. Sidebar mostra contagem e detalhes do nó selecionado. Dados JSON gerados a partir de `area-list`, `content/people/*.md`/`people-index` e `project-list`. Adicionado no menu About/CEDIS entre "História" e "Oportunidades".
 
 - [x] **D2** — Timeline interativa da história — anos como pontos clicáveis, cada um expandindo em conquistas do ano. Substituir Markdown atual.
   > Nota (2026-07-17): `layouts/_default/history.html` reescrito com Alpine.js. Botões de ano pinçam/focam o card correspondente e aplicam scroll suave. Cada card colapsa/expande independente (por padrão só o mais recente aberto). Botões "Expandir tudo" / "Recolher tudo". Marcador do dot muda de intensidade quando o card está aberto. i18n `ui_timeline_*` novos.
@@ -130,14 +130,14 @@ Após o ciclo de correções técnicas de 2026-07, o site do CEDIS está com bas
 - [x] **E1** — CTA final em cada perfil de pesquisador — bloco padronizado no fim: "Interesse em orientação? [Ver processo] [Enviar email]".
   > Nota (2026-07-17): bloco CTA "Interessado(a) em orientação ou colaboração?" adicionado ao fim de `layouts/people/single.html` (só quando `$isResearcher`). Três botões: Ver oportunidades (`/oportunidades/`), Enviar email (mailto com subject preenchido), Falar com o CEDIS (`/contact/`). i18n `people_cta_*` novos em pt/en.
 
-- [ ] **E2** — Formulário de contato multi-caminho — escolher tipo (orientação, parceria, imprensa, extensão), formulário adapta campos e destinatário.
+- [ ] **E2** — Formulário de contato multi-caminho — escolher tipo (orientação, parceria, divulgação científica, extensão), formulário adapta campos e destinatário.
   <!-- > Nota: -->
 
 - [x] **E3** — Página `/junte-se/` (Join us) — landing para todas as portas de entrada (IC, TCC, Mestrado, Doutorado, Extensão, Voluntário). Cada rota com passos claros e datas.
   > Nota (2026-07-17): página `/junte-se/` (PT) e `/join/` (EN) com layout `join.html`. 6 trilhas (IC, TCC-ES, Mestrado PPCA, Doutorado PPCA, Extensão, Voluntário CEDIS), cada uma com audience, duration, 3-4 steps numerados e CTAs primário/secundário. Card "Não sabe por onde começar" no rodapé chama /contact/. i18n `ui_join_*` completo. Adicionada ao menu People/Equipe entre Colaboradores e Alumni.
 
 - [x] **E4** — Botões "Copiar email" e "Ver Lattes" nos perfis, além do link visual.
-  > Nota (2026-07-17): card "Contato" no sidebar do perfil (`layouts/people/single.html`) exibe email + botão Copiar (Alpine.js `navigator.clipboard`), link Lattes e link ORCID. Dados vêm de `hugo.Data.advisors.advisors[$personKey]`. Cada item condicional — Fabiana só aparece Lattes; Cristiane não aparece nada porque campos vazios.
+  > Nota (2026-07-17): card "Contato" no sidebar do perfil (`layouts/people/single.html`) exibe email + botão Copiar (Alpine.js `navigator.clipboard`), link Lattes e link ORCID. Desde 2026-07-24 os dados vêm de `partial "people-lookup"` lendo o frontmatter em `content/people/*.md`; `data/advisors.yaml` foi removido.
 
 - [ ] **E5** — Cronograma anual visível — próximas datas: PPCA, eventos, palestras. Formato compacto na home.
   <!-- > Nota: -->
@@ -257,6 +257,7 @@ Evitar:
 | 2026-07-17 | Sergio Freitas + assistente | Eixo D em massa: D5 (filtro Alpine.js em /publications/), D2 (timeline interativa com colapso por ano), D4 (nuvem "Temas em alta" na home, top 20 tags dos últimos 4 anos), D1 (grafo D3.js em nova página /mapa/ conectando áreas ↔ pesquisadores ↔ projetos, com drag/zoom/filter/sidebar). Menu de navegação ganha "Mapa de conhecimento" sob About/CEDIS. |
 | 2026-07-17 | Sergio Freitas + assistente | Sprint 2 concluído: E3 (`/junte-se/` com 6 trilhas), B1 (parceiros com histórias — 6 parceiros com outcomes concretos e correção do texto genérico anterior), B3 (`/reconhecimentos/` com 4 marcos e schema expansível), A4 (`/alumni/` com layout pronto e estado vazio + CTA "Quero aparecer"). Menu ganha Junte-se e Alumni em People/Equipe e Parceiros/Reconhecimentos em About/CEDIS. |
 | 2026-07-17 | Sergio Freitas + assistente | Reorganização do menu About (Opção A após análise): reduzido de 8 para 4 itens (Áreas, História, Parceiros e reconhecimentos, Infra). Oportunidades promovido a top-level (`Saiba mais > Pessoas > Projetos > Oportunidades > Produções`). Reconhecimentos consolidado como seção final da página de Parceiros (schema `awards:` unificado em `content/parceiros.pt.md`), com alias `/reconhecimentos/ → /parceiros/`. Intranet movido para o rodapé. Mapa saiu do menu e ganhou banner CTA em `/categories/knowledge_areas/`. Arquivos `content/reconhecimentos.*.md` e `layouts/_default/awards.html` deletados. |
+| 2026-07-24 | Sergio Freitas + assistente | Refactor do modelo de dados: `data/advisors.yaml` removido; contato/áreas de docentes vivem no frontmatter de `content/people/*.md`; `people-index`/`people-lookup` viram fonte unificada para pessoas; `translated-label.html` resolve labels via i18n → projetos → áreas → pessoas → humanize; publicações passam a usar `people[]` para slugs de pessoas e `tags[]` para temas/projetos. |
 
 <!-- Modelo de nova entrada:
 | YYYY-MM-DD | Nome | Descrição breve da mudança |

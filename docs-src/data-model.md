@@ -1,137 +1,251 @@
 # Modelo de dados do site CEDIS
 
-Documento de referência para a issue **I02** do [`PLANO-AUDITORIA-2026.md`](../PLANO-AUDITORIA-2026.md).
-Formaliza as entidades, seus campos obrigatórios, IDs estáveis e enumerações. Serve de base para os JSON Schemas em `schemas/` e para o validador em `scripts/validate_content.py`.
+Documento de referência para o modelo de "banco de dados" do portal.
+Última revisão: 2026-07-24 (após conclusão dos Gaps #1, #2 e correções Gap #10).
+
+Formaliza as entidades, seus campos obrigatórios, IDs estáveis e enumerações.
+Serve de base para os JSON Schemas em `schemas/` e para o validador em
+`scripts/validate_content.py`.
 
 ## Princípios
 
-1. **Cada entidade tem um `id` estável.** O `id` é o *slug* usado em URLs, tags e relações. Deve ser `snake_case`, ASCII, sem acentos.
-2. **Relações usam `id`, nunca nomes por extenso.** Um projeto que envolve o Prof. Sergio Freitas registra `researchers: [sergio_freitas]`, não `researchers: ["Sergio Antônio Andrade de Freitas"]`.
-3. **Relações inversas não são registradas à mão.** Se o projeto declara seus pesquisadores, o perfil de cada pesquisador deriva a lista de projetos automaticamente. Templates fazem `where site.RegularPages "Params.researchers" "intersect" (slice $id)`.
-4. **Pares PT/EN existem por `translationKey` ou por convenção de nome de arquivo.** No caso do CEDIS a maioria usa o segundo padrão (`foo.pt.md` + `foo.en.md`); páginas institucionais críticas ganham `translationKey` explícito para o validador confirmar a paridade.
-5. **Enumerações são fechadas.** Status de projeto ∈ {`ongoing`, `closed`}. Tipo de publicação ∈ {`article`, `book`, `book chapter`, `book_section`, `conference`, `dissertation`, `phd`, `registro`, `specialization`, `tcc`, `workshop`}. Idioma ∈ {`pt`, `en`}.
+1. **Cada entidade tem um `id` (ou `slug`) estável.** Usado em URLs, tags e
+   relações. Deve ser `snake_case`, ASCII, sem acentos.
+2. **Relações usam `id`/`slug`, nunca nomes por extenso.** Um projeto que
+   envolve o Prof. Sergio Freitas registra `researchers: [sergio_freitas]`,
+   não `researchers: ["Sergio Antônio Andrade de Freitas"]`.
+3. **Relações inversas não são registradas à mão.** Se o projeto declara
+   seus pesquisadores, o perfil de cada pesquisador deriva a lista de
+   projetos automaticamente via `people-index` e `where site.RegularPages`.
+4. **Pares PT/EN existem por `translationKey` ou por convenção de nome de
+   arquivo.** No CEDIS a maioria usa `foo.pt.md` + `foo.en.md`; páginas
+   institucionais críticas ganham `translationKey` explícito.
+5. **Idiomas usam IDs internos estáveis.** O português do site é
+   português do Brasil (`locale: pt-BR` em `hugo.yaml`), mas o ID interno
+   do Hugo e dos arquivos é `pt` (`*.pt.md`, `language: pt`). Não usar
+   `pt-br` como sufixo ou frontmatter.
+6. **Enumerações são fechadas.** Status de projeto ∈ {`active`, `ongoing`,
+   `closed`}. Tipo de publicação ∈ {`article`, `book`, `book_chapter`,
+   `book_section`, `conference`, `dissertation`, `phd`, `registro`,
+   `specialization`, `tcc`, `workshop`}. Idioma ∈ {`pt`, `en`}.
+   `profile_level` ∈ {`researcher`, `card_with_page`, `card`, `advisor_only`,
+   `derived`}.
 
-## Fontes canônicas (recapitulação)
+## Fontes canônicas (estado atual após refactor de julho/2026)
 
-| Arquivo | Papel |
-|---|---|
-| `data/advisors.yaml` | Pesquisadores docentes do CEDIS, indexados por `id`. Fonte de nome, contato, ORCID, áreas primárias. |
-| `data/areas.yaml` | Lista fechada de áreas de atuação. Cada área tem `id`, `name.{pt,en}` e lista de `researchers` por ID. |
-| `data/people.yaml` | Orientandos ativos, alumni e não-docentes. Vinculados a orientadores via `advisors: [id]`. |
-| `data/projects.yaml` | Metadados agregados de projetos (fonte a longo prazo passa a ser `content/projects/*.md` conforme I03). |
-| `data/productions.yaml` | Produção científica. Referências a autores/orientadores por ID em `tags` e `advisors`. |
+| Arquivo | Papel | Notas |
+|---|---|---|
+| `data/areas.yaml` | Áreas de atuação com `id`, `name.{pt,en}`, `researchers`. | Consumido via `area-index`/`area-list`/`area-lookup`. |
+| `data/projects.yaml` | Projetos com `id`, `name.{pt,en}`, `researchers`, `students`, `products`, `umbrella_projects`, `status`. | Consumido via `project-index`/`project-list`/`project-lookup`. |
+| `data/people.yaml` | Orientandos/colaboradores sem página individual. Cada entrada tem `slug` (obrigatório) e opcionalmente `supervisions[]` para múltiplas orientações da mesma pessoa. | Passo 4a-b. |
+| `data/productions.yaml` | Publicações com `authors[]` (strings livres), `people[]` (slugs canônicos — Gap #10), `tags[]` (tópicos/projetos), `advisors[]`. | Passo 10 separou pessoas de tags. |
+| ~~`data/advisors.yaml`~~ | **REMOVIDO em 2026-07-24 (Gap #1).** Contato e áreas dos advisors agora ficam no frontmatter dos `.md`. | Templates leem via `partial "people-lookup"`. |
+
+## Índice unificado (partial `people-index`)
+
+Fonte lógica única para tudo relacionado a pessoas. Consumidores usam
+`partial "people-lookup" $slug` para obter dict com:
+
+```
+{
+  slug, found, name, profile_level, sources[],
+  page, page_url, link,
+  advisor (compat, sempre ""),
+  data_entry, supervisions[], supervisions_count,
+  publications[], publications_count,
+  contact{email, lattes, orcid}, areas[]
+}
+```
+
+O partial `people-index` (cached) é construído a partir de:
+1. `content/people/*.md` (fonte autoritativa)
+2. `data/people.yaml` (via `slug:` field)
+
+Publicações são pré-indexadas via `.people[]` (canônico) e `.tags[]` (legado
+retrocompatível) de productions.
 
 ## Entidades
 
-### Pesquisador (docente) — `advisors.yaml` + `content/people/{id}.md`
+### Pessoa (todas as categorias)
 
-Campos obrigatórios em `data/advisors.yaml`:
-- `name` — nome por extenso.
-- `link` — path do perfil, ex.: `/people/sergio_freitas`.
-- `areas` — lista de IDs de área (existentes em `areas.yaml`).
+Fonte: `content/people/<slug>.{pt,en}.md`.
 
-Campos opcionais recomendados:
-- `lattes`, `orcid`, `email`.
-
-Página em `content/people/{id}.{pt,en}.md` obrigatoriamente:
-- `title` — nome por extenso.
-- `categories` deve incluir `researcher` para aparecer nos agregadores.
+Frontmatter obrigatório:
+- `title` — nome canônico por extenso.
+- `profile_level` — declara o tipo. Valores:
+  - `researcher` — docente permanente CEDIS.
+  - `card_with_page` — colaborador CEDIS com bio.
+  - `advisor_only` — orientador externo (só stub minimal, layout: derived).
+  - `derived` — autor externo auto-gerado pelo `scripts/derive_people.py`.
+  - (implícito `card` se pessoa está só em `data/people.yaml`)
+- Slug da página — inferido do basename do arquivo (`<slug>.pt.md` +
+  `<slug>.en.md`). Stubs derivados podem declarar `slug:` no frontmatter,
+  mas perfis mantidos manualmente não precisam repetir esse campo.
 - `date`, `language` — padrão Hugo.
+  Exceção: `date` não é obrigatório para `profile_level: derived` ou
+  `profile_level: advisor_only`, pois esses arquivos são stubs técnicos
+  derivados de relações/produções, sem data editorial própria.
 
-### Pessoa (não-docente) — `data/people.yaml`
+Frontmatter recomendado (researcher/card_with_page):
+- `contact.email`, `contact.lattes`, `contact.orcid` (dict).
+- `areas: [<area_id>]` — deriva chips e mapeamento em `/map/`, `/quiz/`.
+- `summary` — resumo curto para SEO.
+- `categories: [people, <role>]` — role ∈ `researcher | undergraduate | ...`
+  para agregação em `/categories/`. **NÃO** incluir o próprio slug em
+  `categories` (redundante — o slug já é o nome do arquivo).
+- `tags: [<theme_ids>]` — temas de pesquisa (evitar duplicar com areas).
+
+Frontmatter obrigatório para `advisor_only`:
+- `layout: derived` — força o template minimal.
+
+Frontmatter obrigatório para `derived`:
+- `layout: derived` — força o template minimal.
+- `matched_productions: [{title, year, type}]` — pré-computado
+  pelo script.
+- `aliases_authors: [<name variations>]`.
+
+### Pessoa não-canônica — `data/people.yaml`
 
 Cada item do array:
+- `slug` — **obrigatório** (validado pelo `validate_content.py`). Se pessoa
+  também tem `.md`, `slug` bate com o basename. Se não tem, é o slug longo
+  derivado do nome.
 - `name` — obrigatório.
-- `categories` — obrigatório; deve incluir `people` + um marcador de vínculo (`phd_candidate`, `master_student`, `tcc`, `specialization`, `scientific_initiation`, `volunteer`, `monitor`).
-- `advisors` — lista de IDs (referência a `advisors.yaml`).
-- `year` — ano de referência (início ou defesa).
-- `program` — código de programa acadêmico (`curso_esw`, `curso_ppca_mestrado`, etc.).
+- `categories` — obrigatório; deve incluir `people` + um marcador
+  (`phd_candidate`, `master_student`, `tcc`, `specialization`,
+  `scientific_initiation`, `volunteer`, `monitor`).
+- `advisors` — lista de slugs (referência a pessoas com `profile_level` in
+  [`researcher`, `advisor_only`]).
+- `year` — ano de referência.
+- `program` — código de programa acadêmico.
 - `title.{pt,en}` — título do trabalho, ambos idiomas.
-- `tags` — inclui marcadores de estado (`active` ou `inactive`), IDs de área e IDs de projeto.
+- `tags` — inclui `active`/`inactive` + IDs de área/projeto.
+
+Se a pessoa tem múltiplas orientações (ex.: Mylena tem 3), usa-se
+`supervisions:` como array dentro da mesma entrada (consolidação do
+passo 4b). Nesse caso, campos `categories`, `title`, `program`, `advisors`,
+`tags`, `year` ficam DENTRO de cada item de `supervisions[]`.
 
 ### Área — `data/areas.yaml` + `content/areas/{id}.{pt,en}.md`
 
 `data/areas.yaml` cada item:
 - `id` — obrigatório (usado em tags e categorias).
-- `name.{pt,en}` — obrigatório.
-- `researchers` — lista de IDs (de `advisors.yaml`).
+- `name.{pt,en}` — obrigatório. Consumido pela cascata i18n.
+- `researchers` — lista de slugs.
 
 Página em `content/areas/{slug}.{pt,en}.md`:
 - `title`, `summary`, `featured_image` — obrigatórios.
-- `categories` inclui `knowledge_areas` + IDs dos pesquisadores responsáveis.
-- `tags` inclui o próprio `id` da área.
+- `tags` inclui o próprio `id` da área para SEO e filtragem interna.
 
-### Projeto — `content/projects/{id}.{pt,en}.md`
+### Projeto — `data/projects.yaml` + `content/projects/{id}.{pt,en}.md`
 
-Frontmatter obrigatório:
-- `title`, `date`, `language`, `summary`.
-- `id` — slug do projeto (ex.: `dfcris`).
-- `status` — `ongoing` | `closed`.
-- `researchers` — lista de IDs de pesquisadores/participantes com página no site.
-- `areas` — lista de IDs de área.
-- `partners` — lista textual ou IDs.
-- `funding_agencies` — lista textual.
-- `products` — lista de IDs de produto derivado.
-- `publications` — lista de IDs/DOI.
-- `categories` inclui `project` + IDs dos pesquisadores.
-- `tags` inclui IDs de área + marcador de estado (`active` | `inactive` | `closed`).
+Entrada em `data/projects.yaml`:
+- `id` — obrigatório.
+- `name.{pt,en}` — obrigatório. Consumido pela cascata i18n.
+- `project_type` — `project` | `umbrella` | `platform_project`.
+- `umbrella_projects: [<parent_id>]` — se este é filho de outro.
+- `status` — `active` | `ongoing` | `closed`.
+- `start_date`, `end_date` — ISO 8601.
+- `researchers`, `students` — slugs.
+- `partners`, `funding_agencies` — strings ou slugs.
+- `products` — IDs de produto.
+
+Página opcional em `content/projects/{id}.{pt,en}.md`:
+- Frontmatter mínimo (`title`, `date`).
+- Body: descrição rica.
 
 ### Produto — `content/products/{id}.{pt,en}.md`
 
 Frontmatter obrigatório:
 - `title`, `date`, `language`, `summary`.
 - `id` — slug do produto.
-- `status` — `active` | `prototype` | `archived` | `beta`.
-- `areas` — IDs de área.
-- `responsible` — IDs de pesquisadores responsáveis.
-- `publications` — IDs de publicações associadas.
-- `categories` inclui `products`.
+- `project` — ID do projeto primário.
 
 Frontmatter opcional:
-- `project` — ID do projeto de origem quando o vínculo é claro.
+- `secondary_projects: [<project_id>]` — projetos associados.
+- `status` — `active` | `prototype` | `archived` | `beta`.
+- `areas`, `responsible` — slugs.
+- `publications` — IDs de publicações associadas.
 
 ### Publicação — `data/productions.yaml`
 
-Cada item (esquema já documentado em `CONVENTIONS.md §2`):
+Cada item:
 - `type` — enum fechada.
-- `year` — inteiro ou string ISO (o script tolera as duas formas).
+- `year` — inteiro ou string ISO.
 - `title.{pt,en}` — obrigatório em ambos idiomas.
-- `authors` — lista de nomes.
-- `tags` — inclui IDs de pesquisador e de área.
+- `authors[]` — lista de strings livres (ABNT ou natural).
+- `people[]` — **slugs canônicos** de coautores conhecidos (Gap #10).
+  Substitui uso de person-slugs em `tags[]`.
+- `tags[]` — inclui IDs de área, projeto e status (`active`/`inactive`).
+  **NÃO** inclui mais person-slugs (todos migrados para `people[]`).
+- `advisors[]` — slugs de orientadores.
+- `summary`, `book_title`, `journal_event`, `location`, `pages`,
+  `publisher`, `doi_isbn`, `url` — metadados publicação.
 
-### Parceiro — hoje textual em `content/parceiros.{pt,en}.md`
+## Regras de propagação
 
-Modelo aspiracional (não implementado):
-- `id`, `title`, `url`, `type` (institution|company|lab|funding_agency).
+### Contagens automáticas — como funcionam
 
-### Oportunidade — `content/oportunidades.{pt,en}.md` (I09 a estruturar)
+Contadores de publicações por pessoa (`publicationCount` em templates)
+sempre fazem `or (in .people $slug) (in .tags $slug)` — retrocompatível.
+Templates envolvidos:
+- `layouts/people/single.html:131` — perfil individual.
+- `layouts/partials/posts-template.html:84` — `/categories/researcher/`.
+- `layouts/shortcodes/publications.html`, `npublications.html` — filtros
+  por tag também consultam `.people[]`.
+- `layouts/partials/people-index.html:68-88` — pré-indexação global.
 
-Modelo aspiracional (não implementado):
-- `id`, `title`, `status` (`open`|`closed`|`expired`), `deadline`, `audience`.
+### Cascata i18n para rótulos (Gap #2)
 
-### Reconhecimento — `content/reconhecimentos.{pt,en}.md` (I16 já cria a página)
+Todos os pills/badges de tag usam `partial "translated-label.html"` que
+faz cascata:
+1. `i18n <slug>` — traduções manuais explícitas.
+2. `partial "project-lookup" <slug>` → `.name`.
+3. `partial "area-lookup" <slug>` → `.name`.
+4. `partial "people-lookup" <slug>` → `.name`.
+5. `humanize(<slug>)` — última linha de defesa.
 
-Modelo aspiracional (o conteúdo hoje é textual, mas cada item pode migrar para YAML):
-- `id`, `title`, `year`, `context`, `link_to_post`.
+Consequência: **projeto novo em `data/projects.yaml` não requer edição de
+`i18n/*.yaml` para labels de tag funcionarem**.
 
-## Regras cruzadas
+## Regras cruzadas (validador)
 
-Verificações que o `scripts/validate_content.py` executa:
+Verificações executadas por `scripts/validate_content.py`:
 
-1. **IDs de pesquisador únicos.** Nenhuma chave em `advisors.yaml` se repete.
-2. **Referências de pesquisador resolvem.** Todo ID citado em `advisors:`, `researchers:`, `categories:`, ou nas áreas de `areas.yaml` deve existir em `advisors.yaml`. Exceção transitória documentada em `CONVENTIONS.md`: `daniel_sundfeld` (slug de URL é `daniel_lima`).
-3. **Referências de área resolvem.** Todo ID citado em `areas:` ou como tag de área deve existir em `areas.yaml`.
-4. **Enumerações válidas.** `type` de produção pertence ao conjunto fechado; `status` de projeto pertence ao conjunto fechado.
-5. **Pares PT/EN.** Toda página em `content/` cuja frontmatter declare `translationKey` deve ter contrapartida no outro idioma com mesmo `translationKey`.
-6. **Etiquetas não vazias.** Tags que consistam apenas em `""` ou `null` são reportadas.
-7. **Datas coerentes.** `start_date <= end_date` em projetos; `year` de produção é razoável (1990-2030).
+1. **IDs de área únicos e resolvem.** Todo ID citado em `areas:` ou como
+   tag de área deve existir em `data/areas.yaml`.
+2. **IDs de projeto únicos e resolvem.** Idem para `data/projects.yaml`.
+3. **Slugs em `data/people.yaml` são obrigatórios.** Cada entrada precisa
+   ter `slug:` explícito. Slug deve ser único (ou fazer parte de
+   `supervisions[]` da mesma pessoa).
+4. **Slugs em `people[]` de productions.yaml resolvem.** Devem existir em
+   `content/people/*.md` ou em `data/people.yaml`.
+5. **Enumerações válidas.** `type`, `status`, `profile_level`, `program`
+   pertencem a conjuntos fechados.
+6. **Pares PT/EN.** Toda página em `content/` com `translationKey` deve ter
+   contrapartida.
+7. **Etiquetas não vazias.** Tags `""` ou `null` são reportadas.
+8. **Datas coerentes.** `start_date <= end_date` em projetos; `year` de
+   produção é razoável (1990-2030).
 
-## Modo de operação
+## Modo de operação do validador
 
-Nesta fase inicial (I02), o validador roda em **modo warn**: relata problemas em `stderr` e no relatório mas termina com exit 0. Após um ciclo de correções, o CI passa a modo strict (exit != 0 bloqueia PR).
+- `STRICT=false` — não falhar em warnings (default para transição).
+- `CEDIS_VALIDATE_STRICT=1` — erros críticos causam exit != 0 (bloqueia PR).
+- `CEDIS_VALIDATE_REPORT=<path>` — grava relatório em Markdown adicional.
 
-Chaves de configuração do validador (defaults):
+## Fluxo de adição de novo conteúdo (referência rápida)
 
-- `STRICT=false` — não falhar em warnings.
-- `MAX_WARNINGS` — sem limite.
-- `IGNORE_TRANSITIONAL` — respeita exceções listadas em `scripts/validate_content.py::TRANSITIONAL_EXCEPTIONS`.
+Ver `CONVENTIONS.md §7` para checklists práticos.
+
+| Tipo | Arquivos | Validação | Propagação |
+|---|---|---|---|
+| Publicação | +1 bloco em `productions.yaml` | `people[]` resolvem | Perfis, taxonomias, projetos, contadores |
+| Post | 1 `.md` × 2 idiomas | Frontmatter válido | `/news/`, home, tags |
+| Orientando (card) | +1 bloco em `people.yaml` com `slug` | Validador | `/people/all/`, perfil orientador, áreas |
+| Colaborador com bio | 1 `.md` × 2 idiomas | `profile_level` correto | Perfil + card em `/people/all/` |
+| Pesquisador | 1 `.md` × 2 idiomas | `profile_level: researcher` | `/categories/researcher/`, áreas, `/map/`, `/quiz/` |
+| Advisor externo | `scripts/create_external_advisor_stubs.py` | (não bate no validador) | Aparece em pills de orientação |
+| Coautor citado | `scripts/derive_people.py --apply` | Automático | Bloco 4 do `/people/all/` |
+| Projeto | +1 bloco em `projects.yaml` opcional `.md` | ID único | Todas as áreas, pills, cascata i18n |
+| Área | +1 bloco em `areas.yaml` opcional `.md` | ID único | Cards, cascata i18n |

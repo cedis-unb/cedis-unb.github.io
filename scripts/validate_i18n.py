@@ -30,7 +30,7 @@ REQUIRED_TRANSLATION_KEYS = {
     "content/infra",
     "content/indicadores",
     "content/contact",
-    "content/imprensa",
+    "content/divulgacao-cientifica",
     "content/privacy",
     "content/accessibility",
     "content/junte-se/_index",
