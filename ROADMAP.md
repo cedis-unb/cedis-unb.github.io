@@ -6,6 +6,11 @@
 - **Origem:** Relatório analítico pós-ciclo intensivo de a11y, SEO técnico, i18n e refactor visual
 - **Como usar:** marque `[x]` nos itens concluídos, adicione bloco `> Nota (data): …` embaixo do item para registro. Cada Sprint deve ter revisão ao final.
 
+> Nota (2026-07-24): o backlog técnico de automação do modelo de dados
+> fica centralizado em `PLANO-AUDITORIA-2026.md`, seção "Atualização de
+> modelo de dados". Este roadmap mantém os eixos de UX, conteúdo e
+> engajamento para evitar duas listas técnicas divergentes.
+
 ---
 
 ## Sumário executivo
