@@ -24,13 +24,13 @@ Estado vigente:
 - `data/advisors.yaml` foi removido. Contato, Lattes, ORCID, áreas e nível de perfil de docentes agora vivem no frontmatter de `content/people/<slug>.{pt,en}.md`.
 - `layouts/partials/people-index.html` e `people-lookup.html` são a camada central para leitura de pessoas. Templates novos não devem consultar `hugo.Data.people` ou `content/people` diretamente quando precisam resolver uma pessoa por slug.
 - `data/productions.yaml` separa pessoas e tópicos: `people[]` guarda slugs canônicos; `tags[]` guarda áreas, temas, projetos e estados.
+- `data/productions.yaml` é a fonte única de publicações. `content/publications/**` é gerado por `scripts/build_publications.py`, marcado com `generated_by`/`canonical_source`, chamado automaticamente por `npm run build` e verificado por `scripts/build_publications.py --check` no CI.
 - `layouts/partials/translated-label.html` resolve rótulos em cascata: i18n manual → `project-lookup` → `area-lookup` → `people-lookup` → `humanize`.
 - `data/people.yaml` exige `slug:` explícito em toda entrada; `scripts/validate_content.py` valida essa regra.
 - Frontmatter de perfis usa `profile_level` como tipo principal (`researcher`, `card_with_page`, `advisor_only`, `derived`). `categories` fica restrito a marcações taxonômicas legadas/necessárias, sem repetir o slug do próprio arquivo.
 
 Backlog técnico pós-refactor:
 
-- Normalizar definitivamente publicações geradas em `content/publications/**` versus `data/productions.yaml` como fonte única.
 - Avaliar migração futura de `authors[]` textual para objetos `{slug, cited_as}` quando houver tempo para curadoria.
 - `layouts/partials/project-index.html`, `project-list.html`, `project-lookup.html`,
   `area-index.html`, `area-list.html` e `area-lookup.html` centralizam o
@@ -222,7 +222,7 @@ Concluída em julho/2026 com geração canônica de publicações, oportunidades
   2. `layouts/publications/single.html` com título, autores (linkados por ID), resumo, DOI, tipo, projeto, produto, BibTeX copiável, JSON-LD **individual** de `ScholarlyArticle`/`Thesis`/`SoftwareSourceCode`.
   3. `layouts/publications/list.html` para o índice geral e para cada sub-tipo — filtros preservados (ano, tema).
   4. Redirects (aliases) das URLs antigas.
-- **Verificação:** cada publicação tem URL própria (`curl -I` retorna 200); sitemap cresce proporcionalmente; Pagefind indexa individualmente; menu "Publicações" leva a cada sub-listagem.
+- **Verificação:** `scripts/build_publications.py --check` garante sincronização com `data/productions.yaml`; cada publicação tem URL própria (`curl -I` retorna 200); sitemap cresce proporcionalmente; Pagefind indexa individualmente; menu "Publicações" leva a cada sub-listagem.
 - **Arquivos:** `scripts/build_publications.py`, `layouts/publications/`, `content/publications/` (gerado).
 
 ### I09 — Oportunidades estruturadas + trilhas "Participe" (ajuste v2) ✅

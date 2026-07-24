@@ -4,6 +4,8 @@ date: '2021-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2021_lucas_pereira_de_andrade_macedo_inovacoes_tecnologicas_na_agricultura_familiar_agroma
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2021_lucas_pereira_de_andrade_macedo_inovacoes_tecnologicas_na_agricultura_familiar_agroma
 publication_index: 94
 publication_group: tcc

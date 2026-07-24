@@ -5,6 +5,8 @@ date: '2018-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2018_nogueira_t_j_a_programa_aprendizagem_para_o_3o_milenio_a3m_identificando_o_processo_d
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2018_nogueira_t_j_a_programa_aprendizagem_para_o_3o_milenio_a3m_identificando_o_processo_d
 publication_index: 151
 publication_group: scientific
@@ -20,13 +22,16 @@ authors:
 authors_structured:
 - name: NOGUEIRA, T. J. A.
 - name: MELO, L. V. S. E.
+  id: melo_livia_veleda_de_sousa_e
+  url: /people/melo_livia_veleda_de_sousa_e
 - name: FREITAS, S. A. A.
 - name: LEITE, L. L.
 - name: MACEDO, H.
+  id: macedo_h
+  url: /people/macedo_h
 tags:
 - active_learning
 - education
-- sergio_freitas
 advisors: []
 doi_isbn: ''
 source_title: XV Congresso Brasileiro de Ensino Superior a Distância

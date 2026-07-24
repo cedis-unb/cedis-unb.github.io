@@ -5,6 +5,8 @@ date: '2013-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2013_artur_potiguara_carvalho_inovacao_organizacional_em_engenharia_de_software_no_context
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2013_artur_potiguara_carvalho_inovacao_organizacional_em_engenharia_de_software_no_context
 publication_index: 279
 publication_group: tcc
@@ -15,6 +17,8 @@ authors:
 - Artur Potiguara Carvalho
 authors_structured:
 - name: Artur Potiguara Carvalho
+  id: artur_potiguara_carvalho
+  url: /people/artur_potiguara_carvalho
 tags:
 - digital_transformation
 advisors:

@@ -5,6 +5,8 @@ date: '2026-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2026_sergio_antonio_andrade_de_freitas_a_motivation_aware_diagnostic_instrument_for_person
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2026_sergio_antonio_andrade_de_freitas_a_motivation_aware_diagnostic_instrument_for_person
 publication_index: 328
 publication_group: scientific
@@ -21,17 +23,18 @@ authors_structured:
   id: sergio_freitas
   url: /people/sergio_freitas
 - name: Daniel Rodrigues da Rocha
-  id: daniel_rodrigues_da_rocha
+  id: rocha_johan_m_g_da
+  url: /people/rocha_johan_m_g_da
 - name: Davi Rodrigues da Rocha
-  id: davi_rodrigues_da_rocha
+  id: rocha_johan_m_g_da
+  url: /people/rocha_johan_m_g_da
 - name: Mylena Angélica Silva Farias
-  id: mylena_angelica_silva_farias
+  id: mylena_faria
+  url: /people/mylena_faria
 tags:
 - gamification
 - learning_analytics
 - active_learning
-- sergio_freitas
-- mylena_faria
 - project_framework_preditivo_engajamento
 - project_alvorecer
 advisors: []
@@ -62,5 +65,3 @@ aliases:
 ## Resumo
 
 Artigo aceito no XXXVII Simpósio Brasileiro de Informática na Educação (SBIE 2026, submissão #27258), apresentando um instrumento diagnóstico de início de semestre para personalização e gamificação no ensino de computação, avaliado em três disciplinas de graduação (245 respostas válidas), com bom nível de consistência interna (α = 0.880). O instrumento fundamenta os produtos EduTrack e EduTrack AI.
-
-Este resultado deriva da experiência de gamificação **Alvorecer Feudal** e passa a compor a produção vinculada ao projeto PIBIC 2025-2026 sobre framework preditivo de engajamento e desempenho discente em ambientes de aprendizagem gamificados.

@@ -5,6 +5,8 @@ date: '2014-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2014_wilbert_carpi_silva_proposta_de_modelo_para_infraestrutura_de_rede_e_tratamento_de_in
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2014_wilbert_carpi_silva_proposta_de_modelo_para_infraestrutura_de_rede_e_tratamento_de_in
 publication_index: 231
 publication_group: specialization
@@ -15,6 +17,8 @@ authors:
 - Wilbert Carpi Silva
 authors_structured:
 - name: Wilbert Carpi Silva
+  id: wilbert_carpi_silva
+  url: /people/wilbert_carpi_silva
 tags:
 - security
 advisors:

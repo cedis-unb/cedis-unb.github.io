@@ -5,6 +5,8 @@ date: '2024-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2024_antonio_rangel_chaves_gamificacao_no_ambiente_virtual_de_aprendizagem_moodle_guia_e_f
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2024_antonio_rangel_chaves_gamificacao_no_ambiente_virtual_de_aprendizagem_moodle_guia_e_f
 publication_index: 255
 publication_group: tcc

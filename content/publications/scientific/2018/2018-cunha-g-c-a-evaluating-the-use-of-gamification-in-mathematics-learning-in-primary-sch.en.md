@@ -5,6 +5,8 @@ date: '2018-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2018_cunha_g_c_a_evaluating_the_use_of_gamification_in_mathematics_learning_in_primary_sch
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2018_cunha_g_c_a_evaluating_the_use_of_gamification_in_mathematics_learning_in_primary_sch
 publication_index: 146
 publication_group: scientific
@@ -17,12 +19,15 @@ authors:
 - FREITAS, S. A. A.
 authors_structured:
 - name: CUNHA, G. C. A.
+  id: cunha_g_c_a
+  url: /people/cunha_g_c_a
 - name: BARRAQUI, L. P.
+  id: barraqui_l_p
+  url: /people/barraqui_l_p
 - name: FREITAS, S. A. A.
 tags:
 - gamification
 - active_learning
-- sergio_freitas
 advisors: []
 doi_isbn: 10.1109/FIE.2018.8658950
 source_title: 48th Annual Frontiers in Education (FIE)

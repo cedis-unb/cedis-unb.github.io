@@ -5,6 +5,8 @@ date: '2024-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2024_marsicano_g_c_digital_transformation_of_public_services_in_a_startup_based_environmen
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2024_marsicano_g_c_digital_transformation_of_public_services_in_a_startup_based_environmen
 publication_index: 39
 publication_group: scientific
@@ -21,13 +23,13 @@ authors_structured:
 - name: MARSICANO, G. C.
 - name: CANEDO, EDNA
   id: edna_canedo
-  url: http://lattes.cnpq.br/9554285834432091
+  url: /people/edna_canedo
 - name: RAMOS, C. S.
+  id: ramos_j_c_c
+  url: /people/ramos_j_c_c
 - name: FIGUEIREDO, R. M. C.
 - name: PEDROSA, G. V.
 tags:
-- george_marsicano
-- cristiane_ramos
 - digital_transformation
 - project_melhoria_servico_publico
 advisors: []

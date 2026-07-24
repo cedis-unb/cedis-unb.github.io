@@ -4,6 +4,8 @@ date: '2017-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2017_cunha_geovania_uso_da_gamificacao_nos_anos_iniciais_do_ensino_fundamental_brasileiro
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2017_cunha_geovania_uso_da_gamificacao_nos_anos_iniciais_do_ensino_fundamental_brasileiro
 publication_index: 160
 publication_group: scientific
@@ -22,7 +24,6 @@ tags:
 - gamification
 - education
 - active_learning
-- sergio_freitas
 advisors: []
 doi_isbn: 10.5753/cbie.sbie.2017.1742
 source_title: XXVIII Simpósio Brasileiro de Informática na Educação SBIE

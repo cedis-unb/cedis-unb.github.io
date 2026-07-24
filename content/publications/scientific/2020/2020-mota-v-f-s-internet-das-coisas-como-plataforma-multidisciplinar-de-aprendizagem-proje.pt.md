@@ -5,6 +5,8 @@ date: '2020-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2020_mota_v_f_s_internet_das_coisas_como_plataforma_multidisciplinar_de_aprendizagem_proje
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2020_mota_v_f_s_internet_das_coisas_como_plataforma_multidisciplinar_de_aprendizagem_proje
 publication_index: 124
 publication_group: scientific
@@ -17,10 +19,13 @@ authors:
 - FREITAS, S. A. A.
 authors_structured:
 - name: MOTA, V. F. S.
+  id: mota_v_f_s
+  url: /people/mota_v_f_s
 - name: GOMES, R. L.
+  id: gomes_r_l
+  url: /people/gomes_r_l
 - name: FREITAS, S. A. A.
 tags:
-- sergio_freitas
 - active_learning
 advisors: []
 doi_isbn: 10.5753/wei.2020.11138

@@ -4,6 +4,8 @@ date: '2000-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2000_eduardo_venturin_linhalis_avaliacao_da_seguranca_interna_de_uma_rede_corporativa
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2000_eduardo_venturin_linhalis_avaliacao_da_seguranca_interna_de_uma_rede_corporativa
 publication_index: 252
 publication_group: tcc

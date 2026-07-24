@@ -5,6 +5,8 @@ date: '2013-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2013_tiago_gomes_pereira_definicao_de_criterios_de_aceite_baseados_em_metricas_de_qualidad
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2013_tiago_gomes_pereira_definicao_de_criterios_de_aceite_baseados_em_metricas_de_qualidad
 publication_index: 280
 publication_group: tcc
@@ -15,6 +17,8 @@ authors:
 - Tiago Gomes Pereira
 authors_structured:
 - name: Tiago Gomes Pereira
+  id: tiago_gomes_pereira
+  url: /people/tiago_gomes_pereira
 tags:
 - software_quality
 advisors:

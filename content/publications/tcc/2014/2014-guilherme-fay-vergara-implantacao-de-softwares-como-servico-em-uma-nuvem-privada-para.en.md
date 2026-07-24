@@ -5,6 +5,8 @@ date: '2014-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2014_guilherme_fay_vergara_implantacao_de_softwares_como_servico_em_uma_nuvem_privada_para
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2014_guilherme_fay_vergara_implantacao_de_softwares_como_servico_em_uma_nuvem_privada_para
 publication_index: 203
 publication_group: tcc

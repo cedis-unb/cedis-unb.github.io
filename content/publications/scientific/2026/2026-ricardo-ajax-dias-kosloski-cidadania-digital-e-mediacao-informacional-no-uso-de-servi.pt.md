@@ -5,6 +5,8 @@ date: '2026-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2026_ricardo_ajax_dias_kosloski_cidadania_digital_e_mediacao_informacional_no_uso_de_servi
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2026_ricardo_ajax_dias_kosloski_cidadania_digital_e_mediacao_informacional_no_uso_de_servi
 publication_index: 1
 publication_group: scientific
@@ -20,13 +22,14 @@ authors_structured:
   id: ricardo_ajax
   url: /people/ricardo_ajax
 - name: Leides Barroso de Azevedo Moura
+  id: leides_barroso_de_azevedo_moura
+  url: /people/leides_barroso_de_azevedo_moura
 - name: Marília Miranda Forte Gomes
   id: marilia_miranda
-  url: http://lattes.cnpq.br/9169095482512290
+  url: /people/marilia_miranda
 tags:
 - digital_transformation
 - software_quality
-- ricardo_ajax
 advisors: []
 doi_isbn: 10.36311/1981-1640.2026.v20.e026010
 source_title: 'Brazilian Journal of Information Science: research trends'

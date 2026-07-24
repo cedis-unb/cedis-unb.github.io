@@ -4,6 +4,8 @@ date: '2025-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2025_erick_giffoni_felicissimo_projeto_e_desenvolvimento_do_software_tropa_teatro_de_opera
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2025_erick_giffoni_felicissimo_projeto_e_desenvolvimento_do_software_tropa_teatro_de_opera
 publication_index: 14
 publication_group: tcc

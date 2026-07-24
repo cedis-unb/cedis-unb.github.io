@@ -5,6 +5,8 @@ date: '2014-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2014_rafael_ferreira_dos_santos_avaliacao_da_implantacao_de_um_sistema_de_service_desk_bas
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2014_rafael_ferreira_dos_santos_avaliacao_da_implantacao_de_um_sistema_de_service_desk_bas
 publication_index: 204
 publication_group: tcc
@@ -15,7 +17,8 @@ authors:
 - Rafael Ferreira dos Santos
 authors_structured:
 - name: Rafael Ferreira dos Santos
-  id: rafael_ferreira_dos_santos
+  id: santos_veronica_souza_dos
+  url: /people/santos_veronica_souza_dos
 tags:
 - digital_transformation
 advisors:

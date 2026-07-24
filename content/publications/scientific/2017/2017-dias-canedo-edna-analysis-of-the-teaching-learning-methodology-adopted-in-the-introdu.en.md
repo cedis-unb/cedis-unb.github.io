@@ -5,6 +5,8 @@ date: '2017-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2017_dias_canedo_edna_analysis_of_the_teaching_learning_methodology_adopted_in_the_introdu
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2017_dias_canedo_edna_analysis_of_the_teaching_learning_methodology_adopted_in_the_introdu
 publication_index: 161
 publication_group: scientific
@@ -18,12 +20,11 @@ authors:
 authors_structured:
 - name: DIAS CANEDO, EDNA
   id: edna_canedo
-  url: http://lattes.cnpq.br/9554285834432091
+  url: /people/edna_canedo
 - name: SANTOS, GIOVANNI ALMEIDA
 - name: FREITAS, S. A. A.
 tags:
 - active_learning
-- sergio_freitas
 advisors: []
 doi_isbn: 10.1109/FIE.2017.8190556
 source_title: 2017 IEEE Frontiers in Education Conference (FIE)

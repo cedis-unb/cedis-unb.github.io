@@ -5,6 +5,8 @@ date: '2009-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2009_francisco_santiago_do_carmo_pereira_a_methodology_for_the_use_of_natural_language_pro
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2009_francisco_santiago_do_carmo_pereira_a_methodology_for_the_use_of_natural_language_pro
 publication_index: 215
 publication_group: thesis

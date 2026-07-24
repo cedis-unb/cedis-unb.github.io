@@ -4,6 +4,8 @@ date: '2016-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2016_valenca_k_s_proposed_data_model_for_a_historical_base_tool
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2016_valenca_k_s_proposed_data_model_for_a_historical_base_tool
 publication_index: 180
 publication_group: scientific
@@ -22,8 +24,6 @@ authors_structured:
 - name: FREITAS, S. A. A.
 tags:
 - software_quality
-- sergio_freitas
-- ricardo_ajax
 advisors: []
 doi_isbn: ''
 source_title: 11th International Conference on Software Engineering Advances (ICSEA)

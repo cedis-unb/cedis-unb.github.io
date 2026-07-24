@@ -5,6 +5,8 @@ date: '2024-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2024_joao_pedro_alves_machado_renderizacao_de_fluxos_de_uma_aplicacao_de_educacao_juridica
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2024_joao_pedro_alves_machado_renderizacao_de_fluxos_de_uma_aplicacao_de_educacao_juridica
 publication_index: 30
 publication_group: tcc

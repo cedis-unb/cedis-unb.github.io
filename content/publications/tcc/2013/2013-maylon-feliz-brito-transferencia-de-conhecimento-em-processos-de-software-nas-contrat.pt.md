@@ -5,6 +5,8 @@ date: '2013-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2013_maylon_feliz_brito_transferencia_de_conhecimento_em_processos_de_software_nas_contrat
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2013_maylon_feliz_brito_transferencia_de_conhecimento_em_processos_de_software_nas_contrat
 publication_index: 278
 publication_group: tcc
@@ -15,6 +17,8 @@ authors:
 - Maylon Feliz Brito
 authors_structured:
 - name: Maylon Feliz Brito
+  id: maylon_feliz_brito
+  url: /people/maylon_feliz_brito
 tags:
 - digital_transformation
 advisors:

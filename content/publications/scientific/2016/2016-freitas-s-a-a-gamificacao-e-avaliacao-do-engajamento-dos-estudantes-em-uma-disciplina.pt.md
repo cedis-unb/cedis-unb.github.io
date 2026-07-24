@@ -5,6 +5,8 @@ date: '2016-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2016_freitas_s_a_a_gamificacao_e_avaliacao_do_engajamento_dos_estudantes_em_uma_disciplina
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2016_freitas_s_a_a_gamificacao_e_avaliacao_do_engajamento_dos_estudantes_em_uma_disciplina
 publication_index: 172
 publication_group: scientific
@@ -21,12 +23,13 @@ authors_structured:
 - name: LIMA, THIAGO
 - name: CANEDO, EDNA
   id: edna_canedo
-  url: http://lattes.cnpq.br/9554285834432091
+  url: /people/edna_canedo
 - name: COSTA, RICARDO LOPES
+  id: costa_ricardo_lopes
+  url: /people/costa_ricardo_lopes
 tags:
 - gamification
 - active learning
-- sergio_freitas
 advisors: []
 doi_isbn: 10.5753/cbie.sbie.2016.370
 source_title: XXVII Simpósio Brasileiro de Informática na Educação

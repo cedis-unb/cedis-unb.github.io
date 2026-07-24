@@ -6,6 +6,8 @@ date: '2018-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2018_marsicano_g_c_processo_de_aprendizagem_conversacional_para_a_elicitacao_de_requisitos
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2018_marsicano_g_c_processo_de_aprendizagem_conversacional_para_a_elicitacao_de_requisitos
 publication_index: 138
 publication_group: scientific
@@ -19,7 +21,6 @@ authors_structured:
 tags:
 - active_learning
 - software_requirements
-- george_marsicano
 advisors: []
 doi_isbn: 978-6202194716
 source_title: ''

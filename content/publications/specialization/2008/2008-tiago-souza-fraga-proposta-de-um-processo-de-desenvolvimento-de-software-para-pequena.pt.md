@@ -4,6 +4,8 @@ date: '2008-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2008_tiago_souza_fraga_proposta_de_um_processo_de_desenvolvimento_de_software_para_pequena
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2008_tiago_souza_fraga_proposta_de_um_processo_de_desenvolvimento_de_software_para_pequena
 publication_index: 309
 publication_group: specialization
@@ -14,6 +16,8 @@ authors:
 - Tiago Souza Fraga
 authors_structured:
 - name: Tiago Souza Fraga
+  id: tiago_souza_fraga
+  url: /people/tiago_souza_fraga
 tags:
 - software_architecture
 advisors:

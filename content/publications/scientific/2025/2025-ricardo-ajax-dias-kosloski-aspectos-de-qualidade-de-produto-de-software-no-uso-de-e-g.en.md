@@ -5,6 +5,8 @@ date: '2025-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2025_ricardo_ajax_dias_kosloski_aspectos_de_qualidade_de_produto_de_software_no_uso_de_e_g
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2025_ricardo_ajax_dias_kosloski_aspectos_de_qualidade_de_produto_de_software_no_uso_de_e_g
 publication_index: 26
 publication_group: scientific
@@ -20,13 +22,14 @@ authors_structured:
   id: ricardo_ajax
   url: /people/ricardo_ajax
 - name: Leides Barroso de Azevedo Moura
+  id: leides_barroso_de_azevedo_moura
+  url: /people/leides_barroso_de_azevedo_moura
 - name: Marília Miranda Forte Gomes
   id: marilia_miranda
-  url: http://lattes.cnpq.br/9169095482512290
+  url: /people/marilia_miranda
 tags:
 - digital_transformation
 - software_quality
-- ricardo_ajax
 advisors: []
 doi_isbn: 10.56238/arev7n3-023
 source_title: ARACÊ

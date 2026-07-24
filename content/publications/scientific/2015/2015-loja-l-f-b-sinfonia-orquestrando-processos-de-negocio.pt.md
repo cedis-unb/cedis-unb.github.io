@@ -4,6 +4,8 @@ date: '2015-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2015_loja_l_f_b_sinfonia_orquestrando_processos_de_negocio
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2015_loja_l_f_b_sinfonia_orquestrando_processos_de_negocio
 publication_index: 188
 publication_group: scientific
@@ -16,11 +18,14 @@ authors:
 - OLIVEIRA, J. L.
 authors_structured:
 - name: LOJA, L. F. B.
+  id: loja_l_f_b
+  url: /people/loja_l_f_b
 - name: MENDES, F. F.
 - name: OLIVEIRA, J. L.
+  id: oliveira_j_l
+  url: /people/oliveira_j_l
 tags:
 - soft_skills
-- fabiana_mendes
 advisors: []
 doi_isbn: 978-3639698558
 source_title: ''

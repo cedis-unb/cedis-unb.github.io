@@ -5,6 +5,8 @@ date: '2016-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2016_calazans_angelica_toffano_seidel_proposta_de_modelo_de_medicoes_para_contratacao_do_g
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2016_calazans_angelica_toffano_seidel_proposta_de_modelo_de_medicoes_para_contratacao_do_g
 publication_index: 170
 publication_group: scientific
@@ -17,13 +19,16 @@ authors:
 - FERNANDO, G.
 authors_structured:
 - name: CALAZANS, ANGELICA TOFFANO SEIDEL
+  id: angelica_toffano_seidel_calazans
+  url: /people/angelica_toffano_seidel_calazans
 - name: KOSLOSKI, Ricardo Ajax Dias
   id: ricardo_ajax
   url: /people/ricardo_ajax
 - name: FERNANDO, G.
+  id: fernando_g
+  url: /people/fernando_g
 tags:
 - digital_transformation
-- ricardo_ajax
 advisors: []
 doi_isbn: 10.4301/S1807-17752016000200007
 source_title: Revista de Gestão da Tecnologia e Sistemas de Informação

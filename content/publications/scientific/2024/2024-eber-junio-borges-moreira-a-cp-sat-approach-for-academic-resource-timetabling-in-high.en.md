@@ -5,6 +5,8 @@ date: '2024-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2024_eber_junio_borges_moreira_a_cp_sat_approach_for_academic_resource_timetabling_in_high
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2024_eber_junio_borges_moreira_a_cp_sat_approach_for_academic_resource_timetabling_in_high
 publication_index: 40
 publication_group: scientific
@@ -21,7 +23,6 @@ authors_structured:
   id: sergio_freitas
   url: /people/sergio_freitas
 tags:
-- sergio_freitas
 - machine_learning
 - learning_analytics
 advisors: []

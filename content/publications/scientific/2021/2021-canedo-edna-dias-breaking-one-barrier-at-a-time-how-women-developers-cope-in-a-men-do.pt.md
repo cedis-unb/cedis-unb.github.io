@@ -5,6 +5,8 @@ date: '2021-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2021_canedo_edna_dias_breaking_one_barrier_at_a_time_how_women_developers_cope_in_a_men_do
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2021_canedo_edna_dias_breaking_one_barrier_at_a_time_how_women_developers_cope_in_a_men_do
 publication_index: 108
 publication_group: scientific
@@ -21,17 +23,24 @@ authors:
 authors_structured:
 - name: CANEDO, EDNA DIAS
   id: edna_canedo
-  url: http://lattes.cnpq.br/9554285834432091
+  url: /people/edna_canedo
 - name: MENDES, FABIANA
   id: fabiana_mendes
   url: /people/fabiana_mendes
 - name: CERQUEIRA, ANDERSON
+  id: cerqueira_anderson
+  url: /people/cerqueira_anderson
 - name: OKIMOTO, MARCIO
+  id: okimoto_marcio
+  url: /people/okimoto_marcio
 - name: PINTO, GUSTAVO
+  id: pinto_gustavo
+  url: /people/pinto_gustavo
 - name: BONIFACIO, RODRIGO
+  id: bonifacio_rodrigo
+  url: /people/bonifacio_rodrigo
 tags:
 - soft_skills
-- fabiana_mendes
 advisors: []
 doi_isbn: 'Breaking one barrier at a time: how women developers cope in a men-dominated
   industry'

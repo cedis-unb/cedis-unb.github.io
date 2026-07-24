@@ -5,6 +5,8 @@ date: '2025-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2025_emanuel_galhardo_de_oliveira_modelo_de_avaliacao_devops_em_ambientes_de_nuvem_com_met
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2025_emanuel_galhardo_de_oliveira_modelo_de_avaliacao_devops_em_ambientes_de_nuvem_com_met
 publication_index: 7
 publication_group: thesis

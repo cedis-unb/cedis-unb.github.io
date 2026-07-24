@@ -5,6 +5,8 @@ date: '2026-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2026_mateus_cunha_maia_estrategias_de_paralelizacao_em_cpu_para_a_otimizacao_de_algoritmos
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2026_mateus_cunha_maia_estrategias_de_paralelizacao_em_cpu_para_a_otimizacao_de_algoritmos
 publication_index: 2
 publication_group: tcc

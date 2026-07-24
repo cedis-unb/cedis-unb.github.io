@@ -5,6 +5,8 @@ date: '2022-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2022_furtado_s_l_identification_and_applicability_of_additional_security_factors_on_the_go
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2022_furtado_s_l_identification_and_applicability_of_additional_security_factors_on_the_go
 publication_index: 85
 publication_group: scientific
@@ -19,7 +21,6 @@ authors_structured:
 - name: MARSICANO, G. C.
 tags:
 - digital_transformation
-- george_marsicano
 advisors: []
 doi_isbn: 10.5748/19CONTECSI/PSE/GOV/7034
 source_title: 19th CONTECSI - International Conference on Information Systems and

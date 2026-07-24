@@ -8,9 +8,11 @@ dar URL propria, SEO, Pagefind e navegacao por tipo.
 
 from __future__ import annotations
 
+import argparse
 import hashlib
 import re
 import shutil
+import tempfile
 import unicodedata
 from collections import defaultdict
 from pathlib import Path
@@ -23,6 +25,8 @@ DATA_FILE = ROOT / "data" / "productions.yaml"
 PEOPLE_FILE = ROOT / "data" / "people.yaml"
 PEOPLE_DIR = ROOT / "content" / "people"
 OUT_DIR = ROOT / "content" / "publications"
+GENERATED_BY = "scripts/build_publications.py"
+CANONICAL_SOURCE = "data/productions.yaml"
 
 LANGS = ("pt", "en")
 
@@ -212,10 +216,13 @@ def load_people_index() -> list[dict[str, str]]:
 
 def match_person(author: str, people_index: list[dict[str, str]], ids_in_item: set[str]) -> dict[str, str] | None:
     author_norm = normalize_name(author)
+    author_tokens = set(author_norm.split())
     for person in people_index:
         if person["id"] in ids_in_item:
-            person_tokens = normalize_name(person["name"]).split()
-            if person_tokens and all(token in author_norm.split() for token in person_tokens[:1] + person_tokens[-1:]):
+            person_tokens = set(normalize_name(person["name"]).split())
+            slug_tokens = set(normalize_name(person["id"].replace("_", " ")).split())
+            overlap = author_tokens & (person_tokens | slug_tokens)
+            if len(overlap) >= 2:
                 return person
     for person in people_index:
         person_tokens = normalize_name(person["name"]).split()
@@ -321,6 +328,8 @@ def frontmatter(payload: dict[str, Any], lang: str) -> str:
         "draft": False,
         "language": lang,
         "translationKey": payload["id"],
+        "generated_by": GENERATED_BY,
+        "canonical_source": CANONICAL_SOURCE,
         "id": payload["id"],
         "publication_index": payload["index"],
         "publication_group": payload["group"],
@@ -361,7 +370,7 @@ def write_page(path: Path, content: str) -> None:
     path.write_text(content, encoding="utf-8")
 
 
-def write_indexes(payloads: list[dict[str, Any]]) -> None:
+def write_indexes(payloads: list[dict[str, Any]], out_dir: Path) -> None:
     for lang in LANGS:
         root_fm = {
             "title": "Publicações" if lang == "pt" else "Publications",
@@ -369,13 +378,15 @@ def write_indexes(payloads: list[dict[str, Any]]) -> None:
             "draft": False,
             "language": lang,
             "translationKey": "publications",
+            "generated_by": GENERATED_BY,
+            "canonical_source": CANONICAL_SOURCE,
             "description": "Publicações do CEDIS" if lang == "pt" else "CEDIS publications",
             "featured_image": "../assets/images/featured/image_Publications.png",
             "authorimage": "../assets/images/global/author.webp",
             "aliases": ["/publications/"] if lang == "pt" else [],
         }
         write_page(
-            OUT_DIR / f"_index.{lang}.md",
+            out_dir / f"_index.{lang}.md",
             "---\n" + yaml.safe_dump(root_fm, allow_unicode=True, sort_keys=False).strip() + "\n---\n",
         )
 
@@ -387,34 +398,83 @@ def write_indexes(payloads: list[dict[str, Any]]) -> None:
                 "draft": False,
                 "language": lang,
                 "translationKey": f"publications_{group}",
+                "generated_by": GENERATED_BY,
+                "canonical_source": CANONICAL_SOURCE,
                 "publication_filter": group,
                 "description": meta["description"][lang],
                 "summary": f"{count} registros catalogados." if lang == "pt" else f"{count} catalogued records.",
             }
             write_page(
-                OUT_DIR / group / f"_index.{lang}.md",
+                out_dir / group / f"_index.{lang}.md",
                 "---\n" + yaml.safe_dump(group_fm, allow_unicode=True, sort_keys=False).strip() + "\n---\n",
             )
 
 
-def main() -> int:
+def build_publication_pages(out_dir: Path) -> int:
     data = yaml.safe_load(DATA_FILE.read_text(encoding="utf-8"))
     items = data.get("items", [])
     people_index = load_people_index()
     used: set[str] = set()
     payloads = [make_item_payload(item, i, people_index, used) for i, item in enumerate(items)]
 
-    if OUT_DIR.exists():
-        shutil.rmtree(OUT_DIR)
-    OUT_DIR.mkdir(parents=True, exist_ok=True)
+    if out_dir.exists():
+        shutil.rmtree(out_dir)
+    out_dir.mkdir(parents=True, exist_ok=True)
 
-    write_indexes(payloads)
+    write_indexes(payloads, out_dir)
     for payload in payloads:
         for lang in LANGS:
-            path = OUT_DIR / payload["group"] / payload["year"] / f"{payload['slug']}.{lang}.md"
+            path = out_dir / payload["group"] / payload["year"] / f"{payload['slug']}.{lang}.md"
             write_page(path, f"---\n{frontmatter(payload, lang)}\n---\n{body(payload, lang)}")
 
-    print(f"Geradas {len(payloads) * len(LANGS)} paginas de publicacao em {OUT_DIR.relative_to(ROOT)}.")
+    return len(payloads) * len(LANGS)
+
+
+def snapshot(root: Path) -> dict[str, bytes]:
+    files: dict[str, bytes] = {}
+    if not root.exists():
+        return files
+    for path in sorted(root.rglob("*")):
+        if path.is_file():
+            files[path.relative_to(root).as_posix()] = path.read_bytes()
+    return files
+
+
+def check_publication_pages() -> int:
+    with tempfile.TemporaryDirectory(prefix="cedis-publications-") as tmp:
+        expected_dir = Path(tmp) / "publications"
+        build_publication_pages(expected_dir)
+        expected = snapshot(expected_dir)
+        current = snapshot(OUT_DIR)
+
+    missing = sorted(set(expected) - set(current))
+    extra = sorted(set(current) - set(expected))
+    changed = sorted(path for path in set(expected) & set(current) if expected[path] != current[path])
+
+    if not missing and not extra and not changed:
+        print("content/publications está sincronizado com data/productions.yaml.")
+        return 0
+
+    print("content/publications está divergente de data/productions.yaml.")
+    for label, paths in (("faltando", missing), ("extra", extra), ("alterado", changed)):
+        if paths:
+            sample = ", ".join(paths[:10])
+            suffix = "" if len(paths) <= 10 else f" ... (+{len(paths) - 10})"
+            print(f"- {label}: {len(paths)} arquivo(s): {sample}{suffix}")
+    print("Rode: python3 scripts/build_publications.py")
+    return 1
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser(description="Gera ou valida content/publications/ a partir de data/productions.yaml.")
+    parser.add_argument("--check", action="store_true", help="não escreve arquivos; falha se content/publications/ estiver desatualizado")
+    args = parser.parse_args()
+
+    if args.check:
+        return check_publication_pages()
+
+    generated = build_publication_pages(OUT_DIR)
+    print(f"Geradas {generated} paginas de publicacao em {OUT_DIR.relative_to(ROOT)}.")
     return 0
 
 

@@ -5,6 +5,8 @@ date: '2022-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2022_caue_mateus_oliveira_universidade_das_heuristicas_um_jogo_para_o_apoio_a_aprendizagem
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2022_caue_mateus_oliveira_universidade_das_heuristicas_um_jogo_para_o_apoio_a_aprendizagem
 publication_index: 72
 publication_group: tcc

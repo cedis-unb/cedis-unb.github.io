@@ -5,6 +5,8 @@ date: '2020-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2020_lucas_gomes_pereira_aplicacao_de_tecnicas_de_gamificacao_na_metodologia_team_based_le
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2020_lucas_gomes_pereira_aplicacao_de_tecnicas_de_gamificacao_na_metodologia_team_based_le
 publication_index: 272
 publication_group: tcc

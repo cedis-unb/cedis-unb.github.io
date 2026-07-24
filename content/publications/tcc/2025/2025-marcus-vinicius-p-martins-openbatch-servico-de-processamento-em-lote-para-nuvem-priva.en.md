@@ -4,6 +4,8 @@ date: '2025-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2025_marcus_vinicius_p_martins_openbatch_servico_de_processamento_em_lote_para_nuvem_priva
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2025_marcus_vinicius_p_martins_openbatch_servico_de_processamento_em_lote_para_nuvem_priva
 publication_index: 259
 publication_group: tcc
@@ -14,7 +16,8 @@ authors:
 - Marcus Vinicius P. Martins
 authors_structured:
 - name: Marcus Vinicius P. Martins
-  id: marcus_vinicius_p_martins
+  id: marcus_martins
+  url: /people/marcus_martins
 tags:
 - software_architecture
 advisors:

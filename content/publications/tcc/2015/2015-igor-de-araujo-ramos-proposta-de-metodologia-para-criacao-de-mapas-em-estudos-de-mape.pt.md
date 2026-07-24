@@ -5,6 +5,8 @@ date: '2015-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2015_igor_de_araujo_ramos_proposta_de_metodologia_para_criacao_de_mapas_em_estudos_de_mape
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2015_igor_de_araujo_ramos_proposta_de_metodologia_para_criacao_de_mapas_em_estudos_de_mape
 publication_index: 195
 publication_group: tcc

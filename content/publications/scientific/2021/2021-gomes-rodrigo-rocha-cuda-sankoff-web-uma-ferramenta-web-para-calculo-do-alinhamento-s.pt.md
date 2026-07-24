@@ -5,6 +5,8 @@ date: '2021-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2021_gomes_rodrigo_rocha_cuda_sankoff_web_uma_ferramenta_web_para_calculo_do_alinhamento_s
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2021_gomes_rodrigo_rocha_cuda_sankoff_web_uma_ferramenta_web_para_calculo_do_alinhamento_s
 publication_index: 109
 publication_group: scientific
@@ -22,7 +24,6 @@ authors_structured:
   url: /people/daniel_sundfeld
 tags:
 - hpc
-- daniel_sundfeld
 advisors: []
 doi_isbn: 10.5753/eradsp.2021.16697
 source_title: Escola Regional de Alto Desempenho de São Paulo

@@ -4,6 +4,8 @@ date: '2021-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2021_yamauchi_eduardo_digital_legacy_management_systems_theoretical_systemic_and_users_per
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2021_yamauchi_eduardo_digital_legacy_management_systems_theoretical_systemic_and_users_per
 publication_index: 110
 publication_group: scientific
@@ -23,10 +25,11 @@ authors_structured:
   id: fabiana_mendes
   url: /people/fabiana_mendes
 - name: UEDA, GUSTAVO
+  id: ueda_gustavo
+  url: /people/ueda_gustavo
 - name: PEREIRA, VINICIUS
 tags:
 - digital_transformation
-- fabiana_mendes
 advisors: []
 doi_isbn: 10.5220/0010449800410053
 source_title: 23rd International Conference on Enterprise Information Systems

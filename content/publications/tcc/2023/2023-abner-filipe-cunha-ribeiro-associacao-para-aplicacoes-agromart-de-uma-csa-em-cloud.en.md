@@ -4,6 +4,8 @@ date: '2023-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2023_abner_filipe_cunha_ribeiro_associacao_para_aplicacoes_agromart_de_uma_csa_em_cloud
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2023_abner_filipe_cunha_ribeiro_associacao_para_aplicacoes_agromart_de_uma_csa_em_cloud
 publication_index: 60
 publication_group: tcc

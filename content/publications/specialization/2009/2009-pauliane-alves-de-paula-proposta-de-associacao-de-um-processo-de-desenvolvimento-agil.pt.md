@@ -5,6 +5,8 @@ date: '2009-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2009_pauliane_alves_de_paula_proposta_de_associacao_de_um_processo_de_desenvolvimento_agil
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2009_pauliane_alves_de_paula_proposta_de_associacao_de_um_processo_de_desenvolvimento_agil
 publication_index: 306
 publication_group: specialization
@@ -15,6 +17,8 @@ authors:
 - Pauliane Alves de Paula
 authors_structured:
 - name: Pauliane Alves de Paula
+  id: pauliane_alves_de_paula
+  url: /people/pauliane_alves_de_paula
 tags:
 - software_architecture
 advisors:

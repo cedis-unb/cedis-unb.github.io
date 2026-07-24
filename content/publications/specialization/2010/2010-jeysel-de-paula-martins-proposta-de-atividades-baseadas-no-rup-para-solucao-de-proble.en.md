@@ -5,6 +5,8 @@ date: '2010-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2010_jeysel_de_paula_martins_proposta_de_atividades_baseadas_no_rup_para_solucao_de_proble
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2010_jeysel_de_paula_martins_proposta_de_atividades_baseadas_no_rup_para_solucao_de_proble
 publication_index: 292
 publication_group: specialization
@@ -15,6 +17,8 @@ authors:
 - Jeysel de Paula Martins
 authors_structured:
 - name: Jeysel de Paula Martins
+  id: jeysel_de_paula_martins
+  url: /people/jeysel_de_paula_martins
 tags:
 - software_requirements
 advisors:

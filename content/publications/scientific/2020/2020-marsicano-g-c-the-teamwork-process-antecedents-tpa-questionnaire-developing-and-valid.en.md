@@ -5,6 +5,8 @@ date: '2020-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2020_marsicano_g_c_the_teamwork_process_antecedents_tpa_questionnaire_developing_and_valid
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2020_marsicano_g_c_the_teamwork_process_antecedents_tpa_questionnaire_developing_and_valid
 publication_index: 117
 publication_group: scientific
@@ -19,11 +21,16 @@ authors:
 authors_structured:
 - name: MARSICANO, G. C.
 - name: DA SILVA, FABIO Q. B.
+  id: da_silva_fabio_q_b
+  url: /people/da_silva_fabio_q_b
 - name: SEAMAN, C. B.
+  id: seaman_c_b
+  url: /people/seaman_c_b
 - name: ADAID-CASTRO, B. G.
+  id: adaid_castro_b_g
+  url: /people/adaid_castro_b_g
 tags:
 - teamwork
-- george_marsicano
 advisors: []
 doi_isbn: 10.1007/s10664-020-09860-5
 source_title: EMPIRICAL SOFTWARE ENGINEERING (DORDRECHT. ONLINE)

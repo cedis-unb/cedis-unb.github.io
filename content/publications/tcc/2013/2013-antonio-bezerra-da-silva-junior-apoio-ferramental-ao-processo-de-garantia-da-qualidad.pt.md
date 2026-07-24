@@ -5,6 +5,8 @@ date: '2013-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2013_antonio_bezerra_da_silva_junior_apoio_ferramental_ao_processo_de_garantia_da_qualidad
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2013_antonio_bezerra_da_silva_junior_apoio_ferramental_ao_processo_de_garantia_da_qualidad
 publication_index: 207
 publication_group: tcc
@@ -15,7 +17,8 @@ authors:
 - Antonio Bezerra da Silva Júnior
 authors_structured:
 - name: Antonio Bezerra da Silva Júnior
-  id: antonio_bezerra_da_silva_junior
+  id: silva_rodrigo_m_s_da
+  url: /people/silva_rodrigo_m_s_da
 tags:
 - software_quality
 - verification_validation_testing

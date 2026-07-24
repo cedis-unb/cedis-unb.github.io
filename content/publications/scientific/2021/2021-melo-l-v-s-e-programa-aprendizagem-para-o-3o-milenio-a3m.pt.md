@@ -4,6 +4,8 @@ date: '2021-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2021_melo_l_v_s_e_programa_aprendizagem_para_o_3o_milenio_a3m
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2021_melo_l_v_s_e_programa_aprendizagem_para_o_3o_milenio_a3m
 publication_index: 116
 publication_group: scientific
@@ -17,13 +19,14 @@ authors:
 - FREITAS, S. A. A.
 authors_structured:
 - name: MELO, L. V. S. E.
+  id: melo_livia_veleda_de_sousa_e
+  url: /people/melo_livia_veleda_de_sousa_e
 - name: NOGUEIRA, T. J. A. M.
 - name: LEITE, L. L.
 - name: FREITAS, S. A. A.
 tags:
 - active_learning
 - education
-- sergio_freitas
 - project_a3m
 advisors: []
 doi_isbn: '9786599168932'

@@ -4,6 +4,8 @@ date: '2022-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2022_oliveira_e_g_behavior_driven_development_applied_in_agile_teams_of_a_financial_instit
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2022_oliveira_e_g_behavior_driven_development_applied_in_agile_teams_of_a_financial_instit
 publication_index: 87
 publication_group: scientific
@@ -19,7 +21,6 @@ authors_structured:
 tags:
 - soft_skills
 - teamwork
-- george_marsicano
 advisors: []
 doi_isbn: 10.5753/cbsoft_estendido.2022.226260
 source_title: Congresso Brasileiro de Engenharia de Software - CBSoft

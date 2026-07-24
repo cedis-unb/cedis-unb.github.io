@@ -4,6 +4,8 @@ date: '2018-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2018_martins_l_b_gestao_de_riscos_e_governanca_de_ti_aplicada_a_rede_de_comunicacao_govern
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2018_martins_l_b_gestao_de_riscos_e_governanca_de_ti_aplicada_a_rede_de_comunicacao_govern
 publication_index: 157
 publication_group: scientific
@@ -18,7 +20,6 @@ authors_structured:
 - name: FREITAS, S. A. A.
 tags:
 - digital_transformation
-- sergio_freitas
 advisors: []
 doi_isbn: '9788560365272'
 source_title: Governança em tecnologia de informação e comunicação para o setor público

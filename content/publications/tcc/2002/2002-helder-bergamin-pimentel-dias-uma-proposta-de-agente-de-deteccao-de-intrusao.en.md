@@ -4,6 +4,8 @@ date: '2002-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2002_helder_bergamin_pimentel_dias_uma_proposta_de_agente_de_deteccao_de_intrusao
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2002_helder_bergamin_pimentel_dias_uma_proposta_de_agente_de_deteccao_de_intrusao
 publication_index: 250
 publication_group: tcc

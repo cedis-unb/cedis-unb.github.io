@@ -4,6 +4,8 @@ date: '2017-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2017_freitas_s_a_a_gamification_in_education_a_methodology_to_identify_student_s_profile
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2017_freitas_s_a_a_gamification_in_education_a_methodology_to_identify_student_s_profile
 publication_index: 163
 publication_group: scientific
@@ -19,17 +21,19 @@ authors:
 authors_structured:
 - name: FREITAS, S. A. A.
 - name: LACERDA, ARTHUR R. T.
-  id: arthur_rocha_temporim_de_lacerda
+  id: arthur_temporim
+  url: /people/arthur_temporim
 - name: CALADO, PAULO M. R. O.
   id: paulo_markes_rodrigues_de_oliveira_calado
 - name: LIMA, THIAGO S.
+  id: lima_thiago_s
+  url: /people/lima_thiago_s
 - name: DIAS CANEDO, EDNA
   id: edna_canedo
-  url: http://lattes.cnpq.br/9554285834432091
+  url: /people/edna_canedo
 tags:
 - gamification
 - active_learning
-- sergio_freitas
 advisors: []
 doi_isbn: 10.1109/FIE.2017.8190499
 source_title: 2017 IEEE Frontiers in Education Conference (FIE)

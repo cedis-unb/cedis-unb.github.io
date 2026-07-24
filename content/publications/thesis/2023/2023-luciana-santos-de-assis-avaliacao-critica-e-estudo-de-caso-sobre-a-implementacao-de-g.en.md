@@ -5,6 +5,8 @@ date: '2023-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2023_luciana_santos_de_assis_avaliacao_critica_e_estudo_de_caso_sobre_a_implementacao_de_g
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2023_luciana_santos_de_assis_avaliacao_critica_e_estudo_de_caso_sobre_a_implementacao_de_g
 publication_index: 57
 publication_group: thesis

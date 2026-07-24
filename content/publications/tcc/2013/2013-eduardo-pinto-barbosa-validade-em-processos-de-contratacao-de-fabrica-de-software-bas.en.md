@@ -4,6 +4,8 @@ date: '2013-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2013_eduardo_pinto_barbosa_validade_em_processos_de_contratacao_de_fabrica_de_software_bas
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2013_eduardo_pinto_barbosa_validade_em_processos_de_contratacao_de_fabrica_de_software_bas
 publication_index: 281
 publication_group: tcc
@@ -14,6 +16,8 @@ authors:
 - Eduardo Pinto Barbosa
 authors_structured:
 - name: Eduardo Pinto Barbosa
+  id: eduardo_pinto_barbosa
+  url: /people/eduardo_pinto_barbosa
 tags:
 - digital_transformation
 - software_quality

@@ -4,6 +4,8 @@ date: '2022-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2022_erico_maximiano_bandeira_pixel_uma_ferramenta_gamificada_para_aprendizagem_de_criteri
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2022_erico_maximiano_bandeira_pixel_uma_ferramenta_gamificada_para_aprendizagem_de_criteri
 publication_index: 101
 publication_group: tcc

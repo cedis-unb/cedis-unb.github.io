@@ -5,6 +5,8 @@ date: '2025-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2025_miguel_matos_costa_de_frias_barbosa_sistema_de_apoio_a_analise_de_processos_organizac
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2025_miguel_matos_costa_de_frias_barbosa_sistema_de_apoio_a_analise_de_processos_organizac
 publication_index: 257
 publication_group: tcc

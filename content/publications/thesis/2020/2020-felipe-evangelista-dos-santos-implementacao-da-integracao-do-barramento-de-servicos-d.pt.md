@@ -5,6 +5,8 @@ date: '2020-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2020_felipe_evangelista_dos_santos_implementacao_da_integracao_do_barramento_de_servicos_d
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2020_felipe_evangelista_dos_santos_implementacao_da_integracao_do_barramento_de_servicos_d
 publication_index: 121
 publication_group: thesis
@@ -15,7 +17,8 @@ authors:
 - Felipe Evangelista dos Santos
 authors_structured:
 - name: Felipe Evangelista dos Santos
-  id: felipe_evangelista_dos_santos
+  id: santos_veronica_souza_dos
+  url: /people/santos_veronica_souza_dos
 tags:
 - software_architecture
 - security

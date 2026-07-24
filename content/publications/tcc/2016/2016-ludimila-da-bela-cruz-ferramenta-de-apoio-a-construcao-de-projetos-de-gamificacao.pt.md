@@ -4,6 +4,8 @@ date: '2016-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2016_ludimila_da_bela_cruz_ferramenta_de_apoio_a_construcao_de_projetos_de_gamificacao
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2016_ludimila_da_bela_cruz_ferramenta_de_apoio_a_construcao_de_projetos_de_gamificacao
 publication_index: 185
 publication_group: tcc

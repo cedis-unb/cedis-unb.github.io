@@ -4,6 +4,8 @@ date: '2025-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2025_araujo_mauricio_ferreira_de_aplicacao_multithread_para_a_aceleracao_do_metodo_particl
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2025_araujo_mauricio_ferreira_de_aplicacao_multithread_para_a_aceleracao_do_metodo_particl
 publication_index: 25
 publication_group: scientific
@@ -18,12 +20,13 @@ authors_structured:
 - name: ARAÚJO, MAURÍCIO FERREIRA DE
   id: mauricio_ferreira_de_araujo
 - name: HABL, LUI
+  id: habl_lui
+  url: /people/habl_lui
 - name: Sundfeld, Daniel
   id: daniel_sundfeld
   url: /people/daniel_sundfeld
 tags:
 - hpc
-- daniel_sundfeld
 advisors: []
 doi_isbn: ''
 source_title: Escola Regional de Informática de Goiás (ERI-GO 2025)

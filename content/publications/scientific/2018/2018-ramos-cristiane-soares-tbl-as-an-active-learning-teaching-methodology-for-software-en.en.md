@@ -4,6 +4,8 @@ date: '2018-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2018_ramos_cristiane_soares_tbl_as_an_active_learning_teaching_methodology_for_software_en
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2018_ramos_cristiane_soares_tbl_as_an_active_learning_teaching_methodology_for_software_en
 publication_index: 152
 publication_group: scientific
@@ -24,13 +26,15 @@ authors_structured:
   id: ricardo_ajax
   url: /people/ricardo_ajax
 - name: VENSON, ELAINE
+  id: elaine_venson
+  url: /people/elaine_venson
 - name: DA COSTA FIGUEIREDO, REJANE M.
+  id: rejane_maria_da_costa_figueiredo
+  url: /people/rejane_maria_da_costa_figueiredo
 - name: DEON, VICTOR HUGO A.
   id: victor_hugo_arnaud_deon
 tags:
 - active_learning
-- cristiane_ramos
-- ricardo_ajax
 advisors: []
 doi_isbn: 10.1145/3266237.3266253
 source_title: the XXXII Brazilian Symposium

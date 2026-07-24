@@ -4,6 +4,8 @@ date: '2006-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2006_raphael_de_oliveira_santos_implementacao_de_protocolos_para_automacao_industrial_num
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2006_raphael_de_oliveira_santos_implementacao_de_protocolos_para_automacao_industrial_num
 publication_index: 242
 publication_group: tcc

@@ -4,6 +4,8 @@ date: '2006-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2006_marcianne_ribeiro_antunes_lima_autenticacao_em_redes_mistas
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2006_marcianne_ribeiro_antunes_lima_autenticacao_em_redes_mistas
 publication_index: 239
 publication_group: specialization
@@ -14,6 +16,8 @@ authors:
 - Marcianne Ribeiro Antunes Lima
 authors_structured:
 - name: Marcianne Ribeiro Antunes Lima
+  id: marcianne_ribeiro_antunes_lima
+  url: /people/marcianne_ribeiro_antunes_lima
 tags:
 - security
 advisors:

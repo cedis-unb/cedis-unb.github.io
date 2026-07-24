@@ -4,6 +4,8 @@ date: '2014-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2014_giancarllo_helion_frota_soares_proposta_de_um_conjunto_de_competencias_para_o_time_ag
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2014_giancarllo_helion_frota_soares_proposta_de_um_conjunto_de_competencias_para_o_time_ag
 publication_index: 276
 publication_group: tcc

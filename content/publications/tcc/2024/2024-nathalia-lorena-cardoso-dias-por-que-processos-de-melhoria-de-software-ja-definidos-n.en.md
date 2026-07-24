@@ -5,6 +5,8 @@ date: '2024-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2024_nathalia_lorena_cardoso_dias_por_que_processos_de_melhoria_de_software_ja_definidos_n
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2024_nathalia_lorena_cardoso_dias_por_que_processos_de_melhoria_de_software_ja_definidos_n
 publication_index: 226
 publication_group: tcc

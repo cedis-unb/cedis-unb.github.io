@@ -4,6 +4,8 @@ date: '2016-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2016_frinhani_cristovao_lima_an_automatic_essay_correction_for_an_active_learning_environm
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2016_frinhani_cristovao_lima_an_automatic_essay_correction_for_an_active_learning_environm
 publication_index: 176
 publication_group: scientific
@@ -22,12 +24,11 @@ authors_structured:
 - name: FERNANDES, MAURICIO VIDOTTI
 - name: DIAS CANEDO, EDNA
   id: edna_canedo
-  url: http://lattes.cnpq.br/9554285834432091
+  url: /people/edna_canedo
 tags:
 - ai
 - machine_learning
 - nlp
-- sergio_freitas
 advisors: []
 doi_isbn: 10.1109/AICCSA.2016.7945769
 source_title: 2016 IEEE/ACS 13th International Conference of Computer Systems and

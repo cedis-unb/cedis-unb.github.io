@@ -5,6 +5,8 @@ date: '2022-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2022_byron_kamal_barreto_correa_uma_evolucao_do_projeto_agromart_open_source_meios_de_paga
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2022_byron_kamal_barreto_correa_uma_evolucao_do_projeto_agromart_open_source_meios_de_paga
 publication_index: 69
 publication_group: tcc

@@ -4,6 +4,8 @@ date: '2023-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2023_joao_vitor_de_moura_rosa_silva_sami_sistema_para_analise_de_metricas_de_indicadores_d
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2023_joao_vitor_de_moura_rosa_silva_sami_sistema_para_analise_de_metricas_de_indicadores_d
 publication_index: 183
 publication_group: tcc

@@ -5,6 +5,8 @@ date: '2019-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2019_kosloski_ricardo_ajax_dias_aprendizagem_baseada_em_projetos_aplicada_em_uma_disciplin
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2019_kosloski_ricardo_ajax_dias_aprendizagem_baseada_em_projetos_aplicada_em_uma_disciplin
 publication_index: 129
 publication_group: scientific
@@ -27,8 +29,6 @@ authors_structured:
 - name: GOULART, H. B.
 tags:
 - active_learning
-- ricardo_ajax
-- cristiane_ramos
 advisors: []
 doi_isbn: 10.5753/cbie.sbie.2019.89
 source_title: Simpósio Brasileiro de Informática na Educação (SBIE)

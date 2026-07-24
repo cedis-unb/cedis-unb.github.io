@@ -5,6 +5,8 @@ date: '2023-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2023_silva_e_c_a_systematic_review_of_the_factors_that_impact_the_prediction_of_retention
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2023_silva_e_c_a_systematic_review_of_the_factors_that_impact_the_prediction_of_retention
 publication_index: 53
 publication_group: scientific
@@ -19,16 +21,17 @@ authors:
 - ARAUJO, L. K. S. R.
 authors_structured:
 - name: SILVA, E. C.
+  id: silva_m_c
+  url: /people/silva_m_c
 - name: FREITAS, S. A. A.
 - name: RAMOS, C. S.
+  id: ramos_j_c_c
+  url: /people/ramos_j_c_c
 - name: MENEZES, A. E. M.
 - name: ARAUJO, L. K. S. R.
 tags:
 - learning_analytics
 - machine_learning
-- sergio_freitas
-- cristiane_ramos
-- edmilson_cosme
 - project_framework_preditivo_engajamento
 advisors: []
 doi_isbn: ''

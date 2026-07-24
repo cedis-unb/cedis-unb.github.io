@@ -4,6 +4,8 @@ date: '2007-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2007_marcios_messias_fernandes_da_silva_uso_da_apf_para_medicao_de_tamanho_de_sistemas_do
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2007_marcios_messias_fernandes_da_silva_uso_da_apf_para_medicao_de_tamanho_de_sistemas_do
 publication_index: 310
 publication_group: specialization
@@ -14,6 +16,8 @@ authors:
 - Márcios Messias Fernandes da Silva
 authors_structured:
 - name: Márcios Messias Fernandes da Silva
+  id: marcios_messias_fernandes_da_silva
+  url: /people/marcios_messias_fernandes_da_silva
 tags:
 - software_quality
 advisors:

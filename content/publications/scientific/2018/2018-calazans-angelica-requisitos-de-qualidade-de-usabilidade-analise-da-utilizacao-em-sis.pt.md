@@ -5,6 +5,8 @@ date: '2018-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2018_calazans_angelica_requisitos_de_qualidade_de_usabilidade_analise_da_utilizacao_em_sis
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2018_calazans_angelica_requisitos_de_qualidade_de_usabilidade_analise_da_utilizacao_em_sis
 publication_index: 143
 publication_group: scientific
@@ -20,14 +22,25 @@ authors:
 - KOSLOSKI, RICARDO
 authors_structured:
 - name: CALAZANS, ANGÉLICA
+  id: angelica_toffano_seidel_calazans
+  url: /people/angelica_toffano_seidel_calazans
 - name: MASSON, ELOISA
+  id: eloisa_toffano_seidel_masson
+  url: /people/eloisa_toffano_seidel_masson
 - name: PALDÊS, ROBERTO
+  id: roberto_avila_paldes
+  url: /people/roberto_avila_paldes
 - name: GUIMARÃES, FERNANDO
+  id: fernando_de_albuquerque_guimaraes
+  url: /people/fernando_de_albuquerque_guimaraes
 - name: RESENDE, KIANE
+  id: resende_kiane
+  url: /people/resende_kiane
 - name: KOSLOSKI, RICARDO
+  id: ricardo_ajax
+  url: /people/ricardo_ajax
 tags:
 - software_quality
-- ricardo_ajax
 advisors: []
 doi_isbn: 10.17771/PUCRio.wer.inf2018-43
 source_title: Workshop em Engenharia de Requisitos 2018

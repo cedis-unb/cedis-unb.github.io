@@ -4,6 +4,8 @@ date: '2023-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2023_joao_vitor_lopes_de_farias_jornada_o_uso_de_rpg_em_um_processo_de_aprendizagem
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2023_joao_vitor_lopes_de_farias_jornada_o_uso_de_rpg_em_um_processo_de_aprendizagem
 publication_index: 71
 publication_group: tcc

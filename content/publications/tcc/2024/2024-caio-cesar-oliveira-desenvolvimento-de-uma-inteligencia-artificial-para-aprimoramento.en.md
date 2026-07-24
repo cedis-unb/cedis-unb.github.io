@@ -5,6 +5,8 @@ date: '2024-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2024_caio_cesar_oliveira_desenvolvimento_de_uma_inteligencia_artificial_para_aprimoramento
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2024_caio_cesar_oliveira_desenvolvimento_de_uma_inteligencia_artificial_para_aprimoramento
 publication_index: 264
 publication_group: tcc

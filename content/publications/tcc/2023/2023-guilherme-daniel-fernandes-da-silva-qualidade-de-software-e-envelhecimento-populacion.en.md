@@ -5,6 +5,8 @@ date: '2023-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2023_guilherme_daniel_fernandes_da_silva_qualidade_de_software_e_envelhecimento_populacion
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2023_guilherme_daniel_fernandes_da_silva_qualidade_de_software_e_envelhecimento_populacion
 publication_index: 224
 publication_group: tcc
@@ -16,7 +18,8 @@ authors:
 - Lorrayne Alves Cardozo
 authors_structured:
 - name: Guilherme Daniel Fernandes da Silva
-  id: guilherme_daniel_fernandes_da_silva
+  id: silva_rodrigo_m_s_da
+  url: /people/silva_rodrigo_m_s_da
 - name: Lorrayne Alves Cardozo
   id: lorrayne_alves_cardozo
 tags:

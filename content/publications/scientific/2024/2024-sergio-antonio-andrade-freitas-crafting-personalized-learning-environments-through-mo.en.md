@@ -1,9 +1,11 @@
 ---
 title: Crafting Personalized Learning Environments Through Motivational Profiling
-date: '2024-10-13T00:00:00-03:00'
+date: '2024-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2024_sergio_antonio_andrade_freitas_crafting_personalized_learning_environments_through_mo
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2024_sergio_antonio_andrade_freitas_crafting_personalized_learning_environments_through_mo
 publication_index: 42
 publication_group: scientific
@@ -22,23 +24,24 @@ authors_structured:
   id: sergio_freitas
   url: /people/sergio_freitas
 - name: Mylena Angélica S. Farias
-  id: mylena_angelica_silva_farias
+  id: mylena_faria
+  url: /people/mylena_faria
 - name: Cristiane S. Ramos
   id: cristiane_ramos
   url: /people/cristiane_ramos
 - name: Marcus Vinícius Paiva Martins
-  id: marcus_vinicius_p_martins
+  id: marcus_martins
+  url: /people/marcus_martins
 - name: Juan Mangueira Alves
+  id: juan_alves
+  url: /people/juan_alves
 - name: Leda Cardoso S. Pinto
+  id: leda_cardoso_s_pinto
+  url: /people/leda_cardoso_s_pinto
 tags:
-- sergio_freitas
-- cristiane_ramos
 - active_learning
 - gamification
 - project_cc
-- mylena_faria
-- marcus_martins
-- juan_alves
 advisors: []
 doi_isbn: 10.1109/FIE61694.2024.10893473
 source_title: 2024 IEEE Frontiers in Education Conference (FIE)
@@ -58,8 +61,8 @@ bibtex: "@inproceedings{2024-sergio-antonio-andrade-freitas-crafting-personalize
   \ S. Ramos and Marcus Vinícius Paiva Martins and Juan Mangueira Alves and Leda Cardoso\
   \ S. Pinto},\n  title = {Crafting Personalized Learning Environments Through Motivational\
   \ Profiling},\n  year = {2024},\n  booktitle = {2024 IEEE Frontiers in Education\
-  \ Conference (FIE)},\n  pages = {1-9},\n  address = {Washington, DC, USA},\n  publisher\
-  \ = {IEEE},\n  doi = {10.1109/FIE61694.2024.10893473}\n}"
+  \ Conference (FIE)},\n  pages = {1-9},\n  publisher = {IEEE},\n  address = {Washington,\
+  \ DC, USA},\n  doi = {10.1109/FIE61694.2024.10893473}\n}"
 aliases:
 - /publications/2024-sergio-antonio-andrade-freitas-crafting-personalized-learning-environments-through-mo/
 ---

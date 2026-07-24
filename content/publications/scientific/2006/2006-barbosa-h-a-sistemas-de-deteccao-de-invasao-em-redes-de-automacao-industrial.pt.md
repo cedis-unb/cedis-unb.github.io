@@ -4,6 +4,8 @@ date: '2006-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2006_barbosa_h_a_sistemas_de_deteccao_de_invasao_em_redes_de_automacao_industrial
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2006_barbosa_h_a_sistemas_de_deteccao_de_invasao_em_redes_de_automacao_industrial
 publication_index: 218
 publication_group: scientific
@@ -17,7 +19,6 @@ authors_structured:
 - name: Barbosa, H. A.
 - name: FREITAS, S. A. A.
 tags:
-- sergio_freitas
 - security
 - ai
 advisors: []

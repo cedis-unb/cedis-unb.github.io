@@ -4,6 +4,8 @@ date: '2009-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2009_leonardo_lima_de_menezes_uma_pesquisa_sobre_a_pratica_da_atividade_de_validacao_dos_r
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2009_leonardo_lima_de_menezes_uma_pesquisa_sobre_a_pratica_da_atividade_de_validacao_dos_r
 publication_index: 305
 publication_group: specialization
@@ -14,6 +16,8 @@ authors:
 - Leonardo Lima de Menezes
 authors_structured:
 - name: Leonardo Lima de Menezes
+  id: leonardo_lima_de_menezes
+  url: /people/leonardo_lima_de_menezes
 tags:
 - software_requirements
 advisors:

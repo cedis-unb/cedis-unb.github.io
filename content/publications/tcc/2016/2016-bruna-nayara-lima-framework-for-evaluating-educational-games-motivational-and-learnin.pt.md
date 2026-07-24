@@ -4,6 +4,8 @@ date: '2016-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2016_bruna_nayara_lima_framework_for_evaluating_educational_games_motivational_and_learnin
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2016_bruna_nayara_lima_framework_for_evaluating_educational_games_motivational_and_learnin
 publication_index: 186
 publication_group: tcc
@@ -14,7 +16,8 @@ authors:
 - Bruna Nayara Lima
 authors_structured:
 - name: Bruna Nayara Lima
-  id: bruna_nayara_lima
+  id: nayara_bruna
+  url: /people/nayara_bruna
 tags:
 - gamification
 - education

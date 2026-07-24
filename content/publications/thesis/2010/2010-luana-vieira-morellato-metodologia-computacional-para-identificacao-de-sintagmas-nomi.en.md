@@ -4,6 +4,8 @@ date: '2010-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2010_luana_vieira_morellato_metodologia_computacional_para_identificacao_de_sintagmas_nomi
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2010_luana_vieira_morellato_metodologia_computacional_para_identificacao_de_sintagmas_nomi
 publication_index: 212
 publication_group: thesis

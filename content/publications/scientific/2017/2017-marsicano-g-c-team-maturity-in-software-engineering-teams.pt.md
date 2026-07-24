@@ -4,6 +4,8 @@ date: '2017-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2017_marsicano_g_c_team_maturity_in_software_engineering_teams
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2017_marsicano_g_c_team_maturity_in_software_engineering_teams
 publication_index: 164
 publication_group: scientific
@@ -18,11 +20,14 @@ authors:
 authors_structured:
 - name: MARSICANO, G. C.
 - name: Pereira, D.V.
+  id: pereira_d_v
+  url: /people/pereira_d_v
 - name: SILVA, F. Q. B.
 - name: França, C.
+  id: franca_c
+  url: /people/franca_c
 tags:
 - teamwork
-- george_marsicano
 advisors: []
 doi_isbn: 10.1109/ESEM.2017.36
 source_title: 11th International Symposium on Empirical Software Engineering and Measurement

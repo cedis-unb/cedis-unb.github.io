@@ -5,6 +5,8 @@ date: '2002-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2002_walmir_pereira_de_amorim_junior_criptografia_e_autenticacao_um_protocolo_de_autentica
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2002_walmir_pereira_de_amorim_junior_criptografia_e_autenticacao_um_protocolo_de_autentica
 publication_index: 249
 publication_group: tcc

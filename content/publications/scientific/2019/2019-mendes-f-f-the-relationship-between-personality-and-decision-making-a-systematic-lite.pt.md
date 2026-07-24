@@ -5,6 +5,8 @@ date: '2019-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2019_mendes_f_f_the_relationship_between_personality_and_decision_making_a_systematic_lite
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2019_mendes_f_f_the_relationship_between_personality_and_decision_making_a_systematic_lite
 publication_index: 126
 publication_group: scientific
@@ -21,7 +23,6 @@ authors_structured:
 - name: SALLEH, NORSAREMAH
 tags:
 - soft_skills
-- fabiana_mendes
 advisors: []
 doi_isbn: 10.1016/J.INFSOF.2019.03.010
 source_title: INFORMATION AND SOFTWARE TECHNOLOGY

@@ -5,6 +5,8 @@ date: '2015-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2015_vergara_g_f_deployment_of_collaborative_softwares_as_a_service_in_a_private_cloud_to
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2015_vergara_g_f_deployment_of_collaborative_softwares_as_a_service_in_a_private_cloud_to
 publication_index: 194
 publication_group: scientific
@@ -21,7 +23,6 @@ authors_structured:
 - name: FREITAS, S. A. A.
 tags:
 - software_architecture
-- sergio_freitas
 advisors: []
 doi_isbn: 10.1007/978-3-319-21404-7_24
 source_title: 15th Computational Science and Its Applications (ICCSA)

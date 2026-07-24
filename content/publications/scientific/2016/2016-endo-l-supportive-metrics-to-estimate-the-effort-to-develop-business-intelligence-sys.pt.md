@@ -5,6 +5,8 @@ date: '2016-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2016_endo_l_supportive_metrics_to_estimate_the_effort_to_develop_business_intelligence_sys
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2016_endo_l_supportive_metrics_to_estimate_the_effort_to_develop_business_intelligence_sys
 publication_index: 171
 publication_group: scientific
@@ -17,11 +19,12 @@ authors:
 - Canedo, E. D.
 authors_structured:
 - name: Endo, L
+  id: endo_l
+  url: /people/endo_l
 - name: MENDES, F. F.
 - name: Canedo, E. D.
 tags:
 - digital_transformation
-- fabiana_mendes
 advisors: []
 doi_isbn: 10.1109/CISTI.2016.7521476
 source_title: 11th Iberian Conference on Information Systems and Technologies (CISTI)

@@ -5,6 +5,8 @@ date: '2025-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2025_delziron_braz_de_lima_aplicativo_de_suporte_a_promocao_a_saude_mental_e_bem_estar_den
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2025_delziron_braz_de_lima_aplicativo_de_suporte_a_promocao_a_saude_mental_e_bem_estar_den
 publication_index: 8
 publication_group: tcc
@@ -16,9 +18,11 @@ authors:
 - Fellipe Pereira da Costa Silva
 authors_structured:
 - name: Delziron Braz de Lima
-  id: delziron_braz_de_lima
+  id: lima_victor_cotrim_de
+  url: /people/lima_victor_cotrim_de
 - name: Fellipe Pereira da Costa Silva
-  id: fellipe_pereira_da_costa_silva
+  id: silva_rodrigo_m_s_da
+  url: /people/silva_rodrigo_m_s_da
 tags:
 - ihc
 - active_learning

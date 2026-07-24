@@ -5,6 +5,8 @@ date: '2014-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2014_mauricio_de_almeida_silva_proposta_de_implantacao_de_melhores_praticas_de_seguranca_d
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2014_mauricio_de_almeida_silva_proposta_de_implantacao_de_melhores_praticas_de_seguranca_d
 publication_index: 284
 publication_group: specialization
@@ -15,6 +17,8 @@ authors:
 - Maurício de Almeida Silva
 authors_structured:
 - name: Maurício de Almeida Silva
+  id: mauricio_de_almeida_silva
+  url: /people/mauricio_de_almeida_silva
 tags:
 - security
 advisors:

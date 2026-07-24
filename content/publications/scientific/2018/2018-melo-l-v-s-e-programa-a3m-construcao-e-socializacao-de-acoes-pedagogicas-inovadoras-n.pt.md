@@ -5,6 +5,8 @@ date: '2018-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2018_melo_l_v_s_e_programa_a3m_construcao_e_socializacao_de_acoes_pedagogicas_inovadoras_n
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2018_melo_l_v_s_e_programa_a3m_construcao_e_socializacao_de_acoes_pedagogicas_inovadoras_n
 publication_index: 149
 publication_group: scientific
@@ -18,13 +20,14 @@ authors:
 - LEITE, L. L.
 authors_structured:
 - name: MELO, L. V. S. E.
+  id: melo_livia_veleda_de_sousa_e
+  url: /people/melo_livia_veleda_de_sousa_e
 - name: NOGUEIRA, T. J.
 - name: FREITAS, S. A. A.
 - name: LEITE, L. L.
 tags:
 - active_learning
 - education
-- sergio_freitas
 advisors: []
 doi_isbn: ''
 source_title: X Simpósio Nacional de Educação

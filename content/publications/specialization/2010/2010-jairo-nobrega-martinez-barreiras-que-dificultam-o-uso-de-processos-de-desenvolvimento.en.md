@@ -5,6 +5,8 @@ date: '2010-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2010_jairo_nobrega_martinez_barreiras_que_dificultam_o_uso_de_processos_de_desenvolvimento
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2010_jairo_nobrega_martinez_barreiras_que_dificultam_o_uso_de_processos_de_desenvolvimento
 publication_index: 291
 publication_group: specialization
@@ -15,6 +17,8 @@ authors:
 - Jairo Nóbrega Martínez
 authors_structured:
 - name: Jairo Nóbrega Martínez
+  id: jairo_nobrega_martinez
+  url: /people/jairo_nobrega_martinez
 tags:
 - software_quality
 advisors:

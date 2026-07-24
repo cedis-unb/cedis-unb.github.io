@@ -5,6 +5,8 @@ date: '2010-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2010_eduardo_de_oliveira_e_soares_proposta_de_uso_de_tecnicas_de_persuasao_no_tratamento_d
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2010_eduardo_de_oliveira_e_soares_proposta_de_uso_de_tecnicas_de_persuasao_no_tratamento_d
 publication_index: 286
 publication_group: specialization
@@ -15,6 +17,8 @@ authors:
 - Eduardo de Oliveira e Soares
 authors_structured:
 - name: Eduardo de Oliveira e Soares
+  id: eduardo_de_oliveira_e_soares
+  url: /people/eduardo_de_oliveira_e_soares
 tags:
 - software_requirements
 advisors:

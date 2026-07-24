@@ -4,6 +4,8 @@ date: '2017-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2017_tiago_ribeiro_de_assuncao_aplicacao_da_gamificacao_na_rede_social_about
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2017_tiago_ribeiro_de_assuncao_aplicacao_da_gamificacao_na_rede_social_about
 publication_index: 168
 publication_group: tcc

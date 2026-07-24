@@ -5,6 +5,8 @@ date: '2012-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2012_lozzi_s_influence_of_affirmative_action_on_the_academic_performance_of_undergraduate
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2012_lozzi_s_influence_of_affirmative_action_on_the_academic_performance_of_undergraduate
 publication_index: 209
 publication_group: scientific
@@ -20,13 +22,22 @@ authors:
 - COSTA, C.
 authors_structured:
 - name: LOZZI, S.
+  id: lozzi_s
+  url: /people/lozzi_s
 - name: DINIZ, F. B.
+  id: diniz_f_b
+  url: /people/diniz_f_b
 - name: ALBURQUERQUE, P.
+  id: alburquerque_p
+  url: /people/alburquerque_p
 - name: REZENDE, M.
+  id: rezende_m
+  url: /people/rezende_m
 - name: FREITAS, S. A. A.
 - name: COSTA, C.
+  id: costa_c
+  url: /people/costa_c
 tags:
-- sergio_freitas
 - learning_analytics
 advisors: []
 doi_isbn: ''

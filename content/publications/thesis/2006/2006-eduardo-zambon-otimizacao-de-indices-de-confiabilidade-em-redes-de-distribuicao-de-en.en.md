@@ -4,6 +4,8 @@ date: '2006-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2006_eduardo_zambon_otimizacao_de_indices_de_confiabilidade_em_redes_de_distribuicao_de_en
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2006_eduardo_zambon_otimizacao_de_indices_de_confiabilidade_em_redes_de_distribuicao_de_en
 publication_index: 211
 publication_group: thesis

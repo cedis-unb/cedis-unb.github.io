@@ -5,6 +5,8 @@ date: '2020-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2020_batista_a_c_d_teamwork_quality_and_team_success_in_software_development_a_non_exact_r
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2020_batista_a_c_d_teamwork_quality_and_team_success_in_software_development_a_non_exact_r
 publication_index: 119
 publication_group: scientific
@@ -19,13 +21,18 @@ authors:
 - MARSICANO, G. C.
 authors_structured:
 - name: BATISTA, A. C. D.
+  id: batista_a_c_d
+  url: /people/batista_a_c_d
 - name: SOUZA, R. M.
+  id: souza_m
+  url: /people/souza_m
 - name: SILVA, F. Q. B.
 - name: MELO, L. A.
+  id: melo_alba_c_m_a
+  url: /people/melo_alba_c_m_a
 - name: MARSICANO, G. C.
 tags:
 - teamwork
-- george_marsicano
 advisors: []
 doi_isbn: 10.1145/3382494.3410632
 source_title: Empirical Software Engineering and Measurement (ESEM)

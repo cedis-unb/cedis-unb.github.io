@@ -5,6 +5,8 @@ date: '2020-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2020_ronyell_henrique_dos_santos_utilizacao_de_operacoes_de_refatoracao_para_aprimoramento
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2020_ronyell_henrique_dos_santos_utilizacao_de_operacoes_de_refatoracao_para_aprimoramento
 publication_index: 114
 publication_group: tcc
@@ -15,7 +17,8 @@ authors:
 - Ronyell Henrique dos Santos
 authors_structured:
 - name: Ronyell Henrique dos Santos
-  id: ronyell_henrique_dos_santos
+  id: santos_veronica_souza_dos
+  url: /people/santos_veronica_souza_dos
 tags:
 - software_requirements
 - verification_validation_testing

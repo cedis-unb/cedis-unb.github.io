@@ -4,6 +4,8 @@ date: '2018-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2018_figueiredo_r_m_c_governanca_em_tecnologia_de_informacao_e_comunicacao_para_o_setor_pu
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2018_figueiredo_r_m_c_governanca_em_tecnologia_de_informacao_e_comunicacao_para_o_setor_pu
 publication_index: 137
 publication_group: scientific
@@ -17,10 +19,11 @@ authors:
 authors_structured:
 - name: FIGUEIREDO, R.M.C.
 - name: SANTOS, R.R.
+  id: santos_r_r
+  url: /people/santos_r_r
 - name: FREITAS, S. A. A.
 tags:
 - digital_transformation
-- sergio_freitas
 advisors: []
 doi_isbn: '9788560365272'
 source_title: ''

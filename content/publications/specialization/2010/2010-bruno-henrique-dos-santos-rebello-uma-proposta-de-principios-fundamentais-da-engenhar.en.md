@@ -5,6 +5,8 @@ date: '2010-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2010_bruno_henrique_dos_santos_rebello_uma_proposta_de_principios_fundamentais_da_engenhar
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2010_bruno_henrique_dos_santos_rebello_uma_proposta_de_principios_fundamentais_da_engenhar
 publication_index: 288
 publication_group: specialization
@@ -15,7 +17,8 @@ authors:
 - Bruno Henrique dos Santos Rebello
 authors_structured:
 - name: Bruno Henrique dos Santos Rebello
-  id: henrique_santos
+  id: bruno_henrique_dos_santos_rebello
+  url: /people/bruno_henrique_dos_santos_rebello
 tags:
 - software_requirements
 advisors:

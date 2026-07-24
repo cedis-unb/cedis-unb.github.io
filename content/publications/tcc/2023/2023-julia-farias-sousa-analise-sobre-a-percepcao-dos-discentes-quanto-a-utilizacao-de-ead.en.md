@@ -5,6 +5,8 @@ date: '2023-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2023_julia_farias_sousa_analise_sobre_a_percepcao_dos_discentes_quanto_a_utilizacao_de_ead
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2023_julia_farias_sousa_analise_sobre_a_percepcao_dos_discentes_quanto_a_utilizacao_de_ead
 publication_index: 227
 publication_group: tcc

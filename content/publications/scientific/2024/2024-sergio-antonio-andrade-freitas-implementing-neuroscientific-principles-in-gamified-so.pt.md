@@ -4,6 +4,8 @@ date: '2024-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2024_sergio_antonio_andrade_freitas_implementing_neuroscientific_principles_in_gamified_so
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2024_sergio_antonio_andrade_freitas_implementing_neuroscientific_principles_in_gamified_so
 publication_index: 41
 publication_group: scientific
@@ -24,11 +26,15 @@ authors_structured:
   id: cristiane_ramos
   url: /people/cristiane_ramos
 - name: Eduardo Bessa Pereira da Silva
+  id: eduardo_bessa
+  url: /people/eduardo_bessa
 - name: Marcia Renata Mortari
+  id: marcia_renata_mortari
+  url: /people/marcia_renata_mortari
 - name: Dianne Magalhaes Viana
+  id: dianne_magalhaes_viana
+  url: /people/dianne_magalhaes_viana
 tags:
-- sergio_freitas
-- cristiane_ramos
 - active_learning
 - learning_analytics
 - gamification

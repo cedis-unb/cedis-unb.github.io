@@ -5,6 +5,8 @@ date: '2024-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2024_carvalho_segundo_washington_luis_ribeiro_de_atracao_entre_periodicos_brasileiros_de_m
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2024_carvalho_segundo_washington_luis_ribeiro_de_atracao_entre_periodicos_brasileiros_de_m
 publication_index: 38
 publication_group: scientific
@@ -18,13 +20,18 @@ authors:
 - SUNDFELD, Daniel Lima
 authors_structured:
 - name: CARVALHO SEGUNDO, WASHINGTON LUÍS RIBEIRO DE
+  id: washington_luis_ribeiro_de_carvalho_segundo
+  url: /people/washington_luis_ribeiro_de_carvalho_segundo
 - name: CANTO, FABIO LORENSI DO
+  id: canto_fabio_lorensi_do
+  url: /people/canto_fabio_lorensi_do
 - name: PINTO, ADILSON LUIZ
+  id: pinto_adilson_luiz
+  url: /people/pinto_adilson_luiz
 - name: SUNDFELD, Daniel Lima
   id: daniel_sundfeld
   url: /people/daniel_sundfeld
 tags:
-- daniel_sundfeld
 - hpc
 - project_laguna
 advisors: []
