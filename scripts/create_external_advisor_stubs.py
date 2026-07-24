@@ -1,18 +1,19 @@
 #!/usr/bin/env python3
-"""Cria .md stubs para os 6 advisors externos de advisors.yaml que
-ainda não têm página. Necessário para o passo Gap #1 (remover advisors.yaml)
-sem perder informação.
+"""[HISTÓRICO — NÃO EXECUTAR] Passo prévio do Gap #1 (2026-07-24).
 
-Stubs: profile_level: advisor_only, layout: derived (reusa template minimal),
-contact opcional, aliases_authors preserva variações comuns.
+Criava .md stubs para os 6 advisors externos que existiam em
+data/advisors.yaml sem página própria. Executado uma vez antes de
+`data/advisors.yaml` ser deletado.
 
-Advisors internos (Sergio, Cristiane, André Lanna, George, Fabiana, Ricardo)
-já têm .md — pulados. Daniel Sundfeld é o mesmo Daniel Lima (link já aponta
-lá) — pulado também.
+**Este script não funciona mais**: advisors.yaml foi removido no Gap #1.
+Os 6 stubs criados por ele estão em `content/people/` com
+`profile_level: advisor_only`:
+  andrea_cabello, berilhes_garcia, edna_canedo,
+  marilia_miranda, claudia_ochoa, celia_higawa
 
-Comportamento:
-  --dry-run : mostra plano (default)
-  --apply   : cria stubs
+Mantido no repositório como referência histórica.
+Se precisar adicionar novos advisors externos, crie o .md manualmente
+seguindo o padrão dos existentes (não precisa mais deste script).
 """
 
 from __future__ import annotations
@@ -27,6 +28,14 @@ try:
 except ImportError:
     print("ERRO: PyYAML não instalado.", file=sys.stderr)
     sys.exit(2)
+
+
+# Guard-rail: falhar cedo se advisors.yaml não existir mais
+if not (Path(__file__).resolve().parent.parent / "data" / "advisors.yaml").exists():
+    print("ERRO: data/advisors.yaml não existe. Este script é histórico "
+          "e só funciona antes do Gap #1. Crie novos stubs manualmente.",
+          file=sys.stderr)
+    sys.exit(3)
 
 
 REPO_ROOT = Path(__file__).resolve().parent.parent

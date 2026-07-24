@@ -1,27 +1,16 @@
 #!/usr/bin/env python3
-"""Copia contato (email/lattes/orcid) e áreas de data/advisors.yaml para
-o frontmatter dos .md correspondentes em content/people/.
+"""[HISTÓRICO — NÃO EXECUTAR] Migração one-shot do passo 9.
 
-Referência: passo 9 do roadmap de unificação de registro de colaboradores.
+Copiava contato (email/lattes/orcid) e áreas de data/advisors.yaml para
+o frontmatter dos .md em content/people/. Executado em 2026-07-23.
 
-Estratégia ADITIVA: os campos passam a existir em ambas as fontes
-(advisors.yaml permanece intacto). Templates continuam funcionando
-via advisors.yaml; futuros templates podem consumir do frontmatter
-via people-lookup partial.
+**Este script não funciona mais**: data/advisors.yaml foi removido no
+Gap #1 (2026-07-24). Contato e áreas agora vivem apenas no frontmatter
+dos .md e são consumidos via `partial "people-lookup"`.
 
-Comportamento:
-  --dry-run : mostra plano (default)
-  --apply   : injeta contact/areas no frontmatter (idempotente — se já
-              existir e for igual, noop)
-
-Formato injetado:
-    contact:
-      email: ...
-      lattes: ...
-      orcid: ...
-    areas:
-      - active_learning
-      - ...
+Mantido no repositório como referência histórica do refactor.
+Se precisar reproduzir a migração, restaure `data/advisors.yaml` de
+`git show HEAD~N:data/advisors.yaml` antes de rodar.
 """
 
 from __future__ import annotations
@@ -37,6 +26,14 @@ try:
 except ImportError:
     print("ERRO: PyYAML não instalado.", file=sys.stderr)
     sys.exit(2)
+
+
+# Guard-rail: falhar cedo se advisors.yaml não existir mais
+if not (Path(__file__).resolve().parent.parent / "data" / "advisors.yaml").exists():
+    print("ERRO: data/advisors.yaml não existe. Este script é histórico "
+          "e só funciona antes do Gap #1 (2026-07-24). Ver docstring.",
+          file=sys.stderr)
+    sys.exit(3)
 
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
