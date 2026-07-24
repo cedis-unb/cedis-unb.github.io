@@ -1,0 +1,153 @@
+{{/*
+  people-index — dicionário global slug → info consolidado da pessoa.
+
+  Este partial constrói UM dicionário unificando as 3 fontes canônicas:
+    · content/people/<slug>.md (page rica)
+    · data/people.yaml (orientações — flat ou com supervisions[])
+    · data/advisors.yaml (contato de professores)
+
+  Uso (SEMPRE via partialCached para evitar reconstrução por chamada):
+
+    {{ $index := partialCached "people-index" "global" }}
+    {{ $me := index $index "sergio_freitas" }}
+    {{ with $me }}{{ .name }} — {{ .publications_count }} pubs{{ end }}
+
+  Estrutura de cada entrada retornada:
+
+    slug                 string
+    name                 string   (do .md > data > advisor > slug humanized)
+    profile_level        string   ("researcher" | "card_with_page" | "card" | "derived")
+    sources              slice    (["page", "data", "advisor"] — quais fontes têm registro)
+    page                 Page ou nil
+    page_url             string   (RelPermalink se page, "" senão)
+    advisor              dict ou nil  (nome, email, lattes, orcid, areas, link)
+    data_entry           dict ou nil  (a entrada de data/people.yaml)
+    supervisions         slice    (normalizadas — sempre lista, mesmo com 1 item)
+    supervisions_count   int
+    publications         slice    (items de productions.yaml com slug em .tags)
+    publications_count   int
+
+  Este partial é read-only: não muta nada; apenas monta uma view.
+*/}}
+
+{{ $index := dict }}
+
+{{/* Passo 1 — coleta pré-lista de slugs conhecidos a partir das 3 fontes */}}
+{{ $knownSlugs := slice }}
+{{ range site.RegularPages }}
+  {{ if eq .Section "people" }}
+    {{ $slug := .File.TranslationBaseName }}
+    {{ if and (ne $slug "all") (not (in $knownSlugs $slug)) }}
+      {{ $knownSlugs = $knownSlugs | append $slug }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+{{ range hugo.Data.people.people }}
+  {{ $s := .slug | default "" }}
+  {{ if and $s (not (in $knownSlugs $s)) }}
+    {{ $knownSlugs = $knownSlugs | append $s }}
+  {{ end }}
+{{ end }}
+{{ range $s, $info := hugo.Data.advisors.advisors }}
+  {{ if not (in $knownSlugs $s) }}
+    {{ $knownSlugs = $knownSlugs | append $s }}
+  {{ end }}
+{{ end }}
+
+{{/* Passo 2 — pré-indexa entradas de data/people.yaml por slug */}}
+{{ $dataBySlug := dict }}
+{{ range hugo.Data.people.people }}
+  {{ $s := .slug | default "" }}
+  {{ if $s }}
+    {{ $dataBySlug = merge $dataBySlug (dict $s .) }}
+  {{ end }}
+{{ end }}
+
+{{/* Passo 3 — pré-indexa publicações por slug (iterando productions UMA vez) */}}
+{{ $pubsBySlug := dict }}
+{{ range hugo.Data.productions.items }}
+  {{ $prod := . }}
+  {{ range .tags }}
+    {{ $tag := . }}
+    {{ if in $knownSlugs $tag }}
+      {{ $existing := index $pubsBySlug $tag | default (slice) }}
+      {{ $pubsBySlug = merge $pubsBySlug (dict $tag ($existing | append $prod)) }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{/* Passo 4 — para cada slug, monta a entrada consolidada */}}
+{{ range $knownSlugs }}
+  {{ $slug := . }}
+
+  {{/* Fontes */}}
+  {{ $page := site.GetPage (printf "/people/%s" $slug) }}
+  {{ $dataEntry := index $dataBySlug $slug }}
+  {{ $advisor := index hugo.Data.advisors.advisors $slug }}
+
+  {{/* Sources tags */}}
+  {{ $sources := slice }}
+  {{ if $page }}{{ $sources = $sources | append "page" }}{{ end }}
+  {{ if $dataEntry }}{{ $sources = $sources | append "data" }}{{ end }}
+  {{ if $advisor }}{{ $sources = $sources | append "advisor" }}{{ end }}
+
+  {{/* Nome canônico — prioridade page > data > advisor > humanized slug */}}
+  {{ $name := replaceRE "[-_]+" " " $slug | title }}
+  {{ with $advisor }}{{ $name = .name }}{{ end }}
+  {{ with $dataEntry }}{{ $name = .name }}{{ end }}
+  {{ with $page }}{{ $name = .Title }}{{ end }}
+
+  {{/* profile_level — page com frontmatter explícito vence tudo; senão
+       inferido por presença de fonte. NUNCA cai em "derived" implicitamente
+       (esse tag é reservado a stubs gerados pelo scripts/derive_people.py). */}}
+  {{ $profileLevel := "" }}
+  {{ if $advisor }}{{ $profileLevel = "advisor_only" }}{{ end }}
+  {{ if $dataEntry }}{{ $profileLevel = "card" }}{{ end }}
+  {{ with $page }}
+    {{ if in .Params.categories "researcher" }}
+      {{ $profileLevel = "researcher" }}
+    {{ else }}
+      {{ $profileLevel = "card_with_page" }}
+    {{ end }}
+    {{ with .Params.profile_level }}{{ $profileLevel = . }}{{ end }}
+  {{ end }}
+
+  {{/* Supervisions normalizadas */}}
+  {{ $supervisions := slice }}
+  {{ with $dataEntry }}
+    {{ if .supervisions }}
+      {{ $supervisions = .supervisions }}
+    {{ else }}
+      {{ $supervisions = slice . }}
+    {{ end }}
+  {{ end }}
+
+  {{/* Publicações — já pré-indexadas */}}
+  {{ $publications := index $pubsBySlug $slug | default (slice) }}
+
+  {{/* URL da página (RelPermalink), vazio se não tem */}}
+  {{ $pageURL := "" }}
+  {{ with $page }}{{ $pageURL = .RelPermalink }}{{ end }}
+
+  {{ $found := or $page $dataEntry $advisor (gt (len $publications) 0) }}
+
+  {{ $entry := dict
+    "slug" $slug
+    "found" $found
+    "name" $name
+    "profile_level" $profileLevel
+    "sources" $sources
+    "page" $page
+    "page_url" $pageURL
+    "advisor" $advisor
+    "data_entry" $dataEntry
+    "supervisions" $supervisions
+    "supervisions_count" (len $supervisions)
+    "publications" $publications
+    "publications_count" (len $publications)
+  }}
+
+  {{ $index = merge $index (dict $slug $entry) }}
+{{ end }}
+
+{{ return $index }}

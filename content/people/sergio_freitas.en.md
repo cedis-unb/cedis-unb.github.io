@@ -1,6 +1,7 @@
 ---
 author: CEDIS
 title: "Sergio Antônio Andrade de Freitas"
+profile_level: researcher
 date: 2013-09-01T00:00:00-03:00
 weight: 10
 language: en

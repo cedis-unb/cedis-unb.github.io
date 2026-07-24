@@ -1,6 +1,7 @@
 ---
 author: CEDIS
 title: "Ricardo Ajax Dias Kosloski"
+profile_level: researcher
 date: 2014-11-01T00:00:00-03:00
 weight: 40
 language: pt

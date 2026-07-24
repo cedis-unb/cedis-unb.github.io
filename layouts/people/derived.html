@@ -1,0 +1,90 @@
+{{ define "main" }}
+{{/*
+  derived.html — perfil mínimo para pessoas derivadas automaticamente
+  de authors[] em data/productions.yaml. Marca com bandeira visual clara
+  que este é um perfil não-oficial, gerado por scripts/derive_people.py.
+
+  Consumido quando frontmatter tem `layout: derived`.
+*/}}
+{{ $isPt := eq .Site.Language.Lang "pt" }}
+{{ $lang := .Site.Language.Lang }}
+{{ $name := .Title }}
+{{ $prods := .Params.matched_productions | default (slice) }}
+{{ $aliases := .Params.aliases_authors | default (slice) }}
+{{ $count := len $prods }}
+
+{{ $countLabel := cond $isPt (cond (eq $count 1) "produção" "produções") (cond (eq $count 1) "publication" "publications") }}
+{{ $backLabel := cond $isPt "← Todos os colaboradores" "← All collaborators" }}
+{{ $eyebrow := cond $isPt "Perfil derivado automaticamente" "Auto-derived profile" }}
+{{ $aliasesLabel := cond $isPt "Variações do nome vistas em autoria" "Name variations seen in authorship" }}
+{{ $productionsLabel := cond $isPt "Produções onde é coautor(a)" "Works where cited as co-author" }}
+{{ $claimTitle := cond $isPt "É você e quer um perfil completo?" "Is that you and want a full profile?" }}
+{{ $claimBody := cond $isPt "Perfis derivados são gerados automaticamente a partir dos coautores citados nas produções do CEDIS. Se você quer aparecer com bio, foto e trajetória, entre em contato com o grupo." "Derived profiles are auto-generated from co-authors cited in CEDIS works. If you'd like to appear with a bio, photo, and trajectory, please contact the group." }}
+{{ $claimCta := cond $isPt "Contate o CEDIS" "Contact CEDIS" }}
+{{ $joinUrl := cond $isPt "/junte-se/" "/join/" }}
+{{ $allUrl := cond $isPt "/pt/people/all/" "/people/all/" }}
+
+<main class="bg-[radial-gradient(circle_at_top,_rgba(197,39,47,0.16),_transparent_28%),linear-gradient(180deg,_#f5f5f4_0%,_#ffffff_38%,_#f5f5f4_100%)] text-gray-950 dark:bg-gray-900 dark:text-gray-100">
+  <section class="border-b border-black/5 bg-gray-950 text-white">
+    <div class="mx-auto max-w-screen-xl px-4 py-10 md:px-6 md:py-12 lg:px-8">
+      <a href="{{ $allUrl }}" class="inline-flex items-center gap-2 text-sm font-semibold text-white/70 transition-colors hover:text-white">{{ $backLabel }}</a>
+      <div class="mt-6 max-w-3xl">
+        <span class="inline-flex items-center gap-2 rounded-full border border-amber-300/40 bg-amber-500/10 px-3 py-1 text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-amber-200">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-3 w-3" aria-hidden="true"><path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l6.518 11.59c.75 1.334-.213 2.98-1.742 2.98H3.482c-1.53 0-2.493-1.646-1.743-2.98L8.257 3.099zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd" /></svg>
+          {{ $eyebrow }}
+        </span>
+        <h1 class="mt-4 text-4xl font-black tracking-tight text-white md:text-5xl">{{ $name }}</h1>
+        <p class="mt-4 text-lg leading-8 text-white/78">
+          {{- if $isPt -}}
+          Coautor(a) citado(a) em <strong class="text-white">{{ $count }} {{ $countLabel }}</strong> do CEDIS. Perfil individual ainda não publicado.
+          {{- else -}}
+          Cited as co-author in <strong class="text-white">{{ $count }} {{ $countLabel }}</strong> by CEDIS. Individual profile not yet published.
+          {{- end -}}
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-screen-xl px-4 py-10 md:px-6 md:py-12 lg:px-8">
+    <div class="grid gap-8 lg:grid-cols-[minmax(0,1fr)_20rem] lg:items-start">
+      <article class="space-y-6">
+        <div class="rounded-[1.75rem] border border-black/5 bg-white/80 p-6 shadow-[0_16px_60px_rgba(15,23,42,0.06)] dark:border-white/10 dark:bg-white/[0.04] md:p-8">
+          <div class="flex items-baseline justify-between gap-4">
+            <h2 class="m-0 text-xl font-black tracking-tight text-gray-950 dark:text-white md:text-2xl">{{ $productionsLabel }}</h2>
+            <span class="inline-flex items-center rounded-full border border-primary-200 bg-primary-50 px-3 py-1 text-sm font-semibold text-primary-700 dark:border-primary-400/25 dark:bg-primary-500/10 dark:text-primary-100">{{ $count }}</span>
+          </div>
+          <ol class="mt-5 list-none space-y-3 pl-0">
+            {{ range sort $prods "year" "desc" }}
+              <li class="rounded-[1.25rem] border border-black/5 bg-stone-50 px-4 py-3 dark:border-white/10 dark:bg-white/[0.03]">
+                <p class="m-0 text-sm leading-6 text-gray-700 dark:text-white/80">{{ .title }}</p>
+                <p class="mt-1 m-0 text-xs text-gray-500 dark:text-white/60">
+                  {{ if .year }}{{ .year }}{{ end }}{{ if and .year .type }} · {{ end }}{{ if .type }}{{ .type | i18n | default .type }}{{ end }}
+                </p>
+              </li>
+            {{ end }}
+          </ol>
+        </div>
+
+        <div class="rounded-[1.75rem] border border-primary-200/70 bg-[linear-gradient(180deg,_rgba(255,247,237,0.95),_rgba(255,255,255,0.9))] p-6 shadow-[0_16px_60px_rgba(197,39,47,0.08)] dark:border-primary-400/25 dark:bg-[linear-gradient(180deg,_rgba(76,29,29,0.35),_rgba(15,23,42,0.5))] md:p-8">
+          <h2 class="m-0 text-lg font-black tracking-tight text-gray-950 dark:text-white md:text-xl">{{ $claimTitle }}</h2>
+          <p class="mt-3 text-sm leading-6 text-gray-700 dark:text-white/78">{{ $claimBody }}</p>
+          <a href="{{ $joinUrl }}" class="mt-4 inline-flex items-center rounded-full bg-primary-600 px-4 py-2 text-sm font-semibold text-white shadow-lg shadow-primary-600/20 transition-colors hover:bg-primary-500">{{ $claimCta }}</a>
+        </div>
+      </article>
+
+      <aside class="space-y-4">
+        {{ if gt (len $aliases) 0 }}
+        <div class="rounded-[1.5rem] border border-black/5 bg-white/80 p-5 dark:border-white/10 dark:bg-white/[0.04]">
+          <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-gray-400 dark:text-white/72">{{ $aliasesLabel }}</div>
+          <ul class="mt-3 list-none space-y-1.5 pl-0">
+            {{ range $aliases }}
+              <li class="text-sm leading-6 text-gray-600 dark:text-white/72">{{ . }}</li>
+            {{ end }}
+          </ul>
+        </div>
+        {{ end }}
+      </aside>
+    </div>
+  </section>
+</main>
+{{ end }}
