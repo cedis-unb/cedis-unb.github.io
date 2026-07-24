@@ -1,0 +1,23 @@
+---
+author: CEDIS
+title: RODRIGUES PEREIRA, NAIRA RÚBIA
+profile_level: derived
+layout: derived
+slug: rodrigues_pereira_naira_rubia
+language: en
+summary: Co-author cited in 1 publication by CEDIS.
+authorimage: ../assets/images/global/author.webp
+aliases_authors:
+- RODRIGUES PEREIRA, NAIRA RÚBIA
+matched_productions:
+- title: "Usability study of a smartphone app entitled: Living with Parkinson\x92s disease"
+  year: 2023
+  type: article
+---
+
+Cited as co-author in **1 publication** by CEDIS.
+
+Detailed profile not yet available — the information below was
+automatically derived from the works where this name appears.
+
+Is that you and want a full profile? [Contact CEDIS](/join/).

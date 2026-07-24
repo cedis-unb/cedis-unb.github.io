@@ -1,11 +1,12 @@
 people:
 - name: Cristiane Soares Ramos
+  slug: cristiane_ramos
   categories:
   - people
   - phd_candidate
   title:
-    pt: "Efeitos dos fatores humanos no Desenvolvimento de Software seguro"
-    en: "Effects of human factors on secure software development"
+    pt: Efeitos dos fatores humanos no Desenvolvimento de Software seguro
+    en: Effects of human factors on secure software development
   url: /people/cristiane_ramos
   program: curso_ppca_doutorado
   advisors:
@@ -17,12 +18,13 @@ people:
   - gamification
   year: 2026
 - name: Ian Lucca Soares Mesquita
+  slug: ian_lucca_soares_mesquita
   categories:
   - people
   - tcc
   title:
-    pt: "Impacto do uso de IA em curso de Engenharia de Software"
-    en: "Impact of the use of AI in a Software Engineering course"
+    pt: Impacto do uso de IA em curso de Engenharia de Software
+    en: Impact of the use of AI in a Software Engineering course
   program: curso_esw2
   advisors:
   - sergio_freitas
@@ -32,12 +34,13 @@ people:
   - education
   year: 2026
 - name: André Lopes de Sousa
+  slug: andre_lopes_de_sousa
   categories:
   - people
   - tcc
   title:
-    pt: "Inteligência artificial e direito"
-    en: "Artificial intelligence and law"
+    pt: Inteligência artificial e direito
+    en: Artificial intelligence and law
   program: curso_esw2
   advisors:
   - sergio_freitas
@@ -46,12 +49,13 @@ people:
   - ai
   year: 2026
 - name: Israel Thalles Dutra dos Santos
+  slug: israel_thalles_dutra_dos_santos
   categories:
   - people
   - tcc
   title:
-    pt: "Tema em definição"
-    en: "Topic under development"
+    pt: Tema em definição
+    en: Topic under development
   program: curso_esw2
   advisors:
   - sergio_freitas
@@ -59,12 +63,13 @@ people:
   - active
   year: 2026
 - name: Christian Hirsch Santos
+  slug: christian_hirsch_santos
   categories:
   - people
   - tcc
   title:
-    pt: "Impacto do uso de IA em curso de Engenharia de Software"
-    en: "Impact of the use of AI in a Software Engineering course"
+    pt: Impacto do uso de IA em curso de Engenharia de Software
+    en: Impact of the use of AI in a Software Engineering course
   program: curso_esw2
   advisors:
   - sergio_freitas
@@ -74,12 +79,13 @@ people:
   - education
   year: 2026
 - name: Henrique Azevedo Batalha
+  slug: henrique_azevedo_batalha
   categories:
   - people
   - tcc
   title:
-    pt: "Tema em definição"
-    en: "Topic under development"
+    pt: Tema em definição
+    en: Topic under development
   program: curso_esw2
   advisors:
   - sergio_freitas
@@ -87,12 +93,13 @@ people:
   - active
   year: 2026
 - name: Marina Marcia Costa de Souza
+  slug: marina_marcia_costa_de_souza
   categories:
   - people
   - tcc
   title:
-    pt: "Tema em definição"
-    en: "Topic under development"
+    pt: Tema em definição
+    en: Topic under development
   program: curso_esw2
   advisors:
   - sergio_freitas
@@ -100,12 +107,13 @@ people:
   - active
   year: 2026
 - name: Danielle Soares Da Silva
+  slug: danielle_soares_da_silva
   categories:
   - people
   - volunteer
   title:
-    pt: "Desenvolvimento de soluções com base em IA"
-    en: "Development of AI-based solutions"
+    pt: Desenvolvimento de soluções com base em IA
+    en: Development of AI-based solutions
   program: curso_esw2
   advisors:
   - andre_lanna
@@ -116,12 +124,13 @@ people:
   - machine_learning
   year: 2025
 - name: Danilo de Melo Ribeiro
+  slug: danilo_de_melo_ribeiro
   categories:
   - people
   - volunteer
   title:
-    pt: "Desenvolvimento de soluções com base em IA"
-    en: "Development of AI-based solutions"
+    pt: Desenvolvimento de soluções com base em IA
+    en: Development of AI-based solutions
   program: curso_esw2
   advisors:
   - andre_lanna
@@ -132,12 +141,13 @@ people:
   - machine_learning
   year: 2025
 - name: Edson Pereira Roldao Filho
+  slug: edson_pereira_roldao_filho
   categories:
   - people
   - volunteer
   title:
-    pt: "Desenvolvimento de soluções com base em IA"
-    en: "Development of AI-based solutions"
+    pt: Desenvolvimento de soluções com base em IA
+    en: Development of AI-based solutions
   program: curso_esw2
   advisors:
   - andre_lanna
@@ -148,12 +158,13 @@ people:
   - machine_learning
   year: 2025
 - name: Kaleb de Souza Macedo
+  slug: kaleb_de_souza_macedo
   categories:
   - people
   - volunteer
   title:
-    pt: "Desenvolvimento de soluções com base em IA"
-    en: "Development of AI-based solutions"
+    pt: Desenvolvimento de soluções com base em IA
+    en: Development of AI-based solutions
   program: curso_esw2
   advisors:
   - andre_lanna
@@ -164,12 +175,13 @@ people:
   - machine_learning
   year: 2025
 - name: Matheus de Alcantara Da Silva Campos
+  slug: matheus_de_alcantara_da_silva_campos
   categories:
   - people
   - volunteer
   title:
-    pt: "Desenvolvimento de soluções com base em IA"
-    en: "Development of AI-based solutions"
+    pt: Desenvolvimento de soluções com base em IA
+    en: Development of AI-based solutions
   program: curso_esw2
   advisors:
   - andre_lanna
@@ -180,12 +192,13 @@ people:
   - machine_learning
   year: 2025
 - name: Yuri Souza de Andrade Castro Silva
+  slug: yuri_souza_de_andrade_castro_silva
   categories:
   - people
   - volunteer
   title:
-    pt: "Desenvolvimento de soluções com base em IA"
-    en: "Development of AI-based solutions"
+    pt: Desenvolvimento de soluções com base em IA
+    en: Development of AI-based solutions
   program: curso_esw2
   advisors:
   - andre_lanna
@@ -196,6 +209,7 @@ people:
   - machine_learning
   year: 2025
 - name: Denniel William Roriz Lima
+  slug: denniel_william_roriz_lima
   categories:
   - people
   - tcc
@@ -211,12 +225,13 @@ people:
   - software_quality
   year: 2025
 - name: Luana Souza Silva Torres
+  slug: luana_souza_silva_torres
   categories:
   - people
   - tcc
   title:
-    pt: "Processo de desenvolvimento para projetos colaborativos: a experiência do Agromart"
-    en: "Development process for collaborative projects: the Agromart experience"
+    pt: 'Processo de desenvolvimento para projetos colaborativos: a experiência do Agromart'
+    en: 'Development process for collaborative projects: the Agromart experience'
   program: curso_esw2
   advisors:
   - cristiane_ramos
@@ -226,6 +241,7 @@ people:
   - teamwork
   year: 2025
 - name: Erick Giffoni Felicissimo
+  slug: erick_giffoni_felicissimo
   categories:
   - people
   - tcc
@@ -240,6 +256,7 @@ people:
   - software_architecture
   year: 2025
 - name: João Pedro Elias de Moura
+  slug: joao_pedro_elias_de_moura
   categories:
   - people
   - tcc
@@ -253,43 +270,45 @@ people:
   - inactive
   - software_architecture
   year: 2025
-- name: Marcus Vinicius P. Martins
-  categories:
-  - people
-  - tcc
-  title:
-    pt: "OpenBatch: serviço de processamento em lote para nuvem privada"
-    en: "OpenBatch: batch processing service for private cloud"
-  program: curso_esw2
-  advisors:
-  - daniel_sundfeld
-  tags:
-  - inactive
-  - hpc
-  year: 2025
 - name: Marcus Vinicius Paiva Martins
-  categories:
-  - people
-  - scientific_initiation
-  title:
-    pt: "Gamificação do Portal Canal Ciência: Jornada Galáctica e perfis motivacionais"
-    en: "Gamification of the Canal Ciência Portal: Jornada Galáctica and motivational profiles"
-  program: curso_esw2
-  advisors:
-  - cristiane_ramos
-  tags:
-  - inactive
-  - gamification
-  - digital_transformation
-  - project_cc
-  year: 2024
+  slug: marcus_martins
+  supervisions:
+  - categories:
+    - people
+    - tcc
+    title:
+      pt: 'OpenBatch: serviço de processamento em lote para nuvem privada'
+      en: 'OpenBatch: batch processing service for private cloud'
+    program: curso_esw2
+    advisors:
+    - daniel_sundfeld
+    tags:
+    - inactive
+    - hpc
+    year: 2025
+  - categories:
+    - people
+    - scientific_initiation
+    title:
+      pt: 'Gamificação do Portal Canal Ciência: Jornada Galáctica e perfis motivacionais'
+      en: 'Gamification of the Canal Ciência Portal: Jornada Galáctica and motivational profiles'
+    program: curso_esw2
+    advisors:
+    - cristiane_ramos
+    tags:
+    - inactive
+    - gamification
+    - digital_transformation
+    - project_cc
+    year: 2024
 - name: Mateus Cunha Maia
+  slug: mateus_cunha_maia
   categories:
   - people
   - tcc
   title:
-    pt: "Estratégias de Paralelização em CPU para a Otimização de Algoritmos de Comparação de Sequências Biológicas"
-    en: "CPU Parallelization Strategies for the Optimization of Biological Sequence Comparison Algorithms"
+    pt: Estratégias de Paralelização em CPU para a Otimização de Algoritmos de Comparação de Sequências Biológicas
+    en: CPU Parallelization Strategies for the Optimization of Biological Sequence Comparison Algorithms
   program: curso_esw2
   advisors:
   - daniel_sundfeld
@@ -298,12 +317,13 @@ people:
   - hpc
   year: 2025
 - name: Alexia Naara da Silva Cardoso
+  slug: alexia_naara_da_silva_cardoso
   categories:
   - people
   - tcc
   title:
-    pt: "Aplicativo tradutor de línguas indígenas: Munduruku"
-    en: "Indigenous Language Translator App: Munduruku"
+    pt: 'Aplicativo tradutor de línguas indígenas: Munduruku'
+    en: 'Indigenous Language Translator App: Munduruku'
   program: curso_esw2
   advisors:
   - sergio_freitas
@@ -315,12 +335,13 @@ people:
   - social_software
   year: 2025
 - name: Ana Beatriz Norberto da Silva
+  slug: ana_beatriz_norberto_da_silva
   categories:
   - people
   - tcc
   title:
-    pt: "Git Ranking: Desenvolvimento de uma aplicação gamificada de gestão e motivação de equipes ágeis para o GitHub App"
-    en: "Git Ranking: Developing a Gamified Application for Managing and Motivating Agile Teams as a GitHub App"
+    pt: 'Git Ranking: Desenvolvimento de uma aplicação gamificada de gestão e motivação de equipes ágeis para o GitHub App'
+    en: 'Git Ranking: Developing a Gamified Application for Managing and Motivating Agile Teams as a GitHub App'
   program: curso_esw2
   advisors:
   - sergio_freitas
@@ -330,12 +351,13 @@ people:
   - active_learning
   year: 2025
 - name: Beatriz Vieira Nascimento
+  slug: beatriz_vieira_nascimento
   categories:
   - people
   - tcc
   title:
-    pt: "Git Ranking: Desenvolvimento de uma aplicação gamificada de gestão e motivação de equipes ágeis para o GitHub App"
-    en: "Git Ranking: Developing a Gamified Application for Managing and Motivating Agile Teams as a GitHub App"
+    pt: 'Git Ranking: Desenvolvimento de uma aplicação gamificada de gestão e motivação de equipes ágeis para o GitHub App'
+    en: 'Git Ranking: Developing a Gamified Application for Managing and Motivating Agile Teams as a GitHub App'
   program: curso_esw2
   advisors:
   - sergio_freitas
@@ -345,12 +367,13 @@ people:
   - active_learning
   year: 2025
 - name: Carlos Eduardo Mendes de Mesquita
+  slug: carlos_eduardo_mendes_de_mesquita
   categories:
   - people
   - volunteer
   title:
-    pt: "Projeto levantamento bibliográfico sobre Gamificação"
-    en: "Project on Gamification Literature Review"
+    pt: Projeto levantamento bibliográfico sobre Gamificação
+    en: Project on Gamification Literature Review
   program: curso_esw2
   advisors:
   - sergio_freitas
@@ -360,12 +383,13 @@ people:
   - gamification
   year: 2025
 - name: Daniel Rodrigues da Rocha
+  slug: daniel_rodrigues_da_rocha
   categories:
   - people
   - scientific_initiation
   title:
-    pt: "Framework preditivo de engajamento e desempenho discente em ambientes de aprendizagem gamificados com base em Octalysis, indicadores neurocientíficos e machine learning"
-    en: "Predictive Framework for Student Engagement and Performance in Gamified Learning Environments Based on Octalysis, Neuroscientific Indicators, and Machine Learning"
+    pt: Framework preditivo de engajamento e desempenho discente em ambientes de aprendizagem gamificados com base em Octalysis, indicadores neurocientíficos e machine learning
+    en: Predictive Framework for Student Engagement and Performance in Gamified Learning Environments Based on Octalysis, Neuroscientific Indicators, and Machine Learning
   program: curso_esw2
   advisors:
   - sergio_freitas
@@ -378,12 +402,13 @@ people:
   - project_framework_preditivo_engajamento
   year: 2025
 - name: Davi Rodrigues da Rocha
+  slug: davi_rodrigues_da_rocha
   categories:
   - people
   - scientific_initiation
   title:
-    pt: "Framework preditivo de engajamento e desempenho discente em ambientes de aprendizagem gamificados com base em Octalysis, indicadores neurocientíficos e machine learning"
-    en: "Predictive Framework for Student Engagement and Performance in Gamified Learning Environments Based on Octalysis, Neuroscientific Indicators, and Machine Learning"
+    pt: Framework preditivo de engajamento e desempenho discente em ambientes de aprendizagem gamificados com base em Octalysis, indicadores neurocientíficos e machine learning
+    en: Predictive Framework for Student Engagement and Performance in Gamified Learning Environments Based on Octalysis, Neuroscientific Indicators, and Machine Learning
   program: curso_esw2
   advisors:
   - sergio_freitas
@@ -396,12 +421,13 @@ people:
   - project_framework_preditivo_engajamento
   year: 2025
 - name: Diogo Oliveira Ferreira
+  slug: diogo_oliveira_ferreira
   categories:
   - people
   - volunteer
   title:
-    pt: "Projeto levantamento bibliográfico sobre Gamificação"
-    en: "Project on Gamification Literature Review"
+    pt: Projeto levantamento bibliográfico sobre Gamificação
+    en: Project on Gamification Literature Review
   program: curso_esw2
   advisors:
   - sergio_freitas
@@ -411,12 +437,13 @@ people:
   - gamification
   year: 2025
 - name: Gabriel Santos Pinto
+  slug: gabriel_santos_pinto
   categories:
   - people
   - volunteer
   title:
-    pt: "Projeto levantamento bibliográfico sobre Gamificação"
-    en: "Project on Gamification Literature Review"
+    pt: Projeto levantamento bibliográfico sobre Gamificação
+    en: Project on Gamification Literature Review
   program: curso_esw2
   advisors:
   - sergio_freitas
@@ -426,12 +453,13 @@ people:
   - gamification
   year: 2025
 - name: Geovanna Maciel Avelino da Costa
+  slug: geovanna_maciel_avelino_da_costa
   categories:
   - people
   - tcc
   title:
-    pt: "Atloria: Uma plataforma gamificada para visualização de estrutura de dados em realidade aumentada"
-    en: "Atloria: A Gamified Platform for Data Structure Visualization in Augmented Reality"
+    pt: 'Atloria: Uma plataforma gamificada para visualização de estrutura de dados em realidade aumentada'
+    en: 'Atloria: A Gamified Platform for Data Structure Visualization in Augmented Reality'
   program: curso_esw2
   advisors:
   - sergio_freitas
@@ -442,12 +470,13 @@ people:
   - social_software
   year: 2025
 - name: Luciano Ricardo da Silva Junior
+  slug: luciano_ricardo_da_silva_junior
   categories:
   - people
   - tcc
   title:
-    pt: "Gamificação como estratégia de ensino da identificação de code smells"
-    en: "Gamification as a Teaching Strategy for Code Smell Identification"
+    pt: Gamificação como estratégia de ensino da identificação de code smells
+    en: Gamification as a Teaching Strategy for Code Smell Identification
   program: curso_esw2
   advisors:
   - sergio_freitas
@@ -459,12 +488,13 @@ people:
   - software_quality
   year: 2025
 - name: Maciel Ferreira Custódio Junior
+  slug: maciel_ferreira_custodio_junior
   categories:
   - people
   - volunteer
   title:
-    pt: "Projeto levantamento bibliográfico sobre Gamificação"
-    en: "Project on Gamification Literature Review"
+    pt: Projeto levantamento bibliográfico sobre Gamificação
+    en: Project on Gamification Literature Review
   program: curso_esw2
   advisors:
   - sergio_freitas
@@ -474,12 +504,13 @@ people:
   - gamification
   year: 2025
 - name: Miguel Matos Costa de Frias Barbosa
+  slug: miguel_matos_costa_de_frias_barbosa
   categories:
   - people
   - tcc
   title:
-    pt: "Sistema de apoio à análise de processos organizacionais: Uma abordagem com inteligência artificial e controle de contexto"
-    en: "Support System for Organizational Process Analysis: An Approach with Artificial Intelligence and Context Control"
+    pt: 'Sistema de apoio à análise de processos organizacionais: Uma abordagem com inteligência artificial e controle de contexto'
+    en: 'Support System for Organizational Process Analysis: An Approach with Artificial Intelligence and Context Control'
   program: curso_esw2
   advisors:
   - sergio_freitas
@@ -490,62 +521,63 @@ people:
   - digital_transformation
   year: 2025
 - name: Mylena Angélica Silva Farias
-  categories:
-  - people
-  - scientific_initiation
-  title:
-    pt: "Framework preditivo de engajamento e desempenho discente em ambientes de aprendizagem gamificados com base em Octalysis, indicadores neurocientíficos e machine learning"
-    en: "Predictive Framework for Student Engagement and Performance in Gamified Learning Environments Based on Octalysis, Neuroscientific Indicators, and Machine Learning"
-  program: curso_esw2
-  advisors:
-  - sergio_freitas
-  tags:
-  - active
-  - gamification
-  - machine_learning
-  - ai
-  - learning_analytics
-  - project_framework_preditivo_engajamento
-  year: 2025
-- name: Mylena Angélica Silva Farias
-  categories:
-  - people
-  - scientific_initiation
-  title:
-    pt: "Gamificação do Portal Canal Ciência: Jornada Galáctica e perfis motivacionais"
-    en: "Gamification of the Canal Ciência Portal: Jornada Galáctica and motivational profiles"
-  program: curso_esw2
-  advisors:
-  - sergio_freitas
-  tags:
-  - inactive
-  - gamification
-  - digital_transformation
-  - project_cc
-  year: 2024
-- name: Mylena Angélica Silva Farias
-  categories:
-  - people
-  - tcc
-  title:
-    pt: "Atloria: Uma plataforma gamificada para visualização de estrutura de dados em realidade aumentada"
-    en: "Atloria: A Gamified Platform for Data Structure Visualization in Augmented Reality"
-  program: curso_esw2
-  advisors:
-  - sergio_freitas
-  tags:
-  - inactive
-  - gamification
-  - active_learning
-  - social_software
-  year: 2025
+  slug: mylena_faria
+  supervisions:
+  - categories:
+    - people
+    - scientific_initiation
+    title:
+      pt: Framework preditivo de engajamento e desempenho discente em ambientes de aprendizagem gamificados com base em Octalysis, indicadores neurocientíficos e machine learning
+      en: Predictive Framework for Student Engagement and Performance in Gamified Learning Environments Based on Octalysis, Neuroscientific Indicators, and Machine Learning
+    program: curso_esw2
+    advisors:
+    - sergio_freitas
+    tags:
+    - active
+    - gamification
+    - machine_learning
+    - ai
+    - learning_analytics
+    - project_framework_preditivo_engajamento
+    year: 2025
+  - categories:
+    - people
+    - scientific_initiation
+    title:
+      pt: 'Gamificação do Portal Canal Ciência: Jornada Galáctica e perfis motivacionais'
+      en: 'Gamification of the Canal Ciência Portal: Jornada Galáctica and motivational profiles'
+    program: curso_esw2
+    advisors:
+    - sergio_freitas
+    tags:
+    - inactive
+    - gamification
+    - digital_transformation
+    - project_cc
+    year: 2024
+  - categories:
+    - people
+    - tcc
+    title:
+      pt: 'Atloria: Uma plataforma gamificada para visualização de estrutura de dados em realidade aumentada'
+      en: 'Atloria: A Gamified Platform for Data Structure Visualization in Augmented Reality'
+    program: curso_esw2
+    advisors:
+    - sergio_freitas
+    tags:
+    - inactive
+    - gamification
+    - active_learning
+    - social_software
+    year: 2025
 - name: Pedro Henrique Martins Silva
+  slug: pedro_henrique_martins_silva
   categories:
   - people
   - volunteer
   title:
-    pt: "Aplicativo tradutor de línguas indígenas: Munduruku"
-    en: "Indigenous Language Translator App: Munduruku"
+    pt: 'Aplicativo tradutor de línguas indígenas: Munduruku'
+    en: 'Indigenous Language Translator App: Munduruku'
   program: curso_esw2
   advisors:
   - sergio_freitas
@@ -555,12 +587,13 @@ people:
   - social_software
   year: 2025
 - name: Pietro Calegari Visentin
+  slug: pietro_calegari_visentin
   categories:
   - people
   - volunteer
   title:
-    pt: "Projeto levantamento bibliográfico sobre Gamificação"
-    en: "Project on Gamification Literature Review"
+    pt: Projeto levantamento bibliográfico sobre Gamificação
+    en: Project on Gamification Literature Review
   program: curso_esw2
   advisors:
   - sergio_freitas
@@ -570,12 +603,13 @@ people:
   - gamification
   year: 2025
 - name: Christian Fleury Alencar Siqueira
+  slug: christian_fleury_alencar_siqueira
   categories:
   - people
   - tcc
   title:
-    pt: "Agromart: integração e publicação do aplicativo para agricultura familiar"
-    en: "Agromart: integration and publication of the application for family farming"
+    pt: 'Agromart: integração e publicação do aplicativo para agricultura familiar'
+    en: 'Agromart: integration and publication of the application for family farming'
   program: curso_esw2
   advisors:
   - andre_lanna
@@ -585,12 +619,13 @@ people:
   - digital_transformation
   year: 2024
 - name: Thiago Siqueira Gomes
+  slug: thiago_siqueira_gomes
   categories:
   - people
   - tcc
   title:
-    pt: "Agromart: integração e publicação do aplicativo para agricultura familiar"
-    en: "Agromart: integration and publication of the application for family farming"
+    pt: 'Agromart: integração e publicação do aplicativo para agricultura familiar'
+    en: 'Agromart: integration and publication of the application for family farming'
   program: curso_esw2
   advisors:
   - andre_lanna
@@ -600,6 +635,7 @@ people:
   - digital_transformation
   year: 2024
 - name: Amanda Jeniffer Pereira Nobre
+  slug: amanda_jeniffer_pereira_nobre
   categories:
   - people
   - tcc
@@ -615,6 +651,7 @@ people:
   - machine_learning
   year: 2025
 - name: Ana Carolina Rodrigues Leite
+  slug: ana_carolina_rodrigues_leite
   categories:
   - people
   - tcc
@@ -630,6 +667,7 @@ people:
   - machine_learning
   year: 2025
 - name: Daniel Barcelos Moreira
+  slug: daniel_barcelos_moreira
   categories:
   - people
   - tcc
@@ -645,12 +683,13 @@ people:
   - education
   year: 2024
 - name: Eduardo Miranda Roriz
+  slug: eduardo_miranda_roriz
   categories:
   - people
   - tcc
   title:
-    pt: "Qualidade de dados em ambiente de big data: um mapeamento sistemático"
-    en: "Data quality in a big data environment: a systematic mapping"
+    pt: 'Qualidade de dados em ambiente de big data: um mapeamento sistemático'
+    en: 'Data quality in a big data environment: a systematic mapping'
   program: curso_esw2
   advisors:
   - cristiane_ramos
@@ -660,12 +699,13 @@ people:
   - machine_learning
   year: 2024
 - name: Edvan Barreira Gomes Junior
+  slug: edvan_barreira_gomes_junior
   categories:
   - people
   - tcc
   title:
-    pt: "Maturidade de metodologias ativas (provisório)"
-    en: "Maturity of active methodologies (provisional)"
+    pt: Maturidade de metodologias ativas (provisório)
+    en: Maturity of active methodologies (provisional)
   program: curso_esw2
   advisors:
   - cristiane_ramos
@@ -676,12 +716,13 @@ people:
   - inactive
   year: 2024
 - name: Ian Pereira de Souza Rocha
+  slug: ian_pereira_de_souza_rocha
   categories:
   - people
   - tcc
   title:
-    pt: "Qualidade de dados em ambiente de big data: um mapeamento sistemático"
-    en: "Data quality in a big data environment: a systematic mapping"
+    pt: 'Qualidade de dados em ambiente de big data: um mapeamento sistemático'
+    en: 'Data quality in a big data environment: a systematic mapping'
   program: curso_esw2
   advisors:
   - cristiane_ramos
@@ -691,6 +732,7 @@ people:
   - machine_learning
   year: 2024
 - name: Juliana Pereira Valle Gonçalves
+  slug: juliana_pereira_valle_goncalves
   categories:
   - people
   - tcc
@@ -706,6 +748,7 @@ people:
   - education
   year: 2024
 - name: Nathalia Lorena Cardoso Dias
+  slug: nathalia_lorena_cardoso_dias
   categories:
   - people
   - tcc
@@ -720,12 +763,13 @@ people:
   - software_quality
   year: 2023
 - name: Itallo Cavalcante Gravina
+  slug: itallo_cavalcante_gravina
   categories:
   - people
   - tcc
   title:
-    pt: "Portal de visualização e análise de dados de produção científica pela OpenAlex"
-    en: "Portal for visualization and analysis of scientific production data via OpenAlex"
+    pt: Portal de visualização e análise de dados de produção científica pela OpenAlex
+    en: Portal for visualization and analysis of scientific production data via OpenAlex
   program: curso_esw2
   advisors:
   - daniel_sundfeld
@@ -734,12 +778,13 @@ people:
   - learning_analytics
   year: 2024
 - name: Brenno Oliveira Silva
+  slug: brenno_oliveira_silva
   categories:
   - people
   - tcc
   title:
-    pt: "SUPER-R: Desenvolvimento de uma Solução Gamificada para a Disciplina de Engenharia de Requisitos"
-    en: "SUPER-R: Development of a Gamified Solution for the Requirements Engineering Course"
+    pt: 'SUPER-R: Desenvolvimento de uma Solução Gamificada para a Disciplina de Engenharia de Requisitos'
+    en: 'SUPER-R: Development of a Gamified Solution for the Requirements Engineering Course'
   program: curso_esw2
   advisors:
   - george_marsicano
@@ -750,12 +795,13 @@ people:
   - mobile_application
   year: 2025
 - name: Caio César Oliveira
+  slug: caio_cesar_oliveira
   categories:
   - people
   - tcc
   title:
-    pt: "Desenvolvimento de uma Inteligência Artificial para Aprimoramento da Avaliação Individual em Disciplinas de Software na Universidade de Brasília"
-    en: "Development of an Artificial Intelligence for the Improvement of Individual Assessment in Software Courses at the University of Brasília"
+    pt: Desenvolvimento de uma Inteligência Artificial para Aprimoramento da Avaliação Individual em Disciplinas de Software na Universidade de Brasília
+    en: Development of an Artificial Intelligence for the Improvement of Individual Assessment in Software Courses at the University of Brasília
   program: curso_esw2
   advisors:
   - george_marsicano
@@ -766,6 +812,7 @@ people:
   - software_quality
   year: 2024
 - name: Daniela Soares de Oliveira
+  slug: daniela_soares_de_oliveira
   categories:
   - people
   - tcc
@@ -781,6 +828,7 @@ people:
   - machine_learning
   year: 2024
 - name: Danilo Domingo Vitoriano Silva
+  slug: danilo_domingo_vitoriano_silva
   categories:
   - people
   - tcc
@@ -796,6 +844,7 @@ people:
   - machine_learning
   year: 2024
 - name: Geraldo Victor Alves Barbosa
+  slug: geraldo_victor_alves_barbosa
   categories:
   - people
   - tcc
@@ -811,12 +860,13 @@ people:
   - ai
   year: 2025
 - name: Iago Ribeiro
+  slug: iago_ribeiro
   categories:
   - people
   - tcc
   title:
-    pt: "Desenvolvimento da Solução Professor, para o SUPER-R"
-    en: "Development of the Teacher Solution for SUPER-R"
+    pt: Desenvolvimento da Solução Professor, para o SUPER-R
+    en: Development of the Teacher Solution for SUPER-R
   program: curso_esw2
   advisors:
   - george_marsicano
@@ -825,12 +875,13 @@ people:
   - gamification
   year: 2024
 - name: Paulo Vitor Silva Abi Acl
+  slug: paulo_vitor_silva_abi_acl
   categories:
   - people
   - tcc
   title:
-    pt: "SUPER-R: Desenvolvimento de uma Solução Gamificada para a Disciplina de Engenharia de Requisitos"
-    en: "SUPER-R: Development of a Gamified Solution for the Requirements Engineering Course"
+    pt: 'SUPER-R: Desenvolvimento de uma Solução Gamificada para a Disciplina de Engenharia de Requisitos'
+    en: 'SUPER-R: Development of a Gamified Solution for the Requirements Engineering Course'
   program: curso_esw2
   advisors:
   - george_marsicano
@@ -841,12 +892,13 @@ people:
   - mobile_application
   year: 2025
 - name: Victor Yukio
+  slug: victor_yukio
   categories:
   - people
   - tcc
   title:
-    pt: "Desenvolvimento da Solução Estudantes, para o SUPER-R"
-    en: "Development of the Student Solution for SUPER-R"
+    pt: Desenvolvimento da Solução Estudantes, para o SUPER-R
+    en: Development of the Student Solution for SUPER-R
   program: curso_esw2
   advisors:
   - george_marsicano
@@ -855,12 +907,13 @@ people:
   - gamification
   year: 2024
 - name: Vitor Eduardo Kühl Rodrigues
+  slug: vitor_eduardo_kuhl_rodrigues
   categories:
   - people
   - tcc
   title:
-    pt: "Desenvolvimento de uma Inteligência Artificial para Aprimoramento da Avaliação Individual em Disciplinas de Software na Universidade de Brasília"
-    en: "Development of an Artificial Intelligence for the Improvement of Individual Assessment in Software Courses at the University of Brasília"
+    pt: Desenvolvimento de uma Inteligência Artificial para Aprimoramento da Avaliação Individual em Disciplinas de Software na Universidade de Brasília
+    en: Development of an Artificial Intelligence for the Improvement of Individual Assessment in Software Courses at the University of Brasília
   program: curso_esw2
   advisors:
   - george_marsicano
@@ -871,12 +924,13 @@ people:
   - software_quality
   year: 2024
 - name: Yuri Alves Bacarias
+  slug: yuri_alves_bacarias
   categories:
   - people
   - tcc
   title:
-    pt: "Processo de Validação e Verificação de requisitos suportados por Modelos de Linguagem de Grande Escala"
-    en: "Requirements Validation and Verification Process Supported by Large Language Models"
+    pt: Processo de Validação e Verificação de requisitos suportados por Modelos de Linguagem de Grande Escala
+    en: Requirements Validation and Verification Process Supported by Large Language Models
   program: curso_esw2
   advisors:
   - george_marsicano
@@ -886,6 +940,7 @@ people:
   - ai
   year: 2025
 - name: Artur de Sousa Vieira
+  slug: artur_de_sousa_vieira
   categories:
   - people
   - tcc
@@ -901,6 +956,7 @@ people:
   - software_architecture
   year: 2025
 - name: Luíza Esteves dos Santos
+  slug: luiza_esteves_dos_santos
   categories:
   - people
   - tcc
@@ -916,6 +972,7 @@ people:
   - software_architecture
   year: 2025
 - name: Álvaro Henrique de Sousa Gouvea
+  slug: alvaro_henrique_de_sousa_gouvea
   categories:
   - people
   - tcc
@@ -931,12 +988,13 @@ people:
   - machine_learning
   year: 2024
 - name: Gilson de Araújo Borges
+  slug: gilson_de_araujo_borges
   categories:
   - people
   - master_student
   title:
-    pt: "Micro serviços, em definição"
-    en: "Microservices, under development"
+    pt: Micro serviços, em definição
+    en: Microservices, under development
   program: curso_ppca
   advisors:
   - sergio_freitas
@@ -944,12 +1002,13 @@ people:
   - active
   year: 2026
 - name: Bruno Mello Andrade
+  slug: bruno_mello_andrade
   categories:
   - people
   - master_student
   title:
-    pt: "Gamificação na Engenharia de Software: Avaliação do engajamento em equipes de Tecnologia da Informação em Fábrica de Software"
-    en: "Gamification in Software Engineering: Evaluation of engagement in Information Technology teams in a Software Factory"
+    pt: 'Gamificação na Engenharia de Software: Avaliação do engajamento em equipes de Tecnologia da Informação em Fábrica de Software'
+    en: 'Gamification in Software Engineering: Evaluation of engagement in Information Technology teams in a Software Factory'
   program: curso_ppca
   advisors:
   - sergio_freitas
@@ -959,12 +1018,13 @@ people:
   - machine_learning
   year: 2023
 - name: Lucas Pereira Gomes Linard
+  slug: lucas_pereira_gomes_linard
   categories:
   - people
   - master_student
   title:
-    pt: "Avaliação da gamificação na qualidade de código de software"
-    en: "Evaluation of gamification in software code quality"
+    pt: Avaliação da gamificação na qualidade de código de software
+    en: Evaluation of gamification in software code quality
   program: curso_ppca
   advisors:
   - sergio_freitas
@@ -974,6 +1034,7 @@ people:
   - machine_learning
   year: 2024
 - name: Luís Guilherme Gaboardi Lins
+  slug: luis_guilherme_gaboardi_lins
   categories:
   - people
   - tcc
@@ -989,12 +1050,13 @@ people:
   - machine_learning
   year: 2024
 - name: Abner Filipe Cunha Ribeiro
+  slug: abner_filipe_cunha_ribeiro
   categories:
   - people
   - tcc
   title:
-    pt: "Associação para aplicações Agromart de uma CSA em cloud"
-    en: "Association for Agromart applications of a CSA in cloud"
+    pt: Associação para aplicações Agromart de uma CSA em cloud
+    en: Association for Agromart applications of a CSA in cloud
   program: curso_esw2
   advisors:
   - andre_lanna
@@ -1004,12 +1066,13 @@ people:
   - digital_transformation
   year: 2023
 - name: Rafael Leão Teixeira de Magalhães
+  slug: rafael_leao_teixeira_de_magalhaes
   categories:
   - people
   - tcc
   title:
-    pt: "Associação para aplicações Agromart de uma CSA em cloud"
-    en: "Association for Agromart applications of a CSA in cloud"
+    pt: Associação para aplicações Agromart de uma CSA em cloud
+    en: Association for Agromart applications of a CSA in cloud
   program: curso_esw2
   advisors:
   - andre_lanna
@@ -1019,12 +1082,13 @@ people:
   - digital_transformation
   year: 2023
 - name: Giulia Lobo Barros
+  slug: giulia_lobo_barros
   categories:
   - people
   - tcc
   title:
-    pt: "Melhoria de um processo de engenharia de requisitos de software"
-    en: "Improvement of a software requirements engineering process"
+    pt: Melhoria de um processo de engenharia de requisitos de software
+    en: Improvement of a software requirements engineering process
   program: curso_esw2
   advisors:
   - cristiane_ramos
@@ -1034,12 +1098,13 @@ people:
   - software_requirements
   year: 2023
 - name: Ricardo de Castro Loureiro
+  slug: ricardo_de_castro_loureiro
   categories:
   - people
   - tcc
   title:
-    pt: "Tecnologias para a inclusão: métricas para avaliação da acessibilidade de páginas web para pessoas com deficiência visual"
-    en: "Technologies for inclusion: Metrics for evaluating web page accessibility for visually impaired people"
+    pt: 'Tecnologias para a inclusão: métricas para avaliação da acessibilidade de páginas web para pessoas com deficiência visual'
+    en: 'Technologies for inclusion: Metrics for evaluating web page accessibility for visually impaired people'
   program: curso_esw2
   advisors:
   - cristiane_ramos
@@ -1049,12 +1114,13 @@ people:
   - software_quality
   year: 2023
 - name: Guilherme Daniel Fernandes da Silva
+  slug: guilherme_daniel_fernandes_da_silva
   categories:
   - people
   - tcc
   title:
-    pt: "Qualidade de software e envelhecimento populacional: uma análise com base nos dados da TIC Domicílios"
-    en: "Software quality and population aging: an analysis based on ICT Household data"
+    pt: 'Qualidade de software e envelhecimento populacional: uma análise com base nos dados da TIC Domicílios'
+    en: 'Software quality and population aging: an analysis based on ICT Household data'
   program: curso_esw2
   advisors:
   - marilia_miranda
@@ -1064,12 +1130,13 @@ people:
   - software_quality
   year: 2023
 - name: Lorrayne Alves Cardozo
+  slug: lorrayne_alves_cardozo
   categories:
   - people
   - tcc
   title:
-    pt: "Qualidade de software e envelhecimento populacional: uma análise com base nos dados da TIC Domicílios"
-    en: "Software quality and population aging: an analysis based on ICT Household data"
+    pt: 'Qualidade de software e envelhecimento populacional: uma análise com base nos dados da TIC Domicílios'
+    en: 'Software quality and population aging: an analysis based on ICT Household data'
   program: curso_esw2
   advisors:
   - marilia_miranda
@@ -1079,12 +1146,13 @@ people:
   - inactive
   year: 2023
 - name: Antonio Rangel Chaves
+  slug: antonio_rangel_chaves
   categories:
   - people
   - tcc
   title:
-    pt: "Gamificação no Ambiente Virtual de Aprendizagem Moodle: Guia e Ferramenta para Criadores de Conteúdo"
-    en: "Gamification in the Moodle Virtual Learning Environment: Guide and Tool for Content Creators"
+    pt: 'Gamificação no Ambiente Virtual de Aprendizagem Moodle: Guia e Ferramenta para Criadores de Conteúdo'
+    en: 'Gamification in the Moodle Virtual Learning Environment: Guide and Tool for Content Creators'
   program: curso_esw2
   advisors:
   - sergio_freitas
@@ -1093,12 +1161,13 @@ people:
   - inactive
   year: 2024
 - name: Vitor Diniz Pagani Vieira Ribeiro
+  slug: vitor_diniz_pagani_vieira_ribeiro
   categories:
   - people
   - tcc
   title:
-    pt: "Gamificação no Ambiente Virtual de Aprendizagem Moodle: Guia e Ferramenta para Criadores de Conteúdo"
-    en: "Gamification in the Moodle Virtual Learning Environment: Guide and Tool for Content Creators"
+    pt: 'Gamificação no Ambiente Virtual de Aprendizagem Moodle: Guia e Ferramenta para Criadores de Conteúdo'
+    en: 'Gamification in the Moodle Virtual Learning Environment: Guide and Tool for Content Creators'
   program: curso_esw2
   advisors:
   - sergio_freitas
@@ -1107,6 +1176,7 @@ people:
   - inactive
   year: 2024
 - name: André Aben-Athar de Freitas
+  slug: andre_aben_athar_de_freitas
   categories:
   - people
   - tcc
@@ -1122,6 +1192,7 @@ people:
   - digital_transformation
   year: 2023
 - name: Felipe Boccardi Silva Agustini
+  slug: felipe_boccardi_silva_agustini
   categories:
   - people
   - tcc
@@ -1137,6 +1208,7 @@ people:
   - digital_transformation
   year: 2023
 - name: Giovanna Borges Bottino
+  slug: giovanna_borges_bottino
   categories:
   - people
   - tcc
@@ -1152,6 +1224,7 @@ people:
   - digital_transformation
   year: 2023
 - name: Pedro Vitor de Salles Cella
+  slug: pedro_vitor_de_salles_cella
   categories:
   - people
   - tcc
@@ -1167,6 +1240,7 @@ people:
   - digital_transformation
   year: 2023
 - name: Amanda Emilly Muniz de Menezes
+  slug: amanda_emilly_muniz_de_menezes
   categories:
   - people
   - tcc
@@ -1183,6 +1257,7 @@ people:
   - learning_analytics
   year: 2022
 - name: Fabiana Luiza Vasconcelos Pfeilsticker Ribas
+  slug: fabiana_luiza_vasconcelos_pfeilsticker_ribas
   categories:
   - people
   - tcc
@@ -1198,6 +1273,7 @@ people:
   - digital_transformation
   year: 2022
 - name: Gabriel Batista Albino Silva
+  slug: gabriel_batista_albino_silva
   categories:
   - people
   - tcc
@@ -1213,6 +1289,7 @@ people:
   - education
   year: 2022
 - name: Helena Bretas Goulart
+  slug: helena_bretas_goulart
   categories:
   - people
   - tcc
@@ -1228,6 +1305,7 @@ people:
   - education
   year: 2022
 - name: Letícia Karla Soares Rodrigues de Araújo
+  slug: leticia_karla_soares_rodrigues_de_araujo
   categories:
   - people
   - tcc
@@ -1243,6 +1321,7 @@ people:
   - learning_analytics
   year: 2022
 - name: Amanda Emily M. de Menezes
+  slug: amanda_emily_m_de_menezes
   categories:
   - people
   - tcc
@@ -1258,26 +1337,43 @@ people:
   - learning_analytics
   year: 2022
 - name: Ana Carolina Costa César
-  categories:
-  - people
-  - scientific_initiation
-  title:
-    pt: "Projeto sobre Desenvolvimento de Software Verde"
-    en: "Project on Green Software Development"
-  program: curso_esw2
-  advisors:
-  - fabiana_mendes
-  tags:
-  - inactive
-  - green_software
-  year: 2022
+  slug: ana_carolina_costa_cesar
+  supervisions:
+  - categories:
+    - people
+    - scientific_initiation
+    title:
+      pt: Projeto sobre Desenvolvimento de Software Verde
+      en: Project on Green Software Development
+    program: curso_esw2
+    advisors:
+    - fabiana_mendes
+    tags:
+    - inactive
+    - green_software
+    year: 2022
+  - categories:
+    - people
+    - scientific_initiation
+    title:
+      pt: Solução para permitir doações de recursos financeiros por meio do DOARTI
+      en: Solution to enable financial donations through DOARTI
+    program: scientific_initiation
+    advisors:
+    - george_marsicano
+    tags:
+    - inactive
+    - social_software
+    - digital_transformation
+    year: 2021
 - name: Dione Ramos Canuto Moura
+  slug: dione_ramos_canuto_moura
   categories:
   - people
   - master_student
   title:
-    pt: "Proposição de Melhoria de Usabilidade da Interação entre Usuário e Sistema Corporativo do Exército Brasileiro"
-    en: "Proposal for Improving the Usability of the Interaction Between User and Corporate System of the Brazilian Army"
+    pt: Proposição de Melhoria de Usabilidade da Interação entre Usuário e Sistema Corporativo do Exército Brasileiro
+    en: Proposal for Improving the Usability of the Interaction Between User and Corporate System of the Brazilian Army
   program: curso_ppca
   advisors:
   - george_marsicano
@@ -1286,6 +1382,7 @@ people:
   - software_architecture
   year: 2025
 - name: Byron Kamal Barreto Correa
+  slug: byron_kamal_barreto_correa
   categories:
   - people
   - tcc
@@ -1301,6 +1398,7 @@ people:
   - digital_transformation
   year: 2022
 - name: Igor Guimaraes Veludo
+  slug: igor_guimaraes_veludo
   categories:
   - people
   - tcc
@@ -1316,12 +1414,13 @@ people:
   - digital_transformation
   year: 2022
 - name: Lucas Kuniyoshi
+  slug: lucas_kuniyoshi
   categories:
   - people
   - master_student
   title:
-    pt: "(Em definição)"
-    en: "(not defined)"
+    pt: (Em definição)
+    en: (not defined)
   program: curso_ppca
   advisors:
   - andre_lanna
@@ -1329,12 +1428,13 @@ people:
   - active
   year: 2021
 - name: Suéllyn Schopping
+  slug: suellyn_schopping
   categories:
   - people
   - master_student
   title:
-    pt: "(Em definição)"
-    en: "(not defined)"
+    pt: (Em definição)
+    en: (not defined)
   program: curso_ppca
   advisors:
   - andre_lanna
@@ -1342,12 +1442,13 @@ people:
   - active
   year: 2021
 - name: Allan Jefrey Pereira Nobre
+  slug: allan_jefrey_pereira_nobre
   categories:
   - people
   - tcc
   title:
-    pt: "Utilização de learning analytics e educational data mining no apoio a decisões pedagógicas durante a aplicação da metodologia TBL"
-    en: "Use of learning analytics and educational data mining to support pedagogical decisions during the application of the TBL methodology"
+    pt: Utilização de learning analytics e educational data mining no apoio a decisões pedagógicas durante a aplicação da metodologia TBL
+    en: Use of learning analytics and educational data mining to support pedagogical decisions during the application of the TBL methodology
   program: curso_esw2
   advisors:
   - cristiane_ramos
@@ -1357,12 +1458,13 @@ people:
   - active_learning
   year: 2021
 - name: Ateldy Borges Brasil Filho
+  slug: ateldy_borges_brasil_filho
   categories:
   - people
   - tcc
   title:
-    pt: "Avaliação de gamificação: uma aplicação prática em uma empresa júnior"
-    en: "Gamification evaluation: a practical application in a junior enterprise"
+    pt: 'Avaliação de gamificação: uma aplicação prática em uma empresa júnior'
+    en: 'Gamification evaluation: a practical application in a junior enterprise'
   program: curso_esw2
   advisors:
   - cristiane_ramos
@@ -1371,12 +1473,13 @@ people:
   - gamification
   year: 2021
 - name: Matheus Afonso de Souza
+  slug: matheus_afonso_de_souza
   categories:
   - people
   - scientific_initiation
   title:
-    pt: "Apoiar as atividades de teste de aplicativos e de pesquisa"
-    en: "Supporting testing activities for apps and research"
+    pt: Apoiar as atividades de teste de aplicativos e de pesquisa
+    en: Supporting testing activities for apps and research
   program: scientific_initiation
   advisors:
   - cristiane_ramos
@@ -1385,12 +1488,13 @@ people:
   - verification_validation_testing
   year: 2021
 - name: Levi Alves de Freitas Júnior
+  slug: levi_alves_de_freitas_junior
   categories:
   - people
   - tcc
   title:
-    pt: "Sistema de notificação de quedas através da computação em nuvem"
-    en: "Fall notification system through cloud computing"
+    pt: Sistema de notificação de quedas através da computação em nuvem
+    en: Fall notification system through cloud computing
   program: curso_esw2
   advisors:
   - daniel_sundfeld
@@ -1399,12 +1503,13 @@ people:
   - software_architecture
   year: 2021
 - name: Sandro Leite Furtado
+  slug: sandro_leite_furtado
   categories:
   - people
   - master_student
   title:
-    pt: "Identificação de fatores adicionais de segurança e sua aplicabilidade na identidade gov.br"
-    en: "Identification of additional security factors and their applicability in the gov.br identity"
+    pt: Identificação de fatores adicionais de segurança e sua aplicabilidade na identidade gov.br
+    en: Identification of additional security factors and their applicability in the gov.br identity
   program: curso_ppca
   advisors:
   - george_marsicano
@@ -1414,12 +1519,13 @@ people:
   - digital_transformation
   year: 2025
 - name: Gustavo Vieira Braz Gonçalves
+  slug: gustavo_vieira_braz_goncalves
   categories:
   - people
   - tcc
   title:
-    pt: "Desenvolvimento de uma solução de software para gestão de frotas, uma aplicação prática"
-    en: "Development of a software solution for fleet management, a practical application"
+    pt: Desenvolvimento de uma solução de software para gestão de frotas, uma aplicação prática
+    en: Development of a software solution for fleet management, a practical application
   program: curso_esw2
   advisors:
   - cristiane_ramos
@@ -1428,12 +1534,13 @@ people:
   - software_architecture
   year: 2020
 - name: Lucas Gomes Pereira
+  slug: lucas_gomes_pereira
   categories:
   - people
   - tcc
   title:
-    pt: "Aplicação de técnicas de gamificação na metodologia Team-Based Learning: aplicando o Octalysis na fase 1 do TBL"
-    en: "Applying gamification techniques to the Team-Based Learning methodology: applying Octalysis in TBL phase 1"
+    pt: 'Aplicação de técnicas de gamificação na metodologia Team-Based Learning: aplicando o Octalysis na fase 1 do TBL'
+    en: 'Applying gamification techniques to the Team-Based Learning methodology: applying Octalysis in TBL phase 1'
   program: curso_esw2
   advisors:
   - cristiane_ramos
@@ -1443,12 +1550,13 @@ people:
   - active_learning
   year: 2020
 - name: Luiz Guilherme S da Silva
+  slug: luiz_guilherme_s_da_silva
   categories:
   - people
   - tcc
   title:
-    pt: "Desenvolvimento de uma solução de software para gestão de frotas, uma aplicação prática"
-    en: "Development of a software solution for fleet management, a practical application"
+    pt: Desenvolvimento de uma solução de software para gestão de frotas, uma aplicação prática
+    en: Development of a software solution for fleet management, a practical application
   program: curso_esw2
   advisors:
   - cristiane_ramos
@@ -1457,12 +1565,13 @@ people:
   - software_architecture
   year: 2020
 - name: Mariana de Souza Mendes
+  slug: mariana_de_souza_mendes
   categories:
   - people
   - scientific_initiation
   title:
-    pt: "Apoio às atividades de testes de aplicativos"
-    en: "Supporting activities for app testing"
+    pt: Apoio às atividades de testes de aplicativos
+    en: Supporting activities for app testing
   program: scientific_initiation
   advisors:
   - cristiane_ramos
@@ -1471,12 +1580,13 @@ people:
   - verification_validation_testing
   year: 2020
 - name: Sannya Santana de Arvelos
+  slug: sannya_santana_de_arvelos
   categories:
   - people
   - tcc
   title:
-    pt: "Planejamento de melhoria de processo de software baseado em análise de issues"
-    en: "Planning software process improvement based on issues analysis"
+    pt: Planejamento de melhoria de processo de software baseado em análise de issues
+    en: Planning software process improvement based on issues analysis
   program: curso_esw2
   advisors:
   - cristiane_ramos
@@ -1485,12 +1595,13 @@ people:
   - software_quality
   year: 2020
 - name: Eneias Paulo de Oliveira
+  slug: eneias_paulo_de_oliveira
   categories:
   - people
   - tcc
   title:
-    pt: "PA-Star-Web: uma arquitetura em nuvem para obtenção do alinhamento múltiplo ótimo de sequências biológicas"
-    en: "PA-Star-Web: a cloud architecture for obtaining optimal multiple alignment of biological sequences"
+    pt: 'PA-Star-Web: uma arquitetura em nuvem para obtenção do alinhamento múltiplo ótimo de sequências biológicas'
+    en: 'PA-Star-Web: a cloud architecture for obtaining optimal multiple alignment of biological sequences'
   program: curso_esw2
   advisors:
   - daniel_sundfeld
@@ -1499,12 +1610,13 @@ people:
   - hpc
   year: 2020
 - name: Leonardo Campos Muniz
+  slug: leonardo_campos_muniz
   categories:
   - people
   - tcc
   title:
-    pt: "Sistema de controle de presença de alunos"
-    en: "Student attendance control system"
+    pt: Sistema de controle de presença de alunos
+    en: Student attendance control system
   program: curso_esw2
   advisors:
   - daniel_sundfeld
@@ -1513,41 +1625,72 @@ people:
   - education
   year: 2020
 - name: Rodrigo Rocha Gomes
-  categories:
-  - people
-  - tcc
-  title:
-    pt: "CUDA-Sankoff-Web: uma ferramenta web para cálculo do alinhamento secundário estrutural"
-    en: "CUDA-Sankoff-Web: a web tool for structural secondary alignment calculation"
-  program: curso_esw2
-  advisors:
-  - daniel_sundfeld
-  tags:
-  - inactive
-  - hpc
-  year: 2020
+  slug: rodrigo_rocha_gomes
+  supervisions:
+  - categories:
+    - people
+    - tcc
+    title:
+      pt: 'CUDA-Sankoff-Web: uma ferramenta web para cálculo do alinhamento secundário estrutural'
+      en: 'CUDA-Sankoff-Web: a web tool for structural secondary alignment calculation'
+    program: curso_esw2
+    advisors:
+    - daniel_sundfeld
+    tags:
+    - inactive
+    - hpc
+    year: 2020
+  - categories:
+    - people
+    - scientific_initiation
+    title:
+      pt: Sistemas Web aplicados à Bioinformática
+      en: Web Systems Applied to Bioinformatics
+    program: scientific_initiation
+    advisors:
+    - daniel_sundfeld
+    tags:
+    - inactive
+    - hpc
+    year: 2019
 - name: Ronyell Henrique dos Santos
-  categories:
-  - people
-  - tcc
-  title:
-    pt: Utilização de operações de refatoração para aprimoramento de variabilidade em sistemas de software
-    en: Using refactoring operations to improve variability in software systems
-  program: curso_esw2
-  advisors:
-  - andre_lanna
-  tags:
-  - inactive
-  - software_requirements
-  - verification_validation_testing
-  year: 2020
+  slug: ronyell_henrique_dos_santos
+  supervisions:
+  - categories:
+    - people
+    - tcc
+    title:
+      pt: Utilização de operações de refatoração para aprimoramento de variabilidade em sistemas de software
+      en: Using refactoring operations to improve variability in software systems
+    program: curso_esw2
+    advisors:
+    - andre_lanna
+    tags:
+    - inactive
+    - software_requirements
+    - verification_validation_testing
+    year: 2020
+  - categories:
+    - people
+    - scientific_initiation
+    title:
+      pt: Atividades de sustentação e automação de testes
+      en: Maintenance and test automation activities
+    program: scientific_initiation
+    advisors:
+    - cristiane_ramos
+    tags:
+    - inactive
+    - verification_validation_testing
+    year: 2018
 - name: Taylor Rodrigues Lopes
+  slug: taylor_rodrigues_lopes
   categories:
   - people
   - masters
   title:
-    pt: "Método de migração de sistemas monolíticos legados para a arquitetura de microsserviços"
-    en: "Method for migrating legacy monolithic systems to microservices architecture"
+    pt: Método de migração de sistemas monolíticos legados para a arquitetura de microsserviços
+    en: Method for migrating legacy monolithic systems to microservices architecture
   program: curso_ppca
   advisors:
   - andre_lanna
@@ -1556,27 +1699,43 @@ people:
   - software_architecture
   year: 2019
 - name: Victor Hugo Arnaud Deon
-  categories:
-  - people
-  - tcc
-  title:
-    pt: "PGTBL: plataforma de gerenciamento de Team-Based Learning"
-    en: "PGTBL: platform for managing Team-Based Learning"
-  program: curso_esw2
-  advisors:
-  - cristiane_ramos
-  tags:
-  - inactive
-  - gamification
-  - active_learning
-  year: 2019
+  slug: victor_hugo_arnaud_deon
+  supervisions:
+  - categories:
+    - people
+    - tcc
+    title:
+      pt: 'PGTBL: plataforma de gerenciamento de Team-Based Learning'
+      en: 'PGTBL: platform for managing Team-Based Learning'
+    program: curso_esw2
+    advisors:
+    - cristiane_ramos
+    tags:
+    - inactive
+    - gamification
+    - active_learning
+    year: 2019
+  - categories:
+    - people
+    - scientific_initiation
+    title:
+      pt: Desenvolvimento de ferramentas para automação de serviços
+      en: Development of tools for service automation
+    program: scientific_initiation
+    advisors:
+    - cristiane_ramos
+    tags:
+    - inactive
+    - digital_transformation
+    year: 2018
 - name: Natália Maria Rodrigues Queiroz
+  slug: natalia_maria_rodrigues_queiroz
   categories:
   - people
   - scientific_initiation
   title:
-    pt: "Relatórios dos serviços digitalizados via teste manual"
-    en: "Reports of digitized services via manual testing"
+    pt: Relatórios dos serviços digitalizados via teste manual
+    en: Reports of digitized services via manual testing
   program: scientific_initiation
   advisors:
   - cristiane_ramos
@@ -1585,12 +1744,13 @@ people:
   - verification_validation_testing
   year: 2018
 - name: Maicon Dal Moro
+  slug: maicon_dal_moro
   categories:
   - people
   - tcc
   title:
-    pt: "Simulação de IDS para Ambientes de Automação Industrial"
-    en: "Simulation of IDS for Industrial Automation Environments"
+    pt: Simulação de IDS para Ambientes de Automação Industrial
+    en: Simulation of IDS for Industrial Automation Environments
   program: curso_cc
   advisors:
   - sergio_freitas
@@ -1599,12 +1759,13 @@ people:
   - security
   year: 2007
 - name: Raphael de Oliveira Santos
+  slug: raphael_de_oliveira_santos
   categories:
   - people
   - tcc
   title:
-    pt: "Implementação de protocolos para automação industrial num IDS"
-    en: "Implementation of Protocols for Industrial Automation in an IDS"
+    pt: Implementação de protocolos para automação industrial num IDS
+    en: Implementation of Protocols for Industrial Automation in an IDS
   program: curso_cc
   advisors:
   - sergio_freitas
@@ -1613,13 +1774,14 @@ people:
   - security
   year: 2006
 - name: Arthur Cypriano Monteiro Costa
+  slug: arthur_cypriano_monteiro_costa
   categories:
   - people
   - tcc
   - scientific_initiation
   title:
-    pt: "Implementação de um modelo genérico para representação de vulnerabilidades e invasões"
-    en: "Implementation of a Generic Model for Representing Vulnerabilities and Attacks"
+    pt: Implementação de um modelo genérico para representação de vulnerabilidades e invasões
+    en: Implementation of a Generic Model for Representing Vulnerabilities and Attacks
   program: curso_cc
   advisors:
   - sergio_freitas
@@ -1628,12 +1790,13 @@ people:
   - security
   year: 2003
 - name: Bruno Fardin Fáe
+  slug: bruno_fardin_fae
   categories:
   - people
   - tcc
   title:
-    pt: "ACEL: Um modelo de ambiente para o desenvolvimento de sistemas multi-agentes baseado numa organização em células"
-    en: "ACEL: A Framework for the Development of Multi-Agent Systems Based on a Cell Organization"
+    pt: 'ACEL: Um modelo de ambiente para o desenvolvimento de sistemas multi-agentes baseado numa organização em células'
+    en: 'ACEL: A Framework for the Development of Multi-Agent Systems Based on a Cell Organization'
   program: curso_cc
   advisors:
   - sergio_freitas
@@ -1642,13 +1805,14 @@ people:
   - security
   year: 2003
 - name: Bruno Oliveira Silvestre
+  slug: bruno_oliveira_silvestre
   categories:
   - people
   - tcc
   - scientific_initiation
   title:
-    pt: "Implementação de um agente para planejamento de contra-ações de uma rede sob ataque"
-    en: "Implementation of an Agent for Planning Countermeasures in an Attacked Network"
+    pt: Implementação de um agente para planejamento de contra-ações de uma rede sob ataque
+    en: Implementation of an Agent for Planning Countermeasures in an Attacked Network
   program: curso_cc
   advisors:
   - sergio_freitas
@@ -1657,12 +1821,13 @@ people:
   - security
   year: 2003
 - name: Kassiano Castiglioni Rossmann
+  slug: kassiano_castiglioni_rossmann
   categories:
   - people
   - tcc
   title:
-    pt: "Um estudo sobre redes virtuais privadas: sua implementação e teste sobre a rede UFES"
-    en: "A Study on Virtual Private Networks: Implementation and Testing on the UFES Network"
+    pt: 'Um estudo sobre redes virtuais privadas: sua implementação e teste sobre a rede UFES'
+    en: 'A Study on Virtual Private Networks: Implementation and Testing on the UFES Network'
   program: curso_cc
   advisors:
   - sergio_freitas
@@ -1671,12 +1836,13 @@ people:
   - security
   year: 2003
 - name: Luiz Celso Gomes Junior
+  slug: luiz_celso_gomes_junior
   categories:
   - people
   - tcc
   title:
-    pt: "Segurança de Redes: um agente distribuido de reação à invasões"
-    en: "Network Security: A Distributed Agent for Intrusion Reaction"
+    pt: 'Segurança de Redes: um agente distribuido de reação à invasões'
+    en: 'Network Security: A Distributed Agent for Intrusion Reaction'
   program: curso_cc
   advisors:
   - sergio_freitas
@@ -1685,12 +1851,13 @@ people:
   - security
   year: 2003
 - name: Hélder Bergamin Pimentel Dias
+  slug: helder_bergamin_pimentel_dias
   categories:
   - people
   - tcc
   title:
-    pt: "Uma Proposta de Agente de Detecção de Intrusão"
-    en: "A Proposal for an Intrusion Detection Agent"
+    pt: Uma Proposta de Agente de Detecção de Intrusão
+    en: A Proposal for an Intrusion Detection Agent
   program: curso_cc
   advisors:
   - sergio_freitas
@@ -1699,12 +1866,13 @@ people:
   - security
   year: 2002
 - name: Marcio Pereira Machado
+  slug: marcio_pereira_machado
   categories:
   - people
   - tcc
   title:
-    pt: "Análise e estudo de segurança de corporações utilizando firewalls"
-    en: "Analysis and Study of Corporate Security Using Firewalls"
+    pt: Análise e estudo de segurança de corporações utilizando firewalls
+    en: Analysis and Study of Corporate Security Using Firewalls
   program: curso_cc
   advisors:
   - sergio_freitas
@@ -1713,12 +1881,13 @@ people:
   - security
   year: 2002
 - name: Rui Sant'Ana Junior
+  slug: rui_sant_ana_junior
   categories:
   - people
   - tcc
   title:
-    pt: "Proposta de um Agente de Reconfiguração Remota de Serviços"
-    en: "Proposal for a Remote Service Reconfiguration Agent"
+    pt: Proposta de um Agente de Reconfiguração Remota de Serviços
+    en: Proposal for a Remote Service Reconfiguration Agent
   program: curso_cc
   advisors:
   - sergio_freitas
@@ -1727,12 +1896,13 @@ people:
   - security
   year: 2002
 - name: Walmir Pereira de Amorim Júnior
+  slug: walmir_pereira_de_amorim_junior
   categories:
   - people
   - tcc
   title:
-    pt: "Criptografia e autenticação: um protocolo de autenticação utilizando os algoritimos IDEA, RSA e SHA-1"
-    en: "Cryptography and Authentication: An Authentication Protocol Using IDEA, RSA, and SHA-1 Algorithms"
+    pt: 'Criptografia e autenticação: um protocolo de autenticação utilizando os algoritimos IDEA, RSA e SHA-1'
+    en: 'Cryptography and Authentication: An Authentication Protocol Using IDEA, RSA, and SHA-1 Algorithms'
   program: curso_cc
   advisors:
   - sergio_freitas
@@ -1741,12 +1911,13 @@ people:
   - security
   year: 2002
 - name: Eduardo Venturin Linhalis
+  slug: eduardo_venturin_linhalis
   categories:
   - people
   - tcc
   title:
-    pt: "Avaliação da Segurança Interna de uma Rede Corporativa"
-    en: "Evaluation of Internal Security in a Corporate Network"
+    pt: Avaliação da Segurança Interna de uma Rede Corporativa
+    en: Evaluation of Internal Security in a Corporate Network
   program: curso_cc
   advisors:
   - sergio_freitas
@@ -1755,6 +1926,7 @@ people:
   - security
   year: 2000
 - name: Iago Rodrigues Gonçalves
+  slug: iago_rodrigues_goncalves
   categories:
   - people
   - tcc
@@ -1770,6 +1942,7 @@ people:
   - verification_validation_testing
   year: 2018
 - name: Laércio Silva de Sousa Júnior
+  slug: laercio_silva_de_sousa_junior
   categories:
   - people
   - tcc
@@ -1785,6 +1958,7 @@ people:
   - digital_transformation
   year: 2018
 - name: Jonathan Nogueira Rufino Batista Paiva
+  slug: jonathan_nogueira_rufino_batista_paiva
   categories:
   - people
   - tcc
@@ -1800,6 +1974,7 @@ people:
   - digital_transformation
   year: 2018
 - name: Luis Henrique Nunes Guimarães
+  slug: luis_henrique_nunes_guimaraes
   categories:
   - people
   - tcc
@@ -1815,6 +1990,7 @@ people:
   - digital_transformation
   year: 2018
 - name: Lucas Pereira de Andrade Macêdo
+  slug: lucas_pereira_de_andrade_macedo
   categories:
   - people
   - tcc
@@ -1830,6 +2006,7 @@ people:
   - digital_transformation
   year: 2021
 - name: Lucas Siqueira Rodrigues
+  slug: lucas_siqueira_rodrigues
   categories:
   - people
   - tcc
@@ -1845,6 +2022,7 @@ people:
   - digital_transformation
   year: 2021
 - name: Guilherme Rogelin Vial
+  slug: guilherme_rogelin_vial
   categories:
   - people
   - tcc
@@ -1860,6 +2038,7 @@ people:
   - digital_transformation
   year: 2024
 - name: Lucas Braun Vieira Xavier
+  slug: lucas_braun_vieira_xavier
   categories:
   - people
   - tcc
@@ -1875,6 +2054,7 @@ people:
   - digital_transformation
   year: 2024
 - name: João Pedro Alves Machado
+  slug: joao_pedro_alves_machado
   categories:
   - people
   - tcc
@@ -1890,6 +2070,7 @@ people:
   - digital_transformation
   year: 2024
 - name: Júlio César Martins França
+  slug: julio_cesar_martins_franca
   categories:
   - people
   - tcc
@@ -1905,6 +2086,7 @@ people:
   - digital_transformation
   year: 2024
 - name: Kalebe Lopes da Cunha
+  slug: kalebe_lopes_da_cunha
   categories:
   - people
   - tcc
@@ -1920,6 +2102,7 @@ people:
   - digital_transformation
   year: 2025
 - name: Murilo Schiler Lopes Santana
+  slug: murilo_schiler_lopes_santana
   categories:
   - people
   - tcc
@@ -1935,6 +2118,7 @@ people:
   - digital_transformation
   year: 2025
 - name: Leonardo Milomes Vitoriano
+  slug: leonardo_milomes_vitoriano
   categories:
   - people
   - tcc
@@ -1950,6 +2134,7 @@ people:
   - machine_learning
   year: 2025
 - name: Mateus de Almeida Dias
+  slug: mateus_de_almeida_dias
   categories:
   - people
   - tcc
@@ -1965,6 +2150,7 @@ people:
   - machine_learning
   year: 2025
 - name: Filipe Toyoshima Silva
+  slug: filipe_toyoshima_silva
   categories:
   - people
   - tcc
@@ -1980,6 +2166,7 @@ people:
   - digital_transformation
   year: 2021
 - name: Augusto Moreno Vilarins Cardoso da Silva
+  slug: augusto_moreno_vilarins_cardoso_da_silva
   categories:
   - people
   - tcc
@@ -1995,6 +2182,7 @@ people:
   - software_quality
   year: 2021
 - name: Ícaro Pereira de Oliveira
+  slug: icaro_pereira_de_oliveira
   categories:
   - people
   - tcc
@@ -2010,6 +2198,7 @@ people:
   - software_quality
   year: 2021
 - name: Antonio Bezerra da Silva Júnior
+  slug: antonio_bezerra_da_silva_junior
   categories:
   - people
   - tcc
@@ -2025,6 +2214,7 @@ people:
   - verification_validation_testing
   year: 2013
 - name: Delziron Braz de Lima
+  slug: delziron_braz_de_lima
   categories:
   - people
   - tcc
@@ -2040,6 +2230,7 @@ people:
   - social_software
   year: 2025
 - name: Fellipe Pereira da Costa Silva
+  slug: fellipe_pereira_da_costa_silva
   categories:
   - people
   - tcc
@@ -2055,6 +2246,7 @@ people:
   - social_software
   year: 2025
 - name: João Victor de Oliveira Matos
+  slug: joao_victor_de_oliveira_matos
   categories:
   - people
   - tcc
@@ -2070,6 +2262,7 @@ people:
   - ai
   year: 2025
 - name: Lucas Ganda Carvalho
+  slug: lucas_ganda_carvalho
   categories:
   - people
   - tcc
@@ -2084,6 +2277,7 @@ people:
   - hpc
   year: 2023
 - name: Wictor Bastos Girardi
+  slug: wictor_bastos_girardi
   categories:
   - people
   - tcc
@@ -2098,6 +2292,7 @@ people:
   - hpc
   year: 2023
 - name: Rafael Contessotto Bragança Pinheiro
+  slug: rafael_contessotto_braganca_pinheiro
   categories:
   - people
   - tcc
@@ -2112,6 +2307,7 @@ people:
   - software_quality
   year: 2020
 - name: Iolane Caroline Alves de Andrade
+  slug: iolane_caroline_alves_de_andrade
   categories:
   - people
   - tcc
@@ -2127,6 +2323,7 @@ people:
   - software_quality
   year: 2020
 - name: Thiago Silveira Honorato
+  slug: thiago_silveira_honorato
   categories:
   - people
   - tcc
@@ -2142,6 +2339,7 @@ people:
   - digital_transformation
   year: 2015
 - name: Felipe Direito Corrieri de Macedo
+  slug: felipe_direito_corrieri_de_macedo
   categories:
   - people
   - tcc
@@ -2156,6 +2354,7 @@ people:
   - digital_transformation
   year: 2025
 - name: Victor Hugo Alves de Carvalho
+  slug: victor_hugo_alves_de_carvalho
   categories:
   - people
   - tcc
@@ -2171,6 +2370,7 @@ people:
   - verification_validation_testing
   year: 2015
 - name: Francisco Heronildo Sousa Santos
+  slug: francisco_heronildo_sousa_santos
   categories:
   - people
   - tcc
@@ -2185,6 +2385,7 @@ people:
   - software_quality
   year: 2024
 - name: João Vitor Ferreira Alves
+  slug: joao_vitor_ferreira_alves
   categories:
   - people
   - tcc
@@ -2199,6 +2400,7 @@ people:
   - software_quality
   year: 2024
 - name: Vítor Cardoso Xoteslem
+  slug: vitor_cardoso_xoteslem
   categories:
   - people
   - tcc
@@ -2214,6 +2416,7 @@ people:
   - teamwork
   year: 2021
 - name: Renan Cristyan Araujo Pinheiro
+  slug: renan_cristyan_araujo_pinheiro
   categories:
   - people
   - tcc
@@ -2228,6 +2431,7 @@ people:
   - verification_validation_testing
   year: 2022
 - name: Marcelo Victor de Sousa Silva
+  slug: marcelo_victor_de_sousa_silva
   categories:
   - people
   - tcc
@@ -2243,6 +2447,7 @@ people:
   - digital_transformation
   year: 2023
 - name: Washington Bispo Arishita Júnior
+  slug: washington_bispo_arishita_junior
   categories:
   - people
   - tcc
@@ -2258,6 +2463,7 @@ people:
   - digital_transformation
   year: 2023
 - name: Gabriel de Jesus Carvalho
+  slug: gabriel_de_jesus_carvalho
   categories:
   - people
   - tcc
@@ -2272,6 +2478,7 @@ people:
   - software_quality
   year: 2022
 - name: Lucas Lopes Xavier
+  slug: lucas_lopes_xavier
   categories:
   - people
   - tcc
@@ -2286,6 +2493,7 @@ people:
   - software_quality
   year: 2023
 - name: Luciano Hideaky de Macedo Endo
+  slug: luciano_hideaky_de_macedo_endo
   categories:
   - people
   - tcc
@@ -2300,6 +2508,7 @@ people:
   - software_architecture
   year: 2014
 - name: Caio César de Almeida Beleza
+  slug: caio_cesar_de_almeida_beleza
   categories:
   - people
   - tcc
@@ -2314,6 +2523,7 @@ people:
   - software_quality
   year: 2021
 - name: Paulo Vitor Coelho da Rocha
+  slug: paulo_vitor_coelho_da_rocha
   categories:
   - people
   - tcc
@@ -2328,6 +2538,7 @@ people:
   - digital_transformation
   year: 2022
 - name: João Gabriel Rossi
+  slug: joao_gabriel_rossi
   categories:
   - people
   - tcc
@@ -2342,6 +2553,7 @@ people:
   - digital_transformation
   year: 2022
 - name: Igor de Araújo Ramos
+  slug: igor_de_araujo_ramos
   categories:
   - people
   - tcc
@@ -2357,6 +2569,7 @@ people:
   - ai
   year: 2015
 - name: Ramaiane Medeiros da Silva
+  slug: ramaiane_medeiros_da_silva
   categories:
   - people
   - tcc
@@ -2371,6 +2584,7 @@ people:
   - software_quality
   year: 2014
 - name: Breno Dantas Cruz
+  slug: breno_dantas_cruz
   categories:
   - people
   - tcc
@@ -2385,6 +2599,7 @@ people:
   - software_architecture
   year: 2013
 - name: Cauê Mateus Oliveira
+  slug: caue_mateus_oliveira
   categories:
   - people
   - tcc
@@ -2400,6 +2615,7 @@ people:
   - software_quality
   year: 2022
 - name: Lucas Midlhey Cardoso Naves
+  slug: lucas_midlhey_cardoso_naves
   categories:
   - people
   - tcc
@@ -2415,6 +2631,7 @@ people:
   - software_quality
   year: 2022
 - name: João Vitor Lopes de Farias
+  slug: joao_vitor_lopes_de_farias
   categories:
   - people
   - tcc
@@ -2430,6 +2647,7 @@ people:
   - active_learning
   year: 2023
 - name: Ítalo Alves Guimarães
+  slug: italo_alves_guimaraes
   categories:
   - people
   - tcc
@@ -2445,6 +2663,7 @@ people:
   - active_learning
   year: 2023
 - name: Luiz Henrique Fernandes Zamprogno
+  slug: luiz_henrique_fernandes_zamprogno
   categories:
   - people
   - tcc
@@ -2461,6 +2680,7 @@ people:
   - nlp
   year: 2023
 - name: Victor Eduardo Araújo Ribeiro
+  slug: victor_eduardo_araujo_ribeiro
   categories:
   - people
   - tcc
@@ -2477,6 +2697,7 @@ people:
   - nlp
   year: 2023
 - name: Rafael Santos Teodosio
+  slug: rafael_santos_teodosio
   categories:
   - people
   - tcc
@@ -2492,6 +2713,7 @@ people:
   - education
   year: 2022
 - name: Érico Maximiano Bandeira
+  slug: erico_maximiano_bandeira
   categories:
   - people
   - tcc
@@ -2507,6 +2729,7 @@ people:
   - active_learning
   year: 2022
 - name: Weiller Fernandes Pereira
+  slug: weiller_fernandes_pereira
   categories:
   - people
   - tcc
@@ -2522,6 +2745,7 @@ people:
   - education
   year: 2021
 - name: Paulo Markes Rodrigues de Oliveira Calado
+  slug: paulo_markes_rodrigues_de_oliveira_calado
   categories:
   - people
   - tcc
@@ -2537,6 +2761,7 @@ people:
   - software_requirements
   year: 2018
 - name: Leandro Alves Ferreira Santos
+  slug: leandro_alves_ferreira_santos
   categories:
   - people
   - tcc
@@ -2553,6 +2778,7 @@ people:
   - active_learning
   year: 2017
 - name: Tiago Ribeiro de Assunção
+  slug: tiago_ribeiro_de_assuncao
   categories:
   - people
   - tcc
@@ -2568,6 +2794,7 @@ people:
   - soft_skills
   year: 2017
 - name: Attany Nathaly Lima Araújo
+  slug: attany_nathaly_lima_araujo
   categories:
   - people
   - tcc
@@ -2583,6 +2810,7 @@ people:
   - teamwork
   year: 2016
 - name: Cristóvão de Lima Frinhani
+  slug: cristovao_de_lima_frinhani
   categories:
   - people
   - tcc
@@ -2599,6 +2827,7 @@ people:
   - machine_learning
   year: 2016
 - name: João Vitor de Moura Rosa Silva
+  slug: joao_vitor_de_moura_rosa_silva
   categories:
   - people
   - tcc
@@ -2614,6 +2843,7 @@ people:
   - active_learning
   year: 2023
 - name: Ludimila da Bela Cruz
+  slug: ludimila_da_bela_cruz
   categories:
   - people
   - tcc
@@ -2629,6 +2859,7 @@ people:
   - software_development_tools
   year: 2016
 - name: Bruna Nayara Lima
+  slug: bruna_nayara_lima
   categories:
   - people
   - tcc
@@ -2644,6 +2875,7 @@ people:
   - education
   year: 2016
 - name: Wilker Mesquita de Assunção
+  slug: wilker_mesquita_de_assuncao
   categories:
   - people
   - tcc
@@ -2659,12 +2891,13 @@ people:
   - education
   year: 2016
 - name: Wildemberg Sales da Silva Junior
+  slug: wildemberg_sales
   categories:
   - people
   - scientific_initiation
   title:
-    pt: "Estudos para gamificação da Plataforma de Popularização e Divulgação da Ciência e Tecnologia: modelagem da gamificação e tratamento dos indicadores motivacionais"
-    en: "Studies for the Gamification of the Science and Technology Popularization and Dissemination Platform: Gamification Modeling and Treatment of Motivational Indicators"
+    pt: 'Estudos para gamificação da Plataforma de Popularização e Divulgação da Ciência e Tecnologia: modelagem da gamificação e tratamento dos indicadores motivacionais'
+    en: 'Studies for the Gamification of the Science and Technology Popularization and Dissemination Platform: Gamification Modeling and Treatment of Motivational Indicators'
   program: curso_esw2
   advisors:
   - cristiane_ramos
@@ -2675,6 +2908,7 @@ people:
   - project_cc
   year: 2025
 - name: Guilherme Fay Vergara
+  slug: guilherme_fay_vergara
   categories:
   - people
   - tcc
@@ -2689,6 +2923,7 @@ people:
   - software_architecture
   year: 2014
 - name: Rafael Ferreira dos Santos
+  slug: rafael_ferreira_dos_santos
   categories:
   - people
   - tcc
@@ -2703,6 +2938,7 @@ people:
   - digital_transformation
   year: 2014
 - name: Greg Ouyama Martins
+  slug: greg_ouyama_martins
   categories:
   - people
   - tcc
@@ -2718,6 +2954,7 @@ people:
   - nlp
   year: 2013
 - name: Pedro Henrique Potiguara Carvalho
+  slug: pedro_henrique_potiguara_carvalho
   categories:
   - people
   - tcc
@@ -2733,6 +2970,7 @@ people:
   - education
   year: 2014
 - name: Leandro Veloso Rodrigues
+  slug: leandro_veloso_rodrigues
   categories:
   - people
   - tcc
@@ -2748,6 +2986,7 @@ people:
   - soft_skills
   year: 2016
 - name: Tiago Querubim
+  slug: tiago_querubim
   categories:
   - people
   - tcc
@@ -2763,6 +3002,7 @@ people:
   - teamwork
   year: 2015
 - name: Giancarllo Soares
+  slug: giancarllo_soares
   categories:
   - people
   - tcc
@@ -2778,6 +3018,7 @@ people:
   - teamwork
   year: 2014
 - name: Vinicius Brito
+  slug: vinicius_brito
   categories:
   - people
   - tcc
@@ -2793,6 +3034,7 @@ people:
   - teamwork
   year: 2014
 - name: Gabriela da Gama Piveta
+  slug: gabriela_da_gama_piveta
   categories:
   - people
   - tcc
@@ -2807,6 +3049,7 @@ people:
   - green_software
   year: 2021
 - name: Bruno Contessotto Bragança Pinheiro
+  slug: bruno_contessotto_braganca_pinheiro
   categories:
   - people
   - tcc
@@ -2822,6 +3065,7 @@ people:
   - software_architecture
   year: 2019
 - name: Yeltsin Suares Gama
+  slug: yeltsin_suares_gama
   categories:
   - people
   - tcc
@@ -2837,6 +3081,7 @@ people:
   - ai
   year: 2017
 - name: Júlia Farias Sousa
+  slug: julia_farias_sousa
   categories:
   - people
   - tcc
@@ -2852,6 +3097,7 @@ people:
   - esw
   year: 2023
 - name: Rafael Berto Pereira
+  slug: rafael_berto_pereira
   categories:
   - people
   - tcc
@@ -2867,6 +3113,7 @@ people:
   - esw
   year: 2023
 - name: Luis Bruno Fidelis Gomes
+  slug: luis_bruno_fidelis_gomes
   categories:
   - people
   - tcc
@@ -2881,12 +3128,13 @@ people:
   - ai
   year: 2023
 - name: Adriano Nunes Soares
+  slug: adriano_nunes_soares
   categories:
   - people
   - master_student
   title:
-    pt: "Análise Postmortem do Ateliê de Software do Ministério das Relações Exteriores"
-    en: "Postmortem Analysis of the Ministry of Foreign Affairs Software Atelier"
+    pt: Análise Postmortem do Ateliê de Software do Ministério das Relações Exteriores
+    en: Postmortem Analysis of the Ministry of Foreign Affairs Software Atelier
   program: curso_ppca
   advisors:
   - george_marsicano
@@ -2895,12 +3143,13 @@ people:
   - digital_transformation
   year: 2025
 - name: Emanuel Galhardo de Oliveira
+  slug: emanuel_galhardo_de_oliveira
   categories:
   - people
   - master_student
   title:
-    pt: "Modelo de avaliação DevOps em ambientes de nuvem com métricas DORA: um estudo no setor financeiro"
-    en: "DevOps assessment model in cloud environments with DORA metrics: a study in the financial sector"
+    pt: 'Modelo de avaliação DevOps em ambientes de nuvem com métricas DORA: um estudo no setor financeiro'
+    en: 'DevOps assessment model in cloud environments with DORA metrics: a study in the financial sector'
   program: curso_ppca
   advisors:
   - george_marsicano
@@ -2910,12 +3159,13 @@ people:
   - digital_transformation
   year: 2025
 - name: Breno Henrique de Souza
+  slug: breno_henrique_de_souza
   categories:
   - people
   - tcc
   title:
-    pt: "Centralização de Informações Administrativas como Suporte ao Desenvolvimento Estudantil na FCTE: Uma Abordagem com Chatbot e Inteligência Artificial"
-    en: "Centralization of administrative information to support student development at FCTE: a chatbot and artificial intelligence approach"
+    pt: 'Centralização de Informações Administrativas como Suporte ao Desenvolvimento Estudantil na FCTE: Uma Abordagem com Chatbot e Inteligência Artificial'
+    en: 'Centralization of administrative information to support student development at FCTE: a chatbot and artificial intelligence approach'
   program: curso_esw2
   advisors:
   - george_marsicano
@@ -2925,12 +3175,13 @@ people:
   - education
   year: 2025
 - name: Giulia Domingues de Alcantara
+  slug: giulia_domingues_de_alcantara
   categories:
   - people
   - tcc
   title:
-    pt: "Centralização de Informações Administrativas como Suporte ao Desenvolvimento Estudantil na FCTE: Uma Abordagem com Chatbot e Inteligência Artificial"
-    en: "Centralization of administrative information to support student development at FCTE: a chatbot and artificial intelligence approach"
+    pt: 'Centralização de Informações Administrativas como Suporte ao Desenvolvimento Estudantil na FCTE: Uma Abordagem com Chatbot e Inteligência Artificial'
+    en: 'Centralization of administrative information to support student development at FCTE: a chatbot and artificial intelligence approach'
   program: curso_esw2
   advisors:
   - george_marsicano
@@ -2940,12 +3191,13 @@ people:
   - education
   year: 2025
 - name: Maria Eduarda dos Santos Abritta Ferreira
+  slug: maria_eduarda_dos_santos_abritta_ferreira
   categories:
   - people
   - tcc
   title:
-    pt: "Aplicação de Aprendizado de Máquina na Predição Não-Invasiva de Euploidia em Embriões Humanos com Base em Dados Morfocinéticos"
-    en: "Application of Machine Learning to the Non-Invasive Prediction of Euploidy in Human Embryos Based on Morphokinetic Data"
+    pt: Aplicação de Aprendizado de Máquina na Predição Não-Invasiva de Euploidia em Embriões Humanos com Base em Dados Morfocinéticos
+    en: Application of Machine Learning to the Non-Invasive Prediction of Euploidy in Human Embryos Based on Morphokinetic Data
   program: curso_esw2
   advisors:
   - george_marsicano
@@ -2955,12 +3207,13 @@ people:
   - machine_learning
   year: 2025
 - name: Sabrina Caldas Berno
+  slug: sabrina_caldas_berno
   categories:
   - people
   - tcc
   title:
-    pt: "Aplicação de Aprendizado de Máquina na Predição Não-Invasiva de Euploidia em Embriões Humanos com Base em Dados Morfocinéticos"
-    en: "Application of Machine Learning to the Non-Invasive Prediction of Euploidy in Human Embryos Based on Morphokinetic Data"
+    pt: Aplicação de Aprendizado de Máquina na Predição Não-Invasiva de Euploidia em Embriões Humanos com Base em Dados Morfocinéticos
+    en: Application of Machine Learning to the Non-Invasive Prediction of Euploidy in Human Embryos Based on Morphokinetic Data
   program: curso_esw2
   advisors:
   - george_marsicano
@@ -2970,12 +3223,13 @@ people:
   - machine_learning
   year: 2025
 - name: Luis Eduardo Carneiro Miranda
+  slug: luis_eduardo_carneiro_miranda
   categories:
   - people
   - tcc
   title:
-    pt: "Gerenciador de Estoque Inteligente"
-    en: "Smart Inventory Manager"
+    pt: Gerenciador de Estoque Inteligente
+    en: Smart Inventory Manager
   program: curso_esw2
   advisors:
   - daniel_sundfeld
@@ -2984,12 +3238,13 @@ people:
   - software_architecture
   year: 2025
 - name: Vinícius Mendes Martins
+  slug: vinicius_mendes_martins
   categories:
   - people
   - tcc
   title:
-    pt: "Gerenciador de Estoque Inteligente"
-    en: "Smart Inventory Manager"
+    pt: Gerenciador de Estoque Inteligente
+    en: Smart Inventory Manager
   program: curso_esw2
   advisors:
   - daniel_sundfeld
@@ -2998,12 +3253,13 @@ people:
   - software_architecture
   year: 2025
 - name: Leonardo Gonçalves Machado
+  slug: leonardo_goncalves_machado
   categories:
   - people
   - tcc
   title:
-    pt: "Soluções Ótimas Paralelas para Slidding Puzzle e Cubo Mágico"
-    en: "Parallel Optimal Solutions for Sliding Puzzle and Rubik's Cube"
+    pt: Soluções Ótimas Paralelas para Slidding Puzzle e Cubo Mágico
+    en: Parallel Optimal Solutions for Sliding Puzzle and Rubik's Cube
   program: curso_esw2
   advisors:
   - daniel_sundfeld
@@ -3012,12 +3268,13 @@ people:
   - hpc
   year: 2025
 - name: Victorio Lázaro Rocha de Morais
+  slug: victorio_lazaro_rocha_de_morais
   categories:
   - people
   - tcc
   title:
-    pt: "Pipeline para Análise de Biomoléculas Brasileiras com Arquitetura Baseada em Microsserviços e GPUs"
-    en: "Pipeline for the Analysis of Brazilian Biomolecules with an Architecture Based on Microservices and GPUs"
+    pt: Pipeline para Análise de Biomoléculas Brasileiras com Arquitetura Baseada em Microsserviços e GPUs
+    en: Pipeline for the Analysis of Brazilian Biomolecules with an Architecture Based on Microservices and GPUs
   program: curso_esw2
   advisors:
   - daniel_sundfeld
@@ -3026,12 +3283,13 @@ people:
   - hpc
   year: 2025
 - name: Maurício Ferreira de Araújo
+  slug: mauricio_ferreira_de_araujo
   categories:
   - people
   - scientific_initiation
   title:
-    pt: "Acelerando PIC com GPU"
-    en: "Accelerating PIC with GPU"
+    pt: Acelerando PIC com GPU
+    en: Accelerating PIC with GPU
   program: scientific_initiation
   advisors:
   - daniel_sundfeld
@@ -3040,12 +3298,13 @@ people:
   - hpc
   year: 2025
 - name: Caio Gomes Flausino
+  slug: caio_gomes_flausino
   categories:
   - people
   - scientific_initiation
   title:
-    pt: "Sistemas Web aplicados à Bioinformática"
-    en: "Web Systems Applied to Bioinformatics"
+    pt: Sistemas Web aplicados à Bioinformática
+    en: Web Systems Applied to Bioinformatics
   program: scientific_initiation
   advisors:
   - daniel_sundfeld
@@ -3054,12 +3313,13 @@ people:
   - hpc
   year: 2021
 - name: Laís Alves Corrêa
+  slug: lais_alves_correa
   categories:
   - people
   - scientific_initiation
   title:
-    pt: "Arquitetura em nuvem para HPC"
-    en: "Cloud Architecture for HPC"
+    pt: Arquitetura em nuvem para HPC
+    en: Cloud Architecture for HPC
   program: scientific_initiation
   advisors:
   - daniel_sundfeld
@@ -3067,42 +3327,14 @@ people:
   - inactive
   - hpc
   year: 2020
-- name: Rodrigo Rocha Gomes
-  categories:
-  - people
-  - scientific_initiation
-  title:
-    pt: "Sistemas Web aplicados à Bioinformática"
-    en: "Web Systems Applied to Bioinformatics"
-  program: scientific_initiation
-  advisors:
-  - daniel_sundfeld
-  tags:
-  - inactive
-  - hpc
-  year: 2019
-- name: Ana Carolina Costa César
-  categories:
-  - people
-  - scientific_initiation
-  title:
-    pt: "Solução para permitir doações de recursos financeiros por meio do DOARTI"
-    en: "Solution to enable financial donations through DOARTI"
-  program: scientific_initiation
-  advisors:
-  - george_marsicano
-  tags:
-  - inactive
-  - social_software
-  - digital_transformation
-  year: 2021
 - name: Priscila Yukie Yamada
+  slug: priscila_yukie_yamada
   categories:
   - people
   - scientific_initiation
   title:
-    pt: "Diagnósticos e modelagem de serviços dos órgãos"
-    en: "Diagnostics and service modeling for government agencies"
+    pt: Diagnósticos e modelagem de serviços dos órgãos
+    en: Diagnostics and service modeling for government agencies
   program: scientific_initiation
   advisors:
   - cristiane_ramos
@@ -3111,54 +3343,28 @@ people:
   - digital_transformation
   year: 2018
 - name: Shayane Marques Alcantara
+  slug: shayane_marques_alcantara
   categories:
   - people
   - scientific_initiation
   title:
-    pt: "Identificação, modelagem e prototipação de serviços"
-    en: "Identification, modeling, and prototyping of services"
+    pt: Identificação, modelagem e prototipação de serviços
+    en: Identification, modeling, and prototyping of services
   program: scientific_initiation
   advisors:
   - cristiane_ramos
   tags:
   - inactive
   - digital_transformation
-  year: 2018
-- name: Victor Hugo Arnaud Deon
-  categories:
-  - people
-  - scientific_initiation
-  title:
-    pt: "Desenvolvimento de ferramentas para automação de serviços"
-    en: "Development of tools for service automation"
-  program: scientific_initiation
-  advisors:
-  - cristiane_ramos
-  tags:
-  - inactive
-  - digital_transformation
-  year: 2018
-- name: Ronyell Henrique dos Santos
-  categories:
-  - people
-  - scientific_initiation
-  title:
-    pt: "Atividades de sustentação e automação de testes"
-    en: "Maintenance and test automation activities"
-  program: scientific_initiation
-  advisors:
-  - cristiane_ramos
-  tags:
-  - inactive
-  - verification_validation_testing
   year: 2018
 - name: Ramy da Silva Alcântara
+  slug: ramy_da_silva_alcantara
   categories:
   - people
   - scientific_initiation
   title:
-    pt: "Melhoria do processo de desenvolvimento de software embarcado"
-    en: "Improvement of the embedded software development process"
+    pt: Melhoria do processo de desenvolvimento de software embarcado
+    en: Improvement of the embedded software development process
   program: scientific_initiation
   advisors:
   - cristiane_ramos
@@ -3167,12 +3373,13 @@ people:
   - software_quality
   year: 2011
 - name: Wagner Jerônimo Santos
+  slug: wagner_jeronimo_santos
   categories:
   - people
   - scientific_initiation
   title:
-    pt: "Definição de um processo de garantia da qualidade baseada em uma arquitetura de componentes de processo"
-    en: "Definition of a quality assurance process based on a process component architecture"
+    pt: Definição de um processo de garantia da qualidade baseada em uma arquitetura de componentes de processo
+    en: Definition of a quality assurance process based on a process component architecture
   program: scientific_initiation
   advisors:
   - cristiane_ramos
@@ -3182,12 +3389,13 @@ people:
   - verification_validation_testing
   year: 2011
 - name: Henrique Santos
+  slug: henrique_santos
   categories:
   - people
   - scientific_initiation
   title:
-    pt: "Análise comparativa entre modelos de processo de aquisição de software e a Instrução Normativa nº 04"
-    en: "Comparative analysis between software acquisition process models and Normative Instruction No. 04"
+    pt: Análise comparativa entre modelos de processo de aquisição de software e a Instrução Normativa nº 04
+    en: Comparative analysis between software acquisition process models and Normative Instruction No. 04
   program: scientific_initiation
   advisors:
   - cristiane_ramos
@@ -3196,12 +3404,13 @@ people:
   - digital_transformation
   year: 2010
 - name: Guilherme B. Rêgo
+  slug: guilherme_b_rego
   categories:
   - people
   - scientific_initiation
   title:
-    pt: "Análise comparativa de modelos de processo de aquisição de software embarcados, críticos e seguros no contexto da indústria automobilística"
-    en: "Comparative analysis of embedded, critical, and safe software acquisition process models in the automotive industry context"
+    pt: Análise comparativa de modelos de processo de aquisição de software embarcados, críticos e seguros no contexto da indústria automobilística
+    en: Comparative analysis of embedded, critical, and safe software acquisition process models in the automotive industry context
   program: scientific_initiation
   advisors:
   - cristiane_ramos
@@ -3210,12 +3419,13 @@ people:
   - software_quality
   year: 2010
 - name: Almir José Malheiros Franco
+  slug: almir_jose_malheiros_franco
   categories:
   - people
   - tcc
   title:
-    pt: "Sistema para apoio e acompanhamento de trabalhos de conclusão de curso"
-    en: "System to support and track final course projects"
+    pt: Sistema para apoio e acompanhamento de trabalhos de conclusão de curso
+    en: System to support and track final course projects
   program: curso_esw2
   advisors:
   - daniel_sundfeld
@@ -3224,12 +3434,13 @@ people:
   - software_architecture
   year: 2022
 - name: Guilherme Jesus Nunes
+  slug: guilherme_jesus_nunes
   categories:
   - people
   - tcc
   title:
-    pt: "Sistema para apoio e acompanhamento de trabalhos de conclusão de curso"
-    en: "System to support and track final course projects"
+    pt: Sistema para apoio e acompanhamento de trabalhos de conclusão de curso
+    en: System to support and track final course projects
   program: curso_esw2
   advisors:
   - daniel_sundfeld
@@ -3238,12 +3449,13 @@ people:
   - software_architecture
   year: 2022
 - name: Francisca de Fátima Araújo Lucena
+  slug: francisca_de_fatima_araujo_lucena
   categories:
   - people
   - tcc
   title:
-    pt: "Detecção de fake news relacionadas à COVID-19 no Brasil"
-    en: "Detection of fake news related to COVID-19 in Brazil"
+    pt: Detecção de fake news relacionadas à COVID-19 no Brasil
+    en: Detection of fake news related to COVID-19 in Brazil
   program: curso_esw2
   advisors:
   - daniel_sundfeld
@@ -3252,12 +3464,13 @@ people:
   - ai
   year: 2023
 - name: Mariana Guedes da Silva
+  slug: mariana_guedes_da_silva
   categories:
   - people
   - tcc
   title:
-    pt: "Detecção de fake news relacionadas à COVID-19 no Brasil"
-    en: "Detection of fake news related to COVID-19 in Brazil"
+    pt: Detecção de fake news relacionadas à COVID-19 no Brasil
+    en: Detection of fake news related to COVID-19 in Brazil
   program: curso_esw2
   advisors:
   - daniel_sundfeld
@@ -3266,12 +3479,13 @@ people:
   - ai
   year: 2023
 - name: Diego Emanuel Ferreira da Rocha
+  slug: diego_emanuel_ferreira_da_rocha
   categories:
   - people
   - master_student
   title:
-    pt: "Identificação automatizada de processos elementares a partir da análise de requisições HTTP"
-    en: "Automated identification of elementary processes through HTTP request analysis"
+    pt: Identificação automatizada de processos elementares a partir da análise de requisições HTTP
+    en: Automated identification of elementary processes through HTTP request analysis
   program: curso_ppca
   advisors:
   - andre_lanna
@@ -3281,12 +3495,13 @@ people:
   - machine_learning
   year: 2025
 - name: Luciana Santos de Assis
+  slug: luciana_santos_de_assis
   categories:
   - people
   - master_student
   title:
-    pt: "Gamificação em Ambientes Organizacionais: Um Estudo de Caso em uma Empresa Pública"
-    en: "Gamification in Organizational Environments: A Case Study in a Public Enterprise"
+    pt: 'Gamificação em Ambientes Organizacionais: Um Estudo de Caso em uma Empresa Pública'
+    en: 'Gamification in Organizational Environments: A Case Study in a Public Enterprise'
   program: curso_ppca
   advisors:
   - sergio_freitas
@@ -3297,12 +3512,13 @@ people:
   - digital_transformation
   year: 2023
 - name: Tássio Correia da Silva
+  slug: tassio_correia_da_silva
   categories:
   - people
   - master_student
   title:
-    pt: "3SW: um modelo adaptado do CIS Controls v8.1 para mitigação de ameaças a servidores Web"
-    en: "3SW: an adapted CIS Controls v8.1 model for mitigating threats to Web servers"
+    pt: '3SW: um modelo adaptado do CIS Controls v8.1 para mitigação de ameaças a servidores Web'
+    en: '3SW: an adapted CIS Controls v8.1 model for mitigating threats to Web servers'
   program: curso_ppgee
   advisors:
   - fabiana_mendes
@@ -3312,12 +3528,13 @@ people:
   - software_architecture
   year: 2025
 - name: Arthur Rocha Temporim de Lacerda
+  slug: arthur_temporim
   categories:
   - people
   - master_student
   title:
-    pt: "Gamified Chatbot Management Process: A way to build gamified chatbots"
-    en: "Gamified Chatbot Management Process: A way to build gamified chatbots"
+    pt: 'Gamified Chatbot Management Process: A way to build gamified chatbots'
+    en: 'Gamified Chatbot Management Process: A way to build gamified chatbots'
   program: curso_ppca
   advisors:
   - sergio_freitas
@@ -3328,12 +3545,13 @@ people:
   - nlp
   year: 2024
 - name: Éber Junio Borges Moreira
+  slug: eber_junio_borges_moreira
   categories:
   - people
   - master_student
   title:
-    pt: "Agendamento de recursos acadêmicos em Instituições de Ensino Superior: Estudo de caso na Universidade de Brasília"
-    en: "Scheduling of academic resources in Higher Education Institutions: a case study at the University of Brasília"
+    pt: 'Agendamento de recursos acadêmicos em Instituições de Ensino Superior: Estudo de caso na Universidade de Brasília'
+    en: 'Scheduling of academic resources in Higher Education Institutions: a case study at the University of Brasília'
   program: curso_ppca
   advisors:
   - sergio_freitas
@@ -3343,12 +3561,13 @@ people:
   - software_architecture
   year: 2024
 - name: Públio Pastrolin Cavalcante
+  slug: publio_pastrolin_cavalcante
   categories:
   - people
   - master_student
   title:
-    pt: "Avaliação da mudança na qualidade dos relatórios com a aplicação da gamificação em atividades de inteligência policial"
-    en: "Evaluating changes in report quality with the application of gamification in police intelligence activities"
+    pt: Avaliação da mudança na qualidade dos relatórios com a aplicação da gamificação em atividades de inteligência policial
+    en: Evaluating changes in report quality with the application of gamification in police intelligence activities
   program: curso_ppca
   advisors:
   - sergio_freitas
@@ -3358,12 +3577,13 @@ people:
   - software_quality
   year: 2023
 - name: Edmilson Cosme da Silva
+  slug: edmilson_cosme
   categories:
   - people
   - master_student
   title:
-    pt: "Previsão da evasão acadêmica no ensino superior: o caso dos cursos de graduação presencial da Universidade de Brasília"
-    en: "Predicting academic dropout in higher education: the case of on-campus undergraduate programs at the University of Brasília"
+    pt: 'Previsão da evasão acadêmica no ensino superior: o caso dos cursos de graduação presencial da Universidade de Brasília'
+    en: 'Predicting academic dropout in higher education: the case of on-campus undergraduate programs at the University of Brasília'
   program: curso_ppca
   advisors:
   - sergio_freitas
@@ -3374,12 +3594,13 @@ people:
   - machine_learning
   year: 2023
 - name: Ana Cláudia Alves Mendes Araújo
+  slug: ana_claudia_alves_mendes_araujo
   categories:
   - people
   - master_student
   title:
-    pt: "REQGAME - Elicitação de Requisitos com Gamificação: um experimento em projetos de software em órgão público federal"
-    en: "REQGAME - Requirements Elicitation with Gamification: an experiment in software projects at a federal public agency"
+    pt: 'REQGAME - Elicitação de Requisitos com Gamificação: um experimento em projetos de software em órgão público federal'
+    en: 'REQGAME - Requirements Elicitation with Gamification: an experiment in software projects at a federal public agency'
   program: curso_ppca
   advisors:
   - sergio_freitas
@@ -3389,12 +3610,13 @@ people:
   - software_requirements
   year: 2021
 - name: Felipe Evangelista dos Santos
+  slug: felipe_evangelista_dos_santos
   categories:
   - people
   - master_student
   title:
-    pt: "Implementação da integração do Barramento de Serviços da UnB com ferramentas de monitoramento"
-    en: "Implementation of the integration of UnB's Service Bus with monitoring tools"
+    pt: Implementação da integração do Barramento de Serviços da UnB com ferramentas de monitoramento
+    en: Implementation of the integration of UnB's Service Bus with monitoring tools
   program: curso_ppca
   advisors:
   - sergio_freitas
@@ -3404,12 +3626,13 @@ people:
   - digital_transformation
   year: 2020
 - name: James Taylor Faria Chaves
+  slug: james_taylor_faria_chaves
   categories:
   - people
   - master_student
   title:
-    pt: "Service-Oriented Architecture (SOA), Agile Development Methods and Quality Assurance (QA): A case study"
-    en: "Service-Oriented Architecture (SOA), Agile Development Methods and Quality Assurance (QA): A case study"
+    pt: 'Service-Oriented Architecture (SOA), Agile Development Methods and Quality Assurance (QA): A case study'
+    en: 'Service-Oriented Architecture (SOA), Agile Development Methods and Quality Assurance (QA): A case study'
   program: curso_ppca
   advisors:
   - sergio_freitas
@@ -3419,12 +3642,13 @@ people:
   - software_quality
   year: 2019
 - name: Débora Zupeli Bossois
+  slug: debora_zupeli_bossois
   categories:
   - people
   - master_student
   title:
-    pt: "Metodologia de categorização de textos a partir de documentos não rotulados utilizando um processo de resolução de anáforas"
-    en: "Text categorization methodology from unlabeled documents using an anaphora resolution process"
+    pt: Metodologia de categorização de textos a partir de documentos não rotulados utilizando um processo de resolução de anáforas
+    en: Text categorization methodology from unlabeled documents using an anaphora resolution process
   program: curso_ppgi
   advisors:
   - sergio_freitas
@@ -3435,12 +3659,13 @@ people:
   - machine_learning
   year: 2010
 - name: Luana Vieira Morellato
+  slug: luana_vieira_morellato
   categories:
   - people
   - master_student
   title:
-    pt: "Metodologia Computacional para Identificação de Sintagmas Nominais da Língua Portuguesa"
-    en: "Computational Methodology for Identifying Nominal Syntagmas in Portuguese"
+    pt: Metodologia Computacional para Identificação de Sintagmas Nominais da Língua Portuguesa
+    en: Computational Methodology for Identifying Nominal Syntagmas in Portuguese
   program: curso_ppgi
   advisors:
   - sergio_freitas
@@ -3450,12 +3675,13 @@ people:
   - ai
   year: 2010
 - name: Francisco Santiago do Carmo Pereira
+  slug: francisco_santiago_do_carmo_pereira
   categories:
   - people
   - master_student
   title:
-    pt: "Uma metodologia para a utilização do processamento de Linguagem Natural na busca de informações em documentos digitais"
-    en: "A methodology for the use of natural language processing in searching information in digital documents"
+    pt: Uma metodologia para a utilização do processamento de Linguagem Natural na busca de informações em documentos digitais
+    en: A methodology for the use of natural language processing in searching information in digital documents
   program: curso_ppgi
   advisors:
   - sergio_freitas
@@ -3465,12 +3691,13 @@ people:
   - ai
   year: 2009
 - name: Hilário Seibel Júnior
+  slug: hilario_seibel_junior
   categories:
   - people
   - master_student
   title:
-    pt: "Recuperação de informações relevantes em documentos digitais baseada na resolução de anáforas"
-    en: "Retrieval of relevant information in digital documents based on anaphora resolution"
+    pt: Recuperação de informações relevantes em documentos digitais baseada na resolução de anáforas
+    en: Retrieval of relevant information in digital documents based on anaphora resolution
   program: curso_ppgi
   advisors:
   - sergio_freitas
@@ -3480,12 +3707,13 @@ people:
   - ai
   year: 2007
 - name: Eduardo Zambon
+  slug: eduardo_zambon
   categories:
   - people
   - master_student
   title:
-    pt: "Otimização de índices de confiabilidade em redes de distribuição de energia elétrica"
-    en: "Optimization of reliability indices in electric power distribution networks"
+    pt: Otimização de índices de confiabilidade em redes de distribuição de energia elétrica
+    en: Optimization of reliability indices in electric power distribution networks
   program: curso_ppgi
   advisors:
   - berilhes_garcia
@@ -3495,12 +3723,13 @@ people:
   - software_architecture
   year: 2006
 - name: Ayrton Monteiro Cristo Filho
+  slug: ayrton_monteiro_cristo_filho
   categories:
   - people
   - master_student
   title:
-    pt: "Interpretação computacional do futuro do pretérito simples em narrativas para o Português do Brasil"
-    en: "Computational interpretation of the simple future perfect in narratives for Brazilian Portuguese"
+    pt: Interpretação computacional do futuro do pretérito simples em narrativas para o Português do Brasil
+    en: Computational interpretation of the simple future perfect in narratives for Brazilian Portuguese
   program: curso_ppgi
   advisors:
   - sergio_freitas

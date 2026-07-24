@@ -1,0 +1,40 @@
+{{/*
+  derivedPeople — lista alfabética de pessoas derivadas
+  (profile_level: derived) com contagem de publicações e link.
+
+  Consumo em /people/all/ bloco 4.
+*/}}
+{{- $lang := .Page.Site.Language.Lang -}}
+{{- $isPt := eq $lang "pt" -}}
+{{- $countLabel := cond $isPt "pub." "pub." -}}
+
+{{- $derived := slice -}}
+{{- range where .Page.Site.RegularPages "Section" "people" -}}
+  {{- if eq .Params.profile_level "derived" -}}
+    {{- $derived = $derived | append (dict
+      "name" .Title
+      "url" .RelPermalink
+      "count" (len (.Params.matched_productions | default (slice)))
+      "sortKey" (lower .Title)
+    ) -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $sorted := sort $derived "sortKey" "asc" -}}
+{{- $total := len $sorted -}}
+
+{{ if gt $total 0 }}
+<div>
+<p class="text-sm text-gray-600 dark:text-white/72">
+  {{ if $isPt }}<strong>{{ $total }}</strong> pessoas citadas como coautoras em produções do CEDIS ainda sem perfil individual. Ordem alfabética.{{ else }}<strong>{{ $total }}</strong> people cited as co-authors in CEDIS works without an individual profile yet. Alphabetical order.{{ end }}
+</p>
+<ul class="mt-4 grid gap-1 pl-0 sm:grid-cols-2 lg:grid-cols-3">
+{{ range $sorted }}
+  <li class="flex items-baseline justify-between gap-2 border-b border-black/5 py-1 text-sm dark:border-white/10">
+    <a href="{{ .url }}" class="truncate text-gray-700 transition-colors hover:text-primary-600 dark:text-white/78 dark:hover:text-primary-200">{{ .name }}</a>
+    <span class="shrink-0 text-xs text-gray-400 dark:text-white/60">{{ .count }} {{ $countLabel }}</span>
+  </li>
+{{ end }}
+</ul>
+</div>
+{{ end }}

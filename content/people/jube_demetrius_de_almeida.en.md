@@ -1,0 +1,23 @@
+---
+author: CEDIS
+title: JUBÉ, DEMÉTRIUS DE ALMEIDA
+profile_level: derived
+layout: derived
+slug: jube_demetrius_de_almeida
+language: en
+summary: Co-author cited in 1 publication by CEDIS.
+authorimage: ../assets/images/global/author.webp
+aliases_authors:
+- JUBÉ, DEMÉTRIUS DE ALMEIDA
+matched_productions:
+- title: Avaliação de Conhecimento em Engenharia de Requisitos no Startup Gov.br
+  year: 2023
+  type: workshop
+---
+
+Cited as co-author in **1 publication** by CEDIS.
+
+Detailed profile not yet available — the information below was
+automatically derived from the works where this name appears.
+
+Is that you and want a full profile? [Contact CEDIS](/join/).

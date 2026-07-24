@@ -1,0 +1,66 @@
+{{/*
+  peopleCount — retorna a contagem de pessoas do people-index conforme
+  filtros. Usado pra chips-contador no hero de /people/all/ e outros.
+
+  Parâmetros (todos opcionais):
+    level      — filtra por profile_level (ex.: "researcher", "card_with_page")
+    category   — filtra pessoas cujas supervisions/page.Params tenham essa categoria
+    status     — "active" (exclui pessoas com só supervisions inactive)
+               | "inactive" (só pessoas totalmente inativas)
+               | "" (sem filtro por status)
+
+  Uso: {{< peopleCount level="researcher" >}}
+       {{< peopleCount category="scientific_initiation" status="active" >}}
+
+  NOTA: usa trim de whitespace agressivo ({{- ... -}}) porque o loop de
+  230+ entradas emitiria milhares de newlines/espaços no HTML de saída.
+*/ -}}
+{{- $level := .Get "level" -}}
+{{- $category := .Get "category" -}}
+{{- $status := .Get "status" | default "" -}}
+{{- $index := partialCached "people-index" "global" -}}
+{{- $count := 0 -}}
+{{- range $slug, $entry := $index -}}
+  {{- if $entry.found -}}
+    {{- $ok := true -}}
+    {{/* derived people never count for status filters — só quando level="derived" explicit */}}
+    {{- if and (eq $entry.profile_level "derived") (ne $level "derived") -}}{{- $ok = false -}}{{- end -}}
+    {{- if $level -}}{{- if ne $entry.profile_level $level -}}{{- $ok = false -}}{{- end -}}{{- end -}}
+    {{- if and $ok $category -}}
+      {{- $hasCat := false -}}
+      {{- range $entry.supervisions -}}
+        {{- if in (.categories | default (slice)) $category -}}{{- $hasCat = true -}}{{- end -}}
+      {{- end -}}
+      {{- with $entry.page -}}
+        {{- if in (.Params.categories | default (slice)) $category -}}{{- $hasCat = true -}}{{- end -}}
+      {{- end -}}
+      {{- if not $hasCat -}}{{- $ok = false -}}{{- end -}}
+    {{- end -}}
+    {{- if and $ok (eq $status "active") -}}
+      {{- $anyActive := false -}}
+      {{- range $entry.supervisions -}}
+        {{- if not (in (.tags | default (slice)) "inactive") -}}{{- $anyActive = true -}}{{- end -}}
+      {{- end -}}
+      {{- with $entry.page -}}
+        {{- if not (in (.Params.tags | default (slice)) "inactive") -}}{{- $anyActive = true -}}{{- end -}}
+      {{- end -}}
+      {{- if and (eq (len $entry.supervisions) 0) (not $entry.page) -}}{{- $anyActive = false -}}{{- end -}}
+      {{- if not $anyActive -}}{{- $ok = false -}}{{- end -}}
+    {{- end -}}
+    {{- if and $ok (eq $status "inactive") -}}
+      {{- $allInactive := true -}}
+      {{- $hasAny := false -}}
+      {{- range $entry.supervisions -}}
+        {{- $hasAny = true -}}
+        {{- if not (in (.tags | default (slice)) "inactive") -}}{{- $allInactive = false -}}{{- end -}}
+      {{- end -}}
+      {{- with $entry.page -}}
+        {{- $hasAny = true -}}
+        {{- if not (in (.Params.tags | default (slice)) "inactive") -}}{{- $allInactive = false -}}{{- end -}}
+      {{- end -}}
+      {{- if or (not $hasAny) (not $allInactive) -}}{{- $ok = false -}}{{- end -}}
+    {{- end -}}
+    {{- if $ok -}}{{- $count = add $count 1 -}}{{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- $count -}}
