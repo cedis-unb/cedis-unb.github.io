@@ -6,7 +6,9 @@ roadmap de unificação). Este script NÃO altera nenhum arquivo — apenas
 inspeciona e emite relatório.
 
 Fontes analisadas:
-  1. data/advisors.yaml           — orientadores (13 esperados)
+  1. content/people/*.md com profile_level: researcher|advisor_only
+     — docentes CEDIS + advisors externos (13 esperados)
+     [antes do Gap #1 vinha de data/advisors.yaml]
   2. content/people/*.md          — perfis "full" (7-8 esperados)
   3. content/people/collaborators/*.md — perfis "médios" (10 esperados)
   4. data/people.yaml             — orientações (~237 entradas)
@@ -148,9 +150,31 @@ def similar(a: str, b: str) -> float:
 # ---------- loaders ----------
 
 def load_advisors() -> dict:
-    with open(DATA_DIR / "advisors.yaml") as f:
-        data = yaml.safe_load(f)
-    return data.get("advisors", {}) or {}
+    """Retorna dict {slug: {name}} para pessoas com profile_level de
+    docente/advisor externo. Substitui a leitura de data/advisors.yaml
+    que foi removido no Gap #1 (2026-07-24).
+
+    Formato mantido igual ao antigo advisors.yaml pra retrocompat com o
+    restante do script (só usa .keys() e .name)."""
+    out = {}
+    for md in CONTENT_PEOPLE.glob("*.pt.md"):
+        m = re.match(r"^([a-zA-Z0-9_\-]+)\.pt\.md$", md.name)
+        if not m or m.group(1) == "all":
+            continue
+        slug = m.group(1)
+        try:
+            text = md.read_text(encoding="utf-8")
+            fmm = re.match(r"^---\n(.*?)\n---", text, re.S)
+            if not fmm:
+                continue
+            fm = yaml.safe_load(fmm.group(1)) or {}
+        except Exception:
+            continue
+        level = fm.get("profile_level", "")
+        if level not in ("researcher", "advisor_only"):
+            continue
+        out[slug] = {"name": fm.get("title", "")}
+    return out
 
 
 def load_people_yaml() -> list:
