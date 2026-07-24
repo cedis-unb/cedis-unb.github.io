@@ -4,6 +4,8 @@ date: '2003-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2003_arthur_cypriano_monteiro_costa_proposta_de_um_modelo_para_estruturacao_de_vulnerabili
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2003_arthur_cypriano_monteiro_costa_proposta_de_um_modelo_para_estruturacao_de_vulnerabili
 publication_index: 244
 publication_group: tcc

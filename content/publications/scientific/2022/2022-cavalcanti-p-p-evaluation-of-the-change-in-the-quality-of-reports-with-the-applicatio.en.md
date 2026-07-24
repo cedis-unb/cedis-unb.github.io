@@ -5,6 +5,8 @@ date: '2022-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2022_cavalcanti_p_p_evaluation_of_the_change_in_the_quality_of_reports_with_the_applicatio
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2022_cavalcanti_p_p_evaluation_of_the_change_in_the_quality_of_reports_with_the_applicatio
 publication_index: 83
 publication_group: scientific
@@ -16,11 +18,12 @@ authors:
 - FREITAS, S. A. A.
 authors_structured:
 - name: CAVALCANTI, P. P.
+  id: cavalcanti_p_p
+  url: /people/cavalcanti_p_p
 - name: FREITAS, S. A. A.
 tags:
 - gamification
 - digital_transformation
-- sergio_freitas
 advisors: []
 doi_isbn: 10.1007/978-3-031-05544-7_27
 source_title: Proceedings of the 24th International Conference on Human-Computer Interaction

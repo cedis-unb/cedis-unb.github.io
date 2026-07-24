@@ -4,6 +4,8 @@ date: '2024-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2024_paulino_gabriel_r_scheidt_nimbus_uma_arquitetura_serverless_em_nuvem_para_correcao_au
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2024_paulino_gabriel_r_scheidt_nimbus_uma_arquitetura_serverless_em_nuvem_para_correcao_au
 publication_index: 33
 publication_group: scientific
@@ -17,14 +19,19 @@ authors:
 - LIMA, Daniel Sundfeld
 authors_structured:
 - name: PAULINO, GABRIEL R. SCHEIDT
+  id: paulino_gabriel_r_scheidt
+  url: /people/paulino_gabriel_r_scheidt
 - name: ARAÚJO, RAFAEL CARVALHO J.
+  id: araujo_rafael_carvalho_j
+  url: /people/araujo_rafael_carvalho_j
 - name: ROCHA, JOHAN M. G. DA
+  id: rocha_johan_m_g_da
+  url: /people/rocha_johan_m_g_da
 - name: LIMA, Daniel Sundfeld
   id: daniel_sundfeld
   url: /people/daniel_sundfeld
 tags:
 - hpc
-- daniel_sundfeld
 advisors: []
 doi_isbn: ''
 source_title: Escola Regional de Alto Desempenho do Centro-Oeste

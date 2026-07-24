@@ -5,6 +5,8 @@ date: '2021-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2021_weiller_fernandes_pereira_revisao_sistematica_da_literatura_sobre_o_uso_de_frameworks
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2021_weiller_fernandes_pereira_revisao_sistematica_da_literatura_sobre_o_uso_de_frameworks
 publication_index: 115
 publication_group: tcc

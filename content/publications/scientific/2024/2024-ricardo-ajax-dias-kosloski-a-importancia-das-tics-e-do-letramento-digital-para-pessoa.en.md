@@ -5,6 +5,8 @@ date: '2024-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2024_ricardo_ajax_dias_kosloski_a_importancia_das_tics_e_do_letramento_digital_para_pessoa
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2024_ricardo_ajax_dias_kosloski_a_importancia_das_tics_e_do_letramento_digital_para_pessoa
 publication_index: 36
 publication_group: scientific
@@ -22,13 +24,16 @@ authors_structured:
   url: /people/ricardo_ajax
 - name: Marília Miranda Forte Gomes
   id: marilia_miranda
-  url: http://lattes.cnpq.br/9169095482512290
+  url: /people/marilia_miranda
 - name: Leides Barroso de Azevedo Moura
+  id: leides_barroso_de_azevedo_moura
+  url: /people/leides_barroso_de_azevedo_moura
 - name: Simone Bezerra Franco
+  id: simone_bezerra_franco
+  url: /people/simone_bezerra_franco
 tags:
 - digital_transformation
 - software_quality
-- ricardo_ajax
 advisors: []
 doi_isbn: ''
 source_title: Seminário Internacional de Informação, Tecnologia e Inovação

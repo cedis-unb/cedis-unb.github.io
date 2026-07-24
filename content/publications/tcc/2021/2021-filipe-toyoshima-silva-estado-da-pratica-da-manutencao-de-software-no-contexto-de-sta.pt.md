@@ -5,6 +5,8 @@ date: '2021-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2021_filipe_toyoshima_silva_estado_da_pratica_da_manutencao_de_software_no_contexto_de_sta
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2021_filipe_toyoshima_silva_estado_da_pratica_da_manutencao_de_software_no_contexto_de_sta
 publication_index: 92
 publication_group: tcc

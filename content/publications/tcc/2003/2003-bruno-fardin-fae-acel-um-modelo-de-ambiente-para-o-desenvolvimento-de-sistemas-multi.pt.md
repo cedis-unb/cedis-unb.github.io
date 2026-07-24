@@ -5,6 +5,8 @@ date: '2003-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2003_bruno_fardin_fae_acel_um_modelo_de_ambiente_para_o_desenvolvimento_de_sistemas_multi
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2003_bruno_fardin_fae_acel_um_modelo_de_ambiente_para_o_desenvolvimento_de_sistemas_multi
 publication_index: 246
 publication_group: tcc

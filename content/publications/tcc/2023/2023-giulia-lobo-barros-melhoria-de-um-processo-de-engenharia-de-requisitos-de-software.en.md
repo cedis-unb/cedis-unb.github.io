@@ -4,6 +4,8 @@ date: '2023-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2023_giulia_lobo_barros_melhoria_de_um_processo_de_engenharia_de_requisitos_de_software
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2023_giulia_lobo_barros_melhoria_de_um_processo_de_engenharia_de_requisitos_de_software
 publication_index: 223
 publication_group: tcc

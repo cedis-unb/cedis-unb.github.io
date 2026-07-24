@@ -4,6 +4,8 @@ date: '2010-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2010_higor_estevan_do_carmo_rodrigues_proposta_de_processo_de_teste_baseado_no_cmmi_maturi
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2010_higor_estevan_do_carmo_rodrigues_proposta_de_processo_de_teste_baseado_no_cmmi_maturi
 publication_index: 290
 publication_group: specialization
@@ -14,6 +16,8 @@ authors:
 - Hígor Estevan do Carmo Rodrigues
 authors_structured:
 - name: Hígor Estevan do Carmo Rodrigues
+  id: higor_estevan_do_carmo_rodrigues
+  url: /people/higor_estevan_do_carmo_rodrigues
 tags:
 - software_quality
 - verification_validation_testing

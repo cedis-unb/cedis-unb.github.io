@@ -4,6 +4,8 @@ date: '2006-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2006_lucia_freire_vieira_documentacao_essencial_para_avaliacao_de_sistemas_legados_um_estu
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2006_lucia_freire_vieira_documentacao_essencial_para_avaliacao_de_sistemas_legados_um_estu
 publication_index: 312
 publication_group: specialization
@@ -15,7 +17,11 @@ authors:
 - Janaína Almeida de Deus
 authors_structured:
 - name: Lúcia Freire Vieira
+  id: lucia_freire_vieira
+  url: /people/lucia_freire_vieira
 - name: Janaína Almeida de Deus
+  id: janaina_almeida_de_deus
+  url: /people/janaina_almeida_de_deus
 tags:
 - software_quality
 advisors:

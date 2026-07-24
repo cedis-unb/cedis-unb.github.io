@@ -4,6 +4,8 @@ date: '2014-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2014_vinicius_maia_de_brito_proposta_de_um_conjunto_de_competencias_para_o_product_owner
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2014_vinicius_maia_de_brito_proposta_de_um_conjunto_de_competencias_para_o_product_owner
 publication_index: 275
 publication_group: tcc

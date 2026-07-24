@@ -4,6 +4,8 @@ date: '2021-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2021_caio_cesar_de_almeida_beleza_problemas_em_interfaces_de_software_que_induzem_usuarios
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2021_caio_cesar_de_almeida_beleza_problemas_em_interfaces_de_software_que_induzem_usuarios
 publication_index: 91
 publication_group: tcc

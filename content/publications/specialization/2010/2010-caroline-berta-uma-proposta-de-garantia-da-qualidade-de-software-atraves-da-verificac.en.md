@@ -5,6 +5,8 @@ date: '2010-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2010_caroline_berta_uma_proposta_de_garantia_da_qualidade_de_software_atraves_da_verificac
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2010_caroline_berta_uma_proposta_de_garantia_da_qualidade_de_software_atraves_da_verificac
 publication_index: 289
 publication_group: specialization
@@ -15,6 +17,8 @@ authors:
 - Caroline Berta
 authors_structured:
 - name: Caroline Berta
+  id: caroline_berta
+  url: /people/caroline_berta
 tags:
 - software_quality
 - verification_validation_testing

@@ -13,7 +13,6 @@ on:
     # metadados (evita jobs redundantes).
     paths-ignore:
       - 'docs/**'
-      - '**.md'
       - '.tool-versions'
   pull_request:
     branches: [main]
@@ -64,6 +63,9 @@ jobs:
       - name: Install Python validation dependencies
         run: python3 -m pip install --upgrade pyyaml jsonschema
 
+      - name: Check generated publication pages
+        run: python3 scripts/build_publications.py --check
+
       - name: Validate content data
         run: python3 scripts/validate_content.py
         env:
@@ -75,7 +77,7 @@ jobs:
           CEDIS_I18N_REPORT: i18n-validation-report.md
 
       - name: Build site (Hugo)
-        run: hugo --gc --minify --destination public
+        run: python3 scripts/build_publications.py && hugo --gc --minify --destination public
 
       - name: Build Pagefind index
         run: npx --no-install pagefind --site public

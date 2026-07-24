@@ -4,6 +4,8 @@ date: '2026-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2026_leonardo_goncalves_machado_solucoes_otimas_paralelas_para_sliding_puzzle_e_cubo_magic
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2026_leonardo_goncalves_machado_solucoes_otimas_paralelas_para_sliding_puzzle_e_cubo_magic
 publication_index: 3
 publication_group: tcc

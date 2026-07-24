@@ -4,6 +4,8 @@ date: '1993-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_1993_sergio_antonio_andrade_de_freitas_deiticos_e_anaforas_pronominais_em_dialogos
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_1993_sergio_antonio_andrade_de_freitas_deiticos_e_anaforas_pronominais_em_dialogos
 publication_index: 222
 publication_group: thesis
@@ -17,7 +19,6 @@ authors_structured:
   id: sergio_freitas
   url: /people/sergio_freitas
 tags:
-- sergio_freitas
 - nlp
 - ai
 advisors: []

@@ -4,6 +4,8 @@ date: '2017-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2017_yeltsin_suares_gama_sistema_de_apoio_ao_aprendizado
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2017_yeltsin_suares_gama_sistema_de_apoio_ao_aprendizado
 publication_index: 169
 publication_group: tcc

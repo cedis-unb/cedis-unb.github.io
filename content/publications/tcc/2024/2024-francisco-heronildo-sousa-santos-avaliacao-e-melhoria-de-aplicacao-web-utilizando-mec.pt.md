@@ -4,6 +4,8 @@ date: '2024-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2024_francisco_heronildo_sousa_santos_avaliacao_e_melhoria_de_aplicacao_web_utilizando_mec
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2024_francisco_heronildo_sousa_santos_avaliacao_e_melhoria_de_aplicacao_web_utilizando_mec
 publication_index: 32
 publication_group: tcc

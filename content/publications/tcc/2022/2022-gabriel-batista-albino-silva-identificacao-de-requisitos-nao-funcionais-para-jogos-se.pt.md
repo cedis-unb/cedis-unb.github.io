@@ -5,6 +5,8 @@ date: '2022-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2022_gabriel_batista_albino_silva_identificacao_de_requisitos_nao_funcionais_para_jogos_se
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2022_gabriel_batista_albino_silva_identificacao_de_requisitos_nao_funcionais_para_jogos_se
 publication_index: 68
 publication_group: tcc

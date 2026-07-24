@@ -4,6 +4,8 @@ date: '2014-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2014_thatiany_lima_de_sousa_experiencia_no_projeto_framework_de_solucoes_de_ti
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2014_thatiany_lima_de_sousa_experiencia_no_projeto_framework_de_solucoes_de_ti
 publication_index: 324
 publication_group: scientific
@@ -17,15 +19,20 @@ authors:
 - Ricardo Ajax Dias Kosloski
 authors_structured:
 - name: Thatiany Lima de Sousa
+  id: lima_victor_cotrim_de
+  url: /people/lima_victor_cotrim_de
 - name: Rejane Maria da Costa Figueiredo
+  id: rejane_maria_da_costa_figueiredo
+  url: /people/rejane_maria_da_costa_figueiredo
 - name: Elaine Venson
+  id: elaine_venson
+  url: /people/elaine_venson
 - name: Ricardo Ajax Dias Kosloski
   id: ricardo_ajax
   url: /people/ricardo_ajax
 tags:
 - digital_transformation
 - software_quality
-- ricardo_ajax
 advisors: []
 doi_isbn: ''
 source_title: CBSoft - VII Fórum de Educação em Engenharia de Software (FEES)

@@ -4,6 +4,8 @@ date: '2022-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2022_amanda_emilly_muniz_de_menezes_identificacao_de_fatores_que_afetam_a_evasao_no_ensino
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2022_amanda_emilly_muniz_de_menezes_identificacao_de_fatores_que_afetam_a_evasao_no_ensino
 publication_index: 89
 publication_group: tcc

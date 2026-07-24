@@ -4,6 +4,8 @@ date: '2012-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2012_caio_appelt_resende_re_estruturacao_da_ferramenta_eficiente_visando_a_adequacao_a_not
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2012_caio_appelt_resende_re_estruturacao_da_ferramenta_eficiente_visando_a_adequacao_a_not
 publication_index: 282
 publication_group: tcc
@@ -14,6 +16,8 @@ authors:
 - Caio Appelt Resende
 authors_structured:
 - name: Caio Appelt Resende
+  id: caio_appelt_resende
+  url: /people/caio_appelt_resende
 tags:
 - software_architecture
 - digital_transformation

@@ -4,6 +4,8 @@ date: '2023-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2023_lucas_lopes_xavier_implementacao_de_requisitos_de_privacidade_da_lgpd_e_iso_29100_em
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2023_lucas_lopes_xavier_implementacao_de_requisitos_de_privacidade_da_lgpd_e_iso_29100_em
 publication_index: 62
 publication_group: tcc

@@ -5,6 +5,8 @@ date: '2019-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2019_nogueira_teresinha_de_jesus_araujo_magalhaes_programa_aprendizagem_para_o_3o_milenio
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2019_nogueira_teresinha_de_jesus_araujo_magalhaes_programa_aprendizagem_para_o_3o_milenio
 publication_index: 136
 publication_group: scientific
@@ -19,13 +21,20 @@ authors:
 - Macedo, Harineide Madeira
 authors_structured:
 - name: Nogueira, Teresinha de Jesus Araújo Magalhães
+  id: nogueira_teresinha_de_jesus_araujo_magalhaes
+  url: /people/nogueira_teresinha_de_jesus_araujo_magalhaes
 - name: Melo, Lívia Veleda de Sousa e
+  id: melo_livia_veleda_de_sousa_e
+  url: /people/melo_livia_veleda_de_sousa_e
 - name: FREITAS, S. A. A.
 - name: Leite, Letícia Lopes
+  id: leite_leticia_lopes
+  url: /people/leite_leticia_lopes
 - name: Macedo, Harineide Madeira
+  id: macedo_harineide_madeira
+  url: /people/macedo_harineide_madeira
 tags:
 - active_learning
-- sergio_freitas
 - project_a3m
 advisors: []
 doi_isbn: 10.1007/978-3-030-24308-1_11

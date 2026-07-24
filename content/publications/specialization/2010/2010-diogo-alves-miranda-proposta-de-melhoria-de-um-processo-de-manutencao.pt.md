@@ -4,6 +4,8 @@ date: '2010-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2010_diogo_alves_miranda_proposta_de_melhoria_de_um_processo_de_manutencao
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2010_diogo_alves_miranda_proposta_de_melhoria_de_um_processo_de_manutencao
 publication_index: 302
 publication_group: specialization
@@ -14,6 +16,8 @@ authors:
 - Diogo Alves Miranda
 authors_structured:
 - name: Diogo Alves Miranda
+  id: diogo_alves_miranda
+  url: /people/diogo_alves_miranda
 tags:
 - software_quality
 advisors:

@@ -5,6 +5,8 @@ date: '2023-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2023_ricardo_de_castro_loureiro_tecnologias_para_a_inclusao_metricas_para_avaliacao_da_ace
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2023_ricardo_de_castro_loureiro_tecnologias_para_a_inclusao_metricas_para_avaliacao_da_ace
 publication_index: 225
 publication_group: tcc

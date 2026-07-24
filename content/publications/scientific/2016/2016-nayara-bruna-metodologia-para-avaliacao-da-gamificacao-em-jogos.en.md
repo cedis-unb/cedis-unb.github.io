@@ -4,6 +4,8 @@ date: '2016-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2016_nayara_bruna_metodologia_para_avaliacao_da_gamificacao_em_jogos
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2016_nayara_bruna_metodologia_para_avaliacao_da_gamificacao_em_jogos
 publication_index: 178
 publication_group: scientific
@@ -16,12 +18,13 @@ authors:
 - FREITAS, S. A. A.
 authors_structured:
 - name: NAYARA, BRUNA
+  id: nayara_bruna
+  url: /people/nayara_bruna
 - name: CRUZ, LUDIMILA DA BELA
   id: ludimila_da_bela_cruz
 - name: FREITAS, S. A. A.
 tags:
 - gamification
-- sergio_freitas
 advisors: []
 doi_isbn: 10.5753/cbie.sbie.2016.510
 source_title: XXVII Simpósio Brasileiro de Informática na Educação

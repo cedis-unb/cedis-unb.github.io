@@ -5,6 +5,8 @@ date: '2007-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2007_seibel_hilario_methodology_for_retrieval_of_relevant_information_in_digital_documents
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2007_seibel_hilario_methodology_for_retrieval_of_relevant_information_in_digital_documents
 publication_index: 216
 publication_group: scientific
@@ -16,9 +18,10 @@ authors:
 - FREITAS, S. A. A.
 authors_structured:
 - name: Seibel, Hilário
+  id: seibel_hilario
+  url: /people/seibel_hilario
 - name: FREITAS, S. A. A.
 tags:
-- sergio_freitas
 - nlp
 - ai
 advisors: []

@@ -5,6 +5,8 @@ date: '2025-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2025_maria_eduarda_dos_santos_abritta_ferreira_aplicacao_de_aprendizado_de_maquina_na_pred
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2025_maria_eduarda_dos_santos_abritta_ferreira_aplicacao_de_aprendizado_de_maquina_na_pred
 publication_index: 9
 publication_group: tcc
@@ -16,7 +18,8 @@ authors:
 - Sabrina Caldas Berno
 authors_structured:
 - name: Maria Eduarda dos Santos Abritta Ferreira
-  id: maria_eduarda_dos_santos_abritta_ferreira
+  id: santos_veronica_souza_dos
+  url: /people/santos_veronica_souza_dos
 - name: Sabrina Caldas Berno
   id: sabrina_caldas_berno
 tags:

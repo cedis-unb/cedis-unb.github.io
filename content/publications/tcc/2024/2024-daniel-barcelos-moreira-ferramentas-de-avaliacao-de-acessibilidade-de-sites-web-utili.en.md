@@ -5,6 +5,8 @@ date: '2024-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2024_daniel_barcelos_moreira_ferramentas_de_avaliacao_de_acessibilidade_de_sites_web_utili
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2024_daniel_barcelos_moreira_ferramentas_de_avaliacao_de_acessibilidade_de_sites_web_utili
 publication_index: 28
 publication_group: tcc

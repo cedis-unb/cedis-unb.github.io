@@ -4,6 +4,8 @@ date: '2008-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2008_gleisse_amalia_nogueira_proposta_para_a_melhoria_da_gerencia_de_requisitos_de_uma_coo
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2008_gleisse_amalia_nogueira_proposta_para_a_melhoria_da_gerencia_de_requisitos_de_uma_coo
 publication_index: 298
 publication_group: specialization
@@ -14,6 +16,8 @@ authors:
 - Gleisse Amalia Nogueira
 authors_structured:
 - name: Gleisse Amalia Nogueira
+  id: gleisse_amalia_nogueira
+  url: /people/gleisse_amalia_nogueira
 tags:
 - software_requirements
 advisors:

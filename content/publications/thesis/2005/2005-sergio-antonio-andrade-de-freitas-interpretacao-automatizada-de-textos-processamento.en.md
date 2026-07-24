@@ -4,6 +4,8 @@ date: '2005-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2005_sergio_antonio_andrade_de_freitas_interpretacao_automatizada_de_textos_processamento
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2005_sergio_antonio_andrade_de_freitas_interpretacao_automatizada_de_textos_processamento
 publication_index: 219
 publication_group: thesis
@@ -17,7 +19,6 @@ authors_structured:
   id: sergio_freitas
   url: /people/sergio_freitas
 tags:
-- sergio_freitas
 - nlp
 - ai
 advisors: []

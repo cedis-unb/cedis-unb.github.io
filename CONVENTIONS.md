@@ -330,6 +330,26 @@ As páginas em `content/publications/` são geradas a partir de
 essas páginas manualmente; corrija a fonte em `data/productions.yaml` e
 rode o gerador.
 
+Fluxo obrigatório:
+
+1. Inserir ou corrigir o item em `data/productions.yaml`.
+2. Rodar `npm run build:publications` (ou `npm run build`, que chama o
+   gerador antes do Hugo).
+3. Rodar `npm run check:publications` para confirmar que
+   `content/publications/` está sincronizado.
+4. Comitar `data/productions.yaml` e os arquivos gerados juntos enquanto
+   `content/publications/` permanecer versionado.
+
+Todo frontmatter gerado deve conter:
+
+```yaml
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
+```
+
+O CI executa `scripts/build_publications.py --check`; qualquer edição
+manual ou esquecimento de regenerar as páginas falha a validação.
+
 O gerador cria uma página PT e EN para cada item, URLs por tipo e ano,
 índices por agrupamento (`scientific`, `tcc`, `thesis`,
 `specialization`, `registrations`, `zenodo`, `didactic`), BibTeX e

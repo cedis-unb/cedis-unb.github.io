@@ -5,6 +5,8 @@ date: '2023-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2023_marsicano_george_digital_transformation_of_public_services_from_the_perception_of_ict
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2023_marsicano_george_digital_transformation_of_public_services_from_the_perception_of_ict
 publication_index: 51
 publication_group: scientific
@@ -23,16 +25,18 @@ authors_structured:
   url: /people/george_marsicano
 - name: CANEDO, EDNA
   id: edna_canedo
-  url: http://lattes.cnpq.br/9554285834432091
+  url: /people/edna_canedo
 - name: PEDROSA, GLAUCO
+  id: glauco_vitor_pedrosa
+  url: /people/glauco_vitor_pedrosa
 - name: RAMOS, CRISTIANE
   id: cristiane_ramos
   url: /people/cristiane_ramos
 - name: FIGUEIREDO, REJANE
+  id: rejane_maria_da_costa_figueiredo
+  url: /people/rejane_maria_da_costa_figueiredo
 tags:
 - digital_transformation
-- george_marsicano
-- cristiane_ramos
 - project_melhoria_servico_publico
 advisors: []
 doi_isbn: 10.5220/0011826600003467

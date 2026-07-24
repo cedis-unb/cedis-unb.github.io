@@ -4,6 +4,8 @@ date: '2022-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2022_souza_renan_l_l_de_mystory_um_prototipo_de_sistema_com_vistas_a_imortalidade_digital
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2022_souza_renan_l_l_de_mystory_um_prototipo_de_sistema_com_vistas_a_imortalidade_digital
 publication_index: 88
 publication_group: scientific
@@ -18,14 +20,17 @@ authors:
 - RIBEIRO, AILTON
 authors_structured:
 - name: SOUZA, RENAN L. L. DE
+  id: de_oliveira_victor_l
+  url: /people/de_oliveira_victor_l
 - name: MACIEL, CRISTIANO
 - name: NUNES, EUNICE P. DOS SANTOS
+  id: nunes_eunice_p_dos_santos
+  url: /people/nunes_eunice_p_dos_santos
 - name: Mendes, Fabiana Freitas
   id: fabiana_mendes
   url: /people/fabiana_mendes
 - name: RIBEIRO, AILTON
-tags:
-- fabiana_mendes
+tags: []
 advisors: []
 doi_isbn: 10.5753/ihc_estendido.2022.224175
 source_title: Simpósio Brasileiro de Fatores Humanos em Sistemas Computacionais

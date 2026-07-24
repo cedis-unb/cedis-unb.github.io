@@ -5,6 +5,8 @@ date: '2026-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2026_geovanna_maciel_avelino_da_costa_atloria_uma_plataforma_gamificada_para_visualizacao
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2026_geovanna_maciel_avelino_da_costa_atloria_uma_plataforma_gamificada_para_visualizacao
 publication_index: 314
 publication_group: tcc
@@ -18,12 +20,12 @@ authors_structured:
 - name: Geovanna Maciel Avelino da Costa
   id: geovanna_maciel_avelino_da_costa
 - name: Mylena Angélica Silva Farias
-  id: mylena_angelica_silva_farias
+  id: mylena_faria
+  url: /people/mylena_faria
 tags:
 - gamification
 - active_learning
 - social_software
-- mylena_faria
 - project_inovacao_digital_gamificacao
 advisors:
 - sergio_freitas

@@ -4,6 +4,8 @@ date: '2014-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2014_pedro_henrique_potiguara_carvalho_sistema_de_buscas_em_ambiente_virtual_de_aprendizag
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2014_pedro_henrique_potiguara_carvalho_sistema_de_buscas_em_ambiente_virtual_de_aprendizag
 publication_index: 253
 publication_group: tcc

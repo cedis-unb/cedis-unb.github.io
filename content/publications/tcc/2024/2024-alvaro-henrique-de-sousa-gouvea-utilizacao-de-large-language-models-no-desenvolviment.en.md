@@ -5,6 +5,8 @@ date: '2024-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2024_alvaro_henrique_de_sousa_gouvea_utilizacao_de_large_language_models_no_desenvolviment
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2024_alvaro_henrique_de_sousa_gouvea_utilizacao_de_large_language_models_no_desenvolviment
 publication_index: 254
 publication_group: tcc

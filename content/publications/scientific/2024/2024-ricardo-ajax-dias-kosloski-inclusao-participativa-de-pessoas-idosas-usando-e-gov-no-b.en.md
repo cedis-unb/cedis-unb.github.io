@@ -5,6 +5,8 @@ date: '2024-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2024_ricardo_ajax_dias_kosloski_inclusao_participativa_de_pessoas_idosas_usando_e_gov_no_b
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2024_ricardo_ajax_dias_kosloski_inclusao_participativa_de_pessoas_idosas_usando_e_gov_no_b
 publication_index: 35
 publication_group: scientific
@@ -20,12 +22,13 @@ authors_structured:
   id: ricardo_ajax
   url: /people/ricardo_ajax
 - name: Leides Barroso de Azevedo Moura
+  id: leides_barroso_de_azevedo_moura
+  url: /people/leides_barroso_de_azevedo_moura
 - name: Marília Miranda Forte Gomes
   id: marilia_miranda
-  url: http://lattes.cnpq.br/9169095482512290
+  url: /people/marilia_miranda
 tags:
 - digital_transformation
-- ricardo_ajax
 advisors: []
 doi_isbn: 10.21874/rsp.v75i3.10457
 source_title: Revista do Serviço Público

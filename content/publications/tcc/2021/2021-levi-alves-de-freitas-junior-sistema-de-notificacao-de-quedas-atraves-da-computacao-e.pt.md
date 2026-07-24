@@ -4,6 +4,8 @@ date: '2021-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2021_levi_alves_de_freitas_junior_sistema_de_notificacao_de_quedas_atraves_da_computacao_e
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2021_levi_alves_de_freitas_junior_sistema_de_notificacao_de_quedas_atraves_da_computacao_e
 publication_index: 270
 publication_group: tcc

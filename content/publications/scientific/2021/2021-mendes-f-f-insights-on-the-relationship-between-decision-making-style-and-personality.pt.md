@@ -5,6 +5,8 @@ date: '2021-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2021_mendes_f_f_insights_on_the_relationship_between_decision_making_style_and_personality
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2021_mendes_f_f_insights_on_the_relationship_between_decision_making_style_and_personality
 publication_index: 107
 publication_group: scientific
@@ -21,9 +23,10 @@ authors_structured:
 - name: MENDES, EMÍLIA
 - name: SALLEH, NORSAREMAH
 - name: OIVO, MARKKU
+  id: oivo_markku
+  url: /people/oivo_markku
 tags:
 - soft_skills
-- fabiana_mendes
 advisors: []
 doi_isbn: 10.1016/j.infsof.2021.106586
 source_title: INFORMATION AND SOFTWARE TECHNOLOGY

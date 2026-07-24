@@ -4,6 +4,8 @@ date: '2017-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2017_pereira_d_v_team_maturity_in_software_engineering_teams_a_work_in_progress
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2017_pereira_d_v_team_maturity_in_software_engineering_teams_a_work_in_progress
 publication_index: 166
 publication_group: scientific
@@ -17,12 +19,13 @@ authors:
 - Ribeiro, D.M.
 authors_structured:
 - name: Pereira, D.V.
+  id: pereira_d_v
+  url: /people/pereira_d_v
 - name: MARSICANO, G. C.
 - name: SILVA, F. Q. B.
 - name: Ribeiro, D.M.
 tags:
 - teamwork
-- george_marsicano
 advisors: []
 doi_isbn: 10.1109/CHASE.2017.2
 source_title: 2017 IEEE/ACM 10th International Workshop on Cooperative and Human Aspects

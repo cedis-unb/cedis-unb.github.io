@@ -4,6 +4,8 @@ date: '2023-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2023_erven_ricardo_cordeiro_galvao_santana_van_avaliacao_de_conhecimento_em_engenharia_de
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2023_erven_ricardo_cordeiro_galvao_santana_van_avaliacao_de_conhecimento_em_engenharia_de
 publication_index: 78
 publication_group: scientific
@@ -18,18 +20,23 @@ authors:
 - CANEDO, EDNA DIAS
 authors_structured:
 - name: ERVEN, RICARDO CORDEIRO GALVÃO SANTANA VAN
+  id: erven_ricardo_cordeiro_galvao_santana_van
+  url: /people/erven_ricardo_cordeiro_galvao_santana_van
 - name: DIAS, POLLYANNA C. O.
+  id: dias_pollyanna_c_o
+  url: /people/dias_pollyanna_c_o
 - name: JUBÉ, DEMÉTRIUS DE ALMEIDA
+  id: jube_demetrius_de_almeida
+  url: /people/jube_demetrius_de_almeida
 - name: CORRÊA, GEORGE MARSICANO
   id: george_marsicano
   url: /people/george_marsicano
 - name: CANEDO, EDNA DIAS
   id: edna_canedo
-  url: http://lattes.cnpq.br/9554285834432091
+  url: /people/edna_canedo
 tags:
 - software_requirements
 - digital_transformation
-- george_marsicano
 advisors: []
 doi_isbn: 10.29327/1298356.26-11
 source_title: Workshop on Requirements Engineering

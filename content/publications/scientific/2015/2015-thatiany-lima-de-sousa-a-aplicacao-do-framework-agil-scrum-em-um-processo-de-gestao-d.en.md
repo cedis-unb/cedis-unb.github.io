@@ -5,6 +5,8 @@ date: '2015-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2015_thatiany_lima_de_sousa_a_aplicacao_do_framework_agil_scrum_em_um_processo_de_gestao_d
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2015_thatiany_lima_de_sousa_a_aplicacao_do_framework_agil_scrum_em_um_processo_de_gestao_d
 publication_index: 323
 publication_group: scientific
@@ -19,8 +21,14 @@ authors:
 - Luiz Carlos Miyadaira Ribeiro Júnior
 authors_structured:
 - name: Thatiany Lima de Sousa
+  id: lima_victor_cotrim_de
+  url: /people/lima_victor_cotrim_de
 - name: Elaine Venson
+  id: elaine_venson
+  url: /people/elaine_venson
 - name: Rejane Maria da Costa Figueiredo
+  id: rejane_maria_da_costa_figueiredo
+  url: /people/rejane_maria_da_costa_figueiredo
 - name: Ricardo Ajax Dias Kosloski
   id: ricardo_ajax
   url: /people/ricardo_ajax
@@ -29,7 +37,6 @@ authors_structured:
 tags:
 - digital_transformation
 - software_quality
-- ricardo_ajax
 advisors: []
 doi_isbn: ''
 source_title: 12th International Conference on Information Systems and Technology

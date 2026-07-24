@@ -4,6 +4,8 @@ date: '2010-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2010_nivia_c_queiroz_aplicacao_de_um_metodo_para_engenharia_reversa_em_sistemas_legados
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2010_nivia_c_queiroz_aplicacao_de_um_metodo_para_engenharia_reversa_em_sistemas_legados
 publication_index: 303
 publication_group: specialization
@@ -14,6 +16,8 @@ authors:
 - Nívia C. Queiroz
 authors_structured:
 - name: Nívia C. Queiroz
+  id: nivia_c_queiroz
+  url: /people/nivia_c_queiroz
 tags:
 - software_architecture
 advisors:

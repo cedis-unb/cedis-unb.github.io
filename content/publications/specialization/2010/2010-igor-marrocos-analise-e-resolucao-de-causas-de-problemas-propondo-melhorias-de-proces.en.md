@@ -5,6 +5,8 @@ date: '2010-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2010_igor_marrocos_analise_e_resolucao_de_causas_de_problemas_propondo_melhorias_de_proces
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2010_igor_marrocos_analise_e_resolucao_de_causas_de_problemas_propondo_melhorias_de_proces
 publication_index: 300
 publication_group: specialization
@@ -15,6 +17,8 @@ authors:
 - Igor Marrocos
 authors_structured:
 - name: Igor Marrocos
+  id: igor_marrocos
+  url: /people/igor_marrocos
 tags:
 - software_quality
 advisors:

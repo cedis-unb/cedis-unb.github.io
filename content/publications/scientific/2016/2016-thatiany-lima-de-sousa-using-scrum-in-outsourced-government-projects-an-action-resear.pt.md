@@ -4,6 +4,8 @@ date: '2016-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2016_thatiany_lima_de_sousa_using_scrum_in_outsourced_government_projects_an_action_resear
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2016_thatiany_lima_de_sousa_using_scrum_in_outsourced_government_projects_an_action_resear
 publication_index: 321
 publication_group: scientific
@@ -18,8 +20,14 @@ authors:
 - Luiz Carlos Miyadaira Ribeiro Júnior
 authors_structured:
 - name: Thatiany Lima de Sousa
+  id: lima_victor_cotrim_de
+  url: /people/lima_victor_cotrim_de
 - name: Elaine Venson
+  id: elaine_venson
+  url: /people/elaine_venson
 - name: Rejane Maria da Costa Figueiredo
+  id: rejane_maria_da_costa_figueiredo
+  url: /people/rejane_maria_da_costa_figueiredo
 - name: Ricardo Ajax Dias Kosloski
   id: ricardo_ajax
   url: /people/ricardo_ajax
@@ -28,7 +36,6 @@ authors_structured:
 tags:
 - digital_transformation
 - software_quality
-- ricardo_ajax
 advisors: []
 doi_isbn: 10.1109/HICSS.2016.672
 source_title: 49th Hawaii International Conference on System Sciences (HICSS 2016)

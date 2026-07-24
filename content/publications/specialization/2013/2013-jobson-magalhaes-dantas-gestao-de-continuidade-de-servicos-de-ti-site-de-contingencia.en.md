@@ -4,6 +4,8 @@ date: '2013-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2013_jobson_magalhaes_dantas_gestao_de_continuidade_de_servicos_de_ti_site_de_contingencia
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2013_jobson_magalhaes_dantas_gestao_de_continuidade_de_servicos_de_ti_site_de_contingencia
 publication_index: 233
 publication_group: specialization
@@ -14,6 +16,8 @@ authors:
 - Jobson Magalhães Dantas
 authors_structured:
 - name: Jobson Magalhães Dantas
+  id: jobson_magalhaes_dantas
+  url: /people/jobson_magalhaes_dantas
 tags:
 - security
 advisors:

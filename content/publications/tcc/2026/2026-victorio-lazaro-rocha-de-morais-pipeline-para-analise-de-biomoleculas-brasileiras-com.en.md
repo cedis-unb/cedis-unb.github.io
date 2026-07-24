@@ -5,6 +5,8 @@ date: '2026-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2026_victorio_lazaro_rocha_de_morais_pipeline_para_analise_de_biomoleculas_brasileiras_com
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2026_victorio_lazaro_rocha_de_morais_pipeline_para_analise_de_biomoleculas_brasileiras_com
 publication_index: 4
 publication_group: tcc

@@ -4,6 +4,8 @@ date: '2006-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2006_heber_almeida_barbosa_deteccao_de_intrusao_em_redes_de_automacao_industrial
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2006_heber_almeida_barbosa_deteccao_de_intrusao_em_redes_de_automacao_industrial
 publication_index: 240
 publication_group: specialization
@@ -14,6 +16,8 @@ authors:
 - Heber Almeida Barbosa
 authors_structured:
 - name: Heber Almeida Barbosa
+  id: heber_almeida_barbosa
+  url: /people/heber_almeida_barbosa
 tags:
 - security
 advisors:

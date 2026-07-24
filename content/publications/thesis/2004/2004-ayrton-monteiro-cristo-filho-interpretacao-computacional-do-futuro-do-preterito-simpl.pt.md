@@ -5,6 +5,8 @@ date: '2004-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2004_ayrton_monteiro_cristo_filho_interpretacao_computacional_do_futuro_do_preterito_simpl
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2004_ayrton_monteiro_cristo_filho_interpretacao_computacional_do_futuro_do_preterito_simpl
 publication_index: 220
 publication_group: thesis

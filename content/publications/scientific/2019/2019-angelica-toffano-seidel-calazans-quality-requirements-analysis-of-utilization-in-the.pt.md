@@ -5,6 +5,8 @@ date: '2019-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2019_angelica_toffano_seidel_calazans_quality_requirements_analysis_of_utilization_in_the
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2019_angelica_toffano_seidel_calazans_quality_requirements_analysis_of_utilization_in_the
 publication_index: 320
 publication_group: scientific
@@ -22,21 +24,32 @@ authors:
 - Ricardo Ajax Dias Kosloski
 authors_structured:
 - name: Angélica Toffano Seidel Calazans
+  id: angelica_toffano_seidel_calazans
+  url: /people/angelica_toffano_seidel_calazans
 - name: Roberto Ávila Paldês
+  id: roberto_avila_paldes
+  url: /people/roberto_avila_paldes
 - name: Edna Dias Canedo
   id: edna_canedo
-  url: http://lattes.cnpq.br/9554285834432091
+  url: /people/edna_canedo
 - name: Eloisa Toffano Seidel Masson
+  id: eloisa_toffano_seidel_masson
+  url: /people/eloisa_toffano_seidel_masson
 - name: Fernando de Albuquerque Guimarães
+  id: fernando_de_albuquerque_guimaraes
+  url: /people/fernando_de_albuquerque_guimaraes
 - name: Kiane Mabel Fialho Rezende
+  id: kiane_mabel_fialho_rezende
+  url: /people/kiane_mabel_fialho_rezende
 - name: Emeli Braosi
+  id: emeli_braosi
+  url: /people/emeli_braosi
 - name: Ricardo Ajax Dias Kosloski
   id: ricardo_ajax
   url: /people/ricardo_ajax
 tags:
 - software_requirements
 - software_quality
-- ricardo_ajax
 advisors: []
 doi_isbn: 10.1109/ESEM.2019.8870151
 source_title: 2019 ACM/IEEE International Symposium on Empirical Software Engineering

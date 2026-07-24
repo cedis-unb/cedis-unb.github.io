@@ -5,6 +5,8 @@ date: '2023-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2023_rocha_larissa_investigating_the_perceived_impact_of_maternity_on_software_engineering
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2023_rocha_larissa_investigating_the_perceived_impact_of_maternity_on_software_engineering
 publication_index: 52
 publication_group: scientific
@@ -19,17 +21,22 @@ authors:
 - Mendes, Fabiana Freitas
 authors_structured:
 - name: ROCHA, LARISSA
+  id: rocha_larissa
+  url: /people/rocha_larissa
 - name: CANEDO, EDNA DIAS
   id: edna_canedo
-  url: http://lattes.cnpq.br/9554285834432091
+  url: /people/edna_canedo
 - name: PINTO PEREIRA, CLAUDIA
+  id: pinto_pereira_claudia
+  url: /people/pinto_pereira_claudia
 - name: BEZERRA, CARLA
+  id: bezerra_carla
+  url: /people/bezerra_carla
 - name: Mendes, Fabiana Freitas
   id: fabiana_mendes
   url: /people/fabiana_mendes
 tags:
 - esw
-- fabiana_mendes
 advisors: []
 doi_isbn: 10.1109/CHASE58964.2023.00023
 source_title: 2023 IEEE/ACM 16th International Conference on Cooperative and Human

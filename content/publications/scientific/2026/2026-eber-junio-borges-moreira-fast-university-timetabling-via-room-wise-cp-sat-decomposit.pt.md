@@ -5,6 +5,8 @@ date: '2026-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2026_eber_junio_borges_moreira_fast_university_timetabling_via_room_wise_cp_sat_decomposit
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2026_eber_junio_borges_moreira_fast_university_timetabling_via_room_wise_cp_sat_decomposit
 publication_index: 327
 publication_group: scientific
@@ -21,7 +23,6 @@ authors_structured:
   id: sergio_freitas
   url: /people/sergio_freitas
 tags:
-- sergio_freitas
 - machine_learning
 - learning_analytics
 advisors: []

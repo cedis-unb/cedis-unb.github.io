@@ -5,6 +5,8 @@ date: '2025-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2025_wander_cleber_maria_pereira_da_silva_fast_track_for_collaborative_solutions_a_methodo
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2025_wander_cleber_maria_pereira_da_silva_fast_track_for_collaborative_solutions_a_methodo
 publication_index: 21
 publication_group: scientific
@@ -21,19 +23,28 @@ authors:
 - Rejane Maria da Costa Figueiredo
 authors_structured:
 - name: Wander Cleber Maria Pereira da Silva
+  id: silva_rodrigo_m_s_da
+  url: /people/silva_rodrigo_m_s_da
 - name: Edna Dias Canedo
   id: edna_canedo
-  url: http://lattes.cnpq.br/9554285834432091
+  url: /people/edna_canedo
 - name: George Marsicano Correa
   id: george_marsicano
   url: /people/george_marsicano
 - name: Henrique Gomes de Moura
+  id: henrique_gomes_de_moura
+  url: /people/henrique_gomes_de_moura
 - name: Paula Emilyn Deodato Franco
+  id: paula_emilyn_deodato_franco
+  url: /people/paula_emilyn_deodato_franco
 - name: Giovanna Galvão Novaes Santana
+  id: giovanna_galvao_novaes_santana
+  url: /people/giovanna_galvao_novaes_santana
 - name: Rejane Maria da Costa Figueiredo
+  id: rejane_maria_da_costa_figueiredo
+  url: /people/rejane_maria_da_costa_figueiredo
 tags:
 - digital_transformation
-- george_marsicano
 - project_spux
 advisors: []
 doi_isbn: 10.59490/dgo.2025.1061

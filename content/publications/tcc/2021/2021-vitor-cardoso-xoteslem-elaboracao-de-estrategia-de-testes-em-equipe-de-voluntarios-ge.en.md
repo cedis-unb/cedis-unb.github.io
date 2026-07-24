@@ -5,6 +5,8 @@ date: '2021-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2021_vitor_cardoso_xoteslem_elaboracao_de_estrategia_de_testes_em_equipe_de_voluntarios_ge
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2021_vitor_cardoso_xoteslem_elaboracao_de_estrategia_de_testes_em_equipe_de_voluntarios_ge
 publication_index: 100
 publication_group: tcc

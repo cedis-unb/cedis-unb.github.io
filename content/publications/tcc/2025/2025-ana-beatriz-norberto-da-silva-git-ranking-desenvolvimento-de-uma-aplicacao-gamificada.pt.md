@@ -5,6 +5,8 @@ date: '2025-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2025_ana_beatriz_norberto_da_silva_git_ranking_desenvolvimento_de_uma_aplicacao_gamificada
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2025_ana_beatriz_norberto_da_silva_git_ranking_desenvolvimento_de_uma_aplicacao_gamificada
 publication_index: 313
 publication_group: tcc
@@ -16,7 +18,8 @@ authors:
 - Beatriz Vieira Nascimento
 authors_structured:
 - name: Ana Beatriz Norberto da Silva
-  id: ana_beatriz_norberto_da_silva
+  id: silva_rodrigo_m_s_da
+  url: /people/silva_rodrigo_m_s_da
 - name: Beatriz Vieira Nascimento
   id: beatriz_vieira_nascimento
 tags:

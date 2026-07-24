@@ -4,6 +4,8 @@ date: '2019-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2019_victor_hugo_arnaud_deon_pgtbl_plataforma_de_gerenciamento_de_team_based_learning
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2019_victor_hugo_arnaud_deon_pgtbl_plataforma_de_gerenciamento_de_team_based_learning
 publication_index: 123
 publication_group: tcc

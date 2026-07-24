@@ -4,6 +4,8 @@ date: '2022-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2022_maciel_c_defining_digital_legacy_management_systems_requirements
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2022_maciel_c_defining_digital_legacy_management_systems_requirements
 publication_index: 81
 publication_group: scientific
@@ -17,12 +19,17 @@ authors:
 - YAMAUCHI, E. A.
 authors_structured:
 - name: MACIEL, C.
+  id: maciel_c
+  url: /people/maciel_c
 - name: MENDES, F. F.
 - name: PEREIRA, V. C.
+  id: pereira_d_v
+  url: /people/pereira_d_v
 - name: YAMAUCHI, E. A.
+  id: yamauchi_e_a
+  url: /people/yamauchi_e_a
 tags:
 - software_architecture
-- fabiana_mendes
 advisors: []
 doi_isbn: 10.1007/978-3-031-08965-7_13
 source_title: LECTURE NOTES IN BUSINESS INFORMATION PROCESSING

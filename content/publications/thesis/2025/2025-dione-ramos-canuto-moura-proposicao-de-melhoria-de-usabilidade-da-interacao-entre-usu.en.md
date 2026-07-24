@@ -5,6 +5,8 @@ date: '2025-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2025_dione_ramos_canuto_moura_proposicao_de_melhoria_de_usabilidade_da_interacao_entre_usu
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2025_dione_ramos_canuto_moura_proposicao_de_melhoria_de_usabilidade_da_interacao_entre_usu
 publication_index: 55
 publication_group: thesis

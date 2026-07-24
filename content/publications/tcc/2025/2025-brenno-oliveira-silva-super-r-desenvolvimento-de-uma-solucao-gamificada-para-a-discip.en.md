@@ -5,6 +5,8 @@ date: '2025-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2025_brenno_oliveira_silva_super_r_desenvolvimento_de_uma_solucao_gamificada_para_a_discip
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2025_brenno_oliveira_silva_super_r_desenvolvimento_de_uma_solucao_gamificada_para_a_discip
 publication_index: 261
 publication_group: tcc

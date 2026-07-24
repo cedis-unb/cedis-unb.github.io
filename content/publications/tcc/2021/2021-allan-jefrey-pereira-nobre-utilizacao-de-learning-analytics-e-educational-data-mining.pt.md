@@ -5,6 +5,8 @@ date: '2021-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2021_allan_jefrey_pereira_nobre_utilizacao_de_learning_analytics_e_educational_data_mining
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2021_allan_jefrey_pereira_nobre_utilizacao_de_learning_analytics_e_educational_data_mining
 publication_index: 65
 publication_group: tcc

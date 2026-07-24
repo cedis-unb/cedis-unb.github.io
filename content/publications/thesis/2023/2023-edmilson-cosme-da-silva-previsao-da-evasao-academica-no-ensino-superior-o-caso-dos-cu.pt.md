@@ -5,6 +5,8 @@ date: '2023-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2023_edmilson_cosme_da_silva_previsao_da_evasao_academica_no_ensino_superior_o_caso_dos_cu
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2023_edmilson_cosme_da_silva_previsao_da_evasao_academica_no_ensino_superior_o_caso_dos_cu
 publication_index: 58
 publication_group: thesis
@@ -15,11 +17,11 @@ authors:
 - Edmilson Cosme da Silva
 authors_structured:
 - name: Edmilson Cosme da Silva
-  id: edmilson_cosme_da_silva
+  id: edmilson_cosme
+  url: /people/edmilson_cosme
 tags:
 - learning_analytics
 - machine_learning
-- edmilson_cosme
 advisors:
 - sergio_freitas
 doi_isbn: ''

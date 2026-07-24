@@ -4,6 +4,8 @@ date: '2009-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2009_renato_de_oliveira_silva_mapeamento_e_proposta_de_melhoria_para_um_processo_de_manute
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2009_renato_de_oliveira_silva_mapeamento_e_proposta_de_melhoria_para_um_processo_de_manute
 publication_index: 308
 publication_group: specialization
@@ -14,6 +16,8 @@ authors:
 - Renato de Oliveira Silva
 authors_structured:
 - name: Renato de Oliveira Silva
+  id: renato_de_oliveira_silva
+  url: /people/renato_de_oliveira_silva
 tags:
 - software_quality
 advisors:

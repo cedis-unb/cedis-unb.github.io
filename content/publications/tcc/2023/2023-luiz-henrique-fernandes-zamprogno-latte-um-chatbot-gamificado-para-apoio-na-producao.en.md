@@ -4,6 +4,8 @@ date: '2023-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2023_luiz_henrique_fernandes_zamprogno_latte_um_chatbot_gamificado_para_apoio_na_producao
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2023_luiz_henrique_fernandes_zamprogno_latte_um_chatbot_gamificado_para_apoio_na_producao
 publication_index: 95
 publication_group: tcc

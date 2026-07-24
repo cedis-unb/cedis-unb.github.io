@@ -5,6 +5,8 @@ date: '2018-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2018_felisdorio_r_c_s_analise_do_processo_de_gestao_de_riscos_na_elaboracao_do_plano_diret
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2018_felisdorio_r_c_s_analise_do_processo_de_gestao_de_riscos_na_elaboracao_do_plano_diret
 publication_index: 156
 publication_group: scientific
@@ -19,7 +21,6 @@ authors_structured:
 - name: FREITAS, S. A. A.
 tags:
 - digital_transformation
-- sergio_freitas
 advisors: []
 doi_isbn: '9788560365272'
 source_title: Governança em tecnologia de informação e comunicação para o setor público

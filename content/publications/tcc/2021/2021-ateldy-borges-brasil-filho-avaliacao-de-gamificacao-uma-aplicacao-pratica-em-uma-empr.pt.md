@@ -4,6 +4,8 @@ date: '2021-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2021_ateldy_borges_brasil_filho_avaliacao_de_gamificacao_uma_aplicacao_pratica_em_uma_empr
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2021_ateldy_borges_brasil_filho_avaliacao_de_gamificacao_uma_aplicacao_pratica_em_uma_empr
 publication_index: 90
 publication_group: tcc

@@ -5,6 +5,8 @@ date: '2020-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2020_sundfeld_daniel_using_gpu_to_accelerate_the_pairwise_structural_rna_alignment_with_ba
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2020_sundfeld_daniel_using_gpu_to_accelerate_the_pairwise_structural_rna_alignment_with_ba
 publication_index: 118
 publication_group: scientific
@@ -22,12 +24,19 @@ authors_structured:
   id: daniel_sundfeld
   url: /people/daniel_sundfeld
 - name: TEODORO, GEORGE
+  id: teodoro_george
+  url: /people/teodoro_george
 - name: HAVGAARD, JAKOB H.
+  id: havgaard_jakob_h
+  url: /people/havgaard_jakob_h
 - name: GORODKIN, JAN
+  id: gorodkin_jan
+  url: /people/gorodkin_jan
 - name: Melo, Alba C. M. A.
+  id: melo_alba_c_m_a
+  url: /people/melo_alba_c_m_a
 tags:
 - hpc
-- daniel_sundfeld
 advisors: []
 doi_isbn: 10.1002/CPE.5468
 source_title: CONCURRENCY AND COMPUTATION-PRACTICE & EXPERIENCE

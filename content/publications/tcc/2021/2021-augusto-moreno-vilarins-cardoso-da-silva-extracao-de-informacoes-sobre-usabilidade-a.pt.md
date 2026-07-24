@@ -5,6 +5,8 @@ date: '2021-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2021_augusto_moreno_vilarins_cardoso_da_silva_extracao_de_informacoes_sobre_usabilidade_a
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2021_augusto_moreno_vilarins_cardoso_da_silva_extracao_de_informacoes_sobre_usabilidade_a
 publication_index: 76
 publication_group: tcc
@@ -16,7 +18,8 @@ authors:
 - Ícaro Pereira de Oliveira
 authors_structured:
 - name: Augusto Moreno Vilarins Cardoso da Silva
-  id: augusto_moreno_vilarins_cardoso_da_silva
+  id: silva_rodrigo_m_s_da
+  url: /people/silva_rodrigo_m_s_da
 - name: Ícaro Pereira de Oliveira
   id: icaro_pereira_de_oliveira
 tags:

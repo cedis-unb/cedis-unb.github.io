@@ -4,6 +4,8 @@ date: '2026-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2026_sergio_antonio_andrade_de_freitas_certificado_de_registro_de_programa_de_computador_c
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2026_sergio_antonio_andrade_de_freitas_certificado_de_registro_de_programa_de_computador_c
 publication_index: 0
 publication_group: registrations
@@ -20,17 +22,19 @@ authors_structured:
   id: sergio_freitas
   url: /people/sergio_freitas
 - name: André Corrêa da Silva
+  id: andre_silva
+  url: /people/andre_silva
 - name: Milena de Faria Silva
+  id: milena_silva
+  url: /people/milena_silva
 - name: Renan Carneiro Batista
+  id: renan_batista
+  url: /people/renan_batista
 tags:
 - dfcris
 - contextus
 - ai
 - machine_learning
-- sergio_freitas
-- andre_silva
-- milena_silva
-- renan_batista
 advisors: []
 doi_isbn: ''
 source_title: ''

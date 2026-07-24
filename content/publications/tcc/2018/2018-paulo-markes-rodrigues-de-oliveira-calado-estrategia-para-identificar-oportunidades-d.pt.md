@@ -4,6 +4,8 @@ date: '2018-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2018_paulo_markes_rodrigues_de_oliveira_calado_estrategia_para_identificar_oportunidades_d
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2018_paulo_markes_rodrigues_de_oliveira_calado_estrategia_para_identificar_oportunidades_d
 publication_index: 154
 publication_group: tcc

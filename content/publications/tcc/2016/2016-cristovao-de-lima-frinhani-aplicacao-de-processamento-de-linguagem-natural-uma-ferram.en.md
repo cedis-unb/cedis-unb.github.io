@@ -5,6 +5,8 @@ date: '2016-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2016_cristovao_de_lima_frinhani_aplicacao_de_processamento_de_linguagem_natural_uma_ferram
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2016_cristovao_de_lima_frinhani_aplicacao_de_processamento_de_linguagem_natural_uma_ferram
 publication_index: 182
 publication_group: tcc
@@ -15,7 +17,8 @@ authors:
 - Cristóvão de Lima Frinhani
 authors_structured:
 - name: Cristóvão de Lima Frinhani
-  id: cristovao_de_lima_frinhani
+  id: lima_victor_cotrim_de
+  url: /people/lima_victor_cotrim_de
 tags:
 - nlp
 - ai

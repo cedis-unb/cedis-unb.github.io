@@ -4,6 +4,8 @@ date: '2018-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2018_ribeiro_a_s_an_implementation_of_the_oauth_2_0_for_an_enterprise_service_bus
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2018_ribeiro_a_s_an_implementation_of_the_oauth_2_0_for_an_enterprise_service_bus
 publication_index: 153
 publication_group: scientific
@@ -16,12 +18,13 @@ authors:
 - FREITAS, S. A. A.
 authors_structured:
 - name: RIBEIRO, A. S.
+  id: ribeiro_a_s
+  url: /people/ribeiro_a_s
 - name: CANEDO, E. D.
 - name: FREITAS, S. A. A.
 tags:
 - software_architecture
 - security
-- sergio_freitas
 advisors: []
 doi_isbn: 10.1007/978-3-319-95162-1_32
 source_title: 18th International Conference on Computational Science and Its Applications

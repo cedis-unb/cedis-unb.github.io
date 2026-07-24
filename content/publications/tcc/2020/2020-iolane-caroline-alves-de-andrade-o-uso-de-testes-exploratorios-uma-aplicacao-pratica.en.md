@@ -4,6 +4,8 @@ date: '2020-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2020_iolane_caroline_alves_de_andrade_o_uso_de_testes_exploratorios_uma_aplicacao_pratica
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2020_iolane_caroline_alves_de_andrade_o_uso_de_testes_exploratorios_uma_aplicacao_pratica
 publication_index: 93
 publication_group: tcc

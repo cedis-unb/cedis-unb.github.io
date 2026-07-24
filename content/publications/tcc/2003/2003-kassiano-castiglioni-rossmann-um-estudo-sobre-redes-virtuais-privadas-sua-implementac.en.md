@@ -5,6 +5,8 @@ date: '2003-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2003_kassiano_castiglioni_rossmann_um_estudo_sobre_redes_virtuais_privadas_sua_implementac
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2003_kassiano_castiglioni_rossmann_um_estudo_sobre_redes_virtuais_privadas_sua_implementac
 publication_index: 247
 publication_group: tcc

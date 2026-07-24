@@ -4,6 +4,8 @@ date: '2024-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2024_eduardo_miranda_roriz_qualidade_de_dados_em_ambiente_de_big_data_um_mapeamento_sistem
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2024_eduardo_miranda_roriz_qualidade_de_dados_em_ambiente_de_big_data_um_mapeamento_sistem
 publication_index: 265
 publication_group: tcc
@@ -17,7 +19,8 @@ authors_structured:
 - name: Eduardo Miranda Roriz
   id: eduardo_miranda_roriz
 - name: Ian Pereira de Souza Rocha
-  id: ian_pereira_de_souza_rocha
+  id: souza_renan_l_l_de
+  url: /people/souza_renan_l_l_de
 tags:
 - software_quality
 - machine_learning

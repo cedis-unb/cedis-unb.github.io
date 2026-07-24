@@ -19,13 +19,16 @@
   },
   "scripts": {
     "update-i18n": "python3 scripts/update_i18n.py",
+    "build:publications": "python3 scripts/build_publications.py",
+    "check:publications": "python3 scripts/build_publications.py --check",
+    "prestart": "npm run build:publications",
     "start": "concurrently npm:watch:*",
     "watch:tw": "tailwindcss -i ./assets/css/main.css -o ./assets/css/style.css --watch",
     "watch:hugo": "hugo server -d .hugo-server --disableFastRender",
-    "build": "hugo --minify --cleanDestinationDir && pagefind --site docs",
+    "build": "npm run build:publications && hugo --minify --cleanDestinationDir && pagefind --site docs",
     "audit:a11y": "pa11y-ci --config .pa11yci.json",
     "audit:lighthouse": "lhci autorun --config=lighthouserc.json",
-    "test": "echo \"No automated tests yet — see PLANO-AUDITORIA-2026.md issue I01.\" && exit 0"
+    "test": "npm run check:publications && python3 scripts/validate_content.py && python3 scripts/validate_i18n.py"
   },
   "repository": {
     "type": "git",

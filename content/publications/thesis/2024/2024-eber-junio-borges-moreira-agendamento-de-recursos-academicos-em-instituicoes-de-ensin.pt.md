@@ -5,6 +5,8 @@ date: '2024-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2024_eber_junio_borges_moreira_agendamento_de_recursos_academicos_em_instituicoes_de_ensin
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2024_eber_junio_borges_moreira_agendamento_de_recursos_academicos_em_instituicoes_de_ensin
 publication_index: 54
 publication_group: thesis

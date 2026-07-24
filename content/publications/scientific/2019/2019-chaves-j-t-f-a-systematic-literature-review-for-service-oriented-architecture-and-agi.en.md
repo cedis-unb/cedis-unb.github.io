@@ -5,6 +5,8 @@ date: '2019-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2019_chaves_j_t_f_a_systematic_literature_review_for_service_oriented_architecture_and_agi
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2019_chaves_j_t_f_a_systematic_literature_review_for_service_oriented_architecture_and_agi
 publication_index: 128
 publication_group: scientific
@@ -20,7 +22,6 @@ authors_structured:
 tags:
 - software_architecture
 - security
-- sergio_freitas
 advisors: []
 doi_isbn: 10.1007/978-3-030-24308-1_11
 source_title: The 19th International Conference on Computational Science and its Applications

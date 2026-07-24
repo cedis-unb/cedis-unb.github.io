@@ -5,6 +5,8 @@ date: '2025-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2025_ana_julia_mendes_santos_repensando_a_educacao_em_ihc_gamificacao_heuristicas_e_aprend
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2025_ana_julia_mendes_santos_repensando_a_educacao_em_ihc_gamificacao_heuristicas_e_aprend
 publication_index: 258
 publication_group: scientific
@@ -19,8 +21,14 @@ authors:
 - Sergio Antônio Andrade de Freitas
 authors_structured:
 - name: Ana Júlia Mendes Santos
+  id: ana_julia_mendes_santos
+  url: /people/ana_julia_mendes_santos
 - name: Maria Clara Oleari de Araújo
+  id: maria_clara_oleari_de_araujo
+  url: /people/maria_clara_oleari_de_araujo
 - name: Júlia Rocha Fortunato
+  id: julia_rocha_fortunato
+  url: /people/julia_rocha_fortunato
 - name: Maurício Ferreira de Araújo
   id: mauricio_ferreira_de_araujo
 - name: Sergio Antônio Andrade de Freitas
@@ -29,7 +37,6 @@ authors_structured:
 tags:
 - gamification
 - ihc
-- sergio_freitas
 - project_jornada
 advisors: []
 doi_isbn: 10.1007/978-3-032-05008-3_55

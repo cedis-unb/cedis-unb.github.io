@@ -5,6 +5,8 @@ date: '2022-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2022_renan_cristyan_araujo_pinheiro_estudo_de_caso_da_melhoria_do_processo_de_verificacao
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2022_renan_cristyan_araujo_pinheiro_estudo_de_caso_da_melhoria_do_processo_de_verificacao
 publication_index: 75
 publication_group: tcc

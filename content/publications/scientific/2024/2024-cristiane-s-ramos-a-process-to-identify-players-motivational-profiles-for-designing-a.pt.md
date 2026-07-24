@@ -5,6 +5,8 @@ date: '2024-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2024_cristiane_s_ramos_a_process_to_identify_players_motivational_profiles_for_designing_a
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2024_cristiane_s_ramos_a_process_to_identify_players_motivational_profiles_for_designing_a
 publication_index: 43
 publication_group: scientific
@@ -23,22 +25,23 @@ authors_structured:
   id: cristiane_ramos
   url: /people/cristiane_ramos
 - name: Mylena Angélica S. Farias
-  id: mylena_angelica_silva_farias
+  id: mylena_faria
+  url: /people/mylena_faria
 - name: Sergio Antônio Andrade Freitas
   id: sergio_freitas
   url: /people/sergio_freitas
 - name: Marcus Vinícius Paiva Martins
-  id: marcus_vinicius_p_martins
+  id: marcus_martins
+  url: /people/marcus_martins
 - name: Juan Mangueira Alves
+  id: juan_alves
+  url: /people/juan_alves
 - name: Leda Cardoso S. Pinto
+  id: leda_cardoso_s_pinto
+  url: /people/leda_cardoso_s_pinto
 tags:
-- sergio_freitas
-- cristiane_ramos
 - active_learning
 - gamification
-- mylena_faria
-- marcus_martins
-- juan_alves
 - project_cc
 advisors: []
 doi_isbn: 10.1007/978-3-031-64608-9_4

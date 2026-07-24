@@ -5,6 +5,8 @@ date: '2022-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2022_de_oliveira_eneias_paulo_pa_star_web_web_server_para_obtencao_do_alinhamento_multiplo
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2022_de_oliveira_eneias_paulo_pa_star_web_web_server_para_obtencao_do_alinhamento_multiplo
 publication_index: 102
 publication_group: scientific
@@ -22,7 +24,6 @@ authors_structured:
   url: /people/daniel_sundfeld
 tags:
 - hpc
-- daniel_sundfeld
 advisors: []
 doi_isbn: 10.5753/erigo.2022.227676
 source_title: Escola Regional de Informática de Goiás

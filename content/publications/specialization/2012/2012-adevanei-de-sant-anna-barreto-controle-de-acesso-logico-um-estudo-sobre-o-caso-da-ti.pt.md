@@ -5,6 +5,8 @@ date: '2012-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2012_adevanei_de_sant_anna_barreto_controle_de_acesso_logico_um_estudo_sobre_o_caso_da_ti
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2012_adevanei_de_sant_anna_barreto_controle_de_acesso_logico_um_estudo_sobre_o_caso_da_ti
 publication_index: 232
 publication_group: specialization
@@ -15,6 +17,8 @@ authors:
 - Adevanei de Sant'Anna Barreto
 authors_structured:
 - name: Adevanei de Sant'Anna Barreto
+  id: adevanei_de_sant_anna_barreto
+  url: /people/adevanei_de_sant_anna_barreto
 tags:
 - security
 advisors:

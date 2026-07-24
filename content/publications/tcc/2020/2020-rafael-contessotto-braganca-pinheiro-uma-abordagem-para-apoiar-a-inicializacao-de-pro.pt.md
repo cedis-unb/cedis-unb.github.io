@@ -5,6 +5,8 @@ date: '2020-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2020_rafael_contessotto_braganca_pinheiro_uma_abordagem_para_apoiar_a_inicializacao_de_pro
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2020_rafael_contessotto_braganca_pinheiro_uma_abordagem_para_apoiar_a_inicializacao_de_pro
 publication_index: 96
 publication_group: tcc

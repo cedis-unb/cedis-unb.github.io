@@ -5,6 +5,8 @@ date: '2014-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2014_larissa_de_medeiros_torres_santos_como_comunicar_erros_de_seguranca_da_informacao_e_c
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2014_larissa_de_medeiros_torres_santos_como_comunicar_erros_de_seguranca_da_informacao_e_c
 publication_index: 285
 publication_group: specialization
@@ -15,6 +17,8 @@ authors:
 - Larissa de Medeiros Torres Santos
 authors_structured:
 - name: Larissa de Medeiros Torres Santos
+  id: larissa_de_medeiros_torres_santos
+  url: /people/larissa_de_medeiros_torres_santos
 tags:
 - security
 advisors:

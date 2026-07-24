@@ -4,6 +4,8 @@ date: '2025-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2025_felipe_direito_corrieri_de_macedo_ftv_scout_sistema_para_notacao_e_analise_de_desempe
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2025_felipe_direito_corrieri_de_macedo_ftv_scout_sistema_para_notacao_e_analise_de_desempe
 publication_index: 20
 publication_group: tcc

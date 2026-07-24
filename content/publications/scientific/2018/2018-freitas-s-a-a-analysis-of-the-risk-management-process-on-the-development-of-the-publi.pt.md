@@ -5,6 +5,8 @@ date: '2018-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2018_freitas_s_a_a_analysis_of_the_risk_management_process_on_the_development_of_the_publi
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2018_freitas_s_a_a_analysis_of_the_risk_management_process_on_the_development_of_the_publi
 publication_index: 141
 publication_group: scientific
@@ -20,13 +22,14 @@ authors_structured:
 - name: FREITAS, S. A. A.
 - name: CANEDO, EDNA
   id: edna_canedo
-  url: http://lattes.cnpq.br/9554285834432091
+  url: /people/edna_canedo
 - name: SANTOS FELISDÓRIO, RODRIGO
+  id: rodrigo_cesar_santos_felisdorio
+  url: /people/rodrigo_cesar_santos_felisdorio
 - name: LEÃO, HELOISE
 tags:
 - digital_transformation
 - security
-- sergio_freitas
 advisors: []
 doi_isbn: 10.3390/info9100248
 source_title: INFORMATION

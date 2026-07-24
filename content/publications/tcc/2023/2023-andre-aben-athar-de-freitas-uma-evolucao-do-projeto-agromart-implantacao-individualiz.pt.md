@@ -5,6 +5,8 @@ date: '2023-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2023_andre_aben_athar_de_freitas_uma_evolucao_do_projeto_agromart_implantacao_individualiz
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2023_andre_aben_athar_de_freitas_uma_evolucao_do_projeto_agromart_implantacao_individualiz
 publication_index: 74
 publication_group: tcc

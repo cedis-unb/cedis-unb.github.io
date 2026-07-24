@@ -5,6 +5,8 @@ date: '2022-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2022_fabiana_luiza_vasconcelos_pfeilsticker_ribas_analise_da_acessibilidade_para_pessoas_i
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2022_fabiana_luiza_vasconcelos_pfeilsticker_ribas_analise_da_acessibilidade_para_pessoas_i
 publication_index: 66
 publication_group: tcc

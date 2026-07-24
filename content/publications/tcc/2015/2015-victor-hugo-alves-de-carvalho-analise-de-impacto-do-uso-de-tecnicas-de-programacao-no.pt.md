@@ -5,6 +5,8 @@ date: '2015-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2015_victor_hugo_alves_de_carvalho_analise_de_impacto_do_uso_de_tecnicas_de_programacao_no
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2015_victor_hugo_alves_de_carvalho_analise_de_impacto_do_uso_de_tecnicas_de_programacao_no
 publication_index: 199
 publication_group: tcc
