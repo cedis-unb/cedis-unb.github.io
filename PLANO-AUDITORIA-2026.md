@@ -29,14 +29,22 @@ Estado vigente:
 - `data/people.yaml` exige `slug:` explícito em toda entrada; `scripts/validate_content.py` valida essa regra.
 - Frontmatter de perfis usa `profile_level` como tipo principal (`researcher`, `card_with_page`, `advisor_only`, `derived`). `categories` fica restrito a marcações taxonômicas legadas/necessárias, sem repetir o slug do próprio arquivo.
 
-Backlog técnico pós-refactor:
+Backlog técnico pós-refactor, ordenado por retorno para a meta de
+automação/manutenção:
 
-- Avaliar migração futura de `authors[]` textual para objetos `{slug, cited_as}` quando houver tempo para curadoria.
-- `layouts/partials/project-index.html`, `project-list.html`, `project-lookup.html`,
-  `area-index.html`, `area-list.html` e `area-lookup.html` centralizam o
-  acesso a `data/projects.yaml` e `data/areas.yaml`. Templates novos não devem
-  iterar `hugo.Data.projects`/`hugo.Data.areas` diretamente fora desses
-  partials.
+| Ordem | Gap | Estado atual | Risco/impacto | Próxima ação | Critério de conclusão |
+|---|---|---|---|---|---|
+| 1 | Vínculos de produtos | Produtos vivem em `content/products/*.md` e usam `project`, `secondary_projects`, `responsible`, `publications`, `tags` e `categories` com validação parcial. | Produto pode ficar descoordenado de projeto/área/pesquisador sem falha clara no CI. | Reforçar `scripts/validate_content.py` para resolver todos os IDs citados em produtos e avisar duplicidade entre `project` e `secondary_projects`. | `npm test` falha quando produto aponta para projeto/pessoa/publicação inexistente ou vínculo redundante. |
+| 2 | Notícias relacionadas | Posts ainda dependem principalmente de `tags`/`categories` para relação com pessoas, projetos, produtos e áreas. | Relações editoriais ficam frágeis e difíceis de usar em blocos automáticos de "notícias relacionadas". | Padronizar frontmatter opcional `people`, `projects`, `products`, `areas` em posts e adaptar `related-news.html` para preferir esses campos. | Uma notícia marcada uma vez aparece automaticamente nos perfis/projetos/produtos/áreas relacionados. |
+| 3 | Produtos como fonte canônica | Produtos são páginas `.md`, não um YAML canônico. Isso é aceitável enquanto cada produto exige descrição rica. | Manutenção ainda exige editar par PT/EN e frontmatter manual. | Avaliar custo-benefício de `data/products.yaml` + geração de páginas, semelhante a publicações. | Decisão registrada: manter `.md` com validação forte ou migrar para YAML gerado. |
+| 4 | Autores de publicações | `data/productions.yaml` usa `authors[]` textual e `people[]` separado para slugs canônicos. | Renomear/deduplicar autores externos ainda exige curadoria manual; erro de digitação em `authors[]` pode criar variação textual. | Migrar gradualmente para objetos `{slug, cited_as}` apenas quando houver tempo para curadoria. | Templates usam `slug` para link e `cited_as` para citação/BibTeX; autores externos ficam com `slug: null`. |
+| 5 | Curadoria externa | ORCID, DOI, ISBN, Lattes, nomes externos e traduções dependem de entrada humana. | Não há automação completa sem integração externa ou revisão humana. | Melhorar validadores e relatórios, não tentar automatizar semanticamente tudo. | Validador aponta ausência/formato inválido; decisões semânticas continuam humanas. |
+
+Observação sobre projetos e áreas: `layouts/partials/project-index.html`,
+`project-list.html`, `project-lookup.html`, `area-index.html`,
+`area-list.html` e `area-lookup.html` já centralizam o acesso a
+`data/projects.yaml` e `data/areas.yaml`. Templates novos não devem iterar
+`hugo.Data.projects`/`hugo.Data.areas` diretamente fora desses partials.
 
 ## Impacto em Fases 0 e 1 (concluídas)
 
