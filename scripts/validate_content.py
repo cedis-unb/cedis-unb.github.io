@@ -388,6 +388,18 @@ def collect_data_people_slugs(people_data: dict) -> set[str]:
     }
 
 
+def collect_publication_ids(entries: list[tuple[Path, dict]]) -> set[str]:
+    """Extrai IDs (`id: publication_...`) das páginas geradas em
+    content/publications/**/*.md. Usado por validate_product_pages para
+    validar `publications[]` de produtos."""
+    out: set[str] = set()
+    for _path, fm in entries:
+        pid = fm.get("id")
+        if isinstance(pid, str) and pid.startswith("publication_"):
+            out.add(pid)
+    return out
+
+
 def collect_advisor_page_ids() -> set[str]:
     ids: set[str] = set()
     people_dir = CONTENT_DIR / "people"
@@ -446,29 +458,76 @@ def validate_product_pages(
     person_ids: set[str],
     area_ids: set[str],
     project_ids: set[str],
+    publication_ids: set[str] | None = None,
 ) -> None:
+    """Validação forte de content/products/*.md (backlog #1 do PLANO).
+
+    Regras:
+      · id único entre produtos (error se conflito de dois produtos com
+        mesmo id, mesmo idioma)
+      · project primário deve resolver (warn — comportamento antigo)
+      · secondary_projects[i] deve resolver (warn)
+      · project NÃO deve aparecer em secondary_projects (error — redundância)
+      · publications[i] deve existir como página gerada (warn) —
+        skippada se publication_ids for None (fallback compat)
+      · responsible[i] deve resolver como pessoa (warn — antigo)
+      · areas[i] deve resolver (warn — antigo)
+      · status deve estar no enum (warn — antigo)
+      · par PT/EN completo (warn — antigo)
+    """
     by_lang: dict[str, set[str]] = defaultdict(set)
+    ids_seen_per_lang: dict[tuple[str, str], str] = {}  # (id, lang) -> first path
     for path, fm in product_entries:
         rel = path.relative_to(ROOT).as_posix()
         pid = page_id(path, fm)
-        lang = fm.get("language")
-        by_lang[pid].add(str(lang))
+        lang = str(fm.get("language") or "")
+        by_lang[pid].add(lang)
+
+        # id único por idioma
+        key = (pid, lang)
+        if key in ids_seen_per_lang:
+            error("products", rel, f"id '{pid}' já usado em {ids_seen_per_lang[key]}")
+        else:
+            ids_seen_per_lang[key] = rel
+
         if fm.get("id") != pid:
             warn("schema", rel, f"id canônico ausente ou divergente; esperado '{pid}'")
         status = fm.get("status")
         if status not in PRODUCT_STATUSES:
             warn("enum", rel, f"status de produto inválido: '{status}'")
+
+        # project primário
         project_id = fm.get("project")
         if project_id in EXCLUDED_PROJECT_IDS:
             error("xref", rel, f"project '{project_id}' foi excluído do rol CEDIS")
         if project_id and project_id not in project_ids:
-            warn("xref", rel, f"project '{project_id}' não existe em content/projects")
+            warn("xref", rel, f"project '{project_id}' não existe em content/projects nem data/projects.yaml")
+
+        # secondary_projects[]
+        secondary = as_list(fm.get("secondary_projects"))
+        for sec_id in secondary:
+            if sec_id in EXCLUDED_PROJECT_IDS:
+                error("xref", rel, f"secondary_projects contém projeto excluído: '{sec_id}'")
+            elif sec_id not in project_ids:
+                warn("xref", rel, f"secondary_projects '{sec_id}' não existe em projects")
+            if project_id and sec_id == project_id:
+                error("products", rel, f"redundância: '{sec_id}' está em project e em secondary_projects")
+
+        # responsible[]
         for researcher_id in as_list(fm.get("responsible")):
             if researcher_id not in person_ids:
                 warn("xref", rel, f"responsible '{researcher_id}' não existe em content/people nem data/people.yaml")
+
+        # areas[]
         for area_id in as_list(fm.get("areas")):
             if area_id not in area_ids:
                 warn("xref", rel, f"area '{area_id}' não existe em areas.yaml")
+
+        # publications[]
+        if publication_ids is not None:
+            for pub_id in as_list(fm.get("publications")):
+                if pub_id not in publication_ids:
+                    warn("xref", rel, f"publication '{pub_id}' não existe em content/publications")
 
     for pid, langs in by_lang.items():
         if langs != {"pt", "en"}:
@@ -644,8 +703,11 @@ def main() -> int:
     project_ids = data_project_ids | collect_content_ids(project_entries, data_project_ids)
     product_ids = collect_content_ids(product_entries)
     validate_project_pages(project_entries, person_ids, area_ids, project_ids, product_ids)
-    validate_product_pages(product_entries, person_ids, area_ids, project_ids)
-    all_fms.extend(validate_generated_publication_pages())
+    # Valida publicações geradas primeiro pra coletar IDs pra validate_product_pages.
+    generated_pub_entries = validate_generated_publication_pages()
+    publication_ids = collect_publication_ids(generated_pub_entries)
+    validate_product_pages(product_entries, person_ids, area_ids, project_ids, publication_ids)
+    all_fms.extend(generated_pub_entries)
 
     opportunity_entries = validate_content_section("opportunities", "opportunity")
     all_fms.extend(opportunity_entries)

@@ -241,6 +241,17 @@ Verificações executadas por `scripts/validate_content.py`:
 7. **Etiquetas não vazias.** Tags `""` ou `null` são reportadas.
 8. **Datas coerentes.** `start_date <= end_date` em projetos; `year` de
    produção é razoável (1990-2030).
+9. **Integridade de produtos** (backlog #1, resolvido em 2026-07-24):
+   - `id` único por idioma entre produtos (**error**).
+   - `project` primário resolve em `data/projects.yaml` ou em
+     `content/projects/` (**warn** — comportamento antigo).
+   - `secondary_projects[i]` resolve (**warn**).
+   - `project` **não deve** aparecer em `secondary_projects[]`
+     (**error** — redundância).
+   - `publications[i]` existe como página gerada em
+     `content/publications/**` (validado via `id: publication_...`
+     do frontmatter) (**warn**).
+   - `responsible[i]`, `areas[i]` — regras antigas mantidas.
 
 ## Modo de operação do validador
 
