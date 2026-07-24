@@ -270,8 +270,9 @@
                   <div class="{{ $metaLabelClass }}">{{ i18n "orientador" }}</div>
                   <div class="mt-2 flex flex-wrap gap-2">
                     {{ range $sup.advisors }}
-                      {{ with index hugo.Data.advisors.advisors . }}
-                        <a href="{{ if hasPrefix .link "/" }}{{ .link | relLangURL }}{{ else }}{{ .link }}{{ end }}" class="{{ $pillClass }}">{{ .name }}</a>
+                      {{ $adv := partial "people-lookup" . }}
+                      {{ if $adv.found }}
+                        <a href="{{ if hasPrefix $adv.link "/" }}{{ $adv.link | relLangURL }}{{ else }}{{ $adv.link }}{{ end }}" class="{{ $pillClass }}">{{ $adv.name }}</a>
                       {{ end }}
                     {{ end }}
                   </div>
@@ -284,7 +285,7 @@
                   <div class="mt-2 flex flex-wrap gap-2">
                     {{ range $filteredTags }}
                       {{ $tagLink := printf "/tags/%s" (. | urlize) | relLangURL }}
-                      <a href="{{ $tagLink }}" class="{{ $pillClass }}">{{ . | i18n }}</a>
+                      <a href="{{ $tagLink }}" class="{{ $pillClass }}">{{ partial "translated-label.html" (dict "value" .) }}</a>
                     {{ end }}
                   </div>
                 </div>
@@ -303,8 +304,9 @@
                     <div class="{{ $metaLabelClass }}">{{ i18n "orientador" }}</div>
                     <div class="mt-2 flex flex-wrap gap-2">
                       {{ range $sup.advisors }}
-                        {{ with index hugo.Data.advisors.advisors . }}
-                          <a href="{{ if hasPrefix .link "/" }}{{ .link | relLangURL }}{{ else }}{{ .link }}{{ end }}" class="{{ $pillClass }}">{{ .name }}</a>
+                        {{ $adv := partial "people-lookup" . }}
+                        {{ if $adv.found }}
+                          <a href="{{ if hasPrefix $adv.link "/" }}{{ $adv.link | relLangURL }}{{ else }}{{ $adv.link }}{{ end }}" class="{{ $pillClass }}">{{ $adv.name }}</a>
                         {{ end }}
                       {{ end }}
                     </div>
@@ -340,8 +342,9 @@
               <div class="{{ $metaLabelClass }}">{{ i18n "orientador" }}</div>
               <div class="mt-2 flex flex-wrap gap-2">
                 {{ range $page.Params.advisors }}
-                  {{ with index hugo.Data.advisors.advisors . }}
-                    <a href="{{ if hasPrefix .link "/" }}{{ .link | relLangURL }}{{ else }}{{ .link }}{{ end }}" class="{{ $pillClass }}">{{ .name }}</a>
+                  {{ $adv := partial "people-lookup" . }}
+                  {{ if $adv.found }}
+                    <a href="{{ if hasPrefix $adv.link "/" }}{{ $adv.link | relLangURL }}{{ else }}{{ $adv.link }}{{ end }}" class="{{ $pillClass }}">{{ $adv.name }}</a>
                   {{ end }}
                 {{ end }}
               </div>
@@ -354,7 +357,7 @@
               <div class="mt-2 flex flex-wrap gap-2">
                 {{ range $pageTags }}
                   {{ $tagLink := printf "/tags/%s" (. | urlize) | relLangURL }}
-                  <a href="{{ $tagLink }}" class="{{ $pillClass }}">{{ . | i18n }}</a>
+                  <a href="{{ $tagLink }}" class="{{ $pillClass }}">{{ partial "translated-label.html" (dict "value" .) }}</a>
                 {{ end }}
               </div>
             </div>

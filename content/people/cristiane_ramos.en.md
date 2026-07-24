@@ -7,17 +7,22 @@ weight: 60
 language: en
 featured_image: "../assets/images/featured/people_Cristiane Ramos.png"
 summary: Professor at the University of Brasília (UnB), working in the Software Engineering undergraduate program on software quality, digital government, and software engineering education.
+contact:
+  email: cristianeramos@unb.br
+  lattes: https://lattes.cnpq.br/9950213660160161
+  orcid: https://orcid.org/0000-0002-6235-5590
+areas:
+- active_learning
+- education
+- gamification
+- learning_analytics
+- software_quality
+- verification_validation_testing
 authorimage: ../assets/images/global/author.webp
 categories:
 - people
 - researcher
-- cristiane_ramos
 tags: 
-- gamification
-- learning_analytics
-- verification_validation_testing
-- software_quality
-- active_learning
 - project_cc
 nav_next: true
 ---

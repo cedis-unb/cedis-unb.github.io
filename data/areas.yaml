@@ -39,7 +39,14 @@ areas:
     name: 
       en: "Software Engineering"
       pt: "Engenharia de Software"
-    researchers: []
+    researchers:
+      - sergio_freitas
+      - andre_lanna
+      - cristiane_ramos
+      - george_marsicano
+      - ricardo_ajax
+      - fabiana_mendes
+      - daniel_sundfeld
 
   - id: gamification
     name: 

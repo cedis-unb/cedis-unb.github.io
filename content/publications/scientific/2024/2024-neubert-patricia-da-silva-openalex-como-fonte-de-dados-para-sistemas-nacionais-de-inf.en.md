@@ -23,7 +23,7 @@ authors_structured:
 - name: PINTO, ADILSON LUIZ
 - name: LIMA, Daniel Sundfeld
   id: daniel_sundfeld
-  url: /people/daniel_lima
+  url: /people/daniel_sundfeld
 - name: SILVA, FLÁVIO ROBERTO CRUZ
 tags:
 - daniel_sundfeld

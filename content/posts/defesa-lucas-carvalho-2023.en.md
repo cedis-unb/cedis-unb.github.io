@@ -17,7 +17,7 @@ tags:
 ---
 Brasília, July 27, 2023
 
-In serverless, cost is a direct function of time. A function that runs in 200ms pays one fare; the same function running in 800ms pays four times that. Yet predicting that time before actually running is an underdeveloped discipline — the market typically decides by isolated benchmarks and optimism. **This vacuum is where the undergraduate thesis defended in July 2023 by Lucas Ganda Carvalho and Wíctor Bastos Girardi steps in**, advised by Prof. {{< link-interno "/people/daniel_lima" "Daniel Sundfeld Lima" >}}.
+In serverless, cost is a direct function of time. A function that runs in 200ms pays one fare; the same function running in 800ms pays four times that. Yet predicting that time before actually running is an underdeveloped discipline — the market typically decides by isolated benchmarks and optimism. **This vacuum is where the undergraduate thesis defended in July 2023 by Lucas Ganda Carvalho and Wíctor Bastos Girardi steps in**, advised by Prof. {{< link-interno "/people/daniel_sundfeld" "Daniel Sundfeld Lima" >}}.
 
 The work approaches the problem with instrumentation: rather than estimating time by analogy, it proposes a predictive approach for Lambda functions that combines code features with data observed in controlled runs. Predicting accurately matters for two practical reasons: when cost is well estimated, architecture gains the freedom to choose between serverless and traditional options; when it is misestimated, the team learns the price only after the billing cycle closes.
 

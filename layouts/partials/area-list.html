@@ -1,0 +1,15 @@
+{{/*
+  area-list — lista de áreas na ordem de data/areas.yaml.
+  Cada item é uma entrada de area-index.
+*/}}
+
+{{ $index := partialCached "area-index" "global" site.Language.Lang }}
+{{ $items := slice }}
+
+{{ range hugo.Data.areas.areas }}
+  {{ with index $index .id }}
+    {{ $items = $items | append . }}
+  {{ end }}
+{{ end }}
+
+{{ return $items }}

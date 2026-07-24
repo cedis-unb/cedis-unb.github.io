@@ -5,11 +5,29 @@ conteúdo do site cedis-unb.github.io. Use-o como referência ao inserir
 novos itens (notícias, publicações, pessoas, produtos, projetos) para
 manter conformidade com o padrão atual.
 
-Última revisão: julho/2026.
+Última revisão: julho/2026 (pós-Gaps #1, #2 e correções Gap #10).
 
 ---
 
-## Fontes canônicas em `data/`
+## Idiomas do Hugo
+
+O portal publica dois idiomas: português do Brasil e inglês. Por
+compatibilidade com Hugo, URLs existentes e sufixos de arquivo, a chave
+interna do português é `pt`, mas o `locale` configurado em `hugo.yaml` é
+`pt-BR`.
+
+Regras:
+- Arquivos em português usam sufixo `.pt.md` e frontmatter
+  `language: pt`.
+- Arquivos em inglês usam sufixo `.en.md` e frontmatter `language: en`.
+- Não crie arquivos `.pt-br.md` nem frontmatter `language: pt-br`; o
+  validador deve reportar isso.
+- Metadados públicos (`hreflang`, Open Graph e sitemap) expõem o
+  português como `pt-BR`.
+
+---
+
+## Fontes canônicas em `data/` (4 arquivos)
 
 Todo arquivo `.yaml` no diretório `data/` é carregado automaticamente pelo
 Hugo. Para evitar edição da fonte incorreta, o repositório mantém apenas
@@ -19,31 +37,40 @@ gist privado, branch efêmera) — nunca em `data/`.
 
 | Arquivo | Papel canônico |
 |---|---|
-| `data/advisors.yaml` | Orientadores e áreas primárias por pesquisador. |
-| `data/areas.yaml` | Áreas de atuação do CEDIS. |
-| `data/people.yaml` | Pessoas do CEDIS (pesquisadores, orientandos ativos, alumni). |
-| `data/productions.yaml` | Produção científica (artigos, defesas, registros). |
-| `data/projects.yaml` | Projetos (metadados agregados; a fonte de longo prazo será a página em `content/projects/`, ver issue I03 do `PLANO-AUDITORIA-2026.md`). |
+| `data/areas.yaml` | Áreas de atuação do CEDIS. Consumido pela cascata i18n. |
+| `data/people.yaml` | Pessoas sem página individual (orientandos ativos, alumni). Cada entrada tem `slug` **obrigatório** (validado). |
+| `data/productions.yaml` | Produção científica. `authors[]` (strings), `people[]` (slugs), `tags[]` (tópicos/projetos). |
+| `data/projects.yaml` | Projetos (metadados agregados). Consumido pela cascata i18n. |
+
+**Removido em 2026-07-24:** `data/advisors.yaml`. Contato/áreas/link de
+docentes agora ficam no frontmatter dos `.md` em `content/people/`.
+Templates consultam via `partial "people-lookup"`.
 
 Não crie arquivos como `people-old.yaml`, `productions copy.yaml`, ou
 sufixos `-v2`, `-backup`, `-errado`. Se precisar experimentar uma
 alteração de estrutura, use uma branch e um PR.
 
-### Identificadores de pessoa: slug vs. tag/advisor
+### Identificadores de pessoa: slug canônico
 
-O identificador usado em `categories`, `tags` e `advisors` deve **casar
-com o slug da URL do perfil** (`content/people/<slug>.md`). Exceção
-transitória documentada:
+O identificador de pessoa é o `slug` (snake_case, ASCII, sem acentos).
+Referências estruturadas (`advisors`, `people`, `researchers`, `students`,
+`responsible`, `creators`) usam o slug. Nunca use nome por extenso.
 
-- **Daniel Sundfeld Lima** — slug de URL é `daniel_lima` (nome do
-  arquivo), mas a *tag* e o *advisor* usam `daniel_sundfeld` em todo o
-  conteúdo. O perfil declara `aliases: [/people/daniel_sundfeld/]` para
-  manter compatibilidade de URL. Toda referência agregadora (shortcodes
-  `filterPeople`, `publications`, `postsByCategoriesTags`) deve
-  continuar usando `daniel_sundfeld` até que I03 do
-  [`PLANO-AUDITORIA-2026.md`](PLANO-AUDITORIA-2026.md) unifique o
-  modelo. Ao adicionar novo conteúdo relacionado a esse pesquisador,
-  reproduza esse padrão.
+Regras:
+- Se pessoa tem `.md` em `content/people/<slug>.md`, o slug é o basename
+  do arquivo. O frontmatter pode declarar `slug:` em stubs derivados, mas
+  perfis mantidos manualmente não precisam repetir esse campo.
+- Se pessoa está em `data/people.yaml`, o campo `slug:` é obrigatório e
+  deve casar com o `.md` (se existir).
+- `categories` não deve repetir o slug da própria pessoa. Use
+  `profile_level` para tipo de perfil e categorias apenas para taxonomia
+  (`people`, `researcher`, `master_student`, etc.).
+- `tags` em perfis não deve duplicar valores de `areas`; o template de
+  perfil já exibe `areas` junto aos temas.
+
+**Daniel Sundfeld**: consolidado em 2026-07-24 como `daniel_sundfeld` em
+toda a base. O `.md` é `content/people/daniel_sundfeld.pt.md`.
+Zero exceções em templates.
 
 Novos pesquisadores devem usar o mesmo string tanto como slug do
 arquivo quanto como identificador em tags/advisors — sem exceções.
@@ -388,8 +415,8 @@ Gama, só a faculdade foi renomeada.
 
 ### 1.3 Slugs de pesquisadores CEDIS
 
-Os pesquisadores CEDIS têm slugs fixos usados em `advisors:` no YAML e
-em URLs de perfil (`/people/<slug>`).
+Os pesquisadores CEDIS têm slugs fixos usados em `advisors:`/`people:` no
+YAML e em URLs de perfil (`/people/<slug>`).
 
 | Slug | Nome completo | URL de perfil |
 |------|---------------|----------------|
@@ -398,11 +425,58 @@ em URLs de perfil (`/people/<slug>`).
 | `andre_lanna` | André Luiz Peron Martins Lanna | `/people/andre_lanna` |
 | `george_marsicano` | George Marsicano Corrêa | `/people/george_marsicano` |
 | `ricardo_ajax` | Ricardo Ajax Dias Kosloski | `/people/ricardo_ajax` |
-| `daniel_sundfeld` | Daniel Sundfeld Lima | `/people/daniel_lima` ⚠️ |
+| `daniel_sundfeld` | Daniel Sundfeld Lima | `/people/daniel_sundfeld` |
 | `fabiana_mendes` | Fabiana Freitas Mendes | `/people/fabiana_mendes` |
 
-⚠️ Atenção: Daniel usa `daniel_sundfeld` como advisor em `productions.yaml`
-mas a página de perfil está em `/people/daniel_lima`.
+Advisors externos (co-orientam mas não são docentes CEDIS): `andrea_cabello`,
+`berilhes_garcia`, `edna_canedo`, `marilia_miranda`, `claudia_ochoa`,
+`celia_higawa` — cada um tem stub minimal em `content/people/<slug>.md`
+com `profile_level: advisor_only`.
+
+### 1.4 Índice unificado (`people-index` / `people-lookup`)
+
+Templates NÃO devem consultar `hugo.Data.people`, `hugo.Data.advisors` (não
+existe mais) ou `content/people/` diretamente. Use os partials centrais:
+
+```go-html-template
+{{/* consultar UMA pessoa */}}
+{{ $p := partial "people-lookup" $slug }}
+{{ if $p.found }}
+  <a href="{{ $p.link }}">{{ $p.name }}</a>
+  {{ $p.publications_count }} publicações
+  {{ $p.contact.email }}
+{{ end }}
+
+{{/* iterar TODAS as pessoas */}}
+{{ $idx := partialCached "people-index" "global" }}
+{{ range $slug, $entry := $idx }}
+  {{ if eq $entry.profile_level "researcher" }}...{{ end }}
+{{ end }}
+```
+
+Campos do dict retornado documentados em `docs-src/data-model.md`.
+
+### 1.5 Cascata i18n para rótulos (Gap #2, 2026-07)
+
+Tag pills, labels de área/projeto e H1 de `/tags/<slug>/` devem usar o
+partial `translated-label.html` (nunca `{{ . | i18n }}` direto).
+
+```go-html-template
+<a href="/tags/{{ $slug }}/" class="pill">
+  {{ partial "translated-label.html" (dict "value" $slug) }}
+</a>
+```
+
+O partial resolve em cascata:
+1. `i18n <slug>` (traduções manuais)
+2. `partial "project-lookup" <slug>` → `.name`
+3. `partial "area-lookup" <slug>` → `.name`
+4. `partial "people-lookup" <slug>` → `.name`
+5. `humanize(<slug>)`
+
+**Consequência**: novo projeto em `data/projects.yaml` ou nova área em
+`data/areas.yaml` propaga label pra todas as pills automaticamente — não
+precisa mais editar `i18n/*.yaml`.
 
 ---
 
@@ -505,34 +579,59 @@ handle. Ao inserir novo TCC de dupla:
 2. Se sim, adicione o coautor à entrada existente.
 3. Nunca crie linha nova apontando para handle já registrado.
 
-### 2.7 Tags de pesquisador em publicações
+### 2.7 Slugs de pessoas em publicações (Gap #10, 2026-07)
+
+**Novo padrão**: person-slugs vão no campo `people[]`, NÃO em `tags[]`.
+Templates consultam ambos com fallback retrocompatível.
 
 Toda produção científica, defesa, registro ou produto acadêmico que
 deva aparecer no perfil de um pesquisador precisa ter o slug do
-pesquisador em `tags:` e, quando for orientação, também em
-`advisors:`.
+pesquisador em `people:` e, quando for orientação, também em `advisors:`.
 
-Exemplo:
+Exemplo (padrão atual):
 
 ```yaml
 tags:
 - gamification
 - software_quality
-- sergio_freitas
+- project_dfcris          # projetos e temas continuam em tags[]
+people:
+- sergio_freitas          # ← pessoas em people[]
+- andre_silva
 advisors:
-- sergio_freitas
+- sergio_freitas          # ← orientação em advisors[]
 ```
 
 Regras:
 
 - `advisors:` define vínculo de orientação.
-- `tags:` define indexação temática e associação com páginas de
-  pesquisador, categorias e listas de publicações.
+- `people:` define coautoria/associação a uma pessoa (canônico).
+- `tags:` define indexação temática e associação com projetos/áreas.
+  **Não coloque mais person-slug em `tags:`** — o script
+  `scripts/separate_people_from_tags.py` já migrou os existentes.
 - Se o autor CEDIS participa de um artigo mas não é orientador, ainda
-  assim inclua o slug em `tags:`.
+  assim inclua o slug em `people:`.
 - Ao revisar publicações de um pesquisador, conferir se todas as
-  entradas esperadas têm o slug correto; ausência do slug é a causa
-  mais comum de publicação não aparecer no perfil.
+  entradas esperadas têm o slug correto em `people:`; ausência é a
+  causa mais comum de publicação não aparecer no perfil.
+
+### 2.7.1 Como pessoa vira autor conhecido
+
+Fluxo automático:
+
+1. Adicionar entrada em `productions.yaml` com o slug em `people[]`.
+2. Se pessoa não tem `.md` nem entrada em `people.yaml`:
+   - Rodar `python3 scripts/derive_people.py --apply`
+   - Gera stub `content/people/<slug>.md` com `profile_level: derived`
+3. Pessoa passa a ter URL própria `/people/<slug>/` mostrando as
+   publicações onde é autora.
+
+Templates envolvidos na propagação:
+- `layouts/people/single.html:131` — perfil individual (count e list).
+- `layouts/partials/posts-template.html:84` — `/categories/researcher/`.
+- `layouts/shortcodes/publications.html`, `npublications.html` — filtros
+  usam `.people[]` além de `.tags[]`.
+- `layouts/partials/people-index.html:68-88` — pré-indexação global.
 
 ### 2.8 Publicações científicas vs. orientações
 

@@ -17,7 +17,7 @@ tags:
 ---
 Brasília, 11 de julho de 2025
 
-Blockchain, contratos inteligentes e moedas digitais deixaram de ser palavras exóticas — mas continuam a ser difíceis de operacionalizar em contextos concretos. **O TCC defendido em julho de 2025 por João Pedro Elias de Moura ataca um caso específico: avaliação e pagamento em projetos de desenvolvimento de software**, sob orientação do Prof. {{< link-interno "/people/daniel_lima" "Daniel Sundfeld Lima" >}}.
+Blockchain, contratos inteligentes e moedas digitais deixaram de ser palavras exóticas — mas continuam a ser difíceis de operacionalizar em contextos concretos. **O TCC defendido em julho de 2025 por João Pedro Elias de Moura ataca um caso específico: avaliação e pagamento em projetos de desenvolvimento de software**, sob orientação do Prof. {{< link-interno "/people/daniel_sundfeld" "Daniel Sundfeld Lima" >}}.
 
 O SmartPayment — a peça que atravessa o trabalho — combina lógica de contratos inteligentes com o fluxo comum de aprovação e pagamento de entregas em um projeto de software. A ideia é reduzir fricção de auditoria e disputa: o contrato executa automaticamente conforme critérios verificáveis, com segurança e transparência conferidas pela cadeia. A escolha do domínio importa: desenvolvimento de software é justamente aquele em que entregas são fáceis de fragmentar, difíceis de avaliar objetivamente e frequentemente foco de discussão contratual.
 

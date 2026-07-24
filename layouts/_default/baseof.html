@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="{{ .Language.Lang }}">
+{{ $htmlLang := cond (eq .Language.Lang "pt") "pt-BR" .Language.Lang }}
+<html lang="{{ $htmlLang }}">
 
 <head>
     {{ partial "head.html" . }}

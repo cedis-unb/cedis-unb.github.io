@@ -37,4 +37,4 @@ O projeto investiga e desenvolve soluções para melhorar a recuperação, organ
 
 ## Equipe
 
-- {{< link-interno "/people/daniel_lima" "Daniel Sundfeld" >}}
+- {{< link-interno "/people/daniel_sundfeld" "Daniel Sundfeld" >}}

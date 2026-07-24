@@ -1,0 +1,68 @@
+{{/*
+  area-index — dicionário global id → info consolidada de área.
+
+  Fonte canônica atual:
+    · data/areas.yaml
+    · content/areas/<id>.md (página rica opcional)
+*/}}
+
+{{ $lang := site.Language.Lang }}
+{{ $index := dict }}
+
+{{ $pagesByID := dict }}
+{{ range site.RegularPages }}
+  {{ if and (eq .Section "areas") (eq .Lang site.Language.Lang) }}
+    {{ $id := .Params.id | default .File.TranslationBaseName | lower }}
+    {{ $pagesByID = merge $pagesByID (dict $id .) }}
+  {{ end }}
+{{ end }}
+
+{{ range hugo.Data.areas.areas }}
+  {{ $area := . }}
+  {{ $id := $area.id }}
+  {{ $page := index $pagesByID (lower $id) }}
+  {{ $name := "" }}
+  {{ with $area.name }}
+    {{ $name = index . $lang | default (index . "en") | default (index . "pt") }}
+  {{ end }}
+  {{ if not $name }}{{ with $page }}{{ $name = .Title }}{{ end }}{{ end }}
+  {{ if not $name }}{{ $name = replaceRE "[-_]+" " " $id | title }}{{ end }}
+
+  {{ $pageURL := "" }}
+  {{ with $page }}{{ $pageURL = .RelPermalink }}{{ end }}
+  {{ $link := $pageURL }}
+  {{ if not $link }}{{ $link = printf "/tags/%s" ($id | urlize) | relLangURL }}{{ end }}
+
+  {{ $entry := dict
+    "id" $id
+    "found" true
+    "name" $name
+    "label" $name
+    "data" $area
+    "page" $page
+    "page_url" $pageURL
+    "link" $link
+    "researchers" ($area.researchers | default (slice))
+  }}
+  {{ $index = merge $index (dict $id $entry) }}
+{{ end }}
+
+{{/* Fallback: páginas de área ainda sem entrada em data/areas.yaml. */}}
+{{ range $id, $page := $pagesByID }}
+  {{ if not (index $index $id) }}
+    {{ $entry := dict
+      "id" $id
+      "found" true
+      "name" $page.Title
+      "label" $page.Title
+      "data" nil
+      "page" $page
+      "page_url" $page.RelPermalink
+      "link" $page.RelPermalink
+      "researchers" ($page.Params.researchers | default (slice))
+    }}
+    {{ $index = merge $index (dict $id $entry) }}
+  {{ end }}
+{{ end }}
+
+{{ return $index }}

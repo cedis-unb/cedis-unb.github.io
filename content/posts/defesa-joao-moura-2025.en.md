@@ -17,7 +17,7 @@ tags:
 ---
 Brasília, July 11, 2025
 
-Blockchain, smart contracts, and digital currencies are no longer exotic terms — but they remain hard to operationalize in concrete contexts. **The undergraduate thesis defended in July 2025 by João Pedro Elias de Moura attacks a specific case: assessment and payment in software development projects**, under the advising of Prof. {{< link-interno "/people/daniel_lima" "Daniel Sundfeld Lima" >}}.
+Blockchain, smart contracts, and digital currencies are no longer exotic terms — but they remain hard to operationalize in concrete contexts. **The undergraduate thesis defended in July 2025 by João Pedro Elias de Moura attacks a specific case: assessment and payment in software development projects**, under the advising of Prof. {{< link-interno "/people/daniel_sundfeld" "Daniel Sundfeld Lima" >}}.
 
 SmartPayment — the artifact that runs through the work — combines smart-contract logic with the usual flow of approving and paying deliveries in a software project. The idea is to reduce audit and dispute friction: the contract executes automatically according to verifiable criteria, with security and transparency granted by the chain. The domain choice matters: software development is precisely the one where deliveries are easy to fragment, hard to evaluate objectively, and often the focus of contractual disputes.
 

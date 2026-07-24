@@ -7,13 +7,20 @@ weight: 50
 language: en
 featured_image: "../assets/images/featured/people_Fabiana Mendes.png"
 summary: Associate Professor at the University of Brasília (UnB), working in the undergraduate Software Engineering program.
+contact:
+  email: fabianamendes@unb.br
+  lattes: https://lattes.cnpq.br/7675506667619564
+  orcid: https://orcid.org/0000-0002-1724-2044
+areas:
+- green_software
+- software_quality
+- verification_validation_testing
+- security
 authorimage: ../assets/images/global/author.webp
 categories:
 - people
 - researcher
-- fabiana_mendes
 tags: 
-- green_software
 - project_gsd
 nav_next: true
 ---
