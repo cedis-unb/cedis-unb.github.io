@@ -5,6 +5,8 @@ date: '2025-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2025_elaine_venson_reflections_on_collaborative_design_lessons_from_creating_a_digital_pub
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2025_elaine_venson_reflections_on_collaborative_design_lessons_from_creating_a_digital_pub
 publication_index: 22
 publication_group: scientific
@@ -20,16 +22,25 @@ authors:
 - Wander Pereira Silva
 authors_structured:
 - name: Elaine Venson
+  id: elaine_venson
+  url: /people/elaine_venson
 - name: Julia de Souza
+  id: julia_de_souza
+  url: /people/julia_de_souza
 - name: Sara Campos
+  id: sara_campos
+  url: /people/sara_campos
 - name: Rejane Figueiredo
+  id: rejane_maria_da_costa_figueiredo
+  url: /people/rejane_maria_da_costa_figueiredo
 - name: George Marsicano
   id: george_marsicano
   url: /people/george_marsicano
 - name: Wander Pereira Silva
+  id: wander_cleber_maria_pereira_da_silva
+  url: /people/wander_cleber_maria_pereira_da_silva
 tags:
 - digital_transformation
-- george_marsicano
 advisors: []
 doi_isbn: 10.59490/dgo.2025.1044
 source_title: 26th Annual International Conference on Digital Government Research

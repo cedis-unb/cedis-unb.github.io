@@ -4,6 +4,8 @@ date: '2023-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2023_assis_l_s_gamification_in_organizational_contexts_a_systematic_literature_review
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2023_assis_l_s_gamification_in_organizational_contexts_a_systematic_literature_review
 publication_index: 48
 publication_group: scientific
@@ -17,7 +19,6 @@ authors_structured:
 - name: ASSIS, L. S.
 - name: FREITAS, S. A. A.
 tags:
-- sergio_freitas
 - gamification
 advisors: []
 doi_isbn: 10.1007/978-3-031-35969-9_23

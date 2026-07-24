@@ -5,6 +5,8 @@ date: '2024-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2024_cristiane_s_ramos_learning_indicators_as_tools_for_continuous_improvement_in_the_educ
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2024_cristiane_s_ramos_learning_indicators_as_tools_for_continuous_improvement_in_the_educ
 publication_index: 44
 publication_group: scientific
@@ -22,14 +24,18 @@ authors_structured:
   id: cristiane_ramos
   url: /people/cristiane_ramos
 - name: Dianne M. Viana
+  id: dianne_magalhaes_viana
+  url: /people/dianne_magalhaes_viana
 - name: Eduardo Bessa
+  id: eduardo_bessa
+  url: /people/eduardo_bessa
 - name: Márcia R. Mortari
+  id: marcia_renata_mortari
+  url: /people/marcia_renata_mortari
 - name: Sergio Antônio Andrade Freitas
   id: sergio_freitas
   url: /people/sergio_freitas
 tags:
-- sergio_freitas
-- cristiane_ramos
 - active_learning
 - project_a3m
 - project_framework_preditivo_engajamento

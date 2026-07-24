@@ -4,6 +4,8 @@ date: '2012-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2012_fernando_marinho_do_nascimento_plano_de_contingencia_para_ferramentos_de_desenvolvime
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2012_fernando_marinho_do_nascimento_plano_de_contingencia_para_ferramentos_de_desenvolvime
 publication_index: 237
 publication_group: specialization
@@ -14,6 +16,8 @@ authors:
 - Fernando Marinho do Nascimento
 authors_structured:
 - name: Fernando Marinho do Nascimento
+  id: fernando_marinho_do_nascimento
+  url: /people/fernando_marinho_do_nascimento
 tags:
 - security
 advisors:

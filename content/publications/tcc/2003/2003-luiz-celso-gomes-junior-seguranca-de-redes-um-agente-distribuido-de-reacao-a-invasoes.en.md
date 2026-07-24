@@ -4,6 +4,8 @@ date: '2003-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2003_luiz_celso_gomes_junior_seguranca_de_redes_um_agente_distribuido_de_reacao_a_invasoes
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2003_luiz_celso_gomes_junior_seguranca_de_redes_um_agente_distribuido_de_reacao_a_invasoes
 publication_index: 245
 publication_group: tcc

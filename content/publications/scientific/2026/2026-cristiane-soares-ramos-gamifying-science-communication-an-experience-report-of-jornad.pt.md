@@ -5,6 +5,8 @@ date: '2026-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2026_cristiane_soares_ramos_gamifying_science_communication_an_experience_report_of_jornad
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2026_cristiane_soares_ramos_gamifying_science_communication_an_experience_report_of_jornad
 publication_index: 317
 publication_group: scientific
@@ -26,21 +28,21 @@ authors_structured:
   id: sergio_freitas
   url: /people/sergio_freitas
 - name: Mylena Angélica Silva Farias
-  id: mylena_angelica_silva_farias
+  id: mylena_faria
+  url: /people/mylena_faria
 - name: Wildemberg Sales da Silva Junior
-  id: wildemberg_sales_da_silva_junior
+  id: wildemberg_sales
+  url: /people/wildemberg_sales
 - name: Marcus Vinícius Paiva Martins
-  id: marcus_vinicius_p_martins
+  id: marcus_martins
+  url: /people/marcus_martins
 - name: Leda Cardoso S. Pinto
+  id: leda_cardoso_s_pinto
+  url: /people/leda_cardoso_s_pinto
 tags:
 - gamification
 - digital_transformation
 - project_cc
-- sergio_freitas
-- cristiane_ramos
-- mylena_faria
-- wildemberg_sales
-- marcus_martins
 advisors: []
 doi_isbn: ''
 source_title: The 26th International Conference on Computational Science and Its Applications

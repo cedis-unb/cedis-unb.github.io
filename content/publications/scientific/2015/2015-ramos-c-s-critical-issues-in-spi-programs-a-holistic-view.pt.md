@@ -4,6 +4,8 @@ date: '2015-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2015_ramos_c_s_critical_issues_in_spi_programs_a_holistic_view
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2015_ramos_c_s_critical_issues_in_spi_programs_a_holistic_view
 publication_index: 191
 publication_group: scientific
@@ -16,10 +18,15 @@ authors:
 - ROCHA, A. R. C.
 authors_structured:
 - name: RAMOS, C. S.
+  id: ramos_j_c_c
+  url: /people/ramos_j_c_c
 - name: OLIVEIRA, K. M.
+  id: oliveira_k_m
+  url: /people/oliveira_k_m
 - name: ROCHA, A. R. C.
-tags:
-- cristiane_ramos
+  id: rocha_a_r_c
+  url: /people/rocha_a_r_c
+tags: []
 advisors: []
 doi_isbn: ''
 source_title: The First International Conference on Advances and Trends in Software

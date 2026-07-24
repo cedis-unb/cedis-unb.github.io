@@ -4,6 +4,8 @@ date: '2019-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2019_hugo_ferreira_martins_design_thinking_challenges_for_software_requirements_elicitatio
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2019_hugo_ferreira_martins_design_thinking_challenges_for_software_requirements_elicitatio
 publication_index: 319
 publication_group: scientific
@@ -19,20 +21,25 @@ authors:
 - Edgard Costa Oliveira
 authors_structured:
 - name: Hugo Ferreira Martins
+  id: hugo_ferreira_martins
+  url: /people/hugo_ferreira_martins
 - name: Antônio Carvalho de Oliveira Junior
   id: antonio_bezerra_da_silva_junior
 - name: Edna Dias Canedo
   id: edna_canedo
-  url: http://lattes.cnpq.br/9554285834432091
+  url: /people/edna_canedo
 - name: Ricardo Ajax Dias Kosloski
   id: ricardo_ajax
   url: /people/ricardo_ajax
 - name: Roberto Ávila Paldês
+  id: roberto_avila_paldes
+  url: /people/roberto_avila_paldes
 - name: Edgard Costa Oliveira
+  id: edgard_costa_oliveira
+  url: /people/edgard_costa_oliveira
 tags:
 - software_requirements
 - digital_transformation
-- ricardo_ajax
 advisors: []
 doi_isbn: 10.3390/info10120371
 source_title: Information

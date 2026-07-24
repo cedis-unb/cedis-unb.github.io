@@ -5,6 +5,8 @@ date: '2016-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2016_marsicano_george_an_integrated_approach_to_the_requirements_engineering_and_process_m
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2016_marsicano_george_an_integrated_approach_to_the_requirements_engineering_and_process_m
 publication_index: 177
 publication_group: scientific
@@ -28,9 +30,6 @@ authors_structured:
 tags:
 - active_learning
 - software_requirements
-- george_marsicano
-- fabiana_mendes
-- sergio_freitas
 advisors: []
 doi_isbn: 10.1109/CSEET.2016.23
 source_title: 2016 IEEE 29th International Conference on Software Engineering Education

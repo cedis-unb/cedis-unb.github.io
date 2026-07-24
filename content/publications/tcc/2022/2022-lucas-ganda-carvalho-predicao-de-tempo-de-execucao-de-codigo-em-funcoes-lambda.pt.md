@@ -4,6 +4,8 @@ date: '2022-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2022_lucas_ganda_carvalho_predicao_de_tempo_de_execucao_de_codigo_em_funcoes_lambda
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2022_lucas_ganda_carvalho_predicao_de_tempo_de_execucao_de_codigo_em_funcoes_lambda
 publication_index: 61
 publication_group: tcc

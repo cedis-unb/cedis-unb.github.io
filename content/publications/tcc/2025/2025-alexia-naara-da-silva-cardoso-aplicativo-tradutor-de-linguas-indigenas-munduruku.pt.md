@@ -4,6 +4,8 @@ date: '2025-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2025_alexia_naara_da_silva_cardoso_aplicativo_tradutor_de_linguas_indigenas_munduruku
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2025_alexia_naara_da_silva_cardoso_aplicativo_tradutor_de_linguas_indigenas_munduruku
 publication_index: 256
 publication_group: tcc
@@ -14,7 +16,8 @@ authors:
 - Alexia Naara da Silva Cardoso
 authors_structured:
 - name: Alexia Naara da Silva Cardoso
-  id: alexia_naara_da_silva_cardoso
+  id: silva_rodrigo_m_s_da
+  url: /people/silva_rodrigo_m_s_da
 tags:
 - nlp
 - ai

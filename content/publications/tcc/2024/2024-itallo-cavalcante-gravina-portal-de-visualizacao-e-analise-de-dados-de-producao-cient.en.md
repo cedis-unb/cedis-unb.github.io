@@ -4,6 +4,8 @@ date: '2024-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2024_itallo_cavalcante_gravina_portal_de_visualizacao_e_analise_de_dados_de_producao_cient
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2024_itallo_cavalcante_gravina_portal_de_visualizacao_e_analise_de_dados_de_producao_cient
 publication_index: 266
 publication_group: tcc

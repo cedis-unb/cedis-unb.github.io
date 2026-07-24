@@ -4,6 +4,8 @@ date: '2015-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2015_rodrigues_g_n_modeling_and_verification_for_dependability_in_software_product_lines
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2015_rodrigues_g_n_modeling_and_verification_for_dependability_in_software_product_lines
 publication_index: 193
 publication_group: scientific
@@ -21,18 +23,31 @@ authors:
 - LEGAY, A.
 authors_structured:
 - name: RODRIGUES, G. N.
+  id: rodrigues_g_n
+  url: /people/rodrigues_g_n
 - name: ALVES, V. R.
+  id: alves_v_r
+  url: /people/alves_v_r
 - name: NUNES, V.
+  id: nunes_v
+  url: /people/nunes_v
 - name: LANNA, André Luiz Peron Martins
   id: andre_lanna
   url: /people/andre_lanna
 - name: CORDY, M.
+  id: cordy_m
+  url: /people/cordy_m
 - name: SCHOBBENS, P.
+  id: schobbens_p
+  url: /people/schobbens_p
 - name: SHARIFLOO, A. M.
+  id: sharifloo_a_m
+  url: /people/sharifloo_a_m
 - name: LEGAY, A.
+  id: legay_a
+  url: /people/legay_a
 tags:
 - software_product_line
-- andre_lanna
 advisors: []
 doi_isbn: 10.1109/HASE.2015.34
 source_title: International Symposium on High Assurance Systems Engineering (HASE)

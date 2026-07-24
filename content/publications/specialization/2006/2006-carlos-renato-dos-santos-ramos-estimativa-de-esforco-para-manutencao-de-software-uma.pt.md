@@ -4,6 +4,8 @@ date: '2006-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2006_carlos_renato_dos_santos_ramos_estimativa_de_esforco_para_manutencao_de_software_uma
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2006_carlos_renato_dos_santos_ramos_estimativa_de_esforco_para_manutencao_de_software_uma
 publication_index: 311
 publication_group: specialization
@@ -14,6 +16,8 @@ authors:
 - Carlos Renato dos Santos Ramos
 authors_structured:
 - name: Carlos Renato dos Santos Ramos
+  id: carlos_renato_dos_santos_ramos
+  url: /people/carlos_renato_dos_santos_ramos
 tags:
 - software_quality
 advisors:

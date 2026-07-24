@@ -4,6 +4,8 @@ date: '2024-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2024_arthur_rocha_temporim_de_lacerda_gamified_chatbot_management_process_a_way_to_build_g
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2024_arthur_rocha_temporim_de_lacerda_gamified_chatbot_management_process_a_way_to_build_g
 publication_index: 56
 publication_group: thesis
@@ -14,11 +16,11 @@ authors:
 - Arthur Rocha Temporim de Lacerda
 authors_structured:
 - name: Arthur Rocha Temporim de Lacerda
-  id: arthur_rocha_temporim_de_lacerda
+  id: arthur_temporim
+  url: /people/arthur_temporim
 tags:
 - gamification
 - machine_learning
-- arthur_temporim
 - project_inovacao_digital_gamificacao
 advisors:
 - sergio_freitas

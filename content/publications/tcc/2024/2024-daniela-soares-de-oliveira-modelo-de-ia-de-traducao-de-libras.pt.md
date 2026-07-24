@@ -4,6 +4,8 @@ date: '2024-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2024_daniela_soares_de_oliveira_modelo_de_ia_de_traducao_de_libras
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2024_daniela_soares_de_oliveira_modelo_de_ia_de_traducao_de_libras
 publication_index: 31
 publication_group: tcc

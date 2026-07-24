@@ -4,6 +4,8 @@ date: '2009-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2009_elcio_gomes_p_martins_comunicacao_como_fator_primordial_no_gerenciamento_de_projetos
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2009_elcio_gomes_p_martins_comunicacao_como_fator_primordial_no_gerenciamento_de_projetos
 publication_index: 295
 publication_group: specialization
@@ -14,6 +16,8 @@ authors:
 - Élcio Gomes P. Martins
 authors_structured:
 - name: Élcio Gomes P. Martins
+  id: elcio_gomes_p_martins
+  url: /people/elcio_gomes_p_martins
 tags:
 - soft_skills
 advisors:

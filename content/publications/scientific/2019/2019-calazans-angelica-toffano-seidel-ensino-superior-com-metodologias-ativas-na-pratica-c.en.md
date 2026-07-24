@@ -4,6 +4,8 @@ date: '2019-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2019_calazans_angelica_toffano_seidel_ensino_superior_com_metodologias_ativas_na_pratica_c
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2019_calazans_angelica_toffano_seidel_ensino_superior_com_metodologias_ativas_na_pratica_c
 publication_index: 125
 publication_group: scientific
@@ -21,19 +23,25 @@ authors:
 - GUIMARAES, F.
 authors_structured:
 - name: CALAZANS, Angelica Toffano Seidel
+  id: angelica_toffano_seidel_calazans
+  url: /people/angelica_toffano_seidel_calazans
 - name: MASSON, E.
 - name: SOUZA, M.
+  id: souza_m
+  url: /people/souza_m
 - name: BRITO, I.
+  id: brito_i
+  url: /people/brito_i
 - name: PALDES, R.
 - name: KOSLOSKI, RICARDO AJAX DIAS
   id: ricardo_ajax
   url: /people/ricardo_ajax
 - name: RAMOS, C. S.
+  id: ramos_j_c_c
+  url: /people/ramos_j_c_c
 - name: GUIMARAES, F.
 tags:
 - active_learning
-- cristiane_ramos
-- ricardo_ajax
 advisors: []
 doi_isbn: 10.29327/57070
 source_title: ''

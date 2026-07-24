@@ -5,6 +5,8 @@ date: '2020-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2020_eneias_paulo_de_oliveira_pa_star_web_uma_arquitetura_em_nuvem_para_obtencao_do_alinha
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2020_eneias_paulo_de_oliveira_pa_star_web_uma_arquitetura_em_nuvem_para_obtencao_do_alinha
 publication_index: 274
 publication_group: tcc

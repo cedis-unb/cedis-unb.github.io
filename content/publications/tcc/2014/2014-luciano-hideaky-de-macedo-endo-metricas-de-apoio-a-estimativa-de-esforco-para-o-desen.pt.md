@@ -5,6 +5,8 @@ date: '2014-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2014_luciano_hideaky_de_macedo_endo_metricas_de_apoio_a_estimativa_de_esforco_para_o_desen
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2014_luciano_hideaky_de_macedo_endo_metricas_de_apoio_a_estimativa_de_esforco_para_o_desen
 publication_index: 196
 publication_group: tcc

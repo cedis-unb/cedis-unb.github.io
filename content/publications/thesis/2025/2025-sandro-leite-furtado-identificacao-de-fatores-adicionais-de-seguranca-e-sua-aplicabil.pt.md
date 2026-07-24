@@ -5,6 +5,8 @@ date: '2025-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2025_sandro_leite_furtado_identificacao_de_fatores_adicionais_de_seguranca_e_sua_aplicabil
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2025_sandro_leite_furtado_identificacao_de_fatores_adicionais_de_seguranca_e_sua_aplicabil
 publication_index: 260
 publication_group: thesis

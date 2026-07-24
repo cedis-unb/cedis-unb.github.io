@@ -5,6 +5,8 @@ date: '2023-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2023_publio_pastrolin_cavalcante_avaliacao_da_mudanca_na_qualidade_dos_relatorios_com_a_ap
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2023_publio_pastrolin_cavalcante_avaliacao_da_mudanca_na_qualidade_dos_relatorios_com_a_ap
 publication_index: 59
 publication_group: thesis

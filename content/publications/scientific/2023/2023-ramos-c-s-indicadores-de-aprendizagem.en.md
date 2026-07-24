@@ -4,6 +4,8 @@ date: '2023-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2023_ramos_c_s_indicadores_de_aprendizagem
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2023_ramos_c_s_indicadores_de_aprendizagem
 publication_index: 46
 publication_group: scientific
@@ -18,15 +20,17 @@ authors:
 - FREITAS, S. A. A.
 authors_structured:
 - name: RAMOS, C. S.
+  id: ramos_j_c_c
+  url: /people/ramos_j_c_c
 - name: VIANNA, D. M.
+  id: vianna_d_m
+  url: /people/vianna_d_m
 - name: BESSA, E.
 - name: MORTARI, M. R.
 - name: FREITAS, S. A. A.
 tags:
 - learning_analytics
 - active_learning
-- sergio_freitas
-- cristiane_ramos
 advisors: []
 doi_isbn: 'DOI: 10.26512/plunb.442 | ISBN: 978-65-980478-0-1'
 source_title: ''

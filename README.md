@@ -26,7 +26,7 @@ Versões pinadas em [`.tool-versions`](.tool-versions) (compatíveis com [asdf](
 - **Hugo Extended** ≥ 0.164.0
 - **Node.js** ≥ 24.x (LTS recente)
 - **npm** ≥ 11.x
-- **Python 3** (opcional, apenas para `scripts/update_i18n.py`)
+- **Python 3** (necessário para validadores e geração de páginas de publicação)
 
 Instalação sugerida no macOS:
 
@@ -67,8 +67,14 @@ npm run build
 
 O comando:
 
-1. Compila o site com `hugo --minify --cleanDestinationDir` para o diretório `docs/` (configurado em `hugo.yaml` via `publishDir: docs`).
-2. Gera o índice de busca com `pagefind --site docs`.
+1. Regenera `content/publications/` a partir de `data/productions.yaml`.
+2. Compila o site com `hugo --minify --cleanDestinationDir` para o diretório `docs/` (configurado em `hugo.yaml` via `publishDir: docs`).
+3. Gera o índice de busca com `pagefind --site docs`.
+
+`data/productions.yaml` é a fonte canônica das publicações. Não edite
+`content/publications/**/*.md` manualmente; esses arquivos são
+reescritos por `scripts/build_publications.py` e checados com
+`npm run check:publications`.
 
 > **Nota:** o diretório `docs/` é versionado hoje. A auditoria 2026 (issue I01 em [`PLANO-AUDITORIA-2026.md`](PLANO-AUDITORIA-2026.md)) prevê que ele passe a ser gerado exclusivamente pelo CI. Até lá, sempre rode `npm run build` antes de commitar mudanças de layout/conteúdo se quiser que o `docs/` reflita a alteração.
 
@@ -84,9 +90,9 @@ O comando:
 │   ├── projects/         # Projetos de pesquisa
 │   ├── people/           # Fichas de pesquisadores e alumni
 │   ├── areas/            # Áreas de atuação (IA, gamification, etc.)
+│   ├── publications/     # Páginas geradas a partir de data/productions.yaml
 │   └── history.*.md      # Linha do tempo institucional
 ├── data/                 # Fontes de dados YAML (fontes canônicas — ver CONVENTIONS.md)
-│   ├── advisors.yaml     # Orientadores e suas áreas
 │   ├── areas.yaml        # Áreas de atuação
 │   ├── people.yaml       # Pessoas do CEDIS (incluindo orientandos e alumni)
 │   ├── productions.yaml  # Produção científica (artigos, defesas, registros)
@@ -114,9 +120,11 @@ O comando:
 | `npm start` | Roda Tailwind e Hugo server concorrentemente para desenvolvimento. |
 | `npm run watch:tw` | Só o watcher do Tailwind. |
 | `npm run watch:hugo` | Só o Hugo server. |
+| `npm run build:publications` | Regenera `content/publications/` a partir de `data/productions.yaml`. |
+| `npm run check:publications` | Falha se `content/publications/` estiver divergente de `data/productions.yaml`. |
 | `npm run build` | Build de produção + Pagefind. Saída em `docs/`. |
 | `npm run update-i18n` | Executa `scripts/update_i18n.py` (mantém sincronia entre `i18n/pt.yaml` e `i18n/en.yaml`). |
-| `npm test` | Placeholder — sem testes automatizados ainda (ver issue I01 do plano de auditoria). |
+| `npm test` | Checa publicações geradas, dados de conteúdo e paridade PT/EN. |
 
 ## Convenções e governança
 
@@ -143,7 +151,7 @@ Enquanto o CI de build (issue I01) não estiver ativo:
 
 1. Crie uma branch a partir de `main`.
 2. Faça a alteração respeitando `CONVENTIONS.md`.
-3. Rode `npm run build` e valide localmente (`npm start`, ou abrindo `docs/index.html` — mas prefira o server para hot reload).
+3. Rode `npm test` e `npm run build`; valide localmente (`npm start`, ou abrindo `docs/index.html` — mas prefira o server para hot reload).
 4. Abra um PR descrevendo a mudança e cite qual issue/eixo do plano ela endereça.
 
 ## Licença

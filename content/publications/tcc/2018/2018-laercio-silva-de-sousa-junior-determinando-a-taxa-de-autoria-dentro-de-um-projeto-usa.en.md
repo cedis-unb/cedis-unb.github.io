@@ -4,6 +4,8 @@ date: '2018-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2018_laercio_silva_de_sousa_junior_determinando_a_taxa_de_autoria_dentro_de_um_projeto_usa
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2018_laercio_silva_de_sousa_junior_determinando_a_taxa_de_autoria_dentro_de_um_projeto_usa
 publication_index: 122
 publication_group: tcc
@@ -14,7 +16,8 @@ authors:
 - Laércio Silva de Sousa Júnior
 authors_structured:
 - name: Laércio Silva de Sousa Júnior
-  id: laercio_silva_de_sousa_junior
+  id: silva_geovana_ramos_sousa
+  url: /people/silva_geovana_ramos_sousa
 tags:
 - software_architecture
 - digital_transformation

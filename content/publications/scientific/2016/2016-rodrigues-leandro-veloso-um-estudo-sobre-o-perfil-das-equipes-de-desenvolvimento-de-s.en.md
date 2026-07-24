@@ -4,6 +4,8 @@ date: '2016-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2016_rodrigues_leandro_veloso_um_estudo_sobre_o_perfil_das_equipes_de_desenvolvimento_de_s
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2016_rodrigues_leandro_veloso_um_estudo_sobre_o_perfil_das_equipes_de_desenvolvimento_de_s
 publication_index: 179
 publication_group: scientific
@@ -23,8 +25,6 @@ authors_structured:
   url: /people/fabiana_mendes
 tags:
 - teamwork
-- sergio_freitas
-- fabiana_mendes
 advisors: []
 doi_isbn: 10.5753/cbie.sbie.2016.159
 source_title: XXVII Simpósio Brasileiro de Informática na Educação

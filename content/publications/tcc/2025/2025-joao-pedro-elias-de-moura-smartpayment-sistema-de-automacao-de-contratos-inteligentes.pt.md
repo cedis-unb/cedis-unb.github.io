@@ -5,6 +5,8 @@ date: '2025-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2025_joao_pedro_elias_de_moura_smartpayment_sistema_de_automacao_de_contratos_inteligentes
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2025_joao_pedro_elias_de_moura_smartpayment_sistema_de_automacao_de_contratos_inteligentes
 publication_index: 15
 publication_group: tcc

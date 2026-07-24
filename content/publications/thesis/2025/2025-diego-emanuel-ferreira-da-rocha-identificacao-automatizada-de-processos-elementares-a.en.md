@@ -4,6 +4,8 @@ date: '2025-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2025_diego_emanuel_ferreira_da_rocha_identificacao_automatizada_de_processos_elementares_a
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2025_diego_emanuel_ferreira_da_rocha_identificacao_automatizada_de_processos_elementares_a
 publication_index: 6
 publication_group: thesis
@@ -14,7 +16,8 @@ authors:
 - Diego Emanuel Ferreira da Rocha
 authors_structured:
 - name: Diego Emanuel Ferreira da Rocha
-  id: diego_emanuel_ferreira_da_rocha
+  id: rocha_johan_m_g_da
+  url: /people/rocha_johan_m_g_da
 tags:
 - software_requirements
 - machine_learning

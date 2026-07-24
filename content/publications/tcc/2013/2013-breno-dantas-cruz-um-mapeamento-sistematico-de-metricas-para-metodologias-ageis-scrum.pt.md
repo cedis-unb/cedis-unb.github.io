@@ -5,6 +5,8 @@ date: '2013-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2013_breno_dantas_cruz_um_mapeamento_sistematico_de_metricas_para_metodologias_ageis_scrum
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2013_breno_dantas_cruz_um_mapeamento_sistematico_de_metricas_para_metodologias_ageis_scrum
 publication_index: 201
 publication_group: tcc

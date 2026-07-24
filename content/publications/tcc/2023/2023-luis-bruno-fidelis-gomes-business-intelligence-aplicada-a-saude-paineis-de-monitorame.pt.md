@@ -5,6 +5,8 @@ date: '2023-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2023_luis_bruno_fidelis_gomes_business_intelligence_aplicada_a_saude_paineis_de_monitorame
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2023_luis_bruno_fidelis_gomes_business_intelligence_aplicada_a_saude_paineis_de_monitorame
 publication_index: 229
 publication_group: tcc

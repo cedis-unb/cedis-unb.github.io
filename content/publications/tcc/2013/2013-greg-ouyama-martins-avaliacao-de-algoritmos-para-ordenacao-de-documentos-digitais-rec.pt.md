@@ -5,6 +5,8 @@ date: '2013-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2013_greg_ouyama_martins_avaliacao_de_algoritmos_para_ordenacao_de_documentos_digitais_rec
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2013_greg_ouyama_martins_avaliacao_de_algoritmos_para_ordenacao_de_documentos_digitais_rec
 publication_index: 208
 publication_group: tcc

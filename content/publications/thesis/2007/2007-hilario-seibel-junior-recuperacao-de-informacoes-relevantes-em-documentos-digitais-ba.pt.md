@@ -5,6 +5,8 @@ date: '2007-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2007_hilario_seibel_junior_recuperacao_de_informacoes_relevantes_em_documentos_digitais_ba
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2007_hilario_seibel_junior_recuperacao_de_informacoes_relevantes_em_documentos_digitais_ba
 publication_index: 217
 publication_group: thesis
@@ -15,7 +17,8 @@ authors:
 - Hilário Seibel Júnior
 authors_structured:
 - name: Hilário Seibel Júnior
-  id: hilario_seibel_junior
+  id: seibel_hilario
+  url: /people/seibel_hilario
 tags:
 - nlp
 - ai

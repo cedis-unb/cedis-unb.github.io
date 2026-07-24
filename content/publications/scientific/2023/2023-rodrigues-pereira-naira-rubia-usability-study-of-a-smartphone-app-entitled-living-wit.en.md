@@ -4,6 +4,8 @@ date: '2023-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2023_rodrigues_pereira_naira_rubia_usability_study_of_a_smartphone_app_entitled_living_wit
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2023_rodrigues_pereira_naira_rubia_usability_study_of_a_smartphone_app_entitled_living_wit
 publication_index: 47
 publication_group: scientific
@@ -18,15 +20,22 @@ authors:
 - BARBOSA FURIA, CRISTINA LEMOS
 authors_structured:
 - name: RODRIGUES PEREIRA, NAIRA RÚBIA
+  id: rodrigues_pereira_naira_rubia
+  url: /people/rodrigues_pereira_naira_rubia
 - name: CELESTE, LETÍCIA CORRÊA
+  id: celeste_leticia_correa
+  url: /people/celeste_leticia_correa
 - name: BARROS DE SALES, ANDRÉ
+  id: barros_de_sales_andre
+  url: /people/barros_de_sales_andre
 - name: Mendes, Fabiana Freitas
   id: fabiana_mendes
   url: /people/fabiana_mendes
 - name: BARBOSA FURIA, CRISTINA LEMOS
+  id: barbosa_furia_cristina_lemos
+  url: /people/barbosa_furia_cristina_lemos
 tags:
 - software_quality
-- fabiana_mendes
 advisors: []
 doi_isbn: 10.1016/j.heliyon.2023.e17572
 source_title: HELIYON

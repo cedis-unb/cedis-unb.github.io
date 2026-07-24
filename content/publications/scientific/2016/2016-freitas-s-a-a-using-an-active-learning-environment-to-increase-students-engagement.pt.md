@@ -4,6 +4,8 @@ date: '2016-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2016_freitas_s_a_a_using_an_active_learning_environment_to_increase_students_engagement
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2016_freitas_s_a_a_using_an_active_learning_environment_to_increase_students_engagement
 publication_index: 175
 publication_group: scientific
@@ -17,13 +19,13 @@ authors:
 authors_structured:
 - name: FREITAS, S. A. A.
 - name: SILVA, WANDER C. M. P.
+  id: silva_m_c
+  url: /people/silva_m_c
 - name: MARSICANO, GEORGE
   id: george_marsicano
   url: /people/george_marsicano
 tags:
 - active_learning
-- sergio_freitas
-- george_marsicano
 advisors: []
 doi_isbn: 10.1109/CSEET.2016.24
 source_title: 2016 IEEE 29th International Conference on Software Engineering Education

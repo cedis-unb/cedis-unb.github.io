@@ -4,6 +4,8 @@ date: '2026-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2026_luis_eduardo_carneiro_miranda_estocai_gerenciador_de_estoque_inteligente
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2026_luis_eduardo_carneiro_miranda_estocai_gerenciador_de_estoque_inteligente
 publication_index: 5
 publication_group: tcc

@@ -4,6 +4,8 @@ date: '2018-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2018_freitas_s_a_a_calculating_similarity_of_curriculum_lattes
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2018_freitas_s_a_a_calculating_similarity_of_curriculum_lattes
 publication_index: 140
 publication_group: scientific
@@ -20,7 +22,6 @@ authors_structured:
 - name: JESUS, D. A.
 tags:
 - learning_analytics
-- sergio_freitas
 advisors: []
 doi_isbn: 10.1109/tla.2018.8444396
 source_title: IEEE Latin America Transactions

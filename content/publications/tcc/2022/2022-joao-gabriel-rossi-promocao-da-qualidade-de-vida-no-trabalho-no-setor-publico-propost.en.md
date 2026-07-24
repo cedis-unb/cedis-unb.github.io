@@ -5,6 +5,8 @@ date: '2022-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2022_joao_gabriel_rossi_promocao_da_qualidade_de_vida_no_trabalho_no_setor_publico_propost
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2022_joao_gabriel_rossi_promocao_da_qualidade_de_vida_no_trabalho_no_setor_publico_propost
 publication_index: 70
 publication_group: tcc
@@ -18,7 +20,8 @@ authors_structured:
 - name: João Gabriel Rossi
   id: joao_gabriel_rossi
 - name: Paulo Vitor Coelho da Rocha
-  id: paulo_vitor_coelho_da_rocha
+  id: rocha_johan_m_g_da
+  url: /people/rocha_johan_m_g_da
 tags:
 - digital_transformation
 advisors:

@@ -5,6 +5,8 @@ date: '2022-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2022_moura_d_r_c_proposicao_de_melhoria_de_usabilidade_da_interacao_entre_usuario_e_sistem
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2022_moura_d_r_c_proposicao_de_melhoria_de_usabilidade_da_interacao_entre_usuario_e_sistem
 publication_index: 86
 publication_group: scientific
@@ -20,7 +22,6 @@ authors_structured:
 tags:
 - digital_transformation
 - soft_skills
-- george_marsicano
 advisors: []
 doi_isbn: 10.5748/19CONTECSI/PSE/ESD/7019
 source_title: 19th CONTECSI - International Conference on Information Systems and

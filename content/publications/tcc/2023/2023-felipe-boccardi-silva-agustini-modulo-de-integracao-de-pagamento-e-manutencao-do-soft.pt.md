@@ -4,6 +4,8 @@ date: '2023-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2023_felipe_boccardi_silva_agustini_modulo_de_integracao_de_pagamento_e_manutencao_do_soft
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2023_felipe_boccardi_silva_agustini_modulo_de_integracao_de_pagamento_e_manutencao_do_soft
 publication_index: 63
 publication_group: tcc

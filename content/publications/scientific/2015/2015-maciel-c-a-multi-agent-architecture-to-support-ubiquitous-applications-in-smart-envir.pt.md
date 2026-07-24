@@ -4,6 +4,8 @@ date: '2015-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2015_maciel_c_a_multi_agent_architecture_to_support_ubiquitous_applications_in_smart_envir
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2015_maciel_c_a_multi_agent_architecture_to_support_ubiquitous_applications_in_smart_envir
 publication_index: 190
 publication_group: scientific
@@ -18,13 +20,16 @@ authors:
 - SEGHROUCHNI, A.
 authors_structured:
 - name: MACIEL, C.
+  id: maciel_c
+  url: /people/maciel_c
 - name: SOUZA, P. C.
 - name: VITERBO, J.
 - name: MENDES, F. F.
 - name: SEGHROUCHNI, A.
+  id: seghrouchni_a
+  url: /people/seghrouchni_a
 tags:
 - ai
-- fabiana_mendes
 advisors: []
 doi_isbn: 10.1007/978-3-662-46241-6_9
 source_title: COMMUNICATIONS IN COMPUTER AND INFORMATION SCIENCE (PRINT)

@@ -4,6 +4,8 @@ date: '2011-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2011_einstein_oliveira_computacao_em_nuvem_reducao_de_custos_e_seguranca_da_informacao
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2011_einstein_oliveira_computacao_em_nuvem_reducao_de_custos_e_seguranca_da_informacao
 publication_index: 238
 publication_group: specialization
@@ -14,6 +16,8 @@ authors:
 - Einstein Oliveira
 authors_structured:
 - name: Einstein Oliveira
+  id: einstein_oliveira
+  url: /people/einstein_oliveira
 tags:
 - security
 advisors:

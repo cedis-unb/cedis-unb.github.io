@@ -5,6 +5,8 @@ date: '2018-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2018_poletto_j_a_r_identificacao_de_riscos_em_fiscalizacoes_de_obras_publicas_realizadas_p
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2018_poletto_j_a_r_identificacao_de_riscos_em_fiscalizacoes_de_obras_publicas_realizadas_p
 publication_index: 158
 publication_group: scientific
@@ -16,10 +18,11 @@ authors:
 - FREITAS, S. A. A.
 authors_structured:
 - name: POLETTO, J. A. R.
+  id: poletto_j_a_r
+  url: /people/poletto_j_a_r
 - name: FREITAS, S. A. A.
 tags:
 - digital_transformation
-- sergio_freitas
 advisors: []
 doi_isbn: '9788560365272'
 source_title: Governança em tecnologia de informação e comunicação para o setor público

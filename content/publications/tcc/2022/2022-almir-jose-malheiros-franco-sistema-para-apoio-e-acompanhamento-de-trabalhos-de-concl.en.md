@@ -4,6 +4,8 @@ date: '2022-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2022_almir_jose_malheiros_franco_sistema_para_apoio_e_acompanhamento_de_trabalhos_de_concl
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2022_almir_jose_malheiros_franco_sistema_para_apoio_e_acompanhamento_de_trabalhos_de_concl
 publication_index: 268
 publication_group: tcc

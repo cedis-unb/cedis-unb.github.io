@@ -4,6 +4,8 @@ date: '2021-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2021_a_sousa_e_silva_mateus_aspectos_de_qualidade_em_jogos_serios_digitais
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2021_a_sousa_e_silva_mateus_aspectos_de_qualidade_em_jogos_serios_digitais
 publication_index: 104
 publication_group: scientific
@@ -16,11 +18,14 @@ authors:
 - MENDES, F. F.
 authors_structured:
 - name: A. SOUSA E SILVA, MATEUS
+  id: a_sousa_e_silva_mateus
+  url: /people/a_sousa_e_silva_mateus
 - name: BARROS DE SALES, ANDRÉ
+  id: barros_de_sales_andre
+  url: /people/barros_de_sales_andre
 - name: MENDES, F. F.
 tags:
 - gamification
-- fabiana_mendes
 advisors: []
 doi_isbn: 10.22456/1679-1916.118428
 source_title: RENOTE. REVISTA NOVAS TECNOLOGIAS NA EDUCAÇÃO

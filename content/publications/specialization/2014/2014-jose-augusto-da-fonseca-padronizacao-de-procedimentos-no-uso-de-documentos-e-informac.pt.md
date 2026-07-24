@@ -6,6 +6,8 @@ date: '2014-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2014_jose_augusto_da_fonseca_padronizacao_de_procedimentos_no_uso_de_documentos_e_informac
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2014_jose_augusto_da_fonseca_padronizacao_de_procedimentos_no_uso_de_documentos_e_informac
 publication_index: 230
 publication_group: specialization
@@ -16,6 +18,8 @@ authors:
 - José Augusto da Fonseca
 authors_structured:
 - name: José Augusto da Fonseca
+  id: jose_augusto_da_fonseca
+  url: /people/jose_augusto_da_fonseca
 tags:
 - security
 advisors:

@@ -29,6 +29,7 @@ import datetime as dt
 import json
 import os
 import re
+import subprocess
 import sys
 from collections import defaultdict
 from pathlib import Path
@@ -509,8 +510,17 @@ def validate_generated_publication_pages() -> list[tuple[Path, dict]]:
     section_dir = CONTENT_DIR / "publications"
     if not section_dir.exists():
         return entries
+    sync = subprocess.run(
+        [sys.executable, "scripts/build_publications.py", "--check"],
+        cwd=ROOT,
+        text=True,
+        capture_output=True,
+    )
+    if sync.returncode != 0:
+        message = (sync.stdout or sync.stderr).strip().splitlines()[0] if (sync.stdout or sync.stderr).strip() else "content/publications divergente"
+        warn("generated", "content/publications", message)
     by_key: dict[str, set[str]] = defaultdict(set)
-    required = ("title", "date", "language", "translationKey")
+    required = ("title", "date", "language", "translationKey", "generated_by", "canonical_source")
     page_required = ("id", "year", "authors", "publication_group", "publication_type")
     for md_path in sorted(section_dir.rglob("*.md")):
         fm = parse_frontmatter(md_path)
@@ -520,6 +530,10 @@ def validate_generated_publication_pages() -> list[tuple[Path, dict]]:
         for req in required:
             if req not in fm:
                 warn("schema", rel, f"campo obrigatório ausente: '{req}'")
+        if fm.get("generated_by") != "scripts/build_publications.py":
+            warn("generated", rel, "generated_by inválido ou ausente")
+        if fm.get("canonical_source") != "data/productions.yaml":
+            warn("generated", rel, "canonical_source inválido ou ausente")
         if not md_path.name.startswith("_index."):
             for req in page_required:
                 if req not in fm:

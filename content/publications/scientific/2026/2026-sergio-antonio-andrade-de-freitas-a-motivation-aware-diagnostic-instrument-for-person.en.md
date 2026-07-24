@@ -5,6 +5,8 @@ date: '2026-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2026_sergio_antonio_andrade_de_freitas_a_motivation_aware_diagnostic_instrument_for_person
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2026_sergio_antonio_andrade_de_freitas_a_motivation_aware_diagnostic_instrument_for_person
 publication_index: 328
 publication_group: scientific
@@ -21,17 +23,18 @@ authors_structured:
   id: sergio_freitas
   url: /people/sergio_freitas
 - name: Daniel Rodrigues da Rocha
-  id: daniel_rodrigues_da_rocha
+  id: rocha_johan_m_g_da
+  url: /people/rocha_johan_m_g_da
 - name: Davi Rodrigues da Rocha
-  id: davi_rodrigues_da_rocha
+  id: rocha_johan_m_g_da
+  url: /people/rocha_johan_m_g_da
 - name: Mylena Angélica Silva Farias
-  id: mylena_angelica_silva_farias
+  id: mylena_faria
+  url: /people/mylena_faria
 tags:
 - gamification
 - learning_analytics
 - active_learning
-- sergio_freitas
-- mylena_faria
 - project_framework_preditivo_engajamento
 - project_alvorecer
 advisors: []
@@ -62,5 +65,3 @@ aliases:
 ## Abstract
 
 Paper accepted at the XXXVII Brazilian Symposium on Computers in Education (SBIE 2026, submission #27258), presenting a semester-start diagnostic instrument for personalized and gamified computing education, evaluated across three undergraduate courses (245 valid responses) with good internal consistency (α = 0.880). The instrument underpins the EduTrack and EduTrack AI products.
-
-This result derives from the **Feudal Dawn** gamification experience and is now part of the outputs linked to the 2025-2026 PIBIC project on a predictive framework for student engagement and performance in gamified learning environments.

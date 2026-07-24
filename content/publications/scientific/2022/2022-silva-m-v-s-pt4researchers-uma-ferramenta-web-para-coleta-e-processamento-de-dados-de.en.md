@@ -5,6 +5,8 @@ date: '2022-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2022_silva_m_v_s_pt4researchers_uma_ferramenta_web_para_coleta_e_processamento_de_dados_de
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2022_silva_m_v_s_pt4researchers_uma_ferramenta_web_para_coleta_e_processamento_de_dados_de
 publication_index: 103
 publication_group: scientific
@@ -23,7 +25,6 @@ authors_structured:
 - name: SALES, A. B.
 tags:
 - soft_skills
-- fabiana_mendes
 advisors: []
 doi_isbn: 10.5753/sbsi_estendido.2022.222493
 source_title: Wokshop de Iniciação Científica - Simpósio Brasileiro de Sistemas de

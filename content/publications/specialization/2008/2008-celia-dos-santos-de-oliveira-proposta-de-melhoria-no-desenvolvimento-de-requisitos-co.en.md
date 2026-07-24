@@ -4,6 +4,8 @@ date: '2008-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2008_celia_dos_santos_de_oliveira_proposta_de_melhoria_no_desenvolvimento_de_requisitos_co
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2008_celia_dos_santos_de_oliveira_proposta_de_melhoria_no_desenvolvimento_de_requisitos_co
 publication_index: 297
 publication_group: specialization
@@ -14,6 +16,8 @@ authors:
 - Célia dos Santos de Oliveira
 authors_structured:
 - name: Célia dos Santos de Oliveira
+  id: celia_dos_santos_de_oliveira
+  url: /people/celia_dos_santos_de_oliveira
 tags:
 - software_requirements
 - software_quality

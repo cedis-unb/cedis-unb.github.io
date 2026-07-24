@@ -5,6 +5,8 @@ date: '2010-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2010_antonio_henrique_braz_filho_proposta_de_melhoria_de_um_produto_de_software_apoiada_na
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2010_antonio_henrique_braz_filho_proposta_de_melhoria_de_um_produto_de_software_apoiada_na
 publication_index: 299
 publication_group: specialization
@@ -15,6 +17,8 @@ authors:
 - Antônio Henrique Braz Filho
 authors_structured:
 - name: Antônio Henrique Braz Filho
+  id: antonio_henrique_braz_filho
+  url: /people/antonio_henrique_braz_filho
 tags:
 - software_quality
 advisors:

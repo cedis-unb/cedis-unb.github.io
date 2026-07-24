@@ -4,6 +4,8 @@ date: '2016-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2016_karine_santos_valenca_metamodeling_applied_to_a_measurement_system
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2016_karine_santos_valenca_metamodeling_applied_to_a_measurement_system
 publication_index: 322
 publication_group: scientific
@@ -16,15 +18,16 @@ authors:
 - Ricardo Ajax Dias Kosloski
 authors_structured:
 - name: Karine Santos Valença
+  id: karine_santos_valenca
+  url: /people/karine_santos_valenca
 - name: Edna Dias Canedo
   id: edna_canedo
-  url: http://lattes.cnpq.br/9554285834432091
+  url: /people/edna_canedo
 - name: Ricardo Ajax Dias Kosloski
   id: ricardo_ajax
   url: /people/ricardo_ajax
 tags:
 - software_quality
-- ricardo_ajax
 advisors: []
 doi_isbn: ''
 source_title: 11th Iberian Conference on Information Systems and Technologies (CISTI)

@@ -5,6 +5,8 @@ date: '2020-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2020_chaves_j_t_f_natvi_a_framework_for_agile_software_development_service_oriented_archit
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2020_chaves_j_t_f_natvi_a_framework_for_agile_software_development_service_oriented_archit
 publication_index: 120
 publication_group: scientific
@@ -20,7 +22,6 @@ authors_structured:
 tags:
 - software_architecture
 - security
-- sergio_freitas
 advisors: []
 doi_isbn: 10.1007/978-3-030-58817-5_33
 source_title: 20th International Conference on Computational Science and its Applications

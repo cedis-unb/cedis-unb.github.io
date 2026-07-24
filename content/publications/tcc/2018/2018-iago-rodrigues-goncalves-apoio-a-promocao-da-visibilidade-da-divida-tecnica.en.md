@@ -4,6 +4,8 @@ date: '2018-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2018_iago_rodrigues_goncalves_apoio_a_promocao_da_visibilidade_da_divida_tecnica
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2018_iago_rodrigues_goncalves_apoio_a_promocao_da_visibilidade_da_divida_tecnica
 publication_index: 134
 publication_group: tcc

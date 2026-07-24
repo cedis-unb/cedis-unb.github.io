@@ -5,6 +5,8 @@ date: '2023-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2023_rafael_berto_pereira_da_definicao_de_orientacoes_de_engenharia_de_software_ao_uso_com
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2023_rafael_berto_pereira_da_definicao_de_orientacoes_de_engenharia_de_software_ao_uso_com
 publication_index: 228
 publication_group: tcc

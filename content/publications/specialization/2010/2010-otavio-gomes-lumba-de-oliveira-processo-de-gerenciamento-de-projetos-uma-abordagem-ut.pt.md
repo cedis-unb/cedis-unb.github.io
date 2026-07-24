@@ -5,6 +5,8 @@ date: '2010-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2010_otavio_gomes_lumba_de_oliveira_processo_de_gerenciamento_de_projetos_uma_abordagem_ut
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2010_otavio_gomes_lumba_de_oliveira_processo_de_gerenciamento_de_projetos_uma_abordagem_ut
 publication_index: 287
 publication_group: specialization
@@ -15,6 +17,8 @@ authors:
 - Otávio Gomes Lumba de Oliveira
 authors_structured:
 - name: Otávio Gomes Lumba de Oliveira
+  id: otavio_gomes_lumba_de_oliveira
+  url: /people/otavio_gomes_lumba_de_oliveira
 tags:
 - software_architecture
 advisors:

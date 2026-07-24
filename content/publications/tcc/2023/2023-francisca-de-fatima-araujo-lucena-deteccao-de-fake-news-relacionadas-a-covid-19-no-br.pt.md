@@ -4,6 +4,8 @@ date: '2023-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2023_francisca_de_fatima_araujo_lucena_deteccao_de_fake_news_relacionadas_a_covid_19_no_br
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2023_francisca_de_fatima_araujo_lucena_deteccao_de_fake_news_relacionadas_a_covid_19_no_br
 publication_index: 267
 publication_group: tcc
@@ -17,7 +19,8 @@ authors_structured:
 - name: Francisca de Fátima Araújo Lucena
   id: francisca_de_fatima_araujo_lucena
 - name: Mariana Guedes da Silva
-  id: mariana_guedes_da_silva
+  id: silva_rodrigo_m_s_da
+  url: /people/silva_rodrigo_m_s_da
 tags:
 - ai
 advisors:

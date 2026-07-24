@@ -5,6 +5,8 @@ date: '2019-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2019_james_taylor_faria_chaves_service_oriented_architecture_soa_agile_development_methods
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2019_james_taylor_faria_chaves_service_oriented_architecture_soa_agile_development_methods
 publication_index: 132
 publication_group: thesis

@@ -4,6 +4,8 @@ date: '2023-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2023_flausino_caio_gomes_llc_low_level_conteiner_no_linux
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2023_flausino_caio_gomes_llc_low_level_conteiner_no_linux
 publication_index: 79
 publication_group: scientific
@@ -18,12 +20,13 @@ authors_structured:
 - name: FLAUSINO, CAIO GOMES
   id: caio_gomes_flausino
 - name: QUEIROZ, DIEGO CÉSAR FLORÊNCIO DE
+  id: queiroz_diego_cesar_florencio_de
+  url: /people/queiroz_diego_cesar_florencio_de
 - name: Sundfeld, Daniel
   id: daniel_sundfeld
   url: /people/daniel_sundfeld
 tags:
 - hpc
-- daniel_sundfeld
 advisors: []
 doi_isbn: 10.5753/eradco.2023.234451
 source_title: Escola Regional de Alto Desempenho do Centro-Oeste

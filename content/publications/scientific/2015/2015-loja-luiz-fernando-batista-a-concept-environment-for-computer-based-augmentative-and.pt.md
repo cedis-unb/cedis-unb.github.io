@@ -5,6 +5,8 @@ date: '2015-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2015_loja_luiz_fernando_batista_a_concept_environment_for_computer_based_augmentative_and
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2015_loja_luiz_fernando_batista_a_concept_environment_for_computer_based_augmentative_and
 publication_index: 189
 publication_group: scientific
@@ -21,15 +23,22 @@ authors:
 authors_structured:
 - name: LOJA, LUIZ FERNANDO BATISTA
 - name: GOMIDE, RENATO DE SOUSA
+  id: gomide_renato_de_sousa
+  url: /people/gomide_renato_de_sousa
 - name: Mendes, Fabiana Freitas
   id: fabiana_mendes
   url: /people/fabiana_mendes
 - name: TEIXEIRA, RICARDO ANTONIO GONÇALVES
+  id: teixeira_ricardo_antonio_goncalves
+  url: /people/teixeira_ricardo_antonio_goncalves
 - name: LEMOS, RODRIGO PINTO
+  id: lemos_rodrigo_pinto
+  url: /people/lemos_rodrigo_pinto
 - name: FLÔRES, EDNA LÚCIA
+  id: flores_edna_lucia
+  url: /people/flores_edna_lucia
 tags:
 - soft_skills
-- fabiana_mendes
 advisors: []
 doi_isbn: 10.1590/2446-4740.0601
 source_title: Research on Biomedical Engineering

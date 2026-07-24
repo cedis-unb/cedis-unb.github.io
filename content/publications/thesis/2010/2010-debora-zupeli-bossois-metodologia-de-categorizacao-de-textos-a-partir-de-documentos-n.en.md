@@ -5,6 +5,8 @@ date: '2010-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2010_debora_zupeli_bossois_metodologia_de_categorizacao_de_textos_a_partir_de_documentos_n
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2010_debora_zupeli_bossois_metodologia_de_categorizacao_de_textos_a_partir_de_documentos_n
 publication_index: 210
 publication_group: thesis

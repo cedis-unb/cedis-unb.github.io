@@ -4,6 +4,8 @@ date: '2023-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2023_marcelo_victor_de_sousa_silva_formsgeo_um_aplicativo_para_pesquisas_sociais_com_geolo
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2023_marcelo_victor_de_sousa_silva_formsgeo_um_aplicativo_para_pesquisas_sociais_com_geolo
 publication_index: 73
 publication_group: tcc
@@ -15,7 +17,8 @@ authors:
 - Washington Bispo Arishita Júnior
 authors_structured:
 - name: Marcelo Victor de Sousa Silva
-  id: marcelo_victor_de_sousa_silva
+  id: silva_geovana_ramos_sousa
+  url: /people/silva_geovana_ramos_sousa
 - name: Washington Bispo Arishita Júnior
   id: washington_bispo_arishita_junior
 tags:

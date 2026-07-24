@@ -4,6 +4,8 @@ date: '2022-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2022_salleh_norsaremah_value_based_software_engineering_a_systematic_mapping_study
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2022_salleh_norsaremah_value_based_software_engineering_a_systematic_mapping_study
 publication_index: 82
 publication_group: scientific
@@ -23,10 +25,13 @@ authors_structured:
   id: fabiana_mendes
   url: /people/fabiana_mendes
 - name: LEKAMLAGE, CHARITHA
+  id: lekamlage_charitha
+  url: /people/lekamlage_charitha
 - name: PETERSEN, KAI
+  id: petersen_kai
+  url: /people/petersen_kai
 tags:
 - esw
-- fabiana_mendes
 advisors: []
 doi_isbn: 10.37190/e-Inf230106
 source_title: 'SSRN Electronic Journals: The English & Commonwealth Law Abstracts

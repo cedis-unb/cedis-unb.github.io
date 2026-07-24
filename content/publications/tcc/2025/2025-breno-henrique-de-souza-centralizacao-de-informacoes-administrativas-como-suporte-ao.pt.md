@@ -5,6 +5,8 @@ date: '2025-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2025_breno_henrique_de_souza_centralizacao_de_informacoes_administrativas_como_suporte_ao
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2025_breno_henrique_de_souza_centralizacao_de_informacoes_administrativas_como_suporte_ao
 publication_index: 10
 publication_group: tcc
@@ -16,7 +18,8 @@ authors:
 - Giulia Domingues de Alcantara
 authors_structured:
 - name: Breno Henrique de Souza
-  id: breno_henrique_de_souza
+  id: souza_renan_l_l_de
+  url: /people/souza_renan_l_l_de
 - name: Giulia Domingues de Alcantara
   id: giulia_domingues_de_alcantara
 tags:

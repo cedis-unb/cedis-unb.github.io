@@ -4,6 +4,8 @@ date: '2024-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2024_christian_fleury_alencar_siqueira_agromart_integracao_e_publicacao_do_aplicativo_para
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2024_christian_fleury_alencar_siqueira_agromart_integracao_e_publicacao_do_aplicativo_para
 publication_index: 27
 publication_group: tcc

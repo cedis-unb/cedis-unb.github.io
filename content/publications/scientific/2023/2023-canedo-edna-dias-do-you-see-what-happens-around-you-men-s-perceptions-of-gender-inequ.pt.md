@@ -5,6 +5,8 @@ date: '2023-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2023_canedo_edna_dias_do_you_see_what_happens_around_you_men_s_perceptions_of_gender_inequ
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2023_canedo_edna_dias_do_you_see_what_happens_around_you_men_s_perceptions_of_gender_inequ
 publication_index: 49
 publication_group: scientific
@@ -20,16 +22,21 @@ authors:
 authors_structured:
 - name: CANEDO, EDNA DIAS
   id: edna_canedo
-  url: http://lattes.cnpq.br/9554285834432091
+  url: /people/edna_canedo
 - name: SOARES, LARISSA
+  id: soares_larissa
+  url: /people/soares_larissa
 - name: SILVA, GEOVANA RAMOS SOUSA
+  id: silva_geovana_ramos_sousa
+  url: /people/silva_geovana_ramos_sousa
 - name: SANTOS, VERÔNICA SOUZA DOS
+  id: santos_veronica_souza_dos
+  url: /people/santos_veronica_souza_dos
 - name: Mendes, Fabiana Freitas
   id: fabiana_mendes
   url: /people/fabiana_mendes
 tags:
 - esw
-- fabiana_mendes
 advisors: []
 doi_isbn: 10.1145/3613372.3613394
 source_title: 'SBES 2023: XXXVII Brazilian Symposium on Software Engineering'

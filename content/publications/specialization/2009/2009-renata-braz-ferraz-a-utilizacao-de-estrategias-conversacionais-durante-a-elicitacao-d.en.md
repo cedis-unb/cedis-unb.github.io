@@ -4,6 +4,8 @@ date: '2009-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2009_renata_braz_ferraz_a_utilizacao_de_estrategias_conversacionais_durante_a_elicitacao_d
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2009_renata_braz_ferraz_a_utilizacao_de_estrategias_conversacionais_durante_a_elicitacao_d
 publication_index: 294
 publication_group: specialization
@@ -14,6 +16,8 @@ authors:
 - Renata Braz Ferraz
 authors_structured:
 - name: Renata Braz Ferraz
+  id: renata_braz_ferraz
+  url: /people/renata_braz_ferraz
 tags:
 - software_requirements
 - soft_skills

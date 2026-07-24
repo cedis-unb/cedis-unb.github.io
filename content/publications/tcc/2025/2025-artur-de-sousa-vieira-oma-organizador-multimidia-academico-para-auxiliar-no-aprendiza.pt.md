@@ -5,6 +5,8 @@ date: '2025-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2025_artur_de_sousa_vieira_oma_organizador_multimidia_academico_para_auxiliar_no_aprendiza
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2025_artur_de_sousa_vieira_oma_organizador_multimidia_academico_para_auxiliar_no_aprendiza
 publication_index: 17
 publication_group: tcc
@@ -18,7 +20,8 @@ authors_structured:
 - name: Artur de Sousa Vieira
   id: artur_de_sousa_vieira
 - name: Luíza Esteves dos Santos
-  id: luiza_esteves_dos_santos
+  id: santos_veronica_souza_dos
+  url: /people/santos_veronica_souza_dos
 tags:
 - education
 - software_architecture

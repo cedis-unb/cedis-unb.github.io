@@ -4,6 +4,8 @@ date: '2003-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2003_cristo_filho_a_m_interpretacao_do_futuro_do_preterito_em_narrativas
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2003_cristo_filho_a_m_interpretacao_do_futuro_do_preterito_em_narrativas
 publication_index: 221
 publication_group: scientific
@@ -17,7 +19,6 @@ authors_structured:
 - name: Cristo Filho, A. M.
 - name: FREITAS, S. A. A.
 tags:
-- sergio_freitas
 - ai
 - nlp
 advisors: []

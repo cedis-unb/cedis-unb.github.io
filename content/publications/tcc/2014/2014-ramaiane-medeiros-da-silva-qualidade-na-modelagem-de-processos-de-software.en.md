@@ -4,6 +4,8 @@ date: '2014-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2014_ramaiane_medeiros_da_silva_qualidade_na_modelagem_de_processos_de_software
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2014_ramaiane_medeiros_da_silva_qualidade_na_modelagem_de_processos_de_software
 publication_index: 205
 publication_group: tcc
@@ -14,7 +16,8 @@ authors:
 - Ramaiane Medeiros da Silva
 authors_structured:
 - name: Ramaiane Medeiros da Silva
-  id: ramaiane_medeiros_da_silva
+  id: silva_rodrigo_m_s_da
+  url: /people/silva_rodrigo_m_s_da
 tags:
 - software_quality
 advisors:

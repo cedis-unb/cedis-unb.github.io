@@ -4,6 +4,8 @@ date: '2012-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2012_rodrigo_cesar_santos_felisdorio_analise_de_risco_nos_planos_diretores_de_tecnologia_d
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2012_rodrigo_cesar_santos_felisdorio_analise_de_risco_nos_planos_diretores_de_tecnologia_d
 publication_index: 236
 publication_group: specialization
@@ -14,6 +16,8 @@ authors:
 - Rodrigo César Santos Felisdório
 authors_structured:
 - name: Rodrigo César Santos Felisdório
+  id: rodrigo_cesar_santos_felisdorio
+  url: /people/rodrigo_cesar_santos_felisdorio
 tags:
 - security
 advisors:

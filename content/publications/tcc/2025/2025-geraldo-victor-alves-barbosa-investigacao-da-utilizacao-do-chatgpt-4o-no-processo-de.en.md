@@ -5,6 +5,8 @@ date: '2025-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2025_geraldo_victor_alves_barbosa_investigacao_da_utilizacao_do_chatgpt_4o_no_processo_de
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2025_geraldo_victor_alves_barbosa_investigacao_da_utilizacao_do_chatgpt_4o_no_processo_de
 publication_index: 19
 publication_group: tcc

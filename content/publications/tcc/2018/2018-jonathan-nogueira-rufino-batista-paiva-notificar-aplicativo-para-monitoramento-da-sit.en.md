@@ -4,6 +4,8 @@ date: '2018-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2018_jonathan_nogueira_rufino_batista_paiva_notificar_aplicativo_para_monitoramento_da_sit
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2018_jonathan_nogueira_rufino_batista_paiva_notificar_aplicativo_para_monitoramento_da_sit
 publication_index: 135
 publication_group: tcc

@@ -4,6 +4,8 @@ date: '2016-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2016_wilker_mesquita_de_assuncao_ambiente_de_aprendizagem_gamificado_para_ensino_de_algori
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2016_wilker_mesquita_de_assuncao_ambiente_de_aprendizagem_gamificado_para_ensino_de_algori
 publication_index: 187
 publication_group: tcc

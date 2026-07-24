@@ -4,6 +4,8 @@ date: '2015-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2015_thiago_silveira_honorato_uma_proposta_de_metodo_de_escolha_para_sistemas_cmss
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2015_thiago_silveira_honorato_uma_proposta_de_metodo_de_escolha_para_sistemas_cmss
 publication_index: 197
 publication_group: tcc

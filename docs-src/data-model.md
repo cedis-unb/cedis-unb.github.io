@@ -169,6 +169,13 @@ Frontmatter opcional:
 
 ### Publicação — `data/productions.yaml`
 
+Fonte canônica: `data/productions.yaml`.
+
+Artefato derivado: `content/publications/**`. Esses arquivos são
+reescritos por `scripts/build_publications.py`, versionados apenas para
+servir Hugo/SEO/Pagefind e verificados por
+`scripts/build_publications.py --check`. Não editar manualmente.
+
 Cada item:
 - `type` — enum fechada.
 - `year` — inteiro ou string ISO.
@@ -181,6 +188,13 @@ Cada item:
 - `advisors[]` — slugs de orientadores.
 - `summary`, `book_title`, `journal_event`, `location`, `pages`,
   `publisher`, `doi_isbn`, `url` — metadados publicação.
+
+Frontmatter obrigatório nas páginas derivadas:
+- `generated_by: scripts/build_publications.py`
+- `canonical_source: data/productions.yaml`
+- `publication_index` — índice do item em `data/productions.yaml`.
+- `publication_group`, `publication_type`, `authors_structured`,
+  `bibtex`, `external_url`.
 
 ## Regras de propagação
 

@@ -4,6 +4,8 @@ date: '2026-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2026_luciano_ricardo_da_silva_junior_devdog_a_gamified_web_platform_for_teaching_code_smel
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2026_luciano_ricardo_da_silva_junior_devdog_a_gamified_web_platform_for_teaching_code_smel
 publication_index: 316
 publication_group: scientific
@@ -16,7 +18,8 @@ authors:
 - André Luiz Peron Martins Lanna
 authors_structured:
 - name: Luciano Ricardo da Silva Junior
-  id: luciano_ricardo_da_silva_junior
+  id: silva_rodrigo_m_s_da
+  url: /people/silva_rodrigo_m_s_da
 - name: Sergio Antônio Andrade de Freitas
   id: sergio_freitas
   url: /people/sergio_freitas
@@ -27,8 +30,6 @@ tags:
 - gamification
 - software_quality
 - software_architecture
-- sergio_freitas
-- andre_lanna
 - project_inovacao_digital_gamificacao
 advisors: []
 doi_isbn: ''

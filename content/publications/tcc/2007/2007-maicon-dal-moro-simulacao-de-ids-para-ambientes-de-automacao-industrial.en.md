@@ -4,6 +4,8 @@ date: '2007-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2007_maicon_dal_moro_simulacao_de_ids_para_ambientes_de_automacao_industrial
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2007_maicon_dal_moro_simulacao_de_ids_para_ambientes_de_automacao_industrial
 publication_index: 241
 publication_group: tcc

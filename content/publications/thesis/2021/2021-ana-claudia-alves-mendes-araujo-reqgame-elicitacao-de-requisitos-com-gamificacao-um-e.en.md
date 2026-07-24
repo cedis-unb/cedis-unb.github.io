@@ -5,6 +5,8 @@ date: '2021-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2021_ana_claudia_alves_mendes_araujo_reqgame_elicitacao_de_requisitos_com_gamificacao_um_e
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2021_ana_claudia_alves_mendes_araujo_reqgame_elicitacao_de_requisitos_com_gamificacao_um_e
 publication_index: 111
 publication_group: thesis

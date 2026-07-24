@@ -4,6 +4,8 @@ date: '2023-01-01T00:00:00-03:00'
 draft: false
 language: pt
 translationKey: publication_2023_italo_alves_guimaraes_implementacao_de_um_aplicativo_de_apoio_para_a_disciplina_gamif
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2023_italo_alves_guimaraes_implementacao_de_um_aplicativo_de_apoio_para_a_disciplina_gamif
 publication_index: 77
 publication_group: tcc

@@ -5,6 +5,8 @@ date: '2014-01-01T00:00:00-03:00'
 draft: false
 language: en
 translationKey: publication_2014_kleiber_damian_de_souza_avaliacao_da_maturidade_em_gestao_da_seguranca_da_informacao
+generated_by: scripts/build_publications.py
+canonical_source: data/productions.yaml
 id: publication_2014_kleiber_damian_de_souza_avaliacao_da_maturidade_em_gestao_da_seguranca_da_informacao
 publication_index: 283
 publication_group: specialization
@@ -15,6 +17,8 @@ authors:
 - Kleiber Damian de Souza
 authors_structured:
 - name: Kleiber Damian de Souza
+  id: kleiber_damian_de_souza
+  url: /people/kleiber_damian_de_souza
 tags:
 - security
 advisors:
