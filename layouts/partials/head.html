@@ -82,3 +82,13 @@
   {{ $over := $over | minify | fingerprint | resources.PostProcess }}
   <link rel="stylesheet" href="{{ $over.RelPermalink }}" integrity="{{ $over.Data.Integrity }}" />
 {{ end }}
+
+{{/* CSS específico do perfil de pesquisador — carregado após overrides
+     para ser a fonte única de #profile-content (ver PLANO-DESIGN.md, Fase 1). */}}
+{{ $profile := resources.Get "css/profile.css" | postCSS }}
+{{ if hugo.IsServer }}
+  <link rel="stylesheet" href="{{ $profile.RelPermalink }}" />
+{{ else }}
+  {{ $profile := $profile | minify | fingerprint | resources.PostProcess }}
+  <link rel="stylesheet" href="{{ $profile.RelPermalink }}" integrity="{{ $profile.Data.Integrity }}" />
+{{ end }}

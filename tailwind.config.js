@@ -61,6 +61,7 @@ module.exports = {
           300: '#F54E4A',
           400: '#F2120E',
           500: '#E82C0C', // DEFAULT
+          550: '#C5272F', // Variante usada em elementos de perfil (ver profile.css --brand-accent). Decisão de marca pendente entre 500 e 550.
           600: '#C1260A',
           700: '#9A1F08',
           800: '#731806',
