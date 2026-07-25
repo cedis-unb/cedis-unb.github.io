@@ -5,7 +5,7 @@ profile_level: card_with_page
 date: 2024-02-17T00:50:20-03:00
 weight: 37
 language: en
-featured_image: "../assets/images/featured/people_Edmilson Cosme.png"
+featured_image: "../assets/images/featured/people_Edmilson Cosme.webp"
 summary: Master in Applied Computing, University of Brasília
 authorimage: ../assets/images/global/author.webp
 categories: 

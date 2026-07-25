@@ -4,7 +4,7 @@ date: 2025-12-03T00:00:00-03:00
 draft: false
 weight: 500
 language: pt
-featured_image: "../assets/images/featured/area_Transformação Digital.png"
+featured_image: "../assets/images/featured/area_Transformação Digital.webp"
 summary: 'Dissertação defendida no PPCA/UnB propõe modelo para avaliar a maturidade DevOps de times bancários combinando métricas DORA, análise documental e triangulação sociotécnica.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

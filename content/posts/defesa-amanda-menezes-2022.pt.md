@@ -4,7 +4,7 @@ date: 2022-09-26T00:00:00-03:00
 draft: false
 weight: 500
 language: pt
-featured_image: "../assets/images/featured/area_Learning Analytics.png"
+featured_image: "../assets/images/featured/area_Learning Analytics.webp"
 summary: 'Amanda Emilly Muniz de Menezes e Letícia Karla Soares Rodrigues de Araújo defenderam na FCTE/UnB um TCC que identifica fatores acadêmicos, demográficos e de aprendizagem associados à evasão no ensino superior — e testa modelos preditivos.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

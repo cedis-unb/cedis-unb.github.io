@@ -4,7 +4,7 @@ date: 2025-02-25T00:00:00-03:00
 draft: false
 weight: 500
 language: pt
-featured_image: "../assets/images/featured/area_Arquitetura de Software.png"
+featured_image: "../assets/images/featured/area_Arquitetura de Software.webp"
 summary: 'Kalebe Cunha e Murilo Santana defenderam em fevereiro de 2025, na FCTE/UnB, um TCC que migra o AgroMart do modelo IaaS para AWS Lambda e testa a viabilidade de operar dentro do free tier — reduzindo o custo do agricultor.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

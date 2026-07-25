@@ -4,7 +4,7 @@ date: 2024-12-17T00:00:00-03:00
 draft: false
 weight: 500
 language: en
-featured_image: "../assets/images/featured/area_Transformação Digital.png"
+featured_image: "../assets/images/featured/area_Transformação Digital.webp"
 summary: 'Éber Junio Borges Moreira defended at UnB’s PPCA a dissertation tackling academic resource scheduling in higher education institutions, with a case study on UnB itself.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

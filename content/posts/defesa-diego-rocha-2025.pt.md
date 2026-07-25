@@ -4,7 +4,7 @@ date: 2025-10-23T00:00:00-03:00
 draft: false
 weight: 500
 language: pt
-featured_image: "../assets/images/featured/area_Engenharia de requisitos.png"
+featured_image: "../assets/images/featured/area_Engenharia de requisitos.webp"
 summary: 'Diego Emanuel Ferreira da Rocha defendeu no PPCA/UnB a etapa de qualificação da dissertação que automatiza a identificação de processos elementares a partir da análise de requisições HTTP — reduzindo a fricção do Simple Function Points.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

@@ -4,7 +4,7 @@ date: 2021-11-16T00:00:00-03:00
 draft: false
 weight: 500
 language: en
-featured_image: "../assets/images/featured/area_IA.png"
+featured_image: "../assets/images/featured/area_IA.webp"
 summary: 'Augusto Moreno Vilarins Cardoso da Silva and Ícaro Pereira de Oliveira defended at FCTE/UnB an undergraduate thesis designing a semi-automated process to extract usability signals from user comments on the Google Play Store.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

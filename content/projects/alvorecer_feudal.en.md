@@ -15,7 +15,7 @@ partners: []
 funding_agencies: []
 products: []
 publications: []
-featured_image: "../assets/images/featured/gamification_Alvorecer Feudal.png"
+featured_image: "../assets/images/featured/gamification_Alvorecer Feudal.webp"
 summary: Teaching project, "Software Development" course, an educational innovation promoted by CEDIS at the University of Brasília.
 authorimage: ../assets/images/global/author.webp
 categories: 

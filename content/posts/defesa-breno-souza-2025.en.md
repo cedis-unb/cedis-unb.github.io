@@ -4,7 +4,7 @@ date: 2025-07-23T00:00:00-03:00
 draft: false
 weight: 500
 language: en
-featured_image: "../assets/images/featured/area_IA.png"
+featured_image: "../assets/images/featured/area_IA.webp"
 summary: 'Breno Henrique de Souza and Giulia Domingues de Alcantara defended at FCTE/UnB an undergraduate thesis centralizing FCTE administrative information into an AI-supported chatbot.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

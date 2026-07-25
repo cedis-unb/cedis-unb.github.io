@@ -6,7 +6,7 @@ weight: 20
 language: en
 layout: collaborators
 description: "Active network and institutional memory of CEDIS — advisees, collaborators, alumni and external authors in the group's outputs."
-featured_image: "../assets/images/featured/people_Collaborators.png"
+featured_image: "../assets/images/featured/people_Collaborators.webp"
 authorimage: ../assets/images/global/author.webp
 ---
 <div class="space-y-10">

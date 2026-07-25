@@ -5,7 +5,7 @@ profile_level: researcher
 date: 2013-11-01T00:00:00-03:00
 weight: 20
 language: pt
-featured_image: "../assets/images/featured/people_George Marsicano.png"
+featured_image: "../assets/images/featured/people_George Marsicano.webp"
 summary: Professor Associado da Universidade de Brasília (UnB), atua no curso de Engenharia de Software e no Programa de Pós-Graduação em Computação Aplicada com foco em requisitos, aspectos humanos e educação em engenharia de software.
 contact:
   email: georgemarsicano@unb.br

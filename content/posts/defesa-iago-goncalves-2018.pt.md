@@ -4,7 +4,7 @@ date: 2018-07-06T00:00:00-03:00
 draft: false
 weight: 500
 language: pt
-featured_image: "../assets/images/featured/area_Software Quality.png"
+featured_image: "../assets/images/featured/area_Software Quality.webp"
 summary: 'Iago Rodrigues Gonçalves defendeu na FCTE/UnB um TCC que investiga formas de identificar, medir e comunicar a dívida técnica — um problema que ganha peso em metodologias ágeis focadas em entrega contínua.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

@@ -14,7 +14,7 @@ responsible:
 - george_marsicano
 publications: []
 weight: 35
-featured_image: "../assets/images/featured/area_IA.png"
+featured_image: "../assets/images/featured/area_IA.webp"
 summary: Produto tecnológico de 2025 que aplica aprendizado de máquina à predição não invasiva de euploidia em embriões humanos com base em dados morfocinéticos.
 authorimage: ../assets/images/global/author.webp
 categories:

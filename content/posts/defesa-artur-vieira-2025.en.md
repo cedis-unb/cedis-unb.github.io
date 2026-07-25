@@ -4,7 +4,7 @@ date: 2025-02-18T00:00:00-03:00
 draft: false
 weight: 500
 language: en
-featured_image: "../assets/images/featured/area_Aprendizagem Ativa.png"
+featured_image: "../assets/images/featured/area_Aprendizagem Ativa.webp"
 summary: 'Artur de Sousa Vieira and Luíza Esteves dos Santos defended at FCTE/UnB an undergraduate thesis introducing OMA — Academic Multimedia Organizer — aimed at Campus Gama engineering students.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

@@ -17,7 +17,7 @@ funding_agencies: []
 products: []
 publications: []
 summary: "Projeto em andamento baseado em design de serviços e experiência do usuário para transformação digital na SPU."
-featured_image: "../assets/images/featured/project_spux.png"
+featured_image: "../assets/images/featured/project_spux.webp"
 authorimage: ../assets/images/global/author.webp
 categories:
 - project

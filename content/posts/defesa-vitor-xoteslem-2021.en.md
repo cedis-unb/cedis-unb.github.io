@@ -4,7 +4,7 @@ date: 2021-10-25T00:00:00-03:00
 draft: false
 weight: 500
 language: en
-featured_image: "../assets/images/featured/area_Verificação e Validação.png"
+featured_image: "../assets/images/featured/area_Verificação e Validação.webp"
 summary: 'Vítor Cardoso Xoteslem defended at FCTE/UnB an undergraduate thesis crafting a testing strategy for the Doarti app — maintained by a geographically distributed volunteer team under pandemic-forced remote work.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

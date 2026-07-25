@@ -16,7 +16,7 @@ responsible:
 - george_marsicano
 publications: []
 weight: 14
-featured_image: "../assets/images/featured/produto_SAGA.png"
+featured_image: "../assets/images/featured/produto_SAGA.webp"
 summary: O Sistema de Acompanhamento e Apoio à Gestão Acadêmica - SAGA é uma ferramenta desenvolvida para auxiliar gestores acadêmicos no monitoramento de indicadores de cursos de graduação.
 authorimage: ../assets/images/global/author.webp
 categories:

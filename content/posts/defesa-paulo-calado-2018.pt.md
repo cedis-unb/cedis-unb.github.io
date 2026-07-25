@@ -4,7 +4,7 @@ date: 2018-08-15T00:00:00-03:00
 draft: false
 weight: 500
 language: pt
-featured_image: "../assets/images/featured/area_Gamificação.png"
+featured_image: "../assets/images/featured/area_Gamificação.webp"
 summary: 'Paulo Markes Rodrigues de Oliveira Calado defendeu na FCTE/UnB um TCC que desenvolve uma estratégia para identificar oportunidades de melhoria em aplicações gamificadas — atacando o problema de que o brilho inicial nem sempre se converte em uso prolongado.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

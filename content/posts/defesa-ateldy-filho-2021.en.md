@@ -4,7 +4,7 @@ date: 2021-05-20T00:00:00-03:00
 draft: false
 weight: 500
 language: en
-featured_image: "../assets/images/featured/area_Gamificação.png"
+featured_image: "../assets/images/featured/area_Gamificação.webp"
 summary: 'Ateldy Borges Brasil Filho defended at FCTE/UnB an undergraduate thesis evaluating gamification applied in a junior enterprise — an organization with rotating teams, short cycles, and high initial motivation.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

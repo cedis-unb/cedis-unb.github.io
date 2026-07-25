@@ -4,7 +4,7 @@ date: 2023-12-15T00:00:00-03:00
 draft: false
 weight: 500
 language: en
-featured_image: "../assets/images/featured/area_Transformação Digital.png"
+featured_image: "../assets/images/featured/area_Transformação Digital.webp"
 summary: 'Rafael Berto Pereira defended at FCTE/UnB an undergraduate thesis investigating the complementary use of ChatGPT in software engineering processes — through a case study with previously defined guidelines.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

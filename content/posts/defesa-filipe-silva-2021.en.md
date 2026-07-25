@@ -4,7 +4,7 @@ date: 2021-11-18T00:00:00-03:00
 draft: false
 weight: 500
 language: en
-featured_image: "../assets/images/featured/area_Arquitetura de Software.png"
+featured_image: "../assets/images/featured/area_Arquitetura de Software.webp"
 summary: 'Filipe Toyoshima Silva defended at FCTE/UnB an undergraduate thesis mapping how early-stage startups handle software maintenance — a phase dominated by scarce resources and high change volume.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

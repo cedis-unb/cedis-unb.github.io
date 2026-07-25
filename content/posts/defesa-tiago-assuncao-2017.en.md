@@ -4,7 +4,7 @@ date: 2017-12-21T00:00:00-03:00
 draft: false
 weight: 500
 language: en
-featured_image: "../assets/images/featured/area_Gamificação.png"
+featured_image: "../assets/images/featured/area_Gamificação.webp"
 summary: 'Tiago Ribeiro de Assunção defended at FCTE/UnB an undergraduate thesis applying gamification to the About Social Network to fight its weak spot: the network attracts new users easily but fails to retain them.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

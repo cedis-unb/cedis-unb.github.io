@@ -5,7 +5,7 @@ profile_level: researcher
 date: 2021-04-01T00:00:00-03:00
 weight: 60
 language: pt
-featured_image: "../assets/images/featured/people_Cristiane Ramos.png"
+featured_image: "../assets/images/featured/people_Cristiane Ramos.webp"
 summary: Professora Adjunta da Universidade de Brasília (UnB), atua no curso de Engenharia de Software em temas como qualidade de software, governo digital e educação em engenharia de software.
 contact:
   email: cristianeramos@unb.br

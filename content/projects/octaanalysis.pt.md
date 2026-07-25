@@ -18,7 +18,7 @@ funding_agencies: []
 products:
 - octaanalysis
 publications: []
-featured_image: "../assets/images/featured/octaanalysis-evaluations.png"
+featured_image: "../assets/images/featured/octaanalysis-evaluations.webp"
 summary: Projeto em andamento no CEDIS voltado à pesquisa, ao desenho, à validação e à evolução contínua de métodos e infraestruturas para gamificação e learning analytics, tendo o OctaAnalysis como produto resultante.
 authorimage: ../assets/images/global/author.webp
 categories:

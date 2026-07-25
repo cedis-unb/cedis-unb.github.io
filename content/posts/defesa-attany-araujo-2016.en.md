@@ -4,7 +4,7 @@ date: 2016-12-07T00:00:00-03:00
 draft: false
 weight: 500
 language: en
-featured_image: "../assets/images/featured/area_Team work and soft skills.png"
+featured_image: "../assets/images/featured/area_Team work and soft skills.webp"
 summary: 'Attany Nathaly Lima Araújo defended at FCTE/UnB an undergraduate thesis designing a process for building experience bases in R&D labs — a classic knowledge management challenge applied to software engineering.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

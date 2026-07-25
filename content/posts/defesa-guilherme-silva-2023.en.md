@@ -4,7 +4,7 @@ date: 2023-06-15T00:00:00-03:00
 draft: false
 weight: 500
 language: en
-featured_image: "../assets/images/featured/area_Software Quality.png"
+featured_image: "../assets/images/featured/area_Software Quality.webp"
 summary: 'Guilherme Daniel Fernandes da Silva and Lorrayne Alves Cardozo defended at FCTE/UnB an undergraduate thesis analyzing the relationship between software quality and population ageing using data from Brazil’s TIC Household survey.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

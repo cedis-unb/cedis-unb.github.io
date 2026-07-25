@@ -16,7 +16,7 @@ partners: []
 funding_agencies: []
 products: []
 publications: []
-featured_image: "../assets/images/featured/projeto_Laguna.png"
+featured_image: "../assets/images/featured/projeto_Laguna.webp"
 summary: Este projeto visa estender o processamento massivo de um lago de dados utilizando uma arquitetura em nuvem, utilizando a Amazon Web Services (AWS) como provedor.
 authorimage: ../assets/images/global/author.webp
 categories: 

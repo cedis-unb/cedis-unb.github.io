@@ -4,7 +4,7 @@ date: 2020-12-17T00:00:00-03:00
 draft: false
 weight: 500
 language: pt
-featured_image: "../assets/images/featured/area_Software Quality.png"
+featured_image: "../assets/images/featured/area_Software Quality.webp"
 summary: 'Sannya Santana de Arvelos defendeu na FCTE/UnB um TCC que propõe usar a análise de issues como base para identificar oportunidades de melhoria de processo de software.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

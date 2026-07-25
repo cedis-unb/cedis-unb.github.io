@@ -4,7 +4,7 @@ date: 2023-07-28T00:00:00-03:00
 draft: false
 weight: 500
 language: pt
-featured_image: "../assets/images/featured/area_Arquitetura de Software.png"
+featured_image: "../assets/images/featured/area_Arquitetura de Software.webp"
 summary: 'Felipe Boccardi Silva Agustini e Giovanna Borges Bottino defenderam na FCTE/UnB um TCC que integra um módulo de pagamento ao AgroMart e assume, no processo, o encargo da manutenção evolutiva da plataforma.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

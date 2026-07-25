@@ -15,7 +15,7 @@ partners: []
 funding_agencies: []
 products: []
 publications: []
-featured_image: "../assets/images/featured/gamification_Jornada IHC.png"
+featured_image: "../assets/images/featured/gamification_Jornada IHC.webp"
 summary: Teaching project, "Human-Computer Interaction" course, an educational innovation promoted by CEDIS in the Software Engineering course at the University of Brasília
 authorimage: ../assets/images/global/author.webp
 categories:

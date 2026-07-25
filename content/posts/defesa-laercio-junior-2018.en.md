@@ -4,7 +4,7 @@ date: 2018-12-11T00:00:00-03:00
 draft: false
 weight: 500
 language: en
-featured_image: "../assets/images/featured/area_Arquitetura de Software.png"
+featured_image: "../assets/images/featured/area_Arquitetura de Software.webp"
 summary: 'Laércio Silva de Sousa Júnior defended at FCTE/UnB an undergraduate thesis investigating ways to compute developer authorship rates inside Git-versioned projects.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

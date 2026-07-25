@@ -4,7 +4,7 @@ date: 2020-02-28T00:00:00-03:00
 draft: false
 weight: 500
 language: pt
-featured_image: "../assets/images/featured/area_Software Quality.png"
+featured_image: "../assets/images/featured/area_Software Quality.webp"
 summary: 'Ronyell Henrique dos Santos defendeu na FCTE/UnB um TCC que aplica operações de refatoração para aprimorar a variabilidade de sistemas de software — reduzindo o custo da manutenção ao longo do ciclo de vida.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

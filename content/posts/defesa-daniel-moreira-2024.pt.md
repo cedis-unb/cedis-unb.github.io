@@ -4,7 +4,7 @@ date: 2024-09-16T00:00:00-03:00
 draft: false
 weight: 500
 language: pt
-featured_image: "../assets/images/featured/area_Software Quality.png"
+featured_image: "../assets/images/featured/area_Software Quality.webp"
 summary: 'Daniel Barcelos Moreira e Juliana Pereira Valle Gonçalves defenderam na FCTE/UnB um TCC que avalia ferramentas usadas para medir a acessibilidade de sites web utilizados por pessoas idosas.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp
