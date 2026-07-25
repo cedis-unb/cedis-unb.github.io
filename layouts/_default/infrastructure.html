@@ -21,16 +21,16 @@
   <section class="border-b border-black/5 bg-[radial-gradient(circle_at_top_left,_rgba(197,39,47,0.14),_transparent_30%),linear-gradient(180deg,_#111827_0%,_#0f172a_100%)] text-white dark:border-white/10">
     <div class="mx-auto grid max-w-screen-xl gap-8 px-4 py-12 md:px-6 lg:grid-cols-[minmax(0,1.05fr)_minmax(18rem,0.95fr)] lg:items-center lg:px-8 lg:py-14">
       <div>
-        <span class="inline-flex rounded-full border border-white/15 bg-white/10 px-4 py-1 text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-white/72">{{ $eyebrow }}</span>
+        <span class="inline-flex rounded-full border border-white/15 bg-white/10 px-4 py-1 text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-white/75">{{ $eyebrow }}</span>
         <h1 class="mt-5 max-w-3xl text-4xl font-black tracking-tight md:text-5xl">{{ .Title }}</h1>
-        <p class="mt-4 max-w-2xl text-base leading-7 text-white/72 md:text-lg">{{ $intro }}</p>
+        <p class="mt-4 max-w-2xl text-base leading-7 text-white/75 md:text-lg">{{ $intro }}</p>
         {{ if $prefix }}
-        <div class="mt-6 max-w-2xl text-sm leading-7 text-white/68 [&_p]:m-0">{{ $prefix | safeHTML }}</div>
+        <div class="mt-6 max-w-2xl text-sm leading-7 text-white/70 [&_p]:m-0">{{ $prefix | safeHTML }}</div>
         {{ end }}
         {{ if gt (len $sections) 0 }}
         <div class="mt-8 flex flex-wrap gap-2">
           {{ range $sections }}
-          <a href="#{{ .anchor }}" class="inline-flex rounded-full border border-white/12 bg-white/[0.06] px-4 py-2 text-sm font-semibold text-white/84 transition-colors hover:bg-white/12 hover:text-white">{{ .title }}</a>
+          <a href="#{{ .anchor }}" class="inline-flex rounded-full border border-white/10 bg-white/[0.06] px-4 py-2 text-sm font-semibold text-white/85 transition-colors hover:bg-white/10 hover:text-white">{{ .title }}</a>
           {{ end }}
         </div>
         {{ end }}
@@ -56,7 +56,7 @@
       {{ range $sections }}
       <section id="{{ .anchor }}" class="rounded-[1.75rem] border border-black/5 bg-white/90 p-6 shadow-[0_18px_60px_rgba(15,23,42,0.08)] dark:border-white/10 dark:bg-white/[0.04]">
         <h2 class="text-2xl font-black tracking-tight text-gray-950 dark:text-white">{{ .title }}</h2>
-        <div class="mt-4 text-base leading-7 text-gray-600 dark:text-white/72 [&_ul]:m-0 [&_ul]:space-y-3 [&_ul]:pl-5 [&_li]:pl-1 [&_p]:m-0">{{ .body | safeHTML }}</div>
+        <div class="mt-4 text-base leading-7 text-gray-600 dark:text-white/75 [&_ul]:m-0 [&_ul]:space-y-3 [&_ul]:pl-5 [&_li]:pl-1 [&_p]:m-0">{{ .body | safeHTML }}</div>
       </section>
       {{ end }}
     </div>

@@ -25,13 +25,13 @@
 
 {{ if gt $total 0 }}
 <div>
-<p class="text-sm text-gray-600 dark:text-white/72">
+<p class="text-sm text-gray-600 dark:text-white/75">
   {{ if $isPt }}<strong>{{ $total }}</strong> autores externos em produções do CEDIS. Ordem alfabética.{{ else }}<strong>{{ $total }}</strong> external authors in CEDIS outputs. Alphabetical order.{{ end }}
 </p>
 <ul class="mt-4 grid gap-1 pl-0 sm:grid-cols-2 lg:grid-cols-3">
 {{ range $sorted }}
   <li class="flex items-baseline justify-between gap-2 border-b border-black/5 py-1 text-sm dark:border-white/10">
-    <a href="{{ .url }}" class="truncate text-gray-700 transition-colors hover:text-primary-600 dark:text-white/78 dark:hover:text-primary-200">{{ .name }}</a>
+    <a href="{{ .url }}" class="truncate text-gray-700 transition-colors hover:text-primary-600 dark:text-white/80 dark:hover:text-primary-200">{{ .name }}</a>
     <span class="shrink-0 text-xs text-gray-400 dark:text-white/60">{{ .count }} {{ $countLabel }}</span>
   </li>
 {{ end }}
