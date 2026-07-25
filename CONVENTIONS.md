@@ -1270,3 +1270,107 @@ Diretório: `content/areas/`. Cada área tem `.pt.md` e `.en.md`.
       contagem zero (§4.1, §4.B)
 - [ ] `hugo` roda sem erros
 - [ ] Commit + push
+
+---
+
+## 11. Design system: CSS, cores e imagens
+
+Consolidação em 2026-07-25 (ver `PLANO-DESIGN.md`). Estas convenções
+existem para evitar reintrodução do débito que motivou o plano.
+
+### 11.1 Organização de CSS
+
+- `assets/css/main.css` — entrada Tailwind (`@tailwind base/components/utilities`), não deve receber CSS específico de página.
+- `assets/css/style.css` — **compilado** pelo `tailwindcss` a partir de `main.css`. Não editar à mão.
+- `assets/css/overrides.css` — reservado a overrides globais contra o tema base e ao stylesheet de impressão (`@media print`). Não colocar CSS de página específica aqui.
+- `assets/css/profile.css` — regras exclusivas de `#profile-content` (perfil de pesquisador). Novo CSS de perfil vai aqui, não em `overrides.css`.
+- **CSS de nova página**: criar `assets/css/<page>.css` e carregar no `layouts/partials/head.html` seguindo o mesmo padrão de `profile.css`.
+
+Regras invioláveis:
+
+- **Sem `!important` novo.** O remanescente em `profile.css` é defensivo contra `.prose` (Tailwind Typography) e será reduzido incrementalmente quando cada bloco ganhar classe própria. Não adicionar novos.
+- **Aninhamento máximo:** 3 níveis de seletor. Se aparecer mais que isso, criar classe própria.
+- **Duplicação light/dark é proibida.** Toda cor que muda entre temas deve vir de custom property definida uma única vez em `:root` e sobrescrita em `.dark`. Nunca escrever pares de regras `.selector { color: X }` + `.dark .selector { color: Y }`.
+
+### 11.2 Paleta de cores
+
+Fonte única: `tailwind.config.js`.
+
+- **Uso em Tailwind (classes utilitárias):** sempre por token — `bg-accent-600`, `text-primary-800`, `border-neutral-200`, etc.
+- **Uso em CSS custom (files em `assets/css/`):** usar custom property `var(--brand-accent)` / `var(--brand-primary)` (definidas em `profile.css`) ou preferir `@apply` com o token Tailwind.
+- **Hex literal** só se justificado (ex.: `#1DB954` do Spotify em `overrides.css`) — nunca para cores da marca.
+
+O vermelho da marca tem duas formas em uso:
+
+- `accent.DEFAULT` = `#E82C0C` (paleta oficial Tailwind)
+- `accent.550` = `#C5272F` (variante usada em `#profile-content` via `var(--brand-accent)`)
+
+A decisão de qual dos dois é o vermelho canônico da marca está **pendente**. Enquanto isso:
+
+- `profile.css` encapsula o valor em uma única linha (`--brand-accent`).
+- Novos usos: preferir `accent.DEFAULT` (`#E82C0C`) por ser o valor oficial da paleta.
+- Migração dos ~100 usos inline atuais em `layouts/**/*.html` (em `bg-[rgba(197,39,47,...)]`) fica para futuro refactor. Não adicionar novos.
+
+### 11.3 Imagens
+
+- **Cards decorativos:** ≤ 200 KB, WebP q82–q85. Exemplo: `assets/images/featured/area_*.webp`.
+- **Hero / above-the-fold:** ≤ 400 KB, WebP + AVIF alternativo via `<picture>`.
+- **Logos e fotos com transparência:** PNG aceito quando ≤ 200 KB; caso contrário, considerar WebP lossless.
+- **Fora do above-the-fold:** sempre `loading="lazy"` e `decoding="async"`.
+- **Fonte:** todo asset colocado em `assets/images/` passa por Hugo Pipes (`resources.Get` + `.Resize/.Fit`). Não sirva PNG diretamente do output para o browser quando existe pipeline de conversão.
+
+Conversão em batch (exemplo do refactor 2026-07-25):
+
+```bash
+# WebP q82 para imagens decorativas
+for f in assets/images/featured/*.png; do
+  cwebp -quiet -q 82 "$f" -o "${f%.png}.webp"
+done
+# Depois, atualizar referências .png → .webp em content/ (script Python inline).
+```
+
+### 11.4 Tailwind arbitrary values e dark mode
+
+Quando um elemento usa `bg-[<gradient>]` com cores claras (ex.: `bg-[linear-gradient(180deg,_#f5f5f4_...,_#ffffff_...)]`), o Tailwind gera **apenas** `background-image`. Se o `dark:` associado for `dark:bg-gray-900` (só cor), o `background-image` claro continua renderizando em dark mode e vaza através de containers descendentes que tenham fundo semi-transparente.
+
+**Regra:** sempre que houver `bg-[<gradient>]` com cores claras, adicione:
+
+- `dark:bg-none` (para nulificar o background-image em dark mode e deixar `dark:bg-<cor>` funcionar), **ou**
+- `dark:bg-[<gradient-escuro>]` (equivalente escuro do gradiente).
+
+Exemplo:
+
+```html
+<!-- Errado — light gradient bleeda em dark -->
+<main class="bg-[linear-gradient(180deg,_#f5f5f4_...)] dark:bg-gray-900">
+
+<!-- Certo — dark:bg-none nulifica o image em dark -->
+<main class="bg-[linear-gradient(180deg,_#f5f5f4_...)] dark:bg-none dark:bg-gray-900">
+
+<!-- Também certo — dark equivalent -->
+<main class="bg-[linear-gradient(180deg,_#f5f5f4_...)] dark:bg-[linear-gradient(180deg,_#0f172a_...)]">
+```
+
+Templates atualmente conformes: `people/single.html`, `people/collaborators.html`, `people/derived.html`, `products/single.html`, `areas/single.html`, `projects/single.html`, `projects/list.html`, `_default/publications.html`, `_default/list.html`, `partials/news-term.html`.
+
+### 11.5 Classes Tailwind — validação silenciosa
+
+Tailwind **ignora silenciosamente** classes que não conhece — não emite warning. Um bug massivo (255 ocorrências) foi descoberto em julho/2026 causado por opacidades fora da escala padrão. Regras:
+
+- **Opacidade** só aceita valores em: `/0 /5 /10 /20 /25 /30 /40 /50 /55 /60 /65 /70 /75 /80 /85 /90 /95 /100`. Nunca use `/72`, `/78`, `/82`, `/88`, `/92` etc. — Tailwind gera nada e a classe é ignorada. Se precisar de opacidade exata, use arbitrary value: `text-white/[.72]`.
+- **`dark-mode:` é sintaxe Tailwind v1/v2**, não funciona em v3. Sempre use `dark:`.
+- **Breakpoints:** só `sm md lg xl 2xl` estão no config. Não use `xs:` (silenciosamente ignorado). Se precisar de `xs`, adicionar ao `screens` em `tailwind.config.js`.
+- **`text-md` não existe.** Use `text-base` (16px). Tamanhos válidos: `text-xs text-sm text-base text-lg text-xl text-2xl ...`.
+
+Como validar: rodar `python3 tmp/audit_v2.py` (extrai todas classes usadas em templates, compara contra CSS compilado, reporta ausentes).
+
+### 11.6 Boas práticas de HTML
+
+- `<button>` **sempre** com `type="button"` explícito (a menos que seja submit de form). Sem `type=`, browser assume `submit` que pode disparar form owner.
+- `<a>` sempre com `href` (mesmo `href="#"` é melhor que ausência).
+- `<img>` sempre com `alt` (vazio `alt=""` para decorativas).
+- `aria-label` nunca vazio.
+
+### 11.7 Componentes de card
+
+- Cards de perfil (`profile-project-card`, `researcher-highlights__*`, `featured-publications`) são gerados hoje via `printf` em `layouts/people/single.html`. Migração para partial parametrizável em `layouts/partials/card.html` está prevista mas ainda não concluída — não criar novos padrões de card sem alinhamento.
