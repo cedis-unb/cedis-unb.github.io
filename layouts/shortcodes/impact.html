@@ -85,18 +85,18 @@
     <h2 id="metrics-publications" class="text-2xl font-black tracking-tight text-gray-950 dark:text-white md:text-3xl">
       {{ i18n "ui_impact_pub_breakdown_title" }}
     </h2>
-    <p class="mt-3 max-w-2xl text-base leading-7 text-gray-600 dark:text-white/72">
+    <p class="mt-3 max-w-2xl text-base leading-7 text-gray-600 dark:text-white/75">
       {{ i18n "ui_impact_pub_breakdown_lead" }}
     </p>
     <div class="mt-6 overflow-hidden rounded-2xl border border-black/5 bg-white/85 shadow-[0_18px_50px_rgba(15,23,42,0.06)] dark:border-white/10 dark:bg-white/[0.04]">
       <table class="w-full text-left">
-        <thead class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-gray-500 dark:text-white/72">
+        <thead class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-gray-500 dark:text-white/75">
           <tr>
             <th class="px-5 py-3">{{ i18n "ui_impact_pub_type" }}</th>
             <th class="px-5 py-3 text-right">{{ i18n "ui_impact_pub_count" }}</th>
           </tr>
         </thead>
-        <tbody class="text-sm text-gray-700 dark:text-white/78">
+        <tbody class="text-sm text-gray-700 dark:text-white/80">
           {{ range $type, $count := $pubByType }}
           <tr class="border-t border-black/5 dark:border-white/10">
             <td class="px-5 py-3">
@@ -118,7 +118,7 @@
     <h2 id="metrics-supervisions" class="text-2xl font-black tracking-tight text-gray-950 dark:text-white md:text-3xl">
       {{ i18n "ui_impact_supervision_title" }}
     </h2>
-    <p class="mt-3 max-w-2xl text-base leading-7 text-gray-600 dark:text-white/72">
+    <p class="mt-3 max-w-2xl text-base leading-7 text-gray-600 dark:text-white/75">
       {{ i18n "ui_impact_supervision_lead" }}
     </p>
     <div class="mt-6 grid grid-cols-2 gap-3 md:grid-cols-3 md:gap-4">
@@ -127,7 +127,7 @@
       {{ if gt $count 0 }}
       <div class="rounded-2xl border border-black/5 bg-white/85 px-4 py-5 shadow-sm dark:border-white/10 dark:bg-white/[0.04]">
         <div class="text-2xl font-black tracking-tight text-gray-950 dark:text-white md:text-3xl">{{ $count }}</div>
-        <div class="mt-2 text-sm font-semibold text-slate-700 dark:text-white/72">{{ . | i18n }}</div>
+        <div class="mt-2 text-sm font-semibold text-slate-700 dark:text-white/75">{{ . | i18n }}</div>
       </div>
       {{ end }}
       {{ end }}

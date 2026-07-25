@@ -16,23 +16,23 @@
   <section class="border-b border-slate-200/80 bg-slate-950 text-white dark:border-white/10">
     <div class="mx-auto max-w-screen-xl px-4 py-10 md:px-6 lg:px-8 lg:py-14">
       {{ partial "breadcrumbs.html" . }}
-      <a href="{{ "/publications/" | relLangURL }}" class="inline-flex rounded-full border border-white/15 bg-white/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-white/82 transition-colors hover:bg-white/15">
+      <a href="{{ "/publications/" | relLangURL }}" class="inline-flex rounded-full border border-white/15 bg-white/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-white/80 transition-colors hover:bg-white/15">
         {{ cond $isPt "Publicações" "Publications" }}
       </a>
-      <div class="mt-5 flex flex-wrap gap-2 text-xs font-semibold uppercase tracking-[0.18em] text-white/64">
+      <div class="mt-5 flex flex-wrap gap-2 text-xs font-semibold uppercase tracking-[0.18em] text-white/65">
         <span>{{ .Params.year }}</span>
         <span aria-hidden="true">·</span>
         <span>{{ .Params.publication_type }}</span>
       </div>
       <h1 class="mt-4 max-w-5xl text-4xl font-black leading-tight md:text-5xl">{{ .Title }}</h1>
       {{ with .Params.summary }}
-      <p class="mt-5 max-w-3xl text-base leading-7 text-white/72 md:text-lg">{{ . }}</p>
+      <p class="mt-5 max-w-3xl text-base leading-7 text-white/75 md:text-lg">{{ . }}</p>
       {{ end }}
     </div>
   </section>
 
   <section class="mx-auto grid max-w-screen-xl gap-8 px-4 py-10 md:px-6 lg:grid-cols-[minmax(0,1fr)_20rem] lg:px-8 lg:py-14">
-    <div class="min-w-0 rounded-[1.75rem] border border-slate-200/80 bg-white/92 p-6 shadow-[0_18px_60px_rgba(15,23,42,0.08)] dark:border-white/10 dark:bg-white/[0.04] md:p-8">
+    <div class="min-w-0 rounded-[1.75rem] border border-slate-200/80 bg-white/90 p-6 shadow-[0_18px_60px_rgba(15,23,42,0.08)] dark:border-white/10 dark:bg-white/[0.04] md:p-8">
       <div class="prose prose-zinc max-w-none prose-headings:font-black prose-p:leading-8 prose-a:text-primary-700 hover:prose-a:text-primary-600 dark:prose-invert dark:prose-a:text-primary-200">
         {{ .Content }}
       </div>
@@ -51,33 +51,33 @@
     </div>
 
     <aside class="space-y-5 lg:sticky lg:top-24 lg:self-start">
-      <div class="rounded-[1.5rem] border border-slate-200/80 bg-white/92 p-5 shadow-[0_18px_50px_rgba(15,23,42,0.08)] dark:border-white/10 dark:bg-white/[0.04]">
-        <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-slate-500 dark:text-white/72">{{ cond $isPt "Detalhes" "Details" }}</div>
+      <div class="rounded-[1.5rem] border border-slate-200/80 bg-white/90 p-5 shadow-[0_18px_50px_rgba(15,23,42,0.08)] dark:border-white/10 dark:bg-white/[0.04]">
+        <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-slate-500 dark:text-white/75">{{ cond $isPt "Detalhes" "Details" }}</div>
         <dl class="mt-4 space-y-3 text-sm">
-          <div><dt class="font-semibold">{{ cond $isPt "Ano" "Year" }}</dt><dd class="text-slate-600 dark:text-white/64">{{ .Params.year }}</dd></div>
-          <div><dt class="font-semibold">{{ cond $isPt "Tipo" "Type" }}</dt><dd class="text-slate-600 dark:text-white/64">{{ .Params.publication_type }}</dd></div>
-          {{ with .Params.source_title }}{{ if . }}<div><dt class="font-semibold">{{ cond $isPt "Fonte" "Source" }}</dt><dd class="text-slate-600 dark:text-white/64">{{ . }}</dd></div>{{ end }}{{ end }}
-          {{ with .Params.doi_isbn }}{{ if . }}<div><dt class="font-semibold">DOI/ISBN</dt><dd class="break-words text-slate-600 dark:text-white/64">{{ . }}</dd></div>{{ end }}{{ end }}
+          <div><dt class="font-semibold">{{ cond $isPt "Ano" "Year" }}</dt><dd class="text-slate-600 dark:text-white/65">{{ .Params.year }}</dd></div>
+          <div><dt class="font-semibold">{{ cond $isPt "Tipo" "Type" }}</dt><dd class="text-slate-600 dark:text-white/65">{{ .Params.publication_type }}</dd></div>
+          {{ with .Params.source_title }}{{ if . }}<div><dt class="font-semibold">{{ cond $isPt "Fonte" "Source" }}</dt><dd class="text-slate-600 dark:text-white/65">{{ . }}</dd></div>{{ end }}{{ end }}
+          {{ with .Params.doi_isbn }}{{ if . }}<div><dt class="font-semibold">DOI/ISBN</dt><dd class="break-words text-slate-600 dark:text-white/65">{{ . }}</dd></div>{{ end }}{{ end }}
         </dl>
       </div>
 
       {{ if gt (len $authors) 0 }}
-      <div class="rounded-[1.5rem] border border-slate-200/80 bg-white/92 p-5 shadow-[0_18px_50px_rgba(15,23,42,0.08)] dark:border-white/10 dark:bg-white/[0.04]">
-        <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-slate-500 dark:text-white/72">{{ cond $isPt "Autores" "Authors" }}</div>
+      <div class="rounded-[1.5rem] border border-slate-200/80 bg-white/90 p-5 shadow-[0_18px_50px_rgba(15,23,42,0.08)] dark:border-white/10 dark:bg-white/[0.04]">
+        <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-slate-500 dark:text-white/75">{{ cond $isPt "Autores" "Authors" }}</div>
         <div class="mt-4 space-y-2 text-sm">
           {{ range $authors }}
             {{ if .url }}
-            <a href="{{ .url | relLangURL }}" class="block rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 font-semibold text-slate-800 transition-colors hover:border-primary-300 hover:text-primary-700 dark:border-white/10 dark:bg-white/[0.05] dark:text-white/78 dark:hover:text-primary-100">{{ .name }}</a>
+            <a href="{{ .url | relLangURL }}" class="block rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 font-semibold text-slate-800 transition-colors hover:border-primary-300 hover:text-primary-700 dark:border-white/10 dark:bg-white/[0.05] dark:text-white/80 dark:hover:text-primary-100">{{ .name }}</a>
             {{ else }}
-            <div class="rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 font-semibold text-slate-800 dark:border-white/10 dark:bg-white/[0.05] dark:text-white/78">{{ .name }}</div>
+            <div class="rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 font-semibold text-slate-800 dark:border-white/10 dark:bg-white/[0.05] dark:text-white/80">{{ .name }}</div>
             {{ end }}
           {{ end }}
         </div>
       </div>
       {{ end }}
 
-      <div class="rounded-[1.5rem] border border-slate-200/80 bg-white/92 p-5 shadow-[0_18px_50px_rgba(15,23,42,0.08)] dark:border-white/10 dark:bg-white/[0.04]">
-        <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-slate-500 dark:text-white/72">{{ cond $isPt "Recursos" "Resources" }}</div>
+      <div class="rounded-[1.5rem] border border-slate-200/80 bg-white/90 p-5 shadow-[0_18px_50px_rgba(15,23,42,0.08)] dark:border-white/10 dark:bg-white/[0.04]">
+        <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-slate-500 dark:text-white/75">{{ cond $isPt "Recursos" "Resources" }}</div>
         <div class="mt-4 space-y-2 text-sm">
           {{ with .Params.external_url }}{{ if . }}<a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="block rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 font-semibold text-primary-700 dark:border-white/10 dark:bg-white/[0.05] dark:text-primary-100">{{ cond $isPt "Acessar publicação" "Open publication" }}</a>{{ end }}{{ end }}
           {{ with .Params.spotify_podcast }}{{ if . }}<a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="block rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 font-semibold text-primary-700 dark:border-white/10 dark:bg-white/[0.05] dark:text-primary-100">Podcast</a>{{ end }}{{ end }}

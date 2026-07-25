@@ -15,7 +15,7 @@
                     <div class="text-3xl font-black tracking-tight text-gray-100 transition-colors group-hover:text-white/70">
                         {{ .Site.Title }}
                     </div>
-                    <span class="hidden text-[0.65rem] font-medium uppercase tracking-[0.28em] text-white/72 md:block">
+                    <span class="hidden text-[0.65rem] font-medium uppercase tracking-[0.28em] text-white/75 md:block">
                         Research, Software, AI
                     </span>
                 </div>
@@ -25,7 +25,7 @@
                     {{ range site.Menus.main }}
                     {{ if (eq "complexdropdown" .Pre) }}
                     <div @click.away="open = false" class="relative" x-data="{ open: false }">
-                        <button @click="open = !open" :aria-expanded="open" aria-haspopup="true"
+                        <button type="button" @click="open = !open" :aria-expanded="open" aria-haspopup="true"
                                 class="flex items-center rounded-full px-4 py-2 text-sm font-semibold text-gray-100 transition-colors hover:bg-white/10 hover:text-white focus:bg-primary-600 focus:text-white focus:outline-none focus:ring-2 focus:ring-primary-300 focus:ring-offset-2 focus:ring-offset-gray-950">
                             <span>{{ .Name }}</span>
                             <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}"
@@ -60,7 +60,7 @@
                     </div>
                     {{ else if (eq "dropdown" .Pre) }}
                     <div @click.away="open = false" class="relative" x-data="{ open: false }">
-                        <button @click="open = !open" :aria-expanded="open" aria-haspopup="true"
+                        <button type="button" @click="open = !open" :aria-expanded="open" aria-haspopup="true"
                                 class="flex items-center rounded-full px-4 py-2 text-sm font-semibold text-gray-100 transition-colors hover:bg-white/10 hover:text-white focus:bg-primary-600 focus:text-white focus:outline-none focus:ring-2 focus:ring-primary-300 focus:ring-offset-2 focus:ring-offset-gray-950">
                             <span>{{ .Name }}</span>
                             <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}"
@@ -94,7 +94,7 @@
                     {{ end }}
                 </div>
             </div>
-            <button class="rounded-2xl border border-white/10 bg-white/[0.04] p-3 text-white transition-colors hover:bg-white/10 md:hidden focus:outline-none focus:ring-2 focus:ring-primary-300 focus:ring-offset-2 focus:ring-offset-gray-950" @click="open = !open" role="navigation" :aria-expanded="open" aria-label="Main" aria-controls="menuItems">
+            <button type="button" class="rounded-2xl border border-white/10 bg-white/[0.04] p-3 text-white transition-colors hover:bg-white/10 md:hidden focus:outline-none focus:ring-2 focus:ring-primary-300 focus:ring-offset-2 focus:ring-offset-gray-950" @click="open = !open" role="navigation" :aria-expanded="open" aria-label="Main" aria-controls="menuItems">
                 <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
                     <path x-show="!open" fill-rule="evenodd"
                           d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
@@ -116,7 +116,7 @@
 
                     {{ if not .Site.Params.Disable_theme_toggle }}
                     <button id="theme-toggle" type="button"
-                            class="xs:hidden max-w-5 rounded-full p-2 text-sm text-gray-300 transition-colors hover:bg-white/10 hover:text-white focus:outline-none focus:ring-2 focus:ring-white/30 dark:text-gray-400">
+                            class="max-w-5 rounded-full p-2 text-sm text-gray-300 transition-colors hover:bg-white/10 hover:text-white focus:outline-none focus:ring-2 focus:ring-white/30 dark:text-gray-400">
                         <svg id="theme-toggle-dark-icon" class="hidden h-5 w-5" fill="currentColor" viewBox="0 0 20 20"
                              xmlns="http://www.w3.org/2000/svg">
                             <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z">
@@ -144,8 +144,8 @@
               {{ range site.Menus.main }}
             {{ if (eq "complexdropdown" .Pre) }}
             <div @click.away="open = false" class="relative" x-data="{ open: false }">
-                <button @click="open = !open" :aria-expanded="open" aria-haspopup="true"
-                        class="flex w-full flex-row items-center justify-between rounded-2xl border border-white/5 bg-white/[0.04] px-4 py-3 text-sm font-semibold text-left text-gray-100 transition-colors dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:focus:bg-gray-600 dark-mode:hover:bg-gray-600 hover:bg-white/10 hover:text-white focus:bg-primary-600 focus:text-white focus:outline-none focus:ring-2 focus:ring-primary-300 focus:ring-offset-2 focus:ring-offset-gray-950">
+                <button type="button" @click="open = !open" :aria-expanded="open" aria-haspopup="true"
+                        class="flex w-full flex-row items-center justify-between rounded-2xl border border-white/5 bg-white/[0.04] px-4 py-3 text-sm font-semibold text-left text-gray-100 transition-colors dark:focus:text-white dark:hover:text-white dark:focus:bg-gray-600 dark:hover:bg-gray-600 hover:bg-white/10 hover:text-white focus:bg-primary-600 focus:text-white focus:outline-none focus:ring-2 focus:ring-primary-300 focus:ring-offset-2 focus:ring-offset-gray-950">
                     <span>{{ .Name }}</span>
                     <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}"
                          class="ml-3 h-4 w-4 transition-transform duration-200">
@@ -179,7 +179,7 @@
             </div>
             {{ else if (eq "dropdown" .Pre) }}
             <div @click.away="open = false" class="relative" x-data="{ open: false }">
-                <button @click="open = !open" :aria-expanded="open" aria-haspopup="true"
+                <button type="button" @click="open = !open" :aria-expanded="open" aria-haspopup="true"
                         class="flex w-full flex-row items-center justify-between rounded-2xl border border-white/5 bg-white/[0.04] px-4 py-3 text-sm font-semibold text-left text-gray-100 transition-colors hover:bg-white/10 hover:text-white focus:bg-primary-600 focus:text-white focus:outline-none focus:ring-2 focus:ring-primary-300 focus:ring-offset-2 focus:ring-offset-gray-950">
                     <span>{{ .Name }}</span>
                     <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}"
@@ -224,7 +224,7 @@
 
                 {{ if not .Site.Params.Disable_theme_toggle }}
                 <button id="theme-toggle" type="button"
-                        class="xs:hidden max-w-5 rounded-full p-2 text-sm text-gray-300 transition-colors hover:bg-white/10 hover:text-white focus:outline-none focus:ring-2 focus:ring-white/30 dark:text-gray-400">
+                        class="max-w-5 rounded-full p-2 text-sm text-gray-300 transition-colors hover:bg-white/10 hover:text-white focus:outline-none focus:ring-2 focus:ring-white/30 dark:text-gray-400">
                     <svg id="theme-toggle-dark-icon" class="hidden h-5 w-5" fill="currentColor" viewBox="0 0 20 20"
                          xmlns="http://www.w3.org/2000/svg">
                         <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z">

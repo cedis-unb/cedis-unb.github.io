@@ -2,7 +2,7 @@
 {{ $page := $item.page }}
 {{ $isPt := .isPt }}
 {{ $audienceJoin := delimit ($page.Params.audience | default slice) "|" }}
-<article x-show="audience === '' || '|{{ $audienceJoin }}|'.includes('|' + audience + '|')" class="rounded-[1.5rem] border border-slate-200 bg-white/92 p-5 shadow-sm dark:border-white/10 dark:bg-white/[0.04]">
+<article x-show="audience === '' || '|{{ $audienceJoin }}|'.includes('|' + audience + '|')" class="rounded-[1.5rem] border border-slate-200 bg-white/90 p-5 shadow-sm dark:border-white/10 dark:bg-white/[0.04]">
   <div class="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
     <div class="min-w-0">
       <div class="flex flex-wrap gap-2 text-xs font-semibold uppercase tracking-[0.16em] text-slate-500 dark:text-white/60">
