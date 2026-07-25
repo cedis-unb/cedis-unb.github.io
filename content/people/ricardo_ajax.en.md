@@ -5,7 +5,7 @@ profile_level: researcher
 date: 2014-11-01T00:00:00-03:00
 weight: 40
 language: en
-featured_image: "../assets/images/featured/people_Ricardo Ajax.png"
+featured_image: "../assets/images/featured/people_Ricardo Ajax.webp"
 summary: Adjunct Professor at the University of Brasília (UnB), working in the undergraduate Software Engineering program on software engineering, software metrics, testing, and software quality.
 contact:
   email: ricardoajax@unb.br

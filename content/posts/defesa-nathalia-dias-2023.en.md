@@ -4,7 +4,7 @@ date: 2023-03-04T00:00:00-03:00
 draft: false
 weight: 500
 language: en
-featured_image: "../assets/images/featured/area_Software Quality.png"
+featured_image: "../assets/images/featured/area_Software Quality.webp"
 summary: 'Nathalia Lorena Cardoso Dias defended at FCTE/UnB an undergraduate thesis using a systematic literature review to investigate why formally defined software improvement processes are frequently unused in practice.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

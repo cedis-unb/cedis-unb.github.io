@@ -4,7 +4,7 @@ title: "Software Quality"
 date: 2024-02-14T01:37:18-03:00
 language: en
 weight: 5
-featured_image: "../assets/images/featured/area_Software Quality.png"
+featured_image: "../assets/images/featured/area_Software Quality.webp"
 summary: Constitutes a fundamental pillar in software engineering, directly reflecting on user satisfaction, operational efficiency, and the sustainability of computer systems. 
 authorimage: ../assets/images/global/author.webp
 categories:

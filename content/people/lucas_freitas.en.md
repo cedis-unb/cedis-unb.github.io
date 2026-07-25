@@ -5,7 +5,7 @@ profile_level: card_with_page
 date: 2026-03-09T19:00:00-03:00
 weight: 44
 language: en
-featured_image: "../assets/images/featured/people_Collaborators.png"
+featured_image: "../assets/images/featured/people_Collaborators.webp"
 summary: Undergraduate in Software Engineering, University of Brasília
 description: Works on the development of Evidentia Review, a CEDIS software platform for systematic literature reviews.
 authorimage: ../assets/images/global/author.webp

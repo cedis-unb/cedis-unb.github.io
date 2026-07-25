@@ -5,7 +5,7 @@ profile_level: card_with_page
 date: 2024-02-17T00:50:20-03:00
 language: pt
 weight: 44
-featured_image: "../assets/images/featured/people_André Silva.png"
+featured_image: "../assets/images/featured/people_André Silva.webp"
 summary: Graduando em Engenharia de Software, Universidade de Brasília 
 authorimage: ../assets/images/global/author.webp
 categories: 

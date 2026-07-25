@@ -4,7 +4,7 @@ date: 2025-01-10T00:00:00-03:00
 draft: false
 weight: 500
 language: pt
-featured_image: "../assets/images/featured/area_Arquitetura de Software.png"
+featured_image: "../assets/images/featured/area_Arquitetura de Software.webp"
 summary: 'Dione Ramos Canuto Moura defendeu no PPCA/UnB uma dissertação que analisa a usabilidade do SiCaPEx — sistema de cadastramento de pessoal do Exército Brasileiro — combinando SUS, heurísticas de Nielsen e propostas de melhoria implementadas.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

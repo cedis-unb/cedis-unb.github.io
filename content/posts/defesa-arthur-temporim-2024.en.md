@@ -4,7 +4,7 @@ date: 2024-05-28T00:00:00-03:00
 draft: false
 weight: 500
 language: en
-featured_image: "../assets/images/featured/area_Gamificação.png"
+featured_image: "../assets/images/featured/area_Gamificação.webp"
 summary: 'Arthur Rocha Temporim de Lacerda defended at UnB’s Applied Computing graduate program a dissertation proposing GCMP — the Gamified Chatbot Management Process — a method to orchestrate the end-to-end development of gamified chatbots.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

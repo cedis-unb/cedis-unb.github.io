@@ -4,7 +4,7 @@ date: 2023-03-23T00:00:00-03:00
 draft: false
 weight: 500
 language: pt
-featured_image: "../assets/images/featured/area_Gamificação.png"
+featured_image: "../assets/images/featured/area_Gamificação.webp"
 summary: 'Públio Pastrolin Cavalcante defendeu no PPCA/UnB uma dissertação que avalia como a aplicação de gamificação em atividades de inteligência policial altera a qualidade dos relatórios produzidos.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

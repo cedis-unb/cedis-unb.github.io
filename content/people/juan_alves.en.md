@@ -5,7 +5,7 @@ profile_level: card_with_page
 date: 2024-02-17T00:50:20-03:00
 weight: 44
 language: en
-featured_image: "../assets/images/featured/people_Juan Alves.png"
+featured_image: "../assets/images/featured/people_Juan Alves.webp"
 summary: Undergraduate in Software Engineering at the University of Brasília; PIBIC advisee of Prof. Sergio Freitas in the Canal Ciência Project.
 authorimage: ../assets/images/global/author.webp
 categories: 

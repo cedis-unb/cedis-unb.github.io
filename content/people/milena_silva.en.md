@@ -5,7 +5,7 @@ profile_level: card_with_page
 date: 2024-02-17T00:50:20-03:00
 weight: 44
 language: en
-featured_image: "../assets/images/featured/people_Milena Silva.png"
+featured_image: "../assets/images/featured/people_Milena Silva.webp"
 summary: Undergraduate in Computing, Federal Institute of Education, Science, and Technology of Southern Minas Gerais
 authorimage: ../assets/images/global/author.webp
 categories: 

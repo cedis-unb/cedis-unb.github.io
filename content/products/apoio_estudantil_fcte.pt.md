@@ -15,7 +15,7 @@ responsible:
 - george_marsicano
 publications: []
 weight: 33
-featured_image: "../assets/images/featured/projeto_Transformação Digital.png"
+featured_image: "../assets/images/featured/projeto_Transformação Digital.webp"
 summary: Produto tecnológico de 2025 para centralização de informações administrativas como suporte ao desenvolvimento estudantil na FCTE, com chatbot e inteligência artificial.
 authorimage: ../assets/images/global/author.webp
 categories:

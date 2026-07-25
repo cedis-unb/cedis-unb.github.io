@@ -4,7 +4,7 @@ date: 2020-02-11T00:00:00-03:00
 draft: false
 weight: 500
 language: en
-featured_image: "../assets/images/featured/area_Arquitetura de Software.png"
+featured_image: "../assets/images/featured/area_Arquitetura de Software.webp"
 summary: 'Felipe Evangelista dos Santos defended at UnB’s PPCA a dissertation integrating monitoring tools into UnB’s Service Bus — critical infrastructure for communication between academic systems.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

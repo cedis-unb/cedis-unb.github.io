@@ -4,7 +4,7 @@ title: "Software social"
 date: 2025-05-01T01:37:18-03:00
 language: pt
 weight: 5
-featured_image: "../assets/images/featured/area_Social_Software.png"
+featured_image: "../assets/images/featured/area_Social_Software.webp"
 summary: Área de pesquisa que envolve o desenvolvimento e a análise de tecnologias digitais (especialmente software) com o objetivo explícito de gerar impacto social positivo, sem fins lucrativos ou de exploração comercial direta. Essa abordagem é colaborativa, interdisciplinar e centrada nas pessoas.
 authorimage: ../assets/images/global/author.webp
 categories:

@@ -4,7 +4,7 @@ date: 2020-02-28T00:00:00-03:00
 draft: false
 weight: 500
 language: en
-featured_image: "../assets/images/featured/area_Software Quality.png"
+featured_image: "../assets/images/featured/area_Software Quality.webp"
 summary: 'Ronyell Henrique dos Santos defended at FCTE/UnB an undergraduate thesis applying refactoring operations to improve software system variability — reducing maintenance costs over the lifecycle.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

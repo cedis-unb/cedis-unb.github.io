@@ -4,7 +4,7 @@ date: 2026-03-10T09:00:00-03:00
 draft: false
 weight: 500
 language: en
-featured_image: "../assets/images/featured/octaanalysis-evaluations.png"
+featured_image: "../assets/images/featured/octaanalysis-evaluations.webp"
 summary: "OctaAnalysis, a platform developed by CEDIS, supports the analysis, management, and continuous improvement of gamified learning and collaboration experiences."
 description: "OctaAnalysis is a CEDIS platform focused on the design, management, and analytical monitoring of gamified experiences."
 author: CEDIS

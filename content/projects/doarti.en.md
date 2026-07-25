@@ -20,7 +20,7 @@ funding_agencies: []
 products: []
 publications: []
 summary: "Project for a technological solution to strengthen donation processes in the Federal District."
-featured_image: "../assets/images/featured/project_doarti.png"
+featured_image: "../assets/images/featured/project_doarti.webp"
 authorimage: ../assets/images/global/author.webp
 categories:
 - project

@@ -4,7 +4,7 @@ date: 2025-07-21T00:00:00-03:00
 draft: false
 weight: 500
 language: pt
-featured_image: "../assets/images/featured/area_IA.png"
+featured_image: "../assets/images/featured/area_IA.webp"
 summary: 'Amanda Jeniffer Pereira Nobre e Ana Carolina Rodrigues Leite defenderam na FCTE/UnB um TCC que faz mapeamento sistemático da literatura sobre desafios éticos associados aos vieses em algoritmos de inteligência artificial.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

@@ -4,7 +4,7 @@ date: 2022-06-09T00:00:00-03:00
 draft: false
 weight: 500
 language: pt
-featured_image: "../assets/images/featured/area_Gamificação.png"
+featured_image: "../assets/images/featured/area_Gamificação.webp"
 summary: 'Cauê Mateus Oliveira e Lucas Midlhey Cardoso Naves defenderam na FCTE/UnB um TCC que transforma o aprendizado das heurísticas de Nielsen em um jogo — a Universidade das Heurísticas.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

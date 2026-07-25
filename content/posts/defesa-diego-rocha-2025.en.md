@@ -4,7 +4,7 @@ date: 2025-10-23T00:00:00-03:00
 draft: false
 weight: 500
 language: en
-featured_image: "../assets/images/featured/area_Engenharia de requisitos.png"
+featured_image: "../assets/images/featured/area_Engenharia de requisitos.webp"
 summary: 'Diego Emanuel Ferreira da Rocha presented at UnB’s Applied Computing graduate program the qualification exam of a dissertation that automates elementary-process identification through HTTP request analysis — reducing the friction of Simple Function Points.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

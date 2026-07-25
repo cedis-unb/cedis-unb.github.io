@@ -4,7 +4,7 @@ date: 2021-05-19T00:00:00-03:00
 draft: false
 weight: 500
 language: en
-featured_image: "../assets/images/featured/area_Software Quality.png"
+featured_image: "../assets/images/featured/area_Software Quality.webp"
 summary: 'Caio César de Almeida Beleza defended at FCTE/UnB an undergraduate thesis analyzing software interface problems that push users toward error and systematizing recommendations to avoid them.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

@@ -4,7 +4,7 @@ date: 2015-06-15T00:00:00-03:00
 draft: false
 weight: 500
 language: en
-featured_image: "../assets/images/featured/area_Transformação Digital.png"
+featured_image: "../assets/images/featured/area_Transformação Digital.webp"
 summary: 'Igor de Araújo Ramos defended at FCTE/UnB an undergraduate thesis proposing the use of ontologies to support the thorniest step of systematic mappings: turning collected data into a knowledge map that is actually usable.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

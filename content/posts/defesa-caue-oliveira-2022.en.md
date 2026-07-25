@@ -4,7 +4,7 @@ date: 2022-06-09T00:00:00-03:00
 draft: false
 weight: 500
 language: en
-featured_image: "../assets/images/featured/area_Gamificação.png"
+featured_image: "../assets/images/featured/area_Gamificação.webp"
 summary: 'Cauê Mateus Oliveira and Lucas Midlhey Cardoso Naves defended at FCTE/UnB an undergraduate thesis turning the study of Nielsen’s heuristics into a game — the University of Heuristics.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

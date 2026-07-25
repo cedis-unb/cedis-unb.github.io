@@ -4,7 +4,7 @@ date: 2023-03-01T11:10:36+08:00
 draft: false
 weight: 500
 language: en
-featured_image: "../assets/images/featured/gamification_Jornada IHC.png"
+featured_image: "../assets/images/featured/gamification_Jornada IHC.webp"
 summary: IHC Journey - An RPG adventure in learning the Human-Computer Interaction course.
 description: IHC Journey - An RPG adventure in learning the Human-Computer Interaction course.
 author: CEDIS

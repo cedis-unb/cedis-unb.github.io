@@ -4,7 +4,7 @@ date: 2020-12-17T00:00:00-03:00
 draft: false
 weight: 500
 language: en
-featured_image: "../assets/images/featured/area_Software Quality.png"
+featured_image: "../assets/images/featured/area_Software Quality.webp"
 summary: 'Sannya Santana de Arvelos defended at FCTE/UnB an undergraduate thesis proposing the use of issue analysis as the basis for identifying software process improvement opportunities.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

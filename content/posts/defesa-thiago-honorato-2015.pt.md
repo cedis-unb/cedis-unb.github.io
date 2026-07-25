@@ -4,7 +4,7 @@ date: 2015-06-15T00:00:00-03:00
 draft: false
 weight: 500
 language: pt
-featured_image: "../assets/images/featured/area_Engenharia de requisitos.png"
+featured_image: "../assets/images/featured/area_Engenharia de requisitos.webp"
 summary: 'Thiago Silveira Honorato defendeu um TCC que propõe um método de escolha racional entre Content Management Systems para diferentes cenários — reduzindo a dependência de decisões baseadas apenas em familiaridade da equipe.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

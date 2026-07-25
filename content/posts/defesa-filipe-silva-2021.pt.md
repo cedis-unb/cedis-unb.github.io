@@ -4,7 +4,7 @@ date: 2021-11-18T00:00:00-03:00
 draft: false
 weight: 500
 language: pt
-featured_image: "../assets/images/featured/area_Arquitetura de Software.png"
+featured_image: "../assets/images/featured/area_Arquitetura de Software.webp"
 summary: 'Filipe Toyoshima Silva defendeu na FCTE/UnB um TCC que mapeia como startups em fase inicial lidam com manutenção de software — uma etapa dominada por escassez de recursos e volume alto de mudanças.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

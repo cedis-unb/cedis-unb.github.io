@@ -4,7 +4,7 @@ date: 2024-08-08T00:00:00-03:00
 draft: false
 weight: 500
 language: en
-featured_image: "../assets/images/featured/area_Gamificação.png"
+featured_image: "../assets/images/featured/area_Gamificação.webp"
 summary: 'Antonio Rangel Chaves and Vitor Diniz Pagani Vieira Ribeiro defended at FCTE/UnB an undergraduate thesis lowering the entry barrier for teachers who want to gamify Moodle courses — with a guide and a practical tool.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

@@ -4,7 +4,7 @@ date: 2023-05-02T11:10:36+08:00
 draft: false
 weight: 500
 language: pt
-featured_image: "../assets/images/featured/projeto_Canal Ciência2.png"
+featured_image: "../assets/images/featured/projeto_Canal Ciência2.webp"
 summary: Parceria entre CEDIS e IBICT lança projeto de gamificação inovador do portal Canal Ciência 
 description: Parceria entre CEDIS e IBICT lança projeto de gamificação inovador do portal Canal Ciência 
 author: CEDIS

@@ -23,7 +23,7 @@ products:
 - magra
 - predicao_euploidia
 publications: []
-featured_image: "../assets/images/featured/project_ia_dados_transformacao_digital.png"
+featured_image: "../assets/images/featured/project_ia_dados_transformacao_digital.webp"
 summary: "Ongoing umbrella project focused on applying artificial intelligence, machine learning, natural language processing, and data analysis to digital transformation initiatives."
 authorimage: ../assets/images/global/author.webp
 categories:

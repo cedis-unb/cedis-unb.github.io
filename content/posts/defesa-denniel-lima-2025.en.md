@@ -4,7 +4,7 @@ date: 2025-07-22T00:00:00-03:00
 draft: false
 weight: 500
 language: en
-featured_image: "../assets/images/featured/area_Gamificação.png"
+featured_image: "../assets/images/featured/area_Gamificação.webp"
 summary: 'Denniel Roriz Lima defended at FCTE/UnB an undergraduate thesis running a bibliometric and thematic review on the use of gamification in agile processes with Scrum, and proposing practical guidelines for implementation.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

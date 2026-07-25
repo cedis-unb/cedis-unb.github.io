@@ -4,7 +4,7 @@ date: 2021-05-19T00:00:00-03:00
 draft: false
 weight: 500
 language: pt
-featured_image: "../assets/images/featured/area_Software Quality.png"
+featured_image: "../assets/images/featured/area_Software Quality.webp"
 summary: 'Caio César de Almeida Beleza defendeu na FCTE/UnB um TCC que analisa problemas em interfaces de software que empurram usuários para o erro e sistematiza recomendações para evitá-los.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

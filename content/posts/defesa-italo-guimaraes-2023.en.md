@@ -4,7 +4,7 @@ date: 2023-07-24T00:00:00-03:00
 draft: false
 weight: 500
 language: en
-featured_image: "../assets/images/featured/area_Gamificação.png"
+featured_image: "../assets/images/featured/area_Gamificação.webp"
 summary: 'Ítalo Alves Guimarães defended at FCTE/UnB an undergraduate thesis implementing an application to support the gamified Human-Computer Interaction course — a piece the very use in class had been asking for.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

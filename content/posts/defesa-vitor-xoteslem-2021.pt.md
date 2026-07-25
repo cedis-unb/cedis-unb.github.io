@@ -4,7 +4,7 @@ date: 2021-10-25T00:00:00-03:00
 draft: false
 weight: 500
 language: pt
-featured_image: "../assets/images/featured/area_Verificação e Validação.png"
+featured_image: "../assets/images/featured/area_Verificação e Validação.webp"
 summary: 'Vítor Cardoso Xoteslem defendeu na FCTE/UnB um TCC que elabora estratégia de testes para o app Doarti — mantido por uma equipe de voluntários distribuída geograficamente e em regime de trabalho remoto forçado pela pandemia.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

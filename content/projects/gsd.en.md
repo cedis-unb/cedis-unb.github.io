@@ -15,7 +15,7 @@ partners: []
 funding_agencies: []
 products: []
 publications: []
-featured_image: "../assets/images/featured/projeto_GSD.png"
+featured_image: "../assets/images/featured/projeto_GSD.webp"
 summary: This project aims to highlight the importance of understanding the field of Green Software Development and bringing it into companies.
 authorimage: ../assets/images/global/author.webp
 categories: 

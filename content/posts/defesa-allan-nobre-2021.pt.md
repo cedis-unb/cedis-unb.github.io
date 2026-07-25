@@ -4,7 +4,7 @@ date: 2021-05-28T00:00:00-03:00
 draft: false
 weight: 500
 language: pt
-featured_image: "../assets/images/featured/area_Learning Analytics.png"
+featured_image: "../assets/images/featured/area_Learning Analytics.webp"
 summary: 'Allan Jefrey Pereira Nobre defendeu na FCTE/UnB um TCC que aplica Learning Analytics e Educational Data Mining para apoiar decisões pedagógicas em disciplinas conduzidas com Team-Based Learning.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

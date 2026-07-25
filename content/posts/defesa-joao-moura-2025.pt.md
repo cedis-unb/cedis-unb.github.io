@@ -4,7 +4,7 @@ date: 2025-07-11T00:00:00-03:00
 draft: false
 weight: 500
 language: pt
-featured_image: "../assets/images/featured/area_Arquitetura de Software.png"
+featured_image: "../assets/images/featured/area_Arquitetura de Software.webp"
 summary: 'João Pedro Elias de Moura defendeu na FCTE/UnB um TCC que projeta o SmartPayment — sistema baseado em contratos inteligentes para automatizar avaliação e pagamento em desenvolvimento de software.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

@@ -5,7 +5,7 @@ profile_level: researcher
 date: 2014-06-01T00:00:00-03:00
 weight: 30
 language: en
-featured_image: "../assets/images/featured/people_André Lanna.png"
+featured_image: "../assets/images/featured/people_André Lanna.webp"
 summary: Adjunct Professor at the University of Brasília (UnB), working in the undergraduate Software Engineering program and the Graduate Program in Applied Computing.
 contact:
   email: andrelanna@unb.br

@@ -22,7 +22,7 @@ products:
 publications:
 - publication_2024_sergio_antonio_andrade_freitas_crafting_personalized_learning_environments_through_mo
 - publication_2026_cristiane_soares_ramos_gamifying_science_communication_an_experience_report_of_jornad
-featured_image: "../assets/images/featured/projeto_Canal Ciência.png"
+featured_image: "../assets/images/featured/projeto_Canal Ciência.webp"
 summary: A research project in partnership with IBICT and funded by FINATEC, aimed at enhancing the user experience of the Canal Ciência through the use of gamification.
 authorimage: ../assets/images/global/author.webp
 categories: 

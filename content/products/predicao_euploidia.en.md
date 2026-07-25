@@ -14,7 +14,7 @@ responsible:
 - george_marsicano
 publications: []
 weight: 35
-featured_image: "../assets/images/featured/area_IA.png"
+featured_image: "../assets/images/featured/area_IA.webp"
 summary: 2025 technological product applying machine learning to non-invasive prediction of euploidy in human embryos based on morphokinetic data.
 authorimage: ../assets/images/global/author.webp
 categories:

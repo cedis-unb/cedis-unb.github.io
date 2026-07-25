@@ -4,7 +4,7 @@ date: 2022-05-09T00:00:00-03:00
 draft: false
 weight: 500
 language: pt
-featured_image: "../assets/images/featured/area_Green Software.png"
+featured_image: "../assets/images/featured/area_Green Software.webp"
 summary: 'Byron Kamal Barreto Correa e Igor Guimaraes Veludo defenderam na FCTE/UnB uma etapa importante da história do AgroMart: abrir o código do projeto, integrar meios de pagamento e desenhar a gestão de co-agricultores.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

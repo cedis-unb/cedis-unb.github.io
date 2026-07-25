@@ -28,7 +28,7 @@ products:
 - edutrackai
 publications:
 - publication_2026_sergio_antonio_andrade_de_freitas_a_motivation_aware_diagnostic_instrument_for_person
-featured_image: "../assets/images/featured/project_framework_preditivo_engajamento.png"
+featured_image: "../assets/images/featured/project_framework_preditivo_engajamento.webp"
 summary: "Projeto PIBIC 2025-2026 voltado à criação de um framework preditivo para engajamento e desempenho discente em ambientes de aprendizagem gamificados, combinando Octalysis, indicadores neurocientíficos, learning analytics e machine learning."
 authorimage: ../assets/images/global/author.webp
 categories:

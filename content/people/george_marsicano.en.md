@@ -5,7 +5,7 @@ profile_level: researcher
 date: 2013-11-01T00:00:00-03:00
 weight: 20
 language: en
-featured_image: "../assets/images/featured/people_George Marsicano.png"
+featured_image: "../assets/images/featured/people_George Marsicano.webp"
 summary: Associate Professor at the University of Brasília (UnB), working in the Software Engineering undergraduate program and the Graduate Program in Applied Computing with a focus on requirements, human aspects, and software engineering education.
 contact:
   email: georgemarsicano@unb.br

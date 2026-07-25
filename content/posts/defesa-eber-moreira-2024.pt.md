@@ -4,7 +4,7 @@ date: 2024-12-17T00:00:00-03:00
 draft: false
 weight: 500
 language: pt
-featured_image: "../assets/images/featured/area_Transformação Digital.png"
+featured_image: "../assets/images/featured/area_Transformação Digital.webp"
 summary: 'Éber Junio Borges Moreira defendeu no PPCA/UnB uma dissertação que ataca o problema do agendamento de recursos acadêmicos em instituições de ensino superior, com estudo de caso na própria UnB.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

@@ -4,7 +4,7 @@ date: 2020-12-16T00:00:00-03:00
 draft: false
 weight: 500
 language: en
-featured_image: "../assets/images/featured/area_Software Quality.png"
+featured_image: "../assets/images/featured/area_Software Quality.webp"
 summary: 'Rafael Contessotto Bragança Pinheiro defended at FCTE/UnB an undergraduate thesis proposing an approach to help organizations kick off software process improvement programs — the hardest step when almost everything demands attention.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

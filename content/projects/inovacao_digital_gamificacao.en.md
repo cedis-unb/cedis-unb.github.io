@@ -30,7 +30,7 @@ publications:
 - 10.1109/FIE61694.2024.10893484
 - 10.1109/FIE61694.2024.10893473
 - 10.1007/978-3-031-64608-9_4
-featured_image: "../assets/images/featured/project_inovacao_digital_gamificacao.png"
+featured_image: "../assets/images/featured/project_inovacao_digital_gamificacao.webp"
 summary: "Ongoing umbrella project focused on research and development of digital strategies, gamification, indicators, and educational products for teaching, science outreach, and software engineering."
 authorimage: ../assets/images/global/author.webp
 categories:

@@ -4,7 +4,7 @@ date: 2016-07-07T00:00:00-03:00
 draft: false
 weight: 500
 language: pt
-featured_image: "../assets/images/featured/area_Team work and soft skills.png"
+featured_image: "../assets/images/featured/area_Team work and soft skills.webp"
 summary: 'Leandro Veloso Rodrigues defendeu na FCTE/UnB um TCC que investiga o impacto do Programa Ciência sem Fronteiras no desenvolvimento de competências comportamentais dos futuros engenheiros de software.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

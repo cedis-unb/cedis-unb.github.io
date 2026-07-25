@@ -4,7 +4,7 @@ date: 2022-10-05T00:00:00-03:00
 draft: false
 weight: 500
 language: en
-featured_image: "../assets/images/featured/area_Software Quality.png"
+featured_image: "../assets/images/featured/area_Software Quality.webp"
 summary: 'Gabriel de Jesus Carvalho defended at FCTE/UnB an undergraduate thesis developing IA-QVT — a tool to collect and process data on quality of work life, with strong attention to accessibility.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp
