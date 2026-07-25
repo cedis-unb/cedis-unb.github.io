@@ -4,7 +4,7 @@ date: 2023-02-14T00:00:00-03:00
 draft: false
 weight: 500
 language: pt
-featured_image: "../assets/images/featured/area_Learning Analytics.png"
+featured_image: "../assets/images/featured/area_Learning Analytics.webp"
 summary: 'João Vitor de Moura Rosa Silva defendeu na FCTE/UnB um TCC que constrói o SAMI — sistema para análise de métricas de indicadores de aprendizagem em disciplinas com metodologias ativas.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

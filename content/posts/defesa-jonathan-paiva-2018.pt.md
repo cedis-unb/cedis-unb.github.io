@@ -4,7 +4,7 @@ date: 2018-07-06T00:00:00-03:00
 draft: false
 weight: 500
 language: pt
-featured_image: "../assets/images/featured/area_Arquitetura de Software.png"
+featured_image: "../assets/images/featured/area_Arquitetura de Software.webp"
 summary: 'Jonathan Paiva e Luis Henrique Guimarães defenderam na FCTE/UnB um TCC que substitui sensores e câmeras por colaboração humana para monitorar a situação dos automóveis em uma cidade — o app NotifiCar.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

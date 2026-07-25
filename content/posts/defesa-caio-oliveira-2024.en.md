@@ -4,7 +4,7 @@ date: 2024-09-12T00:00:00-03:00
 draft: false
 weight: 500
 language: en
-featured_image: "../assets/images/featured/area_IA.png"
+featured_image: "../assets/images/featured/area_IA.webp"
 summary: 'Caio César Oliveira defended at FCTE/UnB an undergraduate thesis developing artificial intelligence to improve individual evaluations in Software Engineering courses.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

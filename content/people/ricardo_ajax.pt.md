@@ -5,7 +5,7 @@ profile_level: researcher
 date: 2014-11-01T00:00:00-03:00
 weight: 40
 language: pt
-featured_image: "../assets/images/featured/people_Ricardo Ajax.png"
+featured_image: "../assets/images/featured/people_Ricardo Ajax.webp"
 summary: Professor Adjunto da Universidade de Brasília (UnB), atua no curso de graduação em Engenharia de Software em temas como engenharia de software, métricas, testes e qualidade de software.
 contact:
   email: ricardoajax@unb.br

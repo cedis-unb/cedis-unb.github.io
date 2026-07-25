@@ -4,7 +4,7 @@ date: 2023-03-01T11:10:36+08:00
 draft: false
 weight: 500
 language: pt
-featured_image: "../assets/images/featured/gamification_Jornada IHC.png"
+featured_image: "../assets/images/featured/gamification_Jornada IHC.webp"
 summary: Jornada IHC - Uma aventura RPG na Aprendizagem da disciplina de Interação Humano-Computador.
 description: Jornada IHC - Uma aventura RPG na Aprendizagem da disciplina de Interação Humano-Computador.
 author: CEDIS

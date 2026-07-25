@@ -5,7 +5,7 @@ profile_level: card_with_page
 date: 2024-02-17T00:50:20-03:00
 weight: 44
 language: pt
-featured_image: "../assets/images/featured/people_Juan Alves.png"
+featured_image: "../assets/images/featured/people_Juan Alves.webp"
 summary: Graduando em Engenharia de Software na Universidade de Brasília; orientando PIBIC do Prof. Sergio Freitas no Projeto Canal Ciência.
 authorimage: ../assets/images/global/author.webp
 categories: 

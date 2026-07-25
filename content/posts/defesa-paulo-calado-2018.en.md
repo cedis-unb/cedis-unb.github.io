@@ -4,7 +4,7 @@ date: 2018-08-15T00:00:00-03:00
 draft: false
 weight: 500
 language: en
-featured_image: "../assets/images/featured/area_Gamificação.png"
+featured_image: "../assets/images/featured/area_Gamificação.webp"
 summary: 'Paulo Markes Rodrigues de Oliveira Calado defended at FCTE/UnB an undergraduate thesis developing a strategy to identify improvement opportunities in gamified applications — tackling the problem that the initial shine does not always translate into prolonged use.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

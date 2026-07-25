@@ -4,7 +4,7 @@ date: 2016-07-07T00:00:00-03:00
 draft: false
 weight: 500
 language: en
-featured_image: "../assets/images/featured/area_Team work and soft skills.png"
+featured_image: "../assets/images/featured/area_Team work and soft skills.webp"
 summary: 'Leandro Veloso Rodrigues defended at FCTE/UnB an undergraduate thesis investigating the impact of Brazil’s Ciência sem Fronteiras program on the soft skills of future software engineers.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

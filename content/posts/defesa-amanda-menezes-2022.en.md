@@ -4,7 +4,7 @@ date: 2022-09-26T00:00:00-03:00
 draft: false
 weight: 500
 language: en
-featured_image: "../assets/images/featured/area_Learning Analytics.png"
+featured_image: "../assets/images/featured/area_Learning Analytics.webp"
 summary: 'Amanda Emilly Muniz de Menezes and Letícia Karla Soares Rodrigues de Araújo defended at FCTE/UnB an undergraduate thesis identifying academic, demographic and learning factors associated with higher education dropout — and testing predictive models.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

@@ -5,7 +5,7 @@ profile_level: card_with_page
 date: 2026-03-09T19:00:00-03:00
 weight: 44
 language: pt
-featured_image: "../assets/images/featured/people_Collaborators.png"
+featured_image: "../assets/images/featured/people_Collaborators.webp"
 summary: Graduando em Engenharia de Software, Universidade de Brasília
 description: Atua no desenvolvimento do Evidentia Review, software do CEDIS para apoio a revisões sistemáticas da literatura.
 authorimage: ../assets/images/global/author.webp

@@ -4,7 +4,7 @@ title: "Social Software"
 date: 2025-05-01T01:37:18-03:00
 language: en
 weight: 5
-featured_image: "../assets/images/featured/area_Social_Software.png"
+featured_image: "../assets/images/featured/area_Social_Software.webp"
 summary: Research area involving the development and analysis of digital technologies (especially software) with the explicit goal of generating positive social impact, without profit-making or direct commercial exploitation. This approach is collaborative, interdisciplinary, and people-centered.
 authorimage: ../assets/images/global/author.webp
 categories:

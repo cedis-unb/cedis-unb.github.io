@@ -4,7 +4,7 @@ date: 2025-02-18T00:00:00-03:00
 draft: false
 weight: 500
 language: pt
-featured_image: "../assets/images/featured/area_Aprendizagem Ativa.png"
+featured_image: "../assets/images/featured/area_Aprendizagem Ativa.webp"
 summary: 'Artur de Sousa Vieira e Luíza Esteves dos Santos defenderam na FCTE/UnB um TCC que apresenta o OMA — Organizador Multimídia Acadêmico — voltado a estudantes de engenharia do Campus Gama.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

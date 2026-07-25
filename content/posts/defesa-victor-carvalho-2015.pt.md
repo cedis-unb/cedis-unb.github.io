@@ -4,7 +4,7 @@ date: 2015-06-15T00:00:00-03:00
 draft: false
 weight: 500
 language: pt
-featured_image: "../assets/images/featured/area_Software Quality.png"
+featured_image: "../assets/images/featured/area_Software Quality.webp"
 summary: 'Victor Hugo Alves de Carvalho defendeu em 2015, na FCTE/UnB, um TCC empírico que compara técnicas de programação em Android e mede o efeito de cada uma sobre desempenho e responsividade dos aplicativos.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

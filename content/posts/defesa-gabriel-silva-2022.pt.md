@@ -4,7 +4,7 @@ date: 2022-09-23T00:00:00-03:00
 draft: false
 weight: 500
 language: pt
-featured_image: "../assets/images/featured/area_Engenharia de requisitos.png"
+featured_image: "../assets/images/featured/area_Engenharia de requisitos.webp"
 summary: 'Gabriel Batista Albino Silva e Helena Bretas Goulart defenderam na FCTE/UnB um TCC que identifica requisitos não-funcionais para jogos sérios voltados a crianças com Transtorno de Déficit de Atenção com Hiperatividade (TDAH).'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

@@ -4,7 +4,7 @@ date: 2024-03-01T11:10:36+08:00
 draft: false
 weight: 500
 language: en
-featured_image: "../assets/images/featured/people_Braz Souza.png"
+featured_image: "../assets/images/featured/people_Braz Souza.webp"
 summary: 'UFPA student undertakes an internship at CEDIS focusing on gamification for literacy'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

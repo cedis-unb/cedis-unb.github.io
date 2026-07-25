@@ -4,7 +4,7 @@ date: 2025-07-28T00:00:00-03:00
 draft: false
 weight: 500
 language: en
-featured_image: "../assets/images/featured/area_IA.png"
+featured_image: "../assets/images/featured/area_IA.webp"
 summary: 'Leonardo Milomes Vitoriano and Mateus de Almeida Dias defended at FCTE/UnB an undergraduate thesis presenting Three Filters — a system to ensure quality and integrity of scientific metadata in JSON.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

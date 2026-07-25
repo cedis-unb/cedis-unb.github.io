@@ -4,7 +4,7 @@ date: 2021-11-16T00:00:00-03:00
 draft: false
 weight: 500
 language: pt
-featured_image: "../assets/images/featured/area_IA.png"
+featured_image: "../assets/images/featured/area_IA.webp"
 summary: 'Augusto Moreno Vilarins Cardoso da Silva e Ícaro Pereira de Oliveira defenderam na FCTE/UnB um TCC que desenha um processo semi-automatizado para extrair sinais de usabilidade a partir dos comentários de usuários na Google Play Store.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

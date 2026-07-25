@@ -4,7 +4,7 @@ date: 2023-07-03T00:00:00-03:00
 draft: false
 weight: 500
 language: en
-featured_image: "../assets/images/featured/area_Learning Analytics.png"
+featured_image: "../assets/images/featured/area_Learning Analytics.webp"
 summary: 'Edmilson Cosme da Silva defended at UnB’s PPCA a dissertation applying machine learning to predict academic dropout in UnB’s on-campus undergraduate programs.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

@@ -4,7 +4,7 @@ date: 2024-03-11T00:00:00-03:00
 draft: false
 weight: 500
 language: pt
-featured_image: "../assets/images/featured/area_Software Quality.png"
+featured_image: "../assets/images/featured/area_Software Quality.webp"
 summary: 'Francisco Heronildo Sousa Santos e João Vitor Ferreira Alves defenderam na FCTE/UnB um TCC que aplica mecanismos consagrados de usabilidade em ciclo de avaliação e melhoria em uma aplicação web.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

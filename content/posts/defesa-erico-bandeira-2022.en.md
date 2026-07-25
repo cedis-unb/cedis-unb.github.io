@@ -4,7 +4,7 @@ date: 2022-05-05T00:00:00-03:00
 draft: false
 weight: 500
 language: en
-featured_image: "../assets/images/featured/area_Gamificação.png"
+featured_image: "../assets/images/featured/area_Gamificação.webp"
 summary: 'Érico Maximiano Bandeira defended at FCTE/UnB an undergraduate thesis introducing Pixel — a gamified tool for learning usability criteria during interface evaluation.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

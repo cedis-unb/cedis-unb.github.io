@@ -4,7 +4,7 @@ date: 2024-05-28T00:00:00-03:00
 draft: false
 weight: 500
 language: pt
-featured_image: "../assets/images/featured/area_Gamificação.png"
+featured_image: "../assets/images/featured/area_Gamificação.webp"
 summary: 'Arthur Rocha Temporim de Lacerda defendeu no PPCA/UnB uma dissertação que propõe o GCMP — Gamified Chatbot Management Process — método para orquestrar o desenvolvimento de chatbots gamificados de ponta a ponta.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

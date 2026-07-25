@@ -4,7 +4,7 @@ date: 2025-02-25T00:00:00-03:00
 draft: false
 weight: 500
 language: en
-featured_image: "../assets/images/featured/area_Arquitetura de Software.png"
+featured_image: "../assets/images/featured/area_Arquitetura de Software.webp"
 summary: 'Kalebe Cunha and Murilo Santana defended in February 2025 at UnB’s Engineering Faculty an undergraduate thesis that migrates AgroMart from IaaS to AWS Lambda and tests the feasibility of running the app within the free tier — dropping cost for farmers.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

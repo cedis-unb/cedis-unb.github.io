@@ -4,7 +4,7 @@ date: 2018-12-11T00:00:00-03:00
 draft: false
 weight: 500
 language: pt
-featured_image: "../assets/images/featured/area_Arquitetura de Software.png"
+featured_image: "../assets/images/featured/area_Arquitetura de Software.webp"
 summary: 'Laércio Silva de Sousa Júnior defendeu na FCTE/UnB um TCC que investiga formas de calcular a taxa de autoria de desenvolvedores dentro de projetos versionados em Git.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

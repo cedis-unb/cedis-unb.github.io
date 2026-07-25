@@ -22,7 +22,7 @@ funding_agencies:
 products:
 - contextus
 publications: []
-featured_image: "../assets/images/featured/projeto_DFCris.png"
+featured_image: "../assets/images/featured/projeto_DFCris.webp"
 summary: Um projeto de pesquisa em parceria com o IBICT e financiado pela FAP-DF.
 authorimage: ../assets/images/global/author.webp
 categories: 

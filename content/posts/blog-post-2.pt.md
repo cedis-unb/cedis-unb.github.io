@@ -3,7 +3,7 @@ title: "Edital para seleção de bolsistas"
 date: 2024-06-04T12:10:36+08:00
 draft: false
 language: pt
-featured_image: "../assets/images/featured/projeto_Canal Ciência.png"
+featured_image: "../assets/images/featured/projeto_Canal Ciência.webp"
 summary: Edital n. 01/2024 - Seleção de bolsista para projeto de gamificação.
 description: Edital n. 01/2024 - Seleção de bolsista para projeto de gamificação.
 author: CEDIS

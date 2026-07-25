@@ -7,7 +7,7 @@ translationKey: publications
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 description: CEDIS publications
-featured_image: ../assets/images/featured/image_Publications.png
+featured_image: ../assets/images/featured/image_Publications.webp
 authorimage: ../assets/images/global/author.webp
 aliases: []
 ---

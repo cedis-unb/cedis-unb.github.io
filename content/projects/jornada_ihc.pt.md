@@ -15,7 +15,7 @@ partners: []
 funding_agencies: []
 products: []
 publications: []
-featured_image: "../assets/images/featured/gamification_Jornada IHC.png"
+featured_image: "../assets/images/featured/gamification_Jornada IHC.webp"
 summary: Projeto de ensino, disciplina "Interação Humano-computador", uma inovação educacional promovida pelo CEDIS no curso de Engenharia de Software da Universidade de Brasília 
 authorimage: ../assets/images/global/author.webp
 categories:

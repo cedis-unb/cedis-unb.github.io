@@ -5,7 +5,7 @@ profile_level: card_with_page
 date: 2024-07-01T00:50:20-03:00
 weight: 44
 language: en
-featured_image: "../assets/images/featured/people_Wildemberg Sales.png"
+featured_image: "../assets/images/featured/people_Wildemberg Sales.webp"
 summary: Undergraduate in Software Engineering at the University of Brasília; PIBIC undergraduate research advisee of Prof. Cristiane Ramos in the Canal Ciência Project.
 authorimage: ../assets/images/global/author.webp
 categories: 

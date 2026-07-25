@@ -15,7 +15,7 @@ responsible:
 project: octaanalysis
 publications: []
 weight: 2
-featured_image: "../assets/images/featured/octaanalysis-dashboard.png"
+featured_image: "../assets/images/featured/octaanalysis-dashboard.webp"
 summary: Plataforma digital do CEDIS/UnB para apoiar o desenho, a gestão e a análise de experiências educacionais e colaborativas gamificadas com acompanhamento analítico integrado.
 authorimage: ../assets/images/global/author.webp
 categories:

@@ -4,7 +4,7 @@ date: 2016-06-15T00:00:00-03:00
 draft: false
 weight: 500
 language: pt
-featured_image: "../assets/images/featured/area_Gamificação.png"
+featured_image: "../assets/images/featured/area_Gamificação.webp"
 summary: 'Wilker Mesquita de Assunção defendeu na FCTE/UnB um TCC que adapta um ambiente virtual de aprendizado para o ensino de algoritmos usando técnicas de gamificação.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

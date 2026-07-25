@@ -4,7 +4,7 @@ date: 2021-11-11T00:00:00-03:00
 draft: false
 weight: 500
 language: pt
-featured_image: "../assets/images/featured/area_Gamificação.png"
+featured_image: "../assets/images/featured/area_Gamificação.webp"
 summary: 'Weiller Fernandes Pereira defendeu na FCTE/UnB um TCC que faz revisão sistemática da literatura sobre o uso de frameworks na construção de gamificações voltadas para a educação.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

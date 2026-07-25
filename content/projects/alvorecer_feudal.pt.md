@@ -15,7 +15,7 @@ partners: []
 funding_agencies: []
 products: []
 publications: []
-featured_image: "../assets/images/featured/gamification_Alvorecer Feudal.png"
+featured_image: "../assets/images/featured/gamification_Alvorecer Feudal.webp"
 summary: Projeto de ensino, disciplina "Desenvolvimento de Software", uma inovação educacional promovida pelo CEDIS na Universidade de Brasília. 
 authorimage: ../assets/images/global/author.webp
 categories:

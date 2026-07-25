@@ -4,7 +4,7 @@ date: 2023-12-22T00:00:00-03:00
 draft: false
 weight: 500
 language: en
-featured_image: "../assets/images/featured/area_Arquitetura de Software.png"
+featured_image: "../assets/images/featured/area_Arquitetura de Software.webp"
 summary: 'Abner Filipe Cunha Ribeiro and Rafael Leão Teixeira de Magalhães defended at FCTE/UnB an undergraduate thesis expanding AgroMart to link CSA associations in the cloud — an important step in consolidating the platform.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

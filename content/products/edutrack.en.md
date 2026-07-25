@@ -16,7 +16,7 @@ project: project_framework_preditivo_engajamento
 publications:
 - publication_2026_sergio_antonio_andrade_de_freitas_a_motivation_aware_diagnostic_instrument_for_person
 weight: 9
-featured_image: "../assets/images/featured/edutrack-logo.png"
+featured_image: "../assets/images/featured/edutrack-logo.webp"
 summary: An educational platform for tracking, analyzing, and gamifying classes, with academic support from CEDIS, grounded in a semester-start diagnostic instrument validated across undergraduate courses.
 authorimage: ../assets/images/global/author.webp
 categories:

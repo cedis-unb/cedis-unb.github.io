@@ -4,7 +4,7 @@ date: 2025-07-17T00:00:00-03:00
 draft: false
 weight: 500
 language: en
-featured_image: "../assets/images/featured/area_IA.png"
+featured_image: "../assets/images/featured/area_IA.webp"
 summary: 'Maria Eduarda dos Santos Abritta Ferreira and Sabrina Caldas Berno defended at FCTE/UnB an undergraduate thesis applying machine learning to the non-invasive prediction of euploidy in human embryos, based on morphokinetic data.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

@@ -4,7 +4,7 @@ date: 2022-10-05T00:00:00-03:00
 draft: false
 weight: 500
 language: pt
-featured_image: "../assets/images/featured/area_Software Quality.png"
+featured_image: "../assets/images/featured/area_Software Quality.webp"
 summary: 'Gabriel de Jesus Carvalho defendeu na FCTE/UnB um TCC que desenvolve o IA-QVT — ferramenta para coleta e tratamento de dados sobre qualidade de vida no trabalho, com atenção especial à acessibilidade.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

@@ -4,7 +4,7 @@ date: 2025-12-02T00:00:00-03:00
 draft: false
 weight: 500
 language: en
-featured_image: "../assets/images/featured/area_Transformação Digital.png"
+featured_image: "../assets/images/featured/area_Transformação Digital.webp"
 summary: 'Felipe Direito Corrieri de Macedo defended at FCTE/UnB an undergraduate thesis introducing FTV Scout — a system for notation and performance analysis of footvolley athletes and teams.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

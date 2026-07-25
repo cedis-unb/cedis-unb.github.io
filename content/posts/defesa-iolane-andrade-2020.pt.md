@@ -4,7 +4,7 @@ date: 2020-12-15T00:00:00-03:00
 draft: false
 weight: 500
 language: pt
-featured_image: "../assets/images/featured/area_Verificação e Validação.png"
+featured_image: "../assets/images/featured/area_Verificação e Validação.webp"
 summary: 'Iolane Caroline Alves de Andrade defendeu na FCTE/UnB um TCC que aplica testes exploratórios ao lado de testes tradicionais, mostrando o ganho de aprendizagem que o teste exploratório traz ao processo.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

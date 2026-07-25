@@ -5,7 +5,7 @@ profile_level: card_with_page
 date: 2022-02-17T00:50:20-03:00
 weight: 36
 language: en
-featured_image: "../assets/images/featured/people_Arthur Temporim.png"
+featured_image: "../assets/images/featured/people_Arthur Temporim.webp"
 summary: Master's student in Applied Computing at PPCA, University of Brasília.
 description: The project is to create the GCMP (Gamified Chatbot Development Process), a structured method for developing gamified chatbots.
 authorimage: ../assets/images/global/author.webp

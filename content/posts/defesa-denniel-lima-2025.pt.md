@@ -4,7 +4,7 @@ date: 2025-07-22T00:00:00-03:00
 draft: false
 weight: 500
 language: pt
-featured_image: "../assets/images/featured/area_Gamificação.png"
+featured_image: "../assets/images/featured/area_Gamificação.webp"
 summary: 'Denniel Roriz Lima defendeu na FCTE/UnB um TCC que faz uma revisão bibliométrica e temática sobre o uso de gamificação em processos ágeis com Scrum e propõe diretrizes práticas para implementação.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

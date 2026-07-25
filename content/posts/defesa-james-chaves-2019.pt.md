@@ -4,7 +4,7 @@ date: 2019-07-17T00:00:00-03:00
 draft: false
 weight: 500
 language: pt
-featured_image: "../assets/images/featured/area_Software Quality.png"
+featured_image: "../assets/images/featured/area_Software Quality.webp"
 summary: 'James Taylor Faria Chaves defendeu no PPCA/UnB uma dissertação que analisa, em estudo de caso, o encontro entre arquitetura orientada a serviços (SOA), métodos ágeis de desenvolvimento e práticas de Quality Assurance.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

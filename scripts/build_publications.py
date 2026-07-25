@@ -381,7 +381,7 @@ def write_indexes(payloads: list[dict[str, Any]], out_dir: Path) -> None:
             "generated_by": GENERATED_BY,
             "canonical_source": CANONICAL_SOURCE,
             "description": "Publicações do CEDIS" if lang == "pt" else "CEDIS publications",
-            "featured_image": "../assets/images/featured/image_Publications.png",
+            "featured_image": "../assets/images/featured/image_Publications.webp",
             "authorimage": "../assets/images/global/author.webp",
             "aliases": ["/publications/"] if lang == "pt" else [],
         }

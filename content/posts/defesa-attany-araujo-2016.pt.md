@@ -4,7 +4,7 @@ date: 2016-12-07T00:00:00-03:00
 draft: false
 weight: 500
 language: pt
-featured_image: "../assets/images/featured/area_Team work and soft skills.png"
+featured_image: "../assets/images/featured/area_Team work and soft skills.webp"
 summary: 'Attany Nathaly Lima Araújo defendeu na FCTE/UnB um TCC que desenha um processo de construção de bases de experiências para laboratórios de P&D — tema clássico da gestão do conhecimento aplicada à engenharia de software.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

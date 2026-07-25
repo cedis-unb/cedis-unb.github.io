@@ -4,7 +4,7 @@ title: "Inteligência Artificial e Processamento de Linguagem Natural"
 date: 2025-08-02T01:37:18-03:00
 language: pt
 weight: 5
-featured_image: "../assets/images/featured/area_IA.png"
+featured_image: "../assets/images/featured/area_IA.webp"
 summary: A Inteligência Artificial (IA) é um ramo da ciência da computação que busca desenvolver sistemas capazes de imitar e aprimorar habilidades humanas, como o raciocínio, aprendizado e percepção. Uma de suas subáreas mais fascinantes é o Processamento de Linguagem Natural (PLN).
 authorimage: ../assets/images/global/author.webp
 categories:

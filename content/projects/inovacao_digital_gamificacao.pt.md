@@ -30,7 +30,7 @@ publications:
 - 10.1109/FIE61694.2024.10893484
 - 10.1109/FIE61694.2024.10893473
 - 10.1007/978-3-031-64608-9_4
-featured_image: "../assets/images/featured/project_inovacao_digital_gamificacao.png"
+featured_image: "../assets/images/featured/project_inovacao_digital_gamificacao.webp"
 summary: "Projeto guarda-chuva em andamento voltado à pesquisa e ao desenvolvimento de estratégias digitais, gamificação, indicadores e produtos educacionais para ensino, divulgação científica e engenharia de software."
 authorimage: ../assets/images/global/author.webp
 categories:

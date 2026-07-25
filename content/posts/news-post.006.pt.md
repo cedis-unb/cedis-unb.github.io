@@ -4,7 +4,7 @@ date: 2023-03-01T11:10:36+08:00
 draft: false
 weight: 500
 language: pt
-featured_image: "../assets/images/featured/gamification_Alvorecer Feudal.png"
+featured_image: "../assets/images/featured/gamification_Alvorecer Feudal.webp"
 summary: Gamificação inovadora do Prof. Sergio Freitas engaja estudantes de Engenharia de Software com uma abordagem lúdica e eficaz.
 description: Gamificação inovadora do Prof. Sergio Freitas engaja estudantes de Engenharia de Software com uma abordagem lúdica e eficaz.
 author: CEDIS

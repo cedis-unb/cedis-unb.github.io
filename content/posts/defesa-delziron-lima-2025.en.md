@@ -4,7 +4,7 @@ date: 2025-07-17T00:00:00-03:00
 draft: false
 weight: 500
 language: en
-featured_image: "../assets/images/featured/area_Aprendizagem Ativa.png"
+featured_image: "../assets/images/featured/area_Aprendizagem Ativa.webp"
 summary: 'Delziron Braz de Lima and Fellipe Pereira da Costa Silva defended at FCTE/UnB an undergraduate thesis developing an app to support mental health and well-being of students at Campus Gama.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

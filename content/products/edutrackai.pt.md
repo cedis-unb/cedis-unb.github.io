@@ -17,7 +17,7 @@ project: project_framework_preditivo_engajamento
 publications:
 - publication_2026_sergio_antonio_andrade_de_freitas_a_motivation_aware_diagnostic_instrument_for_person
 weight: 10
-featured_image: "../assets/images/featured/edutrack-logo.png"
+featured_image: "../assets/images/featured/edutrack-logo.webp"
 summary: API de inteligência artificial para predição de desempenho acadêmico em ambientes gamificados, complementar à plataforma EduTrack, com apoio acadêmico do CEDIS.
 authorimage: ../assets/images/global/author.webp
 categories:

@@ -4,7 +4,7 @@ date: 2024-09-12T00:00:00-03:00
 draft: false
 weight: 500
 language: pt
-featured_image: "../assets/images/featured/area_IA.png"
+featured_image: "../assets/images/featured/area_IA.webp"
 summary: 'Caio César Oliveira defendeu na FCTE/UnB um TCC que desenvolve inteligência artificial para aprimorar avaliações individuais em disciplinas de Engenharia de Software.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

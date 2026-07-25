@@ -4,7 +4,7 @@ date: 2015-06-15T00:00:00-03:00
 draft: false
 weight: 500
 language: en
-featured_image: "../assets/images/featured/area_Software Quality.png"
+featured_image: "../assets/images/featured/area_Software Quality.webp"
 summary: 'Victor Hugo Alves de Carvalho defended in 2015 at FCTE/UnB an empirical undergraduate thesis comparing programming techniques on Android and measuring the effect of each on app performance and responsiveness.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

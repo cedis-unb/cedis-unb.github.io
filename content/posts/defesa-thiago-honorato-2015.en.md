@@ -4,7 +4,7 @@ date: 2015-06-15T00:00:00-03:00
 draft: false
 weight: 500
 language: en
-featured_image: "../assets/images/featured/area_Engenharia de requisitos.png"
+featured_image: "../assets/images/featured/area_Engenharia de requisitos.webp"
 summary: 'Thiago Silveira Honorato defended an undergraduate thesis proposing a rational method to choose between Content Management Systems for different scenarios — reducing reliance on decisions based on team familiarity alone.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

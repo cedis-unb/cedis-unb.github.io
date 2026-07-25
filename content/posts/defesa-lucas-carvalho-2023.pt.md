@@ -4,7 +4,7 @@ date: 2023-07-27T00:00:00-03:00
 draft: false
 weight: 500
 language: pt
-featured_image: "../assets/images/featured/area_HPC.png"
+featured_image: "../assets/images/featured/area_HPC.webp"
 summary: 'Lucas Ganda Carvalho e Wíctor Bastos Girardi defenderam na FCTE/UnB um TCC que investiga a predição do tempo de execução de código em funções AWS Lambda — informação chave para estimar custo em ambientes serverless.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

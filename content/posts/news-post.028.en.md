@@ -4,7 +4,7 @@ date: 2026-07-10T09:00:00-03:00
 draft: false
 weight: 500
 language: en
-featured_image: "../assets/images/featured/edutrack-logo.png"
+featured_image: "../assets/images/featured/edutrack-logo.webp"
 summary: "The paper A Motivation-Aware Diagnostic Instrument for Personalized and Gamified Computing Education, which underpins EduTrack and EduTrack AI, was accepted at the XXXVII Brazilian Symposium on Computers in Education (SBIE 2026)."
 description: "Paper (submission #27258) authored by Sergio Freitas, Daniel Rodrigues da Rocha, Davi Rodrigues da Rocha, and Mylena Angélica Silva Farias was accepted at SBIE 2026."
 author: CEDIS

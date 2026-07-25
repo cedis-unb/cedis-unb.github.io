@@ -4,7 +4,7 @@ date: 2021-05-27T00:00:00-03:00
 draft: false
 weight: 500
 language: pt
-featured_image: "../assets/images/featured/area_Green Software.png"
+featured_image: "../assets/images/featured/area_Green Software.webp"
 summary: 'Lucas Pereira de Andrade Macêdo e Lucas Siqueira Rodrigues defenderam na FCTE/UnB o TCC que dá origem ao AgroMart — plataforma para aproximar pequenos agricultores e consumidores de produtos orgânicos e artesanais.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

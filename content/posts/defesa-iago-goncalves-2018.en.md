@@ -4,7 +4,7 @@ date: 2018-07-06T00:00:00-03:00
 draft: false
 weight: 500
 language: en
-featured_image: "../assets/images/featured/area_Software Quality.png"
+featured_image: "../assets/images/featured/area_Software Quality.webp"
 summary: 'Iago Rodrigues Gonçalves defended at FCTE/UnB an undergraduate thesis investigating how to identify, measure and communicate technical debt — a problem that gains weight in agile methodologies focused on continuous delivery.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

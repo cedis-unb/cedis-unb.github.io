@@ -4,7 +4,7 @@ date: 2023-12-11T00:00:00-03:00
 draft: false
 weight: 500
 language: pt
-featured_image: "../assets/images/featured/area_IA.png"
+featured_image: "../assets/images/featured/area_IA.webp"
 summary: 'Luis Bruno Fidelis Gomes defendeu na FCTE/UnB um TCC que desenvolve painéis de Business Intelligence para monitoramento por profissionais da Rede de Atenção Psicossocial.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

@@ -4,7 +4,7 @@ date: 2021-05-20T00:00:00-03:00
 draft: false
 weight: 500
 language: pt
-featured_image: "../assets/images/featured/area_Gamificação.png"
+featured_image: "../assets/images/featured/area_Gamificação.webp"
 summary: 'Ateldy Borges Brasil Filho defendeu na FCTE/UnB um TCC que avalia gamificação aplicada em uma empresa júnior — organização com equipe rotativa, ciclos curtos e alta motivação inicial.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

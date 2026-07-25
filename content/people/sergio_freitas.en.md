@@ -5,7 +5,7 @@ profile_level: researcher
 date: 2013-09-01T00:00:00-03:00
 weight: 10
 language: en
-featured_image: "../assets/images/featured/people_Sergio Freitas.png"
+featured_image: "../assets/images/featured/people_Sergio Freitas.webp"
 summary: Full Professor at the University of Brasília (UnB), working in the undergraduate Software Engineering program and the Graduate Program in Applied Computing.
 contact:
   email: sergiofreitas@unb.br

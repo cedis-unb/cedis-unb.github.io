@@ -4,7 +4,7 @@ date: 2021-06-15T00:00:00-03:00
 draft: false
 weight: 500
 language: en
-featured_image: "../assets/images/featured/area_Engenharia de requisitos.png"
+featured_image: "../assets/images/featured/area_Engenharia de requisitos.webp"
 summary: 'Ana Cláudia Alves Mendes Araújo defended at UnB’s PPCA a dissertation applying gamification to the requirements elicitation process in software projects run at a federal public agency.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

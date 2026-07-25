@@ -4,7 +4,7 @@ date: 2023-02-14T00:00:00-03:00
 draft: false
 weight: 500
 language: en
-featured_image: "../assets/images/featured/area_Green Software.png"
+featured_image: "../assets/images/featured/area_Green Software.webp"
 summary: 'André Aben-Athar de Freitas and Pedro Vitor de Salles Cella defended at FCTE/UnB an undergraduate thesis automating the individualized deployment process of AgroMart — allowing each CSA to run its own instance.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

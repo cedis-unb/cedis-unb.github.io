@@ -4,7 +4,7 @@ date: 2019-07-17T00:00:00-03:00
 draft: false
 weight: 500
 language: en
-featured_image: "../assets/images/featured/area_Software Quality.png"
+featured_image: "../assets/images/featured/area_Software Quality.webp"
 summary: 'James Taylor Faria Chaves defended at UnB’s PPCA a dissertation analyzing, through a case study, the encounter between Service-Oriented Architecture (SOA), agile development methods, and Quality Assurance practices.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

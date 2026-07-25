@@ -4,7 +4,7 @@ date: 2020-02-11T00:00:00-03:00
 draft: false
 weight: 500
 language: pt
-featured_image: "../assets/images/featured/area_Arquitetura de Software.png"
+featured_image: "../assets/images/featured/area_Arquitetura de Software.webp"
 summary: 'Felipe Evangelista dos Santos defendeu no PPCA/UnB uma dissertação que integra ferramentas de monitoramento ao Barramento de Serviços da UnB — infraestrutura crítica para a comunicação entre sistemas acadêmicos.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

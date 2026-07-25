@@ -4,7 +4,7 @@ date: 2023-12-21T00:00:00-03:00
 draft: false
 weight: 500
 language: en
-featured_image: "../assets/images/featured/area_Gamificação.png"
+featured_image: "../assets/images/featured/area_Gamificação.webp"
 summary: 'Luciana Santos de Assis defended at UnB’s Applied Computing graduate program a dissertation critically analyzing gamification implementation in organizational contexts — through a case study inside a Brazilian public enterprise.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

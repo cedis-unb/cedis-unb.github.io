@@ -4,7 +4,7 @@ title: "Qualidade de Software"
 date: 2024-02-14T01:37:18-03:00
 language: pt
 weight: 5
-featured_image: "../assets/images/featured/area_Software Quality.png"
+featured_image: "../assets/images/featured/area_Software Quality.webp"
 summary: Um dos pilares fundamentais na engenharia de software, reflete diretamente na satisfação do usuário, na eficiência operacional e na sustentabilidade de sistemas computacionais. 
 authorimage: ../assets/images/global/author.webp
 categories:

@@ -4,7 +4,7 @@ date: 2016-06-15T00:00:00-03:00
 draft: false
 weight: 500
 language: en
-featured_image: "../assets/images/featured/area_Gamificação.png"
+featured_image: "../assets/images/featured/area_Gamificação.webp"
 summary: 'Wilker Mesquita de Assunção defended at FCTE/UnB an undergraduate thesis adapting a virtual learning environment to teach algorithms using gamification techniques.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

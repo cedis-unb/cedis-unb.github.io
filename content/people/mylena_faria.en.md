@@ -5,7 +5,7 @@ profile_level: card_with_page
 date: 2024-02-17T00:52:20-03:00
 weight: 44
 language: en
-featured_image: "../assets/images/featured/people_Mylena Faria.png"
+featured_image: "../assets/images/featured/people_Mylena Faria.webp"
 summary: Undergraduate in Software Engineering at the University of Brasília; PIBIC undergraduate research advisee of Prof. Sergio Freitas in the Canal Ciência Project.
 authorimage: ../assets/images/global/author.webp
 categories: 

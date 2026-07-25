@@ -4,7 +4,7 @@ date: 2016-07-02T00:00:00-03:00
 draft: false
 weight: 500
 language: en
-featured_image: "../assets/images/featured/area_Gamificação.png"
+featured_image: "../assets/images/featured/area_Gamificação.webp"
 summary: 'Ludimila da Bela Cruz defended at FCTE/UnB an undergraduate thesis proposing a tool to support teams building gamification projects, anchoring the process in structured motivational elements.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

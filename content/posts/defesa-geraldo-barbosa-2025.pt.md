@@ -4,7 +4,7 @@ date: 2025-02-19T00:00:00-03:00
 draft: false
 weight: 500
 language: pt
-featured_image: "../assets/images/featured/area_Engenharia de requisitos.png"
+featured_image: "../assets/images/featured/area_Engenharia de requisitos.webp"
 summary: 'Geraldo Victor Alves Barbosa e João Victor de Oliveira Matos defenderam na FCTE/UnB um TCC que investiga o uso do ChatGPT-4o no processo de elicitação, descoberta e declaração de requisitos.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

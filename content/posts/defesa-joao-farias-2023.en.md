@@ -4,7 +4,7 @@ date: 2023-07-24T00:00:00-03:00
 draft: false
 weight: 500
 language: en
-featured_image: "../assets/images/featured/area_Gamificação.png"
+featured_image: "../assets/images/featured/area_Gamificação.webp"
 summary: 'João Vitor Lopes de Farias defended at FCTE/UnB an undergraduate thesis examining the use of RPGs as the backbone of a learning process — combining narrative, roles and challenges with clear pedagogical goals.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

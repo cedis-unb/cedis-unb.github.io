@@ -5,7 +5,7 @@ profile_level: researcher
 date: 2018-03-01T00:00:00-03:00
 weight: 50
 language: pt
-featured_image: "../assets/images/featured/people_Fabiana Mendes.png"
+featured_image: "../assets/images/featured/people_Fabiana Mendes.webp"
 summary: Professora Associada da Universidade de Brasília (UnB), atuando no curso de graduação em Engenharia de Software. 
 contact:
   email: fabianamendes@unb.br

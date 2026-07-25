@@ -6,7 +6,7 @@ weight: 20
 language: pt
 layout: collaborators
 description: "Rede ativa e memória institucional do CEDIS — orientandos, colaboradores, alumni e autores externos em produções do grupo."
-featured_image: "../assets/images/featured/people_Collaborators.png"
+featured_image: "../assets/images/featured/people_Collaborators.webp"
 authorimage: ../assets/images/global/author.webp
 ---
 <div class="space-y-10">

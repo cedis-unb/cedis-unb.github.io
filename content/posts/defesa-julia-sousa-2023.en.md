@@ -4,7 +4,7 @@ date: 2023-12-15T00:00:00-03:00
 draft: false
 weight: 500
 language: en
-featured_image: "../assets/images/featured/area_Aprendizagem Ativa.png"
+featured_image: "../assets/images/featured/area_Aprendizagem Ativa.webp"
 summary: 'Júlia Farias Sousa defended at FCTE/UnB an undergraduate thesis analyzing student perceptions on the use of distance learning in the FCTE/UnB Software Engineering course.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

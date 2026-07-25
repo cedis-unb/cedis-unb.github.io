@@ -23,7 +23,7 @@ products:
 - magra
 - predicao_euploidia
 publications: []
-featured_image: "../assets/images/featured/project_ia_dados_transformacao_digital.png"
+featured_image: "../assets/images/featured/project_ia_dados_transformacao_digital.webp"
 summary: "Projeto guarda-chuva em andamento voltado à aplicação de inteligência artificial, aprendizado de máquina, processamento de linguagem natural e análise de dados em iniciativas de transformação digital."
 authorimage: ../assets/images/global/author.webp
 categories:

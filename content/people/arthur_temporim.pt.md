@@ -5,7 +5,7 @@ profile_level: card_with_page
 date: 2022-02-17T00:50:20-03:00
 weight: 36
 language: pt
-featured_image: "../assets/images/featured/people_Arthur Temporim.png"
+featured_image: "../assets/images/featured/people_Arthur Temporim.webp"
 summary: Mestrando em Computação Aplicada no PPCA da Universidade de Brasília.
 description: O projeto de Mestrado é criar o GCMP (Gamified Chatbot Development Process), um método estruturado para desenvolver chatbots gamificados.
 authorimage: ../assets/images/global/author.webp

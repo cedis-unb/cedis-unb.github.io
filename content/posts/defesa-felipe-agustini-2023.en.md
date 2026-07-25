@@ -4,7 +4,7 @@ date: 2023-07-28T00:00:00-03:00
 draft: false
 weight: 500
 language: en
-featured_image: "../assets/images/featured/area_Arquitetura de Software.png"
+featured_image: "../assets/images/featured/area_Arquitetura de Software.webp"
 summary: 'Felipe Boccardi Silva Agustini and Giovanna Borges Bottino defended at FCTE/UnB an undergraduate thesis integrating a payment module into AgroMart and, in the process, taking on the evolutionary maintenance of the platform.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

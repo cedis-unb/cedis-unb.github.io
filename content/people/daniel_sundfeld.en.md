@@ -5,7 +5,7 @@ profile_level: researcher
 date: 2023-05-01T00:00:00-03:00
 weight: 70
 language: en
-featured_image: "../assets/images/featured/people_Daniel Sundfeld.png"
+featured_image: "../assets/images/featured/people_Daniel Sundfeld.webp"
 summary: Adjunct Professor at the University of Brasília (UnB), working in the Software Engineering undergraduate program with a focus on parallel computing, high-performance computing, GPU, cloud computing, and bioinformatics.
 contact:
   email: daniel.sundfeld@unb.br

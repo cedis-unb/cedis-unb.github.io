@@ -14,7 +14,7 @@ responsible:
 - sergio_freitas
 publications: []
 weight: 14
-featured_image: "../assets/images/featured/produto_MAGRA.png"
+featured_image: "../assets/images/featured/produto_MAGRA.webp"
 summary: O Modelo de Análise na Graduação (MAGRA) permite a previsão de evasão em cursos de graduação presencial.
 authorimage: ../assets/images/global/author.webp
 categories:

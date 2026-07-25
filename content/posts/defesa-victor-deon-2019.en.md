@@ -4,7 +4,7 @@ date: 2019-07-12T00:00:00-03:00
 draft: false
 weight: 500
 language: en
-featured_image: "../assets/images/featured/area_Team work and soft skills.png"
+featured_image: "../assets/images/featured/area_Team work and soft skills.webp"
 summary: 'Victor Hugo Arnaud Deon defended at FCTE/UnB an undergraduate thesis developing PGTBL — an open-source platform to manage Team-Based Learning activities in university courses.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

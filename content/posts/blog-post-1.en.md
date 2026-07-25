@@ -3,7 +3,7 @@ title: "Scholarship selection call"
 date: 2023-05-12T11:10:36+08:00
 draft: false
 language: en
-featured_image: "../assets/images/featured/projeto_Canal Ciência.png"
+featured_image: "../assets/images/featured/projeto_Canal Ciência.webp"
 summary: Call n. 01/2023 - Scholarship selection for gamification project.
 description: Call n. 01/2023 - Scholarship selection for gamification project.
 author: CEDIS

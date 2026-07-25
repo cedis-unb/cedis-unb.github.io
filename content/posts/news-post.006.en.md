@@ -4,7 +4,7 @@ date: 2023-03-01T11:10:36+08:00
 draft: false
 weight: 500
 language: en
-featured_image: "../assets/images/featured/gamification_Alvorecer Feudal.png"
+featured_image: "../assets/images/featured/gamification_Alvorecer Feudal.webp"
 summary: Innovative gamification by Prof. Sergio Freitas engages Software Engineering students with a playful and effective approach.
 description: Innovative gamification by Prof. Sergio Freitas engages Software Engineering students with a playful and effective approach.
 author: CEDIS

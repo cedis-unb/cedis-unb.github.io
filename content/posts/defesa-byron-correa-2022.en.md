@@ -4,7 +4,7 @@ date: 2022-05-09T00:00:00-03:00
 draft: false
 weight: 500
 language: en
-featured_image: "../assets/images/featured/area_Green Software.png"
+featured_image: "../assets/images/featured/area_Green Software.webp"
 summary: 'Byron Kamal Barreto Correa and Igor Guimaraes Veludo defended at FCTE/UnB an important step in AgroMart’s story: open-sourcing the codebase, integrating payment methods, and designing the co-farmer management module.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

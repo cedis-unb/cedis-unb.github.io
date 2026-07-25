@@ -4,7 +4,7 @@ date: 2021-05-27T00:00:00-03:00
 draft: false
 weight: 500
 language: en
-featured_image: "../assets/images/featured/area_Green Software.png"
+featured_image: "../assets/images/featured/area_Green Software.webp"
 summary: 'Lucas Pereira de Andrade Macêdo and Lucas Siqueira Rodrigues defended at FCTE/UnB the undergraduate thesis that gives birth to AgroMart — a platform to bring small farmers closer to consumers of organic and artisanal products.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

@@ -4,7 +4,7 @@ date: 2023-07-03T00:00:00-03:00
 draft: false
 weight: 500
 language: pt
-featured_image: "../assets/images/featured/area_Learning Analytics.png"
+featured_image: "../assets/images/featured/area_Learning Analytics.webp"
 summary: 'Edmilson Cosme da Silva defendeu no PPCA/UnB uma dissertação que aplica algoritmos de aprendizado de máquina para prever evasão acadêmica nos cursos de graduação presencial da UnB.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

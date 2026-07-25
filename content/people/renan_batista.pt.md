@@ -5,7 +5,7 @@ profile_level: card_with_page
 date: 2024-02-17T00:50:20-03:00
 language: pt
 weight: 44
-featured_image: "../assets/images/featured/people_Renan Batista.png"
+featured_image: "../assets/images/featured/people_Renan Batista.webp"
 summary: Graduando em Ciência da Computação, Instituto Federal de Educação Ciência e Tecnologia do Ceará
 authorimage: ../assets/images/global/author.webp
 categories: 

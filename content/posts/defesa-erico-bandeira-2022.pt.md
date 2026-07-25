@@ -4,7 +4,7 @@ date: 2022-05-05T00:00:00-03:00
 draft: false
 weight: 500
 language: pt
-featured_image: "../assets/images/featured/area_Gamificação.png"
+featured_image: "../assets/images/featured/area_Gamificação.webp"
 summary: 'Érico Maximiano Bandeira defendeu na FCTE/UnB um TCC que apresenta o Pixel — ferramenta gamificada voltada ao aprendizado de critérios de usabilidade em avaliações de interface.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

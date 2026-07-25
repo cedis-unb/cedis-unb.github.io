@@ -17,7 +17,7 @@ funding_agencies: []
 products: []
 publications: []
 summary: "Projeto em andamento sobre inovação e eficiência na recuperação de informações de propriedade intelectual do INPI."
-featured_image: "../assets/images/featured/project_servicos_pi.png"
+featured_image: "../assets/images/featured/project_servicos_pi.webp"
 authorimage: ../assets/images/global/author.webp
 categories:
 - project

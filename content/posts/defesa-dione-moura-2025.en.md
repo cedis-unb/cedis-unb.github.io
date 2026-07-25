@@ -4,7 +4,7 @@ date: 2025-01-10T00:00:00-03:00
 draft: false
 weight: 500
 language: en
-featured_image: "../assets/images/featured/area_Arquitetura de Software.png"
+featured_image: "../assets/images/featured/area_Arquitetura de Software.webp"
 summary: 'Dione Ramos Canuto Moura defended at UnB’s Applied Computing graduate program a dissertation analyzing the usability of SiCaPEx — the Brazilian Army personnel registration system — combining SUS, Nielsen’s heuristics, and implemented improvement proposals.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

@@ -4,7 +4,7 @@ date: 2024-09-17T00:00:00-03:00
 draft: false
 weight: 500
 language: en
-featured_image: "../assets/images/featured/area_Arquitetura de Software.png"
+featured_image: "../assets/images/featured/area_Arquitetura de Software.webp"
 summary: 'Christian Fleury Alencar Siqueira and Thiago Siqueira Gomes defended at FCTE/UnB an undergraduate thesis crossing AgroMart’s last mile: integrating modules, tuning deployment, and publishing the app for public use.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

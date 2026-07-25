@@ -4,7 +4,7 @@ date: 2023-12-21T00:00:00-03:00
 draft: false
 weight: 500
 language: en
-featured_image: "../assets/images/featured/area_Engenharia de requisitos.png"
+featured_image: "../assets/images/featured/area_Engenharia de requisitos.webp"
 summary: 'Giulia Lobo Barros defended at FCTE/UnB an undergraduate thesis investigating improvement of the software requirements engineering process — under joint advising of Cristiane Ramos and Ricardo Ajax.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

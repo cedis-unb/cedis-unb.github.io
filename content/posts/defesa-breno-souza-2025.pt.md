@@ -4,7 +4,7 @@ date: 2025-07-23T00:00:00-03:00
 draft: false
 weight: 500
 language: pt
-featured_image: "../assets/images/featured/area_IA.png"
+featured_image: "../assets/images/featured/area_IA.webp"
 summary: 'Breno Henrique de Souza e Giulia Domingues de Alcantara defenderam na FCTE/UnB um TCC que centraliza informações administrativas da FCTE em um chatbot com apoio de inteligência artificial.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

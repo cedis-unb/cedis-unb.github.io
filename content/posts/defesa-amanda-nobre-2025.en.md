@@ -4,7 +4,7 @@ date: 2025-07-21T00:00:00-03:00
 draft: false
 weight: 500
 language: en
-featured_image: "../assets/images/featured/area_IA.png"
+featured_image: "../assets/images/featured/area_IA.webp"
 summary: 'Amanda Jeniffer Pereira Nobre and Ana Carolina Rodrigues Leite defended at FCTE/UnB an undergraduate thesis running a systematic literature mapping on the ethical challenges tied to bias in AI algorithms.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

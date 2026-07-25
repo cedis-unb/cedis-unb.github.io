@@ -4,7 +4,7 @@ date: 2025-12-03T00:00:00-03:00
 draft: false
 weight: 500
 language: en
-featured_image: "../assets/images/featured/area_Transformação Digital.png"
+featured_image: "../assets/images/featured/area_Transformação Digital.webp"
 summary: 'A dissertation defended at UnB’s Applied Computing graduate program proposes a framework to assess DevOps maturity in banking teams by combining DORA metrics, document analysis and sociotechnical triangulation.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

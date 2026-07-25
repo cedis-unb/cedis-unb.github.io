@@ -5,7 +5,7 @@ profile_level: card_with_page
 date: 2024-02-17T00:51:15-03:00
 weight: 44
 language: pt
-featured_image: "../assets/images/featured/people_Marcus Martins.png"
+featured_image: "../assets/images/featured/people_Marcus Martins.webp"
 summary: Graduando em Engenharia de Software na Universidade de Brasília; orientando PIBIC da Profa. Cristiane Ramos no Projeto Canal Ciência.
 authorimage: ../assets/images/global/author.webp
 categories: 
