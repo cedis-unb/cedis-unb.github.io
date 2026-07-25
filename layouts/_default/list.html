@@ -52,7 +52,7 @@
     {{ $totalPages = .TotalPages }}
 {{ end }}
 
-<main class="bg-[radial-gradient(circle_at_top,_rgba(197,39,47,0.16),_transparent_28%),linear-gradient(180deg,_#f5f5f4_0%,_#ffffff_38%,_#f5f5f4_100%)] text-gray-950 dark:bg-gray-900 dark:text-gray-100">
+<main class="bg-[radial-gradient(circle_at_top,_rgba(197,39,47,0.16),_transparent_28%),linear-gradient(180deg,_#f5f5f4_0%,_#ffffff_38%,_#f5f5f4_100%)] text-gray-950 dark:bg-none dark:bg-gray-900 dark:text-gray-100">
     <section class="border-b border-black/5 {{ if $isShowcaseList }}bg-transparent{{ else }}bg-gray-950{{ end }} text-white">
         <div class="mx-auto max-w-screen-xl px-4 {{ if or $isCompactTerm $isShowcaseList }}py-10 md:py-12{{ else }}py-16 md:py-20{{ end }} md:px-6 lg:px-8">
             {{ if or $isCompactTerm $isShowcaseList }}
@@ -73,26 +73,26 @@
                     <h1 class="mt-5 max-w-4xl text-4xl font-black tracking-tight text-white md:text-6xl">
                         {{ $title }}
                     </h1>
-                    <p class="mt-5 max-w-2xl text-base leading-7 text-white/72 md:text-lg">
+                    <p class="mt-5 max-w-2xl text-base leading-7 text-white/75 md:text-lg">
                         {{ with .Description }}{{ . }}{{ else }}{{ $intro }}{{ end }}
                     </p>
                 </div>
 
                 <div class="grid gap-3 sm:grid-cols-3 lg:min-w-[30rem] lg:max-w-xl lg:flex-1">
                     <div class="rounded-3xl border border-white/10 bg-white/[0.06] p-5 shadow-[0_18px_60px_rgba(0,0,0,0.24)] backdrop-blur">
-                        <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-white/72">{{ $resultsLabel }}</div>
+                        <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-white/75">{{ $resultsLabel }}</div>
                         <div class="mt-2 text-3xl font-black text-white">{{ $totalResults }}</div>
-                        <div class="mt-2 text-sm text-white/58">{{ $contentItemsLabel }}</div>
+                        <div class="mt-2 text-sm text-white/60">{{ $contentItemsLabel }}</div>
                     </div>
                     <div class="rounded-3xl border border-white/10 bg-white/[0.06] p-5 shadow-[0_18px_60px_rgba(0,0,0,0.24)] backdrop-blur">
-                        <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-white/72">{{ $pageLabel }}</div>
+                        <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-white/75">{{ $pageLabel }}</div>
                         <div class="mt-2 text-3xl font-black text-white">{{ $currentPage }}</div>
-                        <div class="mt-2 text-sm text-white/58">{{ cond $isPt (printf "de %d" $totalPages) (printf "of %d" $totalPages) }}</div>
+                        <div class="mt-2 text-sm text-white/60">{{ cond $isPt (printf "de %d" $totalPages) (printf "of %d" $totalPages) }}</div>
                     </div>
                     <div class="rounded-3xl border border-white/10 bg-white/[0.06] p-5 shadow-[0_18px_60px_rgba(0,0,0,0.24)] backdrop-blur">
-                        <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-white/72">{{ $collectionLabel }}</div>
+                        <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-white/75">{{ $collectionLabel }}</div>
                         <div class="mt-2 text-2xl font-black text-white">{{ with $taxonomyName }}{{ . }}{{ else }}{{ i18n "ui_content" }}{{ end }}</div>
-                        <div class="mt-2 text-sm text-white/58">{{ i18n "ui_editorial_navigation" }}</div>
+                        <div class="mt-2 text-sm text-white/60">{{ i18n "ui_editorial_navigation" }}</div>
                     </div>
                 </div>
             </div>

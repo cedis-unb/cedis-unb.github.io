@@ -1,6 +1,6 @@
 <!-- layouts/shortcodes/tags.html -->
 {{ if .Page.Params.tags }}
-<div class="flex pt-6 font-medium text-primary-600 dark:text-primary-100 text-md">
+<div class="flex pt-6 font-medium text-primary-600 dark:text-primary-100 text-base">
     <span class="pr-2 font-black">{{ i18n "seemore" }}</span>
     <span>
         {{ range $index, $tag := .Page.Params.tags }}

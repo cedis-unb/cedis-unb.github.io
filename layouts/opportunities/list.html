@@ -25,27 +25,27 @@
   <section class="border-b border-slate-200/80 bg-slate-950 text-white dark:border-white/10">
     <div class="mx-auto max-w-screen-xl px-4 py-12 md:px-6 lg:px-8 lg:py-16">
       {{ partial "breadcrumbs.html" . }}
-      <span class="inline-flex rounded-full border border-white/15 bg-white/10 px-4 py-1 text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-white/72">{{ .Params.eyebrow | default (cond $isPt "Chamadas" "Calls") }}</span>
+      <span class="inline-flex rounded-full border border-white/15 bg-white/10 px-4 py-1 text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-white/75">{{ .Params.eyebrow | default (cond $isPt "Chamadas" "Calls") }}</span>
       <h1 class="mt-5 max-w-4xl text-4xl font-black tracking-tight md:text-5xl">{{ .Title }}</h1>
-      {{ with .Params.description }}<p class="mt-4 max-w-2xl text-base leading-7 text-white/72 md:text-lg">{{ . }}</p>{{ end }}
+      {{ with .Params.description }}<p class="mt-4 max-w-2xl text-base leading-7 text-white/75 md:text-lg">{{ . }}</p>{{ end }}
       <div class="mt-8 grid gap-3 sm:grid-cols-3">
-        <div class="rounded-[1.25rem] border border-white/10 bg-white/[0.06] px-5 py-4"><div class="text-3xl font-black">{{ len $openItems }}</div><div class="mt-1 text-sm text-white/72">{{ cond $isPt "abertas" "open" }}</div></div>
-        <div class="rounded-[1.25rem] border border-white/10 bg-white/[0.06] px-5 py-4"><div class="text-3xl font-black">{{ len $archivedItems }}</div><div class="mt-1 text-sm text-white/72">{{ cond $isPt "arquivadas" "archived" }}</div></div>
-        <div class="rounded-[1.25rem] border border-white/10 bg-white/[0.06] px-5 py-4"><div class="text-3xl font-black">{{ len $audiences }}</div><div class="mt-1 text-sm text-white/72">{{ cond $isPt "públicos" "audiences" }}</div></div>
+        <div class="rounded-[1.25rem] border border-white/10 bg-white/[0.06] px-5 py-4"><div class="text-3xl font-black">{{ len $openItems }}</div><div class="mt-1 text-sm text-white/75">{{ cond $isPt "abertas" "open" }}</div></div>
+        <div class="rounded-[1.25rem] border border-white/10 bg-white/[0.06] px-5 py-4"><div class="text-3xl font-black">{{ len $archivedItems }}</div><div class="mt-1 text-sm text-white/75">{{ cond $isPt "arquivadas" "archived" }}</div></div>
+        <div class="rounded-[1.25rem] border border-white/10 bg-white/[0.06] px-5 py-4"><div class="text-3xl font-black">{{ len $audiences }}</div><div class="mt-1 text-sm text-white/75">{{ cond $isPt "públicos" "audiences" }}</div></div>
       </div>
     </div>
   </section>
 
   <section class="mx-auto max-w-screen-xl px-4 py-10 md:px-6 lg:px-8 lg:py-14" x-data="{ audience: '' }">
     <div class="mb-6 flex flex-wrap items-end gap-3 rounded-[1.25rem] border border-slate-200 bg-white/90 p-4 shadow-sm dark:border-white/10 dark:bg-white/[0.04]">
-      <label class="flex min-w-56 flex-col gap-1 text-xs font-semibold text-slate-700 dark:text-white/78">
+      <label class="flex min-w-56 flex-col gap-1 text-xs font-semibold text-slate-700 dark:text-white/80">
         <span>{{ cond $isPt "Público" "Audience" }}</span>
         <select x-model="audience" class="rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm dark:border-white/10 dark:bg-slate-900">
           <option value="">{{ cond $isPt "Todos" "All" }}</option>
           {{ range $audiences }}<option value="{{ . }}">{{ partial "translated-label.html" (dict "value" .) }}</option>{{ end }}
         </select>
       </label>
-      <button type="button" @click="audience=''" class="rounded-full border border-slate-300 bg-white px-4 py-2 text-sm font-semibold text-slate-700 transition-colors hover:border-primary-400 hover:text-primary-700 dark:border-white/10 dark:bg-white/[0.06] dark:text-white/78">{{ cond $isPt "Limpar" "Clear" }}</button>
+      <button type="button" @click="audience=''" class="rounded-full border border-slate-300 bg-white px-4 py-2 text-sm font-semibold text-slate-700 transition-colors hover:border-primary-400 hover:text-primary-700 dark:border-white/10 dark:bg-white/[0.06] dark:text-white/80">{{ cond $isPt "Limpar" "Clear" }}</button>
       <a href="{{ "/junte-se/" | relLangURL }}" class="rounded-full bg-primary-600 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-primary-500">{{ cond $isPt "Ver trilhas Participe" "See participation paths" }}</a>
     </div>
 

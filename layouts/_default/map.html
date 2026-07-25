@@ -93,7 +93,7 @@
       {{ partial "breadcrumbs.html" . }}
       <span class="mt-4 inline-flex rounded-full border border-black/10 bg-white px-4 py-1 text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-gray-500 dark:border-white/10 dark:bg-white/[0.06] dark:text-white/55">{{ $eyebrow }}</span>
       <h1 class="mt-5 max-w-4xl text-4xl font-black tracking-tight text-gray-950 dark:text-white md:text-5xl">{{ .Title }}</h1>
-      <p class="mt-4 max-w-3xl text-base leading-8 text-gray-600 dark:text-white/72 md:text-lg">{{ $intro }}</p>
+      <p class="mt-4 max-w-3xl text-base leading-8 text-gray-600 dark:text-white/75 md:text-lg">{{ $intro }}</p>
     </div>
   </section>
 
@@ -104,32 +104,32 @@
       <div>
         <div class="mb-4 flex flex-wrap gap-2">
           <button type="button" @click="setFilter('all')"
-                  :class="filter==='all' ? 'border-primary-500 bg-primary-500 text-white' : 'border-black/10 bg-white text-gray-700 hover:border-primary-400 hover:text-primary-700 dark:border-white/10 dark:bg-white/[0.04] dark:text-white/78'"
+                  :class="filter==='all' ? 'border-primary-500 bg-primary-500 text-white' : 'border-black/10 bg-white text-gray-700 hover:border-primary-400 hover:text-primary-700 dark:border-white/10 dark:bg-white/[0.04] dark:text-white/80'"
                   class="rounded-full border px-4 py-1.5 text-sm font-semibold transition-colors">{{ i18n "ui_map_filter_all" }}</button>
           <button type="button" @click="setFilter('area')"
-                  :class="filter==='area' ? 'border-blue-500 bg-blue-500 text-white' : 'border-black/10 bg-white text-gray-700 hover:border-blue-400 hover:text-blue-700 dark:border-white/10 dark:bg-white/[0.04] dark:text-white/78'"
+                  :class="filter==='area' ? 'border-blue-500 bg-blue-500 text-white' : 'border-black/10 bg-white text-gray-700 hover:border-blue-400 hover:text-blue-700 dark:border-white/10 dark:bg-white/[0.04] dark:text-white/80'"
                   class="rounded-full border px-4 py-1.5 text-sm font-semibold transition-colors">
             <span class="inline-block h-2 w-2 rounded-full bg-blue-500 mr-1.5"></span>{{ i18n "ui_map_filter_areas" }}
           </button>
           <button type="button" @click="setFilter('researcher')"
-                  :class="filter==='researcher' ? 'border-primary-500 bg-primary-500 text-white' : 'border-black/10 bg-white text-gray-700 hover:border-primary-400 hover:text-primary-700 dark:border-white/10 dark:bg-white/[0.04] dark:text-white/78'"
+                  :class="filter==='researcher' ? 'border-primary-500 bg-primary-500 text-white' : 'border-black/10 bg-white text-gray-700 hover:border-primary-400 hover:text-primary-700 dark:border-white/10 dark:bg-white/[0.04] dark:text-white/80'"
                   class="rounded-full border px-4 py-1.5 text-sm font-semibold transition-colors">
             <span class="inline-block h-2 w-2 rounded-full bg-primary-500 mr-1.5"></span>{{ i18n "ui_map_filter_researchers" }}
           </button>
           <button type="button" @click="setFilter('project')"
-                  :class="filter==='project' ? 'border-emerald-500 bg-emerald-500 text-white' : 'border-black/10 bg-white text-gray-700 hover:border-emerald-400 hover:text-emerald-700 dark:border-white/10 dark:bg-white/[0.04] dark:text-white/78'"
+                  :class="filter==='project' ? 'border-emerald-500 bg-emerald-500 text-white' : 'border-black/10 bg-white text-gray-700 hover:border-emerald-400 hover:text-emerald-700 dark:border-white/10 dark:bg-white/[0.04] dark:text-white/80'"
                   class="rounded-full border px-4 py-1.5 text-sm font-semibold transition-colors">
             <span class="inline-block h-2 w-2 rounded-full bg-emerald-500 mr-1.5"></span>{{ i18n "ui_map_filter_projects" }}
           </button>
           <button type="button" @click="setFilter('umbrella')"
-                  :class="filter==='umbrella' ? 'border-violet-500 bg-violet-500 text-white' : 'border-black/10 bg-white text-gray-700 hover:border-violet-400 hover:text-violet-700 dark:border-white/10 dark:bg-white/[0.04] dark:text-white/78'"
+                  :class="filter==='umbrella' ? 'border-violet-500 bg-violet-500 text-white' : 'border-black/10 bg-white text-gray-700 hover:border-violet-400 hover:text-violet-700 dark:border-white/10 dark:bg-white/[0.04] dark:text-white/80'"
                   class="rounded-full border px-4 py-1.5 text-sm font-semibold transition-colors">
             <span class="inline-block h-2 w-2 rounded-full bg-violet-500 mr-1.5"></span>{{ cond $isPt "Frentes" "Fronts" }}
           </button>
         </div>
         <div class="relative overflow-hidden rounded-[2rem] border border-black/5 bg-white/90 shadow-[0_18px_60px_rgba(15,23,42,0.08)] dark:border-white/10 dark:bg-white/[0.04]">
           <svg id="areas-map-svg" class="block w-full" viewBox="0 0 900 640" role="img" aria-label="{{ i18n "ui_map_svg_alt" }}"></svg>
-          <div class="pointer-events-none absolute right-3 top-3 rounded-full border border-black/10 bg-white/90 px-3 py-1 text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-gray-500 dark:border-white/10 dark:bg-white/[0.04] dark:text-white/72" x-show="loading">
+          <div class="pointer-events-none absolute right-3 top-3 rounded-full border border-black/10 bg-white/90 px-3 py-1 text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-gray-500 dark:border-white/10 dark:bg-white/[0.04] dark:text-white/75" x-show="loading">
             {{ i18n "ui_map_loading" }}
           </div>
         </div>
@@ -138,16 +138,16 @@
 
       <aside class="space-y-4 lg:sticky lg:top-24">
         <div class="rounded-[1.5rem] border border-black/5 bg-white/90 p-5 shadow-[0_18px_60px_rgba(15,23,42,0.08)] dark:border-white/10 dark:bg-white/[0.04]">
-          <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-gray-500 dark:text-white/72">{{ i18n "ui_map_stats" }}</div>
+          <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-gray-500 dark:text-white/75">{{ i18n "ui_map_stats" }}</div>
           <ul class="mt-3 space-y-2 text-sm">
-            <li class="flex items-center justify-between"><span class="text-gray-700 dark:text-white/78"><span class="inline-block h-2 w-2 rounded-full bg-blue-500 mr-2"></span>{{ i18n "ui_map_filter_areas" }}</span><span class="font-bold text-gray-900 dark:text-white" x-text="counts.area"></span></li>
-            <li class="flex items-center justify-between"><span class="text-gray-700 dark:text-white/78"><span class="inline-block h-2 w-2 rounded-full bg-primary-500 mr-2"></span>{{ i18n "ui_map_filter_researchers" }}</span><span class="font-bold text-gray-900 dark:text-white" x-text="counts.researcher"></span></li>
-            <li class="flex items-center justify-between"><span class="text-gray-700 dark:text-white/78"><span class="inline-block h-2 w-2 rounded-full bg-emerald-500 mr-2"></span>{{ i18n "ui_map_filter_projects" }}</span><span class="font-bold text-gray-900 dark:text-white" x-text="counts.project"></span></li>
-            <li class="flex items-center justify-between"><span class="text-gray-700 dark:text-white/78"><span class="inline-block h-2 w-2 rounded-full bg-violet-500 mr-2"></span>{{ cond $isPt "Frentes" "Fronts" }}</span><span class="font-bold text-gray-900 dark:text-white" x-text="counts.umbrella"></span></li>
+            <li class="flex items-center justify-between"><span class="text-gray-700 dark:text-white/80"><span class="inline-block h-2 w-2 rounded-full bg-blue-500 mr-2"></span>{{ i18n "ui_map_filter_areas" }}</span><span class="font-bold text-gray-900 dark:text-white" x-text="counts.area"></span></li>
+            <li class="flex items-center justify-between"><span class="text-gray-700 dark:text-white/80"><span class="inline-block h-2 w-2 rounded-full bg-primary-500 mr-2"></span>{{ i18n "ui_map_filter_researchers" }}</span><span class="font-bold text-gray-900 dark:text-white" x-text="counts.researcher"></span></li>
+            <li class="flex items-center justify-between"><span class="text-gray-700 dark:text-white/80"><span class="inline-block h-2 w-2 rounded-full bg-emerald-500 mr-2"></span>{{ i18n "ui_map_filter_projects" }}</span><span class="font-bold text-gray-900 dark:text-white" x-text="counts.project"></span></li>
+            <li class="flex items-center justify-between"><span class="text-gray-700 dark:text-white/80"><span class="inline-block h-2 w-2 rounded-full bg-violet-500 mr-2"></span>{{ cond $isPt "Frentes" "Fronts" }}</span><span class="font-bold text-gray-900 dark:text-white" x-text="counts.umbrella"></span></li>
           </ul>
         </div>
         <div class="rounded-[1.5rem] border border-black/5 bg-white/90 p-5 shadow-[0_18px_60px_rgba(15,23,42,0.08)] dark:border-white/10 dark:bg-white/[0.04]" x-show="selected" x-cloak>
-          <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-gray-500 dark:text-white/72" x-text="selected ? selected.typeLabel : ''"></div>
+          <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-gray-500 dark:text-white/75" x-text="selected ? selected.typeLabel : ''"></div>
           <div class="mt-2 text-lg font-black tracking-tight text-gray-900 dark:text-white" x-text="selected ? selected.label : ''"></div>
           <div class="mt-1 text-xs text-gray-500 dark:text-white/60" x-show="selected && selected.count > 0"><span x-text="selected ? selected.count : 0"></span> {{ i18n "ui_map_connections" }}</div>
           <template x-if="selected && selected.url">
@@ -157,8 +157,8 @@
           </template>
         </div>
         <div class="rounded-[1.5rem] border border-black/5 bg-white/90 p-5 shadow-[0_18px_60px_rgba(15,23,42,0.08)] dark:border-white/10 dark:bg-white/[0.04]">
-          <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-gray-500 dark:text-white/72">{{ i18n "ui_map_legend" }}</div>
-          <ul class="mt-3 space-y-2 text-xs text-gray-600 dark:text-white/72">
+          <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-gray-500 dark:text-white/75">{{ i18n "ui_map_legend" }}</div>
+          <ul class="mt-3 space-y-2 text-xs text-gray-600 dark:text-white/75">
             <li><span class="inline-block h-2.5 w-2.5 rounded-full bg-blue-500 mr-2 align-middle"></span>{{ i18n "ui_map_legend_area" }}</li>
             <li><span class="inline-block h-2.5 w-2.5 rounded-full bg-primary-500 mr-2 align-middle"></span>{{ i18n "ui_map_legend_researcher" }}</li>
             <li><span class="inline-block h-2.5 w-2.5 rounded-full bg-emerald-500 mr-2 align-middle"></span>{{ i18n "ui_map_legend_project" }}</li>
