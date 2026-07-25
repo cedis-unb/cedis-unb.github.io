@@ -1,0 +1,83 @@
+{{/*
+  card.html — componente parametrizável de card
+
+  Introduzido em 2026-07-25 como parte do PLANO-DESIGN.md (Fase 3b).
+  Consolida os padrões profile-project-card / researcher-highlights /
+  featured-publications sob um único partial. As classes BEM continuam
+  as originais para preservar o CSS existente em profile.css.
+
+  Contrato (dict):
+    - variant:       "project" | "publication" | "highlight"  (obrigatório)
+    - title:         string  (obrigatório)
+    - href:          string  (obrigatório para variant="project"; opcional para outros)
+    - image:         resource ou nil  (opcional; só usado se variant="project")
+    - image_alt:     string  (obrigatório se image != nil)
+    - meta:          string  (opcional — ex.: "Encerrado · 2020-2023")
+    - summary:       string  (opcional)
+    - cta_label:     string  (obrigatório para variant="project")
+    - open_label:    string  (obrigatório para variant="project"; usado no aria-label da imagem)
+
+  Uso:
+    {{ partial "card.html" (dict
+      "variant"    "project"
+      "title"      .Title
+      "href"       .RelPermalink
+      "image"      (resources.Get $path)
+      "image_alt"  (printf "%s: %s" (i18n "ui_alt_project_visual") .Title)
+      "meta"       $dateLabel
+      "summary"    ($summary | truncate 150)
+      "cta_label"  $projectOpenLabel
+      "open_label" $projectOpenLabel
+    ) }}
+*/ -}}
+
+{{- $variant  := .variant | default "project" -}}
+{{- $title    := .title -}}
+{{- $href     := .href -}}
+{{- $image    := .image -}}
+{{- $imageAlt := .image_alt | default $title -}}
+{{- $meta     := .meta -}}
+{{- $summary  := .summary -}}
+{{- $cta      := .cta_label -}}
+{{- $open     := .open_label | default $cta -}}
+
+{{- if not $title -}}
+  {{- errorf "partial card.html: field 'title' is required (variant=%q)" $variant -}}
+{{- end -}}
+
+{{- if eq $variant "project" -}}
+  {{- if not $href    -}}{{- errorf "partial card.html: variant=project requires 'href'" -}}{{- end -}}
+  {{- if not $cta     -}}{{- errorf "partial card.html: variant=project requires 'cta_label'" -}}{{- end -}}
+  <article class="profile-project-card">
+    <a href="{{ $href }}" class="profile-project-card__media" aria-label="{{ $open }}: {{ $title }}">
+      {{- with $image -}}
+        {{- $processed := .Fill "720x420 webp q88" -}}
+        <img src="{{ $processed.RelPermalink }}" alt="{{ $imageAlt }}" loading="lazy">
+      {{- else -}}
+        <span>{{ $title }}</span>
+      {{- end -}}
+    </a>
+    <div class="profile-project-card__body">
+      {{- with $meta }}<p class="profile-project-card__meta">{{ . }}</p>{{ end -}}
+      <h3><a href="{{ $href }}">{{ $title }}</a></h3>
+      {{- with $summary }}<p>{{ . }}</p>{{ end -}}
+      <a href="{{ $href }}" class="profile-project-card__link">
+        <span>{{ $cta }}</span>
+        <span aria-hidden="true">→</span>
+      </a>
+    </div>
+  </article>
+{{- else if eq $variant "highlight" -}}
+  <article>
+    <span>{{ $meta }}</span>
+    <strong>{{ $title }}</strong>
+  </article>
+{{- else if eq $variant "publication" -}}
+  <li>
+    {{- with $meta }}<p class="featured-publications__meta">{{ . }}</p>{{ end -}}
+    <h3>{{ if $href }}<a href="{{ $href }}">{{ $title }}</a>{{ else }}{{ $title }}{{ end }}</h3>
+    {{- with $summary }}<p>{{ . }}</p>{{ end -}}
+  </li>
+{{- else -}}
+  {{- errorf "partial card.html: unknown variant %q (expected: project|publication|highlight)" $variant -}}
+{{- end -}}
