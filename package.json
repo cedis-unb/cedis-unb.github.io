@@ -58,6 +58,7 @@
     "pagefind": "^1.5.2"
   },
   "overrides": {
+    "brace-expansion": ">=5.0.8",
     "cross-spawn": "^7.0.6",
     "tmp": "^0.2.6",
     "uuid": "^11.1.1"
