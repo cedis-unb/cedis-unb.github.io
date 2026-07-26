@@ -1,28 +1,41 @@
-/* assets */ 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* ============================================================
+   main.css — entrada Tailwind CSS 4 (integração nativa Hugo)
+   ------------------------------------------------------------
+   Reescrito 2026-07-26 (spike Alt 4 da migração Tailwind 4).
+   Este arquivo é a ÚNICA entrada CSS servida ao browser via
+   css.TailwindCSS no head.html.
+   ============================================================ */
 
-font-family: ui-sans-serif,
-system-ui,
--apple-system,
-BlinkMacSystemFont,
-"Segoe UI",
-Roboto,
-"Helvetica Neue",
-Arial,
-"Noto Sans",
-sans-serif,
-Apple Color Emoji,
-Segoe UI Emoji,
-NotoColorEmoji,
-Segoe UI Symbol,
-Android Emoji,
-EmojiSymbols;
-/* Custom CSS */
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
 
+/* Fonte principal de classes: hugo_stats.json (gerado por
+   [build.buildStats] enable = true em hugo.yaml). */
+@source "hugo_stats.json";
+
+/* Safety net — cobre classes em shortcodes/printf raros que
+   possam não aparecer no stats de um build parcial. Custo <1 KB. */
+@source "../../layouts";
+
+/* Preserva tokens (accent/primary/secondary, typography theme,
+   animations customizadas) declarados no config JS legado.
+   Path é relativo à raiz do projeto (CWD do processo Hugo/Tailwind CLI). */
+@config "./tailwind.config.js";
+
+/* -----------------------------------------------------------
+   Regras herdadas — carregadas por último para vencer utilities
+   Tailwind quando necessário.
+   ----------------------------------------------------------- */
+
+/* Título H1 dentro de .prose (não .not-prose) fica branco;
+   quebra o default do plugin typography. Origem histórica. */
 .prose :where(h1):not(:where([class~="not-prose"] *)) {
     color: white !important;
 }
 
-/* Custom CSS end */
+/* Overrides globais + @media print (ver overrides.css). */
+@import "./overrides.css";
+
+/* Perfil de pesquisador (#profile-content). Depende das
+   custom properties --rp-* / --brand-* definidas no arquivo. */
+@import "./profile.css";
