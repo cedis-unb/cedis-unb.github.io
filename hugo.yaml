@@ -612,7 +612,23 @@ privacy:
     disable: false
     privacyEnhanced: true
 
+build:
+  # Necessário para Tailwind CSS 4 via css.TailwindCSS.
+  # Hugo grava hugo_stats.json na raiz do projeto com classes/IDs/tags
+  # renderizados; Tailwind lê via @source "hugo_stats.json" em main.css.
+  buildStats:
+    enable: true
+  cachebusters:
+    - source: '(postcss|tailwind)\.config\.(js|mjs|cjs)'
+      target: '(css|styles|scss|sass)'
+    - source: 'assets/watching/hugo_stats\.json'
+      target: 'css'
+    - source: '(assets/.*\.(js|ts|jsx|tsx))'
+      target: 'js'
+
 module:
   hugoVersion:
+    # Aumentado para 0.161.0 (mínimo para css.TailwindCSS) em 2026-07-26
+    # como parte da migração para Tailwind 4.
     extended: true
-    min: "0.104.0"
+    min: "0.161.0"
