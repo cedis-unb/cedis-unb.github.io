@@ -25,7 +25,7 @@ A pesquisa articula um estudo de caso em uma empresa pública brasileira e cruza
 
 A dissertação se articula ao artigo [_Gamification in Organizational Contexts: A Systematic Literature Review_](https://doi.org/10.1007/978-3-031-35969-9_23), publicado nos anais da 25th International Conference on Human-Computer Interaction. O artigo sistematiza a literatura que sustenta o recorte empírico desenvolvido na defesa.
 
-A defesa aconteceu em 27 de dezembro de 2023 em Brasília. A banca examinadora foi presidida pelo orientador, Prof. Dr. Sergio Antônio Andrade de Freitas (CIC/UnB), e composta pelo Prof. Dr. Charles Andryê Galvão Madeira (IMD/UFRN) e pelo Dr. Tiago Barros Pontes e Silva (IDA/UnB). O Prof. Dr. Gladston Luiz da Silva, à época coordenador do PPCA, também assinou a folha final.
+A defesa aconteceu em 27 de dezembro de 2023 em Brasília. A banca examinadora foi presidida pelo orientador, Prof. Dr. Sergio Antônio Andrade de Freitas (CIC/UnB), e composta pelo Prof. Dr. Charles Andryê Galvão Madeira (IMD/UFRN) e pelo Dr. Tiago Barros Pontes e Silva (IDA/UnB).
 
 A dissertação está disponível na íntegra no [Repositório Institucional da UnB](https://repositorio.unb.br/handle/10482/48525).
 

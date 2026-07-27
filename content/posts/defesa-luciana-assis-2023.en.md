@@ -25,7 +25,7 @@ The research articulates a case study in a Brazilian public enterprise and cross
 
 The dissertation is connected to the paper [_Gamification in Organizational Contexts: A Systematic Literature Review_](https://doi.org/10.1007/978-3-031-35969-9_23), published in the proceedings of the 25th International Conference on Human-Computer Interaction. The paper systematizes the literature that supports the empirical scope developed in the defense.
 
-The defense took place on December 27, 2023 in Brasília. The examining committee was chaired by the advisor, Prof. Dr. Sergio Antônio Andrade de Freitas (CIC/UnB), and composed of Prof. Dr. Charles Andryê Galvão Madeira (IMD/UFRN) and Dr. Tiago Barros Pontes e Silva (IDA/UnB). Prof. Dr. Gladston Luiz da Silva, then coordinator of the PPCA program, also signed the final sheet.
+The defense took place on December 27, 2023 in Brasília. The examining committee was chaired by the advisor, Prof. Dr. Sergio Antônio Andrade de Freitas (CIC/UnB), and composed of
 
 The full text — written in Portuguese — is available at the [UnB Institutional Repository](https://repositorio.unb.br/handle/10482/48525).
 

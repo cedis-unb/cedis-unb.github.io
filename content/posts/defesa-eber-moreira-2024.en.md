@@ -26,7 +26,7 @@ By articulating {{< link-interno "/areas/software_architecture/" "software archi
 
 The work is also connected to two publications by Éber with CEDIS: [_A CP-SAT Approach for Academic Resource Timetabling in Higher Education Institutions: A Case Study at a Major Public University_](https://doi.org/10.1109/ITHET61869.2024.10837617), presented at IEEE ITHET 2024, and _Fast University Timetabling via Room-wise CP-SAT Decomposition and Incremental Repair_, published at SEMISH 2026 as a continuation of the same research agenda.
 
-The defense took place on December 17, 2024 in Brasília. The examining committee was chaired by the advisor, Prof. Dr. Sergio Antônio Andrade de Freitas (UnB), and composed of Prof. Dr. Irene Pimenta Rodrigues (University of Évora, Portugal) and Prof. Dr. Andrea Felippe Cabello (UnB). Prof. Dr. Edna Dias Canedo, PPCA program coordinator, also attended the session.
+The defense took place on December 17, 2024 in Brasília. The examining committee was chaired by the advisor, Prof. Dr. Sergio Antônio Andrade de Freitas (UnB), and composed of Prof. Dr. Irene Pimenta Rodrigues (University of Évora, Portugal) and
 
 The full text — written in Portuguese — is available at the [UnB Institutional Repository](https://repositorio.unb.br/handle/10482/52048).
 

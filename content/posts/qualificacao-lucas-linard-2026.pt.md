@@ -25,7 +25,7 @@ Sob a estratégia de *design science* instanciada como estudo de caso industrial
 
 O Launch Center materializa sete princípios de design, sete mecânicas cooperativas e três mecanismos de proteção em uma jornada organizada nas quatro fases do Octalysis Nível II, com ênfase nos *core drives white-hat* e em recompensas exclusivamente simbólicas. A tese central é que a alavanca não está em mais controle nem em mais alerta, mas em **motivação estruturada de equipe** — território natural da {{< link-interno "/areas/gamification/" "gamificação" >}} e da {{< link-interno "/areas/software_quality/" "qualidade de software" >}} enquanto disciplina de engenharia.
 
-A banca de qualificação foi presidida pelo orientador e composta pelo Prof. Dr. Paulo Miguel Torres Duarte (Universidade de Évora) e pela Prof.ª Dr.ª Letícia Lopes Leite (PPCA/UnB); o Prof. Dr. Marcelo Ladeira, coordenador do PPCA, também acompanhou a sessão. Como continuidade, o candidato propõe um protocolo de avaliação para piloto controlado na organização, a ser executado no trabalho pós-qualificação como teste empírico da hipótese.
+A banca de qualificação foi presidida pelo orientador e composta pelo Prof. Dr. Paulo Miguel Torres Duarte (Universidade de Évora) e pela Prof.ª Dr.ª Letícia Lopes Leite (PPCA/UnB). Como continuidade, o candidato propõe um protocolo de avaliação para piloto controlado na organização, a ser executado no trabalho pós-qualificação como teste empírico da hipótese.
 
 ---
 

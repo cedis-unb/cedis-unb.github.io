@@ -22,7 +22,7 @@ A Identidade gov.br é a porta de entrada para dezenas de serviços públicos di
 
 O trabalho combina revisão sistemática da literatura com estudo de caso aplicado à ID gov.br. Da revisão emergem cinco fatores promissores: RBA (Risk-Based Authentication), Tripwire, login rituals, OTP e OTP com Bluetooth. Dentre eles, o RBA foi implantado e avaliado em contexto real. Os resultados mostraram capacidade concreta de detectar comportamentos atípicos e bloquear tentativas suspeitas — especialmente em situações de divergência de localidade de acesso, um padrão clássico de conta comprometida.
 
-A defesa aconteceu em 18 de fevereiro de 2025 em Brasília. A banca examinadora foi presidida pelo orientador, Prof. Dr. George Marsicano Corrêa (CIC/UnB), e composta pelo Prof. Dr. John Lenon Cardoso Gardenghi (FCTE/UnB) e pelo Prof. Dr. Milton Vinicius Morais de Lima (CISSA/CESAR). A Prof.ª Dr.ª Edna Dias Canedo, coordenadora do PPCA, também acompanhou a sessão.
+A defesa aconteceu em 18 de fevereiro de 2025 em Brasília. A banca examinadora foi presidida pelo orientador, Prof. Dr. George Marsicano Corrêa (CIC/UnB), e composta pelo Prof. Dr. John Lenon Cardoso Gardenghi (FCTE/UnB) e pelo Prof. Dr. Milton Vinicius Morais de Lima (CISSA/CESAR).
 
 Ao articular {{< link-interno "/areas/security/" "cibersegurança" >}} com {{< link-interno "/areas/transformation/" "transformação digital" >}} do Estado brasileiro, a dissertação oferece base concreta para decisões arquiteturais que afetam diretamente milhões de cidadãos — precisamente onde a comunidade de segurança precisa levar sua pesquisa para gerar impacto.
 

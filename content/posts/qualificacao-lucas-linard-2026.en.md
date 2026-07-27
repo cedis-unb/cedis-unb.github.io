@@ -25,7 +25,7 @@ Under a *design science* strategy instantiated as an industrial case study, Luca
 
 The Launch Center materializes seven design principles, seven cooperative mechanics, and three protection mechanisms into a journey organized across the four phases of Octalysis Level II, with emphasis on *white-hat core drives* and on exclusively symbolic rewards. The central thesis is that the lever is not more control or more alerting, but **structured team motivation** — natural territory of {{< link-interno "/areas/gamification/" "gamification" >}} and of {{< link-interno "/areas/software_quality/" "software quality" >}} as an engineering discipline.
 
-The qualification committee was chaired by the advisor and composed of Prof. Dr. Paulo Miguel Torres Duarte (University of Évora) and Prof. Dr. Letícia Lopes Leite (PPCA/UnB); Prof. Dr. Marcelo Ladeira, PPCA program coordinator, also attended the session. As continuity, the candidate proposes an evaluation protocol for a controlled pilot inside the organization, to be executed in the post-qualification work as an empirical test of the hypothesis.
+The qualification committee was chaired by the advisor and composed of Prof. Dr. Paulo Miguel Torres Duarte (University of Évora) and Prof. Dr. Letícia Lopes Leite (PPCA/UnB). As continuity, the candidate proposes an evaluation protocol for a controlled pilot inside the organization, to be executed in the post-qualification work as an empirical test of the hypothesis.
 
 ---
 
