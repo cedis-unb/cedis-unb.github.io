@@ -11,9 +11,9 @@
 {{ end }}
 {{ $isResearchersTerm := and (eq .Kind "term") (eq .Data.Plural "categories") (eq $termKey "researcher") }}
 
-<div class="not-prose">
+<div class="@container not-prose">
     {{ if $isTaxonomy }}
-    <div class="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+    <div class="grid gap-5 @md:grid-cols-2 @xl:grid-cols-3">
         {{ range .Paginator.Pages }}
         {{ $termTitle := partial "translated-label.html" (dict "page" . "value" .Title) }}
         {{ $termCount := len .Pages }}
@@ -48,7 +48,7 @@
         {{ end }}
     </div>
     {{ else }}
-    <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3"{{ if $isResearchersTerm }} data-randomize-researchers{{ end }}>
+    <div class="grid gap-6 @md:grid-cols-2 @xl:grid-cols-3"{{ if $isResearchersTerm }} data-randomize-researchers{{ end }}>
         {{ range .Paginator.Pages }}
         {{ $summary := .Params.summary | default (.Summary | plainify | htmlUnescape | strings.TrimSpace) }}
         {{ $cardTitle := .Title }}
