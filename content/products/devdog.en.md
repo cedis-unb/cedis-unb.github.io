@@ -14,7 +14,8 @@ areas:
 - active_learning
 responsible:
 - sergio_freitas
-publications: []
+publications:
+- publication_2026_luciano_ricardo_da_silva_junior_devdog_a_gamified_web_platform_for_teaching_code_smel
 weight: 3
 featured_home: true
 featured_home_order: 2

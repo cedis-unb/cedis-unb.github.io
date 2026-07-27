@@ -36,7 +36,17 @@ external_url: ''
 spotify_podcast: ''
 github_repo: ''
 zenodo_record: ''
-summary: Tcc by Luciano Ricardo da Silva Junior (2026).
+summary: This paper addresses the recurring difficulty faced by programming students
+  in identifying code smells, a challenge that affects the understanding, maintenance,
+  and evolution of software systems. The main goal is to propose a gamified solution
+  that supports learning and makes the detection of these issues more accessible and
+  motivating. The methodology follows a qualitative approach with exploratory, descriptive,
+  and applied characteristics, integrating bibliographic research and a case study.
+  The methodological process included contextual analysis, definition of motivational
+  profiles, ideation and prototyping of mechanics, followed by usability tests, observation
+  of the application's use, and documentation of all stages and results. The proposed
+  platform will allow students to practice identifying code smells in simulated scenarios,
+  receive immediate feedback, and progress through incremental challenges.
 bibtex: "@mastersthesis{2026-luciano-ricardo-da-silva-junior-gamificacao-como-estrategia-de-ensino-da-identificaca,\n\
   \  author = {Luciano Ricardo da Silva Junior},\n  title = {Gamification as a Teaching\
   \ Strategy for Code Smell Identification},\n  year = {2026},\n  publisher = {Universidade\
@@ -44,3 +54,6 @@ bibtex: "@mastersthesis{2026-luciano-ricardo-da-silva-junior-gamificacao-como-es
 aliases:
 - /publications/2026-luciano-ricardo-da-silva-junior-gamificacao-como-estrategia-de-ensino-da-identificaca/
 ---
+## Abstract
+
+This paper addresses the recurring difficulty faced by programming students in identifying code smells, a challenge that affects the understanding, maintenance, and evolution of software systems. The main goal is to propose a gamified solution that supports learning and makes the detection of these issues more accessible and motivating. The methodology follows a qualitative approach with exploratory, descriptive, and applied characteristics, integrating bibliographic research and a case study. The methodological process included contextual analysis, definition of motivational profiles, ideation and prototyping of mechanics, followed by usability tests, observation of the application's use, and documentation of all stages and results. The proposed platform will allow students to practice identifying code smells in simulated scenarios, receive immediate feedback, and progress through incremental challenges.

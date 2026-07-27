@@ -39,18 +39,9 @@
 {{/* Rótulo do tipo via partial reutilizável (consistente com single/list). */}}
 {{ $typeLabel := partial "defesa-type-label.html" (dict "type" $d.type "lang" $lang) }}
 
-{{ $programLabels := dict
-  "curso_esw"          (dict "pt" "Engenharia de Software (FCTE/UnB)"          "en" "Software Engineering (FCTE/UnB)")
-  "curso_esw2"         (dict "pt" "Engenharia de Software (FCTE/UnB)"          "en" "Software Engineering (FCTE/UnB)")
-  "curso_ppca"         (dict "pt" "PPCA — Mestrado Profissional em Computação Aplicada"  "en" "PPCA — Professional Master in Applied Computing")
-  "curso_ppgee"        (dict "pt" "PPEE — Engenharia Elétrica"                 "en" "PPEE — Electrical Engineering")
-  "curso_ppgi"         (dict "pt" "PPGI — Pós-Graduação em Informática"        "en" "PPGI — Graduate Program in Informatics")
-  "curso_cc"           (dict "pt" "Ciência da Computação"                      "en" "Computer Science")
-  "curso_cc_unb"       (dict "pt" "Bacharelado em Ciência da Computação/UnB"   "en" "Bachelor in Computer Science/UnB")
-}}
 {{ $programLabel := "" }}
-{{ with index (index $programLabels ($d.program | default "")) $lang }}
-  {{ $programLabel = . }}
+{{ with $d.program }}
+  {{ $programLabel = or (i18n .) . }}
 {{ end }}
 
 {{/* Nomes dos alunos formatados */}}
@@ -220,7 +211,19 @@
         <dt class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-slate-500 dark:text-slate-400">{{ cond $isPt "Produtos gerados" "Products" }}</dt>
         <dd class="mt-1 flex flex-wrap gap-2">
           {{ range . }}
+          {{ $productID := . }}
+          {{ $productPage := "" }}
+          {{ range where site.RegularPages "Section" "products" }}
+            {{ $candidateID := .Params.id | default .File.TranslationBaseName }}
+            {{ if eq $candidateID $productID }}
+              {{ $productPage = . }}
+            {{ end }}
+          {{ end }}
+          {{ if $productPage }}
+          <a href="{{ $productPage.RelPermalink }}" class="rounded-full border border-slate-200 bg-white px-3 py-1 font-medium text-primary-700 hover:border-primary-400 dark:border-white/10 dark:bg-white/6 dark:text-primary-200">{{ $productPage.Title }}</a>
+          {{ else }}
           <a href="{{ printf "/products/%s/" . | relLangURL }}" class="rounded-full border border-slate-200 bg-white px-3 py-1 font-medium text-primary-700 hover:border-primary-400 dark:border-white/10 dark:bg-white/6 dark:text-primary-200">{{ . }}</a>
+          {{ end }}
           {{ end }}
         </dd>
       </div>
@@ -228,9 +231,28 @@
       {{ with $d.related_publications }}
       <div>
         <dt class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-slate-500 dark:text-slate-400">{{ cond $isPt "Publicações vinculadas" "Related publications" }}</dt>
-        <dd class="mt-1 space-y-1">
+        <dd class="mt-1 space-y-2">
           {{ range . }}
+          {{ $publicationID := printf "%v" . }}
+          {{ $publicationPage := "" }}
+          {{ range where site.RegularPages "Section" "publications" }}
+            {{ $pageID := .Params.id | default "" }}
+            {{ $pageSlug := .File.TranslationBaseName | default "" }}
+            {{ $pageIndex := printf "%v" (.Params.publication_index | default "") }}
+            {{ if or (eq $pageID $publicationID) (or (eq $pageSlug $publicationID) (eq $pageIndex $publicationID)) }}
+              {{ $publicationPage = . }}
+            {{ end }}
+          {{ end }}
+          {{ if $publicationPage }}
+          <div>
+            <a href="{{ $publicationPage.RelPermalink }}" class="font-semibold text-primary-700 hover:text-primary-800 dark:text-primary-200">{{ $publicationPage.Title }}</a>
+            {{ with $publicationPage.Params.publication_type }}
+              <span class="ml-2 rounded-full bg-slate-100 px-2 py-0.5 text-[0.68rem] font-semibold uppercase tracking-wider text-slate-600 dark:bg-white/10 dark:text-white/70">{{ partial "translated-label.html" (dict "value" .) }}</span>
+            {{ end }}
+          </div>
+          {{ else }}
           <div><code class="rounded bg-slate-100 px-2 py-0.5 text-xs dark:bg-white/10">{{ . }}</code></div>
+          {{ end }}
           {{ end }}
         </dd>
       </div>
@@ -250,16 +272,40 @@
 
   {{/* ---------- 5. Trabalho depositado (só em deposited) ---------- */}}
   {{ if eq $state "deposited" }}
+  {{ $productionUrl := printf "/publications/#%s" $d.production_id | relLangURL }}
+  {{ $productionIsExternal := false }}
+  {{ range $productionIndex, $production := hugo.Data.productions.items }}
+    {{ $productionDefesaId := index $production "defesa_id" | default "" }}
+    {{ $productionSlug := index $production "slug" | default "" }}
+    {{ $externalUrl := index $production "url" | default "" }}
+    {{ $matchesDefense := and $productionDefesaId (eq $productionDefesaId $d.id) }}
+    {{ $matchesProduction := and $productionSlug $d.production_id (eq $productionSlug $d.production_id) }}
+    {{ if or $matchesDefense $matchesProduction }}
+      {{ with where (where site.RegularPages "Section" "publications") "Params.publication_index" $productionIndex }}
+        {{ with index . 0 }}
+          {{ $productionUrl = .RelPermalink }}
+        {{ end }}
+      {{ end }}
+      {{ if $externalUrl }}
+        {{ $productionUrl = $externalUrl }}
+        {{ $productionIsExternal = true }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
   <section aria-labelledby="production-title" class="rounded-2xl border border-primary-200 bg-primary-50 p-6 dark:border-primary-400/30 dark:bg-primary-500/10">
     <h2 id="production-title" class="text-lg font-black tracking-tight text-primary-900 dark:text-primary-100">
-      {{ cond $isPt "Trabalho depositado" "Deposited work" }}
+      {{ if $productionIsExternal }}{{ cond $isPt "Trabalho depositado" "Deposited work" }}{{ else }}{{ cond $isPt "Publicação catalogada" "Publication record" }}{{ end }}
     </h2>
     <p class="mt-2 text-sm text-primary-900/80 dark:text-primary-100/80">
-      {{ if $isPt }}O trabalho pode ser lido na íntegra na Biblioteca Digital / Repositório Institucional.{{ else }}The full text is available at the Digital Library / Institutional Repository.{{ end }}
+      {{ if $productionIsExternal }}
+        {{ if $isPt }}O trabalho pode ser lido na íntegra na Biblioteca Digital / Repositório Institucional.{{ else }}The full text is available at the Digital Library / Institutional Repository.{{ end }}
+      {{ else }}
+        {{ if $isPt }}O registro da publicação já está catalogado no site. O link para a Biblioteca Digital / Repositório Institucional será incluído quando estiver disponível.{{ else }}The publication record is already catalogued on the site. The Digital Library / Institutional Repository link will be added when available.{{ end }}
+      {{ end }}
     </p>
     <p class="mt-4">
-      <a href="{{ printf "/publications/#%s" $d.production_id | relLangURL }}" class="inline-flex items-center gap-2 rounded-full bg-primary-700 px-4 py-2 text-sm font-semibold text-white hover:bg-primary-800">
-        {{ cond $isPt "Ver publicação" "Open publication" }} →
+      <a href="{{ $productionUrl }}"{{ if $productionIsExternal }} target="_blank" rel="noopener noreferrer"{{ end }} class="inline-flex items-center gap-2 rounded-full bg-primary-700 px-4 py-2 text-sm font-semibold text-white hover:bg-primary-800">
+        {{ if $productionIsExternal }}{{ cond $isPt "Ver publicação" "Open publication" }}{{ else }}{{ cond $isPt "Ver registro" "View record" }}{{ end }} →
       </a>
     </p>
   </section>

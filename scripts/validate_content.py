@@ -203,6 +203,15 @@ def parse_iso_date(value: object) -> dt.date | None:
         return None
 
 
+def parse_year(value: object) -> int | None:
+    if value in (None, ""):
+        return None
+    if isinstance(value, (dt.datetime, dt.date)):
+        return value.year
+    match = re.match(r"^([0-9]{4})", str(value).strip())
+    return int(match.group(1)) if match else None
+
+
 def parse_frontmatter(md_path: Path) -> dict | None:
     """Extrai o bloco YAML entre '---' do início do arquivo."""
     try:
@@ -292,6 +301,7 @@ def validate_productions(
     advisor_ids: set[str],
     person_ids: set[str],
     defesa_ids: set[str] | None = None,
+    defesa_years: dict[str, int] | None = None,
 ) -> None:
     schema = load_schema("publication")
     items = prod_data.get("items", [])
@@ -343,6 +353,15 @@ def validate_productions(
                     location,
                     f"defesa_id '{did}' não existe em data/defesas.yaml",
                 )
+            elif did and defesa_years is not None and did in defesa_years:
+                production_year = parse_year(item.get("year"))
+                defense_year = defesa_years[did]
+                if production_year is not None and production_year < defense_year:
+                    error(
+                        "defesas",
+                        location,
+                        f"year {production_year} é anterior ao ano da defesa {defense_year} ({did})",
+                    )
 
 
 _DEFESA_VALID_TYPES = {
@@ -357,7 +376,12 @@ _DEFESA_VALID_TYPES = {
 _COMMITTEE_ROLES = {"advisor", "co_advisor", "examiner", "external_examiner", "substitute"}
 
 
-def validate_defesas(defesas_data: object, advisor_ids: set[str]) -> set[str]:
+def validate_defesas(
+    defesas_data: object,
+    advisor_ids: set[str],
+    product_ids: set[str] | None = None,
+    publication_ids: set[str] | None = None,
+) -> set[str]:
     """Valida data/defesas.yaml. Retorna conjunto de IDs válidos."""
     if defesas_data is None:
         return set()
@@ -397,6 +421,14 @@ def validate_defesas(defesas_data: object, advisor_ids: set[str]) -> set[str]:
         for co in entry.get("co_advisors") or []:
             if co not in advisor_ids:
                 warn("xref", location, f"co_advisor '{co}' não existe em content/people")
+        if product_ids is not None:
+            for product_id in as_list(entry.get("related_products")):
+                if product_id not in product_ids:
+                    warn("xref", location, f"related_product '{product_id}' não existe em content/products")
+        if publication_ids is not None:
+            for publication_id in as_list(entry.get("related_publications")):
+                if publication_id not in publication_ids:
+                    warn("xref", location, f"related_publication '{publication_id}' não existe em content/publications")
         # students
         students = entry.get("students") or []
         if not students:
@@ -422,6 +454,20 @@ def validate_defesas(defesas_data: object, advisor_ids: set[str]) -> set[str]:
                     "membro requer 'name' ou 'slug'",
                 )
     return seen_ids
+
+
+def collect_defesa_years(defesas_data: object) -> dict[str, int]:
+    if not isinstance(defesas_data, list):
+        return {}
+    out: dict[str, int] = {}
+    for entry in defesas_data:
+        if not isinstance(entry, dict):
+            continue
+        did = entry.get("id")
+        year = parse_year(entry.get("held_date") or entry.get("scheduled_date"))
+        if isinstance(did, str) and year is not None:
+            out[did] = year
+    return out
 
 
 def validate_data_projects(projects_data: dict, person_ids: set[str]) -> None:
@@ -799,12 +845,6 @@ def main() -> int:
     person_ids = collect_people_page_ids() | collect_data_people_slugs(people_data)
     advisor_ids = collect_advisor_page_ids()
 
-    validate_areas(areas_data, person_ids)
-    validate_people(people_data, advisor_ids)
-    defesa_ids = validate_defesas(defesas_data, advisor_ids)
-    validate_productions(prod_data, advisor_ids, person_ids, defesa_ids=defesa_ids)
-    validate_data_projects(projects_data, person_ids)
-
     all_fms: list[tuple[Path, dict]] = []
     project_entries: list[tuple[Path, dict]] = []
     product_entries: list[tuple[Path, dict]] = []
@@ -825,6 +865,14 @@ def main() -> int:
     # Valida publicações geradas primeiro pra coletar IDs pra validate_product_pages.
     generated_pub_entries = validate_generated_publication_pages()
     publication_ids = collect_publication_ids(generated_pub_entries)
+
+    validate_areas(areas_data, person_ids)
+    validate_people(people_data, advisor_ids)
+    defesa_ids = validate_defesas(defesas_data, advisor_ids, product_ids=product_ids, publication_ids=publication_ids)
+    defesa_years = collect_defesa_years(defesas_data)
+    validate_productions(prod_data, advisor_ids, person_ids, defesa_ids=defesa_ids, defesa_years=defesa_years)
+    validate_data_projects(projects_data, person_ids)
+
     validate_product_pages(product_entries, person_ids, area_ids, project_ids, publication_ids)
     all_fms.extend(generated_pub_entries)
 

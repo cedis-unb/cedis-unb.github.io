@@ -133,7 +133,7 @@
           {{ with $defesa.program }}
           <div>
             <dt class="font-semibold">{{ cond $isPt "Programa" "Program" }}</dt>
-            <dd class="text-slate-600 dark:text-white/65">{{ . }}</dd>
+            <dd class="text-slate-600 dark:text-white/65">{{ or (i18n .) . }}</dd>
           </div>
           {{ end }}
           {{ if or $defesa.location.room $defesa.location.city $defesa.location.remote_url }}
