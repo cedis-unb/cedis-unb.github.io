@@ -1,0 +1,239 @@
+{{/*
+  Agenda compacta de próximas defesas.
+
+  Fonte real: data/defesas.yaml.
+  Seed local: data/dev/defesas_futuras.yaml, carregado apenas com
+  HUGO_CEDIS_INCLUDE_DEV_DEFESAS=1.
+*/}}
+{{ $lang := .Site.Language.Lang }}
+{{ $isPt := eq $lang "pt" }}
+{{ $includeDevSeed := eq (getenv "HUGO_CEDIS_INCLUDE_DEV_DEFESAS") "1" }}
+{{ $rawDefesas := hugo.Data.defesas }}
+{{ if and $includeDevSeed hugo.Data.dev.defesas_futuras }}
+  {{ $rawDefesas = $rawDefesas | append hugo.Data.dev.defesas_futuras }}
+{{ end }}
+
+{{ $events := slice }}
+{{ range $rawDefesas }}
+  {{ $sd := time .scheduled_date }}
+  {{ if and ($sd.After now) (ne .status_override "withdrawn") }}
+    {{ $hasTime := and (ne ($sd.Format "15:04") "00:00") (not .date_approximate) }}
+    {{ $title := "" }}
+    {{ with .title }}{{ $title = or (index . $lang) (index . "pt") (index . "en") }}{{ end }}
+    {{ $summary := "" }}
+    {{ with .summary }}{{ $summary = or (index . $lang) (index . "pt") (index . "en") }}{{ end }}
+    {{ $studentNames := slice }}
+    {{ range .students }}{{ $studentNames = $studentNames | append .name }}{{ end }}
+    {{ $studentsText := delimit $studentNames ", " (cond $isPt " e " " and ") }}
+    {{ $advisorNames := slice }}
+    {{ with .advisor }}
+      {{ $p := partial "people-lookup" . }}
+      {{ $advisorNames = $advisorNames | append (cond $p.found $p.name .) }}
+    {{ end }}
+    {{ range .co_advisors }}
+      {{ $p := partial "people-lookup" . }}
+      {{ $advisorNames = $advisorNames | append (cond $p.found $p.name .) }}
+    {{ end }}
+    {{ $advisorsText := delimit $advisorNames ", " (cond $isPt " e " " and ") }}
+    {{ $areaLabel := "" }}
+    {{ with .primary_area }}
+      {{ $area := partial "area-lookup" . }}
+      {{ if $area.found }}{{ $areaLabel = $area.name }}{{ end }}
+    {{ end }}
+    {{ if not $areaLabel }}
+      {{ range .tags }}
+        {{ if not $areaLabel }}
+          {{ $area := partial "area-lookup" . }}
+          {{ if $area.found }}{{ $areaLabel = $area.name }}{{ end }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+    {{ $startHour := int (replaceRE "^0" "" ($sd.Format "15")) }}
+    {{ $startMinute := int (replaceRE "^0" "" ($sd.Format "04")) }}
+    {{ $startMinutes := add (mul $startHour 60) $startMinute }}
+    {{ $duration := 90 }}
+    {{ if in (slice "qualification" "dissertation") .type }}{{ $duration = 120 }}{{ end }}
+    {{ if in (slice "phd_qualification" "phd") .type }}{{ $duration = 180 }}{{ end }}
+    {{ $endMinutes := add $startMinutes $duration }}
+    {{ with .scheduled_end }}
+      {{ $ed := time . }}
+      {{ $endHour := int (replaceRE "^0" "" ($ed.Format "15")) }}
+      {{ $endMinute := int (replaceRE "^0" "" ($ed.Format "04")) }}
+      {{ $endMinutes = add (mul $endHour 60) $endMinute }}
+    {{ end }}
+    {{ $endTime := printf "%02d:%02d" (mod (div $endMinutes 60) 24) (mod $endMinutes 60) }}
+    {{ $timeRange := "" }}
+    {{ if $hasTime }}{{ $timeRange = printf "%s-%s" ($sd.Format "15:04") $endTime }}{{ end }}
+    {{ $typeLabel := partial "defesa-type-label.html" (dict "type" .type "lang" $lang) }}
+    {{ $url := printf "/defesas/%s/" .id | relLangURL }}
+    {{ if .dev_seed }}{{ $url = printf "#agenda-defense-details-%s" .id }}{{ end }}
+    {{ with .url }}{{ $url = . }}{{ end }}
+    {{ $room := "" }}{{ with .location.room }}{{ $room = . }}{{ end }}
+    {{ $city := "" }}{{ with .location.city }}{{ $city = . }}{{ end }}
+    {{ $remote := "" }}{{ with .location.remote_url }}{{ $remote = . }}{{ end }}
+    {{ $locationText := "" }}
+    {{ if $room }}{{ $locationText = $room }}{{ end }}
+    {{ if and $city $locationText }}{{ $locationText = printf "%s · %s" $locationText $city }}{{ else if $city }}{{ $locationText = $city }}{{ end }}
+    {{ if and (not $locationText) $remote }}{{ $locationText = cond $isPt "Sala virtual" "Virtual room" }}{{ end }}
+    {{ $events = $events | append (dict
+      "id" .id
+      "date" $sd
+      "dateKey" ($sd.Format "2006-01-02")
+      "hasTime" $hasTime
+      "timeRange" $timeRange
+      "title" $title
+      "summary" $summary
+      "students" $studentsText
+      "advisors" $advisorsText
+      "area" $areaLabel
+      "type" .type
+      "typeLabel" $typeLabel
+      "url" $url
+      "location" $locationText
+      "devSeed" (.dev_seed | default false)
+    ) }}
+  {{ end }}
+{{ end }}
+{{ $events = sort $events "date" "asc" }}
+{{ $timedEvents := where $events "hasTime" true }}
+{{ $dayKeys := slice }}
+{{ range $timedEvents }}
+  {{ if not (in $dayKeys .dateKey) }}{{ $dayKeys = $dayKeys | append .dateKey }}{{ end }}
+{{ end }}
+{{ $dayKeys = first 7 $dayKeys }}
+
+{{ if gt (len $events) 0 }}
+<div class="relative py-8 sm:py-10 lg:py-12">
+  <div class="absolute inset-x-0 top-0 h-px bg-linear-to-r from-transparent via-slate-300/70 to-transparent dark:via-white/10"></div>
+  <div class="mx-auto max-w-(--breakpoint-xl) px-4 md:px-6 lg:px-8">
+    <section class="overflow-visible rounded-2xl border border-slate-200/80 bg-white/90 shadow-xs backdrop-blur dark:border-white/10 dark:bg-white/4"
+             x-data="{ view: 'calendar' }">
+      <div class="flex flex-col gap-4 border-b border-slate-200/70 px-5 py-5 dark:border-white/10 md:flex-row md:items-end md:justify-between">
+        <div>
+          <div class="inline-flex items-center rounded-full border border-primary-300/60 bg-primary-50/80 px-3 py-1 text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-primary-700 dark:border-primary-400/20 dark:bg-primary-500/10 dark:text-primary-200">
+            {{ i18n "ui_defense_agenda_eyebrow" }}
+          </div>
+          <h2 class="mt-3 text-2xl font-black tracking-tight text-slate-950 sm:text-3xl dark:text-white">
+            {{ i18n "ui_defense_agenda_heading" }}
+          </h2>
+          <p class="mt-2 max-w-2xl text-sm leading-6 text-slate-600 dark:text-slate-300">
+            {{ i18n "ui_defense_agenda_lead" }}
+          </p>
+        </div>
+        <div class="flex flex-wrap items-center gap-2">
+          {{ if $includeDevSeed }}
+          <span class="rounded-full border border-amber-300 bg-amber-50 px-3 py-1.5 text-[0.65rem] font-black uppercase tracking-[0.14em] text-amber-800 dark:border-amber-400/30 dark:bg-amber-500/10 dark:text-amber-100">
+            {{ i18n "ui_defense_agenda_dev_seed" }}
+          </span>
+          {{ end }}
+          <div class="inline-flex rounded-full border border-slate-300/70 bg-slate-50 p-1 dark:border-white/10 dark:bg-slate-950/40" role="tablist" aria-label="{{ i18n "ui_defense_agenda_view_mode" }}">
+            <button type="button"
+                    @click="view = 'calendar'"
+                    :aria-selected="view === 'calendar' ? 'true' : 'false'"
+                    :class="view === 'calendar' ? 'bg-white text-primary-700 shadow-xs dark:bg-white/10 dark:text-primary-100' : 'text-slate-600 dark:text-slate-400'"
+                    class="rounded-full px-3 py-1.5 text-xs font-black uppercase tracking-[0.12em] transition-colors">
+              {{ i18n "ui_defense_agenda_calendar" }}
+            </button>
+            <button type="button"
+                    @click="view = 'list'"
+                    :aria-selected="view === 'list' ? 'true' : 'false'"
+                    :class="view === 'list' ? 'bg-white text-primary-700 shadow-xs dark:bg-white/10 dark:text-primary-100' : 'text-slate-600 dark:text-slate-400'"
+                    class="rounded-full px-3 py-1.5 text-xs font-black uppercase tracking-[0.12em] transition-colors">
+              {{ i18n "ui_defense_agenda_list" }}
+            </button>
+          </div>
+          <a href="{{ "/defesas/" | relLangURL }}" class="inline-flex items-center gap-1 rounded-full border border-slate-300/70 bg-white/70 px-4 py-2 text-xs font-semibold uppercase tracking-[0.14em] text-slate-700 transition-colors hover:border-primary-300 hover:text-primary-700 dark:border-white/10 dark:bg-white/4 dark:text-slate-200 dark:hover:border-primary-400/30 dark:hover:text-primary-200">
+            {{ i18n "ui_defense_agenda_all" }}
+            <span aria-hidden="true">&rarr;</span>
+          </a>
+        </div>
+      </div>
+
+      <div x-show="view === 'calendar'" x-cloak class="p-4 sm:p-5">
+        {{ if gt (len $dayKeys) 0 }}
+        <div class="overflow-x-auto pb-2">
+          <div class="grid min-w-[58rem] grid-cols-7 gap-3">
+            {{ range $dayKeys }}
+              {{ $dayKey := . }}
+              {{ $dayEvents := where $timedEvents "dateKey" $dayKey }}
+              {{ $firstEvent := index $dayEvents 0 }}
+              {{ $dayName := $firstEvent.date.Format "Mon" }}
+              {{ if $isPt }}
+                {{ $dayName = replace $dayName "Mon" "seg" }}
+                {{ $dayName = replace $dayName "Tue" "ter" }}
+                {{ $dayName = replace $dayName "Wed" "qua" }}
+                {{ $dayName = replace $dayName "Thu" "qui" }}
+                {{ $dayName = replace $dayName "Fri" "sex" }}
+                {{ $dayName = replace $dayName "Sat" "sáb" }}
+                {{ $dayName = replace $dayName "Sun" "dom" }}
+              {{ end }}
+              <div class="rounded-xl border border-slate-200 bg-slate-50/80 p-3 dark:border-white/10 dark:bg-slate-950/30">
+                <div class="border-b border-slate-200 pb-2 dark:border-white/10">
+                  <div class="text-[0.65rem] font-black uppercase tracking-[0.16em] text-slate-500 dark:text-slate-500">{{ $dayName }}</div>
+                  <div class="mt-1 text-sm font-black text-slate-950 dark:text-white">
+                    {{ if $isPt }}{{ $firstEvent.date.Format "02/01" }}{{ else }}{{ $firstEvent.date.Format "Jan 02" }}{{ end }}
+                  </div>
+                </div>
+                <ol class="mt-3 space-y-2">
+                  {{ range $dayEvents }}
+                  <li class="relative">
+                    <a href="{{ .url }}"
+                       id="agenda-defense-{{ .id }}"
+                       {{ if .devSeed }}@click.prevent="view = 'list'; $nextTick(() => document.getElementById('agenda-defense-details-{{ .id }}')?.scrollIntoView({ block: 'nearest' }))"{{ end }}
+                       class="group block rounded-lg border border-primary-200 bg-white px-3 py-2 text-left shadow-xs transition-colors hover:border-primary-400 hover:bg-primary-50 focus:outline-hidden focus:ring-2 focus:ring-primary-400 dark:border-primary-400/20 dark:bg-white/5 dark:hover:border-primary-300/50 dark:hover:bg-primary-500/10">
+                      <span class="block text-[0.66rem] font-black uppercase tracking-[0.14em] text-primary-700 dark:text-primary-200">{{ .timeRange }}</span>
+                      <span class="mt-1 block text-xs font-bold leading-snug text-slate-950 [display:-webkit-box] [-webkit-box-orient:vertical] [-webkit-line-clamp:2] overflow-hidden dark:text-white">{{ .students }}</span>
+                      <span class="mt-1 inline-flex rounded-full bg-slate-100 px-2 py-0.5 text-[0.6rem] font-semibold text-slate-600 dark:bg-white/10 dark:text-slate-300">{{ .typeLabel }}</span>
+                      <span class="pointer-events-none fixed inset-x-4 bottom-4 z-[80] hidden max-h-[70vh] overflow-y-auto rounded-xl border border-slate-200 bg-white p-4 text-left shadow-2xl group-hover:block group-focus:block dark:border-white/10 dark:bg-slate-950 sm:inset-x-auto sm:right-6 sm:bottom-6 sm:w-96">
+                        <span class="block text-[0.65rem] font-black uppercase tracking-[0.16em] text-primary-700 dark:text-primary-200">{{ .timeRange }} · {{ .typeLabel }}</span>
+                        <span class="mt-2 block text-sm font-black leading-snug text-slate-950 dark:text-white">{{ .students }}</span>
+                        <span class="mt-1 block text-xs font-semibold leading-snug text-slate-700 dark:text-slate-300">{{ .title }}</span>
+                        {{ if .advisors }}<span class="mt-2 block text-xs leading-5 text-slate-600 dark:text-slate-400"><strong>{{ i18n "ui_defense_agenda_advisors" }}:</strong> {{ .advisors }}</span>{{ end }}
+                        {{ if .area }}<span class="mt-1 inline-flex rounded-full bg-emerald-50 px-2 py-0.5 text-[0.65rem] font-semibold text-emerald-800 dark:bg-emerald-500/10 dark:text-emerald-100">{{ .area }}</span>{{ end }}
+                        {{ if .summary }}<span class="mt-2 block text-xs leading-5 text-slate-600 [display:-webkit-box] [-webkit-box-orient:vertical] [-webkit-line-clamp:4] overflow-hidden dark:text-slate-400">{{ .summary }}</span>{{ end }}
+                      </span>
+                    </a>
+                  </li>
+                  {{ end }}
+                </ol>
+              </div>
+            {{ end }}
+          </div>
+        </div>
+        {{ else }}
+        <div class="rounded-xl border border-dashed border-slate-300 bg-slate-50 px-4 py-6 text-sm text-slate-600 dark:border-white/10 dark:bg-white/4 dark:text-slate-300">
+          {{ i18n "ui_defense_agenda_no_timed" }}
+        </div>
+        {{ end }}
+      </div>
+
+      <div x-show="view === 'list'" x-cloak class="p-4 sm:p-5">
+        <ol class="grid gap-3 md:grid-cols-2">
+          {{ range first 30 $events }}
+          <li id="agenda-defense-details-{{ .id }}">
+            <a href="{{ .url }}" class="group flex h-full flex-col rounded-xl border border-slate-200 bg-white p-4 transition-colors hover:border-primary-300 hover:bg-primary-50/40 dark:border-white/10 dark:bg-slate-950/30 dark:hover:border-primary-400/40 dark:hover:bg-primary-500/10">
+              <div class="flex flex-wrap items-center gap-2 text-[0.68rem] font-semibold uppercase tracking-[0.14em] text-slate-500 dark:text-slate-500">
+                <span class="rounded-full bg-primary-100 px-2.5 py-1 text-primary-800 dark:bg-primary-500/20 dark:text-primary-100">
+                  {{ if $isPt }}{{ .date.Format "02/01" }}{{ else }}{{ .date.Format "Jan 02" }}{{ end }}{{ if .timeRange }} · {{ .timeRange }}{{ end }}
+                </span>
+                <span>{{ .typeLabel }}</span>
+              </div>
+              <h3 class="mt-3 text-base font-black leading-tight text-slate-950 group-hover:text-primary-700 dark:text-white dark:group-hover:text-primary-200">
+                {{ .title }}
+              </h3>
+              {{ if .students }}<p class="mt-2 text-sm text-slate-700 dark:text-slate-300"><strong>{{ i18n "ui_defense_agenda_students" }}:</strong> {{ .students }}</p>{{ end }}
+              {{ if .advisors }}<p class="mt-1 text-sm text-slate-600 dark:text-slate-400"><strong>{{ i18n "ui_defense_agenda_advisors" }}:</strong> {{ .advisors }}</p>{{ end }}
+              <div class="mt-3 flex flex-wrap gap-2">
+                {{ if .area }}<span class="rounded-full bg-emerald-50 px-2.5 py-1 text-xs font-semibold text-emerald-800 dark:bg-emerald-500/10 dark:text-emerald-100">{{ .area }}</span>{{ end }}
+                {{ if .location }}<span class="rounded-full bg-slate-100 px-2.5 py-1 text-xs font-semibold text-slate-600 dark:bg-white/10 dark:text-slate-300">{{ .location }}</span>{{ end }}
+              </div>
+              {{ if .summary }}<p class="mt-3 text-sm leading-6 text-slate-600 [display:-webkit-box] [-webkit-box-orient:vertical] [-webkit-line-clamp:3] overflow-hidden dark:text-slate-400">{{ .summary }}</p>{{ end }}
+            </a>
+          </li>
+          {{ end }}
+        </ol>
+      </div>
+    </section>
+  </div>
+</div>
+{{ end }}
