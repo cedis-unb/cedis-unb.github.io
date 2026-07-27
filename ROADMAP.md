@@ -100,8 +100,8 @@ Após o ciclo de correções técnicas de 2026-07, o site do CEDIS está com bas
 - [ ] **C2** — Blog técnico regular — 1 post curto/quinzena por algum membro. Cria trilha de conteúdo, sinaliza atividade.
   <!-- > Nota: -->
 
-- [ ] **C3** — Meta description única por página (140–160 chars). Hoje muitas herdam a global.
-  <!-- > Nota: -->
+- [x] **C3** — Meta description única por página (140–160 chars). Hoje muitas herdam a global.
+  > Nota (2026-07-27): `layouts/partials/meta.html` ganhou geração programática de description para `taxonomy` e `term` ("Publicações, projetos... sobre X no CEDIS/UnB") e para `section`. Amostra 500 pgs PT: **89% únicas** (era 73%). Restantes 11% são paginação (page/N).
 
 - [ ] **C4** — Open Graph images customizadas por perfil/projeto — gerar dinamicamente com título + foto.
   <!-- > Nota: -->
@@ -228,7 +228,7 @@ Meta: criar rotina editorial e amplificar alcance.
 - [ ] F1 — newsletter setup + primeira edição
 - [ ] C2 — blog cadência (primeiro post)
 - [ ] D5 — filtro nas publicações
-- [ ] C3 — meta descriptions únicas
+- [x] C3 — meta descriptions únicas (89% em 2026-07-27)
 
 ### Backlog — trimestre 2
 - ~~D1 — mapa visual das áreas~~ ✓ adiantado em 2026-07-17 (D3.js force graph em `/mapa/`)
@@ -264,6 +264,7 @@ Evitar:
 | 2026-07-17 | Sergio Freitas + assistente | Reorganização do menu About (Opção A após análise): reduzido de 8 para 4 itens (Áreas, História, Parceiros e reconhecimentos, Infra). Oportunidades promovido a top-level (`Saiba mais > Pessoas > Projetos > Oportunidades > Produções`). Reconhecimentos consolidado como seção final da página de Parceiros (schema `awards:` unificado em `content/parceiros.pt.md`), com alias `/reconhecimentos/ → /parceiros/`. Intranet movido para o rodapé. Mapa saiu do menu e ganhou banner CTA em `/categories/knowledge_areas/`. Arquivos `content/reconhecimentos.*.md` e `layouts/_default/awards.html` deletados. |
 | 2026-07-24 | Sergio Freitas + assistente | Refactor do modelo de dados: `data/advisors.yaml` removido; contato/áreas de docentes vivem no frontmatter de `content/people/*.md`; `people-index`/`people-lookup` viram fonte unificada para pessoas; `translated-label.html` resolve labels via i18n → projetos → áreas → pessoas → humanize; publicações passam a usar `people[]` para slugs de pessoas e `tags[]` para temas/projetos. |
 | 2026-07-24 | Sergio Freitas + assistente | Backlog #1 do PLANO-AUDITORIA fechado: `scripts/validate_content.py::validate_product_pages` ganhou validação forte de produtos — resolve `secondary_projects[]` e `publications[]` contra IDs gerados por `build_publications.py`, flagra redundância entre `project` e `secondary_projects` (error), garante `id` único por idioma. CI já invoca; 0 erros/0 warnings no estado atual. |
+| 2026-07-27 | Sergio Freitas + assistente | Ciclo intensivo de a11y + LGPD + conteúdo: pa11y-ci WCAG2AA 0 erros em 15 URLs; Lighthouse a11y **100/100** em 8 páginas desktop **e** mobile (documentado em `/accessibility/`); `@media (prefers-reduced-motion)` implementado em `main.css` dentro de `@layer base`; opt-out GA com widget em `/privacy/` + retenção 14mo declarada; form newsletter inerte removido; `role="navigation"` inválido removido do botão; dots do carrossel viraram alvo 44×44px; paleta de textos secundários corrigida (25 layouts); coordenador PPCA removido de 22 defesas + 1 qualificação; padrão CONVENTIONS §3.0.1 inaugurado com 8 posts TCC1/qualificação; menu "Projects & products" com whitespace-nowrap; ROADMAP C3 (89% meta descriptions únicas); hierarquia de headings do "Orientações anteriores" corrigida (H2→H3 em 16 perfis + template); CI passa a usar `serve` em vez de `python -m http.server` (gzip fidedigno; performance mobile do perfil sergio_freitas: 56 → 99, era artefato do server). |
 
 <!-- Modelo de nova entrada:
 | YYYY-MM-DD | Nome | Descrição breve da mudança |

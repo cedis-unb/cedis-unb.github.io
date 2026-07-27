@@ -1501,6 +1501,8 @@ Como validar após alterações em massa: rodar `hugo --minify` e comparar `docs
 
 **@media órfãos são removidos pelo minifier.** Regras `@media (prefers-reduced-motion: reduce) { ... }` declaradas fora de `@layer base` em `main.css` (ou dentro de arquivos importados como `overrides.css`) são silenciosamente descartadas por Lightning CSS quando não têm utility associada. Para preservar `@media` globais que só afetam seletores universais (`*`, `*::before`, `*::after`), envolva em `@layer base { @media (...) { ... } }` em `main.css`. Confirmado 2026-07 com `prefers-reduced-motion`.
 
+**Lighthouse Performance depende do server de auditoria ter gzip.** Servidores estáticos sem compressão (`python3 -m http.server`, `http-server` sem `.gz` pré-gerados) inflam `uses-text-compression` em ~5s e derrubam Performance para 55-78. Com gzip nativo (`npx serve`), a mesma página vai a 99. Consequência: **use `npx serve` em vez de `python3 -m http.server` ou `http-server` para medir Lighthouse local e no CI**. A11y não é afetada — pa11y e Lighthouse a11y medem estrutura, não bytes. Confirmado 2026-07 no perfil `sergio_freitas` (56 → 99 mobile).
+
 ### 11.6 Boas práticas de HTML
 
 - `<button>` **sempre** com `type="button"` explícito (a menos que seja submit de form). Sem `type=`, browser assume `submit` que pode disparar form owner.
