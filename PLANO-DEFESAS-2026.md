@@ -48,9 +48,13 @@ Uma defesa é um **evento único** (data + banca + tema + aluno + orientador) do
   co_advisors:                                   # opcional
     - edna_canedo
   committee:                                     # banca
-    - name: Laerte Peotta de Melo
+    - slug: george_marsicano                     # opcional; quando o membro tem perfil CEDIS
+      name: George Marsicano Corrêa              # sempre presente (fallback quando template não resolve slug)
+      affiliation: CIC/UnB                       # opcional
+      role: advisor                              # advisor|co_advisor|examiner|external_examiner|substitute
+    - name: Laerte Peotta de Melo                # membro externo — só nome+affiliation
       affiliation: CIC/PPCA/UnB
-      role: examiner                             # advisor|co_advisor|examiner|external_examiner|substitute
+      role: examiner
     - name: Milton Vinicius Morais de Lima
       affiliation: CISSA/CESAR
       role: external_examiner
@@ -61,6 +65,11 @@ Uma defesa é um **evento único** (data + banca + tema + aluno + orientador) do
   tags:                                          # tags temáticas + área do CEDIS (mesmo padrão de productions.yaml)
     - security
     - ai
+  project: framework_preditivo_engajamento       # id em data/projects.yaml; null se defesa não pertence a projeto
+  related_products:                              # slugs de content/products/ gerados a partir do trabalho
+    - edutrack
+  related_publications:                          # ids de publicações em productions.yaml derivadas do trabalho
+    - 2026-emanuel-oliveira-a-motivation-aware...
   production_id: null                            # slug em productions.yaml quando trabalho for depositado; null antes
   news_slug: defesa-emanuel-oliveira-2025        # slug do post .md legado, se existir (transição §7); null nos novos
   narrative:                                     # opcional — parágrafo autoral, substitui o auto-gerado
@@ -71,6 +80,25 @@ Uma defesa é um **evento único** (data + banca + tema + aluno + orientador) do
 
 **Campos obrigatórios:** `id`, `type`, `scheduled_date`, `title`, `students`, `advisor`.
 **Todos os demais são opcionais** e derivados/nulos quando ausentes.
+
+### 2.1 Vínculos com projetos, produtos e publicações
+
+Uma defesa pode estar ligada a mais de um artefato do ecossistema CEDIS:
+
+- **`project`** (0 ou 1): id de projeto em `data/projects.yaml`. Inferido automaticamente quando alguma tag do trabalho é id de projeto conhecido; pode ser preenchido/corrigido manualmente.
+- **`related_products`** (0..N): slugs de `content/products/*.md` gerados a partir do trabalho defendido. Inferência inicial: produtos cuja `publications[]` cita a publicação do trabalho.
+- **`related_publications`** (0..N): ids de publicações em `productions.yaml` (artigos, capítulos) derivadas do trabalho. Preenchimento manual por enquanto — inferência automática exige mais heurística.
+
+**Template de notícia** (§6.5) usa esses vínculos para renderizar seções "Projeto associado", "Produtos gerados", "Publicações vinculadas" com link direto. Se todos ausentes, o bloco não aparece.
+
+### 2.2 Committee — membros com ou sem perfil CEDIS
+
+Cada membro em `committee[]` tem duas variantes:
+
+1. **Membro do CEDIS** (com perfil): usa `slug` (obrigatório) + `name` (rótulo estável) + `affiliation` (opcional). Template renderiza como link para `/people/<slug>`.
+2. **Membro externo**: usa `name` + `affiliation` (sem `slug`). Template renderiza como texto.
+
+`migrate_defesas.py` detecta automaticamente o slug cruzando o nome com `content/people/*.md` (match tolerante a acentos, primeiro+último nome). Quando bate, adiciona `slug`.
 
 ## 3. Slug canônico (`id`)
 

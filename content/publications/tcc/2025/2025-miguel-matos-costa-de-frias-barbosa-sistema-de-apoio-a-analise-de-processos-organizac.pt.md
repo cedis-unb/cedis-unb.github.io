@@ -12,7 +12,7 @@ publication_index: 257
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis
-year: 2025/2
+year: 2025
 authors:
 - Miguel Matos Costa de Frias Barbosa
 authors_structured:
@@ -34,11 +34,11 @@ external_url: ''
 spotify_podcast: ''
 github_repo: ''
 zenodo_record: ''
-summary: Tcc de Miguel Matos Costa de Frias Barbosa (2025/2).
+summary: Tcc de Miguel Matos Costa de Frias Barbosa (2025).
 bibtex: "@mastersthesis{2025-miguel-matos-costa-de-frias-barbosa-sistema-de-apoio-a-analise-de-processos-organizac,\n\
   \  author = {Miguel Matos Costa de Frias Barbosa},\n  title = {Sistema de apoio\
   \ à análise de processos organizacionais: Uma abordagem com inteligência artificial\
-  \ e controle de contexto},\n  year = {2025/2},\n  publisher = {Biblioteca Central\
+  \ e controle de contexto},\n  year = {2025},\n  publisher = {Biblioteca Central\
   \ da Universidade de Brasília}\n}"
 aliases:
 - /publications/2025-miguel-matos-costa-de-frias-barbosa-sistema-de-apoio-a-analise-de-processos-organizac/

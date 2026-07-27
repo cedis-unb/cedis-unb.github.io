@@ -97,6 +97,34 @@
             {{ end }}
         {{ end }}
     {{ end }}
+    {{/* Defesas UPCOMING (state=upcoming): entram no pulseItems como
+         chamada pública. Ordena depois; badge distintivo em pulse-badge.html. */}}
+    {{ range hugo.Data.defesas }}
+        {{ $sd := time .scheduled_date }}
+        {{ if $sd.After now }}
+            {{ if ne .status_override "withdrawn" }}
+                {{ $title := "" }}
+                {{ with .title }}
+                    {{ $title = or (index . $lang) (index . "pt") (index . "en") }}
+                {{ end }}
+                {{ $sm := "" }}
+                {{ with .summary }}
+                    {{ $sm = or (index . $lang) (index . "pt") "" }}
+                {{ end }}
+                {{ if $title }}
+                    {{ $pulseItems = $pulseItems | append (dict
+                        "type" "defense_upcoming"
+                        "title" $title
+                        "url" (printf "/defesas/%s/" .id | relLangURL)
+                        "date" $sd
+                        "hasFullDate" true
+                        "year" $sd.Year
+                        "summary" $sm
+                    ) }}
+                {{ end }}
+            {{ end }}
+        {{ end }}
+    {{ end }}
     {{ $pulseItems = sort $pulseItems "date" "desc" }}
     {{/* "Esta semana" pulse: only real-dated items from the last 60 days, any type */}}
     {{ $pulseCutoff := now.AddDate 0 0 -60 }}

@@ -11,7 +11,7 @@ publication_index: 256
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis
-year: 2025/2
+year: 2025
 authors:
 - Alexia Naara da Silva Cardoso
 authors_structured:
@@ -35,11 +35,11 @@ external_url: ''
 spotify_podcast: ''
 github_repo: ''
 zenodo_record: ''
-summary: Tcc de Alexia Naara da Silva Cardoso (2025/2).
+summary: Tcc de Alexia Naara da Silva Cardoso (2025).
 bibtex: "@mastersthesis{2025-alexia-naara-da-silva-cardoso-aplicativo-tradutor-de-linguas-indigenas-munduruku,\n\
   \  author = {Alexia Naara da Silva Cardoso},\n  title = {Aplicativo tradutor de\
-  \ línguas indígenas: Munduruku},\n  year = {2025/2},\n  publisher = {Biblioteca\
-  \ Central da Universidade de Brasília}\n}"
+  \ línguas indígenas: Munduruku},\n  year = {2025},\n  publisher = {Biblioteca Central\
+  \ da Universidade de Brasília}\n}"
 aliases:
 - /publications/2025-alexia-naara-da-silva-cardoso-aplicativo-tradutor-de-linguas-indigenas-munduruku/
 ---

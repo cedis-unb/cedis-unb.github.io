@@ -329,6 +329,48 @@
   {{ $tocEntries = $tocEntries | append (dict "level" 2 "anchor" "researcher-products" "label" $productsSectionTitle) }}
 {{ end }}
 
+{{/* -------------------- Próximas defesas orientadas -------------------- */}}
+{{ $upcomingDefensesHtml := "" }}
+{{ if $isResearcher }}
+  {{ $upcomingItems := slice }}
+  {{ range hugo.Data.defesas }}
+    {{ $sd := time .scheduled_date }}
+    {{ $isUpcoming := and ($sd.After now) (ne .status_override "withdrawn") }}
+    {{ $orientaEsteResearcher := or (eq .advisor $personKey) (and .co_advisors (in .co_advisors $personKey)) }}
+    {{ if and $isUpcoming $orientaEsteResearcher }}
+      {{ $upcomingItems = $upcomingItems | append (merge . (dict "scheduled_time" $sd)) }}
+    {{ end }}
+  {{ end }}
+  {{ $upcomingItems = sort $upcomingItems "scheduled_date" "asc" }}
+  {{ if gt (len $upcomingItems) 0 }}
+    {{ $upcomingCardsHtml := slice }}
+    {{ range $upcomingItems }}
+      {{ $sd := time .scheduled_date }}
+      {{ $dateStr := "" }}
+      {{ if eq $.Site.Language.Lang "pt" }}
+        {{ $dateStr = $sd.Format "2 jan 2006" }}
+        {{ range $en, $pt := (dict "Jan" "jan" "Feb" "fev" "Mar" "mar" "Apr" "abr" "May" "mai" "Jun" "jun" "Jul" "jul" "Aug" "ago" "Sep" "set" "Oct" "out" "Nov" "nov" "Dec" "dez") }}
+          {{ $dateStr = replace $dateStr $en $pt }}
+        {{ end }}
+      {{ else }}
+        {{ $dateStr = $sd.Format "Jan 2, 2006" }}
+      {{ end }}
+      {{ $title := "" }}
+      {{ with .title }}
+        {{ $title = or (index . $.Site.Language.Lang) (index . "pt") (index . "en") }}
+      {{ end }}
+      {{ $students := slice }}
+      {{ range .students }}{{ $students = $students | append .name }}{{ end }}
+      {{ $studentsText := delimit $students (cond (eq $.Site.Language.Lang "pt") " e " " and ") }}
+      {{ $url := printf "/defesas/%s/" .id | relLangURL }}
+      {{ $upcomingCardsHtml = $upcomingCardsHtml | append (printf `<li class="upcoming-defense-card"><a href="%s"><p class="upcoming-defense-card__date">%s</p><h3 class="upcoming-defense-card__title">%s</h3><p class="upcoming-defense-card__students">%s</p></a></li>` $url $dateStr ($title | htmlEscape) ($studentsText | htmlEscape)) }}
+    {{ end }}
+    {{ $eyebrow := cond (eq .Site.Language.Lang "pt") "Chamada para a comunidade" "Open to the community" }}
+    {{ $heading := cond (eq .Site.Language.Lang "pt") "Próxima(s) defesa(s) orientada(s)" "Upcoming supervised defense(s)" }}
+    {{ $upcomingDefensesHtml = printf `<section id="upcoming-defenses" class="upcoming-defenses not-prose"><div><p class="upcoming-defenses__eyebrow">%s</p><h2 id="upcoming-defenses-title">%s</h2></div><ol class="upcoming-defenses__list">%s</ol></section>` $eyebrow $heading (delimit $upcomingCardsHtml "") }}
+  {{ end }}
+{{ end }}
+
 {{ $featuredPublicationsHtml := "" }}
 {{ if $isResearcher }}
   {{ $scientificPublicationTypes := slice "article" "conference" "workshop" "book" "book chapter" "book_section" }}
@@ -364,6 +406,14 @@
   {{ end }}
   {{ if and $featuredPublicationsHtml (in $content `id="npublications-section"`) (not (in $content `id="featured-publications"`)) }}
     {{ $content = replaceRE `(?s)(<div id="npublications-section")` (printf `%s${1}` $featuredPublicationsHtml) $content 1 }}
+  {{ end }}
+  {{/* Insere Próximas defesas ANTES do bloco featured-publications, se ambos existirem. */}}
+  {{ if and $upcomingDefensesHtml (in $content `id="npublications-section"`) (not (in $content `id="upcoming-defenses"`)) }}
+    {{ $content = replaceRE `(?s)(<section id="featured-publications")` (printf `%s${1}` $upcomingDefensesHtml) $content 1 }}
+    {{/* Fallback: se não houver featured-publications, insere antes de npublications-section. */}}
+    {{ if not (in $content `id="upcoming-defenses"`) }}
+      {{ $content = replaceRE `(?s)(<div id="npublications-section")` (printf `%s${1}` $upcomingDefensesHtml) $content 1 }}
+    {{ end }}
   {{ end }}
 {{ end }}
 
