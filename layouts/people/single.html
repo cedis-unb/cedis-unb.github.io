@@ -710,9 +710,11 @@
             {{ range $tocEntries }}
             {{ $paddingClass := cond (eq .level 2) "pl-0" (cond (eq .level 3) "pl-3" "pl-6") }}
             <li class="m-0 p-0 {{ $paddingClass }}">
-              <a href="#{{ .anchor }}" class="block rounded-xl px-3 py-2 text-sm font-medium text-gray-700 transition-colors hover:bg-primary-50 hover:text-primary-700 dark:text-white/80 dark:hover:bg-primary-500/10 dark:hover:text-primary-100">
-                {{ .label }}
-              </a>
+              {{/* Bug do pa11y: href=#perfil-acad%c3%aamico... não casa
+                   com id=perfil-acadêmico... (ambos válidos por HTML5, mas o
+                   sniffer é estrito). Emitimos o anchor tag inteiro como
+                   safeHTML preservando Unicode literal. */}}
+              {{ printf `<a href="#%s" class="block rounded-xl px-3 py-2 text-sm font-medium text-gray-700 transition-colors hover:bg-primary-50 hover:text-primary-700 dark:text-white/80 dark:hover:bg-primary-500/10 dark:hover:text-primary-100">%s</a>` .anchor .label | safeHTML }}
             </li>
             {{ end }}
           </ul>
