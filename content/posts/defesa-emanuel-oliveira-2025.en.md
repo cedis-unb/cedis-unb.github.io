@@ -28,7 +28,7 @@ Results reveal consistent convergences between what the metrics show and what te
 
 Emanuel's research trajectory also includes the paper [_Behavior-Driven Development applied in Agile Teams of a Financial Institution_](https://doi.org/10.5753/cbsoft_estendido.2022.226260), published at CBSoft 2022. The work anticipates the author's interest in engineering practices in agile teams in the financial sector, later matured in the dissertation on DevOps maturity.
 
-The defense took place on December 11, 2025 in Brasília. The examining committee was composed of the advisor, Prof. Dr. George Marsicano Corrêa (CIC/UnB); Prof. Dr. Laerte Peotta de Melo (CIC/PPCA/UnB); and Prof. Dr. Milton Vinicius Morais de Lima (CISSA/CESAR). Prof. Dr. Edna Dias Canedo, PPCA program coordinator and co-advisor of the work, also attended the defense.
+The defense took place on December 11, 2025 in Brasília. The examining committee was composed of the advisor, Prof. Dr. George Marsicano Corrêa (CIC/UnB); Prof. Dr. Laerte Peotta de Melo (CIC/PPCA/UnB); and Prof. Dr. Milton Vinicius Morais de Lima (CISSA/CESAR). Prof. Dr. Edna Dias Canedo, co-advisor of the work, also participated in the defense.
 
 The full text — written in Portuguese — is available at the [UnB Institutional Repository](https://repositorio.unb.br/handle/10482/54557).
 

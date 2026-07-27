@@ -21,7 +21,7 @@ SiCaPEx fulfills a central function in the Brazilian Army’s personnel manageme
 
 The work analyzes user-system interaction from 2019 to 2023 using two complementary lenses: the System Usability Scale (SUS) questionnaire and Nielsen’s Heuristic Evaluation. Results point to significant problems — learning difficulty, subpar efficiency, poor memorization —, and the author does not stop at diagnosis. From the identified suggestions, she prepares an internal memorandum and implements a FAQ addressing the most frequent doubts, an initiative well received by users.
 
-The defense took place in January 2025 in Brasília. The examining committee was chaired by the advisor, Prof. Dr. George Marsicano Corrêa (UnB), and composed of Prof. Dr. Andrea Castello Branco Judice (UDF) and Prof. Dr. Sergio Antônio Andrade de Freitas (FCTE/UnB). Prof. Dr. Edna Dias Canedo, PPCA program coordinator, also attended the session.
+The defense took place in January 2025 in Brasília. The examining committee was chaired by the advisor, Prof. Dr. George Marsicano Corrêa (UnB), and composed of
 
 By pairing {{< link-interno "/areas/software_architecture/" "software architecture" >}} with concrete usability-improvement practice in a state corporate system, the dissertation offers a replicable path for other systems that suffer from the same time-driven stiffening.
 

@@ -27,7 +27,7 @@ Ao articular {{< link-interno "/areas/learning_analytics/" "Learning Analytics" 
 
 A pesquisa também resultou no artigo [_A Systematic Review of the Factors that Impact the Prediction of Retention and Dropout in Higher Education_](https://hdl.handle.net/10125/102787), publicado na 56th Hawaii International Conference on System Sciences. O artigo organiza a literatura que embasa a leitura preditiva explorada na dissertação.
 
-A defesa aconteceu em 3 de julho de 2023 em Brasília. A banca foi presidida pelo orientador, Prof. Dr. Sergio Antônio Andrade de Freitas (FCTE/UnB), e composta pelo Prof. Dr. Rafael Ferreira Leite de Mello (UFRPE) e pela Prof.ª Dr.ª Andrea Felippe Cabello (FACE/UnB). O Prof. Dr. Gladston Luiz da Silva, coordenador do PPCA, também acompanhou a sessão.
+A defesa aconteceu em 3 de julho de 2023 em Brasília. A banca foi presidida pelo orientador, Prof. Dr. Sergio Antônio Andrade de Freitas (FCTE/UnB), e composta pelo Prof. Dr. Rafael Ferreira Leite de Mello (UFRPE) e pela Prof.ª Dr.ª Andrea Felippe Cabello (FACE/UnB).
 
 A dissertação está disponível no [Repositório Institucional da UnB](https://repositorio.unb.br/handle/10482/47829).
 

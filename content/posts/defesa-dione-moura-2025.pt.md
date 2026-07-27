@@ -21,7 +21,7 @@ O SiCaPEx cumpre função central na gestão de pessoal do Exército Brasileiro 
 
 O trabalho analisa a interação entre usuários e sistema no período de 2019 a 2023 utilizando duas lentes complementares: o questionário SUS (System Usability Scale) e a Avaliação Heurística de Nielsen. Os resultados apontam problemas significativos — dificuldade de aprendizado, eficiência abaixo do esperado, memorização precária —, e a autora não para no diagnóstico. A partir das sugestões identificadas, elabora um memorando interno e implementa uma FAQ orientada às dúvidas mais frequentes, iniciativa bem avaliada pelos usuários.
 
-A defesa aconteceu em janeiro de 2025 em Brasília. A banca examinadora foi presidida pelo orientador, Prof. Dr. George Marsicano Corrêa (UnB), e composta pela Prof.ª Dr.ª Andrea Castello Branco Judice (UDF) e pelo Prof. Dr. Sergio Antônio Andrade de Freitas (FCTE/UnB). A Prof.ª Dr.ª Edna Dias Canedo, coordenadora do PPCA, também acompanhou a sessão.
+A defesa aconteceu em janeiro de 2025 em Brasília. A banca examinadora foi presidida pelo orientador, Prof. Dr. George Marsicano Corrêa (UnB), e composta pela Prof.ª Dr.ª Andrea Castello Branco Judice (UDF) e pelo Prof. Dr. Sergio Antônio Andrade de Freitas (FCTE/UnB).
 
 Ao articular {{< link-interno "/areas/software_architecture/" "arquitetura de software" >}} com práticas concretas de melhoria de usabilidade em sistema corporativo estatal, a dissertação oferece um caminho replicável para outros sistemas que sofrem do mesmo enrijecimento pelo tempo.
 
