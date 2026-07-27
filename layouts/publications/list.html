@@ -101,7 +101,7 @@
             class="rounded-[1.35rem] border border-slate-200 bg-white p-5 shadow-xs dark:border-white/10 dark:bg-slate-950/30">
             <div class="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
               <div class="min-w-0">
-                <div class="flex flex-wrap gap-2 text-xs font-semibold uppercase tracking-[0.16em] text-slate-500 dark:text-white/60">
+                <div class="flex flex-wrap gap-2 text-xs font-semibold uppercase tracking-[0.16em] text-slate-600 dark:text-white/60">
                   <span>{{ .Params.year }}</span>
                   <span aria-hidden="true">·</span>
                   <span>{{ .Params.publication_type }}</span>
@@ -127,7 +127,7 @@
 
       <aside class="space-y-4 lg:sticky lg:top-24 lg:self-start">
         <div class="rounded-3xl border border-slate-200/80 bg-white/90 p-5 shadow-[0_18px_50px_rgba(15,23,42,0.08)] dark:border-white/10 dark:bg-white/4">
-          <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-slate-500 dark:text-white/75">{{ cond $isPt "Tipos" "Types" }}</div>
+          <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-slate-700 dark:text-white/75">{{ cond $isPt "Tipos" "Types" }}</div>
           <nav class="mt-4 space-y-2 text-sm">
             {{ range $key, $meta := dict "scientific" "Scientific" "tcc" "TCC" "thesis" "Thesis" "specialization" "Specialization" "registrations" "Registrations" "zenodo" "Zenodo" "didactic" "Didactic" }}
               {{ with $.Site.GetPage (printf "/publications/%s" $key) }}
