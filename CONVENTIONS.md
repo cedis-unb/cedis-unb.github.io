@@ -928,8 +928,7 @@ Formato PT:
 A defesa aconteceu em 27 de dezembro de 2023 em Brasília. A banca
 examinadora foi presidida pelo orientador, Prof. Dr. <Nome>
 (<Sigla/UnB>), e composta pelo Prof. Dr. <Nome> (<Instituição>) e
-pelo Prof. Dr. <Nome> (<Instituição>). A Prof.ª Dr.ª <Nome do
-coordenador>, coordenador(a) do PPCA, também acompanhou a sessão.
+pelo Prof. Dr. <Nome> (<Instituição>).
 ```
 
 Formato EN:
@@ -937,13 +936,20 @@ Formato EN:
 The defense took place on December 27, 2023 in Brasília. The
 examining committee was chaired by the advisor, Prof. Dr. <Name>
 (<Affiliation>), and composed of Prof. Dr. <Name> (<Affiliation>)
-and Prof. Dr. <Name> (<Affiliation>). Prof. Dr. <Coordinator's
-Name>, PPCA program coordinator, also attended the session.
+and Prof. Dr. <Name> (<Affiliation>).
 ```
 
 Extraia banca via `pdfplumber` (as 5 primeiras páginas geralmente
 bastam). Preserve titulação (Prof. Dr., Prof.ª Dr.ª) e vínculo
 (CIC/UnB, FCTE/UnB, PPCA, PPEE, IMD/UFRN, PPGI/PUC-PR, etc.).
+
+**Não incluir** o coordenador do programa (PPCA/PPGEE/etc.) como
+"tendo acompanhado" ou "assinado a folha final". Coordenadores de
+pós-graduação **não acompanham defesas** — o registro do coordenador
+aparece na folha de aprovação por competência administrativa, não por
+presença. Mencione apenas se a pessoa exerceu papel real na defesa
+(ex.: co-orientadora), e nesse caso descreva o papel real, não o
+cargo administrativo.
 
 ### 3.8 Vínculo entre defesa e artigo publicado
 

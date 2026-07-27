@@ -24,7 +24,7 @@ The work does not question the ESB as an architectural choice; it takes it as gi
 
 By articulating {{< link-interno "/areas/software_architecture/" "software architecture" >}} with {{< link-interno "/areas/transformation/" "digital transformation" >}} of public administration, the work contributes to a still-current discussion: how to sustain governance of critical systems without depending on individual heroism.
 
-The defense took place on February 11, 2020 in Brasília. The examining committee was chaired by the advisor, Prof. Dr. Sérgio Antônio Andrade de Freitas (CIC/UnB), and composed of Prof. Dr. Edna Dias Canedo (CIC/UnB) and Prof. Dr. Gibeon Soares De Aquino Junior (DIM/UFRN). Prof. Dr. Aletéia Patrícia Favacho de Araújo, PPCA program coordinator, also attended the session.
+The defense took place on February 11, 2020 in Brasília. The examining committee was chaired by the advisor, Prof. Dr. Sérgio Antônio Andrade de Freitas (CIC/UnB), and composed of
 
 The full text — written in Portuguese — is available at the [UnB Institutional Repository](https://repositorio.unb.br/handle/10482/38687).
 

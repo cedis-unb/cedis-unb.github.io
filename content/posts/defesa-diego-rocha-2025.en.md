@@ -24,7 +24,7 @@ The work proposes automating the identification of elementary processes — SFP�
 
 Reported results reach an average variation of 17% against manual counting, close to the 15% acceptable threshold for human-executed measurement. It is a concrete contribution to {{< link-interno "/areas/software_requirements/" "requirements engineering" >}} and {{< link-interno "/areas/ai_pln/" "applied machine learning" >}}: a path to remove from the flow what usually paralyzes SFP adoption.
 
-The qualification took place on October 23, 2025 in Brasília. The examining committee was chaired by the advisor, Prof. Dr. André Luiz Peron Martins Lanna (FCTE/UnB), and composed of Prof. Dr. Monalessa Perini Barcellos (PPGI/UFES) and Prof. Dr. Sérgio Antônio Andrade de Freitas (FCTE/UnB). Prof. Dr. Edna Dias Canedo, PPCA program coordinator, also attended the session.
+The qualification took place on October 23, 2025 in Brasília. The examining committee was chaired by the advisor, Prof. Dr. André Luiz Peron Martins Lanna (FCTE/UnB), and composed of
 
 The full text — written in Portuguese — is available at the [UnB Institutional Repository](https://repositorio.unb.br/handle/10482/54552).
 

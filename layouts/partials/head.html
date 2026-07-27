@@ -15,6 +15,10 @@
         var globalPrivacyControl = navigator.globalPrivacyControl === true;
         if (doNotTrack || globalPrivacyControl) return;
 
+        var optOut = false;
+        try { optOut = localStorage.getItem("cedis-analytics-optout") === "1"; } catch (e) {}
+        if (optOut) return;
+
         window.dataLayer = window.dataLayer || [];
         window.gtag = window.gtag || function () { dataLayer.push(arguments); };
         gtag("js", new Date());

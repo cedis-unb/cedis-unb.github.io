@@ -24,7 +24,7 @@ O trabalho não critica o ESB como escolha arquitetural; toma-o como fato e reso
 
 Ao articular {{< link-interno "/areas/software_architecture/" "arquitetura de software" >}} com {{< link-interno "/areas/transformation/" "transformação digital" >}} de administrações públicas, o trabalho contribui para uma discussão que continua atual: como sustentar a governança de sistemas críticos sem depender de heroísmo individual.
 
-A defesa aconteceu em 11 de fevereiro de 2020 em Brasília. A banca foi presidida pelo orientador, Prof. Dr. Sérgio Antônio Andrade de Freitas (CIC/UnB), e composta pela Prof.ª Dr.ª Edna Dias Canedo (CIC/UnB) e pelo Prof. Dr. Gibeon Soares De Aquino Junior (DIM/UFRN). A Prof.ª Dr.ª Aletéia Patrícia Favacho de Araújo, coordenadora do PPCA, também acompanhou a sessão.
+A defesa aconteceu em 11 de fevereiro de 2020 em Brasília. A banca foi presidida pelo orientador, Prof. Dr. Sérgio Antônio Andrade de Freitas (CIC/UnB), e composta pela Prof.ª Dr.ª Edna Dias Canedo (CIC/UnB) e pelo Prof. Dr. Gibeon Soares De Aquino Junior (DIM/UFRN).
 
 A dissertação está disponível no [Repositório Institucional da UnB](https://repositorio.unb.br/handle/10482/38687).
 

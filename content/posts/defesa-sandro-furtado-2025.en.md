@@ -22,7 +22,7 @@ The gov.br identity is the doorway to dozens of Brazilian digital public service
 
 The work combines a systematic literature review with a case study applied to the gov.br identity. Five promising factors emerge from the review: RBA (Risk-Based Authentication), Tripwire, login rituals, OTP, and OTP with Bluetooth. Among them, RBA was implemented and evaluated in a real context. Results showed concrete capability to detect atypical behaviors and block suspicious attempts — especially in access-location divergence situations, a classic pattern of compromised accounts.
 
-The defense took place on February 18, 2025 in Brasília. The examining committee was chaired by the advisor, Prof. Dr. George Marsicano Corrêa (CIC/UnB), and composed of Prof. Dr. John Lenon Cardoso Gardenghi (FCTE/UnB) and Prof. Dr. Milton Vinicius Morais de Lima (CISSA/CESAR). Prof. Dr. Edna Dias Canedo, PPCA program coordinator, also attended the session.
+The defense took place on February 18, 2025 in Brasília. The examining committee was chaired by the advisor, Prof. Dr. George Marsicano Corrêa (CIC/UnB), and composed of
 
 By pairing {{< link-interno "/areas/security/" "cybersecurity" >}} with {{< link-interno "/areas/transformation/" "digital transformation" >}} of the Brazilian State, the dissertation offers a concrete basis for architectural decisions that directly affect millions of citizens — precisely where the security research community must carry its work to generate impact.
 

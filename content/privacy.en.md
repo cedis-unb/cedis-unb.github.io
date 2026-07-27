@@ -41,8 +41,46 @@ Google Analytics is loaded only when the browser does not signal **Do Not Track 
 ## Retention
 
 - Language and theme preferences remain only in the user's browser until the browser or user deletes them.
-- Aggregated metrics follow the retention setting configured in the Google Analytics property maintained by CEDIS.
+- Aggregated Google Analytics 4 metrics follow a retention of **14 months** (default configuration of the GA4 property maintained by CEDIS) for events and user properties; aggregated reports on GA standard dimensions remain available beyond that period.
 - Email messages follow UnB's institutional records management and information security rules.
+
+## Analytics opt-out
+
+In addition to automatically honoring Do Not Track and Global Privacy Control signals, you can explicitly refuse Google Analytics in this browser. The choice is stored locally (`localStorage`) and only applies to this device/browser.
+
+<div id="cedis-optout-widget" class="mt-3 rounded-xl border border-slate-200 bg-slate-50 p-4 text-sm dark:border-white/10 dark:bg-white/5">
+  <p id="cedis-optout-status" class="mb-3 font-semibold"></p>
+  <button id="cedis-optout-toggle" type="button" class="rounded-full bg-primary-700 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-primary-800"></button>
+</div>
+<script>
+  (function () {
+    var KEY = "cedis-analytics-optout";
+    var widget = document.getElementById("cedis-optout-widget");
+    var status = document.getElementById("cedis-optout-status");
+    var btn = document.getElementById("cedis-optout-toggle");
+    if (!widget || !status || !btn) return;
+    function render() {
+      var optedOut = false;
+      try { optedOut = localStorage.getItem(KEY) === "1"; } catch (e) {}
+      if (optedOut) {
+        status.textContent = "You have opted out of Google Analytics in this browser.";
+        btn.textContent = "Re-enable analytics";
+      } else {
+        status.textContent = "Google Analytics is active in this browser (with IP anonymization and DNT/GPC respected).";
+        btn.textContent = "Opt out of analytics";
+      }
+    }
+    btn.addEventListener("click", function () {
+      try {
+        if (localStorage.getItem(KEY) === "1") { localStorage.removeItem(KEY); }
+        else { localStorage.setItem(KEY, "1"); }
+      } catch (e) {}
+      render();
+      location.reload();
+    });
+    render();
+  })();
+</script>
 
 ## External integrations
 

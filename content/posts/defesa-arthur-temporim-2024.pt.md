@@ -27,7 +27,7 @@ Ao articular {{< link-interno "/areas/gamification/" "gamificação" >}} com {{<
 
 O resultado do mestrado também deu origem ao artigo [_Gamified Chatbot Management Process: A way to build gamified chatbots_](https://doi.org/10.1007/978-3-031-66428-1_2), apresentado na 10th Intelligent Systems Conference, em Amsterdam. Esse artigo se soma a uma publicação anterior de Arthur, ainda no percurso de graduação, [_Gamification in education: A methodology to identify student's profile_](https://doi.org/10.1109/FIE.2017.8190499), publicada no IEEE Frontiers in Education Conference.
 
-A defesa ocorreu em 28 de maio de 2024 em Brasília. A banca foi presidida pelo orientador, Prof. Dr. Sergio Antônio Andrade de Freitas (UnB), e composta pelo Prof. Dr. Giovanni Almeida Santos (UnB) e pelo Prof. Dr. Charles Andryê Galvão Madeira (IMD/UFRN). O Prof. Dr. Gladston Luiz da Silva, então coordenador do PPCA, também acompanhou a sessão.
+A defesa ocorreu em 28 de maio de 2024 em Brasília. A banca foi presidida pelo orientador, Prof. Dr. Sergio Antônio Andrade de Freitas (UnB), e composta pelo Prof. Dr. Giovanni Almeida Santos (UnB) e pelo Prof. Dr. Charles Andryê Galvão Madeira (IMD/UFRN).
 
 A dissertação está disponível na íntegra no [Repositório Institucional da UnB](https://repositorio.unb.br/handle/10482/52050).
 

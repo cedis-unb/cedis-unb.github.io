@@ -41,8 +41,46 @@ O Google Analytics só é carregado quando o navegador não sinaliza **Do Not Tr
 ## Retenção
 
 - Preferências de idioma e tema permanecem apenas no navegador do usuário até que sejam apagadas pelo próprio navegador ou pelo usuário.
-- Métricas agregadas seguem a retenção configurada na propriedade Google Analytics mantida pelo CEDIS.
+- Métricas agregadas do Google Analytics 4 seguem a retenção de **14 meses** (configuração padrão da propriedade GA4 mantida pelo CEDIS) para eventos e propriedades de usuário; relatórios agregados nas dimensões padrão do GA continuam disponíveis além desse período.
 - Mensagens recebidas por e-mail seguem as regras institucionais de gestão documental e segurança da informação da UnB.
+
+## Opt-out de analytics
+
+Além de respeitar automaticamente os sinais Do Not Track e Global Privacy Control, você pode recusar explicitamente o Google Analytics neste navegador. A escolha é armazenada apenas localmente (`localStorage`) e vale para este dispositivo/navegador.
+
+<div id="cedis-optout-widget" class="mt-3 rounded-xl border border-slate-200 bg-slate-50 p-4 text-sm dark:border-white/10 dark:bg-white/5">
+  <p id="cedis-optout-status" class="mb-3 font-semibold"></p>
+  <button id="cedis-optout-toggle" type="button" class="rounded-full bg-primary-700 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-primary-800"></button>
+</div>
+<script>
+  (function () {
+    var KEY = "cedis-analytics-optout";
+    var widget = document.getElementById("cedis-optout-widget");
+    var status = document.getElementById("cedis-optout-status");
+    var btn = document.getElementById("cedis-optout-toggle");
+    if (!widget || !status || !btn) return;
+    function render() {
+      var optedOut = false;
+      try { optedOut = localStorage.getItem(KEY) === "1"; } catch (e) {}
+      if (optedOut) {
+        status.textContent = "Você optou por não ser rastreado pelo Google Analytics neste navegador.";
+        btn.textContent = "Reativar analytics";
+      } else {
+        status.textContent = "O Google Analytics está ativo neste navegador (com anonimização de IP e respeito a DNT/GPC).";
+        btn.textContent = "Recusar analytics";
+      }
+    }
+    btn.addEventListener("click", function () {
+      try {
+        if (localStorage.getItem(KEY) === "1") { localStorage.removeItem(KEY); }
+        else { localStorage.setItem(KEY, "1"); }
+      } catch (e) {}
+      render();
+      location.reload();
+    });
+    render();
+  })();
+</script>
 
 ## Integrações externas
 
