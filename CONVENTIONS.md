@@ -1355,14 +1355,30 @@ Templates atualmente conformes: `people/single.html`, `people/collaborators.html
 
 ### 11.5 Classes Tailwind — validação silenciosa
 
-Tailwind **ignora silenciosamente** classes que não conhece — não emite warning. Um bug massivo (255 ocorrências) foi descoberto em julho/2026 causado por opacidades fora da escala padrão. Regras:
+Tailwind **ignora silenciosamente** classes que não conhece — não emite warning. Um bug massivo (255 ocorrências) foi descoberto em julho/2026 causado por opacidades fora da escala v3 e outras classes inválidas. Regras que continuam valendo em Tailwind 4:
 
-- **Opacidade** só aceita valores em: `/0 /5 /10 /20 /25 /30 /40 /50 /55 /60 /65 /70 /75 /80 /85 /90 /95 /100`. Nunca use `/72`, `/78`, `/82`, `/88`, `/92` etc. — Tailwind gera nada e a classe é ignorada. Se precisar de opacidade exata, use arbitrary value: `text-white/[.72]`.
-- **`dark-mode:` é sintaxe Tailwind v1/v2**, não funciona em v3. Sempre use `dark:`.
-- **Breakpoints:** só `sm md lg xl 2xl` estão no config. Não use `xs:` (silenciosamente ignorado). Se precisar de `xs`, adicionar ao `screens` em `tailwind.config.js`.
+- **`dark-mode:` é sintaxe Tailwind v1/v2**, foi removida em v3 e continua não existindo em v4. Sempre use `dark:`.
+- **Breakpoints:** só `sm md lg xl 2xl` estão no config. Não use `xs:` (silenciosamente ignorado). Se precisar de `xs`, adicionar ao `screens` no config CSS-first ou em `tailwind.config.js`.
 - **`text-md` não existe.** Use `text-base` (16px). Tamanhos válidos: `text-xs text-sm text-base text-lg text-xl text-2xl ...`.
 
-Como validar: rodar `python3 tmp/audit_v2.py` (extrai todas classes usadas em templates, compara contra CSS compilado, reporta ausentes).
+**Mudança em Tailwind 4 (a partir de 2026-07-27):**
+
+- **Opacidade agora aceita qualquer valor.** Em v3 só `/0 /5 /10 /20 /25 /30 /40 /50 /55 /60 /65 /70 /75 /80 /85 /90 /95 /100` funcionavam; `/72`, `/78`, `/92` etc. eram silenciosamente ignorados. Em v4 a opacidade é aplicada via `color-mix()` runtime e qualquer inteiro 0-100 é válido: `text-white/72`, `bg-black/33`, `border-red-500/47`. **Ainda assim, prefira valores redondos** (`/25`, `/50`, `/75`) para consistência visual e leitura de código — os intermediários são úteis apenas para casos onde o design demanda precisão.
+
+- **Arbitrary values de CSS custom properties mudaram de sintaxe:** v3 aceitava `bg-[--var]`; v4 espera `bg-(--var)` (parênteses).
+
+- **Renames de escala (v3 → v4):**
+  - `shadow-sm` → `shadow-xs` (mesmo tamanho, 2px)
+  - `shadow` → `shadow-sm` (mesmo tamanho, 4px)
+  - `rounded-sm` → `rounded-xs`
+  - `blur-sm` → `blur-xs`
+  - `flex-shrink-*` → `shrink-*`, `flex-grow-*` → `grow-*`
+  - `overflow-ellipsis` → `text-ellipsis`
+  - `focus:outline-none` → `focus:outline-hidden` (o novo preserva outline em `forced-colors` mode — acessibilidade)
+
+- **Default de border color** = `currentColor` (era `gray-200`). Se algum elemento usa `border` sem cor, verifique visualmente — normalmente Alpine `:class` supre.
+
+Como validar após alterações em massa: rodar `hugo --minify` e comparar `docs/css/main.*.css` com o baseline anterior. Se o CSS gerado mudar significativamente sem causa óbvia, algo pode estar sendo silenciosamente ignorado.
 
 ### 11.6 Boas práticas de HTML
 

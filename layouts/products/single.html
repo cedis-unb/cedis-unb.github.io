@@ -74,13 +74,13 @@
   {{ end }}
 {{ end }}
 
-<article class="bg-[linear-gradient(180deg,_#fffaf1_0%,_#f8fafc_24%,_#f8fafc_100%)] text-slate-900 dark:bg-none dark:bg-gray-800 dark:text-white">
-  <section class="relative overflow-hidden border-b border-slate-200/80 bg-[radial-gradient(circle_at_top_left,_rgba(251,191,36,0.18),_transparent_28%),radial-gradient(circle_at_85%_15%,_rgba(14,165,233,0.18),_transparent_24%),linear-gradient(180deg,_#fffdf8_0%,_#f8fafc_100%)] dark:border-white/10 dark:bg-[radial-gradient(circle_at_top_left,_rgba(251,191,36,0.12),_transparent_28%),radial-gradient(circle_at_85%_15%,_rgba(14,165,233,0.12),_transparent_24%),linear-gradient(180deg,_#0f172a_0%,_#111827_100%)]">
+<article class="bg-[linear-gradient(180deg,#fffaf1_0%,#f8fafc_24%,#f8fafc_100%)] text-slate-900 dark:bg-none dark:bg-gray-800 dark:text-white">
+  <section class="relative overflow-hidden border-b border-slate-200/80 bg-[radial-gradient(circle_at_top_left,rgba(251,191,36,0.18),transparent_28%),radial-gradient(circle_at_85%_15%,rgba(14,165,233,0.18),transparent_24%),linear-gradient(180deg,#fffdf8_0%,#f8fafc_100%)] dark:border-white/10 dark:bg-[radial-gradient(circle_at_top_left,rgba(251,191,36,0.12),transparent_28%),radial-gradient(circle_at_85%_15%,rgba(14,165,233,0.12),transparent_24%),linear-gradient(180deg,#0f172a_0%,#111827_100%)]">
     <div aria-hidden="true" class="absolute left-0 top-0 h-40 w-40 rounded-full bg-amber-300/30 blur-3xl dark:bg-amber-400/10"></div>
     <div aria-hidden="true" class="absolute right-0 top-16 h-56 w-56 rounded-full bg-sky-300/30 blur-3xl dark:bg-sky-400/10"></div>
-    <div class="relative mx-auto grid max-w-screen-xl gap-10 px-4 py-14 md:px-6 lg:grid-cols-[minmax(0,1.05fr)_minmax(320px,0.95fr)] lg:px-8 lg:py-20">
+    <div class="relative mx-auto grid max-w-(--breakpoint-xl) gap-10 px-4 py-14 md:px-6 lg:grid-cols-[minmax(0,1.05fr)_minmax(320px,0.95fr)] lg:px-8 lg:py-20">
       <div class="min-w-0">
-        <div class="inline-flex items-center rounded-full border border-slate-300/70 bg-white/80 px-4 py-2 text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-slate-700 shadow-sm backdrop-blur dark:border-white/10 dark:bg-white/5 dark:text-slate-300">
+        <div class="inline-flex items-center rounded-full border border-slate-300/70 bg-white/80 px-4 py-2 text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-slate-700 shadow-xs backdrop-blur dark:border-white/10 dark:bg-white/5 dark:text-slate-300">
           {{ $productLabel }}
         </div>
         <h1 class="mt-5 max-w-4xl text-4xl font-black leading-tight text-slate-950 md:text-5xl lg:text-6xl dark:text-white">
@@ -92,11 +92,11 @@
         </p>
         {{ end }}
         <div class="mt-8 flex flex-wrap items-center gap-3 text-sm text-slate-600 dark:text-slate-300">
-          <div class="inline-flex items-center rounded-2xl border border-slate-200 bg-white/85 px-4 py-2 shadow-sm dark:border-white/10 dark:bg-white/5">
+          <div class="inline-flex items-center rounded-2xl border border-slate-200 bg-white/85 px-4 py-2 shadow-xs dark:border-white/10 dark:bg-white/5">
             <span class="font-semibold text-slate-900 dark:text-white">{{ $dateLabel }}:</span>
             <span class="ml-2">{{ .Date.Format $dateFormat }}</span>
           </div>
-          <div class="inline-flex items-center rounded-2xl border border-slate-200 bg-white/85 px-4 py-2 shadow-sm dark:border-white/10 dark:bg-white/5">
+          <div class="inline-flex items-center rounded-2xl border border-slate-200 bg-white/85 px-4 py-2 shadow-xs dark:border-white/10 dark:bg-white/5">
             <span class="font-semibold text-slate-900 dark:text-white">{{ $languageLabel }}:</span>
             <span class="ml-2">{{ $productLanguageDisplay }}</span>
           </div>
@@ -113,7 +113,7 @@
         </div>
       </div>
       <div class="min-w-0">
-        <div class="relative overflow-hidden rounded-[2rem] border border-white/70 bg-white/80 p-3 shadow-[0_30px_80px_rgba(15,23,42,0.16)] backdrop-blur dark:border-white/10 dark:bg-white/[0.04] dark:shadow-[0_30px_80px_rgba(0,0,0,0.35)]">
+        <div class="relative overflow-hidden rounded-4xl border border-white/70 bg-white/80 p-3 shadow-[0_30px_80px_rgba(15,23,42,0.16)] backdrop-blur dark:border-white/10 dark:bg-white/4 dark:shadow-[0_30px_80px_rgba(0,0,0,0.35)]">
           <div class="mb-3 flex items-center gap-2 px-2 pt-2 text-slate-400 dark:text-slate-500">
             <span class="h-2.5 w-2.5 rounded-full bg-rose-400/90"></span>
             <span class="h-2.5 w-2.5 rounded-full bg-amber-400/90"></span>
@@ -125,10 +125,10 @@
             srcset="{{ $featuredSmall }} 640w, {{ $featuredMedium }} 960w, {{ $featuredLarge }} 1280w, {{ $featuredXLarge }} 1680w"
             sizes="(min-width: 1024px) 42vw, 100vw"
             alt="{{ printf "%s: %s" (i18n "ui_alt_product_visual") .Title }}"
-            class="aspect-[16/10] w-full rounded-[1.35rem] border border-slate-200/80 bg-white object-contain p-3 shadow-sm dark:border-white/10 dark:bg-slate-950/40"
+            class="aspect-16/10 w-full rounded-[1.35rem] border border-slate-200/80 bg-white object-contain p-3 shadow-xs dark:border-white/10 dark:bg-slate-950/40"
           >
           {{ else }}
-          <div class="flex aspect-[16/10] items-center justify-center rounded-[1.35rem] border border-dashed border-slate-300 bg-slate-50 text-sm text-slate-500 dark:border-white/10 dark:bg-slate-950/30 dark:text-slate-400">
+          <div class="flex aspect-16/10 items-center justify-center rounded-[1.35rem] border border-dashed border-slate-300 bg-slate-50 text-sm text-slate-500 dark:border-white/10 dark:bg-slate-950/30 dark:text-slate-400">
             {{ .Title }}
           </div>
           {{ end }}
@@ -137,8 +137,8 @@
     </div>
   </section>
 
-  <section class="mx-auto grid max-w-screen-xl gap-8 px-4 py-12 md:px-6 lg:grid-cols-[minmax(0,1fr)_300px] lg:px-8 lg:py-16">
-    <div class="min-w-0 overflow-hidden rounded-[2rem] border border-slate-200/80 bg-white p-6 shadow-[0_20px_60px_rgba(15,23,42,0.08)] dark:border-white/10 dark:bg-slate-900/40 dark:shadow-[0_20px_60px_rgba(0,0,0,0.25)] md:p-8 lg:p-10">
+  <section class="mx-auto grid max-w-(--breakpoint-xl) gap-8 px-4 py-12 md:px-6 lg:grid-cols-[minmax(0,1fr)_300px] lg:px-8 lg:py-16">
+    <div class="min-w-0 overflow-hidden rounded-4xl border border-slate-200/80 bg-white p-6 shadow-[0_20px_60px_rgba(15,23,42,0.08)] dark:border-white/10 dark:bg-slate-900/40 dark:shadow-[0_20px_60px_rgba(0,0,0,0.25)] md:p-8 lg:p-10">
       <div class="prose prose-zinc max-w-none prose-headings:scroll-mt-28 prose-headings:font-black prose-headings:text-slate-950 prose-h2:mt-14 prose-h2:border-t prose-h2:border-slate-200 prose-h2:pt-8 prose-h2:text-2xl prose-h3:text-xl prose-p:leading-8 prose-a:text-sky-700 prose-a:no-underline hover:prose-a:text-sky-800 hover:prose-a:underline prose-strong:text-slate-950 prose-li:leading-7 dark:prose-invert dark:prose-headings:text-white dark:prose-h2:border-white/10 dark:prose-a:text-sky-300 dark:hover:prose-a:text-sky-200 dark:prose-strong:text-white">
         {{ .Content }}
       </div>

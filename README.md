@@ -52,12 +52,13 @@ npm ci
 npm start
 ```
 
-Isso executa concorrentemente:
+Executa `hugo server -d .hugo-server --disableFastRender` em <http://localhost:1313/>.
+O próprio Hugo compila Tailwind CSS 4 via `css.TailwindCSS` (integração nativa
+desde Hugo 0.161) — não há watcher separado. Alterações em `assets/css/main.css`
+e em templates recarregam automaticamente.
 
-- `tailwindcss --watch` regenerando `assets/css/style.css` a partir de `assets/css/main.css`;
-- `hugo server -d .hugo-server --disableFastRender` servindo em <http://localhost:1313/>.
-
-O idioma português é o padrão. Para navegar a versão em inglês, use <http://localhost:1313/en/>.
+O idioma inglês é o padrão do Hugo (fica em `/`). Para a versão em português,
+use <http://localhost:1313/pt/>.
 
 ## Build de produção
 
@@ -102,10 +103,9 @@ reescritos por `scripts/build_publications.py` e checados com
 ├── layouts/              # Templates Hugo (partials, single, list, section)
 ├── scripts/              # Utilitários (Python, Bash)
 ├── static/               # Ativos servidos sem processamento (robots.txt, favicon, ...)
-├── hugo.yaml             # Configuração central do Hugo
-├── tailwind.config.js
-├── postcss.config.js
-├── package.json
+├── hugo.yaml             # Configuração central do Hugo (inclui [build.buildStats] para Tailwind 4)
+├── tailwind.config.js    # Config legado (colors, typography theme) importado via @config no main.css
+├── package.json          # Deps mínimas: tailwindcss@4, @tailwindcss/cli, @tailwindcss/typography, alpinejs, pa11y-ci, lhci, pagefind
 ├── CONVENTIONS.md         # Convenções editoriais (fontes canônicas, IDs, autoria)
 ├── ROADMAP.md             # Roadmap de comunicação e conteúdo
 ├── PLANO-AUDITORIA-2026.md # Plano técnico decorrente da auditoria 2026
@@ -117,13 +117,13 @@ reescritos por `scripts/build_publications.py` e checados com
 
 | Script | O que faz |
 |---|---|
-| `npm start` | Roda Tailwind e Hugo server concorrentemente para desenvolvimento. |
-| `npm run watch:tw` | Só o watcher do Tailwind. |
-| `npm run watch:hugo` | Só o Hugo server. |
+| `npm start` | Executa `hugo server` (compila Tailwind 4 nativamente durante o serve). |
 | `npm run build:publications` | Regenera `content/publications/` a partir de `data/productions.yaml`. |
 | `npm run check:publications` | Falha se `content/publications/` estiver divergente de `data/productions.yaml`. |
 | `npm run build` | Build de produção + Pagefind. Saída em `docs/`. |
 | `npm run update-i18n` | Executa `scripts/update_i18n.py` (mantém sincronia entre `i18n/pt.yaml` e `i18n/en.yaml`). |
+| `npm run audit:a11y` | Roda `pa11y-ci` (site precisa estar servido em 4173). |
+| `npm run audit:lighthouse` | Roda `lhci autorun` (site precisa estar servido em 4173). |
 | `npm test` | Checa publicações geradas, dados de conteúdo e paridade PT/EN. |
 
 ## Convenções e governança
