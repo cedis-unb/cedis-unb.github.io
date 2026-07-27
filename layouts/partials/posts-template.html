@@ -17,7 +17,7 @@
         {{ range .Paginator.Pages }}
         {{ $termTitle := partial "translated-label.html" (dict "page" . "value" .Title) }}
         {{ $termCount := len .Pages }}
-        <a href="{{ .RelPermalink }}" class="group flex h-full flex-col justify-between rounded-[2rem] border border-black/5 bg-white p-6 text-gray-900 shadow-[0_18px_60px_rgba(15,23,42,0.08)] transition duration-300 ease-out hover:-translate-y-1 hover:shadow-[0_28px_90px_rgba(197,39,47,0.16)] dark:border-white/10 dark:bg-white/[0.04] dark:text-white">
+        <a href="{{ .RelPermalink }}" class="group flex h-full flex-col justify-between rounded-4xl border border-black/5 bg-white p-6 text-gray-900 shadow-[0_18px_60px_rgba(15,23,42,0.08)] transition duration-300 ease-out hover:-translate-y-1 hover:shadow-[0_28px_90px_rgba(197,39,47,0.16)] dark:border-white/10 dark:bg-white/4 dark:text-white">
             <div>
                 <div class="flex items-center justify-between gap-4">
                     <span class="inline-flex rounded-full border border-primary-200 bg-primary-50 px-3 py-1 text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-primary-700 dark:border-primary-500/30 dark:bg-primary-500/10 dark:text-primary-100">
@@ -96,7 +96,7 @@
                 {{ end }}
             {{ end }}
         {{ end }}
-        <article class="group flex h-full flex-col overflow-hidden rounded-[2rem] border border-black/5 bg-white text-gray-900 shadow-[0_18px_60px_rgba(15,23,42,0.08)] transition duration-300 ease-out hover:-translate-y-1 hover:shadow-[0_28px_90px_rgba(197,39,47,0.16)] dark:border-white/10 dark:bg-white/[0.04] dark:text-white"{{ if $isResearchersTerm }} data-randomize-card{{ end }}>
+        <article class="group flex h-full flex-col overflow-hidden rounded-4xl border border-black/5 bg-white text-gray-900 shadow-[0_18px_60px_rgba(15,23,42,0.08)] transition duration-300 ease-out hover:-translate-y-1 hover:shadow-[0_28px_90px_rgba(197,39,47,0.16)] dark:border-white/10 dark:bg-white/4 dark:text-white"{{ if $isResearchersTerm }} data-randomize-card{{ end }}>
             <a href="{{ .RelPermalink }}" class="block">
                 {{ with .Params.featured_image }}
                 {{ $featuredPath := replace . "../assets/" "" }}
@@ -104,8 +104,8 @@
                 {{ partial "card-image.html" (dict "resource" . "title" $cardTitle "fit" "960x640 webp q88" "mode" $cardImageMode "containerClass" "h-64" "variant" "grid") }}
                 {{ end }}
                 {{ else }}
-                <div class="flex h-64 items-end bg-[linear-gradient(135deg,_rgba(197,39,47,0.18),_rgba(15,23,42,0.9))] p-6">
-                    <span class="max-w-[14rem] text-3xl font-black tracking-tight text-white">{{ .Title }}</span>
+                <div class="flex h-64 items-end bg-[linear-gradient(135deg,rgba(197,39,47,0.18),rgba(15,23,42,0.9))] p-6">
+                    <span class="max-w-56 text-3xl font-black tracking-tight text-white">{{ .Title }}</span>
                 </div>
                 {{ end }}
             </a>
@@ -128,11 +128,11 @@
 
                 {{ if $isResearchersTerm }}
                 <div class="mt-5 grid grid-cols-2 gap-3">
-                    <div class="rounded-2xl border border-black/5 bg-stone-50 px-4 py-3 dark:border-white/10 dark:bg-white/[0.04]">
+                    <div class="rounded-2xl border border-black/5 bg-stone-50 px-4 py-3 dark:border-white/10 dark:bg-white/4">
                         <div class="text-2xl font-black tracking-tight text-gray-950 dark:text-white">{{ $researcherPublicationCount }}</div>
                         <div class="mt-1 text-xs font-semibold uppercase tracking-[0.16em] text-gray-500 dark:text-white/60">{{ i18n "ui_publications" }}</div>
                     </div>
-                    <div class="rounded-2xl border border-black/5 bg-stone-50 px-4 py-3 dark:border-white/10 dark:bg-white/[0.04]">
+                    <div class="rounded-2xl border border-black/5 bg-stone-50 px-4 py-3 dark:border-white/10 dark:bg-white/4">
                         <div class="text-2xl font-black tracking-tight text-gray-950 dark:text-white">{{ $researcherFormerSupervisionCount }}</div>
                         <div class="mt-1 text-xs font-semibold uppercase tracking-[0.16em] text-gray-500 dark:text-white/60">{{ i18n "people_former_supervisions" }}</div>
                     </div>
