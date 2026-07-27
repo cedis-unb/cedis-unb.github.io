@@ -37,11 +37,11 @@
     <div class="relative mx-auto max-w-(--breakpoint-xl) px-4 py-14 md:px-6 lg:px-8 lg:py-16">
         <div class="grid gap-8 lg:grid-cols-[minmax(0,1.3fr)_minmax(0,0.8fr)_minmax(0,1fr)]">
             <div class="rounded-[1.75rem] border border-white/10 bg-white/4 p-6 shadow-[0_24px_80px_rgba(0,0,0,0.22)] backdrop-blur">
-                <div class="text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-slate-400">{{ $footerKicker }}</div>
+                <div class="text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-slate-700">{{ $footerKicker }}</div>
                 <div class="mt-4 flex items-center gap-4">
                     <img src="/images/site-logo.svg" alt="CEDIS Logo" class="h-10 w-28 object-contain opacity-95" loading="lazy" decoding="async">
                     <div class="h-10 w-px bg-white/10"></div>
-                    <div class="text-sm font-medium uppercase tracking-[0.2em] text-slate-400">CEDIS</div>
+                    <div class="text-sm font-medium uppercase tracking-[0.2em] text-slate-500">CEDIS</div>
                 </div>
                 <p class="mt-5 max-w-xl text-base leading-7 text-slate-300">
                     {{ $footerLead }}
@@ -51,7 +51,7 @@
             <div class="rounded-lg border border-white/10 bg-white/4 p-6">
                 <nav class="grid grid-cols-1 gap-6 sm:grid-cols-2" aria-label="Footer">
                     <div>
-                        <div class="text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-slate-400">{{ $footerExploreTitle }}</div>
+                        <div class="text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-slate-700">{{ $footerExploreTitle }}</div>
                         <ul class="mt-5 space-y-3">
                             {{ range site.Menus.footer_explore }}
                             {{ $isExternal := or (hasPrefix .URL "http://") (hasPrefix .URL "https://") }}
@@ -65,7 +65,7 @@
                         </ul>
                     </div>
                     <div>
-                        <div class="text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-slate-400">{{ $footerInstitutionalTitle }}</div>
+                        <div class="text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-slate-700">{{ $footerInstitutionalTitle }}</div>
                         <ul class="mt-5 space-y-3">
                             {{ range site.Menus.footer_institutional }}
                             {{ $isExternal := or (hasPrefix .URL "http://") (hasPrefix .URL "https://") }}
@@ -82,7 +82,7 @@
             </div>
 
             <div class="rounded-[1.75rem] border border-white/10 bg-white/4 p-6">
-                <div class="text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-slate-400">{{ $footerConnectTitle }}</div>
+                <div class="text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-slate-700">{{ $footerConnectTitle }}</div>
                 <p class="mt-4 text-sm leading-6 text-slate-300">{{ $footerConnectLead }}</p>
                 <div class="mt-6 flex flex-wrap gap-3">
                     {{ if .Site.Params.Social_media.Email.Enabled }} 
@@ -156,7 +156,7 @@
                     <img src="/images/as_vert_neg.webp" alt="Logo UnB" class="h-10 w-auto object-contain opacity-95" loading="lazy" decoding="async">
                 </a>
             </div>
-            <p class="text-sm leading-6 text-slate-400">
+            <p class="text-sm leading-6 text-slate-500">
                 &copy; {{ now.Format "2006" }} Centro de Estudos, Desenvolvimento e Inovação em Software. {{ i18n "rights" }}
             </p>
         </div>

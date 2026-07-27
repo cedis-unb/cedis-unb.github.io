@@ -383,7 +383,7 @@
 
                 {{ if gt (len $pub.advisors) 0 }}
                 <div>
-                  <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-gray-400 dark:text-white/75">{{ i18n "orientador" }}</div>
+                  <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-gray-500 dark:text-white/75">{{ i18n "orientador" }}</div>
                   <div class="mt-2 flex flex-wrap gap-2">
                     {{ range $pub.advisors }}
                       {{ $adv := partial "people-lookup" . }}
@@ -397,7 +397,7 @@
 
                 {{ if gt (len $filteredTags) 0 }}
                 <div>
-                  <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-gray-400 dark:text-white/75">{{ cond $isPt "Temas" "Topics" }}</div>
+                  <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-gray-500 dark:text-white/75">{{ cond $isPt "Temas" "Topics" }}</div>
                   <div class="mt-2 flex flex-wrap gap-2">
                     {{ range $filteredTags }}
                       <a href="{{ printf "/tags/%s" (. | urlize) | relLangURL }}" class="inline-flex rounded-full border border-black/10 bg-stone-50 px-3 py-1 text-sm font-medium text-gray-700 transition-colors hover:border-primary-500 hover:text-primary-600 dark:border-white/10 dark:bg-white/6 dark:text-white/80 dark:hover:border-primary-300 dark:hover:text-primary-200">{{ partial "translated-label.html" (dict "value" .) }}</a>
@@ -456,7 +456,7 @@
 
     <aside class="order-1 space-y-5 lg:order-2 lg:sticky lg:top-24">
       <div class="rounded-[1.75rem] border border-black/5 bg-white/85 p-5 shadow-[0_18px_60px_rgba(15,23,42,0.08)] backdrop-blur dark:border-white/10 dark:bg-white/4">
-        <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-gray-400 dark:text-white/75">{{ $statsTitle }}</div>
+        <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-gray-500 dark:text-white/75">{{ $statsTitle }}</div>
         <div class="mt-4 grid gap-3">
           <div class="rounded-[1.25rem] border border-black/5 bg-stone-50 px-4 py-4 dark:border-white/10 dark:bg-white/4">
             <div class="text-3xl font-black tracking-tight text-gray-950 dark:text-white">{{ $yearCount }}</div>
@@ -471,7 +471,7 @@
 
       {{ if $hasYearNav }}
       <div id="years-navigation" class="rounded-[1.75rem] border border-black/5 bg-white/85 p-5 shadow-[0_18px_60px_rgba(15,23,42,0.08)] backdrop-blur dark:border-white/10 dark:bg-white/4">
-        <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-gray-400 dark:text-white/75">{{ $yearsTitle }}</div>
+        <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-gray-500 dark:text-white/75">{{ $yearsTitle }}</div>
         <nav class="mt-4">
           <ul class="m-0 grid list-none gap-2 p-0">
             {{ range $yearEntries }}

@@ -67,7 +67,7 @@
 
     <aside class="space-y-5 lg:sticky lg:top-24 lg:self-start">
       <div class="rounded-3xl border border-slate-200/80 bg-white/90 p-5 shadow-[0_18px_50px_rgba(15,23,42,0.08)] dark:border-white/10 dark:bg-white/4">
-        <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-slate-500 dark:text-white/75">{{ cond $isPt "Detalhes" "Details" }}</div>
+        <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-slate-700 dark:text-white/75">{{ cond $isPt "Detalhes" "Details" }}</div>
         <dl class="mt-4 space-y-3 text-sm">
           <div><dt class="font-semibold">{{ cond $isPt "Ano" "Year" }}</dt><dd class="text-slate-600 dark:text-white/65">{{ .Params.year }}</dd></div>
           <div><dt class="font-semibold">{{ cond $isPt "Tipo" "Type" }}</dt><dd class="text-slate-600 dark:text-white/65">{{ .Params.publication_type }}</dd></div>
@@ -78,7 +78,7 @@
 
       {{ if gt (len $authors) 0 }}
       <div class="rounded-3xl border border-slate-200/80 bg-white/90 p-5 shadow-[0_18px_50px_rgba(15,23,42,0.08)] dark:border-white/10 dark:bg-white/4">
-        <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-slate-500 dark:text-white/75">{{ cond $isPt "Autores" "Authors" }}</div>
+        <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-slate-700 dark:text-white/75">{{ cond $isPt "Autores" "Authors" }}</div>
         <div class="mt-4 space-y-2 text-sm">
           {{ range $authors }}
             {{ if .url }}
@@ -92,7 +92,7 @@
       {{ end }}
 
       <div class="rounded-3xl border border-slate-200/80 bg-white/90 p-5 shadow-[0_18px_50px_rgba(15,23,42,0.08)] dark:border-white/10 dark:bg-white/4">
-        <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-slate-500 dark:text-white/75">{{ cond $isPt "Recursos" "Resources" }}</div>
+        <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-slate-700 dark:text-white/75">{{ cond $isPt "Recursos" "Resources" }}</div>
         <div class="mt-4 space-y-2 text-sm">
           {{ with .Params.external_url }}{{ if . }}<a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="block rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 font-semibold text-primary-700 dark:border-white/10 dark:bg-white/5 dark:text-primary-100">{{ cond $isPt "Acessar publicação" "Open publication" }}</a>{{ end }}{{ end }}
           {{ with .Params.spotify_podcast }}{{ if . }}<a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="block rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 font-semibold text-primary-700 dark:border-white/10 dark:bg-white/5 dark:text-primary-100">Podcast</a>{{ end }}{{ end }}

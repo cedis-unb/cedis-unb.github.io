@@ -32,7 +32,7 @@
 {{ range $sorted }}
   <li class="flex items-baseline justify-between gap-2 border-b border-black/5 py-1 text-sm dark:border-white/10">
     <a href="{{ .url }}" class="truncate text-gray-700 transition-colors hover:text-primary-600 dark:text-white/80 dark:hover:text-primary-200">{{ .name }}</a>
-    <span class="shrink-0 text-xs text-gray-400 dark:text-white/60">{{ .count }} {{ $countLabel }}</span>
+    <span class="shrink-0 text-xs text-gray-500 dark:text-white/60">{{ .count }} {{ $countLabel }}</span>
   </li>
 {{ end }}
 </ul>
