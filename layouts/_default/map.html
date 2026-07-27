@@ -105,25 +105,25 @@
         <div class="mb-4 flex flex-wrap gap-2">
           <button type="button" @click="setFilter('all')"
                   :class="filter==='all' ? 'border-primary-500 bg-primary-500 text-white' : 'border-black/10 bg-white text-gray-700 hover:border-primary-400 hover:text-primary-700 dark:border-white/10 dark:bg-white/4 dark:text-white/80'"
-                  class="rounded-full border px-4 py-1.5 text-sm font-semibold transition-colors">{{ i18n "ui_map_filter_all" }}</button>
+                  class="rounded-full border px-4 py-1.5 pointer-coarse:py-3 pointer-coarse:px-5 text-sm font-semibold transition-colors">{{ i18n "ui_map_filter_all" }}</button>
           <button type="button" @click="setFilter('area')"
                   :class="filter==='area' ? 'border-blue-500 bg-blue-500 text-white' : 'border-black/10 bg-white text-gray-700 hover:border-blue-400 hover:text-blue-700 dark:border-white/10 dark:bg-white/4 dark:text-white/80'"
-                  class="rounded-full border px-4 py-1.5 text-sm font-semibold transition-colors">
+                  class="rounded-full border px-4 py-1.5 pointer-coarse:py-3 pointer-coarse:px-5 text-sm font-semibold transition-colors">
             <span class="inline-block h-2 w-2 rounded-full bg-blue-500 mr-1.5"></span>{{ i18n "ui_map_filter_areas" }}
           </button>
           <button type="button" @click="setFilter('researcher')"
                   :class="filter==='researcher' ? 'border-primary-500 bg-primary-500 text-white' : 'border-black/10 bg-white text-gray-700 hover:border-primary-400 hover:text-primary-700 dark:border-white/10 dark:bg-white/4 dark:text-white/80'"
-                  class="rounded-full border px-4 py-1.5 text-sm font-semibold transition-colors">
+                  class="rounded-full border px-4 py-1.5 pointer-coarse:py-3 pointer-coarse:px-5 text-sm font-semibold transition-colors">
             <span class="inline-block h-2 w-2 rounded-full bg-primary-500 mr-1.5"></span>{{ i18n "ui_map_filter_researchers" }}
           </button>
           <button type="button" @click="setFilter('project')"
                   :class="filter==='project' ? 'border-emerald-500 bg-emerald-500 text-white' : 'border-black/10 bg-white text-gray-700 hover:border-emerald-400 hover:text-emerald-700 dark:border-white/10 dark:bg-white/4 dark:text-white/80'"
-                  class="rounded-full border px-4 py-1.5 text-sm font-semibold transition-colors">
+                  class="rounded-full border px-4 py-1.5 pointer-coarse:py-3 pointer-coarse:px-5 text-sm font-semibold transition-colors">
             <span class="inline-block h-2 w-2 rounded-full bg-emerald-500 mr-1.5"></span>{{ i18n "ui_map_filter_projects" }}
           </button>
           <button type="button" @click="setFilter('umbrella')"
                   :class="filter==='umbrella' ? 'border-violet-500 bg-violet-500 text-white' : 'border-black/10 bg-white text-gray-700 hover:border-violet-400 hover:text-violet-700 dark:border-white/10 dark:bg-white/4 dark:text-white/80'"
-                  class="rounded-full border px-4 py-1.5 text-sm font-semibold transition-colors">
+                  class="rounded-full border px-4 py-1.5 pointer-coarse:py-3 pointer-coarse:px-5 text-sm font-semibold transition-colors">
             <span class="inline-block h-2 w-2 rounded-full bg-violet-500 mr-1.5"></span>{{ cond $isPt "Frentes" "Fronts" }}
           </button>
         </div>
