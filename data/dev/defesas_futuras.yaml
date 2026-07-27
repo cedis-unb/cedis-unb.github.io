@@ -1,0 +1,781 @@
+# Seed local para testar a agenda compacta de próximas defesas.
+# Não é carregado no build normal de produção; use:
+# HUGO_CEDIS_INCLUDE_DEV_DEFESAS=1 npm run start:agenda-seed
+
+- id: dev-agenda-2026-07-27-ana-clara
+  dev_seed: true
+  type: tcc
+  program: curso_esw2
+  scheduled_date: '2026-07-27T23:00:00-03:00'
+  title:
+    pt: Painel gamificado para acompanhamento de aprendizagem em Engenharia de Software
+    en: Gamified dashboard for learning monitoring in Software Engineering
+  summary:
+    pt: Estudo aplicado sobre indicadores de aprendizagem, gamificação e visualização de progresso em turmas de Engenharia de Software, com foco em feedback rápido para estudantes e docentes.
+    en: Applied study on learning indicators, gamification, and progress visualization in Software Engineering classes, focusing on fast feedback for students and instructors.
+  primary_area: learning_analytics
+  students:
+    - name: Ana Clara Ribeiro
+      slug:
+  advisor: sergio_freitas
+  co_advisors: []
+  location:
+    room: Sala CEDIS 1
+    city: Brasília
+    remote_url:
+  tags:
+    - learning_analytics
+    - gamification
+  status_override:
+
+- id: dev-agenda-2026-07-27-bruno-luisa
+  dev_seed: true
+  type: tcc
+  program: curso_esw2
+  scheduled_date: '2026-07-27T23:00:00-03:00'
+  title:
+    pt: Apoio automatizado à priorização de requisitos em projetos educacionais
+    en: Automated support for requirements prioritization in educational projects
+  summary:
+    pt: Proposta de ferramenta para auxiliar equipes acadêmicas na priorização de requisitos usando critérios de valor, risco, esforço e evidências de uso.
+    en: Tool proposal to support academic teams in requirements prioritization using value, risk, effort, and usage evidence criteria.
+  primary_area: software_requirements
+  students:
+    - name: Bruno Leal Costa
+      slug:
+    - name: Luísa Martins Rocha
+      slug:
+  advisor: george_marsicano
+  co_advisors: []
+  location:
+    room: Sala CEDIS 2
+    city: Brasília
+    remote_url:
+  tags:
+    - software_requirements
+  status_override:
+
+- id: dev-agenda-2026-07-27-camila
+  dev_seed: true
+  type: dissertation
+  program: curso_ppca
+  scheduled_date: '2026-07-27T23:10:00-03:00'
+  scheduled_end: '2026-07-27T23:59:00-03:00'
+  title:
+    pt: Modelo de análise de engajamento em ambientes gamificados
+    en: Engagement analysis model in gamified environments
+  summary:
+    pt: Pesquisa de mestrado sobre métricas, rastros de interação e interpretação de engajamento em plataformas educacionais gamificadas.
+    en: Master's research on metrics, interaction traces, and engagement interpretation in gamified educational platforms.
+  primary_area: gamification
+  students:
+    - name: Camila Torres Almeida
+      slug:
+  advisor: cristiane_ramos
+  co_advisors:
+    - sergio_freitas
+  location:
+    room: Auditório FCTE
+    city: Brasília
+    remote_url:
+  tags:
+    - gamification
+    - learning_analytics
+  status_override:
+
+- id: dev-agenda-2026-07-28-diego
+  dev_seed: true
+  type: tcc1
+  program: curso_esw2
+  scheduled_date: '2026-07-28T08:30:00-03:00'
+  title:
+    pt: Protótipo de chatbot para apoio a dúvidas em disciplinas de programação
+    en: Chatbot prototype to support questions in programming courses
+  summary:
+    pt: Planejamento e prototipação de um chatbot acadêmico com base em bases de conhecimento de disciplinas introdutórias de programação.
+    en: Planning and prototyping of an academic chatbot based on knowledge bases from introductory programming courses.
+  primary_area: ai
+  students:
+    - name: Diego Nunes Pereira
+      slug:
+  advisor: ricardo_ajax
+  co_advisors: []
+  location:
+    room: Laboratório CEDIS
+    city: Brasília
+    remote_url:
+  tags:
+    - ai
+    - education
+  status_override:
+
+- id: dev-agenda-2026-07-28-elisa-marcos
+  dev_seed: true
+  type: tcc
+  program: curso_esw2
+  scheduled_date: '2026-07-28T10:00:00-03:00'
+  title:
+    pt: Avaliação de usabilidade em aplicativos de apoio à permanência estudantil
+    en: Usability evaluation in applications supporting student retention
+  summary:
+    pt: Avaliação empírica de interfaces voltadas à permanência estudantil, combinando inspeção heurística, testes com usuários e recomendações de melhoria.
+    en: Empirical evaluation of interfaces for student retention, combining heuristic inspection, user testing, and improvement recommendations.
+  primary_area: software_quality
+  students:
+    - name: Elisa Andrade Lima
+      slug:
+    - name: Marcos Vinícius Tavares
+      slug:
+  advisor: ricardo_ajax
+  co_advisors: []
+  location:
+    room: Sala CEDIS 1
+    city: Brasília
+    remote_url:
+  tags:
+    - software_quality
+    - education
+  status_override:
+
+- id: dev-agenda-2026-07-28-felipe
+  dev_seed: true
+  type: phd_qualification
+  program: curso_ppca
+  scheduled_date: '2026-07-28T15:00:00-03:00'
+  title:
+    pt: Arquiteturas resilientes para aplicações educacionais distribuídas
+    en: Resilient architectures for distributed educational applications
+  summary:
+    pt: Qualificação de doutorado sobre padrões arquiteturais, observabilidade e resiliência em aplicações educacionais distribuídas.
+    en: PhD qualification on architectural patterns, observability, and resilience in distributed educational applications.
+  primary_area: software_architecture
+  students:
+    - name: Felipe Augusto Moraes
+      slug:
+  advisor: andre_lanna
+  co_advisors: []
+  location:
+    room: Auditório FCTE
+    city: Brasília
+    remote_url:
+  tags:
+    - software_architecture
+  status_override:
+
+- id: dev-agenda-2026-07-29-gabriela
+  dev_seed: true
+  type: tcc
+  program: curso_esw2
+  scheduled_date: '2026-07-29T09:30:00-03:00'
+  title:
+    pt: Classificação de issues em repositórios educacionais com aprendizado de máquina
+    en: Issue classification in educational repositories with machine learning
+  summary:
+    pt: Aplicação de modelos de aprendizado de máquina para classificar issues em repositórios usados por equipes acadêmicas e apoiar triagem de manutenção.
+    en: Application of machine learning models to classify issues in repositories used by academic teams and support maintenance triage.
+  primary_area: machine_learning
+  students:
+    - name: Gabriela Sousa Farias
+      slug:
+  advisor: sergio_freitas
+  co_advisors: []
+  location:
+    room: Sala CEDIS 3
+    city: Brasília
+    remote_url:
+  tags:
+    - machine_learning
+    - software_quality
+  status_override:
+
+- id: dev-agenda-2026-07-29-henrique
+  dev_seed: true
+  type: dissertation
+  program: curso_ppca
+  scheduled_date: '2026-07-29T14:00:00-03:00'
+  title:
+    pt: Detecção de vulnerabilidades em pipelines de software acadêmico
+    en: Vulnerability detection in academic software pipelines
+  summary:
+    pt: Estudo sobre práticas de segurança, automação de verificações e detecção de vulnerabilidades em pipelines utilizados por projetos acadêmicos.
+    en: Study on security practices, automated checks, and vulnerability detection in pipelines used by academic projects.
+  primary_area: security
+  students:
+    - name: Henrique Prado Melo
+      slug:
+  advisor: george_marsicano
+  co_advisors:
+    - fabiana_mendes
+  location:
+    room: Sala CEDIS 2
+    city: Brasília
+    remote_url:
+  tags:
+    - security
+    - software_quality
+  status_override:
+
+- id: dev-agenda-2026-07-29-isabela
+  dev_seed: true
+  type: tcc
+  program: curso_esw2
+  scheduled_date: '2026-07-29T14:00:00-03:00'
+  title:
+    pt: Recomendação de trilhas de estudo com base em desempenho formativo
+    en: Study path recommendation based on formative performance
+  summary:
+    pt: Proposta de recomendação de trilhas de estudo usando dados de avaliações formativas, preferências do estudante e histórico de participação.
+    en: Proposal for study path recommendation using formative assessment data, student preferences, and participation history.
+  primary_area: active_learning
+  students:
+    - name: Isabela Cardoso Lima
+      slug:
+  advisor: cristiane_ramos
+  co_advisors: []
+  location:
+    room: Sala CEDIS 4
+    city: Brasília
+    remote_url:
+  tags:
+    - active_learning
+    - learning_analytics
+  status_override:
+
+- id: dev-agenda-2026-07-30-joao-pedro
+  dev_seed: true
+  type: tcc1
+  program: curso_esw2
+  scheduled_date: '2026-07-30T08:00:00-03:00'
+  title:
+    pt: Métricas de colaboração em equipes distribuídas de estudantes
+    en: Collaboration metrics in distributed student teams
+  summary:
+    pt: Planejamento de métricas para acompanhar colaboração, participação e coordenação em equipes distribuídas de projetos acadêmicos.
+    en: Metrics planning to monitor collaboration, participation, and coordination in distributed academic project teams.
+  primary_area: teamwork
+  students:
+    - name: João Pedro Nascimento
+      slug:
+  advisor: george_marsicano
+  co_advisors: []
+  location:
+    room: Sala CEDIS 1
+    city: Brasília
+    remote_url:
+  tags:
+    - teamwork
+  status_override:
+
+- id: dev-agenda-2026-07-30-karen
+  dev_seed: true
+  type: tcc
+  program: curso_esw2
+  scheduled_date: '2026-07-30T11:00:00-03:00'
+  scheduled_end: '2026-07-30T12:45:00-03:00'
+  title:
+    pt: Catálogo de padrões para refatoração de front-ends educacionais
+    en: Pattern catalog for refactoring educational frontends
+  summary:
+    pt: Catalogação de padrões de refatoração de interfaces educacionais, com exemplos de aplicação e critérios de decisão para equipes de desenvolvimento.
+    en: Cataloging frontend refactoring patterns for educational interfaces, with application examples and decision criteria for development teams.
+  primary_area: software_architecture
+  students:
+    - name: Karen Oliveira Reis
+      slug:
+  advisor: andre_lanna
+  co_advisors: []
+  location:
+    room: Sala CEDIS 3
+    city: Brasília
+    remote_url:
+  tags:
+    - software_architecture
+  status_override:
+
+- id: dev-agenda-2026-07-30-larissa-matheus
+  dev_seed: true
+  type: tcc
+  program: curso_esw2
+  scheduled_date: '2026-07-30T16:00:00-03:00'
+  title:
+    pt: Aplicativo para revisão espaçada em disciplinas de computação
+    en: Spaced repetition app for computing courses
+  summary:
+    pt: Desenvolvimento de aplicativo educacional para revisão espaçada, com trilhas adaptativas, lembretes e acompanhamento de desempenho por conceito.
+    en: Development of an educational app for spaced repetition, with adaptive paths, reminders, and concept-level performance monitoring.
+  primary_area: education
+  students:
+    - name: Larissa Queiroz
+      slug:
+    - name: Matheus Amaral
+      slug:
+  advisor: sergio_freitas
+  co_advisors: []
+  location:
+    room:
+    city: Brasília
+    remote_url: https://meet.example.edu/cedis-dev
+  tags:
+    - education
+    - active_learning
+  status_override:
+
+- id: dev-agenda-2026-07-31-marina
+  dev_seed: true
+  type: dissertation
+  program: curso_ppca
+  scheduled_date: '2026-07-31T09:00:00-03:00'
+  title:
+    pt: Avaliação de sustentabilidade em produtos digitais acadêmicos
+    en: Sustainability assessment in academic digital products
+  summary:
+    pt: Modelo de avaliação de sustentabilidade para produtos digitais acadêmicos, considerando consumo, manutenção, longevidade e impacto organizacional.
+    en: Sustainability assessment model for academic digital products, considering consumption, maintenance, longevity, and organizational impact.
+  primary_area: green_software
+  students:
+    - name: Marina Lopes Duarte
+      slug:
+  advisor: fabiana_mendes
+  co_advisors: []
+  location:
+    room: Sala CEDIS 2
+    city: Brasília
+    remote_url:
+  tags:
+    - green_software
+  status_override:
+
+- id: dev-agenda-2026-07-31-nicolas
+  dev_seed: true
+  type: tcc
+  program: curso_esw2
+  scheduled_date: '2026-07-31T13:30:00-03:00'
+  title:
+    pt: Ferramenta de apoio a testes exploratórios em aplicações web
+    en: Tool to support exploratory testing in web applications
+  summary:
+    pt: Proposta e implementação de ferramenta para organizar sessões de teste exploratório, registrar evidências e consolidar defeitos encontrados.
+    en: Proposal and implementation of a tool to organize exploratory testing sessions, record evidence, and consolidate detected defects.
+  primary_area: verification_validation_testing
+  students:
+    - name: Nicolas Ferreira Costa
+      slug:
+  advisor: cristiane_ramos
+  co_advisors: []
+  location:
+    room: Laboratório CEDIS
+    city: Brasília
+    remote_url:
+  tags:
+    - verification_validation_testing
+  status_override:
+
+- id: dev-agenda-2026-08-03-otavio
+  dev_seed: true
+  type: phd
+  program: curso_ppca
+  scheduled_date: '2026-08-03T09:00:00-03:00'
+  title:
+    pt: Governança de dados para ecossistemas de pesquisa em software
+    en: Data governance for software research ecosystems
+  summary:
+    pt: Tese de doutorado sobre governança de dados, curadoria, qualidade e rastreabilidade em ecossistemas institucionais de pesquisa em software.
+    en: PhD thesis on data governance, curation, quality, and traceability in institutional software research ecosystems.
+  primary_area: digital_transformation
+  students:
+    - name: Otávio Fernandes Barros
+      slug:
+  advisor: ricardo_ajax
+  co_advisors:
+    - george_marsicano
+  location:
+    room: Auditório FCTE
+    city: Brasília
+    remote_url:
+  tags:
+    - digital_transformation
+  status_override:
+
+- id: dev-agenda-2026-08-03-paula
+  dev_seed: true
+  type: tcc1
+  program: curso_esw2
+  scheduled_date: '2026-08-03T10:30:00-03:00'
+  title:
+    pt: Planejamento de um assistente para revisão de histórias de usuário
+    en: Planning an assistant for user story review
+  summary:
+    pt: Definição de requisitos, arquitetura e estratégia de avaliação de um assistente para revisão de histórias de usuário em projetos acadêmicos.
+    en: Requirements, architecture, and evaluation strategy definition for an assistant that reviews user stories in academic projects.
+  primary_area: software_requirements
+  students:
+    - name: Paula Mendes Rocha
+      slug:
+  advisor: george_marsicano
+  co_advisors: []
+  location:
+    room: Sala CEDIS 1
+    city: Brasília
+    remote_url:
+  tags:
+    - software_requirements
+    - ai
+  status_override:
+
+- id: dev-agenda-2026-08-03-rafael
+  dev_seed: true
+  type: tcc
+  program: curso_esw2
+  scheduled_date: '2026-08-03T15:00:00-03:00'
+  title:
+    pt: Monitoramento de desempenho em aplicações serverless educacionais
+    en: Performance monitoring in educational serverless applications
+  summary:
+    pt: Estudo aplicado sobre monitoramento, custo e desempenho em aplicações serverless usadas em cenários educacionais.
+    en: Applied study on monitoring, cost, and performance in serverless applications used in educational scenarios.
+  primary_area: hpc
+  students:
+    - name: Rafael Gomes Vieira
+      slug:
+  advisor: daniel_sundfeld
+  co_advisors: []
+  location:
+    room: Sala CEDIS 4
+    city: Brasília
+    remote_url:
+  tags:
+    - hpc
+  status_override:
+
+- id: dev-agenda-2026-08-04-sabrina
+  dev_seed: true
+  type: dissertation
+  program: curso_ppca
+  scheduled_date: '2026-08-04T08:30:00-03:00'
+  title:
+    pt: Personalização de feedback em ambientes de aprendizagem ativa
+    en: Feedback personalization in active learning environments
+  summary:
+    pt: Investigação de estratégias para personalizar feedback em ambientes de aprendizagem ativa, com apoio de indicadores de participação e desempenho.
+    en: Investigation of strategies to personalize feedback in active learning environments, supported by participation and performance indicators.
+  primary_area: active_learning
+  students:
+    - name: Sabrina Melo Pires
+      slug:
+  advisor: cristiane_ramos
+  co_advisors:
+    - sergio_freitas
+  location:
+    room: Sala CEDIS 2
+    city: Brasília
+    remote_url:
+  tags:
+    - active_learning
+  status_override:
+
+- id: dev-agenda-2026-08-04-tiago
+  dev_seed: true
+  type: tcc
+  program: curso_esw2
+  scheduled_date: '2026-08-04T11:00:00-03:00'
+  title:
+    pt: Extração de entidades em notícias institucionais com PLN
+    en: Entity extraction in institutional news with NLP
+  summary:
+    pt: Aplicação de processamento de linguagem natural para extrair pessoas, projetos, produtos e áreas em notícias institucionais.
+    en: Application of natural language processing to extract people, projects, products, and areas from institutional news.
+  primary_area: nlp
+  students:
+    - name: Tiago Rocha Martins
+      slug:
+  advisor: sergio_freitas
+  co_advisors: []
+  location:
+    room: Laboratório CEDIS
+    city: Brasília
+    remote_url:
+  tags:
+    - nlp
+    - ai
+  status_override:
+
+- id: dev-agenda-2026-08-04-ursula
+  dev_seed: true
+  type: tcc1
+  program: curso_esw2
+  scheduled_date: '2026-08-04T11:00:00-03:00'
+  title:
+    pt: Planejamento de testes para aplicações móveis educacionais
+    en: Test planning for educational mobile applications
+  summary:
+    pt: Trabalho de proposta sobre estratégia de testes, cobertura funcional e critérios de aceitação para aplicações móveis educacionais.
+    en: Proposal work on test strategy, functional coverage, and acceptance criteria for educational mobile applications.
+  primary_area: verification_validation_testing
+  students:
+    - name: Úrsula Batista Carvalho
+      slug:
+  advisor: ricardo_ajax
+  co_advisors: []
+  location:
+    room: Sala CEDIS 3
+    city: Brasília
+    remote_url:
+  tags:
+    - verification_validation_testing
+  status_override:
+
+- id: dev-agenda-2026-08-05-victor
+  dev_seed: true
+  type: tcc
+  program: curso_esw2
+  scheduled_date: '2026-08-05T09:00:00-03:00'
+  title:
+    pt: Mapeamento de riscos em projetos de software com estudantes
+    en: Risk mapping in student software projects
+  summary:
+    pt: Estudo sobre identificação, classificação e acompanhamento de riscos em projetos de software conduzidos por estudantes.
+    en: Study on identification, classification, and monitoring of risks in software projects conducted by students.
+  primary_area: esw
+  students:
+    - name: Victor Hugo Almeida
+      slug:
+  advisor: andre_lanna
+  co_advisors: []
+  location:
+    room: Sala CEDIS 1
+    city: Brasília
+    remote_url:
+  tags:
+    - esw
+  status_override:
+
+- id: dev-agenda-2026-08-05-wesley-yasmin
+  dev_seed: true
+  type: tcc
+  program: curso_esw2
+  scheduled_date: '2026-08-05T13:00:00-03:00'
+  title:
+    pt: Plataforma colaborativa para curadoria de materiais didáticos
+    en: Collaborative platform for educational material curation
+  summary:
+    pt: Desenvolvimento de plataforma colaborativa para curadoria, avaliação e recomendação de materiais didáticos em comunidades acadêmicas.
+    en: Development of a collaborative platform for curation, evaluation, and recommendation of educational materials in academic communities.
+  primary_area: social_software
+  students:
+    - name: Wesley Araújo
+      slug:
+    - name: Yasmin Oliveira
+      slug:
+  advisor: george_marsicano
+  co_advisors: []
+  location:
+    room: Sala CEDIS 2
+    city: Brasília
+    remote_url:
+  tags:
+    - social_software
+    - education
+  status_override:
+
+- id: dev-agenda-2026-08-05-zuleica
+  dev_seed: true
+  type: specialization
+  program: curso_especializacao
+  scheduled_date: '2026-08-05T17:00:00-03:00'
+  title:
+    pt: Boas práticas de implantação para sistemas administrativos leves
+    en: Deployment practices for lightweight administrative systems
+  summary:
+    pt: Trabalho de especialização sobre práticas de implantação, documentação e manutenção de sistemas administrativos de pequeno porte.
+    en: Specialization work on deployment, documentation, and maintenance practices for small administrative systems.
+  primary_area: digital_transformation
+  students:
+    - name: Zuleica Pacheco
+      slug:
+  advisor: ricardo_ajax
+  co_advisors: []
+  location:
+    room:
+    city: Brasília
+    remote_url: https://meet.example.edu/cedis-dev-2
+  tags:
+    - digital_transformation
+  status_override:
+
+- id: dev-agenda-2026-08-06-alex
+  dev_seed: true
+  type: tcc
+  program: curso_esw2
+  scheduled_date: '2026-08-06T08:00:00-03:00'
+  title:
+    pt: Modelo de maturidade para manutenção de produtos acadêmicos
+    en: Maturity model for maintenance of academic products
+  summary:
+    pt: Proposta de modelo para avaliar maturidade de manutenção, documentação, testes e governança em produtos digitais acadêmicos.
+    en: Model proposal to assess maintenance, documentation, testing, and governance maturity in academic digital products.
+  primary_area: software_quality
+  students:
+    - name: Alex Barbosa Nunes
+      slug:
+  advisor: cristiane_ramos
+  co_advisors: []
+  location:
+    room: Sala CEDIS 4
+    city: Brasília
+    remote_url:
+  tags:
+    - software_quality
+  status_override:
+
+- id: dev-agenda-2026-08-06-bianca
+  dev_seed: true
+  type: dissertation
+  program: curso_ppca
+  scheduled_date: '2026-08-06T10:00:00-03:00'
+  title:
+    pt: Indicadores de qualidade para repositórios de pesquisa aberta
+    en: Quality indicators for open research repositories
+  summary:
+    pt: Dissertação sobre indicadores de qualidade, rastreabilidade e curadoria em repositórios de pesquisa aberta.
+    en: Dissertation on quality indicators, traceability, and curation in open research repositories.
+  primary_area: software_quality
+  students:
+    - name: Bianca Freire Lopes
+      slug:
+  advisor: fabiana_mendes
+  co_advisors: []
+  location:
+    room: Auditório FCTE
+    city: Brasília
+    remote_url:
+  tags:
+    - software_quality
+  status_override:
+
+- id: dev-agenda-2026-08-06-caetano
+  dev_seed: true
+  type: tcc1
+  program: curso_esw2
+  scheduled_date: '2026-08-06T15:30:00-03:00'
+  title:
+    pt: Apoio visual ao ensino de estruturas de dados com realidade aumentada
+    en: Visual support for teaching data structures with augmented reality
+  summary:
+    pt: Planejamento de recurso visual para ensino de estruturas de dados com interação, visualização espacial e tarefas gamificadas.
+    en: Planning of a visual resource for teaching data structures with interaction, spatial visualization, and gamified tasks.
+  primary_area: active_learning
+  students:
+    - name: Caetano Ribeiro
+      slug:
+  advisor: sergio_freitas
+  co_advisors: []
+  location:
+    room: Laboratório CEDIS
+    city: Brasília
+    remote_url:
+  tags:
+    - active_learning
+    - gamification
+  status_override:
+
+- id: dev-agenda-2026-08-07-daniela
+  dev_seed: true
+  type: tcc
+  program: curso_esw2
+  scheduled_date: '2026-08-07T09:00:00-03:00'
+  title:
+    pt: Sistema de acompanhamento de metas para projetos de extensão
+    en: Goal tracking system for outreach projects
+  summary:
+    pt: Desenvolvimento de sistema para registrar metas, evidências, responsáveis e entregas em projetos de extensão universitária.
+    en: Development of a system to record goals, evidence, owners, and deliveries in university outreach projects.
+  primary_area: digital_transformation
+  students:
+    - name: Daniela Moura Figueiredo
+      slug:
+  advisor: ricardo_ajax
+  co_advisors: []
+  location:
+    room: Sala CEDIS 1
+    city: Brasília
+    remote_url:
+  tags:
+    - digital_transformation
+  status_override:
+
+- id: dev-agenda-2026-08-07-eduardo
+  dev_seed: true
+  type: phd
+  program: curso_ppca
+  scheduled_date: '2026-08-07T13:00:00-03:00'
+  scheduled_end: '2026-08-07T16:30:00-03:00'
+  title:
+    pt: Otimização de escalonamento em ambientes acadêmicos de alta complexidade
+    en: Scheduling optimization in high-complexity academic environments
+  summary:
+    pt: Tese sobre modelos de otimização, restrições acadêmicas e escalonamento de recursos em ambientes institucionais complexos.
+    en: Thesis on optimization models, academic constraints, and resource scheduling in complex institutional environments.
+  primary_area: hpc
+  students:
+    - name: Eduardo Santana Lima
+      slug:
+  advisor: daniel_sundfeld
+  co_advisors:
+    - sergio_freitas
+  location:
+    room: Auditório FCTE
+    city: Brasília
+    remote_url:
+  tags:
+    - hpc
+  status_override:
+
+- id: dev-agenda-2026-08-10-fernanda
+  dev_seed: true
+  type: tcc
+  program: curso_esw2
+  scheduled_date: '2026-08-10T08:30:00-03:00'
+  title:
+    pt: Análise de acessibilidade em portais acadêmicos
+    en: Accessibility analysis in academic portals
+  summary:
+    pt: Avaliação de acessibilidade em portais acadêmicos, combinando testes automáticos, inspeção manual e recomendações baseadas em WCAG.
+    en: Accessibility assessment in academic portals, combining automated tests, manual inspection, and WCAG-based recommendations.
+  primary_area: software_quality
+  students:
+    - name: Fernanda Costa Alves
+      slug:
+  advisor: ricardo_ajax
+  co_advisors: []
+  location:
+    room: Sala CEDIS 3
+    city: Brasília
+    remote_url:
+  tags:
+    - software_quality
+  status_override:
+
+- id: dev-agenda-2026-08-10-gustavo
+  dev_seed: true
+  type: tcc1
+  program: curso_esw2
+  scheduled_date: '2026-08-10T10:00:00-03:00'
+  title:
+    pt: Planejamento de produto para apoio à escrita científica
+    en: Product planning to support scientific writing
+  summary:
+    pt: Proposta de produto para apoiar escrita científica, revisão de estrutura, organização de referências e checklist de submissão.
+    en: Product proposal to support scientific writing, structure review, reference organization, and submission checklist.
+  primary_area: nlp
+  students:
+    - name: Gustavo Lima Duarte
+      slug:
+  advisor: sergio_freitas
+  co_advisors: []
+  location:
+    room: Sala CEDIS 2
+    city: Brasília
+    remote_url:
+  tags:
+    - nlp
+  status_override:

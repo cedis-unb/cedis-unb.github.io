@@ -16,6 +16,8 @@
     "update-i18n": "python3 scripts/update_i18n.py",
     "build:publications": "python3 scripts/build_publications.py",
     "check:publications": "python3 scripts/build_publications.py --check",
+    "prestart:agenda-seed": "npm run build:publications",
+    "start:agenda-seed": "HUGO_CEDIS_INCLUDE_DEV_DEFESAS=1 hugo server -d .hugo-server --disableFastRender",
     "prestart": "npm run build:publications",
     "start": "hugo server -d .hugo-server --disableFastRender",
     "build": "npm run build:publications && hugo --minify --cleanDestinationDir && pagefind --site docs",

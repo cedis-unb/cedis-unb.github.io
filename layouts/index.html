@@ -305,7 +305,7 @@
     </div>
 
     {{/* ====== Living pulse metrics (Bloco 2) ====== */}}
-    {{ $yearsCount := sub now.Year 2013 }}
+    {{ $yearsCount := add (sub now.Year 2013) 1 }}
     {{ $currentYearNum := now.Year }}
     {{ $researcherCount := 0 }}
     {{ range where .Site.RegularPages "Section" "people" }}
@@ -322,6 +322,12 @@
     {{ $pubsThisYear := 0 }}
     {{ $defensesThisYear := 0 }}
     {{ $registrationsThisYear := 0 }}
+    {{ range hugo.Data.defesas }}
+      {{ $sd := time .scheduled_date }}
+      {{ if and (eq $sd.Year $currentYearNum) (ne .status_override "withdrawn") }}
+        {{ $defensesThisYear = add $defensesThisYear 1 }}
+      {{ end }}
+    {{ end }}
     {{ range hugo.Data.productions.items }}
       {{ $yr := 0 }}
       {{ with .year }}
@@ -333,9 +339,7 @@
       {{ if eq $yr $currentYearNum }}
         {{ if eq .type "registro" }}
           {{ $registrationsThisYear = add $registrationsThisYear 1 }}
-        {{ else if in $defenseTypes .type }}
-          {{ $defensesThisYear = add $defensesThisYear 1 }}
-        {{ else }}
+        {{ else if not (in $defenseTypes .type) }}
           {{ $pubsThisYear = add $pubsThisYear 1 }}
         {{ end }}
       {{ end }}
@@ -419,6 +423,8 @@
         <p class="mt-4 text-xs text-slate-600 dark:text-slate-500">{{ i18n "ui_impact_footnote" }}</p>
       </div>
     </div>
+
+    {{ partial "upcoming-defenses-agenda.html" . }}
 
     {{/* ====== Áreas + Trending consolidados (Bloco 4) ====== */}}
     {{/* Gap #1: advisor keys via people-index */}}

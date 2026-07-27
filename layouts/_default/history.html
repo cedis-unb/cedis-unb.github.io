@@ -16,7 +16,7 @@
   {{ end }}
 {{ end }}
 
-{{ $yearsCount := sub now.Year 2013 }}
+{{ $yearsCount := add (sub now.Year 2013) 1 }}
 {{ $researcherCount := 0 }}
 {{ range where .Site.RegularPages "Section" "people" }}
   {{ if in .Params.categories "researcher" }}
