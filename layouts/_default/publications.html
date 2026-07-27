@@ -238,7 +238,7 @@
             <div class="grid gap-3" style="grid-template-columns: repeat(auto-fit, minmax(min(100%, 10rem), 1fr)); align-items: end;">
               <label class="flex min-w-0 flex-col gap-1 text-xs font-semibold text-gray-700 dark:text-white/80">
                 <span>{{ $filterYearLabel }}</span>
-                <select x-model="filters.year" class="w-full min-w-0 rounded-lg border border-black/10 bg-white px-3 py-2 text-sm font-medium text-gray-900 focus:border-primary-500 focus:outline-none focus:ring-2 focus:ring-primary-200 dark:border-white/10 dark:bg-gray-900 dark:text-white dark:focus:ring-primary-500/30">
+                <select x-model="filters.year" class="w-full min-w-0 rounded-lg border border-black/10 bg-white px-3 py-2 text-sm font-medium text-gray-900 focus:border-primary-500 focus:outline-hidden focus:ring-2 focus:ring-primary-200 dark:border-white/10 dark:bg-gray-900 dark:text-white dark:focus:ring-primary-500/30">
                   <option value="">{{ $filterAllLabel }}</option>
                   {{ range $filterYears }}
                   <option value="{{ . }}">{{ . }}</option>
@@ -247,7 +247,7 @@
               </label>
               <label class="flex min-w-0 flex-col gap-1 text-xs font-semibold text-gray-700 dark:text-white/80">
                 <span>{{ $filterTypeLabel }}</span>
-                <select x-model="filters.type" class="w-full min-w-0 rounded-lg border border-black/10 bg-white px-3 py-2 text-sm font-medium text-gray-900 focus:border-primary-500 focus:outline-none focus:ring-2 focus:ring-primary-200 dark:border-white/10 dark:bg-gray-900 dark:text-white dark:focus:ring-primary-500/30">
+                <select x-model="filters.type" class="w-full min-w-0 rounded-lg border border-black/10 bg-white px-3 py-2 text-sm font-medium text-gray-900 focus:border-primary-500 focus:outline-hidden focus:ring-2 focus:ring-primary-200 dark:border-white/10 dark:bg-gray-900 dark:text-white dark:focus:ring-primary-500/30">
                   <option value="">{{ $filterAllLabel }}</option>
                   {{ range $filterTypes }}
                   <option value="{{ . }}">{{ i18n (printf "pub_type_%s" .) | default . }}</option>
@@ -256,7 +256,7 @@
               </label>
               <label class="flex min-w-0 flex-col gap-1 text-xs font-semibold text-gray-700 dark:text-white/80">
                 <span>{{ $filterTopicLabel }}</span>
-                <select x-model="filters.topic" class="w-full min-w-0 rounded-lg border border-black/10 bg-white px-3 py-2 text-sm font-medium text-gray-900 focus:border-primary-500 focus:outline-none focus:ring-2 focus:ring-primary-200 dark:border-white/10 dark:bg-gray-900 dark:text-white dark:focus:ring-primary-500/30">
+                <select x-model="filters.topic" class="w-full min-w-0 rounded-lg border border-black/10 bg-white px-3 py-2 text-sm font-medium text-gray-900 focus:border-primary-500 focus:outline-hidden focus:ring-2 focus:ring-primary-200 dark:border-white/10 dark:bg-gray-900 dark:text-white dark:focus:ring-primary-500/30">
                   <option value="">{{ $filterAllLabel }}</option>
                   {{ range $filterTopics }}
                   <option value="{{ . }}">{{ . | i18n }}</option>

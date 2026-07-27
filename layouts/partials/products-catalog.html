@@ -103,7 +103,7 @@
           {{ if eq $productLanguage "pt" }}{{ $productLanguageLabel = cond $isPt "Português" "Portuguese" }}{{ end }}
           {{ if eq $productLanguage "en" }}{{ $productLanguageLabel = cond $isPt "Inglês" "English" }}{{ end }}
           {{ if eq $productLanguage "pt/en" }}{{ $productLanguageLabel = cond $isPt "Português/Inglês" "Portuguese/English" }}{{ end }}
-          <article class="group grid h-full overflow-hidden rounded-lg border border-slate-200 bg-white shadow-sm transition-colors hover:border-sky-300 dark:border-white/10 dark:bg-white/4">
+          <article class="group grid h-full overflow-hidden rounded-lg border border-slate-200 bg-white shadow-xs transition-colors hover:border-sky-300 dark:border-white/10 dark:bg-white/4">
             <a href="{{ $page.RelPermalink }}" class="block border-b border-slate-200/80 dark:border-white/10">
               {{ with $page.Params.featured_image }}
                 {{ $featuredPath := replace . "../assets/" "" }}
