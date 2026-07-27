@@ -4,6 +4,11 @@
    Reescrito 2026-07-26 (spike Alt 4 da migração Tailwind 4).
    Este arquivo é a ÚNICA entrada CSS servida ao browser via
    css.TailwindCSS no head.html.
+
+   Fase 3 (2026-07-27): migração do config JS legado para CSS-first
+   via @theme. Tokens de cor da marca CEDIS, animations customizadas
+   e escala de line-height agora vivem neste arquivo, não em
+   tailwind.config.js (deletado).
    ============================================================ */
 
 @import "tailwindcss";
@@ -17,10 +22,134 @@
    possam não aparecer no stats de um build parcial. Custo <1 KB. */
 @source "../../layouts";
 
-/* Preserva tokens (accent/primary/secondary, typography theme,
-   animations customizadas) declarados no config JS legado.
-   Path é relativo à raiz do projeto (CWD do processo Hugo/Tailwind CLI). */
-@config "./tailwind.config.js";
+/* ============================================================
+   Tokens do design system CEDIS — @theme CSS-first
+   ------------------------------------------------------------
+   Substituem o antigo tailwind.config.js. Todos os valores ficam
+   acessíveis como custom properties CSS (--color-primary-500 etc.)
+   e como utilities Tailwind (bg-primary-500, text-accent-550 etc.).
+
+   Mantidos em hex por compatibilidade visual exata com o baseline
+   pré-migração. Migração para OKLCH pode ser feita em ciclo futuro
+   sem quebrar o consumo.
+   ============================================================ */
+
+@theme {
+  /* -- primary — azul CEDIS -- */
+  --color-primary:     #51C5CF; /* DEFAULT */
+  --color-primary-50:  #E6F8FA;
+  --color-primary-100: #CFF2F5;
+  --color-primary-200: #9DE4EA;
+  --color-primary-300: #6BD6DF;
+  --color-primary-400: #39C8D4;
+  --color-primary-500: #51C5CF;
+  --color-primary-600: #1C9699;
+  --color-primary-700: #14707A;
+  --color-primary-800: #0E4A5B;
+  --color-primary-900: #07243C;
+
+  /* -- secondary — laranja para acento -- */
+  --color-secondary:     #F7941E; /* DEFAULT */
+  --color-secondary-50:  #FEF6E8;
+  --color-secondary-100: #FDECD2;
+  --color-secondary-200: #FBDFAA;
+  --color-secondary-300: #F9D183;
+  --color-secondary-400: #F8C35B;
+  --color-secondary-500: #F7941E;
+  --color-secondary-600: #D57818;
+  --color-secondary-700: #B35C12;
+  --color-secondary-800: #91410C;
+  --color-secondary-900: #6E2606;
+
+  /* -- accent — vermelho para chamadas de ação -- */
+  --color-accent:     #E82C0C; /* DEFAULT (paleta oficial) */
+  --color-accent-50:  #FDE5E3;
+  --color-accent-100: #FBC6C2;
+  --color-accent-200: #F88A86;
+  --color-accent-300: #F54E4A;
+  --color-accent-400: #F2120E;
+  --color-accent-500: #E82C0C;
+  --color-accent-550: #C5272F; /* variante usada em #profile-content (decisão de marca entre 500 e 550) */
+  --color-accent-600: #C1260A;
+  --color-accent-700: #9A1F08;
+  --color-accent-800: #731806;
+  --color-accent-900: #4C1104;
+
+  /* -- neutral — alias das cores gray (v4 não gera neutral por default) -- */
+  --color-neutral-50:  var(--color-gray-50);
+  --color-neutral-100: var(--color-gray-100);
+  --color-neutral-200: var(--color-gray-200);
+  --color-neutral-300: var(--color-gray-300);
+  --color-neutral-400: var(--color-gray-400);
+  --color-neutral-500: var(--color-gray-500);
+  --color-neutral-600: var(--color-gray-600);
+  --color-neutral-700: var(--color-gray-700);
+  --color-neutral-800: var(--color-gray-800);
+  --color-neutral-900: var(--color-gray-900);
+
+  /* -- line-height customizados -- */
+  --leading-extra-loose: 2.5;
+  --leading-12: 3rem;
+
+  /* -- Animations customizadas -- */
+  --animate-pulse-slow:  pulse 3s infinite;
+  --animate-bounce-slow: bounce 2s infinite;
+  --animate-marquee:     marquee 45s linear infinite;
+}
+
+/* Keyframes das animations acima (Tailwind não gera keyframes por
+   custom properties; precisamos declarar as regras separadamente). */
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50%      { transform: scale(1.05); }
+}
+@keyframes bounce {
+  0%, 100% { transform: translateY(-25%); animation-timing-function: cubic-bezier(0.8, 0, 1, 1); }
+  50%      { transform: translateY(0);    animation-timing-function: cubic-bezier(0, 0, 0.2, 1); }
+}
+@keyframes marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* ============================================================
+   Prose typography — sobrescreve as variáveis do plugin
+   @tailwindcss/typography para usar a paleta CEDIS em vez do
+   default zinc do plugin.
+   ============================================================ */
+
+.prose {
+  --tw-prose-body:            var(--color-neutral-700);
+  --tw-prose-headings:        var(--color-primary-900);
+  --tw-prose-lead:            var(--color-primary-600);
+  --tw-prose-links:           var(--color-primary);
+  --tw-prose-bold:            var(--color-primary-800);
+  --tw-prose-counters:        var(--color-secondary-600);
+  --tw-prose-bullets:         var(--color-accent-600);
+  --tw-prose-hr:              var(--color-neutral-300);
+  --tw-prose-quotes:          var(--color-secondary-800);
+  --tw-prose-quote-borders:   var(--color-primary-300);
+  --tw-prose-captions:        var(--color-neutral-700);
+  --tw-prose-code:            var(--color-accent);
+  --tw-prose-pre-code:        var(--color-accent-700);
+  --tw-prose-pre-bg:          var(--color-neutral-800);
+  --tw-prose-th-borders:      var(--color-neutral-300);
+  --tw-prose-td-borders:      var(--color-neutral-200);
+  --tw-prose-invert-body:     var(--color-neutral-200);
+  --tw-prose-invert-headings: #ffffff;
+  --tw-prose-invert-lead:     var(--color-neutral-300);
+  --tw-prose-invert-links:    var(--color-primary-200);
+  --tw-prose-invert-bold:     #ffffff;
+  --tw-prose-invert-counters: var(--color-secondary-400);
+  --tw-prose-invert-bullets:  var(--color-accent-400);
+  --tw-prose-invert-hr:       var(--color-neutral-500);
+  --tw-prose-invert-quotes:   var(--color-secondary-100);
+  --tw-prose-invert-quote-borders: var(--color-primary-500);
+  --tw-prose-invert-captions: var(--color-neutral-400);
+  --tw-prose-invert-code:     var(--color-accent-300);
+  --tw-prose-invert-pre-code: var(--color-accent-500);
+  --tw-prose-invert-pre-bg:   var(--color-neutral-900);
+}
 
 /* -----------------------------------------------------------
    Regras herdadas — carregadas por último para vencer utilities
