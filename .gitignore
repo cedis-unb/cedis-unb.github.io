@@ -6,6 +6,8 @@ tmp/
 .claude/
 .hugo_build.lock
 .hugo-server/
+# Gerado por [build.buildStats] no hugo.yaml — Tailwind 4 consome via @source.
+hugo_stats.json
 .vercel
 yarn-error.log
 # Local Netlify folder

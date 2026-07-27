@@ -140,9 +140,9 @@
 <script type="application/ld+json">{{ dict "@context" "https://schema.org" "@graph" $graph | jsonify | safeJS }}</script>
 {{ end }}
 
-<main class="bg-[radial-gradient(circle_at_top,_rgba(197,39,47,0.12),_transparent_24%),linear-gradient(180deg,_#f5f5f4_0%,_#ffffff_30%,_#f5f5f4_100%)] text-gray-950 dark:bg-none dark:bg-gray-900 dark:text-gray-100">
+<main class="bg-[radial-gradient(circle_at_top,rgba(197,39,47,0.12),transparent_24%),linear-gradient(180deg,#f5f5f4_0%,#ffffff_30%,#f5f5f4_100%)] text-gray-950 dark:bg-none dark:bg-gray-900 dark:text-gray-100">
   <section class="border-b border-black/5 bg-gray-950 text-white">
-    <div class="mx-auto grid max-w-screen-xl gap-10 px-4 py-12 md:px-6 md:py-16 lg:grid-cols-[minmax(0,1.1fr)_minmax(20rem,0.9fr)] lg:items-center lg:px-8 lg:py-20">
+    <div class="mx-auto grid max-w-(--breakpoint-xl) gap-10 px-4 py-12 md:px-6 md:py-16 lg:grid-cols-[minmax(0,1.1fr)_minmax(20rem,0.9fr)] lg:items-center lg:px-8 lg:py-20">
       <div>
         <div class="inline-flex flex-wrap items-center gap-3">
           <span class="inline-flex rounded-full border border-white/15 bg-white/10 px-4 py-1 text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-white/75">
@@ -166,7 +166,7 @@
             {{ $jumpContent }}
           </a>
           {{ if $hasYearNav }}
-          <a href="#years-navigation" class="inline-flex items-center rounded-full border border-white/15 bg-white/[0.06] px-5 py-3 text-sm font-semibold text-white/85 transition-colors hover:bg-white/10 hover:text-white">
+          <a href="#years-navigation" class="inline-flex items-center rounded-full border border-white/15 bg-white/6 px-5 py-3 text-sm font-semibold text-white/85 transition-colors hover:bg-white/10 hover:text-white">
             {{ $jumpYears }}
           </a>
           {{ end }}
@@ -174,13 +174,13 @@
       </div>
 
       <div class="relative">
-        <div class="absolute inset-0 rounded-[2rem] bg-[radial-gradient(circle_at_top,_rgba(255,255,255,0.18),_transparent_58%)]"></div>
-        <div class="relative overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.06] p-4 shadow-[0_24px_80px_rgba(0,0,0,0.28)] backdrop-blur md:p-6">
+        <div class="absolute inset-0 rounded-4xl bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.18),transparent_58%)]"></div>
+        <div class="relative overflow-hidden rounded-4xl border border-white/10 bg-white/6 p-4 shadow-[0_24px_80px_rgba(0,0,0,0.28)] backdrop-blur md:p-6">
           {{ with .Params.featured_image }}
           {{ $featuredPath := replace . "../assets/" "" }}
           {{ with resources.Get $featuredPath }}
           {{ $image := .Fit "960x720 webp q88" }}
-          <div class="flex min-h-[14rem] items-center justify-center overflow-hidden rounded-[1.5rem] bg-[linear-gradient(180deg,_rgba(15,23,42,0.32),_rgba(15,23,42,0.08))] p-4 md:min-h-[18rem] md:p-6">
+          <div class="flex min-h-56 items-center justify-center overflow-hidden rounded-3xl bg-[linear-gradient(180deg,rgba(15,23,42,0.32),rgba(15,23,42,0.08))] p-4 md:min-h-72 md:p-6">
             <img src="{{ $image.RelPermalink }}" alt="" class="h-auto w-auto max-w-full object-contain" loading="eager" style="max-height: clamp(14rem, 30vw, 18rem);">
           </div>
           {{ end }}
@@ -201,9 +201,9 @@
     </div>
   </section>
 
-  <section class="mx-auto grid max-w-screen-xl gap-8 px-4 py-10 md:px-6 md:py-12 lg:grid-cols-[minmax(0,1fr)_18rem] lg:items-start lg:px-8">
+  <section class="mx-auto grid max-w-(--breakpoint-xl) gap-8 px-4 py-10 md:px-6 md:py-12 lg:grid-cols-[minmax(0,1fr)_18rem] lg:items-start lg:px-8">
     <article class="order-2 lg:order-1">
-      <div class="rounded-[2rem] border border-black/5 bg-white/85 px-6 py-8 shadow-[0_20px_70px_rgba(15,23,42,0.08)] backdrop-blur dark:border-white/10 dark:bg-white/[0.04] md:px-8 md:py-10"
+      <div class="rounded-4xl border border-black/5 bg-white/85 px-6 py-8 shadow-[0_20px_70px_rgba(15,23,42,0.08)] backdrop-blur dark:border-white/10 dark:bg-white/4 md:px-8 md:py-10"
            x-data="{
              filters: { year: '', type: '', topic: '' },
              visibleCount: {{ $publicationCount }},
@@ -229,7 +229,7 @@
              }
            }"
            x-effect="filters.year; filters.type; filters.topic; $nextTick(() => applyFilters())">
-        <div class="mb-8 rounded-[1.5rem] border border-black/5 bg-stone-50 p-5 dark:border-white/10 dark:bg-white/[0.04]">
+        <div class="mb-8 rounded-3xl border border-black/5 bg-stone-50 p-5 dark:border-white/10 dark:bg-white/4">
           <div class="flex flex-col gap-5">
             <div class="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
               <div class="min-w-0 text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-gray-500 dark:text-white/75">{{ $filterHeading }}</div>
@@ -238,7 +238,7 @@
             <div class="grid gap-3" style="grid-template-columns: repeat(auto-fit, minmax(min(100%, 10rem), 1fr)); align-items: end;">
               <label class="flex min-w-0 flex-col gap-1 text-xs font-semibold text-gray-700 dark:text-white/80">
                 <span>{{ $filterYearLabel }}</span>
-                <select x-model="filters.year" class="w-full min-w-0 rounded-lg border border-black/10 bg-white px-3 py-2 text-sm font-medium text-gray-900 focus:border-primary-500 focus:outline-none focus:ring-2 focus:ring-primary-200 dark:border-white/10 dark:bg-gray-900 dark:text-white dark:focus:ring-primary-500/30">
+                <select x-model="filters.year" class="w-full min-w-0 rounded-lg border border-black/10 bg-white px-3 py-2 text-sm font-medium text-gray-900 focus:border-primary-500 focus:outline-hidden focus:ring-2 focus:ring-primary-200 dark:border-white/10 dark:bg-gray-900 dark:text-white dark:focus:ring-primary-500/30">
                   <option value="">{{ $filterAllLabel }}</option>
                   {{ range $filterYears }}
                   <option value="{{ . }}">{{ . }}</option>
@@ -247,7 +247,7 @@
               </label>
               <label class="flex min-w-0 flex-col gap-1 text-xs font-semibold text-gray-700 dark:text-white/80">
                 <span>{{ $filterTypeLabel }}</span>
-                <select x-model="filters.type" class="w-full min-w-0 rounded-lg border border-black/10 bg-white px-3 py-2 text-sm font-medium text-gray-900 focus:border-primary-500 focus:outline-none focus:ring-2 focus:ring-primary-200 dark:border-white/10 dark:bg-gray-900 dark:text-white dark:focus:ring-primary-500/30">
+                <select x-model="filters.type" class="w-full min-w-0 rounded-lg border border-black/10 bg-white px-3 py-2 text-sm font-medium text-gray-900 focus:border-primary-500 focus:outline-hidden focus:ring-2 focus:ring-primary-200 dark:border-white/10 dark:bg-gray-900 dark:text-white dark:focus:ring-primary-500/30">
                   <option value="">{{ $filterAllLabel }}</option>
                   {{ range $filterTypes }}
                   <option value="{{ . }}">{{ i18n (printf "pub_type_%s" .) | default . }}</option>
@@ -256,14 +256,14 @@
               </label>
               <label class="flex min-w-0 flex-col gap-1 text-xs font-semibold text-gray-700 dark:text-white/80">
                 <span>{{ $filterTopicLabel }}</span>
-                <select x-model="filters.topic" class="w-full min-w-0 rounded-lg border border-black/10 bg-white px-3 py-2 text-sm font-medium text-gray-900 focus:border-primary-500 focus:outline-none focus:ring-2 focus:ring-primary-200 dark:border-white/10 dark:bg-gray-900 dark:text-white dark:focus:ring-primary-500/30">
+                <select x-model="filters.topic" class="w-full min-w-0 rounded-lg border border-black/10 bg-white px-3 py-2 text-sm font-medium text-gray-900 focus:border-primary-500 focus:outline-hidden focus:ring-2 focus:ring-primary-200 dark:border-white/10 dark:bg-gray-900 dark:text-white dark:focus:ring-primary-500/30">
                   <option value="">{{ $filterAllLabel }}</option>
                   {{ range $filterTopics }}
                   <option value="{{ . }}">{{ . | i18n }}</option>
                   {{ end }}
                 </select>
               </label>
-              <button type="button" @click="clear()" class="w-full rounded-full border border-black/10 bg-white px-4 py-2 text-sm font-semibold text-gray-700 transition-colors hover:border-primary-400 hover:text-primary-700 dark:border-white/10 dark:bg-white/[0.06] dark:text-white/80 dark:hover:border-primary-300 dark:hover:text-primary-100">
+              <button type="button" @click="clear()" class="w-full rounded-full border border-black/10 bg-white px-4 py-2 text-sm font-semibold text-gray-700 transition-colors hover:border-primary-400 hover:text-primary-700 dark:border-white/10 dark:bg-white/6 dark:text-white/80 dark:hover:border-primary-300 dark:hover:text-primary-100">
                 {{ $filterClearLabel }}
               </button>
             </div>
@@ -362,7 +362,7 @@
                 data-pub-type="{{ $filterType }}"
                 data-pub-topics="|{{ $filterTagsJoin }}|"
                 x-show="(filters.year === '' || filters.year === '{{ $entry.yearLabel }}') && (filters.type === '' || filters.type === '{{ $filterType }}') && (filters.topic === '' || ('|{{ $filterTagsJoin }}|').includes('|' + filters.topic + '|'))"
-                class="list-none rounded-[1.5rem] border border-black/5 bg-white/80 px-5 py-5 text-base leading-7 text-gray-700 shadow-[0_16px_50px_rgba(15,23,42,0.08)] backdrop-blur dark:border-white/10 dark:bg-white/[0.04] dark:text-white/80">
+                class="list-none rounded-3xl border border-black/5 bg-white/80 px-5 py-5 text-base leading-7 text-gray-700 shadow-[0_16px_50px_rgba(15,23,42,0.08)] backdrop-blur dark:border-white/10 dark:bg-white/4 dark:text-white/80">
               <div class="flex flex-col gap-5">
                 <div class="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
                   <div class="space-y-3">
@@ -388,7 +388,7 @@
                     {{ range $pub.advisors }}
                       {{ $adv := partial "people-lookup" . }}
                       {{ if $adv.found }}
-                        <a href="{{ if hasPrefix $adv.link "/" }}{{ $adv.link | relLangURL }}{{ else }}{{ $adv.link }}{{ end }}" class="inline-flex rounded-full border border-black/10 bg-stone-50 px-3 py-1 text-sm font-medium text-gray-700 transition-colors hover:border-primary-500 hover:text-primary-600 dark:border-white/10 dark:bg-white/[0.06] dark:text-white/80 dark:hover:border-primary-300 dark:hover:text-primary-200">{{ $adv.name }}</a>
+                        <a href="{{ if hasPrefix $adv.link "/" }}{{ $adv.link | relLangURL }}{{ else }}{{ $adv.link }}{{ end }}" class="inline-flex rounded-full border border-black/10 bg-stone-50 px-3 py-1 text-sm font-medium text-gray-700 transition-colors hover:border-primary-500 hover:text-primary-600 dark:border-white/10 dark:bg-white/6 dark:text-white/80 dark:hover:border-primary-300 dark:hover:text-primary-200">{{ $adv.name }}</a>
                       {{ end }}
                     {{ end }}
                   </div>
@@ -400,7 +400,7 @@
                   <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-gray-400 dark:text-white/75">{{ cond $isPt "Temas" "Topics" }}</div>
                   <div class="mt-2 flex flex-wrap gap-2">
                     {{ range $filteredTags }}
-                      <a href="{{ printf "/tags/%s" (. | urlize) | relLangURL }}" class="inline-flex rounded-full border border-black/10 bg-stone-50 px-3 py-1 text-sm font-medium text-gray-700 transition-colors hover:border-primary-500 hover:text-primary-600 dark:border-white/10 dark:bg-white/[0.06] dark:text-white/80 dark:hover:border-primary-300 dark:hover:text-primary-200">{{ partial "translated-label.html" (dict "value" .) }}</a>
+                      <a href="{{ printf "/tags/%s" (. | urlize) | relLangURL }}" class="inline-flex rounded-full border border-black/10 bg-stone-50 px-3 py-1 text-sm font-medium text-gray-700 transition-colors hover:border-primary-500 hover:text-primary-600 dark:border-white/10 dark:bg-white/6 dark:text-white/80 dark:hover:border-primary-300 dark:hover:text-primary-200">{{ partial "translated-label.html" (dict "value" .) }}</a>
                     {{ end }}
                   </div>
                 </div>
@@ -413,25 +413,25 @@
                       {{ $isDoi := and (hasPrefix $identifier "10.") (in $identifier "/") }}
                       {{ $label := cond $isDoi "DOI" "ISBN" }}
                       {{ if $isDoi }}
-                      <a href="https://doi.org/{{ $identifier }}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-full border border-black/10 bg-white px-3 py-1.5 text-sm font-medium text-gray-700 transition-colors hover:border-primary-500 hover:text-primary-600 dark:border-white/10 dark:bg-white/[0.06] dark:text-white/80 dark:hover:border-primary-300 dark:hover:text-primary-200">{{ $label }}: {{ $identifier }}</a>
+                      <a href="https://doi.org/{{ $identifier }}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-full border border-black/10 bg-white px-3 py-1.5 text-sm font-medium text-gray-700 transition-colors hover:border-primary-500 hover:text-primary-600 dark:border-white/10 dark:bg-white/6 dark:text-white/80 dark:hover:border-primary-300 dark:hover:text-primary-200">{{ $label }}: {{ $identifier }}</a>
                       {{ else }}
-                      <span class="inline-flex items-center gap-2 rounded-full border border-black/10 bg-white px-3 py-1.5 text-sm font-medium text-gray-700 dark:border-white/10 dark:bg-white/[0.06] dark:text-white/80">{{ $label }}: {{ $identifier }}</span>
+                      <span class="inline-flex items-center gap-2 rounded-full border border-black/10 bg-white px-3 py-1.5 text-sm font-medium text-gray-700 dark:border-white/10 dark:bg-white/6 dark:text-white/80">{{ $label }}: {{ $identifier }}</span>
                       {{ end }}
                     {{ end }}
                   {{ end }}
                   {{ if $podcast }}
-                  <a href="{{ $podcast }}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-full border border-black/10 bg-white px-3 py-1.5 text-sm font-medium text-gray-700 transition-colors hover:border-primary-500 hover:text-primary-600 dark:border-white/10 dark:bg-white/[0.06] dark:text-white/80 dark:hover:border-primary-300 dark:hover:text-primary-200">Spotify</a>
+                  <a href="{{ $podcast }}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-full border border-black/10 bg-white px-3 py-1.5 text-sm font-medium text-gray-700 transition-colors hover:border-primary-500 hover:text-primary-600 dark:border-white/10 dark:bg-white/6 dark:text-white/80 dark:hover:border-primary-300 dark:hover:text-primary-200">Spotify</a>
                   {{ end }}
                   {{ if $github }}
-                  <a href="{{ $github }}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-full border border-black/10 bg-white px-3 py-1.5 text-sm font-medium text-gray-700 transition-colors hover:border-primary-500 hover:text-primary-600 dark:border-white/10 dark:bg-white/[0.06] dark:text-white/80 dark:hover:border-primary-300 dark:hover:text-primary-200">GitHub</a>
+                  <a href="{{ $github }}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-full border border-black/10 bg-white px-3 py-1.5 text-sm font-medium text-gray-700 transition-colors hover:border-primary-500 hover:text-primary-600 dark:border-white/10 dark:bg-white/6 dark:text-white/80 dark:hover:border-primary-300 dark:hover:text-primary-200">GitHub</a>
                   {{ end }}
                   {{ if $zenodo }}
-                  <a href="{{ $zenodo }}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-full border border-black/10 bg-white px-3 py-1.5 text-sm font-medium text-gray-700 transition-colors hover:border-primary-500 hover:text-primary-600 dark:border-white/10 dark:bg-white/[0.06] dark:text-white/80 dark:hover:border-primary-300 dark:hover:text-primary-200">Zenodo</a>
+                  <a href="{{ $zenodo }}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-full border border-black/10 bg-white px-3 py-1.5 text-sm font-medium text-gray-700 transition-colors hover:border-primary-500 hover:text-primary-600 dark:border-white/10 dark:bg-white/6 dark:text-white/80 dark:hover:border-primary-300 dark:hover:text-primary-200">Zenodo</a>
                   {{ end }}
                   <button type="button"
                           @click="navigator.clipboard.writeText($refs.bibtex.textContent.trim()).then(() => { copied=true; setTimeout(()=>copied=false, 2000) })"
                           :aria-label="copied ? '{{ i18n "ui_bibtex_copied" }}' : '{{ i18n "ui_bibtex_copy" }}'"
-                          class="inline-flex items-center gap-2 rounded-full border border-black/10 bg-white px-3 py-1.5 text-sm font-medium text-gray-700 transition-colors hover:border-primary-500 hover:text-primary-600 dark:border-white/10 dark:bg-white/[0.06] dark:text-white/80 dark:hover:border-primary-300 dark:hover:text-primary-200">
+                          class="inline-flex items-center gap-2 rounded-full border border-black/10 bg-white px-3 py-1.5 text-sm font-medium text-gray-700 transition-colors hover:border-primary-500 hover:text-primary-600 dark:border-white/10 dark:bg-white/6 dark:text-white/80 dark:hover:border-primary-300 dark:hover:text-primary-200">
                     <span x-text="copied ? 'OK' : 'BibTeX'"></span>
                   </button>
                 </div>
@@ -455,14 +455,14 @@
     </article>
 
     <aside class="order-1 space-y-5 lg:order-2 lg:sticky lg:top-24">
-      <div class="rounded-[1.75rem] border border-black/5 bg-white/85 p-5 shadow-[0_18px_60px_rgba(15,23,42,0.08)] backdrop-blur dark:border-white/10 dark:bg-white/[0.04]">
+      <div class="rounded-[1.75rem] border border-black/5 bg-white/85 p-5 shadow-[0_18px_60px_rgba(15,23,42,0.08)] backdrop-blur dark:border-white/10 dark:bg-white/4">
         <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-gray-400 dark:text-white/75">{{ $statsTitle }}</div>
         <div class="mt-4 grid gap-3">
-          <div class="rounded-[1.25rem] border border-black/5 bg-stone-50 px-4 py-4 dark:border-white/10 dark:bg-white/[0.04]">
+          <div class="rounded-[1.25rem] border border-black/5 bg-stone-50 px-4 py-4 dark:border-white/10 dark:bg-white/4">
             <div class="text-3xl font-black tracking-tight text-gray-950 dark:text-white">{{ $yearCount }}</div>
             <div class="mt-1 text-sm leading-6 text-gray-600 dark:text-white/75">{{ $yearsTitle }}</div>
           </div>
-          <div class="rounded-[1.25rem] border border-black/5 bg-stone-50 px-4 py-4 dark:border-white/10 dark:bg-white/[0.04]">
+          <div class="rounded-[1.25rem] border border-black/5 bg-stone-50 px-4 py-4 dark:border-white/10 dark:bg-white/4">
             <div class="text-3xl font-black tracking-tight text-gray-950 dark:text-white">{{ $publicationCount }}</div>
             <div class="mt-1 text-sm leading-6 text-gray-600 dark:text-white/75">{{ i18n "ui_indexed_publications" }}</div>
           </div>
@@ -470,13 +470,13 @@
       </div>
 
       {{ if $hasYearNav }}
-      <div id="years-navigation" class="rounded-[1.75rem] border border-black/5 bg-white/85 p-5 shadow-[0_18px_60px_rgba(15,23,42,0.08)] backdrop-blur dark:border-white/10 dark:bg-white/[0.04]">
+      <div id="years-navigation" class="rounded-[1.75rem] border border-black/5 bg-white/85 p-5 shadow-[0_18px_60px_rgba(15,23,42,0.08)] backdrop-blur dark:border-white/10 dark:bg-white/4">
         <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-gray-400 dark:text-white/75">{{ $yearsTitle }}</div>
         <nav class="mt-4">
           <ul class="m-0 grid list-none gap-2 p-0">
             {{ range $yearEntries }}
             <li class="m-0 p-0">
-              <a href="#{{ .anchor }}" class="block rounded-xl border border-black/5 bg-stone-50 px-4 py-3 text-sm font-semibold text-gray-700 transition-colors hover:border-primary-400 hover:bg-primary-50 hover:text-primary-700 dark:border-white/10 dark:bg-white/[0.04] dark:text-white/80 dark:hover:border-primary-300 dark:hover:bg-primary-500/10 dark:hover:text-primary-100">
+              <a href="#{{ .anchor }}" class="block rounded-xl border border-black/5 bg-stone-50 px-4 py-3 text-sm font-semibold text-gray-700 transition-colors hover:border-primary-400 hover:bg-primary-50 hover:text-primary-700 dark:border-white/10 dark:bg-white/4 dark:text-white/80 dark:hover:border-primary-300 dark:hover:bg-primary-500/10 dark:hover:text-primary-100">
                 {{ .label }}
               </a>
             </li>

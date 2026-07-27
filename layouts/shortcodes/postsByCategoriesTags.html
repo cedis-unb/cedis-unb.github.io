@@ -115,7 +115,7 @@
         {{ end }}
         {{ $leadText := delimit $textParts " " }}
 
-        <article class="group flex h-full flex-col overflow-hidden rounded-[2rem] border border-black/5 bg-white text-gray-900 shadow-[0_18px_60px_rgba(15,23,42,0.08)] transition duration-300 ease-out hover:-translate-y-1 hover:shadow-[0_28px_90px_rgba(197,39,47,0.16)] dark:border-white/10 dark:bg-white/[0.04] dark:text-white">
+        <article class="group flex h-full flex-col overflow-hidden rounded-4xl border border-black/5 bg-white text-gray-900 shadow-[0_18px_60px_rgba(15,23,42,0.08)] transition duration-300 ease-out hover:-translate-y-1 hover:shadow-[0_28px_90px_rgba(197,39,47,0.16)] dark:border-white/10 dark:bg-white/4 dark:text-white">
           <a href="{{ .RelPermalink }}" class="block">
             {{ with .Params.featured_image }}
               {{ $featuredPath := replace . "../assets/" "" }}
@@ -123,8 +123,8 @@
                 {{ partial "card-image.html" (dict "resource" . "title" $cardPage.Title "fit" "960x520 webp q88" "containerClass" "h-52" "variant" "wide") }}
               {{ end }}
             {{ else }}
-              <div class="flex h-52 items-end bg-[linear-gradient(135deg,_rgba(197,39,47,0.16),_rgba(15,23,42,0.9))] p-6">
-                <span class="max-w-[15rem] text-3xl font-black tracking-tight text-white">{{ $cardPage.Title }}</span>
+              <div class="flex h-52 items-end bg-[linear-gradient(135deg,rgba(197,39,47,0.16),rgba(15,23,42,0.9))] p-6">
+                <span class="max-w-60 text-3xl font-black tracking-tight text-white">{{ $cardPage.Title }}</span>
               </div>
             {{ end }}
           </a>
