@@ -38,9 +38,9 @@ Uma defesa é um **evento único** (data + banca + tema + aluno + orientador) do
   title:
     pt: 'Título em português'
     en: 'English title'
-  summary:                                       # opcional — abstract curto
-    pt: ''
-    en: ''
+  summary:                                       # abstract/resumo do trabalho; ~150–400 palavras.
+    pt: ''                                       # Renderizado como parágrafo em qualquer estado
+    en: ''                                       # (upcoming, held, deposited) quando presente.
   students:                                      # 1 ou 2 (dupla em TCC)
     - name: Emanuel Oliveira
       slug: null                                 # ou 'emanuel_oliveira' se houver perfil (raro)
@@ -118,10 +118,12 @@ Layout único que renderiza conforme estado:
 
 | Estado | Cabeçalho | Corpo principal | Rodapé |
 |---|---|---|---|
-| `upcoming` | Selo "Defesa marcada" + data/hora + contagem regressiva | Tema + banca + orientador + local/link remoto + botão .ics | CTA "assista" |
-| `held` | Selo "Defesa realizada" + data | Parágrafo (gerado ou `narrative`) + banca + tema | Se `narrative` vazio, sugestão em Markdown pra editor |
+| `upcoming` | Selo "Defesa marcada" + data/hora + contagem regressiva | Tema + **resumo (`summary.<lang>`) quando presente** + banca + orientador + local/link remoto + botão .ics | CTA "assista" |
+| `held` | Selo "Defesa realizada" + data | Parágrafo (gerado ou `narrative`) + **resumo quando presente** + banca + tema | Se `narrative` vazio, sugestão em Markdown pra editor |
 | `deposited` | Selo "Trabalho depositado" | Igual `held` + card com link BDM/repositório + botão "Ler" | Cross-link para `/publications/<id>/` |
 | `withdrawn` | Selo "Cancelada" | Nota curta | Sem CTA |
+
+**Sobre o resumo/abstract:** quando `summary.<lang>` estiver preenchido no YAML, aparece como bloco `<blockquote>` estilizado logo abaixo do parágrafo-notícia (autogerado ou `narrative`). Em `upcoming`, serve para o público entender o tema com profundidade antes da defesa; em `held`/`deposited`, complementa a notícia como resumo executivo do trabalho. Se ausente, o layout não mostra placeholder.
 
 ### 6.2 Nova página `/pt/defesas/` (index)
 
@@ -148,7 +150,13 @@ Aggregação em `layouts/index.html` (bloco `$pulseItems` linha 37-99) passa a i
 
 Gera parágrafo padrão da notícia a partir do YAML. Escolhe entre 3-4 templates com base em `type` e `program` (ex.: TCC vs dissertação vs qualificação). Localizável PT/EN.
 
-Se `narrative.pt` (ou `.en`) preenchido: usa direto, ignora template.
+Estrutura de renderização:
+
+1. **Parágrafo-notícia**: se `narrative.<lang>` preenchido, usa direto; caso contrário, gera a partir de `type`, `students`, `advisor`, `title`, `program` e `held_date`.
+2. **Bloco de resumo**: se `summary.<lang>` preenchido, renderiza como `<blockquote>` semântico com rótulo "Resumo" (PT) / "Abstract" (EN). Sem placeholder quando ausente.
+3. **Banca estruturada**: lista com nomes + afiliação + role, ordenada por role (advisor, co_advisor, examiner, external_examiner, substitute).
+
+Se `narrative.pt` (ou `.en`) preenchido: substitui apenas o parágrafo-notícia — resumo e banca continuam renderizados a partir do YAML.
 
 ## 7. Migração
 
