@@ -21,6 +21,7 @@
     "build": "npm run build:publications && hugo --minify --cleanDestinationDir && pagefind --site docs",
     "audit:a11y": "pa11y-ci --config .pa11yci.json",
     "audit:lighthouse": "lhci autorun --config=lighthouserc.json",
+    "audit:lighthouse-mobile": "lhci autorun --config=lighthouserc-mobile.json",
     "test": "npm run check:publications && python3 scripts/validate_content.py && python3 scripts/validate_i18n.py"
   },
   "repository": {
