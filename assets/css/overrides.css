@@ -79,6 +79,33 @@
   text-transform: uppercase;
 }
 
+/* Wrapper de card (posts-template.html) — fundo suave complementar
+   à cover para não deixar o card do listing "flutuando" */
+.pub-cover-card[data-pub-family="paper"] {
+  background: linear-gradient(135deg, var(--color-primary-50), color-mix(in oklab, var(--color-primary-100) 70%, white));
+}
+.pub-cover-card[data-pub-family="book"] {
+  background: linear-gradient(135deg, var(--color-secondary-50), color-mix(in oklab, var(--color-secondary-100) 70%, white));
+}
+.pub-cover-card[data-pub-family="thesis"] {
+  background: linear-gradient(135deg, var(--color-accent-50), color-mix(in oklab, var(--color-accent-100) 70%, white));
+}
+.dark .pub-cover-card[data-pub-family="paper"] {
+  background: linear-gradient(135deg,
+    color-mix(in oklab, var(--color-primary-700) 30%, black),
+    color-mix(in oklab, var(--color-primary-900) 50%, black));
+}
+.dark .pub-cover-card[data-pub-family="book"] {
+  background: linear-gradient(135deg,
+    color-mix(in oklab, var(--color-secondary-700) 30%, black),
+    color-mix(in oklab, var(--color-secondary-900) 50%, black));
+}
+.dark .pub-cover-card[data-pub-family="thesis"] {
+  background: linear-gradient(135deg,
+    color-mix(in oklab, var(--color-accent-700) 30%, black),
+    color-mix(in oklab, var(--color-accent-900) 50%, black));
+}
+
 /* Cores por família — light mode */
 .pub-cover[data-pub-family="paper"] {
   --pub-cover-accent: var(--color-primary-700);

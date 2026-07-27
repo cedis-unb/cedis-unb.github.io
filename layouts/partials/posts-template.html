@@ -98,11 +98,26 @@
         {{ end }}
         <article class="group flex h-full flex-col overflow-hidden rounded-4xl border border-black/5 bg-white text-gray-900 shadow-[0_18px_60px_rgba(15,23,42,0.08)] transition duration-300 ease-out hover:-translate-y-1 hover:shadow-[0_28px_90px_rgba(197,39,47,0.16)] dark:border-white/10 dark:bg-white/4 dark:text-white"{{ if $isResearchersTerm }} data-randomize-card{{ end }}>
             <a href="{{ .RelPermalink }}" class="block">
-                {{ with .Params.featured_image }}
-                {{ $featuredPath := replace . "../assets/" "" }}
+                {{ if .Params.featured_image }}
+                {{ $featuredPath := replace .Params.featured_image "../assets/" "" }}
                 {{ with resources.Get $featuredPath }}
                 {{ partial "card-image.html" (dict "resource" . "title" $cardTitle "fit" "960x640 webp q88" "mode" $cardImageMode "containerClass" "h-64" "variant" "grid") }}
                 {{ end }}
+                {{ else if eq .Section "publications" }}
+                {{/* Sem featured_image + é publicação → cover dinâmico SVG.
+                     Wrapper .pub-cover-card dá fundo suave complementar. */}}
+                {{ $pubType := .Params.publication_type }}
+                {{ $family := "paper" }}
+                {{ if or (eq $pubType "book") (eq $pubType "chapter") (eq $pubType "book_section") }}{{ $family = "book" }}{{ end }}
+                {{ if or (eq $pubType "phd") (eq $pubType "dissertation") (eq $pubType "specialization") (eq $pubType "tcc") }}{{ $family = "thesis" }}{{ end }}
+                <div class="pub-cover-card flex h-64 items-center justify-center p-6" data-pub-family="{{ $family }}">
+                    <div class="w-40 max-w-full">
+                        {{ partial "publication-cover.html" (dict
+                            "type" $pubType
+                            "year" .Params.year
+                            "lang" $.Site.Language.Lang) }}
+                    </div>
+                </div>
                 {{ else }}
                 <div class="flex h-64 items-end bg-[linear-gradient(135deg,rgba(197,39,47,0.18),rgba(15,23,42,0.9))] p-6">
                     <span class="max-w-56 text-3xl font-black tracking-tight text-white">{{ .Title }}</span>
