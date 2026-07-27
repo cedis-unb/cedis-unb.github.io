@@ -526,7 +526,7 @@
         </p>
 
         <div class="mt-8 flex flex-wrap gap-3">
-          <a href="#profile-content" class="inline-flex items-center rounded-full bg-primary-600 px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-primary-600/25 transition-colors hover:bg-primary-500">
+          <a href="#profile-content" class="inline-flex items-center rounded-full bg-primary-700 px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-primary-600/25 transition-colors hover:bg-primary-800">
             {{ $jumpContent }}
           </a>
           {{ if $hasToc }}
@@ -590,7 +590,7 @@
           <h2 class="mt-3 text-2xl font-black tracking-tight text-gray-950 dark:text-white md:text-3xl">{{ i18n "people_cta_supervision_heading" }}</h2>
           <p class="mt-3 max-w-2xl text-base leading-7 text-gray-700 dark:text-white/80">{{ i18n "people_cta_supervision_body" }}</p>
           <div class="mt-6 flex flex-wrap gap-3">
-            <a href="{{ "/oportunidades/" | relLangURL }}" class="inline-flex items-center rounded-full bg-primary-600 px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-primary-600/25 transition-colors hover:bg-primary-500">
+            <a href="{{ "/oportunidades/" | relLangURL }}" class="inline-flex items-center rounded-full bg-primary-700 px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-primary-600/25 transition-colors hover:bg-primary-800">
               {{ i18n "people_cta_opportunities" }}
               <span class="ml-2" aria-hidden="true">&rarr;</span>
             </a>
@@ -682,13 +682,13 @@
           {{ end }}
           {{ if $contactLattes }}
           <div class="flex items-center gap-3 px-4 py-3">
-            <span class="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-md bg-primary-600 text-[0.6rem] font-black uppercase tracking-tight text-white dark:bg-primary-500">L</span>
+            <span class="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-md bg-primary-700 text-[0.6rem] font-black uppercase tracking-tight text-white dark:bg-primary-700">L</span>
             <a href="{{ $contactLattes }}" target="_blank" rel="noopener noreferrer" class="min-w-0 flex-1 truncate text-sm font-semibold text-primary-700 hover:text-primary-600 dark:text-primary-200 dark:hover:text-primary-100">{{ i18n "people_lattes" }}</a>
           </div>
           {{ end }}
           {{ if $contactOrcid }}
           <div class="flex items-center gap-3 px-4 py-3">
-            <span class="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#A6CE39] text-[0.55rem] font-black text-white">iD</span>
+            <span class="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#5f8100] text-[0.55rem] font-black text-white">iD</span>
             <a href="{{ $contactOrcid }}" target="_blank" rel="noopener noreferrer" class="min-w-0 flex-1 truncate text-sm font-semibold text-primary-700 hover:text-primary-600 dark:text-primary-200 dark:hover:text-primary-100">ORCID</a>
           </div>
           {{ end }}

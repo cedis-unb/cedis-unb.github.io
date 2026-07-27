@@ -118,7 +118,7 @@
       {{ $joinURL := cond (eq .Site.Language.Lang "pt") "/pt/junte-se/" "/join/" }}
       {{ $mapURL := cond (eq .Site.Language.Lang "pt") "/pt/mapa/" "/map/" }}
       <div class="mt-8 flex flex-wrap gap-3">
-        <a href="{{ $joinURL }}" class="inline-flex items-center rounded-full bg-primary-600 px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-primary-600/25 transition-colors hover:bg-primary-500">
+        <a href="{{ $joinURL }}" class="inline-flex items-center rounded-full bg-primary-700 px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-primary-600/25 transition-colors hover:bg-primary-800">
           {{ i18n "ui_quiz_cta_join" }}<span class="ml-2" aria-hidden="true">&rarr;</span>
         </a>
         <a href="{{ $mapURL }}" class="inline-flex items-center rounded-full border border-primary-300 bg-white px-5 py-3 text-sm font-semibold text-primary-700 transition-colors hover:border-primary-500 hover:bg-primary-50 dark:border-primary-400/40 dark:bg-white/6 dark:text-primary-100">
