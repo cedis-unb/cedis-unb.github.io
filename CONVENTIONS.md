@@ -699,6 +699,119 @@ filtrados antes de renderizar.
 Toda defesa (TCC, mestrado, doutorado) com `defense_date >= 2015`
 tem uma notícia jornalística associada, em PT e EN.
 
+### 3.0 Qual marco gera o quê? (matriz TCC1/TCC2/qualificação/defesa)
+
+O CEDIS acompanha vários marcos ao longo da vida acadêmica de um
+orientando. Nem todos geram publicação canônica em
+`data/productions.yaml` — mas todos os que forem públicos podem virar
+notícia jornalística em `content/posts/`.
+
+| Marco acadêmico | Notícia (`content/posts/`) | Publicação (`data/productions.yaml`) | Motivo |
+|---|:-:|:-:|---|
+| **TCC1** (proposta / projeto de TCC) | opcional | **não** | Não há trabalho final publicado no BDM ainda; é ponto de partida do TCC |
+| **TCC2** (defesa final) | **sim** | **sim** (`type: tcc`) | Trabalho depositado no BDM (Biblioteca Digital da Produção Intelectual Discente) |
+| **Qualificação de mestrado** | opcional | **não** | Não há dissertação depositada ainda; é passo intermediário do mestrado |
+| **Defesa de mestrado** | **sim** | **sim** (`type: dissertation`) | Dissertação depositada no Repositório Institucional da UnB |
+| **Qualificação de doutorado** | opcional | **não** | Idem qualificação de mestrado |
+| **Defesa de doutorado** | **sim** | **sim** (`type: phd`) | Tese depositada no Repositório Institucional da UnB |
+| **Prêmio, publicação em periódico, patente** | opcional | **sim** (`type: article`, `registro`, etc.) | Segue os §2.x conforme o tipo |
+
+**Regra prática:**
+
+- Se existe **texto integral publicamente acessível** no BDM (TCC) ou no
+  Repositório UnB (mestrado/doutorado), o marco gera publicação em
+  `productions.yaml`. Se não existe, é qualificação/proposta e só cabe
+  notícia.
+- Qualificações e TCC1 valem notícia quando há valor jornalístico
+  (primeira qualificação bem-sucedida do PPCA no ano, tema inédito para
+  o CEDIS, etc.). Não é obrigatório documentar todas.
+
+### 3.0.1 Notícias de qualificação / TCC1 — sinalização
+
+Quando a notícia for de um marco que **não gera publicação**
+(qualificação ou TCC1), o frontmatter deve incluir a tag
+`qualification` (para mestrado/doutorado) ou `tcc1` (para TCC de
+proposta), para distinguir dos posts `defesa-*.md` que apontam para
+publicações canônicas. Templates a seguir.
+
+**Frontmatter para qualificação (mestrado):**
+
+```yaml
+---
+title: "Qualificação — <Nome do candidato> defende proposta sobre <tema>"
+date: 2025-05-15T00:00:00-03:00
+draft: false
+weight: 500
+language: pt
+featured_image: "../assets/images/featured/area_XXX.png"   # ver §3.4
+summary: 'Frase única resumindo a proposta e o rumo do mestrado.'
+author: CEDIS
+authorimage: ../assets/images/global/author.webp
+categories:
+- News
+tags:
+- News
+- qualification              # marca de que NÃO gera publicação
+- mestrado                    # nível do programa
+- <tag temática do CEDIS>
+---
+```
+
+**Filename:** `qualificacao-<slug>-<ano>.<lang>.md` (não use prefixo
+`defesa-*` — reservado para trabalhos que geram publicação).
+
+**Frontmatter para TCC1:**
+
+```yaml
+---
+title: "TCC1 — <Nome> apresenta plano de trabalho sobre <tema>"
+tags:
+- News
+- tcc1                        # marca de que é fase de proposta
+- <tag temática>
+---
+```
+
+**Filename:** `tcc1-<slug>-<ano>.<lang>.md`.
+
+### 3.0.2 O que preencher em `productions.yaml` para o marco final
+
+Quando o marco é TCC2 / defesa de mestrado / defesa de doutorado:
+
+1. **Editar `data/productions.yaml`** — adicionar entrada com todos os
+   campos exigidos em §2 (type, year, title, authors, advisors, url,
+   people, tags, defense_date, program, etc.).
+2. **Criar as duas notícias** (`defesa-<slug>-<ano>.pt.md` e `.en.md`)
+   seguindo §3.1-§3.8.
+3. **Rodar `python3 scripts/build_publications.py`** — regenera
+   `content/publications/**/*.md` a partir do YAML canônico.
+4. **Rodar `npm test`** — valida schema, i18n, referências.
+5. **Rodar `npm run build`** — regenera `docs/`.
+6. Commit + push.
+
+Quando o marco é qualificação ou TCC1: **pular passos 1, 3 e 4**. Só
+criar as notícias `qualificacao-*` / `tcc1-*` e regenerar o site.
+
+### 3.0.3 Como o usuário comum insere hoje
+
+Hoje **todo o fluxo é edição manual de YAML/Markdown**. Não existe
+formulário, UI web nem GitHub Action com issue template para inserção
+guiada. Consequências:
+
+- Só quem tem acesso ao repositório e conhece a estrutura consegue
+  inserir defesas ou qualificações.
+- Erros comuns (slug com acento, tag inexistente, `defense_date` mal
+  formatado, link do BDM errado) são detectados só pelos validadores
+  Python no `npm test`.
+- **Recomendação futura** (não escopo desta seção): criar issue
+  template no GitHub com campos estruturados que gere PR automaticamente
+  via GitHub Actions. Descreve o passo a passo em texto plano, valida
+  campos obrigatórios, gera os arquivos e chama os validadores. Não
+  implementado hoje.
+
+Para pedidos externos: contatar o CEDIS via canais oficiais; a
+inserção fica com quem mantém o repositório.
+
 ### 3.1 Nomeclatura
 
 Filename: `defesa-<slug>-<ano>.<lang>.md`

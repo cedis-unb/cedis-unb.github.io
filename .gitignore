@@ -4,6 +4,7 @@ resources/
 public/
 tmp/
 .claude/
+.lighthouseci/
 .hugo_build.lock
 .hugo-server/
 # Gerado por [build.buildStats] no hugo.yaml — Tailwind 4 consome via @source.

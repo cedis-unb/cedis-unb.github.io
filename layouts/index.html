@@ -224,7 +224,7 @@
                         {{ if $pulseTop }}
                         <a href="{{ $pulseTop.url }}" class="relative mt-5 block group rounded-2xl border border-slate-200/70 bg-white/70 p-5 transition-all hover:border-primary-300 hover:bg-white hover:shadow-md dark:border-white/10 dark:bg-white/4 dark:hover:border-primary-400/30 dark:hover:bg-white/8">
                             <div class="flex flex-wrap items-center gap-2 text-[0.68rem] font-semibold uppercase tracking-[0.16em]">
-                                <span class="rounded-full bg-primary-500 px-2.5 py-1 text-white">{{ i18n "ui_pulse_new_badge" }}</span>
+                                <span class="rounded-full bg-primary-700 px-2.5 py-1 text-white">{{ i18n "ui_pulse_new_badge" }}</span>
                                 <span class="rounded-full border border-slate-300/80 bg-white px-2.5 py-1 text-slate-700 dark:border-white/10 dark:bg-slate-900/70 dark:text-slate-200">{{ i18n (printf "ui_pulse_type_%s" $pulseTop.type) }}</span>
                                 <span class="text-slate-500 dark:text-slate-400 normal-case tracking-normal">·&nbsp;{{ partial "relative-date.html" (dict "item" $pulseTop) }}</span>
                             </div>

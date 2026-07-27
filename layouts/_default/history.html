@@ -117,7 +117,7 @@
       <div class="relative -mx-2 flex flex-wrap gap-2 overflow-x-auto px-2 pb-1">
         {{ range $events }}
         <button type="button" @click="focus('{{ .anchor }}')"
-                :class="expanded['{{ .anchor }}'] ? 'border-primary-500 bg-primary-500 text-white shadow-md shadow-primary-500/20' : 'border-black/10 bg-white text-gray-700 hover:border-primary-400 hover:text-primary-700 dark:border-white/10 dark:bg-white/4 dark:text-white/80 dark:hover:border-primary-300 dark:hover:text-primary-100'"
+                :class="expanded['{{ .anchor }}'] ? 'border-primary-700 bg-primary-700 text-white shadow-md shadow-primary-500/20' : 'border-black/10 bg-white text-gray-700 hover:border-primary-400 hover:text-primary-700 dark:border-white/10 dark:bg-white/4 dark:text-white/80 dark:hover:border-primary-300 dark:hover:text-primary-100'"
                 class="inline-flex whitespace-nowrap items-center rounded-full border px-4 py-2 text-sm font-semibold transition-colors">
           {{ .year }}
         </button>

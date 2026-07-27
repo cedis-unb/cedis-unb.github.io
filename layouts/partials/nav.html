@@ -26,7 +26,7 @@
                     {{ if (eq "complexdropdown" .Pre) }}
                     <div @click.away="open = false" class="relative" x-data="{ open: false }">
                         <button type="button" @click="open = !open" :aria-expanded="open" aria-haspopup="true"
-                                class="flex items-center rounded-full px-4 py-2 text-sm font-semibold text-gray-100 transition-colors hover:bg-white/10 hover:text-white focus:bg-primary-600 focus:text-white focus:outline-hidden focus:ring-2 focus:ring-primary-300 focus:ring-offset-2 focus:ring-offset-gray-950">
+                                class="flex items-center rounded-full px-4 py-2 text-sm font-semibold text-gray-100 transition-colors hover:bg-white/10 hover:text-white focus:bg-primary-700 focus:text-white focus:outline-hidden focus:ring-2 focus:ring-primary-300 focus:ring-offset-2 focus:ring-offset-gray-950">
                             <span>{{ .Name }}</span>
                             <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}"
                                  class="ml-1 mt-0.5 h-4 w-4 transition-transform duration-200">
@@ -45,7 +45,7 @@
                             <div class="rounded-2xl border border-gray-200/80 bg-white px-2 pt-2 pb-4 shadow-2xl text-zinc-900">
                                 <div class="grid grid-cols-1 gap-4">
                                     {{ range (index site.Menus .Identifier) }}
-                                    <a class="group row flex items-start rounded-xl bg-transparent p-2 hover:bg-primary-600 hover:text-white focus:bg-primary-700 focus:text-white focus:outline-hidden focus:ring-2 focus:ring-primary-300 focus:ring-offset-2 focus:ring-offset-gray-950"
+                                    <a class="group row flex items-start rounded-xl bg-transparent p-2 hover:bg-primary-800 hover:text-white focus:bg-primary-700 focus:text-white focus:outline-hidden focus:ring-2 focus:ring-primary-300 focus:ring-offset-2 focus:ring-offset-gray-950"
                                        href="{{ if hasPrefix .URL "/" }}{{ .URL | relLangURL }}{{ else }}{{ .URL }}{{ end }}">
                                         {{ partial "menu-icon.html" (dict "pre" .Pre) }}
                                         <div class="ml-3">
@@ -61,7 +61,7 @@
                     {{ else if (eq "dropdown" .Pre) }}
                     <div @click.away="open = false" class="relative" x-data="{ open: false }">
                         <button type="button" @click="open = !open" :aria-expanded="open" aria-haspopup="true"
-                                class="flex items-center rounded-full px-4 py-2 text-sm font-semibold text-gray-100 transition-colors hover:bg-white/10 hover:text-white focus:bg-primary-600 focus:text-white focus:outline-hidden focus:ring-2 focus:ring-primary-300 focus:ring-offset-2 focus:ring-offset-gray-950">
+                                class="flex items-center rounded-full px-4 py-2 text-sm font-semibold text-gray-100 transition-colors hover:bg-white/10 hover:text-white focus:bg-primary-700 focus:text-white focus:outline-hidden focus:ring-2 focus:ring-primary-300 focus:ring-offset-2 focus:ring-offset-gray-950">
                             <span>{{ .Name }}</span>
                             <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}"
                                  class="ml-1 mt-0.5 h-4 w-4 transition-transform duration-200">
@@ -79,7 +79,7 @@
                              class="absolute right-0 z-30 mt-3 w-56 origin-top-right">
                             <div class="rounded-2xl border border-gray-200/80 bg-white px-2 py-2 text-primary-900 shadow-2xl">
                                 {{ range (index site.Menus .Identifier) }}
-                                <a class="mt-0 block rounded-xl bg-transparent px-4 py-2 text-sm font-semibold hover:bg-primary-600 hover:text-white focus:bg-primary-600 focus:text-white focus:outline-hidden focus:ring-2 focus:ring-primary-300 focus:ring-offset-2 focus:ring-offset-gray-950"
+                                <a class="mt-0 block rounded-xl bg-transparent px-4 py-2 text-sm font-semibold hover:bg-primary-800 hover:text-white focus:bg-primary-700 focus:text-white focus:outline-hidden focus:ring-2 focus:ring-primary-300 focus:ring-offset-2 focus:ring-offset-gray-950"
                                    href="{{ if hasPrefix .URL "/" }}{{ .URL | relLangURL }}{{ else }}{{ .URL }}{{ end }}">{{- .Name -}}</a>
                                 {{ end }}
                             </div>
@@ -106,7 +106,7 @@
             </button>
             <div class="hidden md:flex md:min-w-60 md:justify-end">
                 <div class="flex items-center gap-1 rounded-full border border-white/10 bg-white/6 px-2 py-1 shadow-[0_10px_30px_rgba(0,0,0,0.18)]">
-                    <a href="{{ "/search" | relLangURL }}" class="flex h-10 w-10 items-center justify-center rounded-full text-gray-300 transition-colors hover:bg-white/10 hover:text-white focus:bg-primary-600 focus:text-white focus:outline-hidden" title="{{ $searchLabel }}">
+                    <a href="{{ "/search" | relLangURL }}" class="flex h-10 w-10 items-center justify-center rounded-full text-gray-300 transition-colors hover:bg-white/10 hover:text-white focus:bg-primary-700 focus:text-white focus:outline-hidden" title="{{ $searchLabel }}">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M21 21l-6-6m2-5a7 7 0 1 1-14 0 7 7 0 0 1 14 0z"></path>
                         </svg>
@@ -133,7 +133,7 @@
             {{ if (eq "complexdropdown" .Pre) }}
             <div @click.away="open = false" class="relative" x-data="{ open: false }">
                 <button type="button" @click="open = !open" :aria-expanded="open" aria-haspopup="true"
-                        class="flex w-full flex-row items-center justify-between rounded-2xl border border-white/5 bg-white/4 px-4 py-3 text-sm font-semibold text-left text-gray-100 transition-colors dark:focus:text-white dark:hover:text-white dark:focus:bg-gray-600 dark:hover:bg-gray-600 hover:bg-white/10 hover:text-white focus:bg-primary-600 focus:text-white focus:outline-hidden focus:ring-2 focus:ring-primary-300 focus:ring-offset-2 focus:ring-offset-gray-950">
+                        class="flex w-full flex-row items-center justify-between rounded-2xl border border-white/5 bg-white/4 px-4 py-3 text-sm font-semibold text-left text-gray-100 transition-colors dark:focus:text-white dark:hover:text-white dark:focus:bg-gray-600 dark:hover:bg-gray-600 hover:bg-white/10 hover:text-white focus:bg-primary-700 focus:text-white focus:outline-hidden focus:ring-2 focus:ring-primary-300 focus:ring-offset-2 focus:ring-offset-gray-950">
                     <span>{{ .Name }}</span>
                     <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}"
                          class="ml-3 h-4 w-4 transition-transform duration-200">
@@ -152,7 +152,7 @@
                     <div class="rounded-2xl bg-white px-2 pt-2 pb-4 text-zinc-900 shadow-lg">
                         <div class="grid grid-cols-1 gap-4">
                             {{ range (index site.Menus .Identifier) }}
-                            <a class="group row flex items-start rounded-xl bg-transparent p-2 hover:bg-primary-600 hover:text-white focus:bg-primary-700 focus:text-white focus:outline-hidden focus:ring-2 focus:ring-primary-300 focus:ring-offset-2 focus:ring-offset-gray-950"
+                            <a class="group row flex items-start rounded-xl bg-transparent p-2 hover:bg-primary-800 hover:text-white focus:bg-primary-700 focus:text-white focus:outline-hidden focus:ring-2 focus:ring-primary-300 focus:ring-offset-2 focus:ring-offset-gray-950"
                                href="{{ if hasPrefix .URL "/" }}{{ .URL | relLangURL }}{{ else }}{{ .URL }}{{ end }}">
                                 {{ partial "menu-icon.html" (dict "pre" .Pre) }}
                                 <div class="ml-3">
@@ -168,7 +168,7 @@
             {{ else if (eq "dropdown" .Pre) }}
             <div @click.away="open = false" class="relative" x-data="{ open: false }">
                 <button type="button" @click="open = !open" :aria-expanded="open" aria-haspopup="true"
-                        class="flex w-full flex-row items-center justify-between rounded-2xl border border-white/5 bg-white/4 px-4 py-3 text-sm font-semibold text-left text-gray-100 transition-colors hover:bg-white/10 hover:text-white focus:bg-primary-600 focus:text-white focus:outline-hidden focus:ring-2 focus:ring-primary-300 focus:ring-offset-2 focus:ring-offset-gray-950">
+                        class="flex w-full flex-row items-center justify-between rounded-2xl border border-white/5 bg-white/4 px-4 py-3 text-sm font-semibold text-left text-gray-100 transition-colors hover:bg-white/10 hover:text-white focus:bg-primary-700 focus:text-white focus:outline-hidden focus:ring-2 focus:ring-primary-300 focus:ring-offset-2 focus:ring-offset-gray-950">
                     <span>{{ .Name }}</span>
                     <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}"
                          class="ml-3 h-4 w-4 transition-transform duration-200">
@@ -186,7 +186,7 @@
                      class="relative right-0 z-30 mt-2 w-full origin-top-right">
                     <div class="rounded-2xl bg-white px-2 py-2 text-primary-900 shadow-lg">
                         {{ range (index site.Menus .Identifier) }}
-                        <a class="mt-0 block rounded-xl bg-transparent px-4 py-2 text-sm font-semibold hover:bg-primary-600 hover:text-white focus:bg-primary-600 focus:text-white focus:outline-hidden focus:ring-2 focus:ring-primary-300 focus:ring-offset-2 focus:ring-offset-gray-950"
+                        <a class="mt-0 block rounded-xl bg-transparent px-4 py-2 text-sm font-semibold hover:bg-primary-800 hover:text-white focus:bg-primary-700 focus:text-white focus:outline-hidden focus:ring-2 focus:ring-primary-300 focus:ring-offset-2 focus:ring-offset-gray-950"
                            href="{{ if hasPrefix .URL "/" }}{{ .URL | relLangURL }}{{ else }}{{ .URL }}{{ end }}">{{- .Name -}}</a>
                         {{ end }}
                     </div>
@@ -202,7 +202,7 @@
             <div class="mt-4 border-t border-white/10 pt-4">
                 <div class="mb-3 px-2 text-[0.65rem] font-semibold uppercase tracking-[0.28em] text-white/40">{{ $mobileUtilitiesLabel }}</div>
                 <div class="flex flex-wrap items-center gap-2 rounded-2xl bg-white/4 p-2">
-                <a href="{{ "/search" | relLangURL }}" class="flex h-10 w-10 items-center justify-center rounded-full text-gray-300 transition-colors hover:bg-white/10 hover:text-white focus:bg-primary-600 focus:text-white focus:outline-hidden" title="{{ $searchLabel }}">
+                <a href="{{ "/search" | relLangURL }}" class="flex h-10 w-10 items-center justify-center rounded-full text-gray-300 transition-colors hover:bg-white/10 hover:text-white focus:bg-primary-700 focus:text-white focus:outline-hidden" title="{{ $searchLabel }}">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M21 21l-6-6m2-5a7 7 0 1 1-14 0 7 7 0 0 1 14 0z"></path>
                     </svg>
