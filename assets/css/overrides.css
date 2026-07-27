@@ -179,6 +179,8 @@
 
 /* ============================================================
    Print stylesheet — perfil de pesquisador, publicações etc.
+   Reduced motion vive em main.css (Tailwind 4 minifier remove
+   @media órfão quando declarado aqui — investigado 2026-07).
    ============================================================ */
 @media print {
   /* Cores neutras, sem gradientes/backgrounds decorativos */
