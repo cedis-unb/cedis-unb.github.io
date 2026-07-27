@@ -10,6 +10,21 @@ if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localS
 
 var themeToggleBtn = document.getElementById('theme-toggle');
 
+// Aplica dark + scheme-* em sincronia. scheme-* (Tailwind 4) faz controles
+// nativos do UA (scrollbar, campos, popovers) acompanharem o tema.
+function applyDarkMode(isDark) {
+    var root = document.documentElement;
+    if (isDark) {
+        root.classList.add('dark');
+        root.classList.add('scheme-dark');
+        root.classList.remove('scheme-light');
+    } else {
+        root.classList.remove('dark');
+        root.classList.add('scheme-light');
+        root.classList.remove('scheme-dark');
+    }
+}
+
 themeToggleBtn.addEventListener('click', function() {
 
     // toggle icons inside button
@@ -19,22 +34,22 @@ themeToggleBtn.addEventListener('click', function() {
     // if set via local storage previously
     if (localStorage.getItem('color-theme')) {
         if (localStorage.getItem('color-theme') === 'light') {
-            document.documentElement.classList.add('dark');
+            applyDarkMode(true);
             localStorage.setItem('color-theme', 'dark');
         } else {
-            document.documentElement.classList.remove('dark');
+            applyDarkMode(false);
             localStorage.setItem('color-theme', 'light');
         }
 
     // if NOT set via local storage previously
     } else {
         if (document.documentElement.classList.contains('dark')) {
-            document.documentElement.classList.remove('dark');
+            applyDarkMode(false);
             localStorage.setItem('color-theme', 'light');
         } else {
-            document.documentElement.classList.add('dark');
+            applyDarkMode(true);
             localStorage.setItem('color-theme', 'dark');
         }
     }
-    
+
 });

@@ -56,7 +56,7 @@
         <dl class="mt-4 space-y-3 text-sm">
           <div><dt class="font-semibold">{{ cond $isPt "Ano" "Year" }}</dt><dd class="text-slate-600 dark:text-white/65">{{ .Params.year }}</dd></div>
           <div><dt class="font-semibold">{{ cond $isPt "Tipo" "Type" }}</dt><dd class="text-slate-600 dark:text-white/65">{{ .Params.publication_type }}</dd></div>
-          {{ with .Params.source_title }}{{ if . }}<div><dt class="font-semibold">{{ cond $isPt "Fonte" "Source" }}</dt><dd class="text-slate-600 dark:text-white/65">{{ . }}</dd></div>{{ end }}{{ end }}
+          {{ with .Params.source_title }}{{ if . }}<div><dt class="font-semibold">{{ cond $isPt "Fonte" "Source" }}</dt><dd class="wrap-break-word text-slate-600 dark:text-white/65">{{ . }}</dd></div>{{ end }}{{ end }}
           {{ with .Params.doi_isbn }}{{ if . }}<div><dt class="font-semibold">DOI/ISBN</dt><dd class="wrap-break-word text-slate-600 dark:text-white/65">{{ . }}</dd></div>{{ end }}{{ end }}
         </dl>
       </div>
