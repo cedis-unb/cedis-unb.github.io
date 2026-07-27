@@ -14,11 +14,12 @@
    ============================================================ */
 
 :root {
-  /* Marca — token único para o vermelho de perfil.
-     Se a decisão de marca oficializar #E82C0C (accent.DEFAULT), basta trocar aqui. */
-  --brand-accent:        #c5272f;
-  --brand-accent-strong: #b91c1c;
-  --brand-primary:       #51c5cf;
+  /* Marca — vinculada aos tokens Tailwind CSS 4 (main.css @theme).
+     Fase 3 (2026-07-27): remove duplicidade — antes eram hex literais
+     desvinculados dos tokens do design system. */
+  --brand-accent:        var(--color-accent-550);  /* #C5272F — variante de perfil */
+  --brand-accent-strong: #b91c1c;                  /* red-700 — sem equivalente na paleta CEDIS */
+  --brand-primary:       var(--color-primary-500); /* #51C5CF */
 
   /* Superfície e tipografia do perfil (light) */
   --rp-heading:          #111827;
