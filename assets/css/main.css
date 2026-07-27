@@ -162,6 +162,25 @@
     color: white !important;
 }
 
+/* Reduced motion — respeita prefers-reduced-motion do sistema.
+   Reduz drasticamente animações/transições em vez de removê-las
+   por completo (auxilia usuários com sensibilidade vestibular
+   sem quebrar affordances que dependem de transições curtas).
+   Envolvido em @layer base para que Tailwind 4 preserve — sem
+   isso o minifier remove regras que não têm utility associada. */
+@layer base {
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
 /* Overrides globais + @media print (ver overrides.css). */
 @import "./overrides.css";
 
