@@ -49,8 +49,8 @@ O Google Analytics só é carregado quando o navegador não sinaliza **Do Not Tr
 Além de respeitar automaticamente os sinais Do Not Track e Global Privacy Control, você pode recusar explicitamente o Google Analytics neste navegador. A escolha é armazenada apenas localmente (`localStorage`) e vale para este dispositivo/navegador.
 
 <div id="cedis-optout-widget" class="mt-3 rounded-xl border border-slate-200 bg-slate-50 p-4 text-sm dark:border-white/10 dark:bg-white/5">
-  <p id="cedis-optout-status" class="mb-3 font-semibold"></p>
-  <button id="cedis-optout-toggle" type="button" class="rounded-full bg-primary-700 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-primary-800"></button>
+  <p id="cedis-optout-status" class="mb-3 font-semibold" aria-live="polite" role="status">O Google Analytics está ativo neste navegador (com anonimização de IP e respeito a DNT/GPC).</p>
+  <button id="cedis-optout-toggle" type="button" class="rounded-full bg-primary-700 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-primary-800">Recusar analytics</button>
 </div>
 <script>
   (function () {
