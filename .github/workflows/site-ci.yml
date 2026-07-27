@@ -118,7 +118,7 @@ jobs:
 
       - name: Upload lychee report
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: lychee-report
           path: lychee-report.md
@@ -127,7 +127,7 @@ jobs:
 
       - name: Upload pa11y report
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: pa11y-report
           path: pa11y-report.json
@@ -136,7 +136,7 @@ jobs:
 
       - name: Upload Lighthouse report
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: lhci-report
           path: lhci-report
@@ -145,7 +145,7 @@ jobs:
 
       - name: Upload content validation report
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: content-validation-report
           path: content-validation-report.md
@@ -154,7 +154,7 @@ jobs:
 
       - name: Upload i18n validation report
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: i18n-validation-report
           path: i18n-validation-report.md
@@ -163,7 +163,7 @@ jobs:
 
       - name: Upload built site
         if: success()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: site-public
           path: public
