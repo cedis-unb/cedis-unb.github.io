@@ -27,6 +27,93 @@
   }
 
 /* ============================================================
+   .pub-cover — capa visual dinâmica de publicações
+   (partial layouts/partials/publication-cover.html)
+   ------------------------------------------------------------
+   Substitui a falta de featured_image por card colorido com
+   ícone SVG + ano + tipo. Cores derivam dos tokens Tailwind
+   4 CSS-first (@theme em main.css), com override dark preservado.
+   ============================================================ */
+
+.pub-cover {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  aspect-ratio: 4 / 5;
+  width: 100%;
+  max-width: 8rem;
+  flex-shrink: 0;
+  padding: 0.75rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: transform 200ms ease;
+}
+
+.pub-cover__icon {
+  width: 3rem;
+  height: 3rem;
+  margin-top: 0.5rem;
+  color: var(--pub-cover-accent);
+}
+
+.pub-cover__year {
+  position: absolute;
+  top: 0.4rem;
+  right: 0.6rem;
+  font-size: 0.68rem;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  color: var(--pub-cover-accent);
+  opacity: 0.85;
+}
+
+.pub-cover__type {
+  text-align: center;
+  font-size: 0.55rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  line-height: 1.2;
+  color: var(--pub-cover-accent);
+  text-transform: uppercase;
+}
+
+/* Cores por família — light mode */
+.pub-cover[data-pub-family="paper"] {
+  --pub-cover-accent: var(--color-primary-700);
+  background: linear-gradient(135deg, var(--color-primary-50), var(--color-primary-100));
+}
+.pub-cover[data-pub-family="book"] {
+  --pub-cover-accent: var(--color-secondary-700);
+  background: linear-gradient(135deg, var(--color-secondary-50), var(--color-secondary-200));
+}
+.pub-cover[data-pub-family="thesis"] {
+  --pub-cover-accent: var(--color-accent-700);
+  background: linear-gradient(135deg, var(--color-accent-50), var(--color-accent-100));
+}
+
+/* Dark mode — mesma família, tons mais escuros com transparência */
+.dark .pub-cover[data-pub-family="paper"] {
+  --pub-cover-accent: var(--color-primary-200);
+  background: linear-gradient(135deg,
+    color-mix(in oklab, var(--color-primary-600) 25%, transparent),
+    color-mix(in oklab, var(--color-primary-800) 40%, transparent));
+}
+.dark .pub-cover[data-pub-family="book"] {
+  --pub-cover-accent: var(--color-secondary-200);
+  background: linear-gradient(135deg,
+    color-mix(in oklab, var(--color-secondary-600) 25%, transparent),
+    color-mix(in oklab, var(--color-secondary-800) 40%, transparent));
+}
+.dark .pub-cover[data-pub-family="thesis"] {
+  --pub-cover-accent: var(--color-accent-200);
+  background: linear-gradient(135deg,
+    color-mix(in oklab, var(--color-accent-550) 28%, transparent),
+    color-mix(in oklab, var(--color-accent-800) 50%, transparent));
+}
+
+/* ============================================================
    Print stylesheet — perfil de pesquisador, publicações etc.
    ============================================================ */
 @media print {
