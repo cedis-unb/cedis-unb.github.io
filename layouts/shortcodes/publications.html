@@ -260,17 +260,20 @@
               class="{{ $itemCardClass }}">
             <div class="flex flex-col gap-5">
               <div class="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
-                <div class="space-y-3">
-                  {{ if ne $authorsText "" }}
-                  <p class="m-0 text-xl font-black leading-tight text-gray-950 dark:text-white">{{ $authorsText }}</p>
-                  {{ end }}
-                  <p class="m-0 text-base leading-7 text-gray-600 dark:text-white/75">{{ if .url }}<a href="{{ .url }}" target="_blank" rel="noopener noreferrer" class="{{ $titleLinkClass }}">{{ end }}{{ index .title $.Site.Language.Lang }}{{ if .url }}</a>{{ end }}</p>
-                  {{ if gt (len $detailParts) 0 }}
-                  <p class="m-0 text-sm leading-6 text-gray-500 dark:text-white/60">{{ delimit $detailParts " • " }}</p>
-                  {{ end }}
+                <div class="flex flex-1 gap-4">
+                  {{ partial "publication-cover.html" (dict "type" .type "year" .year "lang" $.Site.Language.Lang) }}
+                  <div class="min-w-0 flex-1 space-y-3">
+                    {{ if ne $authorsText "" }}
+                    <p class="m-0 text-xl font-black leading-tight text-gray-950 dark:text-white">{{ $authorsText }}</p>
+                    {{ end }}
+                    <p class="m-0 text-base leading-7 text-gray-600 dark:text-white/75">{{ if .url }}<a href="{{ .url }}" target="_blank" rel="noopener noreferrer" class="{{ $titleLinkClass }}">{{ end }}{{ index .title $.Site.Language.Lang }}{{ if .url }}</a>{{ end }}</p>
+                    {{ if gt (len $detailParts) 0 }}
+                    <p class="m-0 text-sm leading-6 text-gray-500 dark:text-white/60">{{ delimit $detailParts " • " }}</p>
+                    {{ end }}
+                  </div>
                 </div>
                 {{ if .year }}
-                <span class="{{ $yearBadgeClass }}">{{ .year }}</span>
+                <span class="{{ $yearBadgeClass }} self-start">{{ .year }}</span>
                 {{ end }}
               </div>
 
