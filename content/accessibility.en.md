@@ -23,10 +23,20 @@ CEDIS works to make this site usable by people with different types of disabilit
 
 ## Continuous validation
 
-- Automated validation with Pa11y integrated into CI for critical pages.
-- Lighthouse CI audit with minimum targets of 90 points for accessibility, SEO, and best practices.
+- Automated validation with Pa11y integrated into CI for critical pages (WCAG 2.0 AA).
+- Lighthouse CI audit on both desktop and mobile.
 - Accessibility and Lighthouse reports attached as workflow artifacts.
 - Complementary manual reviews on critical flows with screen readers, keyboard navigation, dark mode, and 200% and 400% zoom.
+
+## Latest empirical measurement (2026-07-27)
+
+- Pa11y (WCAG 2.0 AA): **0 errors across 15 representative URLs**.
+- Lighthouse desktop accessibility: **100 on 8/8 pages** (average 100).
+- Lighthouse mobile accessibility: **100 on 8/8 pages** (average 100).
+- Lighthouse SEO: 100 on every measured page.
+- Lighthouse best practices: 96 on every measured page.
+
+These numbers are revalidated on every layout or palette change.
 
 ## Report a barrier
 

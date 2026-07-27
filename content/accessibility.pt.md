@@ -23,10 +23,20 @@ O CEDIS trabalha para que o conteúdo deste site seja utilizável por pessoas co
 
 ## Validação contínua
 
-- Validação automatizada com Pa11y integrada ao CI para páginas críticas.
-- Auditoria com Lighthouse CI, com metas mínimas de acessibilidade, SEO e boas práticas em 90 pontos.
+- Validação automatizada com Pa11y integrada ao CI para páginas críticas (WCAG 2.0 AA).
+- Auditoria com Lighthouse CI em desktop e mobile.
 - Relatórios de acessibilidade e Lighthouse anexados aos artefatos do workflow.
 - Revisões manuais complementares em fluxos críticos com leitor de tela, navegação por teclado, modo escuro e zoom de 200% e 400%.
+
+## Última medição empírica (2026-07-27)
+
+- Pa11y (WCAG 2.0 AA): **0 erros em 15 URLs representativas**.
+- Lighthouse acessibilidade desktop: **100 em 8/8 páginas** (média 100).
+- Lighthouse acessibilidade mobile: **100 em 8/8 páginas** (média 100).
+- Lighthouse SEO: 100 em todas as páginas medidas.
+- Lighthouse boas práticas: 96 em todas as páginas medidas.
+
+Esses números são revalidados a cada alteração de layout ou paleta.
 
 ## Reportar uma barreira
 

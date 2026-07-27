@@ -123,7 +123,8 @@ reescritos por `scripts/build_publications.py` e checados com
 | `npm run build` | Build de produção + Pagefind. Saída em `docs/`. |
 | `npm run update-i18n` | Executa `scripts/update_i18n.py` (mantém sincronia entre `i18n/pt.yaml` e `i18n/en.yaml`). |
 | `npm run audit:a11y` | Roda `pa11y-ci` (site precisa estar servido em 4173). |
-| `npm run audit:lighthouse` | Roda `lhci autorun` (site precisa estar servido em 4173). |
+| `npm run audit:lighthouse` | Roda `lhci autorun` **desktop** (site precisa estar servido em 4173). |
+| `npm run audit:lighthouse-mobile` | Roda `lhci autorun` **mobile** (site precisa estar servido em 4173; requer Chrome instalado). |
 | `npm test` | Checa publicações geradas, dados de conteúdo e paridade PT/EN. |
 
 ## Convenções e governança
