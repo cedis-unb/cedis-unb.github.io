@@ -98,7 +98,7 @@
   {{ end }}
 
   {{ if $isKnowledgeAreasView }}
-    <div class="not-prose mt-6 grid gap-5 md:grid-cols-2">
+    <div class="@container not-prose mt-6 grid gap-5 @xl:grid-cols-2">
       {{ range $matches }}
         {{ $cardPage := . }}
         {{ $summary := .Params.summary | default (.Summary | plainify | htmlUnescape | strings.TrimSpace) }}
