@@ -82,8 +82,8 @@ jobs:
       - name: Build Pagefind index
         run: npx --no-install pagefind --site public
 
-      - name: Start local audit server
-        run: python3 -m http.server 4173 --directory public > /tmp/cedis-site-ci-http.log 2>&1 &
+      - name: Start local audit server (com gzip nativo — python http.server distorce Lighthouse)
+        run: npx --yes serve public -l 4173 --no-clipboard > /tmp/cedis-site-ci-http.log 2>&1 &
 
       - name: Wait for local audit server
         run: |

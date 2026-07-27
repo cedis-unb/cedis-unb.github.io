@@ -61,7 +61,7 @@ authorimage: ../assets/images/global/author.webp
 <button type="button" @click="showPrevious = !showPrevious" class="flex w-full items-center justify-between gap-6 px-6 py-6 text-left transition-colors hover:bg-black/2 dark:hover:bg-white/2 md:px-8 md:py-7">
 <div>
 <span class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-gray-400 dark:text-white/72">Memória do grupo</span>
-<h2 id="former-collaborators-title" class="mt-3 text-3xl font-black tracking-tight text-gray-950 dark:text-white md:text-4xl">Alumni</h2>
+<h3 id="former-collaborators-title" class="mt-3 text-3xl font-black tracking-tight text-gray-950 dark:text-white md:text-4xl">Alumni</h3>
 </div>
 <svg :class="{'rotate-180': showPrevious, 'rotate-0': !showPrevious}" class="h-6 w-6 shrink-0 transform text-primary-600 transition-transform duration-200 dark:text-primary-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
 </button>

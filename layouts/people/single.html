@@ -143,7 +143,7 @@
 
 {{ if and $isResearcher (gt $formerSupervisionCount 0) (in $content `id="former-collaborators-title"`) }}
   {{ $formerSupervisionCountBadge := printf `<span class="ml-2 inline-flex items-center rounded-full border border-primary-200 bg-primary-50 px-2.5 py-1 text-sm font-black text-primary-700 dark:border-primary-400/25 dark:bg-primary-500/10 dark:text-primary-100">%d</span>` $formerSupervisionCount }}
-  {{ $content = replaceRE `(?s)(<h2 id="former-collaborators-title"[^>]*>.*?)(<svg)` (printf `${1}%s${2}` $formerSupervisionCountBadge) $content 1 }}
+  {{ $content = replaceRE `(?s)(<h3 id="former-collaborators-title"[^>]*>.*?)(<svg)` (printf `${1}%s${2}` $formerSupervisionCountBadge) $content 1 }}
 {{ end }}
 
 {{ if and $isResearcher (or (in $content `id="orientações-atuais"`) (in $content `id="current-supervisions"`)) (in $content `id="previous-collaborators"`) (not (in $content `id="current-supervisions-section"`)) }}
