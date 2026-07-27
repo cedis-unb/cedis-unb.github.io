@@ -5,7 +5,7 @@
 <article x-show="audience === '' || '|{{ $audienceJoin }}|'.includes('|' + audience + '|')" class="rounded-3xl border border-slate-200 bg-white/90 p-5 shadow-xs dark:border-white/10 dark:bg-white/4">
   <div class="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
     <div class="min-w-0">
-      <div class="flex flex-wrap gap-2 text-xs font-semibold uppercase tracking-[0.16em] text-slate-500 dark:text-white/60">
+      <div class="flex flex-wrap gap-2 text-xs font-semibold uppercase tracking-[0.16em] text-slate-600 dark:text-white/60">
         <span>{{ cond (eq $item.status "open") (cond $isPt "Aberta" "Open") (cond $isPt "Arquivada" "Archived") }}</span>
         <span aria-hidden="true">·</span>
         <span>{{ $item.deadline.Format (cond $isPt "02/01/2006" "02 Jan 2006") }}</span>

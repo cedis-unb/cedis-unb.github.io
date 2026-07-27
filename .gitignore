@@ -5,6 +5,8 @@ public/
 tmp/
 .claude/
 .lighthouseci/
+lhci-report/
+lhci-report-mobile/
 .hugo_build.lock
 .hugo-server/
 # Gerado por [build.buildStats] no hugo.yaml — Tailwind 4 consome via @source.
