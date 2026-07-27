@@ -107,7 +107,34 @@
   <div class="absolute inset-x-0 top-0 h-px bg-linear-to-r from-transparent via-slate-300/70 to-transparent dark:via-white/10"></div>
   <div class="mx-auto max-w-(--breakpoint-xl) px-4 md:px-6 lg:px-8">
     <section class="overflow-visible rounded-2xl border border-slate-200/80 bg-white/90 shadow-xs backdrop-blur dark:border-white/10 dark:bg-white/4"
-             x-data="{ view: 'calendar' }">
+             x-data="{
+               view: 'calendar',
+               pageStart: 0,
+               daysPerPage: 7,
+               totalDays: {{ len $dayKeys }},
+               computePerPage() {
+                 const w = window.innerWidth;
+                 if (w >= 1280) return 7;
+                 if (w >= 1024) return 5;
+                 if (w >= 768)  return 4;
+                 if (w >= 640)  return 3;
+                 if (w >= 480)  return 2;
+                 return 1;
+               },
+               init() {
+                 const update = () => {
+                   this.daysPerPage = this.computePerPage();
+                   const maxStart = Math.max(0, this.totalDays - this.daysPerPage);
+                   if (this.pageStart > maxStart) this.pageStart = maxStart;
+                 };
+                 update();
+                 window.addEventListener('resize', update);
+               },
+               prev() { this.pageStart = Math.max(0, this.pageStart - this.daysPerPage); },
+               next() { this.pageStart = Math.min(Math.max(0, this.totalDays - this.daysPerPage), this.pageStart + this.daysPerPage); },
+               get canPrev() { return this.pageStart > 0; },
+               get canNext() { return this.pageStart + this.daysPerPage < this.totalDays; }
+             }">
       <div class="flex flex-col gap-4 border-b border-slate-200/70 px-5 py-5 dark:border-white/10 md:flex-row md:items-end md:justify-between">
         <div>
           <div class="inline-flex items-center rounded-full border border-primary-300/60 bg-primary-50/80 px-3 py-1 text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-primary-700 dark:border-primary-400/20 dark:bg-primary-500/10 dark:text-primary-200">
@@ -151,10 +178,35 @@
 
       <div x-show="view === 'calendar'" x-cloak class="p-4 sm:p-5">
         {{ if gt (len $dayKeys) 0 }}
-        <div class="overflow-x-auto pb-2">
-          <div class="grid min-w-[58rem] grid-cols-7 gap-3">
-            {{ range $dayKeys }}
-              {{ $dayKey := . }}
+        {{/* Controles de paginação + indicador de janela.
+             Só aparecem quando há mais dias do que cabem na janela atual. */}}
+        <div x-show="totalDays > daysPerPage" class="mb-3 flex flex-wrap items-center justify-between gap-2">
+          <div class="text-xs font-semibold text-slate-600 dark:text-slate-400">
+            <span x-text="`${pageStart + 1}–${Math.min(pageStart + daysPerPage, totalDays)}`"></span>
+            <span class="text-slate-400 dark:text-slate-500"> {{ cond $isPt "de" "of" }} </span>
+            <span x-text="totalDays"></span>
+            <span class="text-slate-400 dark:text-slate-500"> {{ cond $isPt "dias" "days" }}</span>
+          </div>
+          <div class="flex items-center gap-1">
+            <button type="button" @click="prev()" :disabled="!canPrev"
+                    :class="canPrev ? 'text-slate-700 hover:border-primary-400 hover:text-primary-700 dark:text-slate-200 dark:hover:border-primary-400/40' : 'cursor-not-allowed text-slate-300 dark:text-slate-600'"
+                    class="inline-flex h-9 w-9 items-center justify-center rounded-full border border-slate-300/70 bg-white/70 transition-colors focus:outline-hidden focus:ring-2 focus:ring-primary-400 dark:border-white/10 dark:bg-white/4"
+                    :aria-label="'{{ cond $isPt "Dias anteriores" "Previous days" }}'">
+              <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+            </button>
+            <button type="button" @click="next()" :disabled="!canNext"
+                    :class="canNext ? 'text-slate-700 hover:border-primary-400 hover:text-primary-700 dark:text-slate-200 dark:hover:border-primary-400/40' : 'cursor-not-allowed text-slate-300 dark:text-slate-600'"
+                    class="inline-flex h-9 w-9 items-center justify-center rounded-full border border-slate-300/70 bg-white/70 transition-colors focus:outline-hidden focus:ring-2 focus:ring-primary-400 dark:border-white/10 dark:bg-white/4"
+                    :aria-label="'{{ cond $isPt "Próximos dias" "Next days" }}'">
+              <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+            </button>
+          </div>
+        </div>
+        {{/* Grid responsivo: colunas escalam por breakpoint até 7 no xl.
+             Cada dia recebe x-show baseado no pageStart + daysPerPage do
+             Alpine. Sem overflow-x-auto — cabe na largura disponível. */}}
+        <div class="grid grid-cols-1 gap-3 min-[480px]:grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-7">
+            {{ range $dayIdx, $dayKey := $dayKeys }}
               {{ $dayEvents := where $timedEvents "dateKey" $dayKey }}
               {{ $firstEvent := index $dayEvents 0 }}
               {{ $dayName := $firstEvent.date.Format "Mon" }}
@@ -167,7 +219,8 @@
                 {{ $dayName = replace $dayName "Sat" "sáb" }}
                 {{ $dayName = replace $dayName "Sun" "dom" }}
               {{ end }}
-              <div class="rounded-xl border border-slate-200 bg-slate-50/80 p-3 dark:border-white/10 dark:bg-slate-950/30">
+              <div x-show="{{ $dayIdx }} >= pageStart && {{ $dayIdx }} < pageStart + daysPerPage"
+                   class="rounded-xl border border-slate-200 bg-slate-50/80 p-3 dark:border-white/10 dark:bg-slate-950/30">
                 <div class="border-b border-slate-200 pb-2 dark:border-white/10">
                   <div class="text-[0.65rem] font-black uppercase tracking-[0.16em] text-slate-500 dark:text-slate-500">{{ $dayName }}</div>
                   <div class="mt-1 text-sm font-black text-slate-950 dark:text-white">
@@ -176,29 +229,102 @@
                 </div>
                 <ol class="mt-3 space-y-2">
                   {{ range $dayEvents }}
-                  <li class="relative">
+                  {{/* Preview posicionado por viewport (Alpine.js).
+                       Estratégia:
+                         1. Popover é `fixed` — escapa de qualquer overflow
+                            ancestral e é posicionado por coordenadas
+                            absolutas de viewport calculadas no @mouseenter.
+                         2. side flips automaticamente para 'top' se não
+                            houver espaço abaixo do card.
+                         3. left é centralizado no card e clampado às bordas
+                            (min 8px, max viewport - width - 8px).
+                         4. delay curto no leave dá tempo do usuário mover
+                            o cursor para ler ou clicar em links no popover
+                            (mesmo que hoje não haja — reserva UX). */}}
+                  <li class="relative"
+                      x-data="{
+                        open: false,
+                        top: 0, left: 0, side: 'bottom',
+                        leaveTimer: null,
+                        place(trigger) {
+                          this.$nextTick(() => {
+                            const r = trigger.getBoundingClientRect();
+                            const pv = this.$refs.preview;
+                            if (!pv) return;
+                            const pw = pv.offsetWidth || 288;
+                            const ph = pv.offsetHeight || 200;
+                            const vw = window.innerWidth;
+                            const vh = window.innerHeight;
+                            const gap = 10;
+                            let t, s;
+                            if (r.bottom + ph + gap + 8 <= vh) {
+                              t = r.bottom + gap; s = 'bottom';
+                            } else if (r.top - ph - gap - 8 >= 0) {
+                              t = r.top - ph - gap; s = 'top';
+                            } else {
+                              t = Math.max(8, vh - ph - 8); s = 'bottom';
+                            }
+                            let l = r.left + r.width / 2 - pw / 2;
+                            if (l + pw > vw - 8) l = vw - pw - 8;
+                            if (l < 8) l = 8;
+                            this.top = t; this.left = l; this.side = s;
+                          });
+                        },
+                        show(e) {
+                          clearTimeout(this.leaveTimer);
+                          this.open = true;
+                          this.place(e.currentTarget);
+                        },
+                        hide() {
+                          clearTimeout(this.leaveTimer);
+                          this.leaveTimer = setTimeout(() => this.open = false, 120);
+                        }
+                      }">
                     <a href="{{ .url }}"
                        id="agenda-defense-{{ .id }}"
+                       aria-describedby="agenda-defense-preview-{{ .id }}"
+                       @mouseenter="show($event)"
+                       @mouseleave="hide()"
+                       @focus="show($event)"
+                       @blur="hide()"
                        {{ if .devSeed }}@click.prevent="view = 'list'; $nextTick(() => document.getElementById('agenda-defense-details-{{ .id }}')?.scrollIntoView({ block: 'nearest' }))"{{ end }}
-                       class="group block rounded-lg border border-primary-200 bg-white px-3 py-2 text-left shadow-xs transition-colors hover:border-primary-400 hover:bg-primary-50 focus:outline-hidden focus:ring-2 focus:ring-primary-400 dark:border-primary-400/20 dark:bg-white/5 dark:hover:border-primary-300/50 dark:hover:bg-primary-500/10">
+                       class="block rounded-lg border border-primary-200 bg-white px-3 py-2 text-left shadow-xs transition-colors hover:border-primary-400 hover:bg-primary-50 focus:outline-hidden focus:ring-2 focus:ring-primary-400 dark:border-primary-400/20 dark:bg-white/5 dark:hover:border-primary-300/50 dark:hover:bg-primary-500/10">
                       <span class="block text-[0.66rem] font-black uppercase tracking-[0.14em] text-primary-700 dark:text-primary-200">{{ .timeRange }}</span>
                       <span class="mt-1 block text-xs font-bold leading-snug text-slate-950 [display:-webkit-box] [-webkit-box-orient:vertical] [-webkit-line-clamp:2] overflow-hidden dark:text-white">{{ .students }}</span>
                       <span class="mt-1 inline-flex rounded-full bg-slate-100 px-2 py-0.5 text-[0.6rem] font-semibold text-slate-600 dark:bg-white/10 dark:text-slate-300">{{ .typeLabel }}</span>
-                      <span class="pointer-events-none fixed inset-x-4 bottom-4 z-[80] hidden max-h-[70vh] overflow-y-auto rounded-xl border border-slate-200 bg-white p-4 text-left shadow-2xl group-hover:block group-focus:block dark:border-white/10 dark:bg-slate-950 sm:inset-x-auto sm:right-6 sm:bottom-6 sm:w-96">
-                        <span class="block text-[0.65rem] font-black uppercase tracking-[0.16em] text-primary-700 dark:text-primary-200">{{ .timeRange }} · {{ .typeLabel }}</span>
-                        <span class="mt-2 block text-sm font-black leading-snug text-slate-950 dark:text-white">{{ .students }}</span>
-                        <span class="mt-1 block text-xs font-semibold leading-snug text-slate-700 dark:text-slate-300">{{ .title }}</span>
-                        {{ if .advisors }}<span class="mt-2 block text-xs leading-5 text-slate-600 dark:text-slate-400"><strong>{{ i18n "ui_defense_agenda_advisors" }}:</strong> {{ .advisors }}</span>{{ end }}
-                        {{ if .area }}<span class="mt-1 inline-flex rounded-full bg-emerald-50 px-2 py-0.5 text-[0.65rem] font-semibold text-emerald-800 dark:bg-emerald-500/10 dark:text-emerald-100">{{ .area }}</span>{{ end }}
-                        {{ if .summary }}<span class="mt-2 block text-xs leading-5 text-slate-600 [display:-webkit-box] [-webkit-box-orient:vertical] [-webkit-line-clamp:4] overflow-hidden dark:text-slate-400">{{ .summary }}</span>{{ end }}
-                      </span>
                     </a>
+                    <div x-ref="preview"
+                         x-show="open"
+                         x-cloak
+                         x-transition:enter="transition ease-out duration-100"
+                         x-transition:enter-start="opacity-0 scale-95"
+                         x-transition:enter-end="opacity-100 scale-100"
+                         x-transition:leave="transition ease-in duration-75"
+                         x-transition:leave-start="opacity-100 scale-100"
+                         x-transition:leave-end="opacity-0 scale-95"
+                         role="tooltip"
+                         id="agenda-defense-preview-{{ .id }}"
+                         :style="`top:${top}px; left:${left}px;`"
+                         @mouseenter="clearTimeout(leaveTimer); open = true"
+                         @mouseleave="hide()"
+                         class="fixed z-[80] w-72 max-w-[calc(100vw-1rem)] origin-top rounded-xl border border-slate-200 bg-white p-4 text-left shadow-2xl dark:border-white/10 dark:bg-slate-950">
+                      <div class="text-[0.65rem] font-black uppercase tracking-[0.16em] text-primary-700 dark:text-primary-200">{{ .timeRange }} · {{ .typeLabel }}</div>
+                      <div class="mt-2 text-sm font-black leading-snug text-slate-950 dark:text-white">{{ .students }}</div>
+                      {{ with .title }}<div class="mt-1 text-xs font-semibold leading-snug text-slate-700 dark:text-slate-300">{{ . }}</div>{{ end }}
+                      {{ with .advisors }}<div class="mt-2 text-xs leading-5 text-slate-600 dark:text-slate-400"><strong>{{ i18n "ui_defense_agenda_advisors" }}:</strong> {{ . }}</div>{{ end }}
+                      {{ if or .area .location }}
+                      <div class="mt-2 flex flex-wrap gap-1.5">
+                        {{ with .area }}<span class="rounded-full bg-emerald-50 px-2 py-0.5 text-[0.65rem] font-semibold text-emerald-800 dark:bg-emerald-500/10 dark:text-emerald-100">{{ . }}</span>{{ end }}
+                        {{ with .location }}<span class="rounded-full bg-slate-100 px-2 py-0.5 text-[0.65rem] font-semibold text-slate-700 dark:bg-white/10 dark:text-slate-300">{{ . }}</span>{{ end }}
+                      </div>
+                      {{ end }}
+                      {{ with .summary }}<div class="mt-2 text-xs leading-5 text-slate-600 [display:-webkit-box] [-webkit-box-orient:vertical] [-webkit-line-clamp:4] overflow-hidden dark:text-slate-400">{{ . }}</div>{{ end }}
+                    </div>
                   </li>
                   {{ end }}
                 </ol>
               </div>
             {{ end }}
-          </div>
         </div>
         {{ else }}
         <div class="rounded-xl border border-dashed border-slate-300 bg-slate-50 px-4 py-6 text-sm text-slate-600 dark:border-white/10 dark:bg-white/4 dark:text-slate-300">
