@@ -1897,7 +1897,7 @@ items:
       - daniel_sundfeld
     url: https://www.bdm.unb.br/handle/10483/39151
     defense_date: 2023-07-27
-    year: 2022
+    year: 2023
     defesa_id: lucas-wictor-2023-07-27
   - authors:
       - Lucas Lopes Xavier
@@ -7972,7 +7972,7 @@ items:
       - george_marsicano
     url: https://bdm.unb.br/handle/10483/6967
     defense_date: 2014-01-28
-    year: 2013
+    year: 2014
     defesa_id: maylon-brito-2014-01-28
   - authors:
       - Artur Potiguara Carvalho
@@ -8777,8 +8777,10 @@ items:
       pt: 'Git Ranking: Desenvolvimento de uma aplicação gamificada de gestão e motivação de equipes ágeis para o GitHub App'
       en: 'Git Ranking: Developing a Gamified Application for Managing and Motivating Agile Teams as a GitHub App'
     summary:
-      pt: ''
-      en: ''
+      pt: >-
+        O presente trabalho aborda os desafios enfrentados por equipes de desenvolvimento de software em manter o engajamento contínuo e a visibilidade do progresso individual dentro de metodologias ágeis. O objetivo principal é desenvolver uma ferramenta gamificada de apoio ao Scrum, concebida como um GitHub App integrado para gestão e motivação de equipes, integrando elementos do framework Octalysis para equilibrar motivadores intrínsecos e extrínsecos. A metodologia adotada classifica-se como aplicada e exploratória, com abordagem mista. O processo metodológico incluiu a identificação do perfil motivacional dos usuários através do Inventário de Motivação Intrínseca (IMI), correlacionando-o aos Core Drives do Octalysis, e a seleção de técnicas de gamificação via Técnica de Juízes. Como resultados, o trabalho apresenta a especificação dos requisitos funcionais priorizados pelo método MoSCoW, a arquitetura da solução baseada no consumo de Webhooks do GitHub processados via backend Node.js e apresentados em uma interface React/Next.js. Foram desenvolvidos protótipos de alta fidelidade que materializam a proposta, focando em um dashboard de métricas e perfil de conquistas com elementos de gamificação, como insígnias, barras de progresso e feedback visual contínuo baseado nas ações reais dos desenvolvedores nos repositórios. O estudo conclui a etapa de planejamento e design da solução, estabelecendo as bases para a implementação e validação que ocorrerão na próxima fase do projeto.
+      en: >-
+        This work addresses the challenges faced by software development teams in maintaining continuous engagement and the visibility of individual progress within agile methodologies. The main objective is to develop a gamified tool to support Scrum, designed as an integrated GitHub App for team management and motivation, integrating elements of the Octalysis framework to balance intrinsic and extrinsic motivators. The adopted methodology is classified as applied and exploratory, with a mixed approach. The methodological process included identifying the users' motivational profile through the Intrinsic Motivation Inventory (IMI), correlating it to the Core Drives of Octalysis, and selecting gamification techniques via the Judges' Technique. As results, the work presents the specification of functional requirements prioritized by the MoSCoW method, the solution architecture based on the consumption of GitHub Webhooks processed via a Node.js backend and presented in a React/Next.js interface. High-fidelity prototypes were developed to materialize the proposal, focusing on a metrics dashboard and achievements profile with gamification elements, such as badges, progress bars, and continuous visual feedback based on the actual actions of developers in the repositories. The study concludes the planning and design stage of the solution, establishing the foundations for the implementation and validation that will occur in the next phase of the project.
     book_title: ''
     volume: ''
     doi_isbn: ''
@@ -8799,7 +8801,7 @@ items:
       pt: https://github.com/CedisUnB/GitRanking
       en: https://github.com/CedisUnB/GitRanking
     defense_date: 2026-07-14
-    year: 2025
+    year: 2026
     defesa_id: ana-beatriz-2026-07-14
   - authors:
       - Geovanna Maciel Avelino da Costa
@@ -8808,8 +8810,10 @@ items:
       pt: 'Atloria: Uma plataforma gamificada para visualização de estrutura de dados em realidade aumentada'
       en: 'Atloria: A Gamified Platform for Data Structure Visualization in Augmented Reality'
     summary:
-      pt: ''
-      en: ''
+      pt: >-
+        A aprendizagem de estruturas de dados e algoritmos é um dos desafios recorrentes nos cursos da área de computação, uma vez que envolve a compreensão de conceitos abstratos, operações dinâmicas e formas específicas de organização da informação. Estruturas como pilhas, filas e listas encadeadas exigem que o estudante desenvolva modelos mentais capazes de representar inserções, remoções, buscas e mudanças de estado que nem sempre são facilmente compreendidas por meio de abordagens tradicionais. Nesse contexto, este trabalho teve como objetivo desenvolver e avaliar a Atloria, uma aplicação móvel educacional que utiliza realidade aumentada e gamificação para apoiar o ensino-aprendizagem de estruturas de dados. A solução foi planejada com base em revisão de literatura, elicitação e priorização de requisitos, modelagem de dados, definição arquitetural e construção de um protótipo funcional. A aplicação foi desenvolvida para dispositivos Android, integrando Flutter, SQLite, Unity e AR Foundation, e contempla recursos como autenticação, onboarding, salas temáticas, narrativas, mini missões, passaporte de conquistas, feedback imediato e visualização interativa em realidade aumentada. A experiência proposta organiza o aprendizado em uma jornada gamificada, na qual o usuário interage com representações visuais das estruturas de dados e acompanha sua progressão por meio de recompensas simbólicas e registros de desempenho. A validação incluiu testes técnicos, análise de qualidade, testes funcionais e avaliação com usuários, permitindo verificar o funcionamento das principais funcionalidades implementadas e coletar percepções sobre usabilidade, engajamento e aprendizagem. Os resultados indicaram uma avaliação positiva da experiência, especialmente quanto à organização visual, facilidade de uso e interesse gerado pelos elementos gamificados. Conclui-se que a integração entre realidade aumentada e gamificação apresenta potencial como recurso didático complementar para tornar o estudo de estruturas de dados mais visual, interativo e motivador.
+      en: >-
+        Learning data structures and algorithms is a recurring challenge in computing-related courses, as it requires the understanding of abstract concepts, dynamic operations, and specific ways of organizing information. Structures such as stacks, queues, and linked lists require students to develop mental models capable of representing insertions, removals, searches, and state changes that are not always easily understood through traditional teaching approaches. In this context, this undergraduate thesis aimed to develop and evaluate Atloria, an educational mobile application that uses augmented reality and gamification to support the teaching and learning of data structures. The solution was designed based on a literature review, requirements elicitation and prioritization, data modeling, architectural definition, and the construction of a functional prototype. The application was developed for Android devices, integrating Flutter, SQLite, Unity, and AR Foundation, and includes features such as authentication, onboarding, thematic rooms, narratives, mini missions, an achievement passport, immediate feedback, and interactive visualization through augmented reality. The proposed experience organizes learning as a gamified journey, in which users interact with visual representations of data structures and track their progress through symbolic rewards and performance records. The validation process included technical tests, software quality analysis, functional tests, and user evaluation, making it possible to verify the operation of the main implemented features and collect perceptions regarding usability, engagement, and learning. The results indicated a positive evaluation of the experience, especially regarding visual organization, ease of use, and the interest generated by the gamified elements. It is concluded that the integration of augmented reality and gamification has potential as a complementary didactic resource to make the study of data structures more visual, interactive, and motivating.
     book_title: ''
     volume: ''
     doi_isbn: ''
@@ -8843,8 +8847,10 @@ items:
       pt: Gamificação como estratégia de ensino da identificação de code smells
       en: Gamification as a Teaching Strategy for Code Smell Identification
     summary:
-      pt: ''
-      en: ''
+      pt: >-
+        Este trabalho aborda a dificuldade recorrente de estudantes de programação em identificar code smells, um desafio que compromete a compreensão, a manutenção e a evolução de sistemas de software. O objetivo central é propor uma solução gamificada que apoie o aprendizado e torne o processo de detecção desses problemas mais acessível e motivador. A metodologia adotada segue uma abordagem qualitativa, com caráter exploratório, descritivo e aplicado, integrando pesquisa bibliográfica e estudo de caso. O percurso metodológico incluiu a análise contextual, a definição de perfis motivacionais, a ideação e prototipagem das mecânicas, seguida por testes de usabilidade, observação do uso da aplicação e registro das etapas e resultados obtidos. A plataforma proposta permitirá que estudantes pratiquem a identificação de code smells em cenários simulados, recebam feedback imediato e avancem em desafios progressivos.
+      en: >-
+        This paper addresses the recurring difficulty faced by programming students in identifying code smells, a challenge that affects the understanding, maintenance, and evolution of software systems. The main goal is to propose a gamified solution that supports learning and makes the detection of these issues more accessible and motivating. The methodology follows a qualitative approach with exploratory, descriptive, and applied characteristics, integrating bibliographic research and a case study. The methodological process included contextual analysis, definition of motivational profiles, ideation and prototyping of mechanics, followed by usability tests, observation of the application's use, and documentation of all stages and results. The proposed platform will allow students to practice identifying code smells in simulated scenarios, receive immediate feedback, and progress through incremental challenges.
     book_title: ''
     volume: ''
     doi_isbn: ''
