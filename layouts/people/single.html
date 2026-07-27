@@ -675,7 +675,7 @@
               type="button"
               @click="navigator.clipboard.writeText('{{ $contactEmail }}').then(() => { copied=true; setTimeout(()=>copied=false, 2000) })"
               :aria-label="copied ? '{{ i18n "ui_copy_email_copied" }}' : '{{ i18n "ui_copy_email" }}'"
-              class="inline-flex shrink-0 items-center rounded-full border border-black/10 bg-white px-2.5 py-1 text-[0.7rem] font-semibold uppercase tracking-[0.14em] text-gray-700 transition-colors hover:border-primary-300 hover:text-primary-700 focus:outline-none focus:ring-2 focus:ring-primary-400 focus:ring-offset-2 dark:border-white/10 dark:bg-white/6 dark:text-white/80 dark:hover:border-primary-300/60 dark:hover:text-primary-100 dark:focus:ring-offset-gray-900">
+              class="inline-flex shrink-0 items-center rounded-full border border-black/10 bg-white px-2.5 py-1 text-[0.7rem] font-semibold uppercase tracking-[0.14em] text-gray-700 transition-colors hover:border-primary-300 hover:text-primary-700 focus:outline-hidden focus:ring-2 focus:ring-primary-400 focus:ring-offset-2 dark:border-white/10 dark:bg-white/6 dark:text-white/80 dark:hover:border-primary-300/60 dark:hover:text-primary-100 dark:focus:ring-offset-gray-900">
               <span x-text="copied ? 'OK' : '{{ i18n "ui_copy_email" }}'"></span>
             </button>
           </div>
