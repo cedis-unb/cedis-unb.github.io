@@ -12,7 +12,7 @@ publication_index: 313
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis
-year: 2025/2
+year: 2025
 authors:
 - Ana Beatriz Norberto da Silva
 - Beatriz Vieira Nascimento
@@ -38,12 +38,12 @@ external_url: ''
 spotify_podcast: ''
 github_repo: https://github.com/CedisUnB/GitRanking
 zenodo_record: ''
-summary: Tcc by Ana Beatriz Norberto da Silva, Beatriz Vieira Nascimento (2025/2).
+summary: Tcc by Ana Beatriz Norberto da Silva, Beatriz Vieira Nascimento (2025).
 bibtex: "@mastersthesis{2025-ana-beatriz-norberto-da-silva-git-ranking-desenvolvimento-de-uma-aplicacao-gamificada,\n\
   \  author = {Ana Beatriz Norberto da Silva and Beatriz Vieira Nascimento},\n  title\
   \ = {Git Ranking: Developing a Gamified Application for Managing and Motivating\
-  \ Agile Teams as a GitHub App},\n  year = {2025/2},\n  publisher = {Universidade\
-  \ de Brasília},\n  address = {Brasília, DF}\n}"
+  \ Agile Teams as a GitHub App},\n  year = {2025},\n  publisher = {Universidade de\
+  \ Brasília},\n  address = {Brasília, DF}\n}"
 aliases:
 - /publications/2025-ana-beatriz-norberto-da-silva-git-ranking-desenvolvimento-de-uma-aplicacao-gamificada/
 ---

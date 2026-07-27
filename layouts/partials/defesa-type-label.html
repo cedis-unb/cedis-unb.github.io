@@ -1,0 +1,21 @@
+{{/*
+  defesa-type-label.html — resolve rótulo bilíngue para o campo `type` de
+  data/defesas.yaml. Rótulos EXPLÍCITOS por marco acadêmico (evita confusão
+  entre TCC/Tese/Dissertação — pedido explícito de Sergio em 2026-07).
+
+  Entrada: dict "type" "lang"
+  Saída  : string com o rótulo localizado (sem HTML).
+*/}}
+{{- $labels := dict
+  "tcc1"               (dict "pt" "TCC1 (proposta)"                  "en" "TCC1 (proposal)")
+  "tcc"                (dict "pt" "TCC (final)"                       "en" "Undergraduate thesis")
+  "qualification"      (dict "pt" "Qualificação de mestrado"          "en" "Master's qualification")
+  "dissertation"       (dict "pt" "Dissertação de mestrado"           "en" "Master's dissertation")
+  "phd_qualification"  (dict "pt" "Qualificação de doutorado"         "en" "PhD qualification")
+  "phd"                (dict "pt" "Tese de doutorado"                 "en" "PhD thesis")
+  "specialization"     (dict "pt" "Trabalho de especialização"        "en" "Specialization work")
+-}}
+{{- $t := .type -}}
+{{- $lang := .lang -}}
+{{- $entry := index $labels $t -}}
+{{- if $entry -}}{{- index $entry $lang -}}{{- else -}}{{- $t -}}{{- end -}}

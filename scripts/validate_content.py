@@ -287,12 +287,18 @@ def validate_people(people_data: dict, advisor_ids: set[str]) -> None:
                     warn("xref", unit_location, f"advisor '{adv_id}' não existe como researcher/advisor_only em content/people")
 
 
-def validate_productions(prod_data: dict, advisor_ids: set[str], person_ids: set[str]) -> None:
+def validate_productions(
+    prod_data: dict,
+    advisor_ids: set[str],
+    person_ids: set[str],
+    defesa_ids: set[str] | None = None,
+) -> None:
     schema = load_schema("publication")
     items = prod_data.get("items", [])
     if not isinstance(items, list):
         error("productions", "data/productions.yaml", "'items' deve ser lista")
         return
+    defesa_types = {"tcc", "dissertation", "phd", "specialization"}
     for i, item in enumerate(items):
         if not isinstance(item, dict):
             continue
@@ -306,6 +312,116 @@ def validate_productions(prod_data: dict, advisor_ids: set[str], person_ids: set
         for person_id in item.get("people", []) or []:
             if person_id not in person_ids:
                 warn("xref", location, f"people '{person_id}' não existe em content/people nem data/people.yaml")
+        # Requisito PLANO-DEFESAS §5: defesa_id obrigatório em tipos de defesa
+        # DENTRO do escopo do modelo (2008+, UnB, advisor CEDIS). Itens fora do
+        # escopo (defesa histórica pré-2008, defesa em outra instituição, ou
+        # sem advisor CEDIS titular) permanecem em productions.yaml como
+        # legados — não exigem defesa_id.
+        if item.get("type") in defesa_types:
+            year = item.get("year")
+            year_int = 0
+            if isinstance(year, int):
+                year_int = year
+            else:
+                try:
+                    year_int = int(str(year)[:4])
+                except (ValueError, TypeError):
+                    year_int = 0
+            in_new_model_scope = year_int >= 2008
+            did = item.get("defesa_id")
+            if in_new_model_scope and not did:
+                # Item potencialmente elegível mas sem defesa_id — pode ser
+                # fora da UnB ou sem advisor CEDIS. Apenas warn.
+                warn(
+                    "defesas",
+                    location,
+                    f"item type={item['type']} sem defesa_id (fora do escopo do modelo novo?)",
+                )
+            elif did and defesa_ids is not None and did not in defesa_ids:
+                error(
+                    "defesas",
+                    location,
+                    f"defesa_id '{did}' não existe em data/defesas.yaml",
+                )
+
+
+_DEFESA_VALID_TYPES = {
+    "tcc",
+    "tcc1",
+    "dissertation",
+    "qualification",
+    "phd",
+    "phd_qualification",
+    "specialization",
+}
+_COMMITTEE_ROLES = {"advisor", "co_advisor", "examiner", "external_examiner", "substitute"}
+
+
+def validate_defesas(defesas_data: object, advisor_ids: set[str]) -> set[str]:
+    """Valida data/defesas.yaml. Retorna conjunto de IDs válidos."""
+    if defesas_data is None:
+        return set()
+    if not isinstance(defesas_data, list):
+        error("defesas", "data/defesas.yaml", "root deve ser lista de defesas")
+        return set()
+    seen_ids: set[str] = set()
+    for i, entry in enumerate(defesas_data):
+        if not isinstance(entry, dict):
+            error("defesas", f"data/defesas.yaml::[{i}]", "cada entrada deve ser objeto")
+            continue
+        did = entry.get("id")
+        location = f"data/defesas.yaml::[{i}] {did or '(sem id)'}"
+        if not did:
+            error("defesas", location, "campo 'id' obrigatório")
+            continue
+        if did in seen_ids:
+            error("defesas", location, f"id duplicado: '{did}'")
+        seen_ids.add(did)
+        # type
+        t = entry.get("type")
+        if t not in _DEFESA_VALID_TYPES:
+            error("defesas", location, f"type inválido: {t!r} (esperado {sorted(_DEFESA_VALID_TYPES)})")
+        # scheduled_date
+        sd = entry.get("scheduled_date")
+        if not sd:
+            error("defesas", location, "scheduled_date obrigatório")
+        else:
+            try:
+                dt.date.fromisoformat(str(sd)[:10])
+            except (TypeError, ValueError):
+                error("defesas", location, f"scheduled_date fora do formato ISO: {sd!r}")
+        # advisor
+        advisor = entry.get("advisor")
+        if advisor and advisor not in advisor_ids:
+            warn("xref", location, f"advisor '{advisor}' não existe em content/people")
+        for co in entry.get("co_advisors") or []:
+            if co not in advisor_ids:
+                warn("xref", location, f"co_advisor '{co}' não existe em content/people")
+        # students
+        students = entry.get("students") or []
+        if not students:
+            warn("defesas", location, "students vazio — nome de aluno faltando")
+        elif len(students) > 2:
+            error("defesas", location, f"students deve ter no máximo 2 (dupla TCC); tem {len(students)}")
+        # committee roles
+        for j, member in enumerate(entry.get("committee") or []):
+            if not isinstance(member, dict):
+                error("defesas", f"{location}.committee[{j}]", "membro deve ser objeto")
+                continue
+            role = member.get("role")
+            if role not in _COMMITTEE_ROLES:
+                error(
+                    "defesas",
+                    f"{location}.committee[{j}]",
+                    f"role inválido: {role!r} (esperado {sorted(_COMMITTEE_ROLES)})",
+                )
+            if not (member.get("name") or member.get("slug")):
+                error(
+                    "defesas",
+                    f"{location}.committee[{j}]",
+                    "membro requer 'name' ou 'slug'",
+                )
+    return seen_ids
 
 
 def validate_data_projects(projects_data: dict, person_ids: set[str]) -> None:
@@ -675,6 +791,8 @@ def main() -> int:
     people_data = load_yaml(DATA_DIR / "people.yaml") or {}
     prod_data = load_yaml(DATA_DIR / "productions.yaml") or {}
     projects_data = load_yaml(DATA_DIR / "projects.yaml") or {}
+    defesas_path = DATA_DIR / "defesas.yaml"
+    defesas_data = load_yaml(defesas_path) if defesas_path.exists() else None
 
     area_ids = collect_area_ids(areas_data)
     data_project_ids = collect_data_project_ids(projects_data)
@@ -683,7 +801,8 @@ def main() -> int:
 
     validate_areas(areas_data, person_ids)
     validate_people(people_data, advisor_ids)
-    validate_productions(prod_data, advisor_ids, person_ids)
+    defesa_ids = validate_defesas(defesas_data, advisor_ids)
+    validate_productions(prod_data, advisor_ids, person_ids, defesa_ids=defesa_ids)
     validate_data_projects(projects_data, person_ids)
 
     all_fms: list[tuple[Path, dict]] = []

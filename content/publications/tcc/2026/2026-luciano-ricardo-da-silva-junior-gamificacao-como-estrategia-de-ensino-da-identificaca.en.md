@@ -11,7 +11,7 @@ publication_index: 315
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis
-year: 2026/1
+year: 2026
 authors:
 - Luciano Ricardo da Silva Junior
 authors_structured:
@@ -36,10 +36,10 @@ external_url: ''
 spotify_podcast: ''
 github_repo: ''
 zenodo_record: ''
-summary: Tcc by Luciano Ricardo da Silva Junior (2026/1).
+summary: Tcc by Luciano Ricardo da Silva Junior (2026).
 bibtex: "@mastersthesis{2026-luciano-ricardo-da-silva-junior-gamificacao-como-estrategia-de-ensino-da-identificaca,\n\
   \  author = {Luciano Ricardo da Silva Junior},\n  title = {Gamification as a Teaching\
-  \ Strategy for Code Smell Identification},\n  year = {2026/1},\n  publisher = {Universidade\
+  \ Strategy for Code Smell Identification},\n  year = {2026},\n  publisher = {Universidade\
   \ de Brasília},\n  address = {Brasília, DF}\n}"
 aliases:
 - /publications/2026-luciano-ricardo-da-silva-junior-gamificacao-como-estrategia-de-ensino-da-identificaca/

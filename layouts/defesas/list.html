@@ -1,0 +1,256 @@
+{{ define "main" }}
+{{ $isPt := eq .Site.Language.Lang "pt" }}
+{{ $lang := .Site.Language.Lang }}
+
+{{/* Estado derivado por defesa (mesma lógica de defesa-body.html). */}}
+{{ $now := now }}
+{{ $upcoming := slice }}
+{{ $past := slice }}
+{{ $yearsSet := dict }}
+{{ $advisorsSet := dict }}
+{{ $programsSet := dict }}
+{{ $typesSet := dict }}
+{{ range hugo.Data.defesas }}
+  {{ $override := .status_override }}
+  {{ $sd := time .scheduled_date }}
+  {{ $hasProd := and .production_id (ne .production_id "") }}
+  {{ $state := "upcoming" }}
+  {{ if eq $override "withdrawn" }}
+    {{ $state = "withdrawn" }}
+  {{ else if $sd.After $now }}
+    {{ $state = "upcoming" }}
+  {{ else if $hasProd }}
+    {{ $state = "deposited" }}
+  {{ else }}
+    {{ $state = "held" }}
+  {{ end }}
+  {{/* Guardar cópia enriquecida com o estado e dados derivados. */}}
+  {{ $enriched := merge . (dict
+    "state" $state
+    "year"  $sd.Year
+    "scheduled_time" $sd
+  ) }}
+  {{ if eq $state "upcoming" }}
+    {{ $upcoming = $upcoming | append $enriched }}
+  {{ else if ne $state "withdrawn" }}
+    {{ $past = $past | append $enriched }}
+  {{ end }}
+  {{ if .advisor }}{{ $advisorsSet = merge $advisorsSet (dict .advisor true) }}{{ end }}
+  {{ if .program }}{{ $programsSet = merge $programsSet (dict .program true) }}{{ end }}
+  {{ if .type }}{{ $typesSet = merge $typesSet (dict .type true) }}{{ end }}
+  {{ $yearsSet = merge $yearsSet (dict (printf "%d" $sd.Year) true) }}
+{{ end }}
+
+{{ $upcoming = sort $upcoming "scheduled_date" "asc" }}
+{{ $past = sort $past "scheduled_date" "desc" }}
+{{ $latest := first 10 $past }}
+
+{{/* Índice por ano para o "Arquivo". */}}
+{{ $byYear := dict }}
+{{ range $past }}
+  {{ $y := printf "%d" .year }}
+  {{ $bucket := index $byYear $y | default (slice) }}
+  {{ $bucket = $bucket | append . }}
+  {{ $byYear = merge $byYear (dict $y $bucket) }}
+{{ end }}
+{{ $years := slice }}
+{{ range $key, $_ := $byYear }}
+  {{ $years = $years | append $key }}
+{{ end }}
+{{ $years = sort $years "value" "desc" }}
+
+{{ $advisors := slice }}
+{{ range $key, $_ := $advisorsSet }}{{ $advisors = $advisors | append $key }}{{ end }}
+{{ $advisors = sort $advisors }}
+{{ $programs := slice }}
+{{ range $key, $_ := $programsSet }}{{ $programs = $programs | append $key }}{{ end }}
+{{ $programs = sort $programs }}
+{{ $types := slice }}
+{{ range $key, $_ := $typesSet }}{{ $types = $types | append $key }}{{ end }}
+{{ $types = sort $types }}
+
+{{/* Rótulos localizados por tipo — construídos a partir do partial reutilizável
+     defesa-type-label.html para manter consistência com single.html e body.html. */}}
+{{ $typeCodes := slice "tcc1" "tcc" "qualification" "dissertation" "phd_qualification" "phd" "specialization" }}
+{{ $typeLabels := dict }}
+{{ range $typeCodes }}
+  {{ $lbl := partial "defesa-type-label.html" (dict "type" . "lang" $lang) }}
+  {{ $typeLabels = merge $typeLabels (dict . $lbl) }}
+{{ end }}
+
+<main class="bg-[linear-gradient(180deg,#f8fafc_0%,#ffffff_26%,#f5f5f4_100%)] text-slate-950 dark:bg-[linear-gradient(180deg,#0f172a_0%,#111827_58%,#0b1120_100%)] dark:text-white">
+  <section class="border-b border-slate-200/80 bg-slate-950 text-white dark:border-white/10">
+    <div class="mx-auto max-w-(--breakpoint-xl) px-4 py-12 md:px-6 lg:px-8 lg:py-16">
+      {{ partial "breadcrumbs.html" . }}
+      <div class="mt-4 max-w-4xl">
+        <span class="inline-flex rounded-full border border-white/15 bg-white/10 px-4 py-1 text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-white/75">
+          {{ cond $isPt "Defesas e qualificações" "Defenses and qualifications" }}
+        </span>
+        <h1 class="mt-5 text-4xl font-black tracking-tight md:text-5xl">{{ .Title }}</h1>
+        <p class="mt-4 max-w-2xl text-base leading-7 text-white/75 md:text-lg">
+          {{ if $isPt }}Bancas marcadas, defesas realizadas e trabalhos depositados no CEDIS. Anúncios prévios chamam para acompanhar; registros históricos consolidam a produção do centro.{{ else }}Scheduled committees, held defenses, and deposited works at CEDIS. Prior announcements invite you to attend; historical records consolidate the center's output.{{ end }}
+        </p>
+      </div>
+      <div class="mt-8 grid gap-3 sm:grid-cols-3">
+        <div class="rounded-[1.25rem] border border-white/10 bg-white/6 px-5 py-4">
+          <div class="text-3xl font-black">{{ len $upcoming }}</div>
+          <div class="mt-1 text-sm text-white/75">{{ cond $isPt "próximas" "upcoming" }}</div>
+        </div>
+        <div class="rounded-[1.25rem] border border-white/10 bg-white/6 px-5 py-4">
+          <div class="text-3xl font-black">{{ len $past }}</div>
+          <div class="mt-1 text-sm text-white/75">{{ cond $isPt "realizadas" "held" }}</div>
+        </div>
+        <div class="rounded-[1.25rem] border border-white/10 bg-white/6 px-5 py-4">
+          <div class="text-3xl font-black">{{ len $years }}</div>
+          <div class="mt-1 text-sm text-white/75">{{ cond $isPt "anos cobertos" "years covered" }}</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-(--breakpoint-xl) px-4 py-10 md:px-6 lg:px-8 lg:py-14"
+           x-data="{ filters: { advisor: '', program: '', type: '' } }">
+
+    {{/* -------------------- Próximas defesas -------------------- */}}
+    <div class="mb-12">
+      <h2 class="text-2xl font-black tracking-tight text-slate-950 dark:text-white md:text-3xl">
+        {{ cond $isPt "Próximas defesas" "Upcoming defenses" }}
+      </h2>
+      {{ if eq (len $upcoming) 0 }}
+      <p class="mt-4 rounded-[1.25rem] border border-dashed border-slate-300 bg-white/70 p-6 text-sm text-slate-600 dark:border-white/15 dark:bg-white/5 dark:text-white/70">
+        {{ if $isPt }}Nenhuma defesa marcada no momento. Volte em breve — as próximas bancas são divulgadas aqui assim que confirmadas.{{ else }}No scheduled defenses at the moment. Check back soon — upcoming committees are announced here as soon as confirmed.{{ end }}
+      </p>
+      {{ else if lt (len $upcoming) 5 }}
+      {{/* Poucas: grid simples. */}}
+      <div class="mt-6 grid gap-4 md:grid-cols-2 @container">
+        {{ range $upcoming }}
+        {{ partial "defesa-card.html" (dict "defesa" . "lang" $lang "typeLabels" $typeLabels) }}
+        {{ end }}
+      </div>
+      {{ else }}
+      {{/* Muitas: modo Agenda — agrupamento por semana. Fim de semestre
+           tipicamente lota — a visualização temporal ajuda a planejar
+           quais defesas assistir. */}}
+      {{ $byWeek := dict }}
+      {{ $weekOrder := slice }}
+      {{ range $upcoming }}
+        {{ $sd := time .scheduled_date }}
+        {{/* Chave = ano-semana ISO ("2027-W03") derivada do Format Go. */}}
+        {{ $weekKey := $sd.Format "2006-W02" }}
+        {{ $bucket := index $byWeek $weekKey | default (slice) }}
+        {{ if eq (len $bucket) 0 }}
+          {{ $weekOrder = $weekOrder | append $weekKey }}
+        {{ end }}
+        {{ $bucket = $bucket | append . }}
+        {{ $byWeek = merge $byWeek (dict $weekKey $bucket) }}
+      {{ end }}
+      <div class="mt-4 flex items-center gap-2 rounded-full border border-primary-200 bg-primary-50 px-4 py-2 text-xs font-semibold text-primary-800 dark:border-primary-400/30 dark:bg-primary-500/10 dark:text-primary-100">
+        <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+        {{ if $isPt }}{{ len $upcoming }} defesas marcadas — visualização em agenda por semana{{ else }}{{ len $upcoming }} scheduled defenses — weekly agenda view{{ end }}
+      </div>
+      <div class="mt-6 space-y-8">
+        {{ range $weekOrder }}
+        {{ $wk := . }}
+        {{ $bucket := index $byWeek $wk }}
+        {{ $first := index $bucket 0 }}
+        {{ $ft := time $first.scheduled_date }}
+        {{ $weekLabel := "" }}
+        {{ if $isPt }}
+          {{ $weekLabel = printf "Semana de %s" ($ft.Format "2 jan 2006") }}
+          {{ range $en, $pt := (dict "Jan" "jan" "Feb" "fev" "Mar" "mar" "Apr" "abr" "May" "mai" "Jun" "jun" "Jul" "jul" "Aug" "ago" "Sep" "set" "Oct" "out" "Nov" "nov" "Dec" "dez") }}
+            {{ $weekLabel = replace $weekLabel $en $pt }}
+          {{ end }}
+        {{ else }}
+          {{ $weekLabel = printf "Week of %s" ($ft.Format "Jan 2, 2006") }}
+        {{ end }}
+        <div class="relative border-l-2 border-primary-300 pl-6 dark:border-primary-400/40">
+          <span class="absolute -left-2 top-0 h-4 w-4 rounded-full bg-primary-600 dark:bg-primary-400"></span>
+          <h3 class="text-lg font-black text-slate-800 dark:text-white">
+            {{ $weekLabel }}
+            <span class="ml-2 text-sm font-semibold text-slate-500 dark:text-white/50">({{ len $bucket }})</span>
+          </h3>
+          <div class="mt-4 grid gap-4 md:grid-cols-2">
+            {{ range $bucket }}
+            {{ partial "defesa-card.html" (dict "defesa" . "lang" $lang "typeLabels" $typeLabels) }}
+            {{ end }}
+          </div>
+        </div>
+        {{ end }}
+      </div>
+      {{ end }}
+    </div>
+
+    {{/* -------------------- Filtros -------------------- */}}
+    <div class="mb-6 grid gap-3 rounded-[1.25rem] border border-slate-200 bg-slate-50 p-4 dark:border-white/10 dark:bg-white/4 md:grid-cols-4">
+      <label class="flex flex-col gap-1 text-xs font-semibold text-slate-700 dark:text-white/80">
+        <span>{{ cond $isPt "Orientador(a)" "Advisor" }}</span>
+        <select x-model="filters.advisor" class="rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm dark:border-white/10 dark:bg-slate-900">
+          <option value="">{{ cond $isPt "Todos" "All" }}</option>
+          {{ range $advisors }}
+            {{ $p := partial "people-lookup" . }}
+            <option value="{{ . }}">{{ if $p.found }}{{ $p.name }}{{ else }}{{ . }}{{ end }}</option>
+          {{ end }}
+        </select>
+      </label>
+      <label class="flex flex-col gap-1 text-xs font-semibold text-slate-700 dark:text-white/80">
+        <span>{{ cond $isPt "Programa" "Program" }}</span>
+        <select x-model="filters.program" class="rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm dark:border-white/10 dark:bg-slate-900">
+          <option value="">{{ cond $isPt "Todos" "All" }}</option>
+          {{ range $programs }}<option value="{{ . }}">{{ . }}</option>{{ end }}
+        </select>
+      </label>
+      <label class="flex flex-col gap-1 text-xs font-semibold text-slate-700 dark:text-white/80">
+        <span>{{ cond $isPt "Tipo" "Type" }}</span>
+        <select x-model="filters.type" class="rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm dark:border-white/10 dark:bg-slate-900">
+          <option value="">{{ cond $isPt "Todos" "All" }}</option>
+          {{ range $types }}<option value="{{ . }}">{{ index $typeLabels . | default . }}</option>{{ end }}
+        </select>
+      </label>
+      <button type="button"
+              @click="filters.advisor=''; filters.program=''; filters.type=''"
+              class="self-end rounded-full border border-slate-300 bg-white px-4 py-2 text-sm font-semibold text-slate-700 transition-colors hover:border-primary-400 hover:text-primary-700 dark:border-white/10 dark:bg-white/6 dark:text-white/80">
+        {{ cond $isPt "Limpar" "Clear" }}
+      </button>
+    </div>
+
+    {{/* -------------------- Últimas realizadas -------------------- */}}
+    <div class="mb-12">
+      <h2 class="text-2xl font-black tracking-tight text-slate-950 dark:text-white md:text-3xl">
+        {{ cond $isPt "Últimas realizadas" "Recently held" }}
+      </h2>
+      <div class="mt-6 grid gap-4 @container">
+        {{ range $latest }}
+        {{ partial "defesa-card.html" (dict "defesa" . "lang" $lang "typeLabels" $typeLabels "filterable" true) }}
+        {{ end }}
+      </div>
+    </div>
+
+    {{/* -------------------- Arquivo por ano -------------------- */}}
+    <div>
+      <h2 class="text-2xl font-black tracking-tight text-slate-950 dark:text-white md:text-3xl">
+        {{ cond $isPt "Arquivo por ano" "Archive by year" }}
+      </h2>
+      <p class="mt-2 text-sm text-slate-600 dark:text-white/60">
+        {{ cond $isPt "Clique em um ano para ver todas as defesas daquele período." "Click a year to see all defenses from that period." }}
+      </p>
+      <div class="mt-6 space-y-3">
+        {{ range $years }}
+          {{ $y := . }}
+          {{ $bucket := index $byYear $y }}
+          <details class="group rounded-2xl border border-slate-200 bg-white/70 dark:border-white/10 dark:bg-white/5">
+            <summary class="cursor-pointer list-none px-5 py-3 text-sm font-semibold text-slate-800 dark:text-white/80">
+              <span class="mr-2 inline-flex h-6 w-6 items-center justify-center rounded-full bg-slate-100 text-xs text-slate-600 group-open:rotate-90 dark:bg-white/10 dark:text-white/70">→</span>
+              {{ $y }} <span class="ml-2 text-slate-500 dark:text-white/50">({{ len $bucket }})</span>
+            </summary>
+            <div class="grid gap-3 border-t border-slate-200 p-4 dark:border-white/10 @container">
+              {{ range $bucket }}
+              {{ partial "defesa-card.html" (dict "defesa" . "lang" $lang "typeLabels" $typeLabels "filterable" true "compact" true) }}
+              {{ end }}
+            </div>
+          </details>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+</main>
+{{ end }}
