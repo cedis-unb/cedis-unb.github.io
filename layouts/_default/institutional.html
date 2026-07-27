@@ -27,9 +27,9 @@
 {{ $languageLabel := i18n "ui_language_code" }}
 {{ $updatedLabel := .Date.Format "2006" }}
 
-<main class="bg-[radial-gradient(circle_at_top,_rgba(197,39,47,0.14),_transparent_22%),linear-gradient(180deg,_#f5f5f4_0%,_#ffffff_34%,_#f8fafc_100%)] text-gray-950 dark:bg-[radial-gradient(circle_at_top,_rgba(197,39,47,0.12),_transparent_20%),linear-gradient(180deg,_#0f172a_0%,_#111827_58%,_#0b1120_100%)] dark:text-gray-100">
+<main class="bg-[radial-gradient(circle_at_top,rgba(197,39,47,0.14),transparent_22%),linear-gradient(180deg,#f5f5f4_0%,#ffffff_34%,#f8fafc_100%)] text-gray-950 dark:bg-[radial-gradient(circle_at_top,rgba(197,39,47,0.12),transparent_20%),linear-gradient(180deg,#0f172a_0%,#111827_58%,#0b1120_100%)] dark:text-gray-100">
   <section class="border-b border-black/5 bg-gray-950 text-white dark:border-white/10">
-    <div class="mx-auto grid max-w-screen-xl gap-10 px-4 py-12 md:px-6 md:py-16 lg:grid-cols-[minmax(0,1.1fr)_minmax(20rem,0.9fr)] lg:items-center lg:px-8 lg:py-20">
+    <div class="mx-auto grid max-w-(--breakpoint-xl) gap-10 px-4 py-12 md:px-6 md:py-16 lg:grid-cols-[minmax(0,1.1fr)_minmax(20rem,0.9fr)] lg:items-center lg:px-8 lg:py-20">
       <div>
         <div class="inline-flex flex-wrap items-center gap-3">
           <span class="inline-flex rounded-full border border-white/15 bg-white/10 px-4 py-1 text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-white/75">
@@ -53,7 +53,7 @@
             {{ $contentLabel }}
           </a>
           {{ if gt $sectionCount 0 }}
-          <a href="#page-navigation" class="inline-flex items-center rounded-full border border-white/15 bg-white/[0.06] px-5 py-3 text-sm font-semibold text-white/85 transition-colors hover:bg-white/10 hover:text-white">
+          <a href="#page-navigation" class="inline-flex items-center rounded-full border border-white/15 bg-white/6 px-5 py-3 text-sm font-semibold text-white/85 transition-colors hover:bg-white/10 hover:text-white">
             {{ $sectionLabel }}
           </a>
           {{ end }}
@@ -61,18 +61,18 @@
       </div>
 
       <div class="relative">
-        <div class="absolute inset-0 rounded-[2rem] bg-[radial-gradient(circle_at_top,_rgba(255,255,255,0.18),_transparent_58%)]"></div>
-        <div class="relative overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.06] p-4 shadow-[0_24px_80px_rgba(0,0,0,0.28)] backdrop-blur md:p-6">
+        <div class="absolute inset-0 rounded-4xl bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.18),transparent_58%)]"></div>
+        <div class="relative overflow-hidden rounded-4xl border border-white/10 bg-white/6 p-4 shadow-[0_24px_80px_rgba(0,0,0,0.28)] backdrop-blur md:p-6">
           {{ with .Params.featured_image }}
           {{ $featuredPath := replace . "../assets/" "" }}
           {{ with resources.Get $featuredPath }}
           {{ $image := .Fit "1200x1200 webp q88" }}
-          <div class="flex min-h-[18rem] items-center justify-center overflow-hidden rounded-[1.5rem] bg-[linear-gradient(180deg,_rgba(15,23,42,0.32),_rgba(15,23,42,0.08))] p-4 md:min-h-[23rem] md:p-6">
+          <div class="flex min-h-72 items-center justify-center overflow-hidden rounded-3xl bg-[linear-gradient(180deg,rgba(15,23,42,0.32),rgba(15,23,42,0.08))] p-4 md:min-h-92 md:p-6">
             <img src="{{ $image.RelPermalink }}" alt="" class="max-h-full w-auto max-w-full object-contain" loading="eager">
           </div>
           {{ end }}
           {{ else }}
-          <div class="flex min-h-[18rem] items-end rounded-[1.5rem] border border-white/10 bg-[linear-gradient(135deg,_rgba(197,39,47,0.18),_rgba(255,255,255,0.04))] p-6 md:min-h-[23rem]">
+          <div class="flex min-h-72 items-end rounded-3xl border border-white/10 bg-[linear-gradient(135deg,rgba(197,39,47,0.18),rgba(255,255,255,0.04))] p-6 md:min-h-92">
             <div class="max-w-sm">
               <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-white/75">CEDIS</div>
               <p class="mt-3 text-2xl font-black tracking-tight text-white">{{ .Title }}</p>
@@ -100,9 +100,9 @@
     </div>
   </section>
 
-  <section class="mx-auto grid max-w-screen-xl gap-8 px-4 py-10 md:px-6 md:py-12 lg:grid-cols-[minmax(0,1fr)_19rem] lg:items-start lg:px-8">
+  <section class="mx-auto grid max-w-(--breakpoint-xl) gap-8 px-4 py-10 md:px-6 md:py-12 lg:grid-cols-[minmax(0,1fr)_19rem] lg:items-start lg:px-8">
     <article class="order-2 lg:order-1">
-      <div class="rounded-[2rem] border border-black/5 bg-white/85 px-6 py-8 shadow-[0_20px_70px_rgba(15,23,42,0.08)] backdrop-blur dark:border-white/10 dark:bg-white/[0.04] md:px-8 md:py-10">
+      <div class="rounded-4xl border border-black/5 bg-white/85 px-6 py-8 shadow-[0_20px_70px_rgba(15,23,42,0.08)] backdrop-blur dark:border-white/10 dark:bg-white/4 md:px-8 md:py-10">
         <div id="page-content" class="[&_h2]:mt-14 [&_h2]:scroll-mt-28 [&_h2]:border-t [&_h2]:border-black/5 [&_h2]:pt-10 [&_h2]:text-3xl [&_h2]:font-black [&_h2]:tracking-tight [&_h2]:text-gray-950 dark:[&_h2]:border-white/10 dark:[&_h2]:text-white [&_h3]:mt-8 [&_h3]:text-xl [&_h3]:font-bold [&_h3]:tracking-tight [&_h3]:text-gray-900 dark:[&_h3]:text-white [&_ol]:my-5 [&_ol]:pl-5 [&_ul]:my-5 [&_ul]:pl-5 [&_li]:my-2 [&_p]:my-5 [&_p]:text-base [&_p]:leading-7 [&_p]:text-gray-600 dark:[&_p]:text-white/75 [&_a]:font-semibold [&_a]:text-primary-700 [&_a]:transition-colors hover:[&_a]:text-primary-600 dark:[&_a]:text-primary-200 dark:hover:[&_a]:text-primary-100 [&_iframe]:w-full [&_iframe]:max-w-full [&_strong]:text-gray-950 dark:[&_strong]:text-white">
           {{ $content | safeHTML }}
         </div>
@@ -110,19 +110,19 @@
     </article>
 
     <aside class="order-1 space-y-5 lg:order-2 lg:sticky lg:top-24">
-      <div class="rounded-[1.75rem] border border-black/5 bg-white/85 p-5 shadow-[0_18px_60px_rgba(15,23,42,0.08)] backdrop-blur dark:border-white/10 dark:bg-white/[0.04]">
+      <div class="rounded-[1.75rem] border border-black/5 bg-white/85 p-5 shadow-[0_18px_60px_rgba(15,23,42,0.08)] backdrop-blur dark:border-white/10 dark:bg-white/4">
         <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-gray-400 dark:text-white/75">{{ $summaryTitle }}</div>
         <p class="mt-4 text-sm leading-7 text-gray-600 dark:text-white/75">{{ $intro }}</p>
       </div>
 
       {{ if gt $sectionCount 0 }}
-      <div id="page-navigation" class="rounded-[1.75rem] border border-black/5 bg-white/85 p-5 shadow-[0_18px_60px_rgba(15,23,42,0.08)] backdrop-blur dark:border-white/10 dark:bg-white/[0.04]">
+      <div id="page-navigation" class="rounded-[1.75rem] border border-black/5 bg-white/85 p-5 shadow-[0_18px_60px_rgba(15,23,42,0.08)] backdrop-blur dark:border-white/10 dark:bg-white/4">
         <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-gray-400 dark:text-white/75">{{ $navigationTitle }}</div>
         <nav class="mt-4">
           <ul class="m-0 grid list-none gap-2 p-0">
             {{ range $sectionEntries }}
             <li class="m-0 p-0">
-              <a href="#{{ .anchor }}" class="block rounded-xl border border-black/5 bg-stone-50 px-4 py-3 text-sm font-semibold text-gray-700 transition-colors hover:border-primary-400 hover:bg-primary-50 hover:text-primary-700 dark:border-white/10 dark:bg-white/[0.04] dark:text-white/80 dark:hover:border-primary-300 dark:hover:bg-primary-500/10 dark:hover:text-primary-100">
+              <a href="#{{ .anchor }}" class="block rounded-xl border border-black/5 bg-stone-50 px-4 py-3 text-sm font-semibold text-gray-700 transition-colors hover:border-primary-400 hover:bg-primary-50 hover:text-primary-700 dark:border-white/10 dark:bg-white/4 dark:text-white/80 dark:hover:border-primary-300 dark:hover:bg-primary-500/10 dark:hover:text-primary-100">
                 {{ .label }}
               </a>
             </li>
