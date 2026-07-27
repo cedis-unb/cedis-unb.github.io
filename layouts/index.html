@@ -114,9 +114,9 @@
         {{ $pulseRest = first 4 (after 1 $pulseDisplayItems) }}
     {{ end }}
 
-    <div class="relative overflow-hidden bg-[radial-gradient(circle_at_top_left,_rgba(249,115,22,0.18),_transparent_28%),linear-gradient(180deg,_#eef2ff_0%,_#f5f6fa_48%,_#ffffff_100%)] dark:bg-[radial-gradient(circle_at_top_left,_rgba(249,115,22,0.12),_transparent_24%),linear-gradient(180deg,_#0f172a_0%,_#111827_58%,_#0b1120_100%)]">
-        <div class="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-primary-400/40 to-transparent"></div>
-        <div class="relative mx-auto max-w-screen-xl px-4 py-8 md:px-6 lg:px-8 lg:py-12">
+    <div class="relative overflow-hidden bg-[radial-gradient(circle_at_top_left,rgba(249,115,22,0.18),transparent_28%),linear-gradient(180deg,#eef2ff_0%,#f5f6fa_48%,#ffffff_100%)] dark:bg-[radial-gradient(circle_at_top_left,rgba(249,115,22,0.12),transparent_24%),linear-gradient(180deg,#0f172a_0%,#111827_58%,#0b1120_100%)]">
+        <div class="absolute inset-x-0 top-0 h-px bg-linear-to-r from-transparent via-primary-400/40 to-transparent"></div>
+        <div class="relative mx-auto max-w-(--breakpoint-xl) px-4 py-8 md:px-6 lg:px-8 lg:py-12">
             <div class="grid gap-8 lg:grid-cols-12 lg:gap-10">
                 {{/* LEFT — identity + persona CTAs */}}
                 <div class="lg:col-span-5">
@@ -131,8 +131,8 @@
                     </h2>
 
                     <div class="mt-8 space-y-3">
-                        <a href="{{ $studyURL }}" class="group flex items-center gap-4 rounded-2xl border border-slate-200/80 bg-white/85 px-4 py-3.5 shadow-sm backdrop-blur transition-all hover:-translate-y-0.5 hover:border-primary-300 hover:shadow-md dark:border-white/10 dark:bg-white/[0.04] dark:hover:border-primary-400/40">
-                            <span aria-hidden="true" class="flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-xl bg-primary-100 text-primary-700 dark:bg-primary-500/15 dark:text-primary-200">
+                        <a href="{{ $studyURL }}" class="group flex items-center gap-4 rounded-2xl border border-slate-200/80 bg-white/85 px-4 py-3.5 shadow-sm backdrop-blur transition-all hover:-translate-y-0.5 hover:border-primary-300 hover:shadow-md dark:border-white/10 dark:bg-white/4 dark:hover:border-primary-400/40">
+                            <span aria-hidden="true" class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-primary-100 text-primary-700 dark:bg-primary-500/15 dark:text-primary-200">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6"><path d="M12 3 1 9l11 6 9-4.909V17a1 1 0 0 0 2 0V9L12 3zm0 8.201L5.803 8 12 5l6.196 3L12 11.201zM7 13.545V16.5c0 1.746 3.15 3.5 5 3.5s5-1.754 5-3.5v-2.955l-5 2.727-5-2.727z"/></svg>
                             </span>
                             <span class="flex-1 min-w-0">
@@ -141,8 +141,8 @@
                             </span>
                             <span aria-hidden="true" class="text-slate-400 transition-transform group-hover:translate-x-1 group-hover:text-primary-500">&rarr;</span>
                         </a>
-                        <a href="{{ $exploreURL }}" class="group flex items-center gap-4 rounded-2xl border border-slate-200/80 bg-white/85 px-4 py-3.5 shadow-sm backdrop-blur transition-all hover:-translate-y-0.5 hover:border-primary-300 hover:shadow-md dark:border-white/10 dark:bg-white/[0.04] dark:hover:border-primary-400/40">
-                            <span aria-hidden="true" class="flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-xl bg-sky-100 text-sky-700 dark:bg-sky-500/15 dark:text-sky-200">
+                        <a href="{{ $exploreURL }}" class="group flex items-center gap-4 rounded-2xl border border-slate-200/80 bg-white/85 px-4 py-3.5 shadow-sm backdrop-blur transition-all hover:-translate-y-0.5 hover:border-primary-300 hover:shadow-md dark:border-white/10 dark:bg-white/4 dark:hover:border-primary-400/40">
+                            <span aria-hidden="true" class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-sky-100 text-sky-700 dark:bg-sky-500/15 dark:text-sky-200">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
                             </span>
                             <span class="flex-1 min-w-0">
@@ -151,8 +151,8 @@
                             </span>
                             <span aria-hidden="true" class="text-slate-400 transition-transform group-hover:translate-x-1 group-hover:text-primary-500">&rarr;</span>
                         </a>
-                        <a href="{{ $partnerURL }}" class="group flex items-center gap-4 rounded-2xl border border-slate-200/80 bg-white/85 px-4 py-3.5 shadow-sm backdrop-blur transition-all hover:-translate-y-0.5 hover:border-primary-300 hover:shadow-md dark:border-white/10 dark:bg-white/[0.04] dark:hover:border-primary-400/40">
-                            <span aria-hidden="true" class="flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-xl bg-emerald-100 text-emerald-700 dark:bg-emerald-500/15 dark:text-emerald-200">
+                        <a href="{{ $partnerURL }}" class="group flex items-center gap-4 rounded-2xl border border-slate-200/80 bg-white/85 px-4 py-3.5 shadow-sm backdrop-blur transition-all hover:-translate-y-0.5 hover:border-primary-300 hover:shadow-md dark:border-white/10 dark:bg-white/4 dark:hover:border-primary-400/40">
+                            <span aria-hidden="true" class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-emerald-100 text-emerald-700 dark:bg-emerald-500/15 dark:text-emerald-200">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
                             </span>
                             <span class="flex-1 min-w-0">
@@ -204,7 +204,7 @@
 
                 {{/* RIGHT — live pulse card */}}
                 <div class="lg:col-span-7">
-                    <div class="relative overflow-hidden rounded-[2rem] border border-white/70 bg-white/85 p-5 shadow-[0_24px_80px_rgba(15,23,42,0.10)] backdrop-blur dark:border-white/10 dark:bg-white/[0.04] dark:shadow-[0_24px_80px_rgba(0,0,0,0.32)] sm:p-6">
+                    <div class="relative overflow-hidden rounded-4xl border border-white/70 bg-white/85 p-5 shadow-[0_24px_80px_rgba(15,23,42,0.10)] backdrop-blur dark:border-white/10 dark:bg-white/4 dark:shadow-[0_24px_80px_rgba(0,0,0,0.32)] sm:p-6">
                         <div aria-hidden="true" class="absolute -right-10 -top-10 h-32 w-32 rounded-full bg-primary-300/20 blur-3xl dark:bg-primary-500/10"></div>
                         <div aria-hidden="true" class="absolute -bottom-16 -left-10 h-32 w-32 rounded-full bg-sky-300/20 blur-3xl dark:bg-sky-500/10"></div>
 
@@ -222,7 +222,7 @@
                         </div>
 
                         {{ if $pulseTop }}
-                        <a href="{{ $pulseTop.url }}" class="relative mt-5 block group rounded-2xl border border-slate-200/70 bg-white/70 p-5 transition-all hover:border-primary-300 hover:bg-white hover:shadow-md dark:border-white/10 dark:bg-white/[0.04] dark:hover:border-primary-400/30 dark:hover:bg-white/[0.08]">
+                        <a href="{{ $pulseTop.url }}" class="relative mt-5 block group rounded-2xl border border-slate-200/70 bg-white/70 p-5 transition-all hover:border-primary-300 hover:bg-white hover:shadow-md dark:border-white/10 dark:bg-white/4 dark:hover:border-primary-400/30 dark:hover:bg-white/8">
                             <div class="flex flex-wrap items-center gap-2 text-[0.68rem] font-semibold uppercase tracking-[0.16em]">
                                 <span class="rounded-full bg-primary-500 px-2.5 py-1 text-white">{{ i18n "ui_pulse_new_badge" }}</span>
                                 <span class="rounded-full border border-slate-300/80 bg-white px-2.5 py-1 text-slate-700 dark:border-white/10 dark:bg-slate-900/70 dark:text-slate-200">{{ i18n (printf "ui_pulse_type_%s" $pulseTop.type) }}</span>
@@ -246,11 +246,11 @@
                         <ol class="relative mt-4 space-y-1">
                             {{ range $pulseRest }}
                             <li>
-                                <a href="{{ .url }}" class="flex items-start gap-3 rounded-xl px-3 py-2.5 transition-colors hover:bg-slate-100/70 dark:hover:bg-white/[0.06]">
-                                    <span class="w-20 flex-shrink-0 pt-0.5 text-[0.68rem] font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400">
+                                <a href="{{ .url }}" class="flex items-start gap-3 rounded-xl px-3 py-2.5 transition-colors hover:bg-slate-100/70 dark:hover:bg-white/6">
+                                    <span class="w-20 shrink-0 pt-0.5 text-[0.68rem] font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400">
                                         {{ partial "relative-date.html" (dict "item" .) }}
                                     </span>
-                                    <span class="inline-flex flex-shrink-0 items-center rounded-full border border-slate-300/70 bg-white px-2 py-0.5 text-[0.6rem] font-semibold uppercase tracking-wider text-slate-600 dark:border-white/10 dark:bg-slate-900/70 dark:text-slate-300">
+                                    <span class="inline-flex shrink-0 items-center rounded-full border border-slate-300/70 bg-white px-2 py-0.5 text-[0.6rem] font-semibold uppercase tracking-wider text-slate-600 dark:border-white/10 dark:bg-slate-900/70 dark:text-slate-300">
                                         {{ i18n (printf "ui_pulse_type_%s" .type) }}
                                     </span>
                                     <span class="flex-1 text-sm leading-snug text-slate-800 [display:-webkit-box] [-webkit-box-orient:vertical] [-webkit-line-clamp:2] overflow-hidden dark:text-slate-200">
@@ -319,8 +319,8 @@
       {{ if and (or (eq .type "publication") (eq .type "defense")) (not $lastPubItem) }}{{ $lastPubItem = . }}{{ end }}
     {{ end }}
     <div class="relative py-8 sm:py-10 lg:py-12">
-      <div class="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-slate-300/70 to-transparent dark:via-white/10"></div>
-      <div class="mx-auto max-w-screen-xl px-4 md:px-6 lg:px-8">
+      <div class="absolute inset-x-0 top-0 h-px bg-linear-to-r from-transparent via-slate-300/70 to-transparent dark:via-white/10"></div>
+      <div class="mx-auto max-w-(--breakpoint-xl) px-4 md:px-6 lg:px-8">
         <div class="max-w-3xl">
           <div class="inline-flex items-center gap-2 rounded-full border border-primary-300/60 bg-primary-50/80 px-3 py-1 text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-primary-700 dark:border-primary-400/20 dark:bg-primary-500/10 dark:text-primary-200">
             <span aria-hidden="true" class="relative flex h-2 w-2">
@@ -337,32 +337,32 @@
           </p>
         </div>
         <ul class="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6 lg:gap-4">
-          <li class="rounded-2xl border border-emerald-200 bg-white/85 px-4 py-5 shadow-sm shadow-emerald-500/10 dark:border-emerald-500/30 dark:bg-white/[0.04]">
+          <li class="rounded-2xl border border-emerald-200 bg-white/85 px-4 py-5 shadow-sm shadow-emerald-500/10 dark:border-emerald-500/30 dark:bg-white/4">
             <div class="text-3xl font-black tracking-tight text-emerald-700 dark:text-emerald-300 lg:text-4xl">{{ $yearsCount }}</div>
             <div class="mt-2 text-sm font-semibold text-slate-900 dark:text-white">{{ i18n "ui_metric_years" }}</div>
             <div class="mt-1 text-xs text-slate-500 dark:text-slate-400">{{ i18n "ui_metric_years_note" }}</div>
           </li>
-          <li class="rounded-2xl border border-blue-200 bg-white/85 px-4 py-5 shadow-sm shadow-blue-500/10 dark:border-blue-500/30 dark:bg-white/[0.04]">
+          <li class="rounded-2xl border border-blue-200 bg-white/85 px-4 py-5 shadow-sm shadow-blue-500/10 dark:border-blue-500/30 dark:bg-white/4">
             <div class="text-3xl font-black tracking-tight text-blue-700 dark:text-blue-300 lg:text-4xl">{{ $pubsThisYear }}</div>
             <div class="mt-2 text-sm font-semibold text-slate-900 dark:text-white">{{ printf (i18n "ui_metric_pubs_this_year") $currentYearNum }}</div>
             <div class="mt-1 text-xs text-slate-500 dark:text-slate-400">{{ i18n "ui_metric_pubs_this_year_note" }}</div>
           </li>
-          <li class="rounded-2xl border border-amber-200 bg-white/85 px-4 py-5 shadow-sm shadow-amber-500/10 dark:border-amber-500/30 dark:bg-white/[0.04]">
+          <li class="rounded-2xl border border-amber-200 bg-white/85 px-4 py-5 shadow-sm shadow-amber-500/10 dark:border-amber-500/30 dark:bg-white/4">
             <div class="text-3xl font-black tracking-tight text-amber-700 dark:text-amber-300 lg:text-4xl">{{ $defensesThisYear }}</div>
             <div class="mt-2 text-sm font-semibold text-slate-900 dark:text-white">{{ printf (i18n "ui_metric_defenses_this_year") $currentYearNum }}</div>
             <div class="mt-1 text-xs text-slate-500 dark:text-slate-400">{{ i18n "ui_metric_defenses_this_year_note" }}</div>
           </li>
-          <li class="rounded-2xl border border-fuchsia-200 bg-white/85 px-4 py-5 shadow-sm shadow-fuchsia-500/10 dark:border-fuchsia-500/30 dark:bg-white/[0.04]">
+          <li class="rounded-2xl border border-fuchsia-200 bg-white/85 px-4 py-5 shadow-sm shadow-fuchsia-500/10 dark:border-fuchsia-500/30 dark:bg-white/4">
             <div class="text-3xl font-black tracking-tight text-fuchsia-700 dark:text-fuchsia-300 lg:text-4xl">{{ $registrationsThisYear }}</div>
             <div class="mt-2 text-sm font-semibold text-slate-900 dark:text-white">{{ printf (i18n "ui_metric_registrations_this_year") $currentYearNum }}</div>
             <div class="mt-1 text-xs text-slate-500 dark:text-slate-400">{{ i18n "ui_metric_registrations_this_year_note" }}</div>
           </li>
-          <li class="rounded-2xl border border-rose-200 bg-white/85 px-4 py-5 shadow-sm shadow-rose-500/10 dark:border-rose-500/30 dark:bg-white/[0.04]">
+          <li class="rounded-2xl border border-rose-200 bg-white/85 px-4 py-5 shadow-sm shadow-rose-500/10 dark:border-rose-500/30 dark:bg-white/4">
             <div class="text-3xl font-black tracking-tight text-rose-700 dark:text-rose-300 lg:text-4xl">{{ $productCount }}</div>
             <div class="mt-2 text-sm font-semibold text-slate-900 dark:text-white">{{ printf (i18n "ui_metric_products_this_year") $currentYearNum }}</div>
             <div class="mt-1 text-xs text-slate-500 dark:text-slate-400">{{ i18n "ui_metric_products_note" }}</div>
           </li>
-          <li class="rounded-2xl border border-violet-200 bg-white/85 px-4 py-5 shadow-sm shadow-violet-500/10 dark:border-violet-500/30 dark:bg-white/[0.04]">
+          <li class="rounded-2xl border border-violet-200 bg-white/85 px-4 py-5 shadow-sm shadow-violet-500/10 dark:border-violet-500/30 dark:bg-white/4">
             <div class="text-3xl font-black tracking-tight text-violet-700 dark:text-violet-300 lg:text-4xl">{{ $researcherCount }}</div>
             <div class="mt-2 text-sm font-semibold text-slate-900 dark:text-white">{{ i18n "ui_metric_researchers" }}</div>
             <div class="mt-1 text-xs text-slate-500 dark:text-slate-400">{{ i18n "ui_metric_researchers_note" }}</div>
@@ -431,8 +431,8 @@
     {{ $areaPages = sort $areaPages "Params.weight" "asc" }}
 
     <div class="relative py-8 sm:py-10 lg:py-12">
-      <div class="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-slate-300/70 to-transparent dark:via-white/10"></div>
-      <div class="mx-auto max-w-screen-xl px-4 md:px-6 lg:px-8">
+      <div class="absolute inset-x-0 top-0 h-px bg-linear-to-r from-transparent via-slate-300/70 to-transparent dark:via-white/10"></div>
+      <div class="mx-auto max-w-(--breakpoint-xl) px-4 md:px-6 lg:px-8">
         <div class="grid gap-8 lg:grid-cols-12 lg:gap-10">
           {{/* LEFT — Areas grid */}}
           <div class="lg:col-span-8">
@@ -448,7 +448,7 @@
                   {{ i18n "ui_areas_grid_lead" }}
                 </p>
               </div>
-              <a href="{{ "/areas/" | relLangURL }}" class="inline-flex flex-shrink-0 items-center gap-1 rounded-full border border-slate-300/70 bg-white/70 px-4 py-2 text-xs font-semibold uppercase tracking-[0.16em] text-slate-700 shadow-sm backdrop-blur transition-colors hover:border-primary-300 hover:text-primary-700 dark:border-white/10 dark:bg-white/[0.04] dark:text-slate-200 dark:hover:border-primary-400/30 dark:hover:text-primary-200">
+              <a href="{{ "/areas/" | relLangURL }}" class="inline-flex shrink-0 items-center gap-1 rounded-full border border-slate-300/70 bg-white/70 px-4 py-2 text-xs font-semibold uppercase tracking-[0.16em] text-slate-700 shadow-sm backdrop-blur transition-colors hover:border-primary-300 hover:text-primary-700 dark:border-white/10 dark:bg-white/4 dark:text-slate-200 dark:hover:border-primary-400/30 dark:hover:text-primary-200">
                 {{ i18n "ui_areas_grid_view_all" }}
                 <span aria-hidden="true">&rarr;</span>
               </a>
@@ -457,13 +457,13 @@
             <ul class="mt-6 grid grid-cols-2 gap-3 md:grid-cols-3">
               {{ range $areaPages }}
               <li>
-                <a href="{{ .RelPermalink }}" class="group flex h-full flex-col rounded-xl border border-slate-200/80 bg-white/85 px-3.5 py-3 shadow-sm backdrop-blur transition-all hover:-translate-y-0.5 hover:border-primary-300 hover:shadow-md dark:border-white/10 dark:bg-white/[0.04] dark:hover:border-primary-400/40">
+                <a href="{{ .RelPermalink }}" class="group flex h-full flex-col rounded-xl border border-slate-200/80 bg-white/85 px-3.5 py-3 shadow-sm backdrop-blur transition-all hover:-translate-y-0.5 hover:border-primary-300 hover:shadow-md dark:border-white/10 dark:bg-white/4 dark:hover:border-primary-400/40">
                   <div class="flex items-center gap-2.5">
                     {{ with .Params.featured_image }}
                       {{ $imgPath := replace . "../assets/" "" }}
                       {{ with resources.Get $imgPath }}
                         {{ with .Resize "80x80 webp q80" }}
-                        <span class="flex h-9 w-9 flex-shrink-0 items-center justify-center overflow-hidden rounded-lg border border-slate-200/70 bg-white p-1 dark:border-white/10 dark:bg-white/[0.04]">
+                        <span class="flex h-9 w-9 shrink-0 items-center justify-center overflow-hidden rounded-lg border border-slate-200/70 bg-white p-1 dark:border-white/10 dark:bg-white/4">
                           <img src="{{ .RelPermalink }}" alt="" class="max-h-full max-w-full object-contain" loading="lazy" />
                         </span>
                         {{ end }}
@@ -483,7 +483,7 @@
           {{ if gt (len $topTags) 0 }}
           {{ $maxCount := (index $topTags 0).count }}
           <div class="lg:col-span-4">
-            <div class="rounded-2xl border border-slate-200/80 bg-white/85 p-5 shadow-sm backdrop-blur dark:border-white/10 dark:bg-white/[0.04]">
+            <div class="rounded-2xl border border-slate-200/80 bg-white/85 p-5 shadow-sm backdrop-blur dark:border-white/10 dark:bg-white/4">
               <div class="inline-flex items-center rounded-full border border-primary-300/60 bg-primary-50/80 px-3 py-1 text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-primary-700 dark:border-primary-400/20 dark:bg-primary-500/10 dark:text-primary-200">
                 {{ i18n "ui_trending_eyebrow" }}
               </div>
@@ -520,8 +520,8 @@
     {{ $featuredTotal := len $featuredProducts }}
     {{ if gt $featuredTotal 0 }}
     <div class="relative py-6 sm:py-8 lg:py-10">
-      <div class="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-slate-300/70 to-transparent dark:via-white/10"></div>
-      <div class="mx-auto max-w-screen-xl px-4 md:px-6 lg:px-8">
+      <div class="absolute inset-x-0 top-0 h-px bg-linear-to-r from-transparent via-slate-300/70 to-transparent dark:via-white/10"></div>
+      <div class="mx-auto max-w-(--breakpoint-xl) px-4 md:px-6 lg:px-8">
         <div class="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
           <div class="max-w-2xl">
             <div class="inline-flex items-center rounded-full border border-primary-300/60 bg-primary-50/80 px-3 py-1 text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-primary-700 dark:border-primary-400/20 dark:bg-primary-500/10 dark:text-primary-200">
@@ -534,7 +534,7 @@
               {{ i18n "ui_featured_products_lead" }}
             </p>
           </div>
-          <a href="{{ "/products/" | relLangURL }}" class="inline-flex items-center gap-1 self-start rounded-full border border-slate-300/70 bg-white/70 px-4 py-2 text-xs font-semibold uppercase tracking-[0.16em] text-slate-700 shadow-sm backdrop-blur transition-colors hover:border-primary-300 hover:text-primary-700 dark:border-white/10 dark:bg-white/[0.04] dark:text-slate-200 dark:hover:border-primary-400/30 dark:hover:text-primary-200">
+          <a href="{{ "/products/" | relLangURL }}" class="inline-flex items-center gap-1 self-start rounded-full border border-slate-300/70 bg-white/70 px-4 py-2 text-xs font-semibold uppercase tracking-[0.16em] text-slate-700 shadow-sm backdrop-blur transition-colors hover:border-primary-300 hover:text-primary-700 dark:border-white/10 dark:bg-white/4 dark:text-slate-200 dark:hover:border-primary-400/30 dark:hover:text-primary-200">
             {{ i18n "ui_featured_products_all" }}
             <span aria-hidden="true">&rarr;</span>
           </a>
@@ -582,10 +582,10 @@
                   {{ $targetURL = . }}
                   {{ if hasPrefix . "http" }}{{ $isExternal = true }}{{ end }}
                 {{ end }}
-                <article class="w-full flex-shrink-0 px-2.5 sm:w-1/2 lg:w-1/3">
+                <article class="w-full shrink-0 px-2.5 sm:w-1/2 lg:w-1/3">
                   <div class="group flex h-full flex-col overflow-hidden rounded-2xl border border-slate-200/80 bg-white/95 shadow-sm transition-transform duration-300 hover:-translate-y-0.5 hover:shadow-md dark:border-white/10 dark:bg-slate-950/70">
                     <a href="{{ $p.RelPermalink }}" class="flex items-center gap-4 p-4">
-                      <div class="flex h-16 w-24 flex-shrink-0 items-center justify-center overflow-hidden rounded-xl bg-[linear-gradient(180deg,_rgba(241,245,249,0.9),_rgba(226,232,240,0.85))] px-2 py-1 dark:bg-[linear-gradient(180deg,_rgba(15,23,42,0.72),_rgba(2,6,23,0.9))]">
+                      <div class="flex h-16 w-24 shrink-0 items-center justify-center overflow-hidden rounded-xl bg-[linear-gradient(180deg,rgba(241,245,249,0.9),rgba(226,232,240,0.85))] px-2 py-1 dark:bg-[linear-gradient(180deg,rgba(15,23,42,0.72),rgba(2,6,23,0.9))]">
                         {{ with $p.Params.featured_image }}
                           {{ $imgPath := replace . "../assets/" "" }}
                           {{ with resources.Get $imgPath }}
@@ -601,7 +601,7 @@
                         </h3>
                         <div class="mt-1 flex flex-wrap gap-1">
                           {{ range first 2 $p.Params.tags }}
-                          <span class="inline-flex items-center rounded-full bg-slate-100 px-2 py-0.5 text-[0.62rem] font-semibold uppercase tracking-wider text-slate-600 dark:bg-white/[0.06] dark:text-slate-300">
+                          <span class="inline-flex items-center rounded-full bg-slate-100 px-2 py-0.5 text-[0.62rem] font-semibold uppercase tracking-wider text-slate-600 dark:bg-white/6 dark:text-slate-300">
                             {{ . | i18n | default . }}
                           </span>
                           {{ end }}
@@ -671,11 +671,11 @@
     {{ $partnersLink := "" }}
     {{ range .Site.Params.P3.Links }}{{ $partnersLink = .url }}{{ end }}
     <div class="relative py-8 sm:py-10 lg:py-12">
-        <div class="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-slate-300/70 to-transparent dark:via-white/10"></div>
-        <div class="mx-auto max-w-screen-xl px-4 md:px-6 lg:px-8">
+        <div class="absolute inset-x-0 top-0 h-px bg-linear-to-r from-transparent via-slate-300/70 to-transparent dark:via-white/10"></div>
+        <div class="mx-auto max-w-(--breakpoint-xl) px-4 md:px-6 lg:px-8">
             <div class="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
                 <div class="max-w-2xl">
-                    <div class="inline-flex items-center rounded-full border border-slate-300/70 bg-white/80 px-3 py-1 text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-slate-600 shadow-sm backdrop-blur dark:border-white/10 dark:bg-white/[0.04] dark:text-slate-300">
+                    <div class="inline-flex items-center rounded-full border border-slate-300/70 bg-white/80 px-3 py-1 text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-slate-600 shadow-sm backdrop-blur dark:border-white/10 dark:bg-white/4 dark:text-slate-300">
                         {{ $partnersEyebrow }}
                     </div>
                     <h2 class="mt-3 text-2xl font-black tracking-tight text-slate-950 sm:text-3xl dark:text-white">
@@ -686,35 +686,35 @@
                     </p>
                 </div>
                 {{ if $partnersLink }}
-                <a href="{{ $partnersLink }}" class="inline-flex flex-shrink-0 items-center gap-1 self-start rounded-full border border-slate-300/70 bg-white/70 px-4 py-2 text-xs font-semibold uppercase tracking-[0.16em] text-slate-700 shadow-sm backdrop-blur transition-colors hover:border-primary-300 hover:text-primary-700 dark:border-white/10 dark:bg-white/[0.04] dark:text-slate-200 dark:hover:border-primary-400/30 dark:hover:text-primary-200">
+                <a href="{{ $partnersLink }}" class="inline-flex shrink-0 items-center gap-1 self-start rounded-full border border-slate-300/70 bg-white/70 px-4 py-2 text-xs font-semibold uppercase tracking-[0.16em] text-slate-700 shadow-sm backdrop-blur transition-colors hover:border-primary-300 hover:text-primary-700 dark:border-white/10 dark:bg-white/4 dark:text-slate-200 dark:hover:border-primary-400/30 dark:hover:text-primary-200">
                     {{ range .Site.Params.P3.Links }}{{ .text }}{{ end }}
                     <span aria-hidden="true">&rarr;</span>
                 </a>
                 {{ end }}
             </div>
 
-            <div class="group relative mt-6 overflow-hidden rounded-2xl border border-slate-200/70 bg-white/60 py-6 backdrop-blur dark:border-white/10 dark:bg-white/[0.03]">
-                <div aria-hidden="true" class="pointer-events-none absolute inset-y-0 left-0 z-10 w-12 bg-gradient-to-r from-white to-transparent dark:from-slate-950"></div>
-                <div aria-hidden="true" class="pointer-events-none absolute inset-y-0 right-0 z-10 w-12 bg-gradient-to-l from-white to-transparent dark:from-slate-950"></div>
+            <div class="group relative mt-6 overflow-hidden rounded-2xl border border-slate-200/70 bg-white/60 py-6 backdrop-blur dark:border-white/10 dark:bg-white/3">
+                <div aria-hidden="true" class="pointer-events-none absolute inset-y-0 left-0 z-10 w-12 bg-linear-to-r from-white to-transparent dark:from-slate-950"></div>
+                <div aria-hidden="true" class="pointer-events-none absolute inset-y-0 right-0 z-10 w-12 bg-linear-to-l from-white to-transparent dark:from-slate-950"></div>
                 <div class="flex w-max animate-marquee items-center gap-12 pl-12 group-hover:[animation-play-state:paused]">
                     {{ range .Site.Params.P3.Logos }}
-                    <div class="flex flex-shrink-0 flex-col items-center gap-2">
+                    <div class="flex shrink-0 flex-col items-center gap-2">
                         {{ if .image }}
                         {{ $sponsor := resources.Get .image }}
-                        <img src="{{ $sponsor.RelPermalink }}" class="h-10 w-auto max-w-[8rem] object-contain opacity-70 grayscale transition-all group-hover:opacity-100 group-hover:grayscale-0 dark:invert" alt="{{ .alt }}" loading="lazy" />
+                        <img src="{{ $sponsor.RelPermalink }}" class="h-10 w-auto max-w-32 object-contain opacity-70 grayscale transition-all group-hover:opacity-100 group-hover:grayscale-0 dark:invert" alt="{{ .alt }}" loading="lazy" />
                         {{ else }}
                         {{ $sponsor := resources.Get "images/global/sample-logo.svg" }}
-                        <img src="{{ $sponsor.RelPermalink }}" class="h-10 w-auto max-w-[8rem] object-contain opacity-70 grayscale transition-all group-hover:opacity-100 group-hover:grayscale-0 dark:invert" alt="{{ .alt }}" loading="lazy" />
+                        <img src="{{ $sponsor.RelPermalink }}" class="h-10 w-auto max-w-32 object-contain opacity-70 grayscale transition-all group-hover:opacity-100 group-hover:grayscale-0 dark:invert" alt="{{ .alt }}" loading="lazy" />
                         {{ end }}
                         <span class="text-[0.6rem] font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400">{{ .identifier }}</span>
                     </div>
                     {{ end }}
                     {{/* Duplicate for seamless loop */}}
                     {{ range .Site.Params.P3.Logos }}
-                    <div aria-hidden="true" class="flex flex-shrink-0 flex-col items-center gap-2">
+                    <div aria-hidden="true" class="flex shrink-0 flex-col items-center gap-2">
                         {{ if .image }}
                         {{ $sponsor := resources.Get .image }}
-                        <img src="{{ $sponsor.RelPermalink }}" class="h-10 w-auto max-w-[8rem] object-contain opacity-70 grayscale transition-all group-hover:opacity-100 group-hover:grayscale-0 dark:invert" alt="" loading="lazy" />
+                        <img src="{{ $sponsor.RelPermalink }}" class="h-10 w-auto max-w-32 object-contain opacity-70 grayscale transition-all group-hover:opacity-100 group-hover:grayscale-0 dark:invert" alt="" loading="lazy" />
                         {{ end }}
                         <span class="text-[0.6rem] font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400">{{ .identifier }}</span>
                     </div>
