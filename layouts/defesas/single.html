@@ -1,0 +1,188 @@
+{{ define "main" }}
+{{ $isPt := eq .Site.Language.Lang "pt" }}
+{{ $defesaId := .Params.defesa_id }}
+{{ $defesa := "" }}
+{{ range hugo.Data.defesas }}
+  {{ if eq .id $defesaId }}
+    {{ $defesa = . }}
+  {{ end }}
+{{ end }}
+
+{{ if not $defesa }}
+  {{ warnf "defesa não encontrada em data/defesas.yaml: %s" $defesaId }}
+{{ end }}
+
+{{/* Estado derivado (também computado em defesa-body para reuso) */}}
+{{ $now := now }}
+{{ $scheduled := time $defesa.scheduled_date }}
+{{ $override := $defesa.status_override }}
+{{ $hasProduction := and $defesa.production_id (ne $defesa.production_id "") }}
+{{ $state := "upcoming" }}
+{{ if eq $override "withdrawn" }}
+  {{ $state = "withdrawn" }}
+{{ else if $scheduled.After $now }}
+  {{ $state = "upcoming" }}
+{{ else if $hasProduction }}
+  {{ $state = "deposited" }}
+{{ else }}
+  {{ $state = "held" }}
+{{ end }}
+
+{{/* Selo por estado */}}
+{{ $stateBadges := dict
+  "upcoming"  (dict "pt" "Defesa marcada"       "en" "Upcoming defense"   "class" "bg-primary-100 text-primary-800 dark:bg-primary-500/20 dark:text-primary-200")
+  "held"      (dict "pt" "Defesa realizada"     "en" "Defense held"       "class" "bg-slate-200 text-slate-800 dark:bg-white/10 dark:text-white")
+  "deposited" (dict "pt" "Trabalho depositado"  "en" "Work deposited"     "class" "bg-emerald-100 text-emerald-800 dark:bg-emerald-500/20 dark:text-emerald-200")
+  "withdrawn" (dict "pt" "Defesa cancelada"     "en" "Defense withdrawn"  "class" "bg-red-100 text-red-800 dark:bg-red-500/20 dark:text-red-200")
+}}
+{{ $badge := index $stateBadges $state }}
+{{ $badgeLabel := cond $isPt (index $badge "pt") (index $badge "en") }}
+{{ $badgeClass := index $badge "class" }}
+
+{{/* Data para display no hero */}}
+{{ $dateStr := "" }}
+{{ if $isPt }}
+  {{ $dateStr = $scheduled.Format "2 de January de 2006" }}
+  {{ $dateStr = replace $dateStr "January" "janeiro" }}
+  {{ $dateStr = replace $dateStr "February" "fevereiro" }}
+  {{ $dateStr = replace $dateStr "March" "março" }}
+  {{ $dateStr = replace $dateStr "April" "abril" }}
+  {{ $dateStr = replace $dateStr "May" "maio" }}
+  {{ $dateStr = replace $dateStr "June" "junho" }}
+  {{ $dateStr = replace $dateStr "July" "julho" }}
+  {{ $dateStr = replace $dateStr "August" "agosto" }}
+  {{ $dateStr = replace $dateStr "September" "setembro" }}
+  {{ $dateStr = replace $dateStr "October" "outubro" }}
+  {{ $dateStr = replace $dateStr "November" "novembro" }}
+  {{ $dateStr = replace $dateStr "December" "dezembro" }}
+{{ else }}
+  {{ $dateStr = $scheduled.Format "January 2, 2006" }}
+{{ end }}
+
+{{/* JSON-LD Event schema para estado upcoming; Article para deposited/held */}}
+{{ $schema := dict "@context" "https://schema.org" }}
+{{ if eq $state "upcoming" }}
+  {{ $schema = merge $schema (dict "@type" "Event" "name" .Title "startDate" $defesa.scheduled_date "eventStatus" "https://schema.org/EventScheduled") }}
+{{ else }}
+  {{ $schema = merge $schema (dict "@type" "Article" "headline" .Title "datePublished" (printf "%v" $defesa.held_date)) }}
+{{ end }}
+<script type="application/ld+json">{{ $schema | jsonify | safeJS }}</script>
+
+<article class="bg-[linear-gradient(180deg,#f8fafc_0%,#ffffff_30%,#f5f5f4_100%)] text-slate-950 dark:bg-[linear-gradient(180deg,#0f172a_0%,#111827_100%)] dark:text-white">
+  <section class="border-b border-slate-200/80 bg-slate-950 text-white dark:border-white/10">
+    <div class="mx-auto max-w-(--breakpoint-xl) px-4 py-10 md:px-6 lg:px-8 lg:py-14">
+      {{ partial "breadcrumbs.html" . }}
+      <a href="{{ "/defesas/" | relLangURL }}" class="inline-flex rounded-full border border-white/15 bg-white/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-white/80 transition-colors hover:bg-white/15">
+        {{ cond $isPt "Defesas" "Defenses" }}
+      </a>
+      <div class="mt-6 flex flex-col gap-4">
+        <div class="flex flex-wrap items-center gap-3">
+          <span class="rounded-full {{ $badgeClass }} px-4 py-1.5 text-xs font-black uppercase tracking-[0.16em]">
+            {{ $badgeLabel }}
+          </span>
+          <span class="text-sm font-semibold uppercase tracking-[0.2em] text-white/70">
+            {{ $dateStr }}{{ if $defesa.date_approximate }} <span class="opacity-60">({{ cond $isPt "aprox." "approx." }})</span>{{ end }}
+          </span>
+        </div>
+        <h1 class="max-w-5xl text-3xl font-black leading-tight md:text-4xl lg:text-5xl">
+          {{ .Title }}
+        </h1>
+        {{ with $defesa.location.remote_url }}
+        <p class="mt-2 text-sm text-white/80">
+          <a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="underline hover:text-white">
+            {{ cond $isPt "Participar remotamente" "Join remotely" }} →
+          </a>
+        </p>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+
+  <section class="mx-auto grid max-w-(--breakpoint-xl) gap-8 px-4 py-10 md:px-6 lg:grid-cols-[minmax(0,1fr)_20rem] lg:px-8 lg:py-14">
+    <div class="min-w-0 rounded-[1.75rem] border border-slate-200/80 bg-white/90 p-6 shadow-[0_18px_60px_rgba(15,23,42,0.08)] dark:border-white/10 dark:bg-white/4 md:p-8">
+      {{ partial "defesa-body.html" (dict "defesa" $defesa "lang" .Site.Language.Lang) }}
+    </div>
+
+    <aside class="space-y-5 lg:sticky lg:top-24 lg:self-start">
+      <div class="rounded-3xl border border-slate-200/80 bg-white/90 p-5 shadow-[0_18px_50px_rgba(15,23,42,0.08)] dark:border-white/10 dark:bg-white/4">
+        <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-slate-500 dark:text-white/75">{{ cond $isPt "Detalhes" "Details" }}</div>
+        <dl class="mt-4 space-y-3 text-sm">
+          <div>
+            <dt class="font-semibold">{{ cond $isPt "Estado" "Status" }}</dt>
+            <dd class="text-slate-600 dark:text-white/65">{{ $badgeLabel }}</dd>
+          </div>
+          {{ with $defesa.scheduled_date }}
+          <div>
+            <dt class="font-semibold">{{ cond $isPt "Data" "Date" }}</dt>
+            <dd class="text-slate-600 dark:text-white/65">{{ $dateStr }}</dd>
+          </div>
+          {{ $hasTime := and (ne ($scheduled.Format "15:04") "00:00") (not $defesa.date_approximate) }}
+          {{ if $hasTime }}
+          <div>
+            <dt class="font-semibold">{{ cond $isPt "Horário" "Time" }}</dt>
+            <dd class="text-slate-600 dark:text-white/65">{{ $scheduled.Format "15:04" }}</dd>
+          </div>
+          {{ end }}
+          {{ end }}
+          {{ with $defesa.type }}
+          <div>
+            <dt class="font-semibold">{{ cond $isPt "Tipo" "Type" }}</dt>
+            <dd class="text-slate-600 dark:text-white/65">{{ partial "defesa-type-label.html" (dict "type" . "lang" $.Site.Language.Lang) }}</dd>
+          </div>
+          {{ end }}
+          {{ with $defesa.program }}
+          <div>
+            <dt class="font-semibold">{{ cond $isPt "Programa" "Program" }}</dt>
+            <dd class="text-slate-600 dark:text-white/65">{{ . }}</dd>
+          </div>
+          {{ end }}
+          {{ if or $defesa.location.room $defesa.location.city $defesa.location.remote_url }}
+          <div>
+            <dt class="font-semibold">{{ cond $isPt "Local" "Location" }}</dt>
+            <dd class="text-slate-600 dark:text-white/65">
+              {{ with $defesa.location.room }}
+              <div class="inline-flex items-center gap-1.5">
+                <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.5-7-11a7 7 0 0 1 14 0c0 4.5-7 11-7 11z"/><circle cx="12" cy="10" r="3"/></svg>
+                {{ . }}
+              </div>
+              {{ end }}
+              {{ with $defesa.location.city }}<div class="text-xs text-slate-500 dark:text-white/50">{{ . }}</div>{{ end }}
+              {{ with $defesa.location.remote_url }}
+              <div class="mt-2">
+                <a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 font-semibold text-primary-700 hover:text-primary-800 dark:text-primary-200">
+                  <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+                  {{ cond $isPt "Sala virtual" "Virtual room" }} →
+                </a>
+              </div>
+              {{ end }}
+            </dd>
+          </div>
+          {{ end }}
+        </dl>
+      </div>
+
+      {{ if $defesa.students }}
+      <div class="rounded-3xl border border-slate-200/80 bg-white/90 p-5 shadow-[0_18px_50px_rgba(15,23,42,0.08)] dark:border-white/10 dark:bg-white/4">
+        <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-slate-500 dark:text-white/75">{{ cond $isPt "Aluno(s)" "Student(s)" }}</div>
+        <ul class="mt-4 space-y-2 text-sm">
+          {{ range $defesa.students }}
+          <li class="font-semibold text-slate-800 dark:text-white/80">
+            {{ if .slug }}
+              {{ $p := partial "people-lookup" .slug }}
+              {{ if $p.found }}
+                <a href="{{ $p.link | relLangURL }}" class="text-primary-700 hover:text-primary-800 dark:text-primary-200">{{ $p.name }}</a>
+              {{ else }}
+                {{ .name }}
+              {{ end }}
+            {{ else }}
+              {{ .name }}
+            {{ end }}
+          </li>
+          {{ end }}
+        </ul>
+      </div>
+      {{ end }}
+    </aside>
+  </section>
+</article>
+{{ end }}

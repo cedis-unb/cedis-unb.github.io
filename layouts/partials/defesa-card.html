@@ -1,0 +1,133 @@
+{{/*
+  defesa-card.html — card compacto usado em /defesas/ e em blocos derivados.
+
+  Entrada (dict):
+    defesa       — entrada de data/defesas.yaml (enriquecida com state/year)
+    lang         — pt | en
+    typeLabels   — dict de rótulos por tipo (pt|en já resolvido)
+    filterable   — bool (default false) — se true, aplica x-show do filtro Alpine
+    compact      — bool (default false) — variação menor para "Arquivo"
+*/}}
+{{ $d := .defesa }}
+{{ $lang := .lang }}
+{{ $isPt := eq $lang "pt" }}
+{{ $labels := .typeLabels }}
+{{ $filterable := .filterable | default false }}
+{{ $compact := .compact | default false }}
+
+{{ $state := $d.state }}
+{{ $stateBadges := dict
+  "upcoming"  (dict "label" (cond $isPt "Marcada"     "Upcoming")   "class" "bg-primary-100 text-primary-800 dark:bg-primary-500/20 dark:text-primary-200")
+  "held"      (dict "label" (cond $isPt "Realizada"   "Held")       "class" "bg-slate-200 text-slate-800 dark:bg-white/10 dark:text-white")
+  "deposited" (dict "label" (cond $isPt "Depositada"  "Deposited")  "class" "bg-emerald-100 text-emerald-800 dark:bg-emerald-500/20 dark:text-emerald-200")
+  "withdrawn" (dict "label" (cond $isPt "Cancelada"   "Withdrawn")  "class" "bg-red-100 text-red-800 dark:bg-red-500/20 dark:text-red-200")
+}}
+{{ $badge := index $stateBadges $state }}
+
+{{ $sd := time $d.scheduled_date }}
+{{ $dateStr := "" }}
+{{ if $isPt }}
+  {{ $dateStr = $sd.Format "2 jan 2006" }}
+  {{ $dateStr = replace $dateStr "Jan" "jan" }}
+  {{ $dateStr = replace $dateStr "Feb" "fev" }}
+  {{ $dateStr = replace $dateStr "Mar" "mar" }}
+  {{ $dateStr = replace $dateStr "Apr" "abr" }}
+  {{ $dateStr = replace $dateStr "May" "mai" }}
+  {{ $dateStr = replace $dateStr "Jun" "jun" }}
+  {{ $dateStr = replace $dateStr "Jul" "jul" }}
+  {{ $dateStr = replace $dateStr "Aug" "ago" }}
+  {{ $dateStr = replace $dateStr "Sep" "set" }}
+  {{ $dateStr = replace $dateStr "Oct" "out" }}
+  {{ $dateStr = replace $dateStr "Nov" "nov" }}
+  {{ $dateStr = replace $dateStr "Dec" "dez" }}
+{{ else }}
+  {{ $dateStr = $sd.Format "Jan 2, 2006" }}
+{{ end }}
+{{ if $d.date_approximate }}{{ $dateStr = printf "%s%s" $dateStr (cond $isPt " (aprox.)" " (approx.)") }}{{ end }}
+
+{{/* Hora — só exibida se ISO original tinha componente T horário não-zero.
+     Bootstrap trouxe todas defesas com T00:00:00; usuários passam a incluir
+     horário real ao marcar novas bancas. */}}
+{{ $timeStr := "" }}
+{{ $hasTime := and (ne ($sd.Format "15:04") "00:00") (not $d.date_approximate) }}
+{{ if $hasTime }}{{ $timeStr = $sd.Format "15:04" }}{{ end }}
+
+{{/* Local — presencial (room/city), virtual (remote_url), ou híbrido. */}}
+{{ $room := "" }}{{ with $d.location.room }}{{ $room = . }}{{ end }}
+{{ $remote := "" }}{{ with $d.location.remote_url }}{{ $remote = . }}{{ end }}
+
+{{ $title := "" }}
+{{ with $d.title }}
+  {{ $title = or (index . $lang) (index . "pt") (index . "en") }}
+{{ end }}
+
+{{ $studentNames := slice }}
+{{ range $d.students }}{{ $studentNames = $studentNames | append .name }}{{ end }}
+{{ $studentsText := "" }}
+{{ if eq (len $studentNames) 1 }}
+  {{ $studentsText = index $studentNames 0 }}
+{{ else if eq (len $studentNames) 2 }}
+  {{ $studentsText = printf "%s%s%s" (index $studentNames 0) (cond $isPt " e " " and ") (index $studentNames 1) }}
+{{ end }}
+
+{{ $advisorHtml := "" }}
+{{ with $d.advisor }}
+  {{ $p := partial "people-lookup" . }}
+  {{ if $p.found }}
+    {{ $advisorHtml = printf `<a href="%s" class="text-primary-700 hover:text-primary-800 dark:text-primary-200">%s</a>` ($p.link | relLangURL) $p.name }}
+  {{ end }}
+{{ end }}
+
+{{ $typeLabel := index $labels $d.type | default $d.type }}
+{{ $url := printf "/defesas/%s/" $d.id | relLangURL }}
+
+{{ $xshow := "" }}
+{{ if $filterable }}
+  {{ $xshow = printf "(filters.advisor === '' || filters.advisor === '%s') && (filters.program === '' || filters.program === '%s') && (filters.type === '' || filters.type === '%s')" ($d.advisor | default "") ($d.program | default "") $d.type }}
+{{ end }}
+
+<article
+  {{ if $filterable }}x-show="{{ $xshow }}"{{ end }}
+  class="rounded-2xl border border-slate-200 bg-white p-{{ cond $compact "4" "5" }} shadow-xs transition-colors hover:border-primary-400 dark:border-white/10 dark:bg-slate-950/30 dark:hover:border-primary-500/50"
+>
+  <div class="flex flex-wrap items-center gap-2">
+    <span class="rounded-full {{ index $badge "class" }} px-3 py-1 text-[0.65rem] font-black uppercase tracking-[0.14em]">{{ index $badge "label" }}</span>
+    <span class="text-xs font-semibold uppercase tracking-wider text-slate-600 dark:text-white/60">
+      {{ $dateStr }}{{ if $timeStr }} · {{ $timeStr }}{{ end }}
+    </span>
+    <span aria-hidden="true" class="text-slate-400 dark:text-white/40">·</span>
+    <span class="text-xs font-semibold text-slate-600 dark:text-white/70">{{ $typeLabel }}</span>
+  </div>
+  <h3 class="mt-3 text-{{ cond $compact "base" "lg" }} font-black leading-tight text-slate-950 dark:text-white">
+    <a href="{{ $url }}" class="transition-colors hover:text-primary-700 dark:hover:text-primary-200">
+      {{ or $title (i18n "ui_defesa_sem_titulo" | default (cond $isPt "Título a definir" "Title to be defined")) }}
+    </a>
+  </h3>
+  {{ if $studentsText }}
+  <p class="mt-2 text-sm text-slate-700 dark:text-white/75">
+    <span class="font-semibold text-slate-800 dark:text-white/85">{{ cond $isPt "Aluno(s):" "Student(s):" }}</span> {{ $studentsText }}
+  </p>
+  {{ end }}
+  {{ if $advisorHtml }}
+  <p class="mt-1 text-sm text-slate-600 dark:text-white/65">
+    <span class="font-semibold text-slate-700 dark:text-white/80">{{ cond $isPt "Orientador(a):" "Advisor:" }}</span>
+    {{ $advisorHtml | safeHTML }}
+  </p>
+  {{ end }}
+  {{ if or $room $remote }}
+  <p class="mt-2 flex flex-wrap gap-x-3 gap-y-1 text-xs text-slate-600 dark:text-white/60">
+    {{ with $room }}
+    <span class="inline-flex items-center gap-1">
+      <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.5-7-11a7 7 0 0 1 14 0c0 4.5-7 11-7 11z"/><circle cx="12" cy="10" r="3"/></svg>
+      {{ . }}{{ if $d.location.city }} · {{ $d.location.city }}{{ end }}
+    </span>
+    {{ end }}
+    {{ with $remote }}
+    <a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 font-semibold text-primary-700 hover:text-primary-800 dark:text-primary-200">
+      <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+      {{ cond $isPt "Sala virtual" "Virtual room" }}
+    </a>
+    {{ end }}
+  </p>
+  {{ end }}
+</article>

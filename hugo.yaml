@@ -208,6 +208,12 @@ languages:
           post: "Artigos, livros, teses, dissertações e TCCs"
           url: /publications/
           weight: 10
+        - identifier: pub-defesas
+          pre: researcher
+          name: "Defesas e qualificações"
+          post: "Bancas marcadas, defesas realizadas e trabalhos depositados"
+          url: /defesas/
+          weight: 15
         - identifier: pub-cursos
           pre: courses
           name: "Cursos e materiais didáticos"
@@ -477,6 +483,12 @@ languages:
           post: "Articles, books, theses, dissertations and undergrad theses"
           url: /publications/
           weight: 10
+        - identifier: pub-defesas
+          pre: researcher
+          name: "Defenses and qualifications"
+          post: "Scheduled committees, held defenses, and deposited works"
+          url: /defesas/
+          weight: 15
         - identifier: pub-cursos
           pre: courses
           name: "Courses and teaching materials"
