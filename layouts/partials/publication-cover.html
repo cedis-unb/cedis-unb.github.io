@@ -1,18 +1,25 @@
 {{/*
   publication-cover.html — capa visual dinâmica para publicações
 
-  Aparece nos cards do shortcode publications.html e no hero de
-  layouts/publications/single.html quando não há featured_image no
-  frontmatter.
+  Aparece nos cards do shortcode publications.html, nos listings de tag/
+  category (posts-template.html) e potencialmente no hero de publicações
+  individuais.
 
-  Renderiza um SVG inline com:
-    - Ícone baseado no "família" da publicação (paper / book / thesis)
-    - Ano em destaque
-    - Label do tipo (ARTIGO, TESE, LIVRO, ...)
+  Ícones distintos por TIPO específico (não só família):
+    - article      → folha com estrela (destaque de publicação científica)
+    - conference   → folha com "microphone" (destaque de apresentação)
+    - workshop     → folha simples (linhas de texto)
+    - book         → livros empilhados
+    - chapter      → livro aberto
+    - phd          → capelo com borla dourada + estrela (excelência)
+    - dissertation → capelo simples (mestrado)
+    - specialization → certificado enrolado
+    - tcc          → diploma retangular com fita
 
-  Estilos vivem em overrides.css (.pub-cover[data-pub-family="..."]).
-  Aqui só passamos o family e o conteúdo — cores + gradientes light/dark
-  ficam centralizados no CSS.
+  Famílias visuais (background gradient):
+    - paper (article/conference/workshop) — primary (azul)
+    - book  (book/chapter)                — secondary (laranja)
+    - thesis (phd/dissertation/spec/tcc)  — accent (vermelho)
 
   Uso:
     {{ partial "publication-cover.html" (dict
@@ -26,13 +33,17 @@
 {{- $lang := .lang | default "en" -}}
 {{- $isPt := eq $lang "pt" -}}
 
-{{/* Determina família visual */}}
+{{/* Determina família visual (para background) */}}
 {{- $family := "paper" -}}
 {{- if or (eq $type "book") (eq $type "chapter") (eq $type "book_section") (eq $type "incollection") -}}
   {{- $family = "book" -}}
 {{- else if or (eq $type "phd") (eq $type "dissertation") (eq $type "specialization") (eq $type "tcc") -}}
   {{- $family = "thesis" -}}
 {{- end -}}
+
+{{/* article e conference recebem destaque especial — publicações científicas
+     de maior visibilidade em produção acadêmica. */}}
+{{- $isHighlighted := or (eq $type "article") (eq $type "conference") -}}
 
 {{/* Label do tipo por idioma */}}
 {{- $labels := dict
@@ -65,11 +76,32 @@
 {{- $typeLabel := index $langLabels $type -}}
 {{- if not $typeLabel }}{{ $typeLabel = upper $type }}{{ end -}}
 
-<div class="pub-cover" data-pub-family="{{ $family }}" aria-hidden="true">
+<div class="pub-cover{{ if $isHighlighted }} pub-cover--highlight{{ end }}" data-pub-family="{{ $family }}" data-pub-type="{{ $type }}" aria-hidden="true">
+  {{ if $isHighlighted }}
+    <span class="pub-cover__badge" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 14.09 8.26 20.5 8.5 15.5 12.85 17.18 19 12 15.44 6.82 19 8.5 12.85 3.5 8.5 9.91 8.26z"/></svg>
+    </span>
+  {{ end }}
   <span class="pub-cover__year">{{ $year }}</span>
 
-  {{ if eq $family "paper" }}
-    {{/* Paper com linhas */}}
+  {{/* Ícone por tipo específico */}}
+  {{ if eq $type "article" }}
+    {{/* Folha com estrela — publicação científica em periódico */}}
+    <svg class="pub-cover__icon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="20" y="14" width="55" height="72" rx="4" fill="white" stroke="currentColor" stroke-width="3"/>
+      <path d="M28 32h35M28 44h30M28 68h22" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+      <path d="M47.5 51.5 L50.2 57.1 L56.3 57.9 L51.9 62.2 L53 68.3 L47.5 65.4 L42 68.3 L43.1 62.2 L38.7 57.9 L44.8 57.1 Z" fill="currentColor"/>
+    </svg>
+  {{ else if eq $type "conference" }}
+    {{/* Folha com microfone — apresentação em conferência */}}
+    <svg class="pub-cover__icon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="18" y="14" width="55" height="72" rx="4" fill="white" stroke="currentColor" stroke-width="3"/>
+      <path d="M26 32h30M26 44h25" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+      <rect x="55" y="52" width="14" height="22" rx="7" fill="currentColor"/>
+      <path d="M50 66 v3 c0 6 5.5 11 12 11 s12-5 12-11 v-3 M62 80 v6 M56 86 h12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+    </svg>
+  {{ else if eq $type "workshop" }}
+    {{/* Folha simples com linhas */}}
     <svg class="pub-cover__icon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
       <rect x="20" y="14" width="55" height="72" rx="4" fill="white" stroke="currentColor" stroke-width="3"/>
       <path d="M28 32h35M28 44h30M28 56h35M28 68h22" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
@@ -80,13 +112,46 @@
       <path d="M18 22h30v58l-15-7-15 7z" fill="white" stroke="currentColor" stroke-width="3"/>
       <path d="M52 22h30v58l-15-7-15 7z" fill="currentColor" opacity="0.45" stroke="currentColor" stroke-width="3"/>
     </svg>
-  {{ else }}
-    {{/* Capelo (graduation cap) */}}
+  {{ else if eq $type "phd" }}
+    {{/* Capelo + estrela dourada de excelência — máximo grau acadêmico */}}
     <svg class="pub-cover__icon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M50 20 L14 35 L50 50 L86 35 Z" fill="currentColor"/>
-      <path d="M26 42 v18 c0 6 11 10 24 10 s24 -4 24 -10 v-18" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/>
-      <path d="M86 35 v22" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
-      <circle cx="86" cy="62" r="3" fill="currentColor"/>
+      <path d="M50 18 L14 33 L50 48 L86 33 Z" fill="currentColor"/>
+      <path d="M26 40 v18 c0 6 11 10 24 10 s24 -4 24 -10 v-18" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/>
+      <path d="M86 33 v22" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="86" cy="60" r="3" fill="currentColor"/>
+      {{/* Estrela de excelência acima do capelo */}}
+      <path d="M50 74 L52 79 L57.5 79.5 L53.5 83 L54.5 88.5 L50 86 L45.5 88.5 L46.5 83 L42.5 79.5 L48 79 Z" fill="currentColor" opacity="0.85"/>
+    </svg>
+  {{ else if eq $type "dissertation" }}
+    {{/* Capelo simples — mestrado */}}
+    <svg class="pub-cover__icon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M50 25 L18 38 L50 51 L82 38 Z" fill="currentColor"/>
+      <path d="M28 44 v16 c0 5 10 9 22 9 s22 -4 22 -9 v-16" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/>
+      <path d="M82 38 v20" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="82" cy="62" r="2.5" fill="currentColor"/>
+    </svg>
+  {{ else if eq $type "specialization" }}
+    {{/* Certificado enrolado com fita */}}
+    <svg class="pub-cover__icon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="18" y="20" width="60" height="45" rx="3" fill="white" stroke="currentColor" stroke-width="3"/>
+      <path d="M26 32h44M26 42h44M26 52h30" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+      {{/* Fita/selo */}}
+      <circle cx="68" cy="72" r="10" fill="currentColor"/>
+      <path d="M62 78 L60 90 L68 85 L76 90 L74 78" fill="currentColor"/>
+    </svg>
+  {{ else if eq $type "tcc" }}
+    {{/* Diploma retangular com fita de graduação */}}
+    <svg class="pub-cover__icon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="16" y="24" width="60" height="48" rx="2" fill="white" stroke="currentColor" stroke-width="3"/>
+      <path d="M24 36h44M24 46h38M24 56h44" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+      {{/* Fita de graduação decorativa */}}
+      <path d="M78 26 L86 34 L78 42 L84 50 L74 50 L74 34 Z" fill="currentColor" opacity="0.8"/>
+    </svg>
+  {{ else }}
+    {{/* Fallback: folha simples */}}
+    <svg class="pub-cover__icon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="20" y="14" width="55" height="72" rx="4" fill="white" stroke="currentColor" stroke-width="3"/>
+      <path d="M28 32h35M28 44h30M28 56h35M28 68h22" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
     </svg>
   {{ end }}
 
