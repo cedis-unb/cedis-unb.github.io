@@ -28,7 +28,7 @@ publisher: TCU
 location: ''
 pages: 145-148
 volume: '1'
-external_url: https://portal.tcu.gov.br/governanca-em-tecnologia-de-informacao-e-comunicacao-para-o-setor-publico.htm
+external_url: https://portal.tcu.gov.br/governanca/
 spotify_podcast: ''
 github_repo: ''
 zenodo_record: ''

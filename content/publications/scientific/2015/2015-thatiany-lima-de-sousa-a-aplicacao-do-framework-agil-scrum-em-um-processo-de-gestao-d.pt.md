@@ -45,7 +45,7 @@ publisher: ''
 location: São Paulo, SP, Brasil
 pages: ''
 volume: ''
-external_url: https://www.tecsi.org/contecsi/index.php/contecsi/12CONTECSI/search/titles
+external_url: ''
 spotify_podcast: ''
 github_repo: ''
 zenodo_record: ''
