@@ -18,6 +18,9 @@ from typing import Any
 
 import yaml
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from shared.frontmatter import parse_frontmatter as _shared_parse_fm  # noqa: E402
+
 ROOT = Path(__file__).resolve().parent.parent
 CONTENT_DIR = ROOT / "content"
 REPORT_PATH = os.environ.get("CEDIS_I18N_REPORT")
@@ -53,14 +56,9 @@ class Issue:
 
 
 def parse_frontmatter(path: Path) -> tuple[dict[str, Any] | None, str]:
-    text = path.read_text(encoding="utf-8")
-    if not text.startswith("---"):
-        return None, text
-    parts = text.split("---", 2)
-    if len(parts) < 3:
-        return None, text
-    fm = yaml.safe_load(parts[1])
-    return (fm if isinstance(fm, dict) else None), parts[2]
+    """Delegado para scripts.shared.frontmatter — mantido como alias local
+    para não quebrar consumidores diretos deste módulo."""
+    return _shared_parse_fm(path)
 
 
 def base_key(path: Path) -> str:

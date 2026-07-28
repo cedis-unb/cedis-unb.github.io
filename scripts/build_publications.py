@@ -12,6 +12,7 @@ import argparse
 import hashlib
 import re
 import shutil
+import sys
 import tempfile
 import unicodedata
 from collections import defaultdict
@@ -19,6 +20,9 @@ from pathlib import Path
 from typing import Any
 
 import yaml
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from shared.frontmatter import parse_frontmatter_dict  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA_FILE = ROOT / "data" / "productions.yaml"
@@ -179,14 +183,9 @@ def normalize_name(value: str) -> str:
 
 
 def parse_frontmatter(path: Path) -> dict[str, Any]:
-    text_value = path.read_text(encoding="utf-8")
-    if not text_value.startswith("---"):
-        return {}
-    parts = text_value.split("---", 2)
-    if len(parts) < 3:
-        return {}
-    data = yaml.safe_load(parts[1])
-    return data if isinstance(data, dict) else {}
+    """Delegado para scripts.shared.frontmatter — mantido como alias local
+    para preservar o contrato original (dict vazio quando sem frontmatter)."""
+    return parse_frontmatter_dict(path) or {}
 
 
 def load_people_index() -> list[dict[str, str]]:

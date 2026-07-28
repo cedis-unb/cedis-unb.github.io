@@ -2,8 +2,8 @@
 {{ $isPt := eq .Site.Language.Lang "pt" }}
 {{ $lang := .Site.Language.Lang }}
 
-{{/* Estado derivado por defesa (mesma lógica de defesa-body.html). */}}
-{{ $now := now }}
+{{/* Estado derivado por defesa via partials/defesa-state.html
+     (mesma lógica de single.html e defesa-body.html). */}}
 {{ $upcoming := slice }}
 {{ $past := slice }}
 {{ $yearsSet := dict }}
@@ -11,19 +11,8 @@
 {{ $programsSet := dict }}
 {{ $typesSet := dict }}
 {{ range hugo.Data.defesas }}
-  {{ $override := .status_override }}
   {{ $sd := time .scheduled_date }}
-  {{ $hasProd := and .production_id (ne .production_id "") }}
-  {{ $state := "upcoming" }}
-  {{ if eq $override "withdrawn" }}
-    {{ $state = "withdrawn" }}
-  {{ else if $sd.After $now }}
-    {{ $state = "upcoming" }}
-  {{ else if $hasProd }}
-    {{ $state = "deposited" }}
-  {{ else }}
-    {{ $state = "held" }}
-  {{ end }}
+  {{ $state := partial "defesa-state.html" . }}
   {{/* Guardar cópia enriquecida com o estado e dados derivados. */}}
   {{ $enriched := merge . (dict
     "state" $state

@@ -26,7 +26,6 @@ from __future__ import annotations
 import argparse
 import re
 import sys
-import unicodedata
 from difflib import SequenceMatcher
 from pathlib import Path
 
@@ -36,9 +35,10 @@ except ImportError:
     print("ERRO: PyYAML não instalado.", file=sys.stderr)
     sys.exit(2)
 
-# reusa lógica ABNT do diagnóstico
+# reusa lógica ABNT do diagnóstico + helpers centralizados
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from normalize_people_slugs import canonicalize_author, abnt_forms, slugify  # noqa: E402
+from normalize_people_slugs import canonicalize_author, abnt_forms  # noqa: E402
+from shared.slugify import slugify_snake as slugify, strip_accents  # noqa: E402
 
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
@@ -73,8 +73,7 @@ def load_md_slugs() -> dict:
 
 def short_slug(name: str) -> str:
     """Gera slug 'primeiro + último sobrenome' (padrão comum dos .md)."""
-    n = unicodedata.normalize("NFKD", name)
-    n = "".join(c for c in n if not unicodedata.combining(c)).lower()
+    n = strip_accents(name).lower()
     n = re.sub(r"[^a-z\s]+", " ", n).strip()
     parts = [p for p in n.split() if p and (len(p) == 1 or p not in PARTICLES)]
     if len(parts) < 2:
