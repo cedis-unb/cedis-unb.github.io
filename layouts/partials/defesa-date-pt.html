@@ -1,0 +1,25 @@
+{{/*
+  defesa-date-pt.html — formata um time.Time como "2 de mês de AAAA" em PT.
+
+  Entrada: time.Time.
+  Retorna: string ex.: "14 de julho de 2026".
+
+  Hugo não expõe locale nativa para datas em pt-BR, então trocamos o nome
+  do mês em inglês pelo equivalente. Extraído de defesas/single.html e
+  defesa-body.html — mesma cadeia de 12 replaces estava duplicada.
+*/}}
+{{- $t := . -}}
+{{- $s := $t.Format "2 de January de 2006" -}}
+{{- $s = replace $s "January" "janeiro" -}}
+{{- $s = replace $s "February" "fevereiro" -}}
+{{- $s = replace $s "March" "março" -}}
+{{- $s = replace $s "April" "abril" -}}
+{{- $s = replace $s "May" "maio" -}}
+{{- $s = replace $s "June" "junho" -}}
+{{- $s = replace $s "July" "julho" -}}
+{{- $s = replace $s "August" "agosto" -}}
+{{- $s = replace $s "September" "setembro" -}}
+{{- $s = replace $s "October" "outubro" -}}
+{{- $s = replace $s "November" "novembro" -}}
+{{- $s = replace $s "December" "dezembro" -}}
+{{- return $s -}}

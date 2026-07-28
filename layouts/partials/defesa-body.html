@@ -20,21 +20,9 @@
 {{ $lang := .lang }}
 {{ $isPt := eq $lang "pt" }}
 
-{{/* --- Estado derivado --- */}}
-{{ $now := now }}
+{{/* --- Estado derivado (partials/defesa-state.html) --- */}}
 {{ $scheduled := time $d.scheduled_date }}
-{{ $override := $d.status_override }}
-{{ $hasProduction := and $d.production_id (ne $d.production_id "") }}
-{{ $state := "upcoming" }}
-{{ if eq $override "withdrawn" }}
-  {{ $state = "withdrawn" }}
-{{ else if $scheduled.After $now }}
-  {{ $state = "upcoming" }}
-{{ else if $hasProduction }}
-  {{ $state = "deposited" }}
-{{ else }}
-  {{ $state = "held" }}
-{{ end }}
+{{ $state := partial "defesa-state.html" $d }}
 
 {{/* Rótulo do tipo via partial reutilizável (consistente com single/list). */}}
 {{ $typeLabel := partial "defesa-type-label.html" (dict "type" $d.type "lang" $lang) }}
@@ -60,25 +48,8 @@
   {{ end }}
 {{ end }}
 
-{{/* Data em texto legível */}}
-{{ $dateStr := "" }}
-{{ if $isPt }}
-  {{ $dateStr = $scheduled.Format "2 de January de 2006" }}
-  {{ $dateStr = replace $dateStr "January" "janeiro" }}
-  {{ $dateStr = replace $dateStr "February" "fevereiro" }}
-  {{ $dateStr = replace $dateStr "March" "março" }}
-  {{ $dateStr = replace $dateStr "April" "abril" }}
-  {{ $dateStr = replace $dateStr "May" "maio" }}
-  {{ $dateStr = replace $dateStr "June" "junho" }}
-  {{ $dateStr = replace $dateStr "July" "julho" }}
-  {{ $dateStr = replace $dateStr "August" "agosto" }}
-  {{ $dateStr = replace $dateStr "September" "setembro" }}
-  {{ $dateStr = replace $dateStr "October" "outubro" }}
-  {{ $dateStr = replace $dateStr "November" "novembro" }}
-  {{ $dateStr = replace $dateStr "December" "dezembro" }}
-{{ else }}
-  {{ $dateStr = $scheduled.Format "January 2, 2006" }}
-{{ end }}
+{{/* Data em texto legível (PT via partial reutilizável). */}}
+{{ $dateStr := cond $isPt (partial "defesa-date-pt.html" $scheduled) ($scheduled.Format "January 2, 2006") }}
 {{ if $d.date_approximate }}
   {{ $dateStr = printf (cond $isPt "%s (data aproximada)" "%s (approximate date)") $dateStr }}
 {{ end }}
@@ -206,19 +177,33 @@
         </dd>
       </div>
       {{ end }}
+      {{/* Pré-computa mapas ID→page para evitar N+1 nos related_* abaixo.
+           Antes cada item em related_products iterava todas as páginas de
+           products; idem para publications. Agora é O(M+N) em vez de O(N*M). */}}
+      {{ $productPagesById := dict }}
+      {{ if $d.related_products }}
+        {{ range where site.RegularPages "Section" "products" }}
+          {{ $id := .Params.id | default .File.TranslationBaseName }}
+          {{ $productPagesById = merge $productPagesById (dict $id .) }}
+        {{ end }}
+      {{ end }}
+      {{ $publicationPagesByKey := dict }}
+      {{ if $d.related_publications }}
+        {{ range where site.RegularPages "Section" "publications" }}
+          {{ $pid := .Params.id | default "" }}
+          {{ $slug := .File.TranslationBaseName | default "" }}
+          {{ $idx := printf "%v" (.Params.publication_index | default "") }}
+          {{ if $pid }}{{ $publicationPagesByKey = merge $publicationPagesByKey (dict $pid .) }}{{ end }}
+          {{ if $slug }}{{ $publicationPagesByKey = merge $publicationPagesByKey (dict $slug .) }}{{ end }}
+          {{ if ne $idx "" }}{{ $publicationPagesByKey = merge $publicationPagesByKey (dict $idx .) }}{{ end }}
+        {{ end }}
+      {{ end }}
       {{ with $d.related_products }}
       <div>
         <dt class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-slate-500 dark:text-slate-400">{{ cond $isPt "Produtos gerados" "Products" }}</dt>
         <dd class="mt-1 flex flex-wrap gap-2">
           {{ range . }}
-          {{ $productID := . }}
-          {{ $productPage := "" }}
-          {{ range where site.RegularPages "Section" "products" }}
-            {{ $candidateID := .Params.id | default .File.TranslationBaseName }}
-            {{ if eq $candidateID $productID }}
-              {{ $productPage = . }}
-            {{ end }}
-          {{ end }}
+          {{ $productPage := index $productPagesById . }}
           {{ if $productPage }}
           <a href="{{ $productPage.RelPermalink }}" class="rounded-full border border-slate-200 bg-white px-3 py-1 font-medium text-primary-700 hover:border-primary-400 dark:border-white/10 dark:bg-white/6 dark:text-primary-200">{{ $productPage.Title }}</a>
           {{ else }}
@@ -233,16 +218,7 @@
         <dt class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-slate-500 dark:text-slate-400">{{ cond $isPt "Publicações vinculadas" "Related publications" }}</dt>
         <dd class="mt-1 space-y-2">
           {{ range . }}
-          {{ $publicationID := printf "%v" . }}
-          {{ $publicationPage := "" }}
-          {{ range where site.RegularPages "Section" "publications" }}
-            {{ $pageID := .Params.id | default "" }}
-            {{ $pageSlug := .File.TranslationBaseName | default "" }}
-            {{ $pageIndex := printf "%v" (.Params.publication_index | default "") }}
-            {{ if or (eq $pageID $publicationID) (or (eq $pageSlug $publicationID) (eq $pageIndex $publicationID)) }}
-              {{ $publicationPage = . }}
-            {{ end }}
-          {{ end }}
+          {{ $publicationPage := index $publicationPagesByKey (printf "%v" .) }}
           {{ if $publicationPage }}
           <div>
             <a href="{{ $publicationPage.RelPermalink }}" class="font-semibold text-primary-700 hover:text-primary-800 dark:text-primary-200">{{ $publicationPage.Title }}</a>

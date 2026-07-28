@@ -37,7 +37,6 @@ from __future__ import annotations
 import argparse
 import re
 import sys
-import unicodedata
 from collections import Counter, defaultdict
 from difflib import SequenceMatcher
 from pathlib import Path
@@ -48,6 +47,9 @@ except ImportError:
     print("ERRO: PyYAML não instalado. Rode 'pip install pyyaml'.", file=sys.stderr)
     sys.exit(2)
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from shared.slugify import slugify_snake as slugify, strip_accents as _strip_accents  # noqa: E402
+
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = REPO_ROOT / "data"
@@ -56,21 +58,10 @@ CONTENT_PEOPLE = REPO_ROOT / "content" / "people"
 
 # ---------- helpers ----------
 
-def slugify(name: str) -> str:
-    """Slug canônico: sem acento, minúsculo, underscore, sem stopwords comuns."""
-    n = unicodedata.normalize("NFKD", name)
-    n = "".join(c for c in n if not unicodedata.combining(c))
-    n = n.lower()
-    n = re.sub(r"[^a-z0-9]+", "_", n).strip("_")
-    return n
-
+# slugify: reexportado de shared.slugify.slugify_snake (compat).
+# _strip_accents: idem, de shared.slugify.strip_accents.
 
 PARTICLES = {"de", "da", "do", "das", "dos", "e", "del", "della", "van", "von"}
-
-
-def _strip_accents(s: str) -> str:
-    n = unicodedata.normalize("NFKD", s)
-    return "".join(c for c in n if not unicodedata.combining(c))
 
 
 def canonicalize_author(name: str) -> str:

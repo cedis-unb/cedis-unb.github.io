@@ -270,7 +270,7 @@ Ver `CONVENTIONS.md §7` para checklists práticos.
 | Orientando (card) | +1 bloco em `people.yaml` com `slug` | Validador | `/people/all/`, perfil orientador, áreas |
 | Colaborador com bio | 1 `.md` × 2 idiomas | `profile_level` correto | Perfil + card em `/people/all/` |
 | Pesquisador | 1 `.md` × 2 idiomas | `profile_level: researcher` | `/categories/researcher/`, áreas, `/map/`, `/quiz/` |
-| Advisor externo | `scripts/create_external_advisor_stubs.py` | (não bate no validador) | Aparece em pills de orientação |
+| Advisor externo | criar `.md` manual em `content/people/` com `profile_level: advisor_only` (padrão dos existentes) | (não bate no validador) | Aparece em pills de orientação |
 | Coautor citado | `scripts/derive_people.py --apply` | Automático | Bloco 4 do `/people/all/` |
 | Projeto | +1 bloco em `projects.yaml` opcional `.md` | ID único | Todas as áreas, pills, cascata i18n |
 | Área | +1 bloco em `areas.yaml` opcional `.md` | ID único | Cards, cascata i18n |

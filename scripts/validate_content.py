@@ -34,6 +34,8 @@ import sys
 from collections import defaultdict
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+
 try:
     import yaml  # type: ignore
 except ImportError:
@@ -213,23 +215,22 @@ def parse_year(value: object) -> int | None:
 
 
 def parse_frontmatter(md_path: Path) -> dict | None:
-    """Extrai o bloco YAML entre '---' do início do arquivo."""
+    """Extrai o bloco YAML entre '---' do início do arquivo.
+
+    Delega para scripts.shared.frontmatter e converte falhas de I/O ou
+    YAML em warnings — o validador nunca deve abortar por um único .md
+    problemático (ver PLANO-AUDITORIA-2026.md I02).
+    """
+    from shared.frontmatter import parse_frontmatter as _pfm  # noqa: WPS433
     try:
-        text = md_path.read_text(encoding="utf-8")
+        fm, _body = _pfm(md_path)
     except (OSError, UnicodeDecodeError) as e:
         warn("io", str(md_path.relative_to(ROOT)), f"não pude ler: {e}")
         return None
-    if not text.startswith("---"):
-        return None
-    parts = text.split("---", 2)
-    if len(parts) < 3:
-        return None
-    try:
-        fm = yaml.safe_load(parts[1])
     except yaml.YAMLError as e:
         warn("yaml", str(md_path.relative_to(ROOT)), f"frontmatter inválido: {e}")
         return None
-    return fm if isinstance(fm, dict) else None
+    return fm
 
 
 def collect_area_ids(areas_data: dict) -> set[str]:
@@ -388,6 +389,7 @@ def validate_defesas(
     if not isinstance(defesas_data, list):
         error("defesas", "data/defesas.yaml", "root deve ser lista de defesas")
         return set()
+    schema = load_schema("defesa")
     seen_ids: set[str] = set()
     for i, entry in enumerate(defesas_data):
         if not isinstance(entry, dict):
@@ -395,6 +397,7 @@ def validate_defesas(
             continue
         did = entry.get("id")
         location = f"data/defesas.yaml::[{i}] {did or '(sem id)'}"
+        validate_against_schema(entry, schema, location)
         if not did:
             error("defesas", location, "campo 'id' obrigatório")
             continue

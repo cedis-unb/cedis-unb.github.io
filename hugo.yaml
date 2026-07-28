@@ -15,16 +15,14 @@ languages:
     weight: 1
     params:
       data_lang: pt
-      color: blue
-      moto: "Bem vindo(a)!"  
+      moto: "Bem vindo(a)!"
       description: "Descubra o futuro da Engenharia de Software, da Aprendizagem e da Inteligência Artificial. \n Desde 2013, o Centro de Estudos, Desenvolvimento e Inovação em Software tem liderado projetos inovadores de pesquisa, desenvolvimento e educação."
-      seemore: 
+      seemore:
         text: "Conheça o CEDIS"
         link: /categories/knowledge_areas/
       authorimage: "../assets/images/global/sample-logo.svg"
       og_image: "/images/cedis-cover.png"
       disable_theme_toggle: false
-      disable_stay_uptodate: true
       p1:
         heading: "O que fazemos"
         image: "images/pages/our-mission.png"
@@ -291,16 +289,14 @@ languages:
     weight: 2
     params:
       data_lang: en
-      color: blue
       moto: "Welcome!"
       description: "Discover the future of Software Engineering, Learning, and Artificial Intelligence. Since 2013, the Center for Studies, Development, and Innovation in Software has led innovative projects in research, development, and education."
-      seemore: 
+      seemore:
         text: "Explore CEDIS"
         link: /categories/knowledge_areas/
       authorimage: "../assets/images/global/sample-logo.svg"
       og_image: "/images/cedis-cover.png"
       disable_theme_toggle: false
-      disable_stay_uptodate: true
       p1:
         heading: "What we do"
         image: "images/pages/our-mission.png"
