@@ -9,7 +9,7 @@ canonical_source: data/productions.yaml
 id: publication_2018_dantas_j_m_gestao_de_continuidade_de_servicos_de_ti_site_de_contingencia
 publication_index: 155
 publication_group: scientific
-publication_type: book chapter
+publication_type: book_section
 schema_type: Chapter
 year: 2018
 authors:
@@ -31,7 +31,7 @@ external_url: https://portal.tcu.gov.br/governanca-em-tecnologia-de-informacao-e
 spotify_podcast: ''
 github_repo: ''
 zenodo_record: ''
-summary: Book Chapter by DANTAS, J. M., FREITAS, S. A. A. (2018).
+summary: Book Section by DANTAS, J. M., FREITAS, S. A. A. (2018).
 bibtex: "@incollection{2018-dantas-j-m-gestao-de-continuidade-de-servicos-de-ti-site-de-contingencia,\n\
   \  author = {DANTAS, J. M. and FREITAS, S. A. A.},\n  title = {Gestão de Continuidade\
   \ de Serviços de TI: Site de Contingência},\n  year = {2018},\n  booktitle = {Governança\

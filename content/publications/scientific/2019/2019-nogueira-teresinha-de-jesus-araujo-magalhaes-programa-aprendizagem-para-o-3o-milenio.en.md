@@ -10,7 +10,7 @@ canonical_source: data/productions.yaml
 id: publication_2019_nogueira_teresinha_de_jesus_araujo_magalhaes_programa_aprendizagem_para_o_3o_milenio
 publication_index: 136
 publication_group: scientific
-publication_type: book chapter
+publication_type: book_section
 schema_type: Chapter
 year: 2019
 authors:
@@ -47,7 +47,7 @@ external_url: ''
 spotify_podcast: ''
 github_repo: ''
 zenodo_record: ''
-summary: Book Chapter by Nogueira, Teresinha de Jesus Araújo Magalhães, Melo, Lívia
+summary: Book Section by Nogueira, Teresinha de Jesus Araújo Magalhães, Melo, Lívia
   Veleda de Sousa e, FREITAS, S. A. A., Leite, Letícia Lopes, Macedo, Harineide Madeira
   (2019).
 bibtex: "@incollection{2019-nogueira-teresinha-de-jesus-araujo-magalhaes-programa-aprendizagem-para-o-3o-milenio,\n\

@@ -9,7 +9,7 @@ canonical_source: data/productions.yaml
 id: publication_2018_martins_l_b_gestao_de_riscos_e_governanca_de_ti_aplicada_a_rede_de_comunicacao_govern
 publication_index: 157
 publication_group: scientific
-publication_type: book chapter
+publication_type: book_section
 schema_type: Chapter
 year: 2018
 authors:
@@ -31,7 +31,7 @@ external_url: https://portal.tcu.gov.br/governanca-em-tecnologia-de-informacao-e
 spotify_podcast: ''
 github_repo: ''
 zenodo_record: ''
-summary: Book Chapter de MARTINS, L. B., FREITAS, S. A. A. (2018).
+summary: Book Section de MARTINS, L. B., FREITAS, S. A. A. (2018).
 bibtex: "@incollection{2018-martins-l-b-gestao-de-riscos-e-governanca-de-ti-aplicada-a-rede-de-comunicacao-govern,\n\
   \  author = {MARTINS, L. B. and FREITAS, S. A. A.},\n  title = {Gestão de riscos\
   \ e governança de TI aplicada à rede de comunicação governamental},\n  year = {2018},\n\

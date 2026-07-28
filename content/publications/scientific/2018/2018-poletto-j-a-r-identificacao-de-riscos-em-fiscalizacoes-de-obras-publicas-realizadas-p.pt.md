@@ -10,7 +10,7 @@ canonical_source: data/productions.yaml
 id: publication_2018_poletto_j_a_r_identificacao_de_riscos_em_fiscalizacoes_de_obras_publicas_realizadas_p
 publication_index: 158
 publication_group: scientific
-publication_type: book chapter
+publication_type: book_section
 schema_type: Chapter
 year: 2018
 authors:
@@ -34,7 +34,7 @@ external_url: https://portal.tcu.gov.br/governanca-em-tecnologia-de-informacao-e
 spotify_podcast: ''
 github_repo: ''
 zenodo_record: ''
-summary: Book Chapter de POLETTO, J. A. R., FREITAS, S. A. A. (2018).
+summary: Book Section de POLETTO, J. A. R., FREITAS, S. A. A. (2018).
 bibtex: "@incollection{2018-poletto-j-a-r-identificacao-de-riscos-em-fiscalizacoes-de-obras-publicas-realizadas-p,\n\
   \  author = {POLETTO, J. A. R. and FREITAS, S. A. A.},\n  title = {Identificação\
   \ de riscos em fiscalizações de obras públicas realizadas pelo TCU e o papel da\
