@@ -10,7 +10,7 @@ canonical_source: data/productions.yaml
 id: publication_2018_felisdorio_r_c_s_analise_do_processo_de_gestao_de_riscos_na_elaboracao_do_plano_diret
 publication_index: 156
 publication_group: scientific
-publication_type: book chapter
+publication_type: book_section
 schema_type: Chapter
 year: 2018
 authors:
@@ -32,7 +32,7 @@ external_url: https://portal.tcu.gov.br/governanca-em-tecnologia-de-informacao-e
 spotify_podcast: ''
 github_repo: ''
 zenodo_record: ''
-summary: Book Chapter by FELISDORIO, R. C. S., FREITAS, S. A. A. (2018).
+summary: Book Section by FELISDORIO, R. C. S., FREITAS, S. A. A. (2018).
 bibtex: "@incollection{2018-felisdorio-r-c-s-analise-do-processo-de-gestao-de-riscos-na-elaboracao-do-plano-diret,\n\
   \  author = {FELISDORIO, R. C. S. and FREITAS, S. A. A.},\n  title = {Análise do\
   \ processo de gestão de riscos na elaboração do plano diretor de tecnologia da informação\

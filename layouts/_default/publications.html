@@ -233,33 +233,43 @@
           <div class="flex flex-col gap-5">
             <div class="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
               <div class="min-w-0 text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-gray-500 dark:text-white/75">{{ $filterHeading }}</div>
-              <p class="text-sm font-semibold text-gray-600 dark:text-white/65" x-text="'{{ $publicationCount }} → ' + visibleCount"></p>
+              {{/* Contador filtrado com aria-live para anunciar mudança.
+                   Formato antes ("145 → 12") não era autoexplicativo. */}}
+              <p role="status" aria-live="polite" class="text-sm font-semibold text-gray-600 dark:text-white/65"
+                 x-text="visibleCount + ' {{ cond $isPt "de" "of" }} {{ $publicationCount }} {{ cond $isPt "resultados" "results" }}'"></p>
             </div>
             <div class="grid gap-3" style="grid-template-columns: repeat(auto-fit, minmax(min(100%, 10rem), 1fr)); align-items: end;">
-              <label class="flex min-w-0 flex-col gap-1 text-xs font-semibold text-gray-700 dark:text-white/80">
+              <label for="pub-filter-year" class="flex min-w-0 flex-col gap-1 text-xs font-semibold text-gray-700 dark:text-white/80">
                 <span>{{ $filterYearLabel }}</span>
-                <select x-model="filters.year" class="w-full min-w-0 rounded-lg border border-black/10 bg-white px-3 py-2 text-sm font-medium text-gray-900 focus:border-primary-500 focus:outline-hidden focus:ring-2 focus:ring-primary-200 dark:border-white/10 dark:bg-gray-900 dark:text-white dark:focus:ring-primary-500/30">
+                <select id="pub-filter-year" x-model="filters.year" class="w-full min-w-0 rounded-lg border border-black/10 bg-white px-3 py-2 text-sm font-medium text-gray-900 focus:border-primary-500 focus:outline-hidden focus:ring-2 focus:ring-primary-200 dark:border-white/10 dark:bg-gray-900 dark:text-white dark:focus:ring-primary-500/30">
                   <option value="">{{ $filterAllLabel }}</option>
                   {{ range $filterYears }}
                   <option value="{{ . }}">{{ . }}</option>
                   {{ end }}
                 </select>
               </label>
-              <label class="flex min-w-0 flex-col gap-1 text-xs font-semibold text-gray-700 dark:text-white/80">
+              <label for="pub-filter-type" class="flex min-w-0 flex-col gap-1 text-xs font-semibold text-gray-700 dark:text-white/80">
                 <span>{{ $filterTypeLabel }}</span>
-                <select x-model="filters.type" class="w-full min-w-0 rounded-lg border border-black/10 bg-white px-3 py-2 text-sm font-medium text-gray-900 focus:border-primary-500 focus:outline-hidden focus:ring-2 focus:ring-primary-200 dark:border-white/10 dark:bg-gray-900 dark:text-white dark:focus:ring-primary-500/30">
+                <select id="pub-filter-type" x-model="filters.type" class="w-full min-w-0 rounded-lg border border-black/10 bg-white px-3 py-2 text-sm font-medium text-gray-900 focus:border-primary-500 focus:outline-hidden focus:ring-2 focus:ring-primary-200 dark:border-white/10 dark:bg-gray-900 dark:text-white dark:focus:ring-primary-500/30">
                   <option value="">{{ $filterAllLabel }}</option>
                   {{ range $filterTypes }}
-                  <option value="{{ . }}">{{ i18n (printf "pub_type_%s" .) | default . }}</option>
+                  {{/* replace " " "_" cobre casos legados como "book chapter" caso reapareçam. */}}
+                  {{ $key := printf "pub_type_%s" (replace . " " "_") }}
+                  {{ $label := i18n $key }}
+                  {{ if not $label }}{{ $label = . }}{{ end }}
+                  <option value="{{ . }}">{{ $label }}</option>
                   {{ end }}
                 </select>
               </label>
-              <label class="flex min-w-0 flex-col gap-1 text-xs font-semibold text-gray-700 dark:text-white/80">
+              <label for="pub-filter-topic" class="flex min-w-0 flex-col gap-1 text-xs font-semibold text-gray-700 dark:text-white/80">
                 <span>{{ $filterTopicLabel }}</span>
-                <select x-model="filters.topic" class="w-full min-w-0 rounded-lg border border-black/10 bg-white px-3 py-2 text-sm font-medium text-gray-900 focus:border-primary-500 focus:outline-hidden focus:ring-2 focus:ring-primary-200 dark:border-white/10 dark:bg-gray-900 dark:text-white dark:focus:ring-primary-500/30">
+                <select id="pub-filter-topic" x-model="filters.topic" class="w-full min-w-0 rounded-lg border border-black/10 bg-white px-3 py-2 text-sm font-medium text-gray-900 focus:border-primary-500 focus:outline-hidden focus:ring-2 focus:ring-primary-200 dark:border-white/10 dark:bg-gray-900 dark:text-white dark:focus:ring-primary-500/30">
                   <option value="">{{ $filterAllLabel }}</option>
                   {{ range $filterTopics }}
-                  <option value="{{ . }}">{{ . | i18n }}</option>
+                  {{/* translated-label cobre i18n direto + fallback via
+                       project/area/people-lookup e humanize (evita rótulos
+                       vazios quando slug não tem chave i18n). */}}
+                  <option value="{{ . }}">{{ partial "translated-label.html" (dict "value" .) }}</option>
                   {{ end }}
                 </select>
               </label>
@@ -356,12 +366,16 @@
             {{ with $pub.doi_isbn }}{{ if . }}{{ $identifier := printf "%v" . }}{{ if and (hasPrefix $identifier "10.") (in $identifier "/") }}{{ $bibFields = $bibFields | append (printf "  doi = {%s}" $identifier) }}{{ else }}{{ $bibFields = $bibFields | append (printf "  isbn = {%s}" $identifier) }}{{ end }}{{ end }}{{ end }}
             {{ $bibtex := printf "@%s{%s,\n%s\n}" $bibtype $bibKey (delimit $bibFields ",\n") }}
 
+            {{/* filteredTags como JSON array — .includes() sobre array
+                 é seguro para tags com espaços/pipes (após consolidação
+                 de "active learning" → "active_learning" hoje não há tags
+                 com espaço, mas defende contra regressão). */}}
+            {{ $filterTagsJson := $filteredTags | jsonify }}
             <li x-data="{ open: false, copied: false }"
                 data-pub-item
                 data-pub-year="{{ $entry.yearLabel }}"
                 data-pub-type="{{ $filterType }}"
-                data-pub-topics="|{{ $filterTagsJoin }}|"
-                x-show="(filters.year === '' || filters.year === '{{ $entry.yearLabel }}') && (filters.type === '' || filters.type === '{{ $filterType }}') && (filters.topic === '' || ('|{{ $filterTagsJoin }}|').includes('|' + filters.topic + '|'))"
+                x-show="(filters.year === '' || filters.year === '{{ $entry.yearLabel }}') && (filters.type === '' || filters.type === '{{ $filterType }}') && (filters.topic === '' || ({{ $filterTagsJson }}).includes(filters.topic))"
                 class="list-none rounded-3xl border border-black/5 bg-white/80 px-5 py-5 text-base leading-7 text-gray-700 shadow-[0_16px_50px_rgba(15,23,42,0.08)] backdrop-blur dark:border-white/10 dark:bg-white/4 dark:text-white/80">
               <div class="flex flex-col gap-5">
                 <div class="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">

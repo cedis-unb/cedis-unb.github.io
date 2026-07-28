@@ -40,7 +40,7 @@ external_url: ''
 spotify_podcast: ''
 github_repo: ''
 zenodo_record: ''
-summary: Book_Section by MELO, L. V. S. E., NOGUEIRA, T. J. A. M., LEITE, L. L., FREITAS,
+summary: Book Section by MELO, L. V. S. E., NOGUEIRA, T. J. A. M., LEITE, L. L., FREITAS,
   S. A. A. (2021).
 bibtex: "@incollection{2021-melo-l-v-s-e-programa-aprendizagem-para-o-3o-milenio-a3m,\n\
   \  author = {MELO, L. V. S. E. and NOGUEIRA, T. J. A. M. and LEITE, L. L. and FREITAS,\

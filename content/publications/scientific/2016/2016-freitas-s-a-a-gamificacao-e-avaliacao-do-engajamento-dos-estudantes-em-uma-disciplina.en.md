@@ -29,7 +29,7 @@ authors_structured:
   url: /people/costa_ricardo_lopes
 tags:
 - gamification
-- active learning
+- active_learning
 advisors: []
 doi_isbn: 10.5753/cbie.sbie.2016.370
 source_title: XXVII Simpósio Brasileiro de Informática na Educação
