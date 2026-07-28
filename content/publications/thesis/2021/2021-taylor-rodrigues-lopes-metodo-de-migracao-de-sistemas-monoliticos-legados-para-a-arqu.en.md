@@ -27,7 +27,7 @@ publisher: Biblioteca Central da Universidade de Brasília
 location: ''
 pages: ''
 volume: ''
-external_url: http://repositorio2.unb.br/jspui/handle/10482/41178
+external_url: https://repositorio.unb.br/handle/10482/41178
 spotify_podcast: ''
 github_repo: ''
 zenodo_record: ''

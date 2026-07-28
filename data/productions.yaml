@@ -3332,7 +3332,7 @@ items:
     program: curso_ppca
     advisors:
       - andre_lanna
-    url: http://repositorio2.unb.br/jspui/handle/10482/41178
+    url: https://repositorio.unb.br/handle/10482/41178
     year: 2021
     defesa_id: taylor-lopes-2021-06-15
   - authors:
@@ -4042,7 +4042,7 @@ items:
     type: book
     program: ''
     advisors: []
-    url: https://portal.tcu.gov.br/governanca-em-tecnologia-de-informacao-e-comunicacao-para-o-setor-publico.htm
+    url: https://portal.tcu.gov.br/governanca/
     year: 2018
   - authors:
       - MARSICANO, G. C.
@@ -4548,7 +4548,7 @@ items:
     type: book_section
     program: ''
     advisors: []
-    url: https://portal.tcu.gov.br/governanca-em-tecnologia-de-informacao-e-comunicacao-para-o-setor-publico.htm
+    url: https://portal.tcu.gov.br/governanca/
     year: 2018
   - authors:
       - FELISDORIO, R. C. S.
@@ -4573,7 +4573,7 @@ items:
     type: book_section
     program: ''
     advisors: []
-    url: https://portal.tcu.gov.br/governanca-em-tecnologia-de-informacao-e-comunicacao-para-o-setor-publico.htm
+    url: https://portal.tcu.gov.br/governanca/
     year: 2018
   - authors:
       - MARTINS, L. B.
@@ -4598,7 +4598,7 @@ items:
     type: book_section
     program: ''
     advisors: []
-    url: https://portal.tcu.gov.br/governanca-em-tecnologia-de-informacao-e-comunicacao-para-o-setor-publico.htm
+    url: https://portal.tcu.gov.br/governanca/
     year: 2018
   - authors:
       - POLETTO, J. A. R.
@@ -4623,7 +4623,7 @@ items:
     type: book_section
     program: ''
     advisors: []
-    url: https://portal.tcu.gov.br/governanca-em-tecnologia-de-informacao-e-comunicacao-para-o-setor-publico.htm
+    url: https://portal.tcu.gov.br/governanca/
     year: 2018
   - authors:
       - ARAUJO, A. N. L.
@@ -9191,7 +9191,7 @@ items:
     type: conference
     program: ''
     advisors: []
-    url: https://www.tecsi.org/contecsi/index.php/contecsi/12CONTECSI/search/titles
+    url: ''
     year: 2015
   - authors:
       - Thatiany Lima de Sousa
