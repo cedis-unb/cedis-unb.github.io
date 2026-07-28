@@ -9,7 +9,7 @@ canonical_source: data/productions.yaml
 id: publication_2015_maciel_cristiano_a_multi_agent_architecture_to_support_ubiquitous_applications_in_sma
 publication_index: 200
 publication_group: scientific
-publication_type: book chapter
+publication_type: book_section
 schema_type: Chapter
 year: 2015
 authors:
@@ -45,7 +45,7 @@ external_url: ''
 spotify_podcast: ''
 github_repo: ''
 zenodo_record: ''
-summary: Book Chapter de MACIEL, CRISTIANO, de Souza, Patricia Cristiane, Viterbo,
+summary: Book Section de MACIEL, CRISTIANO, de Souza, Patricia Cristiane, Viterbo,
   José, Mendes, Fabiana Freitas, El Fallah Seghrouchni, Amal (2015).
 bibtex: "@incollection{2015-maciel-cristiano-a-multi-agent-architecture-to-support-ubiquitous-applications-in-sma,\n\
   \  author = {MACIEL, CRISTIANO and de Souza, Patricia Cristiane and Viterbo, José\

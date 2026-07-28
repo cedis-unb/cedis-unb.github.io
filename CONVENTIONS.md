@@ -681,6 +681,35 @@ Recortes específicos já adotados:
 - Publicações de Ricardo Ajax Dias Kosloski no CEDIS devem considerar
   **2014 em diante**.
 
+### 2.8.1 `historical_no_defense_record: true` (opt-out de banca formal)
+
+Itens muito antigos (tipicamente especializações do PPCA 2008-2010) têm
+publicação catalogada em `productions.yaml` mas nenhum registro recuperável
+de banca, data exata, examinadores ou local. Essas defesas ocorreram, mas
+recuperar as atas hoje é impraticável.
+
+Para esses casos, marque o item com:
+
+```yaml
+historical_no_defense_record: true
+```
+
+Efeito:
+- `scripts/validate_content.py` reconhece o flag e **não** emite warning
+  cobrando `defesa_id` (regra normal: itens `type ∈ {tcc, dissertation,
+  phd, specialization}` com `year >= 2008` precisam de entrada em
+  `data/defesas.yaml`).
+- A publicação continua sendo listada normalmente em `/publications/`
+  e nos contadores por autor/orientador/área.
+- Não gera página `/defesas/<slug>/` — o registro segue existindo só
+  como publicação, sem a entidade evento associada.
+
+Não use este flag para defesas recentes que simplesmente ainda não
+foram migradas — para essas, crie a entrada em `data/defesas.yaml`
+mesmo que incompleta (com `date_approximate: true` e
+`needs_manual_review: true`). Reserve `historical_no_defense_record`
+para casos em que a informação foi genuinamente perdida.
+
 ### 2.9 Ordenação de listas
 
 Listas de publicações, produções e orientações geradas a partir de

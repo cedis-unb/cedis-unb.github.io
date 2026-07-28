@@ -8,9 +8,23 @@
       en: 'Git Ranking: Developing a Gamified Application for Managing and Motivating Agile Teams as a GitHub App'
     summary:
       pt: >-
-        O presente trabalho aborda os desafios enfrentados por equipes de desenvolvimento de software em manter o engajamento contínuo e a visibilidade do progresso individual dentro de metodologias ágeis. O objetivo principal é desenvolver uma ferramenta gamificada de apoio ao Scrum, concebida como um GitHub App integrado para gestão e motivação de equipes, integrando elementos do framework Octalysis para equilibrar motivadores intrínsecos e extrínsecos. A metodologia adotada classifica-se como aplicada e exploratória, com abordagem mista. O processo metodológico incluiu a identificação do perfil motivacional dos usuários através do Inventário de Motivação Intrínseca (IMI), correlacionando-o aos Core Drives do Octalysis, e a seleção de técnicas de gamificação via Técnica de Juízes. Como resultados, o trabalho apresenta a especificação dos requisitos funcionais priorizados pelo método MoSCoW, a arquitetura da solução baseada no consumo de Webhooks do GitHub processados via backend Node.js e apresentados em uma interface React/Next.js. Foram desenvolvidos protótipos de alta fidelidade que materializam a proposta, focando em um dashboard de métricas e perfil de conquistas com elementos de gamificação, como insígnias, barras de progresso e feedback visual contínuo baseado nas ações reais dos desenvolvedores nos repositórios. O estudo conclui a etapa de planejamento e design da solução, estabelecendo as bases para a implementação e validação que ocorrerão na próxima fase do projeto.
+        O presente trabalho aborda os desafios enfrentados por equipes de desenvolvimento de software em manter o engajamento contínuo e a visibilidade do progresso individual dentro de metodologias ágeis.
+        O objetivo principal é desenvolver uma ferramenta gamificada de apoio ao Scrum, concebida como um GitHub App integrado para gestão e motivação de equipes, integrando elementos do framework Octalysis
+        para equilibrar motivadores intrínsecos e extrínsecos. A metodologia adotada classifica-se como aplicada e exploratória, com abordagem mista. O processo metodológico incluiu a identificação do perfil
+        motivacional dos usuários através do Inventário de Motivação Intrínseca (IMI), correlacionando-o aos Core Drives do Octalysis, e a seleção de técnicas de gamificação via Técnica de Juízes. Como
+        resultados, o trabalho apresenta a especificação dos requisitos funcionais priorizados pelo método MoSCoW, a arquitetura da solução baseada no consumo de Webhooks do GitHub processados via backend
+        Node.js e apresentados em uma interface React/Next.js. Foram desenvolvidos protótipos de alta fidelidade que materializam a proposta, focando em um dashboard de métricas e perfil de conquistas com
+        elementos de gamificação, como insígnias, barras de progresso e feedback visual contínuo baseado nas ações reais dos desenvolvedores nos repositórios. O estudo conclui a etapa de planejamento e
+        design da solução, estabelecendo as bases para a implementação e validação que ocorrerão na próxima fase do projeto.
       en: >-
-        This work addresses the challenges faced by software development teams in maintaining continuous engagement and the visibility of individual progress within agile methodologies. The main objective is to develop a gamified tool to support Scrum, designed as an integrated GitHub App for team management and motivation, integrating elements of the Octalysis framework to balance intrinsic and extrinsic motivators. The adopted methodology is classified as applied and exploratory, with a mixed approach. The methodological process included identifying the users' motivational profile through the Intrinsic Motivation Inventory (IMI), correlating it to the Core Drives of Octalysis, and selecting gamification techniques via the Judges' Technique. As results, the work presents the specification of functional requirements prioritized by the MoSCoW method, the solution architecture based on the consumption of GitHub Webhooks processed via a Node.js backend and presented in a React/Next.js interface. High-fidelity prototypes were developed to materialize the proposal, focusing on a metrics dashboard and achievements profile with gamification elements, such as badges, progress bars, and continuous visual feedback based on the actual actions of developers in the repositories. The study concludes the planning and design stage of the solution, establishing the foundations for the implementation and validation that will occur in the next phase of the project.
+        This work addresses the challenges faced by software development teams in maintaining continuous engagement and the visibility of individual progress within agile methodologies. The main objective
+        is to develop a gamified tool to support Scrum, designed as an integrated GitHub App for team management and motivation, integrating elements of the Octalysis framework to balance intrinsic and
+        extrinsic motivators. The adopted methodology is classified as applied and exploratory, with a mixed approach. The methodological process included identifying the users' motivational profile through
+        the Intrinsic Motivation Inventory (IMI), correlating it to the Core Drives of Octalysis, and selecting gamification techniques via the Judges' Technique. As results, the work presents the specification
+        of functional requirements prioritized by the MoSCoW method, the solution architecture based on the consumption of GitHub Webhooks processed via a Node.js backend and presented in a React/Next.js
+        interface. High-fidelity prototypes were developed to materialize the proposal, focusing on a metrics dashboard and achievements profile with gamification elements, such as badges, progress bars,
+        and continuous visual feedback based on the actual actions of developers in the repositories. The study concludes the planning and design stage of the solution, establishing the foundations for
+        the implementation and validation that will occur in the next phase of the project.
     students:
       - name: Ana Beatriz Norberto da Silva
         slug:
@@ -58,9 +72,25 @@
       en: 'AI applied to Software Engineering: An analysis of the transformations caused by AI in Software Engineering development activities'
     summary:
       pt: >-
-        A crescente adoção de ferramentas de Inteligência Artificial (IA) Generativa no desenvolvimento de software levanta questões relevantes sobre seus impactos na qualidade do código produzido, na produtividade dos desenvolvedores e no processo de aprendizagem dos estudantes, especialmente diante da ausência de diretrizes consolidadas sobre seu uso em contextos acadêmicos. Este trabalho apresenta o planejamento de um estudo laboratorial controlado com o objetivo de investigar esses impactos no desenvolvimento realizado por estudantes e egressos do curso de Engenharia de Software da Universidade de Brasília (UnB). A metodologia se estrutura em três etapas: recrutamento, exercício de programação e questionário final. Os participantes são divididos aleatoriamente em dois grupos experimentais, um com uso obrigatório de ferramentas de IA e outro sem acesso a esse recurso, e ambos realizam a mesma atividade utilizando a biblioteca React. A coleta de dados combina métricas objetivas de qualidade de código, como linhas de código (LOC), saúde do código, erros de lint e tempo de execução, com métricas subjetivas de natureza psicológica, incluindo satisfação, utilidade percebida, autoeficácia, emoções positivas e disposição para aprendizagem autônoma, mensuradas por meio de questionários em escala de Likert. O planejamento é estruturado com base no modelo Goal-Question-Metric (GQM) e inspirado nas diretrizes do ACM SIGSOFT Empirical Standard for Experiments with Human Participants. Espera-se que os resultados contribuam para a compreensão dos benefícios e limitações do uso da IA Generativa em contextos educacionais, fornecendo evidências que auxiliem pesquisadores, docentes e instituições de ensino na adoção consciente dessas tecnologias.
+        A crescente adoção de ferramentas de Inteligência Artificial (IA) Generativa no desenvolvimento de software levanta questões relevantes sobre seus impactos na qualidade do código produzido, na produtividade
+        dos desenvolvedores e no processo de aprendizagem dos estudantes, especialmente diante da ausência de diretrizes consolidadas sobre seu uso em contextos acadêmicos. Este trabalho apresenta o planejamento
+        de um estudo laboratorial controlado com o objetivo de investigar esses impactos no desenvolvimento realizado por estudantes e egressos do curso de Engenharia de Software da Universidade de Brasília
+        (UnB). A metodologia se estrutura em três etapas: recrutamento, exercício de programação e questionário final. Os participantes são divididos aleatoriamente em dois grupos experimentais, um com
+        uso obrigatório de ferramentas de IA e outro sem acesso a esse recurso, e ambos realizam a mesma atividade utilizando a biblioteca React. A coleta de dados combina métricas objetivas de qualidade
+        de código, como linhas de código (LOC), saúde do código, erros de lint e tempo de execução, com métricas subjetivas de natureza psicológica, incluindo satisfação, utilidade percebida, autoeficácia,
+        emoções positivas e disposição para aprendizagem autônoma, mensuradas por meio de questionários em escala de Likert. O planejamento é estruturado com base no modelo Goal-Question-Metric (GQM) e
+        inspirado nas diretrizes do ACM SIGSOFT Empirical Standard for Experiments with Human Participants. Espera-se que os resultados contribuam para a compreensão dos benefícios e limitações do uso da
+        IA Generativa em contextos educacionais, fornecendo evidências que auxiliem pesquisadores, docentes e instituições de ensino na adoção consciente dessas tecnologias.
       en: >-
-        The growing adoption of Generative Artificial Intelligence (AI) tools in software development raises relevant questions about their impacts on code quality, developer productivity, and student learning, especially given the absence of consolidated guidelines on their use in academic contexts. This work presents the planning of a controlled laboratory study aimed at investigating these impacts on the development process carried out by students and graduates of the Software Engineering program at the University of Brasília (UnB). The methodology is structured in three stages: recruitment, programming exercise, and final questionnaire. Participants are randomly divided into two experimental groups, one required to use AI tools and another without access to such resources, and both perform the same activity using the React library. Data collection combines objective code quality metrics, such as lines of code (LOC), code health, lint errors, and execution time, with subjective psychological metrics, including satisfaction, perceived usefulness, self-efficacy, positive emotions, and autonomous learning disposition, measured through Likert scale questionnaires. The planning is structured based on the Goal-Question-Metric (GQM) model and inspired by the guidelines of the ACM SIGSOFT Empirical Standard for Experiments with Human Participants. The results are expected to contribute to the understanding of the benefits and limitations of Generative AI in educational contexts, providing evidence to support researchers, educators, and academic institutions in the conscious adoption of these technologies.
+        The growing adoption of Generative Artificial Intelligence (AI) tools in software development raises relevant questions about their impacts on code quality, developer productivity, and student learning,
+        especially given the absence of consolidated guidelines on their use in academic contexts. This work presents the planning of a controlled laboratory study aimed at investigating these impacts on
+        the development process carried out by students and graduates of the Software Engineering program at the University of Brasília (UnB). The methodology is structured in three stages: recruitment,
+        programming exercise, and final questionnaire. Participants are randomly divided into two experimental groups, one required to use AI tools and another without access to such resources, and both
+        perform the same activity using the React library. Data collection combines objective code quality metrics, such as lines of code (LOC), code health, lint errors, and execution time, with subjective
+        psychological metrics, including satisfaction, perceived usefulness, self-efficacy, positive emotions, and autonomous learning disposition, measured through Likert scale questionnaires. The planning
+        is structured based on the Goal-Question-Metric (GQM) model and inspired by the guidelines of the ACM SIGSOFT Empirical Standard for Experiments with Human Participants. The results are expected
+        to contribute to the understanding of the benefits and limitations of Generative AI in educational contexts, providing evidence to support researchers, educators, and academic institutions in the
+        conscious adoption of these technologies.
     students:
       - name: Ian Lucca Soares Mesquita
         slug:
@@ -108,9 +138,24 @@
       en: Intrusion Detection System with Machine Learning
     summary:
       pt: >-
-        O aumento do volume e da complexidade dos ataques cibernéticos torna necessária a adoção de mecanismos que auxiliem o monitoramento e a análise de eventos de segurança em redes de computadores. Sistemas de Detecção de Intrusões podem identificar atividades suspeitas, porém a grande quantidade de alertas gerados pode dificultar a análise manual e aumentar a ocorrência de falsos positivos. Neste contexto, este trabalho propõe um Sistema de Detecção de Intrusões com Aprendizado de Máquina, integrando o Suricata, o algoritmo Random Forest e uma interface gráfica para apoio à análise de alertas. A proposta prevê o monitoramento de logs do Suricata, o processamento dos eventos por um modelo de classificação, a apresentação do veredito e do nível de confiança para cada alerta, além do armazenamento de histórico, filtros, dashboard e recursos de configuração. Para os experimentos iniciais, foi utilizada uma versão em formato CSV do dataset CSE-CIC-IDS2018, contendo fluxos de rede rotulados. Os dados foram submetidos a etapas de limpeza, conversão de atributos, definição da variável alvo e divisão entre conjuntos de treinamento e teste. O modelo Random Forest foi selecionado por sua robustez, capacidade de lidar com múltiplos atributos e possibilidade de analisar a importância das features. Como resultados preliminares, foram definidos os requisitos da solução, elaborada a arquitetura lógica do sistema, realizado o treinamento inicial do modelo e desenvolvidos protótipos de interface no Figma. Espera-se que a continuidade do projeto permita integrar os componentes em uma aplicação funcional, contribuindo para tornar a análise de alertas mais organizada, acessível e eficiente.
+        O aumento do volume e da complexidade dos ataques cibernéticos torna necessária a adoção de mecanismos que auxiliem o monitoramento e a análise de eventos de segurança em redes de computadores.
+        Sistemas de Detecção de Intrusões podem identificar atividades suspeitas, porém a grande quantidade de alertas gerados pode dificultar a análise manual e aumentar a ocorrência de falsos positivos.
+        Neste contexto, este trabalho propõe um Sistema de Detecção de Intrusões com Aprendizado de Máquina, integrando o Suricata, o algoritmo Random Forest e uma interface gráfica para apoio à análise
+        de alertas. A proposta prevê o monitoramento de logs do Suricata, o processamento dos eventos por um modelo de classificação, a apresentação do veredito e do nível de confiança para cada alerta,
+        além do armazenamento de histórico, filtros, dashboard e recursos de configuração. Para os experimentos iniciais, foi utilizada uma versão em formato CSV do dataset CSE-CIC-IDS2018, contendo fluxos
+        de rede rotulados. Os dados foram submetidos a etapas de limpeza, conversão de atributos, definição da variável alvo e divisão entre conjuntos de treinamento e teste. O modelo Random Forest foi
+        selecionado por sua robustez, capacidade de lidar com múltiplos atributos e possibilidade de analisar a importância das features. Como resultados preliminares, foram definidos os requisitos da solução,
+        elaborada a arquitetura lógica do sistema, realizado o treinamento inicial do modelo e desenvolvidos protótipos de interface no Figma. Espera-se que a continuidade do projeto permita integrar os
+        componentes em uma aplicação funcional, contribuindo para tornar a análise de alertas mais organizada, acessível e eficiente.
       en: >-
-        The increasing volume and complexity of cyberattacks make it necessary to adopt mechanisms that support the monitoring and analysis of security events in computer networks. Intrusion Detection Systems can identify suspicious activities; however, the large number of generated alerts may hinder manual analysis and increase the occurrence of false positives. In this context, this work proposes an Intrusion Detection System with Machine Learning, integrating Suricata, the Random Forest algorithm, and a graphical interface to support alert analysis. The proposed solution includes Suricata log monitoring, event processing through a classification model, presentation of the verdict and confidence level for each alert, as well as history storage, filters, dashboards, and configuration features. For the initial experiments, a CSV version of the CSE-CIC-IDS2018 dataset containing labeled network flows was used. The data underwent cleaning, attribute conversion, target variable definition, and division between training and testing sets. The Random Forest model was selected due to its robustness, ability to handle multiple attributes, and capability to analyze feature importance. As preliminary results, the system requirements were defined, the logical architecture was designed, the initial model training was performed, and interface prototypes were developed in Figma. It is expected that the continuation of the project will integrate these components into a functional application, contributing to a more organized, accessible, and efficient alert analysis process.
+        The increasing volume and complexity of cyberattacks make it necessary to adopt mechanisms that support the monitoring and analysis of security events in computer networks. Intrusion Detection Systems
+        can identify suspicious activities; however, the large number of generated alerts may hinder manual analysis and increase the occurrence of false positives. In this context, this work proposes an
+        Intrusion Detection System with Machine Learning, integrating Suricata, the Random Forest algorithm, and a graphical interface to support alert analysis. The proposed solution includes Suricata
+        log monitoring, event processing through a classification model, presentation of the verdict and confidence level for each alert, as well as history storage, filters, dashboards, and configuration
+        features. For the initial experiments, a CSV version of the CSE-CIC-IDS2018 dataset containing labeled network flows was used. The data underwent cleaning, attribute conversion, target variable
+        definition, and division between training and testing sets. The Random Forest model was selected due to its robustness, ability to handle multiple attributes, and capability to analyze feature importance.
+        As preliminary results, the system requirements were defined, the logical architecture was designed, the initial model training was performed, and interface prototypes were developed in Figma. It
+        is expected that the continuation of the project will integrate these components into a functional application, contributing to a more organized, accessible, and efficient alert analysis process.
     students:
       - name: Henrique Azevedo Batalha
         slug:
@@ -159,9 +204,25 @@
       en: 'Gamification and Large Language Models: Development of an Educational Platform'
     summary:
       pt: >-
-        Este trabalho propõe uma plataforma web gamificada para o ensino de conceitos fundamentais relacionados aos modelos de linguagem de grande escala (LLMs), visando tornar seu aprendizado mais acessível, envolvente e motivador. A fundamentação teórica aborda gamificação, o framework Octalysis, inteligência artificial, aprendizado de máquina, aprendizado profundo, processamento de linguagem natural e os impactos dos LLMs na Engenharia de Software. A pesquisa caracteriza-se como exploratória, de natureza aplicada, e foi desenvolvida por meio de revisão bibliográfica, levantamento do perfil motivacional do público-alvo com um questionário baseado no Octalysis, análise estatística dos dados utilizando o coeficiente Alfa de Cronbach e médias dos core drives, elicitação e priorização de requisitos e elaboração de um protótipo da solução. Os resultados evidenciaram elevada convergência entre os participantes quanto aos fatores motivacionais, identificando como predominantes os core drives de desenvolvimento e realização, significado épico e chamado, empoderamento da criatividade e feedback, e imprevisibilidade e curiosidade. Com base nesses achados, foram selecionadas dez técnicas de gamificação para compor a proposta da plataforma, organizada como uma jornada de exploração arqueológica voltada ao ensino de LLMs. Conclui-se que a utilização do framework Octalysis oferece uma base consistente para o desenvolvimento de ambientes educacionais gamificados, contribuindo para o engajamento dos estudantes e estabelecendo fundamentos para a implementação e avaliação da plataforma no TCC 2.
+        Este trabalho propõe uma plataforma web gamificada para o ensino de conceitos fundamentais relacionados aos modelos de linguagem de grande escala (LLMs), visando tornar seu aprendizado mais acessível,
+        envolvente e motivador. A fundamentação teórica aborda gamificação, o framework Octalysis, inteligência artificial, aprendizado de máquina, aprendizado profundo, processamento de linguagem natural
+        e os impactos dos LLMs na Engenharia de Software. A pesquisa caracteriza-se como exploratória, de natureza aplicada, e foi desenvolvida por meio de revisão bibliográfica, levantamento do perfil
+        motivacional do público-alvo com um questionário baseado no Octalysis, análise estatística dos dados utilizando o coeficiente Alfa de Cronbach e médias dos core drives, elicitação e priorização
+        de requisitos e elaboração de um protótipo da solução. Os resultados evidenciaram elevada convergência entre os participantes quanto aos fatores motivacionais, identificando como predominantes os
+        core drives de desenvolvimento e realização, significado épico e chamado, empoderamento da criatividade e feedback, e imprevisibilidade e curiosidade. Com base nesses achados, foram selecionadas
+        dez técnicas de gamificação para compor a proposta da plataforma, organizada como uma jornada de exploração arqueológica voltada ao ensino de LLMs. Conclui-se que a utilização do framework Octalysis
+        oferece uma base consistente para o desenvolvimento de ambientes educacionais gamificados, contribuindo para o engajamento dos estudantes e estabelecendo fundamentos para a implementação e avaliação
+        da plataforma no TCC 2.
       en: >-
-        This work proposes a gamified web platform for teaching fundamental concepts related to Large Language Models (LLMs), aiming to make their learning process more accessible, engaging, and motivating. The theoretical foundation covers gamification, the Octalysis framework, artificial intelligence, machine learning, deep learning, natural language processing, and the impact of LLMs on Software Engineering. This research is characterized as exploratory and applied in nature. It was conducted through a literature review, an assessment of the target audience's motivational profile using a questionnaire based on the Octalysis framework, statistical analysis of the collected data using Cronbach's alpha coefficient and core drive averages, requirements elicitation and prioritization, and the development of a prototype of the proposed solution. The results revealed a high degree of convergence among participants regarding motivational factors, identifying the predominant core drives as development and accomplishment, epic meaning and calling, empowerment of creativity and feedback, and unpredictability and curiosity. Based on these findings, ten gamification techniques were selected to compose the proposed platform, which is organized as an archaeological exploration journey for teaching LLM concepts. It is concluded that the Octalysis framework provides a solid foundation for the development of gamified educational environments, contributing to student engagement and establishing the basis for the implementation and evaluation of the platform in the second stage of the undergraduate thesis.
+        This work proposes a gamified web platform for teaching fundamental concepts related to Large Language Models (LLMs), aiming to make their learning process more accessible, engaging, and motivating.
+        The theoretical foundation covers gamification, the Octalysis framework, artificial intelligence, machine learning, deep learning, natural language processing, and the impact of LLMs on Software
+        Engineering. This research is characterized as exploratory and applied in nature. It was conducted through a literature review, an assessment of the target audience's motivational profile using
+        a questionnaire based on the Octalysis framework, statistical analysis of the collected data using Cronbach's alpha coefficient and core drive averages, requirements elicitation and prioritization,
+        and the development of a prototype of the proposed solution. The results revealed a high degree of convergence among participants regarding motivational factors, identifying the predominant core
+        drives as development and accomplishment, epic meaning and calling, empowerment of creativity and feedback, and unpredictability and curiosity. Based on these findings, ten gamification techniques
+        were selected to compose the proposed platform, which is organized as an archaeological exploration journey for teaching LLM concepts. It is concluded that the Octalysis framework provides a solid
+        foundation for the development of gamified educational environments, contributing to student engagement and establishing the basis for the implementation and evaluation of the platform in the second
+        stage of the undergraduate thesis.
     students:
       - name: Israel Thalles Dutra dos Santos
         slug:
@@ -208,9 +269,26 @@
       en: Improving Software Quality through Gamification Techniques
     summary:
       pt: >-
-        Grandes instituições financeiras adotam ferramentas de análise estática integradas a processos de governança de releases como mecanismo central de controle de qualidade de software. Evidências empíricas, contudo, mostram que essas ferramentas atuam como portões tardios de entrega e não como incentivos contínuos: no Banco do Brasil, organização investigada nesta pesquisa, uma observação longitudinal de um ano do ecossistema de desenvolvimento da baixa plataforma revela que a maioria dos projetos não reduz, nesse horizonte, seu inventário de issues não bloqueantes do SonarQube. Conduzido sob a estratégia de design science e instanciado como estudo de caso industrial, este trabalho propõe o Launch Center, uma camada gamificada de engajamento operada em nível de equipe e ancorada no framework Octalysis, que complementa o Release Engine institucional sem alterar seus controles formais de qualidade. O desenho é fundamentado por três fluxos convergentes de evidência: uma revisão sistemática da literatura no protocolo de Kitchenham, com 51 estudos primários incluídos; um diagnóstico institucional de qualidade de código apoiado em tendência anual de análise estática; e um perfil motivacional dos desenvolvedores, obtido por avaliação Octalysis com quatro juízes especialistas e por uma adaptação do Intrinsic Motivation Inventory (53 respostas válidas). O Launch Center materializa sete princípios de design, sete mecânicas cooperativas e três mecanismos de proteção em uma jornada de jogador organizada nas quatro fases do Octalysis Nível II, com ênfase nos core drives white-hat e em recompensas exclusivamente simbólicas. Como continuidade, propõe-se um protocolo de avaliação para um piloto controlado na organização, a ser executado em trabalho pós-qualificação como teste empírico da hipótese.
+        Grandes instituições financeiras adotam ferramentas de análise estática integradas a processos de governança de releases como mecanismo central de controle de qualidade de software. Evidências empíricas,
+        contudo, mostram que essas ferramentas atuam como portões tardios de entrega e não como incentivos contínuos: no Banco do Brasil, organização investigada nesta pesquisa, uma observação longitudinal
+        de um ano do ecossistema de desenvolvimento da baixa plataforma revela que a maioria dos projetos não reduz, nesse horizonte, seu inventário de issues não bloqueantes do SonarQube. Conduzido sob
+        a estratégia de design science e instanciado como estudo de caso industrial, este trabalho propõe o Launch Center, uma camada gamificada de engajamento operada em nível de equipe e ancorada no framework
+        Octalysis, que complementa o Release Engine institucional sem alterar seus controles formais de qualidade. O desenho é fundamentado por três fluxos convergentes de evidência: uma revisão sistemática
+        da literatura no protocolo de Kitchenham, com 51 estudos primários incluídos; um diagnóstico institucional de qualidade de código apoiado em tendência anual de análise estática; e um perfil motivacional
+        dos desenvolvedores, obtido por avaliação Octalysis com quatro juízes especialistas e por uma adaptação do Intrinsic Motivation Inventory (53 respostas válidas). O Launch Center materializa sete
+        princípios de design, sete mecânicas cooperativas e três mecanismos de proteção em uma jornada de jogador organizada nas quatro fases do Octalysis Nível II, com ênfase nos core drives white-hat
+        e em recompensas exclusivamente simbólicas. Como continuidade, propõe-se um protocolo de avaliação para um piloto controlado na organização, a ser executado em trabalho pós-qualificação como teste
+        empírico da hipótese.
       en: >-
-        Large financial institutions rely on automated static-analysis tooling integrated into release-governance pipelines as their central mechanism for controlling software quality. Empirical evidence, however, indicates that such tooling operates as a late-stage gate rather than as a continuous incentive: in the investigated organization, Banco do Brasil, a one-year longitudinal observation of the low-platform development ecosystem shows that the majority of projects fail to reduce their inventory of non-blocking SonarQube issues over that horizon. Framed as design-science research and instantiated as an industrial case study, this work proposes Launch Center, a team-level gamified engagement layer grounded in the Octalysis framework that complements the institutional Release Engine without altering its formal quality gates. The design is informed by three converging streams of evidence: a Kitchenham-style systematic literature review including 51 primary studies; an institutional code-quality baseline derived from a year-long static-analysis trend; and a motivational profile of the target developer population, obtained through a four-judge expert Octalysis assessment and an adapted Intrinsic Motivation Inventory survey (53 valid responses). Launch Center materializes seven design principles, seven cooperative game mechanics, and three protection mechanisms across a four-phase Octalysis Level II player journey, emphasizing white-hat motivational drives and exclusively symbolic rewards. The dissertation contributes the design artifact and a future evaluation protocol that operationalizes the hypothesis through a controlled pilot, to be executed as post-qualification work in the same industrial setting.
+        Large financial institutions rely on automated static-analysis tooling integrated into release-governance pipelines as their central mechanism for controlling software quality. Empirical evidence,
+        however, indicates that such tooling operates as a late-stage gate rather than as a continuous incentive: in the investigated organization, Banco do Brasil, a one-year longitudinal observation of
+        the low-platform development ecosystem shows that the majority of projects fail to reduce their inventory of non-blocking SonarQube issues over that horizon. Framed as design-science research and
+        instantiated as an industrial case study, this work proposes Launch Center, a team-level gamified engagement layer grounded in the Octalysis framework that complements the institutional Release
+        Engine without altering its formal quality gates. The design is informed by three converging streams of evidence: a Kitchenham-style systematic literature review including 51 primary studies; an
+        institutional code-quality baseline derived from a year-long static-analysis trend; and a motivational profile of the target developer population, obtained through a four-judge expert Octalysis
+        assessment and an adapted Intrinsic Motivation Inventory survey (53 valid responses). Launch Center materializes seven design principles, seven cooperative game mechanics, and three protection mechanisms
+        across a four-phase Octalysis Level II player journey, emphasizing white-hat motivational drives and exclusively symbolic rewards. The dissertation contributes the design artifact and a future evaluation
+        protocol that operationalizes the hypothesis through a controlled pilot, to be executed as post-qualification work in the same industrial setting.
     students:
       - name: Lucas Pereira Gomes Linard
         slug:
@@ -392,9 +470,29 @@
       en: 'Atloria: A Gamified Platform for Data Structure Visualization in Augmented Reality'
     summary:
       pt: >-
-        A aprendizagem de estruturas de dados e algoritmos é um dos desafios recorrentes nos cursos da área de computação, uma vez que envolve a compreensão de conceitos abstratos, operações dinâmicas e formas específicas de organização da informação. Estruturas como pilhas, filas e listas encadeadas exigem que o estudante desenvolva modelos mentais capazes de representar inserções, remoções, buscas e mudanças de estado que nem sempre são facilmente compreendidas por meio de abordagens tradicionais. Nesse contexto, este trabalho teve como objetivo desenvolver e avaliar a Atloria, uma aplicação móvel educacional que utiliza realidade aumentada e gamificação para apoiar o ensino-aprendizagem de estruturas de dados. A solução foi planejada com base em revisão de literatura, elicitação e priorização de requisitos, modelagem de dados, definição arquitetural e construção de um protótipo funcional. A aplicação foi desenvolvida para dispositivos Android, integrando Flutter, SQLite, Unity e AR Foundation, e contempla recursos como autenticação, onboarding, salas temáticas, narrativas, mini missões, passaporte de conquistas, feedback imediato e visualização interativa em realidade aumentada. A experiência proposta organiza o aprendizado em uma jornada gamificada, na qual o usuário interage com representações visuais das estruturas de dados e acompanha sua progressão por meio de recompensas simbólicas e registros de desempenho. A validação incluiu testes técnicos, análise de qualidade, testes funcionais e avaliação com usuários, permitindo verificar o funcionamento das principais funcionalidades implementadas e coletar percepções sobre usabilidade, engajamento e aprendizagem. Os resultados indicaram uma avaliação positiva da experiência, especialmente quanto à organização visual, facilidade de uso e interesse gerado pelos elementos gamificados. Conclui-se que a integração entre realidade aumentada e gamificação apresenta potencial como recurso didático complementar para tornar o estudo de estruturas de dados mais visual, interativo e motivador.
+        A aprendizagem de estruturas de dados e algoritmos é um dos desafios recorrentes nos cursos da área de computação, uma vez que envolve a compreensão de conceitos abstratos, operações dinâmicas e
+        formas específicas de organização da informação. Estruturas como pilhas, filas e listas encadeadas exigem que o estudante desenvolva modelos mentais capazes de representar inserções, remoções, buscas
+        e mudanças de estado que nem sempre são facilmente compreendidas por meio de abordagens tradicionais. Nesse contexto, este trabalho teve como objetivo desenvolver e avaliar a Atloria, uma aplicação
+        móvel educacional que utiliza realidade aumentada e gamificação para apoiar o ensino-aprendizagem de estruturas de dados. A solução foi planejada com base em revisão de literatura, elicitação e
+        priorização de requisitos, modelagem de dados, definição arquitetural e construção de um protótipo funcional. A aplicação foi desenvolvida para dispositivos Android, integrando Flutter, SQLite,
+        Unity e AR Foundation, e contempla recursos como autenticação, onboarding, salas temáticas, narrativas, mini missões, passaporte de conquistas, feedback imediato e visualização interativa em realidade
+        aumentada. A experiência proposta organiza o aprendizado em uma jornada gamificada, na qual o usuário interage com representações visuais das estruturas de dados e acompanha sua progressão por meio
+        de recompensas simbólicas e registros de desempenho. A validação incluiu testes técnicos, análise de qualidade, testes funcionais e avaliação com usuários, permitindo verificar o funcionamento das
+        principais funcionalidades implementadas e coletar percepções sobre usabilidade, engajamento e aprendizagem. Os resultados indicaram uma avaliação positiva da experiência, especialmente quanto à
+        organização visual, facilidade de uso e interesse gerado pelos elementos gamificados. Conclui-se que a integração entre realidade aumentada e gamificação apresenta potencial como recurso didático
+        complementar para tornar o estudo de estruturas de dados mais visual, interativo e motivador.
       en: >-
-        Learning data structures and algorithms is a recurring challenge in computing-related courses, as it requires the understanding of abstract concepts, dynamic operations, and specific ways of organizing information. Structures such as stacks, queues, and linked lists require students to develop mental models capable of representing insertions, removals, searches, and state changes that are not always easily understood through traditional teaching approaches. In this context, this undergraduate thesis aimed to develop and evaluate Atloria, an educational mobile application that uses augmented reality and gamification to support the teaching and learning of data structures. The solution was designed based on a literature review, requirements elicitation and prioritization, data modeling, architectural definition, and the construction of a functional prototype. The application was developed for Android devices, integrating Flutter, SQLite, Unity, and AR Foundation, and includes features such as authentication, onboarding, thematic rooms, narratives, mini missions, an achievement passport, immediate feedback, and interactive visualization through augmented reality. The proposed experience organizes learning as a gamified journey, in which users interact with visual representations of data structures and track their progress through symbolic rewards and performance records. The validation process included technical tests, software quality analysis, functional tests, and user evaluation, making it possible to verify the operation of the main implemented features and collect perceptions regarding usability, engagement, and learning. The results indicated a positive evaluation of the experience, especially regarding visual organization, ease of use, and the interest generated by the gamified elements. It is concluded that the integration of augmented reality and gamification has potential as a complementary didactic resource to make the study of data structures more visual, interactive, and motivating.
+        Learning data structures and algorithms is a recurring challenge in computing-related courses, as it requires the understanding of abstract concepts, dynamic operations, and specific ways of organizing
+        information. Structures such as stacks, queues, and linked lists require students to develop mental models capable of representing insertions, removals, searches, and state changes that are not
+        always easily understood through traditional teaching approaches. In this context, this undergraduate thesis aimed to develop and evaluate Atloria, an educational mobile application that uses augmented
+        reality and gamification to support the teaching and learning of data structures. The solution was designed based on a literature review, requirements elicitation and prioritization, data modeling,
+        architectural definition, and the construction of a functional prototype. The application was developed for Android devices, integrating Flutter, SQLite, Unity, and AR Foundation, and includes features
+        such as authentication, onboarding, thematic rooms, narratives, mini missions, an achievement passport, immediate feedback, and interactive visualization through augmented reality. The proposed
+        experience organizes learning as a gamified journey, in which users interact with visual representations of data structures and track their progress through symbolic rewards and performance records.
+        The validation process included technical tests, software quality analysis, functional tests, and user evaluation, making it possible to verify the operation of the main implemented features and
+        collect perceptions regarding usability, engagement, and learning. The results indicated a positive evaluation of the experience, especially regarding visual organization, ease of use, and the interest
+        generated by the gamified elements. It is concluded that the integration of augmented reality and gamification has potential as a complementary didactic resource to make the study of data structures
+        more visual, interactive, and motivating.
     students:
       - name: Geovanna Maciel Avelino da Costa
         slug:
@@ -444,9 +542,17 @@
       en: Gamification as a Teaching Strategy for Code Smell Identification
     summary:
       pt: >-
-        Este trabalho aborda a dificuldade recorrente de estudantes de programação em identificar code smells, um desafio que compromete a compreensão, a manutenção e a evolução de sistemas de software. O objetivo central é propor uma solução gamificada que apoie o aprendizado e torne o processo de detecção desses problemas mais acessível e motivador. A metodologia adotada segue uma abordagem qualitativa, com caráter exploratório, descritivo e aplicado, integrando pesquisa bibliográfica e estudo de caso. O percurso metodológico incluiu a análise contextual, a definição de perfis motivacionais, a ideação e prototipagem das mecânicas, seguida por testes de usabilidade, observação do uso da aplicação e registro das etapas e resultados obtidos. A plataforma proposta permitirá que estudantes pratiquem a identificação de code smells em cenários simulados, recebam feedback imediato e avancem em desafios progressivos.
+        Este trabalho aborda a dificuldade recorrente de estudantes de programação em identificar code smells, um desafio que compromete a compreensão, a manutenção e a evolução de sistemas de software.
+        O objetivo central é propor uma solução gamificada que apoie o aprendizado e torne o processo de detecção desses problemas mais acessível e motivador. A metodologia adotada segue uma abordagem qualitativa,
+        com caráter exploratório, descritivo e aplicado, integrando pesquisa bibliográfica e estudo de caso. O percurso metodológico incluiu a análise contextual, a definição de perfis motivacionais, a
+        ideação e prototipagem das mecânicas, seguida por testes de usabilidade, observação do uso da aplicação e registro das etapas e resultados obtidos. A plataforma proposta permitirá que estudantes
+        pratiquem a identificação de code smells em cenários simulados, recebam feedback imediato e avancem em desafios progressivos.
       en: >-
-        This paper addresses the recurring difficulty faced by programming students in identifying code smells, a challenge that affects the understanding, maintenance, and evolution of software systems. The main goal is to propose a gamified solution that supports learning and makes the detection of these issues more accessible and motivating. The methodology follows a qualitative approach with exploratory, descriptive, and applied characteristics, integrating bibliographic research and a case study. The methodological process included contextual analysis, definition of motivational profiles, ideation and prototyping of mechanics, followed by usability tests, observation of the application's use, and documentation of all stages and results. The proposed platform will allow students to practice identifying code smells in simulated scenarios, receive immediate feedback, and progress through incremental challenges.
+        This paper addresses the recurring difficulty faced by programming students in identifying code smells, a challenge that affects the understanding, maintenance, and evolution of software systems.
+        The main goal is to propose a gamified solution that supports learning and makes the detection of these issues more accessible and motivating. The methodology follows a qualitative approach with
+        exploratory, descriptive, and applied characteristics, integrating bibliographic research and a case study. The methodological process included contextual analysis, definition of motivational profiles,
+        ideation and prototyping of mechanics, followed by usability tests, observation of the application's use, and documentation of all stages and results. The proposed platform will allow students to
+        practice identifying code smells in simulated scenarios, receive immediate feedback, and progress through incremental challenges.
     students:
       - name: Luciano Ricardo da Silva Junior
         slug:
@@ -5737,3 +5843,177 @@
       en:
     status_override:
     date_approximate: true
+  - id: francisca-mariana-2023-06-15
+    type: tcc
+    program: curso_tsi_ifb
+    scheduled_date: '2023-06-15T00:00:00-03:00'
+    held_date: '2023-06-15'
+    title:
+      pt: Detecção de fake news relacionadas à COVID-19 no Brasil
+      en: Detection of fake news related to COVID-19 in Brazil
+    summary:
+      pt:
+      en:
+    students:
+      - name: Francisca de Fátima Araújo Lucena
+        slug:
+      - name: Mariana Guedes da Silva
+        slug:
+    advisor: daniel_sundfeld
+    co_advisors:
+    committee: []
+    location:
+      room:
+      city: Brasília
+      remote_url:
+    tags:
+      - ai
+    project:
+    related_products:
+    related_publications:
+    production_id: 2023-francisca-de-fatima-araujo-lucena-deteccao-de-fake-news-relacionadas-a-covid-19-no-br
+    news_slug:
+    narrative:
+      pt:
+      en:
+    status_override:
+    date_approximate: true
+    needs_manual_review: true
+  - id: almir-guilherme-2022-06-15
+    type: tcc
+    program: curso_tsi_ifb
+    scheduled_date: '2022-06-15T00:00:00-03:00'
+    held_date: '2022-06-15'
+    title:
+      pt: Sistema para apoio e acompanhamento de trabalhos de conclusão de curso
+      en: System to support and track final course projects
+    summary:
+      pt:
+      en:
+    students:
+      - name: Almir José Malheiros Franco
+        slug:
+      - name: Guilherme Jesus Nunes
+        slug:
+    advisor: daniel_sundfeld
+    co_advisors:
+    committee: []
+    location:
+      room:
+      city: Brasília
+      remote_url:
+    tags:
+      - software_architecture
+    project:
+    related_products:
+    related_publications:
+    production_id: 2022-almir-jose-malheiros-franco-sistema-para-apoio-e-acompanhamento-de-trabalhos-de-concl
+    news_slug:
+    narrative:
+      pt:
+      en:
+    status_override:
+    date_approximate: true
+    needs_manual_review: true
+  - id: levi-junior-2021-06-15
+    type: tcc
+    program: curso_tsi_ifb
+    scheduled_date: '2021-06-15T00:00:00-03:00'
+    held_date: '2021-06-15'
+    title:
+      pt: Sistema de notificação de quedas através da computação em nuvem
+      en: Fall notification system through cloud computing
+    summary:
+      pt:
+      en:
+    students:
+      - name: Levi Alves de Freitas Júnior
+        slug:
+    advisor: daniel_sundfeld
+    co_advisors:
+    committee: []
+    location:
+      room:
+      city: Brasília
+      remote_url:
+    tags:
+      - software_architecture
+    project:
+    related_products:
+    related_publications:
+    production_id: 2021-levi-alves-de-freitas-junior-sistema-de-notificacao-de-quedas-atraves-da-computacao-e
+    news_slug:
+    narrative:
+      pt:
+      en:
+    status_override:
+    date_approximate: true
+    needs_manual_review: true
+  - id: rodrigo-gomes-2020-06-15
+    type: tcc
+    program: curso_tsi_ifb
+    scheduled_date: '2020-06-15T00:00:00-03:00'
+    held_date: '2020-06-15'
+    title:
+      pt: 'CUDA-Sankoff-Web: Uma ferramenta web para cálculo do alinhamento secundário estrutural'
+      en: 'CUDA-Sankoff-Web: a web tool for structural secondary alignment calculation'
+    summary:
+      pt:
+      en:
+    students:
+      - name: Rodrigo Rocha Gomes
+        slug:
+    advisor: daniel_sundfeld
+    co_advisors:
+    committee: []
+    location:
+      room:
+      city: Brasília
+      remote_url:
+    tags:
+      - hpc
+    project:
+    related_products:
+    related_publications:
+    production_id: 2020-rodrigo-rocha-gomes-cuda-sankoff-web-uma-ferramenta-web-para-calculo-do-alinhamento-s
+    news_slug:
+    narrative:
+      pt:
+      en:
+    status_override:
+    date_approximate: true
+    needs_manual_review: true
+  - id: eneias-oliveira-2020-06-15
+    type: tcc
+    program: curso_tsi_ifb
+    scheduled_date: '2020-06-15T00:00:00-03:00'
+    held_date: '2020-06-15'
+    title:
+      pt: 'PA-Star-Web: uma arquitetura em nuvem para obtenção do alinhamento múltiplo ótimo de sequências biológicas'
+      en: 'PA-Star-Web: a cloud architecture for obtaining optimal multiple alignment of biological sequences'
+    summary:
+      pt:
+      en:
+    students:
+      - name: Eneias Paulo de Oliveira
+        slug:
+    advisor: daniel_sundfeld
+    co_advisors:
+    committee: []
+    location:
+      room:
+      city: Brasília
+      remote_url:
+    tags:
+      - hpc
+    project:
+    related_products:
+    related_publications:
+    production_id: 2020-eneias-paulo-de-oliveira-pa-star-web-uma-arquitetura-em-nuvem-para-obtencao-do-alinha
+    news_slug:
+    narrative:
+      pt:
+      en:
+    status_override:
+    date_approximate: true
+    needs_manual_review: true

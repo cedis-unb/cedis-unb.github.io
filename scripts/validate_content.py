@@ -339,8 +339,12 @@ def validate_productions(
                 except (ValueError, TypeError):
                     year_int = 0
             in_new_model_scope = year_int >= 2008
+            # Itens marcados como historical_no_defense_record: true são
+            # publicações antigas cujo registro de banca/data se perdeu (ex.:
+            # especializações do PPCA 2008-2010). Aceitos sem defesa_id.
+            historical = bool(item.get("historical_no_defense_record"))
             did = item.get("defesa_id")
-            if in_new_model_scope and not did:
+            if in_new_model_scope and not did and not historical:
                 # Item potencialmente elegível mas sem defesa_id — pode ser
                 # fora da UnB ou sem advisor CEDIS. Apenas warn.
                 warn(

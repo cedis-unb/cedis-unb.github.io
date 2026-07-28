@@ -428,6 +428,10 @@ pub_type_specialization: "Especialização"
 pub_type_phd: "Tese"
 pub_type_tcc: "TCC"
 pub_type_registro: "Registro de programa"
+pub_type_didactic: "Material didático"
+publications_filtered_count: "%d de %d resultados"
+publications_no_results: "Nenhum resultado encontrado com os filtros atuais."
+publications_no_results_hint: "Ajuste ano, tipo ou tema, ou clique em Limpar para ver todos os registros."
 
 # Hero home — trilhas por persona
 ui_persona_study_label: "Quero pesquisar aqui"

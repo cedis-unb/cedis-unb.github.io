@@ -318,7 +318,10 @@ def frontmatter(payload: dict[str, Any], lang: str) -> str:
     summary = summary_for(item, lang)
     if not summary:
         authors = ", ".join(a["name"] for a in payload["authors"])
-        type_label = text(item.get("type")) or "publication"
+        # replace("_", " ") evita "Book_Section" no auto-summary — o type
+        # canônico é snake_case (ex.: book_section) mas o rótulo humano
+        # deve ter espaços.
+        type_label = (text(item.get("type")) or "publication").replace("_", " ")
         summary = f"{type_label.title()} de {authors} ({payload['raw_year']})." if lang == "pt" else f"{type_label.title()} by {authors} ({payload['raw_year']})."
 
     fm = {
