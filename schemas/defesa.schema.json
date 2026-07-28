@@ -1,0 +1,185 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cedis.unb.br/schemas/defesa.schema.json",
+  "title": "Defesa (entidade primeira)",
+  "description": "Item de data/defesas.yaml — evento único (data + banca + tema + aluno + orientador) do qual podem decorrer notícia e publicação. Ver PLANO-DEFESAS-2026.md §2.",
+  "type": "object",
+  "required": ["id", "type", "scheduled_date", "title", "students", "advisor"],
+  "additionalProperties": true,
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Slug canônico gerado por scripts/gen_defesa_slug.py. Imutável.",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+    },
+    "type": {
+      "type": "string",
+      "enum": ["tcc1", "tcc", "qualification", "dissertation", "phd_qualification", "phd", "specialization"]
+    },
+    "program": {
+      "anyOf": [
+        {"type": "null"},
+        {"type": "string", "pattern": "^[a-z0-9_]+$"}
+      ]
+    },
+    "scheduled_date": {
+      "type": "string",
+      "description": "Data marcada. ISO-8601 com timezone (ex.: 2026-07-14T14:00:00-03:00)."
+    },
+    "held_date": {
+      "anyOf": [
+        {"type": "null"},
+        {"type": "string", "format": "date"}
+      ]
+    },
+    "date_approximate": {
+      "type": "boolean",
+      "description": "true quando a data foi inferida de fonte imprecisa (mês/ano sem dia)."
+    },
+    "needs_manual_review": {
+      "type": "boolean",
+      "description": "true quando algum campo requer revisão humana antes de publicação definitiva."
+    },
+    "title": {
+      "type": "object",
+      "required": ["pt", "en"],
+      "properties": {
+        "pt": {"type": ["string", "null"], "minLength": 3},
+        "en": {"type": ["string", "null"], "minLength": 3}
+      }
+    },
+    "summary": {
+      "type": "object",
+      "description": "Abstract/resumo do trabalho (~150-400 palavras). Renderizado em qualquer estado quando presente.",
+      "properties": {
+        "pt": {"type": ["string", "null"]},
+        "en": {"type": ["string", "null"]}
+      }
+    },
+    "students": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 2,
+      "items": {
+        "type": "object",
+        "required": ["name"],
+        "additionalProperties": false,
+        "properties": {
+          "name": {"type": "string", "minLength": 3},
+          "slug": {
+            "anyOf": [
+              {"type": "null"},
+              {"type": "string", "pattern": "^[a-z0-9_]+$"}
+            ]
+          }
+        }
+      }
+    },
+    "advisor": {
+      "type": "string",
+      "description": "Slug canônico do orientador principal (obrigatório).",
+      "pattern": "^[a-z0-9_]+$"
+    },
+    "co_advisors": {
+      "anyOf": [
+        {"type": "null"},
+        {
+          "type": "array",
+          "items": {"type": "string", "pattern": "^[a-z0-9_]+$"}
+        }
+      ]
+    },
+    "committee": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["role", "name"],
+        "additionalProperties": false,
+        "properties": {
+          "role": {
+            "type": "string",
+            "enum": ["advisor", "co_advisor", "examiner", "external_examiner", "substitute"]
+          },
+          "slug": {
+            "anyOf": [
+              {"type": "null"},
+              {"type": "string", "pattern": "^[a-z0-9_]+$"}
+            ]
+          },
+          "name": {"type": "string", "minLength": 3},
+          "affiliation": {"type": ["string", "null"]}
+        }
+      }
+    },
+    "location": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "room": {"type": ["string", "null"]},
+        "city": {"type": ["string", "null"]},
+        "remote_url": {
+          "anyOf": [
+            {"type": "null"},
+            {"type": "string", "format": "uri"}
+          ]
+        }
+      }
+    },
+    "tags": {
+      "type": "array",
+      "items": {"type": "string"}
+    },
+    "project": {
+      "anyOf": [
+        {"type": "null"},
+        {"type": "string", "pattern": "^[a-z0-9_]+$"}
+      ]
+    },
+    "related_products": {
+      "anyOf": [
+        {"type": "null"},
+        {
+          "type": "array",
+          "items": {"type": "string"}
+        }
+      ]
+    },
+    "related_publications": {
+      "anyOf": [
+        {"type": "null"},
+        {
+          "type": "array",
+          "items": {"type": "string"}
+        }
+      ]
+    },
+    "production_id": {
+      "anyOf": [
+        {"type": "null"},
+        {"type": "string"}
+      ],
+      "description": "Slug da publicação em data/productions.yaml quando o trabalho for depositado. Sempre null nas etapas intermediárias (tcc1, qualification, phd_qualification) — essas defesas de proposta/planejamento não geram produção catalogável."
+    },
+    "news_slug": {
+      "anyOf": [
+        {"type": "null"},
+        {"type": "string"}
+      ]
+    },
+    "narrative": {
+      "type": "object",
+      "description": "Parágrafo autoral que substitui o auto-gerado quando presente.",
+      "additionalProperties": false,
+      "properties": {
+        "pt": {"type": ["string", "null"]},
+        "en": {"type": ["string", "null"]}
+      }
+    },
+    "status_override": {
+      "anyOf": [
+        {"type": "null"},
+        {"type": "string", "enum": ["withdrawn"]}
+      ]
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{{/*
+  defesa-state.html — resolve o estado derivado de uma defesa.
+
+  Entrada: entrada de data/defesas.yaml (mapa com scheduled_date,
+           status_override, production_id).
+  Retorna: string em {"upcoming", "held", "deposited", "withdrawn"}.
+
+  Regra (PLANO-DEFESAS-2026.md §4):
+    · status_override == "withdrawn" → withdrawn
+    · scheduled_date > agora         → upcoming
+    · production_id preenchido       → deposited
+    · caso contrário                 → held
+
+  Extraído de: defesas/single.html, defesas/list.html e defesa-body.html —
+  a mesma lógica estava triplicada.
+*/}}
+{{- $d := . -}}
+{{- $sd := time $d.scheduled_date -}}
+{{- $hasProd := and $d.production_id (ne $d.production_id "") -}}
+{{- $state := "held" -}}
+{{- if eq $d.status_override "withdrawn" -}}
+  {{- $state = "withdrawn" -}}
+{{- else if $sd.After now -}}
+  {{- $state = "upcoming" -}}
+{{- else if $hasProd -}}
+  {{- $state = "deposited" -}}
+{{- end -}}
+{{- return $state -}}

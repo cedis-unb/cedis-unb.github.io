@@ -9,24 +9,43 @@
 {{ end }}
 
 {{ if not $defesa }}
+  {{/* Fallback amigável: post referencia defesa_id que não existe em
+       data/defesas.yaml. Antes esta tela renderizava em branco com apenas
+       um warnf no build. */}}
   {{ warnf "defesa não encontrada em data/defesas.yaml: %s" $defesaId }}
-{{ end }}
-
-{{/* Estado derivado (também computado em defesa-body para reuso) */}}
-{{ $now := now }}
-{{ $scheduled := time $defesa.scheduled_date }}
-{{ $override := $defesa.status_override }}
-{{ $hasProduction := and $defesa.production_id (ne $defesa.production_id "") }}
-{{ $state := "upcoming" }}
-{{ if eq $override "withdrawn" }}
-  {{ $state = "withdrawn" }}
-{{ else if $scheduled.After $now }}
-  {{ $state = "upcoming" }}
-{{ else if $hasProduction }}
-  {{ $state = "deposited" }}
+  <article class="mx-auto max-w-(--breakpoint-md) px-4 py-16 text-center md:px-6 lg:py-24">
+    <p class="text-[0.7rem] font-semibold uppercase tracking-[0.28em] text-slate-500 dark:text-white/60">
+      {{ cond $isPt "Defesa não encontrada" "Defense not found" }}
+    </p>
+    <h1 class="mt-4 text-3xl font-black tracking-tight text-slate-950 dark:text-white md:text-4xl">
+      {{ .Title }}
+    </h1>
+    <p class="mt-4 text-base leading-7 text-slate-600 dark:text-white/70">
+      {{ if $isPt }}
+        O registro desta defesa ainda não está publicado ou o identificador
+        no post é diferente do slug canônico em <code>data/defesas.yaml</code>.
+        Consulte a lista completa de defesas ou entre em contato conosco.
+      {{ else }}
+        This defense record has not been published yet, or the post identifier
+        differs from the canonical slug in <code>data/defesas.yaml</code>.
+        See the full list of defenses or contact us.
+      {{ end }}
+    </p>
+    <div class="mt-8 flex flex-wrap justify-center gap-3">
+      <a href="{{ "/defesas/" | relLangURL }}" class="inline-flex items-center gap-2 rounded-full bg-primary-700 px-5 py-2.5 text-sm font-semibold text-white hover:bg-primary-800">
+        {{ cond $isPt "Ver todas as defesas" "See all defenses" }} →
+      </a>
+      <a href="{{ "/contact/" | relLangURL }}" class="inline-flex items-center gap-2 rounded-full border border-slate-300 bg-white px-5 py-2.5 text-sm font-semibold text-slate-700 hover:border-primary-400 hover:text-primary-700 dark:border-white/15 dark:bg-white/6 dark:text-white/80">
+        {{ cond $isPt "Contato" "Contact" }}
+      </a>
+    </div>
+  </article>
 {{ else }}
-  {{ $state = "held" }}
-{{ end }}
+
+{{/* Estado derivado — resolvido em partials/defesa-state.html (mesma
+     lógica reutilizada por defesa-body.html e defesas/list.html). */}}
+{{ $scheduled := time $defesa.scheduled_date }}
+{{ $state := partial "defesa-state.html" $defesa }}
 
 {{/* Selo por estado */}}
 {{ $stateBadges := dict
@@ -39,25 +58,8 @@
 {{ $badgeLabel := cond $isPt (index $badge "pt") (index $badge "en") }}
 {{ $badgeClass := index $badge "class" }}
 
-{{/* Data para display no hero */}}
-{{ $dateStr := "" }}
-{{ if $isPt }}
-  {{ $dateStr = $scheduled.Format "2 de January de 2006" }}
-  {{ $dateStr = replace $dateStr "January" "janeiro" }}
-  {{ $dateStr = replace $dateStr "February" "fevereiro" }}
-  {{ $dateStr = replace $dateStr "March" "março" }}
-  {{ $dateStr = replace $dateStr "April" "abril" }}
-  {{ $dateStr = replace $dateStr "May" "maio" }}
-  {{ $dateStr = replace $dateStr "June" "junho" }}
-  {{ $dateStr = replace $dateStr "July" "julho" }}
-  {{ $dateStr = replace $dateStr "August" "agosto" }}
-  {{ $dateStr = replace $dateStr "September" "setembro" }}
-  {{ $dateStr = replace $dateStr "October" "outubro" }}
-  {{ $dateStr = replace $dateStr "November" "novembro" }}
-  {{ $dateStr = replace $dateStr "December" "dezembro" }}
-{{ else }}
-  {{ $dateStr = $scheduled.Format "January 2, 2006" }}
-{{ end }}
+{{/* Data para display no hero — PT via partial reutilizável. */}}
+{{ $dateStr := cond $isPt (partial "defesa-date-pt.html" $scheduled) ($scheduled.Format "January 2, 2006") }}
 
 {{/* JSON-LD Event schema para estado upcoming; Article para deposited/held */}}
 {{ $schema := dict "@context" "https://schema.org" }}
@@ -185,4 +187,5 @@
     </aside>
   </section>
 </article>
+{{ end }}
 {{ end }}
