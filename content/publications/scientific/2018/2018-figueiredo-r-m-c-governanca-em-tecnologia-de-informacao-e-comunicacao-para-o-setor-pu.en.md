@@ -31,7 +31,7 @@ publisher: TCU
 location: ''
 pages: ''
 volume: ''
-external_url: https://portal.tcu.gov.br/governanca/
+external_url: https://www.tceto.tc.br/profissaogestor/images/governancaTI/Governanca_e_tecnologia_WEB.pdf
 spotify_podcast: ''
 github_repo: ''
 zenodo_record: ''
