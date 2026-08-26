@@ -1,6 +1,6 @@
 ---
 title: "INPI concede registro de software para a Predição de Euploidia por Machine Learning"
-date: 2026-08-25T09:10:00-03:00
+date: 2026-05-26T09:00:00-03:00
 draft: false
 weight: 500
 language: pt
@@ -23,9 +23,9 @@ related_ids:
 - project_ia_dados_transformacao_digital
 ---
 
-Brasília, 25 de agosto de 2026
+Brasília, 26 de maio de 2026
 
-O software **Aplicação de Aprendizado de Máquina na Predição Não-Invasiva de Euploidia em Embriões Humanos com Base em Dados Morfocinéticos** recebeu **certificado de registro de programa de computador** concedido pelo **Instituto Nacional da Propriedade Industrial (INPI)**, referente ao processo **BR512026003650-0**.
+O software **Aplicação de Aprendizado de Máquina na Predição Não-Invasiva de Euploidia em Embriões Humanos com Base em Dados Morfocinéticos** recebeu **certificado de registro de programa de computador** concedido pelo **Instituto Nacional da Propriedade Industrial (INPI)**, referente ao processo **BR512026003650-0**, publicado na **Revista da Propriedade Industrial (RPI) nº 2890, de 26 de maio de 2026**.
 
 O produto foi desenvolvido por **Maria Eduarda D. Santos Abritta F.** e **Sabrina Caldas Berna**, sob orientação do Prof. {{< link-interno "/people/george_marsicano" "George Marsicano Corrêa" >}}, no âmbito do {{< link-interno "/projects/ia_dados_transformacao_digital" "projeto Inteligência artificial e análise de dados para a transformação digital" >}}.
 
@@ -39,5 +39,5 @@ O registro no INPI assegura a proteção jurídica do programa de computador por
 
 - Título do programa: Aplicação de Aprendizado de Máquina na Predição Não-Invasiva de Euploidia em Embriões Humanos com Base em Dados Morfocinéticos
 - Processo: BR512026003650-0
-- Ano do registro: 2026
+- Publicação: RPI nº 2890, de 26 de maio de 2026
 - Publicador: Instituto Nacional da Propriedade Industrial (INPI)

@@ -1,6 +1,6 @@
 ---
 title: "INPI grants software registration for Euploidy Prediction with Machine Learning"
-date: 2026-08-25T09:10:00-03:00
+date: 2026-05-26T09:00:00-03:00
 draft: false
 weight: 500
 language: en
@@ -23,9 +23,9 @@ related_ids:
 - project_ia_dados_transformacao_digital
 ---
 
-Brasilia, August 25, 2026
+Brasilia, May 26, 2026
 
-The **Machine Learning Application for Non-Invasive Prediction of Euploidy in Human Embryos Based on Morphokinetic Data** software received a **computer program registration certificate** granted by the **Brazilian National Institute of Industrial Property (INPI)**, under process **BR512026003650-0**.
+The **Machine Learning Application for Non-Invasive Prediction of Euploidy in Human Embryos Based on Morphokinetic Data** software received a **computer program registration certificate** granted by the **Brazilian National Institute of Industrial Property (INPI)** under process **BR512026003650-0**, published in the **Industrial Property Gazette (RPI) No. 2890, dated May 26, 2026**.
 
 The product was developed by **Maria Eduarda D. Santos Abritta F.** and **Sabrina Caldas Berna**, under the supervision of Prof. {{< link-interno "/people/george_marsicano" "George Marsicano Corrêa" >}}, within the {{< link-interno "/projects/ia_dados_transformacao_digital" "Artificial intelligence and data analysis for digital transformation" >}} project.
 
@@ -39,5 +39,5 @@ The INPI registration secures legal protection of the computer program for 50 ye
 
 - Program title: Machine Learning Application for Non-Invasive Prediction of Euploidy in Human Embryos Based on Morphokinetic Data
 - Process: BR512026003650-0
-- Registration year: 2026
+- Publication: RPI No. 2890, dated May 26, 2026
 - Publisher: Brazilian National Institute of Industrial Property (INPI)

@@ -1,6 +1,6 @@
 ---
 title: "INPI grants software registration for the Pró-vida e Eu Me Protejo app"
-date: 2026-08-25T09:15:00-03:00
+date: 2026-07-14T09:00:00-03:00
 draft: false
 weight: 500
 language: en
@@ -24,9 +24,9 @@ related_ids:
 - project_software_bem
 ---
 
-Brasilia, August 25, 2026
+Brasilia, July 14, 2026
 
-The **Pró-vida e Eu Me Protejo** software received a **computer program registration certificate** granted by the **Brazilian National Institute of Industrial Property (INPI)**, under process **BR512026005120-7**.
+The **Pró-vida e Eu Me Protejo** software — registered at INPI under the official title **"Gamified mobile application for the prevention of childhood violence, aimed at parents and educators"** — received a **computer program registration certificate** granted by the **Brazilian National Institute of Industrial Property (INPI)** under process **BR512026005120-7**, published in the **Industrial Property Gazette (RPI) No. 2897, dated July 14, 2026**.
 
 The product was developed by **G. M. Rodrigues** and **S. A. C. Oliveira**, under the supervision of Prof. {{< link-interno "/people/george_marsicano" "George Marsicano Corrêa" >}}, and is associated with the {{< link-interno "/projects/software_bem" "Software for Good" >}} program. The application is derived from content of the **"Pró-vida e Eu Me Protejo"** project — a partnership between the Pró-Vida institution and the Eu Me Protejo project — particularly from the **Good Practices Manual**.
 
@@ -38,7 +38,8 @@ The INPI registration secures legal protection of the computer program for 50 ye
 
 ## Registration Information
 
-- Program title: Pró-vida e Eu Me Protejo
+- Official program title: Gamified mobile application for the prevention of childhood violence, aimed at parents and educators
+- Project name: Pró-vida e Eu Me Protejo
 - Process: BR512026005120-7
-- Registration year: 2026
+- Publication: RPI No. 2897, dated July 14, 2026
 - Publisher: Brazilian National Institute of Industrial Property (INPI)

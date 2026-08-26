@@ -1,6 +1,6 @@
 ---
 title: "INPI concede registro de software para o aplicativo Eu Me Protejo"
-date: 2026-08-25T09:20:00-03:00
+date: 2026-07-07T09:00:00-03:00
 draft: false
 weight: 500
 language: pt
@@ -23,9 +23,9 @@ related_ids:
 - project_software_bem
 ---
 
-Brasília, 25 de agosto de 2026
+Brasília, 07 de julho de 2026
 
-O software **Aplicativo "Eu Me Protejo"** recebeu **certificado de registro de programa de computador** concedido pelo **Instituto Nacional da Propriedade Industrial (INPI)**, referente ao processo **BR512026005122-3**.
+O software **EuMeProtejo** (aplicativo "Eu Me Protejo") recebeu **certificado de registro de programa de computador** concedido pelo **Instituto Nacional da Propriedade Industrial (INPI)**, referente ao processo **BR512026005122-3**, publicado na **Revista da Propriedade Industrial (RPI) nº 2896, de 07 de julho de 2026**.
 
 O produto foi desenvolvido por **V. S. Cabral**, sob orientação do Prof. {{< link-interno "/people/george_marsicano" "George Marsicano Corrêa" >}}, associado ao {{< link-interno "/projects/software_bem" "programa Software para o Bem" >}}. Foi construído alinhado aos materiais educativos do projeto **Eu Me Protejo**, especialmente às suas duas principais cartilhas.
 
@@ -37,7 +37,7 @@ O registro no INPI assegura a proteção jurídica do programa de computador por
 
 ## Informações do registro
 
-- Título do programa: Aplicativo "Eu Me Protejo"
+- Título do programa: EuMeProtejo
 - Processo: BR512026005122-3
-- Ano do registro: 2026
+- Publicação: RPI nº 2896, de 07 de julho de 2026
 - Publicador: Instituto Nacional da Propriedade Industrial (INPI)
