@@ -1,6 +1,6 @@
 ---
 title: "INPI grants software registration for the Requirements Engineering Chatbot"
-date: 2026-08-25T09:00:00-03:00
+date: 2026-05-19T09:00:00-03:00
 draft: false
 weight: 500
 language: en
@@ -23,9 +23,9 @@ related_ids:
 - project_super_r
 ---
 
-Brasilia, August 25, 2026
+Brasilia, May 19, 2026
 
-The **Requirements Engineering Chatbot** software received a **computer program registration certificate** granted by the **Brazilian National Institute of Industrial Property (INPI)**, under process **BR512026003514-7**.
+The **Requirements Engineering Chatbot** software received a **computer program registration certificate** granted by the **Brazilian National Institute of Industrial Property (INPI)** under process **BR512026003514-7**, published in the **Industrial Property Gazette (RPI) No. 2889, dated May 19, 2026**.
 
 The product was developed by **A. C. M. Lustosa Junior** and **P. H. M. Oliveira**, under the supervision of Prof. {{< link-interno "/people/george_marsicano" "George Marsicano Corrêa" >}}, within the {{< link-interno "/projects/super_r" "Super-R project" >}}.
 
@@ -39,5 +39,5 @@ The INPI registration secures legal protection of the computer program for 50 ye
 
 - Program title: Chatbot as a Support Tool for Requirements Engineering
 - Process: BR512026003514-7
-- Registration year: 2026
+- Publication: RPI No. 2889, dated May 19, 2026
 - Publisher: Brazilian National Institute of Industrial Property (INPI)

@@ -1,6 +1,6 @@
 ---
 title: "INPI grants software registration for the Eu Me Protejo application"
-date: 2026-08-25T09:20:00-03:00
+date: 2026-07-07T09:00:00-03:00
 draft: false
 weight: 500
 language: en
@@ -23,9 +23,9 @@ related_ids:
 - project_software_bem
 ---
 
-Brasilia, August 25, 2026
+Brasilia, July 7, 2026
 
-The **Eu Me Protejo Application** software received a **computer program registration certificate** granted by the **Brazilian National Institute of Industrial Property (INPI)**, under process **BR512026005122-3**.
+The **EuMeProtejo** (Eu Me Protejo Application) software received a **computer program registration certificate** granted by the **Brazilian National Institute of Industrial Property (INPI)** under process **BR512026005122-3**, published in the **Industrial Property Gazette (RPI) No. 2896, dated July 7, 2026**.
 
 The product was developed by **V. S. Cabral**, under the supervision of Prof. {{< link-interno "/people/george_marsicano" "George Marsicano Corrêa" >}}, associated with the {{< link-interno "/projects/software_bem" "Software for Good" >}} program. It was built in alignment with the educational materials of the **Eu Me Protejo** project, particularly its two main booklets.
 
@@ -37,7 +37,7 @@ The INPI registration secures legal protection of the computer program for 50 ye
 
 ## Registration Information
 
-- Program title: Eu Me Protejo Application
+- Program title: EuMeProtejo
 - Process: BR512026005122-3
-- Registration year: 2026
+- Publication: RPI No. 2896, dated July 7, 2026
 - Publisher: Brazilian National Institute of Industrial Property (INPI)

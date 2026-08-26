@@ -1,6 +1,6 @@
 ---
 title: "INPI concede registro de software para o app Pró-vida e Eu Me Protejo"
-date: 2026-08-25T09:15:00-03:00
+date: 2026-07-14T09:00:00-03:00
 draft: false
 weight: 500
 language: pt
@@ -24,9 +24,9 @@ related_ids:
 - project_software_bem
 ---
 
-Brasília, 25 de agosto de 2026
+Brasília, 14 de julho de 2026
 
-O software **Pró-vida e Eu Me Protejo** recebeu **certificado de registro de programa de computador** concedido pelo **Instituto Nacional da Propriedade Industrial (INPI)**, referente ao processo **BR512026005120-7**.
+O software **Pró-vida e Eu Me Protejo** — registrado no INPI sob o título oficial **"Aplicativo mobile gamificado para prevenção da violência na infância voltado a pais e educadores"** — recebeu **certificado de registro de programa de computador** concedido pelo **Instituto Nacional da Propriedade Industrial (INPI)**, referente ao processo **BR512026005120-7**, publicado na **Revista da Propriedade Industrial (RPI) nº 2897, de 14 de julho de 2026**.
 
 O produto foi desenvolvido por **G. M. Rodrigues** e **S. A. C. Oliveira**, sob orientação do Prof. {{< link-interno "/people/george_marsicano" "George Marsicano Corrêa" >}}, associado ao {{< link-interno "/projects/software_bem" "programa Software para o Bem" >}}. A aplicação é derivada de conteúdos do projeto **"Pró-vida e Eu Me Protejo"** — parceria entre a instituição Pró-Vida e o projeto Eu Me Protejo — especialmente do **Manual de Boas Práticas**.
 
@@ -38,7 +38,8 @@ O registro no INPI assegura a proteção jurídica do programa de computador por
 
 ## Informações do registro
 
-- Título do programa: Pró-vida e Eu Me Protejo
+- Título oficial do programa: Aplicativo mobile gamificado para prevenção da violência na infância voltado a pais e educadores
+- Nome do projeto: Pró-vida e Eu Me Protejo
 - Processo: BR512026005120-7
-- Ano do registro: 2026
+- Publicação: RPI nº 2897, de 14 de julho de 2026
 - Publicador: Instituto Nacional da Propriedade Industrial (INPI)

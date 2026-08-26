@@ -1,6 +1,6 @@
 ---
 title: "INPI concede registro de software para o Chatbot de Engenharia de Requisitos"
-date: 2026-08-25T09:00:00-03:00
+date: 2026-05-19T09:00:00-03:00
 draft: false
 weight: 500
 language: pt
@@ -23,9 +23,9 @@ related_ids:
 - project_super_r
 ---
 
-Brasília, 25 de agosto de 2026
+Brasília, 19 de maio de 2026
 
-O software **Chatbot para Engenharia de Requisitos** recebeu **certificado de registro de programa de computador** concedido pelo **Instituto Nacional da Propriedade Industrial (INPI)**, referente ao processo **BR512026003514-7**.
+O software **Chatbot para Engenharia de Requisitos** recebeu **certificado de registro de programa de computador** concedido pelo **Instituto Nacional da Propriedade Industrial (INPI)**, referente ao processo **BR512026003514-7**, publicado na **Revista da Propriedade Industrial (RPI) nº 2889, de 19 de maio de 2026**.
 
 O produto foi desenvolvido por **A. C. M. Lustosa Junior** e **P. H. M. Oliveira**, sob orientação do Prof. {{< link-interno "/people/george_marsicano" "George Marsicano Corrêa" >}}, no âmbito do {{< link-interno "/projects/super_r" "projeto Super-R" >}}.
 
@@ -39,5 +39,5 @@ O registro no INPI assegura a proteção jurídica do programa de computador por
 
 - Título do programa: Chatbot como Ferramenta de Apoio à Engenharia de Requisitos
 - Processo: BR512026003514-7
-- Ano do registro: 2026
+- Publicação: RPI nº 2889, de 19 de maio de 2026
 - Publicador: Instituto Nacional da Propriedade Industrial (INPI)

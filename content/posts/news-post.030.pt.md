@@ -1,6 +1,6 @@
 ---
 title: "INPI concede registro de software para o Apoio Estudantil FCTE"
-date: 2026-08-25T09:05:00-03:00
+date: 2026-05-19T09:05:00-03:00
 draft: false
 weight: 500
 language: pt
@@ -24,9 +24,9 @@ related_ids:
 - project_ia_dados_transformacao_digital
 ---
 
-Brasília, 25 de agosto de 2026
+Brasília, 19 de maio de 2026
 
-O software **Apoio Estudantil FCTE** recebeu **certificado de registro de programa de computador** concedido pelo **Instituto Nacional da Propriedade Industrial (INPI)**, referente ao processo **BR512026003515-5**.
+O software **Apoio Estudantil FCTE** (registrado no INPI sob o nome **@FCTEBot**) recebeu **certificado de registro de programa de computador** concedido pelo **Instituto Nacional da Propriedade Industrial (INPI)**, referente ao processo **BR512026003515-5**, publicado na **Revista da Propriedade Industrial (RPI) nº 2889, de 19 de maio de 2026**.
 
 O produto foi desenvolvido por **Giulia Domingues de Alcantara** e **Breno Henrique de Souza**, sob orientação do Prof. {{< link-interno "/people/george_marsicano" "George Marsicano Corrêa" >}}, no âmbito do {{< link-interno "/projects/ia_dados_transformacao_digital" "projeto Inteligência artificial e análise de dados para a transformação digital" >}}.
 
@@ -38,7 +38,7 @@ O registro no INPI assegura a proteção jurídica do programa de computador por
 
 ## Informações do registro
 
-- Título do programa: Chatbot para dúvidas administrativas (FCTE/UnB)
+- Título do programa: @FCTEBot (Chatbot para dúvidas administrativas — FCTE/UnB)
 - Processo: BR512026003515-5
-- Ano do registro: 2026
+- Publicação: RPI nº 2889, de 19 de maio de 2026
 - Publicador: Instituto Nacional da Propriedade Industrial (INPI)

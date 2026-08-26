@@ -1,6 +1,6 @@
 ---
 title: "INPI grants software registration for FCTE Student Support"
-date: 2026-08-25T09:05:00-03:00
+date: 2026-05-19T09:05:00-03:00
 draft: false
 weight: 500
 language: en
@@ -24,9 +24,9 @@ related_ids:
 - project_ia_dados_transformacao_digital
 ---
 
-Brasilia, August 25, 2026
+Brasilia, May 19, 2026
 
-The **FCTE Student Support** software received a **computer program registration certificate** granted by the **Brazilian National Institute of Industrial Property (INPI)**, under process **BR512026003515-5**.
+The **FCTE Student Support** software (registered at INPI under the name **@FCTEBot**) received a **computer program registration certificate** granted by the **Brazilian National Institute of Industrial Property (INPI)** under process **BR512026003515-5**, published in the **Industrial Property Gazette (RPI) No. 2889, dated May 19, 2026**.
 
 The product was developed by **Giulia Domingues de Alcantara** and **Breno Henrique de Souza**, under the supervision of Prof. {{< link-interno "/people/george_marsicano" "George Marsicano Corrêa" >}}, within the {{< link-interno "/projects/ia_dados_transformacao_digital" "Artificial intelligence and data analysis for digital transformation" >}} project.
 
@@ -38,7 +38,7 @@ The INPI registration secures legal protection of the computer program for 50 ye
 
 ## Registration Information
 
-- Program title: Chatbot for Administrative Inquiries at FCTE/UnB
+- Program title: @FCTEBot (Chatbot for Administrative Inquiries — FCTE/UnB)
 - Process: BR512026003515-5
-- Registration year: 2026
+- Publication: RPI No. 2889, dated May 19, 2026
 - Publisher: Brazilian National Institute of Industrial Property (INPI)
