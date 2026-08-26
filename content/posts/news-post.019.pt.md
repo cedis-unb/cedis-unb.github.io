@@ -4,7 +4,7 @@ date: 2025-08-29T17:00:00-03:00
 draft: false
 weight: 500
 language: pt
-featured_image: "../assets/images/posts/Prêmio Inovação 2025.png"
+featured_image: "../assets/images/posts/Prêmio Inovação 2025.webp"
 summary: 'O CEDIS celebra a conquista do professor Sergio Freitas, que recebeu Menção Honrosa no Prêmio Anual de Inovação no Ensino de Graduação (DEG/UnB), na categoria Uso de recursos tecnológicos e produção de material didático inovador.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

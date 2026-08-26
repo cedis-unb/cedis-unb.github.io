@@ -4,7 +4,7 @@ date: 2026-07-20T09:00:00-03:00
 draft: false
 language: pt
 description: "Política de privacidade do site do CEDIS: dados coletados, finalidade, retenção, base legal e contato."
-featured_image: "../assets/images/pages/media-CEDIS.png"
+featured_image: "../assets/images/pages/media-CEDIS.webp"
 eyebrow: "Privacidade e LGPD"
 translationKey: privacy
 ---

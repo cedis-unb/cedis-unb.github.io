@@ -4,7 +4,7 @@ date: 2026-07-20T09:00:00-03:00
 draft: false
 language: pt
 description: "Materiais institucionais do CEDIS, contato para divulgação científica, notícias e informações para consulta pública."
-featured_image: "../assets/images/pages/media-CEDIS.png"
+featured_image: "../assets/images/pages/media-CEDIS.webp"
 eyebrow: "Comunicação científica"
 translationKey: divulgacao_cientifica
 aliases:

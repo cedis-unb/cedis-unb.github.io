@@ -4,7 +4,7 @@ date: 2024-07-02T11:10:36+08:00
 draft: false
 weight: 500
 language: pt
-featured_image: '../assets/images/posts/Best paper ICCSA.png'
+featured_image: '../assets/images/posts/Best paper ICCSA.webp'
 summary: 'Artigo foi apresentado no 24th ICCSA em Hanoi, Vietnã.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

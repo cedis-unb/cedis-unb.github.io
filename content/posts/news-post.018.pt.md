@@ -4,7 +4,7 @@ date: 2025-08-13T07:00:00-03:00
 draft: false
 weight: 500
 language: pt
-featured_image: "../assets/images/posts/CEDIS at UFES2025.png"
+featured_image: "../assets/images/posts/CEDIS at UFES2025.webp"
 summary: 'O professor Sergio Freitas ministrou curso de formação pedagógica na UFES para docentes das áreas de Exatas e Engenharias, com ampla participação e aplicação prática dos conteúdos abordados.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

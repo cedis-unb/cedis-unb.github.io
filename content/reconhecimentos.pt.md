@@ -4,7 +4,7 @@ date: 2026-07-20T09:00:00-03:00
 draft: false
 language: pt
 description: "Prêmios, menções honrosas e reconhecimentos institucionais recebidos pelo CEDIS e seus pesquisadores."
-featured_image: "../assets/images/pages/media-CEDIS.png"
+featured_image: "../assets/images/pages/media-CEDIS.webp"
 eyebrow: "Prêmios e menções"
 translationKey: reconhecimentos
 ---

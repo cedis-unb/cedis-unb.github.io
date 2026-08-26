@@ -4,7 +4,7 @@ date: 2026-07-20T09:00:00-03:00
 draft: false
 language: en
 description: "CEDIS institutional materials, research outreach contact, news, and public reference information."
-featured_image: "../assets/images/pages/media-CEDIS.png"
+featured_image: "../assets/images/pages/media-CEDIS.webp"
 eyebrow: "Research communication"
 translationKey: divulgacao_cientifica
 slug: research-outreach

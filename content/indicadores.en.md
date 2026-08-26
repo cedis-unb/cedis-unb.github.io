@@ -5,7 +5,7 @@ draft: false
 language: en
 layout: indicators
 description: "Headline numbers for CEDIS: researchers, projects, products, publications, advised defenses, and software registrations."
-featured_image: "../assets/images/pages/media-CEDIS.png"
+featured_image: "../assets/images/pages/media-CEDIS.webp"
 eyebrow: "CEDIS in numbers"
 translationKey: indicadores
 ---

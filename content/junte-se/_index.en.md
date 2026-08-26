@@ -7,7 +7,7 @@ translationKey: join
 layout: join
 url: /join/
 description: "Entry paths for research, supervision, and collaboration at CEDIS/UnB."
-featured_image: "../assets/images/pages/media-CEDIS.png"
+featured_image: "../assets/images/pages/media-CEDIS.webp"
 eyebrow: "Entry paths"
 aliases:
 - /junte-se/

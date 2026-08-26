@@ -5,7 +5,7 @@ draft: false
 language: pt
 layout: quiz
 description: "5 perguntas rápidas para descobrir com que área do CEDIS e quais pesquisadores seu perfil mais se alinha."
-featured_image: "../assets/images/pages/media-CEDIS.png"
+featured_image: "../assets/images/pages/media-CEDIS.webp"
 eyebrow: "Descoberta guiada"
 questions:
   - id: q1

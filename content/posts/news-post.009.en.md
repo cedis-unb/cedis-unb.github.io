@@ -4,7 +4,7 @@ date: 2024-07-01T11:10:36+08:00
 draft: false
 weight: 500
 language: en
-featured_image: '../assets/images/posts/mylena at ICCSA24.png'
+featured_image: '../assets/images/posts/mylena at ICCSA24.webp'
 summary: 'Paper presented at the 24th ICCSA in Hanoi, Vietnam.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

@@ -6,7 +6,7 @@ language: en
 translationKey: about
 description: "CEDIS is the Center for Studies, Development and Innovation in Software at the University of Brasilia. Since 2013 we've studied how software gets built — and who builds it."
 summary: "Research and development group in software at the University of Brasilia, active since 2013 in software engineering, learning, and artificial intelligence."
-featured_image: "../assets/images/pages/our-mission.png"
+featured_image: "../assets/images/pages/our-mission.webp"
 authorimage: ../assets/images/global/author.webp
 ---
 ## What we do

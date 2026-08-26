@@ -6,7 +6,7 @@ language: en
 translationKey: infra
 layout: infrastructure
 description: Spaces, facilities, and computing resources available to support CEDIS research, meetings, and development activities.
-featured_image: "../assets/images/pages/conteiner-cedis.png"
+featured_image: "../assets/images/pages/conteiner-cedis.webp"
 eyebrow: "Facilities and resources"
 ---
 CEDIS has two spaces for conducting its activities:

@@ -6,7 +6,7 @@ language: pt
 translationKey: opportunities
 url: /pt/oportunidades/
 description: "Arquivo de editais, chamadas e oportunidades vinculadas a projetos e seleções do CEDIS; no momento, todos os itens cadastrados estão encerrados."
-featured_image: "../assets/images/pages/media-CEDIS.png"
+featured_image: "../assets/images/pages/media-CEDIS.webp"
 eyebrow: "Chamadas e seleções"
 aliases:
 - /oportunidades/

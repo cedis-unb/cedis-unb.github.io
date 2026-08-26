@@ -4,7 +4,7 @@ date: 2025-08-29T17:00:00-03:00
 draft: false
 weight: 500
 language: en
-featured_image: "../assets/images/posts/Prêmio Inovação 2025.png"
+featured_image: "../assets/images/posts/Prêmio Inovação 2025.webp"
 summary: 'CEDIS celebrates the achievement of Professor Sergio Freitas, who received an Honorable Mention in the Annual Undergraduate Teaching Innovation Award (DEG/UnB), in the category Use of technological resources and production of innovative teaching material.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

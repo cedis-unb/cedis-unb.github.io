@@ -4,7 +4,7 @@ date: 2025-09-03T17:00:00-03:00
 draft: false
 weight: 500
 language: en
-featured_image: "../assets/images/posts/Gamificacao BB UnB2025.png"
+featured_image: "../assets/images/posts/Gamificacao BB UnB2025.webp"
 summary: 'UnB’s Software Engineering Program hosts Gamification Team from Banco do Brasil'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

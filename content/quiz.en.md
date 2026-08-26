@@ -6,7 +6,7 @@ language: en
 url: /quiz/
 layout: quiz
 description: "5 quick questions to discover which CEDIS area and researchers align best with your profile."
-featured_image: "../assets/images/pages/media-CEDIS.png"
+featured_image: "../assets/images/pages/media-CEDIS.webp"
 eyebrow: "Guided discovery"
 questions:
   - id: q1

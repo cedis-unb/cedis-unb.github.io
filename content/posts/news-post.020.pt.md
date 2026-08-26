@@ -4,7 +4,7 @@ date: 2025-09-03T17:00:00-03:00
 draft: false
 weight: 500
 language: pt
-featured_image: "../assets/images/posts/Gamificacao BB UnB2025.png"
+featured_image: "../assets/images/posts/Gamificacao BB UnB2025.webp"
 summary: "O curso de Engenharia de Software da UnB recebeu a equipe de Gamificação do Banco do Brasil para uma palestra sobre história, metodologia e ética da gamificação."
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

@@ -4,7 +4,7 @@ date: 2026-07-20T09:00:00-03:00
 draft: false
 language: en
 description: "Awards, honorable mentions, and institutional recognitions received by CEDIS and its researchers."
-featured_image: "../assets/images/pages/media-CEDIS.png"
+featured_image: "../assets/images/pages/media-CEDIS.webp"
 eyebrow: "Awards and mentions"
 translationKey: reconhecimentos
 ---

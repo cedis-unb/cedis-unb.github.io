@@ -4,7 +4,7 @@ date: 2025-08-13T07:00:00-03:00
 draft: false
 weight: 500
 language: en
-featured_image: "../assets/images/posts/CEDIS at UFES2025.png"
+featured_image: "../assets/images/posts/CEDIS at UFES2025.webp"
 summary: 'Professor Sergio Freitas conducted a pedagogical training course at UFES for faculty members in the fields of Exact Sciences and Engineering, with broad participation and practical application of the content covered.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

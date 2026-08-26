@@ -293,7 +293,7 @@
                         {{ end }}
                         {{ else }}
                         {{/* Fallback when there are no items: keep the original static hero image */}}
-                        {{ $hero := resources.GetMatch "images/pages/media-CEDIS.png" }}
+                        {{ $hero := resources.GetMatch "images/pages/media-CEDIS.webp" }}
                         <div class="relative mt-4 overflow-hidden rounded-2xl">
                             {{ with $hero }}
                             <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="CEDIS" class="h-full w-full object-cover" loading="eager" decoding="async" />
