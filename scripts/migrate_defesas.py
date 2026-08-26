@@ -265,7 +265,7 @@ def _load_people_map() -> dict[str, str]:
             continue
         try:
             data = pyyaml.safe_load(fm.group(1)) or {}
-        except Exception:
+        except pyyaml.YAMLError:
             continue
         name = data.get("title") or data.get("name")
         if not isinstance(name, str):
@@ -354,7 +354,7 @@ def _load_product_index() -> dict[str, dict]:
             continue
         try:
             data = pyyaml.safe_load(fm.group(1)) or {}
-        except Exception:
+        except pyyaml.YAMLError:
             continue
         idx[slug] = {
             "project": data.get("project"),

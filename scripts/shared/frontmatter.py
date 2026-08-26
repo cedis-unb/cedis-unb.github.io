@@ -6,10 +6,13 @@ ambos os casos; wrappers convenientes ficam a cargo do chamador.
 """
 from __future__ import annotations
 
+import re
 from pathlib import Path
 from typing import Any
 
 import yaml
+
+_FM_RE = re.compile(r"^---\n(.*?)\n---\n?(.*)$", re.S)
 
 
 def parse_frontmatter(path: Path) -> tuple[dict[str, Any] | None, str]:
@@ -33,3 +36,33 @@ def parse_frontmatter_dict(path: Path) -> dict[str, Any] | None:
     """Wrapper que descarta o body — para chamadores que só usam o fm."""
     fm, _ = parse_frontmatter(path)
     return fm
+
+
+def split_frontmatter_raw(text: str) -> tuple[str, str]:
+    """Divide texto bruto em (frontmatter_yaml_str, body).
+
+    Diferente de parse_frontmatter, mantém o YAML como string — útil quando
+    o chamador precisa editar linhas do frontmatter preservando ordem/
+    formatação (ex.: apply_profile_level.py, consolidate_collaborators.py).
+
+    Levanta ValueError se o arquivo não começa com '---\\n...\\n---'.
+    """
+    m = _FM_RE.match(text)
+    if not m:
+        raise ValueError("sem frontmatter YAML delimitado por '---'")
+    return m.group(1), m.group(2)
+
+
+def read_frontmatter_yaml_str(path: Path) -> str | None:
+    """Retorna a string YAML do frontmatter de um .md, ou None se faltando.
+
+    Para call sites que só precisam parsear com ``yaml.safe_load`` depois.
+    Substitui o padrão duplicado ``re.match(r"^---\\n(.*?)\\n---", ...)``
+    em normalize_people_slugs.py, apply_people_slugs.py, migrate_defesas.py.
+    """
+    try:
+        text = path.read_text(encoding="utf-8")
+    except OSError:
+        return None
+    m = re.match(r"^---\n(.*?)\n---", text, re.S)
+    return m.group(1) if m else None

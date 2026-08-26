@@ -159,7 +159,7 @@ def load_advisors() -> dict:
             if not fmm:
                 continue
             fm = yaml.safe_load(fmm.group(1)) or {}
-        except Exception:
+        except (OSError, yaml.YAMLError):
             continue
         level = fm.get("profile_level", "")
         if level not in ("researcher", "advisor_only"):
@@ -206,14 +206,14 @@ def load_person_md_files() -> dict:
             slug, lang = m.group(1), m.group(2)
             try:
                 text = md.read_text(encoding="utf-8")
-            except Exception:
+            except OSError:
                 continue
             fm = {}
             fmm = re.match(r"^---\n(.*?)\n---", text, re.S)
             if fmm:
                 try:
                     fm = yaml.safe_load(fmm.group(1)) or {}
-                except Exception:
+                except yaml.YAMLError:
                     fm = {}
             entry = out.setdefault(slug, {"languages": {}, "location": base or "root"})
             entry["languages"][lang] = {"path": str(md.relative_to(REPO_ROOT)), "frontmatter": fm}

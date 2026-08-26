@@ -39,18 +39,13 @@ except ImportError:
     print("ERRO: PyYAML não instalado.", file=sys.stderr)
     sys.exit(2)
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from shared.frontmatter import split_frontmatter_raw as split_frontmatter  # noqa: E402
+
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 SRC_DIR = REPO_ROOT / "content" / "people" / "collaborators"
 DST_DIR = REPO_ROOT / "content" / "people"
-
-
-def split_frontmatter(text: str) -> tuple[str, str]:
-    """Retorna (frontmatter_yaml_str, body). Assume delimitador '---\\n'."""
-    m = re.match(r"^---\n(.*?)\n---\n?(.*)$", text, re.S)
-    if not m:
-        raise ValueError("Arquivo sem frontmatter YAML delimitado por '---'")
-    return m.group(1), m.group(2)
 
 
 def inject_alias(frontmatter_str: str, alias: str) -> tuple[str, bool]:
