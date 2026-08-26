@@ -42,17 +42,14 @@
 {{ $lang := $.Site.Language.Lang }}
 {{ $index := partialCached "people-index" "global" }}
 
-{{/* Helpers de filtragem — todos operam em slices já unificadas por pessoa */}}
-{{ $filterHasContent := gt (len $filterTags) 0 }}
-{{ if $filterHasContent }}{{ $filterHasContent = ne (index $filterTags 0) "" }}{{ end }}
-{{ $filterCatsHasContent := gt (len $filterCategories) 0 }}
-{{ if $filterCatsHasContent }}{{ $filterCatsHasContent = ne (index $filterCategories 0) "" }}{{ end }}
-{{ $excludeTagsHasContent := gt (len $excludeTags) 0 }}
-{{ if $excludeTagsHasContent }}{{ $excludeTagsHasContent = ne (index $excludeTags 0) "" }}{{ end }}
-{{ $excludeCatsHasContent := gt (len $excludeCategories) 0 }}
-{{ if $excludeCatsHasContent }}{{ $excludeCatsHasContent = ne (index $excludeCategories 0) "" }}{{ end }}
-{{ $filterAdvisorsHasContent := gt (len $filterAdvisors) 0 }}
-{{ if $filterAdvisorsHasContent }}{{ $filterAdvisorsHasContent = ne (index $filterAdvisors 0) "" }}{{ end }}
+{{/* Helpers de filtragem — todos operam em slices já unificadas por pessoa.
+     hasContent := slice não-vazia E primeiro elemento não-vazio (protege
+     contra ["", ...] gerado por parâmetros default do shortcode). */}}
+{{ $filterHasContent         := and (gt (len $filterTags)       0) (ne (index $filterTags       0) "") }}
+{{ $filterCatsHasContent     := and (gt (len $filterCategories) 0) (ne (index $filterCategories 0) "") }}
+{{ $excludeTagsHasContent    := and (gt (len $excludeTags)      0) (ne (index $excludeTags      0) "") }}
+{{ $excludeCatsHasContent    := and (gt (len $excludeCategories) 0) (ne (index $excludeCategories 0) "") }}
+{{ $filterAdvisorsHasContent := and (gt (len $filterAdvisors)   0) (ne (index $filterAdvisors   0) "") }}
 
 {{ $matched := slice }}
 

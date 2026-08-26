@@ -33,6 +33,9 @@ except ImportError:
     print("ERRO: PyYAML não instalado.", file=sys.stderr)
     sys.exit(2)
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from shared.frontmatter import split_frontmatter_raw as split_frontmatter  # noqa: E402
+
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 PEOPLE_DIR = REPO_ROOT / "content" / "people"
@@ -44,13 +47,6 @@ def classify(categories: list) -> str:
     if "researcher" in categories:
         return "researcher"
     return "card_with_page"
-
-
-def split_frontmatter(text: str) -> tuple[str, str]:
-    m = re.match(r"^---\n(.*?)\n---\n?(.*)$", text, re.S)
-    if not m:
-        raise ValueError("sem frontmatter YAML delimitado por '---'")
-    return m.group(1), m.group(2)
 
 
 def inject_profile_level(fm_str: str, level: str) -> tuple[str, str]:

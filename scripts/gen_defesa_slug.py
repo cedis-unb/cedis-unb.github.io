@@ -28,17 +28,15 @@ sobre uma lista.
 from __future__ import annotations
 
 import re
-import unicodedata
+import sys
+from pathlib import Path
 from typing import Iterable
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from shared.slugify import strip_accents as _strip_accents  # noqa: E402
 
 _PARTICLES = {"de", "da", "do", "dos", "das", "e"}
 _DATE_RE = re.compile(r"^(\d{4})-(\d{2})-(\d{2})")
-
-
-def _strip_accents(s: str) -> str:
-    return "".join(
-        c for c in unicodedata.normalize("NFD", s) if unicodedata.category(c) != "Mn"
-    )
 
 
 def _clean_token(tok: str) -> str:

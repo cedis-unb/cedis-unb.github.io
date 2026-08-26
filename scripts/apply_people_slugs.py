@@ -64,7 +64,7 @@ def load_md_slugs() -> dict:
             continue
         try:
             fm = yaml.safe_load(fmm.group(1)) or {}
-        except Exception:
+        except yaml.YAMLError:
             continue
         out.setdefault(slug, {"pt": None, "en": None})
         out[slug][lang] = fm.get("title") or ""
