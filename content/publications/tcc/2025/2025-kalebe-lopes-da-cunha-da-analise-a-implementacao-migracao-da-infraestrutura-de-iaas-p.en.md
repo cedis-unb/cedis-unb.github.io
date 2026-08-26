@@ -8,7 +8,7 @@ translationKey: publication_2025_kalebe_lopes_da_cunha_da_analise_a_implementaca
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2025_kalebe_lopes_da_cunha_da_analise_a_implementacao_migracao_da_infraestrutura_de_iaas_p
-publication_index: 18
+publication_index: 23
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

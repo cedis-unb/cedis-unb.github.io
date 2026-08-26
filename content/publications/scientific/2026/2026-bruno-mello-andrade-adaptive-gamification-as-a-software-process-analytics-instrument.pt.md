@@ -8,7 +8,7 @@ translationKey: publication_2026_bruno_mello_andrade_adaptive_gamification_as_a_
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2026_bruno_mello_andrade_adaptive_gamification_as_a_software_process_analytics_instrument
-publication_index: 326
+publication_index: 331
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle

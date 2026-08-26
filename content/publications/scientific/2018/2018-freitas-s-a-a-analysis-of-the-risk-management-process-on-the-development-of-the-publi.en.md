@@ -8,7 +8,7 @@ translationKey: publication_2018_freitas_s_a_a_analysis_of_the_risk_management_p
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2018_freitas_s_a_a_analysis_of_the_risk_management_process_on_the_development_of_the_publi
-publication_index: 141
+publication_index: 146
 publication_group: scientific
 publication_type: article
 schema_type: ScholarlyArticle

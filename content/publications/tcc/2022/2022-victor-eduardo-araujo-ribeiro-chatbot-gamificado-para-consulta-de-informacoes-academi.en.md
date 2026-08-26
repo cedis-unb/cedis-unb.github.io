@@ -7,7 +7,7 @@ translationKey: publication_2022_victor_eduardo_araujo_ribeiro_chatbot_gamificad
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2022_victor_eduardo_araujo_ribeiro_chatbot_gamificado_para_consulta_de_informacoes_academi
-publication_index: 99
+publication_index: 104
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

@@ -8,7 +8,7 @@ translationKey: publication_2014_larissa_de_medeiros_torres_santos_como_comunica
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2014_larissa_de_medeiros_torres_santos_como_comunicar_erros_de_seguranca_da_informacao_e_c
-publication_index: 285
+publication_index: 290
 publication_group: specialization
 publication_type: specialization
 schema_type: Thesis

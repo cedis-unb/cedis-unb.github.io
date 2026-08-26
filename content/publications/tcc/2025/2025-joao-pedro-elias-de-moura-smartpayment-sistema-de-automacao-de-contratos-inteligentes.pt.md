@@ -8,7 +8,7 @@ translationKey: publication_2025_joao_pedro_elias_de_moura_smartpayment_sistema_
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2025_joao_pedro_elias_de_moura_smartpayment_sistema_de_automacao_de_contratos_inteligentes
-publication_index: 15
+publication_index: 20
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

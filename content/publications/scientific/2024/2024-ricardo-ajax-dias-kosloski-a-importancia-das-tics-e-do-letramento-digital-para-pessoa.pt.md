@@ -8,7 +8,7 @@ translationKey: publication_2024_ricardo_ajax_dias_kosloski_a_importancia_das_ti
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2024_ricardo_ajax_dias_kosloski_a_importancia_das_tics_e_do_letramento_digital_para_pessoa
-publication_index: 36
+publication_index: 41
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle

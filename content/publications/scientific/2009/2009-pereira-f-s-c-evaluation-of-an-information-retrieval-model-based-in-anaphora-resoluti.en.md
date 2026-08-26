@@ -7,7 +7,7 @@ translationKey: publication_2009_pereira_f_s_c_evaluation_of_an_information_retr
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2009_pereira_f_s_c_evaluation_of_an_information_retrieval_model_based_in_anaphora_resoluti
-publication_index: 214
+publication_index: 219
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle
@@ -18,11 +18,7 @@ authors:
 - FREITAS, S. A. A.
 authors_structured:
 - name: Pereira, F. S. C.
-  id: pereira_v_c
-  url: /people/pereira_v_c
 - name: MORELLATO, L.
-  id: morellato_l
-  url: /people/morellato_l
 - name: FREITAS, S. A. A.
 tags:
 - nlp

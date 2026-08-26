@@ -7,7 +7,7 @@ translationKey: publication_2023_luiz_henrique_fernandes_zamprogno_latte_um_chat
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2023_luiz_henrique_fernandes_zamprogno_latte_um_chatbot_gamificado_para_apoio_na_producao
-publication_index: 95
+publication_index: 100
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

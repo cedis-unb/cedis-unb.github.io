@@ -7,7 +7,7 @@ translationKey: publication_2013_greg_ouyama_martins_avaliacao_de_algoritmos_par
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2013_greg_ouyama_martins_avaliacao_de_algoritmos_para_ordenacao_de_documentos_digitais_rec
-publication_index: 208
+publication_index: 213
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

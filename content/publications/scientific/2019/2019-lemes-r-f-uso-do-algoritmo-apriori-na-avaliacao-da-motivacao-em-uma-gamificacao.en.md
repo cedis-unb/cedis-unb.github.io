@@ -7,7 +7,7 @@ translationKey: publication_2019_lemes_r_f_uso_do_algoritmo_apriori_na_avaliacao
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2019_lemes_r_f_uso_do_algoritmo_apriori_na_avaliacao_da_motivacao_em_uma_gamificacao
-publication_index: 130
+publication_index: 135
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle
@@ -17,8 +17,6 @@ authors:
 - FREITAS, S. A. A.
 authors_structured:
 - name: LEMES, R. F.
-  id: lemes_r_f
-  url: /people/lemes_r_f
 - name: FREITAS, S. A. A.
 tags:
 - gamification

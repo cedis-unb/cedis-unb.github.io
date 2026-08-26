@@ -8,7 +8,7 @@ translationKey: publication_2023_edmilson_cosme_da_silva_previsao_da_evasao_acad
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2023_edmilson_cosme_da_silva_previsao_da_evasao_academica_no_ensino_superior_o_caso_dos_cu
-publication_index: 58
+publication_index: 63
 publication_group: thesis
 publication_type: dissertation
 schema_type: Thesis

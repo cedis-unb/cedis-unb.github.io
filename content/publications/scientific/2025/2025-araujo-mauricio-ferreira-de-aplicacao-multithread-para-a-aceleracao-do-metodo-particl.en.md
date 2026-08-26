@@ -7,7 +7,7 @@ translationKey: publication_2025_araujo_mauricio_ferreira_de_aplicacao_multithre
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2025_araujo_mauricio_ferreira_de_aplicacao_multithread_para_a_aceleracao_do_metodo_particl
-publication_index: 25
+publication_index: 30
 publication_group: scientific
 publication_type: workshop
 schema_type: ScholarlyArticle

@@ -7,7 +7,7 @@ translationKey: publication_2021_gabriela_da_gama_piveta_green_software_business
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2021_gabriela_da_gama_piveta_green_software_business_guide
-publication_index: 113
+publication_index: 118
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis
@@ -16,8 +16,7 @@ authors:
 - Gabriela da Gama Piveta
 authors_structured:
 - name: Gabriela da Gama Piveta
-  id: da_gama_pivetta_gabriela
-  url: /people/da_gama_pivetta_gabriela
+  id: gabriela_da_gama_piveta
 tags:
 - green_software
 - project_gsd

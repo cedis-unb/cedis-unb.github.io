@@ -7,7 +7,7 @@ translationKey: publication_2006_lucia_freire_vieira_documentacao_essencial_para
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2006_lucia_freire_vieira_documentacao_essencial_para_avaliacao_de_sistemas_legados_um_estu
-publication_index: 312
+publication_index: 317
 publication_group: specialization
 publication_type: specialization
 schema_type: Thesis

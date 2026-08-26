@@ -8,7 +8,7 @@ translationKey: publication_2021_weiller_fernandes_pereira_revisao_sistematica_d
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2021_weiller_fernandes_pereira_revisao_sistematica_da_literatura_sobre_o_uso_de_frameworks
-publication_index: 115
+publication_index: 120
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

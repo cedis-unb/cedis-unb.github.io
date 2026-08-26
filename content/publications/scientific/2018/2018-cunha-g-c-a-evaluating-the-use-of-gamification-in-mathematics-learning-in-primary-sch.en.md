@@ -8,7 +8,7 @@ translationKey: publication_2018_cunha_g_c_a_evaluating_the_use_of_gamification_
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2018_cunha_g_c_a_evaluating_the_use_of_gamification_in_mathematics_learning_in_primary_sch
-publication_index: 146
+publication_index: 151
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle
@@ -19,11 +19,7 @@ authors:
 - FREITAS, S. A. A.
 authors_structured:
 - name: CUNHA, G. C. A.
-  id: cunha_g_c_a
-  url: /people/cunha_g_c_a
 - name: BARRAQUI, L. P.
-  id: barraqui_l_p
-  url: /people/barraqui_l_p
 - name: FREITAS, S. A. A.
 tags:
 - gamification

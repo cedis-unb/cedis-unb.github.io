@@ -7,7 +7,7 @@ translationKey: publication_2019_victor_hugo_arnaud_deon_pgtbl_plataforma_de_ger
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2019_victor_hugo_arnaud_deon_pgtbl_plataforma_de_gerenciamento_de_team_based_learning
-publication_index: 123
+publication_index: 128
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

@@ -7,7 +7,7 @@ translationKey: publication_2018_ribeiro_a_s_an_implementation_of_the_oauth_2_0_
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2018_ribeiro_a_s_an_implementation_of_the_oauth_2_0_for_an_enterprise_service_bus
-publication_index: 153
+publication_index: 158
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle
@@ -18,8 +18,6 @@ authors:
 - FREITAS, S. A. A.
 authors_structured:
 - name: RIBEIRO, A. S.
-  id: ribeiro_a_s
-  url: /people/ribeiro_a_s
 - name: CANEDO, E. D.
 - name: FREITAS, S. A. A.
 tags:

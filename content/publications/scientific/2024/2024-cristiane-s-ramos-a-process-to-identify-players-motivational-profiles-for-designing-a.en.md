@@ -8,7 +8,7 @@ translationKey: publication_2024_cristiane_s_ramos_a_process_to_identify_players
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2024_cristiane_s_ramos_a_process_to_identify_players_motivational_profiles_for_designing_a
-publication_index: 43
+publication_index: 48
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle

@@ -8,7 +8,7 @@ translationKey: publication_2019_chaves_j_t_f_a_systematic_literature_review_for
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2019_chaves_j_t_f_a_systematic_literature_review_for_service_oriented_architecture_and_agi
-publication_index: 128
+publication_index: 133
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle

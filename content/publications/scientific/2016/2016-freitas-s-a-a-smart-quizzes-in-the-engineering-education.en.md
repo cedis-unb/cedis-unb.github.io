@@ -7,7 +7,7 @@ translationKey: publication_2016_freitas_s_a_a_smart_quizzes_in_the_engineering_
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2016_freitas_s_a_a_smart_quizzes_in_the_engineering_education
-publication_index: 174
+publication_index: 179
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle
@@ -25,17 +25,9 @@ authors_structured:
   id: silva_rita_de_cassia
   url: /people/silva_rita_de_cassia
 - name: LUCENA, TIAGO FRANKLIN R.
-  id: lucena_tiago_franklin_r
-  url: /people/lucena_tiago_franklin_r
 - name: RIBEIRO, EDUARDO DO N.
-  id: ribeiro_eduardo_do_n
-  url: /people/ribeiro_eduardo_do_n
 - name: LIMA, VICTOR COTRIM DE
-  id: lima_victor_cotrim_de
-  url: /people/lima_victor_cotrim_de
 - name: SILVA, RODRIGO M. S. DA
-  id: silva_rodrigo_m_s_da
-  url: /people/silva_rodrigo_m_s_da
 tags:
 - ai
 - education

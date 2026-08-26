@@ -8,7 +8,7 @@ translationKey: publication_2019_nogueira_teresinha_de_jesus_araujo_magalhaes_pr
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2019_nogueira_teresinha_de_jesus_araujo_magalhaes_programa_aprendizagem_para_o_3o_milenio
-publication_index: 136
+publication_index: 141
 publication_group: scientific
 publication_type: book_section
 schema_type: Chapter
@@ -24,8 +24,6 @@ authors_structured:
   id: nogueira_teresinha_de_jesus_araujo_magalhaes
   url: /people/nogueira_teresinha_de_jesus_araujo_magalhaes
 - name: Melo, Lívia Veleda de Sousa e
-  id: melo_livia_veleda_de_sousa_e
-  url: /people/melo_livia_veleda_de_sousa_e
 - name: FREITAS, S. A. A.
 - name: Leite, Letícia Lopes
   id: leite_leticia_lopes

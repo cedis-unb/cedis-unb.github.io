@@ -7,7 +7,7 @@ translationKey: publication_2003_cristo_filho_a_m_interpretacao_do_futuro_do_pre
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2003_cristo_filho_a_m_interpretacao_do_futuro_do_preterito_em_narrativas
-publication_index: 221
+publication_index: 226
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle

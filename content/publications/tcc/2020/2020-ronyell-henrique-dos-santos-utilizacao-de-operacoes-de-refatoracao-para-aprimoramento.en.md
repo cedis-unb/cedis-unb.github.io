@@ -7,7 +7,7 @@ translationKey: publication_2020_ronyell_henrique_dos_santos_utilizacao_de_opera
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2020_ronyell_henrique_dos_santos_utilizacao_de_operacoes_de_refatoracao_para_aprimoramento
-publication_index: 114
+publication_index: 119
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

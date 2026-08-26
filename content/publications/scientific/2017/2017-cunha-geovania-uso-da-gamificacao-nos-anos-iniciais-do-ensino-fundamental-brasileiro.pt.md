@@ -7,7 +7,7 @@ translationKey: publication_2017_cunha_geovania_uso_da_gamificacao_nos_anos_inic
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2017_cunha_geovania_uso_da_gamificacao_nos_anos_iniciais_do_ensino_fundamental_brasileiro
-publication_index: 160
+publication_index: 165
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle

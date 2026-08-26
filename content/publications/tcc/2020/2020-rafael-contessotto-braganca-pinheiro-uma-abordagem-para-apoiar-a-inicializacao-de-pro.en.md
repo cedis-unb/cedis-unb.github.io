@@ -8,7 +8,7 @@ translationKey: publication_2020_rafael_contessotto_braganca_pinheiro_uma_aborda
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2020_rafael_contessotto_braganca_pinheiro_uma_abordagem_para_apoiar_a_inicializacao_de_pro
-publication_index: 96
+publication_index: 101
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

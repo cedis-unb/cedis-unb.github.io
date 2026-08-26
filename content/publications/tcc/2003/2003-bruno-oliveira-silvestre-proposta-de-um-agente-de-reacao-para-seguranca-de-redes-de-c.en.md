@@ -7,7 +7,7 @@ translationKey: publication_2003_bruno_oliveira_silvestre_proposta_de_um_agente_
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2003_bruno_oliveira_silvestre_proposta_de_um_agente_de_reacao_para_seguranca_de_redes_de_c
-publication_index: 243
+publication_index: 248
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

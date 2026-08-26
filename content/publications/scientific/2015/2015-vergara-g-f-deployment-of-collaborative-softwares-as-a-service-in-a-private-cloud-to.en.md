@@ -8,7 +8,7 @@ translationKey: publication_2015_vergara_g_f_deployment_of_collaborative_softwar
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2015_vergara_g_f_deployment_of_collaborative_softwares_as_a_service_in_a_private_cloud_to
-publication_index: 194
+publication_index: 199
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle

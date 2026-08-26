@@ -7,7 +7,7 @@ translationKey: publication_2010_higor_estevan_do_carmo_rodrigues_proposta_de_pr
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2010_higor_estevan_do_carmo_rodrigues_proposta_de_processo_de_teste_baseado_no_cmmi_maturi
-publication_index: 290
+publication_index: 295
 publication_group: specialization
 publication_type: specialization
 schema_type: Thesis

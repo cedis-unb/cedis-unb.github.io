@@ -42,6 +42,197 @@ items:
       en: ''
     year: 2026
   - authors:
+      - A. C. M. Lustosa Junior
+      - P. H. M. Oliveira
+      - George Marsicano Corrêa
+    title:
+      pt: 'Certificado de registro de programa de computador: Chatbot como Ferramenta de Apoio à Engenharia de Requisitos'
+      en: 'Computer program registration certificate: Chatbot as a Support Tool for Requirements Engineering'
+    summary:
+      pt: Registro de programa de computador concedido pelo INPI sob o processo BR512026003514-7, referente a chatbot inteligente baseado em modelos de linguagem que apoia a elicitação, organização e formalização de requisitos, com geração automatizada de histórias de usuário.
+      en: Computer program registration granted by INPI under process BR512026003514-7, for an intelligent chatbot based on language models that supports the elicitation, organization, and formalization of requirements, with automated generation of user stories.
+    book_title: ''
+    volume: ''
+    doi_isbn: ''
+    journal_event: ''
+    location: Brasília, DF, Brasil
+    pages: ''
+    publisher: Instituto Nacional da Propriedade Industrial (INPI)
+    tags:
+      - ai
+      - software_requirements
+      - chatbot_requisitos
+      - project_super_r
+    people:
+      - george_marsicano
+    type: registro
+    program: ''
+    advisors: []
+    url: ''
+    spotify_podcast:
+      pt: ''
+      en: ''
+    github_repo:
+      pt: ''
+      en: ''
+    zenodo_record:
+      pt: ''
+      en: ''
+    year: 2026
+  - authors:
+      - Giulia Domingues de Alcantara
+      - Breno Henrique de Souza
+      - George Marsicano Corrêa
+    title:
+      pt: 'Certificado de registro de programa de computador: Chatbot para dúvidas administrativas da FCTE/UnB'
+      en: 'Computer program registration certificate: Chatbot for Administrative Inquiries at FCTE/UnB'
+    summary:
+      pt: Registro de programa de computador concedido pelo INPI sob o processo BR512026003515-5, referente a assistente virtual via Telegram que utiliza IA com abordagem RAG para centralizar e responder dúvidas administrativas e acadêmicas de estudantes da FCTE/UnB.
+      en: Computer program registration granted by INPI under process BR512026003515-5, for a Telegram-based virtual assistant that uses AI with a RAG approach to centralize and answer administrative and academic questions from FCTE/UnB students.
+    book_title: ''
+    volume: ''
+    doi_isbn: ''
+    journal_event: ''
+    location: Brasília, DF, Brasil
+    pages: ''
+    publisher: Instituto Nacional da Propriedade Industrial (INPI)
+    tags:
+      - ai
+      - education
+      - digital_transformation
+      - apoio_estudantil_fcte
+      - project_ia_dados_transformacao_digital
+    people:
+      - george_marsicano
+    type: registro
+    program: ''
+    advisors: []
+    url: ''
+    spotify_podcast:
+      pt: ''
+      en: ''
+    github_repo:
+      pt: ''
+      en: ''
+    zenodo_record:
+      pt: ''
+      en: ''
+    year: 2026
+  - authors:
+      - Maria Eduarda D Santos Abritta F
+      - Sabrina Caldas Berna
+      - George Marsicano Corrêa
+    title:
+      pt: 'Certificado de registro de programa de computador: Aplicação de Aprendizado de Máquina na Predição Não-Invasiva de Euploidia em Embriões Humanos'
+      en: 'Computer program registration certificate: Machine Learning Application for Non-Invasive Prediction of Euploidy in Human Embryos'
+    summary:
+      pt: Registro de programa de computador concedido pelo INPI sob o processo BR512026003650-0, referente a sistema que utiliza aprendizado de máquina e dados morfocinéticos para predição não invasiva de euploidia embrionária, com apoio à decisão clínica em reprodução assistida.
+      en: Computer program registration granted by INPI under process BR512026003650-0, for a system that uses machine learning and morphokinetic data for the non-invasive prediction of embryonic euploidy, supporting clinical decision-making in assisted reproduction.
+    book_title: ''
+    volume: ''
+    doi_isbn: ''
+    journal_event: ''
+    location: Brasília, DF, Brasil
+    pages: ''
+    publisher: Instituto Nacional da Propriedade Industrial (INPI)
+    tags:
+      - ai
+      - machine_learning
+      - predicao_euploidia
+      - project_ia_dados_transformacao_digital
+    people:
+      - george_marsicano
+    type: registro
+    program: ''
+    advisors: []
+    url: ''
+    spotify_podcast:
+      pt: ''
+      en: ''
+    github_repo:
+      pt: ''
+      en: ''
+    zenodo_record:
+      pt: ''
+      en: ''
+    year: 2026
+  - authors:
+      - G. M. Rodrigues
+      - S. A. C. Oliveira
+      - George Marsicano Corrêa
+    title:
+      pt: 'Certificado de registro de programa de computador: Pró-vida e Eu Me Protejo'
+      en: 'Computer program registration certificate: Pró-vida e Eu Me Protejo'
+    summary:
+      pt: Registro de programa de computador concedido pelo INPI sob o processo BR512026005120-7, referente a aplicativo mobile gamificado e offline, baseado no Manual de Boas Práticas do projeto "Pró-vida e Eu Me Protejo", para apoiar pais, tutores e educadores na prevenção da violência na infância.
+      en: Computer program registration granted by INPI under process BR512026005120-7, for a gamified offline mobile application based on the "Pró-vida e Eu Me Protejo" project's Good Practices Manual, supporting parents, guardians, and educators in preventing childhood violence.
+    book_title: ''
+    volume: ''
+    doi_isbn: ''
+    journal_event: ''
+    location: Brasília, DF, Brasil
+    pages: ''
+    publisher: Instituto Nacional da Propriedade Industrial (INPI)
+    tags:
+      - gamification
+      - education
+      - social_software
+      - prevencao_violencia_infancia
+      - project_software_bem
+    people:
+      - george_marsicano
+    type: registro
+    program: ''
+    advisors: []
+    url: ''
+    spotify_podcast:
+      pt: ''
+      en: ''
+    github_repo:
+      pt: ''
+      en: ''
+    zenodo_record:
+      pt: ''
+      en: ''
+    year: 2026
+  - authors:
+      - V. S. Cabral
+      - George Marsicano Corrêa
+    title:
+      pt: 'Certificado de registro de programa de computador: Aplicativo Eu Me Protejo'
+      en: 'Computer program registration certificate: Eu Me Protejo Application'
+    summary:
+      pt: Registro de programa de computador concedido pelo INPI sob o processo BR512026005122-3, referente a aplicativo mobile gamificado para crianças de 4 a 10 anos, alinhado às cartilhas do projeto Eu Me Protejo, para apoiar a autoproteção e a prevenção do abuso sexual infantil.
+      en: Computer program registration granted by INPI under process BR512026005122-3, for a gamified mobile application for children ages 4 to 10, aligned with the Eu Me Protejo project's booklets, supporting self-protection and the prevention of child sexual abuse.
+    book_title: ''
+    volume: ''
+    doi_isbn: ''
+    journal_event: ''
+    location: Brasília, DF, Brasil
+    pages: ''
+    publisher: Instituto Nacional da Propriedade Industrial (INPI)
+    tags:
+      - gamification
+      - social_software
+      - prevencao_abuso_infantil
+      - project_software_bem
+    people:
+      - george_marsicano
+    type: registro
+    program: ''
+    advisors: []
+    url: ''
+    spotify_podcast:
+      pt: ''
+      en: ''
+    github_repo:
+      pt: ''
+      en: ''
+    zenodo_record:
+      pt: ''
+      en: ''
+    year: 2026
+  - authors:
       - Ricardo Ajax Dias Kosloski
       - Leides Barroso de Azevedo Moura
       - Marília Miranda Forte Gomes

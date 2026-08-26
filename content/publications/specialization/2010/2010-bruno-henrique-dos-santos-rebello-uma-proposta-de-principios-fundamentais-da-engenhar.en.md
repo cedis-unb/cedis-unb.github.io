@@ -8,7 +8,7 @@ translationKey: publication_2010_bruno_henrique_dos_santos_rebello_uma_proposta_
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2010_bruno_henrique_dos_santos_rebello_uma_proposta_de_principios_fundamentais_da_engenhar
-publication_index: 288
+publication_index: 293
 publication_group: specialization
 publication_type: specialization
 schema_type: Thesis

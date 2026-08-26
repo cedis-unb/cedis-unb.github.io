@@ -8,7 +8,7 @@ translationKey: publication_2022_caue_mateus_oliveira_universidade_das_heuristic
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2022_caue_mateus_oliveira_universidade_das_heuristicas_um_jogo_para_o_apoio_a_aprendizagem
-publication_index: 72
+publication_index: 77
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

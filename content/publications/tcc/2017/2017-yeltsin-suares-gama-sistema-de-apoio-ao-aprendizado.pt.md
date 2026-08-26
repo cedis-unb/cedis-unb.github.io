@@ -7,7 +7,7 @@ translationKey: publication_2017_yeltsin_suares_gama_sistema_de_apoio_ao_aprendi
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2017_yeltsin_suares_gama_sistema_de_apoio_ao_aprendizado
-publication_index: 169
+publication_index: 174
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

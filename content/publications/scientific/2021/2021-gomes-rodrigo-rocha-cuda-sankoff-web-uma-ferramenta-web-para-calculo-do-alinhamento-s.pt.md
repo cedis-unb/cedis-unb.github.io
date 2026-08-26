@@ -8,7 +8,7 @@ translationKey: publication_2021_gomes_rodrigo_rocha_cuda_sankoff_web_uma_ferram
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2021_gomes_rodrigo_rocha_cuda_sankoff_web_uma_ferramenta_web_para_calculo_do_alinhamento_s
-publication_index: 109
+publication_index: 114
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle

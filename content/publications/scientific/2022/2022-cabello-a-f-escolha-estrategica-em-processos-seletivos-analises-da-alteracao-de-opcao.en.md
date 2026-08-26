@@ -8,7 +8,7 @@ translationKey: publication_2022_cabello_a_f_escolha_estrategica_em_processos_se
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2022_cabello_a_f_escolha_estrategica_em_processos_seletivos_analises_da_alteracao_de_opcao
-publication_index: 80
+publication_index: 85
 publication_group: scientific
 publication_type: article
 schema_type: ScholarlyArticle
@@ -22,14 +22,8 @@ authors:
 authors_structured:
 - name: CABELLO, A. F.
 - name: ARRUDA, J. A.
-  id: arruda_j_a
-  url: /people/arruda_j_a
 - name: IMBROISI, D.
-  id: imbroisi_d
-  url: /people/imbroisi_d
 - name: FERREIRA, G. V.
-  id: ferreira_g_v
-  url: /people/ferreira_g_v
 - name: FREITAS, SERGIO A. A.
   id: sergio_freitas
   url: /people/sergio_freitas

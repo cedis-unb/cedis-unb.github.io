@@ -7,7 +7,7 @@ translationKey: publication_2018_leao_h_a_t_gamificacao_aplicada_ao_desenvolvime
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2018_leao_h_a_t_gamificacao_aplicada_ao_desenvolvimento_de_software_analise_e_projeto
-publication_index: 147
+publication_index: 152
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle
@@ -20,14 +20,8 @@ authors:
 - CANEDO, E. D.
 authors_structured:
 - name: LEAO, H. A. T.
-  id: leao_h_a_t
-  url: /people/leao_h_a_t
 - name: SOUZA, R. V. F.
-  id: souza_r_v_f
-  url: /people/souza_r_v_f
 - name: MACIEL, A. A. F.
-  id: maciel_a_a_f
-  url: /people/maciel_a_a_f
 - name: FREITAS, S. A. A.
 - name: CANEDO, E. D.
 tags:

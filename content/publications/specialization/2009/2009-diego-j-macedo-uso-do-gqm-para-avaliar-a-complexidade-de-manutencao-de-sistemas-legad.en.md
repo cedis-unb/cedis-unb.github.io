@@ -7,7 +7,7 @@ translationKey: publication_2009_diego_j_macedo_uso_do_gqm_para_avaliar_a_comple
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2009_diego_j_macedo_uso_do_gqm_para_avaliar_a_complexidade_de_manutencao_de_sistemas_legad
-publication_index: 304
+publication_index: 309
 publication_group: specialization
 publication_type: specialization
 schema_type: Thesis

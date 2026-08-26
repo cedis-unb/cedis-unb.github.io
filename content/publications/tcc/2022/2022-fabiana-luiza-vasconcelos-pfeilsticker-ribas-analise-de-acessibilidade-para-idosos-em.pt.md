@@ -7,7 +7,7 @@ translationKey: publication_2022_fabiana_luiza_vasconcelos_pfeilsticker_ribas_an
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2022_fabiana_luiza_vasconcelos_pfeilsticker_ribas_analise_de_acessibilidade_para_idosos_em
-publication_index: 269
+publication_index: 274
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

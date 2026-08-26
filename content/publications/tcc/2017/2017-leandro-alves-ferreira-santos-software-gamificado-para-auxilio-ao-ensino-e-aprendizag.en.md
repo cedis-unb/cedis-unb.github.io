@@ -7,7 +7,7 @@ translationKey: publication_2017_leandro_alves_ferreira_santos_software_gamifica
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2017_leandro_alves_ferreira_santos_software_gamificado_para_auxilio_ao_ensino_e_aprendizag
-publication_index: 167
+publication_index: 172
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

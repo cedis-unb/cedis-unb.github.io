@@ -8,7 +8,7 @@ translationKey: publication_2015_victor_hugo_alves_de_carvalho_analise_de_impact
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2015_victor_hugo_alves_de_carvalho_analise_de_impacto_do_uso_de_tecnicas_de_programacao_no
-publication_index: 199
+publication_index: 204
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

@@ -7,7 +7,7 @@ translationKey: publication_2024_guilherme_rogelin_vial_modelagem_de_fluxos_de_u
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2024_guilherme_rogelin_vial_modelagem_de_fluxos_de_uma_aplicacao_voltada_para_a_educacao_j
-publication_index: 29
+publication_index: 34
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

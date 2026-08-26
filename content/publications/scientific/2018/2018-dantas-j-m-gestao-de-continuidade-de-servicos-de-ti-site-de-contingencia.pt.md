@@ -7,7 +7,7 @@ translationKey: publication_2018_dantas_j_m_gestao_de_continuidade_de_servicos_d
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2018_dantas_j_m_gestao_de_continuidade_de_servicos_de_ti_site_de_contingencia
-publication_index: 155
+publication_index: 160
 publication_group: scientific
 publication_type: book_section
 schema_type: Chapter

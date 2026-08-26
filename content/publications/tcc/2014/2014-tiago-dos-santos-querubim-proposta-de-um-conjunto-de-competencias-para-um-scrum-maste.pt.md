@@ -7,7 +7,7 @@ translationKey: publication_2014_tiago_dos_santos_querubim_proposta_de_um_conjun
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2014_tiago_dos_santos_querubim_proposta_de_um_conjunto_de_competencias_para_um_scrum_maste
-publication_index: 277
+publication_index: 282
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

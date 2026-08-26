@@ -8,7 +8,7 @@ translationKey: publication_2024_marsicano_g_c_digital_transformation_of_public_
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2024_marsicano_g_c_digital_transformation_of_public_services_in_a_startup_based_environmen
-publication_index: 39
+publication_index: 44
 publication_group: scientific
 publication_type: article
 schema_type: ScholarlyArticle
@@ -25,8 +25,6 @@ authors_structured:
   id: edna_canedo
   url: /people/edna_canedo
 - name: RAMOS, C. S.
-  id: ramos_j_c_c
-  url: /people/ramos_j_c_c
 - name: FIGUEIREDO, R. M. C.
 - name: PEDROSA, G. V.
 tags:

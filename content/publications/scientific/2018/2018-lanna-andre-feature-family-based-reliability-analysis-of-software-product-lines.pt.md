@@ -7,7 +7,7 @@ translationKey: publication_2018_lanna_andre_feature_family_based_reliability_an
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2018_lanna_andre_feature_family_based_reliability_analysis_of_software_product_lines
-publication_index: 142
+publication_index: 147
 publication_group: scientific
 publication_type: article
 schema_type: ScholarlyArticle

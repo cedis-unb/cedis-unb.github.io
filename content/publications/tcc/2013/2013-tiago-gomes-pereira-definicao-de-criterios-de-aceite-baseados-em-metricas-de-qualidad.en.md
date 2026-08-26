@@ -8,7 +8,7 @@ translationKey: publication_2013_tiago_gomes_pereira_definicao_de_criterios_de_a
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2013_tiago_gomes_pereira_definicao_de_criterios_de_aceite_baseados_em_metricas_de_qualidad
-publication_index: 280
+publication_index: 285
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

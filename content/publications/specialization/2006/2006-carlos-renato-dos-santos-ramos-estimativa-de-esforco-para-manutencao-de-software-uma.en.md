@@ -7,7 +7,7 @@ translationKey: publication_2006_carlos_renato_dos_santos_ramos_estimativa_de_es
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2006_carlos_renato_dos_santos_ramos_estimativa_de_esforco_para_manutencao_de_software_uma
-publication_index: 311
+publication_index: 316
 publication_group: specialization
 publication_type: specialization
 schema_type: Thesis

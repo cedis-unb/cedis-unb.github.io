@@ -8,7 +8,7 @@ translationKey: publication_2010_igor_marrocos_analise_e_resolucao_de_causas_de_
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2010_igor_marrocos_analise_e_resolucao_de_causas_de_problemas_propondo_melhorias_de_proces
-publication_index: 300
+publication_index: 305
 publication_group: specialization
 publication_type: specialization
 schema_type: Thesis

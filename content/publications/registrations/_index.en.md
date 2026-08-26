@@ -8,5 +8,5 @@ generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 publication_filter: registrations
 description: Software registrations and technological assets from CEDIS.
-summary: 1 catalogued records.
+summary: 6 catalogued records.
 ---

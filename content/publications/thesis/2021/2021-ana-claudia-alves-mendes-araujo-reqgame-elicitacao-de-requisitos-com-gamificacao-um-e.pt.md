@@ -8,7 +8,7 @@ translationKey: publication_2021_ana_claudia_alves_mendes_araujo_reqgame_elicita
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2021_ana_claudia_alves_mendes_araujo_reqgame_elicitacao_de_requisitos_com_gamificacao_um_e
-publication_index: 111
+publication_index: 116
 publication_group: thesis
 publication_type: dissertation
 schema_type: Thesis

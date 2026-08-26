@@ -8,7 +8,7 @@ translationKey: publication_2022_gabriel_batista_albino_silva_identificacao_de_r
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2022_gabriel_batista_albino_silva_identificacao_de_requisitos_nao_funcionais_para_jogos_se
-publication_index: 68
+publication_index: 73
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

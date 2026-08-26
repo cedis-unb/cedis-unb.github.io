@@ -7,7 +7,7 @@ translationKey: publication_2018_iago_rodrigues_goncalves_apoio_a_promocao_da_vi
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2018_iago_rodrigues_goncalves_apoio_a_promocao_da_visibilidade_da_divida_tecnica
-publication_index: 134
+publication_index: 139
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

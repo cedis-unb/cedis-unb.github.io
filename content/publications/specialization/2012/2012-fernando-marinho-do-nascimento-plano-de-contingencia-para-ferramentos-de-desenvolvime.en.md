@@ -7,7 +7,7 @@ translationKey: publication_2012_fernando_marinho_do_nascimento_plano_de_conting
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2012_fernando_marinho_do_nascimento_plano_de_contingencia_para_ferramentos_de_desenvolvime
-publication_index: 237
+publication_index: 242
 publication_group: specialization
 publication_type: specialization
 schema_type: Thesis

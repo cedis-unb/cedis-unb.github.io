@@ -7,7 +7,7 @@ translationKey: publication_2025_leonardo_milomes_vitoriano_three_filters_analis
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2025_leonardo_milomes_vitoriano_three_filters_analisador_de_informacoes_cientificas
-publication_index: 16
+publication_index: 21
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

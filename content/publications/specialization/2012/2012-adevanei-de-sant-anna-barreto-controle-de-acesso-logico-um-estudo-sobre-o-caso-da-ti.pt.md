@@ -8,7 +8,7 @@ translationKey: publication_2012_adevanei_de_sant_anna_barreto_controle_de_acess
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2012_adevanei_de_sant_anna_barreto_controle_de_acesso_logico_um_estudo_sobre_o_caso_da_ti
-publication_index: 232
+publication_index: 237
 publication_group: specialization
 publication_type: specialization
 schema_type: Thesis

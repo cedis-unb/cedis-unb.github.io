@@ -8,5 +8,5 @@ generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 publication_filter: registrations
 description: Registros de programa de computador e ativos tecnologicos do CEDIS.
-summary: 1 registros catalogados.
+summary: 6 registros catalogados.
 ---

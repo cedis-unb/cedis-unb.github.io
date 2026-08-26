@@ -7,7 +7,7 @@ translationKey: publication_2006_eduardo_zambon_otimizacao_de_indices_de_confiab
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2006_eduardo_zambon_otimizacao_de_indices_de_confiabilidade_em_redes_de_distribuicao_de_en
-publication_index: 211
+publication_index: 216
 publication_group: thesis
 publication_type: dissertation
 schema_type: Thesis

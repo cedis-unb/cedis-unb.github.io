@@ -7,7 +7,7 @@ translationKey: publication_2026_luis_eduardo_carneiro_miranda_estocai_gerenciad
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2026_luis_eduardo_carneiro_miranda_estocai_gerenciador_de_estoque_inteligente
-publication_index: 5
+publication_index: 10
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

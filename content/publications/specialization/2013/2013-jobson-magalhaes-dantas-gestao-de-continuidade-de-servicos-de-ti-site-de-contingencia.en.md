@@ -7,7 +7,7 @@ translationKey: publication_2013_jobson_magalhaes_dantas_gestao_de_continuidade_
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2013_jobson_magalhaes_dantas_gestao_de_continuidade_de_servicos_de_ti_site_de_contingencia
-publication_index: 233
+publication_index: 238
 publication_group: specialization
 publication_type: specialization
 schema_type: Thesis

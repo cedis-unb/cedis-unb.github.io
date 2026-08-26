@@ -7,7 +7,7 @@ translationKey: publication_2022_souza_renan_l_l_de_mystory_um_prototipo_de_sist
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2022_souza_renan_l_l_de_mystory_um_prototipo_de_sistema_com_vistas_a_imortalidade_digital
-publication_index: 88
+publication_index: 93
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle
@@ -20,8 +20,6 @@ authors:
 - RIBEIRO, AILTON
 authors_structured:
 - name: SOUZA, RENAN L. L. DE
-  id: de_oliveira_victor_l
-  url: /people/de_oliveira_victor_l
 - name: MACIEL, CRISTIANO
 - name: NUNES, EUNICE P. DOS SANTOS
   id: nunes_eunice_p_dos_santos

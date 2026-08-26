@@ -8,7 +8,7 @@ translationKey: publication_2025_emanuel_galhardo_de_oliveira_modelo_de_avaliaca
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2025_emanuel_galhardo_de_oliveira_modelo_de_avaliacao_devops_em_ambientes_de_nuvem_com_met
-publication_index: 7
+publication_index: 12
 publication_group: thesis
 publication_type: dissertation
 schema_type: Thesis

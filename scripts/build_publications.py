@@ -225,8 +225,13 @@ def match_person(author: str, people_index: list[dict[str, str]], ids_in_item: s
                 return person
     for person in people_index:
         person_tokens = normalize_name(person["name"]).split()
-        if len(person_tokens) >= 2 and all(token in author_norm.split() for token in (person_tokens[0], person_tokens[-1])):
-            return person
+        if len(person_tokens) >= 2:
+            first, last = person_tokens[0], person_tokens[-1]
+            # Skip fallback match when either the first or last token is an
+            # initial or preposition (e.g., "m", "de"), which otherwise produces
+            # false positives against authors listed with initials.
+            if len(first) > 2 and len(last) > 2 and all(token in author_norm.split() for token in (first, last)):
+                return person
     return None
 
 

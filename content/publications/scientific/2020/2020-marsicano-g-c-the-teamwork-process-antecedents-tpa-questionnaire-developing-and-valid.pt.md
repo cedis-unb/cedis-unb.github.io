@@ -8,7 +8,7 @@ translationKey: publication_2020_marsicano_g_c_the_teamwork_process_antecedents_
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2020_marsicano_g_c_the_teamwork_process_antecedents_tpa_questionnaire_developing_and_valid
-publication_index: 117
+publication_index: 122
 publication_group: scientific
 publication_type: article
 schema_type: ScholarlyArticle
@@ -21,14 +21,8 @@ authors:
 authors_structured:
 - name: MARSICANO, G. C.
 - name: DA SILVA, FABIO Q. B.
-  id: da_silva_fabio_q_b
-  url: /people/da_silva_fabio_q_b
 - name: SEAMAN, C. B.
-  id: seaman_c_b
-  url: /people/seaman_c_b
 - name: ADAID-CASTRO, B. G.
-  id: adaid_castro_b_g
-  url: /people/adaid_castro_b_g
 tags:
 - teamwork
 advisors: []

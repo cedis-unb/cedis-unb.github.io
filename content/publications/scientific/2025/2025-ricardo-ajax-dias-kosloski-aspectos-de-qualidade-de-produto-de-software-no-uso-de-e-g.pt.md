@@ -8,7 +8,7 @@ translationKey: publication_2025_ricardo_ajax_dias_kosloski_aspectos_de_qualidad
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2025_ricardo_ajax_dias_kosloski_aspectos_de_qualidade_de_produto_de_software_no_uso_de_e_g
-publication_index: 26
+publication_index: 31
 publication_group: scientific
 publication_type: article
 schema_type: ScholarlyArticle

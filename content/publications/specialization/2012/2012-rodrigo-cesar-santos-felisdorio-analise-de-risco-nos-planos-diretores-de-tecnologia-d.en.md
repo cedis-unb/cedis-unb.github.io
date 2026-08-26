@@ -7,7 +7,7 @@ translationKey: publication_2012_rodrigo_cesar_santos_felisdorio_analise_de_risc
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2012_rodrigo_cesar_santos_felisdorio_analise_de_risco_nos_planos_diretores_de_tecnologia_d
-publication_index: 236
+publication_index: 241
 publication_group: specialization
 publication_type: specialization
 schema_type: Thesis

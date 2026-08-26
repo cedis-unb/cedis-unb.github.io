@@ -8,7 +8,7 @@ translationKey: publication_2021_mendes_f_f_insights_on_the_relationship_between
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2021_mendes_f_f_insights_on_the_relationship_between_decision_making_style_and_personality
-publication_index: 107
+publication_index: 112
 publication_group: scientific
 publication_type: article
 schema_type: ScholarlyArticle

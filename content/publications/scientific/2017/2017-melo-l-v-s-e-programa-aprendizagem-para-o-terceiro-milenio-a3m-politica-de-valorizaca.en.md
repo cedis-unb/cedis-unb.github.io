@@ -8,7 +8,7 @@ translationKey: publication_2017_melo_l_v_s_e_programa_aprendizagem_para_o_terce
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2017_melo_l_v_s_e_programa_aprendizagem_para_o_terceiro_milenio_a3m_politica_de_valorizaca
-publication_index: 165
+publication_index: 170
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle
@@ -21,16 +21,10 @@ authors:
 - LOURENCO, V.
 authors_structured:
 - name: MELO, L. V. S. E.
-  id: melo_livia_veleda_de_sousa_e
-  url: /people/melo_livia_veleda_de_sousa_e
 - name: FREITAS, S. A. A.
 - name: NOGUEIRA, T. J.
 - name: ANDRADE, M.
-  id: andrade_m
-  url: /people/andrade_m
 - name: LOURENCO, V.
-  id: lourenco_v
-  url: /people/lourenco_v
 tags:
 - active_learning
 - education

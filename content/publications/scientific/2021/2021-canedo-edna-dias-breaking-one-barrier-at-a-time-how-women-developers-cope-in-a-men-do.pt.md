@@ -8,7 +8,7 @@ translationKey: publication_2021_canedo_edna_dias_breaking_one_barrier_at_a_time
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2021_canedo_edna_dias_breaking_one_barrier_at_a_time_how_women_developers_cope_in_a_men_do
-publication_index: 108
+publication_index: 113
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle

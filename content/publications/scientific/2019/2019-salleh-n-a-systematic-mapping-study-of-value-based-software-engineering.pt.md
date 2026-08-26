@@ -7,7 +7,7 @@ translationKey: publication_2019_salleh_n_a_systematic_mapping_study_of_value_ba
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2019_salleh_n_a_systematic_mapping_study_of_value_based_software_engineering
-publication_index: 131
+publication_index: 136
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle
@@ -18,12 +18,8 @@ authors:
 - Mendes, E.
 authors_structured:
 - name: Salleh, N.
-  id: salleh_n
-  url: /people/salleh_n
 - name: MENDES, F. F.
 - name: Mendes, E.
-  id: mendes_e
-  url: /people/mendes_e
 tags:
 - esw
 - soft_skills

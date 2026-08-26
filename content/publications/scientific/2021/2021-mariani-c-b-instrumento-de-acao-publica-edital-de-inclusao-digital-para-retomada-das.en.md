@@ -9,7 +9,7 @@ translationKey: publication_2021_mariani_c_b_instrumento_de_acao_publica_edital_
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2021_mariani_c_b_instrumento_de_acao_publica_edital_de_inclusao_digital_para_retomada_das
-publication_index: 106
+publication_index: 111
 publication_group: scientific
 publication_type: article
 schema_type: ScholarlyArticle
@@ -22,16 +22,10 @@ authors:
 - FECHINE, V. M. R.
 authors_structured:
 - name: MARIANI, C. B.
-  id: mariani_c_b
-  url: /people/mariani_c_b
 - name: RAMOS, J. C. C.
-  id: ramos_j_c_c
-  url: /people/ramos_j_c_c
 - name: RODRIGUES, L. S.
 - name: KOSLOSKI, R. A. D.
 - name: FECHINE, V. M. R.
-  id: fechine_v_m_r
-  url: /people/fechine_v_m_r
 tags:
 - digital_transformation
 advisors: []

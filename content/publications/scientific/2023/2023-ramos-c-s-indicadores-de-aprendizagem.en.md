@@ -7,7 +7,7 @@ translationKey: publication_2023_ramos_c_s_indicadores_de_aprendizagem
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2023_ramos_c_s_indicadores_de_aprendizagem
-publication_index: 46
+publication_index: 51
 publication_group: scientific
 publication_type: book
 schema_type: Book
@@ -20,11 +20,7 @@ authors:
 - FREITAS, S. A. A.
 authors_structured:
 - name: RAMOS, C. S.
-  id: ramos_j_c_c
-  url: /people/ramos_j_c_c
 - name: VIANNA, D. M.
-  id: vianna_d_m
-  url: /people/vianna_d_m
 - name: BESSA, E.
 - name: MORTARI, M. R.
 - name: FREITAS, S. A. A.

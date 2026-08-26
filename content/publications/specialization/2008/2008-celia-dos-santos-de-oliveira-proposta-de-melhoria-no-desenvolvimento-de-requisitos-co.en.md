@@ -7,7 +7,7 @@ translationKey: publication_2008_celia_dos_santos_de_oliveira_proposta_de_melhor
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2008_celia_dos_santos_de_oliveira_proposta_de_melhoria_no_desenvolvimento_de_requisitos_co
-publication_index: 297
+publication_index: 302
 publication_group: specialization
 publication_type: specialization
 schema_type: Thesis

@@ -7,7 +7,7 @@ translationKey: publication_2009_renata_braz_ferraz_a_utilizacao_de_estrategias_
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2009_renata_braz_ferraz_a_utilizacao_de_estrategias_conversacionais_durante_a_elicitacao_d
-publication_index: 294
+publication_index: 299
 publication_group: specialization
 publication_type: specialization
 schema_type: Thesis

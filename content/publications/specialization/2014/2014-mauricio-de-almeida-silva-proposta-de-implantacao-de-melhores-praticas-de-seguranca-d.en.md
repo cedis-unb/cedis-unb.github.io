@@ -8,7 +8,7 @@ translationKey: publication_2014_mauricio_de_almeida_silva_proposta_de_implantac
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2014_mauricio_de_almeida_silva_proposta_de_implantacao_de_melhores_praticas_de_seguranca_d
-publication_index: 284
+publication_index: 289
 publication_group: specialization
 publication_type: specialization
 schema_type: Thesis

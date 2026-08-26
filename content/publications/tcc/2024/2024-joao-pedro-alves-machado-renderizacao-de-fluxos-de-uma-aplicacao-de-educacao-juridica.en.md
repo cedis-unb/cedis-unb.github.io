@@ -7,7 +7,7 @@ translationKey: publication_2024_joao_pedro_alves_machado_renderizacao_de_fluxos
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2024_joao_pedro_alves_machado_renderizacao_de_fluxos_de_uma_aplicacao_de_educacao_juridica
-publication_index: 30
+publication_index: 35
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

@@ -7,7 +7,7 @@ translationKey: publication_2010_nivia_c_queiroz_aplicacao_de_um_metodo_para_eng
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2010_nivia_c_queiroz_aplicacao_de_um_metodo_para_engenharia_reversa_em_sistemas_legados
-publication_index: 303
+publication_index: 308
 publication_group: specialization
 publication_type: specialization
 schema_type: Thesis

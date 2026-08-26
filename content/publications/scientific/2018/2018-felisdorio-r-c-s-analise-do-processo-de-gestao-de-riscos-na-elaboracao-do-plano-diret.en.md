@@ -8,7 +8,7 @@ translationKey: publication_2018_felisdorio_r_c_s_analise_do_processo_de_gestao_
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2018_felisdorio_r_c_s_analise_do_processo_de_gestao_de_riscos_na_elaboracao_do_plano_diret
-publication_index: 156
+publication_index: 161
 publication_group: scientific
 publication_type: book_section
 schema_type: Chapter

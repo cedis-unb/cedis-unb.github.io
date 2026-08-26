@@ -7,7 +7,7 @@ translationKey: publication_2021_melo_l_v_s_e_programa_aprendizagem_para_o_3o_mi
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2021_melo_l_v_s_e_programa_aprendizagem_para_o_3o_milenio_a3m
-publication_index: 116
+publication_index: 121
 publication_group: scientific
 publication_type: book_section
 schema_type: Chapter
@@ -19,8 +19,6 @@ authors:
 - FREITAS, S. A. A.
 authors_structured:
 - name: MELO, L. V. S. E.
-  id: melo_livia_veleda_de_sousa_e
-  url: /people/melo_livia_veleda_de_sousa_e
 - name: NOGUEIRA, T. J. A. M.
 - name: LEITE, L. L.
 - name: FREITAS, S. A. A.

@@ -7,7 +7,7 @@ translationKey: publication_2012_caio_appelt_resende_re_estruturacao_da_ferramen
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2012_caio_appelt_resende_re_estruturacao_da_ferramenta_eficiente_visando_a_adequacao_a_not
-publication_index: 282
+publication_index: 287
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

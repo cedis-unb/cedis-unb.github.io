@@ -7,7 +7,7 @@ translationKey: publication_2006_raphael_de_oliveira_santos_implementacao_de_pro
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2006_raphael_de_oliveira_santos_implementacao_de_protocolos_para_automacao_industrial_num
-publication_index: 242
+publication_index: 247
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

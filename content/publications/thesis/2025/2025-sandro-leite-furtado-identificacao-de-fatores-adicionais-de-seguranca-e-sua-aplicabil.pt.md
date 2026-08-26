@@ -8,7 +8,7 @@ translationKey: publication_2025_sandro_leite_furtado_identificacao_de_fatores_a
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2025_sandro_leite_furtado_identificacao_de_fatores_adicionais_de_seguranca_e_sua_aplicabil
-publication_index: 260
+publication_index: 265
 publication_group: thesis
 publication_type: dissertation
 schema_type: Thesis

@@ -8,7 +8,7 @@ translationKey: publication_2022_renan_cristyan_araujo_pinheiro_estudo_de_caso_d
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2022_renan_cristyan_araujo_pinheiro_estudo_de_caso_da_melhoria_do_processo_de_verificacao
-publication_index: 75
+publication_index: 80
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

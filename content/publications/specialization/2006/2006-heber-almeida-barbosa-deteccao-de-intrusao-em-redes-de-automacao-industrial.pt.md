@@ -7,7 +7,7 @@ translationKey: publication_2006_heber_almeida_barbosa_deteccao_de_intrusao_em_r
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2006_heber_almeida_barbosa_deteccao_de_intrusao_em_redes_de_automacao_industrial
-publication_index: 240
+publication_index: 245
 publication_group: specialization
 publication_type: specialization
 schema_type: Thesis

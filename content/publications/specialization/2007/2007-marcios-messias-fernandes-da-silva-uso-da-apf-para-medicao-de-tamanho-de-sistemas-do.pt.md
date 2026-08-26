@@ -7,7 +7,7 @@ translationKey: publication_2007_marcios_messias_fernandes_da_silva_uso_da_apf_p
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2007_marcios_messias_fernandes_da_silva_uso_da_apf_para_medicao_de_tamanho_de_sistemas_do
-publication_index: 310
+publication_index: 315
 publication_group: specialization
 publication_type: specialization
 schema_type: Thesis

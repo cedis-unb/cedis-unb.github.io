@@ -8,7 +8,7 @@ translationKey: publication_2025_maria_eduarda_dos_santos_abritta_ferreira_aplic
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2025_maria_eduarda_dos_santos_abritta_ferreira_aplicacao_de_aprendizado_de_maquina_na_pred
-publication_index: 9
+publication_index: 14
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

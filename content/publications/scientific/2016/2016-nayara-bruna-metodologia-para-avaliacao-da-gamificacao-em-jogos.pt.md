@@ -7,7 +7,7 @@ translationKey: publication_2016_nayara_bruna_metodologia_para_avaliacao_da_gami
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2016_nayara_bruna_metodologia_para_avaliacao_da_gamificacao_em_jogos
-publication_index: 178
+publication_index: 183
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle

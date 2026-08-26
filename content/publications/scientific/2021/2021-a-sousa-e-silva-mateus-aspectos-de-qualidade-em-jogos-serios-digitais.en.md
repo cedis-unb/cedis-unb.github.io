@@ -7,7 +7,7 @@ translationKey: publication_2021_a_sousa_e_silva_mateus_aspectos_de_qualidade_em
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2021_a_sousa_e_silva_mateus_aspectos_de_qualidade_em_jogos_serios_digitais
-publication_index: 104
+publication_index: 109
 publication_group: scientific
 publication_type: article
 schema_type: ScholarlyArticle
@@ -18,8 +18,8 @@ authors:
 - MENDES, F. F.
 authors_structured:
 - name: A. SOUSA E SILVA, MATEUS
-  id: a_sousa_e_silva_mateus
-  url: /people/a_sousa_e_silva_mateus
+  id: silva_geovana_ramos_sousa
+  url: /people/silva_geovana_ramos_sousa
 - name: BARROS DE SALES, ANDRÉ
   id: barros_de_sales_andre
   url: /people/barros_de_sales_andre

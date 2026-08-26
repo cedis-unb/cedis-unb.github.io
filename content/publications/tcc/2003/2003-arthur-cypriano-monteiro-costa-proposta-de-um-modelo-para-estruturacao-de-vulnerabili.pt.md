@@ -7,7 +7,7 @@ translationKey: publication_2003_arthur_cypriano_monteiro_costa_proposta_de_um_m
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2003_arthur_cypriano_monteiro_costa_proposta_de_um_modelo_para_estruturacao_de_vulnerabili
-publication_index: 244
+publication_index: 249
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

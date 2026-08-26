@@ -7,7 +7,7 @@ translationKey: publication_2016_freitas_s_a_a_using_an_active_learning_environm
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2016_freitas_s_a_a_using_an_active_learning_environment_to_increase_students_engagement
-publication_index: 175
+publication_index: 180
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle
@@ -19,8 +19,8 @@ authors:
 authors_structured:
 - name: FREITAS, S. A. A.
 - name: SILVA, WANDER C. M. P.
-  id: silva_m_c
-  url: /people/silva_m_c
+  id: wander_cleber_maria_pereira_da_silva
+  url: /people/wander_cleber_maria_pereira_da_silva
 - name: MARSICANO, GEORGE
   id: george_marsicano
   url: /people/george_marsicano

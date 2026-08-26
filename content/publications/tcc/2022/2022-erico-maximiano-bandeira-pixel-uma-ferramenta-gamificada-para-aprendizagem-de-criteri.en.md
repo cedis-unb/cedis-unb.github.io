@@ -7,7 +7,7 @@ translationKey: publication_2022_erico_maximiano_bandeira_pixel_uma_ferramenta_g
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2022_erico_maximiano_bandeira_pixel_uma_ferramenta_gamificada_para_aprendizagem_de_criteri
-publication_index: 101
+publication_index: 106
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

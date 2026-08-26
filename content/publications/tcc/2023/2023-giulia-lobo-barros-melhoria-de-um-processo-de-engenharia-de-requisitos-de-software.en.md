@@ -7,7 +7,7 @@ translationKey: publication_2023_giulia_lobo_barros_melhoria_de_um_processo_de_e
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2023_giulia_lobo_barros_melhoria_de_um_processo_de_engenharia_de_requisitos_de_software
-publication_index: 223
+publication_index: 228
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

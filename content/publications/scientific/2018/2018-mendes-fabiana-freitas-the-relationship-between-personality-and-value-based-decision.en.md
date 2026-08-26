@@ -7,7 +7,7 @@ translationKey: publication_2018_mendes_fabiana_freitas_the_relationship_between
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2018_mendes_fabiana_freitas_the_relationship_between_personality_and_value_based_decision
-publication_index: 150
+publication_index: 155
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle

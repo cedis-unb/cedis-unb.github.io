@@ -8,7 +8,7 @@ translationKey: publication_2016_leandro_veloso_rodrigues_um_estudo_sobre_a_cont
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2016_leandro_veloso_rodrigues_um_estudo_sobre_a_contribuicao_do_programa_ciencias_sem_fron
-publication_index: 184
+publication_index: 189
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

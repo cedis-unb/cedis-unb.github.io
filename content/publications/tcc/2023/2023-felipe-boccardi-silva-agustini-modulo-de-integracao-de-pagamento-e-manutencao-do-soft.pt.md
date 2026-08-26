@@ -7,7 +7,7 @@ translationKey: publication_2023_felipe_boccardi_silva_agustini_modulo_de_integr
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2023_felipe_boccardi_silva_agustini_modulo_de_integracao_de_pagamento_e_manutencao_do_soft
-publication_index: 63
+publication_index: 68
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

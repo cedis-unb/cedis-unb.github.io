@@ -8,7 +8,7 @@ translationKey: publication_2023_publio_pastrolin_cavalcante_avaliacao_da_mudanc
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2023_publio_pastrolin_cavalcante_avaliacao_da_mudanca_na_qualidade_dos_relatorios_com_a_ap
-publication_index: 59
+publication_index: 64
 publication_group: thesis
 publication_type: dissertation
 schema_type: Thesis

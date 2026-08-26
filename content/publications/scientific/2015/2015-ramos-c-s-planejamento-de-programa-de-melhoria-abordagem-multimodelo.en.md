@@ -7,7 +7,7 @@ translationKey: publication_2015_ramos_c_s_planejamento_de_programa_de_melhoria_
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2015_ramos_c_s_planejamento_de_programa_de_melhoria_abordagem_multimodelo
-publication_index: 192
+publication_index: 197
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle
@@ -18,14 +18,8 @@ authors:
 - ROCHA, A. R. C.
 authors_structured:
 - name: RAMOS, C. S.
-  id: ramos_j_c_c
-  url: /people/ramos_j_c_c
 - name: OLIVEIRA, K. M.
-  id: oliveira_k_m
-  url: /people/oliveira_k_m
 - name: ROCHA, A. R. C.
-  id: rocha_a_r_c
-  url: /people/rocha_a_r_c
 tags:
 - software_architecture
 advisors: []

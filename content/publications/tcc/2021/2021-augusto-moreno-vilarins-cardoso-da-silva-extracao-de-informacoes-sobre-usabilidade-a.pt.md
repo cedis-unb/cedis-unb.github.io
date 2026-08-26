@@ -8,7 +8,7 @@ translationKey: publication_2021_augusto_moreno_vilarins_cardoso_da_silva_extrac
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2021_augusto_moreno_vilarins_cardoso_da_silva_extracao_de_informacoes_sobre_usabilidade_a
-publication_index: 76
+publication_index: 81
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis
@@ -18,8 +18,7 @@ authors:
 - Ícaro Pereira de Oliveira
 authors_structured:
 - name: Augusto Moreno Vilarins Cardoso da Silva
-  id: silva_rodrigo_m_s_da
-  url: /people/silva_rodrigo_m_s_da
+  id: augusto_moreno_vilarins_cardoso_da_silva
 - name: Ícaro Pereira de Oliveira
   id: icaro_pereira_de_oliveira
 tags:

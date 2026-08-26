@@ -7,7 +7,7 @@ translationKey: publication_2016_frinhani_cristovao_lima_an_automatic_essay_corr
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2016_frinhani_cristovao_lima_an_automatic_essay_correction_for_an_active_learning_environm
-publication_index: 176
+publication_index: 181
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle

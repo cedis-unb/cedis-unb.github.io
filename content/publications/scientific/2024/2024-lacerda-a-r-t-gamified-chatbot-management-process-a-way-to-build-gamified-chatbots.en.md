@@ -7,7 +7,7 @@ translationKey: publication_2024_lacerda_a_r_t_gamified_chatbot_management_proce
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2024_lacerda_a_r_t_gamified_chatbot_management_process_a_way_to_build_gamified_chatbots
-publication_index: 45
+publication_index: 50
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle
@@ -20,8 +20,6 @@ authors_structured:
 - name: LACERDA, A. R. T.
 - name: FREITAS, S. A. A.
 - name: RAMOS, C. S.
-  id: ramos_j_c_c
-  url: /people/ramos_j_c_c
 tags:
 - gamification
 - machine_learning

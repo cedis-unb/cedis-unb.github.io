@@ -8,7 +8,7 @@ translationKey: publication_2022_costa_cesar_ana_carolina_greengame_solving_the_
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2022_costa_cesar_ana_carolina_greengame_solving_the_climate_crisis_in_a_game_to_actually_t
-publication_index: 84
+publication_index: 89
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle
@@ -21,8 +21,6 @@ authors_structured:
 - name: COSTA CÉSAR, ANA CAROLINA
   id: ana_carolina_costa_cesar
 - name: DA GAMA PIVETTA, GABRIELA
-  id: da_gama_pivetta_gabriela
-  url: /people/da_gama_pivetta_gabriela
 - name: Mendes, Fabiana Freitas
   id: fabiana_mendes
   url: /people/fabiana_mendes

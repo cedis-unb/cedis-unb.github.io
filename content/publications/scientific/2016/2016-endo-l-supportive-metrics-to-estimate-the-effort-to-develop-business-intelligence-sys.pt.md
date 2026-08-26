@@ -8,7 +8,7 @@ translationKey: publication_2016_endo_l_supportive_metrics_to_estimate_the_effor
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2016_endo_l_supportive_metrics_to_estimate_the_effort_to_develop_business_intelligence_sys
-publication_index: 171
+publication_index: 176
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle
@@ -19,8 +19,6 @@ authors:
 - Canedo, E. D.
 authors_structured:
 - name: Endo, L
-  id: endo_l
-  url: /people/endo_l
 - name: MENDES, F. F.
 - name: Canedo, E. D.
 tags:

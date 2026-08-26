@@ -8,7 +8,7 @@ translationKey: publication_2025_artur_de_sousa_vieira_oma_organizador_multimidi
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2025_artur_de_sousa_vieira_oma_organizador_multimidia_academico_para_auxiliar_no_aprendiza
-publication_index: 17
+publication_index: 22
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

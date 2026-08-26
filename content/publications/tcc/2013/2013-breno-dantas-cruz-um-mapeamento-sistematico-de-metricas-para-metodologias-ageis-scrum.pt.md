@@ -8,7 +8,7 @@ translationKey: publication_2013_breno_dantas_cruz_um_mapeamento_sistematico_de_
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2013_breno_dantas_cruz_um_mapeamento_sistematico_de_metricas_para_metodologias_ageis_scrum
-publication_index: 201
+publication_index: 206
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

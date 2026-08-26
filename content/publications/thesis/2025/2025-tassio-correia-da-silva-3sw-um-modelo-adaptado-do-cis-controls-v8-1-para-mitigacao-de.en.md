@@ -7,7 +7,7 @@ translationKey: publication_2025_tassio_correia_da_silva_3sw_um_modelo_adaptado_
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2025_tassio_correia_da_silva_3sw_um_modelo_adaptado_do_cis_controls_v8_1_para_mitigacao_de
-publication_index: 11
+publication_index: 16
 publication_group: thesis
 publication_type: dissertation
 schema_type: Thesis
@@ -16,8 +16,7 @@ authors:
 - Tássio Correia da Silva
 authors_structured:
 - name: Tássio Correia da Silva
-  id: silva_rodrigo_m_s_da
-  url: /people/silva_rodrigo_m_s_da
+  id: tassio_correia_da_silva
 tags:
 - security
 - software_architecture

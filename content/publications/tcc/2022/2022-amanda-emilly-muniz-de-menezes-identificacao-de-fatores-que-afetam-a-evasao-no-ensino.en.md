@@ -7,7 +7,7 @@ translationKey: publication_2022_amanda_emilly_muniz_de_menezes_identificacao_de
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2022_amanda_emilly_muniz_de_menezes_identificacao_de_fatores_que_afetam_a_evasao_no_ensino
-publication_index: 89
+publication_index: 94
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

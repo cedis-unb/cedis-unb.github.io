@@ -8,7 +8,7 @@ translationKey: publication_2025_elaine_venson_reflections_on_collaborative_desi
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2025_elaine_venson_reflections_on_collaborative_design_lessons_from_creating_a_digital_pub
-publication_index: 22
+publication_index: 27
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle

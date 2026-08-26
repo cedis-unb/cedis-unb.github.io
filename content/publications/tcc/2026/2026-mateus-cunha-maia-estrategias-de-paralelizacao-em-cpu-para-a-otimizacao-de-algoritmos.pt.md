@@ -8,7 +8,7 @@ translationKey: publication_2026_mateus_cunha_maia_estrategias_de_paralelizacao_
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2026_mateus_cunha_maia_estrategias_de_paralelizacao_em_cpu_para_a_otimizacao_de_algoritmos
-publication_index: 2
+publication_index: 7
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

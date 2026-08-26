@@ -7,7 +7,7 @@ translationKey: publication_2017_pereira_d_v_team_maturity_in_software_engineeri
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2017_pereira_d_v_team_maturity_in_software_engineering_teams_a_work_in_progress
-publication_index: 166
+publication_index: 171
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle
@@ -19,8 +19,6 @@ authors:
 - Ribeiro, D.M.
 authors_structured:
 - name: Pereira, D.V.
-  id: pereira_d_v
-  url: /people/pereira_d_v
 - name: MARSICANO, G. C.
 - name: SILVA, F. Q. B.
 - name: Ribeiro, D.M.

@@ -8,7 +8,7 @@ translationKey: publication_2025_luana_souza_silva_torres_processo_de_desenvolvi
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2025_luana_souza_silva_torres_processo_de_desenvolvimento_para_projetos_colaborativos_a_ex
-publication_index: 263
+publication_index: 268
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

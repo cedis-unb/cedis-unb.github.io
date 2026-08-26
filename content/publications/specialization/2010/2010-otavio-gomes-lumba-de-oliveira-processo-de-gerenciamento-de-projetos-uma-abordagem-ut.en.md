@@ -8,7 +8,7 @@ translationKey: publication_2010_otavio_gomes_lumba_de_oliveira_processo_de_gere
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2010_otavio_gomes_lumba_de_oliveira_processo_de_gerenciamento_de_projetos_uma_abordagem_ut
-publication_index: 287
+publication_index: 292
 publication_group: specialization
 publication_type: specialization
 schema_type: Thesis

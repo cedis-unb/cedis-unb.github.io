@@ -8,7 +8,7 @@ translationKey: publication_2014_kleiber_damian_de_souza_avaliacao_da_maturidade
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2014_kleiber_damian_de_souza_avaliacao_da_maturidade_em_gestao_da_seguranca_da_informacao
-publication_index: 283
+publication_index: 288
 publication_group: specialization
 publication_type: specialization
 schema_type: Thesis

@@ -7,7 +7,7 @@ translationKey: publication_2023_flausino_caio_gomes_llc_low_level_conteiner_no_
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2023_flausino_caio_gomes_llc_low_level_conteiner_no_linux
-publication_index: 79
+publication_index: 84
 publication_group: scientific
 publication_type: workshop
 schema_type: ScholarlyArticle
@@ -20,8 +20,6 @@ authors_structured:
 - name: FLAUSINO, CAIO GOMES
   id: caio_gomes_flausino
 - name: QUEIROZ, DIEGO CÉSAR FLORÊNCIO DE
-  id: queiroz_diego_cesar_florencio_de
-  url: /people/queiroz_diego_cesar_florencio_de
 - name: Sundfeld, Daniel
   id: daniel_sundfeld
   url: /people/daniel_sundfeld

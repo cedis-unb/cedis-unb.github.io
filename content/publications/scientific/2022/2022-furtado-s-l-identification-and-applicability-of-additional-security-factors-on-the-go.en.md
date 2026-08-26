@@ -8,7 +8,7 @@ translationKey: publication_2022_furtado_s_l_identification_and_applicability_of
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2022_furtado_s_l_identification_and_applicability_of_additional_security_factors_on_the_go
-publication_index: 85
+publication_index: 90
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle

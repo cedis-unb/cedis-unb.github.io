@@ -8,7 +8,7 @@ translationKey: publication_2020_eneias_paulo_de_oliveira_pa_star_web_uma_arquit
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2020_eneias_paulo_de_oliveira_pa_star_web_uma_arquitetura_em_nuvem_para_obtencao_do_alinha
-publication_index: 274
+publication_index: 279
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

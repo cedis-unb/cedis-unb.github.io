@@ -8,7 +8,7 @@ translationKey: publication_2020_gustavo_vieira_braz_goncalves_desenvolvimento_d
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2020_gustavo_vieira_braz_goncalves_desenvolvimento_de_uma_solucao_de_software_para_gestao
-publication_index: 271
+publication_index: 276
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis
@@ -20,8 +20,7 @@ authors_structured:
 - name: Gustavo Vieira Braz Gonçalves
   id: gustavo_vieira_braz_goncalves
 - name: Luiz Guilherme S da Silva
-  id: silva_rodrigo_m_s_da
-  url: /people/silva_rodrigo_m_s_da
+  id: guilherme_daniel_fernandes_da_silva
 tags:
 - software_architecture
 advisors:
