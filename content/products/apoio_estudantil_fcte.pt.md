@@ -14,7 +14,7 @@ areas:
 responsible:
 - george_marsicano
 publications:
-- publication_2026_giulia_domingues_de_alcantara_certificado_de_registro_de_programa_de_computador_chatb
+- publication_2026_breno_henrique_de_souza_certificado_de_registro_de_programa_de_computador_chatbot_par
 weight: 33
 featured_image: "../assets/images/featured/projeto_Transformação Digital.webp"
 summary: Chatbot no Telegram baseado em IA (RAG) que centraliza e responde dúvidas administrativas e acadêmicas de estudantes da FCTE/UnB. Registro de programa de computador concedido pelo INPI em 2026.
@@ -53,7 +53,8 @@ Validação de longo prazo em uso por semestres completos, integração com sist
 
 ## Vinculação Acadêmica
 
-- Giulia Domingues de Alcantara (desenvolvimento do produto)
 - Breno Henrique de Souza (desenvolvimento do produto)
+- Giulia Domingues de Alcantara (desenvolvimento do produto)
 - Prof. {{< link-interno "/people/george_marsicano" "George Marsicano Corrêa" >}} (orientação e acompanhamento acadêmico)
 - {{< link-interno "/projects/ia_dados_transformacao_digital" "Inteligência artificial e análise de dados para a transformação digital" >}} (projeto de origem)
+- Titular: Fundação Universidade de Brasília (UnB)

@@ -27,7 +27,7 @@ Brasilia, July 7, 2026
 
 The **EuMeProtejo** (Eu Me Protejo Application) software received a **computer program registration certificate** granted by the **Brazilian National Institute of Industrial Property (INPI)** under process **BR512026005122-3**, published in the **Industrial Property Gazette (RPI) No. 2896, dated July 7, 2026**.
 
-The product was developed by **V. S. Cabral**, under the supervision of Prof. {{< link-interno "/people/george_marsicano" "George Marsicano Corrêa" >}}, associated with the {{< link-interno "/projects/software_bem" "Software for Good" >}} program. It was built in alignment with the educational materials of the **Eu Me Protejo** project, particularly its two main booklets.
+The registration has five authors: **Victor de Souza Cabral**, **Nelzimar Maria Batista da Costa Ribeiro**, **Patricia Saldanha Marinho de Almeida**, **Thaís Garofa Arouche da Silva**, and Prof. {{< link-interno "/people/george_marsicano" "George Marsicano Corrêa" >}}, associated with the {{< link-interno "/projects/software_bem" "Software for Good" >}} program. It was built in alignment with the educational materials of the **Eu Me Protejo** project, particularly its two main booklets. The registration was granted with **Fundação Universidade de Brasília (UnB)** as the rights holder.
 
 The gamified mobile application, aimed at children ages **4 to 10** with use mediated by parents, guardians, or educators, supports learning and preventive education around self-protection and the prevention of child sexual abuse (CSA). The solution was built through action research with specialists, with requirements definition and development guided by gamification practices and plain language, staying aligned with materials validated by the project.
 

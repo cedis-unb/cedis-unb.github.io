@@ -27,7 +27,7 @@ Brasília, 19 de maio de 2026
 
 O software **Chatbot para Engenharia de Requisitos** recebeu **certificado de registro de programa de computador** concedido pelo **Instituto Nacional da Propriedade Industrial (INPI)**, referente ao processo **BR512026003514-7**, publicado na **Revista da Propriedade Industrial (RPI) nº 2889, de 19 de maio de 2026**.
 
-O produto foi desenvolvido por **A. C. M. Lustosa Junior** e **P. H. M. Oliveira**, sob orientação do Prof. {{< link-interno "/people/george_marsicano" "George Marsicano Corrêa" >}}, no âmbito do {{< link-interno "/projects/super_r" "projeto Super-R" >}}.
+O produto foi desenvolvido por **Fause Carlos Mascarenhas Lustosa Junior** e **Pedro Henrique Muniz de Oliveira**, sob orientação do Prof. {{< link-interno "/people/george_marsicano" "George Marsicano Corrêa" >}}, no âmbito do {{< link-interno "/projects/super_r" "projeto Super-R" >}}. O registro foi concedido tendo como titular a **Fundação Universidade de Brasília (UnB)**.
 
 O software investiga como chatbots baseados em modelos de linguagem natural (LLMs) podem apoiar a Engenharia de Requisitos, conduzindo entrevistas estruturadas com stakeholders para elicitar, esclarecer e formalizar requisitos. Como resultado, gera automaticamente histórias de usuário (user stories), permite validação e correção durante a conversa e exporta o resultado em planilha (.xlsx).
 

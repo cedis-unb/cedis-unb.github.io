@@ -13,7 +13,7 @@ areas:
 responsible:
 - george_marsicano
 publications:
-- publication_2026_a_c_m_lustosa_junior_certificado_de_registro_de_programa_de_computador_chatbot_como_f
+- publication_2026_fause_carlos_mascarenhas_lustosa_junior_certificado_de_registro_de_programa_de_comput
 weight: 32
 featured_image: "../assets/images/featured/projeto_SuperR.png"
 summary: Produto tecnológico registrado em 2025 que propõe um chatbot como ferramenta de apoio à Engenharia de Requisitos, com registro de programa de computador concedido pelo INPI em 2026.
@@ -51,7 +51,8 @@ Evolução prevista para entrada e saída por voz, persistência em banco de dad
 
 ## Vinculação Acadêmica
 
-- A. C. M. Lustosa Junior (desenvolvimento do produto)
-- P. H. M. Oliveira (desenvolvimento do produto)
+- Fause Carlos Mascarenhas Lustosa Junior (desenvolvimento do produto)
+- Pedro Henrique Muniz de Oliveira (desenvolvimento do produto)
 - Prof. {{< link-interno "/people/george_marsicano" "George Marsicano Corrêa" >}} (orientação e acompanhamento acadêmico)
 - {{< link-interno "/projects/super_r" "Super-R" >}} (projeto de origem)
+- Titular: Fundação Universidade de Brasília (UnB)

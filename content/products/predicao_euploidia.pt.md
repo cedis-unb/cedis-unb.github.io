@@ -13,7 +13,7 @@ areas:
 responsible:
 - george_marsicano
 publications:
-- publication_2026_maria_eduarda_d_santos_abritta_f_certificado_de_registro_de_programa_de_computador_ap
+- publication_2026_george_marsicano_correa_certificado_de_registro_de_programa_de_computador_aplicacao_d
 weight: 35
 featured_image: "../assets/images/featured/area_IA.webp"
 summary: Aplicação de aprendizado de máquina à predição não invasiva de euploidia em embriões humanos, com base em dados morfocinéticos. Registro de programa de computador concedido pelo INPI em 2026.
@@ -54,6 +54,7 @@ Incorporação de novos modelos preditivos (incluindo regressão para estimativa
 
 ## Vinculação Acadêmica
 
-- Maria Eduarda D Santos Abritta F (desenvolvimento do produto)
-- Sabrina Caldas Berna (desenvolvimento do produto)
+- Maria Eduarda dos Santos Abritta Ferreira (desenvolvimento do produto)
+- Sabrina Caldas Berno (desenvolvimento do produto)
 - Prof. {{< link-interno "/people/george_marsicano" "George Marsicano Corrêa" >}} (orientação e acompanhamento acadêmico)
+- Titular: Fundação Universidade de Brasília (UnB)
