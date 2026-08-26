@@ -7,7 +7,7 @@ translationKey: publication_2008_gleisse_amalia_nogueira_proposta_para_a_melhori
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2008_gleisse_amalia_nogueira_proposta_para_a_melhoria_da_gerencia_de_requisitos_de_uma_coo
-publication_index: 303
+publication_index: 301
 publication_group: specialization
 publication_type: specialization
 schema_type: Thesis

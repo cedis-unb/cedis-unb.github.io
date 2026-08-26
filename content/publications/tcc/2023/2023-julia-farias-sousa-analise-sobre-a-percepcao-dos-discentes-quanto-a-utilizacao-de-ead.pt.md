@@ -8,7 +8,7 @@ translationKey: publication_2023_julia_farias_sousa_analise_sobre_a_percepcao_do
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2023_julia_farias_sousa_analise_sobre_a_percepcao_dos_discentes_quanto_a_utilizacao_de_ead
-publication_index: 232
+publication_index: 231
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

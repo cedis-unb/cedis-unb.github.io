@@ -8,7 +8,7 @@ translationKey: publication_2024_alvaro_henrique_de_sousa_gouvea_utilizacao_de_l
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2024_alvaro_henrique_de_sousa_gouvea_utilizacao_de_large_language_models_no_desenvolviment
-publication_index: 259
+publication_index: 257
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

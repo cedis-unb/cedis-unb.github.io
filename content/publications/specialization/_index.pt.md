@@ -8,5 +8,5 @@ generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 publication_filter: specialization
 description: Trabalhos de especializacao orientados por pesquisadores do CEDIS.
-summary: 41 registros catalogados.
+summary: 40 registros catalogados.
 ---

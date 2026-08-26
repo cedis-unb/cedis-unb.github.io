@@ -7,7 +7,7 @@ translationKey: publication_2014_vinicius_brito_proposta_de_um_conjunto_de_compe
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2014_vinicius_brito_proposta_de_um_conjunto_de_competencias_para_um_product_owner
-publication_index: 211
+publication_index: 210
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

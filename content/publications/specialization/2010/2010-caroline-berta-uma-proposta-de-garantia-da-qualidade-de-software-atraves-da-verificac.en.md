@@ -8,7 +8,7 @@ translationKey: publication_2010_caroline_berta_uma_proposta_de_garantia_da_qual
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2010_caroline_berta_uma_proposta_de_garantia_da_qualidade_de_software_atraves_da_verificac
-publication_index: 294
+publication_index: 292
 publication_group: specialization
 publication_type: specialization
 schema_type: Thesis

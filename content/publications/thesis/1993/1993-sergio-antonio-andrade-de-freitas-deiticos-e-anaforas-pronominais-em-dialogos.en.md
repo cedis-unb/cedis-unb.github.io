@@ -7,7 +7,7 @@ translationKey: publication_1993_sergio_antonio_andrade_de_freitas_deiticos_e_an
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_1993_sergio_antonio_andrade_de_freitas_deiticos_e_anaforas_pronominais_em_dialogos
-publication_index: 227
+publication_index: 226
 publication_group: thesis
 publication_type: dissertation
 schema_type: Thesis

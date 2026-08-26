@@ -8,7 +8,7 @@ translationKey: publication_2010_antonio_henrique_braz_filho_proposta_de_melhori
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2010_antonio_henrique_braz_filho_proposta_de_melhoria_de_um_produto_de_software_apoiada_na
-publication_index: 304
+publication_index: 302
 publication_group: specialization
 publication_type: specialization
 schema_type: Thesis

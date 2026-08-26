@@ -8,7 +8,7 @@ translationKey: publication_2026_sergio_antonio_andrade_de_freitas_a_heterogeneo
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2026_sergio_antonio_andrade_de_freitas_a_heterogeneous_ensemble_meta_model_for_large_scale
-publication_index: 330
+publication_index: 328
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle

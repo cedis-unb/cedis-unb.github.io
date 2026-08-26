@@ -8,7 +8,7 @@ translationKey: publication_2026_geovanna_maciel_avelino_da_costa_atloria_uma_pl
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2026_geovanna_maciel_avelino_da_costa_atloria_uma_plataforma_gamificada_para_visualizacao
-publication_index: 319
+publication_index: 317
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

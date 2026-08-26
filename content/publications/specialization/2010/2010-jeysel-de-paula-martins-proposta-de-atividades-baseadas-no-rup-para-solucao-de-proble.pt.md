@@ -8,7 +8,7 @@ translationKey: publication_2010_jeysel_de_paula_martins_proposta_de_atividades_
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2010_jeysel_de_paula_martins_proposta_de_atividades_baseadas_no_rup_para_solucao_de_proble
-publication_index: 297
+publication_index: 295
 publication_group: specialization
 publication_type: specialization
 schema_type: Thesis

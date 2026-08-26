@@ -7,7 +7,7 @@ translationKey: publication_2012_leandro_barbosa_martins_gestao_de_riscos_e_gove
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2012_leandro_barbosa_martins_gestao_de_riscos_e_governanca_de_ti_aplicada_a_rede_de_comuni
-publication_index: 239
+publication_index: 238
 publication_group: specialization
 publication_type: specialization
 schema_type: Thesis

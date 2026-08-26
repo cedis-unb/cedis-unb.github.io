@@ -8,7 +8,7 @@ translationKey: publication_2002_walmir_pereira_de_amorim_junior_criptografia_e_
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2002_walmir_pereira_de_amorim_junior_criptografia_e_autenticacao_um_protocolo_de_autentica
-publication_index: 254
+publication_index: 252
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

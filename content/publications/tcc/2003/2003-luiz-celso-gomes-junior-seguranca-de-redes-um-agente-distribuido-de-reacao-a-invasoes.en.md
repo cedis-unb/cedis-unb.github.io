@@ -7,7 +7,7 @@ translationKey: publication_2003_luiz_celso_gomes_junior_seguranca_de_redes_um_a
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2003_luiz_celso_gomes_junior_seguranca_de_redes_um_agente_distribuido_de_reacao_a_invasoes
-publication_index: 250
+publication_index: 248
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

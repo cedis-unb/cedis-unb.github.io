@@ -1,5 +1,5 @@
 ---
-title: "Uma jornada arqueológica para desenterrar como funcionam os LLMs"
+title: "Gamificação e modelos de linguagem de grande escala: desenvolvimento de uma plataforma educacional"
 date: 1970-01-01T00:00:00Z
 scheduled_date: 2026-07-04T00:00:00-03:00
 draft: false

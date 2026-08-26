@@ -7,7 +7,7 @@ translationKey: publication_2002_rui_sant_ana_junior_proposta_de_um_agente_de_re
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2002_rui_sant_ana_junior_proposta_de_um_agente_de_reconfiguracao_remota_de_servicos
-publication_index: 256
+publication_index: 254
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

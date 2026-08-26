@@ -8,7 +8,7 @@ translationKey: publication_2023_luis_bruno_fidelis_gomes_business_intelligence_
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2023_luis_bruno_fidelis_gomes_business_intelligence_aplicada_a_saude_paineis_de_monitorame
-publication_index: 234
+publication_index: 233
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

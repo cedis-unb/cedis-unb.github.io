@@ -8,7 +8,7 @@ translationKey: publication_2014_rafael_ferreira_dos_santos_avaliacao_da_implant
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2014_rafael_ferreira_dos_santos_avaliacao_da_implantacao_de_um_sistema_de_service_desk_bas
-publication_index: 209
+publication_index: 208
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

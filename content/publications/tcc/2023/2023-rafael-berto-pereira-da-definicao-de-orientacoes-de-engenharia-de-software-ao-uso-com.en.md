@@ -8,7 +8,7 @@ translationKey: publication_2023_rafael_berto_pereira_da_definicao_de_orientacoe
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2023_rafael_berto_pereira_da_definicao_de_orientacoes_de_engenharia_de_software_ao_uso_com
-publication_index: 233
+publication_index: 232
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

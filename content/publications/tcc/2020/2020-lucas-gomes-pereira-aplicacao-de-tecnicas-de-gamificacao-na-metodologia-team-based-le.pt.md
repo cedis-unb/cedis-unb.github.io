@@ -8,7 +8,7 @@ translationKey: publication_2020_lucas_gomes_pereira_aplicacao_de_tecnicas_de_ga
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2020_lucas_gomes_pereira_aplicacao_de_tecnicas_de_gamificacao_na_metodologia_team_based_le
-publication_index: 277
+publication_index: 275
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

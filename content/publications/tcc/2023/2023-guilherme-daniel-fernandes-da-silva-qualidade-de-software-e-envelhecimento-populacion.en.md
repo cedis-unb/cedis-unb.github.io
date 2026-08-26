@@ -8,7 +8,7 @@ translationKey: publication_2023_guilherme_daniel_fernandes_da_silva_qualidade_d
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2023_guilherme_daniel_fernandes_da_silva_qualidade_de_software_e_envelhecimento_populacion
-publication_index: 229
+publication_index: 228
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

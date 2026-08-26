@@ -8,7 +8,7 @@ translationKey: publication_2025_yuri_alves_bacarias_processo_de_validacao_e_ver
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2025_yuri_alves_bacarias_processo_de_validacao_e_verificacao_de_requisitos_suportados_por
-publication_index: 267
+publication_index: 265
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

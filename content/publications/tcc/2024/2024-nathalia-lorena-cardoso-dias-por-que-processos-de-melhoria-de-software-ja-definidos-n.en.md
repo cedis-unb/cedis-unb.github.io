@@ -8,7 +8,7 @@ translationKey: publication_2024_nathalia_lorena_cardoso_dias_por_que_processos_
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2024_nathalia_lorena_cardoso_dias_por_que_processos_de_melhoria_de_software_ja_definidos_n
-publication_index: 231
+publication_index: 230
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

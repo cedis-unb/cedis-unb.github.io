@@ -7,7 +7,7 @@ translationKey: publication_2024_itallo_cavalcante_gravina_portal_de_visualizaca
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2024_itallo_cavalcante_gravina_portal_de_visualizacao_e_analise_de_dados_de_producao_cient
-publication_index: 271
+publication_index: 269
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

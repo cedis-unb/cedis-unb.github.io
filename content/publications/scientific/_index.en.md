@@ -8,5 +8,5 @@ generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 publication_filter: scientific
 description: Articles, books, chapters, and conference papers by CEDIS.
-summary: 130 catalogued records.
+summary: 129 catalogued records.
 ---

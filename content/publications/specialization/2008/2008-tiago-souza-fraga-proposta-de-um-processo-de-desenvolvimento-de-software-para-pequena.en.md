@@ -7,7 +7,7 @@ translationKey: publication_2008_tiago_souza_fraga_proposta_de_um_processo_de_de
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2008_tiago_souza_fraga_proposta_de_um_processo_de_desenvolvimento_de_software_para_pequena
-publication_index: 314
+publication_index: 312
 publication_group: specialization
 publication_type: specialization
 schema_type: Thesis

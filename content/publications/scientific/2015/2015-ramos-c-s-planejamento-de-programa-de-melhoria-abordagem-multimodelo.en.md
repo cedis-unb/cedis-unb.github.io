@@ -7,7 +7,7 @@ translationKey: publication_2015_ramos_c_s_planejamento_de_programa_de_melhoria_
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2015_ramos_c_s_planejamento_de_programa_de_melhoria_abordagem_multimodelo
-publication_index: 197
+publication_index: 196
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle

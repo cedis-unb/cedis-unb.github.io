@@ -7,7 +7,7 @@ translationKey: publication_2023_francisca_de_fatima_araujo_lucena_deteccao_de_f
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2023_francisca_de_fatima_araujo_lucena_deteccao_de_fake_news_relacionadas_a_covid_19_no_br
-publication_index: 272
+publication_index: 270
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

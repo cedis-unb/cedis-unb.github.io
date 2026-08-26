@@ -8,7 +8,7 @@ translationKey: publication_2009_francisco_santiago_do_carmo_pereira_a_methodolo
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2009_francisco_santiago_do_carmo_pereira_a_methodology_for_the_use_of_natural_language_pro
-publication_index: 220
+publication_index: 219
 publication_group: thesis
 publication_type: dissertation
 schema_type: Thesis

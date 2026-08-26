@@ -8,7 +8,7 @@ translationKey: publication_2014_guilherme_fay_vergara_implantacao_de_softwares_
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2014_guilherme_fay_vergara_implantacao_de_softwares_como_servico_em_uma_nuvem_privada_para
-publication_index: 208
+publication_index: 207
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

@@ -1,5 +1,5 @@
 ---
-title: "Launch Center: quando análise estática deixa de ser portão e vira jornada"
+title: "Improving Software Quality through Gamification Techniques"
 date: 1970-01-01T00:00:00Z
 scheduled_date: 2026-06-30T00:00:00-03:00
 draft: false

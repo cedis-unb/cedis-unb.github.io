@@ -7,7 +7,7 @@ translationKey: publication_2009_leonardo_lima_de_menezes_uma_pesquisa_sobre_a_p
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2009_leonardo_lima_de_menezes_uma_pesquisa_sobre_a_pratica_da_atividade_de_validacao_dos_r
-publication_index: 310
+publication_index: 308
 publication_group: specialization
 publication_type: specialization
 schema_type: Thesis

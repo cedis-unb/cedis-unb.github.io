@@ -8,7 +8,7 @@ translationKey: publication_2014_luciano_hideaky_de_macedo_endo_metricas_de_apoi
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2014_luciano_hideaky_de_macedo_endo_metricas_de_apoio_a_estimativa_de_esforco_para_o_desen
-publication_index: 201
+publication_index: 200
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

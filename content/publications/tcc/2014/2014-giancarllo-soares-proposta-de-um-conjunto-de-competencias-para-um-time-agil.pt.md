@@ -7,7 +7,7 @@ translationKey: publication_2014_giancarllo_soares_proposta_de_um_conjunto_de_co
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2014_giancarllo_soares_proposta_de_um_conjunto_de_competencias_para_um_time_agil
-publication_index: 207
+publication_index: 206
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

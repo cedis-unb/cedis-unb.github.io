@@ -7,7 +7,7 @@ translationKey: publication_2009_pereira_f_s_c_an_anaphora_based_information_ret
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2009_pereira_f_s_c_an_anaphora_based_information_retrieval_model_extension
-publication_index: 218
+publication_index: 217
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle

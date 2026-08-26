@@ -8,7 +8,7 @@ translationKey: publication_2020_glauco_vitor_pedrosa_a_systematic_review_of_ind
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2020_glauco_vitor_pedrosa_a_systematic_review_of_indicators_for_evaluating_the_effectivene
-publication_index: 323
+publication_index: 321
 publication_group: scientific
 publication_type: article
 schema_type: ScholarlyArticle

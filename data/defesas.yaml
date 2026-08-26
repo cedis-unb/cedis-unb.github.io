@@ -5525,39 +5525,6 @@
       en:
     status_override:
     date_approximate: true
-  - id: leandro-martins-2012-06-15-2
-    type: specialization
-    program: curso_espunb2
-    scheduled_date: '2012-06-15T00:00:00-03:00'
-    held_date: '2012-06-15'
-    title:
-      pt: Gestão de Riscos e Governança de TI Aplicada à Rede de Comunicação Governamental
-      en: Risk Management and IT Governance Applied to the Government Communication Network
-    summary:
-      pt: ''
-      en: ''
-    students:
-      - name: Leandro Barbosa Martins
-        slug:
-    advisor: sergio_freitas
-    co_advisors:
-    committee: []
-    location:
-      room:
-      city: Brasília
-      remote_url:
-    tags:
-      - security
-    project:
-    related_products: []
-    related_publications: []
-    production_id: 2012-leandro-barbosa-gestao-de-riscos-e-governanca-de
-    news_slug:
-    narrative:
-      pt:
-      en:
-    status_override:
-    date_approximate: true
   - id: rodrigo-felisdorio-2012-06-15
     type: specialization
     program: curso_espunb2
