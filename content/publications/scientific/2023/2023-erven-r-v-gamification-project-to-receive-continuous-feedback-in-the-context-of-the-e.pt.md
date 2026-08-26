@@ -8,7 +8,7 @@ translationKey: publication_2023_erven_r_v_gamification_project_to_receive_conti
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2023_erven_r_v_gamification_project_to_receive_continuous_feedback_in_the_context_of_the_e
-publication_index: 50
+publication_index: 55
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle
@@ -21,11 +21,7 @@ authors:
 - CANEDO, E. D.
 authors_structured:
 - name: ERVEN, R. V.
-  id: erven_r_v
-  url: /people/erven_r_v
 - name: JUBE, D.
-  id: jube_d
-  url: /people/jube_d
 - name: SANTOS, H.
 - name: FREITAS, S. A. A.
 - name: CANEDO, E. D.

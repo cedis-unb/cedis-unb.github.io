@@ -7,7 +7,7 @@ translationKey: publication_2024_daniela_soares_de_oliveira_modelo_de_ia_de_trad
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2024_daniela_soares_de_oliveira_modelo_de_ia_de_traducao_de_libras
-publication_index: 31
+publication_index: 36
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

@@ -7,7 +7,7 @@ translationKey: publication_2021_ateldy_borges_brasil_filho_avaliacao_de_gamific
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2021_ateldy_borges_brasil_filho_avaliacao_de_gamificacao_uma_aplicacao_pratica_em_uma_empr
-publication_index: 90
+publication_index: 95
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

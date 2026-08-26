@@ -7,7 +7,7 @@ translationKey: publication_2002_helder_bergamin_pimentel_dias_uma_proposta_de_a
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2002_helder_bergamin_pimentel_dias_uma_proposta_de_agente_de_deteccao_de_intrusao
-publication_index: 250
+publication_index: 255
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

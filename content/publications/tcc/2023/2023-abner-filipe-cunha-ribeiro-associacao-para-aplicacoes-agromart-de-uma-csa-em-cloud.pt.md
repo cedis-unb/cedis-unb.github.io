@@ -7,7 +7,7 @@ translationKey: publication_2023_abner_filipe_cunha_ribeiro_associacao_para_apli
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2023_abner_filipe_cunha_ribeiro_associacao_para_aplicacoes_agromart_de_uma_csa_em_cloud
-publication_index: 60
+publication_index: 65
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

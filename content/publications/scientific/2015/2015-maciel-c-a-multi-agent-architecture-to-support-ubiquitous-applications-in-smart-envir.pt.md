@@ -7,7 +7,7 @@ translationKey: publication_2015_maciel_c_a_multi_agent_architecture_to_support_
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2015_maciel_c_a_multi_agent_architecture_to_support_ubiquitous_applications_in_smart_envir
-publication_index: 190
+publication_index: 195
 publication_group: scientific
 publication_type: article
 schema_type: ScholarlyArticle
@@ -20,14 +20,10 @@ authors:
 - SEGHROUCHNI, A.
 authors_structured:
 - name: MACIEL, C.
-  id: maciel_c
-  url: /people/maciel_c
 - name: SOUZA, P. C.
 - name: VITERBO, J.
 - name: MENDES, F. F.
 - name: SEGHROUCHNI, A.
-  id: seghrouchni_a
-  url: /people/seghrouchni_a
 tags:
 - ai
 advisors: []

@@ -7,7 +7,7 @@ translationKey: publication_2015_tiago_querubim_proposta_de_um_conjunto_de_compe
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2015_tiago_querubim_proposta_de_um_conjunto_de_competencias_para_um_scrum_master
-publication_index: 198
+publication_index: 203
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

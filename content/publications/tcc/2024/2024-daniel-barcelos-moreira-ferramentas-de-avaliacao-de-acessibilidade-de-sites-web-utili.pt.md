@@ -8,7 +8,7 @@ translationKey: publication_2024_daniel_barcelos_moreira_ferramentas_de_avaliaca
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2024_daniel_barcelos_moreira_ferramentas_de_avaliacao_de_acessibilidade_de_sites_web_utili
-publication_index: 28
+publication_index: 33
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

@@ -8,7 +8,7 @@ translationKey: publication_2024_eber_junio_borges_moreira_agendamento_de_recurs
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2024_eber_junio_borges_moreira_agendamento_de_recursos_academicos_em_instituicoes_de_ensin
-publication_index: 54
+publication_index: 59
 publication_group: thesis
 publication_type: dissertation
 schema_type: Thesis

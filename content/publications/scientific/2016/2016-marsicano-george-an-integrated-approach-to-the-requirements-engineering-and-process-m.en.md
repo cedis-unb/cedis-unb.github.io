@@ -8,7 +8,7 @@ translationKey: publication_2016_marsicano_george_an_integrated_approach_to_the_
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2016_marsicano_george_an_integrated_approach_to_the_requirements_engineering_and_process_m
-publication_index: 177
+publication_index: 182
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle

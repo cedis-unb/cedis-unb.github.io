@@ -8,7 +8,7 @@ translationKey: publication_2023_canedo_edna_dias_do_you_see_what_happens_around
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2023_canedo_edna_dias_do_you_see_what_happens_around_you_men_s_perceptions_of_gender_inequ
-publication_index: 49
+publication_index: 54
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle

@@ -7,7 +7,7 @@ translationKey: publication_2018_ramos_cristiane_soares_tbl_as_an_active_learnin
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2018_ramos_cristiane_soares_tbl_as_an_active_learning_teaching_methodology_for_software_en
-publication_index: 152
+publication_index: 157
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle

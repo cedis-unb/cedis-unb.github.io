@@ -8,7 +8,7 @@ translationKey: publication_2010_eduardo_de_oliveira_e_soares_proposta_de_uso_de
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2010_eduardo_de_oliveira_e_soares_proposta_de_uso_de_tecnicas_de_persuasao_no_tratamento_d
-publication_index: 286
+publication_index: 291
 publication_group: specialization
 publication_type: specialization
 schema_type: Thesis

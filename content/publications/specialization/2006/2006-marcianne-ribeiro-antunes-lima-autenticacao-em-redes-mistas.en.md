@@ -7,7 +7,7 @@ translationKey: publication_2006_marcianne_ribeiro_antunes_lima_autenticacao_em_
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2006_marcianne_ribeiro_antunes_lima_autenticacao_em_redes_mistas
-publication_index: 239
+publication_index: 244
 publication_group: specialization
 publication_type: specialization
 schema_type: Thesis

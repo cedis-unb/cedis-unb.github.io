@@ -7,7 +7,7 @@ translationKey: publication_2015_rodrigues_g_n_modeling_and_verification_for_dep
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2015_rodrigues_g_n_modeling_and_verification_for_dependability_in_software_product_lines
-publication_index: 193
+publication_index: 198
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle
@@ -23,29 +23,15 @@ authors:
 - LEGAY, A.
 authors_structured:
 - name: RODRIGUES, G. N.
-  id: rodrigues_g_n
-  url: /people/rodrigues_g_n
 - name: ALVES, V. R.
-  id: alves_v_r
-  url: /people/alves_v_r
 - name: NUNES, V.
-  id: nunes_v
-  url: /people/nunes_v
 - name: LANNA, André Luiz Peron Martins
   id: andre_lanna
   url: /people/andre_lanna
 - name: CORDY, M.
-  id: cordy_m
-  url: /people/cordy_m
 - name: SCHOBBENS, P.
-  id: schobbens_p
-  url: /people/schobbens_p
 - name: SHARIFLOO, A. M.
-  id: sharifloo_a_m
-  url: /people/sharifloo_a_m
 - name: LEGAY, A.
-  id: legay_a
-  url: /people/legay_a
 tags:
 - software_product_line
 advisors: []

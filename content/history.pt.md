@@ -65,6 +65,8 @@ O CEDIS entra em uma fase de consolidação tecnológica ainda mais visível. O 
 
 Em fevereiro, o INPI concede ao [Contextus]({{< relref "/products/contextus" >}}) o primeiro registro formal de programa de computador do CEDIS (processo BR512026000889-1) — marco na proteção da propriedade intelectual do centro.
 
+Ainda em 2026, a proteção jurídica avança em bloco: o INPI concede cinco novos registros a produtos derivados de projetos do CEDIS — o [Chatbot para Engenharia de Requisitos]({{< relref "/products/chatbot_requisitos" >}}) (BR512026003514-7), o [Apoio Estudantil FCTE]({{< relref "/products/apoio_estudantil_fcte" >}}) (BR512026003515-5), a [Predição de Euploidia]({{< relref "/products/predicao_euploidia" >}}) (BR512026003650-0), o app [Pró-vida e Eu Me Protejo]({{< relref "/products/prevencao_violencia_infancia" >}}) (BR512026005120-7) e o [Aplicativo "Eu Me Protejo"]({{< relref "/products/prevencao_abuso_infantil" >}}) (BR512026005122-3). Juntos, ampliam o portfólio protegido do centro em IA, Engenharia de Requisitos, Machine Learning aplicado à saúde e software de impacto social.
+
 Em março, o [Evidentia Review]({{< relref "/products/evidentia" >}}) reforça a atuação do CEDIS em pesquisa baseada em evidências, com uma plataforma voltada ao planejamento, condução e relato de revisões sistemáticas com colaboração e rastreabilidade.
 
 Já o [OctaAnalysis]({{< relref "/products/octaanalysis" >}}) projeta a atuação do centro em gamificação e learning analytics, oferecendo uma base digital própria para desenhar, acompanhar e analisar experiências educacionais e colaborativas.

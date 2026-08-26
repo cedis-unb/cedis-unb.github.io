@@ -7,7 +7,7 @@ translationKey: publication_2016_bruna_nayara_lima_framework_for_evaluating_educ
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2016_bruna_nayara_lima_framework_for_evaluating_educational_games_motivational_and_learnin
-publication_index: 186
+publication_index: 191
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

@@ -8,7 +8,7 @@ translationKey: publication_2022_silva_m_v_s_pt4researchers_uma_ferramenta_web_p
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2022_silva_m_v_s_pt4researchers_uma_ferramenta_web_para_coleta_e_processamento_de_dados_de
-publication_index: 103
+publication_index: 108
 publication_group: scientific
 publication_type: workshop
 schema_type: ScholarlyArticle

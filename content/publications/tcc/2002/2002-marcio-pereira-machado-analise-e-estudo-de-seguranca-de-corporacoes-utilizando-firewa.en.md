@@ -7,7 +7,7 @@ translationKey: publication_2002_marcio_pereira_machado_analise_e_estudo_de_segu
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2002_marcio_pereira_machado_analise_e_estudo_de_seguranca_de_corporacoes_utilizando_firewa
-publication_index: 248
+publication_index: 253
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

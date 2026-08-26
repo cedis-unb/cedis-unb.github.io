@@ -8,7 +8,7 @@ translationKey: publication_2022_joao_gabriel_rossi_promocao_da_qualidade_de_vid
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2022_joao_gabriel_rossi_promocao_da_qualidade_de_vida_no_trabalho_no_setor_publico_propost
-publication_index: 70
+publication_index: 75
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis
@@ -20,8 +20,7 @@ authors_structured:
 - name: João Gabriel Rossi
   id: joao_gabriel_rossi
 - name: Paulo Vitor Coelho da Rocha
-  id: rocha_johan_m_g_da
-  url: /people/rocha_johan_m_g_da
+  id: paulo_vitor_coelho_da_rocha
 tags:
 - digital_transformation
 advisors:

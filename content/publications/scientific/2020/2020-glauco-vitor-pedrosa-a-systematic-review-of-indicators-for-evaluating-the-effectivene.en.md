@@ -8,7 +8,7 @@ translationKey: publication_2020_glauco_vitor_pedrosa_a_systematic_review_of_ind
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2020_glauco_vitor_pedrosa_a_systematic_review_of_indicators_for_evaluating_the_effectivene
-publication_index: 318
+publication_index: 323
 publication_group: scientific
 publication_type: article
 schema_type: ScholarlyArticle
@@ -34,8 +34,8 @@ authors_structured:
   id: gabriela_yukari_iwama
   url: /people/gabriela_yukari_iwama
 - name: Wander Cleber Maria Pereira da Silva
-  id: silva_rodrigo_m_s_da
-  url: /people/silva_rodrigo_m_s_da
+  id: wander_cleber_maria_pereira_da_silva
+  url: /people/wander_cleber_maria_pereira_da_silva
 - name: Rejane Maria da Costa Figueiredo
   id: rejane_maria_da_costa_figueiredo
   url: /people/rejane_maria_da_costa_figueiredo

@@ -7,7 +7,7 @@ translationKey: publication_2021_lucas_pereira_de_andrade_macedo_inovacoes_tecno
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2021_lucas_pereira_de_andrade_macedo_inovacoes_tecnologicas_na_agricultura_familiar_agroma
-publication_index: 94
+publication_index: 99
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

@@ -8,7 +8,7 @@ translationKey: publication_2009_pauliane_alves_de_paula_proposta_de_associacao_
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2009_pauliane_alves_de_paula_proposta_de_associacao_de_um_processo_de_desenvolvimento_agil
-publication_index: 306
+publication_index: 311
 publication_group: specialization
 publication_type: specialization
 schema_type: Thesis

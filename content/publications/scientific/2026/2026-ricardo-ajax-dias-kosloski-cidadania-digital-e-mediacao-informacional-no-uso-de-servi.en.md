@@ -8,7 +8,7 @@ translationKey: publication_2026_ricardo_ajax_dias_kosloski_cidadania_digital_e_
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2026_ricardo_ajax_dias_kosloski_cidadania_digital_e_mediacao_informacional_no_uso_de_servi
-publication_index: 1
+publication_index: 6
 publication_group: scientific
 publication_type: article
 schema_type: ScholarlyArticle

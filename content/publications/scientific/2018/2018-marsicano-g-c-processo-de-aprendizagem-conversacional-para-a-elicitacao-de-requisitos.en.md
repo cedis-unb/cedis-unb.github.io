@@ -9,7 +9,7 @@ translationKey: publication_2018_marsicano_g_c_processo_de_aprendizagem_conversa
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2018_marsicano_g_c_processo_de_aprendizagem_conversacional_para_a_elicitacao_de_requisitos
-publication_index: 138
+publication_index: 143
 publication_group: scientific
 publication_type: book
 schema_type: Book

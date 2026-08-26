@@ -7,7 +7,7 @@ translationKey: publication_2024_sergio_antonio_andrade_freitas_implementing_neu
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2024_sergio_antonio_andrade_freitas_implementing_neuroscientific_principles_in_gamified_so
-publication_index: 41
+publication_index: 46
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle

@@ -7,7 +7,7 @@ translationKey: publication_2022_almir_jose_malheiros_franco_sistema_para_apoio_
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2022_almir_jose_malheiros_franco_sistema_para_apoio_e_acompanhamento_de_trabalhos_de_concl
-publication_index: 268
+publication_index: 273
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

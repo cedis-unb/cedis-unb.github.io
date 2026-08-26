@@ -7,7 +7,7 @@ translationKey: publication_2016_thatiany_lima_de_sousa_using_scrum_in_outsource
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2016_thatiany_lima_de_sousa_using_scrum_in_outsourced_government_projects_an_action_resear
-publication_index: 321
+publication_index: 326
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle
@@ -20,8 +20,8 @@ authors:
 - Luiz Carlos Miyadaira Ribeiro Júnior
 authors_structured:
 - name: Thatiany Lima de Sousa
-  id: lima_victor_cotrim_de
-  url: /people/lima_victor_cotrim_de
+  id: thatiany_lima_de_sousa
+  url: /people/thatiany_lima_de_sousa
 - name: Elaine Venson
   id: elaine_venson
   url: /people/elaine_venson

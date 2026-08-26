@@ -7,7 +7,7 @@ translationKey: publication_2009_renato_de_oliveira_silva_mapeamento_e_proposta_
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2009_renato_de_oliveira_silva_mapeamento_e_proposta_de_melhoria_para_um_processo_de_manute
-publication_index: 308
+publication_index: 313
 publication_group: specialization
 publication_type: specialization
 schema_type: Thesis

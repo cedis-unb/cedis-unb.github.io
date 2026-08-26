@@ -8,7 +8,7 @@ translationKey: publication_2020_chaves_j_t_f_natvi_a_framework_for_agile_softwa
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2020_chaves_j_t_f_natvi_a_framework_for_agile_software_development_service_oriented_archit
-publication_index: 120
+publication_index: 125
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle

@@ -8,7 +8,7 @@ translationKey: publication_2020_felipe_evangelista_dos_santos_implementacao_da_
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2020_felipe_evangelista_dos_santos_implementacao_da_integracao_do_barramento_de_servicos_d
-publication_index: 121
+publication_index: 126
 publication_group: thesis
 publication_type: dissertation
 schema_type: Thesis

@@ -8,7 +8,7 @@ translationKey: publication_2007_seibel_hilario_methodology_for_retrieval_of_rel
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2007_seibel_hilario_methodology_for_retrieval_of_relevant_information_in_digital_documents
-publication_index: 216
+publication_index: 221
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle

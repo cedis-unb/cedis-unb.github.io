@@ -8,7 +8,7 @@ translationKey: publication_2019_kosloski_ricardo_ajax_dias_aprendizagem_baseada
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2019_kosloski_ricardo_ajax_dias_aprendizagem_baseada_em_projetos_aplicada_em_uma_disciplin
-publication_index: 129
+publication_index: 134
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle

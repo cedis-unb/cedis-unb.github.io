@@ -7,7 +7,7 @@ translationKey: publication_2021_yamauchi_eduardo_digital_legacy_management_syst
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2021_yamauchi_eduardo_digital_legacy_management_systems_theoretical_systemic_and_users_per
-publication_index: 110
+publication_index: 115
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle

@@ -7,7 +7,7 @@ translationKey: publication_2018_freitas_s_a_a_calculating_similarity_of_curricu
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2018_freitas_s_a_a_calculating_similarity_of_curriculum_lattes
-publication_index: 140
+publication_index: 145
 publication_group: scientific
 publication_type: article
 schema_type: ScholarlyArticle

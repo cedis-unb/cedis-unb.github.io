@@ -7,7 +7,7 @@ translationKey: publication_2025_erick_giffoni_felicissimo_projeto_e_desenvolvim
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2025_erick_giffoni_felicissimo_projeto_e_desenvolvimento_do_software_tropa_teatro_de_opera
-publication_index: 14
+publication_index: 19
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

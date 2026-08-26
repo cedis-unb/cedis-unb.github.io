@@ -8,7 +8,7 @@ translationKey: publication_2022_cavalcanti_p_p_evaluation_of_the_change_in_the_
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2022_cavalcanti_p_p_evaluation_of_the_change_in_the_quality_of_reports_with_the_applicatio
-publication_index: 83
+publication_index: 88
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle
@@ -18,8 +18,6 @@ authors:
 - FREITAS, S. A. A.
 authors_structured:
 - name: CAVALCANTI, P. P.
-  id: cavalcanti_p_p
-  url: /people/cavalcanti_p_p
 - name: FREITAS, S. A. A.
 tags:
 - gamification

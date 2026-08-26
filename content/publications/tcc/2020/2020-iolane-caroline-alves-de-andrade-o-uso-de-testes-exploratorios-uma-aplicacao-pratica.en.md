@@ -7,7 +7,7 @@ translationKey: publication_2020_iolane_caroline_alves_de_andrade_o_uso_de_teste
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2020_iolane_caroline_alves_de_andrade_o_uso_de_testes_exploratorios_uma_aplicacao_pratica
-publication_index: 93
+publication_index: 98
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

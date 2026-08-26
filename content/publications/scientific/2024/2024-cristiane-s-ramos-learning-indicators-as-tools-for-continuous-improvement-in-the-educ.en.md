@@ -8,7 +8,7 @@ translationKey: publication_2024_cristiane_s_ramos_learning_indicators_as_tools_
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2024_cristiane_s_ramos_learning_indicators_as_tools_for_continuous_improvement_in_the_educ
-publication_index: 44
+publication_index: 49
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle

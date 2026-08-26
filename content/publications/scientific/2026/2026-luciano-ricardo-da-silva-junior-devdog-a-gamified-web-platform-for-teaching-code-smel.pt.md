@@ -7,7 +7,7 @@ translationKey: publication_2026_luciano_ricardo_da_silva_junior_devdog_a_gamifi
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2026_luciano_ricardo_da_silva_junior_devdog_a_gamified_web_platform_for_teaching_code_smel
-publication_index: 316
+publication_index: 321
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle
@@ -18,8 +18,7 @@ authors:
 - André Luiz Peron Martins Lanna
 authors_structured:
 - name: Luciano Ricardo da Silva Junior
-  id: silva_rodrigo_m_s_da
-  url: /people/silva_rodrigo_m_s_da
+  id: luciano_ricardo_da_silva_junior
 - name: Sergio Antônio Andrade de Freitas
   id: sergio_freitas
   url: /people/sergio_freitas

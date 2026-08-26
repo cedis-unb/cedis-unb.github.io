@@ -7,7 +7,7 @@ translationKey: publication_2019_bruno_contessotto_braganca_pinheiro_active_gami
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2019_bruno_contessotto_braganca_pinheiro_active_gamification_a_process_for_successful_gami
-publication_index: 133
+publication_index: 138
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

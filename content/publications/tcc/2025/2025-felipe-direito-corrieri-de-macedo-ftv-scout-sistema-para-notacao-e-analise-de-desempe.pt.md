@@ -7,7 +7,7 @@ translationKey: publication_2025_felipe_direito_corrieri_de_macedo_ftv_scout_sis
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2025_felipe_direito_corrieri_de_macedo_ftv_scout_sistema_para_notacao_e_analise_de_desempe
-publication_index: 20
+publication_index: 25
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

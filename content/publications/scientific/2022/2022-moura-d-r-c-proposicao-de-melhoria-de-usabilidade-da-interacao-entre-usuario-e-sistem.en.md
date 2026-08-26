@@ -8,7 +8,7 @@ translationKey: publication_2022_moura_d_r_c_proposicao_de_melhoria_de_usabilida
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2022_moura_d_r_c_proposicao_de_melhoria_de_usabilidade_da_interacao_entre_usuario_e_sistem
-publication_index: 86
+publication_index: 91
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle

@@ -8,7 +8,7 @@ translationKey: publication_2019_angelica_toffano_seidel_calazans_quality_requir
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2019_angelica_toffano_seidel_calazans_quality_requirements_analysis_of_utilization_in_the
-publication_index: 320
+publication_index: 325
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle

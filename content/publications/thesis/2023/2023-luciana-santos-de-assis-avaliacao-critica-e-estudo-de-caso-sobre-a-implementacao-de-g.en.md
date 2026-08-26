@@ -8,7 +8,7 @@ translationKey: publication_2023_luciana_santos_de_assis_avaliacao_critica_e_est
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2023_luciana_santos_de_assis_avaliacao_critica_e_estudo_de_caso_sobre_a_implementacao_de_g
-publication_index: 57
+publication_index: 62
 publication_group: thesis
 publication_type: dissertation
 schema_type: Thesis

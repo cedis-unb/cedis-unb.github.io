@@ -8,7 +8,7 @@ translationKey: publication_2025_dione_ramos_canuto_moura_proposicao_de_melhoria
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2025_dione_ramos_canuto_moura_proposicao_de_melhoria_de_usabilidade_da_interacao_entre_usu
-publication_index: 55
+publication_index: 60
 publication_group: thesis
 publication_type: dissertation
 schema_type: Thesis

@@ -7,7 +7,7 @@ translationKey: publication_2016_freitas_s_a_a_a_tool_for_students_grouping_in_c
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2016_freitas_s_a_a_a_tool_for_students_grouping_in_classroom
-publication_index: 173
+publication_index: 178
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle
@@ -20,14 +20,10 @@ authors:
 authors_structured:
 - name: FREITAS, S. A. A.
 - name: SILVA, RITA C.
-  id: silva_m_c
-  url: /people/silva_m_c
 - name: CANEDO, EDNA D.
   id: edna_canedo
   url: /people/edna_canedo
 - name: LUCENA, TIAGO FRANKLIN R.
-  id: lucena_tiago_franklin_r
-  url: /people/lucena_tiago_franklin_r
 tags:
 - learning_analytics
 advisors: []

@@ -8,7 +8,7 @@ translationKey: publication_2003_bruno_fardin_fae_acel_um_modelo_de_ambiente_par
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2003_bruno_fardin_fae_acel_um_modelo_de_ambiente_para_o_desenvolvimento_de_sistemas_multi
-publication_index: 246
+publication_index: 251
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

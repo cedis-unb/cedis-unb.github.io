@@ -8,7 +8,7 @@ translationKey: publication_2018_jonathan_nogueira_rufino_batista_paiva_notifica
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2018_jonathan_nogueira_rufino_batista_paiva_notificar_aplicativo_para_monitoramento_da_sit
-publication_index: 135
+publication_index: 140
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

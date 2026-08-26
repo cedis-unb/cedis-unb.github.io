@@ -8,7 +8,7 @@ translationKey: publication_2025_wander_cleber_maria_pereira_da_silva_fast_track
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2025_wander_cleber_maria_pereira_da_silva_fast_track_for_collaborative_solutions_a_methodo
-publication_index: 21
+publication_index: 26
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle
@@ -23,8 +23,8 @@ authors:
 - Rejane Maria da Costa Figueiredo
 authors_structured:
 - name: Wander Cleber Maria Pereira da Silva
-  id: silva_rodrigo_m_s_da
-  url: /people/silva_rodrigo_m_s_da
+  id: wander_cleber_maria_pereira_da_silva
+  url: /people/wander_cleber_maria_pereira_da_silva
 - name: Edna Dias Canedo
   id: edna_canedo
   url: /people/edna_canedo

@@ -7,7 +7,7 @@ translationKey: publication_2022_salleh_norsaremah_value_based_software_engineer
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2022_salleh_norsaremah_value_based_software_engineering_a_systematic_mapping_study
-publication_index: 82
+publication_index: 87
 publication_group: scientific
 publication_type: article
 schema_type: ScholarlyArticle

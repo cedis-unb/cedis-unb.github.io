@@ -7,7 +7,7 @@ translationKey: publication_2010_diogo_alves_miranda_proposta_de_melhoria_de_um_
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2010_diogo_alves_miranda_proposta_de_melhoria_de_um_processo_de_manutencao
-publication_index: 302
+publication_index: 307
 publication_group: specialization
 publication_type: specialization
 schema_type: Thesis

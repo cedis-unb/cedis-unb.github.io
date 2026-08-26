@@ -8,7 +8,7 @@ translationKey: publication_2026_cristiane_soares_ramos_gamifying_science_commun
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2026_cristiane_soares_ramos_gamifying_science_communication_an_experience_report_of_jornad
-publication_index: 317
+publication_index: 322
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle

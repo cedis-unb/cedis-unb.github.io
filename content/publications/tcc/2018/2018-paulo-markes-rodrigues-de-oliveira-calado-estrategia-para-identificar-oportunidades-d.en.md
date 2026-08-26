@@ -7,7 +7,7 @@ translationKey: publication_2018_paulo_markes_rodrigues_de_oliveira_calado_estra
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2018_paulo_markes_rodrigues_de_oliveira_calado_estrategia_para_identificar_oportunidades_d
-publication_index: 154
+publication_index: 159
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

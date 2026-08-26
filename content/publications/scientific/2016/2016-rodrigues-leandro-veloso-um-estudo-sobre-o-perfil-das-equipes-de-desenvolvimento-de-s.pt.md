@@ -7,7 +7,7 @@ translationKey: publication_2016_rodrigues_leandro_veloso_um_estudo_sobre_o_perf
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2016_rodrigues_leandro_veloso_um_estudo_sobre_o_perfil_das_equipes_de_desenvolvimento_de_s
-publication_index: 179
+publication_index: 184
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle

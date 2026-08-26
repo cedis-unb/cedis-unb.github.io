@@ -8,7 +8,7 @@ translationKey: publication_2016_freitas_s_a_a_gamificacao_e_avaliacao_do_engaja
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2016_freitas_s_a_a_gamificacao_e_avaliacao_do_engajamento_dos_estudantes_em_uma_disciplina
-publication_index: 172
+publication_index: 177
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle

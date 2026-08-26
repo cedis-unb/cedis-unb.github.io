@@ -8,7 +8,7 @@ translationKey: publication_2016_cristovao_de_lima_frinhani_aplicacao_de_process
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2016_cristovao_de_lima_frinhani_aplicacao_de_processamento_de_linguagem_natural_uma_ferram
-publication_index: 182
+publication_index: 187
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis
@@ -17,8 +17,7 @@ authors:
 - Cristóvão de Lima Frinhani
 authors_structured:
 - name: Cristóvão de Lima Frinhani
-  id: lima_victor_cotrim_de
-  url: /people/lima_victor_cotrim_de
+  id: cristovao_de_lima_frinhani
 tags:
 - nlp
 - ai

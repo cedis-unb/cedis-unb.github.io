@@ -8,7 +8,7 @@ translationKey: publication_2024_ricardo_ajax_dias_kosloski_inclusao_participati
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2024_ricardo_ajax_dias_kosloski_inclusao_participativa_de_pessoas_idosas_usando_e_gov_no_b
-publication_index: 35
+publication_index: 40
 publication_group: scientific
 publication_type: article
 schema_type: ScholarlyArticle

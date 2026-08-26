@@ -7,7 +7,7 @@ translationKey: publication_2023_assis_l_s_gamification_in_organizational_contex
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2023_assis_l_s_gamification_in_organizational_contexts_a_systematic_literature_review
-publication_index: 48
+publication_index: 53
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle

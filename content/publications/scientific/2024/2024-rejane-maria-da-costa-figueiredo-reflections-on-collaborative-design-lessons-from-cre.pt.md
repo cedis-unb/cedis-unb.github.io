@@ -8,7 +8,7 @@ translationKey: publication_2024_rejane_maria_da_costa_figueiredo_reflections_on
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2024_rejane_maria_da_costa_figueiredo_reflections_on_collaborative_design_lessons_from_cre
-publication_index: 34
+publication_index: 39
 publication_group: scientific
 publication_type: workshop
 schema_type: ScholarlyArticle
@@ -29,23 +29,15 @@ authors_structured:
   url: /people/rejane_maria_da_costa_figueiredo
 - name: PEDROSA, G. V.
 - name: GARDENGHI, J. L. C.
-  id: gardenghi_j_l_c
-  url: /people/gardenghi_j_l_c
 - name: Elaine VENSON
   id: elaine_venson
   url: /people/elaine_venson
 - name: JUDICE, M.
-  id: judice_m
-  url: /people/judice_m
 - name: JUDICE, A. C. B.
-  id: judice_a_c_b
-  url: /people/judice_a_c_b
 - name: COSTA, F. F.
-  id: costa_f_f
-  url: /people/costa_f_f
 - name: Wander Cleber Maria Pereira da Silva
-  id: silva_rodrigo_m_s_da
-  url: /people/silva_rodrigo_m_s_da
+  id: wander_cleber_maria_pereira_da_silva
+  url: /people/wander_cleber_maria_pereira_da_silva
 - name: MARSICANO, GEORGE
   id: george_marsicano
   url: /people/george_marsicano

@@ -8,7 +8,7 @@ translationKey: publication_2020_batista_a_c_d_teamwork_quality_and_team_success
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2020_batista_a_c_d_teamwork_quality_and_team_success_in_software_development_a_non_exact_r
-publication_index: 119
+publication_index: 124
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle
@@ -21,15 +21,9 @@ authors:
 - MARSICANO, G. C.
 authors_structured:
 - name: BATISTA, A. C. D.
-  id: batista_a_c_d
-  url: /people/batista_a_c_d
 - name: SOUZA, R. M.
-  id: souza_m
-  url: /people/souza_m
 - name: SILVA, F. Q. B.
 - name: MELO, L. A.
-  id: melo_alba_c_m_a
-  url: /people/melo_alba_c_m_a
 - name: MARSICANO, G. C.
 tags:
 - teamwork

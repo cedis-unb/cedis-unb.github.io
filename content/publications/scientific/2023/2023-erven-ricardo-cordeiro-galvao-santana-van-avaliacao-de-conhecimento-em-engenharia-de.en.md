@@ -7,7 +7,7 @@ translationKey: publication_2023_erven_ricardo_cordeiro_galvao_santana_van_avali
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2023_erven_ricardo_cordeiro_galvao_santana_van_avaliacao_de_conhecimento_em_engenharia_de
-publication_index: 78
+publication_index: 83
 publication_group: scientific
 publication_type: workshop
 schema_type: ScholarlyArticle
@@ -23,8 +23,6 @@ authors_structured:
   id: erven_ricardo_cordeiro_galvao_santana_van
   url: /people/erven_ricardo_cordeiro_galvao_santana_van
 - name: DIAS, POLLYANNA C. O.
-  id: dias_pollyanna_c_o
-  url: /people/dias_pollyanna_c_o
 - name: JUBÉ, DEMÉTRIUS DE ALMEIDA
   id: jube_demetrius_de_almeida
   url: /people/jube_demetrius_de_almeida

@@ -7,7 +7,7 @@ translationKey: publication_2016_ludimila_da_bela_cruz_ferramenta_de_apoio_a_con
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2016_ludimila_da_bela_cruz_ferramenta_de_apoio_a_construcao_de_projetos_de_gamificacao
-publication_index: 185
+publication_index: 190
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

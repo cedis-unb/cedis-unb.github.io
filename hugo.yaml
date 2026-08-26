@@ -640,3 +640,17 @@ module:
     # como parte da migração para Tailwind 4.
     extended: true
     min: "0.161.0"
+
+# Whitelist explícita de executáveis chamados pelo pipeline de asset (Hugo
+# 0.165+ tornou o default mais restrito e passou a bloquear tailwindcss/git).
+# Inclui todos os defaults conhecidos + tailwindcss (Tailwind 4) + git (para
+# enableGitInfo). Não afeta o CI, que já rodava com defaults mais permissivos.
+security:
+  exec:
+    allow:
+      - '^tailwindcss$'
+      - '^(dart-)?sass$'
+      - '^go$'
+      - '^git$'
+      - '^node$'
+      - '^postcss$'

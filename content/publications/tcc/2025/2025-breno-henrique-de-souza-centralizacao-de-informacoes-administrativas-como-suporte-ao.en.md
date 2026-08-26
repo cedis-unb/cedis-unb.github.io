@@ -8,7 +8,7 @@ translationKey: publication_2025_breno_henrique_de_souza_centralizacao_de_inform
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2025_breno_henrique_de_souza_centralizacao_de_informacoes_administrativas_como_suporte_ao
-publication_index: 10
+publication_index: 15
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis
@@ -18,8 +18,7 @@ authors:
 - Giulia Domingues de Alcantara
 authors_structured:
 - name: Breno Henrique de Souza
-  id: souza_renan_l_l_de
-  url: /people/souza_renan_l_l_de
+  id: breno_henrique_de_souza
 - name: Giulia Domingues de Alcantara
   id: giulia_domingues_de_alcantara
 tags:

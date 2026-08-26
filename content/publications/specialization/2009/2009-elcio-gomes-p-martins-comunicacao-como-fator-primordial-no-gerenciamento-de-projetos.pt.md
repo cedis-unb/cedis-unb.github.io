@@ -7,7 +7,7 @@ translationKey: publication_2009_elcio_gomes_p_martins_comunicacao_como_fator_pr
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2009_elcio_gomes_p_martins_comunicacao_como_fator_primordial_no_gerenciamento_de_projetos
-publication_index: 295
+publication_index: 300
 publication_group: specialization
 publication_type: specialization
 schema_type: Thesis

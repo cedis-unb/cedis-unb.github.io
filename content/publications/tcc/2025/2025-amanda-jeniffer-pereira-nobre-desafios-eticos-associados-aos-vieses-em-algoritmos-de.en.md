@@ -8,7 +8,7 @@ translationKey: publication_2025_amanda_jeniffer_pereira_nobre_desafios_eticos_a
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2025_amanda_jeniffer_pereira_nobre_desafios_eticos_associados_aos_vieses_em_algoritmos_de
-publication_index: 12
+publication_index: 17
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

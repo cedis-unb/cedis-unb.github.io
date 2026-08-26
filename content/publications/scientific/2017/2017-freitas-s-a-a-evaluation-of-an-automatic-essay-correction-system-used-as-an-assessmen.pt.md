@@ -7,7 +7,7 @@ translationKey: publication_2017_freitas_s_a_a_evaluation_of_an_automatic_essay_
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2017_freitas_s_a_a_evaluation_of_an_automatic_essay_correction_system_used_as_an_assessmen
-publication_index: 162
+publication_index: 167
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle
@@ -23,11 +23,7 @@ authors_structured:
 - name: CANEDO, E. D.
 - name: FRINHANI, C. L.
 - name: FERNANDES, M. V.
-  id: fernandes_m_v
-  url: /people/fernandes_m_v
 - name: SILVA, M. C.
-  id: silva_m_c
-  url: /people/silva_m_c
 tags:
 - machine_learning
 - nlp

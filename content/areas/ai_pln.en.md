@@ -77,7 +77,10 @@ Professor and researcher in the field of Artificial Intelligence (AI) and Natura
 </div>
 
 ### {{< i18n "area_apps" >}}
-- FREITAS, S. A. A.; SILVA, A. C.; SILVA; M. Fl; BATISTA, R. C.; Contextus - AI, NLP, and ML platform for Scientific Analysis. 2024.
+- FREITAS, S. A. A.; SILVA, A. C.; SILVA; M. Fl; BATISTA, R. C.; Contextus - AI, NLP, and ML platform for Scientific Analysis. 2024. (INPI registration BR512026000889-1, 2026)
+- LUSTOSA JUNIOR, A. C. M.; OLIVEIRA, P. H. M.; MARSICANO, G. Chatbot as a Support Tool for Requirements Engineering. 2025. (INPI registration BR512026003514-7, 2026)
+- ALCANTARA, G. D.; SOUZA, B. H.; MARSICANO, G. Chatbot for Administrative Inquiries at FCTE/UnB. 2025. (INPI registration BR512026003515-5, 2026)
+- ABRITTA, M. E. D. S.; BERNA, S. C.; MARSICANO, G. Machine Learning Application for Non-Invasive Prediction of Euploidy in Human Embryos. 2025. (INPI registration BR512026003650-0, 2026)
 - FREITAS, S. A. A.; PEREIRA, J. G. L. ; QUARESMA, P. ; RODRIGUES, I. P. Engine for document retrieval of PGR opinions on the web, integrating morpho-syntactic knowledge of Portuguese. 1998.
 
 ## {{< i18n "area_contact" >}}

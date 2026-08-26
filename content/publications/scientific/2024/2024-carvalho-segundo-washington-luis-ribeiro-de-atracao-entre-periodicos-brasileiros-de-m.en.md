@@ -8,7 +8,7 @@ translationKey: publication_2024_carvalho_segundo_washington_luis_ribeiro_de_atr
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2024_carvalho_segundo_washington_luis_ribeiro_de_atracao_entre_periodicos_brasileiros_de_m
-publication_index: 38
+publication_index: 43
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle
@@ -23,8 +23,6 @@ authors_structured:
   id: washington_luis_ribeiro_de_carvalho_segundo
   url: /people/washington_luis_ribeiro_de_carvalho_segundo
 - name: CANTO, FABIO LORENSI DO
-  id: canto_fabio_lorensi_do
-  url: /people/canto_fabio_lorensi_do
 - name: PINTO, ADILSON LUIZ
   id: pinto_adilson_luiz
   url: /people/pinto_adilson_luiz

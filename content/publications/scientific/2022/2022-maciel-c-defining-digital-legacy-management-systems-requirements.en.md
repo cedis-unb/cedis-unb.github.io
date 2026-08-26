@@ -7,7 +7,7 @@ translationKey: publication_2022_maciel_c_defining_digital_legacy_management_sys
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2022_maciel_c_defining_digital_legacy_management_systems_requirements
-publication_index: 81
+publication_index: 86
 publication_group: scientific
 publication_type: article
 schema_type: ScholarlyArticle
@@ -19,15 +19,9 @@ authors:
 - YAMAUCHI, E. A.
 authors_structured:
 - name: MACIEL, C.
-  id: maciel_c
-  url: /people/maciel_c
 - name: MENDES, F. F.
 - name: PEREIRA, V. C.
-  id: pereira_d_v
-  url: /people/pereira_d_v
 - name: YAMAUCHI, E. A.
-  id: yamauchi_e_a
-  url: /people/yamauchi_e_a
 tags:
 - software_architecture
 advisors: []

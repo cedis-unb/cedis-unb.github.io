@@ -7,7 +7,7 @@ translationKey: publication_2023_joao_vitor_de_moura_rosa_silva_sami_sistema_par
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2023_joao_vitor_de_moura_rosa_silva_sami_sistema_para_analise_de_metricas_de_indicadores_d
-publication_index: 183
+publication_index: 188
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

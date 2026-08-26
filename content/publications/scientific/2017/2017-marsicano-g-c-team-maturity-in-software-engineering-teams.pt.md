@@ -7,7 +7,7 @@ translationKey: publication_2017_marsicano_g_c_team_maturity_in_software_enginee
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2017_marsicano_g_c_team_maturity_in_software_engineering_teams
-publication_index: 164
+publication_index: 169
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle
@@ -20,12 +20,8 @@ authors:
 authors_structured:
 - name: MARSICANO, G. C.
 - name: Pereira, D.V.
-  id: pereira_d_v
-  url: /people/pereira_d_v
 - name: SILVA, F. Q. B.
 - name: França, C.
-  id: franca_c
-  url: /people/franca_c
 tags:
 - teamwork
 advisors: []

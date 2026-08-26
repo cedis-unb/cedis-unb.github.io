@@ -7,7 +7,7 @@ translationKey: publication_2023_marcelo_victor_de_sousa_silva_formsgeo_um_aplic
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2023_marcelo_victor_de_sousa_silva_formsgeo_um_aplicativo_para_pesquisas_sociais_com_geolo
-publication_index: 73
+publication_index: 78
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

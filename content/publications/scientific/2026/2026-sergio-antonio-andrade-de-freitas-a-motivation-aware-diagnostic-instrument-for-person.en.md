@@ -8,7 +8,7 @@ translationKey: publication_2026_sergio_antonio_andrade_de_freitas_a_motivation_
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2026_sergio_antonio_andrade_de_freitas_a_motivation_aware_diagnostic_instrument_for_person
-publication_index: 328
+publication_index: 333
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle
@@ -23,11 +23,9 @@ authors_structured:
   id: sergio_freitas
   url: /people/sergio_freitas
 - name: Daniel Rodrigues da Rocha
-  id: rocha_johan_m_g_da
-  url: /people/rocha_johan_m_g_da
+  id: daniel_rodrigues_da_rocha
 - name: Davi Rodrigues da Rocha
-  id: rocha_johan_m_g_da
-  url: /people/rocha_johan_m_g_da
+  id: davi_rodrigues_da_rocha
 - name: Mylena Angélica Silva Farias
   id: mylena_faria
   url: /people/mylena_faria

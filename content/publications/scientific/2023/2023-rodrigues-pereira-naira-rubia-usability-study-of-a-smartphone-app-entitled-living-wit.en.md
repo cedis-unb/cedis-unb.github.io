@@ -7,7 +7,7 @@ translationKey: publication_2023_rodrigues_pereira_naira_rubia_usability_study_o
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2023_rodrigues_pereira_naira_rubia_usability_study_of_a_smartphone_app_entitled_living_wit
-publication_index: 47
+publication_index: 52
 publication_group: scientific
 publication_type: article
 schema_type: ScholarlyArticle

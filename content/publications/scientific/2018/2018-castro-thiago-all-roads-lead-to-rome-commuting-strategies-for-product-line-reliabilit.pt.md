@@ -8,7 +8,7 @@ translationKey: publication_2018_castro_thiago_all_roads_lead_to_rome_commuting_
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2018_castro_thiago_all_roads_lead_to_rome_commuting_strategies_for_product_line_reliabilit
-publication_index: 139
+publication_index: 144
 publication_group: scientific
 publication_type: article
 schema_type: ScholarlyArticle

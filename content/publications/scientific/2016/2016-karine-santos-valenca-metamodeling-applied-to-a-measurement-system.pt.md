@@ -7,7 +7,7 @@ translationKey: publication_2016_karine_santos_valenca_metamodeling_applied_to_a
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2016_karine_santos_valenca_metamodeling_applied_to_a_measurement_system
-publication_index: 322
+publication_index: 327
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle

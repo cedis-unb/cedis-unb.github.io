@@ -8,7 +8,7 @@ translationKey: publication_2018_calazans_angelica_requisitos_de_qualidade_de_us
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2018_calazans_angelica_requisitos_de_qualidade_de_usabilidade_analise_da_utilizacao_em_sis
-publication_index: 143
+publication_index: 148
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle

@@ -8,7 +8,7 @@ translationKey: publication_2007_hilario_seibel_junior_recuperacao_de_informacoe
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2007_hilario_seibel_junior_recuperacao_de_informacoes_relevantes_em_documentos_digitais_ba
-publication_index: 217
+publication_index: 222
 publication_group: thesis
 publication_type: dissertation
 schema_type: Thesis

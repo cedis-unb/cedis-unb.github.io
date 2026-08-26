@@ -7,7 +7,7 @@ translationKey: publication_2023_lucas_ganda_carvalho_predicao_de_tempo_de_execu
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2023_lucas_ganda_carvalho_predicao_de_tempo_de_execucao_de_codigo_em_funcoes_lambda
-publication_index: 61
+publication_index: 66
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

@@ -7,7 +7,7 @@ translationKey: publication_2005_sergio_antonio_andrade_de_freitas_interpretacao
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2005_sergio_antonio_andrade_de_freitas_interpretacao_automatizada_de_textos_processamento
-publication_index: 219
+publication_index: 224
 publication_group: thesis
 publication_type: phd
 schema_type: Thesis

@@ -8,7 +8,7 @@ translationKey: publication_2023_marsicano_george_digital_transformation_of_publ
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2023_marsicano_george_digital_transformation_of_public_services_from_the_perception_of_ict
-publication_index: 51
+publication_index: 56
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle

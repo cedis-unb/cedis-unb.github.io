@@ -7,7 +7,7 @@ translationKey: publication_2021_taylor_rodrigues_lopes_metodo_de_migracao_de_si
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2021_taylor_rodrigues_lopes_metodo_de_migracao_de_sistemas_monoliticos_legados_para_a_arqu
-publication_index: 112
+publication_index: 117
 publication_group: thesis
 publication_type: dissertation
 schema_type: Thesis

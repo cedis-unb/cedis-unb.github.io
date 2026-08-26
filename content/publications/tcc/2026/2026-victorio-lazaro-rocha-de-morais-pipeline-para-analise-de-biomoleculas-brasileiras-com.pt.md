@@ -8,7 +8,7 @@ translationKey: publication_2026_victorio_lazaro_rocha_de_morais_pipeline_para_a
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2026_victorio_lazaro_rocha_de_morais_pipeline_para_analise_de_biomoleculas_brasileiras_com
-publication_index: 4
+publication_index: 9
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

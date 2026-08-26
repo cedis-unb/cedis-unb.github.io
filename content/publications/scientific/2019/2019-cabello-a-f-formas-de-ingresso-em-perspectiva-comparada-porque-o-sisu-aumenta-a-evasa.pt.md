@@ -8,7 +8,7 @@ translationKey: publication_2019_cabello_a_f_formas_de_ingresso_em_perspectiva_c
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2019_cabello_a_f_formas_de_ingresso_em_perspectiva_comparada_porque_o_sisu_aumenta_a_evasa
-publication_index: 127
+publication_index: 132
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle
@@ -23,18 +23,10 @@ authors:
 authors_structured:
 - name: CABELLO, A. F.
 - name: FERREIRA, G. V.
-  id: ferreira_g_v
-  url: /people/ferreira_g_v
 - name: IMBROISI, D.
-  id: imbroisi_d
-  url: /people/imbroisi_d
 - name: ARRUDA, J. A.
-  id: arruda_j_a
-  url: /people/arruda_j_a
 - name: FREITAS, S. A. A.
 - name: ALVAREZ, G. A.
-  id: alvarez_g_a
-  url: /people/alvarez_g_a
 tags:
 - learning_analytics
 advisors: []

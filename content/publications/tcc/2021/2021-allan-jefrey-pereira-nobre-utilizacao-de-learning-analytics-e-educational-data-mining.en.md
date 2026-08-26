@@ -8,7 +8,7 @@ translationKey: publication_2021_allan_jefrey_pereira_nobre_utilizacao_de_learni
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2021_allan_jefrey_pereira_nobre_utilizacao_de_learning_analytics_e_educational_data_mining
-publication_index: 65
+publication_index: 70
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

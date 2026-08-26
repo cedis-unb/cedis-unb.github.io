@@ -7,7 +7,7 @@ translationKey: publication_2018_figueiredo_r_m_c_governanca_em_tecnologia_de_in
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2018_figueiredo_r_m_c_governanca_em_tecnologia_de_informacao_e_comunicacao_para_o_setor_pu
-publication_index: 137
+publication_index: 142
 publication_group: scientific
 publication_type: book
 schema_type: Book
@@ -19,8 +19,6 @@ authors:
 authors_structured:
 - name: FIGUEIREDO, R.M.C.
 - name: SANTOS, R.R.
-  id: santos_r_r
-  url: /people/santos_r_r
 - name: FREITAS, S. A. A.
 tags:
 - digital_transformation

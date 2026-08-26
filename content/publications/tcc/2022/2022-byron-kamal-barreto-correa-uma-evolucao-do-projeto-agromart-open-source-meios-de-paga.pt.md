@@ -8,7 +8,7 @@ translationKey: publication_2022_byron_kamal_barreto_correa_uma_evolucao_do_proj
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2022_byron_kamal_barreto_correa_uma_evolucao_do_projeto_agromart_open_source_meios_de_paga
-publication_index: 69
+publication_index: 74
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

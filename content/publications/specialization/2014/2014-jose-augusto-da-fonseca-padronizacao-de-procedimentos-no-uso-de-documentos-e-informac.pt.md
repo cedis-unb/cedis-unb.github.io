@@ -9,7 +9,7 @@ translationKey: publication_2014_jose_augusto_da_fonseca_padronizacao_de_procedi
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2014_jose_augusto_da_fonseca_padronizacao_de_procedimentos_no_uso_de_documentos_e_informac
-publication_index: 230
+publication_index: 235
 publication_group: specialization
 publication_type: specialization
 schema_type: Thesis

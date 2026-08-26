@@ -7,7 +7,7 @@ translationKey: publication_2025_canto_fabio_lorensi_do_rede_de_atracao_entre_pe
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2025_canto_fabio_lorensi_do_rede_de_atracao_entre_periodicos_brasileiros_de_ciencias_da_sa
-publication_index: 23
+publication_index: 28
 publication_group: scientific
 publication_type: article
 schema_type: ScholarlyArticle
@@ -19,8 +19,6 @@ authors:
 - SUNDFELD, Daniel
 authors_structured:
 - name: CANTO, FABIO LORENSI DO
-  id: canto_fabio_lorensi_do
-  url: /people/canto_fabio_lorensi_do
 - name: CARVALHO SEGUNDO, WASHINGTON LUÍS RIBEIRO DE
   id: washington_luis_ribeiro_de_carvalho_segundo
   url: /people/washington_luis_ribeiro_de_carvalho_segundo

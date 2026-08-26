@@ -7,7 +7,7 @@ translationKey: publication_2022_rafael_santos_teodosio_tudy_um_sistema_gamifica
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2022_rafael_santos_teodosio_tudy_um_sistema_gamificado_de_educacao_financeira
-publication_index: 97
+publication_index: 102
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

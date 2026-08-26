@@ -7,7 +7,7 @@ translationKey: publication_2015_maciel_cristiano_a_multi_agent_architecture_to_
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2015_maciel_cristiano_a_multi_agent_architecture_to_support_ubiquitous_applications_in_sma
-publication_index: 200
+publication_index: 205
 publication_group: scientific
 publication_type: book_section
 schema_type: Chapter
@@ -21,8 +21,6 @@ authors:
 authors_structured:
 - name: MACIEL, CRISTIANO
 - name: de Souza, Patricia Cristiane
-  id: de_souza_patricia_cristiane
-  url: /people/de_souza_patricia_cristiane
 - name: Viterbo, José
   id: viterbo_jose
   url: /people/viterbo_jose
@@ -30,8 +28,6 @@ authors_structured:
   id: fabiana_mendes
   url: /people/fabiana_mendes
 - name: El Fallah Seghrouchni, Amal
-  id: el_fallah_seghrouchni_amal
-  url: /people/el_fallah_seghrouchni_amal
 tags:
 - ai
 advisors: []

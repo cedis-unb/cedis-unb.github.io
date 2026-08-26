@@ -7,7 +7,7 @@ translationKey: publication_2018_martins_l_b_gestao_de_riscos_e_governanca_de_ti
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2018_martins_l_b_gestao_de_riscos_e_governanca_de_ti_aplicada_a_rede_de_comunicacao_govern
-publication_index: 157
+publication_index: 162
 publication_group: scientific
 publication_type: book_section
 schema_type: Chapter

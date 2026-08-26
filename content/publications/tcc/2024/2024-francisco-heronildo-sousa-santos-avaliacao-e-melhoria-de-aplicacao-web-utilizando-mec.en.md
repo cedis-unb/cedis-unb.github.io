@@ -7,7 +7,7 @@ translationKey: publication_2024_francisco_heronildo_sousa_santos_avaliacao_e_me
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2024_francisco_heronildo_sousa_santos_avaliacao_e_melhoria_de_aplicacao_web_utilizando_mec
-publication_index: 32
+publication_index: 37
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

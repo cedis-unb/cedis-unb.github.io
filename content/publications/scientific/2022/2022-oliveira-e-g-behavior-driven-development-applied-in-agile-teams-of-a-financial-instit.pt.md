@@ -7,7 +7,7 @@ translationKey: publication_2022_oliveira_e_g_behavior_driven_development_applie
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2022_oliveira_e_g_behavior_driven_development_applied_in_agile_teams_of_a_financial_instit
-publication_index: 87
+publication_index: 92
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle

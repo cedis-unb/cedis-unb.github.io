@@ -8,7 +8,7 @@ translationKey: publication_2015_loja_luiz_fernando_batista_a_concept_environmen
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2015_loja_luiz_fernando_batista_a_concept_environment_for_computer_based_augmentative_and
-publication_index: 189
+publication_index: 194
 publication_group: scientific
 publication_type: article
 schema_type: ScholarlyArticle

@@ -7,7 +7,7 @@ translationKey: publication_2011_einstein_oliveira_computacao_em_nuvem_reducao_d
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2011_einstein_oliveira_computacao_em_nuvem_reducao_de_custos_e_seguranca_da_informacao
-publication_index: 238
+publication_index: 243
 publication_group: specialization
 publication_type: specialization
 schema_type: Thesis

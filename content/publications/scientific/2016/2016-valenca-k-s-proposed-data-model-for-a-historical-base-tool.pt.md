@@ -7,7 +7,7 @@ translationKey: publication_2016_valenca_k_s_proposed_data_model_for_a_historica
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2016_valenca_k_s_proposed_data_model_for_a_historical_base_tool
-publication_index: 180
+publication_index: 185
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle

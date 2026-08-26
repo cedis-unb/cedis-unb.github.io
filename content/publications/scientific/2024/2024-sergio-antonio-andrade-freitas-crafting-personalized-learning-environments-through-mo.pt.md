@@ -7,7 +7,7 @@ translationKey: publication_2024_sergio_antonio_andrade_freitas_crafting_persona
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2024_sergio_antonio_andrade_freitas_crafting_personalized_learning_environments_through_mo
-publication_index: 42
+publication_index: 47
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle

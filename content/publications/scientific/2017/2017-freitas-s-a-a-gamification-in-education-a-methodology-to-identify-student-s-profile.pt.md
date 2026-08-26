@@ -7,7 +7,7 @@ translationKey: publication_2017_freitas_s_a_a_gamification_in_education_a_metho
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2017_freitas_s_a_a_gamification_in_education_a_methodology_to_identify_student_s_profile
-publication_index: 163
+publication_index: 168
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle
@@ -26,8 +26,6 @@ authors_structured:
 - name: CALADO, PAULO M. R. O.
   id: paulo_markes_rodrigues_de_oliveira_calado
 - name: LIMA, THIAGO S.
-  id: lima_thiago_s
-  url: /people/lima_thiago_s
 - name: DIAS CANEDO, EDNA
   id: edna_canedo
   url: /people/edna_canedo

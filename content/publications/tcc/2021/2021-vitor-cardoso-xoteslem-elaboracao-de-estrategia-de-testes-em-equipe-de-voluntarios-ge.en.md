@@ -8,7 +8,7 @@ translationKey: publication_2021_vitor_cardoso_xoteslem_elaboracao_de_estrategia
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2021_vitor_cardoso_xoteslem_elaboracao_de_estrategia_de_testes_em_equipe_de_voluntarios_ge
-publication_index: 100
+publication_index: 105
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

@@ -8,7 +8,7 @@ translationKey: publication_2024_eber_junio_borges_moreira_a_cp_sat_approach_for
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2024_eber_junio_borges_moreira_a_cp_sat_approach_for_academic_resource_timetabling_in_high
-publication_index: 40
+publication_index: 45
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle

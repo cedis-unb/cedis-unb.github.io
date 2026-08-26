@@ -7,7 +7,7 @@ translationKey: publication_2014_vinicius_maia_de_brito_proposta_de_um_conjunto_
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2014_vinicius_maia_de_brito_proposta_de_um_conjunto_de_competencias_para_o_product_owner
-publication_index: 275
+publication_index: 280
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

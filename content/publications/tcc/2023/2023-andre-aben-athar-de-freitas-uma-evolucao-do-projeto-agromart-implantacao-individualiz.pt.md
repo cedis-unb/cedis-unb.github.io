@@ -8,7 +8,7 @@ translationKey: publication_2023_andre_aben_athar_de_freitas_uma_evolucao_do_pro
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2023_andre_aben_athar_de_freitas_uma_evolucao_do_projeto_agromart_implantacao_individualiz
-publication_index: 74
+publication_index: 79
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

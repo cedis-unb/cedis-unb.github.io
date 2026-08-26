@@ -8,7 +8,7 @@ translationKey: publication_2017_dias_canedo_edna_analysis_of_the_teaching_learn
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2017_dias_canedo_edna_analysis_of_the_teaching_learning_methodology_adopted_in_the_introdu
-publication_index: 161
+publication_index: 166
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle

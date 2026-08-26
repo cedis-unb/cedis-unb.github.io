@@ -8,7 +8,7 @@ translationKey: publication_2018_costa_oliveira_edgard_similarities_building_a_n
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2018_costa_oliveira_edgard_similarities_building_a_network_between_researchers_based_on_th
-publication_index: 145
+publication_index: 150
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle

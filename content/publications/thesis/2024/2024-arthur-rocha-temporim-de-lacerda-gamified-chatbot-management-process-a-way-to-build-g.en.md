@@ -7,7 +7,7 @@ translationKey: publication_2024_arthur_rocha_temporim_de_lacerda_gamified_chatb
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2024_arthur_rocha_temporim_de_lacerda_gamified_chatbot_management_process_a_way_to_build_g
-publication_index: 56
+publication_index: 61
 publication_group: thesis
 publication_type: dissertation
 schema_type: Thesis

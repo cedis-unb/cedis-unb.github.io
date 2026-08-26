@@ -8,7 +8,7 @@ translationKey: publication_2025_sundfeld_daniel_pa_star2_fast_optimal_multiple_
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2025_sundfeld_daniel_pa_star2_fast_optimal_multiple_sequence_alignment_for_asymmetric_mult
-publication_index: 24
+publication_index: 29
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle
@@ -25,8 +25,6 @@ authors_structured:
   id: teodoro_george
   url: /people/teodoro_george
 - name: Melo, Alba C. M. A.
-  id: melo_alba_c_m_a
-  url: /people/melo_alba_c_m_a
 tags:
 - hpc
 advisors: []

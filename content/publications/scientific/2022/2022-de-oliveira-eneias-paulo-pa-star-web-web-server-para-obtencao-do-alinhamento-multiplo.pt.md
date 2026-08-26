@@ -8,7 +8,7 @@ translationKey: publication_2022_de_oliveira_eneias_paulo_pa_star_web_web_server
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2022_de_oliveira_eneias_paulo_pa_star_web_web_server_para_obtencao_do_alinhamento_multiplo
-publication_index: 102
+publication_index: 107
 publication_group: scientific
 publication_type: workshop
 schema_type: ScholarlyArticle

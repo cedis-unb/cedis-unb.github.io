@@ -8,7 +8,7 @@ translationKey: publication_2022_gabriel_de_jesus_carvalho_ia_qvt_ferramenta_par
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2022_gabriel_de_jesus_carvalho_ia_qvt_ferramenta_para_coleta_e_tratamento_de_dados_sobre_q
-publication_index: 67
+publication_index: 72
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

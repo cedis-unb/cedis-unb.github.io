@@ -8,7 +8,7 @@ translationKey: publication_2025_denniel_william_roriz_lima_explorando_a_gamific
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2025_denniel_william_roriz_lima_explorando_a_gamificacao_no_desenvolvimento_agil_de_softwa
-publication_index: 13
+publication_index: 18
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

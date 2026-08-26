@@ -8,7 +8,7 @@ translationKey: publication_2019_mendes_f_f_the_relationship_between_personality
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2019_mendes_f_f_the_relationship_between_personality_and_decision_making_a_systematic_lite
-publication_index: 126
+publication_index: 131
 publication_group: scientific
 publication_type: article
 schema_type: ScholarlyArticle

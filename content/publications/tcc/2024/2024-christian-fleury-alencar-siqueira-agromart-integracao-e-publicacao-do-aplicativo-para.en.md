@@ -7,7 +7,7 @@ translationKey: publication_2024_christian_fleury_alencar_siqueira_agromart_inte
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2024_christian_fleury_alencar_siqueira_agromart_integracao_e_publicacao_do_aplicativo_para
-publication_index: 27
+publication_index: 32
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

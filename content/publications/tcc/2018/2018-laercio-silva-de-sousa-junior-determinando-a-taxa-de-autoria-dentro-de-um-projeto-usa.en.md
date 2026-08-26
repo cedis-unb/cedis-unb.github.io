@@ -7,7 +7,7 @@ translationKey: publication_2018_laercio_silva_de_sousa_junior_determinando_a_ta
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2018_laercio_silva_de_sousa_junior_determinando_a_taxa_de_autoria_dentro_de_um_projeto_usa
-publication_index: 122
+publication_index: 127
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

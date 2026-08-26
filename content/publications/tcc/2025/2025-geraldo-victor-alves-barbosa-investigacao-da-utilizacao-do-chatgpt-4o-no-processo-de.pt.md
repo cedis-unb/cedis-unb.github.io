@@ -8,7 +8,7 @@ translationKey: publication_2025_geraldo_victor_alves_barbosa_investigacao_da_ut
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2025_geraldo_victor_alves_barbosa_investigacao_da_utilizacao_do_chatgpt_4o_no_processo_de
-publication_index: 19
+publication_index: 24
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

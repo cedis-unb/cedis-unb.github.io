@@ -8,7 +8,7 @@ translationKey: publication_2019_james_taylor_faria_chaves_service_oriented_arch
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2019_james_taylor_faria_chaves_service_oriented_architecture_soa_agile_development_methods
-publication_index: 132
+publication_index: 137
 publication_group: thesis
 publication_type: dissertation
 schema_type: Thesis

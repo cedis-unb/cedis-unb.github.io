@@ -8,7 +8,7 @@ translationKey: publication_2023_rocha_larissa_investigating_the_perceived_impac
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2023_rocha_larissa_investigating_the_perceived_impact_of_maternity_on_software_engineering
-publication_index: 52
+publication_index: 57
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle

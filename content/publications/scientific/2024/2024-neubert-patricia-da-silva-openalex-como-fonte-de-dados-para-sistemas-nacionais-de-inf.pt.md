@@ -8,7 +8,7 @@ translationKey: publication_2024_neubert_patricia_da_silva_openalex_como_fonte_d
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2024_neubert_patricia_da_silva_openalex_como_fonte_de_dados_para_sistemas_nacionais_de_inf
-publication_index: 37
+publication_index: 42
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle
@@ -24,8 +24,6 @@ authors_structured:
   id: neubert_patricia_da_silva
   url: /people/neubert_patricia_da_silva
 - name: CANTO, FÁBIOLORENSI DO
-  id: canto_fabio_lorensi_do
-  url: /people/canto_fabio_lorensi_do
 - name: PINTO, ADILSON LUIZ
   id: pinto_adilson_luiz
   url: /people/pinto_adilson_luiz
