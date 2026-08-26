@@ -4,7 +4,7 @@ date: 2024-07-01T11:10:36+08:00
 draft: false
 weight: 500
 language: pt
-featured_image: '../assets/images/posts/mylena at ICCSA24.png'
+featured_image: '../assets/images/posts/mylena at ICCSA24.webp'
 summary: 'Artigo foi apresentado no 24 ICCSA em Hanoi no Vietna.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

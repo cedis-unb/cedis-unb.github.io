@@ -181,6 +181,15 @@
   }
 }
 
+/* content-visibility para blocos grandes/off-screen (perfil de pesquisador
+   tem seções colapsadas com dezenas de cards). Browser skipa layout/paint
+   até estar próximo do viewport — reduz LCP drasticamente em páginas grandes
+   como /people/sergio_freitas. Suporte: Chrome 85+, Firefox 125+, Safari 18+. */
+.cv-auto {
+  content-visibility: auto;
+  contain-intrinsic-size: 1px 800px;
+}
+
 /* Overrides globais + @media print (ver overrides.css). */
 @import "./overrides.css";
 

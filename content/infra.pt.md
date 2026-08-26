@@ -6,7 +6,7 @@ language: pt
 translationKey: infra
 layout: infrastructure
 description: Espacos, ambientes e recursos computacionais disponiveis para apoiar as atividades de pesquisa, reuniao e desenvolvimento do CEDIS.
-featured_image: "../assets/images/pages/conteiner-cedis.png"
+featured_image: "../assets/images/pages/conteiner-cedis.webp"
 eyebrow: "Espacos e recursos"
 ---
 O CEDIS conta com dois espaços para execução de sua atividade:

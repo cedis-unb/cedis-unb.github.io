@@ -4,7 +4,7 @@ date: 2024-08-27T11:10:36+08:00
 draft: false
 weight: 500
 language: pt
-featured_image: '../assets/images/posts/CEDIS at RNP24.png'
+featured_image: '../assets/images/posts/CEDIS at RNP24.webp'
 summary: 'Prof. Daniel Sundfeld apresentou o projeto Laguna no Fórum RNP 2024.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

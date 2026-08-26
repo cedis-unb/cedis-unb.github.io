@@ -4,7 +4,7 @@ date: 2025-08-28T08:00:00-03:00
 draft: true
 weight: 500
 language: en
-featured_image: "../assets/images/posts/troféu.png"
+featured_image: "../assets/images/posts/troféu.webp"
 summary: 'The project “Alvorecer Feudal,” by professor Sergio Freitas, receives an Honorable Mention at UnB’s Annual Undergraduate Teaching Innovation Award.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

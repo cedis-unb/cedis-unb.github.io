@@ -4,7 +4,7 @@ date: 2026-07-20T09:00:00-03:00
 draft: false
 language: pt
 description: "Compromissos de acessibilidade digital do site do CEDIS: padrões seguidos, recursos disponíveis e canal para reportar barreiras."
-featured_image: "../assets/images/pages/media-CEDIS.png"
+featured_image: "../assets/images/pages/media-CEDIS.webp"
 eyebrow: "Compromisso com WCAG"
 translationKey: accessibility
 ---

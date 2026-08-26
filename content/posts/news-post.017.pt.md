@@ -4,7 +4,7 @@ date: 2025-08-28T08:00:00-03:00
 draft: true
 weight: 500
 language: pt
-featured_image: "../assets/images/posts/troféu.png"
+featured_image: "../assets/images/posts/troféu.webp"
 summary: 'O projeto "Alvorecer Feudal", do professor Sergio Freitas, recebe menção honrosa no Prêmio Anual de Inovação no Ensino de Graduação da UnB.'
 author: CEDIS
 authorimage: ../assets/images/global/author.webp

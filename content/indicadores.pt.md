@@ -5,7 +5,7 @@ draft: false
 language: pt
 layout: indicators
 description: "Números-síntese do CEDIS: pesquisadores, projetos, produtos, publicações, defesas orientadas e registros de software."
-featured_image: "../assets/images/pages/media-CEDIS.png"
+featured_image: "../assets/images/pages/media-CEDIS.webp"
 eyebrow: "O CEDIS em números"
 translationKey: indicadores
 ---

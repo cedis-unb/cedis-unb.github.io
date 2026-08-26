@@ -6,6 +6,6 @@ language: pt
 translationKey: join
 layout: join
 description: "Trilhas de entrada para pesquisa, orientação e colaboração no CEDIS/UnB."
-featured_image: "../assets/images/pages/media-CEDIS.png"
+featured_image: "../assets/images/pages/media-CEDIS.webp"
 eyebrow: "Portas de entrada"
 ---
