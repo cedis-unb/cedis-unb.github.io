@@ -13,7 +13,7 @@ responsible:
 - george_marsicano
 project: project_software_bem
 publications:
-- publication_2026_v_s_cabral_certificado_de_registro_de_programa_de_computador_aplicativo_eu_me_protejo
+- publication_2026_george_marsicano_correa_certificado_de_registro_de_programa_de_computador_aplicativo
 weight: 30
 featured_image: "../assets/images/featured/projeto_Software_Bem.png"
 summary: Gamified mobile application for children ages 4 to 10, aligned with the Eu Me Protejo project's booklets, supporting self-protection and the prevention of child sexual abuse. Computer program registration granted by INPI in 2026.
@@ -57,6 +57,10 @@ The application context is CSA prevention, a sensitive and complex topic with la
 
 ## Academic Linkage
 
-- V. S. Cabral (product development)
+- Victor de Souza Cabral (product development)
+- Nelzimar Maria Batista da Costa Ribeiro (co-author of the registration)
+- Patricia Saldanha Marinho de Almeida (co-author of the registration)
+- Thaís Garofa Arouche da Silva (co-author of the registration)
 - Prof. {{< link-interno "/people/george_marsicano" "George Marsicano Corrêa" >}} (academic supervision and guidance)
 - {{< link-interno "/projects/software_bem" "Software for Good" >}} (related institutional line)
+- Rights holder: Fundação Universidade de Brasília (UnB)

@@ -13,7 +13,7 @@ areas:
 responsible:
 - george_marsicano
 publications:
-- publication_2026_maria_eduarda_d_santos_abritta_f_certificado_de_registro_de_programa_de_computador_ap
+- publication_2026_george_marsicano_correa_certificado_de_registro_de_programa_de_computador_aplicacao_d
 weight: 35
 featured_image: "../assets/images/featured/area_IA.webp"
 summary: Machine learning application for the non-invasive prediction of euploidy in human embryos based on morphokinetic data. Computer program registration granted by INPI in 2026.
@@ -54,6 +54,7 @@ Incorporation of new predictive models (including regression for continuous eupl
 
 ## Academic Linkage
 
-- Maria Eduarda D Santos Abritta F (product development)
-- Sabrina Caldas Berna (product development)
+- Maria Eduarda dos Santos Abritta Ferreira (product development)
+- Sabrina Caldas Berno (product development)
 - Prof. {{< link-interno "/people/george_marsicano" "George Marsicano Corrêa" >}} (academic supervision and guidance)
+- Rights holder: Fundação Universidade de Brasília (UnB)

@@ -13,7 +13,7 @@ areas:
 responsible:
 - george_marsicano
 publications:
-- publication_2026_a_c_m_lustosa_junior_certificado_de_registro_de_programa_de_computador_chatbot_como_f
+- publication_2026_fause_carlos_mascarenhas_lustosa_junior_certificado_de_registro_de_programa_de_comput
 weight: 32
 featured_image: "../assets/images/featured/projeto_SuperR.png"
 summary: 2025 technological product proposing a chatbot as a support tool for Requirements Engineering, with computer program registration granted by INPI in 2026.
@@ -51,7 +51,8 @@ Planned evolution includes voice input and output, database persistence, integra
 
 ## Academic Linkage
 
-- A. C. M. Lustosa Junior (product development)
-- P. H. M. Oliveira (product development)
+- Fause Carlos Mascarenhas Lustosa Junior (product development)
+- Pedro Henrique Muniz de Oliveira (product development)
 - Prof. {{< link-interno "/people/george_marsicano" "George Marsicano Corrêa" >}} (academic supervision and guidance)
 - {{< link-interno "/projects/super_r" "Super-R" >}} (origin project)
+- Rights holder: Fundação Universidade de Brasília (UnB)

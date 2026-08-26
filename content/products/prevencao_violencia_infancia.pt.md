@@ -14,7 +14,7 @@ responsible:
 - george_marsicano
 project: project_software_bem
 publications:
-- publication_2026_g_m_rodrigues_certificado_de_registro_de_programa_de_computador_pro_vida_e_eu_me_prot
+- publication_2026_gabriel_marcolino_rodrigues_certificado_de_registro_de_programa_de_computador_pro_vid
 weight: 31
 featured_image: "../assets/images/featured/projeto_Software_Bem.png"
 summary: Aplicativo mobile gamificado e offline baseado no Manual de Boas Práticas do projeto "Pró-vida e Eu Me Protejo", para apoiar pais, tutores e educadores na prevenção da violência na infância. Registro de programa de computador concedido pelo INPI em 2026.
@@ -61,7 +61,11 @@ Publicação formal na Google Play com pipeline de release assinado e versionado
 
 ## Vinculação Acadêmica
 
-- G. M. Rodrigues (desenvolvimento do produto)
-- S. A. C. Oliveira (desenvolvimento do produto)
+- Gabriel Marcolino Rodrigues (desenvolvimento do produto)
+- Nelzimar Maria Batista da Costa Ribeiro (co-autora do registro)
+- Patricia Saldanha Marinho de Almeida (co-autora do registro)
+- Shaíne Aparecida Cardoso de Oliveira (desenvolvimento do produto)
+- Thaís Garofa Arouche da Silva (co-autora do registro)
 - Prof. {{< link-interno "/people/george_marsicano" "George Marsicano Corrêa" >}} (orientação e acompanhamento acadêmico)
 - {{< link-interno "/projects/software_bem" "Software para o Bem" >}} (linha institucional relacionada)
+- Titular: Fundação Universidade de Brasília (UnB)

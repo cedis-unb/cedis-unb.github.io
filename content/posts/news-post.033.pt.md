@@ -27,7 +27,7 @@ Brasília, 07 de julho de 2026
 
 O software **EuMeProtejo** (aplicativo "Eu Me Protejo") recebeu **certificado de registro de programa de computador** concedido pelo **Instituto Nacional da Propriedade Industrial (INPI)**, referente ao processo **BR512026005122-3**, publicado na **Revista da Propriedade Industrial (RPI) nº 2896, de 07 de julho de 2026**.
 
-O produto foi desenvolvido por **V. S. Cabral**, sob orientação do Prof. {{< link-interno "/people/george_marsicano" "George Marsicano Corrêa" >}}, associado ao {{< link-interno "/projects/software_bem" "programa Software para o Bem" >}}. Foi construído alinhado aos materiais educativos do projeto **Eu Me Protejo**, especialmente às suas duas principais cartilhas.
+O registro tem cinco autores: **Victor de Souza Cabral**, **Nelzimar Maria Batista da Costa Ribeiro**, **Patricia Saldanha Marinho de Almeida**, **Thaís Garofa Arouche da Silva** e o Prof. {{< link-interno "/people/george_marsicano" "George Marsicano Corrêa" >}}, associado ao {{< link-interno "/projects/software_bem" "programa Software para o Bem" >}}. Foi construído alinhado aos materiais educativos do projeto **Eu Me Protejo**, especialmente às suas duas principais cartilhas. O registro foi concedido tendo como titular a **Fundação Universidade de Brasília (UnB)**.
 
 O aplicativo mobile gamificado, voltado a crianças de **4 a 10 anos** com uso mediado por pais, responsáveis ou educadores, apoia a aprendizagem e a educação preventiva sobre autoproteção e prevenção do abuso sexual infantil (ASI). A solução foi construída a partir de pesquisa-ação com especialistas, com definição de requisitos e desenvolvimento em práticas de gamificação e linguagem simples, mantendo-se alinhada aos materiais validados do projeto.
 

@@ -13,7 +13,7 @@ responsible:
 - george_marsicano
 project: project_software_bem
 publications:
-- publication_2026_v_s_cabral_certificado_de_registro_de_programa_de_computador_aplicativo_eu_me_protejo
+- publication_2026_george_marsicano_correa_certificado_de_registro_de_programa_de_computador_aplicativo
 weight: 30
 featured_image: "../assets/images/featured/projeto_Software_Bem.png"
 summary: Aplicativo mobile gamificado para crianças de 4 a 10 anos, alinhado às cartilhas do projeto Eu Me Protejo, para apoio à autoproteção e à prevenção do abuso sexual infantil. Registro de programa de computador concedido pelo INPI em 2026.
@@ -57,6 +57,10 @@ O contexto de aplicação é a prevenção do ASI, tema sensível e complexo, co
 
 ## Vinculação Acadêmica
 
-- V. S. Cabral (desenvolvimento do produto)
+- Victor de Souza Cabral (desenvolvimento do produto)
+- Nelzimar Maria Batista da Costa Ribeiro (co-autora do registro)
+- Patricia Saldanha Marinho de Almeida (co-autora do registro)
+- Thaís Garofa Arouche da Silva (co-autora do registro)
 - Prof. {{< link-interno "/people/george_marsicano" "George Marsicano Corrêa" >}} (orientação e acompanhamento acadêmico)
 - {{< link-interno "/projects/software_bem" "Software para o Bem" >}} (linha institucional relacionada)
+- Titular: Fundação Universidade de Brasília (UnB)

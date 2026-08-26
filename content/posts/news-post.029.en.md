@@ -27,7 +27,7 @@ Brasilia, May 19, 2026
 
 The **Requirements Engineering Chatbot** software received a **computer program registration certificate** granted by the **Brazilian National Institute of Industrial Property (INPI)** under process **BR512026003514-7**, published in the **Industrial Property Gazette (RPI) No. 2889, dated May 19, 2026**.
 
-The product was developed by **A. C. M. Lustosa Junior** and **P. H. M. Oliveira**, under the supervision of Prof. {{< link-interno "/people/george_marsicano" "George Marsicano Corrêa" >}}, within the {{< link-interno "/projects/super_r" "Super-R project" >}}.
+The product was developed by **Fause Carlos Mascarenhas Lustosa Junior** and **Pedro Henrique Muniz de Oliveira**, under the supervision of Prof. {{< link-interno "/people/george_marsicano" "George Marsicano Corrêa" >}}, within the {{< link-interno "/projects/super_r" "Super-R project" >}}. The registration was granted with **Fundação Universidade de Brasília (UnB)** as the rights holder.
 
 The software investigates how chatbots based on natural language models (LLMs) can support Requirements Engineering, conducting structured interviews with stakeholders to elicit, clarify, and formalize requirements. As output, it automatically generates user stories, allows validation and correction during the conversation, and exports the results as a spreadsheet (.xlsx).
 
