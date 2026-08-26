@@ -629,7 +629,7 @@ build:
   cachebusters:
     - source: '(postcss|tailwind)\.config\.(js|mjs|cjs)'
       target: '(css|styles|scss|sass)'
-    - source: 'assets/watching/hugo_stats\.json'
+    - source: 'hugo_stats\.json'
       target: 'css'
     - source: '(assets/.*\.(js|ts|jsx|tsx))'
       target: 'js'
@@ -649,8 +649,9 @@ security:
   exec:
     allow:
       - '^tailwindcss$'
-      - '^(dart-)?sass$'
+      - '^(dart-)?sass(-embedded)?$'
       - '^go$'
       - '^git$'
       - '^node$'
       - '^postcss$'
+      - '^babel$'

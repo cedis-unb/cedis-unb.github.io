@@ -17,6 +17,11 @@ yarn-error.log
 .netlify
 yarn-error.log
 
-# Python cache
+# Python cache & envs
 __pycache__/
 *.pyc
+.venv/
+.pytest_cache/
+
+# Link checker cache
+.lycheecache
