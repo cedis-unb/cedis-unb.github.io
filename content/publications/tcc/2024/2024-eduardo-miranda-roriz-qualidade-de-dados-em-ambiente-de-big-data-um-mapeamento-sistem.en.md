@@ -7,7 +7,7 @@ translationKey: publication_2024_eduardo_miranda_roriz_qualidade_de_dados_em_amb
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2024_eduardo_miranda_roriz_qualidade_de_dados_em_ambiente_de_big_data_um_mapeamento_sistem
-publication_index: 270
+publication_index: 268
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

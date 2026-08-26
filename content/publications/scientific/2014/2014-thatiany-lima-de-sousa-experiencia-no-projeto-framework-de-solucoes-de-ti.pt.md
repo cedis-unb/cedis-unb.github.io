@@ -7,7 +7,7 @@ translationKey: publication_2014_thatiany_lima_de_sousa_experiencia_no_projeto_f
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2014_thatiany_lima_de_sousa_experiencia_no_projeto_framework_de_solucoes_de_ti
-publication_index: 329
+publication_index: 327
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle

@@ -7,7 +7,7 @@ translationKey: publication_2007_maicon_dal_moro_simulacao_de_ids_para_ambientes
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2007_maicon_dal_moro_simulacao_de_ids_para_ambientes_de_automacao_industrial
-publication_index: 246
+publication_index: 244
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

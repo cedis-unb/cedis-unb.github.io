@@ -7,7 +7,7 @@ translationKey: publication_2026_luciano_ricardo_da_silva_junior_devdog_a_gamifi
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2026_luciano_ricardo_da_silva_junior_devdog_a_gamified_web_platform_for_teaching_code_smel
-publication_index: 321
+publication_index: 319
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle

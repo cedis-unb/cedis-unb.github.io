@@ -7,7 +7,7 @@ translationKey: publication_2000_eduardo_venturin_linhalis_avaliacao_da_seguranc
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2000_eduardo_venturin_linhalis_avaliacao_da_seguranca_interna_de_uma_rede_corporativa
-publication_index: 257
+publication_index: 255
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

@@ -8,7 +8,7 @@ translationKey: publication_2020_gustavo_vieira_braz_goncalves_desenvolvimento_d
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2020_gustavo_vieira_braz_goncalves_desenvolvimento_de_uma_solucao_de_software_para_gestao
-publication_index: 276
+publication_index: 274
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

@@ -7,7 +7,7 @@ translationKey: publication_2015_ramos_c_s_critical_issues_in_spi_programs_a_hol
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2015_ramos_c_s_critical_issues_in_spi_programs_a_holistic_view
-publication_index: 196
+publication_index: 195
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle

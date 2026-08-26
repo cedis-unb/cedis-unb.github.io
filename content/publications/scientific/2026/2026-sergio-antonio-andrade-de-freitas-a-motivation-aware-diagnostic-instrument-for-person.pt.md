@@ -8,7 +8,7 @@ translationKey: publication_2026_sergio_antonio_andrade_de_freitas_a_motivation_
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2026_sergio_antonio_andrade_de_freitas_a_motivation_aware_diagnostic_instrument_for_person
-publication_index: 333
+publication_index: 331
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle

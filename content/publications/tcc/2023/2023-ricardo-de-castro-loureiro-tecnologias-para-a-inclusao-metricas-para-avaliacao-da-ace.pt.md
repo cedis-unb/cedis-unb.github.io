@@ -8,7 +8,7 @@ translationKey: publication_2023_ricardo_de_castro_loureiro_tecnologias_para_a_i
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2023_ricardo_de_castro_loureiro_tecnologias_para_a_inclusao_metricas_para_avaliacao_da_ace
-publication_index: 230
+publication_index: 229
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

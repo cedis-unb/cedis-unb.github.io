@@ -8,7 +8,7 @@ translationKey: publication_2015_thatiany_lima_de_sousa_a_aplicacao_do_framework
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2015_thatiany_lima_de_sousa_a_aplicacao_do_framework_agil_scrum_em_um_processo_de_gestao_d
-publication_index: 328
+publication_index: 326
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle

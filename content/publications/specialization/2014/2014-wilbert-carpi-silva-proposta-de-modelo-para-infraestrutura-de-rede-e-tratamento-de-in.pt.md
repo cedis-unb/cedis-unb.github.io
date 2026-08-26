@@ -8,7 +8,7 @@ translationKey: publication_2014_wilbert_carpi_silva_proposta_de_modelo_para_inf
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2014_wilbert_carpi_silva_proposta_de_modelo_para_infraestrutura_de_rede_e_tratamento_de_in
-publication_index: 236
+publication_index: 235
 publication_group: specialization
 publication_type: specialization
 schema_type: Thesis

@@ -7,7 +7,7 @@ translationKey: publication_2009_pereira_f_s_c_evaluation_of_an_information_retr
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2009_pereira_f_s_c_evaluation_of_an_information_retrieval_model_based_in_anaphora_resoluti
-publication_index: 219
+publication_index: 218
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle

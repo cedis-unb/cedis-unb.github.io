@@ -8,7 +8,7 @@ translationKey: publication_2025_miguel_matos_costa_de_frias_barbosa_sistema_de_
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2025_miguel_matos_costa_de_frias_barbosa_sistema_de_apoio_a_analise_de_processos_organizac
-publication_index: 262
+publication_index: 260
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

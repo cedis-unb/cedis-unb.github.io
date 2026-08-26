@@ -8,7 +8,7 @@ translationKey: publication_2010_jairo_nobrega_martinez_barreiras_que_dificultam
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2010_jairo_nobrega_martinez_barreiras_que_dificultam_o_uso_de_processos_de_desenvolvimento
-publication_index: 296
+publication_index: 294
 publication_group: specialization
 publication_type: specialization
 schema_type: Thesis

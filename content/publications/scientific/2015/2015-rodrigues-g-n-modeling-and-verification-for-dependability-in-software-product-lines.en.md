@@ -7,7 +7,7 @@ translationKey: publication_2015_rodrigues_g_n_modeling_and_verification_for_dep
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2015_rodrigues_g_n_modeling_and_verification_for_dependability_in_software_product_lines
-publication_index: 198
+publication_index: 197
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle

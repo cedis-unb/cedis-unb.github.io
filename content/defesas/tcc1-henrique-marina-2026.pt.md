@@ -1,5 +1,5 @@
 ---
-title: "Random Forest e Suricata: separar sinal de ruído em alertas de intrusão"
+title: "Sistema de Detecção de Intrusões com Aprendizado de Máquina"
 date: 1970-01-01T00:00:00Z
 scheduled_date: 2026-07-04T00:00:00-03:00
 draft: false

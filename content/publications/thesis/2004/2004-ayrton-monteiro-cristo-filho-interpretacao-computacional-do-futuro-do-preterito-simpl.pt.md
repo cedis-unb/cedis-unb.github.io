@@ -8,7 +8,7 @@ translationKey: publication_2004_ayrton_monteiro_cristo_filho_interpretacao_comp
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2004_ayrton_monteiro_cristo_filho_interpretacao_computacional_do_futuro_do_preterito_simpl
-publication_index: 225
+publication_index: 224
 publication_group: thesis
 publication_type: dissertation
 schema_type: Thesis

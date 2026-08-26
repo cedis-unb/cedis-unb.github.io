@@ -1,5 +1,5 @@
 ---
-title: "IA generativa em sala de aula: um experimento controlado para medir o que ela ensina — e o que apaga"
+title: "AI applied to Software Engineering: An analysis of the transformations caused by AI in Software Engineering development activities"
 date: 1970-01-01T00:00:00Z
 scheduled_date: 2026-07-11T00:00:00-03:00
 draft: false

@@ -8,7 +8,7 @@ translationKey: publication_2010_debora_zupeli_bossois_metodologia_de_categoriza
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2010_debora_zupeli_bossois_metodologia_de_categorizacao_de_textos_a_partir_de_documentos_n
-publication_index: 215
+publication_index: 214
 publication_group: thesis
 publication_type: dissertation
 schema_type: Thesis

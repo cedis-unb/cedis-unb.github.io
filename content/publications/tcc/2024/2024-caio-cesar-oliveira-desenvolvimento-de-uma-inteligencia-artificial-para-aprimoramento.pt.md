@@ -8,7 +8,7 @@ translationKey: publication_2024_caio_cesar_oliveira_desenvolvimento_de_uma_inte
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2024_caio_cesar_oliveira_desenvolvimento_de_uma_inteligencia_artificial_para_aprimoramento
-publication_index: 269
+publication_index: 267
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

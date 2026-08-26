@@ -7,7 +7,7 @@ translationKey: publication_2006_barbosa_h_a_sistemas_de_deteccao_de_invasao_em_
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2006_barbosa_h_a_sistemas_de_deteccao_de_invasao_em_redes_de_automacao_industrial
-publication_index: 223
+publication_index: 222
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle

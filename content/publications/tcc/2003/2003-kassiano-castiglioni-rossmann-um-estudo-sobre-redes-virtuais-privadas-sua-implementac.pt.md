@@ -8,7 +8,7 @@ translationKey: publication_2003_kassiano_castiglioni_rossmann_um_estudo_sobre_r
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2003_kassiano_castiglioni_rossmann_um_estudo_sobre_redes_virtuais_privadas_sua_implementac
-publication_index: 252
+publication_index: 250
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

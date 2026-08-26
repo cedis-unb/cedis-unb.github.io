@@ -7,7 +7,7 @@ translationKey: publication_2010_luana_vieira_morellato_metodologia_computaciona
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2010_luana_vieira_morellato_metodologia_computacional_para_identificacao_de_sintagmas_nomi
-publication_index: 217
+publication_index: 216
 publication_group: thesis
 publication_type: dissertation
 schema_type: Thesis

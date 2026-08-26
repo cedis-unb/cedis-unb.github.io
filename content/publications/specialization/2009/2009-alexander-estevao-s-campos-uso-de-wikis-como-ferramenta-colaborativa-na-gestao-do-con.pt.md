@@ -7,7 +7,7 @@ translationKey: publication_2009_alexander_estevao_s_campos_uso_de_wikis_como_fe
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2009_alexander_estevao_s_campos_uso_de_wikis_como_ferramenta_colaborativa_na_gestao_do_con
-publication_index: 298
+publication_index: 296
 publication_group: specialization
 publication_type: specialization
 schema_type: Thesis

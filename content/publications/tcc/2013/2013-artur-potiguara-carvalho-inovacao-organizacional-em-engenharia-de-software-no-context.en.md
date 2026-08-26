@@ -8,7 +8,7 @@ translationKey: publication_2013_artur_potiguara_carvalho_inovacao_organizaciona
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2013_artur_potiguara_carvalho_inovacao_organizacional_em_engenharia_de_software_no_context
-publication_index: 284
+publication_index: 282
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

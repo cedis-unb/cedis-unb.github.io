@@ -7,7 +7,7 @@ translationKey: publication_2016_thatiany_lima_de_sousa_using_scrum_in_outsource
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2016_thatiany_lima_de_sousa_using_scrum_in_outsourced_government_projects_an_action_resear
-publication_index: 326
+publication_index: 324
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle

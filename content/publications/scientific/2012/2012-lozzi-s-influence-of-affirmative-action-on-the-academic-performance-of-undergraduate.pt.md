@@ -8,7 +8,7 @@ translationKey: publication_2012_lozzi_s_influence_of_affirmative_action_on_the_
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2012_lozzi_s_influence_of_affirmative_action_on_the_academic_performance_of_undergraduate
-publication_index: 214
+publication_index: 213
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle

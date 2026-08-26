@@ -7,7 +7,7 @@ translationKey: publication_2009_rafael_sermenho_pedroso_avaliacao_de_sistemas_l
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2009_rafael_sermenho_pedroso_avaliacao_de_sistemas_legados_em_delphi
-publication_index: 312
+publication_index: 310
 publication_group: specialization
 publication_type: specialization
 schema_type: Thesis

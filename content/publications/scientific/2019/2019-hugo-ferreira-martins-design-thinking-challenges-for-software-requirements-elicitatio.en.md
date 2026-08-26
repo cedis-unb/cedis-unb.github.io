@@ -7,7 +7,7 @@ translationKey: publication_2019_hugo_ferreira_martins_design_thinking_challenge
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2019_hugo_ferreira_martins_design_thinking_challenges_for_software_requirements_elicitatio
-publication_index: 324
+publication_index: 322
 publication_group: scientific
 publication_type: article
 schema_type: ScholarlyArticle

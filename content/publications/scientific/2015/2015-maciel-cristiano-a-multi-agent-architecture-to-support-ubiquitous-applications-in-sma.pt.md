@@ -7,7 +7,7 @@ translationKey: publication_2015_maciel_cristiano_a_multi_agent_architecture_to_
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2015_maciel_cristiano_a_multi_agent_architecture_to_support_ubiquitous_applications_in_sma
-publication_index: 205
+publication_index: 204
 publication_group: scientific
 publication_type: book_section
 schema_type: Chapter

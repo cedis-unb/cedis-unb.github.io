@@ -8,7 +8,7 @@ translationKey: publication_2025_ana_julia_mendes_santos_repensando_a_educacao_e
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2025_ana_julia_mendes_santos_repensando_a_educacao_em_ihc_gamificacao_heuristicas_e_aprend
-publication_index: 263
+publication_index: 261
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle

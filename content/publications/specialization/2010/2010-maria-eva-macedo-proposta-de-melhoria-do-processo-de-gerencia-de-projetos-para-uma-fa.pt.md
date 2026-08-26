@@ -8,7 +8,7 @@ translationKey: publication_2010_maria_eva_macedo_proposta_de_melhoria_do_proces
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2010_maria_eva_macedo_proposta_de_melhoria_do_processo_de_gerencia_de_projetos_para_uma_fa
-publication_index: 306
+publication_index: 304
 publication_group: specialization
 publication_type: specialization
 schema_type: Thesis

@@ -7,7 +7,7 @@ translationKey: publication_2026_luciano_ricardo_da_silva_junior_gamificacao_com
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2026_luciano_ricardo_da_silva_junior_gamificacao_como_estrategia_de_ensino_da_identificaca
-publication_index: 320
+publication_index: 318
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

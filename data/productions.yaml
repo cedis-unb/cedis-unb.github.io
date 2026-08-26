@@ -5765,34 +5765,6 @@ items:
     url: ''
     year: 2015
   - authors:
-      - MACIEL, C.
-      - SOUZA, P. C.
-      - VITERBO, J.
-      - MENDES, F. F.
-      - SEGHROUCHNI, A.
-    title:
-      pt: A Multi-agent Architecture to Support Ubiquitous Applications in Smart Environments
-      en: A Multi-agent Architecture to Support Ubiquitous Applications in Smart Environments
-    summary:
-      pt: ''
-      en: ''
-    book_title: ''
-    volume: '498'
-    doi_isbn: 10.1007/978-3-662-46241-6_9
-    journal_event: COMMUNICATIONS IN COMPUTER AND INFORMATION SCIENCE (PRINT)
-    location: ''
-    pages: '106'
-    publisher: ''
-    tags:
-      - ai
-    people:
-      - fabiana_mendes
-    type: article
-    program: ''
-    advisors: []
-    url: ''
-    year: 2015
-  - authors:
       - RAMOS, C. S.
       - OLIVEIRA, K. M.
       - ROCHA, A. R. C.
@@ -7070,30 +7042,6 @@ items:
     url:
     year: 2012
     defesa_id: leandro-martins-2012-06-15
-  - authors:
-      - Leandro Barbosa Martins
-    title:
-      pt: Gestão de Riscos e Governança de TI Aplicada à Rede de Comunicação Governamental
-      en: Risk Management and IT Governance Applied to the Government Communication Network
-    summary:
-      pt: ''
-      en: ''
-    book_title: ''
-    volume: ''
-    doi_isbn: ''
-    journal_event: ''
-    location: ''
-    pages: ''
-    publisher: Universidade de Brasília
-    tags:
-      - security
-    type: specialization
-    program: curso_espunb2
-    advisors:
-      - sergio_freitas
-    url:
-    year: 2012
-    defesa_id: leandro-martins-2012-06-15-2
   - authors:
       - Rodrigo César Santos Felisdório
     title:

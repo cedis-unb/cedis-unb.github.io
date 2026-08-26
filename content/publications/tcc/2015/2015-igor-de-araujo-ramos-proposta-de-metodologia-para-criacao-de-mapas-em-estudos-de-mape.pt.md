@@ -8,7 +8,7 @@ translationKey: publication_2015_igor_de_araujo_ramos_proposta_de_metodologia_pa
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2015_igor_de_araujo_ramos_proposta_de_metodologia_para_criacao_de_mapas_em_estudos_de_mape
-publication_index: 200
+publication_index: 199
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis
