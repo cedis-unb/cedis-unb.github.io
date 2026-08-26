@@ -27,7 +27,7 @@ permissions:
   contents: read
 
 env:
-  HUGO_VERSION: '0.164.0'
+  HUGO_VERSION: '0.165.0'
   NODE_VERSION: '24'
   HUGO_ENV: production
 
@@ -61,7 +61,7 @@ jobs:
         run: npm ci
 
       - name: Install Python validation dependencies
-        run: python3 -m pip install --upgrade pyyaml jsonschema
+        run: python3 -m pip install -r requirements.txt
 
       - name: Check generated publication pages
         run: python3 scripts/build_publications.py --check

@@ -1,0 +1,5 @@
+# Dependências Python usadas pelos scripts de build e validação.
+# Versões mínimas testadas — subir com cuidado (validar em CI antes).
+PyYAML>=6.0
+jsonschema>=4.20
+ruamel.yaml>=0.18

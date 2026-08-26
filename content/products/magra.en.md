@@ -13,7 +13,7 @@ areas:
 responsible:
 - sergio_freitas
 publications: []
-weight: 14
+weight: 16
 featured_image: "../assets/images/featured/produto_MAGRA.webp"
 summary: The Undergraduate Analysis Model (MAGRA) enables the prediction of dropout rates in face-to-face undergraduate courses.
 authorimage: ../assets/images/global/author.webp

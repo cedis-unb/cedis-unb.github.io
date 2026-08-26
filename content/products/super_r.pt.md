@@ -13,7 +13,7 @@ responsible:
 - george_marsicano
 project: project_super_r
 publications: []
-weight: 5
+weight: 11
 featured_home: true
 featured_home_order: 5
 featured_home_url: "/pt/projects/super_r/"
