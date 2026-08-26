@@ -16,7 +16,8 @@ breadcrumb_categories: "Categories"
 # 404 page
 not_found_title: "Page not found"
 not_found_message: "Ooops, this page doesn't exist or has moved."
-not_found_help: "Explore the rest of the site from the home page or use search in the menu."
+not_found_help: "Explore the rest of the site from the home page or use search in
+  the menu."
 back_to_home: "Back to home page"
 
 #TERMOS (NÃO APAGAR)
@@ -51,13 +52,18 @@ curso_ppgi_ufrgs: "Master's Thesis in Informatics, Federal University of Rio Gra
 curso_unb: "University of Brasília"
 curso_cc: "Bachelor of Computer Science, UFES"
 curso_cc_unb: "Bachelor of Computer Science - University of Brasília (Brazil)"
-curso_tsi_ifb: "Senior Project (Technology in Internet Systems) - Federal Institute of Brasília (Brazil)"
-curso_espucb_esw: "Specialization in Software Engineering, Catholic University of Brasília (Brazil)"
-curso_espunicesp_psi: "Specialization in Project Engineering in Information Systems, UniCESP (Brazil)"
+curso_tsi_ifb: "Senior Project (Technology in Internet Systems) - Federal Institute
+  of Brasília (Brazil)"
+curso_espucb_esw: "Specialization in Software Engineering, Catholic University of
+  Brasília (Brazil)"
+curso_espunicesp_psi: "Specialization in Project Engineering in Information Systems,
+  UniCESP (Brazil)"
 curso_espufes: "Specialization in Computer Networks, UFES"
 curso_espunb: "Specialization in Information Technology Management, UnB"
-curso_espunb2: "Specialization in IT Governance and Communication for the Public Sector, UnB"
-curso_espunb3: "Specialization in Information Security and Communications Management, UnB"
+curso_espunb2: "Specialization in IT Governance and Communication for the Public Sector,
+  UnB"
+curso_espunb3: "Specialization in Information Security and Communications Management,
+  UnB"
 
 # Knowledge Areas
 active_learning: "Active Learning"
@@ -79,7 +85,7 @@ software_requirements: "Requirements Engineering"
 soft_skills: "Soft Skills"
 teamwork: "Teamwork"
 verification_validation_testing: "Verification, Validation and Testing"
-security: "Cybersecurity"
+security: "Security"
 
 # Areas topic sections
 area_coordinator: "About the Area Coordinator"
@@ -148,22 +154,25 @@ prevencao_violencia_infancia: "Childhood Violence Prevention"
 bem_estar_universitario: "University Well-being"
 octaanalysis: "OctaAnalysis Project"
 project_cc: "Project Canal Ciência"
-project_software_bem: "Program Software for Good"
-project_super_r: "Project Super-R"
+project_software_bem: "Software for Good"
+project_super_r: "Super-R"
 project_gsd: "Project Green SD"
 project_laguna: "Project Laguna"
 project_td: "Project Digital Transformation"
-project_a3m: "Project A3M"
-project_doarti: "Project Doarti"
-project_framework_preditivo_engajamento: "Predictive Framework"
-project_ia_dados_transformacao_digital: "AI & Digital Transformation"
-project_inovacao_digital_gamificacao: "Digital Innovation & Gamification"
-project_lfs: "LFS — Software Factory"
-project_mcti_gestao: "MCTI — Information Management"
-project_melhoria_servico_publico: "Digital Public Service"
-project_nimbus: "Project Nimbus"
-project_servicos_pi: "PI Services"
-project_spux: "SPUx — Digital Transformation"
+project_a3m: "A3M: Educational innovation with active methodologies"
+project_doarti: "Doarti"
+project_framework_preditivo_engajamento: "Predictive framework for student engagement
+  and performance in gamified learning environments"
+project_ia_dados_transformacao_digital: "Artificial intelligence and data analysis
+  for digital transformation"
+project_inovacao_digital_gamificacao: "Digital innovation and gamification for teaching,
+  outreach, and software engineering"
+project_lfs: "Software Factory Laboratory"
+project_mcti_gestao: "Informational Management Support System for MCTI"
+project_melhoria_servico_publico: "Improving Digital Public Service for Citizens"
+project_nimbus: "Nimbus"
+project_servicos_pi: "Serviços PI"
+project_spux: "Collaborative Digital Transformation Methodology for SPU"
 agreement: "Cooperation Agreement"
 
 # Categories
@@ -192,7 +201,8 @@ software_development_tools: "Software Development Tools"
 software_products: "Software Products"
 
 # --- refactor cond $isPt strings ---
-ui_a_selection_of_pages_related: "A selection of pages related to this topic, with fast access to the most relevant entries."
+ui_a_selection_of_pages_related: "A selection of pages related to this topic, with
+  fast access to the most relevant entries."
 ui_active_projects: "Active projects"
 ui_active_supervisions: "Active supervisions"
 ui_archive: "Archive"
@@ -202,12 +212,16 @@ ui_associated_researchers: "Associated researchers"
 ui_at_a_glance: "At a glance"
 ui_author: "Author"
 ui_browse_areas: "Browse areas"
-ui_browse_cedis_publications_by_year: "Browse CEDIS publications by year and jump straight to the period you need."
-ui_browse_every_available_term_and: "Browse every available term and jump into the collections that organize the site's content."
+ui_browse_cedis_publications_by_year: "Browse CEDIS publications by year and jump
+  straight to the period you need."
+ui_browse_every_available_term_and: "Browse every available term and jump into the
+  collections that organize the site's content."
 ui_by: "By"
 ui_calls: "Calls"
-ui_calls_and_notices_organized_by: "Calls and notices organized by year for quick review."
-ui_catalogued_publications_excluding_undergraduate_theses: "catalogued publication(s), excluding undergraduate theses."
+ui_calls_and_notices_organized_by: "Calls and notices organized by year for quick
+  review."
+ui_catalogued_publications_excluding_undergraduate_theses: "catalogued publication(s),
+  excluding undergraduate theses."
 ui_cedis_team: "CEDIS Team"
 ui_collaborators_and_former_collaborators: "Collaborators and former collaborators"
 ui_collection: "Collection"
@@ -221,15 +235,19 @@ ui_explore_area: "Explore area"
 ui_explore_content: "Explore content"
 ui_explore_profile: "Explore profile"
 ui_explore_publications: "Explore publications"
-ui_explore_publications_projects_people_and: "Explore publications, projects, people, and initiatives connected to this curated collection."
-ui_explore_the_academic_trajectory_focus: "Explore the academic trajectory, focus areas, projects, and supervisions that shape this CEDIS profile."
+ui_explore_publications_projects_people_and: "Explore publications, projects, people,
+  and initiatives connected to this curated collection."
+ui_explore_the_academic_trajectory_focus: "Explore the academic trajectory, focus
+  areas, projects, and supervisions that shape this CEDIS profile."
 ui_explore_the_pages_grouped_under: "Explore the pages grouped under this term."
 ui_focus_areas: "Focus areas"
-ui_follow_cedis_across_publications_news: "Follow CEDIS across publications, news, and institutional channels."
+ui_follow_cedis_across_publications_news: "Follow CEDIS across publications, news,
+  and institutional channels."
 ui_individual_profile: "Individual profile"
 ui_infrastructure: "Infrastructure"
 ui_institutional_affiliation: "Institutional affiliation: FCTE/UnB"
-ui_institutional_cedis_content_organized_for: "Institutional CEDIS content organized for faster reading."
+ui_institutional_cedis_content_organized_for: "Institutional CEDIS content organized
+  for faster reading."
 ui_institutional_page: "Institutional page"
 ui_items: "items"
 ui_jump_to_sections: "Jump to sections"
@@ -254,10 +272,12 @@ ui_page: "Page"
 ui_people_profiles: "People / Profiles"
 ui_people_researchers: "People / Researchers"
 ui_products: "Products"
-ui_products_created_with_this_researcher: "Products created with this researcher participation (creator, supervisor, or collaborator listed in metadata)."
+ui_products_created_with_this_researcher: "Products created with this researcher participation
+  (creator, supervisor, or collaborator listed in metadata)."
 ui_previous_projects: "Previous projects"
 ui_projects: "Projects"
-ui_projects_supervisions_and_academic_production: "Projects, supervisions, and academic production arranged in a single reading flow."
+ui_projects_supervisions_and_academic_production: "Projects, supervisions, and academic
+  production arranged in a single reading flow."
 ui_publications: "Publications"
 ui_published_on: "Published on"
 ui_published_periods_listed_on_this: "published period(s) listed on this page."
@@ -265,9 +285,11 @@ ui_quick_access: "Quick access"
 ui_quick_facts: "Quick facts"
 ui_reading: "Reading"
 ui_related_publications: "Related publications"
-ui_research_development_and_software_innovation: "Research, development, and software innovation focused on education, collaboration, and social impact."
+ui_research_development_and_software_innovation: "Research, development, and software
+  innovation focused on education, collaboration, and social impact."
 ui_research_profile: "Research profile"
-ui_research_training_projects_and_publications: "Research, training, projects, and publications connected in this area."
+ui_research_training_projects_and_publications: "Research, training, projects, and
+  publications connected in this area."
 ui_researchers: "Researchers"
 ui_results: "Results"
 ui_scientific_output_archive: "Scientific output / Archive"
@@ -275,12 +297,14 @@ ui_search: "Search"
 ui_sections: "Sections"
 ui_sections_2: "sections"
 ui_see_sections: "See sections"
-ui_spaces_and_facilities_organized_to: "Spaces and facilities organized to support CEDIS activities."
+ui_spaces_and_facilities_organized_to: "Spaces and facilities organized to support
+  CEDIS activities."
 ui_taxonomy: "Taxonomy"
 ui_term: "Term"
 ui_themes: "Themes"
 ui_timeline: "Timeline"
-ui_timeline_with_the_main_institutional: "Timeline with the main institutional milestones of CEDIS."
+ui_timeline_with_the_main_institutional: "Timeline with the main institutional milestones
+  of CEDIS."
 ui_university_of_brasilia: "University of Brasilia"
 ui_update: "update"
 ui_utilities: "Utilities"
@@ -294,7 +318,8 @@ ui_rss_news: "News RSS feed"
 
 # Newsroom (listing /categories/news/)
 ui_newsroom_eyebrow: "Newsroom"
-ui_newsroom_lead: "Coverage, thesis defenses, products, and institutional milestones from CEDIS — published weekly by the communications team."
+ui_newsroom_lead: "Coverage, thesis defenses, products, and institutional milestones
+  from CEDIS — published weekly by the communications team."
 ui_newsroom_featured_label: "Top story"
 ui_newsroom_secondary_label: "Also in focus"
 ui_newsroom_archive_heading: "News archive"
@@ -318,26 +343,31 @@ ui_bibtex_copied: "BibTeX copied to clipboard"
 
 # Join CEDIS (E3)
 ui_join_eyebrow: "Entry paths"
-ui_join_lead: "If you want to research, be advised, or collaborate with CEDIS, pick the path that fits you."
+ui_join_lead: "If you want to research, be advised, or collaborate with CEDIS, pick
+  the path that fits you."
 ui_join_paths_quick: "Paths"
 ui_join_stuck: "Not sure where to start?"
 ui_join_stuck_heading: "Talk to CEDIS directly"
-ui_join_stuck_body: "None of these paths fit? Write to us describing what you're looking for — reply within 5 business days."
+ui_join_stuck_body: "None of these paths fit? Write to us describing what you're looking
+  for — reply within 5 business days."
 ui_join_stuck_cta: "Send a message"
 ui_join_stuck_researchers: "See researchers"
 
 # Partners with stories (B1)
 ui_partners_eyebrow: "Collaboration network"
-ui_partners_lead: "Each CEDIS partner represents a concrete story — not just a logo. Here's what we built together and what came out of it."
+ui_partners_lead: "Each CEDIS partner represents a concrete story — not just a logo.
+  Here's what we built together and what came out of it."
 ui_partners_count_label: "Featured partners"
-ui_partners_count_lead: "Institutions and labs with active collaboration in recent cycles."
+ui_partners_count_lead: "Institutions and labs with active collaboration in recent
+  cycles."
 ui_partners_since: "since"
 ui_partners_outcomes: "Concrete outcomes"
 ui_partners_visit: "Partner website"
 
 # Recognitions (B3)
 ui_awards_eyebrow: "Awards and milestones"
-ui_awards_lead: "Recognitions, conference awards, mentions, and institutional milestones CEDIS has accumulated over the years."
+ui_awards_lead: "Recognitions, conference awards, mentions, and institutional milestones
+  CEDIS has accumulated over the years."
 ui_awards_count_label: "Recognitions registered"
 ui_awards_count_lead: "Awards, mentions, and institutional milestones."
 ui_awards_kind_conference_award: "Conference award"
@@ -351,7 +381,8 @@ ui_awards_empty: "No recognitions registered yet."
 
 # Alumni (A4)
 ui_alumni_eyebrow: "CEDIS Alumni"
-ui_alumni_lead: "People who went through CEDIS and moved on to research, industry, entrepreneurship, or teaching. The network continues after the defense."
+ui_alumni_lead: "People who went through CEDIS and moved on to research, industry,
+  entrepreneurship, or teaching. The network continues after the defense."
 ui_alumni_count_label: "Registered alumni"
 ui_alumni_count_lead: "Former advisees and members who agreed to appear on this page."
 ui_alumni_now: "Now"
@@ -361,7 +392,8 @@ ui_alumni_empty_cta: "I want to appear"
 
 # Knowledge map (D1)
 ui_map_eyebrow: "Interactive graph"
-ui_map_lead: "Explore how CEDIS areas of expertise, researchers, and projects connect. Drag nodes, zoom with the mouse, click to open the page."
+ui_map_lead: "Explore how CEDIS areas of expertise, researchers, and projects connect.
+  Drag nodes, zoom with the mouse, click to open the page."
 ui_map_svg_alt: "CEDIS graph connecting areas, researchers, and projects"
 ui_map_filter_all: "All"
 ui_map_filter_areas: "Areas"
@@ -381,13 +413,15 @@ ui_areas_map_cta: "Open map"
 
 # Discovery quiz (D3)
 ui_quiz_eyebrow: "Guided discovery"
-ui_quiz_lead: "5 quick questions to discover which CEDIS area and researchers align best with your profile."
+ui_quiz_lead: "5 quick questions to discover which CEDIS area and researchers align
+  best with your profile."
 ui_quiz_question: "Question"
 ui_quiz_prev: "Previous"
 ui_quiz_restart: "Restart"
 ui_quiz_result_eyebrow: "Your result"
 ui_quiz_result_heading: "Areas that fit you best"
-ui_quiz_result_lead: "Based on your answers, these areas match your profile best. Each has researchers who could supervise you."
+ui_quiz_result_lead: "Based on your answers, these areas match your profile best.
+  Each has researchers who could supervise you."
 ui_quiz_best_match: "Best match"
 ui_quiz_points: "pts"
 ui_quiz_recommended_researchers: "Researchers in this area"
@@ -398,13 +432,15 @@ ui_quiz_cta_restart: "Take again"
 # Trending themes (D4)
 ui_trending_eyebrow: "Trending themes"
 ui_trending_heading: "What we are researching now"
-ui_trending_lead: "Most frequent keywords in publications from %d to %d. Tag size reflects how many works cover each topic."
+ui_trending_lead: "Most frequent keywords in publications from %d to %d. Tag size
+  reflects how many works cover each topic."
 ui_trending_footnote: "Based on the tags of publications registered in data/productions.yaml."
 
 # Featured products carousel
 ui_featured_products_eyebrow: "Featured products"
 ui_featured_products_heading: "Software and experiences shipped by CEDIS"
-ui_featured_products_lead: "A curated selection of digital products built by our researchers, students, and partners — in use today at the University of Brasília and beyond."
+ui_featured_products_lead: "A curated selection of digital products built by our researchers,
+  students, and partners — in use today at the University of Brasília and beyond."
 ui_featured_products_cta: "Learn about the product"
 ui_featured_products_external: "Open the platform"
 ui_featured_products_previous: "Previous product"
@@ -442,7 +478,8 @@ pub_type_registro: "Software/patent registration"
 pub_type_didactic: "Teaching material"
 publications_filtered_count: "%d of %d results"
 publications_no_results: "No results match the current filters."
-publications_no_results_hint: "Adjust year, type, or topic — or click Clear to see all records."
+publications_no_results_hint: "Adjust year, type, or topic — or click Clear to see
+  all records."
 
 # Home hero — persona tracks
 ui_persona_study_label: "Study with us"
@@ -475,14 +512,16 @@ ui_pulse_read_more: "Read more"
 # Home — upcoming defense agenda
 ui_defense_agenda_eyebrow: "Upcoming defenses"
 ui_defense_agenda_heading: "Scheduled committee agenda"
-ui_defense_agenda_lead: "Future defenses organized by day and time. Switch between a compact calendar and a chronological list."
+ui_defense_agenda_lead: "Future defenses organized by day and time. Switch between
+  a compact calendar and a chronological list."
 ui_defense_agenda_view_mode: "Upcoming defense view mode"
 ui_defense_agenda_calendar: "Agenda"
 ui_defense_agenda_list: "List"
 ui_defense_agenda_all: "View defenses"
 ui_defense_agenda_students: "Student(s)"
 ui_defense_agenda_advisors: "Advisor(s)"
-ui_defense_agenda_no_timed: "There are cataloged future defenses, but none with a real time for the schedule grid."
+ui_defense_agenda_no_timed: "There are cataloged future defenses, but none with a
+  real time for the schedule grid."
 ui_defense_agenda_dev_seed: "DEV seed"
 
 # Profile — contact and CTAs
@@ -491,7 +530,8 @@ ui_copy_email: "Copy email"
 ui_copy_email_copied: "Email copied"
 people_cta_supervision_eyebrow: "Next step"
 people_cta_supervision_heading: "Connect your next research move to this profile"
-people_cta_supervision_body: "Use these paths to propose supervision, collaboration, an applied product, or an institutional partnership with CEDIS."
+people_cta_supervision_body: "Use these paths to propose supervision, collaboration,
+  an applied product, or an institutional partnership with CEDIS."
 people_cta_opportunities: "See opportunities"
 people_cta_email: "Send email"
 people_cta_contact: "Contact CEDIS"
@@ -510,7 +550,8 @@ people_featured_publications_title: "Featured publications"
 # Impact metrics
 ui_impact_eyebrow: "Vital signs"
 ui_impact_heading: "Our cadence in %d"
-ui_impact_lead: "What CEDIS is delivering right now, this year — research, defenses, products, and continuity."
+ui_impact_lead: "What CEDIS is delivering right now, this year — research, defenses,
+  products, and continuity."
 ui_metric_years: "years active"
 ui_metric_years_note: "since 2013"
 ui_metric_researchers: "researchers"
@@ -528,7 +569,8 @@ ui_metric_products_this_year: "digital products in %d"
 # Totals metrics (history page)
 ui_history_metrics_eyebrow: "CEDIS in numbers"
 ui_history_metrics_heading: "A decade of building software and knowledge"
-ui_history_metrics_lead: "All-time totals since 2013 — the steady output that reflects what we do: research, training, and development with tangible outcomes."
+ui_history_metrics_lead: "All-time totals since 2013 — the steady output that reflects
+  what we do: research, training, and development with tangible outcomes."
 ui_history_metrics_footnote: "Numbers updated automatically from the site database."
 ui_metric_registrations_total: "registrations and patents"
 ui_metric_registrations_total_note: "software and intellectual property"
@@ -549,12 +591,14 @@ ui_impact_footnote: "Numbers updated automatically from the site database."
 # Block 4 — Areas + Trending (consolidated)
 ui_areas_grid_eyebrow: "Fields of work"
 ui_areas_grid_heading: "Where CEDIS operates"
-ui_areas_grid_lead: "Our fronts of research, development, and education. Click a card to see the people, projects, and publications behind each field."
+ui_areas_grid_lead: "Our fronts of research, development, and education. Click a card
+  to see the people, projects, and publications behind each field."
 ui_areas_grid_view_all: "See all fields"
 ui_trending_view_all: "See all topics"
 
 # Block 5 — Partners horizontal band
-ui_partners_marquee_note: "Hover, tab in, or use the button below to pause. Click to see all CEDIS partners."
+ui_partners_marquee_note: "Hover, tab in, or use the button below to pause. Click
+  to see all CEDIS partners."
 ui_partners_marquee_pause: "Pause animation"
 ui_partners_marquee_resume: "Resume animation"
 
@@ -566,18 +610,21 @@ ui_home_tag_learning: "Learning"
 ui_home_tag_ai: "Artificial Intelligence"
 ui_home_research_hub: "Research hub"
 ui_home_mission_eyebrow: "Institutional positioning"
-ui_home_mission_lead: "Research, development, and education in software at the University of Brasilia."
+ui_home_mission_lead: "Research, development, and education in software at the University
+  of Brasilia."
 ui_home_mission_stat_period: "Since 2013"
 ui_home_mission_stat_institution: "University of Brasilia"
 ui_home_mission_stat_focus_label: "Focus"
 ui_home_mission_stat_focus: "Research, development, and education"
 ui_home_mission_image_label: "CEDIS in action"
 ui_home_partners_eyebrow: "Collaboration network"
-ui_home_partners_lead: "Entities, organizations, and laboratories that expand CEDIS's reach in research, development, and innovation."
+ui_home_partners_lead: "Entities, organizations, and laboratories that expand CEDIS's
+  reach in research, development, and innovation."
 ui_home_partners_panel_label: "CEDIS ecosystem"
 ui_home_partners_count_label: "featured partners"
 ui_home_news_eyebrow: "Editorial radar"
-ui_home_news_lead: "Recent highlights across research, products, events, and outcomes from CEDIS."
+ui_home_news_lead: "Recent highlights across research, products, events, and outcomes
+  from CEDIS."
 ui_home_news_featured: "Featured"
 ui_home_news_more: "View all news"
 ui_home_news_read_label: "min read"
