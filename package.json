@@ -4,6 +4,9 @@
   "description": "Site institucional do CEDIS — Centro de Estudos, Desenvolvimento e Inovação em Software, Universidade de Brasília. Construído com Hugo, Tailwind CSS, Alpine.js e Pagefind. Baseado no tema TailBliss.",
   "private": true,
   "main": "index.js",
+  "engines": {
+    "node": ">=22"
+  },
   "devDependencies": {
     "@lhci/cli": "^0.15.1",
     "@tailwindcss/cli": "^4.3.3",
