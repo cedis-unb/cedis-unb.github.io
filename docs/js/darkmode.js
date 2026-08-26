@@ -6,7 +6,11 @@
     var lightIcons = document.querySelectorAll("[data-theme-toggle-light-icon]");
     if (!toggles.length) return;
     function isDarkPreferred() {
-      var stored = localStorage.getItem("color-theme");
+      var stored = null;
+      try {
+        stored = localStorage.getItem("color-theme");
+      } catch (e) {
+      }
       if (stored === "dark") return true;
       if (stored === "light") return false;
       return window.matchMedia("(prefers-color-scheme: dark)").matches;
@@ -36,7 +40,10 @@
     function onClick() {
       var newDark = !document.documentElement.classList.contains("dark");
       applyDarkMode(newDark);
-      localStorage.setItem("color-theme", newDark ? "dark" : "light");
+      try {
+        localStorage.setItem("color-theme", newDark ? "dark" : "light");
+      } catch (e) {
+      }
       syncIcons(newDark);
     }
     for (var k = 0; k < toggles.length; k++) {

@@ -15,7 +15,7 @@ project: project_cc
 publications:
 - publication_2024_cristiane_s_ramos_a_process_to_identify_players_motivational_profiles_for_designing_a
 - publication_2026_cristiane_soares_ramos_gamifying_science_communication_an_experience_report_of_jornad
-weight: 14
+weight: 15
 featured_image: "../assets/images/featured/projetoCC - Jornada Galáctica.png"
 summary: Jornada Galáctica, uma gamificação para o portal Canal Ciência. 
 authorimage: ../assets/images/global/author.webp

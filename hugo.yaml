@@ -562,7 +562,7 @@ pagination:
   pagerSize: 12
 darkmode_js:
   - assets/js/darkmode.js
-enableInlineShortcodes: true
+enableInlineShortcodes: false
 
 markup:
   goldmark:

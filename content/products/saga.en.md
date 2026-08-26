@@ -15,7 +15,7 @@ responsible:
 - cristiane_ramos
 - george_marsicano
 publications: []
-weight: 14
+weight: 17
 featured_image: "../assets/images/featured/produto_SAGA.webp"
 summary: The Academic Management Support System - SAGA is a tool developed to assist academic managers in monitoring indicators for undergraduate courses.
 authorimage: ../assets/images/global/author.webp
