@@ -10,6 +10,17 @@
     {{ $termKey = lower . }}
 {{ end }}
 {{ $isResearchersTerm := and (eq .Kind "term") (eq .Data.Plural "categories") (eq $termKey "researcher") }}
+{{ $isTagTerm := and (eq .Kind "term") (eq .Data.Plural "tags") }}
+{{ $isFirstPage := true }}
+{{ with .Paginator }}{{ $isFirstPage = eq .PageNumber 1 }}{{ end }}
+{{ $areaPage := "" }}
+{{ $areaURL := "" }}
+{{ if $isTagTerm }}
+    {{ with (partial "area-lookup" $termKey).page }}
+        {{ $areaURL = .RelPermalink }}
+        {{ if $isFirstPage }}{{ $areaPage = . }}{{ end }}
+    {{ end }}
+{{ end }}
 
 <div class="@container not-prose">
     {{ if $isTaxonomy }}
@@ -48,8 +59,13 @@
         {{ end }}
     </div>
     {{ else }}
+    {{ $pagesToRender := slice }}
+    {{ with $areaPage }}{{ $pagesToRender = $pagesToRender | append . }}{{ end }}
+    {{ range .Paginator.Pages }}
+        {{ if ne .RelPermalink $areaURL }}{{ $pagesToRender = $pagesToRender | append . }}{{ end }}
+    {{ end }}
     <div class="grid gap-6 @md:grid-cols-2 @xl:grid-cols-3"{{ if $isResearchersTerm }} data-randomize-researchers{{ end }}>
-        {{ range .Paginator.Pages }}
+        {{ range $pagesToRender }}
         {{ $summary := .Params.summary | default (.Summary | plainify | htmlUnescape | strings.TrimSpace) }}
         {{ $cardTitle := .Title }}
         {{ $cardImageMode := "fit" }}
