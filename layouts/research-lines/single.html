@@ -29,6 +29,7 @@
 {{ $matchKeys := slice }}
 {{ $productionItems := slice }}
 {{ $defesaItems := slice }}
+{{ $productItems := slice }}
 
 {{ if $line }}
   {{ range $line.areas }}
@@ -66,6 +67,16 @@
     {{ $tagURL := "" }}
     {{ with site.GetPage (printf "/tags/%s" (.id | urlize)) }}{{ $tagURL = .RelPermalink }}{{ end }}
     {{ $themeItems = $themeItems | append (dict "id" .id "name" .name "url" $tagURL) }}
+  {{ end }}
+
+  {{ range .Site.RegularPages.ByTitle }}
+    {{ if and (eq .Section "products") (eq .Lang $lang) }}
+      {{ $productMatches := false }}
+      {{ with .Params.project }}{{ if in $line.projects . }}{{ $productMatches = true }}{{ end }}{{ end }}
+      {{ range (.Params.secondary_projects | default slice) }}{{ if in $line.projects . }}{{ $productMatches = true }}{{ end }}{{ end }}
+      {{ range (.Params.tags | default slice) }}{{ if in $matchKeys . }}{{ $productMatches = true }}{{ end }}{{ end }}
+      {{ if $productMatches }}{{ $productItems = $productItems | append (dict "name" .Title "url" .RelPermalink) }}{{ end }}
+    {{ end }}
   {{ end }}
 
   {{ range hugo.Data.productions.items }}
@@ -227,8 +238,20 @@
           <div class="rounded-[1.1rem] border border-slate-200/80 bg-slate-50 px-4 py-4 dark:border-white/10 dark:bg-white/5"><div class="text-[0.65rem] font-semibold uppercase tracking-[0.18em] text-slate-700 dark:text-slate-500">{{ i18n "ui_line_projects" }}</div><div class="mt-2 text-2xl font-black text-slate-950 dark:text-white">{{ len $projectItems }}</div></div>
           <div class="rounded-[1.1rem] border border-slate-200/80 bg-slate-50 px-4 py-4 dark:border-white/10 dark:bg-white/5"><div class="text-[0.65rem] font-semibold uppercase tracking-[0.18em] text-slate-700 dark:text-slate-500">{{ i18n "ui_line_publications_count" }}</div><div class="mt-2 text-2xl font-black text-slate-950 dark:text-white">{{ len $productionItems }}</div></div>
           <div class="rounded-[1.1rem] border border-slate-200/80 bg-slate-50 px-4 py-4 dark:border-white/10 dark:bg-white/5"><div class="text-[0.65rem] font-semibold uppercase tracking-[0.18em] text-slate-700 dark:text-slate-500">{{ i18n "ui_line_supervisions_count" }}</div><div class="mt-2 text-2xl font-black text-slate-950 dark:text-white">{{ len $defesaItems }}</div></div>
+          <div class="rounded-[1.1rem] border border-slate-200/80 bg-slate-50 px-4 py-4 dark:border-white/10 dark:bg-white/5"><div class="text-[0.65rem] font-semibold uppercase tracking-[0.18em] text-slate-700 dark:text-slate-500">{{ i18n "ui_line_products_count" }}</div><div class="mt-2 text-2xl font-black text-slate-950 dark:text-white">{{ len $productItems }}</div></div>
         </div>
       </div>
+
+      {{ if gt (len $productItems) 0 }}
+      <div class="rounded-[1.75rem] border border-rose-200/80 bg-rose-50/60 p-6 shadow-[0_18px_48px_rgba(244,63,94,0.08)] dark:border-rose-400/20 dark:bg-rose-500/10">
+        <div class="text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-rose-800 dark:text-rose-100">{{ i18n "ui_line_products" }}</div>
+        <div class="mt-5 space-y-2 text-sm">
+          {{ range $productItems }}
+          <a href="{{ .url }}" class="block rounded-xl border border-rose-200 bg-white/80 px-4 py-3 font-semibold text-rose-950 transition-colors hover:border-rose-400 hover:bg-white dark:border-rose-300/20 dark:bg-white/6 dark:text-rose-50 dark:hover:bg-white/10">{{ .name }}</a>
+          {{ end }}
+        </div>
+      </div>
+      {{ end }}
 
       {{ if gt (len $areaItems) 0 }}
       <div class="rounded-[1.75rem] border border-blue-200/80 bg-blue-50/60 p-6 shadow-[0_18px_48px_rgba(59,130,246,0.08)] dark:border-blue-400/20 dark:bg-blue-500/10">

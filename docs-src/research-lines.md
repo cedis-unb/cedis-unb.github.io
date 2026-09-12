@@ -4,7 +4,7 @@ Documento técnico da camada **Linhas de pesquisa** do portal CEDIS.
 Não é publicado no site (`docs-src/` fica fora de `content/`).
 Registro de decisão e histórico: [`historical/2026-09-12-linhas-de-pesquisa.md`](historical/2026-09-12-linhas-de-pesquisa.md).
 
-Última revisão: 2026-09-12.
+Última revisão: 2026-09-12. Estado: as cinco linhas estão `active` desde 2026-09-12 (ver registro histórico §3b).
 
 ---
 
@@ -85,6 +85,7 @@ são calculadas **só** a partir deste arquivo, pelo partial
 |---|---|
 | Produção recente | itens de `productions.yaml` cujas `tags` interceptam `areas ∪ projects ∪ themes.id` da linha; ordenados por ano desc; 8 exibidos, contagem total |
 | Orientações vinculadas | entradas de `defesas.yaml` cujo `project` ∈ `projects` **ou** cujas `tags` interceptam o mesmo conjunto; 6 exibidas, contagem total |
+| Produtos derivados | páginas de `content/products/` cujo `project` ou `secondary_projects` ∈ `projects`, ou cujas `tags` interceptam o mesmo conjunto |
 
 Como quase toda produção é etiquetada com ids de área, uma área presente em
 duas linhas faz a mesma produção contar nas duas. É intencional (centro

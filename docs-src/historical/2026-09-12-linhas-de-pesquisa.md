@@ -165,13 +165,48 @@ para conferir página, lista, menu, blocos relacionados, home e mapa.
   compilado. Correção: uma linha em `main.css`; guarda de regressão
   `npm run check:css` dentro de `npm test`.
 
+## 3b. Revisão dos nomes frente ao CNPq/CAPES e ativação (2026-09-12)
+
+Sergio confrontou as cinco propostas com o conceito de linha do DGP/CNPq
+(tema aglutinador com tradição investigativa; nem todo integrante precisa
+estar em todas as linhas) e com o Documento de Área de Computação
+2025–2028 da CAPES (Engenharia de Software, IA, Ciência de Dados,
+Cibersegurança, sistemas computacionais e aplicações interdisciplinares
+com contribuição da/para a Computação). Conclusões aplicadas:
+
+| Antes | Depois | Motivo |
+|---|---|---|
+| Engenharia de software, arquitetura e qualidade | **Engenharia, evolução e qualidade de software** | subárea explícita do CNPq; agrega VV&T, Arquitetura e Linhas de Produto já registradas pelo grupo (SIGAA, 2021–atual) |
+| Inteligência artificial, linguagem e análise de dados | **Inteligência artificial, processamento de linguagem e ciência de dados** | "ciência de dados" tem identidade disciplinar reconhecida pela CAPES; CEDIS integra o CenIA/UnB |
+| Tecnologias para aprendizagem, gamificação e fatores humanos | (mantido) | evolui "Ciência da Aprendizagem, Serious Games e Gamificação" (SIGAA); nome deixa clara a identidade computacional |
+| Transformação digital e sistemas sociotécnicos | **Sistemas sociotécnicos e transformação digital** | "impacto social" é missão transversal do centro, não objeto aglutinador de linha |
+| Sistemas seguros, escaláveis e de alto desempenho | **Sistemas computacionais: segurança, desempenho e sustentabilidade** | "desempenho" é campo investigativo reconhecível; absorve software verde e sustentabilidade computacional |
+
+Ajustes decorrentes no YAML: `history` nas linhas 1 e 3 com a evidência
+institucional do SIGAA; temas novos (evolução de software, ciência de
+dados, jogos sérios, ciência da aprendizagem, governo digital, processos
+organizacionais, DevOps) e tema "software de impacto social" removido;
+`green_software` e o projeto GSD também na linha 5, com Fabiana Mendes
+pela regra de projeto vinculado; slugs atualizados (linhas ainda não
+tinham URL pública).
+
+A página da linha passou a listar **produtos derivados** (produto cujo
+projeto de origem ou secundário está na linha, ou cujas tags interceptam
+as chaves da linha), fechando a cadeia de evidência pesquisadores →
+projetos → publicações → orientações → produtos.
+
+**Ativação.** Na sequência, Sergio decidiu não manter o estado de
+rascunho: as cinco linhas passaram a `status: active` e foram publicadas.
+Pendência que fica: alinhar o registro do grupo no DGP/CNPq às cinco
+linhas.
+
 ## 4. Próximos passos registrados
 
-1. Confrontar as cinco linhas com as registradas no DGP/CNPq; fundir,
-   renomear ou substituir.
+1. Alinhar o registro do grupo no DGP/CNPq às cinco linhas publicadas
+   (nomes revisados em 2026-09-12, ver §3b).
 2. Validar `researchers[]` com cada pesquisador (vínculos já declarados
    por Sergio em 2026-09-12, comentados com a evidência no YAML).
 3. Revisar `projects[]` e `themes[]`; decidir `period` e `history`.
-4. Promover linha a linha (`status: active`), seguindo `../research-lines.md` §4.
+4. (Feito em 2026-09-12: as cinco linhas foram ativadas de uma vez.)
 5. Avaliar, depois da primeira promoção: indicadores por linha, produtos no
    mapa, contextos/métodos como entidades.
