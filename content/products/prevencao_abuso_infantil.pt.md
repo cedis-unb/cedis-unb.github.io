@@ -30,7 +30,7 @@ tags:
 ---
 ## Descrição do Produto
 
-**Prevenção ao Abuso Sexual Infantil** é um produto tecnológico registrado em 2025 no Currículo Lattes do Prof. {{< link-interno "/people/george_marsicano" "George Marsicano Corrêa" >}}. O software é um aplicativo mobile gamificado voltado a crianças de 4 a 10 anos, com uso mediado por pais, responsáveis ou educadores, cujo objetivo é apoiar a aprendizagem e a educação preventiva sobre autoproteção e prevenção do abuso sexual infantil (ASI), servindo como recurso lúdico para engajar as crianças com o conteúdo das duas principais cartilhas do projeto **Eu Me Protejo**.
+**Prevenção ao Abuso Sexual Infantil** é um produto tecnológico cadastrado em 2025 no Currículo Lattes do Prof. {{< link-interno "/people/george_marsicano" "George Marsicano Corrêa" >}}. O software é um aplicativo mobile gamificado voltado a crianças de 4 a 10 anos, com uso mediado por pais, responsáveis ou educadores, cujo objetivo é apoiar a aprendizagem e a educação preventiva sobre autoproteção e prevenção do abuso sexual infantil (ASI), servindo como recurso lúdico para engajar as crianças com o conteúdo das duas principais cartilhas do projeto **Eu Me Protejo**.
 
 ## Registro INPI
 

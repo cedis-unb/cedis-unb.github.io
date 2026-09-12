@@ -55,7 +55,9 @@ Under the coordination of Prof. George Marsicano, the research and development l
 
 ## {{< i18n "area_ongoing_projets" >}}
 
-{{< postsByCategoriesTags categories="project" tags="soft_skills" >}}
+{{< postsByCategoriesTags categories="project" tags="soft_skills" notags="closed" >}}
+
+{{< postsByCategoriesTags caput="## " caputKey="area_closed_projects" categories="project" tags="soft_skills,closed" >}}
 
 
 ## {{< i18n "area_publications_productions" >}}

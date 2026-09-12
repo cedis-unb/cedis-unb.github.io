@@ -66,7 +66,9 @@ An academic in the field of Active Learning Methodologies and a faculty member a
 
 ## {{< i18n "area_ongoing_projets" >}}
 
-{{< postsByCategoriesTags categories="project" tags="active_learning,education" >}}
+{{< postsByCategoriesTags categories="project" tags="active_learning,education" notags="closed" >}}
+
+{{< postsByCategoriesTags caput="## " caputKey="area_closed_projects" categories="project" tags="active_learning,education,closed" >}}
 
 - **Teaching Project, "Software Development" Course, Prof. Sérgio Freitas:** Revitalized through gamification "Dawn Feudal" and inspired by a feudal scenario and based on the Octalysis model, this approach transforms learning into an interactive journey, where students face practical software development challenges, promoting skills like critical thinking and collaboration. The playful experience not only engages students but also prepares them for real-world software challenges.
 Available resources: MS Power Apps mobile app, SharePoint site, Power BI dashboards, and a thematic player's guide, all integrated into the Microsoft 365 platform.

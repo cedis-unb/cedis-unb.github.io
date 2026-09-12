@@ -27,3 +27,4 @@ Our work runs on three fronts:
 - {{< link-interno "/indicadores" "Indicators" >}} — consolidated numbers for people, projects, products, and publications
 - {{< link-interno "/map" "Knowledge map" >}} — visualization of areas, people, and projects
 - {{< link-interno "/contact" "Contact" >}} — how to reach us
+{{% research-lines-link "Research lines" "scientific programs that organize areas, researchers, and projects" %}}

@@ -53,7 +53,9 @@ No CEDIS, atualmente, a Engenharia de Requisitos é uma área de pesquisa, desen
 
 ## {{< i18n "area_ongoing_projets" >}}
 
-{{< postsByCategoriesTags categories="project" tags="software_requirements" >}}
+{{< postsByCategoriesTags categories="project" tags="software_requirements" notags="closed" >}}
+
+{{< postsByCategoriesTags caput="## " caputKey="area_closed_projects" categories="project" tags="software_requirements,closed" >}}
 
 
 ## {{< i18n "area_publications_productions" >}}

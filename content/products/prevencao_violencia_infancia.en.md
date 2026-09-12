@@ -32,7 +32,7 @@ tags:
 ---
 ## Product Description
 
-**Childhood Violence Prevention** is a technological product recorded in 2025 in the Lattes CV of Prof. {{< link-interno "/people/george_marsicano" "George Marsicano Corrêa" >}}. The software is a gamified mobile application built on the **Good Practices Manual** of the "Pró-vida e Eu Me Protejo" project — a partnership between the Pró-Vida institution and the Eu Me Protejo project — to increase engagement and facilitate access to guidance content for parents, guardians, and educators on preventing violence in childhood, including in offline mode.
+**Childhood Violence Prevention** is a technological product catalogued in 2025 in the Lattes CV of Prof. {{< link-interno "/people/george_marsicano" "George Marsicano Corrêa" >}}. The software is a gamified mobile application built on the **Good Practices Manual** of the "Pró-vida e Eu Me Protejo" project — a partnership between the Pró-Vida institution and the Eu Me Protejo project — to increase engagement and facilitate access to guidance content for parents, guardians, and educators on preventing violence in childhood, including in offline mode.
 
 ## INPI Registration
 

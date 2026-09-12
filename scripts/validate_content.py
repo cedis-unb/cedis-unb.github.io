@@ -60,6 +60,7 @@ STRICT = os.environ.get("CEDIS_VALIDATE_STRICT", "").lower() in ("1", "true", "y
 REPORT_PATH = os.environ.get("CEDIS_VALIDATE_REPORT")
 PROJECT_STATUSES = {"active", "ongoing", "closed"}
 PRODUCT_STATUSES = {"active", "prototype", "archived", "beta"}
+RESEARCH_LINE_STATUSES = {"draft", "active", "archived"}
 EXCLUDED_PROJECT_IDS = {
     # Projetos externos ou institucionais de terceiros em que integrantes do
     # CEDIS participaram, mas que não devem compor o rol de projetos CEDIS.
@@ -839,8 +840,87 @@ def write_report() -> None:
             f.write("\n")
 
 
+def validate_research_lines(
+    lines_data: object,
+    area_ids: set[str],
+    person_ids: set[str],
+    advisor_ids: set[str],
+    project_ids: set[str],
+) -> None:
+    """data/research_lines.yaml — linhas de pesquisa (camada distinta de areas.yaml).
+
+    Regras:
+      · schema (schemas/research_line.schema.json); id e slug únicos;
+      · areas[] ⊆ areas.yaml; researchers[] ⊆ perfis (aviso se não for
+        pesquisador); projects[] ⊆ projetos; themes[].id únicos na linha e
+        distintos de ids de área;
+      · linha `active` exige >= 1 área e >= 1 pesquisador (erro) e avisa
+        quando não tem projeto vinculado;
+      · period.start <= period.end.
+    Nada é deduzido: só o que a linha declara é validado.
+    """
+    if not isinstance(lines_data, dict):
+        return
+    schema = load_schema("research_line")
+    lines = lines_data.get("research_lines", []) or []
+    seen_ids: set[str] = set()
+    seen_slugs: set[str] = set()
+    for line in lines:
+        if not isinstance(line, dict):
+            error("research_lines", "data/research_lines.yaml", "entrada não é um mapeamento")
+            continue
+        lid = str(line.get("id", "<no-id>"))
+        location = f"data/research_lines.yaml::{lid}"
+        if lid in seen_ids:
+            error("research_lines", location, "id duplicado")
+        seen_ids.add(lid)
+        slug = line.get("slug")
+        if slug:
+            if slug in seen_slugs:
+                error("research_lines", location, f"slug duplicado: '{slug}'")
+            seen_slugs.add(slug)
+        validate_against_schema(line, schema, location)
+        status = line.get("status")
+        if status not in RESEARCH_LINE_STATUSES:
+            error("research_lines", location, f"status inválido: '{status}' (use draft|active|archived)")
+        areas = as_list(line.get("areas"))
+        researchers = as_list(line.get("researchers"))
+        projects = as_list(line.get("projects"))
+        for area_id in areas:
+            if area_id not in area_ids:
+                error("xref", location, f"area '{area_id}' não existe em areas.yaml")
+        for researcher in researchers:
+            if researcher not in person_ids:
+                error("xref", location, f"researcher '{researcher}' não existe em content/people")
+            elif researcher not in advisor_ids:
+                warn("xref", location, f"researcher '{researcher}' não é perfil de pesquisador/orientador")
+        for pid in projects:
+            if pid not in project_ids:
+                error("xref", location, f"project '{pid}' não existe em projects.yaml/content/projects")
+        theme_ids = [t.get("id") for t in as_list(line.get("themes")) if isinstance(t, dict)]
+        if len(theme_ids) != len(set(theme_ids)):
+            error("research_lines", location, "themes[].id duplicado")
+        for tid in theme_ids:
+            if tid in area_ids:
+                warn("research_lines", location, f"theme '{tid}' coincide com id de área; use areas[] para áreas")
+        period = line.get("period") or {}
+        if isinstance(period, dict):
+            start, end = period.get("start"), period.get("end")
+            if isinstance(start, int) and isinstance(end, int) and end < start:
+                error("research_lines", location, "period.end anterior a period.start")
+        if status == "active":
+            if not areas:
+                error("research_lines", location, "linha active precisa de ao menos uma área de atuação")
+            if not researchers:
+                error("research_lines", location, "linha active precisa de ao menos um pesquisador (vínculo explícito)")
+            if not projects:
+                warn("research_lines", location, "linha active sem projeto vinculado")
+
+
 def main() -> int:
     areas_data = load_yaml(DATA_DIR / "areas.yaml") or {}
+    lines_path = DATA_DIR / "research_lines.yaml"
+    lines_data = load_yaml(lines_path) if lines_path.exists() else None
     people_data = load_yaml(DATA_DIR / "people.yaml") or {}
     prod_data = load_yaml(DATA_DIR / "productions.yaml") or {}
     projects_data = load_yaml(DATA_DIR / "projects.yaml") or {}
@@ -879,6 +959,7 @@ def main() -> int:
     defesa_years = collect_defesa_years(defesas_data)
     validate_productions(prod_data, advisor_ids, person_ids, defesa_ids=defesa_ids, defesa_years=defesa_years)
     validate_data_projects(projects_data, person_ids)
+    validate_research_lines(lines_data, area_ids, person_ids, advisor_ids, project_ids)
 
     validate_product_pages(product_entries, person_ids, area_ids, project_ids, publication_ids)
     all_fms.extend(generated_pub_entries)
@@ -897,7 +978,9 @@ def main() -> int:
             all_fms.extend(validate_structural_page(path, schema_name))
     # Pessoas e áreas: valida frontmatter contra schema mínimo. Perfis derivados
     # e orientadores externos são stubs técnicos; não têm data editorial própria.
-    for section in ("people", "areas"):
+    for section in ("people", "areas", "research-lines"):
+        if not (CONTENT_DIR / section).exists():
+            continue
         for md_path in sorted((CONTENT_DIR / section).rglob("*.md")):
             fm = parse_frontmatter(md_path)
             if fm is None:

@@ -137,10 +137,18 @@ languages:
           url: /infra/
           weight: 40
       pesquisa:
+        - identifier: pesquisa-linhas
+          pre: researcher
+          name: "Linhas de pesquisa"
+          post: "Programas científicos do centro"
+          url: /research-lines/
+          weight: 5
+          params:
+            requires: research_lines
         - identifier: pesquisa-areas
           pre: stars
-          name: "Áreas de pesquisa"
-          post: "Linhas e temas do centro"
+          name: "Áreas de atuação"
+          post: "Competências e frentes do centro"
           url: /categories/knowledge_areas/
           weight: 10
         - identifier: pesquisa-mapa
@@ -218,6 +226,12 @@ languages:
           post: "Programas de formação e materiais abertos"
           url: https://slides.cedis.tec.br/programas-de-formacao
           weight: 20
+        - identifier: pub-registros
+          pre: products
+          name: "Registros de software"
+          post: "Programas de computador registrados no INPI"
+          url: /publications/registrations/
+          weight: 25
         - identifier: pub-zenodo
           pre: zenodo
           name: "Materiais no Zenodo"
@@ -228,7 +242,7 @@ languages:
         - identifier: part-oportunidades
           pre: comments
           name: "Oportunidades"
-          post: "Chamadas encerradas e novas seleções quando houver"
+          post: "Chamadas abertas e arquivo de editais"
           url: /oportunidades/
           weight: 10
         - identifier: part-trilhas
@@ -410,10 +424,18 @@ languages:
           url: /infra/
           weight: 40
       pesquisa:
+        - identifier: pesquisa-linhas
+          pre: researcher
+          name: "Research lines"
+          post: "The center's scientific programs"
+          url: /research-lines/
+          weight: 5
+          params:
+            requires: research_lines
         - identifier: pesquisa-areas
           pre: stars
-          name: "Research areas"
-          post: "Lines and topics of the center"
+          name: "Areas of expertise"
+          post: "Competencies and fronts of the center"
           url: /categories/knowledge_areas/
           weight: 10
         - identifier: pesquisa-mapa
@@ -491,6 +513,12 @@ languages:
           post: "Training programs and open materials"
           url: https://slides.cedis.tec.br/programas-de-formacao
           weight: 20
+        - identifier: pub-registros
+          pre: products
+          name: "Software registrations"
+          post: "Computer programs registered with INPI"
+          url: /publications/registrations/
+          weight: 25
         - identifier: pub-zenodo
           pre: zenodo
           name: "Materials on Zenodo"
@@ -501,7 +529,7 @@ languages:
         - identifier: part-oportunidades
           pre: comments
           name: "Opportunities"
-          post: "Closed calls and future selections when available"
+          post: "Open calls and archive of notices"
           url: /oportunidades/
           weight: 10
         - identifier: part-trilhas

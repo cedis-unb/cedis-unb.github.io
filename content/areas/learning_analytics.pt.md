@@ -62,6 +62,10 @@ Acadêmica na área de <i>Learning Analytics</i> e Gestão Educacional. Atua c
   </div>
 
 ## {{< i18n "area_ongoing_projets" >}}
+
+{{< postsByCategoriesTags categories="project" tags="learning_analytics" notags="closed" >}}
+
+{{< postsByCategoriesTags caput="## " caputKey="area_closed_projects" categories="project" tags="learning_analytics,closed" >}}
 - Uma nova abordagem aplicada ao Problema do University Course Timetable  
     Éber Júnio Borges Moreira, Início: 2023, status: em andamento.  
     Trabalho focado em otimizar a programação de cursos universitários, aplicando técnicas para melhorar a eficiência e eficácia na elaboração de horários acadêmicos. Este trabalho visa resolver desafios comuns na gestão de horários, proporcionando uma solução mais adaptável e conveniente para instituições de ensino superior. A UnB é usada como estudo de caso.

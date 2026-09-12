@@ -32,7 +32,7 @@ tags:
 ---
 ## Descrição do Produto
 
-**Prevenção da Violência na Infância** é um produto tecnológico registrado em 2025 no Currículo Lattes do Prof. {{< link-interno "/people/george_marsicano" "George Marsicano Corrêa" >}}. O software é uma aplicação mobile gamificada, construída com base no **Manual de Boas Práticas** do projeto "Pró-vida e Eu Me Protejo" — parceria entre a instituição Pró-Vida e o projeto Eu Me Protejo — para aumentar engajamento e facilitar o acesso a conteúdos de orientação para pais, tutores e educadores sobre prevenção da violência na infância, inclusive em modo offline.
+**Prevenção da Violência na Infância** é um produto tecnológico cadastrado em 2025 no Currículo Lattes do Prof. {{< link-interno "/people/george_marsicano" "George Marsicano Corrêa" >}}. O software é uma aplicação mobile gamificada, construída com base no **Manual de Boas Práticas** do projeto "Pró-vida e Eu Me Protejo" — parceria entre a instituição Pró-Vida e o projeto Eu Me Protejo — para aumentar engajamento e facilitar o acesso a conteúdos de orientação para pais, tutores e educadores sobre prevenção da violência na infância, inclusive em modo offline.
 
 ## Registro INPI
 

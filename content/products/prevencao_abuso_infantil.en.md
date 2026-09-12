@@ -30,7 +30,7 @@ tags:
 ---
 ## Product Description
 
-**Child Sexual Abuse Prevention** is a technological product recorded in 2025 in the Lattes CV of Prof. {{< link-interno "/people/george_marsicano" "George Marsicano Corrêa" >}}. The software is a gamified mobile application aimed at children ages 4 to 10, with use mediated by parents, guardians, or educators. Its goal is to support learning and preventive education around self-protection and child sexual abuse (CSA) prevention, serving as an engaging resource that brings children into contact with the content of the two main booklets from the **Eu Me Protejo** project.
+**Child Sexual Abuse Prevention** is a technological product catalogued in 2025 in the Lattes CV of Prof. {{< link-interno "/people/george_marsicano" "George Marsicano Corrêa" >}}. The software is a gamified mobile application aimed at children ages 4 to 10, with use mediated by parents, guardians, or educators. Its goal is to support learning and preventive education around self-protection and child sexual abuse (CSA) prevention, serving as an engaging resource that brings children into contact with the content of the two main booklets from the **Eu Me Protejo** project.
 
 ## INPI Registration
 

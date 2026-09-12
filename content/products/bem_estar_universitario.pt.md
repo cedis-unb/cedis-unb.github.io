@@ -29,7 +29,7 @@ tags:
 ---
 ## Descrição do Produto
 
-**Bem-Estar Universitário** é um produto tecnológico registrado em 2025 no Currículo Lattes do Prof. {{< link-interno "/people/george_marsicano" "George Marsicano Corrêa" >}}. Trata-se de um aplicativo móvel destinado a promover saúde mental e bem-estar no contexto universitário, respondendo a problemas recorrentes do ambiente acadêmico — ansiedade, carência de suporte emocional acessível e impactos no desempenho e no bem-estar geral. A proposta busca fortalecer relações interpessoais, apoiar o alcance de metas individuais e fomentar entendimento e consciência emocional, estimulando autoconhecimento e evolução pessoal.
+**Bem-Estar Universitário** é um produto tecnológico cadastrado em 2025 no Currículo Lattes do Prof. {{< link-interno "/people/george_marsicano" "George Marsicano Corrêa" >}}. Trata-se de um aplicativo móvel destinado a promover saúde mental e bem-estar no contexto universitário, respondendo a problemas recorrentes do ambiente acadêmico — ansiedade, carência de suporte emocional acessível e impactos no desempenho e no bem-estar geral. A proposta busca fortalecer relações interpessoais, apoiar o alcance de metas individuais e fomentar entendimento e consciência emocional, estimulando autoconhecimento e evolução pessoal.
 
 ## Base de Desenvolvimento
 

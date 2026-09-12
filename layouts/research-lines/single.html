@@ -1,0 +1,296 @@
+{{ define "main" }}
+{{/*
+  research-lines/single.html — página de uma linha de pesquisa.
+  O stub em content/research-lines/<slug>.<lang>.md só carrega id/title;
+  todo o conteúdo vem de data/research_lines.yaml via research-line-index.
+
+  Derivações (documentadas em docs-src/research-lines.md):
+    · áreas, pesquisadores, projetos, temas — explícitos na linha;
+    · produção  — itens de productions.yaml cujas tags interceptam
+                  areas ∪ projects ∪ themes da linha;
+    · orientações — defesas.yaml cujo `project` ∈ projects ou cujas tags
+                  interceptam o mesmo conjunto.
+*/}}
+{{ $isPt := eq .Site.Language.Lang "pt" }}
+{{ $lang := .Site.Language.Lang }}
+{{ $lineID := .Params.id | default .File.TranslationBaseName }}
+{{ $index := partialCached "research-line-index" "global" $lang }}
+{{ $line := index $index $lineID }}
+{{ $catalogURL := "research-lines/" | relLangURL }}
+{{ with site.GetPage "/research-lines" }}{{ $catalogURL = .RelPermalink }}{{ end }}
+
+{{ $areaIndex := partialCached "area-index" "global" $lang }}
+{{ $projectIndex := partialCached "project-index" "global" $lang }}
+
+{{ $areaItems := slice }}
+{{ $researcherItems := slice }}
+{{ $projectItems := slice }}
+{{ $themeItems := slice }}
+{{ $matchKeys := slice }}
+{{ $productionItems := slice }}
+{{ $defesaItems := slice }}
+
+{{ if $line }}
+  {{ range $line.areas }}
+    {{ $id := . }}
+    {{ $matchKeys = $matchKeys | append $id }}
+    {{ with index $areaIndex $id }}
+      {{ $areaItems = $areaItems | append (dict "id" $id "name" .name "url" .link) }}
+    {{ else }}
+      {{ $areaItems = $areaItems | append (dict "id" $id "name" (partial "translated-label.html" (dict "value" $id)) "url" (printf "/tags/%s" ($id | urlize) | relLangURL)) }}
+    {{ end }}
+  {{ end }}
+
+  {{ range $line.researchers }}
+    {{ $slug := . }}
+    {{ $person := partial "people-lookup" $slug }}
+    {{ $personName := $person.name | default (replaceRE "[-_]+" " " $slug | title) }}
+    {{ $personURL := $person.link | default $person.page_url | default "" }}
+    {{ $researcherItems = $researcherItems | append (dict "id" $slug "name" $personName "url" $personURL) }}
+  {{ end }}
+
+  {{ range $line.projects }}
+    {{ $id := . }}
+    {{ $matchKeys = $matchKeys | append $id }}
+    {{ with index $projectIndex $id }}
+      {{ $status := "" }}
+      {{ with .data }}{{ $status = .status | default "" }}{{ end }}
+      {{ $projectItems = $projectItems | append (dict "id" $id "name" .name "url" .link "status" $status) }}
+    {{ else }}
+      {{ $projectItems = $projectItems | append (dict "id" $id "name" (partial "translated-label.html" (dict "value" $id)) "url" "" "status" "") }}
+    {{ end }}
+  {{ end }}
+
+  {{ range $line.themes }}
+    {{ $matchKeys = $matchKeys | append .id }}
+    {{ $tagURL := "" }}
+    {{ with site.GetPage (printf "/tags/%s" (.id | urlize)) }}{{ $tagURL = .RelPermalink }}{{ end }}
+    {{ $themeItems = $themeItems | append (dict "id" .id "name" .name "url" $tagURL) }}
+  {{ end }}
+
+  {{ range hugo.Data.productions.items }}
+    {{ $matches := false }}
+    {{ range (.tags | default slice) }}{{ if in $matchKeys . }}{{ $matches = true }}{{ end }}{{ end }}
+    {{ if $matches }}
+      {{ $title := "" }}
+      {{ with .title }}{{ $title = index . $lang | default (index . "pt") | default "" }}{{ end }}
+      {{ $yr := 0 }}{{ with .year }}{{ $yr = int . }}{{ end }}
+      {{ $url := "" }}{{ with .url }}{{ $url = . }}{{ end }}
+      {{ if not $url }}{{ $url = printf "%s#%d" ("publications/" | relLangURL) $yr }}{{ end }}
+      {{ if $title }}
+        {{ $productionItems = $productionItems | append (dict "title" $title "year" $yr "type" (.type | default "") "authors" (delimit (.authors | default slice) ", ") "url" $url) }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+  {{ $productionItems = sort $productionItems "year" "desc" }}
+
+  {{ range (hugo.Data.defesas | default slice) }}
+    {{ $matches := false }}
+    {{ with .project }}{{ if in $line.projects . }}{{ $matches = true }}{{ end }}{{ end }}
+    {{ range (.tags | default slice) }}{{ if in $matchKeys . }}{{ $matches = true }}{{ end }}{{ end }}
+    {{ if $matches }}
+      {{ $title := "" }}
+      {{ with .title }}{{ $title = index . $lang | default (index . "pt") | default "" }}{{ end }}
+      {{ $students := slice }}
+      {{ range (.students | default slice) }}{{ with .name }}{{ $students = $students | append . }}{{ end }}{{ end }}
+      {{ $when := printf "%v" (.held_date | default .scheduled_date | default "") }}
+      {{ $defesaItems = $defesaItems | append (dict "id" .id "title" $title "students" (delimit $students ", ") "type" (.type | default "") "advisor" (.advisor | default "") "date" $when "url" (printf "/defesas/%s/" .id | relLangURL)) }}
+    {{ end }}
+  {{ end }}
+  {{ $defesaItems = sort $defesaItems "date" "desc" }}
+{{ end }}
+
+{{ $periodText := "" }}
+{{ if $line }}
+  {{ with $line.period }}
+    {{ with .start }}
+      {{ $periodText = printf "%v" . }}
+    {{ end }}
+    {{ if $periodText }}
+      {{ with .end }}{{ $periodText = printf "%s–%v" $periodText . }}{{ else }}{{ $periodText = printf "%s–%s" $periodText (i18n "ui_line_present") }}{{ end }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{ $statusKey := "" }}
+{{ if $line }}{{ $statusKey = printf "ui_research_line_status_%s" $line.status }}{{ end }}
+{{ $isArchived := and $line (eq $line.status "archived") }}
+{{ $isDraft := and $line (eq $line.status "draft") }}
+{{ $summary := "" }}{{ if $line }}{{ $summary = $line.summary }}{{ end }}
+
+<article class="bg-[linear-gradient(180deg,#fffbeb_0%,#f8fafc_22%,#f8fafc_100%)] text-slate-900 dark:bg-none dark:bg-gray-800 dark:text-white">
+  <section class="relative overflow-hidden border-b border-slate-200/80 bg-[radial-gradient(circle_at_top_left,rgba(245,158,11,0.18),transparent_30%),radial-gradient(circle_at_84%_14%,rgba(197,39,47,0.12),transparent_24%),linear-gradient(180deg,#fffdf7_0%,#f8fafc_100%)] dark:border-white/10 dark:bg-[radial-gradient(circle_at_top_left,rgba(245,158,11,0.16),transparent_28%),radial-gradient(circle_at_84%_14%,rgba(197,39,47,0.14),transparent_22%),linear-gradient(180deg,#0f172a_0%,#111827_100%)]">
+    <div aria-hidden="true" class="absolute left-0 top-0 h-40 w-40 rounded-full bg-amber-300/25 blur-3xl dark:bg-amber-500/10"></div>
+    <div class="relative mx-auto max-w-(--breakpoint-xl) px-4 py-14 md:px-6 lg:px-8 lg:py-20">
+      {{ partial "breadcrumbs.html" (dict "page" . "variant" "light") }}
+      <div class="flex flex-wrap items-center gap-2">
+        <span class="inline-flex items-center rounded-full border border-amber-300/70 bg-amber-50 px-4 py-2 text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-amber-800 shadow-xs dark:border-amber-400/25 dark:bg-amber-500/10 dark:text-amber-100">{{ i18n "ui_research_line" }}</span>
+        {{ if or $isArchived $isDraft }}
+        <span class="inline-flex items-center rounded-full border px-4 py-2 text-[0.68rem] font-semibold uppercase tracking-[0.22em] shadow-xs {{ if $isDraft }}border-dashed border-amber-400 bg-amber-50 text-amber-800 dark:border-amber-400/40 dark:bg-amber-500/10 dark:text-amber-100{{ else }}border-slate-300/70 bg-slate-100 text-slate-700 dark:border-white/10 dark:bg-white/5 dark:text-slate-200{{ end }}">{{ i18n $statusKey }}</span>
+        {{ end }}
+      </div>
+      <h1 class="mt-5 max-w-4xl text-4xl font-black leading-tight text-slate-950 md:text-5xl dark:text-white">{{ .Title }}</h1>
+      {{ with $summary }}
+      <p class="mt-5 max-w-3xl text-lg leading-8 text-slate-600 md:text-xl dark:text-slate-300">{{ . }}</p>
+      {{ end }}
+      <div class="mt-8 flex flex-wrap items-center gap-3 text-sm text-slate-600 dark:text-slate-300">
+        {{ with $periodText }}
+        <div class="inline-flex items-center rounded-2xl border border-slate-200 bg-white/85 px-4 py-2 shadow-xs dark:border-white/10 dark:bg-white/5"><span class="font-semibold text-slate-900 dark:text-white">{{ i18n "ui_line_period" }}:</span><span class="ml-2">{{ . }}</span></div>
+        {{ end }}
+        <div class="inline-flex items-center rounded-2xl border border-slate-200 bg-white/85 px-4 py-2 shadow-xs dark:border-white/10 dark:bg-white/5"><span class="font-semibold text-slate-900 dark:text-white">{{ i18n "ui_line_areas" }}:</span><span class="ml-2">{{ len $areaItems }}</span></div>
+        <div class="inline-flex items-center rounded-2xl border border-slate-200 bg-white/85 px-4 py-2 shadow-xs dark:border-white/10 dark:bg-white/5"><span class="font-semibold text-slate-900 dark:text-white">{{ i18n "ui_line_researchers" }}:</span><span class="ml-2">{{ len $researcherItems }}</span></div>
+        <div class="inline-flex items-center rounded-2xl border border-slate-200 bg-white/85 px-4 py-2 shadow-xs dark:border-white/10 dark:bg-white/5"><span class="font-semibold text-slate-900 dark:text-white">{{ i18n "ui_line_projects" }}:</span><span class="ml-2">{{ len $projectItems }}</span></div>
+      </div>
+      <div class="mt-8 flex flex-wrap gap-4">
+        <a href="#line-content" class="inline-flex items-center justify-center rounded-2xl bg-slate-950 px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-slate-800 dark:bg-white dark:text-slate-950 dark:hover:bg-slate-200">{{ i18n "ui_line_explore" }}</a>
+        <a href="{{ $catalogURL }}" class="inline-flex items-center justify-center rounded-2xl border border-slate-300 bg-white/80 px-5 py-3 text-sm font-semibold text-slate-900 transition-colors hover:border-slate-400 hover:bg-white dark:border-white/10 dark:bg-white/5 dark:text-white dark:hover:bg-white/10">{{ i18n "ui_line_browse" }}</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="mx-auto grid max-w-(--breakpoint-xl) gap-8 px-4 py-12 md:px-6 lg:grid-cols-[minmax(0,1fr)_320px] lg:px-8 lg:py-16">
+    <div class="min-w-0 overflow-hidden rounded-4xl border border-slate-200/80 bg-white p-6 shadow-[0_20px_60px_rgba(15,23,42,0.08)] dark:border-white/10 dark:bg-slate-900/40 dark:shadow-[0_20px_60px_rgba(0,0,0,0.25)] md:p-8 lg:p-10">
+      <div id="line-content" class="prose prose-zinc max-w-none prose-headings:scroll-mt-28 prose-headings:font-black prose-headings:text-slate-950 prose-h2:mt-12 prose-h2:border-t prose-h2:border-slate-200 prose-h2:pt-8 prose-h2:text-2xl prose-p:leading-8 prose-a:text-sky-700 prose-a:no-underline hover:prose-a:text-sky-800 hover:prose-a:underline prose-li:leading-7 dark:prose-invert dark:prose-headings:text-white dark:prose-h2:border-white/10 dark:prose-a:text-sky-300">
+        {{ if not $line }}
+          <p>{{ i18n "ui_research_lines_empty" }}</p>
+        {{ else }}
+          {{ with $line.description }}
+          <h2 id="scope">{{ i18n "ui_line_scope" }}</h2>
+          {{ . | markdownify }}
+          {{ end }}
+
+          {{ with $line.questions }}
+          <h2 id="questions">{{ i18n "ui_line_questions" }}</h2>
+          <ul>{{ range . }}<li>{{ . }}</li>{{ end }}</ul>
+          {{ end }}
+
+          {{ with $line.methods }}
+          <h2 id="methods">{{ i18n "ui_line_methods" }}</h2>
+          <ul class="not-prose mt-4 flex flex-wrap gap-2">
+            {{ range . }}<li class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1.5 text-sm font-semibold text-slate-700 dark:border-white/10 dark:bg-white/5 dark:text-slate-200">{{ . }}</li>{{ end }}
+          </ul>
+          {{ end }}
+
+          {{ if gt (len $productionItems) 0 }}
+          <h2 id="production">{{ i18n "ui_line_production" }} <span class="ml-2 align-middle inline-flex items-center rounded-full border border-amber-200 bg-amber-50 px-2.5 py-1 text-sm font-black text-amber-800 dark:border-amber-400/25 dark:bg-amber-500/10 dark:text-amber-100">{{ len $productionItems }}</span></h2>
+          <ol class="not-prose mt-4 divide-y divide-slate-200 dark:divide-white/10">
+            {{ range first 8 $productionItems }}
+            <li class="py-3">
+              <a href="{{ .url }}" class="group block">
+                <div class="flex flex-wrap items-center gap-2 text-[0.68rem] font-semibold uppercase tracking-[0.16em] text-slate-500 dark:text-slate-400">
+                  <span>{{ .year }}</span>
+                  {{ with .type }}<span aria-hidden="true">·</span><span>{{ i18n (printf "pub_type_%s" .) | default . }}</span>{{ end }}
+                </div>
+                <div class="mt-1 font-semibold leading-snug text-slate-900 transition-colors group-hover:text-primary-700 dark:text-white dark:group-hover:text-primary-200">{{ .title }}</div>
+                {{ with .authors }}<div class="mt-0.5 text-sm text-slate-600 dark:text-slate-300">{{ . | truncate 120 }}</div>{{ end }}
+              </a>
+            </li>
+            {{ end }}
+          </ol>
+          <p class="not-prose mt-3 text-sm"><a href="{{ "publications/" | relLangURL }}" class="font-semibold text-primary-700 hover:text-primary-600 dark:text-primary-200">{{ i18n "ui_line_all_publications" }} &rarr;</a></p>
+          {{ end }}
+
+          {{ if gt (len $defesaItems) 0 }}
+          <h2 id="supervisions">{{ i18n "ui_line_supervisions" }} <span class="ml-2 align-middle inline-flex items-center rounded-full border border-amber-200 bg-amber-50 px-2.5 py-1 text-sm font-black text-amber-800 dark:border-amber-400/25 dark:bg-amber-500/10 dark:text-amber-100">{{ len $defesaItems }}</span></h2>
+          <ol class="not-prose mt-4 divide-y divide-slate-200 dark:divide-white/10">
+            {{ range first 6 $defesaItems }}
+            <li class="py-3">
+              <a href="{{ .url }}" class="group block">
+                <div class="flex flex-wrap items-center gap-2 text-[0.68rem] font-semibold uppercase tracking-[0.16em] text-slate-500 dark:text-slate-400">
+                  <span>{{ substr .date 0 4 }}</span>
+                  <span aria-hidden="true">·</span>
+                  <span>{{ partial "defesa-type-label.html" (dict "type" .type "lang" $lang) }}</span>
+                </div>
+                <div class="mt-1 font-semibold leading-snug text-slate-900 transition-colors group-hover:text-primary-700 dark:text-white dark:group-hover:text-primary-200">{{ .title }}</div>
+                {{ with .students }}<div class="mt-0.5 text-sm text-slate-600 dark:text-slate-300">{{ . }}</div>{{ end }}
+              </a>
+            </li>
+            {{ end }}
+          </ol>
+          <p class="not-prose mt-3 text-sm"><a href="{{ "defesas/" | relLangURL }}" class="font-semibold text-primary-700 hover:text-primary-600 dark:text-primary-200">{{ i18n "ui_line_all_defenses" }} &rarr;</a></p>
+          {{ end }}
+
+          {{ with $line.history }}
+          <h2 id="history">{{ i18n "ui_line_history" }}</h2>
+          {{ . | markdownify }}
+          {{ end }}
+        {{ end }}
+      </div>
+    </div>
+
+    <aside class="space-y-6 lg:sticky lg:top-28 lg:self-start">
+      <div class="rounded-[1.75rem] border border-slate-200/80 bg-white p-6 shadow-[0_18px_48px_rgba(15,23,42,0.08)] dark:border-white/10 dark:bg-slate-900/40 dark:shadow-[0_18px_48px_rgba(0,0,0,0.22)]">
+        <div class="text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-slate-700 dark:text-slate-500">{{ i18n "ui_line_numbers" }}</div>
+        <div class="mt-5 grid gap-3 sm:grid-cols-2">
+          <div class="rounded-[1.1rem] border border-slate-200/80 bg-slate-50 px-4 py-4 dark:border-white/10 dark:bg-white/5"><div class="text-[0.65rem] font-semibold uppercase tracking-[0.18em] text-slate-700 dark:text-slate-500">{{ i18n "ui_line_areas" }}</div><div class="mt-2 text-2xl font-black text-slate-950 dark:text-white">{{ len $areaItems }}</div></div>
+          <div class="rounded-[1.1rem] border border-slate-200/80 bg-slate-50 px-4 py-4 dark:border-white/10 dark:bg-white/5"><div class="text-[0.65rem] font-semibold uppercase tracking-[0.18em] text-slate-700 dark:text-slate-500">{{ i18n "ui_line_researchers" }}</div><div class="mt-2 text-2xl font-black text-slate-950 dark:text-white">{{ len $researcherItems }}</div></div>
+          <div class="rounded-[1.1rem] border border-slate-200/80 bg-slate-50 px-4 py-4 dark:border-white/10 dark:bg-white/5"><div class="text-[0.65rem] font-semibold uppercase tracking-[0.18em] text-slate-700 dark:text-slate-500">{{ i18n "ui_line_projects" }}</div><div class="mt-2 text-2xl font-black text-slate-950 dark:text-white">{{ len $projectItems }}</div></div>
+          <div class="rounded-[1.1rem] border border-slate-200/80 bg-slate-50 px-4 py-4 dark:border-white/10 dark:bg-white/5"><div class="text-[0.65rem] font-semibold uppercase tracking-[0.18em] text-slate-700 dark:text-slate-500">{{ i18n "ui_line_publications_count" }}</div><div class="mt-2 text-2xl font-black text-slate-950 dark:text-white">{{ len $productionItems }}</div></div>
+          <div class="rounded-[1.1rem] border border-slate-200/80 bg-slate-50 px-4 py-4 dark:border-white/10 dark:bg-white/5"><div class="text-[0.65rem] font-semibold uppercase tracking-[0.18em] text-slate-700 dark:text-slate-500">{{ i18n "ui_line_supervisions_count" }}</div><div class="mt-2 text-2xl font-black text-slate-950 dark:text-white">{{ len $defesaItems }}</div></div>
+        </div>
+      </div>
+
+      {{ if gt (len $areaItems) 0 }}
+      <div class="rounded-[1.75rem] border border-blue-200/80 bg-blue-50/60 p-6 shadow-[0_18px_48px_rgba(59,130,246,0.08)] dark:border-blue-400/20 dark:bg-blue-500/10">
+        <div class="text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-blue-800 dark:text-blue-100">{{ i18n "ui_line_areas" }}</div>
+        <div class="mt-5 space-y-2 text-sm">
+          {{ range $areaItems }}
+          <a href="{{ .url }}" class="block rounded-xl border border-blue-200 bg-white/80 px-4 py-3 font-semibold text-blue-950 transition-colors hover:border-blue-400 hover:bg-white dark:border-blue-300/20 dark:bg-white/6 dark:text-blue-50 dark:hover:bg-white/10">{{ .name }}</a>
+          {{ end }}
+        </div>
+      </div>
+      {{ end }}
+
+      {{ if gt (len $researcherItems) 0 }}
+      <div class="rounded-[1.75rem] border border-slate-200/80 bg-white p-6 shadow-[0_18px_48px_rgba(15,23,42,0.08)] dark:border-white/10 dark:bg-slate-900/40 dark:shadow-[0_18px_48px_rgba(0,0,0,0.22)]">
+        <div class="text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-slate-700 dark:text-slate-500">{{ i18n "ui_line_researchers" }}</div>
+        <div class="mt-5 space-y-2 text-sm">
+          {{ range $researcherItems }}
+            {{ if .url }}
+            <a href="{{ .url }}" class="block rounded-xl border border-slate-200/80 bg-slate-50 px-4 py-3 font-semibold text-slate-900 transition-colors hover:border-slate-300 hover:bg-white dark:border-white/10 dark:bg-white/5 dark:text-white dark:hover:bg-white/10">{{ .name }}</a>
+            {{ else }}
+            <div class="rounded-xl border border-slate-200/80 bg-slate-50 px-4 py-3 font-semibold text-slate-900 dark:border-white/10 dark:bg-white/5 dark:text-white">{{ .name }}</div>
+            {{ end }}
+          {{ end }}
+        </div>
+      </div>
+      {{ end }}
+
+      {{ if gt (len $projectItems) 0 }}
+      <div class="rounded-[1.75rem] border border-emerald-200/80 bg-emerald-50/70 p-6 shadow-[0_18px_48px_rgba(16,185,129,0.08)] dark:border-emerald-400/20 dark:bg-emerald-500/10">
+        <div class="text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-emerald-700 dark:text-emerald-100">{{ i18n "ui_line_projects" }}</div>
+        <div class="mt-5 space-y-2 text-sm">
+          {{ range $projectItems }}
+            {{ $statusText := "" }}
+            {{ if eq .status "closed" }}{{ $statusText = cond $isPt "Encerrado" "Closed" }}{{ else if .status }}{{ $statusText = cond $isPt "Em andamento" "Ongoing" }}{{ end }}
+            {{ if .url }}
+            <a href="{{ .url }}" class="block rounded-xl border border-emerald-200 bg-white/80 px-4 py-3 transition-colors hover:border-emerald-400 hover:bg-white dark:border-emerald-300/20 dark:bg-white/6 dark:hover:bg-white/10">
+              <span class="block font-semibold text-emerald-950 dark:text-emerald-100">{{ .name }}</span>
+              {{ with $statusText }}<span class="mt-1 block text-xs font-semibold uppercase tracking-[0.14em] text-emerald-700/80 dark:text-emerald-100/70">{{ . }}</span>{{ end }}
+            </a>
+            {{ else }}
+            <div class="rounded-xl border border-emerald-200 bg-white/80 px-4 py-3 dark:border-emerald-300/20 dark:bg-white/6"><span class="block font-semibold text-emerald-950 dark:text-emerald-100">{{ .name }}</span></div>
+            {{ end }}
+          {{ end }}
+        </div>
+      </div>
+      {{ end }}
+
+      {{ if gt (len $themeItems) 0 }}
+      <div class="rounded-[1.75rem] border border-slate-200/80 bg-white p-6 shadow-[0_18px_48px_rgba(15,23,42,0.08)] dark:border-white/10 dark:bg-slate-900/40 dark:shadow-[0_18px_48px_rgba(0,0,0,0.22)]">
+        <div class="text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-slate-700 dark:text-slate-500">{{ i18n "ui_line_themes" }}</div>
+        <div class="mt-5 flex flex-wrap gap-2">
+          {{ range $themeItems }}
+            {{ if .url }}
+            <a href="{{ .url }}" class="inline-flex items-center rounded-full border border-slate-200 bg-slate-50 px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.16em] text-slate-700 transition-colors hover:border-primary-400 hover:text-primary-700 dark:border-white/10 dark:bg-white/5 dark:text-slate-300 dark:hover:text-primary-200">{{ .name }}</a>
+            {{ else }}
+            <span class="inline-flex items-center rounded-full border border-slate-200 bg-slate-50 px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.16em] text-slate-700 dark:border-white/10 dark:bg-white/5 dark:text-slate-300">{{ .name }}</span>
+            {{ end }}
+          {{ end }}
+        </div>
+      </div>
+      {{ end }}
+    </aside>
+  </section>
+</article>
+{{ end }}

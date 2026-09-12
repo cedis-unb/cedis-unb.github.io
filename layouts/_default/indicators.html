@@ -26,7 +26,14 @@
 {{ range where .Site.RegularPages "Section" "projects" }}
   {{ $projectCount = add $projectCount 1 }}
 {{ end }}
-{{ $supervisionCount := len hugo.Data.people.people }}
+{{/* Orientações = defesas catalogadas em data/defesas.yaml (concluídas)
+     + orientandos ativos em data/people.yaml (em andamento). */}}
+{{ $supervisionCount := len hugo.Data.defesas }}
+{{ range hugo.Data.people.people }}
+  {{ if and .advisors (not (in .tags "inactive")) }}
+    {{ $supervisionCount = add $supervisionCount 1 }}
+  {{ end }}
+{{ end }}
 
 <main class="bg-[linear-gradient(180deg,#f8fafc_0%,#ffffff_28%,#f8fafc_100%)] text-gray-950 dark:bg-[linear-gradient(180deg,#0f172a_0%,#111827_58%,#0b1120_100%)] dark:text-gray-100">
   <section class="border-b border-black/5 bg-[radial-gradient(circle_at_top,rgba(197,39,47,0.12),transparent_34%),linear-gradient(180deg,#ffffff_0%,#f8fafc_100%)] dark:border-white/10 dark:bg-[radial-gradient(circle_at_top,rgba(197,39,47,0.18),transparent_34%),linear-gradient(180deg,#111827_0%,#0f172a_100%)]">

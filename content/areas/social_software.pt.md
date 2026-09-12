@@ -20,7 +20,7 @@ nav_next: true
 Software social é uma área emergente da computação que se concentra no design, desenvolvimento e avaliação de tecnologias digitais — especialmente sistemas de software — destinadas a atender demandas sociais e promover transformações sociais positivas. Essa área enfatiza abordagens centradas nas pessoas, interdisciplinares e participativas, priorizando a responsabilidade ética, a inclusão e o engajamento comunitário em detrimento do lucro comercial. O software social contribui para a criação de soluções digitais equitativas, promovendo acessibilidade, empoderamento e inovação social em contextos diversos.
 
 ## {{< i18n "area_coordinator" >}}
-**Prof. George Marcicano**
+**Prof. George Marsicano**
 <div style="margin-left: 20px;">
 Professor e pesquisador na área de Software Social. Atualmente, é professor associado na Universidade de Brasília, com contribuições significativas para o curso de Engenharia de Software do campus Gama e para o Programa de Pós-Graduação em Computação Aplicada.
 <br>
@@ -54,7 +54,9 @@ Professor e pesquisador na área de Software Social. Atualmente, é professor as
 
 ## {{< i18n "area_ongoing_projets" >}}
 
-{{< postsByCategoriesTags categories="project" tags="social_software" >}}
+{{< postsByCategoriesTags categories="project" tags="social_software" notags="closed" >}}
+
+{{< postsByCategoriesTags caput="## " caputKey="area_closed_projects" categories="project" tags="social_software,closed" >}}
 
 ## {{< i18n "area_publications_productions" >}}
 
@@ -70,6 +72,6 @@ Professor e pesquisador na área de Software Social. Atualmente, é professor as
 </div>
 
 ## {{< i18n "area_contact" >}}
-- E-mail para informações e contato com a equipe: [georgemasicano@unb.br](mailto:georgemasicano@unb.br).
+- E-mail para informações e contato com a equipe: [georgemarsicano@unb.br](mailto:georgemarsicano@unb.br).
 
 {{< tags >}}

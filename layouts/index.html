@@ -64,6 +64,23 @@
         ) }}
         {{ end }}
     {{ end }}
+    {{/* Oportunidades abertas (status open, prazo futuro) entram no pulse
+         como chamada pública — mesma automação das notícias de capa. */}}
+    {{ range where .Site.RegularPages "Section" "opportunities" }}
+        {{ $oppDeadline := time (.Params.deadline | default "1900-01-01") }}
+        {{ $oppStatus := .Params.status | default "open" }}
+        {{ if and (eq $oppStatus "open") (ge $oppDeadline now) (lt .Date now) }}
+        {{ $pulseItems = $pulseItems | append (dict
+            "type" "opportunity"
+            "title" .Title
+            "url" .RelPermalink
+            "date" .Date
+            "hasFullDate" true
+            "year" .Date.Year
+            "summary" (or .Params.summary "")
+        ) }}
+        {{ end }}
+    {{ end }}
     {{ range hugo.Data.productions.items }}
         {{/* .year vem sempre como int em productions.yaml (329/329 verificado).
              Anteriormente convertíamos via printf + findRE + replaceRE por item;
@@ -549,6 +566,9 @@
         </div>
       </div>
     </div>
+
+    {{/* ====== Linhas de pesquisa (só renderiza com linha ativa) ====== */}}
+    {{ partial "research-lines-home.html" . }}
 
     {{/* ====== Featured products carousel (compact) ====== */}}
     {{ $featuredProducts := where (where .Site.RegularPages "Section" "products") "Params.featured_home" true }}

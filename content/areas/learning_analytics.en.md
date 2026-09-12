@@ -61,7 +61,9 @@ An academic in the area of Learning Analytics and Educational Management. She se
 
 ## {{< i18n "area_ongoing_projets" >}}
 
-{{< postsByCategoriesTags categories="project" tags="learning_analytics" >}}
+{{< postsByCategoriesTags categories="project" tags="learning_analytics" notags="closed" >}}
+
+{{< postsByCategoriesTags caput="## " caputKey="area_closed_projects" categories="project" tags="learning_analytics,closed" >}}
 - A new approach applied to the University Course Timetable Problem  
     Éber Júnio Borges Moreira, Start: 2023, status: ongoing.  
     Work focused on optimizing university course scheduling, applying techniques to improve efficiency and effectiveness in academic timetable management. This work aims to solve common challenges in timetable management, providing a more adaptable and convenient solution for higher education institutions. UnB is used as a case study.

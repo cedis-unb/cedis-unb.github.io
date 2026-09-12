@@ -61,7 +61,9 @@ Professor and researcher in the field of Artificial Intelligence (AI) and Natura
 
 ## {{< i18n "area_ongoing_projets" >}}
 
-{{< postsByCategoriesTags categories="project" tags="ai,nlp,machine_learning" >}}
+{{< postsByCategoriesTags categories="project" tags="ai,nlp,machine_learning" notags="closed" >}}
+
+{{< postsByCategoriesTags caput="## " caputKey="area_closed_projects" categories="project" tags="ai,nlp,machine_learning,closed" >}}
 
 ## {{< i18n "area_publications_productions" >}}
 

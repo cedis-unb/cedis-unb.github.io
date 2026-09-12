@@ -41,6 +41,7 @@ gist privado, branch efêmera) — nunca em `data/`.
 | `data/people.yaml` | Pessoas sem página individual (orientandos ativos, alumni). Cada entrada tem `slug` **obrigatório** (validado). |
 | `data/productions.yaml` | Produção científica. `authors[]` (strings), `people[]` (slugs), `tags[]` (tópicos/projetos). |
 | `data/projects.yaml` | Projetos (metadados agregados). Consumido pela cascata i18n. |
+| `data/research_lines.yaml` | Linhas de pesquisa (programas científicos, sentido CNPq/DGP). Camada **distinta** das áreas: relações explícitas com áreas, pesquisadores, projetos e temas; `status: draft` não publica. Stubs gerados por `scripts/build_research_lines.py`. Ver `docs-src/research-lines.md`. |
 
 **Removido em 2026-07-24:** `data/advisors.yaml`. Contato/áreas/link de
 docentes agora ficam no frontmatter dos `.md` em `content/people/`.

@@ -62,7 +62,9 @@ In summary, software quality is not an attribute that can be added after develop
 
 ## {{< i18n "area_ongoing_projets" >}}
 
-{{< postsByCategoriesTags categories="project" tags="software_quality" >}}
+{{< postsByCategoriesTags categories="project" tags="software_quality" notags="closed" >}}
+
+{{< postsByCategoriesTags caput="## " caputKey="area_closed_projects" categories="project" tags="software_quality,closed" >}}
 
 
 ## {{< i18n "area_publications_productions" >}}

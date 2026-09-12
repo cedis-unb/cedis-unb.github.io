@@ -53,7 +53,9 @@ Coordinated by Prof. Fabiana Mendes, the research line's goal is to promote soft
 
 ## {{< i18n "area_ongoing_projets" >}}
 
-{{< postsByCategoriesTags categories="project" tags="green_software" >}}
+{{< postsByCategoriesTags categories="project" tags="green_software" notags="closed" >}}
+
+{{< postsByCategoriesTags caput="## " caputKey="area_closed_projects" categories="project" tags="green_software,closed" >}}
 
 
 ## {{< i18n "area_publications_productions" >}}

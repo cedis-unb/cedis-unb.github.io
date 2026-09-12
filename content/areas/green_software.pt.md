@@ -53,7 +53,9 @@ Coordenado pela Profa. Fabiana Mendes, o objetivo da linha de pesquisa é promov
 
 ## {{< i18n "area_ongoing_projets" >}}
 
-{{< postsByCategoriesTags categories="project" tags="green_software" >}}
+{{< postsByCategoriesTags categories="project" tags="green_software" notags="closed" >}}
+
+{{< postsByCategoriesTags caput="## " caputKey="area_closed_projects" categories="project" tags="green_software,closed" >}}
 
 
 ## {{< i18n "area_publications_productions" >}}

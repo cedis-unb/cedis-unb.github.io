@@ -1,0 +1,96 @@
+{{/*
+  research-line-index — dicionário global id → entrada consolidada de linha
+  de pesquisa. Camada distinta de area-index: uma linha é um programa
+  científico (sentido CNPq/DGP) que se relaciona, de forma explícita e
+  muitos-para-muitos, com áreas de atuação, pesquisadores, projetos e temas.
+
+  Fonte canônica:
+    · data/research_lines.yaml (research_lines[])
+    · content/research-lines/<slug>.<lang>.md (stub gerado; carrega a URL)
+
+  Linhas com status `draft` NUNCA entram neste índice em build de produção —
+  assim nenhum template consegue expô-las por acidente. Única exceção:
+  stubs gerados com HUGO_CEDIS_PREVIEW_LINES=1 (npm run start:lines-preview),
+  em que rascunhos entram marcados com status "draft". `archived` entra com
+  o status marcado; os consumidores decidem (lista pública usa só `active`).
+
+  Entrada:
+    id, slug, status, order, name, summary, description, history,
+    questions, methods (listas já no idioma corrente), period,
+    areas[], researchers[], projects[], themes[] ({id, name}),
+    page, url (vazio se o stub ainda não foi gerado), data (item bruto)
+*/}}
+
+{{ $lang := site.Language.Lang }}
+{{ $index := dict }}
+
+{{ $pagesByID := dict }}
+{{ range site.RegularPages }}
+  {{ if and (eq .Section "research-lines") (eq .Lang $lang) }}
+    {{ $id := .Params.id | default .File.TranslationBaseName }}
+    {{ $pagesByID = merge $pagesByID (dict $id .) }}
+  {{ end }}
+{{ end }}
+
+{{/* Pré-visualização local: o gerador em modo HUGO_CEDIS_PREVIEW_LINES=1 grava
+     research_lines_preview: true no _index da seção. Em produção o param não existe. */}}
+{{ $previewDrafts := false }}
+{{ with site.GetPage "/research-lines" }}{{ if .Params.research_lines_preview }}{{ $previewDrafts = true }}{{ end }}{{ end }}
+{{ $order := 0 }}
+{{ range (hugo.Data.research_lines.research_lines | default slice) }}
+  {{ $line := . }}
+  {{ $status := $line.status | default "draft" }}
+  {{ if or (ne $status "draft") $previewDrafts }}
+    {{ $page := index $pagesByID $line.id }}
+    {{ $url := "" }}
+    {{ with $page }}{{ $url = .RelPermalink }}{{ end }}
+
+    {{ $name := "" }}
+    {{ with $line.name }}{{ $name = index . $lang | default (index . "pt") | default (index . "en") }}{{ end }}
+    {{ if not $name }}{{ $name = replaceRE "^line_" "" $line.id | replaceRE "[-_]+" " " | title }}{{ end }}
+    {{ $summary := "" }}
+    {{ with $line.summary }}{{ $summary = index . $lang | default (index . "pt") | default "" }}{{ end }}
+    {{ $description := "" }}
+    {{ with $line.description }}{{ $description = index . $lang | default (index . "pt") | default "" }}{{ end }}
+    {{ $history := "" }}
+    {{ with $line.history }}{{ $history = index . $lang | default (index . "pt") | default "" }}{{ end }}
+    {{ $questions := slice }}
+    {{ with $line.questions }}{{ $questions = index . $lang | default (index . "pt") | default slice }}{{ end }}
+    {{ $methods := slice }}
+    {{ with $line.methods }}{{ $methods = index . $lang | default (index . "pt") | default slice }}{{ end }}
+
+    {{ $themes := slice }}
+    {{ range ($line.themes | default slice) }}
+      {{ $themeName := "" }}
+      {{ with .name }}{{ $themeName = index . $lang | default (index . "pt") | default "" }}{{ end }}
+      {{ if not $themeName }}{{ $themeName = replaceRE "[-_]+" " " .id | title }}{{ end }}
+      {{ $themes = $themes | append (dict "id" .id "name" $themeName) }}
+    {{ end }}
+
+    {{ $entry := dict
+      "id" $line.id
+      "slug" ($line.slug | default $line.id)
+      "status" $status
+      "order" $order
+      "name" $name
+      "label" $name
+      "summary" $summary
+      "description" $description
+      "history" $history
+      "questions" $questions
+      "methods" $methods
+      "period" ($line.period | default dict)
+      "areas" ($line.areas | default slice)
+      "researchers" ($line.researchers | default slice)
+      "projects" ($line.projects | default slice)
+      "themes" $themes
+      "page" $page
+      "url" $url
+      "data" $line
+    }}
+    {{ $index = merge $index (dict $line.id $entry) }}
+    {{ $order = add $order 1 }}
+  {{ end }}
+{{ end }}
+
+{{ return $index }}

@@ -2,7 +2,9 @@
 {{ $filterCategories := .Get "categories" }}
 {{ $excludeTags := .Get "notags" }}
 {{ $filterSection := .Get "section" }}
-{{ $caput := .Get "caput" | markdownify }}
+{{ $caputRaw := .Get "caput" | default "" }}
+{{ with .Get "caputKey" }}{{ $caputRaw = printf "%s%s" $caputRaw (i18n .) }}{{ end }}
+{{ $caput := $caputRaw | markdownify }}
 {{ $showSummary := .Get "showSummary" | default true }}
 {{ $showDescription := .Get "showDescription" | default true }}
 {{ $isPt := eq $.Site.Language.Lang "pt" }}

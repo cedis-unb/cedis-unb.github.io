@@ -68,7 +68,7 @@ npm run build
 
 O comando:
 
-1. Regenera `content/publications/` a partir de `data/productions.yaml`.
+1. Regenera `content/publications/` a partir de `data/productions.yaml` e `content/research-lines/` a partir de `data/research_lines.yaml`.
 2. Compila o site com `hugo --minify --cleanDestinationDir` para o diretório `docs/` (configurado em `hugo.yaml` via `publishDir: docs`).
 3. Gera o índice de busca com `pagefind --site docs`.
 
@@ -92,9 +92,11 @@ reescritos por `scripts/build_publications.py` e checados com
 │   ├── people/           # Fichas de pesquisadores e alumni
 │   ├── areas/            # Áreas de atuação (IA, gamification, etc.)
 │   ├── publications/     # Páginas geradas a partir de data/productions.yaml
+│   ├── research-lines/   # Stubs gerados a partir de data/research_lines.yaml (linhas draft ficam fora do build)
 │   └── history.*.md      # Linha do tempo institucional
 ├── data/                 # Fontes de dados YAML (fontes canônicas — ver CONVENTIONS.md)
-│   ├── areas.yaml        # Áreas de atuação
+│   ├── areas.yaml        # Áreas de atuação (competências/frentes — navegação)
+│   ├── research_lines.yaml # Linhas de pesquisa (programas científicos — camada distinta; ver docs-src/research-lines.md)
 │   ├── people.yaml       # Pessoas do CEDIS (incluindo orientandos e alumni)
 │   ├── productions.yaml  # Produção científica (artigos, defesas, registros)
 │   └── projects.yaml     # Projetos (metadados agregados)
@@ -120,12 +122,15 @@ reescritos por `scripts/build_publications.py` e checados com
 | `npm start` | Executa `hugo server` (compila Tailwind 4 nativamente durante o serve). |
 | `npm run build:publications` | Regenera `content/publications/` a partir de `data/productions.yaml`. |
 | `npm run check:publications` | Falha se `content/publications/` estiver divergente de `data/productions.yaml`. |
+| `npm run build:research-lines` | Regenera `content/research-lines/` a partir de `data/research_lines.yaml` (linhas `draft` ficam fora do build). |
+| `npm run check:research-lines` | Falha se `content/research-lines/` estiver divergente de `data/research_lines.yaml`. |
+| `npm run start:lines-preview` | Servidor local para revisar linhas de pesquisa em rascunho, com selo "Rascunho" (regenera os stubs em modo normal ao sair). |
 | `npm run build` | Build de produção + Pagefind. Saída em `docs/`. |
 | `npm run update-i18n` | Executa `scripts/update_i18n.py` (mantém sincronia entre `i18n/pt.yaml` e `i18n/en.yaml`). |
 | `npm run audit:a11y` | Roda `pa11y-ci` (site precisa estar servido em 4173). |
 | `npm run audit:lighthouse` | Roda `lhci autorun` **desktop** (site precisa estar servido em 4173). |
 | `npm run audit:lighthouse-mobile` | Roda `lhci autorun` **mobile** (site precisa estar servido em 4173; requer Chrome instalado). |
-| `npm test` | Checa publicações geradas, dados de conteúdo e paridade PT/EN. |
+| `npm test` | Checa publicações e linhas de pesquisa geradas, dados de conteúdo (schemas e referências) e paridade PT/EN. |
 
 ## Convenções e governança
 

@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cedis.unb.br/schemas/research_line.schema.json",
+  "title": "Linha de pesquisa",
+  "description": "Item do array data/research_lines.yaml::research_lines[]. Camada institucional distinta de areas.yaml; todas as relações são explícitas.",
+  "type": "object",
+  "required": ["id", "slug", "status", "name", "summary", "areas", "researchers", "projects", "themes"],
+  "additionalProperties": false,
+  "$defs": {
+    "localized": {
+      "type": "object",
+      "required": ["pt", "en"],
+      "properties": {
+        "pt": {"type": "string", "minLength": 2},
+        "en": {"type": "string", "minLength": 2}
+      }
+    },
+    "localizedList": {
+      "type": "object",
+      "required": ["pt", "en"],
+      "properties": {
+        "pt": {"type": "array", "items": {"type": "string", "minLength": 2}},
+        "en": {"type": "array", "items": {"type": "string", "minLength": 2}}
+      }
+    },
+    "slugList": {
+      "type": "array",
+      "items": {"type": "string", "pattern": "^[a-z0-9_]+$"},
+      "uniqueItems": true
+    }
+  },
+  "properties": {
+    "id": {"type": "string", "pattern": "^line_[a-z0-9_]+$"},
+    "slug": {"type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"},
+    "status": {"type": "string", "enum": ["draft", "active", "archived"]},
+    "name": {"$ref": "#/$defs/localized"},
+    "summary": {"$ref": "#/$defs/localized"},
+    "description": {"$ref": "#/$defs/localized"},
+    "history": {"$ref": "#/$defs/localized"},
+    "questions": {"$ref": "#/$defs/localizedList"},
+    "methods": {"$ref": "#/$defs/localizedList"},
+    "period": {
+      "type": "object",
+      "required": ["start"],
+      "additionalProperties": false,
+      "properties": {
+        "start": {"type": "integer", "minimum": 2013, "maximum": 2100},
+        "end": {"type": ["integer", "null"], "minimum": 2013, "maximum": 2100}
+      }
+    },
+    "areas": {"$ref": "#/$defs/slugList"},
+    "researchers": {"$ref": "#/$defs/slugList"},
+    "projects": {"$ref": "#/$defs/slugList"},
+    "themes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name"],
+        "additionalProperties": false,
+        "properties": {
+          "id": {"type": "string", "pattern": "^[a-z0-9_]+$"},
+          "name": {"$ref": "#/$defs/localized"}
+        }
+      }
+    }
+  }
+}

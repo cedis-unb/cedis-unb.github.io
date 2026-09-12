@@ -1,0 +1,33 @@
+{{/*
+  research-lines-home — bloco discreto da home "Como nossa pesquisa se
+  organiza". Só renderiza quando existe ao menos uma linha de pesquisa
+  visível (ativa; ou rascunho em pré-visualização local). Enquanto todas
+  forem rascunho, a home publicada não muda.
+*/}}
+{{ $lines := partialCached "research-line-list" "visible" site.Language.Lang "visible" }}
+{{ if gt (len $lines) 0 }}
+{{ $sectionPage := site.GetPage "/research-lines" }}
+{{ $sectionURL := "research-lines/" | relLangURL }}
+{{ with $sectionPage }}{{ $sectionURL = .RelPermalink }}{{ end }}
+<section class="border-t border-black/5 bg-white dark:border-white/10 dark:bg-gray-950/40" aria-labelledby="research-lines-home-title">
+  <div class="mx-auto max-w-(--breakpoint-xl) px-4 py-10 md:px-6 lg:px-8 lg:py-12">
+    <div class="grid gap-8 lg:grid-cols-[minmax(0,1.2fr)_minmax(0,1fr)] lg:items-start">
+      <div>
+        <span class="inline-flex rounded-full border border-amber-300/70 bg-amber-50 px-4 py-1 text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-amber-800 dark:border-amber-400/25 dark:bg-amber-500/10 dark:text-amber-100">{{ i18n "ui_lines_home_eyebrow" }}</span>
+        <h2 id="research-lines-home-title" class="mt-4 text-2xl font-black tracking-tight text-gray-950 dark:text-white md:text-3xl">{{ i18n "ui_lines_home_heading" }}</h2>
+        <p class="mt-3 max-w-2xl text-base leading-7 text-gray-600 dark:text-white/75">{{ i18n "ui_lines_home_lead" }}</p>
+        <a href="{{ $sectionURL }}" class="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-primary-700 transition-colors hover:text-primary-600 dark:text-primary-200 dark:hover:text-primary-100">
+          {{ i18n "ui_lines_home_cta" }} <span aria-hidden="true">&rarr;</span>
+        </a>
+      </div>
+      <ul class="grid gap-2 sm:grid-cols-2 lg:grid-cols-1">
+        {{ range $lines }}
+        <li>
+          <a href="{{ .url | default $sectionURL }}" class="block rounded-2xl border border-black/5 bg-stone-50 px-4 py-3 text-sm font-semibold text-gray-900 transition-colors hover:border-amber-400 hover:bg-white dark:border-white/10 dark:bg-white/4 dark:text-white dark:hover:bg-white/8">{{ .name }}</a>
+        </li>
+        {{ end }}
+      </ul>
+    </div>
+  </div>
+</section>
+{{ end }}

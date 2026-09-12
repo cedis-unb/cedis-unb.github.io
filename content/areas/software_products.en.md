@@ -53,7 +53,9 @@ At CEDIS, Software Product Line Engineering is a key area of research, developme
 
 ## {{< i18n "area_ongoing_projets" >}}
 
-{{< postsByCategoriesTags categories="project" tags="software_product_line" >}}
+{{< postsByCategoriesTags categories="project" tags="software_product_line" notags="closed" >}}
+
+{{< postsByCategoriesTags caput="## " caputKey="area_closed_projects" categories="project" tags="software_product_line,closed" >}}
 
 
 ## {{< i18n "area_publications_productions" >}}

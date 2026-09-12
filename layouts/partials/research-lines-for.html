@@ -1,0 +1,41 @@
+{{/*
+  research-lines-for — relação inversa: linhas de pesquisa VISÍVEIS (ativas;
+  em pré-visualização local também os rascunhos) que
+  referenciam explicitamente uma área, um pesquisador, um projeto ou um tema.
+
+  Entrada (dict):
+    kind — "area" | "researcher" | "project" | "theme"
+    id   — um identificador
+    ids  — ou uma lista de identificadores (qualquer um casa)
+
+  Saída: slice de entradas de research-line-index, na ordem do YAML.
+
+  Só lê data/research_lines.yaml. Nunca deduz vínculos a partir de
+  areas.yaml, tags de páginas ou categorias — a relação é declarada na linha.
+*/}}
+
+{{ $kind := .kind }}
+{{ $wanted := slice }}
+{{ with .id }}{{ $wanted = $wanted | append . }}{{ end }}
+{{ with .ids }}{{ range . }}{{ if and . (not (in $wanted .)) }}{{ $wanted = $wanted | append . }}{{ end }}{{ end }}{{ end }}
+
+{{ $out := slice }}
+{{ if gt (len $wanted) 0 }}
+  {{ range partialCached "research-line-list" "visible" site.Language.Lang "visible" }}
+    {{ $refs := slice }}
+    {{ if eq $kind "area" }}
+      {{ $refs = .areas }}
+    {{ else if eq $kind "researcher" }}
+      {{ $refs = .researchers }}
+    {{ else if eq $kind "project" }}
+      {{ $refs = .projects }}
+    {{ else if eq $kind "theme" }}
+      {{ range .themes }}{{ $refs = $refs | append .id }}{{ end }}
+    {{ end }}
+    {{ $matches := false }}
+    {{ range $wanted }}{{ if in $refs . }}{{ $matches = true }}{{ end }}{{ end }}
+    {{ if $matches }}{{ $out = $out | append . }}{{ end }}
+  {{ end }}
+{{ end }}
+
+{{ return $out }}

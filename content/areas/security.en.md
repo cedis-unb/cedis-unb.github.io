@@ -54,7 +54,9 @@ Full Professor at the University of Brasília (UnB) and researcher in Software E
 
 ## {{< i18n "area_ongoing_projets" >}}
 
-{{< postsByCategoriesTags categories="project" tags="security" >}}
+{{< postsByCategoriesTags categories="project" tags="security" notags="closed" >}}
+
+{{< postsByCategoriesTags caput="## " caputKey="area_closed_projects" categories="project" tags="security,closed" >}}
 
 ## {{< i18n "area_publications_productions" >}}
 

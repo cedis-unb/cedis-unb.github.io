@@ -61,7 +61,9 @@ Em suma, a qualidade de software não é um atributo que pode ser adicionado ap�
 
 ## {{< i18n "area_ongoing_projets" >}}
 
-{{< postsByCategoriesTags categories="project" tags="software_quality" >}}
+{{< postsByCategoriesTags categories="project" tags="software_quality" notags="closed" >}}
+
+{{< postsByCategoriesTags caput="## " caputKey="area_closed_projects" categories="project" tags="software_quality,closed" >}}
 
 
 ## {{< i18n "area_publications_productions" >}}

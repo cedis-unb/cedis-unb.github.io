@@ -27,3 +27,4 @@ Nosso trabalho vive em três frentes:
 - {{< link-interno "/indicadores" "Indicadores" >}} — números consolidados de pessoas, projetos, produtos e publicações
 - {{< link-interno "/mapa" "Mapa do conhecimento" >}} — visualização das áreas, pessoas e projetos
 - {{< link-interno "/contact" "Contato" >}} — como falar com a gente
+{{% research-lines-link "Linhas de pesquisa" "programas científicos que organizam áreas, pesquisadores e projetos" %}}

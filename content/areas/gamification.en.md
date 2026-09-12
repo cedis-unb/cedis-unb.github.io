@@ -55,7 +55,9 @@ Specialist in gamification and Full Professor at the University of Brasília - U
 
 ## {{< i18n "area_ongoing_projets" >}}
 
-{{< postsByCategoriesTags categories="project" tags="gamification" >}}
+{{< postsByCategoriesTags categories="project" tags="gamification" notags="closed" >}}
+
+{{< postsByCategoriesTags caput="## " caputKey="area_closed_projects" categories="project" tags="gamification,closed" >}}
 
 ## {{< i18n "area_publications_productions" >}}
 

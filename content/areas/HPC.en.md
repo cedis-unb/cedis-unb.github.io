@@ -53,7 +53,9 @@ At CEDIS, the integration of High-Performance Computing and Cloud Computing is a
 
 ## {{< i18n "area_ongoing_projets" >}}
 
-{{< postsByCategoriesTags categories="project" tags="hpc" >}}
+{{< postsByCategoriesTags categories="project" tags="hpc" notags="closed" >}}
+
+{{< postsByCategoriesTags caput="## " caputKey="area_closed_projects" categories="project" tags="hpc,closed" >}}
 
 ## {{< i18n "area_publications_productions" >}}
 

@@ -66,7 +66,9 @@ Acadêmico na área de Metodologias Ativas de Aprendizagem e membro do corpo doc
 
 ## {{< i18n "area_ongoing_projets" >}}
 
-{{< postsByCategoriesTags categories="project" tags="active_learning,education" >}}
+{{< postsByCategoriesTags categories="project" tags="active_learning,education" notags="closed" >}}
+
+{{< postsByCategoriesTags caput="## " caputKey="area_closed_projects" categories="project" tags="active_learning,education,closed" >}}
 
 - **Projeto de ensino, disciplina "Desenvolvimento de Software", Prof. Sérgio Freitas:** Revitalizada pela gamificação "Alvorecer Feudal" e inspirada em um cenário feudal e baseada no modelo Octalysis, esta abordagem transforma o aprendizado em uma jornada interativa, onde os alunos enfrentam desafios práticos do desenvolvimento de software, promovendo habilidades como pensamento crítico e colaboração. A experiência lúdica não só engaja os estudantes, mas também os prepara para desafios reais na área de software.  
     Recursos disponíveis: Aplicativo mobile MS Power Apps, site Sharepoint, dashboards no Power BI e um guia temático do jogador, todos integrados à plataforma Microsoft 365.  

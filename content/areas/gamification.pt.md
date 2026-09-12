@@ -53,7 +53,9 @@ Especialista em gamificação e professor Titular da Universidade de Brasíli
   </div>
 
 ## {{< i18n "area_ongoing_projets" >}}
-{{< postsByCategoriesTags categories="project" tags="gamification" >}}
+{{< postsByCategoriesTags categories="project" tags="gamification" notags="closed" >}}
+
+{{< postsByCategoriesTags caput="## " caputKey="area_closed_projects" categories="project" tags="gamification,closed" >}}
 
 ## {{< i18n "area_publications_productions" >}}
 

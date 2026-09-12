@@ -1,0 +1,328 @@
+# Linhas de pesquisa do CEDIS — fonte canônica.
+#
+# Camada institucional distinta de data/areas.yaml:
+#   · Áreas de atuação (areas.yaml)  = competências e frentes do centro (o que o CEDIS sabe fazer).
+#   · Linhas de pesquisa (este arquivo) = programas científicos no sentido do CNPq/DGP
+#     (temas aglutinadores com tradição investigativa, dos quais derivam projetos).
+#
+# Relações são todas muitos-para-muitos e EXPLÍCITAS. Nada é deduzido de areas.yaml.
+#   areas[]       ids de data/areas.yaml
+#   researchers[] slugs de content/people/<slug>.md (perfis com profile_level: researcher)
+#   projects[]    ids de data/projects.yaml
+#   themes[]      temas/palavras-chave da linha; cada item tem id (slug) e name pt/en.
+#                 O id vira chave i18n e, se existir tag homônima, a linha liga à taxonomia.
+#
+# status: draft | active | archived
+#   draft    — não renderiza, não entra em menu, sitemap, busca nem relações inversas.
+#   active   — publicada; aparece em Pesquisa › Linhas de pesquisa, no mapa e nas
+#              relações inversas (área, pesquisador, projeto).
+#   archived — página mantida com selo "arquivada", listada em "Linhas anteriores";
+#              fora do menu, do mapa e das relações inversas.
+#
+# Regras validadas por scripts/validate_content.py:
+#   · id único (^line_[a-z0-9_]+$), slug único (^[a-z0-9-]+$);
+#   · todas as referências devem existir nas fontes canônicas;
+#   · linha active exige >= 1 área e >= 1 pesquisador (aviso se sem projetos).
+#
+# Após editar: python3 scripts/build_research_lines.py && python3 scripts/update_i18n.py
+# Documentação: docs-src/research-lines.md
+#
+# ---------------------------------------------------------------------------
+# ESTADO ATUAL (2026-09-12): as cinco linhas abaixo são RASCUNHO (status: draft),
+# proposta de reorganização a ser confrontada com as linhas registradas pelo grupo
+# no DGP/CNPq e validada pelos pesquisadores. `researchers` contém apenas vínculos
+# declarados explicitamente por Sergio (2026-09-12), nunca deduzidos automaticamente;
+# cada um traz comentário com a evidência (áreas da linha, projetos vinculados, defesas).
+# Regra adotada: quem participa de projeto vinculado à linha pertence à linha.
+# `projects` foi preenchido a partir das tags dos projetos apenas para exercitar
+# a renderização; também precisa de validação.
+# ---------------------------------------------------------------------------
+
+section:
+  title:
+    pt: "Linhas de pesquisa"
+    en: "Research lines"
+  description:
+    pt: "Programas científicos do CEDIS: temas aglutinadores que articulam áreas de atuação, pesquisadores, projetos e produção com uma agenda investigativa própria."
+    en: "CEDIS scientific programs: unifying themes that bring together areas of expertise, researchers, projects, and output under a shared research agenda."
+
+research_lines:
+
+  - id: line_software_engineering
+    slug: software-engineering
+    status: draft
+    name:
+      pt: "Engenharia de software, arquitetura e qualidade"
+      en: "Software engineering, architecture, and quality"
+    summary:
+      pt: "Como projetar, construir, avaliar e manter sistemas de software com qualidade, sustentabilidade e evolução controlada."
+      en: "How to design, build, assess, and maintain software systems with quality, sustainability, and controlled evolution."
+    description:
+      pt: |
+        A linha reúne a tradição do CEDIS em engenharia de software: arquitetura e linhas de produto, engenharia de requisitos, qualidade, verificação, validação e testes, e desenvolvimento sustentável de software. O foco está em métodos, modelos e ferramentas que tornem o processo de construção de software mais previsível e o produto mais confiável.
+
+        Os projetos da linha nascem tanto de demandas de organizações parceiras quanto de questões abertas na literatura, e alimentam disciplinas de graduação e pós-graduação em Engenharia de Software.
+      en: |
+        This line gathers CEDIS's tradition in software engineering: architecture and product lines, requirements engineering, quality, verification, validation and testing, and sustainable software development. The focus is on methods, models, and tools that make the software construction process more predictable and the product more reliable.
+
+        Projects in this line arise both from partner organizations' needs and from open questions in the literature, and feed undergraduate and graduate courses in Software Engineering.
+    questions:
+      pt:
+        - "Como avaliar e evoluir arquiteturas de software em sistemas de longa vida?"
+        - "Que práticas de requisitos e qualidade reduzem retrabalho em equipes pequenas e médias?"
+        - "Como medir e reduzir o custo energético e ambiental do software?"
+      en:
+        - "How can software architectures be assessed and evolved in long-lived systems?"
+        - "Which requirements and quality practices reduce rework in small and medium teams?"
+        - "How can the energy and environmental cost of software be measured and reduced?"
+    methods:
+      pt: ["Estudos de caso", "Experimentos controlados", "Revisões sistemáticas", "Pesquisa-ação com organizações parceiras"]
+      en: ["Case studies", "Controlled experiments", "Systematic reviews", "Action research with partner organizations"]
+    areas:
+      - esw
+      - software_architecture
+      - software_requirements
+      - software_quality
+      - software_product_line
+      - verification_validation_testing
+      - green_software
+    researchers:              # vínculos declarados por Sergio em 2026-09-12 (evidência: áreas da linha / projetos vinculados / defesas)
+      - andre_lanna        # áreas 3; projetos lfs; defesas 15
+      - fabiana_mendes     # áreas 2; projetos gsd; defesas 15
+      - cristiane_ramos    # áreas 3; defesas 13
+      - george_marsicano   # áreas 2; defesas 11
+      - ricardo_ajax       # áreas 3; defesas 4
+      - sergio_freitas     # áreas 1; defesas 9
+    projects:
+      - project_lfs
+      - project_gsd
+    themes:
+      - id: software_process
+        name: { pt: "Processos de software", en: "Software processes" }
+      - id: software_metrics
+        name: { pt: "Métricas de software", en: "Software metrics" }
+      - id: technical_debt
+        name: { pt: "Dívida técnica", en: "Technical debt" }
+      - id: sustainable_software
+        name: { pt: "Software sustentável", en: "Sustainable software" }
+
+  - id: line_ai_language_data
+    slug: ai-language-data
+    status: draft
+    name:
+      pt: "Inteligência artificial, linguagem e análise de dados"
+      en: "Artificial intelligence, language, and data analysis"
+    summary:
+      pt: "Modelos de aprendizado de máquina e processamento de linguagem natural aplicados à recuperação de informação, à ciência e à gestão pública."
+      en: "Machine learning and natural language processing models applied to information retrieval, science, and public management."
+    description:
+      pt: |
+        A linha investiga como técnicas de inteligência artificial, sobretudo aprendizado de máquina e processamento de linguagem natural, podem organizar, recuperar e interpretar grandes volumes de informação textual e científica. Inclui plataformas de apoio à revisão de literatura, mineração de repositórios institucionais e sistemas de apoio à decisão para órgãos públicos.
+
+        Os resultados se materializam em produtos como Contextus e Evidentia e em projetos com parceiros como IBICT, MCTI e INPI.
+      en: |
+        This line investigates how artificial intelligence techniques, especially machine learning and natural language processing, can organize, retrieve, and interpret large volumes of textual and scientific information. It includes literature-review support platforms, institutional repository mining, and decision-support systems for public agencies.
+
+        Results materialize in products such as Contextus and Evidentia and in projects with partners such as IBICT, MCTI, and INPI.
+    questions:
+      pt:
+        - "Como modelos de linguagem podem apoiar a revisão sistemática e a curadoria de evidências científicas?"
+        - "Que representações de dados tornam a recuperação de informação técnica mais precisa e explicável?"
+        - "Como integrar aprendizado de máquina a fluxos de trabalho de instituições públicas com segurança e transparência?"
+      en:
+        - "How can language models support systematic reviews and the curation of scientific evidence?"
+        - "Which data representations make technical information retrieval more accurate and explainable?"
+        - "How can machine learning be integrated into public institutions' workflows safely and transparently?"
+    methods:
+      pt: ["Experimentos com modelos de aprendizado de máquina", "Avaliação de sistemas de recuperação de informação", "Prototipação com parceiros", "Análise de dados institucionais"]
+      en: ["Experiments with machine learning models", "Evaluation of information retrieval systems", "Prototyping with partners", "Institutional data analysis"]
+    areas:
+      - ai
+      - machine_learning
+      - nlp
+      - learning_analytics
+    researchers:              # vínculos declarados por Sergio em 2026-09-12 (evidência: áreas da linha / projetos vinculados / defesas)
+      - sergio_freitas     # áreas 4; projetos dfcris,evidentia,framework_preditivo_engajamento,ia_dados_transformacao_digital; defesas 18
+      - george_marsicano   # projetos evidentia,ia_dados_transformacao_digital; defesas 7
+      - daniel_sundfeld    # projetos mcti_gestao,servicos_pi; defesas 3
+      - andre_lanna        # projetos dfcris,ia_dados_transformacao_digital; defesas 3
+      - cristiane_ramos    # áreas 1; projetos framework_preditivo_engajamento; defesas 4
+    projects:
+      - dfcris
+      - evidentia
+      - project_ia_dados_transformacao_digital
+      - project_mcti_gestao
+      - project_servicos_pi
+      - project_framework_preditivo_engajamento
+    themes:
+      - id: large_language_models
+        name: { pt: "Grandes modelos de linguagem", en: "Large language models" }
+      - id: text_mining
+        name: { pt: "Mineração de texto", en: "Text mining" }
+      - id: scientific_information_retrieval
+        name: { pt: "Recuperação de informação científica", en: "Scientific information retrieval" }
+      - id: predictive_models
+        name: { pt: "Modelos preditivos", en: "Predictive models" }
+
+  - id: line_learning_technologies
+    slug: learning-technologies
+    status: draft
+    name:
+      pt: "Tecnologias para aprendizagem, gamificação e fatores humanos"
+      en: "Learning technologies, gamification, and human factors"
+    summary:
+      pt: "Engajamento, motivação e aprendizagem em ambientes digitais, com gamificação, metodologias ativas, análise da aprendizagem e trabalho em equipe."
+      en: "Engagement, motivation, and learning in digital environments, through gamification, active methodologies, learning analytics, and teamwork."
+    description:
+      pt: |
+        A linha estuda como tecnologias digitais podem sustentar engajamento e aprendizagem, e como fatores humanos moldam o trabalho de equipes de software. Combina gamificação fundamentada em teorias de motivação, metodologias ativas de ensino, análise da aprendizagem e o desenvolvimento de habilidades socioemocionais em equipes.
+
+        É a linha com maior volume de projetos e orientações do centro, com plataformas como Alvorecer Feudal, Jornada IHC e OctaAnalysis e o programa A3M da UnB.
+      en: |
+        This line studies how digital technologies can sustain engagement and learning, and how human factors shape the work of software teams. It combines gamification grounded in motivation theories, active teaching methodologies, learning analytics, and the development of socio-emotional skills in teams.
+
+        It is the center's line with the largest volume of projects and supervisions, with platforms such as Alvorecer Feudal, Jornada IHC, and OctaAnalysis and UnB's A3M program.
+    questions:
+      pt:
+        - "Quais elementos de gamificação sustentam motivação intrínseca ao longo de um semestre?"
+        - "Como dados de interação preveem risco de evasão e desengajamento a tempo de intervir?"
+        - "Que práticas desenvolvem trabalho em equipe e habilidades socioemocionais em cursos de computação?"
+      en:
+        - "Which gamification elements sustain intrinsic motivation over a semester?"
+        - "How can interaction data predict dropout and disengagement risk in time to intervene?"
+        - "Which practices develop teamwork and socio-emotional skills in computing courses?"
+    methods:
+      pt: ["Estudos quase-experimentais em sala de aula", "Instrumentos psicométricos", "Análise de dados de interação", "Design participativo"]
+      en: ["Quasi-experimental classroom studies", "Psychometric instruments", "Interaction data analysis", "Participatory design"]
+    areas:
+      - gamification
+      - active_learning
+      - education
+      - learning_analytics
+      - soft_skills
+      - teamwork
+    researchers:              # vínculos declarados por Sergio em 2026-09-12 (evidência: áreas da linha / projetos vinculados / defesas)
+      - sergio_freitas     # áreas 4; projetos octaanalysis,a3m,alvorecer,cc,framework_preditivo_engajamento,inovacao_digital_gamificacao,jornada; defesas 32
+      - cristiane_ramos    # áreas 4; projetos octaanalysis,a3m,cc,framework_preditivo_engajamento,inovacao_digital_gamificacao; defesas 9
+      - george_marsicano   # áreas 5; projetos inovacao_digital_gamificacao,super_r; defesas 12
+      - ricardo_ajax       # áreas 2; projetos inovacao_digital_gamificacao; defesas 1
+    projects:
+      - project_inovacao_digital_gamificacao
+      - project_alvorecer
+      - project_jornada
+      - octaanalysis
+      - project_framework_preditivo_engajamento
+      - project_a3m
+      - project_cc
+      - project_super_r
+    themes:
+      - id: self_determination_theory
+        name: { pt: "Teoria da Autodeterminação", en: "Self-Determination Theory" }
+      - id: student_engagement
+        name: { pt: "Engajamento discente", en: "Student engagement" }
+      - id: octalysis
+        name: { pt: "Octalysis", en: "Octalysis" }
+      - id: software_engineering_education
+        name: { pt: "Educação em Engenharia de Software", en: "Software engineering education" }
+
+  - id: line_digital_transformation
+    slug: digital-transformation
+    status: draft
+    name:
+      pt: "Transformação digital e sistemas sociotécnicos"
+      en: "Digital transformation and sociotechnical systems"
+    summary:
+      pt: "Design e construção de serviços digitais e de software social com impacto em organizações públicas e na sociedade."
+      en: "Design and construction of digital services and social software with impact on public organizations and society."
+    description:
+      pt: |
+        A linha investiga a transformação digital como fenômeno sociotécnico: serviços públicos digitais, metodologias colaborativas de design e software desenvolvido para gerar impacto social positivo sem fins comerciais. Reúne o programa Software para o Bem, projetos com órgãos públicos e a produção sobre experiência do usuário e engenharia de requisitos aplicada.
+
+        Os resultados vão de aplicativos gratuitos para ONGs e escolas a metodologias adotadas por órgãos federais.
+      en: |
+        This line investigates digital transformation as a sociotechnical phenomenon: digital public services, collaborative design methodologies, and software built to generate positive social impact without commercial purpose. It gathers the Software for Good program, projects with public agencies, and output on user experience and applied requirements engineering.
+
+        Results range from free applications for NGOs and schools to methodologies adopted by federal agencies.
+    questions:
+      pt:
+        - "Como desenhar serviços públicos digitais centrados no cidadão com equipes multidisciplinares?"
+        - "Que modelos de desenvolvimento voluntário e universitário sustentam software social ao longo do tempo?"
+        - "Como medir o impacto social de soluções digitais gratuitas?"
+      en:
+        - "How can citizen-centered digital public services be designed with multidisciplinary teams?"
+        - "Which volunteer and university development models sustain social software over time?"
+        - "How can the social impact of free digital solutions be measured?"
+    methods:
+      pt: ["Design de serviços", "Pesquisa-ação", "Estudos de caso com organizações públicas e sociais", "Avaliação de usabilidade"]
+      en: ["Service design", "Action research", "Case studies with public and social organizations", "Usability evaluation"]
+    areas:
+      - digital_transformation
+      - social_software
+    researchers:              # vínculos declarados por Sergio em 2026-09-12 (evidência: áreas da linha / projetos vinculados / defesas)
+      - george_marsicano   # áreas 2; projetos doarti,ia_dados_transformacao_digital,melhoria_servico_publico,software_bem,spux; defesas 10
+      - ricardo_ajax       # áreas 2; defesas 3
+      - andre_lanna        # projetos ia_dados_transformacao_digital; defesas 10
+      - sergio_freitas     # projetos ia_dados_transformacao_digital; defesas 5
+    projects:
+      - project_software_bem
+      - project_doarti
+      - project_spux
+      - project_melhoria_servico_publico
+      - project_ia_dados_transformacao_digital
+    themes:
+      - id: digital_public_services
+        name: { pt: "Serviços públicos digitais", en: "Digital public services" }
+      - id: service_design
+        name: { pt: "Design de serviços", en: "Service design" }
+      - id: social_impact_software
+        name: { pt: "Software de impacto social", en: "Social impact software" }
+      - id: ihc
+        name: { pt: "Interação humano-computador", en: "Human-computer interaction" }
+
+  - id: line_secure_scalable_systems
+    slug: secure-scalable-systems
+    status: draft
+    name:
+      pt: "Sistemas seguros, escaláveis e de alto desempenho"
+      en: "Secure, scalable, and high-performance systems"
+    summary:
+      pt: "Segurança cibernética, computação em nuvem e processamento de alto desempenho para sistemas confiáveis em escala."
+      en: "Cybersecurity, cloud computing, and high-performance processing for reliable systems at scale."
+    description:
+      pt: |
+        A linha trata das propriedades de infraestrutura que tornam sistemas confiáveis em escala: segurança da informação e fatores humanos em segurança, arquiteturas em nuvem e serverless, e processamento paralelo e massivo de dados. Os projetos combinam pesquisa em desempenho com aplicações reais em órgãos públicos e em plataformas do próprio centro.
+      en: |
+        This line addresses the infrastructure properties that make systems reliable at scale: information security and human factors in security, cloud and serverless architectures, and parallel, massive data processing. Projects combine performance research with real applications in public agencies and in the center's own platforms.
+    questions:
+      pt:
+        - "Como arquiteturas em nuvem e serverless reduzem custo e tempo de processamento em cargas científicas?"
+        - "Que fatores humanos explicam falhas de segurança em organizações e como mitigá-los?"
+        - "Como escalar processamento de lagos de dados institucionais com confiabilidade?"
+      en:
+        - "How do cloud and serverless architectures reduce cost and processing time for scientific workloads?"
+        - "Which human factors explain security failures in organizations and how can they be mitigated?"
+        - "How can institutional data lake processing be scaled reliably?"
+    methods:
+      pt: ["Benchmarks de desempenho", "Experimentos em infraestrutura de nuvem", "Surveys e estudos com usuários", "Análise de incidentes"]
+      en: ["Performance benchmarks", "Cloud infrastructure experiments", "Surveys and user studies", "Incident analysis"]
+    areas:
+      - security
+      - hpc
+    researchers:              # vínculos declarados por Sergio em 2026-09-12 (evidência: áreas da linha / projetos vinculados / defesas)
+      - daniel_sundfeld    # áreas 1; projetos laguna,mcti_gestao,nimbus,servicos_pi; defesas 7
+      - sergio_freitas     # áreas 1; defesas 11
+      - george_marsicano   # áreas 1; defesas 4
+    projects:
+      - project_laguna
+      - project_nimbus
+      - project_mcti_gestao
+      - project_servicos_pi
+    themes:
+      - id: cloud_computing
+        name: { pt: "Computação em nuvem", en: "Cloud computing" }
+      - id: serverless
+        name: { pt: "Arquiteturas serverless", en: "Serverless architectures" }
+      - id: parallel_processing
+        name: { pt: "Processamento paralelo", en: "Parallel processing" }
+      - id: human_factors_in_security
+        name: { pt: "Fatores humanos em segurança", en: "Human factors in security" }

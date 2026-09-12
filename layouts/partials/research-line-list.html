@@ -1,0 +1,33 @@
+{{/*
+  research-line-list — lista ordenada (ordem do YAML) de linhas de pesquisa.
+
+  Contexto (string): "active" (default) → só linhas ativas;
+                     "archived"         → só arquivadas;
+                     "all"              → ativas + arquivadas;
+                     "draft"            → rascunhos (vazio fora do modo de pré-visualização);
+                     "visible"          → o que o site deve mostrar AGORA: ativas em produção,
+                                          ativas + rascunhos na pré-visualização local.
+  Em produção rascunhos nunca chegam aqui (filtrados em research-line-index).
+  Consumidores de "visible": nav, home, mapa, blocos "relacionadas", shortcode research-lines-link.
+
+  Uso com cache — o modo PRECISA entrar na chave de variante:
+    partialCached "research-line-list" "active" site.Language.Lang "active"
+    partialCached "research-line-list" "all"    site.Language.Lang "all"
+*/}}
+
+{{ $mode := . | default "active" }}
+{{ if not (in (slice "active" "archived" "all" "draft" "visible") $mode) }}{{ $mode = "active" }}{{ end }}
+{{ $preview := false }}
+{{ with site.GetPage "/research-lines" }}{{ if .Params.research_lines_preview }}{{ $preview = true }}{{ end }}{{ end }}
+{{ $index := partialCached "research-line-index" "global" site.Language.Lang }}
+{{ $items := slice }}
+
+{{ range (hugo.Data.research_lines.research_lines | default slice) }}
+  {{ with index $index .id }}
+    {{ if or (and (eq $mode "all") (ne .status "draft")) (eq .status $mode) (and (eq $mode "visible") (or (eq .status "active") (and $preview (eq .status "draft")))) }}
+      {{ $items = $items | append . }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{ return $items }}

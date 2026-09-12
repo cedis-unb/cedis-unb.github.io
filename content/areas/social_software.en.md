@@ -20,7 +20,7 @@ nav_next: true
 Social Software is an emerging field in computing that focuses on the design, development, and evaluation of digital technologies—particularly software systems—intended to address societal needs and promote positive social change. This area emphasizes human-centered, interdisciplinary, and participatory approaches, prioritizing ethical responsibility, inclusiveness, and community engagement over commercial profit. Social Software contributes to the creation of equitable digital solutions, fostering accessibility, empowerment, and social innovation in diverse contexts.
 
 ## {{< i18n "area_coordinator" >}}
-**Prof. George Marcicano**
+**Prof. George Marsicano**
 <div style="margin-left: 20px;">
 A professor and researcher in the field of Social Software. Currently, he serves as an associate professor at the University of Brasília, significantly contributing to the undergraduate Software Engineering program at the Gama campus and the Graduate Program in Applied Computing. 
 <br>
@@ -55,7 +55,9 @@ A professor and researcher in the field of Social Software. Currently, he serves
 
 ## {{< i18n "area_ongoing_projets" >}}
 
-{{< postsByCategoriesTags categories="project" tags="social_software" >}}
+{{< postsByCategoriesTags categories="project" tags="social_software" notags="closed" >}}
+
+{{< postsByCategoriesTags caput="## " caputKey="area_closed_projects" categories="project" tags="social_software,closed" >}}
 
 ## {{< i18n "area_publications_productions" >}}
 
@@ -71,6 +73,6 @@ A professor and researcher in the field of Social Software. Currently, he serves
 </div>
 
 ## {{< i18n "area_contact" >}}
-- Email for information and team contact: [georgemasicano@unb.br](mailto:georgemasicano@unb.br).
+- Email for information and team contact: [georgemarsicano@unb.br](mailto:georgemarsicano@unb.br).
 
 {{< tags >}}

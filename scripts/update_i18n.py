@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""Sincroniza labels de i18n com IDs em data/areas.yaml e data/projects.yaml.
+"""Sincroniza labels de i18n com IDs em data/areas.yaml, data/projects.yaml
+e data/research_lines.yaml (nomes de linhas; temas só quando ausentes).
 
 Para cada `area.id` e cada `project.id`, garante que exista uma entrada
 com o nome localizado em i18n/pt.yaml e i18n/en.yaml. Preserva formatação
@@ -42,7 +43,11 @@ def _make_yaml() -> YAML:
 
 
 def compute_updates(
-    areas_data: dict, projects_data: dict, i18n_data: dict, lang: str
+    areas_data: dict,
+    projects_data: dict,
+    i18n_data: dict,
+    lang: str,
+    lines_data: dict | None = None,
 ) -> dict[str, str]:
     """Retorna {id: new_label} apenas para chaves faltando ou divergentes."""
     updates: dict[str, str] = {}
@@ -56,6 +61,18 @@ def compute_updates(
         name = (project.get("name") or {}).get(lang)
         if pid and name and i18n_data.get(pid) != name:
             updates[pid] = name
+    for line in (lines_data or {}).get("research_lines", []) or []:
+        lid = line.get("id")
+        name = (line.get("name") or {}).get(lang)
+        if lid and name and i18n_data.get(lid) != name:
+            updates[lid] = name
+        # Temas: research_lines.yaml só ADICIONA rótulos ausentes; nunca
+        # sobrescreve labels de tags já existentes em i18n (ex.: ihc).
+        for theme in line.get("themes", []) or []:
+            tid = theme.get("id")
+            tname = (theme.get("name") or {}).get(lang)
+            if tid and tname and tid not in i18n_data and tid not in updates:
+                updates[tid] = tname
     return updates
 
 
@@ -65,13 +82,15 @@ def sync(check_only: bool = False, dry_run: bool = False) -> int:
     yaml_ = _make_yaml()
     areas_data = yaml_.load((DATA_DIR / "areas.yaml").read_text(encoding="utf-8")) or {}
     projects_data = yaml_.load((DATA_DIR / "projects.yaml").read_text(encoding="utf-8")) or {}
+    lines_path = DATA_DIR / "research_lines.yaml"
+    lines_data = yaml_.load(lines_path.read_text(encoding="utf-8")) if lines_path.exists() else {}
 
     total_changes = 0
     for lang, path in I18N_PATHS.items():
         i18n_data = (
             yaml_.load(path.read_text(encoding="utf-8")) if path.exists() else {}
         ) or {}
-        updates = compute_updates(areas_data, projects_data, i18n_data, lang)
+        updates = compute_updates(areas_data, projects_data, i18n_data, lang, lines_data)
         if not updates:
             continue
         total_changes += len(updates)
@@ -88,7 +107,7 @@ def sync(check_only: bool = False, dry_run: bool = False) -> int:
         print(f"i18n desatualizado ({total_changes} entrada(s)). Rode sem --check.")
         return 1
     if total_changes == 0:
-        print("i18n já está sincronizado com areas.yaml e projects.yaml.")
+        print("i18n já está sincronizado com areas.yaml, projects.yaml e research_lines.yaml.")
     else:
         verb = "seriam" if dry_run else "foram"
         print(f"{total_changes} entrada(s) {verb} sincronizada(s).")

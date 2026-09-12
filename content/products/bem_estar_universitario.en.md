@@ -29,7 +29,7 @@ tags:
 ---
 ## Product Description
 
-**University Well-being** is a technological product recorded in 2025 in the Lattes CV of Prof. {{< link-interno "/people/george_marsicano" "George Marsicano Corrêa" >}}. It is a mobile application designed to promote mental health and well-being in the university context, addressing recurring problems in academic life — anxiety, lack of accessible emotional support, and impact on performance and overall well-being. The proposal seeks to strengthen interpersonal relationships, support the achievement of individual goals, and foster emotional understanding and awareness, encouraging self-knowledge and personal growth.
+**University Well-being** is a technological product catalogued in 2025 in the Lattes CV of Prof. {{< link-interno "/people/george_marsicano" "George Marsicano Corrêa" >}}. It is a mobile application designed to promote mental health and well-being in the university context, addressing recurring problems in academic life — anxiety, lack of accessible emotional support, and impact on performance and overall well-being. The proposal seeks to strengthen interpersonal relationships, support the achievement of individual goals, and foster emotional understanding and awareness, encouraging self-knowledge and personal growth.
 
 ## Development Basis
 

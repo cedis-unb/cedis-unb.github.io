@@ -55,7 +55,9 @@ At CEDIS, Verification, Validation, and Testing are considered fundamental pilla
 
 ## {{< i18n "area_ongoing_projets" >}}
 
-{{< postsByCategoriesTags categories="project" tags="verification_validation_testing" >}}
+{{< postsByCategoriesTags categories="project" tags="verification_validation_testing" notags="closed" >}}
+
+{{< postsByCategoriesTags caput="## " caputKey="area_closed_projects" categories="project" tags="verification_validation_testing,closed" >}}
 
 
 ## {{< i18n "area_publications_productions" >}}

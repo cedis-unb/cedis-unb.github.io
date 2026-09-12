@@ -45,6 +45,12 @@
                             <div class="rounded-2xl border border-gray-200/80 bg-white px-2 pt-2 pb-4 shadow-2xl text-zinc-900">
                                 <div class="grid grid-cols-1 gap-4">
                                     {{ range (index site.Menus .Identifier) }}
+{{- /* Itens com params.requires: research_lines só aparecem quando há linha de pesquisa ativa
+       (ou em pré-visualização local: npm run start:lines-preview). */ -}}
+{{ $menuRequires := "" }}{{ with .Params }}{{ with index . "requires" }}{{ $menuRequires = . }}{{ end }}{{ end }}
+{{ if eq $menuRequires "research_lines" }}
+  {{ if eq (len (partialCached "research-line-list" "visible" site.Language.Lang "visible")) 0 }}{{ continue }}{{ end }}
+{{ end }}
                                     <a class="group row flex items-start rounded-xl bg-transparent p-2 hover:bg-primary-800 hover:text-white focus:bg-primary-700 focus:text-white focus:outline-hidden focus:ring-2 focus:ring-primary-300 focus:ring-offset-2 focus:ring-offset-gray-950"
                                        href="{{ if hasPrefix .URL "/" }}{{ .URL | relLangURL }}{{ else }}{{ .URL }}{{ end }}">
                                         {{ partial "menu-icon.html" (dict "pre" .Pre) }}
@@ -79,6 +85,12 @@
                              class="absolute right-0 z-30 mt-3 w-56 origin-top-right">
                             <div class="rounded-2xl border border-gray-200/80 bg-white px-2 py-2 text-primary-900 shadow-2xl">
                                 {{ range (index site.Menus .Identifier) }}
+{{- /* Itens com params.requires: research_lines só aparecem quando há linha de pesquisa ativa
+       (ou em pré-visualização local: npm run start:lines-preview). */ -}}
+{{ $menuRequires := "" }}{{ with .Params }}{{ with index . "requires" }}{{ $menuRequires = . }}{{ end }}{{ end }}
+{{ if eq $menuRequires "research_lines" }}
+  {{ if eq (len (partialCached "research-line-list" "visible" site.Language.Lang "visible")) 0 }}{{ continue }}{{ end }}
+{{ end }}
                                 <a class="mt-0 block rounded-xl bg-transparent px-4 py-2 text-sm font-semibold hover:bg-primary-800 hover:text-white focus:bg-primary-700 focus:text-white focus:outline-hidden focus:ring-2 focus:ring-primary-300 focus:ring-offset-2 focus:ring-offset-gray-950"
                                    href="{{ if hasPrefix .URL "/" }}{{ .URL | relLangURL }}{{ else }}{{ .URL }}{{ end }}">{{- .Name -}}</a>
                                 {{ end }}
@@ -152,6 +164,12 @@
                     <div class="rounded-2xl bg-white px-2 pt-2 pb-4 text-zinc-900 shadow-lg">
                         <div class="grid grid-cols-1 gap-4">
                             {{ range (index site.Menus .Identifier) }}
+{{- /* Itens com params.requires: research_lines só aparecem quando há linha de pesquisa ativa
+       (ou em pré-visualização local: npm run start:lines-preview). */ -}}
+{{ $menuRequires := "" }}{{ with .Params }}{{ with index . "requires" }}{{ $menuRequires = . }}{{ end }}{{ end }}
+{{ if eq $menuRequires "research_lines" }}
+  {{ if eq (len (partialCached "research-line-list" "visible" site.Language.Lang "visible")) 0 }}{{ continue }}{{ end }}
+{{ end }}
                             <a class="group row flex items-start rounded-xl bg-transparent p-2 hover:bg-primary-800 hover:text-white focus:bg-primary-700 focus:text-white focus:outline-hidden focus:ring-2 focus:ring-primary-300 focus:ring-offset-2 focus:ring-offset-gray-950"
                                href="{{ if hasPrefix .URL "/" }}{{ .URL | relLangURL }}{{ else }}{{ .URL }}{{ end }}">
                                 {{ partial "menu-icon.html" (dict "pre" .Pre) }}
@@ -186,6 +204,12 @@
                      class="relative right-0 z-30 mt-2 w-full origin-top-right">
                     <div class="rounded-2xl bg-white px-2 py-2 text-primary-900 shadow-lg">
                         {{ range (index site.Menus .Identifier) }}
+{{- /* Itens com params.requires: research_lines só aparecem quando há linha de pesquisa ativa
+       (ou em pré-visualização local: npm run start:lines-preview). */ -}}
+{{ $menuRequires := "" }}{{ with .Params }}{{ with index . "requires" }}{{ $menuRequires = . }}{{ end }}{{ end }}
+{{ if eq $menuRequires "research_lines" }}
+  {{ if eq (len (partialCached "research-line-list" "visible" site.Language.Lang "visible")) 0 }}{{ continue }}{{ end }}
+{{ end }}
                         <a class="mt-0 block rounded-xl bg-transparent px-4 py-2 text-sm font-semibold hover:bg-primary-800 hover:text-white focus:bg-primary-700 focus:text-white focus:outline-hidden focus:ring-2 focus:ring-primary-300 focus:ring-offset-2 focus:ring-offset-gray-950"
                            href="{{ if hasPrefix .URL "/" }}{{ .URL | relLangURL }}{{ else }}{{ .URL }}{{ end }}">{{- .Name -}}</a>
                         {{ end }}

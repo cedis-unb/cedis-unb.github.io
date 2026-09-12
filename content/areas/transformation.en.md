@@ -60,7 +60,9 @@ In the Brazilian context, after a population growth peak between the 50s/60s, im
 
 ## {{< i18n "area_ongoing_projets" >}}
 
-{{< postsByCategoriesTags categories="project" tags="digital_transformation" >}}
+{{< postsByCategoriesTags categories="project" tags="digital_transformation" notags="closed" >}}
+
+{{< postsByCategoriesTags caput="## " caputKey="area_closed_projects" categories="project" tags="digital_transformation,closed" >}}
 
 
 ## {{< i18n "area_publications_productions" >}}

@@ -708,6 +708,8 @@
       </div>
       {{ end }}
 
+      {{ partial "research-line-related.html" (dict "kind" "researcher" "id" $personKey "variant" "people") }}
+
       {{ if $hasContact }}
       <div class="rounded-[1.75rem] border border-black/5 bg-white/85 p-5 shadow-[0_18px_60px_rgba(15,23,42,0.08)] backdrop-blur dark:border-white/10 dark:bg-white/4">
         <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-gray-500 dark:text-white/75">{{ i18n "people_contact" }}</div>

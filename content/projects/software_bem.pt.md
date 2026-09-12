@@ -11,6 +11,7 @@ start_date: 2020-09-23
 researchers:
 - george_marsicano
 areas:
+- social_software
 - gamification
 partners: []
 funding_agencies: []
@@ -28,6 +29,7 @@ categories:
 - george_marsicano
 - project_software_bem
 tags: 
+- social_software
 - gamification
 - project_software_bem
 ---
@@ -69,8 +71,8 @@ Surgido no contexto da pandemia, o {{< link-interno "/projects/doarti" "DOARTI" 
 ### LEPIC
 Com foco em educação, o LEPIC tem como objetivo criar uma ferramenta para avaliação e monitoramento da fluência leitora de crianças. A proposta é fruto de uma parceria entre a UnB (FCTE e FCTS) e a UFMG, e visa apoiar políticas públicas de alfabetização com base em evidências e tecnologia acessível.
 
-### Produtos tecnológicos registrados em 2025
-Em 2025, novas iniciativas associadas à linha de software de impacto social foram registradas como produtos tecnológicos:
+### Produtos tecnológicos (2025–2026)
+Em 2025, novas iniciativas associadas à linha de software de impacto social foram cadastradas como produtos tecnológicos no Currículo Lattes. Em 2026, os aplicativos Prevenção ao Abuso Sexual Infantil e Prevenção da Violência na Infância receberam certificado de registro de programa de computador no INPI (ver {{< link-interno "/publications/registrations/" "Registros de software" >}}):
 
 - {{< link-interno "/products/prevencao_abuso_infantil" "Prevenção ao Abuso Sexual Infantil" >}}
 - {{< link-interno "/products/prevencao_violencia_infancia" "Prevenção da Violência na Infância" >}}

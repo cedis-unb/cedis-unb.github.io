@@ -137,6 +137,16 @@ Página em `content/areas/{slug}.{pt,en}.md`:
 - `title`, `summary`, `featured_image` — obrigatórios.
 - `tags` inclui o próprio `id` da área para SEO e filtragem interna.
 
+### Linha de pesquisa — `data/research_lines.yaml` + `content/research-lines/{slug}.{pt,en}.md` (gerado)
+
+Camada institucional/científica distinta das áreas (que são a navegação).
+Campos: `id` (`line_*`), `slug`, `status` (`draft|active|archived`), `name`,
+`summary`, `description`, `questions`, `methods`, `history`, `period`, e as
+relações explícitas `areas[]`, `researchers[]`, `projects[]`, `themes[]`.
+Nada é deduzido de `areas.yaml`. Rascunhos não entram no build. Índices:
+`research-line-index`, `research-line-list`, `research-lines-for`.
+Detalhes, ciclo de status e derivações: [`research-lines.md`](research-lines.md).
+
 ### Projeto — `data/projects.yaml` + `content/projects/{id}.{pt,en}.md`
 
 Entrada em `data/projects.yaml`:

@@ -65,6 +65,11 @@
 {{ end }}
 
 {{ $displayTags := .Params.tags | default (slice) }}
+{{/* Inserção científica: chaves desta área para casar com research_lines.yaml::areas[] —
+     id da página e tags que sejam ids de data/areas.yaml (ex.: página ai_pln ↔ área ai). */}}
+{{ $areaIndexForLines := partialCached "area-index" "global" site.Language.Lang }}
+{{ $areaLineKeys := slice (.Params.id | default .File.TranslationBaseName | lower) }}
+{{ range .Params.tags }}{{ if and (index $areaIndexForLines .) (not (in $areaLineKeys .)) }}{{ $areaLineKeys = $areaLineKeys | append . }}{{ end }}{{ end }}
 
 {{ $relatedProjectItems := slice }}
 {{ range .Site.RegularPages.ByTitle }}
@@ -284,6 +289,8 @@
         </div>
         {{ end }}
       </div>
+
+      {{ partial "research-line-related.html" (dict "kind" "area" "ids" $areaLineKeys) }}
 
       {{ if gt (len $researcherItems) 0 }}
       <div class="rounded-[1.75rem] border border-slate-200/80 bg-white p-6 shadow-[0_18px_48px_rgba(15,23,42,0.08)] dark:border-white/10 dark:bg-slate-900/40 dark:shadow-[0_18px_48px_rgba(0,0,0,0.22)]">

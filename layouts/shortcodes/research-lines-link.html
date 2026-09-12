@@ -1,0 +1,15 @@
+{{- /*
+  research-lines-link — item de lista com link para a seção Linhas de pesquisa.
+  Uso (com % para o output entrar no markdown da página, como último item da lista):
+    {{% research-lines-link "Linhas de pesquisa" "programas científicos que organizam áreas, pesquisadores e projetos" %}}
+  Sai VAZIO quando não há linha visível (ativa em produção; rascunho só em pré-visualização),
+  para que a página Sobre não aponte para uma seção inexistente.
+*/ -}}
+{{- $lines := partialCached "research-line-list" "visible" site.Language.Lang "visible" -}}
+{{- if gt (len $lines) 0 -}}
+{{- $label := .Get 0 | default (i18n "ui_research_lines") -}}
+{{- $desc := .Get 1 | default "" -}}
+{{- $url := "research-lines/" | relLangURL -}}
+{{- with site.GetPage "/research-lines" }}{{ $url = .RelPermalink }}{{ end -}}
+- <a href="{{ $url }}" class="internal-link" style="display: inline-flex; align-items: center; text-decoration: none;">{{ $label }} <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><g transform="rotate(-45 12 12)"><line x1="6" y1="12" x2="18" y2="12"></line><polyline points="12 6 18 12 12 18"></polyline></g></svg></a>{{ with $desc }} — {{ . }}{{ end }}
+{{- end -}}

@@ -5,7 +5,7 @@ draft: false
 language: en
 translationKey: opportunities
 url: /opportunities/
-description: "Archive of calls, opportunities, and selection notices related to CEDIS activities and projects; all currently listed items are closed."
+description: "Open calls and an archive of notices, selections, and opportunities related to CEDIS projects."
 featured_image: "../assets/images/pages/media-CEDIS.webp"
 eyebrow: "Calls and opportunities"
 aliases:

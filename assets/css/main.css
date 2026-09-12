@@ -14,6 +14,14 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 
+/* Modo escuro por CLASSE (toggle em darkmode.js + script inline no head).
+   No Tailwind 3 isso era `darkMode: 'class'` em tailwind.config.js; ao
+   migrar para CSS-first (2026-07-27) a diretiva ficou de fora e todos os
+   `dark:` passaram a depender só de prefers-color-scheme — o botão de tema
+   deixou de ter efeito. Regressão corrigida em 2026-09-12; `npm test`
+   (check:css) garante que esta linha não suma de novo. */
+@custom-variant dark (&:where(.dark, .dark *));
+
 /* Fonte principal de classes: hugo_stats.json (gerado por
    [build.buildStats] enable = true em hugo.yaml). */
 @source "hugo_stats.json";

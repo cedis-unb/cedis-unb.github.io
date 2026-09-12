@@ -54,7 +54,9 @@ Professor e pesquisador na área de Arquitetura de Software. Atualmente, desempe
 
 ## {{< i18n "area_ongoing_projets" >}}
 
-{{< postsByCategoriesTags categories="project" tags="software_architecture" >}}
+{{< postsByCategoriesTags categories="project" tags="software_architecture" notags="closed" >}}
+
+{{< postsByCategoriesTags caput="## " caputKey="area_closed_projects" categories="project" tags="software_architecture,closed" >}}
 
 ## {{< i18n "area_publications_productions" >}}
 
