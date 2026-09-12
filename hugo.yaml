@@ -154,7 +154,7 @@ languages:
         - identifier: pesquisa-mapa
           pre: piechart
           name: "Mapa de competências"
-          post: "Como áreas, pessoas e projetos se conectam"
+          post: "Como linhas, áreas, pessoas e projetos se conectam"
           url: /mapa/
           weight: 20
         - identifier: pesquisa-infra
@@ -441,7 +441,7 @@ languages:
         - identifier: pesquisa-mapa
           pre: piechart
           name: "Competency map"
-          post: "How areas, people and projects connect"
+          post: "How lines, areas, people and projects connect"
           url: /mapa/
           weight: 20
         - identifier: pesquisa-infra

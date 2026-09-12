@@ -47,15 +47,17 @@
   {{ $project := . }}
   {{ $projectId := $project.id }}
   {{ $label := $project.name }}
-  {{ $nodeType := cond (eq ($project.project_type | default "project") "umbrella") "umbrella" "project" }}
-  {{ $childCount := $project.children_count }}
+  {{/* Frentes (umbrella) entram como projetos comuns (2026-09-12): depois das linhas de
+       pesquisa, a frente como tipo de nó duplicava a linha correspondente. A hierarquia
+       subprojeto → frente permanece na aresta project-umbrella (tracejada). */}}
+  {{ $childCount := $project.children_count | default 0 }}
   {{ $nodes = $nodes | append (dict
     "id" (printf "project:%s" $projectId)
-    "type" $nodeType
+    "type" "project"
     "label" $label
     "raw" $projectId
     "url" (printf "/tags/%s" ($projectId | urlize) | relLangURL)
-    "count" (cond (eq $nodeType "umbrella") $childCount (len $project.researchers))
+    "count" (add (len $project.researchers) $childCount)
   ) }}
   {{ range $project.researchers }}
     {{ $links = $links | append (dict
@@ -149,11 +151,6 @@
                   class="rounded-full border px-4 py-1.5 pointer-coarse:py-3 pointer-coarse:px-5 text-sm font-semibold transition-colors">
             <span class="inline-block h-2 w-2 rounded-full bg-emerald-500 mr-1.5"></span>{{ i18n "ui_map_filter_projects" }}
           </button>
-          <button type="button" @click="setFilter('umbrella')"
-                  :class="filter==='umbrella' ? 'border-violet-500 bg-violet-500 text-white' : 'border-black/10 bg-white text-gray-700 hover:border-violet-400 hover:text-violet-700 dark:border-white/10 dark:bg-white/4 dark:text-white/80'"
-                  class="rounded-full border px-4 py-1.5 pointer-coarse:py-3 pointer-coarse:px-5 text-sm font-semibold transition-colors">
-            <span class="inline-block h-2 w-2 rounded-full bg-violet-500 mr-1.5"></span>{{ cond $isPt "Frentes" "Fronts" }}
-          </button>
           {{ if gt $lineCount 0 }}
           <button type="button" @click="setFilter('line')"
                   :class="filter==='line' ? 'border-amber-500 bg-amber-500 text-white' : 'border-black/10 bg-white text-gray-700 hover:border-amber-400 hover:text-amber-700 dark:border-white/10 dark:bg-white/4 dark:text-white/80'"
@@ -178,7 +175,6 @@
             <li class="flex items-center justify-between"><span class="text-gray-700 dark:text-white/80"><span class="inline-block h-2 w-2 rounded-full bg-blue-500 mr-2"></span>{{ i18n "ui_map_filter_areas" }}</span><span class="font-bold text-gray-900 dark:text-white" x-text="counts.area"></span></li>
             <li class="flex items-center justify-between"><span class="text-gray-700 dark:text-white/80"><span class="inline-block h-2 w-2 rounded-full bg-primary-500 mr-2"></span>{{ i18n "ui_map_filter_researchers" }}</span><span class="font-bold text-gray-900 dark:text-white" x-text="counts.researcher"></span></li>
             <li class="flex items-center justify-between"><span class="text-gray-700 dark:text-white/80"><span class="inline-block h-2 w-2 rounded-full bg-emerald-500 mr-2"></span>{{ i18n "ui_map_filter_projects" }}</span><span class="font-bold text-gray-900 dark:text-white" x-text="counts.project"></span></li>
-            <li class="flex items-center justify-between"><span class="text-gray-700 dark:text-white/80"><span class="inline-block h-2 w-2 rounded-full bg-violet-500 mr-2"></span>{{ cond $isPt "Frentes" "Fronts" }}</span><span class="font-bold text-gray-900 dark:text-white" x-text="counts.umbrella"></span></li>
             {{ if gt $lineCount 0 }}
             <li class="flex items-center justify-between"><span class="text-gray-700 dark:text-white/80"><span class="inline-block h-2 w-2 rounded-full bg-amber-500 mr-2"></span>{{ i18n "ui_map_filter_lines" }}</span><span class="font-bold text-gray-900 dark:text-white" x-text="counts.line"></span></li>
             {{ end }}
@@ -200,7 +196,7 @@
             <li><span class="inline-block h-2.5 w-2.5 rounded-full bg-blue-500 mr-2 align-middle"></span>{{ i18n "ui_map_legend_area" }}</li>
             <li><span class="inline-block h-2.5 w-2.5 rounded-full bg-primary-500 mr-2 align-middle"></span>{{ i18n "ui_map_legend_researcher" }}</li>
             <li><span class="inline-block h-2.5 w-2.5 rounded-full bg-emerald-500 mr-2 align-middle"></span>{{ i18n "ui_map_legend_project" }}</li>
-            <li><span class="inline-block h-2.5 w-2.5 rounded-full bg-violet-500 mr-2 align-middle"></span>{{ cond $isPt "Frente estratégica (conecta subprojetos)" "Strategic front (connects subprojects)" }}</li>
+            <li><span class="inline-block w-5 border-t-2 border-dashed border-gray-400 mr-2 align-middle"></span>{{ cond $isPt "Ligação tracejada: subprojeto → frente estratégica" "Dashed link: subproject → strategic front" }}</li>
             {{ if gt $lineCount 0 }}
             <li><span class="inline-block h-2.5 w-2.5 rounded-full bg-amber-500 mr-2 align-middle"></span>{{ i18n "ui_map_legend_line" }}</li>
             {{ end }}
@@ -218,7 +214,7 @@ function cedisAreasMap() {
   return {
     filter: 'all',
     loading: true,
-    counts: { area: 0, researcher: 0, project: 0, umbrella: 0, line: 0 },
+    counts: { area: 0, researcher: 0, project: 0, line: 0 },
     selected: null,
     _sim: null,
     _all: null,
@@ -227,7 +223,6 @@ function cedisAreasMap() {
       area: {{ i18n "ui_map_filter_areas" | jsonify | safeJS }},
       researcher: {{ i18n "ui_map_filter_researchers" | jsonify | safeJS }},
       project: {{ i18n "ui_map_filter_projects" | jsonify | safeJS }},
-      umbrella: {{ cond $isPt "Frentes" "Fronts" | jsonify | safeJS }},
       line: {{ i18n "ui_map_filter_lines" | jsonify | safeJS }}
     },
     init() {
@@ -236,7 +231,6 @@ function cedisAreasMap() {
       this.counts.area = this._all.nodes.filter(n => n.type === 'area').length;
       this.counts.researcher = this._all.nodes.filter(n => n.type === 'researcher').length;
       this.counts.project = this._all.nodes.filter(n => n.type === 'project').length;
-      this.counts.umbrella = this._all.nodes.filter(n => n.type === 'umbrella').length;
       this.counts.line = this._all.nodes.filter(n => n.type === 'line').length;
       const check = () => {
         if (window.d3) { this.render(); }
@@ -270,8 +264,8 @@ function cedisAreasMap() {
         links = links.filter(l => nodeIds.has(l.source) && nodeIds.has(l.target));
       }
 
-      const color = { area: '#3b82f6', researcher: '#c5272f', project: '#10b981', umbrella: '#8b5cf6', line: '#f59e0b' };
-      const radius = { area: 12, researcher: 16, project: 10, umbrella: 19, line: 18 };
+      const color = { area: '#3b82f6', researcher: '#c5272f', project: '#10b981', line: '#f59e0b' };
+      const radius = { area: 12, researcher: 16, project: 10, line: 18 };
 
       const svg = d3.select(container);
       svg.selectAll('*').remove();
@@ -282,7 +276,9 @@ function cedisAreasMap() {
       svg.call(zoom);
 
       const linkG = g.append('g').attr('stroke', '#94a3b8').attr('stroke-opacity', 0.35);
-      const linkSel = linkG.selectAll('line').data(links).join('line').attr('stroke-width', 1);
+      const linkSel = linkG.selectAll('line').data(links).join('line')
+        .attr('stroke-width', 1)
+        .attr('stroke-dasharray', d => d.kind === 'project-umbrella' ? '4 3' : null);
 
       const nodeG = g.append('g');
       const nodeSel = nodeG.selectAll('g').data(nodes, d => d.id).join('g').style('cursor', 'pointer');
@@ -296,8 +292,8 @@ function cedisAreasMap() {
       nodeSel.append('text')
         .attr('dy', d => radius[d.type] + 14)
         .attr('text-anchor', 'middle')
-        .attr('font-size', d => (d.type === 'umbrella' || d.type === 'line') ? 12 : (d.type === 'researcher' ? 12 : 10))
-        .attr('font-weight', d => d.type === 'umbrella' || d.type === 'line' || d.type === 'researcher' ? 700 : 500)
+        .attr('font-size', d => (d.type === 'line' || d.type === 'researcher') ? 12 : 10)
+        .attr('font-weight', d => d.type === 'line' || d.type === 'researcher' ? 700 : 500)
         .attr('fill', '#1f2937')
         .attr('paint-order', 'stroke')
         .attr('stroke', 'rgba(255,255,255,0.9)')

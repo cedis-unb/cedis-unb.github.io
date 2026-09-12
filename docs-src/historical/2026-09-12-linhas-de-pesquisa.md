@@ -200,6 +200,18 @@ rascunho: as cinco linhas passaram a `status: active` e foram publicadas.
 Pendência que fica: alinhar o registro do grupo no DGP/CNPq às cinco
 linhas.
 
+## 3c. Mapa do conhecimento sem "frentes" como tipo de nó (2026-09-12)
+
+Com as linhas publicadas, cada frente estratégica (projeto guarda-chuva)
+passou a ser subconjunto exato de uma linha no grafo: 6/6 subprojetos de
+Inovação Digital e Gamificação na linha de aprendizagem, 3/3 de IA e Dados
+na linha de IA, 1/1 do SpB na linha sociotécnica. Dois polos puxando os
+mesmos nós confundiam a leitura. Decisão de Sergio: o mapa fica com quatro
+tipos (áreas, pesquisadores, projetos, linhas). Os guarda-chuvas viram nós
+de projeto comuns e a hierarquia subprojeto → frente permanece como aresta
+tracejada. Catálogo de projetos e páginas de projeto continuam organizados
+por frente; só a visualização mudou.
+
 ## 4. Próximos passos registrados
 
 1. Alinhar o registro do grupo no DGP/CNPq às cinco linhas publicadas

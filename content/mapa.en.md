@@ -5,7 +5,7 @@ draft: false
 language: en
 layout: map
 url: /map/
-description: "Interactive graph connecting CEDIS areas of expertise, researchers, and projects."
+description: "Interactive graph connecting CEDIS research lines, areas of expertise, researchers, and projects."
 featured_image: "../assets/images/featured/CEDIS.png"
 eyebrow: "Structural view"
 ---
