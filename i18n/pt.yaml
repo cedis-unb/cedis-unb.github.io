@@ -639,11 +639,6 @@ ui_research_lines: "Linhas de pesquisa"
 ui_research_lines_related: "Linhas de pesquisa relacionadas"
 ui_research_lines_related_lead: "Agendas científicas do CEDIS em que este item se
   insere."
-ui_research_lines_lead: "Programas científicos do CEDIS: temas aglutinadores que articulam
-  áreas de atuação, pesquisadores, projetos e produção."
-ui_research_lines_how: "As linhas organizam a agenda científica; as áreas de atuação
-  continuam sendo a porta de entrada para descobrir o que o CEDIS faz. Uma área pode
-  se inserir em mais de uma linha."
 ui_research_lines_empty: "Nenhuma linha de pesquisa publicada no momento."
 ui_research_lines_archived: "Linhas anteriores"
 ui_research_line_status_active: "Ativa"

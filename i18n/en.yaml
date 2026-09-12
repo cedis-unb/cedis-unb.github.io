@@ -638,11 +638,6 @@ ui_research_line: "Research line"
 ui_research_lines: "Research lines"
 ui_research_lines_related: "Related research lines"
 ui_research_lines_related_lead: "CEDIS scientific agendas this item belongs to."
-ui_research_lines_lead: "CEDIS scientific programs: unifying themes that bring together
-  areas of expertise, researchers, projects, and output."
-ui_research_lines_how: "Lines organize the scientific agenda; areas of expertise remain
-  the entry point to discover what CEDIS does. An area may belong to more than one
-  line."
 ui_research_lines_empty: "No research line is published at the moment."
 ui_research_lines_archived: "Former lines"
 ui_research_line_status_active: "Active"
