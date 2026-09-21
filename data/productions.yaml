@@ -9487,3 +9487,57 @@ items:
     advisors: []
     url: ''
     year: 2026
+  - authors:
+      - Bruno Mello Andrade
+    title:
+      pt: 'Gamificação para Governança de Projetos: Um Estudo de Caso em Fábrica de Software de Alta Maturidade'
+      en: 'Gamification for Project Governance: A Case Study in a High-Maturity Software Factory'
+    summary:
+      pt: >-
+        Este trabalho avaliou a aplicação da gamificação na gestão de projetos em uma fábrica de software de alta maturidade (CMMI Nível 5), cenário no qual os rituais de
+        governança e auditoria frequentemente geram sobrecarga burocrática e resistência operacional. Diante das restrições contratuais que limitam o uso de incentivos
+        financeiros extrínsecos, o estudo avaliou empiricamente a gamificação como estratégia para elevar o engajamento de líderes e gestores de projetos nas rotinas operacionais
+        de governança. A solução foi embutida nas ferramentas corporativas legadas (Jira e Confluence) sob o princípio da continuidade do fluxo de trabalho, com dez técnicas de
+        jogos alocadas segundo o perfil motivacional previamente diagnosticado na equipe. A avaliação deu-se por meio de um estudo de caso industrial longitudinal, conduzido com
+        12 profissionais em funções de liderança ao longo de doze meses, comparando seis meses de piloto gamificado a uma linha de base histórica de igual duração da mesma
+        equipe. Foram analisados a vazão produtiva, a taxa de demandas em atraso, a densidade de defeitos e o perfil motivacional aferido pelo Intrinsic Motivation Inventory
+        (IMI), aplicado em pré e pós-teste. Os indicadores operacionais apresentaram variações discretas — acréscimo de 7,16% na vazão produtiva e redução de 1,77 ponto
+        percentual na taxa de atraso, sem deterioração da qualidade técnica —, acompanhadas de queda expressiva na percepção de sobrecarga, evidenciada pela redução de 0,91 ponto
+        no item de Pressão/Tensão do IMI. Identificou-se ainda um padrão exploratório, denominado assimetria comportamental, caracterizado pela adesão mais rápida às rotinas
+        normativas do que às ações de colaboração espontânea. A gamificação de baixa intrusão mostrou-se, assim, viável em ambientes de governança formalizada, com efeito mais
+        claro sobre a redução do atrito burocrático do que sobre a elevação da motivação intrínseca.
+      en: >-
+        This study evaluated the application of gamification to project management in a high-maturity software factory (CMMI Level 5), a setting in which governance and audit
+        rituals often generate bureaucratic overhead and operational resistance. Given the contractual constraints that limit the use of extrinsic financial incentives, the study
+        empirically evaluated gamification as a strategy to increase the engagement of project leaders and managers in operational governance routines. The solution was embedded
+        into the legacy corporate tools (Jira and Confluence) under the principle of workflow continuity, with ten game techniques allocated according to the motivational profile
+        previously diagnosed within the team. The evaluation was carried out through a longitudinal industrial case study conducted with 12 professionals in leadership roles over
+        twelve months, comparing six months of a gamified pilot with a historical baseline of equal duration drawn from the same team. Throughput, the rate of delayed demands,
+        defect density and the motivational profile assessed by the Intrinsic Motivation Inventory (IMI), applied as a pre- and post-test, were analyzed. The operational
+        indicators showed modest variations — a 7.16% increase in throughput and a 1.77 percentage point reduction in the delay rate, with no deterioration in technical quality
+        —, accompanied by a marked decline in the perceived overhead, evidenced by a 0.91-point reduction in the IMI Pressure/Tension item. An exploratory pattern was also
+        identified, termed behavioral asymmetry, characterized by faster adherence to normative routines than to spontaneous collaborative actions. Low-intrusion gamification
+        thus proved feasible in formalized governance environments, with a clearer effect on reducing bureaucratic friction than on increasing intrinsic motivation.
+    book_title: ''
+    volume: ''
+    doi_isbn: ''
+    journal_event: ''
+    location: ''
+    pages: ''
+    publisher: Biblioteca Central da Universidade de Brasília
+    tags:
+      - gamification
+      - soft_skills
+      - software_quality
+      - project_inovacao_digital_gamificacao
+    type: dissertation
+    program: curso_ppca
+    advisors:
+      - sergio_freitas
+    # PENDENTE: preencher com o handle do Repositório Institucional da UnB
+    # (https://repositorio.unb.br/handle/10482/<n>) após o depósito da
+    # dissertação, defendida em 19/10/2026.
+    url: ''
+    defense_date: 2026-10-19
+    year: 2026
+    defesa_id: bruno-andrade-2026-10-19

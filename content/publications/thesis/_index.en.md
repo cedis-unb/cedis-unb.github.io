@@ -8,5 +8,5 @@ generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 publication_filter: thesis
 description: Master's dissertations and doctoral theses associated with CEDIS.
-summary: 22 catalogued records.
+summary: 23 catalogued records.
 ---
