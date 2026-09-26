@@ -47,6 +47,10 @@
       "type": "array",
       "items": {"type": "string"}
     },
+    "co_advisors": {
+      "type": "array",
+      "items": {"type": "string"}
+    },
     "tags": {
       "type": "array",
       "items": {"type": "string"}

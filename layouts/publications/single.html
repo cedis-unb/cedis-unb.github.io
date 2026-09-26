@@ -91,6 +91,25 @@
       </div>
       {{ end }}
 
+      {{ with .Params.advisors }}
+      {{ $coAdvisors := $.Params.co_advisors | default slice }}
+      <div class="rounded-3xl border border-slate-200/80 bg-white/90 p-5 shadow-[0_18px_50px_rgba(15,23,42,0.08)] dark:border-white/10 dark:bg-white/4">
+        <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-slate-700 dark:text-white/75">{{ cond $isPt "Orientação" "Supervision" }}</div>
+        <div class="mt-4 space-y-3 text-sm">
+          {{ range . }}
+            {{ if not (in $coAdvisors .) }}
+              {{ $adv := partial "people-lookup" . }}
+              {{ if $adv.found }}<div><span class="font-semibold">{{ cond $isPt "Orientação" "Supervisor" }}:</span> <a class="text-primary-700 dark:text-primary-200" href="{{ if hasPrefix $adv.link "/" }}{{ $adv.link | relLangURL }}{{ else }}{{ $adv.link }}{{ end }}">{{ $adv.name }}</a></div>{{ end }}
+            {{ end }}
+          {{ end }}
+          {{ range $coAdvisors }}
+            {{ $adv := partial "people-lookup" . }}
+            {{ if $adv.found }}<div><span class="font-semibold">{{ cond $isPt "Coorientação" "Co-supervisor" }}:</span> <a class="text-primary-700 dark:text-primary-200" href="{{ if hasPrefix $adv.link "/" }}{{ $adv.link | relLangURL }}{{ else }}{{ $adv.link }}{{ end }}">{{ $adv.name }}</a></div>{{ end }}
+          {{ end }}
+        </div>
+      </div>
+      {{ end }}
+
       <div class="rounded-3xl border border-slate-200/80 bg-white/90 p-5 shadow-[0_18px_50px_rgba(15,23,42,0.08)] dark:border-white/10 dark:bg-white/4">
         <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-slate-700 dark:text-white/75">{{ cond $isPt "Recursos" "Resources" }}</div>
         <div class="mt-4 space-y-2 text-sm">

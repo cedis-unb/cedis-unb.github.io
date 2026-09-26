@@ -2877,6 +2877,8 @@ items:
     advisors:
       - cristiane_ramos
       - sergio_freitas
+    co_advisors:
+      - sergio_freitas
     url: https://bdm.unb.br/handle/10483/34952
     defense_date: 2022-09-26
     year: 2022

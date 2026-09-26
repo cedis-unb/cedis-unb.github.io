@@ -367,6 +367,9 @@ def frontmatter(payload: dict[str, Any], lang: str) -> str:
         "bibtex": bibtex_for(item, lang, payload["slug"]),
         "aliases": [f"/publications/{payload['slug']}/"],
     }
+    co_advisors = [text(t) for t in item.get("co_advisors") or [] if text(t)]
+    if co_advisors:
+        fm["co_advisors"] = co_advisors
     return yaml.safe_dump(fm, allow_unicode=True, sort_keys=False).strip()
 
 

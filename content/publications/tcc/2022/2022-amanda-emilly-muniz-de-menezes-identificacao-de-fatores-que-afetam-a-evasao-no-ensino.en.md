@@ -57,6 +57,8 @@ bibtex: "@mastersthesis{2022-amanda-emilly-muniz-de-menezes-identificacao-de-fat
   \  year = {2022}\n}"
 aliases:
 - /publications/2022-amanda-emilly-muniz-de-menezes-identificacao-de-fatores-que-afetam-a-evasao-no-ensino/
+co_advisors:
+- sergio_freitas
 ---
 ## Abstract
 
