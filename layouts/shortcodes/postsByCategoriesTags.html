@@ -7,6 +7,7 @@
 {{ $caput := $caputRaw | markdownify }}
 {{ $showSummary := .Get "showSummary" | default true }}
 {{ $showDescription := .Get "showDescription" | default true }}
+{{ $variant := .Get "variant" | default "" }}
 {{ $isPt := eq $.Site.Language.Lang "pt" }}
 
 {{ $tags := slice }}
@@ -99,7 +100,17 @@
     <div class="caput">{{ $caput | markdownify }}</div>
   {{ end }}
 
-  {{ if $isKnowledgeAreasView }}
+  {{ if and $isKnowledgeAreasView (eq $variant "profile-areas") }}
+    <div class="not-prose profile-areas-grid">
+      {{ range $matches }}
+        <article class="profile-areas-card">
+          <a href="{{ .RelPermalink }}" class="profile-areas-card__link" aria-label="{{ $areaOpenLabel }}: {{ .Title }}">
+            <span class="profile-areas-card__title">{{ .Title }}</span>
+          </a>
+        </article>
+      {{ end }}
+    </div>
+  {{ else if $isKnowledgeAreasView }}
     <div class="@container not-prose mt-6 grid gap-5 @xl:grid-cols-2">
       {{ range $matches }}
         {{ $cardPage := . }}

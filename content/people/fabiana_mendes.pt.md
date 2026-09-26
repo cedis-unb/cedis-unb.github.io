@@ -38,7 +38,7 @@ nav_next: true
 - Implementadores MR-MPS.BR e Introdução ao MPS.BR - Sociedade para Promoção da Excelência do Software Brasileiro (SOFTEX), Brasil (2006-2007)​​.
 
 ## {{< i18n "people_research_areas" >}}
-{{< postsByCategoriesTags caput="" categories="knowledge_areas,fabiana_mendes" >}}
+{{< postsByCategoriesTags caput="" categories="knowledge_areas,fabiana_mendes" variant="profile-areas" >}}
 
 ## {{< i18n "people_professional_activities" >}}
 - Vínculo Institucional: Universidade de Brasília (UnB) desde 2011.

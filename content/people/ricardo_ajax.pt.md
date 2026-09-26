@@ -56,7 +56,7 @@ nav_next: true
 - 1º lugar no encontro de TI da Politec, com trabalhos sobre medições de tamanho de software e uso de métricas em projetos (2001 e 2002).
 
 ## {{< i18n "people_research_areas" >}}
-{{< postsByCategoriesTags caput="" categories="knowledge_areas,ricardo_ajax" >}}
+{{< postsByCategoriesTags caput="" categories="knowledge_areas,ricardo_ajax" variant="profile-areas" >}}
 
 
 

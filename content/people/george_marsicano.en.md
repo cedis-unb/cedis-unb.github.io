@@ -47,7 +47,7 @@ nav_next: true
 - Certified Coach by the International School of Coaching - The Newfield Network (2006).
 
 ## {{< i18n "people_research_areas" >}}
-{{< postsByCategoriesTags caput="" categories="knowledge_areas,george_marsicano" >}}
+{{< postsByCategoriesTags caput="" categories="knowledge_areas,george_marsicano" variant="profile-areas" >}}
 
 ## {{< i18n "people_professional_activities" >}}
 - Professor at UnB since 2011, contributing to undergraduate teaching in Software Engineering and, since 2020, to the Applied Computing graduate program.

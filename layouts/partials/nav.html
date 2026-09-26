@@ -25,7 +25,7 @@
                 <div class="flex items-center gap-1 rounded-full border border-white/10 bg-white/6 px-2 py-1 shadow-[0_10px_30px_rgba(0,0,0,0.18)]">
                     {{ range site.Menus.main }}
                     {{ if (eq "complexdropdown" .Pre) }}
-                    <div @click.away="open = false" class="relative" x-data="{ open: false, close() { if (!this.open) return; this.open = false; this.$nextTick(() => this.$refs.trigger?.focus()); } }" @keydown.escape.window.stop="close()">
+                    <div @click.away="open = false" class="relative" x-data="{ open: false, close() { if (!this.open) return; this.open = false; this.$nextTick(() => this.$refs.trigger?.focus()); } }" @keydown.escape="if (open) { $event.stopPropagation(); close(); }">
                         <button x-ref="trigger" type="button" @click="open = !open" :aria-expanded="open" aria-haspopup="true"
                                 class="flex items-center whitespace-nowrap rounded-full px-4 py-2 text-sm font-semibold text-gray-100 transition-colors hover:bg-white/10 hover:text-white focus:bg-primary-700 focus:text-white focus:outline-hidden focus:ring-2 focus:ring-primary-300 focus:ring-offset-2 focus:ring-offset-gray-950">
                             <span>{{ .Name }}</span>
@@ -66,7 +66,7 @@
                         </div>
                     </div>
                     {{ else if (eq "dropdown" .Pre) }}
-                    <div @click.away="open = false" class="relative" x-data="{ open: false, close() { if (!this.open) return; this.open = false; this.$nextTick(() => this.$refs.trigger?.focus()); } }" @keydown.escape.window.stop="close()">
+                    <div @click.away="open = false" class="relative" x-data="{ open: false, close() { if (!this.open) return; this.open = false; this.$nextTick(() => this.$refs.trigger?.focus()); } }" @keydown.escape="if (open) { $event.stopPropagation(); close(); }">
                         <button x-ref="trigger" type="button" @click="open = !open" :aria-expanded="open" aria-haspopup="true"
                                 class="flex items-center whitespace-nowrap rounded-full px-4 py-2 text-sm font-semibold text-gray-100 transition-colors hover:bg-white/10 hover:text-white focus:bg-primary-700 focus:text-white focus:outline-hidden focus:ring-2 focus:ring-primary-300 focus:ring-offset-2 focus:ring-offset-gray-950">
                             <span>{{ .Name }}</span>
@@ -144,7 +144,7 @@
               <div class="mb-3 px-2 text-[0.65rem] font-semibold uppercase tracking-[0.28em] text-white/40">{{ $mobileNavigateLabel }}</div>
               {{ range site.Menus.main }}
             {{ if (eq "complexdropdown" .Pre) }}
-            <div @click.away="open = false" class="relative" x-data="{ open: false, close() { if (!this.open) return; this.open = false; this.$nextTick(() => this.$refs.trigger?.focus()); } }" @keydown.escape.window.stop="close()">
+            <div @click.away="open = false" class="relative" x-data="{ open: false, close() { if (!this.open) return; this.open = false; this.$nextTick(() => this.$refs.trigger?.focus()); } }" @keydown.escape="if (open) { $event.stopPropagation(); close(); }">
                 <button x-ref="trigger" type="button" @click="open = !open" :aria-expanded="open" aria-haspopup="true"
                         class="flex w-full flex-row items-center justify-between rounded-2xl border border-white/5 bg-white/4 px-4 py-3 text-sm font-semibold text-left text-gray-100 transition-colors dark:focus:text-white dark:hover:text-white dark:focus:bg-gray-600 dark:hover:bg-gray-600 hover:bg-white/10 hover:text-white focus:bg-primary-700 focus:text-white focus:outline-hidden focus:ring-2 focus:ring-primary-300 focus:ring-offset-2 focus:ring-offset-gray-950">
                     <span>{{ .Name }}</span>
@@ -185,7 +185,7 @@
                 </div>
             </div>
             {{ else if (eq "dropdown" .Pre) }}
-            <div @click.away="open = false" class="relative" x-data="{ open: false, close() { if (!this.open) return; this.open = false; this.$nextTick(() => this.$refs.trigger?.focus()); } }" @keydown.escape.window.stop="close()">
+            <div @click.away="open = false" class="relative" x-data="{ open: false, close() { if (!this.open) return; this.open = false; this.$nextTick(() => this.$refs.trigger?.focus()); } }" @keydown.escape="if (open) { $event.stopPropagation(); close(); }">
                 <button x-ref="trigger" type="button" @click="open = !open" :aria-expanded="open" aria-haspopup="true"
                         class="flex w-full flex-row items-center justify-between rounded-2xl border border-white/5 bg-white/4 px-4 py-3 text-sm font-semibold text-left text-gray-100 transition-colors hover:bg-white/10 hover:text-white focus:bg-primary-700 focus:text-white focus:outline-hidden focus:ring-2 focus:ring-primary-300 focus:ring-offset-2 focus:ring-offset-gray-950">
                     <span>{{ .Name }}</span>

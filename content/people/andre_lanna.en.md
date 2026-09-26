@@ -40,7 +40,7 @@ nav_next: true
 - Courses Taught: Requirements Engineering, Verification Validation and Software Testing, Software Design, Introduction to Computer Science, Advanced Software Development, Object Orientation, Programming Techniques on Emerging Platforms.
 
 ## {{< i18n "people_research_areas" >}}
-{{< postsByCategoriesTags caput="" categories="knowledge_areas,andre_lanna" >}}
+{{< postsByCategoriesTags caput="" categories="knowledge_areas,andre_lanna" variant="profile-areas" >}}
 
 ## {{< i18n "people_contributions" >}}
 - Honorable Mention at Computer on the Beach (2011).

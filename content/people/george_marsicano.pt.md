@@ -47,7 +47,7 @@ nav_next: true
 - Coach certificado pela Escola Internacional de Coach - The Newfield Network (2006).
 
 ## {{< i18n "people_research_areas" >}}
-{{< postsByCategoriesTags caput="" categories="knowledge_areas,george_marsicano" >}}
+{{< postsByCategoriesTags caput="" categories="knowledge_areas,george_marsicano" variant="profile-areas" >}}
 
 ## {{< i18n "people_professional_activities" >}}
 - Docente da UnB desde 2011, contribuindo para o ensino de graduação em Engenharia de Software e, desde 2020, para o PPCA.

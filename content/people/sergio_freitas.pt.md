@@ -48,7 +48,7 @@ nav_next: true
 - Graduação em Engenharia Elétrica (ênfase eletrônica) - Universidade Federal de Uberlândia (UFU), Brasil (1985-1990)​.
 
 ## {{< i18n "people_research_areas" >}}
-{{< postsByCategoriesTags caput="" categories="knowledge_areas,sergio_freitas" >}}
+{{< postsByCategoriesTags caput="" categories="knowledge_areas,sergio_freitas" variant="profile-areas" >}}
 
 ## {{< i18n "people_contributions" >}}
 - Prêmios: Múltiplas vezes homenageado e patrono de turmas na UnB e UFES​​.

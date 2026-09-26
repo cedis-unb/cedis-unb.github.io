@@ -121,6 +121,7 @@
 #profile-content.researcher-profile-content {
   display: grid;
   gap: 1.4rem;
+  container-type: inline-size;
 }
 
 #profile-content > h2 {
@@ -511,51 +512,64 @@
   line-height: 1.45;
 }
 
-#profile-content > h2[id="áreas-de-pesquisa"] + .not-prose,
-#profile-content > h2[id="research-areas"] + .not-prose,
-#profile-content > h2[id="áreas-de-pesquisa"] + .section-context + .not-prose,
-#profile-content > h2[id="research-areas"] + .section-context + .not-prose {
-  margin-top: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+#profile-content .profile-areas-grid {
+  display: grid;
   gap: 0.75rem;
+  margin-top: 1rem;
+  grid-template-columns: minmax(0, 1fr);
 }
 
-#profile-content > h2[id="áreas-de-pesquisa"] + .not-prose article,
-#profile-content > h2[id="research-areas"] + .not-prose article,
-#profile-content > h2[id="áreas-de-pesquisa"] + .section-context + .not-prose article,
-#profile-content > h2[id="research-areas"] + .section-context + .not-prose article {
-  border-radius: 1rem;
-  box-shadow: 0 8px 26px rgba(15, 23, 42, 0.06);
+#profile-content .profile-areas-card {
+  min-width: 0;
+  border: 1px solid var(--rp-card-border);
+  border-radius: 1.2rem;
+  background: var(--rp-card-bg);
+  box-shadow: var(--rp-card-shadow);
+  transition: border-color 180ms ease, transform 180ms ease, box-shadow 180ms ease;
 }
 
-#profile-content > h2[id="áreas-de-pesquisa"] + .not-prose article > a:first-child,
-#profile-content > h2[id="research-areas"] + .not-prose article > a:first-child,
-#profile-content > h2[id="áreas-de-pesquisa"] + .not-prose article p,
-#profile-content > h2[id="research-areas"] + .not-prose article p,
-#profile-content > h2[id="áreas-de-pesquisa"] + .not-prose article [class*="mt-auto"],
-#profile-content > h2[id="research-areas"] + .not-prose article [class*="mt-auto"],
-#profile-content > h2[id="áreas-de-pesquisa"] + .section-context + .not-prose article > a:first-child,
-#profile-content > h2[id="research-areas"] + .section-context + .not-prose article > a:first-child,
-#profile-content > h2[id="áreas-de-pesquisa"] + .section-context + .not-prose article p,
-#profile-content > h2[id="research-areas"] + .section-context + .not-prose article p,
-#profile-content > h2[id="áreas-de-pesquisa"] + .section-context + .not-prose article [class*="mt-auto"],
-#profile-content > h2[id="research-areas"] + .section-context + .not-prose article [class*="mt-auto"] {
-  display: none;
+#profile-content .profile-areas-card:hover {
+  border-color: var(--rp-project-hover-border);
+  box-shadow: var(--rp-project-hover-shadow);
+  transform: translateY(-2px);
 }
 
-#profile-content > h2[id="áreas-de-pesquisa"] + .not-prose article > div,
-#profile-content > h2[id="research-areas"] + .not-prose article > div,
-#profile-content > h2[id="áreas-de-pesquisa"] + .section-context + .not-prose article > div,
-#profile-content > h2[id="research-areas"] + .section-context + .not-prose article > div {
-  padding: 0.95rem 1rem;
+#profile-content .profile-areas-card__link {
+  display: block;
+  min-height: 100%;
+  border-radius: inherit;
+  padding: 1rem;
+  color: var(--rp-heading-strong);
+  text-decoration: none;
 }
 
-#profile-content > h2[id="áreas-de-pesquisa"] + .not-prose article > div > a,
-#profile-content > h2[id="research-areas"] + .not-prose article > div > a,
-#profile-content > h2[id="áreas-de-pesquisa"] + .section-context + .not-prose article > div > a,
-#profile-content > h2[id="research-areas"] + .section-context + .not-prose article > div > a {
+#profile-content .profile-areas-card__link:hover {
+  color: var(--brand-accent);
+}
+
+#profile-content .profile-areas-card__link:focus-visible {
+  outline: 2px solid var(--brand-primary);
+  outline-offset: 3px;
+}
+
+#profile-content .profile-areas-card__title {
+  display: block;
   font-size: 0.98rem;
-  line-height: 1.35;
+  font-weight: 780;
+  line-height: 1.42;
+  overflow-wrap: anywhere;
+}
+
+@container (min-width: 34rem) {
+  #profile-content .profile-areas-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@container (min-width: 48rem) {
+  #profile-content .profile-areas-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
 }
 
 #profile-content .profile-projects-grid {
