@@ -213,7 +213,7 @@
                         {{ else }}
                         <p class="text-sm font-semibold text-gray-900 dark:text-white">{{ i18n "ui_cedis_team" }}</p>
                         {{ end }}
-                        {{ if gt (countwords .Content) 0 }}
+                        {{ if and (eq .Section "posts") (gt (countwords .Content) 0) }}
                         <p class="mt-1 text-sm text-gray-500 dark:text-white/60">{{ math.Max 1 (math.Round (div (countwords .Content) 220.0)) }} {{ $readLabel }}</p>
                         {{ end }}
                     </div>

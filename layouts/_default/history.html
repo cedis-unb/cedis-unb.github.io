@@ -48,6 +48,7 @@
 <main class="bg-[linear-gradient(180deg,#f8fafc_0%,#ffffff_28%,#f8fafc_100%)] text-gray-950 dark:bg-[linear-gradient(180deg,#0f172a_0%,#111827_58%,#0b1120_100%)] dark:text-gray-100">
   <section class="border-b border-black/5 bg-[radial-gradient(circle_at_top,rgba(197,39,47,0.12),transparent_34%),linear-gradient(180deg,#ffffff_0%,#f8fafc_100%)] dark:border-white/10 dark:bg-[radial-gradient(circle_at_top,rgba(197,39,47,0.18),transparent_34%),linear-gradient(180deg,#111827_0%,#0f172a_100%)]">
     <div class="mx-auto max-w-(--breakpoint-lg) px-4 py-12 text-center md:px-6 lg:px-8 lg:py-14">
+      <div class="text-left">{{ partial "breadcrumbs.html" . }}</div>
       <span class="inline-flex rounded-full border border-black/10 bg-white px-4 py-1 text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-gray-500 dark:border-white/10 dark:bg-white/6 dark:text-white/55">{{ $eyebrow }}</span>
       <h1 class="mt-5 text-4xl font-black tracking-tight text-gray-950 dark:text-white md:text-5xl">{{ .Title }}</h1>
       <p class="mx-auto mt-4 max-w-3xl text-base leading-8 text-gray-600 dark:text-white/75 md:text-lg">{{ $intro }}</p>

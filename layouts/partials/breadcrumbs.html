@@ -15,18 +15,41 @@
   "products" "/categories/products/"
 -}}
 {{- $sectionLabelKey := printf "breadcrumb_%s" $sectionKey -}}
-{{- $sectionUrl := index $sectionUrlMap $sectionKey | default (printf "/%s/" $sectionKey) -}}
-{{- $sectionLabel := i18n $sectionLabelKey | default (humanize $sectionKey) -}}
+{{- $sectionPage := "" -}}
+{{- if $sectionKey -}}
+  {{- with site.GetPage (printf "/%s" $sectionKey) -}}
+    {{- $sectionPage = . -}}
+  {{- end -}}
+{{- end -}}
+{{- $sectionUrl := "" -}}
+{{- $sectionLabel := "" -}}
+{{- with $sectionPage -}}
+  {{- $sectionUrl = .RelPermalink -}}
+  {{- $sectionLabel = .LinkTitle | default .Title -}}
+{{- end -}}
+{{- if and (not $sectionUrl) $sectionKey -}}
+  {{- $sectionUrl = index $sectionUrlMap $sectionKey | default (printf "/%s/" $sectionKey) | relLangURL -}}
+{{- end -}}
+{{- if and (not $sectionLabel) $sectionKey -}}
+  {{- $sectionLabel = i18n $sectionLabelKey | default (humanize $sectionKey) -}}
+{{- end -}}
 {{- $currentLabel := $page.Title -}}
 {{- if or (eq $page.Kind "term") (eq $page.Kind "taxonomy") -}}
   {{- $currentLabel = partial "translated-label.html" (dict "page" $page "value" $page.Title) -}}
 {{- end -}}
 
-{{- $items := slice
-  (dict "url" (relLangURL "/") "label" (i18n "breadcrumb_home") "current" false)
-  (dict "url" (relLangURL $sectionUrl) "label" $sectionLabel "current" false)
-  (dict "url" $page.RelPermalink "label" $currentLabel "current" true)
--}}
+{{- $currentUrlNormalized := strings.TrimSuffix "/" $page.RelPermalink -}}
+{{- if eq $currentUrlNormalized "" -}}{{- $currentUrlNormalized = "/" -}}{{- end -}}
+{{- $sectionUrlNormalized := strings.TrimSuffix "/" $sectionUrl -}}
+{{- if eq $sectionUrlNormalized "" -}}{{- $sectionUrlNormalized = "/" -}}{{- end -}}
+{{- $currentLabelNormalized := lower ($currentLabel | plainify | htmlUnescape | strings.TrimSpace) -}}
+{{- $sectionLabelNormalized := lower ($sectionLabel | plainify | htmlUnescape | strings.TrimSpace) -}}
+
+{{- $items := slice (dict "url" (relLangURL "/") "label" (i18n "breadcrumb_home") "current" false) -}}
+{{- if and $sectionKey $sectionLabel $sectionUrl (ne $sectionUrlNormalized $currentUrlNormalized) (ne $sectionLabelNormalized $currentLabelNormalized) -}}
+  {{- $items = $items | append (dict "url" $sectionUrl "label" $sectionLabel "current" false) -}}
+{{- end -}}
+{{- $items = $items | append (dict "url" $page.RelPermalink "label" $currentLabel "current" true) -}}
 
 {{- $listClass := "flex flex-wrap items-center gap-x-2 gap-y-1 text-[0.7rem] font-semibold uppercase tracking-[0.22em]" -}}
 {{- $linkClass := "" -}}

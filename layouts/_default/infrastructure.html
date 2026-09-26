@@ -21,6 +21,7 @@
   <section class="border-b border-black/5 bg-[radial-gradient(circle_at_top_left,rgba(197,39,47,0.14),transparent_30%),linear-gradient(180deg,#111827_0%,#0f172a_100%)] text-white dark:border-white/10">
     <div class="mx-auto grid max-w-(--breakpoint-xl) gap-8 px-4 py-12 md:px-6 lg:grid-cols-[minmax(0,1.05fr)_minmax(18rem,0.95fr)] lg:items-center lg:px-8 lg:py-14">
       <div>
+        {{ partial "breadcrumbs.html" . }}
         <span class="inline-flex rounded-full border border-white/15 bg-white/10 px-4 py-1 text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-white/75">{{ $eyebrow }}</span>
         <h1 class="mt-5 max-w-3xl text-4xl font-black tracking-tight md:text-5xl">{{ .Title }}</h1>
         <p class="mt-4 max-w-2xl text-base leading-7 text-white/75 md:text-lg">{{ $intro }}</p>

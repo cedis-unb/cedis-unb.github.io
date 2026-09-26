@@ -364,10 +364,77 @@
       {{ end }}
     {{ end }}
     {{ $lastNewsItem := "" }}
-    {{ $lastPubItem := "" }}
     {{ range $pulseItems }}
       {{ if and (eq .type "news") (not $lastNewsItem) }}{{ $lastNewsItem = . }}{{ end }}
-      {{ if and (or (eq .type "publication") (eq .type "defense")) (not $lastPubItem) }}{{ $lastPubItem = . }}{{ end }}
+    {{ end }}
+    {{ $lastPubItem := "" }}
+    {{ $lastPubSortKey := "" }}
+    {{ range hugo.Data.productions.items }}
+      {{ if or (in $defenseTypes .type) (eq .type "registro") }}{{ continue }}{{ end }}
+      {{ $yr := 0 }}
+      {{ with .year }}
+        {{ $ys := printf "%v" . }}
+        {{ if gt (len (findRE "^[0-9]{4}" $ys)) 0 }}
+          {{ $yr = int (replaceRE "^([0-9]{4}).*$" "$1" $ys) }}
+        {{ end }}
+      {{ end }}
+      {{ if or (eq $yr 0) (gt $yr $currentYearNum) }}{{ continue }}{{ end }}
+
+      {{ $hasFullDate := false }}
+      {{ $itemDate := time (printf "%04d-12-31T00:00:00Z" $yr) }}
+      {{ with .publication_date }}
+        {{ $parsedDate := time . }}
+        {{ if gt $parsedDate now }}{{ continue }}{{ end }}
+        {{ $itemDate = $parsedDate }}
+        {{ $hasFullDate = true }}
+      {{ end }}
+      {{ if not $hasFullDate }}
+        {{ with .published_at }}
+          {{ $parsedDate := time . }}
+          {{ if gt $parsedDate now }}{{ continue }}{{ end }}
+          {{ $itemDate = $parsedDate }}
+          {{ $hasFullDate = true }}
+        {{ end }}
+      {{ end }}
+      {{ if not $hasFullDate }}
+        {{ with .date }}
+          {{ $parsedDate := time . }}
+          {{ if gt $parsedDate now }}{{ continue }}{{ end }}
+          {{ $itemDate = $parsedDate }}
+          {{ $hasFullDate = true }}
+        {{ end }}
+      {{ end }}
+
+      {{ $title := "" }}
+      {{ with .title }}
+        {{ $title = index . $lang }}
+        {{ if not $title }}{{ $title = index . "pt" }}{{ end }}
+      {{ end }}
+      {{ if not $title }}{{ continue }}{{ end }}
+
+      {{ $summary := "" }}
+      {{ with .summary }}
+        {{ $summary = index . $lang }}
+        {{ if not $summary }}{{ $summary = index . "pt" }}{{ end }}
+      {{ end }}
+
+      {{ $url := printf "%s#%d" ("/publications/" | relLangURL) $yr }}
+      {{ with .url }}{{ $url = . }}{{ end }}
+
+      {{ $sortKey := printf "%04d-12-31" $yr }}
+      {{ if $hasFullDate }}{{ $sortKey = $itemDate.Format "2006-01-02" }}{{ end }}
+      {{ if or (not $lastPubItem) (gt $sortKey $lastPubSortKey) }}
+        {{ $lastPubSortKey = $sortKey }}
+        {{ $lastPubItem = dict
+          "type" "publication"
+          "title" $title
+          "url" $url
+          "date" $itemDate
+          "hasFullDate" $hasFullDate
+          "year" $yr
+          "summary" $summary
+        }}
+      {{ end }}
     {{ end }}
     <div class="relative py-8 sm:py-10 lg:py-12">
       <div class="absolute inset-x-0 top-0 h-px bg-linear-to-r from-transparent via-slate-300/70 to-transparent dark:via-white/10"></div>

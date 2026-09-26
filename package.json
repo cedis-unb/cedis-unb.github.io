@@ -27,11 +27,12 @@
     "prestart": "npm run build:publications && npm run build:research-lines",
     "start": "hugo server -d .hugo-server --disableFastRender",
     "start:lines-preview": "HUGO_CEDIS_PREVIEW_LINES=1 npm run build:research-lines && hugo server -d .hugo-server --disableFastRender; npm run build:research-lines",
-    "build": "npm run build:publications && npm run build:research-lines && hugo --minify --cleanDestinationDir && pagefind --site docs",
+    "build": "npm run build:publications && npm run build:research-lines && hugo --minify --cleanDestinationDir && npm run validate:rendered && pagefind --site docs",
     "audit:a11y": "pa11y-ci --config .pa11yci.json",
     "audit:lighthouse": "lhci autorun --config=lighthouserc.json",
     "audit:lighthouse-mobile": "lhci autorun --config=lighthouserc-mobile.json",
-    "test": "npm run check:publications && npm run check:research-lines && npm run check:css && python3 scripts/validate_content.py && python3 scripts/validate_i18n.py"
+    "test": "npm run check:publications && npm run check:research-lines && npm run check:css && python3 scripts/validate_content.py && python3 scripts/validate_i18n.py",
+    "validate:rendered": "python3 scripts/validate_rendered.py docs"
   },
   "repository": {
     "type": "git",

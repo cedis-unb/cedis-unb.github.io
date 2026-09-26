@@ -36,7 +36,7 @@ seemore: "Veja mais sobre"
 abstract: "Resumo"
 searchPlaceholder: "Procurar"
 publications: "Publicações"
-rights: "Todos direitos reservados."
+rights: "Todos os direitos reservados."
 
 # Cursos
 curso_esw: "Trabalho de Conclusão de Curso (Bacharelado em Engenharia de Software)
@@ -279,8 +279,8 @@ ui_projects_supervisions_and_academic_production: "Projetos, orientações e pro
 ui_publications: "Publicações"
 ui_published_on: "Publicado em"
 ui_published_periods_listed_on_this: "período(s) publicados nesta página."
-ui_quick_access: "Consulta rapida"
-ui_quick_facts: "Resumo rapido"
+ui_quick_access: "Consulta rápida"
+ui_quick_facts: "Resumo rápido"
 ui_reading: "Leitura"
 ui_related_publications: "Publicações relacionadas"
 ui_research_development_and_software_innovation: "Pesquisa, desenvolvimento e inovação
@@ -392,7 +392,7 @@ ui_alumni_empty_cta: "Quero aparecer"
 ui_map_eyebrow: "Grafo interativo"
 ui_map_lead: "Explore como áreas de atuação, pesquisadores e projetos do CEDIS se
   conectam. Arraste os nós, use o mouse para dar zoom, clique para abrir a página."
-ui_map_svg_alt: "Grafo do CEDIS conectando áreas, pesquisadores e projetos"
+ui_map_svg_alt: "Visualização interativa do CEDIS conectando áreas, pesquisadores, projetos e linhas de pesquisa"
 ui_map_filter_all: "Tudo"
 ui_map_filter_areas: "Áreas"
 ui_map_filter_researchers: "Pesquisadores"
@@ -405,8 +405,18 @@ ui_map_legend_project: "Projeto ativo (conectado a pesquisadores)"
 ui_map_connections: "conexões no grafo"
 ui_map_open: "Abrir página"
 ui_map_loading: "Carregando…"
-ui_map_tip: "Dica: use o scroll para zoom, arraste os nós para reorganizar, clique
-  para focar."
+ui_map_tip: "Dica: use Tab para focar um nó, Enter ou Espaço para selecioná-lo e
+  os botões para controlar o zoom. As mesmas relações também aparecem na lista
+  textual abaixo."
+ui_map_activate_node: "Pressione Enter ou Espaço para selecionar."
+ui_map_zoom_out: "Diminuir"
+ui_map_zoom_in: "Aumentar"
+ui_map_zoom_reset: "Redefinir zoom"
+ui_map_directory_eyebrow: "Alternativa em HTML"
+ui_map_directory_heading: "As mesmas relações, em navegação semântica"
+ui_map_directory_lead: "A lista abaixo replica as conexões essenciais do grafo com
+  links HTML reais para linhas, áreas, pesquisadores e projetos."
+ui_map_directory_parents: "Frentes relacionadas"
 ui_areas_map_teaser: "Veja como as áreas se conectam a pesquisadores e projetos"
 ui_areas_map_cta: "Abrir mapa"
 

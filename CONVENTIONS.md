@@ -373,6 +373,11 @@ As trilhas permanentes de participação ficam em `content/junte-se/`:
 `iniciacao-cientifica`, `tcc`, `mestrado`, `doutorado`, `extensao`,
 `parcerias` e `proponha-projeto`.
 
+O índice de Oportunidades é canônico em `layouts/opportunities/list.html`.
+Não reintroduzir um template concorrente em `_default/` para a mesma
+rota; regressões no HTML gerado devem ser capturadas por
+`scripts/validate_rendered.py`.
+
 ### Notícias relacionadas
 
 Posts podem declarar `related_ids:` com IDs de projeto, produto ou
@@ -1326,6 +1331,10 @@ grep -rn "http://lattes.cnpq.br" content/
 
 # Build limpo
 hugo | tail -3
+
+# Invariantes do HTML publicado (breadcrumbs, aria-controls,
+# oportunidades, alternates PT/EN, cards de entidades)
+python3 scripts/validate_rendered.py docs
 ```
 
 **Coerência people ↔ productions** (§4.A) — nenhum orientando com
@@ -1539,6 +1548,7 @@ Como validar após alterações em massa: rodar `hugo --minify` e comparar `docs
 - `<a>` sempre com `href` (mesmo `href="#"` é melhor que ausência).
 - `<img>` sempre com `alt` (vazio `alt=""` para decorativas).
 - `aria-label` nunca vazio.
+- SVGs interativos não podem depender só de mouse ou gesto: se houver nós clicáveis, eles precisam aceitar foco por teclado, Enter/Espaço e ter alternativa HTML semântica com links reais.
 
 ### 11.7 Componentes de card
 
