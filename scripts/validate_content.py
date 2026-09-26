@@ -767,7 +767,7 @@ def validate_generated_publication_pages() -> list[tuple[Path, dict]]:
             for req in page_required:
                 if req not in fm:
                     warn("schema", rel, f"campo obrigatório ausente: '{req}'")
-            if fm.get("publication_type") not in {"article", "book", "book chapter", "book_section", "conference", "didactic", "dissertation", "phd", "registro", "specialization", "tcc", "workshop"}:
+            if fm.get("publication_type") not in {"article", "book", "book chapter", "book_section", "conference", "didactic", "dissertation", "phd", "preprint", "registro", "report", "specialization", "tcc", "workshop"}:
                 warn("enum", rel, f"publication_type inválido: '{fm.get('publication_type')}'")
         by_key[str(fm.get("translationKey") or page_id(md_path, fm))].add(str(fm.get("language")))
         entries.append((md_path, fm))

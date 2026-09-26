@@ -8,7 +8,7 @@ translationKey: publication_2026_cristiane_soares_ramos_gamifying_science_commun
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2026_cristiane_soares_ramos_gamifying_science_communication_an_experience_report_of_jornad
-publication_index: 320
+publication_index: 319
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle
@@ -19,7 +19,7 @@ authors:
 - Mylena Angélica Silva Farias
 - Wildemberg Sales da Silva Junior
 - Marcus Vinícius Paiva Martins
-- Leda Cardoso S. Pinto
+- Leda Cardoso Sampson Pinto
 authors_structured:
 - name: Cristiane Soares Ramos
   id: cristiane_ramos
@@ -36,7 +36,7 @@ authors_structured:
 - name: Marcus Vinícius Paiva Martins
   id: marcus_martins
   url: /people/marcus_martins
-- name: Leda Cardoso S. Pinto
+- name: Leda Cardoso Sampson Pinto
   id: leda_cardoso_s_pinto
   url: /people/leda_cardoso_s_pinto
 tags:
@@ -44,28 +44,29 @@ tags:
 - digital_transformation
 - project_cc
 advisors: []
-doi_isbn: ''
+doi_isbn: 10.1007/978-3-032-30494-0_1
 source_title: The 26th International Conference on Computational Science and Its Applications
   (ICCSA 2026)
-publisher: ''
+publisher: Springer
 location: Braga, Portugal
 pages: 3-20
-volume: '3'
-external_url: ''
+volume: '16769'
+external_url: https://doi.org/10.1007/978-3-032-30494-0_1
 spotify_podcast: ''
 github_repo: ''
 zenodo_record: ''
 summary: Conference by Cristiane Soares Ramos, Sergio Antônio Andrade de Freitas,
   Mylena Angélica Silva Farias, Wildemberg Sales da Silva Junior, Marcus Vinícius
-  Paiva Martins, Leda Cardoso S. Pinto (2026).
+  Paiva Martins, Leda Cardoso Sampson Pinto (2026).
 bibtex: "@inproceedings{2026-cristiane-soares-ramos-gamifying-science-communication-an-experience-report-of-jornad,\n\
   \  author = {Cristiane Soares Ramos and Sergio Antônio Andrade de Freitas and Mylena\
   \ Angélica Silva Farias and Wildemberg Sales da Silva Junior and Marcus Vinícius\
-  \ Paiva Martins and Leda Cardoso S. Pinto},\n  title = {Gamifying Science Communication:\
+  \ Paiva Martins and Leda Cardoso Sampson Pinto},\n  title = {Gamifying Science Communication:\
   \ An Experience Report of Jornada Galáctica at Canal Ciência},\n  year = {2026},\n\
   \  booktitle = {The 26th International Conference on Computational Science and Its\
-  \ Applications (ICCSA 2026)},\n  volume = {3},\n  pages = {3-20},\n  address = {Braga,\
-  \ Portugal}\n}"
+  \ Applications (ICCSA 2026)},\n  volume = {16769},\n  pages = {3-20},\n  publisher\
+  \ = {Springer},\n  address = {Braga, Portugal},\n  doi = {10.1007/978-3-032-30494-0_1}\n\
+  }"
 aliases:
 - /publications/2026-cristiane-soares-ramos-gamifying-science-communication-an-experience-report-of-jornad/
 ---

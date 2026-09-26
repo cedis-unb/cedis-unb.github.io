@@ -294,6 +294,8 @@ research_lines:
         name: { pt: "Serviços públicos digitais", en: "Digital public services" }
       - id: digital_government
         name: { pt: "Governo digital", en: "Digital government" }
+      - id: digital_inclusion_aging
+        name: { pt: "Inclusão e cidadania digital de pessoas idosas", en: "Digital inclusion and citizenship of older adults" }
       - id: service_design
         name: { pt: "Design de serviços", en: "Service design" }
       - id: organizational_processes

@@ -226,6 +226,7 @@
           {{ $bibtype := "misc" }}
           {{ if eq .type "article" }}{{ $bibtype = "article" }}{{ end }}
           {{ if or (eq .type "conference") (eq .type "workshop") }}{{ $bibtype = "inproceedings" }}{{ end }}
+          {{ if eq .type "report" }}{{ $bibtype = "techreport" }}{{ end }}
           {{ if eq .type "book" }}{{ $bibtype = "book" }}{{ end }}
           {{ if eq .type "chapter" }}{{ $bibtype = "incollection" }}{{ end }}
           {{ if or (eq .type "phd") (eq .type "dissertation") }}{{ $bibtype = "phdthesis" }}{{ end }}

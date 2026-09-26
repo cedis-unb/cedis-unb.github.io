@@ -198,6 +198,42 @@
     status_override:
     date_approximate: true
     needs_manual_review: true
+  - id: joao-lucas-joao-vitor-2021-11-17
+    type: tcc
+    program: curso_esw
+    scheduled_date: '2021-11-17T00:00:00-03:00'
+    held_date: '2021-11-17'
+    title:
+      pt: 'Ensinaê: proposta de um projeto para o ensino de programação MOOC gamificado em redes sociais'
+      en: 'Ensinaê: a proposal for a gamified MOOC for teaching programming on social networks'
+    summary: {pt: '', en: ''}
+    students:
+      - name: João Lucas Sousa Reis
+      - name: João Vítor Morandi Lemos
+    advisor: wander_cleber_maria_pereira_da_silva
+    co_advisors: [ricardo_ajax]
+    committee: []
+    location: {room: '', city: Brasília, remote_url: ''}
+    tags: [education, gamification, active_learning]
+    production_id: 2021-joao-lucas-sousa-reis-ensinae-proposta-de-um-projeto-para-o-ensino-de-programacao-moo
+  - id: caio-gabriel-2025-12-02
+    type: tcc
+    program: curso_esw
+    scheduled_date: '2025-12-02T00:00:00-03:00'
+    held_date: '2025-12-02'
+    title:
+      pt: 'Seletividade alimentar em pessoas diagnosticadas com Transtorno do Espectro Autista: apoio tecnológico por software'
+      en: 'Food selectivity in people diagnosed with autism spectrum disorder: technological support through software'
+    summary: {pt: '', en: ''}
+    students:
+      - name: Caio Mesquita Vieira
+      - name: Gabriel Marques de Souza
+    advisor: ricardo_ajax
+    co_advisors: [marilia_miranda]
+    committee: []
+    location: {room: '', city: Brasília, remote_url: ''}
+    tags: [social_software, software_quality]
+    production_id: 2025-caio-mesquita-vieira-seletividade-alimentar-em-pessoas-diagnosticadas-com-transtorno
   - id: tcc1-henrique-marina-2026
     type: tcc1
     program: curso_esw2
@@ -907,6 +943,7 @@
         slug:
     advisor: cristiane_ramos
     co_advisors:
+      - ricardo_ajax
     committee: []
     location:
       room:
@@ -1098,8 +1135,8 @@
   - id: alexia-cardoso-2025-06-15
     type: tcc
     program: curso_esw
-    scheduled_date: '2025-06-15T00:00:00-03:00'
-    held_date: '2025-06-15'
+    scheduled_date: '2025-12-16T00:00:00-03:00'
+    held_date: '2025-12-16'
     title:
       pt: 'Aplicativo tradutor de línguas indígenas: Munduruku'
       en: 'Indigenous Language Translator App: Munduruku'
@@ -1131,12 +1168,12 @@
       pt:
       en:
     status_override:
-    date_approximate: true
+    date_approximate: false
   - id: miguel-barbosa-2025-06-15
     type: tcc
     program: curso_esw
-    scheduled_date: '2025-06-15T00:00:00-03:00'
-    held_date: '2025-06-15'
+    scheduled_date: '2025-12-16T00:00:00-03:00'
+    held_date: '2025-12-16'
     title:
       pt: 'Sistema de apoio à análise de processos organizacionais: Uma abordagem com inteligência artificial e controle de contexto'
       en: 'Support System for Organizational Process Analysis: An Approach with Artificial Intelligence and Context Control'
@@ -1166,7 +1203,7 @@
       pt:
       en:
     status_override:
-    date_approximate: true
+    date_approximate: false
   - id: marcus-martins-2025-06-15
     type: tcc
     program: curso_esw
@@ -1697,6 +1734,7 @@
         slug:
     advisor: cristiane_ramos
     co_advisors:
+      - ricardo_ajax
     committee: []
     location:
       room:
@@ -2478,7 +2516,19 @@
         slug:
     advisor: sergio_freitas
     co_advisors:
-    committee: []
+    committee:
+      - role: advisor
+        slug: sergio_freitas
+        name: Sergio Antônio Andrade de Freitas
+        affiliation: FCTE/UnB
+      - role: examiner
+        slug: ricardo_ajax
+        name: Ricardo Ajax Dias Kosloski
+        affiliation: FCTE/UnB
+      - role: examiner
+        slug: cristiane_ramos
+        name: Cristiane Soares Ramos
+        affiliation: FCTE/UnB
     location:
       room:
       city: Brasília
@@ -2774,7 +2824,19 @@
         slug:
     advisor: sergio_freitas
     co_advisors:
-    committee: []
+    committee:
+      - role: advisor
+        slug: sergio_freitas
+        name: Sergio Antônio Andrade de Freitas
+        affiliation: FCTE/UnB
+      - role: examiner
+        slug: cristiane_ramos
+        name: Cristiane Soares Ramos
+        affiliation: FCTE/UnB
+      - role: examiner
+        slug: ricardo_ajax
+        name: Ricardo Ajax Dias Kosloski
+        affiliation: FCTE/UnB
     location:
       room:
       city: Brasília
@@ -2916,50 +2978,35 @@
         slug:
     advisor: ricardo_ajax
     co_advisors:
-    committee: []
+      - cristiane_ramos
+    committee:
+      - role: advisor
+        slug: ricardo_ajax
+        name: Ricardo Ajax Dias Kosloski
+        affiliation: FCTE/UnB
+      - role: co_advisor
+        slug: cristiane_ramos
+        name: Cristiane Soares Ramos
+        affiliation: FCTE/UnB
+      - role: examiner
+        slug: fabiana_mendes
+        name: Fabiana Freitas Mendes
+        affiliation: FCTE/UnB
+      - role: examiner
+        slug: marilia_miranda
+        name: Marília Miranda Forte Gomes
+        affiliation: UnB
     location:
       room:
       city: Brasília
       remote_url:
     tags:
       - digital_transformation
+      - software_quality
     project:
     related_products: []
     related_publications: []
     production_id: 2022-fabiana-luiza-analise-da-acessibilidade-para-pessoas-idosas
-    news_slug: defesa-fabiana-ribas-2022
-    narrative:
-      pt:
-      en:
-    status_override:
-  - id: fabiana-ribas-2022-09-27-2
-    type: tcc
-    program: curso_esw
-    scheduled_date: '2022-09-27T00:00:00-03:00'
-    held_date: '2022-09-27'
-    title:
-      pt: Análise de acessibilidade para idosos em serviços e-Gov
-      en: Accessibility analysis for older adults in e-Gov services
-    summary:
-      pt: ''
-      en: ''
-    students:
-      - name: Fabiana Luiza Vasconcelos Pfeilsticker Ribas
-        slug:
-    advisor: cristiane_ramos
-    co_advisors:
-    committee: []
-    location:
-      room:
-      city: Brasília
-      remote_url:
-    tags:
-      - software_quality
-      - digital_transformation
-    project:
-    related_products: []
-    related_publications: []
-    production_id: 2022-fabiana-luiza-analise-de-acessibilidade-para-idosos-em
     news_slug: defesa-fabiana-ribas-2022
     narrative:
       pt:
@@ -3065,7 +3112,15 @@
         slug:
     advisor: cristiane_ramos
     co_advisors:
-    committee: []
+    committee:
+      - role: advisor
+        slug: cristiane_ramos
+        name: Cristiane Soares Ramos
+        affiliation: FCTE/UnB
+      - role: examiner
+        slug: ricardo_ajax
+        name: Ricardo Ajax Dias Kosloski
+        affiliation: FCTE/UnB
     location:
       room:
       city: Brasília
@@ -3313,6 +3368,7 @@
         slug:
     advisor: cristiane_ramos
     co_advisors:
+      - ricardo_ajax
     committee: []
     location:
       room:
@@ -3692,6 +3748,7 @@
         slug:
     advisor: cristiane_ramos
     co_advisors:
+      - ricardo_ajax
     committee: []
     location:
       room:
@@ -3725,6 +3782,7 @@
         slug:
     advisor: ricardo_ajax
     co_advisors:
+      - cristiane_ramos
     committee: []
     location:
       room:
@@ -4003,6 +4061,7 @@
         slug:
     advisor: cristiane_ramos
     co_advisors:
+      - ricardo_ajax
     committee: []
     location:
       room:
@@ -6054,3 +6113,37 @@
     status_override:
     date_approximate: true
     needs_manual_review: true
+  - id: keli-borges-2016-12-07
+    type: tcc
+    program: curso_esw
+    scheduled_date: '2016-12-07T00:00:00-03:00'
+    held_date: '2016-12-07'
+    title:
+      pt: Processo de compartilhamento do conhecimento em laboratórios de P&D
+      en: Knowledge-sharing process in research and development laboratories
+    summary:
+      pt: TCC sobre gestão e compartilhamento do conhecimento em laboratórios de P&D, com orientação de Wander Cleber e coorientação de Sérgio Freitas.
+      en: Undergraduate thesis on knowledge management and sharing in R&D laboratories, supervised by Wander Cleber and co-supervised by Sérgio Freitas.
+    students:
+      - name: Keli Cristina Vieira Sirqueira Borges
+        slug:
+    advisor: wander_cleber_maria_pereira_da_silva
+    co_advisors:
+      - sergio_freitas
+    committee: []
+    location:
+      room:
+      city: Brasília
+      remote_url:
+    tags:
+      - esw
+      - teamwork
+    project:
+    related_products: []
+    related_publications: []
+    production_id: 2016-keli-cristina-vieira-sirqueira-borges-processo-de-compartilhamento-do-conhecimento-em
+    news_slug:
+    narrative:
+      pt:
+      en:
+    status_override:

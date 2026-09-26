@@ -544,6 +544,7 @@ precisa mais editar `i18n/*.yaml`.
 | `book chapter` | Capítulo de livro (variante legada; preferir `book_section` em novos itens) |
 | `conference` | Trabalho completo em anais |
 | `workshop` | Resumo expandido / trabalho em workshop |
+| `report` | Relatório técnico publicado em repositório institucional |
 | `didactic` | Curso, oficina ou material didático |
 | `tcc` | Trabalho de Conclusão de Curso (graduação) |
 | `dissertation` | Dissertação de mestrado |

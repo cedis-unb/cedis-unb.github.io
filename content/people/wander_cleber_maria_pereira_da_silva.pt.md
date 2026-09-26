@@ -1,7 +1,7 @@
 ---
 author: CEDIS
 title: Wander Cleber Maria Pereira da Silva
-profile_level: derived
+profile_level: advisor_only
 layout: derived
 slug: wander_cleber_maria_pereira_da_silva
 language: pt

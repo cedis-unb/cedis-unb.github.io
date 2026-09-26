@@ -99,7 +99,9 @@ TYPE_GROUP = {
     "book chapter": "scientific",
     "book_section": "scientific",
     "conference": "scientific",
+    "preprint": "scientific",
     "workshop": "scientific",
+    "report": "scientific",
     "tcc": "tcc",
     "dissertation": "thesis",
     "phd": "thesis",
@@ -111,7 +113,9 @@ TYPE_GROUP = {
 SCHEMA_TYPES = {
     "article": "ScholarlyArticle",
     "conference": "ScholarlyArticle",
+    "preprint": "ScholarlyArticle",
     "workshop": "ScholarlyArticle",
+    "report": "Report",
     "book": "Book",
     "book chapter": "Chapter",
     "book_section": "Chapter",
@@ -254,7 +258,9 @@ def bibtex_for(item: dict[str, Any], lang: str, slug: str) -> str:
     bibtype = {
         "article": "article",
         "conference": "inproceedings",
+        "preprint": "misc",
         "workshop": "inproceedings",
+        "report": "techreport",
         "book": "book",
         "book chapter": "incollection",
         "book_section": "incollection",
@@ -331,7 +337,7 @@ def frontmatter(payload: dict[str, Any], lang: str) -> str:
 
     fm = {
         "title": title,
-        "date": f"{payload['year']}-01-01T00:00:00-03:00",
+        "date": text(item.get("catalog_date")) or f"{payload['year']}-01-01T00:00:00-03:00",
         "draft": False,
         "language": lang,
         "translationKey": payload["id"],

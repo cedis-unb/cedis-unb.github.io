@@ -8,7 +8,7 @@ translationKey: publication_2026_sergio_antonio_andrade_de_freitas_a_heterogeneo
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2026_sergio_antonio_andrade_de_freitas_a_heterogeneous_ensemble_meta_model_for_large_scale
-publication_index: 328
+publication_index: 327
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle
@@ -41,14 +41,14 @@ tags:
 - ai
 - machine_learning
 advisors: []
-doi_isbn: ''
+doi_isbn: 10.1007/978-3-032-30494-0_15
 source_title: The 26th International Conference on Computational Science and Its Applications
   (ICCSA 2026)
-publisher: ''
+publisher: Springer
 location: Braga, Portugal
 pages: 228-242
-volume: '3'
-external_url: ''
+volume: '16769'
+external_url: https://doi.org/10.1007/978-3-032-30494-0_15
 spotify_podcast: ''
 github_repo: ''
 zenodo_record: ''
@@ -61,8 +61,8 @@ bibtex: "@inproceedings{2026-sergio-antonio-andrade-de-freitas-a-heterogeneous-e
   \ Segundo},\n  title = {A Heterogeneous Ensemble Meta-Model for Large-Scale Categorization\
   \ of Portuguese Scientific Records in OasisBR},\n  year = {2026},\n  booktitle =\
   \ {The 26th International Conference on Computational Science and Its Applications\
-  \ (ICCSA 2026)},\n  volume = {3},\n  pages = {228-242},\n  address = {Braga, Portugal}\n\
-  }"
+  \ (ICCSA 2026)},\n  volume = {16769},\n  pages = {228-242},\n  publisher = {Springer},\n\
+  \  address = {Braga, Portugal},\n  doi = {10.1007/978-3-032-30494-0_15}\n}"
 aliases:
 - /publications/2026-sergio-antonio-andrade-de-freitas-a-heterogeneous-ensemble-meta-model-for-large-scale/
 ---

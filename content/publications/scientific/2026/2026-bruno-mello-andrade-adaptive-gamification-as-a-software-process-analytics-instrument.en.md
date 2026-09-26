@@ -8,7 +8,7 @@ translationKey: publication_2026_bruno_mello_andrade_adaptive_gamification_as_a_
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2026_bruno_mello_andrade_adaptive_gamification_as_a_software_process_analytics_instrument
-publication_index: 329
+publication_index: 328
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle
@@ -25,6 +25,7 @@ authors_structured:
 tags:
 - gamification
 - software_quality
+- project_inovacao_digital_gamificacao
 advisors: []
 doi_isbn: ''
 source_title: 19th International Conference on the Quality of Information and Communications

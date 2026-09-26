@@ -8,7 +8,7 @@ translationKey: publication_2026_bruno_mello_andrade_gamificacao_para_governanca
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2026_bruno_mello_andrade_gamificacao_para_governanca_de_projetos_um_estudo_de_caso_em_fabr
-publication_index: 332
+publication_index: 334
 publication_group: thesis
 publication_type: dissertation
 schema_type: Thesis

@@ -20,8 +20,10 @@ authors_structured:
   id: fabiana_luiza_vasconcelos_pfeilsticker_ribas
 tags:
 - digital_transformation
+- software_quality
 advisors:
 - ricardo_ajax
+- cristiane_ramos
 doi_isbn: ''
 source_title: ''
 publisher: Biblioteca Central da Universidade de Brasília

@@ -37,13 +37,13 @@ authors_structured:
 tags:
 - active_learning
 advisors: []
-doi_isbn: 10.29327/57070
+doi_isbn: 978-85-9535-158-5
 source_title: ''
-publisher: Clube dos autores
+publisher: Editora Itacaiúnas
 location: ''
 pages: '203'
 volume: '1'
-external_url: ''
+external_url: https://editoraitacaiunas.com.br/wp-content/uploads/2019/11/livro-metodologias-ativas.pdf
 spotify_podcast: ''
 github_repo: ''
 zenodo_record: ''
@@ -54,7 +54,7 @@ bibtex: "@book{2019-calazans-angelica-toffano-seidel-ensino-superior-com-metodol
   \ BRITO, I. and PALDES, R. and KOSLOSKI, RICARDO AJAX DIAS and RAMOS, C. S. and\
   \ GUIMARAES, F.},\n  title = {Ensino SUPERIOR com metodologias ativas: na prática,\
   \ como se faz},\n  year = {2019},\n  volume = {1},\n  pages = {203},\n  publisher\
-  \ = {Clube dos autores},\n  doi = {10.29327/57070}\n}"
+  \ = {Editora Itacaiúnas},\n  isbn = {978-85-9535-158-5}\n}"
 aliases:
 - /publications/2019-calazans-angelica-toffano-seidel-ensino-superior-com-metodologias-ativas-na-pratica-c/
 ---

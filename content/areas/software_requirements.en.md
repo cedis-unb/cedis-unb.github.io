@@ -10,6 +10,7 @@ authorimage: ../assets/images/global/author.webp
 categories:
 - knowledge_areas
 - george_marsicano
+- ricardo_ajax
 tags: 
 - software_requirements
 nav_next: true

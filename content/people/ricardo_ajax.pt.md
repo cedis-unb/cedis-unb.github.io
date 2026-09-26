@@ -6,7 +6,7 @@ date: 2014-11-01T00:00:00-03:00
 weight: 40
 language: pt
 featured_image: "../assets/images/featured/people_Ricardo Ajax.webp"
-summary: Professor Adjunto da Universidade de Brasília (UnB), atua no curso de graduação em Engenharia de Software em temas como engenharia de software, métricas, testes e qualidade de software.
+summary: Professor Adjunto da Universidade de Brasília (UnB), atua em engenharia e qualidade de software, governo digital, cidadania digital e inclusão de pessoas idosas.
 contact:
   email: ricardoajax@unb.br
   lattes: https://lattes.cnpq.br/8309011123228244
@@ -15,24 +15,27 @@ areas:
 - active_learning
 - digital_transformation
 - education
+- esw
+- social_software
 - software_quality
+- software_requirements
 - verification_validation_testing
 authorimage: ../assets/images/global/author.webp
 categories:
 - people
 - researcher
-tags: 
-- social_software
+tags: []
 nav_next: true
 ---
 <div id="top"></div>
 
 ## {{< i18n "people_profile" >}}
-- Posição Atual: Professor Adjunto da [Universidade de Brasília](https://www.unb.br/) (UnB) desde 2011, atuando no curso de graduação em [Engenharia de Software](http://software.unb.br/).
-- Áreas de Atuação: Engenharia de Software, métricas e estimativas de software, testes e verificação/validação, qualidade e produtividade em desenvolvimento de software, metodologias ativas no ensino de graduação e serviços digitais/e-Gov voltados à cidadania e ao envelhecimento.
+- Posição Atual: Professor Adjunto IV da [Universidade de Brasília](https://www.unb.br/) (UnB), onde atua desde 2011 no curso de graduação em [Engenharia de Software](http://software.unb.br/).
+- Áreas de Atuação: engenharia de software, métricas, testes, requisitos e qualidade de software; metodologias ativas no ensino; governo digital, cidadania digital e inclusão de pessoas idosas.
+- Atuação Institucional: Pesquisador do Centro de Estudos, Desenvolvimento e Inovação em Software (CEDIS/UnB), nas linhas de engenharia e qualidade de software, tecnologias para aprendizagem e transformação digital.
 
 ## {{< i18n "people_background" >}}
-- Doutorado em Desenvolvimento, Sociedade e Cooperação Internacional - Universidade de Brasília (UnB/CEAM), Brasil (2020-2025), com tese aprovada em dezembro de 2025: "Envelhecer na contemporaneidade: o uso de serviços de e-Gov na promoção de uma cidadania participativa".
+- Doutorado em Desenvolvimento, Sociedade e Cooperação Internacional - Universidade de Brasília (UnB/CEAM), Brasil (2020-2025). Tese: "Envelhecer na contemporaneidade: o uso de serviços de e-Gov na promoção de uma cidadania participativa".
 - Mestrado Profissional em Gestão do Conhecimento e Tecnologia da Informação - Universidade Católica de Brasília (UCB), Brasil (2003-2005).
 - Especialização em Engenharia de Software - Universidade Católica de Brasília (UCB), Brasil (2001-2003).
 - Especialização em Análise de Sistemas - Universidade Católica de Brasília (UCB), Brasil (1984-1985).
@@ -42,12 +45,15 @@ nav_next: true
 ## {{< i18n "people_professional_activities" >}}
 - Professor na UnB/FCTE desde 2011, ministrando disciplinas como Melhoria de Processo de Software, Técnicas de Medição Funcional e Estimativas de Software, Verificação e Validação de Software, Medição e Análise e Projeto Integrador entre Engenharias.
 - Atua e pesquisou em temas ligados a métricas, estimativas, produtividade, melhoria de processos e qualidade de software, com experiência anterior em organizações como Politec, CTIS, TI Métricas, UCB, UniCEUB e IESB.
-- Participou de projetos de pesquisa e desenvolvimento envolvendo governo digital, transformação de serviços públicos e modelagem para gestão pública, incluindo iniciativas com o MCTIC (2012-2013), o Ministério do Planejamento (2017-2019) e a CONAB (2016-2017).
+- Participou do projeto de soluções de TI para o Ministério das Comunicações (2015-2018), com George Marsicano e Sérgio Freitas, e de dois projetos de automação de serviços públicos para o Ministério do Planejamento e o Ministério da Economia (2017-2020), com Cristiane Ramos. Também integrou iniciativa de modelagem para a CONAB (2016-2017).
+- Pesquisa a avaliação de serviços públicos digitais, cidadania e letramento digital e o uso de tecnologias por pessoas idosas. Em 2026, integrou projeto de software livre voltado à participação social, incluindo o desenvolvimento da plataforma Brasil Participativo.
+- Colaborou, sem integrar a autoria, em trabalho sobre aplicação do Scrum à gestão de desenvolvimento terceirizado em órgão público apresentado no CONTECSI 2015.
 
 ## {{< i18n "people_contributions" >}}
 - CFPS - Certified Function Point Specialist (2007).
+- Menção honrosa pelo trabalho sobre letramento digital e isolamento social de pessoas idosas no VIII Congresso Internacional de Gerontologia da USP (2023).
 - Melhor Dissertação de Mestrado do SBQS - Simpósio Brasileiro de Qualidade de Software (2006).
-- 1o lugar no encontro de TI da Politec, com trabalhos sobre medições de tamanho de software e uso de métricas em projetos (2001 e 2002).
+- 1º lugar no encontro de TI da Politec, com trabalhos sobre medições de tamanho de software e uso de métricas em projetos (2001 e 2002).
 
 ## {{< i18n "people_research_areas" >}}
 {{< postsByCategoriesTags caput="" categories="knowledge_areas,ricardo_ajax" >}}

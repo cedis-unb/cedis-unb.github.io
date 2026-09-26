@@ -29,7 +29,7 @@ Participação: o prof Dr. George Marsicano colabora, individualmente, com o pro
 {{< link-interno "/people/george_marsicano" "area_more_about" >}}
 </div>
 
-Como uma outra iniciativa, o doutorado em andamento do Prof. MsC Ricardo Kosloski, versando sobre fatores de impacto, associados à área de qualidade de software, no uso de serviços de e-Gov por pessoas idosas, uma população em contínuo crescimento em todo o mundo, assim como no Brasíl.
+Outra iniciativa é a pesquisa do Prof. Dr. Ricardo Ajax Dias Kosloski sobre o uso de serviços de e-Gov por pessoas idosas, tema de seu doutorado concluído na UnB em 2025. O trabalho relaciona qualidade dos serviços digitais, inclusão e cidadania participativa no contexto do envelhecimento populacional.
 
 No ambiente brasileiro, após um pico de crescimento populacional entre os anos 50/60, melhorias na medicina e higiene minimizam as taxas de mortalidade para, em seguida, fenômenos sociais como planejamento familiar, urbanização e correntes migratórias além da participação das mulheres no mercado de trabalho equilibrarem taxas de mortalidade e fecundidade resultando em um crescimento demográfico mais modesto e consquentemente no evelhecimento da população brasileira, seguindo uma tendência mundial. Além disso, envolver populações específicas no processo de tranformação digital visa dar-les voz e empoderamento para o atinjimento de uma e-Democracia característica da sociedade da informação, conforme diretrizes internacionais estabelecidas por trabalhos como _Nothing about us, without us_ (CHARLTON, 2004).
 

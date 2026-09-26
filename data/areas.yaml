@@ -144,6 +144,7 @@ areas:
       pt: "Engenharia de Requisitos"
     researchers: 
       - george_marsicano
+      - ricardo_ajax
 
   - id: teamwork
     name: 

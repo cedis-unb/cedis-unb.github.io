@@ -575,6 +575,7 @@ items:
     program: curso_esw
     advisors:
       - cristiane_ramos
+      - ricardo_ajax
     url: https://www.bdm.unb.br/handle/10483/42494
     defense_date: 2025-07-22
     year: 2025
@@ -978,6 +979,7 @@ items:
     program: curso_esw
     advisors:
       - cristiane_ramos
+      - ricardo_ajax
     url: https://www.bdm.unb.br/handle/10483/40116
     defense_date: 2024-09-16
     year: 2024
@@ -2217,10 +2219,12 @@ items:
     publisher: Biblioteca Central da Universidade de Brasília
     tags:
       - digital_transformation
+      - software_quality
     type: tcc
     program: curso_esw
     advisors:
       - ricardo_ajax
+      - cristiane_ramos
     url: https://www.bdm.unb.br/handle/10483/33852
     defense_date: 2022-09-27
     year: 2022
@@ -2497,6 +2501,7 @@ items:
     program: curso_esw
     advisors:
       - cristiane_ramos
+      - ricardo_ajax
     url: https://www.bdm.unb.br/handle/10483/36164
     defense_date: 2021-11-16
     year: 2021
@@ -3056,6 +3061,7 @@ items:
     program: curso_esw
     advisors:
       - ricardo_ajax
+      - cristiane_ramos
     url: https://www.bdm.unb.br/handle/10483/30373
     defense_date: 2020-12-16
     year: 2020
@@ -3116,6 +3122,7 @@ items:
     program: curso_esw
     advisors:
       - cristiane_ramos
+      - ricardo_ajax
     url: https://www.bdm.unb.br/handle/10483/30204
     defense_date: 2020-12-17
     year: 2020
@@ -3846,6 +3853,7 @@ items:
     program: curso_esw
     advisors:
       - cristiane_ramos
+      - ricardo_ajax
     url: https://www.bdm.unb.br/handle/10483/23047
     defense_date: 2019-07-12
     year: 2019
@@ -3887,17 +3895,17 @@ items:
       - GUIMARAES, F.
     title:
       pt: 'Ensino SUPERIOR com metodologias ativas: na prática, como se faz'
-      en: 'Ensino SUPERIOR com metodologias ativas: na prática, como se faz'
+      en: 'Higher Education with Active Methodologies: How to Put Them into Practice'
     summary:
       pt: ''
       en: ''
     book_title: ''
     volume: '1'
-    doi_isbn: 10.29327/57070
+    doi_isbn: 978-85-9535-158-5
     journal_event: ''
     location: ''
     pages: '203'
-    publisher: Clube dos autores
+    publisher: Editora Itacaiúnas
     tags:
       - active_learning
     people:
@@ -3906,7 +3914,7 @@ items:
     type: book
     program: ''
     advisors: []
-    url: ''
+    url: https://editoraitacaiunas.com.br/wp-content/uploads/2019/11/livro-metodologias-ativas.pdf
     year: 2019
   - authors:
       - MENDES, F. F.
@@ -5438,7 +5446,7 @@ items:
       en: ''
     book_title: ''
     volume: ''
-    doi_isbn: ''
+    doi_isbn: 978-1-61208-498-5
     journal_event: 11th International Conference on Software Engineering Advances (ICSEA)
     location: Rome
     pages: ''
@@ -7558,7 +7566,8 @@ items:
     advisors:
       - sergio_freitas
       - celia_higawa
-    url: ''
+    url: https://bdm.unb.br/handle/10483/45291
+    defense_date: 2025-12-16
     year: 2025
     defesa_id: alexia-cardoso-2025-06-15
   - authors:
@@ -7584,7 +7593,8 @@ items:
     program: curso_esw
     advisors:
       - sergio_freitas
-    url: ''
+    url: https://bdm.unb.br/handle/10483/45355
+    defense_date: 2025-12-16
     year: 2025
     defesa_id: miguel-barbosa-2025-06-15
   - authors:
@@ -7875,32 +7885,6 @@ items:
     url: ''
     year: 2022
     defesa_id: almir-guilherme-2022-06-15
-  - authors:
-      - Fabiana Luiza Vasconcelos Pfeilsticker Ribas
-    title:
-      pt: Análise de acessibilidade para idosos em serviços e-Gov
-      en: Accessibility analysis for older adults in e-Gov services
-    summary:
-      pt: ''
-      en: ''
-    book_title: ''
-    volume: ''
-    doi_isbn: ''
-    journal_event: ''
-    location: ''
-    pages: ''
-    publisher: Biblioteca Central da Universidade de Brasília
-    tags:
-      - software_quality
-      - digital_transformation
-    type: tcc
-    program: curso_esw
-    advisors:
-      - cristiane_ramos
-    url: https://bdm.unb.br/handle/10483/33852
-    defense_date: 2022-09-27
-    year: 2022
-    defesa_id: fabiana-ribas-2022-09-27-2
   - authors:
       - Levi Alves de Freitas Júnior
     title:
@@ -9134,20 +9118,20 @@ items:
       - Mylena Angélica Silva Farias
       - Wildemberg Sales da Silva Junior
       - Marcus Vinícius Paiva Martins
-      - Leda Cardoso S. Pinto
+      - Leda Cardoso Sampson Pinto
     title:
       pt: 'Gamifying Science Communication: An Experience Report of Jornada Galáctica at Canal Ciência'
       en: 'Gamifying Science Communication: An Experience Report of Jornada Galáctica at Canal Ciência'
     summary:
       pt: ''
       en: ''
-    book_title: ''
-    volume: '3'
-    doi_isbn: ''
+    book_title: 'Computational Science and Its Applications – ICCSA 2026: Proceedings, Part III'
+    volume: '16769'
+    doi_isbn: 10.1007/978-3-032-30494-0_1
     journal_event: The 26th International Conference on Computational Science and Its Applications (ICCSA 2026)
     location: Braga, Portugal
     pages: 3-20
-    publisher: ''
+    publisher: Springer
     tags:
       - gamification
       - digital_transformation
@@ -9161,7 +9145,7 @@ items:
     type: conference
     program: ''
     advisors: []
-    url: ''
+    url: https://doi.org/10.1007/978-3-032-30494-0_1
     year: 2026
   - authors:
       - Glauco Vitor Pedrosa
@@ -9310,11 +9294,10 @@ items:
     url: ''
     year: 2016
   - authors:
-      - Thatiany Lima de Sousa
-      - Elaine Venson
+      - Luiz Pereira de Souza Sobrinho
       - Rejane Maria da Costa Figueiredo
-      - Ricardo Ajax Dias Kosloski
-      - Luiz Carlos Miyadaira Ribeiro Júnior
+      - Elaine Venson
+      - Luiz Carlos Miyadaira Ribeiro Jr
     title:
       pt: A Aplicação do Framework Ágil Scrum em um Processo de Gestão de Projetos de Desenvolvimento de Software por Terceiros em um Órgão Público Federal Brasileiro
       en: Application of the Scrum Agile Framework to the Management Process of Software Development Outsourcing in a Brazilian Government Agency
@@ -9323,7 +9306,7 @@ items:
       en: ''
     book_title: ''
     volume: ''
-    doi_isbn: ''
+    doi_isbn: 10.5748/9788599693117-12CONTECSI/RF-3140
     journal_event: 12th International Conference on Information Systems and Technology Management (CONTECSI)
     location: São Paulo, SP, Brasil
     pages: ''
@@ -9331,12 +9314,10 @@ items:
     tags:
       - digital_transformation
       - software_quality
-    people:
-      - ricardo_ajax
     type: conference
     program: ''
     advisors: []
-    url: ''
+    url: https://www.tecsi.org/contecsi/arquivos/12contecsi.pdf
     year: 2015
   - authors:
       - Thatiany Lima de Sousa
@@ -9378,13 +9359,13 @@ items:
     summary:
       pt: ''
       en: ''
-    book_title: ''
-    volume: '3'
-    doi_isbn: ''
+    book_title: 'Computational Science and Its Applications – ICCSA 2026: Proceedings, Part III'
+    volume: '16769'
+    doi_isbn: 10.1007/978-3-032-30494-0_15
     journal_event: The 26th International Conference on Computational Science and Its Applications (ICCSA 2026)
     location: Braga, Portugal
     pages: 228-242
-    publisher: ''
+    publisher: Springer
     tags:
       - dfcris
       - contextus
@@ -9398,7 +9379,7 @@ items:
     type: conference
     program: ''
     advisors: []
-    url: ''
+    url: https://doi.org/10.1007/978-3-032-30494-0_15
     year: 2026
   - authors:
       - Bruno Mello Andrade
@@ -9419,6 +9400,7 @@ items:
     tags:
       - gamification
       - software_quality
+      - project_inovacao_digital_gamificacao
     people:
       - sergio_freitas
     type: conference
@@ -9437,20 +9419,19 @@ items:
       en: ''
     book_title: ''
     volume: '1'
-    doi_isbn: ''
+    doi_isbn: 10.5753/semish.2026.20823
     journal_event: 53º Seminário Integrado de Software e Hardware (SEMISH 2026)
     location: Gramado, RS, Brasil
-    pages: ''
-    publisher: ''
+    pages: 346-357
+    publisher: Sociedade Brasileira de Computação
     tags:
-      - machine_learning
-      - learning_analytics
+      - ai
     people:
       - sergio_freitas
     type: conference
     program: ''
     advisors: []
-    url: ''
+    url: https://doi.org/10.5753/semish.2026.20823
     year: 2026
   - authors:
       - Sergio Antônio Andrade de Freitas
@@ -9486,6 +9467,90 @@ items:
     program: ''
     advisors: []
     url: ''
+    year: 2026
+  - authors:
+      - Lucas Linard
+      - Sergio Antônio Andrade de Freitas
+    title:
+      pt: 'Governance-Compatible Gamification for Continuous Code-Quality Improvement: A Design Science Case Study in a Large Financial Institution'
+      en: 'Governance-Compatible Gamification for Continuous Code-Quality Improvement: A Design Science Case Study in a Large Financial Institution'
+    summary:
+      pt: Trabalho informado pelos autores para a 60ª edição do HICSS, prevista para janeiro de 2027. A publicação nos anais, a paginação e o DOI do artigo ainda não foram confirmados. O preprint relacionado no SSRN possui título e coautores diferentes e está registrado separadamente.
+      en: Work reported by the authors for HICSS 60, scheduled for January 2027. Proceedings publication, pagination, and the paper DOI have not yet been confirmed. The related SSRN preprint has a different title and coauthors and is catalogued separately.
+    book_title: ''
+    volume: ''
+    doi_isbn: ''
+    journal_event: 60th Hawaii International Conference on System Sciences (HICSS 2027)
+    catalog_date: '2026-09-26T00:00:00-03:00'
+    location: Waikoloa, Hawaii, USA
+    pages: ''
+    publisher: ''
+    tags:
+      - gamification
+      - software_quality
+    people:
+      - sergio_freitas
+    type: conference
+    program: ''
+    advisors: []
+    url: ''
+    year: 2027
+  - authors:
+      - Lucas Linard
+      - T. V. Silva
+      - A. Ferro
+      - Sergio Antônio Andrade de Freitas
+    title:
+      pt: 'Corporate Technical Debt Management at Scale: Results from Implementing a Technical Debt Lever at a Large Brazilian Financial Institution'
+      en: 'Corporate Technical Debt Management at Scale: Results from Implementing a Technical Debt Lever at a Large Brazilian Financial Institution'
+    summary:
+      pt: Trabalho informado pelos autores para o SBQS 2026. A publicação nos anais, a paginação final e o DOI ainda não foram confirmados em fonte editorial.
+      en: Work reported by the authors for SBQS 2026. Proceedings publication, final pagination, and DOI have not yet been confirmed in an editorial source.
+    book_title: ''
+    volume: ''
+    doi_isbn: ''
+    journal_event: XXV Simpósio Brasileiro de Qualidade de Software (SBQS 2026)
+    location: Maringá, PR, Brasil
+    pages: ''
+    publisher: ''
+    tags:
+      - esw
+      - software_quality
+    people:
+      - sergio_freitas
+    type: conference
+    program: ''
+    advisors: []
+    url: ''
+    year: 2026
+  - authors:
+      - Lucas Linard
+      - Igor Simões
+      - Thiago Silva
+      - João Júnior
+      - Sérgio Freitas
+    title:
+      pt: 'Designing an Octalysis-guided gamification intervention for continuous code-quality improvement: a design-oriented empirical case study in a financial institution'
+      en: 'Designing an Octalysis-guided gamification intervention for continuous code-quality improvement: a design-oriented empirical case study in a financial institution'
+    summary:
+      pt: Preprint depositado no SSRN em 28 de abril de 2026. Apresenta o desenho de uma intervenção gamificada para melhoria contínua da qualidade do código em uma instituição financeira; não comprova ainda melhoria causal após implantação. É relacionado, mas não bibliograficamente idêntico, ao trabalho informado para o HICSS 2027.
+      en: Preprint posted on SSRN on 28 April 2026. It presents the design of a gamified intervention for continuous code-quality improvement in a financial institution; it does not yet establish causal improvement after deployment. It is related to, but bibliographically distinct from, the work reported for HICSS 2027.
+    book_title: ''
+    volume: ''
+    doi_isbn: 10.2139/ssrn.6670536
+    journal_event: SSRN Electronic Journal (preprint)
+    location: ''
+    pages: ''
+    publisher: SSRN
+    tags:
+      - gamification
+      - software_quality
+    people:
+      - sergio_freitas
+    type: preprint
+    program: ''
+    advisors: []
+    url: https://doi.org/10.2139/ssrn.6670536
     year: 2026
   - authors:
       - Bruno Mello Andrade
@@ -9541,3 +9606,317 @@ items:
     defense_date: 2026-10-19
     year: 2026
     defesa_id: bruno-andrade-2026-10-19
+  - authors: [Tatiana Coelho Queiroz da Silva]
+    title:
+      pt: Um relato de experiência na atualização de processos de desenvolvimento de software para a versão 1.2 do CMMI
+      en: An experience report on updating software development processes to CMMI version 1.2
+    summary: {pt: '', en: ''}
+    book_title: ''
+    volume: ''
+    doi_isbn: ''
+    journal_event: ''
+    location: Brasília, DF, Brasil
+    pages: ''
+    publisher: Universidade Católica de Brasília
+    tags: [esw, software_quality]
+    type: specialization
+    program: curso_espucb_esw
+    advisors: [ricardo_ajax]
+    url: ''
+    historical_no_defense_record: true
+    year: 2010
+  - authors: [Maria da Conceição Pulcinelli, Cláudio Henrique]
+    title:
+      pt: A importância das técnicas de levantamento de requisitos
+      en: The importance of requirements elicitation techniques
+    summary: {pt: '', en: ''}
+    book_title: ''
+    volume: ''
+    doi_isbn: ''
+    journal_event: ''
+    location: Brasília, DF, Brasil
+    pages: ''
+    publisher: Instituto Científico de Ensino Superior e Pesquisa
+    tags: [esw, software_requirements]
+    type: specialization
+    program: ''
+    advisors: [ricardo_ajax]
+    url: ''
+    year: 2006
+  - authors: [Cristina M. S. Velasco F. Ervilha, Mônica Villar Leão de Aqui]
+    title:
+      pt: Aspectos a serem considerados na escolha pelo uso de uma metodologia ágil no desenvolvimento de um novo software
+      en: Considerations when choosing an agile methodology for new software development
+    summary: {pt: '', en: ''}
+    book_title: ''
+    volume: ''
+    doi_isbn: ''
+    journal_event: ''
+    location: Brasília, DF, Brasil
+    pages: ''
+    publisher: Instituto Científico de Ensino Superior e Pesquisa
+    tags: [esw, software_quality]
+    type: specialization
+    program: ''
+    advisors: [ricardo_ajax]
+    url: ''
+    year: 2006
+  - authors: [Eugenio Souto Pereira]
+    title:
+      pt: Revisão do planejamento do Sistema Único usando estimativas de esforço por produtividades
+      en: Reviewing Sistema Único planning using productivity-based effort estimates
+    summary: {pt: '', en: ''}
+    book_title: ''
+    volume: ''
+    doi_isbn: ''
+    journal_event: ''
+    location: Brasília, DF, Brasil
+    pages: ''
+    publisher: Instituto Científico de Ensino Superior e Pesquisa
+    tags: [esw, software_quality]
+    type: specialization
+    program: ''
+    advisors: [ricardo_ajax]
+    url: ''
+    year: 2006
+  - authors: [Lúcia Vieira, Janaína Santos]
+    title:
+      pt: 'Documentação essencial para avaliação de sistemas legados: um estudo preliminar'
+      en: 'Essential documentation for assessing legacy systems: a preliminary study'
+    summary: {pt: '', en: ''}
+    book_title: ''
+    volume: ''
+    doi_isbn: ''
+    journal_event: ''
+    location: Brasília, DF, Brasil
+    pages: ''
+    publisher: Instituto Científico de Ensino Superior e Pesquisa
+    tags: [esw, software_quality]
+    type: specialization
+    program: ''
+    advisors: [ricardo_ajax]
+    url: ''
+    year: 2005
+  - authors: [Carlos Renato dos Santos Ramos]
+    title:
+      pt: 'Estimativa de esforço para manutenção de software: uma investigação preliminar'
+      en: 'Effort estimation for software maintenance: a preliminary investigation'
+    summary: {pt: '', en: ''}
+    book_title: ''
+    volume: ''
+    doi_isbn: ''
+    journal_event: ''
+    location: Brasília, DF, Brasil
+    pages: ''
+    publisher: Instituto Científico de Ensino Superior e Pesquisa
+    tags: [esw, software_quality]
+    type: specialization
+    program: ''
+    advisors: [ricardo_ajax]
+    url: ''
+    year: 2005
+  - authors: [Marcio Messias Fernandes da Silva]
+    title:
+      pt: Uso da APF para medição de tamanho de sistemas do tipo workflow
+      en: Using function point analysis to size workflow systems
+    summary: {pt: '', en: ''}
+    book_title: ''
+    volume: ''
+    doi_isbn: ''
+    journal_event: ''
+    location: Brasília, DF, Brasil
+    pages: ''
+    publisher: Instituto Científico de Ensino Superior e Pesquisa
+    tags: [esw, software_quality]
+    type: specialization
+    program: ''
+    advisors: [ricardo_ajax]
+    url: ''
+    year: 2005
+  - authors:
+      - Ricardo Ajax Dias Kosloski
+      - Káthia Marçal de Oliveira
+    title:
+      pt: An Experience Factory to Improve Software Development Effort Estimates
+      en: An Experience Factory to Improve Software Development Effort Estimates
+    summary: {pt: '', en: ''}
+    book_title: Product Focused Software Process Improvement
+    volume: '3547'
+    doi_isbn: 10.1007/11497455_43
+    journal_event: PROFES 2005
+    location: Oulu, Finland
+    pages: 560-573
+    publisher: Springer
+    tags: [esw, software_quality]
+    people: [ricardo_ajax]
+    type: conference
+    program: ''
+    advisors: []
+    url: https://doi.org/10.1007/11497455_43
+    year: 2005
+  - authors:
+      - Angélica Toffano Seidel Calazans
+      - Ricardo Ajax Dias Kosloski
+      - Luiz Carlos Miyadaira Ribeiro Junior
+    title:
+      pt: Proposal for a Measurement Model for Software Tests with a Focus on the Management of Outsourced Services
+      en: Proposal for a Measurement Model for Software Tests with a Focus on the Management of Outsourced Services
+    summary: {pt: '', en: ''}
+    book_title: ''
+    volume: '9'
+    doi_isbn: 10.4301/S1807-17752012000200004
+    journal_event: JISTEM - Journal of Information Systems and Technology Management
+    location: ''
+    pages: 265-284
+    publisher: TECSI/USP
+    tags: [esw, software_quality, verification_validation_testing]
+    people: [ricardo_ajax]
+    type: article
+    program: ''
+    advisors: []
+    url: https://doi.org/10.4301/S1807-17752012000200004
+    year: 2012
+  - authors:
+      - Angélica Toffano Seidel Calazans
+      - Ricardo Ajax Dias Kosloski
+    title:
+      pt: O gerenciamento da alteração de escopo na contratação externa de serviços de desenvolvimento/manutenção de software
+      en: Managing scope changes in outsourced software development and maintenance services
+    summary: {pt: '', en: ''}
+    book_title: ''
+    volume: ''
+    doi_isbn: ''
+    journal_event: XIII Argentine Symposium on Software Engineering (ASSE 2012); ISSN 1850-2792
+    location: La Plata, Argentina
+    pages: ''
+    publisher: Sociedad Argentina de Informática
+    tags: [esw, software_requirements, software_quality]
+    people: [ricardo_ajax]
+    type: conference
+    program: ''
+    advisors: []
+    url: https://sedici.unlp.edu.ar/handle/10915/123882
+    year: 2012
+  - authors:
+      - Simone Bezerra Franco
+      - Leides Barroso de Azevedo Moura
+      - Marília Miranda Forte Gomes
+      - Ricardo Ajax Dias Kosloski
+      - Paulo Vitor Pereira Cotta
+      - Rodrigo Damaceno dos Santos
+    title:
+      pt: A influência da inteligência artificial e do letramento digital nas interações sociais de pessoas idosas
+      en: The influence of artificial intelligence and digital literacy on older adults' social interactions
+    summary: {pt: '', en: ''}
+    book_title: ''
+    volume: ''
+    doi_isbn: 10.29327/27640582.891741
+    journal_event: V Congresso Brasileiro Interdisciplinar em Ciência e Tecnologia; ISSN 2764-0582
+    location: Diamantina, MG, Brasil
+    pages: ''
+    publisher: Even3
+    tags: [digital_transformation, social_software, ai]
+    people: [ricardo_ajax]
+    type: conference
+    program: ''
+    advisors: []
+    url: https://www.even3.com.br/anais/cobicet2024/891741-a-influencia-da-inteligencia-artificial-e-do-letramento-digital-nas-interacoes-sociais-de-pessoas-idosas/
+    year: 2024
+  - authors:
+      - Cristiane Soares Ramos
+      - Ricardo Ajax Dias Kosloski
+      - Vítor Gomes de Menezes
+      - Letícia de Souza Santos
+      - Rejane Maria da Costa Figueiredo
+      - Vanessa de Andrade Soares
+      - Anderson Jefferson Cerqueira
+      - Laura Barros Martins
+    title:
+      pt: 'Mapeamento sistemático da literatura sobre estratégias de governo digital: relatório técnico'
+      en: 'Systematic mapping of the literature on digital government strategies: technical report'
+    summary: {pt: '', en: ''}
+    book_title: ''
+    volume: ''
+    doi_isbn: ''
+    journal_event: ''
+    location: Brasília, DF, Brasil
+    pages: ''
+    publisher: Universidade de Brasília
+    tags: [digital_transformation]
+    people: [cristiane_ramos, ricardo_ajax]
+    type: report
+    program: ''
+    advisors: []
+    url: https://repositorio.unb.br/handle/10482/43288
+    year: 2022
+  - authors:
+      - João Lucas Sousa Reis
+      - João Vítor Morandi Lemos
+    title:
+      pt: 'Ensinaê: proposta de um projeto para o ensino de programação MOOC gamificado em redes sociais'
+      en: 'Ensinaê: a proposal for a gamified MOOC for teaching programming on social networks'
+    summary: {pt: '', en: ''}
+    book_title: ''
+    volume: ''
+    doi_isbn: ''
+    journal_event: ''
+    location: Brasília, DF, Brasil
+    pages: ''
+    publisher: Biblioteca Central da Universidade de Brasília
+    tags: [education, gamification, active_learning]
+    type: tcc
+    program: curso_esw
+    advisors: [wander_cleber_maria_pereira_da_silva, ricardo_ajax]
+    url: https://bdm.unb.br/handle/10483/30716
+    defense_date: 2021-11-17
+    year: 2021
+    defesa_id: joao-lucas-joao-vitor-2021-11-17
+  - authors:
+      - Caio Mesquita Vieira
+      - Gabriel Marques de Souza
+    title:
+      pt: 'Seletividade alimentar em pessoas diagnosticadas com Transtorno do Espectro Autista: apoio tecnológico por software'
+      en: 'Food selectivity in people diagnosed with autism spectrum disorder: technological support through software'
+    summary: {pt: '', en: ''}
+    book_title: ''
+    volume: ''
+    doi_isbn: ''
+    journal_event: ''
+    location: Brasília, DF, Brasil
+    pages: ''
+    publisher: Biblioteca Central da Universidade de Brasília
+    tags: [social_software, software_quality]
+    type: tcc
+    program: curso_esw
+    advisors: [ricardo_ajax, marilia_miranda]
+    url: https://bdm.unb.br/handle/10483/45297
+    defense_date: 2025-12-02
+    year: 2025
+    defesa_id: caio-gabriel-2025-12-02
+  - authors:
+      - Keli Cristina Vieira Sirqueira Borges
+    title:
+      pt: Processo de compartilhamento do conhecimento em laboratórios de P&D
+      en: Knowledge-sharing process in research and development laboratories
+    summary:
+      pt: TCC em Engenharia de Software sobre gestão e compartilhamento do conhecimento em laboratórios de pesquisa e desenvolvimento. Orientação de Wander Cleber Maria Pereira da Silva e coorientação de Sérgio Antônio Andrade de Freitas, conforme o registro do BDM/UnB.
+      en: Software Engineering undergraduate thesis on knowledge management and sharing in research and development laboratories. Supervised by Wander Cleber Maria Pereira da Silva and co-supervised by Sérgio Antônio Andrade de Freitas, according to the UnB digital library record.
+    book_title: ''
+    volume: ''
+    doi_isbn: ''
+    journal_event: ''
+    location: Brasília, DF, Brasil
+    pages: ''
+    publisher: Biblioteca Central da Universidade de Brasília
+    tags:
+      - esw
+      - teamwork
+    type: tcc
+    program: curso_esw
+    advisors:
+      - wander_cleber_maria_pereira_da_silva
+      - sergio_freitas
+    url: https://bdm.unb.br/handle/10483/19810
+    defense_date: 2016-12-07
+    year: 2016
+    defesa_id: keli-borges-2016-12-07

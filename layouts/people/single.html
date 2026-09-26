@@ -373,7 +373,7 @@
 
 {{ $featuredPublicationsHtml := "" }}
 {{ if $isResearcher }}
-  {{ $scientificPublicationTypes := slice "article" "conference" "workshop" "book" "book chapter" "book_section" }}
+  {{ $scientificPublicationTypes := slice "article" "conference" "workshop" "preprint" "report" "book" "book chapter" "book_section" }}
   {{ $featuredPublicationItemsHtml := slice }}
   {{ range sort $personPublications "year" "desc" }}
     {{ if and (lt (len $featuredPublicationItemsHtml) 3) (in $scientificPublicationTypes .type) }}

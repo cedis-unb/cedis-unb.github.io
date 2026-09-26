@@ -29,7 +29,7 @@ Participation: Prof. Dr. George Marsicano collaborates individually with the Bra
 {{< link-interno "/people/george_marsicano" "area_more_about" >}}
 </div>
 
-As another initiative, the ongoing doctoral project of Prof. MSc Ricardo Kosloski, discussing the impact factors associated with the area of software quality, on the use of e-Gov services by elderly people, a population continuously growing worldwide, as well as in Brazil.
+Another initiative is Prof. Dr. Ricardo Ajax Dias Kosloski's research on the use of e-government services by older adults, the subject of his PhD completed at UnB in 2025. His work connects digital service quality, inclusion, and participatory citizenship in the context of population aging.
 
 In the Brazilian context, after a population growth peak between the 50s/60s, improvements in medicine and hygiene minimized mortality rates. Subsequently, social phenomena such as family planning, urbanization, migration flows, and the participation of women in the workforce balanced mortality and fertility rates, resulting in more modest demographic growth and consequently in the aging of the Brazilian population, following a global trend. Moreover, involving specific populations in the digital transformation process aims to give them a voice and empowerment towards achieving an e-Democracy characteristic of the information society, according to international guidelines established by works like _Nothing about us, without us_ (CHARLTON, 2004).
 

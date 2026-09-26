@@ -8,8 +8,8 @@
 {{ $statsTitle := i18n "ui_at_a_glance" }}
 {{ $yearsTitle := i18n "ui_years" }}
 {{ $filter := .Params.publication_filter | default "" }}
-{{ $scientificTypes := slice "article" "conference" "workshop" "book" "book_section" "book chapter" "chapter" }}
-{{ $typeOrder := dict "article" 1 "conference" 2 "workshop" 3 "book" 4 "book_section" 5 "book chapter" 5 "chapter" 6 "registro" 7 "phd" 8 "dissertation" 9 "specialization" 10 "tcc" 11 }}
+{{ $scientificTypes := slice "article" "conference" "workshop" "preprint" "report" "book" "book_section" "book chapter" "chapter" }}
+{{ $typeOrder := dict "article" 1 "conference" 2 "workshop" 3 "preprint" 4 "report" 5 "book" 6 "book_section" 7 "book chapter" 7 "chapter" 8 "registro" 9 "phd" 10 "dissertation" 11 "specialization" 12 "tcc" 13 }}
 {{ $publicationEntries := slice }}
 {{ $yearLabelsSet := dict }}
 {{ range hugo.Data.productions.items }}
@@ -116,7 +116,7 @@
 {{ $filterNoResultsLabel := i18n "ui_filter_no_results" }}
 
 {{ $siteLang := .Site.Language.Lang }}
-{{ $typeMap := dict "book" "Book" "book_section" "Chapter" "book chapter" "Chapter" "chapter" "Chapter" "article" "ScholarlyArticle" "journal" "ScholarlyArticle" "conference" "ScholarlyArticle" "workshop" "ScholarlyArticle" "registro" "SoftwareSourceCode" "tcc" "Thesis" "dissertation" "Thesis" "specialization" "Thesis" "phd" "Thesis" }}
+{{ $typeMap := dict "book" "Book" "book_section" "Chapter" "book chapter" "Chapter" "chapter" "Chapter" "article" "ScholarlyArticle" "journal" "ScholarlyArticle" "conference" "ScholarlyArticle" "workshop" "ScholarlyArticle" "preprint" "ScholarlyArticle" "report" "Report" "registro" "SoftwareSourceCode" "tcc" "Thesis" "dissertation" "Thesis" "specialization" "Thesis" "phd" "Thesis" }}
 {{ $graph := slice }}
 {{ range $publicationEntries }}
   {{ $title := .title }}
@@ -342,6 +342,7 @@
             {{ $bibtype := "misc" }}
             {{ if eq $pub.type "article" }}{{ $bibtype = "article" }}{{ end }}
             {{ if or (eq $pub.type "conference") (eq $pub.type "workshop") }}{{ $bibtype = "inproceedings" }}{{ end }}
+            {{ if eq $pub.type "report" }}{{ $bibtype = "techreport" }}{{ end }}
             {{ if eq $pub.type "book" }}{{ $bibtype = "book" }}{{ end }}
             {{ if or (eq $pub.type "book_section") (eq $pub.type "chapter") }}{{ $bibtype = "incollection" }}{{ end }}
             {{ if or (eq $pub.type "phd") (eq $pub.type "dissertation") }}{{ $bibtype = "phdthesis" }}{{ end }}

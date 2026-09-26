@@ -6,7 +6,7 @@ date: 2014-11-01T00:00:00-03:00
 weight: 40
 language: en
 featured_image: "../assets/images/featured/people_Ricardo Ajax.webp"
-summary: Adjunct Professor at the University of Brasília (UnB), working in the undergraduate Software Engineering program on software engineering, software metrics, testing, and software quality.
+summary: Adjunct Professor at the University of Brasília (UnB), working on software engineering and quality, digital government, digital citizenship, and the inclusion of older adults.
 contact:
   email: ricardoajax@unb.br
   lattes: https://lattes.cnpq.br/8309011123228244
@@ -15,24 +15,27 @@ areas:
 - active_learning
 - digital_transformation
 - education
+- esw
+- social_software
 - software_quality
+- software_requirements
 - verification_validation_testing
 authorimage: ../assets/images/global/author.webp
 categories:
 - people
 - researcher
-tags: 
-- social_software
+tags: []
 nav_next: true
 ---
 <div id="top"></div>
 
 ## {{< i18n "people_profile" >}}
-- Current Position: Adjunct Professor at the [University of Brasília](https://www.unb.br/) (UnB) since 2011, engaged in the undergraduate [Software Engineering](http://software.unb.br/) program.
-- Areas of Activity: Software Engineering, software metrics and estimation, testing and verification/validation, software quality and productivity, active learning in undergraduate education, and digital services/e-government focused on citizenship and aging.
+- Current Position: Adjunct Professor IV at the [University of Brasília](https://www.unb.br/) (UnB), where he has taught in the undergraduate [Software Engineering](http://software.unb.br/) program since 2011.
+- Areas of Activity: software engineering, metrics, testing, requirements, and software quality; active learning; digital government, digital citizenship, and the inclusion of older adults.
+- Institutional Role: Researcher at the Center for Software Studies, Development and Innovation (CEDIS/UnB), in the research lines of software engineering and quality, learning technologies, and digital transformation.
 
 ## {{< i18n "people_background" >}}
-- PhD in Development, Society and International Cooperation - University of Brasília (UnB/CEAM), Brazil (2020-2025), with thesis approved in December 2025: "Aging in contemporary society: the use of e-government services to promote participatory citizenship."
+- PhD in Development, Society and International Cooperation - University of Brasília (UnB/CEAM), Brazil (2020-2025). Thesis: "Aging in contemporary society: the use of e-government services to promote participatory citizenship."
 - Professional Master's in Knowledge Management and Information Technology - Catholic University of Brasília (UCB), Brazil (2003-2005).
 - Specialization in Software Engineering - Catholic University of Brasília (UCB), Brazil (2001-2003).
 - Specialization in Systems Analysis - Catholic University of Brasília (UCB), Brazil (1984-1985).
@@ -42,13 +45,16 @@ nav_next: true
 ## {{< i18n "people_professional_activities" >}}
 - Professor at UnB/FCTE since 2011, teaching subjects such as Software Process Improvement, Functional Measurement Techniques and Software Estimates, Software Verification and Validation, Measurement and Analysis, and Integrative Engineering Project.
 - Works and has researched in topics related to software metrics, estimation, productivity, process improvement, and software quality, with previous experience in organizations such as Politec, CTIS, TI Métricas, UCB, UniCEUB, and IESB.
-- Participated in research and development projects involving digital government, public service transformation, and public management modeling, including initiatives with MCTIC (2012-2013), the Ministry of Planning (2017-2019), and CONAB (2016-2017).
+- Participated in an IT-solutions project for the Ministry of Communications (2015-2018) with George Marsicano and Sérgio Freitas, and in two public-service automation projects for the Ministry of Planning and the Ministry of Economy (2017-2020) with Cristiane Ramos. He also joined a management-modeling initiative for CONAB (2016-2017).
+- Studies the evaluation of digital public services, digital citizenship and literacy, and technology use by older adults. In 2026, he joined a free-software project focused on social participation, including the development of the Brasil Participativo platform.
+- Contributed, without authorship credit, to a paper on Scrum-based management of outsourced software development in a government agency presented at CONTECSI 2015.
 
 ## {{< i18n "people_research_areas" >}}
 {{< postsByCategoriesTags caput="" categories="knowledge_areas,ricardo_ajax" >}}
 
 ## {{< i18n "people_contributions" >}}
 - CFPS - Certified Function Point Specialist (2007).
+- Honorable mention for a paper on digital literacy and social isolation among older adults at the VIII International Congress of Gerontology of the University of São Paulo (2023).
 - Best Master's Dissertation at SBQS - Brazilian Symposium on Software Quality (2006).
 - First place at Politec's IT meeting for works on software size measurement and the use of metrics in software projects (2001 and 2002).
 

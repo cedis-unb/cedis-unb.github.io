@@ -30,7 +30,7 @@ publisher: Biblioteca Central da Universidade de Brasília
 location: ''
 pages: ''
 volume: ''
-external_url: ''
+external_url: https://bdm.unb.br/handle/10483/45291
 spotify_podcast: ''
 github_repo: ''
 zenodo_record: ''

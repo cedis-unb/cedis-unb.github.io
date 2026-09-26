@@ -25,7 +25,7 @@ authors_structured:
 tags:
 - software_quality
 advisors: []
-doi_isbn: ''
+doi_isbn: 978-1-61208-498-5
 source_title: 11th International Conference on Software Engineering Advances (ICSEA)
 publisher: ''
 location: Rome
@@ -41,7 +41,7 @@ bibtex: "@inproceedings{2016-valenca-k-s-proposed-data-model-for-a-historical-ba
   \  author = {VALENCA, K. S. and CANEDO, E. D. and KOSLOSKI, R. A. D. and FREITAS,\
   \ S. A. A.},\n  title = {Proposed Data Model for a Historical Base Tool},\n  year\
   \ = {2016},\n  booktitle = {11th International Conference on Software Engineering\
-  \ Advances (ICSEA)},\n  address = {Rome}\n}"
+  \ Advances (ICSEA)},\n  address = {Rome},\n  isbn = {978-1-61208-498-5}\n}"
 aliases:
 - /publications/2016-valenca-k-s-proposed-data-model-for-a-historical-base-tool/
 ---
