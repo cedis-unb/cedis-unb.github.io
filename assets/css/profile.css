@@ -121,6 +121,7 @@
 #profile-content.researcher-profile-content {
   display: grid;
   gap: 1.4rem;
+  container-type: inline-size;
 }
 
 #profile-content > h2 {
