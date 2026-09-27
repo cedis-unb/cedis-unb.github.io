@@ -48,7 +48,7 @@ nav_next: true
 - Development of tools and software such as CUDA-Sankoff, Foldalign 2.5, and PA-Star for bioinformatics and high-performance processing.
 
 ## {{< i18n "people_research_areas" >}}
-{{< postsByCategoriesTags caput="" categories="knowledge_areas,daniel_sundfeld" >}}
+{{< postsByCategoriesTags caput="" categories="knowledge_areas,daniel_sundfeld" variant="profile-areas" >}}
 
 
 ## {{< i18n "people_supervisory_experience" >}}

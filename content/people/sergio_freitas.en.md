@@ -48,7 +48,7 @@ nav_next: true
 - Bachelor's in Electrical Engineering (emphasis in electronics) - Federal University of Uberlândia (UFU), Brazil (1985-1990).
 
 ## {{< i18n "people_research_areas" >}}
-{{< postsByCategoriesTags caput="" categories="knowledge_areas,sergio_freitas" >}}
+{{< postsByCategoriesTags caput="" categories="knowledge_areas,sergio_freitas" variant="profile-areas" >}}
 
 ## {{< i18n "people_contributions" >}}
 - Awards: Multiple times honored and patron of classes at UnB and UFES.

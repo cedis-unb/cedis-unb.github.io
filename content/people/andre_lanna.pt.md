@@ -40,7 +40,7 @@ nav_next: true
 - Disciplinas Ministradas: Engenharia de Requisitos, Verificação Validação e Testes de Software, Desenho de Software, Introdução a Ciência da Computação, Desenvolvimento Avançado de Software, Orientação a Objetos, Técnicas de Programação em Plataformas Emergentes​​.
 
 ## {{< i18n "people_research_areas" >}}
-{{< postsByCategoriesTags caput="" categories="knowledge_areas,andre_lanna" >}}
+{{< postsByCategoriesTags caput="" categories="knowledge_areas,andre_lanna" variant="profile-areas" >}}
 
 ## {{< i18n "people_contributions" >}}
 - Menção Honrosa no Computer on the Beach (2011).

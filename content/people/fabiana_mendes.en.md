@@ -38,7 +38,7 @@ nav_next: true
 - MR-MPS.BR Implementers and Introduction to MPS.BR - Brazilian Software Excellence Promotion Society (SOFTEX), Brazil (2006-2007).
 
 ## {{< i18n "people_research_areas" >}}
-{{< postsByCategoriesTags caput="" categories="knowledge_areas,fabiana_mendes" >}}
+{{< postsByCategoriesTags caput="" categories="knowledge_areas,fabiana_mendes" variant="profile-areas" >}}
 
 ## {{< i18n "people_professional_activities" >}}
 - Institutional Affiliation: University of Brasília (UnB) since 2011.

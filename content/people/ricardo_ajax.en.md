@@ -50,7 +50,7 @@ nav_next: true
 - Contributed, without authorship credit, to a paper on Scrum-based management of outsourced software development in a government agency presented at CONTECSI 2015.
 
 ## {{< i18n "people_research_areas" >}}
-{{< postsByCategoriesTags caput="" categories="knowledge_areas,ricardo_ajax" >}}
+{{< postsByCategoriesTags caput="" categories="knowledge_areas,ricardo_ajax" variant="profile-areas" >}}
 
 ## {{< i18n "people_contributions" >}}
 - CFPS - Certified Function Point Specialist (2007).

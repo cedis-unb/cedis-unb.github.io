@@ -54,7 +54,7 @@ nav_next: true
 - Best master's dissertation in software quality for the year 2004, recognized in 2005.
 
 ## {{< i18n "people_research_areas" >}}
-{{< postsByCategoriesTags caput="" categories="knowledge_areas,cristiane_ramos" >}}
+{{< postsByCategoriesTags caput="" categories="knowledge_areas,cristiane_ramos" variant="profile-areas" >}}
 
 
 ## {{< i18n "people_supervisory_experience" >}}
