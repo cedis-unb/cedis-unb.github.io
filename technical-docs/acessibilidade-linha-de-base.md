@@ -29,13 +29,19 @@ Pontos que costumam ser descritos errado:
 - **O CI não roda Lighthouse mobile.** `lighthouserc-mobile.json` só é executado pelo script
   local `npm run audit:lighthouse-mobile`. O passo de CI usa apenas `lighthouserc.json`.
 - **O limite do Lighthouse é 0,90, não 100.** Uma página pode ter falha de acessibilidade
-  real e o build continuar verde — é exatamente o caso da página inicial hoje (ver §4).
+  real e o build continuar verde. Foi o que aconteceu até 2026-09-27, quando a página
+  inicial ficou parada em 0,90 — exatamente no portão — por dois erros de ARIA no
+  alternador da agenda de defesas (§4). Corrigidos, as 8 URLs medem 1,00; a folga do
+  portão continua sendo a mesma.
 - **As 21 URLs do pa11y são amostra.** O build gera mais de três mil páginas; a amostra
   cobre home, institucionais, listagens, uma entidade de cada tipo, um perfil, uma
   publicação, o mapa e as duas páginas de ingresso, nos dois idiomas.
-- **Tudo roda em modo claro.** `assets/js/darkmode.js` só ativa a classe `dark` a partir do
-  `localStorage` (`color-theme`) ou de `prefers-color-scheme`. O Chrome do CI sobe com
-  ambos vazios/claros, então **nenhuma verificação automatizada olha o modo escuro**.
+- **Pa11y e Lighthouse rodam no tema claro.** `assets/js/darkmode.js` só ativa a classe
+  `dark` a partir do `localStorage` (`color-theme`) ou de `prefers-color-scheme`, e o Chrome
+  do CI sobe com ambos vazios/claros. Desde 2026-09-28 uma auditoria complementar de
+  contraste cobre o modo escuro em **8 arquétipos** no CI (`npm run audit:dark`, descrito
+  logo abaixo), forçando o tema via `localStorage`. As demais páginas em tema escuro seguem
+  sem verificação automatizada.
 - **Cobertura conceitual.** pa11y/HTMLCS e o axe do Lighthouse decidem cerca de um terço dos
   critérios de sucesso, e só a parte decidível por máquina. Verde significa "nenhuma falha
   automatizada conhecida na amostra".
@@ -93,6 +99,10 @@ apontam 3 violações críticas/sérias na mesma página, em modo claro. Um úni
 automatizado não é evidência suficiente.
 
 ## 3. Passagem manual de 2026-09-27
+
+> Como a §2, esta seção é o retrato **antes** das correções, mantido como linha de base.
+> Os defeitos listados aqui foram corrigidos — o que foi feito em cada um está em §4.
+
 
 Instrumentada com Puppeteer + Chrome do sistema, sempre com `--accept-lang=en-US` (sem isso
 o autodetect de idioma em `layouts/partials/head.html` redireciona toda URL inglesa para a
