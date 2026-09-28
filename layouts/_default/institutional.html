@@ -83,15 +83,15 @@
           {{ end }}
 
           <div class="mt-4 grid gap-3 sm:grid-cols-3">
-            <div class="rounded-[1.25rem] border border-white/10 bg-black/20 px-4 py-4">
+            <div class="rounded-card border border-white/10 bg-black/20 px-4 py-4">
               <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-white/75">{{ $statsSections }}</div>
               <p class="mt-2 text-sm leading-6 text-white/75">{{ $sectionCount }}</p>
             </div>
-            <div class="rounded-[1.25rem] border border-white/10 bg-black/20 px-4 py-4">
+            <div class="rounded-card border border-white/10 bg-black/20 px-4 py-4">
               <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-white/75">{{ $statsLanguage }}</div>
               <p class="mt-2 text-sm leading-6 text-white/75">{{ $languageLabel }}</p>
             </div>
-            <div class="rounded-[1.25rem] border border-white/10 bg-black/20 px-4 py-4">
+            <div class="rounded-card border border-white/10 bg-black/20 px-4 py-4">
               <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-white/75">{{ $statsUpdated }}</div>
               <p class="mt-2 text-sm leading-6 text-white/75">{{ $updatedLabel }}</p>
             </div>
@@ -111,13 +111,13 @@
     </article>
 
     <aside class="order-1 space-y-5 lg:order-2 lg:sticky lg:top-24">
-      <div class="rounded-[1.75rem] border border-black/5 bg-white/85 p-5 shadow-[0_18px_60px_rgba(15,23,42,0.08)] backdrop-blur dark:border-white/10 dark:bg-white/4">
+      <div class="rounded-panel border border-black/5 bg-white/85 p-5 shadow-panel backdrop-blur dark:border-white/10 dark:bg-white/4">
         <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-gray-500 dark:text-white/75">{{ $summaryTitle }}</div>
         <p class="mt-4 text-sm leading-7 text-gray-600 dark:text-white/75">{{ $intro }}</p>
       </div>
 
       {{ if gt $sectionCount 0 }}
-      <div id="page-navigation" class="rounded-[1.75rem] border border-black/5 bg-white/85 p-5 shadow-[0_18px_60px_rgba(15,23,42,0.08)] backdrop-blur dark:border-white/10 dark:bg-white/4">
+      <div id="page-navigation" class="rounded-panel border border-black/5 bg-white/85 p-5 shadow-panel backdrop-blur dark:border-white/10 dark:bg-white/4">
         <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-gray-500 dark:text-white/75">{{ $navigationTitle }}</div>
         <nav class="mt-4">
           <ul class="m-0 grid list-none gap-2 p-0">

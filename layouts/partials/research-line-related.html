@@ -12,9 +12,9 @@
 {{ $lines := partial "research-lines-for.html" (dict "kind" .kind "id" .id "ids" .ids) }}
 {{ if gt (len $lines) 0 }}
 {{ $variant := .variant | default "slate" }}
-{{ $wrap := "rounded-[1.75rem] border border-amber-200/80 bg-amber-50/60 p-6 shadow-[0_18px_48px_rgba(245,158,11,0.08)] dark:border-amber-400/20 dark:bg-amber-500/10" }}
+{{ $wrap := "rounded-panel border border-amber-200/80 bg-amber-50/60 p-6 shadow-[0_18px_48px_rgba(245,158,11,0.08)] dark:border-amber-400/20 dark:bg-amber-500/10" }}
 {{ if eq $variant "people" }}
-  {{ $wrap = "rounded-[1.75rem] border border-amber-200/80 bg-amber-50/60 p-5 shadow-[0_18px_60px_rgba(245,158,11,0.08)] backdrop-blur dark:border-amber-400/20 dark:bg-amber-500/10" }}
+  {{ $wrap = "rounded-panel border border-amber-200/80 bg-amber-50/60 p-5 shadow-[0_18px_60px_rgba(245,158,11,0.08)] backdrop-blur dark:border-amber-400/20 dark:bg-amber-500/10" }}
 {{ end }}
 <div class="{{ $wrap }}" data-research-lines="{{ .kind }}">
   <div class="text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-amber-800 dark:text-amber-100">{{ i18n "ui_research_lines" }}</div>

@@ -15,7 +15,7 @@
           <h1 class="mt-5 max-w-3xl text-4xl font-black tracking-tight text-gray-950 dark:text-white md:text-5xl">{{ .Title }}</h1>
           <p class="mt-4 max-w-2xl text-base leading-7 text-gray-600 dark:text-white/75 md:text-lg">{{ $intro }}</p>
         </div>
-        <div class="rounded-[1.75rem] border border-black/5 bg-white/90 p-5 shadow-[0_24px_70px_rgba(15,23,42,0.08)] backdrop-blur dark:border-white/10 dark:bg-white/4">
+        <div class="rounded-panel border border-black/5 bg-white/90 p-5 shadow-[0_24px_70px_rgba(15,23,42,0.08)] backdrop-blur dark:border-white/10 dark:bg-white/4">
           <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-gray-500 dark:text-white/75">{{ i18n "ui_alumni_count_label" }}</div>
           <div class="mt-3 text-3xl font-black tracking-tight text-gray-950 dark:text-white">{{ len $alumni }}</div>
           <p class="mt-2 text-sm leading-6 text-gray-600 dark:text-white/75">{{ i18n "ui_alumni_count_lead" }}</p>
@@ -28,7 +28,7 @@
     {{ if gt (len $alumni) 0 }}
     <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
       {{ range $alumni }}
-      <article class="flex flex-col overflow-hidden rounded-3xl border border-black/5 bg-white/90 shadow-[0_18px_60px_rgba(15,23,42,0.08)] transition-transform hover:-translate-y-0.5 dark:border-white/10 dark:bg-white/4">
+      <article class="flex flex-col overflow-hidden rounded-3xl border border-black/5 bg-white/90 shadow-panel transition-transform hover:-translate-y-0.5 dark:border-white/10 dark:bg-white/4">
         <div class="flex items-center gap-4 border-b border-black/5 bg-stone-50 px-5 py-4 dark:border-white/10 dark:bg-white/4">
           {{ if .photo }}
             {{ with resources.Get .photo }}

@@ -159,7 +159,7 @@
     </div>
 
     <aside class="space-y-6 lg:sticky lg:top-28 lg:self-start">
-      <div class="rounded-[1.75rem] border border-slate-200/80 bg-white p-6 shadow-[0_18px_48px_rgba(15,23,42,0.08)] dark:border-white/10 dark:bg-slate-900/40 dark:shadow-[0_18px_48px_rgba(0,0,0,0.22)]">
+      <div class="rounded-panel border border-slate-200/80 bg-white p-6 shadow-card dark:border-white/10 dark:bg-slate-900/40 dark:shadow-card-dark">
         <div class="text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-slate-700 dark:text-slate-500">{{ $detailsLabel }}</div>
         <dl class="mt-5 space-y-4 text-sm">
           <div>
@@ -180,7 +180,7 @@
       </div>
 
       {{ if gt (len $originProjects) 0 }}
-      <div class="rounded-[1.75rem] border border-slate-200/80 bg-white p-6 shadow-[0_18px_48px_rgba(15,23,42,0.08)] dark:border-white/10 dark:bg-slate-900/40 dark:shadow-[0_18px_48px_rgba(0,0,0,0.22)]">
+      <div class="rounded-panel border border-slate-200/80 bg-white p-6 shadow-card dark:border-white/10 dark:bg-slate-900/40 dark:shadow-card-dark">
         <div class="text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-slate-700 dark:text-slate-500">{{ $originProjectsLabel }}</div>
         <div class="mt-5 space-y-2 text-sm">
           {{ range $originProjects }}
@@ -191,14 +191,14 @@
         </div>
       </div>
       {{ else }}
-      <div class="rounded-[1.75rem] border border-slate-200/80 bg-white p-6 shadow-[0_18px_48px_rgba(15,23,42,0.08)] dark:border-white/10 dark:bg-slate-900/40 dark:shadow-[0_18px_48px_rgba(0,0,0,0.22)]">
+      <div class="rounded-panel border border-slate-200/80 bg-white p-6 shadow-card dark:border-white/10 dark:bg-slate-900/40 dark:shadow-card-dark">
         <div class="text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-slate-700 dark:text-slate-500">{{ $originProjectsLabel }}</div>
         <p class="mt-4 text-sm leading-6 text-slate-600 dark:text-slate-300">{{ $originProjectsEmptyLabel }}</p>
       </div>
       {{ end }}
 
       {{ if gt (len $productRegistrations) 0 }}
-      <div class="rounded-[1.75rem] border border-fuchsia-200/80 bg-fuchsia-50/60 p-6 shadow-[0_18px_48px_rgba(192,38,211,0.08)] dark:border-fuchsia-400/20 dark:bg-fuchsia-500/10">
+      <div class="rounded-panel border border-fuchsia-200/80 bg-fuchsia-50/60 p-6 shadow-[0_18px_48px_rgba(192,38,211,0.08)] dark:border-fuchsia-400/20 dark:bg-fuchsia-500/10">
         <div class="text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-fuchsia-700 dark:text-fuchsia-100">{{ $registrationsLabel }}</div>
         <div class="mt-5 space-y-2 text-sm">
           {{ range $productRegistrations }}
@@ -213,7 +213,7 @@
       {{ end }}
 
       {{ with .Params.tags }}
-      <div class="rounded-[1.75rem] border border-slate-200/80 bg-white p-6 shadow-[0_18px_48px_rgba(15,23,42,0.08)] dark:border-white/10 dark:bg-slate-900/40 dark:shadow-[0_18px_48px_rgba(0,0,0,0.22)]">
+      <div class="rounded-panel border border-slate-200/80 bg-white p-6 shadow-card dark:border-white/10 dark:bg-slate-900/40 dark:shadow-card-dark">
         <div class="text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-slate-700 dark:text-slate-500">{{ $tagsLabel }}</div>
         <div class="mt-5 flex flex-wrap gap-2">
           {{ range . }}
@@ -226,7 +226,7 @@
       {{ end }}
 
       {{ if $hasTOC }}
-      <div class="rounded-[1.75rem] border border-slate-200/80 bg-white p-6 shadow-[0_18px_48px_rgba(15,23,42,0.08)] dark:border-white/10 dark:bg-slate-900/40 dark:shadow-[0_18px_48px_rgba(0,0,0,0.22)]">
+      <div class="rounded-panel border border-slate-200/80 bg-white p-6 shadow-card dark:border-white/10 dark:bg-slate-900/40 dark:shadow-card-dark">
         <div class="text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-slate-700 dark:text-slate-500">{{ $sectionsLabel }}</div>
         <div class="product-toc mt-5 text-sm leading-7 text-slate-600 dark:text-slate-300">
           {{ $toc }}

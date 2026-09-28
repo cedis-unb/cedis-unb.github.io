@@ -11,7 +11,7 @@
    tailwind.config.js (deletado).
    ============================================================ */
 
-@import "tailwindcss";
+@import "tailwindcss" source(none);
 @plugin "@tailwindcss/typography";
 
 /* Modo escuro por CLASSE (toggle em darkmode.js + script inline no head).
@@ -29,6 +29,15 @@
 /* Safety net — cobre classes em shortcodes/printf raros que
    possam não aparecer no stats de um build parcial. Custo <1 KB. */
 @source "../../layouts";
+
+/* A detecção automática do Tailwind 4 varre todo arquivo não
+   ignorado pelo git — o que aqui inclui a SAÍDA publicada (docs/, que
+   é versionada) e os .md de planejamento da raiz, que citam classes
+   como exemplo. Efeito: uma classe removida do template nunca sumia
+   do CSS, porque o build anterior e a documentação a mantinham viva.
+   Como hugo_stats.json já lista toda classe efetivamente renderizada,
+   `source(none)` no @import acima desliga a varredura automática e
+   deixa as fontes serem exatamente as dois @source declarados. */
 
 /* ============================================================
    Tokens do design system CEDIS — @theme CSS-first
@@ -103,6 +112,45 @@
   --animate-pulse-slow:  pulse 3s infinite;
   --animate-bounce-slow: bounce 2s infinite;
   --animate-marquee:     marquee 45s linear infinite;
+
+  /* -- Raios de canto das superfícies (2026-09-27) --
+     Arbitrary values que se repetem em layouts/** com papel
+     semântico estável. Nenhum tem equivalente na escala default
+     do Tailwind (--radius-3xl = 1.5rem, --radius-4xl = 2rem),
+     portanto a promoção não muda nenhum valor renderizado.
+
+       rounded-panel   1.75rem  painel/seção externa    (66 usos)
+       rounded-card    1.25rem  card interno            (43 usos)
+       rounded-inset   1.1rem   elemento aninhado       (12 usos)
+
+     1.35rem (7 usos) e 1.8rem (1 uso) continuam arbitrary de
+     propósito: 1.35rem divide o valor com outro papel em
+     profile.css e 1.8rem é único. */
+  --radius-panel: 1.75rem;
+  --radius-card:  1.25rem;
+  --radius-inset: 1.1rem;
+
+  /* -- Elevação das superfícies (2026-09-27) --
+     As três sombras que de fato se repetem em layouts/**, escritas
+     sem espaço dentro de rgba() para que o --tw-shadow gerado seja
+     idêntico, caractere a caractere, ao do arbitrary value que
+     substituem (verificado com diff da saída do Tailwind).
+
+       shadow-panel         painel externo sobre fundo claro (32 usos)
+       shadow-panel-on-dark mesma geometria sobre hero escuro  (6 usos)
+       shadow-card          card de seção, light               (20 usos)
+       shadow-card-dark     o par dark do anterior             (20 usos)
+
+     Atenção aos pares: `shadow-card` só aparece acompanhado de
+     `dark:shadow-card-dark` (20/20 no mesmo elemento). Já
+     `shadow-panel-on-dark` NÃO é variante `dark:` — é sombra sem
+     prefixo, aplicada a tiles dentro de hero permanentemente
+     escuro; `shadow-panel` simplesmente não tem par dark (no tema
+     escuro esses painéis ficam sem sombra). */
+  --shadow-panel:         0 18px 60px rgba(15,23,42,0.08);
+  --shadow-panel-on-dark: 0 18px 60px rgba(0,0,0,0.24);
+  --shadow-card:          0 18px 48px rgba(15,23,42,0.08);
+  --shadow-card-dark:     0 18px 48px rgba(0,0,0,0.22);
 }
 
 /* Keyframes das animations acima (Tailwind não gera keyframes por

@@ -128,7 +128,7 @@
         {{ end }}
         {{ $leadText := delimit $textParts " " }}
 
-        <article class="group flex h-full flex-col overflow-hidden rounded-4xl border border-black/5 bg-white text-gray-900 shadow-[0_18px_60px_rgba(15,23,42,0.08)] transition duration-300 ease-out hover:-translate-y-1 hover:shadow-[0_28px_90px_rgba(197,39,47,0.16)] dark:border-white/10 dark:bg-white/4 dark:text-white">
+        <article class="group flex h-full flex-col overflow-hidden rounded-4xl border border-black/5 bg-white text-gray-900 shadow-panel transition duration-300 ease-out hover:-translate-y-1 hover:shadow-[0_28px_90px_rgba(197,39,47,0.16)] dark:border-white/10 dark:bg-white/4 dark:text-white">
           <a href="{{ .RelPermalink }}" class="block">
             {{ with .Params.featured_image }}
               {{ $featuredPath := replace . "../assets/" "" }}

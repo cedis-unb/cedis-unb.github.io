@@ -446,7 +446,7 @@
              @focusin="stop()"
              @focusout="start()">
           <div class="relative">
-            <div class="overflow-hidden rounded-[1.75rem]">
+            <div class="overflow-hidden rounded-panel">
               <div class="flex transition-transform duration-500 ease-out"
                    :style="'transform: translateX(-' + (current * (100 / itemsPerView)) + '%)'">
                 {{ range $index, $p := $featuredProducts }}

@@ -47,7 +47,7 @@
       {{ $image := .Fit "1200x900 webp q88" }}
       <div class="overflow-hidden rounded-4xl border border-white/10 bg-white/6 p-4 shadow-[0_24px_70px_rgba(0,0,0,0.22)] backdrop-blur md:p-5">
         <div class="overflow-hidden rounded-3xl bg-[linear-gradient(180deg,rgba(255,255,255,0.08),rgba(255,255,255,0.02))] p-4">
-          <img src="{{ $image.RelPermalink }}" alt="" class="h-auto w-full rounded-[1.1rem] object-contain" loading="lazy" decoding="async">
+          <img src="{{ $image.RelPermalink }}" alt="" class="h-auto w-full rounded-inset object-contain" loading="lazy" decoding="async">
         </div>
       </div>
       {{ end }}
@@ -59,14 +59,14 @@
     {{ if gt (len $sections) 0 }}
     <div class="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
       {{ range $sections }}
-      <section id="{{ .anchor }}" class="rounded-[1.75rem] border border-black/5 bg-white/90 p-6 shadow-[0_18px_60px_rgba(15,23,42,0.08)] dark:border-white/10 dark:bg-white/4">
+      <section id="{{ .anchor }}" class="rounded-panel border border-black/5 bg-white/90 p-6 shadow-panel dark:border-white/10 dark:bg-white/4">
         <h2 class="text-2xl font-black tracking-tight text-gray-950 dark:text-white">{{ .title }}</h2>
         <div class="mt-4 text-base leading-7 text-gray-600 dark:text-white/75 [&_ul]:m-0 [&_ul]:space-y-3 [&_ul]:pl-5 [&_li]:pl-1 [&_p]:m-0">{{ .body | safeHTML }}</div>
       </section>
       {{ end }}
     </div>
     {{ else }}
-    <div class="rounded-[1.75rem] border border-black/5 bg-white/90 p-6 shadow-[0_18px_60px_rgba(15,23,42,0.08)] dark:border-white/10 dark:bg-white/4">{{ $content | safeHTML }}</div>
+    <div class="rounded-panel border border-black/5 bg-white/90 p-6 shadow-panel dark:border-white/10 dark:bg-white/4">{{ $content | safeHTML }}</div>
     {{ end }}
   </section>
 </main>

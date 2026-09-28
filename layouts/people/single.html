@@ -437,7 +437,7 @@
         {{ $linkAttrs := cond (hasPrefix $pubUrl "/") "" ` target="_blank" rel="noopener noreferrer"` }}
         {{ $pubTitleHtml = printf `<a href="%s"%s class="font-semibold text-primary-700 transition-colors hover:text-primary-600 dark:text-primary-200 dark:hover:text-primary-100">%s</a>` $pubUrl $linkAttrs $pubTitle }}
       {{ end }}
-      {{ $publicationItemsHtml = $publicationItemsHtml | append (printf `<li class="list-none rounded-[1.25rem] border border-black/5 bg-white/80 px-5 py-4 shadow-[0_10px_35px_rgba(15,23,42,0.06)] dark:border-white/10 dark:bg-white/4"><p class="m-0 text-sm font-semibold leading-6 text-gray-500 dark:text-white/60">%s</p><p class="m-0 mt-2 text-base leading-7 text-gray-700 dark:text-white/80">%s</p><p class="m-0 mt-2 text-sm leading-6 text-gray-500 dark:text-white/60">%s</p></li>` $pubAuthors $pubTitleHtml $pubDetail) }}
+      {{ $publicationItemsHtml = $publicationItemsHtml | append (printf `<li class="list-none rounded-card border border-black/5 bg-white/80 px-5 py-4 shadow-[0_10px_35px_rgba(15,23,42,0.06)] dark:border-white/10 dark:bg-white/4"><p class="m-0 text-sm font-semibold leading-6 text-gray-500 dark:text-white/60">%s</p><p class="m-0 mt-2 text-base leading-7 text-gray-700 dark:text-white/80">%s</p><p class="m-0 mt-2 text-sm leading-6 text-gray-500 dark:text-white/60">%s</p></li>` $pubAuthors $pubTitleHtml $pubDetail) }}
     {{ end }}
   {{ end }}
   {{ if gt (len $publicationItemsHtml) 0 }}
@@ -613,12 +613,12 @@
 
           <div class="mt-4 grid gap-3 sm:grid-cols-2">
             {{ if gt (len $displayTags) 0 }}
-            <div class="rounded-[1.25rem] border border-white/10 bg-black/20 px-4 py-4">
+            <div class="rounded-card border border-white/10 bg-black/20 px-4 py-4">
               <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-white/75">{{ $focusLabel }}</div>
               <p class="mt-2 text-sm leading-6 text-white/75">{{ len $displayTags }} {{ i18n "ui_mapped_topics_in_this_profile" }}</p>
             </div>
             {{ end }}
-            <div class="rounded-[1.25rem] border border-white/10 bg-black/20 px-4 py-4">
+            <div class="rounded-card border border-white/10 bg-black/20 px-4 py-4">
               <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-white/75">{{ $summaryTitle }}</div>
               <p class="mt-2 text-sm leading-6 text-white/75">{{ i18n "ui_projects_supervisions_and_academic_production" }}</p>
             </div>
@@ -635,7 +635,7 @@
         </div>
 
         {{ if $isResearcher }}
-        <div class="rounded-[1.75rem] border border-primary-200/70 bg-[linear-gradient(180deg,rgba(255,247,237,0.95),rgba(255,255,255,0.9))] p-6 shadow-[0_16px_60px_rgba(197,39,47,0.08)] dark:border-primary-400/25 dark:bg-[linear-gradient(180deg,rgba(76,29,29,0.35),rgba(15,23,42,0.5))] md:p-8">
+        <div class="rounded-panel border border-primary-200/70 bg-[linear-gradient(180deg,rgba(255,247,237,0.95),rgba(255,255,255,0.9))] p-6 shadow-[0_16px_60px_rgba(197,39,47,0.08)] dark:border-primary-400/25 dark:bg-[linear-gradient(180deg,rgba(76,29,29,0.35),rgba(15,23,42,0.5))] md:p-8">
           <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-primary-700 dark:text-primary-200">{{ i18n "people_cta_supervision_eyebrow" }}</div>
           <h2 class="mt-3 text-2xl font-black tracking-tight text-gray-950 dark:text-white md:text-3xl">{{ i18n "people_cta_supervision_heading" }}</h2>
           <p class="mt-3 max-w-2xl text-base leading-7 text-gray-700 dark:text-white/80">{{ i18n "people_cta_supervision_body" }}</p>
@@ -659,47 +659,47 @@
 
     <aside class="order-1 space-y-5 lg:order-2 lg:sticky lg:top-24">
       {{ if or (gt (len $displayTags) 0) (gt $activeSupervisions 0) (gt $formerSupervisionCount 0) (gt $projectCount 0) (gt $previousProjectCount 0) (gt $productCount 0) (gt $publicationCount 0) }}
-      <div class="rounded-[1.75rem] border border-black/5 bg-white/85 p-5 shadow-[0_18px_60px_rgba(15,23,42,0.08)] backdrop-blur dark:border-white/10 dark:bg-white/4">
+      <div class="rounded-panel border border-black/5 bg-white/85 p-5 shadow-panel backdrop-blur dark:border-white/10 dark:bg-white/4">
         <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-gray-500 dark:text-white/75">{{ $statsTitle }}</div>
         <div class="mt-4 grid gap-3">
           {{ if gt (len $displayTags) 0 }}
-          <div class="rounded-[1.25rem] border border-black/5 bg-stone-50 px-4 py-4 dark:border-white/10 dark:bg-white/4">
+          <div class="rounded-card border border-black/5 bg-stone-50 px-4 py-4 dark:border-white/10 dark:bg-white/4">
             <div class="text-3xl font-black tracking-tight text-gray-950 dark:text-white">{{ len $displayTags }}</div>
             <div class="mt-1 text-sm leading-6 text-gray-600 dark:text-white/75">{{ $focusLabel }}</div>
           </div>
           {{ end }}
           {{ if gt $activeSupervisions 0 }}
-          <div class="rounded-[1.25rem] border border-black/5 bg-stone-50 px-4 py-4 dark:border-white/10 dark:bg-white/4">
+          <div class="rounded-card border border-black/5 bg-stone-50 px-4 py-4 dark:border-white/10 dark:bg-white/4">
             <div class="text-3xl font-black tracking-tight text-gray-950 dark:text-white">{{ $activeSupervisions }}</div>
             <div class="mt-1 text-sm leading-6 text-gray-600 dark:text-white/75">{{ $activeSupervisionsLabel }}</div>
           </div>
           {{ end }}
           {{ if gt $formerSupervisionCount 0 }}
-          <div class="rounded-[1.25rem] border border-black/5 bg-stone-50 px-4 py-4 dark:border-white/10 dark:bg-white/4">
+          <div class="rounded-card border border-black/5 bg-stone-50 px-4 py-4 dark:border-white/10 dark:bg-white/4">
             <div class="text-3xl font-black tracking-tight text-gray-950 dark:text-white">{{ $formerSupervisionCount }}</div>
             <div class="mt-1 text-sm leading-6 text-gray-600 dark:text-white/75">{{ $formerSupervisionsLabel }}</div>
           </div>
           {{ end }}
           {{ if gt $projectCount 0 }}
-          <div class="rounded-[1.25rem] border border-black/5 bg-stone-50 px-4 py-4 dark:border-white/10 dark:bg-white/4">
+          <div class="rounded-card border border-black/5 bg-stone-50 px-4 py-4 dark:border-white/10 dark:bg-white/4">
             <div class="text-3xl font-black tracking-tight text-gray-950 dark:text-white">{{ $projectCount }}</div>
             <div class="mt-1 text-sm leading-6 text-gray-600 dark:text-white/75">{{ $projectsLabel }}</div>
           </div>
           {{ end }}
           {{ if gt $previousProjectCount 0 }}
-          <div class="rounded-[1.25rem] border border-black/5 bg-stone-50 px-4 py-4 dark:border-white/10 dark:bg-white/4">
+          <div class="rounded-card border border-black/5 bg-stone-50 px-4 py-4 dark:border-white/10 dark:bg-white/4">
             <div class="text-3xl font-black tracking-tight text-gray-950 dark:text-white">{{ $previousProjectCount }}</div>
             <div class="mt-1 text-sm leading-6 text-gray-600 dark:text-white/75">{{ $previousProjectsLabel }}</div>
           </div>
           {{ end }}
           {{ if gt $productCount 0 }}
-          <div class="rounded-[1.25rem] border border-black/5 bg-stone-50 px-4 py-4 dark:border-white/10 dark:bg-white/4">
+          <div class="rounded-card border border-black/5 bg-stone-50 px-4 py-4 dark:border-white/10 dark:bg-white/4">
             <div class="text-3xl font-black tracking-tight text-gray-950 dark:text-white">{{ $productCount }}</div>
             <div class="mt-1 text-sm leading-6 text-gray-600 dark:text-white/75">{{ $productsLabel }}</div>
           </div>
           {{ end }}
           {{ if gt $publicationCount 0 }}
-          <div class="rounded-[1.25rem] border border-black/5 bg-stone-50 px-4 py-4 dark:border-white/10 dark:bg-white/4">
+          <div class="rounded-card border border-black/5 bg-stone-50 px-4 py-4 dark:border-white/10 dark:bg-white/4">
             <div class="text-3xl font-black tracking-tight text-gray-950 dark:text-white">{{ $publicationCount }}</div>
             <div class="mt-1 text-sm leading-6 text-gray-600 dark:text-white/75">{{ $publicationsLabel }}</div>
           </div>
@@ -711,9 +711,9 @@
       {{ partial "research-line-related.html" (dict "kind" "researcher" "id" $personKey "variant" "people") }}
 
       {{ if $hasContact }}
-      <div class="rounded-[1.75rem] border border-black/5 bg-white/85 p-5 shadow-[0_18px_60px_rgba(15,23,42,0.08)] backdrop-blur dark:border-white/10 dark:bg-white/4">
+      <div class="rounded-panel border border-black/5 bg-white/85 p-5 shadow-panel backdrop-blur dark:border-white/10 dark:bg-white/4">
         <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-gray-500 dark:text-white/75">{{ i18n "people_contact" }}</div>
-        <div class="mt-4 divide-y divide-black/5 overflow-hidden rounded-[1.25rem] border border-black/5 bg-stone-50 dark:divide-white/10 dark:border-white/10 dark:bg-white/4">
+        <div class="mt-4 divide-y divide-black/5 overflow-hidden rounded-card border border-black/5 bg-stone-50 dark:divide-white/10 dark:border-white/10 dark:bg-white/4">
           {{ if $contactEmail }}
           <div class="flex items-center gap-3 px-4 py-3" x-data="{ copied: false }">
             <svg class="h-5 w-5 shrink-0 text-primary-600 dark:text-primary-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
@@ -755,7 +755,7 @@
       {{ end }}
 
       {{ if $hasToc }}
-      <div id="profile-navigation" class="rounded-[1.75rem] border border-black/5 bg-white/85 p-5 shadow-[0_18px_60px_rgba(15,23,42,0.08)] backdrop-blur dark:border-white/10 dark:bg-white/4">
+      <div id="profile-navigation" class="rounded-panel border border-black/5 bg-white/85 p-5 shadow-panel backdrop-blur dark:border-white/10 dark:bg-white/4">
         <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-gray-500 dark:text-white/75">{{ $navTitle }}</div>
         <nav class="mt-4">
           <ul class="m-0 list-none space-y-2 p-0">

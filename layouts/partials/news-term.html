@@ -88,15 +88,15 @@
                 </div>
 
                 <div class="grid gap-3 sm:grid-cols-3 lg:min-w-120 lg:max-w-xl">
-                    <div class="rounded-3xl border border-white/10 bg-white/6 p-5 shadow-[0_18px_60px_rgba(0,0,0,0.24)] backdrop-blur">
+                    <div class="rounded-3xl border border-white/10 bg-white/6 p-5 shadow-panel-on-dark backdrop-blur">
                         <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-white/75">{{ i18n "ui_newsroom_stat_total" }}</div>
                         <div class="mt-2 text-3xl font-black text-white">{{ $totalNews }}</div>
                     </div>
-                    <div class="rounded-3xl border border-white/10 bg-white/6 p-5 shadow-[0_18px_60px_rgba(0,0,0,0.24)] backdrop-blur">
+                    <div class="rounded-3xl border border-white/10 bg-white/6 p-5 shadow-panel-on-dark backdrop-blur">
                         <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-white/75">{{ i18n "ui_newsroom_stat_this_year" }}</div>
                         <div class="mt-2 text-3xl font-black text-white">{{ $thisYearCount }}</div>
                     </div>
-                    <div class="rounded-3xl border border-white/10 bg-white/6 p-5 shadow-[0_18px_60px_rgba(0,0,0,0.24)] backdrop-blur">
+                    <div class="rounded-3xl border border-white/10 bg-white/6 p-5 shadow-panel-on-dark backdrop-blur">
                         <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-white/75">{{ i18n "ui_newsroom_stat_latest" }}</div>
                         <div class="mt-2 text-2xl font-black text-white">{{ or $latestDate "—" }}</div>
                     </div>
@@ -180,7 +180,7 @@
                     {{ break }}
                 {{ end }}
             {{ end }}
-            <article class="group flex h-full flex-col overflow-hidden rounded-[1.75rem] border border-black/5 bg-white shadow-[0_16px_50px_rgba(15,23,42,0.08)] transition duration-300 ease-out hover:-translate-y-1 hover:shadow-[0_24px_70px_rgba(197,39,47,0.14)] dark:border-white/10 dark:bg-white/4">
+            <article class="group flex h-full flex-col overflow-hidden rounded-panel border border-black/5 bg-white shadow-[0_16px_50px_rgba(15,23,42,0.08)] transition duration-300 ease-out hover:-translate-y-1 hover:shadow-[0_24px_70px_rgba(197,39,47,0.14)] dark:border-white/10 dark:bg-white/4">
                 <a href="{{ .RelPermalink }}" class="block">
                     {{ with .Params.featured_image }}
                     {{ $sp := replace . "../assets/" "" }}
@@ -214,7 +214,7 @@
     {{/* ============ TOPIC FILTER CHIPS ============ */}}
     {{ if gt (len $topTags) 0 }}
     <section class="mx-auto max-w-(--breakpoint-xl) px-4 pt-12 md:px-6 lg:px-8">
-        <div class="rounded-[1.75rem] border border-black/5 bg-white/80 p-5 shadow-[0_16px_50px_rgba(15,23,42,0.06)] backdrop-blur dark:border-white/10 dark:bg-white/4 md:p-6">
+        <div class="rounded-panel border border-black/5 bg-white/80 p-5 shadow-[0_16px_50px_rgba(15,23,42,0.06)] backdrop-blur dark:border-white/10 dark:bg-white/4 md:p-6">
             <div class="flex items-center gap-3">
                 <span class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-gray-500 dark:text-white/75">{{ i18n "ui_newsroom_filter_topic_heading" }}</span>
             </div>
@@ -252,7 +252,7 @@
                     {{ break }}
                 {{ end }}
             {{ end }}
-            <article class="group flex h-full flex-col overflow-hidden rounded-[1.75rem] border border-black/5 bg-white shadow-[0_14px_44px_rgba(15,23,42,0.06)] transition duration-300 ease-out hover:-translate-y-1 hover:shadow-[0_22px_66px_rgba(197,39,47,0.12)] dark:border-white/10 dark:bg-white/4">
+            <article class="group flex h-full flex-col overflow-hidden rounded-panel border border-black/5 bg-white shadow-[0_14px_44px_rgba(15,23,42,0.06)] transition duration-300 ease-out hover:-translate-y-1 hover:shadow-[0_22px_66px_rgba(197,39,47,0.12)] dark:border-white/10 dark:bg-white/4">
                 <a href="{{ .RelPermalink }}" class="block">
                     {{ with .Params.featured_image }}
                     {{ $ap := replace . "../assets/" "" }}

@@ -140,7 +140,7 @@
         </div>
            <nav id="menuItems" :class="{'flex': open, 'hidden': !open}"
                class="hidden w-full flex-col gap-3 border-t border-white/10 pb-5 pt-4 md:hidden">
-              <div class="max-h-[calc(100vh-7rem)] overflow-y-auto scrollbar-gutter-stable rounded-[1.75rem] border border-white/10 bg-white/6 p-3 shadow-[0_18px_50px_rgba(0,0,0,0.2)] backdrop-blur">
+              <div class="max-h-[calc(100vh-7rem)] overflow-y-auto scrollbar-gutter-stable rounded-panel border border-white/10 bg-white/6 p-3 shadow-[0_18px_50px_rgba(0,0,0,0.2)] backdrop-blur">
               <div class="mb-3 px-2 text-[0.65rem] font-semibold uppercase tracking-[0.28em] text-white/40">{{ $mobileNavigateLabel }}</div>
               {{ range site.Menus.main }}
             {{ if (eq "complexdropdown" .Pre) }}
