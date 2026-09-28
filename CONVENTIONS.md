@@ -1610,7 +1610,7 @@ grep -rl 'ui/page-heading\|ui/section-heading\|ui/stat-card\|ui/empty-state' lay
 | Institucional | `_default/infrastructure.html`, `_default/join.html`, `_default/alumni.html`, `_default/indicators.html`, `_default/quiz.html`, `_default/map.html` | page-heading |
 | Catálogos | `defesas/list.html`, `opportunities/list.html` | page-heading, section-heading, stat-card, empty-state |
 | Catálogos | `publications/list.html` | page-heading, stat-card |
-| Catálogos | `projects/list.html`, `research-lines/list.html`, `partials/products-catalog.html` | page-heading |
+| Catálogos | `projects/list.html`, `research-lines/list.html` | page-heading |
 | Entidades | `areas/single.html`, `products/single.html`, `projects/single.html`, `research-lines/single.html` | page-heading |
 
 Filtros, agrupamentos, grids, métricas compostas e barras laterais continuam no
@@ -1620,6 +1620,7 @@ template de cada família — as primitivas cobrem só o núcleo repetido.
 
 | Template | Por quê |
 | --- | --- |
+| `partials/products-catalog.html` | o padrão é o mesmo, mas o resumo vem de `{{ with .Description }}…{{ else }}…{{ end }}` no próprio markup. Passá-lo ao partial obriga a achatar a decisão numa variável antes da chamada — muda a lógica do template para caber na assinatura, e não só o markup |
 | `_default/institutional.html`, `_default/publications.html` | o eyebrow é um **par de chips** (rótulo + selo "CEDIS" / papel do arquivo) dentro de um `inline-flex`, não um rótulo único. `page-heading` recebe um eyebrow só; forçá-lo aqui exigiria passar HTML e desfaria o próprio contrato |
 | `people/single.html`, `people/derived.html` | composição própria do perfil de pesquisador; não deve parecer página de projeto |
 | `posts/single.html`, `partials/news-term.html` | família editorial própria |
