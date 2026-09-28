@@ -15,7 +15,7 @@ languages:
     weight: 1
     params:
       data_lang: pt
-      moto: "Bem vindo(a)!"
+      moto: "Bem-vindo(a)!"
       description: "Descubra o futuro da Engenharia de Software, da Aprendizagem e da Inteligência Artificial. \n Desde 2013, o Centro de Estudos, Desenvolvimento e Inovação em Software tem liderado projetos inovadores de pesquisa, desenvolvimento e educação."
       seemore:
         text: "Conheça o CEDIS"
