@@ -8,6 +8,13 @@
 <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="theme-color" content="#ffffff">
+{{/* Identificador do build, só na capa: permite conferir num pedido só se o
+     que está no ar corresponde ao commit esperado, sem varrer o site. O mesmo
+     valor é publicado em /build.txt. Vem de CEDIS_BUILD_SHA, definido por
+     `npm run build`; em CI, cai para GITHUB_SHA. */}}
+{{- if .IsHome }}{{ with (or (getenv "CEDIS_BUILD_SHA") (getenv "GITHUB_SHA")) }}
+<meta name="cedis-build" content="{{ substr . 0 10 }}">
+{{- end }}{{ end }}
 {{ with .Site.Params.googleAnalytics }}
 <script>
     (function () {

@@ -674,6 +674,16 @@ module:
 # Inclui todos os defaults conhecidos + tailwindcss (Tailwind 4) + git (para
 # enableGitInfo). Não afeta o CI, que já rodava com defaults mais permissivos.
 security:
+  # getenv só libera o que a política permite. O identificador de build usa
+  # CEDIS_BUILD_SHA (definido por `npm run build`) com recuo para GITHUB_SHA
+  # no CI; os HUGO_* são os defaults do Hugo, repetidos aqui porque declarar
+  # a chave substitui a lista padrão.
+  funcs:
+    getenv:
+      - '^HUGO_'
+      - '^CI$'
+      - '^CEDIS_BUILD_SHA$'
+      - '^GITHUB_SHA$'
   exec:
     allow:
       - '^tailwindcss$'
