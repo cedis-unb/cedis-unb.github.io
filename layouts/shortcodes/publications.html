@@ -278,7 +278,7 @@
                     {{ end }}
                     <p class="m-0 text-base leading-7 text-gray-600 dark:text-white/75">{{ if .url }}<a href="{{ .url }}" target="_blank" rel="noopener noreferrer" class="{{ $titleLinkClass }}">{{ end }}{{ index .title $.Site.Language.Lang }}{{ if .url }}</a>{{ end }}</p>
                     {{ if gt (len $detailParts) 0 }}
-                    <p class="m-0 text-sm leading-6 text-gray-500 dark:text-white/60">{{ delimit $detailParts " • " }}</p>
+                    <p class="m-0 text-sm leading-6 text-gray-500 [overflow-wrap:anywhere] dark:text-white/60">{{ delimit $detailParts " • " }}</p>
                     {{ end }}
                   </div>
                 </div>

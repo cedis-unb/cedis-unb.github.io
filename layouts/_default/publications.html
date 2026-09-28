@@ -389,7 +389,7 @@
                       {{ if $pub.url }}<a href="{{ $pub.url }}" {{ if or (hasPrefix $pub.url "http://") (hasPrefix $pub.url "https://") }}target="_blank" rel="noopener noreferrer"{{ end }} class="font-semibold text-primary-700 transition-colors hover:text-primary-600 dark:text-primary-200 dark:hover:text-primary-100">{{ end }}{{ $entry.title }}{{ if $pub.url }}</a>{{ end }}
                     </p>
                     {{ if gt (len $detailParts) 0 }}
-                    <p class="m-0 text-sm leading-6 text-gray-500 dark:text-white/60">{{ delimit $detailParts " &middot; " | safeHTML }}</p>
+                    <p class="m-0 text-sm leading-6 text-gray-500 [overflow-wrap:anywhere] dark:text-white/60">{{ delimit $detailParts " &middot; " | safeHTML }}</p>
                     {{ end }}
                   </div>
                   {{ if $pub.year }}
