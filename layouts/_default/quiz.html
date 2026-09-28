@@ -27,9 +27,13 @@
   <section class="border-b border-black/5 bg-[radial-gradient(circle_at_top,rgba(139,92,246,0.14),transparent_36%),linear-gradient(180deg,#ffffff_0%,#f8fafc_100%)] dark:border-white/10 dark:bg-[radial-gradient(circle_at_top,rgba(139,92,246,0.18),transparent_36%),linear-gradient(180deg,#111827_0%,#0f172a_100%)]">
     <div class="mx-auto max-w-(--breakpoint-md) px-4 py-12 md:px-6 lg:px-8 lg:py-16">
       {{ partial "breadcrumbs.html" (dict "page" . "variant" "light") }}
-      <span class="mt-4 inline-flex rounded-full border border-black/10 bg-white px-4 py-1 text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-gray-500 dark:border-white/10 dark:bg-white/6 dark:text-white/55">{{ $eyebrow }}</span>
-      <h1 class="mt-5 text-4xl font-black tracking-tight text-gray-950 dark:text-white md:text-5xl">{{ .Title }}</h1>
-      <p class="mt-4 text-base leading-7 text-gray-600 dark:text-white/75 md:text-lg">{{ $intro }}</p>
+      {{ partial "ui/page-heading.html" (dict
+        "page" . "variant" "light" "showBreadcrumb" false
+        "eyebrow" $eyebrow "description" $intro
+        "eyebrowClass" "mt-4 inline-flex rounded-full border border-black/10 bg-white px-4 py-1 text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-gray-500 dark:border-white/10 dark:bg-white/6 dark:text-white/55"
+        "titleClass" "mt-5 text-4xl font-black tracking-tight text-gray-950 dark:text-white md:text-5xl"
+        "descriptionClass" "mt-4 text-base leading-7 text-gray-600 dark:text-white/75 md:text-lg"
+      ) }}
     </div>
   </section>
 

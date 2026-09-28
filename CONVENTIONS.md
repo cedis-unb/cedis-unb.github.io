@@ -1596,14 +1596,37 @@ Classes específicas continuam no template que as usa, passadas como parâmetro.
 
 ### 12.2 Famílias e exceções deliberadas
 
-| Família | Templates | Situação |
+A tabela abaixo é verificável: cada linha diz quais das quatro primitivas o
+template **realmente chama**. Para conferir depois de mexer:
+
+```bash
+grep -rl 'ui/page-heading\|ui/section-heading\|ui/stat-card\|ui/empty-state' layouts/
+```
+
+| Família | Template | Primitivas que usa |
 | --- | --- | --- |
-| Institucional | `_default/{history,infrastructure,partners,join,indicators,institutional,alumni,quiz,map}.html` | usam as primitivas |
-| Catálogos | `_default/publications.html`, `defesas/list.html`, `opportunities/list.html`, `projects/list.html`, `research-lines/list.html`, `partials/products-catalog.html` | usam as primitivas; filtros e agrupamentos são próprios |
-| Entidades | `areas/single.html`, `products/single.html`, `projects/single.html`, `research-lines/single.html` | usam `page-heading`; metadados e barras laterais são próprios |
-| Pesquisador | `people/single.html`, `people/derived.html` | **exceção deliberada** — composição própria; não deve parecer página de projeto |
-| Notícia | `posts/single.html`, `partials/news-term.html` | **exceção deliberada** — família editorial própria |
-| Fallback | `_default/{single,list}.html` | breadcrumb e cabeçalho conforme o contexto |
+| Institucional | `_default/history.html` | page-heading, section-heading, stat-card |
+| Institucional | `_default/partners.html` | page-heading, section-heading |
+| Institucional | `_default/infrastructure.html`, `_default/join.html`, `_default/alumni.html`, `_default/indicators.html`, `_default/quiz.html`, `_default/map.html` | page-heading |
+| Catálogos | `defesas/list.html`, `opportunities/list.html` | page-heading, section-heading, stat-card, empty-state |
+| Catálogos | `publications/list.html` | page-heading, stat-card |
+| Catálogos | `projects/list.html`, `research-lines/list.html`, `partials/products-catalog.html` | page-heading |
+| Entidades | `areas/single.html`, `products/single.html`, `projects/single.html`, `research-lines/single.html` | page-heading |
+
+Filtros, agrupamentos, grids, métricas compostas e barras laterais continuam no
+template de cada família — as primitivas cobrem só o núcleo repetido.
+
+#### Exceções deliberadas
+
+| Template | Por quê |
+| --- | --- |
+| `_default/institutional.html`, `_default/publications.html` | o eyebrow é um **par de chips** (rótulo + selo "CEDIS" / papel do arquivo) dentro de um `inline-flex`, não um rótulo único. `page-heading` recebe um eyebrow só; forçá-lo aqui exigiria passar HTML e desfaria o próprio contrato |
+| `people/single.html`, `people/derived.html` | composição própria do perfil de pesquisador; não deve parecer página de projeto |
+| `posts/single.html`, `partials/news-term.html` | família editorial própria |
+| `_default/single.html`, `_default/list.html` | fallback: cabeçalho varia com o contexto (showcase, termo de taxonomia, lista de seção) |
+| `index.html`, `404.html` | capa e erro não têm o padrão de cabeçalho de página |
+| `people/collaborators.html`, `products/list.html` | delegam o cabeçalho (o segundo chama `products-catalog.html`, que usa `page-heading`) |
+| `opportunities/single.html`, `defesas/single.html`, `publications/single.html` | páginas de item, com cabeçalho editorial próprio do registro |
 
 `layouts/publications/list.html` **não renderiza nenhuma página** — quem atende
 `/publications/` e as subseções é `_default/publications.html`. Verifique qual
