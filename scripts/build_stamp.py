@@ -36,10 +36,10 @@ def git(*args: str) -> str:
 
 def stamp() -> tuple[str, bool]:
     sha = git("rev-parse", "HEAD") or "unknown"
-    # --porcelain ignora arquivos não rastreados que estejam no .gitignore;
-    # docs/ é rastreado, então uma regeneração anterior não commitada conta
-    # como suja, que é o comportamento desejado.
-    dirty = bool(git("status", "--porcelain"))
+    # A pergunta é "as FONTES estavam commitadas?". docs/ fica de fora porque
+    # o carimbo roda depois do Hugo, e a saída recém-gerada sujaria a árvore
+    # sempre — um falso positivo que apontaria para o próprio build.
+    dirty = bool(git("status", "--porcelain", "--", ".", ":!docs"))
     return sha, dirty
 
 
