@@ -4,11 +4,45 @@
 from __future__ import annotations
 
 import json
-import re
 import sys
 from html import unescape
 from html.parser import HTMLParser
 from pathlib import Path
+
+BREADCRUMB_LABELS = ("Breadcrumb", "Trilha de navegação")
+
+VOID_TAGS = frozenset(
+    {
+        "area",
+        "base",
+        "br",
+        "col",
+        "embed",
+        "hr",
+        "img",
+        "input",
+        "link",
+        "meta",
+        "param",
+        "source",
+        "track",
+        "wbr",
+    }
+)
+
+CATALOGUE_CARD_CLASS = "group flex h-full flex-col overflow-hidden rounded-4xl"
+
+PROFILE_AREA_PAGES = (
+    "people/sergio_freitas/index.html",
+    "pt/people/sergio_freitas/index.html",
+    "people/george_marsicano/index.html",
+    "pt/people/george_marsicano/index.html",
+)
+
+KNOWLEDGE_AREA_PAGES = (
+    "categories/knowledge_areas/index.html",
+    "pt/categories/knowledge_areas/index.html",
+)
 
 
 class BreadcrumbParser(HTMLParser):
@@ -17,6 +51,7 @@ class BreadcrumbParser(HTMLParser):
     def __init__(self) -> None:
         super().__init__()
         self.items: list[str] = []
+        self.found_nav = False
         self._in_breadcrumb_nav = False
         self._in_item = False
         self._skip_item = False
@@ -25,7 +60,8 @@ class BreadcrumbParser(HTMLParser):
 
     def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
         attr_map = dict(attrs)
-        if tag == "nav" and attr_map.get("aria-label") in {"Breadcrumb", "Trilha de navegação"}:
+        if tag == "nav" and attr_map.get("aria-label") in BREADCRUMB_LABELS:
+            self.found_nav = True
             self._in_breadcrumb_nav = True
             return
         if not self._in_breadcrumb_nav:
@@ -60,6 +96,76 @@ class BreadcrumbParser(HTMLParser):
     def handle_data(self, data: str) -> None:
         if self._in_breadcrumb_nav and self._in_item and not self._skip_item and self._capture_text:
             self._text_parts.append(data)
+
+
+class AttributeReferenceParser(HTMLParser):
+    """Collect element ids and aria-controls references, regardless of quoting."""
+
+    def __init__(self) -> None:
+        super().__init__()
+        self.ids: set[str] = set()
+        self.controls: list[str] = []
+
+    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        attr_map = dict(attrs)
+        element_id = (attr_map.get("id") or "").strip()
+        if element_id:
+            self.ids.add(element_id)
+        self.controls.extend((attr_map.get("aria-controls") or "").split())
+
+
+class JsonLdParser(HTMLParser):
+    """Collect JSON-LD payloads, regardless of quoting."""
+
+    def __init__(self) -> None:
+        super().__init__()
+        self.payloads: list[str] = []
+        self._in_json_ld = False
+
+    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        if tag == "script" and dict(attrs).get("type") == "application/ld+json":
+            self._in_json_ld = True
+            self.payloads.append("")
+
+    def handle_endtag(self, tag: str) -> None:
+        if tag == "script":
+            self._in_json_ld = False
+
+    def handle_data(self, data: str) -> None:
+        if self._in_json_ld:
+            self.payloads[-1] += data
+
+
+class ProfileAreasParser(HTMLParser):
+    """Inspect the markup rendered inside contextual research-area grids."""
+
+    def __init__(self) -> None:
+        super().__init__()
+        self.grids = 0
+        self.cards = 0
+        self.links = 0
+        self.catalogue_tags: list[str] = []
+        self._depth = 0
+
+    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        classes = (dict(attrs).get("class") or "").split()
+        if self._depth == 0:
+            if "profile-areas-grid" in classes:
+                self.grids += 1
+                self._depth = 1
+            return
+        if "profile-areas-card" in classes:
+            self.cards += 1
+        if tag == "a":
+            self.links += 1
+        if tag in {"img", "p"}:
+            self.catalogue_tags.append(tag)
+        if tag not in VOID_TAGS:
+            self._depth += 1
+
+    def handle_endtag(self, tag: str) -> None:
+        if self._depth and tag not in VOID_TAGS:
+            self._depth -= 1
 
 
 def normalize_label(value: str) -> str:
@@ -137,17 +243,19 @@ def validate_researcher_cards(root: Path, issues: list[str]) -> None:
 def validate_aria_controls(root: Path, issues: list[str]) -> None:
     for html_path in root.rglob("*.html"):
         text = html_path.read_text(encoding="utf-8", errors="replace")
-        controls = re.findall(r'\baria-controls="([^"]+)"', text)
-        if not controls:
+        if "aria-controls" not in text:
             continue
-        ids = set(re.findall(r'\bid="([^"]+)"', text))
-        for control_id in controls:
-            if control_id not in ids:
+        parser = AttributeReferenceParser()
+        parser.feed(text)
+        for control_id in parser.controls:
+            if control_id not in parser.ids:
                 issues.append(f"{html_path.relative_to(root)}: aria-controls references missing id '{control_id}'")
 
 
 def extract_breadcrumb_json_labels(text: str) -> list[str]:
-    for raw_json in re.findall(r'<script type="application/ld\+json">(.*?)</script>', text, flags=re.S):
+    parser = JsonLdParser()
+    parser.feed(text)
+    for raw_json in parser.payloads:
         if '"BreadcrumbList"' not in raw_json:
             continue
         payload = json.loads(unescape(raw_json))
@@ -158,11 +266,13 @@ def extract_breadcrumb_json_labels(text: str) -> list[str]:
 def validate_breadcrumbs(root: Path, issues: list[str]) -> None:
     for html_path in root.rglob("*.html"):
         text = html_path.read_text(encoding="utf-8", errors="replace")
-        if 'aria-label="Breadcrumb"' not in text and 'aria-label="Trilha de navegação"' not in text:
+        if not any(label in text for label in BREADCRUMB_LABELS):
             continue
 
         parser = BreadcrumbParser()
         parser.feed(text)
+        if not parser.found_nav:
+            continue
         labels = parser.items
         if not labels:
             issues.append(f"{html_path.relative_to(root)}: breadcrumb nav rendered without visible labels")
@@ -179,6 +289,42 @@ def validate_breadcrumbs(root: Path, issues: list[str]) -> None:
             issues.append(
                 f"{html_path.relative_to(root)}: visible breadcrumb {labels} does not match JSON-LD {json_labels}"
             )
+
+
+def validate_profile_area_cards(root: Path, issues: list[str]) -> None:
+    for relative_path in PROFILE_AREA_PAGES:
+        text = read_text(root, relative_path, issues)
+        if not text:
+            continue
+
+        parser = ProfileAreasParser()
+        parser.feed(text)
+        if not parser.grids:
+            issues.append(
+                f"{relative_path}: research-area section must render the compact 'profile-areas-grid' container"
+            )
+            continue
+        if not parser.cards:
+            issues.append(f"{relative_path}: 'profile-areas-grid' rendered without any 'profile-areas-card'")
+        if parser.catalogue_tags:
+            found = ", ".join(f"<{tag}" for tag in sorted(set(parser.catalogue_tags)))
+            issues.append(
+                f"{relative_path}: compact research-area cards must not render catalogue markup ({found})"
+            )
+        if parser.links > parser.cards:
+            issues.append(
+                f"{relative_path}: compact research-area cards expose {parser.links} links for {parser.cards} cards"
+            )
+
+
+def validate_knowledge_area_catalogue(root: Path, issues: list[str]) -> None:
+    for relative_path in KNOWLEDGE_AREA_PAGES:
+        text = read_text(root, relative_path, issues)
+        if not text:
+            continue
+        if "profile-areas-grid" in text:
+            issues.append(f"{relative_path}: catalogue must not use the contextual 'profile-areas-grid' variant")
+        require_contains(text, CATALOGUE_CARD_CLASS, relative_path, issues)
 
 
 def validate_structural_alternates(root: Path, issues: list[str]) -> None:
@@ -206,6 +352,8 @@ def main(argv: list[str]) -> int:
     validate_researcher_cards(root, issues)
     validate_aria_controls(root, issues)
     validate_breadcrumbs(root, issues)
+    validate_profile_area_cards(root, issues)
+    validate_knowledge_area_catalogue(root, issues)
     validate_structural_alternates(root, issues)
 
     if issues:
