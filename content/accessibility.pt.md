@@ -48,15 +48,14 @@ Medido sobre um build local do site atual, nos dois idiomas:
 - Teclado: 24 ciclos de abrir/fechar dos submenus do cabeçalho (6 menus x 2 idiomas x 2 temas) se comportaram corretamente, e uma varredura completa com Tab em quatro páginas por idioma não encontrou **nenhuma armadilha de teclado**.
 - Mapa de competências: 53 nós, todos alcançáveis com Tab, todos ativáveis com Enter e Espaço, com anel de foco visível nos dois temas; os botões de zoom e de filtro têm todos 34 px de altura.
 - Filtros de Oportunidades, Publicações e Defesas: todos os controles alcançáveis por teclado, todos nomeados por um `<label>` real, todos com 37 px de altura.
-- Refluxo (SC 1.4.10): com **zoom de 200%** (viewport de 640 px), nenhuma das 13 rotas testadas rola na horizontal.
-- Tamanho de área clicável (WCAG 2.2, mínimo de 24x24 px): todo `<button>` e todo `<select>` tem ao menos 34 px de altura. Dois controles ficam abaixo de 24 px e conformam apenas pela exceção de espaçamento prevista no critério: o link de busca do cabeçalho (**20x40 px**) e 21 dos 53 nós do mapa (**20x20 px**).
+- Refluxo (SC 1.4.10): com **zoom de 200% e de 400%** (viewports de 640 px e 320 px), nenhuma das 24 rotas testadas rola na horizontal.
+- Tamanho de área clicável (SC 2.5.8, mínimo de 24x24 px): **nenhuma falha** em oito páginas auditadas, aplicando a exceção inline prevista no critério — links de orientador vêm dentro de frase ("Orientador(a): Nome"), acompanhados de texto que não é alvo. Fora da exceção, todo alvo mede ao menos 24 px: o link de busca do cabeçalho agora renderiza 40x40 px e o título dos cards de defesa, 24 px de altura. Os 21 nós de 20x20 px do mapa seguem conformes pela exceção de espaçamento.
 
 ## Lacunas conhecidas
 
 São reais, medidas, e estão na fila de correção. Preferimos publicá-las a dar a entender que não existem:
 
-- **Refluxo a 400% de zoom.** Em um viewport de 320 px, a página inicial, Publicações e os perfis de pesquisador ainda rolam na horizontal por 13 a 34 px. A 200% o site está limpo.
-- **Listagens densas e área clicável.** Na listagem de Defesas, os links de texto de cards consecutivos ficam mais próximos entre si do que os 24 px pedidos pela WCAG 2.2.
+- **O mapa de competências depende de um CDN para a versão visual.** O D3 vem de `cdn.jsdelivr.net`; se o CDN falhar, o grafo não é desenhado. Não é uma falha WCAG — a lista de links equivalente é renderizada no servidor e continua disponível —, mas a experiência visual degrada.
 - **A verificação automatizada de contraste no CI roda só em modo claro.** A varredura em modo escuro descrita acima é um procedimento manual; nada impede que uma regressão de contraste no tema escuro passe pelo build.
 - **Fundos em gradiente escapam da verificação automática.** Quando o fundo é um gradiente, o axe classifica o contraste como "indeterminado" em vez de violação — foi assim que os rótulos do rodapé ficaram em 1,6:1 sem que o CI reclamasse. Trechos com gradiente precisam de conferência manual.
 - **Nenhum teste com leitor de tela está registrado.** Nada nesta página se apoia em uma sessão de NVDA, JAWS ou VoiceOver, e não afirmamos o contrário. Nenhuma auditoria externa foi contratada.

@@ -47,15 +47,14 @@ Measured on a local build of the current site, in both languages:
 - Keyboard: 24 open/close cycles of the header dropdowns (6 menus x 2 languages x 2 themes) all behaved correctly, and a full Tab sweep of four pages per language found **no keyboard trap**.
 - Competency map: 53 nodes, all reachable with Tab, all activatable with Enter and Space, with a visible focus ring in both themes; the zoom and filter buttons are all 34 px tall.
 - Filters on Opportunities, Publications and Defences: every control reachable by keyboard, every control named by a real `<label>`, all 37 px tall.
-- Reflow (SC 1.4.10): at **200% zoom** (a 640 px viewport), none of the 13 routes tested scrolls sideways.
-- Target size (WCAG 2.2, 24x24 px minimum): every `<button>` and `<select>` measures at least 34 px in height. Two controls are smaller than 24 px and conform only through the standard spacing exception: the header search link (**20x40 px**) and 21 of the 53 map nodes (**20x20 px**).
+- Reflow (SC 1.4.10): at **200% and 400% zoom** (640 px and 320 px viewports), none of the 24 routes tested scrolls sideways.
+- Target size (SC 2.5.8, 24x24 px minimum): **no failures** across eight audited pages, applying the criterion's inline exception — advisor links sit inside a sentence ("Advisor: Name"), next to non-target text. Outside the exception every target is at least 24 px: the header search link now renders 40x40 px and the defence card title 24 px tall. The 21 map nodes at 20x20 px still conform through the spacing exception.
 
 ## Known gaps
 
 These are real, measured, and queued for correction. We prefer to publish them rather than imply they do not exist:
 
-- **Reflow at 400% zoom.** In a 320 px viewport the home page, Publications and the researcher profiles still scroll sideways by 13 to 34 px. At 200% the site is clean.
-- **Dense listings and target size.** On the Defences listing, the text links in consecutive cards sit closer together than the 24 px that WCAG 2.2 asks for.
+- **The competency map depends on a CDN for its visual form.** D3 is loaded from `cdn.jsdelivr.net`; if the CDN fails, the graph is not drawn. This is not a WCAG failure — the equivalent list of links is server-rendered and stays available — but the visual experience degrades.
 - **Automated contrast checking in CI runs in light mode only.** The dark-mode scan described above is a manual procedure; nothing stops a dark-theme contrast regression from passing the build.
 - **Gradient backgrounds escape automated checking.** When the background is a gradient, axe reports contrast as "incomplete" rather than as a violation — that is how the footer labels sat at 1.6:1 without CI complaining. Areas with gradients need a manual pass.
 - **No screen-reader testing has been recorded.** Nothing on this page is based on a NVDA, JAWS or VoiceOver session, and we do not claim otherwise. No external audit has been commissioned.

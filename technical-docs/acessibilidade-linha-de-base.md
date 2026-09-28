@@ -137,13 +137,27 @@ violações para 0**.
 | `layouts/shortcodes/{prev,next}.html`, `layouts/partials/footer.html` | links prev/next em primary-500 sobre primary-50: 1,87:1 | 1.4.3 | primary-700 e superfície escura para o cartão |
 | `layouts/defesas/list.html` | `<select>` sem limite de largura crescia até a maior opção e estourava já em 200% de zoom | 1.4.10 | `w-full max-w-full min-w-0 truncate` no select e `min-w-0` no label |
 
+### Corrigidos em 2026-09-28
+
+| Onde | Problema | Critério | O que foi feito |
+| --- | --- | --- | --- |
+| `layouts/people/single.html` | o `<aside>` da barra lateral é item de grid sem `min-w-0`, então herda `min-width: auto` e o seu conteúdo mínimo alargava a trilha acima da viewport | 1.4.10 | `min-w-0` no aside e `[&>*]:min-w-0` no grid do hero |
+| `layouts/index.html` | a grade de áreas em 2 colunas dá 138 px por célula; com o ícone de 36 px sobram ~64 px e "Transformation" precisa de ~105 px | 1.4.10 | uma coluna abaixo de 22rem (`grid-cols-1 min-[22rem]:grid-cols-2`) |
+| `layouts/_default/publications.html`, `layouts/shortcodes/publications.html` | a linha de veículo traz tokens sem espaço, como `(ISPA/BDCloud/SocialCom/SustainCom)`, que não quebram em 320 px | 1.4.10 | `[overflow-wrap:anywhere]` no parágrafo |
+| `layouts/partials/nav.html` | link de busca declarado `h-10 w-10` renderizava 20x40 px porque o flex o espremia | 2.5.8 | `shrink-0` |
+| `layouts/partials/defesa-card.html` | o `<a>` do título é inline e mede a altura da fonte (18 px) | 2.5.8 | `block min-h-6` — ocupa a linha inteira, sem mover o layout |
+
+Depois disso: **0 rolagens horizontais** em 24 rotas a 320, 375 e 640 px, e
+**0 falhas de SC 2.5.8** em oito páginas com a exceção inline aplicada.
+
 ### Ainda abertos
 
-| Onde | Problema | Critério | Correção sugerida |
+| Onde | Problema | Critério | Observação |
 | --- | --- | --- | --- |
-| `layouts/index.html`, `layouts/_default/publications.html`, `layouts/people/single.html` | a 400% de zoom (viewport de 320 px) as páginas rolam na horizontal por 13 a 34 px. A 200% o site está limpo | 1.4.10 | rastrear o elemento com largura mínima em cada família; o carrossel da capa e `#profile-content` são os suspeitos |
-| `layouts/defesas/list.html` e `layouts/partials/defesa-card.html` | 121 (EN) / 152 (PT) links de texto com menos de 24 px e centros a 4–22 px | 2.5.8 | aumentar a área ou o espaçamento entre links consecutivos do card |
-| `layouts/_default/map.html` | D3 7.9.0 vem de `cdn.jsdelivr.net`; se o CDN cair, o mapa visual não renderiza | — | não é falha WCAG: a lista semântica de links continua servida pelo HTML |
+| CI | a verificação automatizada de contraste roda só em modo claro | 1.4.3 | a varredura em modo escuro é manual; uma regressão no tema escuro passa pelo build |
+| qualquer fundo em gradiente | o axe classifica contraste sobre gradiente como *incomplete*, não como violação | 1.4.3 | foi assim que os rótulos do rodapé ficaram em 1,6:1 sem o CI reclamar |
+| `layouts/_default/map.html` | D3 7.9.0 vem de `cdn.jsdelivr.net`; se o CDN cair o grafo não é desenhado | — | não é falha WCAG: a lista semântica de links é renderizada no servidor |
+| processo | nenhuma sessão de leitor de tela registrada | — | nada aqui se apoia em NVDA, JAWS ou VoiceOver |
 
 ## 5. Não coberto — e assumido como não coberto
 
