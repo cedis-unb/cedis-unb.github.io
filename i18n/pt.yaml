@@ -298,6 +298,8 @@ ui_see_sections: "Ver seções"
 ui_spaces_and_facilities_organized_to: "Espacos, ambientes e recursos organizados
   para apoiar atividades do CEDIS."
 ui_taxonomy: "Taxonomia"
+ui_menu_toggle: "Abrir e fechar o menu principal"
+ui_theme_toggle: "Alternar modo claro/escuro"
 ui_term: "Termo"
 ui_themes: "Temas"
 ui_timeline: "Linha do tempo"

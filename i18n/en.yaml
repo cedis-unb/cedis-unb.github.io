@@ -301,6 +301,8 @@ ui_see_sections: "See sections"
 ui_spaces_and_facilities_organized_to: "Spaces and facilities organized to support
   CEDIS activities."
 ui_taxonomy: "Taxonomy"
+ui_menu_toggle: "Open and close the main menu"
+ui_theme_toggle: "Toggle light/dark mode"
 ui_term: "Term"
 ui_themes: "Themes"
 ui_timeline: "Timeline"

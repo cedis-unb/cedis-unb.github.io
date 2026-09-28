@@ -177,8 +177,10 @@
 .prose {
   --tw-prose-body:            var(--color-neutral-700);
   --tw-prose-headings:        var(--color-primary-900);
-  --tw-prose-lead:            var(--color-primary-600);
-  --tw-prose-links:           var(--color-primary);
+  /* primary (#51C5CF) rende 2,05:1 sobre branco e primary-600 3,58:1;
+     primary-700 é o primeiro tom da marca que passa AA (5,79:1). */
+  --tw-prose-lead:            var(--color-primary-700);
+  --tw-prose-links:           var(--color-primary-700);
   --tw-prose-bold:            var(--color-primary-800);
   --tw-prose-counters:        var(--color-secondary-600);
   --tw-prose-bullets:         var(--color-accent-600);
@@ -205,6 +207,32 @@
   --tw-prose-invert-code:     var(--color-accent-300);
   --tw-prose-invert-pre-code: var(--color-accent-500);
   --tw-prose-invert-pre-bg:   var(--color-neutral-900);
+}
+
+/* O plugin aplica o mapeamento invertido por `dark:prose-invert`, cuja
+   regra tem a MESMA especificidade que o bloco `.prose` acima (o
+   :where() do variant não pontua) e vem ANTES dele no arquivo. Resultado:
+   o bloco acima vencia e o modo escuro seguia com a paleta clara —
+   títulos #07243C sobre #1E2939, 1,07:1. Reafirmar o mapeamento com
+   especificidade maior devolve a precedência ao tema escuro. */
+.dark .prose.prose-invert,
+.dark .prose.dark\:prose-invert {
+  --tw-prose-body:          var(--tw-prose-invert-body);
+  --tw-prose-headings:      var(--tw-prose-invert-headings);
+  --tw-prose-lead:          var(--tw-prose-invert-lead);
+  --tw-prose-links:         var(--tw-prose-invert-links);
+  --tw-prose-bold:          var(--tw-prose-invert-bold);
+  --tw-prose-counters:      var(--tw-prose-invert-counters);
+  --tw-prose-bullets:       var(--tw-prose-invert-bullets);
+  --tw-prose-hr:            var(--tw-prose-invert-hr);
+  --tw-prose-quotes:        var(--tw-prose-invert-quotes);
+  --tw-prose-quote-borders: var(--tw-prose-invert-quote-borders);
+  --tw-prose-captions:      var(--tw-prose-invert-captions);
+  --tw-prose-code:          var(--tw-prose-invert-code);
+  --tw-prose-pre-code:      var(--tw-prose-invert-pre-code);
+  --tw-prose-pre-bg:        var(--tw-prose-invert-pre-bg);
+  --tw-prose-th-borders:    var(--tw-prose-invert-th-borders);
+  --tw-prose-td-borders:    var(--tw-prose-invert-td-borders);
 }
 
 /* -----------------------------------------------------------

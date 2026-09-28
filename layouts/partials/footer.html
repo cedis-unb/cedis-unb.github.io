@@ -4,17 +4,17 @@
 {{ $js := resources.Get "js/darkmode.js" | js.Build }}
 <script src="{{ $js.RelPermalink }}" defer></script>
 {{ if and .Page.Params.nav_next (ne .Page.Section "people") }}
-<div class="mx-auto bg-primary-50 border border-primary-200 rounded-lg p-4 my-8 max-w-4xl w-full">
+<div class="mx-auto bg-primary-50 border border-primary-200 rounded-lg p-4 my-8 max-w-4xl w-full dark:border-primary-400/25 dark:bg-primary-500/10">
     <div class="flex justify-between items-center">
         {{ if .Page.PrevInSection }}
-        <a href="{{ .Page.PrevInSection.RelPermalink }}" class="prev-card-link text-primary-500 hover:text-primary-700 transition duration-150 ease-in-out">
+        <a href="{{ .Page.PrevInSection.RelPermalink }}" class="prev-card-link text-primary-700 hover:text-primary-800 dark:text-primary-200 dark:hover:text-primary-100 transition duration-150 ease-in-out">
             ← {{ delimit (first 4 (split .Page.PrevInSection.Title " ")) " " }}
         </a>
         {{ else }}
         <span></span> <!-- Mantém o layout alinhado corretamente quando não há seção anterior -->
         {{ end }}
         {{ if .Page.NextInSection }}
-        <a href="{{ .Page.NextInSection.RelPermalink }}" class="next-card-link text-primary-500 hover:text-primary-700 transition duration-150 ease-in-out">
+        <a href="{{ .Page.NextInSection.RelPermalink }}" class="next-card-link text-primary-700 hover:text-primary-800 dark:text-primary-200 dark:hover:text-primary-100 transition duration-150 ease-in-out">
             {{ delimit (first 4 (split .Page.NextInSection.Title " ")) " " }} →
         </a>
         {{ else }}

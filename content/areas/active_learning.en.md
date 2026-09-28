@@ -49,11 +49,13 @@ An academic in the field of Active Learning Methodologies and a faculty member a
 {{< filterPeople caput="#### " caputKey="volunteer" categories="volunteer" advisors="" tags="active_learning,education" notags="inactive">}}
 
 <div id="previous-collaborators" x-data="{ showPrevious: false }">
-    <h2 id="former-collaborators-title" @click="showPrevious = !showPrevious" class="text-xl font-bold mb-2 cursor-pointer flex items-center text-primary-900">
+    <h2 class="text-xl font-bold mb-2">
+      <button type="button" id="former-collaborators-title" @click="showPrevious = !showPrevious" :aria-expanded="showPrevious" aria-controls="former-collaborators-panel" class="inline-flex items-center gap-2 rounded-lg text-left text-primary-900 transition-colors hover:text-primary-700 focus:outline-hidden focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 dark:text-primary-100 dark:hover:text-primary-200 dark:focus-visible:ring-primary-300 dark:focus-visible:ring-offset-gray-900">
       {{< i18n "area_previous_researchers" >}}
-      <svg :class="{'rotate-0': !showPrevious, 'rotate-180': showPrevious}" class="ml-2 h-5 w-5 transform transition-transform duration-200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#51C5CF"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
+      <svg aria-hidden="true" :class="{'rotate-0': !showPrevious, 'rotate-180': showPrevious}" class="ml-2 h-5 w-5 transform transition-transform duration-200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#51C5CF"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
+      </button>
     </h2>
-    <div x-show="showPrevious" x-cloak>
+    <div id="former-collaborators-panel" x-show="showPrevious" x-cloak>
     {{< publications caput="#### " caputKey="phd_candidate"  year="" types="phd" advisors="" notypes="" tags="active_learning,education" notags="active" >}}
     {{< publications caput="#### " caputKey="master_student" year="" types="dissertation" advisors="" notypes="" tags="active_learning,education" notags="active" >}}
     {{< publications caput="#### " caputKey="specialization" year="" types="specialization" advisors="" notypes="" tags="active_learning,education" notags="active" >}}

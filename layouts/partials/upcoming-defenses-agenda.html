@@ -155,6 +155,10 @@
           {{ end }}
           <div class="inline-flex rounded-full border border-slate-300/70 bg-slate-50 p-1 dark:border-white/10 dark:bg-slate-950/40" role="tablist" aria-label="{{ i18n "ui_defense_agenda_view_mode" }}">
             <button type="button"
+                    role="tab"
+                    id="defense-agenda-tab-calendar"
+                    :tabindex="view === 'calendar' ? 0 : -1"
+                    :aria-controls="'defense-agenda-panel-calendar'"
                     @click="view = 'calendar'"
                     :aria-selected="view === 'calendar' ? 'true' : 'false'"
                     :class="view === 'calendar' ? 'bg-white text-primary-700 shadow-xs dark:bg-white/10 dark:text-primary-100' : 'text-slate-600 dark:text-slate-400'"
@@ -162,6 +166,10 @@
               {{ i18n "ui_defense_agenda_calendar" }}
             </button>
             <button type="button"
+                    role="tab"
+                    id="defense-agenda-tab-list"
+                    :tabindex="view === 'list' ? 0 : -1"
+                    :aria-controls="'defense-agenda-panel-list'"
                     @click="view = 'list'"
                     :aria-selected="view === 'list' ? 'true' : 'false'"
                     :class="view === 'list' ? 'bg-white text-primary-700 shadow-xs dark:bg-white/10 dark:text-primary-100' : 'text-slate-600 dark:text-slate-400'"
@@ -176,16 +184,16 @@
         </div>
       </div>
 
-      <div x-show="view === 'calendar'" x-cloak class="p-4 sm:p-5">
+      <div id="defense-agenda-panel-calendar" role="tabpanel" aria-labelledby="defense-agenda-tab-calendar" x-show="view === 'calendar'" x-cloak class="p-4 sm:p-5">
         {{ if gt (len $dayKeys) 0 }}
         {{/* Controles de paginação + indicador de janela.
              Só aparecem quando há mais dias do que cabem na janela atual. */}}
         <div x-show="totalDays > daysPerPage" class="mb-3 flex flex-wrap items-center justify-between gap-2">
           <div class="text-xs font-semibold text-slate-600 dark:text-slate-400">
             <span x-text="`${pageStart + 1}–${Math.min(pageStart + daysPerPage, totalDays)}`"></span>
-            <span class="text-slate-400 dark:text-slate-500"> {{ cond $isPt "de" "of" }} </span>
+            <span class="text-slate-400 dark:text-slate-400"> {{ cond $isPt "de" "of" }} </span>
             <span x-text="totalDays"></span>
-            <span class="text-slate-400 dark:text-slate-500"> {{ cond $isPt "dias" "days" }}</span>
+            <span class="text-slate-400 dark:text-slate-400"> {{ cond $isPt "dias" "days" }}</span>
           </div>
           <div class="flex items-center gap-1">
             <button type="button" @click="prev()" :disabled="!canPrev"
@@ -222,7 +230,7 @@
               <div x-show="{{ $dayIdx }} >= pageStart && {{ $dayIdx }} < pageStart + daysPerPage"
                    class="rounded-xl border border-slate-200 bg-slate-50/80 p-3 dark:border-white/10 dark:bg-slate-950/30">
                 <div class="border-b border-slate-200 pb-2 dark:border-white/10">
-                  <div class="text-[0.65rem] font-black uppercase tracking-[0.16em] text-slate-500 dark:text-slate-500">{{ $dayName }}</div>
+                  <div class="text-[0.65rem] font-black uppercase tracking-[0.16em] text-slate-500 dark:text-slate-400">{{ $dayName }}</div>
                   <div class="mt-1 text-sm font-black text-slate-950 dark:text-white">
                     {{ if $isPt }}{{ $firstEvent.date.Format "02/01" }}{{ else }}{{ $firstEvent.date.Format "Jan 02" }}{{ end }}
                   </div>
@@ -333,12 +341,12 @@
         {{ end }}
       </div>
 
-      <div x-show="view === 'list'" x-cloak class="p-4 sm:p-5">
+      <div id="defense-agenda-panel-list" role="tabpanel" aria-labelledby="defense-agenda-tab-list" x-show="view === 'list'" x-cloak class="p-4 sm:p-5">
         <ol class="grid gap-3 md:grid-cols-2">
           {{ range first 30 $events }}
           <li id="agenda-defense-details-{{ .id }}">
             <a href="{{ .url }}" class="group flex h-full flex-col rounded-xl border border-slate-200 bg-white p-4 transition-colors hover:border-primary-300 hover:bg-primary-50/40 dark:border-white/10 dark:bg-slate-950/30 dark:hover:border-primary-400/40 dark:hover:bg-primary-500/10">
-              <div class="flex flex-wrap items-center gap-2 text-[0.68rem] font-semibold uppercase tracking-[0.14em] text-slate-500 dark:text-slate-500">
+              <div class="flex flex-wrap items-center gap-2 text-[0.68rem] font-semibold uppercase tracking-[0.14em] text-slate-500 dark:text-slate-400">
                 <span class="rounded-full bg-primary-100 px-2.5 py-1 text-primary-800 dark:bg-primary-500/20 dark:text-primary-100">
                   {{ if $isPt }}{{ .date.Format "02/01" }}{{ else }}{{ .date.Format "Jan 02" }}{{ end }}{{ if .timeRange }} · {{ .timeRange }}{{ end }}
                 </span>
