@@ -21,11 +21,11 @@ Em serverless, o custo é função direta do tempo. Uma função que roda em 200
 
 O trabalho encara o problema com instrumento: em vez de estimar tempo por analogia, propõe uma abordagem preditiva para funções Lambda que combine características do código com dados observados em execuções controladas. Prever com precisão importa por duas razões práticas: quando o custo é bem estimado, a arquitetura ganha grau de liberdade para escolher entre opções serverless e opções tradicionais; quando é mal estimado, o time descobre o preço só depois de encerrado o ciclo de faturamento.
 
-Ao situar {{< link-interno "/areas/HPC/" "computação de alto desempenho" >}} sob a lente do serverless, o TCC contribui para uma agenda de pesquisa que continua ativa no CEDIS — culminando, em 2025, na dissertação de mestrado sobre Nimbus, ambiente serverless para correção automática de códigos.
+Ao situar {{< link-interno "/areas/hpc/" "computação de alto desempenho" >}} sob a lente do serverless, o TCC contribui para uma agenda de pesquisa que continua ativa no CEDIS — culminando, em 2025, na dissertação de mestrado sobre Nimbus, ambiente serverless para correção automática de códigos.
 
 O TCC pode ser lido na [Biblioteca Digital da Produção Intelectual Discente da UnB](https://www.bdm.unb.br/handle/10483/39151).
 
 ---
 
 Sobre o CEDIS:
-O Centro de Estudos, Desenvolvimento e Inovação de Software (CEDIS), vinculado à Universidade de Brasília, pesquisa e desenvolve soluções inovadoras em software, com atuação em {{< link-interno "/areas/HPC/" "computação de alto desempenho" >}}.
+O Centro de Estudos, Desenvolvimento e Inovação de Software (CEDIS), vinculado à Universidade de Brasília, pesquisa e desenvolve soluções inovadoras em software, com atuação em {{< link-interno "/areas/hpc/" "computação de alto desempenho" >}}.

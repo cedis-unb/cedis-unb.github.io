@@ -21,11 +21,11 @@ In serverless, cost is a direct function of time. A function that runs in 200ms 
 
 The work approaches the problem with instrumentation: rather than estimating time by analogy, it proposes a predictive approach for Lambda functions that combines code features with data observed in controlled runs. Predicting accurately matters for two practical reasons: when cost is well estimated, architecture gains the freedom to choose between serverless and traditional options; when it is misestimated, the team learns the price only after the billing cycle closes.
 
-By placing {{< link-interno "/areas/HPC/" "high-performance computing" >}} under the serverless lens, the thesis contributes to a research agenda that remains active at CEDIS — culminating, in 2025, in a master’s dissertation on Nimbus, a serverless environment for automatic code grading.
+By placing {{< link-interno "/areas/hpc/" "high-performance computing" >}} under the serverless lens, the thesis contributes to a research agenda that remains active at CEDIS — culminating, in 2025, in a master’s dissertation on Nimbus, a serverless environment for automatic code grading.
 
 The full text — written in Portuguese — is available at the [UnB Undergraduate Theses Digital Library](https://www.bdm.unb.br/handle/10483/39151).
 
 ---
 
 About CEDIS:
-The Center for Studies, Development, and Innovation in Software (CEDIS), linked to the University of Brasília, researches and develops innovative software solutions, with presence in {{< link-interno "/areas/HPC/" "high-performance computing" >}}.
+The Center for Studies, Development, and Innovation in Software (CEDIS), linked to the University of Brasília, researches and develops innovative software solutions, with presence in {{< link-interno "/areas/hpc/" "high-performance computing" >}}.
