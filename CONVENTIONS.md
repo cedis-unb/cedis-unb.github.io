@@ -1438,9 +1438,9 @@ existem para evitar reintrodução do débito que motivou o plano.
 
 ### 11.1 Organização de CSS
 
-- `assets/css/main.css` — entrada Tailwind (`@tailwind base/components/utilities`), não deve receber CSS específico de página.
-- `assets/css/style.css` — **compilado** pelo `tailwindcss` a partir de `main.css`. Não editar à mão.
-- `assets/css/overrides.css` — reservado a overrides globais contra o tema base e ao stylesheet de impressão (`@media print`). Não colocar CSS de página específica aqui.
+- `assets/css/main.css` — entrada única do Tailwind 4 (`@import "tailwindcss" source(none)`), compilada por `css.TailwindCSS` no `head.html`. Concentra os tokens `@theme` e as variáveis de `.prose`; não deve receber CSS específico de página.
+- **Fontes de classe do Tailwind:** `hugo_stats.json` (gerado por `[build.buildStats]`) e `layouts/`, declaradas com `@source`. A detecção automática fica **desligada** (`source(none)`) de propósito: ela varre todo arquivo não ignorado pelo git, o que inclui a saída publicada em `docs/` e os `.md` de planejamento — com isso uma classe removida do template nunca sumia do CSS. Ao adicionar uma fonte nova de markup fora de `layouts/`, declare um `@source` para ela.
+- `assets/css/overrides.css` — reservado a overrides globais contra o tema base e ao stylesheet de impressão (`@media print`). Não colocar CSS de página específica aqui. **Atenção:** o bloco de impressão seleciona `section[class*="bg-gray-950"]`; renomear essa classe nos heros quebra o print silenciosamente.
 - `assets/css/profile.css` — regras exclusivas de `#profile-content` (perfil de pesquisador). Novo CSS de perfil vai aqui, não em `overrides.css`.
 - **CSS de nova página**: criar `assets/css/<page>.css` e carregar no `layouts/partials/head.html` seguindo o mesmo padrão de `profile.css`.
 
@@ -1452,7 +1452,7 @@ Regras invioláveis:
 
 ### 11.2 Paleta de cores
 
-Fonte única: `tailwind.config.js`.
+Fonte única: o bloco `@theme` em `assets/css/main.css` (o `tailwind.config.js` foi removido na migração CSS-first de 2026-07-27).
 
 - **Uso em Tailwind (classes utilitárias):** sempre por token — `bg-accent-600`, `text-primary-800`, `border-neutral-200`, etc.
 - **Uso em CSS custom (files em `assets/css/`):** usar custom property `var(--brand-accent)` / `var(--brand-primary)` (definidas em `profile.css`) ou preferir `@apply` com o token Tailwind.
@@ -1553,3 +1553,135 @@ Como validar após alterações em massa: rodar `hugo --minify` e comparar `docs
 ### 11.7 Componentes de card
 
 - Cards de perfil (`profile-project-card`, `researcher-highlights__*`, `featured-publications`) são gerados hoje via `printf` em `layouts/people/single.html`. Migração para partial parametrizável em `layouts/partials/card.html` está prevista mas ainda não concluída — não criar novos padrões de card sem alinhamento.
+
+## 12. Contrato estrutural das páginas
+
+Consolidado em 2026-09-27, ao integrar a `wave2-structural-standardization` em
+`main`. A regra é **primitivas comuns + variantes de família**: nunca um
+componente universal que substitua semanticamente todas as páginas. Não existe
+`hero.html`, `page.html` nem `universal-card.html`, e não devem existir.
+
+### 12.1 As quatro primitivas
+
+Ficam em `layouts/partials/ui/` e concentram **apenas** a estrutura repetida.
+Classes específicas continuam no template que as usa, passadas como parâmetro.
+
+| Partial | Entrada | Saída |
+| --- | --- | --- |
+| `ui/page-heading.html` | `page`, `variant` (`dark`/`light`), `align`, `showBreadcrumb`, `eyebrow`, `title`, `description` e classes opcionais | breadcrumb opcional + eyebrow opcional + `<h1>` + descrição opcional |
+| `ui/section-heading.html` | `eyebrow`, `title`, `description`, `actionHtml` e classes opcionais | `<h2>` com eyebrow, descrição e ação lateral opcionais |
+| `ui/stat-card.html` | `tag` (`div`/`li`/`article`), `class`, `value`, `label`, `subtext` e classes opcionais | valor + rótulo + subtexto. `0` é valor válido |
+| `ui/empty-state.html` | `variant`, `title`, `description`, `ctaLabel`, `ctaUrl` e classes opcionais | título + texto + CTA opcional |
+
+**Quando usar**
+
+- `page-heading` — quando a página tem breadcrumb + eyebrow + `<h1>` + resumo na
+  ordem padrão. Imagem, métricas, CTAs e colunas continuam no template.
+- `section-heading` — quando o padrão é de fato equivalente: eyebrow, `<h2>`,
+  descrição e ação lateral opcional.
+- `stat-card` — para a métrica simples valor/rótulo/subtexto.
+- `empty-state` — onde há equivalência real de "não há nada aqui ainda".
+  Oportunidades e a agenda de defesas são os consumidores naturais.
+
+**Quando NÃO usar**
+
+- Não migrar um heading só para aumentar a contagem de reutilização. Se a
+  semântica é outra, o heading fica onde está.
+- Não forçar indicador composto (barra, série, comparação) dentro de
+  `stat-card`; ele é deliberadamente burro.
+- Não usar `page-heading` quando a família precisa de composição própria acima
+  do `<h1>` — perfil de pesquisador e notícia são exatamente esses casos.
+- Se o uso exige passar todas as classes como parâmetro, a primitiva não está
+  ajudando: deixe o markup no template.
+
+### 12.2 Famílias e exceções deliberadas
+
+| Família | Templates | Situação |
+| --- | --- | --- |
+| Institucional | `_default/{history,infrastructure,partners,join,indicators,institutional,alumni,quiz,map}.html` | usam as primitivas |
+| Catálogos | `_default/publications.html`, `defesas/list.html`, `opportunities/list.html`, `projects/list.html`, `research-lines/list.html`, `partials/products-catalog.html` | usam as primitivas; filtros e agrupamentos são próprios |
+| Entidades | `areas/single.html`, `products/single.html`, `projects/single.html`, `research-lines/single.html` | usam `page-heading`; metadados e barras laterais são próprios |
+| Pesquisador | `people/single.html`, `people/derived.html` | **exceção deliberada** — composição própria; não deve parecer página de projeto |
+| Notícia | `posts/single.html`, `partials/news-term.html` | **exceção deliberada** — família editorial própria |
+| Fallback | `_default/{single,list}.html` | breadcrumb e cabeçalho conforme o contexto |
+
+`layouts/publications/list.html` **não renderiza nenhuma página** — quem atende
+`/publications/` e as subseções é `_default/publications.html`. Verifique qual
+template está vivo antes de editar: injete um marcador (`<i data-tpl="X">`),
+rode `hugo` e procure o marcador na saída.
+
+### 12.3 Breadcrumb
+
+Sempre por `partials/breadcrumbs.html`, que também emite o JSON-LD equivalente à
+trilha visível — os dois nunca devem divergir (`validate_rendered.py` compara).
+
+- **Tem breadcrumb:** toda página com hierarquia real, incluindo listas de seção,
+  páginas de taxonomia, perfis derivados e o arquivo de publicações.
+- **Não tem:** homepage e 404. Não há caminho hierárquico útil.
+- **Variante:** `dark` sobre hero escuro, `light` sobre hero claro. Errar isso
+  deixa a trilha invisível sem quebrar teste nenhum — foi o que aconteceu em
+  history, join, partners, map, alumni e quiz.
+- **Rótulo da seção:** vem de `breadcrumb_<seção>` em `i18n/`. Seção sem
+  `_index.md` recebe do Hugo um título humanizado **em inglês nos dois idiomas**;
+  por isso toda seção navegável deve ter `_index.{pt,en}.md`.
+
+### 12.4 Cards de catálogo × cards contextuais
+
+Distinção semântica, não cosmética.
+
+- **Catálogo** (`/categories/knowledge_areas/`): card completo — imagem, título,
+  resumo e CTA. É a página cujo assunto É a área.
+- **Contextual** (áreas dentro de um perfil): variante `profile-areas` do
+  shortcode `postsByCategoriesTags`. Sem imagem, sem resumo, sem CTA separado; o
+  bloco inteiro é navegável, com foco visível, modo escuro e o nome completo da
+  área (`overflow-wrap: anywhere`). No perfil, área é informação de contexto.
+
+O grid usa **container queries** sobre `#profile-content`, não media queries: 1
+coluna até 34rem, 2 a partir de 34rem, 3 a partir de 48rem. Nunca 4. As classes
+são `profile-areas-grid` e `profile-areas-card`; **não** voltar a depender de IDs
+traduzidos (`áreas-de-pesquisa` / `research-areas`), que quebram por idioma.
+
+`validate_rendered.py` verifica os dois lados: o perfil precisa do grid compacto
+sem markup de catálogo, e o catálogo não pode usar o grid compacto.
+
+### 12.5 Tokens de superfície
+
+Em `@theme` (`assets/css/main.css`): `--radius-panel` (1.75rem), `--radius-card`
+(1.25rem), `--radius-inset` (1.1rem), `--shadow-panel`, `--shadow-card`,
+`--shadow-card-dark` e `--shadow-panel-on-dark`.
+
+- Promova um arbitrary value a token quando o **mesmo valor** se repetir com o
+  **mesmo papel semântico**. Valor único continua arbitrary.
+- **Nunca** altere um valor para encaixá-lo num utility existente.
+- `shadow-card` anda sempre com `dark:shadow-card-dark`. `shadow-panel-on-dark`
+  **não** é variante `dark:` — é sombra sem prefixo para tiles dentro de hero
+  permanentemente escuro.
+
+### 12.6 `gray-*` × `slate-*`
+
+Não fazer substituição global. O site tem **duas famílias neutras deliberadas**:
+14 arquivos com superfície quente (`bg-stone-50`) usam `gray`, 15 com superfície
+fria (`bg-slate-50`) usam `slate`, sem interseção. Trocar dentro de uma família
+põe texto frio sobre superfície quente.
+
+Normalize só o resíduo histórico — arquivo que usa superfície de uma família com
+texto da outra — e só com verificação visual. Preservados de propósito:
+`dark:bg-gray-800` (mesmo token do `<body>`), os `bg-gray-950` dos heros
+(acoplados ao seletor de impressão) e `menu-icon.html` (paleta categórica).
+
+### 12.7 Acessibilidade que o CI não pega
+
+- Contraste sobre **fundo em gradiente**: o axe marca como *incomplete*, não como
+  violação, e o pa11y não reporta. Conferir à mão. Foi assim que os rótulos do
+  rodapé ficaram em 1,6:1.
+- O CI roda contraste **só em modo claro**. Mudança de paleta pede varredura
+  manual em modo escuro.
+- Disclosure (`x-show` + `@click`) precisa de `<button type="button">` com
+  `:aria-expanded` e `aria-controls`. `@click` em heading não é operável por
+  teclado — ver `content/people/all.*.md` como referência.
+- `role="tablist"` exige `role="tab"` nos filhos e `role="tabpanel"` nos painéis.
+- SVG com nós focáveis usa `role="group"`, nunca `role="img"` (que declara a
+  subárvore apresentacional).
+- Texto de interface nunca fixo num idioma: sempre `i18n`, inclusive em
+  `aria-label` e `title`.
+
