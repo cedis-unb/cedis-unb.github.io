@@ -55,6 +55,9 @@
 <main class="bg-[radial-gradient(circle_at_top,rgba(197,39,47,0.16),transparent_28%),linear-gradient(180deg,#f5f5f4_0%,#ffffff_38%,#f5f5f4_100%)] text-gray-950 dark:bg-none dark:bg-gray-900 dark:text-gray-100">
     <section class="border-b border-black/5 {{ if $isShowcaseList }}bg-transparent{{ else }}bg-gray-950{{ end }} text-white">
         <div class="mx-auto max-w-(--breakpoint-xl) px-4 {{ if or $isCompactTerm $isShowcaseList }}py-10 md:py-12{{ else }}py-16 md:py-20{{ end }} md:px-6 lg:px-8">
+            {{/* Showcase renderiza sobre o <main> claro (bg-transparent); as demais
+                 listas ficam sobre bg-gray-950. A trilha segue o tom do fundo. */}}
+            <div class="text-left">{{ partial "breadcrumbs.html" (dict "page" . "variant" (cond $isShowcaseList "light" "dark")) }}</div>
             {{ if or $isCompactTerm $isShowcaseList }}
             <div class="flex justify-center text-center">
                 <div class="{{ if $isShowcaseList }}w-full max-w-3xl rounded-4xl border border-white/10 bg-gray-950 px-5 py-7 shadow-[0_22px_70px_rgba(15,23,42,0.2)] md:px-8 md:py-8{{ else }}max-w-4xl{{ end }}">
