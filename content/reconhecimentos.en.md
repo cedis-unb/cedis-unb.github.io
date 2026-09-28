@@ -7,6 +7,7 @@ description: "Awards, honorable mentions, and institutional recognitions receive
 featured_image: "../assets/images/pages/media-CEDIS.webp"
 eyebrow: "Awards and mentions"
 translationKey: reconhecimentos
+layout: institutional-page
 ---
 
 CEDIS's work is recognized in national and international forums for the quality of its research, for teaching innovation, and for the impact of its products and projects. This page consolidates the main recognitions received by the center and its researchers.

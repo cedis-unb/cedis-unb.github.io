@@ -5,6 +5,8 @@ draft: false
 language: en
 translationKey: contact
 description: Contact information for CEDIS including address, email, and social media links.
+layout: institutional-page
+eyebrow: "Get in touch"
 ---
 
 The Center for Studies, Development, and Innovation in Software (CEDIS) is located at the [Faculty of Sciences and Technologies in Engineering (FCTE)](https://fcte.unb.br/) of the [University of Brasília (UnB)](https://www.unb.br/).

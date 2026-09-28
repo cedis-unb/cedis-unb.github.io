@@ -11,6 +11,7 @@ slug: research-outreach
 aliases:
 - /imprensa/
 - /press/
+layout: institutional-page
 ---
 
 CEDIS maintains reference materials for public communication of research, institutional collaboration, and consultation by people interested in Software Engineering, Artificial Intelligence, gamification, and digital transformation of public services.

@@ -380,6 +380,7 @@ ui_awards_navigate_years: "Ir para o ano"
 ui_awards_empty: "Ainda não há reconhecimentos cadastrados."
 
 # Alumni (A4)
+ui_about_eyebrow: "Quem somos"
 ui_alumni_eyebrow: "Alumni CEDIS"
 ui_alumni_lead: "Pessoas que passaram pelo CEDIS e seguiram em pesquisa, indústria,
   empreendedorismo ou ensino. A rede continua depois da defesa."

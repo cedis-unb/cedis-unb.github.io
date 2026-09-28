@@ -7,6 +7,7 @@ description: "Política de privacidade do site do CEDIS: dados coletados, finali
 featured_image: "../assets/images/pages/media-CEDIS.webp"
 eyebrow: "Privacidade e LGPD"
 translationKey: privacy
+layout: institutional-page
 ---
 
 Esta política descreve como o site institucional do CEDIS trata dados pessoais e sinais de privacidade do navegador. O site é estático, não exige autenticação e não hospeda formulários próprios de coleta de dados pessoais.

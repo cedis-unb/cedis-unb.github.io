@@ -4,10 +4,12 @@ title: "Sobre o CEDIS"
 date: 2013-01-01T00:00:00-03:00
 language: pt
 translationKey: about
+layout: institutional-page
 description: "O CEDIS é o Centro de Estudos, Desenvolvimento e Inovação em Software da Universidade de Brasília. Desde 2013 estudamos como o software é feito — e como as pessoas o fazem."
 summary: "Grupo de pesquisa e desenvolvimento em software da UnB, ativo desde 2013 em engenharia de software, aprendizagem e inteligência artificial."
 featured_image: "../assets/images/pages/our-mission.webp"
 authorimage: ../assets/images/global/author.webp
+eyebrow: "Quem somos"
 ---
 ## O que fazemos
 

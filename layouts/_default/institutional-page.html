@@ -1,0 +1,66 @@
+{{ define "main" }}
+{{/*
+  institutional-page.html — páginas institucionais de texto.
+
+  Consumidores: about, contact, privacy, accessibility, reconhecimentos e
+  divulgação científica / research outreach. Antes todas caíam no fallback
+  _default/single.html, que as vestia com uma faixa bg-primary-600 e um h1
+  branco centralizado — destoando do resto do site e, no caso de /about/, das
+  outras três páginas da própria aba Sobre.
+
+  Composição: hero claro com breadcrumb + eyebrow + h1 + resumo à esquerda e,
+  quando a página tem featured_image, a arte em painel à direita. Sem imagem,
+  o cabeçalho ocupa a largura toda. O corpo vem do markdown, em painel de
+  prosa. Mesmos gradientes, variantes e tokens de history.html e
+  partners.html.
+*/}}
+{{ $intro := .Params.description | default .Params.summary }}
+{{/* Cada pagina declara o seu eyebrow no frontmatter; o recuo existe so
+     para nao quebrar uma pagina nova que esqueca o campo. */}}
+{{ $eyebrow := .Params.eyebrow | default (i18n "ui_about_eyebrow") }}
+
+<main class="bg-[linear-gradient(180deg,#f8fafc_0%,#ffffff_26%,#f5f5f4_100%)] text-gray-950 dark:bg-[linear-gradient(180deg,#0f172a_0%,#111827_58%,#0b1120_100%)] dark:text-gray-100">
+  <section class="border-b border-black/5 bg-[radial-gradient(circle_at_top,rgba(197,39,47,0.12),transparent_34%),linear-gradient(180deg,#ffffff_0%,#f8fafc_100%)] dark:border-white/10 dark:bg-[radial-gradient(circle_at_top,rgba(197,39,47,0.18),transparent_34%),linear-gradient(180deg,#111827_0%,#0f172a_100%)]">
+    <div class="mx-auto max-w-(--breakpoint-xl) px-4 py-12 md:px-6 lg:px-8 lg:py-16">
+      {{ partial "breadcrumbs.html" (dict "page" . "variant" "light") }}
+      {{ $featured := "" }}
+      {{ with .Params.featured_image }}
+        {{ with resources.Get (replace . "../assets/" "") }}{{ $featured = . }}{{ end }}
+      {{ end }}
+      <div class="mt-4 grid gap-8{{ if $featured }} lg:grid-cols-[minmax(0,1.05fr)_minmax(18rem,0.95fr)] lg:items-center{{ end }}">
+        <div class="min-w-0">
+          {{ partial "ui/page-heading.html" (dict
+            "page" .
+            "variant" "light"
+            "showBreadcrumb" false
+            "eyebrow" $eyebrow
+            "description" $intro
+            "titleClass" "mt-5 max-w-3xl text-4xl font-black tracking-tight text-gray-950 dark:text-white md:text-5xl"
+            "descriptionClass" "mt-4 max-w-2xl text-base leading-7 text-gray-600 dark:text-white/75 md:text-lg"
+          ) }}
+        </div>
+
+        {{ with $featured }}
+        {{ $image := .Fit "1200x900 webp q88" }}
+        <div class="min-w-0 overflow-hidden rounded-4xl border border-black/5 bg-white/90 p-4 shadow-panel backdrop-blur dark:border-white/10 dark:bg-white/4 md:p-5">
+          {{/* A arte da capa é vertical; sem limite de altura ela estica o hero
+               para mais de duas dobras. aspect + object-cover a tratam como
+               banner, como nas outras páginas da aba. */}}
+          <img src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}"
+               alt="" aria-hidden="true"
+               class="aspect-4/3 w-full rounded-3xl object-cover object-top" loading="eager" decoding="async" />
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-(--breakpoint-lg) px-4 py-10 md:px-6 lg:px-8 lg:py-14">
+    <div class="rounded-panel border border-black/5 bg-white/90 p-6 shadow-panel backdrop-blur dark:border-white/10 dark:bg-white/4 md:p-8">
+      <div class="prose prose-zinc max-w-none dark:prose-invert">
+        {{ .Content }}
+      </div>
+    </div>
+  </section>
+</main>
+{{ end }}

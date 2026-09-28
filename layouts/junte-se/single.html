@@ -1,0 +1,91 @@
+{{ define "main" }}
+{{/*
+  junte-se/single.html — trilha de entrada (mestrado, doutorado, TCC, IC,
+  extensão, parcerias, proponha um projeto).
+
+  Estas páginas caíam no fallback _default/single.html, que ignora todo o
+  frontmatter próprio: audience, duration, cta_label/cta_url e
+  secondary_label/secondary_url nunca chegavam ao HTML. A página-mãe
+  /junte-se/ já usava esses mesmos campos nos cards, de modo que a página de
+  detalhe publicava MENOS que a sua própria listagem.
+
+  Mesma paleta e mesma composição de _default/join.html.
+*/}}
+{{ $isPt := eq .Site.Language.Lang "pt" }}
+{{ $summary := .Params.summary }}
+
+<main class="bg-[linear-gradient(180deg,#f8fafc_0%,#ffffff_24%,#f5f5f4_100%)] text-gray-950 dark:bg-[linear-gradient(180deg,#0f172a_0%,#111827_58%,#0b1120_100%)] dark:text-gray-100">
+  <section class="border-b border-black/5 bg-[radial-gradient(circle_at_top,rgba(197,39,47,0.14),transparent_36%),linear-gradient(180deg,#ffffff_0%,#f8fafc_100%)] dark:border-white/10 dark:bg-[radial-gradient(circle_at_top,rgba(197,39,47,0.2),transparent_36%),linear-gradient(180deg,#111827_0%,#0f172a_100%)]">
+    <div class="mx-auto max-w-(--breakpoint-xl) px-4 py-12 md:px-6 lg:px-8 lg:py-16">
+      {{ partial "breadcrumbs.html" (dict "page" . "variant" "light") }}
+      <div class="mt-4 grid gap-8 lg:grid-cols-[minmax(0,1.15fr)_minmax(18rem,0.85fr)] lg:items-end">
+        <div class="min-w-0">
+          {{ partial "ui/page-heading.html" (dict
+            "page" .
+            "variant" "light"
+            "showBreadcrumb" false
+            "eyebrow" (i18n "ui_join_paths_quick")
+            "description" $summary
+            "titleClass" "mt-5 max-w-3xl text-4xl font-black tracking-tight text-gray-950 dark:text-white md:text-5xl"
+            "descriptionClass" "mt-4 max-w-2xl text-base leading-7 text-gray-600 dark:text-white/75 md:text-lg"
+          ) }}
+
+          {{ if or .Params.cta_label .Params.secondary_label }}
+          <div class="mt-7 flex flex-wrap gap-3">
+            {{ if and .Params.cta_label .Params.cta_url }}
+            <a href="{{ if hasPrefix .Params.cta_url "/" }}{{ .Params.cta_url | relLangURL }}{{ else }}{{ .Params.cta_url }}{{ end }}"
+               {{ if not (hasPrefix .Params.cta_url "/") }}target="_blank" rel="noopener noreferrer"{{ end }}
+               class="inline-flex items-center rounded-full bg-primary-700 px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-primary-600/25 transition-colors hover:bg-primary-800">
+              {{ .Params.cta_label }}<span class="ml-2" aria-hidden="true">&rarr;</span>
+            </a>
+            {{ end }}
+            {{ if and .Params.secondary_label .Params.secondary_url }}
+            <a href="{{ if hasPrefix .Params.secondary_url "/" }}{{ .Params.secondary_url | relLangURL }}{{ else }}{{ .Params.secondary_url }}{{ end }}"
+               {{ if not (hasPrefix .Params.secondary_url "/") }}target="_blank" rel="noopener noreferrer"{{ end }}
+               class="inline-flex items-center rounded-full border border-primary-300 bg-white px-5 py-3 text-sm font-semibold text-primary-700 transition-colors hover:border-primary-500 hover:bg-primary-50 dark:border-primary-400/40 dark:bg-white/6 dark:text-primary-100">
+              {{ .Params.secondary_label }}
+            </a>
+            {{ end }}
+          </div>
+          {{ end }}
+        </div>
+
+        {{ if or .Params.audience .Params.duration }}
+        <div class="min-w-0 rounded-panel border border-black/5 bg-white/90 p-5 shadow-panel backdrop-blur dark:border-white/10 dark:bg-white/4">
+          <dl class="space-y-4">
+            {{ with .Params.audience }}
+            <div>
+              <dt class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-gray-500 dark:text-white/75">{{ cond $isPt "Para quem é" "Who it is for" }}</dt>
+              <dd class="mt-2 text-base leading-7 text-gray-800 dark:text-white/85">{{ . }}</dd>
+            </div>
+            {{ end }}
+            {{ with .Params.duration }}
+            <div>
+              <dt class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-gray-500 dark:text-white/75">{{ cond $isPt "Duração" "Duration" }}</dt>
+              <dd class="mt-2">
+                <span class="inline-flex rounded-full border border-primary-200 bg-primary-50 px-3 py-1 text-sm font-semibold text-primary-700 dark:border-primary-400/20 dark:bg-primary-500/10 dark:text-primary-200">{{ . }}</span>
+              </dd>
+            </div>
+            {{ end }}
+          </dl>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-(--breakpoint-lg) px-4 py-10 md:px-6 lg:px-8 lg:py-14">
+    <div class="rounded-panel border border-black/5 bg-white/90 p-6 shadow-panel backdrop-blur dark:border-white/10 dark:bg-white/4 md:p-8">
+      <div class="prose prose-zinc max-w-none dark:prose-invert">
+        {{ .Content }}
+      </div>
+    </div>
+
+    <div class="mt-8">
+      <a href="{{ (cond $isPt "/junte-se/" "/join/") | relLangURL }}" class="inline-flex items-center gap-2 text-sm font-semibold text-primary-700 transition-colors hover:text-primary-800 dark:text-primary-200 dark:hover:text-primary-100">
+        <span aria-hidden="true">&larr;</span>{{ cond $isPt "Todas as trilhas" "All paths" }}
+      </a>
+    </div>
+  </section>
+</main>
+{{ end }}

@@ -7,6 +7,7 @@ description: "CEDIS site privacy policy: data collected, purpose, retention, leg
 featured_image: "../assets/images/pages/media-CEDIS.webp"
 eyebrow: "Privacy and Brazilian LGPD"
 translationKey: privacy
+layout: institutional-page
 ---
 
 This policy describes how the CEDIS institutional website handles personal data and browser privacy signals. The website is static, does not require authentication, and does not host its own personal-data collection forms.

@@ -7,6 +7,7 @@ description: "Prêmios, menções honrosas e reconhecimentos institucionais rece
 featured_image: "../assets/images/pages/media-CEDIS.webp"
 eyebrow: "Prêmios e menções"
 translationKey: reconhecimentos
+layout: institutional-page
 ---
 
 O trabalho do CEDIS é reconhecido em fóruns nacionais e internacionais pela qualidade da pesquisa, pela inovação no ensino e pelo impacto de seus produtos e projetos. Esta página consolida os principais reconhecimentos recebidos pelo centro e por seus pesquisadores.

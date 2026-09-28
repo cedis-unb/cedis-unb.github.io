@@ -7,6 +7,7 @@ description: "CEDIS site digital accessibility status: the level we target, what
 featured_image: "../assets/images/pages/media-CEDIS.webp"
 eyebrow: "WCAG commitment"
 translationKey: accessibility
+layout: institutional-page
 ---
 
 CEDIS works to make this site usable by people with different types of disabilities. Our

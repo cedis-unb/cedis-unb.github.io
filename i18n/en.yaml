@@ -383,6 +383,7 @@ ui_awards_navigate_years: "Jump to year"
 ui_awards_empty: "No recognitions registered yet."
 
 # Alumni (A4)
+ui_about_eyebrow: "Who we are"
 ui_alumni_eyebrow: "CEDIS Alumni"
 ui_alumni_lead: "People who went through CEDIS and moved on to research, industry,
   entrepreneurship, or teaching. The network continues after the defense."

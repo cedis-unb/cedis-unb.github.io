@@ -7,6 +7,7 @@ description: "Situação da acessibilidade digital do site do CEDIS: o nível qu
 featured_image: "../assets/images/pages/media-CEDIS.webp"
 eyebrow: "Compromisso com WCAG"
 translationKey: accessibility
+layout: institutional-page
 ---
 
 O CEDIS trabalha para que o conteúdo deste site seja utilizável por pessoas com diferentes

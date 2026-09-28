@@ -9,6 +9,7 @@ eyebrow: "Comunicação científica"
 translationKey: divulgacao_cientifica
 aliases:
 - /imprensa/
+layout: institutional-page
 ---
 
 O CEDIS mantém materiais de referência para comunicação pública da pesquisa, colaboração institucional e consulta por pessoas interessadas em Engenharia de Software, Inteligência Artificial, gamificação e transformação digital de serviços públicos.
