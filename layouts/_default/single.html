@@ -1,5 +1,8 @@
 {{define "main"}}
 <article>
+  <div class="mx-auto max-w-4xl px-6 pt-8">
+    {{ partial "breadcrumbs.html" (dict "page" . "variant" "light") }}
+  </div>
   <header class="mb-4 bg-primary-600">
     <span class="py-96">
       <h1 class="py-16 text-5xl font-black text-center text-white">

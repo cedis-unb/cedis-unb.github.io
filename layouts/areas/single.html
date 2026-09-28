@@ -169,18 +169,15 @@
     <div aria-hidden="true" class="absolute right-0 top-16 h-56 w-56 rounded-full bg-sky-300/20 blur-3xl dark:bg-sky-400/10"></div>
     <div class="relative mx-auto grid max-w-(--breakpoint-xl) gap-10 px-4 py-14 md:px-6 lg:grid-cols-[minmax(0,1.05fr)_minmax(320px,0.95fr)] lg:px-8 lg:py-20">
       <div class="min-w-0">
-        {{ partial "breadcrumbs.html" (dict "page" . "variant" "light") }}
-        <div class="inline-flex items-center rounded-full border border-slate-300/70 bg-white/80 px-4 py-2 text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-slate-700 shadow-xs backdrop-blur dark:border-white/10 dark:bg-white/5 dark:text-slate-300">
-          {{ $areaLabel }}
-        </div>
-        <h1 class="mt-5 max-w-4xl text-4xl font-black leading-tight text-slate-950 md:text-5xl lg:text-6xl dark:text-white">
-          {{ .Title }}
-        </h1>
-        {{ with $summary }}
-        <p class="mt-5 max-w-3xl text-lg leading-8 text-slate-600 md:text-xl dark:text-slate-300">
-          {{ . }}
-        </p>
-        {{ end }}
+        {{ partial "ui/page-heading.html" (dict
+          "page" .
+          "variant" "light"
+          "eyebrow" $areaLabel
+          "description" $summary
+          "eyebrowClass" "inline-flex items-center rounded-full border border-slate-300/70 bg-white/80 px-4 py-2 text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-slate-700 shadow-xs backdrop-blur dark:border-white/10 dark:bg-white/5 dark:text-slate-300"
+          "titleClass" "mt-5 max-w-4xl text-4xl font-black leading-tight text-slate-950 md:text-5xl lg:text-6xl dark:text-white"
+          "descriptionClass" "mt-5 max-w-3xl text-lg leading-8 text-slate-600 md:text-xl dark:text-slate-300"
+        ) }}
 
         <div class="mt-8 grid gap-3 sm:grid-cols-3">
           <div class="rounded-[1.25rem] border border-slate-200 bg-white/85 px-4 py-4 shadow-xs dark:border-white/10 dark:bg-white/5">

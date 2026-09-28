@@ -1,0 +1,39 @@
+{{- $eyebrow := "" -}}
+{{- $title := "" -}}
+{{- $description := "" -}}
+{{- $actionHtml := "" -}}
+{{- $wrapperClass := "" -}}
+{{- $contentClass := "" -}}
+{{- $eyebrowClass := "inline-flex rounded-full border border-primary-300/60 bg-primary-50/80 px-3 py-1 text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-primary-700 dark:border-primary-400/20 dark:bg-primary-500/10 dark:text-primary-200" -}}
+{{- $titleClass := "mt-3 text-2xl font-black tracking-tight text-gray-950 dark:text-white md:text-3xl" -}}
+{{- $descriptionClass := "mt-3 text-base leading-7 text-gray-700 dark:text-white/80" -}}
+{{- if reflect.IsMap . -}}
+  {{- with .eyebrow }}{{- $eyebrow = . -}}{{- end -}}
+  {{- with .title }}{{- $title = . -}}{{- end -}}
+  {{- with .description }}{{- $description = . -}}{{- end -}}
+  {{- with .actionHtml }}{{- $actionHtml = . -}}{{- end -}}
+  {{- with .wrapperClass }}{{- $wrapperClass = . -}}{{- end -}}
+  {{- with .contentClass }}{{- $contentClass = . -}}{{- end -}}
+  {{- with .eyebrowClass }}{{- $eyebrowClass = . -}}{{- end -}}
+  {{- with .titleClass }}{{- $titleClass = . -}}{{- end -}}
+  {{- with .descriptionClass }}{{- $descriptionClass = . -}}{{- end -}}
+{{- end -}}
+
+{{- if $actionHtml -}}
+<div class="{{ if $wrapperClass }}{{ $wrapperClass }}{{ else }}flex flex-wrap items-end justify-between gap-4{{ end }}">
+  <div class="{{ if $contentClass }}{{ $contentClass }}{{ else }}max-w-2xl{{ end }}">
+    {{- with $eyebrow }}<span class="{{ $eyebrowClass }}">{{ . }}</span>{{ end }}
+    <h2 class="{{ $titleClass }}">{{ $title }}</h2>
+    {{- with $description }}<p class="{{ $descriptionClass }}">{{ . }}</p>{{ end }}
+  </div>
+  <div>{{ $actionHtml | safeHTML }}</div>
+</div>
+{{- else -}}
+<div class="{{ $wrapperClass }}">
+  {{- if $contentClass }}<div class="{{ $contentClass }}">{{ end -}}
+  {{- with $eyebrow }}<span class="{{ $eyebrowClass }}">{{ . }}</span>{{ end }}
+  <h2 class="{{ $titleClass }}">{{ $title }}</h2>
+  {{- with $description }}<p class="{{ $descriptionClass }}">{{ . }}</p>{{ end }}
+  {{- if $contentClass }}</div>{{ end -}}
+</div>
+{{- end -}}

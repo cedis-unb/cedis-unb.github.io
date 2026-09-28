@@ -1,0 +1,36 @@
+{{- $variant := "default" -}}
+{{- $title := "" -}}
+{{- $description := "" -}}
+{{- $ctaLabel := "" -}}
+{{- $ctaUrl := "" -}}
+{{- $class := "" -}}
+{{- $titleClass := "text-base font-semibold text-slate-950 dark:text-white" -}}
+{{- $descriptionClass := "mt-2 text-sm leading-6 text-slate-600 dark:text-white/70" -}}
+{{- $ctaClass := "mt-4 inline-flex items-center rounded-full bg-primary-700 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-primary-800" -}}
+{{- if reflect.IsMap . -}}
+  {{- with .variant }}{{- $variant = . -}}{{- end -}}
+  {{- with .title }}{{- $title = . -}}{{- end -}}
+  {{- with .description }}{{- $description = . -}}{{- end -}}
+  {{- with .ctaLabel }}{{- $ctaLabel = . -}}{{- end -}}
+  {{- with .ctaUrl }}{{- $ctaUrl = . -}}{{- end -}}
+  {{- with .class }}{{- $class = . -}}{{- end -}}
+  {{- with .titleClass }}{{- $titleClass = . -}}{{- end -}}
+  {{- with .descriptionClass }}{{- $descriptionClass = . -}}{{- end -}}
+  {{- with .ctaClass }}{{- $ctaClass = . -}}{{- end -}}
+{{- end -}}
+
+{{- if not $class -}}
+  {{- if eq $variant "subtle" -}}
+    {{- $class = "rounded-3xl border border-slate-200 bg-slate-50/80 p-6 dark:border-white/10 dark:bg-white/4" -}}
+  {{- else -}}
+    {{- $class = "rounded-3xl border border-slate-200 bg-white/90 p-6 shadow-xs dark:border-white/10 dark:bg-white/4" -}}
+  {{- end -}}
+{{- end -}}
+
+<div class="{{ $class }}">
+  <h3 class="{{ $titleClass }}">{{ $title }}</h3>
+  <p class="{{ $descriptionClass }}">{{ $description }}</p>
+  {{- if and $ctaLabel $ctaUrl }}
+  <a href="{{ $ctaUrl }}" class="{{ $ctaClass }}">{{ $ctaLabel }}</a>
+  {{- end }}
+</div>

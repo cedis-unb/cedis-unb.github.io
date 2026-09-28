@@ -8,7 +8,7 @@
 <main class="bg-[linear-gradient(180deg,#f8fafc_0%,#ffffff_24%,#f5f5f4_100%)] text-gray-950 dark:bg-[linear-gradient(180deg,#0f172a_0%,#111827_58%,#0b1120_100%)] dark:text-gray-100">
   <section class="border-b border-black/5 bg-[radial-gradient(circle_at_top,rgba(16,185,129,0.14),transparent_36%),linear-gradient(180deg,#ffffff_0%,#f8fafc_100%)] dark:border-white/10 dark:bg-[radial-gradient(circle_at_top,rgba(16,185,129,0.18),transparent_36%),linear-gradient(180deg,#111827_0%,#0f172a_100%)]">
     <div class="mx-auto max-w-(--breakpoint-xl) px-4 py-12 md:px-6 lg:px-8 lg:py-16">
-      {{ partial "breadcrumbs.html" . }}
+      {{ partial "breadcrumbs.html" (dict "page" . "variant" "light") }}
       <div class="mt-4 grid gap-8 lg:grid-cols-[minmax(0,1.15fr)_minmax(18rem,0.85fr)] lg:items-end">
         <div>
           <span class="inline-flex rounded-full border border-black/10 bg-white px-4 py-1 text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-gray-500 dark:border-white/10 dark:bg-white/6 dark:text-white/55">{{ $eyebrow }}</span>

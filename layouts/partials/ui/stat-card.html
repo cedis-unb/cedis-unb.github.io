@@ -1,0 +1,38 @@
+{{- $tag := "div" -}}
+{{- $class := "" -}}
+{{- $value := "" -}}
+{{- $label := "" -}}
+{{- $subtext := "" -}}
+{{- $valueClass := "text-3xl font-black tracking-tight text-gray-950 dark:text-white lg:text-4xl" -}}
+{{- $labelClass := "mt-2 text-sm font-semibold text-gray-950 dark:text-white" -}}
+{{- $subtextClass := "mt-1 text-xs text-gray-500 dark:text-white/55" -}}
+{{- if reflect.IsMap . -}}
+  {{- with .tag }}{{- $tag = . -}}{{- end -}}
+  {{- with .class }}{{- $class = . -}}{{- end -}}
+  {{- if isset . "value" }}{{- $value = .value -}}{{- end -}}
+  {{- with .label }}{{- $label = . -}}{{- end -}}
+  {{- with .subtext }}{{- $subtext = . -}}{{- end -}}
+  {{- with .valueClass }}{{- $valueClass = . -}}{{- end -}}
+  {{- with .labelClass }}{{- $labelClass = . -}}{{- end -}}
+  {{- with .subtextClass }}{{- $subtextClass = . -}}{{- end -}}
+{{- end -}}
+
+{{- if eq $tag "li" -}}
+<li class="{{ $class }}">
+  <div class="{{ $valueClass }}">{{ $value }}</div>
+  <div class="{{ $labelClass }}">{{ $label }}</div>
+  {{- with $subtext }}<div class="{{ $subtextClass }}">{{ . }}</div>{{ end }}
+</li>
+{{- else if eq $tag "article" -}}
+<article class="{{ $class }}">
+  <div class="{{ $valueClass }}">{{ $value }}</div>
+  <div class="{{ $labelClass }}">{{ $label }}</div>
+  {{- with $subtext }}<div class="{{ $subtextClass }}">{{ . }}</div>{{ end }}
+</article>
+{{- else -}}
+<div class="{{ $class }}">
+  <div class="{{ $valueClass }}">{{ $value }}</div>
+  <div class="{{ $labelClass }}">{{ $label }}</div>
+  {{- with $subtext }}<div class="{{ $subtextClass }}">{{ . }}</div>{{ end }}
+</div>
+{{- end -}}

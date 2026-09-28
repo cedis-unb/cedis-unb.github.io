@@ -1,0 +1,70 @@
+{{- $page := . -}}
+{{- $variant := "dark" -}}
+{{- $align := "left" -}}
+{{- $showBreadcrumb := true -}}
+{{- $eyebrow := "" -}}
+{{- $title := "" -}}
+{{- $description := "" -}}
+{{- $wrapperClass := "" -}}
+{{- $breadcrumbWrapperClass := "" -}}
+{{- $eyebrowClass := "" -}}
+{{- $titleClass := "" -}}
+{{- $descriptionClass := "" -}}
+
+{{- if reflect.IsMap . -}}
+  {{- with .page }}{{- $page = . -}}{{- end -}}
+  {{- with .variant }}{{- $variant = . -}}{{- end -}}
+  {{- with .align }}{{- $align = . -}}{{- end -}}
+  {{- if isset . "showBreadcrumb" }}{{- $showBreadcrumb = .showBreadcrumb -}}{{- end -}}
+  {{- with .eyebrow }}{{- $eyebrow = . -}}{{- end -}}
+  {{- with .title }}{{- $title = . -}}{{- end -}}
+  {{- with .description }}{{- $description = . -}}{{- end -}}
+  {{- with .wrapperClass }}{{- $wrapperClass = . -}}{{- end -}}
+  {{- with .breadcrumbWrapperClass }}{{- $breadcrumbWrapperClass = . -}}{{- end -}}
+  {{- with .eyebrowClass }}{{- $eyebrowClass = . -}}{{- end -}}
+  {{- with .titleClass }}{{- $titleClass = . -}}{{- end -}}
+  {{- with .descriptionClass }}{{- $descriptionClass = . -}}{{- end -}}
+{{- end -}}
+
+{{- if and (not $title) $page -}}{{- $title = $page.Title -}}{{- end -}}
+
+{{- $wrapperToneClass := "" -}}
+{{- $eyebrowToneClass := "border-white/15 bg-white/10 text-white/75" -}}
+{{- $titleToneClass := "text-white" -}}
+{{- $descriptionToneClass := "text-white/75" -}}
+{{- $defaultTitleClass := "mt-5 text-4xl font-black tracking-tight md:text-5xl" -}}
+{{- $defaultDescriptionClass := "mt-4 max-w-3xl text-base leading-8 md:text-lg" -}}
+
+{{- if eq $align "center" -}}
+  {{- $wrapperToneClass = "text-center" -}}
+  {{- $defaultDescriptionClass = printf "mx-auto %s" $defaultDescriptionClass -}}
+{{- end -}}
+
+{{- if eq $variant "light" -}}
+  {{- $eyebrowToneClass = "border-black/10 bg-white text-gray-500 dark:border-white/10 dark:bg-white/6 dark:text-white/55" -}}
+  {{- $titleToneClass = "text-gray-950 dark:text-white" -}}
+  {{- $descriptionToneClass = "text-gray-600 dark:text-white/75" -}}
+{{- end -}}
+
+{{- if not $eyebrowClass -}}{{- $eyebrowClass = printf "inline-flex rounded-full border px-4 py-1 text-[0.68rem] font-semibold uppercase tracking-[0.28em] %s" $eyebrowToneClass -}}{{- end -}}
+{{- if not $titleClass -}}{{- $titleClass = printf "%s %s" $defaultTitleClass $titleToneClass -}}{{- end -}}
+{{- if not $descriptionClass -}}{{- $descriptionClass = printf "%s %s" $defaultDescriptionClass $descriptionToneClass -}}{{- end -}}
+
+<div class="{{ strings.TrimSpace (printf "%s %s" $wrapperToneClass $wrapperClass) }}">
+  {{- if and $showBreadcrumb $page -}}
+    {{- if $breadcrumbWrapperClass -}}
+    <div class="{{ $breadcrumbWrapperClass }}">{{ partial "breadcrumbs.html" (dict "page" $page "variant" $variant) }}</div>
+    {{- else -}}
+      {{ partial "breadcrumbs.html" (dict "page" $page "variant" $variant) }}
+    {{- end -}}
+  {{- end -}}
+  {{- with $eyebrow }}
+  <span class="{{ $eyebrowClass }}">{{ . }}</span>
+  {{- end }}
+  {{- with $title }}
+  <h1 class="{{ $titleClass }}">{{ . }}</h1>
+  {{- end }}
+  {{- with $description }}
+  <p class="{{ $descriptionClass }}">{{ . }}</p>
+  {{- end }}
+</div>

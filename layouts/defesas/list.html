@@ -57,6 +57,8 @@
 {{ $types := slice }}
 {{ range $key, $_ := $typesSet }}{{ $types = $types | append $key }}{{ end }}
 {{ $types = sort $types }}
+{{ $emptyUpcomingTitle := cond $isPt "Nenhuma defesa marcada" "No scheduled defenses" }}
+{{ $emptyUpcomingDescription := cond $isPt "Nenhuma defesa marcada no momento. Volte em breve — as próximas bancas são divulgadas aqui assim que confirmadas." "No scheduled defenses at the moment. Check back soon — upcoming committees are announced here as soon as confirmed." }}
 
 {{/* Rótulos localizados por tipo — construídos a partir do partial reutilizável
      defesa-type-label.html para manter consistência com single.html e body.html. */}}
@@ -71,28 +73,20 @@
   <section class="border-b border-slate-200/80 bg-slate-950 text-white dark:border-white/10">
     <div class="mx-auto max-w-(--breakpoint-xl) px-4 py-12 md:px-6 lg:px-8 lg:py-16">
       {{ partial "breadcrumbs.html" . }}
-      <div class="mt-4 max-w-4xl">
-        <span class="inline-flex rounded-full border border-white/15 bg-white/10 px-4 py-1 text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-white/75">
-          {{ cond $isPt "Defesas e qualificações" "Defenses and qualifications" }}
-        </span>
-        <h1 class="mt-5 text-4xl font-black tracking-tight md:text-5xl">{{ .Title }}</h1>
-        <p class="mt-4 max-w-2xl text-base leading-7 text-white/75 md:text-lg">
-          {{ if $isPt }}Bancas marcadas, defesas realizadas e trabalhos depositados no CEDIS. Anúncios prévios chamam para acompanhar; registros históricos consolidam a produção do centro.{{ else }}Scheduled committees, held defenses, and deposited works at CEDIS. Prior announcements invite you to attend; historical records consolidate the center's output.{{ end }}
-        </p>
-      </div>
+      {{ partial "ui/page-heading.html" (dict
+        "page" .
+        "variant" "dark"
+        "showBreadcrumb" false
+        "wrapperClass" "mt-4 max-w-4xl"
+        "eyebrow" (cond $isPt "Defesas e qualificações" "Defenses and qualifications")
+        "description" (cond $isPt "Bancas marcadas, defesas realizadas e trabalhos depositados no CEDIS. Anúncios prévios chamam para acompanhar; registros históricos consolidam a produção do centro." "Scheduled committees, held defenses, and deposited works at CEDIS. Prior announcements invite you to attend; historical records consolidate the center's output.")
+        "titleClass" "mt-5 text-4xl font-black tracking-tight text-white md:text-5xl"
+        "descriptionClass" "mt-4 max-w-2xl text-base leading-7 text-white/75 md:text-lg"
+      ) }}
       <div class="mt-8 grid gap-3 sm:grid-cols-3">
-        <div class="rounded-[1.25rem] border border-white/10 bg-white/6 px-5 py-4">
-          <div class="text-3xl font-black">{{ len $upcoming }}</div>
-          <div class="mt-1 text-sm text-white/75">{{ cond $isPt "próximas" "upcoming" }}</div>
-        </div>
-        <div class="rounded-[1.25rem] border border-white/10 bg-white/6 px-5 py-4">
-          <div class="text-3xl font-black">{{ len $past }}</div>
-          <div class="mt-1 text-sm text-white/75">{{ cond $isPt "realizadas" "held" }}</div>
-        </div>
-        <div class="rounded-[1.25rem] border border-white/10 bg-white/6 px-5 py-4">
-          <div class="text-3xl font-black">{{ len $years }}</div>
-          <div class="mt-1 text-sm text-white/75">{{ cond $isPt "anos cobertos" "years covered" }}</div>
-        </div>
+        {{ partial "ui/stat-card.html" (dict "class" "rounded-[1.25rem] border border-white/10 bg-white/6 px-5 py-4" "value" (len $upcoming) "label" (cond $isPt "próximas" "upcoming") "valueClass" "text-3xl font-black text-white" "labelClass" "mt-1 text-sm text-white/75") }}
+        {{ partial "ui/stat-card.html" (dict "class" "rounded-[1.25rem] border border-white/10 bg-white/6 px-5 py-4" "value" (len $past) "label" (cond $isPt "realizadas" "held") "valueClass" "text-3xl font-black text-white" "labelClass" "mt-1 text-sm text-white/75") }}
+        {{ partial "ui/stat-card.html" (dict "class" "rounded-[1.25rem] border border-white/10 bg-white/6 px-5 py-4" "value" (len $years) "label" (cond $isPt "anos cobertos" "years covered") "valueClass" "text-3xl font-black text-white" "labelClass" "mt-1 text-sm text-white/75") }}
       </div>
     </div>
   </section>
@@ -102,13 +96,16 @@
 
     {{/* -------------------- Próximas defesas -------------------- */}}
     <div class="mb-12">
-      <h2 class="text-2xl font-black tracking-tight text-slate-950 dark:text-white md:text-3xl">
-        {{ cond $isPt "Próximas defesas" "Upcoming defenses" }}
-      </h2>
+      {{ partial "ui/section-heading.html" (dict "title" (cond $isPt "Próximas defesas" "Upcoming defenses") "titleClass" "text-2xl font-black tracking-tight text-slate-950 dark:text-white md:text-3xl") }}
       {{ if eq (len $upcoming) 0 }}
-      <p class="mt-4 rounded-[1.25rem] border border-dashed border-slate-300 bg-white/70 p-6 text-sm text-slate-600 dark:border-white/15 dark:bg-white/5 dark:text-white/70">
-        {{ if $isPt }}Nenhuma defesa marcada no momento. Volte em breve — as próximas bancas são divulgadas aqui assim que confirmadas.{{ else }}No scheduled defenses at the moment. Check back soon — upcoming committees are announced here as soon as confirmed.{{ end }}
-      </p>
+      <div class="mt-4">
+        {{ partial "ui/empty-state.html" (dict
+          "variant" "subtle"
+          "title" $emptyUpcomingTitle
+          "description" $emptyUpcomingDescription
+          "class" "rounded-[1.25rem] border border-dashed border-slate-300 bg-white/70 p-6 dark:border-white/15 dark:bg-white/5"
+        ) }}
+      </div>
       {{ else if lt (len $upcoming) 5 }}
       {{/* Poucas: grid simples. */}}
       <div class="mt-6 grid gap-4 md:grid-cols-2 @container">
@@ -204,9 +201,7 @@
 
     {{/* -------------------- Últimas realizadas -------------------- */}}
     <div class="mb-12">
-      <h2 class="text-2xl font-black tracking-tight text-slate-950 dark:text-white md:text-3xl">
-        {{ cond $isPt "Últimas realizadas" "Recently held" }}
-      </h2>
+      {{ partial "ui/section-heading.html" (dict "title" (cond $isPt "Últimas realizadas" "Recently held") "titleClass" "text-2xl font-black tracking-tight text-slate-950 dark:text-white md:text-3xl") }}
       <div class="mt-6 grid gap-4 @container">
         {{ range $latest }}
         {{ partial "defesa-card.html" (dict "defesa" . "lang" $lang "typeLabels" $typeLabels "filterable" true) }}
@@ -216,12 +211,12 @@
 
     {{/* -------------------- Arquivo por ano -------------------- */}}
     <div>
-      <h2 class="text-2xl font-black tracking-tight text-slate-950 dark:text-white md:text-3xl">
-        {{ cond $isPt "Arquivo por ano" "Archive by year" }}
-      </h2>
-      <p class="mt-2 text-sm text-slate-600 dark:text-white/60">
-        {{ cond $isPt "Clique em um ano para ver todas as defesas daquele período." "Click a year to see all defenses from that period." }}
-      </p>
+      {{ partial "ui/section-heading.html" (dict
+        "title" (cond $isPt "Arquivo por ano" "Archive by year")
+        "description" (cond $isPt "Clique em um ano para ver todas as defesas daquele período." "Click a year to see all defenses from that period.")
+        "titleClass" "text-2xl font-black tracking-tight text-slate-950 dark:text-white md:text-3xl"
+        "descriptionClass" "mt-2 text-sm text-slate-600 dark:text-white/60"
+      ) }}
       <div class="mt-6 space-y-3">
         {{ range $years }}
           {{ $y := . }}
