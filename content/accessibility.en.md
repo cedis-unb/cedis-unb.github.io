@@ -43,24 +43,21 @@ failure on the sampled pages", not "accessible".
 Measured on a local build of the current site, in both languages:
 
 - Pa11y (`WCAG2AA`): **0 errors on 21/21 URLs**.
-- Lighthouse accessibility (desktop and mobile, run of 2026-09-26): **1.00 on 7 of the 8 URLs** and **0.90 on the home page**, in both profiles.
-- Complementary scan with axe-core over 7 pages per language, in light and dark mode: **no violation in light mode except on the home page and the map**; **38 contrast violations on the home page in dark mode** and 1 on the researcher profile page.
+- Scan with axe-core 4.12.1 over **16 pages x 2 themes** (light and dark), with the `wcag2a`, `wcag2aa`, `wcag21a`, `wcag21aa` and `wcag22aa` rule sets: **no violations**. The same scan against the previously published version reported 145.
 - Keyboard: 24 open/close cycles of the header dropdowns (6 menus x 2 languages x 2 themes) all behaved correctly, and a full Tab sweep of four pages per language found **no keyboard trap**.
 - Competency map: 53 nodes, all reachable with Tab, all activatable with Enter and Space, with a visible focus ring in both themes; the zoom and filter buttons are all 34 px tall.
 - Filters on Opportunities, Publications and Defences: every control reachable by keyboard, every control named by a real `<label>`, all 37 px tall.
-- Target size (WCAG 2.2, 24x24 px minimum): every `<button>` and `<select>` measures at least 34 px in height. Two controls are narrower or smaller than 24 px and conform only through the standard spacing exception: the header search link (**20x40 px**) and 21 of the 53 map nodes (**20x20 px**).
+- Reflow (SC 1.4.10): at **200% zoom** (a 640 px viewport), none of the 13 routes tested scrolls sideways.
+- Target size (WCAG 2.2, 24x24 px minimum): every `<button>` and `<select>` measures at least 34 px in height. Two controls are smaller than 24 px and conform only through the standard spacing exception: the header search link (**20x40 px**) and 21 of the 53 map nodes (**20x20 px**).
 
 ## Known gaps
 
 These are real, measured, and queued for correction. We prefer to publish them rather than imply they do not exist:
 
-- **Dark mode has insufficient contrast in places.** Secondary text on card surfaces on the home page reaches only 2.7:1 to 3.1:1 where 4.5:1 is required, and the "Former supervisions" heading on researcher profiles drops to 1.0:1. Automated contrast checking in CI runs in light mode only, so these do not fail the build.
-- **The "Former supervisions" / "Previous researchers" block cannot be opened with a keyboard.** It responds to the mouse only, which also means its state is not announced. Affected: researcher profiles and knowledge-area pages.
-- **Zoom / reflow.** At 400% zoom (a 320 px viewport) the home page, Publications and Defences scroll sideways; at 200% only Defences does, because of a filter dropdown that is wider than the screen. The map and Opportunities reflow correctly.
-- **Two labels are wrong in English.** The light/dark button announces itself in Portuguese on every page, and the mobile menu button announces itself only as "Main".
-- **The competency map declares itself an image** while containing 53 focusable nodes, which is contradictory for assistive technology. The list of links below the map is the reliable route.
-- **The home page has two ARIA errors** in the "next defences" view switcher (buttons carrying `aria-selected` without the matching role). This is what keeps that page at 0.90 instead of 1.00.
+- **Reflow at 400% zoom.** In a 320 px viewport the home page, Publications and the researcher profiles still scroll sideways by 13 to 34 px. At 200% the site is clean.
 - **Dense listings and target size.** On the Defences listing, the text links in consecutive cards sit closer together than the 24 px that WCAG 2.2 asks for.
+- **Automated contrast checking in CI runs in light mode only.** The dark-mode scan described above is a manual procedure; nothing stops a dark-theme contrast regression from passing the build.
+- **Gradient backgrounds escape automated checking.** When the background is a gradient, axe reports contrast as "incomplete" rather than as a violation — that is how the footer labels sat at 1.6:1 without CI complaining. Areas with gradients need a manual pass.
 - **No screen-reader testing has been recorded.** Nothing on this page is based on a NVDA, JAWS or VoiceOver session, and we do not claim otherwise. No external audit has been commissioned.
 
 ## Report a barrier

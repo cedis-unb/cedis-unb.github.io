@@ -44,24 +44,21 @@ WCAG — algo em torno de um terço, e só a parte decidível por máquina. Buil
 Medido sobre um build local do site atual, nos dois idiomas:
 
 - Pa11y (`WCAG2AA`): **0 erros em 21/21 URLs**.
-- Acessibilidade no Lighthouse (desktop e mobile, execução de 2026-09-26): **1,00 em 7 das 8 URLs** e **0,90 na página inicial**, nos dois perfis.
-- Varredura complementar com axe-core em 7 páginas por idioma, em modo claro e escuro: **nenhuma violação em modo claro, exceto na página inicial e no mapa**; **38 violações de contraste na página inicial em modo escuro** e 1 na página de perfil de pesquisador.
+- Varredura com axe-core 4.12.1 sobre **16 páginas x 2 temas** (claro e escuro), com as regras `wcag2a`, `wcag2aa`, `wcag21a`, `wcag21aa` e `wcag22aa`: **nenhuma violação**. A mesma varredura sobre a versão publicada anteriormente acusava 145.
 - Teclado: 24 ciclos de abrir/fechar dos submenus do cabeçalho (6 menus x 2 idiomas x 2 temas) se comportaram corretamente, e uma varredura completa com Tab em quatro páginas por idioma não encontrou **nenhuma armadilha de teclado**.
 - Mapa de competências: 53 nós, todos alcançáveis com Tab, todos ativáveis com Enter e Espaço, com anel de foco visível nos dois temas; os botões de zoom e de filtro têm todos 34 px de altura.
 - Filtros de Oportunidades, Publicações e Defesas: todos os controles alcançáveis por teclado, todos nomeados por um `<label>` real, todos com 37 px de altura.
+- Refluxo (SC 1.4.10): com **zoom de 200%** (viewport de 640 px), nenhuma das 13 rotas testadas rola na horizontal.
 - Tamanho de área clicável (WCAG 2.2, mínimo de 24x24 px): todo `<button>` e todo `<select>` tem ao menos 34 px de altura. Dois controles ficam abaixo de 24 px e conformam apenas pela exceção de espaçamento prevista no critério: o link de busca do cabeçalho (**20x40 px**) e 21 dos 53 nós do mapa (**20x20 px**).
 
 ## Lacunas conhecidas
 
 São reais, medidas, e estão na fila de correção. Preferimos publicá-las a dar a entender que não existem:
 
-- **O modo escuro tem contraste insuficiente em alguns pontos.** Textos secundários sobre cards na página inicial chegam a apenas 2,7:1 a 3,1:1 onde se exige 4,5:1, e o título "Orientações anteriores" nos perfis de pesquisador cai para 1,0:1. A verificação automatizada de contraste no CI roda só em modo claro, então essas falhas não derrubam o build.
-- **O bloco "Orientações anteriores" / "Pesquisadores anteriores" não abre pelo teclado.** Responde apenas ao mouse, e por isso também não anuncia o próprio estado. Afetados: perfis de pesquisador e páginas de áreas de conhecimento.
-- **Zoom e refluxo.** Com zoom de 400% (viewport de 320 px), a página inicial, Publicações e Defesas rolam na horizontal; com 200%, só Defesas, por causa de um seletor de filtro mais largo que a tela. O mapa e Oportunidades refluem corretamente.
-- **Dois rótulos estão errados em inglês.** O botão de claro/escuro se anuncia em português em todas as páginas, e o botão do menu móvel se anuncia apenas como "Main".
-- **O mapa de competências se declara uma imagem** enquanto contém 53 nós focalizáveis, o que é contraditório para tecnologia assistiva. A lista de links abaixo do mapa é o caminho confiável.
-- **A página inicial tem dois erros de ARIA** no alternador de visualização das próximas defesas (botões com `aria-selected` sem o papel correspondente). É isso que mantém aquela página em 0,90 em vez de 1,00.
+- **Refluxo a 400% de zoom.** Em um viewport de 320 px, a página inicial, Publicações e os perfis de pesquisador ainda rolam na horizontal por 13 a 34 px. A 200% o site está limpo.
 - **Listagens densas e área clicável.** Na listagem de Defesas, os links de texto de cards consecutivos ficam mais próximos entre si do que os 24 px pedidos pela WCAG 2.2.
+- **A verificação automatizada de contraste no CI roda só em modo claro.** A varredura em modo escuro descrita acima é um procedimento manual; nada impede que uma regressão de contraste no tema escuro passe pelo build.
+- **Fundos em gradiente escapam da verificação automática.** Quando o fundo é um gradiente, o axe classifica o contraste como "indeterminado" em vez de violação — foi assim que os rótulos do rodapé ficaram em 1,6:1 sem que o CI reclamasse. Trechos com gradiente precisam de conferência manual.
 - **Nenhum teste com leitor de tela está registrado.** Nada nesta página se apoia em uma sessão de NVDA, JAWS ou VoiceOver, e não afirmamos o contrário. Nenhuma auditoria externa foi contratada.
 
 ## Reportar uma barreira

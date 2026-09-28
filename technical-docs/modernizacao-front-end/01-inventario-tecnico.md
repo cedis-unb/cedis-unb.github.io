@@ -69,7 +69,7 @@ Levantamento factual do estado do repositório em 2026-07-25, exclusivamente por
 ├── tmp/                   # (ignorado pelo git — scripts descartáveis, dados de auditoria)
 ├── .browserslistrc        # NÃO EXISTE
 ├── .gitignore
-├── .pa11yci.json          # 15 URLs para pa11y-ci
+├── .pa11yci.json          # 15 URLs para pa11y-ci (hoje 21 — ver technical-docs/acessibilidade-linha-de-base.md)
 ├── .tool-versions         # nodejs 24.14.1
 ├── CONVENTIONS.md         # regras editoriais + design system (§11 adicionado 2026-07-25)
 ├── PLANO-AUDITORIA-2026.md
@@ -182,7 +182,9 @@ Nota: `watch:tw` compila via CLI Tailwind independente; o pipeline PostCSS do Hu
 - `hugo.yaml` — configuração Hugo (i18n, menus, params, permalinks, module.hugoVersion)
 - `tailwind.config.js` — 121 linhas: darkMode `'class'`, colors (primary/secondary/accent com escalas 50-900, `accent.550: #C5272F` adicionado 2026-07-25), typography theme customizado, animations customizadas, plugins `[require('@tailwindcss/typography')]`
 - `postcss.config.js` — 6 linhas: `plugins: { tailwindcss: {}, autoprefixer: {} }`
-- `.pa11yci.json` — 15 URLs, WCAG2AA, timeout 45s
+- `.pa11yci.json` — 15 URLs, WCAG2AA, timeout 45s — **número superado**: passou a 21 URLs
+  em `5ff6633095` (2026-09-26); a cobertura vigente está em
+  `technical-docs/acessibilidade-linha-de-base.md`
 - `lighthouserc.json` — 8 URLs, desktop preset, thresholds performance 0.8/accessibility 0.9/seo 0.9/best-practices 0.9, LCP ≤ 2500ms, CLS ≤ 0.1
 - `lychee.toml` — link checker (rodado em CI)
 - `schemas/*.json` — JSON schemas para validate_content.py
