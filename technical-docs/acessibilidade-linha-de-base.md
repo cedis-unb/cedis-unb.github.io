@@ -40,6 +40,13 @@ Pontos que costumam ser descritos errado:
   critérios de sucesso, e só a parte decidível por máquina. Verde significa "nenhuma falha
   automatizada conhecida na amostra".
 
+**Contraste em modo escuro** — `npm run audit:dark`
+(`scripts/audit_dark_contrast.mjs`): regra `color-contrast` do axe-core sobre 8
+arquétipos, um por família de layout, com o tema escuro forçado via
+`localStorage`. Entra no CI logo depois do Pa11y, que roda só no tema claro.
+Falha o build. Amostra pequena de propósito: fecha a regressão silenciosa sem
+duplicar o custo da suíte.
+
 ### Invariantes de `scripts/validate_rendered.py`
 
 Roda sobre o diretório gerado (`docs` no `npm run build`, `public` no CI):
@@ -137,7 +144,7 @@ violações para 0**.
 | `layouts/shortcodes/{prev,next}.html`, `layouts/partials/footer.html` | links prev/next em primary-500 sobre primary-50: 1,87:1 | 1.4.3 | primary-700 e superfície escura para o cartão |
 | `layouts/defesas/list.html` | `<select>` sem limite de largura crescia até a maior opção e estourava já em 200% de zoom | 1.4.10 | `w-full max-w-full min-w-0 truncate` no select e `min-w-0` no label |
 
-### Corrigidos em 2026-09-28
+### Corrigidos em 2026-09-28 — refluxo e área clicável
 
 | Onde | Problema | Critério | O que foi feito |
 | --- | --- | --- | --- |
@@ -180,12 +187,21 @@ Não é portão de CI de propósito: a leitura das paradas é heurística e uma
 forma de gradiente nova poderia derrubar o build sem haver defeito. É
 verificação de rotina após mudança de paleta ou de superfície.
 
+### Corrigidos em 2026-09-28 — cabeçalho, templates e cobertura de CI
+
+| Onde | Problema | Critério | O que foi feito |
+| --- | --- | --- | --- |
+| `layouts/partials/nav.html` | cabeçalho `md:sticky` fixava 199 px entre 768 e 1023 px e 159 px entre 1024 e 1440 px durante todo o scroll | — | hambúrguer abaixo de `lg`, duas linhas de `lg` a `2xl` sem sticky, uma linha e sticky a partir de `2xl` |
+| `layouts/_default/single.html` (fallback) | about, contact, privacy, accessibility, reconhecimentos e divulgação científica caíam num fallback com faixa `bg-primary-600` e h1 branco centralizado, fora do padrão do site | — | `_default/institutional-page.html`, no padrão da família institucional |
+| `content/junte-se/*` | as 7 trilhas tinham `audience`, `duration` e dois CTAs no frontmatter e **nenhum** chegava ao HTML — a página de detalhe publicava menos que a listagem que levava até ela | — | `layouts/junte-se/single.html` publica todos os campos |
+| CI | contraste em modo escuro não era verificado | 1.4.3 | `npm run audit:dark` no pipeline |
+| — | contraste sobre gradiente sem medição registrada | 1.4.3 | `npm run audit:gradient` e a sessão registrada acima |
+
 ### Ainda abertos
 
 | Onde | Problema | Critério | Observação |
 | --- | --- | --- | --- |
-| CI | a verificação automatizada de contraste roda só em modo claro | 1.4.3 | a varredura em modo escuro é manual; uma regressão no tema escuro passa pelo build |
-| qualquer fundo em gradiente | o axe classifica contraste sobre gradiente como *incomplete*, não como violação | 1.4.3 | foi assim que os rótulos do rodapé ficaram em 1,6:1 sem o CI reclamar |
+| qualquer fundo em gradiente | o axe classifica contraste sobre gradiente como *incomplete*, não como violação | 1.4.3 | há procedimento próprio (`npm run audit:gradient`, sessão registrada acima), mas ele não roda a cada push — é executado após mudança de paleta ou de superfície |
 | `layouts/_default/map.html` | D3 7.9.0 vem de `cdn.jsdelivr.net`; se o CDN cair o grafo não é desenhado | — | não é falha WCAG: a lista semântica de links é renderizada no servidor |
 | processo | nenhuma sessão de leitor de tela registrada | — | nada aqui se apoia em NVDA, JAWS ou VoiceOver. Roteiro pronto para execução em `roteiro-leitor-de-tela.md` |
 
@@ -194,7 +210,7 @@ verificação de rotina após mudança de paleta ou de superfície.
 - **Leitor de tela.** Nenhuma sessão de NVDA, JAWS, Narrator ou VoiceOver está registrada.
   Afirmações sobre "ordem de leitura" ou "anúncio correto" não têm respaldo aqui.
 - **Auditoria externa.** Nenhuma contratada. Não citar nenhuma.
-- **Modo escuro no CI.** Nenhuma etapa automatizada exercita a classe `dark` (§1).
+- **Modo escuro no CI.** Coberto desde 2026-09-28 por `npm run audit:dark`, mas só em 8 arquétipos — as demais páginas em tema escuro seguem sem verificação automatizada (§1).
 - **Mobile no CI.** Só local (§1).
 - **eMAG critério por critério.** Usado como referência, não verificado.
 - **Zoom de texto isolado**, orientação, entrada por voz, `forced-colors`/alto contraste do
@@ -215,6 +231,12 @@ PUPPETEER_EXECUTABLE_PATH='/Applications/Google Chrome.app/Contents/MacOS/Google
 # Lighthouse desktop (gate do CI) e mobile (só local)
 npm run audit:lighthouse
 npm run audit:lighthouse-mobile
+
+# contraste em modo escuro (8 arquétipos) — mesmo passo que roda no CI
+npm run audit:dark
+
+# contraste sobre gradientes (cabeçalho, rodapé, heroes, pills) — não é portão
+npm run audit:gradient
 
 # invariantes estruturais
 python3 scripts/validate_rendered.py public

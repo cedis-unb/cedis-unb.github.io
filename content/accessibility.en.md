@@ -33,22 +33,24 @@ Every push runs these checks in CI, and a failure blocks the build:
 
 - **Pa11y** (HTML_CodeSniffer, `WCAG2AA` standard) over **21 fixed URLs**, in both languages. This is a sample, not the whole site — the site generates more than three thousand pages.
 - **Lighthouse CI on desktop** over **8 URLs**, with the accessibility category required to score **at least 0.90** (not 100). The mobile run uses the same threshold but is a local command, not part of CI.
+- **Dark-mode contrast** with axe-core over **8 archetypes** (one page per layout family). It exists because Pa11y runs in light mode only, and without this sample a dark-theme contrast regression would pass the build.
 - **Structural validation** of the generated HTML: breadcrumb trail consistent with its JSON-LD, no duplicated consecutive crumbs, no `aria-controls` pointing at an id that does not exist (this one is checked on *every* generated page), no reading-time metadata in researcher listings, and the contextual research-area cards on profiles.
 
 Automated tools of this kind only detect a minority of the WCAG success criteria — roughly a
 third, and only the machine-decidable part of those. A green build means "no known automated
 failure on the sampled pages", not "accessible".
 
-## Latest measurement (2026-09-27)
+## Latest measurement (2026-09-28)
 
 Measured on a local build of the current site, in both languages:
 
 - Pa11y (`WCAG2AA`): **0 errors on 21/21 URLs**.
-- Scan with axe-core 4.12.1 over **16 pages x 2 themes** (light and dark), with the `wcag2a`, `wcag2aa`, `wcag21a`, `wcag21aa` and `wcag22aa` rule sets: **no violations**. The same scan against the previously published version reported 145.
+- Scan with axe-core 4.12.1 over **20 pages x 2 themes** (light and dark), with the `wcag2a`, `wcag2aa`, `wcag21a`, `wcag21aa` and `wcag22aa` rule sets: **no violations**. The same scan against the version published on 2026-09-27 reported 145.
 - Keyboard: 24 open/close cycles of the header dropdowns (6 menus x 2 languages x 2 themes) all behaved correctly, and a full Tab sweep of four pages per language found **no keyboard trap**.
 - Competency map: 53 nodes, all reachable with Tab, all activatable with Enter and Space, with a visible focus ring in both themes; the zoom and filter buttons are all 34 px tall.
 - Filters on Opportunities, Publications and Defences: every control reachable by keyboard, every control named by a real `<label>`, all 37 px tall.
-- Reflow (SC 1.4.10): at **200% and 400% zoom** (640 px and 320 px viewports), none of the 24 routes tested scrolls sideways.
+- Reflow (SC 1.4.10): across **six widths between 320 px and 1280 px** — covering 400% and 200% zoom — none of the 26 routes tested scrolls sideways.
+- Contrast over **gradient backgrounds**, which automated tools cannot decide: **635 text elements measured** in the header, footer, heroes and pills, against every opaque colour stop of the gradient. **None below the required ratio**; worst ratios 6.74:1 in the footer, 5.18:1 in pills and 7.22:1 in heroes.
 - Target size (SC 2.5.8, 24x24 px minimum): **no failures** across eight audited pages, applying the criterion's inline exception — advisor links sit inside a sentence ("Advisor: Name"), next to non-target text. Outside the exception every target is at least 24 px: the header search link now renders 40x40 px and the defence card title 24 px tall. The 21 map nodes at 20x20 px still conform through the spacing exception.
 
 ## Known gaps
@@ -56,9 +58,8 @@ Measured on a local build of the current site, in both languages:
 These are real, measured, and queued for correction. We prefer to publish them rather than imply they do not exist:
 
 - **The competency map depends on a CDN for its visual form.** D3 is loaded from `cdn.jsdelivr.net`; if the CDN fails, the graph is not drawn. This is not a WCAG failure — the equivalent list of links is server-rendered and stays available — but the visual experience degrades.
-- **Automated contrast checking in CI runs in light mode only.** The dark-mode scan described above is a manual procedure; nothing stops a dark-theme contrast regression from passing the build.
-- **Gradient backgrounds escape automated checking.** When the background is a gradient, axe reports contrast as "incomplete" rather than as a violation — that is how the footer labels sat at 1.6:1 without CI complaining. Areas with gradients need a manual pass.
-- **No screen-reader testing has been recorded.** Nothing on this page is based on a NVDA, JAWS or VoiceOver session, and we do not claim otherwise. No external audit has been commissioned.
+- **Gradient backgrounds still need a check of their own.** When the background is a gradient, axe reports contrast as "incomplete" rather than as a violation — that is how the footer labels sat at 1.6:1 without CI complaining. We now measure those areas with a dedicated procedure, recorded above, but it does not run on every push: it is run after a palette or surface change.
+- **No screen-reader testing has been recorded.** Nothing on this page is based on a NVDA, JAWS or VoiceOver session, and we do not claim otherwise. The session protocol is already written and awaits execution. No external audit has been commissioned.
 
 ## Report a barrier
 

@@ -1709,3 +1709,37 @@ texto da outra — e só com verificação visual. Preservados de propósito:
 - Texto de interface nunca fixo num idioma: sempre `i18n`, inclusive em
   `aria-label` e `title`.
 
+### 12.8 Publicar: ordem e identificador de build
+
+`docs/` é servido pelo GitHub Pages direto da `main`, então a ordem importa:
+
+```
+1. commitar as FONTES
+2. npm run build
+3. commitar docs/
+```
+
+Rodar o build antes de commitar a fonte faz o carimbo registrar um HEAD que
+não contém o que está sendo publicado — foi o que aconteceu até 2026-09-28,
+quando `/build.txt` chegou a apontar dois commits atrás.
+
+`scripts/build_stamp.py` escreve `docs/build.txt` e fornece o valor da
+`<meta name="cedis-build">` da capa:
+
+```
+source=<commit de fonte que gerou este docs/>
+short=<10 primeiros caracteres, com sufixo -dirty quando aplicável>
+dirty=<yes|no>
+built=<timestamp UTC>
+```
+
+O carimbo **não** nomeia o commit que o publica: um arquivo não pode conter o
+SHA do commit que o contém. Nomeia o commit de fonte — e, se a árvore estava
+suja, diz isso em vez de fingir precisão. `dirty=yes` num build publicado é
+defeito de processo, não do carimbo.
+
+Conferir o que está no ar, num pedido:
+
+```bash
+curl -s https://cedis.unb.br/build.txt
+```

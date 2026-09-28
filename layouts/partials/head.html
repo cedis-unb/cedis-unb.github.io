@@ -9,9 +9,16 @@
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="theme-color" content="#ffffff">
 {{/* Identificador do build, só na capa: permite conferir num pedido só se o
-     que está no ar corresponde ao commit esperado, sem varrer o site. O mesmo
-     valor é publicado em /build.txt. Vem de CEDIS_BUILD_SHA, definido por
-     `npm run build`; em CI, cai para GITHUB_SHA. */}}
+     que está no ar corresponde ao esperado, sem varrer o site. O mesmo valor,
+     com mais campos, é publicado em /build.txt.
+
+     Nomeia o commit de FONTE que gerou este docs/, não o commit que o publica
+     — um arquivo não pode referenciar o commit que o contém. O sufixo
+     `-dirty` aparece quando a árvore tinha alterações não commitadas no
+     momento do build; nesse caso o SHA sozinho não identifica a saída.
+
+     Vem de CEDIS_BUILD_SHA, definido por `npm run build` a partir de
+     scripts/build_stamp.py; em CI, cai para GITHUB_SHA. */}}
 {{- if .IsHome }}{{ with (or (getenv "CEDIS_BUILD_SHA") (getenv "GITHUB_SHA")) }}
 <meta name="cedis-build" content="{{ substr . 0 10 }}">
 {{- end }}{{ end }}
