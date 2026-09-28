@@ -81,6 +81,13 @@ exclude = [
   # TODO: github.com/CedisUnB/Atloria retorna 404 em 2026-07-28.
   # Investigar se o repo foi renomeado/tornado privado antes de reincluir.
   "^https?://github\\.com/CedisUnB/Atloria",
+
+  # TODO: nilc.icmc.usp.br (NILC/ICMC-USP) está fora do ar em 2026-09-27 — o
+  # host inteiro redireciona http->https e a porta 443 não completa conexão,
+  # inclusive com user-agent de navegador. Não é bloqueio a bot: é
+  # indisponibilidade do servidor da USP. O registro da publicação continua
+  # correto; reincluir assim que o host voltar.
+  "^https?://nilc\\.icmc\\.usp\\.br/",
 ]
 
 # Nota: exclusão de mailto: e IPs privados usa os defaults do lychee

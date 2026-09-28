@@ -106,26 +106,53 @@ jobs:
       - name: Lighthouse CI
         run: npx --no-install lhci autorun --config=lighthouserc.json
 
-      - name: Link check (lychee)
+      # O glob vinha SEM aspas, então o shell o expandia antes do lychee e
+      # cobria um único nível de diretório: 815 links únicos em vez dos 9336
+      # do site inteiro — ~1,5% das páginas. Com aspas, quem expande é o
+      # lychee, recursivamente.
+      - name: Link check — internos (lychee offline)
         uses: lycheeverse/lychee-action@v2
         with:
           # --root-dir resolve links absolutos root-relative (href="/pt/foo")
           # contra o diretório local do build. Precisa ser caminho absoluto.
+          # Só links locais: determinístico, cobre 100% das páginas e roda em
+          # segundos. Este é o portão.
+          args: >-
+            --offline
+            --no-progress
+            --root-dir ${{ github.workspace }}/public
+            --exclude '^https?://'
+            'public/**/*.html'
+          fail: true
+          output: lychee-internal-report.md
+
+      - name: Link check — externos (lychee)
+        uses: lycheeverse/lychee-action@v2
+        with:
           args: >-
             --config lychee.toml
             --no-progress
             --root-dir ${{ github.workspace }}/public
-            public/**/*.html
-          fail: true
-          # Salva relatório para inspeção mesmo em falha.
+            'public/**/*.html'
+          # Informativo, não bloqueante: são 9336 links externos, boa parte em
+          # repositórios acadêmicos brasileiros que oscilam. Duas execuções
+          # locais do mesmo conteúdo em 2026-09-27 deram 5 e 53 erros, quase
+          # todos timeout. Bloquear nisso deixaria o CI vermelho por
+          # indisponibilidade de terceiros. O relatório vai para o resumo do
+          # job e para os artefatos, e o apodrecimento de links é tratado a
+          # partir dele.
+          fail: false
+          jobSummary: true
           output: lychee-report.md
 
-      - name: Upload lychee report
+      - name: Upload lychee reports
         if: always()
         uses: actions/upload-artifact@v7
         with:
           name: lychee-report
-          path: lychee-report.md
+          path: |
+            lychee-report.md
+            lychee-internal-report.md
           if-no-files-found: ignore
           retention-days: 14
 
