@@ -3,7 +3,11 @@
 {{ $mobileUtilitiesLabel := i18n "ui_utilities" }}
 {{ $searchLabel := i18n "ui_search" }}
 
-<div class="top-0 z-50 w-full border-b border-white/10 bg-gray-950/95 text-gray-200 backdrop-blur 2xl:sticky">
+{{/* `relative` é obrigatório: abaixo de 2xl o cabeçalho não é sticky, e
+     z-index não tem efeito nenhum sobre elemento `position: static` — os
+     painéis dos dropdowns ficavam atrás do conteúdo da página. `2xl:sticky`
+     sobrescreve o position onde a barra fixa. */}}
+<div class="relative top-0 z-50 w-full border-b border-white/10 bg-gray-950/95 text-gray-200 backdrop-blur 2xl:sticky">
     <div x-data="{ open: false, closeMenu() { if (!this.open) return; this.open = false; this.$nextTick(() => this.$refs.mobileMenuButton?.focus()); } }"
         @keydown.escape.window="closeMenu()"
         {{/* A barra usa um contêiner mais largo que o corpo da página: em uma
@@ -47,7 +51,7 @@
                              x-transition:leave="transition ease-in duration-75"
                              x-transition:leave-start="transform opacity-100 scale-100"
                              x-transition:leave-end="transform opacity-0 scale-95"
-                             class="absolute right-0 z-30 mt-3 w-full origin-top-right md:w-screen md:max-w-sm">
+                             class="absolute left-1/2 z-30 mt-3 w-full max-w-[calc(100vw-2rem)] origin-top -translate-x-1/2 md:w-screen md:max-w-xs xl:max-w-sm">
                             <div class="rounded-2xl border border-gray-200/80 bg-white px-2 pt-2 pb-4 shadow-2xl text-zinc-900">
                                 <div class="grid grid-cols-1 gap-4">
                                     {{ range (index site.Menus .Identifier) }}
@@ -88,7 +92,7 @@
                              x-transition:leave="transition ease-in duration-75"
                              x-transition:leave-start="transform opacity-100 scale-100"
                              x-transition:leave-end="transform opacity-0 scale-95"
-                             class="absolute right-0 z-30 mt-3 w-56 origin-top-right">
+                             class="absolute left-1/2 z-30 mt-3 w-56 origin-top -translate-x-1/2">
                             <div class="rounded-2xl border border-gray-200/80 bg-white px-2 py-2 text-primary-900 shadow-2xl">
                                 {{ range (index site.Menus .Identifier) }}
 {{- /* Itens com params.requires: research_lines só aparecem quando há linha de pesquisa ativa

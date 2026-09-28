@@ -1696,10 +1696,14 @@ texto da outra — e só com verificação visual. Preservados de propósito:
 ### 12.7 Acessibilidade que o CI não pega
 
 - Contraste sobre **fundo em gradiente**: o axe marca como *incomplete*, não como
-  violação, e o pa11y não reporta. Conferir à mão. Foi assim que os rótulos do
-  rodapé ficaram em 1,6:1.
-- O CI roda contraste **só em modo claro**. Mudança de paleta pede varredura
-  manual em modo escuro.
+  violação, e o pa11y não reporta. Foi assim que os rótulos do rodapé ficaram em
+  1,6:1. Use `npm run audit:gradient`, que mede contra cada parada opaca do
+  gradiente; não é portão de CI, então rode-o após mudança de paleta ou de
+  superfície.
+- **Pa11y e Lighthouse rodam só no tema claro.** `npm run audit:dark` cobre o
+  modo escuro em 8 arquétipos e roda no CI, mas é amostra: as demais páginas em
+  tema escuro não têm verificação automatizada. Mudança de paleta pede varredura
+  manual além da amostra.
 - Disclosure (`x-show` + `@click`) precisa de `<button type="button">` com
   `:aria-expanded` e `aria-controls`. `@click` em heading não é operável por
   teclado — ver `content/people/all.*.md` como referência.
