@@ -187,7 +187,7 @@ verificação de rotina após mudança de paleta ou de superfície.
 | CI | a verificação automatizada de contraste roda só em modo claro | 1.4.3 | a varredura em modo escuro é manual; uma regressão no tema escuro passa pelo build |
 | qualquer fundo em gradiente | o axe classifica contraste sobre gradiente como *incomplete*, não como violação | 1.4.3 | foi assim que os rótulos do rodapé ficaram em 1,6:1 sem o CI reclamar |
 | `layouts/_default/map.html` | D3 7.9.0 vem de `cdn.jsdelivr.net`; se o CDN cair o grafo não é desenhado | — | não é falha WCAG: a lista semântica de links é renderizada no servidor |
-| processo | nenhuma sessão de leitor de tela registrada | — | nada aqui se apoia em NVDA, JAWS ou VoiceOver |
+| processo | nenhuma sessão de leitor de tela registrada | — | nada aqui se apoia em NVDA, JAWS ou VoiceOver. Roteiro pronto para execução em `roteiro-leitor-de-tela.md` |
 
 ## 5. Não coberto — e assumido como não coberto
 
