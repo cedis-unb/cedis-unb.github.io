@@ -168,9 +168,9 @@
 
     {{/* -------------------- Filtros -------------------- */}}
     <div class="mb-6 grid gap-3 rounded-card border border-slate-200 bg-slate-50 p-4 dark:border-white/10 dark:bg-white/4 md:grid-cols-4">
-      <label class="flex flex-col gap-1 text-xs font-semibold text-slate-700 dark:text-white/80">
+      <label class="flex min-w-0 flex-col gap-1 text-xs font-semibold text-slate-700 dark:text-white/80">
         <span>{{ cond $isPt "Orientador(a)" "Advisor" }}</span>
-        <select x-model="filters.advisor" class="rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm dark:border-white/10 dark:bg-slate-900">
+        <select x-model="filters.advisor" class="w-full max-w-full min-w-0 truncate rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm dark:border-white/10 dark:bg-slate-900">
           <option value="">{{ cond $isPt "Todos" "All" }}</option>
           {{ range $advisors }}
             {{ $p := partial "people-lookup" . }}
@@ -178,16 +178,16 @@
           {{ end }}
         </select>
       </label>
-      <label class="flex flex-col gap-1 text-xs font-semibold text-slate-700 dark:text-white/80">
+      <label class="flex min-w-0 flex-col gap-1 text-xs font-semibold text-slate-700 dark:text-white/80">
         <span>{{ cond $isPt "Programa" "Program" }}</span>
-        <select x-model="filters.program" class="rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm dark:border-white/10 dark:bg-slate-900">
+        <select x-model="filters.program" class="w-full max-w-full min-w-0 truncate rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm dark:border-white/10 dark:bg-slate-900">
           <option value="">{{ cond $isPt "Todos" "All" }}</option>
           {{ range $programs }}<option value="{{ . }}">{{ or (i18n .) . }}</option>{{ end }}
         </select>
       </label>
-      <label class="flex flex-col gap-1 text-xs font-semibold text-slate-700 dark:text-white/80">
+      <label class="flex min-w-0 flex-col gap-1 text-xs font-semibold text-slate-700 dark:text-white/80">
         <span>{{ cond $isPt "Tipo" "Type" }}</span>
-        <select x-model="filters.type" class="rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm dark:border-white/10 dark:bg-slate-900">
+        <select x-model="filters.type" class="w-full max-w-full min-w-0 truncate rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm dark:border-white/10 dark:bg-slate-900">
           <option value="">{{ cond $isPt "Todos" "All" }}</option>
           {{ range $types }}<option value="{{ . }}">{{ index $typeLabels . | default . }}</option>{{ end }}
         </select>

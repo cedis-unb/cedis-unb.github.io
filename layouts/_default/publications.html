@@ -203,7 +203,7 @@
   </section>
 
   <section class="mx-auto grid max-w-(--breakpoint-xl) gap-8 px-4 py-10 md:px-6 md:py-12 lg:grid-cols-[minmax(0,1fr)_18rem] lg:items-start lg:px-8">
-    <article class="order-2 lg:order-1">
+    <article class="order-2 min-w-0 lg:order-1">
       <div class="rounded-4xl border border-black/5 bg-white/85 px-6 py-8 shadow-[0_20px_70px_rgba(15,23,42,0.08)] backdrop-blur dark:border-white/10 dark:bg-white/4 md:px-8 md:py-10"
            x-data="{
              filters: { year: '', type: '', topic: '' },
@@ -445,25 +445,25 @@
                       {{ $isDoi := and (hasPrefix $identifier "10.") (in $identifier "/") }}
                       {{ $label := cond $isDoi "DOI" "ISBN" }}
                       {{ if $isDoi }}
-                      <a href="https://doi.org/{{ $identifier }}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-full border border-black/10 bg-white px-3 py-1.5 text-sm font-medium text-gray-700 transition-colors hover:border-primary-500 hover:text-primary-600 dark:border-white/10 dark:bg-white/6 dark:text-white/80 dark:hover:border-primary-300 dark:hover:text-primary-200">{{ $label }}: {{ $identifier }}</a>
+                      <a href="https://doi.org/{{ $identifier }}" target="_blank" rel="noopener noreferrer" class="inline-flex max-w-full items-center gap-2 break-all rounded-full border border-black/10 bg-white px-3 py-1.5 text-sm font-medium text-gray-700 transition-colors hover:border-primary-500 hover:text-primary-600 dark:border-white/10 dark:bg-white/6 dark:text-white/80 dark:hover:border-primary-300 dark:hover:text-primary-200">{{ $label }}: {{ $identifier }}</a>
                       {{ else }}
-                      <span class="inline-flex items-center gap-2 rounded-full border border-black/10 bg-white px-3 py-1.5 text-sm font-medium text-gray-700 dark:border-white/10 dark:bg-white/6 dark:text-white/80">{{ $label }}: {{ $identifier }}</span>
+                      <span class="inline-flex max-w-full items-center gap-2 break-all rounded-full border border-black/10 bg-white px-3 py-1.5 text-sm font-medium text-gray-700 dark:border-white/10 dark:bg-white/6 dark:text-white/80">{{ $label }}: {{ $identifier }}</span>
                       {{ end }}
                     {{ end }}
                   {{ end }}
                   {{ if $podcast }}
-                  <a href="{{ $podcast }}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-full border border-black/10 bg-white px-3 py-1.5 text-sm font-medium text-gray-700 transition-colors hover:border-primary-500 hover:text-primary-600 dark:border-white/10 dark:bg-white/6 dark:text-white/80 dark:hover:border-primary-300 dark:hover:text-primary-200">Spotify</a>
+                  <a href="{{ $podcast }}" target="_blank" rel="noopener noreferrer" class="inline-flex max-w-full items-center gap-2 break-all rounded-full border border-black/10 bg-white px-3 py-1.5 text-sm font-medium text-gray-700 transition-colors hover:border-primary-500 hover:text-primary-600 dark:border-white/10 dark:bg-white/6 dark:text-white/80 dark:hover:border-primary-300 dark:hover:text-primary-200">Spotify</a>
                   {{ end }}
                   {{ if $github }}
-                  <a href="{{ $github }}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-full border border-black/10 bg-white px-3 py-1.5 text-sm font-medium text-gray-700 transition-colors hover:border-primary-500 hover:text-primary-600 dark:border-white/10 dark:bg-white/6 dark:text-white/80 dark:hover:border-primary-300 dark:hover:text-primary-200">GitHub</a>
+                  <a href="{{ $github }}" target="_blank" rel="noopener noreferrer" class="inline-flex max-w-full items-center gap-2 break-all rounded-full border border-black/10 bg-white px-3 py-1.5 text-sm font-medium text-gray-700 transition-colors hover:border-primary-500 hover:text-primary-600 dark:border-white/10 dark:bg-white/6 dark:text-white/80 dark:hover:border-primary-300 dark:hover:text-primary-200">GitHub</a>
                   {{ end }}
                   {{ if $zenodo }}
-                  <a href="{{ $zenodo }}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-full border border-black/10 bg-white px-3 py-1.5 text-sm font-medium text-gray-700 transition-colors hover:border-primary-500 hover:text-primary-600 dark:border-white/10 dark:bg-white/6 dark:text-white/80 dark:hover:border-primary-300 dark:hover:text-primary-200">Zenodo</a>
+                  <a href="{{ $zenodo }}" target="_blank" rel="noopener noreferrer" class="inline-flex max-w-full items-center gap-2 break-all rounded-full border border-black/10 bg-white px-3 py-1.5 text-sm font-medium text-gray-700 transition-colors hover:border-primary-500 hover:text-primary-600 dark:border-white/10 dark:bg-white/6 dark:text-white/80 dark:hover:border-primary-300 dark:hover:text-primary-200">Zenodo</a>
                   {{ end }}
                   <button type="button"
                           @click="navigator.clipboard.writeText($refs.bibtex.textContent.trim()).then(() => { copied=true; setTimeout(()=>copied=false, 2000) })"
                           :aria-label="copied ? '{{ i18n "ui_bibtex_copied" }}' : '{{ i18n "ui_bibtex_copy" }}'"
-                          class="inline-flex items-center gap-2 rounded-full border border-black/10 bg-white px-3 py-1.5 text-sm font-medium text-gray-700 transition-colors hover:border-primary-500 hover:text-primary-600 dark:border-white/10 dark:bg-white/6 dark:text-white/80 dark:hover:border-primary-300 dark:hover:text-primary-200">
+                          class="inline-flex max-w-full items-center gap-2 break-all rounded-full border border-black/10 bg-white px-3 py-1.5 text-sm font-medium text-gray-700 transition-colors hover:border-primary-500 hover:text-primary-600 dark:border-white/10 dark:bg-white/6 dark:text-white/80 dark:hover:border-primary-300 dark:hover:text-primary-200">
                     <span x-text="copied ? 'OK' : 'BibTeX'"></span>
                   </button>
                 </div>
