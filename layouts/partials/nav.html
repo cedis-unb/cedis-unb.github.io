@@ -10,7 +10,7 @@
              página: logo + menu + utilidades pedem 1328px, e dentro do
              max-w-xl (1280) a linha estourava para fora do viewport, fazendo
              TODA página rolar na horizontal de 768px a ~1400px. */}}
-        class="mx-auto max-w-[88rem] px-4 md:px-6 lg:px-8">
+        class="mx-auto max-w-[93rem] px-4 md:px-6 lg:px-8">
        <div class="flex items-center justify-between py-4 md:gap-6">
             <a href="{{ .Site.Home.RelPermalink }}" class="flex items-center text-gray-100 transition duration-500 ease-out group md:w-60 md:shrink-0">
                 <img src="/images/site-logo.svg"
@@ -121,7 +121,7 @@
                           clip-rule="evenodd"></path>
                 </svg>
             </button>
-            <div class="hidden md:flex md:w-60 md:shrink-0 md:justify-end">
+            <div class="hidden md:flex md:shrink-0 md:justify-end">
                 <div class="flex items-center gap-1 rounded-full border border-white/10 bg-white/6 px-2 py-1 shadow-[0_10px_30px_rgba(0,0,0,0.18)]">
                     <a href="{{ "/search" | relLangURL }}" class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full text-gray-300 transition-colors hover:bg-white/10 hover:text-white focus:bg-primary-700 focus:text-white focus:outline-hidden" title="{{ $searchLabel }}">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -136,8 +136,8 @@
                     {{ end }}
 
                     <div class="mx-1 hidden h-8 w-px bg-white/10 lg:block"></div>
-                    <a href="https://unb.br" target="_blank" rel="noopener noreferrer" class="hidden items-center justify-center rounded-full px-2 py-1 transition-colors hover:bg-white/10 lg:flex" title="Universidade de Brasilia">
-                        <img src="/images/as_vert_neg.webp" alt="Logo UnB" class="h-9 w-24 object-contain opacity-90" loading="lazy" decoding="async">
+                    <a href="https://unb.br" target="_blank" rel="noopener noreferrer" class="hidden shrink-0 items-center justify-center rounded-full px-2 py-1 transition-colors hover:bg-white/10 lg:flex" title="Universidade de Brasilia">
+                        <img src="/images/as_vert_neg.webp" alt="Logo UnB" class="h-9 w-24 shrink-0 object-contain opacity-90" loading="lazy" decoding="async">
                     </a>
                 </div>
             </div>
@@ -245,7 +245,7 @@
                 </div>
 
                 <a href="https://unb.br" target="_blank" rel="noopener noreferrer" class="mt-3 flex items-center justify-center rounded-2xl border border-white/10 bg-white/4 px-3 py-3 transition-colors hover:bg-white/10" title="Universidade de Brasilia">
-                    <img src="/images/as_vert_neg.webp" alt="Logo UnB" class="h-9 w-24 object-contain opacity-90" loading="lazy" decoding="async">
+                    <img src="/images/as_vert_neg.webp" alt="Logo UnB" class="h-9 w-24 shrink-0 object-contain opacity-90" loading="lazy" decoding="async">
                 </a>
             </div>
             </div>
