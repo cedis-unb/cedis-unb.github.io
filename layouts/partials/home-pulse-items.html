@@ -1,0 +1,159 @@
+{{/*
+  home-pulse-items — feed consolidado do "pulso" da home.
+
+  Junta, numa única lista ordenada por data (desc), tudo que a capa pode
+  anunciar: notícias publicadas, produtos, oportunidades abertas com prazo
+  futuro, itens de data/productions.yaml e defesas ainda por acontecer.
+
+  Entrada (dict):
+    page         — a página (precisa de .Site.RegularPages e do idioma)
+    defenseTypes — tipos de productions.yaml que contam como defesa
+
+  Saída (dict):
+    items    — feed completo, ordenado por data desc
+    display  — itens exibíveis: só os de data real nos últimos 60 dias,
+               com recuo para notícias e depois para o feed inteiro
+    top      — primeiro item de display ("" quando não há nenhum)
+    rest     — os 4 seguintes
+
+  Cada item é um dict: type, title, url, date, hasFullDate, year, summary.
+  hasFullDate distingue data real de data sintetizada a partir do ano — é o
+  que impede um item só-com-ano de entrar em "esta semana".
+*/}}
+
+{{ $page := .page }}
+{{ $defenseTypes := .defenseTypes }}
+{{ $lang := $page.Site.Language.Lang }}
+{{ $items := slice }}
+
+{{ range where (where $page.Site.RegularPages "Section" "posts") "Params.tags" "intersect" (slice "News") }}
+  {{ if lt .Date now }}
+    {{ $items = $items | append (dict
+      "type" "news"
+      "title" .Title
+      "url" .RelPermalink
+      "date" .Date
+      "hasFullDate" true
+      "year" .Date.Year
+      "summary" (or .Params.summary "")
+    ) }}
+  {{ end }}
+{{ end }}
+
+{{ range where $page.Site.RegularPages "Section" "products" }}
+  {{ if lt .Date now }}
+    {{ $items = $items | append (dict
+      "type" "product"
+      "title" .Title
+      "url" .RelPermalink
+      "date" .Date
+      "hasFullDate" true
+      "year" .Date.Year
+      "summary" (or .Params.summary "")
+    ) }}
+  {{ end }}
+{{ end }}
+
+{{/* Oportunidades abertas (status open, prazo futuro) entram no pulse
+     como chamada pública — mesma automação das notícias de capa. */}}
+{{ range where $page.Site.RegularPages "Section" "opportunities" }}
+  {{ $oppDeadline := time (.Params.deadline | default "1900-01-01") }}
+  {{ $oppStatus := .Params.status | default "open" }}
+  {{ if and (eq $oppStatus "open") (ge $oppDeadline now) (lt .Date now) }}
+    {{ $items = $items | append (dict
+      "type" "opportunity"
+      "title" .Title
+      "url" .RelPermalink
+      "date" .Date
+      "hasFullDate" true
+      "year" .Date.Year
+      "summary" (or .Params.summary "")
+    ) }}
+  {{ end }}
+{{ end }}
+
+{{ range hugo.Data.productions.items }}
+  {{/* .year vem sempre como int em productions.yaml (329/329 verificado).
+       Anteriormente convertíamos via printf + findRE + replaceRE por item;
+       coerção direta com `int` é O(1) e evita 3 chamadas de regex/item. */}}
+  {{ $yr := 0 }}
+  {{ with .year }}{{ $yr = int . }}{{ end }}
+  {{ if gt $yr 0 }}
+    {{ $tt := "publication" }}
+    {{ if in $defenseTypes .type }}{{ $tt = "defense" }}{{ end }}
+    {{ if eq .type "registro" }}{{ $tt = "registration" }}{{ end }}
+    {{ $title := "" }}
+    {{ with .title }}
+      {{ $title = index . $lang }}
+      {{ if not $title }}{{ $title = index . "pt" }}{{ end }}
+    {{ end }}
+    {{ $sm := "" }}
+    {{ with .summary }}
+      {{ $sm = index . $lang }}
+      {{ if not $sm }}{{ $sm = "" }}{{ end }}
+    {{ end }}
+    {{ $url := printf "%s#%d" ("/publications/" | relLangURL) $yr }}
+    {{ with .url }}{{ $url = . }}{{ end }}
+    {{ if $title }}
+      {{ $items = $items | append (dict
+        "type" $tt
+        "title" $title
+        "url" $url
+        "date" (time (printf "%04d-07-01T00:00:00Z" $yr))
+        "hasFullDate" false
+        "year" $yr
+        "summary" $sm
+      ) }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{/* Defesas UPCOMING (state=upcoming): entram no feed como chamada
+     pública. Ordena depois; badge distintivo em pulse-badge.html. */}}
+{{ range hugo.Data.defesas }}
+  {{ $sd := time .scheduled_date }}
+  {{ if $sd.After now }}
+    {{ if ne .status_override "withdrawn" }}
+      {{ $title := "" }}
+      {{ with .title }}
+        {{ $title = or (index . $lang) (index . "pt") (index . "en") }}
+      {{ end }}
+      {{ $sm := "" }}
+      {{ with .summary }}
+        {{ $sm = or (index . $lang) (index . "pt") "" }}
+      {{ end }}
+      {{ if $title }}
+        {{ $items = $items | append (dict
+          "type" "defense_upcoming"
+          "title" $title
+          "url" (printf "/defesas/%s/" .id | relLangURL)
+          "date" $sd
+          "hasFullDate" true
+          "year" $sd.Year
+          "summary" $sm
+        ) }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{ $items = sort $items "date" "desc" }}
+
+{{/* "Esta semana": só itens de data real nos últimos 60 dias, qualquer tipo. */}}
+{{ $cutoff := now.AddDate 0 0 -60 }}
+{{ $display := where (where $items "hasFullDate" true) "date" ">=" $cutoff }}
+{{ if eq (len $display) 0 }}
+  {{ $display = where $items "type" "news" }}
+{{ end }}
+{{ if eq (len $display) 0 }}
+  {{ $display = $items }}
+{{ end }}
+
+{{ $top := "" }}
+{{ $rest := slice }}
+{{ if gt (len $display) 0 }}
+  {{ $top = index $display 0 }}
+  {{ $rest = first 4 (after 1 $display) }}
+{{ end }}
+
+{{ return dict "items" $items "display" $display "top" $top "rest" $rest }}

@@ -1,0 +1,69 @@
+{{/*
+  home-topic-stats — áreas ordenadas e temas em alta da home.
+
+  Entrada (dict):
+    page — a página (precisa de .Site.RegularPages)
+
+  Saída (dict):
+    areaPages    — páginas de área, sem "lista", ordenadas por weight
+    topTags      — 15 temas mais frequentes: dicts {tag, count}
+    maxTagCount  — maior contagem (0 quando não há tema), para a escala
+    minYear      — primeiro ano da janela considerada
+    currentYear  — ano corrente
+
+  A janela é dos últimos 4 anos. Chaves de pesquisador e os marcadores
+  "active"/"inactive" são descartados: são metadados de vínculo, não temas.
+*/}}
+
+{{ $page := .page }}
+{{ $currentYear := now.Year }}
+{{ $minYear := sub $currentYear 3 }}
+
+{{/* Chaves de orientador vêm do people-index, não de heurística de nome. */}}
+{{ $advisorKeys := slice }}
+{{ range $slug, $entry := (partialCached "people-index" "global") }}
+  {{ if or (eq $entry.profile_level "researcher") (eq $entry.profile_level "advisor_only") }}
+    {{ $advisorKeys = $advisorKeys | append $slug }}
+  {{ end }}
+{{ end }}
+
+{{ $tagCounts := dict }}
+{{ range hugo.Data.productions.items }}
+  {{ $itemYear := 0 }}
+  {{ with .year }}
+    {{ $yearStr := printf "%v" . }}
+    {{ if gt (len (findRE "^[0-9]{4}" $yearStr)) 0 }}
+      {{ $itemYear = int (replaceRE "^([0-9]{4}).*$" "$1" $yearStr) }}
+    {{ end }}
+  {{ end }}
+  {{ if ge $itemYear $minYear }}
+    {{ range .tags }}
+      {{ if and (not (in $advisorKeys .)) (ne . "active") (ne . "inactive") }}
+        {{ $prev := index $tagCounts . | default 0 }}
+        {{ $tagCounts = merge $tagCounts (dict . (add $prev 1)) }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{ $tagsList := slice }}
+{{ range $tag, $count := $tagCounts }}
+  {{ $tagsList = $tagsList | append (dict "tag" $tag "count" $count) }}
+{{ end }}
+{{ $tagsList = sort $tagsList "count" "desc" }}
+{{ $topTags := first 15 $tagsList }}
+
+{{ $maxTagCount := 0 }}
+{{ if gt (len $topTags) 0 }}{{ $maxTagCount = (index $topTags 0).count }}{{ end }}
+
+{{ $areaPages := where $page.Site.RegularPages "Section" "areas" }}
+{{ $areaPages = where $areaPages "File.BaseFileName" "ne" "lista" }}
+{{ $areaPages = sort $areaPages "Params.weight" "asc" }}
+
+{{ return dict
+  "areaPages" $areaPages
+  "topTags" $topTags
+  "maxTagCount" $maxTagCount
+  "minYear" $minYear
+  "currentYear" $currentYear
+}}

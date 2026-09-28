@@ -1,0 +1,160 @@
+{{/*
+  home-impact-metrics — indicadores do bloco de impacto da home.
+
+  Entrada (dict):
+    page         — a página (precisa de .Site.RegularPages)
+    defenseTypes — tipos de productions.yaml que contam como defesa
+    pulseItems   — feed de home-pulse-items (para a última notícia)
+
+  Saída (dict):
+    currentYear, yearsCount, researcherCount, productCount,
+    pubsThisYear, defensesThisYear, registrationsThisYear,
+    lastNewsItem, lastPubItem
+
+  Regras de "última publicação registrada" — cada uma já causou erro real
+  em produção, por isso ficam juntas e comentadas:
+    · defesas não contam (têm indicador próprio);
+    · registros de software não contam (têm indicador próprio);
+    · ano maior que o ano corrente não conta;
+    · data futura não conta, mesmo que o ano seja o corrente.
+  Sem a última regra, uma publicação com data em 2027 apareceria como
+  "última publicação registrada" já em 2026. Nada é removido do catálogo:
+  o filtro é só deste indicador.
+*/}}
+
+{{ $page := .page }}
+{{ $defenseTypes := .defenseTypes }}
+{{ $pulseItems := .pulseItems }}
+
+{{ $currentYear := now.Year }}
+{{ $yearsCount := add (sub now.Year 2013) 1 }}
+
+{{ $researcherCount := 0 }}
+{{ range where $page.Site.RegularPages "Section" "people" }}
+  {{ if in .Params.categories "researcher" }}
+    {{ $researcherCount = add $researcherCount 1 }}
+  {{ end }}
+{{ end }}
+
+{{ $productCount := 0 }}
+{{ range where $page.Site.RegularPages "Section" "products" }}
+  {{ if eq .Date.Year $currentYear }}
+    {{ $productCount = add $productCount 1 }}
+  {{ end }}
+{{ end }}
+
+{{ $pubsThisYear := 0 }}
+{{ $defensesThisYear := 0 }}
+{{ $registrationsThisYear := 0 }}
+
+{{ range hugo.Data.defesas }}
+  {{ $sd := time .scheduled_date }}
+  {{ if and (eq $sd.Year $currentYear) (ne .status_override "withdrawn") }}
+    {{ $defensesThisYear = add $defensesThisYear 1 }}
+  {{ end }}
+{{ end }}
+
+{{ range hugo.Data.productions.items }}
+  {{ $yr := 0 }}
+  {{ with .year }}
+    {{ $ys := printf "%v" . }}
+    {{ if gt (len (findRE "^[0-9]{4}" $ys)) 0 }}
+      {{ $yr = int (replaceRE "^([0-9]{4}).*$" "$1" $ys) }}
+    {{ end }}
+  {{ end }}
+  {{ if eq $yr $currentYear }}
+    {{ if eq .type "registro" }}
+      {{ $registrationsThisYear = add $registrationsThisYear 1 }}
+    {{ else if not (in $defenseTypes .type) }}
+      {{ $pubsThisYear = add $pubsThisYear 1 }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{ $lastNewsItem := "" }}
+{{ range $pulseItems }}
+  {{ if and (eq .type "news") (not $lastNewsItem) }}{{ $lastNewsItem = . }}{{ end }}
+{{ end }}
+
+{{ $lang := $page.Site.Language.Lang }}
+{{ $lastPubItem := "" }}
+{{ $lastPubSortKey := "" }}
+{{ range hugo.Data.productions.items }}
+  {{ if or (in $defenseTypes .type) (eq .type "registro") }}{{ continue }}{{ end }}
+  {{ $yr := 0 }}
+  {{ with .year }}
+    {{ $ys := printf "%v" . }}
+    {{ if gt (len (findRE "^[0-9]{4}" $ys)) 0 }}
+      {{ $yr = int (replaceRE "^([0-9]{4}).*$" "$1" $ys) }}
+    {{ end }}
+  {{ end }}
+  {{ if or (eq $yr 0) (gt $yr $currentYear) }}{{ continue }}{{ end }}
+
+  {{ $hasFullDate := false }}
+  {{ $itemDate := time (printf "%04d-12-31T00:00:00Z" $yr) }}
+  {{ with .publication_date }}
+    {{ $parsedDate := time . }}
+    {{ if gt $parsedDate now }}{{ continue }}{{ end }}
+    {{ $itemDate = $parsedDate }}
+    {{ $hasFullDate = true }}
+  {{ end }}
+  {{ if not $hasFullDate }}
+    {{ with .published_at }}
+      {{ $parsedDate := time . }}
+      {{ if gt $parsedDate now }}{{ continue }}{{ end }}
+      {{ $itemDate = $parsedDate }}
+      {{ $hasFullDate = true }}
+    {{ end }}
+  {{ end }}
+  {{ if not $hasFullDate }}
+    {{ with .date }}
+      {{ $parsedDate := time . }}
+      {{ if gt $parsedDate now }}{{ continue }}{{ end }}
+      {{ $itemDate = $parsedDate }}
+      {{ $hasFullDate = true }}
+    {{ end }}
+  {{ end }}
+
+  {{ $title := "" }}
+  {{ with .title }}
+    {{ $title = index . $lang }}
+    {{ if not $title }}{{ $title = index . "pt" }}{{ end }}
+  {{ end }}
+  {{ if not $title }}{{ continue }}{{ end }}
+
+  {{ $summary := "" }}
+  {{ with .summary }}
+    {{ $summary = index . $lang }}
+    {{ if not $summary }}{{ $summary = index . "pt" }}{{ end }}
+  {{ end }}
+
+  {{ $url := printf "%s#%d" ("/publications/" | relLangURL) $yr }}
+  {{ with .url }}{{ $url = . }}{{ end }}
+
+  {{ $sortKey := printf "%04d-12-31" $yr }}
+  {{ if $hasFullDate }}{{ $sortKey = $itemDate.Format "2006-01-02" }}{{ end }}
+  {{ if or (not $lastPubItem) (gt $sortKey $lastPubSortKey) }}
+    {{ $lastPubSortKey = $sortKey }}
+    {{ $lastPubItem = dict
+      "type" "publication"
+      "title" $title
+      "url" $url
+      "date" $itemDate
+      "hasFullDate" $hasFullDate
+      "year" $yr
+      "summary" $summary
+    }}
+  {{ end }}
+{{ end }}
+
+{{ return dict
+  "currentYear" $currentYear
+  "yearsCount" $yearsCount
+  "researcherCount" $researcherCount
+  "productCount" $productCount
+  "pubsThisYear" $pubsThisYear
+  "defensesThisYear" $defensesThisYear
+  "registrationsThisYear" $registrationsThisYear
+  "lastNewsItem" $lastNewsItem
+  "lastPubItem" $lastPubItem
+}}
