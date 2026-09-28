@@ -6,9 +6,13 @@
 <div class="top-0 z-50 w-full border-b border-white/10 bg-gray-950/95 text-gray-200 backdrop-blur md:sticky">
     <div x-data="{ open: false, closeMenu() { if (!this.open) return; this.open = false; this.$nextTick(() => this.$refs.mobileMenuButton?.focus()); } }"
         @keydown.escape.window="closeMenu()"
-        class="mx-auto max-w-(--breakpoint-xl) px-4 md:px-6 lg:px-8">
+        {{/* A barra de navegação usa um contêiner mais largo que o corpo da
+             página: logo + menu + utilidades pedem 1328px, e dentro do
+             max-w-xl (1280) a linha estourava para fora do viewport, fazendo
+             TODA página rolar na horizontal de 768px a ~1400px. */}}
+        class="mx-auto max-w-[88rem] px-4 md:px-6 lg:px-8">
        <div class="flex items-center justify-between py-4 md:gap-6">
-            <a href="{{ .Site.Home.RelPermalink }}" class="flex items-center text-gray-100 transition duration-500 ease-out group md:min-w-60">
+            <a href="{{ .Site.Home.RelPermalink }}" class="flex items-center text-gray-100 transition duration-500 ease-out group md:w-60 md:shrink-0">
                 <img src="/images/site-logo.svg"
                      class="h-9 w-24 transition-opacity group-hover:opacity-50 group-focus:opacity-70"
                      alt="{{ .Site.Title }} Logo" />
@@ -21,8 +25,8 @@
                     </span>
                 </div>
             </a>
-            <div class="hidden md:flex md:flex-1 md:justify-center">
-                <div class="flex items-center gap-1 rounded-full border border-white/10 bg-white/6 px-2 py-1 shadow-[0_10px_30px_rgba(0,0,0,0.18)]">
+            <div class="hidden min-w-0 md:flex md:flex-1 md:justify-center">
+                <div class="flex max-w-full items-center gap-1 overflow-x-auto rounded-full border border-white/10 bg-white/6 px-2 py-1 shadow-[0_10px_30px_rgba(0,0,0,0.18)] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
                     {{ range site.Menus.main }}
                     {{ if (eq "complexdropdown" .Pre) }}
                     <div @click.away="open = false" class="relative" x-data="{ open: false, close() { if (!this.open) return; this.open = false; this.$nextTick(() => this.$refs.trigger?.focus()); } }" @keydown.escape="if (open) { $event.stopPropagation(); close(); }">
@@ -117,7 +121,7 @@
                           clip-rule="evenodd"></path>
                 </svg>
             </button>
-            <div class="hidden md:flex md:min-w-60 md:justify-end">
+            <div class="hidden md:flex md:w-60 md:shrink-0 md:justify-end">
                 <div class="flex items-center gap-1 rounded-full border border-white/10 bg-white/6 px-2 py-1 shadow-[0_10px_30px_rgba(0,0,0,0.18)]">
                     <a href="{{ "/search" | relLangURL }}" class="flex h-10 w-10 items-center justify-center rounded-full text-gray-300 transition-colors hover:bg-white/10 hover:text-white focus:bg-primary-700 focus:text-white focus:outline-hidden" title="{{ $searchLabel }}">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
