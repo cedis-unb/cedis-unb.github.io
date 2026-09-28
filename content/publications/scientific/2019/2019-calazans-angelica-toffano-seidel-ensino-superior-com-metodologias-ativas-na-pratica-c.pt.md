@@ -43,7 +43,7 @@ publisher: Editora Itacaiúnas
 location: ''
 pages: '203'
 volume: '1'
-external_url: https://editoraitacaiunas.com.br/wp-content/uploads/2019/11/livro-metodologias-ativas.pdf
+external_url: https://books.google.com/books/about/Ensino_Superior_Com_Metodologias_Ativas.html?id=sOv0DwAAQBAJ
 spotify_podcast: ''
 github_repo: ''
 zenodo_record: ''

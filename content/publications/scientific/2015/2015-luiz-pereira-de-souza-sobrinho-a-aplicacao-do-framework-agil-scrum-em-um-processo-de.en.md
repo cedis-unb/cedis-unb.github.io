@@ -38,7 +38,7 @@ publisher: ''
 location: São Paulo, SP, Brasil
 pages: ''
 volume: ''
-external_url: https://www.tecsi.org/contecsi/arquivos/12contecsi.pdf
+external_url: https://www.contecsi.tecsi.org/index.php/contecsi/12CONTECSI/paper/view/3140
 spotify_podcast: ''
 github_repo: ''
 zenodo_record: ''
