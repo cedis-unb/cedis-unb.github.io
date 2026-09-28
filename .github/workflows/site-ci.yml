@@ -27,7 +27,7 @@ permissions:
   contents: read
 
 env:
-  HUGO_VERSION: '0.165.0'
+  HUGO_VERSION: '0.166.0'
   NODE_VERSION: '24'
   HUGO_ENV: production
 
@@ -39,14 +39,14 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           # Necessário porque hugo.yaml tem enableGitInfo: true.
           fetch-depth: 0
           submodules: recursive
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v7
         with:
           node-version: ${{ env.NODE_VERSION }}
           cache: 'npm'
@@ -63,21 +63,25 @@ jobs:
       - name: Install Python validation dependencies
         run: python3 -m pip install -r requirements.txt
 
-      - name: Check generated publication pages
-        run: python3 scripts/build_publications.py --check
-
-      - name: Validate content data
-        run: python3 scripts/validate_content.py
+      - name: Validate sources (npm test)
+        # Mesma suíte do desenvolvimento local: páginas geradas de publicações e
+        # de linhas de pesquisa, modo escuro por classe, coerência de versão do
+        # Alpine, dados de conteúdo e paridade PT/EN. Antes o CI rodava só parte
+        # disso, então verde no CI e verde local não queriam dizer o mesmo.
+        run: npm test
         env:
           CEDIS_VALIDATE_REPORT: content-validation-report.md
-
-      - name: Validate PT/EN parity
-        run: python3 scripts/validate_i18n.py
-        env:
           CEDIS_I18N_REPORT: i18n-validation-report.md
 
       - name: Build site (Hugo)
         run: python3 scripts/build_publications.py && hugo --gc --minify --destination public
+
+      - name: Validate rendered HTML
+        # Invariantes de produto que Pa11y e Lighthouse não pegam: headings e
+        # estado vazio de Oportunidades, breadcrumb duplicado, divergência entre
+        # trilha visível e JSON-LD, aria-controls órfão, tempo de leitura em
+        # listagem de pesquisadores e cards contextuais de áreas nos perfis.
+        run: python3 scripts/validate_rendered.py public
 
       - name: Build Pagefind index
         run: npx --no-install pagefind --site public
@@ -102,7 +106,7 @@ jobs:
       - name: Lighthouse CI
         run: npx --no-install lhci autorun --config=lighthouserc.json
 
-      - name: Install lychee (link checker)
+      - name: Link check (lychee)
         uses: lycheeverse/lychee-action@v2
         with:
           # --root-dir resolve links absolutos root-relative (href="/pt/foo")
@@ -118,7 +122,7 @@ jobs:
 
       - name: Upload lychee report
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: lychee-report
           path: lychee-report.md
@@ -127,7 +131,7 @@ jobs:
 
       - name: Upload pa11y report
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: pa11y-report
           path: pa11y-report.json
@@ -136,7 +140,7 @@ jobs:
 
       - name: Upload Lighthouse report
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: lhci-report
           path: lhci-report
@@ -145,7 +149,7 @@ jobs:
 
       - name: Upload content validation report
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: content-validation-report
           path: content-validation-report.md
@@ -154,7 +158,7 @@ jobs:
 
       - name: Upload i18n validation report
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: i18n-validation-report
           path: i18n-validation-report.md
@@ -163,7 +167,7 @@ jobs:
 
       - name: Upload built site
         if: success()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: site-public
           path: public

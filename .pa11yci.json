@@ -6,7 +6,9 @@
     "chromeLaunchConfig": {
       "args": [
         "--no-sandbox",
-        "--disable-dev-shm-usage"
+        "--disable-dev-shm-usage",
+        "--lang=en-US",
+        "--accept-lang=en-US"
       ]
     }
   },
@@ -30,7 +32,7 @@
     "http://127.0.0.1:4173/pt/junte-se/",
     "http://127.0.0.1:4173/defesas/",
     "http://127.0.0.1:4173/pt/defesas/",
-    "http://127.0.0.1:4173/oportunidades/",
+    "http://127.0.0.1:4173/opportunities/",
     "http://127.0.0.1:4173/categories/news/"
   ]
 }
