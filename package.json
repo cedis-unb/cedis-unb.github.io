@@ -12,7 +12,9 @@
     "@tailwindcss/cli": "^4.3.3",
     "@tailwindcss/typography": "^0.5.19",
     "alpinejs": "3.17.4",
+    "axe-core": "4.12.1",
     "pa11y-ci": "^4.1.1",
+    "puppeteer": "^24.43.1",
     "tailwindcss": "^4.3.3"
   },
   "scripts": {
@@ -28,8 +30,11 @@
     "prestart": "npm run build:publications && npm run build:research-lines",
     "start": "hugo server -d .hugo-server --disableFastRender",
     "start:lines-preview": "HUGO_CEDIS_PREVIEW_LINES=1 npm run build:research-lines && hugo server -d .hugo-server --disableFastRender; npm run build:research-lines",
-    "build": "npm run build:publications && npm run build:research-lines && hugo --minify --cleanDestinationDir && npm run validate:rendered && pagefind --site docs",
+    "build": "npm run build:publications && npm run build:research-lines && CEDIS_BUILD_SHA=$(git rev-parse HEAD) hugo --minify --cleanDestinationDir && npm run build:stamp && npm run validate:rendered && pagefind --site docs",
+    "build:stamp": "git rev-parse HEAD > docs/build.txt",
     "audit:a11y": "pa11y-ci --config .pa11yci.json",
+    "audit:dark": "node scripts/audit_dark_contrast.mjs",
+    "audit:gradient": "node scripts/audit_gradient_contrast.mjs",
     "audit:lighthouse": "lhci autorun --config=lighthouserc.json",
     "audit:lighthouse-mobile": "lhci autorun --config=lighthouserc-mobile.json",
     "test": "npm run check:publications && npm run check:research-lines && npm run check:css && npm run check:alpine && python3 scripts/validate_content.py && python3 scripts/validate_i18n.py",

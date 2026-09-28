@@ -103,6 +103,14 @@ jobs:
         env:
           PUPPETEER_EXECUTABLE_PATH: /usr/bin/google-chrome
 
+      - name: Dark-mode contrast audit (axe, 8 arquétipos)
+        # O pa11y roda só no tema claro, então uma regressão de contraste no
+        # tema escuro passava sem ser notada. Amostra pequena de propósito:
+        # cobre uma página por família de layout, sem duplicar a suíte.
+        run: npm run audit:dark
+        env:
+          PUPPETEER_EXECUTABLE_PATH: /usr/bin/google-chrome
+
       - name: Lighthouse CI
         run: npx --no-install lhci autorun --config=lighthouserc.json
 

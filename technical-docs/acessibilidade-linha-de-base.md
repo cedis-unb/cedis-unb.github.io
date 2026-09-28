@@ -150,6 +150,36 @@ violações para 0**.
 Depois disso: **0 rolagens horizontais** em 24 rotas a 320, 375 e 640 px, e
 **0 falhas de SC 2.5.8** em oito páginas com a exceção inline aplicada.
 
+### Contraste sobre gradientes — sessão registrada (2026-09-28)
+
+O axe classifica contraste sobre gradiente como *incomplete*, não como
+violação, então essa superfície precisa de conferência própria.
+`npm run audit:gradient` (`scripts/audit_gradient_contrast.mjs`) calcula a
+razão contra **cada parada de cor opaca** do gradiente do ancestral mais
+próximo e reporta o pior caso, cobrindo cabeçalho, rodapé, heroes e pills em
+8 páginas x 2 temas.
+
+| Superfície | Elementos medidos | Abaixo do exigido | Pior razão |
+| --- | --- | --- | --- |
+| Rodapé | 240 | 0 | 6,74:1 |
+| Pills | 366 | 0 | 5,18:1 |
+| Heroes | 29 | 0 | 7,22:1 |
+
+Duas armadilhas de método, encontradas ao calibrar o script e que qualquer
+reexecução precisa respeitar:
+
+- a busca pelo gradiente tem de **parar no primeiro ancestral com cor de fundo
+  opaca** — sem isso, texto sobre um hero `bg-slate-950` era comparado com o
+  gradiente da página, bem mais acima, dando razões falsas de 1,00:1;
+- só as **paradas opacas** descrevem o fundo efetivo. Véus radiais como
+  `rgba(197,39,47,0.12)` e o `transparent` que o navegador expande para
+  `rgba(0,0,0,0)` são tingimentos sobre a base; tratá-los como cor cheia
+  produzia razões falsas de ~1:1 em heroes claros.
+
+Não é portão de CI de propósito: a leitura das paradas é heurística e uma
+forma de gradiente nova poderia derrubar o build sem haver defeito. É
+verificação de rotina após mudança de paleta ou de superfície.
+
 ### Ainda abertos
 
 | Onde | Problema | Critério | Observação |
