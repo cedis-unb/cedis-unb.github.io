@@ -236,7 +236,9 @@ languages:
           pre: zenodo
           name: "Materiais no Zenodo"
           post: "Datasets, código e materiais registrados"
-          url: /publications/zenodo/
+          # Link direto para a comunidade do CEDIS no Zenodo. A URL canônica
+          # da comunidade é estável; o Zenodo redireciona para a aba corrente.
+          url: https://zenodo.org/communities/cedis-unb
           weight: 30
       participe:
         - identifier: part-oportunidades
@@ -523,7 +525,7 @@ languages:
           pre: zenodo
           name: "Materials on Zenodo"
           post: "Datasets, code, and registered materials"
-          url: /publications/zenodo/
+          url: https://zenodo.org/communities/cedis-unb
           weight: 30
       participe:
         - identifier: part-oportunidades
