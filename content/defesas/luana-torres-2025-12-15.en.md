@@ -1,10 +1,12 @@
 ---
 title: "Development process for collaborative projects: the Agromart experience"
 date: 1970-01-01T00:00:00Z
-scheduled_date: 2025-06-15T00:00:00-03:00
+scheduled_date: 2025-12-15T00:00:00-03:00
 draft: false
 language: en
-translationKey: "defesa-luana-torres-2025-06-15"
+translationKey: "defesa-luana-torres-2025-12-15"
 canonical_source: data/defesas.yaml
-defesa_id: "luana-torres-2025-06-15"
+defesa_id: "luana-torres-2025-12-15"
+aliases:
+  - /defesas/luana-torres-2025-06-15/
 ---

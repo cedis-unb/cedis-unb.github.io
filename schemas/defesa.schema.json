@@ -4,7 +4,14 @@
   "title": "Defesa (entidade primeira)",
   "description": "Item de data/defesas.yaml — evento único (data + banca + tema + aluno + orientador) do qual podem decorrer notícia e publicação. Ver PLANO-DEFESAS-2026.md §2.",
   "type": "object",
-  "required": ["id", "type", "scheduled_date", "title", "students", "advisor"],
+  "required": [
+    "id",
+    "type",
+    "scheduled_date",
+    "title",
+    "students",
+    "advisor"
+  ],
   "additionalProperties": true,
   "properties": {
     "id": {
@@ -14,12 +21,25 @@
     },
     "type": {
       "type": "string",
-      "enum": ["tcc1", "tcc", "qualification", "dissertation", "phd_qualification", "phd", "specialization"]
+      "enum": [
+        "tcc1",
+        "tcc",
+        "qualification",
+        "dissertation",
+        "phd_qualification",
+        "phd",
+        "specialization"
+      ]
     },
     "program": {
       "anyOf": [
-        {"type": "null"},
-        {"type": "string", "pattern": "^[a-z0-9_]+$"}
+        {
+          "type": "null"
+        },
+        {
+          "type": "string",
+          "pattern": "^[a-z0-9_]+$"
+        }
       ]
     },
     "scheduled_date": {
@@ -28,8 +48,13 @@
     },
     "held_date": {
       "anyOf": [
-        {"type": "null"},
-        {"type": "string", "format": "date"}
+        {
+          "type": "null"
+        },
+        {
+          "type": "string",
+          "format": "date"
+        }
       ]
     },
     "date_approximate": {
@@ -42,18 +67,43 @@
     },
     "title": {
       "type": "object",
-      "required": ["pt", "en"],
+      "required": [
+        "pt",
+        "en"
+      ],
       "properties": {
-        "pt": {"type": ["string", "null"], "minLength": 3},
-        "en": {"type": ["string", "null"], "minLength": 3}
+        "pt": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 3
+        },
+        "en": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 3
+        }
       }
     },
     "summary": {
       "type": "object",
       "description": "Abstract/resumo do trabalho (~150-400 palavras). Renderizado em qualquer estado quando presente.",
       "properties": {
-        "pt": {"type": ["string", "null"]},
-        "en": {"type": ["string", "null"]}
+        "pt": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "en": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
       }
     },
     "students": {
@@ -62,14 +112,24 @@
       "maxItems": 2,
       "items": {
         "type": "object",
-        "required": ["name"],
+        "required": [
+          "name"
+        ],
         "additionalProperties": false,
         "properties": {
-          "name": {"type": "string", "minLength": 3},
+          "name": {
+            "type": "string",
+            "minLength": 3
+          },
           "slug": {
             "anyOf": [
-              {"type": "null"},
-              {"type": "string", "pattern": "^[a-z0-9_]+$"}
+              {
+                "type": "null"
+              },
+              {
+                "type": "string",
+                "pattern": "^[a-z0-9_]+$"
+              }
             ]
           }
         }
@@ -82,10 +142,15 @@
     },
     "co_advisors": {
       "anyOf": [
-        {"type": "null"},
+        {
+          "type": "null"
+        },
         {
           "type": "array",
-          "items": {"type": "string", "pattern": "^[a-z0-9_]+$"}
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z0-9_]+$"
+          }
         }
       ]
     },
@@ -93,21 +158,43 @@
       "type": "array",
       "items": {
         "type": "object",
-        "required": ["role", "name"],
+        "required": [
+          "role",
+          "name"
+        ],
         "additionalProperties": false,
         "properties": {
           "role": {
             "type": "string",
-            "enum": ["advisor", "co_advisor", "examiner", "external_examiner", "substitute"]
+            "enum": [
+              "advisor",
+              "co_advisor",
+              "examiner",
+              "external_examiner",
+              "substitute"
+            ]
           },
           "slug": {
             "anyOf": [
-              {"type": "null"},
-              {"type": "string", "pattern": "^[a-z0-9_]+$"}
+              {
+                "type": "null"
+              },
+              {
+                "type": "string",
+                "pattern": "^[a-z0-9_]+$"
+              }
             ]
           },
-          "name": {"type": "string", "minLength": 3},
-          "affiliation": {"type": ["string", "null"]}
+          "name": {
+            "type": "string",
+            "minLength": 3
+          },
+          "affiliation": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
         }
       }
     },
@@ -115,55 +202,93 @@
       "type": "object",
       "additionalProperties": false,
       "properties": {
-        "room": {"type": ["string", "null"]},
-        "city": {"type": ["string", "null"]},
+        "room": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "city": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
         "remote_url": {
           "anyOf": [
-            {"type": "null"},
-            {"type": "string", "format": "uri"}
+            {
+              "type": "null"
+            },
+            {
+              "type": "string",
+              "format": "uri"
+            }
           ]
         }
       }
     },
     "tags": {
       "type": "array",
-      "items": {"type": "string"}
+      "items": {
+        "type": "string"
+      }
     },
     "project": {
       "anyOf": [
-        {"type": "null"},
-        {"type": "string", "pattern": "^[a-z0-9_]+$"}
+        {
+          "type": "null"
+        },
+        {
+          "type": "string",
+          "pattern": "^[a-z0-9_]+$"
+        }
       ]
     },
     "related_products": {
       "anyOf": [
-        {"type": "null"},
+        {
+          "type": "null"
+        },
         {
           "type": "array",
-          "items": {"type": "string"}
+          "items": {
+            "type": "string"
+          }
         }
       ]
     },
     "related_publications": {
       "anyOf": [
-        {"type": "null"},
+        {
+          "type": "null"
+        },
         {
           "type": "array",
-          "items": {"type": "string"}
+          "items": {
+            "type": "string"
+          }
         }
       ]
     },
     "production_id": {
       "anyOf": [
-        {"type": "null"},
-        {"type": "string"}
+        {
+          "type": "null"
+        },
+        {
+          "type": "string"
+        }
       ],
       "description": "Slug da publicação em data/productions.yaml quando o trabalho for depositado. Sempre null nas etapas intermediárias (tcc1, qualification, phd_qualification) — essas defesas de proposta/planejamento não geram produção catalogável."
     },
     "news_slug": {
       "anyOf": [
-        {"type": "null"},
-        {"type": "string"}
+        {
+          "type": "null"
+        },
+        {
+          "type": "string"
+        }
       ]
     },
     "narrative": {
@@ -171,15 +296,40 @@
       "description": "Parágrafo autoral que substitui o auto-gerado quando presente.",
       "additionalProperties": false,
       "properties": {
-        "pt": {"type": ["string", "null"]},
-        "en": {"type": ["string", "null"]}
+        "pt": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "en": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
       }
     },
     "status_override": {
       "anyOf": [
-        {"type": "null"},
-        {"type": "string", "enum": ["withdrawn"]}
+        {
+          "type": "null"
+        },
+        {
+          "type": "string",
+          "enum": [
+            "withdrawn"
+          ]
+        }
       ]
+    },
+    "legacy_ids": {
+      "type": "array",
+      "description": "Ids que esta defesa já teve. build_defesas.py emite /defesas/<id>/ como alias 301 para cada um, preservando URLs publicadas após renomeação (tipicamente correção de data, já que o id embute AAAA-MM-DD).",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9-]+$"
+      }
     }
   }
 }

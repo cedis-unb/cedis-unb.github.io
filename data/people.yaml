@@ -225,21 +225,57 @@ people:
   - gamification
   - software_quality
   year: 2025
+- name: Guilherme Nishimura da Silva
+  slug: guilherme_nishimura_da_silva
+  categories:
+  - people
+  - tcc
+  title:
+    pt: 'Redesign responsivo da interface web do Agromart: uma proposta de acessibilidade digital para agricultores'
+    en: 'Responsive redesign of the Agromart web interface: a digital accessibility proposal for farmers'
+  program: curso_esw2
+  advisors:
+  - andre_lanna
+  tags:
+  - inactive
+  - software_quality
+  - social_software
+  - project_agromart
+  year: 2025
+- name: Matheus Costa Gomes
+  slug: matheus_costa_gomes
+  categories:
+  - people
+  - tcc
+  title:
+    pt: 'Redesign responsivo da interface web do Agromart: uma proposta de acessibilidade digital para agricultores'
+    en: 'Responsive redesign of the Agromart web interface: a digital accessibility proposal for farmers'
+  program: curso_esw2
+  advisors:
+  - andre_lanna
+  tags:
+  - inactive
+  - software_quality
+  - social_software
+  - project_agromart
+  year: 2025
 - name: Luana Souza Silva Torres
   slug: luana_souza_silva_torres
   categories:
   - people
   - tcc
   title:
-    pt: 'Processo de desenvolvimento para projetos colaborativos: a experiência do Agromart'
+    pt: 'Processo de desenvolvimento para projetos colaborativos: a experiência Agromart'
     en: 'Development process for collaborative projects: the Agromart experience'
   program: curso_esw2
   advisors:
   - cristiane_ramos
+  - andre_lanna
   tags:
   - inactive
   - social_software
   - teamwork
+  - project_agromart
   year: 2025
 - name: Erick Giffoni Felicissimo
   slug: erick_giffoni_felicissimo

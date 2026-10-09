@@ -7742,7 +7742,7 @@ items:
   - authors:
       - Luana Souza Silva Torres
     title:
-      pt: 'Processo de desenvolvimento para projetos colaborativos: a experiência do Agromart'
+      pt: 'Processo de desenvolvimento para projetos colaborativos: a experiência Agromart'
       en: 'Development process for collaborative projects: the Agromart experience'
     summary:
       pt: ''
@@ -7752,18 +7752,20 @@ items:
     doi_isbn: ''
     journal_event: ''
     location: ''
-    pages: ''
+    pages: '76'
     publisher: Biblioteca Central da Universidade de Brasília
     tags:
       - social_software
       - teamwork
+      - project_agromart
     type: tcc
     program: curso_esw
     advisors:
       - cristiane_ramos
-    url: ''
+      - andre_lanna
+    url: https://bdm.unb.br/handle/10483/45343
     year: 2025
-    defesa_id: luana-torres-2025-06-15
+    defesa_id: luana-torres-2025-12-15
   - authors:
       - Caio César Oliveira
     title:
@@ -9926,3 +9928,30 @@ items:
     defense_date: 2016-12-07
     year: 2016
     defesa_id: keli-borges-2016-12-07
+  - authors:
+      - Guilherme Nishimura da Silva
+      - Matheus Costa Gomes
+    title:
+      pt: 'Redesign responsivo da interface web do Agromart: uma proposta de acessibilidade digital para agricultores'
+      en: 'Responsive redesign of the Agromart web interface: a digital accessibility proposal for farmers'
+    summary:
+      pt: 'Substitui a interface nativa do CMS Strapi por uma camada de apresentação desacoplada em Vue.js, consumindo os dados por API REST, com foco em responsividade e acessibilidade para agricultores vinculados a Comunidades que Sustentam a Agricultura (CSA).'
+      en: 'Replaces the native Strapi CMS interface with a decoupled Vue.js presentation layer consuming data over a REST API, focused on responsiveness and accessibility for farmers in Community Supported Agriculture (CSA) groups.'
+    book_title: ''
+    volume: ''
+    doi_isbn: ''
+    journal_event: ''
+    location: ''
+    pages: '91'
+    publisher: Biblioteca Central da Universidade de Brasília
+    tags:
+      - software_quality
+      - social_software
+      - project_agromart
+    type: tcc
+    program: curso_esw
+    advisors:
+      - andre_lanna
+    url: https://bdm.unb.br/handle/10483/45338
+    year: 2025
+    defesa_id: guilherme-matheus-2025-12-18

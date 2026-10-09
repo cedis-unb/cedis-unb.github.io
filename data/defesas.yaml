@@ -1308,13 +1308,50 @@
       en:
     status_override:
     date_approximate: true
-  - id: luana-torres-2025-06-15
+  - id: guilherme-matheus-2025-12-18
     type: tcc
     program: curso_esw
-    scheduled_date: '2025-06-15T00:00:00-03:00'
-    held_date: '2025-06-15'
+    scheduled_date: '2025-12-18T00:00:00-03:00'
+    held_date: '2025-12-18'
     title:
-      pt: 'Processo de desenvolvimento para projetos colaborativos: a experiência do Agromart'
+      pt: 'Redesign responsivo da interface web do Agromart: uma proposta de acessibilidade digital para agricultores'
+      en: 'Responsive redesign of the Agromart web interface: a digital accessibility proposal for farmers'
+    summary:
+      pt: ''
+      en: ''
+    students:
+      - name: Guilherme Nishimura da Silva
+        slug:
+      - name: Matheus Costa Gomes
+        slug:
+    advisor: andre_lanna
+    co_advisors:
+    committee: []
+    location:
+      room:
+      city: Brasília
+      remote_url:
+    tags:
+      - software_quality
+      - social_software
+    project: project_agromart
+    related_products: []
+    related_publications: []
+    production_id: 2025-guilherme-nishimura-redesign-responsivo-da-interface-web-do
+    news_slug:
+    narrative:
+      pt:
+      en:
+    status_override:
+    date_approximate: false
+  - id: luana-torres-2025-12-15
+    legacy_ids: [luana-torres-2025-06-15]
+    type: tcc
+    program: curso_esw
+    scheduled_date: '2025-12-15T00:00:00-03:00'
+    held_date: '2025-12-15'
+    title:
+      pt: 'Processo de desenvolvimento para projetos colaborativos: a experiência Agromart'
       en: 'Development process for collaborative projects: the Agromart experience'
     summary:
       pt: ''
@@ -1323,7 +1360,7 @@
       - name: Luana Souza Silva Torres
         slug:
     advisor: cristiane_ramos
-    co_advisors:
+    co_advisors: [andre_lanna]
     committee: []
     location:
       room:
@@ -1332,7 +1369,7 @@
     tags:
       - social_software
       - teamwork
-    project:
+    project: project_agromart
     related_products: []
     related_publications: []
     production_id: 2025-luana-souza-processo-de-desenvolvimento-para-projetos-colaborativos
@@ -1341,7 +1378,7 @@
       pt:
       en:
     status_override:
-    date_approximate: true
+    date_approximate: false
   - id: kalebe-murilo-2025-02-25
     type: tcc
     program: curso_esw

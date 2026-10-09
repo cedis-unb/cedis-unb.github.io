@@ -44,13 +44,26 @@ def _title_for(entry: dict, lang: str) -> str:
 
 
 def _aliases_for(entry: dict, lang: str) -> list[str]:
-    """Aliases 301 para preservar URLs dos posts legados.
+    """Aliases 301 da defesa.
 
-    Retorna [] enquanto os posts .md existirem — Hugo prioriza a página
-    existente sobre alias, então o alias silenciosamente perde. O Sprint 5
-    do PLANO-DEFESAS-2026 deleta os posts e reativa esses aliases.
+    Dois casos distintos:
+
+    1. Posts legados (`news_slug`): retorna [] enquanto os posts .md
+       existirem — Hugo prioriza a página existente sobre alias, então o
+       alias silenciosamente perde. O Sprint 5 do PLANO-DEFESAS-2026 deleta
+       os posts e reativa esses aliases.
+    2. `legacy_ids`: ids que esta defesa já teve e cujas URLs precisam
+       continuar respondendo. Caso típico: correção de data (o id embute
+       AAAA-MM-DD, logo corrigir a data renomeia a defesa). Aqui o alias
+       é necessário e não colide com nada, porque a URL antiga deixou de
+       ser gerada.
     """
-    return []
+    aliases: list[str] = []
+    for legacy_id in entry.get("legacy_ids") or []:
+        legacy_id = str(legacy_id).strip()
+        if legacy_id and legacy_id != entry.get("id"):
+            aliases.append(f"/defesas/{legacy_id}/")
+    return aliases
 
 
 def _frontmatter(entry: dict, lang: str) -> str:
