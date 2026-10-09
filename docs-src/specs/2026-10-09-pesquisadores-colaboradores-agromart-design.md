@@ -70,7 +70,7 @@ feita com `curl` e parsing do `itemDisplayTable` do DSpace 4.2.
 | D8 | Renomear a defesa da Luana para `luana-torres-2025-12-15` **com alias** da URL antiga | Manter o id mentindo sobre a data; renomear sem alias |
 | D9 | Cadastrar o 8º TCC completo (pessoas, produção, defesa); a notícia jornalística de §3 da CONVENTIONS fica como pendência editorial | Escrever a notícia no mesmo lote; apenas registrar a pendência |
 | D10 | Resumos PT/EN escritos a partir do BDM, não copiados: o texto extraído tem artefatos de OCR ("desenvol vida", "o!ering") | Colar o resumo do BDM literalmente |
-| D11 | `production_id` corrigido **apenas** nos dois registros tocados | Corrigir os 142 registros dessincronizados (§8.1) |
+| D11 | `production_id` dos dois registros novos segue o padrão placeholder dos vizinhos; o vínculo vivo é `defesa_id` em `productions.yaml` (§8.1) | Tratar `production_id` como chave de integridade |
 
 ## 4. Parte A — a figura do pesquisador colaborador
 
@@ -210,16 +210,20 @@ Registro atual (`luana-torres-2025-06-15`) com quatro defeitos. Correções:
 | `date_approximate` | `true` | `false` |
 | `co_advisors` | `null` | `[andre_lanna]` |
 | `title.pt` | "…: a experiência do Agromart" | "…: a experiência Agromart" |
-| `production_id` | `2025-luana-souza-processo-de-…` (inexistente) | `2025-luana-souza-silva-torres-processo-de-desenvolvimento-para-projetos-colaborativos-a-ex` |
+| `production_id` | — | inalterado (vestigial, §8.1) |
 
 `advisor` permanece `cristiane_ramos` — o BDM confirma "Orientador(es): Ramos,
 Cristiane Soares". Em `data/productions.yaml`, o mesmo item recebe
 `url: https://bdm.unb.br/handle/10483/45343`, `pages: '76'`,
-`defesa_id: luana-torres-2025-12-15` e o `title.pt` corrigido.
+`co_advisors`/`advisors` com `andre_lanna` acrescentado, `title.pt` corrigido e
+**`defesa_id: luana-torres-2025-12-15`** — este último é o vínculo que de fato
+liga defesa e publicação (§8.1), e é obrigatório atualizá-lo junto com a
+renomeação do `id`.
 
-O corte de 90 caracteres de `ascii_slug` faz o slug da página gerada terminar em
-`-a-ex` tanto com "do Agromart" quanto com "Agromart", então a correção do
-título **não** renomeia
+O corte de 90 caracteres de `ascii_slug` (`build_publications.py:301`, que gera
+o nome do arquivo em `content/publications/`) faz o slug terminar em `-a-ex`
+tanto com "do Agromart" quanto com "Agromart", então a correção do título **não**
+renomeia
 `content/publications/tcc/2025/2025-luana-souza-silva-torres-…-a-ex.{pt,en}.md`.
 
 **Alias da URL antiga** (D8). `scripts/build_defesas.py::_aliases_for` devolve
@@ -265,13 +269,16 @@ Cadastro em quatro lugares:
    aluno + data), `type: tcc`, `program: curso_esw`,
    `scheduled_date`/`held_date` `2025-12-18`, `advisor: andre_lanna`,
    `co_advisors: null`, `committee: []`, `project: project_agromart`,
-   `production_id: 2025-guilherme-nishimura-da-silva-redesign-responsivo-da-interface-web-do-agromart-uma-pro`,
+   `production_id: 2025-guilherme-nishimura-redesign-responsivo-da-interface-web-do`,
    `news_slug: null`, `date_approximate: false`.
 4. `content/publications/` — regenerado por `build_publications.py`.
 
-O `production_id` acima foi calculado com a regra real do gerador —
-`ascii_slug(f"{year}-{first_author}-{title}")` truncado em 90 caracteres
-(`scripts/build_publications.py:301`) — e não inventado.
+O `production_id` acima segue a regra de
+`scripts/migrate_defesas.py::_extract_production_slug` (`<ano>-<dois primeiros
+tokens do primeiro autor>-<seis primeiras palavras do título>`), que é a regra
+usada pelos 154 valores já presentes no arquivo — verificada reproduzindo o
+valor da entrada da Luana. O vínculo funcional é `defesa_id` no item de
+`productions.yaml` (§8.1).
 
 Área escolhida: `software_quality` (acessibilidade e usabilidade como qualidade
 de produto) e `social_software`. Os assuntos do BDM ("Acessibilidade digital",
@@ -387,30 +394,45 @@ mentores, via `link-interno`), repositório público `https://github.com/AgroMar
   Rudi passa a ter página. Sem chip próprio de colaboradores nessa página — é
   escopo separado.
 
-### 8.1 Defeito sistêmico encontrado e NÃO corrigido aqui
+### 8.1 Como defesa e publicação se ligam (apuração)
 
-**142 das 154 entradas com `production_id` em `data/defesas.yaml` apontam para
-slugs de publicação que não existem** em `content/publications/`. Efeito:
-`layouts/partials/defesa-body.html:258` compara `production_id` com o slug da
-página e o link "publicação depositada" falha silenciosamente nesses 142 casos.
-`layouts/partials/defesa-state.html` só testa se o campo é não-vazio, então o
-estado "deposited" continua correto — o que explica o defeito ter passado
-despercebido. `validate_content.py::validate_defesas` valida
-`related_publications`, nunca `production_id`.
+`layouts/partials/defesa-body.html:251-269` resolve o link "trabalho
+depositado" por dois caminhos:
 
-Causa provável: `scripts/migrate_defesas.py` gravou `production_id` com uma
-regra de slug diferente da de `build_publications.py:301`.
+1. `$matchesDefense` — `productions.yaml::items[].defesa_id == defesa.id`.
+2. `$matchesProduction` — `productions.yaml::items[].slug == defesa.production_id`.
 
-Este spec corrige apenas os dois registros que toca (D11). A correção em massa e
-a validação de `production_id` em `validate_defesas` ficam como trabalho próprio
-— são 142 registros e merecem spec e revisão separados.
+Estado real, medido: **154 de 154** defesas com `production_id` resolvem pelo
+caminho 1. O caminho 2 nunca dispara, porque **nenhum** dos 350 itens de
+`productions.yaml` tem campo `slug`. Não há link quebrado.
+
+Consequências para este trabalho:
+
+- O campo que importa ao criar ou renomear uma defesa é **`defesa_id` no item de
+  `productions.yaml`**, não `production_id` em `defesas.yaml`.
+- `production_id` é vestigial: `scripts/migrate_defesas.py::_extract_production_slug`
+  documenta no próprio docstring que grava um placeholder e que "o script real do
+  sprint seguinte substitui pelo slug estável de build_publications" — sprint que
+  não aconteceu. Os valores não correspondem aos slugs de
+  `build_publications.py:301` e não precisam corresponder.
+- O fallback `/publications/#<production_id>` (linha 251) também é inócuo: a
+  lista de publicações só emite âncoras de ano
+  (`layouts/_default/publications.html:301`). É sempre sobrescrito pelo
+  caminho 1.
+- `layouts/partials/defesa-state.html` apenas testa se `production_id` é
+  não-vazio, o que continua verdadeiro.
+
+Limpeza possível, **fora deste escopo** (código morto, sem efeito visível):
+remover o ramo `$matchesProduction` do partial ou implementar `slug` em
+`productions.yaml`; e decidir se `production_id` deve ser aposentado em favor de
+`defesa_id`. Merece spec próprio.
 
 ## 9. Pendências registradas
 
 1. **Notícia jornalística do 8º TCC** — CONVENTIONS.md §3 pede
    `content/posts/defesa-*.{pt,en}.md` para toda defesa com data ≥ 2015. O
    cadastro de §6.2 entra sem a notícia, por decisão D9.
-2. **Validação e correção em massa de `production_id`** — §8.1.
+2. **Aposentar ou implementar `production_id` / `$matchesProduction`** — §8.1.
 3. **Áreas próprias do Rudi** (energia renovável, eletrificação rural,
    mobilidade elétrica) não existem em `data/areas.yaml`. Exibi-las como pills
    exigiria criar área nova; decisão editorial pendente.
