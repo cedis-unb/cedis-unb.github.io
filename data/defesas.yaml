@@ -2063,7 +2063,7 @@
       - name: Rafael Leão Teixeira de Magalhães
         slug:
     advisor: andre_lanna
-    co_advisors:
+    co_advisors: [rudi_van_els]
     committee: []
     location:
       room:
@@ -2359,7 +2359,7 @@
       - name: Giovanna Borges Bottino
         slug:
     advisor: andre_lanna
-    co_advisors:
+    co_advisors: [rudi_van_els]
     committee: []
     location:
       room:
@@ -2782,7 +2782,7 @@
       - name: Pedro Vitor de Salles Cella
         slug:
     advisor: andre_lanna
-    co_advisors:
+    co_advisors: [rudi_van_els]
     committee: []
     location:
       room:
@@ -3256,7 +3256,7 @@
       - name: Igor Guimaraes Veludo
         slug:
     advisor: andre_lanna
-    co_advisors:
+    co_advisors: [rudi_van_els]
     committee: []
     location:
       room:

@@ -26,6 +26,7 @@ tags:
 - digital_transformation
 advisors:
 - andre_lanna
+- rudi_van_els
 doi_isbn: ''
 source_title: ''
 publisher: Biblioteca Central da Universidade de Brasília

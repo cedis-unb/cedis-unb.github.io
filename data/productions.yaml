@@ -2068,6 +2068,7 @@ items:
     program: curso_esw
     advisors:
       - andre_lanna
+      - rudi_van_els
     url: https://www.bdm.unb.br/handle/10483/39809
     defense_date: 2023-12-22
     year: 2023
@@ -2146,6 +2147,7 @@ items:
     program: curso_esw
     advisors:
       - andre_lanna
+      - rudi_van_els
     url: https://www.bdm.unb.br/handle/10483/39189
     defense_date: 2023-07-28
     year: 2023
@@ -2304,6 +2306,7 @@ items:
     program: curso_esw
     advisors:
       - andre_lanna
+      - rudi_van_els
     url: https://www.bdm.unb.br/handle/10483/33850
     defense_date: 2022-05-09
     year: 2022
@@ -2449,6 +2452,7 @@ items:
     program: curso_esw
     advisors:
       - andre_lanna
+      - rudi_van_els
     url: https://www.bdm.unb.br/handle/10483/35945
     defense_date: 2023-02-14
     year: 2023
