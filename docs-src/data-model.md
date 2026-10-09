@@ -28,8 +28,8 @@ Serve de base para os JSON Schemas em `schemas/` e para o validador em
    `closed`}. Tipo de publicação ∈ {`article`, `book`, `book_chapter`,
    `book_section`, `conference`, `dissertation`, `phd`, `registro`,
    `specialization`, `tcc`, `workshop`}. Idioma ∈ {`pt`, `en`}.
-   `profile_level` ∈ {`researcher`, `card_with_page`, `card`, `advisor_only`,
-   `derived`}.
+   `profile_level` ∈ {`researcher`, `collaborating_researcher`,
+   `card_with_page`, `card`, `advisor_only`, `derived`}.
 
 ## Fontes canônicas (estado atual após refactor de julho/2026)
 
@@ -48,7 +48,7 @@ Fonte lógica única para tudo relacionado a pessoas. Consumidores usam
 
 ```
 {
-  slug, found, name, profile_level, sources[],
+  slug, found, name, profile_level, advisor_level, sources[],
   page, page_url, link,
   advisor (compat, sempre ""),
   data_entry, supervisions[], supervisions_count,
@@ -74,6 +74,12 @@ Frontmatter obrigatório:
 - `title` — nome canônico por extenso.
 - `profile_level` — declara o tipo. Valores:
   - `researcher` — docente permanente CEDIS.
+  - `collaborating_researcher` — pesquisador colaborador: docente de outra
+    unidade que co-orienta trabalhos e participa de projetos do CEDIS sem
+    compor o corpo efetivo. Perfil editorial completo (não é stub), com
+    `affiliation` e `date`. Aparece em seção própria de
+    `/categories/researcher/`, depois do grid dos docentes efetivos, via
+    `layouts/partials/collaborating-researchers.html`.
   - `card_with_page` — colaborador CEDIS com bio.
   - `advisor_only` — orientador externo (só stub minimal, layout: derived).
   - `derived` — autor externo auto-gerado pelo `scripts/derive_people.py`.
@@ -86,8 +92,10 @@ Frontmatter obrigatório:
   `profile_level: advisor_only`, pois esses arquivos são stubs técnicos
   derivados de relações/produções, sem data editorial própria.
 
-Frontmatter recomendado (researcher/card_with_page):
+Frontmatter recomendado (researcher/collaborating_researcher/card_with_page):
 - `contact.email`, `contact.lattes`, `contact.orcid` (dict).
+- `affiliation` — rótulo curto de vínculo, por idioma, usado como eyebrow do
+  card de pesquisador colaborador (ex.: "Professor Associado · FCTE/UnB").
 - `areas: [<area_id>]` — deriva chips e mapeamento em `/map/`, `/quiz/`.
 - `summary` — resumo curto para SEO.
 - `categories: [people, <role>]` — role ∈ `researcher | undergraduate | ...`
@@ -115,7 +123,8 @@ Cada item do array:
   (`phd_candidate`, `master_student`, `tcc`, `specialization`,
   `scientific_initiation`, `volunteer`, `monitor`).
 - `advisors` — lista de slugs (referência a pessoas com `profile_level` in
-  [`researcher`, `advisor_only`]).
+  [`researcher`, `collaborating_researcher`, `advisor_only`] — o conjunto
+  exposto por `people-index` como `advisor_level`).
 - `year` — ano de referência.
 - `program` — código de programa acadêmico.
 - `title.{pt,en}` — título do trabalho, ambos idiomas.
@@ -281,6 +290,7 @@ Ver `CONVENTIONS.md §7` para checklists práticos.
 | Colaborador com bio | 1 `.md` × 2 idiomas | `profile_level` correto | Perfil + card em `/people/all/` |
 | Pesquisador | 1 `.md` × 2 idiomas | `profile_level: researcher` | `/categories/researcher/`, áreas, `/map/`, `/quiz/` |
 | Advisor externo | criar `.md` manual em `content/people/` com `profile_level: advisor_only` (padrão dos existentes) | (não bate no validador) | Aparece em pills de orientação |
+| Pesquisador colaborador | 1 `.md` × 2 idiomas com `profile_level: collaborating_researcher` + `affiliation` | `date` obrigatório (não é stub) | Seção própria em `/categories/researcher/`, perfil individual, pills de orientação, `/map/` e `/quiz/` se declarar `areas` |
 | Coautor citado | `scripts/derive_people.py --apply` | Automático | Bloco 4 do `/people/all/` |
 | Projeto | +1 bloco em `projects.yaml` opcional `.md` | ID único | Todas as áreas, pills, cascata i18n |
 | Área | +1 bloco em `areas.yaml` opcional `.md` | ID único | Cards, cascata i18n |

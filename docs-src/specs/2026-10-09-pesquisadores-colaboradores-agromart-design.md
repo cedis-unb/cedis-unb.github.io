@@ -422,7 +422,20 @@ Consequências para este trabalho:
 - `layouts/partials/defesa-state.html` apenas testa se `production_id` é
   não-vazio, o que continua verdadeiro.
 
-Limpeza possível, **fora deste escopo** (código morto, sem efeito visível):
+### 8.2 `advisor_level` (acrescentado na implementação)
+
+A lista de níveis que contam como orientador estava replicada em seis
+templates como `researcher or advisor_only`: `_default/map.html`,
+`_default/quiz.html`, `_default/publications.html` (dois pontos),
+`partials/home-topic-stats.html` e `shortcodes/publications.html`. Nenhum teste
+cobre essa duplicação, então `collaborating_researcher` nasceria ausente dos
+seis. `people-index` passou a expor `advisor_level` e os seis consumidores
+testam o campo. `partials/posts-template.html:93` ficou de fora de propósito —
+ali a pergunta é "quem é o sujeito deste card", não "quem pode orientar".
+
+### 8.3 Código morto remanescente
+
+Limpeza possível, **fora deste escopo** (sem efeito visível):
 remover o ramo `$matchesProduction` do partial ou implementar `slug` em
 `productions.yaml`; e decidir se `production_id` deve ser aposentado em favor de
 `defesa_id`. Merece spec próprio.
@@ -432,15 +445,28 @@ remover o ramo `$matchesProduction` do partial ou implementar `slug` em
 1. **Notícia jornalística do 8º TCC** — CONVENTIONS.md §3 pede
    `content/posts/defesa-*.{pt,en}.md` para toda defesa com data ≥ 2015. O
    cadastro de §6.2 entra sem a notícia, por decisão D9.
+1b. **`co_advisors` não é exibido na página da defesa.**
+   `layouts/partials/defesa-body.html` mostra a banca a partir de
+   `committee[]` (papéis `advisor`, `co_advisor`, …) e o orientador no
+   parágrafo-notícia, mas nunca lê o campo `co_advisors`. Com `committee: []`,
+   as co-orientações agora registradas não aparecem em `/defesas/<id>/` —
+   aparecem em `/publications/`, no perfil do coorientador e nos contadores.
+   Alcança as 158 defesas do arquivo, não só as cinco tocadas aqui, e merece
+   decisão própria: exibir `co_advisors` no parágrafo-notícia ou preencher
+   `committee[]`.
 2. **Aposentar ou implementar `production_id` / `$matchesProduction`** — §8.1.
 3. **Áreas próprias do Rudi** (energia renovável, eletrificação rural,
    mobilidade elétrica) não existem em `data/areas.yaml`. Exibi-las como pills
    exigiria criar área nova; decisão editorial pendente.
-4. **Normalização de títulos do AgroMart** — `data/defesas.yaml` e
+4. **Marília no mapa e no quiz** — ao declarar `areas`, ela passou a aparecer
+   em `/map/` e `/quiz/`, como qualquer pessoa de nível `advisor_only` que
+   declare áreas. É consequência de `advisor_level` (§8.2), não decisão
+   editorial registrada; reverter é remover `areas` do perfil dela.
+5. **Normalização de títulos do AgroMart** — `data/defesas.yaml` e
    `data/productions.yaml` usam " - " onde o BDM e `data/people.yaml` usam " : "
    ("Uma evolução do projeto Agromart - open source…"). Divergência
    pré-existente, fora de escopo.
-5. **Registro do grupo no DGP/CNPq** — pendência pré-existente de
+6. **Registro do grupo no DGP/CNPq** — pendência pré-existente de
    `data/research_lines.yaml`, agora com um projeto a mais na linha de
    transformação digital.
 
