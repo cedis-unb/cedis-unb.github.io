@@ -25,6 +25,8 @@ authors_structured:
   id: teodoro_george
   url: /people/teodoro_george
 - name: Melo, Alba C. M. A.
+  id: melo_alba_c_m_a
+  url: /people/melo_alba_c_m_a
 tags:
 - hpc
 advisors: []

@@ -23,6 +23,8 @@ authors_structured:
   id: erven_ricardo_cordeiro_galvao_santana_van
   url: /people/erven_ricardo_cordeiro_galvao_santana_van
 - name: DIAS, POLLYANNA C. O.
+  id: dias_pollyanna_c_o
+  url: /people/dias_pollyanna_c_o
 - name: JUBÉ, DEMÉTRIUS DE ALMEIDA
   id: jube_demetrius_de_almeida
   url: /people/jube_demetrius_de_almeida

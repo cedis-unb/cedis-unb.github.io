@@ -21,6 +21,8 @@ authors:
 authors_structured:
 - name: MACIEL, CRISTIANO
 - name: de Souza, Patricia Cristiane
+  id: de_souza_patricia_cristiane
+  url: /people/de_souza_patricia_cristiane
 - name: Viterbo, José
   id: viterbo_jose
   url: /people/viterbo_jose
@@ -28,6 +30,8 @@ authors_structured:
   id: fabiana_mendes
   url: /people/fabiana_mendes
 - name: El Fallah Seghrouchni, Amal
+  id: el_fallah_seghrouchni_amal
+  url: /people/el_fallah_seghrouchni_amal
 tags:
 - ai
 advisors: []

@@ -22,7 +22,11 @@ authors_structured:
   id: paulino_gabriel_r_scheidt
   url: /people/paulino_gabriel_r_scheidt
 - name: ARAÚJO, RAFAEL CARVALHO J.
+  id: araujo_rafael_carvalho_j
+  url: /people/araujo_rafael_carvalho_j
 - name: ROCHA, JOHAN M. G. DA
+  id: rocha_johan_m_g_da
+  url: /people/rocha_johan_m_g_da
 - name: LIMA, Daniel Sundfeld
   id: daniel_sundfeld
   url: /people/daniel_sundfeld

@@ -20,10 +20,14 @@ authors:
 authors_structured:
 - name: FREITAS, S. A. A.
 - name: SILVA, RITA C.
+  id: silva_rita_de_cassia
+  url: /people/silva_rita_de_cassia
 - name: CANEDO, EDNA D.
   id: edna_canedo
   url: /people/edna_canedo
 - name: LUCENA, TIAGO FRANKLIN R.
+  id: lucena_tiago_franklin_r
+  url: /people/lucena_tiago_franklin_r
 tags:
 - learning_analytics
 advisors: []

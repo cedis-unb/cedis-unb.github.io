@@ -17,8 +17,7 @@ authors:
 - Felipe Evangelista dos Santos
 authors_structured:
 - name: Felipe Evangelista dos Santos
-  id: santos_veronica_souza_dos
-  url: /people/santos_veronica_souza_dos
+  id: felipe_evangelista_dos_santos
 tags:
 - software_architecture
 - security

@@ -18,7 +18,7 @@ authors:
 - Lorrayne Alves Cardozo
 authors_structured:
 - name: Guilherme Daniel Fernandes da Silva
-  id: guilherme_daniel_fernandes_da_silva
+  id: guilherme_nishimura_da_silva
 - name: Lorrayne Alves Cardozo
   id: lorrayne_alves_cardozo
 tags:

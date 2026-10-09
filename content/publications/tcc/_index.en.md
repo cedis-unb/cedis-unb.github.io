@@ -8,5 +8,5 @@ generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 publication_filter: tcc
 description: Undergraduate theses supervised by CEDIS researchers.
-summary: 137 catalogued records.
+summary: 138 catalogued records.
 ---

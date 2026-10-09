@@ -26,6 +26,8 @@ authors_structured:
 - name: CALADO, PAULO M. R. O.
   id: paulo_markes_rodrigues_de_oliveira_calado
 - name: LIMA, THIAGO S.
+  id: lima_thiago_s
+  url: /people/lima_thiago_s
 - name: DIAS CANEDO, EDNA
   id: edna_canedo
   url: /people/edna_canedo

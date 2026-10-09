@@ -20,6 +20,8 @@ authors_structured:
 - name: FLAUSINO, CAIO GOMES
   id: caio_gomes_flausino
 - name: QUEIROZ, DIEGO CÉSAR FLORÊNCIO DE
+  id: queiroz_diego_cesar_florencio_de
+  url: /people/queiroz_diego_cesar_florencio_de
 - name: Sundfeld, Daniel
   id: daniel_sundfeld
   url: /people/daniel_sundfeld

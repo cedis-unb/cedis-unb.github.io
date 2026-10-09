@@ -21,6 +21,8 @@ authors:
 authors_structured:
 - name: MARSICANO, G. C.
 - name: DA SILVA, FABIO Q. B.
+  id: da_silva_fabio_q_b
+  url: /people/da_silva_fabio_q_b
 - name: SEAMAN, C. B.
 - name: ADAID-CASTRO, B. G.
 tags:

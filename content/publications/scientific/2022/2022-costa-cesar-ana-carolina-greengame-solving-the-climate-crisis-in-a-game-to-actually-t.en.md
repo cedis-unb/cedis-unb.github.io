@@ -21,6 +21,8 @@ authors_structured:
 - name: COSTA CÉSAR, ANA CAROLINA
   id: ana_carolina_costa_cesar
 - name: DA GAMA PIVETTA, GABRIELA
+  id: da_gama_pivetta_gabriela
+  url: /people/da_gama_pivetta_gabriela
 - name: Mendes, Fabiana Freitas
   id: fabiana_mendes
   url: /people/fabiana_mendes

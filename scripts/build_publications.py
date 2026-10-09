@@ -217,6 +217,31 @@ def load_people_index() -> list[dict[str, str]]:
     return people
 
 
+def name_parts(name: str) -> tuple[str, str]:
+    """(primeiro nome, sobrenome) de um nome, nas duas convenções do acervo.
+
+    productions.yaml e content/people/ misturam duas formas:
+        "Edna Dias Canedo"        → primeiro nome = 1o token, sobrenome = último
+        "CANEDO, EDNA DIAS"       → primeiro nome vem depois da vírgula e o
+                                    sobrenome é o último token antes dela
+
+    A vírgula decide qual convenção vale — não se devolvem as duas leituras ao
+    mesmo tempo, porque unir "santos" (sobrenome) ao conjunto de primeiros
+    nomes reabriria exatamente os falsos positivos que match_person evita.
+
+    Devolve ("", "") quando o nome não permite extrair o par.
+    """
+    parts = name.split(",", 1)
+    head = normalize_name(parts[0]).split()
+    if len(parts) > 1:
+        tail = normalize_name(parts[1]).split()
+        if tail and head:
+            return tail[0], head[-1]
+    if len(head) >= 2:
+        return head[0], head[-1]
+    return "", ""
+
+
 def match_person(author: str, people_index: list[dict[str, str]], ids_in_item: set[str]) -> dict[str, str] | None:
     author_norm = normalize_name(author)
     author_tokens = set(author_norm.split())
@@ -227,14 +252,27 @@ def match_person(author: str, people_index: list[dict[str, str]], ids_in_item: s
             overlap = author_tokens & (person_tokens | slug_tokens)
             if len(overlap) >= 2:
                 return person
+    author_token_list = author_norm.split()
+    author_first, _ = name_parts(author)
     for person in people_index:
-        person_tokens = normalize_name(person["name"]).split()
-        if len(person_tokens) >= 2:
-            first, last = person_tokens[0], person_tokens[-1]
+        first, last = name_parts(person["name"])
+        if first and last:
             # Skip fallback match when either the first or last token is an
             # initial or preposition (e.g., "m", "de"), which otherwise produces
             # false positives against authors listed with initials.
-            if len(first) > 2 and len(last) > 2 and all(token in author_norm.split() for token in (first, last)):
+            if len(first) <= 2 or len(last) <= 2:
+                continue
+            # O primeiro nome tem de estar na POSIÇÃO de primeiro nome do
+            # autor, não apenas aparecer em algum lugar. Sem isso, "Luiz
+            # Guilherme S da Silva" casava com qualquer pessoa chamada
+            # "Guilherme ... Silva" — e qual delas ganhava dependia da ordem do
+            # índice, então acrescentar uma pessoa nova silenciosamente trocava
+            # o vínculo de publicações alheias. Autores abreviados ("Sergio
+            # Freitas" para "Sergio Antônio Andrade de Freitas") continuam
+            # casando: exige-se posição do primeiro nome, não cobertura total.
+            if not author_first or first != author_first:
+                continue
+            if last in author_token_list:
                 return person
     return None
 

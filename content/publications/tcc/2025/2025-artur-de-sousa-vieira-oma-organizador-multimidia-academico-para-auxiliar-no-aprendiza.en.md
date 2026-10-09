@@ -20,8 +20,7 @@ authors_structured:
 - name: Artur de Sousa Vieira
   id: artur_de_sousa_vieira
 - name: Luíza Esteves dos Santos
-  id: santos_veronica_souza_dos
-  url: /people/santos_veronica_souza_dos
+  id: luiza_esteves_dos_santos
 tags:
 - education
 - software_architecture

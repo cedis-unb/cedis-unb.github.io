@@ -23,6 +23,8 @@ authors_structured:
   id: washington_luis_ribeiro_de_carvalho_segundo
   url: /people/washington_luis_ribeiro_de_carvalho_segundo
 - name: CANTO, FABIO LORENSI DO
+  id: canto_fabio_lorensi_do
+  url: /people/canto_fabio_lorensi_do
 - name: PINTO, ADILSON LUIZ
   id: pinto_adilson_luiz
   url: /people/pinto_adilson_luiz

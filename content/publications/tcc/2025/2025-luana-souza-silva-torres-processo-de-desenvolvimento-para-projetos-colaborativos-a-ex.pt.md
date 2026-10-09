@@ -1,6 +1,5 @@
 ---
-title: 'Processo de desenvolvimento para projetos colaborativos: a experiência do
-  Agromart'
+title: 'Processo de desenvolvimento para projetos colaborativos: a experiência Agromart'
 date: '2025-01-01T00:00:00-03:00'
 draft: false
 language: pt
@@ -21,23 +20,25 @@ authors_structured:
 tags:
 - social_software
 - teamwork
+- project_agromart
 advisors:
 - cristiane_ramos
+- andre_lanna
 doi_isbn: ''
 source_title: ''
 publisher: Biblioteca Central da Universidade de Brasília
 location: ''
-pages: ''
+pages: '76'
 volume: ''
-external_url: ''
+external_url: https://bdm.unb.br/handle/10483/45343
 spotify_podcast: ''
 github_repo: ''
 zenodo_record: ''
 summary: Tcc de Luana Souza Silva Torres (2025).
 bibtex: "@mastersthesis{2025-luana-souza-silva-torres-processo-de-desenvolvimento-para-projetos-colaborativos-a-ex,\n\
   \  author = {Luana Souza Silva Torres},\n  title = {Processo de desenvolvimento\
-  \ para projetos colaborativos: a experiência do Agromart},\n  year = {2025},\n \
-  \ publisher = {Biblioteca Central da Universidade de Brasília}\n}"
+  \ para projetos colaborativos: a experiência Agromart},\n  year = {2025},\n  pages\
+  \ = {76},\n  publisher = {Biblioteca Central da Universidade de Brasília}\n}"
 aliases:
 - /publications/2025-luana-souza-silva-torres-processo-de-desenvolvimento-para-projetos-colaborativos-a-ex/
 ---

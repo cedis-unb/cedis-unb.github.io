@@ -20,8 +20,14 @@ authors:
 authors_structured:
 - name: MARSICANO, G. C.
 - name: DE OLIVEIRA, VICTOR L.
+  id: de_oliveira_victor_l
+  url: /people/de_oliveira_victor_l
 - name: DE S. MARIZ, LEILA M. R.
+  id: de_s_mariz_leila_m_r
+  url: /people/de_s_mariz_leila_m_r
 - name: DA SILVA, FABIO Q. B.
+  id: da_silva_fabio_q_b
+  url: /people/da_silva_fabio_q_b
 tags:
 - soft_skills
 advisors: []

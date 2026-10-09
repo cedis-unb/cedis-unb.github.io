@@ -35,8 +35,6 @@ authors_structured:
   url: /people/ricardo_ajax
 - name: Paulo Vitor Pereira Cotta
 - name: Rodrigo Damaceno dos Santos
-  id: santos_felisdorio_rodrigo
-  url: /people/santos_felisdorio_rodrigo
 tags:
 - digital_transformation
 - social_software

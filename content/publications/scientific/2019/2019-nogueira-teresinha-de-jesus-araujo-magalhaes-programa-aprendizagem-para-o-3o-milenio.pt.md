@@ -24,6 +24,8 @@ authors_structured:
   id: nogueira_teresinha_de_jesus_araujo_magalhaes
   url: /people/nogueira_teresinha_de_jesus_araujo_magalhaes
 - name: Melo, Lívia Veleda de Sousa e
+  id: melo_livia_veleda_de_sousa_e
+  url: /people/melo_livia_veleda_de_sousa_e
 - name: FREITAS, S. A. A.
 - name: Leite, Letícia Lopes
   id: leite_leticia_lopes

@@ -17,8 +17,7 @@ authors:
 - Ronyell Henrique dos Santos
 authors_structured:
 - name: Ronyell Henrique dos Santos
-  id: santos_veronica_souza_dos
-  url: /people/santos_veronica_souza_dos
+  id: ronyell_henrique_dos_santos
 tags:
 - software_requirements
 - verification_validation_testing

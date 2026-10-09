@@ -19,7 +19,7 @@ authors_structured:
 - name: Gustavo Vieira Braz Gonçalves
   id: gustavo_vieira_braz_goncalves
 - name: Luiz Guilherme S da Silva
-  id: guilherme_daniel_fernandes_da_silva
+  id: luiz_guilherme_s_da_silva
 tags:
 - software_architecture
 advisors:

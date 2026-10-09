@@ -18,8 +18,8 @@ authors:
 - MENDES, F. F.
 authors_structured:
 - name: A. SOUSA E SILVA, MATEUS
-  id: silva_geovana_ramos_sousa
-  url: /people/silva_geovana_ramos_sousa
+  id: a_sousa_e_silva_mateus
+  url: /people/a_sousa_e_silva_mateus
 - name: BARROS DE SALES, ANDRÉ
   id: barros_de_sales_andre
   url: /people/barros_de_sales_andre

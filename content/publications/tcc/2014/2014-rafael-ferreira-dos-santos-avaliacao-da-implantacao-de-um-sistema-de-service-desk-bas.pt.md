@@ -17,8 +17,7 @@ authors:
 - Rafael Ferreira dos Santos
 authors_structured:
 - name: Rafael Ferreira dos Santos
-  id: santos_veronica_souza_dos
-  url: /people/santos_veronica_souza_dos
+  id: rafael_ferreira_dos_santos
 tags:
 - digital_transformation
 advisors:

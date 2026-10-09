@@ -16,8 +16,7 @@ authors:
 - Laércio Silva de Sousa Júnior
 authors_structured:
 - name: Laércio Silva de Sousa Júnior
-  id: silva_geovana_ramos_sousa
-  url: /people/silva_geovana_ramos_sousa
+  id: laercio_silva_de_sousa_junior
 tags:
 - software_architecture
 - digital_transformation

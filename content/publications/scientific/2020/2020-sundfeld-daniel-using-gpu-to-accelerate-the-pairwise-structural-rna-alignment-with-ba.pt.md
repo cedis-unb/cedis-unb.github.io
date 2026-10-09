@@ -27,10 +27,14 @@ authors_structured:
   id: teodoro_george
   url: /people/teodoro_george
 - name: HAVGAARD, JAKOB H.
+  id: havgaard_jakob_h
+  url: /people/havgaard_jakob_h
 - name: GORODKIN, JAN
   id: gorodkin_jan
   url: /people/gorodkin_jan
 - name: Melo, Alba C. M. A.
+  id: melo_alba_c_m_a
+  url: /people/melo_alba_c_m_a
 tags:
 - hpc
 advisors: []

@@ -24,6 +24,8 @@ authors_structured:
   id: neubert_patricia_da_silva
   url: /people/neubert_patricia_da_silva
 - name: CANTO, FÁBIOLORENSI DO
+  id: canto_fabiolorensi_do
+  url: /people/canto_fabiolorensi_do
 - name: PINTO, ADILSON LUIZ
   id: pinto_adilson_luiz
   url: /people/pinto_adilson_luiz

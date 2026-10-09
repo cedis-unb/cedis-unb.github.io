@@ -20,6 +20,8 @@ authors:
 - RIBEIRO, AILTON
 authors_structured:
 - name: SOUZA, RENAN L. L. DE
+  id: souza_renan_l_l_de
+  url: /people/souza_renan_l_l_de
 - name: MACIEL, CRISTIANO
 - name: NUNES, EUNICE P. DOS SANTOS
   id: nunes_eunice_p_dos_santos

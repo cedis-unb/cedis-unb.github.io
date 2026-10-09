@@ -21,6 +21,8 @@ authors:
 authors_structured:
 - name: FREITAS, S. A. A.
 - name: LIMA, THIAGO
+  id: lima_thiago_s
+  url: /people/lima_thiago_s
 - name: CANEDO, EDNA
   id: edna_canedo
   url: /people/edna_canedo

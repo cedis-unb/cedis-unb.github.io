@@ -18,8 +18,7 @@ authors:
 - Sabrina Caldas Berno
 authors_structured:
 - name: Maria Eduarda dos Santos Abritta Ferreira
-  id: santos_veronica_souza_dos
-  url: /people/santos_veronica_souza_dos
+  id: maria_eduarda_dos_santos_abritta_ferreira
 - name: Sabrina Caldas Berno
   id: sabrina_caldas_berno
 tags:

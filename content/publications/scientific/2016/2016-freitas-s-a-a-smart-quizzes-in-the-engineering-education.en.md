@@ -25,9 +25,17 @@ authors_structured:
   id: silva_rita_de_cassia
   url: /people/silva_rita_de_cassia
 - name: LUCENA, TIAGO FRANKLIN R.
+  id: lucena_tiago_franklin_r
+  url: /people/lucena_tiago_franklin_r
 - name: RIBEIRO, EDUARDO DO N.
+  id: ribeiro_eduardo_do_n
+  url: /people/ribeiro_eduardo_do_n
 - name: LIMA, VICTOR COTRIM DE
+  id: lima_victor_cotrim_de
+  url: /people/lima_victor_cotrim_de
 - name: SILVA, RODRIGO M. S. DA
+  id: silva_rodrigo_m_s_da
+  url: /people/silva_rodrigo_m_s_da
 tags:
 - ai
 - education

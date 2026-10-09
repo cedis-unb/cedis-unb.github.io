@@ -16,8 +16,7 @@ authors:
 - Tiago dos Santos Querubim
 authors_structured:
 - name: Tiago dos Santos Querubim
-  id: santos_veronica_souza_dos
-  url: /people/santos_veronica_souza_dos
+  id: tiago_querubim
 tags:
 - teamwork
 advisors:

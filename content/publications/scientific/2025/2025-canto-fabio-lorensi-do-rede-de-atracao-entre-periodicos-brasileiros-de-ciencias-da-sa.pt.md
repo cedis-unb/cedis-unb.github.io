@@ -19,6 +19,8 @@ authors:
 - SUNDFELD, Daniel
 authors_structured:
 - name: CANTO, FABIO LORENSI DO
+  id: canto_fabio_lorensi_do
+  url: /people/canto_fabio_lorensi_do
 - name: CARVALHO SEGUNDO, WASHINGTON LUÍS RIBEIRO DE
   id: washington_luis_ribeiro_de_carvalho_segundo
   url: /people/washington_luis_ribeiro_de_carvalho_segundo

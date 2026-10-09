@@ -17,8 +17,7 @@ authors:
 - Washington Bispo Arishita Júnior
 authors_structured:
 - name: Marcelo Victor de Sousa Silva
-  id: silva_geovana_ramos_sousa
-  url: /people/silva_geovana_ramos_sousa
+  id: marcelo_victor_de_sousa_silva
 - name: Washington Bispo Arishita Júnior
   id: washington_bispo_arishita_junior
 tags:
