@@ -8,6 +8,7 @@ date: 2023-01-01T00:00:00-03:00
 weight: 60
 language: pt
 summary: Professora Associada da FCTE/UnB, estatística e demógrafa. Coorienta trabalhos do CEDIS sobre envelhecimento populacional, letramento digital e serviços públicos digitais.
+featured_image: "../assets/images/featured/people_Marília Miranda.webp"
 authorimage: ../assets/images/global/author.webp
 areas:
 - digital_transformation

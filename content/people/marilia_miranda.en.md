@@ -8,6 +8,7 @@ date: 2023-01-01T00:00:00-03:00
 weight: 60
 language: en
 summary: Associate Professor at FCTE/UnB, statistician and demographer. Co-advises CEDIS work on population ageing, digital literacy and digital public services.
+featured_image: "../assets/images/featured/people_Marília Miranda.webp"
 authorimage: ../assets/images/global/author.webp
 areas:
 - digital_transformation

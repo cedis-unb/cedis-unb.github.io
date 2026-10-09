@@ -8,6 +8,7 @@ date: 2022-05-09T00:00:00-03:00
 weight: 60
 language: pt
 summary: Professor Associado da FCTE/UnB no curso de Engenharia de Energia. Coorientador de quatro TCCs do projeto AgroMart, que mentora junto com André Lanna.
+featured_image: "../assets/images/featured/people_Rudi van Els.webp"
 authorimage: ../assets/images/global/author.webp
 contact:
   email: rudi@unb.br

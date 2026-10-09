@@ -3,6 +3,17 @@
 {{ $personKey := .File.TranslationBaseName }}
 {{ $profileLevel := .Params.profile_level | default "" }}
 {{ $isResearcher := or (eq $profileLevel "researcher") (in .Params.categories "researcher") }}
+{{/* $isResearcher distingue o DOCENTE EFETIVO — governa rótulos
+     ("Perfil de pesquisador" x "Perfil individual") e a chamada de
+     orientação, que aponta para as oportunidades do CEDIS e não cabe a
+     quem é de outra unidade.
+     $showsResearchBlocks governa o CONTEÚDO: projetos, orientações,
+     publicações, defesas, formação e dados estruturados. Pesquisador
+     colaborador tem essas relações de verdade nos dados — sem isto, o
+     perfil do Rudi não listava o AgroMart mesmo estando em
+     projects.yaml::researchers[], e o da Marília omitia co-orientações
+     registradas em defesas.yaml. */}}
+{{ $showsResearchBlocks := or $isResearcher (eq $profileLevel "collaborating_researcher") }}
 {{ $eyebrow := cond $isResearcher (i18n "ui_people_researchers") (i18n "ui_people_profiles") }}
 {{ $roleLabel := cond $isResearcher (i18n "ui_research_profile") (i18n "ui_individual_profile") }}
 {{ $introFallback := i18n "ui_explore_the_academic_trajectory_focus" }}
@@ -73,7 +84,7 @@
   {{ with .lattes }}{{ $contactLattes = . }}{{ end }}
   {{ with .orcid }}{{ $contactOrcid = . }}{{ end }}
 {{ end }}
-{{ $hasContact := or $contactEmail $contactLattes $contactOrcid $isResearcher }}
+{{ $hasContact := or $contactEmail $contactLattes $contactOrcid $showsResearchBlocks }}
 
 {{ $projectIds := slice }}
 {{ range $id, $_ := (partialCached "project-index" "global" site.Language.Lang) }}
@@ -141,12 +152,12 @@
   {{ end }}
 {{ end }}
 
-{{ if and $isResearcher (gt $formerSupervisionCount 0) (in $content `id="former-collaborators-title"`) }}
+{{ if and $showsResearchBlocks (gt $formerSupervisionCount 0) (in $content `id="former-collaborators-title"`) }}
   {{ $formerSupervisionCountBadge := printf `<span class="ml-2 inline-flex items-center rounded-full border border-primary-200 bg-primary-50 px-2.5 py-1 text-sm font-black text-primary-700 dark:border-primary-400/25 dark:bg-primary-500/10 dark:text-primary-100">%d</span>` $formerSupervisionCount }}
   {{ $content = replaceRE `(?s)(<button type="button" id="former-collaborators-title"[^>]*>.*?)(<svg)` (printf `${1}%s${2}` $formerSupervisionCountBadge) $content 1 }}
 {{ end }}
 
-{{ if and $isResearcher (or (in $content `id="orientações-atuais"`) (in $content `id="current-supervisions"`)) (in $content `id="previous-collaborators"`) (not (in $content `id="current-supervisions-section"`)) }}
+{{ if and $showsResearchBlocks (or (in $content `id="orientações-atuais"`) (in $content `id="current-supervisions"`)) (in $content `id="previous-collaborators"`) (not (in $content `id="current-supervisions-section"`)) }}
   {{ $currentSupervisionCountBadge := "" }}
   {{ if gt $activeSupervisions 0 }}
     {{ $currentSupervisionCountBadge = printf `<span class="ml-2 inline-flex items-center rounded-full border border-primary-200 bg-primary-50 px-2.5 py-1 text-sm font-black text-primary-700 dark:border-primary-400/25 dark:bg-primary-500/10 dark:text-primary-100">%d</span>` $activeSupervisions }}
@@ -212,7 +223,7 @@
 {{ end }}
 {{ $productCount := len $researchProducts }}
 
-{{ if $isResearcher }}
+{{ if $showsResearchBlocks }}
   {{ $highlightFocusItems := slice }}
   {{ range first 4 $displayTags }}
     {{ $highlightFocusItems = $highlightFocusItems | append (. | i18n | plainify | htmlEscape) }}
@@ -254,7 +265,7 @@
   {{ $content = replaceRE `(?s)<h2 id="(?:projetos-atuais|current-projects)"[^>]*>.*?</h2>` "" $content 1 }}
 {{ end }}
 
-{{ if and $isResearcher (gt $previousProjectCount 0) }}
+{{ if and $showsResearchBlocks (gt $previousProjectCount 0) }}
   {{ $previousProjectItemsHtml := slice }}
   {{ range $previousResearchProjects }}
     {{ $projectTitle := .Title | plainify }}
@@ -298,7 +309,7 @@
   {{ $tocEntries = $tocEntries | append (dict "level" 2 "anchor" "researcher-previous-projects" "label" $previousProjectsLabel) }}
 {{ end }}
 
-{{ if and $isResearcher (gt $projectCount 0) (not (in $content `id="researcher-projects"`)) }}
+{{ if and $showsResearchBlocks (gt $projectCount 0) (not (in $content `id="researcher-projects"`)) }}
   {{ $projectItemsHtml := slice }}
   {{ range $researchProjects }}
     {{ $projectTitle := .Title | plainify }}
@@ -359,7 +370,7 @@
 
 {{/* -------------------- Próximas defesas orientadas -------------------- */}}
 {{ $upcomingDefensesHtml := "" }}
-{{ if $isResearcher }}
+{{ if $showsResearchBlocks }}
   {{ $upcomingItems := slice }}
   {{ range hugo.Data.defesas }}
     {{ $sd := time .scheduled_date }}
@@ -400,7 +411,7 @@
 {{ end }}
 
 {{ $featuredPublicationsHtml := "" }}
-{{ if $isResearcher }}
+{{ if $showsResearchBlocks }}
   {{ $scientificPublicationTypes := slice "article" "conference" "workshop" "preprint" "report" "book" "book chapter" "book_section" }}
   {{ $featuredPublicationItemsHtml := slice }}
   {{ range sort $personPublications "year" "desc" }}
@@ -481,7 +492,7 @@
   {{ end }}
 {{ end }}
 
-{{ if $isResearcher }}
+{{ if $showsResearchBlocks }}
   {{ $backgroundSection := "" }}
   {{ $backgroundHeading := "" }}
   {{ range first 1 (findRE `(?s)<h2 id="(?:formação-acadêmica|academic-background)"[^>]*>.*?</h2>` $content) }}
@@ -544,7 +555,7 @@
 
 {{ $hasToc := gt (len $tocEntries) 0 }}
 
-{{ if $isResearcher }}
+{{ if $showsResearchBlocks }}
   {{ $personImage := "" }}
   {{ with .Params.featured_image }}
     {{ $featuredPath := replace . "../assets/" "" }}
@@ -772,7 +783,7 @@
             <a href="{{ $contactOrcid }}" target="_blank" rel="noopener noreferrer" class="min-w-0 flex-1 truncate text-sm font-semibold text-primary-700 hover:text-primary-600 dark:text-primary-200 dark:hover:text-primary-100">ORCID</a>
           </div>
           {{ end }}
-          {{ if $isResearcher }}
+          {{ if $showsResearchBlocks }}
           <div class="flex items-center gap-3 px-4 py-3">
             <span class="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-md bg-gray-900 text-[0.55rem] font-black uppercase tracking-tight text-white dark:bg-white dark:text-gray-950">F</span>
             <a href="{{ $institutionalWebsite }}" target="_blank" rel="noopener noreferrer" class="min-w-0 flex-1 truncate text-sm font-semibold text-primary-700 hover:text-primary-600 dark:text-primary-200 dark:hover:text-primary-100">{{ $institutionalWebsiteLabel }}</a>

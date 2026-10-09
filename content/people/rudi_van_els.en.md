@@ -8,6 +8,7 @@ date: 2022-05-09T00:00:00-03:00
 weight: 60
 language: en
 summary: Associate Professor at FCTE/UnB in the Energy Engineering programme. Co-advisor of four AgroMart undergraduate theses, a project he mentors together with André Lanna.
+featured_image: "../assets/images/featured/people_Rudi van Els.webp"
 authorimage: ../assets/images/global/author.webp
 contact:
   email: rudi@unb.br
