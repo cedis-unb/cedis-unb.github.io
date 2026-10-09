@@ -455,14 +455,51 @@ YAML e em URLs de perfil (`/people/<slug>`).
 | `fabiana_mendes` | Fabiana Freitas Mendes | `/people/fabiana_mendes` |
 
 Advisors externos (co-orientam mas não são docentes CEDIS): `andrea_cabello`,
-`berilhes_garcia`, `edna_canedo`, `marilia_miranda`, `claudia_ochoa`,
-`celia_higawa` — cada um tem stub minimal em `content/people/<slug>.md`
-com `profile_level: advisor_only`.
+`berilhes_garcia`, `edna_canedo`, `claudia_ochoa`, `celia_higawa` — cada um
+tem stub minimal em `content/people/<slug>.md` com
+`profile_level: advisor_only`.
+
+### 1.3.1 Pesquisadores colaboradores
+
+Docentes de outra unidade que co-orientam trabalhos e participam de projetos
+do CEDIS sem compor o corpo efetivo. Diferem de `advisor_only` por terem
+perfil editorial completo, e dos sete docentes por não entrarem no grid de
+`/categories/researcher/` — aparecem em seção própria depois dele.
+
+| Slug | Nome completo | Vínculo | URL de perfil |
+|------|---------------|---------|----------------|
+| `rudi_van_els` | Rudi Henri van Els | Prof. Associado FCTE/UnB (Eng. de Energia) | `/people/rudi_van_els` |
+| `marilia_miranda` | Marília Miranda Forte Gomes | Profa. Associada FCTE/UnB (Estatística) | `/people/marilia_miranda` |
+
+Para criar um:
+
+- `content/people/<slug>.{pt,en}.md` com `profile_level:
+  collaborating_researcher` e `affiliation` (rótulo curto de vínculo, por
+  idioma). **Sem** `categories:` — senão a pessoa entraria em
+  `/categories/people/` — e **sem** `layout:`, para cair em
+  `layouts/people/single.html`.
+- `date` é obrigatório: ao contrário de `derived` e `advisor_only`, este não é
+  stub técnico.
+- `areas:` só quando houver evidência nos dados. Declarar áreas também faz a
+  pessoa aparecer em `/map/` e `/quiz/`.
+- Não acrescente o slug a `data/areas.yaml::researchers[]` nem a
+  `data/research_lines.yaml::researchers[]`: os dois campos exigem
+  `profile_level: researcher` e seus vínculos são declarados caso a caso.
+  O colaborador se liga ao centro por `data/projects.yaml::researchers[]`,
+  por `advisors[]`/`co_advisors[]` e pelas produções.
 
 ### 1.4 Índice unificado (`people-index` / `people-lookup`)
 
 Templates NÃO devem consultar `hugo.Data.people`, `hugo.Data.advisors` (não
 existe mais) ou `content/people/` diretamente. Use os partials centrais:
+
+Níveis de `profile_level`: `researcher`, `collaborating_researcher`,
+`advisor_only`, `card_with_page`, `card`, `derived`.
+
+Para testar "esta pessoa pode constar como orientadora ou coorientadora", use
+`$entry.advisor_level` — nunca reescreva a lista de níveis no template. O campo
+existe porque essa lista estava duplicada em seis templates e, ao surgir
+`collaborating_researcher`, todos ficaram desatualizados em silêncio.
 
 ```go-html-template
 {{/* consultar UMA pessoa */}}
@@ -1747,3 +1784,17 @@ Conferir o que está no ar, num pedido:
 ```bash
 curl -s https://cedis.unb.br/build.txt
 ```
+
+**Cuidado ao conferir logo após publicar.** O GitHub Pages serve com
+`cache-control: max-age=600`, então uma borda do Fastly pode devolver o carimbo
+anterior por até dez minutos depois do deploy. Nesse intervalo, `/build.txt` e a
+`<meta>` da capa podem discordar entre si — as duas vêm do mesmo build, mas
+podem estar em bordas diferentes. Não é defeito do carimbo. Para uma leitura
+imediata:
+
+```bash
+curl -s -H 'Cache-Control: no-cache' "https://cedis.unb.br/build.txt?cb=$RANDOM"
+```
+
+E o teste que de fato encerra a dúvida é o conteúdo, não o carimbo: procurar no
+HTML publicado uma marca exclusiva da correção que se espera encontrar.
