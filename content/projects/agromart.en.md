@@ -19,6 +19,7 @@ funding_agencies: []
 products: []
 publications: []
 summary: "A free software platform connecting family farmers to consumers, built through successive undergraduate theses at FCTE/UnB since 2021."
+featured_image: "../assets/images/featured/project_agromart.webp"
 authorimage: ../assets/images/global/author.webp
 categories:
 - project

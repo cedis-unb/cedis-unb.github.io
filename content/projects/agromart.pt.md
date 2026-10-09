@@ -19,6 +19,7 @@ funding_agencies: []
 products: []
 publications: []
 summary: "Plataforma livre que aproxima agricultores familiares de consumidores, construída em trabalhos de conclusão de curso sucessivos da FCTE/UnB desde 2021."
+featured_image: "../assets/images/featured/project_agromart.webp"
 authorimage: ../assets/images/global/author.webp
 categories:
 - project
