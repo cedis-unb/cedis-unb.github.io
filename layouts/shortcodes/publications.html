@@ -209,10 +209,10 @@
         {{ if and .location (ne .location "") }}
           {{ $detailParts = $detailParts | append .location }}
         {{ end }}
-        {{/* Gap #1: lista de slugs de advisors via people-index (researcher + advisor_only) */}}
+        {{/* Gap #1: slugs de quem pode orientar, via people-index (advisor_level) */}}
         {{ $advisorsList := slice }}
         {{ range $slug, $entry := (partialCached "people-index" "global") }}
-          {{ if or (eq $entry.profile_level "researcher") (eq $entry.profile_level "advisor_only") }}
+          {{ if $entry.advisor_level }}
             {{ $advisorsList = $advisorsList | append $slug }}
           {{ end }}
         {{ end }}

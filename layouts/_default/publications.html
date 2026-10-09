@@ -78,7 +78,7 @@
 {{/* Gap #1: advisor keys via people-index */}}
 {{ $advisorKeys := slice }}
 {{ range $slug, $entry := (partialCached "people-index" "global") }}
-  {{ if or (eq $entry.profile_level "researcher") (eq $entry.profile_level "advisor_only") }}
+  {{ if $entry.advisor_level }}
     {{ $advisorKeys = $advisorKeys | append $slug }}
   {{ end }}
 {{ end }}
@@ -288,7 +288,7 @@
           {{/* Gap #1: advisor keys via people-index */}}
           {{ $advisorsList := slice }}
           {{ range $slug, $entry := (partialCached "people-index" "global") }}
-            {{ if or (eq $entry.profile_level "researcher") (eq $entry.profile_level "advisor_only") }}
+            {{ if $entry.advisor_level }}
               {{ $advisorsList = $advisorsList | append $slug }}
             {{ end }}
           {{ end }}

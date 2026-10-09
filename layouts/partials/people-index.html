@@ -15,7 +15,8 @@
 
     slug                 string
     name                 string   (do .md > data > slug humanized)
-    profile_level        string   ("researcher" | "card_with_page" | "card" | "derived")
+    profile_level        string   ("researcher" | "collaborating_researcher" |
+                                   "advisor_only" | "card_with_page" | "card" | "derived")
     sources              slice    (["page", "data"] — quais fontes têm registro)
     page                 Page ou nil
     page_url             string   (RelPermalink se page, "" senão)
@@ -25,6 +26,8 @@
     supervisions_count   int
     publications         slice    (items de productions.yaml com slug em .people, fallback .tags)
     publications_count   int
+    advisor_level        bool     (pode orientar/coorientar trabalhos do CEDIS:
+                                   researcher | advisor_only | collaborating_researcher)
 
   Este partial é read-only: não muta nada; apenas monta uma view.
 */}}
@@ -163,6 +166,13 @@
 
   {{ $found := or $page $dataEntry $advisor (gt (len $publications) 0) }}
 
+  {{/* advisor_level — "esta pessoa pode constar como orientadora ou
+       coorientadora de trabalhos do CEDIS". Centralizado aqui porque a lista
+       estava replicada em 6 templates e, ao surgir collaborating_researcher,
+       todos ficariam desatualizados em silêncio: o novo colaborador não
+       apareceria como orientador em /publications/, no mapa nem no quiz. */}}
+  {{ $advisorLevel := in (slice "researcher" "advisor_only" "collaborating_researcher") $profileLevel }}
+
   {{ $entry := dict
     "slug" $slug
     "found" $found
@@ -178,6 +188,7 @@
     "supervisions_count" (len $supervisions)
     "publications" $publications
     "publications_count" (len $publications)
+    "advisor_level" $advisorLevel
     "contact" $contact
     "areas" $areas
   }}

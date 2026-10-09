@@ -36,7 +36,7 @@
 
 {{/* Gap #1: itera people-index filtrando researchers + advisors externos */}}
 {{ range $key, $entry := $peopleIndex }}
-  {{ if and (or (eq $entry.profile_level "researcher") (eq $entry.profile_level "advisor_only")) (gt (len $entry.areas) 0) }}
+  {{ if and $entry.advisor_level (gt (len $entry.areas) 0) }}
     {{ $link := $entry.link }}
     {{ if not $link }}{{ $link = printf "/people/%s" $key | relLangURL }}{{ end }}
     {{ if hasPrefix $link "/" }}{{ $link = $link | relLangURL }}{{ end }}

@@ -22,7 +22,7 @@
 {{/* Chaves de orientador vêm do people-index, não de heurística de nome. */}}
 {{ $advisorKeys := slice }}
 {{ range $slug, $entry := (partialCached "people-index" "global") }}
-  {{ if or (eq $entry.profile_level "researcher") (eq $entry.profile_level "advisor_only") }}
+  {{ if $entry.advisor_level }}
     {{ $advisorKeys = $advisorKeys | append $slug }}
   {{ end }}
 {{ end }}

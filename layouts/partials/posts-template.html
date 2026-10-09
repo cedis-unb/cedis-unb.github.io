@@ -86,6 +86,11 @@
         {{ $researcherPublicationCount := 0 }}
         {{ $researcherFormerSupervisionCount := 0 }}
         {{ if $isResearchersTerm }}
+            {{/* Qual das categorias do card é a PESSOA de quem o card trata.
+                 Deliberadamente NÃO usa $entry.advisor_level: aqui a pergunta é
+                 "quem é o sujeito deste card", e o grid só contém docentes
+                 efetivos. Alargar para collaborating_researcher faria um card
+                 cuja categoria citasse um colaborador apontar para ele. */}}
             {{ $personKey := .File.TranslationBaseName }}
             {{ $indexAll := partialCached "people-index" "global" }}
             {{ range .Params.categories }}
