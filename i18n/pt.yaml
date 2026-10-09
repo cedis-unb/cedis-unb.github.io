@@ -222,7 +222,7 @@ ui_catalogued_publications_excluding_undergraduate_theses: "publicação(ões) c
   exceto TCCs."
 ui_cedis_team: "Equipe CEDIS"
 ui_collaborating_researchers: "Pesquisadores colaboradores"
-ui_collaborating_researchers_intro: "Docentes de outras unidades que co-orientam trabalhos e participam de projetos do CEDIS."
+ui_collaborating_researchers_intro: "Pesquisadores de outros laboratórios que participam das atividades do CEDIS."
 ui_collaborators_and_former_collaborators: "Colaboradores e ex-colaboradores"
 ui_collection: "Coleção"
 ui_connect: "Conecte-se"

@@ -461,8 +461,8 @@ tem stub minimal em `content/people/<slug>.md` com
 
 ### 1.3.1 Pesquisadores colaboradores
 
-Docentes de outra unidade que co-orientam trabalhos e participam de projetos
-do CEDIS sem compor o corpo efetivo. Diferem de `advisor_only` por terem
+Pesquisadores de outros laboratórios que participam das atividades do CEDIS
+sem compor o corpo efetivo. Diferem de `advisor_only` por terem
 perfil editorial completo, e dos sete docentes por não entrarem no grid de
 `/categories/researcher/` — aparecem em seção própria depois dele.
 

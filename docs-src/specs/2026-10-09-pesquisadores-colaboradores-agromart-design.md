@@ -166,7 +166,7 @@ Novas chaves em `i18n/pt.yaml` e `i18n/en.yaml`:
 | Chave | PT | EN |
 |---|---|---|
 | `ui_collaborating_researchers` | Pesquisadores colaboradores | Collaborating researchers |
-| `ui_collaborating_researchers_intro` | Docentes de outras unidades que co-orientam trabalhos e participam de projetos do CEDIS. | Faculty from other units who co-advise work and take part in CEDIS projects. |
+| `ui_collaborating_researchers_intro` | Pesquisadores de outros laboratórios que participam das atividades do CEDIS. | Researchers from other labs who take part in CEDIS activities. |
 
 `people_lattes` e `ui_individual_profile` já existem e são reaproveitadas.
 
