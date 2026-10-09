@@ -139,6 +139,13 @@
 
         {{ partial "posts-template.html" . }}
 
+        {{/* Pesquisadores colaboradores entram DEPOIS do grid dos pesquisadores.
+             A guarda de última página preserva essa ordem se o termo passar de
+             pagination.pagerSize (hoje 7 docentes, pagerSize 12). */}}
+        {{ if and $isResearchersList (eq $currentPage $totalPages) }}
+            {{ partial "collaborating-researchers.html" . }}
+        {{ end }}
+
         <div class="mt-14">
             {{ partial "pagination" . }}
         </div>

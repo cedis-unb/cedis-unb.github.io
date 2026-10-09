@@ -579,7 +579,7 @@ def collect_advisor_page_ids() -> set[str]:
         fm = parse_frontmatter(md_path) or {}
         profile_level = fm.get("profile_level")
         categories = set(as_list(fm.get("categories")))
-        if profile_level in {"researcher", "advisor_only"} or "researcher" in categories:
+        if profile_level in {"researcher", "advisor_only", "collaborating_researcher"} or "researcher" in categories:
             ids.add(page_id(md_path, fm))
     return ids
 

@@ -224,6 +224,8 @@ ui_calls_and_notices_organized_by: "Calls and notices organized by year for quic
 ui_catalogued_publications_excluding_undergraduate_theses: "catalogued publication(s),
   excluding undergraduate theses."
 ui_cedis_team: "CEDIS Team"
+ui_collaborating_researchers: "Collaborating researchers"
+ui_collaborating_researchers_intro: "Faculty from other units who co-advise work and take part in CEDIS projects."
 ui_collaborators_and_former_collaborators: "Collaborators and former collaborators"
 ui_collection: "Collection"
 ui_connect: "Connect"
