@@ -243,6 +243,34 @@ projects:
     researchers:
       - george_marsicano
 
+  - id: project_agromart
+    name:
+      en: "AgroMart"
+      pt: "AgroMart"
+    project_type: project
+    status: ongoing
+    start_date: 2021-05-27
+    researchers:
+      - andre_lanna
+      - rudi_van_els
+    students:
+      - lucas_pereira_de_andrade_macedo
+      - lucas_siqueira_rodrigues
+      - byron_kamal_barreto_correa
+      - igor_guimaraes_veludo
+      - andre_aben_athar_de_freitas
+      - pedro_vitor_de_salles_cella
+      - felipe_boccardi_silva_agustini
+      - giovanna_borges_bottino
+      - abner_filipe_cunha_ribeiro
+      - rafael_leao_teixeira_de_magalhaes
+      - christian_fleury_alencar_siqueira
+      - thiago_siqueira_gomes
+      - kalebe_lopes_da_cunha
+      - murilo_schiler_lopes_santana
+      - luana_souza_silva_torres
+      - guilherme_nishimura_da_silva
+      - matheus_costa_gomes
   - id: project_doarti
     name:
       en: "Doarti"

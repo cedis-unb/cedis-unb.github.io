@@ -23,6 +23,7 @@ authors_structured:
 tags:
 - green_software
 - education
+- project_agromart
 advisors:
 - andre_lanna
 doi_isbn: ''

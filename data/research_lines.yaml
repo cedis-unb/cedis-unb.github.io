@@ -289,6 +289,7 @@ research_lines:
       - project_spux
       - project_melhoria_servico_publico
       - project_ia_dados_transformacao_digital
+      - project_agromart
     themes:
       - id: digital_public_services
         name: { pt: "Serviços públicos digitais", en: "Digital public services" }

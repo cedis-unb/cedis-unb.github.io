@@ -23,6 +23,7 @@ authors_structured:
 tags:
 - software_architecture
 - digital_transformation
+- project_agromart
 advisors:
 - andre_lanna
 - rudi_van_els

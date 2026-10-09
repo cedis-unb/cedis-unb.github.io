@@ -122,6 +122,7 @@ areas:
     researchers: 
       - george_marsicano
       - ricardo_ajax
+      - andre_lanna
 
   - id: software_product_line
     name: 

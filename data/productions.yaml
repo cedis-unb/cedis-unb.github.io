@@ -703,6 +703,7 @@ items:
     tags:
       - software_architecture
       - digital_transformation
+      - project_agromart
     type: tcc
     program: curso_esw
     advisors:
@@ -948,6 +949,7 @@ items:
     tags:
       - software_architecture
       - digital_transformation
+      - project_agromart
     type: tcc
     program: curso_esw
     advisors:
@@ -2064,6 +2066,7 @@ items:
     tags:
       - software_architecture
       - digital_transformation
+      - project_agromart
     type: tcc
     program: curso_esw
     advisors:
@@ -2143,6 +2146,7 @@ items:
     tags:
       - software_architecture
       - digital_transformation
+      - project_agromart
     type: tcc
     program: curso_esw
     advisors:
@@ -2302,6 +2306,7 @@ items:
     tags:
       - green_software
       - digital_transformation
+      - project_agromart
     type: tcc
     program: curso_esw
     advisors:
@@ -2448,6 +2453,7 @@ items:
     tags:
       - green_software
       - digital_transformation
+      - project_agromart
     type: tcc
     program: curso_esw
     advisors:
@@ -3009,6 +3015,7 @@ items:
     tags:
       - green_software
       - education
+      - project_agromart
     type: tcc
     program: curso_esw
     advisors:

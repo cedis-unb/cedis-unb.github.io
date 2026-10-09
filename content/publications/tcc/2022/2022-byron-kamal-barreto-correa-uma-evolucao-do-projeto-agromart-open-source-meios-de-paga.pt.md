@@ -24,6 +24,7 @@ authors_structured:
 tags:
 - green_software
 - digital_transformation
+- project_agromart
 advisors:
 - andre_lanna
 - rudi_van_els
