@@ -1,0 +1,56 @@
+{{/*
+  featured-news — a notícia fixada como destaque, ou nil.
+
+  Regra única, usada pela página /categories/news/ e pelo pulso da capa:
+
+    1. se existe notícia publicada marcada `featured: true` e DENTRO da janela
+       temporal, ela é o destaque (a mais recente, se houver mais de uma);
+    2. senão, cada consumidor cai no seu comportamento normal — a notícia mais
+       recente.
+
+  Frontmatter da notícia:
+
+      featured: true
+      featured_until: 2026-12-31   # opcional; último dia da janela, inclusive
+
+  A janela começa na própria `date` do post: nada é destaque antes de ser
+  publicado. Sem `featured_until`, a fixação não expira — use com parcimônia,
+  porque é o único jeito de a marcação virar esquecimento.
+
+  ATENÇÃO: o site é estático. `now` é o instante do BUILD, então uma janela
+  que vence hoje só deixa de valer na próxima publicação, não à meia-noite.
+
+  Uso:
+    {{ $pinned := partialCached "featured-news.html" . .Site.Language.Lang }}
+    {{ with $pinned }}...{{ end }}
+
+  Recebe a página (precisa de .Site.RegularPages no idioma corrente).
+*/}}
+
+{{ $candidates := slice }}
+{{ range where (where .Site.RegularPages "Section" "posts") "Params.tags" "intersect" (slice "News") }}
+  {{ if and .Params.featured (lt .Date now) }}
+    {{ $within := true }}
+    {{ with .Params.featured_until }}
+      {{ $until := . }}
+      {{/* YAML entrega time.Time para data sem aspas e string para data com
+           aspas; aceitar as duas evita um bug silencioso por formatação. */}}
+      {{ if eq (printf "%T" $until) "string" }}
+        {{ $until = time $until }}
+      {{ end }}
+      {{/* Janela inclusiva: vale até o fim do dia indicado. */}}
+      {{ if lt ($until.AddDate 0 0 1) now }}
+        {{ $within = false }}
+      {{ end }}
+    {{ end }}
+    {{ if $within }}
+      {{ $candidates = $candidates | append . }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{ $pinned := "" }}
+{{ with sort $candidates "Date" "desc" }}
+  {{ $pinned = index . 0 }}
+{{ end }}
+{{ return $pinned }}

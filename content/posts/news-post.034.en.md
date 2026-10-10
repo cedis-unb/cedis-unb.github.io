@@ -3,6 +3,8 @@ title: "Software for Good is calling — and there is a place for you"
 date: 2026-10-10T09:00:00-03:00
 draft: false
 weight: 500
+featured: true
+featured_until: 2026-12-31
 language: en
 featured_image: "../assets/images/featured/projeto_Software_Bem.png"
 summary: "Six years, five fronts, 21 social initiatives supported and two applications registered at INPI. The CEDIS social-impact umbrella programme is opening its doors to faculty, students, professionals and institutions."

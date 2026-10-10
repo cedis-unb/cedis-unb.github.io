@@ -3,6 +3,8 @@ title: "O Software para o Bem está chamando — e tem lugar para você"
 date: 2026-10-10T09:00:00-03:00
 draft: false
 weight: 500
+featured: true
+featured_until: 2026-12-31
 language: pt
 featured_image: "../assets/images/featured/projeto_Software_Bem.png"
 summary: "Seis anos, cinco frentes, 21 iniciativas sociais apoiadas e dois aplicativos registrados no INPI. O macroprojeto de impacto social do CEDIS abre as portas para docentes, estudantes, profissionais e instituições."

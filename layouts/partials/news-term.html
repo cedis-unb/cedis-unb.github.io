@@ -21,12 +21,23 @@
 {{ $secondary := slice }}
 {{ $archive := $pagePages }}
 {{ if and $isFirstPage (gt (len $pagePages) 0) }}
+    {{/* Notícia fixada vence a ordem por data; sem fixação válida, o destaque
+         é a mais recente, como sempre foi. Regra em partials/featured-news. */}}
     {{ $featured = index $pagePages 0 }}
-    {{ if gt (len $pagePages) 1 }}
-        {{ $secondary = first 3 (after 1 $pagePages) }}
+    {{ with partialCached "featured-news.html" . .Site.Language.Lang }}
+        {{ $featured = . }}
     {{ end }}
-    {{ if gt (len $pagePages) 4 }}
-        {{ $archive = after 4 $pagePages }}
+    {{/* O restante da página é tudo menos o destaque — a fixada pode não ser
+         a primeira, então remover por posição não serve. */}}
+    {{ $remaining := slice }}
+    {{ range $pagePages }}
+        {{ if ne .RelPermalink $featured.RelPermalink }}
+            {{ $remaining = $remaining | append . }}
+        {{ end }}
+    {{ end }}
+    {{ $secondary = first (math.Min 3 (len $remaining)) $remaining }}
+    {{ if gt (len $remaining) 3 }}
+        {{ $archive = after 3 $remaining }}
     {{ else }}
         {{ $archive = slice }}
     {{ end }}

@@ -13,7 +13,8 @@
     items    — feed completo, ordenado por data desc
     display  — itens exibíveis: só os de data real nos últimos 60 dias,
                com recuo para notícias e depois para o feed inteiro
-    top      — primeiro item de display ("" quando não há nenhum)
+    top      — notícia fixada como destaque, se visível no recorte; senão o
+               primeiro item de display ("" quando não há nenhum)
     rest     — os 4 seguintes
 
   Cada item é um dict: type, title, url, date, hasFullDate, year, summary.
@@ -147,6 +148,39 @@
 {{ end }}
 {{ if eq (len $display) 0 }}
   {{ $display = $items }}
+{{ end }}
+
+{{/* Notícia fixada como destaque (partials/featured-news) assume o topo do
+     pulso; sem fixação válida, o topo é o item mais recente, como sempre.
+     A fixada é promovida dentro de $display e o resto preserva a ordem. */}}
+{{ $pinnedURL := "" }}
+{{ with partialCached "featured-news.html" $page $lang }}
+  {{ $pinnedURL = .RelPermalink }}
+{{ end }}
+{{ if $pinnedURL }}
+  {{ $pinnedItem := "" }}
+  {{ $others := slice }}
+  {{ range $display }}
+    {{ if eq .url $pinnedURL }}
+      {{ $pinnedItem = . }}
+    {{ else }}
+      {{ $others = $others | append . }}
+    {{ end }}
+  {{ end }}
+  {{/* A fixação manda mais que a recência: é uma decisão editorial explícita,
+       com prazo. Se a notícia já saiu do recorte de 60 dias mas a janela
+       segue aberta, ela é buscada no feed completo e promovida mesmo assim —
+       senão um chamamento fixado até dezembro sumiria da capa em novembro,
+       calado, só por envelhecer. */}}
+  {{ if not $pinnedItem }}
+    {{ range $items }}
+      {{ if eq .url $pinnedURL }}{{ $pinnedItem = . }}{{ end }}
+    {{ end }}
+    {{ $others = $display }}
+  {{ end }}
+  {{ if $pinnedItem }}
+    {{ $display = (slice $pinnedItem) | append $others }}
+  {{ end }}
 {{ end }}
 
 {{ $top := "" }}

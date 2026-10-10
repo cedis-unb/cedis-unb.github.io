@@ -885,6 +885,37 @@ guiada. Consequências:
 Para pedidos externos: contatar o CEDIS via canais oficiais; a
 inserção fica com quem mantém o repositório.
 
+### 3.0.3 Notícia em destaque (fixação com janela)
+
+O destaque — o card grande no topo de `/categories/news/` e o item do topo do
+pulso da capa — é **a notícia mais recente**, por padrão.
+
+Para fixar uma notícia nesse lugar por um período, marque no frontmatter:
+
+```yaml
+featured: true
+featured_until: 2026-12-31   # opcional; último dia da janela, inclusive
+```
+
+Regra, implementada uma única vez em `layouts/partials/featured-news.html` e
+consumida por `partials/news-term.html` e `partials/home-pulse-items.html`:
+
+1. há notícia publicada com `featured: true` e dentro da janela → ela é o
+   destaque, mesmo que não seja a mais recente;
+2. não há → a mais recente, como sempre foi.
+
+Detalhes que já custaram bug:
+
+- A janela começa na própria `date` do post: nada vira destaque antes de ser
+  publicado. Havendo mais de uma fixada válida, vence a mais recente.
+- Sem `featured_until` a fixação **não expira**. Prefira sempre declarar o fim.
+- A fixação vence a recência também na capa: uma notícia fixada que já passou
+  do recorte de 60 dias do pulso é promovida assim mesmo, senão sumiria da
+  capa no meio da própria janela, em silêncio.
+- O site é estático: `now` é o instante do BUILD. Uma janela que vence hoje só
+  deixa de valer na próxima publicação, não à meia-noite.
+- Marque nos **dois idiomas** — são arquivos separados.
+
 ### 3.1 Nomeclatura
 
 Filename: `defesa-<slug>-<ano>.<lang>.md`
