@@ -10,6 +10,8 @@ status: ongoing
 start_date: 2020-09-23
 researchers:
 - george_marsicano
+- ricardo_ajax
+- sergio_freitas
 areas:
 - social_software
 - gamification
@@ -27,6 +29,8 @@ authorimage: ../assets/images/global/author.webp
 categories: 
 - project
 - george_marsicano
+- ricardo_ajax
+- sergio_freitas
 - project_software_bem
 tags: 
 - social_software
