@@ -421,42 +421,76 @@ people:
   year: 2025
 - name: Daniel Rodrigues da Rocha
   slug: daniel_rodrigues_da_rocha
-  categories:
-  - people
-  - scientific_initiation
-  title:
-    pt: Framework preditivo de engajamento e desempenho discente em ambientes de aprendizagem gamificados com base em Octalysis, indicadores neurocientíficos e machine learning
-    en: Predictive Framework for Student Engagement and Performance in Gamified Learning Environments Based on Octalysis, Neuroscientific Indicators, and Machine Learning
-  program: curso_esw2
-  advisors:
-  - sergio_freitas
-  tags:
-  - active
-  - gamification
-  - machine_learning
-  - ai
-  - learning_analytics
-  - project_framework_preditivo_engajamento
-  year: 2025
+  supervisions:
+  - categories:
+    - people
+    - scientific_initiation
+    title:
+      pt: Learning Analytics do Ecossistema CEDIS
+      en: Learning Analytics for the CEDIS Ecosystem
+    program: curso_esw2
+    advisors:
+    - sergio_freitas
+    tags:
+    - active
+    - learning_analytics
+    - ai
+    - machine_learning
+    - project_ecossistema_cedis
+    year: 2027
+  - categories:
+    - people
+    - scientific_initiation
+    title:
+      pt: Framework preditivo de engajamento e desempenho discente em ambientes de aprendizagem gamificados com base em Octalysis, indicadores neurocientíficos e machine learning
+      en: Predictive Framework for Student Engagement and Performance in Gamified Learning Environments Based on Octalysis, Neuroscientific Indicators, and Machine Learning
+    program: curso_esw2
+    advisors:
+    - sergio_freitas
+    tags:
+    - inactive
+    - gamification
+    - machine_learning
+    - ai
+    - learning_analytics
+    - project_framework_preditivo_engajamento
+    year: 2025
 - name: Davi Rodrigues da Rocha
   slug: davi_rodrigues_da_rocha
-  categories:
-  - people
-  - scientific_initiation
-  title:
-    pt: Framework preditivo de engajamento e desempenho discente em ambientes de aprendizagem gamificados com base em Octalysis, indicadores neurocientíficos e machine learning
-    en: Predictive Framework for Student Engagement and Performance in Gamified Learning Environments Based on Octalysis, Neuroscientific Indicators, and Machine Learning
-  program: curso_esw2
-  advisors:
-  - sergio_freitas
-  tags:
-  - active
-  - gamification
-  - machine_learning
-  - ai
-  - learning_analytics
-  - project_framework_preditivo_engajamento
-  year: 2025
+  supervisions:
+  - categories:
+    - people
+    - scientific_initiation
+    title:
+      pt: Learning Analytics do Ecossistema CEDIS
+      en: Learning Analytics for the CEDIS Ecosystem
+    program: curso_esw2
+    advisors:
+    - sergio_freitas
+    tags:
+    - active
+    - learning_analytics
+    - ai
+    - machine_learning
+    - project_ecossistema_cedis
+    year: 2027
+  - categories:
+    - people
+    - scientific_initiation
+    title:
+      pt: Framework preditivo de engajamento e desempenho discente em ambientes de aprendizagem gamificados com base em Octalysis, indicadores neurocientíficos e machine learning
+      en: Predictive Framework for Student Engagement and Performance in Gamified Learning Environments Based on Octalysis, Neuroscientific Indicators, and Machine Learning
+    program: curso_esw2
+    advisors:
+    - sergio_freitas
+    tags:
+    - inactive
+    - gamification
+    - machine_learning
+    - ai
+    - learning_analytics
+    - project_framework_preditivo_engajamento
+    year: 2025
 - name: Diogo Oliveira Ferreira
   slug: diogo_oliveira_ferreira
   categories:
@@ -570,7 +604,7 @@ people:
     advisors:
     - sergio_freitas
     tags:
-    - active
+    - inactive
     - gamification
     - machine_learning
     - ai

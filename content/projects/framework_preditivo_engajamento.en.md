@@ -3,17 +3,17 @@ author: CEDIS
 title: "Predictive framework for student engagement and performance in gamified learning environments"
 date: 2025-01-01T00:00:00-03:00
 language: en
-status: ongoing
+status: closed
 start_date: 2025-01-01
-end_date: 2026-12-31
+end_date: 2026-10-10
 id: project_framework_preditivo_engajamento
 researchers:
 - sergio_freitas
 - cristiane_ramos
 students:
-- Daniel Rodrigues da Rocha
-- Davi Rodrigues da Rocha
-- Mylena Angélica Silva Farias
+- daniel_rodrigues_da_rocha
+- davi_rodrigues_da_rocha
+- mylena_faria
 areas:
 - gamification
 - learning_analytics
@@ -47,7 +47,7 @@ tags:
 ---
 ## Overview
 
-**Ongoing project.** Reported period: PIBIC 2025-2026.
+**Completed project.** Period: PIBIC 2025–2026, scholarships ended in October 2026.
 
 This project investigates the construction of a **predictive framework for student engagement and performance** in gamified learning environments. The proposal combines **Octalysis** principles, learning-related neuroscientific indicators, learning analytics, and machine learning models to support earlier, more personalized, evidence-based pedagogical decisions.
 
@@ -58,7 +58,7 @@ The project builds on concrete gamification experiences in undergraduate courses
 | Field | Information |
 |---|---|
 | Nature | Research, development, and innovation in educational gamification, learning analytics, and artificial intelligence applied to education |
-| Status | Ongoing |
+| Status | Completed (PIBIC scholarships ended in October 2026) |
 | Start year | 2025 |
 | End year | 2026 |
 | Program | PIBIC 2025-2026 |
@@ -85,9 +85,11 @@ The main objectives are to:
 |---|---|
 | {{< link-interno "/people/sergio_freitas" "Sergio Antonio Andrade de Freitas" >}} | Coordinator and undergraduate research advisor |
 | {{< link-interno "/people/cristiane_ramos" "Cristiane Soares Ramos" >}} | Researcher |
-| Daniel Rodrigues da Rocha | Undergraduate research student advised by Prof. Sergio |
-| Davi Rodrigues da Rocha | Undergraduate research student advised by Prof. Sergio |
-| {{< link-interno "/people/collaborators/mylena_faria" "Mylena Angélica Silva Farias" >}} | Undergraduate research student advised by Prof. Sergio |
+| Daniel Rodrigues da Rocha | Was an undergraduate research student advised by Prof. Sergio (2025–2026) |
+| Davi Rodrigues da Rocha | Was an undergraduate research student advised by Prof. Sergio (2025–2026) |
+| {{< link-interno "/people/mylena_faria" "Mylena Angélica Silva Farias" >}} | Was an undergraduate research student advised by Prof. Sergio (2025–2026) |
+
+Daniel and Davi continue at CEDIS in a new PIBIC project (2026–2027), *Learning Analytics for the CEDIS Ecosystem*, linked to the {{< link-interno "/projects/ecossistema_cedis" "CEDIS Ecosystem" >}}.
 
 ## Related products
 

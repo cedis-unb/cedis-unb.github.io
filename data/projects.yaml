@@ -132,16 +132,16 @@ projects:
     umbrella_projects:
       - project_inovacao_digital_gamificacao
       - project_ia_dados_transformacao_digital
-    status: ongoing
+    status: closed
     start_date: 2025-01-01
-    end_date: 2026-12-31
+    end_date: 2026-10-10
     researchers:
       - sergio_freitas
       - cristiane_ramos
     students:
-      - Daniel Rodrigues da Rocha
-      - Davi Rodrigues da Rocha
-      - Mylena Angélica Silva Farias
+      - daniel_rodrigues_da_rocha
+      - davi_rodrigues_da_rocha
+      - mylena_faria
 
   - id: project_super_r
     name: 

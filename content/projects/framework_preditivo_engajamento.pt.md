@@ -3,17 +3,17 @@ author: CEDIS
 title: "Framework preditivo de engajamento e desempenho discente em ambientes de aprendizagem gamificados"
 date: 2025-01-01T00:00:00-03:00
 language: pt
-status: ongoing
+status: closed
 start_date: 2025-01-01
-end_date: 2026-12-31
+end_date: 2026-10-10
 id: project_framework_preditivo_engajamento
 researchers:
 - sergio_freitas
 - cristiane_ramos
 students:
-- Daniel Rodrigues da Rocha
-- Davi Rodrigues da Rocha
-- Mylena Angélica Silva Farias
+- daniel_rodrigues_da_rocha
+- davi_rodrigues_da_rocha
+- mylena_faria
 areas:
 - gamification
 - learning_analytics
@@ -47,7 +47,7 @@ tags:
 ---
 ## Visão geral
 
-**Projeto em andamento.** Período informado: PIBIC 2025-2026.
+**Projeto concluído.** Período: PIBIC 2025–2026, bolsas encerradas em outubro de 2026.
 
 Este projeto investiga a construção de um **framework preditivo de engajamento e desempenho discente** para ambientes de aprendizagem gamificados. A proposta combina princípios do **Octalysis**, indicadores neurocientíficos associados à aprendizagem, learning analytics e modelos de machine learning para apoiar decisões pedagógicas mais precoces, personalizadas e orientadas por evidências.
 
@@ -58,7 +58,7 @@ O projeto parte de experiências concretas de gamificação em disciplinas de gr
 | Campo | Informação |
 |---|---|
 | Natureza | Pesquisa, desenvolvimento e inovação em gamificação educacional, learning analytics e inteligência artificial aplicada à educação |
-| Situação | Em andamento |
+| Situação | Concluído (bolsas PIBIC encerradas em outubro de 2026) |
 | Ano de início | 2025 |
 | Ano de fim | 2026 |
 | Programa | PIBIC 2025-2026 |
@@ -85,9 +85,11 @@ O projeto tem como objetivos principais:
 |---|---|
 | {{< link-interno "/people/sergio_freitas" "Sergio Antonio Andrade de Freitas" >}} | Coordenador e orientador de iniciação científica |
 | {{< link-interno "/people/cristiane_ramos" "Cristiane Soares Ramos" >}} | Pesquisadora |
-| Daniel Rodrigues da Rocha | Estudante de iniciação científica orientado pelo Prof. Sergio |
-| Davi Rodrigues da Rocha | Estudante de iniciação científica orientado pelo Prof. Sergio |
-| {{< link-interno "/people/collaborators/mylena_faria" "Mylena Angélica Silva Farias" >}} | Estudante de iniciação científica orientada pelo Prof. Sergio |
+| Daniel Rodrigues da Rocha | Foi estudante de iniciação científica orientado pelo Prof. Sergio (2025–2026) |
+| Davi Rodrigues da Rocha | Foi estudante de iniciação científica orientado pelo Prof. Sergio (2025–2026) |
+| {{< link-interno "/people/mylena_faria" "Mylena Angélica Silva Farias" >}} | Foi estudante de iniciação científica orientada pelo Prof. Sergio (2025–2026) |
+
+Daniel e Davi seguem no CEDIS em novo PIBIC (2026–2027), *Learning Analytics do Ecossistema CEDIS*, vinculado ao {{< link-interno "/projects/ecossistema_cedis" "Ecossistema CEDIS" >}}.
 
 ## Produtos relacionados
 
