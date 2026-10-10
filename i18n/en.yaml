@@ -1,3 +1,9 @@
+atlas: "Atlas do Conhecimento (Knowledge Atlas)"
+cedis_learning_analytics: "CEDIS Learning Analytics"
+concept_studio: "CEDIS Concept Studio"
+deckmanager: "CEDIS Deck Manager"
+passport: "CEDIS Learning Passport"
+slides: "CEDIS Slides"
 wordCount:
   other: "{{ .WordCount }} words"
 
