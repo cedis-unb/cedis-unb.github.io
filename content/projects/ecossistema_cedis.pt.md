@@ -97,7 +97,7 @@ Cinco produtos estão em produção com seus conjuntos de funcionalidades comple
 ## Equipe
 
 - Prof. {{< link-interno "/people/sergio_freitas" "Sergio Antônio Andrade de Freitas" >}} — coordenação e desenvolvimento.
-- Iniciação científica PIBIC 2026–2027: **Daniel Rodrigues da Rocha** e **Davi Rodrigues da Rocha** — *Learning Analytics do Ecossistema CEDIS*, sob orientação do Prof. Sergio.
+- Trabalho de conclusão de curso (2026–2027): **Daniel Rodrigues da Rocha** e **Davi Rodrigues da Rocha** — *Learning Analytics do Ecossistema CEDIS*, sob orientação do Prof. Sergio.
 
 ## Material de divulgação
 

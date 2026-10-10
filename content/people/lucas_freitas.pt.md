@@ -7,7 +7,7 @@ weight: 44
 language: pt
 featured_image: "../assets/images/featured/people_Collaborators.webp"
 summary: Graduando em Engenharia de Software, Universidade de Brasília
-description: Atua no desenvolvimento do Evidentia Review, software do CEDIS para apoio a revisões sistemáticas da literatura.
+description: Atuou no desenvolvimento do Evidentia Review, software do CEDIS para apoio a revisões sistemáticas da literatura, em iniciação científica encerrada em outubro de 2026.
 authorimage: ../assets/images/global/author.webp
 categories:
 - people
@@ -16,14 +16,14 @@ categories:
 advisors:
 - sergio_freitas
 tags:
-- active
+- inactive
 - evidentia
 - ai
 aliases:
   - /people/collaborators/lucas_freitas/
 ---
 ## Perfil Acadêmico e Profissional
-- Posição Atual: Graduando em Engenharia de Software, Universidade de Brasília. Atua em iniciação científica no projeto {{< link-interno "/products/evidentia/" "Evidentia Review" >}}, sob orientação do Prof. {{< link-interno "/people/sergio_freitas" "Sergio Freitas" >}}.
+- Posição Atual: Graduando em Engenharia de Software, Universidade de Brasília. Atuou em iniciação científica no projeto {{< link-interno "/products/evidentia/" "Evidentia Review" >}}, sob orientação do Prof. {{< link-interno "/people/sergio_freitas" "Sergio Freitas" >}}; orientação encerrada em outubro de 2026.
 
 ## Linhas de Pesquisa
 - Engenharia de Software.

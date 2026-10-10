@@ -89,7 +89,7 @@ O projeto tem como objetivos principais:
 | Davi Rodrigues da Rocha | Foi estudante de iniciação científica orientado pelo Prof. Sergio (2025–2026) |
 | {{< link-interno "/people/mylena_faria" "Mylena Angélica Silva Farias" >}} | Foi estudante de iniciação científica orientada pelo Prof. Sergio (2025–2026) |
 
-Daniel e Davi seguem no CEDIS em novo PIBIC (2026–2027), *Learning Analytics do Ecossistema CEDIS*, vinculado ao {{< link-interno "/projects/ecossistema_cedis" "Ecossistema CEDIS" >}}.
+Daniel e Davi seguem no CEDIS no trabalho de conclusão de curso *Learning Analytics do Ecossistema CEDIS* (2026–2027), vinculado ao {{< link-interno "/projects/ecossistema_cedis" "Ecossistema CEDIS" >}}.
 
 ## Produtos relacionados
 

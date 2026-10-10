@@ -97,7 +97,7 @@ Five products are in production with their full feature sets: Deck Manager, Slid
 ## Team
 
 - Prof. {{< link-interno "/people/sergio_freitas" "Sergio Antônio Andrade de Freitas" >}} — coordination and development.
-- PIBIC undergraduate research 2026–2027: **Daniel Rodrigues da Rocha** and **Davi Rodrigues da Rocha** — *Learning Analytics for the CEDIS Ecosystem*, advised by Prof. Sergio.
+- Final-year project (2026–2027): **Daniel Rodrigues da Rocha** and **Davi Rodrigues da Rocha** — *Learning Analytics for the CEDIS Ecosystem*, advised by Prof. Sergio.
 
 ## Outreach material
 

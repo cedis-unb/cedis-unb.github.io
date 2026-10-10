@@ -57,7 +57,7 @@ O **CEDIS Learning Analytics** trabalha nos bastidores do ecossistema. Enquanto 
 - CEDIS (desenvolvimento e manutenção institucional)
 - Prof. {{< link-interno "/people/sergio_freitas" "Sergio Freitas" >}} (coordenação)
 - {{< link-interno "/projects/ecossistema_cedis" "Ecossistema CEDIS" >}} (projeto de origem)
-- Iniciação científica PIBIC 2026–2027 de Daniel Rodrigues da Rocha e Davi Rodrigues da Rocha, orientados pelo Prof. Sergio Freitas
+- Trabalho de conclusão de curso (2026–2027) de Daniel Rodrigues da Rocha e Davi Rodrigues da Rocha, orientados pelo Prof. Sergio Freitas
 
 ## Acesso
 

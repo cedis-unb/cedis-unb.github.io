@@ -424,7 +424,7 @@ people:
   supervisions:
   - categories:
     - people
-    - scientific_initiation
+    - tcc
     title:
       pt: Learning Analytics do Ecossistema CEDIS
       en: Learning Analytics for the CEDIS Ecosystem
@@ -460,7 +460,7 @@ people:
   supervisions:
   - categories:
     - people
-    - scientific_initiation
+    - tcc
     title:
       pt: Learning Analytics do Ecossistema CEDIS
       en: Learning Analytics for the CEDIS Ecosystem

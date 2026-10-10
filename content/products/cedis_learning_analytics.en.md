@@ -57,7 +57,7 @@ It is the family's cross-cutting layer: not the main tool of any teacher or stud
 - CEDIS (institutional development and maintenance)
 - Prof. {{< link-interno "/people/sergio_freitas" "Sergio Freitas" >}} (coordination)
 - {{< link-interno "/projects/ecossistema_cedis" "CEDIS Ecosystem" >}} (origin project)
-- PIBIC undergraduate research 2026–2027 by Daniel Rodrigues da Rocha and Davi Rodrigues da Rocha, advised by Prof. Sergio Freitas
+- Final-year project (2026–2027) by Daniel Rodrigues da Rocha and Davi Rodrigues da Rocha, advised by Prof. Sergio Freitas
 
 ## Access
 

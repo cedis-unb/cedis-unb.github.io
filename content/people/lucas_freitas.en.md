@@ -7,7 +7,7 @@ weight: 44
 language: en
 featured_image: "../assets/images/featured/people_Collaborators.webp"
 summary: Undergraduate in Software Engineering, University of Brasília
-description: Works on the development of Evidentia Review, a CEDIS software platform for systematic literature reviews.
+description: Worked on the development of Evidentia Review, a CEDIS software platform for systematic literature reviews, in undergraduate research that ended in October 2026.
 authorimage: ../assets/images/global/author.webp
 categories:
 - people
@@ -16,14 +16,14 @@ categories:
 advisors:
 - sergio_freitas
 tags:
-- active
+- inactive
 - evidentia
 - ai
 aliases:
   - /people/collaborators/lucas_freitas/
 ---
 ## Academic and Professional Profile
-- Current Position: Undergraduate in Software Engineering, University of Brasília. Engaged in undergraduate research in the {{< link-interno "/products/evidentia/" "Evidentia Review" >}} project under the supervision of Prof. {{< link-interno "/people/sergio_freitas" "Sergio Freitas" >}}.
+- Current Position: Undergraduate in Software Engineering, University of Brasília. Was engaged in undergraduate research in the {{< link-interno "/products/evidentia/" "Evidentia Review" >}} project under the supervision of Prof. {{< link-interno "/people/sergio_freitas" "Sergio Freitas" >}}; the supervision ended in October 2026.
 
 ## Research Lines
 - Software Engineering.

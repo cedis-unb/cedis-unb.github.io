@@ -89,7 +89,7 @@ The main objectives are to:
 | Davi Rodrigues da Rocha | Was an undergraduate research student advised by Prof. Sergio (2025–2026) |
 | {{< link-interno "/people/mylena_faria" "Mylena Angélica Silva Farias" >}} | Was an undergraduate research student advised by Prof. Sergio (2025–2026) |
 
-Daniel and Davi continue at CEDIS in a new PIBIC project (2026–2027), *Learning Analytics for the CEDIS Ecosystem*, linked to the {{< link-interno "/projects/ecossistema_cedis" "CEDIS Ecosystem" >}}.
+Daniel and Davi continue at CEDIS with their final-year project *Learning Analytics for the CEDIS Ecosystem* (2026–2027), linked to the {{< link-interno "/projects/ecossistema_cedis" "CEDIS Ecosystem" >}}.
 
 ## Related products
 
