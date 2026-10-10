@@ -109,6 +109,21 @@ projects:
       - george_marsicano
       - andre_lanna
 
+  - id: project_ecossistema_cedis
+    name:
+      en: "CEDIS Ecosystem"
+      pt: "Ecossistema CEDIS"
+    project_type: project
+    umbrella_projects:
+      - project_inovacao_digital_gamificacao
+    status: ongoing
+    start_date: 2026-08-09
+    researchers:
+      - sergio_freitas
+    students:
+      - daniel_rodrigues_da_rocha
+      - davi_rodrigues_da_rocha
+
   - id: project_framework_preditivo_engajamento
     name:
       en: "Predictive framework for student engagement and performance in gamified learning environments"

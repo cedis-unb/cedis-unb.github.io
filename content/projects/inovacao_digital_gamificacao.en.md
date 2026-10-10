@@ -21,7 +21,6 @@ partners: []
 funding_agencies: []
 products:
 - atloria
-- deckmanager
 - devdog
 - gitranking
 - moodlegam
@@ -101,7 +100,7 @@ Connected fronts include:
 ## Related outputs and products
 
 - {{< link-interno "/products/atloria" "Atloria" >}}
-- {{< link-interno "/products/deckmanager" "CEDIS Deck Manager" >}}
+- {{< link-interno "/projects/ecossistema_cedis" "Ecossistema CEDIS" >}} (Deck Manager, Slides, Concept Studio, Atlas do Conhecimento, Learning Passport and Learning Analytics)
 - {{< link-interno "/products/devdog" "DevDog" >}}
 - {{< link-interno "/products/gitranking" "Git Ranking" >}}
 - {{< link-interno "/products/moodlegam" "MoodleGam" >}}

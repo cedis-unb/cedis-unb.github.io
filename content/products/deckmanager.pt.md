@@ -6,7 +6,7 @@ language: pt
 product_language: pt
 id: deckmanager
 status: active
-project: project_inovacao_digital_gamificacao
+project: project_ecossistema_cedis
 areas:
 - learning_analytics
 - active_learning
@@ -21,13 +21,13 @@ authorimage: ../assets/images/global/author.webp
 categories:
 - products
 - sergio_freitas
-- project_inovacao_digital_gamificacao
+- project_ecossistema_cedis
 tags:
 - app
 - learning_analytics
 - active_learning
 - digital_transformation
-- project_inovacao_digital_gamificacao
+- project_ecossistema_cedis
 ---
 ## Descrição do Projeto
 
@@ -50,13 +50,13 @@ Entre os recursos do **CEDIS Deck Manager** estão a publicação de apresentaç
 
 O sistema também oferece **dashboards de learning analytics com privacidade por design**: hash anônimo com rotação diária de salt, truncamento de IP antes de qualquer processamento, classificação de User-Agent sem armazenar a string original, respeito ao Do Not Track (DNT) e supressão por **k-anonimato** nos relatórios agregados. A landing pública organiza decks por popularidade, avaliação e recência, com avaliação anônima por estrelas.
 
-Como diferencial adicional, o Deck Manager conta com uma **skill de geração de apresentações** compatível com assistentes de IA (ChatGPT/Codex), que permite criar decks HTML com identidade visual do CEDIS, atividades interativas, QR Codes e resumo ao vivo, prontos para publicação direta no painel.
+Como diferencial adicional, o Deck Manager conta com uma **skill de geração de apresentações** compatível com assistentes de IA (ChatGPT/Codex e Claude Code), que permite criar decks HTML com identidade visual do CEDIS, atividades interativas, QR Codes e resumo ao vivo, prontos para publicação direta no painel.
 
 ## Vinculação Acadêmica e Apoio
 
 - CEDIS (desenvolvimento e manutenção institucional)
 - Prof. {{< link-interno "/people/sergio_freitas" "Sergio Freitas" >}} (coordenação)
-- {{< link-interno "/projects/inovacao_digital_gamificacao" "Inovação digital e gamificação para o ensino, divulgação e engenharia de software" >}} (projeto de origem)
+- {{< link-interno "/projects/ecossistema_cedis" "Ecossistema CEDIS" >}} (projeto de origem, dentro de {{< link-interno "/projects/inovacao_digital_gamificacao" "Inovação digital e gamificação" >}})
 
 ## Acesso
 

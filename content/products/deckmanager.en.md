@@ -6,7 +6,7 @@ language: en
 product_language: pt
 id: deckmanager
 status: active
-project: project_inovacao_digital_gamificacao
+project: project_ecossistema_cedis
 areas:
 - learning_analytics
 - active_learning
@@ -21,13 +21,13 @@ authorimage: ../assets/images/global/author.webp
 categories:
 - products
 - sergio_freitas
-- project_inovacao_digital_gamificacao
+- project_ecossistema_cedis
 tags:
 - app
 - learning_analytics
 - active_learning
 - digital_transformation
-- project_inovacao_digital_gamificacao
+- project_ecossistema_cedis
 ---
 ## Project Description
 
@@ -50,12 +50,13 @@ Among the features offered by **CEDIS Deck Manager** are HTML presentation publi
 
 The system also provides **privacy-by-design learning analytics dashboards**: anonymous hashing with daily salt rotation, IP truncation before any processing, User-Agent classification without storing the original string, respect for Do Not Track (DNT), and **k-anonymity** suppression in aggregated reports. The public landing page organizes decks by popularity, rating, and recency, with anonymous star ratings.
 
-As an additional distinguishing feature, Deck Manager ships with a **presentation-generation skill** compatible with AI assistants (ChatGPT/Codex), enabling the creation of HTML decks with CEDIS visual identity, interactive activities, QR codes, and live summaries, ready for direct publication on the panel.
+As an additional distinguishing feature, Deck Manager ships with a **presentation-generation skill** compatible with AI assistants (ChatGPT/Codex and Claude Code), enabling the creation of HTML decks with CEDIS visual identity, interactive activities, QR codes, and live summaries, ready for direct publication on the panel.
 
 ## Academic Link and Support
 
 - CEDIS (institutional development and maintenance)
 - Prof. {{< link-interno "/people/sergio_freitas" "Sergio Freitas" >}} (coordination)
+- {{< link-interno "/projects/ecossistema_cedis" "CEDIS Ecosystem" >}} (origin project, within {{< link-interno "/projects/inovacao_digital_gamificacao" "Digital innovation and gamification" >}})
 
 ## Access
 
