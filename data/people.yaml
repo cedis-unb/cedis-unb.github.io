@@ -3825,3 +3825,19 @@ people:
   - nlp
   - ai
   year: 2004
+- name: Lucas Monteiro Freitas
+  slug: lucas_freitas
+  categories:
+  - people
+  - scientific_initiation
+  title:
+    pt: Desenvolvimento do Evidentia Review, plataforma de apoio a revisões sistemáticas da literatura
+    en: Development of Evidentia Review, a platform supporting systematic literature reviews
+  program: curso_esw2
+  advisors:
+  - sergio_freitas
+  tags:
+  - inactive
+  - evidentia
+  - ai
+  year: 2026
