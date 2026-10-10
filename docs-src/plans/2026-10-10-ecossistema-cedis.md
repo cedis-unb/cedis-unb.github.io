@@ -8,6 +8,18 @@
 
 **Tech Stack:** Hugo (publishDir `docs/`), Python 3 (edições cirúrgicas em YAML preservando formatação), `npm test` (validadores), `lychee` (links), `gh` (push com a conta da organização).
 
+## Desvio registrado na implementação (2026-10-10)
+
+O id de produto `learning_analytics` colide com o id de **área** homônimo em
+`data/areas.yaml` (rótulo "Análise da Aprendizagem"): a chave i18n já existia e
+`translated-label.html` resolveria a pill, a página `/tags/learning_analytics/`
+e as tags da notícia como a área, não como o produto. O id do produto passa a
+ser **`cedis_learning_analytics`** (arquivo, `id:`, logo
+`cedis_learning_analytics-logo.png`, links internos, chave i18n, `products:` do
+projeto, tags e `related_ids` da notícia 040). Título, host e conteúdo não
+mudam. Toda menção a `learning_analytics` como id de produto neste documento
+lê-se `cedis_learning_analytics`; como área, permanece `learning_analytics`.
+
 ## Global Constraints
 
 - Data única do ecossistema: **`2026-08-09`**. Projeto e cinco produtos novos: `date: 2026-08-09T09:00:00-03:00`. Deck Manager mantém `2026-07-16T09:00:00-03:00`.
