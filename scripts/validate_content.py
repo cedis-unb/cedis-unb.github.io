@@ -296,6 +296,12 @@ def validate_people(people_data: dict, advisor_ids: set[str]) -> None:
             for adv_id in unit.get("advisors", []) or []:
                 if adv_id not in advisor_ids:
                     warn("xref", unit_location, f"advisor '{adv_id}' não existe como researcher/advisor_only em content/people")
+            # co_advisors segue a mesma regra de advisors; os dois são disjuntos
+            for adv_id in unit.get("co_advisors", []) or []:
+                if adv_id not in advisor_ids:
+                    warn("xref", unit_location, f"co_advisor '{adv_id}' não existe como researcher/advisor_only em content/people")
+                if adv_id in (unit.get("advisors") or []):
+                    error("people", unit_location, f"'{adv_id}' aparece em advisors e co_advisors ao mesmo tempo")
 
 
 def validate_productions(

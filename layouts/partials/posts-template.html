@@ -110,7 +110,7 @@
                 {{ end }}
             {{ end }}
             {{ range hugo.Data.people.people }}
-                {{ $isPreviousPerson := and .advisors (in .advisors $personKey) (in .tags "inactive") }}
+                {{ $isPreviousPerson := and (or (in (.advisors | default (slice)) $personKey) (in (.co_advisors | default (slice)) $personKey)) (in .tags "inactive") }}
                 {{ $isNonProductionSupervision := or (in .categories "scientific_initiation") (in .categories "volunteer") (in .categories "monitor") }}
                 {{ if and $isPreviousPerson $isNonProductionSupervision }}
                     {{ $researcherFormerSupervisionCount = add $researcherFormerSupervisionCount 1 }}

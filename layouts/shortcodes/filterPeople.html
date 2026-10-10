@@ -69,6 +69,7 @@
         "tags" (.tags | default (slice))
         "categories" (.categories | default (slice))
         "advisors" (.advisors | default (slice))
+        "co_advisors" (.co_advisors | default (slice))
       ) }}
     {{ end }}
     {{ with $entry.page }}
@@ -78,6 +79,7 @@
         "tags" (.Params.tags | default (slice))
         "categories" (.Params.categories | default (slice))
         "advisors" (.Params.advisors | default (slice))
+        "co_advisors" (.Params.co_advisors | default (slice))
       ) }}
     {{ end }}
 
@@ -114,7 +116,9 @@
 
       {{ if and $ok $filterAdvisorsHasContent }}
         {{ $m := false }}
-        {{ range $filterAdvisors }}{{ if in $unit.advisors . }}{{ $m = true }}{{ end }}{{ end }}
+        {{/* Casa orientador E coorientador: filtrar só por advisors faria o
+             coorientador sumir do próprio perfil e dos contadores. */}}
+        {{ range $filterAdvisors }}{{ if or (in $unit.advisors .) (in $unit.co_advisors .) }}{{ $m = true }}{{ end }}{{ end }}
         {{ if not $m }}{{ $ok = false }}{{ end }}
       {{ end }}
 
@@ -216,7 +220,7 @@
       {{ if $collapsibleDetails }}
         {{ if or $anySupSummary $pageSummary }}{{ $hasHiddenDetails = true }}{{ end }}
         {{ range $supervisions }}
-          {{ if or .program .year (gt (len .advisors) 0) }}{{ $hasHiddenDetails = true }}{{ end }}
+          {{ if or .program .year (gt (len .advisors) 0) (gt (len (.co_advisors | default (slice))) 0) }}{{ $hasHiddenDetails = true }}{{ end }}
         {{ end }}
       {{ end }}
 
@@ -275,6 +279,19 @@
                   </div>
                 </div>
                 {{ end }}
+                {{ with $sup.co_advisors }}
+                <div>
+                  <div class="{{ $metaLabelClass }}">{{ i18n "coorientador" }}</div>
+                  <div class="mt-2 flex flex-wrap gap-2">
+                    {{ range . }}
+                      {{ $adv := partial "people-lookup" . }}
+                      {{ if $adv.found }}
+                        <a href="{{ if hasPrefix $adv.link "/" }}{{ $adv.link | relLangURL }}{{ else }}{{ $adv.link }}{{ end }}" class="{{ $pillClass }}">{{ $adv.name }}</a>
+                      {{ end }}
+                    {{ end }}
+                  </div>
+                </div>
+                {{ end }}
 
                 {{ if and $showTopics (gt (len $filteredTags) 0) }}
                 <div>
@@ -301,6 +318,19 @@
                     <div class="{{ $metaLabelClass }}">{{ i18n "orientador" }}</div>
                     <div class="mt-2 flex flex-wrap gap-2">
                       {{ range $sup.advisors }}
+                        {{ $adv := partial "people-lookup" . }}
+                        {{ if $adv.found }}
+                          <a href="{{ if hasPrefix $adv.link "/" }}{{ $adv.link | relLangURL }}{{ else }}{{ $adv.link }}{{ end }}" class="{{ $pillClass }}">{{ $adv.name }}</a>
+                        {{ end }}
+                      {{ end }}
+                    </div>
+                  </div>
+                  {{ end }}
+                  {{ with $sup.co_advisors }}
+                  <div>
+                    <div class="{{ $metaLabelClass }}">{{ i18n "coorientador" }}</div>
+                    <div class="mt-2 flex flex-wrap gap-2">
+                      {{ range . }}
                         {{ $adv := partial "people-lookup" . }}
                         {{ if $adv.found }}
                           <a href="{{ if hasPrefix $adv.link "/" }}{{ $adv.link | relLangURL }}{{ else }}{{ $adv.link }}{{ end }}" class="{{ $pillClass }}">{{ $adv.name }}</a>

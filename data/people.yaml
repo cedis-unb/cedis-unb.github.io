@@ -116,8 +116,9 @@ people:
     en: Development of AI-based solutions
   program: curso_esw2
   advisors:
-  - andre_lanna
   - sergio_freitas
+  co_advisors:
+  - andre_lanna
   tags:
   - active
   - ai
@@ -134,6 +135,7 @@ people:
   program: curso_esw2
   advisors:
   - andre_lanna
+  co_advisors:
   - sergio_freitas
   tags:
   - active
@@ -151,6 +153,7 @@ people:
   program: curso_esw2
   advisors:
   - andre_lanna
+  co_advisors:
   - sergio_freitas
   tags:
   - active
@@ -168,6 +171,7 @@ people:
   program: curso_esw2
   advisors:
   - andre_lanna
+  co_advisors:
   - sergio_freitas
   tags:
   - active
@@ -185,6 +189,7 @@ people:
   program: curso_esw2
   advisors:
   - andre_lanna
+  co_advisors:
   - sergio_freitas
   tags:
   - active
@@ -202,6 +207,7 @@ people:
   program: curso_esw2
   advisors:
   - andre_lanna
+  co_advisors:
   - sergio_freitas
   tags:
   - active
@@ -413,8 +419,9 @@ people:
     en: Project on Gamification Literature Review
   program: curso_esw2
   advisors:
-  - sergio_freitas
   - cristiane_ramos
+  co_advisors:
+  - sergio_freitas
   tags:
   - active
   - gamification
@@ -501,8 +508,9 @@ people:
     en: Project on Gamification Literature Review
   program: curso_esw2
   advisors:
-  - sergio_freitas
   - cristiane_ramos
+  co_advisors:
+  - sergio_freitas
   tags:
   - active
   - gamification
@@ -517,8 +525,9 @@ people:
     en: Project on Gamification Literature Review
   program: curso_esw2
   advisors:
-  - sergio_freitas
   - cristiane_ramos
+  co_advisors:
+  - sergio_freitas
   tags:
   - active
   - gamification
@@ -568,8 +577,9 @@ people:
     en: Project on Gamification Literature Review
   program: curso_esw2
   advisors:
-  - sergio_freitas
   - cristiane_ramos
+  co_advisors:
+  - sergio_freitas
   tags:
   - active
   - gamification
@@ -651,8 +661,9 @@ people:
     en: 'Indigenous Language Translator App: Munduruku'
   program: curso_esw2
   advisors:
-  - sergio_freitas
   - celia_higawa
+  co_advisors:
+  - sergio_freitas
   tags:
   - active
   - social_software
@@ -667,8 +678,9 @@ people:
     en: Project on Gamification Literature Review
   program: curso_esw2
   advisors:
-  - sergio_freitas
   - cristiane_ramos
+  co_advisors:
+  - sergio_freitas
   tags:
   - active
   - gamification

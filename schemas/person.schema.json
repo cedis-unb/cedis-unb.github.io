@@ -4,10 +4,22 @@
   "title": "Pessoa (não-docente) do CEDIS",
   "description": "Item de data/people.yaml::people[] — orientandos, alumni, colaboradores.",
   "type": "object",
-  "required": ["name", "slug"],
+  "required": [
+    "name",
+    "slug"
+  ],
   "anyOf": [
-    {"required": ["categories", "advisors"]},
-    {"required": ["supervisions"]}
+    {
+      "required": [
+        "categories",
+        "advisors"
+      ]
+    },
+    {
+      "required": [
+        "supervisions"
+      ]
+    }
   ],
   "additionalProperties": true,
   "properties": {
@@ -26,7 +38,9 @@
         "type": "string",
         "pattern": "^[a-z0-9_]+$"
       },
-      "contains": {"const": "people"}
+      "contains": {
+        "const": "people"
+      }
     },
     "advisors": {
       "type": "array",
@@ -38,8 +52,15 @@
     },
     "year": {
       "anyOf": [
-        {"type": "integer", "minimum": 1990, "maximum": 2035},
-        {"type": "string", "pattern": "^[0-9]{4}(/[12])?$"}
+        {
+          "type": "integer",
+          "minimum": 1990,
+          "maximum": 2035
+        },
+        {
+          "type": "string",
+          "pattern": "^[0-9]{4}(/[12])?$"
+        }
       ]
     },
     "program": {
@@ -48,13 +69,25 @@
     },
     "tags": {
       "type": "array",
-      "items": {"type": "string"}
+      "items": {
+        "type": "string"
+      }
     },
     "title": {
       "type": "object",
       "properties": {
-        "pt": {"type": ["string", "null"]},
-        "en": {"type": ["string", "null"]}
+        "pt": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "en": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
       }
     },
     "supervisions": {
@@ -62,25 +95,54 @@
       "minItems": 1,
       "items": {
         "type": "object",
-        "required": ["categories", "advisors"],
+        "required": [
+          "categories",
+          "advisors"
+        ],
         "additionalProperties": true,
         "properties": {
           "categories": {
             "type": "array",
             "minItems": 1,
-            "items": {"type": "string", "pattern": "^[a-z0-9_]+$"},
-            "contains": {"const": "people"}
+            "items": {
+              "type": "string",
+              "pattern": "^[a-z0-9_]+$"
+            },
+            "contains": {
+              "const": "people"
+            }
           },
           "advisors": {
             "type": "array",
             "minItems": 1,
-            "items": {"type": "string", "pattern": "^[a-z0-9_]+$"}
+            "items": {
+              "type": "string",
+              "pattern": "^[a-z0-9_]+$"
+            }
           },
           "tags": {
             "type": "array",
-            "items": {"type": "string"}
+            "items": {
+              "type": "string"
+            }
+          },
+          "co_advisors": {
+            "type": "array",
+            "description": "Slugs dos coorientadores. Disjunto de advisors: quem está aqui NÃO se repete lá. Mesma semântica de data/defesas.yaml.",
+            "items": {
+              "type": "string",
+              "pattern": "^[a-z0-9_]+$"
+            }
           }
         }
+      }
+    },
+    "co_advisors": {
+      "type": "array",
+      "description": "Slugs dos coorientadores. Disjunto de advisors: quem está aqui NÃO se repete lá. Mesma semântica de data/defesas.yaml.",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9_]+$"
       }
     }
   }

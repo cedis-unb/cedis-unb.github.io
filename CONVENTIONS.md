@@ -1205,6 +1205,31 @@ Este é o fluxo padrão de registro dos orientandos:
   year: 2026
 ```
 
+### 4.A.1.1 Orientador e coorientador
+
+`advisors` lista quem **orienta**; `co_advisors`, quem **coorienta**. Os dois
+são disjuntos — um slug nunca aparece nos dois campos, e o validador acusa se
+aparecer. Mesma semântica de `data/defesas.yaml`.
+
+```yaml
+  advisors:
+  - cristiane_ramos
+  co_advisors:
+  - sergio_freitas
+```
+
+`co_advisors` é opcional: orientação sem coorientação simplesmente não traz o
+campo. Quem consome:
+
+- `shortcodes/filterPeople.html` filtra por `advisors` **ou** `co_advisors` —
+  `advisors="<slug>"` encontra a pessoa nos dois papéis — e renderiza os dois
+  sob rótulos separados (`orientador` / `coorientador` no i18n);
+- `people/single.html` e `partials/posts-template.html` contam orientações
+  atuais e anteriores somando os dois campos.
+
+Ao acrescentar um consumidor novo, some os dois campos: contar só `advisors`
+faz o coorientador sumir do próprio perfil e dos contadores em silêncio.
+
 ### 4.A.2 Após a defesa
 
 Ao defender, o orientando ganha **três presenças** no repositório:
