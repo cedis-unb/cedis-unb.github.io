@@ -69,8 +69,17 @@ SpB emerges as a response to the need to connect technological innovation with r
 ### DOARTI
 Emerging in the context of the pandemic, {{< link-interno "/projects/doarti" "DOARTI" >}} is a project linked to Software for Good. It created a digital platform for mapping and connecting charitable organizations with potential donors in the Federal District. With an app and website already in operation, the project supports 21 social initiatives and strengthens solidarity networks. It is developed entirely by volunteers and involves students and professionals from various fields.
 
+### AgroMart
+{{< link-interno "/projects/agromart" "AgroMart" >}} is a free software platform that connects family farmers to consumers, focused on Community Supported Agriculture (CSA) groups. It began at a UnB hackathon in 2020 and has evolved since 2021 through successive undergraduate theses at FCTE, each picking up the existing codebase to deliver a new layer — infrastructure, payment methods, co-farmer management, development process and accessibility. It is mentored by {{< link-interno "/people/andre_lanna" "André Lanna" >}} and {{< link-interno "/people/rudi_van_els" "Rudi van Els" >}}, and its code is public.
+
 ### LEPIC
 Focused on education, LEPIC aims to develop a tool for assessing and monitoring children's reading fluency. The project is a result of a partnership between UnB (FCTE and FCTS) and UFMG, and it supports public literacy policies based on accessible technology and scientific evidence.
+
+### A3M
+{{< link-interno "/projects/programa_a3m" "A3M: Educational innovation with active methodologies" >}} records CEDIS's work in the Learning for the Third Millennium Program at UnB. It connects active methodologies, learning indicators and digital products for pedagogical monitoring, applying the same social-impact logic of SpB to the field of education.
+
+### Green SD
+{{< link-interno "/projects/gsd" "Project Green SD" >}} addresses the sustainability of software itself: how to build, run and evolve systems with lower energy use and a smaller environmental footprint, and how to bring that agenda to companies. It is the SpB front where social impact is measured in resources saved rather than in people served.
 
 ### Technological products (2025–2026)
 In 2025, new initiatives connected to the social-impact software line were catalogued as technological products in the Lattes CV. In 2026, the Child Sexual Abuse Prevention and Childhood Violence Prevention apps received computer program registration certificates from INPI (see {{< link-interno "/publications/registrations/" "Software registrations" >}}):

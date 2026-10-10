@@ -7,6 +7,8 @@ status: ongoing
 start_date: 2021-05-27
 id: project_agromart
 project_type: project
+umbrella_projects:
+- project_software_bem
 researchers:
 - andre_lanna
 - rudi_van_els
@@ -26,11 +28,13 @@ categories:
 - andre_lanna
 - rudi_van_els
 - project_agromart
+- project_software_bem
 tags:
 - social_software
 - digital_transformation
 - software_architecture
 - project_agromart
+- project_software_bem
 ---
 ## Visão geral
 
@@ -39,6 +43,10 @@ tags:
 O AgroMart é uma plataforma de software livre que apoia agricultores familiares, em especial os vinculados a Comunidades que Sustentam a Agricultura (CSA), na divulgação e na comercialização de seus produtos. Nasceu de um hackathon na Universidade de Brasília em 2020 e desde então evolui como projeto didático-científico de longo prazo: cada trabalho de conclusão de curso retoma a base existente e entrega uma camada nova — infraestrutura, meios de pagamento, gestão de co-agricultores, processo de desenvolvimento, acessibilidade.
 
 Essa continuidade é o traço distintivo do projeto. Oito TCCs defendidos entre 2021 e 2025 compartilham o mesmo código, o que faz do AgroMart tanto um software social em uso quanto um laboratório sobre como sustentar projetos *open source* universitários diante da rotatividade de colaboradores.
+
+## Vínculo institucional
+
+O AgroMart integra o macroprojeto {{< link-interno "/projects/software_bem" "Software para o Bem" >}}, frente estratégica do CEDIS para software de impacto social.
 
 ## Equipe
 

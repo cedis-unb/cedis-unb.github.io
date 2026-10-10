@@ -49,6 +49,8 @@ projects:
     name: 
       en: "Project Green SD"
       pt: "Projeto Green SD"
+    umbrella_projects:
+      - project_software_bem
     researchers:
       - fabiana_mendes
 
@@ -190,6 +192,8 @@ projects:
     name:
       en: "A3M: Educational innovation with active methodologies"
       pt: "A3M: Inovação educacional com metodologias ativas"
+    umbrella_projects:
+      - project_software_bem
     status: ongoing
     start_date: 2017-01-01
     researchers:
@@ -248,6 +252,8 @@ projects:
       en: "AgroMart"
       pt: "AgroMart"
     project_type: project
+    umbrella_projects:
+      - project_software_bem
     status: ongoing
     start_date: 2021-05-27
     researchers:

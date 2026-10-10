@@ -6,6 +6,8 @@ language: pt
 status: ongoing
 start_date: 2017-01-01
 id: project_a3m
+umbrella_projects:
+- project_software_bem
 researchers:
 - sergio_freitas
 - cristiane_ramos
@@ -30,11 +32,13 @@ categories:
 - sergio_freitas
 - cristiane_ramos
 - project_a3m
+- project_software_bem
 tags:
 - active_learning
 - education
 - learning_analytics
 - project_a3m
+- project_software_bem
 - active
 ---
 ## Visão geral
@@ -44,6 +48,10 @@ tags:
 O projeto **A3M: Inovação educacional com metodologias ativas** registra a atuação do CEDIS no Programa Aprendizagem para o Terceiro Milênio da Universidade de Brasília. A iniciativa articula inovação pedagógica, metodologias ativas, indicadores de aprendizagem e produtos digitais voltados ao acompanhamento de práticas educacionais.
 
 No contexto do CEDIS, o A3M conecta pesquisa aplicada, formação docente, análise de indicadores e desenvolvimento de soluções para apoiar disciplinas, cursos e gestores acadêmicos em decisões orientadas por evidências.
+
+## Vínculo institucional
+
+O A3M integra o macroprojeto {{< link-interno "/projects/software_bem" "Software para o Bem" >}}, frente estratégica do CEDIS para software de impacto social.
 
 ## Objetivos
 

@@ -5,6 +5,8 @@ date: 2024-02-14T17:08:50-03:00
 weight: 10
 language: en
 id: project_gsd
+umbrella_projects:
+- project_software_bem
 status: ongoing
 start_date: 2024-02-14
 researchers:
@@ -22,9 +24,11 @@ categories:
 - project
 - fabiana_mendes
 - project_gsd
+- project_software_bem
 tags: 
 - green_software
 - project_gsd
+- project_software_bem
 ---
 
 # Green Software Development
@@ -64,6 +68,10 @@ Therefore, this project aims to draw attention to the need to know this area and
 - Calero, C., Mancebo, J., García, F., Moraga, M. Á., Berná, J. A. G., Fernández-Alemán, J. L., and Toval, A. 5ws of green and sustainable software. Tsinghua Science and Technology 25, 3 (2019), 401–414.
 - ISO/IEC/IEEE 24765: 2010 systems and software engineering-vocabulary.
 - Karita, L., Mourão, B. C., Martins, L. A., Soares, L. R., and Machado, I. Software industry awareness on sustainable software engineering: a Brazilian perspective. Journal of Software Engineering Research and Development 9 (2021), 2–1.
+
+## Institutional affiliation
+
+Green SD is part of the {{< link-interno "/projects/software_bem" "Software for Good" >}} umbrella programme, the CEDIS strategic front for social-impact software.
 
 ## Goal
 

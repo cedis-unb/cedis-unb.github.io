@@ -42,7 +42,7 @@ Por meio da articulação entre saberes diversos e do trabalho colaborativo com 
 
 ## Sobre o Programa
 
-O SpB nasce como resposta à necessidade de conectar a inovação tecnológica com demandas sociais reais. Como macroprojeto, organiza e dá continuidade a iniciativas vinculadas, como o {{< link-interno "/projects/doarti" "projeto DOARTI" >}}, desenvolvido durante a pandemia da COVID-19. O programa propõe a criação de um ecossistema de desenvolvimento de softwares sociais, sustentado por equipes multidisciplinares e por uma rede de parcerias internas e externas à Universidade de Brasília.
+O SpB nasce como resposta à necessidade de conectar a inovação tecnológica com demandas sociais reais. Como macroprojeto, organiza e dá continuidade a iniciativas vinculadas, como o {{< link-interno "/projects/doarti" "projeto DOARTI" >}}, desenvolvido durante a pandemia da COVID-19, e o {{< link-interno "/projects/agromart" "AgroMart" >}}, voltado à agricultura familiar. O programa propõe a criação de um ecossistema de desenvolvimento de softwares sociais, sustentado por equipes multidisciplinares e por uma rede de parcerias internas e externas à Universidade de Brasília.
 
 ### Sua Missão é
 - Sintonizar e inspirar pessoas e Organizações a fazer o bem.
@@ -68,8 +68,17 @@ O SpB nasce como resposta à necessidade de conectar a inovação tecnológica c
 ### DOARTI
 Surgido no contexto da pandemia, o {{< link-interno "/projects/doarti" "DOARTI" >}} é um projeto vinculado ao Software para o Bem. Criou uma plataforma digital de mapeamento e conexão entre entidades beneficentes e potenciais doadores no Distrito Federal. Com aplicativo e site já em operação, o projeto oferece suporte a 21 iniciativas sociais, fortalecendo redes de solidariedade. Seu desenvolvimento é 100% voluntário e integra estudantes e profissionais de diferentes áreas.
 
+### AgroMart
+O {{< link-interno "/projects/agromart" "AgroMart" >}} é uma plataforma livre que aproxima agricultores familiares de consumidores, com foco nas Comunidades que Sustentam a Agricultura (CSA). Nasceu de um hackathon na UnB em 2020 e evolui desde 2021 em trabalhos de conclusão de curso sucessivos da FCTE, cada um retomando a base existente para entregar uma camada nova — infraestrutura, meios de pagamento, gestão de co-agricultores, processo de desenvolvimento e acessibilidade. É mentorado por {{< link-interno "/people/andre_lanna" "André Lanna" >}} e {{< link-interno "/people/rudi_van_els" "Rudi van Els" >}}, e seu código é público.
+
 ### LEPIC
 Com foco em educação, o LEPIC tem como objetivo criar uma ferramenta para avaliação e monitoramento da fluência leitora de crianças. A proposta é fruto de uma parceria entre a UnB (FCTE e FCTS) e a UFMG, e visa apoiar políticas públicas de alfabetização com base em evidências e tecnologia acessível.
+
+### A3M
+O {{< link-interno "/projects/programa_a3m" "A3M: Inovação educacional com metodologias ativas" >}} registra a atuação do CEDIS no Programa Aprendizagem para o Terceiro Milênio da UnB. Articula metodologias ativas, indicadores de aprendizagem e produtos digitais de acompanhamento pedagógico, aplicando a mesma lógica de impacto social do SpB ao campo da educação.
+
+### Green SD
+O {{< link-interno "/projects/gsd" "Projeto Green SD" >}} trata da sustentabilidade do próprio software: como produzir, operar e evoluir sistemas com menor consumo de energia e menor pegada ambiental, e como levar essa agenda às empresas. É a frente do SpB em que o impacto social se mede em recursos poupados, não em público atendido.
 
 ### Produtos tecnológicos (2025–2026)
 Em 2025, novas iniciativas associadas à linha de software de impacto social foram cadastradas como produtos tecnológicos no Currículo Lattes. Em 2026, os aplicativos Prevenção ao Abuso Sexual Infantil e Prevenção da Violência na Infância receberam certificado de registro de programa de computador no INPI (ver {{< link-interno "/publications/registrations/" "Registros de software" >}}):

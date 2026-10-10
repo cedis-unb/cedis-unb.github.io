@@ -6,6 +6,8 @@ language: en
 status: ongoing
 start_date: 2017-01-01
 id: project_a3m
+umbrella_projects:
+- project_software_bem
 researchers:
 - sergio_freitas
 - cristiane_ramos
@@ -30,11 +32,13 @@ categories:
 - sergio_freitas
 - cristiane_ramos
 - project_a3m
+- project_software_bem
 tags:
 - active_learning
 - education
 - learning_analytics
 - project_a3m
+- project_software_bem
 - active
 ---
 ## Overview
@@ -44,6 +48,10 @@ tags:
 The project **A3M: Educational innovation with active methodologies** records CEDIS's work in the Learning for the Third Millennium Program at the University of Brasília. The initiative connects pedagogical innovation, active methodologies, learning indicators, and digital products aimed at monitoring educational practices.
 
 Within CEDIS, A3M connects applied research, faculty development, indicator analysis, and solution development to support courses, programs, and academic managers in evidence-based decisions.
+
+## Institutional affiliation
+
+A3M is part of the {{< link-interno "/projects/software_bem" "Software for Good" >}} umbrella programme, the CEDIS strategic front for social-impact software.
 
 ## Objectives
 
