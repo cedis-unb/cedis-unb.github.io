@@ -78,6 +78,15 @@ arquivo quanto como identificador em tags/advisors — sem exceções.
 
 ### Relações estruturadas entre projetos, produtos e pessoas
 
+**Ids de produto não podem coincidir com ids de área nem de projeto.**
+`translated-label.html` resolve qualquer slug em cascata (i18n → projeto →
+área → pessoa); um produto com o mesmo id de uma área herda o rótulo e a
+página `/tags/` da área, e as tags da notícia deixam de distinguir os dois.
+Caso real: o produto do Learning Analytics chama-se `cedis_learning_analytics`
+porque `learning_analytics` já é a área (2026-10-10). Antes de criar um
+produto, confira `data/areas.yaml` e `data/projects.yaml`.
+
+
 A partir da Fase 3 do plano de auditoria, a fonte canônica de relações
 entre projetos, produtos e perfis fica no *front matter* das páginas:
 
