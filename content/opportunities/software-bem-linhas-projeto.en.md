@@ -6,7 +6,7 @@ language: en
 translationKey: opportunity_software_bem_linhas_projeto
 id: software_bem_linhas_projeto
 status: open
-deadline: 2026-12-31
+deadline: 2026-10-20
 audience:
 - extensao
 - tcc
@@ -16,11 +16,11 @@ project: project_software_bem
 responsible:
 - george_marsicano
 source: /posts/news-post.034/
-summary: "Five project lines of the Software for Good umbrella programme, open to students, faculty, professionals and institutions with a real social need."
+summary: "Applications from 14 to 20 October 2026, through the call form. Five project lines of the Software for Good umbrella programme, open to students, faculty, professionals and institutions with a real social need."
 ---
 {{< link-interno "/projects/software_bem" "Software for Good" >}} organises its development fronts into **five project lines**. Each line delimits a field of social impact and guides the choice of problem, partner and software scope.
 
-This is a rolling call. There is room for **students** who want their final thesis to serve someone after it is handed in, **faculty** from any field, **professionals** willing to give a few hours of their experience, and **institutions** with a real social need and no one to turn it into technology. The programme's rule is non-negotiable: the solution reaches the end user at no cost.
+The new call is open from **14 to 20 October 2026**. There is room for **students** who want their final thesis to serve someone after it is handed in, **faculty** from any field, **professionals** willing to give a few hours of their experience, and **institutions** with a real social need and no one to turn it into technology. The programme's rule is non-negotiable: the solution reaches the end user at no cost.
 
 ## The five lines
 
@@ -56,11 +56,13 @@ Beyond giving visibility to these initiatives, technology strengthens the manage
 
 ## How to apply
 
-Write to Professor {{< link-interno "/people/george_marsicano" "George Marsicano Corrêa" >}}, the programme coordinator:
+Applications are made **exclusively through the call form**, open from **14 to 20 October 2026**:
 
-**georgemarsicano@unb.br**
+- [Application form — Software for Good](https://docs.google.com/forms/d/e/1FAIpQLSe8cRwFneaTgJ7GFylTX5wxwQysCNY3wid8AlqT6xp5l6ye-A/viewform)
 
-Say who you are, which project line interests you most and what you would like to do. Institutions may present directly the social need they want to turn into technology.
+In the form you state who you are, which project line interests you most and what you would like to do. Institutions may present directly the social need they want to turn into technology.
+
+Questions about the programme may be sent to the coordinator, Prof. {{< link-interno "/people/george_marsicano" "George Marsicano Corrêa" >}} ([georgemarsicano@unb.br](mailto:georgemarsicano@unb.br)) — but an application is only registered through the form.
 
 ## Learn more
 

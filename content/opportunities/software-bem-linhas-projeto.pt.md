@@ -6,7 +6,7 @@ language: pt
 translationKey: opportunity_software_bem_linhas_projeto
 id: software_bem_linhas_projeto
 status: open
-deadline: 2026-12-31
+deadline: 2026-10-20
 audience:
 - extensao
 - tcc
@@ -16,11 +16,11 @@ project: project_software_bem
 responsible:
 - george_marsicano
 source: /posts/news-post.034/
-summary: "Cinco linhas de projeto do macroprojeto Software para o Bem abertas a estudantes, docentes, profissionais e instituições com demanda social real."
+summary: "Inscrições de 14 a 20 de outubro de 2026, pelo formulário da chamada. Cinco linhas de projeto do macroprojeto Software para o Bem abertas a estudantes, docentes, profissionais e instituições com demanda social real."
 ---
 O {{< link-interno "/projects/software_bem" "Software para o Bem" >}} organiza suas frentes de desenvolvimento em **cinco linhas de projeto**. Cada linha delimita um campo de impacto social e orienta a escolha do problema, do parceiro e do escopo de software a ser construído.
 
-A chamada é de fluxo contínuo: há espaço para **estudantes** que querem que o trabalho de conclusão sirva a alguém depois de entregue, **docentes** de qualquer área, **profissionais** dispostos a doar horas de experiência e **instituições** com uma demanda social real e sem quem a transforme em tecnologia. A regra do programa não se negocia: a solução chega ao usuário final sem custo.
+A nova chamada estará aberta no período de **14/10 a 20/10**. Há espaço para **estudantes** que querem que o trabalho de conclusão sirva a alguém depois de entregue, **docentes** de qualquer área, **profissionais** dispostos a doar horas de experiência e **instituições** com uma demanda social real e sem quem a transforme em tecnologia. A regra do programa não se negocia: a solução chega ao usuário final sem custo.
 
 ## As cinco linhas
 
@@ -56,11 +56,13 @@ Além de dar visibilidade às iniciativas, a tecnologia fortalece a gestão e a 
 
 ## Como se candidatar
 
-Escreva para o professor {{< link-interno "/people/george_marsicano" "George Marsicano Corrêa" >}}, coordenador do programa:
+As inscrições são feitas **exclusivamente pelo formulário da chamada**, aberto de **14/10 a 20/10 de 2026**:
 
-**georgemarsicano@unb.br**
+- [Formulário de inscrição — Software para o Bem](https://docs.google.com/forms/d/e/1FAIpQLSe8cRwFneaTgJ7GFylTX5wxwQysCNY3wid8AlqT6xp5l6ye-A/viewform)
 
-Indique quem você é, a linha de projeto de maior interesse e o que gostaria de fazer. Instituições podem apresentar diretamente a demanda social que precisam transformar em tecnologia.
+No formulário você indica quem é, a linha de projeto de maior interesse e o que gostaria de fazer. Instituições podem apresentar diretamente a demanda social que precisam transformar em tecnologia.
+
+Dúvidas sobre o programa podem ser enviadas ao coordenador, Prof. {{< link-interno "/people/george_marsicano" "George Marsicano Corrêa" >}} ([georgemarsicano@unb.br](mailto:georgemarsicano@unb.br)) — mas a inscrição em si só é registrada pelo formulário.
 
 ## Saiba mais
 

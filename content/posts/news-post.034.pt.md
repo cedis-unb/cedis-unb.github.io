@@ -59,6 +59,6 @@ Escreva para o professor {{< link-interno "/people/george_marsicano" "George Mar
 
 Conte quem você é e o que gostaria de fazer. Se preferir conhecer antes, a {{< link-interno "/projects/software_bem" "página do Software para o Bem" >}} tem as frentes, os objetivos e os projetos em detalhe.
 
-A chamada detalha as **cinco linhas de projeto** do programa — de assistência social e doações a cultura e cidadania — e explica como se candidatar a cada uma: {{< link-interno "/opportunities/software-bem-linhas-projeto" "Software para o Bem — linhas de projeto abertas para novas equipes" >}}.
+Para entrar em uma equipe, há uma chamada com prazo: as inscrições ficam abertas de **14/10 a 20/10 de 2026** e são feitas pelo [formulário da chamada](https://docs.google.com/forms/d/e/1FAIpQLSe8cRwFneaTgJ7GFylTX5wxwQysCNY3wid8AlqT6xp5l6ye-A/viewform). A página da chamada detalha as **cinco linhas de projeto** do programa — de assistência social e doações a cultura e cidadania: {{< link-interno "/opportunities/software-bem-linhas-projeto" "Software para o Bem — linhas de projeto abertas para novas equipes" >}}.
 
 O programa é coordenado por George Marsicano, com os professores {{< link-interno "/people/ricardo_ajax" "Ricardo Ajax Dias Kosloski" >}} e {{< link-interno "/people/sergio_freitas" "Sergio Antônio Andrade de Freitas" >}} entre seus pesquisadores, no CEDIS/FCTE-UnB.
