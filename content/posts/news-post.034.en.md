@@ -55,4 +55,4 @@ A real project, a multidisciplinary team, a problem with consequences. Publicati
 
 To join a team, there is a call with a deadline: applications are open from **14 to 20 October 2026** and are made through the [call form](https://docs.google.com/forms/d/e/1FAIpQLSe8cRwFneaTgJ7GFylTX5wxwQysCNY3wid8AlqT6xp5l6ye-A/viewform). The call page sets out the programme's **five project lines** — from social assistance and donations to culture and citizenship: {{< link-interno "/opportunities/software-bem-linhas-projeto" "Software for Good — project lines open to new teams" >}}.
 
-The programme is coordinated by George Marsicano, with Professors {{< link-interno "/people/ricardo_ajax" "Ricardo Ajax Dias Kosloski" >}} and {{< link-interno "/people/sergio_freitas" "Sergio Antônio Andrade de Freitas" >}} among its researchers, at CEDIS/FCTE-UnB.
+The programme is coordinated by Professor {{< link-interno "/people/george_marsicano" "George Marsicano Corrêa" >}}, with Professors {{< link-interno "/people/ricardo_ajax" "Ricardo Ajax Dias Kosloski" >}} and {{< link-interno "/people/sergio_freitas" "Sergio Antônio Andrade de Freitas" >}} among its researchers, at CEDIS/FCTE-UnB.
