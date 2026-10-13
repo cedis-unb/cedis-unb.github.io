@@ -55,6 +55,10 @@ The application context is CSA prevention, a sensitive and complex topic with la
 - Validation and adaptation for younger age groups (4–7), since practical validation was concentrated at 8–10.
 - Additional UX and gamification adjustments (avatar customization, "try again" feedback, review of the badges section).
 
+## Privacy
+
+The application distributed as **Eu Me Protejo – Cartilha** has its own privacy policy, suited to a child audience and to Google Play requirements: [Privacy policy — Eu Me Protejo: Cartilha](/privacy/apps/eu-me-protejo-cartilha/).
+
 ## Academic Linkage
 
 - Victor de Souza Cabral (product development)

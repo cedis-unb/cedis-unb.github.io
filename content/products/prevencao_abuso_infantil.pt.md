@@ -55,6 +55,10 @@ O contexto de aplicação é a prevenção do ASI, tema sensível e complexo, co
 - Validação e adaptação para faixas etárias menores (4–7 anos), já que a validação prática ocorreu sobretudo com 8–10 anos.
 - Ajustes adicionais de UX e gamificação (personalização de avatar, feedback "tente novamente", revisão da seção de emblemas).
 
+## Privacidade
+
+O aplicativo distribuído sob o nome **Eu Me Protejo – Cartilha** tem política de privacidade própria, adequada ao público infantil e aos requisitos da Google Play: [Política de privacidade — Eu Me Protejo: Cartilha](/pt/privacidade/apps/eu-me-protejo-cartilha/).
+
 ## Vinculação Acadêmica
 
 - Victor de Souza Cabral (desenvolvimento do produto)

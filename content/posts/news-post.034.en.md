@@ -59,4 +59,6 @@ Write to Professor {{< link-interno "/people/george_marsicano" "George Marsicano
 
 Tell him who you are and what you would like to do. If you would rather look first, the {{< link-interno "/projects/software_bem" "Software for Good page" >}} sets out the fronts, goals and projects in detail.
 
+The open call sets out the programme's **five project lines** — from social assistance and donations to culture and citizenship — and explains how to apply to each one: {{< link-interno "/opportunities/software-bem-linhas-projeto" "Software for Good — project lines open to new teams" >}}.
+
 The programme is coordinated by George Marsicano, with Professors {{< link-interno "/people/ricardo_ajax" "Ricardo Ajax Dias Kosloski" >}} and {{< link-interno "/people/sergio_freitas" "Sergio Antônio Andrade de Freitas" >}} among its researchers, at CEDIS/FCTE-UnB.

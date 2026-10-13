@@ -48,16 +48,20 @@ The work stems from the understanding that childhood violence is a serious topic
 
 ## Technology
 
-- **Platform:** mobile application, initially distributed on Android via APK (internal use, not published on stores).
+- **Platform:** Android mobile application, initially distributed via APK for internal use and validation.
 - **Stack:** React Native + TypeScript.
 - **Build:** EAS Build (Expo Application Services) to generate the APK.
-- **Distribution:** direct link for installation on test devices; after functional validation, moved to data collection with the target audience.
+- **Distribution:** direct link for installation on test devices during functional validation and data collection with the target audience; in 2026 the application entered the publication process on **Google Play** as **Eu Me Protejo – Boas Práticas**, with its own privacy policy.
 - **Non-functional quality:** offline-first with progress persistence, for use in contexts with limited connectivity.
 - **Process:** high-fidelity prototyping in Figma; MVP built with agile practices (Scrum/XP).
 
 ## Future Directions
 
-Formal Google Play publication with a signed, versioned release pipeline; content and track evolution (new manual modules, simulated scenarios, and quizzes); and optional synchronization (without breaking the offline requirement) to monitor effectiveness and evolution of usage when internet is available.
+Completion of the Google Play publication with a signed, versioned release pipeline; content and track evolution (new manual modules, simulated scenarios, and quizzes); and optional synchronization (without breaking the offline requirement) to monitor effectiveness and evolution of usage when internet is available.
+
+## Privacy
+
+The application distributed as **Eu Me Protejo – Boas Práticas** has its own privacy policy, suited to its audience of educators and guardians and to Google Play requirements: [Privacy policy — Eu Me Protejo: Boas Práticas](/privacy/apps/eu-me-protejo-boas-praticas/).
 
 ## Academic Linkage
 

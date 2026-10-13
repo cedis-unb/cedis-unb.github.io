@@ -48,16 +48,20 @@ O trabalho parte do entendimento de que a violência na infância é um tema gra
 
 ## Tecnologia
 
-- **Plataforma:** aplicação mobile com distribuição inicial em Android via APK (uso interno, sem publicação em loja).
+- **Plataforma:** aplicação mobile Android, com distribuição inicial via APK para uso interno e validação.
 - **Stack:** React Native + TypeScript.
 - **Build:** EAS Build (Expo Application Services) para gerar o APK.
-- **Distribuição:** link direto para instalação em dispositivos de teste; após validação funcional, avançou para coleta de dados com o público-alvo.
+- **Distribuição:** link direto para instalação em dispositivos de teste na fase de validação funcional e de coleta de dados com o público-alvo; em 2026, o aplicativo entrou em processo de publicação na **Google Play** sob o nome **Eu Me Protejo – Boas Práticas**, com política de privacidade própria.
 - **Qualidade não funcional:** offline-first, com persistência do progresso, para uso em contextos com conectividade limitada.
 - **Processo:** prototipação em Figma (alta fidelidade) e MVP desenvolvido com práticas ágeis (Scrum/XP).
 
 ## Perspectivas Futuras
 
-Publicação formal na Google Play com pipeline de release assinado e versionado; evolução de conteúdo e trilhas (novos módulos do manual, cenários simulados e quizzes); e sincronização opcional (sem quebrar o offline) para acompanhar efetividade e evolução do uso quando houver internet.
+Conclusão da publicação na Google Play com pipeline de release assinado e versionado; evolução de conteúdo e trilhas (novos módulos do manual, cenários simulados e quizzes); e sincronização opcional (sem quebrar o offline) para acompanhar efetividade e evolução do uso quando houver internet.
+
+## Privacidade
+
+O aplicativo distribuído sob o nome **Eu Me Protejo – Boas Práticas** tem política de privacidade própria, adequada ao seu público de educadores e responsáveis e aos requisitos da Google Play: [Política de privacidade — Eu Me Protejo: Boas Práticas](/pt/privacidade/apps/eu-me-protejo-boas-praticas/).
 
 ## Vinculação Acadêmica
 

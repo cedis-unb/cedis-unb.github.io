@@ -83,6 +83,10 @@ In addition to automatically honoring Do Not Track and Global Privacy Control si
   })();
 </script>
 
+## Mobile applications
+
+Mobile applications developed in CEDIS projects have **their own privacy policy**, because their technical characteristics, target audience and information handling differ from one another and from the institutional website. See [the application privacy policies](/privacy/apps/).
+
 ## External integrations
 
 The site links to external services such as GitHub, Zenodo, Spotify, LinkedIn, YouTube, SharePoint, and UnB pages. When accessing those services, each platform's privacy policy applies.

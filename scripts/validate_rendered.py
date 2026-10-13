@@ -219,9 +219,11 @@ def validate_opportunities(root: Path, issues: list[str]) -> None:
             continue
         require_contains(text, open_heading, relative_path, issues)
         require_contains(text, archive_heading, relative_path, issues)
+        # `hugo --minify` remove as aspas de atributos de valor simples, logo o
+        # card sai como data-opportunity-card=true. Aceitar as duas formas.
         require_any(
             text,
-            (empty_state, 'data-opportunity-card="true"'),
+            (empty_state, 'data-opportunity-card="true"', "data-opportunity-card=true"),
             relative_path,
             "an empty state or at least one rendered opportunity card",
             issues,

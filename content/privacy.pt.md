@@ -83,6 +83,10 @@ Além de respeitar automaticamente os sinais Do Not Track e Global Privacy Contr
   })();
 </script>
 
+## Aplicativos móveis
+
+Os aplicativos móveis desenvolvidos em projetos do CEDIS têm **política de privacidade própria**, porque suas características técnicas, público-alvo e tratamento de informações diferem entre si e do site institucional. Consulte [as políticas de privacidade dos aplicativos](/pt/privacidade/apps/).
+
 ## Integrações externas
 
 O site contém links para serviços externos, como GitHub, Zenodo, Spotify, LinkedIn, YouTube, SharePoint e páginas da UnB. Ao acessar esses serviços, aplicam-se as políticas de privacidade de cada plataforma.
