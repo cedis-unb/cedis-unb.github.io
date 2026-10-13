@@ -1,6 +1,6 @@
 # Identificador do build publicado. `source` é o commit de FONTE que
 # gerou este docs/, nao o commit que o publica.
-source=c7b8987ca2c10b5219e83b4c786b888b15518060
-short=c7b8987ca2
+source=1d996951687f27b1809e8df60c58ded12fa3244f
+short=1d99695168
 dirty=no
-built=2026-10-13T18:04:15Z
+built=2026-10-13T18:10:03Z
