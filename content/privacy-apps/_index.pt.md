@@ -21,6 +21,7 @@ Aplicativos do {{< link-interno "/projects/software_bem" "programa Software para
 
 - [Eu Me Protejo — Cartilha](/pt/privacidade/apps/eu-me-protejo-cartilha/) — aplicação educativa e gamificada destinada ao público infantil, baseada nas cartilhas do projeto. Produto relacionado: {{< link-interno "/products/prevencao_abuso_infantil" "Prevenção ao Abuso Sexual Infantil" >}}.
 - [Eu Me Protejo — Boas Práticas](/pt/privacidade/apps/eu-me-protejo-boas-praticas/) — aplicação educativa destinada a educadores, tutores e responsáveis, baseada no Manual de Boas Práticas. Produto relacionado: {{< link-interno "/products/prevencao_violencia_infancia" "Prevenção da Violência na Infância" >}}.
+- [Eu Me Protejo — Jogos](/pt/privacidade/apps/eu-me-protejo-jogos/) — aplicação educativa com jogos e atividades lúdicas para o público infantil, voltada à prevenção da violência na infância. É a política mais restritiva das três: o aplicativo não guarda progresso, pontuação nem preferências, e a única informação gravada no dispositivo é o desenho que a criança escolhe salvar no Jogo de Colorir.
 
 ## Contato
 

@@ -21,6 +21,7 @@ Applications of the {{< link-interno "/projects/software_bem" "Software for Good
 
 - [Eu Me Protejo — Cartilha (Booklet)](/privacy/apps/eu-me-protejo-cartilha/) — an educational, gamified application for children, based on the project's booklets. Related product: {{< link-interno "/products/prevencao_abuso_infantil" "Child Sexual Abuse Prevention" >}}.
 - [Eu Me Protejo — Boas Práticas (Good Practices)](/privacy/apps/eu-me-protejo-boas-praticas/) — an educational application for educators, tutors and guardians, based on the Good Practices Manual. Related product: {{< link-interno "/products/prevencao_violencia_infancia" "Childhood Violence Prevention" >}}.
+- [Eu Me Protejo — Jogos (Games)](/privacy/apps/eu-me-protejo-jogos/) — an educational application with games and playful activities for children, dedicated to preventing violence in childhood. It is the most restrictive of the three policies: the application keeps no progress, score or preferences, and the only information written to the device is the drawing the child chooses to save in the Colouring Game.
 
 ## Contact
 
