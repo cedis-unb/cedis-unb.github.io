@@ -19,9 +19,9 @@ featured_image: "../assets/images/perspectivas/ia-novo-eixo-engenharia-software-
 
 Brasília, 5 de novembro de 2026
 
-Como muita gente que ensina Engenharia de Software, passei os últimos dois anos com uma inquietação que não é a pergunta da moda — "a IA vai substituir o programador?" — mas uma mais concreta: **o que muda para quem está se formando agora, e vai chegar ao mercado em 2027 ou 2028?** Que competências vão valer mais, quais vão valer menos, e o nosso currículo está olhando para o lado certo?
+Como muita gente que atua no curso de Engenharia de Software, passei os últimos dois anos com uma inquietação que não é a pergunta da moda — "a IA vai substituir o programador?" — mas uma mais concreta: **o que muda para quem está se formando agora e vai chegar ao mercado em 2027 ou 2028?** Que competências vão valer mais, quais vão valer menos e o nosso currículo está olhando para o lado certo?
 
-Duas coisas me ajudaram a transformar a inquietação em estudo. Um artigo de pesquisa de Harvard com uma base de dados enorme, e um vídeo de um engenheiro de software que vive esse problema todo dia. Cruzei os dois com o Projeto Pedagógico do Curso (PPC) de Engenharia de Software da UnB, montei uma apresentação e um infográfico, e levei para as minhas duas turmas de Compiladores — cerca de 150 estudantes. Este texto é o que eu disse a eles, com as ressalvas que a sala de aula às vezes não comporta. Os dois materiais estão públicos no fim da página.
+Duas coisas me ajudaram a transformar a inquietação em estudo. Um artigo de pesquisa de Harvard com uma base de dados enorme e um vídeo de um engenheiro de software que vive esse problema todo dia. Cruzei os dois com o Projeto Pedagógico do Curso (PPC) de Engenharia de Software da UnB, montei uma apresentação e um infográfico e levei pra conversar com meus alunos de Compiladores. Este texto é o que eu disse a eles, com as ressalvas que a sala de aula às vezes não comporta. Os dois materiais estão públicos no fim da página.
 
 ## O estudo: muito mais código, pouco mais software
 
@@ -75,9 +75,9 @@ O modelo também projeta cenários para 2031 que vão de −10% a −76% no empr
 
 ## O vídeo: menos tokens, mais engenharia
 
-O segundo material é o vídeo *O pesadelo do Code Review: IA vs. Produtividade*, de Vinícius Pasquantonio (Staff Engineer, canal pasquadev). Ele parte do mesmo estudo e da própria experiência: desenvolvedores abrindo muito mais PRs, fila de revisão travada, um chefe que fez um protótipo em dez minutos e cobra o mesmo ritmo do time. E cunha um termo que os alunos reconheceram na hora — a *ansiedade de tokens*: a pressão por volume leva o engenheiro a gerenciar vários agentes em paralelo, e o custo cognitivo da troca de contexto cobra a conta.
+O segundo material é o vídeo *O pesadelo do Code Review: IA vs. Produtividade*, de Vinícius Pasquantonio (Staff Engineer, canal pasquadev). Ele parte do mesmo estudo e da própria experiência: desenvolvedores abrindo muito mais PRs, fila de revisão travada, um chefe que fez um protótipo em dez minutos e cobra o mesmo ritmo do time. E cunha um termo que os alunos reconheceram na hora — a *ansiedade de tokens*: a pressão por volume leva o engenheiro a gerenciar vários agentes em paralelo e o custo cognitivo da troca de contexto cobra a conta.
 
-A tese dele é que a saída não está em mais ferramentas, e sim em resgatar engenharia:
+A tese dele é que a saída não está em mais ferramentas e sim em resgatar engenharia:
 
 1. **Planejar antes de delegar** — requisitos e arquitetura definidos antes de qualquer linha ou qualquer agente;
 2. **Programação incremental** — mudanças pequenas e coesas, PRs de no máximo ~300 linhas;
