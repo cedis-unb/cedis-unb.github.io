@@ -1,0 +1,50 @@
+{{/*
+  perspectiva-authors — autores de uma Perspectiva a partir de slugs.
+
+  Entrada (dict):
+    page    — a página (lê .Params.authors, lista de slugs de pessoa)
+    variant — "inline" (default): nomes linkados separados por vírgula
+              "cards": foto + nome + link, um bloco por autor
+  Slugs desconhecidos saem como texto simples, sem link, para não quebrar.
+*/}}
+{{ $page := .page }}
+{{ $variant := .variant | default "inline" }}
+{{ $slugs := $page.Params.authors | default slice }}
+{{ $entries := slice }}
+{{ range $slugs }}
+  {{ $entries = $entries | append (partial "people-lookup" .) }}
+{{ end }}
+
+{{ if eq $variant "cards" }}
+<ul class="space-y-3">
+  {{ range $entries }}
+  {{ $name := .name | default .slug }}
+  {{ $url := .page_url | default .link }}
+  {{ $photo := "" }}
+  {{ with .page }}
+    {{ with .Params.featured_image }}
+      {{ with resources.Get (replace . "../assets/" "") }}{{ $photo = (.Fill "112x112 webp q85").RelPermalink }}{{ end }}
+    {{ end }}
+  {{ end }}
+  <li class="flex items-center gap-3">
+    {{ if $photo }}
+    <img src="{{ $photo }}" width="56" height="56" alt="" class="h-14 w-14 shrink-0 rounded-full object-cover ring-2 ring-white dark:ring-white/10" loading="lazy" decoding="async">
+    {{ else }}
+    <span aria-hidden="true" class="inline-flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-primary-100 text-lg font-black text-primary-800 dark:bg-primary-500/20 dark:text-primary-100">{{ substr $name 0 1 }}</span>
+    {{ end }}
+    <div class="min-w-0">
+      {{ if $url }}
+      <a href="{{ $url }}" class="font-semibold text-slate-900 transition-colors hover:text-primary-700 dark:text-white dark:hover:text-primary-200">{{ $name }}</a>
+      {{ else }}
+      <span class="font-semibold text-slate-900 dark:text-white">{{ $name }}</span>
+      {{ end }}
+      {{ with first 2 .areas }}
+      <div class="mt-0.5 text-xs text-slate-600 dark:text-white/60">{{ range $i, $a := . }}{{ if $i }} · {{ end }}{{ partial "translated-label.html" (dict "value" $a) }}{{ end }}</div>
+      {{ end }}
+    </div>
+  </li>
+  {{ end }}
+</ul>
+{{ else }}
+{{ range $i, $e := $entries }}{{ if $i }}, {{ end }}{{ $name := $e.name | default $e.slug }}{{ $url := $e.page_url | default $e.link }}{{ if $url }}<a href="{{ $url }}" class="font-semibold underline-offset-2 hover:underline">{{ $name }}</a>{{ else }}<span class="font-semibold">{{ $name }}</span>{{ end }}{{ end }}
+{{ end }}

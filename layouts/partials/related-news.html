@@ -1,15 +1,32 @@
+{{/*
+  related-news — bloco de itens relacionados a um conjunto de ids.
+
+  Nasceu para notícias (seção posts) e foi generalizado para Perspectivas:
+  os parâmetros opcionais abaixo mantêm o comportamento antigo por default.
+
+  Entrada (dict):
+    page, ids, label     — como sempre
+    section              — seção a varrer (default "posts")
+    kindLabel            — eyebrow do bloco (default Notícias/News)
+    archiveURL           — destino do botão de arquivo (default /categories/news/)
+    archiveLabel         — rótulo do botão (default Ver arquivo/Browse archive)
+*/}}
 {{ $page := .page }}
 {{ $ids := .ids | default slice }}
 {{ $isPt := eq $page.Site.Language.Lang "pt" }}
 {{ $label := .label | default (cond $isPt "Últimas notícias relacionadas" "Related news") }}
+{{ $section := .section | default "posts" }}
+{{ $kindLabel := .kindLabel | default (cond $isPt "Notícias" "News") }}
+{{ $archiveURL := .archiveURL | default ("/categories/news/" | relLangURL) }}
+{{ $archiveLabel := .archiveLabel | default (cond $isPt "Ver arquivo" "Browse archive") }}
 {{ $matches := slice }}
 {{ $seen := dict }}
 {{ range $candidate := $page.Site.RegularPages.ByDate.Reverse }}
-  {{ if and (eq $candidate.Section "posts") (eq $candidate.Lang $page.Site.Language.Lang) }}
+  {{ if and (eq $candidate.Section $section) (eq $candidate.Lang $page.Site.Language.Lang) }}
     {{ $matched := false }}
     {{ range $ids }}
       {{ $id := . }}
-      {{ if or (in ($candidate.Params.related_ids | default slice) $id) (in ($candidate.Params.tags | default slice) $id) (in ($candidate.Params.categories | default slice) $id) }}
+      {{ if or (in ($candidate.Params.related_ids | default slice) $id) (in ($candidate.Params.authors | default slice) $id) (in ($candidate.Params.tags | default slice) $id) (in ($candidate.Params.categories | default slice) $id) }}
         {{ $matched = true }}
       {{ end }}
     {{ end }}
@@ -25,10 +42,10 @@
   <div class="rounded-panel border border-slate-200/80 bg-white/90 p-6 shadow-panel dark:border-white/10 dark:bg-white/4 md:p-7">
     <div class="flex flex-wrap items-end justify-between gap-4">
       <div>
-        <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-slate-700 dark:text-white/60">{{ cond $isPt "Notícias" "News" }}</div>
+        <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-slate-700 dark:text-white/60">{{ $kindLabel }}</div>
         <h2 class="mt-2 text-2xl font-black tracking-tight text-slate-950 dark:text-white">{{ $label }}</h2>
       </div>
-      <a href="{{ "/categories/news/" | relLangURL }}" class="rounded-full border border-slate-300 bg-white px-4 py-2 text-sm font-semibold text-slate-700 transition-colors hover:border-primary-400 hover:text-primary-700 dark:border-white/10 dark:bg-white/6 dark:text-white/80">{{ cond $isPt "Ver arquivo" "Browse archive" }}</a>
+      <a href="{{ $archiveURL }}" class="rounded-full border border-slate-300 bg-white px-4 py-2 text-sm font-semibold text-slate-700 transition-colors hover:border-primary-400 hover:text-primary-700 dark:border-white/10 dark:bg-white/6 dark:text-white/80">{{ $archiveLabel }}</a>
     </div>
     <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
       {{ range first 5 $matches }}

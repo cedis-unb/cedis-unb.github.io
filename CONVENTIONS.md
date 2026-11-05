@@ -387,6 +387,31 @@ Não reintroduzir um template concorrente em `_default/` para a mesma
 rota; regressões no HTML gerado devem ser capturadas por
 `scripts/validate_rendered.py`.
 
+### Perspectivas (opinião técnica assinada)
+
+Perspectivas ficam em `content/perspectivas/` e são textos de opinião
+técnica assinados por pesquisadores — ROADMAP item C2. Diferem de
+notícias: têm autoria por slug, disclaimer institucional fixo e são
+escritas **numa língua só** (quase sempre português).
+
+Regras:
+- Crie o par com `python3 scripts/new_perspectiva.py --slug ... --title ...
+  --authors slug1,slug2 --summary "..."`. O script gera o texto original e
+  o **stub** na outra língua (resumo + `noindex: true`); o template mostra
+  o aviso de idioma original e o link para o texto completo. Isso satisfaz
+  `validate_i18n.py` sem exceção e dá destino ao seletor de idioma.
+- `original_language: pt|en` nos dois arquivos; é ele que decide qual lado
+  é o stub. `translationKey: perspectiva_<slug>` igual nos dois.
+- `authors:` usa slugs de pessoa (nunca nome por extenso). O perfil do
+  pesquisador lista suas perspectivas via `related-news.html` com
+  `section: perspectivas`; `related_ids:` aceita ids de projeto/produto.
+- Perspectivas entram no pulso da capa (`home-pulse-items.html`, tipo
+  `perspective`) e no submenu Publicações. Não levam a tag `News`.
+- O disclaimer ("as opiniões são dos autores...") é do template; não
+  repita no corpo.
+- Regressões do índice são capturadas por `validate_rendered.py`
+  (`validate_perspectivas`).
+
 ### Notícias relacionadas
 
 Posts podem declarar `related_ids:` com IDs de projeto, produto ou

@@ -41,6 +41,23 @@
   {{ end }}
 {{ end }}
 
+{{/* Perspectivas (opinião técnica assinada). O stub na outra língua também
+     entra: é a porta de entrada do leitor daquele idioma, com o aviso de
+     idioma original e o link para o texto completo. */}}
+{{ range where $page.Site.RegularPages "Section" "perspectivas" }}
+  {{ if lt .Date now }}
+    {{ $items = $items | append (dict
+      "type" "perspective"
+      "title" .Title
+      "url" .RelPermalink
+      "date" .Date
+      "hasFullDate" true
+      "year" .Date.Year
+      "summary" (or .Params.summary "")
+    ) }}
+  {{ end }}
+{{ end }}
+
 {{ range where $page.Site.RegularPages "Section" "products" }}
   {{ if lt .Date now }}
     {{ $items = $items | append (dict

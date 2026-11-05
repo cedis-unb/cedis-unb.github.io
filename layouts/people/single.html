@@ -814,6 +814,15 @@
       {{ end }}
     </aside>
   </section>
+  {{ partial "related-news.html" (dict
+    "page" .
+    "ids" (slice $personKey)
+    "section" "perspectivas"
+    "label" (i18n "ui_perspectivas_related_label")
+    "kindLabel" (i18n "ui_perspectivas_eyebrow")
+    "archiveURL" ("/perspectivas/" | relLangURL)
+    "archiveLabel" (i18n "ui_perspectivas_archive_cta")
+  ) }}
   {{ partial "related-news.html" (dict "page" . "ids" (slice $personKey) "label" (cond $isPt "Últimas notícias sobre este perfil" "Latest news about this profile")) }}
 </main>
 {{ end }}

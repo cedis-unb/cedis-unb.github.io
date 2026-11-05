@@ -1,0 +1,80 @@
+{{ define "main" }}
+{{/*
+  perspectivas/list.html — índice de Perspectivas (opinião técnica assinada).
+
+  Lista todos os textos da seção no idioma corrente, mais recentes primeiro.
+  O stub na outra língua também aparece, marcado com o idioma do texto
+  completo: é por ele que o leitor daquela língua chega ao original.
+*/}}
+{{ $isPt := eq .Site.Language.Lang "pt" }}
+{{ $dateFormat := cond $isPt "02/01/2006" "02 Jan 2006" }}
+{{ $pages := where .RegularPages "Date" "lt" now }}
+{{ $pages = $pages.ByDate.Reverse }}
+{{ $authorSet := dict }}
+{{ range $pages }}{{ range .Params.authors }}{{ $authorSet = merge $authorSet (dict . true) }}{{ end }}{{ end }}
+{{ $latest := "" }}
+{{ with index $pages 0 }}{{ $latest = .Date.Format $dateFormat }}{{ end }}
+
+<main class="bg-[linear-gradient(180deg,#f8fafc_0%,#ffffff_26%,#f5f5f4_100%)] text-slate-950 dark:bg-[linear-gradient(180deg,#0f172a_0%,#111827_58%,#0b1120_100%)] dark:text-white">
+  <section class="border-b border-slate-200/80 bg-slate-950 text-white dark:border-white/10">
+    <div class="mx-auto max-w-(--breakpoint-xl) px-4 py-12 md:px-6 lg:px-8 lg:py-16">
+      {{ partial "ui/page-heading.html" (dict
+        "page" .
+        "variant" "dark"
+        "eyebrow" (.Params.eyebrow | default (i18n "ui_perspectivas_eyebrow"))
+        "description" (.Params.description | default (i18n "ui_perspectivas_lead"))
+        "titleClass" "mt-5 max-w-4xl text-4xl font-black tracking-tight text-white md:text-5xl"
+        "descriptionClass" "mt-4 max-w-2xl text-base leading-7 text-white/75 md:text-lg"
+      ) }}
+      <div class="mt-8 grid gap-3 sm:grid-cols-3">
+        {{ partial "ui/stat-card.html" (dict "class" "rounded-card border border-white/10 bg-white/6 px-5 py-4" "value" (len $pages) "label" (i18n "ui_perspectivas_stat_total") "valueClass" "text-3xl font-black text-white" "labelClass" "mt-1 text-sm text-white/75") }}
+        {{ partial "ui/stat-card.html" (dict "class" "rounded-card border border-white/10 bg-white/6 px-5 py-4" "value" (len $authorSet) "label" (i18n "ui_perspectivas_stat_authors") "valueClass" "text-3xl font-black text-white" "labelClass" "mt-1 text-sm text-white/75") }}
+        {{ partial "ui/stat-card.html" (dict "class" "rounded-card border border-white/10 bg-white/6 px-5 py-4" "value" ($latest | default "—") "label" (i18n "ui_perspectivas_stat_latest") "valueClass" "text-3xl font-black text-white" "labelClass" "mt-1 text-sm text-white/75") }}
+      </div>
+      <p class="mt-6 max-w-2xl text-xs leading-5 text-white/55">{{ i18n "ui_perspectivas_disclaimer" }}</p>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-(--breakpoint-xl) px-4 py-10 md:px-6 lg:px-8 lg:py-14">
+    {{ if gt (len $pages) 0 }}
+    <div class="grid gap-5 md:grid-cols-2">
+      {{ range $pages }}
+      {{ $item := . }}
+      {{ $orig := .Params.original_language | default "pt" }}
+      {{ $isStub := ne .Lang $orig }}
+      <article data-perspectiva-card="true" class="flex flex-col rounded-3xl border border-slate-200 bg-white/90 p-6 shadow-xs dark:border-white/10 dark:bg-white/4">
+        <div class="flex flex-wrap items-center gap-2 text-xs font-semibold uppercase tracking-[0.16em] text-slate-600 dark:text-white/60">
+          <span class="inline-flex rounded-full border border-primary-300/50 bg-primary-50 px-2.5 py-0.5 text-primary-800 dark:border-primary-400/30 dark:bg-primary-500/15 dark:text-primary-100">{{ i18n "ui_perspectivas_kind" }}</span>
+          <span>{{ .Date.Format $dateFormat }}</span>
+          {{ if $isStub }}
+          <span aria-hidden="true">·</span>
+          <span lang="{{ $orig }}">{{ printf (i18n "ui_perspectivas_only_original") (i18n (printf "ui_lang_name_%s" $orig)) }}</span>
+          {{ end }}
+        </div>
+        <h2 class="mt-3 text-2xl font-black leading-tight tracking-tight text-slate-950 dark:text-white">
+          <a href="{{ .RelPermalink }}" class="transition-colors hover:text-primary-700 dark:hover:text-primary-200">{{ .Title }}</a>
+        </h2>
+        {{ with (.Params.summary | default .Description) }}
+        <p class="mt-3 line-clamp-4 text-sm leading-6 text-slate-600 dark:text-white/70">{{ . }}</p>
+        {{ end }}
+        {{ with .Params.authors }}
+        <div class="mt-4 text-sm text-slate-700 dark:text-white/75">
+          <span class="text-slate-500 dark:text-white/50">{{ i18n "ui_by" }}</span>
+          {{ partial "perspectiva-authors.html" (dict "page" $item "variant" "inline") }}
+        </div>
+        {{ end }}
+        <div class="mt-auto pt-5">
+          <a href="{{ .RelPermalink }}" class="inline-flex items-center rounded-full bg-primary-700 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-primary-800">{{ cond $isPt "Ler" "Read" }}</a>
+        </div>
+      </article>
+      {{ end }}
+    </div>
+    {{ else }}
+    {{ partial "ui/empty-state.html" (dict
+      "title" (i18n "ui_perspectivas_empty_title")
+      "description" (i18n "ui_perspectivas_empty_description")
+    ) }}
+    {{ end }}
+  </section>
+</main>
+{{ end }}

@@ -230,6 +230,28 @@ def validate_opportunities(root: Path, issues: list[str]) -> None:
         )
 
 
+def validate_perspectivas(root: Path, issues: list[str]) -> None:
+    """Índice de Perspectivas: heading da seção e, ou o empty state, ou ao
+    menos um card. Mesmo contrato das oportunidades; `hugo --minify` emite o
+    atributo sem aspas, por isso as duas formas."""
+    checks = (
+        ("pt/perspectivas/index.html", "Perspectivas", "Nenhuma perspectiva publicada ainda"),
+        ("perspectivas/index.html", "Perspectives", "No perspectives published yet"),
+    )
+    for relative_path, heading, empty_state in checks:
+        text = read_text(root, relative_path, issues)
+        if not text:
+            continue
+        require_contains(text, heading, relative_path, issues)
+        require_any(
+            text,
+            (empty_state, 'data-perspectiva-card="true"', "data-perspectiva-card=true"),
+            relative_path,
+            "an empty state or at least one rendered perspectiva card",
+            issues,
+        )
+
+
 def validate_researcher_cards(root: Path, issues: list[str]) -> None:
     for relative_path in (
         "categories/researcher/index.html",
@@ -351,6 +373,8 @@ def main(argv: list[str]) -> int:
     issues: list[str] = []
 
     validate_opportunities(root, issues)
+
+    validate_perspectivas(root, issues)
     validate_researcher_cards(root, issues)
     validate_aria_controls(root, issues)
     validate_breadcrumbs(root, issues)

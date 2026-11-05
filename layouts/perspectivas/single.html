@@ -1,0 +1,130 @@
+{{ define "main" }}
+{{/*
+  perspectivas/single.html — uma Perspectiva (opinião técnica assinada).
+
+  Dois modos, decididos por .Params.original_language (default "pt"):
+    - original: texto completo, tempo de leitura, autoria em cards.
+    - stub (idioma ≠ original): aviso de idioma + resumo + link para o
+      original. O stub leva noindex no frontmatter; meta.html honra.
+  O disclaimer institucional sai nos dois modos.
+*/}}
+{{ $isPt := eq .Site.Language.Lang "pt" }}
+{{ $orig := .Params.original_language | default "pt" }}
+{{ $isStub := ne .Lang $orig }}
+{{ $formattedDate := .Date.Format (cond $isPt "02/01/2006" "02 Jan 2006") }}
+{{ $readMinutes := math.Max 1 (math.Round (div (countwords .Content) 220.0)) }}
+{{ $sectionURL := "/perspectivas/" | relLangURL }}
+
+{{ $featuredSmall := "" }}
+{{ $featuredLarge := "" }}
+{{ with .Params.featured_image }}
+  {{ with resources.Get (replace . "../assets/" "") }}
+    {{ $featuredSmall = (.Resize "800x webp q86").RelPermalink }}
+    {{ $featuredLarge = (.Resize "1600x webp q88").RelPermalink }}
+  {{ end }}
+{{ end }}
+
+<article class="bg-[radial-gradient(circle_at_top,rgba(197,39,47,0.12),transparent_24%),linear-gradient(180deg,#fafaf9_0%,#ffffff_28%,#f5f5f4_100%)] text-slate-900 dark:bg-[linear-gradient(180deg,#0f172a_0%,#111827_100%)] dark:text-white">
+  <section class="border-b border-black/5 bg-gray-950 text-white dark:border-white/10">
+    <div class="mx-auto max-w-(--breakpoint-xl) px-4 py-10 md:px-6 md:py-14 lg:px-8">
+      {{ partial "breadcrumbs.html" . }}
+      <a href="{{ $sectionURL }}" class="inline-flex items-center rounded-full border border-white/20 bg-white/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-white/85 transition-colors hover:bg-white/15 hover:text-white">
+        {{ i18n "ui_perspectivas_all" }}
+      </a>
+
+      <div class="mt-6 flex flex-wrap items-center gap-3 text-xs font-semibold uppercase tracking-[0.2em] text-white/70">
+        <span class="inline-flex rounded-full border border-primary-300/30 bg-primary-500/20 px-3 py-1 text-primary-100">{{ i18n "ui_perspectivas_kind" }}</span>
+        <span>{{ i18n "ui_published_on" }} {{ $formattedDate }}</span>
+        {{ if not $isStub }}
+        <span aria-hidden="true">&bull;</span>
+        <span>{{ $readMinutes }} {{ i18n "ui_min_read" }}</span>
+        {{ end }}
+      </div>
+
+      <h1 class="mt-5 max-w-5xl text-4xl font-black tracking-tight text-white sm:text-5xl lg:text-6xl">{{ .Title }}</h1>
+
+      {{ with (.Params.summary | default .Description) }}
+      <p class="mt-5 max-w-3xl text-lg leading-8 text-white/80 sm:text-xl">{{ . }}</p>
+      {{ end }}
+
+      {{ with .Params.authors }}
+      <div class="mt-6 text-sm text-white/80">
+        <span class="text-white/60">{{ i18n "ui_by" }}</span>
+        {{ partial "perspectiva-authors.html" (dict "page" $ "variant" "inline") }}
+      </div>
+      {{ end }}
+    </div>
+  </section>
+
+  {{ if and (not $isStub) (ne $featuredLarge "") }}
+  <section class="mx-auto max-w-(--breakpoint-xl) px-4 py-6 md:px-6 lg:px-8 lg:py-8">
+    <div class="mx-auto max-w-4xl overflow-hidden rounded-3xl border border-black/5 bg-[linear-gradient(180deg,rgba(248,250,252,0.92),rgba(226,232,240,0.55))] p-2 shadow-[0_20px_60px_rgba(15,23,42,0.12)] dark:border-white/10 dark:bg-[linear-gradient(180deg,rgba(30,41,59,0.7),rgba(15,23,42,0.8))]">
+      <div class="flex max-h-96 items-center justify-center overflow-hidden rounded-inset border border-white/70 bg-white/65 p-2 dark:border-white/10 dark:bg-slate-950/45">
+        <img src="{{ $featuredLarge }}" {{ if $featuredSmall }}srcset="{{ $featuredSmall }} 800w, {{ $featuredLarge }} 1600w" sizes="(min-width: 1280px) 1120px, (min-width: 768px) calc(100vw - 64px), calc(100vw - 32px)"{{ end }} alt="" class="max-h-88 w-auto max-w-full object-contain" loading="eager" decoding="async">
+      </div>
+    </div>
+  </section>
+  {{ end }}
+
+  <section class="mx-auto max-w-(--breakpoint-xl) px-4 py-8 pb-16 md:px-6 lg:px-8 lg:pb-20">
+    <div class="grid gap-8 lg:grid-cols-[minmax(0,1fr)_18rem]">
+      <div class="min-w-0 rounded-[1.8rem] border border-black/5 bg-white/90 px-6 py-8 shadow-[0_20px_60px_rgba(15,23,42,0.08)] backdrop-blur dark:border-white/10 dark:bg-white/4 md:px-8 md:py-10">
+        {{ if $isStub }}
+          {{ partial "original-language-notice.html" (dict "page" .) }}
+          {{ if .Content }}
+          <h2 class="mt-8 text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-slate-700 dark:text-white/75">{{ i18n "ui_perspectivas_summary_label" }}</h2>
+          {{ end }}
+        {{ end }}
+        <div class="{{ if $isStub }}mt-4 {{ end }}prose prose-zinc max-w-none prose-headings:font-black prose-headings:tracking-tight prose-h2:mt-12 prose-h2:text-3xl prose-h3:text-2xl prose-p:leading-8 prose-li:leading-8 prose-a:text-primary-700 hover:prose-a:text-primary-600 dark:prose-invert dark:prose-a:text-primary-200 dark:hover:prose-a:text-primary-100">
+          {{ .Content }}
+        </div>
+        <p class="mt-10 border-t border-slate-200 pt-5 text-xs leading-5 text-slate-500 dark:border-white/10 dark:text-white/50">{{ i18n "ui_perspectivas_disclaimer" }}</p>
+      </div>
+
+      <aside class="space-y-4 lg:sticky lg:top-24 lg:self-start">
+        {{ with .Params.authors }}
+        <div class="rounded-3xl border border-black/5 bg-white/90 p-5 shadow-[0_18px_50px_rgba(15,23,42,0.08)] backdrop-blur dark:border-white/10 dark:bg-white/4">
+          <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-slate-700 dark:text-white/75">{{ i18n "ui_perspectivas_authors" }}</div>
+          <div class="mt-4">{{ partial "perspectiva-authors.html" (dict "page" $ "variant" "cards") }}</div>
+        </div>
+        {{ end }}
+        <div class="rounded-3xl border border-black/5 bg-white/90 p-5 shadow-[0_18px_50px_rgba(15,23,42,0.08)] backdrop-blur dark:border-white/10 dark:bg-white/4">
+          <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-slate-700 dark:text-white/75">{{ i18n "ui_quick_facts" }}</div>
+          <dl class="mt-4 space-y-3 text-sm">
+            <div>
+              <dt class="font-semibold text-slate-700 dark:text-white/75">{{ i18n "ui_date" }}</dt>
+              <dd class="text-slate-600 dark:text-white/60">{{ $formattedDate }}</dd>
+            </div>
+            {{ if not $isStub }}
+            <div>
+              <dt class="font-semibold text-slate-700 dark:text-white/75">{{ i18n "ui_reading" }}</dt>
+              <dd class="text-slate-600 dark:text-white/60">{{ $readMinutes }} {{ i18n "ui_min_read" }}</dd>
+            </div>
+            {{ end }}
+            <div>
+              <dt class="font-semibold text-slate-700 dark:text-white/75">{{ i18n "ui_perspectivas_original_language" }}</dt>
+              <dd class="text-slate-600 dark:text-white/60">{{ i18n (printf "ui_lang_name_%s" $orig) }}</dd>
+            </div>
+            {{ with .Params.areas }}
+            <div>
+              <dt class="font-semibold text-slate-700 dark:text-white/75">{{ i18n "ui_focus_areas" }}</dt>
+              <dd class="mt-1 flex flex-wrap gap-1.5">
+                {{/* Ids de área nem sempre têm página própria (ai → ai_pln;
+                     education não tem). area-lookup resolve a URL quando
+                     existe; sem página, o chip sai como texto. */}}
+                {{ range . }}
+                  {{ $area := partial "area-lookup" . }}
+                  {{ $areaURL := $area.page_url | default $area.link }}
+                  {{ $label := partial "translated-label.html" (dict "value" .) }}
+                  {{ if $areaURL }}<a href="{{ $areaURL }}" class="rounded-full border border-slate-200 bg-slate-50 px-2.5 py-0.5 text-xs font-semibold text-slate-700 transition-colors hover:border-primary-400 hover:text-primary-700 dark:border-white/10 dark:bg-white/5 dark:text-white/70">{{ $label }}</a>{{ else }}<span class="rounded-full border border-slate-200 bg-slate-50 px-2.5 py-0.5 text-xs font-semibold text-slate-700 dark:border-white/10 dark:bg-white/5 dark:text-white/70">{{ $label }}</span>{{ end }}
+                {{ end }}
+              </dd>
+            </div>
+            {{ end }}
+          </dl>
+        </div>
+      </aside>
+    </div>
+  </section>
+</article>
+{{ end }}

@@ -1,0 +1,28 @@
+{{/*
+  original-language-notice — aviso de idioma original em Perspectivas.
+
+  Perspectivas são escritas numa língua só (quase sempre português). O par
+  na outra língua existe para satisfazer a paridade PT/EN do site e o
+  seletor de idioma, mas é um stub: traz o resumo e este aviso, apontando
+  para o texto completo no idioma original.
+
+  Entrada (dict):
+    page — a página corrente. Renderiza algo só quando .Lang difere de
+           .Params.original_language (default "pt").
+*/}}
+{{ $page := .page }}
+{{ $orig := $page.Params.original_language | default "pt" }}
+{{ if ne $page.Lang $orig }}
+  {{ $origPage := "" }}
+  {{ range $page.Translations }}{{ if eq .Lang $orig }}{{ $origPage = . }}{{ end }}{{ end }}
+  {{ $langName := i18n (printf "ui_lang_name_%s" $orig) }}
+  <div role="note" class="rounded-2xl border border-primary-200 bg-primary-50/70 px-5 py-4 text-sm leading-6 text-slate-800 dark:border-primary-400/30 dark:bg-primary-500/10 dark:text-white/85">
+    <p class="font-semibold">{{ printf (i18n "ui_perspectivas_original_notice") $langName }}</p>
+    {{ with $origPage }}
+    <a href="{{ .RelPermalink }}" hreflang="{{ $orig }}" lang="{{ $orig }}" class="mt-2 inline-flex items-center gap-1 rounded-full bg-primary-700 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-primary-800">
+      {{ i18n "ui_perspectivas_read_original" }}
+      <span aria-hidden="true">&rarr;</span>
+    </a>
+    {{ end }}
+  </div>
+{{ end }}

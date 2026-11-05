@@ -220,6 +220,12 @@ languages:
           post: "Bancas marcadas, defesas realizadas e trabalhos depositados"
           url: /defesas/
           weight: 15
+        - identifier: pub-perspectivas
+          pre: comments
+          name: "Perspectivas"
+          post: "Opiniões técnicas dos pesquisadores"
+          url: /perspectivas/
+          weight: 18
         - identifier: pub-cursos
           pre: courses
           name: "Cursos e materiais didáticos"
@@ -509,6 +515,12 @@ languages:
           post: "Scheduled committees, held defenses, and deposited works"
           url: /defesas/
           weight: 15
+        - identifier: pub-perspectivas
+          pre: comments
+          name: "Perspectives"
+          post: "Technical opinion from our researchers"
+          url: /perspectivas/
+          weight: 18
         - identifier: pub-cursos
           pre: courses
           name: "Courses and teaching materials"

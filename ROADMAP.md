@@ -98,7 +98,7 @@ Após o ciclo de correções técnicas de 2026-07, o site do CEDIS está com bas
   <!-- > Nota: -->
 
 - [ ] **C2** — Blog técnico regular — 1 post curto/quinzena por algum membro. Cria trilha de conteúdo, sinaliza atividade.
-  <!-- > Nota: -->
+  > Nota (2026-11-05): infraestrutura pronta como seção **Perspectivas** (`/perspectivas/`, submenu Publicações, pulso da capa, bloco no perfil do pesquisador). Textos numa língua só, com stub + aviso na outra (`scripts/new_perspectiva.py`). Falta o primeiro texto para marcar o item.
 
 - [x] **C3** — Meta description única por página (140–160 chars). Hoje muitas herdam a global.
   > Nota (2026-07-27): `layouts/partials/meta.html` ganhou geração programática de description para `taxonomy` e `term` ("Publicações, projetos... sobre X no CEDIS/UnB") e para `section`. Amostra 500 pgs PT: **89% únicas** (era 73%). Restantes 11% são paginação (page/N).
