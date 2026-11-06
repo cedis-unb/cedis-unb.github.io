@@ -5,7 +5,7 @@ draft: false
 language: en
 translationKey: opportunity_software_bem_linhas_projeto
 id: software_bem_linhas_projeto
-status: open
+status: closed
 deadline: 2026-10-20
 audience:
 - extensao
@@ -16,8 +16,11 @@ project: project_software_bem
 responsible:
 - george_marsicano
 source: /posts/news-post.034/
-summary: "Applications from 14 to 20 October 2026, through the call form. Five project lines of the Software for Good umbrella programme, open to students, faculty, professionals and institutions with a real social need."
+summary: "Applications closed on 20 October 2026. Phase 1 results published on 6 November. Five project lines of the Software for Good umbrella programme."
+noindex: true
 ---
+> This call is closed: applications ended on **20 October 2026**. The Phase 1 selection results have been published: {{< link-interno "/posts/news-post.041" "Software for Good 2026.2 — Phase 1 results" >}}.
+
 {{< link-interno "/projects/software_bem" "Software for Good" >}} organises its development fronts into **five project lines**. Each line delimits a field of social impact and guides the choice of problem, partner and software scope.
 
 The new call is open from **14 to 20 October 2026**. There is room for **students** who want their final thesis to serve someone after it is handed in, **faculty** from any field, **professionals** willing to give a few hours of their experience, and **institutions** with a real social need and no one to turn it into technology. The programme's rule is non-negotiable: the solution reaches the end user at no cost.
