@@ -374,6 +374,13 @@ campos `status`, `deadline`, `audience`, `project` e `responsible`
 quando aplicável. As chamadas encerradas devem ter `status: expired` ou
 `closed` e `noindex: true`.
 
+**Acompanhamento da seleção.** Resultados e próximas etapas de uma chamada
+são publicados como notícia (`content/posts/`, PT e EN) que inclui o `id` da
+oportunidade em `related_ids` (ex.: `software_bem_linhas_projeto`). O
+template `layouts/opportunities/single.html` lista essas notícias, em ordem de
+data, no bloco "Acompanhamento da seleção" no topo da página do edital — não é
+preciso editar a oportunidade a cada nova etapa.
+
 Em julho/2026, todos os editais cadastrados estão encerrados; não há
 oportunidades abertas. Não marque uma oportunidade como `open` sem uma
 chamada vigente, prazo futuro e texto revisado.

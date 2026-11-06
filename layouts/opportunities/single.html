@@ -19,6 +19,23 @@
   </section>
   <section class="mx-auto grid max-w-(--breakpoint-xl) gap-8 px-4 py-10 md:px-6 lg:grid-cols-[minmax(0,1fr)_18rem] lg:px-8 lg:py-14">
     <div class="min-w-0 rounded-panel border border-slate-200/80 bg-white/90 p-6 shadow-panel dark:border-white/10 dark:bg-white/4 md:p-8">
+      {{- /* Acompanhamento: notícias que citam o id desta oportunidade em related_ids (resultados, próximas etapas). */ -}}
+      {{ $updates := slice }}
+      {{ with .Params.id }}{{ $updates = where (where site.RegularPages "Section" "posts") "Params.related_ids" "intersect" (slice .) }}{{ end }}
+      {{ with $updates }}
+      <section id="acompanhamento" aria-labelledby="acompanhamento-titulo" class="mb-8 rounded-2xl border border-primary-200 bg-primary-50/70 p-5 dark:border-primary-300/30 dark:bg-primary-300/10">
+        <h2 id="acompanhamento-titulo" class="text-lg font-black">{{ cond $isPt "Acompanhamento da seleção" "Selection updates" }}</h2>
+        <p class="mt-1 text-sm text-slate-600 dark:text-white/70">{{ cond $isPt "Resultados e próximas etapas desta chamada, em ordem de publicação." "Results and next stages of this call, in order of publication." }}</p>
+        <ol class="mt-4 space-y-3">
+          {{ range .ByDate }}
+          <li class="flex flex-col gap-0.5 sm:flex-row sm:gap-3">
+            <time datetime="{{ .Date.Format "2006-01-02" }}" class="shrink-0 text-sm font-semibold tabular-nums text-slate-600 dark:text-white/65">{{ .Date.Format (cond $isPt "02/01/2006" "02 Jan 2006") }}</time>
+            <a href="{{ .RelPermalink }}" class="font-semibold text-primary-700 underline-offset-2 hover:underline dark:text-primary-200">{{ .Title }}</a>
+          </li>
+          {{ end }}
+        </ol>
+      </section>
+      {{ end }}
       <div class="prose prose-zinc max-w-none prose-headings:font-black prose-p:leading-8 prose-a:text-primary-700 hover:prose-a:text-primary-600 dark:prose-invert dark:prose-a:text-primary-200">{{ .Content }}</div>
     </div>
     <aside class="space-y-5 lg:sticky lg:top-24 lg:self-start">

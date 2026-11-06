@@ -19,7 +19,7 @@ source: /posts/news-post.034/
 summary: "Applications closed on 20 October 2026. Phase 1 results published on 6 November. Five project lines of the Software for Good umbrella programme."
 noindex: true
 ---
-> This call is closed: applications ended on **20 October 2026**. The Phase 1 selection results have been published: {{< link-interno "/posts/news-post.041" "Software for Good 2026.2 — Phase 1 results" >}}.
+> This call is closed: applications ended on **20 October 2026**. Results and next stages are listed under **Selection updates**, just above.
 
 {{< link-interno "/projects/software_bem" "Software for Good" >}} organises its development fronts into **five project lines**. Each line delimits a field of social impact and guides the choice of problem, partner and software scope.
 

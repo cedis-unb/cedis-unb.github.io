@@ -19,7 +19,7 @@ source: /posts/news-post.034/
 summary: "Inscrições encerradas em 20 de outubro de 2026. Resultado da Fase 1 divulgado em 6 de novembro. Cinco linhas de projeto do macroprojeto Software para o Bem."
 noindex: true
 ---
-> Esta chamada está encerrada: as inscrições terminaram em **20/10/2026**. O resultado da Fase 1 da seleção já foi divulgado: {{< link-interno "/posts/news-post.041" "Software para o Bem 2026.2 — resultado da Fase 1" >}}.
+> Esta chamada está encerrada: as inscrições terminaram em **20/10/2026**. Resultados e próximas etapas estão em **Acompanhamento da seleção**, logo acima.
 
 O {{< link-interno "/projects/software_bem" "Software para o Bem" >}} organiza suas frentes de desenvolvimento em **cinco linhas de projeto**. Cada linha delimita um campo de impacto social e orienta a escolha do problema, do parceiro e do escopo de software a ser construído.
 

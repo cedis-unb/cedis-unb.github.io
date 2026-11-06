@@ -19,6 +19,7 @@ tags:
 - project_software_bem
 related_ids:
 - project_software_bem
+- software_bem_linhas_projeto
 - george_marsicano
 ---
 
