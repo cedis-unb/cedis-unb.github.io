@@ -43,7 +43,7 @@ doi_isbn: 10.1007/978-3-032-05008-3_55
 source_title: Human-Computer Interaction – INTERACT 2025
 publisher: Springer Berlin Heidelberg
 location: ''
-pages: 106-116
+pages: 292-296
 volume: '16111'
 external_url: ''
 spotify_podcast: ''
@@ -60,7 +60,7 @@ bibtex: "@inproceedings{2025-ana-julia-mendes-santos-repensando-a-educacao-em-ih
   \ Rocha Fortunato and Maurício Ferreira de Araújo and Sergio Antônio Andrade de\
   \ Freitas},\n  title = {Repensando a educação em IHC: gamificação, heurísticas e\
   \ aprendizagem baseada em projetos em ação},\n  year = {2025},\n  volume = {16111},\n\
-  \  pages = {106-116},\n  publisher = {Springer Berlin Heidelberg},\n  doi = {10.1007/978-3-032-05008-3_55}\n\
+  \  pages = {292-296},\n  publisher = {Springer Berlin Heidelberg},\n  doi = {10.1007/978-3-032-05008-3_55}\n\
   }"
 aliases:
 - /publications/2025-ana-julia-mendes-santos-repensando-a-educacao-em-ihc-gamificacao-heuristicas-e-aprend/

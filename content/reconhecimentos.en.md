@@ -12,6 +12,12 @@ layout: institutional-page
 
 CEDIS's work is recognized in national and international forums for the quality of its research, for teaching innovation, and for the impact of its products and projects. This page consolidates the main recognitions received by the center and its researchers.
 
+## 2026
+
+### Honorable Mention — UnB Annual Award for Innovation in Undergraduate Teaching, 2025 Edition (DEG/UnB)
+
+The **Jornada IHC** initiative by Prof. {{< link-interno "/people/sergio_freitas" "Sergio Freitas" >}} — student protagonism through RPG gamification and project-based learning — received an Honorable Mention for the gamified Human-Computer Interaction course taught in 2025. [Read the full coverage]({{< relref "/posts/news-post.042" >}}).
+
 ## 2025
 
 ### Honorable Mention — UnB Annual Award for Innovation in Undergraduate Teaching (DEG/UnB)

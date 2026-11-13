@@ -12,6 +12,12 @@ layout: institutional-page
 
 O trabalho do CEDIS é reconhecido em fóruns nacionais e internacionais pela qualidade da pesquisa, pela inovação no ensino e pelo impacto de seus produtos e projetos. Esta página consolida os principais reconhecimentos recebidos pelo centro e por seus pesquisadores.
 
+## 2026
+
+### Menção Honrosa — Prêmio Anual de Inovação no Ensino de Graduação, Edição 2025 (DEG/UnB)
+
+A ação **Jornada IHC: protagonismo estudantil por meio de gamificação em RPG e aprendizagem baseada em projetos**, do professor {{< link-interno "/people/sergio_freitas" "Sergio Freitas" >}}, recebeu Menção Honrosa pela gamificação em RPG da disciplina Interação Humano-Computador em 2025. [Leia a cobertura completa]({{< relref "/posts/news-post.042" >}}).
+
 ## 2025
 
 ### Menção Honrosa — Prêmio Anual de Inovação no Ensino de Graduação (DEG/UnB)
