@@ -25,7 +25,7 @@ related_ids:
 
 Brasília, 13 de novembro de 2026
 
-O Decanato de Ensino de Graduação (DEG/UnB) concedeu **Menção Honrosa** no **Prêmio Anual de Inovação no Ensino de Graduação – Edição 2025** à ação **"Jornada IHC: protagonismo estudantil por meio de gamificação em RPG e aprendizagem baseada em projetos"**. A ação é coordenada pelo professor {{< link-interno "/people/sergio_freitas" "Sergio Antônio Andrade de Freitas" >}}, do CEDIS/FCTE-UnB. Segundo o DEG, o prêmio reconhece a contribuição da iniciativa "para o fortalecimento, qualidade e inovação das práticas de ensino de graduação" da Universidade.
+O Decanato de Ensino de Graduação (DEG/UnB) concedeu **Menção Honrosa** no **Prêmio Anual de Inovação no Ensino de Graduação – Edição 2025** à ação **"Jornada IHC: protagonismo estudantil por meio de gamificação em RPG e aprendizagem baseada em projetos"**. A ação é coordenada pelo professor {{< link-interno "/people/sergio_freitas" "Sergio Antônio Andrade de Freitas" >}}. Segundo o DEG, o prêmio reconhece a contribuição da iniciativa "para o fortalecimento, qualidade e inovação das práticas de ensino de graduação" da Universidade.
 
 A premiação se refere à edição de 2025 da disciplina **Interação Humano-Computador**, do curso de Engenharia de Software. Na {{< link-interno "/projects/jornada_ihc" "Jornada IHC" >}}, a turma vira um grupo de aventureiros. Cada estudante assume um personagem de RPG (Cavaleiro, Mago, Arqueiro ou Sacerdote) e as entregas viram missões. O semestre gira em torno de um projeto de interface que as equipes prototipam, avaliam com heurísticas e validam com usuários. A mecânica de jogo segue o framework Octalysis: o RPG motiva, e o projeto é onde o conteúdo de IHC é aplicado.
 
