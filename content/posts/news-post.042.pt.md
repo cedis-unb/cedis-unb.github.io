@@ -3,6 +3,8 @@ title: "Jornada IHC recebe Menção Honrosa no Prêmio Anual de Inovação no En
 date: 2026-11-13T09:00:00-03:00
 draft: false
 weight: 500
+featured: true
+featured_until: 2026-11-25
 language: pt
 featured_image: "../assets/images/featured/gamification_Jornada IHC.webp"
 summary: "A gamificação em RPG da disciplina Interação Humano-Computador, aplicada em 2025, foi reconhecida pelo Decanato de Ensino de Graduação na edição 2025 do prêmio. Na edição anterior, a menção honrosa foi para o Alvorecer Feudal."

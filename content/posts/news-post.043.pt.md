@@ -23,7 +23,7 @@ related_ids:
 
 Brasília, 9 de novembro de 2026
 
-O professor {{< link-interno "/people/sergio_freitas" "Sergio Antônio Andrade de Freitas" >}} é um dos convidados do **IX Fórum de Avaliação da Universidade de Brasília**, no dia **16 de novembro**. Ele fala na mesa temática **"Da Avaliação à Ação"** com a exposição **"Inteligência de Dados na Avaliação Institucional: identificação de riscos e apoio à decisão"**.
+O professor {{< link-interno "/people/sergio_freitas" "Sergio Antônio Andrade de Freitas" >}} é um dos convidados do [**IX Fórum de Avaliação da Universidade de Brasília**](https://dpo.unb.br/%F0%9F%93%A2-ix-forum-de-avaliacao-da-unb-da-avaliacao-a-acao/), no dia **16 de novembro**. Ele fala na mesa temática **"Da Avaliação à Ação"** com a exposição **"Inteligência de Dados na Avaliação Institucional: identificação de riscos e apoio à decisão"**.
 
 O fórum é realizado pela Comissão Própria de Avaliação (CPA/UnB) e pela Diretoria de Avaliação e Estatísticas Institucionais (DAI/DPO/UnB). O tema desta edição é *"Da avaliação à ação: evidências, boas práticas e resultados para transformar a Universidade"*, e o evento parte de uma pergunta: **como transformar os resultados da avaliação em decisões, práticas e melhorias efetivas para a Universidade?** A programação trata da gestão administrativa e acadêmica das unidades, do combate à evasão, de boas práticas e de indicadores de desempenho.
 
@@ -52,4 +52,5 @@ Esses trabalhos fazem parte das linhas de pesquisa {{< link-interno "/research-l
 
 - **Data:** 16 de novembro de 2026, das 8h às 18h. A mesa "Da Avaliação à Ação" é das 14h às 16h.
 - **Local:** Auditório da Reitoria, Campus Darcy Ribeiro.
+- **Página do evento:** [IX Fórum de Avaliação da UnB, no site do DPO/UnB](https://dpo.unb.br/%F0%9F%93%A2-ix-forum-de-avaliacao-da-unb-da-avaliacao-a-acao/)
 - **Inscrições gratuitas:** [formulário do evento](https://forms.cloud.microsoft/r/ks5iCBFrri)

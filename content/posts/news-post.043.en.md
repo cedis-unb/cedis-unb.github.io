@@ -23,7 +23,7 @@ related_ids:
 
 Brasilia, November 9, 2026
 
-Prof. {{< link-interno "/people/sergio_freitas" "Sergio Antônio Andrade de Freitas" >}} is one of the invited speakers at the **9th Assessment Forum of the University of Brasília (IX Fórum de Avaliação da UnB)**, on **16 November**. He will speak on the panel **"From Assessment to Action"** with the talk **"Data Intelligence in Institutional Assessment: identifying risks and supporting decisions"**.
+Prof. {{< link-interno "/people/sergio_freitas" "Sergio Antônio Andrade de Freitas" >}} is one of the invited speakers at the [**9th Assessment Forum of the University of Brasília (IX Fórum de Avaliação da UnB)**](https://dpo.unb.br/%F0%9F%93%A2-ix-forum-de-avaliacao-da-unb-da-avaliacao-a-acao/), on **16 November**. He will speak on the panel **"From Assessment to Action"** with the talk **"Data Intelligence in Institutional Assessment: identifying risks and supporting decisions"**.
 
 The forum is organised by UnB's Institutional Self-Assessment Committee (CPA/UnB) and its Directorate of Institutional Assessment and Statistics (DAI/DPO/UnB). This year's theme is *"From assessment to action: evidence, good practices and results to transform the University"*, and the event starts from one question: **how can assessment results be turned into decisions, practices and real improvements for the University?** The programme covers the administrative and academic management of academic units, the fight against student dropout, good practices and performance indicators.
 
@@ -52,4 +52,5 @@ This work belongs to the research lines {{< link-interno "/research-lines/ai-lan
 
 - **Date:** 16 November 2026, 8 am to 6 pm. The "From Assessment to Action" panel runs from 2 pm to 4 pm.
 - **Venue:** Rectorate Auditorium (Auditório da Reitoria), Darcy Ribeiro Campus.
+- **Event page:** [IX Fórum de Avaliação da UnB, on the DPO/UnB website](https://dpo.unb.br/%F0%9F%93%A2-ix-forum-de-avaliacao-da-unb-da-avaliacao-a-acao/) (in Portuguese)
 - **Free registration:** [event form](https://forms.cloud.microsoft/r/ks5iCBFrri) (in Portuguese)

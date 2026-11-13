@@ -3,6 +3,8 @@ title: "Jornada IHC receives Honorable Mention at UnB's Annual Award for Innovat
 date: 2026-11-13T09:00:00-03:00
 draft: false
 weight: 500
+featured: true
+featured_until: 2026-11-25
 language: en
 featured_image: "../assets/images/featured/gamification_Jornada IHC.webp"
 summary: "The RPG-based gamification of the Human-Computer Interaction course, as taught in 2025, was recognized by UnB's Dean's Office for Undergraduate Education in the award's 2025 edition. In the previous edition, the honorable mention went to Alvorecer Feudal."
