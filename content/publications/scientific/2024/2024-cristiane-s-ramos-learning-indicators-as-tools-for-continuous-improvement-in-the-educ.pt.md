@@ -40,7 +40,7 @@ tags:
 - project_a3m
 - project_framework_preditivo_engajamento
 advisors: []
-doi_isbn: 2183-1378
+doi_isbn: 10.5281/zenodo.14062523
 source_title: PAEE/ALE 2024 - International Conference on Active Learning in Engineering
   Education
 publisher: ''
@@ -75,7 +75,7 @@ bibtex: "@inproceedings{2024-cristiane-s-ramos-learning-indicators-as-tools-for-
   \ as Tools for Continuous Improvement in the Educational Environment},\n  year =\
   \ {2024},\n  booktitle = {PAEE/ALE 2024 - International Conference on Active Learning\
   \ in Engineering Education},\n  pages = {245-254},\n  address = {San Andrés Islas\
-  \ - Colombia},\n  isbn = {2183-1378}\n}"
+  \ - Colombia},\n  doi = {10.5281/zenodo.14062523}\n}"
 aliases:
 - /publications/2024-cristiane-s-ramos-learning-indicators-as-tools-for-continuous-improvement-in-the-educ/
 ---

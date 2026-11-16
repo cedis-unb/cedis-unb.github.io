@@ -510,7 +510,7 @@ items:
       en: ''
     book_title: ''
     volume: ''
-    doi_isbn: ''
+    doi_isbn: 10.26512/2025.08.d.53499
     journal_event: ''
     location: ''
     pages: ''
@@ -837,7 +837,7 @@ items:
       en: ''
     book_title: ''
     volume: e005
-    doi_isbn: ''
+    doi_isbn: 10.5195/biblios.2025.1302
     journal_event: BIBLIOS (LIMA)
     location: ''
     pages: 1-13
@@ -863,7 +863,7 @@ items:
       en: ''
     book_title: ''
     volume: ''
-    doi_isbn: ''
+    doi_isbn: 10.1109/PDP66500.2025.00028
     journal_event: 2025 33rd Euromicro International Conference on Parallel, Distributed, and Network-Based Processing (PDP)
     location: Turin
     pages: '146'
@@ -889,7 +889,7 @@ items:
       en: ''
     book_title: ''
     volume: ''
-    doi_isbn: ''
+    doi_isbn: 10.5753/erigo.2025.17687
     journal_event: Escola Regional de Informática de Goiás (ERI-GO 2025)
     location: Brasil
     pages: '399'
@@ -1106,7 +1106,7 @@ items:
       en: ''
     book_title: ''
     volume: ''
-    doi_isbn: ''
+    doi_isbn: 10.5753/eradco.2024.4525
     journal_event: Escola Regional de Alto Desempenho do Centro-Oeste
     location: Brasil
     pages: 27
@@ -1131,14 +1131,14 @@ items:
       - Wander Cleber Maria Pereira da Silva
       - MARSICANO, GEORGE
     title:
-      pt: 'Reflections on Collaborative Design: Lessons from Creating a Digital Public Service App'
-      en: 'Reflections on Collaborative Design: Lessons from Creating a Digital Public Service App'
+      pt: 'Co-design and Co-creation in Digital Public Services: A Service Design Approach'
+      en: 'Co-design and Co-creation in Digital Public Services: A Service Design Approach'
     summary:
       pt: ''
       en: ''
     book_title: ''
     volume: ''
-    doi_isbn: ''
+    doi_isbn: 10.5753/wcge.2024.2505
     journal_event: Workshop de Computação Aplicada em Governo Eletrônico (WCGE)
     location: Brasília
     pages: ''
@@ -1491,7 +1491,7 @@ items:
         planning of precise and well-founded interventions to establish an inclusive, efficient, and motivating learning environment.
     book_title: Proceedings of the PAEE/ALE’2024, International Conference on Active Learning in Engineering Education
     volume: ''
-    doi_isbn: 2183-1378
+    doi_isbn: 10.5281/zenodo.14062523
     journal_event: PAEE/ALE 2024 - International Conference on Active Learning in Engineering Education
     location: San Andrés Islas - Colombia
     pages: 245-254
@@ -3354,7 +3354,7 @@ items:
       en: ''
     book_title: ''
     volume: '7'
-    doi_isbn: ''
+    doi_isbn: 10.5281/zenodo.5984747
     journal_event: REVISTA DO CEAM
     location: ''
     pages: 56-78
@@ -3410,7 +3410,7 @@ items:
       en: ''
     book_title: ''
     volume: ''
-    doi_isbn: 'Breaking one barrier at a time: how women developers cope in a men-dominated industry'
+    doi_isbn: 10.1145/3474624.3474638
     journal_event: "SBES '21: Brazilian Symposium on Software Engineering"
     location: Joinville Brazil
     pages: '378'
@@ -3920,7 +3920,7 @@ items:
       en: ''
     book_title: ''
     volume: '1'
-    doi_isbn: 978-85-9535-158-5
+    doi_isbn: 'DOI: 10.29327/57070 | ISBN: 978-85-9535-158-5'
     journal_event: ''
     location: ''
     pages: '203'
@@ -4227,7 +4227,7 @@ items:
       en: ''
     book_title: Redes de Aprendizagem na EaD
     volume: ''
-    doi_isbn: 10.1007/978-3-030-24308-1_11
+    doi_isbn: 10.22533/at.ed.46719050715
     journal_event: ''
     location: ''
     pages: ''
@@ -4610,7 +4610,7 @@ items:
       en: ''
     book_title: ''
     volume: ''
-    doi_isbn: ''
+    doi_isbn: 10.1145/3183440.3183444
     journal_event: the 40th International Conference
     location: Gothenburg
     pages: ''
@@ -9300,7 +9300,7 @@ items:
       en: ''
     book_title: ''
     volume: ''
-    doi_isbn: ''
+    doi_isbn: 10.1109/CISTI.2016.7521462
     journal_event: 11th Iberian Conference on Information Systems and Technologies (CISTI)
     location: Gran Canaria, Spain
     pages: '1'
@@ -9470,7 +9470,7 @@ items:
         education, evaluated across three undergraduate courses (245 valid responses) with good internal consistency (α = 0.880). The instrument underpins the EduTrack and EduTrack AI products.'
     book_title: ''
     volume: ''
-    doi_isbn: ''
+    doi_isbn: 10.5753/sbie.2026.27258
     journal_event: XXXVII Simpósio Brasileiro de Informática na Educação (SBIE 2026)
     location: Brasil
     pages: ''

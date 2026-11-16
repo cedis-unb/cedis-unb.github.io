@@ -36,7 +36,7 @@ tags:
 - project_framework_preditivo_engajamento
 - project_alvorecer
 advisors: []
-doi_isbn: ''
+doi_isbn: 10.5753/sbie.2026.27258
 source_title: XXXVII Simpósio Brasileiro de Informática na Educação (SBIE 2026)
 publisher: ''
 location: Brasil
@@ -56,7 +56,7 @@ bibtex: "@inproceedings{2026-sergio-antonio-andrade-de-freitas-a-motivation-awar
   \ Davi Rodrigues da Rocha and Mylena Angélica Silva Farias},\n  title = {A Motivation-Aware\
   \ Diagnostic Instrument for Personalized and Gamified Computing Education},\n  year\
   \ = {2026},\n  booktitle = {XXXVII Simpósio Brasileiro de Informática na Educação\
-  \ (SBIE 2026)},\n  address = {Brasil}\n}"
+  \ (SBIE 2026)},\n  address = {Brasil},\n  doi = {10.5753/sbie.2026.27258}\n}"
 aliases:
 - /publications/2026-sergio-antonio-andrade-de-freitas-a-motivation-aware-diagnostic-instrument-for-person/
 ---

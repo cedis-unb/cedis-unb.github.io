@@ -1,13 +1,12 @@
 ---
-title: 'Reflections on Collaborative Design: Lessons from Creating a Digital Public
-  Service App'
+title: 'Co-design and Co-creation in Digital Public Services: A Service Design Approach'
 date: '2024-01-01T00:00:00-03:00'
 draft: false
-language: pt
-translationKey: publication_2024_rejane_maria_da_costa_figueiredo_reflections_on_collaborative_design_lessons_from_cre
+language: en
+translationKey: publication_2024_rejane_maria_da_costa_figueiredo_co_design_and_co_creation_in_digital_public_services
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
-id: publication_2024_rejane_maria_da_costa_figueiredo_reflections_on_collaborative_design_lessons_from_cre
+id: publication_2024_rejane_maria_da_costa_figueiredo_co_design_and_co_creation_in_digital_public_services
 publication_index: 39
 publication_group: scientific
 publication_type: workshop
@@ -44,7 +43,7 @@ authors_structured:
 tags:
 - digital_transformation
 advisors: []
-doi_isbn: ''
+doi_isbn: 10.5753/wcge.2024.2505
 source_title: Workshop de Computação Aplicada em Governo Eletrônico (WCGE)
 publisher: ''
 location: Brasília
@@ -54,16 +53,16 @@ external_url: ''
 spotify_podcast: ''
 github_repo: ''
 zenodo_record: ''
-summary: Workshop de Rejane Maria da Costa Figueiredo, PEDROSA, G. V., GARDENGHI,
+summary: Workshop by Rejane Maria da Costa Figueiredo, PEDROSA, G. V., GARDENGHI,
   J. L. C., Elaine VENSON, JUDICE, M., JUDICE, A. C. B., COSTA, F. F., Wander Cleber
   Maria Pereira da Silva, MARSICANO, GEORGE (2024).
-bibtex: "@inproceedings{2024-rejane-maria-da-costa-figueiredo-reflections-on-collaborative-design-lessons-from-cre,\n\
+bibtex: "@inproceedings{2024-rejane-maria-da-costa-figueiredo-co-design-and-co-creation-in-digital-public-services,\n\
   \  author = {Rejane Maria da Costa Figueiredo and PEDROSA, G. V. and GARDENGHI,\
   \ J. L. C. and Elaine VENSON and JUDICE, M. and JUDICE, A. C. B. and COSTA, F. F.\
-  \ and Wander Cleber Maria Pereira da Silva and MARSICANO, GEORGE},\n  title = {Reflections\
-  \ on Collaborative Design: Lessons from Creating a Digital Public Service App},\n\
-  \  year = {2024},\n  booktitle = {Workshop de Computação Aplicada em Governo Eletrônico\
-  \ (WCGE)},\n  address = {Brasília}\n}"
+  \ and Wander Cleber Maria Pereira da Silva and MARSICANO, GEORGE},\n  title = {Co-design\
+  \ and Co-creation in Digital Public Services: A Service Design Approach},\n  year\
+  \ = {2024},\n  booktitle = {Workshop de Computação Aplicada em Governo Eletrônico\
+  \ (WCGE)},\n  address = {Brasília},\n  doi = {10.5753/wcge.2024.2505}\n}"
 aliases:
-- /publications/2024-rejane-maria-da-costa-figueiredo-reflections-on-collaborative-design-lessons-from-cre/
+- /publications/2024-rejane-maria-da-costa-figueiredo-co-design-and-co-creation-in-digital-public-services/
 ---

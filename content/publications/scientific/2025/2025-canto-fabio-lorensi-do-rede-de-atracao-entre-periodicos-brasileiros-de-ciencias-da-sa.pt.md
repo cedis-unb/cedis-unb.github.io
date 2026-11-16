@@ -33,7 +33,7 @@ authors_structured:
 tags:
 - hpc
 advisors: []
-doi_isbn: ''
+doi_isbn: 10.5195/biblios.2025.1302
 source_title: BIBLIOS (LIMA)
 publisher: ''
 location: ''
@@ -49,7 +49,8 @@ bibtex: "@article{2025-canto-fabio-lorensi-do-rede-de-atracao-entre-periodicos-b
   \  author = {CANTO, FABIO LORENSI DO and CARVALHO SEGUNDO, WASHINGTON LUÍS RIBEIRO\
   \ DE and PINTO, ADILSON LUIZ and SUNDFELD, Daniel},\n  title = {Rede de atração\
   \ entre periódicos brasileiros de Ciências da Saúde},\n  year = {2025},\n  journal\
-  \ = {BIBLIOS (LIMA)},\n  volume = {e005},\n  pages = {1-13}\n}"
+  \ = {BIBLIOS (LIMA)},\n  volume = {e005},\n  pages = {1-13},\n  doi = {10.5195/biblios.2025.1302}\n\
+  }"
 aliases:
 - /publications/2025-canto-fabio-lorensi-do-rede-de-atracao-entre-periodicos-brasileiros-de-ciencias-da-sa/
 ---

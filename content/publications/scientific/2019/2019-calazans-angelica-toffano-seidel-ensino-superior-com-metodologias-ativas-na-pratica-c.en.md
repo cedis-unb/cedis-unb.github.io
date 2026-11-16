@@ -37,7 +37,7 @@ authors_structured:
 tags:
 - active_learning
 advisors: []
-doi_isbn: 978-85-9535-158-5
+doi_isbn: 'DOI: 10.29327/57070 | ISBN: 978-85-9535-158-5'
 source_title: ''
 publisher: Editora Itacaiúnas
 location: ''
@@ -54,7 +54,8 @@ bibtex: "@book{2019-calazans-angelica-toffano-seidel-ensino-superior-com-metodol
   \ BRITO, I. and PALDES, R. and KOSLOSKI, RICARDO AJAX DIAS and RAMOS, C. S. and\
   \ GUIMARAES, F.},\n  title = {Higher Education with Active Methodologies: How to\
   \ Put Them into Practice},\n  year = {2019},\n  volume = {1},\n  pages = {203},\n\
-  \  publisher = {Editora Itacaiúnas},\n  isbn = {978-85-9535-158-5}\n}"
+  \  publisher = {Editora Itacaiúnas},\n  isbn = {DOI: 10.29327/57070 | ISBN: 978-85-9535-158-5}\n\
+  }"
 aliases:
 - /publications/2019-calazans-angelica-toffano-seidel-ensino-superior-com-metodologias-ativas-na-pratica-c/
 ---

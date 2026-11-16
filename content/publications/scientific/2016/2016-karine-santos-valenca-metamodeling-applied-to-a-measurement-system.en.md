@@ -29,7 +29,7 @@ authors_structured:
 tags:
 - software_quality
 advisors: []
-doi_isbn: ''
+doi_isbn: 10.1109/CISTI.2016.7521462
 source_title: 11th Iberian Conference on Information Systems and Technologies (CISTI)
 publisher: ''
 location: Gran Canaria, Spain
@@ -45,7 +45,8 @@ bibtex: "@inproceedings{2016-karine-santos-valenca-metamodeling-applied-to-a-mea
   \  author = {Karine Santos Valença and Edna Dias Canedo and Ricardo Ajax Dias Kosloski},\n\
   \  title = {Metamodeling applied to a measurement system},\n  year = {2016},\n \
   \ booktitle = {11th Iberian Conference on Information Systems and Technologies (CISTI)},\n\
-  \  pages = {1},\n  address = {Gran Canaria, Spain}\n}"
+  \  pages = {1},\n  address = {Gran Canaria, Spain},\n  doi = {10.1109/CISTI.2016.7521462}\n\
+  }"
 aliases:
 - /publications/2016-karine-santos-valenca-metamodeling-applied-to-a-measurement-system/
 ---

@@ -33,7 +33,7 @@ authors_structured:
 tags:
 - hpc
 advisors: []
-doi_isbn: ''
+doi_isbn: 10.5753/eradco.2024.4525
 source_title: Escola Regional de Alto Desempenho do Centro-Oeste
 publisher: ''
 location: Brasil
@@ -50,7 +50,7 @@ bibtex: "@inproceedings{2024-paulino-gabriel-r-scheidt-nimbus-uma-arquitetura-se
   \ JOHAN M. G. DA and LIMA, Daniel Sundfeld},\n  title = {Nimbus: uma arquitetura\
   \ serverless em nuvem para correção automática de códigos},\n  year = {2024},\n\
   \  booktitle = {Escola Regional de Alto Desempenho do Centro-Oeste},\n  pages =\
-  \ {27},\n  address = {Brasil}\n}"
+  \ {27},\n  address = {Brasil},\n  doi = {10.5753/eradco.2024.4525}\n}"
 aliases:
 - /publications/2024-paulino-gabriel-r-scheidt-nimbus-uma-arquitetura-serverless-em-nuvem-para-correcao-au/
 ---

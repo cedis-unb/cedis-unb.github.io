@@ -30,7 +30,7 @@ authors_structured:
 tags:
 - hpc
 advisors: []
-doi_isbn: ''
+doi_isbn: 10.1109/PDP66500.2025.00028
 source_title: 2025 33rd Euromicro International Conference on Parallel, Distributed,
   and Network-Based Processing (PDP)
 publisher: ''
@@ -47,7 +47,7 @@ bibtex: "@inproceedings{2025-sundfeld-daniel-pa-star2-fast-optimal-multiple-sequ
   \ = {PA-Star2: Fast Optimal Multiple Sequence Alignment for Asymmetric Multicore\
   \ Processors},\n  year = {2025},\n  booktitle = {2025 33rd Euromicro International\
   \ Conference on Parallel, Distributed, and Network-Based Processing (PDP)},\n  pages\
-  \ = {146},\n  address = {Turin}\n}"
+  \ = {146},\n  address = {Turin},\n  doi = {10.1109/PDP66500.2025.00028}\n}"
 aliases:
 - /publications/2025-sundfeld-daniel-pa-star2-fast-optimal-multiple-sequence-alignment-for-asymmetric-mult/
 ---

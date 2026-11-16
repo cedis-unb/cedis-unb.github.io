@@ -21,7 +21,7 @@ authors_structured:
 tags:
 - soft_skills
 advisors: []
-doi_isbn: ''
+doi_isbn: 10.1145/3183440.3183444
 source_title: the 40th International Conference
 publisher: ''
 location: Gothenburg
@@ -35,7 +35,7 @@ summary: Conference by Mendes, Fabiana Freitas (2018).
 bibtex: "@inproceedings{2018-mendes-fabiana-freitas-the-relationship-between-personality-and-value-based-decision,\n\
   \  author = {Mendes, Fabiana Freitas},\n  title = {The relationship between personality\
   \ and value-based decision-making},\n  year = {2018},\n  booktitle = {the 40th International\
-  \ Conference},\n  address = {Gothenburg}\n}"
+  \ Conference},\n  address = {Gothenburg},\n  doi = {10.1145/3183440.3183444}\n}"
 aliases:
 - /publications/2018-mendes-fabiana-freitas-the-relationship-between-personality-and-value-based-decision/
 ---

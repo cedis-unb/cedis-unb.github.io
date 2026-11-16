@@ -28,7 +28,7 @@ authors_structured:
 tags:
 - hpc
 advisors: []
-doi_isbn: ''
+doi_isbn: 10.5753/erigo.2025.17687
 source_title: Escola Regional de Informática de Goiás (ERI-GO 2025)
 publisher: ''
 location: Brasil
@@ -43,7 +43,8 @@ bibtex: "@inproceedings{2025-araujo-mauricio-ferreira-de-aplicacao-multithread-p
   \  author = {ARAÚJO, MAURÍCIO FERREIRA DE and HABL, LUI and Sundfeld, Daniel},\n\
   \  title = {Multithread application for accelerating the Particle-in-Cell (PIC)\
   \ method},\n  year = {2025},\n  booktitle = {Escola Regional de Informática de Goiás\
-  \ (ERI-GO 2025)},\n  pages = {399},\n  address = {Brasil}\n}"
+  \ (ERI-GO 2025)},\n  pages = {399},\n  address = {Brasil},\n  doi = {10.5753/erigo.2025.17687}\n\
+  }"
 aliases:
 - /publications/2025-araujo-mauricio-ferreira-de-aplicacao-multithread-para-a-aceleracao-do-metodo-particl/
 ---

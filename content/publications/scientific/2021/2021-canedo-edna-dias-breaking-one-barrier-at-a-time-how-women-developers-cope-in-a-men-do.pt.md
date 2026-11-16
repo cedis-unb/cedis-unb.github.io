@@ -42,8 +42,7 @@ authors_structured:
 tags:
 - soft_skills
 advisors: []
-doi_isbn: 'Breaking one barrier at a time: how women developers cope in a men-dominated
-  industry'
+doi_isbn: 10.1145/3474624.3474638
 source_title: 'SBES ''21: Brazilian Symposium on Software Engineering'
 publisher: ''
 location: Joinville Brazil
@@ -60,8 +59,8 @@ bibtex: "@inproceedings{2021-canedo-edna-dias-breaking-one-barrier-at-a-time-how
   \ MARCIO and PINTO, GUSTAVO and BONIFACIO, RODRIGO},\n  title = {Breaking one barrier\
   \ at a time: how women developers cope in a men-dominated industry},\n  year = {2021},\n\
   \  booktitle = {SBES '21: Brazilian Symposium on Software Engineering},\n  pages\
-  \ = {378},\n  address = {Joinville Brazil},\n  isbn = {Breaking one barrier at a\
-  \ time: how women developers cope in a men-dominated industry}\n}"
+  \ = {378},\n  address = {Joinville Brazil},\n  doi = {10.1145/3474624.3474638}\n\
+  }"
 aliases:
 - /publications/2021-canedo-edna-dias-breaking-one-barrier-at-a-time-how-women-developers-cope-in-a-men-do/
 ---

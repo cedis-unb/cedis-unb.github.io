@@ -23,7 +23,7 @@ tags:
 - software_architecture
 advisors:
 - fabiana_mendes
-doi_isbn: ''
+doi_isbn: 10.26512/2025.08.d.53499
 source_title: ''
 publisher: ''
 location: ''
@@ -36,7 +36,8 @@ zenodo_record: ''
 summary: Dissertation de Tássio Correia da Silva (2025).
 bibtex: "@mastersthesis{2025-tassio-correia-da-silva-3sw-um-modelo-adaptado-do-cis-controls-v8-1-para-mitigacao-de,\n\
   \  author = {Tássio Correia da Silva},\n  title = {3SW: um modelo adaptado do CIS\
-  \ Controls v8.1 para mitigação de ameaças a servidores Web},\n  year = {2025}\n}"
+  \ Controls v8.1 para mitigação de ameaças a servidores Web},\n  year = {2025},\n\
+  \  doi = {10.26512/2025.08.d.53499}\n}"
 aliases:
 - /publications/2025-tassio-correia-da-silva-3sw-um-modelo-adaptado-do-cis-controls-v8-1-para-mitigacao-de/
 ---

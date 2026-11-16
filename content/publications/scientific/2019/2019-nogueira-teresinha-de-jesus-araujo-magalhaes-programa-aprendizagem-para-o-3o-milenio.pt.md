@@ -37,7 +37,7 @@ tags:
 - active_learning
 - project_a3m
 advisors: []
-doi_isbn: 10.1007/978-3-030-24308-1_11
+doi_isbn: 10.22533/at.ed.46719050715
 source_title: Redes de Aprendizagem na EaD
 publisher: Atena Editora
 location: ''
@@ -55,7 +55,7 @@ bibtex: "@incollection{2019-nogueira-teresinha-de-jesus-araujo-magalhaes-program
   \ de Sousa e and FREITAS, S. A. A. and Leite, Letícia Lopes and Macedo, Harineide\
   \ Madeira},\n  title = {PROGRAMA APRENDIZAGEM PARA O 3º MILÊNIO (A3M): PROMOVENDO\
   \ A INSTITUCIONALIZAÇÃO DE AÇÕES INOVADORAS NA UNB},\n  year = {2019},\n  booktitle\
-  \ = {Redes de Aprendizagem na EaD},\n  publisher = {Atena Editora},\n  doi = {10.1007/978-3-030-24308-1_11}\n\
+  \ = {Redes de Aprendizagem na EaD},\n  publisher = {Atena Editora},\n  doi = {10.22533/at.ed.46719050715}\n\
   }"
 aliases:
 - /publications/2019-nogueira-teresinha-de-jesus-araujo-magalhaes-programa-aprendizagem-para-o-3o-milenio/
