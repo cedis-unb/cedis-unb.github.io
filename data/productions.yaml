@@ -1774,15 +1774,21 @@ items:
       pt: A Systematic Review of the Factors that Impact the Prediction of Retention and Dropout in Higher Education
       en: A Systematic Review of the Factors that Impact the Prediction of Retention and Dropout in Higher Education
     summary:
-      pt: ''
-      en: ''
-    book_title: ''
+      pt: Identificar os fatores que afetam a evasão e a retenção acadêmicas é uma área de pesquisa com pluralidade de opiniões e conceitos. Este artigo identifica estudos primários atuais para compreender os principais
+        fatores relacionados à evasão e à retenção. Trata-se de pesquisa quantitativa, exploratória e explicativa, de natureza aplicada, que usa os procedimentos técnicos de estudo de caso e pesquisa bibliográfica.
+        A revisão sistemática da literatura identifica os fatores que impactam a evasão e a retenção acadêmicas e serve de base para um projeto de aprendizado de máquina. Fatores acadêmicos, demográficos e de
+        aprendizagem podem prever a evasão e a retenção. A definição dos fatores usados e da forma de uso é essencial para obter bons resultados de previsão. Os fatores identificados foram usados na instituição.
+      en: Identifying factors that affect academic dropout and retention is a research area that brings a plurality of opinions and concepts. This article identifies current primary studies to understand the main
+        factors related to dropout and retention. It is quantitative, exploratory, and explanatory research of an applied nature, using the technical procedures of case study and bibliographic research. The systematic
+        review of the literature identifies the factors that impact academic dropout and retention and serves as a basis for a machine learning project. Academic, demographic, and learning factors can predict
+        dropouts and retention. The definition of the factors used and the way of use is essential to obtain good forecasting results. The identified factors were used in the institution.
+    book_title: Proceedings of the 56th Hawaii International Conference on System Sciences
     volume: ''
-    doi_isbn: ''
-    journal_event: 56th Hawaii International Conference on System Science
+    doi_isbn: 10.24251/HICSS.2023.157
+    journal_event: 56th Hawaii International Conference on System Sciences (HICSS 2023)
     location: Maui
-    pages: ''
-    publisher: ''
+    pages: 1271-1280
+    publisher: Hawaii International Conference on System Sciences
     tags:
       - learning_analytics
       - machine_learning
