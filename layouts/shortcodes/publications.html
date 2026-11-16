@@ -68,10 +68,12 @@
     {{ end }}
   {{ end }}
 
-  {{/*  Verifica se os advisors especificados correspondem, se houver */}}
+  {{/*  Verifica se os advisors especificados correspondem, se houver.
+       Soma advisors e co_advisors (CONVENTIONS §4.A.1.1): sem isso, a
+       coorientação some do perfil de quem coorienta. */}}
   {{ if and $includePublication (gt (len $advisors) 0) (ne (index $advisors 0) "") }}
     {{ $tagAdvisor := false }}
-    {{ range .advisors }}
+    {{ range union (.advisors | default slice) (.co_advisors | default slice) }}
       {{ if in $advisors . }}
         {{ $tagAdvisor = true }}
         {{ break }}
@@ -292,6 +294,20 @@
                 <div class="{{ $metaLabelClass }}">{{ i18n "orientador" }}</div>
                 <div class="mt-2 flex flex-wrap gap-2">
                   {{ range .advisors }}
+                    {{ $adv := partial "people-lookup" . }}
+                    {{ if $adv.found }}
+                      <a href="{{ if hasPrefix $adv.link "/" }}{{ $adv.link | relLangURL }}{{ else }}{{ $adv.link }}{{ end }}" class="{{ $pillClass }}">{{ $adv.name }}</a>
+                    {{ end }}
+                  {{ end }}
+                </div>
+              </div>
+              {{ end }}
+
+              {{ with .co_advisors }}
+              <div>
+                <div class="{{ $metaLabelClass }}">{{ i18n "coorientador" }}</div>
+                <div class="mt-2 flex flex-wrap gap-2">
+                  {{ range . }}
                     {{ $adv := partial "people-lookup" . }}
                     {{ if $adv.found }}
                       <a href="{{ if hasPrefix $adv.link "/" }}{{ $adv.link | relLangURL }}{{ else }}{{ $adv.link }}{{ end }}" class="{{ $pillClass }}">{{ $adv.name }}</a>

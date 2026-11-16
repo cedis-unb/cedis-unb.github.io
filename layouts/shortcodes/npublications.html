@@ -48,7 +48,8 @@
   {{/*  Verifica se os advisors especificados correspondem, se houver */}}
   {{ if and $includePublication (gt (len $advisors) 0) (ne (index $advisors 0) "") }}
     {{ $tagAdvisor := false }}
-    {{ range .advisors }}
+    {{/* advisors + co_advisors (CONVENTIONS §4.A.1.1) */}}
+    {{ range union (.advisors | default slice) (.co_advisors | default slice) }}
       {{ if in $advisors . }}
         {{ $tagAdvisor = true }}
         {{ break }}

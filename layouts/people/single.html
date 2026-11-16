@@ -139,7 +139,7 @@
     {{ $publicationCount = add $publicationCount 1 }}
     {{ $personPublications = $personPublications | append . }}
   {{ end }}
-  {{ if and .advisors (in .advisors $personKey) (in (slice "phd" "dissertation" "specialization" "tcc") .type) (not (in .tags "active")) }}
+  {{ if and (or (in (.advisors | default (slice)) $personKey) (in (.co_advisors | default (slice)) $personKey)) (in (slice "phd" "dissertation" "specialization" "tcc") .type) (not (in .tags "active")) }}
     {{ $formerSupervisionCount = add $formerSupervisionCount 1 }}
   {{ end }}
 {{ end }}
