@@ -8,7 +8,7 @@ translationKey: publication_2013_antonio_bezerra_da_silva_junior_apoio_ferrament
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2013_antonio_bezerra_da_silva_junior_apoio_ferramental_ao_processo_de_garantia_da_qualidad
-publication_index: 211
+publication_index: 208
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis
@@ -41,4 +41,6 @@ bibtex: "@mastersthesis{2013-antonio-bezerra-da-silva-junior-apoio-ferramental-a
   \ de Brasília}\n}"
 aliases:
 - /publications/2013-antonio-bezerra-da-silva-junior-apoio-ferramental-ao-processo-de-garantia-da-qualidad/
+co_advisors:
+- andre_lanna
 ---

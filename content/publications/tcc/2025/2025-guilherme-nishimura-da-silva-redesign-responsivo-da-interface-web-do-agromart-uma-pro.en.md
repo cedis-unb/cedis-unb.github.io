@@ -8,7 +8,7 @@ translationKey: publication_2025_guilherme_nishimura_da_silva_redesign_responsiv
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2025_guilherme_nishimura_da_silva_redesign_responsivo_da_interface_web_do_agromart_uma_pro
-publication_index: 350
+publication_index: 346
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

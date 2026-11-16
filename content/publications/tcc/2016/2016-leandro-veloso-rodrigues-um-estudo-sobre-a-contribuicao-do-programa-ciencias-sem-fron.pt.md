@@ -22,7 +22,6 @@ tags:
 - soft_skills
 advisors:
 - sergio_freitas
-- fabiana_mendes
 doi_isbn: ''
 source_title: ''
 publisher: Biblioteca Central da Universidade de Brasília

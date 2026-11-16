@@ -7,7 +7,7 @@ translationKey: publication_2025_luana_souza_silva_torres_processo_de_desenvolvi
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2025_luana_souza_silva_torres_processo_de_desenvolvimento_para_projetos_colaborativos_a_ex
-publication_index: 266
+publication_index: 262
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis
@@ -23,7 +23,6 @@ tags:
 - project_agromart
 advisors:
 - cristiane_ramos
-- andre_lanna
 doi_isbn: ''
 source_title: ''
 publisher: Biblioteca Central da Universidade de Brasília
@@ -41,4 +40,6 @@ bibtex: "@mastersthesis{2025-luana-souza-silva-torres-processo-de-desenvolviment
   \ = {Biblioteca Central da Universidade de Brasília}\n}"
 aliases:
 - /publications/2025-luana-souza-silva-torres-processo-de-desenvolvimento-para-projetos-colaborativos-a-ex/
+co_advisors:
+- andre_lanna
 ---

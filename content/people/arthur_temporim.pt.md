@@ -1,7 +1,7 @@
 ---
 author: CEDIS
 title: "Arthur Rocha Temporim de Lacerda"
-profile_level: card_with_page
+profile_level: advisor_only
 date: 2022-02-17T00:50:20-03:00
 weight: 36
 language: pt

@@ -1,5 +1,5 @@
 ---
-title: "Transferência de conhecimento em processos de software nas contratações de fábricas pelo governo federal brasileiro"
+title: "Transferência de conhecimento em processos de contratação de fábricas de software por organizações públicas federais"
 date: 1970-01-01T00:00:00Z
 scheduled_date: 2014-01-28T00:00:00-03:00
 draft: false

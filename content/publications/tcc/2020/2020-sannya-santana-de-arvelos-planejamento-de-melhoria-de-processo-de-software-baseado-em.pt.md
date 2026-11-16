@@ -22,7 +22,6 @@ tags:
 - verification_validation_testing
 advisors:
 - cristiane_ramos
-- ricardo_ajax
 doi_isbn: ''
 source_title: ''
 publisher: Biblioteca Central da Universidade de Brasília
@@ -40,4 +39,6 @@ bibtex: "@mastersthesis{2020-sannya-santana-de-arvelos-planejamento-de-melhoria-
   \ = {Biblioteca Central da Universidade de Brasília}\n}"
 aliases:
 - /publications/2020-sannya-santana-de-arvelos-planejamento-de-melhoria-de-processo-de-software-baseado-em/
+co_advisors:
+- ricardo_ajax
 ---

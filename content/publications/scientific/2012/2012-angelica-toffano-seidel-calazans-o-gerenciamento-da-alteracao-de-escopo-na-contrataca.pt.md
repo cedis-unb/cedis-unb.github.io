@@ -8,7 +8,7 @@ translationKey: publication_2012_angelica_toffano_seidel_calazans_o_gerenciament
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2012_angelica_toffano_seidel_calazans_o_gerenciamento_da_alteracao_de_escopo_na_contrataca
-publication_index: 344
+publication_index: 340
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle

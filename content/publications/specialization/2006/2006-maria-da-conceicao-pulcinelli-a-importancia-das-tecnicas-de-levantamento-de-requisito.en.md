@@ -7,7 +7,7 @@ translationKey: publication_2006_maria_da_conceicao_pulcinelli_a_importancia_das
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2006_maria_da_conceicao_pulcinelli_a_importancia_das_tecnicas_de_levantamento_de_requisito
-publication_index: 336
+publication_index: 332
 publication_group: specialization
 publication_type: specialization
 schema_type: Thesis

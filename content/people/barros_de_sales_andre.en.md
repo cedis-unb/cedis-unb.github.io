@@ -1,7 +1,7 @@
 ---
 author: CEDIS
 title: BARROS DE SALES, ANDRÉ
-profile_level: derived
+profile_level: advisor_only
 layout: derived
 slug: barros_de_sales_andre
 language: en

@@ -27,7 +27,6 @@ tags:
 - project_agromart
 advisors:
 - andre_lanna
-- rudi_van_els
 doi_isbn: ''
 source_title: ''
 publisher: Biblioteca Central da Universidade de Brasília
@@ -46,4 +45,6 @@ bibtex: "@mastersthesis{2023-andre-aben-athar-de-freitas-uma-evolucao-do-projeto
   \ Universidade de Brasília}\n}"
 aliases:
 - /publications/2023-andre-aben-athar-de-freitas-uma-evolucao-do-projeto-agromart-implantacao-individualiz/
+co_advisors:
+- rudi_van_els
 ---

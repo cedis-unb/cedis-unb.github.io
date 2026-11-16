@@ -7,4 +7,6 @@ language: en
 translationKey: "defesa-vinicius-brito-2014-06-24"
 canonical_source: data/defesas.yaml
 defesa_id: "vinicius-brito-2014-06-24"
+aliases:
+  - /defesas/vinicius-brito-2014-06-24-2/
 ---

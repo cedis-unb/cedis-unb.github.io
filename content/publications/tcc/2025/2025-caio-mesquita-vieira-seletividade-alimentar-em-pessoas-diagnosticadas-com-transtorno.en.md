@@ -8,7 +8,7 @@ translationKey: publication_2025_caio_mesquita_vieira_seletividade_alimentar_em_
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2025_caio_mesquita_vieira_seletividade_alimentar_em_pessoas_diagnosticadas_com_transtorno
-publication_index: 348
+publication_index: 344
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis
@@ -24,7 +24,6 @@ tags:
 - software_quality
 advisors:
 - ricardo_ajax
-- marilia_miranda
 doi_isbn: ''
 source_title: ''
 publisher: Biblioteca Central da Universidade de Brasília
@@ -43,4 +42,6 @@ bibtex: "@mastersthesis{2025-caio-mesquita-vieira-seletividade-alimentar-em-pess
   \ de Brasília},\n  address = {Brasília, DF, Brasil}\n}"
 aliases:
 - /publications/2025-caio-mesquita-vieira-seletividade-alimentar-em-pessoas-diagnosticadas-com-transtorno/
+co_advisors:
+- marilia_miranda
 ---

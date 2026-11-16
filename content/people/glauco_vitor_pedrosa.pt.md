@@ -12,7 +12,7 @@ aliases_authors:
 - PEDROSA, G. V.
 - PEDROSA, GLAUCO
 matched_productions:
-- title: 'Reflections on Collaborative Design: Lessons from Creating a Digital Public Service App'
+- title: 'Co-design and Co-creation in Digital Public Services: A Service Design Approach'
   year: 2024
   type: workshop
 - title: 'Digital Transformation of Public Services in a Startup-Based Environment: Job Perceptions, Relationships, Potentialities and Restrictions'

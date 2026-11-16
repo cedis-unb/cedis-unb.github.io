@@ -8,7 +8,7 @@ translationKey: publication_2025_brenno_oliveira_silva_super_r_desenvolvimento_d
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2025_brenno_oliveira_silva_super_r_desenvolvimento_de_uma_solucao_gamificada_para_a_discip
-publication_index: 264
+publication_index: 260
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis
@@ -33,7 +33,7 @@ publisher: Biblioteca Central da Universidade de Brasília
 location: ''
 pages: ''
 volume: ''
-external_url: ''
+external_url: https://bdm.unb.br/handle/10483/45302
 spotify_podcast: ''
 github_repo: ''
 zenodo_record: ''

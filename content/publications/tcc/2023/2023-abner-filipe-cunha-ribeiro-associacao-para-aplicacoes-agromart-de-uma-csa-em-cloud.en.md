@@ -26,7 +26,6 @@ tags:
 - project_agromart
 advisors:
 - andre_lanna
-- rudi_van_els
 doi_isbn: ''
 source_title: ''
 publisher: Biblioteca Central da Universidade de Brasília
@@ -44,4 +43,6 @@ bibtex: "@mastersthesis{2023-abner-filipe-cunha-ribeiro-associacao-para-aplicaco
   \ {2023},\n  publisher = {Biblioteca Central da Universidade de Brasília}\n}"
 aliases:
 - /publications/2023-abner-filipe-cunha-ribeiro-associacao-para-aplicacoes-agromart-de-uma-csa-em-cloud/
+co_advisors:
+- rudi_van_els
 ---

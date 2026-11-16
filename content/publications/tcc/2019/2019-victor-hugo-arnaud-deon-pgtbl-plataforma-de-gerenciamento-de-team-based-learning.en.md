@@ -22,7 +22,6 @@ tags:
 - active_learning
 advisors:
 - cristiane_ramos
-- ricardo_ajax
 doi_isbn: ''
 source_title: ''
 publisher: Biblioteca Central da Universidade de Brasília
@@ -40,4 +39,6 @@ bibtex: "@mastersthesis{2019-victor-hugo-arnaud-deon-pgtbl-plataforma-de-gerenci
   \ de Brasília}\n}"
 aliases:
 - /publications/2019-victor-hugo-arnaud-deon-pgtbl-plataforma-de-gerenciamento-de-team-based-learning/
+co_advisors:
+- ricardo_ajax
 ---

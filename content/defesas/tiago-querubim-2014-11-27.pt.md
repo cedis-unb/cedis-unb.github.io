@@ -7,4 +7,6 @@ language: pt
 translationKey: "defesa-tiago-querubim-2014-11-27"
 canonical_source: data/defesas.yaml
 defesa_id: "tiago-querubim-2014-11-27"
+aliases:
+  - /defesas/tiago-querubim-2014-11-27-2/
 ---

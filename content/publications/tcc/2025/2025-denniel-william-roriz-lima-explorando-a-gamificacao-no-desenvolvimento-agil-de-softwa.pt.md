@@ -23,7 +23,6 @@ tags:
 - software_quality
 advisors:
 - cristiane_ramos
-- ricardo_ajax
 doi_isbn: ''
 source_title: ''
 publisher: Biblioteca Central da Universidade de Brasília
@@ -42,4 +41,6 @@ bibtex: "@mastersthesis{2025-denniel-william-roriz-lima-explorando-a-gamificacao
   \ de Brasília}\n}"
 aliases:
 - /publications/2025-denniel-william-roriz-lima-explorando-a-gamificacao-no-desenvolvimento-agil-de-softwa/
+co_advisors:
+- ricardo_ajax
 ---

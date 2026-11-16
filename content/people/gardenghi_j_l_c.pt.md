@@ -10,7 +10,7 @@ authorimage: ../assets/images/global/author.webp
 aliases_authors:
 - GARDENGHI, J. L. C.
 matched_productions:
-- title: 'Reflections on Collaborative Design: Lessons from Creating a Digital Public Service App'
+- title: 'Co-design and Co-creation in Digital Public Services: A Service Design Approach'
   year: 2024
   type: workshop
 ---

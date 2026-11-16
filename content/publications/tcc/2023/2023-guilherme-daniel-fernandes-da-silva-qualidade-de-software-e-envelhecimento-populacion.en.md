@@ -8,7 +8,7 @@ translationKey: publication_2023_guilherme_daniel_fernandes_da_silva_qualidade_d
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2023_guilherme_daniel_fernandes_da_silva_qualidade_de_software_e_envelhecimento_populacion
-publication_index: 228
+publication_index: 225
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis
@@ -25,7 +25,6 @@ tags:
 - software_quality
 advisors:
 - marilia_miranda
-- ricardo_ajax
 doi_isbn: ''
 source_title: ''
 publisher: Biblioteca Central da Universidade de Brasília
@@ -44,4 +43,6 @@ bibtex: "@mastersthesis{2023-guilherme-daniel-fernandes-da-silva-qualidade-de-so
   \ Brasília}\n}"
 aliases:
 - /publications/2023-guilherme-daniel-fernandes-da-silva-qualidade-de-software-e-envelhecimento-populacion/
+co_advisors:
+- ricardo_ajax
 ---

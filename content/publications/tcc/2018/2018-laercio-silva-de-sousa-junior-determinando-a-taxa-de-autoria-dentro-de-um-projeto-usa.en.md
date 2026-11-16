@@ -39,4 +39,6 @@ bibtex: "@mastersthesis{2018-laercio-silva-de-sousa-junior-determinando-a-taxa-d
   \ Central da Universidade de Brasília}\n}"
 aliases:
 - /publications/2018-laercio-silva-de-sousa-junior-determinando-a-taxa-de-autoria-dentro-de-um-projeto-usa/
+co_advisors:
+- cristiane_ramos
 ---

@@ -1,6 +1,6 @@
 ---
-title: '"Por que processos de melhoria de software já definidos não estão sendo utilizados
-  pelas empresas? : uma revisão da literatura'
+title: Por que processos de melhoria de software já definidos não estão sendo utilizados
+  pelas empresas? Uma revisão da literatura
 date: '2023-01-01T00:00:00-03:00'
 draft: false
 language: pt
@@ -34,8 +34,8 @@ github_repo: ''
 zenodo_record: ''
 summary: Tcc de Nathalia Lorena Cardoso Dias (2023).
 bibtex: "@mastersthesis{2023-nathalia-lorena-cardoso-dias-por-que-processos-de-melhoria-de-software-ja-definidos-n,\n\
-  \  author = {Nathalia Lorena Cardoso Dias},\n  title = {\"Por que processos de melhoria\
-  \ de software já definidos não estão sendo utilizados pelas empresas? : uma revisão\
+  \  author = {Nathalia Lorena Cardoso Dias},\n  title = {Por que processos de melhoria\
+  \ de software já definidos não estão sendo utilizados pelas empresas? Uma revisão\
   \ da literatura},\n  year = {2023},\n  publisher = {Biblioteca Central da Universidade\
   \ de Brasília}\n}"
 aliases:

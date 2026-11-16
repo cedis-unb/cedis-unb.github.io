@@ -7,4 +7,6 @@ language: pt
 translationKey: "defesa-giancarllo-soares-2014-06-24"
 canonical_source: data/defesas.yaml
 defesa_id: "giancarllo-soares-2014-06-24"
+aliases:
+  - /defesas/giancarllo-soares-2014-06-24-2/
 ---

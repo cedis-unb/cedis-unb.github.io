@@ -942,8 +942,7 @@
       - name: Denniel William Roriz Lima
         slug:
     advisor: cristiane_ramos
-    co_advisors:
-      - ricardo_ajax
+    co_advisors: [ricardo_ajax]
     committee: []
     location:
       room:
@@ -1147,8 +1146,7 @@
       - name: Alexia Naara da Silva Cardoso
         slug:
     advisor: sergio_freitas
-    co_advisors:
-      - celia_higawa
+    co_advisors: [celia_higawa]
     committee: []
     location:
       room:
@@ -1204,11 +1202,12 @@
       en:
     status_override:
     date_approximate: false
-  - id: marcus-martins-2025-06-15
+  - id: marcus-martins-2025-11-21
+    legacy_ids: [marcus-martins-2025-06-15]
     type: tcc
     program: curso_esw
-    scheduled_date: '2025-06-15T00:00:00-03:00'
-    held_date: '2025-06-15'
+    scheduled_date: '2025-11-21T00:00:00-03:00'
+    held_date: '2025-11-21'
     title:
       pt: 'OpenBatch: serviço de processamento em lote para nuvem privada'
       en: 'OpenBatch: batch processing service for private cloud'
@@ -1216,7 +1215,7 @@
       pt: ''
       en: ''
     students:
-      - name: Marcus Vinicius P. Martins
+      - name: Marcus Vinícius Paiva Martins
         slug:
     advisor: daniel_sundfeld
     co_advisors:
@@ -1236,12 +1235,13 @@
       pt:
       en:
     status_override:
-    date_approximate: true
-  - id: brenno-paulo-2025-06-15
+    date_approximate: false
+  - id: brenno-paulo-2025-02-19
+    legacy_ids: [brenno-paulo-2025-06-15]
     type: tcc
     program: curso_esw
-    scheduled_date: '2025-06-15T00:00:00-03:00'
-    held_date: '2025-06-15'
+    scheduled_date: '2025-02-19T00:00:00-03:00'
+    held_date: '2025-02-19'
     title:
       pt: 'SUPER-R: Desenvolvimento de uma Solução Gamificada para a Disciplina de Engenharia de Requisitos'
       en: 'SUPER-R: Development of a Gamified Solution for the Requirements Engineering Course'
@@ -1273,7 +1273,7 @@
       pt:
       en:
     status_override:
-    date_approximate: true
+    date_approximate: false
   - id: yuri-bacarias-2025-06-15
     type: tcc
     program: curso_esw
@@ -1771,7 +1771,6 @@
         slug:
     advisor: cristiane_ramos
     co_advisors:
-      - ricardo_ajax
     committee: []
     location:
       room:
@@ -1967,11 +1966,12 @@
       en:
     status_override:
     date_approximate: true
-  - id: itallo-gravina-2024-06-15
+  - id: itallo-gravina-2025-12-11
+    legacy_ids: [itallo-gravina-2024-06-15]
     type: tcc
     program: curso_esw
-    scheduled_date: '2024-06-15T00:00:00-03:00'
-    held_date: '2024-06-15'
+    scheduled_date: '2025-12-11T00:00:00-03:00'
+    held_date: '2025-12-11'
     title:
       pt: Portal de visualização e análise de dados de produção científica pela OpenAlex
       en: Portal for visualization and analysis of scientific production data via OpenAlex
@@ -1994,13 +1994,13 @@
     project: project_laguna
     related_products: []
     related_publications: []
-    production_id: 2024-itallo-cavalcante-portal-de-visualizacao-e-analise-de
+    production_id: 2025-itallo-cavalcante-portal-de-visualizacao-e-analise-de
     news_slug:
     narrative:
       pt:
       en:
     status_override:
-    date_approximate: true
+    date_approximate: false
   - id: arthur-lacerda-2024-05-28
     type: dissertation
     program: curso_ppca
@@ -2066,7 +2066,7 @@
       - name: João Vitor Ferreira Alves
         slug:
     advisor: fabiana_mendes
-    co_advisors:
+    co_advisors: [barros_de_sales_andre]
     committee: []
     location:
       room:
@@ -2193,8 +2193,7 @@
       - name: Giulia Lobo Barros
         slug:
     advisor: cristiane_ramos
-    co_advisors:
-      - ricardo_ajax
+    co_advisors: [ricardo_ajax]
     committee: []
     location:
       room:
@@ -2226,8 +2225,7 @@
       - name: Ricardo de Castro Loureiro
         slug:
     advisor: cristiane_ramos
-    co_advisors:
-      - ricardo_ajax
+    co_advisors: [ricardo_ajax]
     committee: []
     location:
       room:
@@ -2261,7 +2259,7 @@
       - name: Victor Eduardo Araújo Ribeiro
         slug:
     advisor: sergio_freitas
-    co_advisors:
+    co_advisors: [arthur_temporim]
     committee: []
     location:
       room:
@@ -2658,8 +2656,7 @@
       - name: Lorrayne Alves Cardozo
         slug:
     advisor: marilia_miranda
-    co_advisors:
-      - ricardo_ajax
+    co_advisors: [ricardo_ajax]
     committee: []
     location:
       room:
@@ -2738,13 +2735,14 @@
       en:
     status_override:
   - id: nathalia-dias-2023-03-04
+    legacy_ids: [nathalia-dias-2023-03-04-2]
     type: tcc
     program: curso_esw
     scheduled_date: '2023-03-04T00:00:00-03:00'
     held_date: '2023-03-04'
     title:
-      pt: '"Por que processos de melhoria de software já definidos não estão sendo utilizados pelas empresas? : uma revisão da literatura'
-      en: Why are already defined software improvement processes not being used by companies? A literature review
+      pt: 'Por que processos de melhoria de software já definidos não estão sendo utilizados pelas empresas? Uma revisão da literatura'
+      en: 'Why are already defined software improvement processes not being used by companies? A literature review'
     summary:
       pt: ''
       en: ''
@@ -2765,39 +2763,6 @@
     related_publications: []
     production_id: 2023-nathalia-lorena-por-que-processos-de-melhoria-de
     news_slug: defesa-nathalia-dias-2023
-    narrative:
-      pt:
-      en:
-    status_override:
-  - id: nathalia-dias-2023-03-04-2
-    type: tcc
-    program: curso_esw2
-    scheduled_date: '2023-03-04T00:00:00-03:00'
-    held_date: '2023-03-04'
-    title:
-      pt: Por que processos de melhoria de software já definidos não estão sendo utilizados pelas empresas? Uma revisão da literatura
-      en: Why are already defined software improvement processes not being used by companies? A literature review
-    summary:
-      pt: ''
-      en: ''
-    students:
-      - name: Nathalia Lorena Cardoso Dias
-        slug:
-    advisor: cristiane_ramos
-    co_advisors:
-      - fabiana_mendes
-    committee: []
-    location:
-      room:
-      city: Brasília
-      remote_url:
-    tags:
-      - software_quality
-    project:
-    related_products: []
-    related_publications: []
-    production_id: 2024-nathalia-lorena-por-que-processos-de-melhoria-de
-    news_slug:
     narrative:
       pt:
       en:
@@ -3014,8 +2979,7 @@
       - name: Fabiana Luiza Vasconcelos Pfeilsticker Ribas
         slug:
     advisor: ricardo_ajax
-    co_advisors:
-      - cristiane_ramos
+    co_advisors: [cristiane_ramos]
     committee:
       - role: advisor
         slug: ricardo_ajax
@@ -3112,7 +3076,6 @@
         slug:
     advisor: cristiane_ramos
     co_advisors:
-      - sergio_freitas
     committee: []
     location:
       room:
@@ -3137,8 +3100,8 @@
     scheduled_date: '2022-09-23T00:00:00-03:00'
     held_date: '2022-09-23'
     title:
-      pt: Identificação de requisitos não-funcionais para jogos sérios com foco nas necessidades especiais das crianças com TDAH
-      en: Identification of non-functional requirements for serious games focused on the special needs of children with ADHD
+      pt: 'Requisitos não-funcionais no desenvolvimento de jogos sérios para pessoas com TDAH'
+      en: 'Non-functional requirements in the development of serious games for people with ADHD'
     summary:
       pt: ''
       en: ''
@@ -3168,7 +3131,7 @@
     project:
     related_products: []
     related_publications: []
-    production_id: 2022-gabriel-batista-identificacao-de-requisitos-naofuncionais-para-jogos
+    production_id: 2022-gabriel-batista-requisitos-naofuncionais-no-desenvolvimento-de-jogos
     news_slug: defesa-gabriel-silva-2022
     narrative:
       pt:
@@ -3404,8 +3367,7 @@
       - name: Ícaro Pereira de Oliveira
         slug:
     advisor: cristiane_ramos
-    co_advisors:
-      - ricardo_ajax
+    co_advisors: [ricardo_ajax]
     committee: []
     location:
       room:
@@ -3784,8 +3746,7 @@
       - name: Sannya Santana de Arvelos
         slug:
     advisor: cristiane_ramos
-    co_advisors:
-      - ricardo_ajax
+    co_advisors: [ricardo_ajax]
     committee: []
     location:
       room:
@@ -3819,7 +3780,6 @@
         slug:
     advisor: ricardo_ajax
     co_advisors:
-      - cristiane_ramos
     committee: []
     location:
       room:
@@ -4097,8 +4057,7 @@
       - name: Victor Hugo Arnaud Deon
         slug:
     advisor: cristiane_ramos
-    co_advisors:
-      - ricardo_ajax
+    co_advisors: [ricardo_ajax]
     committee: []
     location:
       room:
@@ -4165,7 +4124,7 @@
       - name: Laércio Silva de Sousa Júnior
         slug:
     advisor: andre_lanna
-    co_advisors:
+    co_advisors: [cristiane_ramos]
     committee: []
     location:
       room:
@@ -4457,7 +4416,7 @@
       - name: Attany Nathaly Lima Araújo
         slug:
     advisor: sergio_freitas
-    co_advisors:
+    co_advisors: [wander_cleber_maria_pereira_da_silva]
     committee: []
     location:
       room:
@@ -4509,7 +4468,6 @@
         slug:
     advisor: sergio_freitas
     co_advisors:
-      - fabiana_mendes
     committee: []
     location:
       room:
@@ -4832,18 +4790,19 @@
       en:
     status_override:
   - id: tiago-querubim-2014-11-27
+    legacy_ids: [tiago-querubim-2014-11-27-2]
     type: tcc
     program: curso_esw
     scheduled_date: '2014-11-27T00:00:00-03:00'
     held_date: '2014-11-27'
     title:
-      pt: Proposta de um conjunto de competências para um Scrum Master
-      en: Proposal for a Set of Skills for a Scrum Master
+      pt: 'Proposta de um conjunto de competências para um Scrum Master'
+      en: 'Proposal of a Set of Competencies for a Scrum Master'
     summary:
       pt: ''
       en: ''
     students:
-      - name: Tiago Querubim
+      - name: Tiago dos Santos Querubim
         slug:
     advisor: george_marsicano
     co_advisors:
@@ -4858,7 +4817,7 @@
     project:
     related_products: []
     related_publications: []
-    production_id: 2015-tiago-querubim-proposta-de-um-conjunto-de-competencias
+    production_id: 2014-tiago-santos-proposta-de-um-conjunto-de-competencias
     news_slug:
     narrative:
       pt:
@@ -4891,38 +4850,6 @@
     related_products: []
     related_publications: []
     production_id: 2014-ramaiane-medeiros-qualidade-na-modelagem-de-processos-de
-    news_slug:
-    narrative:
-      pt:
-      en:
-    status_override:
-  - id: tiago-querubim-2014-11-27-2
-    type: tcc
-    program: curso_esw
-    scheduled_date: '2014-11-27T00:00:00-03:00'
-    held_date: '2014-11-27'
-    title:
-      pt: Proposta de um conjunto de competências para um Scrum Master
-      en: Proposal of a Set of Competencies for a Scrum Master
-    summary:
-      pt: ''
-      en: ''
-    students:
-      - name: Tiago dos Santos Querubim
-        slug:
-    advisor: george_marsicano
-    co_advisors:
-    committee: []
-    location:
-      room:
-      city: Brasília
-      remote_url:
-    tags:
-      - teamwork
-    project:
-    related_products: []
-    related_publications: []
-    production_id: 2014-tiago-santos-proposta-de-um-conjunto-de-competencias
     news_slug:
     narrative:
       pt:
@@ -4992,8 +4919,7 @@
       - name: Guilherme Fay Vergara
         slug:
     advisor: sergio_freitas
-    co_advisors:
-      - edna_canedo
+    co_advisors: [edna_canedo]
     committee: []
     location:
       room:
@@ -5055,112 +4981,14 @@
       en:
     status_override:
   - id: giancarllo-soares-2014-06-24
+    legacy_ids: [giancarllo-soares-2014-06-24-2]
     type: tcc
     program: curso_esw
     scheduled_date: '2014-06-24T00:00:00-03:00'
     held_date: '2014-06-24'
     title:
-      pt: Proposta de um conjunto de competências para um time ágil
-      en: Proposal for a Set of Skills for an Agile Team
-    summary:
-      pt: ''
-      en: ''
-    students:
-      - name: Giancarllo Soares
-        slug:
-    advisor: george_marsicano
-    co_advisors:
-    committee: []
-    location:
-      room:
-      city: Brasília
-      remote_url:
-    tags:
-      - soft_skills
-      - teamwork
-    project:
-    related_products: []
-    related_publications: []
-    production_id: 2014-giancarllo-soares-proposta-de-um-conjunto-de-competencias
-    news_slug:
-    narrative:
-      pt:
-      en:
-    status_override:
-  - id: vinicius-brito-2014-06-24
-    type: tcc
-    program: curso_esw
-    scheduled_date: '2014-06-24T00:00:00-03:00'
-    held_date: '2014-06-24'
-    title:
-      pt: Proposta de um conjunto de competências para um Product Owner
-      en: Proposal for a Set of Skills for a Product Owner
-    summary:
-      pt: ''
-      en: ''
-    students:
-      - name: Vinicius Brito
-        slug:
-    advisor: george_marsicano
-    co_advisors:
-    committee: []
-    location:
-      room:
-      city: Brasília
-      remote_url:
-    tags:
-      - soft_skills
-      - teamwork
-    project:
-    related_products: []
-    related_publications: []
-    production_id: 2014-vinicius-brito-proposta-de-um-conjunto-de-competencias
-    news_slug:
-    narrative:
-      pt:
-      en:
-    status_override:
-  - id: vinicius-brito-2014-06-24-2
-    type: tcc
-    program: curso_esw
-    scheduled_date: '2014-06-24T00:00:00-03:00'
-    held_date: '2014-06-24'
-    title:
-      pt: Proposta de um conjunto de competências para o Product Owner
-      en: Proposal of a Set of Competencies for the Product Owner
-    summary:
-      pt: ''
-      en: ''
-    students:
-      - name: Vinícius Maia de Brito
-        slug:
-    advisor: george_marsicano
-    co_advisors:
-    committee: []
-    location:
-      room:
-      city: Brasília
-      remote_url:
-    tags:
-      - software_requirements
-      - teamwork
-    project:
-    related_products: []
-    related_publications: []
-    production_id: 2014-vinicius-maia-proposta-de-um-conjunto-de-competencias
-    news_slug:
-    narrative:
-      pt:
-      en:
-    status_override:
-  - id: giancarllo-soares-2014-06-24-2
-    type: tcc
-    program: curso_esw
-    scheduled_date: '2014-06-24T00:00:00-03:00'
-    held_date: '2014-06-24'
-    title:
-      pt: Proposta de um conjunto de competências para o Time Ágil
-      en: Proposal of a Set of Competencies for the Agile Team
+      pt: 'Proposta de um conjunto de competências para um time ágil'
+      en: 'Proposal for a Set of Skills for an Agile Team'
     summary:
       pt: ''
       en: ''
@@ -5168,18 +4996,54 @@
       - name: Giancarllo Helion Frota Soares
         slug:
     advisor: george_marsicano
-    co_advisors:
+    co_advisors: [wander_cleber_maria_pereira_da_silva]
     committee: []
     location:
       room:
       city: Brasília
       remote_url:
     tags:
+      - soft_skills
       - teamwork
     project:
     related_products: []
     related_publications: []
     production_id: 2014-giancarllo-helion-proposta-de-um-conjunto-de-competencias
+    news_slug:
+    narrative:
+      pt:
+      en:
+    status_override:
+  - id: vinicius-brito-2014-06-24
+    legacy_ids: [vinicius-brito-2014-06-24-2]
+    type: tcc
+    program: curso_esw
+    scheduled_date: '2014-06-24T00:00:00-03:00'
+    held_date: '2014-06-24'
+    title:
+      pt: 'Proposta de um conjunto de competências para um Product Owner'
+      en: 'Proposal for a Set of Skills for a Product Owner'
+    summary:
+      pt: ''
+      en: ''
+    students:
+      - name: Vinicius Maia de Brito
+        slug:
+    advisor: george_marsicano
+    co_advisors: [wander_cleber_maria_pereira_da_silva]
+    committee: []
+    location:
+      room:
+      city: Brasília
+      remote_url:
+    tags:
+      - soft_skills
+      - teamwork
+      - software_requirements
+    project:
+    related_products: []
+    related_publications: []
+    production_id: 2014-vinicius-maia-proposta-de-um-conjunto-de-competencias
     news_slug:
     narrative:
       pt:
@@ -5356,15 +5220,15 @@
     scheduled_date: '2014-01-28T00:00:00-03:00'
     held_date: '2014-01-28'
     title:
-      pt: Transferência de conhecimento em processos de software nas contratações de fábricas pelo governo federal brasileiro
-      en: Knowledge Transfer in Software Processes in Software Factory Contracting by the Brazilian Federal Government
+      pt: 'Transferência de conhecimento em processos de contratação de fábricas de software por organizações públicas federais'
+      en: 'Knowledge transfer in software factory contracting processes by federal public organizations'
     summary:
       pt: ''
       en: ''
     students:
-      - name: Maylon Feliz Brito
+      - name: Maylon Félix Brito
         slug:
-    advisor: george_marsicano
+    advisor: rejane_maria_da_costa_figueiredo
     co_advisors:
     committee: []
     location:
@@ -5376,7 +5240,7 @@
     project:
     related_products: []
     related_publications: []
-    production_id: 2014-maylon-feliz-brito-transferencia-de-conhecimento-em-processos-de-software-nas-contrat
+    production_id: 2014-maylon-felix-transferencia-de-conhecimento-em-processos-de
     news_slug:
     narrative:
       pt:
@@ -5474,7 +5338,7 @@
       - name: Antonio Bezerra da Silva Júnior
         slug:
     advisor: cristiane_ramos
-    co_advisors:
+    co_advisors: [andre_lanna]
     committee: []
     location:
       room:
@@ -6165,8 +6029,7 @@
       - name: Keli Cristina Vieira Sirqueira Borges
         slug:
     advisor: wander_cleber_maria_pereira_da_silva
-    co_advisors:
-      - sergio_freitas
+    co_advisors: [sergio_freitas]
     committee: []
     location:
       room:
@@ -6184,3 +6047,205 @@
       pt:
       en:
     status_override:
+  - id: gabriel-shaine-2025-12-11
+    type: tcc
+    program: curso_esw
+    scheduled_date: '2025-12-11T00:00:00-03:00'
+    held_date: '2025-12-11'
+    title:
+      pt: 'Gamificação na educação: desenvolvimento de um aplicativo para prevenção da violência na infância voltado para pais e educadores'
+      en: 'Gamification in education: development of an application for preventing childhood violence aimed at parents and educators'
+    summary:
+      pt: >-
+        Desenvolve um aplicativo mobile gamificado, com funcionamento offline, a partir do manual de boas práticas do projeto Pró-vida e Eu Me Protejo, parceria entre a
+        instituição Pró-Vida e o projeto Eu Me Protejo. O aplicativo leva a pais, tutores e educadores o conteúdo de prevenção da violência na infância em fases, com recompensas
+        à medida que o conhecimento avança. O estudo adota pesquisa-ação com abordagem mista para analisar como a gamificação pode apoiar a educação e a prevenção da violência na
+        infância.
+      en: >-
+        Develops an offline gamified mobile application based on the good-practices manual of the Pró-vida e Eu Me Protejo project, a partnership between the Pró-Vida institution
+        and the Eu Me Protejo project. The app brings childhood-violence prevention content to parents, guardians and educators in levels, with rewards as their knowledge grows.
+        The study uses action research with a mixed-methods approach to analyse how gamification can support education and the prevention of childhood violence.
+    students:
+      - name: Gabriel Marcolino Rodrigues
+        slug:
+      - name: Shaíne Aparecida Cardoso de Oliveira
+        slug:
+    advisor: george_marsicano
+    co_advisors:
+    committee: []
+    location:
+      room:
+      city: Brasília
+      remote_url:
+    tags:
+      - gamification
+      - social_software
+    project: project_software_bem
+    related_products: [prevencao_violencia_infancia]
+    related_publications: []
+    production_id: 2025-gabriel-marcolino-gamificacao-na-educacao-desenvolvimento-de-um
+    news_slug:
+    narrative:
+      pt:
+      en:
+    status_override:
+    date_approximate: false
+  - id: victor-cabral-2025-12-09
+    type: tcc
+    program: curso_esw
+    scheduled_date: '2025-12-09T00:00:00-03:00'
+    held_date: '2025-12-09'
+    title:
+      pt: 'Prevenção ao abuso sexual infantil através da gamificação: desenvolvimento de um aplicativo educativo para crianças'
+      en: 'Preventing child sexual abuse through gamification: development of an educational application for children'
+    summary:
+      pt: >-
+        Propõe a gamificação como estratégia motivacional para levar às crianças o conteúdo das duas principais cartilhas do projeto Eu Me Protejo, de prevenção ao abuso sexual
+        infantil. O resultado é um aplicativo mobile gamificado para crianças de 4 a 10 anos, com uso mediado por pais, responsáveis ou educadores. A metodologia combinou
+        pesquisa-ação com especialistas, definição de requisitos e desenvolvimento com práticas de gamificação e linguagem simples, alinhado aos materiais do projeto.
+      en: >-
+        Proposes gamification as a motivational strategy to bring children the content of the two main booklets of the Eu Me Protejo project on preventing child sexual abuse. The
+        result is a gamified mobile application for children aged 4 to 10, used with the mediation of parents, guardians or educators. The methodology combined action research
+        with specialists, requirements definition and development using gamification practices and plain language, aligned with the project's materials.
+    students:
+      - name: Victor de Souza Cabral
+        slug:
+    advisor: george_marsicano
+    co_advisors:
+    committee: []
+    location:
+      room:
+      city: Brasília
+      remote_url:
+    tags:
+      - gamification
+      - social_software
+    project: project_software_bem
+    related_products: [prevencao_abuso_infantil]
+    related_publications: []
+    production_id: 2025-victor-souza-prevencao-ao-abuso-sexual-infantil-atraves
+    news_slug:
+    narrative:
+      pt:
+      en:
+    status_override:
+    date_approximate: false
+  - id: fause-pedro-2025-12-09
+    type: tcc
+    program: curso_esw
+    scheduled_date: '2025-12-09T00:00:00-03:00'
+    held_date: '2025-12-09'
+    title:
+      pt: 'Chatbot como ferramenta de apoio à engenharia de requisitos'
+      en: 'Chatbot as a support tool for requirements engineering'
+    summary:
+      pt: >-
+        Investiga como chatbots baseados em grandes modelos de linguagem podem apoiar a elicitação e a descoberta de requisitos funcionais, gerando histórias de usuário a partir
+        das informações dos stakeholders. A pesquisa, de abordagem mista, desenvolveu um protótipo de chatbot com interface web que conduz perguntas guiadas com base em técnicas
+        de elicitação e estrutura as respostas como histórias de usuário. O sistema foi validado com engenheiros de requisitos que atuam em um projeto real.
+      en: >-
+        Investigates how chatbots based on large language models can support the elicitation and discovery of functional requirements by generating user stories from stakeholder
+        information. The mixed-methods research developed a web-based chatbot prototype that asks guided questions based on elicitation techniques and structures the answers as
+        user stories. The system was validated with requirements engineers working on a real project.
+    students:
+      - name: Fause Carlos Mascarenhas Lustosa Júnior
+        slug:
+      - name: Pedro Henrique Muniz de Oliveira
+        slug:
+    advisor: george_marsicano
+    co_advisors:
+    committee: []
+    location:
+      room:
+      city: Brasília
+      remote_url:
+    tags:
+      - software_requirements
+      - ai
+    project:
+    related_products: []
+    related_publications:
+      - publication_2026_fause_carlos_mascarenhas_lustosa_junior_certificado_de_registro_de_programa_de_comput
+    production_id: 2025-fause-carlos-chatbot-como-ferramenta-de-apoio-a
+    news_slug:
+    narrative:
+      pt:
+      en:
+    status_override:
+    date_approximate: false
+  - id: ana-rocha-2025-12-17
+    type: tcc
+    program: curso_esw
+    scheduled_date: '2025-12-17T00:00:00-03:00'
+    held_date: '2025-12-17'
+    title:
+      pt: 'Identificação de alterações em bases de dados massivas: uma abordagem extensível para bases JSON'
+      en: 'Identifying changes in massive databases: an extensible approach for JSON datasets'
+    summary:
+      pt: >-
+        Propõe e desenvolve uma abordagem extensível para monitorar alterações em registros de arquivos JSON de grande porte, com rastreabilidade sem depender de bancos de dados
+        tradicionais. O método fragmenta os registros de um único arquivo em arquivos isolados, gera identificadores a partir do conteúdo e compara versões por funções hash para
+        identificar o que mudou a cada nova carga. Os testes indicam que a estratégia é uma base sólida para rastrear a integridade de fluxos contínuos de dados.
+      en: >-
+        Proposes and develops an extensible approach for monitoring changes to records in large JSON files, providing traceability without relying on traditional databases. The
+        method splits the records of a single file into isolated files, generates content-based identifiers and compares versions through hash functions to identify what changed
+        with each new data load. Tests indicate that the strategy is a solid foundation for tracking the integrity of continuous data streams.
+    students:
+      - name: Ana Caroline Campos Rocha
+        slug:
+    advisor: andre_lanna
+    co_advisors:
+    committee: []
+    location:
+      room:
+      city: Brasília
+      remote_url:
+    tags:
+      - software_architecture
+    project:
+    related_products: []
+    related_publications: []
+    production_id: 2025-ana-caroline-identificacao-de-alteracoes-em-bases-de
+    news_slug:
+    narrative:
+      pt:
+      en:
+    status_override:
+    date_approximate: false
+  - id: vitor-moraes-2014-06-27
+    type: tcc
+    program: curso_esw
+    scheduled_date: '2014-06-27T00:00:00-03:00'
+    held_date: '2014-06-27'
+    title:
+      pt: 'NTeraction: um storytelling engine para Unity3D'
+      en: 'NTeraction: a storytelling engine for Unity3D'
+    summary:
+      pt: >-
+        Apresenta um motor de storytelling genérico integrado ao motor de jogos Unity3D, adaptável às necessidades de diferentes jogos. O motor ajuda a gerar, organizar e testar
+        o conteúdo não linear das histórias contadas pelos jogos, e permite que o game designer crie e teste esse conteúdo com o mínimo de intervenção de programadores.
+      en: >-
+        Presents a generic storytelling engine integrated into the Unity3D game engine and adaptable to the needs of different games. The engine helps generate, organise and test
+        the non-linear content of the stories games tell, and lets game designers create and test that content with minimal intervention from programmers.
+    students:
+      - name: Vitor Makoto Matayoshi de Moraes
+        slug:
+    advisor: edson_alves_da_costa_junior
+    co_advisors: [andre_lanna]
+    committee: []
+    location:
+      room:
+      city: Brasília
+      remote_url:
+    tags:
+      - software_architecture
+    project:
+    related_products: []
+    related_publications: []
+    production_id: 2014-vitor-makoto-nteraction-um-storytelling-engine-para-unity3d
+    news_slug:
+    narrative:
+      pt:
+      en:
+    status_override:
+    date_approximate: false

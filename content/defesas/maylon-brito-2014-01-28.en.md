@@ -1,5 +1,5 @@
 ---
-title: "Knowledge Transfer in Software Processes in Software Factory Contracting by the Brazilian Federal Government"
+title: "Knowledge transfer in software factory contracting processes by federal public organizations"
 date: 1970-01-01T00:00:00Z
 scheduled_date: 2014-01-28T00:00:00-03:00
 draft: false

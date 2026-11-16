@@ -1,5 +1,5 @@
 ---
-title: "Identificação de requisitos não-funcionais para jogos sérios com foco nas necessidades especiais das crianças com TDAH"
+title: "Requisitos não-funcionais no desenvolvimento de jogos sérios para pessoas com TDAH"
 date: 1970-01-01T00:00:00Z
 scheduled_date: 2022-09-23T00:00:00-03:00
 draft: false

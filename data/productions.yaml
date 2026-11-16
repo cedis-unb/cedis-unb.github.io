@@ -575,6 +575,7 @@ items:
     program: curso_esw
     advisors:
       - cristiane_ramos
+    co_advisors:
       - ricardo_ajax
     url: https://www.bdm.unb.br/handle/10483/42494
     defense_date: 2025-07-22
@@ -981,7 +982,6 @@ items:
     program: curso_esw
     advisors:
       - cristiane_ramos
-      - ricardo_ajax
     url: https://www.bdm.unb.br/handle/10483/40116
     defense_date: 2024-09-16
     year: 2024
@@ -1089,6 +1089,8 @@ items:
     program: curso_esw
     advisors:
       - fabiana_mendes
+    co_advisors:
+      - barros_de_sales_andre
     url: https://www.bdm.unb.br/handle/10483/39807
     defense_date: 2024-03-11
     year: 2024
@@ -2077,6 +2079,7 @@ items:
     program: curso_esw
     advisors:
       - andre_lanna
+    co_advisors:
       - rudi_van_els
     url: https://www.bdm.unb.br/handle/10483/39809
     defense_date: 2023-12-22
@@ -2157,6 +2160,7 @@ items:
     program: curso_esw
     advisors:
       - andre_lanna
+    co_advisors:
       - rudi_van_els
     url: https://www.bdm.unb.br/handle/10483/39189
     defense_date: 2023-07-28
@@ -2165,8 +2169,8 @@ items:
   - authors:
       - Nathalia Lorena Cardoso Dias
     title:
-      pt: '"Por que processos de melhoria de software já definidos não estão sendo utilizados pelas empresas? : uma revisão da literatura'
-      en: Why are already defined software improvement processes not being used by companies? A literature review
+      pt: 'Por que processos de melhoria de software já definidos não estão sendo utilizados pelas empresas? Uma revisão da literatura'
+      en: 'Why are already defined software improvement processes not being used by companies? A literature review'
     summary:
       pt: ''
       en: ''
@@ -2236,6 +2240,7 @@ items:
     program: curso_esw
     advisors:
       - ricardo_ajax
+    co_advisors:
       - cristiane_ramos
     url: https://www.bdm.unb.br/handle/10483/33852
     defense_date: 2022-09-27
@@ -2270,8 +2275,8 @@ items:
       - Gabriel Batista Albino Silva
       - Helena Bretas Goulart
     title:
-      pt: Identificação de requisitos não-funcionais para jogos sérios com foco nas necessidades especiais das crianças com TDAH
-      en: Identification of non-functional requirements for serious games focused on the special needs of children with ADHD
+      pt: 'Requisitos não-funcionais no desenvolvimento de jogos sérios para pessoas com TDAH'
+      en: 'Non-functional requirements in the development of serious games for people with ADHD'
     summary:
       pt: ''
       en: ''
@@ -2317,6 +2322,7 @@ items:
     program: curso_esw
     advisors:
       - andre_lanna
+    co_advisors:
       - rudi_van_els
     url: https://www.bdm.unb.br/handle/10483/33850
     defense_date: 2022-05-09
@@ -2464,6 +2470,7 @@ items:
     program: curso_esw
     advisors:
       - andre_lanna
+    co_advisors:
       - rudi_van_els
     url: https://www.bdm.unb.br/handle/10483/35945
     defense_date: 2023-02-14
@@ -2517,6 +2524,7 @@ items:
     program: curso_esw
     advisors:
       - cristiane_ramos
+    co_advisors:
       - ricardo_ajax
     url: https://www.bdm.unb.br/handle/10483/36164
     defense_date: 2021-11-16
@@ -2892,9 +2900,6 @@ items:
     program: curso_esw
     advisors:
       - cristiane_ramos
-      - sergio_freitas
-    co_advisors:
-      - sergio_freitas
     url: https://bdm.unb.br/handle/10483/34952
     defense_date: 2022-09-26
     year: 2022
@@ -3055,6 +3060,8 @@ items:
     program: curso_esw
     advisors:
       - sergio_freitas
+    co_advisors:
+      - arthur_temporim
     url: https://bdm.unb.br/handle/10483/43473
     defense_date: 2023-12-20
     year: 2023
@@ -3080,7 +3087,6 @@ items:
     program: curso_esw
     advisors:
       - ricardo_ajax
-      - cristiane_ramos
     url: https://www.bdm.unb.br/handle/10483/30373
     defense_date: 2020-12-16
     year: 2020
@@ -3141,6 +3147,7 @@ items:
     program: curso_esw
     advisors:
       - cristiane_ramos
+    co_advisors:
       - ricardo_ajax
     url: https://www.bdm.unb.br/handle/10483/30204
     defense_date: 2020-12-17
@@ -3846,6 +3853,8 @@ items:
     program: curso_esw
     advisors:
       - andre_lanna
+    co_advisors:
+      - cristiane_ramos
     url: https://www.bdm.unb.br/handle/10483/23055
     defense_date: 2018-12-11
     year: 2018
@@ -3872,6 +3881,7 @@ items:
     program: curso_esw
     advisors:
       - cristiane_ramos
+    co_advisors:
       - ricardo_ajax
     url: https://www.bdm.unb.br/handle/10483/23047
     defense_date: 2019-07-12
@@ -5519,6 +5529,8 @@ items:
     program: ''
     advisors:
       - sergio_freitas
+    co_advisors:
+      - wander_cleber_maria_pereira_da_silva
     url: https://www.bdm.unb.br/handle/10483/19802
     defense_date: 2016-12-07
     year: 2016
@@ -5640,7 +5652,6 @@ items:
     program: curso_esw
     advisors:
       - sergio_freitas
-      - fabiana_mendes
     url: https://www.bdm.unb.br/handle/10483/14867
     defense_date: 2016-07-07
     year: 2016
@@ -5983,32 +5994,6 @@ items:
     year: 2015
     defesa_id: thiago-honorato-2015-06-15
   - authors:
-      - Tiago Querubim
-    title:
-      pt: Proposta de um conjunto de competências para um Scrum Master
-      en: Proposal for a Set of Skills for a Scrum Master
-    summary:
-      pt: ''
-      en: ''
-    book_title: ''
-    volume: ''
-    doi_isbn: ''
-    journal_event: ''
-    location: ''
-    pages: ''
-    publisher: Biblioteca Central da Universidade de Brasília
-    tags:
-      - soft_skills
-      - teamwork
-    type: tcc
-    program: curso_esw
-    advisors:
-      - george_marsicano
-    url: https://www.bdm.unb.br/handle/10483/9547
-    defense_date: 2014-11-27
-    year: 2015
-    defesa_id: tiago-querubim-2014-11-27
-  - authors:
       - Victor Hugo Alves de Carvalho
     title:
       pt: Análise de impacto do uso de técnicas de programação no desempenho de aplicações AndroidTM
@@ -6088,32 +6073,6 @@ items:
     year: 2013
     defesa_id: breno-cruz-2013-12-11
   - authors:
-      - Giancarllo Soares
-    title:
-      pt: Proposta de um conjunto de competências para um time ágil
-      en: Proposal for a Set of Skills for an Agile Team
-    summary:
-      pt: ''
-      en: ''
-    book_title: ''
-    volume: ''
-    doi_isbn: ''
-    journal_event: ''
-    location: ''
-    pages: ''
-    publisher: Biblioteca Central da Universidade de Brasília
-    tags:
-      - soft_skills
-      - teamwork
-    type: tcc
-    program: curso_esw
-    advisors:
-      - george_marsicano
-    url: https://www.bdm.unb.br/handle/10483/8215
-    defense_date: 2014-06-24
-    year: 2014
-    defesa_id: giancarllo-soares-2014-06-24
-  - authors:
       - Guilherme Fay Vergara
     title:
       pt: Implantação de softwares como serviço em uma nuvem privada para a fábrica de software da FCTE
@@ -6141,6 +6100,7 @@ items:
     program: curso_esw
     advisors:
       - sergio_freitas
+    co_advisors:
       - edna_canedo
     url: https://www.bdm.unb.br/handle/10483/8094
     defense_date: 2014-06-25
@@ -6209,32 +6169,6 @@ items:
     year: 2014
     defesa_id: ramaiane-silva-2014-11-27
   - authors:
-      - Vinicius Brito
-    title:
-      pt: Proposta de um conjunto de competências para um Product Owner
-      en: Proposal for a Set of Skills for a Product Owner
-    summary:
-      pt: ''
-      en: ''
-    book_title: ''
-    volume: ''
-    doi_isbn: ''
-    journal_event: ''
-    location: ''
-    pages: ''
-    publisher: Biblioteca Central da Universidade de Brasília
-    tags:
-      - soft_skills
-      - teamwork
-    type: tcc
-    program: curso_esw
-    advisors:
-      - george_marsicano
-    url: https://www.bdm.unb.br/handle/10483/7964
-    defense_date: 2014-06-24
-    year: 2014
-    defesa_id: vinicius-brito-2014-06-24
-  - authors:
       - Antonio Bezerra da Silva Júnior
     title:
       pt: 'Apoio ferramental ao processo de garantia da qualidade : QUASAR - Qualidade de Software e Avaliação de Resultados'
@@ -6256,6 +6190,8 @@ items:
     program: curso_esw
     advisors:
       - cristiane_ramos
+    co_advisors:
+      - andre_lanna
     url: https://www.bdm.unb.br/handle/10483/6610
     defense_date: 2013-07-23
     year: 2013
@@ -6794,6 +6730,7 @@ items:
     program: curso_esw2
     advisors:
       - cristiane_ramos
+    co_advisors:
       - ricardo_ajax
     url: https://bdm.unb.br/handle/10483/38579
     defense_date: 2023-12-21
@@ -6821,6 +6758,7 @@ items:
     program: curso_esw2
     advisors:
       - marilia_miranda
+    co_advisors:
       - ricardo_ajax
     url: https://bdm.unb.br/handle/10483/38580
     defense_date: 2023
@@ -6847,37 +6785,12 @@ items:
     program: curso_esw2
     advisors:
       - cristiane_ramos
+    co_advisors:
       - ricardo_ajax
     url: https://bdm.unb.br/handle/10483/39358
     defense_date: 2023-12-21
     year: 2023
     defesa_id: ricardo-loureiro-2023-12-21
-  - authors:
-      - Nathalia Lorena Cardoso Dias
-    title:
-      pt: Por que processos de melhoria de software já definidos não estão sendo utilizados pelas empresas? Uma revisão da literatura
-      en: Why are already defined software improvement processes not being used by companies? A literature review
-    summary:
-      pt: ''
-      en: ''
-    book_title: ''
-    volume: ''
-    doi_isbn: ''
-    journal_event: ''
-    location: ''
-    pages: ''
-    publisher: Biblioteca Central da Universidade de Brasília
-    tags:
-      - software_quality
-    type: tcc
-    program: curso_esw2
-    advisors:
-      - cristiane_ramos
-      - fabiana_mendes
-    url: https://bdm.unb.br/handle/10483/38582
-    defense_date: 2023-03-04
-    year: 2024
-    defesa_id: nathalia-dias-2023-03-04-2
   - authors:
       - Júlia Farias Sousa
     title:
@@ -7584,6 +7497,7 @@ items:
     program: curso_esw
     advisors:
       - sergio_freitas
+    co_advisors:
       - celia_higawa
     url: https://bdm.unb.br/handle/10483/45291
     defense_date: 2025-12-16
@@ -7651,7 +7565,7 @@ items:
     url: ''
     year: 2025
   - authors:
-      - Marcus Vinicius P. Martins
+      - Marcus Vinícius Paiva Martins
     title:
       pt: 'OpenBatch: serviço de processamento em lote para nuvem privada'
       en: 'OpenBatch: batch processing service for private cloud'
@@ -7671,9 +7585,10 @@ items:
     program: curso_esw
     advisors:
       - daniel_sundfeld
-    url: ''
+    url: https://bdm.unb.br/handle/10483/46281
+    defense_date: 2025-11-21
     year: 2025
-    defesa_id: marcus-martins-2025-06-15
+    defesa_id: marcus-martins-2025-11-21
   - authors:
       - Sandro Leite Furtado
     title:
@@ -7724,9 +7639,10 @@ items:
     program: curso_esw
     advisors:
       - george_marsicano
-    url: ''
+    url: https://bdm.unb.br/handle/10483/45302
+    defense_date: 2025-02-19
     year: 2025
-    defesa_id: brenno-paulo-2025-06-15
+    defesa_id: brenno-paulo-2025-02-19
   - authors:
       - Yuri Alves Bacarias
     title:
@@ -7775,8 +7691,10 @@ items:
     program: curso_esw
     advisors:
       - cristiane_ramos
+    co_advisors:
       - andre_lanna
     url: https://bdm.unb.br/handle/10483/45343
+    defense_date: 2025-12-15
     year: 2025
     defesa_id: luana-torres-2025-12-15
   - authors:
@@ -7853,9 +7771,10 @@ items:
     program: curso_esw
     advisors:
       - daniel_sundfeld
-    url: ''
-    year: 2024
-    defesa_id: itallo-gravina-2024-06-15
+    url: https://bdm.unb.br/handle/10483/45296
+    defense_date: 2025-12-11
+    year: 2025
+    defesa_id: itallo-gravina-2025-12-11
   - authors:
       - Francisca de Fátima Araújo Lucena
       - Mariana Guedes da Silva
@@ -8029,10 +7948,10 @@ items:
     year: 2020
     defesa_id: eneias-oliveira-2020-06-15
   - authors:
-      - Vinícius Maia de Brito
+      - Vinicius Maia de Brito
     title:
-      pt: Proposta de um conjunto de competências para o Product Owner
-      en: Proposal of a Set of Competencies for the Product Owner
+      pt: 'Proposta de um conjunto de competências para um Product Owner'
+      en: 'Proposal for a Set of Skills for a Product Owner'
     summary:
       pt: ''
       en: ''
@@ -8046,19 +7965,22 @@ items:
     tags:
       - software_requirements
       - teamwork
+      - soft_skills
     type: tcc
     program: curso_esw
     advisors:
       - george_marsicano
+    co_advisors:
+      - wander_cleber_maria_pereira_da_silva
     url: https://bdm.unb.br/handle/10483/7964
     defense_date: 2014-06-24
     year: 2014
-    defesa_id: vinicius-brito-2014-06-24-2
+    defesa_id: vinicius-brito-2014-06-24
   - authors:
       - Giancarllo Helion Frota Soares
     title:
-      pt: Proposta de um conjunto de competências para o Time Ágil
-      en: Proposal of a Set of Competencies for the Agile Team
+      pt: 'Proposta de um conjunto de competências para um time ágil'
+      en: 'Proposal for a Set of Skills for an Agile Team'
     summary:
       pt: ''
       en: ''
@@ -8071,14 +7993,17 @@ items:
     publisher: Biblioteca Central da Universidade de Brasília
     tags:
       - teamwork
+      - soft_skills
     type: tcc
     program: curso_esw
     advisors:
       - george_marsicano
+    co_advisors:
+      - wander_cleber_maria_pereira_da_silva
     url: https://bdm.unb.br/handle/10483/8215
     defense_date: 2014-06-24
     year: 2014
-    defesa_id: giancarllo-soares-2014-06-24-2
+    defesa_id: giancarllo-soares-2014-06-24
   - authors:
       - Tiago dos Santos Querubim
     title:
@@ -8096,6 +8021,7 @@ items:
     publisher: Biblioteca Central da Universidade de Brasília
     tags:
       - teamwork
+      - soft_skills
     type: tcc
     program: curso_esw
     advisors:
@@ -8103,12 +8029,12 @@ items:
     url: https://bdm.unb.br/handle/10483/9547
     defense_date: 2014-11-27
     year: 2014
-    defesa_id: tiago-querubim-2014-11-27-2
+    defesa_id: tiago-querubim-2014-11-27
   - authors:
-      - Maylon Feliz Brito
+      - Maylon Félix Brito
     title:
-      pt: Transferência de conhecimento em processos de software nas contratações de fábricas pelo governo federal brasileiro
-      en: Knowledge Transfer in Software Processes in Software Factory Contracting by the Brazilian Federal Government
+      pt: 'Transferência de conhecimento em processos de contratação de fábricas de software por organizações públicas federais'
+      en: 'Knowledge transfer in software factory contracting processes by federal public organizations'
     summary:
       pt: ''
       en: ''
@@ -8124,7 +8050,7 @@ items:
     type: tcc
     program: curso_esw
     advisors:
-      - george_marsicano
+      - rejane_maria_da_costa_figueiredo
     url: https://bdm.unb.br/handle/10483/6967
     defense_date: 2014-01-28
     year: 2014
@@ -9887,7 +9813,9 @@ items:
     tags: [education, gamification, active_learning]
     type: tcc
     program: curso_esw
-    advisors: [wander_cleber_maria_pereira_da_silva, ricardo_ajax]
+    advisors: [wander_cleber_maria_pereira_da_silva]
+    co_advisors:
+      - ricardo_ajax
     url: https://bdm.unb.br/handle/10483/30716
     defense_date: 2021-11-17
     year: 2021
@@ -9909,7 +9837,9 @@ items:
     tags: [social_software, software_quality]
     type: tcc
     program: curso_esw
-    advisors: [ricardo_ajax, marilia_miranda]
+    advisors: [ricardo_ajax]
+    co_advisors:
+      - marilia_miranda
     url: https://bdm.unb.br/handle/10483/45297
     defense_date: 2025-12-02
     year: 2025
@@ -9936,6 +9866,7 @@ items:
     program: curso_esw
     advisors:
       - wander_cleber_maria_pereira_da_silva
+    co_advisors:
       - sergio_freitas
     url: https://bdm.unb.br/handle/10483/19810
     defense_date: 2016-12-07
@@ -9966,5 +9897,158 @@ items:
     advisors:
       - andre_lanna
     url: https://bdm.unb.br/handle/10483/45338
+    defense_date: 2025-12-18
     year: 2025
     defesa_id: guilherme-matheus-2025-12-18
+  - authors:
+      - Gabriel Marcolino Rodrigues
+      - Shaíne Aparecida Cardoso de Oliveira
+    title:
+      pt: 'Gamificação na educação: desenvolvimento de um aplicativo para prevenção da violência na infância voltado para pais e educadores'
+      en: 'Gamification in education: development of an application for preventing childhood violence aimed at parents and educators'
+    summary:
+      pt: Desenvolve um aplicativo mobile gamificado, com funcionamento offline, a partir do manual de boas práticas do projeto Pró-vida e Eu Me Protejo, parceria entre a instituição Pró-Vida e o projeto Eu Me
+        Protejo. O aplicativo leva a pais, tutores e educadores o conteúdo de prevenção da violência na infância em fases, com recompensas à medida que o conhecimento avança. O estudo adota pesquisa-ação com
+        abordagem mista para analisar como a gamificação pode apoiar a educação e a prevenção da violência na infância.
+      en: Develops an offline gamified mobile application based on the good-practices manual of the Pró-vida e Eu Me Protejo project, a partnership between the Pró-Vida institution and the Eu Me Protejo
+        project. The app brings childhood-violence prevention content to parents, guardians and educators in levels, with rewards as their knowledge grows. The study uses action research with a mixed-methods
+        approach to analyse how gamification can support education and the prevention of childhood violence.
+    book_title: ''
+    volume: ''
+    doi_isbn: ''
+    journal_event: ''
+    location: ''
+    pages: ''
+    publisher: Biblioteca Central da Universidade de Brasília
+    tags:
+      - gamification
+      - social_software
+      - project_software_bem
+    type: tcc
+    program: curso_esw
+    advisors:
+      - george_marsicano
+    url: https://bdm.unb.br/handle/10483/45298
+    defense_date: 2025-12-11
+    year: 2025
+    defesa_id: gabriel-shaine-2025-12-11
+  - authors:
+      - Victor de Souza Cabral
+    title:
+      pt: 'Prevenção ao abuso sexual infantil através da gamificação: desenvolvimento de um aplicativo educativo para crianças'
+      en: 'Preventing child sexual abuse through gamification: development of an educational application for children'
+    summary:
+      pt: Propõe a gamificação como estratégia motivacional para levar às crianças o conteúdo das duas principais cartilhas do projeto Eu Me Protejo, de prevenção ao abuso sexual infantil. O resultado é um
+        aplicativo mobile gamificado para crianças de 4 a 10 anos, com uso mediado por pais, responsáveis ou educadores. A metodologia combinou pesquisa-ação com especialistas, definição de requisitos e
+        desenvolvimento com práticas de gamificação e linguagem simples, alinhado aos materiais do projeto.
+      en: Proposes gamification as a motivational strategy to bring children the content of the two main booklets of the Eu Me Protejo project on preventing child sexual abuse. The result is a gamified mobile
+        application for children aged 4 to 10, used with the mediation of parents, guardians or educators. The methodology combined action research with specialists, requirements definition and development
+        using gamification practices and plain language, aligned with the project's materials.
+    book_title: ''
+    volume: ''
+    doi_isbn: ''
+    journal_event: ''
+    location: ''
+    pages: ''
+    publisher: Biblioteca Central da Universidade de Brasília
+    tags:
+      - gamification
+      - social_software
+      - project_software_bem
+    type: tcc
+    program: curso_esw
+    advisors:
+      - george_marsicano
+    url: https://bdm.unb.br/handle/10483/45349
+    defense_date: 2025-12-09
+    year: 2025
+    defesa_id: victor-cabral-2025-12-09
+  - authors:
+      - Fause Carlos Mascarenhas Lustosa Júnior
+      - Pedro Henrique Muniz de Oliveira
+    title:
+      pt: 'Chatbot como ferramenta de apoio à engenharia de requisitos'
+      en: 'Chatbot as a support tool for requirements engineering'
+    summary:
+      pt: Investiga como chatbots baseados em grandes modelos de linguagem podem apoiar a elicitação e a descoberta de requisitos funcionais, gerando histórias de usuário a partir das informações dos
+        stakeholders. A pesquisa, de abordagem mista, desenvolveu um protótipo de chatbot com interface web que conduz perguntas guiadas com base em técnicas de elicitação e estrutura as respostas como
+        histórias de usuário. O sistema foi validado com engenheiros de requisitos que atuam em um projeto real.
+      en: Investigates how chatbots based on large language models can support the elicitation and discovery of functional requirements by generating user stories from stakeholder information. The mixed-methods
+        research developed a web-based chatbot prototype that asks guided questions based on elicitation techniques and structures the answers as user stories. The system was validated with requirements
+        engineers working on a real project.
+    book_title: ''
+    volume: ''
+    doi_isbn: ''
+    journal_event: ''
+    location: ''
+    pages: ''
+    publisher: Biblioteca Central da Universidade de Brasília
+    tags:
+      - software_requirements
+      - ai
+    type: tcc
+    program: curso_esw
+    advisors:
+      - george_marsicano
+    url: https://bdm.unb.br/handle/10483/45336
+    defense_date: 2025-12-09
+    year: 2025
+    defesa_id: fause-pedro-2025-12-09
+  - authors:
+      - Ana Caroline Campos Rocha
+    title:
+      pt: 'Identificação de alterações em bases de dados massivas: uma abordagem extensível para bases JSON'
+      en: 'Identifying changes in massive databases: an extensible approach for JSON datasets'
+    summary:
+      pt: Propõe e desenvolve uma abordagem extensível para monitorar alterações em registros de arquivos JSON de grande porte, com rastreabilidade sem depender de bancos de dados tradicionais. O método
+        fragmenta os registros de um único arquivo em arquivos isolados, gera identificadores a partir do conteúdo e compara versões por funções hash para identificar o que mudou a cada nova carga. Os testes
+        indicam que a estratégia é uma base sólida para rastrear a integridade de fluxos contínuos de dados.
+      en: Proposes and develops an extensible approach for monitoring changes to records in large JSON files, providing traceability without relying on traditional databases. The method splits the records of a
+        single file into isolated files, generates content-based identifiers and compares versions through hash functions to identify what changed with each new data load. Tests indicate that the strategy is
+        a solid foundation for tracking the integrity of continuous data streams.
+    book_title: ''
+    volume: ''
+    doi_isbn: ''
+    journal_event: ''
+    location: ''
+    pages: ''
+    publisher: Biblioteca Central da Universidade de Brasília
+    tags:
+      - software_architecture
+    type: tcc
+    program: curso_esw
+    advisors:
+      - andre_lanna
+    url: https://bdm.unb.br/handle/10483/45292
+    defense_date: 2025-12-17
+    year: 2025
+    defesa_id: ana-rocha-2025-12-17
+  - authors:
+      - Vitor Makoto Matayoshi de Moraes
+    title:
+      pt: 'NTeraction: um storytelling engine para Unity3D'
+      en: 'NTeraction: a storytelling engine for Unity3D'
+    summary:
+      pt: Apresenta um motor de storytelling genérico integrado ao motor de jogos Unity3D, adaptável às necessidades de diferentes jogos. O motor ajuda a gerar, organizar e testar o conteúdo não linear das
+        histórias contadas pelos jogos, e permite que o game designer crie e teste esse conteúdo com o mínimo de intervenção de programadores.
+      en: Presents a generic storytelling engine integrated into the Unity3D game engine and adaptable to the needs of different games. The engine helps generate, organise and test the non-linear content of the
+        stories games tell, and lets game designers create and test that content with minimal intervention from programmers.
+    book_title: ''
+    volume: ''
+    doi_isbn: ''
+    journal_event: ''
+    location: ''
+    pages: ''
+    publisher: Biblioteca Central da Universidade de Brasília
+    tags:
+      - software_architecture
+    type: tcc
+    program: curso_esw
+    advisors:
+      - edson_alves_da_costa_junior
+    co_advisors:
+      - andre_lanna
+    url: https://bdm.unb.br/handle/10483/7994
+    defense_date: 2014-06-27
+    year: 2014
+    defesa_id: vitor-moraes-2014-06-27

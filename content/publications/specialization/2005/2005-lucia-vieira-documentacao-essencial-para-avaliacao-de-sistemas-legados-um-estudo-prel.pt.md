@@ -7,7 +7,7 @@ translationKey: publication_2005_lucia_vieira_documentacao_essencial_para_avalia
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2005_lucia_vieira_documentacao_essencial_para_avaliacao_de_sistemas_legados_um_estudo_prel
-publication_index: 339
+publication_index: 335
 publication_group: specialization
 publication_type: specialization
 schema_type: Thesis

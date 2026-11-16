@@ -8,7 +8,7 @@ translationKey: publication_2026_lucas_linard_corporate_technical_debt_managemen
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2026_lucas_linard_corporate_technical_debt_management_at_scale_results_from_implementing_a
-publication_index: 332
+publication_index: 328
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle

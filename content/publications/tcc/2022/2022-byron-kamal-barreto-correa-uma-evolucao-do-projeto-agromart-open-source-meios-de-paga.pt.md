@@ -27,7 +27,6 @@ tags:
 - project_agromart
 advisors:
 - andre_lanna
-- rudi_van_els
 doi_isbn: ''
 source_title: ''
 publisher: Biblioteca Central da Universidade de Brasília
@@ -46,4 +45,6 @@ bibtex: "@mastersthesis{2022-byron-kamal-barreto-correa-uma-evolucao-do-projeto-
   }"
 aliases:
 - /publications/2022-byron-kamal-barreto-correa-uma-evolucao-do-projeto-agromart-open-source-meios-de-paga/
+co_advisors:
+- rudi_van_els
 ---

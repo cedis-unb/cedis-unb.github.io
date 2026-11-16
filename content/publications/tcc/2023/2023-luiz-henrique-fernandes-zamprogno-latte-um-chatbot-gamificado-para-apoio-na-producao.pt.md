@@ -45,4 +45,6 @@ bibtex: "@mastersthesis{2023-luiz-henrique-fernandes-zamprogno-latte-um-chatbot-
   }"
 aliases:
 - /publications/2023-luiz-henrique-fernandes-zamprogno-latte-um-chatbot-gamificado-para-apoio-na-producao/
+co_advisors:
+- arthur_temporim
 ---

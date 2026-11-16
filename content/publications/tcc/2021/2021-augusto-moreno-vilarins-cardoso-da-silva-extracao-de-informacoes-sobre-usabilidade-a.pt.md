@@ -26,7 +26,6 @@ tags:
 - software_quality
 advisors:
 - cristiane_ramos
-- ricardo_ajax
 doi_isbn: ''
 source_title: ''
 publisher: Biblioteca Central da Universidade de Brasília
@@ -46,4 +45,6 @@ bibtex: "@mastersthesis{2021-augusto-moreno-vilarins-cardoso-da-silva-extracao-d
   \ Central da Universidade de Brasília}\n}"
 aliases:
 - /publications/2021-augusto-moreno-vilarins-cardoso-da-silva-extracao-de-informacoes-sobre-usabilidade-a/
+co_advisors:
+- ricardo_ajax
 ---

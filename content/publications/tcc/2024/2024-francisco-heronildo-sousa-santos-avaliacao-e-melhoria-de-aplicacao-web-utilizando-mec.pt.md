@@ -42,4 +42,6 @@ bibtex: "@mastersthesis{2024-francisco-heronildo-sousa-santos-avaliacao-e-melhor
   }"
 aliases:
 - /publications/2024-francisco-heronildo-sousa-santos-avaliacao-e-melhoria-de-aplicacao-web-utilizando-mec/
+co_advisors:
+- barros_de_sales_andre
 ---

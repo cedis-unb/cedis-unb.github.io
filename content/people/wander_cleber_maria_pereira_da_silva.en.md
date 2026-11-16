@@ -16,7 +16,7 @@ matched_productions:
 - title: 'Fast Track for Collaborative Solutions: A Methodology for Public Service Design Workshops Supported by LLMs'
   year: 2025
   type: conference
-- title: 'Reflections on Collaborative Design: Lessons from Creating a Digital Public Service App'
+- title: 'Co-design and Co-creation in Digital Public Services: A Service Design Approach'
   year: 2024
   type: workshop
 - title: A Systematic Review of Indicators for Evaluating the Effectiveness of Digital Public Services

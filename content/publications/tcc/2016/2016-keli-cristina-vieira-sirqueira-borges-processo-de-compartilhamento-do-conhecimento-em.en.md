@@ -7,7 +7,7 @@ translationKey: publication_2016_keli_cristina_vieira_sirqueira_borges_processo_
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2016_keli_cristina_vieira_sirqueira_borges_processo_de_compartilhamento_do_conhecimento_em
-publication_index: 349
+publication_index: 345
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis
@@ -21,7 +21,6 @@ tags:
 - teamwork
 advisors:
 - wander_cleber_maria_pereira_da_silva
-- sergio_freitas
 doi_isbn: ''
 source_title: ''
 publisher: Biblioteca Central da Universidade de Brasília
@@ -43,6 +42,8 @@ bibtex: "@mastersthesis{2016-keli-cristina-vieira-sirqueira-borges-processo-de-c
   \ Brasil}\n}"
 aliases:
 - /publications/2016-keli-cristina-vieira-sirqueira-borges-processo-de-compartilhamento-do-conhecimento-em/
+co_advisors:
+- sergio_freitas
 ---
 ## Abstract
 

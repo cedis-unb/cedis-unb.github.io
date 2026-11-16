@@ -60,6 +60,8 @@ bibtex: "@mastersthesis{2016-attany-nathaly-lima-araujo-processo-de-construcao-d
   \ = {Biblioteca Central da Universidade de Brasília}\n}"
 aliases:
 - /publications/2016-attany-nathaly-lima-araujo-processo-de-construcao-de-uma-base-de-experiencias-para-la/
+co_advisors:
+- wander_cleber_maria_pereira_da_silva
 ---
 ## Resumo
 

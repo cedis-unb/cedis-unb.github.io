@@ -7,7 +7,7 @@ translationKey: publication_2025_alexia_naara_da_silva_cardoso_aplicativo_tradut
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2025_alexia_naara_da_silva_cardoso_aplicativo_tradutor_de_linguas_indigenas_munduruku
-publication_index: 259
+publication_index: 255
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis
@@ -23,7 +23,6 @@ tags:
 - social_software
 advisors:
 - sergio_freitas
-- celia_higawa
 doi_isbn: ''
 source_title: ''
 publisher: Biblioteca Central da Universidade de Brasília
@@ -41,4 +40,6 @@ bibtex: "@mastersthesis{2025-alexia-naara-da-silva-cardoso-aplicativo-tradutor-d
   \ da Universidade de Brasília}\n}"
 aliases:
 - /publications/2025-alexia-naara-da-silva-cardoso-aplicativo-tradutor-de-linguas-indigenas-munduruku/
+co_advisors:
+- celia_higawa
 ---

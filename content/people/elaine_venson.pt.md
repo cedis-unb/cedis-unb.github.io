@@ -16,7 +16,7 @@ matched_productions:
 - title: 'Reflections on Collaborative Design: Lessons from Creating a Digital Public Service App'
   year: 2025
   type: conference
-- title: 'Reflections on Collaborative Design: Lessons from Creating a Digital Public Service App'
+- title: 'Co-design and Co-creation in Digital Public Services: A Service Design Approach'
   year: 2024
   type: workshop
 - title: TBL as an active learning-teaching methodology for software engineering courses

@@ -7,4 +7,6 @@ language: en
 translationKey: "defesa-nathalia-dias-2023-03-04"
 canonical_source: data/defesas.yaml
 defesa_id: "nathalia-dias-2023-03-04"
+aliases:
+  - /defesas/nathalia-dias-2023-03-04-2/
 ---

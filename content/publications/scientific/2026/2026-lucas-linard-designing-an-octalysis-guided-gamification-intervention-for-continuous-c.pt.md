@@ -8,7 +8,7 @@ translationKey: publication_2026_lucas_linard_designing_an_octalysis_guided_gami
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2026_lucas_linard_designing_an_octalysis_guided_gamification_intervention_for_continuous_c
-publication_index: 333
+publication_index: 329
 publication_group: scientific
 publication_type: preprint
 schema_type: ScholarlyArticle

@@ -26,7 +26,6 @@ tags:
 - project_agromart
 advisors:
 - andre_lanna
-- rudi_van_els
 doi_isbn: ''
 source_title: ''
 publisher: Biblioteca Central da Universidade de Brasília
@@ -44,4 +43,6 @@ bibtex: "@mastersthesis{2023-felipe-boccardi-silva-agustini-modulo-de-integracao
   \ = {2023},\n  publisher = {Biblioteca Central da Universidade de Brasília}\n}"
 aliases:
 - /publications/2023-felipe-boccardi-silva-agustini-modulo-de-integracao-de-pagamento-e-manutencao-do-soft/
+co_advisors:
+- rudi_van_els
 ---
