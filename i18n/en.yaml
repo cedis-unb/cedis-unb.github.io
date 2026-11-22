@@ -48,8 +48,8 @@ rights: "All rights reserved."
 curso_esw: "Senior Project (Bachelor of Software Engineering) - University of Brasília
   (Brazil)"
 curso_esw2: "Bachelor of Software Engineering - University of Brasília (Brazil)"
-curso_ppca: "Master's Thesis in Applied Computing, University of Brasília (Brazil)"
-curso_ppca_doutorado: "PhD Thesis in Applied Computing, University of Brasília (Brazil)"
+curso_ppca: "Master's Dissertation (Professional Master's in Applied Computing), University of Brasília (Brazil)"
+curso_ppca_doutorado: "Doctoral Thesis (Professional Doctorate in Applied Computing), University of Brasília (Brazil)"
 curso_ppgi: "Master's Thesis in Informatics, Federal University of Espirito Santo
   (Brazil)"
 curso_ppgee: "PhD Thesis, Federal University of Espirito Santo (Brazil)"
@@ -563,6 +563,11 @@ people_cta_opportunities: "See opportunities"
 people_cta_email: "Send email"
 people_cta_contact: "Contact CEDIS"
 people_cta_email_subject: "Interest in supervision/collaboration — CEDIS"
+people_cta_graduate_note: "Master's and doctoral supervision is through PPCA/UnB, a professional
+  programme with its own criteria: employment in the field, residence in Brazil and
+  in-person classes in Brasília. Check before you write:"
+people_cta_graduate_masters: "professional master's"
+people_cta_graduate_doctorate: "professional doctorate"
 people_highlights_eyebrow: "Fast read"
 people_highlights_heading: "Featured activity"
 people_highlights_focus: "Research fronts"

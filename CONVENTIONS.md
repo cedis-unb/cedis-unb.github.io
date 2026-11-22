@@ -389,6 +389,23 @@ As trilhas permanentes de participação ficam em `content/junte-se/`:
 `iniciacao-cientifica`, `tcc`, `mestrado`, `doutorado`, `extensao`,
 `parcerias` e `proponha-projeto`.
 
+**Mestrado e doutorado são do PPCA, e são profissionais.** As trilhas
+`mestrado` e `doutorado` descrevem o Mestrado e o Doutorado *Profissionais* em
+Computação Aplicada (PPCA/UnB), não cursos acadêmicos de dedicação integral.
+Quem seleciona é o PPCA, por edital; o CEDIS só orienta quem foi aprovado. As
+duas páginas resumem critérios do edital vigente (vínculo de trabalho em TI ou
+gestão de risco, residência no Brasil, carta de liberação do empregador, aulas
+presenciais no Darcy Ribeiro, linha de pesquisa) e citam o número do edital em
+`requirements_source`. A cada novo edital, confira os PDFs em
+`ppca.unb.br/category/editais/` e atualize as quatro páginas (PT e EN): vagas,
+datas, taxa, pesos e linhas mudam. Não escreva critério que não esteja no
+edital, e não chame o doutorado de "PhD".
+
+O frontmatter das trilhas aceita `requirements` (lista de critérios-chave) e
+`requirements_source` (de onde vieram). `layouts/junte-se/single.html` mostra
+os dois no painel de "Para quem é". O aviso equivalente nos perfis de
+pesquisador vem de `people_cta_graduate_note` (i18n), em `people/single.html`.
+
 O índice de Oportunidades é canônico em `layouts/opportunities/list.html`.
 Não reintroduzir um template concorrente em `_default/` para a mesma
 rota; regressões no HTML gerado devem ser capturadas por

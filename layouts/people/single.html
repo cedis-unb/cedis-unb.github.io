@@ -678,6 +678,15 @@
           <div class="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-primary-700 dark:text-primary-200">{{ i18n "people_cta_supervision_eyebrow" }}</div>
           <h2 class="mt-3 text-2xl font-black tracking-tight text-gray-950 dark:text-white md:text-3xl">{{ i18n "people_cta_supervision_heading" }}</h2>
           <p class="mt-3 max-w-2xl text-base leading-7 text-gray-700 dark:text-white/80">{{ i18n "people_cta_supervision_body" }}</p>
+          {{/* Mestrado e doutorado passam pelo edital do PPCA (programa
+               profissional). O aviso fica antes do botão de e-mail para que o
+               candidato veja os critérios antes de escrever. */}}
+          <p class="mt-3 max-w-2xl text-sm leading-6 text-gray-600 dark:text-white/70">
+            {{ i18n "people_cta_graduate_note" }}
+            <a href="{{ "/junte-se/mestrado/" | relLangURL }}" class="font-semibold text-primary-700 underline underline-offset-2 hover:text-primary-800 dark:text-primary-200 dark:hover:text-primary-100">{{ i18n "people_cta_graduate_masters" }}</a>
+            <span aria-hidden="true">·</span>
+            <a href="{{ "/junte-se/doutorado/" | relLangURL }}" class="font-semibold text-primary-700 underline underline-offset-2 hover:text-primary-800 dark:text-primary-200 dark:hover:text-primary-100">{{ i18n "people_cta_graduate_doctorate" }}</a>
+          </p>
           <div class="mt-6 flex flex-wrap gap-3">
             <a href="{{ "/oportunidades/" | relLangURL }}" class="inline-flex items-center rounded-full bg-primary-700 px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-primary-600/25 transition-colors hover:bg-primary-800">
               {{ i18n "people_cta_opportunities" }}
