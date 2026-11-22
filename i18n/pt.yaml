@@ -559,9 +559,10 @@ people_cta_opportunities: "Ver oportunidades"
 people_cta_email: "Enviar email"
 people_cta_contact: "Falar com o CEDIS"
 people_cta_email_subject: "Interesse em orientação/colaboração — CEDIS"
-people_cta_graduate_note: "Mestrado e doutorado são pelo PPCA/UnB, um programa profissional
-  com critérios próprios: vínculo de trabalho na área, residência no Brasil e aulas
-  presenciais em Brasília. Confira antes de escrever:"
+people_cta_graduate_note: "Mestrado e doutorado são pelo PPCA/UnB, um programa profissional.
+  Os editais e as normas de ingresso são de responsabilidade do PPCA e exigem vínculo
+  de trabalho na área, residência no Brasil e aulas presenciais em Brasília. Confira
+  antes de escrever:"
 people_cta_graduate_masters: "mestrado profissional"
 people_cta_graduate_doctorate: "doutorado profissional"
 people_highlights_eyebrow: "Leitura rápida"

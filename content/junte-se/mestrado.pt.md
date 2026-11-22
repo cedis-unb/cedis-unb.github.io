@@ -21,9 +21,9 @@ secondary_url: "/categories/researcher/"
 ---
 O mestrado orientado por pesquisadores do CEDIS é o **Mestrado Profissional em Computação Aplicada**, do Programa de Pós-Graduação em Computação Aplicada (PPCA/UnB). Não é um mestrado acadêmico de dedicação integral: o curso é feito para quem já trabalha na área e quer pesquisar um problema do próprio trabalho.
 
-Quem seleciona os alunos é o PPCA, por edital próprio. O pesquisador do CEDIS orienta quem foi aprovado, mas não admite candidatos por conta própria. Por isso, confira os critérios abaixo **antes** de escrever para um possível orientador.
+Os editais e todas as normas de ingresso são de responsabilidade do PPCA, que conduz a seleção. O pesquisador do CEDIS orienta quem foi aprovado, mas não define os critérios nem admite candidatos por conta própria. Por isso, confira os critérios abaixo **antes** de escrever para um possível orientador.
 
-**Atenção:** esta página resume o Edital PPCA nº 01/2026. Os critérios podem mudar a cada edital, e a fonte oficial é sempre o [site do PPCA](https://ppca.unb.br/).
+**Atenção:** esta página resume o Edital PPCA nº 01/2026. Os critérios podem mudar a cada edital, e a fonte oficial é sempre o [site do PPCA](https://ppca.unb.br/). Dúvidas sobre o edital e sobre as normas de ingresso devem ser tratadas com o PPCA.
 
 ## Confira se o programa serve para você
 

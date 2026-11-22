@@ -21,9 +21,9 @@ secondary_url: "/categories/researcher/"
 ---
 The master's degree supervised by CEDIS researchers is the **Professional Master's in Applied Computing**, offered by the Graduate Programme in Applied Computing (PPCA/UnB). It is not a full-time academic master's: the course is designed for people who already work in the field and want to research a problem from their own job.
 
-Students are selected by PPCA, through its own public call. A CEDIS researcher supervises those who are admitted, but cannot admit candidates directly. Please check the criteria below **before** writing to a potential supervisor.
+The admission calls and all admission rules are the responsibility of PPCA, which runs the selection. A CEDIS researcher supervises those who are admitted, but does not set the criteria and cannot admit candidates directly. Please check the criteria below **before** writing to a potential supervisor.
 
-**Please note:** this page summarises PPCA Call no. 01/2026. Criteria may change with each call, and the official source is always the [PPCA website](https://ppca.unb.br/) (in Portuguese).
+**Please note:** this page summarises PPCA Call no. 01/2026. Criteria may change with each call, and the official source is always the [PPCA website](https://ppca.unb.br/) (in Portuguese). Questions about the call and the admission rules should be addressed to PPCA.
 
 ## Check whether the programme is for you
 

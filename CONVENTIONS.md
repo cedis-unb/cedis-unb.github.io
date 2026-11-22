@@ -392,7 +392,10 @@ As trilhas permanentes de participação ficam em `content/junte-se/`:
 **Mestrado e doutorado são do PPCA, e são profissionais.** As trilhas
 `mestrado` e `doutorado` descrevem o Mestrado e o Doutorado *Profissionais* em
 Computação Aplicada (PPCA/UnB), não cursos acadêmicos de dedicação integral.
-Quem seleciona é o PPCA, por edital; o CEDIS só orienta quem foi aprovado. As
+Os editais e todas as normas de ingresso são de responsabilidade do PPCA, que
+conduz a seleção; o CEDIS só orienta quem foi aprovado e não define critério
+algum. As páginas devem dizer isso com todas as letras e remeter dúvidas sobre
+edital ao PPCA. As
 duas páginas resumem critérios do edital vigente (vínculo de trabalho em TI ou
 gestão de risco, residência no Brasil, carta de liberação do empregador, aulas
 presenciais no Darcy Ribeiro, linha de pesquisa) e citam o número do edital em
