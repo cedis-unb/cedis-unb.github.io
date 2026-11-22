@@ -7,7 +7,7 @@ translationKey: publication_2016_freitas_s_a_a_using_an_active_learning_environm
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2016_freitas_s_a_a_using_an_active_learning_environment_to_increase_students_engagement
-publication_index: 180
+publication_index: 181
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle

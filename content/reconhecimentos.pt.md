@@ -40,6 +40,10 @@ O projeto **Canal Ciência**, em parceria com o IBICT, teve seu artigo premiado 
 
 Professores do CEDIS receberam menção honrosa em inovação no ensino pelo trabalho com Indicadores de Aprendizagem, resultando também na publicação do livro homônimo. [Leia a cobertura completa]({{< relref "/posts/news-post.002" >}}).
 
+### Indicação a Best Paper — HICSS 2023 (Havaí, EUA)
+
+O artigo {{< link-interno "/publications/2023-silva-e-c-a-systematic-review-of-the-factors-that-impact-the-prediction-of-retention" "A Systematic Review of the Factors that Impact the Prediction of Retention and Dropout in Higher Education" >}}, de pesquisadores e estudantes do CEDIS, foi indicado a melhor artigo na 56ª Hawaii International Conference on System Sciences (HICSS).
+
 ---
 
 ## Como acompanhar

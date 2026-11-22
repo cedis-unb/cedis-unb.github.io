@@ -8,7 +8,7 @@ translationKey: publication_2027_lucas_linard_governance_compatible_gamification
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2027_lucas_linard_governance_compatible_gamification_for_continuous_code_quality_improveme
-publication_index: 327
+publication_index: 328
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle

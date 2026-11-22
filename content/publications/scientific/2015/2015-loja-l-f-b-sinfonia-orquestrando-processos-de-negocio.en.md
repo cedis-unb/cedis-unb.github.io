@@ -7,7 +7,7 @@ translationKey: publication_2015_loja_l_f_b_sinfonia_orquestrando_processos_de_n
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2015_loja_l_f_b_sinfonia_orquestrando_processos_de_negocio
-publication_index: 193
+publication_index: 194
 publication_group: scientific
 publication_type: book
 schema_type: Book

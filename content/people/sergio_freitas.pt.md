@@ -39,6 +39,7 @@ nav_next: true
 - Experiência Anterior: 
     - **na UnB:** Decano (Pró-reitor) de Ensino de Graduação (UnB), Diretor do Centro de Educação a Distância (CEAD/UnB), Diretor Técnico de Graduação (DEG/UnB), Diretor de Ensino de Graduação a Distância (DEG/UnB)​​.
     - **no ForGRAD:** Presidente do Fórum Nacional de Pró-reitores de Graduação (ForGRAD) nas gestões 2019/2020 e 2020/2021​​.
+    - **na Andifes:** Coordenador regional do Centro-Oeste no Colégio de Pró-Reitores de Graduação (COGRAD/Andifes), de 2018 a 2021.
     - **na UFES:** Professor do {{< link-interno "https://informatica.ufes.br/" "Departamento de Informática" >}} da {{< link-interno "https://www.ufes.br/" "UFES" >}}, Diretor de Pesquisa e Pós-Graduação da Pró-reitoria de Pesquisa e Pós-Graduação (UFES), Diretor-Geral do Núcleo de Processamento de Dados (UFES), Coordenador Administrativo do PoP-ES / RNP, Coordenador do curso de Graduação em Engenharia de Computação (UFES) e membro permanente do Programa de Pós-Graduação em Informática (PPGI/UFES).
     - **no INEP:** Foi avaliador de cursos do INEP/MEC de 2006 a 2020.
 
@@ -51,7 +52,8 @@ nav_next: true
 {{< postsByCategoriesTags caput="" categories="knowledge_areas,sergio_freitas" variant="profile-areas" >}}
 
 ## {{< i18n "people_contributions" >}}
-- Prêmios: Múltiplas vezes homenageado e patrono de turmas na UnB e UFES​​.
+- Prêmios: Menção Honrosa no Prêmio Anual de Inovação no Ensino de Graduação da UnB em 2023, 2025 e 2026; Best Paper Award na ICCSA 2024 e na IEEE ITHET 2024; indicação a Best Paper na HICSS 2023. Os detalhes estão em [Reconhecimentos]({{< relref "/reconhecimentos" >}}).
+- Homenagens: patrono, paraninfo e professor homenageado de turmas de graduação na UnB e na UFES.
 - Publicações: Autor e coautor de diversos artigos científicos e livros, com reconhecimento em plataformas como Web of Science e SCOPUS​​.
 
 

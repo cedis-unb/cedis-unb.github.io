@@ -8,7 +8,7 @@ translationKey: publication_2016_calazans_angelica_toffano_seidel_proposta_de_mo
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2016_calazans_angelica_toffano_seidel_proposta_de_modelo_de_medicoes_para_contratacao_do_g
-publication_index: 175
+publication_index: 176
 publication_group: scientific
 publication_type: article
 schema_type: ScholarlyArticle

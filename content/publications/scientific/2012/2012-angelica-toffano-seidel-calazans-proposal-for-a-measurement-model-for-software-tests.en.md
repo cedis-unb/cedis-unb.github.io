@@ -8,7 +8,7 @@ translationKey: publication_2012_angelica_toffano_seidel_calazans_proposal_for_a
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2012_angelica_toffano_seidel_calazans_proposal_for_a_measurement_model_for_software_tests
-publication_index: 339
+publication_index: 340
 publication_group: scientific
 publication_type: article
 schema_type: ScholarlyArticle

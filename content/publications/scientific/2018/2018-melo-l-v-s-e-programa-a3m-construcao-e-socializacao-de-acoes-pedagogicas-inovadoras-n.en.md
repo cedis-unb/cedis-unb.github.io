@@ -8,7 +8,7 @@ translationKey: publication_2018_melo_l_v_s_e_programa_a3m_construcao_e_socializ
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2018_melo_l_v_s_e_programa_a3m_construcao_e_socializacao_de_acoes_pedagogicas_inovadoras_n
-publication_index: 154
+publication_index: 155
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle

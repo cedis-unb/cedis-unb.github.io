@@ -7,7 +7,7 @@ translationKey: publication_2006_cristina_m_s_velasco_f_ervilha_aspectos_a_serem
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2006_cristina_m_s_velasco_f_ervilha_aspectos_a_serem_considerados_na_escolha_pelo_uso_de_u
-publication_index: 333
+publication_index: 334
 publication_group: specialization
 publication_type: specialization
 schema_type: Thesis

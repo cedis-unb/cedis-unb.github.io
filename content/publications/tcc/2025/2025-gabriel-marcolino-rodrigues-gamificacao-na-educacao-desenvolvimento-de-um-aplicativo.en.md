@@ -8,7 +8,7 @@ translationKey: publication_2025_gabriel_marcolino_rodrigues_gamificacao_na_educ
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2025_gabriel_marcolino_rodrigues_gamificacao_na_educacao_desenvolvimento_de_um_aplicativo
-publication_index: 347
+publication_index: 348
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

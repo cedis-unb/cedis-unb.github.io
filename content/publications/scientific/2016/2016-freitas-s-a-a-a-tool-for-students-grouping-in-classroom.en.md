@@ -7,7 +7,7 @@ translationKey: publication_2016_freitas_s_a_a_a_tool_for_students_grouping_in_c
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2016_freitas_s_a_a_a_tool_for_students_grouping_in_classroom
-publication_index: 178
+publication_index: 179
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle

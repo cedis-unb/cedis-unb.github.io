@@ -4387,6 +4387,44 @@ items:
     url: ''
     year: 2018
   - authors:
+      - SALES, M. B.
+      - ROSA, S. S.
+      - FREITAS, S. A. A.
+      - BARROS DE SALES, ANDRÉ
+    title:
+      pt: 'Design centrado no usuário: criando recursos didáticos para idosos'
+      en: 'User-centered design: creating teaching resources for older adults'
+    summary:
+      pt: >-
+        Este artigo objetiva apresentar um relato de experiência da criação de recursos didáticos de informática básica para pessoas idosas. Nessa pesquisa, utilizou-se o
+        design centrado no usuário objetivando torná-los mais acessíveis, precisos, concisos e inteligíveis para esses usuários. Este estudo envolveu a participação de 116
+        idosos, a maioria mulheres, com média de idade de 65 anos, apresentando escolaridade e classe social heterogêneas, todos concluintes do projeto de extensão "Oficinas
+        de Informática para a Terceira Idade", entre 2008 a 2010, da Universidade Federal de Santa Catarina. Foram desenvolvidos dois recursos didáticos: um material didático
+        impresso e duas videoaulas. Estes recursos didáticos foram avaliados pelo público-alvo por meio de questionários e com base em uma série de experimentos construídos
+        em conjunto com estes usuários.
+      en: >-
+        This article presents an experience report on the creation of basic computing teaching resources for older adults. The research used user-centered design to make
+        the resources more accessible, precise, concise and intelligible for these users. The study involved 116 older adults, most of them women, with an average age of 65
+        and heterogeneous schooling and social class, all of whom completed the outreach project "Oficinas de Informática para a Terceira Idade" between 2008 and 2010 at the
+        Federal University of Santa Catarina. Two teaching resources were developed: a printed handout and two video lessons. The resources were evaluated by the target
+        audience through questionnaires and a series of experiments built together with these users.
+    book_title: ''
+    volume: '11'
+    doi_isbn: 10.22456/1679-1916.41656
+    journal_event: 'RENOTE: Revista Novas Tecnologias na Educação'
+    location: ''
+    pages: ''
+    publisher: ''
+    tags:
+      - education
+    people:
+      - sergio_freitas
+    type: article
+    program: ''
+    advisors: []
+    url: ''
+    year: 2013
+  - authors:
       - LANNA, ANDRÉ
       - CASTRO, THIAGO
       - ALVES, VANDER

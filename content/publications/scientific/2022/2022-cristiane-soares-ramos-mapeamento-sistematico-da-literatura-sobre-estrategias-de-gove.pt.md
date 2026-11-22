@@ -8,7 +8,7 @@ translationKey: publication_2022_cristiane_soares_ramos_mapeamento_sistematico_d
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2022_cristiane_soares_ramos_mapeamento_sistematico_da_literatura_sobre_estrategias_de_gove
-publication_index: 342
+publication_index: 343
 publication_group: scientific
 publication_type: report
 schema_type: Report

@@ -7,7 +7,7 @@ translationKey: publication_2018_ribeiro_a_s_an_implementation_of_the_oauth_2_0_
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2018_ribeiro_a_s_an_implementation_of_the_oauth_2_0_for_an_enterprise_service_bus
-publication_index: 158
+publication_index: 159
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle

@@ -7,7 +7,7 @@ translationKey: publication_2018_leao_h_a_t_gamificacao_aplicada_ao_desenvolvime
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2018_leao_h_a_t_gamificacao_aplicada_ao_desenvolvimento_de_software_analise_e_projeto
-publication_index: 152
+publication_index: 153
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle

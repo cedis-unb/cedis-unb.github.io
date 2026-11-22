@@ -40,6 +40,10 @@ The **Canal Ciência** project, in partnership with IBICT, was awarded best pape
 
 CEDIS professors received an honorable mention in teaching innovation for their work on Learning Indicators, which also resulted in the publication of the book of the same name. [Read the full coverage]({{< relref "/posts/news-post.002" >}}).
 
+### Best Paper Nomination — HICSS 2023 (Hawaii, USA)
+
+The paper {{< link-interno "/publications/2023-silva-e-c-a-systematic-review-of-the-factors-that-impact-the-prediction-of-retention" "A Systematic Review of the Factors that Impact the Prediction of Retention and Dropout in Higher Education" >}}, by CEDIS researchers and students, was nominated for best paper at the 56th Hawaii International Conference on System Sciences (HICSS).
+
 ---
 
 ## How to follow

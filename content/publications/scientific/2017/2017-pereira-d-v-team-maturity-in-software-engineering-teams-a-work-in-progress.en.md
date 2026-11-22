@@ -7,7 +7,7 @@ translationKey: publication_2017_pereira_d_v_team_maturity_in_software_engineeri
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2017_pereira_d_v_team_maturity_in_software_engineering_teams_a_work_in_progress
-publication_index: 171
+publication_index: 172
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle

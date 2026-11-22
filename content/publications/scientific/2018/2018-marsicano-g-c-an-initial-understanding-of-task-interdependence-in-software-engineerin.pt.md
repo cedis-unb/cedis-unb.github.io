@@ -7,7 +7,7 @@ translationKey: publication_2018_marsicano_g_c_an_initial_understanding_of_task_
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2018_marsicano_g_c_an_initial_understanding_of_task_interdependence_in_software_engineerin
-publication_index: 153
+publication_index: 154
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle

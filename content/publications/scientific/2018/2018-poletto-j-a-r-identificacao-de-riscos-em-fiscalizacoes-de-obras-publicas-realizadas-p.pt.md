@@ -8,7 +8,7 @@ translationKey: publication_2018_poletto_j_a_r_identificacao_de_riscos_em_fiscal
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2018_poletto_j_a_r_identificacao_de_riscos_em_fiscalizacoes_de_obras_publicas_realizadas_p
-publication_index: 163
+publication_index: 164
 publication_group: scientific
 publication_type: book_section
 schema_type: Chapter

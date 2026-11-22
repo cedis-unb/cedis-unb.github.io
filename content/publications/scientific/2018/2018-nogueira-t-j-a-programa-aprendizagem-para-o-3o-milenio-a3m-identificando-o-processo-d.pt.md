@@ -8,7 +8,7 @@ translationKey: publication_2018_nogueira_t_j_a_programa_aprendizagem_para_o_3o_
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2018_nogueira_t_j_a_programa_aprendizagem_para_o_3o_milenio_a3m_identificando_o_processo_d
-publication_index: 156
+publication_index: 157
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle

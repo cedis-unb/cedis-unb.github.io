@@ -8,7 +8,7 @@ translationKey: publication_2017_melo_l_v_s_e_programa_aprendizagem_para_o_terce
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2017_melo_l_v_s_e_programa_aprendizagem_para_o_terceiro_milenio_a3m_politica_de_valorizaca
-publication_index: 170
+publication_index: 171
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle

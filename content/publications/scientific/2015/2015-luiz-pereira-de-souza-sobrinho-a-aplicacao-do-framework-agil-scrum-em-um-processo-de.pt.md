@@ -8,7 +8,7 @@ translationKey: publication_2015_luiz_pereira_de_souza_sobrinho_a_aplicacao_do_f
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2015_luiz_pereira_de_souza_sobrinho_a_aplicacao_do_framework_agil_scrum_em_um_processo_de
-publication_index: 321
+publication_index: 322
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle

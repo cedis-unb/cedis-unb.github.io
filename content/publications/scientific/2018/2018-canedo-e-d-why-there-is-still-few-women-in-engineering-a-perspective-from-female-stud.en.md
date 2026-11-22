@@ -8,7 +8,7 @@ translationKey: publication_2018_canedo_e_d_why_there_is_still_few_women_in_engi
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2018_canedo_e_d_why_there_is_still_few_women_in_engineering_a_perspective_from_female_stud
-publication_index: 149
+publication_index: 150
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle

@@ -7,7 +7,7 @@ translationKey: publication_2014_vitor_makoto_matayoshi_de_moraes_nteraction_um_
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2014_vitor_makoto_matayoshi_de_moraes_nteraction_um_storytelling_engine_para_unity3d
-publication_index: 351
+publication_index: 352
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

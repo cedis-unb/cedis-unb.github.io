@@ -8,7 +8,7 @@ translationKey: publication_2025_victor_de_souza_cabral_prevencao_ao_abuso_sexua
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2025_victor_de_souza_cabral_prevencao_ao_abuso_sexual_infantil_atraves_da_gamificacao_dese
-publication_index: 348
+publication_index: 349
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

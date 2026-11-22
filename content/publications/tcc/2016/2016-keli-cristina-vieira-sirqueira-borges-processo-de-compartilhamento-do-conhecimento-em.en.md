@@ -7,7 +7,7 @@ translationKey: publication_2016_keli_cristina_vieira_sirqueira_borges_processo_
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2016_keli_cristina_vieira_sirqueira_borges_processo_de_compartilhamento_do_conhecimento_em
-publication_index: 345
+publication_index: 346
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

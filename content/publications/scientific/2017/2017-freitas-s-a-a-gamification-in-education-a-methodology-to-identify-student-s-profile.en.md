@@ -7,7 +7,7 @@ translationKey: publication_2017_freitas_s_a_a_gamification_in_education_a_metho
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2017_freitas_s_a_a_gamification_in_education_a_methodology_to_identify_student_s_profile
-publication_index: 168
+publication_index: 169
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle

@@ -8,7 +8,7 @@ translationKey: publication_2010_tatiana_coelho_queiroz_da_silva_um_relato_de_ex
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2010_tatiana_coelho_queiroz_da_silva_um_relato_de_experiencia_na_atualizacao_de_processos
-publication_index: 331
+publication_index: 332
 publication_group: specialization
 publication_type: specialization
 schema_type: Thesis

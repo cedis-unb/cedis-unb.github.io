@@ -7,7 +7,7 @@ translationKey: publication_2016_freitas_s_a_a_smart_quizzes_in_the_engineering_
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2016_freitas_s_a_a_smart_quizzes_in_the_engineering_education
-publication_index: 179
+publication_index: 180
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle

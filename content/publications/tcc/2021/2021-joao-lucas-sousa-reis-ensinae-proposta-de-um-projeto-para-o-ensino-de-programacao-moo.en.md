@@ -8,7 +8,7 @@ translationKey: publication_2021_joao_lucas_sousa_reis_ensinae_proposta_de_um_pr
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2021_joao_lucas_sousa_reis_ensinae_proposta_de_um_projeto_para_o_ensino_de_programacao_moo
-publication_index: 343
+publication_index: 344
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

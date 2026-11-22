@@ -39,6 +39,7 @@ nav_next: true
 - Previous Experience: 
     - **at UnB:** Dean of Undergraduate Studies (UnB), Director of the Distance Education Center (CEAD/UnB), Technical Director of Undergraduate Education (DEG/UnB), Director of Distance Undergraduate Studies (DEG/UnB).
     - **at ForGRAD:** President of the National Forum of Undergraduate Provosts (ForGRAD) during the 2019/2020 and 2020/2021 terms.
+    - **at Andifes:** Regional coordinator for the Centre-West of the College of Undergraduate Provosts (COGRAD/Andifes), from 2018 to 2021.
     - **at UFES:** Professor in the {{< link-interno "https://informatica.ufes.br/" "Department of Computer Science" >}} at the {{< link-interno "https://www.ufes.br/" "UFES" >}}, Director of Research and Graduate Studies at the Office of Research and Graduate Studies (UFES), General Director of the Data Processing Center (UFES), Administrative Coordinator of PoP-ES / RNP, Coordinator of the Undergraduate Program in Computer Engineering (UFES) and permanent member of the Graduate Program in Computer Science (PPGI/UFES).
     - **at INEP:** Course evaluator for INEP/MEC from 2006 to 2020.
 
@@ -51,7 +52,8 @@ nav_next: true
 {{< postsByCategoriesTags caput="" categories="knowledge_areas,sergio_freitas" variant="profile-areas" >}}
 
 ## {{< i18n "people_contributions" >}}
-- Awards: Multiple times honored and patron of classes at UnB and UFES.
+- Awards: Honorable Mention in UnB's Annual Award for Innovation in Undergraduate Teaching in 2023, 2025 and 2026; Best Paper Award at ICCSA 2024 and IEEE ITHET 2024; Best Paper nomination at HICSS 2023. Details are in [Awards & Recognitions]({{< relref "/reconhecimentos" >}}).
+- Honors: patron, class sponsor and honored professor of undergraduate classes at UnB and UFES.
 - Publications: Author and co-author of several scientific articles and books, recognized on platforms such as Web of Science and SCOPUS.
 
 

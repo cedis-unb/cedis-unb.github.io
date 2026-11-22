@@ -2,7 +2,7 @@
     type: dissertation
     program: curso_ppca
     scheduled_date: '2026-10-19T10:00:00-03:00'
-    held_date:
+    held_date: '2026-10-19'
     title:
       pt: 'Gamificação para Governança de Projetos: Um Estudo de Caso em Fábrica de Software de Alta Maturidade'
       en: 'Gamification for Project Governance: A Case Study in a High-Maturity Software Factory'

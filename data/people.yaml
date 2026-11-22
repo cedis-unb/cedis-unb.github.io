@@ -54,13 +54,14 @@ people:
   - people
   - tcc
   title:
-    pt: Tema em definição
-    en: Topic under development
+    pt: Gamificação
+    en: Gamification
   program: curso_esw2
   advisors:
   - sergio_freitas
   tags:
   - active
+  - gamification
   year: 2026
 - name: Christian Hirsch Santos
   slug: christian_hirsch_santos
@@ -84,13 +85,15 @@ people:
   - people
   - tcc
   title:
-    pt: Tema em definição
-    en: Topic under development
+    pt: IDS e Machine Learning
+    en: IDS and Machine Learning
   program: curso_esw2
   advisors:
   - sergio_freitas
   tags:
   - active
+  - security
+  - machine_learning
   year: 2026
 - name: Marina Marcia Costa de Souza
   slug: marina_marcia_costa_de_souza
@@ -98,13 +101,15 @@ people:
   - people
   - tcc
   title:
-    pt: Tema em definição
-    en: Topic under development
+    pt: IDS e Machine Learning
+    en: IDS and Machine Learning
   program: curso_esw2
   advisors:
   - sergio_freitas
   tags:
   - active
+  - security
+  - machine_learning
   year: 2026
 - name: Danielle Soares Da Silva
   slug: danielle_soares_da_silva
@@ -1078,38 +1083,38 @@ people:
   - people
   - master_student
   title:
-    pt: Micro serviços, em definição
-    en: Microservices, under development
+    pt: 'Modernização na Integração de Sistemas Governamentais Legados: Uma Proposta de Arquitetura para o CeTIC-DF'
+    en: 'Modernizing the Integration of Legacy Government Systems: An Architecture Proposal for CeTIC-DF'
   program: curso_ppca
   advisors:
   - sergio_freitas
   tags:
   - active
-  year: 2026
+  year: 2025
 - name: Bruno Mello Andrade
   slug: bruno_mello_andrade
   categories:
   - people
   - master_student
   title:
-    pt: 'Gamificação na Engenharia de Software: Avaliação do engajamento em equipes de Tecnologia da Informação em Fábrica de Software'
-    en: 'Gamification in Software Engineering: Evaluation of engagement in Information Technology teams in a Software Factory'
+    pt: 'Gamificação para Governança de Projetos: Um Estudo de Caso em Fábrica de Software de Alta Maturidade'
+    en: 'Gamification for Project Governance: A Case Study in a High-Maturity Software Factory'
   program: curso_ppca
   advisors:
   - sergio_freitas
   tags:
-  - active
+  - inactive
   - gamification
   - machine_learning
-  year: 2023
+  year: 2026
 - name: Lucas Pereira Gomes Linard
   slug: lucas_pereira_gomes_linard
   categories:
   - people
   - master_student
   title:
-    pt: Avaliação da gamificação na qualidade de código de software
-    en: Evaluation of gamification in software code quality
+    pt: Improving Software Quality through Gamification Techniques
+    en: Improving Software Quality through Gamification Techniques
   program: curso_ppca
   advisors:
   - sergio_freitas

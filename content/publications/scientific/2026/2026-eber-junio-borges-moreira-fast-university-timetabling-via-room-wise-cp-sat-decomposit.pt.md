@@ -8,7 +8,7 @@ translationKey: publication_2026_eber_junio_borges_moreira_fast_university_timet
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2026_eber_junio_borges_moreira_fast_university_timetabling_via_room_wise_cp_sat_decomposit
-publication_index: 325
+publication_index: 326
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle

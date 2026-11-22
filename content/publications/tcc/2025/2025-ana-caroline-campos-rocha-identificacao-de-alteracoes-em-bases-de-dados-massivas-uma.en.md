@@ -8,7 +8,7 @@ translationKey: publication_2025_ana_caroline_campos_rocha_identificacao_de_alte
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2025_ana_caroline_campos_rocha_identificacao_de_alteracoes_em_bases_de_dados_massivas_uma
-publication_index: 350
+publication_index: 351
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

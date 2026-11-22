@@ -8,7 +8,7 @@ translationKey: publication_2017_araujo_a_n_l_experience_and_innovation_factory_
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2017_araujo_a_n_l_experience_and_innovation_factory_adaptation_of_an_experience_factory_mo
-publication_index: 164
+publication_index: 165
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle
