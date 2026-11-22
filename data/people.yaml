@@ -1067,6 +1067,23 @@ people:
   tags:
   - active
   year: 2025
+- name: Alane Beatriz da Nobrega Martins
+  slug: alane_beatriz_da_nobrega_martins
+  categories:
+  - people
+  - master_student
+  title:
+    pt: Auditoria automatizada de conformidade normativa e arquitetural em esteiras de software utilizando modelos de linguagem locais (provisório)
+    en: Automated audit of regulatory and architectural compliance in software pipelines using local language models (provisional)
+  program: curso_ppca
+  advisors:
+  - sergio_freitas
+  tags:
+  - active
+  - ai
+  - software_quality
+  - software_architecture
+  year: 2026
 - name: Bruno Mello Andrade
   slug: bruno_mello_andrade
   categories:
