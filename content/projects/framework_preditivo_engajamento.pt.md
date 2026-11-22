@@ -3,9 +3,8 @@ author: CEDIS
 title: "Framework preditivo de engajamento e desempenho discente em ambientes de aprendizagem gamificados"
 date: 2025-01-01T00:00:00-03:00
 language: pt
-status: closed
+status: ongoing
 start_date: 2025-01-01
-end_date: 2026-10-10
 id: project_framework_preditivo_engajamento
 researchers:
 - sergio_freitas
@@ -29,7 +28,7 @@ products:
 publications:
 - publication_2026_sergio_antonio_andrade_de_freitas_a_motivation_aware_diagnostic_instrument_for_person
 featured_image: "../assets/images/featured/project_framework_preditivo_engajamento.webp"
-summary: "Projeto PIBIC 2025-2026 voltado à criação de um framework preditivo para engajamento e desempenho discente em ambientes de aprendizagem gamificados, combinando Octalysis, indicadores neurocientíficos, learning analytics e machine learning."
+summary: "Projeto de pesquisa em andamento, iniciado no ciclo PIBIC 2025-2026 e voltado à criação de um framework preditivo para engajamento e desempenho discente em ambientes de aprendizagem gamificados, combinando Octalysis, indicadores neurocientíficos, learning analytics e machine learning."
 authorimage: ../assets/images/global/author.webp
 categories:
 - project
@@ -47,7 +46,7 @@ tags:
 ---
 ## Visão geral
 
-**Projeto concluído.** Período: PIBIC 2025–2026, bolsas encerradas em outubro de 2026.
+**Projeto em andamento.** Iniciado em 2025. O ciclo PIBIC 2025–2026 foi concluído, com bolsas encerradas em outubro de 2026, e a pesquisa continua.
 
 Este projeto investiga a construção de um **framework preditivo de engajamento e desempenho discente** para ambientes de aprendizagem gamificados. A proposta combina princípios do **Octalysis**, indicadores neurocientíficos associados à aprendizagem, learning analytics e modelos de machine learning para apoiar decisões pedagógicas mais precoces, personalizadas e orientadas por evidências.
 
@@ -58,10 +57,9 @@ O projeto parte de experiências concretas de gamificação em disciplinas de gr
 | Campo | Informação |
 |---|---|
 | Natureza | Pesquisa, desenvolvimento e inovação em gamificação educacional, learning analytics e inteligência artificial aplicada à educação |
-| Situação | Concluído (bolsas PIBIC encerradas em outubro de 2026) |
+| Situação | Em andamento (ciclo PIBIC 2025–2026 concluído em outubro de 2026) |
 | Ano de início | 2025 |
-| Ano de fim | 2026 |
-| Programa | PIBIC 2025-2026 |
+| Programa | PIBIC 2025-2026 (ciclo concluído) |
 | Coordenação | Prof. {{< link-interno "/people/sergio_freitas" "Sergio Antonio Andrade de Freitas" >}} |
 | Instituição envolvida | Universidade de Brasília |
 | Instituição de execução | Universidade de Brasília |

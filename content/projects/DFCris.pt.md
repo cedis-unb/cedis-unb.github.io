@@ -5,8 +5,8 @@ date: 2024-02-14T02:59:29-03:00
 weight: 10
 language: pt
 status: closed
-start_date: 2024-02-14
-end_date: 2026-02-13
+start_date: 2022-01-01
+end_date: 2024-12-31
 id: dfcris
 researchers:
 - sergio_freitas

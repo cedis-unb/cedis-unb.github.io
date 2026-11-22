@@ -7,7 +7,7 @@ translationKey: publication_2006_eugenio_souto_pereira_revisao_do_planejamento_d
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2006_eugenio_souto_pereira_revisao_do_planejamento_do_sistema_unico_usando_estimativas_de
-publication_index: 335
+publication_index: 337
 publication_group: specialization
 publication_type: specialization
 schema_type: Thesis

@@ -7,7 +7,7 @@ translationKey: publication_2005_ricardo_ajax_dias_kosloski_an_experience_factor
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2005_ricardo_ajax_dias_kosloski_an_experience_factory_to_improve_software_development_effo
-publication_index: 339
+publication_index: 341
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle

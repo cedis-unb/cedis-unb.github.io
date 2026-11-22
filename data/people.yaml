@@ -121,8 +121,6 @@ people:
     en: Development of AI-based solutions
   program: curso_esw2
   advisors:
-  - sergio_freitas
-  co_advisors:
   - andre_lanna
   tags:
   - active
@@ -140,8 +138,6 @@ people:
   program: curso_esw2
   advisors:
   - andre_lanna
-  co_advisors:
-  - sergio_freitas
   tags:
   - active
   - ai
@@ -158,8 +154,6 @@ people:
   program: curso_esw2
   advisors:
   - andre_lanna
-  co_advisors:
-  - sergio_freitas
   tags:
   - active
   - ai
@@ -176,8 +170,6 @@ people:
   program: curso_esw2
   advisors:
   - andre_lanna
-  co_advisors:
-  - sergio_freitas
   tags:
   - active
   - ai
@@ -194,8 +186,6 @@ people:
   program: curso_esw2
   advisors:
   - andre_lanna
-  co_advisors:
-  - sergio_freitas
   tags:
   - active
   - ai
@@ -212,8 +202,6 @@ people:
   program: curso_esw2
   advisors:
   - andre_lanna
-  co_advisors:
-  - sergio_freitas
   tags:
   - active
   - ai
@@ -425,8 +413,6 @@ people:
   program: curso_esw2
   advisors:
   - cristiane_ramos
-  co_advisors:
-  - sergio_freitas
   tags:
   - active
   - gamification
@@ -466,7 +452,7 @@ people:
     - ai
     - learning_analytics
     - project_framework_preditivo_engajamento
-    year: 2025
+    year: 2026
 - name: Davi Rodrigues da Rocha
   slug: davi_rodrigues_da_rocha
   supervisions:
@@ -502,7 +488,7 @@ people:
     - ai
     - learning_analytics
     - project_framework_preditivo_engajamento
-    year: 2025
+    year: 2026
 - name: Diogo Oliveira Ferreira
   slug: diogo_oliveira_ferreira
   categories:
@@ -514,8 +500,6 @@ people:
   program: curso_esw2
   advisors:
   - cristiane_ramos
-  co_advisors:
-  - sergio_freitas
   tags:
   - active
   - gamification
@@ -531,8 +515,6 @@ people:
   program: curso_esw2
   advisors:
   - cristiane_ramos
-  co_advisors:
-  - sergio_freitas
   tags:
   - active
   - gamification
@@ -583,8 +565,6 @@ people:
   program: curso_esw2
   advisors:
   - cristiane_ramos
-  co_advisors:
-  - sergio_freitas
   tags:
   - active
   - gamification
@@ -667,8 +647,6 @@ people:
   program: curso_esw2
   advisors:
   - celia_higawa
-  co_advisors:
-  - sergio_freitas
   tags:
   - active
   - social_software
@@ -684,8 +662,6 @@ people:
   program: curso_esw2
   advisors:
   - cristiane_ramos
-  co_advisors:
-  - sergio_freitas
   tags:
   - active
   - gamification
@@ -1346,6 +1322,7 @@ people:
   program: curso_esw2
   advisors:
   - cristiane_ramos
+  co_advisors:
   - sergio_freitas
   tags:
   - inactive
@@ -1412,6 +1389,8 @@ people:
   program: curso_esw2
   advisors:
   - cristiane_ramos
+  co_advisors:
+  - sergio_freitas
   tags:
   - inactive
   - education
@@ -2994,6 +2973,21 @@ people:
   - gamification
   - education
   year: 2016
+- name: Beatriz Ferreira Gonçalves
+  slug: beatriz_ferreira_goncalves
+  categories:
+  - people
+  - tcc
+  title:
+    pt: Proposta de uma arquitetura integrativa baseada em serviços
+    en: Proposal of a service-based integrative architecture
+  program: curso_esw2
+  advisors:
+  - sergio_freitas
+  tags:
+  - inactive
+  - software_architecture
+  year: 2016
 - name: Wildemberg Sales da Silva Junior
   slug: wildemberg_sales
   categories:
@@ -3005,6 +2999,8 @@ people:
   program: curso_esw2
   advisors:
   - cristiane_ramos
+  co_advisors:
+  - sergio_freitas
   tags:
   - inactive
   - gamification
@@ -3072,6 +3068,21 @@ people:
   - inactive
   - gamification
   - education
+  year: 2014
+- name: Dionlan Alves de Jesus
+  slug: dionlan_alves_de_jesus
+  categories:
+  - people
+  - tcc
+  title:
+    pt: Algoritmo para análise de aderência de perfis na comunidade acadêmica da UnB
+    en: Algorithm for analysing profile adherence in the UnB academic community
+  program: curso_esw2
+  advisors:
+  - sergio_freitas
+  tags:
+  - inactive
+  - learning_analytics
   year: 2014
 - name: Leandro Veloso Rodrigues
   slug: leandro_veloso_rodrigues

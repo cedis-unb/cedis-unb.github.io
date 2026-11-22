@@ -7,7 +7,7 @@ translationKey: publication_2025_alexia_naara_da_silva_cardoso_aplicativo_tradut
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2025_alexia_naara_da_silva_cardoso_aplicativo_tradutor_de_linguas_indigenas_munduruku
-publication_index: 256
+publication_index: 258
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

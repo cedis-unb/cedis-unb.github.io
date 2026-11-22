@@ -2900,6 +2900,8 @@ items:
     program: curso_esw
     advisors:
       - cristiane_ramos
+    co_advisors:
+      - sergio_freitas
     url: https://bdm.unb.br/handle/10483/34952
     defense_date: 2022-09-26
     year: 2022
@@ -5792,6 +5794,30 @@ items:
     year: 2016
     defesa_id: wilker-assuncao-2016-06-15
   - authors:
+      - Beatriz Ferreira Gonçalves
+    title:
+      pt: Proposta de uma arquitetura integrativa baseada em serviços
+      en: Proposal of a service-based integrative architecture
+    summary:
+      pt: ''
+      en: ''
+    book_title: ''
+    volume: ''
+    doi_isbn: ''
+    journal_event: ''
+    location: ''
+    pages: ''
+    publisher: Universidade de Brasília
+    tags:
+      - software_architecture
+    type: tcc
+    program: curso_esw
+    advisors:
+      - sergio_freitas
+    url:
+    year: 2016
+    historical_no_defense_record: true
+  - authors:
       - LOJA, L. F. B.
       - MENDES, F. F.
       - OLIVEIRA, J. L.
@@ -7455,6 +7481,30 @@ items:
     defense_date: 2014-11-17
     year: 2014
     defesa_id: pedro-carvalho-2014-11-17
+  - authors:
+      - Dionlan Alves de Jesus
+    title:
+      pt: Algoritmo para análise de aderência de perfis na comunidade acadêmica da UnB
+      en: Algorithm for analysing profile adherence in the UnB academic community
+    summary:
+      pt: ''
+      en: ''
+    book_title: ''
+    volume: ''
+    doi_isbn: ''
+    journal_event: ''
+    location: ''
+    pages: ''
+    publisher: Universidade de Brasília
+    tags:
+      - learning_analytics
+    type: tcc
+    program: curso_esw
+    advisors:
+      - sergio_freitas
+    url:
+    year: 2014
+    historical_no_defense_record: true
   - authors:
       - Álvaro Henrique de Sousa Gouvea
       - Luís Guilherme Gaboardi Lins

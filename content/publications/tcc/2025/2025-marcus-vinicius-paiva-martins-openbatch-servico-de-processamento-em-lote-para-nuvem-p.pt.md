@@ -7,7 +7,7 @@ translationKey: publication_2025_marcus_vinicius_paiva_martins_openbatch_servico
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2025_marcus_vinicius_paiva_martins_openbatch_servico_de_processamento_em_lote_para_nuvem_p
-publication_index: 259
+publication_index: 261
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

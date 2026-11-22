@@ -3,9 +3,8 @@ author: CEDIS
 title: "Predictive framework for student engagement and performance in gamified learning environments"
 date: 2025-01-01T00:00:00-03:00
 language: en
-status: closed
+status: ongoing
 start_date: 2025-01-01
-end_date: 2026-10-10
 id: project_framework_preditivo_engajamento
 researchers:
 - sergio_freitas
@@ -29,7 +28,7 @@ products:
 publications:
 - publication_2026_sergio_antonio_andrade_de_freitas_a_motivation_aware_diagnostic_instrument_for_person
 featured_image: "../assets/images/featured/project_framework_preditivo_engajamento.webp"
-summary: "2025-2026 PIBIC project focused on creating a predictive framework for student engagement and performance in gamified learning environments by combining Octalysis, neuroscientific indicators, learning analytics, and machine learning."
+summary: "Ongoing research project, started in the 2025-2026 PIBIC cycle and focused on creating a predictive framework for student engagement and performance in gamified learning environments by combining Octalysis, neuroscientific indicators, learning analytics, and machine learning."
 authorimage: ../assets/images/global/author.webp
 categories:
 - project
@@ -47,7 +46,7 @@ tags:
 ---
 ## Overview
 
-**Completed project.** Period: PIBIC 2025–2026, scholarships ended in October 2026.
+**Ongoing project.** Started in 2025. The 2025–2026 PIBIC cycle was completed, with scholarships ending in October 2026, and the research continues.
 
 This project investigates the construction of a **predictive framework for student engagement and performance** in gamified learning environments. The proposal combines **Octalysis** principles, learning-related neuroscientific indicators, learning analytics, and machine learning models to support earlier, more personalized, evidence-based pedagogical decisions.
 
@@ -58,10 +57,9 @@ The project builds on concrete gamification experiences in undergraduate courses
 | Field | Information |
 |---|---|
 | Nature | Research, development, and innovation in educational gamification, learning analytics, and artificial intelligence applied to education |
-| Status | Completed (PIBIC scholarships ended in October 2026) |
+| Status | Ongoing (2025–2026 PIBIC cycle completed in October 2026) |
 | Start year | 2025 |
-| End year | 2026 |
-| Program | PIBIC 2025-2026 |
+| Program | PIBIC 2025-2026 (cycle completed) |
 | Coordination | Prof. {{< link-interno "/people/sergio_freitas" "Sergio Antonio Andrade de Freitas" >}} |
 | Institution involved | University of Brasilia |
 | Executing institution | University of Brasilia |

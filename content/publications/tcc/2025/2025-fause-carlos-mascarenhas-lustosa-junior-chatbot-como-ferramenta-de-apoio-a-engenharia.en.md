@@ -7,7 +7,7 @@ translationKey: publication_2025_fause_carlos_mascarenhas_lustosa_junior_chatbot
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2025_fause_carlos_mascarenhas_lustosa_junior_chatbot_como_ferramenta_de_apoio_a_engenharia
-publication_index: 350
+publication_index: 352
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis

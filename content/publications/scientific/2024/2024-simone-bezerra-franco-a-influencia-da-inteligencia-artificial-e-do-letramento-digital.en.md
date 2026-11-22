@@ -8,7 +8,7 @@ translationKey: publication_2024_simone_bezerra_franco_a_influencia_da_inteligen
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2024_simone_bezerra_franco_a_influencia_da_inteligencia_artificial_e_do_letramento_digital
-publication_index: 342
+publication_index: 344
 publication_group: scientific
 publication_type: conference
 schema_type: ScholarlyArticle

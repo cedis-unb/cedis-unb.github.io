@@ -8,7 +8,7 @@ translationKey: publication_2014_maylon_felix_brito_transferencia_de_conheciment
 generated_by: scripts/build_publications.py
 canonical_source: data/productions.yaml
 id: publication_2014_maylon_felix_brito_transferencia_de_conhecimento_em_processos_de_contratacao_de_fabri
-publication_index: 277
+publication_index: 279
 publication_group: tcc
 publication_type: tcc
 schema_type: Thesis
